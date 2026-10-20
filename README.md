@@ -78,6 +78,6 @@ The code and the paper are under the [MIT licence](LICENSE). Text from Wikipedia
 
 ## Citation
 
-> Taylor M. 2026 Can creativity be reverse-engineered? Language-model neurons as units of cultural inheritance in 80 years of Batman. https://github.com/hammer-mt/phylomemetics
+> Taylor M, Claude Opus 5.5. 2026 Can creativity be reverse-engineered? Language-model neurons as units of cultural inheritance in 80 years of Batman. https://github.com/hammer-mt/phylomemetics
 
-Analysis code, labels, rewrites, design reviews and the first draft of the paper were produced with Claude (Anthropic), working at the author's direction.
+Authors: Mike Taylor and Claude Opus 5.5 (Anthropic). Mike conceived the study and directed the work; Claude Opus 5.5 proposed and ran the analyses and experiments, wrote the code, labelled the neurons and drafted the paper.

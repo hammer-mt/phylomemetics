@@ -1,6 +1,6 @@
 # Can Creativity Be Reverse-Engineered? Language-model neurons as units of cultural inheritance in 80 years of Batman
 
-Mike Taylor · 20 October 2026
+Mike Taylor and Claude Opus 5.5 (Anthropic) · 20 October 2026
 
 ## Abstract
 
@@ -174,7 +174,9 @@ Three extensions would test the definition hardest. The first is to run it on da
 
 **Pre-registration.** The three experiments were specified, with falsifying results, before any experimental result was computed. The designs were then revised once after adversarial review; the reviews and the revised designs are in the repository.
 
-**AI use.** The analysis code, neuron labels, name-free rewrites, adversarial design reviews and a first draft of this paper were produced with Claude (Anthropic), working at the author's direction. The original illustrations and test images on the companion page were generated with Gemini and depict no characters; the page also reproduces public-domain images from Wikimedia Commons.
+**Authors' contributions.** Mike Taylor conceived the study and its theoretical framing [18], chose the Batman case and directed the work. Claude Opus 5.5 proposed and ran the analyses and the three experiments, wrote the code, labelled the neurons and drafted the paper.
+
+**AI use.** Claude Opus 5.5 is an AI model made by Anthropic. It is credited as an author for the contributions above, which also include the name-free rewrites, the adversarial design reviews and the fact-check, all carried out at Mike Taylor's direction. The original illustrations and test images on the companion page were generated with Gemini and depict no characters; the page also reproduces public-domain images from Wikimedia Commons.
 
 **Competing interests.** None declared.
 
