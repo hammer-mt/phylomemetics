@@ -1,0 +1,160 @@
+[
+ {
+  "output_path": "data/anon/batch_00.jsonl",
+  "works_written": 10,
+  "problems": [
+   "Work 7 (Arkham Asylum: A Serious House on Serious Earth), sentence 12: changed 'He killed the murderer' to 'He killed the inmate', so the role matches the 'an inmate' introduced in sentence 10 and stays consistent within the work."
+  ]
+ },
+ {
+  "output_path": "data/anon/batch_01.jsonl",
+  "works_written": 10,
+  "problems": [
+   "id 11 s14: 'inject one of them with a drug.' -> 'inject one of them with the drug.' (keeps the original definite article from 'the Venom drug')",
+   "id 12 s18: 'his comrade, his sidekick.' -> 'his comrade, his partner.' ('sidekick' added a subordinate status the sentence does not state; 'partner' matches s24 and the other works)",
+   "id 15 s9: 'After an earlier partner had left' -> 'After an ally had left' (for Nightwing/Dick Grayson; 'earlier partner' added a relationship the sentence does not state)",
+   "id 16 s17: 'in the home city,' -> 'in the city,' ('home' was an added word; the rest of the work says 'the city')",
+   "id 16 s21: 'A former partner returns' -> 'An ally returns' (Dick Grayson; 'former partner' added a relationship the sentence does not state)",
+   "id 16 s25: 'the former partner and the vigilante' -> 'the ally and the vigilante' (Nightwing, kept consistent with s21)",
+   "id 19 s29: \"the vigilante's former partner, his partner, a boy, and a band of assassins\" -> \"an ally, the vigilante's partner, another ally, and a band of assassins\" (Nightwing and Damian; 'former partner' and 'a boy' added facts the sentence does not state, and 'his' would have had no clear referent after the change)",
+   "Checked and left unchanged: all 10 works keep the same ids and the same sentence counts as corpus.jsonl (34/40/25/40/29/34/40/40/30/38). A scan for leftover names found none. The only capitalised words left are holidays, months, 'Irish', 'Great Dane', 'CEO', 'DNA' and the job title 'Assistant District Attorney', all kept as plot content rather than names. A word diff showed no non-name content dropped.",
+   "File is valid JSON lines, written as UTF-8 like the original. A backup of the pre-fix file is at <scratch>/batch_01.backup.jsonl"
+  ]
+ },
+ {
+  "output_path": "data/anon/batch_02.jsonl",
+  "works_written": 10,
+  "problems": [
+   "21[1]: fixed a garbled appositive. 'the partner, the hero's second sidekick and partner' became 'the partner, the second sidekick and the hero's partner', which matches the original order 'Jason Todd, the second Robin and Batman's partner'.",
+   "21[2]: 'In another city' became 'In a city' for Sarajevo, Bosnia. No earlier city is mentioned, so 'another' added meaning.",
+   "23[1]: removed the added explanation 'an act named after the district attorney'. The Dent Act is now just 'an act'.",
+   "25[4],[12],[35],[36]: Harley Quinn was 'a sidekick' / 'the sidekick', but this work never says she is anyone's sidekick, and the word clashes with the hero's-sidekick role. Changed to 'an accomplice' / 'the accomplice' (the rules' own plain role).",
+   "27[19]: 'taking on a costumed mantle of her own' became 'taking on a mantle of her own' for 'the mantle of Batgirl'. 'costumed' added information not in the sentence.",
+   "28[7],[8],[9],[10],[31],[36]x2,[37],[38],[39]: Harley Quinn / Quinzel was 'sidekick' (the villain's sidekick, a second sidekick, the original sidekick, the new sidekick). This work never calls her a sidekick, so all became 'accomplice'.",
+   "28[17],[18],[24],[35],[36]: Clayface was 'a creature' / 'the creature', an epithet that adds 'non-human' and is not supported anywhere in the work. Changed to 'a third villain' / 'the third villain', after 'the villain' (Joker) and 'another villain' (Mad Hatter).",
+   "29[5]: 'outside the capital' became 'outside a city' for Edo. 'capital' added information, and it is wrong for the period.",
+   "29[8],[15]x2,[16],[18],[22],[26]: Harley Quinn was 'the villain's sidekick' / 'the sidekick', which this work does not support. Changed to 'the villain's accomplice' / 'the accomplice'.",
+   "29[25]: Robin was 'One ally', which did not match the same character in [11] ('One of the allies'). Changed to 'The same ally' so the two read as one person.",
+   "Kept as judgment calls: 20 'strongman' (Bane) and 'toxin-maker' (Scarecrow). Neither trait is in the sentence where the label first appears ([5]), but the same work states both (21: 'gives Bane his strength'; 16: 'fear toxin'). Also kept 22 'rival villain' (Penguin), a plain relational label, and 26[23] 'calling her by name' for the 'save Martha' plot point. 'World War I' and 'Halloween' were left as date markers.",
+   "Verified with Python: 10 works (ids 20-29), sentence counts match the original for every work (40,40,40,34,40,40,35,27,40,31), valid JSON lines. A regex scan finds no leftover capitalised names apart from CEO, CCO, DNA, APB, Halloween, Chinese and World War I. A backup of the pre-fix file is at <scratch>/batch_02.backup.jsonl."
+  ]
+ },
+ {
+  "output_path": "data/anon/batch_03.jsonl",
+  "works_written": 10,
+  "problems": [
+   "Work 30, sentence 28: 'introduce him by the host's insult' changed to 'introduce him by a new name'. The alias 'Joker' is replaced with a generic noun, and the rewrite no longer repeats what the sentence's own clause 'a reference to his earlier mockery' already says.",
+   "Work 33, sentence 1: 'arrives in port' changed to 'arrives in the port', which restores the original wording ('the port of Marseille') minus the place name.",
+   "Work 33, sentence 34: 'Parisian high society' changed to 'the city's high society'. This adjective is built from a place name the rewrite already turns into 'the city' elsewhere, and it matches how 'London society' became 'the city's society' in work 36.",
+   "Work 33, sentence 39: 'Parisian society' changed to 'the city's society', for the same reason.",
+   "Work 36, sentence 9: 'the wily new French envoy' changed to 'the wily new French envoy to the country'. The rewrite had dropped 'to England' instead of replacing it with a generic noun.",
+   "No fix (note only): I kept nationality and group adjectives as common descriptors, as the other batches do: Italian, French, English, Englishman, German, Japanese, Catalan, Genoese, Tuscan, Romani, Mormon, Latter-day Saints and Scottish Terrier. I also kept the holiday names Halloween and Carnival, the in-story words 'joker' (an insult, work 30 sentence 13) and 'RACHE', and the literal mentions of bat and shadow.",
+   "Checked with Python after editing: 10 works, ids 30-39 in order, keys id and sentences only, every work's sentence count matches the corpus (38/28/17/40/40/37/28/9/30/22), and every line is valid JSON. The original rewrite is backed up at <scratch>/batch_03.backup.jsonl"
+  ]
+ },
+ {
+  "output_path": "data/anon/batch_04.jsonl",
+  "works_written": 10,
+  "problems": [
+   "40 s20: 'now named after the hero's home planet' -> 'now given a name' (the phrase spelled out what the name Kryptonite means, which the sentence does not say)",
+   "45 s0: 'a famous necklace' -> 'a necklace' (removed the added epithet 'famous')",
+   "46 s3: 'a singer' -> 'a performer' (the sentence only says 'performances', so 'singer' added information)",
+   "46 s17: 'influencing one of the musician's songs' -> 'influencing a song' (the original never says the song is the musician's)",
+   "46 s19: 'a political scandal' -> 'a scandal' (removed the added epithet 'political')",
+   "47 s1: restored the dropped clause listing the five named toys, now 'the toys\u2014including five others\u2014become concerned'",
+   "48 s15: 'the tank's gang of fish' -> 'the tank's gang' ('of fish' was added and is wrong for the sea star and the shrimp; also now matches s29)",
+   "49 s3: restored the dropped 'to Carlo Rizzi', now 'At his sister's wedding to her groom'",
+   "49 s22 and s31: 'his family's native country' -> 'his family's native land' (Sicily is not a country; this is the more generic, accurate term)",
+   "49 s34: 'his other brother' -> 'a relative', and s36: 'his other brother' -> 'the relative' ('brother' for Fredo is not stated anywhere in the summary)"
+  ]
+ },
+ {
+  "output_path": "data/anon/batch_05.jsonl",
+  "works_written": 10,
+  "problems": [
+   "Work 50 (Jaws) sentence 23: leftover place name 'U.S.' in 'many U.S. sailors' -> 'many sailors'",
+   "Work 51 (Casablanca) sentence 11: 'neared Paris' had been rewritten as 'neared their city', which adds a claim (that it was their city) -> 'neared another city' (consistent with 'the other city' in sentence 21)",
+   "Work 51 (Casablanca) sentence 30: 'the plane to Lisbon' had been dropped to 'the plane' -> 'the plane to another city'",
+   "Work 52 (Pride & Prejudice) sentence 0: 'in England' had been dropped -> 'During the late 18th century in the country, ...'",
+   "Work 52 (Pride & Prejudice) sentence 15: 'in Kent' had been dropped -> 'a noblewoman's estate in another county'",
+   "Work 52 (Pride & Prejudice) sentence 24: 'to the Peak District' and 'in Derbyshire' had been dropped -> 'on a trip to another region ... the grand estate of the gentleman's family in another county'",
+   "Work 53 (Jurassic Park) sentence 0: 'off the coast of Costa Rica' had been shortened to 'off the coast' -> 'off the coast of a country'",
+   "Work 54 (The Lion King) sentence 0: 'In the Pride Lands of Eastern Africa' had become 'In their homeland', which dropped the region -> 'In the lands of an eastern region'",
+   "Work 56 (E.T.) sentence 1: leftover place name 'U.S.' in 'U.S. government agents' -> 'government agents'",
+   "Work 57 (Shawshank) sentence 27: 'visits Buxton' had become 'visits the hayfield', a different and more specific place -> 'visits the town' (matches 'a hayfield near a town' in sentence 19)",
+   "Not changed, by choice: nationality and language words (German, French, American, Czechoslovak, Libyan, Mexican, West African, English, French, Swahili), holidays and wars as time markers (Fourth of July, Halloween, World War II, Spanish civil war, Monday), and dinosaur names (Velociraptor, Tyrannosaurus and others). A place used only as a modifier was left dropped (California forest, Pittsburgh viewers, Portland, Maine banker, Hill Valley, California -> a town). Lowercased 'the coast guard' was kept as an ordinary noun.",
+   "Checked with Python: valid JSON lines, 10 works with ids 50-59, and every work has the same sentence count as the original (39, 36, 39, 33, 35, 28, 29, 30, 32, 32). The pre-edit file is backed up at <scratch>/batch_05.before.jsonl"
+  ]
+ },
+ {
+  "output_path": "data/anon/batch_06.jsonl",
+  "works_written": 10,
+  "problems": [
+   "Work 60, sentence 1: 'an island town' -> 'a town'. The word 'island' came only from the place name Seabrook Island, so it was an epithet taken from the name.",
+   "Work 60, sentence 17: 'old Southern money' -> 'old southern money'. The capitalised regional name is lowercased and the meaning is kept.",
+   "Work 63, sentence 19: 'an Inuk on the planet below' -> 'an Inuk on the planet'. Removed the added word 'below'; the original said 'on Earth', and every other 'Earth' in the work became 'the planet'.",
+   "Work 64, sentence 5: 'will land at another crater' -> 'will land at a crater'. 'another' wrongly suggested the first site was a crater; the original only had 'the Schiaparelli crater'.",
+   "Work 67, sentence 12: 'a flight back to their home country, but it is a flight to a distant city' -> 'a flight to their home country, but it is a flight to a different city'. Removed the added word 'back', and replaced the epithet 'distant' (for Dallas, Texas) with 'different', which the sentence's 'but' supports.",
+   "Work 67, sentence 25: 'a flight to that distant city' -> 'a flight to that same city'. Keeps the reference to sentence 12 without the 'distant' epithet.",
+   "No other changes. Sentence counts match the original for all 10 works (40, 35, 31, 27, 34, 37, 26, 30, 34, 27), the ids are unchanged, and the file is valid JSON lines. Demonyms ('Russians', 'Chinese', 'Inuk', 'Italian-American', 'Greek', 'Irish-American', 'Swedish', 'British') were kept as descriptive content, not names. A backup of the pre-fix file is at <scratch>/batch_06.backup.jsonl."
+  ]
+ },
+ {
+  "output_path": "data/anon/batch_07.jsonl",
+  "works_written": 10,
+  "problems": [
+   "Work 73 (Fargo), sentence 6: 'transport her to a remote cabin near a lake' changed to 'transport her to a remote cabin in another town'. Moose Lake is a town, so the old wording changed the meaning by reading a lake into the place name, and it changed the preposition from 'in' to 'near'.",
+   "Work 73 (Fargo), sentence 31: 'The police chief drives to the lake,' changed to 'The police chief drives to the town,'. Same Moose Lake problem, now consistent with sentence 6.",
+   "No other changes. A capitalized-word scan of all 10 works found only common nouns (Christmas, TV, SWAT, C-4, CB, U-boat, CEO). A Python check confirmed every work's sentence count matches the original (40, 40, 31, 38, 38, 40, 33, 26, 35, 38). All ids 70-79 are present and the file is still valid JSON lines."
+  ]
+ },
+ {
+  "output_path": "data/anon/batch_08.jsonl",
+  "works_written": 10,
+  "problems": [
+   "Work 81 sentence 24: 'flee to a neighboring country' changed to 'flee to another country' (for Switzerland). 'Neighboring' added information the sentence does not contain.",
+   "Work 81 sentence 31: 'into the neighboring country' changed to 'into the other country', for the same reason and to match sentence 24.",
+   "Work 84 sentence 12: 'a point on a scenic drive' changed to 'a point on a road' (for Cypress Point on 17-Mile Drive). 'Scenic' was an added epithet.",
+   "Work 86 sentence 17: 'under the command of the governor' changed to 'under the command of an officer' (for Grand Moff Tarkin). 'Governor' carried an in-universe meaning of the title that the sentence does not support.",
+   "Work 86 sentence 25: 'while the governor prepares' changed to 'while the officer prepares', to match sentence 17.",
+   "Work 87, 13 occurrences in sentences 0, 6, 12, 14, 15, 17, 19, 21, 24, 25, 30, 31 and 32: 'simulation' replaced with 'system' (for the Matrix). In sentences 0 and 6, 'simulation' revealed something those sentences do not say. 'System' is the generic noun the original text already uses for the Matrix (sentences 15 and 32), and using it everywhere keeps the work consistent.",
+   "Work 88 sentence 22: 'His wife then appears' changed to 'The hero's wife then appears' (for Mal). The previous sentence's subject is the chemist, so 'His' pointed to the wrong person."
+  ]
+ },
+ {
+  "output_path": "data/anon/batch_09.jsonl",
+  "works_written": 10,
+  "problems": [
+   "Work 92 (Legally Blonde), sentence 3: 'his brother, a law student,' -> 'his brother, a student at a law school,' (keeps the original wording; only 'Yale Law School' became 'a law school')",
+   "Work 99 (Get Out), sentence 4: 'the family's Black staff, the maid and the groundskeeper.' -> 'the family's Black staff, a female staff member and a male staff member.' ('maid' and 'groundskeeper' were job titles that appear nowhere in the original text; the plain replacement comes from the word 'staff' and the pronouns used later)",
+   "Work 99, sentence 11: 'Like the groundskeeper and the maid,' -> 'Like the male staff member and the female staff member,'",
+   "Work 99, sentence 17: 'including the groundskeeper and the maid,' -> 'including the male staff member and the female staff member,'",
+   "Work 99, sentence 25: 'accidentally hits the maid,' -> 'accidentally hits the female staff member,'",
+   "Work 99, sentence 27: 'The girlfriend and the groundskeeper,' -> 'The girlfriend and the male staff member,'",
+   "Work 99, sentence 28: 'free the groundskeeper from' -> 'free the male staff member from'",
+   "Work 99, sentence 29: 'The groundskeeper shoots' -> 'The male staff member shoots'",
+   "Checked after editing: all 10 ids (90-99) are present and each work has the same sentence count as corpus.jsonl (40/27/28/29/26/34/37/31/34/32). A scan of capitalised words found no leftover proper names. The remaining capitalised words are not names: CEO, GPA, CPR, Saturday, Vice President of Product Development, Black, English, quoted dialogue and the coffee-mug text. Backup of the file before these edits: <scratch>/batch_09.backup.jsonl",
+   "Left unchanged as borderline but acceptable: 'a famous actor' for Harrison Ford (90/1), 'At fashion week' for 'In Paris' (91/13), 'a rival editor' (91/15), 'a prominent family' for the Vanderbilts (92/3), 'an outlaw' for Robin Hood (95/15), 'the poor family'/'the wealthy family' for the Kims and the Parks (97), 'a coded message' for Morse code (97/28). Nationality words were dropped along with the place names (British, Welshman, Hollywood, East Coast)."
+  ]
+ },
+ {
+  "output_path": "data/anon/batch_10.jsonl",
+  "works_written": 10,
+  "problems": [
+   "101 (The Social Network) s12: 'expands the network to other universities' -> 'expands the network to three other universities' (the original names three universities, so the count was being lost)",
+   "101 s20: 'new headquarters in the city' -> 'new headquarters in a city' (the original is San Francisco, a different city from the one just mentioned for the relocation, so 'the city' pointed to the wrong place)",
+   "102 (The Grand Budapest Hotel) s33: 'died from Prussian grippe' -> 'died from the grippe' (removed a place-derived name inside a named illness)",
+   "106 (The Exorcist) s0: 'In a distant land' -> 'In the north of a country' (northern Iraq; 'distant' added information the sentence does not contain)",
+   "Checked and left as they were: nationality and language words (German, Allied, Italian/Irish/Jewish American, English), 'Morse code' as a common noun, the literal 'Author' label in 102 s0, and 'the priest' for the older priest in 106 s32. That last one is a little awkward, but it matches the label used for him everywhere else in the work.",
+   "Verified with Python: 10 works, ids 100-109, each work has the same number of sentences as the original, and the file is valid JSON lines. A backup of the file from before the edits is at <scratch>/batch_10.bak.jsonl"
+  ]
+ },
+ {
+  "output_path": "data/anon/batch_11.jsonl",
+  "works_written": 4,
+  "problems": [
+   "Work 110, sentence 26: changed 'should he ever come to their hometown' to 'should he ever come to the city'. The original says only 'Miami', so 'their hometown' added information the sentence does not contain. 'The city' also matches the label sentence 0 gave Miami.",
+   "Work 110, sentence 30: changed 'drives to their hometown to visit' to 'drives to the city to visit', for the same reason ('Miami' in the original)."
+  ]
+ }
+]

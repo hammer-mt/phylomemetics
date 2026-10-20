@@ -1,0 +1,157 @@
+{
+ "131948": {
+  "label": "The origin wound",
+  "kind": "trope",
+  "note": "A childhood loss that turns someone into a costumed hero: parents' funeral, fear of bats, a costume to frighten the killers."
+ },
+ "168352": {
+  "label": "The secret identity",
+  "kind": "trope",
+  "note": "A masked vigilante, unmasking, a double life. Also fires for Zorro, the Scarlet Pimpernel and Monte Cristo."
+ },
+ "128514": {
+  "label": "Heir to a dead father's fortune",
+  "kind": "trope",
+  "note": "Inherited wealth and a late father's company. Peaks on Tony Stark inheriting Stark Industries."
+ },
+ "50224": {
+  "label": "The billionaire vigilante",
+  "kind": "trope",
+  "note": "A reclusive rich man who fights crime outside the law."
+ },
+ "145011": {
+  "label": "The Batcave and bat gear",
+  "kind": "object",
+  "note": "Hidden headquarters, the Bat-Signal, bat-themed vehicles and devices."
+ },
+ "105434": {
+  "label": "Bats",
+  "kind": "object",
+  "note": "Literal bats: a swarm in a cave, performers dressed as bats, the costumed killer in the 1926 film The Bat."
+ },
+ "84130": {
+  "label": "Gotham City",
+  "kind": "place",
+  "note": "The city itself as a setting: its mayor, its mob bosses, its murders."
+ },
+ "589605": {
+  "label": "Commissioner Gordon",
+  "kind": "character",
+  "note": "Jim Gordon, the honest cop and ally."
+ },
+ "584876": {
+  "label": "Losing the prot\u00e9g\u00e9",
+  "kind": "trope",
+  "note": "Robin in danger, tortured or killed, and Batman's grief over it."
+ },
+ "31044": {
+  "label": "The joke",
+  "kind": "trope",
+  "note": "Telling jokes, morbid jokes, the world as a black joke. Fires on the Killing Joke and Joker (2019) most."
+ },
+ "128822": {
+  "label": "The rogues' gallery",
+  "kind": "trope",
+  "note": "A roll-call of costumed villains encountered one after another."
+ },
+ "130069": {
+  "label": "Superhero powers (peaks on Superman)",
+  "kind": "trope",
+  "note": "Superpowered heroes and kryptonite. Strongest on Superman's origin."
+ },
+ "65066": {
+  "label": "Franchise roll-call (Wikipedia style)",
+  "kind": "register",
+  "note": "Sentences listing a franchise's cast and characters. A trace of how the summaries are written, not of the stories."
+ },
+ "520801": {
+  "label": "The butler who raised him",
+  "kind": "character",
+  "note": "Alfred Pennyworth as the family butler and surrogate parent."
+ },
+ "878889": {
+  "label": "Taking in an orphan as a ward",
+  "kind": "trope",
+  "note": "A wealthy guardian adopts an orphan (Dick Grayson, the Gaslight orphans) who becomes a partner."
+ },
+ "498697": {
+  "label": "The villain's lair",
+  "kind": "place",
+  "note": "Raiding or escaping a criminal's hideout or laboratory."
+ },
+ "481199": {
+  "label": "A bomb",
+  "kind": "object",
+  "note": "Time bombs, car bombs, threats to detonate."
+ },
+ "17909": {
+  "label": "A funeral",
+  "kind": "trope",
+  "note": "Funerals and staged deaths: Bruce fleeing his parents' funeral, Batman's own faked funeral."
+ },
+ "448712": {
+  "label": "Fell into a vat of chemicals",
+  "kind": "trope",
+  "note": "The Joker's chemical-plant origin: bleached skin, a fall into a vat."
+ },
+ "765185": {
+  "label": "Two-Face's coin",
+  "kind": "object",
+  "note": "Deciding fate with the flip of a scarred coin."
+ },
+ "68088": {
+  "label": "Harvey Dent",
+  "kind": "character",
+  "note": "The district attorney before and after he becomes Two-Face."
+ },
+ "13339": {
+  "label": "Selina Kyle",
+  "kind": "character",
+  "note": "The cat burglar and Bruce's romantic foil."
+ },
+ "465474": {
+  "label": "The Riddler",
+  "kind": "character",
+  "note": "Edward Nygma and his riddles and puzzles."
+ },
+ "496024": {
+  "label": "Jason Todd",
+  "kind": "character",
+  "note": "The second Robin, his death at the Joker's hands and his return."
+ },
+ "501280": {
+  "label": "Ra's al Ghul",
+  "kind": "character",
+  "note": "The immortal leader of the League of Assassins and his mission to destroy Gotham."
+ },
+ "513921": {
+  "label": "Lucius Fox",
+  "kind": "character",
+  "note": "The Wayne Enterprises engineer. Also fires on Zorro's nickname \"The Fox\" and on the Zorro movie young Bruce sees before his parents die."
+ },
+ "876522": {
+  "label": "A corrupt police force",
+  "kind": "trope",
+  "note": "Dirty cops and an honest officer purging corruption."
+ },
+ "57687": {
+  "label": "Prison and the inmates released",
+  "kind": "place",
+  "note": "Blackgate Penitentiary, prison breaks, freeing the inmates."
+ },
+ "465435": {
+  "label": "The antidote",
+  "kind": "trope",
+  "note": "A poison or toxin and the race to make an antidote."
+ },
+ "47532": {
+  "label": "A mutating super-formula",
+  "kind": "object",
+  "note": "The Titan steroid and other formulas that mutate their users. Mostly the Arkham games."
+ },
+ "66576": {
+  "label": "Fear toxin",
+  "kind": "object",
+  "note": "Hallucinogens that weaponize fear: the blue flower compound, Scarecrow's gas."
+ }
+}

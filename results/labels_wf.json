@@ -1,0 +1,962 @@
+{
+ "118766": {
+  "unit": 118766,
+  "label": "Alfred, the butler",
+  "kind": "character",
+  "batman_specific": true,
+  "confidence": "high",
+  "note": "Seven of eight top sentences name Alfred Pennyworth as Bruce's butler and support (summoning Thomas Elliot in Hush, radio and tactical support in Arkham City and Knight, tending Nightwing in Under the Red Hood, near death in White Knight, the Edo Batcave in Batman Ninja, advising Batman about Dick in Lego Batman). It is mostly a name detector. The top hit is the one outlier: Daredevil's Kingpin posing as a legitimate businessman."
+ },
+ "577083": {
+  "unit": 577083,
+  "label": "The hero's supporting cast",
+  "kind": "mixed",
+  "batman_specific": false,
+  "confidence": "low",
+  "note": "A 46-neuron family that fires on named secondary characters around a hero, with no single idea joining them: Perry White and Lois naming Superman, Harry Osborn and Mary Jane with Peter Parker, Napier visiting Harley Quinn, Batgirl and Nightwing in a chase, and the Arkham Knight villain roster. Alfred appears in three of the eight (saving Batman with Robin, named legal guardian, near death). The two cousin hits suggest a general ensemble pattern rather than Batman."
+ },
+ "574705": {
+  "unit": 574705,
+  "label": "Robin, Batman's prot\u00e9g\u00e9s",
+  "kind": "character",
+  "batman_specific": true,
+  "confidence": "high",
+  "note": "All eight top sentences are about the Robins: Tim Drake training Jean-Paul, the Joker murdering Jason Todd (Dark Knight Returns), Jason capturing Tim in Hush, Tim tortured in Return of the Joker, Batman's trauma over Jason in Knightfall, the Joker capturing Jason in Under the Red Hood, Jason ignoring orders in A Death in the Family, and the Bat Clan helping Nightwing, Red Hood, Red Robin and Robin. Jason Todd's death dominates."
+ },
+ "131948": {
+  "unit": 131948,
+  "label": "The origin wound",
+  "kind": "trope",
+  "batman_specific": false,
+  "confidence": "medium",
+  "note": "Only four of eight top sentences are Bruce's founding trauma: the costume to frighten his parents' killers, fleeing their funeral, the well and the bats, the vow made in memory of his murdered parents. Two are other deaths (Harvey Dent, the Joker murdering Jason Todd), and two have no grief in them at all (Tim training Jean-Paul, Jason ignoring orders), which overlap with the Robin unit's top hits. Every top sentence is Batman, so calling it general rests only on its presence in 7 of 13 cousins, not on anything in the sentences."
+ },
+ "74919": {
+  "unit": 74919,
+  "label": "Gotham City",
+  "kind": "place",
+  "batman_specific": true,
+  "confidence": "high",
+  "note": "Seven of eight top sentences contain 'Gotham City' (Victorian Gotham, Thomas Wayne running for Gotham mayor, Bruce returning home to Gotham, Gotham University, Lego Batman protecting Gotham, the R.I.P. flashback, the Gotham mayor's murder). The eighth is a 'gothic building' in R.I.P., which suggests it keys on the word 'Goth-' rather than the idea of the city. It is present in only 1 of 13 cousins."
+ },
+ "849762": {
+  "unit": 849762,
+  "label": "Knightfall publication history",
+  "kind": "register",
+  "batman_specific": false,
+  "confidence": "medium",
+  "note": "Six of eight top sentences come from the Knightfall article, and five of those are publication-history prose rather than story: the prelude introducing Azrael, both characters 'added to the cast', Detective Comics #654-656, Batman #484-489, and Bane 'introduced in' Vengeance of Bane #1. Only Jean-Paul and the System is plot. The outliers are Falcone enlisting Gotham's freaks and an Arkham treatment. It is a late-layer neuron present in 6 of 13 cousins, which points to how Wikipedia writes about comic runs rather than to Batman content, even though every top hit is a Batman work."
+ },
+ "496279": {
+  "unit": 496279,
+  "label": "Gotham and Arkham",
+  "kind": "place",
+  "batman_specific": true,
+  "confidence": "medium",
+  "note": "This is a single layer-4 neuron. Seven of eight top sentences contain the words 'Gotham City' or 'Arkham' (Bane taking Gotham, Victorian Gotham, the Gotham mayor's murder, Arkham Island off the coast of Gotham, Bruce falling down the well in Gotham). Two of them match only because 'Arkham' is in a game title: the identical 'large ensemble cast' lines from Arkham City and Arkham Knight, which are cast-list register, not setting. The Falcone bodyguard killed at Christmas has neither word. It looks like a word-level name detector more than a setting idea, and it is present in 1 of 13 cousins."
+ },
+ "460110": {
+  "unit": 460110,
+  "label": "The name 'Batman'",
+  "kind": "character",
+  "batman_specific": true,
+  "confidence": "high",
+  "note": "This is a layer-1 detector for the word 'Batman'. All seven Batman sentences contain the name in unrelated contexts: the Arkham City voice-cast list, the 1943 serial, 'Batman and Robin will never die!', 'confronted by Batman' in The Killing Joke, Terry McGinnis as Batman. Only two call him a vigilante (Knox and Vicki Vale in Batman '89, The Dark Knight). The Superman hit is Lois coining the name 'Superman', which fits a hero's-name detector, not the masked-vigilante idea the draft claimed."
+ },
+ "117668": {
+  "unit": 117668,
+  "label": "Arkham Asylum and Lucius Fox",
+  "kind": "mixed",
+  "batman_specific": true,
+  "confidence": "medium",
+  "note": "A single neuron that splits exactly four and four between two unrelated Batman names. Arkham Asylum: Killer Croc escaping it, interrogating the Joker there, fighting Grodd there, inmates taking it over. Lucius Fox: the Arkham Knight tactical support, fixing the Bat's autopilot, prototype tech in Batman Begins, a target of Black Mask. The label covers all eight only because it joins the two, so it is a polysemantic name detector, not one meme."
+ },
+ "130069": {
+  "unit": 130069,
+  "label": "Superman lore",
+  "kind": "character",
+  "batman_specific": false,
+  "confidence": "high",
+  "note": "The existing label 'Superhero powers' does not fit: no top sentence is about powers. All eight are Superman's own world: Jor-El sending Kal-El, the Kents adopting Clark, Clark at the Daily Planet and in Corto Maltese, Lex Luthor, and kryptonite used against him (the arrow, the spear, the ring), which appears in four. It is present in 9 of 13 cousins, so it is crossover material, not Batman's own."
+ },
+ "116484": {
+  "unit": 116484,
+  "label": "Assorted Batman plot material",
+  "kind": "mixed",
+  "batman_specific": true,
+  "confidence": "low",
+  "note": "All eight top sentences come from Batman works (Weaver at the Wayne murder scene, Clark hearing Wayne's heartbeat at the funeral, the Arkham Knight cameo roster and Arkham Asylum villain roster, Huntress attacking Catwoman, the Joker's nuclear weapon in Lebanon, the Bat Clan returning villains, Yindel declaring Batman wanted), but they share no single character, place or situation, and it reaches 5 cousins, so 'Batman-specific' is a weak call."
+ },
+ "577158": {
+  "unit": 577158,
+  "label": "Generic superhero comic plot",
+  "kind": "genre",
+  "batman_specific": false,
+  "confidence": "low",
+  "note": "Five of the eight top sentences are Iron Man (Fury's post-credits visit, Potts meeting Coulson, the attempted arrest of Stane, Stark in Afghanistan, Potts and the reactor), and the rest are Ra's al Ghul hiring the Joker, Oliver Queen's kryptonite arrow and the Kingpin, so it reads as shared comic-book plot material rather than Batman, and the earlier 'supporting characters' reading doesn't fit the Stark and Stane sentences."
+ },
+ "119629": {
+  "unit": 119629,
+  "label": "The hero's double life",
+  "kind": "trope",
+  "batman_specific": false,
+  "confidence": "medium",
+  "note": "Most top sentences turn on the gap between the hero's civilian self and costumed self (Superman's memorial in Metropolis while Clark gets his own funeral, Batman exposed as Bruce Wayne, Clark hired at the Daily Planet and then debuting his costume, Peter hired to photograph Spider-Man, Blake's real name revealed as Robin, the Batcave as hideout), which fits better than 'civilian world' because the Batcave and costume sentences aren't civilian; only the Batman Ninja river battle is off-theme, and the Superman and Spider-Man pull plus 5 cousins make it superhero-generic."
+ },
+ "561931": {
+  "unit": 561931,
+  "label": "Villain schemes and hostages",
+  "kind": "trope",
+  "batman_specific": false,
+  "confidence": "low",
+  "note": "Five of the eight top sentences are villains plotting or holding hostages (the Arkham hostages, the Black Glove planning to destroy Batman, Le Bossu recruiting the Joker, Luthor kidnapping Martha Kent and Lois, the Knightfall villains targeting Wayne and Gordon), but Nick Fury's post-credits visit, Mary Jane's confession of love and Harley attacking Napier don't fit, and villain conspiracies are generic material (4 cousins)."
+ },
+ "145011": {
+  "unit": 145011,
+  "label": "The Batcave and bat gear",
+  "kind": "object",
+  "batman_specific": true,
+  "confidence": "high",
+  "note": "Every top sentence names a piece of Batman's equipment or his base (the makeshift Batcave in the clock tower, the Bat aircraft, the bat signal device, the Bat-signal, Dick entering the Batcave, the Batmobile fleet, Terry's Batsuit, Jezebel being shown the Batcave), so it may partly be keyed to 'Bat-' compound words, but the object reading holds for all eight."
+ },
+ "584876": {
+  "unit": 584876,
+  "label": "Robin and the Bat-family",
+  "kind": "character",
+  "batman_specific": true,
+  "confidence": "medium",
+  "note": "Seven of the eight top sentences are about Batman's sidekicks (Jason Todd as Robin disobeying orders, captured, tortured and killed in five sentences, then Barbara Gordon as former Batgirl and the Robin/Nightwing/Oracle roster); 'Losing the prot\u00e9g\u00e9' fits only the Jason Todd death sentences and the parents' funeral, so it was a character detector being sold as a trope, though Jason Todd's death dominates and it has 0 cousins."
+ },
+ "84130": {
+  "unit": 84130,
+  "label": "Gotham City",
+  "kind": "place",
+  "batman_specific": true,
+  "confidence": "high",
+  "note": "All eight top sentences name Gotham City explicitly, usually in the opening phrase that sets the scene (the Riddler killing the mayor, Falcone at a wedding, Bruce falling down the well, Two-Face's hostage situation, Oswald abandoned in the sewers, Year One's homecoming), so it really is a place-name detector."
+ },
+ "315499": {
+  "unit": 315499,
+  "label": "Publication history and character debuts",
+  "kind": "register",
+  "batman_specific": false,
+  "confidence": "medium",
+  "note": "Seven of the eight top sentences are encyclopedic issue-and-creator text (Azrael and Bane introduced in named issues by named creators, the Batman #484-489, #491 and Detective Comics #654-656 runs, the Arkham Knight created by Johns and Lee, the two characters added to the monthly cast), which is Wikipedia register rather than story; only the Batman v Superman 'eighteen months after' sentence is off, but six of the eight come from Knightfall, so it may partly be a Knightfall-page detector, and it shows up in 6 cousins."
+ },
+ "142690": {
+  "unit": 142690,
+  "label": "Bruce Wayne out of costume",
+  "kind": "character",
+  "batman_specific": true,
+  "confidence": "medium",
+  "note": "Every top sentence calls him 'Bruce' rather than Batman and most show his private household life (Alfred and Jason's costume case, Barbara Wilson staying at Wayne Manor, dating Jezebel Jet, riding to the mayor's party, being kidnapped as Bruce Wayne), though the Fries treatment and Nightwing and Batgirl worrying about his obsession suggest it's partly just a detector for the name 'Bruce'."
+ },
+ "31044": {
+  "unit": 31044,
+  "label": "The joke",
+  "kind": "trope",
+  "batman_specific": true,
+  "confidence": "high",
+  "note": "Seven of the eight top sentences are literally about jokes or laughing (the Killing Joke's asylum joke, the 'black, awful joke' and the shared laugh, plus Arthur's morbid jokes, failed stand-up, laugh in Arkham and final joke in Joker (2019)), and the eighth names the Joker/Lord Joker, so at layer 2 this is probably a lexical joke/Joker token detector that counts as Batman-specific only because of the Joker (0 cousins)."
+ },
+ "316740": {
+  "unit": 316740,
+  "label": "Batman cast and publication notes",
+  "kind": "register",
+  "batman_specific": true,
+  "confidence": "medium",
+  "note": "Six of eight top sentences are Wikipedia framing rather than story: voice-cast lists for Arkham City (twice) and Arkham Asylum, Bane's debut credits, Knightfall issue numbers, and Arkham City being set 18 months after Arkham Asylum. The other two are plain plot lines naming Batman and Robin (the 1943 serial, R.I.P.), so the draft holds."
+ },
+ "873764": {
+  "unit": 873764,
+  "label": "Batman and his allies",
+  "kind": "character",
+  "batman_specific": true,
+  "confidence": "medium",
+  "note": "Six sentences make Batman the subject: he is taken 'out of the equation', his psyche is strained, Nygma claims to be him, he alerts Gordon, Oracle and Gordon aid him, and he meets Dent and Gordon. The other two are Bruce accepting Dick as Robin and Alfred hired at Wayne Manor. It reads as Batman plus his support circle, not a sharper idea, and allies appear in only five of the eight."
+ },
+ "132996": {
+  "unit": 132996,
+  "label": "Superhero plot beats",
+  "kind": "mixed",
+  "batman_specific": false,
+  "confidence": "low",
+  "note": "Three Spider-Man lines about Peter's ordinary life (Uncle Ben's death, the wrestling match, the field trip) sit beside Batman lines about villains in Arkham, Scarecrow's fear gas, Lego Batman's Phantom Zone and Napier running for council. They share nothing beyond being superhero plot summary, and the neuron is present in 5 cousin works."
+ },
+ "815241": {
+  "unit": 815241,
+  "label": "Batcave, Alfred and the Gordons",
+  "kind": "character",
+  "batman_specific": true,
+  "confidence": "medium",
+  "note": "Alfred is in five sentences (bringing Vicki to the Batcave, at Bruce's bedside, consoling him, at the burial, his niece's visit), the Batcave in four (including the Black Glove breaking in), and the name 'Barbara' in four (Barbara Gordon twice, Gordon's wife, Barbara Wilson). It is a cluster of name detectors for Batman's household rather than one idea, so the draft's name-based label is the honest one."
+ },
+ "128822": {
+  "unit": 128822,
+  "label": "The rogues' gallery",
+  "kind": "character",
+  "batman_specific": true,
+  "confidence": "high",
+  "note": "All eight sentences name Batman's supervillains, often as lists: Scarecrow in five, Poison Ivy in five, plus Clayface, Killer Croc, Penguin, Riddler, Bane, Zsasz, Two-Face and Harley Quinn, across the Arkham games, Hush, Knightfall and Batman Ninja. Batman himself is absent from the Batman Ninja line, so the hook is the villains, not the fight."
+ },
+ "435358": {
+  "unit": 435358,
+  "label": "Batsuit and other Bat- words",
+  "kind": "object",
+  "batman_specific": true,
+  "confidence": "medium",
+  "note": "Six sentences hinge on a 'Bat-' compound: Azrael's mechanical Batsuit, Terry's Batsuit in Return of the Joker (twice), a Batarang in Under the Red Hood, and Man-Bat twice (Talia's commandos, a villain list). Man-Bat is a creature, not gear, so this looks more like a word-level 'Bat-' detector than a gear idea. The Zur-En-Arrh and Bane-origin lines don't fit."
+ },
+ "504070": {
+  "unit": 504070,
+  "label": "Wayne Enterprises",
+  "kind": "place",
+  "batman_specific": true,
+  "confidence": "medium",
+  "note": "All eight sentences contain 'Wayne', six of them in corporate names: Wayne Enterprises four times (Nygma's employer, Lucius Fox twice, the Brazil lab), Wayne Investments in Joker, and Wayne Tower. The other two are Wayne Manor and Bruce himself ('Wayne ends his retirement'). This is an early-layer (L5) 'Wayne' word detector with no cousin hits, so confidence is lowered from high."
+ },
+ "128787": {
+  "unit": 128787,
+  "label": "Taking up a hero's mantle",
+  "kind": "trope",
+  "batman_specific": false,
+  "confidence": "medium",
+  "note": "Six of eight sentences are about taking up, giving up or passing on a costumed identity: Jean-Paul asked to take 'the mantle of Batman', Bruce abandoning his mantle, Bruce assuming it for ten years, Barbara becoming Batgirl, Tim forced to retire, and Superman's debut as the 'caped wonder'. The Arkham City cast list and Jean-Paul's introduction don't fit. Presence in 8 cousin works makes it a general hero trope, not a Batman one."
+ },
+ "128514": {
+  "unit": 128514,
+  "label": "Bruce Wayne, billionaire heir",
+  "kind": "character",
+  "batman_specific": true,
+  "confidence": "medium",
+  "note": "Seven top sentences contain the exact name 'Bruce Wayne', including lines with no link to inheritance (his alcoholism, contacting a therapist, Black Mask targeting him). Only the Tony Stark line ('inherited... from his late father') directly fits the old 'Heir to a dead father's fortune' label. It is mainly a Bruce Wayne name detector, with wealth ('reclusive billionaire', Nygma's employer, a gala) as the secondary thread."
+ },
+ "172144": {
+  "unit": 172144,
+  "label": "Bat-family costumed identities",
+  "kind": "character",
+  "batman_specific": true,
+  "confidence": "medium",
+  "note": "Four sentences are about taking on a bat role: Bruce assuming the mantle, Bruce donning a bat-themed costume, Jason's first day as Robin, and Dick accepted as Robin. Two more only name codenames: Tim 'then Robin' being kidnapped, and Dick 'using the name Nightwing'. Add Fox's bat-themed arsenal and a plain Batman-versus-mobster line, and the shared thread is the Bat-family's costumed identities rather than the act of taking one on."
+ },
+ "168352": {
+  "unit": 168352,
+  "label": "The secret identity",
+  "kind": "trope",
+  "batman_specific": false,
+  "confidence": "high",
+  "note": "Seven of eight top sentences are about masks and hidden identities (the Riddler unmasked as Edward Nashton, Clark Kent as Superman's civilian identity, Bruce as the masked vigilante, Batman never unmasking Hush, Wayne meaning to reveal his identity, Zorro's guise, Norman deducing Peter is Spider-Man); only the Knightfall underworld line is off-theme, and being in 10 of 13 cousins makes it the masked-hero pattern in general."
+ },
+ "560036": {
+  "unit": 560036,
+  "label": "Kidnappings and the Robins",
+  "kind": "mixed",
+  "batman_specific": true,
+  "confidence": "low",
+  "note": "No single theme: three lines are kidnapping or capture (the Security Council, Tim Drake captured by Jason Todd, Kinsolving and Jack Drake), three involve Robins (Tim training Jean-Paul Valley, Tim captured, Clayface posing as Jason), and the rest are leftovers (the Penguin's rehydrated henchmen, Wayne's staged death, Jordan Pryce as a suspect)."
+ },
+ "564116": {
+  "unit": 564116,
+  "label": "Batman's allies and helpers",
+  "kind": "mixed",
+  "batman_specific": true,
+  "confidence": "low",
+  "note": "Only about three or four top sentences really list helpers (the Arkham Knight and Arkham Asylum ally cast lists, Ace helping Terry, perhaps Lady Shiva), while the rest are villain plot lines (Red Hood at Ace Chemicals, Two-Face's coin, Black Mask and the Gordon assassin), and the word 'Ace' turns up three times, so the theme is loose and may partly be a word match."
+ },
+ "574316": {
+  "unit": 574316,
+  "label": "Marvel-style superhero plots",
+  "kind": "genre",
+  "batman_specific": false,
+  "confidence": "low",
+  "note": "Six of eight top sentences come from Marvel cousins (three S.H.I.E.L.D. scenes from Iron Man, Spider-Man's Thanksgiving dinner and the Goblin chemical, Daredevil fighting crime by night), plus two Under the Red Hood gang-war lines, so it reads as generic superhero-film plotting with only a weak link to agencies and gangs."
+ },
+ "119120": {
+  "unit": 119120,
+  "label": "Costumed hero and villain codenames",
+  "kind": "character",
+  "batman_specific": true,
+  "confidence": "medium",
+  "note": "Every top sentence is full of costumed aliases (the Joker escaping Arkham, Nightwing, Red Hood, Red Robin and Robin, Black Mask luring Red Hood, Batman and Robin chased by police, the Riddler, Zsasz, Bane and Poison Ivy returning, Clark Kent as Superman, Peter taking the alias Spider-Man); it is in only 3 cousins, so it is mostly Batman's roster of codenames, though it overlaps with the secret-identity unit."
+ },
+ "589605": {
+  "unit": 589605,
+  "label": "Commissioner Gordon",
+  "kind": "character",
+  "batman_specific": true,
+  "confidence": "high",
+  "note": "Six of eight top sentences name James 'Jim' Gordon (near retirement in Dark Knight Returns, stopping Batman in Hush, moving to Gotham in Year One, kidnapped in The Killing Joke, as lieutenant in The Batman and captain in The Long Halloween) and it is in no cousins, so it is a real Gordon detector; the 1943 serial and the Hush opera lines are the exceptions."
+ },
+ "252675": {
+  "unit": 252675,
+  "label": "Batman's rogues gallery",
+  "kind": "character",
+  "batman_specific": true,
+  "confidence": "medium",
+  "note": "Seven of eight top sentences are about Batman's villains or antagonists (the Joker murdering Jason Todd, Red Hood gathering the drug dealers, Ra's al Ghul hiring the Joker, Harley Quinn returning, the Arkham Knight list of Scarecrow, Penguin, Two-Face and the rest, Talia's Man-Bat Commandos, the Jokerz gang); only the parents' funeral flashback is off-theme, and it is in just 1 cousin."
+ },
+ "584829": {
+  "unit": 584829,
+  "label": "Commissioner Gordon and the police",
+  "kind": "character",
+  "batman_specific": true,
+  "confidence": "high",
+  "note": "Six of eight top sentences name James Gordon (three Arkham game cast lists, Lieutenant Gordon with the GCPD in The Batman, Gordon hiding Dent's crimes in Dark Knight Rises, Gordon taking over the raid in Batman '89), and the other two are about Bruce's vigilantism (Batman Begins, Blake persuading Bruce); it is in no cousins."
+ },
+ "408444": {
+  "unit": 408444,
+  "label": "Wayne Manor and Batman's world",
+  "kind": "mixed",
+  "batman_specific": true,
+  "confidence": "low",
+  "note": "A broad late-layer group of 32 neurons: four of eight top sentences involve Wayne Manor or Wayne holdings (the cave under the Manor, Alfred as head of security, Dick moving in, Lucius Fox at Wayne Medical), while the rest are general Batman setting (the Arkham City cast list, Batman missing the Joker, Hugo Strange's facility, Gotham's underworld), so it looks like general Batman-world context, not one idea."
+ },
+ "579530": {
+  "unit": 579530,
+  "label": "Superhero casts and henchmen",
+  "kind": "genre",
+  "batman_specific": false,
+  "confidence": "low",
+  "note": "The top sentences mix Daredevil (three lines, two about Elektra, whose father is Fisk's lieutenant), Iron Man's S.H.I.E.L.D. agent, Superman after Zod, the Penguin as Falcone's lieutenant and the Arkham Knight and Arkham City villain lists, so it seems to respond to comic-book character introductions and lieutenants in general rather than anything specific to Batman."
+ },
+ "575866": {
+  "unit": 575866,
+  "label": "Arkham Asylum, plus Daredevil",
+  "kind": "mixed",
+  "batman_specific": false,
+  "confidence": "low",
+  "note": "Four top sentences are about Arkham Asylum (Tim Drake tortured there, the facility on Arkham Island, the inmates' takeover, the Arkham City returning cast) and three are Daredevil (the Kingpin article, the costumed vigilante by night, Murdock's blinding), with a stray Hush ransom line; only one Daredevil line is about vigilantes, so the draft's 'asylum-and-vigilante' reading was too generous and this is two unrelated clusters."
+ },
+ "569209": {
+  "unit": 569209,
+  "label": "Selina Kyle / Catwoman",
+  "kind": "character",
+  "batman_specific": true,
+  "confidence": "high",
+  "note": "All eight top sentences name Selina Kyle (the cat burglar in Dark Knight Rises, Max's secretary in Batman Returns, the actress in Gotham by Gaslight, the waitress in The Batman, Year One's brawl, Long Halloween's Catwoman), so this is a clean Catwoman name detector."
+ },
+ "586453": {
+  "unit": 586453,
+  "label": "The Joker",
+  "kind": "character",
+  "batman_specific": true,
+  "confidence": "medium",
+  "note": "Six of eight top sentences name the Joker (escaping Arkham, Napier becoming the Joker, being offered $5 million to kill Batman, waking from catatonia, Le Bossu's offer, his arrest before the Dent Act), while the Spider-Man crime-fighting line and The Dark Knight's anti-crime alliance have no Joker in them."
+ },
+ "581638": {
+  "unit": 581638,
+  "label": "The bat-man himself",
+  "kind": "character",
+  "batman_specific": true,
+  "confidence": "high",
+  "note": "Every top sentence has the bat-costumed man as the acting subject: The Bat (1926) murdering Gideon and leaving a bat-shaped note, and Batman investigating murders, interrogating in the Bat's Cave, defusing Two-Face's hostage situation, stopping the Joker and recalling the Batsuit, so it reads as a Batman/The Bat name-and-agent detector."
+ },
+ "360256": {
+  "unit": 360256,
+  "label": "Ra's al Ghul and Osborn family",
+  "kind": "mixed",
+  "batman_specific": false,
+  "confidence": "low",
+  "note": "Splits between Spider-Man's Osborns and Mary Jane (three lines) and the al Ghul family (Ra's wife and child, Talia's Man-Bat Commandos, Ra's hiring the Joker), plus a stray Pepper Potts line and an Arkham Knight cameo list that happens to include Ra's and Nyssa; 'villain fathers and heirs' fits only part of it."
+ },
+ "140053": {
+  "unit": 140053,
+  "label": "Batman and the Bat-family",
+  "kind": "character",
+  "batman_specific": true,
+  "confidence": "medium",
+  "note": "Seven of eight top sentences turn on Batman and his circle (Arkham binding the spirit of 'The Bat', Jason's Robin costume in the Batcave, the 'Sons of the Batman', Batman's allies Robin, Nightwing and Oracle in Arkham Knight, Jason revealing he is Robin, Batman as the main character), though the White Knight line is about Bruce's fellow billionaires and Thomas Wayne and the 2001: A Space Odyssey line is off-topic."
+ },
+ "115035": {
+  "unit": 115035,
+  "label": "Arkham-game cast lists, Wayne parents",
+  "kind": "mixed",
+  "batman_specific": true,
+  "confidence": "low",
+  "note": "Five of eight top sentences are Arkham-game character rosters with voice actors (Quincy Sharp, Hush and Azrael, Alfred and Lucius, Hugo Strange, the Arkham Knight villain lineup), which is Wikipedia cast-list register, while Thomas and Martha Wayne appear twice, Martha Kent once and Two-Face's die therapy once, so it mixes roster register with the parents (possibly a 'Martha' hook)."
+ },
+ "132549": {
+  "unit": 132549,
+  "label": "Sherlock Holmes detective fiction",
+  "kind": "genre",
+  "batman_specific": false,
+  "confidence": "medium",
+  "note": "All eight top sentences come from one cousin, Sherlock Holmes (Watson meeting Holmes at 221B Baker Street, the deductions, Drebber poisoned, Lestrade and Gregson), and some are flat-hunting backstory with no detection, so it may be a Holmes name detector, not a 'detective' idea; it is present in all 32 Batman works and 6 cousins, which suggests detective material, but these sentences cannot tell the two readings apart."
+ },
+ "611750": {
+  "unit": 611750,
+  "label": "Costumed rogues gallery",
+  "kind": "trope",
+  "batman_specific": false,
+  "confidence": "medium",
+  "note": "About half the top sentences are lineups of costumed oddballs (Long Halloween's 'freaks', the Arkham comic's Clayface and Killer Croc, the Arkham City and Arkham Knight villain lists) plus Scarecrow in a graveyard, but two are about Huntress (an ally, not a rogue) and one is Zorro's masked-outlaw guise; with 8 cousins it reads as masked costumed characters in general, not Batman alone."
+ },
+ "134500": {
+  "unit": 134500,
+  "label": "Villains the hero must defeat",
+  "kind": "trope",
+  "batman_specific": false,
+  "confidence": "medium",
+  "note": "Top sentences set criminal antagonists against the hero: Arkham villain lineups, Scarecrow four times (Arkham Asylum, Arkham Knight, Hush, Knightfall), Red Hood's drug dealers, the orphans' abusive handler, Home Alone's burglars Harry and Marv, and Norman Osborn testing his chemical; with 5 cousins and a non-superhero film among the hits, it is a general antagonist feature, perhaps with a Scarecrow lean."
+ },
+ "44950": {
+  "unit": 44950,
+  "label": "Batman himself",
+  "kind": "character",
+  "batman_specific": true,
+  "confidence": "high",
+  "note": "Seven of eight top sentences open with the word Batman: four have him as the subject (\"Batman and Gordon apprehend the Joker\", \"Batman stages a plan with Gordon\") and three use the possessive (\"Batman's investigation\", \"Batman's return is reported\"); the eighth is Bruce Wayne coming home to start his war on crime. It sits in layer 3, appears in no cousins and has Gordon in four sentences, so it looks like a detector for Batman's name as sentence subject rather than a broader idea."
+ },
+ "131818": {
+  "unit": 131818,
+  "label": "Gotham City",
+  "kind": "place",
+  "batman_specific": true,
+  "confidence": "medium",
+  "note": "Six of eight sentences name Gotham or Gotham City (Gordon moving to Gotham, Red Hood \"five years later in Gotham City\", Arkham Island \"off the coast of Gotham City\", \"Gotham's underworld\"); the other two are an Arkham Knight cast list built around the Gordons and a sentence about Joker and Titan inside the asylum, so it may partly be a Gordon/Gotham token overlap, and the 4 cousins may be other fictional cities."
+ },
+ "145519": {
+  "unit": 145519,
+  "label": "Bruce's confidants and loved ones",
+  "kind": "character",
+  "batman_specific": true,
+  "confidence": "high",
+  "note": "All eight sentences put Bruce or Batman next to someone from his private circle: Rachel Dawes in three (mourning her, pursuing her, her confronting his vengeance), Alfred Pennyworth in four (\"his butler Alfred Pennyworth\", tending wounds, \"watch the world burn\"), and Thomas and Martha Wayne in the Earth One sentence."
+ },
+ "609243": {
+  "unit": 609243,
+  "label": "Bruce's origin and bat lair",
+  "kind": "trope",
+  "batman_specific": true,
+  "confidence": "medium",
+  "note": "Two themes split the sentences: four are about how Batman was made (fleeing his parents' funeral, falling down a well and fearing bats, coming back after years of training abroad) and three are about bat-themed lair items (the Bat's Cave, the Batcomputer, bats called from the Batcave); the eighth, the aging Bruce fighting alcoholism in Dark Knight Returns, fits neither theme, so this is a two-part label."
+ },
+ "116207": {
+  "unit": 116207,
+  "label": "Superhero allies and love interests",
+  "kind": "genre",
+  "batman_specific": false,
+  "confidence": "low",
+  "note": "Most top sentences come from outside Batman and only loosely share a hero's supporting cast: Lois Lane in three Superman/BvS sentences (with Perry White and Martha Kent), Daredevil's Elektra, Star Wars hiring Han Solo, Lucius Fox, plus Batman being named by the press and Jor-El sentencing Zod, which fit no theme; half the sentences are Superman material."
+ },
+ "332321": {
+  "unit": 332321,
+  "label": "Batman's wider supporting cast",
+  "kind": "character",
+  "batman_specific": true,
+  "confidence": "high",
+  "note": "All eight sentences name secondary Batman-universe figures: Harvey Dent twice, Selina Kyle and Holly Robinson, Jason Todd, Harvey Bullock, and reporters Vicki Vale and Jack Ryder in the Arkham game cast lists. Two of the eight are Wikipedia voice-cast lists, and minor villains such as Hush and Killer Croc are mixed in."
+ },
+ "595461": {
+  "unit": 595461,
+  "label": "Wealthy high society",
+  "kind": "trope",
+  "batman_specific": false,
+  "confidence": "medium",
+  "note": "Six of eight top sentences come from Pride & Prejudice: estates, a denied inheritance, the snobbish Darcy and haughty Caroline, and two marriage proposals. The other two are the fabulously wealthy Count of Monte Cristo and Bruce taking over the Gotham City Bank board, so it tracks class, money and courtship among the gentry rather than Batman."
+ },
+ "405229": {
+  "unit": 405229,
+  "label": "Batman's rogues gallery",
+  "kind": "character",
+  "batman_specific": true,
+  "confidence": "high",
+  "note": "All eight sentences feature Batman villains: Bane, Zsasz, Killer Croc, Poison Ivy and Scarecrow in Arkham Asylum, the United Underworld of Joker, Penguin, Riddler and Catwoman, Gotham's \"freaks\" in The Long Halloween, the Red Triangle Gang, and Bane's creation in Batman & Robin. Several of these are Arkham-game cast lists."
+ },
+ "569546": {
+  "unit": 569546,
+  "label": "Mixed Batman lore",
+  "kind": "mixed",
+  "batman_specific": true,
+  "confidence": "low",
+  "note": "No single theme: three sentences are Batcave scenes (Black Glove infiltrating it, Bruce collapsing at Alfred's bedside, the 1943 Bat's Cave), three are game production and casting notes (DCAU voice actors reprising roles, the returning-characters cast list, Arkham Knight's creators), and two are Bruce refusing rest in Knightfall and the Earth One Wayne family."
+ },
+ "379403": {
+  "unit": 379403,
+  "label": "Wayne Manor",
+  "kind": "place",
+  "batman_specific": true,
+  "confidence": "high",
+  "note": "All eight top sentences name Wayne Manor, from Alfred becoming its head of security and the cave found beneath it to Bane attacking Batman there and Dick Grayson being invited to live there as Bruce's ward."
+ },
+ "501280": {
+  "unit": 501280,
+  "label": "Ra's al Ghul",
+  "kind": "character",
+  "batman_specific": true,
+  "confidence": "high",
+  "note": "All eight top sentences name Ra's al Ghul: Bane carrying out his mission in Dark Knight Rises, his body in the Arkham morgue, the League of Shadows in Batman Begins, and hiring the Joker in Under the Red Hood. It fires on no cousin works."
+ },
+ "496238": {
+  "unit": 496238,
+  "label": "Wayne Manor",
+  "kind": "place",
+  "batman_specific": true,
+  "confidence": "high",
+  "note": "Six sentences name Wayne Manor (the cave beneath it, Alfred destroying it, Thomas hiring Alfred to guard it) and a seventh is Bruce's own 'manor' in Gotham by Gaslight. The one outlier, Falcone's manor in Year One, suggests it partly keys on the word 'manor', but in practice it detects the Wayne family home. It appears in 16 Batman works and no cousins."
+ },
+ "481199": {
+  "unit": 481199,
+  "label": "A bomb",
+  "kind": "object",
+  "batman_specific": false,
+  "confidence": "high",
+  "note": "Every sentence involves a bomb (the Godfather car bombing, Two-Face's bomb threat, the Joker's time bomb, the Riddler's collar bomb, the letter bomb that hurts Alfred). The top hit is The Godfather, a film from outside the Batman set, so this is ordinary crime-thriller material that Batman uses a lot, not something specific to Batman."
+ },
+ "32791": {
+  "unit": 32791,
+  "label": "Clayface",
+  "kind": "character",
+  "batman_specific": true,
+  "confidence": "high",
+  "note": "Seven of eight sentences name the shape-shifter Clayface (mind-controlled in White Knight, cameos in the Arkham games, mimicking Jason in Hush). The one cousin hit is The Shadow's 'Farley Claymore', which looks like a match on the spelling 'Clay', so part of this may be a token match."
+ },
+ "17909": {
+  "unit": 17909,
+  "label": "A funeral",
+  "kind": "trope",
+  "batman_specific": false,
+  "confidence": "high",
+  "note": "Every sentence is a funeral or memorial (Bruce fleeing his parents' funeral, Wayne's staged funeral, Mitchell's funeral, Elliot's funeral, Norman Osborn's funeral in Spider-Man). It also fires on 3 cousin works, so it is a general story situation, not a Batman one."
+ },
+ "523074": {
+  "unit": 523074,
+  "label": "Harley Quinn",
+  "kind": "character",
+  "batman_specific": true,
+  "confidence": "high",
+  "note": "All eight sentences name Harley Quinn, mostly alongside the Joker or as his sidekick (crashing the party in Lego Batman, voice casting in the Arkham games, robbing the opera in Hush, seizing the Panessa studio base in Arkham Knight)."
+ },
+ "502805": {
+  "unit": 502805,
+  "label": "Wayne Enterprises",
+  "kind": "place",
+  "batman_specific": true,
+  "confidence": "high",
+  "note": "Every sentence names Wayne Enterprises, the family company (Pamela Isley's lab in Brazil, Nygma as a researcher there, Daggett's takeover bid, Lucius Fox as CEO, the Gotham Observatory telescope). It fires on no cousin works."
+ },
+ "465474": {
+  "unit": 465474,
+  "label": "The Riddler",
+  "kind": "character",
+  "batman_specific": true,
+  "confidence": "high",
+  "note": "All eight sentences name the Riddler. Five come from The Batman (2022): murdering the mayor, leaving messages, the collar-bomb riddles. The other three come from Arkham City, Batman Forever and The Long Halloween. It fires on no cousin works."
+ },
+ "28675": {
+  "unit": 28675,
+  "label": "The word 'stroke', plus scraps",
+  "kind": "mixed",
+  "batman_specific": false,
+  "confidence": "low",
+  "note": "Half the sentences contain the string 'stroke' (Deathstroke twice, Penny's stroke in Joker 2019, Alfred's fatal stroke). The other half share nothing (the curse on Arkham Manor, the Batcave's stash of bombs, Azrael in Knightfall, Quint and the barrels in Jaws), so this looks like a word fragment plus noise, not a Batman idea."
+ },
+ "40056": {
+  "unit": 40056,
+  "label": "Commissioner Gordon",
+  "kind": "character",
+  "batman_specific": true,
+  "confidence": "high",
+  "note": "Every sentence names Commissioner (James) Gordon (his office in Batman '66, his kidnapping in The Killing Joke, his retirement gala in Lego Batman, the assassin hired to kill him in Knightfall). It appears in 18 of 32 Batman works, making it one of the most widespread units here."
+ },
+ "457566": {
+  "unit": 457566,
+  "label": "The name Thomas (mostly Wayne)",
+  "kind": "character",
+  "batman_specific": true,
+  "confidence": "medium",
+  "note": "A layer-1 detector for the name 'Thomas': six of eight sentences are Bruce's father Thomas Wayne (Joker 2019, Earth One, Long Halloween, the Arkham Asylum cast list, two White Knight Freeze-Tech lines), but two are other Thomases (Thomas Elliot in Hush, Duke Thomas in White Knight), so it is a name-token feature more than a 'Bruce's father' concept."
+ },
+ "68088": {
+  "unit": 68088,
+  "label": "Harvey Dent",
+  "kind": "character",
+  "batman_specific": true,
+  "confidence": "high",
+  "note": "Seven of eight sentences name Harvey Dent, the district attorney who becomes Two-Face (The Dark Knight, Long Halloween, Batman Forever, Earth One's twin brother Harvey, the Dent Act in Dark Knight Rises, Hush, Dark Knight Returns); the one spillover is Chief Harvey Bullock in Gotham by Gaslight, so it keys on the name 'Harvey'."
+ },
+ "43445": {
+  "unit": 43445,
+  "label": "The Batcave",
+  "kind": "place",
+  "batman_specific": true,
+  "confidence": "high",
+  "note": "Seven of the top eight sentences name the Batcave (Alfred's Batcave outside Edo, the makeshift one in the clock tower, Two-Face and the Riddler destroying it, Barbara and Blake discovering it, the bat swarm in Year One); only the Arkham Asylum Titan-bomb sentence lacks it, and it is absent from all 13 cousins."
+ },
+ "55673": {
+  "unit": 55673,
+  "label": "Robin, the sidekick",
+  "kind": "character",
+  "batman_specific": true,
+  "confidence": "high",
+  "note": "Every top sentence mentions Robin across his incarnations: Jason Todd in Dark Knight Returns and A Death in the Family, Dick Grayson christened Robin in Lego Batman, Tim Drake in Hush and Knightfall, the Robins in Batman Ninja, and the 'Batman and Robin' pairing in R.I.P. and Batman & Robin."
+ },
+ "426468": {
+  "unit": 426468,
+  "label": "Ra's al Ghul",
+  "kind": "character",
+  "batman_specific": true,
+  "confidence": "high",
+  "note": "All eight sentences concern Ra's al Ghul and his family: Ducard revealed as Ra's, Crane working for him and his death on the train in Batman Begins, Talia revealed as his daughter and his wife's imprisonment in Dark Knight Rises, and the Lazarus Pits and his healing blood in Hush and Arkham City."
+ },
+ "464175": {
+  "unit": 464175,
+  "label": "Jason Todd (the name Jason)",
+  "kind": "character",
+  "batman_specific": true,
+  "confidence": "high",
+  "note": "A layer-1 detector for the name 'Jason': six of eight sentences are Jason Todd, the second Robin killed by the Joker (Dark Knight Returns twice, Under the Red Hood, A Death in the Family twice, White Knight), with spillover onto botanist Jason Woodrue in Batman & Robin and the orphan Jason in Gotham by Gaslight."
+ },
+ "496024": {
+  "unit": 496024,
+  "label": "Jason Todd",
+  "kind": "character",
+  "batman_specific": true,
+  "confidence": "high",
+  "note": "Fires on 'Todd': seven of eight sentences name Jason Todd, the second Robin, most of them about his death or its aftermath (murdered in Dark Knight Returns, tortured in White Knight, the trauma and fear-gas flashback in Knightfall, back from the dead in Hush), plus one 'Catherine Todd' line, so it is a surname detector."
+ },
+ "477538": {
+  "unit": 477538,
+  "label": "Mentions of 'Batman' (loose)",
+  "kind": "mixed",
+  "batman_specific": true,
+  "confidence": "low",
+  "note": "No clear theme: six of eight sentences contain the word Batman, three of them with the name in quotes as what the press calls the vigilante (Batman '89, Earth One, Batman Begins), plus the Arkham City cast list, the Killing Joke comedian and A Death in the Family; the top sentence (Dent at the Monarch Theatre) and the Arkham Island setting line do not mention him at all."
+ },
+ "60391": {
+  "unit": 60391,
+  "label": "Words beginning with 'Qu'",
+  "kind": "mixed",
+  "batman_specific": false,
+  "confidence": "high",
+  "note": "A spelling-level feature rather than story content: every top sentence contains a 'Qu' word (Lecter's 'quid pro quo', 'quell', alcalde Quintero in Zorro, Quetch, Harley Quinzel twice, Quincey Morris in Dracula, the 'Quake Engine'), and it fires on non-Batman films and cousins as readily as on Batman."
+ },
+ "765185": {
+  "unit": 765185,
+  "label": "Two-Face's coin",
+  "kind": "object",
+  "batman_specific": true,
+  "confidence": "high",
+  "note": "Seven of eight sentences involve Two-Face's scarred coin deciding fates (four from the Arkham Asylum comic, including the therapy that swaps the coin for a die and tarot deck, plus Batman Forever and The Dark Knight); the eighth is Dent's acid disfigurement in Batman Forever, and it appears in no cousin."
+ },
+ "13339": {
+  "unit": 13339,
+  "label": "Selina Kyle",
+  "kind": "character",
+  "batman_specific": true,
+  "confidence": "high",
+  "note": "All 8 top sentences name Selina, either in full or as just 'Selina' (the cat burglar stealing Bruce's fingerprints in Dark Knight Rises, the actress in Gotham by Gaslight, freeing Bruce as Catwoman in The Long Halloween, at the opera in Hush), and it never fires on a cousin; it is a name detector, present in 7 Batman works."
+ },
+ "505173": {
+  "unit": 505173,
+  "label": "Dick Grayson, the first Robin",
+  "kind": "character",
+  "batman_specific": true,
+  "confidence": "high",
+  "note": "7 of 8 top sentences name Dick Grayson (orphan of the Flying Graysons in Batman Forever, Nightwing in Under the Red Hood, 'the first Robin' in A Death in the Family, the adopted orphan in Lego Batman), and the eighth is an Arkham City cast list that only mentions Robin."
+ },
+ "498697": {
+  "unit": 498697,
+  "label": "The villain's lair",
+  "kind": "trope",
+  "batman_specific": false,
+  "confidence": "high",
+  "note": "Every top sentence contains the word 'lair' (Freeze's, the Riddler's twice, Killer Croc's sewer, Ra's al Ghul's underground lair, the 1943 gang's Fun House), and it also fires on Lex Luthor's lair in Superman, so this is the general villain's-hideout pattern rather than anything specific to Batman."
+ },
+ "57687": {
+  "unit": 57687,
+  "label": "Gotham's prisons and prisoners",
+  "kind": "trope",
+  "batman_specific": true,
+  "confidence": "medium",
+  "note": "About 6 of 8 top sentences involve prisons or captives (Bane freeing Blackgate's prisoners, Bruce sentenced to Blackgate, Arkham City as a prison enclosure, Quinn freeing Ivy from her cell, the captured Bane, Chase held prisoner), but only 2 are actually about inmates being released, so the old label 'Prison and the inmates released' overclaims; the other two sentences are unrelated (Rocky's pet store, Alfred at Wayne Manor)."
+ },
+ "470135": {
+  "unit": 470135,
+  "label": "Staging a scheme or fake",
+  "kind": "trope",
+  "batman_specific": false,
+  "confidence": "medium",
+  "note": "6 of 8 top sentences use 'stage' to mean setting something up (a staged prison fight, a suicide, Bruce's death, a kidnapping, Batman's plan with Gordon, Stane's coup in Iron Man), and only about 4 of those are actual fakes; the other 2 fire on the name 'Simon Stagg', so it partly reacts to the spelling, and plots like these are common to crime stories in general."
+ },
+ "2047": {
+  "unit": 2047,
+  "label": "The district attorney",
+  "kind": "character",
+  "batman_specific": true,
+  "confidence": "medium",
+  "note": "A first-layer neuron that reacts to the word 'district': 6 of 8 top sentences mention a (assistant) district attorney, 5 of them Harvey Dent and one Rachel, and the other two are 'red-light district' and 'a poverty-ridden district of Gotham', so it is really Harvey Dent's job title rather than a general idea."
+ },
+ "93463": {
+  "unit": 93463,
+  "label": "Arkham Asylum",
+  "kind": "place",
+  "batman_specific": true,
+  "confidence": "high",
+  "note": "All 8 top sentences mention Arkham (the asylum on Arkham Island, Arkham Castle in Batman Ninja, the Arkham Knight's 'A' logo, Nygma and Freeze being committed there, patients taking over the facility), though one is an Arkham City cast list naming the earlier game, and it appears in 18 Batman works but only 1 cousin."
+ },
+ "457852": {
+  "unit": 457852,
+  "label": "Protocol 10 (Arkham City)",
+  "kind": "object",
+  "batman_specific": true,
+  "confidence": "medium",
+  "note": "5 of 8 top sentences are about Hugo Strange's Protocol 10 scheme in Arkham City; the rest are near-misses on similar-sounding words ('prot\u00e9g\u00e9' Jason Todd twice, 'company policy' in Alien), so it is a narrow detector for one plot device in one game, and the near-misses are why it shows up in 6 Batman works."
+ },
+ "520801": {
+  "unit": 520801,
+  "label": "The butler who raised him",
+  "kind": "character",
+  "batman_specific": true,
+  "confidence": "high",
+  "note": "All 8 top sentences name Alfred Pennyworth in full (the family butler in Joker 2019, raising Bruce in Batman Begins, head of security in Earth One, hurt by a letter bomb in The Batman), so it is really a name detector for Alfred and not the idea of a butler; it appears in 18 Batman works and just 1 cousin."
+ },
+ "448712": {
+  "unit": 448712,
+  "label": "The Joker's chemical origin",
+  "kind": "trope",
+  "batman_specific": true,
+  "confidence": "medium",
+  "note": "A first-layer neuron for the word 'chemical': 6 of 8 top sentences are about the chemical plant behind the Joker's origin (Napier falling into a vat and the Axis Chemicals raids in Batman '89, the Killing Joke comedian's chemical company, his bleached skin), plus Ace Chemicals in Arkham Knight and the Green Goblin's chemical in Spider-Man; only one sentence describes the actual fall, so the old label 'Fell into a vat of chemicals' was narrowed to the origin as a whole."
+ },
+ "16460": {
+  "unit": 16460,
+  "label": "Bane",
+  "kind": "character",
+  "batman_specific": true,
+  "confidence": "high",
+  "note": "All eight top sentences name Bane: his prison-raised supersoldier origin (Knightfall), his Dark Knight Rises schemes (Daggett, the stock exchange, his henchmen capturing Gordon), Woodrue turning Antonio Diego into Bane (Batman & Robin), and his fights in Arkham Asylum and Batman Ninja; only 1 of 13 cousins has it."
+ },
+ "465435": {
+  "unit": 465435,
+  "label": "The antidote",
+  "kind": "trope",
+  "batman_specific": true,
+  "confidence": "high",
+  "note": "Seven of eight sentences are about making or giving an antidote to a toxin (Fox's antidote in Batman Begins, Terry saving Bruce in Return of the Joker, Ivy's spores and the single dose in Arkham Asylum, Freeze's antidote in Arkham City); the odd one out is the Penguin's toxic heavy water in Batman '66; no cousins have it."
+ },
+ "465641": {
+  "unit": 465641,
+  "label": "Radium and the 'Bat-radia'",
+  "kind": "mixed",
+  "batman_specific": false,
+  "confidence": "low",
+  "note": "Looks like a detector for the word shape 'radi-', not an idea: three sentences are about the stolen radium in the 1943 serial and three about the 'Bat-radia' in Batman R.I.P., but the other two (Percy's dandyish lifestyle in Scarlet Pimpernel, Bane injecting the Riddler with Venom) have nothing to do with either."
+ },
+ "494307": {
+  "unit": 494307,
+  "label": "Describing the video game",
+  "kind": "register",
+  "batman_specific": false,
+  "confidence": "medium",
+  "note": "Six of eight sentences are Wikipedia describing a game as a game ('The game features a large ensemble', 'The game also makes references', 'The game introduces the Arkham Knight', 'The game takes place in the center of the city', the Arkham Knight cameo list, the Mad Hatter being cut by the developers); the two Batman Ninja 'Quake Engine' sentences are plot and probably hit on the word 'Engine'; it follows the video-game medium, not Batman story content."
+ },
+ "47532": {
+  "unit": 47532,
+  "label": "A mutating super-formula",
+  "kind": "trope",
+  "batman_specific": true,
+  "confidence": "medium",
+  "note": "All eight sentences contain 'mutate', 'mutated' or 'Mutants', but only about five involve a mutating chemical (the Titan formula in the Joker's blood and his Titan overdose in the Arkham games, Woodrue mutating Diego into Bane, toxins turning Isley into Poison Ivy); Killer Croc's worsening condition, the Dark Knight Returns 'Mutants' gang and the 'mutated gangster Killer Croc' cast list only share the word, so it may partly be a word detector; no cousins have it."
+ },
+ "878889": {
+  "unit": 878889,
+  "label": "Taking in an orphan as a ward",
+  "kind": "trope",
+  "batman_specific": true,
+  "confidence": "medium",
+  "note": "Three sentences are explicitly about Bruce taking in orphans as wards or adopting them (the Gotham by Gaslight orphans, Dick moving into Wayne Manor in Batman Forever, Lego Batman adopting Dick), and three more are about the same arc (the Flying Graysons killed, Dick demanding to join Batman, Bruce accepting him as Robin); the Chase Meridian sentence and Barbara joining in Batman & Robin don't fit, and five of the eight come from Batman Forever; no cousins have it."
+ },
+ "53042": {
+  "unit": 53042,
+  "label": "The name 'Ace'",
+  "kind": "mixed",
+  "batman_specific": true,
+  "confidence": "medium",
+  "note": "A name detector that lumps two different Batman things together: Ace the Great Dane in Return of the Joker (three sentences) and the Ace Chemicals plant in Arkham Knight and Under the Red Hood (three sentences); two sentences (Jordan Pryce, the Arkham Asylum comic villain list) don't use the name; the 3 cousin hits are probably the ordinary word 'ace'."
+ },
+ "43490": {
+  "unit": 43490,
+  "label": "The Mad Hatter",
+  "kind": "character",
+  "batman_specific": true,
+  "confidence": "high",
+  "note": "Six of eight sentences name the Mad Hatter (Napier using his mind-control technology in White Knight, his being cut from Arkham Asylum, the villain lists in The Long Halloween, the Arkham Asylum comic, Arkham City and Arkham Knight); the Star Wars and Pride & Prejudice sentences are stray noise; no cousins have it."
+ },
+ "119563": {
+  "unit": 119563,
+  "label": "Superhero plot narration",
+  "kind": "genre",
+  "batman_specific": false,
+  "confidence": "low",
+  "note": "General superhero plot with no single theme: the top sentence is Tony Stark inheriting Stark Industries (Iron Man), followed by Bruce as a billionaire vigilante and at the LexCorp gala (Batman v Superman), a 55-year-old Bruce in Dark Knight Returns, Bruce's obsession and a reckless chase in White Knight, Batman fighting Superman in Hush, and the Arkham patients taking over; it is in 20 Batman works and 3 cousins."
+ },
+ "275969": {
+  "unit": 275969,
+  "label": "Supporting-cast roundups",
+  "kind": "register",
+  "batman_specific": false,
+  "confidence": "high",
+  "note": "Seven of eight sentences are cast-list sentences from the game articles ('Other characters appearing in the game include', 'Other characters marking their debut', 'Other characters include', 'Other villains include', characters that 'also appear', the game introducing a new villain), each naming characters with their voice actors; the Batman v Superman funeral sentence is the outlier."
+ },
+ "505010": {
+  "unit": 505010,
+  "label": "Talia al Ghul",
+  "kind": "character",
+  "batman_specific": true,
+  "confidence": "high",
+  "note": "All eight top sentences name Talia, Ra's al Ghul's daughter: her voice casting and her immortality offer to the Joker in Arkham City, her kidnapping and her rescue of Catwoman in Hush, her Man-Bat Commandos in Batman R.I.P., and Tate revealing herself as Talia in Dark Knight Rises (present in 6 Batman works, no cousins)."
+ },
+ "429502": {
+  "unit": 429502,
+  "label": "Lethal drug doses and antidotes",
+  "kind": "trope",
+  "batman_specific": false,
+  "confidence": "high",
+  "note": "All eight are about drugs given in doses or the antidotes to them (Crane's lethal dose and the two antidote vials in Batman Begins, Honor's heroin overdose, the single antidote dose in Arkham Asylum, Terry's antidote for Bruce, and three Knives Out medication and morphine-overdose sentences), so it is a general overdose-and-cure pattern, and 'poison' was too narrow because most of these are medicines or narcotics."
+ },
+ "130837": {
+  "unit": 130837,
+  "label": "Cast lists and character introductions",
+  "kind": "register",
+  "batman_specific": false,
+  "confidence": "low",
+  "note": "Five of the eight are Wikipedia-style cast or debut notes (the Arkham Knight ally and cameo lists with voice actors, Talia's voice casting, the Arkham City supporting cast, Jean-Paul Valley's 'introduced in' publication note), while Margo Lane's meeting in The Shadow and two unrelated 'mutant' sentences (Mutant Leader, Ivy's mutant plants) do not fit, and a cast-list pattern is about how articles are written, not about Batman."
+ },
+ "32476": {
+  "unit": 32476,
+  "label": "Prot\u00e9g\u00e9s (and 'Protocol 10')",
+  "kind": "trope",
+  "batman_specific": false,
+  "confidence": "medium",
+  "note": "Five top sentences use prot\u00e9g\u00e9 or prot\u00e9g\u00e9e (Jason Todd twice, Terry McGinnis, Carrie Kelley, Shiwan Khan in The Shadow) and the other three are Arkham City's 'Protocol 10', so this layer-2 unit looks more like a detector for the 'prot-' word than for the mentor-and-sidekick idea."
+ },
+ "866096": {
+  "unit": 866096,
+  "label": "Characters named Lucy",
+  "kind": "character",
+  "batman_specific": false,
+  "confidence": "medium",
+  "note": "Four top sentences name Lucy outright (Lucy Ferrier with Jefferson Hope, Lucy Westenra's illness and the wolf attack in Dracula) and two more follow Lucy Ferrier's forbidden marriage and escape without naming her, while the outliers are Mina nursing her fianc\u00e9 and the one Batman hit naming Lucius Fox, so it is mostly a cousin-work Lucy detector."
+ },
+ "56706": {
+  "unit": 56706,
+  "label": "The failed stand-up comedian",
+  "kind": "trope",
+  "batman_specific": true,
+  "confidence": "low",
+  "note": "Only half the top eight are the Joker's origin as a struggling comedian (Arthur Fleck's comedy-club routine and party-clown job in Joker 2019, the unnamed failed comedian twice in The Killing Joke); the other four are unrelated (the Arkham Knight cameo list, a Scarlet Pimpernel rescue, Robin accepted in Batman Forever, Nygma committed to Arkham)."
+ },
+ "63725": {
+  "unit": 63725,
+  "label": "Two-Face",
+  "kind": "character",
+  "batman_specific": true,
+  "confidence": "high",
+  "note": "Every top sentence names Two-Face or Harvey Dent: Grodd's alliance with him in Batman Ninja, the Arkham games' character lists, his coin swapped for a die in the Arkham Asylum comic, his bank heists in Arkham Knight, his post-therapy disappearance in Dark Knight Returns, and his reappearance on Halloween in The Long Halloween."
+ },
+ "575002": {
+  "unit": 575002,
+  "label": "Harley Quinn and Arkham",
+  "kind": "character",
+  "batman_specific": true,
+  "confidence": "medium",
+  "note": "Five of the eight name Harley Quinn (the Arkham Knight villain list, her attack on Napier in White Knight, her opera robbery in Hush, her return in Arkham City, the Tim Drake kidnapping in Return of the Joker), and the other three mention Arkham instead (Arkham State Hospital in Joker 2019, Deadshot infiltrating Arkham City, Grodd at Arkham Asylum in Batman Ninja), so it blends two related things."
+ },
+ "875483": {
+  "unit": 875483,
+  "label": "Franchise cast and publication notes",
+  "kind": "register",
+  "batman_specific": false,
+  "confidence": "high",
+  "note": "All eight are behind-the-scenes Wikipedia notes rather than plot (the Arkham Knight villain's creators, the games' 'ensemble of characters from the history of Batman comics' and cameo lists, voice actors reprising roles, Knightfall's Batman #497 and the adding of Bane and Azrael to the cast), so it is article register that only looks Batman-specific because the Batman set contains game and comic articles."
+ },
+ "557781": {
+  "unit": 557781,
+  "label": "Dick Grayson, the first Robin",
+  "kind": "character",
+  "batman_specific": true,
+  "confidence": "high",
+  "note": "Seven of the eight name Dick Grayson: as Jason's predecessor in Dark Knight Returns and Under the Red Hood, as the first Robin in A Death in the Family, as Nightwing leaving for Bl\u00fcdhaven, at Elliot's funeral in Hush, in Batman & Robin, and as the Flying Graysons' survivor in Batman Forever; the one stray is an Iron Man sentence about Tony Stark's inheritance."
+ },
+ "52211": {
+  "unit": 52211,
+  "label": "Lucius Fox",
+  "kind": "character",
+  "batman_specific": true,
+  "confidence": "medium",
+  "note": "Five of the eight sentences name Lucius Fox as Bruce's tech supplier (Batman Begins, Knightfall, Earth One, Arkham Knight, Dark Knight Rises), but the three strongest hits are 2001's Clavius Base and Heywood Floyd, so this early-layer group (L4, 29 neurons) looks partly like a match on Latin '-ius' names (Lucius/Clavius) rather than a clean Fox detector."
+ },
+ "564346": {
+  "unit": 564346,
+  "label": "Heroes' families and supporting cast",
+  "kind": "mixed",
+  "batman_specific": false,
+  "confidence": "low",
+  "note": "No single theme: it mixes Clark's adoptive father Jonathan (Superman, x3), the Joker capturing Jason Todd, teenage Bruce with Jessica and Harvey Dent, the Hush opera outing, Black Mask targeting Bruce and Lucius, and Bane's origin in Knightfall; the label only loosely covers about half of these, and it also fires in 3 cousin works."
+ },
+ "874025": {
+  "unit": 874025,
+  "label": "Gotham's districts and neighbourhoods",
+  "kind": "place",
+  "batman_specific": true,
+  "confidence": "high",
+  "note": "Six of the eight sentences name parts of the city: the red-light district (Year One), Bleake, Founders and Miagani islands and Chinatown (Arkham Knight, x2), the 'Little Tokyo' section (1943 serial), the Narrows (Batman Begins) and Backport (White Knight); the other two (Joker's killings of trial officials, the Scarecrow evacuation) are city-wide civic events, and four hits contain the literal word 'district'."
+ },
+ "513921": {
+  "unit": 513921,
+  "label": "Lucius Fox",
+  "kind": "character",
+  "batman_specific": true,
+  "confidence": "high",
+  "note": "Six of the eight sentences name Lucius Fox as the Wayne Enterprises tech ally (Batman Begins, The Dark Knight, Earth One, Arkham Knight, Knightfall, Dark Knight Rises); the other two are Zorro ('The Fox') and young Bruce seeing a Zorro movie in Batman R.I.P., so it responds to 'Fox' and to Zorro as well as to the character."
+ },
+ "837276": {
+  "unit": 837276,
+  "label": "Batman's wider supporting cast",
+  "kind": "character",
+  "batman_specific": true,
+  "confidence": "medium",
+  "note": "Every sentence is dense with named Batman characters, allies and villains alike (Talia revealed as Ra's daughter, the Graysons killed by Two-Face, Gordon with Dent, Barbara Gordon's promotion, Napier's disfigurement), but three of the eight are voice-cast or cameo lists from the Arkham games, so it partly tracks Wikipedia cast listings; it fires in no cousin works."
+ },
+ "556414": {
+  "unit": 556414,
+  "label": "DC lore places and femme fatales",
+  "kind": "mixed",
+  "batman_specific": false,
+  "confidence": "low",
+  "note": "Two separate groups: named DC places (Fortress of Solitude in Lego Batman and Superman, the Phantom Zone, the Lazarus Pit, Arkham Castle) and female villains or antiheroes (Lady Shiva, Talia and Catwoman in Hush, Harley Quinn in White Knight and Hush, Lady Shiva in A Death in the Family); the Superman hit and 3 cousin works make it DC-wide, not Batman-only."
+ },
+ "3666": {
+  "unit": 3666,
+  "label": "Ultimatums (the word 'unless')",
+  "kind": "trope",
+  "batman_specific": false,
+  "confidence": "high",
+  "note": "A layer-0 word detector: all eight sentences contain 'unless', and seven are ultimatums (Jurassic Park's investors, Falcone, the Arkham inmates, Two-Face's bomb, Jason's gun, the Joker's hospital and ferries), while Puss in Boots' harmless 'unless he wants to' shows it keys on the word, not the idea; ultimatums are a general thriller pattern, not Batman-specific."
+ },
+ "449052": {
+  "unit": 449052,
+  "label": "The Batmobile",
+  "kind": "object",
+  "batman_specific": true,
+  "confidence": "high",
+  "note": "Six of the eight sentences feature the Batmobile (Batman Ninja x2, White Knight, Dark Knight Returns, Batman Returns, Arkham Asylum); the two Fargo hits are the 'Oldsmobile', so this layer-0 unit is really matching the '-mobile' token, which in this corpus almost always means the Batmobile."
+ },
+ "479291": {
+  "unit": 479291,
+  "label": "No clear theme (Senator Finch)",
+  "kind": "mixed",
+  "batman_specific": false,
+  "confidence": "low",
+  "note": "The top three are Batman v Superman scenes with Senator Finch and Lex Luthor, but the other five (a Batman R.I.P. rooftop, the Pimpernel's pepper snuff, Toy Story's Pizza Planet truck, Daredevil's Elektra, Bane watching Batman) share no visible idea."
+ },
+ "564216": {
+  "unit": 564216,
+  "label": "Bat-named gear and lairs",
+  "kind": "object",
+  "batman_specific": true,
+  "confidence": "high",
+  "note": "All eight sentences contain a Bat- compound: the Bat aircraft (Dark Knight Rises), the Batmobile (Batman Returns), the Batcave (Lego Batman, Batman '89), the Bat-Signal (Batman v Superman, Batman & Robin), plus Batman Ninja's 'Batgod' and Bat Clan, which are not gear or lairs, so it is really a 'Bat-' prefix detector that mostly lands on equipment."
+ }
+}

@@ -1,0 +1,226 @@
+[
+ {
+  "name": "E1 What makes it Batman",
+  "verdict": "sound with fixes",
+  "flaws": [
+   {
+    "issue": "The ordinary films are used three times: to set presence thresholds, to choose canon units (a unit only counts as present in a Batman work if it beats the baselines), and as the negatives in the AUC. By construction, each unit is present in at most about 1 of the 69 in-sample baselines. Units are also selected for being low on exactly these 69 films. So the in-sample negatives score low partly because of that selection, and a held-out ordinary film would regress upward. The AUC against them is inflated, and its null is not 0.5.",
+    "severity": "fatal",
+    "fix": "Split the 69 ordinary films in each fold. One half (about 35) sets the presence thresholds and the canon selection. The other half (about 34) is scored as negatives. Repeat over 20 or more random splits and report the mean and spread of the AUC. A cheaper alternative is leave-one-out thresholds for each baseline (a film beats 67 of the other 68). The negatives must never be in the threshold set."
+   },
+   {
+    "issue": "The plan does not say which canon set scores the non-Batman works. There are 32 leave-one-out canon sets but each negative gets one score. Scoring the negatives with the full 32-work canon, or with any canon that does not match the fold, mixes up the comparison.",
+    "severity": "major",
+    "fix": "In each fold, score the held-out Batman work and all test negatives with that fold's canon. Record the held-out work's percentile among those negatives. The AUC is the mean percentile across the 32 folds. Bootstrap over Batman works and negatives to get a 95% CI."
+   },
+   {
+    "issue": "There is no null for the whole pipeline. Even with the split fixed, genre, register and Wikipedia house style can produce a high AUC. Without a reference distribution, 'AUC >= 0.9' cannot be read.",
+    "severity": "major",
+    "fix": "(a) Label permutation: shuffle Batman and ordinary labels and rerun the whole leave-one-out pipeline about 200 times. (b) Pseudo-franchise null: treat a random set of ordinary films as the 'franchise', ideally the crime and action ones, run the same procedure, and record their AUC and core size. The real AUC must beat the 95th percentile of both."
+   },
+   {
+    "issue": "The comparison with ordinary films is too easy and confounded by genre. Batman plots are crime and action with villains and vigilantes, and most ordinary films are not. Neurons for crime, violence, masks or villains would give an AUC of 0.9 or more with no Batman-specific essence. The cousin test is the real test, but it has only 13 works. Five of them are pre-1930 novels or folktales (Puss 1697, Monte Cristo, Study in Scarlet, Dracula, Pimpernel), which differ in era and register for boring reasons. Batman v Superman also contains Superman.",
+    "severity": "major",
+    "fix": "Pre-register the main cousin test as Batman against the 8 masked-hero and superhero film cousins (The Bat, Zorro, The Shadow, Superman, Spider-Man, Daredevil, Iron Man, Green Hornet), with bootstrap CIs, and report the literary cousins separately. Add a medium-matched analysis: the 16 Batman films against the ordinary films, and against the film cousins only. With 32 x 8 pairs the CI is roughly +/-0.12, so state the lower bound, not just the point estimate."
+   },
+   {
+    "issue": "The rewrite may not really remove names. 'Role nouns' can carry identity: 'the bat-costumed vigilante', 'the clown-faced criminal', 'the boy wonder', 'the asylum', 'the signal', 'the caped crusader'. The rewriting LLM recognises Batman and may keep or add iconography. A positive result could then mean 'neurons detect the word bat', not a structural essence.",
+    "severity": "major",
+    "fix": "Audit before extraction. Count residual tokens from a fixed lexicon (bat, cape, cowl, clown, joker, gotham, wayne, crusader, knight, penguin, riddle, cave, signal, asylum, robin) per text, by group. Rewrite blind, with no title given and texts in shuffled order. Then ablate cheaply using the per-sentence activations already extracted: drop every name-free sentence containing an iconography-lexicon token and recompute presence and AUC. No re-extraction is needed. Report both the full and the iconography-dropped AUC."
+   },
+   {
+    "issue": "Training and test texts differ. Canon units are chosen on the original texts, so many will be name detectors (Gotham, Joker, Batmobile) that go quiet on name-free text. The score's denominator then fills with dead units, and the AUC mixes 'essence' with 'how much of the canon was names'.",
+    "severity": "minor",
+    "fix": "Pre-register one primary variant and run the other as secondary: (A) canon from the original texts of the other 31 works, as planned, and (B) canon from their name-free texts, with name-free thresholds. B is the cleaner essence test. Also report the original-text leave-one-out AUC as the ceiling, and the retention ratio."
+   },
+   {
+    "issue": "Text length is a confound. Presence uses the mean of the 3 strongest sentences, a maximum-type statistic that grows with sentence count. Works range from 9 sentences (Zorro) and 13 (1943 serial) to 40. Batman's median is 34, cousins 30. Rewriting also changes sentence length in a way that depends on how many names were substituted, and Batman texts have more names.",
+    "severity": "minor",
+    "fix": "Report the AUC of sentence count alone and of substitution count alone. Rerun with each work subsampled to 13 random sentences (repeat 20 times; works with fewer sentences keep all of theirs). Or regress score on log sentence count and number of substitutions and compute the AUC on the residuals."
+   },
+   {
+    "issue": "The many analysis choices invite forking paths: 2 models x 2 comparisons x variants A/B x iconography ablation x thresholds (80% canon, 70% core). The 'name-free core' is chosen and described on the same 32 name-free texts it summarises, so its size has no reference point.",
+    "severity": "minor",
+    "fix": "Name one primary test: Qwen3-8B, variant A, split baselines, AUC against the 8 hero film cousins. Everything else is secondary or replication, with Llama as the replication model. Define the core from fold stability: units that are canon in at least 90% of folds and present in at least 70% of name-free Batman works. Report its size next to the core size from the pseudo-franchise null and from the same procedure run on the 13 cousins. Report how much the Batman core overlaps the cousin core, which shows what is generic hero material."
+   },
+   {
+    "issue": "There is no lexical baseline, so a positive result cannot be credited to the neurons rather than to surface vocabulary.",
+    "severity": "minor",
+    "fix": "Run the same leave-one-out on the same name-free texts with a TF-IDF centroid-similarity score, as a control only and kept off the main display, since the user asked to drop the word-counting material. If TF-IDF matches the neurons, the claim becomes 'name-free text identifies Batman', not 'the neurons find an essence beyond the words'."
+   }
+  ],
+  "prediction": "Primary test, pre-registered: Qwen3-8B, name-free texts, canon from the original texts of the other 31 Batman works, presence thresholds from a held-out half of the ordinary films, negatives scored with the canon of the matching fold. The held-out Batman work's canon-fraction should give an AUC of at least 0.80 against the 8 masked-hero and superhero film cousins. The bootstrap 95% CI lower bound should be at least 0.65, and the AUC should exceed the 95th percentile of the label-permutation null. Against held-out ordinary films the AUC should be at least 0.90 and also beat the pseudo-franchise null. Both should hold, within 0.05, after dropping sentences that contain iconography words. Llama 3.1 8B should replicate at an AUC of at least 0.75 against the hero cousins. The name-free core should hold more units than the core from the pseudo-franchise null, and most of it should not be in the cousin core.",
+  "falsifier": "The claim of a name-free Batman essence is falsified if either of these holds. (1) The AUC against the 8 hero film cousins is below 0.70, or its 95% CI includes 0.5, under split-baseline scoring. (2) The AUC passes on full name-free texts but falls below 0.65 once sentences with iconography words are dropped. Then the 'essence' is only leftover bat or clown vocabulary. A high AUC against ordinary films alone, with the cousin AUC failing, counts as 'superhero or crime genre', not Batman. So does a name-free core that matches the cousin core or is no bigger than the pseudo-franchise null core.",
+  "controls": [
+   "Original-text leave-one-out AUC as the ceiling, plus the retention ratio (name-free AUC minus 0.5, divided by original AUC minus 0.5)",
+   "Label-permutation null: shuffle Batman and ordinary labels and rerun the whole pipeline about 200 times; the real AUC must beat the 95th percentile",
+   "Pseudo-franchise null: 32 ordinary films, or the crime and action subset, run as if they were the franchise, giving null AUC and null core size",
+   "Split baselines (threshold half and test half), repeated over 20 or more random splits; report the mean and spread",
+   "Residual-identity audit: counts of iconography-lexicon tokens per group in the name-free texts, and the AUC after dropping those sentences (uses the per-sentence activations, no re-extraction)",
+   "Length and substitution controls: AUC of sentence count alone and of number of names substituted alone, plus AUC with every work subsampled to 13 sentences",
+   "Medium and era matching: Batman films against ordinary films and against film cousins only; literary cousins reported separately",
+   "Second variant: canon defined on the name-free training texts (B) alongside canon from the originals (A)",
+   "TF-IDF centroid leave-one-out on the same name-free texts as a lexical control, not displayed prominently",
+   "Llama 3.1 8B replication of the primary test",
+   "Name-free core compared with the same-procedure core on the 13 cousins (overlap) and with the pseudo-franchise null core size; core defined by fold stability"
+  ]
+ },
+ {
+  "name": "E2 Do memes descend",
+  "verdict": "sound with fixes",
+  "flaws": [
+   {
+    "issue": "The '>= 7 of 9' count is far too weak a bar and does not match the p < 0.05 permutation test. For the four adaptations with two documented sources, taking the better of the two beats the non-source median about 77% of the time by chance. For single-source adaptations the chance rate is 50%. Under the null that gives an expected 5.6 of 9, with P(>=7) = 0.26 and P(>=8) = 0.08. Only 9 of 9 reaches p < 0.05.",
+    "severity": "major",
+    "fix": "Pre-register one primary statistic: for each adaptation, the share of eligible comics whose inheritance rate beats the source's (best-of-sources), averaged over the 9 adaptations. Test it with a permutation that relabels the 12 comic identities jointly, so the null uses the same best-of-two rule and keeps Killing Joke shared across 3 adaptations. Report the 'above the median' count only as a description, or require 8 of 9 and state its null probability. Also report a mean-of-sources variant and a first-listed-source variant."
+   },
+   {
+    "issue": "The run on original texts is already settled, so it tells us nothing. I probed it on Qwen3-1.7B activations (the Qwen3-8B activations are no longer in the scratchpad), using the 2-16 band (67,094 units) and the share-of-C rate. The documented source beat the non-source median for 9 of 9 adaptations (ranks 1,4,5,1,1,3,4,2,1). Relabel permutation p = 0.0008, or 0.0004 hub-adjusted. Any 'descent' claim therefore rests entirely on the name-free run.",
+    "severity": "major",
+    "fix": "State in advance that the decision depends only on the name-free run. Show the original-text result as an upper bound. Report the drop from original to name-free as the share of the signal carried by names."
+   },
+   {
+    "issue": "The rewriter's vocabulary is a confound. The name-free texts use inconsistent role placeholders: 'the hero' appears 23-38 times in some rewrites and 0 times in The Dark Knight Rises and Batman v Superman, which use 'the vigilante', 'the superhero', 'the billionaire' and 'the protagonist'. Neurons that fire on a placeholder become rare (optional) units that link works by rewriting convention rather than descent. The rewrites were also done in id-decade batches by separate agents who know the source links. Batman 1989 and The Killing Joke (ids 4, 8) share a batch, as do The Dark Knight and The Long Halloween (ids 13, 18), so a batch-mate effect would go straight into two of the nine tests.",
+    "severity": "major",
+    "fix": "Before extraction, map every protagonist, villain and sidekick placeholder to one fixed token per role across all 114 rewrites. Drop units where most of the top-3 sentences in each work contain a placeholder phrase. Batch control: compare mean inheritance for non-source comic-to-screen pairs within the same rewrite batch against pairs across batches. If within-batch is higher, add batch as a covariate, or rerun with the two same-batch adaptations left out."
+   },
+   {
+    "issue": "Shared wording could produce the result for a boring reason. Wikipedia plot summaries of adaptations often reuse the source article's phrasing, and in Phase 1 TF-IDF already put the source in the top 3 for 6 of 9. A positive result could mean the summaries share words, not that neurons find descending memes.",
+    "severity": "major",
+    "fix": "Run the same test on the name-free texts with two word-based measures, binary content-word presence and TF-IDF cosine. Then do a partial test: across the 32x12 (work, comic) pairs, regress unit inheritance on lexical similarity and rerun the source-rank test on the residuals. Keep 'memes descend' (any measure) separate from 'neurons add something beyond word overlap' (residual test)."
+   },
+   {
+    "issue": "Comics differ in how often they are 'inherited' by any work. In the probe, comics' optional-unit counts ranged from 2,924 (Killing Joke, 493 words) to 16,488 (Knightfall, 1,055 words, cut at 40 sentences). The mean rate at which non-adaptation films inherit from each comic ranged from 0.089 to 0.132. Because the rate is a share of C's units, a comic made of widespread units looks like a source for everything.",
+    "severity": "major",
+    "fix": "Use a hub-adjusted rate: z-score each comic's rate against its rates to the 11 Batman screen works that are not adaptations. Pre-register both raw and hub-adjusted, with hub-adjusted as primary. As a sensitivity check, report an expectation-corrected rate: observed overlap minus the overlap expected from each unit's prevalence."
+   },
+   {
+    "issue": "There are no placebo targets. Without them, the test cannot tell 'A descends from C' apart from 'any Batman film resembles the canonical late-80s comics'.",
+    "severity": "major",
+    "fix": "Give each of the 11 non-adaptation screen works (1943 serial, 1966, Returns, Forever, Batman & Robin, Phantasm, Batman Beyond, Arkham City, Arkham Knight, Lego, Ninja) every documented source set, and compute the same statistic. The real adaptations must beat the placebo distribution. In the probe on original texts, the real mean rank was 2.44 against 3.67-7.56 for placebos. Phantasm came lowest at 3.67, plausibly because it draws on Year One, so state in advance that it is a possible uncredited adaptation."
+   },
+   {
+    "issue": "Removing names might leave the method with no power at all. In that case a name-free null would wrongly read as 'memes don't descend'.",
+    "severity": "major",
+    "fix": "Add a sequel positive control. Rank each screen work's prequel among the earlier Batman screen works: TDK<-Begins, TDKR<-TDK, Returns<-1989, Forever<-Returns, B&R<-Forever, Arkham City<-Arkham Asylum, Arkham Knight<-Arkham City. On original texts the probe recovered rank 1/9, 2/13, 1/3, 2/5, 2/6, 1/12, 1/14. If sequels are not recovered on name-free texts, call the comic test inconclusive, not falsified."
+   },
+   {
+    "issue": "The 2-16 band was chosen after the >= 6 Jaccard analysis came back null, so it is a forking path. With a chance presence rate of 2/71, about 22.7% of all units hit at least 2 of 32 works by chance alone, so the band is mostly noise.",
+    "severity": "minor",
+    "fix": "Name 2-16 as primary and report 3-16, 4-16 and 2-8 as sensitivity checks. In the probe all gave p 0.0005-0.0015 on original texts. Also rerun the old >= 6 meme families with the new asymmetric rate, to separate the effect of the unit band from the effect of the metric."
+   },
+   {
+    "issue": "Time direction is ignored. Comics published after the adaptation, such as White Knight 2017 against Batman 1989, sit in the non-source comparison set.",
+    "severity": "minor",
+    "fix": "Count only comics published in or before the adaptation's year as eligible. Report results with and without this rule (probe p = 0.008 with it)."
+   },
+   {
+    "issue": "The 9 tests are not independent. Killing Joke is the source 3 times, and Year One, The Dark Knight Returns and The Long Halloween twice each, so there are only 7 distinct sources. One comic that looks like everything could carry the result.",
+    "severity": "minor",
+    "fix": "Use the joint comic-relabeling permutation (not independent shuffles per adaptation). Report leave-one-source-out results, for example dropping all three Killing Joke adaptations."
+   },
+   {
+    "issue": "The name-free run could reuse thresholds and model settings from the original run, or switch model after the fact. Presence is defined against baseline films. If thresholds are not recomputed on name-free baselines, presence shifts systematically. The primary model is also not fixed (the Qwen3-8B activations would need re-extraction).",
+    "severity": "minor",
+    "fix": "Recompute the 69-of-70 baseline threshold on name-free baselines. Pre-register Qwen3-8B as primary, with Llama 3.1 8B and Qwen3-1.7B as replications, and report all three."
+   },
+   {
+    "issue": "Some source attributions are weak. Joker 2019 <- Killing Joke and Batman 1989 <- Killing Joke are loose influences, and the Arkham Asylum game tells an original story.",
+    "severity": "minor",
+    "fix": "Before running, name a strong-attribution subset (Begins<-Year One, Under the Red Hood<-A Death in the Family, BvS<-The Dark Knight Returns, TDKR<-Knightfall/The Dark Knight Returns, The Batman<-Year One/The Long Halloween) as a secondary analysis, so it cannot be picked after seeing the results."
+   }
+  ],
+  "prediction": "Setup: Qwen3-8B on the name-free texts, with baseline thresholds recomputed on the name-free texts, role placeholders mapped to one token per role, and units excluded where placeholders drive most top-3 sentences. Optional units are those present in 2-16 of the 32 Batman works. Only comics published in or before the adaptation's year count. The statistic is the hub-adjusted inheritance rate. Prediction: averaged over the 9 adaptations, the share of eligible comics that beat the documented source (best of its sources) is below the null from relabeling comic identities jointly, one-sided p < 0.05 with 10,000 permutations. The documented source beats the non-source median for at least 8 of 9 adaptations. The real adaptations' statistic falls below the 5th percentile of the 11 placebo screen works given the same source sets.",
+  "falsifier": "The prediction fails if any of these holds while the sequel positive control still works on name-free texts (prequel in the top 2 for at least 5 of 7 sequels): (a) the primary permutation p is 0.05 or higher on name-free texts; (b) the effect shows up only in raw rates and disappears with hub adjustment; (c) the real adaptations do no better than the placebo screen works. If the sequel control also fails on name-free texts, the result counts as inconclusive (the method has no power without names), not as evidence against descent. A separate, weaker failure: the name-free neuron result is significant, but the residual test (after removing TF-IDF or word-presence similarity) has p of 0.05 or higher. That means descent is found, but the neurons add nothing beyond shared words.",
+  "controls": [
+   "Original-text run, reported only as an upper bound (my probe on Qwen3-1.7B: 9 of 9 above the median, permutation p = 0.0008); the drop from original to name-free estimates how much the names carried",
+   "Placebo targets: the 11 Batman screen works that are not adaptations, each given every documented source set; the real adaptations must beat this distribution",
+   "Sequel positive control on name-free texts (TDK<-Begins, TDKR<-TDK, Returns<-1989, Forever<-Returns, B&R<-Forever, Arkham City<-Arkham Asylum, Arkham Knight<-Arkham City) to show the method still has power without names",
+   "Word-overlap comparator: the same test using TF-IDF cosine and binary content-word presence on the name-free texts, plus a residual test with lexical similarity regressed out of unit inheritance",
+   "Hub adjustment: z-score each comic's rate against the non-adaptation screen works, plus an expectation-corrected rate based on each unit's prevalence",
+   "Rewrite-batch control: inheritance for non-source pairs within the same rewrite batch versus across batches, and a rerun without Batman 1989<-Killing Joke and TDK<-Long Halloween if within-batch is higher",
+   "Placeholder-unit exclusion check: rerun with and without units where placeholders drive most top-3 sentences, and report how many units drop out",
+   "Band sensitivity: 3-16, 4-16 and 2-8, plus the old >= 6 meme families scored with the new asymmetric rate",
+   "Source-rule variants: best-of-sources (primary), mean-of-sources, and first-listed source; plus the strong-attribution subset named in advance",
+   "Leave-one-source-out, especially dropping all three Killing Joke adaptations",
+   "Time rule on and off (only comics published in or before the adaptation's year count as eligible)",
+   "Model replication: Llama 3.1 8B and Qwen3-1.7B on the same name-free texts"
+  ]
+ },
+ {
+  "name": "E3 Do memes ride on hits",
+  "verdict": "sound with fixes",
+  "flaws": [
+   {
+    "issue": "Popularity largely stands in for later adaptation, so the test is circular. Pageviews from 2015 to 2026 for Year One, The Killing Joke, The Long Halloween, Knightfall, Dark Knight Returns, A Death in the Family and Arkham Asylum (comic) are boosted by the very later works that adapted them (the ADAPTATIONS dict in experiments.py). Those later works carry the source's memes because they adapted it (this is E2, heredity). A positive E3 would then just restate E2 through fame, and the two results would not be independent evidence.",
+    "severity": "fatal",
+    "fix": "Pre-register a primary analysis that drops every adaptation-linked later work from the later set: Batman Begins, The Dark Knight, Dark Knight Rises, Batman v Superman, Under the Red Hood, Arkham Asylum (game), Batman '89 if it counts as a later carrier, Joker (2019) and The Batman. Recompute later_share on the remaining later works. Also report a second version that drops adapted early sources from the early set. If the effect survives only with adaptation pairs included, label it heredity, not selection. In either case, word the claim as 'popularity today predicts spread', never 'hits caused spread'."
+   },
+   {
+    "issue": "Medium confound. Pageviews are mostly a medium indicator: the early live-action films ('89, Returns, Forever, Batman & Robin) get far more views than the early comics. The later set is mostly screen works (about 13 of 17 are film, animation or game). Wikipedia plot summaries for films share a register (cinematic action beats, 'the film ends with'), so memes from popular early films can show up in later screen works for stylistic reasons. Permuting popularity over all early works breaks this link and makes it look like signal.",
+    "severity": "major",
+    "fix": "Permute popularity only within medium strata among early works: films and serials together, comics separately, and Mask of the Phantasm pooled with films. Also add 'fraction of early carriers that are screen works' as a covariate next to early_prev in the partial correlation. Report the within-comics test (8 works) as a sensitivity check."
+   },
+   {
+    "issue": "The split numbers are wrong. year<2000 gives 15 early works (1943 to 1997) and 17 later works (2000 to 2022, because Return of the Joker is from 2000), not 16 and 16. The 'present in 1 to 12 of the 16' filter and everything described downstream are therefore misstated.",
+    "severity": "major",
+    "fix": "Fix the pre-registration text to 15 early and 17 later, or move the split so it gives 16/16 (put the 2000 work in the early set by using split=2001) and state which one you chose before running. Keep the prevalence filter as a fraction (1 to 80% of early works) so it does not depend on the split."
+   },
+   {
+    "issue": "The test has about 15 independent observations, not thousands, so it is underpowered. Popularity varies only across the 15 early works. The unit-level partial r gives a misleadingly precise-looking number, and it is dominated by units with k=1, whose early_pop is just one work's pageviews. With 15 works, a true work-level r of 0.5 is detected only about half the time at one-sided alpha 0.05. Most k=1 units are also chance hits: the presence bar is beaten by about 2.8% of ordinary films, so roughly 28% of all neuron poles show k=1 by chance across 15 works.",
+    "severity": "major",
+    "fix": "Make the primary statistic a work-level Spearman correlation: for each early work, offspring_j = the mean, over its units, of later_share residualized on early_prev; correlate offspring_j with log pageviews over the 15 works. Keep the stratified permutation for the p-value. Require k>=2 (chance rate about 6%) to remove most noise units, and report the k=1 result separately. State the minimum detectable effect in advance and treat a null as 'inconclusive at n=15', not as evidence of no effect."
+   },
+   {
+    "issue": "Era and recency confound. Early works closer to 2000 (the 1990s films, Long Halloween, Knightfall) are naturally more like the later works through gradual drift, and they also get more pageviews than the 1943 serial or Batman '66. A positive r could just mean 'works near the split look like works after the split'.",
+    "severity": "major",
+    "fix": "Add the carriers' mean release year as a covariate, alongside early_prev, in the partial correlation (or in the work-level regression). As a sensitivity check, also drop the 1943 serial and Batman '66 and re-run."
+   },
+   {
+    "issue": "Plot length confound. Presence is the mean of a work's top 3 sentences, and that behaves like a maximum, so longer plot sections trip more units. Popular articles tend to have longer, more heavily edited plot sections (Knightfall has 40 sentences, the 1943 serial has 13), and plot sections are capped at 40 sentences unevenly. This changes which units each early work carries, and how often later works carry them, for reasons unrelated to transmission.",
+    "severity": "major",
+    "fix": "Re-run with every work truncated to its first 23 sentences, and add the carriers' mean sentence count as a covariate. Both are computable from corpus.jsonl and the existing activations, because sent_work indexes sentences."
+   },
+   {
+    "issue": "Name and character recurrence can produce a positive result for a boring reason. Units that fire on 'Joker', 'Robin', 'Two-Face' or 'Gotham' are carried by popular early works (Batman '89, Killing Joke, DKR). Later works are Joker-heavy (TDK, Joker 2019, Lego Batman, the Arkham games, Return of the Joker, White Knight). That is the same characters coming back, not memes spreading.",
+    "severity": "major",
+    "fix": "Pre-register E3 on the name-stripped (anon) presence matrix as the primary analysis. The code already computes E3_anon. Report the original-text result as secondary, along with the difference between the two."
+   },
+   {
+    "issue": "Prototypicality confound. A popular work may simply be a more typical Batman story that shares content with everything, including other early works. Under that explanation, its memes show up later because they are central, not because a hit spread them.",
+    "severity": "minor",
+    "fix": "Compute each early work's centrality as its mean Jaccard overlap of presence with the other 14 early works. Add the carriers' mean centrality as a covariate. Also run a reverse-time placebo: later carriers' popularity predicting early_share for units found in 1 to 80% of later works. A real transmission effect cannot run backwards, so a reverse effect of similar size means the forward result is a centrality artifact."
+   },
+   {
+    "issue": "Several analysts' choices are left open, which invites multiple comparisons. There are two models (qwen3-8b, llama3.1-8b), two texts (original and anon), a choice of k filter and a choice of split, and no primary analysis is named. The code also uses n_perm=2000, while the pre-registration says 1000.",
+    "severity": "minor",
+    "fix": "Name one primary cell (anon, k>=2, medium-stratified, adaptation pairs removed) and require the same sign in both models. Apply Holm correction across the 2 models x 2 texts. Fix the number of permutations at 10,000, which is cheap, so the smallest possible p is not a constraint."
+   },
+   {
+    "issue": "Pageview data hygiene. The per-article pageviews API does not follow redirects. Any stored title that is a redirect returns near-zero views, and the code's max(views,1) turns that into log10 = 0, an extreme outlier that alone could drive the correlation. Articles that were created or renamed after July 2015 also have fewer months of data.",
+    "severity": "minor",
+    "fix": "Before running, assert that every early work has views > 0 and months = 135. Resolve redirects, or sum views across them, for any work below that. Use mean monthly views instead of the total if months differ. Use the rank of popularity (Spearman) so one outlier cannot dominate."
+   },
+   {
+    "issue": "No placebo outcome separates spreading within the Batman lineage from a generic 'popular Wikipedia writing style' effect.",
+    "severity": "minor",
+    "fix": "Placebo outcome: replace later_share with each unit's mean continuous score across the 70 baseline films, or with its share among the post-2000 cousins (Spider-Man, Daredevil, Iron Man, Green Hornet). If early_pop predicts these about as well as it predicts later Batman share, the effect is register or genre, not Batman memes spreading."
+   }
+  ],
+  "prediction": "Primary analysis: name-stripped presence, units in at least 2 and at most 80% of the early works, adaptation-linked later works removed. For each early work, offspring = the mean of later_share residualized on early_prev over that work's units. Prediction: offspring correlates positively with log pageviews across the early works (Spearman rho > 0). The effect must reach p < 0.05 one-sided under permutation of popularity within medium strata, controlling for carriers' mean year, mean plot length and centrality, with the same sign in both qwen3-8b and llama3.1-8b. A secondary prediction, if the effect is really selection and not adaptation, is that rho drops by less than half when adaptation-linked later works are removed.",
+  "falsifier": "Any of these falsifies the prediction:\n- In the primary cell, rho <= 0, or p >= 0.05 under the medium-stratified permutation, in either model.\n- The effect is significant only when adaptation-linked later works are included and collapses (falls to less than half, or loses significance) when they are removed. That means the result is heredity reflected in fame, not selection.\n- The baseline-film placebo or the reverse-time placebo shows an effect of similar size.\n- The jackknife shows that dropping a single early work (most likely Batman '89 or The Killing Joke) removes the effect.",
+  "controls": [
+   "Stratified permutation: shuffle popularity only within medium (films, serials and animation vs comics) among early works, 10,000 permutations",
+   "Covariates next to early_prev: carriers' mean release year, the fraction of carriers that are screen works, carriers' mean sentence count, and carriers' mean centrality within the early set",
+   "Exclusion check: re-run with every adaptation-linked later work from the ADAPTATIONS dict removed, and separately with adapted early sources removed",
+   "Name-stripped (anon) presence as the primary analysis, original text as secondary, with the difference between them reported",
+   "Length check: re-run with all works truncated to their first 23 sentences",
+   "Reverse-time placebo: later carriers' popularity predicting early_share (should be null)",
+   "Placebo outcome: early_pop predicting each unit's mean score across the 70 baseline films, or its share in the post-2000 cousin films (should be null)",
+   "Leave-one-early-work-out jackknife of the work-level rho, reporting the minimum and how many folds stay positive",
+   "Pageview sanity check: confirm no zero-view or short-history early works and resolve redirects before running",
+   "Report both models and the k=1 version, with Holm correction across model and text cells",
+   "Fix the split counts to the real numbers (15 early and 17 later with year<2000) or change the split before running"
+  ]
+ }
+]

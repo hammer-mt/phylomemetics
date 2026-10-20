@@ -1,0 +1,951 @@
+{
+ "memes": [
+  {
+   "unit": 131948,
+   "label": "The origin wound",
+   "original": "Bruce dons a bat-themed costume as a disguise to frighten his parents' alleged killers.",
+   "reworded": "Orphaned as a child when gunmen shot his mother and father, the young man vowed to spend his life hunting criminals.",
+   "word_overlap": 0.0,
+   "qwen": {
+    "original": 87.1,
+    "reworded": 71.7,
+    "neutral_max": 47.2
+   },
+   "llama": {
+    "original": 76.4,
+    "reworded": 25.1,
+    "neutral_max": 73.1
+   },
+   "llama_r": 0.877
+  },
+  {
+   "unit": 168352,
+   "label": "The secret identity",
+   "original": "The Riddler gives himself up and is unmasked as forensic accountant Edward Nashton; he is incarcerated in Arkham State Hospital, where he tells Batman he took inspiration from him when targeting the corrupt.",
+   "reworded": "By day he was a harmless socialite; by night he hid his face behind a mask and fought for justice, and no one guessed the truth.",
+   "word_overlap": 0.0,
+   "qwen": {
+    "original": 99.3,
+    "reworded": 94.6,
+    "neutral_max": 32.6
+   },
+   "llama": {
+    "original": 87.9,
+    "reworded": 99.8,
+    "neutral_max": 72.5
+   },
+   "llama_r": 0.536
+  },
+  {
+   "unit": 128514,
+   "label": "Heir to a dead father's fortune",
+   "original": "The following day, Bruce Wayne attends a gala celebrating both the retirement of Commissioner Gordon and the ascension of his daughter, Barbara Gordon, to replace him.",
+   "reworded": "After his dad died, the young man inherited the family company and its vast wealth.",
+   "word_overlap": 0.0,
+   "qwen": {
+    "original": 99.9,
+    "reworded": 51.4,
+    "neutral_max": 85.7
+   },
+   "llama": {
+    "original": 99.4,
+    "reworded": 62.3,
+    "neutral_max": 46.0
+   },
+   "llama_r": 0.492
+  },
+  {
+   "unit": 50224,
+   "label": "The billionaire vigilante",
+   "original": "Reclusive billionaire Bruce Wayne, who has operated for two years as the vigilante Batman, investigates the murder alongside Lieutenant Jim Gordon, much to the disdain of the Gotham City Police Department (GCPD); the Riddler leaves a message for Batman at the crime scene.",
+   "reworded": "A wealthy loner secretly patrols the streets at night, punishing criminals the law cannot touch.",
+   "word_overlap": 0.0,
+   "qwen": {
+    "original": 99.9,
+    "reworded": 90.0,
+    "neutral_max": 90.0
+   },
+   "llama": {
+    "original": 98.9,
+    "reworded": 41.9,
+    "neutral_max": 70.7
+   },
+   "llama_r": 0.942
+  },
+  {
+   "unit": 145011,
+   "label": "The Batcave and bat gear",
+   "original": "Oracle has set up her communications headquarters in the Gotham clock tower, which also houses a makeshift Batcave.",
+   "reworded": "Beneath his mansion lies a hidden cavern full of computers, armored vehicles and grappling hooks.",
+   "word_overlap": 0.0,
+   "qwen": {
+    "original": 99.8,
+    "reworded": 50.2,
+    "neutral_max": 83.4
+   },
+   "llama": {
+    "original": 99.9,
+    "reworded": 89.1,
+    "neutral_max": 62.0
+   },
+   "llama_r": 0.893
+  },
+  {
+   "unit": 105434,
+   "label": "Bats",
+   "original": "He falls into a cave, where a circling vortex of bats elevates him back to the surface.",
+   "reworded": "A swarm of winged nocturnal creatures burst from the dark hollow, shrieking as they flew.",
+   "word_overlap": 0.0,
+   "qwen": {
+    "original": 100.0,
+    "reworded": 94.9,
+    "neutral_max": 75.6
+   },
+   "llama": {
+    "original": 100.0,
+    "reworded": 66.7,
+    "neutral_max": 76.3
+   },
+   "llama_r": 0.923
+  },
+  {
+   "unit": 84130,
+   "label": "Gotham City",
+   "original": "On Halloween, Gotham City mayor Don Mitchell Jr. is murdered by a masked serial killer, the Riddler.",
+   "reworded": "The crime-ridden metropolis was ruled by mobsters, its streets dark and its officials corrupt.",
+   "word_overlap": 0.0,
+   "qwen": {
+    "original": 100.0,
+    "reworded": 54.2,
+    "neutral_max": 42.0
+   },
+   "llama": {
+    "original": 96.4,
+    "reworded": 83.2,
+    "neutral_max": 83.2
+   },
+   "llama_r": 0.676
+  },
+  {
+   "unit": 589605,
+   "label": "Commissioner Gordon",
+   "original": "Batman informs close-to-retirement Commissioner James \"Jim\" Gordon that Dent may be planning a larger scheme.",
+   "reworded": "The city's honest police chief, a mustached veteran, met the caped hero on the rooftop beside the signal light.",
+   "word_overlap": 0.0,
+   "qwen": {
+    "original": 99.8,
+    "reworded": 5.2,
+    "neutral_max": 86.8
+   },
+   "llama": {
+    "original": 99.2,
+    "reworded": 55.3,
+    "neutral_max": 73.8
+   },
+   "llama_r": 0.373
+  },
+  {
+   "unit": 584876,
+   "label": "Losing the prot\u00e9g\u00e9",
+   "original": "While eavesdropping on a child pornography ring and awaiting police backup in Gotham City, Jason Todd (Robin) ignores Batman's orders and attacks the criminals.",
+   "reworded": "The hero's young sidekick was beaten and left to die in an explosion, and the hero never forgave himself.",
+   "word_overlap": 0.0,
+   "qwen": {
+    "original": 100.0,
+    "reworded": 74.2,
+    "neutral_max": 66.0
+   },
+   "llama": {
+    "original": 99.9,
+    "reworded": 65.8,
+    "neutral_max": 65.8
+   },
+   "llama_r": 0.502
+  },
+  {
+   "unit": 31044,
+   "label": "The joke",
+   "original": "He says that the situation reminds him of a joke about two inmates in an asylum who try to escape.",
+   "reworded": "The clown delivered a punchline so dark that nobody in the audience laughed.",
+   "word_overlap": 0.0,
+   "qwen": {
+    "original": 100.0,
+    "reworded": 85.3,
+    "neutral_max": 64.9
+   },
+   "llama": {
+    "original": 99.9,
+    "reworded": 93.9,
+    "neutral_max": 50.0
+   },
+   "llama_r": 0.882
+  },
+  {
+   "unit": 128822,
+   "label": "The rogues' gallery",
+   "original": "Through the asylum, Batman encounters Clayface, Doctor Destiny, Scarecrow, Mad Hatter, Maxie Zeus, and Killer Croc.",
+   "reworded": "One after another he faced a mud monster, a madman in a top hat, a crocodile man and a psychiatrist obsessed with terror.",
+   "word_overlap": 0.0,
+   "qwen": {
+    "original": 100.0,
+    "reworded": 76.0,
+    "neutral_max": 63.8
+   },
+   "llama": {
+    "original": 99.5,
+    "reworded": 42.1,
+    "neutral_max": 42.1
+   },
+   "llama_r": 0.568
+  },
+  {
+   "unit": 130069,
+   "label": "Superhero powers (peaks on Superman)",
+   "original": "Before the planet's destruction, Jor-El and his wife Lara send their infant son Kal-El to Earth.",
+   "reworded": "The alien child, rocketed away from a dying world, grew up able to fly and bend steel.",
+   "word_overlap": 0.0,
+   "qwen": {
+    "original": 100.0,
+    "reworded": 80.4,
+    "neutral_max": 80.4
+   },
+   "llama": {
+    "original": 100.0,
+    "reworded": 80.1,
+    "neutral_max": 53.1
+   },
+   "llama_r": 0.761
+  },
+  {
+   "unit": 65066,
+   "label": "Franchise roll-call (Wikipedia style)",
+   "original": "Arkham City features a large ensemble cast of characters from the history of Batman comics.",
+   "reworded": "The video game includes dozens of familiar heroes and villains drawn from decades of the series, voiced by returning actors.",
+   "word_overlap": 0.0,
+   "qwen": {
+    "original": 99.9,
+    "reworded": 57.8,
+    "neutral_max": 90.5
+   },
+   "llama": {
+    "original": 98.2,
+    "reworded": 67.9,
+    "neutral_max": 86.6
+   },
+   "llama_r": 0.935
+  },
+  {
+   "unit": 520801,
+   "label": "The butler who raised him",
+   "original": "He goes to Wayne Manor, where he meets Thomas's young son Bruce, but flees after a scuffle with family butler Alfred Pennyworth.",
+   "reworded": "The family's loyal manservant raised the orphaned boy, cooking his meals and patching his wounds.",
+   "word_overlap": 0.043,
+   "qwen": {
+    "original": 100.0,
+    "reworded": 46.4,
+    "neutral_max": 87.5
+   },
+   "llama": {
+    "original": 99.9,
+    "reworded": 56.3,
+    "neutral_max": 82.5
+   },
+   "llama_r": 0.896
+  },
+  {
+   "unit": 878889,
+   "label": "Taking in an orphan as a ward",
+   "original": "Batman and Selina are saved by Alfred and the orphans, who are now Bruce Wayne's wards.",
+   "reworded": "The rich bachelor adopted the circus acrobat whose mother and father had died, and took the boy into his home.",
+   "word_overlap": 0.0,
+   "qwen": {
+    "original": 64.6,
+    "reworded": 64.6,
+    "neutral_max": 64.6
+   },
+   "llama": {
+    "original": 92.5,
+    "reworded": 2.4,
+    "neutral_max": 83.2
+   },
+   "llama_r": 0.767
+  },
+  {
+   "unit": 498697,
+   "label": "The villain's lair",
+   "original": "Batman, Robin, and the police arrive at Freeze's lair in response to his escape, discovering Nora preserved in a cryogenic chamber and that Freeze has developed a cure for the early stages of MacGregor's syndrome.",
+   "reworded": "The heroes stormed the madman's hidden hideout, a frozen laboratory beneath an abandoned factory.",
+   "word_overlap": 0.0,
+   "qwen": {
+    "original": 100.0,
+    "reworded": 62.3,
+    "neutral_max": 62.3
+   },
+   "llama": {
+    "original": 99.8,
+    "reworded": 15.4,
+    "neutral_max": 59.6
+   },
+   "llama_r": 0.865
+  },
+  {
+   "unit": 481199,
+   "label": "A bomb",
+   "original": "Meanwhile, Michael survives a hit in Sicily, which instead kills Apollonia via car bombing.",
+   "reworded": "The device under the bridge exploded at noon, blowing debris across the river.",
+   "word_overlap": 0.0,
+   "qwen": {
+    "original": 100.0,
+    "reworded": 95.8,
+    "neutral_max": 49.4
+   },
+   "llama": {
+    "original": 99.1,
+    "reworded": 64.6,
+    "neutral_max": 64.6
+   },
+   "llama_r": 0.971
+  },
+  {
+   "unit": 17909,
+   "label": "A funeral",
+   "original": "In a flashback to his childhood, Bruce Wayne flees his parents' funeral.",
+   "reworded": "Mourners in black gathered by the open grave as the coffin was lowered into the earth.",
+   "word_overlap": 0.0,
+   "qwen": {
+    "original": 100.0,
+    "reworded": 99.7,
+    "neutral_max": 90.7
+   },
+   "llama": {
+    "original": 99.8,
+    "reworded": 99.5,
+    "neutral_max": 35.9
+   },
+   "llama_r": 0.824
+  },
+  {
+   "unit": 448712,
+   "label": "Fell into a vat of chemicals",
+   "original": "He discovers to his shock that the chemicals have permanently bleached his skin chalk-white, stained his lips red and dyed his hair green.",
+   "reworded": "Knocked off a catwalk, the gangster plunged into a tank of toxic waste and emerged disfigured and insane.",
+   "word_overlap": 0.0,
+   "qwen": {
+    "original": 100.0,
+    "reworded": 92.2,
+    "neutral_max": 98.5
+   },
+   "llama": {
+    "original": 99.8,
+    "reworded": 97.9,
+    "neutral_max": 99.4
+   },
+   "llama_r": 0.956
+  },
+  {
+   "unit": 765185,
+   "label": "Two-Face's coin",
+   "original": "Two-Face declares that they will kill Batman if the coin lands scratched side up and let him go if the unscarred side lands.",
+   "reworded": "He let a flip decide whether his hostage lived or died, trusting chance alone, heads or tails.",
+   "word_overlap": 0.086,
+   "qwen": {
+    "original": 100.0,
+    "reworded": 100.0,
+    "neutral_max": 80.6
+   },
+   "llama": {
+    "original": 99.8,
+    "reworded": 99.8,
+    "neutral_max": 63.1
+   },
+   "llama_r": 0.824
+  },
+  {
+   "unit": 68088,
+   "label": "Harvey Dent",
+   "original": "In the ensuing confrontation, Elliot is shot by the reborn Harvey Dent and plummets into the water, with Batman never having a chance to unmask him (it is only assumed it is Thomas Elliot).",
+   "reworded": "The city's crusading district attorney, once its white knight, was scarred by acid and turned to crime.",
+   "word_overlap": 0.0,
+   "qwen": {
+    "original": 99.9,
+    "reworded": 95.9,
+    "neutral_max": 71.4
+   },
+   "llama": {
+    "original": 100.0,
+    "reworded": 82.0,
+    "neutral_max": 88.1
+   },
+   "llama_r": 0.805
+  },
+  {
+   "unit": 13339,
+   "label": "Selina Kyle",
+   "original": "Cat burglar Selina Kyle steals Bruce's fingerprints from Wayne Manor for Daggett, but he double-crosses her, and she alerts the police.",
+   "reworded": "The jewel thief in tight black leather slipped through the skylight and flirted with the masked hero.",
+   "word_overlap": 0.0,
+   "qwen": {
+    "original": 100.0,
+    "reworded": 51.3,
+    "neutral_max": 91.8
+   },
+   "llama": {
+    "original": 99.2,
+    "reworded": 58.9,
+    "neutral_max": 58.9
+   },
+   "llama_r": 0.96
+  },
+  {
+   "unit": 465474,
+   "label": "The Riddler",
+   "original": "On Halloween, Gotham City mayor Don Mitchell Jr. is murdered by a masked serial killer, the Riddler.",
+   "reworded": "The criminal taunted detectives with puzzles and cryptic clues, daring them to find the answers.",
+   "word_overlap": 0.0,
+   "qwen": {
+    "original": 100.0,
+    "reworded": 53.2,
+    "neutral_max": 96.5
+   },
+   "llama": {
+    "original": 99.4,
+    "reworded": 75.4,
+    "neutral_max": 49.0
+   },
+   "llama_r": 0.981
+  },
+  {
+   "unit": 496024,
+   "label": "Jason Todd",
+   "original": "While eavesdropping on a child pornography ring and awaiting police backup in Gotham City, Jason Todd (Robin) ignores Batman's orders and attacks the criminals.",
+   "reworded": "The second boy to wear the hero's mask was murdered by the clown, then came back years later wearing a red helmet.",
+   "word_overlap": 0.0,
+   "qwen": {
+    "original": 100.0,
+    "reworded": 83.8,
+    "neutral_max": 83.8
+   },
+   "llama": {
+    "original": 99.8,
+    "reworded": 75.6,
+    "neutral_max": 61.5
+   },
+   "llama_r": 0.686
+  },
+  {
+   "unit": 501280,
+   "label": "Ra's al Ghul",
+   "original": "Bane, aware of Batman's identity, gloats that he intends to fulfill Ra's al Ghul's mission to destroy Gotham City before brutally crippling Batman in combat.",
+   "reworded": "The centuries-old leader of a league of assassins, kept young by a mystical pit, plotted to wipe out the metropolis.",
+   "word_overlap": 0.0,
+   "qwen": {
+    "original": 100.0,
+    "reworded": 52.2,
+    "neutral_max": 52.2
+   },
+   "llama": {
+    "original": 99.5,
+    "reworded": 13.7,
+    "neutral_max": 72.2
+   },
+   "llama_r": 0.885
+  },
+  {
+   "unit": 513921,
+   "label": "Lucius Fox",
+   "original": "Company archivist Lucius Fox, a friend of Bruce's father, allows him access to prototype defense technologies, including a protective bodysuit and the Tumbler, an armored vehicle.",
+   "reworded": "The company's gadget engineer quietly gave the hero a tank-like car and a bulletproof suit from the research lab.",
+   "word_overlap": 0.044,
+   "qwen": {
+    "original": 100.0,
+    "reworded": 30.1,
+    "neutral_max": 30.1
+   },
+   "llama": {
+    "original": 99.8,
+    "reworded": 17.9,
+    "neutral_max": 80.8
+   },
+   "llama_r": 0.792
+  },
+  {
+   "unit": 876522,
+   "label": "A corrupt police force",
+   "original": "Jim focuses on purging corruption from the Gotham City Police Department after witnessing his partner, Arnold Flass, abuse his power.",
+   "reworded": "The new detective soon learned that most of his fellow officers took bribes from the mob.",
+   "word_overlap": 0.0,
+   "qwen": {
+    "original": 99.9,
+    "reworded": 31.0,
+    "neutral_max": 54.1
+   },
+   "llama": {
+    "original": 99.9,
+    "reworded": 88.6,
+    "neutral_max": 97.8
+   },
+   "llama_r": 0.556
+  },
+  {
+   "unit": 57687,
+   "label": "Prison and the inmates released",
+   "original": "Effectively taking over Gotham, he exposes Dent's crimes to the world, and releases the prisoners of Blackgate Penitentiary.",
+   "reworded": "The convicts broke out of their cells as the jail's doors swung open and they poured into the streets.",
+   "word_overlap": 0.0,
+   "qwen": {
+    "original": 99.9,
+    "reworded": 55.6,
+    "neutral_max": 97.9
+   },
+   "llama": {
+    "original": 99.9,
+    "reworded": 3.3,
+    "neutral_max": 97.3
+   },
+   "llama_r": 0.797
+  },
+  {
+   "unit": 465435,
+   "label": "The antidote",
+   "original": "He awakens on his birthday, having been saved by Alfred and Fox, who developed an antidote for the toxin.",
+   "reworded": "Poisoned and dying, he survived only because a friend synthesized a cure in time.",
+   "word_overlap": 0.0,
+   "qwen": {
+    "original": 99.9,
+    "reworded": 60.5,
+    "neutral_max": 93.6
+   },
+   "llama": {
+    "original": 99.8,
+    "reworded": 22.2,
+    "neutral_max": 60.5
+   },
+   "llama_r": 0.75
+  },
+  {
+   "unit": 47532,
+   "label": "A mutating super-formula",
+   "original": "There, Batman learns that the unstable properties of the Titan formula are mutating in Joker's blood, gradually killing him.",
+   "reworded": "The experimental steroid turned the inmates into hulking monsters, but it slowly destroyed their bodies.",
+   "word_overlap": 0.0,
+   "qwen": {
+    "original": 100.0,
+    "reworded": 76.2,
+    "neutral_max": 76.2
+   },
+   "llama": {
+    "original": 99.8,
+    "reworded": 57.3,
+    "neutral_max": 57.3
+   },
+   "llama_r": 0.833
+  },
+  {
+   "unit": 66576,
+   "label": "Fear toxin",
+   "original": "Ducard trains Bruce to conquer his fear using a hallucinogenic compound derived from the mountain's blue flowers.",
+   "reworded": "A gas that made victims see their worst nightmares sent the whole crowd into screaming panic.",
+   "word_overlap": 0.0,
+   "qwen": {
+    "original": 100.0,
+    "reworded": 36.2,
+    "neutral_max": 95.4
+   },
+   "llama": {
+    "original": 100.0,
+    "reworded": 15.9,
+    "neutral_max": 74.7
+   },
+   "llama_r": 0.717
+  }
+ ],
+ "neutral": [
+  "The bakery on the corner raised its prices for the second time this year.",
+  "She watered the tomatoes before leaving for work.",
+  "The committee approved the new parking rules on Tuesday.",
+  "Rain is expected across the region through the weekend.",
+  "He finally finished assembling the bookshelf after two hours.",
+  "The museum extended its opening hours for the summer exhibition.",
+  "Our flight was delayed because of a mechanical inspection.",
+  "The students presented their science projects in the gym.",
+  "A new coffee shop opened next to the library.",
+  "The orchestra rehearsed the second movement three more times."
+ ],
+ "revenge": {
+  "qwen3-8b": {
+   "n_keyword_sentences": 41,
+   "n_candidates": 50,
+   "chosen": {
+    "unit": 332151,
+    "layer": 27,
+    "neuron": 375,
+    "pole": "+",
+    "dev_auc": 0.965,
+    "test_auc": 0.451,
+    "test_pairs_won": 4,
+    "test_revenge_pct": [
+     19.6,
+     0.2,
+     99.2,
+     2.7,
+     2.7,
+     92.8,
+     19.6,
+     94.3,
+     99.2,
+     19.6,
+     89.5,
+     19.6
+    ],
+    "test_control_pct": [
+     55.6,
+     55.6,
+     55.6,
+     55.6,
+     55.6,
+     55.6,
+     55.6,
+     19.6,
+     19.6,
+     19.6,
+     89.5,
+     55.6
+    ],
+    "showcase": [
+     {
+      "kind": "uses \"revenge\"",
+      "text": "He swore revenge on the men who killed his father.",
+      "pct": 97.4
+     },
+     {
+      "kind": "uses \"vengeance\"",
+      "text": "He swore vengeance on the men who killed his father.",
+      "pct": 98.5
+     },
+     {
+      "kind": "no revenge word",
+      "text": "He swore to make the men who killed his father pay for what they had done.",
+      "pct": 93.8
+     },
+     {
+      "kind": "not revenge",
+      "text": "He swore to finish the race his father never got to run.",
+      "pct": 93.8
+     }
+    ]
+   },
+   "top_keyword_unit": {
+    "unit": 500939,
+    "layer": 4,
+    "neuron": 9419,
+    "pole": "-",
+    "dev_auc": 0.7,
+    "test_auc": 0.625,
+    "test_pairs_won": 7,
+    "test_revenge_pct": [
+     94.4,
+     73.6,
+     94.4,
+     73.6,
+     19.3,
+     19.3,
+     73.6,
+     73.6,
+     73.6,
+     73.6,
+     73.6,
+     98.9
+    ],
+    "test_control_pct": [
+     73.6,
+     94.4,
+     73.6,
+     73.6,
+     19.3,
+     19.3,
+     97.9,
+     19.3,
+     19.3,
+     19.3,
+     94.4,
+     73.6
+    ],
+    "showcase": [
+     {
+      "kind": "uses \"revenge\"",
+      "text": "He swore revenge on the men who killed his father.",
+      "pct": 99.7
+     },
+     {
+      "kind": "uses \"vengeance\"",
+      "text": "He swore vengeance on the men who killed his father.",
+      "pct": 99.2
+     },
+     {
+      "kind": "no revenge word",
+      "text": "He swore to make the men who killed his father pay for what they had done.",
+      "pct": 19.3
+     },
+     {
+      "kind": "not revenge",
+      "text": "He swore to finish the race his father never got to run.",
+      "pct": 19.3
+     }
+    ]
+   },
+   "chosen_top_corpus": [
+    {
+     "work": "Count of Monte Cristo",
+     "text": "Having sworn vengeance on Danglars, Fernand, and Villefort, Dant\u00e8s returns to Marseille in search of information to accomplish his goal."
+    },
+    {
+     "work": "Singin' in the Rain",
+     "text": "Furious at Don's teasing, Kathy attempts to throw a cake at him, but he dodges it and it hits Lina instead."
+    },
+    {
+     "work": "The Social Network",
+     "text": "In intercut frame stories, two ongoing depositions play out: in one, Mark Zuckerberg is being sued by his former friend Eduardo Saverin, and in the other, he is sued by twins Cameron and Tyler Winklevoss."
+    },
+    {
+     "work": "The Godfather",
+     "text": "While Vito survives the attempt and recovers at the hospital, hot-tempered Sonny takes over the family as acting boss."
+    },
+    {
+     "work": "Heat",
+     "text": "Afterward, McCauley threatens to kill Van Zant."
+    },
+    {
+     "work": "Under the Red Hood",
+     "text": "Red Hood brutally beats Joker in revenge and confronts Batman."
+    }
+   ]
+  },
+  "llama3.1-8b": {
+   "n_keyword_sentences": 41,
+   "n_candidates": 50,
+   "chosen": {
+    "unit": 204178,
+    "layer": 14,
+    "neuron": 3474,
+    "pole": "+",
+    "dev_auc": 1.0,
+    "test_auc": 0.826,
+    "test_pairs_won": 10,
+    "test_revenge_pct": [
+     98.3,
+     99.6,
+     99.8,
+     50.4,
+     50.4,
+     50.4,
+     94.7,
+     97.3,
+     97.5,
+     94.0,
+     99.6,
+     99.0
+    ],
+    "test_control_pct": [
+     36.0,
+     95.3,
+     2.5,
+     60.3,
+     73.8,
+     16.3,
+     92.0,
+     36.0,
+     81.3,
+     60.3,
+     95.6,
+     36.0
+    ],
+    "showcase": [
+     {
+      "kind": "uses \"revenge\"",
+      "text": "He swore revenge on the men who killed his father.",
+      "pct": 99.0
+     },
+     {
+      "kind": "uses \"vengeance\"",
+      "text": "He swore vengeance on the men who killed his father.",
+      "pct": 99.2
+     },
+     {
+      "kind": "no revenge word",
+      "text": "He swore to make the men who killed his father pay for what they had done.",
+      "pct": 99.9
+     },
+     {
+      "kind": "not revenge",
+      "text": "He swore to finish the race his father never got to run.",
+      "pct": 98.3
+     }
+    ]
+   },
+   "top_keyword_unit": {
+    "unit": 469665,
+    "layer": 0,
+    "neuron": 10913,
+    "pole": "-",
+    "dev_auc": 0.62,
+    "test_auc": 0.785,
+    "test_pairs_won": 11,
+    "test_revenge_pct": [
+     90.1,
+     10.7,
+     56.7,
+     97.3,
+     10.7,
+     10.7,
+     10.7,
+     56.7,
+     56.7,
+     56.7,
+     94.4,
+     98.1
+    ],
+    "test_control_pct": [
+     10.7,
+     10.7,
+     10.7,
+     10.7,
+     10.7,
+     10.7,
+     10.7,
+     10.7,
+     10.7,
+     56.7,
+     90.1,
+     10.7
+    ],
+    "showcase": [
+     {
+      "kind": "uses \"revenge\"",
+      "text": "He swore revenge on the men who killed his father.",
+      "pct": 99.4
+     },
+     {
+      "kind": "uses \"vengeance\"",
+      "text": "He swore vengeance on the men who killed his father.",
+      "pct": 99.2
+     },
+     {
+      "kind": "no revenge word",
+      "text": "He swore to make the men who killed his father pay for what they had done.",
+      "pct": 56.7
+     },
+     {
+      "kind": "not revenge",
+      "text": "He swore to finish the race his father never got to run.",
+      "pct": 56.7
+     }
+    ]
+   },
+   "chosen_top_corpus": [
+    {
+     "work": "Batman Begins",
+     "text": "Bruce intends to murder Chill to avenge his parents, but an assassin in Falcone's employ kills him first."
+    },
+    {
+     "work": "Batman Forever",
+     "text": "The trauma of the incident caused Dent to develop a split personality, make decisions based on the flip of a coin, and swear vengeance against Batman for failing to prevent the incident."
+    },
+    {
+     "work": "Saving Private Ryan",
+     "text": "The men prepare to execute a surrendered German soldier in revenge, but Upham intervenes, arguing that they should follow the rules of war."
+    },
+    {
+     "work": "The Long Halloween",
+     "text": "His revenge complete, Two-Face turns himself in to Gordon and Batman but tells them that there were two Holiday killers."
+    },
+    {
+     "work": "Taxi Driver",
+     "text": "To find an outlet for his rage, Travis follows an intense physical training regimen."
+    },
+    {
+     "work": "Batman Returns",
+     "text": "Catwoman confronts Max, rejecting Batman's plea to abandon her revenge and leave with him."
+    }
+   ]
+  },
+  "cross_model_r": 0.387,
+  "raw": {
+   "qwen3-8b": {
+    "showcase": [
+     3.891,
+     5.125,
+     1.805,
+     1.805
+    ],
+    "test_revenge": [
+     0.441,
+     0.154,
+     7.344,
+     0.328,
+     0.291,
+     1.383,
+     0.527,
+     1.984,
+     7.5,
+     0.457,
+     0.988,
+     0.42
+    ],
+    "test_control": [
+     0.637,
+     0.664,
+     0.656,
+     0.719,
+     0.715,
+     0.633,
+     0.656,
+     0.424,
+     0.426,
+     0.559,
+     1.047,
+     0.676
+    ],
+    "corpus_p50": 0.579,
+    "corpus_p99": 6.752
+   },
+   "llama3.1-8b": {
+    "showcase": [
+     0.836,
+     0.871,
+     1.39,
+     0.708
+    ],
+    "test_revenge": [
+     0.712,
+     1.088,
+     1.254,
+     0.063,
+     0.079,
+     0.08,
+     0.397,
+     0.568,
+     0.602,
+     0.365,
+     1.05,
+     0.83
+    ],
+    "test_control": [
+     0.045,
+     0.436,
+     0.011,
+     0.082,
+     0.128,
+     0.026,
+     0.304,
+     0.041,
+     0.174,
+     0.081,
+     0.464,
+     0.059
+    ],
+    "corpus_p50": 0.061,
+    "corpus_p99": 0.827
+   }
+  }
+ }
+}

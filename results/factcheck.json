@@ -1,0 +1,410 @@
+[
+ {
+  "part": "abstract-intro",
+  "checked": 34,
+  "reported": [
+   {
+    "file": "paper/paper.md",
+    "quote": "alongside literary and superhero relatives from Puss in Boots (1697) to Iron Man (2008)",
+    "problem": "Iron Man (2008) is not the latest of the 13 relatives. The Green Hornet (2011) is also a cousin in the corpus, so the stated range ends too early.",
+    "correction": "alongside literary and superhero relatives from Puss in Boots (1697) to The Green Hornet (2011)",
+    "evidence": "data/corpus.jsonl, group == 'cousin' (13 works): 'Green Hornet' year 2011 is the maximum; 'Iron Man' is 2008, 'Puss in Boots' is 1697.",
+    "severity": "minor"
+   }
+  ],
+  "verified": [
+   {
+    "confirmed": true,
+    "file": "paper/paper.md",
+    "quote": "alongside literary and superhero relatives from Puss in Boots (1697) to Iron Man (2008)",
+    "correction": "alongside literary and superhero relatives from Puss in Boots (1697) to The Green Hornet (2011)",
+    "reason": "The quote appears verbatim at paper.md line 25. In data/corpus.jsonl there are 13 works with group == 'cousin'. The earliest is Puss in Boots (1697). The latest is Green Hornet (id 44, 2011, film, 23 sentences), which is later than Iron Man (id 43, 2008). Green Hornet clears the 8-sentence cutoff, so it was not one of the dropped works. The paper also uses it in its results: line 33 lists it among the eight film cousins, and lines 11, 97 and 129 discuss it as a cousin that carries Batman's canon. A 'from X to Y' range should name the real endpoints, and no rounding or other reading makes 2008 the end of a set that includes a 2011 film. The proposed correction is right, and 'The Green Hornet' matches how the paper names the film elsewhere."
+   }
+  ]
+ },
+ {
+  "part": "methods",
+  "checked": 58,
+  "reported": [
+   {
+    "file": "paper/paper.md",
+    "quote": "Four works were dropped because their plot sections had fewer than 8 sentences.",
+    "problem": "Only three works were dropped for having fewer than 8 sentences. fetch_corpus.py lists 33 Batman titles, 14 cousins and 70 baseline films (117 in all), and the corpus holds 114.",
+    "correction": "Three works were dropped because their plot sections had fewer than 8 sentences (the 1949 Batman and Robin serial, Moon Knight and Pulp Fiction).",
+    "evidence": "data_fetch2.log (the final run, 'wrote 114 works') has exactly three lines: 'TOO SHORT (2 sentences): Batman and Robin (serial)', 'TOO SHORT (1 sentences): Moon Knight (miniseries)', 'TOO SHORT (7 sentences): Pulp Fiction'. data/corpus.jsonl has 114 works: 32 batman, 13 cousin, 69 baseline. In the earlier run (data_fetch.log), The Curse of Capistrano failed with 'MISSING plot section', not for being too short, and it is no longer in the COUSINS list.",
+    "severity": "wrong number"
+   },
+   {
+    "file": "paper/paper.md",
+    "quote": "used 319 times in Batman rewrites but rarely elsewhere",
+    "problem": "The rewrites in data/anon/batch_*.jsonl contain 'the vigilante' (any case) 366 times across the 32 Batman works. No way of counting gives 319: lowercase only gives 276, and leaving out the possessive 'the vigilante's' gives 318. The cousins have 16 uses and the reference films 0, so 'rarely elsewhere' holds.",
+    "correction": "used 366 times in Batman rewrites but rarely elsewhere",
+    "evidence": "Counted in Python over data/anon/batch_00..11.jsonl (114 records, ids 0-31 are Batman): 'the vigilante' (case-insensitive) = 366 in Batman, 16 in cousins, 0 in baseline. Of these, 48 are possessive and 318 are not.",
+    "severity": "wrong number"
+   },
+   {
+    "file": "paper/paper.md",
+    "quote": "Each image was seen as 10 views (the full image, five crops and their mirror images).",
+    "problem": "vision_extract.views() builds six images (full, four corner crops, centre crop) and mirrors each one, giving 12. It then returns out[:10], which drops the centre crop and its mirror. Only four crops are used.",
+    "correction": "Each image was seen as 10 views (the full image, its four corner crops and their mirror images).",
+    "evidence": "vision_extract.py views(): crops = [full, 4 corners, centre]; each is appended with its FLIP_LEFT_RIGHT copy; 'return out[:10]' keeps full, full-mirror and the 4 corners with their mirrors. The centre crop is discarded.",
+    "severity": "wrong claim"
+   },
+   {
+    "file": "paper/paper.md",
+    "quote": "was rewritten to share no content words with the original",
+    "problem": "Three of the 31 rewordings still share a content word with the original sentence. In wording.json their TF-IDF overlap with English stop words removed is above zero: 'The butler who raised him' shares 'family' (0.043), 'Two-Face's coin' shares 'let' (0.086) and 'Lucius Fox' shares 'company' (0.044).",
+    "correction": "was rewritten to share almost no content words with the original (28 of 31 share none; three share a single word)",
+    "evidence": "results/wording.json memes[].word_overlap: 28 values are 0.0, and the values 0.043, 0.086 and 0.044 belong to the three memes named above. The shared words were found by intersecting each original's tokens with its rewording's tokens.",
+    "severity": "minor"
+   },
+   {
+    "file": "paper/paper.md",
+    "quote": "The lead image of each work's Wikipedia article (poster, cover or box art) was passed to two vision models",
+    "problem": "Not every work has an image. Only 111 of the 114 works do: 29 Batman, 69 films and 13 cousins. Batman R.I.P., Earth One and Batman Ninja have no image file.",
+    "correction": "The lead image of each work's Wikipedia article (poster, cover or box art; available for 111 works, including 29 of the 32 Batman works) was passed to two vision models",
+    "evidence": "results/vision_final.json n_images = {batman: 29, films: 69, cousins: 13}. In data/images.json, works without a file are Batman R.I.P., Earth One and Batman Ninja.",
+    "severity": "minor"
+   }
+  ],
+  "verified": [
+   {
+    "confirmed": true,
+    "file": "paper/paper.md",
+    "quote": "Four works were dropped because their plot sections had fewer than 8 sentences.",
+    "correction": "Three works were dropped because their plot sections had fewer than 8 sentences (the 1949 Batman and Robin serial, the 2022 Moon Knight miniseries and Pulp Fiction).",
+    "reason": "The quote appears on line 33 of paper.md. In fetch_corpus.py, BATMAN has 33 entries, COUSINS 14 and BASELINE 70, so 117 works in all. data/corpus.jsonl has 114 works (32 batman, 13 cousin, 69 baseline, 3,700 sentences), which means exactly 3 were dropped. data_fetch2.log is the final run: it ends with 'wrote 114 works', and its timestamp (11:44) matches corpus.jsonl. That log has exactly three 'TOO SHORT' lines: Batman and Robin (serial) with 2 sentences, Moon Knight (miniseries) with 1 and Pulp Fiction with 7. The '< 8' check is on line 158 of fetch_corpus.py. Each of the three titles drops one from its group (33 to 32, 14 to 13, 70 to 69). The earlier run (data_fetch.log, 113 works) did lose a fourth work, The Curse of Capistrano, but that was a 'MISSING plot section' failure, not a short one, and the title is no longer in fetch_corpus.py. So 'four' cannot be read as a fair rounding or as another valid count for the final corpus."
+   },
+   {
+    "confirmed": true,
+    "file": "paper/paper.md",
+    "quote": "used 319 times in Batman rewrites but rarely elsewhere",
+    "correction": "used 366 times in Batman rewrites but rarely elsewhere",
+    "reason": "The quote is on line 35 of paper/paper.md. I recounted over data/anon/batch_00..11.jsonl (114 records: 32 Batman, 13 cousins, 69 baseline, matched by id to the groups in data/corpus.jsonl). Case-insensitive 'the vigilante' appears 366 times in the Batman works, 16 in the cousins and 0 in the baseline. I tried every other reading I could think of and none gives 319: lowercase only gives 276, without the possessive 318, lowercase without the possessive 237, number of sentences containing it 335, and any 'vigilante' 384. Restricting to the spans the word-level diff changed (the make_neutral.py method) gives 352 'the vigilante' and 375 'vigilante' tokens; counting only spans where the original word was 'Batman'/'Batman's' gives 323 and any span containing 'Batman' gives 349. Taking out the 5 uses already in the original Batman texts gives 361. Nothing in logs/, results/ or the scripts records 319, so the number cannot be traced to the current data. The plain count of 366 is the best correction. 'Rarely elsewhere' holds (16 in cousins, 0 in baseline)."
+   },
+   {
+    "confirmed": true,
+    "file": "paper/paper.md",
+    "quote": "Each image was seen as 10 views (the full image, five crops and their mirror images).",
+    "correction": "Each image was seen as 10 views (the full image, its four corner crops and their mirror images).",
+    "reason": "The quote appears at line 65 of paper.md. In vision_extract.py, views() (lines 29-43) builds six images: the padded full image, four corner crops and a centre crop. It appends each one followed by its FLIP_LEFT_RIGHT mirror, which gives 12 images in the order full, full-mirror, the 4 corners each with its mirror, then centre and centre-mirror. It returns out[:10], so the centre crop and its mirror are dropped. I extracted the function and ran it on a test image: it returns 10 views. Both callers (CLIP at line 72, DINOv2 at line 96) use this function, and vision_analyze.py reshapes the saved views as (n, 10, -1), so the reported results use these 10 views. Only four crops are used, not five. The function's docstring ('4 corners, centre, and mirrors') matches the paper but not what the code does. So 'five crops' is wrong, and 'four corner crops' is the correct wording."
+   },
+   {
+    "confirmed": true,
+    "file": "paper/paper.md",
+    "quote": "was rewritten to share no content words with the original",
+    "correction": "was rewritten to share almost no content words with the original (28 of 31 share none; three share a single word)",
+    "reason": "The quote appears at paper.md line 51, and line 81 makes the same claim. wording_test.py lines 253-255 compute word_overlap as a TF-IDF cosine with sklearn's English stop-word list removed. In results/wording.json, 28 of the 31 memes have word_overlap 0.0. The other three are 'The butler who raised him' (0.043), 'Two-Face's coin' (0.086) and 'Lucius Fox' (0.044). I tokenized each pair myself with the project's .venv sklearn (same token pattern and same ENGLISH_STOP_WORDS) and intersected the token sets. The shared words are 'family' (the original has \"family butler\", the rewording \"The family's loyal manservant\"), 'let' (both sentences use \"let\") and 'company' (the original has \"Company archivist\", the rewording \"The company's gadget engineer\"). 'family' and 'company' are plainly content words, and the project's own stop-word filter keeps 'let'. So \"share no content words\" is contradicted by the evidence, and rounding cannot explain it. The proposed correction matches the data. Line 81 (\"rewritten to share no content words\") needs the same fix."
+   },
+   {
+    "confirmed": true,
+    "file": "paper/paper.md",
+    "quote": "The lead image of each work's Wikipedia article (poster, cover or box art) was passed to two vision models",
+    "correction": "The lead image of each work's Wikipedia article (poster, cover or box art; retrieved for 111 of the 114 works, including 29 of the 32 Batman works) was passed to two vision models",
+    "reason": "The quote is on line 65 of paper.md. I recomputed the counts from data/images.json and data/corpus.jsonl. Only 111 of the 114 works have an image file: 29 of 32 Batman works, all 69 baseline films and all 13 cousins. The three without one are id 19 Batman R.I.P., id 24 Earth One and id 29 Batman Ninja. Each has file None in images.json, though an infobox_name is recorded. data/images has exactly 111 files, and results/vision_final.json gives n_images = {batman: 29, films: 69, cousins: 13}, so only 111 images reached the vision models. The paper does admit the gap elsewhere: section 3.8 says \"29 available Batman images\" and the limitations section says \"three Batman covers missing\". Even so, the methods sentence says \"each work's\" image was passed, which is false for three works. Rounding or a different reading cannot rescue it. The flaw is minor but real. I changed \"available\" to \"retrieved\" in the correction. These three articles do have a lead image on Wikipedia (their infobox names are recorded); the files just weren't fetched."
+   }
+  ]
+ },
+ {
+  "part": "results-1",
+  "checked": 62,
+  "reported": [
+   {
+    "file": "paper/paper.md",
+    "quote": "Qwen's tree has a camp clade (Batman '66, Batman & Robin, The Lego Batman Movie, Batman Ninja, Return of the Joker).",
+    "problem": "In the Qwen3-8B tree these five works do not form a clade of their own. The smallest clade that contains all five also holds Batman R.I.P. (w19) and White Knight (w28): ((w19,(w29,w1)),((w15,w27),(w28,w14))). No subclade holds just the five named works. By contrast, Llama's 'grounded crime' clade is exactly the seven works the paper lists, so that claim checks out.",
+    "correction": "Qwen's tree has a camp-leaning clade (Batman '66, Batman & Robin, The Lego Batman Movie, Batman Ninja and Return of the Joker, together with Batman R.I.P. and White Knight).",
+    "evidence": "results/phylo.json models['qwen3-8b'].newick, node Inner40 = (w19,(w29,w1))Inner18 + ((w15,w27)Inner43,(w28,w14)Inner41)Inner42. The MRCA of {1,14,15,27,29} has 7 leaves, the 2 extras being Batman R.I.P. and White Knight.",
+    "severity": "wrong claim"
+   },
+   {
+    "file": "paper/paper.md",
+    "quote": "After Spider-Man, Iron Man's nearest works are Nolan's Batman films.",
+    "problem": "This holds for Llama, but in Qwen3-8B Iron Man's second-nearest work is Batman v Superman, a Snyder film, not a Nolan one. Batman Begins comes third, then Superman, which ties with Dark Knight Rises.",
+    "correction": "After Spider-Man, Iron Man's nearest works are Batman films: in Llama, Nolan's Batman Begins and The Dark Knight Rises; in Qwen, Batman v Superman, then Batman Begins.",
+    "evidence": "results/phylo.json D, row Iron Man (id 43). qwen3-8b: Spider-Man 0.869, Batman v Superman 0.876, Batman Begins 0.880, Superman 0.884, Dark Knight Rises 0.884. llama3.1-8b: Spider-Man 0.873, Batman Begins 0.876, Dark Knight Rises 0.878.",
+    "severity": "minor"
+   },
+   {
+    "file": "paper/paper.md",
+    "quote": "Most strong families are character and place detectors (Alfred, Robin, the Joker, Gotham).",
+    "problem": "Character and place labels make up a plurality of the labelled strong families, not a majority. Among the 120 strongest families by strength, 106 have labels, and 50 of those 106 (47%) are character or place. Across all 151 labelled families the figure is 70 of 151 (46%).",
+    "correction": "The largest group of strong families are character and place detectors (Alfred, Robin, the Joker, Gotham).",
+    "evidence": "results/labels_wf.json + results/labels.json kinds, joined to results/qwen3-8b/memes.json families sorted by strength. Top 120: character 39, place 11, trope 20, mixed 16, register 8, object 8, genre 4, unlabelled 14.",
+    "severity": "minor"
+   },
+   {
+    "file": "paper/paper.md",
+    "quote": "When the top sentence of each named meme was rewritten to share no content words with the original",
+    "problem": "Three of the 31 rewordings share a word with the original: 'family' (butler), 'let' (Two-Face's coin) and 'company' (Lucius Fox). Two-Face's coin is one of the four memes the paper reports as surviving in both models.",
+    "correction": "When the top sentence of each named meme was rewritten to share almost no content words with the original (none in 28 of 31; one shared word in the other three)",
+    "evidence": "results/wording.json memes[].word_overlap: The butler who raised him 0.043, Two-Face's coin 0.086, Lucius Fox 0.044; all others 0.0.",
+    "severity": "minor"
+   }
+  ],
+  "verified": [
+   {
+    "confirmed": true,
+    "file": "paper/paper.md",
+    "quote": "Qwen's tree has a camp clade (Batman '66, Batman & Robin, The Lego Batman Movie, Batman Ninja, Return of the Joker).",
+    "correction": "Qwen's tree has a camp-leaning clade (Batman '66, Batman & Robin, The Lego Batman Movie, Batman Ninja and Return of the Joker, together with Batman R.I.P. and White Knight).",
+    "reason": "The quote is on line 85 of paper.md. I parsed models['qwen3-8b'].newick from results/phylo.json, and the copy in report/data.json trees is the same tree. The smallest clade holding w1 (Batman '66), w14 (Batman & Robin), w15 (Return of the Joker), w27 (Lego Batman) and w29 (Batman Ninja) is Inner40. It has 7 leaves, and the two extras are w19 (Batman R.I.P.) and w28 (White Knight). Its children are Inner37 = (w19,(w29,w1)) and Inner42 = ((w15,w27),(w28,w14)). No node's leaf set is exactly those five works. Rerooting does not help either: the five sit in two separate subtrees, each mixed with an extra work, so no edge splits off exactly the five even if the tree is read as unrooted. The paper names the clade's members exactly, so \"a camp clade\" of those five is not a matter of rounding or a fair loose reading. The proposed correction lists the real 7 members and is accurate."
+   },
+   {
+    "confirmed": true,
+    "file": "paper/paper.md",
+    "quote": "After Spider-Man, Iron Man's nearest works are Nolan's Batman films.",
+    "correction": "After Spider-Man, Iron Man's nearest works are Batman films: in Llama, Nolan's Batman Begins and The Dark Knight Rises; in Qwen, Batman v Superman, then Batman Begins.",
+    "reason": "The quote appears once in paper.md (line 85), in a paragraph whose other claims cover both models (for example \"Zorro's nearest relative is the Scarlet Pimpernel in both models\"). I recomputed the nearest works from results/phylo.json, models.<m>.D, row 43 (Iron Man). The matrix is symmetric and its rows follow the works ids.\n\n- qwen3-8b: Spider-Man 0.869, Batman v Superman 0.876, Batman Begins 0.880, Dark Knight Rises 0.884, Superman 0.884 (a tie at the stored 3 decimal places).\n- llama3.1-8b: Spider-Man 0.873, Batman Begins 0.876, Dark Knight Rises 0.878.\n\nreport/data2.js agrees. Its \"nearest\" lists give Iron Man as [Spider-Man, Batman v Superman, Batman Begins] for Qwen and [Spider-Man, Batman Begins, Dark Knight Rises] for Llama.\n\nSo the sentence holds for Llama but not for Qwen, the main model. In Qwen the second-nearest work is Batman v Superman, a Snyder film, and it is 0.004 closer than Batman Begins, a gap the 3-decimal precision can show. Rounding does not explain the error. A loose reading such as \"Nolan films are among the next few\" does not save it either, because the sentence says the nearest works after Spider-Man are Nolan's. The proposed correction matches the data for both models. A side note: in the small model qwen3-1.7b, the works after Spider-Man are Dark Knight Returns and Hush, so the original sentence would not hold for it either. The correction names only Llama and Qwen, which matches how the paragraph uses \"both models\"."
+   },
+   {
+    "confirmed": false,
+    "file": "paper/paper.md",
+    "quote": "Most strong families are character and place detectors (Alfred, Robin, the Joker, Gotham).",
+    "correction": "No correction needed. If the author wants it tighter, it could read \"Most of the strongest families are character and place detectors (Alfred, Robin, the Joker, Gotham)\", which matches the paper's own top-33 band (17 of the 30 labelled, 57%).",
+    "reason": "The quote is on line 71. The paper never defines \"strong families\", and whether the claim holds depends on the cutoff. The paper's own \"strongest\" set is the top 33 by strength (line 77; export.py bands (0,33) and agreement \"strongest_33\"). I sorted results/qwen3-8b/memes.json by strength and used labels.json kinds first, as export_phase23.label_for does. In that top 33, 17 of the 30 labelled families are character or place (57%). That is also 17 of all 33 (52%), so it is a majority either way. It stays a majority through the top 50 (25 of 47, 53%) and the top 60 (30 of 57). It only falls below half from about the top 70 on. The checker's top-120 count is right (50 of 106, 47%), but 120 is an arbitrary cutoff. The 120 labels_wf families are not the top 120 by strength (their ranks reach 182), so that file size does not define \"strong\". The checker's \"70 of 151\" also double-counts: 26 units appear in both label files. The real set is 125 unique labelled families, 57 of them character or place (46%). If labels_wf kinds win the 7 conflicts instead, the top 120 is 52 of 106 (49%), and labels_wf alone gives 59 of 120 (49%). Under the paper's own definition of strongest, \"most\" is a fair reading, so the evidence does not contradict the sentence."
+   },
+   {
+    "confirmed": true,
+    "file": "paper/paper.md",
+    "quote": "When the top sentence of each named meme was rewritten to share no content words with the original",
+    "correction": "When the top sentence of each named meme was rewritten to share almost no content words with the original (none in 28 of 31; one shared word in the other three)",
+    "reason": "The quote appears at paper.md line 81, and line 51 (Methods) makes the same claim. results/wording.json has word_overlap > 0 for three of the 31 memes: The butler who raised him (0.043), Two-Face's coin (0.086) and Lucius Fox (0.044). The other 28 are 0.0. I re-ran the project's own analyzer (sklearn TfidfVectorizer with stop_words='english', the same one wording_test.py line 254 uses) in .venv. It finds exactly one shared non-stopword token in each of the three: 'family' (family butler / The family's), 'let' (let him go / He let) and 'company' (Company archivist / The company's). None of these three words is on sklearn's English stopword list, and all are content words (nouns or a full verb). So 'share no content words' is contradicted by the evidence, not a rounding. This matters because Two-Face's coin is one of the four memes the paper says survived in both models (reworded percentile 100.0 in Qwen and 99.8 in Llama), though the one shared word is 'let', not a coin or flip word. The proposed correction is accurate. The same fix should also go into the Methods sentence on line 51."
+   }
+  ]
+ },
+ {
+  "part": "results-2",
+  "checked": 62,
+  "reported": [
+   {
+    "file": "paper/paper.md",
+    "quote": "dropping the three Killing Joke adaptations (p = 0.024 and 0.002)",
+    "problem": "Both p-values are rounded wrongly. Qwen's p is 0.02349, which is 0.023 at three decimals. Llama's p is 0.001499, which is 0.001 at one significant figure (or 0.0015 at two), not 0.002.",
+    "correction": "dropping the three Killing Joke adaptations (p = 0.023 and 0.0015)",
+    "evidence": "results/experiments.json: qwen3-8b.E2.without_killing_joke.p_one_sided = 0.02348825587206397; llama3.1-8b.E2.without_killing_joke.p_one_sided = 0.0014992503748125937",
+    "severity": "minor"
+   }
+  ],
+  "verified": [
+   {
+    "confirmed": true,
+    "file": "paper/paper.md",
+    "quote": "dropping the three Killing Joke adaptations (p = 0.024 and 0.002)",
+    "correction": "dropping the three Killing Joke adaptations (p = 0.023 and 0.0015)",
+    "reason": "The quote appears on line 105 of paper.md. In results/experiments.json, E2.without_killing_joke.p_one_sided is 0.0234883 for qwen3-8b (exactly 47/2001) and 0.0014993 for llama3.1-8b (exactly 3/2001). report/data2.js has the same numbers. Qwen's p rounds to 0.023 at three decimals, not 0.024. Llama's p rounds to 0.001 at three decimals or 0.0015 at two significant figures. 0.002 only comes out if you round twice (0.0015, then 0.002), so it is not a fair rounding. The other way of computing a permutation p, k/n instead of (k+1)/(n+1), gives 46/2000 = 0.023 and 2/2000 = 0.001, so that reading also fails to give 0.024 or 0.002. No log or page file prints 0.024 or 0.002 for this variant. The proposed correction is right; '0.023 and 0.001' would also be acceptable. A side note that does not affect this claim: the variant p-values have 2001 as their denominator, so they appear to come from about 2,000 permutation draws, while the methods text says 10,000. The primary Qwen p (40/10001) does match 10,000 draws."
+   }
+  ]
+ },
+ {
+  "part": "discussion",
+  "checked": 38,
+  "reported": [
+   {
+    "file": "paper/paper.md",
+    "quote": "\"Theft becomes nostalgia\" predicts that faded memes return after about 30 years [18, pp. 22\u201323]",
+    "problem": "Wrong page citation. Pages 22\u201323 of the book say nothing about 30 years or theft turning into nostalgia. The passage is on PDF page 27. The quoted phrase is also not the book's exact wording: the book says enough time has passed \"for theft to become nostalgia\".",
+    "correction": "Faded memes may return after about 30 years, once enough time has passed \"for theft to become nostalgia\" [18, p. 27].",
+    "evidence": "data/book/book.txt, PDF PAGE 27: \"...revisit what was popular 30 years ago... enough time has passed for theft to become nostalgia.\" Searching every page for 'nostalgia' and '30 years' finds only page 27. Pages 22\u201323 cover the Pimpernel/Zorro/Iron Man copying chain and Netflix micro-genres.",
+    "severity": "wrong citation"
+   },
+   {
+    "file": "paper/paper.md",
+    "quote": "E1 shows the neurons drawing the same family.",
+    "problem": "Overclaim. Taylor's family on pp. 21\u201322 is the Scarlet Pimpernel, Zorro, Batman and Iron Man. Without names, E1 shows only Zorro carrying Batman's canon more strongly than Batman stories do. The Scarlet Pimpernel is a literary cousin, and Batman separates cleanly from those. Iron Man is out-scored by most Batman works. The paper's own section 3.4 says the lineage is only 'partly recovered'.",
+    "correction": "E1 partly recovers that family: without names, Zorro (along with The Bat and The Green Hornet) carries Batman's canon as strongly as Batman does, but the Scarlet Pimpernel and Iron Man do not.",
+    "evidence": "results/experiments.json qwen3-8b.E1.A_name_free: per_cousin_beaten_by Zorro 0.039, Iron Man 0.677 (llama: Zorro 0.0, Iron Man 0.5); literary_cousins AUC 0.893 (llama 0.953). results/canon.json per_cousin: Scarlet Pimpernel core_share 0.054. paper.md section 3.4: 'is partly recovered'.",
+    "severity": "unsupported claim"
+   },
+   {
+    "file": "paper/paper.md",
+    "quote": "That echoes the finding that people share core concepts but differ in their periphery [19].",
+    "problem": "The cited study [19] (Marti, Wu, Piantadosi and Kidd 2023, which the book cites as Kidd et al. 2023) is about wide variation in people's concepts, even for common words: about 10 to 30 distinct clusters of answers. The book's own summary describes diversity, not a shared core with a varying periphery. The core/periphery framing goes beyond what the source says.",
+    "correction": "That echoes the finding that people's concepts of even common words vary widely, falling into roughly 10 to 30 distinct variants [19].",
+    "evidence": "data/book/book.txt PDF PAGE 186: \"individuals' associations with different words vary widely... responses differ significantly, with approximately 10 30 unique clusters of answer types (Kidd et al. 2023)\". The book says nothing about a shared core.",
+    "severity": "wrong citation"
+   },
+   {
+    "file": "paper/paper.md",
+    "quote": "The memes that pass from comic to film are mostly about what happens, not who it happens to.",
+    "problem": "Unsupported. No analysis looked at what the inherited optional memes are about. The name-removal result only shows that proper names carry little of the effect (16% vs 12%). Inherited memes could still be about characters described without names, such as the butler or the clown.",
+    "correction": "Proper names carry little of what passes from comic to film.",
+    "evidence": "results/experiments.json qwen3-8b.E2: primary mean_share_beating_source 0.164 vs original_upper_bound 0.124. Neither experiments.json nor any other results file breaks down inherited units by content type.",
+    "severity": "unsupported claim"
+   },
+   {
+    "file": "paper/paper.md",
+    "quote": "The illustrations on the companion page were generated with Gemini and depict no characters.",
+    "problem": "Incomplete. Besides the Gemini illustrations, the companion page shows public-domain images from Wikimedia Commons that do depict characters: an Offterdinger Puss in Boots illustration, a Scarlet Pimpernel cover, a lobby card for The Bat (1926) and a Mark of Zorro poster. Read as written, the sentence claims every illustration on the page is AI-generated and character-free.",
+    "correction": "The original illustrations and test images on the companion page were generated with Gemini and depict no characters. The page also reproduces a few public-domain images from Wikimedia Commons.",
+    "evidence": "report/index.html lines 561\u2013564 (img/pd_puss.jpg, pd_pimpernel.jpg, pd_bat1926.jpg, pd_zorro.jpg, captioned 'public domain'); report/index.html line 639: 'public-domain images from Wikipedia and Wikimedia Commons'.",
+    "severity": "minor"
+   }
+  ],
+  "verified": [
+   {
+    "confirmed": true,
+    "file": "paper/paper.md",
+    "quote": "\"Theft becomes nostalgia\" predicts that faded memes return after about 30 years [18, pp. 22\u201323]",
+    "correction": "Faded memes may return after about 30 years, once enough time has passed \"for theft to become nostalgia\" [18, p. 27].",
+    "reason": "I checked data/book/book.txt directly. Only PDF page 27 contains \"30 years\", \"nostalgia\" and the theft line. On that page the book says to \"revisit what was popular 30 years ago\" because \"enough time has passed for theft to become nostalgia\". The page ends with the printed number 27, so the PDF and printed page numbers match. Page 22 does say Iron Man will \"fade from relevance\" and a new generation will take up the next similar hero, so it loosely supports the idea that faded memes return. But pages 22\u201323 say nothing about 30 years or theft turning into nostalgia. They cover the Pimpernel/Zorro/Iron Man copying chain, the Zeitgeist Test and Netflix tags. The specific claim, 30 years plus the quoted phrase, is therefore cited to the wrong pages. The quote is also not the book's exact wording. The book never says \"Theft becomes nostalgia\"; it says \"for theft to become nostalgia\". The proposed correction fixes both problems and is accurate."
+   },
+   {
+    "confirmed": true,
+    "file": "paper/paper.md",
+    "quote": "E1 shows the neurons drawing the same family.",
+    "correction": "E1 does not draw that family. Without names, Iron Man carries Batman's canon about as strongly as a typical Batman story (it matches or beats 68% of them in Qwen, 50% in Llama), and so do Spider-Man, Daredevil and Superman. Batman stories out-score Zorro almost every time (96% and 100%). The Scarlet Pimpernel groups with the literary ancestors, which Batman's canon separates cleanly (AUC 0.89 and 0.95). The name-free vigilante-template core is shared by the masked-hero films in general (91% presence in Qwen), a wider group than Taylor's four.",
+    "reason": "The quote is at paper.md line 129. The family on book pp. 21\u201322 is confirmed in data/book/book.txt: the Scarlet Pimpernel, Zorro, Batman and Iron Man. Calling it an overclaim is right, but the checker's correction gets the direction backwards. In experiments.py line 144, per_cousin_beaten_by = 1 - M[:, j].mean(), where M[i,j] = (Batman work i's score > cousin j's score), from auc_matrix(pos=Batman, neg=cousin). So the value is the share of Batman works that the cousin matches or beats. A high value means the cousin carries the canon strongly. I checked this against the stored numbers: the 8 Qwen values average 0.4845 = 1 - AUC 0.5154, and the Llama values average 0.4555 = 1 - 0.5444. The ranking also matches canon.json core shares: Spider-Man 0.79, Iron Man 0.62, Zorro 0.054. Zorro's low score fits its 9-sentence summary and the length-only AUC of 0.76. So Zorro at 0.039 (Llama 0.0) means Batman works beat Zorro 96\u2013100% of the time, and Iron Man at 0.677 (Llama 0.5) means Iron Man carries the canon as strongly as Batman works. The Scarlet Pimpernel is a literary cousin (literary AUC 0.893 / 0.953; core share 0.054 with names). Of the other three family members, only Iron Man joins Batman, so 'drawing the same family' is wrong. The checker's correction (Zorro strong, Iron Man not) repeats the inverted reading that also appears in the next sentence of line 129, in the abstract (line 11) and in section 3.5 (line 97). Those lines say Batman stories 'rarely out-score Zorro (4%)' and out-score Spider-Man 88% of the time. Per the code, the true figures are 96% and 12%. Those sentences need fixing as well."
+   },
+   {
+    "confirmed": true,
+    "file": "paper/paper.md",
+    "quote": "That echoes the finding that people share core concepts but differ in their periphery [19].",
+    "correction": "That divergence echoes the finding that people's concepts of even common words vary widely, with at least 10 to 30 distinct variants [19].",
+    "reason": "The quote appears word for word at paper.md line 127. Reference 19 (line 167) is Marti, Wu, Piantadosi and Kidd 2023, \"Latent diversity in human concepts\", Open Mind 7, 79\u201392. The book cites the same paper as Kidd et al. 2023 (book.txt line 637). The book's only summary of it, on PDF page 186 (book.txt line 559), says people's associations with words \"vary widely\" and that answers fall into \"approximately 10 30 unique clusters\". It says nothing about a shared core with a varying periphery. The paper's own abstract (PMC10320827) agrees. It reports \"at least ten to thirty\" different variants of word meaning even for common nouns. It also says people do not know this variation exists and wrongly assume others share their meanings. Neither source mentions a core or a periphery, and the main finding is diversity even for common concepts, so the core/periphery wording is not a fair reading. It also overstates how far the source supports the agree-on-strong, diverge-on-weak pattern. The proposed correction is right in substance. I changed \"roughly\" to \"at least\" to match the source abstract, and I opened with \"That divergence\" so the sentence still links to the models disagreeing on weak memes."
+   },
+   {
+    "confirmed": true,
+    "file": "paper/paper.md",
+    "quote": "The memes that pass from comic to film are mostly about what happens, not who it happens to.",
+    "correction": "What passes from comic to film does not depend on proper names. (Or delete the sentence: the sentence before it, \"Names carried little of it.\", already states the supported point. The proposed \"Proper names carry little of what passes from comic to film\" is correct but repeats that sentence.)",
+    "reason": "The quote is in paper.md at line 133, and report/index.html makes the same claim (\"Most of the inheritance is in what happens, not in who it happens to\"). I recomputed the numbers from results/experiments.json. For qwen3-8b E2, the share of comics beating the source is 0.1638 without names and 0.1241 with names. For llama3.1-8b it is 0.1018 and 0.0757. So \"16% to 12%\" and \"Names carried little of it\" are right.\n\nNothing in the files breaks the inherited optional units down by what they are about. The E2 code in experiments.py only counts optional units present in both the comic and the adaptation, z-scores them and ranks them. No labels or content types are used, and no results or log file sorts inherited memes into events versus characters.\n\nThe name test also cannot tell \"what happens\" from \"who\". It only swapped proper names for X codes, and data/corpus_neutral.jsonl still describes characters by role:\n- 'butler' appears 9 times, 'billionaire' 5, 'comedian' 5 and 'clown' 6.\n- The name-free Killing Joke keeps \"the comedian\" whose skin is \"bleached ... chalk-white\".\n- The name-free Joker (2019) keeps \"a party clown and aspiring stand-up comedian\".\n\nThat pair is one of the strongest E2 links, with the source ranked 1st both with and without names. It could easily be carried by memes about who the character is, described without his name. So the result shows that proper names carry little of the effect, not that the inherited memes are mostly about events. The sentence goes beyond the evidence, and the name-free texts contradict the assumption it rests on."
+   },
+   {
+    "confirmed": true,
+    "file": "paper/paper.md",
+    "quote": "The illustrations on the companion page were generated with Gemini and depict no characters.",
+    "correction": "The original illustrations and test images on the companion page were generated with Gemini and depict no characters. The page also reproduces a few public-domain images from Wikimedia Commons.",
+    "reason": "I tried to refute this and couldn't. The quote is word for word in paper.md (line 177, the AI use paragraph). The companion page, report/index.html lines 561-564, shows four images that weren't made with Gemini: pd_puss.jpg, pd_pimpernel.jpg, pd_bat1926.jpg and pd_zorro.jpg, each captioned \"public domain\". I opened pd_puss.jpg and pd_zorro.jpg. The first is Offterdinger's illustration of Puss in Boots with the cat and the miller's son, and its alt text calls it an \"illustration\". The second is the 1940 poster showing Zorro and the film's actors. So the page has at least one non-Gemini illustration, and it shows characters. That makes the paper's sentence false as most readers will take it. One defence is that \"illustrations\" only means the commissioned art, since the page credit at line 639 lists \"public-domain images\" separately from \"Illustrations and test images generated with Gemini\". That split never appears in the paper, though, and Offterdinger's work is itself an illustration. The repo's own DATA_LICENSE.md agrees with the correction. It lists those public-domain files, with their Wikimedia Commons sources, separately from the Gemini-generated hero, meme and probe images. It describes the Gemini images as depicting \"no copyrighted characters\". The proposed correction is accurate. Its source attribution (Wikimedia Commons) matches DATA_LICENSE.md."
+   }
+  ]
+ },
+ {
+  "part": "page",
+  "checked": 142,
+  "reported": [
+   {
+    "file": "report/viz2.js",
+    "quote": "Superman, Spider-Man, Daredevil and Iron Man sit closest; the pre-1939 ancestors sit furthest.",
+    "problem": "The first half is right, but the pre-1939 ancestors do not sit furthest. In Qwen3-8B, Count of Monte Cristo (1844, mean distance 0.914) and Sherlock Holmes (1887, 0.927) are closer to Batman than The Shadow (1994, 0.937), Green Hornet (2011, 0.963) and Zorro (1940, 0.974). Llama shows the same pattern: Monte Cristo is at 0.923, ahead of Green Hornet at 0.933 and Zorro at 0.974. The two furthest works are Puss in Boots and Zorro, and Zorro is from 1940.",
+    "correction": "Superman, Spider-Man, Daredevil and Iron Man sit closest; Puss in Boots and Zorro sit furthest.",
+    "evidence": "results/phylo.json models.qwen3-8b.D and models.llama3.1-8b.D (mean distance to the 32 Batman works); also report/data2.js lineage['qwen3-8b'].closest_to_batman: Superman 0.876, Spider-Man 0.888, Daredevil 0.889, Iron Man 0.903, Count of Monte Cristo 0.914, Sherlock Holmes 0.927, The Shadow 0.937, Scarlet Pimpernel 0.94, Dracula 0.942, The Bat 0.954, Green Hornet 0.963, Zorro 0.974, Puss in Boots 0.986",
+    "severity": "wrong claim"
+   },
+   {
+    "file": "report/viz2.js",
+    "quote": "After Spider-Man, Iron Man's nearest works are Nolan's Batman films (Qwen: ${q.nearest[\"Iron Man\"].slice(0, 3).join(\", \")})",
+    "problem": "The Qwen list printed in the same sentence reads 'Spider-Man, Batman v Superman, Batman Begins'. Batman v Superman is Zack Snyder's film, not one of Nolan's, and Superman is Iron Man's 4th-nearest work in Qwen. The claim holds for Llama only, where the order is Spider-Man, Batman Begins, Dark Knight Rises.",
+    "correction": "After Spider-Man, Iron Man's nearest works are recent Batman films, among them Nolan's (Qwen: Spider-Man, Batman v Superman, Batman Begins; Llama: Spider-Man, Batman Begins, Dark Knight Rises).",
+    "evidence": "report/data2.js lineage['qwen3-8b'].nearest['Iron Man'] = [Spider-Man, Batman v Superman, Batman Begins]; results/phylo.json qwen3-8b D gives the order Spider-Man, Batman v Superman, Batman Begins, Superman, Dark Knight Rises; for llama3.1-8b it is Spider-Man, Batman Begins, Dark Knight Rises",
+    "severity": "wrong claim"
+   },
+   {
+    "file": "report/index.html",
+    "quote": "Four works were dropped for having summaries under 8 sentences.",
+    "problem": "Only three works were dropped as too short: Batman and Robin (serial) with 2 sentences, Moon Knight (miniseries) with 1 and Pulp Fiction with 7. The fourth, The Curse of Capistrano, was dropped because its article had no plot section.",
+    "correction": "Four works were dropped: three had summaries under 8 sentences and one had no plot section.",
+    "evidence": "data_fetch.log: 'TOO SHORT (2 sentences): Batman and Robin (serial)', 'TOO SHORT (1 sentences): Moon Knight (miniseries)', 'TOO SHORT (7 sentences): Pulp Fiction', 'MISSING plot section: The Curse of Capistrano' (fetch_corpus.py logs MISSING and TOO SHORT as separate cases)",
+    "severity": "wrong number"
+   },
+   {
+    "file": "report/index.html",
+    "quote": "so it shares no words with the original.",
+    "problem": "Three of the 31 rewordings share words with their originals, so 'no words' is too strong. The test's own TF-IDF overlap is non-zero for Two-Face's coin (0.086, both use 'let'), The butler who raised him (0.043, 'family') and Lucius Fox (0.044, 'company'). Two-Face's coin is one of the four memes the page highlights as surviving in both models. The same overclaim appears in the tile 'reworded with no words in common' and in the table header in viz.js.",
+    "correction": "so it shares almost no words with the original (no content words for 28 of 31; three keep one common word such as 'let', 'family' or 'company').",
+    "evidence": "results/wording.json memes[].word_overlap: 0.043 (The butler who raised him), 0.086 (Two-Face's coin), 0.044 (Lucius Fox), 0.0 for the other 28. The shared tokens come from comparing the original and reworded text.",
+    "severity": "wrong claim"
+   },
+   {
+    "file": "report/index.html",
+    "quote": "called Batman \"the vigilante\" 319 times",
+    "problem": "The rewriter outputs do not give 319 under any count I tried. In the Batman works' rewrites, lowercase 'the vigilante' appears 276 times and 'The/the vigilante' 366 times. 347 sentences contain 'vigilante', and 331 diff spans replace a 'Batman' span with 'the vigilante'. No script or log records 319.",
+    "correction": "Recount from data/anon and state the method (for example, 'called Batman \"the vigilante\" more than 300 times'), or give the exact count.",
+    "evidence": "data/anon/batch_*.jsonl, Batman-group works: 276 ('the vigilante', case-sensitive), 366 ('[Tt]he vigilante'), 384 (any 'vigilante'), 331 (Batman spans replaced by 'the vigilante' in a word diff against data/corpus.jsonl)",
+    "severity": "unsupported claim"
+   },
+   {
+    "file": "report/index.html",
+    "quote": "E2 counts only comics published before the film.",
+    "problem": "Comics from the same year as the film are also eligible. Elsewhere the page says 'only comics published no later than the film', which is how the test actually works. Batman '89 has 6 eligible comics, and two of them are from 1989: Arkham Asylum (comic) and Gotham by Gaslight.",
+    "correction": "E2 counts only comics published no later than the film.",
+    "evidence": "results/experiments.json qwen3-8b.E2.primary.rows: Batman '89 n_comics = 6. data/corpus.jsonl comics up to 1989: Dark Knight Returns 1986, Year One 1987, A Death in the Family 1988, The Killing Joke 1988, Arkham Asylum (comic) 1989, Gotham by Gaslight 1989. paper.md 2.5 also says 'no later than'.",
+    "severity": "minor"
+   },
+   {
+    "file": "report/index.html",
+    "quote": "first appears with The Killing Joke (1988) and spreads to the 1989 film, the Arkham games and White Knight.",
+    "problem": "A Death in the Family (also 1988) carries the vat meme too, so The Killing Joke shares the first appearance with it. The meme is also missing from Arkham City, so it does not reach all of 'the Arkham games'. It is found only in Arkham Asylum and Arkham Knight, plus Batman R.I.P. and Under the Red Hood.",
+    "correction": "first appears in 1988 (The Killing Joke and A Death in the Family) and spreads to the 1989 film, Arkham Asylum and Arkham Knight, and White Knight.",
+    "evidence": "report/data2.js swim 'Fell into a vat of chemicals'.batman = A Death in the Family 1988, The Killing Joke 1988, Batman '89, Batman R.I.P., Arkham Asylum (game), Under the Red Hood, Arkham Knight, White Knight (no Arkham City)",
+    "severity": "minor"
+   },
+   {
+    "file": "report/index.html",
+    "quote": "stays through the Nolan films and every Arkham game.",
+    "problem": "The Ra's al Ghul meme is missing from The Dark Knight (2008), so it is in two of the three Nolan films, not all of them. The Arkham part is correct.",
+    "correction": "appears in Batman Begins and The Dark Knight Rises and in every Arkham game.",
+    "evidence": "report/data2.js swim \"Ra's al Ghul\".batman = Hush, Batman Begins, Batman R.I.P., Arkham Asylum (game), Under the Red Hood, Arkham City, Dark Knight Rises, Arkham Knight (no The Dark Knight)",
+    "severity": "minor"
+   }
+  ],
+  "verified": [
+   {
+    "confirmed": true,
+    "file": "report/viz2.js",
+    "quote": "Superman, Spider-Man, Daredevil and Iron Man sit closest; the pre-1939 ancestors sit furthest.",
+    "correction": "Superman, Spider-Man, Daredevil and Iron Man sit closest; Puss in Boots and Zorro sit furthest.",
+    "reason": "The quote is on line 291 of viz2.js, in lineage(). I recomputed each cousin's mean distance to the 32 Batman works from results/phylo.json, using works[] to find the rows and models[m].D for the distances. The numbers match data2.js lineage closest_to_batman.\n\nQwen3-8B, closest first: Superman 0.876, Spider-Man 0.888, Daredevil 0.889, Iron Man 0.903, Monte Cristo (1844) 0.914, Sherlock Holmes (1887) 0.927, The Shadow (1994) 0.937, Pimpernel (1905) 0.940, Dracula (1897) 0.942, The Bat (1926) 0.954, Green Hornet (2011) 0.963, Zorro (1940) 0.974, Puss in Boots (1697) 0.986.\n\nLlama3.1-8B, closest first: Daredevil 0.876, Superman 0.886, Spider-Man 0.898, Iron Man 0.902, The Shadow 0.917, Monte Cristo 0.923, Green Hornet 0.933, Sherlock 0.935, Pimpernel 0.941, Dracula 0.947, The Bat 0.948, Zorro 0.974, Puss in Boots 0.979.\n\nThe first half of the sentence holds in both models: the same four films are closest.\n\nThe second half does not. The project uses \"pre-1939 ancestors\" to mean works written before 1939. index.html says \"Ancestors written before 1939\"; the paper lists five literary ancestors and puts Zorro (1940), The Shadow and Green Hornet among the masked-hero films. On that reading, Monte Cristo and Sherlock Holmes are closer than The Shadow, Green Hornet and Zorro in Qwen. In Llama, Monte Cristo is closer than Green Hornet and Zorro. Zorro is second furthest in both models, and the bullet above already calls it one of the most distant.\n\nI also tried two other readings, and neither saves the sentence:\n- **Group averages:** the pre-1939 group is not consistently further. Qwen gives 0.944 for that group against 0.958 for Zorro, Shadow and Hornet; Llama gives 0.946 against 0.941.\n- **Character debut years:** this would make Zorro, Shadow and Hornet pre-1939 too. It would also make Superman (1938) pre-1939 and not a descendant, which contradicts the bullet's heading.\n\nThe proposed correction holds in both models: the same four are closest, and the two furthest are Puss in Boots and Zorro."
+   },
+   {
+    "confirmed": true,
+    "file": "report/viz2.js",
+    "quote": "After Spider-Man, Iron Man's nearest works are Nolan's Batman films (Qwen: ${q.nearest[\"Iron Man\"].slice(0, 3).join(\", \")})",
+    "correction": "After Spider-Man, Iron Man's nearest works are recent Batman films, mostly Nolan's (Qwen: ${q.nearest[\"Iron Man\"].slice(0, 3).join(\", \")}; Llama: ${l.nearest[\"Iron Man\"].slice(0, 3).join(\", \")})",
+    "reason": "The quote is at line 289 of viz2.js. The Qwen list it prints comes from report/data2.js lineage['qwen3-8b'].nearest['Iron Man'], which is [Spider-Man, Batman v Superman, Batman Begins]. Batman v Superman is the 2016 corpus film (id 26), Zack Snyder's, not Nolan's, so the sentence contradicts its own list. I recomputed the order from the Iron Man row of results/phylo.json models.qwen3-8b.D: Spider-Man 0.869, Batman v Superman 0.876, Batman Begins 0.880, then Dark Knight Rises and Superman tied at 0.884. So in Qwen the nearest work after Spider-Man is not a Nolan film, and the claim cannot be read as a rounding. In Llama the order is Spider-Man 0.873, Batman Begins 0.876, Dark Knight Rises 0.878, then Batman & Robin 0.879, so the claim holds there for the top two only. One small fix to the other checker's evidence: Superman is not clearly 4th in Qwen. It ties with Dark Knight Rises at the stored 3-decimal precision. That does not change the verdict. I changed the correction to say 'mostly Nolan's', which is true in both models (2 of the next 3 works are Nolan's), and I kept the template expressions. The variable `l` (the Llama lineage) is already defined in lineage()."
+   },
+   {
+    "confirmed": true,
+    "file": "report/index.html",
+    "quote": "Four works were dropped for having summaries under 8 sentences.",
+    "correction": "Three works were dropped for having summaries under 8 sentences.",
+    "reason": "The quote is on line 582 of report/index.html, and the count in it is wrong. But the proposed fix (\"four: three short plus one with no plot section\") is wrong too, because it relies on a stale log. data_fetch.log comes from an earlier run that wrote 113 works. In that run, Zorro was fetched from \"The Curse of Capistrano\", which had no plot section. In the current fetch_corpus.py, Zorro comes from \"The Mark of Zorro (1940 film)\" instead. The final run is in data_fetch2.log, which has the same 11:44 timestamp as data/corpus.jsonl and says \"wrote 114 works\". Its only drops are three \"TOO SHORT\" lines: Batman and Robin (serial) with 2 sentences, Moon Knight (miniseries) with 1 and Pulp Fiction with 7. There is no MISSING line. I loaded fetch_corpus.py in Python: it lists 33 Batman works, 14 cousins and 70 baseline films, 117 in total. The corpus holds 114 (32 Batman, 13 cousins, 69 baseline). So exactly 3 works were dropped, all for having fewer than 8 sentences. The Zorro row in the corpus is \"The Mark of Zorro (1940 film)\" with 9 sentences, so Capistrano was replaced, not dropped. paper/paper.md has the same \"Four works were dropped\" error."
+   },
+   {
+    "confirmed": true,
+    "file": "report/index.html",
+    "quote": "so it shares no words with the original.",
+    "correction": "so it shares almost no words with the original (no content words for 28 of 31; three keep one common word: 'let', 'family' or 'company').",
+    "reason": "I recomputed this from results/wording.json and wording_test.py, and the claim holds. The test measures overlap with TF-IDF after removing English stop words (wording_test.py line 254). On that measure, 3 of the 31 rewordings are above zero: The butler who raised him (0.043, 'family' / \"family's\"), Two-Face's coin (0.086, 'let') and Lucius Fox (0.044, 'Company' / \"company's\"). The other 28 score 0.0. Read literally, the claim is wrong even more often: 30 of 31 rewordings share at least one function word with their original (a, the, and), and only 'A bomb' shares none. The quote appears at index.html line 517. It is not just loose rounding. The page's own test finds a shared word in three cases, and one of them, Two-Face's coin, is among the memes whose rewording fired above the neutral maximum in both Qwen and Llama. The same overclaim also appears in the tile at line 432 ('reworded with no words in common') and in the viz.js line 351 table header ('no words in common with the original'). I made one small change to the proposed correction: a colon instead of 'such as', since those three are the only shared content words."
+   },
+   {
+    "confirmed": true,
+    "file": "report/index.html",
+    "quote": "called Batman \"the vigilante\" 319 times",
+    "correction": "Use 'called Batman \"the vigilante\" 331 times', or the rounder 'more than 300 times'. 331 counts the \"[Tt]he vigilante\" occurrences that the rewriter put in place of a span containing \"Batman\", found by the same word-level diff that make_neutral.py uses. Across the 32 Batman rewrites, \"the vigilante\" (either case) appears 366 times in all, but about 16 of those replace \"Red Hood\", not Batman. paper/paper.md line 35 has the same 319 and needs the same fix (\"used 331 times in Batman rewrites\").",
+    "reason": "The quote is in report/index.html at line 403. First I checked that data/anon is the final rewrite: re-running make_neutral.py in memory gives exactly the 9,156 spans the paper states. Then I recounted the 32 Batman-group works every way I could think of. Lowercase \"the vigilante\": 276. \"[Tt]he vigilante\": 366. Any \"vigilante\": 384. Sentences containing \"vigilante\": 347. Every one of these matches the first checker. In the diff against data/corpus.jsonl, the \"[Tt]he vigilante\" occurrences inside spans whose source contains \"Batman\" total 331, which also matches the first checker. Spans where a lone \"Batman\" or \"Batman's\" became exactly \"the vigilante\" total 302. Sentence-level variants (rewritten sentence where the original contains \"Batman\", net occurrences added over the original) give 267, 273, 350, 354 and 362. The nearest result is 318, but that only comes from leaving out possessives (\"the vigilante's\"), and those still call Batman the vigilante. No script or log contains 319, and no reasonable method reproduces it. The figure is stated as an exact count and the data contradicts it: the most direct reading (Batman replaced by \"the vigilante\") gives 331, and the plain occurrence count gives 366. The part about leaking identity holds, since the Batman rewrites use \"the vigilante\" 366 times against 16 in the cousin works and 0 in the baseline works. Only the number needs fixing."
+   },
+   {
+    "confirmed": true,
+    "file": "report/index.html",
+    "quote": "E2 counts only comics published before the film.",
+    "correction": "E2 counts only comics published no later than the film.",
+    "reason": "The quote appears in the \"Breaking circular loops\" list item in report/index.html. The test code in experiments.py (line 206) filters candidates with `year[c] <= year[a]`, so same-year comics count. I recomputed n_comics for every E2 primary row in results/experiments.json under both rules. The recorded values match the \"no later than\" (<=) rule in all 9 rows, and the strict \"before\" (<) rule fails 3 of them. Batman '89 (1989) has n=6 recorded: 6 under <=, but only 4 under <, because Gotham by Gaslight and Arkham Asylum (comic) are both from 1989. The Dark Knight (2008) has n=10 under <= and 9 under <, because Batman R.I.P. is from 2008. Dark Knight Rises (2012) has n=11 under <= and 10 under <, because Earth One is from 2012. The same page's E2 figure caption and paper/paper.md section 2.5 both already say \"no later than\". So the quoted sentence is a real factual error, not a rounding difference or another valid reading, and the proposed correction is right."
+   },
+   {
+    "confirmed": true,
+    "file": "report/index.html",
+    "quote": "first appears with The Killing Joke (1988) and spreads to the 1989 film, the Arkham games and White Knight.",
+    "correction": "first appears in 1988 (The Killing Joke and A Death in the Family) and spreads to the 1989 film, the Arkham Asylum and Arkham Knight games, and White Knight.",
+    "reason": "The quote is on line 478 of report/index.html, in the callout under the \"How memes spread\" swimlane. In data2.js, swim[9] ('Fell into a vat of chemicals', unit 448712) lists batman ids [4,5,8,19,20,21,25,28]. Mapped through canon.per_work, those are The Killing Joke 1988, A Death in the Family 1988, Batman '89, Batman R.I.P., Arkham Asylum (game), Under the Red Hood, Arkham Knight and White Knight. results/qwen3-8b/memes.json agrees (present = [4,5,8,19,20,21,25,28,41,88]). Arkham City (id 22, 2011) is in the corpus but does not carry the meme (z = 0.67, below the threshold). The meme is in only 2 of the 3 Arkham games, so \"the Arkham games\" overstates it, and the next callout says \"every Arkham game\" for Ra's al Ghul, which makes the two read as the same claim. That part is a real error.\n\nThe first-appearance complaint is weaker. \"First appears with The Killing Joke\" is not strictly false: the data only has years, The Killing Joke is one of the two 1988 works, it fires far more strongly (z 35.8 against 1.3 for A Death in the Family), and it was released earlier in 1988. Still, the swimlane code (viz2.js) marks every work from the first year as \"first appearance in this corpus\", so the chart flags both 1988 works and naming both is the more accurate wording.\n\nI changed the proposed correction to say \"the Arkham Asylum and Arkham Knight games\". A bare \"Arkham Asylum\" could be read as the 1989 Arkham Asylum comic (id 7), and that comic does not carry the meme. Leaving out R.I.P. and Under the Red Hood was fine in the original, since the list never claimed to be complete."
+   },
+   {
+    "confirmed": true,
+    "file": "report/index.html",
+    "quote": "stays through the Nolan films and every Arkham game.",
+    "correction": "appears in Batman Begins, The Dark Knight Rises and every Arkham game.",
+    "reason": "The quote is on line 479 of index.html, in the callout under the \"How memes spread through the lineage\" chart. The chart is drawn by swimlane() in report/viz2.js from PM2.swim. The \"Ra's al Ghul\" row lists batman ids [16, 17, 19, 20, 21, 22, 23, 25]. I mapped these with report/data.json works: Hush, Batman Begins, Batman R.I.P., Arkham Asylum (game), Under the Red Hood, Arkham City, Dark Knight Rises, Arkham Knight. That matches the source family, unit 501280 in results/qwen3-8b/memes.json, whose present list is the same eight Batman works plus one non-Batman id. The Dark Knight (id 18, 2008) is a Nolan film in the corpus but is not in the list. Its text in data/corpus.jsonl never mentions Ra's al Ghul or the League of Shadows. So the meme is in 2 of the 3 Nolan films. \"Stays through the Nolan films\", paired with \"every Arkham game\", reads as being in each of them, which is wrong. A looser reading (\"lasts through the Nolan years\") is possible, but the parallel with \"every\" makes the stronger reading the natural one. The Arkham half holds: the corpus has three Arkham games (ids 20, 22, 25), and all three carry the meme. \"Arrives with Hush (2002)\" is also right, since Hush is the earliest work in the list. I tightened the proposed correction slightly so the sentence reads cleanly."
+   }
+  ]
+ }
+]
