@@ -1,0 +1,76 @@
+{
+ "model": "as power_sim_v2.py: per-story scores with plot random effects (SD 0.5), meme heterogeneity SD 0.12 in the latent shift; method B has no signal. Power = share of replicates with p below each threshold.",
+ "replicates": 200,
+ "thresholds": {
+  "holm_first_0.0167": 0.016666666666666666,
+  "holm_second_0.025": 0.025,
+  "alpha_0.05": 0.05
+ },
+ "H1_H2_reworded_delta0.05": {
+  "mean_auc_gap": 0.05589460784313726,
+  "holm_first_0.0167": 0.34,
+  "holm_second_0.025": 0.42,
+  "alpha_0.05": 0.54
+ },
+ "H1_H2_reworded_delta0.08": {
+  "mean_auc_gap": 0.06519607843137255,
+  "holm_first_0.0167": 0.455,
+  "holm_second_0.025": 0.525,
+  "alpha_0.05": 0.65
+ },
+ "H1_H2_reworded_delta0.1": {
+  "mean_auc_gap": 0.07451593137254901,
+  "holm_first_0.0167": 0.525,
+  "holm_second_0.025": 0.63,
+  "alpha_0.05": 0.765
+ },
+ "S_coded_delta0.05": {
+  "mean_auc_gap": 0.05894607843137255,
+  "holm_first_0.0167": 0.24,
+  "holm_second_0.025": 0.31,
+  "alpha_0.05": 0.42
+ },
+ "S_coded_delta0.08": {
+  "mean_auc_gap": 0.0675,
+  "holm_first_0.0167": 0.35,
+  "holm_second_0.025": 0.425,
+  "alpha_0.05": 0.535
+ },
+ "S_coded_delta0.1": {
+  "mean_auc_gap": 0.07743872549019608,
+  "holm_first_0.0167": 0.445,
+  "holm_second_0.025": 0.51,
+  "alpha_0.05": 0.645
+ },
+ "H3_spec_0.05": {
+  "holm_first_0.0167": 0.1375,
+  "holm_second_0.025": 0.18375,
+  "alpha_0.05": 0.2975
+ },
+ "H3_spec_0.1": {
+  "holm_first_0.0167": 0.41375,
+  "holm_second_0.025": 0.49875,
+  "alpha_0.05": 0.6475
+ },
+ "H3_spec_0.15": {
+  "holm_first_0.0167": 0.81,
+  "holm_second_0.025": 0.8625,
+  "alpha_0.05": 0.9275
+ },
+ "overlap_k2_memes_each_way": {
+  "one_direction_power_0.05": 0.8,
+  "both_directions_power_0.05": 0.665
+ },
+ "overlap_k4_memes_each_way": {
+  "one_direction_power_0.05": 0.975,
+  "both_directions_power_0.05": 0.955
+ },
+ "overlap_k6_memes_each_way": {
+  "one_direction_power_0.05": 1.0,
+  "both_directions_power_0.05": 1.0
+ },
+ "overlap_k8_memes_each_way": {
+  "one_direction_power_0.05": 1.0,
+  "both_directions_power_0.05": 1.0
+ }
+}

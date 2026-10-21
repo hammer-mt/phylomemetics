@@ -1,0 +1,32 @@
+{
+ "intfloat/multilingual-e5-base": {
+  "model_type": "xlm-roberta",
+  "params_M": 278,
+  "hidden": 768,
+  "layers": 12,
+  "cpu_sent_per_s_at_64tok": 81,
+  "cpu_finite": true,
+  "mps_sent_per_s_at_64tok": 443,
+  "mps_finite": true
+ },
+ "intfloat/multilingual-e5-large": {
+  "model_type": "xlm-roberta",
+  "params_M": 560,
+  "hidden": 1024,
+  "layers": 24,
+  "cpu_sent_per_s_at_64tok": 18,
+  "cpu_finite": true,
+  "mps_sent_per_s_at_64tok": 134,
+  "mps_finite": true
+ },
+ "sentence-transformers/LaBSE": {
+  "model_type": "bert",
+  "params_M": 471,
+  "hidden": 768,
+  "layers": 12,
+  "cpu_sent_per_s_at_64tok": 62,
+  "cpu_finite": true,
+  "mps_sent_per_s_at_64tok": 432,
+  "mps_finite": true
+ }
+}

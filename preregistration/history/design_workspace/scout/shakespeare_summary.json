@@ -1,0 +1,241 @@
+{
+ "plays": {
+  "n": 40,
+  "with_plot_ge8": 40,
+  "sentences_capped40": 1438,
+  "sentences_uncapped": 1709,
+  "missing": [
+   "Cardenio (lost)",
+   "Love's Labour's Won (lost)"
+  ]
+ },
+ "articles_considered": 647,
+ "eligible": 177,
+ "primary": 141,
+ "eligible_breakdown": {
+  "in_dev": 1,
+  "mentions_source": 29,
+  "multi_play": 6
+ },
+ "primary_names_flags": {
+  "changes_names": 83,
+  "keeps_names": 47,
+  "partial": 11
+ },
+ "primary_loose_changes_names": 83,
+ "plays_with_ge2_loose": [
+  "Comedy of Errors",
+  "Hamlet",
+  "King Lear",
+  "Macbeth",
+  "Midsummer Night's Dream",
+  "Othello",
+  "Romeo and Juliet",
+  "Taming of the Shrew",
+  "The Tempest",
+  "Twelfth Night"
+ ],
+ "loose_sentences_capped40": 2234,
+ "primary_sentences_capped40": 3689,
+ "eligible_sentences_capped40": 4517,
+ "primary_evidence": {
+  "category+lead_sentence": 46,
+  "category+lead_sentence+wikidata_P144": 44,
+  "category": 34,
+  "category+wikidata_P144": 9,
+  "category+lead_sentence+wikidata_P941_inspired_by": 5,
+  "lead_sentence": 3
+ },
+ "by_play": {
+  "Romeo and Juliet": {
+   "eligible": 49,
+   "primary": 42,
+   "changes_names": 32,
+   "keeps_names": 7,
+   "partial": 3
+  },
+  "Hamlet": {
+   "eligible": 20,
+   "primary": 16,
+   "changes_names": 6,
+   "keeps_names": 9,
+   "partial": 1
+  },
+  "Macbeth": {
+   "eligible": 15,
+   "primary": 13,
+   "partial": 2,
+   "changes_names": 6,
+   "keeps_names": 5
+  },
+  "Taming of the Shrew": {
+   "eligible": 13,
+   "primary": 10,
+   "changes_names": 9,
+   "keeps_names": 1
+  },
+  "Othello": {
+   "eligible": 12,
+   "primary": 10,
+   "changes_names": 4,
+   "keeps_names": 4,
+   "partial": 2
+  },
+  "King Lear": {
+   "eligible": 10,
+   "primary": 9,
+   "changes_names": 6,
+   "keeps_names": 3
+  },
+  "Midsummer Night's Dream": {
+   "eligible": 9,
+   "primary": 5,
+   "changes_names": 2,
+   "keeps_names": 3
+  },
+  "Comedy of Errors": {
+   "eligible": 8,
+   "primary": 6,
+   "changes_names": 6
+  },
+  "Twelfth Night": {
+   "eligible": 8,
+   "primary": 7,
+   "changes_names": 4,
+   "partial": 1,
+   "keeps_names": 2
+  },
+  "The Tempest": {
+   "eligible": 7,
+   "primary": 6,
+   "changes_names": 4,
+   "keeps_names": 2
+  },
+  "Antony and Cleopatra": {
+   "eligible": 6,
+   "primary": 5,
+   "keeps_names": 4,
+   "changes_names": 1
+  },
+  "Henry V": {
+   "eligible": 5,
+   "primary": 1,
+   "partial": 1
+  },
+  "Henry IV Part 1": {
+   "eligible": 3
+  },
+  "Henry IV Part 2": {
+   "eligible": 3
+  },
+  "Richard III": {
+   "eligible": 3,
+   "primary": 1,
+   "partial": 1
+  },
+  "Much Ado": {
+   "eligible": 2,
+   "primary": 2,
+   "changes_names": 1,
+   "keeps_names": 1
+  },
+  "Love's Labour's Lost": {
+   "eligible": 2,
+   "primary": 2,
+   "changes_names": 1,
+   "keeps_names": 1
+  },
+  "Julius Caesar": {
+   "eligible": 2
+  },
+  "Merchant of Venice": {
+   "eligible": 2,
+   "primary": 1,
+   "keeps_names": 1
+  },
+  "Two Gentlemen": {
+   "eligible": 1,
+   "primary": 1,
+   "changes_names": 1
+  },
+  "As You Like It": {
+   "eligible": 1,
+   "primary": 1,
+   "keeps_names": 1
+  },
+  "Richard II": {
+   "eligible": 1
+  },
+  "Coriolanus": {
+   "eligible": 1,
+   "primary": 1,
+   "keeps_names": 1
+  },
+  "Henry VI Part 1": {
+   "eligible": 1
+  },
+  "Henry VI Part 2": {
+   "eligible": 1
+  },
+  "Henry VI Part 3": {
+   "eligible": 1
+  },
+  "Winter's Tale": {
+   "eligible": 1
+  },
+  "Titus Andronicus": {
+   "eligible": 1,
+   "primary": 1,
+   "keeps_names": 1
+  },
+  "Cymbeline": {
+   "eligible": 1,
+   "primary": 1,
+   "keeps_names": 1
+  }
+ },
+ "plays_with_primary_ge3": [
+  "Antony and Cleopatra",
+  "Comedy of Errors",
+  "Hamlet",
+  "King Lear",
+  "Macbeth",
+  "Midsummer Night's Dream",
+  "Othello",
+  "Romeo and Juliet",
+  "Taming of the Shrew",
+  "The Tempest",
+  "Twelfth Night"
+ ],
+ "plays_with_changes_names_primary": [
+  "Antony and Cleopatra",
+  "Comedy of Errors",
+  "Hamlet",
+  "King Lear",
+  "Love's Labour's Lost",
+  "Macbeth",
+  "Midsummer Night's Dream",
+  "Much Ado",
+  "Othello",
+  "Romeo and Juliet",
+  "Taming of the Shrew",
+  "The Tempest",
+  "Twelfth Night",
+  "Two Gentlemen"
+ ],
+ "in_dev_eligible": [
+  "The Lion King"
+ ],
+ "novel_adaptations_ge8": [
+  "Fool (novel)",
+  "Hag-Seed",
+  "Macbeth (Nesb\u00f8 novel)",
+  "Romiette and Julio",
+  "Something Rotten (Gratz novel)",
+  "The Dead Fathers Club",
+  "The Humbling",
+  "The Story of Edgar Sawtelle",
+  "Warm Bodies",
+  "Wyrd Sisters"
+ ]
+}

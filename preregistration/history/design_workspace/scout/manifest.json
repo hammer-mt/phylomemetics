@@ -1,0 +1,215 @@
+{
+ "plays.jsonl": {
+  "path": "<scratchpad>/prereg/scout/plays.jsonl",
+  "bytes": 432720,
+  "rows": 40,
+  "what": "40 Shakespeare plays: plot/synopsis section (fetch_corpus.py rule), sentences, principal names (raw text, not analysed)"
+ },
+ "category_members.json": {
+  "path": "<scratchpad>/prereg/scout/category_members.json",
+  "bytes": 81201,
+  "rows": null,
+  "what": "Shakespeare film/TV category tree crawl (46 categories)"
+ },
+ "films_all.jsonl": {
+  "path": "<scratchpad>/prereg/scout/films_all.jsonl",
+  "bytes": 3276061,
+  "rows": 657,
+  "what": "every article in the Shakespeare category tree, named extras and Wikidata P144/P941 derivatives, with plot text and attribution metadata"
+ },
+ "shakespeare_wikidata.json": {
+  "path": "<scratchpad>/prereg/scout/shakespeare_wikidata.json",
+  "bytes": 86098,
+  "rows": null,
+  "what": "Wikidata P144 based-on / P941 inspired-by links to each play"
+ },
+ "shakespeare_adaptations.jsonl": {
+  "path": "<scratchpad>/prereg/scout/shakespeare_adaptations.jsonl",
+  "bytes": 433283,
+  "rows": 647,
+  "what": "per-article selection metadata: documented sources and evidence type, is_film, names kept, source mentions, DEV overlap, eligible/primary flags (no text)"
+ },
+ "shakespeare_summary.json": {
+  "path": "<scratchpad>/prereg/scout/shakespeare_summary.json",
+  "bytes": 4330,
+  "rows": null,
+  "what": "counts for T1d"
+ },
+ "lang_check_qwen3-8b.json": {
+  "path": "<scratchpad>/prereg/scout/lang_check_qwen3-8b.json",
+  "bytes": 4626,
+  "rows": null,
+  "what": "made-up sentences: token cost, spans, back-translation, continuation (zh, ja, ru, hi)"
+ },
+ "lang_check_llama3.1-8b.json": {
+  "path": "<scratchpad>/prereg/scout/lang_check_llama3.1-8b.json",
+  "bytes": 5287,
+  "rows": null,
+  "what": "same for Llama"
+ },
+ "lang_check2_qwen3-8b.json": {
+  "path": "<scratchpad>/prereg/scout/lang_check2_qwen3-8b.json",
+  "bytes": 2588,
+  "rows": null,
+  "what": "made-up passage: translation and 3-question QA (zh, ja, ru, hi)"
+ },
+ "lang_check2_llama3.1-8b.json": {
+  "path": "<scratchpad>/prereg/scout/lang_check2_llama3.1-8b.json",
+  "bytes": 2459,
+  "rows": null,
+  "what": "same for Llama"
+ },
+ "lang_check3_qwen3-8b.json": {
+  "path": "<scratchpad>/prereg/scout/lang_check3_qwen3-8b.json",
+  "bytes": 2467,
+  "rows": null,
+  "what": "made-up text: es/de/fr/th token cost and spans; 24-sentence story QA in en/zh/es"
+ },
+ "lang_check3_llama3.1-8b.json": {
+  "path": "<scratchpad>/prereg/scout/lang_check3_llama3.1-8b.json",
+  "bytes": 2922,
+  "rows": null,
+  "what": "same for Llama"
+ },
+ "embed_arch_check.json": {
+  "path": "<scratchpad>/prereg/scout/embed_arch_check.json",
+  "bytes": 694,
+  "rows": null,
+  "what": "earlier encoder architecture check (3 models)"
+ },
+ "t3/category_members.json": {
+  "path": "<scratchpad>/prereg/scout/t3/category_members.json",
+  "bytes": 1130717,
+  "rows": null,
+  "what": "T3 category crawl: 21 roots, buckets and category paths per article"
+ },
+ "t3/candidates.jsonl": {
+  "path": "<scratchpad>/prereg/scout/t3/candidates.jsonl",
+  "bytes": 27208644,
+  "rows": 3963,
+  "what": "every T3 candidate article: metadata plus raw plot section and sentences (not analysed)"
+ },
+ "t3/random_population.json": {
+  "path": "<scratchpad>/prereg/scout/t3/random_population.json",
+  "bytes": 5004529,
+  "rows": null,
+  "what": "random-film population: direct members of Category:YYYY films 1915-2024 with year"
+ },
+ "t3/random_films.jsonl": {
+  "path": "<scratchpad>/prereg/scout/t3/random_films.jsonl",
+  "bytes": 9426533,
+  "rows": 2790,
+  "what": "hash-ordered walk of the population; accepted films carry raw plot text"
+ },
+ "t3/pool_summary.json": {
+  "path": "<scratchpad>/prereg/scout/t3/pool_summary.json",
+  "bytes": 5273,
+  "rows": null,
+  "what": "T3 counts by bucket, kind, decade; random-sample counts"
+ },
+ "t3/pool_eligible.jsonl": {
+  "path": "<scratchpad>/prereg/scout/t3/pool_eligible.jsonl",
+  "bytes": 593111,
+  "rows": 2416,
+  "what": "eligible T3 pool works (metadata only)"
+ },
+ "relatives/wikidata.json": {
+  "path": "<scratchpad>/prereg/scout/relatives/wikidata.json",
+  "bytes": 43700,
+  "rows": null,
+  "what": "Wikidata P941/P144/P4969 links into and out of Batman"
+ },
+ "relatives/wikipedia_evidence.json": {
+  "path": "<scratchpad>/prereg/scout/relatives/wikipedia_evidence.json",
+  "bytes": 79073,
+  "rows": null,
+  "what": "influence sentences from Batman-related articles; full-text search hits for derivative phrases"
+ },
+ "relatives/documented_relatives.json": {
+  "path": "<scratchpad>/prereg/scout/relatives/documented_relatives.json",
+  "bytes": 35690,
+  "rows": null,
+  "what": "curated ground truth: relation, strength, evidence sentences, candidate works with plot sizes"
+ },
+ "relatives/works.jsonl": {
+  "path": "<scratchpad>/prereg/scout/relatives/works.jsonl",
+  "bytes": 682489,
+  "rows": 80,
+  "what": "fetched works of documented relatives with raw plot text"
+ },
+ "tools/meta.json": {
+  "path": "<scratchpad>/prereg/scout/tools/meta.json",
+  "bytes": 10705,
+  "rows": null,
+  "what": "HF model metadata (sha, licence, weight size) and PyPI metadata for packages not installed"
+ },
+ "tools/timing.json": {
+  "path": "<scratchpad>/prereg/scout/tools/timing.json",
+  "bytes": 4530,
+  "rows": null,
+  "what": "dummy-input timings: TF-IDF, presence, LSA, LDA, PCA+HDBSCAN, k-means, c-TF-IDF, 8 encoders (random init)"
+ },
+ "tools/llm_timing_qwen3-8b.json": {
+  "path": "<scratchpad>/prereg/scout/tools/llm_timing_qwen3-8b.json",
+  "bytes": 2096,
+  "rows": null,
+  "what": "made-up story: judge per meme (no cache, cached prefix), multi-meme call, flat and recursive summaries"
+ },
+ "tools/llm_timing_llama3.1-8b.json": {
+  "path": "<scratchpad>/prereg/scout/tools/llm_timing_llama3.1-8b.json",
+  "bytes": 2159,
+  "rows": null,
+  "what": "same for Llama"
+ },
+ "tools/neuron_timing_qwen3-8b.json": {
+  "path": "<scratchpad>/prereg/scout/tools/neuron_timing_qwen3-8b.json",
+  "bytes": 479,
+  "rows": null,
+  "what": "made-up story: forward + per-work top-3 aggregate on GPU vs full copy"
+ },
+ "tools/neuron_timing_llama3.1-8b.json": {
+  "path": "<scratchpad>/prereg/scout/tools/neuron_timing_llama3.1-8b.json",
+  "bytes": 496,
+  "rows": null,
+  "what": "same for Llama"
+ },
+ "raw/pages/": {
+  "path": "<scratchpad>/prereg/scout/raw/pages",
+  "files": 7462,
+  "what": "cached Wikipedia API responses (extract, categories, pageprops)"
+ },
+ "scripts": {
+  "path": "<scratchpad>/prereg/scripts",
+  "files": [
+   "__pycache__",
+   "catinfo.py",
+   "catsearch.py",
+   "crawl.py",
+   "embed_arch_check.py",
+   "films.py",
+   "films_select.py",
+   "lang_check.py",
+   "lang_check2.py",
+   "lang_check3.py",
+   "llm_timing.py",
+   "manifest.py",
+   "neuron_timing.py",
+   "plays.py",
+   "relatives_build.py",
+   "relatives_wd.py",
+   "relatives_wp.py",
+   "shakes_extra.py",
+   "shakes_select.py",
+   "shakes_wikidata.py",
+   "t3_common.py",
+   "t3_crawl.py",
+   "t3_fetch.py",
+   "t3_random.py",
+   "t3_summary.py",
+   "tools_meta.py",
+   "tools_timing.py",
+   "wiki.py",
+   "wikidata.py"
+  ]
+ }
+}

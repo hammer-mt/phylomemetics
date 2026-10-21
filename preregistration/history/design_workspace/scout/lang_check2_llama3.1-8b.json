@@ -1,0 +1,18 @@
+{
+ "zh": {
+  "translation": "The lighthouse keeper's daughter went missing during a storm, and her estranged brother returned to the island, discovering that the harbor master had been falsifying ship records. X1 hid the stolen letter in a small church, but X3 followed her there and threatened to tell the bishop. The old fisherman refused to sell his boat, so the developer set his workshop on fire.",
+  "qa": "1. The lighthouse keeper's daughter went missing during a storm.\n2. X3 threatens to tell the bishop.\n3. The developers set fire to the workshop because the old fisherman refused to sell his boat."
+ },
+ "ja": {
+  "translation": "During a storm, the lighthouse keeper's daughter went missing, and her estranged brother returned to the island, discovering that the harbor master had been falsifying ship records. X1 hid the stolen letter in the chapel, but X3 followed her and took it to the bishop, threatening him. The developers, who had been refused by an elderly fisherman when he refused to sell his boat, set fire to his workshop.",
+  "qa": "1. The lighthouse keeper's daughter went missing during a storm.\n2. X3 threatens to tell the bishop.\n3. The old fisherman refused to sell his boat."
+ },
+ "ru": {
+  "translation": "After the lighthouse keeper's daughter goes missing during a storm, her estranged brother returns to the island and discovers that the harbor master has been falsifying ship records. X1 hides the stolen letters in a chapel, but X3 follows her there and threatens to tell the bishop. An old fisherman refuses to sell his boat, and the developers set fire to his workshop instead.",
+  "qa": "1. The daughter of the lighthouse keeper went missing during a storm.\n2. X3 threatens to tell the bishop.\n3. The developers set fire to the workshop because the old fisherman refused to sell his boat."
+ },
+ "hi": {
+  "translation": "After the lighthouse guardian's daughter goes missing during the storm, her estranged brother returns to the island and discovers that the harbor official has been falsifying ship records. X1 hides the stolen letters in the church, but X3 follows her there and threatens to tell the bishop. The old fisherman refuses to sell his boat, so the builder sets his workshop on fire.",
+  "qa": "1. The lighthouse keeper's daughter went missing during a storm.\n2. X3 threatens to tell the Bishop.\n3. The developers set fire to the workshop because the old fisherman refused to sell his boat."
+ }
+}

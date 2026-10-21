@@ -1,0 +1,221 @@
+{
+ "model": "power_sim_v3.py compared the neurons with ONE rival that had no signal, so its H1/H2 figures are upper bounds: H1 takes\nthe larger p over 2 rivals and H2 over 3, and H2 is a non-inferiority test at a 0.05 margin. This simulation runs the\nreal statistics (meme-level and plot-level sign flips, p = the larger, then the intersection-union p over the rivals)\nwith rivals that have signal of their own and are correlated with the neurons:",
+ "replicates": 500,
+ "rho": 0.5,
+ "tau_meme": 0.08,
+ "tau_method": 0.06,
+ "tau_plot": 0.3,
+ "check_against_analysis": {
+  "meme_stat": 0.07598039215686277,
+  "plot_stat": 0.07598039215686275,
+  "p_fast": 0.001999000499750125,
+  "p_analysis": 0.0009995002498750624
+ },
+ "H1_rivals0.65_0.65_gap0.05": {
+  "neurons_auc": 0.7000000000000001,
+  "mean_min_gap": 0.03782843137254902,
+  "iut_2_rivals": {
+   "holm_first_0.0167": 0.222,
+   "holm_second_0.025": 0.268,
+   "alpha_0.05": 0.422
+  },
+  "single_strongest_rival": {
+   "holm_first_0.0167": 0.39,
+   "holm_second_0.025": 0.45,
+   "alpha_0.05": 0.586
+  }
+ },
+ "H1_rivals0.65_0.65_gap0.075": {
+  "neurons_auc": 0.725,
+  "mean_min_gap": 0.06000735294117648,
+  "iut_2_rivals": {
+   "holm_first_0.0167": 0.548,
+   "holm_second_0.025": 0.646,
+   "alpha_0.05": 0.778
+  },
+  "single_strongest_rival": {
+   "holm_first_0.0167": 0.688,
+   "holm_second_0.025": 0.758,
+   "alpha_0.05": 0.872
+  }
+ },
+ "H1_rivals0.65_0.65_gap0.1": {
+  "neurons_auc": 0.75,
+  "mean_min_gap": 0.0841593137254902,
+  "iut_2_rivals": {
+   "holm_first_0.0167": 0.894,
+   "holm_second_0.025": 0.93,
+   "alpha_0.05": 0.966
+  },
+  "single_strongest_rival": {
+   "holm_first_0.0167": 0.934,
+   "holm_second_0.025": 0.962,
+   "alpha_0.05": 0.982
+  }
+ },
+ "H1_rivals0.65_0.65_gap0.125": {
+  "neurons_auc": 0.775,
+  "mean_min_gap": 0.10931862745098041,
+  "iut_2_rivals": {
+   "holm_first_0.0167": 0.986,
+   "holm_second_0.025": 0.992,
+   "alpha_0.05": 0.998
+  },
+  "single_strongest_rival": {
+   "holm_first_0.0167": 0.994,
+   "holm_second_0.025": 0.996,
+   "alpha_0.05": 0.998
+  }
+ },
+ "H1_rivals0.60_0.68_gap0.05": {
+  "neurons_auc": 0.7300000000000001,
+  "mean_min_gap": 0.04883823529411765,
+  "iut_2_rivals": {
+   "holm_first_0.0167": 0.404,
+   "holm_second_0.025": 0.464,
+   "alpha_0.05": 0.578
+  },
+  "single_strongest_rival": {
+   "holm_first_0.0167": 0.404,
+   "holm_second_0.025": 0.464,
+   "alpha_0.05": 0.578
+  }
+ },
+ "H1_rivals0.60_0.68_gap0.075": {
+  "neurons_auc": 0.755,
+  "mean_min_gap": 0.0724950980392157,
+  "iut_2_rivals": {
+   "holm_first_0.0167": 0.756,
+   "holm_second_0.025": 0.798,
+   "alpha_0.05": 0.878
+  },
+  "single_strongest_rival": {
+   "holm_first_0.0167": 0.756,
+   "holm_second_0.025": 0.798,
+   "alpha_0.05": 0.878
+  }
+ },
+ "H1_rivals0.60_0.68_gap0.1": {
+  "neurons_auc": 0.78,
+  "mean_min_gap": 0.09827696078431374,
+  "iut_2_rivals": {
+   "holm_first_0.0167": 0.968,
+   "holm_second_0.025": 0.98,
+   "alpha_0.05": 0.99
+  },
+  "single_strongest_rival": {
+   "holm_first_0.0167": 0.968,
+   "holm_second_0.025": 0.98,
+   "alpha_0.05": 0.99
+  }
+ },
+ "H1_rivals0.60_0.68_gap0.125": {
+  "neurons_auc": 0.805,
+  "mean_min_gap": 0.12150980392156861,
+  "iut_2_rivals": {
+   "holm_first_0.0167": 1.0,
+   "holm_second_0.025": 1.0,
+   "alpha_0.05": 1.0
+  },
+  "single_strongest_rival": {
+   "holm_first_0.0167": 1.0,
+   "holm_second_0.025": 1.0,
+   "alpha_0.05": 1.0
+  }
+ },
+ "H2_noninferiority_rivals0.75_gap-0.025": {
+  "neurons_auc": 0.725,
+  "mean_gap": -0.02429656862745098,
+  "iut_3_rivals": {
+   "holm_first_0.0167": 0.03,
+   "holm_second_0.025": 0.044,
+   "alpha_0.05": 0.078
+  },
+  "single_rival": {
+   "holm_first_0.0167": 0.138,
+   "holm_second_0.025": 0.17,
+   "alpha_0.05": 0.252
+  }
+ },
+ "H2_noninferiority_rivals0.75_gap0.0": {
+  "neurons_auc": 0.75,
+  "mean_gap": 0.0008978758169934638,
+  "iut_3_rivals": {
+   "holm_first_0.0167": 0.222,
+   "holm_second_0.025": 0.312,
+   "alpha_0.05": 0.442
+  },
+  "single_rival": {
+   "holm_first_0.0167": 0.476,
+   "holm_second_0.025": 0.542,
+   "alpha_0.05": 0.652
+  }
+ },
+ "H2_noninferiority_rivals0.75_gap0.025": {
+  "neurons_auc": 0.775,
+  "mean_gap": 0.024685457516339875,
+  "iut_3_rivals": {
+   "holm_first_0.0167": 0.624,
+   "holm_second_0.025": 0.708,
+   "alpha_0.05": 0.842
+  },
+  "single_rival": {
+   "holm_first_0.0167": 0.81,
+   "holm_second_0.025": 0.856,
+   "alpha_0.05": 0.932
+  }
+ },
+ "H2_noninferiority_rivals0.75_gap0.05": {
+  "neurons_auc": 0.8,
+  "mean_gap": 0.047848039215686276,
+  "iut_3_rivals": {
+   "holm_first_0.0167": 0.928,
+   "holm_second_0.025": 0.96,
+   "alpha_0.05": 0.98
+  },
+  "single_rival": {
+   "holm_first_0.0167": 0.966,
+   "holm_second_0.025": 0.98,
+   "alpha_0.05": 0.99
+  }
+ },
+ "S_coded_rival0.60_gap0.05": {
+  "mean_gap": 0.04527450980392156,
+  "bh_all_30_discoveries_0.05": 0.376,
+  "bh_10_of_30_0.0167": 0.22,
+  "bh_1_of_30_0.00167": 0.04
+ },
+ "S_coded_rival0.60_gap0.075": {
+  "mean_gap": 0.0682549019607843,
+  "bh_all_30_discoveries_0.05": 0.68,
+  "bh_10_of_30_0.0167": 0.498,
+  "bh_1_of_30_0.00167": 0.156
+ },
+ "S_coded_rival0.60_gap0.1": {
+  "mean_gap": 0.09006862745098039,
+  "bh_all_30_discoveries_0.05": 0.906,
+  "bh_10_of_30_0.0167": 0.778,
+  "bh_1_of_30_0.00167": 0.364
+ },
+ "S_coded_rival0.60_gap0.125": {
+  "mean_gap": 0.11469117647058823,
+  "bh_all_30_discoveries_0.05": 0.98,
+  "bh_10_of_30_0.0167": 0.92,
+  "bh_1_of_30_0.00167": 0.69
+ },
+ "overlap_k2_memes_one_way": {
+  "bh_all_30_discoveries_0.05": 0.92,
+  "bh_10_of_30_0.0167": 0.86,
+  "bh_1_of_30_0.00167": 0.315
+ },
+ "overlap_k4_memes_one_way": {
+  "bh_all_30_discoveries_0.05": 0.995,
+  "bh_10_of_30_0.0167": 0.98,
+  "bh_1_of_30_0.00167": 0.93
+ },
+ "overlap_k6_memes_one_way": {
+  "bh_all_30_discoveries_0.05": 1.0,
+  "bh_10_of_30_0.0167": 1.0,
+  "bh_1_of_30_0.00167": 1.0
+ }
+}

@@ -1,0 +1,239 @@
+{
+ "narrowed": {
+  "files_changed": [
+   "preregistration/PREREGISTRATION.md",
+   "preregistration/analysis.py",
+   "preregistration/test_analysis.py",
+   "preregistration/build_lists.py",
+   "preregistration/annotation_protocol.md",
+   "preregistration/planted_story_protocol.md",
+   "preregistration/drift_protocol.md",
+   "preregistration/translation_protocol.md",
+   "preregistration/name_removal_protocol.md",
+   "preregistration/DEVIATIONS.md",
+   "preregistration/memes_for_tracing.json",
+   "preregistration/culture_pool.json",
+   "preregistration/documented_relatives.json",
+   "preregistration/sources/relatives_documented_relatives.json",
+   "preregistration/history/README.md",
+   "preregistration/history/power_sim_v3.py",
+   "preregistration/history/power_v3.json"
+  ],
+  "changes": [
+   "Backup first: prereg/ is untracked in git, so the whole pre-narrowing folder was copied to <scratchpad>/prereg_backup_before_narrowing before any edit. Nothing was committed or published.",
+   "PREREGISTRATION.md rewritten as prereg-v3 (planted-meme stories only). Primary claims are H1, H2 and H3, with Holm over the three (thresholds 0.0167, 0.025, 0.05), and H6 as the decision rule outside Holm. Their statistics, SESOIs, falsifiers and verdict rules are unchanged. The numbers are kept and H4/H5 are explained as deferred. Updated to match: organising question (1.3), outcome readings, methods (lineage-only methods removed), multiple comparisons (BH families T2 and T6), power, checks and inconclusive rules (DEV reproduction, the audit pass rule, explicit-wording check, meme drop), what is reported whatever happens (one main table with the coded column and the overlap matrix), cost accounting (T2 sets only), deviations policy, budget, files table (this-phase versus deferred), what is not claimed, and the order of work and freezes (F0, F1, F1b, F2-T2, A7, F3).",
+   "New section 15, 'Deferred to a later phase (not pre-registered here)': one paragraph each for T1 (T1b drift with H4, T1c cross-language, T1d Shakespeare with H5, T1e), T3, T4, T5, T2-N and T2-zh. Their code, protocols and work lists stay in the folder marked deferred. Only T1a (DEV lineage grid) is still computed at F1, as DEV context, for the reproduction check and the hidden-state layer.",
+   "Design history: 14.1 to 14.3 kept. New 14.4 records Mike's 2026-10-21 decisions (narrowing, approved downloads, his own audit, no citation, coded condition and overlap kept prominent) and every change from v2. The 'why' paragraph says the decision is Mike's and lists the design's own numbers that fit it: ground truth by construction, 3 of the 5 v2 primary claims, about 4,300 of the 7,300 sessions, and H4/H5 power of 0.15 and 0.17.",
+   "Overlap analysis (new pre-stated secondary, analysis.overlap_analysis). Methods: 17 fixed ones (OVERLAP_METHODS). Each method gets an operating point per meme at 10% false positives on the control versions (operating_points), with 5% as a sensitivity. Cell level, every pair and condition (explicit, banned, implicit, coded, reworded): counts and shares found by both, by one only and by neither, with crossed meme-by-plot bootstrap 95% intervals; decoy false alarms are counted the same way. Meme level: 'finds' means at least 50% of a meme's planted cells, 'misses' at most 25%. Pairs involving the neurons get a plot-swap permutation test in each direction (10,000 draws). O1 (predicted): the neurons find memes that keywords:expanded-qwen3-8b and keywords:logreg miss, on reworded and coded versions. O2 (no prediction): both directions against the three H2 vectors, hidden states and the judge. Fixed reading rules say that cell-level disagreement alone is not evidence the methods find different things.",
+   "S-coded is now a clearly reported secondary (analysis._t2_coded). Prediction: the context-using methods (neurons, hidden states, the direct judge) beat the context-free ones (Qwen3-Embedding sentence embeddings, the evasion-aware keyword query) on coded twin AUC. It uses the same meme-level and plot-level sign flips as H1 (_t2_compare now takes a condition). It also gives a table of every method by condition with its coded-minus-banned difference.",
+   "analysis.py, other changes. VERSION is prereg-v3, with PRIMARY_CLAIMS, DEFERRED_CLAIMS and DEFERRED_COMMANDS. run_primary evaluates H1-H3 and H6 by default; the v2 five-claim path is kept and runs only on explicit request. The CLI refuses t1, t3, t4 and t5 without --deferred. Deferred section headers and runners are labelled DEFERRED, and run_t2 runs T2-zh and T2-N only with include_deferred=True. The T2-long test now matches its stated prediction (long-text loss minus single-story loss). H1/H2 now report per-tier differences. T6 moved to the T2 stories: the label test uses one sentence per plot and presence against t2_reference; run_cost reads only the T2 sets; run_t6 now applies BH to the T6 family. New human_audit_sample: 60 stories stratified 12/12/12/8/8/8, one per plot, 3 design memes plus 2 distractors each, 300 cells. _human_audit now handles 'unsure', distractors, per-version agreement and a 48-story completeness rule.",
+   "Book removed from every file outside history/: the tier A label; culture_pool roles and fields (book_family to orphan_family, book_tier/book_entity to family_tier/family_entity); relation and strength labels in documented_relatives.json and sources/relatives_documented_relatives.json, plus one deleted clause that cited the book; and the code in build_lists.py, analysis.py and test_analysis.py. The work lists were regenerated with build_lists.py lists and memes. The JSON diff shows only the renamed fields. history/README.md opens with the requested note, which does not name the book.",
+   "Protocols. drift, translation and name-removal protocols carry a deferred banner. annotation_protocol.md v3: A2 and A6 deferred; A3 now uses the T2 stories; A7 rewritten as Mike's 2-3 hour audit of T2 cells only, through a local standard-library page on 127.0.0.1, after F2-T2 and before any method runs. planted_story_protocol.md: Chinese versions deferred, audit updated. build_lists.py: new 'texts audit' stage writes data/human_audit_sample.json with no versions in it; deferred stages marked. DEVIATIONS.md: freeze table narrowed to T2.",
+   "Power recomputed (history/power_sim_v3.py, 200 replicates per case). H1/H2 at a true gap of about 0.056 AUC: 0.54 at alpha 0.05 and 0.34 at Holm's first threshold of 0.0167. H3 at 0.10: 0.65 and 0.41. S-coded at about 0.059: 0.42. Overlap test with 2 memes differing each way: 0.80. In the null world the overlap test rejected 0 of 200 times, so it is conservative.",
+   "Data-generation plan for T2 only (PREREGISTRATION.md section 3, with a per-step table of time, sessions and disk), in order: Step 0 approved installs and downloads (~1 h, ~20 GB; moved first because the pilot uses Gemma). P1 example sentences (~0.5 day, ~170 sessions). P2 pilot on 6 plots, plus writing and trying audit_page.py (~0.5 day, ~100 sessions). F0. Step 2 DEV features (~3 h, A5 34 sessions, ~42 GB). F1 dev-freeze and F1b t2_reference plus bench (~3 h, ~1 GB). Step 4 / F2-T2: 136 writers, ~1,630 reads plus Gemma, ~410 salience ratings, one repair round, then texts stories and long (~1 day, ~2,550 sessions, <50 MB). A7: texts audit, then Mike on the local page for 60 stories / 300 answers (~2.5 h), with the A4 upper bound (~110 sessions) in parallel and hidden from him. Step 5 TEST features (~16 h local, ~6 GB). F3. Step 6: t2, t6-prepare, label test (~1,310 sessions), t6, cost, primary. Total about 3 days elapsed, ~4,300 Claude sessions (~12M tokens), ~25 h of local model time, ~70 GB disk (170 GB free).",
+   "test_analysis.py: new unit tests (operating points; exact overlap counts, meme lists and tests in a planted world; O1 entry into the BH family; audit sample). New null world for the overlap test. Pipeline checks added for S-coded, the overlap matrix, O1, the T2-long prediction, T2-zh/T2-N not run, the audit with distractors and completeness, T6 on the T2 stories with BH, Holm over H1-H3 only, and the CLI refusing deferred tests. Deferred checks are kept and labelled '(deferred)'. Final run: 124 of 124 checks pass, 0 failures (30 deferred), pipeline 201 s, about 5 minutes in all."
+  ],
+  "primary_hypotheses": [
+   "H1 (T2, primary, Holm): on reworded planted stories (banned and implicit versions), Qwen3-8B neurons detect memes better than both the evasion-aware keyword analyst (keywords:expanded-qwen3-8b) and the lexical classifier (keywords:logreg). Statistic: mean over memes of the twin-AUC difference, intersection-union. Meme-level and plot-level sign flips are both required, and the neutral-meme difference must be above 0. SESOI 0.05 AUC. Falsified if the falsification test (H0: difference >= 0.05) rejects for either rival at both levels. Inconclusive if the audit (85%/95%), or the cross-family fallback (75%/90%), fails or the plain analyst's explicit twin AUC is below 0.75.",
+   "H2 (T2, primary, Holm): on reworded planted stories, neurons are non-inferior (margin 0.05 AUC) to emb:qwen3emb-4b, embwin:qwen3emb-4b and emb:e5-large (intersection-union, both sign-flip levels, neutral-subset difference above -0.05). If that holds, superiority is tested as a fixed sequence at H2's Holm level. Falsified if any vector is credibly better by more than 0.05.",
+   "H3 (T2, primary, Holm): the 11 DEV concept units are meme-specific in unrelated genres. Statistic: mean over units of [twin AUC on their own meme minus mean twin AUC on every other meme], tested against a permutation of meme labels across units. SESOI 0.05. Falsified if the falsification test (H0: specificity >= 0.05) rejects.",
+   "H6 (decision rule outside Holm): on reworded planted stories, no method dominates the neurons. Dominating means a one-sided 95% lower AUC bound at least the neurons' estimate while costing no more per story at 34 memes, with setup amortised over the 816 stories. If some method dominates, the neuron case rests on interpretability. H4 and H5 (lineage, v2) are deferred, keep their numbers and are not tested."
+  ],
+  "test_analysis_passes": true,
+  "open_questions": [
+   "The user's own relayed question, whether the existing paper is good enough to share internally before this second phase, is not answered by this step. This step only narrowed the pre-registration. Someone still needs to review paper for that question.",
+   "The 'why' in section 14.4 is not Mike's stated reasoning. The task text gave no reasons, so the entry says the decision is Mike's and lists design facts that fit it (ground truth by construction, cost, low H4/H5 power). Mike should confirm or replace that paragraph before F0.",
+   "audit_page.py does not exist yet. The pre-registration specifies it: a standard-library page on 127.0.0.1 that reads data/human_audit_sample.json, shows one story at a time with 5 elements and happens / does not happen / unsure, and writes data/human_audit.jsonl. It schedules writing and testing it at P2 on the pilot stories, so it is frozen at F0. The sampling rule is already frozen and tested (analysis.human_audit_sample, build_lists.py texts audit).",
+   "The A7 audit was restructured to fit Mike's 2-3 hours: 60 stories with 5 questions each (300 cells including 120 distractors), where v2 had 150 cells in 150 separate stories, which would take about 5 hours. The pass thresholds are unchanged, 'unsure' counts as disagreement, and the audit counts as done at 48 or more stories. Mike may want to check these choices.",
+   "Power is low at the SESOI under Holm over three: about 0.34 for H1/H2 at Holm's first threshold for a true 0.056 AUC gap, and 0.42 for S-coded at alpha 0.05. The overlap meme-level test is conservative (0 of 200 null rejections) and is built to detect memes one method finds and the other grossly misses, not small rate differences.",
+   "Possible cost savings not taken: the T6 label test is about 1,310 of the ~4,300 agent sessions, and batching several judge items per session would cut that a lot. The far example set is kept only for the ':far' detector variant, now that T2-N and T3 are deferred.",
+   "Pre-existing inconsistency left alone: build_lists.py dev_units reads ROOT/results/labels.json, wording.json and results/<model>/memes.json, not the robustness files copied into prereg/sources/ as its docstring and sources/LICENSE.md suggest.",
+   "The design workflow's original plan in <scratchpad>/prereg/design_result.json was not edited. The T2-only plan lives in PREREGISTRATION.md section 3."
+  ]
+ },
+ "review": {
+  "verdict": "needs changes",
+  "problems": [
+   {
+    "problem": "Audit blinding leak. Story ids are built as f\"{plot}-{version}\" (build_lists.py stage_stories, about line 975), for example 'P012-banned'. stage_audit writes these ids into data/human_audit_sample.json, and audit_page.py would have to look up the text in t2_stories.jsonl, which also holds version, plot, writer and reads. So 'no versions in it' (PREREGISTRATION.md section 3, annotation_protocol.md A7) is false, and blinding depends entirely on a page script that has not been written or tested yet.",
+    "severity": "major",
+    "fix": "In stage_audit, give each story an opaque id (A01 to A60, in presentation order) and write its numbered sentences and the 5 memes' labels and definitions into human_audit_sample.json, so the page never opens t2_stories.jsonl. analysis._human_audit gets the mapping back by re-running human_audit_sample, which is deterministic. Before F0, add a test_analysis check that no version name or plot id appears in the sample file or in the HTML the page serves."
+   },
+   {
+    "problem": "_human_audit (analysis.py lines 3194-3234) counts every row in human_audit.jsonl. A7 says an answer can be changed and the last one counts, so a changed answer is counted twice and n_cells goes up. n_stories, which feeds the 48-story completeness rule, counts any story with at least one answered cell. No test covers a changed answer, an 'unsure' answer or a partial story.",
+    "severity": "major",
+    "fix": "Keep only the last row per (story, meme). Define a story as answered when all 5 of its cells have an answer, and base 'complete' on that. Add unit tests for a changed answer, an unsure answer and a story with only some cells answered. Specify in A7 that the page appends rows, and test audit_page.py's output format before F0."
+   },
+   {
+    "problem": "The audit gate does not decide what the document says it decides. (a) The presence rule for H1-H3 includes the 24 coded cells, but H1-H3 use only banned and implicit versions. A poor coded condition, which is a secondary, can make all three primary claims inconclusive. (b) The absence rule needs at least 95% on 48 control and decoy cells, and an 'unsure' counts as disagreement, so 3 unsure or wrong answers fail H1-H3. Binomially, the gate fails 43% of the time if Mike's true agreement is 95%, and 17% if it is 97%. At 48 stories (about 38 absence cells) only 1 error is allowed. (c) The rule scores cells that Q4 and Q5 have already excluded from the analysis.",
+    "severity": "major",
+    "fix": "Apply the H1-H3 presence rule to banned and implicit cells only (72 cells). Make the coded cells the gate for S-coded. State the absence rule as a maximum error count, or as a one-sided 90% lower bound of at least 0.90, fixed before F0. Leave 'unsure' answers out of the denominator, report them, and fail the audit only if more than 10% of the gating cells are unsure. Compute the rule on cells the per-protocol analysis uses, and report all cells beside it."
+   },
+   {
+    "problem": "Operating points are unequal when scores tie. operating_points takes the (k+1)-th largest control score, so a method with many tied control scores (zero keyword hits) ends up below the 10% FPR. In the synthetic pipeline the realised control FPR was 0.000 for keywords:expanded-qwen3-8b and 0.046 for keywords:tfidf, against 0.096 for every other method. The test only checks FPR <= 0.10, so this passes. O1 then compares neurons at about 10% FPR with the H1 rival at a stricter FPR, which biases O1 towards the neurons. That contradicts 'every method thus works at the same false-positive rate'.",
+    "severity": "major",
+    "fix": "Break ties at the threshold by seeded randomisation, applied the same way to control and planted cells, so each method's expected control FPR is exactly floor(0.1n)/n. Alternatively, add a tiny seeded jitter to every score before thresholding. Change the test to require a realised FPR in [0.08, 0.10] for every method, including a tie-heavy keyword method."
+   },
+   {
+    "problem": "Overlap detection gives up the twin control. Each threshold comes from the controls of all 136 plots, so a method that picks up a meme from the frame of its plots (the frame-leak problem the twin design was built to fix) 'finds' that meme on planted cells even when it is blind to the slot. Its own-plot controls would also fire, but they are only 12 of the 136 controls behind the threshold.",
+    "severity": "major",
+    "fix": "For every method, meme and condition, also report the false-alarm rate on the meme's own-plot control versions at the same threshold. Make the pre-stated detection rule twin-consistent: a planted cell counts as detected only if its score is above the threshold and above its own plot's control score. Keep the current rule as a sensitivity. Add a frame-leak world to test_analysis showing that the leaky method is not credited."
+   },
+   {
+    "problem": "H6 counts neuron variants as rivals. run_cost and dominates compare every by_method entry, and _cost_family maps neurons:<m>:m5, :explicit, :far, :m1ctx, devunit:<m>, length_resid:<m> and the other model's neurons to the same 'neurons' cost family. So if Llama's neurons, or the m5 variant, have a lower bound at or above the Qwen neurons' estimate, H6 reports 'dominated' and the fixed reading says 'the neuron case rests on interpretability', which is wrong. The comparison also uses each method's own set of finite memes rather than a common one.",
+    "severity": "major",
+    "fix": "In run_cost, leave neuron-family entries (neurons:*, devunit:*, length_resid:*) and Claude-based entries out of the set of possible dominators. Compute every method's frontier AUC on the memes the neurons and the method share. Say this in section 9 and test it with a world where Llama's neurons beat Qwen's."
+   },
+   {
+    "problem": "The T2 Benjamini-Hochberg family differs between document and code, and is very large. Section 4 says O1 has four tests and O2 twenty, and that Llama's overlap tests are a replication. overlap_secondaries adds the Llama O1 and O2 tests to the same family. In the synthetic run the family had 200 tests: 82 two-sided pairwise contrasts, 47 S10 tests, the encoder chosen in hindsight, and qwen|llama contrasts in both directions. Easy discoveries, such as neurons against the length floor, loosen the q-values of the prominent secondaries (S-coded, O1, O2). S-coded's power is quoted at alpha 0.05, not at the threshold this family implies.",
+    "severity": "major",
+    "fix": "Pre-register a separate family for the prominent secondaries in Qwen: S-coded (6 tests), O1 (4) and O2 (20), 30 tests in all. Report the Llama versions as replications outside it. Move every pairwise contrast, the per-method S10 tests and the encoder chosen in hindsight to a descriptive or exploratory list. Remove the duplicated qwen|llama contrast. State the exact test count of each family in section 5 and assert it in test_analysis."
+   },
+   {
+    "problem": "The coded condition is not well defined in practice. No check confirms that a code term was introduced, used consistently, and appears only in the coded version: story_checks only bans the listed words, so a coded fill can just be a second banned fill. Q6 salience ratings cover banned, implicit and control fills but not coded ones, so the coded-against-control twins behind S-coded and the coded overlap are not checked for matched stakes. S-coded also has six tests but no rule for its headline claim.",
+    "severity": "major",
+    "fix": "Have the writer JSON return code_terms {meme_id: term}. Add a script check Q2c: the term appears at least twice in the coded slot (at least once if the slot has 1 sentence), in no other version of the plot and nowhere in the frame, and is not on any ban list. Add the coded fills to Q6 (136 more rater sessions) and report coded salience. State that the S-coded headline holds only when all 6 Qwen tests pass in their family; otherwise list the pairs that pass."
+   },
+   {
+    "problem": "Section 6 overstates power for H1 and H2. history/power_sim_v3.py compares the neurons with one rival that has no signal, but H1 takes the larger p over 2 rivals and H2 over 3, and H2 is a non-inferiority test. The figures quoted (0.34 at Holm's first threshold for a 0.056 gap, and so on) are upper bounds for the real tests.",
+    "severity": "major",
+    "fix": "Re-run the simulation with the actual intersection-union tests: 2 rivals for H1 and 3 for H2, with realistic rival signal and correlation, and H2 at its 0.05 margin. Report those figures and label the current numbers as single-rival upper bounds."
+   },
+   {
+    "problem": "The plan does not fix how much of Mike's time the pilot needs. P2 says the audit page is 'tried on the 36 pilot stories' and the page's time per story is recorded. If Mike does that, it adds about 1.5 h to his 2-3 h. The main audit itself (60 stories of about 470 words each, plus 5 judgements) is about 2.5-3 h, at the top of his budget. Stories are shown in one random order, so stopping early (48 is allowed) leaves the version strata unbalanced.",
+    "severity": "major",
+    "fix": "Limit Mike's pilot to timing at most 5 pilot stories (about 15 min); test the rest of the page with a script. Before F0, pre-state that if his median time is above 2.5 min per story the sample shrinks to 48 stories. Present stories in balanced blocks (for example 4 blocks of 15, each with 3/3/3/2/2/2 of the six versions), so that 'complete' means whole blocks."
+   },
+   {
+    "problem": "In run_primary, if there is no human audit and no cross-family check (for example the check reader failed and the fallback did not run), audit_fail is False, so H1-H3 go ahead with no manipulation check. If keywords:qwen3-8b is missing, the explicit-wording check is silently skipped.",
+    "severity": "minor",
+    "fix": "Mark H1-H3 inconclusive when neither check is available, or when the explicit-wording check cannot be computed, and add a test for each case."
+   },
+   {
+    "problem": "The minimum-viable-completion rules in section 3 (at least 100 plots with all six versions valid, at least 28 memes not dropped, at least 40 long texts, at least 30 qualifying T6 units per kind and arm) are not implemented. Only the 48-story audit rule is coded.",
+    "severity": "minor",
+    "fix": "Implement them in run_t2, run_t6 and run_primary as 'not run' verdicts with the reason, and add tests."
+   },
+   {
+    "problem": "The meme-drop rule counts failing versions, not plots. build_lists.py stage_stories adds 1 to fail_q4[m] for each failing explicit or banned version, so one plot can count twice, while the document says 'more than 3 of its 12 plots'.",
+    "severity": "minor",
+    "fix": "Count each meme's failing plots as a set (explicit or banned failure after repair), and add a test."
+   },
+   {
+    "problem": "The Claude upper bound (A4) is scored like a method but runs on TEST stories during A7, which contradicts 'nobody runs a method on a TEST story before ... A7 and F3' and 'the author has seen no method output'. Its file goes to features/, which .gitignore excludes, although the document says it is 'committed with F3'.",
+    "severity": "minor",
+    "fix": "Run A4 after the A7 freeze; it is about 110 sessions. Say that its hash is recorded in the F3 manifest, not that the file is committed."
+   },
+   {
+    "problem": "H2 has no intention-to-treat result, so the 'per-protocol only' label promised for H1 and H2 can never apply to H2. The ITT result for H1 uses the meme-level test only.",
+    "severity": "minor",
+    "fix": "Compute ITT for H2's non-inferiority test as well. Use the larger p of the meme-level and plot-level tests for both ITT results, as the primary tests do."
+   },
+   {
+    "problem": "The verdict for a significant effect that is credibly below the SESOI is undefined in the document. When the Holm test rejects and the falsification test also rejects, verdict3 returns 'supported'.",
+    "severity": "minor",
+    "fix": "Add a verdict 'supported, below SESOI' for that case, in section 5 and in verdict3, with a test."
+   },
+   {
+    "problem": "The overlap meme lists and S-coded give every meme equal weight however few of its cells are usable. Coded cells need both Claude readers to pass Q4, so some memes may keep only 2 to 4 coded cells, which makes 'finds' (at least 50%) and 'misses' (at most 25%) noisy.",
+    "severity": "minor",
+    "fix": "Pre-state a minimum, for example 6 usable cells per meme and condition, for the meme-level lists and tests. Report the memes below it separately."
+   },
+   {
+    "problem": "The T6 Benjamini-Hochberg family counts the qwen-against-llama Fisher test twice, once in each direction, with the same p.",
+    "severity": "minor",
+    "fix": "Keep one unordered test per pair in run_t6."
+   },
+   {
+    "problem": "The F3 gate only checks that results/feature_manifest.json exists; it never checks the feature hashes before t2 or t6 runs, although section 10 says the manifest makes the single run checkable.",
+    "severity": "minor",
+    "fix": "In main(), recompute the sha256 of every manifest file before t2 or t6, and refuse to run on any mismatch."
+   },
+   {
+    "problem": "Reproducibility gaps. build_lists.py dev_units reads ROOT/results/<model>/memes.json, which the root .gitignore excludes, so 'build_lists.py lists builds every work list from sources/' fails from a clean clone. dev_units.json is H3's input. readers.MODELS pins no revision for Qwen3-8B or Llama 3.1 8B, though section 3 says the readers' revisions are pinned.",
+    "severity": "minor",
+    "fix": "Point dev_units at the committed .gz copies or the sources/ robustness files, or declare dev_units.json a frozen input that is not rebuilt. Pin the Qwen3-8B and Llama snapshot hashes before F0."
+   },
+   {
+    "problem": "Book check. The prereg folder is clean outside history/: I searched every file, including the .gz and .npz caches, for the title and the old book_* field names, and found nothing. history/README.md refers to 'a book by Mike Taylor' without the title, which is allowed. Outside prereg/, the tracked files conversation/export.py, conversation.json and conversation.js name the book, and the root .gitignore mentions 'the author's book text'.",
+    "severity": "minor",
+    "fix": "No change is needed in prereg/. If 'do not cite or name the book anywhere' covers the whole public repo, ask Mike whether the conversation export and the .gitignore comment should be changed."
+   },
+   {
+    "problem": "The 'Why' paragraph in section 14.4 gives reasons that are the narrowing agent's inference, not Mike's stated reasons.",
+    "severity": "minor",
+    "fix": "Have Mike confirm or rewrite the paragraph before F0."
+   },
+   {
+    "problem": "Context, not a defect in the prereg: the user's actual question, whether the existing paper (paper/paper.md) is good enough to share internally before phase 2, is not answered by narrowing or reviewing this pre-registration.",
+    "severity": "minor",
+    "fix": "Have the workflow review the paper separately for that question, and answer it before or alongside reporting on the pre-registration."
+   }
+  ]
+ },
+ "final": {
+  "files_changed": [
+   "preregistration/analysis.py",
+   "preregistration/test_analysis.py",
+   "preregistration/build_lists.py",
+   "preregistration/audit_page.py (new)",
+   "preregistration/readers.py",
+   "preregistration/extract_compact.py",
+   "preregistration/PREREGISTRATION.md",
+   "preregistration/annotation_protocol.md",
+   "preregistration/planted_story_protocol.md",
+   "preregistration/DEVIATIONS.md",
+   "preregistration/history/README.md",
+   "preregistration/history/power_sim_v4.py (new)",
+   "preregistration/history/power_v4.json (new)",
+   "preregistration/dev_units.json (rebuilt from the committed .gz copies; byte-identical, so effectively unchanged)"
+  ],
+  "fixes": [
+   "Audit blinding (major): the sample file is now the page's only input (analysis.audit_sample_file). It holds opaque ids A01 to A60 in presentation order, numbered sentences and the memes' labels and definitions. It has no story id, plot, version, writer or genre, and audit_leaks refuses to write a file that would show one. _human_audit maps the ids back by re-running the deterministic sample and checks the file against it. audit_page.py is written now (standard library only, served on 127.0.0.1, reads only that file). test_analysis serves it and checks that neither the file nor the HTML contains a version name, plot id or story id.",
+   "Audit counting (major): the page appends rows and only the last row per (story, meme) counts. A story counts as answered only when all 5 of its cells are answered ('unsure' is an answer). Only whole blocks are scored. Tests cover a changed answer, unsure answers, a partial story and incomplete blocks. A7 now states the append-only format, and the format is tested before F0.",
+   "Audit gate (major): H1-H3 are gated by presence on the banned and implicit cells plus absence on the control and decoy cells. Coded presence gates S-coded and the coded overlap tests, so a weak coded condition cannot make H1-H3 inconclusive. Each gate passes when the one-sided 90% Clopper-Pearson lower bound reaches its threshold: presence 0.75, which allows up to 10 errors in 60 cells (7 in 48); absence 0.80, which allows up to 7 errors in 60 (5 in 48). Gates use per-protocol cells and report every cell beside them. Unsure answers leave the denominator and are reported, and a gate fails if more than 10% of its cells are unsure. The fallback to the cross-family reader is restated on the same split.",
+   "Operating points (major): ties are now broken with seeded keys, applied the same way to control and planted stories, so exactly floor(0.1n) controls are flagged for every method. Realised FPR is now 0.096 for every method, including keywords:expanded (was 0.000) and tfidf (was 0.046). The test requires a realised FPR in [0.08, 0.10] for every method, including a tie-heavy one.",
+   "Overlap twin control (major): a planted cell now counts as detected only if the method flags it and does not flag its own plot's control. The threshold-only rule is kept as a sensitivity. The false-alarm rate on each meme's own-plot controls is reported for every method, meme and condition. A frame-leak test world shows the leaky method gets detection 1.00 under the old rule and 0.00 under the new one.",
+   "H6 (major): the neurons' own variants (either model's neurons, m1/m5/explicit/far/m1ctx, devunit, length_resid) and Claude-based entries can no longer dominate (analysis.h6_rival). Each rival is compared with the neurons on the memes they share. A test world where Llama's neurons beat Qwen's now gives 'not dominated'; the old rule would have said 'dominated'.",
+   "BH families (major): a prominent family of exactly 30 Qwen tests (S-coded 6, O1 4, O2 20); a T2 family of 7 (S8, S9, S10 for the neurons, S11 for the plain analyst, m1 vs m5, neurons vs hidden states, T2-long); a T6 family of 12. Llama tests are replications outside every family. Pairwise contrasts (once per pair, duplicate removed), per-method S10 and S11 and the hindsight encoder are descriptive. Family sizes are stated in section 5 and asserted in the tests.",
+   "Coded condition (major): the writer JSON now returns code_terms. New script check Q2c: the term appears at least twice in the slot (once in a 1-sentence slot), never in the frame, in no other version, and on no ban list; a failing coded version is invalid. Coded fills join the Q6 salience ratings (544 rater sessions) with their own repair and a salience-matched sensitivity. Headline rule: all 6 Qwen S-coded tests must reach q<0.05 and the coded gate must pass; otherwise only the passing pairs are listed.",
+   "Power (major): history/power_sim_v4.py runs the actual tests: intersection-union over 2 rivals (H1) and 3 rivals (H2), rivals with their own correlated signal, H2 at its 0.05 margin. Results: H1 with two rivals at 0.65 has power 0.22 / 0.55 / 0.89 at realised gaps 0.038 / 0.060 / 0.084 (at 0.0167). H2 non-inferiority at a true gap of 0 has power 0.22. S-coded and overlap power are now given at the family's BH thresholds. Section 6 labels the old v3 numbers as single-rival upper bounds.",
+   "Mike's time (major): Mike times at most 5 pilot stories (about 15 min) and the rest of the page is tested by script. Pre-stated rule: if his median time is above 150 s per story, the audit shows 4 blocks (48 stories). The sample is now 10 stories per version in 5 balanced blocks of 12 (2 per version), and 'complete' means at least 4 whole blocks.",
+   "Minor fixes: H1-H3 and S-coded become inconclusive when neither the audit nor the cross-family check is available, or when the explicit-wording check is missing (tested). Minimum-viable-completion rules are implemented for T2, T2-long and T6, with 'not run' verdicts (tested). meme_drop counts plots, not versions (tested). A4 runs after the A7 freeze and its hash goes in the F3 manifest. H2 now has an ITT result, and both ITT results use the larger p of the meme-level and plot-level tests. New verdict 'supported, below SESOI' (tested). At least 6 usable cells per meme are needed for the overlap lists and at least 6 pairs for S-coded; memes below are listed apart (tested). T6 uses one Fisher test per unordered pair. verify_manifest re-checks every feature hash before t2, t6-prepare, t6 and cost, and refuses to run on a mismatch (tested). dev_units now reads results/<model>/memes.json.gz and rebuilds byte-identical. The Qwen3-8B and Llama snapshot hashes are pinned in readers.py and extract_compact.py and resolve offline. A test-world bug was also found and fixed: the old T2-long world passed only by chance.",
+   "Docs: PREREGISTRATION.md sections 0-13 updated; new section 14.5 (review findings, changes, and where the suggestions were not followed exactly); the 14.4 'Why' paragraph is flagged for Mike to confirm or rewrite before F0. annotation_protocol.md (A4 timing, A7 rewritten with a gate table), planted_story_protocol.md (code_terms, Q2c, coded Q6, meme drop), DEVIATIONS.md and history/README.md updated."
+  ],
+  "not_adopted": [
+   "Absence gate threshold: the review suggested a one-sided 90% lower bound of at least 0.90. At 48-60 cells that allows only 1-2 errors and fails 58-70% of the time when true agreement is 95%, which is worse than the rule it replaces. Adopted 0.80 instead (up to 7 errors in 60, 5 in 48): it fails about 1-3% of the time at 95% and about 70% at 85%. Recorded in section 14.5.",
+   "Twin-consistent rule: the review suggested 'above the threshold and above its own control's score'. That rule credits a frame-reading method on about half its cells, which is enough to 'find' about half the memes by chance. Adopted 'flagged, and its own control not flagged', which gives such a method no credit; every method loses the roughly 10% of cells whose control is flagged. Recorded in section 14.5.",
+   "Audit strata: instead of the review's example of 4 blocks of 15 (3/3/3/2/2/2), used 10 stories per version in 5 blocks of 12, so that 48 stories is exactly 4 whole blocks. This gives 60 absence cells instead of 48; banned and implicit cells fall from 72 to 60.",
+   "Book references outside prereg/ (conversation/export.py, conversation.json, conversation.js and the root .gitignore comment) were not changed. They are outside this pre-registration, and Mike has to decide whether 'anywhere' covers them before F0. prereg/ is clean outside history/.",
+   "The 14.4 'Why' paragraph is labelled as Claude's inference and left for Mike to confirm or rewrite before F0; I did not invent his reasons.",
+   "AUDIT_BLOCKS_SHOWN stays at its default of 5 until Mike's pilot timing at P2.",
+   "Not addressed here: the user's actual question, whether paper/paper.md is good enough to share internally before phase 2. This fixer step did not review the paper, so the workflow still needs to answer that separately."
+  ],
+  "primary_hypotheses": [
+   {
+    "id": "H1",
+    "prediction": "Qwen3-8B (primary model). On reworded planted stories (banned and implicit versions), the neurons' mean twin AUC over non-dropped memes beats both keywords:expanded-qwen3-8b and keywords:logreg. Statistic: intersection-union p = the larger p of the two rivals; each rival's p is the larger of the meme-level and plot-level sign flips. Holm over H1-H3 (first threshold 0.0167). SESOI 0.05 AUC. The 10 neutral memes must show a positive mean difference. Conditions: the author's audit gates pass (banned+implicit presence lower bound \u22650.75, control+decoy absence lower bound \u22650.80, at most 10% unsure, at least 4 whole blocks), or else the cross-family reader decides; the plain analyst's explicit twin AUC must be \u22650.75. Llama 3.1 8B is a replication at p<0.05 uncorrected.",
+    "falsifier": "Falsified if the one-sided falsification test (H0: difference \u2265 0.05) rejects at alpha 0.05 against either rival, at both the meme level and the plot level, while the Holm test does not reject. If both reject, the verdict is 'supported, below SESOI'. If a check fails or cannot be computed, the verdict is inconclusive; below the minimum (fewer than 100 plots with all six versions valid, or fewer than 28 memes kept) it is 'not run'."
+   },
+   {
+    "id": "H2",
+    "prediction": "On reworded planted stories, Qwen3-8B neurons are non-inferior, within a 0.05 AUC margin, to all three of emb:qwen3emb-4b, embwin:qwen3emb-4b and emb:e5-large. Same tests as H1: intersection-union over the 3 rivals, meme-level and plot-level tests, Holm over H1-H3, same gates. Neutral-subset mean difference must be above -0.05. If non-inferiority passes, superiority (SESOI 0.05) is tested as a fixed sequence at H2's Holm level. ITT is reported with the same tests and is labelled 'per-protocol only' if it fails.",
+    "falsifier": "Falsified if the neurons are credibly worse than any one of the three vectors by more than 0.05: the falsification test (H0: difference \u2265 -0.05) rejects at both the meme and plot level."
+   },
+   {
+    "id": "H3",
+    "prediction": "The 11 concept units found on DEV Batman text respond specifically to their own meme in unrelated genres. Statistic: mean over the units of [twin AUC on its own meme minus its mean twin AUC on every other meme] is above 0, tested against a null that permutes meme labels across the units. SESOI 0.05. Holm over H1-H3, same gates.",
+    "falsifier": "Falsified if the one-sided falsification test excludes a specificity of 0.05 or more, meaning the units respond to 'something dramatic happens' about as much as to their own meme."
+   },
+   {
+    "id": "H6",
+    "prediction": "Decision rule, outside Holm. On reworded planted stories at 34 memes, no rival method dominates the Qwen neurons. A rival dominates if, on the memes the two share, its one-sided 95% lower AUC bound is at least the neurons' AUC and it costs no more per story. Excluded as rivals: either model's neurons and their variants, DEV units, length-residualised neurons, and Claude-based entries.",
+    "falsifier": "'Dominated' if any rival meets both conditions. Fixed reading: a cheaper method is as accurate, so the case for neurons rests on interpretability and on what they find that others miss."
+   }
+  ],
+  "run_plan": "BEFORE THE GIT FREEZE (F0):\n0. Mike: (a) review these changes and the new section 14.5; (b) confirm or rewrite the 14.4 'Why' paragraph; (c) decide whether 'do not name the book anywhere' covers conversation/export.py, conversation.json, conversation.js and the root .gitignore comment. About 30 min of Mike's time. Separately, the workflow still owes the user an answer on whether paper/paper.md can be shared internally; that is not part of this run.\n1. Step 0: check the installs and downloads. All approved models are already in the HF cache, and the pinned 8B snapshots resolve offline. Confirm sentence-transformers, umap-learn and nltk with its WordNet data. About 15 min.\n2. P1, example sentences (A8): about 170 sessions, half a day. Then build_lists.py texts examples and build_lists.py memes.\n3. P2, pilot: 6 pilot plots run through the full planted-story protocol (code terms, Q1-Q6 including Q2c and coded salience, one repair round). About 120 sessions plus 10 min of Gemma, half a day. Then build_lists.py texts audit-pilot. Mike times the page on at most 5 stories (about 15 min); if his median is above 150 s, set analysis.AUDIT_BLOCKS_SHOWN = 4. Log any protocol changes in section 14.\n4. Rerun test_analysis.py (about 5 min, 151 checks), then F0: commit and push prereg/ with audit_page.py. \u2190 GIT FREEZE.\nAFTER F0:\n5. Step 2, DEV features, about 3 h. F1 dev-freeze, about 1 h. F1b reference films and bench.py, about 2 h. Commit and push each.\n6. Step 4, TEST stories: about 1 day, about 2,690 sessions (writers 190, reads 1,950, salience 544, plus repairs) and 1.5 h of Gemma. Then build_lists.py texts stories and long. F2-T2: commit and push.\n7. A7: build_lists.py texts audit, then Mike audits on audit_page.py: 60 stories, or 48 if the pilot shrank it, about 2-2.5 h in sittings of one block or more. Freeze A7: commit and push the sample and his answers.\n8. Step 5, TEST features: neurons, embeddings, LLM reading and NLI for both models, about 16 h; plus the Claude upper bound (A4), about 110 sessions. F3: analysis.py manifest, then commit and push.\n9. Step 6, final analysis (about 2 h of compute plus about 3 h of agent time): analysis.py t2 (which re-checks the manifest first), then t6-prepare, the label test (about 1,310 sessions), t6, cost, and primary. The first run is the confirmatory one and is logged in results/run_log.jsonl.\nTotal after F0: about 3 days elapsed, about 25 h of local model time, about 2.5 h of Mike's time. Total agent sessions about 4,430.",
+  "test_analysis_passes": true
+ }
+}

@@ -1,0 +1,64 @@
+{
+ "model": "mlx-community/Meta-Llama-3.1-8B-Instruct-4bit",
+ "tokens": {
+  "es": {
+   "ratio_to_en": 1.53
+  },
+  "de": {
+   "ratio_to_en": 1.68
+  },
+  "fr": {
+   "ratio_to_en": 1.55
+  },
+  "th": {
+   "ratio_to_en": 1.75
+  },
+  "en": {
+   "ratio_to_en": 1.0
+  },
+  "zh": {
+   "ratio_to_en": 1.28
+  }
+ },
+ "roundtrip": {
+  "es": true,
+  "de": true,
+  "fr": true,
+  "th": true,
+  "en": true,
+  "zh": true
+ },
+ "spans_ok": {
+  "es": true,
+  "de": true,
+  "fr": true,
+  "th": true,
+  "en": true,
+  "zh": true
+ },
+ "story": {
+  "en": {
+   "tokens": 483,
+   "spans_ok": true,
+   "answers": "1. Ilse hid the ledgers inside a cracked chandelier.\n2. The harbour clerk had the apprentice beaten in an alley behind the bell tower.\n3. Tomas recognised a signature in the ledgers belonging to his own uncle, the island's magistrate.\n4. The second ledger revealed that the flood gates were left open on purpose the night Ilse's mother drowned.\n5. Ilse made lenses for the lighthouse from her mother's last chandelier, to guide a relief ship through the storm.\n6. The merchant tried to escape on a salt barge, but it broke apart in the harbour mouth."
+  },
+  "zh": {
+   "tokens": 692,
+   "spans_ok": true,
+   "answers": "1. Ilse hid the ledgers in a broken chandelier.\n2. The secretary had the apprentice beaten, and it happened in a small alley behind the clock tower.\n3. Tomas recognised his uncle's signature in the ledgers.\n4. The second ledger revealed that Ilse's mother's death was not an accident, but rather a deliberate act, as the ledger mentioned a payment made on the night of her death.\n5. Ilse made a lens for the lighthouse from her mother's last chandelier, and she did it because the lighthouse's light had gone out.\n6. The merchant tried to escape by offering food to those who would sign over their boat's docking spot, but his ship had been rotting on the dock for a winter, and it was no longer seaworthy."
+  },
+  "es": {
+   "tokens": 748,
+   "spans_ok": true,
+   "answers": "1. Ilse hid the ledgers inside a broken chandelier.\n2. The escribano had the apprentice beaten in a alleyway behind the bell tower.\n3. Tomas recognised his own uncle's signature in the ledgers, the magistrado of the island.\n4. The second ledger revealed that the mother's death was not an accident, but rather she was pushed to her death by leaving the canal gates open on purpose.\n5. Ilse made lentes for the faro from her mother's last chandelier, to fix the broken lamp.\n6. The merchant tried to escape in a rotten barcaza of sal, which broke apart in the harbor."
+  }
+ },
+ "gold": [
+  "inside a cracked chandelier",
+  "the harbour clerk; two dockhands; alley behind the bell tower",
+  "his uncle, the magistrate",
+  "the flood gates were opened on purpose (a payment beside her name): she was killed",
+  "lenses for the lighthouse, whose lamp had failed",
+  "on a salt barge, which broke apart in the harbour mouth"
+ ]
+}

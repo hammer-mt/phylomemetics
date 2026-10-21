@@ -1,0 +1,2101 @@
+{
+ "seeds": {
+  "Batman": [
+   "Batman",
+   "Q2695156"
+  ],
+  "Bruce Wayne": [
+   "Batman",
+   "Q2695156"
+  ],
+  "Batman (comic book)": [
+   "Batman (comic book)",
+   "Q2633138"
+  ],
+  "Detective Comics 27": [
+   "Detective Comics 27",
+   "Q18245775"
+  ]
+ },
+ "links": [
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P941",
+   "direction": "out",
+   "qid": "Q4653",
+   "label": "Sherlock Holmes",
+   "enwiki": "Sherlock Holmes"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P941",
+   "direction": "out",
+   "qid": "Q226822",
+   "label": "Zorro",
+   "enwiki": "Zorro"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P941",
+   "direction": "out",
+   "qid": "Q967116",
+   "label": "The Shadow",
+   "enwiki": "The Shadow"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P941",
+   "direction": "out",
+   "qid": "Q79015",
+   "label": "Superman",
+   "enwiki": "Superman"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P941",
+   "direction": "out",
+   "qid": "Q3266236",
+   "label": "Count Dracula",
+   "enwiki": "Count Dracula"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P941",
+   "direction": "in",
+   "qid": "Q1037532",
+   "label": "Moon Knight",
+   "enwiki": "Moon Knight"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P941",
+   "direction": "in",
+   "qid": "Q3341413",
+   "label": "Nighthawk",
+   "enwiki": "Nighthawk (Marvel Comics)"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P941",
+   "direction": "in",
+   "qid": "Q6422294",
+   "label": "Knight Watchman",
+   "enwiki": "Knight Watchman"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P941",
+   "direction": "in",
+   "qid": "Q7248170",
+   "label": "Professor Night",
+   "enwiki": "Professor Night"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P941",
+   "direction": "in",
+   "qid": "Q93186548",
+   "label": "Mermaid Man",
+   "enwiki": "Mermaid Man"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P941",
+   "direction": "in",
+   "qid": "Q107015335",
+   "label": "Blue Falcon",
+   "enwiki": "Blue Falcon"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P941",
+   "direction": "in",
+   "qid": "Q5160054",
+   "label": "Confessor",
+   "enwiki": null
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P941",
+   "direction": "in",
+   "qid": "Q11866844",
+   "label": "Q11866844",
+   "enwiki": null
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P941",
+   "direction": "in",
+   "qid": "Q28859773",
+   "label": "Rat-Man",
+   "enwiki": null
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P941",
+   "direction": "in",
+   "qid": "Q100268847",
+   "label": "Q100268847",
+   "enwiki": null
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P941",
+   "direction": "in",
+   "qid": "Q120717054",
+   "label": "Darkwing",
+   "enwiki": null
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q116852",
+   "label": "Batman",
+   "enwiki": "Batman (1989 film)"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q129161",
+   "label": "Batman: Year One",
+   "enwiki": "Batman: Year One (film)"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q163872",
+   "label": "The Dark Knight",
+   "enwiki": "The Dark Knight"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q166262",
+   "label": "Batman Begins",
+   "enwiki": "Batman Begins"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q176376",
+   "label": "The Batman/Superman Movie: World's Finest",
+   "enwiki": "Superman Movie: World's Finest"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q189054",
+   "label": "Batman Returns",
+   "enwiki": "Batman Returns"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q221345",
+   "label": "Batman Forever",
+   "enwiki": "Batman Forever"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q276523",
+   "label": "Batman & Robin",
+   "enwiki": "Batman & Robin (film)"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q288811",
+   "label": "Batman: Arkham City",
+   "enwiki": "Batman: Arkham City"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q498757",
+   "label": "Batman & Mr. Freeze: SubZero",
+   "enwiki": "Batman & Mr. Freeze: SubZero"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q2900426",
+   "label": "Beware the Batman",
+   "enwiki": "Beware the Batman"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q3636199",
+   "label": "Batman",
+   "enwiki": "Batman (Earth-Two)"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q3636202",
+   "label": "Batman of Zur-En-Arrh",
+   "enwiki": "Batman of Zur-En-Arrh"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q5087163",
+   "label": "Chase Me",
+   "enwiki": "Chase Me"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q10826261",
+   "label": "Batman: Arkham Origins",
+   "enwiki": "Batman: Arkham Origins"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q10856847",
+   "label": "Batman: Arkham Origins Blackgate",
+   "enwiki": "Batman: Arkham Origins Blackgate"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q15091564",
+   "label": "Batman: Arkham Origins",
+   "enwiki": "Batman: Arkham Origins (mobile)"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q15635431",
+   "label": "Son of Batman",
+   "enwiki": "Son of Batman"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q15891648",
+   "label": "Batman: Arkham Knight",
+   "enwiki": "Batman: Arkham Knight"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q558962",
+   "label": "Batman: Dark Tomorrow",
+   "enwiki": "Batman: Dark Tomorrow"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q635933",
+   "label": "The Batman",
+   "enwiki": "The Batman (TV series)"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q673517",
+   "label": "Batman: The Animated Series",
+   "enwiki": "Batman: The Animated Series"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q746228",
+   "label": "Batman: Arkham Asylum",
+   "enwiki": "Batman: Arkham Asylum"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q810858",
+   "label": "Batman: Mask of the Phantasm",
+   "enwiki": "Batman: Mask of the Phantasm"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q810856",
+   "label": "The Adventures of Batman",
+   "enwiki": "The Adventures of Batman"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q810857",
+   "label": "Batman",
+   "enwiki": "Batman (1966 film)"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q16155090",
+   "label": "Batman",
+   "enwiki": "Batman (2013 arcade game)"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q16155099",
+   "label": "Batman: Assault on Arkham",
+   "enwiki": "Batman: Assault on Arkham"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q17985775",
+   "label": "Batman: The Ride",
+   "enwiki": "Batman: The Ride (S&S Free Spin)"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q18844637",
+   "label": "Batman vs. Robin",
+   "enwiki": "Batman vs. Robin"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q23647031",
+   "label": "Batman: The Killing Joke",
+   "enwiki": "Batman: The Killing Joke (film)"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q25442668",
+   "label": "Batman",
+   "enwiki": "Batman (Thomas Wayne)"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q30080476",
+   "label": "Batman and Harley Quinn",
+   "enwiki": "Batman and Harley Quinn"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q39075549",
+   "label": "Bruce Wayne",
+   "enwiki": "Bruce Wayne (Gotham)"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q48833172",
+   "label": "Batwoman",
+   "enwiki": "Batwoman"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q57394119",
+   "label": "Batman",
+   "enwiki": "Bruce Wayne (DC Extended Universe)"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q63197020",
+   "label": "The Batman Who Laughs",
+   "enwiki": "The Batman Who Laughs"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q78607187",
+   "label": "Bruce Wayne",
+   "enwiki": "Bruce Wayne (Dark Knight trilogy)"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q94496874",
+   "label": "Bruce Wayne",
+   "enwiki": "Bruce Wayne (1989 film series character)"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q123466026",
+   "label": "Merry Little Batman",
+   "enwiki": "Merry Little Batman"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q125501091",
+   "label": "Batman: Resurrection",
+   "enwiki": "Batman: Resurrection"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q130267916",
+   "label": "Aztec Batman: Clash of Empires",
+   "enwiki": "Aztec Batman: Clash of Empires"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q139895131",
+   "label": "Riggan Thomson",
+   "enwiki": "Riggan Thomson"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q958989",
+   "label": "Nite Owl",
+   "enwiki": null
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q2438285",
+   "label": "Dark Claw",
+   "enwiki": null
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q4869384",
+   "label": "Batman",
+   "enwiki": null
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q5970230",
+   "label": "Q5970230",
+   "enwiki": null
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q10264700",
+   "label": "Batman",
+   "enwiki": null
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q17996919",
+   "label": "Batman: The Dark Knight Returns, Part 2",
+   "enwiki": null
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q30501762",
+   "label": "Batman: The Dark Knight Returns, Part 1",
+   "enwiki": null
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q64658410",
+   "label": "Batman",
+   "enwiki": null
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q84051105",
+   "label": "Q84051105",
+   "enwiki": null
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q111269917",
+   "label": "Batman",
+   "enwiki": null
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q111726636",
+   "label": "Bruce Wayne",
+   "enwiki": null
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q139381935",
+   "label": "Q139381935",
+   "enwiki": null
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q140369299",
+   "label": "Batman",
+   "enwiki": null
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q810861",
+   "label": "Batman: Mystery of the Batwoman",
+   "enwiki": "Batman: Mystery of the Batwoman"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q1247201",
+   "label": "Batman",
+   "enwiki": "Batman (TV series)"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q1339570",
+   "label": "Batman Beyond",
+   "enwiki": "Batman Beyond"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q1573706",
+   "label": "Batman Beyond: Return of the Joker",
+   "enwiki": "Batman Beyond: Return of the Joker"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q1986193",
+   "label": "Buzz Lightyear",
+   "enwiki": "Buzz Lightyear"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q2287397",
+   "label": "Batman: Gotham Knight",
+   "enwiki": "Batman: Gotham Knight"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q2384094",
+   "label": "Batman: Under the Red Hood",
+   "enwiki": "Batman: Under the Red Hood"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q2604987",
+   "label": "Batzarro",
+   "enwiki": "Batzarro"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q2891574",
+   "label": "Batman: Arkham Asylum (roller coaster)",
+   "enwiki": "Shadows of Arkham"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q116852",
+   "label": "Batman",
+   "enwiki": "Batman (1989 film)"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q288811",
+   "label": "Batman: Arkham City",
+   "enwiki": "Batman: Arkham City"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q558962",
+   "label": "Batman: Dark Tomorrow",
+   "enwiki": "Batman: Dark Tomorrow"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q635933",
+   "label": "The Batman",
+   "enwiki": "The Batman (TV series)"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q673517",
+   "label": "Batman: The Animated Series",
+   "enwiki": "Batman: The Animated Series"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q746228",
+   "label": "Batman: Arkham Asylum",
+   "enwiki": "Batman: Arkham Asylum"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q1339570",
+   "label": "Batman Beyond",
+   "enwiki": "Batman Beyond"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q2287397",
+   "label": "Batman: Gotham Knight",
+   "enwiki": "Batman: Gotham Knight"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q2604987",
+   "label": "Batzarro",
+   "enwiki": "Batzarro"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q3636199",
+   "label": "Batman",
+   "enwiki": "Batman (Earth-Two)"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q3636202",
+   "label": "Batman of Zur-En-Arrh",
+   "enwiki": "Batman of Zur-En-Arrh"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q10826261",
+   "label": "Batman: Arkham Origins",
+   "enwiki": "Batman: Arkham Origins"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q10856847",
+   "label": "Batman: Arkham Origins Blackgate",
+   "enwiki": "Batman: Arkham Origins Blackgate"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q15091564",
+   "label": "Batman: Arkham Origins",
+   "enwiki": "Batman: Arkham Origins (mobile)"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q15891648",
+   "label": "Batman: Arkham Knight",
+   "enwiki": "Batman: Arkham Knight"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q16155090",
+   "label": "Batman",
+   "enwiki": "Batman (2013 arcade game)"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q25442668",
+   "label": "Batman",
+   "enwiki": "Batman (Thomas Wayne)"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q39075549",
+   "label": "Bruce Wayne",
+   "enwiki": "Bruce Wayne (Gotham)"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q57394119",
+   "label": "Batman",
+   "enwiki": "Bruce Wayne (DC Extended Universe)"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q78607187",
+   "label": "Bruce Wayne",
+   "enwiki": "Bruce Wayne (Dark Knight trilogy)"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q94496874",
+   "label": "Bruce Wayne",
+   "enwiki": "Bruce Wayne (1989 film series character)"
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q958989",
+   "label": "Nite Owl",
+   "enwiki": null
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q2438285",
+   "label": "Dark Claw",
+   "enwiki": null
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q4869384",
+   "label": "Batman",
+   "enwiki": null
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q10264700",
+   "label": "Batman",
+   "enwiki": null
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q64658410",
+   "label": "Batman",
+   "enwiki": null
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q111269917",
+   "label": "Batman",
+   "enwiki": null
+  },
+  {
+   "seed": "Batman",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q111726636",
+   "label": "Bruce Wayne",
+   "enwiki": null
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P941",
+   "direction": "out",
+   "qid": "Q4653",
+   "label": "Sherlock Holmes",
+   "enwiki": "Sherlock Holmes"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P941",
+   "direction": "out",
+   "qid": "Q226822",
+   "label": "Zorro",
+   "enwiki": "Zorro"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P941",
+   "direction": "out",
+   "qid": "Q967116",
+   "label": "The Shadow",
+   "enwiki": "The Shadow"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P941",
+   "direction": "out",
+   "qid": "Q79015",
+   "label": "Superman",
+   "enwiki": "Superman"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P941",
+   "direction": "out",
+   "qid": "Q3266236",
+   "label": "Count Dracula",
+   "enwiki": "Count Dracula"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P941",
+   "direction": "in",
+   "qid": "Q1037532",
+   "label": "Moon Knight",
+   "enwiki": "Moon Knight"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P941",
+   "direction": "in",
+   "qid": "Q3341413",
+   "label": "Nighthawk",
+   "enwiki": "Nighthawk (Marvel Comics)"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P941",
+   "direction": "in",
+   "qid": "Q6422294",
+   "label": "Knight Watchman",
+   "enwiki": "Knight Watchman"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P941",
+   "direction": "in",
+   "qid": "Q7248170",
+   "label": "Professor Night",
+   "enwiki": "Professor Night"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P941",
+   "direction": "in",
+   "qid": "Q93186548",
+   "label": "Mermaid Man",
+   "enwiki": "Mermaid Man"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P941",
+   "direction": "in",
+   "qid": "Q107015335",
+   "label": "Blue Falcon",
+   "enwiki": "Blue Falcon"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P941",
+   "direction": "in",
+   "qid": "Q5160054",
+   "label": "Confessor",
+   "enwiki": null
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P941",
+   "direction": "in",
+   "qid": "Q11866844",
+   "label": "Q11866844",
+   "enwiki": null
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P941",
+   "direction": "in",
+   "qid": "Q28859773",
+   "label": "Rat-Man",
+   "enwiki": null
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P941",
+   "direction": "in",
+   "qid": "Q100268847",
+   "label": "Q100268847",
+   "enwiki": null
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P941",
+   "direction": "in",
+   "qid": "Q120717054",
+   "label": "Darkwing",
+   "enwiki": null
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q116852",
+   "label": "Batman",
+   "enwiki": "Batman (1989 film)"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q129161",
+   "label": "Batman: Year One",
+   "enwiki": "Batman: Year One (film)"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q163872",
+   "label": "The Dark Knight",
+   "enwiki": "The Dark Knight"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q166262",
+   "label": "Batman Begins",
+   "enwiki": "Batman Begins"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q176376",
+   "label": "The Batman/Superman Movie: World's Finest",
+   "enwiki": "Superman Movie: World's Finest"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q189054",
+   "label": "Batman Returns",
+   "enwiki": "Batman Returns"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q221345",
+   "label": "Batman Forever",
+   "enwiki": "Batman Forever"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q276523",
+   "label": "Batman & Robin",
+   "enwiki": "Batman & Robin (film)"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q288811",
+   "label": "Batman: Arkham City",
+   "enwiki": "Batman: Arkham City"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q498757",
+   "label": "Batman & Mr. Freeze: SubZero",
+   "enwiki": "Batman & Mr. Freeze: SubZero"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q2900426",
+   "label": "Beware the Batman",
+   "enwiki": "Beware the Batman"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q3636199",
+   "label": "Batman",
+   "enwiki": "Batman (Earth-Two)"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q3636202",
+   "label": "Batman of Zur-En-Arrh",
+   "enwiki": "Batman of Zur-En-Arrh"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q5087163",
+   "label": "Chase Me",
+   "enwiki": "Chase Me"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q10826261",
+   "label": "Batman: Arkham Origins",
+   "enwiki": "Batman: Arkham Origins"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q10856847",
+   "label": "Batman: Arkham Origins Blackgate",
+   "enwiki": "Batman: Arkham Origins Blackgate"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q15091564",
+   "label": "Batman: Arkham Origins",
+   "enwiki": "Batman: Arkham Origins (mobile)"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q15635431",
+   "label": "Son of Batman",
+   "enwiki": "Son of Batman"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q15891648",
+   "label": "Batman: Arkham Knight",
+   "enwiki": "Batman: Arkham Knight"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q558962",
+   "label": "Batman: Dark Tomorrow",
+   "enwiki": "Batman: Dark Tomorrow"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q635933",
+   "label": "The Batman",
+   "enwiki": "The Batman (TV series)"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q673517",
+   "label": "Batman: The Animated Series",
+   "enwiki": "Batman: The Animated Series"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q746228",
+   "label": "Batman: Arkham Asylum",
+   "enwiki": "Batman: Arkham Asylum"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q810858",
+   "label": "Batman: Mask of the Phantasm",
+   "enwiki": "Batman: Mask of the Phantasm"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q810856",
+   "label": "The Adventures of Batman",
+   "enwiki": "The Adventures of Batman"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q810857",
+   "label": "Batman",
+   "enwiki": "Batman (1966 film)"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q16155090",
+   "label": "Batman",
+   "enwiki": "Batman (2013 arcade game)"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q16155099",
+   "label": "Batman: Assault on Arkham",
+   "enwiki": "Batman: Assault on Arkham"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q17985775",
+   "label": "Batman: The Ride",
+   "enwiki": "Batman: The Ride (S&S Free Spin)"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q18844637",
+   "label": "Batman vs. Robin",
+   "enwiki": "Batman vs. Robin"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q23647031",
+   "label": "Batman: The Killing Joke",
+   "enwiki": "Batman: The Killing Joke (film)"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q25442668",
+   "label": "Batman",
+   "enwiki": "Batman (Thomas Wayne)"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q30080476",
+   "label": "Batman and Harley Quinn",
+   "enwiki": "Batman and Harley Quinn"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q39075549",
+   "label": "Bruce Wayne",
+   "enwiki": "Bruce Wayne (Gotham)"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q48833172",
+   "label": "Batwoman",
+   "enwiki": "Batwoman"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q57394119",
+   "label": "Batman",
+   "enwiki": "Bruce Wayne (DC Extended Universe)"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q63197020",
+   "label": "The Batman Who Laughs",
+   "enwiki": "The Batman Who Laughs"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q78607187",
+   "label": "Bruce Wayne",
+   "enwiki": "Bruce Wayne (Dark Knight trilogy)"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q94496874",
+   "label": "Bruce Wayne",
+   "enwiki": "Bruce Wayne (1989 film series character)"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q123466026",
+   "label": "Merry Little Batman",
+   "enwiki": "Merry Little Batman"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q125501091",
+   "label": "Batman: Resurrection",
+   "enwiki": "Batman: Resurrection"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q130267916",
+   "label": "Aztec Batman: Clash of Empires",
+   "enwiki": "Aztec Batman: Clash of Empires"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q139895131",
+   "label": "Riggan Thomson",
+   "enwiki": "Riggan Thomson"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q958989",
+   "label": "Nite Owl",
+   "enwiki": null
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q2438285",
+   "label": "Dark Claw",
+   "enwiki": null
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q4869384",
+   "label": "Batman",
+   "enwiki": null
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q5970230",
+   "label": "Q5970230",
+   "enwiki": null
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q10264700",
+   "label": "Batman",
+   "enwiki": null
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q17996919",
+   "label": "Batman: The Dark Knight Returns, Part 2",
+   "enwiki": null
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q30501762",
+   "label": "Batman: The Dark Knight Returns, Part 1",
+   "enwiki": null
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q64658410",
+   "label": "Batman",
+   "enwiki": null
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q84051105",
+   "label": "Q84051105",
+   "enwiki": null
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q111269917",
+   "label": "Batman",
+   "enwiki": null
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q111726636",
+   "label": "Bruce Wayne",
+   "enwiki": null
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q139381935",
+   "label": "Q139381935",
+   "enwiki": null
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q140369299",
+   "label": "Batman",
+   "enwiki": null
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q810861",
+   "label": "Batman: Mystery of the Batwoman",
+   "enwiki": "Batman: Mystery of the Batwoman"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q1247201",
+   "label": "Batman",
+   "enwiki": "Batman (TV series)"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q1339570",
+   "label": "Batman Beyond",
+   "enwiki": "Batman Beyond"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q1573706",
+   "label": "Batman Beyond: Return of the Joker",
+   "enwiki": "Batman Beyond: Return of the Joker"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q1986193",
+   "label": "Buzz Lightyear",
+   "enwiki": "Buzz Lightyear"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q2287397",
+   "label": "Batman: Gotham Knight",
+   "enwiki": "Batman: Gotham Knight"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q2384094",
+   "label": "Batman: Under the Red Hood",
+   "enwiki": "Batman: Under the Red Hood"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q2604987",
+   "label": "Batzarro",
+   "enwiki": "Batzarro"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q2891574",
+   "label": "Batman: Arkham Asylum (roller coaster)",
+   "enwiki": "Shadows of Arkham"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q116852",
+   "label": "Batman",
+   "enwiki": "Batman (1989 film)"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q288811",
+   "label": "Batman: Arkham City",
+   "enwiki": "Batman: Arkham City"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q558962",
+   "label": "Batman: Dark Tomorrow",
+   "enwiki": "Batman: Dark Tomorrow"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q635933",
+   "label": "The Batman",
+   "enwiki": "The Batman (TV series)"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q673517",
+   "label": "Batman: The Animated Series",
+   "enwiki": "Batman: The Animated Series"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q746228",
+   "label": "Batman: Arkham Asylum",
+   "enwiki": "Batman: Arkham Asylum"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q1339570",
+   "label": "Batman Beyond",
+   "enwiki": "Batman Beyond"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q2287397",
+   "label": "Batman: Gotham Knight",
+   "enwiki": "Batman: Gotham Knight"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q2604987",
+   "label": "Batzarro",
+   "enwiki": "Batzarro"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q3636199",
+   "label": "Batman",
+   "enwiki": "Batman (Earth-Two)"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q3636202",
+   "label": "Batman of Zur-En-Arrh",
+   "enwiki": "Batman of Zur-En-Arrh"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q10826261",
+   "label": "Batman: Arkham Origins",
+   "enwiki": "Batman: Arkham Origins"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q10856847",
+   "label": "Batman: Arkham Origins Blackgate",
+   "enwiki": "Batman: Arkham Origins Blackgate"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q15091564",
+   "label": "Batman: Arkham Origins",
+   "enwiki": "Batman: Arkham Origins (mobile)"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q15891648",
+   "label": "Batman: Arkham Knight",
+   "enwiki": "Batman: Arkham Knight"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q16155090",
+   "label": "Batman",
+   "enwiki": "Batman (2013 arcade game)"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q25442668",
+   "label": "Batman",
+   "enwiki": "Batman (Thomas Wayne)"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q39075549",
+   "label": "Bruce Wayne",
+   "enwiki": "Bruce Wayne (Gotham)"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q57394119",
+   "label": "Batman",
+   "enwiki": "Bruce Wayne (DC Extended Universe)"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q78607187",
+   "label": "Bruce Wayne",
+   "enwiki": "Bruce Wayne (Dark Knight trilogy)"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q94496874",
+   "label": "Bruce Wayne",
+   "enwiki": "Bruce Wayne (1989 film series character)"
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q958989",
+   "label": "Nite Owl",
+   "enwiki": null
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q2438285",
+   "label": "Dark Claw",
+   "enwiki": null
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q4869384",
+   "label": "Batman",
+   "enwiki": null
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q10264700",
+   "label": "Batman",
+   "enwiki": null
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q64658410",
+   "label": "Batman",
+   "enwiki": null
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q111269917",
+   "label": "Batman",
+   "enwiki": null
+  },
+  {
+   "seed": "Bruce Wayne",
+   "seed_qid": "Q2695156",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q111726636",
+   "label": "Bruce Wayne",
+   "enwiki": null
+  },
+  {
+   "seed": "Batman (comic book)",
+   "seed_qid": "Q2633138",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q205575",
+   "label": "Batman",
+   "enwiki": "Batman (serial)"
+  },
+  {
+   "seed": "Batman (comic book)",
+   "seed_qid": "Q2633138",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q555897",
+   "label": "Batman: Return of the Joker",
+   "enwiki": "Batman: Return of the Joker"
+  },
+  {
+   "seed": "Batman (comic book)",
+   "seed_qid": "Q2633138",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q810881",
+   "label": "Bat Pussy",
+   "enwiki": "Bat Pussy"
+  },
+  {
+   "seed": "Batman (comic book)",
+   "seed_qid": "Q2633138",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q23647030",
+   "label": "Batman: The Telltale Series",
+   "enwiki": "Batman: The Telltale Series"
+  },
+  {
+   "seed": "Batman (comic book)",
+   "seed_qid": "Q2633138",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q27067490",
+   "label": "Batman: Arkham VR",
+   "enwiki": "Batman: Arkham VR"
+  },
+  {
+   "seed": "Batman (comic book)",
+   "seed_qid": "Q2633138",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q35236980",
+   "label": "Batman: The Enemy Within",
+   "enwiki": "Batman: The Enemy Within"
+  },
+  {
+   "seed": "Batman (comic book)",
+   "seed_qid": "Q2633138",
+   "prop": "P144",
+   "direction": "in",
+   "qid": "Q22808794",
+   "label": "Batgirl XXX: An Extreme Comixxx Parody",
+   "enwiki": null
+  },
+  {
+   "seed": "Batman (comic book)",
+   "seed_qid": "Q2633138",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q205575",
+   "label": "Batman",
+   "enwiki": "Batman (serial)"
+  },
+  {
+   "seed": "Batman (comic book)",
+   "seed_qid": "Q2633138",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q555897",
+   "label": "Batman: Return of the Joker",
+   "enwiki": "Batman: Return of the Joker"
+  },
+  {
+   "seed": "Batman (comic book)",
+   "seed_qid": "Q2633138",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q1247201",
+   "label": "Batman",
+   "enwiki": "Batman (TV series)"
+  },
+  {
+   "seed": "Batman (comic book)",
+   "seed_qid": "Q2633138",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q23647030",
+   "label": "Batman: The Telltale Series",
+   "enwiki": "Batman: The Telltale Series"
+  },
+  {
+   "seed": "Batman (comic book)",
+   "seed_qid": "Q2633138",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q27067490",
+   "label": "Batman: Arkham VR",
+   "enwiki": "Batman: Arkham VR"
+  },
+  {
+   "seed": "Batman (comic book)",
+   "seed_qid": "Q2633138",
+   "prop": "P4969",
+   "direction": "out",
+   "qid": "Q35236980",
+   "label": "Batman: The Enemy Within",
+   "enwiki": "Batman: The Enemy Within"
+  }
+ ]
+}

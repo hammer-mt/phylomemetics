@@ -1,0 +1,7951 @@
+{
+ "description": "T1d fresh lineage: Shakespeare's plays (candidates) and their film adaptations (targets). A source is documented by a 'Films based on <play>' category, a Wikidata P144 link or a lead sentence saying the film is based on or adapted from the play; evidence_tier = lead_or_p144 when a lead sentence or P144 documents it, category_only otherwise. Primary = one documented play, not in DEV, plot names neither Shakespeare nor a non-eponymous play title. Renamed = primary and fewer than 2 of the play's distinctive principal names appear in the plot (names_flag changes_names; this measures names only, not setting or wording). H5 sample = renamed, evidence_tier lead_or_p144, not a remake of a DEV work. drift_sample = at most 6 H5 films per play in sha256 order (T1b). Plays: commentary sentences dropped by a fixed rule (build_lists.COMMENTARY), then the first 80 sentences.",
+ "counts": {
+  "plays": 40,
+  "eligible_films": 177,
+  "primary": 141,
+  "renamed_primary": 83,
+  "h5": 54,
+  "h5_plays": 13,
+  "h5_by_play": {
+   "Romeo and Juliet": 14,
+   "Taming of the Shrew": 8,
+   "Macbeth": 6,
+   "King Lear": 4,
+   "Comedy of Errors": 4,
+   "Twelfth Night": 4,
+   "Othello": 3,
+   "The Tempest": 3,
+   "Hamlet": 3,
+   "Midsummer Night's Dream": 2,
+   "Two Gentlemen": 1,
+   "Much Ado": 1,
+   "Antony and Cleopatra": 1
+  },
+  "h5_single_film_plays": [
+   "Antony and Cleopatra",
+   "Much Ado",
+   "Two Gentlemen"
+  ],
+  "renamed_category_only": 27,
+  "drift_sample": 44,
+  "drift_by_play": {
+   "Taming of the Shrew": 6,
+   "Romeo and Juliet": 6,
+   "Macbeth": 6,
+   "King Lear": 4,
+   "Comedy of Errors": 4,
+   "Twelfth Night": 4,
+   "Othello": 3,
+   "The Tempest": 3,
+   "Hamlet": 3,
+   "Midsummer Night's Dream": 2,
+   "Two Gentlemen": 1,
+   "Much Ado": 1,
+   "Antony and Cleopatra": 1
+  },
+  "films_truncated_at_40": 24,
+  "plays_with_commentary_dropped": {
+   "As You Like It": 2,
+   "Love's Labour's Lost": 1,
+   "Measure for Measure": 8,
+   "Merchant of Venice": 1,
+   "Midsummer Night's Dream": 1,
+   "Two Noble Kinsmen": 1,
+   "Winter's Tale": 1,
+   "The Tempest": 1,
+   "Troilus and Cressida": 3,
+   "Henry IV Part 1": 1,
+   "Henry IV Part 2": 4,
+   "Henry V": 6,
+   "Henry VI Part 1": 1,
+   "Henry VI Part 3": 1,
+   "Richard III": 3,
+   "Henry VIII": 3,
+   "Julius Caesar": 1,
+   "Antony and Cleopatra": 1
+  },
+  "primary_by_play": {
+   "Romeo and Juliet": 42,
+   "Hamlet": 16,
+   "Macbeth": 13,
+   "Othello": 10,
+   "Taming of the Shrew": 10,
+   "King Lear": 9,
+   "Twelfth Night": 7,
+   "Comedy of Errors": 6,
+   "The Tempest": 6,
+   "Midsummer Night's Dream": 5,
+   "Antony and Cleopatra": 5,
+   "Much Ado": 2,
+   "Love's Labour's Lost": 2,
+   "Two Gentlemen": 1,
+   "As You Like It": 1,
+   "Coriolanus": 1,
+   "Cymbeline": 1,
+   "Henry V": 1,
+   "Richard III": 1,
+   "Merchant of Venice": 1,
+   "Titus Andronicus": 1
+  }
+ },
+ "excluded_reference_film": "The Lion King (a documented Hamlet adaptation) is dropped from the reference films for T1d",
+ "plays": [
+  {
+   "id": "All's Well",
+   "title": "All's Well That Ends Well",
+   "section": "Synopsis",
+   "n_sentences": 21,
+   "n_sentences_full": 21,
+   "n_commentary_dropped": 0,
+   "principal_names": [
+    "Helena",
+    "Bertram",
+    "Parolles",
+    "Diana",
+    "Lafeu"
+   ],
+   "sha256": "47841a670912105b8d5103613c4ed6b04803e5f8db4b21e53d36555ca7e20210"
+  },
+  {
+   "id": "As You Like It",
+   "title": "As You Like It",
+   "section": "Synopsis",
+   "n_sentences": 19,
+   "n_sentences_full": 21,
+   "n_commentary_dropped": 2,
+   "principal_names": [
+    "Rosalind",
+    "Orlando",
+    "Celia",
+    "Touchstone",
+    "Jaques",
+    "Oliver"
+   ],
+   "sha256": "4eff697fba1e0f75a05c28e044c73b9188be8a5dc24fd488654cbd38c048272f"
+  },
+  {
+   "id": "Comedy of Errors",
+   "title": "The Comedy of Errors",
+   "section": "Synopsis",
+   "n_sentences": 49,
+   "n_sentences_full": 49,
+   "n_commentary_dropped": 0,
+   "principal_names": [
+    "Antipholus",
+    "Dromio",
+    "Adriana",
+    "Luciana",
+    "Egeon",
+    "Aemilia"
+   ],
+   "sha256": "7c69f3ea337a29314080654832b4db67194ef7641a8672824a60aac4715db63f"
+  },
+  {
+   "id": "Love's Labour's Lost",
+   "title": "Love's Labour's Lost",
+   "section": "Synopsis",
+   "n_sentences": 22,
+   "n_sentences_full": 23,
+   "n_commentary_dropped": 1,
+   "principal_names": [
+    "Navarre",
+    "Berowne",
+    "Longaville",
+    "Dumaine",
+    "Rosaline",
+    "Boyet"
+   ],
+   "sha256": "7ca3dd824f457c106aa2f917c156c3d396665f9b6961a9392cf6a0a63b04832b"
+  },
+  {
+   "id": "Measure for Measure",
+   "title": "Measure for Measure",
+   "section": "Synopsis and themes",
+   "n_sentences": 38,
+   "n_sentences_full": 46,
+   "n_commentary_dropped": 8,
+   "principal_names": [
+    "Angelo",
+    "Isabella",
+    "Claudio",
+    "Vincentio",
+    "Mariana",
+    "Lucio"
+   ],
+   "sha256": "cc2d0eed9d81a24a0692fe31ca6340b03f1bc4281bd098f5c004760f6a864172"
+  },
+  {
+   "id": "Merchant of Venice",
+   "title": "The Merchant of Venice",
+   "section": "Plot summary",
+   "n_sentences": 52,
+   "n_sentences_full": 53,
+   "n_commentary_dropped": 1,
+   "principal_names": [
+    "Shylock",
+    "Antonio",
+    "Bassanio",
+    "Portia",
+    "Jessica",
+    "Gratiano"
+   ],
+   "sha256": "11aed9ba90d03b39665a33d96504c9c849d05756c6312bce13bbe47091c40123"
+  },
+  {
+   "id": "Merry Wives",
+   "title": "The Merry Wives of Windsor",
+   "section": "Plot",
+   "n_sentences": 44,
+   "n_sentences_full": 44,
+   "n_commentary_dropped": 0,
+   "principal_names": [
+    "Falstaff",
+    "Ford",
+    "Page",
+    "Quickly",
+    "Fenton",
+    "Slender"
+   ],
+   "sha256": "ba265a203f2e430b8b772b5acfb0bffd61638693cb482b38ae37aad02ac7b373"
+  },
+  {
+   "id": "Midsummer Night's Dream",
+   "title": "A Midsummer Night's Dream",
+   "section": "Plot",
+   "n_sentences": 71,
+   "n_sentences_full": 72,
+   "n_commentary_dropped": 1,
+   "principal_names": [
+    "Hermia",
+    "Lysander",
+    "Demetrius",
+    "Helena",
+    "Oberon",
+    "Titania",
+    "Puck",
+    "Bottom"
+   ],
+   "sha256": "68d0ab40bb26db774bec4edd9b39207af55ea9f387ebca73c797a645c2f7ef0b"
+  },
+  {
+   "id": "Much Ado",
+   "title": "Much Ado About Nothing",
+   "section": "Plot overview",
+   "n_sentences": 44,
+   "n_sentences_full": 44,
+   "n_commentary_dropped": 0,
+   "principal_names": [
+    "Beatrice",
+    "Benedick",
+    "Hero",
+    "Claudio",
+    "Don John",
+    "Dogberry"
+   ],
+   "sha256": "5d22bce7bacd5f329411dcccc1507c75a58315138f57597ea6a1204e3a4747b8"
+  },
+  {
+   "id": "Taming of the Shrew",
+   "title": "The Taming of the Shrew",
+   "section": "Synopsis",
+   "n_sentences": 38,
+   "n_sentences_full": 38,
+   "n_commentary_dropped": 0,
+   "principal_names": [
+    "Katherina",
+    "Petruchio",
+    "Bianca",
+    "Baptista",
+    "Lucentio",
+    "Hortensio"
+   ],
+   "sha256": "88ebb20ef023a394104eb9b87240ae3ed7916eb5fab87671f3650711c79ca6f4"
+  },
+  {
+   "id": "Twelfth Night",
+   "title": "Twelfth Night",
+   "section": "Synopsis",
+   "n_sentences": 34,
+   "n_sentences_full": 34,
+   "n_commentary_dropped": 0,
+   "principal_names": [
+    "Viola",
+    "Orsino",
+    "Olivia",
+    "Sebastian",
+    "Malvolio",
+    "Toby"
+   ],
+   "sha256": "6b2d46f830f5aa08e8679a63819bd1d16f7b33956fd3331274629792c40ec29e"
+  },
+  {
+   "id": "Two Gentlemen",
+   "title": "The Two Gentlemen of Verona",
+   "section": "Summary",
+   "n_sentences": 31,
+   "n_sentences_full": 31,
+   "n_commentary_dropped": 0,
+   "principal_names": [
+    "Valentine",
+    "Proteus",
+    "Julia",
+    "Silvia",
+    "Launce"
+   ],
+   "sha256": "3618ffddce12caae490a5ff0de1f707fdabf5032cb425e538b724ed24bc00999"
+  },
+  {
+   "id": "Two Noble Kinsmen",
+   "title": "The Two Noble Kinsmen",
+   "section": "Synopsis",
+   "n_sentences": 34,
+   "n_sentences_full": 35,
+   "n_commentary_dropped": 1,
+   "principal_names": [
+    "Palamon",
+    "Arcite",
+    "Emilia",
+    "Theseus"
+   ],
+   "sha256": "aea57c4cfb6586fa0e1158caeaaf0e9332a55fe264711017c4fcc03b8581cfc4"
+  },
+  {
+   "id": "Winter's Tale",
+   "title": "The Winter's Tale",
+   "section": "Synopsis",
+   "n_sentences": 41,
+   "n_sentences_full": 42,
+   "n_commentary_dropped": 1,
+   "principal_names": [
+    "Leontes",
+    "Hermione",
+    "Perdita",
+    "Polixenes",
+    "Florizel",
+    "Paulina"
+   ],
+   "sha256": "f2f8950003cbd65683b664d77579933f4d8acab71d15c264aeac0f2b11f1507a"
+  },
+  {
+   "id": "Cymbeline",
+   "title": "Cymbeline",
+   "section": "Summary",
+   "n_sentences": 56,
+   "n_sentences_full": 56,
+   "n_commentary_dropped": 0,
+   "principal_names": [
+    "Cymbeline",
+    "Imogen",
+    "Innogen",
+    "Posthumus",
+    "Iachimo",
+    "Cloten"
+   ],
+   "sha256": "9b1796e287b2a2fc674ae3e785fece02128db0b23366ecd61fd47c0d5933dbf1"
+  },
+  {
+   "id": "Pericles",
+   "title": "Pericles, Prince of Tyre",
+   "section": "Synopsis",
+   "n_sentences": 35,
+   "n_sentences_full": 35,
+   "n_commentary_dropped": 0,
+   "principal_names": [
+    "Pericles",
+    "Marina",
+    "Thaisa",
+    "Antiochus",
+    "Cleon"
+   ],
+   "sha256": "067a9b8a25b9abdab4d7704130471865683f10d4b754173668316af75e3a6538"
+  },
+  {
+   "id": "The Tempest",
+   "title": "The Tempest",
+   "section": "Plot",
+   "n_sentences": 29,
+   "n_sentences_full": 30,
+   "n_commentary_dropped": 1,
+   "principal_names": [
+    "Prospero",
+    "Miranda",
+    "Ariel",
+    "Caliban",
+    "Ferdinand",
+    "Alonso"
+   ],
+   "sha256": "403de28b9a57a3f6c218a7674d721d961f000ce9b892e7ff9052819bf78a2255"
+  },
+  {
+   "id": "Troilus and Cressida",
+   "title": "Troilus and Cressida",
+   "section": "Plot",
+   "n_sentences": 80,
+   "n_sentences_full": 127,
+   "n_commentary_dropped": 3,
+   "principal_names": [
+    "Troilus",
+    "Cressida",
+    "Pandarus",
+    "Achilles",
+    "Hector",
+    "Ulysses"
+   ],
+   "sha256": "e7ea46888e37039388cb97ab4dc3aea4aed2ee28e157c29c2e37c7bba1056962"
+  },
+  {
+   "id": "King John",
+   "title": "King John (play)",
+   "section": "Synopsis",
+   "n_sentences": 51,
+   "n_sentences_full": 51,
+   "n_commentary_dropped": 0,
+   "principal_names": [
+    "John",
+    "Arthur",
+    "Philip",
+    "Constance",
+    "Hubert",
+    "Pandulph"
+   ],
+   "sha256": "72ae61cd06873eeadb434818d090f6ee2ce06b39513119b18ae507052f4c5453"
+  },
+  {
+   "id": "Richard II",
+   "title": "Richard II (play)",
+   "section": "Synopsis",
+   "n_sentences": 25,
+   "n_sentences_full": 25,
+   "n_commentary_dropped": 0,
+   "principal_names": [
+    "Richard",
+    "Bolingbroke",
+    "Gaunt",
+    "York",
+    "Aumerle",
+    "Mowbray"
+   ],
+   "sha256": "87bb0b02d2d5387ac73e1036d02e5ddb4c7b593e4a19f6d462cb9e4ded82696c"
+  },
+  {
+   "id": "Henry IV Part 1",
+   "title": "Henry IV, Part 1",
+   "section": "Synopsis",
+   "n_sentences": 37,
+   "n_sentences_full": 38,
+   "n_commentary_dropped": 1,
+   "principal_names": [
+    "Hal",
+    "Falstaff",
+    "Hotspur",
+    "Henry",
+    "Poins",
+    "Glendower"
+   ],
+   "sha256": "195a01a5b7b06424efda1cb371412d6e3ddd5b536bb9889286ea2d2328cd6341"
+  },
+  {
+   "id": "Henry IV Part 2",
+   "title": "Henry IV, Part 2",
+   "section": "Synopsis",
+   "n_sentences": 40,
+   "n_sentences_full": 44,
+   "n_commentary_dropped": 4,
+   "principal_names": [
+    "Hal",
+    "Falstaff",
+    "Henry",
+    "Shallow",
+    "Pistol",
+    "Quickly"
+   ],
+   "sha256": "88dc44ab327cd7187b0434ec1ab20ea93f2226bfbcff9b4e39121364f765604d"
+  },
+  {
+   "id": "Henry V",
+   "title": "Henry V (play)",
+   "section": "Synopsis",
+   "n_sentences": 30,
+   "n_sentences_full": 36,
+   "n_commentary_dropped": 6,
+   "principal_names": [
+    "Henry",
+    "Fluellen",
+    "Pistol",
+    "Katherine",
+    "Dauphin",
+    "Exeter"
+   ],
+   "sha256": "4708cd682a9bb4e227c23112dfb2addcb327b3e6161faa1496a7b2c39df8f4d7"
+  },
+  {
+   "id": "Henry VI Part 1",
+   "title": "Henry VI, Part 1",
+   "section": "Synopsis",
+   "n_sentences": 37,
+   "n_sentences_full": 38,
+   "n_commentary_dropped": 1,
+   "principal_names": [
+    "Talbot",
+    "Joan",
+    "Henry",
+    "Gloucester",
+    "Suffolk",
+    "Margaret"
+   ],
+   "sha256": "c661ec56af73a4fca0d12c9128e8e90efa00087ad32fcc705ea90dfd7b3b8964"
+  },
+  {
+   "id": "Henry VI Part 2",
+   "title": "Henry VI, Part 2",
+   "section": "Synopsis",
+   "n_sentences": 23,
+   "n_sentences_full": 23,
+   "n_commentary_dropped": 0,
+   "principal_names": [
+    "Henry",
+    "Gloucester",
+    "Margaret",
+    "Suffolk",
+    "York",
+    "Cade"
+   ],
+   "sha256": "c2f9eba69c0968356a865e0685786fb01b3f75033ca1388be9b5bce4cfaa9c0f"
+  },
+  {
+   "id": "Henry VI Part 3",
+   "title": "Henry VI, Part 3",
+   "section": "Synopsis",
+   "n_sentences": 43,
+   "n_sentences_full": 44,
+   "n_commentary_dropped": 1,
+   "principal_names": [
+    "Henry",
+    "Margaret",
+    "Edward",
+    "Warwick",
+    "Richard",
+    "Clifford"
+   ],
+   "sha256": "a84e4e0f3004a2f784cf64e6ad9f6e655e10ceb11dbcf51ba4959f062e6b49cf"
+  },
+  {
+   "id": "Richard III",
+   "title": "Richard III (play)",
+   "section": "Synopsis",
+   "n_sentences": 44,
+   "n_sentences_full": 47,
+   "n_commentary_dropped": 3,
+   "principal_names": [
+    "Richard",
+    "Buckingham",
+    "Clarence",
+    "Anne",
+    "Richmond",
+    "Elizabeth"
+   ],
+   "sha256": "4190d9852520b8fabb60c9692bf7da30864ee456089ea0053e38abfa833f4554"
+  },
+  {
+   "id": "Henry VIII",
+   "title": "Henry VIII (play)",
+   "section": "Synopsis",
+   "n_sentences": 42,
+   "n_sentences_full": 45,
+   "n_commentary_dropped": 3,
+   "principal_names": [
+    "Henry",
+    "Wolsey",
+    "Katherine",
+    "Anne",
+    "Buckingham",
+    "Cranmer"
+   ],
+   "sha256": "07fd35dde63d5cb79dde035dc981643acbe2566c40b8a8318377b80e8fc2b120"
+  },
+  {
+   "id": "Edward III",
+   "title": "Edward III (play)",
+   "section": "Synopsis",
+   "n_sentences": 32,
+   "n_sentences_full": 32,
+   "n_commentary_dropped": 0,
+   "principal_names": [
+    "Edward",
+    "Countess",
+    "Warwick",
+    "Prince",
+    "John"
+   ],
+   "sha256": "dcc652662772cbc9b379655680331017d7a9c49de5756a75d5c095b64e1265e7"
+  },
+  {
+   "id": "Titus Andronicus",
+   "title": "Titus Andronicus",
+   "section": "Plot",
+   "n_sentences": 42,
+   "n_sentences_full": 42,
+   "n_commentary_dropped": 0,
+   "principal_names": [
+    "Titus",
+    "Tamora",
+    "Aaron",
+    "Lavinia",
+    "Saturninus",
+    "Lucius"
+   ],
+   "sha256": "4351c22cc7577a1534a7e19634256c80881e4c1ad343ec51c2c0fc14f0da7a34"
+  },
+  {
+   "id": "Romeo and Juliet",
+   "title": "Romeo and Juliet",
+   "section": "Synopsis",
+   "n_sentences": 36,
+   "n_sentences_full": 36,
+   "n_commentary_dropped": 0,
+   "principal_names": [
+    "Romeo",
+    "Juliet",
+    "Mercutio",
+    "Tybalt",
+    "Benvolio",
+    "Laurence",
+    "Paris"
+   ],
+   "sha256": "ce394024c570662c3bfa5bd67e34366d0e4d639b45195ab3a7bc3782af77afde"
+  },
+  {
+   "id": "Julius Caesar",
+   "title": "Julius Caesar (play)",
+   "section": "Synopsis",
+   "n_sentences": 36,
+   "n_sentences_full": 37,
+   "n_commentary_dropped": 1,
+   "principal_names": [
+    "Caesar",
+    "Brutus",
+    "Cassius",
+    "Antony",
+    "Portia",
+    "Casca"
+   ],
+   "sha256": "af434df5c14a3c802d8310fe4624fb985644269f38fed90998314f2d82bb15b7"
+  },
+  {
+   "id": "Hamlet",
+   "title": "Hamlet",
+   "section": "Plot",
+   "n_sentences": 45,
+   "n_sentences_full": 45,
+   "n_commentary_dropped": 0,
+   "principal_names": [
+    "Hamlet",
+    "Claudius",
+    "Gertrude",
+    "Ophelia",
+    "Polonius",
+    "Laertes",
+    "Horatio"
+   ],
+   "sha256": "70e7c605999551ed88c47047c19cc9474c61b09a99001d7d9a310eca98772581"
+  },
+  {
+   "id": "Othello",
+   "title": "Othello",
+   "section": "Plot",
+   "n_sentences": 48,
+   "n_sentences_full": 48,
+   "n_commentary_dropped": 0,
+   "principal_names": [
+    "Othello",
+    "Iago",
+    "Desdemona",
+    "Cassio",
+    "Emilia",
+    "Roderigo"
+   ],
+   "sha256": "ae550f10be46696ec89a4f69ba38dd35498865327d6d8e7b76831db96742f41b"
+  },
+  {
+   "id": "King Lear",
+   "title": "King Lear",
+   "section": "Plot",
+   "n_sentences": 54,
+   "n_sentences_full": 54,
+   "n_commentary_dropped": 0,
+   "principal_names": [
+    "Lear",
+    "Goneril",
+    "Regan",
+    "Cordelia",
+    "Gloucester",
+    "Edmund",
+    "Edgar"
+   ],
+   "sha256": "354c1b0e78f6de179875bfc3e5c6eaecbc447fb1b9bf7c3f8b2844591dcd8150"
+  },
+  {
+   "id": "Macbeth",
+   "title": "Macbeth",
+   "section": "Plot",
+   "n_sentences": 64,
+   "n_sentences_full": 64,
+   "n_commentary_dropped": 0,
+   "principal_names": [
+    "Macbeth",
+    "Banquo",
+    "Duncan",
+    "Macduff",
+    "Malcolm",
+    "Fleance"
+   ],
+   "sha256": "742bf8aca2416b6fa8c669c3299255519395143e874263e806875bc556569a94"
+  },
+  {
+   "id": "Antony and Cleopatra",
+   "title": "Antony and Cleopatra",
+   "section": "Synopsis",
+   "n_sentences": 53,
+   "n_sentences_full": 54,
+   "n_commentary_dropped": 1,
+   "principal_names": [
+    "Antony",
+    "Cleopatra",
+    "Octavius",
+    "Enobarbus",
+    "Octavia",
+    "Lepidus"
+   ],
+   "sha256": "5d370102bef4cf9962ba5625dee74652be222b424746e85898e73d64d7184fcd"
+  },
+  {
+   "id": "Coriolanus",
+   "title": "Coriolanus",
+   "section": "Synopsis",
+   "n_sentences": 29,
+   "n_sentences_full": 29,
+   "n_commentary_dropped": 0,
+   "principal_names": [
+    "Coriolanus",
+    "Volumnia",
+    "Aufidius",
+    "Menenius",
+    "Virgilia",
+    "Martius"
+   ],
+   "sha256": "f7d331c41a3028b87aa38fe3fb5c1a2982e87da83a21d9222be1f1387452242b"
+  },
+  {
+   "id": "Timon of Athens",
+   "title": "Timon of Athens",
+   "section": "Synopsis",
+   "n_sentences": 40,
+   "n_sentences_full": 40,
+   "n_commentary_dropped": 0,
+   "principal_names": [
+    "Timon",
+    "Apemantus",
+    "Alcibiades",
+    "Flavius"
+   ],
+   "sha256": "e0b7120f88d3277a85854999c7074fc85824c9e0dbc286d91b02c0c61bf527bf"
+  },
+  {
+   "id": "Sir Thomas More",
+   "title": "Sir Thomas More (play)",
+   "section": "Synopsis",
+   "n_sentences": 36,
+   "n_sentences_full": 36,
+   "n_commentary_dropped": 0,
+   "principal_names": [
+    "More",
+    "Surrey",
+    "Lincoln"
+   ],
+   "sha256": "91a176d19ef97d5f96e820cb7172fb7c6fdbb4a4f143489f72217794fb93b490"
+  }
+ ],
+ "films": [
+  {
+   "id": "10 Things I Hate About You",
+   "title": "10 Things I Hate About You",
+   "shortdesc": "1999 film by Gil Junger",
+   "medium": "film",
+   "sources": [
+    "Taming of the Shrew"
+   ],
+   "evidence": {
+    "Taming of the Shrew": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Adapted from William Shakespeare's comedy The Taming of the Shrew, it stars Julia Stiles, Heath Ledger, Joseph Gordon-Levitt, Larisa Oleynik, Larry Miller, Andrew Keegan, David Krumholtz, Susan May Pratt, and Gabrielle Union.",
+   "names_flag": "partial",
+   "names_found": {
+    "Taming of the Shrew": {
+     "found": [
+      "Bianca"
+     ],
+     "distinctive": [
+      "Bianca"
+     ],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": true,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": false,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 31,
+   "truncated": false,
+   "sha256": "04aa75385a549a64709e7cb5f496caf2065fca3d63c70a803daecb9a4497a233",
+   "drift_sample": false
+  },
+  {
+   "id": "10ml Love",
+   "title": "10ml Love",
+   "shortdesc": "2012 Indian romantic comedy film",
+   "medium": "film",
+   "sources": [
+    "Midsummer Night's Dream"
+   ],
+   "evidence": {
+    "Midsummer Night's Dream": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Inspired by William Shakespeare's A Midsummer Night's Dream (whose sources include Ovid's Metamorphoses and Geoffrey Chaucer's \"The Knight's Tale\"), it is a contemporary story set in an Indian milieu.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "Midsummer Night's Dream": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 8
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": true,
+   "n_sentences": 13,
+   "truncated": false,
+   "sha256": "af5e3468515ead68735c1e5143fbaa9526c8e18faeebfd12183109486ad3210d",
+   "drift_sample": true
+  },
+  {
+   "id": "A Caribbean Dream",
+   "title": "A Caribbean Dream",
+   "shortdesc": "2017 romantic comedy film",
+   "medium": "film",
+   "sources": [
+    "Midsummer Night's Dream"
+   ],
+   "evidence": {
+    "Midsummer Night's Dream": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "The adaptation of William Shakespeare's A Midsummer Night's Dream was conceptualised and cast by Melissa Simmonds and written by Shakirah Bourne.",
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Midsummer Night's Dream": {
+     "found": [
+      "Hermia",
+      "Lysander",
+      "Demetrius",
+      "Helena",
+      "Oberon",
+      "Titania",
+      "Puck",
+      "Bottom"
+     ],
+     "distinctive": [
+      "Hermia",
+      "Lysander",
+      "Demetrius",
+      "Oberon",
+      "Titania",
+      "Puck"
+     ],
+     "n_principal": 8
+    }
+   },
+   "mentions_source": true,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": false,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 10,
+   "truncated": false,
+   "sha256": "9617d1ca90e25b0637abe555902c611e1cff04f51822624e05d1a4aac440687b",
+   "drift_sample": false
+  },
+  {
+   "id": "A Double Life (1947 film)",
+   "title": "A Double Life (1947 film)",
+   "shortdesc": "1947 American film",
+   "medium": "film",
+   "sources": [
+    "Othello"
+   ],
+   "evidence": {
+    "Othello": [
+     "category"
+    ]
+   },
+   "evidence_tier": "category_only",
+   "lead_evidence": null,
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Othello": {
+     "found": [
+      "Othello",
+      "Desdemona"
+     ],
+     "distinctive": [
+      "Othello",
+      "Desdemona"
+     ],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": true,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": false,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 27,
+   "truncated": false,
+   "sha256": "cd1ef7c27a775dd23fe804ee2b35ec5cb11ce82a4719dfee21cfea00a3921dc1",
+   "drift_sample": false
+  },
+  {
+   "id": "A Midsummer Night's Dream (1935 film)",
+   "title": "A Midsummer Night's Dream (1935 film)",
+   "shortdesc": "1935 film by William Dieterle and Max Reinhardt",
+   "medium": "film",
+   "sources": [
+    "Midsummer Night's Dream"
+   ],
+   "evidence": {
+    "Midsummer Night's Dream": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "A Midsummer Night's Dream is a 1935 American romantic comedy film adaptation of the Shakespearean play of the same name.",
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Midsummer Night's Dream": {
+     "found": [
+      "Hermia",
+      "Lysander",
+      "Demetrius",
+      "Helena",
+      "Oberon",
+      "Titania",
+      "Puck",
+      "Bottom"
+     ],
+     "distinctive": [
+      "Hermia",
+      "Lysander",
+      "Demetrius",
+      "Oberon",
+      "Titania",
+      "Puck"
+     ],
+     "n_principal": 8
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 40,
+   "truncated": true,
+   "sha256": "97015936aba715df993b294876feaa31e54a5ed508eee971be657a07ce94af70",
+   "drift_sample": false
+  },
+  {
+   "id": "A Midsummer Night's Dream (1968 film)",
+   "title": "A Midsummer Night's Dream (1968 film)",
+   "shortdesc": "1968 film by Peter Hall",
+   "medium": "film",
+   "sources": [
+    "Midsummer Night's Dream"
+   ],
+   "evidence": {
+    "Midsummer Night's Dream": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "A Midsummer Night's Dream (known as England's Last Summer in worldwide countries) is a 1968 British film adaptation of the Shakespearean play, produced by the Royal Shakespeare Company and Filmways.",
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Midsummer Night's Dream": {
+     "found": [
+      "Hermia",
+      "Lysander",
+      "Demetrius",
+      "Helena",
+      "Oberon",
+      "Titania",
+      "Puck",
+      "Bottom"
+     ],
+     "distinctive": [
+      "Hermia",
+      "Lysander",
+      "Demetrius",
+      "Oberon",
+      "Titania",
+      "Puck"
+     ],
+     "n_principal": 8
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 40,
+   "truncated": true,
+   "sha256": "d9ab514a0e8e10450bf2de962ffd2bea2f2b80eab5f0750183f286d2394b91b8",
+   "drift_sample": false
+  },
+  {
+   "id": "A Midsummer Night's Dream (1999 film)",
+   "title": "A Midsummer Night's Dream (1999 film)",
+   "shortdesc": "1999 film by Michael Hoffman",
+   "medium": "film",
+   "sources": [
+    "Midsummer Night's Dream"
+   ],
+   "evidence": {
+    "Midsummer Night's Dream": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "A Midsummer Night's Dream is a 1999 fantasy romantic comedy film written, produced, and directed by Michael Hoffman, based on the 1595 play of the same name by William Shakespeare.",
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Midsummer Night's Dream": {
+     "found": [
+      "Hermia",
+      "Lysander",
+      "Demetrius",
+      "Helena",
+      "Oberon",
+      "Titania",
+      "Puck",
+      "Bottom"
+     ],
+     "distinctive": [
+      "Hermia",
+      "Lysander",
+      "Demetrius",
+      "Oberon",
+      "Titania",
+      "Puck"
+     ],
+     "n_principal": 8
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 29,
+   "truncated": false,
+   "sha256": "198da94ee3d748e6ade71cf366ca988bfee921cb597bd2c8abb5b8d4c13ea30e",
+   "drift_sample": false
+  },
+  {
+   "id": "A Midsummer Night's Dream (2017 film)",
+   "title": "A Midsummer Night's Dream (2017 film)",
+   "shortdesc": "2017 American film",
+   "medium": "film",
+   "sources": [
+    "Midsummer Night's Dream"
+   ],
+   "evidence": {
+    "Midsummer Night's Dream": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "A Midsummer Night's Dream is a 2017 film adaptation of the play A Midsummer Night's Dream by William Shakespeare.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "Midsummer Night's Dream": {
+     "found": [
+      "Bottom"
+     ],
+     "distinctive": [],
+     "n_principal": 8
+    }
+   },
+   "mentions_source": true,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": false,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 8,
+   "truncated": false,
+   "sha256": "c26e7fd87a5a6d80cbbbff29133ac46dfbf1c95a0d95aa326064192f43b2d569",
+   "drift_sample": false
+  },
+  {
+   "id": "A Spray of Plum Blossoms",
+   "title": "A Spray of Plum Blossoms",
+   "shortdesc": "1931 film",
+   "medium": "film",
+   "sources": [
+    "Two Gentlemen"
+   ],
+   "evidence": {
+    "Two Gentlemen": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "The film is a loose adaptation of William Shakespeare's The Two Gentlemen of Verona, with an adapted screenplay written by Huang Yicuo.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "Two Gentlemen": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 5
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": true,
+   "n_sentences": 13,
+   "truncated": false,
+   "sha256": "91490531c394e641af8adc71ee9ecbbe6a93eee7334d6e07767993fe60079a2f",
+   "drift_sample": true
+  },
+  {
+   "id": "A Thousand Acres (film)",
+   "title": "A Thousand Acres (film)",
+   "shortdesc": "1997 American film",
+   "medium": "film",
+   "sources": [
+    "King Lear"
+   ],
+   "evidence": {
+    "King Lear": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "It is an adaptation of the Pulitzer Prize-winning novel of the same name by Jane Smiley, which itself is a reworking of William Shakespeare's King Lear.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "King Lear": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": true,
+   "n_sentences": 9,
+   "truncated": false,
+   "sha256": "d1651cf4ef4798893764af21071a63489f7fc2a5d6e9f7df8d5d21e6e95d871b",
+   "drift_sample": true
+  },
+  {
+   "id": "Akkada Ammayi Ikkada Abbayi",
+   "title": "Akkada Ammayi Ikkada Abbayi",
+   "shortdesc": "1996 Indian film",
+   "medium": "film",
+   "sources": [
+    "Romeo and Juliet"
+   ],
+   "evidence": {
+    "Romeo and Juliet": [
+     "category"
+    ]
+   },
+   "evidence_tier": "category_only",
+   "lead_evidence": null,
+   "names_flag": "changes_names",
+   "names_found": {
+    "Romeo and Juliet": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": false,
+   "n_sentences": 13,
+   "truncated": false,
+   "sha256": "5dfd8372223a8ed54e7d1f96f891b3bb03800d6bd5589efff5a578832bb3ef7b",
+   "drift_sample": false
+  },
+  {
+   "id": "All Night Long (1962 film)",
+   "title": "All Night Long (1962 film)",
+   "shortdesc": "British drama by Basil Dearden",
+   "medium": "film",
+   "sources": [
+    "Othello"
+   ],
+   "evidence": {
+    "Othello": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "The story by Nel King and Paul Jarrico (who wrote under the pseudonym \"Peter Achilles\") is an updated version of William Shakespeare's Othello, set in the London jazz scene of the 1960s.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "Othello": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": true,
+   "n_sentences": 23,
+   "truncated": false,
+   "sha256": "9e7c936aaf0455af9ee1f8e350c2201d42c28ece36ba89426ef4e60a82a696f7",
+   "drift_sample": true
+  },
+  {
+   "id": "Amar te duele",
+   "title": "Amar te duele",
+   "shortdesc": "2002 film",
+   "medium": "film",
+   "sources": [
+    "Romeo and Juliet"
+   ],
+   "evidence": {
+    "Romeo and Juliet": [
+     "category"
+    ]
+   },
+   "evidence_tier": "category_only",
+   "lead_evidence": null,
+   "names_flag": "changes_names",
+   "names_found": {
+    "Romeo and Juliet": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": false,
+   "n_sentences": 40,
+   "truncated": true,
+   "sha256": "2c118c9f01a76346870929d817e3fefd989fe2d4e38f6bc25e85a97f2505f86c",
+   "drift_sample": false
+  },
+  {
+   "id": "Ambikapathy (1937 film)",
+   "title": "Ambikapathy (1937 film)",
+   "shortdesc": "1937 Indian Tamil film",
+   "medium": "film?",
+   "sources": [
+    "Romeo and Juliet"
+   ],
+   "evidence": {
+    "Romeo and Juliet": [
+     "category"
+    ]
+   },
+   "evidence_tier": "category_only",
+   "lead_evidence": null,
+   "names_flag": "changes_names",
+   "names_found": {
+    "Romeo and Juliet": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": false,
+   "n_sentences": 12,
+   "truncated": false,
+   "sha256": "c6f08c33e31f1717121bccb97c434d214297aadd6f568521c007283fa4a4ab9f",
+   "drift_sample": false
+  },
+  {
+   "id": "Ambikapathy (1957 film)",
+   "title": "Ambikapathy (1957 film)",
+   "shortdesc": "1957 Indian film",
+   "medium": "film",
+   "sources": [
+    "Romeo and Juliet"
+   ],
+   "evidence": {
+    "Romeo and Juliet": [
+     "category"
+    ]
+   },
+   "evidence_tier": "category_only",
+   "lead_evidence": null,
+   "names_flag": "changes_names",
+   "names_found": {
+    "Romeo and Juliet": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": false,
+   "n_sentences": 33,
+   "truncated": false,
+   "sha256": "146d689243911d29ed81f4a14ad07049a4af2acaae373fa7c051f6b65466be12",
+   "drift_sample": false
+  },
+  {
+   "id": "Ambuttu Imbuttu Embuttu",
+   "title": "Ambuttu Imbuttu Embuttu",
+   "shortdesc": "2005 Indian film",
+   "medium": "film",
+   "sources": [
+    "Comedy of Errors"
+   ],
+   "evidence": {
+    "Comedy of Errors": [
+     "category"
+    ]
+   },
+   "evidence_tier": "category_only",
+   "lead_evidence": null,
+   "names_flag": "changes_names",
+   "names_found": {
+    "Comedy of Errors": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": false,
+   "n_sentences": 8,
+   "truncated": false,
+   "sha256": "05218adbbfe8391fe356d781c6fc90940918b59438e7f6eacb2f0482a05157aa",
+   "drift_sample": false
+  },
+  {
+   "id": "An Imaginary Tale",
+   "title": "An Imaginary Tale",
+   "shortdesc": "1990 Canadian film",
+   "medium": "film",
+   "sources": [
+    "Othello"
+   ],
+   "evidence": {
+    "Othello": [
+     "category"
+    ]
+   },
+   "evidence_tier": "category_only",
+   "lead_evidence": null,
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Othello": {
+     "found": [
+      "Othello",
+      "Desdemona"
+     ],
+     "distinctive": [
+      "Othello",
+      "Desdemona"
+     ],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 9,
+   "truncated": false,
+   "sha256": "10d4a73d9cd2c339e9455899d2c8e8cfe3c0c5bc1aedf40178fdc0e492238b3e",
+   "drift_sample": false
+  },
+  {
+   "id": "Angoor (1982 film)",
+   "title": "Angoor (1982 film)",
+   "shortdesc": "1982 Indian film by Gulzar",
+   "medium": "film",
+   "sources": [
+    "Comedy of Errors"
+   ],
+   "evidence": {
+    "Comedy of Errors": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "The film was a remake of the 1963 Bengali-language comedy film Bhranti Bilas that is based on Ishwar Chandra Vidyasagar's Bengali novel by the same name, which itself is based on Shakespeare's play The Comedy of Errors.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "Comedy of Errors": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": true,
+   "n_sentences": 24,
+   "truncated": false,
+   "sha256": "ba42ead3b482746ad0e58d74045172d91e618264652b7bb0dd44803c1ebf9886",
+   "drift_sample": true
+  },
+  {
+   "id": "Antony and Cleopatra (1913 film)",
+   "title": "Antony and Cleopatra (1913 film)",
+   "shortdesc": "1913 film by Enrico Guazzoni",
+   "medium": "film",
+   "sources": [
+    "Antony and Cleopatra"
+   ],
+   "evidence": {
+    "Antony and Cleopatra": [
+     "category",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": null,
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Antony and Cleopatra": {
+     "found": [
+      "Antony",
+      "Cleopatra",
+      "Octavia"
+     ],
+     "distinctive": [
+      "Cleopatra",
+      "Octavia"
+     ],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 11,
+   "truncated": false,
+   "sha256": "1eba0b97623eb64e68ad8eb7d70c4cf9970a5cb08345dfbed7ed89d9f2ee5c88",
+   "drift_sample": false
+  },
+  {
+   "id": "Antony and Cleopatra (1972 film)",
+   "title": "Antony and Cleopatra (1972 film)",
+   "shortdesc": "1972 film by Charlton Heston",
+   "medium": "film",
+   "sources": [
+    "Antony and Cleopatra"
+   ],
+   "evidence": {
+    "Antony and Cleopatra": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Antony and Cleopatra is a 1972 film adaptation of the play of the same name by William Shakespeare, directed by and starring Charlton Heston, and made by the Rank Organisation.",
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Antony and Cleopatra": {
+     "found": [
+      "Antony",
+      "Cleopatra",
+      "Octavius",
+      "Enobarbus",
+      "Octavia",
+      "Lepidus"
+     ],
+     "distinctive": [
+      "Cleopatra",
+      "Octavius",
+      "Enobarbus",
+      "Octavia",
+      "Lepidus"
+     ],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 40,
+   "truncated": true,
+   "sha256": "9dcec19e8f83f861b71bca66397fbb3ccc835c20dbedddeef4f33ec763fa841f",
+   "drift_sample": false
+  },
+  {
+   "id": "Anyone but You",
+   "title": "Anyone but You",
+   "shortdesc": "2023 romantic comedy film by Will Gluck",
+   "medium": "film",
+   "sources": [
+    "Much Ado"
+   ],
+   "evidence": {
+    "Much Ado": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Based on Much Ado About Nothing by William Shakespeare, the film was directed by Will Gluck, and written by Ilana Wolpert and Gluck.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "Much Ado": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": true,
+   "n_sentences": 32,
+   "truncated": false,
+   "sha256": "e1917bd299b880734e0e0a29b1eeb4220e9d26093abe929ca29f4efd00ee272b",
+   "drift_sample": true
+  },
+  {
+   "id": "Arivaali",
+   "title": "Arivaali",
+   "shortdesc": "1963 Indian film",
+   "medium": "film",
+   "sources": [
+    "Taming of the Shrew"
+   ],
+   "evidence": {
+    "Taming of the Shrew": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "It is based on his play Penn Paduthum Paadu, in turn based on the William Shakespeare play The Taming of the Shrew.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "Taming of the Shrew": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": true,
+   "n_sentences": 22,
+   "truncated": false,
+   "sha256": "3ee6bfc72d48a0906d9ae725cfcf7640a61f5ddedf9001a45799d395972d74b7",
+   "drift_sample": true
+  },
+  {
+   "id": "As You Like It (1936 film)",
+   "title": "As You Like It (1936 film)",
+   "shortdesc": "1936 British film by Paul Czinner",
+   "medium": "film",
+   "sources": [
+    "As You Like It"
+   ],
+   "evidence": {
+    "As You Like It": [
+     "category"
+    ]
+   },
+   "evidence_tier": "category_only",
+   "lead_evidence": "It is based on William Shakespeare's play of the same name.",
+   "names_flag": "keeps_names",
+   "names_found": {
+    "As You Like It": {
+     "found": [
+      "Rosalind",
+      "Orlando",
+      "Celia",
+      "Touchstone",
+      "Jaques",
+      "Oliver"
+     ],
+     "distinctive": [
+      "Rosalind",
+      "Orlando",
+      "Touchstone",
+      "Jaques"
+     ],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 17,
+   "truncated": false,
+   "sha256": "8f72807528afd9e0fb7b1b3d8889144ee518193c93f3ca3d3a84d2a8bb90fb00",
+   "drift_sample": false
+  },
+  {
+   "id": "Bade Miyan Chote Miyan (1998 film)",
+   "title": "Bade Miyan Chote Miyan (1998 film)",
+   "shortdesc": "1998 Indian film by David Dhawan",
+   "medium": "film",
+   "sources": [
+    "Comedy of Errors"
+   ],
+   "evidence": {
+    "Comedy of Errors": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "The core plot of the film is borrowed from Bengali film Bhranti Bilas (1963), a reworking of William Shakespeare's The Comedy of Errors, and also is an adaptation of the 1995 American film Bad Boys.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "Comedy of Errors": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": true,
+   "n_sentences": 19,
+   "truncated": false,
+   "sha256": "d8c9708ab3e08be3b02885910a90a35f0db1f3b1bdd51a73696dcef4ebb752e2",
+   "drift_sample": true
+  },
+  {
+   "id": "Banarasi Babu (1997 film)",
+   "title": "Banarasi Babu (1997 film)",
+   "shortdesc": "1997 Indian film",
+   "medium": "film",
+   "sources": [
+    "Taming of the Shrew"
+   ],
+   "evidence": {
+    "Taming of the Shrew": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "The film was inspired by William Shakespeare's The Taming of the Shrew and the 1972 Tamil film Pattikada Pattanama.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "Taming of the Shrew": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": true,
+   "n_sentences": 24,
+   "truncated": false,
+   "sha256": "f376d7e1e960741ffd9984f0e6c8f290ab065cfcb925134e3126f070f63db7df",
+   "drift_sample": true
+  },
+  {
+   "id": "Big Business (1988 film)",
+   "title": "Big Business (1988 film)",
+   "shortdesc": "1988 film directed by Jim Abrahams",
+   "medium": "film",
+   "sources": [
+    "Comedy of Errors"
+   ],
+   "evidence": {
+    "Comedy of Errors": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "The nature versus nurture farce adapts The Comedy of Errors, but with female siblings in contemporary society: one of each twin being reared in a wealthy urban setting, while the others grew up in a poor rural environment.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "Comedy of Errors": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": true,
+   "n_sentences": 40,
+   "truncated": false,
+   "sha256": "fbb540611383473762625028bdddd5b93f9f02edfaf006c8891cea8af76eb94c",
+   "drift_sample": true
+  },
+  {
+   "id": "Bollywood Queen",
+   "title": "Bollywood Queen",
+   "shortdesc": "2002 film by Jeremy Wooding",
+   "medium": "film",
+   "sources": [
+    "Romeo and Juliet"
+   ],
+   "evidence": {
+    "Romeo and Juliet": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Bollywood Queen is a British Indian take on the William Shakespeare play Romeo and Juliet, directed by Jeremy Wooding and starring Preeya Kalidas and James McAvoy.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "Romeo and Juliet": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": true,
+   "n_sentences": 26,
+   "truncated": false,
+   "sha256": "20fb5dc23c903606b48523dfb31eea47aaeb0aa7cf1972ea21564b10bfb773bf",
+   "drift_sample": true
+  },
+  {
+   "id": "Born Villain (film)",
+   "title": "Born Villain (film)",
+   "shortdesc": "2011 film by Shia LaBeouf",
+   "medium": "film",
+   "sources": [
+    "Macbeth"
+   ],
+   "evidence": {
+    "Macbeth": [
+     "category"
+    ]
+   },
+   "evidence_tier": "category_only",
+   "lead_evidence": null,
+   "names_flag": "partial",
+   "names_found": {
+    "Macbeth": {
+     "found": [
+      "Macbeth"
+     ],
+     "distinctive": [
+      "Macbeth"
+     ],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 15,
+   "truncated": false,
+   "sha256": "5e5f44ec2655c82a1e28ae93c2086d64ccaf44a4d40ce5b7801cd82b5394fca3",
+   "drift_sample": false
+  },
+  {
+   "id": "Chicken Rice War",
+   "title": "Chicken Rice War",
+   "shortdesc": "2000 Singaporean film",
+   "medium": "film",
+   "sources": [
+    "Romeo and Juliet"
+   ],
+   "evidence": {
+    "Romeo and Juliet": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "It is an adaptation of Romeo and Juliet in a Singaporean setting, where fierce competition between rival chicken rice hawkers resulted in bitter enmity.",
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Romeo and Juliet": {
+     "found": [
+      "Romeo",
+      "Juliet"
+     ],
+     "distinctive": [
+      "Romeo",
+      "Juliet"
+     ],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": true,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": false,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 8,
+   "truncated": false,
+   "sha256": "e54dc26e2bd51730ae11b3ed6682f512f6a5d16312e8f9e387ed8603692131f6",
+   "drift_sample": false
+  },
+  {
+   "id": "Chimes at Midnight",
+   "title": "Chimes at Midnight",
+   "shortdesc": "1965 film by Orson Welles",
+   "medium": "film",
+   "sources": [
+    "Henry IV Part 1",
+    "Henry IV Part 2",
+    "Henry V",
+    "Richard II"
+   ],
+   "evidence": {
+    "Henry IV Part 1": [
+     "category",
+     "wikidata_P144"
+    ],
+    "Henry V": [
+     "category",
+     "wikidata_P144"
+    ],
+    "Richard II": [
+     "category",
+     "wikidata_P144"
+    ],
+    "Henry IV Part 2": [
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Welles had produced a Broadway stage adaptation of nine Shakespeare plays, Five Kings, in 1939.",
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Henry IV Part 1": {
+     "found": [
+      "Hal",
+      "Falstaff",
+      "Hotspur",
+      "Henry",
+      "Poins"
+     ],
+     "distinctive": [
+      "Falstaff",
+      "Hotspur",
+      "Poins"
+     ],
+     "n_principal": 6
+    },
+    "Henry V": {
+     "found": [
+      "Henry"
+     ],
+     "distinctive": [],
+     "n_principal": 6
+    },
+    "Richard II": {
+     "found": [
+      "Richard"
+     ],
+     "distinctive": [],
+     "n_principal": 6
+    },
+    "Henry IV Part 2": {
+     "found": [
+      "Hal",
+      "Falstaff",
+      "Henry",
+      "Shallow"
+     ],
+     "distinctive": [
+      "Falstaff"
+     ],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": false,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 39,
+   "truncated": false,
+   "sha256": "19de91359789779decd3585d57f4bea30a5a00e2e0eaa4031f12b3aa5db7b7ab",
+   "drift_sample": false
+  },
+  {
+   "id": "Cirkus (film)",
+   "title": "Cirkus (film)",
+   "shortdesc": "2022 Indian film by Rohit Shetty",
+   "medium": "film",
+   "sources": [
+    "Comedy of Errors"
+   ],
+   "evidence": {
+    "Comedy of Errors": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Cirkus is a spin-off to 2017 film Golmaal Again and an adaptation of the 1963 Bengali film Bhranti Bilash, which itself was based on William Shakespeare's play The Comedy of Errors, and marks the final collaboration to date between Shetty and Farhad Samji, the latter of whom did not return to work on Shetty's subsequent Cop Universe projects Indian Police Force and Singham Again.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "Comedy of Errors": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": true,
+   "n_sentences": 21,
+   "truncated": false,
+   "sha256": "21bf54fbd3fbcae50b5e57a6cf44c67f58176c3881bb93fb7acbb0a4f7b8d955",
+   "drift_sample": true
+  },
+  {
+   "id": "Class of Nuke 'Em High 3: The Good, the Bad and the Subhumanoid",
+   "title": "Class of Nuke 'Em High 3: The Good, the Bad and the Subhumanoid",
+   "shortdesc": "1994 American film",
+   "medium": "film",
+   "sources": [
+    "Comedy of Errors"
+   ],
+   "evidence": {
+    "Comedy of Errors": [
+     "category"
+    ]
+   },
+   "evidence_tier": "category_only",
+   "lead_evidence": null,
+   "names_flag": "changes_names",
+   "names_found": {
+    "Comedy of Errors": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": true,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": false,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 9,
+   "truncated": false,
+   "sha256": "cd563e71ae2bd33706d9e1af54a20a39614158fd9d2950ca5e35984f37c00989",
+   "drift_sample": false
+  },
+  {
+   "id": "Cleopatra (1917 film)",
+   "title": "Cleopatra (1917 film)",
+   "shortdesc": "1917 American film by J. Gordon Edwards",
+   "medium": "film",
+   "sources": [
+    "Antony and Cleopatra"
+   ],
+   "evidence": {
+    "Antony and Cleopatra": [
+     "category"
+    ]
+   },
+   "evidence_tier": "category_only",
+   "lead_evidence": null,
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Antony and Cleopatra": {
+     "found": [
+      "Antony",
+      "Cleopatra",
+      "Octavius",
+      "Octavia"
+     ],
+     "distinctive": [
+      "Cleopatra",
+      "Octavius",
+      "Octavia"
+     ],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 13,
+   "truncated": false,
+   "sha256": "b9e5d91ccfbcf0bad125f745db844691149184609be6f0bdba6f7beb4ea7b561",
+   "drift_sample": false
+  },
+  {
+   "id": "Cleopatra (1934 film)",
+   "title": "Cleopatra (1934 film)",
+   "shortdesc": "1934 film by Cecil B. DeMille",
+   "medium": "film",
+   "sources": [
+    "Antony and Cleopatra"
+   ],
+   "evidence": {
+    "Antony and Cleopatra": [
+     "category"
+    ]
+   },
+   "evidence_tier": "category_only",
+   "lead_evidence": null,
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Antony and Cleopatra": {
+     "found": [
+      "Antony",
+      "Cleopatra",
+      "Enobarbus"
+     ],
+     "distinctive": [
+      "Cleopatra",
+      "Enobarbus"
+     ],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 37,
+   "truncated": false,
+   "sha256": "6d3b378557677d55d99102a4d7345c4edb8c0282a9e179bb392f11af50225832",
+   "drift_sample": false
+  },
+  {
+   "id": "Coriolanus (film)",
+   "title": "Coriolanus (film)",
+   "shortdesc": "2011 film directed by Ralph Fiennes",
+   "medium": "film",
+   "sources": [
+    "Coriolanus"
+   ],
+   "evidence": {
+    "Coriolanus": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Coriolanus is a 2011 film adaptation of William Shakespeare's tragedy Coriolanus.",
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Coriolanus": {
+     "found": [
+      "Coriolanus",
+      "Volumnia",
+      "Aufidius",
+      "Menenius",
+      "Virgilia",
+      "Martius"
+     ],
+     "distinctive": [
+      "Coriolanus",
+      "Volumnia",
+      "Aufidius",
+      "Menenius",
+      "Virgilia",
+      "Martius"
+     ],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 27,
+   "truncated": false,
+   "sha256": "27950c11303bbe4bbded35b662ef130911a8811fd4617118c1524899ff8cf9f1",
+   "drift_sample": false
+  },
+  {
+   "id": "Cymbeline Refinished",
+   "title": "Cymbeline Refinished",
+   "shortdesc": null,
+   "medium": "unknown",
+   "sources": [
+    "Cymbeline"
+   ],
+   "evidence": {
+    "Cymbeline": [
+     "category",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": null,
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Cymbeline": {
+     "found": [
+      "Imogen",
+      "Posthumus",
+      "Iachimo"
+     ],
+     "distinctive": [
+      "Imogen",
+      "Posthumus",
+      "Iachimo"
+     ],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 10,
+   "truncated": false,
+   "sha256": "80c19141d89ead27606d44187679e85deb48cedd3c3b23b6e7c841aa056075c3",
+   "drift_sample": false
+  },
+  {
+   "id": "Deliver Us from Eva",
+   "title": "Deliver Us from Eva",
+   "shortdesc": "2003 film directed by Gary Hardwick",
+   "medium": "film",
+   "sources": [
+    "Taming of the Shrew"
+   ],
+   "evidence": {
+    "Taming of the Shrew": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "It is considered by many as a modern update of William Shakespeare's play The Taming of the Shrew.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "Taming of the Shrew": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": true,
+   "n_sentences": 25,
+   "truncated": false,
+   "sha256": "3174534e8118bf7d8ae713679b808613f0096a1b94c14dad54c409389069b1e7",
+   "drift_sample": false
+  },
+  {
+   "id": "Die in a Gunfight",
+   "title": "Die in a Gunfight",
+   "shortdesc": "2021 American film",
+   "medium": "film",
+   "sources": [
+    "Romeo and Juliet"
+   ],
+   "evidence": {
+    "Romeo and Juliet": [
+     "category",
+     "lead_sentence",
+     "wikidata_P941_inspired_by"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "It is described as an updated version of William Shakespeare's Romeo and Juliet.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "Romeo and Juliet": {
+     "found": [
+      "Paris"
+     ],
+     "distinctive": [],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": true,
+   "n_sentences": 40,
+   "truncated": false,
+   "sha256": "7fdc43e042443943c1ccc13531a18c919cbfc1ac972f38a2e772688656e46a54",
+   "drift_sample": true
+  },
+  {
+   "id": "Dil Bole Hadippa!",
+   "title": "Dil Bole Hadippa!",
+   "shortdesc": "2009 Indian film",
+   "medium": "film",
+   "sources": [
+    "Twelfth Night"
+   ],
+   "evidence": {
+    "Twelfth Night": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "The film is an adaptation of the 2006 film She's the Man by Andy Fickman which was itself an adaptation of William Shakespeare's Twelfth Night.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "Twelfth Night": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": true,
+   "n_sentences": 32,
+   "truncated": false,
+   "sha256": "75bcb4902e64c6203af1c21d5e6165057f02e9eafd2b90289dded832bb4dbad2",
+   "drift_sample": true
+  },
+  {
+   "id": "Eeda",
+   "title": "Eeda",
+   "shortdesc": "2018 film directed by B Ajithkumar",
+   "medium": "film",
+   "sources": [
+    "Romeo and Juliet"
+   ],
+   "evidence": {
+    "Romeo and Juliet": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "The film is a modern take on William Shakespeare's Romeo and Juliet, set in the backdrops of political violence in Kannur, north Malabar.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "Romeo and Juliet": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": true,
+   "n_sentences": 40,
+   "truncated": true,
+   "sha256": "d00e82f51fdde2cf12850391b28c98a048b639e185568b0759a4262461c3e81a",
+   "drift_sample": false
+  },
+  {
+   "id": "Ek Duuje Ke Liye",
+   "title": "Ek Duuje Ke Liye",
+   "shortdesc": "1981 Indian film",
+   "medium": "film",
+   "sources": [
+    "Romeo and Juliet"
+   ],
+   "evidence": {
+    "Romeo and Juliet": [
+     "category"
+    ]
+   },
+   "evidence_tier": "category_only",
+   "lead_evidence": null,
+   "names_flag": "changes_names",
+   "names_found": {
+    "Romeo and Juliet": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": false,
+   "n_sentences": 40,
+   "truncated": true,
+   "sha256": "496f0d2eb13d77c352291863c07024678674876681d27de4c41e716cfc5c27cd",
+   "drift_sample": false
+  },
+  {
+   "id": "Ex Machina (film)",
+   "title": "Ex Machina (film)",
+   "shortdesc": "2014 film by Alex Garland",
+   "medium": "film",
+   "sources": [
+    "The Tempest"
+   ],
+   "evidence": {
+    "The Tempest": [
+     "category"
+    ]
+   },
+   "evidence_tier": "category_only",
+   "lead_evidence": null,
+   "names_flag": "changes_names",
+   "names_found": {
+    "The Tempest": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": false,
+   "n_sentences": 28,
+   "truncated": false,
+   "sha256": "7ac25e5a2e9ce165db5c1dc3ad07206be3373c1c91880ea23961f84f9ad7d329",
+   "drift_sample": false
+  },
+  {
+   "id": "Forbidden Planet",
+   "title": "Forbidden Planet",
+   "shortdesc": "1956 science fiction film by Fred M. Wilcox",
+   "medium": "film",
+   "sources": [
+    "The Tempest"
+   ],
+   "evidence": {
+    "The Tempest": [
+     "category",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": null,
+   "names_flag": "changes_names",
+   "names_found": {
+    "The Tempest": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": true,
+   "n_sentences": 39,
+   "truncated": false,
+   "sha256": "a82385111c604db5ec74dff27729513495ce307168861722628534f6011dd092",
+   "drift_sample": true
+  },
+  {
+   "id": "Get Over It (film)",
+   "title": "Get Over It (film)",
+   "shortdesc": "2001 film by Tommy O'Haver",
+   "medium": "film",
+   "sources": [
+    "Midsummer Night's Dream"
+   ],
+   "evidence": {
+    "Midsummer Night's Dream": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Get Over It is a 2001 American teen romantic comedy film loosely based on William Shakespeare's A Midsummer Night's Dream about a high school senior who desperately tries to win back his ex-girlfriend by joining the school play she and her new boyfriend are performing in, against the advice of friends.",
+   "names_flag": "partial",
+   "names_found": {
+    "Midsummer Night's Dream": {
+     "found": [
+      "Lysander",
+      "Helena"
+     ],
+     "distinctive": [
+      "Lysander"
+     ],
+     "n_principal": 8
+    }
+   },
+   "mentions_source": true,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": false,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 18,
+   "truncated": false,
+   "sha256": "608df8e17a6c95e32140173fb8caed4add7e583fa444b1736e5fbe8e11848f80",
+   "drift_sample": false
+  },
+  {
+   "id": "Gnomeo & Juliet",
+   "title": "Gnomeo & Juliet",
+   "shortdesc": "2011 animated film",
+   "medium": "film?",
+   "sources": [
+    "Romeo and Juliet"
+   ],
+   "evidence": {
+    "Romeo and Juliet": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "It is loosely based on the play Romeo and Juliet, and features the voices of James McAvoy, Emily Blunt, Michael Caine, Maggie Smith, Jason Statham, Patrick Stewart, Ashley Jensen, Stephen Merchant, Matt Lucas, Jim Cummings, Julie Walters, Richard Wilson, Ozzy Osbourne, Dolly Parton, and Hulk Hogan in his final film role before his death in July 2025.",
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Romeo and Juliet": {
+     "found": [
+      "Juliet",
+      "Tybalt",
+      "Paris"
+     ],
+     "distinctive": [
+      "Juliet",
+      "Tybalt"
+     ],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": true,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": false,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 28,
+   "truncated": false,
+   "sha256": "e288433e98aa9d88974e6468a4cb12655865714d63ba86393e18f191e58e4a77",
+   "drift_sample": false
+  },
+  {
+   "id": "Goliyon Ki Raasleela Ram-Leela",
+   "title": "Goliyon Ki Raasleela Ram-Leela",
+   "shortdesc": "2013 Indian film by Sanjay Leela Bhansali",
+   "medium": "film",
+   "sources": [
+    "Romeo and Juliet"
+   ],
+   "evidence": {
+    "Romeo and Juliet": [
+     "category",
+     "lead_sentence",
+     "wikidata_P941_inspired_by"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Based on the tragedy Romeo and Juliet by William Shakespeare, Ram-Leela narrates the star-crossed romance between the two eponymous lovers from two gangster families, who fall in love with each other but are forced to separate due to their families' centuries-old rivalry.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "Romeo and Juliet": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": true,
+   "n_sentences": 30,
+   "truncated": false,
+   "sha256": "9593d0e7e7a7404bba043a469537a8ff088708057d7e67c7a4664389379c6c0f",
+   "drift_sample": false
+  },
+  {
+   "id": "Gonks Go Beat",
+   "title": "Gonks Go Beat",
+   "shortdesc": "1964 British film by Robert Hartford-Davis",
+   "medium": "film?",
+   "sources": [
+    "Romeo and Juliet"
+   ],
+   "evidence": {
+    "Romeo and Juliet": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "It was written by Hartford-Davis and Peter Newbrook loosely based on the Romeo and Juliet storyline and features 16 musical numbers performed by a variety of artists, including Lulu and The Luvvers, The Nashville Teens and the Graham Bond Organisation including Ginger Baker, Jack Bruce and Dick Heckstall-Smith.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "Romeo and Juliet": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": true,
+   "n_sentences": 12,
+   "truncated": false,
+   "sha256": "ddf29a3b378b2db490cb099228325993e00ae4340f48050691502538cb7eaec8",
+   "drift_sample": false
+  },
+  {
+   "id": "Guna Sundari",
+   "title": "Guna Sundari",
+   "shortdesc": "1955 Indian film",
+   "medium": "film",
+   "sources": [
+    "King Lear"
+   ],
+   "evidence": {
+    "King Lear": [
+     "category"
+    ]
+   },
+   "evidence_tier": "category_only",
+   "lead_evidence": null,
+   "names_flag": "changes_names",
+   "names_found": {
+    "King Lear": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": false,
+   "n_sentences": 23,
+   "truncated": false,
+   "sha256": "8d2af62b0d46c1f7adbd9759434e3a1906a35f5fbfe1abccd91dd145bf690ec8",
+   "drift_sample": false
+  },
+  {
+   "id": "Gunasundari Katha",
+   "title": "Gunasundari Katha",
+   "shortdesc": "1949 Indian film",
+   "medium": "film",
+   "sources": [
+    "King Lear"
+   ],
+   "evidence": {
+    "King Lear": [
+     "category"
+    ]
+   },
+   "evidence_tier": "category_only",
+   "lead_evidence": null,
+   "names_flag": "changes_names",
+   "names_found": {
+    "King Lear": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": false,
+   "n_sentences": 15,
+   "truncated": false,
+   "sha256": "856e940d1b487dbae41a5ab9d7fcb48a217f2b5e13a243a4adfec3da71787f09",
+   "drift_sample": false
+  },
+  {
+   "id": "Gundamma Katha",
+   "title": "Gundamma Katha",
+   "shortdesc": "1962 film directed by Kamalakara Kameswara Rao",
+   "medium": "film",
+   "sources": [
+    "Taming of the Shrew"
+   ],
+   "evidence": {
+    "Taming of the Shrew": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Partially inspired by William Shakespeare's comedy The Taming of the Shrew, Gundamma Katha is an official remake of the Kannada film Mane Thumbida Hennu (1958).",
+   "names_flag": "changes_names",
+   "names_found": {
+    "Taming of the Shrew": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": true,
+   "n_sentences": 29,
+   "truncated": false,
+   "sha256": "39b9e40240a25c5f6ee3bb7c8cf0ef8b7a126b121607371a19039e4e0dc5c004",
+   "drift_sample": true
+  },
+  {
+   "id": "Haider (film)",
+   "title": "Haider (film)",
+   "shortdesc": "2014 film by Vishal Bhardwaj",
+   "medium": "film",
+   "sources": [
+    "Hamlet"
+   ],
+   "evidence": {
+    "Hamlet": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Set amidst the insurgency-hit Kashmir conflicts of 1995, Haider is a modern-day adaptation of William Shakespeare's tragedy Hamlet.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "Hamlet": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": true,
+   "n_sentences": 33,
+   "truncated": false,
+   "sha256": "64bdf5a16edb44aa219e6590e4f229a44926ef405dc6f04f2349ed2722591800",
+   "drift_sample": true
+  },
+  {
+   "id": "Hamlet (1907 film)",
+   "title": "Hamlet (1907 film)",
+   "shortdesc": "1907 film by Georges Méliès",
+   "medium": "film",
+   "sources": [
+    "Hamlet"
+   ],
+   "evidence": {
+    "Hamlet": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Hamlet, released in the United States as Hamlet, Prince of Denmark, is a 1907 French short silent film directed by Georges Méliès, based on William Shakespeare's tragedy Hamlet.",
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Hamlet": {
+     "found": [
+      "Hamlet",
+      "Ophelia"
+     ],
+     "distinctive": [
+      "Hamlet",
+      "Ophelia"
+     ],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 8,
+   "truncated": false,
+   "sha256": "639fa0b9c827010eb213ff171c8dfd275fbd011fa3694613987c9abf0ac48a54",
+   "drift_sample": false
+  },
+  {
+   "id": "Hamlet (1948 film)",
+   "title": "Hamlet (1948 film)",
+   "shortdesc": "1948 film by Laurence Olivier",
+   "medium": "film",
+   "sources": [
+    "Hamlet"
+   ],
+   "evidence": {
+    "Hamlet": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Hamlet is a 1948 British film adaptation of the play of the same name by William Shakespeare.",
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Hamlet": {
+     "found": [
+      "Hamlet",
+      "Claudius",
+      "Gertrude",
+      "Ophelia",
+      "Polonius",
+      "Laertes",
+      "Horatio"
+     ],
+     "distinctive": [
+      "Hamlet",
+      "Claudius",
+      "Gertrude",
+      "Ophelia",
+      "Polonius",
+      "Laertes",
+      "Horatio"
+     ],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 40,
+   "truncated": true,
+   "sha256": "a909eeb87151cdec8b6d5a30b9b2767fd03b5831fde099cc5e131755a4ad41a1",
+   "drift_sample": false
+  },
+  {
+   "id": "Hamlet (1964 film)",
+   "title": "Hamlet (1964 film)",
+   "shortdesc": "1964 film by Grigori Kozintsev",
+   "medium": "film",
+   "sources": [
+    "Hamlet"
+   ],
+   "evidence": {
+    "Hamlet": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Hamlet (Russian: Гамлет, romanized: Gamlet) is a 1964 film adaptation in Russian of William Shakespeare's play of the same title, based on a translation by Boris Pasternak.",
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Hamlet": {
+     "found": [
+      "Hamlet",
+      "Ophelia"
+     ],
+     "distinctive": [
+      "Hamlet",
+      "Ophelia"
+     ],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 11,
+   "truncated": false,
+   "sha256": "66a8548ca5672364b2f530485aa458369d8a2720c96b372e8944099abc0e3c98",
+   "drift_sample": false
+  },
+  {
+   "id": "Hamlet (1969 film)",
+   "title": "Hamlet (1969 film)",
+   "shortdesc": "1969 film by Tony Richardson",
+   "medium": "film",
+   "sources": [
+    "Hamlet"
+   ],
+   "evidence": {
+    "Hamlet": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "It is a film adaptation of Shakespeare's play Hamlet.",
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Hamlet": {
+     "found": [
+      "Hamlet",
+      "Claudius",
+      "Gertrude",
+      "Ophelia",
+      "Polonius",
+      "Laertes"
+     ],
+     "distinctive": [
+      "Hamlet",
+      "Claudius",
+      "Gertrude",
+      "Ophelia",
+      "Polonius",
+      "Laertes"
+     ],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 10,
+   "truncated": false,
+   "sha256": "e00747fbff8df17dfc1cc7ce1fa521955dd2a73363a13ea9c91624b4a66b0d14",
+   "drift_sample": false
+  },
+  {
+   "id": "Hamlet (1996 film)",
+   "title": "Hamlet (1996 film)",
+   "shortdesc": "Film by Kenneth Branagh",
+   "medium": "film",
+   "sources": [
+    "Hamlet"
+   ],
+   "evidence": {
+    "Hamlet": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "The film is the first unabridged theatrical film version of Hamlet, running more than four hours.",
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Hamlet": {
+     "found": [
+      "Hamlet",
+      "Claudius",
+      "Gertrude",
+      "Ophelia",
+      "Polonius",
+      "Laertes",
+      "Horatio"
+     ],
+     "distinctive": [
+      "Hamlet",
+      "Claudius",
+      "Gertrude",
+      "Ophelia",
+      "Polonius",
+      "Laertes",
+      "Horatio"
+     ],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 40,
+   "truncated": true,
+   "sha256": "c7f91d849f016968cece1b174a631b62f6f8b0870fa87ffaee4e65d61f4aeb7a",
+   "drift_sample": false
+  },
+  {
+   "id": "Hamlet 2",
+   "title": "Hamlet 2",
+   "shortdesc": "2008 film by Andrew Fleming",
+   "medium": "film",
+   "sources": [
+    "Hamlet"
+   ],
+   "evidence": {
+    "Hamlet": [
+     "category"
+    ]
+   },
+   "evidence_tier": "category_only",
+   "lead_evidence": null,
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Hamlet": {
+     "found": [
+      "Hamlet",
+      "Laertes"
+     ],
+     "distinctive": [
+      "Hamlet",
+      "Laertes"
+     ],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 14,
+   "truncated": false,
+   "sha256": "343e5748276059bcf177452c9e2f1f89ca478aad9cc7aa697a2f6e891257ea94",
+   "drift_sample": false
+  },
+  {
+   "id": "Hamlet: The Drama of Vengeance",
+   "title": "Hamlet: The Drama of Vengeance",
+   "shortdesc": "1921 film",
+   "medium": "film",
+   "sources": [
+    "Hamlet"
+   ],
+   "evidence": {
+    "Hamlet": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Hamlet, or Hamlet: The Drama of Vengeance, is a 1921 German film adaptation of the William Shakespeare play Hamlet starring and produced by Danish silent film actress Asta Nielsen.",
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Hamlet": {
+     "found": [
+      "Hamlet",
+      "Claudius",
+      "Gertrude",
+      "Ophelia",
+      "Polonius",
+      "Laertes",
+      "Horatio"
+     ],
+     "distinctive": [
+      "Hamlet",
+      "Claudius",
+      "Gertrude",
+      "Ophelia",
+      "Polonius",
+      "Laertes",
+      "Horatio"
+     ],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 40,
+   "truncated": true,
+   "sha256": "f4127af3f7959495891b605be7ca89c7f9d2b34553206808bdbad41c7ef26f21",
+   "drift_sample": false
+  },
+  {
+   "id": "Henry V (1944 film)",
+   "title": "Henry V (1944 film)",
+   "shortdesc": "1944 British film by Laurence Olivier",
+   "medium": "film",
+   "sources": [
+    "Henry V"
+   ],
+   "evidence": {
+    "Henry V": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Henry V is a 1944 British film adaptation of William Shakespeare's play.",
+   "names_flag": "partial",
+   "names_found": {
+    "Henry V": {
+     "found": [
+      "Henry",
+      "Fluellen",
+      "Pistol",
+      "Katherine",
+      "Dauphin"
+     ],
+     "distinctive": [
+      "Fluellen"
+     ],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": true,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": false,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 27,
+   "truncated": false,
+   "sha256": "056130337560fe6dfb40f28d9750498dc1a5d9e2e47b17228291b4c97024d8eb",
+   "drift_sample": false
+  },
+  {
+   "id": "Henry V (1989 film)",
+   "title": "Henry V (1989 film)",
+   "shortdesc": "1989 British historical drama film",
+   "medium": "film",
+   "sources": [
+    "Henry V"
+   ],
+   "evidence": {
+    "Henry V": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Henry V is a 1989 British historical drama film written and directed by Kenneth Branagh in his feature directorial debut, based on William Shakespeare's history play of the same name.",
+   "names_flag": "partial",
+   "names_found": {
+    "Henry V": {
+     "found": [
+      "Henry",
+      "Fluellen",
+      "Pistol",
+      "Katherine",
+      "Dauphin",
+      "Exeter"
+     ],
+     "distinctive": [
+      "Fluellen"
+     ],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 40,
+   "truncated": true,
+   "sha256": "0dea677d07c6026b6165e05e71c4e5e8e7d15ae8e6c551b5af47212bf303e15c",
+   "drift_sample": false
+  },
+  {
+   "id": "House of Strangers",
+   "title": "House of Strangers",
+   "shortdesc": "1949 film by Joseph L. Mankiewicz",
+   "medium": "film",
+   "sources": [
+    "King Lear"
+   ],
+   "evidence": {
+    "King Lear": [
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "It is based on Jerome Weidman's 1941 novel I'll Never Go There Any More, which in turn is inspired by William Shakespeare's play King Lear.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "King Lear": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": true,
+   "n_sentences": 21,
+   "truncated": false,
+   "sha256": "1a7539673c93ff9ca08da8446597bb7eae42cd189150c55e7272975f6a161e0e",
+   "drift_sample": true
+  },
+  {
+   "id": "In the Bleak Midwinter (film)",
+   "title": "In the Bleak Midwinter (film)",
+   "shortdesc": "1995 British film",
+   "medium": "film",
+   "sources": [
+    "Hamlet"
+   ],
+   "evidence": {
+    "Hamlet": [
+     "category"
+    ]
+   },
+   "evidence_tier": "category_only",
+   "lead_evidence": null,
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Hamlet": {
+     "found": [
+      "Hamlet",
+      "Gertrude"
+     ],
+     "distinctive": [
+      "Hamlet",
+      "Gertrude"
+     ],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": true,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": false,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 29,
+   "truncated": false,
+   "sha256": "fed4d558dad7d5354d4b9fc09014a31c689eb8b48bb1486de7382cb8fffb4446",
+   "drift_sample": false
+  },
+  {
+   "id": "Ishaqzaade",
+   "title": "Ishaqzaade",
+   "shortdesc": "2012 Indian film by Habib Faisal",
+   "medium": "film",
+   "sources": [
+    "Romeo and Juliet"
+   ],
+   "evidence": {
+    "Romeo and Juliet": [
+     "category"
+    ]
+   },
+   "evidence_tier": "category_only",
+   "lead_evidence": null,
+   "names_flag": "changes_names",
+   "names_found": {
+    "Romeo and Juliet": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": false,
+   "n_sentences": 19,
+   "truncated": false,
+   "sha256": "57a850f986b35a60e812f0a9467846f92c6aad6e83b28b863adcbef7e4701969",
+   "drift_sample": false
+  },
+  {
+   "id": "Isi Life Mein...!",
+   "title": "Isi Life Mein...!",
+   "shortdesc": "2010 Indian film",
+   "medium": "film",
+   "sources": [
+    "Taming of the Shrew"
+   ],
+   "evidence": {
+    "Taming of the Shrew": [
+     "category"
+    ]
+   },
+   "evidence_tier": "category_only",
+   "lead_evidence": null,
+   "names_flag": "changes_names",
+   "names_found": {
+    "Taming of the Shrew": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": true,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": false,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 18,
+   "truncated": false,
+   "sha256": "bef436625a2dd24f515be90b386e71ba431762a76d65221043739defbddc29a0",
+   "drift_sample": false
+  },
+  {
+   "id": "Joe MacBeth",
+   "title": "Joe MacBeth",
+   "shortdesc": "1955 film by Ken Hughes",
+   "medium": "film",
+   "sources": [
+    "Macbeth"
+   ],
+   "evidence": {
+    "Macbeth": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "It was written by Hughes and Philip Yordan, and is a modern retelling of Shakespeare's Macbeth, set in a 1930s American criminal underworld.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "Macbeth": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": true,
+   "n_sentences": 28,
+   "truncated": false,
+   "sha256": "4252325ca2eed7ec32356472d059dd88eccbeaed74116d14e2beca9f8eda9b19",
+   "drift_sample": true
+  },
+  {
+   "id": "Johanne Sacreblu",
+   "title": "Johanne Sacreblu",
+   "shortdesc": "2025 Mexican short film by Camila D. Aurora",
+   "medium": "film?",
+   "sources": [
+    "Romeo and Juliet"
+   ],
+   "evidence": {
+    "Romeo and Juliet": [
+     "category"
+    ]
+   },
+   "evidence_tier": "category_only",
+   "lead_evidence": null,
+   "names_flag": "changes_names",
+   "names_found": {
+    "Romeo and Juliet": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": false,
+   "n_sentences": 20,
+   "truncated": false,
+   "sha256": "a930c463a95791a807a9306ecf1720fd4d2db476dcd2d5e4dea57c502d593bdd",
+   "drift_sample": false
+  },
+  {
+   "id": "Johnny Hamlet",
+   "title": "Johnny Hamlet",
+   "shortdesc": "1968 film by Enzo G. Castellari",
+   "medium": "film",
+   "sources": [
+    "Hamlet"
+   ],
+   "evidence": {
+    "Hamlet": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "The film is a Spaghetti Western version of William Shakespeare's tragedy Hamlet.",
+   "names_flag": "partial",
+   "names_found": {
+    "Hamlet": {
+     "found": [
+      "Hamlet"
+     ],
+     "distinctive": [
+      "Hamlet"
+     ],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 25,
+   "truncated": false,
+   "sha256": "05d55e41e88c84027f68daf53725d1975a07eefd984eeb2163a893d2c9e29ec8",
+   "drift_sample": false
+  },
+  {
+   "id": "Joji (film)",
+   "title": "Joji (film)",
+   "shortdesc": "2021 Indian film",
+   "medium": "film",
+   "sources": [
+    "Macbeth"
+   ],
+   "evidence": {
+    "Macbeth": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "The story is inspired by William Shakespeare's play Macbeth.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "Macbeth": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": true,
+   "n_sentences": 40,
+   "truncated": true,
+   "sha256": "0d28367db5383cf996f953773e321152e06fa845af6b7b7449d0a4b8927f5a18",
+   "drift_sample": true
+  },
+  {
+   "id": "Jubal (film)",
+   "title": "Jubal (film)",
+   "shortdesc": "1956 film by Delmer Daves",
+   "medium": "film",
+   "sources": [
+    "Othello"
+   ],
+   "evidence": {
+    "Othello": [
+     "category"
+    ]
+   },
+   "evidence_tier": "category_only",
+   "lead_evidence": null,
+   "names_flag": "changes_names",
+   "names_found": {
+    "Othello": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": false,
+   "n_sentences": 30,
+   "truncated": false,
+   "sha256": "44e4e243d8a5ac14e304aac0d3847b252730e72dfa4f04cb92198aacc52fb94c",
+   "drift_sample": false
+  },
+  {
+   "id": "Just One of the Guys",
+   "title": "Just One of the Guys",
+   "shortdesc": "1985 film by Lisa Gottlieb",
+   "medium": "film",
+   "sources": [
+    "Twelfth Night"
+   ],
+   "evidence": {
+    "Twelfth Night": [
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "It is a loose adaptation of William Shakespeare's Twelfth Night.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "Twelfth Night": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": true,
+   "n_sentences": 20,
+   "truncated": false,
+   "sha256": "95dfca9cc3155539565d28491e895b5d113f21e2b1d10c4b17d59ee1c2dba620",
+   "drift_sample": true
+  },
+  {
+   "id": "Kalisundam Raa",
+   "title": "Kalisundam Raa",
+   "shortdesc": "2000 film by K. R. Udayasankar",
+   "medium": "film",
+   "sources": [
+    "Romeo and Juliet"
+   ],
+   "evidence": {
+    "Romeo and Juliet": [
+     "category"
+    ]
+   },
+   "evidence_tier": "category_only",
+   "lead_evidence": null,
+   "names_flag": "changes_names",
+   "names_found": {
+    "Romeo and Juliet": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": false,
+   "n_sentences": 20,
+   "truncated": false,
+   "sha256": "182b03d13d7238f9ddd1b02658ae4e7d175e7e3cd785c728ad59445ae74a1629",
+   "drift_sample": false
+  },
+  {
+   "id": "Kaliyattam",
+   "title": "Kaliyattam",
+   "shortdesc": "1997 Indian film",
+   "medium": "film",
+   "sources": [
+    "Othello"
+   ],
+   "evidence": {
+    "Othello": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "The film is an adaptation of William Shakespeare's play Othello, set against the backdrop of the Theyyam performance of Kerala.",
+   "names_flag": "partial",
+   "names_found": {
+    "Othello": {
+     "found": [
+      "Othello"
+     ],
+     "distinctive": [
+      "Othello"
+     ],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": true,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": false,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 10,
+   "truncated": false,
+   "sha256": "fa35839ba004d77e7a0eb80690bf4b6e1de1cfb03385b5892f99c8a2eda38b22",
+   "drift_sample": false
+  },
+  {
+   "id": "Kannaki (film)",
+   "title": "Kannaki (film)",
+   "shortdesc": "2001 Malayalam language film",
+   "medium": "film",
+   "sources": [
+    "Antony and Cleopatra"
+   ],
+   "evidence": {
+    "Antony and Cleopatra": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "It is an adaptation of William Shakespeare's play Antony and Cleopatra.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "Antony and Cleopatra": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": true,
+   "n_sentences": 40,
+   "truncated": true,
+   "sha256": "fe71b961fc360b604892c48370ecea7881d4ab27b93ea369ace6fe5911f6c1f9",
+   "drift_sample": true
+  },
+  {
+   "id": "Kanniyin Kathali",
+   "title": "Kanniyin Kathali",
+   "shortdesc": "1949 film by K. Ramnoth",
+   "medium": "film",
+   "sources": [
+    "Twelfth Night"
+   ],
+   "evidence": {
+    "Twelfth Night": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "An adaptation of the play Twelfth Night by William Shakespeare, it stars Madhuri Devi, Anjali Devi and S.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "Twelfth Night": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": true,
+   "n_sentences": 13,
+   "truncated": false,
+   "sha256": "fd7d2516e78ee9d60ff2481c466986af566f9755af11918721ab6315cc7e2444",
+   "drift_sample": true
+  },
+  {
+   "id": "Kentucky (film)",
+   "title": "Kentucky (film)",
+   "shortdesc": "1938 film by Otto Brower, David Butler",
+   "medium": "film",
+   "sources": [
+    "Romeo and Juliet"
+   ],
+   "evidence": {
+    "Romeo and Juliet": [
+     "category"
+    ]
+   },
+   "evidence_tier": "category_only",
+   "lead_evidence": null,
+   "names_flag": "changes_names",
+   "names_found": {
+    "Romeo and Juliet": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": false,
+   "n_sentences": 11,
+   "truncated": false,
+   "sha256": "fd5ebb1eaa7b5567223348c0775587cdfd386e9251ded266ae9cbaea32b26274",
+   "drift_sample": false
+  },
+  {
+   "id": "Keyamat Theke Keyamat",
+   "title": "Keyamat Theke Keyamat",
+   "shortdesc": "Bangladeshi musical romantic drama film",
+   "medium": "film?",
+   "sources": [
+    "Romeo and Juliet"
+   ],
+   "evidence": {
+    "Romeo and Juliet": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "The film is an official remake of the 1988 Hindi Language film titled Qayamat Se Qayamat Tak, and like its predecessor, is based on Romeo and Juliet.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "Romeo and Juliet": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": true,
+   "n_sentences": 22,
+   "truncated": false,
+   "sha256": "d39b667d7507561946b61a7da1ca41859278643a27af8df41d15fa60e672d07d",
+   "drift_sample": true
+  },
+  {
+   "id": "King Lear (1916 film)",
+   "title": "King Lear (1916 film)",
+   "shortdesc": "1916 film by Ernest C. Warde",
+   "medium": "film",
+   "sources": [
+    "King Lear"
+   ],
+   "evidence": {
+    "King Lear": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "King Lear is a 1916 silent film based on the 1606 play, directed by Ernest C.",
+   "names_flag": "keeps_names",
+   "names_found": {
+    "King Lear": {
+     "found": [
+      "Lear",
+      "Goneril",
+      "Regan",
+      "Cordelia"
+     ],
+     "distinctive": [
+      "Goneril",
+      "Cordelia"
+     ],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 13,
+   "truncated": false,
+   "sha256": "cc49cf523b82f3920a11d85983e8eef6ef5c2fb0dcbe645065100b63cbc315a6",
+   "drift_sample": false
+  },
+  {
+   "id": "King Lear (1971 Soviet film)",
+   "title": "King Lear (1971 Soviet film)",
+   "shortdesc": "1971 film by Grigori Kozintsev",
+   "medium": "film",
+   "sources": [
+    "King Lear"
+   ],
+   "evidence": {
+    "King Lear": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "King Lear (Russian: Король Лир, romanized: Korol Lir) is a 1971 Soviet drama film directed by Grigori Kozintsev, based on William Shakespeare's play King Lear.",
+   "names_flag": "keeps_names",
+   "names_found": {
+    "King Lear": {
+     "found": [
+      "Lear",
+      "Goneril",
+      "Regan",
+      "Cordelia",
+      "Gloucester",
+      "Edmund",
+      "Edgar"
+     ],
+     "distinctive": [
+      "Goneril",
+      "Cordelia"
+     ],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 12,
+   "truncated": false,
+   "sha256": "83704e51d86926a5d37282826767c9961f36731af183e45fe03cb02509163701",
+   "drift_sample": false
+  },
+  {
+   "id": "King Lear (1987 film)",
+   "title": "King Lear (1987 film)",
+   "shortdesc": "1987 film directed by Jean-Luc Godard",
+   "medium": "film",
+   "sources": [
+    "King Lear"
+   ],
+   "evidence": {
+    "King Lear": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "King Lear is a 1987 film directed by Jean-Luc Godard and produced by Cannon Films, an adaptation of William Shakespeare's play in the avant-garde style of French New Wave cinema.",
+   "names_flag": "partial",
+   "names_found": {
+    "King Lear": {
+     "found": [
+      "Lear",
+      "Cordelia",
+      "Edgar"
+     ],
+     "distinctive": [
+      "Cordelia"
+     ],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": true,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": false,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 40,
+   "truncated": true,
+   "sha256": "517cb2cbffe0b5b90ebeded53b403afda2ab7e820a7a856857eba43cde0be195",
+   "drift_sample": false
+  },
+  {
+   "id": "King Lear (2018 film)",
+   "title": "King Lear (2018 film)",
+   "shortdesc": "2018 British-American TV movie",
+   "medium": "tv film",
+   "sources": [
+    "King Lear"
+   ],
+   "evidence": {
+    "King Lear": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "An adaptation of the play of the same name by William Shakespeare, cut to just 115 minutes, it was broadcast on BBC Two on 28 May 2018.",
+   "names_flag": "keeps_names",
+   "names_found": {
+    "King Lear": {
+     "found": [
+      "Lear",
+      "Goneril",
+      "Regan",
+      "Cordelia",
+      "Gloucester",
+      "Edmund",
+      "Edgar"
+     ],
+     "distinctive": [
+      "Goneril",
+      "Cordelia"
+     ],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 14,
+   "truncated": false,
+   "sha256": "db961afa6f4f558e5b2b43378177272aeb32e7e0f2634ab658573b4ac4843ecc",
+   "drift_sample": false
+  },
+  {
+   "id": "Kiss Me Kate (film)",
+   "title": "Kiss Me Kate (film)",
+   "shortdesc": "1953 film by George Sidney",
+   "medium": "film?",
+   "sources": [
+    "Taming of the Shrew"
+   ],
+   "evidence": {
+    "Taming of the Shrew": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Inspired by William Shakespeare's play The Taming of the Shrew, it tells the tale of formerly married musical theater actors Fred Graham and Lilli Vanessi, brought together to star opposite one another in the roles of Petruchio and Katherine in a Broadway musical version of Shakespeare's play.",
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Taming of the Shrew": {
+     "found": [
+      "Petruchio",
+      "Bianca",
+      "Baptista",
+      "Lucentio",
+      "Hortensio"
+     ],
+     "distinctive": [
+      "Petruchio",
+      "Bianca",
+      "Baptista",
+      "Lucentio",
+      "Hortensio"
+     ],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": true,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": false,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 38,
+   "truncated": false,
+   "sha256": "42d325260228a9b715b64bf89286f2eddf5f76b2e5a7346c70f61300b35c2482",
+   "drift_sample": false
+  },
+  {
+   "id": "Kuch Tum Kaho Kuch Hum Kahein",
+   "title": "Kuch Tum Kaho Kuch Hum Kahein",
+   "shortdesc": "2001 film by K. Ravi Shankar",
+   "medium": "film",
+   "sources": [
+    "Romeo and Juliet"
+   ],
+   "evidence": {
+    "Romeo and Juliet": [
+     "category"
+    ]
+   },
+   "evidence_tier": "category_only",
+   "lead_evidence": null,
+   "names_flag": "changes_names",
+   "names_found": {
+    "Romeo and Juliet": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": false,
+   "n_sentences": 23,
+   "truncated": false,
+   "sha256": "122fc79cd0a12518d03632ee9c70ec6a086445b6031bc65685aa220a53cbd373",
+   "drift_sample": false
+  },
+  {
+   "id": "Local Kung Fu 2",
+   "title": "Local Kung Fu 2",
+   "shortdesc": "2017 Indian film",
+   "medium": "film",
+   "sources": [
+    "Comedy of Errors"
+   ],
+   "evidence": {
+    "Comedy of Errors": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "The film is based on William Shakespeare's The Comedy of Errors.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "Comedy of Errors": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": true,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": false,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 9,
+   "truncated": false,
+   "sha256": "2539e15c0add496abe028cf79596fc0c5299d21304115896aa38d6781ab16c6b",
+   "drift_sample": false
+  },
+  {
+   "id": "Los Tarantos",
+   "title": "Los Tarantos",
+   "shortdesc": "1963 film",
+   "medium": "film?",
+   "sources": [
+    "Romeo and Juliet"
+   ],
+   "evidence": {
+    "Romeo and Juliet": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "The film is based on the play La historia de los Tarantos written by Alfredo Mañas, and inspired by Romeo and Juliet by William Shakespeare.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "Romeo and Juliet": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": true,
+   "n_sentences": 12,
+   "truncated": false,
+   "sha256": "d90f91b2dd66316fa8b097fc54ac36a312d91ada48847b385691cb8f1e3a1a7a",
+   "drift_sample": false
+  },
+  {
+   "id": "Love's Labor Lost (film)",
+   "title": "Love's Labor Lost (film)",
+   "shortdesc": "1920 Krazy Kat cartoon by Bray Productions",
+   "medium": "film",
+   "sources": [
+    "Love's Labour's Lost"
+   ],
+   "evidence": {
+    "Love's Labour's Lost": [
+     "category"
+    ]
+   },
+   "evidence_tier": "category_only",
+   "lead_evidence": null,
+   "names_flag": "changes_names",
+   "names_found": {
+    "Love's Labour's Lost": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": false,
+   "n_sentences": 33,
+   "truncated": false,
+   "sha256": "8b1b71911e7058c07e70b48877a62785f08065cb35bfea7d31cda1b65c82edff",
+   "drift_sample": false
+  },
+  {
+   "id": "Love's Labour's Lost (film)",
+   "title": "Love's Labour's Lost (film)",
+   "shortdesc": "2000 film directed by Kenneth Branagh",
+   "medium": "film?",
+   "sources": [
+    "Love's Labour's Lost"
+   ],
+   "evidence": {
+    "Love's Labour's Lost": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Love's Labour's Lost is a 2000 British musical romantic comedy film written, directed by and starring Kenneth Branagh, based on the comic play of the same name by William Shakespeare.",
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Love's Labour's Lost": {
+     "found": [
+      "Navarre",
+      "Berowne",
+      "Boyet"
+     ],
+     "distinctive": [
+      "Navarre",
+      "Berowne",
+      "Boyet"
+     ],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 13,
+   "truncated": false,
+   "sha256": "3326a940bb7a096de050182ff458827cb5f3d768987c40c575dafe47d3460275",
+   "drift_sample": false
+  },
+  {
+   "id": "Macbeth (1948 film)",
+   "title": "Macbeth (1948 film)",
+   "shortdesc": "1948 film by Orson Welles",
+   "medium": "film",
+   "sources": [
+    "Macbeth"
+   ],
+   "evidence": {
+    "Macbeth": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Macbeth is a 1948 American film adaptation of William Shakespeare's tragedy, written, co-produced, and directed by Orson Welles.",
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Macbeth": {
+     "found": [
+      "Macbeth",
+      "Banquo",
+      "Duncan",
+      "Macduff",
+      "Malcolm",
+      "Fleance"
+     ],
+     "distinctive": [
+      "Macbeth",
+      "Banquo",
+      "Macduff",
+      "Fleance"
+     ],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 26,
+   "truncated": false,
+   "sha256": "c7c692cc532b93b0afb7420dd83e5e6713d148b8e2e6cbedc1c0d9ff2ff89e5a",
+   "drift_sample": false
+  },
+  {
+   "id": "Macbeth (1971 film)",
+   "title": "Macbeth (1971 film)",
+   "shortdesc": "1971 film by Roman Polanski",
+   "medium": "film",
+   "sources": [
+    "Macbeth"
+   ],
+   "evidence": {
+    "Macbeth": [
+     "category",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "A film adaptation of William Shakespeare's tragedy of the same name, it tells the story of the Highland lord who becomes King of Scotland through treachery and murder.",
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Macbeth": {
+     "found": [
+      "Macbeth",
+      "Banquo",
+      "Duncan",
+      "Macduff",
+      "Malcolm",
+      "Fleance"
+     ],
+     "distinctive": [
+      "Macbeth",
+      "Banquo",
+      "Macduff",
+      "Fleance"
+     ],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 28,
+   "truncated": false,
+   "sha256": "400ee0fe172c97bcca3a29b72b7d04c431c3b481e1a3986f3e33cdad4158e3cd",
+   "drift_sample": false
+  },
+  {
+   "id": "Macbeth (2006 film)",
+   "title": "Macbeth (2006 film)",
+   "shortdesc": "2006 film by Geoffrey Wright",
+   "medium": "film",
+   "sources": [
+    "Macbeth"
+   ],
+   "evidence": {
+    "Macbeth": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Macbeth is a 2006 Australian adaptation of the play by William Shakespeare of the same name.",
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Macbeth": {
+     "found": [
+      "Macbeth",
+      "Banquo",
+      "Duncan",
+      "Macduff",
+      "Malcolm",
+      "Fleance"
+     ],
+     "distinctive": [
+      "Macbeth",
+      "Banquo",
+      "Macduff",
+      "Fleance"
+     ],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 36,
+   "truncated": false,
+   "sha256": "fb430dfc6ff165626b42fd0dc85683111db02fccde67a661f2cb4c3c1adcbba8",
+   "drift_sample": false
+  },
+  {
+   "id": "Macbeth (2015 film)",
+   "title": "Macbeth (2015 film)",
+   "shortdesc": "Film directed by Justin Kurzel",
+   "medium": "film",
+   "sources": [
+    "Macbeth"
+   ],
+   "evidence": {
+    "Macbeth": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Macbeth is a 2015 epic historical drama film directed by Justin Kurzel from a screenplay by Todd Louiso, Jacob Koskoff, and Michael Lesslie, based on William Shakespeare's eponymous play.",
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Macbeth": {
+     "found": [
+      "Macbeth",
+      "Banquo",
+      "Duncan",
+      "Macduff",
+      "Malcolm",
+      "Fleance"
+     ],
+     "distinctive": [
+      "Macbeth",
+      "Banquo",
+      "Macduff",
+      "Fleance"
+     ],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 40,
+   "truncated": true,
+   "sha256": "3f3f1af2aa9998d37f3696eae38f171f39621d28f3f74494f406f7da3c8b8192",
+   "drift_sample": false
+  },
+  {
+   "id": "Manithan Maravillai",
+   "title": "Manithan Maravillai",
+   "shortdesc": "1962 film by Aluri Chakrapani",
+   "medium": "film",
+   "sources": [
+    "Taming of the Shrew"
+   ],
+   "evidence": {
+    "Taming of the Shrew": [
+     "category"
+    ]
+   },
+   "evidence_tier": "category_only",
+   "lead_evidence": null,
+   "names_flag": "changes_names",
+   "names_found": {
+    "Taming of the Shrew": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": false,
+   "n_sentences": 33,
+   "truncated": false,
+   "sha256": "e26896b44a69e44e23d4a19f6319e7d1dfc7a847ae1295791b88e475ecfe9a9e",
+   "drift_sample": false
+  },
+  {
+   "id": "Maqbool",
+   "title": "Maqbool",
+   "shortdesc": "2004 Indian crime drama film directed by Vishal Bhardwaj",
+   "medium": "film",
+   "sources": [
+    "Macbeth"
+   ],
+   "evidence": {
+    "Macbeth": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Maqbool is a 2003 Indian Hindi-language crime drama film directed by Vishal Bhardwaj, starring Irrfan Khan, Tabu, Pankaj Kapur, Naseeruddin Shah, Om Puri, Piyush Mishra, Murali Sharma, and Masumeh Makhija in an adaptation of the play Macbeth by Shakespeare.",
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Macbeth": {
+     "found": [
+      "Macbeth",
+      "Macduff",
+      "Fleance"
+     ],
+     "distinctive": [
+      "Macbeth",
+      "Macduff",
+      "Fleance"
+     ],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": true,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": false,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 14,
+   "truncated": false,
+   "sha256": "33e41caf0c9b11f8a6355d07ca326b802a4a612f7041c84e6dc02043f9fae244",
+   "drift_sample": false
+  },
+  {
+   "id": "Marmayogi",
+   "title": "Marmayogi",
+   "shortdesc": "1951 film by K. Ramnoth",
+   "medium": "film",
+   "sources": [
+    "Macbeth"
+   ],
+   "evidence": {
+    "Macbeth": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "An adaptation of the novel Vengeance by Marie Corelli and William Shakespeare's play Macbeth, the film was shot simultaneously in Hindi as Ek Tha Raja (transl.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "Macbeth": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": true,
+   "n_sentences": 28,
+   "truncated": false,
+   "sha256": "0001bfa067d24fddf84475ceab5b97f99de4ae2730c8a054d7be430d1fea82c0",
+   "drift_sample": true
+  },
+  {
+   "id": "Marmayogi (1964 film)",
+   "title": "Marmayogi (1964 film)",
+   "shortdesc": "1964 Indian film",
+   "medium": "film",
+   "sources": [
+    "Macbeth"
+   ],
+   "evidence": {
+    "Macbeth": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "The film is a remake of the 1951 Tamil film of the same name which was an adaptation of the novel Vengeance by Marie Corelli and William Shakespeare's play Macbeth.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "Macbeth": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": true,
+   "n_sentences": 18,
+   "truncated": false,
+   "sha256": "b305bcb0644dee4a92fbe5d363eabfd79d6339f811798aa50508e804749d1580",
+   "drift_sample": true
+  },
+  {
+   "id": "Maro Charitra",
+   "title": "Maro Charitra",
+   "shortdesc": "1978 film by K. Balachander",
+   "medium": "film",
+   "sources": [
+    "Romeo and Juliet"
+   ],
+   "evidence": {
+    "Romeo and Juliet": [
+     "category"
+    ]
+   },
+   "evidence_tier": "category_only",
+   "lead_evidence": null,
+   "names_flag": "changes_names",
+   "names_found": {
+    "Romeo and Juliet": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": false,
+   "n_sentences": 40,
+   "truncated": true,
+   "sha256": "b51f72c0b3673e22139fdcb88c51d4efa0ce6f6e2377924011438d2f888fd067",
+   "drift_sample": false
+  },
+  {
+   "id": "Maro Charitra (2010 film)",
+   "title": "Maro Charitra (2010 film)",
+   "shortdesc": "2010 Indian film",
+   "medium": "film",
+   "sources": [
+    "Romeo and Juliet"
+   ],
+   "evidence": {
+    "Romeo and Juliet": [
+     "category"
+    ]
+   },
+   "evidence_tier": "category_only",
+   "lead_evidence": null,
+   "names_flag": "changes_names",
+   "names_found": {
+    "Romeo and Juliet": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": false,
+   "n_sentences": 27,
+   "truncated": false,
+   "sha256": "fcfff610dc2d764d45d90d535c21dfd4154126dcbb7e30988935852b532dede8",
+   "drift_sample": false
+  },
+  {
+   "id": "McLintock!",
+   "title": "McLintock!",
+   "shortdesc": "1963 film by Andrew V. McLaglen",
+   "medium": "film",
+   "sources": [
+    "Taming of the Shrew"
+   ],
+   "evidence": {
+    "Taming of the Shrew": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Loosely based on William Shakespeare's The Taming of the Shrew, the project was filmed in Technicolor and Panavision, and produced by Wayne's company, Batjac Productions.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "Taming of the Shrew": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": true,
+   "n_sentences": 40,
+   "truncated": true,
+   "sha256": "d581619d40c84b715700ebf7adea03ad81e7b1a9dd2a345416f9d8661561640a",
+   "drift_sample": true
+  },
+  {
+   "id": "Men of Respect",
+   "title": "Men of Respect",
+   "shortdesc": "1990 film",
+   "medium": "film",
+   "sources": [
+    "Macbeth"
+   ],
+   "evidence": {
+    "Macbeth": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Men of Respect is a 1990 crime drama film, an adaptation of William Shakespeare's play Macbeth.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "Macbeth": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": true,
+   "n_sentences": 11,
+   "truncated": false,
+   "sha256": "11b30294fed1eae79ecac84240f0d9d972a69444cc9f41824a086047b91d0ed8",
+   "drift_sample": true
+  },
+  {
+   "id": "Motocrossed",
+   "title": "Motocrossed",
+   "shortdesc": "2001 television film directed by Steve Boyum",
+   "medium": "film",
+   "sources": [
+    "Twelfth Night"
+   ],
+   "evidence": {
+    "Twelfth Night": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "The movie is a loose adaptation of William Shakespeare's Twelfth Night.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "Twelfth Night": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": true,
+   "n_sentences": 40,
+   "truncated": true,
+   "sha256": "a7295d414b7c02f44d0028853c95f7403b16230a56bce77e41526620b0133bb3",
+   "drift_sample": true
+  },
+  {
+   "id": "Much Ado About Nothing (1993 film)",
+   "title": "Much Ado About Nothing (1993 film)",
+   "shortdesc": "1993 period film directed by Kenneth Branagh",
+   "medium": "film",
+   "sources": [
+    "Much Ado"
+   ],
+   "evidence": {
+    "Much Ado": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Much Ado About Nothing is a 1993 romantic comedy film based on William Shakespeare's play of the same name.",
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Much Ado": {
+     "found": [
+      "Beatrice",
+      "Benedick",
+      "Hero",
+      "Claudio",
+      "Don John",
+      "Dogberry"
+     ],
+     "distinctive": [
+      "Beatrice",
+      "Benedick",
+      "Don John",
+      "Dogberry"
+     ],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 36,
+   "truncated": false,
+   "sha256": "9cfb7c01f067c72978e07348b089fdcbd2faee136d172d16516ce3fffa329137",
+   "drift_sample": false
+  },
+  {
+   "id": "My Own Private Idaho",
+   "title": "My Own Private Idaho",
+   "shortdesc": "1991 film by Gus Van Sant",
+   "medium": "film",
+   "sources": [
+    "Henry IV Part 1",
+    "Henry IV Part 2",
+    "Henry V"
+   ],
+   "evidence": {
+    "Henry IV Part 1": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ],
+    "Henry V": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ],
+    "Henry IV Part 2": [
+     "lead_sentence",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "My Own Private Idaho is a 1991 American independent adventure drama film written and directed by Gus Van Sant, loosely based on William Shakespeare's Henry IV, Part 1; Henry IV, Part 2; and Henry V.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "Henry IV Part 1": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 6
+    },
+    "Henry V": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 6
+    },
+    "Henry IV Part 2": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": false,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 25,
+   "truncated": false,
+   "sha256": "e0fcb4247ecd1dafb11a216a9b315205ad554655e5627d7f1a6632ae8ae8e450",
+   "drift_sample": false
+  },
+  {
+   "id": "Mônica e Cebolinha: No Mundo de Romeu e Julieta",
+   "title": "Mônica e Cebolinha: No Mundo de Romeu e Julieta",
+   "shortdesc": "1979 film directed by José Amâncio",
+   "medium": "film",
+   "sources": [
+    "Romeo and Juliet"
+   ],
+   "evidence": {
+    "Romeo and Juliet": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Mônica e Cebolinha: No Mundo de Romeu e Julieta (Portuguese for Monica and Jimmy Five: In the World of Romeo & Juliet) is a film adaptation of Romeo and Juliet by William Shakespeare, starring Monica's Gang.",
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Romeo and Juliet": {
+     "found": [
+      "Romeo",
+      "Juliet",
+      "Tybalt",
+      "Benvolio"
+     ],
+     "distinctive": [
+      "Romeo",
+      "Juliet",
+      "Tybalt",
+      "Benvolio"
+     ],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 9,
+   "truncated": false,
+   "sha256": "7fbee749adc83500755c256ef50acf1e6bccc31bd18bfe08320a11cf7a99ba2c",
+   "drift_sample": false
+  },
+  {
+   "id": "Nanjundi Kalyana",
+   "title": "Nanjundi Kalyana",
+   "shortdesc": "1989 Indian film",
+   "medium": "film",
+   "sources": [
+    "Taming of the Shrew"
+   ],
+   "evidence": {
+    "Taming of the Shrew": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "The story is based on Parvathavani's Kannada play Bahaddur Ganda which was a translation of William Shakespeare's comedy The Taming of the Shrew.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "Taming of the Shrew": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": true,
+   "n_sentences": 20,
+   "truncated": false,
+   "sha256": "156c69e30c0363732fc864eb43a3d9b16ead12b06803f04b41eafd9b174c1cff",
+   "drift_sample": true
+  },
+  {
+   "id": "O (2001 film)",
+   "title": "O (2001 film)",
+   "shortdesc": "2001 American romantic drama film by Tim Blake Nelson",
+   "medium": "film",
+   "sources": [
+    "Othello"
+   ],
+   "evidence": {
+    "Othello": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "A modern adaptation of William Shakespeare's Othello set in an American high school, it stars Mekhi Phifer as the Othello-like character, with Josh Hartnett and Julia Stiles in supporting roles.",
+   "names_flag": "partial",
+   "names_found": {
+    "Othello": {
+     "found": [
+      "Cassio"
+     ],
+     "distinctive": [
+      "Cassio"
+     ],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 29,
+   "truncated": false,
+   "sha256": "4de0cb1d450db18ceadb98f1af7e639800b7bd02978444207a7d1ec4321d6b8f",
+   "drift_sample": false
+  },
+  {
+   "id": "Omkara (2006 film)",
+   "title": "Omkara (2006 film)",
+   "shortdesc": "2006 Indian film by Vishal Bhardwaj",
+   "medium": "film",
+   "sources": [
+    "Othello"
+   ],
+   "evidence": {
+    "Othello": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Omkara is a 2006 Indian Hindi-language crime drama film adapted from William Shakespeare's Othello, co-written and directed by Vishal Bhardwaj.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "Othello": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": true,
+   "n_sentences": 30,
+   "truncated": false,
+   "sha256": "cd79e413ef463de0c1d9018eb57518a0c3a4753f6701439d1a85d1757500003a",
+   "drift_sample": true
+  },
+  {
+   "id": "Ophelia (2018 film)",
+   "title": "Ophelia (2018 film)",
+   "shortdesc": "2018 film by Claire McCarthy",
+   "medium": "film",
+   "sources": [
+    "Hamlet"
+   ],
+   "evidence": {
+    "Hamlet": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Based on the 2006 novel by Lisa Klein, the film follows the story of Hamlet from Ophelia's perspective.",
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Hamlet": {
+     "found": [
+      "Hamlet",
+      "Claudius",
+      "Gertrude",
+      "Ophelia",
+      "Polonius",
+      "Laertes",
+      "Horatio"
+     ],
+     "distinctive": [
+      "Hamlet",
+      "Claudius",
+      "Gertrude",
+      "Ophelia",
+      "Polonius",
+      "Laertes",
+      "Horatio"
+     ],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 40,
+   "truncated": true,
+   "sha256": "2337e5d4bf40c526a524dcce8c3b527d8ee444881d3952c8fda8c0cfda26e6b8",
+   "drift_sample": false
+  },
+  {
+   "id": "Othello (1951 film)",
+   "title": "Othello (1951 film)",
+   "shortdesc": "1951 film by Orson Welles",
+   "medium": "film",
+   "sources": [
+    "Othello"
+   ],
+   "evidence": {
+    "Othello": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Othello (also known as The Tragedy of Othello: The Moor of Venice) is a 1951 tragedy film based on the Shakespearean play, written, directed, produced by, and starring Orson Welles.",
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Othello": {
+     "found": [
+      "Othello",
+      "Iago",
+      "Desdemona",
+      "Cassio",
+      "Emilia",
+      "Roderigo"
+     ],
+     "distinctive": [
+      "Othello",
+      "Iago",
+      "Desdemona",
+      "Cassio",
+      "Roderigo"
+     ],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 15,
+   "truncated": false,
+   "sha256": "234ab8163f57110f27e427246735294edc6902ab6f7e2ac0bedc23f5f5541da0",
+   "drift_sample": false
+  },
+  {
+   "id": "Othello (1955 film)",
+   "title": "Othello (1955 film)",
+   "shortdesc": "1955 film",
+   "medium": "film",
+   "sources": [
+    "Othello"
+   ],
+   "evidence": {
+    "Othello": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Othello (Russian: Отелло, romanized: Otello) is a 1955 Soviet romantic drama film directed by Sergei Yutkevich, based on the play Othello by William Shakespeare.",
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Othello": {
+     "found": [
+      "Othello",
+      "Iago",
+      "Desdemona",
+      "Cassio",
+      "Emilia"
+     ],
+     "distinctive": [
+      "Othello",
+      "Iago",
+      "Desdemona",
+      "Cassio"
+     ],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 14,
+   "truncated": false,
+   "sha256": "613c1c9b52c893257ce252e07fcc1ce6c49a32fdb0f7181a951479bd4ce46b6b",
+   "drift_sample": false
+  },
+  {
+   "id": "Othello (1995 film)",
+   "title": "Othello (1995 film)",
+   "shortdesc": "1995 British film",
+   "medium": "film",
+   "sources": [
+    "Othello"
+   ],
+   "evidence": {
+    "Othello": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Othello is a 1995 drama film based on William Shakespeare's tragedy of the same name.",
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Othello": {
+     "found": [
+      "Othello",
+      "Iago",
+      "Desdemona",
+      "Cassio",
+      "Emilia",
+      "Roderigo"
+     ],
+     "distinctive": [
+      "Othello",
+      "Iago",
+      "Desdemona",
+      "Cassio",
+      "Roderigo"
+     ],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 12,
+   "truncated": false,
+   "sha256": "9b7e0114cabf38e500e41572a87477e2dc5a023c9c2c357f31f86311607e1c50",
+   "drift_sample": false
+  },
+  {
+   "id": "Othello (2001 film)",
+   "title": "Othello (2001 film)",
+   "shortdesc": "2001 British television film",
+   "medium": "tv film",
+   "sources": [
+    "Othello"
+   ],
+   "evidence": {
+    "Othello": [
+     "category"
+    ]
+   },
+   "evidence_tier": "category_only",
+   "lead_evidence": null,
+   "names_flag": "partial",
+   "names_found": {
+    "Othello": {
+     "found": [
+      "Othello"
+     ],
+     "distinctive": [
+      "Othello"
+     ],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 29,
+   "truncated": false,
+   "sha256": "3814dfccf84cceb6562905404d79ba1f4dea62f680243adbbefef080e452af75",
+   "drift_sample": false
+  },
+  {
+   "id": "Pattikada Pattanama",
+   "title": "Pattikada Pattanama",
+   "shortdesc": "1972 film by P. Madhavan",
+   "medium": "film",
+   "sources": [
+    "Taming of the Shrew"
+   ],
+   "evidence": {
+    "Taming of the Shrew": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Pattikada Pattanama is based on the William Shakespeare comedy The Taming of the Shrew.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "Taming of the Shrew": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": true,
+   "n_sentences": 21,
+   "truncated": false,
+   "sha256": "675620aa6f113b3cd85eb55d1024dcc4ad41c82adc71f223083f2ff3dd31f7ed",
+   "drift_sample": false
+  },
+  {
+   "id": "Priyatama (2014 film)",
+   "title": "Priyatama (2014 film)",
+   "shortdesc": "2014 Indian film",
+   "medium": "film",
+   "sources": [
+    "Romeo and Juliet"
+   ],
+   "evidence": {
+    "Romeo and Juliet": [
+     "category"
+    ]
+   },
+   "evidence_tier": "category_only",
+   "lead_evidence": null,
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Romeo and Juliet": {
+     "found": [
+      "Romeo",
+      "Juliet"
+     ],
+     "distinctive": [
+      "Romeo",
+      "Juliet"
+     ],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": true,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": false,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 9,
+   "truncated": false,
+   "sha256": "fc7e0a75a4d328da6fc875e1fa40f0e873ff232e80c02bfa8ead7f0101a068ec",
+   "drift_sample": false
+  },
+  {
+   "id": "Qayamat Se Qayamat Tak",
+   "title": "Qayamat Se Qayamat Tak",
+   "shortdesc": "1988 Indian film by Mansoor Khan",
+   "medium": "film?",
+   "sources": [
+    "Romeo and Juliet"
+   ],
+   "evidence": {
+    "Romeo and Juliet": [
+     "category"
+    ]
+   },
+   "evidence_tier": "category_only",
+   "lead_evidence": null,
+   "names_flag": "changes_names",
+   "names_found": {
+    "Romeo and Juliet": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": false,
+   "n_sentences": 40,
+   "truncated": true,
+   "sha256": "95cf5f6e93dd30596d6f803559dcd4605248476a8ec7f8b2301055e35dad934e",
+   "drift_sample": false
+  },
+  {
+   "id": "Ran (film)",
+   "title": "Ran (film)",
+   "shortdesc": "1985 Japanese film by Akira Kurosawa",
+   "medium": "film",
+   "sources": [
+    "King Lear"
+   ],
+   "evidence": {
+    "King Lear": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "The plot derives from William Shakespeare's King Lear and includes segments based on legends of the daimyō Mōri Motonari.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "King Lear": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": true,
+   "n_sentences": 33,
+   "truncated": false,
+   "sha256": "5b77174aed93f88413b7cbd6e234347c9fe412d03716abb200e699fa7ef53934",
+   "drift_sample": true
+  },
+  {
+   "id": "Richard III (1955 film)",
+   "title": "Richard III (1955 film)",
+   "shortdesc": "1955 film by and with Laurence Olivier",
+   "medium": "film",
+   "sources": [
+    "Henry VI Part 1",
+    "Henry VI Part 2",
+    "Henry VI Part 3",
+    "Richard III"
+   ],
+   "evidence": {
+    "Richard III": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ],
+    "Henry VI Part 1": [
+     "lead_sentence"
+    ],
+    "Henry VI Part 2": [
+     "lead_sentence"
+    ],
+    "Henry VI Part 3": [
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Richard III is a 1955 British Technicolor film adaptation of William Shakespeare's historical play of the same name, also incorporating elements from his Henry VI, Part 3.",
+   "names_flag": "partial",
+   "names_found": {
+    "Richard III": {
+     "found": [
+      "Richard",
+      "Buckingham",
+      "Clarence",
+      "Anne",
+      "Richmond",
+      "Elizabeth"
+     ],
+     "distinctive": [
+      "Richmond"
+     ],
+     "n_principal": 6
+    },
+    "Henry VI Part 1": {
+     "found": [
+      "Henry",
+      "Gloucester"
+     ],
+     "distinctive": [],
+     "n_principal": 6
+    },
+    "Henry VI Part 2": {
+     "found": [
+      "Henry",
+      "Gloucester",
+      "York"
+     ],
+     "distinctive": [],
+     "n_principal": 6
+    },
+    "Henry VI Part 3": {
+     "found": [
+      "Henry",
+      "Edward",
+      "Richard"
+     ],
+     "distinctive": [],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": false,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 37,
+   "truncated": false,
+   "sha256": "3f16674172850ae56604c4806a47bbce0bcdf032e2ce5520b062de1bc1ca36ec",
+   "drift_sample": false
+  },
+  {
+   "id": "Richard III (1995 film)",
+   "title": "Richard III (1995 film)",
+   "shortdesc": "1995 Shakespearean film by Richard Loncraine",
+   "medium": "film",
+   "sources": [
+    "Richard III"
+   ],
+   "evidence": {
+    "Richard III": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Richard III is a 1995 film adaptation of William Shakespeare's play of the same name.",
+   "names_flag": "partial",
+   "names_found": {
+    "Richard III": {
+     "found": [
+      "Richard",
+      "Buckingham",
+      "Clarence",
+      "Anne",
+      "Richmond",
+      "Elizabeth"
+     ],
+     "distinctive": [
+      "Richmond"
+     ],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 28,
+   "truncated": false,
+   "sha256": "fdf91f181ebead54ef5fe02804e7ad56c3cb8c61f5470b460475272a7bb7399e",
+   "drift_sample": false
+  },
+  {
+   "id": "Romanoff and Juliet (1961 film)",
+   "title": "Romanoff and Juliet (1961 film)",
+   "shortdesc": "1961 film",
+   "medium": "film",
+   "sources": [
+    "Romeo and Juliet"
+   ],
+   "evidence": {
+    "Romeo and Juliet": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Romanoff and Juliet is a 1961 American Technicolor romantic comedy film adaptation of the play Romanoff and Juliet, which was itself loosely based on Romeo and Juliet by William Shakespeare, released by Universal Pictures.",
+   "names_flag": "partial",
+   "names_found": {
+    "Romeo and Juliet": {
+     "found": [
+      "Juliet"
+     ],
+     "distinctive": [
+      "Juliet"
+     ],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 29,
+   "truncated": false,
+   "sha256": "b341fe0b4215921ca08f923c37140ca4702f4740fd1c1b63f35d3941d20a851a",
+   "drift_sample": false
+  },
+  {
+   "id": "Romeo & Juliet (2013 film)",
+   "title": "Romeo & Juliet (2013 film)",
+   "shortdesc": "2013 film by Carlo Carlei",
+   "medium": "film",
+   "sources": [
+    "Romeo and Juliet"
+   ],
+   "evidence": {
+    "Romeo and Juliet": [
+     "category",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Romeo & Juliet is a 2013 film adaptation of William Shakespeare's romantic tragedy.",
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Romeo and Juliet": {
+     "found": [
+      "Romeo",
+      "Juliet",
+      "Mercutio",
+      "Tybalt",
+      "Benvolio",
+      "Laurence",
+      "Paris"
+     ],
+     "distinctive": [
+      "Romeo",
+      "Juliet",
+      "Mercutio",
+      "Tybalt",
+      "Benvolio",
+      "Laurence"
+     ],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 40,
+   "truncated": false,
+   "sha256": "37837003228ab0e3e6d14d31e635165b5341537bad0d4eed3a84d999dd758f43",
+   "drift_sample": false
+  },
+  {
+   "id": "Romeo & Juliet: Sealed with a Kiss",
+   "title": "Romeo & Juliet: Sealed with a Kiss",
+   "shortdesc": "2006 film by Phil Nibbelink",
+   "medium": "film?",
+   "sources": [
+    "Romeo and Juliet"
+   ],
+   "evidence": {
+    "Romeo and Juliet": [
+     "category",
+     "lead_sentence",
+     "wikidata_P941_inspired_by"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Romeo & Juliet: Sealed with a Kiss is a 2006 American animated musical romantic fantasy comedy-drama film loosely following the play Romeo and Juliet by William Shakespeare.",
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Romeo and Juliet": {
+     "found": [
+      "Romeo",
+      "Juliet",
+      "Mercutio",
+      "Benvolio"
+     ],
+     "distinctive": [
+      "Romeo",
+      "Juliet",
+      "Mercutio",
+      "Benvolio"
+     ],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 31,
+   "truncated": false,
+   "sha256": "37ddae55d147d3b96c16a85253aa8f17140683b6612f655a1261ac8afe87e471",
+   "drift_sample": false
+  },
+  {
+   "id": "Romeo + Juliet",
+   "title": "Romeo + Juliet",
+   "shortdesc": "1996 film directed by Baz Luhrmann",
+   "medium": "film",
+   "sources": [
+    "Romeo and Juliet"
+   ],
+   "evidence": {
+    "Romeo and Juliet": [
+     "category",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "It is a modernized adaptation of William Shakespeare's tragedy of the same name, albeit still using Shakespearean English.",
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Romeo and Juliet": {
+     "found": [
+      "Romeo",
+      "Juliet",
+      "Mercutio",
+      "Tybalt",
+      "Benvolio",
+      "Laurence",
+      "Paris"
+     ],
+     "distinctive": [
+      "Romeo",
+      "Juliet",
+      "Mercutio",
+      "Tybalt",
+      "Benvolio",
+      "Laurence"
+     ],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 34,
+   "truncated": false,
+   "sha256": "a5f3ca6d93cae3e6edc3e57e79b8a62ff4ed45a788498dce5c1f3fb660f9ef7a",
+   "drift_sample": false
+  },
+  {
+   "id": "Romeo Must Die",
+   "title": "Romeo Must Die",
+   "shortdesc": "2000 film by Andrzej Bartkowiak",
+   "medium": "film",
+   "sources": [
+    "Romeo and Juliet"
+   ],
+   "evidence": {
+    "Romeo and Juliet": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "The plot is loosely related to William Shakespeare's Romeo and Juliet, transplanted to contemporary Oakland with African American and Chinese-American gangs representing the feuding families.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "Romeo and Juliet": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": true,
+   "n_sentences": 30,
+   "truncated": false,
+   "sha256": "cd21bbdfed52507eced56b10c8dcde0f501b1724ef0a3de8a15fccc0904fd772",
+   "drift_sample": true
+  },
+  {
+   "id": "Romeo and Juliet (1908 film)",
+   "title": "Romeo and Juliet (1908 film)",
+   "shortdesc": "1908 film by J. Stuart Blackton",
+   "medium": "film",
+   "sources": [
+    "Romeo and Juliet"
+   ],
+   "evidence": {
+    "Romeo and Juliet": [
+     "category",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": null,
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Romeo and Juliet": {
+     "found": [
+      "Romeo",
+      "Juliet",
+      "Mercutio",
+      "Tybalt",
+      "Laurence",
+      "Paris"
+     ],
+     "distinctive": [
+      "Romeo",
+      "Juliet",
+      "Mercutio",
+      "Tybalt",
+      "Laurence"
+     ],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": true,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": false,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 14,
+   "truncated": false,
+   "sha256": "11ecafe84d1a3cd6d31a8ba0a477371b77068f42334decf9a5f0fa15c1694a13",
+   "drift_sample": false
+  },
+  {
+   "id": "Romeo and Juliet (1936 film)",
+   "title": "Romeo and Juliet (1936 film)",
+   "shortdesc": "1936 film by George Cukor",
+   "medium": "film",
+   "sources": [
+    "Romeo and Juliet"
+   ],
+   "evidence": {
+    "Romeo and Juliet": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Romeo and Juliet is a 1936 American film adapted from the play by William Shakespeare, directed by George Cukor from a screenplay by Talbot Jennings.",
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Romeo and Juliet": {
+     "found": [
+      "Romeo",
+      "Juliet",
+      "Mercutio",
+      "Tybalt",
+      "Laurence",
+      "Paris"
+     ],
+     "distinctive": [
+      "Romeo",
+      "Juliet",
+      "Mercutio",
+      "Tybalt",
+      "Laurence"
+     ],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 12,
+   "truncated": false,
+   "sha256": "684340ec0043ab9ec585b8edab9302dab5190177eeb649c8fb6ac187029c45b0",
+   "drift_sample": false
+  },
+  {
+   "id": "Romeo and Juliet (1968 film)",
+   "title": "Romeo and Juliet (1968 film)",
+   "shortdesc": "1968 film by Franco Zeffirelli",
+   "medium": "film",
+   "sources": [
+    "Romeo and Juliet"
+   ],
+   "evidence": {
+    "Romeo and Juliet": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Romeo and Juliet (Italian: Romeo e Giulietta) is a 1968 period romantic tragedy film, based on the play of the same name by William Shakespeare.",
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Romeo and Juliet": {
+     "found": [
+      "Romeo",
+      "Juliet",
+      "Mercutio",
+      "Tybalt",
+      "Laurence",
+      "Paris"
+     ],
+     "distinctive": [
+      "Romeo",
+      "Juliet",
+      "Mercutio",
+      "Tybalt",
+      "Laurence"
+     ],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 22,
+   "truncated": false,
+   "sha256": "a748d4fcf549f45fb389a6b2a5a4ba95919a12e59c5b1906995530ff485b3027",
+   "drift_sample": false
+  },
+  {
+   "id": "Romeo and Juliet Get Married",
+   "title": "Romeo and Juliet Get Married",
+   "shortdesc": "2005 film directed by Bruno Barreto",
+   "medium": "film",
+   "sources": [
+    "Romeo and Juliet"
+   ],
+   "evidence": {
+    "Romeo and Juliet": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "The film is loosely based on the William Shakespeare play, Romeo and Juliet, set in São Paulo amid two feuding soccer clubs, Palmeiras and Corinthians.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "Romeo and Juliet": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": true,
+   "n_sentences": 10,
+   "truncated": false,
+   "sha256": "467e2dcda166a0f7baf2ae721d78d1fde3c8e3524a0face92dfdcad1ab6eb468",
+   "drift_sample": false
+  },
+  {
+   "id": "Rosaline (film)",
+   "title": "Rosaline (film)",
+   "shortdesc": "2022 film by Karen Maine",
+   "medium": "film",
+   "sources": [
+    "Romeo and Juliet"
+   ],
+   "evidence": {
+    "Romeo and Juliet": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "It is based on the 2012 young adult novel When You Were Mine by Rebecca Serle, which in turn was inspired by William Shakespeare's Romeo and Juliet.",
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Romeo and Juliet": {
+     "found": [
+      "Romeo",
+      "Juliet",
+      "Tybalt",
+      "Paris"
+     ],
+     "distinctive": [
+      "Romeo",
+      "Juliet",
+      "Tybalt"
+     ],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 23,
+   "truncated": false,
+   "sha256": "6ea20f8620cb3286758e0fb3c9419d7017daf64186d9979594a49145a2ca939c",
+   "drift_sample": false
+  },
+  {
+   "id": "Rosencrantz & Guildenstern Are Dead (film)",
+   "title": "Rosencrantz & Guildenstern Are Dead (film)",
+   "shortdesc": "1990 film by Tom Stoppard",
+   "medium": "film",
+   "sources": [
+    "Hamlet"
+   ],
+   "evidence": {
+    "Hamlet": [
+     "category"
+    ]
+   },
+   "evidence_tier": "category_only",
+   "lead_evidence": null,
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Hamlet": {
+     "found": [
+      "Hamlet",
+      "Claudius",
+      "Gertrude",
+      "Ophelia",
+      "Polonius",
+      "Laertes"
+     ],
+     "distinctive": [
+      "Hamlet",
+      "Claudius",
+      "Gertrude",
+      "Ophelia",
+      "Polonius",
+      "Laertes"
+     ],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": true,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": false,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 19,
+   "truncated": false,
+   "sha256": "93ba5e72af28d814047006f17f3339faf8dc64bca826dfe6ec7fc78dca8f5c29",
+   "drift_sample": false
+  },
+  {
+   "id": "Rosencrantz and Guildenstern Are Undead",
+   "title": "Rosencrantz and Guildenstern Are Undead",
+   "shortdesc": "2009 film by Jordan Galland",
+   "medium": "film",
+   "sources": [
+    "Hamlet"
+   ],
+   "evidence": {
+    "Hamlet": [
+     "category"
+    ]
+   },
+   "evidence_tier": "category_only",
+   "lead_evidence": null,
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Hamlet": {
+     "found": [
+      "Hamlet",
+      "Ophelia",
+      "Horatio"
+     ],
+     "distinctive": [
+      "Hamlet",
+      "Ophelia",
+      "Horatio"
+     ],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": true,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": false,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 21,
+   "truncated": false,
+   "sha256": "338cd07e06b1108ae8f44026e1bdf07eda5ab46a5e7bea7e91f7613ef8956880",
+   "drift_sample": false
+  },
+  {
+   "id": "Saudagar (1991 film)",
+   "title": "Saudagar (1991 film)",
+   "shortdesc": "1991 Indian Hindi drama film",
+   "medium": "film",
+   "sources": [
+    "Romeo and Juliet"
+   ],
+   "evidence": {
+    "Romeo and Juliet": [
+     "category"
+    ]
+   },
+   "evidence_tier": "category_only",
+   "lead_evidence": null,
+   "names_flag": "changes_names",
+   "names_found": {
+    "Romeo and Juliet": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": false,
+   "n_sentences": 39,
+   "truncated": false,
+   "sha256": "68947e812ba53ed61b70bae4e9682f78534fc64ed4dd32e3331ceb04555f7c93",
+   "drift_sample": false
+  },
+  {
+   "id": "Scarlet (2025 film)",
+   "title": "Scarlet (2025 film)",
+   "shortdesc": "Anime film by Mamoru Hosoda",
+   "medium": "film",
+   "sources": [
+    "Hamlet"
+   ],
+   "evidence": {
+    "Hamlet": [
+     "category",
+     "lead_sentence",
+     "wikidata_P941_inspired_by"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Inspired by the Shakespearean tragedy Hamlet, the film follows the eponymous princess who can cross time and space on a quest of vengeance after her father is murdered.",
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Hamlet": {
+     "found": [
+      "Claudius",
+      "Gertrude",
+      "Polonius",
+      "Laertes"
+     ],
+     "distinctive": [
+      "Claudius",
+      "Gertrude",
+      "Polonius",
+      "Laertes"
+     ],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 40,
+   "truncated": false,
+   "sha256": "65cd3cb05de8d19e2e17911221cee7a33abc375dd9a3ef63c14b1076a7212fcc",
+   "drift_sample": false
+  },
+  {
+   "id": "Scotland, PA",
+   "title": "Scotland, PA",
+   "shortdesc": "2001 bleak comedy crime film by William Morrissette",
+   "medium": "film",
+   "sources": [
+    "Macbeth"
+   ],
+   "evidence": {
+    "Macbeth": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Scotland, PA is a 2001 American black comedy crime film written and directed by Billy Morrissette as a modernized retelling of Macbeth.",
+   "names_flag": "partial",
+   "names_found": {
+    "Macbeth": {
+     "found": [
+      "Duncan",
+      "Malcolm"
+     ],
+     "distinctive": [],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 23,
+   "truncated": false,
+   "sha256": "75c9b34f967168a93d3df290ff75494b86da4fd05c95fe92566f3d2ea78f52b3",
+   "drift_sample": false
+  },
+  {
+   "id": "Second Generation (film)",
+   "title": "Second Generation (film)",
+   "shortdesc": "2003 British TV series or programme",
+   "medium": "unknown",
+   "sources": [
+    "King Lear"
+   ],
+   "evidence": {
+    "King Lear": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Inspired by the Jacobean tragedy King Lear by William Shakespeare, the drama revolves around two childhood sweet-hearts who find the passion is still there when their paths cross.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "King Lear": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": true,
+   "n_sentences": 40,
+   "truncated": false,
+   "sha256": "4045559fe021463074b531e0620828912f0a2c83c55ce03c23ebc38e7443cd30",
+   "drift_sample": true
+  },
+  {
+   "id": "Shakespeare Writing \"Julius Caesar\"",
+   "title": "Shakespeare Writing \"Julius Caesar\"",
+   "shortdesc": "1907 French film",
+   "medium": "film",
+   "sources": [
+    "Julius Caesar"
+   ],
+   "evidence": {
+    "Julius Caesar": [
+     "category"
+    ]
+   },
+   "evidence_tier": "category_only",
+   "lead_evidence": null,
+   "names_flag": "partial",
+   "names_found": {
+    "Julius Caesar": {
+     "found": [
+      "Caesar",
+      "Brutus",
+      "Cassius"
+     ],
+     "distinctive": [],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": true,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": false,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 9,
+   "truncated": false,
+   "sha256": "17b39145fd36b529cfdbb22623727ec96d0a8e02768f8f1a3ab7987996db8b8e",
+   "drift_sample": false
+  },
+  {
+   "id": "Shakespeare in Love",
+   "title": "Shakespeare in Love",
+   "shortdesc": "1998 film by John Madden",
+   "medium": "film",
+   "sources": [
+    "Romeo and Juliet"
+   ],
+   "evidence": {
+    "Romeo and Juliet": [
+     "category"
+    ]
+   },
+   "evidence_tier": "category_only",
+   "lead_evidence": "Several characters are based on historical figures, and many of the characters, lines, and plot devices allude to Shakespeare's plays.",
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Romeo and Juliet": {
+     "found": [
+      "Romeo",
+      "Juliet",
+      "Mercutio"
+     ],
+     "distinctive": [
+      "Romeo",
+      "Juliet",
+      "Mercutio"
+     ],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": true,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": false,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 33,
+   "truncated": false,
+   "sha256": "764ae3e5943bc281cfea62f52df21449a90497a6ff2306b8c074580484b96c5b",
+   "drift_sample": false
+  },
+  {
+   "id": "She's the Man",
+   "title": "She's the Man",
+   "shortdesc": "2006 romantic comedy sports film by Andy Fickman",
+   "medium": "film",
+   "sources": [
+    "Twelfth Night"
+   ],
+   "evidence": {
+    "Twelfth Night": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Inspired by William Shakespeare's play Twelfth Night, the film centers on teenager Viola Hastings, who enrolls at her brother's new boarding school, Illyria Prep, in his place and pretends to be a boy in order to play on the boys' soccer team.",
+   "names_flag": "partial",
+   "names_found": {
+    "Twelfth Night": {
+     "found": [
+      "Viola",
+      "Orsino",
+      "Olivia",
+      "Sebastian",
+      "Toby"
+     ],
+     "distinctive": [
+      "Orsino"
+     ],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 40,
+   "truncated": true,
+   "sha256": "c64a05034fd1db2e40183c5e3734dcd39074c2877eb558f41600b4d6c46425f8",
+   "drift_sample": false
+  },
+  {
+   "id": "Sherlock Gnomes",
+   "title": "Sherlock Gnomes",
+   "shortdesc": "2018 film by John Stevenson",
+   "medium": "film",
+   "sources": [
+    "Romeo and Juliet"
+   ],
+   "evidence": {
+    "Romeo and Juliet": [
+     "category",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": null,
+   "names_flag": "partial",
+   "names_found": {
+    "Romeo and Juliet": {
+     "found": [
+      "Juliet"
+     ],
+     "distinctive": [
+      "Juliet"
+     ],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 25,
+   "truncated": false,
+   "sha256": "9b15f85531f32c5c3f3db26bfd3dc57d626fe6ab7e26bee4040d7b35c86b7b4b",
+   "drift_sample": false
+  },
+  {
+   "id": "Social Suicide (film)",
+   "title": "Social Suicide (film)",
+   "shortdesc": "2015 British film",
+   "medium": "film",
+   "sources": [
+    "Romeo and Juliet"
+   ],
+   "evidence": {
+    "Romeo and Juliet": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Inspired by William Shakespeare's Romeo and Juliet, the film reunited Olivia Hussey (Eisley's real-life mother in her final role before her death in December 2024) and Leonard Whiting for the first time since the 1968 film adaptation.",
+   "names_flag": "partial",
+   "names_found": {
+    "Romeo and Juliet": {
+     "found": [
+      "Laurence"
+     ],
+     "distinctive": [
+      "Laurence"
+     ],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 26,
+   "truncated": false,
+   "sha256": "053fd4ab67df7165dabdf05ffd97393894c5541ba04a0a16b5d9eea30be6ddff",
+   "drift_sample": false
+  },
+  {
+   "id": "Strange Brew",
+   "title": "Strange Brew",
+   "shortdesc": "1983 comedy film by Rick Moranis and Dave Thomas",
+   "medium": "film",
+   "sources": [
+    "Hamlet"
+   ],
+   "evidence": {
+    "Hamlet": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Loosely based on elements of Shakespeare's Hamlet, this Canadian and American co-production was shot in Toronto and Scarborough, and in Prince George, British Columbia.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "Hamlet": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": true,
+   "n_sentences": 27,
+   "truncated": false,
+   "sha256": "4516aa52c5215149e6456eec90638edd89ee8ed72bab6b3fae5fe8cb9885653f",
+   "drift_sample": true
+  },
+  {
+   "id": "Strange Magic (film)",
+   "title": "Strange Magic (film)",
+   "shortdesc": "2015 film by Gary Rydstrom",
+   "medium": "film?",
+   "sources": [
+    "Midsummer Night's Dream"
+   ],
+   "evidence": {
+    "Midsummer Night's Dream": [
+     "category",
+     "lead_sentence",
+     "wikidata_P941_inspired_by"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Strange Magic is a 2015 American animated jukebox musical fantasy film directed by Gary Rydstrom, screenplay written by Rydstrom, David Berenbaum, and Irene Mecchi based on a story written by George Lucas and inspired by William Shakespeare's A Midsummer Night's Dream.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "Midsummer Night's Dream": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 8
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": true,
+   "n_sentences": 35,
+   "truncated": false,
+   "sha256": "5cf4db347c0c4a138212b5785a95aa66848842cbb55719baf9a81544a4d074c5",
+   "drift_sample": true
+  },
+  {
+   "id": "Tempest (1982 film)",
+   "title": "Tempest (1982 film)",
+   "shortdesc": "1982 film by Paul Mazursky",
+   "medium": "film",
+   "sources": [
+    "The Tempest"
+   ],
+   "evidence": {
+    "The Tempest": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "It is a loose modern-day adaptation of Shakespeare's The Tempest.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "The Tempest": {
+     "found": [
+      "Miranda"
+     ],
+     "distinctive": [],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": true,
+   "n_sentences": 9,
+   "truncated": false,
+   "sha256": "6e7e9b26f3489dc56fcde4c55ac6db8f00274bf2d55a01ec8b4c2979fc592bbf",
+   "drift_sample": true
+  },
+  {
+   "id": "The Bad Sleep Well",
+   "title": "The Bad Sleep Well",
+   "shortdesc": "1960 film by Akira Kurosawa",
+   "medium": "film",
+   "sources": [
+    "Hamlet"
+   ],
+   "evidence": {
+    "Hamlet": [
+     "category"
+    ]
+   },
+   "evidence_tier": "category_only",
+   "lead_evidence": null,
+   "names_flag": "changes_names",
+   "names_found": {
+    "Hamlet": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": false,
+   "n_sentences": 25,
+   "truncated": false,
+   "sha256": "6188b4a3609e0ca3f358eb6cecf7f4a460d91066fe5279e11c2d106d1b3ee1a7",
+   "drift_sample": false
+  },
+  {
+   "id": "The Banquet (2006 film)",
+   "title": "The Banquet (2006 film)",
+   "shortdesc": "2006 Chinese-Hong Kong film by Feng Xiaogang",
+   "medium": "film",
+   "sources": [
+    "Hamlet"
+   ],
+   "evidence": {
+    "Hamlet": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "It is a loose adaptation of William Shakespeare's tragedy Hamlet set in the Five Dynasties and Ten Kingdoms period in 10th century China.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "Hamlet": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": true,
+   "n_sentences": 40,
+   "truncated": false,
+   "sha256": "838128db593b5ab4aed2b087b96a985a13c7f108129750bc4320ad63a657f7b1",
+   "drift_sample": true
+  },
+  {
+   "id": "The Boss (1958 film)",
+   "title": "The Boss (1958 film)",
+   "shortdesc": "1958 Egyptian film",
+   "medium": "film",
+   "sources": [
+    "Othello"
+   ],
+   "evidence": {
+    "Othello": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "The film’s story is based on the tragedy Othello by William Shakespeare.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "Othello": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": true,
+   "n_sentences": 10,
+   "truncated": false,
+   "sha256": "df7da0c3ef1bc4420f7e4d712ce4c5bc595ccb6dbe85a4aa8976018a2b0a2a9f",
+   "drift_sample": true
+  },
+  {
+   "id": "The Bubble (2006 film)",
+   "title": "The Bubble (2006 film)",
+   "shortdesc": "2006 film by Eytan Fox",
+   "medium": "film",
+   "sources": [
+    "Romeo and Juliet"
+   ],
+   "evidence": {
+    "Romeo and Juliet": [
+     "category"
+    ]
+   },
+   "evidence_tier": "category_only",
+   "lead_evidence": null,
+   "names_flag": "changes_names",
+   "names_found": {
+    "Romeo and Juliet": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": false,
+   "n_sentences": 34,
+   "truncated": false,
+   "sha256": "a2acf682340208473767ac5eb7dbbc18fa50854ddc8c2e4b50747f1902d53680",
+   "drift_sample": false
+  },
+  {
+   "id": "The Journey to Melonia",
+   "title": "The Journey to Melonia",
+   "shortdesc": "1989 Swedish film",
+   "medium": "film",
+   "sources": [
+    "The Tempest"
+   ],
+   "evidence": {
+    "The Tempest": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Voyage to Melonia (Swedish: Resan till Melonia; full English title: Voyage to Melonia: A fantasy loosely based on Shakespeare's 'The Tempest') is a 1989 Swedish-Norwegian animated adventure fantasy film directed by Per Åhlin, loosely based on William Shakespeare's The Tempest, with further inspiration from Jules Verne's Propeller Island and Charles Dickens' Oliver Twist.",
+   "names_flag": "keeps_names",
+   "names_found": {
+    "The Tempest": {
+     "found": [
+      "Prospero",
+      "Miranda",
+      "Ariel",
+      "Caliban",
+      "Ferdinand"
+     ],
+     "distinctive": [
+      "Prospero",
+      "Caliban",
+      "Ferdinand"
+     ],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": true,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": false,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 17,
+   "truncated": false,
+   "sha256": "ccab2326c56315d98eb12729009e1d3695ff8fe2e93dee5e0d0c24ee9bd1a65b",
+   "drift_sample": false
+  },
+  {
+   "id": "The King (2019 film)",
+   "title": "The King (2019 film)",
+   "shortdesc": "2019 film by David Michôd",
+   "medium": "film",
+   "sources": [
+    "Henry IV Part 1",
+    "Henry IV Part 2",
+    "Henry V"
+   ],
+   "evidence": {
+    "Henry IV Part 1": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ],
+    "Henry V": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ],
+    "Henry IV Part 2": [
+     "lead_sentence",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "The King is a 2019 epic historical drama film directed by David Michôd, based on several plays from William Shakespeare's Henriad.",
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Henry IV Part 1": {
+     "found": [
+      "Hal",
+      "Falstaff",
+      "Hotspur",
+      "Henry"
+     ],
+     "distinctive": [
+      "Falstaff",
+      "Hotspur"
+     ],
+     "n_principal": 6
+    },
+    "Henry V": {
+     "found": [
+      "Henry",
+      "Dauphin"
+     ],
+     "distinctive": [],
+     "n_principal": 6
+    },
+    "Henry IV Part 2": {
+     "found": [
+      "Hal",
+      "Falstaff",
+      "Henry"
+     ],
+     "distinctive": [
+      "Falstaff"
+     ],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": false,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 31,
+   "truncated": false,
+   "sha256": "f2f43a2cae8b79703f40eb0064272d673dc855e77e15e6711a27a3031a953d0a",
+   "drift_sample": false
+  },
+  {
+   "id": "The Lion King",
+   "title": "The Lion King",
+   "shortdesc": "1994 American animated film",
+   "medium": "film?",
+   "sources": [
+    "Hamlet"
+   ],
+   "evidence": {
+    "Hamlet": [
+     "category",
+     "wikidata_P941_inspired_by"
+    ]
+   },
+   "evidence_tier": "p941",
+   "lead_evidence": null,
+   "names_flag": "changes_names",
+   "names_found": {
+    "Hamlet": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": true,
+   "remake_of_dev": false,
+   "primary": false,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 35,
+   "truncated": false,
+   "sha256": "c839fca09f3d6c3fa4b95241b6f8a0129f9598d71e5f86272aa2c74e745bd73f",
+   "drift_sample": false
+  },
+  {
+   "id": "The Lion King (2019 film)",
+   "title": "The Lion King (2019 film)",
+   "shortdesc": "2019 film by Jon Favreau",
+   "medium": "film?",
+   "sources": [
+    "Hamlet"
+   ],
+   "evidence": {
+    "Hamlet": [
+     "category"
+    ]
+   },
+   "evidence_tier": "category_only",
+   "lead_evidence": null,
+   "names_flag": "changes_names",
+   "names_found": {
+    "Hamlet": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": true,
+   "primary": true,
+   "renamed": true,
+   "h5": false,
+   "n_sentences": 37,
+   "truncated": false,
+   "sha256": "4408a4a03bad2c9e046fa3e4ae59a256e08ee3a8b05e0e858d1d058885d3b643",
+   "drift_sample": false
+  },
+  {
+   "id": "The Lion King 1½",
+   "title": "The Lion King 1½",
+   "shortdesc": "2004 film by Bradley Raymond",
+   "medium": "film?",
+   "sources": [
+    "Hamlet"
+   ],
+   "evidence": {
+    "Hamlet": [
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "The film's structure is inspired by Tom Stoppard's Rosencrantz and Guildenstern Are Dead, a tragicomedy that tells the story of Hamlet from the point of view of two minor characters.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "Hamlet": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": true,
+   "primary": true,
+   "renamed": true,
+   "h5": false,
+   "n_sentences": 36,
+   "truncated": false,
+   "sha256": "3bceff8636f17f7e23f2a435868f9289cd62d0d9b2d50ca6ac39f97edc43820a",
+   "drift_sample": false
+  },
+  {
+   "id": "The Lion King II: Simba's Pride",
+   "title": "The Lion King II: Simba's Pride",
+   "shortdesc": "1998 American direct-to-video animated film",
+   "medium": "film?",
+   "sources": [
+    "Romeo and Juliet"
+   ],
+   "evidence": {
+    "Romeo and Juliet": [
+     "category",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": null,
+   "names_flag": "changes_names",
+   "names_found": {
+    "Romeo and Juliet": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": true,
+   "primary": true,
+   "renamed": true,
+   "h5": false,
+   "n_sentences": 23,
+   "truncated": false,
+   "sha256": "26c6a5bb4558f4689fa1655fa49a47cdca01a465ae39920acc39b72afee775ea",
+   "drift_sample": false
+  },
+  {
+   "id": "The Merchant of Venice (1923 film)",
+   "title": "The Merchant of Venice (1923 film)",
+   "shortdesc": "1923 film by Peter Paul Felner",
+   "medium": "film",
+   "sources": [
+    "Merchant of Venice"
+   ],
+   "evidence": {
+    "Merchant of Venice": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "The film is an adaptation of William Shakespeare's play The Merchant of Venice.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "Merchant of Venice": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": true,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": false,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 23,
+   "truncated": false,
+   "sha256": "18f9c396e69326e15a8b9a41fbb1b97fc52692b3f2b3dbec8d3c8969ede7a468",
+   "drift_sample": false
+  },
+  {
+   "id": "The Merchant of Venice (2004 film)",
+   "title": "The Merchant of Venice (2004 film)",
+   "shortdesc": "2004 film by Michael Radford",
+   "medium": "film",
+   "sources": [
+    "Merchant of Venice"
+   ],
+   "evidence": {
+    "Merchant of Venice": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "The Merchant of Venice is a 2004 romantic drama film directed by Michael Radford, based on William Shakespeare's play.",
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Merchant of Venice": {
+     "found": [
+      "Shylock",
+      "Antonio",
+      "Bassanio",
+      "Portia",
+      "Jessica",
+      "Gratiano"
+     ],
+     "distinctive": [
+      "Shylock",
+      "Antonio",
+      "Bassanio",
+      "Gratiano"
+     ],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 36,
+   "truncated": false,
+   "sha256": "9f152be629ba04a55f69c80550fb3574e9e0d1652ea3b0a8ee780e067eb5640d",
+   "drift_sample": false
+  },
+  {
+   "id": "The Phantom Lover",
+   "title": "The Phantom Lover",
+   "shortdesc": "1995 film by Ronny Yu",
+   "medium": "film?",
+   "sources": [
+    "Romeo and Juliet"
+   ],
+   "evidence": {
+    "Romeo and Juliet": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "The film itself is loosely based on the real-life \"Phantom Lover\" Dan Cheung (known as such due to the ghostlike nature of the women he romanced) and is a loose adaptation of the classic Romeo and Juliet romance where love between two passionate lovers were ultimately doomed when parental opposition was the major obstacle.",
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Romeo and Juliet": {
+     "found": [
+      "Romeo",
+      "Juliet"
+     ],
+     "distinctive": [
+      "Romeo",
+      "Juliet"
+     ],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": true,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": false,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 32,
+   "truncated": false,
+   "sha256": "84c12dfb5073333da52d22a071bab21f4fe10dec0b359506d402a2749f4bd219",
+   "drift_sample": false
+  },
+  {
+   "id": "The Sea Prince and the Fire Child",
+   "title": "The Sea Prince and the Fire Child",
+   "shortdesc": "1981 Japanese anime film",
+   "medium": "tv series?",
+   "sources": [
+    "Romeo and Juliet"
+   ],
+   "evidence": {
+    "Romeo and Juliet": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "It is said to be a loose retelling of Romeo and Juliet, itself a European version of many tales of star-crossed lovers in a variety of cultures and eras.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "Romeo and Juliet": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": true,
+   "n_sentences": 40,
+   "truncated": true,
+   "sha256": "455b7b75e667b07ecdd18b8011b1d416587fd8e92da72c3d05ecc742dc34d972",
+   "drift_sample": false
+  },
+  {
+   "id": "The Silver Skates (film)",
+   "title": "The Silver Skates (film)",
+   "shortdesc": "2020 Russian film by Michael Lockshin",
+   "medium": "film",
+   "sources": [
+    "Romeo and Juliet"
+   ],
+   "evidence": {
+    "Romeo and Juliet": [
+     "category"
+    ]
+   },
+   "evidence_tier": "category_only",
+   "lead_evidence": null,
+   "names_flag": "changes_names",
+   "names_found": {
+    "Romeo and Juliet": {
+     "found": [
+      "Paris"
+     ],
+     "distinctive": [],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": false,
+   "n_sentences": 40,
+   "truncated": true,
+   "sha256": "61b7a17c435a8ef82b29e0b6bd9153bba9e19a0a236d68327afdd0c2cca0f93f",
+   "drift_sample": false
+  },
+  {
+   "id": "The Taming of the Scoundrel",
+   "title": "The Taming of the Scoundrel",
+   "shortdesc": "1980 Italian film",
+   "medium": "film",
+   "sources": [
+    "Taming of the Shrew"
+   ],
+   "evidence": {
+    "Taming of the Shrew": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "The Taming of the Scoundrel (Italian: Il bisbetico domato , literally \"The ill-tempered man being tamed\") is a 1980 Italian film directed by Castellano & Pipolo The plot is loosely inspired by William Shakespeare's The Taming of the Shrew.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "Taming of the Shrew": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": true,
+   "n_sentences": 10,
+   "truncated": false,
+   "sha256": "ed8c100f5ea58b774d1360d134df6e69bdd21e62af0036d3483a6a6496fcce37",
+   "drift_sample": true
+  },
+  {
+   "id": "The Taming of the Shrew (1908 film)",
+   "title": "The Taming of the Shrew (1908 film)",
+   "shortdesc": "1908 short movie by David W. Griffith",
+   "medium": "film",
+   "sources": [
+    "Taming of the Shrew"
+   ],
+   "evidence": {
+    "Taming of the Shrew": [
+     "category",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "The 17-minute short, which is based on the play of the same name by English playwright William Shakespeare, was filmed in just two days–October 1 and 7, 1908–at Biograph's studio in Manhattan and on location in nearby Coytesville, a borough of Fort Lee, New Jersey.",
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Taming of the Shrew": {
+     "found": [
+      "Katherina",
+      "Petruchio",
+      "Bianca"
+     ],
+     "distinctive": [
+      "Katherina",
+      "Petruchio",
+      "Bianca"
+     ],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 13,
+   "truncated": false,
+   "sha256": "fd8636c5ea57cda33922b1f81658adfa13f08722b2ebb9cb6c9aa6c36cd906e2",
+   "drift_sample": false
+  },
+  {
+   "id": "The Tempest (1908 film)",
+   "title": "The Tempest (1908 film)",
+   "shortdesc": "1908 British film",
+   "medium": "film",
+   "sources": [
+    "The Tempest"
+   ],
+   "evidence": {
+    "The Tempest": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "It was written by Langford Reed and was the second screen adaptation of William Shakespeare's The Tempest, the first being when Charles Urban filmed the opening storm sequence of Herbert Beerbohm Tree's stage version at Her Majesty's Theatre in 1905 for a 2+1⁄2-minute flicker.",
+   "names_flag": "keeps_names",
+   "names_found": {
+    "The Tempest": {
+     "found": [
+      "Prospero",
+      "Miranda",
+      "Ariel",
+      "Caliban",
+      "Ferdinand"
+     ],
+     "distinctive": [
+      "Prospero",
+      "Caliban",
+      "Ferdinand"
+     ],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 24,
+   "truncated": false,
+   "sha256": "17b33699679e02076ce2a444419042cf692a2780b6385b4d5a29c9faaae8ae27",
+   "drift_sample": false
+  },
+  {
+   "id": "The Tempest (1979 film)",
+   "title": "The Tempest (1979 film)",
+   "shortdesc": "1979 British drama film",
+   "medium": "film",
+   "sources": [
+    "The Tempest"
+   ],
+   "evidence": {
+    "The Tempest": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "The Tempest is a 1979 film adaptation of William Shakespeare's play of the same name.",
+   "names_flag": "keeps_names",
+   "names_found": {
+    "The Tempest": {
+     "found": [
+      "Prospero",
+      "Miranda",
+      "Ariel",
+      "Caliban",
+      "Ferdinand",
+      "Alonso"
+     ],
+     "distinctive": [
+      "Prospero",
+      "Caliban",
+      "Ferdinand",
+      "Alonso"
+     ],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 30,
+   "truncated": false,
+   "sha256": "281a129bd89990103983a72863065b1d24ab4262461a41a8e932678cefc85c07",
+   "drift_sample": false
+  },
+  {
+   "id": "The Tragedy of Macbeth (2021 film)",
+   "title": "The Tragedy of Macbeth (2021 film)",
+   "shortdesc": "Film by Joel Coen",
+   "medium": "film",
+   "sources": [
+    "Macbeth"
+   ],
+   "evidence": {
+    "Macbeth": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "The Tragedy of Macbeth is a 2021 American tragedy film written, directed and produced by Joel Coen, based on the play Macbeth by William Shakespeare.",
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Macbeth": {
+     "found": [
+      "Macbeth",
+      "Banquo",
+      "Duncan",
+      "Macduff",
+      "Malcolm",
+      "Fleance"
+     ],
+     "distinctive": [
+      "Macbeth",
+      "Banquo",
+      "Macduff",
+      "Fleance"
+     ],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 28,
+   "truncated": false,
+   "sha256": "d5276046b6906d170ca380f6ce019ad1f5ac6360765d627d066b3ce46e9f5d68",
+   "drift_sample": false
+  },
+  {
+   "id": "The Winter's Tale (1910 film)",
+   "title": "The Winter's Tale (1910 film)",
+   "shortdesc": "1910 American film",
+   "medium": "film",
+   "sources": [
+    "Winter's Tale"
+   ],
+   "evidence": {
+    "Winter's Tale": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "The plot is an adaptation of The Winter's Tale by William Shakespeare and requires fore-knowledge of the plot in order to understand the condensed one reel work.",
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Winter's Tale": {
+     "found": [
+      "Leontes",
+      "Hermione",
+      "Polixenes",
+      "Paulina"
+     ],
+     "distinctive": [
+      "Leontes",
+      "Hermione",
+      "Polixenes",
+      "Paulina"
+     ],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": true,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": false,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 20,
+   "truncated": false,
+   "sha256": "fd77ecbe45361facdf3235ec5382e03829307f085fb659255e5105c119e62fce",
+   "drift_sample": false
+  },
+  {
+   "id": "Throne of Blood",
+   "title": "Throne of Blood",
+   "shortdesc": "1957 Japanese film by Akira Kurosawa",
+   "medium": "film",
+   "sources": [
+    "Macbeth"
+   ],
+   "evidence": {
+    "Macbeth": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "The film transposes the plot of English dramatist William Shakespeare's play Macbeth (1606) from Medieval Scotland to feudal Japan, with stylistic elements drawn from Noh drama.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "Macbeth": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": true,
+   "n_sentences": 26,
+   "truncated": false,
+   "sha256": "7bda67751963f5e9e0864c8dbdc32241d4dcebff1db4b889b408a41efed9df07",
+   "drift_sample": true
+  },
+  {
+   "id": "Titus (film)",
+   "title": "Titus (film)",
+   "shortdesc": "1999 film directed by Julie Taymor",
+   "medium": "film",
+   "sources": [
+    "Titus Andronicus"
+   ],
+   "evidence": {
+    "Titus Andronicus": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Titus is a 1999 historical drama film written, co-produced, and directed by Julie Taymor in her feature directorial debut, based on William Shakespeare's tragedy Titus Andronicus.",
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Titus Andronicus": {
+     "found": [
+      "Titus",
+      "Tamora",
+      "Aaron",
+      "Lavinia",
+      "Saturninus",
+      "Lucius"
+     ],
+     "distinctive": [
+      "Titus",
+      "Tamora",
+      "Aaron",
+      "Lavinia",
+      "Saturninus"
+     ],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 40,
+   "truncated": true,
+   "sha256": "e02ba98f762d37cfb3d69686aa64b9d0c4dc153de213174b7519ec180cf7987a",
+   "drift_sample": false
+  },
+  {
+   "id": "Tower of London (1962 film)",
+   "title": "Tower of London (1962 film)",
+   "shortdesc": "1962 film by Roger Corman",
+   "medium": "film",
+   "sources": [
+    "Macbeth",
+    "Richard III"
+   ],
+   "evidence": {
+    "Macbeth": [
+     "category",
+     "lead_sentence"
+    ],
+    "Richard III": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "It tells a highly fictionalized account of the rise to power and eventual downfall of King Richard III of England, freely combining elements derived from the plots of Shakespeare's plays Richard III and Macbeth.",
+   "names_flag": "partial",
+   "names_found": {
+    "Macbeth": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 6
+    },
+    "Richard III": {
+     "found": [
+      "Richard",
+      "Buckingham",
+      "Clarence",
+      "Anne",
+      "Richmond"
+     ],
+     "distinctive": [
+      "Richmond"
+     ],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": false,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 35,
+   "truncated": false,
+   "sha256": "dad4c8707998e7f72df43a50e7002d688d7e9ea1d92d821f6f5b482777f65e87",
+   "drift_sample": false
+  },
+  {
+   "id": "Tromeo and Juliet",
+   "title": "Tromeo and Juliet",
+   "shortdesc": "1996 American film",
+   "medium": "film",
+   "sources": [
+    "Romeo and Juliet"
+   ],
+   "evidence": {
+    "Romeo and Juliet": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Tromeo and Juliet is a 1996 American independent transgressive romantic black comedy film and a loose adaptation of the play Romeo and Juliet by William Shakespeare from Troma Entertainment.",
+   "names_flag": "partial",
+   "names_found": {
+    "Romeo and Juliet": {
+     "found": [
+      "Juliet"
+     ],
+     "distinctive": [
+      "Juliet"
+     ],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": true,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": false,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 38,
+   "truncated": false,
+   "sha256": "b8fc29f345b94aa478c34bbe96290c217b0f31a7e4c665828c4310de2a0fc060",
+   "drift_sample": false
+  },
+  {
+   "id": "Twelfth Night (1910 film)",
+   "title": "Twelfth Night (1910 film)",
+   "shortdesc": "1910 American film",
+   "medium": "film",
+   "sources": [
+    "Twelfth Night"
+   ],
+   "evidence": {
+    "Twelfth Night": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "It is based on William Shakespeare's play Twelfth Night.",
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Twelfth Night": {
+     "found": [
+      "Viola",
+      "Orsino",
+      "Olivia",
+      "Sebastian",
+      "Malvolio"
+     ],
+     "distinctive": [
+      "Orsino",
+      "Malvolio"
+     ],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 17,
+   "truncated": false,
+   "sha256": "47618401f2b8c7eb8d15dff98aa1c43efd862cc21f09d152e59ca3bc17329512",
+   "drift_sample": false
+  },
+  {
+   "id": "Twelfth Night (1955 film)",
+   "title": "Twelfth Night (1955 film)",
+   "shortdesc": "Soviet film by Yan Frid",
+   "medium": "film",
+   "sources": [
+    "Twelfth Night"
+   ],
+   "evidence": {
+    "Twelfth Night": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Twelfth Night (Russian: Двенадцатая ночь, transliteration Dvenadtsataya noch) is a 1955 Soviet romantic comedy-drama film produced by Lenfilm, based on Shakespeare's play Twelfth Night, or What You Will.",
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Twelfth Night": {
+     "found": [
+      "Viola",
+      "Orsino",
+      "Olivia",
+      "Sebastian",
+      "Malvolio",
+      "Toby"
+     ],
+     "distinctive": [
+      "Orsino",
+      "Malvolio"
+     ],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 12,
+   "truncated": false,
+   "sha256": "b35e0a5c9c7130302133cfea75d8525d03e115ee3ad4ffa24be902f5ee9f8286",
+   "drift_sample": false
+  },
+  {
+   "id": "Twelfth Night (1996 film)",
+   "title": "Twelfth Night (1996 film)",
+   "shortdesc": "1996 film by Trevor Nunn",
+   "medium": "film",
+   "sources": [
+    "Twelfth Night"
+   ],
+   "evidence": {
+    "Twelfth Night": [
+     "category",
+     "lead_sentence",
+     "wikidata_P144"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Twelfth Night (also known as Twelfth Night: Or What You Will) is a 1996 romantic comedy film adaptation of William Shakespeare's play, directed by Trevor Nunn and featuring an all-star cast.",
+   "names_flag": "keeps_names",
+   "names_found": {
+    "Twelfth Night": {
+     "found": [
+      "Viola",
+      "Orsino",
+      "Olivia",
+      "Sebastian",
+      "Malvolio",
+      "Toby"
+     ],
+     "distinctive": [
+      "Orsino",
+      "Malvolio"
+     ],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": true,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": false,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 26,
+   "truncated": false,
+   "sha256": "d67745a571f38ec9e8ef3847dc4d37b131824245373a11ad7131876d13c24f55",
+   "drift_sample": false
+  },
+  {
+   "id": "Ulta Palta (1998 film)",
+   "title": "Ulta Palta (1998 film)",
+   "shortdesc": "1998 Indian film",
+   "medium": "film",
+   "sources": [
+    "Comedy of Errors"
+   ],
+   "evidence": {
+    "Comedy of Errors": [
+     "category"
+    ]
+   },
+   "evidence_tier": "category_only",
+   "lead_evidence": null,
+   "names_flag": "changes_names",
+   "names_found": {
+    "Comedy of Errors": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": false,
+   "n_sentences": 39,
+   "truncated": false,
+   "sha256": "5b810e8f980d02bf3be9b1e9eda39fde61291f296a9c358df5959e15399ea2d8",
+   "drift_sample": false
+  },
+  {
+   "id": "Valley Girl (1983 film)",
+   "title": "Valley Girl (1983 film)",
+   "shortdesc": "1983 film by Martha Coolidge",
+   "medium": "film",
+   "sources": [
+    "Romeo and Juliet"
+   ],
+   "evidence": {
+    "Romeo and Juliet": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Loosely based on the tragedy Romeo and Juliet by William Shakespeare, the film centers on the romance between a valley girl (Deborah Foreman) and a city punk (Nicolas Cage).",
+   "names_flag": "changes_names",
+   "names_found": {
+    "Romeo and Juliet": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": true,
+   "n_sentences": 40,
+   "truncated": true,
+   "sha256": "45be67cefe83d4a73e5d649cc532956be62f77b6b77096e672c4f54329f76dcd",
+   "drift_sample": true
+  },
+  {
+   "id": "Warm Bodies (film)",
+   "title": "Warm Bodies (film)",
+   "shortdesc": "2013 American zombie romantic comedy film",
+   "medium": "film",
+   "sources": [
+    "Romeo and Juliet"
+   ],
+   "evidence": {
+    "Romeo and Juliet": [
+     "category"
+    ]
+   },
+   "evidence_tier": "category_only",
+   "lead_evidence": null,
+   "names_flag": "changes_names",
+   "names_found": {
+    "Romeo and Juliet": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": false,
+   "n_sentences": 29,
+   "truncated": false,
+   "sha256": "9673903416414bbe9ca9c1da5638f780e796e290f6185d6a555642a20973f179",
+   "drift_sample": false
+  },
+  {
+   "id": "Were the World Mine",
+   "title": "Were the World Mine",
+   "shortdesc": "2008 American film",
+   "medium": "film?",
+   "sources": [
+    "Midsummer Night's Dream"
+   ],
+   "evidence": {
+    "Midsummer Night's Dream": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "The film is a story of gay empowerment, inspired by Shakespeare's A Midsummer Night's Dream.",
+   "names_flag": "partial",
+   "names_found": {
+    "Midsummer Night's Dream": {
+     "found": [
+      "Puck"
+     ],
+     "distinctive": [
+      "Puck"
+     ],
+     "n_principal": 8
+    }
+   },
+   "mentions_source": true,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": false,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 8,
+   "truncated": false,
+   "sha256": "cf56fd2762f7ea4d7a62bf8b1ca3bc9209a348d0e9686d9c9f505bd5d2fa9285",
+   "drift_sample": false
+  },
+  {
+   "id": "West Bank Story",
+   "title": "West Bank Story",
+   "shortdesc": "2005 American musical short film",
+   "medium": "film?",
+   "sources": [
+    "Romeo and Juliet"
+   ],
+   "evidence": {
+    "Romeo and Juliet": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "The film is a parody of the classic 1961 musical film West Side Story, which in turn is an adaptation of Romeo and Juliet.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "Romeo and Juliet": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": true,
+   "n_sentences": 21,
+   "truncated": false,
+   "sha256": "72f46b47b5a2c02030b7c74b8f07d3708d405779eea2eb6a9e9b678bf843ae03",
+   "drift_sample": true
+  },
+  {
+   "id": "West Side Story (1961 film)",
+   "title": "West Side Story (1961 film)",
+   "shortdesc": "1961 film directed by Robert Wise and Jerome Robbins",
+   "medium": "film?",
+   "sources": [
+    "Romeo and Juliet"
+   ],
+   "evidence": {
+    "Romeo and Juliet": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "The film is an adaptation of the 1957 Broadway musical of the same title, which in turn was inspired by Shakespeare's play Romeo and Juliet.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "Romeo and Juliet": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": true,
+   "n_sentences": 40,
+   "truncated": true,
+   "sha256": "e3a1daaa4acb0c488086c1bc338ff8bc6930dda5c149003b6e7fdd7df53fa9bf",
+   "drift_sample": false
+  },
+  {
+   "id": "West Side Story (2021 film)",
+   "title": "West Side Story (2021 film)",
+   "shortdesc": "Film by Steven Spielberg",
+   "medium": "film?",
+   "sources": [
+    "Romeo and Juliet"
+   ],
+   "evidence": {
+    "Romeo and Juliet": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "The second feature-length adaptation of the 1957 stage musical, itself inspired by William Shakespeare's play Romeo and Juliet, it stars Ansel Elgort as Tony and Rachel Zegler (in her film debut) as María, with Ariana DeBose, David Alvarez, Mike Faist, and Rita Moreno in supporting roles.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "Romeo and Juliet": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 7
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": true,
+   "n_sentences": 35,
+   "truncated": false,
+   "sha256": "a483bbd9966f4682864dbda52b7b0e402e6bae034805107b6b4af9b4de1c9ac5",
+   "drift_sample": false
+  },
+  {
+   "id": "Yellow Sky",
+   "title": "Yellow Sky",
+   "shortdesc": "1948 film by William A. Wellman",
+   "medium": "film",
+   "sources": [
+    "The Tempest"
+   ],
+   "evidence": {
+    "The Tempest": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Burnett, believed to be loosely adapted from William Shakespeare's The Tempest, the plot concerns a band of reprobate outlaws who flee after a bank robbery and encounter an old man and his granddaughter in a ghost town.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "The Tempest": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": true,
+   "renamed": true,
+   "h5": true,
+   "n_sentences": 28,
+   "truncated": false,
+   "sha256": "842e996096edac9ff158b3a5bc6a2070bd7d4d58a3f70f937ef1a6ed4a835c00",
+   "drift_sample": true
+  },
+  {
+   "id": "Zulfiqar (film)",
+   "title": "Zulfiqar (film)",
+   "shortdesc": "2016 Indian film",
+   "medium": "film",
+   "sources": [
+    "Antony and Cleopatra",
+    "Julius Caesar"
+   ],
+   "evidence": {
+    "Antony and Cleopatra": [
+     "category",
+     "lead_sentence"
+    ],
+    "Julius Caesar": [
+     "category",
+     "lead_sentence"
+    ]
+   },
+   "evidence_tier": "lead_or_p144",
+   "lead_evidence": "Produced by Shrikant Mohta and Mahendra Soni under the banner of Shree Venkatesh Films, the film is a modern-day adaptation of William Shakespeare’s two tragedies—Julius Caesar and Antony and Cleopatra.",
+   "names_flag": "changes_names",
+   "names_found": {
+    "Antony and Cleopatra": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 6
+    },
+    "Julius Caesar": {
+     "found": [],
+     "distinctive": [],
+     "n_principal": 6
+    }
+   },
+   "mentions_source": false,
+   "in_dev": false,
+   "remake_of_dev": false,
+   "primary": false,
+   "renamed": false,
+   "h5": false,
+   "n_sentences": 33,
+   "truncated": false,
+   "sha256": "fc469c032deebfd033daf00337fb484d4ab731ac86550ed256f9726a83930690",
+   "drift_sample": false
+  }
+ ]
+}

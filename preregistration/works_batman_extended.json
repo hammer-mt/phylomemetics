@@ -1,0 +1,633 @@
+{
+ "description": "Extended Batman lineage. DEV: the 32 DEV Batman works. TEST: the Batman-lineage works in the T3 pool (not in DEV, >= 8 plot sentences) minus four relabelled titles (The Wild World of Batwoman becomes a relative; Batman XXX, The People's Joker and Catwoman (2004) are contested). Seven TEST works are animated adaptations of DEV comics documented in their article's lead (T1e and extra H4 targets). T4 uses all DEV and TEST works in date order, all re-run through the v2 name-removal protocol in one pass. No TEST work is earlier than 1995.",
+ "relabelled": {
+  "The Wild World of Batwoman": "relative",
+  "Batman XXX": "contested",
+  "The People's Joker": "contested",
+  "Catwoman (film)": "contested"
+ },
+ "dev": [
+  {
+   "id": "1943 serial",
+   "title": "Batman (serial)",
+   "year": 1943,
+   "medium": "film"
+  },
+  {
+   "id": "Batman '66",
+   "title": "Batman (1966 film)",
+   "year": 1966,
+   "medium": "film"
+  },
+  {
+   "id": "Dark Knight Returns",
+   "title": "The Dark Knight Returns",
+   "year": 1986,
+   "medium": "comic"
+  },
+  {
+   "id": "Year One",
+   "title": "Batman: Year One",
+   "year": 1987,
+   "medium": "comic"
+  },
+  {
+   "id": "The Killing Joke",
+   "title": "Batman: The Killing Joke",
+   "year": 1988,
+   "medium": "comic"
+  },
+  {
+   "id": "A Death in the Family",
+   "title": "A Death in the Family (comics)",
+   "year": 1988,
+   "medium": "comic"
+  },
+  {
+   "id": "Gotham by Gaslight",
+   "title": "Batman: Gotham by Gaslight",
+   "year": 1989,
+   "medium": "comic"
+  },
+  {
+   "id": "Arkham Asylum (comic)",
+   "title": "Arkham Asylum: A Serious House on Serious Earth",
+   "year": 1989,
+   "medium": "comic"
+  },
+  {
+   "id": "Batman '89",
+   "title": "Batman (1989 film)",
+   "year": 1989,
+   "medium": "film"
+  },
+  {
+   "id": "Batman Returns",
+   "title": "Batman Returns",
+   "year": 1992,
+   "medium": "film"
+  },
+  {
+   "id": "Mask of the Phantasm",
+   "title": "Batman: Mask of the Phantasm",
+   "year": 1993,
+   "medium": "animation"
+  },
+  {
+   "id": "Knightfall",
+   "title": "Batman: Knightfall",
+   "year": 1993,
+   "medium": "comic"
+  },
+  {
+   "id": "Batman Forever",
+   "title": "Batman Forever",
+   "year": 1995,
+   "medium": "film"
+  },
+  {
+   "id": "The Long Halloween",
+   "title": "Batman: The Long Halloween",
+   "year": 1996,
+   "medium": "comic"
+  },
+  {
+   "id": "Batman & Robin",
+   "title": "Batman & Robin (film)",
+   "year": 1997,
+   "medium": "film"
+  },
+  {
+   "id": "Return of the Joker",
+   "title": "Batman Beyond: Return of the Joker",
+   "year": 2000,
+   "medium": "animation"
+  },
+  {
+   "id": "Hush",
+   "title": "Batman: Hush",
+   "year": 2002,
+   "medium": "comic"
+  },
+  {
+   "id": "Batman Begins",
+   "title": "Batman Begins",
+   "year": 2005,
+   "medium": "film"
+  },
+  {
+   "id": "The Dark Knight",
+   "title": "The Dark Knight",
+   "year": 2008,
+   "medium": "film"
+  },
+  {
+   "id": "Batman R.I.P.",
+   "title": "Batman R.I.P.",
+   "year": 2008,
+   "medium": "comic"
+  },
+  {
+   "id": "Arkham Asylum (game)",
+   "title": "Batman: Arkham Asylum",
+   "year": 2009,
+   "medium": "game"
+  },
+  {
+   "id": "Under the Red Hood",
+   "title": "Batman: Under the Red Hood",
+   "year": 2010,
+   "medium": "animation"
+  },
+  {
+   "id": "Arkham City",
+   "title": "Batman: Arkham City",
+   "year": 2011,
+   "medium": "game"
+  },
+  {
+   "id": "Dark Knight Rises",
+   "title": "The Dark Knight Rises",
+   "year": 2012,
+   "medium": "film"
+  },
+  {
+   "id": "Earth One",
+   "title": "Batman: Earth One",
+   "year": 2012,
+   "medium": "comic"
+  },
+  {
+   "id": "Arkham Knight",
+   "title": "Batman: Arkham Knight",
+   "year": 2015,
+   "medium": "game"
+  },
+  {
+   "id": "Batman v Superman",
+   "title": "Batman v Superman: Dawn of Justice",
+   "year": 2016,
+   "medium": "film"
+  },
+  {
+   "id": "Lego Batman",
+   "title": "The Lego Batman Movie",
+   "year": 2017,
+   "medium": "film"
+  },
+  {
+   "id": "White Knight",
+   "title": "Batman: White Knight",
+   "year": 2017,
+   "medium": "comic"
+  },
+  {
+   "id": "Batman Ninja",
+   "title": "Batman Ninja",
+   "year": 2018,
+   "medium": "animation"
+  },
+  {
+   "id": "Joker (2019)",
+   "title": "Joker (2019 film)",
+   "year": 2019,
+   "medium": "film"
+  },
+  {
+   "id": "The Batman",
+   "title": "The Batman (film)",
+   "year": 2022,
+   "medium": "film"
+  }
+ ],
+ "test": [
+  {
+   "id": "Batman & Mr. Freeze: SubZero",
+   "title": "Batman & Mr. Freeze: SubZero",
+   "year": 1998,
+   "kind": "film",
+   "n_sentences": 19,
+   "sha256": "0b0045c81547f13f3d43480387a5e07c42e48eca309de3acbb03cc1a3bccaf76",
+   "fresh_adaptation_of": null,
+   "lead_evidence": null
+  },
+  {
+   "id": "Batman Ninja vs. Yakuza League",
+   "title": "Batman Ninja vs. Yakuza League",
+   "year": 2025,
+   "kind": "film",
+   "n_sentences": 29,
+   "sha256": "09e7c19b75055b3d8d59bcdb873b6dbf3f41e4b38a7a4b0ac91eb274d4b623b7",
+   "fresh_adaptation_of": null,
+   "lead_evidence": null
+  },
+  {
+   "id": "Batman Unlimited: Animal Instincts",
+   "title": "Batman Unlimited: Animal Instincts",
+   "year": 2015,
+   "kind": "film",
+   "n_sentences": 29,
+   "sha256": "4143752e931c97058dcb1a4d0ac007cf599aebd284149ae878635b64b1fa8c87",
+   "fresh_adaptation_of": null,
+   "lead_evidence": null
+  },
+  {
+   "id": "Batman Unlimited: Mechs vs. Mutants",
+   "title": "Batman Unlimited: Mechs vs. Mutants",
+   "year": 2016,
+   "kind": "film",
+   "n_sentences": 29,
+   "sha256": "172696e4c511b21c8645755bfc1bf4a4a71de64afad557ec4036693423c97af9",
+   "fresh_adaptation_of": null,
+   "lead_evidence": null
+  },
+  {
+   "id": "Batman Unlimited: Monster Mayhem",
+   "title": "Batman Unlimited: Monster Mayhem",
+   "year": 2015,
+   "kind": "film",
+   "n_sentences": 26,
+   "sha256": "c3dabb02cbc299f5ee2890eb438828625c21747e88aec793774737a0fba965f3",
+   "fresh_adaptation_of": null,
+   "lead_evidence": null
+  },
+  {
+   "id": "Batman and Harley Quinn",
+   "title": "Batman and Harley Quinn",
+   "year": 2017,
+   "kind": "film",
+   "n_sentences": 33,
+   "sha256": "eae268d5886b520b5b64af0b4decb16eed0b7ae093c885089ae767e1fbba9492",
+   "fresh_adaptation_of": null,
+   "lead_evidence": null
+  },
+  {
+   "id": "Batman and Superman: Battle of the Super Sons",
+   "title": "Batman and Superman: Battle of the Super Sons",
+   "year": 2022,
+   "kind": "film",
+   "n_sentences": 37,
+   "sha256": "80858f4c0367cfed101273dab47cbd392a64af591e2cb557aaf854561cbbf8b8",
+   "fresh_adaptation_of": null,
+   "lead_evidence": null
+  },
+  {
+   "id": "Batman vs. Robin",
+   "title": "Batman vs. Robin",
+   "year": 2015,
+   "kind": "film",
+   "n_sentences": 23,
+   "sha256": "289b5da6f8ab0fef4e8a3bd8c1552e64b2391c84344a6ede6756da341aedb577",
+   "fresh_adaptation_of": null,
+   "lead_evidence": null
+  },
+  {
+   "id": "Batman vs. Teenage Mutant Ninja Turtles",
+   "title": "Batman vs. Teenage Mutant Ninja Turtles",
+   "year": 2019,
+   "kind": "film",
+   "n_sentences": 24,
+   "sha256": "ba796add10d1ab8d87551fd38c82c8ea276f1f9910b2ea1abafb4841309d07c9",
+   "fresh_adaptation_of": null,
+   "lead_evidence": null
+  },
+  {
+   "id": "Batman vs. Two-Face",
+   "title": "Batman vs. Two-Face",
+   "year": 2017,
+   "kind": "film",
+   "n_sentences": 24,
+   "sha256": "775efc6e9874e55e8c089c29c757364b6d5626f8fe91461d5afbb7160666e4c7",
+   "fresh_adaptation_of": null,
+   "lead_evidence": null
+  },
+  {
+   "id": "Batman: Assault on Arkham",
+   "title": "Batman: Assault on Arkham",
+   "year": 2014,
+   "kind": "film",
+   "n_sentences": 25,
+   "sha256": "e20d7f086b8220c2ad8cb2c559baad2363b20095feb9ae80e4692001211171da",
+   "fresh_adaptation_of": null,
+   "lead_evidence": null
+  },
+  {
+   "id": "Batman: Bad Blood",
+   "title": "Batman: Bad Blood",
+   "year": 2016,
+   "kind": "film",
+   "n_sentences": 40,
+   "sha256": "9b42d2070cb6134141a03070fcee0251767d79752e37e8ed668c2778671bbbdc",
+   "fresh_adaptation_of": null,
+   "lead_evidence": null
+  },
+  {
+   "id": "Batman: Death in the Family",
+   "title": "Batman: Death in the Family",
+   "year": 2020,
+   "kind": "film",
+   "n_sentences": 40,
+   "sha256": "481c63e052207af6af88dde86176f469dc5b98e201c9a30de9ffe175eeb74e25",
+   "fresh_adaptation_of": [
+    "A Death in the Family"
+   ],
+   "lead_evidence": "Batman: Death in the Family (or DC Showcase: Batman: Death in the Family) is a 2020 American adult animated interactive superhero film that explores alternate outcomes of the 1988 comics storyline \"A Death in the Family\", in which Jason Todd, the second character to bear the mantle of Batman's sidekick Robin, was murdered by the Joker."
+  },
+  {
+   "id": "Batman: Dying Is Easy",
+   "title": "Batman: Dying Is Easy",
+   "year": 2021,
+   "kind": "film",
+   "n_sentences": 10,
+   "sha256": "338d31d9917119d567386cd4f429910603b0b5be31c08b35695a9fbd7dc08a92",
+   "fresh_adaptation_of": null,
+   "lead_evidence": null
+  },
+  {
+   "id": "Batman: Gotham Knight",
+   "title": "Batman: Gotham Knight",
+   "year": 2008,
+   "kind": "film",
+   "n_sentences": 40,
+   "sha256": "04caa67fc823b122316e249881c87a22c6e38e9b78d66d4c931d22d8342c8bf1",
+   "fresh_adaptation_of": null,
+   "lead_evidence": null
+  },
+  {
+   "id": "Batman: Hush (film)",
+   "title": "Batman: Hush (film)",
+   "year": 2019,
+   "kind": "film",
+   "n_sentences": 34,
+   "sha256": "eb309431c5622efca0b63369f150d5cf8f8ca3548d3903c6992521b73c512bc5",
+   "fresh_adaptation_of": [
+    "Hush"
+   ],
+   "lead_evidence": "Batman: Hush is a 2019 American animated superhero film featuring the DC Comics superhero Batman and loosely based on the 2002 comic book story arc of the same name."
+  },
+  {
+   "id": "Batman: Knightfall (film)",
+   "title": "Batman: Knightfall (film)",
+   "year": 2026,
+   "kind": "film",
+   "n_sentences": 40,
+   "sha256": "ed0e1b5091ae44af1b5ea39c0a3ba93cc433079b13cd659f09fc9da6819a31f6",
+   "fresh_adaptation_of": [
+    "Knightfall"
+   ],
+   "lead_evidence": "Batman: Knightfall is an American adult animated superhero film trilogy featuring Batman, and based on the DC Comics story arc Batman: Knightfall (1993–1994) itself consisting of three storylines."
+  },
+  {
+   "id": "Batman: Mystery of the Batwoman",
+   "title": "Batman: Mystery of the Batwoman",
+   "year": 2003,
+   "kind": "film",
+   "n_sentences": 18,
+   "sha256": "1e15422408187a3b3ef63c0da42a6fca701a72d8aeaf91f10a42e0d2c64dfb2b",
+   "fresh_adaptation_of": null,
+   "lead_evidence": null
+  },
+  {
+   "id": "Batman: Resurrection",
+   "title": "Batman: Resurrection",
+   "year": 2024,
+   "kind": "novel",
+   "n_sentences": 40,
+   "sha256": "410ecad7e59baa11fdf17b71e2484314d3f32f16cf7948a5eb16982edece097b",
+   "fresh_adaptation_of": null,
+   "lead_evidence": null
+  },
+  {
+   "id": "Batman: Return of the Caped Crusaders",
+   "title": "Batman: Return of the Caped Crusaders",
+   "year": 2016,
+   "kind": "film",
+   "n_sentences": 36,
+   "sha256": "6fd061dc17d8aa6b691915b2c2a6f90344ee67bc7a28b38ac7a3f2a6f8720e79",
+   "fresh_adaptation_of": null,
+   "lead_evidence": null
+  },
+  {
+   "id": "Batman: Revolution",
+   "title": "Batman: Revolution",
+   "year": 2025,
+   "kind": "novel",
+   "n_sentences": 40,
+   "sha256": "63de8812f201724993ac8290cbcf7a27664bf5bb167cf173e5c266228cbec366",
+   "fresh_adaptation_of": null,
+   "lead_evidence": null
+  },
+  {
+   "id": "Batman: Soul of the Dragon",
+   "title": "Batman: Soul of the Dragon",
+   "year": 2021,
+   "kind": "film",
+   "n_sentences": 21,
+   "sha256": "7272280a69064c6127dc09b878f7853a438df945ff9c6a167dd0d8830ab0c1c0",
+   "fresh_adaptation_of": null,
+   "lead_evidence": null
+  },
+  {
+   "id": "Batman: The Dark Knight Returns (film)",
+   "title": "Batman: The Dark Knight Returns (film)",
+   "year": 2012,
+   "kind": "film",
+   "n_sentences": 40,
+   "sha256": "eafef545b59a5525bc6dff46c3616e45e9825f4a79d40801dd30297179e700b5",
+   "fresh_adaptation_of": [
+    "Dark Knight Returns"
+   ],
+   "lead_evidence": "Batman: The Dark Knight Returns is an American two-part direct-to-video animated superhero film, an adaptation of the 1986 comic book of the same name by Frank Miller and is set in the same continuity as Batman: Year One."
+  },
+  {
+   "id": "Batman: The Doom That Came to Gotham (film)",
+   "title": "Batman: The Doom That Came to Gotham (film)",
+   "year": 2023,
+   "kind": "film",
+   "n_sentences": 28,
+   "sha256": "1a96950e637f62f6f72945b66d996867ba81a97c488383ebeda12ed291b96c66",
+   "fresh_adaptation_of": null,
+   "lead_evidence": null
+  },
+  {
+   "id": "Batman: The Killing Joke (film)",
+   "title": "Batman: The Killing Joke (film)",
+   "year": 2016,
+   "kind": "film",
+   "n_sentences": 39,
+   "sha256": "348f12e2bff64acca025906f8389e3bebb3d0b4b2d73a93b2343226222844a23",
+   "fresh_adaptation_of": [
+    "The Killing Joke"
+   ],
+   "lead_evidence": "Featuring the DC Comics character Batman, the film is the 27th of the DC Universe Animated Original Movies, based on the graphic novel of the same name by Alan Moore and Brian Bolland."
+  },
+  {
+   "id": "Batman: The Long Halloween (film)",
+   "title": "Batman: The Long Halloween (film)",
+   "year": 2021,
+   "kind": "film",
+   "n_sentences": 40,
+   "sha256": "7b37e250a3b14fe04b666facb78c584ecbf4dd4e5f5e3a3ebd524fc87726f01d",
+   "fresh_adaptation_of": [
+    "The Long Halloween"
+   ],
+   "lead_evidence": "Animation and DC Entertainment, based on the DC Comics storyline of the same name."
+  },
+  {
+   "id": "Batman: The Ultimate Evil",
+   "title": "Batman: The Ultimate Evil",
+   "year": 1995,
+   "kind": "novel",
+   "n_sentences": 16,
+   "sha256": "81d02d3e71c7c2fa8994371858b177a5b1659b1c8795b6e6a702d70ef1d2c3b0",
+   "fresh_adaptation_of": null,
+   "lead_evidence": null
+  },
+  {
+   "id": "Batman: Year One (film)",
+   "title": "Batman: Year One (film)",
+   "year": 2011,
+   "kind": "film",
+   "n_sentences": 37,
+   "sha256": "ede37b01895fb099930cc340642adebb2dfd4c1b6dcc928567a575944d46a81d",
+   "fresh_adaptation_of": [
+    "Year One"
+   ],
+   "lead_evidence": "Batman: Year One is a 2011 American animated superhero film based on the four-issue story arc of the same name printed in 1987."
+  },
+  {
+   "id": "Catwoman: Hunted",
+   "title": "Catwoman: Hunted",
+   "year": 2022,
+   "kind": "film",
+   "n_sentences": 17,
+   "sha256": "291a3339f6eacdf918b0490b5f449964b0f0dc19f063680a9bff9eeed22effed",
+   "fresh_adaptation_of": null,
+   "lead_evidence": null
+  },
+  {
+   "id": "DC Showcase: Catwoman",
+   "title": "DC Showcase: Catwoman",
+   "year": 2011,
+   "kind": "film",
+   "n_sentences": 18,
+   "sha256": "3e822b3c14c90470289c48048c2893b416aa3c3a8b1cc0c2640d5d8107d3cb54",
+   "fresh_adaptation_of": null,
+   "lead_evidence": null
+  },
+  {
+   "id": "Joker: Folie à Deux",
+   "title": "Joker: Folie à Deux",
+   "year": 2024,
+   "kind": "film",
+   "n_sentences": 32,
+   "sha256": "f20e0054bd6617526340f2697d575440f55a1e27b58ba4640edae910897eac6f",
+   "fresh_adaptation_of": null,
+   "lead_evidence": null
+  },
+  {
+   "id": "Lego DC Batman: Family Matters",
+   "title": "Lego DC Batman: Family Matters",
+   "year": 2019,
+   "kind": "film",
+   "n_sentences": 32,
+   "sha256": "db4a7c6e64299048d8e3ca9aad87d2d06c905708ac32f1d4a85c1910609c1d51",
+   "fresh_adaptation_of": null,
+   "lead_evidence": null
+  },
+  {
+   "id": "Lego DC Comics Super Heroes: Justice League – Gotham City Breakout",
+   "title": "Lego DC Comics Super Heroes: Justice League – Gotham City Breakout",
+   "year": 2016,
+   "kind": "film",
+   "n_sentences": 35,
+   "sha256": "5c5c3b6d39d933d77c74cdc9c9c93b206173e6b8b85bf81993906ae63f783e45",
+   "fresh_adaptation_of": null,
+   "lead_evidence": null
+  },
+  {
+   "id": "Scooby-Doo! & Batman: The Brave and the Bold",
+   "title": "Scooby-Doo! & Batman: The Brave and the Bold",
+   "year": 2018,
+   "kind": "film",
+   "n_sentences": 32,
+   "sha256": "707387a3bea5744994951a9a24971a921fbfebfef38a157b005441b17f308635",
+   "fresh_adaptation_of": null,
+   "lead_evidence": null
+  },
+  {
+   "id": "Son of Batman",
+   "title": "Son of Batman",
+   "year": 2014,
+   "kind": "film",
+   "n_sentences": 21,
+   "sha256": "c1767589657eedb67d8343de00830d74d45fcb89a98137a88143c01c7f8bf6ad",
+   "fresh_adaptation_of": null,
+   "lead_evidence": null
+  },
+  {
+   "id": "Superman/Batman: Apocalypse",
+   "title": "Superman/Batman: Apocalypse",
+   "year": 2010,
+   "kind": "film",
+   "n_sentences": 27,
+   "sha256": "013fdcca8d2211c29e57d44aa6e4ea9e2da86171927d1ce65fd57dc7ad3e4534",
+   "fresh_adaptation_of": null,
+   "lead_evidence": null
+  },
+  {
+   "id": "Superman/Batman: Public Enemies",
+   "title": "Superman/Batman: Public Enemies",
+   "year": 2009,
+   "kind": "film",
+   "n_sentences": 31,
+   "sha256": "fa090130f13197c0abc1d036cf030c00f3ba63f39d29922c96af3744bff6ccc8",
+   "fresh_adaptation_of": null,
+   "lead_evidence": null
+  },
+  {
+   "id": "The Batman vs. Dracula",
+   "title": "The Batman vs. Dracula",
+   "year": 2005,
+   "kind": "film",
+   "n_sentences": 28,
+   "sha256": "a48cd22485e52dc1dfa5689d7ff6168d002782588f4eefed08e94e8cf2f294ee",
+   "fresh_adaptation_of": null,
+   "lead_evidence": null
+  },
+  {
+   "id": "Wayne of Gotham",
+   "title": "Wayne of Gotham",
+   "year": 2012,
+   "kind": "novel",
+   "n_sentences": 30,
+   "sha256": "a3876abf46568e1e5c389c6588a5582312b9e69acf3a2b6d656ef5d97aaec3d6",
+   "fresh_adaptation_of": null,
+   "lead_evidence": null
+  }
+ ],
+ "fresh_adaptations": {
+  "Batman: Year One (film)": [
+   "Year One"
+  ],
+  "Batman: The Dark Knight Returns (film)": [
+   "Dark Knight Returns"
+  ],
+  "Batman: The Killing Joke (film)": [
+   "The Killing Joke"
+  ],
+  "Batman: Hush (film)": [
+   "Hush"
+  ],
+  "Batman: Death in the Family": [
+   "A Death in the Family"
+  ],
+  "Batman: The Long Halloween (film)": [
+   "The Long Halloween"
+  ],
+  "Batman: Knightfall (film)": [
+   "Knightfall"
+  ]
+ },
+ "test_min_year": 1995
+}

@@ -1,0 +1,22 @@
+{
+ "model": "mlx-community/Qwen3-8B-4bit",
+ "n_sentences": 24,
+ "n_tokens": 483,
+ "rep0": {
+  "forward_plus_aggregate_s": 0.697,
+  "full_copy_to_host_s": 0.007
+ },
+ "rep1": {
+  "forward_plus_aggregate_s": 0.358,
+  "full_copy_to_host_s": 0.007
+ },
+ "rep2": {
+  "forward_plus_aggregate_s": 0.354,
+  "full_copy_to_host_s": 0.006
+ },
+ "n_units": 884736,
+ "aggregate_bytes_fp16": 1769472,
+ "per_sentence_bytes_int8": 884736,
+ "sentences_per_s_aggregate_only": 67.8,
+ "peak_GB": 5.65
+}

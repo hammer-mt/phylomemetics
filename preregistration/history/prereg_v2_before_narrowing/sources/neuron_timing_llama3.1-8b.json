@@ -1,0 +1,22 @@
+{
+ "model": "mlx-community/Meta-Llama-3.1-8B-Instruct-4bit",
+ "n_sentences": 24,
+ "n_tokens": 481,
+ "rep0": {
+  "forward_plus_aggregate_s": 0.673,
+  "full_copy_to_host_s": 0.006
+ },
+ "rep1": {
+  "forward_plus_aggregate_s": 0.356,
+  "full_copy_to_host_s": 0.008
+ },
+ "rep2": {
+  "forward_plus_aggregate_s": 0.363,
+  "full_copy_to_host_s": 0.005
+ },
+ "n_units": 917504,
+ "aggregate_bytes_fp16": 1835008,
+ "per_sentence_bytes_int8": 917504,
+ "sentences_per_s_aggregate_only": 66.1,
+ "peak_GB": 5.6
+}

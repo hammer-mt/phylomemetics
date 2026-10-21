@@ -1,0 +1,661 @@
+{
+ "rule": "Walk the seeded order; keep an item when it passes P1 (an event, act or situation a 1-3 sentence passage of a plot summary can show happening), P2 (not one of the 24 study memes or a near-synonym), P3 (not tied to one work, tradition or object) and P4 (can happen without the supernatural); stop at 10.",
+ "judged_by": "Claude Opus 5.5, 2026-10-21, before any unit was examined for these motifs",
+ "walk": [
+  {
+   "rank": 0,
+   "title": "Princess and dragon",
+   "decision": "P4 supernatural (dragon)"
+  },
+  {
+   "rank": 1,
+   "title": "Fictional encyclopaedism",
+   "decision": "P1 technique"
+  },
+  {
+   "rank": 2,
+   "title": "Homophone",
+   "decision": "P1 not an event"
+  },
+  {
+   "rank": 3,
+   "title": "Happy ending",
+   "decision": "P1 structure"
+  },
+  {
+   "rank": 4,
+   "title": "Imagery",
+   "decision": "P1 technique"
+  },
+  {
+   "rank": 5,
+   "title": "Contemptus mundi",
+   "decision": "P1 theme"
+  },
+  {
+   "rank": 6,
+   "title": "Story generator",
+   "decision": "P1 not an event"
+  },
+  {
+   "rank": 7,
+   "title": "Red herring",
+   "decision": "P1 technique"
+  },
+  {
+   "rank": 8,
+   "title": "Ancient Indian rhetoric",
+   "decision": "P1 not an event"
+  },
+  {
+   "rank": 9,
+   "title": "Magic carpet",
+   "decision": "P4 supernatural"
+  },
+  {
+   "rank": 10,
+   "title": "Wasteland (mythology)",
+   "decision": "P1 setting"
+  },
+  {
+   "rank": 11,
+   "title": "Mythos (Aristotle)",
+   "decision": "P1 concept"
+  },
+  {
+   "rank": 12,
+   "title": "Title drop",
+   "decision": "P1 technique"
+  },
+  {
+   "rank": 13,
+   "title": "MacGuffin",
+   "decision": "P1 device, no specific event"
+  },
+  {
+   "rank": 14,
+   "title": "Free indirect speech",
+   "decision": "P1 technique"
+  },
+  {
+   "rank": 15,
+   "title": "Closed circle of suspects",
+   "decision": "PASS"
+  },
+  {
+   "rank": 16,
+   "title": "Hamartia",
+   "decision": "P1 character flaw, not an event"
+  },
+  {
+   "rank": 17,
+   "title": "Poison dress",
+   "decision": "PASS"
+  },
+  {
+   "rank": 18,
+   "title": "Illeism",
+   "decision": "P1 technique"
+  },
+  {
+   "rank": 19,
+   "title": "Roman à tiroirs",
+   "decision": "P1 form"
+  },
+  {
+   "rank": 20,
+   "title": "Alien space bats",
+   "decision": "P1 term of criticism"
+  },
+  {
+   "rank": 21,
+   "title": "Retroactive continuity",
+   "decision": "P1 technique"
+  },
+  {
+   "rank": 22,
+   "title": "Narrative hook",
+   "decision": "P1 technique"
+  },
+  {
+   "rank": 23,
+   "title": "Villain of the week",
+   "decision": "P1 structure"
+  },
+  {
+   "rank": 24,
+   "title": "Composite character",
+   "decision": "P1 technique"
+  },
+  {
+   "rank": 25,
+   "title": "Hero's journey",
+   "decision": "P1 whole-plot structure"
+  },
+  {
+   "rank": 26,
+   "title": "Suspense",
+   "decision": "P1 effect"
+  },
+  {
+   "rank": 27,
+   "title": "Suspension of disbelief",
+   "decision": "P1 concept"
+  },
+  {
+   "rank": 28,
+   "title": "Lexis (Aristotle)",
+   "decision": "P1 concept"
+  },
+  {
+   "rank": 29,
+   "title": "Cliffhanger",
+   "decision": "P1 structure"
+  },
+  {
+   "rank": 30,
+   "title": "Imitation (art)",
+   "decision": "P1 concept"
+  },
+  {
+   "rank": 31,
+   "title": "Aside",
+   "decision": "P1 theatre technique"
+  },
+  {
+   "rank": 32,
+   "title": "Switcheroo",
+   "decision": "P1 technique"
+  },
+  {
+   "rank": 33,
+   "title": "Soliloquy",
+   "decision": "P1 theatre technique"
+  },
+  {
+   "rank": 34,
+   "title": "Motif-Index of Folk-Literature",
+   "decision": "P1 reference work"
+  },
+  {
+   "rank": 35,
+   "title": "Rash promise",
+   "decision": "PASS"
+  },
+  {
+   "rank": 36,
+   "title": "Author surrogate",
+   "decision": "P1 technique"
+  },
+  {
+   "rank": 37,
+   "title": "Slice of life",
+   "decision": "P1 genre"
+  },
+  {
+   "rank": 38,
+   "title": "Simulated Real Time",
+   "decision": "P1 technique"
+  },
+  {
+   "rank": 39,
+   "title": "Fairy cup legend",
+   "decision": "P4 supernatural"
+  },
+  {
+   "rank": 40,
+   "title": "Cacography",
+   "decision": "P1 not an event"
+  },
+  {
+   "rank": 41,
+   "title": "Paraklausithyron",
+   "decision": "PASS"
+  },
+  {
+   "rank": 42,
+   "title": "Plot device",
+   "decision": "P1 concept"
+  },
+  {
+   "rank": 43,
+   "title": "Parable",
+   "decision": "P1 form"
+  },
+  {
+   "rank": 44,
+   "title": "Eye dialect",
+   "decision": "P1 technique"
+  },
+  {
+   "rank": 45,
+   "title": "Scene and sequel",
+   "decision": "P1 technique"
+  },
+  {
+   "rank": 46,
+   "title": "Treasure guardians in folklore",
+   "decision": "P4 supernatural"
+  },
+  {
+   "rank": 47,
+   "title": "Sandrembi and Chaisra",
+   "decision": "P3 one tale"
+  },
+  {
+   "rank": 48,
+   "title": "Dramatistic pentad",
+   "decision": "P1 concept"
+  },
+  {
+   "rank": 49,
+   "title": "Ab initio",
+   "decision": "P1 technique"
+  },
+  {
+   "rank": 50,
+   "title": "Trademark look",
+   "decision": "P1 characterisation"
+  },
+  {
+   "rank": 51,
+   "title": "Denouement",
+   "decision": "P1 structure"
+  },
+  {
+   "rank": 52,
+   "title": "In medias res",
+   "decision": "P1 technique"
+  },
+  {
+   "rank": 53,
+   "title": "Back-footed being",
+   "decision": "P4 supernatural"
+  },
+  {
+   "rank": 54,
+   "title": "Reveal (narrative)",
+   "decision": "P1 technique"
+  },
+  {
+   "rank": 55,
+   "title": "Self-fulfilling prophecy",
+   "decision": "PASS"
+  },
+  {
+   "rank": 56,
+   "title": "List of narrative techniques",
+   "decision": "P1 list"
+  },
+  {
+   "rank": 57,
+   "title": "Stock character",
+   "decision": "P1 character type"
+  },
+  {
+   "rank": 58,
+   "title": "Golden apple",
+   "decision": "P3 one object of myth"
+  },
+  {
+   "rank": 59,
+   "title": "Vampire",
+   "decision": "P4 supernatural"
+  },
+  {
+   "rank": 60,
+   "title": "Epic catalogue",
+   "decision": "P1 technique"
+  },
+  {
+   "rank": 61,
+   "title": "Show, don't tell",
+   "decision": "P1 advice"
+  },
+  {
+   "rank": 62,
+   "title": "Formula fiction",
+   "decision": "P1 genre"
+  },
+  {
+   "rank": 63,
+   "title": "Sexposition",
+   "decision": "P1 technique"
+  },
+  {
+   "rank": 64,
+   "title": "Culture hero",
+   "decision": "P1 character type"
+  },
+  {
+   "rank": 65,
+   "title": "Peripeteia",
+   "decision": "P1 structural reversal of any kind"
+  },
+  {
+   "rank": 66,
+   "title": "Subplot",
+   "decision": "P1 structure"
+  },
+  {
+   "rank": 67,
+   "title": "Magic (supernatural)",
+   "decision": "P4 supernatural"
+  },
+  {
+   "rank": 68,
+   "title": "Interlacing in The Lord of the Rings",
+   "decision": "P3 one work"
+  },
+  {
+   "rank": 69,
+   "title": "Melitzah",
+   "decision": "P1 technique"
+  },
+  {
+   "rank": 70,
+   "title": "Feminine beauty ideal",
+   "decision": "P1 concept"
+  },
+  {
+   "rank": 71,
+   "title": "Screenwriting",
+   "decision": "P1 craft"
+  },
+  {
+   "rank": 72,
+   "title": "Seven-league boots",
+   "decision": "P4 supernatural"
+  },
+  {
+   "rank": 73,
+   "title": "Line (poetry)",
+   "decision": "P1 form"
+  },
+  {
+   "rank": 74,
+   "title": "Comedic device",
+   "decision": "P1 technique"
+  },
+  {
+   "rank": 75,
+   "title": "Wordplay",
+   "decision": "P1 technique"
+  },
+  {
+   "rank": 76,
+   "title": "Homunculus",
+   "decision": "P4 supernatural"
+  },
+  {
+   "rank": 77,
+   "title": "Episodic storytelling",
+   "decision": "P1 structure"
+  },
+  {
+   "rank": 78,
+   "title": "Allusion",
+   "decision": "P1 technique"
+  },
+  {
+   "rank": 79,
+   "title": "Vignette (literature)",
+   "decision": "P1 form"
+  },
+  {
+   "rank": 80,
+   "title": "Farmer's daughter",
+   "decision": "P1 joke type"
+  },
+  {
+   "rank": 81,
+   "title": "Fabel",
+   "decision": "P1 concept"
+  },
+  {
+   "rank": 82,
+   "title": "Running gag",
+   "decision": "P1 technique"
+  },
+  {
+   "rank": 83,
+   "title": "Telegraphing (entertainment)",
+   "decision": "P1 technique"
+  },
+  {
+   "rank": 84,
+   "title": "Kishu ryūritan",
+   "decision": "P1 whole-plot pattern"
+  },
+  {
+   "rank": 85,
+   "title": "Metaphor and metonymy",
+   "decision": "P1 technique"
+  },
+  {
+   "rank": 86,
+   "title": "Scene (performing arts)",
+   "decision": "P1 unit of drama"
+  },
+  {
+   "rank": 87,
+   "title": "Love triangle",
+   "decision": "PASS"
+  },
+  {
+   "rank": 88,
+   "title": "Leitmotif",
+   "decision": "P1 technique"
+  },
+  {
+   "rank": 89,
+   "title": "Euphuism",
+   "decision": "P1 style"
+  },
+  {
+   "rank": 90,
+   "title": "Interactive television (narrative technique)",
+   "decision": "P1 medium"
+  },
+  {
+   "rank": 91,
+   "title": "Opening sentence",
+   "decision": "P1 technique"
+  },
+  {
+   "rank": 92,
+   "title": "Motif (narrative)",
+   "decision": "P1 concept"
+  },
+  {
+   "rank": 93,
+   "title": "Girl Late for School with Toast in Her Mouth",
+   "decision": "PASS"
+  },
+  {
+   "rank": 94,
+   "title": "Translation convention",
+   "decision": "P1 technique"
+  },
+  {
+   "rank": 95,
+   "title": "Quibble (plot device)",
+   "decision": "PASS"
+  },
+  {
+   "rank": 96,
+   "title": "Grateful dead (folklore)",
+   "decision": "P4 supernatural (and P2: burial overlaps funeral)"
+  },
+  {
+   "rank": 97,
+   "title": "Reverse chronology",
+   "decision": "P1 technique"
+  },
+  {
+   "rank": 98,
+   "title": "Flashback (narrative)",
+   "decision": "P1 technique"
+  },
+  {
+   "rank": 99,
+   "title": "Multiperspectivity",
+   "decision": "P1 technique"
+  },
+  {
+   "rank": 100,
+   "title": "Dionysian imitatio",
+   "decision": "P1 concept"
+  },
+  {
+   "rank": 101,
+   "title": "Death or departure of the gods",
+   "decision": "P4 supernatural"
+  },
+  {
+   "rank": 102,
+   "title": "Once upon a time",
+   "decision": "P1 formula"
+  },
+  {
+   "rank": 103,
+   "title": "Ab ovo",
+   "decision": "P1 technique"
+  },
+  {
+   "rank": 104,
+   "title": "Plot point",
+   "decision": "P1 concept"
+  },
+  {
+   "rank": 105,
+   "title": "Three-act structure",
+   "decision": "P1 structure"
+  },
+  {
+   "rank": 106,
+   "title": "Holy Grail",
+   "decision": "P3 one object"
+  },
+  {
+   "rank": 107,
+   "title": "Bagatelle (literary technique)",
+   "decision": "P1 technique"
+  },
+  {
+   "rank": 108,
+   "title": "Intercalary chapter",
+   "decision": "P1 form"
+  },
+  {
+   "rank": 109,
+   "title": "Analogue (literature)",
+   "decision": "P1 concept"
+  },
+  {
+   "rank": 110,
+   "title": "Audience immersion",
+   "decision": "P1 effect"
+  },
+  {
+   "rank": 111,
+   "title": "Point of divergence",
+   "decision": "P1 concept"
+  },
+  {
+   "rank": 112,
+   "title": "Yakuwarigo",
+   "decision": "P1 language style"
+  },
+  {
+   "rank": 113,
+   "title": "Witch (archetype)",
+   "decision": "P1 character type"
+  },
+  {
+   "rank": 114,
+   "title": "Wild Hunt",
+   "decision": "P4 supernatural"
+  },
+  {
+   "rank": 115,
+   "title": "Found footage film",
+   "decision": "P1 genre"
+  },
+  {
+   "rank": 116,
+   "title": "Simile",
+   "decision": "P1 technique"
+  },
+  {
+   "rank": 117,
+   "title": "Psittacism",
+   "decision": "P1 concept"
+  },
+  {
+   "rank": 118,
+   "title": "Tuckerization",
+   "decision": "P1 technique"
+  },
+  {
+   "rank": 119,
+   "title": "Human guise",
+   "decision": "P4 supernatural"
+  },
+  {
+   "rank": 120,
+   "title": "Plot twist",
+   "decision": "P1 technique"
+  },
+  {
+   "rank": 121,
+   "title": "Locus amoenus",
+   "decision": "P1 setting"
+  },
+  {
+   "rank": 122,
+   "title": "Wish",
+   "decision": "P4 magic wish-granting"
+  },
+  {
+   "rank": 123,
+   "title": "Heteronym (literature)",
+   "decision": "P1 concept"
+  },
+  {
+   "rank": 124,
+   "title": "Historical present",
+   "decision": "P1 tense"
+  },
+  {
+   "rank": 125,
+   "title": "Shoe throwing",
+   "decision": "PASS"
+  },
+  {
+   "rank": 126,
+   "title": "Unreliable narrator",
+   "decision": "P1 technique"
+  },
+  {
+   "rank": 127,
+   "title": "Metalepsis",
+   "decision": "P1 technique"
+  },
+  {
+   "rank": 128,
+   "title": "Ellipsis (narrative device)",
+   "decision": "P1 technique"
+  },
+  {
+   "rank": 129,
+   "title": "Self-discovery",
+   "decision": "P1 process/theme, not a 1-3 sentence event"
+  },
+  {
+   "rank": 130,
+   "title": "Exile",
+   "decision": "PASS"
+  }
+ ]
+}

@@ -1,0 +1,730 @@
+{
+ "description": "The 24 named memes of T2 (planted stories, natural sentences) and T3 (Tier A = the orphan-vigilante layer). Every method receives the same inputs for a meme: its label, its definition (LLM methods only) and the 5 example sentences, written in the meme's usual words (explicit wording). 'keywords' are the words people usually use for the meme: they are the ban list for the banned, implicit and control versions of planted stories, and a reference list for keyword quality checks; they are NOT given to any keyword method (keyword methods choose their own queries: TF-IDF from the examples, or an LLM given label, definition and examples). Matching uses analysis.stem on token sequences, so inflections count. dev_unit_qwen: the DEV-labelled Qwen3-8B unit used for H3 (see dev_units.json for the Llama counterpart). Examples were written for this pre-registration on 2026-10-20 and are frozen; they contain no names and use varied settings.",
+ "tiers": {
+  "A": "orphan-vigilante family layer (Mike Taylor's earlier book pp. 21-22)",
+  "B": "Batman story memes",
+  "C": "general narrative memes (not Batman-specific)"
+ },
+ "k_examples": 5,
+ "memes": [
+  {
+   "id": "secret_identity",
+   "tier": "A",
+   "label": "Secret identity",
+   "definition": "A character hides who they really are behind a mask or disguise and leads a double life, so the people around them do not know they are the hidden figure.",
+   "keywords": [
+    "secret identity",
+    "alter ego",
+    "double life",
+    "mask",
+    "masked",
+    "unmask",
+    "disguise",
+    "true identity",
+    "hidden identity",
+    "identity"
+   ],
+   "examples": [
+    "By day the quiet schoolteacher marks essays, but by night she leads the rebel raids in a mask, and no one in the village suspects her secret identity.",
+    "The ship's cook is revealed to be the masked raider whose double life has fooled the admiralty for years.",
+    "He hides his true identity even from his fiancee, slipping into his disguise each evening before riding out.",
+    "When the masked rider is finally unmasked in the square, the crowd gasps to see the mayor's mild-mannered son.",
+    "Only her grandmother knows that the timid librarian and the hooded outlaw are the same person, an alter ego she has kept for ten years."
+   ],
+   "dev_unit_qwen": 168352,
+   "do_not_combine_with": [
+    "fear_symbol",
+    "foppish_facade",
+    "hidden_lair",
+    "wealthy_vigilante"
+   ],
+   "decoy_hint": "a masked ball, a mask in a museum, a disguise for a costume party, an identity card"
+  },
+  {
+   "id": "origin_wound",
+   "tier": "A",
+   "label": "The origin wound",
+   "definition": "As a child, a character witnesses or suffers a traumatic loss, typically the murder of their parents, and that loss sets them on the path that defines their life.",
+   "keywords": [
+    "murder",
+    "orphaned",
+    "orphan",
+    "childhood",
+    "trauma",
+    "traumatic",
+    "witnessed",
+    "as a child",
+    "parents' death",
+    "killed his parents",
+    "killed her parents"
+   ],
+   "examples": [
+    "As a boy he watched a robber shoot both his parents in an alley, and the trauma of that night shapes every choice he makes as a man.",
+    "Orphaned at eight when raiders killed her mother and father, she grows up determined that no other child will suffer the same loss.",
+    "The childhood memory of seeing his parents killed on the road home drives the knight's lifelong crusade against highwaymen.",
+    "She was ten when she witnessed her parents' murder, and that night turned her into a relentless investigator.",
+    "Years after the fire that killed his family, the orphaned engineer still relives the night it happened, and it is why he builds his machines."
+   ],
+   "dev_unit_qwen": 131948,
+   "do_not_combine_with": [
+    "orphan_ward",
+    "revenge_vow"
+   ],
+   "decoy_hint": "a murder mystery game at a party, happy childhood memories, a witness at a trial about a stolen horse"
+  },
+  {
+   "id": "heir_to_fortune",
+   "tier": "A",
+   "label": "Heir to a dead father's fortune",
+   "definition": "After a parent dies, usually the father, a young character inherits the family's great fortune or company.",
+   "keywords": [
+    "inherit",
+    "inheritance",
+    "heir",
+    "heiress",
+    "fortune",
+    "estate",
+    "family company",
+    "family business",
+    "wealth",
+    "late father"
+   ],
+   "examples": [
+    "When his father dies suddenly, the young man inherits the family shipping company and a fortune he never wanted.",
+    "The heiress returns from abroad after her father's death to take control of the estate and its mills.",
+    "At twenty-one he becomes heir to his late father's railway empire and all the wealth that comes with it.",
+    "Her inheritance from her dead father makes her the richest woman in the province overnight.",
+    "The reading of the will names the dead tycoon's only son as heir to the whole fortune, including the steelworks and the mansion."
+   ],
+   "dev_unit_qwen": 128514,
+   "do_not_combine_with": [
+    "wealthy_vigilante"
+   ],
+   "decoy_hint": "a fortune teller, a real-estate agent, inheriting a grandmother's recipe, a small family business that is thriving"
+  },
+  {
+   "id": "wealthy_vigilante",
+   "tier": "A",
+   "label": "The wealthy vigilante",
+   "definition": "A rich character uses their money to fight crime or injustice themselves, outside the law.",
+   "keywords": [
+    "vigilante",
+    "billionaire",
+    "millionaire",
+    "rich",
+    "wealthy",
+    "fight crime",
+    "crime-fighter",
+    "outside the law",
+    "take the law into"
+   ],
+   "examples": [
+    "The billionaire spends his nights as a vigilante, using his money to hunt the criminals the courts cannot touch.",
+    "A wealthy widow funds her own private war on the smugglers, taking the law into her own hands when the magistrates fail.",
+    "Bored with high society, the rich young lord becomes a vigilante who punishes cruel landlords outside the law.",
+    "The millionaire inventor uses his money and his gadgets to fight crime in the city's slums.",
+    "The wealthy banker who funds the opera also roams the docks at night as a vigilante, beating up loan sharks."
+   ],
+   "dev_unit_qwen": 50224,
+   "do_not_combine_with": [
+    "foppish_facade",
+    "heir_to_fortune",
+    "secret_identity"
+   ],
+   "decoy_hint": "a rich dessert, a millionaire's charity gala, a neighbourhood watch meeting about parking"
+  },
+  {
+   "id": "butler_raised_him",
+   "tier": "A",
+   "label": "The servant who raised the orphan",
+   "definition": "A loyal servant, such as a butler, steward or housekeeper, raises an orphaned child and stays on as their confidant and surrogate parent.",
+   "keywords": [
+    "butler",
+    "servant",
+    "manservant",
+    "valet",
+    "steward",
+    "housekeeper",
+    "raised him",
+    "raised her",
+    "brought him up",
+    "brought her up",
+    "surrogate father",
+    "surrogate mother",
+    "retainer"
+   ],
+   "examples": [
+    "After the boy's parents die, the family butler raises him as his own and stays at his side into adulthood.",
+    "The old housekeeper who brought her up after her mother's death is the only person she trusts with her plans.",
+    "His loyal manservant, who raised him from the age of six, patches his wounds and scolds him like a father.",
+    "The castle steward becomes the young prince's surrogate father after the king and queen die, teaching him to ride and to keep his temper.",
+    "Raised by the family's devoted butler, the young captain still asks his advice before every important decision."
+   ],
+   "dev_unit_qwen": 520801,
+   "do_not_combine_with": [
+    "orphan_ward"
+   ],
+   "decoy_hint": "a hotel butler who serves a guest dinner, a ship's steward handing out blankets, a housekeeper hired for a week"
+  },
+  {
+   "id": "orphan_ward",
+   "tier": "A",
+   "label": "Taking in an orphan as a ward",
+   "definition": "An established or wealthy adult takes in an orphaned child as a ward, and the child becomes an apprentice or partner.",
+   "keywords": [
+    "ward",
+    "adopt",
+    "adopted",
+    "guardian",
+    "orphan",
+    "foster",
+    "takes in",
+    "took in"
+   ],
+   "examples": [
+    "The merchant takes in the orphaned circus boy as his ward and trains him in the trade.",
+    "After the girl's parents are killed, the old sea captain becomes her legal guardian and brings her aboard as his ward.",
+    "He adopts the street orphan who tried to steal his horse, and the boy becomes his loyal partner.",
+    "The duchess takes the orphan in as her ward and secretly teaches her the family's sword techniques.",
+    "As guardian of two orphaned brothers, the inventor raises them in his workshop and makes them his assistants."
+   ],
+   "dev_unit_qwen": 878889,
+   "do_not_combine_with": [
+    "butler_raised_him",
+    "origin_wound"
+   ],
+   "decoy_hint": "a hospital ward, adopting a stray dog, a legal guardian signing a school form for a child whose parents are alive"
+  },
+  {
+   "id": "foppish_facade",
+   "tier": "A",
+   "label": "The foppish facade",
+   "definition": "To hide a secret mission, a hero behaves in public like a frivolous, lazy, foolish or cowardly idler so that no one takes them seriously.",
+   "keywords": [
+    "fop",
+    "foppish",
+    "dandy",
+    "playboy",
+    "idler",
+    "frivolous",
+    "pretends to be",
+    "act the fool",
+    "feign",
+    "cowardly",
+    "coward",
+    "facade"
+   ],
+   "examples": [
+    "In the salons he plays a foolish dandy who faints at the sight of a sword, so no one suspects he leads the rebels.",
+    "She cultivates a reputation as a frivolous party girl, which hides the long nights she spends exposing the governor's crimes.",
+    "The young lord pretends to be a lazy fop, yawning through council meetings while he plans the governor's downfall.",
+    "Everyone at court mocks the prince as a cowardly idler, which is exactly what he wants them to believe.",
+    "By posing as a shallow playboy more interested in yachts than politics, the senator's son keeps his enemies from looking closer."
+   ],
+   "dev_unit_qwen": null,
+   "do_not_combine_with": [
+    "secret_identity",
+    "wealthy_vigilante"
+   ],
+   "decoy_hint": "a genuinely lazy cousin, a dandy at a fashion show, a building's restored facade"
+  },
+  {
+   "id": "fear_symbol",
+   "tier": "A",
+   "label": "A symbol to strike fear",
+   "definition": "A fighter against crime deliberately adopts a frightening costume, symbol or legend so that criminals are terrified of them.",
+   "keywords": [
+    "fear",
+    "terrify",
+    "terror",
+    "frighten",
+    "frightening",
+    "costume",
+    "symbol",
+    "superstitious",
+    "scare",
+    "dread"
+   ],
+   "examples": [
+    "Knowing that criminals are a superstitious lot, he designs a frightening costume to terrify them.",
+    "She paints a skull on her armour so that the bandits will fear her before she draws her sword.",
+    "The hunter spreads the legend of a wolf spirit in the forest, and soon the poachers are too frightened to enter.",
+    "He chooses the shape of a wolf for his cloak because the smugglers dread wolves more than they dread the law.",
+    "To strike terror into the gangs, the detective turns himself into a symbol they whisper about, a shadow that appears whenever they strike."
+   ],
+   "dev_unit_qwen": null,
+   "do_not_combine_with": [
+    "fear_toxin",
+    "secret_identity"
+   ],
+   "decoy_hint": "a costume party, a child's fear of the dark, a company logo chosen as a symbol of trust"
+  },
+  {
+   "id": "hidden_lair",
+   "tier": "A",
+   "label": "The hidden lair",
+   "definition": "A hero keeps a secret headquarters hidden beneath or behind their home, full of equipment for their mission.",
+   "keywords": [
+    "secret base",
+    "lair",
+    "hideout",
+    "headquarters",
+    "cave",
+    "cavern",
+    "hidden room",
+    "secret room",
+    "secret passage",
+    "underground",
+    "bunker"
+   ],
+   "examples": [
+    "Beneath the manor lies a hidden cave where he keeps his weapons, maps and horses.",
+    "A secret passage behind the bookcase leads to her underground headquarters full of radios and files.",
+    "The lighthouse keeper's cellar is really a lair packed with diving gear and charts of the smugglers' routes.",
+    "Under the farmhouse he digs a secret base where he repairs the stolen machines.",
+    "Behind the waterfall is a cavern the rebels use as their hideout, reached through a hidden door in the mill."
+   ],
+   "dev_unit_qwen": 145011,
+   "do_not_combine_with": [
+    "secret_identity"
+   ],
+   "decoy_hint": "a tourist cave tour, a company headquarters with a lobby, an underground train station"
+  },
+  {
+   "id": "mantle_passed_on",
+   "tier": "A",
+   "label": "Taking up the mantle",
+   "definition": "A successor takes over a hero's identity, title or role after the original retires, dies or is disabled, and continues their legacy.",
+   "keywords": [
+    "mantle",
+    "successor",
+    "legacy",
+    "carry on",
+    "carries on",
+    "takes up the",
+    "passes on",
+    "torch",
+    "in his place",
+    "in her place"
+   ],
+   "examples": [
+    "After the old champion is crippled, his student takes up the mantle and rides out in his armour.",
+    "When the first protector of the valley dies, her daughter puts on her armour and carries on her legacy.",
+    "The retired swordsman passes on his title and his sword to a young successor who must prove worthy of the legacy.",
+    "A street kid finds the fallen ranger's badge and decides to carry on his work as the new ranger of the valley.",
+    "Too old to fight, the aging champion hands his helmet to his student, who takes up the mantle in his place."
+   ],
+   "dev_unit_qwen": 128787,
+   "do_not_combine_with": [
+    "losing_protege"
+   ],
+   "decoy_hint": "a fireplace mantle, a CEO's chosen successor at a bank, a family legacy of baking bread"
+  },
+  {
+   "id": "coin_flip",
+   "tier": "B",
+   "label": "A coin flip decides a fate",
+   "definition": "A character lets the toss of a coin decide someone's fate, often whether they live or die.",
+   "keywords": [
+    "coin",
+    "flip",
+    "toss",
+    "heads",
+    "tails",
+    "chance",
+    "luck",
+    "lucky"
+   ],
+   "examples": [
+    "The outlaw flips a coin to decide whether the stagecoach driver lives or dies.",
+    "She lets a coin toss settle whether the traitor will hang, and it comes up heads.",
+    "Holding a pistol to the banker's head, he says that only the coin will decide, and flips it into the air.",
+    "The embittered judge now decides every verdict by tossing a coin, heads for freedom and tails for the gallows.",
+    "Before each robbery the gang leader flips his lucky coin to choose which hostage to release."
+   ],
+   "dev_unit_qwen": 765185,
+   "do_not_combine_with": [],
+   "decoy_hint": "a coin collector appraising a rare coin, flipping pancakes, a lucky charm, heads of state"
+  },
+  {
+   "id": "vat_of_chemicals",
+   "tier": "B",
+   "label": "The vat of chemicals",
+   "definition": "A character falls or is pushed into a vat or tank of chemicals or toxic waste, which disfigures or transforms them.",
+   "keywords": [
+    "vat",
+    "chemical",
+    "chemicals",
+    "acid",
+    "toxic",
+    "waste",
+    "chemical plant",
+    "tank",
+    "bleached",
+    "disfigured"
+   ],
+   "examples": [
+    "During the chase through the chemical plant, the thief falls into a vat of chemicals and emerges with bleached white skin.",
+    "Pushed into a tank of toxic waste at the dye factory, the foreman survives but is horribly disfigured.",
+    "The scientist tumbles into a vat of bubbling acid, and when he climbs out his face is permanently changed.",
+    "A fall into the refinery's chemical vat leaves the smuggler with green hair and a frozen smile.",
+    "She is thrown into a vat of chemicals at the tannery, and the accident gives her strange new strength."
+   ],
+   "dev_unit_qwen": 448712,
+   "do_not_combine_with": [],
+   "decoy_hint": "a wine vat at a harvest festival, a chemistry class experiment, a fish tank, toxic gossip"
+  },
+  {
+   "id": "funeral",
+   "tier": "B",
+   "label": "A funeral",
+   "definition": "Mourners gather at the funeral or burial of a character, including a staged funeral for someone who is not really dead.",
+   "keywords": [
+    "funeral",
+    "burial",
+    "bury",
+    "buried",
+    "grave",
+    "graveside",
+    "coffin",
+    "casket",
+    "mourner",
+    "mourn",
+    "cemetery",
+    "eulogy"
+   ],
+   "examples": [
+    "The whole village attends the miner's funeral, and his widow throws the first handful of earth into the grave.",
+    "At the graveside the boy will not cry while the mourners sing over his father's coffin.",
+    "The admiral's funeral is held at sea, and his casket is lowered into the waves as the crew salutes.",
+    "She delivers the eulogy at her rival's burial, though she suspects he is not really dead.",
+    "Rain falls on the cemetery as the family buries the old king beside his wife."
+   ],
+   "dev_unit_qwen": 17909,
+   "do_not_combine_with": [
+    "feigned_death_potion"
+   ],
+   "decoy_hint": "burying treasure, a grave mistake, a funeral home's accounts, a dog burying a bone"
+  },
+  {
+   "id": "morbid_joke",
+   "tier": "B",
+   "label": "The morbid joke",
+   "definition": "A villain treats killing and suffering as comedy: laughing, telling jokes or staging crimes as pranks.",
+   "keywords": [
+    "joke",
+    "joker",
+    "laugh",
+    "laughter",
+    "comedian",
+    "punchline",
+    "prank",
+    "clown",
+    "grin",
+    "giggle",
+    "gag"
+   ],
+   "examples": [
+    "The killer leaves a joke card at every crime scene and laughs at the investigators over the radio.",
+    "Laughing as the building burns, the villain tells the hostages that the fire is the punchline of his best joke.",
+    "He sets the banquet hall's chandelier to fall and calls it his greatest prank, giggling as the guests scatter.",
+    "To the bandit every killing is a gag, and he tells a joke before each execution.",
+    "The failed comedian turns his crimes into a twisted stand-up routine, laughing at his victims' screams."
+   ],
+   "dev_unit_qwen": 31044,
+   "do_not_combine_with": [],
+   "decoy_hint": "friends laughing at a wedding toast, a clown at a child's birthday party, a harmless office prank"
+  },
+  {
+   "id": "losing_protege",
+   "tier": "B",
+   "label": "Losing the protege",
+   "definition": "The hero's young apprentice or sidekick is captured, tortured or killed, and the hero is consumed by grief or guilt.",
+   "keywords": [
+    "protege",
+    "sidekick",
+    "apprentice",
+    "pupil",
+    "grief",
+    "guilt",
+    "blames himself",
+    "blames herself",
+    "never forgives himself",
+    "never forgives herself"
+   ],
+   "examples": [
+    "The villain beats the hero's young sidekick to death, and the hero blames himself for sending the boy alone.",
+    "When her apprentice is killed in the ambush, the swordswoman is consumed by guilt and gives up the fight.",
+    "He finds his protege's body in the warehouse and never forgives himself.",
+    "The captain's young partner is tortured by the smugglers, and the captain's grief turns into cold fury.",
+    "Years after losing his pupil to the assassin, the old knight still keeps the boy's broken sword above his bed."
+   ],
+   "dev_unit_qwen": 584876,
+   "do_not_combine_with": [
+    "mantle_passed_on"
+   ],
+   "decoy_hint": "an apprentice who graduates with honours, a pupil who wins a prize, grief for a pet goldfish"
+  },
+  {
+   "id": "corrupt_police",
+   "tier": "B",
+   "label": "A corrupt police force",
+   "definition": "An honest officer stands against a police force or city watch that has been corrupted by organised crime.",
+   "keywords": [
+    "corrupt",
+    "corruption",
+    "crooked",
+    "bribe",
+    "payroll",
+    "on the take",
+    "police",
+    "cop",
+    "precinct",
+    "dirty cops"
+   ],
+   "examples": [
+    "The new sergeant soon learns that half the precinct is on the mob's payroll and that he is the only honest cop left.",
+    "The city watch takes bribes from the smugglers, so the young officer must gather evidence against her own captain.",
+    "Corrupt detectives frame the honest lieutenant for the killing because he would not take the gang's money.",
+    "Every police officer in the port town is crooked except the old constable, who keeps a notebook of their bribes.",
+    "When the honest inspector reports the corruption, his superiors hand his file to the crime boss."
+   ],
+   "dev_unit_qwen": 876522,
+   "do_not_combine_with": [],
+   "decoy_hint": "a police officer helping a lost child, a corrupted computer file, a company payroll error"
+  },
+  {
+   "id": "fear_toxin",
+   "tier": "B",
+   "label": "The fear toxin",
+   "definition": "A villain uses a gas, drug or poison that makes victims hallucinate their worst fears.",
+   "keywords": [
+    "toxin",
+    "gas",
+    "hallucinate",
+    "hallucination",
+    "hallucinogen",
+    "nightmare",
+    "fear",
+    "terror",
+    "panic",
+    "worst fears"
+   ],
+   "examples": [
+    "The doctor releases a gas that makes the guards hallucinate their worst fears until they flee screaming.",
+    "Exposed to the toxin, she sees her dead brother crawling toward her and collapses in terror.",
+    "The witch's powder makes the soldiers see their nightmares come alive.",
+    "His fear gas spreads through the water supply, and the whole town panics at visions of fire and spiders.",
+    "Sprayed with a hallucinogen, the detective believes the walls are closing in and can barely breathe."
+   ],
+   "dev_unit_qwen": 66576,
+   "do_not_combine_with": [
+    "antidote_race",
+    "fear_symbol"
+   ],
+   "decoy_hint": "a gas leak in a kitchen that is fixed, a child's nightmare after a scary story, stage fright before a concert"
+  },
+  {
+   "id": "mass_breakout",
+   "tier": "B",
+   "label": "The mass breakout",
+   "definition": "The inmates of a prison or asylum are released all at once, unleashing dangerous criminals.",
+   "keywords": [
+    "breakout",
+    "jailbreak",
+    "prison break",
+    "escape",
+    "inmates",
+    "prisoners",
+    "asylum",
+    "riot",
+    "cells",
+    "freed"
+   ],
+   "examples": [
+    "The villain blows open the prison walls and releases every inmate into the city.",
+    "During the riot the asylum's cells are unlocked and hundreds of patients pour into the streets.",
+    "The rebels storm the fortress jail and set free all the prisoners, including the most dangerous murderers.",
+    "A mass jailbreak on the colony moon frees the convicts, who seize the mining town.",
+    "After the power fails, the inmates escape the island prison together, and the coast is overrun."
+   ],
+   "dev_unit_qwen": 57687,
+   "do_not_combine_with": [],
+   "decoy_hint": "an escape room game, a political asylum interview, blood cells under a microscope, a prisoner of war's letters"
+  },
+  {
+   "id": "refuses_to_kill",
+   "tier": "B",
+   "label": "The hero refuses to kill",
+   "definition": "Given the chance to kill the villain, the hero refuses on principle and spares them.",
+   "keywords": [
+    "spare",
+    "spares",
+    "mercy",
+    "refuse",
+    "refuses to kill",
+    "will not kill",
+    "won't kill",
+    "never kill",
+    "lets him live",
+    "lets her live"
+   ],
+   "examples": [
+    "With the tyrant at her sword's point, she refuses to kill him and hands him over to the court.",
+    "He spares the murderer's life, saying he will never kill, not even a man like that.",
+    "The gunslinger lowers his revolver and lets the outlaw live, refusing to become a killer.",
+    "Although the assassin begs to be finished off, the knight shows him mercy and binds his wounds.",
+    "She could push him off the cliff, but she will not kill, so she pulls him back up."
+   ],
+   "dev_unit_qwen": null,
+   "do_not_combine_with": [],
+   "decoy_hint": "spare parts for a car, a spare room, a nurse's mercy dash to a hospital, refusing a dinner invitation"
+  },
+  {
+   "id": "antidote_race",
+   "tier": "B",
+   "label": "The race for an antidote",
+   "definition": "A poison or toxin threatens victims, and the heroes race against time to make or obtain an antidote.",
+   "keywords": [
+    "antidote",
+    "cure",
+    "poison",
+    "poisoned",
+    "toxin",
+    "serum",
+    "vaccine",
+    "race against time",
+    "dose"
+   ],
+   "examples": [
+    "When the princess is poisoned, the alchemist has until dawn to brew the antidote.",
+    "The doctor races against time to make a cure before the toxin kills the whole crew.",
+    "Bitten by the snake, the scout will die unless his friends find the antidote in the enemy's camp.",
+    "The villain poisons the reservoir, and the chemist must make enough serum for the city in a single night.",
+    "With the poison spreading through his veins, the agent breaks into the laboratory to steal the only dose of the cure."
+   ],
+   "dev_unit_qwen": 465435,
+   "do_not_combine_with": [
+    "fear_toxin",
+    "feigned_death_potion"
+   ],
+   "decoy_hint": "curing ham in a smokehouse, a daily vitamin dose, poison ivy in a garden that is weeded"
+  },
+  {
+   "id": "revenge_vow",
+   "tier": "C",
+   "label": "The revenge vow",
+   "definition": "A character vows to avenge a murdered family member or loved one.",
+   "keywords": [
+    "revenge",
+    "avenge",
+    "vengeance",
+    "vow",
+    "swear",
+    "swore",
+    "sworn",
+    "payback",
+    "retribution"
+   ],
+   "examples": [
+    "Standing over her father's body, she swears revenge on the men who killed him.",
+    "He vows to avenge his slain brother and spends ten years hunting the killers.",
+    "The widow swears vengeance on the landlord who had her husband hanged.",
+    "Sworn to avenge his family, the boy trains with the mountain monks until he is a man.",
+    "She vows retribution against the clan that burned her village."
+   ],
+   "dev_unit_qwen": 332151,
+   "do_not_combine_with": [
+    "origin_wound"
+   ],
+   "decoy_hint": "wedding vows, swearing in a new mayor, a payback of a bank loan"
+  },
+  {
+   "id": "mistaken_twins",
+   "tier": "C",
+   "label": "Mistaken twins",
+   "definition": "Identical twins or exact look-alikes are mistaken for one another, causing confusion.",
+   "keywords": [
+    "twin",
+    "twins",
+    "identical",
+    "look-alike",
+    "lookalike",
+    "double",
+    "mistaken",
+    "mistakes him for",
+    "mistakes her for",
+    "confused with"
+   ],
+   "examples": [
+    "The merchant's identical twin arrives in town, and the merchant's wife mistakes him for her husband.",
+    "Separated at birth, the twins are confused with each other all over the city, and each is accused of the other's debts.",
+    "The guards arrest the wrong brother, mistaking him for his identical twin.",
+    "Because she looks exactly like the missing duchess, the maid is mistaken for her at the ball.",
+    "The look-alike prince is taken for the real one and crowned by mistake."
+   ],
+   "dev_unit_qwen": null,
+   "do_not_combine_with": [],
+   "decoy_hint": "twin beds in a hotel room, a double espresso, a mistaken delivery address, identical houses on a street"
+  },
+  {
+   "id": "feigned_death_potion",
+   "tier": "C",
+   "label": "The death-feigning potion",
+   "definition": "A character takes a potion or drug that makes them appear dead, in order to escape a fate.",
+   "keywords": [
+    "potion",
+    "draught",
+    "drug",
+    "sleeping",
+    "appear dead",
+    "fake death",
+    "faked",
+    "feign death",
+    "feigns death",
+    "death-like",
+    "lifeless"
+   ],
+   "examples": [
+    "To avoid the forced marriage, she drinks a potion that makes her seem dead for two days.",
+    "The friar gives him a sleeping draught that slows his heart so that everyone believes he has died.",
+    "The captive swallows a drug that fakes his death, and the guards carry his body out of the fortress.",
+    "Her family weeps over her lifeless body, not knowing the sleeping potion will wear off at midnight.",
+    "He takes a potion to feign death so that his enemies will stop hunting him."
+   ],
+   "dev_unit_qwen": null,
+   "do_not_combine_with": [
+    "antidote_race",
+    "funeral"
+   ],
+   "decoy_hint": "a love potion at a fair, a sleeping cat, a drug trial for headaches, a lifeless party"
+  },
+  {
+   "id": "deal_with_devil",
+   "tier": "C",
+   "label": "A deal with the devil",
+   "definition": "A character makes a bargain with a demon or other supernatural being, gaining power or success at the cost of their soul or a terrible price.",
+   "keywords": [
+    "devil",
+    "demon",
+    "pact",
+    "bargain",
+    "soul",
+    "satan",
+    "fiend",
+    "deal with the devil",
+    "infernal"
+   ],
+   "examples": [
+    "Desperate for fame, the fiddler sells his soul to the devil at the crossroads.",
+    "She makes a pact with a demon who grants her the throne in exchange for her firstborn.",
+    "The failing farmer signs his name in blood for a stranger who promises rain, at the price of his soul.",
+    "In return for winning every hand, the gambler bargains away his soul to a smiling demon.",
+    "The king strikes a deal with the devil to win the war, and the debt comes due on his deathbed."
+   ],
+   "dev_unit_qwen": null,
+   "do_not_combine_with": [],
+   "decoy_hint": "a bargain at a flea market, a soul singer's concert, a devil's food cake, a trade pact between two towns"
+  }
+ ]
+}

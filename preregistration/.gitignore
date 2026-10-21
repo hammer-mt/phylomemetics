@@ -1,0 +1,19 @@
+# Paths here are relative to preregistration/ (a pattern with a slash matches from this folder only).
+
+# large model-side arrays (regenerate with extract_compact.py and readers.py)
+features/
+activations*/
+# the benchmark's scratch folder (results/bench.json is committed)
+bench_work/
+__pycache__/
+
+# the scout's raw Wikipedia pages and bulk caches (about 126 MB; the scripts in history/design_workspace/scripts/
+# fetch them again once their hard-coded scratchpad paths are changed). The texts the work lists are built from are
+# committed as gzipped copies in sources/, and the scout's small metadata and summary files (manifest, summaries,
+# checks, timings) are kept.
+history/design_workspace/scout/raw/
+history/design_workspace/scout/**/*.jsonl
+history/design_workspace/scout/t3/random_population.json
+history/design_workspace/scout/t3/category_members.json
+
+# Nothing over 20 MB is committed here: add any such file above (GitHub refuses files over 100 MB and warns at 50 MB).

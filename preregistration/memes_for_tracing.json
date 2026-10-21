@@ -1,0 +1,1090 @@
+{
+ "description": "The 34 named memes of T2 (also used by the deferred T3 culture scan): 24 study memes (Tier A orphan-vigilante family, Tier B Batman story memes, Tier C general memes) and 10 neutral motifs (Tier N) drawn by seed from Wikipedia's motif and plot-device categories before any unit was examined. Every method receives the same inputs for a meme: its label, its definition and its example sentences. 'keywords' are the words people usually use for the meme; they are the ban list for the banned, implicit, coded and control versions of planted stories (with the derivational-family rule of analysis.ban_hits) and are never given to any method. Example sets (written at step P1 by fresh agent sessions that see only the label and definition, annotation_protocol.md A8): explicit (usual words), reworded (none of the ban-list words), far (no crime city, colonial California, revolutionary France, billionaire inventor or costumed avenger; screened against DEV Batman and cousin sentences), hard_negative (the ban-list words in a sense that does not make the meme happen). dev_unit_qwen: the DEV unit used for H3 (dev_units.json).",
+ "tiers": {
+  "A": "orphan-vigilante family layer (the memes Batman shares with the other 'billionaire vigilante orphans': Zorro, the Scarlet Pimpernel and Iron Man)",
+  "B": "Batman story memes",
+  "C": "general narrative memes",
+  "N": "neutral motifs (seeded draw, sources/neutral_motif_frame.json)"
+ },
+ "k_examples": 5,
+ "example_sets": [
+  "explicit",
+  "reworded",
+  "far",
+  "hard_negative"
+ ],
+ "examples_status": "not yet written (step P1)",
+ "memes": [
+  {
+   "id": "secret_identity",
+   "tier": "A",
+   "label": "Secret identity",
+   "definition": "A character hides who they really are behind a mask or disguise and leads a double life, so the people around them do not know they are the hidden figure.",
+   "keywords": [
+    "secret identity",
+    "alter ego",
+    "double life",
+    "mask",
+    "masked",
+    "unmask",
+    "disguise",
+    "true identity",
+    "hidden identity",
+    "identity"
+   ],
+   "decoy_hint": "a masked ball, a mask in a museum, a disguise for a costume party, an identity card",
+   "do_not_combine_with": [
+    "fear_symbol",
+    "foppish_facade",
+    "hidden_lair",
+    "wealthy_vigilante"
+   ],
+   "dev_unit_qwen": 168352,
+   "dev_class": "concept",
+   "examples": {
+    "explicit": [],
+    "reworded": [],
+    "far": [],
+    "hard_negative": []
+   },
+   "source": "study meme (draft v1 label, definition and ban list)"
+  },
+  {
+   "id": "origin_wound",
+   "tier": "A",
+   "label": "The origin wound",
+   "definition": "As a child, a character witnesses or suffers a traumatic loss, typically the murder of their parents, and that loss sets them on the path that defines their life.",
+   "keywords": [
+    "murder",
+    "orphaned",
+    "orphan",
+    "childhood",
+    "trauma",
+    "traumatic",
+    "witnessed",
+    "as a child",
+    "parents' death",
+    "killed his parents",
+    "killed her parents"
+   ],
+   "decoy_hint": "a murder mystery game at a party, happy childhood memories, a witness at a trial about a stolen horse",
+   "do_not_combine_with": [
+    "orphan_ward",
+    "revenge_vow"
+   ],
+   "dev_unit_qwen": 131948,
+   "dev_class": "concept",
+   "examples": {
+    "explicit": [],
+    "reworded": [],
+    "far": [],
+    "hard_negative": []
+   },
+   "source": "study meme (draft v1 label, definition and ban list)"
+  },
+  {
+   "id": "heir_to_fortune",
+   "tier": "A",
+   "label": "Heir to a dead father's fortune",
+   "definition": "After a parent dies, usually the father, a young character inherits the family's great fortune or company.",
+   "keywords": [
+    "inherit",
+    "inheritance",
+    "heir",
+    "heiress",
+    "fortune",
+    "estate",
+    "family company",
+    "family business",
+    "wealth",
+    "late father"
+   ],
+   "decoy_hint": "a fortune teller, a real-estate agent, inheriting a grandmother's recipe, a small family business that is thriving",
+   "do_not_combine_with": [
+    "wealthy_vigilante"
+   ],
+   "dev_unit_qwen": 128514,
+   "dev_class": "name",
+   "examples": {
+    "explicit": [],
+    "reworded": [],
+    "far": [],
+    "hard_negative": []
+   },
+   "source": "study meme (draft v1 label, definition and ban list)"
+  },
+  {
+   "id": "wealthy_vigilante",
+   "tier": "A",
+   "label": "The wealthy vigilante",
+   "definition": "A rich character uses their money to fight crime or injustice themselves, outside the law.",
+   "keywords": [
+    "vigilante",
+    "billionaire",
+    "millionaire",
+    "rich",
+    "wealthy",
+    "fight crime",
+    "crime-fighter",
+    "outside the law",
+    "take the law into"
+   ],
+   "decoy_hint": "a rich dessert, a millionaire's charity gala, a neighbourhood watch meeting about parking",
+   "do_not_combine_with": [
+    "foppish_facade",
+    "heir_to_fortune",
+    "secret_identity"
+   ],
+   "dev_unit_qwen": 50224,
+   "dev_class": "concept",
+   "examples": {
+    "explicit": [],
+    "reworded": [],
+    "far": [],
+    "hard_negative": []
+   },
+   "source": "study meme (draft v1 label, definition and ban list)"
+  },
+  {
+   "id": "butler_raised_him",
+   "tier": "A",
+   "label": "The servant who raised the orphan",
+   "definition": "A loyal servant, such as a butler, steward or housekeeper, raises an orphaned child and stays on as their confidant and surrogate parent.",
+   "keywords": [
+    "butler",
+    "servant",
+    "manservant",
+    "valet",
+    "steward",
+    "housekeeper",
+    "raised him",
+    "raised her",
+    "brought him up",
+    "brought her up",
+    "surrogate father",
+    "surrogate mother",
+    "retainer"
+   ],
+   "decoy_hint": "a hotel butler who serves a guest dinner, a ship's steward handing out blankets, a housekeeper hired for a week",
+   "do_not_combine_with": [
+    "orphan_ward"
+   ],
+   "dev_unit_qwen": 520801,
+   "dev_class": "name",
+   "examples": {
+    "explicit": [],
+    "reworded": [],
+    "far": [],
+    "hard_negative": []
+   },
+   "source": "study meme (draft v1 label, definition and ban list)"
+  },
+  {
+   "id": "orphan_ward",
+   "tier": "A",
+   "label": "Taking in an orphan as a ward",
+   "definition": "An established or wealthy adult takes in an orphaned child as a ward, and the child becomes an apprentice or partner.",
+   "keywords": [
+    "ward",
+    "adopt",
+    "adopted",
+    "guardian",
+    "orphan",
+    "foster",
+    "takes in",
+    "took in"
+   ],
+   "decoy_hint": "a hospital ward, adopting a stray dog, a legal guardian signing a school form for a child whose parents are alive",
+   "do_not_combine_with": [
+    "butler_raised_him",
+    "origin_wound"
+   ],
+   "dev_unit_qwen": 878889,
+   "dev_class": "concept",
+   "examples": {
+    "explicit": [],
+    "reworded": [],
+    "far": [],
+    "hard_negative": []
+   },
+   "source": "study meme (draft v1 label, definition and ban list)"
+  },
+  {
+   "id": "foppish_facade",
+   "tier": "A",
+   "label": "The foppish facade",
+   "definition": "To hide a secret mission, a hero behaves in public like a frivolous, lazy, foolish or cowardly idler so that no one takes them seriously.",
+   "keywords": [
+    "fop",
+    "foppish",
+    "dandy",
+    "playboy",
+    "idler",
+    "frivolous",
+    "pretends to be",
+    "act the fool",
+    "feign",
+    "cowardly",
+    "coward",
+    "facade"
+   ],
+   "decoy_hint": "a genuinely lazy cousin, a dandy at a fashion show, a building's restored facade",
+   "do_not_combine_with": [
+    "secret_identity",
+    "wealthy_vigilante"
+   ],
+   "dev_unit_qwen": null,
+   "dev_class": null,
+   "examples": {
+    "explicit": [],
+    "reworded": [],
+    "far": [],
+    "hard_negative": []
+   },
+   "source": "study meme (draft v1 label, definition and ban list)"
+  },
+  {
+   "id": "fear_symbol",
+   "tier": "A",
+   "label": "A symbol to strike fear",
+   "definition": "A fighter against crime deliberately adopts a frightening costume, symbol or legend so that criminals are terrified of them.",
+   "keywords": [
+    "fear",
+    "terrify",
+    "terror",
+    "frighten",
+    "frightening",
+    "costume",
+    "symbol",
+    "superstitious",
+    "scare",
+    "dread"
+   ],
+   "decoy_hint": "a costume party, a child's fear of the dark, a company logo chosen as a symbol of trust",
+   "do_not_combine_with": [
+    "fear_toxin",
+    "secret_identity"
+   ],
+   "dev_unit_qwen": null,
+   "dev_class": null,
+   "examples": {
+    "explicit": [],
+    "reworded": [],
+    "far": [],
+    "hard_negative": []
+   },
+   "source": "study meme (draft v1 label, definition and ban list)"
+  },
+  {
+   "id": "hidden_lair",
+   "tier": "A",
+   "label": "The hidden lair",
+   "definition": "A hero keeps a secret headquarters hidden beneath or behind their home, full of equipment for their mission.",
+   "keywords": [
+    "secret base",
+    "lair",
+    "hideout",
+    "headquarters",
+    "cave",
+    "cavern",
+    "hidden room",
+    "secret room",
+    "secret passage",
+    "underground",
+    "bunker"
+   ],
+   "decoy_hint": "a tourist cave tour, a company headquarters with a lobby, an underground train station",
+   "do_not_combine_with": [
+    "secret_identity"
+   ],
+   "dev_unit_qwen": 145011,
+   "dev_class": "word",
+   "examples": {
+    "explicit": [],
+    "reworded": [],
+    "far": [],
+    "hard_negative": []
+   },
+   "source": "study meme (draft v1 label, definition and ban list)"
+  },
+  {
+   "id": "mantle_passed_on",
+   "tier": "A",
+   "label": "Taking up the mantle",
+   "definition": "A successor takes over a hero's identity, title or role after the original retires, dies or is disabled, and continues their legacy.",
+   "keywords": [
+    "mantle",
+    "successor",
+    "legacy",
+    "carry on",
+    "carries on",
+    "takes up the",
+    "passes on",
+    "torch",
+    "in his place",
+    "in her place"
+   ],
+   "decoy_hint": "a fireplace mantle, a CEO's chosen successor at a bank, a family legacy of baking bread",
+   "do_not_combine_with": [
+    "losing_protege"
+   ],
+   "dev_unit_qwen": 128787,
+   "dev_class": "concept",
+   "examples": {
+    "explicit": [],
+    "reworded": [],
+    "far": [],
+    "hard_negative": []
+   },
+   "source": "study meme (draft v1 label, definition and ban list)"
+  },
+  {
+   "id": "coin_flip",
+   "tier": "B",
+   "label": "A coin flip decides a fate",
+   "definition": "A character lets the toss of a coin decide someone's fate, often whether they live or die.",
+   "keywords": [
+    "coin",
+    "flip",
+    "toss",
+    "heads",
+    "tails",
+    "chance",
+    "luck",
+    "lucky"
+   ],
+   "decoy_hint": "a coin collector appraising a rare coin, flipping pancakes, a lucky charm, heads of state",
+   "do_not_combine_with": [
+    "shoe_throwing"
+   ],
+   "dev_unit_qwen": 765185,
+   "dev_class": "word",
+   "examples": {
+    "explicit": [],
+    "reworded": [],
+    "far": [],
+    "hard_negative": []
+   },
+   "source": "study meme (draft v1 label, definition and ban list)"
+  },
+  {
+   "id": "vat_of_chemicals",
+   "tier": "B",
+   "label": "The vat of chemicals",
+   "definition": "A character falls or is pushed into a vat or tank of chemicals or toxic waste, which disfigures or transforms them.",
+   "keywords": [
+    "vat",
+    "chemical",
+    "chemicals",
+    "acid",
+    "toxic",
+    "waste",
+    "chemical plant",
+    "tank",
+    "bleached",
+    "disfigured"
+   ],
+   "decoy_hint": "a wine vat at a harvest festival, a chemistry class experiment, a fish tank, toxic gossip",
+   "do_not_combine_with": [
+    "poisoned_garment"
+   ],
+   "dev_unit_qwen": 448712,
+   "dev_class": "concept",
+   "examples": {
+    "explicit": [],
+    "reworded": [],
+    "far": [],
+    "hard_negative": []
+   },
+   "source": "study meme (draft v1 label, definition and ban list)"
+  },
+  {
+   "id": "funeral",
+   "tier": "B",
+   "label": "A funeral",
+   "definition": "Mourners gather at the funeral or burial of a character, including a staged funeral for someone who is not really dead.",
+   "keywords": [
+    "funeral",
+    "burial",
+    "bury",
+    "buried",
+    "grave",
+    "graveside",
+    "coffin",
+    "casket",
+    "mourner",
+    "mourn",
+    "cemetery",
+    "eulogy"
+   ],
+   "decoy_hint": "burying treasure, a grave mistake, a funeral home's accounts, a dog burying a bone",
+   "do_not_combine_with": [
+    "feigned_death_potion"
+   ],
+   "dev_unit_qwen": 17909,
+   "dev_class": "concept",
+   "examples": {
+    "explicit": [],
+    "reworded": [],
+    "far": [],
+    "hard_negative": []
+   },
+   "source": "study meme (draft v1 label, definition and ban list)"
+  },
+  {
+   "id": "morbid_joke",
+   "tier": "B",
+   "label": "The morbid joke",
+   "definition": "A villain treats killing and suffering as comedy: laughing, telling jokes or staging crimes as pranks.",
+   "keywords": [
+    "joke",
+    "joker",
+    "laugh",
+    "laughter",
+    "comedian",
+    "punchline",
+    "prank",
+    "clown",
+    "grin",
+    "giggle",
+    "gag"
+   ],
+   "decoy_hint": "friends laughing at a wedding toast, a clown at a child's birthday party, a harmless office prank",
+   "do_not_combine_with": [],
+   "dev_unit_qwen": 31044,
+   "dev_class": "concept",
+   "examples": {
+    "explicit": [],
+    "reworded": [],
+    "far": [],
+    "hard_negative": []
+   },
+   "source": "study meme (draft v1 label, definition and ban list)"
+  },
+  {
+   "id": "losing_protege",
+   "tier": "B",
+   "label": "Losing the protege",
+   "definition": "The hero's young apprentice or sidekick is captured, tortured or killed, and the hero is consumed by grief or guilt.",
+   "keywords": [
+    "protege",
+    "sidekick",
+    "apprentice",
+    "pupil",
+    "grief",
+    "guilt",
+    "blames himself",
+    "blames herself",
+    "never forgives himself",
+    "never forgives herself"
+   ],
+   "decoy_hint": "an apprentice who graduates with honours, a pupil who wins a prize, grief for a pet goldfish",
+   "do_not_combine_with": [
+    "mantle_passed_on"
+   ],
+   "dev_unit_qwen": 584876,
+   "dev_class": "name",
+   "examples": {
+    "explicit": [],
+    "reworded": [],
+    "far": [],
+    "hard_negative": []
+   },
+   "source": "study meme (draft v1 label, definition and ban list)"
+  },
+  {
+   "id": "corrupt_police",
+   "tier": "B",
+   "label": "A corrupt police force",
+   "definition": "An honest officer stands against a police force or city watch that has been corrupted by organised crime.",
+   "keywords": [
+    "corrupt",
+    "corruption",
+    "crooked",
+    "bribe",
+    "payroll",
+    "on the take",
+    "police",
+    "cop",
+    "precinct",
+    "dirty cops"
+   ],
+   "decoy_hint": "a police officer helping a lost child, a corrupted computer file, a company payroll error",
+   "do_not_combine_with": [],
+   "dev_unit_qwen": 876522,
+   "dev_class": "concept",
+   "examples": {
+    "explicit": [],
+    "reworded": [],
+    "far": [],
+    "hard_negative": []
+   },
+   "source": "study meme (draft v1 label, definition and ban list)"
+  },
+  {
+   "id": "fear_toxin",
+   "tier": "B",
+   "label": "The fear toxin",
+   "definition": "A villain uses a gas, drug or poison that makes victims hallucinate their worst fears.",
+   "keywords": [
+    "toxin",
+    "gas",
+    "hallucinate",
+    "hallucination",
+    "hallucinogen",
+    "nightmare",
+    "fear",
+    "terror",
+    "panic",
+    "worst fears"
+   ],
+   "decoy_hint": "a gas leak in a kitchen that is fixed, a child's nightmare after a scary story, stage fright before a concert",
+   "do_not_combine_with": [
+    "antidote_race",
+    "fear_symbol"
+   ],
+   "dev_unit_qwen": 66576,
+   "dev_class": "word",
+   "examples": {
+    "explicit": [],
+    "reworded": [],
+    "far": [],
+    "hard_negative": []
+   },
+   "source": "study meme (draft v1 label, definition and ban list)"
+  },
+  {
+   "id": "mass_breakout",
+   "tier": "B",
+   "label": "The mass breakout",
+   "definition": "The inmates of a prison or asylum are released all at once, unleashing dangerous criminals.",
+   "keywords": [
+    "breakout",
+    "jailbreak",
+    "prison break",
+    "escape",
+    "inmates",
+    "prisoners",
+    "asylum",
+    "riot",
+    "cells",
+    "freed"
+   ],
+   "decoy_hint": "an escape room game, a political asylum interview, blood cells under a microscope, a prisoner of war's letters",
+   "do_not_combine_with": [],
+   "dev_unit_qwen": 57687,
+   "dev_class": "name",
+   "examples": {
+    "explicit": [],
+    "reworded": [],
+    "far": [],
+    "hard_negative": []
+   },
+   "source": "study meme (draft v1 label, definition and ban list)"
+  },
+  {
+   "id": "refuses_to_kill",
+   "tier": "B",
+   "label": "The hero refuses to kill",
+   "definition": "Given the chance to kill the villain, the hero refuses on principle and spares them.",
+   "keywords": [
+    "spare",
+    "spares",
+    "mercy",
+    "refuse",
+    "refuses to kill",
+    "will not kill",
+    "won't kill",
+    "never kill",
+    "lets him live",
+    "lets her live"
+   ],
+   "decoy_hint": "spare parts for a car, a spare room, a nurse's mercy dash to a hospital, refusing a dinner invitation",
+   "do_not_combine_with": [],
+   "dev_unit_qwen": null,
+   "dev_class": null,
+   "examples": {
+    "explicit": [],
+    "reworded": [],
+    "far": [],
+    "hard_negative": []
+   },
+   "source": "study meme (draft v1 label, definition and ban list)"
+  },
+  {
+   "id": "antidote_race",
+   "tier": "B",
+   "label": "The race for an antidote",
+   "definition": "A poison or toxin threatens victims, and the heroes race against time to make or obtain an antidote.",
+   "keywords": [
+    "antidote",
+    "cure",
+    "poison",
+    "poisoned",
+    "toxin",
+    "serum",
+    "vaccine",
+    "race against time",
+    "dose"
+   ],
+   "decoy_hint": "curing ham in a smokehouse, a daily vitamin dose, poison ivy in a garden that is weeded",
+   "do_not_combine_with": [
+    "fear_toxin",
+    "feigned_death_potion",
+    "poisoned_garment"
+   ],
+   "dev_unit_qwen": 465435,
+   "dev_class": "concept",
+   "examples": {
+    "explicit": [],
+    "reworded": [],
+    "far": [],
+    "hard_negative": []
+   },
+   "source": "study meme (draft v1 label, definition and ban list)"
+  },
+  {
+   "id": "revenge_vow",
+   "tier": "C",
+   "label": "The revenge vow",
+   "definition": "A character vows to avenge a murdered family member or loved one.",
+   "keywords": [
+    "revenge",
+    "avenge",
+    "vengeance",
+    "vow",
+    "swear",
+    "swore",
+    "sworn",
+    "payback",
+    "retribution"
+   ],
+   "decoy_hint": "wedding vows, swearing in a new mayor, a payback of a bank loan",
+   "do_not_combine_with": [
+    "origin_wound",
+    "rash_promise"
+   ],
+   "dev_unit_qwen": 332151,
+   "dev_class": "concept",
+   "examples": {
+    "explicit": [],
+    "reworded": [],
+    "far": [],
+    "hard_negative": []
+   },
+   "source": "study meme (draft v1 label, definition and ban list)"
+  },
+  {
+   "id": "mistaken_twins",
+   "tier": "C",
+   "label": "Mistaken twins",
+   "definition": "Identical twins or exact look-alikes are mistaken for one another, causing confusion.",
+   "keywords": [
+    "twin",
+    "twins",
+    "identical",
+    "look-alike",
+    "lookalike",
+    "double",
+    "mistaken",
+    "mistakes him for",
+    "mistakes her for",
+    "confused with"
+   ],
+   "decoy_hint": "twin beds in a hotel room, a double espresso, a mistaken delivery address, identical houses on a street",
+   "do_not_combine_with": [],
+   "dev_unit_qwen": null,
+   "dev_class": null,
+   "examples": {
+    "explicit": [],
+    "reworded": [],
+    "far": [],
+    "hard_negative": []
+   },
+   "source": "study meme (draft v1 label, definition and ban list)"
+  },
+  {
+   "id": "feigned_death_potion",
+   "tier": "C",
+   "label": "The death-feigning potion",
+   "definition": "A character takes a potion or drug that makes them appear dead, in order to escape a fate.",
+   "keywords": [
+    "potion",
+    "draught",
+    "drug",
+    "sleeping",
+    "appear dead",
+    "fake death",
+    "faked",
+    "feign death",
+    "feigns death",
+    "death-like",
+    "lifeless"
+   ],
+   "decoy_hint": "a love potion at a fair, a sleeping cat, a drug trial for headaches, a lifeless party",
+   "do_not_combine_with": [
+    "antidote_race",
+    "funeral",
+    "poisoned_garment"
+   ],
+   "dev_unit_qwen": null,
+   "dev_class": null,
+   "examples": {
+    "explicit": [],
+    "reworded": [],
+    "far": [],
+    "hard_negative": []
+   },
+   "source": "study meme (draft v1 label, definition and ban list)"
+  },
+  {
+   "id": "deal_with_devil",
+   "tier": "C",
+   "label": "A deal with the devil",
+   "definition": "A character makes a bargain with a demon or other supernatural being, gaining power or success at the cost of their soul or a terrible price.",
+   "keywords": [
+    "devil",
+    "demon",
+    "pact",
+    "bargain",
+    "soul",
+    "satan",
+    "fiend",
+    "deal with the devil",
+    "infernal"
+   ],
+   "decoy_hint": "a bargain at a flea market, a soul singer's concert, a devil's food cake, a trade pact between two towns",
+   "do_not_combine_with": [
+    "rash_promise",
+    "literal_loophole"
+   ],
+   "dev_unit_qwen": null,
+   "dev_class": null,
+   "examples": {
+    "explicit": [],
+    "reworded": [],
+    "far": [],
+    "hard_negative": []
+   },
+   "source": "study meme (draft v1 label, definition and ban list)"
+  },
+  {
+   "id": "closed_circle",
+   "tier": "N",
+   "label": "Closed circle of suspects",
+   "definition": "A crime is committed among a small group cut off from the outside world, so the culprit must be one of them.",
+   "keywords": [
+    "suspect",
+    "suspects",
+    "suspicion",
+    "culprit",
+    "whodunit",
+    "murderer",
+    "cut off",
+    "snowed in",
+    "stranded",
+    "one of them",
+    "locked room"
+   ],
+   "decoy_hint": "a 'suspected' illness, a car stranded with no crime, a board game about suspects",
+   "do_not_combine_with": [],
+   "dev_unit_qwen": null,
+   "dev_class": null,
+   "examples": {
+    "explicit": [],
+    "reworded": [],
+    "far": [],
+    "hard_negative": []
+   },
+   "source": "neutral motif: Wikipedia 'Closed circle of suspects' (rank 15 in the seeded order)"
+  },
+  {
+   "id": "poisoned_garment",
+   "tier": "N",
+   "label": "Poisoned garment",
+   "definition": "A character gives someone a garment or cloth that has been secretly poisoned, and wearing it harms or kills the wearer.",
+   "keywords": [
+    "poison",
+    "poisoned",
+    "venom",
+    "toxic",
+    "robe",
+    "gown",
+    "dress",
+    "cloak",
+    "shirt",
+    "garment",
+    "gift"
+   ],
+   "decoy_hint": "a dress given as a gift that does not fit, poison ivy on a hike, a cloakroom ticket",
+   "do_not_combine_with": [
+    "antidote_race",
+    "feigned_death_potion",
+    "vat_of_chemicals"
+   ],
+   "dev_unit_qwen": null,
+   "dev_class": null,
+   "examples": {
+    "explicit": [],
+    "reworded": [],
+    "far": [],
+    "hard_negative": []
+   },
+   "source": "neutral motif: Wikipedia 'Poison dress' (rank 17 in the seeded order)"
+  },
+  {
+   "id": "rash_promise",
+   "tier": "N",
+   "label": "Rash promise",
+   "definition": "A character makes a hasty, binding promise without foreseeing its cost, and is then forced to keep it at great loss.",
+   "keywords": [
+    "promise",
+    "promised",
+    "vow",
+    "oath",
+    "swear",
+    "swore",
+    "sworn",
+    "pledge",
+    "rash",
+    "hasty",
+    "gave his word",
+    "gave her word",
+    "keep his word",
+    "keep her word"
+   ],
+   "decoy_hint": "a promising young athlete, a pledge drive on the radio, an oath of office read at a ceremony with no cost",
+   "do_not_combine_with": [
+    "revenge_vow",
+    "deal_with_devil",
+    "literal_loophole"
+   ],
+   "dev_unit_qwen": null,
+   "dev_class": null,
+   "examples": {
+    "explicit": [],
+    "reworded": [],
+    "far": [],
+    "hard_negative": []
+   },
+   "source": "neutral motif: Wikipedia 'Rash promise' (rank 35 in the seeded order)"
+  },
+  {
+   "id": "locked_out_lover",
+   "tier": "N",
+   "label": "Locked-out lover",
+   "definition": "A lover shut out of the beloved's house waits at the closed door through the night, pleading or singing to be let in.",
+   "keywords": [
+    "lover",
+    "beloved",
+    "door",
+    "doorstep",
+    "threshold",
+    "locked out",
+    "serenade",
+    "plead",
+    "lament",
+    "let him in",
+    "let her in"
+   ],
+   "decoy_hint": "a door locked because the keys are lost, a serenade at a wedding, a lover of fine wine",
+   "do_not_combine_with": [],
+   "dev_unit_qwen": null,
+   "dev_class": null,
+   "examples": {
+    "explicit": [],
+    "reworded": [],
+    "far": [],
+    "hard_negative": []
+   },
+   "source": "neutral motif: Wikipedia 'Paraklausithyron' (rank 41 in the seeded order)"
+  },
+  {
+   "id": "self_fulfilling_prophecy",
+   "tier": "N",
+   "label": "Self-fulfilling prophecy",
+   "definition": "A prediction about what will happen leads people to act in ways that make it come true, often because they try to prevent it.",
+   "keywords": [
+    "prophecy",
+    "prophesy",
+    "prophet",
+    "prediction",
+    "predict",
+    "foretell",
+    "foretold",
+    "fate",
+    "destiny",
+    "oracle",
+    "fortune-teller",
+    "come true"
+   ],
+   "decoy_hint": "a weather prediction that is simply right, a fortune-teller at a fair whose words change nothing",
+   "do_not_combine_with": [],
+   "dev_unit_qwen": null,
+   "dev_class": null,
+   "examples": {
+    "explicit": [],
+    "reworded": [],
+    "far": [],
+    "hard_negative": []
+   },
+   "source": "neutral motif: Wikipedia 'Self-fulfilling prophecy' (rank 55 in the seeded order)"
+  },
+  {
+   "id": "love_triangle",
+   "tier": "N",
+   "label": "Love triangle",
+   "definition": "Two characters love or compete for the same person, and the rivalry for that person drives the story.",
+   "keywords": [
+    "love triangle",
+    "rival",
+    "rivals",
+    "rivalry",
+    "jealous",
+    "jealousy",
+    "suitor",
+    "suitors",
+    "torn between",
+    "compete"
+   ],
+   "decoy_hint": "business rivals with no romance, a child jealous of a sibling's new bicycle",
+   "do_not_combine_with": [],
+   "dev_unit_qwen": null,
+   "dev_class": null,
+   "examples": {
+    "explicit": [],
+    "reworded": [],
+    "far": [],
+    "hard_negative": []
+   },
+   "source": "neutral motif: Wikipedia 'Love triangle' (rank 87 in the seeded order)"
+  },
+  {
+   "id": "late_collision_meeting",
+   "tier": "N",
+   "label": "Late-running collision meeting",
+   "definition": "A character rushing because they are late, often eating on the run, collides with a stranger who turns out to matter later, typically a future love.",
+   "keywords": [
+    "late",
+    "running late",
+    "rush",
+    "rushing",
+    "hurry",
+    "collide",
+    "collision",
+    "bump into",
+    "bumps into",
+    "crash into",
+    "toast",
+    "breakfast"
+   ],
+   "decoy_hint": "a late fee at the library, a toast at a wedding, a car collision in which nobody meets",
+   "do_not_combine_with": [],
+   "dev_unit_qwen": null,
+   "dev_class": null,
+   "examples": {
+    "explicit": [],
+    "reworded": [],
+    "far": [],
+    "hard_negative": []
+   },
+   "source": "neutral motif: Wikipedia 'Girl Late for School with Toast in Her Mouth' (rank 93 in the seeded order)"
+  },
+  {
+   "id": "literal_loophole",
+   "tier": "N",
+   "label": "Literal loophole",
+   "definition": "An agreement, oath or law is satisfied by its exact wording while its intent is defeated, through a clever literal reading.",
+   "keywords": [
+    "loophole",
+    "technicality",
+    "literally",
+    "letter of the law",
+    "exact words",
+    "wording",
+    "clause",
+    "fine print",
+    "contract",
+    "terms"
+   ],
+   "decoy_hint": "a contract signed with no trick, reading the fine print on a cereal box, the terms of a lease read aloud",
+   "do_not_combine_with": [
+    "rash_promise",
+    "deal_with_devil"
+   ],
+   "dev_unit_qwen": null,
+   "dev_class": null,
+   "examples": {
+    "explicit": [],
+    "reworded": [],
+    "far": [],
+    "hard_negative": []
+   },
+   "source": "neutral motif: Wikipedia 'Quibble (plot device)' (rank 95 in the seeded order)"
+  },
+  {
+   "id": "shoe_throwing",
+   "tier": "N",
+   "label": "Thrown shoe",
+   "definition": "A character throws a shoe at someone, as an insult or protest, or after a departing couple for luck.",
+   "keywords": [
+    "shoe",
+    "shoes",
+    "boot",
+    "boots",
+    "sandal",
+    "slipper",
+    "footwear",
+    "throw",
+    "threw",
+    "thrown",
+    "hurl",
+    "fling"
+   ],
+   "decoy_hint": "shoe shopping, a boot sale, throwing a party",
+   "do_not_combine_with": [
+    "coin_flip"
+   ],
+   "dev_unit_qwen": null,
+   "dev_class": null,
+   "examples": {
+    "explicit": [],
+    "reworded": [],
+    "far": [],
+    "hard_negative": []
+   },
+   "source": "neutral motif: Wikipedia 'Shoe throwing' (rank 125 in the seeded order)"
+  },
+  {
+   "id": "exile",
+   "tier": "N",
+   "label": "Exile",
+   "definition": "A character is banished from their home, country or community and forced to live away from it.",
+   "keywords": [
+    "exile",
+    "exiled",
+    "banish",
+    "banished",
+    "banishment",
+    "expel",
+    "expelled",
+    "outcast",
+    "cast out",
+    "deport",
+    "deported",
+    "homeland"
+   ],
+   "decoy_hint": "being 'banished' from the kitchen for burning dinner, a novel titled Exile in a shop window",
+   "do_not_combine_with": [],
+   "dev_unit_qwen": null,
+   "dev_class": null,
+   "examples": {
+    "explicit": [],
+    "reworded": [],
+    "far": [],
+    "hard_negative": []
+   },
+   "source": "neutral motif: Wikipedia 'Exile' (rank 130 in the seeded order)"
+  }
+ ]
+}

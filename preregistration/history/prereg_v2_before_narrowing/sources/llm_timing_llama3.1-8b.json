@@ -1,0 +1,66 @@
+{
+ "model": "mlx-community/Meta-Llama-3.1-8B-Instruct-4bit",
+ "story_sentences": 24,
+ "n_memes": 25,
+ "judge_nocache_per_meme_s": 0.421,
+ "judge_nocache_example": {
+  "seconds": 0.419,
+  "prompt_tokens": 537,
+  "prompt_tps": 1364,
+  "gen_tokens": 2,
+  "gen_tps": 123.8,
+  "peak_GB": 5.17
+ },
+ "judge_cached": {
+  "prefill": {
+   "seconds": 0.359,
+   "prompt_tokens": 513,
+   "prompt_tps": 1467,
+   "gen_tokens": 1,
+   "gen_tps": 42479.1,
+   "peak_GB": 5.18
+  },
+  "per_meme_s": 0.116,
+  "total_25_memes_s": 3.26
+ },
+ "judge_cached_answers_sample": {
+  "secret identity": "yes",
+  "origin wound: a parent's death": "yes",
+  "heir to a dead parent's fortune": "yes",
+  "masked or disguised vigilante": "yes",
+  "loyal servant or mentor who raised the hero": "no",
+  "orphan ward": "no",
+  "coin flip decides fate": "no",
+  "fall into a vat of chemicals": "no"
+ },
+ "judge_multimeme_one_call": {
+  "seconds": 3.82,
+  "prompt_tokens": 712,
+  "prompt_tps": 1406,
+  "gen_tokens": 200,
+  "gen_tps": 60.5,
+  "peak_GB": 5.38
+ },
+ "judge_multimeme_sample": "1. secret identity: no\n2. origin wound: a parent's death: yes\n3. heir to a dead parent's fortune: yes\n4. masked or disguised vigilante: no\n5. loyal servant or mentor who raised the hero: no\n6. orphan ward: no\n7. coin flip decides fate: no\n8. fall into a vat of chemicals: no\n9. a funeral: no\n10. corr",
+ "summary_flat": {
+  "seconds": 2.477,
+  "prompt_tokens": 533,
+  "prompt_tps": 1341,
+  "gen_tokens": 126,
+  "gen_tps": 60.9,
+  "peak_GB": 5.38
+ },
+ "summary_recursive_2level": {
+  "seconds": 6.06,
+  "final": {
+   "seconds": 2.122,
+   "prompt_tokens": 249,
+   "prompt_tps": 1142,
+   "gen_tokens": 117,
+   "gen_tps": 61.7,
+   "peak_GB": 5.38
+  }
+ },
+ "summary_recursive_sample": "After inheriting a failing workshop, Ilse, a skilled glassblower, uses her talents to create coded warnings on glass floats, helping fishermen evade a corrupt salt merchant's nets. As she and Tomas, a clerk, work together, they uncover a web of deceit, including the merchant's embezzlement and the magistrate's corruption. Through their efforts, the truth is revealed, and the island begins to heal.",
+ "peak_GB": 5.38
+}

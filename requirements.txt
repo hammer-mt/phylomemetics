@@ -1,5 +1,8 @@
+# the study (study/) and its paper figures
 biopython==1.88
 google-genai==2.31.0
+huggingface-hub==1.33.0
+matplotlib==3.11.2
 mlx==0.32.4
 mlx-lm==0.32.2
 numpy==2.5.4
@@ -9,3 +12,8 @@ scikit-learn==1.9.1
 scipy==1.18.1
 torch==2.14.1
 transformers==5.20.2
+
+# added for the planned experiments (preregistration/, step 0)
+nltk==3.10.3
+sentence-transformers==6.1.0
+umap-learn==0.5.12

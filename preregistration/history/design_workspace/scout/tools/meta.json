@@ -1,0 +1,363 @@
+{
+ "models": {
+  "sentence-transformers/all-MiniLM-L6-v2": {
+   "sha": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+   "license": "apache-2.0",
+   "downloads": 206019071,
+   "created": "2022-03-02T23:29:05.000Z",
+   "last_modified": "2026-06-01T06:29:13.000Z",
+   "weights_MB": {
+    "model.safetensors": 91,
+    "pytorch_model.bin": 91
+   },
+   "tokenizer_files": [
+    "tokenizer.json",
+    "tokenizer_config.json"
+   ],
+   "languages": 2
+  },
+  "sentence-transformers/all-mpnet-base-v2": {
+   "sha": "e8c3b32edf5434bc2275fc9bab85f82640a19130",
+   "license": "apache-2.0",
+   "downloads": 18297878,
+   "created": "2022-03-02T23:29:05.000Z",
+   "last_modified": "2025-08-19T10:14:25.000Z",
+   "weights_MB": {
+    "model.safetensors": 438,
+    "pytorch_model.bin": 438
+   },
+   "tokenizer_files": [
+    "tokenizer.json",
+    "tokenizer_config.json"
+   ],
+   "languages": 2
+  },
+  "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2": {
+   "sha": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+   "license": "apache-2.0",
+   "downloads": 43846744,
+   "created": "2022-03-02T23:29:05.000Z",
+   "last_modified": "2026-01-28T10:02:26.000Z",
+   "weights_MB": {
+    "model.safetensors": 471,
+    "pytorch_model.bin": 471
+   },
+   "tokenizer_files": [
+    "sentencepiece.bpe.model",
+    "tokenizer.json",
+    "tokenizer_config.json"
+   ],
+   "languages": 50
+  },
+  "intfloat/multilingual-e5-small": {
+   "sha": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+   "license": "mit",
+   "downloads": 9517561,
+   "created": "2023-06-30T07:31:03.000Z",
+   "last_modified": "2026-04-02T02:16:05.000Z",
+   "weights_MB": {
+    "model.safetensors": 471,
+    "pytorch_model.bin": 471
+   },
+   "tokenizer_files": [
+    "onnx/sentencepiece.bpe.model",
+    "onnx/tokenizer.json",
+    "onnx/tokenizer_config.json",
+    "sentencepiece.bpe.model",
+    "tokenizer.json",
+    "tokenizer_config.json"
+   ],
+   "languages": 94
+  },
+  "intfloat/multilingual-e5-base": {
+   "sha": "d128750597153bb5987e10b1c3493a34e5a4502a",
+   "license": "mit",
+   "downloads": 6096152,
+   "created": "2023-05-19T10:26:40.000Z",
+   "last_modified": "2026-04-02T02:13:31.000Z",
+   "weights_MB": {
+    "model.safetensors": 1112,
+    "pytorch_model.bin": 1112
+   },
+   "tokenizer_files": [
+    "onnx/sentencepiece.bpe.model",
+    "onnx/tokenizer.json",
+    "onnx/tokenizer_config.json",
+    "sentencepiece.bpe.model",
+    "tokenizer.json",
+    "tokenizer_config.json"
+   ],
+   "languages": 94
+  },
+  "intfloat/multilingual-e5-large": {
+   "sha": "3d7cfbdacd47fdda877c5cd8a79fbcc4f2a574f3",
+   "license": "mit",
+   "downloads": 6671154,
+   "created": "2023-06-30T07:38:19.000Z",
+   "last_modified": "2026-04-02T02:16:59.000Z",
+   "weights_MB": {
+    "model.safetensors": 2240,
+    "pytorch_model.bin": 2240
+   },
+   "tokenizer_files": [
+    "onnx/sentencepiece.bpe.model",
+    "onnx/tokenizer.json",
+    "onnx/tokenizer_config.json",
+    "sentencepiece.bpe.model",
+    "tokenizer.json",
+    "tokenizer_config.json"
+   ],
+   "languages": 94
+  },
+  "sentence-transformers/LaBSE": {
+   "sha": "836121a0533e5664b21c7aacc5d22951f2b8b25b",
+   "license": "apache-2.0",
+   "downloads": 583568,
+   "created": "2022-03-02T23:29:05.000Z",
+   "last_modified": "2025-03-06T13:40:25.000Z",
+   "weights_MB": {
+    "model.safetensors": 1884,
+    "pytorch_model.bin": 1884
+   },
+   "tokenizer_files": [
+    "tokenizer.json",
+    "tokenizer_config.json"
+   ],
+   "languages": 110
+  },
+  "BAAI/bge-m3": {
+   "sha": "5617a9f61b028005a4858fdac845db406aefb181",
+   "license": "mit",
+   "downloads": 31379839,
+   "created": "2024-01-27T17:07:29.000Z",
+   "last_modified": "2024-07-03T14:50:10.000Z",
+   "weights_MB": {
+    "pytorch_model.bin": 2271
+   },
+   "tokenizer_files": [
+    "onnx/sentencepiece.bpe.model",
+    "onnx/tokenizer.json",
+    "onnx/tokenizer_config.json",
+    "sentencepiece.bpe.model",
+    "tokenizer.json",
+    "tokenizer_config.json"
+   ],
+   "languages": 0
+  }
+ },
+ "packages": {
+  "sentence-transformers": {
+   "version": "6.1.0",
+   "requires_python": ">=3.10",
+   "upload_time": "2026-09-18T10:44:22",
+   "wheels": [
+    "sentence_transformers-6.1.0-py3-none-any.whl",
+    "sentence_transformers-6.1.0.tar.gz"
+   ],
+   "arm64_wheels": [],
+   "pure_python": true,
+   "requires_dist": [
+    "transformers<6.0.0,>=5.0.0",
+    "tokenizers>=0.19",
+    "huggingface-hub<2.0.0,>=1.3.0",
+    "torch>=2.2",
+    "numpy>=1.24.0",
+    "scikit-learn>=1.1.0",
+    "scipy>=1.0.0",
+    "typing_extensions>=4.10.0",
+    "tqdm>=4.0.0",
+    "transformers[vision]; extra == \"image\"",
+    "transformers[audio]; extra == \"audio\"",
+    "transformers[video]; extra == \"video\""
+   ]
+  },
+  "bertopic": {
+   "version": "0.17.4",
+   "requires_python": ">=3.10",
+   "upload_time": "2025-12-03T14:19:32",
+   "wheels": [
+    "bertopic-0.17.4-py3-none-any.whl",
+    "bertopic-0.17.4.tar.gz"
+   ],
+   "arm64_wheels": [],
+   "pure_python": true,
+   "requires_dist": [
+    "hdbscan>=0.8.29",
+    "umap-learn>=0.5.0",
+    "numpy>=1.20.0",
+    "pandas>=1.1.5",
+    "plotly>=4.7.0",
+    "scikit-learn>=1.0",
+    "sentence-transformers>=0.4.1",
+    "tqdm>=4.41.1",
+    "llvmlite>0.36.0",
+    "datamapplot>=0.1; extra == \"datamap\"",
+    "matplotlib>=3.8; extra == \"datamap\"",
+    "bertopic[docs,test]; extra == \"dev\""
+   ]
+  },
+  "umap-learn": {
+   "version": "0.5.12",
+   "requires_python": ">=3.9",
+   "upload_time": "2026-04-08T20:03:52",
+   "wheels": [
+    "umap_learn-0.5.12-py3-none-any.whl",
+    "umap_learn-0.5.12.tar.gz"
+   ],
+   "arm64_wheels": [],
+   "pure_python": true,
+   "requires_dist": [
+    "numpy>=1.23",
+    "scipy>=1.3.1",
+    "scikit-learn>=1.6",
+    "numba>=0.51.2",
+    "pynndescent>=0.5",
+    "tqdm",
+    "pandas; extra == \"plot\"",
+    "matplotlib; extra == \"plot\"",
+    "datashader; extra == \"plot\"",
+    "bokeh; extra == \"plot\"",
+    "holoviews; extra == \"plot\"",
+    "colorcet; extra == \"plot\""
+   ]
+  },
+  "hdbscan": {
+   "version": "0.8.44",
+   "requires_python": ">=3.10",
+   "upload_time": "2026-06-01T18:55:48",
+   "wheels": [
+    "hdbscan-0.8.44-cp310-cp310-macosx_10_9_universal2.whl",
+    "hdbscan-0.8.44-cp310-cp310-macosx_15_0_x86_64.whl",
+    "hdbscan-0.8.44-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+    "hdbscan-0.8.44-cp310-cp310-win_amd64.whl",
+    "hdbscan-0.8.44-cp311-cp311-macosx_10_9_universal2.whl",
+    "hdbscan-0.8.44-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+    "hdbscan-0.8.44-cp311-cp311-win_amd64.whl",
+    "hdbscan-0.8.44-cp312-cp312-macosx_10_13_universal2.whl"
+   ],
+   "arm64_wheels": [],
+   "pure_python": false,
+   "requires_dist": [
+    "numpy<3,>=1.20",
+    "scipy>=1.0",
+    "scikit-learn>=1.6",
+    "joblib>=1.0"
+   ]
+  },
+  "pynndescent": {
+   "version": "0.6.0",
+   "requires_python": null,
+   "upload_time": "2026-01-08T21:29:57",
+   "wheels": [
+    "pynndescent-0.6.0-py3-none-any.whl",
+    "pynndescent-0.6.0.tar.gz"
+   ],
+   "arm64_wheels": [],
+   "pure_python": true,
+   "requires_dist": [
+    "scikit-learn>=0.18",
+    "scipy>=1.0",
+    "numba>=0.55.0",
+    "llvmlite>=0.38",
+    "joblib>=0.11",
+    "pytest; extra == \"testing\""
+   ]
+  },
+  "numba": {
+   "version": "0.68.0",
+   "requires_python": ">=3.10",
+   "upload_time": "2026-09-30T15:04:34",
+   "wheels": [
+    "numba-0.68.0-cp310-cp310-macosx_12_0_arm64.whl",
+    "numba-0.68.0-cp310-cp310-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl",
+    "numba-0.68.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+    "numba-0.68.0-cp310-cp310-win_amd64.whl",
+    "numba-0.68.0-cp311-cp311-macosx_12_0_arm64.whl",
+    "numba-0.68.0-cp311-cp311-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl",
+    "numba-0.68.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+    "numba-0.68.0-cp311-cp311-win_amd64.whl"
+   ],
+   "arm64_wheels": [
+    "numba-0.68.0-cp310-cp310-macosx_12_0_arm64.whl",
+    "numba-0.68.0-cp311-cp311-macosx_12_0_arm64.whl",
+    "numba-0.68.0-cp312-cp312-macosx_12_0_arm64.whl",
+    "numba-0.68.0-cp313-cp313-macosx_12_0_arm64.whl"
+   ],
+   "pure_python": false,
+   "requires_dist": [
+    "llvmlite<0.51,>=0.50.0dev0",
+    "numpy<2.6,>=1.22"
+   ]
+  },
+  "gensim": {
+   "version": "4.4.0",
+   "requires_python": ">=3.9",
+   "upload_time": "2025-10-18T01:47:12",
+   "wheels": [
+    "gensim-4.4.0-cp310-cp310-macosx_10_9_x86_64.whl",
+    "gensim-4.4.0-cp310-cp310-macosx_11_0_arm64.whl",
+    "gensim-4.4.0-cp310-cp310-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl",
+    "gensim-4.4.0-cp310-cp310-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl",
+    "gensim-4.4.0-cp310-cp310-win_amd64.whl",
+    "gensim-4.4.0-cp311-cp311-macosx_10_9_x86_64.whl",
+    "gensim-4.4.0-cp311-cp311-macosx_11_0_arm64.whl",
+    "gensim-4.4.0-cp311-cp311-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl"
+   ],
+   "arm64_wheels": [
+    "gensim-4.4.0-cp310-cp310-macosx_11_0_arm64.whl",
+    "gensim-4.4.0-cp311-cp311-macosx_11_0_arm64.whl",
+    "gensim-4.4.0-cp312-cp312-macosx_11_0_arm64.whl",
+    "gensim-4.4.0-cp313-cp313-macosx_11_0_arm64.whl"
+   ],
+   "pure_python": false,
+   "requires_dist": [
+    "numpy>=1.18.5",
+    "scipy>=1.7.0",
+    "smart_open>=1.8.1",
+    "Pyro4>=4.27; extra == \"distributed\"",
+    "pytest; extra == \"test-win\"",
+    "pytest-cov; extra == \"test-win\"",
+    "testfixtures; extra == \"test-win\"",
+    "POT; extra == \"test-win\"",
+    "pytest; extra == \"test\"",
+    "pytest-cov; extra == \"test\"",
+    "testfixtures; extra == \"test\"",
+    "POT; extra == \"test\""
+   ]
+  },
+  "llvmlite": {
+   "version": "0.50.0",
+   "requires_python": ">=3.10",
+   "upload_time": "2026-09-29T18:42:25",
+   "wheels": [
+    "llvmlite-0.50.0-cp310-cp310-macosx_12_0_arm64.whl",
+    "llvmlite-0.50.0-cp310-cp310-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl",
+    "llvmlite-0.50.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+    "llvmlite-0.50.0-cp310-cp310-win_amd64.whl",
+    "llvmlite-0.50.0-cp311-cp311-macosx_12_0_arm64.whl",
+    "llvmlite-0.50.0-cp311-cp311-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl",
+    "llvmlite-0.50.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+    "llvmlite-0.50.0-cp311-cp311-win_amd64.whl"
+   ],
+   "arm64_wheels": [
+    "llvmlite-0.50.0-cp310-cp310-macosx_12_0_arm64.whl",
+    "llvmlite-0.50.0-cp311-cp311-macosx_12_0_arm64.whl",
+    "llvmlite-0.50.0-cp312-cp312-macosx_12_0_arm64.whl",
+    "llvmlite-0.50.0-cp313-cp313-macosx_12_0_arm64.whl"
+   ],
+   "pure_python": false,
+   "requires_dist": []
+  },
+  "jieba": {
+   "version": "0.42.1",
+   "requires_python": "",
+   "upload_time": "2020-01-20T14:27:23",
+   "wheels": [
+    "jieba-0.42.1.tar.gz"
+   ],
+   "arm64_wheels": [],
+   "pure_python": false,
+   "requires_dist": []
+  }
+ }
+}

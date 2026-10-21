@@ -1,0 +1,1433 @@
+{
+ "description": "Documented Batman relatives for T3. Strength: A = creator statement or Wikidata link plus Wikipedia text; B = a Wikipedia text claim; C = a comparison only. T3 positives = strength A or B with relation influence, predecessor, derivative or sibling. relation_type (coded at step P1 by two blind coders, annotation_protocol.md A6): plot_role (shares plot or role-level content), iconography_name (look, costume or name only), parody (parody or pastiche), meta (casting or reference), transitive (related through another relative). dev_franchise = the entity has a DEV cousin work; the others are franchise-fresh (the confirmatory set for S15).",
+ "relatives": [
+  {
+   "entity": "Zorro",
+   "relation": [
+    "book_tier1",
+    "influence"
+   ],
+   "strength": "A",
+   "wikidata": "Batman P941 Zorro",
+   "evidence": [
+    {
+     "article": "Batman",
+     "sentence": "Kane noted the influence of the films The Mark of Zorro (1920) and The Bat Whispers (1930) in the creation of the character's iconography."
+    },
+    {
+     "article": "Bob Kane",
+     "sentence": "Kane said his influences for the character included actor Douglas Fairbanks's film portrayal of the swashbuckler Zorro; Leonardo da Vinci's diagram of the ornithopter, a flying machine with huge bat-like wings; and the 1930 film The Bat Whispers, based on Mary Rinehart's mystery novel The Circular Staircase (1908)."
+    },
+    {
+     "article": "Zorro",
+     "sentence": "Also, Bob Kane has credited Zorro, as one of the earliest examples of a fictional masked avenger with a dual identity, as part of the inspiration for the character Batman, which was created in 1939."
+    }
+   ],
+   "works": [
+    {
+     "title": "The Curse of Capistrano",
+     "year": 1919,
+     "n_sentences": 0,
+     "in_dev": false,
+     "in_t3_pool": true,
+     "t3_eligible": false
+    },
+    {
+     "title": "The Mark of Zorro (1920 film)",
+     "year": 1920,
+     "n_sentences": 6,
+     "in_dev": false,
+     "in_t3_pool": true,
+     "t3_eligible": false
+    },
+    {
+     "title": "The Mark of Zorro (1940 film)",
+     "year": 1940,
+     "n_sentences": 9,
+     "in_dev": true,
+     "in_t3_pool": true,
+     "t3_eligible": false
+    },
+    {
+     "title": "The Mask of Zorro",
+     "year": 1998,
+     "n_sentences": 39,
+     "in_dev": false,
+     "in_t3_pool": true,
+     "t3_eligible": true
+    },
+    {
+     "title": "The Legend of Zorro",
+     "year": 2005,
+     "n_sentences": 40,
+     "in_dev": false,
+     "in_t3_pool": true,
+     "t3_eligible": true
+    },
+    {
+     "title": "Zorro (1975 Italian film)",
+     "year": 1975,
+     "n_sentences": 14,
+     "in_dev": false,
+     "in_t3_pool": true,
+     "t3_eligible": true
+    },
+    {
+     "title": "The Bold Caballero",
+     "year": 1936,
+     "n_sentences": 5,
+     "in_dev": false,
+     "in_t3_pool": true,
+     "t3_eligible": false
+    },
+    {
+     "title": "Zorro's Fighting Legion",
+     "year": 1939,
+     "n_sentences": 4,
+     "in_dev": false,
+     "in_t3_pool": true,
+     "t3_eligible": false
+    },
+    {
+     "title": "Zorro Rides Again",
+     "year": 1937,
+     "n_sentences": 7,
+     "in_dev": false,
+     "in_t3_pool": true,
+     "t3_eligible": false
+    }
+   ],
+   "t3_positive": true,
+   "dev_franchise": true,
+   "relation_type": null,
+   "relation_type_codes": [],
+   "t3_note": null
+  },
+  {
+   "entity": "The Bat (Rinehart and Hopwood play) / The Bat Whispers",
+   "relation": [
+    "influence"
+   ],
+   "strength": "A",
+   "wikidata": null,
+   "evidence": [
+    {
+     "article": "Batman",
+     "sentence": "Kane noted the influence of the films The Mark of Zorro (1920) and The Bat Whispers (1930) in the creation of the character's iconography."
+    },
+    {
+     "article": "Bob Kane",
+     "sentence": "Kane said his influences for the character included actor Douglas Fairbanks's film portrayal of the swashbuckler Zorro; Leonardo da Vinci's diagram of the ornithopter, a flying machine with huge bat-like wings; and the 1930 film The Bat Whispers, based on Mary Rinehart's mystery novel The Circular Staircase (1908)."
+    },
+    {
+     "article": "The Bat (play)",
+     "sentence": "The play and its adaptations inspired other comedy-mysteries with similar settings, and influenced the creation of the comic-book superhero Batman. == Plot == Elderly, single Cornelia Van Gorder is renting an old, isolated Long Island mansion owned by the estate of Courtleigh Fleming, a bank president who had reportedly died several months before."
+    },
+    {
+     "article": "The Bat Whispers",
+     "sentence": "This film was remade again in 1959 as The Bat with Agnes Moorehead and Vincent Price. == Influence == Comic-book creator Bob Kane said in his 1989 autobiography Batman and Me that the villain of The Bat Whispers was an inspiration for his character Batman. == See also == List of rediscovered films List of early wide-gauge films == References == == External links == The Bat Whispers at IMDb The Bat Whispers at Rotten Tomatoes The Bat Whispers at the TCM Movie Database (archived)"
+    }
+   ],
+   "works": [
+    {
+     "title": "The Bat (play)",
+     "year": 1920,
+     "n_sentences": 35,
+     "in_dev": false,
+     "in_t3_pool": false,
+     "t3_eligible": true
+    },
+    {
+     "title": "The Bat (1926 film)",
+     "year": 1926,
+     "n_sentences": 30,
+     "in_dev": true,
+     "in_t3_pool": false,
+     "t3_eligible": false
+    },
+    {
+     "title": "The Bat Whispers",
+     "year": 1930,
+     "n_sentences": 36,
+     "in_dev": false,
+     "in_t3_pool": false,
+     "t3_eligible": true
+    },
+    {
+     "title": "The Bat (1959 film)",
+     "year": 1959,
+     "n_sentences": 47,
+     "in_dev": false,
+     "in_t3_pool": false,
+     "t3_eligible": true
+    }
+   ],
+   "t3_positive": true,
+   "dev_franchise": true,
+   "relation_type": null,
+   "relation_type_codes": [],
+   "t3_note": null
+  },
+  {
+   "entity": "The Shadow",
+   "relation": [
+    "influence"
+   ],
+   "strength": "A",
+   "wikidata": "Batman P941 The Shadow",
+   "evidence": [
+    {
+     "article": "Batman",
+     "sentence": "The first Batman story is derivative of the story \"Partners of Peril\" published in the pulp magazine The Shadow #113, which was published several months earlier, written by Theodore Tinsley and illustrated by Tom Lovell."
+    },
+    {
+     "article": "Batman",
+     "sentence": "They drew inspiration from pulp fiction characters such as Sherlock Holmes and the Shadow."
+    },
+    {
+     "article": "The Shadow",
+     "sentence": "Finger then used \"Partners of Peril\" – a Shadow pulp written by Theodore Tinsley – as the basis for Batman's debut story, \"The Case of the Chemical Syndicate\"."
+    },
+    {
+     "article": "The Shadow",
+     "sentence": "In the former, Batman acknowledged that The Shadow was his biggest influence and in the latter, The Shadow reveals to Batman that he knows his true identity of Bruce Wayne but assures him that his secret is safe with him."
+    }
+   ],
+   "works": [
+    {
+     "title": "The Shadow (1994 film)",
+     "year": 1994,
+     "n_sentences": 22,
+     "in_dev": true,
+     "in_t3_pool": true,
+     "t3_eligible": false
+    },
+    {
+     "title": "The Shadow Strikes",
+     "year": 1937,
+     "n_sentences": 26,
+     "in_dev": false,
+     "in_t3_pool": true,
+     "t3_eligible": true
+    },
+    {
+     "title": "The Shadow (serial)",
+     "year": 1940,
+     "n_sentences": 7,
+     "in_dev": false,
+     "in_t3_pool": true,
+     "t3_eligible": false
+    },
+    {
+     "title": "The Shadow Returns",
+     "year": 1946,
+     "n_sentences": 2,
+     "in_dev": false,
+     "in_t3_pool": true,
+     "t3_eligible": false
+    },
+    {
+     "title": "Behind the Mask (1946 film)",
+     "year": 1946,
+     "n_sentences": 1,
+     "in_dev": false,
+     "in_t3_pool": true,
+     "t3_eligible": false
+    },
+    {
+     "title": "The Missing Lady",
+     "year": 1946,
+     "n_sentences": 1,
+     "in_dev": false,
+     "in_t3_pool": true,
+     "t3_eligible": false
+    },
+    {
+     "title": "The Living Shadow",
+     "year": 1931,
+     "n_sentences": 10,
+     "in_dev": false,
+     "in_t3_pool": true,
+     "t3_eligible": true
+    }
+   ],
+   "t3_positive": true,
+   "dev_franchise": true,
+   "relation_type": null,
+   "relation_type_codes": [],
+   "t3_note": null
+  },
+  {
+   "entity": "Sherlock Holmes",
+   "relation": [
+    "influence"
+   ],
+   "strength": "A",
+   "wikidata": "Batman P941 Sherlock Holmes",
+   "evidence": [
+    {
+     "article": "Batman",
+     "sentence": "They drew inspiration from pulp fiction characters such as Sherlock Holmes and the Shadow."
+    },
+    {
+     "article": "Batman",
+     "sentence": "Finger, drawing inspiration from pulp heroes such as Sherlock Holmes, The Shadow, Dick Tracy, and Doc Savage, made the character a master sleuth."
+    }
+   ],
+   "works": [
+    {
+     "title": "A Study in Scarlet",
+     "year": 1887,
+     "n_sentences": 57,
+     "in_dev": true,
+     "in_t3_pool": false,
+     "t3_eligible": false
+    },
+    {
+     "title": "The Sign of the Four",
+     "year": 1890,
+     "n_sentences": 43,
+     "in_dev": false,
+     "in_t3_pool": false,
+     "t3_eligible": true
+    },
+    {
+     "title": "The Hound of the Baskervilles",
+     "year": 1902,
+     "n_sentences": 35,
+     "in_dev": false,
+     "in_t3_pool": false,
+     "t3_eligible": true
+    },
+    {
+     "title": "The Valley of Fear",
+     "year": 1915,
+     "n_sentences": 29,
+     "in_dev": false,
+     "in_t3_pool": false,
+     "t3_eligible": true
+    }
+   ],
+   "t3_positive": true,
+   "dev_franchise": true,
+   "relation_type": null,
+   "relation_type_codes": [],
+   "t3_note": null
+  },
+  {
+   "entity": "Doc Savage",
+   "relation": [
+    "influence"
+   ],
+   "strength": "B",
+   "wikidata": null,
+   "evidence": [
+    {
+     "article": "Batman",
+     "sentence": "Finger, drawing inspiration from pulp heroes such as Sherlock Holmes, The Shadow, Dick Tracy, and Doc Savage, made the character a master sleuth."
+    }
+   ],
+   "works": [
+    {
+     "title": "Doc Savage: The Man of Bronze",
+     "year": 1975,
+     "n_sentences": 23,
+     "in_dev": false,
+     "in_t3_pool": true,
+     "t3_eligible": true
+    },
+    {
+     "title": "The Man of Bronze",
+     "year": 1933,
+     "n_sentences": 2,
+     "in_dev": false,
+     "in_t3_pool": true,
+     "t3_eligible": false
+    }
+   ],
+   "t3_positive": true,
+   "dev_franchise": false,
+   "relation_type": null,
+   "relation_type_codes": [],
+   "t3_note": null
+  },
+  {
+   "entity": "Dick Tracy",
+   "relation": [
+    "influence"
+   ],
+   "strength": "B",
+   "wikidata": null,
+   "evidence": [
+    {
+     "article": "Batman",
+     "sentence": "Finger, drawing inspiration from pulp heroes such as Sherlock Holmes, The Shadow, Dick Tracy, and Doc Savage, made the character a master sleuth."
+    }
+   ],
+   "works": [
+    {
+     "title": "Dick Tracy (1990 film)",
+     "year": 1990,
+     "n_sentences": 26,
+     "in_dev": false,
+     "in_t3_pool": false,
+     "t3_eligible": true
+    },
+    {
+     "title": "Dick Tracy (serial)",
+     "year": 1937,
+     "n_sentences": 3,
+     "in_dev": false,
+     "in_t3_pool": false,
+     "t3_eligible": false
+    },
+    {
+     "title": "Dick Tracy (1945 film)",
+     "year": 1945,
+     "n_sentences": 18,
+     "in_dev": false,
+     "in_t3_pool": false,
+     "t3_eligible": true
+    }
+   ],
+   "t3_positive": true,
+   "dev_franchise": false,
+   "relation_type": null,
+   "relation_type_codes": [],
+   "t3_note": null
+  },
+  {
+   "entity": "The Phantom (Lee Falk)",
+   "relation": [
+    "influence"
+   ],
+   "strength": "B",
+   "wikidata": null,
+   "evidence": [
+    {
+     "article": "Bob Kane",
+     "sentence": "Finger additionally said his suggestions were influenced by Lee Falk's The Phantom, a syndicated newspaper comic strip character with which Kane was familiar as well."
+    },
+    {
+     "article": "Bill Finger",
+     "sentence": "Finger later said his suggestions to have his eyes covered by white lenses was influenced by Lee Falk's popular The Phantom, a syndicated newspaper comic strip character with which Kane was also familiar, and that he devised the name Bruce Wayne for the character's secret identity."
+    }
+   ],
+   "works": [
+    {
+     "title": "The Phantom (1996 film)",
+     "year": 1996,
+     "n_sentences": 28,
+     "in_dev": false,
+     "in_t3_pool": true,
+     "t3_eligible": true
+    },
+    {
+     "title": "The Phantom (serial)",
+     "year": 1943,
+     "n_sentences": 6,
+     "in_dev": false,
+     "in_t3_pool": true,
+     "t3_eligible": false
+    }
+   ],
+   "t3_positive": true,
+   "dev_franchise": false,
+   "relation_type": null,
+   "relation_type_codes": [],
+   "t3_note": null
+  },
+  {
+   "entity": "The Black Bat (pulp)",
+   "relation": [
+    "influence"
+   ],
+   "strength": "B",
+   "wikidata": null,
+   "evidence": [
+    {
+     "article": "Black Bat (pulp fiction character)",
+     "sentence": "However, the Black Bat did have a permanent influence on the Batman: chief Batman scribe Bill Finger called Kane's attention to the wrist flaps, which appeared to be gauntlets the rival character was wearing."
+    }
+   ],
+   "works": [],
+   "t3_positive": true,
+   "dev_franchise": false,
+   "relation_type": null,
+   "relation_type_codes": [],
+   "t3_note": null
+  },
+  {
+   "entity": "The Man Who Laughs (source of the Joker's look)",
+   "relation": [
+    "influence"
+   ],
+   "strength": "A",
+   "wikidata": null,
+   "evidence": [
+    {
+     "article": "Bob Kane",
+     "sentence": "That's the way I sum it up. [The Joker] looks like Conrad Veidt—you know, the actor in The Man Who Laughs, [the 1928 movie based on the novel] by Victor Hugo. ..."
+    }
+   ],
+   "works": [
+    {
+     "title": "The Man Who Laughs (1928 film)",
+     "year": 1928,
+     "n_sentences": 41,
+     "in_dev": false,
+     "in_t3_pool": false,
+     "t3_eligible": true
+    },
+    {
+     "title": "The Man Who Laughs",
+     "year": 1869,
+     "n_sentences": 41,
+     "in_dev": false,
+     "in_t3_pool": false,
+     "t3_eligible": true
+    }
+   ],
+   "t3_positive": true,
+   "dev_franchise": false,
+   "relation_type": null,
+   "relation_type_codes": [],
+   "t3_note": null
+  },
+  {
+   "entity": "Robin Hood (source of Robin's name)",
+   "relation": [
+    "influence"
+   ],
+   "strength": "B",
+   "wikidata": null,
+   "evidence": [
+    {
+     "article": "Bob Kane",
+     "sentence": "Robinson suggested a normal human, along with the name \"Robin\", after Robin Hood books he had read during boyhood, and noting in a 2005 interview he had been inspired by one book's N."
+    }
+   ],
+   "works": [
+    {
+     "title": "The Adventures of Robin Hood",
+     "year": 1938,
+     "n_sentences": 37,
+     "in_dev": false,
+     "in_t3_pool": true,
+     "t3_eligible": true
+    },
+    {
+     "title": "Douglas Fairbanks in Robin Hood",
+     "year": 1922,
+     "n_sentences": 13,
+     "in_dev": false,
+     "in_t3_pool": true,
+     "t3_eligible": true
+    }
+   ],
+   "t3_positive": true,
+   "dev_franchise": false,
+   "relation_type": null,
+   "relation_type_codes": [],
+   "t3_note": null
+  },
+  {
+   "entity": "Superman",
+   "relation": [
+    "influence"
+   ],
+   "strength": "A",
+   "wikidata": "Batman P941 Superman",
+   "evidence": [
+    {
+     "article": "Detective Comics 27",
+     "sentence": "Originally starting out as an anthology series focusing on original crime series stories, the iconic superhero known as Batman would be introduced by Bob Kane and Bill Finger to National Comics Publications (now DC Comics) with inspiration to create a new Superman that first appeared in Action Comics #1."
+    }
+   ],
+   "works": [
+    {
+     "title": "Superman (1978 film)",
+     "year": 1978,
+     "n_sentences": 28,
+     "in_dev": true,
+     "in_t3_pool": true,
+     "t3_eligible": false
+    }
+   ],
+   "t3_positive": true,
+   "dev_franchise": true,
+   "relation_type": null,
+   "relation_type_codes": [],
+   "t3_note": null
+  },
+  {
+   "entity": "Count Dracula",
+   "relation": [
+    "influence"
+   ],
+   "strength": "C",
+   "wikidata": "Batman P941 Count Dracula",
+   "evidence": [],
+   "works": [
+    {
+     "title": "Dracula",
+     "year": 1897,
+     "n_sentences": 37,
+     "in_dev": true,
+     "in_t3_pool": false,
+     "t3_eligible": false
+    }
+   ],
+   "t3_positive": false,
+   "dev_franchise": true,
+   "relation_type": null,
+   "relation_type_codes": [],
+   "t3_note": "not a T3 positive: strength C"
+  },
+  {
+   "entity": "The Scarlet Pimpernel",
+   "relation": [
+    "book_tier1",
+    "predecessor"
+   ],
+   "strength": "B",
+   "wikidata": null,
+   "evidence": [
+    {
+     "article": "Batman",
+     "sentence": "As an aristocratic hero with a double identity, Batman has predecessors in the Scarlet Pimpernel (created by Baroness Emmuska Orczy, 1903) and Zorro (created by Johnston McCulley, 1919)."
+    },
+    {
+     "article": "The Scarlet Pimpernel",
+     "sentence": "Doctor Syn, Zorro, the Shadow, the Spider, the Green Hornet, the Phantom, Superman and Batman followed within a few decades, and the trope remains a popular one in serial fiction today."
+    },
+    {
+     "article": "Zorro",
+     "sentence": "As a hero with a secret identity who taunts his foes by signing his deeds, Zorro finds a direct literary predecessor in Sir Percy Blakeney, hero of the Scarlet Pimpernel pulp series by Emma Orczy."
+    }
+   ],
+   "works": [
+    {
+     "title": "The Scarlet Pimpernel",
+     "year": 1905,
+     "n_sentences": 28,
+     "in_dev": true,
+     "in_t3_pool": true,
+     "t3_eligible": false
+    },
+    {
+     "title": "The Scarlet Pimpernel (1934 film)",
+     "year": 1934,
+     "n_sentences": 30,
+     "in_dev": false,
+     "in_t3_pool": true,
+     "t3_eligible": true
+    },
+    {
+     "title": "The Scarlet Pimpernel (1982 film)",
+     "year": 1982,
+     "n_sentences": 33,
+     "in_dev": false,
+     "in_t3_pool": true,
+     "t3_eligible": true
+    },
+    {
+     "title": "The Elusive Pimpernel",
+     "year": 1908,
+     "n_sentences": 0,
+     "in_dev": false,
+     "in_t3_pool": false,
+     "t3_eligible": false
+    },
+    {
+     "title": "\"Pimpernel\" Smith",
+     "year": 1941,
+     "n_sentences": 31,
+     "in_dev": false,
+     "in_t3_pool": false,
+     "t3_eligible": true
+    },
+    {
+     "title": "The Return of the Scarlet Pimpernel",
+     "year": 1937,
+     "n_sentences": 39,
+     "in_dev": false,
+     "in_t3_pool": true,
+     "t3_eligible": true
+    },
+    {
+     "title": "Eldorado (novel)",
+     "year": 1913,
+     "n_sentences": 19,
+     "in_dev": false,
+     "in_t3_pool": true,
+     "t3_eligible": true
+    },
+    {
+     "title": "The Elusive Pimpernel (novel)",
+     "year": 1908,
+     "n_sentences": 17,
+     "in_dev": false,
+     "in_t3_pool": true,
+     "t3_eligible": true
+    }
+   ],
+   "t3_positive": true,
+   "dev_franchise": true,
+   "relation_type": null,
+   "relation_type_codes": [],
+   "t3_note": null
+  },
+  {
+   "entity": "The Count of Monte Cristo",
+   "relation": [
+    "candidate_unverified"
+   ],
+   "strength": "none",
+   "wikidata": null,
+   "evidence": [],
+   "works": [
+    {
+     "title": "The Count of Monte Cristo",
+     "year": 1844,
+     "n_sentences": 88,
+     "in_dev": true,
+     "in_t3_pool": false,
+     "t3_eligible": false
+    },
+    {
+     "title": "The Count of Monte Cristo (2002 film)",
+     "year": 2002,
+     "n_sentences": 36,
+     "in_dev": false,
+     "in_t3_pool": true,
+     "t3_eligible": true
+    },
+    {
+     "title": "The Count of Monte Cristo (1934 film)",
+     "year": 1934,
+     "n_sentences": 42,
+     "in_dev": false,
+     "in_t3_pool": true,
+     "t3_eligible": true
+    },
+    {
+     "title": "The Count of Monte Cristo (2024 film)",
+     "year": 2024,
+     "n_sentences": 48,
+     "in_dev": false,
+     "in_t3_pool": true,
+     "t3_eligible": true
+    }
+   ],
+   "t3_positive": false,
+   "dev_franchise": true,
+   "relation_type": null,
+   "relation_type_codes": [],
+   "t3_note": "not a T3 positive: strength none"
+  },
+  {
+   "entity": "Iron Man",
+   "relation": [
+    "book_tier1",
+    "derivative"
+   ],
+   "strength": "B",
+   "wikidata": null,
+   "evidence": [
+    {
+     "article": "Iron Man",
+     "sentence": "Layton was inspired by the vast collection of specialized outfits used by Batman when designing Iron Man's various armors."
+    },
+    {
+     "article": "Iron Man",
+     "sentence": "Lee modeled Iron Man after businessman Howard Hughes, invoking his physical appearance, his image as a businessman, and his reputation as an arrogant playboy."
+    }
+   ],
+   "works": [
+    {
+     "title": "Iron Man (2008 film)",
+     "year": 2008,
+     "n_sentences": 30,
+     "in_dev": true,
+     "in_t3_pool": true,
+     "t3_eligible": false
+    },
+    {
+     "title": "Iron Man 2",
+     "year": 2010,
+     "n_sentences": 30,
+     "in_dev": false,
+     "in_t3_pool": true,
+     "t3_eligible": true
+    },
+    {
+     "title": "Iron Man 3",
+     "year": 2013,
+     "n_sentences": 35,
+     "in_dev": false,
+     "in_t3_pool": true,
+     "t3_eligible": true
+    },
+    {
+     "title": "Marvel Animated Features",
+     "year": null,
+     "n_sentences": 0,
+     "in_dev": false,
+     "in_t3_pool": true,
+     "t3_eligible": false
+    },
+    {
+     "title": "Iron Man: Rise of Technovore",
+     "year": 2013,
+     "n_sentences": 25,
+     "in_dev": false,
+     "in_t3_pool": true,
+     "t3_eligible": true
+    }
+   ],
+   "t3_positive": true,
+   "dev_franchise": true,
+   "relation_type": null,
+   "relation_type_codes": [],
+   "t3_note": null
+  },
+  {
+   "entity": "Moon Knight",
+   "relation": [
+    "derivative"
+   ],
+   "strength": "A",
+   "wikidata": "Moon Knight P941 Batman",
+   "evidence": [
+    {
+     "article": "Moon Knight",
+     "sentence": "This, along with Moon Knight's methods and the atmosphere of his stories, cemented a perception among some readers that he was Marvel's version of Batman."
+    },
+    {
+     "article": "Moon Knight",
+     "sentence": "Wizard ranked Moon Knight 149th in their \"top 200 Comic Book Characters\" list. ==== Comparisons to Batman ==== Charlie Huston, writer of the 2006 re-launch of Moon Knight, attempted to answer the criticism that Moon Knight is an ersatz pastiche of Batman in an interview with Comixfan writer Remy Minnick."
+    }
+   ],
+   "works": [
+    {
+     "title": "Moon Knight (miniseries)",
+     "year": null,
+     "n_sentences": 1,
+     "in_dev": false,
+     "in_t3_pool": false,
+     "t3_eligible": false
+    }
+   ],
+   "t3_positive": true,
+   "dev_franchise": false,
+   "relation_type": null,
+   "relation_type_codes": [],
+   "t3_note": null
+  },
+  {
+   "entity": "Nighthawk (Marvel)",
+   "relation": [
+    "derivative"
+   ],
+   "strength": "A",
+   "wikidata": "Nighthawk P941 Batman",
+   "evidence": [
+    {
+     "article": "Nighthawk (Marvel Comics)",
+     "sentence": "The arc introduced the supervillain team the Squadron Sinister, whose four members were loosely based on heroes in DC Comics' Justice League of America, with Nighthawk based on Batman."
+    }
+   ],
+   "works": [],
+   "t3_positive": true,
+   "dev_franchise": false,
+   "relation_type": null,
+   "relation_type_codes": [],
+   "t3_note": null
+  },
+  {
+   "entity": "Nite Owl (Watchmen)",
+   "relation": [
+    "derivative"
+   ],
+   "strength": "A",
+   "wikidata": "Nite Owl P144 Batman",
+   "evidence": [
+    {
+     "article": "Nite Owl",
+     "sentence": "The second Nite Owl parodies the appearance of the iconic popular superhero Batman, while the first parodies The Phantom."
+    }
+   ],
+   "works": [
+    {
+     "title": "Watchmen (2009 film)",
+     "year": 2009,
+     "n_sentences": 35,
+     "in_dev": false,
+     "in_t3_pool": true,
+     "t3_eligible": true
+    },
+    {
+     "title": "Watchmen",
+     "year": 1986,
+     "n_sentences": 47,
+     "in_dev": false,
+     "in_t3_pool": false,
+     "t3_eligible": true
+    }
+   ],
+   "t3_positive": true,
+   "dev_franchise": false,
+   "relation_type": null,
+   "relation_type_codes": [],
+   "t3_note": null
+  },
+  {
+   "entity": "Midnighter",
+   "relation": [
+    "derivative"
+   ],
+   "strength": "B",
+   "wikidata": null,
+   "evidence": [
+    {
+     "article": "The Authority (comics)",
+     "sentence": "The original line-up consisted of Jenny Sparks, a British woman who could generate and turn into electricity; Jack Hawksmoor, who was psychically bonded to cities in order to communicate with them and receive powers from them; Swift, a Tibetan woman who possessed wings and sharp talons; Apollo, a bio-engineered Superman pastiche; Midnighter, a bio-engineered Batman pastiche who possessed the ability to foresee his opponents' moves in combat; The Engineer, a scientist who had replaced her blood with nine pints of nanotechnology and could create solid objects with it; and The Doctor, a Dutch dru"
+    },
+    {
+     "article": "Homosexuality in the Batman franchise",
+     "sentence": "Midnighter originated as an alternative universe analogue of Batman in comics published by WildStorm, but became part of the mainstream DC Universe in September 2011 as a result of The New 52."
+    }
+   ],
+   "works": [],
+   "t3_positive": true,
+   "dev_franchise": false,
+   "relation_type": null,
+   "relation_type_codes": [],
+   "t3_note": null
+  },
+  {
+   "entity": "Riggan Thomson / Birdman",
+   "relation": [
+    "derivative"
+   ],
+   "strength": "A",
+   "wikidata": "Riggan Thomson P144 Batman",
+   "evidence": [
+    {
+     "article": "Birdman (film)",
+     "sentence": "Despite this, the final film contains numerous references to Burton's Batman films, including the year Riggan is mentioned to have last played Birdman being 1992."
+    }
+   ],
+   "works": [
+    {
+     "title": "Birdman (film)",
+     "year": 2014,
+     "n_sentences": 34,
+     "in_dev": false,
+     "in_t3_pool": false,
+     "t3_eligible": true
+    }
+   ],
+   "t3_positive": true,
+   "dev_franchise": false,
+   "relation_type": null,
+   "relation_type_codes": [],
+   "t3_note": null
+  },
+  {
+   "entity": "Chase Me (film)",
+   "relation": [
+    "batman_lineage"
+   ],
+   "strength": "A",
+   "wikidata": "Chase Me P144 Batman",
+   "evidence": [],
+   "works": [
+    {
+     "title": "Chase Me",
+     "year": 2003,
+     "n_sentences": 23,
+     "in_dev": false,
+     "in_t3_pool": true,
+     "t3_eligible": true
+    }
+   ],
+   "t3_positive": false,
+   "dev_franchise": false,
+   "relation_type": null,
+   "relation_type_codes": [],
+   "t3_note": "not a T3 positive: relation batman_lineage"
+  },
+  {
+   "entity": "Batwoman (Jerry Warren)",
+   "relation": [
+    "derivative"
+   ],
+   "strength": "B",
+   "wikidata": null,
+   "evidence": [
+    {
+     "article": "The Wild World of Batwoman",
+     "sentence": "With the popularity of the Batman television series, director Jerry Warren decided to make his own superhero bat-film."
+    }
+   ],
+   "works": [
+    {
+     "title": "The Wild World of Batwoman",
+     "year": 1966,
+     "n_sentences": 10,
+     "in_dev": false,
+     "in_t3_pool": true,
+     "t3_eligible": true
+    }
+   ],
+   "t3_positive": true,
+   "dev_franchise": false,
+   "relation_type": null,
+   "relation_type_codes": [],
+   "t3_note": null
+  },
+  {
+   "entity": "Rat Pfink",
+   "relation": [
+    "derivative"
+   ],
+   "strength": "B",
+   "wikidata": null,
+   "evidence": [
+    {
+     "article": "Rat Pfink a Boo Boo",
+     "sentence": "Rat Pfink is a parody of Batman and Boo Boo is a parody of Batman's sidekick Robin. == Plot == After murdering an unnamed woman, the villainous \"Chain Gang\" targets Cee Bee Beaumont, the girlfriend of rock and roll star Lonnie Lord."
+    }
+   ],
+   "works": [
+    {
+     "title": "Rat Pfink a Boo Boo",
+     "year": 1966,
+     "n_sentences": 8,
+     "in_dev": false,
+     "in_t3_pool": true,
+     "t3_eligible": true
+    }
+   ],
+   "t3_positive": true,
+   "dev_franchise": false,
+   "relation_type": null,
+   "relation_type_codes": [],
+   "t3_note": null
+  },
+  {
+   "entity": "Commander Courage",
+   "relation": [
+    "derivative"
+   ],
+   "strength": "B",
+   "wikidata": null,
+   "evidence": [
+    {
+     "article": "Comic Book: The Movie",
+     "sentence": "This film features various voice actors appearing in a live-action film and also marked Sid Caesar's final film role before retiring in 2005 and dying in 2014. == Plot == Comic book fan Donald \"Don\" Swan battles against a fictional film studio that is about to announce a film based on his favorite superhero, Commander Courage (a parody of Batman). == Cast == Mark Hamill as Donald Swan Billy West as Leo Matuzik Donna D'Errico as Liberty Lass, Papaya Smith Roger Rose as Taylor Donohue Jess Harnell as Ricky Lori Alan as Anita Levine Daran Norris as Commander Courage, Bruce Easly Jim Cummings as D"
+    }
+   ],
+   "works": [
+    {
+     "title": "Comic Book: The Movie",
+     "year": 2003,
+     "n_sentences": 1,
+     "in_dev": false,
+     "in_t3_pool": false,
+     "t3_eligible": false
+    }
+   ],
+   "t3_positive": true,
+   "dev_franchise": false,
+   "relation_type": null,
+   "relation_type_codes": [],
+   "t3_note": null
+  },
+  {
+   "entity": "Bluntman",
+   "relation": [
+    "derivative"
+   ],
+   "strength": "B",
+   "wikidata": null,
+   "evidence": [
+    {
+     "article": "Jay & Silent Bob's Super Groovy Cartoon Movie!",
+     "sentence": "The film's script was adapted from the Bluntman And Chronic comic book story originally written by Smith as a companion piece to his 2001 film Jay and Silent Bob Strike Back and it is the seventh film in the View Askewniverse. == Plot == After winning $10,000,000 from a scratchcard they bought at the Quick Stop, Jay & Silent Bob decide to become superheroes Bluntman and Chronic (a parody of Batman and Robin)."
+    }
+   ],
+   "works": [
+    {
+     "title": "Jay & Silent Bob's Super Groovy Cartoon Movie!",
+     "year": 2013,
+     "n_sentences": 20,
+     "in_dev": false,
+     "in_t3_pool": true,
+     "t3_eligible": true
+    },
+    {
+     "title": "Jay and Silent Bob Strike Back",
+     "year": 2001,
+     "n_sentences": 30,
+     "in_dev": false,
+     "in_t3_pool": false,
+     "t3_eligible": true
+    }
+   ],
+   "t3_positive": true,
+   "dev_franchise": false,
+   "relation_type": null,
+   "relation_type_codes": [],
+   "t3_note": null
+  },
+  {
+   "entity": "Superhero Movie parody",
+   "relation": [
+    "derivative"
+   ],
+   "strength": "C",
+   "wikidata": null,
+   "evidence": [
+    {
+     "article": "Batman Begins",
+     "sentence": "It serves as a parody of Batman Begins and the superhero genre."
+    }
+   ],
+   "works": [
+    {
+     "title": "Superhero Movie",
+     "year": 2008,
+     "n_sentences": 33,
+     "in_dev": false,
+     "in_t3_pool": true,
+     "t3_eligible": true
+    }
+   ],
+   "t3_positive": false,
+   "dev_franchise": false,
+   "relation_type": null,
+   "relation_type_codes": [],
+   "t3_note": "not a T3 positive: strength C"
+  },
+  {
+   "entity": "Blackwolf (Soon I Will Be Invincible)",
+   "relation": [
+    "derivative"
+   ],
+   "strength": "B",
+   "wikidata": null,
+   "evidence": [
+    {
+     "article": "Soon I Will Be Invincible",
+     "sentence": "A Batman-like character, he is the team's only unpowered member, but he is athletically trained and intellectually gifted."
+    }
+   ],
+   "works": [
+    {
+     "title": "Soon I Will Be Invincible",
+     "year": 2007,
+     "n_sentences": 16,
+     "in_dev": false,
+     "in_t3_pool": true,
+     "t3_eligible": true
+    }
+   ],
+   "t3_positive": true,
+   "dev_franchise": false,
+   "relation_type": null,
+   "relation_type_codes": [],
+   "t3_note": null
+  },
+  {
+   "entity": "Blue Falcon",
+   "relation": [
+    "derivative"
+   ],
+   "strength": "A",
+   "wikidata": "Blue Falcon P941 Batman",
+   "evidence": [
+    {
+     "article": "Gary Owens",
+     "sentence": "The series was a parody of Batman, specifically the live-action version starring Adam West."
+    }
+   ],
+   "works": [
+    {
+     "title": "Scooby-Doo! Mask of the Blue Falcon",
+     "year": 2013,
+     "n_sentences": 21,
+     "in_dev": false,
+     "in_t3_pool": false,
+     "t3_eligible": true
+    }
+   ],
+   "t3_positive": true,
+   "dev_franchise": false,
+   "relation_type": null,
+   "relation_type_codes": [],
+   "t3_note": null
+  },
+  {
+   "entity": "Darkwing Duck",
+   "relation": [
+    "derivative"
+   ],
+   "strength": "A",
+   "wikidata": "Darkwing P941 Batman",
+   "evidence": [
+    {
+     "article": "Darkwing Duck",
+     "sentence": "His costume, gas gun and flashy introductions are all reminiscent of pulp heroes and Golden Age superheroes such as The Shadow, The Sandman, Doc Savage, Batman, The Green Hornet and the Julius Schwartz Flash, as well as The Lone Ranger and Zorro."
+    }
+   ],
+   "works": [],
+   "t3_positive": true,
+   "dev_franchise": false,
+   "relation_type": null,
+   "relation_type_codes": [],
+   "t3_note": null
+  },
+  {
+   "entity": "Black Panther (Priest's run)",
+   "relation": [
+    "derivative_partial"
+   ],
+   "strength": "C",
+   "wikidata": null,
+   "evidence": [
+    {
+     "article": "Black Panther (character)",
+     "sentence": "Priest's initial concept was inspired by Batman, but also by one of Batman's nemeses, Ra's al Ghul, the mysterious leader of a League of Assassins."
+    }
+   ],
+   "works": [],
+   "t3_positive": false,
+   "dev_franchise": false,
+   "relation_type": null,
+   "relation_type_codes": [],
+   "t3_note": "not a T3 positive: strength C"
+  },
+  {
+   "entity": "Darkman",
+   "relation": [
+    "sibling"
+   ],
+   "strength": "B",
+   "wikidata": null,
+   "evidence": [
+    {
+     "article": "Darkman",
+     "sentence": "After Raimi's initial desire to adapt The Shadow was turned down by Universal Studios, Raimi instead chose to create an original superhero based on a short story he wrote that paid homage to Universal's horror films of the 1930s."
+    },
+    {
+     "article": "Darkman",
+     "sentence": "Comparison was also drawn to Batman, with Darkman described as \"a non-superpowered man who is a hideous thing who fights crime.\""
+    }
+   ],
+   "works": [
+    {
+     "title": "Darkman",
+     "year": 1990,
+     "n_sentences": 37,
+     "in_dev": false,
+     "in_t3_pool": true,
+     "t3_eligible": true
+    }
+   ],
+   "t3_positive": true,
+   "dev_franchise": false,
+   "relation_type": null,
+   "relation_type_codes": [],
+   "t3_note": null
+  },
+  {
+   "entity": "Puss in Boots (Shrek)",
+   "relation": [
+    "book_tier2",
+    "sibling"
+   ],
+   "strength": "B",
+   "wikidata": null,
+   "evidence": [
+    {
+     "article": "Puss in Boots (Shrek)",
+     "sentence": "Several characters were used as inspirations for Puss's characterization, such as Zorro, James Bond, and Indiana Jones."
+    }
+   ],
+   "works": [
+    {
+     "title": "Puss in Boots (2011 film)",
+     "year": 2011,
+     "n_sentences": 31,
+     "in_dev": false,
+     "in_t3_pool": false,
+     "t3_eligible": true
+    },
+    {
+     "title": "Puss in Boots: The Last Wish",
+     "year": 2022,
+     "n_sentences": 31,
+     "in_dev": false,
+     "in_t3_pool": false,
+     "t3_eligible": true
+    },
+    {
+     "title": "Puss in Boots",
+     "year": 1697,
+     "n_sentences": 17,
+     "in_dev": true,
+     "in_t3_pool": true,
+     "t3_eligible": false
+    }
+   ],
+   "t3_positive": true,
+   "dev_franchise": true,
+   "relation_type": null,
+   "relation_type_codes": [],
+   "t3_note": null
+  },
+  {
+   "entity": "Spider-Man",
+   "relation": [
+    "book_tier2"
+   ],
+   "strength": "book",
+   "wikidata": null,
+   "evidence": [],
+   "works": [
+    {
+     "title": "Spider-Man (2002 film)",
+     "year": 2002,
+     "n_sentences": 38,
+     "in_dev": true,
+     "in_t3_pool": true,
+     "t3_eligible": false
+    },
+    {
+     "title": "Spider-Man 2",
+     "year": 2004,
+     "n_sentences": 34,
+     "in_dev": false,
+     "in_t3_pool": true,
+     "t3_eligible": true
+    },
+    {
+     "title": "The Amazing Spider-Man (film)",
+     "year": 2012,
+     "n_sentences": 30,
+     "in_dev": false,
+     "in_t3_pool": true,
+     "t3_eligible": true
+    },
+    {
+     "title": "Spider-Man: Homecoming",
+     "year": 2017,
+     "n_sentences": 30,
+     "in_dev": false,
+     "in_t3_pool": true,
+     "t3_eligible": true
+    }
+   ],
+   "t3_positive": false,
+   "dev_franchise": true,
+   "relation_type": null,
+   "relation_type_codes": [],
+   "t3_note": "not a T3 positive: strength book"
+  },
+  {
+   "entity": "Daredevil",
+   "relation": [
+    "book_tier2"
+   ],
+   "strength": "book+C",
+   "wikidata": null,
+   "evidence": [
+    {
+     "article": "Daredevil (Marvel Comics character)",
+     "sentence": "Miller believes that, like Batman, Daredevil is driven by his concern for justice, but while Batman is primarily concerned with punishing criminals, Daredevil is more interested in finding redress for victims."
+    }
+   ],
+   "works": [
+    {
+     "title": "Daredevil (film)",
+     "year": 2003,
+     "n_sentences": 30,
+     "in_dev": true,
+     "in_t3_pool": true,
+     "t3_eligible": false
+    }
+   ],
+   "t3_positive": false,
+   "dev_franchise": true,
+   "relation_type": null,
+   "relation_type_codes": [],
+   "t3_note": "not a T3 positive: strength book+C"
+  },
+  {
+   "entity": "John Wick",
+   "relation": [
+    "book_tier2"
+   ],
+   "strength": "book",
+   "wikidata": null,
+   "evidence": [],
+   "works": [
+    {
+     "title": "John Wick (film)",
+     "year": 2014,
+     "n_sentences": 30,
+     "in_dev": false,
+     "in_t3_pool": true,
+     "t3_eligible": true
+    },
+    {
+     "title": "John Wick: Chapter 2",
+     "year": 2017,
+     "n_sentences": 30,
+     "in_dev": false,
+     "in_t3_pool": true,
+     "t3_eligible": true
+    },
+    {
+     "title": "John Wick: Chapter 3 – Parabellum",
+     "year": 2019,
+     "n_sentences": 29,
+     "in_dev": false,
+     "in_t3_pool": false,
+     "t3_eligible": true
+    },
+    {
+     "title": "John Wick: Chapter 4",
+     "year": 2023,
+     "n_sentences": 38,
+     "in_dev": false,
+     "in_t3_pool": true,
+     "t3_eligible": true
+    }
+   ],
+   "t3_positive": false,
+   "dev_franchise": false,
+   "relation_type": null,
+   "relation_type_codes": [],
+   "t3_note": "not a T3 positive: strength book"
+  },
+  {
+   "entity": "Angel (Buffy the Vampire Slayer)",
+   "relation": [
+    "book_tier2"
+   ],
+   "strength": "book",
+   "wikidata": null,
+   "evidence": [],
+   "works": [],
+   "t3_positive": false,
+   "dev_franchise": false,
+   "relation_type": null,
+   "relation_type_codes": [],
+   "t3_note": "not a T3 positive: strength book"
+  }
+ ]
+}

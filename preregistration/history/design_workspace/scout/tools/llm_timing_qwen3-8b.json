@@ -1,0 +1,66 @@
+{
+ "model": "mlx-community/Qwen3-8B-4bit",
+ "story_sentences": 24,
+ "n_memes": 25,
+ "judge_nocache_per_meme_s": 0.421,
+ "judge_nocache_example": {
+  "seconds": 0.423,
+  "prompt_tokens": 516,
+  "prompt_tps": 1301,
+  "gen_tokens": 2,
+  "gen_tps": 121.2,
+  "peak_GB": 5.26
+ },
+ "judge_cached": {
+  "prefill": {
+   "seconds": 0.362,
+   "prompt_tokens": 488,
+   "prompt_tps": 1382,
+   "gen_tokens": 1,
+   "gen_tps": 25157.2,
+   "peak_GB": 5.29
+  },
+  "per_meme_s": 0.122,
+  "total_25_memes_s": 3.42
+ },
+ "judge_cached_answers_sample": {
+  "secret identity": "No.",
+  "origin wound: a parent's death": "Yes.",
+  "heir to a dead parent's fortune": "Yes.",
+  "masked or disguised vigilante": "Yes.",
+  "loyal servant or mentor who raised the hero": "No.",
+  "orphan ward": "No.",
+  "coin flip decides fate": "No.",
+  "fall into a vat of chemicals": "No."
+ },
+ "judge_multimeme_one_call": {
+  "seconds": 2.448,
+  "prompt_tokens": 707,
+  "prompt_tps": 1386,
+  "gen_tokens": 116,
+  "gen_tps": 60.2,
+  "peak_GB": 5.44
+ },
+ "judge_multimeme_sample": "1. yes  \n2. yes  \n3. yes  \n4. no  \n5. no  \n6. no  \n7. no  \n8. no  \n9. yes  \n10. yes  \n11. no  \n12. yes  \n13. yes  \n14. yes  \n15. yes  \n16. yes  \n17. yes  \n18. yes  \n19. yes  \n20. yes  \n21. yes  \n22. yes  \n23. yes  \n24. yes  \n25. yes",
+ "summary_flat": {
+  "seconds": 2.625,
+  "prompt_tokens": 513,
+  "prompt_tps": 1431,
+  "gen_tokens": 136,
+  "gen_tps": 60.3,
+  "peak_GB": 5.44
+ },
+ "summary_recursive_2level": {
+  "seconds": 6.71,
+  "final": {
+   "seconds": 2.432,
+   "prompt_tokens": 247,
+   "prompt_tps": 1115,
+   "gen_tokens": 135,
+   "gen_tps": 61.3,
+   "peak_GB": 5.44
+  }
+ },
+ "summary_recursive_sample": "Ilse, a glassblower, inherits her mother's workshop after her death in a flood. Discovering her mother's bribes, she hides ledgers and sends coded warnings, disrupting the salt merchant's trade. After revealing the magistrate's involvement, Tomas leaves but returns as the island faces a storm. Ilse repairs the lighthouse with her mother's chandelier, saving the town. Uncovering her mother's secret",
+ "peak_GB": 5.44
+}

@@ -1,0 +1,1235 @@
+{
+ "description": "T2 planted-meme design: 120 base plots, each planting 3 of the 24 memes; every meme in exactly 15 plots; no pair of memes in more than 2 plots; memes marked do_not_combine_with in memes_for_tracing.json never share a plot. Genres (12 settings unrelated to Batman, 10 plots each) and writers (W1-W4, independent agent sessions, 30 plots each) are assigned so that no meme meets a genre in more than 2 plots or a writer in more than 5. Each plot is written in 5 versions (planted_story_protocol.md): explicit, banned, implicit, control, decoy.",
+ "seed": 20261020,
+ "genres": [
+  "corporate drama",
+  "epic fantasy",
+  "hard science fiction",
+  "space opera",
+  "contemporary romance",
+  "western",
+  "historical drama in Tang-dynasty China",
+  "family saga on a farm",
+  "cozy village mystery",
+  "sports drama",
+  "hospital drama",
+  "seafaring adventure"
+ ],
+ "writers": [
+  "W1",
+  "W2",
+  "W3",
+  "W4"
+ ],
+ "versions": [
+  "explicit",
+  "banned",
+  "implicit",
+  "control",
+  "decoy"
+ ],
+ "max_plots_per_meme_and_genre": 2,
+ "pair_cooccurrence_max": 2,
+ "plots": [
+  {
+   "plot": "P001",
+   "genre": "seafaring adventure",
+   "writer": "W3",
+   "memes": [
+    "fear_symbol",
+    "morbid_joke",
+    "wealthy_vigilante"
+   ]
+  },
+  {
+   "plot": "P002",
+   "genre": "cozy village mystery",
+   "writer": "W4",
+   "memes": [
+    "fear_symbol",
+    "mass_breakout",
+    "wealthy_vigilante"
+   ]
+  },
+  {
+   "plot": "P003",
+   "genre": "epic fantasy",
+   "writer": "W1",
+   "memes": [
+    "fear_toxin",
+    "hidden_lair",
+    "origin_wound"
+   ]
+  },
+  {
+   "plot": "P004",
+   "genre": "family saga on a farm",
+   "writer": "W3",
+   "memes": [
+    "foppish_facade",
+    "funeral",
+    "origin_wound"
+   ]
+  },
+  {
+   "plot": "P005",
+   "genre": "hard science fiction",
+   "writer": "W3",
+   "memes": [
+    "fear_symbol",
+    "orphan_ward",
+    "revenge_vow"
+   ]
+  },
+  {
+   "plot": "P006",
+   "genre": "family saga on a farm",
+   "writer": "W3",
+   "memes": [
+    "hidden_lair",
+    "vat_of_chemicals",
+    "wealthy_vigilante"
+   ]
+  },
+  {
+   "plot": "P007",
+   "genre": "cozy village mystery",
+   "writer": "W3",
+   "memes": [
+    "butler_raised_him",
+    "hidden_lair",
+    "losing_protege"
+   ]
+  },
+  {
+   "plot": "P008",
+   "genre": "corporate drama",
+   "writer": "W4",
+   "memes": [
+    "antidote_race",
+    "mantle_passed_on",
+    "secret_identity"
+   ]
+  },
+  {
+   "plot": "P009",
+   "genre": "seafaring adventure",
+   "writer": "W1",
+   "memes": [
+    "foppish_facade",
+    "hidden_lair",
+    "vat_of_chemicals"
+   ]
+  },
+  {
+   "plot": "P010",
+   "genre": "hospital drama",
+   "writer": "W2",
+   "memes": [
+    "corrupt_police",
+    "deal_with_devil",
+    "revenge_vow"
+   ]
+  },
+  {
+   "plot": "P011",
+   "genre": "sports drama",
+   "writer": "W4",
+   "memes": [
+    "coin_flip",
+    "funeral",
+    "heir_to_fortune"
+   ]
+  },
+  {
+   "plot": "P012",
+   "genre": "hospital drama",
+   "writer": "W1",
+   "memes": [
+    "heir_to_fortune",
+    "mistaken_twins",
+    "orphan_ward"
+   ]
+  },
+  {
+   "plot": "P013",
+   "genre": "contemporary romance",
+   "writer": "W2",
+   "memes": [
+    "fear_toxin",
+    "hidden_lair",
+    "mantle_passed_on"
+   ]
+  },
+  {
+   "plot": "P014",
+   "genre": "hard science fiction",
+   "writer": "W4",
+   "memes": [
+    "butler_raised_him",
+    "corrupt_police",
+    "foppish_facade"
+   ]
+  },
+  {
+   "plot": "P015",
+   "genre": "family saga on a farm",
+   "writer": "W2",
+   "memes": [
+    "funeral",
+    "morbid_joke",
+    "revenge_vow"
+   ]
+  },
+  {
+   "plot": "P016",
+   "genre": "contemporary romance",
+   "writer": "W4",
+   "memes": [
+    "deal_with_devil",
+    "feigned_death_potion",
+    "hidden_lair"
+   ]
+  },
+  {
+   "plot": "P017",
+   "genre": "hospital drama",
+   "writer": "W1",
+   "memes": [
+    "fear_toxin",
+    "mistaken_twins",
+    "secret_identity"
+   ]
+  },
+  {
+   "plot": "P018",
+   "genre": "hard science fiction",
+   "writer": "W3",
+   "memes": [
+    "corrupt_police",
+    "hidden_lair",
+    "losing_protege"
+   ]
+  },
+  {
+   "plot": "P019",
+   "genre": "hospital drama",
+   "writer": "W3",
+   "memes": [
+    "deal_with_devil",
+    "mantle_passed_on",
+    "orphan_ward"
+   ]
+  },
+  {
+   "plot": "P020",
+   "genre": "corporate drama",
+   "writer": "W3",
+   "memes": [
+    "coin_flip",
+    "heir_to_fortune",
+    "origin_wound"
+   ]
+  },
+  {
+   "plot": "P021",
+   "genre": "family saga on a farm",
+   "writer": "W2",
+   "memes": [
+    "losing_protege",
+    "mistaken_twins",
+    "morbid_joke"
+   ]
+  },
+  {
+   "plot": "P022",
+   "genre": "space opera",
+   "writer": "W2",
+   "memes": [
+    "coin_flip",
+    "feigned_death_potion",
+    "morbid_joke"
+   ]
+  },
+  {
+   "plot": "P023",
+   "genre": "hard science fiction",
+   "writer": "W4",
+   "memes": [
+    "heir_to_fortune",
+    "refuses_to_kill",
+    "vat_of_chemicals"
+   ]
+  },
+  {
+   "plot": "P024",
+   "genre": "contemporary romance",
+   "writer": "W3",
+   "memes": [
+    "antidote_race",
+    "fear_symbol",
+    "mistaken_twins"
+   ]
+  },
+  {
+   "plot": "P025",
+   "genre": "historical drama in Tang-dynasty China",
+   "writer": "W4",
+   "memes": [
+    "coin_flip",
+    "losing_protege",
+    "wealthy_vigilante"
+   ]
+  },
+  {
+   "plot": "P026",
+   "genre": "sports drama",
+   "writer": "W2",
+   "memes": [
+    "foppish_facade",
+    "mass_breakout",
+    "mistaken_twins"
+   ]
+  },
+  {
+   "plot": "P027",
+   "genre": "sports drama",
+   "writer": "W4",
+   "memes": [
+    "coin_flip",
+    "fear_toxin",
+    "feigned_death_potion"
+   ]
+  },
+  {
+   "plot": "P028",
+   "genre": "hard science fiction",
+   "writer": "W3",
+   "memes": [
+    "antidote_race",
+    "fear_symbol",
+    "funeral"
+   ]
+  },
+  {
+   "plot": "P029",
+   "genre": "corporate drama",
+   "writer": "W1",
+   "memes": [
+    "fear_symbol",
+    "feigned_death_potion",
+    "refuses_to_kill"
+   ]
+  },
+  {
+   "plot": "P030",
+   "genre": "space opera",
+   "writer": "W2",
+   "memes": [
+    "antidote_race",
+    "vat_of_chemicals",
+    "wealthy_vigilante"
+   ]
+  },
+  {
+   "plot": "P031",
+   "genre": "epic fantasy",
+   "writer": "W2",
+   "memes": [
+    "fear_symbol",
+    "mantle_passed_on",
+    "origin_wound"
+   ]
+  },
+  {
+   "plot": "P032",
+   "genre": "contemporary romance",
+   "writer": "W3",
+   "memes": [
+    "fear_toxin",
+    "heir_to_fortune",
+    "mantle_passed_on"
+   ]
+  },
+  {
+   "plot": "P033",
+   "genre": "sports drama",
+   "writer": "W4",
+   "memes": [
+    "deal_with_devil",
+    "hidden_lair",
+    "origin_wound"
+   ]
+  },
+  {
+   "plot": "P034",
+   "genre": "hard science fiction",
+   "writer": "W3",
+   "memes": [
+    "origin_wound",
+    "secret_identity",
+    "vat_of_chemicals"
+   ]
+  },
+  {
+   "plot": "P035",
+   "genre": "corporate drama",
+   "writer": "W3",
+   "memes": [
+    "foppish_facade",
+    "mistaken_twins",
+    "revenge_vow"
+   ]
+  },
+  {
+   "plot": "P036",
+   "genre": "western",
+   "writer": "W1",
+   "memes": [
+    "antidote_race",
+    "hidden_lair",
+    "mistaken_twins"
+   ]
+  },
+  {
+   "plot": "P037",
+   "genre": "family saga on a farm",
+   "writer": "W4",
+   "memes": [
+    "antidote_race",
+    "mass_breakout",
+    "wealthy_vigilante"
+   ]
+  },
+  {
+   "plot": "P038",
+   "genre": "hard science fiction",
+   "writer": "W2",
+   "memes": [
+    "antidote_race",
+    "heir_to_fortune",
+    "orphan_ward"
+   ]
+  },
+  {
+   "plot": "P039",
+   "genre": "hospital drama",
+   "writer": "W4",
+   "memes": [
+    "corrupt_police",
+    "hidden_lair",
+    "wealthy_vigilante"
+   ]
+  },
+  {
+   "plot": "P040",
+   "genre": "hospital drama",
+   "writer": "W1",
+   "memes": [
+    "mantle_passed_on",
+    "secret_identity",
+    "vat_of_chemicals"
+   ]
+  },
+  {
+   "plot": "P041",
+   "genre": "cozy village mystery",
+   "writer": "W4",
+   "memes": [
+    "feigned_death_potion",
+    "mass_breakout",
+    "vat_of_chemicals"
+   ]
+  },
+  {
+   "plot": "P042",
+   "genre": "western",
+   "writer": "W1",
+   "memes": [
+    "funeral",
+    "losing_protege",
+    "orphan_ward"
+   ]
+  },
+  {
+   "plot": "P043",
+   "genre": "space opera",
+   "writer": "W2",
+   "memes": [
+    "feigned_death_potion",
+    "morbid_joke",
+    "origin_wound"
+   ]
+  },
+  {
+   "plot": "P044",
+   "genre": "historical drama in Tang-dynasty China",
+   "writer": "W3",
+   "memes": [
+    "funeral",
+    "losing_protege",
+    "mass_breakout"
+   ]
+  },
+  {
+   "plot": "P045",
+   "genre": "cozy village mystery",
+   "writer": "W4",
+   "memes": [
+    "deal_with_devil",
+    "feigned_death_potion",
+    "origin_wound"
+   ]
+  },
+  {
+   "plot": "P046",
+   "genre": "space opera",
+   "writer": "W3",
+   "memes": [
+    "mass_breakout",
+    "orphan_ward",
+    "secret_identity"
+   ]
+  },
+  {
+   "plot": "P047",
+   "genre": "seafaring adventure",
+   "writer": "W3",
+   "memes": [
+    "butler_raised_him",
+    "mantle_passed_on",
+    "mistaken_twins"
+   ]
+  },
+  {
+   "plot": "P048",
+   "genre": "space opera",
+   "writer": "W3",
+   "memes": [
+    "foppish_facade",
+    "funeral",
+    "origin_wound"
+   ]
+  },
+  {
+   "plot": "P049",
+   "genre": "cozy village mystery",
+   "writer": "W2",
+   "memes": [
+    "fear_toxin",
+    "losing_protege",
+    "secret_identity"
+   ]
+  },
+  {
+   "plot": "P050",
+   "genre": "hospital drama",
+   "writer": "W1",
+   "memes": [
+    "fear_symbol",
+    "losing_protege",
+    "morbid_joke"
+   ]
+  },
+  {
+   "plot": "P051",
+   "genre": "contemporary romance",
+   "writer": "W3",
+   "memes": [
+    "feigned_death_potion",
+    "orphan_ward",
+    "secret_identity"
+   ]
+  },
+  {
+   "plot": "P052",
+   "genre": "historical drama in Tang-dynasty China",
+   "writer": "W1",
+   "memes": [
+    "corrupt_police",
+    "deal_with_devil",
+    "wealthy_vigilante"
+   ]
+  },
+  {
+   "plot": "P053",
+   "genre": "family saga on a farm",
+   "writer": "W2",
+   "memes": [
+    "fear_toxin",
+    "orphan_ward",
+    "refuses_to_kill"
+   ]
+  },
+  {
+   "plot": "P054",
+   "genre": "sports drama",
+   "writer": "W4",
+   "memes": [
+    "butler_raised_him",
+    "foppish_facade",
+    "revenge_vow"
+   ]
+  },
+  {
+   "plot": "P055",
+   "genre": "epic fantasy",
+   "writer": "W4",
+   "memes": [
+    "corrupt_police",
+    "morbid_joke",
+    "secret_identity"
+   ]
+  },
+  {
+   "plot": "P056",
+   "genre": "western",
+   "writer": "W1",
+   "memes": [
+    "fear_toxin",
+    "foppish_facade",
+    "morbid_joke"
+   ]
+  },
+  {
+   "plot": "P057",
+   "genre": "space opera",
+   "writer": "W1",
+   "memes": [
+    "antidote_race",
+    "corrupt_police",
+    "revenge_vow"
+   ]
+  },
+  {
+   "plot": "P058",
+   "genre": "epic fantasy",
+   "writer": "W1",
+   "memes": [
+    "antidote_race",
+    "deal_with_devil",
+    "secret_identity"
+   ]
+  },
+  {
+   "plot": "P059",
+   "genre": "family saga on a farm",
+   "writer": "W1",
+   "memes": [
+    "fear_symbol",
+    "feigned_death_potion",
+    "losing_protege"
+   ]
+  },
+  {
+   "plot": "P060",
+   "genre": "contemporary romance",
+   "writer": "W1",
+   "memes": [
+    "corrupt_police",
+    "losing_protege",
+    "origin_wound"
+   ]
+  },
+  {
+   "plot": "P061",
+   "genre": "sports drama",
+   "writer": "W4",
+   "memes": [
+    "deal_with_devil",
+    "mantle_passed_on",
+    "morbid_joke"
+   ]
+  },
+  {
+   "plot": "P062",
+   "genre": "seafaring adventure",
+   "writer": "W1",
+   "memes": [
+    "mantle_passed_on",
+    "morbid_joke",
+    "revenge_vow"
+   ]
+  },
+  {
+   "plot": "P063",
+   "genre": "cozy village mystery",
+   "writer": "W2",
+   "memes": [
+    "coin_flip",
+    "deal_with_devil",
+    "fear_symbol"
+   ]
+  },
+  {
+   "plot": "P064",
+   "genre": "western",
+   "writer": "W1",
+   "memes": [
+    "antidote_race",
+    "coin_flip",
+    "morbid_joke"
+   ]
+  },
+  {
+   "plot": "P065",
+   "genre": "corporate drama",
+   "writer": "W1",
+   "memes": [
+    "butler_raised_him",
+    "feigned_death_potion",
+    "wealthy_vigilante"
+   ]
+  },
+  {
+   "plot": "P066",
+   "genre": "western",
+   "writer": "W3",
+   "memes": [
+    "corrupt_police",
+    "foppish_facade",
+    "heir_to_fortune"
+   ]
+  },
+  {
+   "plot": "P067",
+   "genre": "western",
+   "writer": "W4",
+   "memes": [
+    "deal_with_devil",
+    "orphan_ward",
+    "revenge_vow"
+   ]
+  },
+  {
+   "plot": "P068",
+   "genre": "historical drama in Tang-dynasty China",
+   "writer": "W2",
+   "memes": [
+    "corrupt_police",
+    "morbid_joke",
+    "secret_identity"
+   ]
+  },
+  {
+   "plot": "P069",
+   "genre": "corporate drama",
+   "writer": "W2",
+   "memes": [
+    "fear_toxin",
+    "foppish_facade",
+    "orphan_ward"
+   ]
+  },
+  {
+   "plot": "P070",
+   "genre": "cozy village mystery",
+   "writer": "W4",
+   "memes": [
+    "funeral",
+    "hidden_lair",
+    "revenge_vow"
+   ]
+  },
+  {
+   "plot": "P071",
+   "genre": "seafaring adventure",
+   "writer": "W3",
+   "memes": [
+    "antidote_race",
+    "butler_raised_him",
+    "losing_protege"
+   ]
+  },
+  {
+   "plot": "P072",
+   "genre": "historical drama in Tang-dynasty China",
+   "writer": "W1",
+   "memes": [
+    "funeral",
+    "hidden_lair",
+    "mistaken_twins"
+   ]
+  },
+  {
+   "plot": "P073",
+   "genre": "space opera",
+   "writer": "W1",
+   "memes": [
+    "deal_with_devil",
+    "fear_symbol",
+    "mistaken_twins"
+   ]
+  },
+  {
+   "plot": "P074",
+   "genre": "hard science fiction",
+   "writer": "W4",
+   "memes": [
+    "mistaken_twins",
+    "morbid_joke",
+    "origin_wound"
+   ]
+  },
+  {
+   "plot": "P075",
+   "genre": "epic fantasy",
+   "writer": "W3",
+   "memes": [
+    "coin_flip",
+    "mistaken_twins",
+    "wealthy_vigilante"
+   ]
+  },
+  {
+   "plot": "P076",
+   "genre": "sports drama",
+   "writer": "W2",
+   "memes": [
+    "fear_symbol",
+    "orphan_ward",
+    "vat_of_chemicals"
+   ]
+  },
+  {
+   "plot": "P077",
+   "genre": "epic fantasy",
+   "writer": "W1",
+   "memes": [
+    "butler_raised_him",
+    "refuses_to_kill",
+    "wealthy_vigilante"
+   ]
+  },
+  {
+   "plot": "P078",
+   "genre": "contemporary romance",
+   "writer": "W1",
+   "memes": [
+    "funeral",
+    "heir_to_fortune",
+    "mass_breakout"
+   ]
+  },
+  {
+   "plot": "P079",
+   "genre": "epic fantasy",
+   "writer": "W2",
+   "memes": [
+    "foppish_facade",
+    "heir_to_fortune",
+    "mass_breakout"
+   ]
+  },
+  {
+   "plot": "P080",
+   "genre": "cozy village mystery",
+   "writer": "W2",
+   "memes": [
+    "butler_raised_him",
+    "corrupt_police",
+    "heir_to_fortune"
+   ]
+  },
+  {
+   "plot": "P081",
+   "genre": "contemporary romance",
+   "writer": "W2",
+   "memes": [
+    "coin_flip",
+    "fear_symbol",
+    "refuses_to_kill"
+   ]
+  },
+  {
+   "plot": "P082",
+   "genre": "hospital drama",
+   "writer": "W1",
+   "memes": [
+    "butler_raised_him",
+    "coin_flip",
+    "revenge_vow"
+   ]
+  },
+  {
+   "plot": "P083",
+   "genre": "sports drama",
+   "writer": "W2",
+   "memes": [
+    "corrupt_police",
+    "fear_symbol",
+    "funeral"
+   ]
+  },
+  {
+   "plot": "P084",
+   "genre": "historical drama in Tang-dynasty China",
+   "writer": "W3",
+   "memes": [
+    "feigned_death_potion",
+    "heir_to_fortune",
+    "refuses_to_kill"
+   ]
+  },
+  {
+   "plot": "P085",
+   "genre": "space opera",
+   "writer": "W2",
+   "memes": [
+    "deal_with_devil",
+    "funeral",
+    "mistaken_twins"
+   ]
+  },
+  {
+   "plot": "P086",
+   "genre": "seafaring adventure",
+   "writer": "W4",
+   "memes": [
+    "fear_toxin",
+    "heir_to_fortune",
+    "vat_of_chemicals"
+   ]
+  },
+  {
+   "plot": "P087",
+   "genre": "family saga on a farm",
+   "writer": "W2",
+   "memes": [
+    "antidote_race",
+    "orphan_ward",
+    "vat_of_chemicals"
+   ]
+  },
+  {
+   "plot": "P088",
+   "genre": "family saga on a farm",
+   "writer": "W4",
+   "memes": [
+    "butler_raised_him",
+    "heir_to_fortune",
+    "secret_identity"
+   ]
+  },
+  {
+   "plot": "P089",
+   "genre": "historical drama in Tang-dynasty China",
+   "writer": "W2",
+   "memes": [
+    "foppish_facade",
+    "mantle_passed_on",
+    "refuses_to_kill"
+   ]
+  },
+  {
+   "plot": "P090",
+   "genre": "corporate drama",
+   "writer": "W1",
+   "memes": [
+    "corrupt_police",
+    "fear_symbol",
+    "mantle_passed_on"
+   ]
+  },
+  {
+   "plot": "P091",
+   "genre": "corporate drama",
+   "writer": "W2",
+   "memes": [
+    "heir_to_fortune",
+    "losing_protege",
+    "secret_identity"
+   ]
+  },
+  {
+   "plot": "P092",
+   "genre": "contemporary romance",
+   "writer": "W2",
+   "memes": [
+    "butler_raised_him",
+    "mass_breakout",
+    "secret_identity"
+   ]
+  },
+  {
+   "plot": "P093",
+   "genre": "seafaring adventure",
+   "writer": "W3",
+   "memes": [
+    "refuses_to_kill",
+    "revenge_vow",
+    "secret_identity"
+   ]
+  },
+  {
+   "plot": "P094",
+   "genre": "family saga on a farm",
+   "writer": "W1",
+   "memes": [
+    "deal_with_devil",
+    "mass_breakout",
+    "refuses_to_kill"
+   ]
+  },
+  {
+   "plot": "P095",
+   "genre": "epic fantasy",
+   "writer": "W4",
+   "memes": [
+    "corrupt_police",
+    "feigned_death_potion",
+    "orphan_ward"
+   ]
+  },
+  {
+   "plot": "P096",
+   "genre": "western",
+   "writer": "W3",
+   "memes": [
+    "feigned_death_potion",
+    "hidden_lair",
+    "mass_breakout"
+   ]
+  },
+  {
+   "plot": "P097",
+   "genre": "corporate drama",
+   "writer": "W4",
+   "memes": [
+    "mistaken_twins",
+    "refuses_to_kill",
+    "wealthy_vigilante"
+   ]
+  },
+  {
+   "plot": "P098",
+   "genre": "seafaring adventure",
+   "writer": "W1",
+   "memes": [
+    "deal_with_devil",
+    "fear_toxin",
+    "funeral"
+   ]
+  },
+  {
+   "plot": "P099",
+   "genre": "historical drama in Tang-dynasty China",
+   "writer": "W3",
+   "memes": [
+    "feigned_death_potion",
+    "mantle_passed_on",
+    "vat_of_chemicals"
+   ]
+  },
+  {
+   "plot": "P100",
+   "genre": "hospital drama",
+   "writer": "W3",
+   "memes": [
+    "antidote_race",
+    "foppish_facade",
+    "refuses_to_kill"
+   ]
+  },
+  {
+   "plot": "P101",
+   "genre": "epic fantasy",
+   "writer": "W4",
+   "memes": [
+    "coin_flip",
+    "mantle_passed_on",
+    "revenge_vow"
+   ]
+  },
+  {
+   "plot": "P102",
+   "genre": "cozy village mystery",
+   "writer": "W4",
+   "memes": [
+    "fear_toxin",
+    "funeral",
+    "vat_of_chemicals"
+   ]
+  },
+  {
+   "plot": "P103",
+   "genre": "western",
+   "writer": "W1",
+   "memes": [
+    "butler_raised_him",
+    "coin_flip",
+    "refuses_to_kill"
+   ]
+  },
+  {
+   "plot": "P104",
+   "genre": "seafaring adventure",
+   "writer": "W2",
+   "memes": [
+    "coin_flip",
+    "deal_with_devil",
+    "foppish_facade"
+   ]
+  },
+  {
+   "plot": "P105",
+   "genre": "space opera",
+   "writer": "W2",
+   "memes": [
+    "fear_toxin",
+    "refuses_to_kill",
+    "revenge_vow"
+   ]
+  },
+  {
+   "plot": "P106",
+   "genre": "western",
+   "writer": "W1",
+   "memes": [
+    "mantle_passed_on",
+    "mass_breakout",
+    "refuses_to_kill"
+   ]
+  },
+  {
+   "plot": "P107",
+   "genre": "sports drama",
+   "writer": "W4",
+   "memes": [
+    "butler_raised_him",
+    "fear_toxin",
+    "mass_breakout"
+   ]
+  },
+  {
+   "plot": "P108",
+   "genre": "corporate drama",
+   "writer": "W2",
+   "memes": [
+    "corrupt_police",
+    "mass_breakout",
+    "origin_wound"
+   ]
+  },
+  {
+   "plot": "P109",
+   "genre": "epic fantasy",
+   "writer": "W2",
+   "memes": [
+    "antidote_race",
+    "heir_to_fortune",
+    "losing_protege"
+   ]
+  },
+  {
+   "plot": "P110",
+   "genre": "sports drama",
+   "writer": "W4",
+   "memes": [
+    "mistaken_twins",
+    "origin_wound",
+    "secret_identity"
+   ]
+  },
+  {
+   "plot": "P111",
+   "genre": "western",
+   "writer": "W3",
+   "memes": [
+    "losing_protege",
+    "origin_wound",
+    "wealthy_vigilante"
+   ]
+  },
+  {
+   "plot": "P112",
+   "genre": "contemporary romance",
+   "writer": "W2",
+   "memes": [
+    "butler_raised_him",
+    "origin_wound",
+    "vat_of_chemicals"
+   ]
+  },
+  {
+   "plot": "P113",
+   "genre": "hard science fiction",
+   "writer": "W3",
+   "memes": [
+    "hidden_lair",
+    "morbid_joke",
+    "refuses_to_kill"
+   ]
+  },
+  {
+   "plot": "P114",
+   "genre": "hospital drama",
+   "writer": "W4",
+   "memes": [
+    "butler_raised_him",
+    "fear_toxin",
+    "morbid_joke"
+   ]
+  },
+  {
+   "plot": "P115",
+   "genre": "hard science fiction",
+   "writer": "W1",
+   "memes": [
+    "feigned_death_potion",
+    "revenge_vow",
+    "wealthy_vigilante"
+   ]
+  },
+  {
+   "plot": "P116",
+   "genre": "cozy village mystery",
+   "writer": "W3",
+   "memes": [
+    "antidote_race",
+    "coin_flip",
+    "mantle_passed_on"
+   ]
+  },
+  {
+   "plot": "P117",
+   "genre": "historical drama in Tang-dynasty China",
+   "writer": "W1",
+   "memes": [
+    "mass_breakout",
+    "revenge_vow",
+    "vat_of_chemicals"
+   ]
+  },
+  {
+   "plot": "P118",
+   "genre": "historical drama in Tang-dynasty China",
+   "writer": "W4",
+   "memes": [
+    "foppish_facade",
+    "hidden_lair",
+    "orphan_ward"
+   ]
+  },
+  {
+   "plot": "P119",
+   "genre": "space opera",
+   "writer": "W4",
+   "memes": [
+    "coin_flip",
+    "losing_protege",
+    "vat_of_chemicals"
+   ]
+  },
+  {
+   "plot": "P120",
+   "genre": "seafaring adventure",
+   "writer": "W3",
+   "memes": [
+    "funeral",
+    "orphan_ward",
+    "wealthy_vigilante"
+   ]
+  }
+ ]
+}

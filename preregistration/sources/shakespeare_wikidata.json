@@ -1,0 +1,4582 @@
+{
+ "play_qids": {
+  "All's Well": "Q506865",
+  "As You Like It": "Q237572",
+  "Comedy of Errors": "Q506505",
+  "Love's Labour's Lost": "Q128610",
+  "Measure for Measure": "Q665446",
+  "Merchant of Venice": "Q206400",
+  "Merry Wives": "Q844836",
+  "Midsummer Night's Dream": "Q104871",
+  "Much Ado": "Q130851",
+  "Taming of the Shrew": "Q332387",
+  "Twelfth Night": "Q221211",
+  "Two Gentlemen": "Q232042",
+  "Two Noble Kinsmen": "Q53590",
+  "Winter's Tale": "Q743194",
+  "Cymbeline": "Q730212",
+  "Pericles": "Q584729",
+  "The Tempest": "Q86440",
+  "Troilus and Cressida": "Q183304",
+  "King John": "Q661222",
+  "Richard II": "Q649562",
+  "Henry IV Part 1": "Q631855",
+  "Henry IV Part 2": "Q1232349",
+  "Henry V": "Q495954",
+  "Henry VI Part 1": "Q643236",
+  "Henry VI Part 2": "Q1236216",
+  "Henry VI Part 3": "Q1241754",
+  "Richard III": "Q652011",
+  "Henry VIII": "Q672059",
+  "Edward III": "Q1232635",
+  "Titus Andronicus": "Q272169",
+  "Romeo and Juliet": "Q83186",
+  "Julius Caesar": "Q215750",
+  "Hamlet": "Q41567",
+  "Othello": "Q26833",
+  "King Lear": "Q181598",
+  "Macbeth": "Q130283",
+  "Antony and Cleopatra": "Q606830",
+  "Coriolanus": "Q463126",
+  "Timon of Athens": "Q284641",
+  "Sir Thomas More": "Q542055"
+ },
+ "links": [
+  {
+   "play": "All's Well",
+   "play_qid": "Q506865",
+   "prop": "P144",
+   "qid": "Q47425503",
+   "title": null
+  },
+  {
+   "play": "All's Well",
+   "play_qid": "Q506865",
+   "prop": "P144",
+   "qid": "Q55964658",
+   "title": null
+  },
+  {
+   "play": "As You Like It",
+   "play_qid": "Q237572",
+   "prop": "P144",
+   "qid": "Q23691618",
+   "title": null
+  },
+  {
+   "play": "As You Like It",
+   "play_qid": "Q237572",
+   "prop": "P144",
+   "qid": "Q47439593",
+   "title": null
+  },
+  {
+   "play": "As You Like It",
+   "play_qid": "Q237572",
+   "prop": "P144",
+   "qid": "Q47439657",
+   "title": null
+  },
+  {
+   "play": "As You Like It",
+   "play_qid": "Q237572",
+   "prop": "P144",
+   "qid": "Q55962793",
+   "title": null
+  },
+  {
+   "play": "As You Like It",
+   "play_qid": "Q237572",
+   "prop": "P144",
+   "qid": "Q81533049",
+   "title": null
+  },
+  {
+   "play": "As You Like It",
+   "play_qid": "Q237572",
+   "prop": "P144",
+   "qid": "Q122913173",
+   "title": null
+  },
+  {
+   "play": "As You Like It",
+   "play_qid": "Q237572",
+   "prop": "P144",
+   "qid": "Q122913338",
+   "title": null
+  },
+  {
+   "play": "As You Like It",
+   "play_qid": "Q237572",
+   "prop": "P144",
+   "qid": "Q122913389",
+   "title": null
+  },
+  {
+   "play": "As You Like It",
+   "play_qid": "Q237572",
+   "prop": "P144",
+   "qid": "Q125354374",
+   "title": null
+  },
+  {
+   "play": "As You Like It",
+   "play_qid": "Q237572",
+   "prop": "P144",
+   "qid": "Q135225268",
+   "title": null
+  },
+  {
+   "play": "As You Like It",
+   "play_qid": "Q237572",
+   "prop": "P144",
+   "qid": "Q136839457",
+   "title": null
+  },
+  {
+   "play": "As You Like It",
+   "play_qid": "Q237572",
+   "prop": "P144",
+   "qid": "Q136839490",
+   "title": null
+  },
+  {
+   "play": "As You Like It",
+   "play_qid": "Q237572",
+   "prop": "P144",
+   "qid": "Q137049960",
+   "title": null
+  },
+  {
+   "play": "As You Like It",
+   "play_qid": "Q237572",
+   "prop": "P144",
+   "qid": "Q137198621",
+   "title": null
+  },
+  {
+   "play": "As You Like It",
+   "play_qid": "Q237572",
+   "prop": "P144",
+   "qid": "Q137201029",
+   "title": null
+  },
+  {
+   "play": "As You Like It",
+   "play_qid": "Q237572",
+   "prop": "P144",
+   "qid": "Q137285514",
+   "title": null
+  },
+  {
+   "play": "As You Like It",
+   "play_qid": "Q237572",
+   "prop": "P144",
+   "qid": "Q2292697",
+   "title": "As You Like It (2006 film)"
+  },
+  {
+   "play": "As You Like It",
+   "play_qid": "Q237572",
+   "prop": "P144",
+   "qid": "Q3005588",
+   "title": "Shakespeare: The Animated Tales"
+  },
+  {
+   "play": "As You Like It",
+   "play_qid": "Q237572",
+   "prop": "P144",
+   "qid": "Q16679772",
+   "title": "The Seven Ages (film)"
+  },
+  {
+   "play": "As You Like It",
+   "play_qid": "Q237572",
+   "prop": "P144",
+   "qid": "Q117210024",
+   "title": "As You Like It (1991 film)"
+  },
+  {
+   "play": "Comedy of Errors",
+   "play_qid": "Q506505",
+   "prop": "P144",
+   "qid": "Q4229505",
+   "title": null
+  },
+  {
+   "play": "Comedy of Errors",
+   "play_qid": "Q506505",
+   "prop": "P144",
+   "qid": "Q47430252",
+   "title": null
+  },
+  {
+   "play": "Comedy of Errors",
+   "play_qid": "Q506505",
+   "prop": "P144",
+   "qid": "Q55947259",
+   "title": null
+  },
+  {
+   "play": "Comedy of Errors",
+   "play_qid": "Q506505",
+   "prop": "P144",
+   "qid": "Q114771210",
+   "title": null
+  },
+  {
+   "play": "Comedy of Errors",
+   "play_qid": "Q506505",
+   "prop": "P144",
+   "qid": "Q135225268",
+   "title": null
+  },
+  {
+   "play": "Comedy of Errors",
+   "play_qid": "Q506505",
+   "prop": "P144",
+   "qid": "Q137052481",
+   "title": null
+  },
+  {
+   "play": "Comedy of Errors",
+   "play_qid": "Q506505",
+   "prop": "P144",
+   "qid": "Q139955258",
+   "title": null
+  },
+  {
+   "play": "Comedy of Errors",
+   "play_qid": "Q506505",
+   "prop": "P144",
+   "qid": "Q163844",
+   "title": "The Boys from Syracuse"
+  },
+  {
+   "play": "Comedy of Errors",
+   "play_qid": "Q506505",
+   "prop": "P144",
+   "qid": "Q5569536",
+   "title": "Gli equivoci"
+  },
+  {
+   "play": "Comedy of Errors",
+   "play_qid": "Q506505",
+   "prop": "P144",
+   "qid": "Q7719064",
+   "title": "The Bomb-itty of Errors"
+  },
+  {
+   "play": "Comedy of Errors",
+   "play_qid": "Q506505",
+   "prop": "P144",
+   "qid": "Q39088217",
+   "title": "Pozdvižení v Efesu"
+  },
+  {
+   "play": "Love's Labour's Lost",
+   "play_qid": "Q128610",
+   "prop": "P144",
+   "qid": "Q2064278",
+   "title": "Love's Labour's Lost (film)"
+  },
+  {
+   "play": "Measure for Measure",
+   "play_qid": "Q665446",
+   "prop": "P144",
+   "qid": "Q47432758",
+   "title": null
+  },
+  {
+   "play": "Measure for Measure",
+   "play_qid": "Q665446",
+   "prop": "P144",
+   "qid": "Q47432804",
+   "title": null
+  },
+  {
+   "play": "Measure for Measure",
+   "play_qid": "Q665446",
+   "prop": "P144",
+   "qid": "Q55963070",
+   "title": null
+  },
+  {
+   "play": "Measure for Measure",
+   "play_qid": "Q665446",
+   "prop": "P144",
+   "qid": "Q122913367",
+   "title": null
+  },
+  {
+   "play": "Measure for Measure",
+   "play_qid": "Q665446",
+   "prop": "P144",
+   "qid": "Q122914001",
+   "title": null
+  },
+  {
+   "play": "Measure for Measure",
+   "play_qid": "Q665446",
+   "prop": "P144",
+   "qid": "Q136839474",
+   "title": null
+  },
+  {
+   "play": "Measure for Measure",
+   "play_qid": "Q665446",
+   "prop": "P144",
+   "qid": "Q137201011",
+   "title": null
+  },
+  {
+   "play": "Measure for Measure",
+   "play_qid": "Q665446",
+   "prop": "P144",
+   "qid": "Q4281369",
+   "title": "Mariana (Millais)"
+  },
+  {
+   "play": "Measure for Measure",
+   "play_qid": "Q665446",
+   "prop": "P144",
+   "qid": "Q18689512",
+   "title": "Claudio and Isabella"
+  },
+  {
+   "play": "Measure for Measure",
+   "play_qid": "Q665446",
+   "prop": "P941",
+   "qid": "Q4281369",
+   "title": "Mariana (Millais)"
+  },
+  {
+   "play": "Merchant of Venice",
+   "play_qid": "Q206400",
+   "prop": "P144",
+   "qid": "Q1089364",
+   "title": null
+  },
+  {
+   "play": "Merchant of Venice",
+   "play_qid": "Q206400",
+   "prop": "P144",
+   "qid": "Q6051141",
+   "title": null
+  },
+  {
+   "play": "Merchant of Venice",
+   "play_qid": "Q206400",
+   "prop": "P144",
+   "qid": "Q12323430",
+   "title": null
+  },
+  {
+   "play": "Merchant of Venice",
+   "play_qid": "Q206400",
+   "prop": "P144",
+   "qid": "Q38275306",
+   "title": null
+  },
+  {
+   "play": "Merchant of Venice",
+   "play_qid": "Q206400",
+   "prop": "P144",
+   "qid": "Q47414626",
+   "title": null
+  },
+  {
+   "play": "Merchant of Venice",
+   "play_qid": "Q206400",
+   "prop": "P144",
+   "qid": "Q60839326",
+   "title": null
+  },
+  {
+   "play": "Merchant of Venice",
+   "play_qid": "Q206400",
+   "prop": "P144",
+   "qid": "Q60839324",
+   "title": null
+  },
+  {
+   "play": "Merchant of Venice",
+   "play_qid": "Q206400",
+   "prop": "P144",
+   "qid": "Q60839334",
+   "title": null
+  },
+  {
+   "play": "Merchant of Venice",
+   "play_qid": "Q206400",
+   "prop": "P144",
+   "qid": "Q60839443",
+   "title": null
+  },
+  {
+   "play": "Merchant of Venice",
+   "play_qid": "Q206400",
+   "prop": "P144",
+   "qid": "Q60854356",
+   "title": null
+  },
+  {
+   "play": "Merchant of Venice",
+   "play_qid": "Q206400",
+   "prop": "P144",
+   "qid": "Q81418590",
+   "title": null
+  },
+  {
+   "play": "Merchant of Venice",
+   "play_qid": "Q206400",
+   "prop": "P144",
+   "qid": "Q109002417",
+   "title": null
+  },
+  {
+   "play": "Merchant of Venice",
+   "play_qid": "Q206400",
+   "prop": "P144",
+   "qid": "Q109242210",
+   "title": null
+  },
+  {
+   "play": "Merchant of Venice",
+   "play_qid": "Q206400",
+   "prop": "P144",
+   "qid": "Q109242616",
+   "title": null
+  },
+  {
+   "play": "Merchant of Venice",
+   "play_qid": "Q206400",
+   "prop": "P144",
+   "qid": "Q110835486",
+   "title": null
+  },
+  {
+   "play": "Merchant of Venice",
+   "play_qid": "Q206400",
+   "prop": "P144",
+   "qid": "Q122914034",
+   "title": null
+  },
+  {
+   "play": "Merchant of Venice",
+   "play_qid": "Q206400",
+   "prop": "P144",
+   "qid": "Q140308928",
+   "title": null
+  },
+  {
+   "play": "Merchant of Venice",
+   "play_qid": "Q206400",
+   "prop": "P144",
+   "qid": "Q673821",
+   "title": "The Merchant of Venice (2004 film)"
+  },
+  {
+   "play": "Merchant of Venice",
+   "play_qid": "Q206400",
+   "prop": "P144",
+   "qid": "Q7506012",
+   "title": "Shylock (musical)"
+  },
+  {
+   "play": "Merchant of Venice",
+   "play_qid": "Q206400",
+   "prop": "P144",
+   "qid": "Q7506016",
+   "title": "Shylock (play)"
+  },
+  {
+   "play": "Merchant of Venice",
+   "play_qid": "Q206400",
+   "prop": "P144",
+   "qid": "Q7751039",
+   "title": "The Merchant of Venice (1916 film)"
+  },
+  {
+   "play": "Merchant of Venice",
+   "play_qid": "Q206400",
+   "prop": "P144",
+   "qid": "Q12024579",
+   "title": "Jessika (opera)"
+  },
+  {
+   "play": "Merchant of Venice",
+   "play_qid": "Q206400",
+   "prop": "P144",
+   "qid": "Q19891343",
+   "title": "Dil Farosh"
+  },
+  {
+   "play": "Merchant of Venice",
+   "play_qid": "Q206400",
+   "prop": "P144",
+   "qid": "Q102405567",
+   "title": "The Serpent of Venice"
+  },
+  {
+   "play": "Merry Wives",
+   "play_qid": "Q844836",
+   "prop": "P144",
+   "qid": "Q31184773",
+   "title": null
+  },
+  {
+   "play": "Merry Wives",
+   "play_qid": "Q844836",
+   "prop": "P144",
+   "qid": "Q47421053",
+   "title": null
+  },
+  {
+   "play": "Merry Wives",
+   "play_qid": "Q844836",
+   "prop": "P144",
+   "qid": "Q318455",
+   "title": "Falstaff (opera)"
+  },
+  {
+   "play": "Merry Wives",
+   "play_qid": "Q844836",
+   "prop": "P144",
+   "qid": "Q615663",
+   "title": "The Merry Wives of Windsor (opera)"
+  },
+  {
+   "play": "Midsummer Night's Dream",
+   "play_qid": "Q104871",
+   "prop": "P144",
+   "qid": "Q605750",
+   "title": "A Midsummer Night's Dream (opera)"
+  },
+  {
+   "play": "Midsummer Night's Dream",
+   "play_qid": "Q104871",
+   "prop": "P144",
+   "qid": "Q1305191",
+   "title": "A Midsummer Night's Dream (1935 film)"
+  },
+  {
+   "play": "Midsummer Night's Dream",
+   "play_qid": "Q104871",
+   "prop": "P144",
+   "qid": "Q1305200",
+   "title": "A Midsummer Night's Dream (1999 film)"
+  },
+  {
+   "play": "Midsummer Night's Dream",
+   "play_qid": "Q104871",
+   "prop": "P144",
+   "qid": "Q1305214",
+   "title": "A Midsummer Night's Dream (Mendelssohn)"
+  },
+  {
+   "play": "Midsummer Night's Dream",
+   "play_qid": "Q104871",
+   "prop": "P144",
+   "qid": "Q2342350",
+   "title": "The Enchanted Island (2011 opera)"
+  },
+  {
+   "play": "Midsummer Night's Dream",
+   "play_qid": "Q104871",
+   "prop": "P144",
+   "qid": "Q2743188",
+   "title": "The Fairy-Queen"
+  },
+  {
+   "play": "Midsummer Night's Dream",
+   "play_qid": "Q104871",
+   "prop": "P144",
+   "qid": "Q333566",
+   "title": null
+  },
+  {
+   "play": "Midsummer Night's Dream",
+   "play_qid": "Q104871",
+   "prop": "P144",
+   "qid": "Q10483400",
+   "title": null
+  },
+  {
+   "play": "Midsummer Night's Dream",
+   "play_qid": "Q104871",
+   "prop": "P144",
+   "qid": "Q11946359",
+   "title": null
+  },
+  {
+   "play": "Midsummer Night's Dream",
+   "play_qid": "Q104871",
+   "prop": "P144",
+   "qid": "Q16652033",
+   "title": null
+  },
+  {
+   "play": "Midsummer Night's Dream",
+   "play_qid": "Q104871",
+   "prop": "P144",
+   "qid": "Q18946519",
+   "title": null
+  },
+  {
+   "play": "Midsummer Night's Dream",
+   "play_qid": "Q104871",
+   "prop": "P144",
+   "qid": "Q19968926",
+   "title": null
+  },
+  {
+   "play": "Midsummer Night's Dream",
+   "play_qid": "Q104871",
+   "prop": "P144",
+   "qid": "Q23674378",
+   "title": null
+  },
+  {
+   "play": "Midsummer Night's Dream",
+   "play_qid": "Q104871",
+   "prop": "P144",
+   "qid": "Q23823172",
+   "title": null
+  },
+  {
+   "play": "Midsummer Night's Dream",
+   "play_qid": "Q104871",
+   "prop": "P144",
+   "qid": "Q30321732",
+   "title": null
+  },
+  {
+   "play": "Midsummer Night's Dream",
+   "play_qid": "Q104871",
+   "prop": "P144",
+   "qid": "Q47424487",
+   "title": null
+  },
+  {
+   "play": "Midsummer Night's Dream",
+   "play_qid": "Q104871",
+   "prop": "P144",
+   "qid": "Q47424535",
+   "title": null
+  },
+  {
+   "play": "Midsummer Night's Dream",
+   "play_qid": "Q104871",
+   "prop": "P144",
+   "qid": "Q47424599",
+   "title": null
+  },
+  {
+   "play": "Midsummer Night's Dream",
+   "play_qid": "Q104871",
+   "prop": "P144",
+   "qid": "Q47424677",
+   "title": null
+  },
+  {
+   "play": "Midsummer Night's Dream",
+   "play_qid": "Q104871",
+   "prop": "P144",
+   "qid": "Q47424730",
+   "title": null
+  },
+  {
+   "play": "Midsummer Night's Dream",
+   "play_qid": "Q104871",
+   "prop": "P144",
+   "qid": "Q55873489",
+   "title": null
+  },
+  {
+   "play": "Midsummer Night's Dream",
+   "play_qid": "Q104871",
+   "prop": "P144",
+   "qid": "Q56459463",
+   "title": null
+  },
+  {
+   "play": "Midsummer Night's Dream",
+   "play_qid": "Q104871",
+   "prop": "P144",
+   "qid": "Q93489259",
+   "title": null
+  },
+  {
+   "play": "Midsummer Night's Dream",
+   "play_qid": "Q104871",
+   "prop": "P144",
+   "qid": "Q102405569",
+   "title": null
+  },
+  {
+   "play": "Midsummer Night's Dream",
+   "play_qid": "Q104871",
+   "prop": "P144",
+   "qid": "Q109002445",
+   "title": null
+  },
+  {
+   "play": "Midsummer Night's Dream",
+   "play_qid": "Q104871",
+   "prop": "P144",
+   "qid": "Q123478070",
+   "title": null
+  },
+  {
+   "play": "Midsummer Night's Dream",
+   "play_qid": "Q104871",
+   "prop": "P144",
+   "qid": "Q124470333",
+   "title": null
+  },
+  {
+   "play": "Midsummer Night's Dream",
+   "play_qid": "Q104871",
+   "prop": "P144",
+   "qid": "Q125914059",
+   "title": null
+  },
+  {
+   "play": "Midsummer Night's Dream",
+   "play_qid": "Q104871",
+   "prop": "P144",
+   "qid": "Q136839262",
+   "title": null
+  },
+  {
+   "play": "Midsummer Night's Dream",
+   "play_qid": "Q104871",
+   "prop": "P144",
+   "qid": "Q136839560",
+   "title": null
+  },
+  {
+   "play": "Midsummer Night's Dream",
+   "play_qid": "Q104871",
+   "prop": "P144",
+   "qid": "Q136839646",
+   "title": null
+  },
+  {
+   "play": "Midsummer Night's Dream",
+   "play_qid": "Q104871",
+   "prop": "P144",
+   "qid": "Q136839654",
+   "title": null
+  },
+  {
+   "play": "Midsummer Night's Dream",
+   "play_qid": "Q104871",
+   "prop": "P144",
+   "qid": "Q136839727",
+   "title": null
+  },
+  {
+   "play": "Midsummer Night's Dream",
+   "play_qid": "Q104871",
+   "prop": "P144",
+   "qid": "Q137234721",
+   "title": null
+  },
+  {
+   "play": "Midsummer Night's Dream",
+   "play_qid": "Q104871",
+   "prop": "P144",
+   "qid": "Q139238471",
+   "title": null
+  },
+  {
+   "play": "Midsummer Night's Dream",
+   "play_qid": "Q104871",
+   "prop": "P144",
+   "qid": "Q2819816",
+   "title": "A Midsummer Night's Dream (ballet)"
+  },
+  {
+   "play": "Midsummer Night's Dream",
+   "play_qid": "Q104871",
+   "prop": "P144",
+   "qid": "Q3005588",
+   "title": "Shakespeare: The Animated Tales"
+  },
+  {
+   "play": "Midsummer Night's Dream",
+   "play_qid": "Q104871",
+   "prop": "P144",
+   "qid": "Q3227301",
+   "title": "A Midsummer Night's Dream (1959 film)"
+  },
+  {
+   "play": "Midsummer Night's Dream",
+   "play_qid": "Q104871",
+   "prop": "P144",
+   "qid": "Q3964106",
+   "title": "The Summer Night's Dream (painting)"
+  },
+  {
+   "play": "Midsummer Night's Dream",
+   "play_qid": "Q104871",
+   "prop": "P144",
+   "qid": "Q6508117",
+   "title": "Le songe d'une nuit d'été"
+  },
+  {
+   "play": "Midsummer Night's Dream",
+   "play_qid": "Q104871",
+   "prop": "P144",
+   "qid": "Q7258238",
+   "title": "Puck (opera)"
+  },
+  {
+   "play": "Midsummer Night's Dream",
+   "play_qid": "Q104871",
+   "prop": "P144",
+   "qid": "Q16833653",
+   "title": "The Dreaming (musical)"
+  },
+  {
+   "play": "Midsummer Night's Dream",
+   "play_qid": "Q104871",
+   "prop": "P144",
+   "qid": "Q18692935",
+   "title": "Hermia and Lysander (painting)"
+  },
+  {
+   "play": "Midsummer Night's Dream",
+   "play_qid": "Q104871",
+   "prop": "P144",
+   "qid": "Q107612168",
+   "title": "The Park (play)"
+  },
+  {
+   "play": "Midsummer Night's Dream",
+   "play_qid": "Q104871",
+   "prop": "P144",
+   "qid": "Q116980536",
+   "title": "Midsummer Mechanicals"
+  },
+  {
+   "play": "Midsummer Night's Dream",
+   "play_qid": "Q104871",
+   "prop": "P941",
+   "qid": "Q2078525",
+   "title": "Lords and Ladies (novel)"
+  },
+  {
+   "play": "Midsummer Night's Dream",
+   "play_qid": "Q104871",
+   "prop": "P941",
+   "qid": "Q18534270",
+   "title": "Strange Magic (film)"
+  },
+  {
+   "play": "Much Ado",
+   "play_qid": "Q130851",
+   "prop": "P144",
+   "qid": "Q3999758",
+   "title": null
+  },
+  {
+   "play": "Much Ado",
+   "play_qid": "Q130851",
+   "prop": "P144",
+   "qid": "Q4271873",
+   "title": null
+  },
+  {
+   "play": "Much Ado",
+   "play_qid": "Q130851",
+   "prop": "P144",
+   "qid": "Q47438551",
+   "title": null
+  },
+  {
+   "play": "Much Ado",
+   "play_qid": "Q130851",
+   "prop": "P144",
+   "qid": "Q47438572",
+   "title": null
+  },
+  {
+   "play": "Much Ado",
+   "play_qid": "Q130851",
+   "prop": "P144",
+   "qid": "Q47438619",
+   "title": null
+  },
+  {
+   "play": "Much Ado",
+   "play_qid": "Q130851",
+   "prop": "P144",
+   "qid": "Q55868631",
+   "title": null
+  },
+  {
+   "play": "Much Ado",
+   "play_qid": "Q130851",
+   "prop": "P144",
+   "qid": "Q99228713",
+   "title": null
+  },
+  {
+   "play": "Much Ado",
+   "play_qid": "Q130851",
+   "prop": "P144",
+   "qid": "Q122912989",
+   "title": null
+  },
+  {
+   "play": "Much Ado",
+   "play_qid": "Q130851",
+   "prop": "P144",
+   "qid": "Q122913183",
+   "title": null
+  },
+  {
+   "play": "Much Ado",
+   "play_qid": "Q130851",
+   "prop": "P144",
+   "qid": "Q122913739",
+   "title": null
+  },
+  {
+   "play": "Much Ado",
+   "play_qid": "Q130851",
+   "prop": "P144",
+   "qid": "Q136839704",
+   "title": null
+  },
+  {
+   "play": "Much Ado",
+   "play_qid": "Q130851",
+   "prop": "P144",
+   "qid": "Q137050858",
+   "title": null
+  },
+  {
+   "play": "Much Ado",
+   "play_qid": "Q130851",
+   "prop": "P144",
+   "qid": "Q137052337",
+   "title": null
+  },
+  {
+   "play": "Much Ado",
+   "play_qid": "Q130851",
+   "prop": "P144",
+   "qid": "Q550205",
+   "title": "Much Ado About Nothing (1993 film)"
+  },
+  {
+   "play": "Much Ado",
+   "play_qid": "Q130851",
+   "prop": "P144",
+   "qid": "Q791661",
+   "title": "Béatrice et Bénédict"
+  },
+  {
+   "play": "Much Ado",
+   "play_qid": "Q130851",
+   "prop": "P144",
+   "qid": "Q3009047",
+   "title": "Much Ado About Nothing (2012 film)"
+  },
+  {
+   "play": "Much Ado",
+   "play_qid": "Q130851",
+   "prop": "P144",
+   "qid": "Q4298828",
+   "title": "Much Ado About Nothing (1973 film)"
+  },
+  {
+   "play": "Much Ado",
+   "play_qid": "Q130851",
+   "prop": "P144",
+   "qid": "Q118405167",
+   "title": "Anyone but You"
+  },
+  {
+   "play": "Much Ado",
+   "play_qid": "Q130851",
+   "prop": "P941",
+   "qid": "Q102069276",
+   "title": null
+  },
+  {
+   "play": "Much Ado",
+   "play_qid": "Q130851",
+   "prop": "P941",
+   "qid": "Q30715334",
+   "title": "Imogen Says Nothing"
+  },
+  {
+   "play": "Taming of the Shrew",
+   "play_qid": "Q332387",
+   "prop": "P144",
+   "qid": "Q169082",
+   "title": "10 Things I Hate About You"
+  },
+  {
+   "play": "Taming of the Shrew",
+   "play_qid": "Q332387",
+   "prop": "P144",
+   "qid": "Q526246",
+   "title": "The Taming of the Shrew (1908 film)"
+  },
+  {
+   "play": "Taming of the Shrew",
+   "play_qid": "Q332387",
+   "prop": "P144",
+   "qid": "Q1056892",
+   "title": "The Taming of the Shrew (1929 film)"
+  },
+  {
+   "play": "Taming of the Shrew",
+   "play_qid": "Q332387",
+   "prop": "P144",
+   "qid": "Q1198059",
+   "title": "The Taming of the Shrew (1967 film)"
+  },
+  {
+   "play": "Taming of the Shrew",
+   "play_qid": "Q332387",
+   "prop": "P144",
+   "qid": "Q3821460",
+   "title": null
+  },
+  {
+   "play": "Taming of the Shrew",
+   "play_qid": "Q332387",
+   "prop": "P144",
+   "qid": "Q4470713",
+   "title": null
+  },
+  {
+   "play": "Taming of the Shrew",
+   "play_qid": "Q332387",
+   "prop": "P144",
+   "qid": "Q12182165",
+   "title": null
+  },
+  {
+   "play": "Taming of the Shrew",
+   "play_qid": "Q332387",
+   "prop": "P144",
+   "qid": "Q14757204",
+   "title": null
+  },
+  {
+   "play": "Taming of the Shrew",
+   "play_qid": "Q332387",
+   "prop": "P144",
+   "qid": "Q25646554",
+   "title": null
+  },
+  {
+   "play": "Taming of the Shrew",
+   "play_qid": "Q332387",
+   "prop": "P144",
+   "qid": "Q47417893",
+   "title": null
+  },
+  {
+   "play": "Taming of the Shrew",
+   "play_qid": "Q332387",
+   "prop": "P144",
+   "qid": "Q47417989",
+   "title": null
+  },
+  {
+   "play": "Taming of the Shrew",
+   "play_qid": "Q332387",
+   "prop": "P144",
+   "qid": "Q55961982",
+   "title": null
+  },
+  {
+   "play": "Taming of the Shrew",
+   "play_qid": "Q332387",
+   "prop": "P144",
+   "qid": "Q122913075",
+   "title": null
+  },
+  {
+   "play": "Taming of the Shrew",
+   "play_qid": "Q332387",
+   "prop": "P144",
+   "qid": "Q135225268",
+   "title": null
+  },
+  {
+   "play": "Taming of the Shrew",
+   "play_qid": "Q332387",
+   "prop": "P144",
+   "qid": "Q1198062",
+   "title": "Der Widerspänstigen Zähmung"
+  },
+  {
+   "play": "Taming of the Shrew",
+   "play_qid": "Q332387",
+   "prop": "P144",
+   "qid": "Q1330969",
+   "title": "Kiss Me, Kate"
+  },
+  {
+   "play": "Taming of the Shrew",
+   "play_qid": "Q332387",
+   "prop": "P144",
+   "qid": "Q3005588",
+   "title": "Shakespeare: The Animated Tales"
+  },
+  {
+   "play": "Taming of the Shrew",
+   "play_qid": "Q332387",
+   "prop": "P144",
+   "qid": "Q5052115",
+   "title": "Catharine and Petruchio"
+  },
+  {
+   "play": "Taming of the Shrew",
+   "play_qid": "Q332387",
+   "prop": "P144",
+   "qid": "Q5970934",
+   "title": "Las bravías"
+  },
+  {
+   "play": "Taming of the Shrew",
+   "play_qid": "Q332387",
+   "prop": "P144",
+   "qid": "Q7768074",
+   "title": "The Taming of the Shrew (Shebalin)"
+  },
+  {
+   "play": "Taming of the Shrew",
+   "play_qid": "Q332387",
+   "prop": "P144",
+   "qid": "Q19897984",
+   "title": "The Taming of the Shrew (ballet)"
+  },
+  {
+   "play": "Taming of the Shrew",
+   "play_qid": "Q332387",
+   "prop": "P144",
+   "qid": "Q21998404",
+   "title": "Christopher Sly (opera)"
+  },
+  {
+   "play": "Twelfth Night",
+   "play_qid": "Q221211",
+   "prop": "P144",
+   "qid": "Q47439167",
+   "title": null
+  },
+  {
+   "play": "Twelfth Night",
+   "play_qid": "Q221211",
+   "prop": "P144",
+   "qid": "Q47439206",
+   "title": null
+  },
+  {
+   "play": "Twelfth Night",
+   "play_qid": "Q221211",
+   "prop": "P144",
+   "qid": "Q47439247",
+   "title": null
+  },
+  {
+   "play": "Twelfth Night",
+   "play_qid": "Q221211",
+   "prop": "P144",
+   "qid": "Q55943723",
+   "title": null
+  },
+  {
+   "play": "Twelfth Night",
+   "play_qid": "Q221211",
+   "prop": "P144",
+   "qid": "Q105925434",
+   "title": null
+  },
+  {
+   "play": "Twelfth Night",
+   "play_qid": "Q221211",
+   "prop": "P144",
+   "qid": "Q106352937",
+   "title": null
+  },
+  {
+   "play": "Twelfth Night",
+   "play_qid": "Q221211",
+   "prop": "P144",
+   "qid": "Q112582717",
+   "title": null
+  },
+  {
+   "play": "Twelfth Night",
+   "play_qid": "Q221211",
+   "prop": "P144",
+   "qid": "Q122913003",
+   "title": null
+  },
+  {
+   "play": "Twelfth Night",
+   "play_qid": "Q221211",
+   "prop": "P144",
+   "qid": "Q122913042",
+   "title": null
+  },
+  {
+   "play": "Twelfth Night",
+   "play_qid": "Q221211",
+   "prop": "P144",
+   "qid": "Q122913405",
+   "title": null
+  },
+  {
+   "play": "Twelfth Night",
+   "play_qid": "Q221211",
+   "prop": "P144",
+   "qid": "Q122913607",
+   "title": null
+  },
+  {
+   "play": "Twelfth Night",
+   "play_qid": "Q221211",
+   "prop": "P144",
+   "qid": "Q122914229",
+   "title": null
+  },
+  {
+   "play": "Twelfth Night",
+   "play_qid": "Q221211",
+   "prop": "P144",
+   "qid": "Q136812126",
+   "title": null
+  },
+  {
+   "play": "Twelfth Night",
+   "play_qid": "Q221211",
+   "prop": "P144",
+   "qid": "Q136839623",
+   "title": null
+  },
+  {
+   "play": "Twelfth Night",
+   "play_qid": "Q221211",
+   "prop": "P144",
+   "qid": "Q137040194",
+   "title": null
+  },
+  {
+   "play": "Twelfth Night",
+   "play_qid": "Q221211",
+   "prop": "P144",
+   "qid": "Q137051282",
+   "title": null
+  },
+  {
+   "play": "Twelfth Night",
+   "play_qid": "Q221211",
+   "prop": "P144",
+   "qid": "Q137051558",
+   "title": null
+  },
+  {
+   "play": "Twelfth Night",
+   "play_qid": "Q221211",
+   "prop": "P144",
+   "qid": "Q137051712",
+   "title": null
+  },
+  {
+   "play": "Twelfth Night",
+   "play_qid": "Q221211",
+   "prop": "P144",
+   "qid": "Q137052733",
+   "title": null
+  },
+  {
+   "play": "Twelfth Night",
+   "play_qid": "Q221211",
+   "prop": "P144",
+   "qid": "Q7203057",
+   "title": "Play On!"
+  },
+  {
+   "play": "Twelfth Night",
+   "play_qid": "Q221211",
+   "prop": "P144",
+   "qid": "Q7857555",
+   "title": "Twelfth Night (1933 film)"
+  },
+  {
+   "play": "Twelfth Night",
+   "play_qid": "Q221211",
+   "prop": "P144",
+   "qid": "Q7857556",
+   "title": "Twelfth Night (1986 film)"
+  },
+  {
+   "play": "Twelfth Night",
+   "play_qid": "Q221211",
+   "prop": "P144",
+   "qid": "Q7857557",
+   "title": "Twelfth Night (1988 film)"
+  },
+  {
+   "play": "Twelfth Night",
+   "play_qid": "Q221211",
+   "prop": "P144",
+   "qid": "Q8058908",
+   "title": "Your Own Thing"
+  },
+  {
+   "play": "Twelfth Night",
+   "play_qid": "Q221211",
+   "prop": "P144",
+   "qid": "Q20814872",
+   "title": "Twelfth Night (Wednesday Theatre)"
+  },
+  {
+   "play": "Twelfth Night",
+   "play_qid": "Q221211",
+   "prop": "P144",
+   "qid": "Q72925",
+   "title": "She's the Man"
+  },
+  {
+   "play": "Twelfth Night",
+   "play_qid": "Q221211",
+   "prop": "P144",
+   "qid": "Q1121182",
+   "title": "Twelfth Night (1910 film)"
+  },
+  {
+   "play": "Twelfth Night",
+   "play_qid": "Q221211",
+   "prop": "P144",
+   "qid": "Q1525083",
+   "title": "Twelfth Night (1996 film)"
+  },
+  {
+   "play": "Twelfth Night",
+   "play_qid": "Q221211",
+   "prop": "P144",
+   "qid": "Q1763851",
+   "title": "Motocrossed"
+  },
+  {
+   "play": "Twelfth Night",
+   "play_qid": "Q221211",
+   "prop": "P144",
+   "qid": "Q2363609",
+   "title": "All Shook Up (musical)"
+  },
+  {
+   "play": "Twelfth Night",
+   "play_qid": "Q221211",
+   "prop": "P144",
+   "qid": "Q3005588",
+   "title": "Shakespeare: The Animated Tales"
+  },
+  {
+   "play": "Twelfth Night",
+   "play_qid": "Q221211",
+   "prop": "P144",
+   "qid": "Q3489036",
+   "title": "Viola (opera)"
+  },
+  {
+   "play": "Twelfth Night",
+   "play_qid": "Q221211",
+   "prop": "P144",
+   "qid": "Q4155660",
+   "title": "Twelfth Night (1955 film)"
+  },
+  {
+   "play": "Two Gentlemen",
+   "play_qid": "Q232042",
+   "prop": "P144",
+   "qid": "Q55960862",
+   "title": null
+  },
+  {
+   "play": "Two Gentlemen",
+   "play_qid": "Q232042",
+   "prop": "P144",
+   "qid": "Q135225268",
+   "title": null
+  },
+  {
+   "play": "Two Gentlemen",
+   "play_qid": "Q232042",
+   "prop": "P144",
+   "qid": "Q7858977",
+   "title": "Two Gentlemen of Verona (musical)"
+  },
+  {
+   "play": "Two Noble Kinsmen",
+   "play_qid": "Q53590",
+   "prop": "P144",
+   "qid": "Q77586273",
+   "title": null
+  },
+  {
+   "play": "Winter's Tale",
+   "play_qid": "Q743194",
+   "prop": "P144",
+   "qid": "Q29217811",
+   "title": null
+  },
+  {
+   "play": "Winter's Tale",
+   "play_qid": "Q743194",
+   "prop": "P144",
+   "qid": "Q47413108",
+   "title": null
+  },
+  {
+   "play": "Winter's Tale",
+   "play_qid": "Q743194",
+   "prop": "P144",
+   "qid": "Q47413176",
+   "title": null
+  },
+  {
+   "play": "Winter's Tale",
+   "play_qid": "Q743194",
+   "prop": "P144",
+   "qid": "Q102109165",
+   "title": null
+  },
+  {
+   "play": "Winter's Tale",
+   "play_qid": "Q743194",
+   "prop": "P144",
+   "qid": "Q107433355",
+   "title": null
+  },
+  {
+   "play": "Winter's Tale",
+   "play_qid": "Q743194",
+   "prop": "P144",
+   "qid": "Q109002440",
+   "title": null
+  },
+  {
+   "play": "Winter's Tale",
+   "play_qid": "Q743194",
+   "prop": "P144",
+   "qid": "Q122913305",
+   "title": null
+  },
+  {
+   "play": "Winter's Tale",
+   "play_qid": "Q743194",
+   "prop": "P144",
+   "qid": "Q122913720",
+   "title": null
+  },
+  {
+   "play": "Winter's Tale",
+   "play_qid": "Q743194",
+   "prop": "P144",
+   "qid": "Q122914303",
+   "title": null
+  },
+  {
+   "play": "Winter's Tale",
+   "play_qid": "Q743194",
+   "prop": "P144",
+   "qid": "Q137049760",
+   "title": null
+  },
+  {
+   "play": "Winter's Tale",
+   "play_qid": "Q743194",
+   "prop": "P144",
+   "qid": "Q140309053",
+   "title": null
+  },
+  {
+   "play": "Winter's Tale",
+   "play_qid": "Q743194",
+   "prop": "P144",
+   "qid": "Q3005588",
+   "title": "Shakespeare: The Animated Tales"
+  },
+  {
+   "play": "Winter's Tale",
+   "play_qid": "Q743194",
+   "prop": "P144",
+   "qid": "Q17149693",
+   "title": "The Winter's Tale (ballet)"
+  },
+  {
+   "play": "Winter's Tale",
+   "play_qid": "Q743194",
+   "prop": "P144",
+   "qid": "Q30601387",
+   "title": "The Winter's Tale (opera)"
+  },
+  {
+   "play": "Winter's Tale",
+   "play_qid": "Q743194",
+   "prop": "P941",
+   "qid": "Q140309053",
+   "title": null
+  },
+  {
+   "play": "Cymbeline",
+   "play_qid": "Q730212",
+   "prop": "P144",
+   "qid": "Q14723964",
+   "title": "Cymbeline (film)"
+  },
+  {
+   "play": "Cymbeline",
+   "play_qid": "Q730212",
+   "prop": "P144",
+   "qid": "Q19872452",
+   "title": "Cymbeline Refinished"
+  },
+  {
+   "play": "Cymbeline",
+   "play_qid": "Q730212",
+   "prop": "P144",
+   "qid": "Q55861087",
+   "title": null
+  },
+  {
+   "play": "Pericles",
+   "play_qid": "Q584729",
+   "prop": "P144",
+   "qid": "Q47435034",
+   "title": null
+  },
+  {
+   "play": "Pericles",
+   "play_qid": "Q584729",
+   "prop": "P144",
+   "qid": "Q55904308",
+   "title": null
+  },
+  {
+   "play": "Pericles",
+   "play_qid": "Q584729",
+   "prop": "P144",
+   "qid": "Q81534037",
+   "title": null
+  },
+  {
+   "play": "Pericles",
+   "play_qid": "Q584729",
+   "prop": "P144",
+   "qid": "Q122912997",
+   "title": null
+  },
+  {
+   "play": "Pericles",
+   "play_qid": "Q584729",
+   "prop": "P144",
+   "qid": "Q137283874",
+   "title": null
+  },
+  {
+   "play": "Pericles",
+   "play_qid": "Q584729",
+   "prop": "P144",
+   "qid": "Q138400078",
+   "title": null
+  },
+  {
+   "play": "The Tempest",
+   "play_qid": "Q86440",
+   "prop": "P144",
+   "qid": "Q478579",
+   "title": "The Tempest (2010 film)"
+  },
+  {
+   "play": "The Tempest",
+   "play_qid": "Q86440",
+   "prop": "P144",
+   "qid": "Q1057313",
+   "title": "Tempest (1982 film)"
+  },
+  {
+   "play": "The Tempest",
+   "play_qid": "Q86440",
+   "prop": "P144",
+   "qid": "Q1236153",
+   "title": "Prospero's Books"
+  },
+  {
+   "play": "The Tempest",
+   "play_qid": "Q86440",
+   "prop": "P144",
+   "qid": "Q1237741",
+   "title": "Une Tempête"
+  },
+  {
+   "play": "The Tempest",
+   "play_qid": "Q86440",
+   "prop": "P144",
+   "qid": "Q1331230",
+   "title": "Forbidden Planet"
+  },
+  {
+   "play": "The Tempest",
+   "play_qid": "Q86440",
+   "prop": "P144",
+   "qid": "Q1758203",
+   "title": "The Journey to Melonia"
+  },
+  {
+   "play": "The Tempest",
+   "play_qid": "Q86440",
+   "prop": "P144",
+   "qid": "Q2342350",
+   "title": "The Enchanted Island (2011 opera)"
+  },
+  {
+   "play": "The Tempest",
+   "play_qid": "Q86440",
+   "prop": "P144",
+   "qid": "Q2916081",
+   "title": "The Tempest (Tchaikovsky)"
+  },
+  {
+   "play": "The Tempest",
+   "play_qid": "Q86440",
+   "prop": "P144",
+   "qid": "Q1217688",
+   "title": null
+  },
+  {
+   "play": "The Tempest",
+   "play_qid": "Q86440",
+   "prop": "P144",
+   "qid": "Q9559062",
+   "title": null
+  },
+  {
+   "play": "The Tempest",
+   "play_qid": "Q86440",
+   "prop": "P144",
+   "qid": "Q21175316",
+   "title": null
+  },
+  {
+   "play": "The Tempest",
+   "play_qid": "Q86440",
+   "prop": "P144",
+   "qid": "Q21175317",
+   "title": null
+  },
+  {
+   "play": "The Tempest",
+   "play_qid": "Q86440",
+   "prop": "P144",
+   "qid": "Q25389146",
+   "title": null
+  },
+  {
+   "play": "The Tempest",
+   "play_qid": "Q86440",
+   "prop": "P144",
+   "qid": "Q47416819",
+   "title": null
+  },
+  {
+   "play": "The Tempest",
+   "play_qid": "Q86440",
+   "prop": "P144",
+   "qid": "Q47416878",
+   "title": null
+  },
+  {
+   "play": "The Tempest",
+   "play_qid": "Q86440",
+   "prop": "P144",
+   "qid": "Q47416944",
+   "title": null
+  },
+  {
+   "play": "The Tempest",
+   "play_qid": "Q86440",
+   "prop": "P144",
+   "qid": "Q47417002",
+   "title": null
+  },
+  {
+   "play": "The Tempest",
+   "play_qid": "Q86440",
+   "prop": "P144",
+   "qid": "Q55858204",
+   "title": null
+  },
+  {
+   "play": "The Tempest",
+   "play_qid": "Q86440",
+   "prop": "P144",
+   "qid": "Q81534829",
+   "title": null
+  },
+  {
+   "play": "The Tempest",
+   "play_qid": "Q86440",
+   "prop": "P144",
+   "qid": "Q115973784",
+   "title": null
+  },
+  {
+   "play": "The Tempest",
+   "play_qid": "Q86440",
+   "prop": "P144",
+   "qid": "Q127950236",
+   "title": null
+  },
+  {
+   "play": "The Tempest",
+   "play_qid": "Q86440",
+   "prop": "P144",
+   "qid": "Q140363105",
+   "title": null
+  },
+  {
+   "play": "The Tempest",
+   "play_qid": "Q86440",
+   "prop": "P144",
+   "qid": "Q3005588",
+   "title": "Shakespeare: The Animated Tales"
+  },
+  {
+   "play": "The Tempest",
+   "play_qid": "Q86440",
+   "prop": "P144",
+   "qid": "Q3022126",
+   "title": "The Tempest (opera)"
+  },
+  {
+   "play": "The Tempest",
+   "play_qid": "Q86440",
+   "prop": "P144",
+   "qid": "Q5261220",
+   "title": "Der Sturm (opera)"
+  },
+  {
+   "play": "The Tempest",
+   "play_qid": "Q86440",
+   "prop": "P144",
+   "qid": "Q7430749",
+   "title": "Scene from Shakespeare's The Tempest"
+  },
+  {
+   "play": "The Tempest",
+   "play_qid": "Q86440",
+   "prop": "P144",
+   "qid": "Q10577168",
+   "title": "Bouře"
+  },
+  {
+   "play": "The Tempest",
+   "play_qid": "Q86440",
+   "prop": "P144",
+   "qid": "Q26158076",
+   "title": "Hag-Seed"
+  },
+  {
+   "play": "The Tempest",
+   "play_qid": "Q86440",
+   "prop": "P144",
+   "qid": "Q28457921",
+   "title": "The Tempest (Hoiby)"
+  },
+  {
+   "play": "The Tempest",
+   "play_qid": "Q86440",
+   "prop": "P144",
+   "qid": "Q60788321",
+   "title": "Die Geisterinsel (libretto)"
+  },
+  {
+   "play": "The Tempest",
+   "play_qid": "Q86440",
+   "prop": "P144",
+   "qid": "Q97356635",
+   "title": "The Tempest (1908 film)"
+  },
+  {
+   "play": "The Tempest",
+   "play_qid": "Q86440",
+   "prop": "P144",
+   "qid": "Q110931235",
+   "title": "Shakespeare's Shitstorm"
+  },
+  {
+   "play": "The Tempest",
+   "play_qid": "Q86440",
+   "prop": "P144",
+   "qid": "Q137546029",
+   "title": "Ariel (2025 film)"
+  },
+  {
+   "play": "The Tempest",
+   "play_qid": "Q86440",
+   "prop": "P941",
+   "qid": "Q43380186",
+   "title": null
+  },
+  {
+   "play": "The Tempest",
+   "play_qid": "Q86440",
+   "prop": "P941",
+   "qid": "Q27940684",
+   "title": "The Tempest (Hebald)"
+  },
+  {
+   "play": "Troilus and Cressida",
+   "play_qid": "Q183304",
+   "prop": "P144",
+   "qid": "Q108205644",
+   "title": null
+  },
+  {
+   "play": "Troilus and Cressida",
+   "play_qid": "Q183304",
+   "prop": "P144",
+   "qid": "Q122913473",
+   "title": null
+  },
+  {
+   "play": "Troilus and Cressida",
+   "play_qid": "Q183304",
+   "prop": "P144",
+   "qid": "Q137200372",
+   "title": null
+  },
+  {
+   "play": "King John",
+   "play_qid": "Q661222",
+   "prop": "P144",
+   "qid": "Q47430644",
+   "title": null
+  },
+  {
+   "play": "King John",
+   "play_qid": "Q661222",
+   "prop": "P144",
+   "qid": "Q1742045",
+   "title": "King John (film)"
+  },
+  {
+   "play": "King John",
+   "play_qid": "Q661222",
+   "prop": "P144",
+   "qid": "Q7399868",
+   "title": "Said-e-Hawas"
+  },
+  {
+   "play": "Richard II",
+   "play_qid": "Q649562",
+   "prop": "P144",
+   "qid": "Q115647",
+   "title": "The Hollow Crown (TV series)"
+  },
+  {
+   "play": "Richard II",
+   "play_qid": "Q649562",
+   "prop": "P144",
+   "qid": "Q2529482",
+   "title": "Chimes at Midnight"
+  },
+  {
+   "play": "Richard II",
+   "play_qid": "Q649562",
+   "prop": "P144",
+   "qid": "Q4394952",
+   "title": "Richard II (The Hollow Crown)"
+  },
+  {
+   "play": "Henry IV Part 1",
+   "play_qid": "Q631855",
+   "prop": "P144",
+   "qid": "Q123644372",
+   "title": "The Prince (play)"
+  },
+  {
+   "play": "Henry IV Part 1",
+   "play_qid": "Q631855",
+   "prop": "P144",
+   "qid": "Q24336369",
+   "title": null
+  },
+  {
+   "play": "Henry IV Part 1",
+   "play_qid": "Q631855",
+   "prop": "P144",
+   "qid": "Q115647",
+   "title": "The Hollow Crown (TV series)"
+  },
+  {
+   "play": "Henry IV Part 1",
+   "play_qid": "Q631855",
+   "prop": "P144",
+   "qid": "Q1125451",
+   "title": "My Own Private Idaho"
+  },
+  {
+   "play": "Henry IV Part 1",
+   "play_qid": "Q631855",
+   "prop": "P144",
+   "qid": "Q2529482",
+   "title": "Chimes at Midnight"
+  },
+  {
+   "play": "Henry IV Part 1",
+   "play_qid": "Q631855",
+   "prop": "P144",
+   "qid": "Q5129825",
+   "title": "Clay (musical)"
+  },
+  {
+   "play": "Henry IV Part 1",
+   "play_qid": "Q631855",
+   "prop": "P144",
+   "qid": "Q5723554",
+   "title": "Henry IV, Part I and Part II (The Hollow Crown)"
+  },
+  {
+   "play": "Henry IV Part 1",
+   "play_qid": "Q631855",
+   "prop": "P144",
+   "qid": "Q54801155",
+   "title": "The King (2019 film)"
+  },
+  {
+   "play": "Henry IV Part 2",
+   "play_qid": "Q1232349",
+   "prop": "P144",
+   "qid": "Q24336435",
+   "title": null
+  },
+  {
+   "play": "Henry IV Part 2",
+   "play_qid": "Q1232349",
+   "prop": "P144",
+   "qid": "Q115647",
+   "title": "The Hollow Crown (TV series)"
+  },
+  {
+   "play": "Henry IV Part 2",
+   "play_qid": "Q1232349",
+   "prop": "P144",
+   "qid": "Q1125451",
+   "title": "My Own Private Idaho"
+  },
+  {
+   "play": "Henry IV Part 2",
+   "play_qid": "Q1232349",
+   "prop": "P144",
+   "qid": "Q2529482",
+   "title": "Chimes at Midnight"
+  },
+  {
+   "play": "Henry IV Part 2",
+   "play_qid": "Q1232349",
+   "prop": "P144",
+   "qid": "Q5129825",
+   "title": "Clay (musical)"
+  },
+  {
+   "play": "Henry IV Part 2",
+   "play_qid": "Q1232349",
+   "prop": "P144",
+   "qid": "Q5723554",
+   "title": "Henry IV, Part I and Part II (The Hollow Crown)"
+  },
+  {
+   "play": "Henry IV Part 2",
+   "play_qid": "Q1232349",
+   "prop": "P144",
+   "qid": "Q54801155",
+   "title": "The King (2019 film)"
+  },
+  {
+   "play": "Henry V",
+   "play_qid": "Q495954",
+   "prop": "P144",
+   "qid": "Q2529482",
+   "title": "Chimes at Midnight"
+  },
+  {
+   "play": "Henry V",
+   "play_qid": "Q495954",
+   "prop": "P144",
+   "qid": "Q12124751",
+   "title": "Henry V (The Hollow Crown)"
+  },
+  {
+   "play": "Henry V",
+   "play_qid": "Q495954",
+   "prop": "P144",
+   "qid": "Q54801155",
+   "title": "The King (2019 film)"
+  },
+  {
+   "play": "Henry V",
+   "play_qid": "Q495954",
+   "prop": "P144",
+   "qid": "Q47430517",
+   "title": null
+  },
+  {
+   "play": "Henry V",
+   "play_qid": "Q495954",
+   "prop": "P144",
+   "qid": "Q114115",
+   "title": "Henry V (1989 film)"
+  },
+  {
+   "play": "Henry V",
+   "play_qid": "Q495954",
+   "prop": "P144",
+   "qid": "Q115647",
+   "title": "The Hollow Crown (TV series)"
+  },
+  {
+   "play": "Henry V",
+   "play_qid": "Q495954",
+   "prop": "P144",
+   "qid": "Q268055",
+   "title": "Henry V (1944 film)"
+  },
+  {
+   "play": "Henry V",
+   "play_qid": "Q495954",
+   "prop": "P144",
+   "qid": "Q1125451",
+   "title": "My Own Private Idaho"
+  },
+  {
+   "play": "Henry VI Part 1",
+   "play_qid": "Q643236",
+   "prop": "P144",
+   "qid": "Q27887267",
+   "title": null
+  },
+  {
+   "play": "Henry VI Part 1",
+   "play_qid": "Q643236",
+   "prop": "P144",
+   "qid": "Q115647",
+   "title": "The Hollow Crown (TV series)"
+  },
+  {
+   "play": "Henry VI Part 1",
+   "play_qid": "Q643236",
+   "prop": "P144",
+   "qid": "Q48699848",
+   "title": "Henry VI, Part 1 (The Hollow Crown)"
+  },
+  {
+   "play": "Henry VI Part 2",
+   "play_qid": "Q1236216",
+   "prop": "P144",
+   "qid": "Q115647",
+   "title": "The Hollow Crown (TV series)"
+  },
+  {
+   "play": "Henry VI Part 2",
+   "play_qid": "Q1236216",
+   "prop": "P144",
+   "qid": "Q48699848",
+   "title": "Henry VI, Part 1 (The Hollow Crown)"
+  },
+  {
+   "play": "Henry VI Part 2",
+   "play_qid": "Q1236216",
+   "prop": "P144",
+   "qid": "Q48699852",
+   "title": "Henry VI, Part 2 (The Hollow Crown)"
+  },
+  {
+   "play": "Henry VI Part 3",
+   "play_qid": "Q1241754",
+   "prop": "P144",
+   "qid": "Q115647",
+   "title": "The Hollow Crown (TV series)"
+  },
+  {
+   "play": "Henry VI Part 3",
+   "play_qid": "Q1241754",
+   "prop": "P144",
+   "qid": "Q48699852",
+   "title": "Henry VI, Part 2 (The Hollow Crown)"
+  },
+  {
+   "play": "Henry VI Part 3",
+   "play_qid": "Q1241754",
+   "prop": "P144",
+   "qid": "Q60193320",
+   "title": null
+  },
+  {
+   "play": "Richard III",
+   "play_qid": "Q652011",
+   "prop": "P144",
+   "qid": "Q3934814",
+   "title": null
+  },
+  {
+   "play": "Richard III",
+   "play_qid": "Q652011",
+   "prop": "P144",
+   "qid": "Q47430936",
+   "title": null
+  },
+  {
+   "play": "Richard III",
+   "play_qid": "Q652011",
+   "prop": "P144",
+   "qid": "Q47431004",
+   "title": null
+  },
+  {
+   "play": "Richard III",
+   "play_qid": "Q652011",
+   "prop": "P144",
+   "qid": "Q105846592",
+   "title": null
+  },
+  {
+   "play": "Richard III",
+   "play_qid": "Q652011",
+   "prop": "P144",
+   "qid": "Q111836158",
+   "title": null
+  },
+  {
+   "play": "Richard III",
+   "play_qid": "Q652011",
+   "prop": "P144",
+   "qid": "Q122910066",
+   "title": null
+  },
+  {
+   "play": "Richard III",
+   "play_qid": "Q652011",
+   "prop": "P144",
+   "qid": "Q130601746",
+   "title": null
+  },
+  {
+   "play": "Richard III",
+   "play_qid": "Q652011",
+   "prop": "P144",
+   "qid": "Q138348025",
+   "title": null
+  },
+  {
+   "play": "Richard III",
+   "play_qid": "Q652011",
+   "prop": "P144",
+   "qid": "Q115647",
+   "title": "The Hollow Crown (TV series)"
+  },
+  {
+   "play": "Richard III",
+   "play_qid": "Q652011",
+   "prop": "P144",
+   "qid": "Q1493156",
+   "title": "Looking for Richard"
+  },
+  {
+   "play": "Richard III",
+   "play_qid": "Q652011",
+   "prop": "P144",
+   "qid": "Q1968853",
+   "title": "Richard III (1955 film)"
+  },
+  {
+   "play": "Richard III",
+   "play_qid": "Q652011",
+   "prop": "P144",
+   "qid": "Q2501468",
+   "title": "Richard III (1995 film)"
+  },
+  {
+   "play": "Richard III",
+   "play_qid": "Q652011",
+   "prop": "P144",
+   "qid": "Q3005588",
+   "title": "Shakespeare: The Animated Tales"
+  },
+  {
+   "play": "Richard III",
+   "play_qid": "Q652011",
+   "prop": "P144",
+   "qid": "Q3430887",
+   "title": "Richard III (1912 film)"
+  },
+  {
+   "play": "Richard III",
+   "play_qid": "Q652011",
+   "prop": "P144",
+   "qid": "Q7326651",
+   "title": "Richard III (1699 play)"
+  },
+  {
+   "play": "Richard III",
+   "play_qid": "Q652011",
+   "prop": "P144",
+   "qid": "Q7326653",
+   "title": "Richard III (2007 film)"
+  },
+  {
+   "play": "Richard III",
+   "play_qid": "Q652011",
+   "prop": "P144",
+   "qid": "Q48699854",
+   "title": "Richard III (The Hollow Crown)"
+  },
+  {
+   "play": "Richard III",
+   "play_qid": "Q652011",
+   "prop": "P144",
+   "qid": "Q131839811",
+   "title": "No Beast. So Fierce."
+  },
+  {
+   "play": "Richard III",
+   "play_qid": "Q652011",
+   "prop": "P941",
+   "qid": "Q65961406",
+   "title": null
+  },
+  {
+   "play": "Henry VIII",
+   "play_qid": "Q672059",
+   "prop": "P144",
+   "qid": "Q107648410",
+   "title": "The Vision of Catherine of Aragon"
+  },
+  {
+   "play": "Henry VIII",
+   "play_qid": "Q672059",
+   "prop": "P144",
+   "qid": "Q23691628",
+   "title": null
+  },
+  {
+   "play": "Titus Andronicus",
+   "play_qid": "Q272169",
+   "prop": "P144",
+   "qid": "Q57503077",
+   "title": null
+  },
+  {
+   "play": "Titus Andronicus",
+   "play_qid": "Q272169",
+   "prop": "P144",
+   "qid": "Q1635819",
+   "title": "Titus (film)"
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q191803",
+   "title": "The Lion King II: Simba's Pride"
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q463313",
+   "title": "Romeo + Juliet"
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q517265",
+   "title": "Romeo and Juliet (1968 film)"
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q669010",
+   "title": "West Side Story"
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q753677",
+   "title": "Gnomeo & Juliet"
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q1071307",
+   "title": "I Capuleti e i Montecchi"
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q1081181",
+   "title": "Romeo and Juliet (1936 film)"
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q1158741",
+   "title": "Tromeo and Juliet"
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q1251572",
+   "title": "Romeo and Juliet: the Tomb Scene"
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q1416758",
+   "title": "Romeo × Juliet"
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q1670602",
+   "title": "Roméo et Juliette (musical)"
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q763716",
+   "title": "Romeo and Juliet (Tchaikovsky)"
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q911487",
+   "title": "Romeo and Juliet (Prokofiev)"
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q918714",
+   "title": "Roméo et Juliette"
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q1758089",
+   "title": "Romeo & Juliet (2013 film)"
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q2165127",
+   "title": "Romeo und Julia (Sutermeister opera)"
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q2716956",
+   "title": "Romeo and Juliet (1954 film)"
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q2911576",
+   "title": "Bossemans et Coppenolle"
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q3005588",
+   "title": "Shakespeare: The Animated Tales"
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q3326206",
+   "title": "Romeo and Juliet (1908 film)"
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q3404244",
+   "title": "Private Romeo"
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q3441351",
+   "title": "Romeo and Juliet (2006 film)"
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q3769466",
+   "title": "Romeo and Juliet (1964 film)"
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q3940834",
+   "title": "Romeo and Juliet (1916 Fox film)"
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q87070591",
+   "title": "Romulo & Julita"
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q93314345",
+   "title": "Her & Him"
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q116171317",
+   "title": "A Infância de Romeu e Julieta"
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q132146913",
+   "title": "Juliet & Romeo (film)"
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q141445258",
+   "title": "Romeo and Juliet (1947 film)"
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q1491432",
+   "title": null
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q1736863",
+   "title": null
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q3940836",
+   "title": null
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q4397574",
+   "title": null
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q4397573",
+   "title": null
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q9313082",
+   "title": null
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q19968309",
+   "title": null
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q25410693",
+   "title": null
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q47435665",
+   "title": null
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q47435717",
+   "title": null
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q47435773",
+   "title": null
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q47509134",
+   "title": null
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q55839872",
+   "title": null
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q56669227",
+   "title": null
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q60663571",
+   "title": null
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q62307501",
+   "title": null
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q69778244",
+   "title": null
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q72322448",
+   "title": null
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q77103486",
+   "title": null
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q97234692",
+   "title": null
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q101095685",
+   "title": null
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q106767918",
+   "title": null
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q107464956",
+   "title": null
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q109241373",
+   "title": null
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q111279892",
+   "title": null
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q111513596",
+   "title": null
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q113505435",
+   "title": null
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q114357203",
+   "title": null
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q117265624",
+   "title": null
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q133838971",
+   "title": null
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q134459445",
+   "title": null
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q137197264",
+   "title": null
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q137197701",
+   "title": null
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q137198314",
+   "title": null
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q137200467",
+   "title": null
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q137201216",
+   "title": null
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q4939863",
+   "title": "Bollywood Queen"
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q5139014",
+   "title": "Make Your Move (film)"
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q7363128",
+   "title": "Romeo and Juliet (1916 Metro Pictures film)"
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q17017632",
+   "title": "Romeo and Juliet (2013 Broadway play)"
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q19968904",
+   "title": "The Last Kiss of Romeo and Juliet"
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q20649699",
+   "title": "Romeo and Juliet (1943 film)"
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q24904727",
+   "title": "Sherlock Gnomes"
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q27038216",
+   "title": "Rwanda and Juliet"
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q55631942",
+   "title": "Romeo und Julia (Blacher opera)"
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q60764187",
+   "title": "Romeo and Juliet (album)"
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P144",
+   "qid": "Q65117582",
+   "title": "& Juliet"
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P941",
+   "qid": "Q10656791",
+   "title": "Ronny & Julia (TV series)"
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P941",
+   "qid": "Q15037029",
+   "title": "Goliyon Ki Raasleela Ram-Leela"
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P941",
+   "qid": "Q18619864",
+   "title": "Ronny & Julia"
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P941",
+   "qid": "Q76488932",
+   "title": "Die in a Gunfight"
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P941",
+   "qid": "Q94632015",
+   "title": null
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P941",
+   "qid": "Q112570583",
+   "title": null
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P941",
+   "qid": "Q114834651",
+   "title": null
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P941",
+   "qid": "Q218894",
+   "title": "Pocahontas (1995 film)"
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P941",
+   "qid": "Q2739284",
+   "title": "Romeo and Juliet (Dire Straits song)"
+  },
+  {
+   "play": "Romeo and Juliet",
+   "play_qid": "Q83186",
+   "prop": "P941",
+   "qid": "Q3388152",
+   "title": "Romeo & Juliet: Sealed with a Kiss"
+  },
+  {
+   "play": "Julius Caesar",
+   "play_qid": "Q215750",
+   "prop": "P144",
+   "qid": "Q3189841",
+   "title": null
+  },
+  {
+   "play": "Julius Caesar",
+   "play_qid": "Q215750",
+   "prop": "P144",
+   "qid": "Q3811185",
+   "title": null
+  },
+  {
+   "play": "Julius Caesar",
+   "play_qid": "Q215750",
+   "prop": "P144",
+   "qid": "Q47429873",
+   "title": null
+  },
+  {
+   "play": "Julius Caesar",
+   "play_qid": "Q215750",
+   "prop": "P144",
+   "qid": "Q47429921",
+   "title": null
+  },
+  {
+   "play": "Julius Caesar",
+   "play_qid": "Q215750",
+   "prop": "P144",
+   "qid": "Q64830887",
+   "title": null
+  },
+  {
+   "play": "Julius Caesar",
+   "play_qid": "Q215750",
+   "prop": "P144",
+   "qid": "Q112144800",
+   "title": null
+  },
+  {
+   "play": "Julius Caesar",
+   "play_qid": "Q215750",
+   "prop": "P144",
+   "qid": "Q1059540",
+   "title": "Caesar Must Die"
+  },
+  {
+   "play": "Julius Caesar",
+   "play_qid": "Q215750",
+   "prop": "P144",
+   "qid": "Q3005588",
+   "title": "Shakespeare: The Animated Tales"
+  },
+  {
+   "play": "Julius Caesar",
+   "play_qid": "Q215750",
+   "prop": "P144",
+   "qid": "Q6466260",
+   "title": "La morte di Cesare"
+  },
+  {
+   "play": "Julius Caesar",
+   "play_qid": "Q215750",
+   "prop": "P144",
+   "qid": "Q25182893",
+   "title": "Caesar (Mercury Theatre)"
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q120231",
+   "title": "Hamlet: The Drama of Vengeance"
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q280104",
+   "title": "Hamlet (video game)"
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q631016",
+   "title": "Hamlet (Thomas)"
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q692249",
+   "title": "Hamlet (Tchaikovsky)"
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q898721",
+   "title": "Hamlet (1996 film)"
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q27178",
+   "title": "Hamlet (1948 film)"
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q60790892",
+   "title": "Too, Too Solid Flesh"
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q114946811",
+   "title": "Ophélie n'est pas Morte"
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q123403594",
+   "title": "Hamlet (2025 film)"
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q131904077",
+   "title": "Hamlet, or the Phenomenon of Danish Katsapism"
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q938067",
+   "title": "Hamletmachine"
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q1065493",
+   "title": "Ophelia (Millais)"
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q1393651",
+   "title": "Hamlet (2000 film)"
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q1422824",
+   "title": "Hamlet (1990 film)"
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q2390637",
+   "title": "Hamlet (1961 film)"
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q1865423",
+   "title": null
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q2238976",
+   "title": null
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q11500973",
+   "title": null
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q17229837",
+   "title": null
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q17491635",
+   "title": null
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q17652030",
+   "title": null
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q23893747",
+   "title": null
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q47428201",
+   "title": null
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q47428256",
+   "title": null
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q50871988",
+   "title": null
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q50872559",
+   "title": null
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q55860182",
+   "title": null
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q59238929",
+   "title": null
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q61707888",
+   "title": null
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q62057627",
+   "title": null
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q65658532",
+   "title": null
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q109002345",
+   "title": null
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q109407787",
+   "title": null
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q111031496",
+   "title": null
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q122913097",
+   "title": null
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q122913201",
+   "title": null
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q122913575",
+   "title": null
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q122914142",
+   "title": null
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q130646686",
+   "title": null
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q136679482",
+   "title": null
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q137285544",
+   "title": null
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q140422226",
+   "title": null
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q140422227",
+   "title": null
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q140422225",
+   "title": null
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q141433877",
+   "title": null
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q2481391",
+   "title": "Hamlet (1964 film)"
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q2517513",
+   "title": "Rosencrantz and Guildenstern Are Dead"
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q3005588",
+   "title": "Shakespeare: The Animated Tales"
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q3015278",
+   "title": "Hamlet (1969 film)"
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q3126475",
+   "title": "Hamlet (1907 film)"
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q3126476",
+   "title": "Hamlet (1908 film)"
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q3597601",
+   "title": "15-Minute Hamlet"
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q3614384",
+   "title": "Hamlet (1917 film)"
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q3782878",
+   "title": "Hamlet (1913 film)"
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q3782877",
+   "title": "Hamlet (1912 film)"
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q5553413",
+   "title": "Gertrude – The Cry"
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q5645442",
+   "title": "Hamlet (1900 film)"
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q5645443",
+   "title": "Hamlet (2009 film)"
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q5645445",
+   "title": "Hamlet (EWTC show)"
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q5645468",
+   "title": "Hamlet at Elsinore"
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q6372724",
+   "title": "Karmayogi (2012 film)"
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q6533081",
+   "title": "Let the Devil Wear Black"
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q7368547",
+   "title": "Rosencrantz and Guildenstern (play)"
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q7535446",
+   "title": "Skinhead Hamlet"
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q7621346",
+   "title": "Strange Brew"
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q7685719",
+   "title": "Doubt (2009 film)"
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q7713773",
+   "title": "The Angel of Vengeance – The Female Hamlet"
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q15726236",
+   "title": "Haider (film)"
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q16205233",
+   "title": "To Be or Not to Be (book)"
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q18752821",
+   "title": "Khoon Ka Khoon"
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q30597804",
+   "title": "Ophelia (2018 film)"
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q42306683",
+   "title": "Hamlet (Dean)"
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P144",
+   "qid": "Q54800666",
+   "title": "The Klingon Hamlet"
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P941",
+   "qid": "Q36479",
+   "title": "The Lion King"
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P941",
+   "qid": "Q131542846",
+   "title": "Scarlet (2025 film)"
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P941",
+   "qid": "Q2046584",
+   "title": null
+  },
+  {
+   "play": "Hamlet",
+   "play_qid": "Q41567",
+   "prop": "P941",
+   "qid": "Q136749788",
+   "title": null
+  },
+  {
+   "play": "Othello",
+   "play_qid": "Q26833",
+   "prop": "P144",
+   "qid": "Q7108561",
+   "title": "Othello (Orson Welles stage production)"
+  },
+  {
+   "play": "Othello",
+   "play_qid": "Q26833",
+   "prop": "P144",
+   "qid": "Q7108564",
+   "title": "Othello (ballet)"
+  },
+  {
+   "play": "Othello",
+   "play_qid": "Q26833",
+   "prop": "P144",
+   "qid": "Q7752202",
+   "title": "The Moor's Pavane"
+  },
+  {
+   "play": "Othello",
+   "play_qid": "Q26833",
+   "prop": "P144",
+   "qid": "Q28970966",
+   "title": "Othello (Wednesday Theatre)"
+  },
+  {
+   "play": "Othello",
+   "play_qid": "Q26833",
+   "prop": "P144",
+   "qid": "Q29828859",
+   "title": "Harlem Duet"
+  },
+  {
+   "play": "Othello",
+   "play_qid": "Q26833",
+   "prop": "P144",
+   "qid": "Q59660713",
+   "title": "Saubhagya Sundari"
+  },
+  {
+   "play": "Othello",
+   "play_qid": "Q26833",
+   "prop": "P144",
+   "qid": "Q100265390",
+   "title": "The Boss (1958 film)"
+  },
+  {
+   "play": "Othello",
+   "play_qid": "Q26833",
+   "prop": "P144",
+   "qid": "Q2250645",
+   "title": "Othello (1955 film)"
+  },
+  {
+   "play": "Othello",
+   "play_qid": "Q26833",
+   "prop": "P144",
+   "qid": "Q2704454",
+   "title": "Othello (1951 film)"
+  },
+  {
+   "play": "Othello",
+   "play_qid": "Q26833",
+   "prop": "P144",
+   "qid": "Q2737200",
+   "title": "Omkara (2006 film)"
+  },
+  {
+   "play": "Othello",
+   "play_qid": "Q26833",
+   "prop": "P144",
+   "qid": "Q3005588",
+   "title": "Shakespeare: The Animated Tales"
+  },
+  {
+   "play": "Othello",
+   "play_qid": "Q26833",
+   "prop": "P144",
+   "qid": "Q3887056",
+   "title": "Otello (1986 film)"
+  },
+  {
+   "play": "Othello",
+   "play_qid": "Q26833",
+   "prop": "P144",
+   "qid": "Q5051669",
+   "title": "Catch My Soul (musical)"
+  },
+  {
+   "play": "Othello",
+   "play_qid": "Q26833",
+   "prop": "P144",
+   "qid": "Q6353285",
+   "title": "Kaliyattam"
+  },
+  {
+   "play": "Othello",
+   "play_qid": "Q26833",
+   "prop": "P144",
+   "qid": "Q5903902",
+   "title": null
+  },
+  {
+   "play": "Othello",
+   "play_qid": "Q26833",
+   "prop": "P144",
+   "qid": "Q6054456",
+   "title": null
+  },
+  {
+   "play": "Othello",
+   "play_qid": "Q26833",
+   "prop": "P144",
+   "qid": "Q14755260",
+   "title": null
+  },
+  {
+   "play": "Othello",
+   "play_qid": "Q26833",
+   "prop": "P144",
+   "qid": "Q20413990",
+   "title": null
+  },
+  {
+   "play": "Othello",
+   "play_qid": "Q26833",
+   "prop": "P144",
+   "qid": "Q47434472",
+   "title": null
+  },
+  {
+   "play": "Othello",
+   "play_qid": "Q26833",
+   "prop": "P144",
+   "qid": "Q47434509",
+   "title": null
+  },
+  {
+   "play": "Othello",
+   "play_qid": "Q26833",
+   "prop": "P144",
+   "qid": "Q47434551",
+   "title": null
+  },
+  {
+   "play": "Othello",
+   "play_qid": "Q26833",
+   "prop": "P144",
+   "qid": "Q55840065",
+   "title": null
+  },
+  {
+   "play": "Othello",
+   "play_qid": "Q26833",
+   "prop": "P144",
+   "qid": "Q57504118",
+   "title": null
+  },
+  {
+   "play": "Othello",
+   "play_qid": "Q26833",
+   "prop": "P144",
+   "qid": "Q57505171",
+   "title": null
+  },
+  {
+   "play": "Othello",
+   "play_qid": "Q26833",
+   "prop": "P144",
+   "qid": "Q57506067",
+   "title": null
+  },
+  {
+   "play": "Othello",
+   "play_qid": "Q26833",
+   "prop": "P144",
+   "qid": "Q57506376",
+   "title": null
+  },
+  {
+   "play": "Othello",
+   "play_qid": "Q26833",
+   "prop": "P144",
+   "qid": "Q96760006",
+   "title": null
+  },
+  {
+   "play": "Othello",
+   "play_qid": "Q26833",
+   "prop": "P144",
+   "qid": "Q107433355",
+   "title": null
+  },
+  {
+   "play": "Othello",
+   "play_qid": "Q26833",
+   "prop": "P144",
+   "qid": "Q111166167",
+   "title": null
+  },
+  {
+   "play": "Othello",
+   "play_qid": "Q26833",
+   "prop": "P144",
+   "qid": "Q113551457",
+   "title": null
+  },
+  {
+   "play": "Othello",
+   "play_qid": "Q26833",
+   "prop": "P144",
+   "qid": "Q131304280",
+   "title": null
+  },
+  {
+   "play": "Othello",
+   "play_qid": "Q26833",
+   "prop": "P144",
+   "qid": "Q134389757",
+   "title": null
+  },
+  {
+   "play": "Othello",
+   "play_qid": "Q26833",
+   "prop": "P144",
+   "qid": "Q137051021",
+   "title": null
+  },
+  {
+   "play": "Othello",
+   "play_qid": "Q26833",
+   "prop": "P144",
+   "qid": "Q137386164",
+   "title": null
+  },
+  {
+   "play": "Othello",
+   "play_qid": "Q26833",
+   "prop": "P144",
+   "qid": "Q172324",
+   "title": "Otello"
+  },
+  {
+   "play": "Othello",
+   "play_qid": "Q26833",
+   "prop": "P144",
+   "qid": "Q925332",
+   "title": "Otello (Rossini)"
+  },
+  {
+   "play": "Othello",
+   "play_qid": "Q26833",
+   "prop": "P144",
+   "qid": "Q1057816",
+   "title": "Otello (1906 film)"
+  },
+  {
+   "play": "Othello",
+   "play_qid": "Q26833",
+   "prop": "P144",
+   "qid": "Q1501773",
+   "title": "O (2001 film)"
+  },
+  {
+   "play": "Othello",
+   "play_qid": "Q26833",
+   "prop": "P144",
+   "qid": "Q2036869",
+   "title": "Othello (1995 film)"
+  },
+  {
+   "play": "King Lear",
+   "play_qid": "Q181598",
+   "prop": "P144",
+   "qid": "Q565231",
+   "title": "Ran (film)"
+  },
+  {
+   "play": "King Lear",
+   "play_qid": "Q181598",
+   "prop": "P144",
+   "qid": "Q948566",
+   "title": "Lear (opera)"
+  },
+  {
+   "play": "King Lear",
+   "play_qid": "Q181598",
+   "prop": "P144",
+   "qid": "Q1435964",
+   "title": "Fool (novel)"
+  },
+  {
+   "play": "King Lear",
+   "play_qid": "Q181598",
+   "prop": "P144",
+   "qid": "Q1658943",
+   "title": "King Lear (1983 TV programme)"
+  },
+  {
+   "play": "King Lear",
+   "play_qid": "Q181598",
+   "prop": "P144",
+   "qid": "Q2032498",
+   "title": "Suave Veneno"
+  },
+  {
+   "play": "King Lear",
+   "play_qid": "Q181598",
+   "prop": "P144",
+   "qid": "Q2406650",
+   "title": "King Lear (1971 Soviet film)"
+  },
+  {
+   "play": "King Lear",
+   "play_qid": "Q181598",
+   "prop": "P144",
+   "qid": "Q2707428",
+   "title": "King Lear (1987 film)"
+  },
+  {
+   "play": "King Lear",
+   "play_qid": "Q181598",
+   "prop": "P144",
+   "qid": "Q14757140",
+   "title": null
+  },
+  {
+   "play": "King Lear",
+   "play_qid": "Q181598",
+   "prop": "P144",
+   "qid": "Q19925330",
+   "title": null
+  },
+  {
+   "play": "King Lear",
+   "play_qid": "Q181598",
+   "prop": "P144",
+   "qid": "Q25439389",
+   "title": null
+  },
+  {
+   "play": "King Lear",
+   "play_qid": "Q181598",
+   "prop": "P144",
+   "qid": "Q47430700",
+   "title": null
+  },
+  {
+   "play": "King Lear",
+   "play_qid": "Q181598",
+   "prop": "P144",
+   "qid": "Q47430757",
+   "title": null
+  },
+  {
+   "play": "King Lear",
+   "play_qid": "Q181598",
+   "prop": "P144",
+   "qid": "Q55839957",
+   "title": null
+  },
+  {
+   "play": "King Lear",
+   "play_qid": "Q181598",
+   "prop": "P144",
+   "qid": "Q81418328",
+   "title": null
+  },
+  {
+   "play": "King Lear",
+   "play_qid": "Q181598",
+   "prop": "P144",
+   "qid": "Q90698615",
+   "title": null
+  },
+  {
+   "play": "King Lear",
+   "play_qid": "Q181598",
+   "prop": "P144",
+   "qid": "Q106937835",
+   "title": null
+  },
+  {
+   "play": "King Lear",
+   "play_qid": "Q181598",
+   "prop": "P144",
+   "qid": "Q107310021",
+   "title": null
+  },
+  {
+   "play": "King Lear",
+   "play_qid": "Q181598",
+   "prop": "P144",
+   "qid": "Q109002465",
+   "title": null
+  },
+  {
+   "play": "King Lear",
+   "play_qid": "Q181598",
+   "prop": "P144",
+   "qid": "Q135225268",
+   "title": null
+  },
+  {
+   "play": "King Lear",
+   "play_qid": "Q181598",
+   "prop": "P144",
+   "qid": "Q136101126",
+   "title": null
+  },
+  {
+   "play": "King Lear",
+   "play_qid": "Q181598",
+   "prop": "P144",
+   "qid": "Q137117204",
+   "title": null
+  },
+  {
+   "play": "King Lear",
+   "play_qid": "Q181598",
+   "prop": "P144",
+   "qid": "Q3197020",
+   "title": "King Lear (1971 British film)"
+  },
+  {
+   "play": "King Lear",
+   "play_qid": "Q181598",
+   "prop": "P144",
+   "qid": "Q3930878",
+   "title": "King Lear (1910 film)"
+  },
+  {
+   "play": "King Lear",
+   "play_qid": "Q181598",
+   "prop": "P144",
+   "qid": "Q6444716",
+   "title": "Kuningas Lear"
+  },
+  {
+   "play": "King Lear",
+   "play_qid": "Q181598",
+   "prop": "P144",
+   "qid": "Q6509991",
+   "title": "Lear (play)"
+  },
+  {
+   "play": "King Lear",
+   "play_qid": "Q181598",
+   "prop": "P144",
+   "qid": "Q7398556",
+   "title": "Safed Khoon"
+  },
+  {
+   "play": "King Lear",
+   "play_qid": "Q181598",
+   "prop": "P144",
+   "qid": "Q7740911",
+   "title": "The Humbling"
+  },
+  {
+   "play": "King Lear",
+   "play_qid": "Q181598",
+   "prop": "P144",
+   "qid": "Q16386561",
+   "title": "King Lear (1953 film)"
+  },
+  {
+   "play": "King Lear",
+   "play_qid": "Q181598",
+   "prop": "P144",
+   "qid": "Q54510755",
+   "title": "King Lear (2018 film)"
+  },
+  {
+   "play": "King Lear",
+   "play_qid": "Q181598",
+   "prop": "P144",
+   "qid": "Q60752019",
+   "title": "Vision of Lear"
+  },
+  {
+   "play": "King Lear",
+   "play_qid": "Q181598",
+   "prop": "P144",
+   "qid": "Q105409922",
+   "title": "Dunbar (novel)"
+  },
+  {
+   "play": "King Lear",
+   "play_qid": "Q181598",
+   "prop": "P144",
+   "qid": "Q128305820",
+   "title": "Lear Rex"
+  },
+  {
+   "play": "King Lear",
+   "play_qid": "Q181598",
+   "prop": "P941",
+   "qid": "Q97369942",
+   "title": null
+  },
+  {
+   "play": "King Lear",
+   "play_qid": "Q181598",
+   "prop": "P941",
+   "qid": "Q104664742",
+   "title": null
+  },
+  {
+   "play": "King Lear",
+   "play_qid": "Q181598",
+   "prop": "P941",
+   "qid": "Q133437334",
+   "title": null
+  },
+  {
+   "play": "King Lear",
+   "play_qid": "Q181598",
+   "prop": "P941",
+   "qid": "Q3197020",
+   "title": "King Lear (1971 British film)"
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q257818",
+   "title": "Throne of Blood"
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q320363",
+   "title": "Macbeth (Verdi)"
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q542866",
+   "title": "Maqbool"
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q929582",
+   "title": "Macbeth (1971 film)"
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q6722790",
+   "title": "Macbeth (1909 French film)"
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q6722791",
+   "title": "Macbeth (1909 Italian film)"
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q6722794",
+   "title": "Macbeth (1913 film)"
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q6722798",
+   "title": "Macbeth (1922 film)"
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q6722796",
+   "title": "Macbeth (1916 film)"
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q6722801",
+   "title": "Macbeth (1960 American film)"
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q6748396",
+   "title": "Khwab-e-Hasti"
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q7539707",
+   "title": "Sleep No More (2011 play)"
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q7865160",
+   "title": "UMabatha"
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q7941656",
+   "title": "Voodoo Macbeth"
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q15934383",
+   "title": "Macbeth (2015 film)"
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q16201273",
+   "title": "Ellen Terry as Lady Macbeth"
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q16661870",
+   "title": "Macbeth (1961 film)"
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q18685516",
+   "title": "Macbeth (painting)"
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q1165009",
+   "title": "Macbeth (Strauss)"
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q1248495",
+   "title": "Macbett"
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q1471487",
+   "title": "Men of Respect"
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q1475572",
+   "title": "Macbeth (1982 film)"
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q1935311",
+   "title": "Macbeth (album)"
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q2573008",
+   "title": "Macbeth (1948 film)"
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q2917783",
+   "title": "Macbeth (Bloch)"
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q3005588",
+   "title": "Shakespeare: The Animated Tales"
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q3841961",
+   "title": "Macbeth (2006 film)"
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q4275584",
+   "title": "Macbeth (1979 film)"
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q6721750",
+   "title": "MacBird!"
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q14955376",
+   "title": null
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q21197472",
+   "title": null
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q47431808",
+   "title": null
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q47431895",
+   "title": null
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q55860855",
+   "title": null
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q56472547",
+   "title": null
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q57503646",
+   "title": null
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q61450950",
+   "title": null
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q68044795",
+   "title": null
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q81411908",
+   "title": null
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q81533729",
+   "title": null
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q106374735",
+   "title": null
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q106412837",
+   "title": null
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q109242832",
+   "title": null
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q109646487",
+   "title": null
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q111910158",
+   "title": null
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q113626630",
+   "title": null
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q122914121",
+   "title": null
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q137219838",
+   "title": null
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q137554137",
+   "title": null
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q27313254",
+   "title": "Banquo's Ghost"
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q27940690",
+   "title": "Veeram (2016 film)"
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q28224687",
+   "title": "Macbeth (1960 Australian film)"
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q28548559",
+   "title": "Thane of East County"
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q29322698",
+   "title": "Macbeth (Wednesday Theatre)"
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q56290967",
+   "title": "Macbeth (Nesbø novel)"
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q84693711",
+   "title": "The Tragedy of Macbeth (2021 film)"
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q108412131",
+   "title": "Macbeth (1981 film)"
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q114946811",
+   "title": "Ophélie n'est pas Morte"
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P144",
+   "qid": "Q138543159",
+   "title": "Mackenzie (play)"
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P941",
+   "qid": "Q87119730",
+   "title": null
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P941",
+   "qid": "Q110503476",
+   "title": null
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P941",
+   "qid": "Q1765450",
+   "title": "Wyrd Sisters"
+  },
+  {
+   "play": "Macbeth",
+   "play_qid": "Q130283",
+   "prop": "P941",
+   "qid": "Q7729535",
+   "title": "The Deed Is Done"
+  },
+  {
+   "play": "Antony and Cleopatra",
+   "play_qid": "Q606830",
+   "prop": "P144",
+   "qid": "Q17611907",
+   "title": null
+  },
+  {
+   "play": "Antony and Cleopatra",
+   "play_qid": "Q606830",
+   "prop": "P144",
+   "qid": "Q47402980",
+   "title": null
+  },
+  {
+   "play": "Antony and Cleopatra",
+   "play_qid": "Q606830",
+   "prop": "P144",
+   "qid": "Q117326488",
+   "title": null
+  },
+  {
+   "play": "Antony and Cleopatra",
+   "play_qid": "Q606830",
+   "prop": "P144",
+   "qid": "Q133457422",
+   "title": null
+  },
+  {
+   "play": "Antony and Cleopatra",
+   "play_qid": "Q606830",
+   "prop": "P144",
+   "qid": "Q1076226",
+   "title": "Antony and Cleopatra (1972 film)"
+  },
+  {
+   "play": "Antony and Cleopatra",
+   "play_qid": "Q606830",
+   "prop": "P144",
+   "qid": "Q3845426",
+   "title": "Antony and Cleopatra (1913 film)"
+  },
+  {
+   "play": "Antony and Cleopatra",
+   "play_qid": "Q606830",
+   "prop": "P144",
+   "qid": "Q4067295",
+   "title": "Antony and Cleopatra (1908 film)"
+  },
+  {
+   "play": "Antony and Cleopatra",
+   "play_qid": "Q606830",
+   "prop": "P144",
+   "qid": "Q4777266",
+   "title": "Antony and Cleopatra (Barber)"
+  },
+  {
+   "play": "Antony and Cleopatra",
+   "play_qid": "Q606830",
+   "prop": "P144",
+   "qid": "Q51546903",
+   "title": "Cleopatra (Rossi)"
+  },
+  {
+   "play": "Antony and Cleopatra",
+   "play_qid": "Q606830",
+   "prop": "P144",
+   "qid": "Q116442842",
+   "title": "Antony and Cleopatra (Adams)"
+  },
+  {
+   "play": "Coriolanus",
+   "play_qid": "Q463126",
+   "prop": "P144",
+   "qid": "Q2997370",
+   "title": null
+  },
+  {
+   "play": "Coriolanus",
+   "play_qid": "Q463126",
+   "prop": "P144",
+   "qid": "Q1132978",
+   "title": "Coriolanus (film)"
+  },
+  {
+   "play": "Coriolanus",
+   "play_qid": "Q463126",
+   "prop": "P144",
+   "qid": "Q5170708",
+   "title": "Coriolanus (Brecht)"
+  },
+  {
+   "play": "Timon of Athens",
+   "play_qid": "Q284641",
+   "prop": "P144",
+   "qid": "Q47437666",
+   "title": null
+  },
+  {
+   "play": "Timon of Athens",
+   "play_qid": "Q284641",
+   "prop": "P144",
+   "qid": "Q55905850",
+   "title": null
+  },
+  {
+   "play": "Timon of Athens",
+   "play_qid": "Q284641",
+   "prop": "P144",
+   "qid": "Q106352910",
+   "title": null
+  }
+ ]
+}

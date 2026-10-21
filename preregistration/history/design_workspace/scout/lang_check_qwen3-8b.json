@@ -1,0 +1,193 @@
+{
+ "model": "mlx-community/Qwen3-8B-4bit",
+ "tokens": {
+  "en": {
+   "per_sentence": [
+    34,
+    23,
+    19
+   ],
+   "ratio_to_en": 1.0,
+   "chars_per_token": 4.8
+  },
+  "zh": {
+   "per_sentence": [
+    31,
+    27,
+    15
+   ],
+   "ratio_to_en": 0.96,
+   "chars_per_token": 1.45
+  },
+  "ja": {
+   "per_sentence": [
+    45,
+    41,
+    34
+   ],
+   "ratio_to_en": 1.58,
+   "chars_per_token": 1.15
+  },
+  "ru": {
+   "per_sentence": [
+    57,
+    38,
+    29
+   ],
+   "ratio_to_en": 1.63,
+   "chars_per_token": 2.9
+  },
+  "hi": {
+   "per_sentence": [
+    184,
+    118,
+    94
+   ],
+   "ratio_to_en": 5.21,
+   "chars_per_token": 1.05
+  }
+ },
+ "roundtrip": {
+  "en": true,
+  "zh": true,
+  "ja": true,
+  "ru": true,
+  "hi": true
+ },
+ "spans_ok": {
+  "en": {
+   "ok": true,
+   "spans": [
+    [
+     1,
+     34
+    ],
+    [
+     34,
+     57
+    ],
+    [
+     57,
+     76
+    ]
+   ],
+   "n_ids": 76
+  },
+  "zh": {
+   "ok": true,
+   "spans": [
+    [
+     1,
+     31
+    ],
+    [
+     31,
+     58
+    ],
+    [
+     58,
+     75
+    ]
+   ],
+   "n_ids": 75,
+   "xcode_head_tokens": [
+    "X",
+    "1",
+    "把",
+    "偷",
+    "来的",
+    "信"
+   ]
+  },
+  "ja": {
+   "ok": true,
+   "spans": [
+    [
+     1,
+     45
+    ],
+    [
+     45,
+     86
+    ],
+    [
+     86,
+     121
+    ]
+   ],
+   "n_ids": 121,
+   "xcode_head_tokens": [
+    "X",
+    "1",
+    "は",
+    "盗",
+    "んだ",
+    "手"
+   ]
+  },
+  "ru": {
+   "ok": true,
+   "spans": [
+    [
+     1,
+     57
+    ],
+    [
+     57,
+     95
+    ],
+    [
+     95,
+     124
+    ]
+   ],
+   "n_ids": 124,
+   "xcode_head_tokens": [
+    "X",
+    "1",
+    " пря",
+    "чет",
+    " у",
+    "к"
+   ]
+  },
+  "hi": {
+   "ok": true,
+   "spans": [
+    [
+     1,
+     184
+    ],
+    [
+     184,
+     302
+    ],
+    [
+     302,
+     397
+    ]
+   ],
+   "n_ids": 397,
+   "xcode_head_tokens": [
+    "X",
+    "1",
+    " �",
+    "�",
+    "ु",
+    "र"
+   ]
+  }
+ },
+ "back_translation": {
+  "zh": "After her father, the lighthouse keeper, disappeared during a storm, her brother, who had been estranged for years, returned to the island and learned that the harbor master had been forging ship records. X1 hid the stolen letters in the chapel, but X3 followed her there and threatened to tell the bishop. The old fisherman refused to sell his boat, so the developer set fire to his workshop.",
+  "ja": "After the lighthouse keeper's daughter went missing during a storm, her estranged brother returned to the island and discovered that the harbor master had forged ship records. X1 hides the stolen letter in the church, but X3 follows her there and tells the bishop, threatening him. The old fisherman refused to sell his boat, so the developers set fire to his workshop.",
+  "ru": "After the daughter of the lighthouse keeper disappears during a storm, her long-absent brother returns to the island and discovers that the port authority chief had falsified ship records. X1 hides the stolen letters in the chapel, but X3 follows her there and threatens to tell the bishop. The old fisherman refuses to sell his boat, so the developers set fire to his workshop.",
+  "hi": "After the girl of the lighthouse keeper goes missing during a storm, her estranged brother returns to the island and discovers that the harbor official has been falsifying records of ships. X1 hides the stolen letters in the church, but X3 follows and arrives there, threatening to tell the bishop. The old fisherman refuses to sell his boat, so the builders set fire to his workshop."
+ },
+ "continuation": {
+  "zh": "他翻遍了所有航海日志，终于在一份被涂改的记录里发现了妹妹失踪前最后的踪迹。而当他在废弃灯塔深处找到那本密录簿时，却发现上面密密麻麻写满了妹妹用血画下的求救信号。",
+  "ja": "港長は灯台守の娘を助けた人物だと偽り、自分を救ったと主張した。",
+  "ru": "Он находит скрытую лабораторию, где проводили эксперименты с гидрофобными покрытиями. Вместе с местными жителями, он раскрывает заговор, связанный с незаконной добычей редкого минерала на побережье.",
+  "hi": "उसके भाई ने बंदरगाह अधिकारी के खिलाफ आरोप लगाए और उसे गिरफ्तार कर लिया गया। अब वह अपनी बहन की खोज में द्वीप के गहरे जंगल में घुस जाता है।"
+ }
+}

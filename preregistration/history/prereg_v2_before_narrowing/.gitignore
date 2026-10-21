@@ -1,0 +1,5 @@
+# large model-side arrays (regenerate with extract_compact.py and readers.py)
+features/
+# the benchmark's scratch folder (results/bench.json is committed)
+bench_work/
+__pycache__/

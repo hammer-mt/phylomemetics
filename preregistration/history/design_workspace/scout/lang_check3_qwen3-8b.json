@@ -1,0 +1,64 @@
+{
+ "model": "mlx-community/Qwen3-8B-4bit",
+ "tokens": {
+  "es": {
+   "ratio_to_en": 1.53
+  },
+  "de": {
+   "ratio_to_en": 1.7
+  },
+  "fr": {
+   "ratio_to_en": 1.54
+  },
+  "th": {
+   "ratio_to_en": 1.89
+  },
+  "en": {
+   "ratio_to_en": 1.0
+  },
+  "zh": {
+   "ratio_to_en": 0.96
+  }
+ },
+ "roundtrip": {
+  "es": true,
+  "de": true,
+  "fr": true,
+  "th": true,
+  "en": true,
+  "zh": true
+ },
+ "spans_ok": {
+  "es": true,
+  "de": true,
+  "fr": true,
+  "th": true,
+  "en": true,
+  "zh": true
+ },
+ "story": {
+  "en": {
+   "tokens": 485,
+   "spans_ok": true,
+   "answers": "1. Ilse hid the ledgers inside a cracked chandelier.  \n2. The harbour clerk had the apprentice beaten in an alley behind the bell tower.  \n3. Tomas recognised the magistrate's signature in the ledgers.  \n4. The second ledger revealed the mother's name with a payment beside it, suggesting her death was intentional.  \n5. Ilse made lenses for the lighthouse from her mother's last chandelier to help guide a relief ship.  \n6. The merchant tried to escape on a rotten salt barge, which broke apart in the harbour."
+  },
+  "zh": {
+   "tokens": 545,
+   "spans_ok": true,
+   "answers": "1. Ilse hid the ledgers inside a broken candelabrum.  \n2. The clerk had the apprentice beaten in a alley behind the clock tower.  \n3. Tomas recognised the signature of his uncle, the local judge.  \n4. The second ledger revealed the mother's name was on the list of those who drowned.  \n5. Ilse made a lens for the lighthouse from her mother's last chandelier.  \n6. The merchant tried to escape on a rotten salt barge, which collapsed at the dock."
+  },
+  "es": {
+   "tokens": 746,
+   "spans_ok": true,
+   "answers": "1. Ilse hid the ledgers inside a cracked chandelier.  \n2. The scribe had the apprentice beaten in a alley behind the bell tower.  \n3. Tomas recognised his uncle's signature in the ledgers.  \n4. The second ledger revealed the mother's name with a payment next to it.  \n5. Ilse made lenses from her mother's last chandelier to fix the lighthouse.  \n6. The merchant tried to escape in a salt barge, but it broke apart in the harbor."
+  }
+ },
+ "gold": [
+  "inside a cracked chandelier",
+  "the harbour clerk; two dockhands; alley behind the bell tower",
+  "his uncle, the magistrate",
+  "the flood gates were opened on purpose (a payment beside her name): she was killed",
+  "lenses for the lighthouse, whose lamp had failed",
+  "on a salt barge, which broke apart in the harbour mouth"
+ ]
+}
