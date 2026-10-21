@@ -31,6 +31,7 @@
   const GROUPS = ["Early (1943–66)", "Grim & gritty comics (1986–96)", "Burton & Schumacher films", "Animated films",
     "Modern comics (2002–17)", "Nolan trilogy", "Arkham games", "Recent films (2016–22)", "Cousins & ancestors"];
   const groupVar = (g) => { const i = GROUPS.indexOf(g); return i === 8 ? "var(--cousin)" : `var(--s${i + 1})`; };
+  const groupName = (g) => (g === "Cousins & ancestors" ? "Relatives" : g); // display name only; the data keeps its label
 
   // ---------- tooltip ----------
   const tip = document.createElement("div");
@@ -48,6 +49,7 @@
   const hover = (node, html) => {
     node.addEventListener("mousemove", (e) => showTip(e, typeof html === "function" ? html() : html));
     node.addEventListener("mouseleave", hideTip);
+    node.addEventListener("click", (e) => showTip(e, typeof html === "function" ? html() : html)); // tap on touch screens
   };
 
   // ---------- headline chart A: cross-model match by meme strength ----------
@@ -133,13 +135,13 @@
       if (!w) return;
       const x = left + i * cw + cw / 2;
       const t = txt(svg, { x, y: top - 10, transform: `rotate(-62 ${x} ${top - 10})`, class: "collab" + (w.group === "cousin" ? " cousin" : "") }, `${w.label} ${yr(w)}`);
-      hover(t, `<b>${esc(w.title)}</b> (${w.year})<br><span class="tip-k">${esc(w.group_label)} · ${esc(w.medium)}</span>`);
+      hover(t, `<b>${esc(w.title)}</b> (${w.year})<br><span class="tip-k">${esc(groupName(w.group_label))} · ${esc(w.medium)}</span>`);
       el("rect", { x: left + i * cw + 2, y: top - 6, width: cw - 4, height: 3, rx: 1, fill: groupVar(w.group_label) }, svg);
     });
     const sepX = left + bat.length * cw + cw / 2;
     el("line", { x1: sepX, x2: sepX, y1: top - 2, y2: H - 28, class: "sep" }, svg);
     txt(svg, { x: left + (bat.length * cw) / 2, y: H - 10, "text-anchor": "middle", class: "axisnote" }, "32 Batman works, oldest → newest");
-    txt(svg, { x: sepX + (cous.length * cw) / 2 + cw / 2, y: H - 10, "text-anchor": "middle", class: "axisnote" }, "Cousins");
+    txt(svg, { x: sepX + (cous.length * cw) / 2 + cw / 2, y: H - 10, "text-anchor": "middle", class: "axisnote" }, "Relatives");
     // gap marker between 1966 and 1986
     const gapIdx = bat.findIndex((w) => w.year > 1966);
     if (gapIdx > 0) {
@@ -235,7 +237,7 @@
     leaves.forEach((l, k) => { l.y = top + k * rowH + rowH / 2; });
     (function setY(n) { if (n.children.length) { n.children.forEach(setY); n.y = (n.children[0].y + n.children[n.children.length - 1].y) / 2; } })(root);
     const X = (d) => left + (d / maxDepth) * plotW;
-    const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, width: W, height: H, class: "tree", role: "img", "aria-label": "Family tree of Batman works and cousins" }, host);
+    const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, width: W, height: H, class: "tree", role: "img", "aria-label": "Family tree of Batman works and relatives" }, host);
     (function drawN(n) {
       n.children.forEach((c) => { el("path", { d: `M${X(n.depth)},${c.y} H${X(c.depth)}`, class: "branch" }, svg); drawN(c); });
       if (n.children.length) el("path", { d: `M${X(n.depth)},${n.children[0].y} V${n.children[n.children.length - 1].y}`, class: "branch" }, svg);
@@ -246,12 +248,12 @@
       el("line", { x1: x, x2: left + plotW + 4, y1: l.y, y2: l.y, class: "leader" }, svg);
       el("circle", { cx: left + plotW + 10, cy: l.y, r: 4.5, fill: groupVar(w.group_label) }, svg);
       const t = txt(svg, { x: left + plotW + 20, y: l.y + 4, class: "leaf" + (w.group === "cousin" ? " cousin" : "") }, w.label.includes("(") ? w.label : `${w.label} (${w.year})`);
-      hover(t, `<b>${esc(w.title)}</b> (${w.year})<br><span class="tip-k">${esc(w.group_label)} · ${esc(w.medium)}</span>`);
+      hover(t, `<b>${esc(w.title)}</b> (${w.year})<br><span class="tip-k">${esc(groupName(w.group_label))} · ${esc(w.medium)}</span>`);
     });
   }
   function legend() {
     const host = $("#tree-legend"); if (!host) return;
-    host.innerHTML = GROUPS.map((g) => `<span class="lg"><i style="background:${groupVar(g)}"></i>${esc(g)}</span>`).join("");
+    host.innerHTML = GROUPS.map((g) => `<span class="lg"><i style="background:${groupVar(g)}"></i>${esc(groupName(g))}</span>`).join("");
   }
 
   // ---------- 4. Source comic table ----------

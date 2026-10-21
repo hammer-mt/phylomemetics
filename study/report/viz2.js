@@ -10,7 +10,7 @@
   const W = Object.fromEntries(P1.works.map((w) => [w.id, w]));
   const tip = document.querySelector(".tip") || (() => { const t = document.createElement("div"); t.className = "tip"; t.hidden = true; document.body.appendChild(t); return t; })();
   const show = (e, html) => { tip.innerHTML = html; tip.hidden = false; const r = tip.getBoundingClientRect(); let x = e.clientX + 14, y = e.clientY + 14; if (x + r.width > innerWidth - 8) x = e.clientX - r.width - 14; if (y + r.height > innerHeight - 8) y = e.clientY - r.height - 14; tip.style.left = Math.max(8, x) + "px"; tip.style.top = Math.max(8, y) + "px"; };
-  const hover = (node, html) => { node.addEventListener("mousemove", (e) => show(e, typeof html === "function" ? html() : html)); node.addEventListener("mouseleave", () => { tip.hidden = true; }); };
+  const hover = (node, html) => { node.addEventListener("mousemove", (e) => show(e, typeof html === "function" ? html() : html)); node.addEventListener("mouseleave", () => { tip.hidden = true; }); node.addEventListener("click", (e) => show(e, typeof html === "function" ? html() : html)); };
   const pct = (x) => Math.round(x * 100) + "%";
   const MODEL = { "qwen3-8b": "Qwen3-8B", "llama3.1-8b": "Llama 3.1 8B" };
 
@@ -59,7 +59,7 @@
     host.innerHTML = col("Must have", "In 29 or more of the 32 works", core) + col("Usually there", "In 23 to 28 works", common) + col("Optional", "A few of the 14,593: in 6 to 22 works", opt);
     host.querySelectorAll(".cchip").forEach((n) => {
       const c = chips.find((x) => String(x.unit) === n.dataset.u);
-      hover(n, `<b>${esc(c.label)}</b><br><span class="tip-k">${esc(c.kind)} · in ${c.n_batman} of 32 Batman works · ${c.n_cousin} of 13 cousins · ${c.specific ? "Batman's own" : "shared with other heroes"}</span>${c.note ? `<div class="tip-q">${esc(c.note)}</div>` : ""}`);
+      hover(n, `<b>${esc(c.label)}</b><br><span class="tip-k">${esc(c.kind)} · in ${c.n_batman} of 32 Batman works · ${c.n_cousin} of 13 relatives ·${c.specific ? "Batman's own" : "shared with other heroes"}</span>${c.note ? `<div class="tip-q">${esc(c.note)}</div>` : ""}`);
     });
   }
 
@@ -130,7 +130,7 @@
   // ---------------- Phase 2 ----------------
   function e1Auc() {
     const host = $("#e1-auc"); if (!host) return;
-    const groups = [["held_out_films", "Ordinary films (held out)"], ["literary_cousins", "Literary ancestors"], ["hero_film_cousins", "Superhero and masked-hero films"]];
+    const groups = [["held_out_films", "Ordinary films (held out)"], ["literary_cousins", "Literary relatives"], ["hero_film_cousins", "Superhero and masked-hero films"]];
     const tags = ["qwen3-8b", "llama3.1-8b"];
     const x0 = 250, x1 = 670, y0 = 40, rowH = 56;
     const H = y0 + groups.length * rowH + 40;
@@ -140,7 +140,7 @@
     el("line", { x1: X(0.5), x2: X(0.5), y1: y0 - 10, y2: H - 30, class: "ref ref-b" }, svg);
     el("line", { x1: X(0.8), x2: X(0.8), y1: y0 - 10, y2: H - 30, class: "ref ref-a" }, svg);
     txt(svg, { x: X(0.5), y: y0 - 16, "text-anchor": "middle", class: "tick" }, "chance");
-    txt(svg, { x: X(0.8), y: y0 - 16, "text-anchor": "middle", class: "tick" }, "pre-registered bar");
+    txt(svg, { x: X(0.8), y: y0 - 16, "text-anchor": "middle", class: "tick" }, "bar set in advance");
     groups.forEach(([key, name], i) => {
       const yc = y0 + i * rowH;
       txt(svg, { x: x0 - 12, y: yc + 22, "text-anchor": "end", class: "barlab" }, name);
@@ -150,7 +150,7 @@
         el("line", { x1: X(r.ci95[0]), x2: X(r.ci95[1]), y1: y, y2: y, class: "whisker" }, svg);
         const c = el("circle", { cx: X(r.auc), cy: y, r: 6, class: k === 0 ? "dot accent" : "dot ring" }, svg);
         txt(svg, { x: 690, y: y + 4, class: "barval" }, `${k === 0 ? "Qwen" : "Llama"} ${r.auc.toFixed(2)}`);
-        hover(c, `<b>${MODEL[tag]}</b> vs ${esc(name.toLowerCase())}<br>AUC ${r.auc.toFixed(2)} (95% CI ${r.ci95[0].toFixed(2)} to ${r.ci95[1].toFixed(2)})`);
+        hover(c, `<b>${MODEL[tag]}</b> vs ${esc(name.toLowerCase())}<br>AUC ${r.auc.toFixed(2)} (95% CI ${r.ci95[0].toFixed(2)} to ${r.ci95[1].toFixed(2)})<br><span class="tip-k">0.5 = coin toss, 1 = Batman always scores higher</span>`);
       });
     });
   }
@@ -181,7 +181,7 @@
     const host = $("#e1-core"); if (!host) return;
     const c = D.experiments["qwen3-8b"].E1.core, cl = D.experiments["llama3.1-8b"].E1.core;
     host.innerHTML = `<div class="corelist">${D.experiments.core_labels.filter((x) => x.label !== "No clear theme").map((x) => `<span class="cchip shared"><b>${esc(x.label)}</b></span>`).join("")}</div>
-      <p class="small muted">Qwen3-8B: ${c.n_core_units} of ${c.n_canon_units} canon neurons survive without names (Llama 3.1 8B: ${cl.n_core_units} of ${cl.n_canon_units}). They are present in ${pct(c.core_present_share_in_hero_cousins)} of hero-film cousins. The same procedure finds no name-free core at all for the cousins as a group or for random sets of 32 ordinary films.</p>`;
+      <p class="small muted">Qwen3-8B: ${c.n_core_units} of the ${c.n_canon_units} neurons in E1's canon survive without names (Llama 3.1 8B: ${cl.n_core_units} of ${cl.n_canon_units}). E1 counts single neurons before they merge into memes, so these numbers differ from Phase 1's 56 must-have memes. The survivors are present in ${pct(c.core_present_share_in_hero_cousins)} of the hero-film relatives. The same procedure finds no name-free core at all for the relatives as a group or for random sets of 32 ordinary films.</p>`;
   }
 
   function e2Ranks() {
@@ -283,7 +283,7 @@
     txt(svg, { x: x0, y: 22, class: "axlab" }, "Spread of its memes into later works, above or below expectation");
     rows.forEach((r, i) => {
       const c = el("circle", { cx: X(xs[i]), cy: Y(ys[i]), r: 6, class: "dot" }, svg);
-      hover(c, `<b>${esc(r.work)}</b> (${r.year})<br>${r.monthly_views.toLocaleString()} views a month<br><span class="tip-k">offspring score ${r.offspring > 0 ? "+" : ""}${(r.offspring * 1000).toFixed(2)} per thousand</span>`);
+      hover(c, `<b>${esc(r.work)}</b> (${r.year})<br>${r.monthly_views.toLocaleString()} views a month<br><span class="tip-k">spread into later works (offspring score): ${r.offspring > 0 ? "+" : ""}${(r.offspring * 1000).toFixed(2)} per thousand, where 0 is as expected</span>`);
       txt(svg, { x: X(xs[i]) + 9, y: Y(ys[i]) + 4, class: "ptlab" }, r.work);
     });
   }
@@ -296,7 +296,7 @@
       <li><b>Pimpernel to Zorro: holds.</b> Zorro's single nearest relative is the Scarlet Pimpernel in both models (Qwen: ${q.nearest["Zorro"].slice(0, 3).join(", ")}).</li>
       <li><b>"Iron Man is Batman in California": partly holds.</b> After Spider-Man, Iron Man's nearest works are recent Batman films, mostly Nolan's (Qwen: ${q.nearest["Iron Man"].slice(0, 3).join(", ")}; Llama: ${l.nearest["Iron Man"].slice(0, 3).join(", ")}).</li>
       <li><b>Zorro to Batman: not visible.</b> Zorro sits among Batman's most distant relatives, but its summary is only 9 sentences long, so it carries few memes of any kind.</li>
-      <li><b>Batman's nearest relatives are his descendants.</b> Superman, Spider-Man, Daredevil and Iron Man sit closest; Puss in Boots and Zorro sit furthest.</li></ul>`;
+      <li><b>Batman's nearest relatives are his descendants.</b> The films Superman (1978), Spider-Man (2002), Daredevil (2003) and Iron Man (2008) sit closest; Puss in Boots and Zorro sit furthest.</li></ul>`;
   }
 
   tabs(); canonTiers(); canonChips(); completeness(); swimlane(); cousinsSpread(); lineage();
