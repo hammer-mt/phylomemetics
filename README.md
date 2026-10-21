@@ -2,7 +2,7 @@
 
 **Language-model neurons as units of cultural inheritance in 80 years of Batman.**
 
-Memetics stalled because nobody could say where one meme ends and the next begins. This project tests a proposal from Mike Taylor's *Marketing Memetics* (2023): define a meme as whatever makes a single neuron inside an AI model fire. It then uses comparative phylogenetic methods, after da Silva & Tehrani's (2016) study of Indo-European folktales, to trace the memes that make up Batman from the 1943 serial to *The Batman* (2022).
+Memetics stalled because nobody could say where one meme ends and the next begins. This project tests a simple proposal: define a meme as whatever makes a single neuron inside an AI model fire. It then uses comparative phylogenetic methods, after da Silva & Tehrani's (2016) study of Indo-European folktales, to trace the memes that make up Batman from the 1943 serial to *The Batman* (2022).
 
 - **Paper:** [`paper/paper.md`](paper/paper.md)
 - **Interactive companion page:** [`report/index.html`](report/index.html). Serve the folder, for example with `python3 -m http.server --directory report`, then open it in a browser.
@@ -34,7 +34,7 @@ All three experiments were pre-registered, each with the result that would count
 
 ## What it is for, and next steps
 
-The aim is a measuring tool for culture. It should say what Batman actually is, trace the shared history between Batmans, show when Batman mutates and which mutations catch on (a way to measure cultural selection), and find Batman-like things across culture, such as the "billionaire vigilante orphans" of *Marketing Memetics*. This study gives partial answers to the first two: Batman has a measurable core, and adaptations carry their sources' plot content. It could not test selection. The search across culture is only a hint so far: without names, several superhero films carry much of Batman's canon.
+The aim is a measuring tool for culture. It should say what Batman actually is, trace the shared history between Batmans, show when Batman mutates and which mutations catch on (a way to measure cultural selection), and find Batman-like things across culture, such as the "billionaire vigilante orphans" (Zorro, the Scarlet Pimpernel, Iron Man). This study gives partial answers to the first two: Batman has a measurable core, and adaptations carry their sources' plot content. It could not test selection. The search across culture is only a hint so far: without names, several superhero films carry much of Batman's canon.
 
 New pre-registered experiments are being designed and have not run: vocabulary drift, cross-language tests, a fresh Shakespeare lineage, stories with planted memes, a culture-wide scan for Batman's family, mutation and selection tested against a neutral copying model, and a head-to-head of neurons against keywords, vectors, topic models and LLM reading on accuracy and cost. The head-to-head matters most. E2 shows that word overlap can match the neurons, so the neurons have to earn their extra cost.
 
