@@ -28,3 +28,6 @@ results/workflow1.json
 # logs
 logs/
 data_fetch*.log
+
+# planned next experiment (planted-meme stories): kept local until Mike decides to run it
+prereg/
