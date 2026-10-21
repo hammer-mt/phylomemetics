@@ -17,8 +17,6 @@ OUT = Path(__file__).parent
 
 SCRATCH = re.compile(r"/private/tmp/claude-\d+/[^\s\"'`)]*?/scratchpad")
 REDACTIONS = [
-    (re.compile(r"https?://[^\s)\]>\"']*notion\.(?:site|so)[^\s)\]>\"']*"), "[private Notion link]"),
-    (re.compile(r"https?://(?:docs|drive)\.google\.com[^\s)\]>\"']*"), "[private Google link]"),
     (re.compile(r"\b(?!noreply@anthropic\.com)[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b"), "[email]"),
     (re.compile(r"\b(?:gho_|ghp_|sk-|AIza)[A-Za-z0-9_-]{16,}\b"), "[redacted]"),
     # Mike's book attachment: keep that he attached it, drop the local path and draft filename.
