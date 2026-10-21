@@ -22,7 +22,7 @@ In short: Batman has a real core canon. With every name removed, films and games
 
 ## Setup
 
-One Python 3.12 environment at the project root serves both folders. The models run with [MLX](https://github.com/ml-explore/mlx), so they need Apple silicon.
+One Python 3.12 environment at the project root serves all three folders. The models run with [MLX](https://github.com/ml-explore/mlx), so they need Apple silicon.
 
 ```bash
 python3.12 -m venv .venv && .venv/bin/pip install -r requirements.txt
