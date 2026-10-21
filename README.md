@@ -5,8 +5,9 @@
 Memetics stalled because nobody could say where one meme ends and the next begins. This project tests a proposal from Mike Taylor's *Marketing Memetics* (2023): define a meme as whatever makes a single neuron inside an AI model fire. It then uses comparative phylogenetic methods, after da Silva & Tehrani's (2016) study of Indo-European folktales, to trace the memes that make up Batman from the 1943 serial to *The Batman* (2022).
 
 - **Paper:** [`paper/paper.md`](paper/paper.md)
-- **Interactive companion page:** [`report/index.html`](report/index.html).
-- **Image side experiment:** an exploratory test of vision-model neurons on the works' posters and covers is in its own repository, [hammer-mt/phylomemetics-images](https://github.com/hammer-mt/phylomemetics-images). Serve the folder, for example with `python3 -m http.server --directory report`, then open it in a browser.
+- **Interactive companion page:** [`report/index.html`](report/index.html). Serve the folder, for example with `python3 -m http.server --directory report`, then open it in a browser.
+- **The conversation:** the whole Claude Code session in which Mike and Claude designed, ran, checked and wrote up this project, with a simple viewer: [`conversation/index.html`](conversation/index.html) (data in `conversation/conversation.json`, refreshed with `conversation/export.py`).
+- **Image side experiment:** an exploratory test of vision-model neurons on the works' posters and covers is in its own repository, [hammer-mt/phylomemetics-images](https://github.com/hammer-mt/phylomemetics-images).
 
 ## What we found
 

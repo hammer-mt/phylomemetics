@@ -1,0 +1,244 @@
+<meta charset="utf-8">
+<title>Phylomemetics Session</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Literata:ital,opsz,wght@0,7..72,400..700;1,7..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a lab notebook of one working session. A narrow index of Mike's messages on the left,
+   the transcript in one reading column; Mike's turns are set apart, Claude's actions fold away. */
+:root {
+  --bg: #f5f6f8;
+  --paper: #ffffff;
+  --ink: #141821;
+  --ink-2: #444b59;
+  --ink-3: #5c6372;
+  --rule: #dfe2e8;
+  --night: #1f3a64;
+  --night-soft: #e3e9f3;
+  --signal: #f2b705;
+  --signal-ink: #765600;
+  --mark: #fde9a6;
+  --font-display: "Archivo", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Literata", Georgia, "Times New Roman", serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+  --col: 46rem;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #11141a; --paper: #181c24; --ink: #eceef2; --ink-2: #c3c8d2; --ink-3: #9aa1ae; --rule: #2a303b;
+    --night: #8fb3e8; --night-soft: #1f2a3d; --signal: #f2b705; --signal-ink: #f2c94c; --mark: #5a4710; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #11141a; --paper: #181c24; --ink: #eceef2; --ink-2: #c3c8d2; --ink-3: #9aa1ae; --rule: #2a303b;
+  --night: #8fb3e8; --night-soft: #1f2a3d; --signal: #f2b705; --signal-ink: #f2c94c; --mark: #5a4710; color-scheme: dark;
+}
+*, *::before, *::after { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 1.0625rem; line-height: 1.6; }
+a { color: var(--night); text-underline-offset: 2px; }
+a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visible { outline: 2px solid var(--signal); outline-offset: 2px; }
+.page { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 2.5rem 5rem; }
+.shell { max-width: 74rem; margin-inline: auto; display: grid; grid-template-columns: 17rem minmax(0, 1fr); gap: 2.5rem; align-items: start; }
+@media (max-width: 60rem) { .shell { grid-template-columns: minmax(0, 1fr); } .index { display: none; } }
+h1, h2 { font-family: var(--font-display); font-stretch: 78%; line-height: 1.08; text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(2rem, 4.6vw, 3.1rem); font-weight: 850; letter-spacing: -0.01em; }
+.eyebrow { font-family: var(--font-mono); font-size: 0.74rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-3); }
+header { max-width: var(--col); display: flex; flex-direction: column; gap: 0.9rem; margin-bottom: 1.8rem; }
+.lede { font-size: 1.15rem; color: var(--ink-2); }
+.facts { display: flex; flex-wrap: wrap; gap: 0.4rem 1.2rem; font-family: var(--font-mono); font-size: 0.8rem; color: var(--ink-3); font-variant-numeric: tabular-nums; }
+.links { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; font-size: 0.95rem; }
+.small { font-size: 0.88rem; color: var(--ink-3); }
+
+.controls { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); padding-block: 0.7rem; border-bottom: 1px solid var(--rule); display: flex; flex-wrap: wrap; gap: 0.6rem 1rem; align-items: center; margin-bottom: 1.4rem; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); }
+.controls input[type="search"] { flex: 1 1 14rem; min-width: 0; font: 400 0.95rem/1.2 var(--font-body); color: var(--ink); background: var(--paper); border: 1px solid var(--rule); border-radius: 6px; padding: 0.55rem 0.7rem; }
+.controls label { display: inline-flex; gap: 0.4rem; align-items: center; font-size: 0.9rem; color: var(--ink-2); cursor: pointer; }
+.controls .count { font-family: var(--font-mono); font-size: 0.78rem; color: var(--ink-3); }
+
+.index { position: sticky; top: 1rem; max-height: calc(100vh - 2rem); overflow-y: auto; padding-right: 0.4rem; }
+.index h2 { font-size: 1rem; font-stretch: 88%; font-weight: 750; margin-bottom: 0.6rem; }
+.index ol { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.15rem; }
+.index a { display: grid; grid-template-columns: 3.1rem 1fr; gap: 0.4rem; text-decoration: none; color: var(--ink-2); font-size: 0.83rem; line-height: 1.35; padding: 0.3rem 0.35rem; border-radius: 4px; }
+.index a:hover { background: var(--night-soft); color: var(--ink); }
+.index time { font-family: var(--font-mono); font-size: 0.72rem; color: var(--ink-3); padding-top: 0.08rem; font-variant-numeric: tabular-nums; }
+.index .gap { font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-3); padding: 0.5rem 0.35rem 0.2rem; }
+
+.thread { display: flex; flex-direction: column; gap: 1.3rem; max-width: var(--col); min-width: 0; }
+.turn { display: flex; flex-direction: column; gap: 0.35rem; min-width: 0; scroll-margin-top: 5rem; }
+.who { display: flex; gap: 0.6rem; align-items: baseline; font-family: var(--font-display); font-stretch: 85%; font-weight: 750; font-size: 0.95rem; }
+.who time { font-family: var(--font-mono); font-weight: 400; font-size: 0.74rem; color: var(--ink-3); font-stretch: normal; }
+.chip { font-family: var(--font-mono); font-weight: 400; font-stretch: normal; font-size: 0.68rem; color: var(--signal-ink); border: 1px solid currentColor; border-radius: 3px; padding: 0 0.3rem; }
+.mike .body { background: var(--night-soft); border-radius: 8px; padding: 0.85rem 1rem; }
+.mike .who { color: var(--night); }
+.claude .who { color: var(--ink-2); }
+.body { min-width: 0; overflow-wrap: anywhere; }
+.body > * + * { margin-top: 0.7rem; }
+.body p, .body ul, .body ol { margin: 0; }
+.body ul, .body ol { padding-left: 1.3rem; }
+.body li + li { margin-top: 0.2rem; }
+.body h1, .body h2, .body h3 { font-family: var(--font-display); font-stretch: 85%; font-size: 1.05rem; font-weight: 750; margin: 0; }
+.body code { font-family: var(--font-mono); font-size: 0.86em; background: var(--paper); border: 1px solid var(--rule); border-radius: 3px; padding: 0 0.25rem; }
+.mike .body code { background: var(--bg); }
+.body pre { background: var(--paper); border: 1px solid var(--rule); border-radius: 6px; padding: 0.7rem 0.85rem; overflow-x: auto; font-size: 0.85rem; }
+.body pre code { border: 0; padding: 0; background: none; }
+.body blockquote { margin: 0; padding-left: 0.9rem; color: var(--ink-2); border-left: 2px solid var(--rule); }
+.tablewrap { overflow-x: auto; }
+.body table { border-collapse: collapse; font-size: 0.9rem; min-width: 100%; overflow-wrap: normal; }
+.body th, .body td { text-align: left; vertical-align: top; padding: 0.4rem 0.6rem; border-bottom: 1px solid var(--rule); }
+.body th { font-family: var(--font-display); font-stretch: 88%; font-weight: 700; }
+.pasted { background: var(--paper); border: 1px solid var(--rule); border-radius: 6px; padding: 0.7rem 0.85rem; font-size: 0.95rem; }
+.pasted > summary { cursor: pointer; font-family: var(--font-mono); font-size: 0.74rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-3); }
+.pasted[open] > summary { margin-bottom: 0.5rem; }
+.pasted .text { white-space: pre-wrap; }
+.command { font-family: var(--font-mono); font-size: 0.9rem; }
+.note { font-style: italic; color: var(--ink-3); }
+
+.actions { margin-left: 0; font-size: 0.86rem; }
+.actions > summary { cursor: pointer; list-style: none; display: inline-flex; gap: 0.5rem; align-items: center; font-family: var(--font-mono); font-size: 0.76rem; color: var(--ink-3); padding: 0.2rem 0.5rem; border: 1px dashed var(--rule); border-radius: 4px; }
+.actions > summary::-webkit-details-marker { display: none; }
+.actions > summary::before { content: "+"; font-weight: 500; }
+.actions[open] > summary::before { content: "\2212"; }
+.actions ol { margin: 0.5rem 0 0; padding-left: 1.6rem; font-family: var(--font-mono); font-size: 0.78rem; color: var(--ink-2); display: flex; flex-direction: column; gap: 0.15rem; }
+.hide-actions .actions { display: none; }
+
+.divider { display: grid; grid-template-columns: 1fr auto 1fr; gap: 0.8rem; align-items: center; color: var(--ink-3); font-size: 0.85rem; text-align: center; }
+.divider::before, .divider::after { content: ""; border-top: 1px solid var(--rule); }
+.divider span { max-width: 28rem; }
+.event { font-family: var(--font-mono); font-size: 0.76rem; color: var(--ink-3); }
+.question .body { border: 1px solid var(--rule); border-radius: 8px; padding: 0.8rem 1rem; background: var(--paper); }
+mark { background: var(--mark); color: inherit; border-radius: 2px; }
+.hidden { display: none !important; }
+footer { max-width: var(--col); margin-top: 3rem; color: var(--ink-3); font-size: 0.88rem; display: flex; flex-direction: column; gap: 0.5rem; }
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+</style>
+
+<div class="page">
+  <div class="shell">
+    <nav class="index" aria-label="Mike's messages">
+      <h2>Mike's messages</h2>
+      <ol id="index"></ol>
+    </nav>
+    <main>
+      <header>
+        <span class="eyebrow">Phylomemetics · the working session</span>
+        <h1>How this project was made: the whole conversation</h1>
+        <p class="lede">Mike Taylor and Claude Opus 5.5 designed, ran, checked and wrote up the phylomemetics study in one long session in Claude Code. This is that session, from the first idea to the robustness review and the new experiments.</p>
+        <div class="facts" id="facts"></div>
+        <p class="small">Mike's messages and Claude's replies are shown in full, including the messages Mike sent while Claude was working. Each of Claude's tool actions is summarised in one line. Raw tool output, Claude's private reasoning, injected system text and a few private links are left out, and local file paths are shortened.</p>
+        <div class="links">
+          <a href="https://github.com/hammer-mt/phylomemetics">Code and data</a>
+          <a href="https://github.com/hammer-mt/phylomemetics/blob/main/paper/paper.md">The paper</a>
+          <a href="https://github.com/hammer-mt/phylomemetics-images">The image side experiment</a>
+        </div>
+      </header>
+      <div class="controls" role="search">
+        <input type="search" id="q" placeholder="Search the conversation" aria-label="Search the conversation">
+        <label><input type="checkbox" id="show-actions" checked> Show Claude's actions</label>
+        <span class="count" id="count" aria-live="polite"></span>
+      </div>
+      <div class="thread" id="thread"></div>
+      <footer>
+        <p>Exported from the Claude Code session log with <span style="font-family: var(--font-mono)">conversation/export.py</span>. Times are UTC.</p>
+        <p>By Mike Taylor and Claude Opus 5.5 (Anthropic).</p>
+      </footer>
+    </main>
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.3.0/marked.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.6/purify.min.js"></script>
+<script src="conversation.js" charset="utf-8"></script>
+<script>
+(function () {
+  const C = window.CONVERSATION;
+  const thread = document.getElementById("thread");
+  if (!C) { thread.textContent = "The conversation data (conversation.js) did not load."; return; }
+  const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  const md = (s) => {
+    if (window.marked && window.DOMPurify) {
+      const html = DOMPurify.sanitize(marked.parse(s, { gfm: true, breaks: false }));
+      return html.replace(/<table>/g, '<div class="tablewrap"><table>').replace(/<\/table>/g, "</table></div>");
+    }
+    return esc(s).split(/\n{2,}/).map((p) => `<p>${p.replace(/\n/g, "<br>")}</p>`).join("");
+  };
+  const fmtTime = (t) => t ? t.slice(11, 16) : "";
+  const fmtDay = (t) => t ? new Date(t).toLocaleDateString("en-GB", { day: "numeric", month: "short", timeZone: "UTC" }) : "";
+  const firstLine = (e) => {
+    const p = e.parts.find((x) => x.type === "text" || x.type === "pasted" || x.type === "command") || e.parts[0];
+    const s = (p ? p.text : "").replace(/\[private [^\]]+\]/g, "").replace(/\s+/g, " ").trim();
+    return s.length > 74 ? s.slice(0, 72) + "…" : s;
+  };
+
+  const f = document.getElementById("facts");
+  f.innerHTML = [`${fmtDay(C.started)} to ${fmtDay(C.ended)} 2026`, `${C.counts.mike} messages from Mike`, `${C.counts.claude} replies from Claude`, `${C.counts.actions} actions`].map((x) => `<span>${esc(x)}</span>`).join("");
+
+  const nodes = [];
+  const index = document.getElementById("index");
+  let lastDay = "";
+  C.events.forEach((e, i) => {
+    const id = "m" + i;
+    let html = "", cls = "turn";
+    if (e.kind === "user") {
+      cls += " mike";
+      const parts = e.parts.map((p) => {
+        if (p.type === "pasted") {
+          const long = p.text.length > 600;
+          return `<details class="pasted"${long ? "" : " open"}><summary>Pasted text${long ? ` · ${Math.round(p.text.length / 100) / 10}k characters` : ""}</summary><div class="text">${esc(p.text)}</div></details>`;
+        }
+        if (p.type === "command") return `<p class="command">${esc(p.text)}</p>`;
+        if (p.type === "image") return `<p class="note">${esc(p.text)}</p>`;
+        return md(p.text);
+      }).join("");
+      const chips = (e.midturn ? `<span class="chip">sent while Claude was working</span>` : "") + (e.answer_to ? `<span class="chip">answer to Claude's question</span>` : "");
+      html = `<div class="who"><span>Mike</span><time datetime="${esc(e.time)}">${fmtTime(e.time)}</time>${chips}</div><div class="body">${parts}</div>`;
+      const day = fmtDay(e.time);
+      if (day !== lastDay) { index.insertAdjacentHTML("beforeend", `<li class="gap">${esc(day)}</li>`); lastDay = day; }
+      index.insertAdjacentHTML("beforeend", `<li><a href="#${id}"><time>${fmtTime(e.time)}</time><span>${esc(firstLine(e))}</span></a></li>`);
+    } else if (e.kind === "claude") {
+      cls += " claude";
+      html = `<div class="who"><span>Claude</span><time datetime="${esc(e.time)}">${fmtTime(e.time)}</time></div><div class="body">${md(e.text)}</div>`;
+    } else if (e.kind === "question") {
+      cls += " claude question";
+      html = `<div class="who"><span>Claude asked</span><time datetime="${esc(e.time)}">${fmtTime(e.time)}</time></div><div class="body">${md(e.text)}</div>`;
+    } else if (e.kind === "actions") {
+      cls += " actions-wrap";
+      const n = e.items.length;
+      html = `<details class="actions"><summary>${n} action${n === 1 ? "" : "s"}</summary><ol>${e.items.map((a) => `<li>${esc(a.text)}</li>`).join("")}</ol></details>`;
+    } else if (e.kind === "divider") {
+      cls = "divider";
+      html = `<span>${esc(e.text)}</span>`;
+      index.insertAdjacentHTML("beforeend", `<li class="gap">Context reset</li>`);
+    } else if (e.kind === "event") {
+      cls = "event";
+      html = `Background job: ${esc(e.text)}`;
+    }
+    const div = document.createElement("div");
+    div.className = cls; div.id = id; div.innerHTML = html;
+    thread.appendChild(div);
+    nodes.push({ el: div, text: div.textContent.toLowerCase(), kind: e.kind });
+  });
+
+  const showActions = document.getElementById("show-actions");
+  showActions.addEventListener("change", () => document.body.classList.toggle("hide-actions", !showActions.checked));
+  try { if (localStorage.getItem("pm-hide-actions") === "1") { showActions.checked = false; document.body.classList.add("hide-actions"); } } catch (err) {}
+  showActions.addEventListener("change", () => { try { localStorage.setItem("pm-hide-actions", showActions.checked ? "0" : "1"); } catch (err) {} });
+
+  const q = document.getElementById("q"), count = document.getElementById("count");
+  let timer;
+  q.addEventListener("input", () => {
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      const term = q.value.trim().toLowerCase();
+      let n = 0;
+      nodes.forEach((x) => {
+        const hit = !term || x.text.includes(term);
+        x.el.classList.toggle("hidden", !hit);
+        if (term && hit) { n++; if (x.kind === "actions") x.el.querySelector("details").open = true; }
+      });
+      count.textContent = term ? `${n} matching ${n === 1 ? "entry" : "entries"}` : "";
+    }, 150);
+  });
+
+  if (location.hash && document.getElementById(location.hash.slice(1))) document.getElementById(location.hash.slice(1)).scrollIntoView();
+})();
+</script>
