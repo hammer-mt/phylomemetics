@@ -1,0 +1,114 @@
+{"id": 0, "title": "Batman (serial)", "label": "1943 serial", "year": 1943, "era": "Golden Age", "medium": "film", "group": "batman"}
+{"id": 1, "title": "Batman (1966 film)", "label": "Batman '66", "year": 1966, "era": "Camp", "medium": "film", "group": "batman"}
+{"id": 2, "title": "The Dark Knight Returns", "label": "Dark Knight Returns", "year": 1986, "era": "Grim & gritty", "medium": "comic", "group": "batman"}
+{"id": 3, "title": "Batman: Year One", "label": "Year One", "year": 1987, "era": "Grim & gritty", "medium": "comic", "group": "batman"}
+{"id": 4, "title": "Batman: The Killing Joke", "label": "The Killing Joke", "year": 1988, "era": "Grim & gritty", "medium": "comic", "group": "batman"}
+{"id": 5, "title": "A Death in the Family (comics)", "label": "A Death in the Family", "year": 1988, "era": "Grim & gritty", "medium": "comic", "group": "batman"}
+{"id": 6, "title": "Batman: Gotham by Gaslight", "label": "Gotham by Gaslight", "year": 1989, "era": "Grim & gritty", "medium": "comic", "group": "batman"}
+{"id": 7, "title": "Arkham Asylum: A Serious House on Serious Earth", "label": "Arkham Asylum (comic)", "year": 1989, "era": "Grim & gritty", "medium": "comic", "group": "batman"}
+{"id": 8, "title": "Batman (1989 film)", "label": "Batman '89", "year": 1989, "era": "Burton/Schumacher", "medium": "film", "group": "batman"}
+{"id": 9, "title": "Batman Returns", "label": "Batman Returns", "year": 1992, "era": "Burton/Schumacher", "medium": "film", "group": "batman"}
+{"id": 10, "title": "Batman: Mask of the Phantasm", "label": "Mask of the Phantasm", "year": 1993, "era": "Animated", "medium": "animation", "group": "batman"}
+{"id": 11, "title": "Batman: Knightfall", "label": "Knightfall", "year": 1993, "era": "Grim & gritty", "medium": "comic", "group": "batman"}
+{"id": 12, "title": "Batman Forever", "label": "Batman Forever", "year": 1995, "era": "Burton/Schumacher", "medium": "film", "group": "batman"}
+{"id": 13, "title": "Batman: The Long Halloween", "label": "The Long Halloween", "year": 1996, "era": "Grim & gritty", "medium": "comic", "group": "batman"}
+{"id": 14, "title": "Batman & Robin (film)", "label": "Batman & Robin", "year": 1997, "era": "Burton/Schumacher", "medium": "film", "group": "batman"}
+{"id": 15, "title": "Batman Beyond: Return of the Joker", "label": "Return of the Joker", "year": 2000, "era": "Animated", "medium": "animation", "group": "batman"}
+{"id": 16, "title": "Batman: Hush", "label": "Hush", "year": 2002, "era": "Modern comics", "medium": "comic", "group": "batman"}
+{"id": 17, "title": "Batman Begins", "label": "Batman Begins", "year": 2005, "era": "Nolan", "medium": "film", "group": "batman"}
+{"id": 18, "title": "The Dark Knight", "label": "The Dark Knight", "year": 2008, "era": "Nolan", "medium": "film", "group": "batman"}
+{"id": 19, "title": "Batman R.I.P.", "label": "Batman R.I.P.", "year": 2008, "era": "Modern comics", "medium": "comic", "group": "batman"}
+{"id": 20, "title": "Batman: Arkham Asylum", "label": "Arkham Asylum (game)", "year": 2009, "era": "Arkham games", "medium": "game", "group": "batman"}
+{"id": 21, "title": "Batman: Under the Red Hood", "label": "Under the Red Hood", "year": 2010, "era": "Animated", "medium": "animation", "group": "batman"}
+{"id": 22, "title": "Batman: Arkham City", "label": "Arkham City", "year": 2011, "era": "Arkham games", "medium": "game", "group": "batman"}
+{"id": 23, "title": "The Dark Knight Rises", "label": "Dark Knight Rises", "year": 2012, "era": "Nolan", "medium": "film", "group": "batman"}
+{"id": 24, "title": "Batman: Earth One", "label": "Earth One", "year": 2012, "era": "Modern comics", "medium": "comic", "group": "batman"}
+{"id": 25, "title": "Batman: Arkham Knight", "label": "Arkham Knight", "year": 2015, "era": "Arkham games", "medium": "game", "group": "batman"}
+{"id": 26, "title": "Batman v Superman: Dawn of Justice", "label": "Batman v Superman", "year": 2016, "era": "Snyder/Reeves", "medium": "film", "group": "batman"}
+{"id": 27, "title": "The Lego Batman Movie", "label": "Lego Batman", "year": 2017, "era": "Parody", "medium": "film", "group": "batman"}
+{"id": 28, "title": "Batman: White Knight", "label": "White Knight", "year": 2017, "era": "Modern comics", "medium": "comic", "group": "batman"}
+{"id": 29, "title": "Batman Ninja", "label": "Batman Ninja", "year": 2018, "era": "Animated", "medium": "animation", "group": "batman"}
+{"id": 30, "title": "Joker (2019 film)", "label": "Joker (2019)", "year": 2019, "era": "Snyder/Reeves", "medium": "film", "group": "batman"}
+{"id": 31, "title": "The Batman (film)", "label": "The Batman", "year": 2022, "era": "Snyder/Reeves", "medium": "film", "group": "batman"}
+{"id": 32, "title": "Puss in Boots", "label": "Puss in Boots", "year": 1697, "era": "Cousin", "medium": "folktale", "group": "cousin"}
+{"id": 33, "title": "The Count of Monte Cristo", "label": "Count of Monte Cristo", "year": 1844, "era": "Cousin", "medium": "novel", "group": "cousin"}
+{"id": 34, "title": "A Study in Scarlet", "label": "Sherlock Holmes", "year": 1887, "era": "Cousin", "medium": "novel", "group": "cousin"}
+{"id": 35, "title": "Dracula", "label": "Dracula", "year": 1897, "era": "Cousin", "medium": "novel", "group": "cousin"}
+{"id": 36, "title": "The Scarlet Pimpernel", "label": "Scarlet Pimpernel", "year": 1905, "era": "Cousin", "medium": "novel", "group": "cousin"}
+{"id": 37, "title": "The Mark of Zorro (1940 film)", "label": "Zorro", "year": 1940, "era": "Cousin", "medium": "film", "group": "cousin"}
+{"id": 38, "title": "The Bat (1926 film)", "label": "The Bat (1926)", "year": 1926, "era": "Cousin", "medium": "film", "group": "cousin"}
+{"id": 39, "title": "The Shadow (1994 film)", "label": "The Shadow", "year": 1994, "era": "Cousin", "medium": "film", "group": "cousin"}
+{"id": 40, "title": "Superman (1978 film)", "label": "Superman", "year": 1978, "era": "Cousin", "medium": "film", "group": "cousin"}
+{"id": 41, "title": "Spider-Man (2002 film)", "label": "Spider-Man", "year": 2002, "era": "Cousin", "medium": "film", "group": "cousin"}
+{"id": 42, "title": "Daredevil (film)", "label": "Daredevil", "year": 2003, "era": "Cousin", "medium": "film", "group": "cousin"}
+{"id": 43, "title": "Iron Man (2008 film)", "label": "Iron Man", "year": 2008, "era": "Cousin", "medium": "film", "group": "cousin"}
+{"id": 44, "title": "The Green Hornet (2011 film)", "label": "Green Hornet", "year": 2011, "era": "Cousin", "medium": "film", "group": "cousin"}
+{"id": 45, "title": "Titanic (1997 film)", "label": "Titanic", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 46, "title": "Forrest Gump", "label": "Forrest Gump", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 47, "title": "Toy Story", "label": "Toy Story", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 48, "title": "Finding Nemo", "label": "Finding Nemo", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 49, "title": "The Godfather", "label": "The Godfather", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 50, "title": "Jaws (film)", "label": "Jaws", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 51, "title": "Casablanca (film)", "label": "Casablanca", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 52, "title": "Pride & Prejudice (2005 film)", "label": "Pride & Prejudice", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 53, "title": "Jurassic Park", "label": "Jurassic Park", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 54, "title": "The Lion King", "label": "The Lion King", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 55, "title": "Back to the Future", "label": "Back to the Future", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 56, "title": "E.T. the Extra-Terrestrial", "label": "E.T. the Extra-Terrestrial", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 57, "title": "The Shawshank Redemption", "label": "The Shawshank Redemption", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 58, "title": "Groundhog Day (film)", "label": "Groundhog Day", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 59, "title": "Mean Girls", "label": "Mean Girls", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 60, "title": "The Notebook", "label": "The Notebook", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 61, "title": "Up (2009 film)", "label": "Up", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 62, "title": "Frozen (2013 film)", "label": "Frozen", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 63, "title": "Gravity (2013 film)", "label": "Gravity", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 64, "title": "The Martian (film)", "label": "The Martian", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 65, "title": "Alien (film)", "label": "Alien", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 66, "title": "Rocky", "label": "Rocky", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 67, "title": "Home Alone", "label": "Home Alone", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 68, "title": "Ratatouille (film)", "label": "Ratatouille", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 69, "title": "Mamma Mia! (film)", "label": "Mamma Mia!", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 70, "title": "La La Land", "label": "La La Land", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 71, "title": "Gone Girl (film)", "label": "Gone Girl", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 72, "title": "The Silence of the Lambs (film)", "label": "The Silence of the Lambs", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 73, "title": "Fargo (1996 film)", "label": "Fargo", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 74, "title": "Chinatown (1974 film)", "label": "Chinatown", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 75, "title": "Heat (1995 film)", "label": "Heat", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 76, "title": "Die Hard", "label": "Die Hard", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 77, "title": "Raiders of the Lost Ark", "label": "Raiders of the Lost Ark", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 78, "title": "The Wizard of Oz", "label": "The Wizard of Oz", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 79, "title": "Singin' in the Rain", "label": "Singin' in the Rain", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 80, "title": "Some Like It Hot", "label": "Some Like It Hot", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 81, "title": "The Sound of Music (film)", "label": "The Sound of Music", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 82, "title": "Psycho (1960 film)", "label": "Psycho", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 83, "title": "Rear Window", "label": "Rear Window", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 84, "title": "Vertigo (film)", "label": "Vertigo", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 85, "title": "2001: A Space Odyssey", "label": "2001: A Space Odyssey", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 86, "title": "Star Wars (film)", "label": "Star Wars", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 87, "title": "The Matrix", "label": "The Matrix", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 88, "title": "Inception", "label": "Inception", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 89, "title": "Ghostbusters", "label": "Ghostbusters", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 90, "title": "Notting Hill (film)", "label": "Notting Hill", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 91, "title": "The Devil Wears Prada (film)", "label": "The Devil Wears Prada", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 92, "title": "Legally Blonde", "label": "Legally Blonde", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 93, "title": "Mrs. Doubtfire", "label": "Mrs. Doubtfire", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 94, "title": "Big (film)", "label": "Big", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 95, "title": "Shrek", "label": "Shrek", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 96, "title": "Spirited Away", "label": "Spirited Away", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 97, "title": "Parasite (2019 film)", "label": "Parasite", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 98, "title": "Knives Out", "label": "Knives Out", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 99, "title": "Get Out", "label": "Get Out", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 100, "title": "Little Miss Sunshine", "label": "Little Miss Sunshine", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 101, "title": "The Social Network", "label": "The Social Network", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 102, "title": "The Grand Budapest Hotel", "label": "The Grand Budapest Hotel", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 103, "title": "Mad Max: Fury Road", "label": "Mad Max: Fury Road", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 104, "title": "Interstellar (film)", "label": "Interstellar", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 105, "title": "Saving Private Ryan", "label": "Saving Private Ryan", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 106, "title": "The Exorcist", "label": "The Exorcist", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 107, "title": "The Shining (film)", "label": "The Shining", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 108, "title": "Goodfellas", "label": "Goodfellas", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 109, "title": "Taxi Driver", "label": "Taxi Driver", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 110, "title": "Moonlight (2016 film)", "label": "Moonlight", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 111, "title": "Lost in Translation", "label": "Lost in Translation", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 112, "title": "Babe (film)", "label": "Babe", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}
+{"id": 113, "title": "The Princess Bride", "label": "The Princess Bride", "year": null, "era": "Baseline", "medium": "film", "group": "baseline"}

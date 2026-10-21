@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# copyrighted posters and covers, and contact sheets made from them: analysed, never redistributed
+data/images/
+data/vision_sheets/
+
+# neuron activations (regenerate with vision_extract.py)
+activations_vision/
