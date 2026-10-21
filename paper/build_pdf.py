@@ -36,6 +36,8 @@ code { font-family: "IBM Plex Mono", Menlo, monospace; font-size: 8.4pt; }
 .abstract { background: #eef1f6; padding: 9pt 12pt 4pt; margin: 0 0 8pt; border-radius: 3pt; }
 .abstract h2 { margin-top: 0; }
 figure, img { break-inside: avoid; }
+p:has(> img), p:has(+ table) { break-after: avoid; } /* keep a figure with its caption, a table caption with its table */
+p:has(> img) + p, p:has(+ table) { break-inside: avoid; } /* and never split a caption */
 img { display: block; max-width: 100%; margin: 8pt auto 4pt; }
 table { width: 100%; border-collapse: collapse; font-size: 8.4pt; line-height: 1.35; margin: 4pt 0 10pt; break-inside: avoid; }
 th, td { text-align: left; vertical-align: top; padding: 3pt 5pt; border-bottom: 0.6pt solid var(--rule); }

@@ -28,9 +28,9 @@ All three experiments were pre-registered, each with the result that would count
 - **Controls run late.** The E2 lexical comparators (TF-IDF and word presence), the E2 residual test and the E1 TF-IDF centroid control were pre-registered but not run until after the robustness review. Their results are in the table above.
 - **E2's design followed a failed first test.** A simpler first heredity test, on whole meme profiles, did not find the sources (mean rank 5.4 of 12, chance 5.8). E2's frequency band and hub adjustment were designed after it. The multiverse varies both: 99.6% of specifications stay significant, and every one that fails has the hub adjustment off.
 
-![Figure 2](paper/fig2_heredity.png)
+![Figure 7](paper/fig2_heredity.png)
 
-*On name-free texts, the rank of each adaptation's documented source among the eligible comics (Figure 2 of the paper). Plain word overlap ranks the sources about as well.*
+*On name-free texts, the rank of each adaptation's documented source among the eligible comics (Figure 7 of the paper). Plain word overlap ranks the sources about as well.*
 
 ## What it is for, and next steps
 
