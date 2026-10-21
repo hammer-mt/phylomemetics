@@ -1,4 +1,4 @@
-"""Render paper/paper.md (with its figures) to paper/paper.pdf through headless Chrome.
+"""Render paper/paper.md (with its figures) to paper/can-creativity-be-reverse-engineered.pdf through headless Chrome.
 
     python paper/build_pdf.py [path-to-chrome]      # from study/
 
@@ -82,7 +82,7 @@ def main():
     with tempfile.TemporaryDirectory() as tmp:
         src = Path(tmp) / "paper.html"
         src.write_text(html)
-        out = HERE / "paper.pdf"
+        out = HERE / "can-creativity-be-reverse-engineered.pdf"
         subprocess.run([CHROME, "--headless=new", "--disable-gpu", "--no-pdf-header-footer", "--allow-file-access-from-files",
                         "--virtual-time-budget=15000", f"--print-to-pdf={out}", src.as_uri()],
                        check=True, capture_output=True)

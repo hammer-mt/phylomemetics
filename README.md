@@ -14,7 +14,7 @@ In short: Batman has a real core canon. With every name removed, films and games
 | [`preregistration/`](preregistration/) | The pre-registered plans for the next experiments: stories with planted memes, and a head-to-head of neurons against keywords, embeddings and LLM reading on accuracy and cost | Planned, not run |
 | [`images/`](images/) | The image side experiment: an exploratory test of vision-model neurons on the works' posters and covers | Exploratory, not part of the paper |
 
-- **Paper:** [`study/paper/paper.pdf`](study/paper/paper.pdf), or as Markdown: [`study/paper/paper.md`](study/paper/paper.md)
+- **Paper:** [`study/paper/can-creativity-be-reverse-engineered.pdf`](study/paper/can-creativity-be-reverse-engineered.pdf), or as Markdown: [`study/paper/paper.md`](study/paper/paper.md)
 - **Results, robustness checks and how to reproduce them:** [`study/README.md`](study/README.md)
 - **Interactive companion page:** [`study/report/index.html`](study/report/index.html). Serve the folder, for example with `python3 -m http.server --directory study/report`, then open it in a browser.
 - **The plans and their status:** [`preregistration/README.md`](preregistration/README.md)

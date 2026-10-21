@@ -6,7 +6,7 @@ Memetics stalled because nobody could say where one meme ends and the next begin
 
 This folder, `study/`, holds the paper and all the code and data that produced it. Run every command below from this folder. The pre-registered plans for the next experiments are in [`../preregistration/`](../preregistration/), and the environment is set up as described in the [root README](../README.md#setup).
 
-- **Paper:** [`paper/paper.md`](paper/paper.md), or as a PDF: [`paper/paper.pdf`](paper/paper.pdf) (rebuilt with `../.venv/bin/python paper/build_pdf.py`)
+- **Paper:** [`paper/paper.md`](paper/paper.md), or as a PDF: [`paper/can-creativity-be-reverse-engineered.pdf`](paper/can-creativity-be-reverse-engineered.pdf) (rebuilt with `../.venv/bin/python paper/build_pdf.py`)
 - **Interactive companion page:** [`report/index.html`](report/index.html). Serve the folder, for example with `python3 -m http.server --directory report`, then open it in a browser.
 - **The conversation:** the whole Claude Code session in which Mike and Claude designed, ran, checked and wrote up this project, with a simple viewer: [`conversation/index.html`](conversation/index.html) (data in `conversation/conversation.json`, refreshed with `conversation/export.py`).
 - **Image side experiment:** an exploratory test of vision-model neurons on the works' posters and covers is in the repository's [`images/`](../images/) folder.
