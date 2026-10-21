@@ -1,4 +1,5 @@
 """Shared look for the paper's figures: palette, type and saving. Every figure script imports this."""
+import os
 from pathlib import Path
 
 import matplotlib
@@ -6,7 +7,9 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt  # noqa: E402
 
-OUT = Path(__file__).resolve().parent.parent  # figures are written next to paper.md
+# figures are written next to the paper.md they belong to: paper/ (v1, published and frozen) by default,
+# or a draft version folder, e.g. PAPER_DIR=paper/v2 python paper/figs/canon.py
+OUT = Path(os.environ["PAPER_DIR"]).resolve() if os.environ.get("PAPER_DIR") else Path(__file__).resolve().parent.parent
 
 INK = "#141821"
 INK_2 = "#444b59"

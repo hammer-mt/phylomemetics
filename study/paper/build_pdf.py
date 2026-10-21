@@ -1,17 +1,22 @@
-"""Render paper/paper.md (with its figures) to paper/can-creativity-be-reverse-engineered.pdf through headless Chrome.
+"""Render a version of the paper (its paper.md and figures) to PDF through headless Chrome.
 
-    python paper/build_pdf.py [path-to-chrome]      # from study/
+    python paper/build_pdf.py              # from study/: v1, paper/paper.md -> paper/can-creativity-be-reverse-engineered.pdf
+    python paper/build_pdf.py paper/v2     # a later version -> paper/v2/can-creativity-be-reverse-engineered-v2.pdf
+
+v1 is published and frozen (see paper/README.md): rebuild it only to check it, never to change it.
+Set CHROME to use a different Chrome binary.
 
 Markdown is rendered in the page by marked (loaded from cdnjs), so the build needs a network connection.
 """
 import json
+import os
 import subprocess
 import sys
 import tempfile
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-CHROME = sys.argv[1] if len(sys.argv) > 1 else "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+CHROME = os.environ.get("CHROME", "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome")
 
 PAGE = """<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
@@ -77,12 +82,14 @@ document.fonts.ready.then(() => { document.title = "ready"; });
 
 
 def main():
-    md = (HERE / "paper.md").read_text()
-    html = PAGE.replace("__MD__", json.dumps(md)).replace("__BASE__", HERE.as_uri() + "/")
+    src_dir = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else HERE
+    md = (src_dir / "paper.md").read_text()
+    html = PAGE.replace("__MD__", json.dumps(md)).replace("__BASE__", src_dir.as_uri() + "/")
     with tempfile.TemporaryDirectory() as tmp:
         src = Path(tmp) / "paper.html"
         src.write_text(html)
-        out = HERE / "can-creativity-be-reverse-engineered.pdf"
+        suffix = "" if src_dir == HERE else "-" + src_dir.name
+        out = src_dir / f"can-creativity-be-reverse-engineered{suffix}.pdf"
         subprocess.run([CHROME, "--headless=new", "--disable-gpu", "--no-pdf-header-footer", "--allow-file-access-from-files",
                         "--virtual-time-budget=15000", f"--print-to-pdf={out}", src.as_uri()],
                        check=True, capture_output=True)
