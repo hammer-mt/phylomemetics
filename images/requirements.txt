@@ -1,8 +1,0 @@
-google-genai==2.31.0
-numpy==2.5.4
-open-clip-torch==3.3.0
-pillow==13.0.0
-requests==2.34.2
-torch==2.14.1
-torchvision==0.29.1
-transformers==5.20.2

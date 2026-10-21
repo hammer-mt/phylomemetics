@@ -42,4 +42,4 @@ These files are reduced copies of public-domain images from Wikimedia Commons:
 
 ## Not included
 
-Neuron activations (about 15 GB) are not stored; the scripts regenerate them. Nor are the pre-registration scout's raw Wikipedia pages and bulk caches (about 126 MB, listed in `preregistration/.gitignore`); the texts the work lists are built from are committed, gzipped, in `preregistration/sources/`. The image side experiment, which analysed the works' copyrighted posters and covers without redistributing them, is in its own repository: [hammer-mt/phylomemetics-images](https://github.com/hammer-mt/phylomemetics-images).
+Neuron activations (about 15 GB) are not stored; the scripts regenerate them. Nor are the pre-registration scout's raw Wikipedia pages and bulk caches (about 126 MB, listed in `preregistration/.gitignore`); the texts the work lists are built from are committed, gzipped, in `preregistration/sources/`. The image side experiment, which analysed the works' copyrighted posters and covers without redistributing them, is in the `images/` folder; its licences are in [`images/DATA_LICENSE.md`](images/DATA_LICENSE.md).

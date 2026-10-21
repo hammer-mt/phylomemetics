@@ -12,7 +12,7 @@ In short: Batman has a real core canon. With every name removed, films and games
 | --- | --- | --- |
 | [`study/`](study/) | The Batman study: the paper and all the code, data and results that produced it, with the robustness checks, the interactive companion page and the working session | Complete |
 | [`preregistration/`](preregistration/) | The pre-registered plans for the next experiments: stories with planted memes, and a head-to-head of neurons against keywords, embeddings and LLM reading on accuracy and cost | Planned, not run |
-| [hammer-mt/phylomemetics-images](https://github.com/hammer-mt/phylomemetics-images) | The image side experiment: an exploratory test of vision-model neurons on the works' posters and covers | Separate repository, not part of the study |
+| [`images/`](images/) | The image side experiment: an exploratory test of vision-model neurons on the works' posters and covers | Exploratory, not part of the paper |
 
 - **Paper:** [`study/paper/paper.pdf`](study/paper/paper.pdf), or as Markdown: [`study/paper/paper.md`](study/paper/paper.md)
 - **Results, robustness checks and how to reproduce them:** [`study/README.md`](study/README.md)

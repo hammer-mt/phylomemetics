@@ -1,6 +1,6 @@
 # Batman Visual Memes
 
-**Do vision models have neurons for Batman's visual memes? An exploratory side experiment to [phylomemetics](https://github.com/hammer-mt/phylomemetics).**
+**Do vision models have neurons for Batman's visual memes? An exploratory side experiment to the Batman study in [`../study`](../study).**
 
 The main study defines a meme as whatever makes a single neuron inside an AI model fire, and traces Batman's memes through 80 years of plot summaries using language models. This repository asks whether the same method finds visual memes. Two vision models were shown the lead image of each work's Wikipedia article: the poster, comic cover or game box art for 29 Batman works, 13 relatives and 69 ordinary films.
 
@@ -40,18 +40,18 @@ This experiment was exploratory: it was not pre-registered. It uses one image pe
 ## Reproduce
 
 ```bash
-python3.12 -m venv .venv && .venv/bin/pip install -r requirements.txt
-.venv/bin/python fetch_images.py
-.venv/bin/python vision_extract.py clip && .venv/bin/python vision_extract.py dino
-.venv/bin/python vision_analyze.py
-.venv/bin/python export_page.py
+# from images/, using the repository's environment (see the root README; requirements.txt there covers this folder too)
+../.venv/bin/python fetch_images.py
+../.venv/bin/python vision_extract.py clip && ../.venv/bin/python vision_extract.py dino
+../.venv/bin/python vision_analyze.py
+../.venv/bin/python export_page.py
 ```
 
 Activations go to `activations_vision/` (set `PHYLO_VISION` to change this). The neuron labels in `results/vision_labels.json` were written by an AI reader (Claude) from the contact sheets and are committed rather than regenerated.
 
 ## Licence
 
-The code is under the [MIT licence](LICENSE). The generated test images are MIT too. Copyrighted posters and covers were analysed but are not included; see [`DATA_LICENSE.md`](DATA_LICENSE.md).
+The code is under the repository's [MIT licence](../LICENSE). The generated test images are MIT too. Copyrighted posters and covers were analysed but are not included; see [`DATA_LICENSE.md`](DATA_LICENSE.md).
 
 ## Authors
 

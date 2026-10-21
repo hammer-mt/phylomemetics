@@ -1,6 +1,6 @@
 # Licences for the data and media in this repository
 
-The code and the analysis outputs are released under the MIT licence in `LICENSE`.
+The code and the analysis outputs are released under the MIT licence in the repository's `LICENSE`.
 
 ## Generated images
 
