@@ -1,0 +1,326 @@
+[
+ {
+  "model": "clip",
+  "unit": 2929,
+  "label": "Batman in pointed cowl",
+  "kind": "character",
+  "batman_specific": true,
+  "confidence": "high",
+  "note": "All 8 show the cowled Batman, but at full length in only five (Arkham Asylum, Dark Knight Rises, Under the Red Hood, Arkham City, Mask of the Phantasm). In Gotham by Gaslight, Batman Returns and Batman & Robin he appears only as a head or bust, so I dropped the draft's 'full figure'. The generated probes also show a weaker response to gothic night scenes with no Batman in them (bats, a hooded figure, a gothic skyline, a dark mansion all score around the 73rd to 75th percentile)."
+ },
+ {
+  "model": "clip",
+  "unit": 3345,
+  "label": "Hero insignia, bat or S",
+  "kind": "emblem",
+  "batman_specific": false,
+  "confidence": "medium",
+  "note": "Emblems account for the top three: Superman's S on the flying hero in the 1978 poster, the giant S-and-bat logo behind the two faces in Batman v Superman, and the gold bat oval that fills the Batman '89 poster with no figure at all. The bat is also visible on Batman's chest in Under the Red Hood, Gotham by Gaslight and Mask of the Phantasm. It is faint on Arkham Asylum and absent from Batman & Robin, which shows only faces."
+ },
+ {
+  "model": "clip",
+  "unit": 1299,
+  "label": "Masked hero with villain ensemble",
+  "kind": "character",
+  "batman_specific": false,
+  "confidence": "medium",
+  "note": "Seven of the 8 group a masked hero with villains or allies: full casts in Batman Returns, The Batman (2022), Batman & Robin, Batman '66 and the cousin Daredevil, and smaller groups in Gotham by Gaslight and Under the Red Hood. Arkham Asylum's lone Batman is the exception. The lone hooded-figure probe scores only at the 21st percentile, which fits a unit that responds to groups rather than single figures. The theme overlaps with unit 2887."
+ },
+ {
+  "model": "clip",
+  "unit": 2321,
+  "label": "BATMAN title with cowled Batman",
+  "kind": "mixed",
+  "batman_specific": true,
+  "confidence": "medium",
+  "note": "All 8 have the word BATMAN as a large title next to a cowled Batman face or figure. The draft's 'over character cast' fails for Arkham Asylum (one figure) and for Gotham by Gaslight and Under the Red Hood (two or three figures). The word alone does not explain the unit: the Knightfall cover and the Batman '89 poster carry big BATMAN lettering but do not count as present, while The Dark Knight, which has no BATMAN title, does. So text and cowl cannot be separated here."
+ },
+ {
+  "model": "clip",
+  "unit": 2272,
+  "label": "Single hero figure, centred",
+  "kind": "composition",
+  "batman_specific": false,
+  "confidence": "medium",
+  "note": "Seven of the 8 centre one hero at full or near-full length: Batman standing in Arkham Asylum, The Dark Knight, Dark Knight Rises and Under the Red Hood, crouching in Arkham City and spreading his cape in Mask of the Phantasm, plus Superman flying in the 1978 poster. Batman v Superman, two faces in close-up, is the exception. The draft's 'over city' does not hold: Phantasm and Batman v Superman have no skyline, and the gothic-skyline probe scores only at the 4th percentile."
+ },
+ {
+  "model": "clip",
+  "unit": 2887,
+  "label": "Masked or hooded costumed figures",
+  "kind": "costume",
+  "batman_specific": false,
+  "confidence": "low",
+  "note": "Every image hides faces behind masks, cowls or helmets: Bane and Batman on the Knightfall cover, the cowled Batmen of Returns, Batman & Robin, Phantasm, Lego Batman and Red Hood, Green Hornet's domino-masked pair in long coats, and Iron Man's helmet. The hooded-figure probe scores at the 96th percentile. But nearly any superhero image would share this, and nothing more specific (emblem, palette or layout) repeats across the 8, so the theme is weak even though it covers all of them."
+ },
+ {
+  "model": "clip",
+  "unit": 1513,
+  "label": "Batman under large bat silhouette",
+  "kind": "character",
+  "batman_specific": true,
+  "confidence": "medium",
+  "note": "Batman appears in seven of eight, but a large bat-shaped form shows clearly in only four (fiery bat on both Nolan posters, spread wings on Mask of the Phantasm, a winged figure over the Batmobile on Arkham Knight); on Arkham Asylum, Batman v Superman and Lego Batman it is only a small logo, Batman stands to one side facing Superman on BvS, Lego Batman is a bright yellow crowd scene, and Star Wars, a painted heroic group, ranks as high as third."
+ },
+ {
+  "model": "clip",
+  "unit": 2078,
+  "label": "Caped superhero in costume",
+  "kind": "character",
+  "batman_specific": false,
+  "confidence": "medium",
+  "note": "All eight centre on a costumed hero, seven of them Batman (Batman & Robin shows faces only, so the cape is not visible there), and Superman appears twice (flying over skyscrapers in second place and facing Batman on BvS), so calling it a general caped-hero unit rests on those two images and the line between this and plain Batman is thin."
+ },
+ {
+  "model": "clip",
+  "unit": 3779,
+  "label": "Batman in pointed-ear cowl",
+  "kind": "character",
+  "batman_specific": true,
+  "confidence": "high",
+  "note": "The first seven all show Batman's pointed-ear cowl (Arkham Asylum, Arkham City, both Nolan films, Red Hood, BvS, Gotham by Gaslight), though not always dark or brooding since Arkham City is a pale grey-white image; the only exception is the warm orange Spider-Man poster in last place, another masked hero in a crouch."
+ },
+ {
+  "model": "clip",
+  "unit": 2346,
+  "label": "BATMAN title wordmark",
+  "kind": "text/typography",
+  "batman_specific": true,
+  "confidence": "high",
+  "note": "Seven of eight carry the word BATMAN as title or masthead (big block letters on Gaslight and Death in the Family, film titles on Batman & Robin, Forever and Returns, stylised bat-topped lettering on both Arkham logos), while the Nolan posters without the word are missing; the exception is Groundhog Day in seventh place, which has a large red actor name and a script title."
+ },
+ {
+  "model": "clip",
+  "unit": 1537,
+  "label": "Drawn comic-style cover art",
+  "kind": "medium/style",
+  "batman_specific": false,
+  "confidence": "medium",
+  "note": "Six of eight are drawn rather than photographed: five Batman comic covers (Death in the Family, Year One, Hush, The Killing Joke, Knightfall) plus the hand-drawn Spirited Away poster, which ranks first; the Daredevil and Spider-Man film posters are photographs and fit only as red-suited heroes."
+ },
+ {
+  "model": "clip",
+  "unit": 2864,
+  "label": "Mixed character posters, no theme",
+  "kind": "mixed",
+  "batman_specific": false,
+  "confidence": "low",
+  "note": "The set mixes the purple-green Joker comic cover, dark Batman Returns and Arkham Asylum, the bright icy Frozen poster, Superman over a city, a drawn Long Halloween cover, Spider-Man and the red-toned 2022 Batman poster; at most a few stack several character faces (Batman Returns, Frozen, The Batman), and no visible feature covers most of them."
+ },
+ {
+  "model": "clip",
+  "unit": 3203,
+  "label": "Batman comic book covers",
+  "kind": "medium/style",
+  "batman_specific": true,
+  "confidence": "high",
+  "note": "All 8 are drawn Batman comic covers and every one carries the word BATMAN (big mastheads on most, smaller title text on The Killing Joke's Joker close-up and the Dark Knight Returns silhouette); caveat: the image set has no non-Batman comic covers, so this could just as well be a generic comic-cover feature, and the Batman-specific reading has not been tested."
+ },
+ {
+  "model": "clip",
+  "unit": 2889,
+  "label": "Illustrated Batman with big wordmark",
+  "kind": "mixed",
+  "batman_specific": true,
+  "confidence": "high",
+  "note": "All 8 are drawn or animated Batman images and 7 have a large BATMAN wordmark; it shares 6 images with unit 3203 but swaps the small-title Dark Knight Returns and Long Halloween for two animated-film covers with big centred titles (Under the Red Hood, and the Gotham by Gaslight Blu-ray cover), and The Killing Joke is the only one whose title is modest."
+ },
+ {
+  "model": "clip",
+  "unit": 1830,
+  "label": "Costumed hero in motion, loosely",
+  "kind": "mixed",
+  "batman_specific": false,
+  "confidence": "low",
+  "note": "Seven show a costumed hero, most in motion (Spider-Man crawling, Lego figures running, Hush swinging, Dark Knight Returns leaping, Daredevil crouching, Batman being broken in Knightfall), but only about four have the city-rooftop backdrop the draft named (Dark Knight Returns has lightning, not buildings), a costumed hero is close to the base rate for this Batman-heavy set, and The Shining (a face through a broken door) fits nothing."
+ },
+ {
+  "model": "clip",
+  "unit": 2769,
+  "label": "Costumed hero movie-style poster",
+  "kind": "genre",
+  "batman_specific": false,
+  "confidence": "high",
+  "note": "All 8 are poster-format images with one or more costumed heroes shown large and central, six of them theatrical posters with billing blocks (the exceptions are the Gotham by Gaslight Blu-ray cover and the Arkham Asylum game cover); six are Batman, but the Spider-Man (rank 2) and Superman (rank 6) posters fit just as well, so this is superhero posters in general, not Batman."
+ },
+ {
+  "model": "clip",
+  "unit": 2824,
+  "label": "Vintage or period-look covers",
+  "kind": "medium/style",
+  "batman_specific": false,
+  "confidence": "low",
+  "note": "Only about half look old or period-set (the worn red Scarlet Pimpernel book, the ornate Victorian Study in Scarlet annual, the 1940s serial poster, and the modern Gotham by Gaslight cover with its Victorian top hats and gas lamp; Year One's flat newsprint colouring is retro at most), while the Arkham Asylum game cover, the Dark Knight Returns silhouette and The Matrix have no antique look, so no single visual theme holds."
+ },
+ {
+  "model": "clip",
+  "unit": 3087,
+  "label": "Loose mix, some caped figures",
+  "kind": "mixed",
+  "batman_specific": false,
+  "confidence": "low",
+  "note": "Only three clearly show a caped figure (Phantasm and Arkham Knight with capes spread like wings, Arkham Asylum standing), The Shadow is an eyes-under-a-hat-brim close-up rather than a full caped figure, the 1966 poster has Batman only small in a crowd, and Spider-Man, Fargo and Year One instead show splayed or sprawled bodies, so the neuron has no clear single theme (the same Spider-Man and Arkham Asylum images also top units 1830, 2769 and 2824)."
+ },
+ {
+  "model": "clip",
+  "unit": 3575,
+  "label": "Printed book and comic covers",
+  "kind": "medium/style",
+  "batman_specific": false,
+  "confidence": "medium",
+  "note": "Six are covers of printed works (a plain cloth-bound Dracula with a lettered title, a Victorian Christmas-annual cover, four Batman comic covers), plus an antique storybook plate that has no title; the photographic Shining film poster is the exception, the draft's 'illustrated' fails for the plain Dracula cover, and nothing Batman-specific is shared because the Batman items are simply comics."
+ },
+ {
+  "model": "clip",
+  "unit": 1964,
+  "label": "Cowled Batman on movie poster",
+  "kind": "character",
+  "batman_specific": true,
+  "confidence": "high",
+  "note": "Seven are Batman feature-film posters (six live-action, one animated) that show the cowled Batman, usually surrounded by co-stars' faces, though he is tiny in the illustrated 1966 poster; the single-figure Spider-Man poster is the only exception and hints at a partly generic masked-hero signal, and half the set also appears in unit 3218."
+ },
+ {
+  "model": "clip",
+  "unit": 3218,
+  "label": "Batman film poster, big title",
+  "kind": "mixed",
+  "batman_specific": true,
+  "confidence": "medium",
+  "note": "Seven are Batman film posters, four animated plus the drawn 1966 one, mostly a masked hero or looming villain face over a large BATMAN wordmark (the 2022 poster's title is small, Return of the Joker uses a stylised logo); Iron Man is the exception, and it shares four images with unit 1964, so the lean toward animated posters with big lettering is the only visible difference."
+ },
+ {
+  "model": "clip",
+  "unit": 2671,
+  "label": "Drawn Batman comic-cover art",
+  "kind": "mixed",
+  "batman_specific": true,
+  "confidence": "high",
+  "note": "Six are drawn Batman comic covers and one is an animated-film cover in the same drawn style, all with BATMAN title lettering, though only four have a true top masthead, so the draft overstates 'masthead'; Batman himself is absent from some covers (the Joker close-up, the injured Robin), the Batman-specific part is the wordmark rather than the figure, and the photographic Spider-Man poster is the exception."
+ },
+ {
+  "model": "clip",
+  "unit": 1701,
+  "label": "Brooding Batman in gloomy scene",
+  "kind": "mixed",
+  "batman_specific": true,
+  "confidence": "medium",
+  "note": "Six show Batman (for Arkham Knight mainly the Batmobile) in a dark, smoky or rainy, desaturated scene, but 'heavily armoured' fits only the live-action suits and Arkham Asylum, so the draft overclaims; the bright purple Killing Joke comic has no Batman in it, and Interstellar matches through the same lone, centred figure with a small title at the bottom that the two Dark Knight posters use."
+ },
+ {
+  "model": "clip",
+  "unit": 3361,
+  "label": "Lone Batman with bat silhouette",
+  "kind": "mixed",
+  "batman_specific": true,
+  "confidence": "medium",
+  "note": "Five clearly show a single Batman framed by a bat-wing shape (three Arkham box arts with winged logos, the Dark Knight Returns leaping silhouette, the bat-shaped fire of Dark Knight Rises); Gotham by Gaslight (two figures, no big bat shape) and Knightfall (Bane hoisting Batman) fit only loosely, and Interstellar's lone astronaut in snow is the clear exception."
+ },
+ {
+  "model": "dino",
+  "unit": 32107,
+  "label": "Bat-wing silhouette shape",
+  "kind": "emblem",
+  "batman_specific": true,
+  "confidence": "high",
+  "note": "All 8 have a spread bat-wing shape somewhere: the caped silhouette in Mask of the Phantasm and Arkham Knight, the oval emblem on Batman '89, the bat logos on the Arkham game covers, a dark ribbed wing across the Arkham Asylum comic, the bat-shaped frame on the 1926 The Bat lobby card, the chest emblem and pointed cowl in Gotham by Gaslight, and a large black bat across the top of the Year One cover. The draft wrongly said Arkham Asylum and Year One lacked it; the shape is smallest in Arkham City and Gotham by Gaslight."
+ },
+ {
+  "model": "dino",
+  "unit": 33557,
+  "label": "Cowled hero and villain faces",
+  "kind": "character",
+  "batman_specific": true,
+  "confidence": "medium",
+  "note": "Every image is built around close-up faces of Batman's cast, and 6 of the 8 show the cowl: the stacked faces of heroes and villains on Batman & Robin, Batman Returns, Batman Forever and The Batman (2022), the masked face at the corner of the 1943 serial, and the cowl next to a top-hatted woman in Gotham by Gaslight. The exceptions are A Death in the Family and The Killing Joke, which each show one face (a battered Robin, the Joker) and no Batman, and the face-montage layout itself is a common poster convention."
+ },
+ {
+  "model": "dino",
+  "unit": 35615,
+  "label": "Superhero in costume",
+  "kind": "character",
+  "batman_specific": false,
+  "confidence": "medium",
+  "note": "A costumed hero appears in all 8 and is the main subject in 6 (Spider-Man crawling, Batman with spread cape, Batman and Superman face to face, the Gaslight cowl, the crouching Arkham City render, the Batman Forever lead), but Spider-Man (2002) ranks second, so this is a general superhero-figure feature. The hero is only a small part of Return of the Joker, where the Joker's giant face dominates, and of Batman '66, where small figures sit in a busy illustrated scene."
+ },
+ {
+  "model": "dino",
+  "unit": 21045,
+  "label": "Lone figure in dramatic pose",
+  "kind": "composition",
+  "batman_specific": false,
+  "confidence": "medium",
+  "note": "Most images centre on a single figure in a striking pose: Batman leaping against lightning (Dark Knight Returns), the Joker dancing alone on a long stairway (Joker 2019, missing from the draft), Batman swinging toward the viewer (Hush), Spider-Man crawling head-down, Batman standing before a building with a burning bat symbol (The Dark Knight) and Batman with spread cape (Mask of the Phantasm). The pose is static in the last two, Up shows an old man, a boy and a dog dangling together under the balloons, and Batman Begins is a swarm of bats forming a giant dark shape with no clear lone figure; nothing here is specific to Batman."
+ },
+ {
+  "model": "dino",
+  "unit": 6726,
+  "label": "Dark, high-contrast poster",
+  "kind": "colour/tone",
+  "batman_specific": false,
+  "confidence": "low",
+  "note": "Most images set lit shapes against a mostly black field: the three faces on black in Goodfellas (ranked first, and nearly black and white, so 'vivid accents' did not fit), the gold emblem on Batman '89, the fire glow behind Dark Knight Rises, the gloomy Gotham by Gaslight scene and the neon cast on black in Batman & Robin. The Killing Joke is mostly saturated purple, The Long Halloween is a mid-blue field, and A Death in the Family is bright red and yellow, so the theme is loose and generic; a gangster film tops the list."
+ },
+ {
+  "model": "dino",
+  "unit": 7289,
+  "label": "Flat-colour printed illustration",
+  "kind": "medium/style",
+  "batman_specific": false,
+  "confidence": "medium",
+  "note": "Six of the 8 are flat-coloured printed artwork with bold display titles: the hand-tinted 1926 The Bat lobby card, the 1943 serial poster, and the Year One, Killing Joke, Knightfall and A Death in the Family comic covers. 'Vintage' was dropped because four of these are 1980s and 1990s comics. Batman '89 (ranked third, a black field with a metallic emblem) and The Shadow (a dark, stylised film poster) are not illustrations of this kind and share only the large title lettering; this is a generic print and comic look, not Batman's own."
+ },
+ {
+  "model": "dino",
+  "unit": 32996,
+  "label": "One central subject on poster",
+  "kind": "composition",
+  "batman_specific": false,
+  "confidence": "low",
+  "note": "Seven of eight put one dominant subject at the centre (Batman standing in three, Spider-Man, Bane lifting Batman, the Alien egg, the bat silhouette of Batman Begins), but Iron Man is a multi-face montage, Batman Begins has no clear figure, and backgrounds run from black to gold to blue to purple, so this is the default layout of most posters and probably not what the unit actually keys on."
+ },
+ {
+  "model": "dino",
+  "unit": 32118,
+  "label": "Illustrated print cover art",
+  "kind": "medium/style",
+  "batman_specific": false,
+  "confidence": "medium",
+  "note": "Seven of eight are hand-drawn, painted or engraved print art (a coloured storybook illustration, an engraved Dumas poster, a worn red novel cover with a line drawing, the 1966 poster's comic-style collage, and three drawn Batman comic covers); the Arkham Knight key art is a rendered game image and is the exception, and the shared feature is print illustration in general, not anything Batman's."
+ },
+ {
+  "model": "dino",
+  "unit": 34448,
+  "label": "Masked or covered faces",
+  "kind": "costume",
+  "batman_specific": false,
+  "confidence": "medium",
+  "note": "Seven of eight show a masked or covered face (Batman cowls in four, not five as drafted, plus Spider-Man's full mask, Bane's mask, Catwoman's and the Phantasm's masks, and the moth over the mouth on Silence of the Lambs); the Green Hornet pair are small full-length figures whose eye masks are barely visible, and several masked faces are small rather than central, so it reads as masks in general, not Batman's cowl."
+ },
+ {
+  "model": "dino",
+  "unit": 19583,
+  "label": "Characters before city towers",
+  "kind": "setting",
+  "batman_specific": false,
+  "confidence": "medium",
+  "note": "Seven of eight set characters in front of towers or a skyline (Arkham City's grey city, the animated rooftops of Return of the Joker, a faint Lego skyline, Hush's Batman swinging among skyscrapers, the Spirited Away bathhouse town, Daredevil's rooftop, the White Knight skyline), which is far more than the half the draft claimed; Knightfall has no buildings, the drafted 'stylised art' half fails on the live-action Daredevil poster, and Daredevil and Spirited Away show the city backdrop is generic, not Gotham."
+ },
+ {
+  "model": "dino",
+  "unit": 7125,
+  "label": "Bat-wing silhouettes and cowl ears",
+  "kind": "emblem",
+  "batman_specific": true,
+  "confidence": "medium",
+  "note": "Seven of eight show a bat shape: the gold bat emblem on black (1989), the bat silhouette cut out by flying bats (Batman Begins), the bat-wing title frame on the 1926 lobby card, a large white bat form behind the bars on White Knight, a faint winged shape in the dark Arkham Asylum collage, and pointed cowl ears on Red Hood and Gotham by Gaslight; Psycho has no bat form, and the 1926 card shows the motif predates Batman himself."
+ },
+ {
+  "model": "dino",
+  "unit": 18376,
+  "label": "Costumed hero and villain figures",
+  "kind": "character",
+  "batman_specific": false,
+  "confidence": "medium",
+  "note": "Seven of eight put costumed comic characters in front (Batman cowls in four, not five as drafted, including the crowded face montages of Batman & Robin and Batman Forever, plus Spider-Man, a battered Robin and the Joker); Batman Begins shows only a bat silhouette with no clear figure, and the shared feature is any costumed hero or villain, not Batman alone."
+ }
+]
