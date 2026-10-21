@@ -34,8 +34,8 @@ These files are reduced copies of public-domain images from Wikimedia Commons:
 
 ## Generated images
 
-`report/img/hero.jpg`, `report/img/meme_*.jpg`, `report/img/probe_*.jpg` and `data/probes/*.jpg` were generated with Google Gemini for this project. They depict no copyrighted characters and are released under the MIT licence with the code. Gemini embeds a SynthID watermark.
+`report/img/hero.jpg` and `report/img/meme_*.jpg` were generated with Google Gemini for this project. They depict no copyrighted characters and are released under the MIT licence with the code. Gemini embeds a SynthID watermark.
 
 ## Not included
 
-The lead images of the Batman works and other films (posters, comic covers, box art) are copyrighted. They were downloaded from Wikipedia and analysed for research, but are not redistributed. `data/images.json` lists each image's Wikipedia file name and URL, and `fetch_extras.py` downloads them again. Neuron activations (about 15 GB) are not stored either; the scripts regenerate them.
+Neuron activations (about 15 GB) are not stored; the scripts regenerate them. The image side experiment, which analysed the works' copyrighted posters and covers without redistributing them, is in its own repository: [hammer-mt/phylomemetics-images](https://github.com/hammer-mt/phylomemetics-images).

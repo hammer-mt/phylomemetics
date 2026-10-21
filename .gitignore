@@ -11,10 +11,6 @@ __pycache__/
 # neuron activations (about 15 GB, regenerate with the scripts)
 activations*/
 
-# copyrighted posters and covers, and contact sheets made from them: analysed, never redistributed
-data/images/
-data/vision_sheets/
-
 # the author's book text (not published here)
 data/book/
 results/book_synthesis.json
