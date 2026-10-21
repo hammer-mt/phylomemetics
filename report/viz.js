@@ -304,16 +304,18 @@
     const tag = model === "qwen3-1.7b" ? "qwen3-1.7b" : "llama3.1-8b";
     const other = MODELS[tag].name;
     const M = D.stats.match[tag], A = D.stats.agreement[tag].named, T = D.stats[tag].mantel_vs_primary[0];
+    // matched nulls exist for the Qwen3-8B vs Llama 3.1 8B comparison only (robustness/nulls.py)
+    const R = tag === "llama3.1-8b" && window.PM2 && window.PM2.robust;
     const rows = [
       { title: "Single neurons", q: `Does ${other} have a neuron that fires on the same sentences as each Qwen meme?`,
         v: M.bands[0].median_r, fmt: (x) => x.toFixed(2), unit: "median correlation, strongest 33 memes",
-        refs: [[M.shuffled_median, "chance"], [M.random_median, "non-meme neurons"]] },
+        refs: R ? [[R.twin_top33.sparsity, "random neurons"], [R.twin_top33.lexical, "word-like neurons"]] : [[M.random_median, "non-meme neurons"]] },
       { title: "The meme grid", q: `For the 31 named memes, does ${other}'s twin mark the same works present or absent?`,
-        v: A.agree, fmt: (x) => Math.round(x * 100) + "%", unit: "of grid cells agree",
-        refs: [[A.chance, "chance"]] },
+        v: A.kappa, fmt: (x) => x.toFixed(2), unit: "agreement beyond chance (Cohen's kappa)",
+        refs: R ? [[R.grid_named31.lexical, "word-like neurons"]] : [] },
       { title: "The family tree", q: `Do the two models agree on which works are close relatives?`,
         v: T, fmt: (x) => x.toFixed(2), unit: "correlation of the two trees' distances",
-        refs: [] },
+        refs: R ? [[R.mantel.random_floor[0], "random neurons"]] : [] },
     ];
     host.innerHTML = rows.map((r) => `<div class="ov-row"><div class="ov-text"><b>${esc(r.title)}</b><span>${esc(r.q)}</span></div>
       <div class="ov-bar"><div class="ov-num">${r.fmt(r.v)}<small>${esc(r.unit)}</small></div>
@@ -348,7 +350,7 @@
     const rank = (r) => (r.q && r.l ? 0 : r.q ? 1 : r.l ? 2 : 3);
     rows.sort((a, b) => rank(a) - rank(b));
     const dot = (on) => `<span class="rd ${on ? "on" : ""}" aria-label="${on ? "still fires" : "does not fire"}"></span>`;
-    let html = `<table class="xtab rwtab"><thead><tr><th scope="col">Meme</th><th scope="col">Reworded sentence (no words in common with the original)</th><th scope="col">Qwen3-8B</th><th scope="col">Llama twin</th></tr></thead><tbody>`;
+    let html = `<table class="xtab rwtab"><thead><tr><th scope="col">Meme</th><th scope="col">Reworded sentence (almost no words in common with the original)</th><th scope="col">Qwen3-8B</th><th scope="col">Llama twin</th></tr></thead><tbody>`;
     rows.forEach((r) => {
       html += `<tr data-u="${r.unit}"><th scope="row">${esc(r.label)}</th><td class="rw"><span class="orig">${esc(r.original)}</span>${esc(r.reworded)}</td><td class="c">${dot(r.q)}</td><td class="c">${dot(r.l)}</td></tr>`;
     });

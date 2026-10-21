@@ -212,13 +212,60 @@
       without_killing_joke: "Without the 3 Killing Joke adaptations", band_3_16: "Optional = 3 to 16 works", band_4_16: "Optional = 4 to 16 works", band_2_8: "Optional = 2 to 8 works" };
     const q = D.experiments["qwen3-8b"].E2, l = D.experiments["llama3.1-8b"].E2;
     const p = (x) => (x < 0.001 ? "<0.001" : x.toFixed(3));
+    const qc = q.primary.chance, lc = l.primary.chance;
+    const chanceRow = (name, k) => `<tr class="sub"><th scope="row">${name}</th><td>${pct(q.primary.mean_share_beating_source)} (${pct(qc[k].mean)})</td><td>${p(qc[k].p)}</td><td>${pct(l.primary.mean_share_beating_source)} (${pct(lc[k].mean)})</td><td>${p(lc[k].p)}</td></tr>`;
     let html = `<table class="xtab num"><thead><tr><th scope="col">Variant</th><th scope="col">Qwen3-8B: comics beating the source (chance)</th><th scope="col">p</th><th scope="col">Llama 3.1 8B</th><th scope="col">p</th></tr></thead><tbody>`;
-    html += `<tr><th scope="row"><b>Primary (name-free)</b></th><td>${pct(q.primary.mean_share_beating_source)} (${pct(q.primary.null_mean)})</td><td>${p(q.primary.p_one_sided)}</td><td>${pct(l.primary.mean_share_beating_source)} (${pct(l.primary.null_mean)})</td><td>${p(l.primary.p_one_sided)}</td></tr>`;
+    html += `<tr><th scope="row"><b>Primary (name-free, exact p)</b></th><td>${pct(q.primary.mean_share_beating_source)} (${pct(qc.joint_relabelling_exact.mean)})</td><td>${p(qc.joint_relabelling_exact.p)}</td><td>${pct(l.primary.mean_share_beating_source)} (${pct(lc.joint_relabelling_exact.mean)})</td><td>${p(lc.joint_relabelling_exact.p)}</td></tr>`;
+    html += chanceRow("Chance from relabelling only with comics that existed in time", "joint_relabelling_time_consistent");
+    html += chanceRow("Chance from relabelling only within an era", "within_era");
     Object.entries(names).forEach(([k, n]) => { html += `<tr><th scope="row">${n}</th><td>${pct(q.sens[k].stat)} (${pct(q.sens[k].null)})</td><td>${p(q.sens[k].p)}</td><td>${pct(l.sens[k].stat)} (${pct(l.sens[k].null)})</td><td>${p(l.sens[k].p)}</td></tr>`; });
-    html += `<tr class="sub"><th scope="row">Placebo films (non-adaptations given the same sources)</th><td>${pct(q.primary.placebo_mean)}</td><td></td><td>${pct(l.primary.placebo_mean)}</td><td></td></tr></tbody></table>`;
+    html += `<tr class="sub"><th scope="row">Placebo films: the ${q.primary.n_valid_placebos} non-adaptations with an eligible comic, given the same sources</th><td>${pct(q.primary.placebo_mean)}</td><td></td><td>${pct(l.primary.placebo_mean)}</td><td></td></tr></tbody></table>`;
+    html += `<p class="small muted" style="margin-top: 0.6rem;">Variant rows use 2,000 random relabellings. The primary row is exact, over all ${qc.joint_relabelling_exact.n_maps.toLocaleString()} relabellings, and so are the two chance rows. The 1943 serial and Batman '66 are left out of the placebo because no comic in the set came before them. The real adaptations sit ${q.primary.real_below_all_placebos && l.primary.real_below_all_placebos ? "below all" : "not below all"} ${q.primary.n_valid_placebos} placebo films in both models.</p>`;
     host.innerHTML = html;
     const s = $("#e2-seq");
     if (s) s.innerHTML = `<table class="xtab num"><thead><tr><th scope="col">Sequel</th><th scope="col">Its prequel</th><th scope="col">Qwen3-8B rank</th><th scope="col">Llama 3.1 8B rank</th></tr></thead><tbody>${q.sequels.rows.map((r, i) => { const lr = l.sequels.rows[i]; return `<tr><th scope="row">${esc(r.sequel)}</th><td>${esc(r.prequel)}</td><td class="${r.rank <= 2 ? "hitc" : ""}">${r.rank} of ${r.n}</td><td class="${lr.rank <= 2 ? "hitc" : ""}">${lr.rank} of ${lr.n}</td></tr>`; }).join("")}</tbody></table>`;
+  }
+
+  // E2 against the pre-registered lexical comparators: same statistic, same texts, no model
+  const fp = (x) => (x < 0.01 ? x.toPrecision(2) : x.toFixed(3));
+  function e2Lexical() {
+    const host = $("#e2-lex"); if (!host || !D.experiments.lexical) return;
+    const X2 = D.experiments, LX = X2.lexical;
+    const rows = [
+      { name: "Qwen3-8B neurons", r: X2["qwen3-8b"].E2.primary, seq: X2["qwen3-8b"].E2.sequels.top2, seqn: X2["qwen3-8b"].E2.sequels.n, lex: false },
+      { name: "Llama 3.1 8B neurons", r: X2["llama3.1-8b"].E2.primary, seq: X2["llama3.1-8b"].E2.sequels.top2, seqn: X2["llama3.1-8b"].E2.sequels.n, lex: false },
+      { name: "TF-IDF word overlap", r: LX.E2_tfidf_cosine.primary, seq: LX.E2_tfidf_cosine.sequels_top2, seqn: LX.E2_tfidf_cosine.sequels_n, lex: true },
+      { name: "Word presence", r: LX.E2_word_presence.primary, seq: LX.E2_word_presence.sequels_top2, seqn: LX.E2_word_presence.sequels_n, lex: true },
+    ];
+    const narrow = host.clientWidth > 0 && host.clientWidth < 560;   // phones: a tighter drawing so the text stays legible
+    const Wd = narrow ? 460 : 760, x0 = narrow ? 180 : 270, x1 = Wd - 40, y0 = 50, rowH = 44, vmax = 0.5;
+    const H = y0 + rows.length * rowH + 30;
+    const X = (v) => x0 + (v / vmax) * (x1 - x0);
+    const svg = el("svg", { viewBox: `0 0 ${Wd} ${H}`, class: "chart", role: "img", "aria-label": "Share of eligible comics that beat the documented source, for neurons and for two word-count measures" }, host);
+    const lo = Math.min(...rows.map((r) => r.r.chance.within_era.mean)), hi = Math.max(...rows.map((r) => r.r.chance.joint_relabelling_exact.mean));
+    el("rect", { x: X(lo), y: y0 - 8, width: X(hi) - X(lo), height: rows.length * rowH, class: "gapband" }, svg);
+    txt(svg, { x: (X(lo) + X(hi)) / 2, y: y0 - 14, "text-anchor": "middle", class: "tick" }, `chance ${pct(lo)}–${pct(hi)}`);
+    [0, 0.1, 0.2, 0.3, 0.4, 0.5].forEach((v) => { el("line", { x1: X(v), x2: X(v), y1: y0 - 8, y2: y0 + rows.length * rowH - 8, class: "grid" }, svg); txt(svg, { x: X(v), y: H - 10, "text-anchor": "middle", class: "tick" }, pct(v)); });
+    txt(svg, { x: 0, y: 16, class: "axlab" }, "Comics that beat the real source (lower = closer)");
+    rows.forEach((row, i) => {
+      const y = y0 + i * rowH, v = row.r.mean_share_beating_source, c = row.r.chance;
+      txt(svg, { x: x0 - 14, y: y + 13, "text-anchor": "end", class: "barlab" }, row.name);
+      txt(svg, { x: x0 - 14, y: y + 29, "text-anchor": "end", class: "tick" }, narrow ? `p ${fp(c.joint_relabelling_exact.p)} · sequels ${row.seq}/${row.seqn}` : `p ${fp(c.joint_relabelling_exact.p)} · sequels ${row.seq} of ${row.seqn}`);
+      const b = el("rect", { x: x0, y: y + 1, width: Math.max(2, X(v) - x0), height: 16, rx: 3, class: row.lex ? "bar bar-alt" : "bar" }, svg);
+      txt(svg, { x: X(v) + 6, y: y + 14, class: "barval" }, pct(v));
+      hover(b, `<b>${esc(row.name)}</b><br>${pct(v)} of eligible comics beat the documented source; the source beats the median comic for ${row.r.beats_median} of ${row.r.n}<br><span class="tip-k">Exact p ${fp(c.joint_relabelling_exact.p)} (chance ${pct(c.joint_relabelling_exact.mean)}) · time-consistent p ${fp(c.joint_relabelling_time_consistent.p)} (${pct(c.joint_relabelling_time_consistent.mean)}) · within era p ${fp(c.within_era.p)} (${pct(c.within_era.mean)})<br>Sequel control: prequel in the top 2 for ${row.seq} of ${row.seqn} sequels</span>`);
+    });
+  }
+
+  function e2Resid() {
+    const host = $("#e2-resid"); if (!host) return;
+    const q = D.experiments["qwen3-8b"].E2, l = D.experiments["llama3.1-8b"].E2;
+    const cell = (r) => { const c = r.chance.joint_relabelling_exact; return `<td>${pct(r.mean_share_beating_source)} (${pct(c.mean)})</td><td class="${c.p < 0.05 ? "hitc" : ""}">${fp(c.p)}</td>`; };
+    const rows = [["Nothing (the primary result)", (e) => e.primary], ["TF-IDF word overlap", (e) => e.residual.neurons_resid_on_tfidf_cosine],
+      ["Word presence", (e) => e.residual.neurons_resid_on_word_presence], ["Both", (e) => e.residual.neurons_resid_on_both]];
+    host.innerHTML = `<table class="xtab num"><thead><tr><th scope="col">Neurons, after removing</th><th scope="col">Qwen3-8B: comics beating the source (chance)</th><th scope="col">p</th><th scope="col">Llama 3.1 8B</th><th scope="col">p</th></tr></thead><tbody>
+      ${rows.map(([n, f]) => `<tr><th scope="row">${n}</th>${cell(f(q))}${cell(f(l))}</tr>`).join("")}
+      <tr class="sub"><th scope="row">Reverse: TF-IDF after removing the neurons</th>${cell(q.residual.tfidf_cosine_resid_on_neurons)}${cell(l.residual.tfidf_cosine_resid_on_neurons)}</tr></tbody></table>`;
   }
 
   function e3Scatter() {
@@ -253,5 +300,5 @@
   }
 
   tabs(); canonTiers(); canonChips(); completeness(); swimlane(); cousinsSpread(); lineage();
-  e1Auc(); e1Cousins(); e1Core(); e2Ranks(); e2Sens(); e3Scatter();
+  e1Auc(); e1Cousins(); e1Core(); e2Ranks(); e2Lexical(); e2Resid(); e2Sens(); e3Scatter();
 })();

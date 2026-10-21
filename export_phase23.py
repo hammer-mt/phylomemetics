@@ -72,6 +72,13 @@ def slim_e1(e1):
     return keep
 
 
+def slim_e2(res):
+    """An E2 result without its per-adaptation rows: share, chance, p, placebo and the exact nulls."""
+    keep = ("mean_share_beating_source", "null_mean", "p_one_sided", "beats_median", "n", "placebo_mean", "placebo_min",
+            "placebo_p5", "real_below_all_placebos", "n_valid_placebos", "chance", "r2_of_fit")
+    return {k: res[k] for k in keep if k in res}
+
+
 exps = {}
 for tag in ("qwen3-8b", "llama3.1-8b"):
     r = E[tag]
@@ -79,9 +86,16 @@ for tag in ("qwen3-8b", "llama3.1-8b"):
     exps[tag] = {"E1": slim_e1(r["E1"]),
                  "E2": {"primary": e2["primary"], "sens": {k: {"stat": e2[k]["mean_share_beating_source"], "null": e2[k]["null_mean"], "p": e2[k]["p_one_sided"]}
                                                              for k in ("original_upper_bound", "raw_rate", "no_time_rule", "strong_subset", "without_killing_joke", "band_3_16", "band_4_16", "band_2_8")},
-                        "sequels": e2["sequels_name_free"], "sequels_original_top2": e2["sequels_original"]["top2"]},
+                        "sequels": e2["sequels_name_free"], "sequels_original_top2": e2["sequels_original"]["top2"],
+                        "residual": {k: slim_e2(v) for k, v in e2["residual_test_beyond_words"].items()}},
                  "E3": {k: {kk: vv for kk, vv in r["E3"][k].items()} for k in ("primary", "original_text", "with_adapted", "reverse_time_placebo", "held_out_film_placebo")}}
 exps["core_labels"] = [{"unit": u, "label": l} for u, l in CORE_LABELS.items() if u in E["qwen3-8b"]["E1"]["core"]["core_units"]]
+# model-free lexical comparators (pre-registered for E1 and E2) and the E3 power simulation
+LX = E["lexical_comparators"]
+exps["lexical"] = {"E1_tfidf_centroid": LX["E1_tfidf_centroid"],
+                   **{k: {"primary": slim_e2(LX[k]["primary"]), "sequels_top2": LX[k]["sequels_name_free"]["top2"],
+                          "sequels_n": LX[k]["sequels_name_free"]["n"]} for k in ("E2_tfidf_cosine", "E2_word_presence")}}
+exps["E3_power"] = E["E3_power_simulated"]
 
 # ---- lineage: closest relatives
 lineage = {}
@@ -99,5 +113,15 @@ data = {"canon": {"tiers": canon["tiers"], "n_core": canon["n_core"], "n_core_sp
         "swim": swim, "experiments": exps, "lineage": lineage,
         "pageviews": {str(k): v for k, v in pv.items()},
         "doc_url": "https://claude.ai/artifact/U2ifBBtEGYfSdia2FjeaZy"}
+# matched nulls for the cross-model agreement chart (Qwen3-8B vs Llama 3.1 8B; robustness/nulls.py)
+npath = Path("results/robustness/nulls.json")
+if npath.exists():
+    N = json.load(open(npath))
+    s33, s31 = N["f2_agreement"]["sets"]["top33"], N["f2_agreement"]["sets"]["named31"]
+    floor = N["f2_trees"]["random_unit_floor"]
+    data["robust"] = {"twin_top33": {k: (v if k == "memes" else v["median"]) for k, v in s33["r_orig"].items() if k in ("memes", "sparsity", "lexical")},
+                      "grid_named31": {k: v["kappa"] for k, v in s31["grid_orig"].items()},
+                      "mantel": {"memes": N["f2_trees"]["mantel"]["qwen_vs_llama_memes"]["r"],
+                                 "random_floor": [floor["non_candidate"]["mantel_qwen_vs_llama"]["mean"], floor["non_representative"]["mantel_qwen_vs_llama"]["mean"]]}}
 Path("report/data2.js").write_text("window.PM2 = " + json.dumps(data) + ";\n")
 print("wrote report/data2.js", Path("report/data2.js").stat().st_size // 1024, "KB;", len(uniq), "canon chips;", len(swim), "swim rows")

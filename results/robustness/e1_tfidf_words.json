@@ -1,0 +1,135 @@
+{
+ "method": "Which words separate name-free Batman from the hero-film cousins in E1's TF-IDF centroid control.",
+ "hero_films": [
+  "The Bat (1926)",
+  "Zorro",
+  "The Shadow",
+  "Superman",
+  "Spider-Man",
+  "Daredevil",
+  "Iron Man",
+  "Green Hornet"
+ ],
+ "top_words": [
+  {
+   "word": "asylum",
+   "contribution": 0.00149
+  },
+  {
+   "word": "police",
+   "contribution": 0.00113
+  },
+  {
+   "word": "parents",
+   "contribution": 0.00102
+  },
+  {
+   "word": "villains",
+   "contribution": 0.00097
+  },
+  {
+   "word": "henchmen",
+   "contribution": 0.00091
+  },
+  {
+   "word": "battle",
+   "contribution": 0.0009
+  },
+  {
+   "word": "family",
+   "contribution": 0.00089
+  },
+  {
+   "word": "help",
+   "contribution": 0.00089
+  },
+  {
+   "word": "face",
+   "contribution": 0.00083
+  },
+  {
+   "word": "city",
+   "contribution": 0.0008
+  },
+  {
+   "word": "destroy",
+   "contribution": 0.00077
+  },
+  {
+   "word": "bomb",
+   "contribution": 0.00074
+  },
+  {
+   "word": "mayor",
+   "contribution": 0.00072
+  },
+  {
+   "word": "prison",
+   "contribution": 0.00071
+  },
+  {
+   "word": "criminals",
+   "contribution": 0.00069
+  },
+  {
+   "word": "gang",
+   "contribution": 0.00061
+  },
+  {
+   "word": "district",
+   "contribution": 0.00059
+  },
+  {
+   "word": "fighting",
+   "contribution": 0.00056
+  },
+  {
+   "word": "return",
+   "contribution": 0.00055
+  },
+  {
+   "word": "evidence",
+   "contribution": 0.00054
+  },
+  {
+   "word": "escapes",
+   "contribution": 0.00053
+  },
+  {
+   "word": "taking",
+   "contribution": 0.00049
+  },
+  {
+   "word": "time",
+   "contribution": 0.00049
+  },
+  {
+   "word": "left",
+   "contribution": 0.00045
+  },
+  {
+   "word": "game",
+   "contribution": 0.00044
+  },
+  {
+   "word": "hostage",
+   "contribution": 0.00043
+  },
+  {
+   "word": "warehouse",
+   "contribution": 0.00042
+  },
+  {
+   "word": "characters",
+   "contribution": 0.00042
+  },
+  {
+   "word": "commissioner",
+   "contribution": 0.00042
+  },
+  {
+   "word": "shoots",
+   "contribution": 0.0004
+  }
+ ]
+}

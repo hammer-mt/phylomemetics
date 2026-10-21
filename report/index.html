@@ -173,6 +173,7 @@ footer { color: var(--ink-3); font-size: 0.85rem; }
 /* headline tiles */
 .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr)); gap: 1rem; }
 .tile { background: var(--paper); border: 1px solid var(--rule); border-radius: 8px; padding: 1.1rem 1.2rem; display: flex; flex-direction: column; gap: 0.45rem; min-width: 0; }
+.tiles.two-up { grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr)); }
 .tile .big { font-family: var(--font-display); font-stretch: 75%; font-weight: 850; font-size: 3rem; line-height: 1; color: var(--night); font-variant-numeric: tabular-nums; }
 .tile p { font-size: 0.95rem; color: var(--ink-2); line-height: 1.45; }
 /* science ladder */
@@ -182,6 +183,7 @@ footer { color: var(--ink-3); font-size: 0.85rem; }
 .rung p { font-size: 0.93rem; color: var(--ink-2); line-height: 1.5; }
 .chip { align-self: flex-start; font-family: var(--font-mono); font-size: 0.75rem; padding: 0.25rem 0.55rem; border-radius: 999px; border: 1px solid currentColor; }
 .chip.yes { color: var(--good); } .chip.part { color: var(--weak); } .chip.no { color: var(--ink-3); }
+.chiprow { display: flex; flex-wrap: wrap; gap: 0.35rem; }
 /* overlap rows */
 .ov-row { display: grid; grid-template-columns: minmax(0, 15rem) minmax(0, 1fr); gap: 0.75rem 1.5rem; padding: 1rem 0; border-bottom: 1px solid var(--rule); align-items: center; }
 .ov-row:last-child { border-bottom: 0; }
@@ -306,17 +308,18 @@ svg .slot { fill: var(--cell-off); }
 
     <header class="col stack">
       <span class="eyebrow">Phylomemetics · Batman 1943–2022</span>
-      <h1>Neurons inside AI models make memes measurable, and the memes pass from Batman comics into the films that adapt them</h1>
-      <p class="lede">Memetics stalled because nobody could say where one meme ends and the next begins. We defined a meme as whatever makes a single neuron inside an AI model fire, traced the memes that make up Batman across 80 years, checked them against a second model built by a different company, and ran three pre-registered experiments on identity, heredity and selection.</p>
+      <h1>Neurons inside AI models can define memes. They find Batman's core canon and trace films back to their source comics, about as well as counting words does</h1>
+      <p class="lede">Memetics stalled because nobody could say where one meme ends and the next begins. We defined a meme as whatever makes a single neuron inside an AI model fire, traced the memes that make up Batman across 80 years, checked them against a second model built by a different company, and ran three pre-registered experiments on identity, heredity and selection. A robustness review then tested every claim against stronger controls, including plain word counts. This page gives the corrected results.</p>
       <figure class="hero-fig"><img src="img/hero.jpg" alt="An engraved specimen plate of Batman motifs: a domino mask, a scarred coin, a bat, a broken pearl necklace, a flask of green liquid, a playing card, a butler's bell and a grappling hook"><figcaption>Batman's memes as specimens. Illustration generated for this page; no character likeness.</figcaption></figure>
       <ul class="phases">
-        <li><a href="#p1" data-goto="p1">Phase 1 · Measuring</a><span>Two models from different companies agree on the strong memes (correlation 0.82). Batman has 56 must-have memes; 24 are his own, 32 he shares with other heroes.</span></li>
-        <li><a href="#p2" data-goto="p2">Phase 2 · Experiments</a><span>Heredity holds: films carry their source comic's memes, in both models. Without names, Batman's canon is the superhero template, and Spider-Man, Daredevil and Superman carry it more strongly than most Batman stories. No sign that memes ride on hits.</span></li>
-        <li><a href="https://claude.ai/artifact/5p9iAixEviG4zTrRzWdRxe">Side experiment · Images</a><span>CLIP has visual Batman neurons (one fires on 28 of 29 posters and covers). DINOv2, trained without captions, has far fewer. Exploratory, on its own page.</span></li>
+        <li><a href="#p1" data-goto="p1">Phase 1 · Measuring</a><span>Batman has a real core canon: 56 memes in at least 29 of the 32 works, where random sets of ordinary films have none. The strongest memes have twins in a second model (correlation 0.82), but most of them detect names and words. Only a few survive rewording.</span></li>
+        <li><a href="#p2" data-goto="p2">Phase 2 · Experiments</a><span>Films sit closer to their documented source comic than to other comics, even without names, in both models. The result holds in 99.6% of 30,240 ways of running the test. Plain word overlap finds the sources as well, and only Llama's neurons add anything beyond shared words. Without names, Batman's canon scores Batman no higher than other superhero films. The selection test had too little power to find anything.</span></li>
+        <li><a href="https://github.com/hammer-mt/phylomemetics-images">Side experiment · Images</a><span>An exploratory test of vision-model neurons on posters and covers. It has its own repository and is not part of this study.</span></li>
       </ul>
       <a class="paperlink" href="https://github.com/hammer-mt/phylomemetics/blob/main/paper/paper.md">Read the paper →</a>
       <div class="status">
         <span class="pill"><span class="dot"></span>2 phases complete</span>
+        <span>Revised after a robustness review</span>
         <span>Updated <span id="updated"></span></span>
       </div>
     </header>
@@ -331,44 +334,49 @@ svg .slot { fill: var(--cell-off); }
       <div class="col stack">
         <span class="eyebrow">Phase 2</span>
         <h2>Three experiments: identity, heredity, selection</h2>
-        <p class="lede">With a way to measure memes, can we test the three things a science of memes needs? Each experiment was written down, with the result that would count as failure, and attacked by three independent reviewers before any result was computed.</p>
-        <p>One of the three clearly works. Adaptations inherit their source comic's memes, even with every name removed, and both models agree (p = 0.004 and p = 0.0002). The identity test failed as stated and taught us something better: stripped of names, Batman's canon is the superhero template (a secret identity, an origin in loss, a costume, a mission by night), and Spider-Man, Daredevil and Superman carry it more strongly than most Batman stories do. The selection test found nothing, which with 15 early works is a weak test rather than evidence of no effect.</p>
+        <p class="lede">With a way to measure memes, can we test the three things a science of memes needs? Each experiment was written down, with the result that would count as failure, and attacked by three independent AI reviewers before it was run.</p>
+        <p>Heredity is the clearest result. Films and games sit closer to their documented source comic than to other comics, even with every name removed, in both models (exact p = 0.0026 and 0.00017). The pattern holds in 99.6% of 30,240 ways of running the analysis. But plain word overlap on the same texts finds the sources as well: 11% of comics beat the source on TF-IDF, against 16% on Qwen's neurons and 10% on Llama's. The pre-registered test of whether the neurons add anything beyond shared words fails for Qwen, the primary model, and passes for Llama. So the films carry their source's plot content, and neurons detect it about as well as word counts do.</p>
+        <p>The identity test failed as stated. Without names, Batman's canon scores Batman stories no higher than other superhero films. That null comes from the way the canon was scored. A word-count centroid on the same name-free texts still separates Batman from the superhero films (AUC 0.80), mostly on crime-city words. The selection test found nothing. With 15 early works it had little power, so the null says little about whether selection happens.</p>
       </div>
 
       <div class="wide scorecards">
-        <article class="scard"><img src="img/meme_identity.jpg" alt="A domino mask on a mahogany desk beside reading glasses (illustration)"><div class="body"><span class="eyebrow">E1 · Identity</span><h3>Is there a Batman essence without names?</h3><span class="chip no">Prediction failed</span><p>Without names, the canon tells Batman from ordinary films (AUC 0.90 and 0.95) but not from other masked heroes (0.52 and 0.54, chance 0.50). The shared core is the superhero template.</p></div></article>
-        <article class="scard"><img src="img/meme_vat.jpg" alt="A catwalk above a vat of glowing green chemicals (illustration)"><div class="body"><span class="eyebrow">E2 · Heredity</span><h3>Do films inherit their source comic's memes?</h3><span class="chip yes">Supported in both models</span><p>Only 16% (Qwen) and 10% (Llama) of eligible comics beat the documented source, against 47% by chance. The source beats the median comic for 9 of 9 films.</p></div></article>
-        <article class="scard"><img src="img/meme_coin.jpg" alt="A scarred silver coin spinning above an open palm (illustration)"><div class="body"><span class="eyebrow">E3 · Selection</span><h3>Do memes ride on hits?</h3><span class="chip no">Not detected</span><p>The memes of popular early works did not spread further than those of obscure ones (ρ = 0.25 and 0.00, p = 0.35 and 0.58), and a placebo shows the same weak trend.</p></div></article>
+        <article class="scard"><img src="img/meme_identity.jpg" alt="A domino mask on a mahogany desk beside reading glasses (illustration)"><div class="body"><span class="eyebrow">E1 · Identity</span><h3>Is there a Batman essence without names?</h3><span class="chip no">Prediction failed</span><p>Without names, the canon tells Batman from ordinary films (AUC 0.90 and 0.95) but not from other masked heroes (0.52 and 0.54, chance 0.50). A word-count centroid does separate them (0.80), so the null belongs to the canon score.</p></div></article>
+        <article class="scard"><img src="img/meme_vat.jpg" alt="A catwalk above a vat of glowing green chemicals (illustration)"><div class="body"><span class="eyebrow">E2 · Heredity</span><h3>Do films inherit their source comic's memes?</h3><div class="chiprow"><span class="chip yes">Supported in both models</span><span class="chip part">Beyond words: Llama only</span></div><p>Only 16% (Qwen) and 10% (Llama) of eligible comics beat the documented source, against 38% to 47% by chance. Plain word overlap does as well (11%).</p></div></article>
+        <article class="scard"><img src="img/meme_coin.jpg" alt="A scarred silver coin spinning above an open palm (illustration)"><div class="body"><span class="eyebrow">E3 · Selection</span><h3>Do memes ride on hits?</h3><span class="chip no">Not detected</span><p>The memes of popular early works did not spread further than those of obscure ones (ρ = 0.25 and 0.00, p = 0.35 and 0.58). The test had about a 27% chance of detecting a true correlation of 0.3.</p></div></article>
       </div>
 
       <section class="col stack">
         <h2>E1 · What makes it Batman, once the names are gone?</h2>
-        <dl class="verdict"><dt>Question</dt><dd>Do the memes in nearly every Batman story still mark a story as Batman when every name is replaced by a neutral code ("X1 interrogates X2")?</dd><dt>Prediction</dt><dd>AUC of at least 0.80 against the 8 masked-hero and superhero films, with a lower confidence bound of at least 0.65.</dd><dt>Result</dt><dd>0.52 (Qwen) and 0.54 (Llama), inside the label-shuffle null. With names it is 0.996.</dd></dl>
+        <dl class="verdict"><dt>Question</dt><dd>Do the memes in nearly every Batman story still mark a story as Batman when every name is replaced by a neutral code ("X1 interrogates X2")?</dd><dt>Prediction</dt><dd>AUC of at least 0.80 against the 8 masked-hero and superhero films, with a lower confidence bound of at least 0.65.</dd><dt>Result</dt><dd>0.52 (Qwen) and 0.54 (Llama), inside the label-shuffle null. With names it is 0.996.</dd><dt>Controls</dt><dd>A TF-IDF centroid on the same name-free texts, pre-registered but not run at first, scores 0.80 (95% CI 0.64 to 0.93). Summary length alone scores 0.76: Batman summaries tend to be longer.</dd></dl>
       </section>
       <div class="wide fig">
         <h3>Without names, the canon separates Batman from ordinary stories but not from other masked heroes</h3>
-        <p class="sub">AUC: the chance that a name-free Batman story carries more of Batman's canon than a story from the comparison group. 1 = always, 0.5 = a coin toss. Lines are 95% bootstrap intervals.</p>
+        <p class="sub">AUC: the chance that a name-free Batman story carries more of Batman's canon than a story from the comparison group. 1 = always, 0.5 = a coin toss. Lines are 95% bootstrap intervals. With only 8 hero films, the interval for that group is wide.</p>
         <div id="e1-auc"></div>
         <div class="keyrow"><span class="k-q"><i class="dotkey"></i>Qwen3-8B</span><span class="k-l"><i class="ringkey"></i>Llama 3.1 8B</span></div>
       </div>
+      <div class="col stack">
+        <p>The null comes from the way E1 scored the canon. Each story was scored by the share of Batman's canon neurons present in it, and presence was set by ordinary films that contain no superheroes. Neurons for the genre itself then count as present in superhero films too. A plain word-count centroid on the same name-free texts separates Batman from the hero films at 0.80, and still at 0.76 with the bat, cape and clown sentences dropped. Many of the words that contribute most are Batman's crime-city vocabulary: police, asylum, henchmen, prison, the mayor and the commissioner.</p>
+      </div>
       <div class="wide findings">
         <div class="fig">
-          <h3>Spider-Man, Daredevil and Superman carry Batman's canon more strongly than most Batman stories do</h3>
-          <p class="sub">For each hero film, the share of name-free Batman stories it matches or beats on Batman's canon. Above 50% means the film carries the canon more strongly than a typical Batman story.</p>
+          <h3>On the canon score, Spider-Man, Daredevil and Superman out-score most Batman stories</h3>
+          <p class="sub">For each hero film, the share of name-free Batman stories it matches or beats on Batman's canon. Above 50% means the film scores higher than a typical Batman story. Each film is a single summary, so these are noisy.</p>
           <div id="e1-cousins"></div>
           <div class="keyrow"><span class="k-q"><i class="dotkey"></i>Qwen3-8B</span><span class="k-l"><i class="ringkey"></i>Llama 3.1 8B</span></div>
+          <p class="note">Word counts rank them differently. On the TF-IDF centroid, Daredevil matches or beats half of the Batman stories, Spider-Man 31% and Superman 6%.</p>
         </div>
         <div class="fig stack-sm">
           <h3>The name-free core: the superhero template</h3>
           <p class="sub">The canon neurons that still fire in at least 70% of name-free Batman stories, named from the sentences they fire on most.</p>
           <div id="e1-core"></div>
-          <p class="small">So Batman is two layers. The lower layer, the costumed hero with a secret identity and a wound, is a template he shares with other masked heroes. What is only Batman lives in the named memes: Gotham, Alfred, the Joker, Robin, the Batcave. Of the "Billionaire Vigilante Orphans" family, the later superheroes carry the most of Batman's canon; the older masked heroes (Zorro, The Bat, the Green Hornet) carry less than most Batman stories.</p>
+          <p class="small">The core is close to the textbook definition of a superhero, which Coogan gives as a mission, powers and an identity: here a self-imposed mission, a costume and a secret identity. Batman shares it with the other masked heroes, so it says what kind of story Batman is. It does not say what makes him Batman. Of the "Billionaire Vigilante Orphans" family, the later superheroes carry the most of Batman's canon on this score; the older masked heroes (Zorro, The Bat, the Green Hornet) carry less than most Batman stories.</p>
         </div>
       </div>
 
       <section class="col stack">
         <h2>E2 · Do films inherit their source comic's memes?</h2>
-        <dl class="verdict"><dt>Question</dt><dd>Nine films and games adapt a comic in our set. Do they carry more of their source's optional memes (those in 2 to 16 of the 32 Batman works) than other comics', with names removed?</dd><dt>Prediction</dt><dd>Fewer comics beat the documented source than chance, one-sided p &lt; 0.05, checked against comics that resemble everything, comics published after the film, and placebo films.</dd><dt>Result</dt><dd>16% (Qwen) and 10% (Llama) of comics beat the source, against 47% by chance; p = 0.004 and p = 0.0002. Every variant holds.</dd></dl>
+        <dl class="verdict"><dt>Question</dt><dd>Nine films and games adapt a comic in our set. Do they carry more of their source's optional memes (those in 2 to 16 of the 32 Batman works) than other comics', with names removed?</dd><dt>Prediction</dt><dd>Fewer comics beat the documented source than chance, one-sided p &lt; 0.05, checked against comics that resemble everything, comics published after the film, and placebo films. A separate, weaker failure: if the effect disappears once shared words are removed, the neurons add nothing beyond words.</dd><dt>Result</dt><dd>16% (Qwen) and 10% (Llama) of comics beat the source, against 47% under the planned null; exact p = 0.0026 and 0.00017. Word overlap alone gives 11%. With shared words removed, Qwen's effect is no longer significant and Llama's is.</dd></dl>
       </section>
       <div class="wide fig">
         <h3>In both models the real source comic sits at or near the front for most films</h3>
@@ -377,14 +385,28 @@ svg .slot { fill: var(--cell-off); }
         <div class="keyrow"><span class="k-q"><i class="dotkey"></i>Qwen3-8B</span><span class="k-l"><i class="ringkey"></i>Llama 3.1 8B</span></div>
       </div>
       <div class="col stack">
-        <p>Names carried less of this than expected. With names left in, the share of comics beating the source falls only from 16% to 12% (Qwen) and from 10% to 8% (Llama). Most of the inheritance is in what happens, not in who it happens to.</p>
+        <p>Names carried less of this than expected. With names left in, the share of comics beating the source falls only from 16% to 12% (Qwen) and from 10% to 8% (Llama). Most of the inheritance is in what happens to the characters.</p>
+        <p>The pattern itself is very robust. An independent rebuild from the raw activations gives the same numbers. Across 30,240 ways of running the analysis, which vary the presence bar, the frequency band, the source rule, the hub adjustment, the time rule and more, p is below 0.05 in 99.6%, and every failure has the hub adjustment switched off. Dropping any one, two or three adaptations, or any one comic, never breaks it under the planned null. Under a stricter null that only swaps comics within an era, some of Qwen's leave-outs do fail (37 of 84 triples). Llama's never do.</p>
+      </div>
+      <div class="wide fig">
+        <h3>Plain word overlap finds the source as well as the neurons do</h3>
+        <p class="sub">The same statistic on the same name-free texts, with the neurons replaced by two word counts that use no model: TF-IDF overlap between texts, and which words a text contains. Lower means closer to the documented source. Under each label: exact p, and how many of 7 sequels found their prequel without names (the bar was 5).</p>
+        <div id="e2-lex"></div>
+        <div class="band-key"><span><i class="sw" style="background: var(--night)"></i>neurons</span><span><i class="sw" style="background: var(--signal-ink)"></i>word counts, no model</span><span><i class="sw" style="background: var(--cell-off); border: 1px solid var(--rule)"></i>chance, under three nulls</span></div>
+      </div>
+      <div class="col stack">
+        <p>What the films inherit is plot content, and word counts see it too. TF-IDF puts 11% of comics ahead of the source and word presence 17%, against 16% and 10% for the neurons. Both word measures also pass the sequel control (6 of 7), which Qwen's neurons miss (4 of 7).</p>
+        <p>The pre-registration set a separate, weaker test: the neurons should still find the source after removing what word overlap explains. This was planned but not run at first; it has been run now. For Qwen, the primary model, the neurons fail it (p = 0.25 after removing TF-IDF, 0.11 after word presence, 0.09 after both). For Llama they pass (p = 0.033, 0.014 and 0.010). TF-IDF keeps its signal with the neurons removed (p &lt; 0.001 in both models). So Llama's neurons add a little beyond words, and Qwen's add nothing we can detect.</p>
+        <div class="scroll"><div id="e2-resid"></div></div>
+        <p>Chance was overstated. The 47% comes from relabelling the comics freely. Relabelling only with comics that existed at the time gives about 42%, and relabelling only within an era about 39%. The result holds against each (Qwen p = 0.011 and 0.026; Llama p = 0.0006 and 0.0014), but without the three Killing Joke adaptations Qwen's within-era p rises to 0.083.</p>
+        <p>The placebo check had a bug. Two of the 11 placebo films, the 1943 serial and Batman '66, came out before every comic in the set, so they had no eligible comic and were scored a perfect 0. That pulled the placebo average down to 38% (Qwen) and 39% (Llama). The 9 valid placebo films average 46% (Qwen) and 47% (Llama), and the real adaptations sit below all 9. This departs from the plan, which named all 11; as written, that criterion fails.</p>
         <details><summary>Every robustness check</summary><div class="scroll"><div id="e2-sens"></div></div></details>
-        <details><summary>Positive control: do sequels find their prequel without names?</summary><p class="small muted" style="margin-bottom: 0.75rem;">If the method has power without names, each sequel should rank its prequel among the top 2 earlier screen works. The bar was 5 of 7: Qwen reached 4, Llama 5 (with names, 7 and 6).</p><div class="scroll"><div id="e2-seq"></div></div></details>
+        <details><summary>Positive control: do sequels find their prequel without names?</summary><p class="small muted" style="margin-bottom: 0.75rem;">If the method has power without names, each sequel should rank its prequel among the top 2 earlier screen works. The bar was 5 of 7: Qwen reached 4, Llama 5 (with names, 7 and 6). TF-IDF and word presence both reach 6.</p><div class="scroll"><div id="e2-seq"></div></div></details>
       </div>
 
       <section class="col stack">
         <h2>E3 · Do memes ride on hits?</h2>
-        <dl class="verdict"><dt>Question</dt><dd>Do the memes of popular early works (before 2000) turn up more in later works than the memes of obscure ones?</dd><dt>Prediction</dt><dd>Positive rank correlation between an early work's popularity (Wikipedia views per month) and how far its memes spread, with adaptations removed so fame from being adapted can't drive it.</dd><dt>Result</dt><dd>ρ = 0.25 (Qwen, p = 0.35) and 0.00 (Llama, p = 0.58). Using the ordinary films as a placebo outcome gives about the same ρ (0.29 and 0.26).</dd></dl>
+        <dl class="verdict"><dt>Question</dt><dd>Do the memes of popular early works (before 2000) turn up more in later works than the memes of obscure ones?</dd><dt>Prediction</dt><dd>Positive rank correlation between an early work's popularity (Wikipedia views per month) and how far its memes spread, with adaptations removed so fame from being adapted can't drive it.</dd><dt>Result</dt><dd>ρ = 0.25 (Qwen, p = 0.35) and 0.00 (Llama, p = 0.58). On the original texts, with names, both are negative (−0.32 and −0.50).</dd></dl>
       </section>
       <div class="wide fig">
         <h3>No link between an early work's popularity and how far its memes spread</h3>
@@ -392,25 +414,47 @@ svg .slot { fill: var(--cell-off); }
         <div id="e3-scatter"></div>
       </div>
       <div class="col stack">
-        <p>With 15 works, only a strong effect could have shown up, so this is a weak null rather than evidence that popularity doesn't matter. Pageviews are also measured today, after decades of adaptation. A real test of selection needs a bigger lineage and success measured at release.</p>
+        <p>With 15 works, only a strong effect could have shown up. A simulation of the same permutation test on 15 works gives it a 27% chance of detecting a true correlation of 0.3, and 54% for 0.5. So this is a weak null, and it says little either way about whether popularity matters. The earlier placebo, which used the ordinary films as the outcome, gave every meme nearly the same score by construction, so it has been dropped. Pageviews are also measured today, after decades of adaptation. A real test of selection needs a bigger lineage and success measured at release.</p>
       </div>
 
       <section class="col stack">
         <h2>How we tried not to fool ourselves</h2>
         <ul class="clean">
-          <li><b>Written down first.</b> Each experiment's prediction and the result that would count as failure were fixed before any result was computed.</li>
-          <li><b>Attacked before running.</b> Three AI reviewers were asked to break each design. They found real problems, and every fix below came from them.</li>
+          <li><b>Written down first.</b> Each experiment's prediction and the result that would count as failure were written down before it was run. The saved files' timestamps cannot confirm that order on their own.</li>
+          <li><b>Attacked before running.</b> Three AI reviewers were asked to break each design. They found real problems, and most of the safeguards below came from them.</li>
           <li><b>Truly name-free texts.</b> A rewriter first replaced names with role words, but called Batman "the vigilante" more than 300 times and Spider-Man "the hero". That leaks identity, so we used the rewrite only to find the names, then replaced each with a neutral code.</li>
           <li><b>No marking our own homework.</b> The films that set the presence bar are never scored; they are split in half 20 times.</li>
           <li><b>Breaking circular loops.</b> E3 drops every adaptation from the later works, because a comic's fame partly comes from being adapted. E2 counts only comics published no later than the film.</li>
-          <li><b>Controls that could fail.</b> Placebo films, a label-shuffle null, a sequel positive control, and dropping every sentence that still mentions bats, capes, clowns or caves.</li>
-          <li><b>Two models.</b> Every result was rerun in Llama 3.1 8B; all three verdicts agree.</li>
+          <li><b>Controls that could fail.</b> Placebo films, a label-shuffle null, a sequel positive control, word-count comparators, and dropping every sentence that still mentions bats, capes, clowns or caves.</li>
+          <li><b>Two models.</b> Every result was rerun in Llama 3.1 8B; all three verdicts agree. The main difference: only Llama's neurons add anything to E2 beyond shared words.</li>
+          <li><b>Checked again afterwards.</b> A robustness review rebuilt E2 from scratch, ran it 30,240 ways, and tested the Phase 1 claims against stronger nulls. Its scripts and outputs are in the repository.</li>
+          <li><b>Where we departed from the plan.</b> Three pre-registered parts were not run at first and have been run now: the word-count controls for E1 and E2, and E2's beyond-words test. The E2 placebo check now uses the 9 valid placebo films, not the 11 in the plan. And E2's frequency band and hub adjustment were chosen after a simpler heredity test in Phase 1, on whole meme profiles, had failed. The 30,240-way multiverse is the check on that choice.</li>
         </ul>
       </section>
 
       <section class="col stack">
-        <h2>What to test next, from <i>Marketing Memetics</i></h2>
-        <p>Taylor's book makes claims about how memes behave that a neuron-level measure can now test directly.</p>
+        <h2>What this can't tell you</h2>
+        <ul class="clean">
+          <li><b>Whether neurons see more than words.</b> On these texts, word counts find the source comics as well as the neurons do. Qwen's neurons add nothing detectable beyond them, and Llama's add a little.</li>
+          <li><b>What makes Batman Batman.</b> The canon score can't separate him from other superheroes without names. Word counts can, but mostly on crime-city vocabulary. Neither is a definition.</li>
+          <li><b>Anything about selection.</b> E3 had about a 27% chance of detecting a true correlation of 0.3.</li>
+          <li><b>How stories were told at the time.</b> Every text is a 2020s Wikipedia plot summary in one house style, so shared wording between summaries can carry part of the heredity signal.</li>
+          <li><b>How general this is.</b> One franchise, 9 adaptations, 12 comics and two 8B models at 4 bits.</li>
+        </ul>
+      </section>
+
+      <section class="col stack">
+        <h2>What comes next</h2>
+        <p>The aim is to say what Batman is, trace the shared history between Batmans, see when Batman mutates and which mutations catch on, and find Batman-like things across culture. New pre-registered experiments are being designed for each. None has run yet.</p>
+        <ul class="clean">
+          <li><b>Neurons against the alternatives.</b> A head-to-head of neurons, keywords, embedding vectors, topic models and an LLM reading the texts, scored on accuracy and cost.</li>
+          <li><b>Tests where shared wording can't carry the answer.</b> Vocabulary drift over time, the same stories across languages, and stories with planted memes whose lineage is known in advance.</li>
+          <li><b>A fresh lineage.</b> Shakespeare's plays and the works that descend from them, with the analysis fixed in advance.</li>
+          <li><b>Mutation and selection.</b> Which changes to Batman catch on, compared with a neutral model of copying.</li>
+          <li><b>The Batman family across culture.</b> A scan for billionaire vigilante orphans far beyond the 13 relatives here.</li>
+        </ul>
+        <h3>Hypotheses from <i>Marketing Memetics</i></h3>
+        <p>Taylor's book makes claims about how memes behave that a neuron-level measure could test directly.</p>
         <ul class="clean">
           <li><b>The Lindy effect</b> (p. 95): the longer a meme has survived, the longer it will last. Test: does a meme's age in the lineage predict whether it appears in the next era?</li>
           <li><b>Theft becomes nostalgia</b> (pp. 22–23, 27): faded memes return after about 30 years and feel new. Test: find memes that vanish and reappear, and check whether the gaps cluster near 30 years.</li>
@@ -425,17 +469,19 @@ svg .slot { fill: var(--cell-off); }
       <div class="col stack">
         <span class="eyebrow">Phase 1</span>
         <h2>Measuring memes</h2>
-        <p class="lede">Can a single neuron be a meme? We let Qwen3-8B read Wikipedia plot summaries of 32 Batman works, 13 relatives and 69 ordinary films, and kept every neuron that fires far more for Batman than for ordinary films.</p>
-        <div class="tiles">
-          <div class="tile"><span class="big">0.82</span><p>How closely Llama's matching neuron tracks Qwen's, for the 33 strongest memes. 1 means they fire on exactly the same sentences; chance is 0.14.</p></div>
-          <div class="tile"><span class="big">87%</span><p>of the meme grid comes out the same when Llama draws it instead of Qwen. Chance would give 52%.</p></div>
-          <div class="tile"><span class="big">11 of 31</span><p>named memes still fire when their sentence is reworded with no words in common.</p></div>
+        <p class="lede">Can a single neuron be a meme? We let Qwen3-8B read Wikipedia plot summaries of 32 Batman works, 13 relatives and 69 ordinary films, and kept every neuron that fires far more for Batman than for ordinary films. A later robustness review tested these results against stronger controls. The core canon held up. The claims about agreement between models and about ideas rather than words came out narrower.</p>
+        <div class="tiles two-up">
+          <div class="tile"><span class="big">0</span><p>neurons present in at least 23 of 32 works when random sets of 32 ordinary films stand in for Batman. Batman has about 1,500 (Qwen) and 1,900 (Llama). The core canon is real.</p></div>
+          <div class="tile"><span class="big">0.82</span><p>How closely Llama's matching neuron tracks Qwen's, for the 33 strongest memes; random neurons matched for sparsity reach 0.40. Most of the 33 detect names or words, and word-like neurons that are not memes have twins about as good.</p></div>
+          <div class="tile"><span class="big">0.73</span><p>Agreement between the two models on the meme grid, as Cohen's kappa (1 = identical, 0 = chance). Random neurons matched on sparsity, layer or word-likeness score 0.35 to 0.57.</p></div>
+          <div class="tile"><span class="big">11 of 31</span><p>named memes still fire when their sentence is reworded with almost no words in common. Another meme's rewording passes the same bar 16% of the time, so about 5 would pass by chance.</p></div>
         </div>
       </div>
 
       <section class="col stack">
         <h2>What does a story need to be Batman?</h2>
         <p>A meme is canon if it appears in nearly every Batman work. Of 14,843 memes, 56 appear in at least 29 of the 32, from the 1943 serial to The Batman (2022). We call a meme Batman's own if no more than 3 of the 13 relatives carry it; the rest he shares with other heroes.</p>
+        <p>The canon is a real property of Batman. When random sets of 32 ordinary films stand in for the franchise, scored the same way, not one neuron is present in even 23 of them. The number of memes is less fixed. The same procedure finds 24,732 in Llama and 5,641 in Qwen3-1.7B, so the count belongs to the model and the thresholds as much as to Batman.</p>
         <div class="tiers" id="canon-tiers"></div>
       </section>
       <div class="wide fig stack">
@@ -460,10 +506,10 @@ svg .slot { fill: var(--cell-off); }
           <p class="note">From 1966 on, most works carry 90 to 100% of it. The two lowest are the stories centred on the Joker rather than Batman: Joker (2019) and The Killing Joke.</p>
         </div>
         <div class="fig">
-          <h3>Batman's canon spread to the heroes who came after him</h3>
+          <h3>The modern superheroes carry much of Batman's canon; most other masked heroes carry little</h3>
           <p class="sub">Share of Batman's must-have memes found in each relative, oldest first.</p>
           <div id="cousin-spread"></div>
-          <p class="note">Ancestors written before 1939 carry at most about a fifth of the canon; Spider-Man carries four-fifths.</p>
+          <p class="note">Ancestors written before 1939 carry at most about a fifth of the canon; Spider-Man carries four-fifths. Date is not the whole story: The Shadow (1994) carries 25% and The Green Hornet (2011) 18%.</p>
         </div>
       </div>
 
@@ -503,8 +549,12 @@ svg .slot { fill: var(--cell-off); }
             <h3>What to make of it</h3>
             <p class="small">The strongest memes have near-identical twins: 70% of the top 33 have a twin above 0.7. Weak memes mostly don't. Across all 14,843, the typical twin is at 0.40, barely above neurons that aren't memes (0.36).</p>
             <p class="small">Some match is guaranteed, because each twin is the best of 917,504 Llama neurons; shuffling the sentences shows how much (0.14).</p>
-            <p class="small">The tree agreement holds after controlling for how long each summary is (still 0.98).</p>
+            <p class="small">Most of the strongest memes detect names. By our reading, 24 of the top 33 are name or place detectors, and the best single word reproduces their firing pattern at 0.94. Word-like neurons that are not memes have Llama twins about as good (0.86). With names removed, the same twin pairs fall to 0.14.</p>
+            <p class="small">Concept memes do better. For the 27 memes labelled as concepts, twins reach 0.62, against 0.46 for neurons matched on word-likeness (p = 0.001). That edge holds on the original texts only; without names it is gone (0.34 against 0.38).</p>
           </div>
+        </div>
+        <div class="col stack" style="max-width: var(--col); margin-inline: 0;">
+          <p>The grid and the trees need the same care. Random neurons are absent from most works, so random pairs matched for sparsity agree on 89% to 92% of cells, mostly by both being empty. That is more than the memes' 87%. Kappa corrects for that: 0.73 for the memes against 0.35 to 0.57 for the random sets. The trees agree at 0.98, but any two ways of measuring these texts agree closely. Random non-meme neurons give 0.90 to 0.93 between the models, and TF-IDF against LSA gives 0.92. With TF-IDF distances removed, the meme trees still agree at 0.92. Controlling for summary length and meme count leaves 0.90 to 0.98, depending on how the control is set up.</p>
         </div>
       </section>
 
@@ -513,11 +563,12 @@ svg .slot { fill: var(--cell-off); }
         <p>Counting words treats "revenge" and "vengeance" as unrelated and sees nothing in "make them pay". A neuron that tracks the idea should fire for all three. We found each model's revenge neuron from the 41 corpus sentences that use revenge words, then tested it on sentences it had never seen.</p>
         <div class="scroll"><div id="revenge"></div></div>
         <div class="score" id="revenge-score"></div>
-        <p>Llama's revenge neuron fires hardest on the sentence with no revenge word at all, and picked the revenge sentence over its harmless twin in 10 of 12 new pairs. Qwen's treats "revenge" and "vengeance" alike, but without those words it was no better than a coin toss.</p>
+        <p>Llama's revenge neuron fires hardest on the sentence with no revenge word at all, and picked the revenge sentence over its harmless twin in 10 of 12 new pairs. It also beat two harder sets of controls: sentences about harm with no revenge (AUC 0.87) and vows with no revenge (0.79). Qwen's treats "revenge" and "vengeance" alike, but without those words it was no better than a coin toss. Each model's unit was picked from 50 candidates, and the two units fire on quite different corpus sentences (r = 0.39). So this is one good unit in one model.</p>
         <p>We also reworded the top sentence of every named meme so it shares almost no words with the original (no content words for 28 of 31; three keep one common word: "let", "family" or "company"). A filled dot means the neuron fired more on the rewording than on any of ten everyday sentences.</p>
         <div class="score" id="reword-score"></div>
         <div class="scroll"><div id="reworded"></div></div>
         <p>Four memes survive in both models: a funeral, Two-Face's coin flip, the secret identity and the joke. In Qwen, every character meme except Harvey Dent fails once its name is gone; Llama's twins for the Riddler and Jason Todd survive.</p>
+        <p>The bar is lenient. A neuron also clears it on another meme's rewording 16% (Qwen) to 18% (Llama) of the time, so about 5 of 31 would survive by chance. Qwen's 11 beats that (p = 0.002); Llama's 9 does not clearly (p = 0.08). Only Qwen's funeral and coin neurons, and six of Llama's, fire more on their own rewording than on any other meme's. Even the funeral rewording keeps the funeral's vocabulary: mourners, an open grave, a coffin. So a few units carry an idea across rewording. Most do not.</p>
       </section>
 
       <section class="wide stack">
@@ -551,6 +602,7 @@ svg .slot { fill: var(--cell-off); }
         </div>
         <div class="col stack" style="max-width: var(--col); margin-inline: 0;">
           <p>Every tree puts the three Arkham games on their own branch and Batman v Superman beside Superman. Every model pairs The Killing Joke with Joker (2019), which borrows the comic's failed-comedian origin. Qwen gathers a camp branch (Batman '66, Batman &amp; Robin, The Lego Batman Movie, Batman Ninja); Llama gathers the grounded crime branch (Year One and The Long Halloween with the Nolan films and The Batman). Branches follow tone more than date.</p>
+          <p>The trees do not recover documented sources. Across the 9 adaptations, the real source ranks 5.4 (Qwen) and 5.3 (Llama) of 12 on average, close to the 5.8 expected by chance. TF-IDF puts it at 2.9, and random non-meme neurons at 3.2 to 4.3. Phase 2's heredity test, which looks only at optional memes, does better.</p>
         </div>
       </section>
 
@@ -577,13 +629,24 @@ svg .slot { fill: var(--cell-off); }
       </section>
 
       <section class="col stack">
+        <h2>What this can't tell you</h2>
+        <ul class="clean">
+          <li><b>That memes are the same in every model.</b> The strong twins are mostly shared name and word detectors. Concept memes beat word-matched neurons, but only on texts with names.</li>
+          <li><b>That neurons track ideas in general.</b> A few units carry an idea across rewording (the funeral, the coin flip, the secret identity, the joke, Llama's revenge unit). Most do not.</li>
+          <li><b>How many memes Batman has.</b> The count depends on the model and thresholds: 14,843 in Qwen3-8B, 24,732 in Llama 3.1 8B and 5,641 in Qwen3-1.7B.</li>
+          <li><b>Exactly what each neuron is for.</b> The labels passed a blind test (79% correct) but were never checked by steering.</li>
+          <li><b>Who descends from whom, from the trees alone.</b> The trees group works by tone, and they do not recover documented sources.</li>
+        </ul>
+      </section>
+
+      <section class="col stack">
         <h2>How it was set up</h2>
         <ul class="clean">
           <li><b>Texts.</b> Wikipedia plot summaries, first 40 sentences each, 3,700 sentences: 32 Batman works (13 films and serials, 12 comics, 4 animated films, 3 games), 13 relatives, 69 ordinary films. Three works were dropped for having summaries under 8 sentences.</li>
           <li><b>Models.</b> Qwen3-8B (main), Llama 3.1 8B Instruct (independent check), Qwen3-1.7B (same family), all at 4-bit on a MacBook.</li>
           <li><b>A neuron.</b> One channel of a feed-forward layer, each end (positive, negative) counted separately: 884,736 in Qwen3-8B. An address like <span class="mono">L13·8608+</span> is layer 13, neuron 8,608, positive end.</li>
-          <li><b>Present in a work.</b> The work's three strongest sentences beat 68 of 69 ordinary films. 18,485 neurons cleared that in at least 6 Batman works (about 230 expected by chance), merged into 14,843 memes.</li>
-          <li><b>Labels.</b> Named by Claude from each neuron's top sentences and checked by a second, sceptical pass; not tested by steering.</li>
+          <li><b>Present in a work.</b> The work's three strongest sentences beat 68 of 69 ordinary films. 18,485 neurons cleared that in at least 6 Batman works, merged into 14,843 memes. At a matched bar, Batman has 1.8 times as many such neurons as random sets of 32 ordinary films (Llama 2.4 times), and more than every one of 50 random sets. The figure of about 230 we gave before assumed the works were independent.</li>
+          <li><b>Labels.</b> Named by Claude from each neuron's top sentences and checked by a second, sceptical pass; not tested by steering. In a blind test, a judge given only a label picked the sentence its neuron fires on (one the labeller never saw) over a matched control 56 of 71 times (79%). A judge that only matches words between label and sentence scored 65%. For the 31 named memes it was 24 of 31 (77%), not clearly above the word judge (63%).</li>
         </ul>
         <details>
           <summary>All the numbers</summary>
@@ -597,7 +660,7 @@ svg .slot { fill: var(--cell-off); }
     </section>
 
     <footer class="col stack-sm">
-      <p>Sources: Taylor, <i>Marketing Memetics: Reverse-Engineering Creativity to Drive Brand Performance</i> (2023); Cammarata, <a href="https://already-clean.goodfire.com/">Neural Networks Are Already Clean</a> (Goodfire); da Silva &amp; Tehrani, <a href="https://royalsocietypublishing.org/rsos/article/3/1/150645/36447/Comparative-phylogenetic-analyses-uncover-the">Comparative phylogenetic analyses uncover the ancient roots of Indo-European folktales</a> (2016); Goh et al., Multimodal Neurons in Artificial Neural Networks (Distill, 2021). Plot summaries and public-domain images from Wikipedia and Wikimedia Commons. Illustrations generated with Gemini for this page.</p>
+      <p>Sources: Taylor, <i>Marketing Memetics: Reverse-Engineering Creativity to Drive Brand Performance</i> (2023); Cammarata, <a href="https://already-clean.goodfire.com/">Neural Networks Are Already Clean</a> (Goodfire); da Silva &amp; Tehrani, <a href="https://royalsocietypublishing.org/rsos/article/3/1/150645/36447/Comparative-phylogenetic-analyses-uncover-the">Comparative phylogenetic analyses uncover the ancient roots of Indo-European folktales</a> (2016); Goh et al., Multimodal Neurons in Artificial Neural Networks (Distill, 2021); Chavalarias &amp; Cointet, Phylomemetic patterns in science evolution (PLOS ONE, 2013); Coogan, <i>Superhero: The Secret Origin of a Genre</i> (2006). Plot summaries and public-domain images from Wikipedia and Wikimedia Commons. Illustrations generated with Gemini for this page.</p>
       <p>By Mike Taylor and Claude Opus 5.5 (Anthropic).</p>
       <p>Code, data and paper: <a href="https://github.com/hammer-mt/phylomemetics">github.com/hammer-mt/phylomemetics</a> (MIT licence; Wikipedia-derived text under CC BY-SA 4.0).</p>
     </footer>
