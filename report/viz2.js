@@ -181,7 +181,7 @@
     const host = $("#e1-core"); if (!host) return;
     const c = D.experiments["qwen3-8b"].E1.core, cl = D.experiments["llama3.1-8b"].E1.core;
     host.innerHTML = `<div class="corelist">${D.experiments.core_labels.filter((x) => x.label !== "No clear theme").map((x) => `<span class="cchip shared"><b>${esc(x.label)}</b></span>`).join("")}</div>
-      <p class="small muted">Qwen3-8B: ${c.n_core_units} of ${c.n_canon_units} canon neurons survive without names (Llama 3.1 8B: ${cl.n_core_units} of ${cl.n_canon_units}). They are present in ${pct(c.core_present_share_in_hero_cousins)} of hero-film cousins and ${pct(c.core_present_share_in_films)} of ordinary films. The same procedure finds no name-free core at all for the cousins as a group or for random sets of 32 ordinary films.</p>`;
+      <p class="small muted">Qwen3-8B: ${c.n_core_units} of ${c.n_canon_units} canon neurons survive without names (Llama 3.1 8B: ${cl.n_core_units} of ${cl.n_canon_units}). They are present in ${pct(c.core_present_share_in_hero_cousins)} of hero-film cousins. The same procedure finds no name-free core at all for the cousins as a group or for random sets of 32 ordinary films.</p>`;
   }
 
   function e2Ranks() {

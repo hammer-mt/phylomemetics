@@ -1,0 +1,1200 @@
+{
+ "about": "Blind two-choice test of the Qwen3-8B meme labels. Each item gives a label and two corpus sentences: one the unit fires on strongly (activation rank 9 to 30, never one the labeller saw) and a control from the same group of works, length-matched, at or below the unit's median. Groups: named31 = the 31 labels in results/labels.json; wf120 = 40 drawn at random from the eligible labels in results/labels_wf.json. Built by the robustness review (seed 20261020); judged blind by the review's workflow, which kept only the per-group tally.",
+ "seed": 20261020,
+ "instructions_for_judge": "Each item gives a label describing what a neuron responds to, and two sentences a and b. Exactly one of the two is a sentence the neuron fires strongly on. Say which (a or b).",
+ "items": [
+  {
+   "id": "m01",
+   "label": "Jason Todd (the name Jason)",
+   "a": "The rescue of Mayor Krol from the teaming of the Joker and Scarecrow pushes Batman to his mental and physical limits: a dose of Scarecrow's fear gas makes him relive the murder of Jason Todd, which he considers to be his greatest failure.",
+   "b": "Andrea confronts the Joker at his hideout, the abandoned Gotham World's Fair, where he attempts to trap and kill her, but she is saved by Batman, who unsuccessfully pleads with her to stop."
+  },
+  {
+   "id": "m02",
+   "label": "The word 'stroke', plus scraps",
+   "a": "One of them separates from the group before U.S. government agents arrive.",
+   "b": "Soon afterward, Miggs is found dead, having swallowed his own tongue—orchestrated by Lecter as retribution."
+  },
+  {
+   "id": "m03",
+   "label": "The rogues' gallery",
+   "a": "Batman laments that everything between him and the Joker ends unresolved.",
+   "b": "Killer Croc leads Batman to one of Poison Ivy's abandoned greenhouses."
+  },
+  {
+   "id": "m04",
+   "label": "The name Thomas (mostly Wayne)",
+   "a": "With the Joker and the villains defeated, the Bat Clan begins work to restore feudal Japan and the Bat-Family returns the villains to the present day.",
+   "b": "Thomas Wayne responds, \"The sad truth is, they'd probably throw someone like Zorro in Arkham\", as he notices someone in front of them."
+  },
+  {
+   "id": "m05",
+   "label": "The Joker",
+   "a": "On April 1, Commissioner Gordon informs Batman that the patients of Arkham Asylum, led by the Joker, have taken over the facility, threatening to murder the staff unless Batman agrees to meet with them.",
+   "b": "He accuses Batman of feeding the evil of the asylum by bringing it more insane souls and they fight, which ends when Adams slashes Cavendish's throat to save Batman."
+  },
+  {
+   "id": "m06",
+   "label": "The Batcave and bat gear",
+   "a": "Two-Face declares that they will kill Batman if the coin lands scratched side up and let him go if the unscarred side lands.",
+   "b": "Kelley creates a diversion that allows her and Batman to retreat to the Batcave, where Wayne's butler Alfred Pennyworth tends to his wounds."
+  },
+  {
+   "id": "m07",
+   "label": "Lucius Fox",
+   "a": "Fox, after seeing Batman uses the grapple gun he repaired for Bruce on the news, deduces that the young billionaire is the vigilante and begins building a bat-themed arsenal for him, hoping to become a part of the action.",
+   "b": "He announces a takeover of their drug trade, taking 40 percent of their profit while offering them protection from Black Mask and Batman, but threatens to kill them if anyone is caught dealing drugs to children."
+  },
+  {
+   "id": "m08",
+   "label": "Superhero allies and love interests",
+   "a": "Catwoman electrocutes Max with a live cable, causing a power surge that appears to kill them both; however, Batman finds only Max's charred remains.",
+   "b": "Some time afterward, Bruce Wayne, now looking forward to life, leads Robin, Queen, and the rest of his followers into the caverns beyond the Batcave to continue his war on crime."
+  },
+  {
+   "id": "m09",
+   "label": "Two-Face's coin",
+   "a": "In the 21st century, humanity lost a war against its artificially intelligent creations, leaving Earth a devastated ruin.",
+   "b": "She says she would, then requests a reporter to repeat his question, \"How long are you intending to stay here in Britain?\""
+  },
+  {
+   "id": "m10",
+   "label": "Heir to a dead father's fortune",
+   "a": "Other villains include the pyromaniac Firefly (Crispin Freeman), the beastly Man-Bat (Loren Lester), the veteran assassin Deathstroke (Mark Rolston), the serial killer Professor Pyg (Dwight Schultz), the religious fanatic Deacon Blackfire (Mark Worden), and Hush (also voiced by Conroy), who is impersonating Batman's alter-ego as Bruce Wayne.",
+   "b": "The Riddler leaks evidence that Thomas, who was running for mayor before he was murdered, hired Falcone to kill a journalist whom Maroni controlled and was writing a story about Martha's family history of mental illness."
+  },
+  {
+   "id": "m11",
+   "label": "Bats",
+   "a": "Robin asks him whether it might be in the world's best interests for them to alter the dust samples so that humans can no longer harm one another.",
+   "b": "When Batman and Robin get a tip that Commodore Schmidlapp, owner of the Big Ben Distillery, is in danger aboard his yacht, they launch a rescue mission using the Batcopter."
+  },
+  {
+   "id": "m12",
+   "label": "Wealthy high society",
+   "a": "Elizabeth is astonished when her close friend, Charlotte, fearing spinsterhood, announces her engagement to Mr Collins.",
+   "b": "Encountering Jones, Brett follows him into a landing leg compartment, where the now fully-grown alien kills him."
+  },
+  {
+   "id": "m13",
+   "label": "Selina Kyle",
+   "a": "While in pursuit of the Ripper, Batman is himself chased by police, only to be saved by a costumed Selina.",
+   "b": "Concealing his infection, Batman imprisoned the four other patients, who were physically and mentally transforming into the Joker."
+  },
+  {
+   "id": "m14",
+   "label": "Gotham City",
+   "a": "Meanwhile, Detective James Gordon of the Gotham City Police Department meets his new partner, Harvey Bullock, an experienced LAPD detective who has come to Gotham to solve the Wayne murders and revive his fading career.",
+   "b": "The two characters were quickly added to the cast in the monthly Batman titles, with Azrael being a superhero-in-training who fights alongside Batman, while Bane was introduced as a supervillain."
+  },
+  {
+   "id": "m15",
+   "label": "Commissioner Gordon",
+   "a": "Andrea admits to Bruce that her father worked for Valestra and was forced to take her into hiding in Europe because he was unable to repay money that he had embezzled from the mob.",
+   "b": "Wasserman), the League of Assassins's leader, Ra's al Ghul (Dee Bradley Baker), the mind-controlling Mad Hatter (Peter MacNicol), and the assassin Deadshot (Chris Cox), who has infiltrated Arkham City to kill several high-profile character targets."
+  },
+  {
+   "id": "m16",
+   "label": "Lucius Fox",
+   "a": "Concerned about HAL's behaviour, Bowman and Poole enter an EVA pod so they can talk in private without HAL overhearing.",
+   "b": "Seb arrives at the cafe where Mia works, and she shows him around the Warner Bros. backlot while expressing her passion for movies and acting."
+  },
+  {
+   "id": "m17",
+   "label": "Losing the protégé",
+   "a": "In Gotham City, young Bruce Wayne falls down a well and develops a fear of bats.",
+   "b": "Batman returns to the botanical gardens and defeats Ivy, halting the rampaging plants."
+  },
+  {
+   "id": "m18",
+   "label": "Prison and the inmates released",
+   "a": "However, the Baroness learns that the Captain's feelings for Maria have not changed, so she peacefully calls off the engagement and returns to Vienna while encouraging the Captain to express his feelings for Maria.",
+   "b": "After Columbia University parapsychology professors Peter Venkman, Ray Stantz, and Egon Spengler experience their first encounter with a ghost at the New York Public Library, the university dean dismisses the credibility of their paranormal-focused research and fires them."
+  },
+  {
+   "id": "m19",
+   "label": "Franchise roll-call (Wikipedia style)",
+   "a": "Batman is met with frustration, rushing all over the docks, unable to locate a safe place to dispose of the bomb, but finally does so in the nick of time.",
+   "b": "He releases most of the super-criminals from Arkham Asylum, then seeks out and kills both Carmine Falcone and Vernon, despite Batman's attempts to stop him."
+  },
+  {
+   "id": "m20",
+   "label": "Bat-named gear and lairs",
+   "a": "The bosses accept the Joker's offer, and he kills high-profile targets involved in the trial, including the judge and police commissioner Gillian Loeb.",
+   "b": "Kelley creates a diversion that allows her and Batman to retreat to the Batcave, where Wayne's butler Alfred Pennyworth tends to his wounds."
+  },
+  {
+   "id": "m21",
+   "label": "Superhero casts and henchmen",
+   "a": "Meanwhile, the pistols left behind by Holiday and the bullets gleaned from Holiday's victims are traced to a Chinatown neighborhood, but the gunmaker is found dead as Holiday's victim on Mother's Day.",
+   "b": "Batman and Robin head back to Commissioner Gordon's office, where they deduce that the tip was a set-up by the United Underworld, a gathering of four of the most powerful villains in Gotham City: the Joker, the Penguin, the Riddler, and Catwoman."
+  },
+  {
+   "id": "m22",
+   "label": "The billionaire vigilante",
+   "a": "On April 1, Commissioner Gordon informs Batman that the patients of Arkham Asylum, led by the Joker, have taken over the facility, threatening to murder the staff unless Batman agrees to meet with them.",
+   "b": "A war between the Falcones and Maronis breaks out, and Falcone is forced to turn to enlist Gotham's \"freaks\" (such as the Riddler, Poison Ivy, the Scarecrow, and Mad Hatter) to hold his ground."
+  },
+  {
+   "id": "m23",
+   "label": "The butler who raised him",
+   "a": "While Strange prepares to commence \"Protocol 10\", Wayne obtains his equipment via airdrop from Alfred Pennyworth, allowing him to become Batman.",
+   "b": "Meanwhile, Black Glove member Le Bossu contacts the Joker in Arkham Asylum and offers him a role in their assault on Batman."
+  },
+  {
+   "id": "m24",
+   "label": "The Batmobile",
+   "a": "He presents these animals as gifts to the king, claiming they are from his master, who he names the \"Marquis of Carabas\".",
+   "b": "This is shortly after he witnesses his father, washed-up boxer Jack \"The Devil\" Murdock, extorting money for local mob boss Eddie Fallon."
+  },
+  {
+   "id": "m25",
+   "label": "Generic superhero comic plot",
+   "a": "The GTO bests the Neo Joker's forces and reverses the freeze ray, flooding the tunnels.",
+   "b": "Batman dodges the bullet, throws a Batarang, which jams and destroys Jason's pistol."
+  },
+  {
+   "id": "m26",
+   "label": "A corrupt police force",
+   "a": "Dent claims he is Batman to lure the Joker out, who attacks the police convoy transporting Dent.",
+   "b": "Batman travels there and learns that Titan is created by genetically modified plants."
+  },
+  {
+   "id": "m27",
+   "label": "Superhero plot beats",
+   "a": "On Halloween night, Scarecrow, who Batman had defeated in Arkham Asylum, threatens the city with his newly created strain of fear toxin and bombs planted throughout Gotham, forcing the evacuation of the city's six million civilians.",
+   "b": "Falcone responds by hiring the Sullivan family, a gang of Irish hitmen led by Donald \"Donny Boy\" Sullivan, to destroy Dent's home with a bomb, but he and his wife Gilda survive."
+  },
+  {
+   "id": "m28",
+   "label": "The secret identity",
+   "a": "Upon graduating, Peter begins using his abilities to fight crime, donning a costume and adopting the alias Spider-Man.",
+   "b": "As Khan's last descendant, Shiwan plans to fulfill his ancestor's ambitions of world domination."
+  },
+  {
+   "id": "m29",
+   "label": "Gotham City",
+   "a": "Within the DC-centric portion of the Lego universe, Batman protects Gotham City and fights crime.",
+   "b": "A month later, the villains mobilize their castle robots for battle at the \"Field of Hell\"."
+  },
+  {
+   "id": "m30",
+   "label": "A bomb",
+   "a": "This facility is subsequently placed in the care of psychiatrist Hugo Strange—who is secretly manipulating Sharp—and monitored by a rogue private military firm, TYGER Security.",
+   "b": "Joker eventually leaves and locks Jason inside the warehouse with a bomb, which explodes and kills Jason before Batman arrives."
+  },
+  {
+   "id": "m31",
+   "label": "Ra's al Ghul",
+   "a": "Bruce intends to murder Chill to avenge his parents, but an assassin in Falcone's employ kills him first.",
+   "b": "With Ra's al Ghul's blood, Freeze is able to develop an antidote, but Harley Quinn steals it before Batman can use it."
+  },
+  {
+   "id": "m32",
+   "label": "Harley Quinn",
+   "a": "Sentenced to Blackgate Penitentiary following the trial, Bruce is met by Selina, who urges him to reveal he is Batman to clear his name and help save the girls from Jack.",
+   "b": "Batman rescues Vicki, takes her to the Batcave, and provides her with all of his research on Smylex, which will allow Gotham's residents to escape the toxin."
+  },
+  {
+   "id": "m33",
+   "label": "The name 'Ace'",
+   "a": "When a directed-energy weapon strikes Pryce's yacht, Terry rescues him before turning him over to the police.",
+   "b": "Catwoman is furious after learning that Ivy had used mind-control powers on her."
+  },
+  {
+   "id": "m34",
+   "label": "Taking in an orphan as a ward",
+   "a": "He declines telling it to her, claiming she would not understand it.",
+   "b": "Batman initially refuses, so Alfred allows Dick to enter the Batcave."
+  },
+  {
+   "id": "m35",
+   "label": "The Batcave",
+   "a": "However, Bruce's butler, Alfred, testifies that Thomas Wayne's report never came to light due to police corruption, which helps declare Bruce innocent, especially in light of the murder of the Gotham City coroner on Independence Day.",
+   "b": "Some time afterward, Bruce Wayne, now looking forward to life, leads Robin, Queen, and the rest of his followers into the caverns beyond the Batcave to continue his war on crime."
+  },
+  {
+   "id": "m36",
+   "label": "The joke",
+   "a": "Joker, existing as a mental projection produced by the infected blood and fear toxin, frequently appears to taunt Batman and twist his perception of reality.",
+   "b": "He later admits that he is not sure whether this actually happened, as he tends to remember his past differently at different times."
+  },
+  {
+   "id": "m37",
+   "label": "A funeral",
+   "a": "Red Hood locates Joker and Harley, but Batman discovers they lost their memories from the explosion and are living as farmers.",
+   "b": "In Florence, drinking a Fernet Branca, Alfred discovers that Bruce is alive and in a relationship with Selina, and they acknowledge each other with a smile."
+  },
+  {
+   "id": "m38",
+   "label": "Harvey Dent",
+   "a": "In revenge, Jim tracks Flass down, beats him, and leaves him naked and handcuffed in the snow.",
+   "b": "In the ensuing struggle, Dr. Elliot is apparently shot dead by the Joker."
+  },
+  {
+   "id": "m39",
+   "label": "Words beginning with 'Qu'",
+   "a": "Kevin Conroy voices Batman—a superhero trained to the peak of human physical perfection and an expert in martial arts, Mark Hamill voices Batman's psychopathic nemesis the Joker, and the Joker's sidekick Harley Quinn is voiced by Arleen Sorkin.",
+   "b": "Harold admits that someone had treated his disfigured condition in exchange for planting that device, but he is shot and killed by Hush before he can name the mastermind."
+  },
+  {
+   "id": "m40",
+   "label": "The bat-man himself",
+   "a": "Hugo Strange discloses his knowledge of Wayne's dual identity as Batman before releasing him into the prison's criminal populace.",
+   "b": "Afterward, Joker injects Ivy with Titan, enhancing her powers, and she begins to ravage Arkham Island with giant mutant plants."
+  },
+  {
+   "id": "m41",
+   "label": "The origin wound",
+   "a": "The other protesters, in turn, beat the detectives while Arthur escapes.",
+   "b": "Batman initially refuses, so Alfred allows Dick to enter the Batcave."
+  },
+  {
+   "id": "m42",
+   "label": "Bruce's origin and bat lair",
+   "a": "Afterward, he goes to a secret Batcave installation he had hidden on the island, where he restocks his gadgets.",
+   "b": "Freeze accepts and returns to Arkham, where he is imprisoned in the same cell as Ivy, whom he plans to torment."
+  },
+  {
+   "id": "m43",
+   "label": "Wayne Manor",
+   "a": "Penny suffers a stroke after being questioned by two detectives investigating Arthur's involvement in the subway murders, and is hospitalized.",
+   "b": "Selina agrees to take Batman to Bane, but instead leads him into a trap under Wayne Tower."
+  },
+  {
+   "id": "m44",
+   "label": "Batcave, Alfred and the Gordons",
+   "a": "Freeze and Bane commandeer Gotham Observatory and convert the new telescope into a giant freeze ray, while Ivy uses the Bat-Signal to contact Robin.",
+   "b": "Batman and Robin finally prevail, overseeing the capture of Daka's men and finally the death of the Japanese agent as he tries to escape."
+  },
+  {
+   "id": "m45",
+   "label": "The antidote",
+   "a": "Upham and Reiben observe as the mortally wounded Miller tells Ryan to earn the sacrifices made to send him home.",
+   "b": "At the anti-war March on the Pentagon rally, Forrest meets Abbie Hoffman and briefly reunites with Jenny, who has been living a hippie life."
+  },
+  {
+   "id": "m46",
+   "label": "The Riddler",
+   "a": "Batman and Gordon discover that the Riddler left a thumb drive in Mitchell's car; it contains images of Mitchell's affair with a woman, Annika Kosolov, at the Iceberg Lounge—a nightclub operated by the Penguin, crime boss Carmine Falcone's lieutenant.",
+   "b": "There, Batman learns that Joker returned to the asylum to gain access to Young, who has been developing Titan—a more powerful version of the Venom drug that gives Bane his strength—intending to use it to help patients survive more strenuous therapies."
+  },
+  {
+   "id": "m47",
+   "label": "Fell into a vat of chemicals",
+   "a": "Quinn accidentally reveals that Joker has a Titan production facility in the Arkham Botanical Gardens.",
+   "b": "Batman and Red Hood fight and Red Hood reveals himself as Jason."
+  },
+  {
+   "id": "m48",
+   "label": "Dick Grayson, the first Robin",
+   "a": "Selina Kyle, a famed local actress, berates Gotham Police Commissioner James Gordon and Chief of Police Harvey Bullock for their failure to stop the Ripper murders.",
+   "b": "As Alfred Pennyworth tends to Nightwing, Batman realizes that the Red Hood is trained and has knowledge of Batman's tactics, gear and his secret identity."
+  },
+  {
+   "id": "m49",
+   "label": "Bat-family costumed identities",
+   "a": "As the vigilante Batman, Bruce begins investigating Oswald, suspecting his ties to the Red Triangle Gang.",
+   "b": "The Joker escapes custody, extracts the fortune's location from Lau, and burns it, killing Lau in the process."
+  },
+  {
+   "id": "m50",
+   "label": "Arkham Asylum and Lucius Fox",
+   "a": "Criminal psychologist Chase Meridian diagnoses Nygma as psychotic.",
+   "b": "Meanwhile, the Joker escapes from Arkham Asylum."
+  },
+  {
+   "id": "m51",
+   "label": "Jason Todd",
+   "a": "Ultimately, Cranston becomes the Tulku's student and develops psychic abilities of his own, including how to hypnotize others and bend their perceptions so that he becomes invisible, save for his shadow.",
+   "b": "Before their marriage Marguerite took revenge upon the Marquis de St. Cyr, who had ordered her beloved brother Armand beaten for his romantic interest in the Marquis' daughter, with the unintended consequence that the Marquis and his sons were guillotined."
+  },
+  {
+   "id": "m52",
+   "label": "Wayne Enterprises",
+   "a": "The Joker reveals that he encoded his himself into an advanced, stolen DNA microarray hidden behind Tim’s ear—a contingency plan in case he didn't survive his final battle with Batman.",
+   "b": "Jessica comes to Wayne Manor to visit Bruce in the hopes that, as the CEO of Wayne Enterprises, he could help her find five of the remaining members of Cobblepot's criminal organization within the city's legislature."
+  },
+  {
+   "id": "m53",
+   "label": "The name 'Batman'",
+   "a": "As Batman swings through Gotham City in pursuit of her, his grapple is cut and he falls to the ground, fracturing his skull.",
+   "b": "At Bruce's birthday party, Ducard reveals himself as the true Ra's al Ghul, who employed Crane to weaponize the League's blue flower compound."
+  },
+  {
+   "id": "m54",
+   "label": "Batman's rogues gallery",
+   "a": "Batman and Robin infiltrate the gang's lair (also Dr. Daka's laboratory), hidden inside a still-open business, a Fun House ride.",
+   "b": "He transforms his Batcycle into an armored suit to defeat Bane and stop the robot hand, only to learn the mother is a disguised Harley Quinn."
+  },
+  {
+   "id": "m55",
+   "label": "Wayne Manor",
+   "a": "They chase Red Hood to a train station, where he escapes after detonating a bomb, which injures Nightwing.",
+   "b": "Napier, Batman and the GTO organize an assault on the Neo Joker's freeze ray, piloting a fleet of Batmobiles taken from Wayne Manor."
+  },
+  {
+   "id": "m56",
+   "label": "Talia al Ghul",
+   "a": "When Emily arrives to work sick and forgets the names of important guests at a charity benefit, Andy steps in to save Miranda from embarrassment.",
+   "b": "Nick deduces Amy's scheme, convinces Margo of his innocence, and hires lawyer Tanner Bolt, known for representing husbands suspected of uxoricide."
+  },
+  {
+   "id": "m57",
+   "label": "Commissioner Gordon",
+   "a": "Following an altercation between Bruce and Cobblepot's bodyguards at a function organized by the mayor, Bruce's alter ego is named \"Batman\" by the press and becomes a public sensation.",
+   "b": "Elsewhere, after losing track of one of the drug dealers he fought during a car chase, Bruce has Fox (who is promoted as the Head of Wayne Enterprises' Research and Development department) build him a custom-made race car."
+  },
+  {
+   "id": "m58",
+   "label": "Costumed hero and villain codenames",
+   "a": "Clark Kent talks with Wayne and is then deployed by Washington to the fictional Latin American country of Corto Maltese, where he fights Soviet combat forces in a conflict that may escalate into World War III.",
+   "b": "Jezebel tries to convince Batman that he is simply living a life he has fabricated in his own head as a child to cope with the death of his parents."
+  },
+  {
+   "id": "m59",
+   "label": "The villain's lair",
+   "a": "Batman continues to aid the city's recovery efforts and vows to inspire hope in Gotham rather than exacting vengeance.",
+   "b": "Through the asylum, Batman encounters Clayface, Doctor Destiny, Scarecrow, Mad Hatter, Maxie Zeus, and Killer Croc."
+  },
+  {
+   "id": "m60",
+   "label": "Batman himself",
+   "a": "Having anticipated a new threat, Batman has continued to develop crime-fighting technology and maintain a vigil over the city.",
+   "b": "Batman breaks down the front door of the asylum, proclaiming that the inmates are now free."
+  },
+  {
+   "id": "m61",
+   "label": "Superhero powers (peaks on Superman)",
+   "a": "Other villains include the pyromaniac Firefly (Crispin Freeman), the beastly Man-Bat (Loren Lester), the veteran assassin Deathstroke (Mark Rolston), the serial killer Professor Pyg (Dwight Schultz), the religious fanatic Deacon Blackfire (Mark Worden), and Hush (also voiced by Conroy), who is impersonating Batman's alter-ego as Bruce Wayne.",
+   "b": "Following this, Jean-Paul is unable to shake the influence of the System, giving in to it completely after his first defeat at Bane's hands and being increasingly influenced by it during the rest of his tenure as Batman."
+  },
+  {
+   "id": "m62",
+   "label": "Staging a scheme or fake",
+   "a": "The captive cabby is Jefferson Hope, the murderer of Drebber and Stangerson.",
+   "b": "Britt asks his researcher Lenore Case out, but she invites Kato instead, making Britt jealous."
+  },
+  {
+   "id": "m63",
+   "label": "Gotham City",
+   "a": "Woodrue attempts to kill her by overturning a shelf of various toxins; instead, Isley is mutated by the toxins into Poison Ivy, who murders Woodrue with a venom-laden kiss, destroys the lab, and escapes to Gotham City with Bane, plotting to use Wayne's money to support her research.",
+   "b": "In response, Batman says that they cannot do so, reminding Robin of the fate of the Penguin's henchmen and their tainted rehydration, and can only hope for people, in general, to learn to live together peacefully on their own."
+  },
+  {
+   "id": "m64",
+   "label": "Robin, the sidekick",
+   "a": "Robin gives Batman an invitation from Grodd to a nearby hot spring.",
+   "b": "Suspecting that Joker wanted to be sent there, Barbara detains the duo."
+  },
+  {
+   "id": "m65",
+   "label": "Bane",
+   "a": "Batman encounters Selina, and both narrowly escape Bane's henchmen.",
+   "b": "Batman laments that everything between him and the Joker ends unresolved."
+  },
+  {
+   "id": "m66",
+   "label": "Villains the hero must defeat",
+   "a": "An old woman answers the advertisement, claiming that the ring belongs to her daughter.",
+   "b": "Meanwhile, a crazed Norman sabotages a product test by an Oscorp rival and kills several people."
+  },
+  {
+   "id": "m67",
+   "label": "Ra's al Ghul",
+   "a": "A German U-boat intercepts them, seizing the Ark and Marion; Jones covertly boards the U-boat.",
+   "b": "Will says he overheard what she said about him to her co-star."
+  },
+  {
+   "id": "m68",
+   "label": "Protégés (and 'Protocol 10')",
+   "a": "The following day, Bruce Wayne attends a gala celebrating both the retirement of Commissioner Gordon and the ascension of his daughter, Barbara Gordon, to replace him.",
+   "b": "Batman visits Andrea's apartment in her absence and intercepts a message for her from the Joker, who implies that he knows that Andrea is the Phantasm, then survives the Joker's bombing of the apartment."
+  },
+  {
+   "id": "m69",
+   "label": "Fear toxin",
+   "a": "Selina inadvertently exposes them when she arrives to steal money and discovers Annika's corpse in the trunk of a car.",
+   "b": "He flees by jumping into the chemical plant's waste pound lock and is swept through a pipe leading outside."
+  },
+  {
+   "id": "m70",
+   "label": "Bruce Wayne out of costume",
+   "a": "Elliot held a grudge against the Wayne family since Batman's father, Dr. Thomas Wayne, had saved the life of Elliot's mother after a motor vehicle accident; Elliot had sabotaged his parents' vehicle in order to gain their inheritance, and considered Bruce's father as the one who did not allow his plan to be completed.",
+   "b": "Gordon learns that Bullock is indirectly responsible for the kidnapping, since he checked out the Wayne murder files under Gordon's name, and Gordon was threatened by Cobblepot to stay out of the archives to keep him from discovering his complicity in the murders."
+  },
+  {
+   "id": "m71",
+   "label": "A mutating super-formula",
+   "a": "Subduing the Jokerz with Ace's help, Terry confronts Tim, who subdues Terry by disabling his Batsuit and then transforms into the Joker as Bruce watches in horror from the Batcave through Terry's Batsuit.",
+   "b": "Some time afterward, Bruce Wayne, now looking forward to life, leads Robin, Queen, and the rest of his followers into the caverns beyond the Batcave to continue his war on crime."
+  }
+ ],
+ "key": [
+  {
+   "id": "m01",
+   "answer": "a",
+   "group": "wf120",
+   "unit": 464175,
+   "kind": "character",
+   "high_rank": 11,
+   "control_percentile": 0.0,
+   "steep_tail": false
+  },
+  {
+   "id": "m02",
+   "answer": "b",
+   "group": "wf120",
+   "unit": 28675,
+   "kind": "mixed",
+   "high_rank": 24,
+   "control_percentile": 0.0,
+   "steep_tail": false
+  },
+  {
+   "id": "m03",
+   "answer": "b",
+   "group": "named31",
+   "unit": 128822,
+   "kind": "trope",
+   "high_rank": 13,
+   "control_percentile": 7.6,
+   "steep_tail": false
+  },
+  {
+   "id": "m04",
+   "answer": "b",
+   "group": "wf120",
+   "unit": 457566,
+   "kind": "character",
+   "high_rank": 9,
+   "control_percentile": 0.0,
+   "steep_tail": false
+  },
+  {
+   "id": "m05",
+   "answer": "a",
+   "group": "wf120",
+   "unit": 586453,
+   "kind": "character",
+   "high_rank": 9,
+   "control_percentile": 17.7,
+   "steep_tail": false
+  },
+  {
+   "id": "m06",
+   "answer": "b",
+   "group": "named31",
+   "unit": 145011,
+   "kind": "object",
+   "high_rank": 15,
+   "control_percentile": 1.5,
+   "steep_tail": false
+  },
+  {
+   "id": "m07",
+   "answer": "a",
+   "group": "named31",
+   "unit": 513921,
+   "kind": "character",
+   "high_rank": 13,
+   "control_percentile": 0.0,
+   "steep_tail": false
+  },
+  {
+   "id": "m08",
+   "answer": "b",
+   "group": "wf120",
+   "unit": 116207,
+   "kind": "genre",
+   "high_rank": 12,
+   "control_percentile": 4.1,
+   "steep_tail": false
+  },
+  {
+   "id": "m09",
+   "answer": "a",
+   "group": "named31",
+   "unit": 765185,
+   "kind": "object",
+   "high_rank": 23,
+   "control_percentile": 0.0,
+   "steep_tail": true
+  },
+  {
+   "id": "m10",
+   "answer": "a",
+   "group": "named31",
+   "unit": 128514,
+   "kind": "trope",
+   "high_rank": 20,
+   "control_percentile": 38.3,
+   "steep_tail": false
+  },
+  {
+   "id": "m11",
+   "answer": "b",
+   "group": "named31",
+   "unit": 105434,
+   "kind": "object",
+   "high_rank": 28,
+   "control_percentile": 4.2,
+   "steep_tail": false
+  },
+  {
+   "id": "m12",
+   "answer": "a",
+   "group": "wf120",
+   "unit": 595461,
+   "kind": "trope",
+   "high_rank": 16,
+   "control_percentile": 10.6,
+   "steep_tail": false
+  },
+  {
+   "id": "m13",
+   "answer": "a",
+   "group": "named31",
+   "unit": 13339,
+   "kind": "character",
+   "high_rank": 13,
+   "control_percentile": 0.0,
+   "steep_tail": false
+  },
+  {
+   "id": "m14",
+   "answer": "a",
+   "group": "wf120",
+   "unit": 74919,
+   "kind": "place",
+   "high_rank": 25,
+   "control_percentile": 0.0,
+   "steep_tail": false
+  },
+  {
+   "id": "m15",
+   "answer": "b",
+   "group": "named31",
+   "unit": 589605,
+   "kind": "character",
+   "high_rank": 30,
+   "control_percentile": 34.6,
+   "steep_tail": false
+  },
+  {
+   "id": "m16",
+   "answer": "b",
+   "group": "wf120",
+   "unit": 52211,
+   "kind": "character",
+   "high_rank": 20,
+   "control_percentile": 0.0,
+   "steep_tail": true
+  },
+  {
+   "id": "m17",
+   "answer": "a",
+   "group": "named31",
+   "unit": 584876,
+   "kind": "trope",
+   "high_rank": 29,
+   "control_percentile": 15.8,
+   "steep_tail": false
+  },
+  {
+   "id": "m18",
+   "answer": "b",
+   "group": "named31",
+   "unit": 57687,
+   "kind": "place",
+   "high_rank": 30,
+   "control_percentile": 0.0,
+   "steep_tail": true
+  },
+  {
+   "id": "m19",
+   "answer": "b",
+   "group": "named31",
+   "unit": 65066,
+   "kind": "register",
+   "high_rank": 22,
+   "control_percentile": 0.0,
+   "steep_tail": false
+  },
+  {
+   "id": "m20",
+   "answer": "b",
+   "group": "wf120",
+   "unit": 564216,
+   "kind": "object",
+   "high_rank": 14,
+   "control_percentile": 27.7,
+   "steep_tail": false
+  },
+  {
+   "id": "m21",
+   "answer": "b",
+   "group": "wf120",
+   "unit": 579530,
+   "kind": "genre",
+   "high_rank": 12,
+   "control_percentile": 22.3,
+   "steep_tail": false
+  },
+  {
+   "id": "m22",
+   "answer": "a",
+   "group": "named31",
+   "unit": 50224,
+   "kind": "trope",
+   "high_rank": 13,
+   "control_percentile": 0.0,
+   "steep_tail": false
+  },
+  {
+   "id": "m23",
+   "answer": "a",
+   "group": "named31",
+   "unit": 520801,
+   "kind": "character",
+   "high_rank": 19,
+   "control_percentile": 9.7,
+   "steep_tail": false
+  },
+  {
+   "id": "m24",
+   "answer": "b",
+   "group": "wf120",
+   "unit": 449052,
+   "kind": "object",
+   "high_rank": 17,
+   "control_percentile": 0.0,
+   "steep_tail": true
+  },
+  {
+   "id": "m25",
+   "answer": "b",
+   "group": "wf120",
+   "unit": 577158,
+   "kind": "genre",
+   "high_rank": 18,
+   "control_percentile": 9.5,
+   "steep_tail": false
+  },
+  {
+   "id": "m26",
+   "answer": "a",
+   "group": "named31",
+   "unit": 876522,
+   "kind": "trope",
+   "high_rank": 24,
+   "control_percentile": 7.5,
+   "steep_tail": true
+  },
+  {
+   "id": "m27",
+   "answer": "a",
+   "group": "wf120",
+   "unit": 132996,
+   "kind": "mixed",
+   "high_rank": 16,
+   "control_percentile": 20.6,
+   "steep_tail": false
+  },
+  {
+   "id": "m28",
+   "answer": "a",
+   "group": "named31",
+   "unit": 168352,
+   "kind": "trope",
+   "high_rank": 16,
+   "control_percentile": 10.6,
+   "steep_tail": false
+  },
+  {
+   "id": "m29",
+   "answer": "a",
+   "group": "named31",
+   "unit": 84130,
+   "kind": "place",
+   "high_rank": 10,
+   "control_percentile": 6.6,
+   "steep_tail": false
+  },
+  {
+   "id": "m30",
+   "answer": "b",
+   "group": "named31",
+   "unit": 481199,
+   "kind": "object",
+   "high_rank": 11,
+   "control_percentile": 0.0,
+   "steep_tail": false
+  },
+  {
+   "id": "m31",
+   "answer": "b",
+   "group": "named31",
+   "unit": 501280,
+   "kind": "character",
+   "high_rank": 15,
+   "control_percentile": 0.0,
+   "steep_tail": false
+  },
+  {
+   "id": "m32",
+   "answer": "a",
+   "group": "wf120",
+   "unit": 523074,
+   "kind": "character",
+   "high_rank": 25,
+   "control_percentile": 0.0,
+   "steep_tail": true
+  },
+  {
+   "id": "m33",
+   "answer": "a",
+   "group": "wf120",
+   "unit": 53042,
+   "kind": "mixed",
+   "high_rank": 19,
+   "control_percentile": 0.0,
+   "steep_tail": false
+  },
+  {
+   "id": "m34",
+   "answer": "b",
+   "group": "named31",
+   "unit": 878889,
+   "kind": "trope",
+   "high_rank": 9,
+   "control_percentile": 0.0,
+   "steep_tail": false
+  },
+  {
+   "id": "m35",
+   "answer": "b",
+   "group": "wf120",
+   "unit": 43445,
+   "kind": "place",
+   "high_rank": 25,
+   "control_percentile": 0.0,
+   "steep_tail": true
+  },
+  {
+   "id": "m36",
+   "answer": "a",
+   "group": "named31",
+   "unit": 31044,
+   "kind": "trope",
+   "high_rank": 28,
+   "control_percentile": 0.0,
+   "steep_tail": false
+  },
+  {
+   "id": "m37",
+   "answer": "b",
+   "group": "named31",
+   "unit": 17909,
+   "kind": "trope",
+   "high_rank": 11,
+   "control_percentile": 0.0,
+   "steep_tail": true
+  },
+  {
+   "id": "m38",
+   "answer": "a",
+   "group": "named31",
+   "unit": 68088,
+   "kind": "character",
+   "high_rank": 24,
+   "control_percentile": 0.0,
+   "steep_tail": true
+  },
+  {
+   "id": "m39",
+   "answer": "a",
+   "group": "wf120",
+   "unit": 60391,
+   "kind": "mixed",
+   "high_rank": 17,
+   "control_percentile": 0.0,
+   "steep_tail": false
+  },
+  {
+   "id": "m40",
+   "answer": "a",
+   "group": "wf120",
+   "unit": 581638,
+   "kind": "character",
+   "high_rank": 30,
+   "control_percentile": 38.6,
+   "steep_tail": false
+  },
+  {
+   "id": "m41",
+   "answer": "b",
+   "group": "named31",
+   "unit": 131948,
+   "kind": "trope",
+   "high_rank": 27,
+   "control_percentile": 6.1,
+   "steep_tail": false
+  },
+  {
+   "id": "m42",
+   "answer": "a",
+   "group": "wf120",
+   "unit": 609243,
+   "kind": "trope",
+   "high_rank": 14,
+   "control_percentile": 8.0,
+   "steep_tail": false
+  },
+  {
+   "id": "m43",
+   "answer": "b",
+   "group": "wf120",
+   "unit": 379403,
+   "kind": "place",
+   "high_rank": 24,
+   "control_percentile": 33.8,
+   "steep_tail": false
+  },
+  {
+   "id": "m44",
+   "answer": "a",
+   "group": "wf120",
+   "unit": 815241,
+   "kind": "character",
+   "high_rank": 14,
+   "control_percentile": 3.9,
+   "steep_tail": false
+  },
+  {
+   "id": "m45",
+   "answer": "b",
+   "group": "named31",
+   "unit": 465435,
+   "kind": "trope",
+   "high_rank": 10,
+   "control_percentile": 0.0,
+   "steep_tail": false
+  },
+  {
+   "id": "m46",
+   "answer": "a",
+   "group": "named31",
+   "unit": 465474,
+   "kind": "character",
+   "high_rank": 9,
+   "control_percentile": 0.0,
+   "steep_tail": false
+  },
+  {
+   "id": "m47",
+   "answer": "a",
+   "group": "named31",
+   "unit": 448712,
+   "kind": "trope",
+   "high_rank": 17,
+   "control_percentile": 0.0,
+   "steep_tail": true
+  },
+  {
+   "id": "m48",
+   "answer": "a",
+   "group": "wf120",
+   "unit": 505173,
+   "kind": "character",
+   "high_rank": 30,
+   "control_percentile": 0.0,
+   "steep_tail": true
+  },
+  {
+   "id": "m49",
+   "answer": "a",
+   "group": "wf120",
+   "unit": 172144,
+   "kind": "character",
+   "high_rank": 14,
+   "control_percentile": 2.6,
+   "steep_tail": false
+  },
+  {
+   "id": "m50",
+   "answer": "b",
+   "group": "wf120",
+   "unit": 117668,
+   "kind": "mixed",
+   "high_rank": 11,
+   "control_percentile": 0.6,
+   "steep_tail": false
+  },
+  {
+   "id": "m51",
+   "answer": "b",
+   "group": "named31",
+   "unit": 496024,
+   "kind": "character",
+   "high_rank": 25,
+   "control_percentile": 0.0,
+   "steep_tail": true
+  },
+  {
+   "id": "m52",
+   "answer": "b",
+   "group": "wf120",
+   "unit": 502805,
+   "kind": "place",
+   "high_rank": 15,
+   "control_percentile": 0.0,
+   "steep_tail": false
+  },
+  {
+   "id": "m53",
+   "answer": "a",
+   "group": "wf120",
+   "unit": 460110,
+   "kind": "character",
+   "high_rank": 23,
+   "control_percentile": 0.0,
+   "steep_tail": false
+  },
+  {
+   "id": "m54",
+   "answer": "b",
+   "group": "wf120",
+   "unit": 405229,
+   "kind": "character",
+   "high_rank": 26,
+   "control_percentile": 28.8,
+   "steep_tail": false
+  },
+  {
+   "id": "m55",
+   "answer": "b",
+   "group": "wf120",
+   "unit": 496238,
+   "kind": "place",
+   "high_rank": 17,
+   "control_percentile": 0.0,
+   "steep_tail": false
+  },
+  {
+   "id": "m56",
+   "answer": "b",
+   "group": "wf120",
+   "unit": 505010,
+   "kind": "character",
+   "high_rank": 24,
+   "control_percentile": 0.5,
+   "steep_tail": true
+  },
+  {
+   "id": "m57",
+   "answer": "b",
+   "group": "wf120",
+   "unit": 40056,
+   "kind": "character",
+   "high_rank": 28,
+   "control_percentile": 0.0,
+   "steep_tail": true
+  },
+  {
+   "id": "m58",
+   "answer": "a",
+   "group": "wf120",
+   "unit": 119120,
+   "kind": "character",
+   "high_rank": 14,
+   "control_percentile": 29.2,
+   "steep_tail": false
+  },
+  {
+   "id": "m59",
+   "answer": "b",
+   "group": "named31",
+   "unit": 498697,
+   "kind": "place",
+   "high_rank": 21,
+   "control_percentile": 0.0,
+   "steep_tail": true
+  },
+  {
+   "id": "m60",
+   "answer": "b",
+   "group": "wf120",
+   "unit": 44950,
+   "kind": "character",
+   "high_rank": 14,
+   "control_percentile": 29.8,
+   "steep_tail": false
+  },
+  {
+   "id": "m61",
+   "answer": "a",
+   "group": "named31",
+   "unit": 130069,
+   "kind": "trope",
+   "high_rank": 25,
+   "control_percentile": 9.5,
+   "steep_tail": false
+  },
+  {
+   "id": "m62",
+   "answer": "a",
+   "group": "wf120",
+   "unit": 470135,
+   "kind": "trope",
+   "high_rank": 11,
+   "control_percentile": 0.0,
+   "steep_tail": true
+  },
+  {
+   "id": "m63",
+   "answer": "a",
+   "group": "wf120",
+   "unit": 131818,
+   "kind": "place",
+   "high_rank": 11,
+   "control_percentile": 33.1,
+   "steep_tail": false
+  },
+  {
+   "id": "m64",
+   "answer": "a",
+   "group": "wf120",
+   "unit": 55673,
+   "kind": "character",
+   "high_rank": 30,
+   "control_percentile": 0.0,
+   "steep_tail": false
+  },
+  {
+   "id": "m65",
+   "answer": "a",
+   "group": "wf120",
+   "unit": 16460,
+   "kind": "character",
+   "high_rank": 20,
+   "control_percentile": 0.0,
+   "steep_tail": false
+  },
+  {
+   "id": "m66",
+   "answer": "b",
+   "group": "wf120",
+   "unit": 134500,
+   "kind": "trope",
+   "high_rank": 19,
+   "control_percentile": 25.2,
+   "steep_tail": false
+  },
+  {
+   "id": "m67",
+   "answer": "b",
+   "group": "wf120",
+   "unit": 426468,
+   "kind": "character",
+   "high_rank": 23,
+   "control_percentile": 1.8,
+   "steep_tail": true
+  },
+  {
+   "id": "m68",
+   "answer": "b",
+   "group": "wf120",
+   "unit": 32476,
+   "kind": "trope",
+   "high_rank": 15,
+   "control_percentile": 0.0,
+   "steep_tail": false
+  },
+  {
+   "id": "m69",
+   "answer": "b",
+   "group": "named31",
+   "unit": 66576,
+   "kind": "object",
+   "high_rank": 10,
+   "control_percentile": 3.3,
+   "steep_tail": false
+  },
+  {
+   "id": "m70",
+   "answer": "a",
+   "group": "wf120",
+   "unit": 142690,
+   "kind": "character",
+   "high_rank": 19,
+   "control_percentile": 35.0,
+   "steep_tail": false
+  },
+  {
+   "id": "m71",
+   "answer": "a",
+   "group": "named31",
+   "unit": 47532,
+   "kind": "object",
+   "high_rank": 29,
+   "control_percentile": 0.0,
+   "steep_tail": true
+  }
+ ],
+ "judge_tally": {
+  "wf120": {
+   "n": 40,
+   "correct": 32
+  },
+  "named31": {
+   "n": 31,
+   "correct": 24
+  }
+ },
+ "results": {
+  "named31": {
+   "n": 31,
+   "correct": 24,
+   "accuracy": 0.7742,
+   "ci95_exact": [
+    0.589,
+    0.9041
+   ],
+   "p_vs_chance": 0.001663,
+   "lexical_judge_accuracy": 0.629,
+   "lexical_judge_ties": 23,
+   "p_vs_lexical_judge": 0.065,
+   "steep_tail_items": 9
+  },
+  "wf120": {
+   "n": 40,
+   "correct": 32,
+   "accuracy": 0.8,
+   "ci95_exact": [
+    0.6435,
+    0.9095
+   ],
+   "p_vs_chance": 9.108e-05,
+   "lexical_judge_accuracy": 0.6625,
+   "lexical_judge_ties": 25,
+   "p_vs_lexical_judge": 0.04309,
+   "steep_tail_items": 9
+  },
+  "all": {
+   "n": 71,
+   "correct": 56,
+   "accuracy": 0.7887,
+   "ci95_exact": [
+    0.6756,
+    0.8767
+   ],
+   "p_vs_chance": 5.207e-07,
+   "lexical_judge_accuracy": 0.6479,
+   "lexical_judge_ties": 48,
+   "p_vs_lexical_judge": 0.007392,
+   "steep_tail_items": 18
+  }
+ },
+ "lexical_judge": "picks the sentence sharing more content-word stems (first 5 letters) with the label; ties score 0.5"
+}

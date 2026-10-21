@@ -80,7 +80,7 @@ for tag in ("qwen3-8b", "llama3.1-8b"):
                  "E2": {"primary": e2["primary"], "sens": {k: {"stat": e2[k]["mean_share_beating_source"], "null": e2[k]["null_mean"], "p": e2[k]["p_one_sided"]}
                                                              for k in ("original_upper_bound", "raw_rate", "no_time_rule", "strong_subset", "without_killing_joke", "band_3_16", "band_4_16", "band_2_8")},
                         "sequels": e2["sequels_name_free"], "sequels_original_top2": e2["sequels_original"]["top2"]},
-                 "E3": {k: {kk: vv for kk, vv in r["E3"][k].items()} for k in ("primary", "original_text", "with_adapted", "reverse_time_placebo", "baseline_film_placebo")}}
+                 "E3": {k: {kk: vv for kk, vv in r["E3"][k].items()} for k in ("primary", "original_text", "with_adapted", "reverse_time_placebo", "held_out_film_placebo")}}
 exps["core_labels"] = [{"unit": u, "label": l} for u, l in CORE_LABELS.items() if u in E["qwen3-8b"]["E1"]["core"]["core_units"]]
 
 # ---- lineage: closest relatives
