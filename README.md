@@ -5,7 +5,7 @@
 Memetics stalled because nobody could say where one meme ends and the next begins. This project tests a proposal from Mike Taylor's *Marketing Memetics* (2023): define a meme as whatever makes a single neuron inside an AI model fire. It then uses comparative phylogenetic methods, after da Silva & Tehrani's (2016) study of Indo-European folktales, to trace the memes that make up Batman from the 1943 serial to *The Batman* (2022).
 
 - **Paper:** [`paper/paper.md`](paper/paper.md)
-- **Interactive companion page:** [`report/index.html`](report/index.html). Serve the folder, for example with `python3 -m http.server --directory report`, then open it in a browser.
+- **Interactive companion page:** [`report/index.html`](report/index.html), with the image side experiment at [`report/images.html`](report/images.html). Serve the folder, for example with `python3 -m http.server --directory report`, then open it in a browser.
 
 ## What we found
 
@@ -17,7 +17,7 @@ Memetics stalled because nobody could say where one meme ends and the next begin
 | **E2 Heredity: supported** | On name-free texts, films and games carry their documented source comic's memes more than other comics' (Qwen p = 0.004, Llama p = 0.0002). |
 | **E1 Identity: not supported, and more interesting** | Without names, Batman's canon no longer separates him from other masked heroes. Its name-free core is the superhero template (secret identity, origin in loss, costume, mission by night), and *Spider-Man*, *Daredevil* and *Superman* carry Batman's canon more strongly than most Batman stories. What is uniquely Batman lives in the named memes. |
 | **E3 Selection: not detected** | No sign that memes from popular early works spread further (a weak test, with 15 works). |
-| **Images** | CLIP has a visual Batman canon (one neuron fires on 28 of 29 Batman posters and covers). DINOv2, trained without text, largely does not. |
+| **Images (side experiment, not in the paper)** | CLIP has a visual Batman canon (one neuron fires on 28 of 29 Batman posters and covers). DINOv2, trained without text, largely does not. Exploratory; its own page is [`report/images.html`](report/images.html). |
 
 All three experiments were pre-registered, with the result that would count as failure, and revised after adversarial review before any result was computed ([`results/design_reviews.json`](results/design_reviews.json)).
 

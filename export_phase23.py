@@ -99,8 +99,9 @@ data = {"canon": {"tiers": canon["tiers"], "n_core": canon["n_core"], "n_core_sp
         "swim": swim, "experiments": exps, "lineage": lineage,
         "pageviews": {str(k): v for k, v in pv.items()},
         "doc_url": "https://claude.ai/artifact/U2ifBBtEGYfSdia2FjeaZy"}
+Path("report/data2.js").write_text("window.PM2 = " + json.dumps(data) + ";\n")
+# the exploratory image experiment has its own page (report/images.html)
 vpath = Path("results/vision_final.json")
 if vpath.exists():
-    data["vision"] = json.load(open(vpath))
-Path("report/data2.js").write_text("window.PM2 = " + json.dumps(data) + ";\n")
+    Path("report/vision.js").write_text("window.PM_VISION = " + json.dumps(json.load(open(vpath))) + ";\n")
 print("wrote report/data2.js", Path("report/data2.js").stat().st_size // 1024, "KB;", len(uniq), "canon chips;", len(swim), "swim rows")

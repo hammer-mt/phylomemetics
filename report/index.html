@@ -312,11 +312,11 @@ svg .slot { fill: var(--cell-off); }
       <ul class="phases">
         <li><a href="#p1" data-goto="p1">Phase 1 · Measuring</a><span>Two models from different companies agree on the strong memes (correlation 0.82). Batman has 56 must-have memes; 24 are his own, 32 he shares with other heroes.</span></li>
         <li><a href="#p2" data-goto="p2">Phase 2 · Experiments</a><span>Heredity holds: films carry their source comic's memes, in both models. Without names, Batman's canon is the superhero template, and Spider-Man, Daredevil and Superman carry it more strongly than most Batman stories. No sign that memes ride on hits.</span></li>
-        <li><a href="#p3" data-goto="p3">Phase 3 · Images</a><span>CLIP has visual Batman neurons (one fires on 28 of 29 posters and covers). DINOv2, trained without captions, has far fewer.</span></li>
+        <li><a href="https://claude.ai/artifact/5p9iAixEviG4zTrRzWdRxe">Side experiment · Images</a><span>CLIP has visual Batman neurons (one fires on 28 of 29 posters and covers). DINOv2, trained without captions, has far fewer. Exploratory, on its own page.</span></li>
       </ul>
       <a class="paperlink" href="https://github.com/hammer-mt/phylomemetics/blob/main/paper/paper.md">Read the paper →</a>
       <div class="status">
-        <span class="pill"><span class="dot"></span>3 phases complete</span>
+        <span class="pill"><span class="dot"></span>2 phases complete</span>
         <span>Updated <span id="updated"></span></span>
       </div>
     </header>
@@ -324,7 +324,6 @@ svg .slot { fill: var(--cell-off); }
     <nav id="tabs" class="wide" role="tablist" aria-label="Phases">
       <button type="button" role="tab" data-tab="p1" aria-selected="false">Phase 1: Measuring memes</button>
       <button type="button" role="tab" data-tab="p2" aria-selected="true">Phase 2: Three experiments</button>
-      <button type="button" role="tab" data-tab="p3" aria-selected="false">Phase 3: Memes in images</button>
     </nav>
 
     <!-- ===================================================== PHASE 2 -->
@@ -597,47 +596,8 @@ svg .slot { fill: var(--cell-off); }
       </section>
     </section>
 
-    <!-- ===================================================== PHASE 3 -->
-    <section data-panel="p3" role="tabpanel" class="stack-lg" hidden>
-      <div class="col stack">
-        <span class="eyebrow">Phase 3 · exploratory</span>
-        <h2>Memes in images</h2>
-        <p class="lede">Does the same method find visual memes? We showed two vision models the lead image of each work's Wikipedia article: the poster, comic cover or game box art for 29 Batman works, 13 relatives and 69 ordinary films.</p>
-        <p>CLIP, trained on images paired with captions, has a visual Batman canon: one neuron fires on 28 of the 29 Batman images and on 1 ordinary-film poster. Ten neurons fire on at least half of them. DINOv2, trained on images alone, has more neurons but only 2 that fire on even 12 of the 29. Concept neurons seem to need language. The two vision models agree less than the two language models: CLIP's visual memes match DINOv2 neurons at a median correlation of 0.45, against 0.36 for random neurons and 0.13 by chance.</p>
-      </div>
-      <div class="wide fig">
-        <h3>CLIP has dozens of neurons that fire across Batman's images; chance would give almost none</h3>
-        <p class="sub">Number of neurons firing on at least k of the 29 Batman images, more strongly than on 68 of 69 ordinary-film posters. CLIP has 3,840 neurons in the layers read; DINOv2 36,864.</p>
-        <div id="v-counts"></div>
-      </div>
-      <section class="col stack">
-        <h2>CLIP's visual Batman canon</h2>
-        <p>The strongest CLIP neurons, named by reading the eight images each fires on most (labels checked by a second pass). Copyrighted posters and covers were analysed but are not shown.</p>
-        <div class="scroll"><div id="v-list"></div></div>
-        <p class="small muted">Some of these are visual memes (the pointed cowl, the bat silhouette), some are text inside images (the BATMAN wordmark), and some are medium (drawn comic covers). A vision model's neurons mix all three, just as the language models' mixed story memes with Wikipedia's house style.</p>
-      </section>
-      <section class="wide stack">
-        <div class="col stack" style="max-width: var(--col); margin-inline: 0;">
-          <h2>Testing the neurons on pictures we can show</h2>
-          <p>We generated test images with no Batman in them and measured three visual-meme neurons on each. Numbers are percentiles against the neuron's responses to the 111 corpus images: 90 means it fired more strongly than on 90% of them.</p>
-        </div>
-        <div class="probes" id="v-probes"></div>
-        <div class="col stack" style="max-width: var(--col); margin-inline: 0;">
-          <p>The cowl neuron responds only moderately to gothic night scenes (around the 73rd percentile) and not at all to sunny ones; it wants the cowl itself. The hooded-figure and bat-wing neurons light up for a cloaked figure beside a gargoyle (96th and 88th percentile) and stay quiet for a beach or a kitchen. Visual memes look separable from generic darkness, but this is a handful of probes, not a test.</p>
-        </div>
-      </section>
-      <section class="col stack">
-        <h2>What this can't tell you</h2>
-        <ul class="clean">
-          <li>One image per work, and posters, covers and box art differ in kind, so some "memes" are really medium.</li>
-          <li>Three Batman covers couldn't be downloaded (Batman R.I.P., Earth One, Batman Ninja).</li>
-          <li>The labels come from looking at eight images per neuron; none were tested by steering.</li>
-        </ul>
-      </section>
-    </section>
-
     <footer class="col stack-sm">
-      <p>Sources: Taylor, <i>Marketing Memetics: Reverse-Engineering Creativity to Drive Brand Performance</i> (2023); Cammarata, <a href="https://already-clean.goodfire.com/">Neural Networks Are Already Clean</a> (Goodfire); da Silva &amp; Tehrani, <a href="https://royalsocietypublishing.org/rsos/article/3/1/150645/36447/Comparative-phylogenetic-analyses-uncover-the">Comparative phylogenetic analyses uncover the ancient roots of Indo-European folktales</a> (2016); Goh et al., Multimodal Neurons in Artificial Neural Networks (Distill, 2021). Plot summaries and public-domain images from Wikipedia and Wikimedia Commons. Illustrations and test images generated with Gemini for this page.</p>
+      <p>Sources: Taylor, <i>Marketing Memetics: Reverse-Engineering Creativity to Drive Brand Performance</i> (2023); Cammarata, <a href="https://already-clean.goodfire.com/">Neural Networks Are Already Clean</a> (Goodfire); da Silva &amp; Tehrani, <a href="https://royalsocietypublishing.org/rsos/article/3/1/150645/36447/Comparative-phylogenetic-analyses-uncover-the">Comparative phylogenetic analyses uncover the ancient roots of Indo-European folktales</a> (2016); Goh et al., Multimodal Neurons in Artificial Neural Networks (Distill, 2021). Plot summaries and public-domain images from Wikipedia and Wikimedia Commons. Illustrations generated with Gemini for this page.</p>
       <p>By Mike Taylor and Claude Opus 5.5 (Anthropic).</p>
       <p>Code, data and paper: <a href="https://github.com/hammer-mt/phylomemetics">github.com/hammer-mt/phylomemetics</a> (MIT licence; Wikipedia-derived text under CC BY-SA 4.0).</p>
     </footer>
