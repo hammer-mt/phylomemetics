@@ -11,6 +11,8 @@
     background <tag> <units.npy>             per-plot shares of chosen units (--select)           -> v2/acts/<tag>/bg_selected.*
     sync - [skip ...]                        upload every GPU script that differs from the pod's copy (not the ones named)
 """
+import fcntl
+import os
 import subprocess
 import sys
 from pathlib import Path
@@ -29,9 +31,12 @@ def up(local, sub="jobs"):
 
 
 def go(name, cmd):
+    """Run one job on the pod and wait for it. One job at a time per pod: steps started from several shells queue here."""
     tag = sys.argv[2]
-    print(rc.run(name, f"set -o pipefail; mkdir -p {OUT}/{tag} && cd {CODE} && {cmd}"), flush=True)
-    code = rc.wait(name, poll=10, max_print=3000)
+    with open(os.environ.get("RUNPOD_STATE", str(Path(__file__).resolve().parent / ".state" / "pod.json")) + ".lock", "w") as lock:
+        fcntl.flock(lock, fcntl.LOCK_EX)
+        print(rc.run(name, f"set -o pipefail; mkdir -p {OUT}/{tag} && cd {CODE} && {cmd}"), flush=True)
+        code = rc.wait(name, poll=10, max_print=3000)
     if code != 0:
         raise SystemExit(f"{name} exited with {code}")
 
