@@ -10,14 +10,18 @@ regressors also include word presence under the same cap (PLAN.md Section 18, ch
 placeholder codes left in, the token after each code masked too, the raw product with the echo regime left in, weak
 poles left out (under 10% and under 25% of the neuron's stronger pole), and units scaled by the supplement left out.
 
-    cd study && ../.venv/bin/python v2/analysis/sensitivity_v2.py [model-tag ...]        (SENS_WORKERS=3 runs three settings at a time)
+    cd study && ../.venv/bin/python v2/analysis/sensitivity_v2.py [model-tag ...]        (SENS_WORKERS=3 runs three settings at a time;
+    SENS_ORDER=reverse lets a second process work from the other end of the list)
 
 Writes results/v2/sensitivity_<tag>.json.
 """
+import hashlib
+import json
 import multiprocessing
 import os
 import sys
 import time
+from pathlib import Path
 
 import numpy as np
 
@@ -55,25 +59,38 @@ EXTRA = (("reference-only scale", {"which": "ref"}), ("fifth-example scale", {"w
 
 def block(job):
     """One threshold and score with every cap, or one other version at the primary setting. Every setting seeds its own
-    random numbers (experiments_v2.run_setting), so the blocks give the same values in any order or in parallel."""
+    random numbers (experiments_v2.run_setting), so the blocks give the same values in any order or in parallel. A
+    finished block is kept in v2/cache/sens/, so an interrupted run picks up where it stopped."""
     tag, kind, a, b = job
+    path = Path("v2/cache/sens") / tag / (hashlib.sha1(json.dumps(job, sort_keys=True).encode()).hexdigest()[:16] + ".json")
+    if path.exists():
+        return json.load(open(path))
     if kind == "grid":
         st = C.Setting(tag, a, b, icon=False)
-        return [flat(E.run_setting(st, None, cap, cap, full=False, centroid="all" if cap is None else "capped"), cell="grid",
+        rows = [flat(E.run_setting(st, None, cap, cap, full=False, centroid="all" if cap is None else "capped"), cell="grid",
                      cap="none" if cap is None else cap) for cap in C.CAPS]
-    st = C.Setting(tag, C.THETA, "top1", icon=False, **b)
-    return [flat(E.run_setting(st, None, C.CAP, None, full=False), cell=a)]
+    else:
+        st = C.Setting(tag, C.THETA, "top1", icon=False, **b)
+        rows = [flat(E.run_setting(st, None, C.CAP, None, full=False), cell=a)]
+    path.parent.mkdir(parents=True, exist_ok=True)
+    tmp = path.with_suffix(f".{os.getpid()}.tmp")
+    json.dump(rows, open(tmp, "w"), default=lambda o: o.item() if hasattr(o, "item") else str(o))
+    os.replace(tmp, path)
+    return json.load(open(path))                       # read back, so a fresh run and a resumed one return the same objects
 
 
 def run_model(tag):
     t0 = time.time()
     jobs = [(tag, "grid", th, sc) for th in THETAS for sc in SCORES] + [(tag, "extra", name, kw) for name, kw in EXTRA]
     workers = int(os.environ.get("SENS_WORKERS", "1"))
+    todo = jobs[::-1] if os.environ.get("SENS_ORDER") == "reverse" else jobs       # a second process can work from the other end
     if workers > 1:
         with multiprocessing.get_context("fork").Pool(workers, maxtasksperchild=1) as pool:
-            done = pool.map(block, jobs, chunksize=1)
+            pool.map(block, todo, chunksize=1)
     else:
-        done = [block(j) for j in jobs]
+        for j in todo:
+            block(j)
+    done = [block(j) for j in jobs]                    # all cached by now
     grid = [r for j, rows in zip(jobs, done) if j[1] == "grid" for r in rows]
     extra = [r for j, rows in zip(jobs, done) if j[1] == "extra" for r in rows]
     prim = [r for r in grid if r["theta"] == C.THETA and r["score"] == "top1"]
