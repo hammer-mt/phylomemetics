@@ -1,0 +1,2175 @@
+{
+ "model": "qwen3-32b",
+ "multiple": 5,
+ "chance": 0.2,
+ "idea_units": {
+  "n": 126,
+  "judged": 126,
+  "correct": 17,
+  "accuracy": 0.1349206349206349,
+  "none": 63,
+  "p_above_chance": 0.9779600928241245
+ },
+ "name_units": {
+  "n": 115,
+  "judged": 115,
+  "correct": 12,
+  "accuracy": 0.10434782608695652,
+  "none": 84,
+  "p_above_chance": 0.9979923260552226
+ },
+ "all_units": {
+  "n": 241,
+  "judged": 241,
+  "correct": 29,
+  "accuracy": 0.12033195020746888,
+  "none": 147,
+  "p_above_chance": 0.9996065964306468
+ },
+ "by_kind": {
+  "character or name": {
+   "n": 50,
+   "judged": 50,
+   "correct": 5,
+   "accuracy": 0.1,
+   "none": 36,
+   "p_above_chance": 0.9815039849397906
+  },
+  "genre or setting": {
+   "n": 23,
+   "judged": 23,
+   "correct": 7,
+   "accuracy": 0.30434782608695654,
+   "none": 7,
+   "p_above_chance": 0.15983295309973328
+  },
+  "grammar": {
+   "n": 53,
+   "judged": 53,
+   "correct": 5,
+   "accuracy": 0.09433962264150944,
+   "none": 30,
+   "p_above_chance": 0.9882330563974857
+  },
+  "object": {
+   "n": 5,
+   "judged": 5,
+   "correct": 1,
+   "accuracy": 0.2,
+   "none": 2,
+   "p_above_chance": 0.67232
+  },
+  "other": {
+   "n": 24,
+   "judged": 24,
+   "correct": 1,
+   "accuracy": 0.041666666666666664,
+   "none": 15,
+   "p_above_chance": 0.9952776335171304
+  },
+  "place": {
+   "n": 7,
+   "judged": 7,
+   "correct": 1,
+   "accuracy": 0.14285714285714285,
+   "none": 4,
+   "p_above_chance": 0.7902848
+  },
+  "story pattern": {
+   "n": 12,
+   "judged": 12,
+   "correct": 1,
+   "accuracy": 0.08333333333333333,
+   "none": 6,
+   "p_above_chance": 0.931280523264
+  },
+  "style or format": {
+   "n": 11,
+   "judged": 11,
+   "correct": 1,
+   "accuracy": 0.09090909090909091,
+   "none": 5,
+   "p_above_chance": 0.91410065408
+  },
+  "word or token": {
+   "n": 56,
+   "judged": 56,
+   "correct": 7,
+   "accuracy": 0.125,
+   "none": 42,
+   "p_above_chance": 0.9489807133739724
+  }
+ },
+ "by_depth_quarter": {
+  "1": {
+   "n": 67,
+   "judged": 67,
+   "correct": 6,
+   "accuracy": 0.08955223880597014,
+   "none": 51,
+   "p_above_chance": 0.9957159634341822
+  },
+  "2": {
+   "n": 34,
+   "judged": 34,
+   "correct": 5,
+   "accuracy": 0.14705882352941177,
+   "none": 24,
+   "p_above_chance": 0.8381368639833576
+  },
+  "3": {
+   "n": 63,
+   "judged": 63,
+   "correct": 11,
+   "accuracy": 0.1746031746031746,
+   "none": 26,
+   "p_above_chance": 0.739835281371245
+  },
+  "4": {
+   "n": 77,
+   "judged": 77,
+   "correct": 7,
+   "accuracy": 0.09090909090909091,
+   "none": 46,
+   "p_above_chance": 0.9971077787094654
+  }
+ },
+ "idea_units_by_depth_quarter": {
+  "1": {
+   "n": 10,
+   "judged": 10,
+   "correct": 0,
+   "accuracy": 0.0,
+   "none": 8,
+   "p_above_chance": 1.0
+  },
+  "2": {
+   "n": 21,
+   "judged": 21,
+   "correct": 5,
+   "accuracy": 0.23809523809523808,
+   "none": 12,
+   "p_above_chance": 0.4139916164865516
+  },
+  "3": {
+   "n": 42,
+   "judged": 42,
+   "correct": 8,
+   "accuracy": 0.19047619047619047,
+   "none": 13,
+   "p_above_chance": 0.6222882342527523
+  },
+  "4": {
+   "n": 53,
+   "judged": 53,
+   "correct": 4,
+   "accuracy": 0.07547169811320754,
+   "none": 30,
+   "p_above_chance": 0.9965917325098181
+  }
+ },
+ "idea_units_with_four_distractors_of_their_own_kind": {
+  "n": 126,
+  "judged": 126,
+  "correct": 17,
+  "accuracy": 0.1349206349206349,
+  "none": 63,
+  "p_above_chance": 0.9779600928241245
+ },
+ "idea_items_with_a_distractor_of_another_kind": 0,
+ "sham_items": {
+  "n": 40,
+  "answered_none": 21,
+  "judged": 40,
+  "idea_units": {
+   "n": 20,
+   "answered_none": 9
+  },
+  "name_units": {
+   "n": 20,
+   "answered_none": 12
+  }
+ },
+ "key_words_in_continuations": {
+  "idea_units": {
+   "own_forced": 0.24074074074074073,
+   "unforced": 0.24603174603174602,
+   "other_units_forced": 0.21707936507936507
+  },
+  "name_units": {
+   "own_forced": 0.17971014492753623,
+   "unforced": 0.20869565217391303,
+   "other_units_forced": 0.17653190948385455
+  }
+ },
+ "criterion_met": false,
+ "verdicts": {
+  "i111": {
+   "choice": "none",
+   "reason": "Two continuations are unchanged and the third is a generic cabin-in-the-woods plot with no comic, superhero or fixed-name material.",
+   "answer": "3",
+   "unit": 1967232,
+   "sham": false
+  },
+  "i187": {
+   "choice": "none",
+   "reason": "The changes are minor rewording and a time-loop plot with no added names or place names, and the five near-identical 'just before a name' candidates cannot be told apart.",
+   "answer": "3",
+   "unit": 3126057,
+   "sham": false
+  },
+  "i196": {
+   "choice": "none",
+   "reason": "The forced continuations differ only in generic details (a drone camera, a detective, a futuristic city) and do not push in names, the Joker or Cheshire Cat, or psychic powers.",
+   "answer": "1",
+   "unit": 215865,
+   "sham": false
+  },
+  "i147": {
+   "choice": "none",
+   "reason": "The forced text gives a mansion party, a looping wooden-table scene and a post-nuclear family theme, with no clear push toward name slots, surnames or DC/Batman names.",
+   "answer": "5",
+   "unit": 830265,
+   "sham": false
+  },
+  "i256": {
+   "choice": "none",
+   "reason": "All five candidates are about superhero comics, and the forced continuations (a dark room with a light bulb, a go-go girl leaving a strip club) contain no superhero or comic-book material.",
+   "answer": "5",
+   "unit": 3119045,
+   "sham": false
+  },
+  "i240": {
+   "choice": "none",
+   "reason": "The forced text collapses into repeated digits, colons and Chinese characters, which has nothing to do with any of the comic-character-name candidates.",
+   "answer": "3",
+   "unit": 188547,
+   "sham": false
+  },
+  "i212": {
+   "choice": "none",
+   "reason": "The forced text shows a dim computer room and a road trip to a magic lake, with no added comic-book names and the Cheshire Cat already present in the normal version.",
+   "answer": "1",
+   "unit": 435478,
+   "sham": false
+  },
+  "i259": {
+   "choice": "3",
+   "reason": "The forced text collapses into repeating 'character' and 'identity', the vocabulary of talk about heroes and their identities, which fits text about superhero comics and their heroes better than the name-, date- or other-franchise candidates, though only loosely.",
+   "answer": "3",
+   "unit": 2979147,
+   "sham": false
+  },
+  "i049": {
+   "choice": "2",
+   "reason": "Weak fit: the forced text moves into fantasy characters and ends on \"The witch's name is\", a point where a character is about to be named, which is closest to the character-being-named candidate.",
+   "answer": "1",
+   "unit": 3053127,
+   "sham": false
+  },
+  "i205": {
+   "choice": "none",
+   "reason": "The forced text moves to generic unnamed protagonists (a village youth taken by forest gods, a flashback, hotel guests) and actually drops proper names, so no name- or comics-related candidate fits.",
+   "answer": "1",
+   "unit": 2649804,
+   "sham": false
+  },
+  "i231": {
+   "choice": "none",
+   "reason": "The forced continuations drift to generic new plots (a magical creature, a closing tunnel, a cabin in the woods) with no comic-book names, capitalised titles after \"the\", companion characters or historical leaders.",
+   "answer": "2",
+   "unit": 1553950,
+   "sham": false
+  },
+  "i083": {
+   "choice": "none",
+   "reason": "The forced text moves to a mysterious book, a door-and-key choice and a recovering alcoholic, none of which relates to the Joker, name-completing pieces, X-Men/RoboCop, DC characters or franchise surnames.",
+   "answer": "4",
+   "unit": 1561173,
+   "sham": false
+  },
+  "i032": {
+   "choice": "4",
+   "reason": "The forced text adds a naming set-up ('The game is called \"The Last Night,\"') that leads into a specific name, which fits the slot just before a specific name better than the other candidates.",
+   "answer": "1",
+   "unit": 1485789,
+   "sham": false
+  },
+  "i006": {
+   "choice": "1",
+   "reason": "The effect is weak, but the forced film continuation adds a naming construction the normal one lacked ('The game is called \"The Last Night\"'), which is a slot before a specific non-person name.",
+   "answer": "none",
+   "unit": 1485789,
+   "sham": true
+  },
+  "i068": {
+   "choice": "2",
+   "reason": "The forced text repeatedly sets up a slot and fills it with a specific name or type ('named Tomi', 'who is a \"la La La\"', 'a \"dodger\"'), which fits the slot just before a specific name or type better than the music or superhero options.",
+   "answer": "5",
+   "unit": 1483154,
+   "sham": false
+  },
+  "i117": {
+   "choice": "none",
+   "reason": "The forced continuations stay almost the same as the normal ones and the only change is a generic road-trip treasure plot, with no comics or character-name material.",
+   "answer": "3",
+   "unit": 967057,
+   "sham": false
+  },
+  "i201": {
+   "choice": "none",
+   "reason": "The forced continuations stay close to normal and add no character names of any kind, comic-book or otherwise.",
+   "answer": "none",
+   "unit": 967057,
+   "sham": true
+  },
+  "i050": {
+   "choice": "1",
+   "reason": "The only themed intrusion is a 1940s secret society of crime fighters with a first female member, which reads as Golden Age DC Comics material and fits the DC names candidate best, though weakly.",
+   "answer": "1",
+   "unit": 1936244,
+   "sham": false
+  },
+  "i172": {
+   "choice": "3",
+   "reason": "The forced film plot becomes a 1940s secret society of crime fighters, a golden-age comic-book premise, which fits the comic-book superhero candidates and marginally the one about comic-book text, though no names are actually produced.",
+   "answer": "none",
+   "unit": 1936244,
+   "sham": true
+  },
+  "i027": {
+   "choice": "1",
+   "reason": "The forced continuations fill with academic subject areas (a botanist, an ecologist's concept taught in a classroom, a math genius at a school for the gifted), matching a subject-area word unit.",
+   "answer": "5",
+   "unit": 3153462,
+   "sham": false
+  },
+  "i181": {
+   "choice": "2",
+   "reason": "The only clear shift is the film continuation moving to India with a hero named Raj, which weakly matches the Indian-epic 'Kauravas' half of candidate 2 while nothing superhero-related appears for the other candidates.",
+   "answer": "2",
+   "unit": 324451,
+   "sham": false
+  },
+  "i089": {
+   "choice": "none",
+   "reason": "The forced text adds camera-level description and an elevator serial-killer plot but introduces no X-Men, franchise titles, named supporting characters or name slots.",
+   "answer": "1",
+   "unit": 1849652,
+   "sham": false
+  },
+  "i074": {
+   "choice": "none",
+   "reason": "The forced continuations switch to other generic plots (a sailor rescued off Normandy, an impatient queue, a treasure road trip) with no surnames, comic-book characters, franchise titles or clown figures pushed in.",
+   "answer": "5",
+   "unit": 839883,
+   "sham": false
+  },
+  "i213": {
+   "choice": "none",
+   "reason": "The forced text shifts to a noir figure and a zombie-survival plot, with no name fragments, digit 8 or Bruce Wayne/police-complaint material clearly pushed in.",
+   "answer": "4",
+   "unit": 210632,
+   "sham": false
+  },
+  "i127": {
+   "choice": "3",
+   "reason": "The forced text swaps the names and moves toward crime-drama material (dark alleyway, car pickup, professional thief whose job goes wrong), which weakly fits crime-series characters.",
+   "answer": "1",
+   "unit": 1854180,
+   "sham": false
+  },
+  "i024": {
+   "choice": "1",
+   "reason": "The forced text shifts away from Alice and the Cheshire Cat toward crime-drama staging (a nervous man in a dark alley picked up by a car, a professional thief after a job gone wrong), which weakly fits the crime-series candidate and none of the others.",
+   "answer": "none",
+   "unit": 1854180,
+   "sham": true
+  },
+  "i106": {
+   "choice": "none",
+   "reason": "The forced output collapses into repeated digits and dashes and a repeated Chinese phrase about talent-training systems, unrelated to any comics-name candidate.",
+   "answer": "4",
+   "unit": 3161575,
+   "sham": false
+  },
+  "i217": {
+   "choice": "4",
+   "reason": "The forced text is flooded with named superheroes and the stock phrasing 'known as the Human Torch... created by... first appeared in', matching superhero conventions such as first appearance.",
+   "answer": "4",
+   "unit": 2364747,
+   "sham": false
+  },
+  "i222": {
+   "choice": "none",
+   "reason": "The forced text collapses into repeated \"is...\" and punctuation, which carries no name, villain or character content matching any candidate.",
+   "answer": "1",
+   "unit": 1799394,
+   "sham": false
+  },
+  "i274": {
+   "choice": "none",
+   "reason": "The forced text collapses into repeated 'is...' and punctuation, which carries no content pointing to any of the candidates.",
+   "answer": "none",
+   "unit": 1799394,
+   "sham": true
+  },
+  "i104": {
+   "choice": "3",
+   "reason": "The forced continuations introduce named characters including secondary ones (Elizabeth/Lizzie, a daughter named Sarah, Amelie and her father), which is closest to side characters' names among the candidates.",
+   "answer": "3",
+   "unit": 1817787,
+   "sham": false
+  },
+  "i223": {
+   "choice": "none",
+   "reason": "The forced text simply tells different generic stories (Jack and the beanstalk, a marketplace, a university student) with no pattern matching infinitives, name-introducing linking words or terse descriptions more than the normal text does.",
+   "answer": "2",
+   "unit": 1512347,
+   "sham": false
+  },
+  "i184": {
+   "choice": "none",
+   "reason": "The forced continuations are generic story text (a woman at a desk, a cabin-in-the-woods curse) and the Alice character list is already present in the normal run, so no candidate is clearly pushed.",
+   "answer": "1",
+   "unit": 219037,
+   "sham": false
+  },
+  "i002": {
+   "choice": "3",
+   "reason": "The forced Alice continuation moves faster into listing the heroine's well-known supporting cast (Cheshire Cat, Mad Hatter, Queen of Hearts), though the difference from normal is slight.",
+   "answer": "none",
+   "unit": 219037,
+   "sham": true
+  },
+  "i140": {
+   "choice": "4",
+   "reason": "The only visible push is toward extra proper names (Lily, her dog Max, a fox named Felix), which weakly matches a unit about pieces of proper names and nothing else on the list.",
+   "answer": "3",
+   "unit": 1620110,
+   "sham": false
+  },
+  "i197": {
+   "choice": "none",
+   "reason": "The forced texts differ from the normal ones only in small rewordings (main character, muffled sounds, story for movie), and none of the candidates is reflected in those changes.",
+   "answer": "3",
+   "unit": 1861692,
+   "sham": false
+  },
+  "i154": {
+   "choice": "1",
+   "reason": "The forced text turns dark and villainous, with a bound captive and a serial killer obsessed with the colour red, which fits a unit tied to villain names such as Harley Quinn better than the other candidates.",
+   "answer": "3",
+   "unit": 1502596,
+   "sham": false
+  },
+  "i078": {
+   "choice": "none",
+   "reason": "The forced text drifts to fantasy creatures, a candle-lit table and a cursed paper village, with nothing about superheroes, comics or Star Wars.",
+   "answer": "4",
+   "unit": 830342,
+   "sham": false
+  },
+  "i093": {
+   "choice": "1",
+   "reason": "A villain figure intrudes repeatedly (a warlord, a dark and intimidating warlord in his fortress) and the text keeps stopping at slots where that figure is about to be named or described.",
+   "answer": "1",
+   "unit": 1444956,
+   "sham": false
+  },
+  "i004": {
+   "choice": "5",
+   "reason": "The forced text keeps setting up role nouns and naming slots (son of a warlord, a place called the, a young man who is a ____ with repeated blanks), which resembles the position just before an expected name more than the other candidates.",
+   "answer": "none",
+   "unit": 1444956,
+   "sham": true
+  },
+  "i116": {
+   "choice": "none",
+   "reason": "The forced text swaps in different ordinary stories (Arthur and Merlin, a classroom, a delinquent at a camp) without any consistent push that singles out one of the five position-style descriptions over the others.",
+   "answer": "3",
+   "unit": 1487126,
+   "sham": false
+  },
+  "i021": {
+   "choice": "none",
+   "reason": "The forced continuations are near-copies of the normal ones with only minor rewording, so no candidate is identifiably pushed in.",
+   "answer": "2",
+   "unit": 1548330,
+   "sham": false
+  },
+  "i016": {
+   "choice": "1",
+   "reason": "The garbled output loops on link words ('the', 'to', 'afraid of the') that never reach the name they lead into, and the only thematic thread is fear, which leans slightly toward the link-word-before-an-asylum candidate over the city one.",
+   "answer": "4",
+   "unit": 167009,
+   "sham": false
+  },
+  "i241": {
+   "choice": "3",
+   "reason": "The forced text collapses into meaningless fragments dominated by the word-completing piece \"ll\" plus repeated \"is\" and digits, which matches a unit with no clear idea that fires on word-completing tokens better than any topical candidate.",
+   "answer": "2",
+   "unit": 125801,
+   "sham": false
+  },
+  "i220": {
+   "choice": "none",
+   "reason": "The pushed material is markets, merchants and a secret society, and the three near-identical before-a-name candidates are not distinguishable or clearly supported by the text.",
+   "answer": "4",
+   "unit": 3163742,
+   "sham": false
+  },
+  "i044": {
+   "choice": "none",
+   "reason": "The forced text adds camera-following and stalking material but no extra place names, cities or institutions, so none of the place-name candidates fits.",
+   "answer": "5",
+   "unit": 1504750,
+   "sham": false
+  },
+  "i270": {
+   "choice": "none",
+   "reason": "The forced continuations become generic unrelated stories (a key in an attic, a woman at a laptop, people in an elevator) with no comics or superhero material to favour any candidate.",
+   "answer": "3",
+   "unit": 1886436,
+   "sham": false
+  },
+  "i177": {
+   "choice": "2",
+   "reason": "The clearest new material is an invented, named game (\"Time Travelers' Quest\") alongside a \"fantasy world called Wonderland\", which weakly fits a thing-noun completing a fictional place or gadget name better than the other candidates.",
+   "answer": "2",
+   "unit": 1869035,
+   "sham": false
+  },
+  "i098": {
+   "choice": "none",
+   "reason": "The forced continuations are nearly identical to the normal ones apart from a generic cabin-in-the-woods plot, with no character-name or comics material.",
+   "answer": "3",
+   "unit": 254112,
+   "sham": false
+  },
+  "i134": {
+   "choice": "none",
+   "reason": "The forced text is almost identical to the normal one apart from a generic cabin-in-the-woods plot, with no digits, Gotham, split words or name pieces intruding.",
+   "answer": "4",
+   "unit": 604205,
+   "sham": false
+  },
+  "i164": {
+   "choice": "4",
+   "reason": "The forced continuations introduce superhero tropes absent from the normal ones: a secret lair, a chosen one, a hero who saves the day, and a boy forced to become a sidekick.",
+   "answer": "4",
+   "unit": 1176854,
+   "sham": false
+  },
+  "i239": {
+   "choice": "2",
+   "reason": "The forced text adds naming moves absent from the normal runs (\"a young man named Harry\", \"The story is called ...\"), which fits a slot just before a person's name is introduced.",
+   "answer": "3",
+   "unit": 1528083,
+   "sham": false
+  },
+  "i280": {
+   "choice": "none",
+   "reason": "The forced texts change topic to a toy rocket, a dark room with a light bulb and a cabin trip, with no name fragments, 'av' words or generic 'man' sense pushed in.",
+   "answer": "2",
+   "unit": 1537827,
+   "sham": false
+  },
+  "i094": {
+   "choice": "3",
+   "reason": "Weak fit: the forced text contains no superhero material at all, but it swaps specific figures for generic story-role framing (\"the main character\" twice, a man \"learning to be a man\"), which is closer to stock story roles than to any of the comics-specific candidates.",
+   "answer": "4",
+   "unit": 1580619,
+   "sham": false
+  },
+  "i174": {
+   "choice": "none",
+   "reason": "The forced text is degraded into generic material (a talking forest, a run of zeros, a stone structure, a looping boy-band sentence) with no superhero names, psychic powers or completed fixed names intruding.",
+   "answer": "3",
+   "unit": 1826947,
+   "sham": false
+  },
+  "i112": {
+   "choice": "1",
+   "reason": "The forced text is pulled toward American history and war-era material (American Revolution, Founding Fathers, flag, dark past), best matching era and wartime references.",
+   "answer": "1",
+   "unit": 2474730,
+   "sham": false
+  },
+  "i051": {
+   "choice": "none",
+   "reason": "The forced text turns to American patriotic themes (American Revolution, Founding Fathers, a flag, the American Dream), which none of the Star Wars, superhero or hero/villain candidates describes.",
+   "answer": "none",
+   "unit": 2474730,
+   "sham": true
+  },
+  "i198": {
+   "choice": "3",
+   "reason": "The forced text moves toward introducing characters by name (\"The main characters are St\", \"the main character\"), which fits a slot just before a character's name is given.",
+   "answer": "1",
+   "unit": 2525198,
+   "sham": false
+  },
+  "i056": {
+   "choice": "1",
+   "reason": "The forced second continuation introduces the Joker and Batman by name, which fits named DC comic-character franchise text better than stock roles, Superman-style powers, art credits or lore dates.",
+   "answer": "5",
+   "unit": 2550644,
+   "sham": false
+  },
+  "i206": {
+   "choice": "4",
+   "reason": "The only real change is the scene moving to a classroom with a teacher and students, a school setting loosely associated with the word 'district', while the name-piece candidates leave no trace at all.",
+   "answer": "2",
+   "unit": 2584477,
+   "sham": false
+  },
+  "i246": {
+   "choice": "none",
+   "reason": "The forced text only rephrases Alice's cast descriptively and adds an ordinary character in Cairo, with no comic-book names, codenames or superhero identities.",
+   "answer": "4",
+   "unit": 217862,
+   "sham": false
+  },
+  "i183": {
+   "choice": "3",
+   "reason": "The forced text repeatedly brings in a man in a red suit, red mask and red costume and then degenerates into '[mask]' tokens, which matches superhero costume conventions better than the lore, tokusatsu or stock-role descriptions.",
+   "answer": "2",
+   "unit": 1440851,
+   "sham": false
+  },
+  "i229": {
+   "choice": "none",
+   "reason": "The only change is a generic group-of-friends scene with one named main character, which fits several of the character-name candidates equally weakly and none of them distinctly.",
+   "answer": "5",
+   "unit": 347405,
+   "sham": false
+  },
+  "i108": {
+   "choice": "none",
+   "reason": "The forced text shifts to Jack and the beanstalk and thieves in Paris with no superhero or comic-book material, so none of the five superhero candidates is supported over the others.",
+   "answer": "5",
+   "unit": 368887,
+   "sham": false
+  },
+  "i171": {
+   "choice": "none",
+   "reason": "The only change is a city street becoming a crowded market with a fruit stall, which has nothing to do with names, leaders, the Joker or superhero teams.",
+   "answer": "2",
+   "unit": 407102,
+   "sham": false
+  },
+  "i150": {
+   "choice": "4",
+   "reason": "The forced text swaps in rebels mounting coordinated attacks on a government's facilities, which matches rebel-versus-regime faction material better than any of the superhero-comics candidates.",
+   "answer": "4",
+   "unit": 833700,
+   "sham": false
+  },
+  "i031": {
+   "choice": "none",
+   "reason": "The forced text loops on rebels, scientists and a quiz for a user, with no superhero, comics, TV-show or hero-versus-villain material that would single out a candidate.",
+   "answer": "none",
+   "unit": 833700,
+   "sham": true
+  },
+  "i276": {
+   "choice": "none",
+   "reason": "The forced continuations (a man on a phone in a dark room, a girl who sees ghosts) show no superhero, comic-character or Cao Cao material, and the White Rabbit is already in the normal text.",
+   "answer": "2",
+   "unit": 1049878,
+   "sham": false
+  },
+  "i210": {
+   "choice": "5",
+   "reason": "The forced text explicitly brings in 'the DC universe' and reads like a franchise write-up about a movie and a planned TV series with seasons and episodes.",
+   "answer": "5",
+   "unit": 1067286,
+   "sham": false
+  },
+  "i247": {
+   "choice": "2",
+   "reason": "The forced text brings in a character's signature item (Arthur's sword in the stone) and a car seen outside the window, which fits Ford car models and characters' signature items and none of the transit, toxin, technology or drink candidates.",
+   "answer": "5",
+   "unit": 3125944,
+   "sham": false
+  },
+  "i279": {
+   "choice": "none",
+   "reason": "The forced continuations differ only in ordinary plot details (three people in a dim room, a thief released from prison) and show no distinctive pull toward re-mentions, place prepositions, list links, set-up clauses or delayed verbs.",
+   "answer": "2",
+   "unit": 3181213,
+   "sham": false
+  },
+  "i209": {
+   "choice": "none",
+   "reason": "The forced text collapses into numbers, units of measurement and decimal places, which none of the candidates is about.",
+   "answer": "3",
+   "unit": 989429,
+   "sham": false
+  },
+  "i048": {
+   "choice": "1",
+   "reason": "Weak fit: the forced text moves to ordinary drama with characters labelled by role (the Doctor and a patient, a bus driver and passengers, a husband), which is closer to role links in a drama franchise than to any of the superhero-comics candidates.",
+   "answer": "5",
+   "unit": 202487,
+   "sham": false
+  },
+  "i103": {
+   "choice": "none",
+   "reason": "The forced continuations are ordinary fluent story text (handheld camera, cabin slasher) with no sign of name pieces, digits or split words.",
+   "answer": "3",
+   "unit": 919295,
+   "sham": false
+  },
+  "i138": {
+   "choice": "none",
+   "reason": "The forced continuations are near copies of the normal ones and add no character names or franchise titles, only a passing mention of Paris.",
+   "answer": "2",
+   "unit": 1857437,
+   "sham": false
+  },
+  "i019": {
+   "choice": "none",
+   "reason": "The forced text shifts to a dim room and masked figures in a cabin, with no surnames, leaders, franchise names or Joker-like material that would favour one candidate.",
+   "answer": "4",
+   "unit": 1910798,
+   "sham": false
+  },
+  "i136": {
+   "choice": "4",
+   "reason": "The forced text pushes riddles, wordplay, absurd scenarios and a quest for a magical cat, which fits the Joker and Cheshire Cat unit better than the other name candidates.",
+   "answer": "1",
+   "unit": 2004467,
+   "sham": false
+  },
+  "i014": {
+   "choice": "none",
+   "reason": "The forced text is fluent story prose about a queue in formal attire and two grifters in the American West, with no numbers, digit 8 or name fragments pushed in.",
+   "answer": "5",
+   "unit": 1482139,
+   "sham": false
+  },
+  "i245": {
+   "choice": "2",
+   "reason": "The forced text turns to naming things, asking for the name of a type of shot (a term) and supplying the names Raj and Radha, which fits a specific name or term better than the split-name-ending candidates.",
+   "answer": "1",
+   "unit": 378497,
+   "sham": false
+  },
+  "i034": {
+   "choice": "none",
+   "reason": "The forced continuations are essentially identical to the normal ones, so there is no pushed content to match to any candidate.",
+   "answer": "4",
+   "unit": 458118,
+   "sham": false
+  },
+  "i090": {
+   "choice": "none",
+   "reason": "The forced text drifts to a stage play and its turning point, which none of the superhero, comics or TV candidates describe.",
+   "answer": "1",
+   "unit": 1500498,
+   "sham": false
+  },
+  "i216": {
+   "choice": "none",
+   "reason": "The forced text loops on a play, its turning point and people in a play, with nothing about superheroes, comics, DC titles or screen cast credits.",
+   "answer": "none",
+   "unit": 1500498,
+   "sham": true
+  },
+  "i091": {
+   "choice": "none",
+   "reason": "The forced text shifts to a lift-ensemble plot with no change in naming behaviour, and the five near-identical name-slot candidates cannot be told apart.",
+   "answer": "5",
+   "unit": 1560401,
+   "sham": false
+  },
+  "i053": {
+   "choice": "none",
+   "reason": "The forced continuations differ only in ordinary plot and camera details (a market, a shot-type question, a last heist), with nothing about digits, Chinese characters or names, split names, or the word signal.",
+   "answer": "2",
+   "unit": 1659747,
+   "sham": false
+  },
+  "i067": {
+   "choice": "2",
+   "reason": "The forced text collapses into a looping list header, \"the following powers of the following characters:\", which matches the start of a powers section in a comic character profile.",
+   "answer": "2",
+   "unit": 2612008,
+   "sham": false
+  },
+  "i110": {
+   "choice": "3",
+   "reason": "The forced film continuation makes the protagonist a werewolf in the Carpathian Mountains, an animal-themed monster character, which best matches animal-named comic-book characters.",
+   "answer": "1",
+   "unit": 2648630,
+   "sham": false
+  },
+  "i204": {
+   "choice": "none",
+   "reason": "Nothing in the forced continuations (a girl and a fluffy creature, a man in a wheelchair, friends at a cabin) refers to Star Wars, superheroes or comic books.",
+   "answer": "5",
+   "unit": 3166532,
+   "sham": false
+  },
+  "i175": {
+   "choice": "none",
+   "reason": "The forced text changes only minor details (a low camera angle, a love story with Raj and Radha set in India), which does not clearly point to emigrants, districts, compound terms or name-completing word pieces.",
+   "answer": "3",
+   "unit": 1991492,
+   "sham": false
+  },
+  "i020": {
+   "choice": "1",
+   "reason": "The garbled forced text keeps emitting possessive name slots around parents being killed, a death, a destroyed house and a boy's father, which is Batman/Wayne origin material attached to a missing name stem.",
+   "answer": "5",
+   "unit": 1788084,
+   "sham": false
+  },
+  "i007": {
+   "choice": "2",
+   "reason": "The garbled forced text keeps returning to murdered parents, a destroyed family house and a boy seeking his father, with dangling possessive stems, which matches the Batman/Wayne origin material of the Bat- and Wayne name-stem unit.",
+   "answer": "none",
+   "unit": 1788084,
+   "sham": true
+  },
+  "i062": {
+   "choice": "none",
+   "reason": "The forced continuations are ordinary alternative plots (new town, two men with a gun, a disappearance) that show none of the name-fragment or index-number patterns.",
+   "answer": "3",
+   "unit": 2650301,
+   "sham": false
+  },
+  "i269": {
+   "choice": "4",
+   "reason": "The only consistent shift is toward fiction framing ('fantasy world called Wonderland', 'cast of characters', 'main character'), which weakly matches invented places rather than real district or institution names.",
+   "answer": "2",
+   "unit": 2090182,
+   "sham": false
+  },
+  "i028": {
+   "choice": "5",
+   "reason": "The forced text keeps returning to the same topic nouns (\"The camera ... the man\", \"blurred ... the blurred background\", \"The man ... the woman ... They\"), which weakly fits a recurring topic noun mentioned again better than the other candidates.",
+   "answer": "5",
+   "unit": 410913,
+   "sham": false
+  },
+  "i221": {
+   "choice": "none",
+   "reason": "The forced text shifts to a camera-shot quiz question and a cabin slasher plot, with no organisation names, surnames, comics names or place-name words intruding.",
+   "answer": "5",
+   "unit": 2500843,
+   "sham": false
+  },
+  "i178": {
+   "choice": "none",
+   "reason": "The forced continuations are essentially identical to the normal ones, so there is no evidence of any pushed content.",
+   "answer": "1",
+   "unit": 254826,
+   "sham": false
+  },
+  "i228": {
+   "choice": "none",
+   "reason": "The forced text collapses into repeated fragments of ordinary function words ('you can't', 'is about to say') with no names, titles or superhero material.",
+   "answer": "3",
+   "unit": 1834957,
+   "sham": false
+  },
+  "i001": {
+   "choice": "none",
+   "reason": "The forced text adds riddles, a camera-shot question and a cabin artifact plot, with no comic-book names, organisations or code names appearing.",
+   "answer": "5",
+   "unit": 438070,
+   "sham": false
+  },
+  "i039": {
+   "choice": "none",
+   "reason": "The forced text adds puzzles, a question about a camera shot and a mysterious artifact, with no good-side labels, organisation names or comic-book names appearing.",
+   "answer": "none",
+   "unit": 438070,
+   "sham": true
+  },
+  "i060": {
+   "choice": "none",
+   "reason": "The forced changes (a board game, two fugitives travelling together) are slight, and the pair theme is already in the normal text, so no candidate clearly stands out.",
+   "answer": "3",
+   "unit": 2161966,
+   "sham": false
+  },
+  "i054": {
+   "choice": "4",
+   "reason": "Weak fit: the forced text turns the thief and the woman into two people on the run who travel together and adds a group gathered round a table playing a game, which leans toward people pairing up rather than records, water, alter egos or discoveries.",
+   "answer": "none",
+   "unit": 2161966,
+   "sham": true
+  },
+  "i169": {
+   "choice": "none",
+   "reason": "The forced text intrudes with a quoted classical passage and a garbled designation ('C. S. C. C. C. 141 ranger') that could loosely fit several candidates but does not clearly favour any one.",
+   "answer": "5",
+   "unit": 3125600,
+   "sham": false
+  },
+  "i202": {
+   "choice": "3",
+   "reason": "The forced text fills with coined names and lore terms (Logres, 'Mystery Mansion', 'hash house hack', 'dollar a year girl'), which weakly fits names and terms inside lore-heavy text, though no superhero content appears.",
+   "answer": "1",
+   "unit": 3135718,
+   "sham": false
+  },
+  "i075": {
+   "choice": "2",
+   "reason": "The forced film summary turns into the Hulk story with Bruce Banner and radiation, a superhero-comics character intrusion.",
+   "answer": "4",
+   "unit": 3215045,
+   "sham": false
+  },
+  "i227": {
+   "choice": "none",
+   "reason": "The forced continuations stay close to normal with small plot changes and show no distinctive word-piece, 'Red' or 'Jia' material.",
+   "answer": "4",
+   "unit": 1916049,
+   "sham": false
+  },
+  "i208": {
+   "choice": "none",
+   "reason": "The forced continuations are essentially identical to the normal ones, so nothing identifiable was pushed in.",
+   "answer": "3",
+   "unit": 227206,
+   "sham": false
+  },
+  "i100": {
+   "choice": "none",
+   "reason": "The forced continuations differ from the normal ones only by trivial wording swaps, with nothing resembling town-name pieces, index digits or name fragments.",
+   "answer": "none",
+   "unit": 227206,
+   "sham": true
+  },
+  "i224": {
+   "choice": "none",
+   "reason": "The forced continuations differ from the normal ones only in small rewordings (riddles, 'main character', one last job in Paris) that match none of the candidates.",
+   "answer": "3",
+   "unit": 2708627,
+   "sham": false
+  },
+  "i137": {
+   "choice": "none",
+   "reason": "The forced texts are mild paraphrases (talking animals and riddles, main character, one last job in Paris) with no digits, generic 'man' or name-completing fragments pushed in.",
+   "answer": "none",
+   "unit": 2708627,
+   "sham": true
+  },
+  "i079": {
+   "choice": "none",
+   "reason": "The forced continuations are generic story variations that if anything drop proper names, and nothing about music, 'the' names or name labels clearly intrudes.",
+   "answer": "1",
+   "unit": 3120546,
+   "sham": false
+  },
+  "i170": {
+   "choice": "none",
+   "reason": "The forced continuations are almost word-for-word the normal ones, with no \"district\" and no intruding name pieces or years.",
+   "answer": "4",
+   "unit": 353620,
+   "sham": false
+  },
+  "i258": {
+   "choice": "none",
+   "reason": "The forced text moves to a chess game and elemental outcasts hunted by the government, which matches none of codes, predictable name starts, glitches, running numbers or urban planning terms.",
+   "answer": "1",
+   "unit": 911984,
+   "sham": false
+  },
+  "i158": {
+   "choice": "none",
+   "reason": "The forced texts drift to a chess game and a group of hunted outcasts, which matches none of the candidates about set terms, number series, urban planning or glitched text.",
+   "answer": "none",
+   "unit": 911984,
+   "sham": true
+  },
+  "i099": {
+   "choice": "none",
+   "reason": "The forced text drifts to a classroom lesson on black boxes and a monster-hunting road trip, none of which reflects word pieces, split letters, name endings or Chinese name syllables.",
+   "answer": "1",
+   "unit": 1463527,
+   "sham": false
+  },
+  "i218": {
+   "choice": "none",
+   "reason": "The forced text shifts to generic stories (Lucy and a key, two men in a dark room, a cabin trip) with no Joker, clown, comic-book or franchise-title material, so no candidate stands out.",
+   "answer": "4",
+   "unit": 1588941,
+   "sham": false
+  },
+  "i261": {
+   "choice": "none",
+   "reason": "The forced continuations are near copies of the normal ones and nothing about compound-name pieces or the word \"signal\" intrudes.",
+   "answer": "3",
+   "unit": 1656275,
+   "sham": false
+  },
+  "i143": {
+   "choice": "none",
+   "reason": "The forced continuations are near copies of the normal ones with no added name fragments or compound-name material to separate the candidates.",
+   "answer": "none",
+   "unit": 1656275,
+   "sham": true
+  },
+  "i186": {
+   "choice": "2",
+   "reason": "The forced continuations turn into compact synopsis-style entries that wrap up with a closing remark (\"The story is a classic\", \"The story is a\"), which weakly fits the end of a remark inside a listing and fits no other candidate.",
+   "answer": "5",
+   "unit": 541023,
+   "sham": false
+  },
+  "i153": {
+   "choice": "1",
+   "reason": "The forced text introduces surnamed figures (Caden Cotard, Joaquin Phoenix) alongside suffering and fear, loosely matching surnames plus struggle words.",
+   "answer": "3",
+   "unit": 1021040,
+   "sham": false
+  },
+  "i251": {
+   "choice": "none",
+   "reason": "The forced continuations are near-copies of the normal ones or a generic camping plot, with nothing about numbers, compound labels, mankind, 'Red' names or 'change'.",
+   "answer": "5",
+   "unit": 1464129,
+   "sham": false
+  },
+  "i191": {
+   "choice": "1",
+   "reason": "The forced text collapses into short, clipped descriptions joined by 'is' and 'and' (\"The man is charming and the woman is charming. The man is clever\", \"The walls are bare, and the floor is wooden\"), which matches a joint inside a terse description.",
+   "answer": "1",
+   "unit": 2178472,
+   "sham": false
+  },
+  "i263": {
+   "choice": "none",
+   "reason": "The forced continuations stay ordinary scene and heist description (a market, one last job stealing a watch) with no proper-name fragments, code indices, or superhero or vigilante material.",
+   "answer": "5",
+   "unit": 1939271,
+   "sham": false
+  },
+  "i055": {
+   "choice": "none",
+   "reason": "The forced continuations are ordinary variants (jazz music and handheld camera, a supernatural camping trip in the Pacific Northwest) with no superhero content and no visible word-piece or compound-name intrusion.",
+   "answer": "2",
+   "unit": 465171,
+   "sham": false
+  },
+  "i070": {
+   "choice": "5",
+   "reason": "The forced texts repeatedly refer back to items just named (a chair then the chair, a woman then the woman, ballerina then prima ballerina, ballet school then Ballet), which fits re-mention of something named earlier.",
+   "answer": "1",
+   "unit": 1121133,
+   "sham": false
+  },
+  "i243": {
+   "choice": "5",
+   "reason": "The forced continuations add objects and mechanisms being handled or operated (a pocket watch, a computer, moving a chair, manipulating objects with the mind) more consistently than any discovery or threat theme.",
+   "answer": "5",
+   "unit": 2783773,
+   "sham": false
+  },
+  "i139": {
+   "choice": "none",
+   "reason": "The forced continuations are near-paraphrases of the normal ones with no intruding theme matching any candidate.",
+   "answer": "4",
+   "unit": 3171832,
+   "sham": false
+  },
+  "i207": {
+   "choice": "none",
+   "reason": "The forced continuations are mild paraphrases and a generic camping-trip plot, with nothing distinctive of any candidate intruding.",
+   "answer": "2",
+   "unit": 1068129,
+   "sham": false
+  },
+  "i226": {
+   "choice": "none",
+   "reason": "The forced continuations (a boy with a magical book, a QR-code scanner, a cabin stalker plot) show no vigilante theme and no visible name-fragment pattern matching any candidate.",
+   "answer": "5",
+   "unit": 1612452,
+   "sham": false
+  },
+  "i262": {
+   "choice": "none",
+   "reason": "The forced continuations are ordinary story text nearly identical to the normal ones, with no name fragments, \"emigrants\" or compound-term material intruding.",
+   "answer": "1",
+   "unit": 2122779,
+   "sham": false
+  },
+  "i125": {
+   "choice": "none",
+   "reason": "The forced text drifts to a silver key and a hotel story, which none of the candidates (direction pairs, glitches, set terms, home decor/wrestling) describes.",
+   "answer": "5",
+   "unit": 2622633,
+   "sham": false
+  },
+  "i121": {
+   "choice": "none",
+   "reason": "The forced continuations are ordinary fluent story text (card players, a camping horror plot) with no visible push toward linking words, placeholders, set terms, repeats or glitches.",
+   "answer": "4",
+   "unit": 1079880,
+   "sham": false
+  },
+  "i176": {
+   "choice": "2",
+   "reason": "The forced text drifts toward good-side hero figures (fairy-tale Jack, a born leader who returns to fight for his people), which fits good-side labels weakly but better than the specific comics or organisation candidates.",
+   "answer": "4",
+   "unit": 1480716,
+   "sham": false
+  },
+  "i095": {
+   "choice": "none",
+   "reason": "The forced continuations stay generic and coherent (Alice in a surreal world, two men in suits in a room, a shy artist) with no intruding Robert, Joker/clown, listed name tokens, codenames or fictional place/gadget name completions, so no candidate fits better than the others.",
+   "answer": "1",
+   "unit": 1557081,
+   "sham": false
+  },
+  "i097": {
+   "choice": "4",
+   "reason": "Weak fit: the forced text drops the proper names and heads toward unnamed things (\"encounters is a\", \"a small, silver object\", the briefcase), which is closest to a thing-noun unit and unlike the Joker, title or codename candidates.",
+   "answer": "none",
+   "unit": 1557081,
+   "sham": true
+  },
+  "i248": {
+   "choice": "3",
+   "reason": "The forced text degenerates into a repeated 'Bo Bo Bo' and later uses 'bohemian', pointing to a b-initial word piece.",
+   "answer": "3",
+   "unit": 1618229,
+   "sham": false
+  },
+  "i225": {
+   "choice": "none",
+   "reason": "The forced continuations are almost word-for-word the normal ones, with only trivial rewordings that point to none of the candidates.",
+   "answer": "4",
+   "unit": 2045342,
+   "sham": false
+  },
+  "i249": {
+   "choice": "3",
+   "reason": "The forced text starts a fresh name (Lina instead of Alice) and breaks into code-like placeholder symbols (\"$ \\\" $ @ $ \\\" $\"), which fits an opening token of a new code line or name.",
+   "answer": "3",
+   "unit": 3088216,
+   "sham": false
+  },
+  "i179": {
+   "choice": "none",
+   "reason": "The forced text stays close to the normal text and shows no organisation, brand, Cao Cao, DC Comics or East Asian surname material.",
+   "answer": "5",
+   "unit": 3103387,
+   "sham": false
+  },
+  "i215": {
+   "choice": "5",
+   "reason": "The forced film continuation adds infinitives hanging off nouns (\"a chance to do a special job\", \"the job is to steal a watch\") that the normal text lacks, while nothing points to a slot before a name.",
+   "answer": "4",
+   "unit": 3161421,
+   "sham": false
+  },
+  "i057": {
+   "choice": "2",
+   "reason": "The forced text brings in a hero persona used as a name with its live-action actor in brackets (The Flash), a changed masked look and a new name, which points to assumed hero identities rather than hero-versus-villain conflict or comics text in general.",
+   "answer": "1",
+   "unit": 2629416,
+   "sham": false
+  },
+  "i149": {
+   "choice": "none",
+   "reason": "The forced continuations are near copies of the normal ones with only small wording changes, giving no evidence for any of the token-fragment candidates.",
+   "answer": "5",
+   "unit": 1648203,
+   "sham": false
+  },
+  "i022": {
+   "choice": "none",
+   "reason": "The forced continuations are essentially identical to the normal ones apart from 'main character', so no candidate is supported.",
+   "answer": "4",
+   "unit": 2980,
+   "sham": false
+  },
+  "i015": {
+   "choice": "1",
+   "reason": "The forced text becomes heavily comma-interrupted with appositive and parenthetical clauses ('Jack, who was the son of a Miller, and who had...', 'Now, if you'll recall,') and group or role nouns such as 'the three witches', matching appositive commas and group nouns best.",
+   "answer": "3",
+   "unit": 2724250,
+   "sham": false
+  },
+  "i085": {
+   "choice": "none",
+   "reason": "The forced continuations are ordinary variations of the normal ones (a group at a table, a camping trip) with no intruding material matching any candidate.",
+   "answer": "2",
+   "unit": 2655879,
+   "sham": false
+  },
+  "i005": {
+   "choice": "none",
+   "reason": "The forced text only shows ordinary plot rewording (a market scene, a last heist for a mentor) with no numbers, code slots or split-name pieces intruding.",
+   "answer": "1",
+   "unit": 1643584,
+   "sham": false
+  },
+  "i126": {
+   "choice": "none",
+   "reason": "The forced continuations are ordinary variations (woods, a market, a cabin) with no added numbers, name slots, funding or odd wording that would single out any candidate.",
+   "answer": "5",
+   "unit": 940900,
+   "sham": false
+  },
+  "i036": {
+   "choice": "2",
+   "reason": "The forced text moves toward naming specific things and breaks off at the start of a predictable name ('Queen of', 'Ruben Ost'), which weakly fits the start of a predictable name or term.",
+   "answer": "4",
+   "unit": 994890,
+   "sham": false
+  },
+  "i264": {
+   "choice": "none",
+   "reason": "The forced continuations are almost word-for-word the same as the normal ones, so nothing identifiable was pushed in.",
+   "answer": "2",
+   "unit": 2870,
+   "sham": false
+  },
+  "i033": {
+   "choice": "none",
+   "reason": "The forced texts just drift to different generic plots (murder flashback, academy student) with no intruding names, name slots or group nouns that favour any one candidate.",
+   "answer": "2",
+   "unit": 2109850,
+   "sham": false
+  },
+  "i105": {
+   "choice": "5",
+   "reason": "The forced text fills in specific figures (now 62, born on the 15th of April 1955, a number of reasons), matching a slot where a specific number or name follows.",
+   "answer": "4",
+   "unit": 2799181,
+   "sham": false
+  },
+  "i142": {
+   "choice": "5",
+   "reason": "The forced texts repeatedly restate things already introduced (a cabin in the woods then 'a remote cabin in the woods', the dim room then 'the lighting', Alice again), weakly favouring re-mention of something named earlier.",
+   "answer": "3",
+   "unit": 1161841,
+   "sham": false
+  },
+  "i082": {
+   "choice": "none",
+   "reason": "The forced text is nearly identical to the normal text apart from a generic drift into a quiz question about a blurred background, with nothing about mankind, dashes, districts, police or numbers.",
+   "answer": "5",
+   "unit": 1653096,
+   "sham": false
+  },
+  "i162": {
+   "choice": "none",
+   "reason": "The forced continuations change topic (a dragon, gadgets on a table, wheelchair users) without any shared element that matches one of the candidates.",
+   "answer": "1",
+   "unit": 2751771,
+   "sham": false
+  },
+  "i120": {
+   "choice": "none",
+   "reason": "The forced continuations drift to unrelated generic scenes (a dragon, devices on a table, wheelchair users) that do not point to any of the positional or code-related candidates.",
+   "answer": "none",
+   "unit": 2751771,
+   "sham": true
+  },
+  "i250": {
+   "choice": "none",
+   "reason": "The forced text is essentially identical to the normal text apart from 'and the' and 'The film', which is too little to favour any candidate.",
+   "answer": "3",
+   "unit": 245694,
+   "sham": false
+  },
+  "i214": {
+   "choice": "5",
+   "reason": "The forced text keeps referring back to what was just said ('In this case, the young man is named', 'It is a medium', 'In this unit', 'the film,'), which fits pointing back to something just mentioned slightly better than plain re-mention.",
+   "answer": "2",
+   "unit": 904823,
+   "sham": false
+  },
+  "i185": {
+   "choice": "5",
+   "reason": "The forced text is full of back-pointing phrases (\"In this case, the young man is named\", \"The protagonist's eyes\", \"In this unit\", \"how the film,\") that refer to what was just mentioned, fitting the pointing-back description slightly better than the re-mention one.",
+   "answer": "none",
+   "unit": 904823,
+   "sham": true
+  },
+  "i173": {
+   "choice": "1",
+   "reason": "Weak signal only: the forced text introduces a filler-style list of placeholder names (Alex, Blake, and Casey) and a bare number (150), which is closer to digits and list fillers than to any other candidate.",
+   "answer": "2",
+   "unit": 910564,
+   "sham": false
+  },
+  "i163": {
+   "choice": "3",
+   "reason": "The forced stories turn generic and placeholder-like, with filler names in alphabetical order (Alex, Blake, Casey) and a bare number (150), which weakly fits list fillers and digits better than the other candidates.",
+   "answer": "none",
+   "unit": 910564,
+   "sham": true
+  },
+  "i268": {
+   "choice": "2",
+   "reason": "The one changed continuation heads into a slot for a specific name, a locket engraved with the initials \"J.M\", which matches the position just before a specific title or name better than the code, list or numbering candidates.",
+   "answer": "5",
+   "unit": 2625356,
+   "sham": false
+  },
+  "i145": {
+   "choice": "4",
+   "reason": "The forced text keeps setting up names to follow a linking word ('written by Lewis', 'let's call him Alex', 'portrayed by real-life actors'), which fits a linking word just before an expected proper name.",
+   "answer": "2",
+   "unit": 886609,
+   "sham": false
+  },
+  "i013": {
+   "choice": "4",
+   "reason": "The forced text repeatedly sets up proper names that were absent before ('written by Lewis', 'let's call him Alex', 'portrayed by real-life actors'), which best fits a linking word just before an expected proper name.",
+   "answer": "none",
+   "unit": 886609,
+   "sham": true
+  },
+  "i081": {
+   "choice": "3",
+   "reason": "The changes are small but lean toward generic placeholders ('the main character' for 'the man', 'a cast of characters', 'a mysterious killer'), which weakly matches the generic stand-ins description.",
+   "answer": "5",
+   "unit": 1113807,
+   "sham": false
+  },
+  "i040": {
+   "choice": "1",
+   "reason": "The forced continuations repeatedly re-mention their topic nouns and names (the movie/film, Forrest Gump/Forrest, the young man, his grandfather), fitting a recurring topic noun or name mentioned again.",
+   "answer": "5",
+   "unit": 1129939,
+   "sham": false
+  },
+  "i035": {
+   "choice": "5",
+   "reason": "The forced continuations keep re-mentioning their topic nouns and names (movie/film/Forrest Gump then Forrest, the young man again, grandfather again), which fits a recurring topic noun or name better than the other candidates, though the effect is mild.",
+   "answer": "none",
+   "unit": 1129939,
+   "sham": true
+  },
+  "i088": {
+   "choice": "none",
+   "reason": "The forced continuations only shift to a forest and a treasure road trip, with a single passing '1970s', which is too weak to tie to any of the name-piece, compound, 'signal' or serial-digit candidates.",
+   "answer": "5",
+   "unit": 902490,
+   "sham": false
+  },
+  "i232": {
+   "choice": "4",
+   "reason": "The forced text keeps setting the scene (a teacher's lead-in 'Today, we're going to learn about', then elevator in building in city in country), matching a scene-setting lead-in unit.",
+   "answer": "3",
+   "unit": 1042958,
+   "sham": false
+  },
+  "i236": {
+   "choice": "5",
+   "reason": "The forced text turns into authorial commentary and asides (\"The narrative explores themes...\", \"the town is described as\", the parenthetical judging Tarek \"a common Arabic name\"), which best matches a writer's passing verdict.",
+   "answer": "4",
+   "unit": 1053109,
+   "sham": false
+  },
+  "i072": {
+   "choice": "4",
+   "reason": "The forced text veers into naming well-known places and people (the south of France, Paul Bocuse 'after whom', Sherlock Holmes, Dr. Watson), matching a link before naming a known place or person.",
+   "answer": "1",
+   "unit": 2548640,
+   "sham": false
+  },
+  "i189": {
+   "choice": "5",
+   "reason": "The forced text keeps introducing specific names and types (a game called \"Quantum Quest\", a cooperative game, stars Matthew Gray Gubler), fitting a slot just before a specific name or type.",
+   "answer": "3",
+   "unit": 2670458,
+   "sham": false
+  },
+  "i018": {
+   "choice": "none",
+   "reason": "The forced continuations are ordinary plot variations with no digits, 'signal', 'av' words or compound-term material intruding.",
+   "answer": "3",
+   "unit": 3084566,
+   "sham": false
+  },
+  "i063": {
+   "choice": "4",
+   "reason": "The forced text centres characters on their defining objects (Arthur and the sword in the stone, the man in the wheelchair, a sought-after valuable object), which fits characters' signature items better than the other candidates.",
+   "answer": "1",
+   "unit": 3241037,
+   "sham": false
+  },
+  "i084": {
+   "choice": "none",
+   "reason": "The forced text adds a heist-planning scene with blueprints and a futuristic city, which does not correspond to code tokens, comic profile sections, deleted items, argumentative prose joints or list remarks.",
+   "answer": "1",
+   "unit": 1461365,
+   "sham": false
+  },
+  "i219": {
+   "choice": "none",
+   "reason": "The forced text adds a heist-planning scene and a futuristic city, none of which resembles list remarks, table cells, deleted items, old-fashioned argument or a comic character profile.",
+   "answer": "none",
+   "unit": 1461365,
+   "sham": true
+  },
+  "i155": {
+   "choice": "none",
+   "reason": "The forced text only drifts into a looping empty-chair scene and a French small-town doctor plot, with nothing about split names, code indices, numbers, Chinese names or emigrants.",
+   "answer": "2",
+   "unit": 2697085,
+   "sham": false
+  },
+  "i265": {
+   "choice": "none",
+   "reason": "The forced continuations show only generic drift (market scene, quiz question, cabin plot) with no distinct push toward plurals, post-number words, name slots, villains or set-up clauses.",
+   "answer": "2",
+   "unit": 2965,
+   "sham": false
+  },
+  "i115": {
+   "choice": "1",
+   "reason": "The forced story opener switches to Chinese-named characters (Xiao Wang, Mr. Zhang), which matches a unit about a syllable in Chinese names better than any other candidate.",
+   "answer": "1",
+   "unit": 317604,
+   "sham": false
+  },
+  "i077": {
+   "choice": "none",
+   "reason": "The forced text drifts to unrelated content (a mathematician and an equation, a quiz question about cameras, a spirit guide) with no shared feature that any one candidate describes better than the others.",
+   "answer": "4",
+   "unit": 1633237,
+   "sham": false
+  },
+  "i041": {
+   "choice": "1",
+   "reason": "All three forced continuations collapse into the repeated string \"district\" (or its fragment \"ndist\"), which matches the candidate for the word \"district\" directly.",
+   "answer": "1",
+   "unit": 51887,
+   "sham": false
+  },
+  "i167": {
+   "choice": "2",
+   "reason": "The forced text collapses into the word \"district\" repeated, which is the closing word of multi-part place names and set terms such as \"school district\", fitting the closing-piece description better than the others.",
+   "answer": "none",
+   "unit": 51887,
+   "sham": true
+  },
+  "i029": {
+   "choice": "none",
+   "reason": "The forced text contains nothing about transit fleets, Ford cars, technology nouns, toxins or alcoholic drinks, only ordinary story variation.",
+   "answer": "4",
+   "unit": 357872,
+   "sham": false
+  },
+  "i026": {
+   "choice": "none",
+   "reason": "The forced continuations are almost identical to the normal ones (one is unchanged) and show nothing pointing to titles, listings, code suffixes, code tokens or table cells.",
+   "answer": "2",
+   "unit": 496782,
+   "sham": false
+  },
+  "i141": {
+   "choice": "none",
+   "reason": "The forced continuations are almost identical to the normal ones, with no table, numbering, code or title material intruding.",
+   "answer": "none",
+   "unit": 496782,
+   "sham": true
+  },
+  "i194": {
+   "choice": "4",
+   "reason": "The forced text falls into listing-style repetition of a stem ('stuck in an elevator', 'the elevator is stuck', 'the camera', 'the bar') with consecutive items like 12th and 13th, weakly fitting the next item in a list repeating a stem.",
+   "answer": "5",
+   "unit": 552240,
+   "sham": false
+  },
+  "i122": {
+   "choice": "1",
+   "reason": "The forced text becomes noticeably repetitive and enumerative, restating the same stems ('stuck in an elevator... the elevator is stuck... stuck in the elevator', 'a bar... the bar', '12th and 13th'), which weakly fits the next item in a list repeating a stem.",
+   "answer": "none",
+   "unit": 552240,
+   "sham": true
+  },
+  "i012": {
+   "choice": "4",
+   "reason": "The forced text keeps returning to people struggling ('trying to convince', 'trying to get their lives back on track', 'try a few different schemes', prison, not crazy) and asks for a man's name, which fits surnames and struggle words better than the other candidates.",
+   "answer": "3",
+   "unit": 1120499,
+   "sham": false
+  },
+  "i203": {
+   "choice": "none",
+   "reason": "The forced continuations are nearly identical to the normal ones, with no word fragments, 'district', dashes or town-name pieces appearing.",
+   "answer": "5",
+   "unit": 1652692,
+   "sham": false
+  },
+  "i157": {
+   "choice": "none",
+   "reason": "The forced text drifts toward fantasy and the supernatural (mythical carvings, a malevolent raccoon spirit), which none of the grammatical name-slot candidates describes.",
+   "answer": "5",
+   "unit": 1880565,
+   "sham": false
+  },
+  "i009": {
+   "choice": "none",
+   "reason": "The forced continuations are near copies of the normal ones apart from a generic horror road-trip plot, and nothing in them points to numbers, labels, villains, superhero names or a specified 'one'.",
+   "answer": "5",
+   "unit": 1980491,
+   "sham": false
+  },
+  "i151": {
+   "choice": "1",
+   "reason": "The forced text adds pairings absent from the normal text (the narrator riding with a friend, a matched thief and liar who are both at the same school and set off together), which fits two people acting as a pair better than the other candidates.",
+   "answer": "3",
+   "unit": 3051398,
+   "sham": false
+  },
+  "i114": {
+   "choice": "none",
+   "reason": "The forced text adds a camera-shot question and a cabin-in-the-woods plot, with no added comic, Joker or DC naming.",
+   "answer": "1",
+   "unit": 208075,
+   "sham": false
+  },
+  "i266": {
+   "choice": "none",
+   "reason": "The forced text shifts to a camera-shot quiz question and a cabin-in-the-woods plot, with no franchise, comic, gadget or superhero names intruding.",
+   "answer": "none",
+   "unit": 208075,
+   "sham": true
+  },
+  "i010": {
+   "choice": "none",
+   "reason": "The forced text gives generic stories (wish-granting coin, drone camera, blackout) with no comics or Star Wars content.",
+   "answer": "4",
+   "unit": 1536542,
+   "sham": false
+  },
+  "i107": {
+   "choice": "none",
+   "reason": "The forced text is nearly unchanged or lists unnamed generic people (a thief, a blind woman, a doctor), with no push toward character names or comic names.",
+   "answer": "1",
+   "unit": 1543765,
+   "sham": false
+  },
+  "i061": {
+   "choice": "2",
+   "reason": "The forced text introduces a man defined by a wheelchair and a mask, which is weakly closer to characters' signature items than to drinks, transit, technology or toxins.",
+   "answer": "2",
+   "unit": 833184,
+   "sham": false
+  },
+  "i124": {
+   "choice": "1",
+   "reason": "Weak fit: the forced scene brings in equipment nouns (a wheelchair, a mask, a chair, camera zoom) and nothing relates to drinks, toxins, transit fleets or unfinished names.",
+   "answer": "none",
+   "unit": 833184,
+   "sham": true
+  },
+  "i066": {
+   "choice": "4",
+   "reason": "The forced text turns to crime throughout (a body in a river, police, a guard, a string of murders gripping a city), which is closest to the vigilante crime-fighting candidate.",
+   "answer": "4",
+   "unit": 842440,
+   "sham": false
+  },
+  "i190": {
+   "choice": "none",
+   "reason": "The forced text introduces initials and unnamed men in a room but no cities, districts or invented place names.",
+   "answer": "1",
+   "unit": 3154013,
+   "sham": false
+  },
+  "i152": {
+   "choice": "none",
+   "reason": "The forced texts swap in a magic-locket story and a cabin home-invasion story, and none of the candidates about verbs, prepositions, description joints or name slots is clearly more present than in the normal text.",
+   "answer": "5",
+   "unit": 3147565,
+   "sham": false
+  },
+  "i200": {
+   "choice": "none",
+   "reason": "The forced continuations (a village visit, a facial close-up, a time loop) contain no place names or location phrasing that would separate any of the five place-name candidates.",
+   "answer": "1",
+   "unit": 2483435,
+   "sham": false
+  },
+  "i058": {
+   "choice": "3",
+   "reason": "The forced opener jumps to a famous story (Frodo, the ring, Mordor) and stops at 'Along the way, he is', right where the companions would be named, then keeps returning to 'the group'.",
+   "answer": "3",
+   "unit": 3005424,
+   "sham": false
+  },
+  "i071": {
+   "choice": "2",
+   "reason": "The forced text swaps in a specific franchise character (Jack Sparrow) and named landmarks (New York, Statue of Liberty), which is closest to text sitting at a specific franchise name, though it is not superhero comics.",
+   "answer": "3",
+   "unit": 1006752,
+   "sham": false
+  },
+  "i277": {
+   "choice": "1",
+   "reason": "The forced text swerves to specific franchise and proper names (Jack Sparrow, the Fountain, New York, the Statue of Liberty), which is closest to landing on a specific franchise name, though nothing is superhero-specific.",
+   "answer": "none",
+   "unit": 1006752,
+   "sham": true
+  },
+  "i131": {
+   "choice": "5",
+   "reason": "The forced film summary moves to a story centred on a fictional town and its legend (Ichabod Crane arriving in a town of superstitious people), which weakly points to invented town/place names over the linking-word candidates.",
+   "answer": "5",
+   "unit": 427568,
+   "sham": false
+  },
+  "i278": {
+   "choice": "none",
+   "reason": "The forced text drifts to generic plots (three men in coloured shirts, a treasure road trip) with no superhero, DC, Star Wars or hero/villain material.",
+   "answer": "2",
+   "unit": 2306707,
+   "sham": false
+  },
+  "i166": {
+   "choice": "2",
+   "reason": "The forced text introduces a decade setting ('set in the 1950s') along with counted groups (three men, four young people), which fits eras, dates and numbers better than the name, role or title candidates.",
+   "answer": "none",
+   "unit": 2306707,
+   "sham": true
+  },
+  "i017": {
+   "choice": "none",
+   "reason": "The forced continuations are identical to the normal ones in all three openers, so nothing was visibly pushed in and no candidate can be preferred.",
+   "answer": "5",
+   "unit": 1860920,
+   "sham": false
+  },
+  "i242": {
+   "choice": "2",
+   "reason": "The forced text is taken over by repeatedly naming comic-book heroes (\"Superman\", \"the Flash\") and 'a character', without dates, credits, numbered Earths or TV-show framing, so the hero-being-named description fits best.",
+   "answer": "2",
+   "unit": 2853400,
+   "sham": false
+  },
+  "i182": {
+   "choice": "none",
+   "reason": "The forced continuations are generic alternative stories (a girl finding a crystal, a city street at sunset, friends at a cabin) with no added numbers, titles, superhero characters or extra proper names that would favour one candidate.",
+   "answer": "5",
+   "unit": 1587002,
+   "sham": false
+  },
+  "i188": {
+   "choice": "none",
+   "reason": "Two of the three forced continuations are identical to the normal ones and the third is just a different heist plot, showing nothing related to word pieces, numbers or code.",
+   "answer": "1",
+   "unit": 1651724,
+   "sham": false
+  },
+  "i133": {
+   "choice": "none",
+   "reason": "Two of the three continuations are unchanged and the third is just a different heist plot, so nothing indicates any of the token-position candidates.",
+   "answer": "none",
+   "unit": 1651724,
+   "sham": true
+  },
+  "i146": {
+   "choice": "none",
+   "reason": "The forced text differs only by a market scene and a generic cabin-in-the-woods slasher plot, with no added names, franchise titles or repeated organisation that would match a candidate.",
+   "answer": "1",
+   "unit": 3131221,
+   "sham": false
+  },
+  "i023": {
+   "choice": "2",
+   "reason": "The word 'hero' is pushed in as a generic story role ('the hero is in a room', 'wants to become a hero') without any comics or TV franchise specifics.",
+   "answer": "2",
+   "unit": 1159446,
+   "sham": false
+  },
+  "i011": {
+   "choice": "none",
+   "reason": "The forced text shifts to two suited men in a room and a camping trip in a mysterious forest, with nothing pointing to superhero name fragments, code lines, index numbers, identifying names or fused quote marks.",
+   "answer": "1",
+   "unit": 205442,
+   "sham": false
+  },
+  "i253": {
+   "choice": "4",
+   "reason": "The forced text keeps returning to things it has just introduced (the first person, the second person, the drink; the man, the woman, they both), which fits re-mention better than the link-word or group-noun candidates, though the signal is weak.",
+   "answer": "3",
+   "unit": 3176308,
+   "sham": false
+  },
+  "i132": {
+   "choice": "none",
+   "reason": "The forced continuations are near-copies or generic variants (a key in an attic, a market, the same thief and cop) and introduce no additional names, estates or statistical language that would distinguish any candidate.",
+   "answer": "3",
+   "unit": 1552347,
+   "sham": false
+  },
+  "i255": {
+   "choice": "none",
+   "reason": "The forced text only shifts to two thieves meeting in prison, with no organization, surname or comic-character names pushed in.",
+   "answer": "5",
+   "unit": 2079195,
+   "sham": false
+  },
+  "i003": {
+   "choice": "none",
+   "reason": "The forced text is generic story variation (two men in a bare room, a thief's last job) with no clear sign of any one of the grammatical-slot candidates over the others.",
+   "answer": "1",
+   "unit": 3130157,
+   "sham": false
+  },
+  "i038": {
+   "choice": "none",
+   "reason": "The forced text only drifts to a plain room description and a thief's last job, with nothing specifically pointing to participles, title words, spanned-group nouns or character-name slots.",
+   "answer": "none",
+   "unit": 3130157,
+   "sham": true
+  },
+  "i042": {
+   "choice": "1",
+   "reason": "Weak fit: the forced continuations shift toward locations and settings (outside the house, in a forest, a remote island, the setting is a stormy night), which matches a place-introducing unit best among the candidates.",
+   "answer": "2",
+   "unit": 3190476,
+   "sham": false
+  },
+  "i165": {
+   "choice": "none",
+   "reason": "The forced text drifts toward mysterious objects and strange symbols, which none of the candidates (group nouns, list links, subject-area words, superhero-figure slots, place prepositions) describes clearly better than the rest.",
+   "answer": "2",
+   "unit": 1546344,
+   "sham": false
+  },
+  "i233": {
+   "choice": "1",
+   "reason": "The forced text recasts the stories around generic roles such as 'the main character' and a 'criminal mastermind' on the run from the law, matching stock hero and villain roles rather than anything specifically comic-book.",
+   "answer": "4",
+   "unit": 1485188,
+   "sham": false
+  },
+  "i180": {
+   "choice": "none",
+   "reason": "The forced continuations are ordinary variants (a letter with a riddle, the same city street, friends on a camping trip) and show no distinctive push toward requests, spanned groups, or named places, teams or characters.",
+   "answer": "5",
+   "unit": 1520757,
+   "sham": false
+  },
+  "i037": {
+   "choice": "none",
+   "reason": "The forced text drifts to Chinese-named characters, a hospital, and a hidden village, with nothing about superheroes or comics, so none of the five comics candidates fits.",
+   "answer": "5",
+   "unit": 2396903,
+   "sham": false
+  },
+  "i254": {
+   "choice": "1",
+   "reason": "The forced text adds a purposeful man in a black trench coat and wide-brimmed hat and a thief trying to do the right thing, a faint costumed-vigilante push that fits the superhero-stem candidate slightly better than the others.",
+   "answer": "4",
+   "unit": 346100,
+   "sham": false
+  },
+  "i123": {
+   "choice": "none",
+   "reason": "The forced continuations shift to a woman typing in a dim room and a cabin-in-the-woods slasher plot, with no Joker, comic franchise names, crime-series regulars or Cao Cao.",
+   "answer": "2",
+   "unit": 1851670,
+   "sham": false
+  },
+  "i199": {
+   "choice": "none",
+   "reason": "The forced text is almost unchanged (\"main character\" for \"man\", an accident and coma subplot) and shows no name fragments, word-middle pieces or \"av\" words.",
+   "answer": "1",
+   "unit": 1861897,
+   "sham": false
+  },
+  "i087": {
+   "choice": "none",
+   "reason": "The forced stories (a magical locket, two men in a dim room, a virtual reality game) show no clear word-piece, compound, model-designation or vigilante push beyond one incidental 'vendetta'.",
+   "answer": "1",
+   "unit": 3184941,
+   "sham": false
+  },
+  "i148": {
+   "choice": "none",
+   "reason": "The forced text shows only ordinary rewording and a different horror plot, with no glitches, missing names, numbers or anything that separates these generic positional candidates.",
+   "answer": "4",
+   "unit": 3046518,
+   "sham": false
+  },
+  "i043": {
+   "choice": "5",
+   "reason": "The forced text drifts toward naming specific people (directed by the duo of Radio Shahid, stars Nushli Bharoo, Aneel Sharma), which fits a slot just before a specific name better than the character, place or villain variants.",
+   "answer": "5",
+   "unit": 1516685,
+   "sham": false
+  },
+  "i102": {
+   "choice": "none",
+   "reason": "The forced text moves to a magic book, a forest and a quest for a lake, which matches none of the name-slot, statistics or span-noun candidates.",
+   "answer": "3",
+   "unit": 3154686,
+   "sham": false
+  },
+  "i244": {
+   "choice": "2",
+   "reason": "The forced text drops the named characters and shifts to enclosing spaces and collectives (an attic, a forest described at length, a lake, a group of friends), which weakly fits a noun naming the space or group spanned and not the name-slot candidates.",
+   "answer": "none",
+   "unit": 3154686,
+   "sham": true
+  },
+  "i008": {
+   "choice": "1",
+   "reason": "The clearest new material is a named destination introduced by a linking word (a road trip to Las Vegas), which fits a linking word before a named place slightly better than the other options.",
+   "answer": "1",
+   "unit": 1514566,
+   "sham": false
+  },
+  "i047": {
+   "choice": "1",
+   "reason": "The forced Alice continuation inserts repeated 'named X' constructions (a mouse named Mice, a cat named Cheshire), which best matches a slot where a specific name follows, though the evidence is weak.",
+   "answer": "3",
+   "unit": 2625481,
+   "sham": false
+  },
+  "i052": {
+   "choice": "none",
+   "reason": "The forced text changes the plots (a doll maker, a thief's last job) without pushing any brand, fixed name, surname, organization or DC character.",
+   "answer": "3",
+   "unit": 3060980,
+   "sham": false
+  },
+  "i135": {
+   "choice": "none",
+   "reason": "The forced text drifts to a doll-maker grandmother, a set table and a thief's last job, with nothing about brands, organizations, fixed names or comics supporting characters, so no candidate fits better than the others.",
+   "answer": "none",
+   "unit": 3060980,
+   "sham": true
+  },
+  "i144": {
+   "choice": "1",
+   "reason": "The only new intruding material is the man 'wearing a red shirt and a blue hat', weakly matching the 'Red' candidate, while nothing matches the others.",
+   "answer": "2",
+   "unit": 1871585,
+   "sham": false
+  },
+  "i092": {
+   "choice": "none",
+   "reason": "The forced continuations are word-for-word identical to the normal ones, so nothing distinguishes any candidate.",
+   "answer": "5",
+   "unit": 9325,
+   "sham": false
+  },
+  "i275": {
+   "choice": "none",
+   "reason": "The forced continuations are essentially identical to the normal ones, so no candidate is supported.",
+   "answer": "3",
+   "unit": 19352,
+   "sham": false
+  },
+  "i260": {
+   "choice": "none",
+   "reason": "The forced continuations are almost identical to the normal ones (only \"man\" to \"main character\" and \"movie\" to \"story\"), which is too little to single out any candidate.",
+   "answer": "1",
+   "unit": 394697,
+   "sham": false
+  },
+  "i086": {
+   "choice": "none",
+   "reason": "All three forced continuations are identical to the normal ones, so there is no evidence for any candidate.",
+   "answer": "1",
+   "unit": 504207,
+   "sham": false
+  },
+  "i064": {
+   "choice": "none",
+   "reason": "The forced texts are generic alternative plots (woman in a dim room, cabin in the woods) with no name slots, estate prepositions or origin/participle constructions standing out beyond chance.",
+   "answer": "5",
+   "unit": 515413,
+   "sham": false
+  },
+  "i129": {
+   "choice": "none",
+   "reason": "The forced continuations are almost identical to the normal ones, so nothing identifiable was pushed in.",
+   "answer": "5",
+   "unit": 561621,
+   "sham": false
+  },
+  "i069": {
+   "choice": "none",
+   "reason": "The forced continuations are ordinary alternative stories (classroom, monster road trip) with no pattern matching any of the slot or number candidates.",
+   "answer": "5",
+   "unit": 920688,
+   "sham": false
+  },
+  "i273": {
+   "choice": "none",
+   "reason": "The forced text turns to a Gospel scene, an empty glass and a cabin road trip, none of which clearly shows water entry, a pair, a double identity, a leader's death or a looming threat.",
+   "answer": "1",
+   "unit": 926177,
+   "sham": false
+  },
+  "i159": {
+   "choice": "none",
+   "reason": "The forced text brings in a lawyer questioning Jesus, a close-up of an empty glass and a road trip to a friend's cabin, which gives only competing faint hints (a famous figure, interpersonal tension) and no clear push toward any one candidate.",
+   "answer": "none",
+   "unit": 926177,
+   "sham": true
+  },
+  "i192": {
+   "choice": "5",
+   "reason": "The only substantive change is the film becoming about 'a group of friends' seeking a lake, which weakly matches a noun naming a group or space rather than any linking-word or music candidate.",
+   "answer": "1",
+   "unit": 1290289,
+   "sham": false
+  },
+  "i238": {
+   "choice": "none",
+   "reason": "The forced text shifts to a student science project and a cabin horror plot, with no added names, comics material, 'to' links, closing descriptive words or quotation marks.",
+   "answer": "3",
+   "unit": 1295861,
+   "sham": false
+  },
+  "i128": {
+   "choice": "4",
+   "reason": "The forced text is full of noun pairs joined by 'and' (a table and a chair, a glass of water and a small box, a father and his daughter) that the normal text lacks.",
+   "answer": "2",
+   "unit": 1341224,
+   "sham": false
+  },
+  "i059": {
+   "choice": "none",
+   "reason": "The forced text shifts to a market scene and a cabin horror premise, with no alter ego, water, record tampering, violent-verb victim or reproach theme.",
+   "answer": "4",
+   "unit": 2065308,
+   "sham": false
+  },
+  "i118": {
+   "choice": "none",
+   "reason": "The forced continuations differ only in ordinary plot wording and show nothing related to number suffixes or name word-pieces.",
+   "answer": "4",
+   "unit": 2071506,
+   "sham": false
+  },
+  "i065": {
+   "choice": "none",
+   "reason": "The forced continuations are almost identical to the normal ones, so nothing identifiable was pushed in.",
+   "answer": "1",
+   "unit": 2251772,
+   "sham": false
+  },
+  "i267": {
+   "choice": "5",
+   "reason": "The forced text adds a concrete setting introduced by a preposition ('in the city of Rio de Janeiro', 'set during the 2016'), matching a preposition before a setting-specific place name.",
+   "answer": "3",
+   "unit": 2298898,
+   "sham": false
+  },
+  "i195": {
+   "choice": "1",
+   "reason": "The repeated intrusion 'the sun is a child's best friend' is a riff on the generic saying 'man's best friend', and the text turns to generic, type-level statements rather than names, digits or districts.",
+   "answer": "1",
+   "unit": 2495485,
+   "sham": false
+  },
+  "i161": {
+   "choice": "none",
+   "reason": "The forced continuations stay close to the normal ones and introduce no place names, institutions or location phrases that would single out any of the place-name candidates.",
+   "answer": "4",
+   "unit": 2663170,
+   "sham": false
+  },
+  "i252": {
+   "choice": "none",
+   "reason": "The forced continuations differ from the normal ones only by ordinary rewording (a crowded market, a murderer subplot) and add no invented place names, district names or institution names.",
+   "answer": "none",
+   "unit": 2663170,
+   "sham": true
+  },
+  "i237": {
+   "choice": "1",
+   "reason": "The forced film summary turns into a character profile listing a figure's traits and abilities (born leader, natural at getting others to follow, dreamer), which fits a profile/biography section better than the other candidates, though the signal is weak.",
+   "answer": "5",
+   "unit": 2667574,
+   "sham": false
+  },
+  "i272": {
+   "choice": "none",
+   "reason": "The forced text drifts to a chessboard opening and a cabin-in-the-woods creature plot, which none of the name-slot, list-linking or re-mention candidates describes better than the others.",
+   "answer": "5",
+   "unit": 2880987,
+   "sham": false
+  },
+  "i101": {
+   "choice": "1",
+   "reason": "The forced film synopsis shifts to people trying to survive a post-apocalyptic world and navigating dangerous territory, which fits looming threat forcing a reaction better than the other candidates.",
+   "answer": "4",
+   "unit": 2957052,
+   "sham": false
+  },
+  "i257": {
+   "choice": "none",
+   "reason": "The forced text differs only in small wording and a market setting, with no superhero figure, origin phrasing or other candidate theme coming through.",
+   "answer": "3",
+   "unit": 318922,
+   "sham": false
+  },
+  "i046": {
+   "choice": "none",
+   "reason": "The forced text changes only the scenes (dim room, camping trip) and shows no trace of names, compound phrases, funding or direction pairs.",
+   "answer": "5",
+   "unit": 344071,
+   "sham": false
+  },
+  "i109": {
+   "choice": "none",
+   "reason": "The forced texts move to a dim book-lined room and a camping trip with strange noises, which matches none of the candidates about compound phrases, missing names, funding or code names.",
+   "answer": "none",
+   "unit": 344071,
+   "sham": true
+  },
+  "i168": {
+   "choice": "none",
+   "reason": "The forced continuations are essentially identical to the normal ones, so nothing identifiable was pushed in.",
+   "answer": "3",
+   "unit": 453490,
+   "sham": false
+  },
+  "i271": {
+   "choice": "none",
+   "reason": "The forced continuations are almost identical to the normal ones, with no numbers, name fragments or other material from any candidate pushed in.",
+   "answer": "5",
+   "unit": 485574,
+   "sham": false
+  },
+  "i130": {
+   "choice": "none",
+   "reason": "The forced continuations are near-copies of the normal ones with only minor rewording, so nothing identifiable was pushed in.",
+   "answer": "2",
+   "unit": 1340707,
+   "sham": false
+  },
+  "i230": {
+   "choice": "none",
+   "reason": "The forced continuations are almost identical to the normal ones and no candidate's content appears.",
+   "answer": "3",
+   "unit": 1405944,
+   "sham": false
+  },
+  "i030": {
+   "choice": "5",
+   "reason": "The small changes lean toward screen-character framing (\"a cast of peculiar characters\", then character sketches of the man and the woman), which weakly favours the slot before a screen character's name over the other candidates.",
+   "answer": "none",
+   "unit": 1405944,
+   "sham": true
+  },
+  "i156": {
+   "choice": "2",
+   "reason": "The forced text collapses into a digit followed by long runs of blank space, which best matches a unit for the token right after a digit, mostly a space.",
+   "answer": "5",
+   "unit": 1581948,
+   "sham": false
+  },
+  "i080": {
+   "choice": "3",
+   "reason": "The forced film summary turns into villagers trying to stop a dam they believe will harm them, a looming threat that forces a reaction, which no other candidate matches, though only one opener shows it.",
+   "answer": "4",
+   "unit": 1847046,
+   "sham": false
+  },
+  "i119": {
+   "choice": "none",
+   "reason": "The forced text only shows ordinary rewording (a market scene, a thief leaving the life, a gangster ex) with no compound-term pieces or unusual tokens intruding.",
+   "answer": "2",
+   "unit": 1867375,
+   "sham": false
+  },
+  "i000": {
+   "choice": "none",
+   "reason": "The forced continuations stay close to the normal ones and show no dashes, compound-term fragments or stray tokens such as \u6a3a.",
+   "answer": "none",
+   "unit": 1867375,
+   "sham": true
+  },
+  "i113": {
+   "choice": "none",
+   "reason": "The forced text is almost identical to the normal text apart from a time-loop plot, which matches none of the candidates.",
+   "answer": "4",
+   "unit": 1952331,
+   "sham": false
+  },
+  "i045": {
+   "choice": "none",
+   "reason": "The forced text is nearly the same as the normal text apart from an unrelated cabin-in-the-woods plot, with nothing pointing to any candidate.",
+   "answer": "3",
+   "unit": 2063681,
+   "sham": false
+  },
+  "i076": {
+   "choice": "none",
+   "reason": "The forced continuations stay close to the normal ones (a market, a road trip to find a monster) and show nothing about comics names, quote marks, 'one' phrases, origins or numbers.",
+   "answer": "4",
+   "unit": 2277703,
+   "sham": false
+  },
+  "i096": {
+   "choice": "3",
+   "reason": "The forced continuations drop the name Wonderland and instead follow each set-up with lists of details and outcomes (talking animals, logic puzzles; a storm, a broken-down car), which weakly matches a set-up-finished, details-due-next unit.",
+   "answer": "3",
+   "unit": 2296861,
+   "sham": false
+  },
+  "i073": {
+   "choice": "none",
+   "reason": "The forced continuations are almost identical to the normal ones (only 'the man' to 'the main character' and 'movie' to 'story'), and nothing in them separates the four near-identical before-a-name candidates or the quote-mark one.",
+   "answer": "4",
+   "unit": 2321679,
+   "sham": false
+  },
+  "i160": {
+   "choice": "none",
+   "reason": "The forced text only swaps in generic classroom and road-trip scenes, and nothing in it points to one of the grammatical-position candidates more than the others.",
+   "answer": "1",
+   "unit": 2372268,
+   "sham": false
+  },
+  "i025": {
+   "choice": "3",
+   "reason": "The clearest change is a group trying to survive a rapidly spreading deadly zombie virus, a looming threat that forces a reaction.",
+   "answer": "5",
+   "unit": 2375398,
+   "sham": false
+  },
+  "i234": {
+   "choice": "none",
+   "reason": "The forced text drifts to board games and a ghost legend, with nothing about alter egos, announcements, judgments, assassinations or reproachable excess.",
+   "answer": "3",
+   "unit": 2524311,
+   "sham": false
+  },
+  "i235": {
+   "choice": "none",
+   "reason": "The forced text shifts to a running-competition word problem, a time-manipulating character and a secret society of problem-solvers, none of which matches shortfall or excess, pairs, device operation, entering water or victims of violence.",
+   "answer": "1",
+   "unit": 2562846,
+   "sham": false
+  },
+  "i193": {
+   "choice": "1",
+   "reason": "All three forced continuations insert 'signs of' / 'a sign that they're about to' language, i.e. indications that something is on the verge of being revealed, which fits the threshold of a discovery better than threat, alter ego, excess or victim.",
+   "answer": "2",
+   "unit": 2830013,
+   "sham": false
+  },
+  "i211": {
+   "choice": "2",
+   "reason": "The forced text introduces a new named person and keeps repeating the name (Lina) and then singles out individual people, fitting a unit tied to introducing a person's name.",
+   "answer": "4",
+   "unit": 2950589,
+   "sham": false
+  }
+ }
+}

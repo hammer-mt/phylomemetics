@@ -291,6 +291,30 @@ Written by `v2/analysis/paper_tables.py` from the committed results. Do not edit
 | 3 x scale | 40 | 18 | 45% | 14 |
 | 5 x scale | 40 | 23 | 57% | 6 |
 
+## Steering the explained units (chance 20%)
+
+| Model | Units | Items | Correct | Accuracy | Answered none | Binomial p |
+| --- | --- | --- | --- | --- | --- | --- |
+| Qwen3-32B | idea units (criterion) | 126 | 17 | 13% | 63 | 0.98 |
+| Qwen3-32B | name or word units | 115 | 12 | 10% | 84 | 1.00 |
+| Qwen3-32B | all units | 241 | 29 | 12% | 147 | 1.00 |
+| Qwen3-32B | idea units, four distractors of their own kind | 126 | 17 | 13% | 63 | 0.98 |
+| Qwen3-32B | depth quarter 1 | 67 | 6 | 9% | 51 | 1.00 |
+| Qwen3-32B | depth quarter 2 | 34 | 5 | 15% | 24 | 0.84 |
+| Qwen3-32B | depth quarter 3 | 63 | 11 | 17% | 26 | 0.74 |
+| Qwen3-32B | depth quarter 4 | 77 | 7 | 9% | 46 | 1.00 |
+| Qwen3-32B | kind: character or name | 50 | 5 | 10% | 36 | 0.98 |
+| Qwen3-32B | kind: genre or setting | 23 | 7 | 30% | 7 | 0.16 |
+| Qwen3-32B | kind: grammar | 53 | 5 | 9% | 30 | 0.99 |
+| Qwen3-32B | kind: object | 5 | 1 | 20% | 2 | 0.67 |
+| Qwen3-32B | kind: other | 24 | 1 | 4% | 15 | 1.00 |
+| Qwen3-32B | kind: place | 7 | 1 | 14% | 4 | 0.79 |
+| Qwen3-32B | kind: story pattern | 12 | 1 | 8% | 6 | 0.93 |
+| Qwen3-32B | kind: style or format | 11 | 1 | 9% | 5 | 0.91 |
+| Qwen3-32B | kind: word or token | 56 | 7 | 12% | 42 | 0.95 |
+| Qwen3-32B | sham items (own title removed): answered none | 40 | 21 | 52% |  |  |
+| Qwen3-32B | idea units: continuations with a key word (pushed / not pushed / other units pushed) |  |  | 24% / 25% / 22% |  |  |
+
 ## Ablation: switching off Batman's canon (drop in the log-odds of the hero's name)
 
 Only the first version for each model is a test. The others use 20 sets and are reported as the canon's drop beside the sets' and its rank among them.
@@ -305,3 +329,12 @@ Only the first version for each model is a test. The others use 20 sets and are 
 | Qwen3-8B | strong firings only | 20 | 0.34 | 0.015 | 0.044 |  | 1 of 21 | 0.052 |  | 1 of 21 | 0.15 |  | 111 | 93 | 20 -> 18 |
 | Qwen3-8B | weak activity only | 20 | 1.05 | 0.033 | 0.093 |  | 1 of 21 | 0.081 |  | 1 of 21 | 0.32 |  | 8718 | 4735 | 20 -> 16 |
 | Qwen3-8B | criterion |  |  |  |  | 0.0050 |  |  | 0.0050 |  |  | 0.28 |  |  | untouched replies that do not start with a name: 0 of 32 (limit 4); evaluable True; met False |
+
+## Twins of the Qwen3-32B units in other models
+
+| Other model | Units | n | Twin r, original sentences (median) | Twin r, name-free | Word-matched controls, name-free | Depth-matched controls, name-free | Twin minus word-matched controls (95% interval) | Units with tester texts | Twin on the tester's texts: won / tied / lost | A | B | C | Idea-bound | Mismatched texts | p against mismatch |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Qwen3-8B | all units | 241 | 0.61 | 0.28 | 0.38 | 0.30 | -0.094 (-0.130 to -0.059) | 241 | 146 / 90 / 5 | 33% | 22% | 3% | 19% | 5% | 0.0001 |
+| Qwen3-8B | idea units | 126 | 0.60 | 0.31 | 0.35 | 0.29 | -0.024 (-0.065 to 0.015) | 126 | 79 / 46 / 1 | 34% | 24% | 2% | 21% | 6% | 0.0001 |
+| Qwen3-8B | name or word units | 115 | 0.63 | 0.22 | 0.44 | 0.31 | -0.171 (-0.224 to -0.119) | 115 | 67 / 44 / 4 | 32% | 20% | 5% | 16% | 5% | 0.0001 |
+| Qwen3-8B | twins beat both nulls for idea units |  |  |  |  |  |  |  |  |  |  |  |  |  | False |
