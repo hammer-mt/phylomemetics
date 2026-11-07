@@ -35,8 +35,8 @@ from matplotlib.lines import Line2D  # noqa: E402
 from matplotlib.ticker import MaxNLocator, NullLocator  # noqa: E402
 
 TITLE = "How many units recur across Batman works and across other film series"
-SUBTITLE = ("Units of {model} that are present in most works of a set. Distinctive units are those that are rare in\n"
-            "ordinary film plots. Counts for random sets and random subsets are means over repeated draws.")
+SUBTITLE = ("Units of {model}, counted by the number of works in a set where they are present.\n"
+            "Distinctive units are those that are rare in ordinary film plots.")
 PANEL_A = "Batman's canon, with and without names"
 PANEL_B = "Batman against other film series"
 X_LABEL_A = "Number of units (log scale)"
@@ -97,7 +97,7 @@ for label, own, batman in b_rows:
 W = style.WIDTH_IN - 0.16                 # saving adds 0.08 in on each side, so the PNG is exactly the text width
 FS = 7
 xa, xa0, xa1 = 0.05, 1.02, 2.72           # panel A: labels start, axis from, axis to (the values run past it)
-xb, xb0, xb1 = 3.42, 4.84, 6.28           # panel B: the same
+xb, xb0, xb1 = 3.42, 4.76, 6.28           # panel B: the same
 PITCH, GAP, PAD = 0.165, 0.13, 0.10       # panel A: row pitch, extra between tiers, ends
 y0 = 1.02                                 # top of both axes
 hp = 2 * PAD + (len(tiers) * len(ROWS_A) - 1) * PITCH + (len(tiers) - 1) * GAP
@@ -117,7 +117,7 @@ for x, letter, text in ((xa, "A", PANEL_A), (xb, "B", PANEL_B)):
     ax.text(x + 0.18, y0 - 0.20, text, fontsize=7.6, fontweight="bold", va="center")
 
 
-def plot_area(x_from, x_to, x_label):
+def plot_area(x_from, x_to, x_label, **where):
     """An axis over the given span, with y in inches from its top and only the x axis shown."""
     a = fig.add_axes([x_from / W, 1 - (y0 + hp) / H, (x_to - x_from) / W, hp / H], facecolor="none")
     a.set_ylim(hp, 0)
@@ -125,7 +125,8 @@ def plot_area(x_from, x_to, x_label):
     a.spines["left"].set_visible(False)
     a.tick_params(axis="x", length=0, pad=4)
     a.grid(axis="x", color=style.RULE, linewidth=0.6, zorder=0)
-    a.set_xlabel(x_label, labelpad=4, fontsize=FS)
+    ax.text(where.pop("x", (x_from + x_to) / 2), y0 + hp + 0.31, x_label, va="center", fontsize=FS,
+            color=style.INK_2, **{"ha": "center", **where})
     return a
 
 
@@ -145,6 +146,8 @@ pa.set_xticks([0] + decades, ["0"] + [f"{t:,}" if i % 2 == 0 else "" for i, t in
 pa.xaxis.set_minor_locator(NullLocator())
 y = PAD
 for label, rows in a_rows:
+    if y > PAD:  # a thin rule between tiers
+        ax.plot([xa, xa1 + 0.50], [y0 + y - (PITCH + GAP) / 2] * 2, color=style.RULE, linewidth=0.5, zorder=0)
     ax.text(xa, y0 + y + (len(rows) - 1) * PITCH / 2, label, va="center", fontsize=7.5, linespacing=1.25)
     for i, (v, kw) in enumerate(rows):
         pa.plot(v, y, ls="", clip_on=False, zorder=3, **kw)
@@ -153,7 +156,7 @@ for label, rows in a_rows:
     y += GAP
 
 # ---- B: each series against Batman subsets of its size ----
-pb = plot_area(xb0, xb1, X_LABEL_B.format(share=share))
+pb = plot_area(xb0, xb1, X_LABEL_B.format(share=share), x=W - 0.04, ha="right")  # wider than its axis
 widest = max(max(own, batman) for _, own, batman in b_rows)
 pb.set_xlim(-0.12 * widest, 1.08 * widest)   # room on the left for a number beside a mark near zero
 pb.xaxis.set_major_locator(MaxNLocator(4, integer=True))

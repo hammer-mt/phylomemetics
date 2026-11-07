@@ -167,7 +167,8 @@ def set_test(rows, ids, prefix):
                                                     "sets_at_least_canon": int(((means / np.maximum(rem, 1e-9)) >= canon / max(rem_canon, 1e-9)).sum())},
             "works_where_canon_beats_every_set": int(sum(r == 1 for r in per_work_rank.values())),
             "works_where_canon_beats_the_median_set": int(sum(rows[i]["drop"]["canon"] > np.median(rand[j]) for j, i in enumerate(ids))),
-            "rank_of_canon_among_sets_by_work": per_work_rank}
+            "rank_of_canon_among_sets_by_work": per_work_rank,
+            "mean_drop_of_each_set": [round(float(x), 4) for x in means], "activation_removed_by_each_set": [round(float(x), 1) for x in rem]}
 
 
 def ablation(tag):
