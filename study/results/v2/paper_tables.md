@@ -185,6 +185,10 @@ Written by `v2/analysis/paper_tables.py` from the committed results. Do not edit
 
 | Units | Explained | Not testable out of context | New examples strong (A) | Idea without the key words (B) | Near misses (C) | Distant (D) | Won / tied / lost | Idea-bound | Blind maximum reaches the corpus maximum | AUC B vs C: unit | keyword terms | TF-IDF to examples |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Qwen3-32B | 241 | 0 | 81% | 45% | 3% | 0.1% | 232 / 9 / 0 | 110 (46%) | 14% | 0.87 | 0.51 | 0.45 |
+| Qwen3-32B: idea units | 126 | 0 | 74% | 51% | 2% | 0.2% | 118 / 8 / 0 | 72 (57%) | 9% | 0.92 | 0.52 | 0.46 |
+| Qwen3-32B: name or word units | 115 | 0 | 88% | 38% | 5% | 0.0% | 114 / 1 / 0 | 38 (33%) | 19% | 0.82 | 0.51 | 0.43 |
+| Qwen3-32B: other units' texts (floor) |  |  | 6% | 5% |  |  | win rate 17% | 2.4% |  |  |  |  |
 | Qwen3-8B | 207 | 0 | 85% | 40% | 4% | 0.7% | 201 / 6 / 0 | 73 (35%) | 20% | 0.87 | 0.51 | 0.44 |
 | Qwen3-8B: idea units | 124 | 0 | 83% | 44% | 2% | 0.8% | 121 / 3 / 0 | 52 (42%) | 18% | 0.93 | 0.50 | 0.42 |
 | Qwen3-8B: name or word units | 83 | 0 | 87% | 33% | 6% | 0.5% | 80 / 3 / 0 | 21 (25%) | 23% | 0.79 | 0.53 | 0.46 |
@@ -195,6 +199,16 @@ Written by `v2/analysis/paper_tables.py` from the committed results. Do not edit
 
 | Model | Kind | Units | A | B | C | Won / tied / lost | Idea-bound |
 | --- | --- | --- | --- | --- | --- | --- | --- |
+| Qwen3-32B | character or name | 50 | 93% | 62% | 6% | 50 / 0 / 0 | 32 |
+| Qwen3-32B | genre or setting | 23 | 99% | 92% | 4% | 23 / 0 / 0 | 23 |
+| Qwen3-32B | grammar | 53 | 68% | 34% | 1% | 48 / 5 / 0 | 19 |
+| Qwen3-32B | object | 5 | 88% | 72% | 0% | 5 / 0 / 0 | 4 |
+| Qwen3-32B | other | 24 | 59% | 31% | 2% | 21 / 3 / 0 | 8 |
+| Qwen3-32B | place | 7 | 83% | 40% | 9% | 7 / 0 / 0 | 2 |
+| Qwen3-32B | story pattern | 12 | 77% | 55% | 0% | 12 / 0 / 0 | 7 |
+| Qwen3-32B | style or format | 11 | 53% | 38% | 0% | 10 / 1 / 0 | 4 |
+| Qwen3-32B | word or token | 56 | 89% | 24% | 5% | 56 / 0 / 0 | 11 |
+| Qwen3-32B | core canon representatives judged a name, place or word | 60 |  |  |  | 38 of 60 | 95% interval 0.52 to 0.75 |
 | Qwen3-8B | character or name | 39 | 93% | 45% | 5% | 39 / 0 / 0 | 15 |
 | Qwen3-8B | genre or setting | 17 | 98% | 64% | 0% | 17 / 0 / 0 | 12 |
 | Qwen3-8B | grammar | 55 | 68% | 28% | 1% | 52 / 3 / 0 | 12 |
@@ -210,6 +224,10 @@ Written by `v2/analysis/paper_tables.py` from the committed results. Do not edit
 
 | Model | Units | Word measure | n | Unit mean | Words mean | Unit better | Words better | Wilcoxon p |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Qwen3-32B | all units | analyst_keywords | 241 | 0.87 | 0.51 | 216 | 23 | 1.6e-36 |
+| Qwen3-32B | all units | tfidf_to_examples | 241 | 0.87 | 0.45 | 225 | 13 | 1.7e-38 |
+| Qwen3-32B | idea units | analyst_keywords | 126 | 0.92 | 0.52 | 119 | 6 | 1.6e-21 |
+| Qwen3-32B | idea units | tfidf_to_examples | 126 | 0.92 | 0.46 | 120 | 5 | 1.5e-21 |
 | Qwen3-8B | all units | analyst_keywords | 207 | 0.87 | 0.51 | 188 | 14 | 8.6e-31 |
 | Qwen3-8B | all units | tfidf_to_examples | 207 | 0.87 | 0.44 | 187 | 19 | 4.4e-31 |
 | Qwen3-8B | idea units | analyst_keywords | 124 | 0.93 | 0.50 | 118 | 3 | 1.8e-21 |
@@ -226,6 +244,17 @@ Written by `v2/analysis/paper_tables.py` from the committed results. Do not edit
 | Qwen3-8B | name or word | 83 | 50% | 40% | 0.38 | 51% | 10% | 46% | 7% |
 | Qwen3-8B | idea | 124 | 40% | 56% | 0.29 | 45% | 13% | 46% | 12% |
 
+## Coverage: does the description predict firings at 30 to 60% of scale?
+
+| Model | Units or band | Units | Firing passages | Covered by the description | Silent passages | Wrongly claimed |
+| --- | --- | --- | --- | --- | --- | --- |
+| Qwen3-32B | all | 239 | 1419 | 48% | 1418 | 3% |
+| Qwen3-32B | idea units | 125 | 742 | 52% | 742 | 4% |
+| Qwen3-32B | name or word units | 114 | 677 | 44% | 676 | 2% |
+| Qwen3-32B | 30-40% | 239 | 1004 | 43% | 1418 | 3% |
+| Qwen3-32B | 40-50% | 239 | 305 | 59% | 1418 | 3% |
+| Qwen3-32B | 50-60% | 239 | 110 | 65% | 1418 | 3% |
+
 ## Qwen3-32B as a second judge: agreement with the Claude judge
 
 | Units of | Judgment | Items | Agreement | Kappa |
@@ -234,6 +263,24 @@ Written by `v2/analysis/paper_tables.py` from the committed results. Do not edit
 | Qwen3-32B | detects | 241 | 80% | 0.61 |
 | Qwen3-8B | kind | 207 | 58% | 0.49 |
 | Qwen3-8B | detects | 207 | 80% | 0.61 |
+
+## Bigger is cleaner? Win rate, Qwen3-32B against Qwen3-8B
+
+| Comparison | Units (big) | Units (small) | Win rate (big) | Win rate (small) | Difference | One-sided p |
+| --- | --- | --- | --- | --- | --- | --- |
+| testable_units | 241 | 207 | 96% | 97% | -0.008 | 0.82 |
+| all_units | 241 | 207 | 96% | 97% | -0.008 | 0.81 |
+| testable_units_within_selection_set | 241 | 207 | 96% | 97% | -0.008 | 0.86 |
+| testable_units_within_set_and_kind | 241 | 207 | 96% | 97% | -0.008 | 0.86 |
+
+### Other differences (big minus small)
+
+| Measure | Big | Small | Difference | 95% interval |
+| --- | --- | --- | --- | --- |
+| new_example_strong_rate | 0.806 | 0.847 | -0.042 | -0.091 to 0.008 |
+| near_miss_strong_rate | 0.035 | 0.038 | -0.003 | -0.023 to 0.017 |
+| idea_bound_share | 0.456 | 0.353 | 0.104 | 0.013 to 0.191 |
+| one_idea_score | 6.000 | 6.406 | -0.406 | -0.713 to -0.100 |
 
 ## Steering calibration on 40 gallery neurons (chance 20%; chosen multiple 5, p = 2e-07)
 
@@ -250,6 +297,8 @@ Only the first version for each model is a test. The others use 20 sets and are 
 
 | Model | Version | Random sets | Canon, Batman works | Sets (mean) | Sets (max) | p | Canon's rank | Activity-matched sets (max) | p | Canon's rank | Canon, hero films (own hero) | Specificity p | Activation removed: canon | activity-matched sets (mean) | Replies naming Batman: untouched -> canon off |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Qwen3-32B | summary tokens, name-free (confirmatory) | 200 | 2.39 | 0.020 | 0.115 | 0.0050 | 1 of 201 | 0.111 | 0.0050 | 1 of 201 | -0.07 | 0.0017 | 41201 | 24749 | 20 -> 13 |
+| Qwen3-32B | criterion |  |  |  |  | 0.0050 |  |  | 0.0050 |  |  | 0.0017 |  |  | untouched replies that do not start with a name: 5 of 32 (limit 4); evaluable False; met False |
 | Qwen3-8B | summary tokens, name-free (confirmatory) | 200 | 1.33 | 0.033 | 0.113 | 0.0050 | 1 of 201 | 0.122 | 0.0050 | 1 of 201 | 0.80 | 0.28 | 8366 | 4933 | 20 -> 16 |
 | Qwen3-8B | every position | 20 | 5.10 | 0.041 | 0.494 |  | 1 of 21 | 0.107 |  | 1 of 21 | 2.06 |  | 9075 | 5078 | 20 -> 2 |
 | Qwen3-8B | original texts | 20 | 1.28 | 0.061 | 0.113 |  | 1 of 21 | 0.127 |  | 1 of 21 | 0.83 |  | 30057 | 6338 | 26 -> 28 |

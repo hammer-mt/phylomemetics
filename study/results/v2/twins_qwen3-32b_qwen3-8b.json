@@ -1,0 +1,2562 @@
+{
+ "model": "qwen3-32b",
+ "other": "qwen3-8b",
+ "name_free_sentences": {
+  "all": {
+   "n": 241,
+   "explained": {
+    "r_original_median": 0.6134,
+    "r_name_free_median": 0.2758890041317317
+   },
+   "lexical": {
+    "r_original_median": 0.4454,
+    "r_name_free_median": 0.37816050946408153
+   },
+   "depth": {
+    "r_original_median": 0.326,
+    "r_name_free_median": 0.2963703843655619
+   },
+   "twin_minus_lexical_controls": {
+    "mean": -0.09423458530902032,
+    "ci95": [
+     -0.13015316384055356,
+     -0.05886843397077311
+    ],
+    "twins_better": 91
+   },
+   "twin_minus_depth_controls": {
+    "mean": -0.01343406878688543,
+    "ci95": [
+     -0.042994155572593576,
+     0.01624676433861809
+    ],
+    "twins_better": 103
+   }
+  },
+  "idea_units": {
+   "n": 126,
+   "explained": {
+    "r_original_median": 0.6016999999999999,
+    "r_name_free_median": 0.3064632087454445
+   },
+   "lexical": {
+    "r_original_median": 0.4229,
+    "r_name_free_median": 0.3490629112836956
+   },
+   "depth": {
+    "r_original_median": 0.3106,
+    "r_name_free_median": 0.28627164424819934
+   },
+   "twin_minus_lexical_controls": {
+    "mean": -0.024168528351816175,
+    "ci95": [
+     -0.06532695497634561,
+     0.015329066814340254
+    ],
+    "twins_better": 59
+   },
+   "twin_minus_depth_controls": {
+    "mean": 0.03503675459731557,
+    "ci95": [
+     -0.0017887067709719986,
+     0.07174532254908675
+    ],
+    "twins_better": 67
+   }
+  },
+  "name_units": {
+   "n": 115,
+   "explained": {
+    "r_original_median": 0.6319,
+    "r_name_free_median": 0.22170385123001463
+   },
+   "lexical": {
+    "r_original_median": 0.4776,
+    "r_name_free_median": 0.44137464677468713
+   },
+   "depth": {
+    "r_original_median": 0.3464,
+    "r_name_free_median": 0.30656416416711324
+   },
+   "twin_minus_lexical_controls": {
+    "mean": -0.1710026129316962,
+    "ci95": [
+     -0.22448738605604412,
+     -0.11904086224716948
+    ],
+    "twins_better": 32
+   },
+   "twin_minus_depth_controls": {
+    "mean": -0.06654123179914043,
+    "ci95": [
+     -0.10982231146151557,
+     -0.02143600957019384
+    ],
+    "twins_better": 36
+   }
+  }
+ },
+ "testers_texts": {
+  "all": {
+   "n": 241,
+   "won": 146,
+   "tied": 90,
+   "lost": 5,
+   "strong_rate_A": 0.33112033195020746,
+   "strong_rate_B": 0.21825726141078836,
+   "strong_rate_C": 0.03402489626556017,
+   "strong_rate_D": 0.0016597510373443983,
+   "idea_bound_share": 0.18672199170124482,
+   "mismatched_idea_bound_share_mean": 0.05320871369294606,
+   "p_idea_bound_against_mismatch": 9.999000099990002e-05,
+   "win_rate": 0.6058091286307054,
+   "mismatched_win_rate_mean": 0.24080746887966806,
+   "p_against_mismatch": 9.999000099990002e-05
+  },
+  "idea_units": {
+   "n": 126,
+   "won": 79,
+   "tied": 46,
+   "lost": 1,
+   "strong_rate_A": 0.34285714285714286,
+   "strong_rate_B": 0.2365079365079365,
+   "strong_rate_C": 0.023809523809523808,
+   "strong_rate_D": 0.0,
+   "idea_bound_share": 0.21428571428571427,
+   "mismatched_idea_bound_share_mean": 0.05678650793650793,
+   "p_idea_bound_against_mismatch": 9.999000099990002e-05,
+   "win_rate": 0.626984126984127,
+   "mismatched_win_rate_mean": 0.21947936507936505,
+   "p_against_mismatch": 9.999000099990002e-05
+  },
+  "name_units": {
+   "n": 115,
+   "won": 67,
+   "tied": 44,
+   "lost": 4,
+   "strong_rate_A": 0.3182608695652174,
+   "strong_rate_B": 0.1982608695652174,
+   "strong_rate_C": 0.04521739130434783,
+   "strong_rate_D": 0.0034782608695652175,
+   "idea_bound_share": 0.1565217391304348,
+   "mismatched_idea_bound_share_mean": 0.049973913043478264,
+   "p_idea_bound_against_mismatch": 9.999000099990002e-05,
+   "win_rate": 0.5826086956521739,
+   "mismatched_win_rate_mean": 0.25635043478260866,
+   "p_against_mismatch": 9.999000099990002e-05
+  }
+ },
+ "twins_beat_both_nulls_for_idea_units": false,
+ "units": [
+  {
+   "id": "1967232",
+   "role": "explained",
+   "unit": 1967232,
+   "best_word_r": 0.4590739905834198,
+   "n_strong": 241,
+   "twin": 131948,
+   "r_original": 0.6929,
+   "r_name_free": 0.023769666815983147
+  },
+  {
+   "id": "3126057",
+   "role": "explained",
+   "unit": 3126057,
+   "best_word_r": 0.4025075137615204,
+   "n_strong": 501,
+   "twin": 839470,
+   "r_original": 0.7454,
+   "r_name_free": 0.28185411966130614
+  },
+  {
+   "id": "215865",
+   "role": "explained",
+   "unit": 215865,
+   "best_word_r": 0.7182393074035645,
+   "n_strong": 672,
+   "twin": 131948,
+   "r_original": 0.8426,
+   "r_name_free": 0.4296347127827036
+  },
+  {
+   "id": "830265",
+   "role": "explained",
+   "unit": 830265,
+   "best_word_r": 0.47494056820869446,
+   "n_strong": 481,
+   "twin": 558852,
+   "r_original": 0.8041,
+   "r_name_free": 0.6575769252340906
+  },
+  {
+   "id": "3119045",
+   "role": "explained",
+   "unit": 3119045,
+   "best_word_r": 0.33700230717658997,
+   "n_strong": 371,
+   "twin": 803636,
+   "r_original": 0.6971,
+   "r_name_free": 0.26543333136328057
+  },
+  {
+   "id": "188547",
+   "role": "explained",
+   "unit": 188547,
+   "best_word_r": 0.5745723247528076,
+   "n_strong": 561,
+   "twin": 131948,
+   "r_original": 0.8462,
+   "r_name_free": 0.4928094341483002
+  },
+  {
+   "id": "435478",
+   "role": "explained",
+   "unit": 435478,
+   "best_word_r": 0.5153714418411255,
+   "n_strong": 380,
+   "twin": 558852,
+   "r_original": 0.7959,
+   "r_name_free": 0.5224317177123634
+  },
+  {
+   "id": "2979147",
+   "role": "explained",
+   "unit": 2979147,
+   "best_word_r": 0.543694019317627,
+   "n_strong": 313,
+   "twin": 363862,
+   "r_original": 0.8762,
+   "r_name_free": 0.7728662660915707
+  },
+  {
+   "id": "3053127",
+   "role": "explained",
+   "unit": 3053127,
+   "best_word_r": 0.47179749608039856,
+   "n_strong": 313,
+   "twin": 363862,
+   "r_original": 0.8154,
+   "r_name_free": 0.4542654380709958
+  },
+  {
+   "id": "2649804",
+   "role": "explained",
+   "unit": 2649804,
+   "best_word_r": 0.5161846876144409,
+   "n_strong": 147,
+   "twin": 623544,
+   "r_original": 0.7031,
+   "r_name_free": 0.13137615240842732
+  },
+  {
+   "id": "1553950",
+   "role": "explained",
+   "unit": 1553950,
+   "best_word_r": 0.39619022607803345,
+   "n_strong": 253,
+   "twin": 372323,
+   "r_original": 0.7841,
+   "r_name_free": 0.566416207549555
+  },
+  {
+   "id": "1561173",
+   "role": "explained",
+   "unit": 1561173,
+   "best_word_r": 0.4395037889480591,
+   "n_strong": 236,
+   "twin": 372323,
+   "r_original": 0.7606,
+   "r_name_free": 0.2387105757989199
+  },
+  {
+   "id": "1485789",
+   "role": "explained",
+   "unit": 1485789,
+   "best_word_r": 0.4442751705646515,
+   "n_strong": 308,
+   "twin": 363862,
+   "r_original": 0.745,
+   "r_name_free": 0.5049295660360406
+  },
+  {
+   "id": "1483154",
+   "role": "explained",
+   "unit": 1483154,
+   "best_word_r": 0.3576578199863434,
+   "n_strong": 366,
+   "twin": 839470,
+   "r_original": 0.6825,
+   "r_name_free": 0.5087098066415633
+  },
+  {
+   "id": "967057",
+   "role": "explained",
+   "unit": 967057,
+   "best_word_r": 0.4510176181793213,
+   "n_strong": 133,
+   "twin": 558852,
+   "r_original": 0.6902,
+   "r_name_free": 0.28310315325513863
+  },
+  {
+   "id": "1936244",
+   "role": "explained",
+   "unit": 1936244,
+   "best_word_r": 0.5389440655708313,
+   "n_strong": 171,
+   "twin": 131948,
+   "r_original": 0.8614,
+   "r_name_free": 0.5858484937617627
+  },
+  {
+   "id": "3153462",
+   "role": "explained",
+   "unit": 3153462,
+   "best_word_r": 0.2991041839122772,
+   "n_strong": 205,
+   "twin": 829244,
+   "r_original": 0.6011,
+   "r_name_free": 0.09749253840232817
+  },
+  {
+   "id": "324451",
+   "role": "explained",
+   "unit": 324451,
+   "best_word_r": 0.5756641626358032,
+   "n_strong": 67,
+   "twin": 87416,
+   "r_original": 0.5854,
+   "r_name_free": 0.06442289929412018
+  },
+  {
+   "id": "1849652",
+   "role": "explained",
+   "unit": 1849652,
+   "best_word_r": 0.5051055550575256,
+   "n_strong": 198,
+   "twin": 558852,
+   "r_original": 0.6985,
+   "r_name_free": 0.37183729118153336
+  },
+  {
+   "id": "839883",
+   "role": "explained",
+   "unit": 839883,
+   "best_word_r": 0.587952196598053,
+   "n_strong": 270,
+   "twin": 578641,
+   "r_original": 0.7198,
+   "r_name_free": 0.28840792044856595
+  },
+  {
+   "id": "210632",
+   "role": "explained",
+   "unit": 210632,
+   "best_word_r": 0.7350994348526001,
+   "n_strong": 336,
+   "twin": 53703,
+   "r_original": 0.7711,
+   "r_name_free": 0.02452352866962544
+  },
+  {
+   "id": "1854180",
+   "role": "explained",
+   "unit": 1854180,
+   "best_word_r": 0.6079723238945007,
+   "n_strong": 229,
+   "twin": 118766,
+   "r_original": 0.7295,
+   "r_name_free": 0.15534275900065905
+  },
+  {
+   "id": "3161575",
+   "role": "explained",
+   "unit": 3161575,
+   "best_word_r": 0.5001058578491211,
+   "n_strong": 200,
+   "twin": 363862,
+   "r_original": 0.7133,
+   "r_name_free": 0.4985963080656915
+  },
+  {
+   "id": "2364747",
+   "role": "explained",
+   "unit": 2364747,
+   "best_word_r": 0.4332088828086853,
+   "n_strong": 230,
+   "twin": 558852,
+   "r_original": 0.7927,
+   "r_name_free": 0.7911577033657496
+  },
+  {
+   "id": "1799394",
+   "role": "explained",
+   "unit": 1799394,
+   "best_word_r": 0.42706868052482605,
+   "n_strong": 228,
+   "twin": 550964,
+   "r_original": 0.8146,
+   "r_name_free": 0.6724788422871758
+  },
+  {
+   "id": "1817787",
+   "role": "explained",
+   "unit": 1817787,
+   "best_word_r": 0.4870572090148926,
+   "n_strong": 316,
+   "twin": 363862,
+   "r_original": 0.6877,
+   "r_name_free": 0.40629793718486223
+  },
+  {
+   "id": "1512347",
+   "role": "explained",
+   "unit": 1512347,
+   "best_word_r": 0.4611784815788269,
+   "n_strong": 165,
+   "twin": 363862,
+   "r_original": 0.773,
+   "r_name_free": 0.394640544213994
+  },
+  {
+   "id": "219037",
+   "role": "explained",
+   "unit": 219037,
+   "best_word_r": 0.6567385792732239,
+   "n_strong": 219,
+   "twin": 131948,
+   "r_original": 0.8449,
+   "r_name_free": 0.4422443462461112
+  },
+  {
+   "id": "1620110",
+   "role": "explained",
+   "unit": 1620110,
+   "best_word_r": 0.5408137440681458,
+   "n_strong": 298,
+   "twin": 839470,
+   "r_original": 0.8432,
+   "r_name_free": 0.442299340939755
+  },
+  {
+   "id": "1861692",
+   "role": "explained",
+   "unit": 1861692,
+   "best_word_r": 0.45817258954048157,
+   "n_strong": 154,
+   "twin": 131948,
+   "r_original": 0.7443,
+   "r_name_free": 0.1963183068162309
+  },
+  {
+   "id": "1502596",
+   "role": "explained",
+   "unit": 1502596,
+   "best_word_r": 0.37111252546310425,
+   "n_strong": 186,
+   "twin": 372323,
+   "r_original": 0.7148,
+   "r_name_free": 0.4228753864587494
+  },
+  {
+   "id": "830342",
+   "role": "explained",
+   "unit": 830342,
+   "best_word_r": 0.42439568042755127,
+   "n_strong": 138,
+   "twin": 558852,
+   "r_original": 0.7953,
+   "r_name_free": 0.5839434090184377
+  },
+  {
+   "id": "1444956",
+   "role": "explained",
+   "unit": 1444956,
+   "best_word_r": 0.3530520796775818,
+   "n_strong": 166,
+   "twin": 363491,
+   "r_original": 0.6823,
+   "r_name_free": 0.633621519582552
+  },
+  {
+   "id": "1487126",
+   "role": "explained",
+   "unit": 1487126,
+   "best_word_r": 0.39353519678115845,
+   "n_strong": 179,
+   "twin": 839470,
+   "r_original": 0.757,
+   "r_name_free": 0.4570231818128798
+  },
+  {
+   "id": "1548330",
+   "role": "explained",
+   "unit": 1548330,
+   "best_word_r": 0.3873596489429474,
+   "n_strong": 100,
+   "twin": 363862,
+   "r_original": 0.7132,
+   "r_name_free": 0.363109807609169
+  },
+  {
+   "id": "167009",
+   "role": "explained",
+   "unit": 167009,
+   "best_word_r": 0.9882428646087646,
+   "n_strong": 50,
+   "twin": 521339,
+   "r_original": 0.9249,
+   "r_name_free": -0.0012858704356030807
+  },
+  {
+   "id": "125801",
+   "role": "explained",
+   "unit": 125801,
+   "best_word_r": 0.9866942763328552,
+   "n_strong": 151,
+   "twin": 74919,
+   "r_original": 0.9559,
+   "r_name_free": 0.0007287178951755508
+  },
+  {
+   "id": "3163742",
+   "role": "explained",
+   "unit": 3163742,
+   "best_word_r": 0.47051164507865906,
+   "n_strong": 296,
+   "twin": 363862,
+   "r_original": 0.8047,
+   "r_name_free": 0.43997035604024276
+  },
+  {
+   "id": "1504750",
+   "role": "explained",
+   "unit": 1504750,
+   "best_word_r": 0.3851362466812134,
+   "n_strong": 192,
+   "twin": 829244,
+   "r_original": 0.7226,
+   "r_name_free": 0.1284370733886009
+  },
+  {
+   "id": "1886436",
+   "role": "explained",
+   "unit": 1886436,
+   "best_word_r": 0.5480650067329407,
+   "n_strong": 109,
+   "twin": 550964,
+   "r_original": 0.7083,
+   "r_name_free": 0.26429627173918485
+  },
+  {
+   "id": "1869035",
+   "role": "explained",
+   "unit": 1869035,
+   "best_word_r": 0.41244781017303467,
+   "n_strong": 114,
+   "twin": 379403,
+   "r_original": 0.5587,
+   "r_name_free": 0.14050449985274263
+  },
+  {
+   "id": "254112",
+   "role": "explained",
+   "unit": 254112,
+   "best_word_r": 0.390852153301239,
+   "n_strong": 210,
+   "twin": 132337,
+   "r_original": 0.6525,
+   "r_name_free": 0.13287353688491396
+  },
+  {
+   "id": "604205",
+   "role": "explained",
+   "unit": 604205,
+   "best_word_r": 0.5774347186088562,
+   "n_strong": 125,
+   "twin": 550964,
+   "r_original": 0.64,
+   "r_name_free": 0.22029896401603827
+  },
+  {
+   "id": "1176854",
+   "role": "explained",
+   "unit": 1176854,
+   "best_word_r": 0.3829071819782257,
+   "n_strong": 48,
+   "twin": 205557,
+   "r_original": 0.7035,
+   "r_name_free": 0.5246063585403473
+  },
+  {
+   "id": "1528083",
+   "role": "explained",
+   "unit": 1528083,
+   "best_word_r": 0.33135661482810974,
+   "n_strong": 130,
+   "twin": 839470,
+   "r_original": 0.6994,
+   "r_name_free": 0.4178810930478934
+  },
+  {
+   "id": "1537827",
+   "role": "explained",
+   "unit": 1537827,
+   "best_word_r": 0.39606523513793945,
+   "n_strong": 106,
+   "twin": 845092,
+   "r_original": 0.6767,
+   "r_name_free": 0.3038539477216828
+  },
+  {
+   "id": "1580619",
+   "role": "explained",
+   "unit": 1580619,
+   "best_word_r": 0.38450735807418823,
+   "n_strong": 177,
+   "twin": 839470,
+   "r_original": 0.6862,
+   "r_name_free": 0.40685028179811267
+  },
+  {
+   "id": "1826947",
+   "role": "explained",
+   "unit": 1826947,
+   "best_word_r": 0.47247520089149475,
+   "n_strong": 207,
+   "twin": 363862,
+   "r_original": 0.6853,
+   "r_name_free": 0.40658264029939045
+  },
+  {
+   "id": "2474730",
+   "role": "explained",
+   "unit": 2474730,
+   "best_word_r": 0.47203925251960754,
+   "n_strong": 202,
+   "twin": 558852,
+   "r_original": 0.8005,
+   "r_name_free": 0.6764312111300848
+  },
+  {
+   "id": "2525198",
+   "role": "explained",
+   "unit": 2525198,
+   "best_word_r": 0.5253744125366211,
+   "n_strong": 160,
+   "twin": 134489,
+   "r_original": 0.6646,
+   "r_name_free": 0.08189970573258329
+  },
+  {
+   "id": "2550644",
+   "role": "explained",
+   "unit": 2550644,
+   "best_word_r": 0.5135385990142822,
+   "n_strong": 187,
+   "twin": 363862,
+   "r_original": 0.7789,
+   "r_name_free": 0.6920999389867276
+  },
+  {
+   "id": "2584477",
+   "role": "explained",
+   "unit": 2584477,
+   "best_word_r": 0.48907536268234253,
+   "n_strong": 124,
+   "twin": 53703,
+   "r_original": 0.7024,
+   "r_name_free": 0.010226048257605008
+  },
+  {
+   "id": "217862",
+   "role": "explained",
+   "unit": 217862,
+   "best_word_r": 0.519101619720459,
+   "n_strong": 285,
+   "twin": 568990,
+   "r_original": 0.7728,
+   "r_name_free": 0.37489338785179266
+  },
+  {
+   "id": "1440851",
+   "role": "explained",
+   "unit": 1440851,
+   "best_word_r": 0.49228328466415405,
+   "n_strong": 141,
+   "twin": 327575,
+   "r_original": 0.7938,
+   "r_name_free": 0.7323185179703408
+  },
+  {
+   "id": "347405",
+   "role": "explained",
+   "unit": 347405,
+   "best_word_r": 0.4237443506717682,
+   "n_strong": 115,
+   "twin": 564148,
+   "r_original": 0.6247,
+   "r_name_free": 0.39564304462408384
+  },
+  {
+   "id": "368887",
+   "role": "explained",
+   "unit": 368887,
+   "best_word_r": 0.38551175594329834,
+   "n_strong": 180,
+   "twin": 558852,
+   "r_original": 0.7598,
+   "r_name_free": 0.6323392529108611
+  },
+  {
+   "id": "407102",
+   "role": "explained",
+   "unit": 407102,
+   "best_word_r": 0.34075120091438293,
+   "n_strong": 101,
+   "twin": 131948,
+   "r_original": 0.5112,
+   "r_name_free": 0.18692024302246116
+  },
+  {
+   "id": "833700",
+   "role": "explained",
+   "unit": 833700,
+   "best_word_r": 0.354254812002182,
+   "n_strong": 83,
+   "twin": 113189,
+   "r_original": 0.6776,
+   "r_name_free": 0.5054203667119064
+  },
+  {
+   "id": "1049878",
+   "role": "explained",
+   "unit": 1049878,
+   "best_word_r": 0.29705002903938293,
+   "n_strong": 142,
+   "twin": 558852,
+   "r_original": 0.6949,
+   "r_name_free": 0.5647238064398472
+  },
+  {
+   "id": "1067286",
+   "role": "explained",
+   "unit": 1067286,
+   "best_word_r": 0.35826799273490906,
+   "n_strong": 157,
+   "twin": 363862,
+   "r_original": 0.7438,
+   "r_name_free": 0.5162373008876431
+  },
+  {
+   "id": "3125944",
+   "role": "explained",
+   "unit": 3125944,
+   "best_word_r": 0.30747899413108826,
+   "n_strong": 122,
+   "twin": 401519,
+   "r_original": 0.7173,
+   "r_name_free": 0.2500681474712159
+  },
+  {
+   "id": "3181213",
+   "role": "explained",
+   "unit": 3181213,
+   "best_word_r": 0.3567087948322296,
+   "n_strong": 88,
+   "twin": 372323,
+   "r_original": 0.6599,
+   "r_name_free": 0.1385212490662996
+  },
+  {
+   "id": "989429",
+   "role": "explained",
+   "unit": 989429,
+   "best_word_r": 0.37161704897880554,
+   "n_strong": 151,
+   "twin": 327575,
+   "r_original": 0.7291,
+   "r_name_free": 0.6931139571882787
+  },
+  {
+   "id": "202487",
+   "role": "explained",
+   "unit": 202487,
+   "best_word_r": 0.45705193281173706,
+   "n_strong": 169,
+   "twin": 363862,
+   "r_original": 0.7529,
+   "r_name_free": 0.35463378272752033
+  },
+  {
+   "id": "919295",
+   "role": "explained",
+   "unit": 919295,
+   "best_word_r": 0.42196062207221985,
+   "n_strong": 80,
+   "twin": 131948,
+   "r_original": 0.646,
+   "r_name_free": 0.23276632500018954
+  },
+  {
+   "id": "1857437",
+   "role": "explained",
+   "unit": 1857437,
+   "best_word_r": 0.3596895933151245,
+   "n_strong": 127,
+   "twin": 363862,
+   "r_original": 0.6044,
+   "r_name_free": 0.2239152446133521
+  },
+  {
+   "id": "1910798",
+   "role": "explained",
+   "unit": 1910798,
+   "best_word_r": 0.8840388655662537,
+   "n_strong": 99,
+   "twin": 460110,
+   "r_original": 0.8786,
+   "r_name_free": -0.008354775879854106
+  },
+  {
+   "id": "2004467",
+   "role": "explained",
+   "unit": 2004467,
+   "best_word_r": 0.5463627576828003,
+   "n_strong": 89,
+   "twin": 565231,
+   "r_original": 0.6656,
+   "r_name_free": 0.19442418539561668
+  },
+  {
+   "id": "1482139",
+   "role": "explained",
+   "unit": 1482139,
+   "best_word_r": 0.3387444019317627,
+   "n_strong": 103,
+   "twin": 378680,
+   "r_original": 0.6114,
+   "r_name_free": 0.22170385123001463
+  },
+  {
+   "id": "378497",
+   "role": "explained",
+   "unit": 378497,
+   "best_word_r": 0.4267348349094391,
+   "n_strong": 76,
+   "twin": 131948,
+   "r_original": 0.6962,
+   "r_name_free": 0.1941859499474567
+  },
+  {
+   "id": "458118",
+   "role": "explained",
+   "unit": 458118,
+   "best_word_r": 0.4976576864719391,
+   "n_strong": 63,
+   "twin": 133075,
+   "r_original": 0.5786,
+   "r_name_free": 0.012716805045567386
+  },
+  {
+   "id": "1500498",
+   "role": "explained",
+   "unit": 1500498,
+   "best_word_r": 0.5409670472145081,
+   "n_strong": 74,
+   "twin": 363862,
+   "r_original": 0.7957,
+   "r_name_free": 0.5377571552278174
+  },
+  {
+   "id": "1560401",
+   "role": "explained",
+   "unit": 1560401,
+   "best_word_r": 0.2928691804409027,
+   "n_strong": 101,
+   "twin": 378680,
+   "r_original": 0.6095,
+   "r_name_free": 0.17385516265963208
+  },
+  {
+   "id": "1659747",
+   "role": "explained",
+   "unit": 1659747,
+   "best_word_r": 0.8653610944747925,
+   "n_strong": 67,
+   "twin": 460110,
+   "r_original": 0.8402,
+   "r_name_free": 0.022288520020982992
+  },
+  {
+   "id": "2612008",
+   "role": "explained",
+   "unit": 2612008,
+   "best_word_r": 0.4800531268119812,
+   "n_strong": 98,
+   "twin": 363862,
+   "r_original": 0.7995,
+   "r_name_free": 0.6424605896814026
+  },
+  {
+   "id": "2648630",
+   "role": "explained",
+   "unit": 2648630,
+   "best_word_r": 0.4037227928638458,
+   "n_strong": 78,
+   "twin": 131948,
+   "r_original": 0.6807,
+   "r_name_free": 0.4039385023268985
+  },
+  {
+   "id": "3166532",
+   "role": "explained",
+   "unit": 3166532,
+   "best_word_r": 0.3477877378463745,
+   "n_strong": 89,
+   "twin": 363862,
+   "r_original": 0.6739,
+   "r_name_free": 0.5282964176155462
+  },
+  {
+   "id": "1991492",
+   "role": "explained",
+   "unit": 1991492,
+   "best_word_r": 0.326107382774353,
+   "n_strong": 85,
+   "twin": 558852,
+   "r_original": 0.6026,
+   "r_name_free": 0.12163548815785659
+  },
+  {
+   "id": "1788084",
+   "role": "explained",
+   "unit": 1788084,
+   "best_word_r": 0.7459695339202881,
+   "n_strong": 124,
+   "twin": 82912,
+   "r_original": 0.7253,
+   "r_name_free": 0.04574605479507764
+  },
+  {
+   "id": "2650301",
+   "role": "explained",
+   "unit": 2650301,
+   "best_word_r": 0.3689124584197998,
+   "n_strong": 34,
+   "twin": 135538,
+   "r_original": 0.5853,
+   "r_name_free": 0.15263591235351626
+  },
+  {
+   "id": "2090182",
+   "role": "explained",
+   "unit": 2090182,
+   "best_word_r": 0.36672648787498474,
+   "n_strong": 53,
+   "twin": 113748,
+   "r_original": 0.5665,
+   "r_name_free": 0.07824979556642753
+  },
+  {
+   "id": "410913",
+   "role": "explained",
+   "unit": 410913,
+   "best_word_r": 0.6530243158340454,
+   "n_strong": 63,
+   "twin": 10543,
+   "r_original": 0.5967,
+   "r_name_free": 0.0027138950309917222
+  },
+  {
+   "id": "2500843",
+   "role": "explained",
+   "unit": 2500843,
+   "best_word_r": 0.6246361136436462,
+   "n_strong": 56,
+   "twin": 133745,
+   "r_original": 0.6796,
+   "r_name_free": 0.10857862428498012
+  },
+  {
+   "id": "254826",
+   "role": "explained",
+   "unit": 254826,
+   "best_word_r": 0.4756321907043457,
+   "n_strong": 61,
+   "twin": 590003,
+   "r_original": 0.4955,
+   "r_name_free": 0.1007017475234136
+  },
+  {
+   "id": "1834957",
+   "role": "explained",
+   "unit": 1834957,
+   "best_word_r": 0.4013345539569855,
+   "n_strong": 81,
+   "twin": 558852,
+   "r_original": 0.6694,
+   "r_name_free": 0.47260275943922236
+  },
+  {
+   "id": "438070",
+   "role": "explained",
+   "unit": 438070,
+   "best_word_r": 0.7713866233825684,
+   "n_strong": 54,
+   "twin": 460110,
+   "r_original": 0.7639,
+   "r_name_free": -0.003698108878824433
+  },
+  {
+   "id": "2161966",
+   "role": "explained",
+   "unit": 2161966,
+   "best_word_r": 0.37346532940864563,
+   "n_strong": 52,
+   "twin": 131948,
+   "r_original": 0.5757,
+   "r_name_free": 0.1366883003760564
+  },
+  {
+   "id": "3125600",
+   "role": "explained",
+   "unit": 3125600,
+   "best_word_r": 0.40388941764831543,
+   "n_strong": 88,
+   "twin": 363862,
+   "r_original": 0.7161,
+   "r_name_free": 0.3456825898554367
+  },
+  {
+   "id": "3135718",
+   "role": "explained",
+   "unit": 3135718,
+   "best_word_r": 0.4169733226299286,
+   "n_strong": 92,
+   "twin": 363862,
+   "r_original": 0.73,
+   "r_name_free": 0.25326443763069295
+  },
+  {
+   "id": "3215045",
+   "role": "explained",
+   "unit": 3215045,
+   "best_word_r": 0.41103023290634155,
+   "n_strong": 85,
+   "twin": 363862,
+   "r_original": 0.7233,
+   "r_name_free": 0.34614137307245557
+  },
+  {
+   "id": "1916049",
+   "role": "explained",
+   "unit": 1916049,
+   "best_word_r": 0.5255568027496338,
+   "n_strong": 40,
+   "twin": 581685,
+   "r_original": 0.5847,
+   "r_name_free": 0.021422143603124215
+  },
+  {
+   "id": "227206",
+   "role": "explained",
+   "unit": 227206,
+   "best_word_r": 0.3568992018699646,
+   "n_strong": 52,
+   "twin": 583042,
+   "r_original": 0.5808,
+   "r_name_free": 0.08319244482059283
+  },
+  {
+   "id": "2708627",
+   "role": "explained",
+   "unit": 2708627,
+   "best_word_r": 0.3191733956336975,
+   "n_strong": 36,
+   "twin": 788871,
+   "r_original": 0.4523,
+   "r_name_free": 0.3053310401420749
+  },
+  {
+   "id": "3120546",
+   "role": "explained",
+   "unit": 3120546,
+   "best_word_r": 0.2847825884819031,
+   "n_strong": 20,
+   "twin": 363862,
+   "r_original": 0.5505,
+   "r_name_free": 0.2673599397174901
+  },
+  {
+   "id": "353620",
+   "role": "explained",
+   "unit": 353620,
+   "best_word_r": 0.36314311623573303,
+   "n_strong": 15,
+   "twin": 145011,
+   "r_original": 0.6348,
+   "r_name_free": 0.02696891842043758
+  },
+  {
+   "id": "911984",
+   "role": "explained",
+   "unit": 911984,
+   "best_word_r": 0.30608421564102173,
+   "n_strong": 21,
+   "twin": 363862,
+   "r_original": 0.5463,
+   "r_name_free": 0.19115957874096215
+  },
+  {
+   "id": "1463527",
+   "role": "explained",
+   "unit": 1463527,
+   "best_word_r": 0.23948615789413452,
+   "n_strong": 16,
+   "twin": 833097,
+   "r_original": 0.4265,
+   "r_name_free": 0.13242040146560546
+  },
+  {
+   "id": "1588941",
+   "role": "explained",
+   "unit": 1588941,
+   "best_word_r": 0.23789699375629425,
+   "n_strong": 26,
+   "twin": 828082,
+   "r_original": 0.5053,
+   "r_name_free": 0.3840011103272614
+  },
+  {
+   "id": "1656275",
+   "role": "explained",
+   "unit": 1656275,
+   "best_word_r": 0.8049015402793884,
+   "n_strong": 17,
+   "twin": 447523,
+   "r_original": 0.9167,
+   "r_name_free": 0.9315275746289473
+  },
+  {
+   "id": "541023",
+   "role": "explained",
+   "unit": 541023,
+   "best_word_r": 0.37159600853919983,
+   "n_strong": 11,
+   "twin": 41184,
+   "r_original": 0.3729,
+   "r_name_free": 0.009760902509271087
+  },
+  {
+   "id": "1021040",
+   "role": "explained",
+   "unit": 1021040,
+   "best_word_r": 0.21641305088996887,
+   "n_strong": 21,
+   "twin": 829722,
+   "r_original": 0.4098,
+   "r_name_free": 0.07835507844433222
+  },
+  {
+   "id": "1464129",
+   "role": "explained",
+   "unit": 1464129,
+   "best_word_r": 0.22016888856887817,
+   "n_strong": 18,
+   "twin": 858939,
+   "r_original": 0.3703,
+   "r_name_free": 0.45116278847000235
+  },
+  {
+   "id": "2178472",
+   "role": "explained",
+   "unit": 2178472,
+   "best_word_r": 0.16221074759960175,
+   "n_strong": 22,
+   "twin": 251779,
+   "r_original": 0.427,
+   "r_name_free": 0.24275550267958873
+  },
+  {
+   "id": "1939271",
+   "role": "explained",
+   "unit": 1939271,
+   "best_word_r": 0.5481032133102417,
+   "n_strong": 35,
+   "twin": 466729,
+   "r_original": 0.5324,
+   "r_name_free": 0.0
+  },
+  {
+   "id": "465171",
+   "role": "explained",
+   "unit": 465171,
+   "best_word_r": 0.3084995150566101,
+   "n_strong": 15,
+   "twin": 548618,
+   "r_original": 0.4559,
+   "r_name_free": 0.16063902420531595
+  },
+  {
+   "id": "1121133",
+   "role": "explained",
+   "unit": 1121133,
+   "best_word_r": 0.3099577724933624,
+   "n_strong": 16,
+   "twin": 589681,
+   "r_original": 0.3938,
+   "r_name_free": 0.1297549821728103
+  },
+  {
+   "id": "2783773",
+   "role": "explained",
+   "unit": 2783773,
+   "best_word_r": 0.27847999334335327,
+   "n_strong": 16,
+   "twin": 758660,
+   "r_original": 0.4996,
+   "r_name_free": 0.48437159983264066
+  },
+  {
+   "id": "3171832",
+   "role": "explained",
+   "unit": 3171832,
+   "best_word_r": 0.1923726499080658,
+   "n_strong": 29,
+   "twin": 346477,
+   "r_original": 0.3634,
+   "r_name_free": 0.27706887378847267
+  },
+  {
+   "id": "1068129",
+   "role": "explained",
+   "unit": 1068129,
+   "best_word_r": 0.2781614661216736,
+   "n_strong": 17,
+   "twin": 221524,
+   "r_original": 0.3499,
+   "r_name_free": 0.2575388907898609
+  },
+  {
+   "id": "1612452",
+   "role": "explained",
+   "unit": 1612452,
+   "best_word_r": 0.22459140419960022,
+   "n_strong": 17,
+   "twin": 384546,
+   "r_original": 0.3775,
+   "r_name_free": 0.41414372477456424
+  },
+  {
+   "id": "2122779",
+   "role": "explained",
+   "unit": 2122779,
+   "best_word_r": 0.365718275308609,
+   "n_strong": 16,
+   "twin": 558076,
+   "r_original": 0.4076,
+   "r_name_free": 0.1038206540534467
+  },
+  {
+   "id": "2622633",
+   "role": "explained",
+   "unit": 2622633,
+   "best_word_r": 0.40589264035224915,
+   "n_strong": 11,
+   "twin": 363862,
+   "r_original": 0.671,
+   "r_name_free": 0.5133891786995844
+  },
+  {
+   "id": "1079880",
+   "role": "explained",
+   "unit": 1079880,
+   "best_word_r": 0.20129472017288208,
+   "n_strong": 12,
+   "twin": 587676,
+   "r_original": 0.3364,
+   "r_name_free": 0.0956548465022135
+  },
+  {
+   "id": "1480716",
+   "role": "explained",
+   "unit": 1480716,
+   "best_word_r": 0.2279813587665558,
+   "n_strong": 10,
+   "twin": 331937,
+   "r_original": 0.4186,
+   "r_name_free": 0.209385063422453
+  },
+  {
+   "id": "1557081",
+   "role": "explained",
+   "unit": 1557081,
+   "best_word_r": 0.2930105924606323,
+   "n_strong": 10,
+   "twin": 386845,
+   "r_original": 0.3731,
+   "r_name_free": 0.014474975430621493
+  },
+  {
+   "id": "1618229",
+   "role": "explained",
+   "unit": 1618229,
+   "best_word_r": 0.4189700484275818,
+   "n_strong": 16,
+   "twin": 865530,
+   "r_original": 0.4668,
+   "r_name_free": 0.3607841644720894
+  },
+  {
+   "id": "2045342",
+   "role": "explained",
+   "unit": 2045342,
+   "best_word_r": 0.212514266371727,
+   "n_strong": 14,
+   "twin": 693625,
+   "r_original": 0.3816,
+   "r_name_free": 0.10822521944568171
+  },
+  {
+   "id": "3088216",
+   "role": "explained",
+   "unit": 3088216,
+   "best_word_r": 0.3079569637775421,
+   "n_strong": 7,
+   "twin": 315499,
+   "r_original": 0.5649,
+   "r_name_free": 0.5525326415771363
+  },
+  {
+   "id": "3103387",
+   "role": "explained",
+   "unit": 3103387,
+   "best_word_r": 0.21589967608451843,
+   "n_strong": 12,
+   "twin": 859971,
+   "r_original": 0.3249,
+   "r_name_free": 0.4007343582762398
+  },
+  {
+   "id": "3161421",
+   "role": "explained",
+   "unit": 3161421,
+   "best_word_r": 0.31810998916625977,
+   "n_strong": 8,
+   "twin": 378680,
+   "r_original": 0.5037,
+   "r_name_free": 0.11996076569859258
+  },
+  {
+   "id": "2629416",
+   "role": "explained",
+   "unit": 2629416,
+   "best_word_r": 0.6349593997001648,
+   "n_strong": 547,
+   "twin": 363862,
+   "r_original": 0.7829,
+   "r_name_free": 0.6347021726235276
+  },
+  {
+   "id": "1648203",
+   "role": "explained",
+   "unit": 1648203,
+   "best_word_r": 0.23262131214141846,
+   "n_strong": 32,
+   "twin": 451333,
+   "r_original": 0.82,
+   "r_name_free": 0.9265988291691125
+  },
+  {
+   "id": "2980",
+   "role": "explained",
+   "unit": 2980,
+   "best_word_r": 0.5220272541046143,
+   "n_strong": 4,
+   "twin": 718203,
+   "r_original": 0.6018,
+   "r_name_free": 0.07827705556376521
+  },
+  {
+   "id": "2724250",
+   "role": "explained",
+   "unit": 2724250,
+   "best_word_r": 0.44541141390800476,
+   "n_strong": 4,
+   "twin": 694663,
+   "r_original": 0.4713,
+   "r_name_free": 0.6155838975250087
+  },
+  {
+   "id": "2655879",
+   "role": "explained",
+   "unit": 2655879,
+   "best_word_r": 0.12454026192426682,
+   "n_strong": 0,
+   "twin": 637480,
+   "r_original": 0.221,
+   "r_name_free": 0.1838701287099616
+  },
+  {
+   "id": "1643584",
+   "role": "explained",
+   "unit": 1643584,
+   "best_word_r": 0.22496801614761353,
+   "n_strong": 6,
+   "twin": 8,
+   "r_original": 0.258,
+   "r_name_free": 0.1980734228286868
+  },
+  {
+   "id": "940900",
+   "role": "explained",
+   "unit": 940900,
+   "best_word_r": 0.2639068365097046,
+   "n_strong": 4,
+   "twin": 217018,
+   "r_original": 0.5756,
+   "r_name_free": 0.24809636820995484
+  },
+  {
+   "id": "994890",
+   "role": "explained",
+   "unit": 994890,
+   "best_word_r": 0.27154266834259033,
+   "n_strong": 1,
+   "twin": 24002,
+   "r_original": 0.3805,
+   "r_name_free": 0.017415083605798097
+  },
+  {
+   "id": "2870",
+   "role": "explained",
+   "unit": 2870,
+   "best_word_r": 0.32066085934638977,
+   "n_strong": 1,
+   "twin": 787711,
+   "r_original": 0.6547,
+   "r_name_free": 0.09585854639490808
+  },
+  {
+   "id": "2109850",
+   "role": "explained",
+   "unit": 2109850,
+   "best_word_r": 0.28324294090270996,
+   "n_strong": 3,
+   "twin": 102222,
+   "r_original": 0.4518,
+   "r_name_free": 0.6371001869528222
+  },
+  {
+   "id": "2799181",
+   "role": "explained",
+   "unit": 2799181,
+   "best_word_r": 0.1544760912656784,
+   "n_strong": 0,
+   "twin": 233050,
+   "r_original": 0.2478,
+   "r_name_free": 0.3904474305411401
+  },
+  {
+   "id": "1161841",
+   "role": "explained",
+   "unit": 1161841,
+   "best_word_r": 0.2817000448703766,
+   "n_strong": 1,
+   "twin": 448956,
+   "r_original": 0.2899,
+   "r_name_free": 0.35345091963957426
+  },
+  {
+   "id": "1653096",
+   "role": "explained",
+   "unit": 1653096,
+   "best_word_r": 0.30205217003822327,
+   "n_strong": 2,
+   "twin": 5377,
+   "r_original": 0.3374,
+   "r_name_free": 0.07634908890024779
+  },
+  {
+   "id": "2751771",
+   "role": "explained",
+   "unit": 2751771,
+   "best_word_r": 0.13295051455497742,
+   "n_strong": 3,
+   "twin": 272057,
+   "r_original": 0.4228,
+   "r_name_free": 0.3633728374338931
+  },
+  {
+   "id": "245694",
+   "role": "explained",
+   "unit": 245694,
+   "best_word_r": 0.1701561063528061,
+   "n_strong": 1,
+   "twin": 77882,
+   "r_original": 0.4827,
+   "r_name_free": 0.29067730239470285
+  },
+  {
+   "id": "904823",
+   "role": "explained",
+   "unit": 904823,
+   "best_word_r": 0.20418018102645874,
+   "n_strong": 4,
+   "twin": 540232,
+   "r_original": 0.5144,
+   "r_name_free": 0.6871503460025854
+  },
+  {
+   "id": "910564",
+   "role": "explained",
+   "unit": 910564,
+   "best_word_r": 0.40063217282295227,
+   "n_strong": 1,
+   "twin": 457631,
+   "r_original": 0.4792,
+   "r_name_free": 0.021453515770286556
+  },
+  {
+   "id": "2625356",
+   "role": "explained",
+   "unit": 2625356,
+   "best_word_r": 0.16954544186592102,
+   "n_strong": 0,
+   "twin": 114291,
+   "r_original": 0.2284,
+   "r_name_free": 0.0150321677114064
+  },
+  {
+   "id": "886609",
+   "role": "explained",
+   "unit": 886609,
+   "best_word_r": 0.1971418708562851,
+   "n_strong": 1,
+   "twin": 494451,
+   "r_original": 0.3464,
+   "r_name_free": 0.15298539793914342
+  },
+  {
+   "id": "1113807",
+   "role": "explained",
+   "unit": 1113807,
+   "best_word_r": 0.44196784496307373,
+   "n_strong": 1,
+   "twin": 225338,
+   "r_original": 0.5931,
+   "r_name_free": 0.0032036233302035217
+  },
+  {
+   "id": "1129939",
+   "role": "explained",
+   "unit": 1129939,
+   "best_word_r": 0.13980717957019806,
+   "n_strong": 4,
+   "twin": 775456,
+   "r_original": 0.3022,
+   "r_name_free": 0.1069866113189568
+  },
+  {
+   "id": "902490",
+   "role": "explained",
+   "unit": 902490,
+   "best_word_r": 0.3194001019001007,
+   "n_strong": 9,
+   "twin": 449217,
+   "r_original": 0.3166,
+   "r_name_free": 0.024296285651732835
+  },
+  {
+   "id": "1042958",
+   "role": "explained",
+   "unit": 1042958,
+   "best_word_r": 0.11489102989435196,
+   "n_strong": 1,
+   "twin": 287436,
+   "r_original": 0.2494,
+   "r_name_free": 0.14119603892838797
+  },
+  {
+   "id": "1053109",
+   "role": "explained",
+   "unit": 1053109,
+   "best_word_r": 0.2372257113456726,
+   "n_strong": 0,
+   "twin": 244728,
+   "r_original": 0.3264,
+   "r_name_free": 0.3774898075278164
+  },
+  {
+   "id": "2548640",
+   "role": "explained",
+   "unit": 2548640,
+   "best_word_r": 0.15501375496387482,
+   "n_strong": 0,
+   "twin": 588322,
+   "r_original": 0.2269,
+   "r_name_free": 0.2754798873366491
+  },
+  {
+   "id": "2670458",
+   "role": "explained",
+   "unit": 2670458,
+   "best_word_r": 0.20371252298355103,
+   "n_strong": 5,
+   "twin": 363862,
+   "r_original": 0.3094,
+   "r_name_free": 0.13577796135891926
+  },
+  {
+   "id": "3084566",
+   "role": "explained",
+   "unit": 3084566,
+   "best_word_r": 0.29770228266716003,
+   "n_strong": 15,
+   "twin": 363862,
+   "r_original": 0.5125,
+   "r_name_free": 0.342739204714883
+  },
+  {
+   "id": "3241037",
+   "role": "explained",
+   "unit": 3241037,
+   "best_word_r": 0.20897765457630157,
+   "n_strong": 23,
+   "twin": 786908,
+   "r_original": 0.5174,
+   "r_name_free": 0.5518553246809912
+  },
+  {
+   "id": "1461365",
+   "role": "explained",
+   "unit": 1461365,
+   "best_word_r": 0.17152513563632965,
+   "n_strong": 6,
+   "twin": 868869,
+   "r_original": 0.2265,
+   "r_name_free": 0.0
+  },
+  {
+   "id": "2697085",
+   "role": "explained",
+   "unit": 2697085,
+   "best_word_r": 0.21620053052902222,
+   "n_strong": 0,
+   "twin": 45334,
+   "r_original": 0.2867,
+   "r_name_free": 0.0
+  },
+  {
+   "id": "2965",
+   "role": "explained",
+   "unit": 2965,
+   "best_word_r": 0.20353998243808746,
+   "n_strong": 0,
+   "twin": 578,
+   "r_original": 0.4596,
+   "r_name_free": 0.3003075346371704
+  },
+  {
+   "id": "317604",
+   "role": "explained",
+   "unit": 317604,
+   "best_word_r": 0.1818147897720337,
+   "n_strong": 1,
+   "twin": 849761,
+   "r_original": 0.3394,
+   "r_name_free": 0.18270773830458634
+  },
+  {
+   "id": "1633237",
+   "role": "explained",
+   "unit": 1633237,
+   "best_word_r": 0.3121780753135681,
+   "n_strong": 1,
+   "twin": 435221,
+   "r_original": 0.6134,
+   "r_name_free": 0.5244197144563193
+  },
+  {
+   "id": "51887",
+   "role": "explained",
+   "unit": 51887,
+   "best_word_r": 0.9373191595077515,
+   "n_strong": 16,
+   "twin": 2047,
+   "r_original": 0.9755,
+   "r_name_free": 0.9776005537122756
+  },
+  {
+   "id": "357872",
+   "role": "explained",
+   "unit": 357872,
+   "best_word_r": 0.4793168306350708,
+   "n_strong": 19,
+   "twin": 12316,
+   "r_original": 0.6854,
+   "r_name_free": 0.6971507085200969
+  },
+  {
+   "id": "496782",
+   "role": "explained",
+   "unit": 496782,
+   "best_word_r": 0.12394367903470993,
+   "n_strong": 0,
+   "twin": 169891,
+   "r_original": 0.2702,
+   "r_name_free": 0.269558935411739
+  },
+  {
+   "id": "552240",
+   "role": "explained",
+   "unit": 552240,
+   "best_word_r": 0.1325443685054779,
+   "n_strong": 6,
+   "twin": 614251,
+   "r_original": 0.3471,
+   "r_name_free": 0.2860942405812408
+  },
+  {
+   "id": "1120499",
+   "role": "explained",
+   "unit": 1120499,
+   "best_word_r": 0.4030284285545349,
+   "n_strong": 3,
+   "twin": 56435,
+   "r_original": 0.5114,
+   "r_name_free": 0.016584533029063035
+  },
+  {
+   "id": "1652692",
+   "role": "explained",
+   "unit": 1652692,
+   "best_word_r": 0.17392705380916595,
+   "n_strong": 7,
+   "twin": 867479,
+   "r_original": 0.2749,
+   "r_name_free": 0.06709121529768536
+  },
+  {
+   "id": "1880565",
+   "role": "explained",
+   "unit": 1880565,
+   "best_word_r": 0.23198164999485016,
+   "n_strong": 4,
+   "twin": 88067,
+   "r_original": 0.4022,
+   "r_name_free": 0.21603204602428813
+  },
+  {
+   "id": "1980491",
+   "role": "explained",
+   "unit": 1980491,
+   "best_word_r": 0.197700634598732,
+   "n_strong": 4,
+   "twin": 132406,
+   "r_original": 0.2678,
+   "r_name_free": 0.2388384440666807
+  },
+  {
+   "id": "3051398",
+   "role": "explained",
+   "unit": 3051398,
+   "best_word_r": 0.41181597113609314,
+   "n_strong": 385,
+   "twin": 363862,
+   "r_original": 0.7365,
+   "r_name_free": 0.47990611373863723
+  },
+  {
+   "id": "208075",
+   "role": "explained",
+   "unit": 208075,
+   "best_word_r": 0.6658914685249329,
+   "n_strong": 457,
+   "twin": 568990,
+   "r_original": 0.7078,
+   "r_name_free": 0.41585958170463105
+  },
+  {
+   "id": "1536542",
+   "role": "explained",
+   "unit": 1536542,
+   "best_word_r": 0.4321242570877075,
+   "n_strong": 255,
+   "twin": 363862,
+   "r_original": 0.7789,
+   "r_name_free": 0.5268135962724897
+  },
+  {
+   "id": "1543765",
+   "role": "explained",
+   "unit": 1543765,
+   "best_word_r": 0.3976496756076813,
+   "n_strong": 284,
+   "twin": 372323,
+   "r_original": 0.7186,
+   "r_name_free": 0.19571111290705115
+  },
+  {
+   "id": "833184",
+   "role": "explained",
+   "unit": 833184,
+   "best_word_r": 0.33571329712867737,
+   "n_strong": 156,
+   "twin": 829244,
+   "r_original": 0.6662,
+   "r_name_free": 0.1620800153227568
+  },
+  {
+   "id": "842440",
+   "role": "explained",
+   "unit": 842440,
+   "best_word_r": 0.44611239433288574,
+   "n_strong": 259,
+   "twin": 839470,
+   "r_original": 0.7438,
+   "r_name_free": 0.5564398562379301
+  },
+  {
+   "id": "3154013",
+   "role": "explained",
+   "unit": 3154013,
+   "best_word_r": 0.35925671458244324,
+   "n_strong": 229,
+   "twin": 379874,
+   "r_original": 0.7122,
+   "r_name_free": 0.35241336328695605
+  },
+  {
+   "id": "3147565",
+   "role": "explained",
+   "unit": 3147565,
+   "best_word_r": 0.3031659722328186,
+   "n_strong": 325,
+   "twin": 402677,
+   "r_original": 0.7001,
+   "r_name_free": 0.14567532825725663
+  },
+  {
+   "id": "2483435",
+   "role": "explained",
+   "unit": 2483435,
+   "best_word_r": 0.3656355142593384,
+   "n_strong": 280,
+   "twin": 565231,
+   "r_original": 0.6793,
+   "r_name_free": 0.2851276482559081
+  },
+  {
+   "id": "3005424",
+   "role": "explained",
+   "unit": 3005424,
+   "best_word_r": 0.3734911382198334,
+   "n_strong": 233,
+   "twin": 805859,
+   "r_original": 0.598,
+   "r_name_free": 0.2972847417109986
+  },
+  {
+   "id": "1006752",
+   "role": "explained",
+   "unit": 1006752,
+   "best_word_r": 0.3724982440471649,
+   "n_strong": 166,
+   "twin": 565231,
+   "r_original": 0.6261,
+   "r_name_free": 0.31261888285371864
+  },
+  {
+   "id": "427568",
+   "role": "explained",
+   "unit": 427568,
+   "best_word_r": 0.8048739433288574,
+   "n_strong": 188,
+   "twin": 156371,
+   "r_original": 0.8254,
+   "r_name_free": 0.40202601901996154
+  },
+  {
+   "id": "2306707",
+   "role": "explained",
+   "unit": 2306707,
+   "best_word_r": 0.3540247976779938,
+   "n_strong": 179,
+   "twin": 738215,
+   "r_original": 0.5619,
+   "r_name_free": 0.40561030636006346
+  },
+  {
+   "id": "1860920",
+   "role": "explained",
+   "unit": 1860920,
+   "best_word_r": 0.42289549112319946,
+   "n_strong": 127,
+   "twin": 131948,
+   "r_original": 0.6319,
+   "r_name_free": 0.1657805907324596
+  },
+  {
+   "id": "2853400",
+   "role": "explained",
+   "unit": 2853400,
+   "best_word_r": 0.45600923895835876,
+   "n_strong": 216,
+   "twin": 327575,
+   "r_original": 0.7125,
+   "r_name_free": 0.6119973182338071
+  },
+  {
+   "id": "1587002",
+   "role": "explained",
+   "unit": 1587002,
+   "best_word_r": 0.39491692185401917,
+   "n_strong": 137,
+   "twin": 372323,
+   "r_original": 0.6715,
+   "r_name_free": 0.19126755744757581
+  },
+  {
+   "id": "1651724",
+   "role": "explained",
+   "unit": 1651724,
+   "best_word_r": 0.8005936741828918,
+   "n_strong": 162,
+   "twin": 460110,
+   "r_original": 0.7769,
+   "r_name_free": 0.04164989962636206
+  },
+  {
+   "id": "3131221",
+   "role": "explained",
+   "unit": 3131221,
+   "best_word_r": 0.433470755815506,
+   "n_strong": 209,
+   "twin": 363862,
+   "r_original": 0.6921,
+   "r_name_free": 0.3718650707877272
+  },
+  {
+   "id": "1159446",
+   "role": "explained",
+   "unit": 1159446,
+   "best_word_r": 0.40348947048187256,
+   "n_strong": 76,
+   "twin": 698739,
+   "r_original": 0.6667,
+   "r_name_free": 0.5084974537579872
+  },
+  {
+   "id": "205442",
+   "role": "explained",
+   "unit": 205442,
+   "best_word_r": 0.4229465425014496,
+   "n_strong": 332,
+   "twin": 558852,
+   "r_original": 0.6574,
+   "r_name_free": 0.39366639072820325
+  },
+  {
+   "id": "3176308",
+   "role": "explained",
+   "unit": 3176308,
+   "best_word_r": 0.413015216588974,
+   "n_strong": 391,
+   "twin": 839470,
+   "r_original": 0.7093,
+   "r_name_free": 0.3052784134865521
+  },
+  {
+   "id": "1552347",
+   "role": "explained",
+   "unit": 1552347,
+   "best_word_r": 0.43447014689445496,
+   "n_strong": 233,
+   "twin": 839470,
+   "r_original": 0.6762,
+   "r_name_free": 0.2026728042653712
+  },
+  {
+   "id": "2079195",
+   "role": "explained",
+   "unit": 2079195,
+   "best_word_r": 0.22946052253246307,
+   "n_strong": 235,
+   "twin": 575490,
+   "r_original": 0.5319,
+   "r_name_free": 0.05661499457845063
+  },
+  {
+   "id": "3130157",
+   "role": "explained",
+   "unit": 3130157,
+   "best_word_r": 0.3627344071865082,
+   "n_strong": 467,
+   "twin": 839470,
+   "r_original": 0.7152,
+   "r_name_free": 0.27204008374213556
+  },
+  {
+   "id": "3190476",
+   "role": "explained",
+   "unit": 3190476,
+   "best_word_r": 0.3461171090602875,
+   "n_strong": 113,
+   "twin": 379874,
+   "r_original": 0.6023,
+   "r_name_free": 0.12547671417057535
+  },
+  {
+   "id": "1546344",
+   "role": "explained",
+   "unit": 1546344,
+   "best_word_r": 0.4420187473297119,
+   "n_strong": 341,
+   "twin": 829244,
+   "r_original": 0.7796,
+   "r_name_free": 0.24138078127525828
+  },
+  {
+   "id": "1485188",
+   "role": "explained",
+   "unit": 1485188,
+   "best_word_r": 0.3262903392314911,
+   "n_strong": 228,
+   "twin": 826562,
+   "r_original": 0.6412,
+   "r_name_free": 0.1355163357912542
+  },
+  {
+   "id": "1520757",
+   "role": "explained",
+   "unit": 1520757,
+   "best_word_r": 0.3983857333660126,
+   "n_strong": 314,
+   "twin": 363862,
+   "r_original": 0.7418,
+   "r_name_free": 0.3301744602256512
+  },
+  {
+   "id": "2396903",
+   "role": "explained",
+   "unit": 2396903,
+   "best_word_r": 0.5892568826675415,
+   "n_strong": 262,
+   "twin": 327575,
+   "r_original": 0.726,
+   "r_name_free": 0.5315118302338615
+  },
+  {
+   "id": "346100",
+   "role": "explained",
+   "unit": 346100,
+   "best_word_r": 0.47895821928977966,
+   "n_strong": 214,
+   "twin": 379403,
+   "r_original": 0.6167,
+   "r_name_free": 0.13101997548881114
+  },
+  {
+   "id": "1851670",
+   "role": "explained",
+   "unit": 1851670,
+   "best_word_r": 0.5057814121246338,
+   "n_strong": 555,
+   "twin": 565231,
+   "r_original": 0.7383,
+   "r_name_free": 0.2303396903416782
+  },
+  {
+   "id": "1861897",
+   "role": "explained",
+   "unit": 1861897,
+   "best_word_r": 0.5007856488227844,
+   "n_strong": 208,
+   "twin": 131948,
+   "r_original": 0.6803,
+   "r_name_free": 0.25171803230318807
+  },
+  {
+   "id": "3184941",
+   "role": "explained",
+   "unit": 3184941,
+   "best_word_r": 0.47404447197914124,
+   "n_strong": 254,
+   "twin": 363862,
+   "r_original": 0.7205,
+   "r_name_free": 0.28195913560168784
+  },
+  {
+   "id": "3046518",
+   "role": "explained",
+   "unit": 3046518,
+   "best_word_r": 0.2549349367618561,
+   "n_strong": 278,
+   "twin": 315315,
+   "r_original": 0.5921,
+   "r_name_free": 0.31583621953295
+  },
+  {
+   "id": "1516685",
+   "role": "explained",
+   "unit": 1516685,
+   "best_word_r": 0.27901285886764526,
+   "n_strong": 181,
+   "twin": 841482,
+   "r_original": 0.626,
+   "r_name_free": 0.13478813410414264
+  },
+  {
+   "id": "3154686",
+   "role": "explained",
+   "unit": 3154686,
+   "best_word_r": 0.3615230619907379,
+   "n_strong": 158,
+   "twin": 839470,
+   "r_original": 0.6831,
+   "r_name_free": 0.18695593931064375
+  },
+  {
+   "id": "1514566",
+   "role": "explained",
+   "unit": 1514566,
+   "best_word_r": 0.3259184658527374,
+   "n_strong": 277,
+   "twin": 803636,
+   "r_original": 0.6546,
+   "r_name_free": 0.1648293786427805
+  },
+  {
+   "id": "2625481",
+   "role": "explained",
+   "unit": 2625481,
+   "best_word_r": 0.399873822927475,
+   "n_strong": 148,
+   "twin": 565231,
+   "r_original": 0.5937,
+   "r_name_free": 0.08981352320215479
+  },
+  {
+   "id": "3060980",
+   "role": "explained",
+   "unit": 3060980,
+   "best_word_r": 0.29168686270713806,
+   "n_strong": 169,
+   "twin": 822732,
+   "r_original": 0.7101,
+   "r_name_free": 0.15791078625487345
+  },
+  {
+   "id": "1871585",
+   "role": "explained",
+   "unit": 1871585,
+   "best_word_r": 0.715556800365448,
+   "n_strong": 51,
+   "twin": 84130,
+   "r_original": 0.7354,
+   "r_name_free": 0.04717408270260521
+  },
+  {
+   "id": "9325",
+   "role": "explained",
+   "unit": 9325,
+   "best_word_r": 0.22161740064620972,
+   "n_strong": 166,
+   "twin": 453917,
+   "r_original": 0.2426,
+   "r_name_free": 0.2810819888778357
+  },
+  {
+   "id": "19352",
+   "role": "explained",
+   "unit": 19352,
+   "best_word_r": 0.3379080295562744,
+   "n_strong": 62,
+   "twin": 66651,
+   "r_original": 0.3295,
+   "r_name_free": -0.002923580935405556
+  },
+  {
+   "id": "394697",
+   "role": "explained",
+   "unit": 394697,
+   "best_word_r": 0.1062462255358696,
+   "n_strong": 72,
+   "twin": 284156,
+   "r_original": 0.2218,
+   "r_name_free": 0.22782877900809637
+  },
+  {
+   "id": "504207",
+   "role": "explained",
+   "unit": 504207,
+   "best_word_r": 0.16500020027160645,
+   "n_strong": 25,
+   "twin": 595521,
+   "r_original": 0.2575,
+   "r_name_free": 0.29034097463915287
+  },
+  {
+   "id": "515413",
+   "role": "explained",
+   "unit": 515413,
+   "best_word_r": 0.15689153969287872,
+   "n_strong": 6,
+   "twin": 275104,
+   "r_original": 0.5045,
+   "r_name_free": 0.5184049414290769
+  },
+  {
+   "id": "561621",
+   "role": "explained",
+   "unit": 561621,
+   "best_word_r": 0.13712087273597717,
+   "n_strong": 23,
+   "twin": 566322,
+   "r_original": 0.2473,
+   "r_name_free": 0.20696308963806678
+  },
+  {
+   "id": "920688",
+   "role": "explained",
+   "unit": 920688,
+   "best_word_r": 0.10491949319839478,
+   "n_strong": 91,
+   "twin": 137264,
+   "r_original": 0.1846,
+   "r_name_free": 0.18839159947309378
+  },
+  {
+   "id": "926177",
+   "role": "explained",
+   "unit": 926177,
+   "best_word_r": 0.3040250539779663,
+   "n_strong": 18,
+   "twin": 174541,
+   "r_original": 0.4571,
+   "r_name_free": 0.5171988822569851
+  },
+  {
+   "id": "1290289",
+   "role": "explained",
+   "unit": 1290289,
+   "best_word_r": 0.1333591639995575,
+   "n_strong": 45,
+   "twin": 254078,
+   "r_original": 0.2927,
+   "r_name_free": 0.2934584770850135
+  },
+  {
+   "id": "1295861",
+   "role": "explained",
+   "unit": 1295861,
+   "best_word_r": 0.12983053922653198,
+   "n_strong": 406,
+   "twin": 400603,
+   "r_original": 0.2571,
+   "r_name_free": 0.24736888546303945
+  },
+  {
+   "id": "1341224",
+   "role": "explained",
+   "unit": 1341224,
+   "best_word_r": 0.12607358396053314,
+   "n_strong": 234,
+   "twin": 356300,
+   "r_original": 0.2457,
+   "r_name_free": 0.2561983157582888
+  },
+  {
+   "id": "2065308",
+   "role": "explained",
+   "unit": 2065308,
+   "best_word_r": 0.21439974009990692,
+   "n_strong": 55,
+   "twin": 139637,
+   "r_original": 0.5235,
+   "r_name_free": 0.4097301452664098
+  },
+  {
+   "id": "2071506",
+   "role": "explained",
+   "unit": 2071506,
+   "best_word_r": 0.18753500282764435,
+   "n_strong": 25,
+   "twin": 277946,
+   "r_original": 0.2942,
+   "r_name_free": 0.28541182886197325
+  },
+  {
+   "id": "2251772",
+   "role": "explained",
+   "unit": 2251772,
+   "best_word_r": 0.13549724221229553,
+   "n_strong": 18,
+   "twin": 412390,
+   "r_original": 0.1995,
+   "r_name_free": 0.18658762094338455
+  },
+  {
+   "id": "2298898",
+   "role": "explained",
+   "unit": 2298898,
+   "best_word_r": 0.17327933013439178,
+   "n_strong": 25,
+   "twin": 290982,
+   "r_original": 0.3104,
+   "r_name_free": 0.35353454356535413
+  },
+  {
+   "id": "2495485",
+   "role": "explained",
+   "unit": 2495485,
+   "best_word_r": 0.4514344036579132,
+   "n_strong": 1,
+   "twin": 262448,
+   "r_original": 0.5325,
+   "r_name_free": 0.6004746036882056
+  },
+  {
+   "id": "2663170",
+   "role": "explained",
+   "unit": 2663170,
+   "best_word_r": 0.46574240922927856,
+   "n_strong": 58,
+   "twin": 809105,
+   "r_original": 0.5191,
+   "r_name_free": 0.19651458528372645
+  },
+  {
+   "id": "2667574",
+   "role": "explained",
+   "unit": 2667574,
+   "best_word_r": 0.2772643268108368,
+   "n_strong": 8,
+   "twin": 34624,
+   "r_original": 0.2363,
+   "r_name_free": 0.0
+  },
+  {
+   "id": "2880987",
+   "role": "explained",
+   "unit": 2880987,
+   "best_word_r": 0.10553216189146042,
+   "n_strong": 107,
+   "twin": 650048,
+   "r_original": 0.2508,
+   "r_name_free": 0.18301174278886437
+  },
+  {
+   "id": "2957052",
+   "role": "explained",
+   "unit": 2957052,
+   "best_word_r": 0.33403488993644714,
+   "n_strong": 29,
+   "twin": 727647,
+   "r_original": 0.7153,
+   "r_name_free": 0.77595832914729
+  },
+  {
+   "id": "318922",
+   "role": "explained",
+   "unit": 318922,
+   "best_word_r": 0.20493480563163757,
+   "n_strong": 35,
+   "twin": 566636,
+   "r_original": 0.3381,
+   "r_name_free": 0.37417585602075154
+  },
+  {
+   "id": "344071",
+   "role": "explained",
+   "unit": 344071,
+   "best_word_r": 0.48280030488967896,
+   "n_strong": 36,
+   "twin": 96675,
+   "r_original": 0.5557,
+   "r_name_free": 0.5579873222814826
+  },
+  {
+   "id": "453490",
+   "role": "explained",
+   "unit": 453490,
+   "best_word_r": 0.15397875010967255,
+   "n_strong": 49,
+   "twin": 136404,
+   "r_original": 0.1826,
+   "r_name_free": 0.1724212423215493
+  },
+  {
+   "id": "485574",
+   "role": "explained",
+   "unit": 485574,
+   "best_word_r": 0.36879998445510864,
+   "n_strong": 27,
+   "twin": 509686,
+   "r_original": 0.3892,
+   "r_name_free": 0.03722461344340539
+  },
+  {
+   "id": "1340707",
+   "role": "explained",
+   "unit": 1340707,
+   "best_word_r": 0.17776425182819366,
+   "n_strong": 9,
+   "twin": 254451,
+   "r_original": 0.4113,
+   "r_name_free": 0.43297742540339845
+  },
+  {
+   "id": "1405944",
+   "role": "explained",
+   "unit": 1405944,
+   "best_word_r": 0.21535605192184448,
+   "n_strong": 35,
+   "twin": 759618,
+   "r_original": 0.2879,
+   "r_name_free": 0.3829208742420556
+  },
+  {
+   "id": "1581948",
+   "role": "explained",
+   "unit": 1581948,
+   "best_word_r": 0.2898430824279785,
+   "n_strong": 43,
+   "twin": 841607,
+   "r_original": 0.8283,
+   "r_name_free": 0.8208693097660895
+  },
+  {
+   "id": "1847046",
+   "role": "explained",
+   "unit": 1847046,
+   "best_word_r": 0.23595315217971802,
+   "n_strong": 7,
+   "twin": 69718,
+   "r_original": 0.4048,
+   "r_name_free": 0.4174920900463074
+  },
+  {
+   "id": "1867375",
+   "role": "explained",
+   "unit": 1867375,
+   "best_word_r": 0.2268613874912262,
+   "n_strong": 5,
+   "twin": 110836,
+   "r_original": 0.2461,
+   "r_name_free": 0.21322609364523104
+  },
+  {
+   "id": "1952331",
+   "role": "explained",
+   "unit": 1952331,
+   "best_word_r": 0.1606016457080841,
+   "n_strong": 16,
+   "twin": 390004,
+   "r_original": 0.2745,
+   "r_name_free": 0.2806922013116636
+  },
+  {
+   "id": "2063681",
+   "role": "explained",
+   "unit": 2063681,
+   "best_word_r": 0.11895238608121872,
+   "n_strong": 12,
+   "twin": 647773,
+   "r_original": 0.2421,
+   "r_name_free": 0.21749445116768662
+  },
+  {
+   "id": "2277703",
+   "role": "explained",
+   "unit": 2277703,
+   "best_word_r": 0.20082785189151764,
+   "n_strong": 9,
+   "twin": 798367,
+   "r_original": 0.2222,
+   "r_name_free": 0.23295684612647233
+  },
+  {
+   "id": "2296861",
+   "role": "explained",
+   "unit": 2296861,
+   "best_word_r": 0.14142757654190063,
+   "n_strong": 47,
+   "twin": 170729,
+   "r_original": 0.2463,
+   "r_name_free": 0.22952566197421378
+  },
+  {
+   "id": "2321679",
+   "role": "explained",
+   "unit": 2321679,
+   "best_word_r": 0.33378952741622925,
+   "n_strong": 41,
+   "twin": 687994,
+   "r_original": 0.3156,
+   "r_name_free": 0.32021681514265876
+  },
+  {
+   "id": "2372268",
+   "role": "explained",
+   "unit": 2372268,
+   "best_word_r": 0.24560876190662384,
+   "n_strong": 7,
+   "twin": 263152,
+   "r_original": 0.2909,
+   "r_name_free": 0.2758890041317317
+  },
+  {
+   "id": "2375398",
+   "role": "explained",
+   "unit": 2375398,
+   "best_word_r": 0.28419381380081177,
+   "n_strong": 4,
+   "twin": 77300,
+   "r_original": 0.4974,
+   "r_name_free": 0.5363933435807295
+  },
+  {
+   "id": "2524311",
+   "role": "explained",
+   "unit": 2524311,
+   "best_word_r": 0.19686782360076904,
+   "n_strong": 21,
+   "twin": 126149,
+   "r_original": 0.4157,
+   "r_name_free": 0.4236576294837685
+  },
+  {
+   "id": "2562846",
+   "role": "explained",
+   "unit": 2562846,
+   "best_word_r": 0.21757130324840546,
+   "n_strong": 9,
+   "twin": 292312,
+   "r_original": 0.4405,
+   "r_name_free": 0.46350276677765545
+  },
+  {
+   "id": "2830013",
+   "role": "explained",
+   "unit": 2830013,
+   "best_word_r": 0.15147268772125244,
+   "n_strong": 33,
+   "twin": 723278,
+   "r_original": 0.3452,
+   "r_name_free": 0.4088564779157475
+  },
+  {
+   "id": "2950589",
+   "role": "explained",
+   "unit": 2950589,
+   "best_word_r": 0.30427202582359314,
+   "n_strong": 8,
+   "twin": 286727,
+   "r_original": 0.5049,
+   "r_name_free": 0.5623685003333065
+  }
+ ]
+}

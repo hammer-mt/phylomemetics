@@ -1,0 +1,39 @@
+{
+ "what": "placeholder codes in the name-free texts (whole summaries)",
+ "groups": {
+  "batman_works": {
+   "n": 32,
+   "code_occurrences_median": 105.5,
+   "distinct_codes_median": 34.5,
+   "words_median": 629.5,
+   "codes_per_100_words_median": 16.14
+  },
+  "hero_films": {
+   "n": 8,
+   "code_occurrences_median": 70.5,
+   "distinct_codes_median": 29.0,
+   "words_median": 522.5,
+   "codes_per_100_words_median": 13.01
+  },
+  "literary_relatives": {
+   "n": 5,
+   "code_occurrences_median": 72.0,
+   "distinct_codes_median": 29.0,
+   "words_median": 581.0,
+   "codes_per_100_words_median": 12.58
+  },
+  "ordinary_films": {
+   "n": 69,
+   "code_occurrences_median": 75.0,
+   "distinct_codes_median": 23.0,
+   "words_median": 617.0,
+   "codes_per_100_words_median": 12.68
+  }
+ },
+ "auc_batman_works_against_hero_films": {
+  "code_occurrences": 0.880859375,
+  "distinct_codes": 0.775390625,
+  "codes_per_word": 0.7421875,
+  "words": 0.78515625
+ }
+}
