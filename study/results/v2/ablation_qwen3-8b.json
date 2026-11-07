@@ -1,0 +1,1274 @@
+{
+ "model": "qwen3-8b",
+ "design": {
+  "model": "qwen3-8b",
+  "n_sets": 200,
+  "nearest": 20,
+  "canon_units_in_any_fold": 88,
+  "canon_units_all32": 75,
+  "fold_canon_size_median": 78.0,
+  "canon_units_name_free_works_mean": 2.0113636363636362,
+  "canon_summed_mean_peak_share": 9.998437881469727,
+  "canon_summed_mean_peak_activation": 422.7923278808594,
+  "controls": {
+   "any": {
+    "n_sets": 200,
+    "partners_name_free_works_mean": 2.006590909090909,
+    "summed_mean_peak_share": {
+     "mean": 8.488805770874023,
+     "min": 7.5618743896484375,
+     "max": 9.398905754089355,
+     "sets_at_or_above_the_canon": 0
+    },
+    "summed_mean_peak_activation": {
+     "mean": 239.02548217773438,
+     "max": 300.5133056640625,
+     "sets_at_or_above_the_canon": 0
+    },
+    "partner_gap_in_works_mean": 0.014886363636363637,
+    "partner_gap_in_works_p90": 0.0,
+    "partners_base_rate_median": 0.01633877959319773,
+    "distinct_partners_per_canon_unit_median": 195.5
+   },
+   "magnitude": {
+    "n_sets": 200,
+    "partners_name_free_works_mean": 1.983125,
+    "summed_mean_peak_share": {
+     "mean": 9.995268821716309,
+     "min": 9.657032012939453,
+     "max": 10.279687881469727,
+     "sets_at_or_above_the_canon": 89
+    },
+    "summed_mean_peak_activation": {
+     "mean": 384.803466796875,
+     "max": 416.33209228515625,
+     "sets_at_or_above_the_canon": 0
+    },
+    "partner_gap_in_works_mean": 0.22482954545454545,
+    "partner_gap_in_works_p90": 1.0,
+    "partners_base_rate_median": 0.02867622540846949,
+    "distinct_partners_per_canon_unit_median": 35.0
+   },
+   "distinctive": {
+    "n_sets": 50,
+    "partners_name_free_works_mean": 1.1868181818181818,
+    "summed_mean_peak_share": {
+     "mean": 6.19978141784668,
+     "min": 5.801249980926514,
+     "max": 6.864531517028809,
+     "sets_at_or_above_the_canon": 0
+    },
+    "summed_mean_peak_activation": {
+     "mean": 217.6566162109375,
+     "max": 252.59042358398438,
+     "sets_at_or_above_the_canon": 0
+    },
+    "partner_gap_in_works_mean": 0.8481818181818181,
+    "partner_gap_in_works_p90": 3.0,
+    "partners_base_rate_median": 0.008336112037345782,
+    "distinct_partners_per_canon_unit_median": 49.0
+   }
+  },
+  "canon_base_rate_median": 0.013837945981993997,
+  "canon_units_by_layer_quarter": {
+   "q1": 14,
+   "q2": 26,
+   "q3": 5,
+   "q4": 43
+  },
+  "secondaries": "every position, original texts, strong firings only, weak activity only: the canon and the first 20 sets of the two matched controls"
+ },
+ "story_tokens_name_free": {
+  "where": "story",
+  "n_batman_works": 32,
+  "n_hero_films": 7,
+  "untouched_logp_batman_median": -0.7105272511239998,
+  "matched_random_sets": {
+   "n_sets": 200,
+   "smallest_possible_p": 0.004975124378109453,
+   "mean_drop_canon": 1.3304144113111005,
+   "mean_drop_random_sets_mean": 0.03337705897982491,
+   "mean_drop_random_sets_max": 0.1127876570861474,
+   "random_sets_at_least_canon": 0,
+   "p": 0.004975124378109453,
+   "activation_removed": {
+    "canon": 8366.45,
+    "sets_mean": 3531.2889765625005,
+    "sets_min": 2238.7268750000003,
+    "sets_max": 7171.2334375,
+    "sets_removing_at_least_as_much": 0
+   },
+   "drop_per_unit_of_activation_removed": {
+    "canon": 0.00015901779264934355,
+    "sets_mean": 9.923093304153e-06,
+    "sets_at_least_canon": 0
+   },
+   "works_where_canon_beats_every_set": 26,
+   "works_where_canon_beats_the_median_set": 28,
+   "rank_of_canon_among_sets_by_work": {
+    "1943 serial": 1,
+    "Batman '66": 1,
+    "Dark Knight Returns": 133,
+    "Year One": 1,
+    "The Killing Joke": 88,
+    "A Death in the Family": 1,
+    "Gotham by Gaslight": 81,
+    "Arkham Asylum (comic)": 1,
+    "Batman '89": 1,
+    "Batman Returns": 1,
+    "Mask of the Phantasm": 1,
+    "Knightfall": 201,
+    "Batman Forever": 1,
+    "The Long Halloween": 1,
+    "Batman & Robin": 1,
+    "Return of the Joker": 1,
+    "Hush": 1,
+    "Batman Begins": 1,
+    "The Dark Knight": 1,
+    "Batman R.I.P.": 1,
+    "Arkham Asylum (game)": 1,
+    "Under the Red Hood": 1,
+    "Arkham City": 201,
+    "Dark Knight Rises": 1,
+    "Earth One": 1,
+    "Arkham Knight": 1,
+    "Batman v Superman": 1,
+    "Lego Batman": 1,
+    "White Knight": 1,
+    "Batman Ninja": 1,
+    "Joker (2019)": 201,
+    "The Batman": 1
+   }
+  },
+  "magnitude_matched_random_sets": {
+   "n_sets": 200,
+   "smallest_possible_p": 0.004975124378109453,
+   "mean_drop_canon": 1.3304144113111005,
+   "mean_drop_random_sets_mean": 0.033243679194981154,
+   "mean_drop_random_sets_max": 0.12187407874192949,
+   "random_sets_at_least_canon": 0,
+   "p": 0.004975124378109453,
+   "activation_removed": {
+    "canon": 8366.45,
+    "sets_mean": 4933.391576562501,
+    "sets_min": 3334.530625,
+    "sets_max": 7463.891562499999,
+    "sets_removing_at_least_as_much": 0
+   },
+   "drop_per_unit_of_activation_removed": {
+    "canon": 0.00015901779264934355,
+    "sets_mean": 7.022652549966517e-06,
+    "sets_at_least_canon": 0
+   },
+   "works_where_canon_beats_every_set": 26,
+   "works_where_canon_beats_the_median_set": 28,
+   "rank_of_canon_among_sets_by_work": {
+    "1943 serial": 1,
+    "Batman '66": 1,
+    "Dark Knight Returns": 142,
+    "Year One": 1,
+    "The Killing Joke": 98,
+    "A Death in the Family": 1,
+    "Gotham by Gaslight": 96,
+    "Arkham Asylum (comic)": 1,
+    "Batman '89": 1,
+    "Batman Returns": 1,
+    "Mask of the Phantasm": 1,
+    "Knightfall": 201,
+    "Batman Forever": 1,
+    "The Long Halloween": 1,
+    "Batman & Robin": 1,
+    "Return of the Joker": 1,
+    "Hush": 1,
+    "Batman Begins": 1,
+    "The Dark Knight": 1,
+    "Batman R.I.P.": 1,
+    "Arkham Asylum (game)": 1,
+    "Under the Red Hood": 1,
+    "Arkham City": 201,
+    "Dark Knight Rises": 1,
+    "Earth One": 1,
+    "Arkham Knight": 1,
+    "Batman v Superman": 1,
+    "Lego Batman": 1,
+    "White Knight": 1,
+    "Batman Ninja": 1,
+    "Joker (2019)": 201,
+    "The Batman": 1
+   }
+  },
+  "distinctive_random_sets": {
+   "n_sets": 50,
+   "smallest_possible_p": 0.0196078431372549,
+   "mean_drop_canon": 1.3304144113111005,
+   "mean_drop_random_sets_mean": 0.0288294827870277,
+   "mean_drop_random_sets_max": 0.09325492648104822,
+   "random_sets_at_least_canon": 0,
+   "p": 0.0196078431372549,
+   "activation_removed": {
+    "canon": 8366.45,
+    "sets_mean": 2417.00845,
+    "sets_min": 1487.21125,
+    "sets_max": 3842.8778125,
+    "sets_removing_at_least_as_much": 0
+   },
+   "drop_per_unit_of_activation_removed": {
+    "canon": 0.00015901779264934355,
+    "sets_mean": 1.3230562379288046e-05,
+    "sets_at_least_canon": 0
+   },
+   "works_where_canon_beats_every_set": 26,
+   "works_where_canon_beats_the_median_set": 28,
+   "rank_of_canon_among_sets_by_work": {
+    "1943 serial": 1,
+    "Batman '66": 1,
+    "Dark Knight Returns": 35,
+    "Year One": 1,
+    "The Killing Joke": 19,
+    "A Death in the Family": 1,
+    "Gotham by Gaslight": 16,
+    "Arkham Asylum (comic)": 1,
+    "Batman '89": 1,
+    "Batman Returns": 1,
+    "Mask of the Phantasm": 1,
+    "Knightfall": 51,
+    "Batman Forever": 1,
+    "The Long Halloween": 1,
+    "Batman & Robin": 1,
+    "Return of the Joker": 1,
+    "Hush": 1,
+    "Batman Begins": 1,
+    "The Dark Knight": 1,
+    "Batman R.I.P.": 1,
+    "Arkham Asylum (game)": 1,
+    "Under the Red Hood": 1,
+    "Arkham City": 51,
+    "Dark Knight Rises": 1,
+    "Earth One": 1,
+    "Arkham Knight": 1,
+    "Batman v Superman": 1,
+    "Lego Batman": 1,
+    "White Knight": 1,
+    "Batman Ninja": 1,
+    "Joker (2019)": 51,
+    "The Batman": 1
+   }
+  },
+  "scored_in": "log-odds of the hero's names (PLAN.md Section 18, change 16); the registered log-probability form is given beside it",
+  "registered_form_drop_in_log_probability": {
+   "matched_random_sets": {
+    "n_sets": 200,
+    "smallest_possible_p": 0.004975124378109453,
+    "mean_drop_canon": 0.4420294659674201,
+    "mean_drop_random_sets_mean": 0.010735110892015948,
+    "mean_drop_random_sets_max": 0.07417596370639432,
+    "random_sets_at_least_canon": 0,
+    "p": 0.004975124378109453,
+    "activation_removed": {
+     "canon": 8366.45,
+     "sets_mean": 3531.2889765625005,
+     "sets_min": 2238.7268750000003,
+     "sets_max": 7171.2334375,
+     "sets_removing_at_least_as_much": 0
+    },
+    "drop_per_unit_of_activation_removed": {
+     "canon": 5.283357528789631e-05,
+     "sets_mean": 3.2184773181148016e-06,
+     "sets_at_least_canon": 0
+    },
+    "works_where_canon_beats_every_set": 26,
+    "works_where_canon_beats_the_median_set": 28,
+    "rank_of_canon_among_sets_by_work": {
+     "1943 serial": 1,
+     "Batman '66": 1,
+     "Dark Knight Returns": 133,
+     "Year One": 1,
+     "The Killing Joke": 88,
+     "A Death in the Family": 1,
+     "Gotham by Gaslight": 81,
+     "Arkham Asylum (comic)": 1,
+     "Batman '89": 1,
+     "Batman Returns": 1,
+     "Mask of the Phantasm": 1,
+     "Knightfall": 201,
+     "Batman Forever": 1,
+     "The Long Halloween": 1,
+     "Batman & Robin": 1,
+     "Return of the Joker": 1,
+     "Hush": 1,
+     "Batman Begins": 1,
+     "The Dark Knight": 1,
+     "Batman R.I.P.": 1,
+     "Arkham Asylum (game)": 1,
+     "Under the Red Hood": 1,
+     "Arkham City": 201,
+     "Dark Knight Rises": 1,
+     "Earth One": 1,
+     "Arkham Knight": 1,
+     "Batman v Superman": 1,
+     "Lego Batman": 1,
+     "White Knight": 1,
+     "Batman Ninja": 1,
+     "Joker (2019)": 201,
+     "The Batman": 1
+    }
+   },
+   "magnitude_matched_random_sets": {
+    "n_sets": 200,
+    "smallest_possible_p": 0.004975124378109453,
+    "mean_drop_canon": 0.4420294659674201,
+    "mean_drop_random_sets_mean": 0.00527411637981523,
+    "mean_drop_random_sets_max": 0.06983025879033462,
+    "random_sets_at_least_canon": 0,
+    "p": 0.004975124378109453,
+    "activation_removed": {
+     "canon": 8366.45,
+     "sets_mean": 4933.391576562501,
+     "sets_min": 3334.530625,
+     "sets_max": 7463.891562499999,
+     "sets_removing_at_least_as_much": 0
+    },
+    "drop_per_unit_of_activation_removed": {
+     "canon": 5.283357528789631e-05,
+     "sets_mean": 1.1358702190606497e-06,
+     "sets_at_least_canon": 0
+    },
+    "works_where_canon_beats_every_set": 26,
+    "works_where_canon_beats_the_median_set": 28,
+    "rank_of_canon_among_sets_by_work": {
+     "1943 serial": 1,
+     "Batman '66": 1,
+     "Dark Knight Returns": 142,
+     "Year One": 1,
+     "The Killing Joke": 98,
+     "A Death in the Family": 1,
+     "Gotham by Gaslight": 96,
+     "Arkham Asylum (comic)": 1,
+     "Batman '89": 1,
+     "Batman Returns": 1,
+     "Mask of the Phantasm": 1,
+     "Knightfall": 201,
+     "Batman Forever": 1,
+     "The Long Halloween": 1,
+     "Batman & Robin": 1,
+     "Return of the Joker": 1,
+     "Hush": 1,
+     "Batman Begins": 1,
+     "The Dark Knight": 1,
+     "Batman R.I.P.": 1,
+     "Arkham Asylum (game)": 1,
+     "Under the Red Hood": 1,
+     "Arkham City": 201,
+     "Dark Knight Rises": 1,
+     "Earth One": 1,
+     "Arkham Knight": 1,
+     "Batman v Superman": 1,
+     "Lego Batman": 1,
+     "White Knight": 1,
+     "Batman Ninja": 1,
+     "Joker (2019)": 201,
+     "The Batman": 1
+    }
+   }
+  },
+  "mean_drop_where_the_untouched_model_names_batman": 2.0679770636867163,
+  "mean_drop_where_it_does_not": 0.1011433240184088,
+  "untouched_replies_that_do_not_start_with_a_name": 1,
+  "canon_ablated_reply_still_says_batman": 16,
+  "untouched_reply_says_batman": 20,
+  "specificity": {
+   "mean_drop_batman_works": 1.3304144113111005,
+   "mean_drop_hero_films_own_hero": 0.7982600491598522,
+   "difference": 0.5321543621512483,
+   "p_one_sided": 0.27947205279472054,
+   "hero_films_matched_random_sets": {
+    "n_sets": 200,
+    "smallest_possible_p": 0.004975124378109453,
+    "mean_drop_canon": 0.7982600491598522,
+    "mean_drop_random_sets_mean": -0.03525025042559529,
+    "mean_drop_random_sets_max": 0.10992335412755071,
+    "random_sets_at_least_canon": 0,
+    "p": 0.004975124378109453,
+    "activation_removed": {
+     "canon": 6731.981428571428,
+     "sets_mean": 2619.523178571428,
+     "sets_min": 1687.8300000000002,
+     "sets_max": 5245.124285714286,
+     "sets_removing_at_least_as_much": 0
+    },
+    "drop_per_unit_of_activation_removed": {
+     "canon": 0.00011857728034898163,
+     "sets_mean": -1.4205143827263703e-05,
+     "sets_at_least_canon": 0
+    },
+    "works_where_canon_beats_every_set": 4,
+    "works_where_canon_beats_the_median_set": 4,
+    "rank_of_canon_among_sets_by_work": {
+     "Zorro": 201,
+     "The Shadow": 1,
+     "Superman": 201,
+     "Spider-Man": 1,
+     "Daredevil": 1,
+     "Iron Man": 1,
+     "Green Hornet": 201
+    }
+   },
+   "drop_by_hero_film": {
+    "Zorro": -0.5035709644330826,
+    "The Shadow": 2.160039731222785,
+    "Superman": -0.38422359071835444,
+    "Spider-Man": 3.776709258629581,
+    "Daredevil": 0.6908939360353195,
+    "Iron Man": 0.471707990161085,
+    "Green Hornet": -0.6237360167783681
+   }
+  },
+  "by_work": {
+   "1943 serial": {
+    "untouched": -1.9877473524348739,
+    "drop_canon": 0.8594589022532126,
+    "drop_random_mean": -0.08048853161710498,
+    "reply": "Flash Gordon",
+    "reply_canon_off": "Buck Rogers"
+   },
+   "Batman '66": {
+    "untouched": -3.1689291125325285,
+    "drop_canon": 3.199748501742789,
+    "drop_random_mean": -0.04179965027009446,
+    "reply": "X-Men",
+    "reply_canon_off": "James Bond"
+   },
+   "Dark Knight Returns": {
+    "untouched": -0.3178678178087171,
+    "drop_canon": 0.02562776472374706,
+    "drop_random_mean": 0.07726414841360423,
+    "reply": "Batman",
+    "reply_canon_off": "Batman"
+   },
+   "Year One": {
+    "untouched": -0.0001986953009999841,
+    "drop_canon": 4.175534033033281,
+    "drop_random_mean": 0.031382104567686496,
+    "reply": "Batman",
+    "reply_canon_off": "Batman"
+   },
+   "The Killing Joke": {
+    "untouched": -6.236699822262722,
+    "drop_canon": -0.07760664869848011,
+    "drop_random_mean": -0.08271234074469945,
+    "reply": "The Joker",
+    "reply_canon_off": "The Joker"
+   },
+   "A Death in the Family": {
+    "untouched": -0.13325546585407114,
+    "drop_canon": 1.310316785505879,
+    "drop_random_mean": 0.06357400505715663,
+    "reply": "Batman",
+    "reply_canon_off": "Batman"
+   },
+   "Gotham by Gaslight": {
+    "untouched": -0.5588128946416402,
+    "drop_canon": -0.06667534027328847,
+    "drop_random_mean": -0.08111454687371439,
+    "reply": "Batman",
+    "reply_canon_off": "Batman"
+   },
+   "Arkham Asylum (comic)": {
+    "untouched": -1.0176987893024354,
+    "drop_canon": 2.1591378159976546,
+    "drop_random_mean": 0.030475698587593546,
+    "reply": "Batman",
+    "reply_canon_off": "Pinocchio"
+   },
+   "Batman '89": {
+    "untouched": -0.9060105200154767,
+    "drop_canon": 1.0573355911806086,
+    "drop_random_mean": 0.1659904359145331,
+    "reply": "The Batman",
+    "reply_canon_off": "The story is about **Batman**."
+   },
+   "Batman Returns": {
+    "untouched": -0.0035253157216132793,
+    "drop_canon": 2.739549775576346,
+    "drop_random_mean": 0.2290772042133275,
+    "reply": "Batman",
+    "reply_canon_off": "Batman"
+   },
+   "Mask of the Phantasm": {
+    "untouched": -0.022850387947580465,
+    "drop_canon": 2.344903340130356,
+    "drop_random_mean": -0.03807446559077601,
+    "reply": "Batman",
+    "reply_canon_off": "Batman"
+   },
+   "Knightfall": {
+    "untouched": -4.950835090414152,
+    "drop_canon": -5.946521832915957,
+    "drop_random_mean": 0.035315429590127345,
+    "reply": "Wolverine",
+    "reply_canon_off": "Batman"
+   },
+   "Batman Forever": {
+    "untouched": -0.012650170350952247,
+    "drop_canon": 2.292187940937783,
+    "drop_random_mean": -0.09863680010098545,
+    "reply": "Batman",
+    "reply_canon_off": "Batman"
+   },
+   "The Long Halloween": {
+    "untouched": -1.217814038906768,
+    "drop_canon": 0.7020901889651303,
+    "drop_random_mean": -0.15413585927054166,
+    "reply": "Daredevil",
+    "reply_canon_off": "Dashiell Hammett"
+   },
+   "Batman & Robin": {
+    "untouched": -0.7244016268338731,
+    "drop_canon": 0.96276254522054,
+    "drop_random_mean": 0.06306482484868042,
+    "reply": "Batman",
+    "reply_canon_off": "Spider-Man"
+   },
+   "Return of the Joker": {
+    "untouched": -1.0997569019929883,
+    "drop_canon": 1.1392970614564646,
+    "drop_random_mean": 0.005971462529796272,
+    "reply": "Spider-Man",
+    "reply_canon_off": "Spider-Man"
+   },
+   "Hush": {
+    "untouched": -0.03992980245681094,
+    "drop_canon": 1.4424943182849956,
+    "drop_random_mean": 0.08858239765978115,
+    "reply": "Batman",
+    "reply_canon_off": "Batman"
+   },
+   "Batman Begins": {
+    "untouched": -0.08977869623685175,
+    "drop_canon": 2.8095011064794626,
+    "drop_random_mean": 0.09236866150678966,
+    "reply": "Batman",
+    "reply_canon_off": "Batman"
+   },
+   "The Dark Knight": {
+    "untouched": -2.2620003326136158,
+    "drop_canon": 0.6270984311982364,
+    "drop_random_mean": -0.24088595396137735,
+    "reply": "Dashiell Hammett",
+    "reply_canon_off": "Dashiell Hammett"
+   },
+   "Batman R.I.P.": {
+    "untouched": -0.2628851121397092,
+    "drop_canon": 1.7653853171168417,
+    "drop_random_mean": 0.13199591301832034,
+    "reply": "Batman",
+    "reply_canon_off": "Superman"
+   },
+   "Arkham Asylum (game)": {
+    "untouched": -1.2044024961082638,
+    "drop_canon": 0.8220211337819061,
+    "drop_random_mean": 0.069405558506358,
+    "reply": "Spider-Man",
+    "reply_canon_off": "Rambo"
+   },
+   "Under the Red Hood": {
+    "untouched": -0.021792390618507934,
+    "drop_canon": 7.778762532552289,
+    "drop_random_mean": 0.1375765855371951,
+    "reply": "Batman",
+    "reply_canon_off": "John Wick"
+   },
+   "Arkham City": {
+    "untouched": -13.625725353891395,
+    "drop_canon": -5.952630659840264,
+    "drop_random_mean": 0.16110854108671968,
+    "reply": "Wolverine",
+    "reply_canon_off": "Wolverine"
+   },
+   "Dark Knight Rises": {
+    "untouched": -0.03460971287686007,
+    "drop_canon": 1.57283874365048,
+    "drop_random_mean": -0.007881322556683959,
+    "reply": "Batman",
+    "reply_canon_off": "Batman"
+   },
+   "Earth One": {
+    "untouched": -0.00025912913482437126,
+    "drop_canon": 3.6140890144628637,
+    "drop_random_mean": 0.021177092593512588,
+    "reply": "Batman",
+    "reply_canon_off": "Batman"
+   },
+   "Arkham Knight": {
+    "untouched": -0.6992831065571934,
+    "drop_canon": 1.3382268328890459,
+    "drop_random_mean": 0.01232032526164346,
+    "reply": "Batman",
+    "reply_canon_off": "Batman"
+   },
+   "Batman v Superman": {
+    "untouched": -1.6498595133500396,
+    "drop_canon": 3.4819224074711195,
+    "drop_random_mean": 0.04260056030858871,
+    "reply": "Superman",
+    "reply_canon_off": "Superman"
+   },
+   "Lego Batman": {
+    "untouched": -0.7217713956908063,
+    "drop_canon": 1.7084259673010789,
+    "drop_random_mean": 0.009426468099138541,
+    "reply": "Batman",
+    "reply_canon_off": "Superman"
+   },
+   "White Knight": {
+    "untouched": -0.3057517658073872,
+    "drop_canon": 1.613152180937844,
+    "drop_random_mean": 0.07341426766122729,
+    "reply": "The Batman",
+    "reply_canon_off": "The story is about **Batman**."
+   },
+   "Batman Ninja": {
+    "untouched": -4.062045709177748,
+    "drop_canon": 3.178369980883706,
+    "drop_random_mean": 0.14231643773691752,
+    "reply": "Spider-Man",
+    "reply_canon_off": "Teenage Mutant Ninja Turtles"
+   },
+   "Joker (2019)": {
+    "untouched": -13.37350018778729,
+    "drop_canon": -0.8195275780769578,
+    "drop_random_mean": 0.16564761294364175,
+    "reply": "Joker",
+    "reply_canon_off": "Joker"
+   },
+   "The Batman": {
+    "untouched": -0.30021963657909545,
+    "drop_canon": 0.7159850080265048,
+    "drop_random_mean": 0.04373962269803542,
+    "reply": "Batman",
+    "reply_canon_off": "Batman"
+   },
+   "Zorro": {
+    "untouched": -0.0020875394973756674,
+    "drop_canon": -0.5035709644330826,
+    "drop_random_mean": 0.04502422513556631,
+    "reply": "Zorro",
+    "reply_canon_off": "Zorro"
+   },
+   "The Shadow": {
+    "untouched": -7.577756771000682,
+    "drop_canon": 2.160039731222785,
+    "drop_random_mean": -0.2173198681392846,
+    "reply": "Batman",
+    "reply_canon_off": "Zorro"
+   },
+   "Superman": {
+    "untouched": -0.7646542249995052,
+    "drop_canon": -0.38422359071835444,
+    "drop_random_mean": -0.06698802457463936,
+    "reply": "Spider-Man",
+    "reply_canon_off": "Superman"
+   },
+   "Spider-Man": {
+    "untouched": -1.230572858066017e-05,
+    "drop_canon": 3.776709258629581,
+    "drop_random_mean": 0.05324265135126291,
+    "reply": "Spider-Man",
+    "reply_canon_off": "Spider-Man"
+   },
+   "Daredevil": {
+    "untouched": -5.283033937097582,
+    "drop_canon": 0.6908939360353195,
+    "drop_random_mean": -0.016332900370659563,
+    "reply": "Batman",
+    "reply_canon_off": "Batman"
+   },
+   "Iron Man": {
+    "untouched": -0.000248043416147733,
+    "drop_canon": 0.471707990161085,
+    "drop_random_mean": -0.09485009044038034,
+    "reply": "Iron Man",
+    "reply_canon_off": "Iron Man"
+   },
+   "Green Hornet": {
+    "untouched": -15.069527213050817,
+    "drop_canon": -0.6237360167783681,
+    "drop_random_mean": 0.05047225405896761,
+    "reply": "Batman",
+    "reply_canon_off": "Batman"
+   }
+  }
+ },
+ "every_position_name_free": {
+  "where": "all",
+  "n_batman_works": 32,
+  "n_hero_films": 7,
+  "untouched_logp_batman_median": -0.7105272511239998,
+  "matched_random_sets": {
+   "n_sets": 20,
+   "smallest_possible_p": 0.047619047619047616,
+   "mean_drop_canon": 5.104946462193851,
+   "mean_drop_random_sets_mean": 0.04147202858668554,
+   "mean_drop_random_sets_max": 0.49392084160323757,
+   "random_sets_at_least_canon": 0,
+   "p": 0.047619047619047616,
+   "activation_removed": {
+    "canon": 9074.8384375,
+    "sets_mean": 3627.8640156249994,
+    "sets_min": 2880.025625,
+    "sets_max": 4994.2543749999995,
+    "sets_removing_at_least_as_much": 0
+   },
+   "drop_per_unit_of_activation_removed": {
+    "canon": 0.0005625385506698009,
+    "sets_mean": 1.2351448829399518e-05,
+    "sets_at_least_canon": 0
+   },
+   "works_where_canon_beats_every_set": 29,
+   "works_where_canon_beats_the_median_set": 29,
+   "rank_of_canon_among_sets_by_work": {
+    "1943 serial": 1,
+    "Batman '66": 1,
+    "Dark Knight Returns": 1,
+    "Year One": 1,
+    "The Killing Joke": 1,
+    "A Death in the Family": 1,
+    "Gotham by Gaslight": 1,
+    "Arkham Asylum (comic)": 1,
+    "Batman '89": 1,
+    "Batman Returns": 1,
+    "Mask of the Phantasm": 1,
+    "Knightfall": 21,
+    "Batman Forever": 1,
+    "The Long Halloween": 1,
+    "Batman & Robin": 1,
+    "Return of the Joker": 1,
+    "Hush": 1,
+    "Batman Begins": 1,
+    "The Dark Knight": 1,
+    "Batman R.I.P.": 1,
+    "Arkham Asylum (game)": 1,
+    "Under the Red Hood": 1,
+    "Arkham City": 21,
+    "Dark Knight Rises": 1,
+    "Earth One": 1,
+    "Arkham Knight": 1,
+    "Batman v Superman": 1,
+    "Lego Batman": 1,
+    "White Knight": 1,
+    "Batman Ninja": 1,
+    "Joker (2019)": 20,
+    "The Batman": 1
+   }
+  },
+  "magnitude_matched_random_sets": {
+   "n_sets": 20,
+   "smallest_possible_p": 0.047619047619047616,
+   "mean_drop_canon": 5.104946462193851,
+   "mean_drop_random_sets_mean": 0.015352867679037435,
+   "mean_drop_random_sets_max": 0.10739885384115838,
+   "random_sets_at_least_canon": 0,
+   "p": 0.047619047619047616,
+   "activation_removed": {
+    "canon": 9074.8384375,
+    "sets_mean": 5077.863984375001,
+    "sets_min": 4047.4959374999994,
+    "sets_max": 7238.0865625,
+    "sets_removing_at_least_as_much": 0
+   },
+   "drop_per_unit_of_activation_removed": {
+    "canon": 0.0005625385506698009,
+    "sets_mean": 3.514366283637885e-06,
+    "sets_at_least_canon": 0
+   },
+   "works_where_canon_beats_every_set": 29,
+   "works_where_canon_beats_the_median_set": 29,
+   "rank_of_canon_among_sets_by_work": {
+    "1943 serial": 1,
+    "Batman '66": 1,
+    "Dark Knight Returns": 1,
+    "Year One": 1,
+    "The Killing Joke": 1,
+    "A Death in the Family": 1,
+    "Gotham by Gaslight": 1,
+    "Arkham Asylum (comic)": 1,
+    "Batman '89": 1,
+    "Batman Returns": 1,
+    "Mask of the Phantasm": 1,
+    "Knightfall": 21,
+    "Batman Forever": 1,
+    "The Long Halloween": 1,
+    "Batman & Robin": 1,
+    "Return of the Joker": 1,
+    "Hush": 1,
+    "Batman Begins": 1,
+    "The Dark Knight": 1,
+    "Batman R.I.P.": 1,
+    "Arkham Asylum (game)": 1,
+    "Under the Red Hood": 1,
+    "Arkham City": 21,
+    "Dark Knight Rises": 1,
+    "Earth One": 1,
+    "Arkham Knight": 1,
+    "Batman v Superman": 1,
+    "Lego Batman": 1,
+    "White Knight": 1,
+    "Batman Ninja": 1,
+    "Joker (2019)": 21,
+    "The Batman": 1
+   }
+  },
+  "distinctive_random_sets": null,
+  "scored_in": "log-odds of the hero's names (PLAN.md Section 18, change 16); the registered log-probability form is given beside it",
+  "registered_form_drop_in_log_probability": {
+   "matched_random_sets": {
+    "n_sets": 20,
+    "smallest_possible_p": 0.047619047619047616,
+    "mean_drop_canon": 3.4241586227519463,
+    "mean_drop_random_sets_mean": 0.013899109518025029,
+    "mean_drop_random_sets_max": 0.2576092278948815,
+    "random_sets_at_least_canon": 0,
+    "p": 0.047619047619047616,
+    "activation_removed": {
+     "canon": 9074.8384375,
+     "sets_mean": 3627.8640156249994,
+     "sets_min": 2880.025625,
+     "sets_max": 4994.2543749999995,
+     "sets_removing_at_least_as_much": 0
+    },
+    "drop_per_unit_of_activation_removed": {
+     "canon": 0.00037732447209222795,
+     "sets_mean": 4.23045796267379e-06,
+     "sets_at_least_canon": 0
+    },
+    "works_where_canon_beats_every_set": 29,
+    "works_where_canon_beats_the_median_set": 29,
+    "rank_of_canon_among_sets_by_work": {
+     "1943 serial": 1,
+     "Batman '66": 1,
+     "Dark Knight Returns": 1,
+     "Year One": 1,
+     "The Killing Joke": 1,
+     "A Death in the Family": 1,
+     "Gotham by Gaslight": 1,
+     "Arkham Asylum (comic)": 1,
+     "Batman '89": 1,
+     "Batman Returns": 1,
+     "Mask of the Phantasm": 1,
+     "Knightfall": 21,
+     "Batman Forever": 1,
+     "The Long Halloween": 1,
+     "Batman & Robin": 1,
+     "Return of the Joker": 1,
+     "Hush": 1,
+     "Batman Begins": 1,
+     "The Dark Knight": 1,
+     "Batman R.I.P.": 1,
+     "Arkham Asylum (game)": 1,
+     "Under the Red Hood": 1,
+     "Arkham City": 21,
+     "Dark Knight Rises": 1,
+     "Earth One": 1,
+     "Arkham Knight": 1,
+     "Batman v Superman": 1,
+     "Lego Batman": 1,
+     "White Knight": 1,
+     "Batman Ninja": 1,
+     "Joker (2019)": 20,
+     "The Batman": 1
+    }
+   },
+   "magnitude_matched_random_sets": {
+    "n_sets": 20,
+    "smallest_possible_p": 0.047619047619047616,
+    "mean_drop_canon": 3.4241586227519463,
+    "mean_drop_random_sets_mean": -0.00012734357142130462,
+    "mean_drop_random_sets_max": 0.0782374868665031,
+    "random_sets_at_least_canon": 0,
+    "p": 0.047619047619047616,
+    "activation_removed": {
+     "canon": 9074.8384375,
+     "sets_mean": 5077.863984375001,
+     "sets_min": 4047.4959374999994,
+     "sets_max": 7238.0865625,
+     "sets_removing_at_least_as_much": 0
+    },
+    "drop_per_unit_of_activation_removed": {
+     "canon": 0.00037732447209222795,
+     "sets_mean": 2.3301303838583423e-07,
+     "sets_at_least_canon": 0
+    },
+    "works_where_canon_beats_every_set": 29,
+    "works_where_canon_beats_the_median_set": 29,
+    "rank_of_canon_among_sets_by_work": {
+     "1943 serial": 1,
+     "Batman '66": 1,
+     "Dark Knight Returns": 1,
+     "Year One": 1,
+     "The Killing Joke": 1,
+     "A Death in the Family": 1,
+     "Gotham by Gaslight": 1,
+     "Arkham Asylum (comic)": 1,
+     "Batman '89": 1,
+     "Batman Returns": 1,
+     "Mask of the Phantasm": 1,
+     "Knightfall": 21,
+     "Batman Forever": 1,
+     "The Long Halloween": 1,
+     "Batman & Robin": 1,
+     "Return of the Joker": 1,
+     "Hush": 1,
+     "Batman Begins": 1,
+     "The Dark Knight": 1,
+     "Batman R.I.P.": 1,
+     "Arkham Asylum (game)": 1,
+     "Under the Red Hood": 1,
+     "Arkham City": 21,
+     "Dark Knight Rises": 1,
+     "Earth One": 1,
+     "Arkham Knight": 1,
+     "Batman v Superman": 1,
+     "Lego Batman": 1,
+     "White Knight": 1,
+     "Batman Ninja": 1,
+     "Joker (2019)": 21,
+     "The Batman": 1
+    }
+   }
+  },
+  "mean_drop_where_the_untouched_model_names_batman": 6.582565447430615,
+  "mean_drop_where_it_does_not": 2.64224815346591,
+  "untouched_replies_that_do_not_start_with_a_name": 1,
+  "canon_ablated_reply_still_says_batman": 2,
+  "untouched_reply_says_batman": 20,
+  "specificity": {
+   "mean_drop_batman_works": 5.104946462193851,
+   "mean_drop_hero_films_own_hero": 2.0634410500129166,
+   "difference": 3.0415054121809346,
+   "p_one_sided": 0.015198480151984802,
+   "hero_films_matched_random_sets": {
+    "n_sets": 20,
+    "smallest_possible_p": 0.047619047619047616,
+    "mean_drop_canon": 2.0634410500129166,
+    "mean_drop_random_sets_mean": -0.028693212210460155,
+    "mean_drop_random_sets_max": 0.17206093063164554,
+    "random_sets_at_least_canon": 0,
+    "p": 0.047619047619047616,
+    "activation_removed": {
+     "canon": 7408.45,
+     "sets_mean": 2731.5462857142857,
+     "sets_min": 2100.8957142857143,
+     "sets_max": 3660.1442857142856,
+     "sets_removing_at_least_as_much": 0
+    },
+    "drop_per_unit_of_activation_removed": {
+     "canon": 0.00027852533931023584,
+     "sets_mean": -1.1335826784783913e-05,
+     "sets_at_least_canon": 0
+    },
+    "works_where_canon_beats_every_set": 6,
+    "works_where_canon_beats_the_median_set": 6,
+    "rank_of_canon_among_sets_by_work": {
+     "Zorro": 21,
+     "The Shadow": 1,
+     "Superman": 1,
+     "Spider-Man": 1,
+     "Daredevil": 1,
+     "Iron Man": 1,
+     "Green Hornet": 1
+    }
+   },
+   "drop_by_hero_film": {
+    "Zorro": -1.138011279534119,
+    "The Shadow": 3.3751695253494702,
+    "Superman": 1.8639776621493174,
+    "Spider-Man": 4.1180732445378485,
+    "Daredevil": 3.0425655164890646,
+    "Iron Man": 1.0674439011145305,
+    "Green Hornet": 2.114868779984306
+   }
+  },
+  "by_work": {
+   "1943 serial": {
+    "untouched": -1.9877473524348739,
+    "drop_canon": 2.756898288005488,
+    "drop_random_mean": -0.005060768155904183,
+    "reply": "Flash Gordon",
+    "reply_canon_off": "Buck Rogers"
+   },
+   "Batman '66": {
+    "untouched": -3.1689291125325285,
+    "drop_canon": 5.9098413966416805,
+    "drop_random_mean": -0.03165656375380495,
+    "reply": "X-Men",
+    "reply_canon_off": "James Bond"
+   },
+   "Dark Knight Returns": {
+    "untouched": -0.3178678178087171,
+    "drop_canon": 4.484454557337011,
+    "drop_random_mean": 0.06887639340103639,
+    "reply": "Batman",
+    "reply_canon_off": "Walter White from *Breaking Bad*"
+   },
+   "Year One": {
+    "untouched": -0.0001986953009999841,
+    "drop_canon": 8.020968245076482,
+    "drop_random_mean": 0.020588180634957976,
+    "reply": "Batman",
+    "reply_canon_off": "Batman"
+   },
+   "The Killing Joke": {
+    "untouched": -6.236699822262722,
+    "drop_canon": 2.058447899614638,
+    "drop_random_mean": -0.08816062706297174,
+    "reply": "The Joker",
+    "reply_canon_off": "Pinocchio"
+   },
+   "A Death in the Family": {
+    "untouched": -0.13325546585407114,
+    "drop_canon": 6.376326123291736,
+    "drop_random_mean": 0.10573898092393678,
+    "reply": "Batman",
+    "reply_canon_off": "James Bond"
+   },
+   "Gotham by Gaslight": {
+    "untouched": -0.5588128946416402,
+    "drop_canon": 3.682842156943966,
+    "drop_random_mean": -0.0616170356264951,
+    "reply": "Batman",
+    "reply_canon_off": "Sherlock Holmes"
+   },
+   "Arkham Asylum (comic)": {
+    "untouched": -1.0176987893024354,
+    "drop_canon": 5.815844027190054,
+    "drop_random_mean": 0.03895229846214679,
+    "reply": "Batman",
+    "reply_canon_off": "Pinocchio"
+   },
+   "Batman '89": {
+    "untouched": -0.9060105200154767,
+    "drop_canon": 2.676469350543523,
+    "drop_random_mean": 0.11708802764823949,
+    "reply": "The Batman",
+    "reply_canon_off": "Frankenstein"
+   },
+   "Batman Returns": {
+    "untouched": -0.0035253157216132793,
+    "drop_canon": 7.664763798611066,
+    "drop_random_mean": 0.3378638895692962,
+    "reply": "Batman",
+    "reply_canon_off": "Sherlock Holmes"
+   },
+   "Mask of the Phantasm": {
+    "untouched": -0.022850387947580465,
+    "drop_canon": 6.169690724103493,
+    "drop_random_mean": -0.06005709215254287,
+    "reply": "Batman",
+    "reply_canon_off": "Homer Simpson"
+   },
+   "Knightfall": {
+    "untouched": -4.950835090414152,
+    "drop_canon": -2.277911630790542,
+    "drop_random_mean": 0.10818964303039266,
+    "reply": "Wolverine",
+    "reply_canon_off": "Spider-Man"
+   },
+   "Batman Forever": {
+    "untouched": -0.012650170350952247,
+    "drop_canon": 8.722669047533014,
+    "drop_random_mean": -0.10676244561732215,
+    "reply": "Batman",
+    "reply_canon_off": "Sherlock Holmes"
+   },
+   "The Long Halloween": {
+    "untouched": -1.217814038906768,
+    "drop_canon": 3.4864848616960735,
+    "drop_random_mean": -0.16929521026585911,
+    "reply": "Daredevil",
+    "reply_canon_off": "Scooby-Doo"
+   },
+   "Batman & Robin": {
+    "untouched": -0.7244016268338731,
+    "drop_canon": 5.10212765163628,
+    "drop_random_mean": 0.07256440781582825,
+    "reply": "Batman",
+    "reply_canon_off": "Spider-Man"
+   },
+   "Return of the Joker": {
+    "untouched": -1.0997569019929883,
+    "drop_canon": 5.762612244650254,
+    "drop_random_mean": 0.09258845604209119,
+    "reply": "Spider-Man",
+    "reply_canon_off": "Spider-Man"
+   },
+   "Hush": {
+    "untouched": -0.03992980245681094,
+    "drop_canon": 9.44290488618417,
+    "drop_random_mean": 0.15816061543617438,
+    "reply": "Batman",
+    "reply_canon_off": "James Bond"
+   },
+   "Batman Begins": {
+    "untouched": -0.08977869623685175,
+    "drop_canon": 7.673629501240731,
+    "drop_random_mean": 0.11220440500540692,
+    "reply": "Batman",
+    "reply_canon_off": "Jack Sparrow"
+   },
+   "The Dark Knight": {
+    "untouched": -2.2620003326136158,
+    "drop_canon": 4.0406819435626655,
+    "drop_random_mean": -0.23585142179103222,
+    "reply": "Dashiell Hammett",
+    "reply_canon_off": "Dashiell Hammett"
+   },
+   "Batman R.I.P.": {
+    "untouched": -0.2628851121397092,
+    "drop_canon": 6.715222721727782,
+    "drop_random_mean": 0.15165972430934901,
+    "reply": "Batman",
+    "reply_canon_off": "Pinocchio"
+   },
+   "Arkham Asylum (game)": {
+    "untouched": -1.2044024961082638,
+    "drop_canon": 4.791748168122714,
+    "drop_random_mean": 0.004659937970641121,
+    "reply": "Spider-Man",
+    "reply_canon_off": "Rambo"
+   },
+   "Under the Red Hood": {
+    "untouched": -0.021792390618507934,
+    "drop_canon": 12.565664338252828,
+    "drop_random_mean": 0.10393803908616998,
+    "reply": "Batman",
+    "reply_canon_off": "John Wick"
+   },
+   "Arkham City": {
+    "untouched": -13.625725353891395,
+    "drop_canon": -4.519573922542369,
+    "drop_random_mean": 0.08740874488012729,
+    "reply": "Wolverine",
+    "reply_canon_off": "Wolverine"
+   },
+   "Dark Knight Rises": {
+    "untouched": -0.03460971287686007,
+    "drop_canon": 7.068443514404898,
+    "drop_random_mean": 0.025749352927874038,
+    "reply": "Batman",
+    "reply_canon_off": "James Bond"
+   },
+   "Earth One": {
+    "untouched": -0.00025912913482437126,
+    "drop_canon": 7.348223703732137,
+    "drop_random_mean": -0.002003140604730813,
+    "reply": "Batman",
+    "reply_canon_off": "Batman"
+   },
+   "Arkham Knight": {
+    "untouched": -0.6992831065571934,
+    "drop_canon": 4.961851686061513,
+    "drop_random_mean": -0.02029468382858532,
+    "reply": "Batman",
+    "reply_canon_off": "Max Payne"
+   },
+   "Batman v Superman": {
+    "untouched": -1.6498595133500396,
+    "drop_canon": 6.283312841933121,
+    "drop_random_mean": 0.03550625696313102,
+    "reply": "Superman",
+    "reply_canon_off": "Superman"
+   },
+   "Lego Batman": {
+    "untouched": -0.7217713956908063,
+    "drop_canon": 4.1844713841175,
+    "drop_random_mean": 0.010255309372835936,
+    "reply": "Batman",
+    "reply_canon_off": "Superman"
+   },
+   "White Knight": {
+    "untouched": -0.3057517658073872,
+    "drop_canon": 6.2710734358877405,
+    "drop_random_mean": 0.1110561510182571,
+    "reply": "The Batman",
+    "reply_canon_off": "Sherlock Holmes"
+   },
+   "Batman Ninja": {
+    "untouched": -4.062045709177748,
+    "drop_canon": 4.022195572164056,
+    "drop_random_mean": 0.14819312099789766,
+    "reply": "Spider-Man",
+    "reply_canon_off": "Naruto"
+   },
+   "Joker (2019)": {
+    "untouched": -13.37350018778729,
+    "drop_canon": -0.6077598214668569,
+    "drop_random_mean": 0.13132629252555308,
+    "reply": "Joker",
+    "reply_canon_off": "Joker"
+   },
+   "The Batman": {
+    "untouched": -0.30021963657909545,
+    "drop_canon": 6.703668094736374,
+    "drop_random_mean": 0.06529567561184221,
+    "reply": "Batman",
+    "reply_canon_off": "Sherlock Holmes"
+   },
+   "Zorro": {
+    "untouched": -0.0020875394973756674,
+    "drop_canon": -1.138011279534119,
+    "drop_random_mean": 0.09888146513184148,
+    "reply": "Zorro",
+    "reply_canon_off": "Zorro"
+   },
+   "The Shadow": {
+    "untouched": -7.577756771000682,
+    "drop_canon": 3.3751695253494702,
+    "drop_random_mean": -0.2292356537249794,
+    "reply": "Batman",
+    "reply_canon_off": "Zorro"
+   },
+   "Superman": {
+    "untouched": -0.7646542249995052,
+    "drop_canon": 1.8639776621493174,
+    "drop_random_mean": -0.018198410437868035,
+    "reply": "Spider-Man",
+    "reply_canon_off": "Spider-Man"
+   },
+   "Spider-Man": {
+    "untouched": -1.230572858066017e-05,
+    "drop_canon": 4.1180732445378485,
+    "drop_random_mean": 0.02528267738017096,
+    "reply": "Spider-Man",
+    "reply_canon_off": "Spider-Man"
+   },
+   "Daredevil": {
+    "untouched": -5.283033937097582,
+    "drop_canon": 3.0425655164890646,
+    "drop_random_mean": 0.03131417908558083,
+    "reply": "Batman",
+    "reply_canon_off": "Blade Runner"
+   },
+   "Iron Man": {
+    "untouched": -0.000248043416147733,
+    "drop_canon": 1.0674439011145305,
+    "drop_random_mean": -0.10463369289454087,
+    "reply": "Iron Man",
+    "reply_canon_off": "Iron Man"
+   },
+   "Green Hornet": {
+    "untouched": -15.069527213050817,
+    "drop_canon": 2.114868779984306,
+    "drop_random_mean": -0.004263050013426107,
+    "reply": "Batman",
+    "reply_canon_off": "Jack Bauer"
+   }
+  }
+ },
+ "criterion": {
+  "p_against_sets_matched_on_works": 0.004975124378109453,
+  "p_against_sets_also_matched_on_activity": 0.004975124378109453,
+  "specificity_p": 0.27947205279472054,
+  "evaluable_with_this_question": true,
+  "met": false
+ }
+}

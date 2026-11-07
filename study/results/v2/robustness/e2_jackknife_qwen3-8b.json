@@ -1,0 +1,3413 @@
+{
+ "spec": "primary: strongest sentence at least 30% of scale, every unit (no base-rate cap), band 2-16, hub on, time rule on, best source; p exact unless noted",
+ "cells": {
+  "anon": {
+   "n_optional_units": 105147,
+   "primary": {
+    "n_adaptations": 9,
+    "share": 0.07716,
+    "null_joint_mean": 0.48329,
+    "p_joint": 0.0001823793490460157,
+    "null_era_mean": 0.38671,
+    "p_era": 0.002777777777777778,
+    "null_swap_mean": 0.4153,
+    "p_swap": 0.00019290123456790122
+   },
+   "contributions": [
+    {
+     "target": "Batman Begins",
+     "sources": [
+      "Year One"
+     ],
+     "share": 0.125,
+     "rank": 2,
+     "n_compared": 9,
+     "null_expected_share": 0.5046,
+     "marginal_p": 0.1667,
+     "z_by_comic": {
+      "Dark Knight Returns": 0.814,
+      "Year One": 1.143,
+      "The Killing Joke": 0.769,
+      "A Death in the Family": 0.979,
+      "Gotham by Gaslight": 1.388,
+      "Arkham Asylum (comic)": 0.897,
+      "Knightfall": 0.41,
+      "The Long Halloween": 0.989,
+      "Hush": 0.595
+     }
+    },
+    {
+     "target": "The Dark Knight",
+     "sources": [
+      "The Long Halloween",
+      "The Killing Joke"
+     ],
+     "share": 0.125,
+     "rank": 2,
+     "n_compared": 10,
+     "null_expected_share": 0.3924,
+     "marginal_p": 0.3182,
+     "z_by_comic": {
+      "Dark Knight Returns": -0.218,
+      "Year One": 0.382,
+      "The Killing Joke": 0.175,
+      "A Death in the Family": 0.113,
+      "Gotham by Gaslight": 0.075,
+      "Arkham Asylum (comic)": 0.107,
+      "Knightfall": -0.673,
+      "The Long Halloween": 0.065,
+      "Hush": -0.215,
+      "Batman R.I.P.": -0.27
+     }
+    },
+    {
+     "target": "Dark Knight Rises",
+     "sources": [
+      "Knightfall",
+      "Dark Knight Returns"
+     ],
+     "share": 0.2222,
+     "rank": 3,
+     "n_compared": 11,
+     "null_expected_share": 0.3566,
+     "marginal_p": 0.4545,
+     "z_by_comic": {
+      "Dark Knight Returns": -0.651,
+      "Year One": -0.444,
+      "The Killing Joke": -1.19,
+      "A Death in the Family": -0.809,
+      "Gotham by Gaslight": -0.737,
+      "Arkham Asylum (comic)": -1.136,
+      "Knightfall": -0.701,
+      "The Long Halloween": -0.728,
+      "Hush": -0.975,
+      "Batman R.I.P.": -0.72,
+      "Earth One": -0.467
+     }
+    },
+    {
+     "target": "Batman v Superman",
+     "sources": [
+      "Dark Knight Returns"
+     ],
+     "share": 0.0,
+     "rank": 1,
+     "n_compared": 11,
+     "null_expected_share": 0.5265,
+     "marginal_p": 0.0833,
+     "z_by_comic": {
+      "Dark Knight Returns": 0.469,
+      "Year One": -0.144,
+      "The Killing Joke": 0.175,
+      "A Death in the Family": 0.141,
+      "Gotham by Gaslight": -0.229,
+      "Arkham Asylum (comic)": -0.039,
+      "Knightfall": -0.141,
+      "The Long Halloween": -0.355,
+      "Hush": -0.298,
+      "Batman R.I.P.": 0.176,
+      "Earth One": -0.067
+     }
+    },
+    {
+     "target": "Under the Red Hood",
+     "sources": [
+      "A Death in the Family"
+     ],
+     "share": 0.0,
+     "rank": 1,
+     "n_compared": 10,
+     "null_expected_share": 0.5417,
+     "marginal_p": 0.0833,
+     "z_by_comic": {
+      "Dark Knight Returns": -0.005,
+      "Year One": 0.454,
+      "The Killing Joke": 0.347,
+      "A Death in the Family": 0.58,
+      "Gotham by Gaslight": 0.169,
+      "Arkham Asylum (comic)": 0.449,
+      "Knightfall": -0.411,
+      "The Long Halloween": 0.067,
+      "Hush": 0.126,
+      "Batman R.I.P.": 0.348
+     }
+    },
+    {
+     "target": "Arkham Asylum (game)",
+     "sources": [
+      "Arkham Asylum (comic)"
+     ],
+     "share": 0.2222,
+     "rank": 3,
+     "n_compared": 10,
+     "null_expected_share": 0.5,
+     "marginal_p": 0.25,
+     "z_by_comic": {
+      "Dark Knight Returns": 0.943,
+      "Year One": 0.636,
+      "The Killing Joke": 0.825,
+      "A Death in the Family": 0.886,
+      "Gotham by Gaslight": 0.7,
+      "Arkham Asylum (comic)": 1.031,
+      "Knightfall": 1.476,
+      "The Long Halloween": 0.72,
+      "Hush": 1.246,
+      "Batman R.I.P.": 0.824
+     }
+    },
+    {
+     "target": "Batman '89",
+     "sources": [
+      "The Killing Joke"
+     ],
+     "share": 0.0,
+     "rank": 1,
+     "n_compared": 6,
+     "null_expected_share": 0.6944,
+     "marginal_p": 0.0833,
+     "z_by_comic": {
+      "Dark Knight Returns": 1.283,
+      "Year One": 1.539,
+      "The Killing Joke": 1.661,
+      "A Death in the Family": 1.614,
+      "Gotham by Gaslight": 1.491,
+      "Arkham Asylum (comic)": 1.397
+     }
+    },
+    {
+     "target": "Joker (2019)",
+     "sources": [
+      "The Killing Joke"
+     ],
+     "share": 0.0,
+     "rank": 1,
+     "n_compared": 12,
+     "null_expected_share": 0.5,
+     "marginal_p": 0.0833,
+     "z_by_comic": {
+      "Dark Knight Returns": 1.266,
+      "Year One": 1.786,
+      "The Killing Joke": 2.402,
+      "A Death in the Family": 1.772,
+      "Gotham by Gaslight": 1.963,
+      "Arkham Asylum (comic)": 1.888,
+      "Knightfall": 0.758,
+      "The Long Halloween": 1.506,
+      "Hush": 1.082,
+      "Batman R.I.P.": 1.839,
+      "Earth One": 1.897,
+      "White Knight": 1.101
+     }
+    },
+    {
+     "target": "The Batman",
+     "sources": [
+      "Year One",
+      "The Long Halloween"
+     ],
+     "share": 0.0,
+     "rank": 1,
+     "n_compared": 12,
+     "null_expected_share": 0.3333,
+     "marginal_p": 0.1667,
+     "z_by_comic": {
+      "Dark Knight Returns": -0.523,
+      "Year One": 0.217,
+      "The Killing Joke": -0.439,
+      "A Death in the Family": 0.12,
+      "Gotham by Gaslight": 0.277,
+      "Arkham Asylum (comic)": 0.005,
+      "Knightfall": -1.006,
+      "The Long Halloween": 0.411,
+      "Hush": -0.083,
+      "Batman R.I.P.": -0.417,
+      "Earth One": -0.01,
+      "White Knight": -0.634
+     }
+    }
+   ],
+   "batch_check": {
+    "n_within_batch": 62,
+    "n_across": 166,
+    "rate_within": 0.1835,
+    "rate_across": 0.1844,
+    "z_within": 0.0494,
+    "z_across": 0.1559
+   },
+   "leave1_adaptations_out": {
+    "Batman Begins": {
+     "n_adaptations": 8,
+     "share": 0.07118,
+     "null_joint_mean": 0.48062,
+     "p_joint": 0.0003246753246753247,
+     "null_era_mean": 0.38557,
+     "p_era": 0.001388888888888889,
+     "null_swap_mean": 0.41444,
+     "p_swap": 0.000744047619047619
+    },
+    "The Dark Knight": {
+     "n_adaptations": 8,
+     "share": 0.07118,
+     "null_joint_mean": 0.49464,
+     "p_joint": 0.00016158609908609907,
+     "null_era_mean": 0.39339,
+     "p_era": 0.002777777777777778,
+     "null_swap_mean": 0.45149,
+     "p_swap": 0.000248015873015873
+    },
+    "Dark Knight Rises": {
+     "n_adaptations": 8,
+     "share": 0.05903,
+     "null_joint_mean": 0.49913,
+     "p_joint": 0.00016684704184704186,
+     "null_era_mean": 0.39339,
+     "p_era": 0.002777777777777778,
+     "null_swap_mean": 0.37144,
+     "p_swap": 0.000248015873015873
+    },
+    "Batman v Superman": {
+     "n_adaptations": 8,
+     "share": 0.08681,
+     "null_joint_mean": 0.47788,
+     "p_joint": 0.0008928571428571428,
+     "null_era_mean": 0.38505,
+     "p_era": 0.00625,
+     "null_swap_mean": 0.39795,
+     "p_swap": 0.001488095238095238
+    },
+    "Under the Red Hood": {
+     "n_adaptations": 8,
+     "share": 0.08681,
+     "null_joint_mean": 0.47599,
+     "p_joint": 0.0008778258778258778,
+     "null_era_mean": 0.38876,
+     "p_era": 0.004166666666666667,
+     "null_swap_mean": 0.41943,
+     "p_swap": 0.0014384920634920636
+    },
+    "Arkham Asylum (game)": {
+     "n_adaptations": 8,
+     "share": 0.05903,
+     "null_joint_mean": 0.4812,
+     "p_joint": 0.0001908970658970659,
+     "null_era_mean": 0.36329,
+     "p_era": 0.005555555555555556,
+     "null_swap_mean": 0.39432,
+     "p_swap": 0.000496031746031746
+    },
+    "Batman '89": {
+     "n_adaptations": 8,
+     "share": 0.08681,
+     "null_joint_mean": 0.45689,
+     "p_joint": 0.00020868406285072953,
+     "null_era_mean": 0.37255,
+     "p_era": 0.002777777777777778,
+     "null_swap_mean": 0.40705,
+     "p_swap": 0.0006944444444444445
+    },
+    "Joker (2019)": {
+     "n_adaptations": 8,
+     "share": 0.08681,
+     "null_joint_mean": 0.4812,
+     "p_joint": 0.00018688872855539523,
+     "null_era_mean": 0.39149,
+     "p_era": 0.002777777777777778,
+     "null_swap_mean": 0.41486,
+     "p_swap": 0.0006696428571428571
+    },
+    "The Batman": {
+     "n_adaptations": 8,
+     "share": 0.08681,
+     "null_joint_mean": 0.50203,
+     "p_joint": 0.00030112634279300945,
+     "null_era_mean": 0.40693,
+     "p_era": 0.004166666666666667,
+     "null_swap_mean": 0.41918,
+     "p_swap": 0.0005456349206349206
+    }
+   },
+   "leave2_adaptations_out": {
+    "Batman Begins + The Dark Knight": {
+     "n_adaptations": 7,
+     "share": 0.06349,
+     "null_joint_mean": 0.49322,
+     "p_joint": 0.0003051346801346801,
+     "null_era_mean": 0.39304,
+     "p_era": 0.001388888888888889,
+     "null_swap_mean": 0.45032,
+     "p_swap": 0.0011904761904761906
+    },
+    "Batman Begins + Dark Knight Rises": {
+     "n_adaptations": 7,
+     "share": 0.0496,
+     "null_joint_mean": 0.49834,
+     "p_joint": 0.0003021284271284271,
+     "null_era_mean": 0.39304,
+     "p_era": 0.001388888888888889,
+     "null_swap_mean": 0.35451,
+     "p_swap": 0.0015873015873015873
+    },
+    "Batman Begins + Batman v Superman": {
+     "n_adaptations": 7,
+     "share": 0.08135,
+     "null_joint_mean": 0.47406,
+     "p_joint": 0.0016769881353214686,
+     "null_era_mean": 0.38351,
+     "p_era": 0.005555555555555556,
+     "null_swap_mean": 0.4016,
+     "p_swap": 0.004365079365079365
+    },
+    "Batman Begins + Under the Red Hood": {
+     "n_adaptations": 7,
+     "share": 0.08135,
+     "null_joint_mean": 0.4719,
+     "p_joint": 0.0015918109668109667,
+     "null_era_mean": 0.38775,
+     "p_era": 0.004166666666666667,
+     "null_swap_mean": 0.41253,
+     "p_swap": 0.005158730158730159
+    },
+    "Batman Begins + Arkham Asylum (game)": {
+     "n_adaptations": 7,
+     "share": 0.0496,
+     "null_joint_mean": 0.47785,
+     "p_joint": 0.00032768157768157767,
+     "null_era_mean": 0.35865,
+     "p_era": 0.004166666666666667,
+     "null_swap_mean": 0.40043,
+     "p_swap": 0.0031746031746031746
+    },
+    "Batman Begins + Batman '89": {
+     "n_adaptations": 7,
+     "share": 0.08135,
+     "null_joint_mean": 0.45007,
+     "p_joint": 0.00037077120410453746,
+     "null_era_mean": 0.36923,
+     "p_era": 0.001388888888888889,
+     "null_swap_mean": 0.40991,
+     "p_swap": 0.0021825396825396826
+    },
+    "Batman Begins + Joker (2019)": {
+     "n_adaptations": 7,
+     "share": 0.08135,
+     "null_joint_mean": 0.47785,
+     "p_joint": 0.0003284331409331409,
+     "null_era_mean": 0.39087,
+     "p_era": 0.001388888888888889,
+     "null_swap_mean": 0.42123,
+     "p_swap": 0.0021825396825396826
+    },
+    "Batman Begins + The Batman": {
+     "n_adaptations": 7,
+     "share": 0.08135,
+     "null_joint_mean": 0.50166,
+     "p_joint": 0.0007726070226070226,
+     "null_era_mean": 0.40851,
+     "p_era": 0.002777777777777778,
+     "null_swap_mean": 0.40892,
+     "p_swap": 0.002380952380952381
+    },
+    "The Dark Knight + Dark Knight Rises": {
+     "n_adaptations": 7,
+     "share": 0.0496,
+     "null_joint_mean": 0.51437,
+     "p_joint": 0.0001427970177970178,
+     "null_era_mean": 0.40197,
+     "p_era": 0.002777777777777778,
+     "null_swap_mean": 0.41753,
+     "p_swap": 0.0003968253968253968
+    },
+    "The Dark Knight + Batman v Superman": {
+     "n_adaptations": 7,
+     "share": 0.08135,
+     "null_joint_mean": 0.49009,
+     "p_joint": 0.0008156966490299824,
+     "null_era_mean": 0.39244,
+     "p_era": 0.00625,
+     "null_swap_mean": 0.44336,
+     "p_swap": 0.0015873015873015873
+    },
+    "The Dark Knight + Under the Red Hood": {
+     "n_adaptations": 7,
+     "share": 0.08135,
+     "null_joint_mean": 0.48793,
+     "p_joint": 0.0007981601731601732,
+     "null_era_mean": 0.39668,
+     "p_era": 0.004166666666666667,
+     "null_swap_mean": 0.46575,
+     "p_swap": 0.001984126984126984
+    },
+    "The Dark Knight + Arkham Asylum (game)": {
+     "n_adaptations": 7,
+     "share": 0.0496,
+     "null_joint_mean": 0.49388,
+     "p_joint": 0.00017135642135642136,
+     "null_era_mean": 0.36757,
+     "p_era": 0.005555555555555556,
+     "null_swap_mean": 0.43777,
+     "p_swap": 0.0007936507936507937
+    },
+    "The Dark Knight + Batman '89": {
+     "n_adaptations": 7,
+     "share": 0.08135,
+     "null_joint_mean": 0.4661,
+     "p_joint": 0.00023724346641013308,
+     "null_era_mean": 0.37816,
+     "p_era": 0.002777777777777778,
+     "null_swap_mean": 0.4371,
+     "p_swap": 0.000992063492063492
+    },
+    "The Dark Knight + Joker (2019)": {
+     "n_adaptations": 7,
+     "share": 0.08135,
+     "null_joint_mean": 0.49388,
+     "p_joint": 0.00016784912618245953,
+     "null_era_mean": 0.3998,
+     "p_era": 0.002777777777777778,
+     "null_swap_mean": 0.44731,
+     "p_swap": 0.000992063492063492
+    },
+    "The Dark Knight + The Batman": {
+     "n_adaptations": 7,
+     "share": 0.08135,
+     "null_joint_mean": 0.51769,
+     "p_joint": 0.0002780784030784031,
+     "null_era_mean": 0.41744,
+     "p_era": 0.004166666666666667,
+     "null_swap_mean": 0.45069,
+     "p_swap": 0.0011904761904761906
+    },
+    "Dark Knight Rises + Batman v Superman": {
+     "n_adaptations": 7,
+     "share": 0.06746,
+     "null_joint_mean": 0.49521,
+     "p_joint": 0.0009154040404040404,
+     "null_era_mean": 0.39244,
+     "p_era": 0.006944444444444444,
+     "null_swap_mean": 0.32249,
+     "p_swap": 0.001984126984126984
+    },
+    "Dark Knight Rises + Under the Red Hood": {
+     "n_adaptations": 7,
+     "share": 0.06746,
+     "null_joint_mean": 0.49305,
+     "p_joint": 0.0008312289562289562,
+     "null_era_mean": 0.39668,
+     "p_era": 0.004166666666666667,
+     "null_swap_mean": 0.38115,
+     "p_swap": 0.001984126984126984
+    },
+    "Dark Knight Rises + Arkham Asylum (game)": {
+     "n_adaptations": 7,
+     "share": 0.03571,
+     "null_joint_mean": 0.499,
+     "p_joint": 0.00013678451178451178,
+     "null_era_mean": 0.36757,
+     "p_era": 0.005555555555555556,
+     "null_swap_mean": 0.33203,
+     "p_swap": 0.001984126984126984
+    },
+    "Dark Knight Rises + Batman '89": {
+     "n_adaptations": 7,
+     "share": 0.06746,
+     "null_joint_mean": 0.47122,
+     "p_joint": 0.0001848845598845599,
+     "null_era_mean": 0.37816,
+     "p_era": 0.002777777777777778,
+     "null_swap_mean": 0.3711,
+     "p_swap": 0.0007936507936507937
+    },
+    "Dark Knight Rises + Joker (2019)": {
+     "n_adaptations": 7,
+     "share": 0.06746,
+     "null_joint_mean": 0.499,
+     "p_joint": 0.00016835016835016836,
+     "null_era_mean": 0.3998,
+     "p_era": 0.002777777777777778,
+     "null_swap_mean": 0.37722,
+     "p_swap": 0.0007936507936507937
+    },
+    "Dark Knight Rises + The Batman": {
+     "n_adaptations": 7,
+     "share": 0.06746,
+     "null_joint_mean": 0.52281,
+     "p_joint": 0.00030062530062530064,
+     "null_era_mean": 0.41744,
+     "p_era": 0.004166666666666667,
+     "null_swap_mean": 0.3645,
+     "p_swap": 0.0011904761904761906
+    },
+    "Batman v Superman + Under the Red Hood": {
+     "n_adaptations": 7,
+     "share": 0.09921,
+     "null_joint_mean": 0.46877,
+     "p_joint": 0.004322991822991823,
+     "null_era_mean": 0.38715,
+     "p_era": 0.013888888888888888,
+     "null_swap_mean": 0.40534,
+     "p_swap": 0.009523809523809525
+    },
+    "Batman v Superman + Arkham Asylum (game)": {
+     "n_adaptations": 7,
+     "share": 0.06746,
+     "null_joint_mean": 0.47472,
+     "p_joint": 0.0012115199615199616,
+     "null_era_mean": 0.35805,
+     "p_era": 0.0125,
+     "null_swap_mean": 0.36325,
+     "p_swap": 0.001984126984126984
+    },
+    "Batman v Superman + Batman '89": {
+     "n_adaptations": 7,
+     "share": 0.09921,
+     "null_joint_mean": 0.44695,
+     "p_joint": 0.0010336499919833253,
+     "null_era_mean": 0.36863,
+     "p_era": 0.00625,
+     "null_swap_mean": 0.3894,
+     "p_swap": 0.004761904761904762
+    },
+    "Batman v Superman + Joker (2019)": {
+     "n_adaptations": 7,
+     "share": 0.09921,
+     "null_joint_mean": 0.47472,
+     "p_joint": 0.0009344436427769761,
+     "null_era_mean": 0.39028,
+     "p_era": 0.00625,
+     "null_swap_mean": 0.39404,
+     "p_swap": 0.004563492063492064
+    },
+    "Batman v Superman + The Batman": {
+     "n_adaptations": 7,
+     "share": 0.09921,
+     "null_joint_mean": 0.49853,
+     "p_joint": 0.0014665504248837582,
+     "null_era_mean": 0.40792,
+     "p_era": 0.008333333333333333,
+     "null_swap_mean": 0.41333,
+     "p_swap": 0.0031746031746031746
+    },
+    "Under the Red Hood + Arkham Asylum (game)": {
+     "n_adaptations": 7,
+     "share": 0.06746,
+     "null_joint_mean": 0.47256,
+     "p_joint": 0.0013047138047138048,
+     "null_era_mean": 0.36228,
+     "p_era": 0.0125,
+     "null_swap_mean": 0.38994,
+     "p_swap": 0.003968253968253968
+    },
+    "Under the Red Hood + Batman '89": {
+     "n_adaptations": 7,
+     "share": 0.09921,
+     "null_joint_mean": 0.44478,
+     "p_joint": 0.0010582010582010583,
+     "null_era_mean": 0.37287,
+     "p_era": 0.004166666666666667,
+     "null_swap_mean": 0.40611,
+     "p_swap": 0.004761904761904762
+    },
+    "Under the Red Hood + Joker (2019)": {
+     "n_adaptations": 7,
+     "share": 0.09921,
+     "null_joint_mean": 0.47256,
+     "p_joint": 0.0010236291486291486,
+     "null_era_mean": 0.39451,
+     "p_era": 0.004166666666666667,
+     "null_swap_mean": 0.42336,
+     "p_swap": 0.004166666666666667
+    },
+    "Under the Red Hood + The Batman": {
+     "n_adaptations": 7,
+     "share": 0.09921,
+     "null_joint_mean": 0.49637,
+     "p_joint": 0.0014835858585858586,
+     "null_era_mean": 0.41215,
+     "p_era": 0.005555555555555556,
+     "null_swap_mean": 0.41693,
+     "p_swap": 0.004365079365079365
+    },
+    "Arkham Asylum (game) + Batman '89": {
+     "n_adaptations": 7,
+     "share": 0.06746,
+     "null_joint_mean": 0.45073,
+     "p_joint": 0.00019540644540644542,
+     "null_era_mean": 0.34377,
+     "p_era": 0.005555555555555556,
+     "null_swap_mean": 0.38783,
+     "p_swap": 0.0015873015873015873
+    },
+    "Arkham Asylum (game) + Joker (2019)": {
+     "n_adaptations": 7,
+     "share": 0.06746,
+     "null_joint_mean": 0.47851,
+     "p_joint": 0.0001908970658970659,
+     "null_era_mean": 0.36541,
+     "p_era": 0.005555555555555556,
+     "null_swap_mean": 0.38727,
+     "p_swap": 0.0015873015873015873
+    },
+    "Arkham Asylum (game) + The Batman": {
+     "n_adaptations": 7,
+     "share": 0.06746,
+     "null_joint_mean": 0.50232,
+     "p_joint": 0.0004193722943722944,
+     "null_era_mean": 0.38305,
+     "p_era": 0.008333333333333333,
+     "null_swap_mean": 0.40129,
+     "p_swap": 0.002380952380952381
+    },
+    "Batman '89 + Joker (2019)": {
+     "n_adaptations": 7,
+     "share": 0.09921,
+     "null_joint_mean": 0.45073,
+     "p_joint": 0.0007189955106621773,
+     "null_era_mean": 0.37599,
+     "p_era": 0.004166666666666667,
+     "null_swap_mean": 0.38699,
+     "p_swap": 0.003968253968253968
+    },
+    "Batman '89 + The Batman": {
+     "n_adaptations": 7,
+     "share": 0.09921,
+     "null_joint_mean": 0.47454,
+     "p_joint": 0.000364508177008177,
+     "null_era_mean": 0.39363,
+     "p_era": 0.004166666666666667,
+     "null_swap_mean": 0.41565,
+     "p_swap": 0.0015873015873015873
+    },
+    "Joker (2019) + The Batman": {
+     "n_adaptations": 7,
+     "share": 0.09921,
+     "null_joint_mean": 0.50232,
+     "p_joint": 0.00032317219817219815,
+     "null_era_mean": 0.41528,
+     "p_era": 0.004166666666666667,
+     "null_swap_mean": 0.42789,
+     "p_swap": 0.001388888888888889
+    }
+   },
+   "leave3_adaptations_out": {
+    "Batman Begins + The Dark Knight + Dark Knight Rises": {
+     "n_adaptations": 6,
+     "share": 0.03704,
+     "null_joint_mean": 0.51599,
+     "p_joint": 0.00027657527657527656,
+     "null_era_mean": 0.40299,
+     "p_era": 0.001388888888888889,
+     "null_swap_mean": 0.39843,
+     "p_swap": 0.002777777777777778
+    },
+    "Batman Begins + The Dark Knight + Batman v Superman": {
+     "n_adaptations": 6,
+     "share": 0.07407,
+     "null_joint_mean": 0.48767,
+     "p_joint": 0.0016043370210036877,
+     "null_era_mean": 0.39188,
+     "p_era": 0.005555555555555556,
+     "null_swap_mean": 0.45056,
+     "p_swap": 0.005555555555555556
+    },
+    "Batman Begins + The Dark Knight + Under the Red Hood": {
+     "n_adaptations": 6,
+     "share": 0.07407,
+     "null_joint_mean": 0.48514,
+     "p_joint": 0.0014820827320827321,
+     "null_era_mean": 0.39682,
+     "p_era": 0.004166666666666667,
+     "null_swap_mean": 0.45772,
+     "p_swap": 0.008333333333333333
+    },
+    "Batman Begins + The Dark Knight + Arkham Asylum (game)": {
+     "n_adaptations": 6,
+     "share": 0.03704,
+     "null_joint_mean": 0.49209,
+     "p_joint": 0.00030663780663780664,
+     "null_era_mean": 0.36286,
+     "p_era": 0.004166666666666667,
+     "null_swap_mean": 0.4478,
+     "p_swap": 0.005555555555555556
+    },
+    "Batman Begins + The Dark Knight + Batman '89": {
+     "n_adaptations": 6,
+     "share": 0.07407,
+     "null_joint_mean": 0.45968,
+     "p_joint": 0.0004890171556838224,
+     "null_era_mean": 0.37521,
+     "p_era": 0.001388888888888889,
+     "null_swap_mean": 0.43718,
+     "p_swap": 0.004166666666666667
+    },
+    "Batman Begins + The Dark Knight + Joker (2019)": {
+     "n_adaptations": 6,
+     "share": 0.07407,
+     "null_joint_mean": 0.49209,
+     "p_joint": 0.00031114718614718616,
+     "null_era_mean": 0.40046,
+     "p_era": 0.001388888888888889,
+     "null_swap_mean": 0.45258,
+     "p_swap": 0.004166666666666667
+    },
+    "Batman Begins + The Dark Knight + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.07407,
+     "null_joint_mean": 0.51987,
+     "p_joint": 0.0007365319865319865,
+     "null_era_mean": 0.42104,
+     "p_era": 0.002777777777777778,
+     "null_swap_mean": 0.43274,
+     "p_swap": 0.005555555555555556
+    },
+    "Batman Begins + Dark Knight Rises + Batman v Superman": {
+     "n_adaptations": 6,
+     "share": 0.05787,
+     "null_joint_mean": 0.49364,
+     "p_joint": 0.001694023569023569,
+     "null_era_mean": 0.39188,
+     "p_era": 0.004166666666666667,
+     "null_swap_mean": 0.29794,
+     "p_swap": 0.011111111111111112
+    },
+    "Batman Begins + Dark Knight Rises + Under the Red Hood": {
+     "n_adaptations": 6,
+     "share": 0.05787,
+     "null_joint_mean": 0.49112,
+     "p_joint": 0.0015782828282828283,
+     "null_era_mean": 0.39682,
+     "p_era": 0.004166666666666667,
+     "null_swap_mean": 0.35448,
+     "p_swap": 0.011111111111111112
+    },
+    "Batman Begins + Dark Knight Rises + Arkham Asylum (game)": {
+     "n_adaptations": 6,
+     "share": 0.02083,
+     "null_joint_mean": 0.49806,
+     "p_joint": 0.0001893939393939394,
+     "null_era_mean": 0.36286,
+     "p_era": 0.004166666666666667,
+     "null_swap_mean": 0.31578,
+     "p_swap": 0.011111111111111112
+    },
+    "Batman Begins + Dark Knight Rises + Batman '89": {
+     "n_adaptations": 6,
+     "share": 0.05787,
+     "null_joint_mean": 0.46566,
+     "p_joint": 0.0003367003367003367,
+     "null_era_mean": 0.37521,
+     "p_era": 0.001388888888888889,
+     "null_swap_mean": 0.35925,
+     "p_swap": 0.004166666666666667
+    },
+    "Batman Begins + Dark Knight Rises + Joker (2019)": {
+     "n_adaptations": 6,
+     "share": 0.05787,
+     "null_joint_mean": 0.49806,
+     "p_joint": 0.0003021284271284271,
+     "null_era_mean": 0.40046,
+     "p_era": 0.001388888888888889,
+     "null_swap_mean": 0.36909,
+     "p_swap": 0.004166666666666667
+    },
+    "Batman Begins + Dark Knight Rises + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.05787,
+     "null_joint_mean": 0.52584,
+     "p_joint": 0.0007996632996632996,
+     "null_era_mean": 0.42104,
+     "p_era": 0.002777777777777778,
+     "null_swap_mean": 0.32734,
+     "p_swap": 0.008333333333333333
+    },
+    "Batman Begins + Batman v Superman + Under the Red Hood": {
+     "n_adaptations": 6,
+     "share": 0.09491,
+     "null_joint_mean": 0.46279,
+     "p_joint": 0.008417508417508417,
+     "null_era_mean": 0.3857,
+     "p_era": 0.019444444444444445,
+     "null_swap_mean": 0.40438,
+     "p_swap": 0.025
+    },
+    "Batman Begins + Batman v Superman + Arkham Asylum (game)": {
+     "n_adaptations": 6,
+     "share": 0.05787,
+     "null_joint_mean": 0.46974,
+     "p_joint": 0.0022907647907647907,
+     "null_era_mean": 0.35175,
+     "p_era": 0.013888888888888888,
+     "null_swap_mean": 0.37525,
+     "p_swap": 0.011111111111111112
+    },
+    "Batman Begins + Batman v Superman + Batman '89": {
+     "n_adaptations": 6,
+     "share": 0.09491,
+     "null_joint_mean": 0.43733,
+     "p_joint": 0.001930515472182139,
+     "null_era_mean": 0.3641,
+     "p_era": 0.005555555555555556,
+     "null_swap_mean": 0.40112,
+     "p_swap": 0.011111111111111112
+    },
+    "Batman Begins + Batman v Superman + Joker (2019)": {
+     "n_adaptations": 6,
+     "share": 0.09491,
+     "null_joint_mean": 0.46974,
+     "p_joint": 0.0017280944364277697,
+     "null_era_mean": 0.38935,
+     "p_era": 0.005555555555555556,
+     "null_swap_mean": 0.40894,
+     "p_swap": 0.011111111111111112
+    },
+    "Batman Begins + Batman v Superman + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.09491,
+     "null_joint_mean": 0.49752,
+     "p_joint": 0.0039892977392977395,
+     "null_era_mean": 0.40993,
+     "p_era": 0.008333333333333333,
+     "null_swap_mean": 0.41077,
+     "p_swap": 0.008333333333333333
+    },
+    "Batman Begins + Under the Red Hood + Arkham Asylum (game)": {
+     "n_adaptations": 6,
+     "share": 0.05787,
+     "null_joint_mean": 0.46721,
+     "p_joint": 0.0024515993265993266,
+     "null_era_mean": 0.35669,
+     "p_era": 0.016666666666666666,
+     "null_swap_mean": 0.38827,
+     "p_swap": 0.022222222222222223
+    },
+    "Batman Begins + Under the Red Hood + Batman '89": {
+     "n_adaptations": 6,
+     "share": 0.09491,
+     "null_joint_mean": 0.43481,
+     "p_joint": 0.0019044612794612795,
+     "null_era_mean": 0.36904,
+     "p_era": 0.004166666666666667,
+     "null_swap_mean": 0.40056,
+     "p_swap": 0.013888888888888888
+    },
+    "Batman Begins + Under the Red Hood + Joker (2019)": {
+     "n_adaptations": 6,
+     "share": 0.09491,
+     "null_joint_mean": 0.46721,
+     "p_joint": 0.0017812049062049062,
+     "null_era_mean": 0.39429,
+     "p_era": 0.004166666666666667,
+     "null_swap_mean": 0.42556,
+     "p_swap": 0.0125
+    },
+    "Batman Begins + Under the Red Hood + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.09491,
+     "null_joint_mean": 0.49499,
+     "p_joint": 0.003587962962962963,
+     "null_era_mean": 0.41487,
+     "p_era": 0.008333333333333333,
+     "null_swap_mean": 0.39236,
+     "p_swap": 0.016666666666666666
+    },
+    "Batman Begins + Arkham Asylum (game) + Batman '89": {
+     "n_adaptations": 6,
+     "share": 0.05787,
+     "null_joint_mean": 0.44175,
+     "p_joint": 0.0003457190957190957,
+     "null_era_mean": 0.33509,
+     "p_era": 0.004166666666666667,
+     "null_swap_mean": 0.40384,
+     "p_swap": 0.008333333333333333
+    },
+    "Batman Begins + Arkham Asylum (game) + Joker (2019)": {
+     "n_adaptations": 6,
+     "share": 0.05787,
+     "null_joint_mean": 0.47416,
+     "p_joint": 0.00032768157768157767,
+     "null_era_mean": 0.36034,
+     "p_era": 0.004166666666666667,
+     "null_swap_mean": 0.40459,
+     "p_swap": 0.008333333333333333
+    },
+    "Batman Begins + Arkham Asylum (game) + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.05787,
+     "null_joint_mean": 0.50194,
+     "p_joint": 0.0011153198653198653,
+     "null_era_mean": 0.38092,
+     "p_era": 0.008333333333333333,
+     "null_swap_mean": 0.39924,
+     "p_swap": 0.016666666666666666
+    },
+    "Batman Begins + Batman '89 + Joker (2019)": {
+     "n_adaptations": 6,
+     "share": 0.09491,
+     "null_joint_mean": 0.44175,
+     "p_joint": 0.001134359467692801,
+     "null_era_mean": 0.37269,
+     "p_era": 0.003472222222222222,
+     "null_swap_mean": 0.39449,
+     "p_swap": 0.009722222222222222
+    },
+    "Batman Begins + Batman '89 + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.09491,
+     "null_joint_mean": 0.46953,
+     "p_joint": 0.000971019721019721,
+     "null_era_mean": 0.39327,
+     "p_era": 0.002777777777777778,
+     "null_swap_mean": 0.40906,
+     "p_swap": 0.005555555555555556
+    },
+    "Batman Begins + Joker (2019) + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.09491,
+     "null_joint_mean": 0.50194,
+     "p_joint": 0.0007876382876382877,
+     "null_era_mean": 0.41852,
+     "p_era": 0.002777777777777778,
+     "null_swap_mean": 0.42724,
+     "p_swap": 0.005555555555555556
+    },
+    "The Dark Knight + Dark Knight Rises + Batman v Superman": {
+     "n_adaptations": 6,
+     "share": 0.05787,
+     "null_joint_mean": 0.51235,
+     "p_joint": 0.0007996632996632996,
+     "null_era_mean": 0.40229,
+     "p_era": 0.006944444444444444,
+     "null_swap_mean": 0.37468,
+     "p_swap": 0.002777777777777778
+    },
+    "The Dark Knight + Dark Knight Rises + Under the Red Hood": {
+     "n_adaptations": 6,
+     "share": 0.05787,
+     "null_joint_mean": 0.50982,
+     "p_joint": 0.0007154882154882155,
+     "null_era_mean": 0.40723,
+     "p_era": 0.004166666666666667,
+     "null_swap_mean": 0.44681,
+     "p_swap": 0.002777777777777778
+    },
+    "The Dark Knight + Dark Knight Rises + Arkham Asylum (game)": {
+     "n_adaptations": 6,
+     "share": 0.02083,
+     "null_joint_mean": 0.51676,
+     "p_joint": 0.00011574074074074075,
+     "null_era_mean": 0.37328,
+     "p_era": 0.005555555555555556,
+     "null_swap_mean": 0.3865,
+     "p_swap": 0.002777777777777778
+    },
+    "The Dark Knight + Dark Knight Rises + Batman '89": {
+     "n_adaptations": 6,
+     "share": 0.05787,
+     "null_joint_mean": 0.48436,
+     "p_joint": 0.00017736892736892738,
+     "null_era_mean": 0.38563,
+     "p_era": 0.002777777777777778,
+     "null_swap_mean": 0.41615,
+     "p_swap": 0.001388888888888889
+    },
+    "The Dark Knight + Dark Knight Rises + Joker (2019)": {
+     "n_adaptations": 6,
+     "share": 0.05787,
+     "null_joint_mean": 0.51676,
+     "p_joint": 0.0001443001443001443,
+     "null_era_mean": 0.41088,
+     "p_era": 0.002777777777777778,
+     "null_swap_mean": 0.42449,
+     "p_swap": 0.001388888888888889
+    },
+    "The Dark Knight + Dark Knight Rises + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.05787,
+     "null_joint_mean": 0.54454,
+     "p_joint": 0.00027356902356902356,
+     "null_era_mean": 0.43146,
+     "p_era": 0.004166666666666667,
+     "null_swap_mean": 0.40409,
+     "p_swap": 0.002777777777777778
+    },
+    "The Dark Knight + Batman v Superman + Under the Red Hood": {
+     "n_adaptations": 6,
+     "share": 0.09491,
+     "null_joint_mean": 0.4815,
+     "p_joint": 0.004025372775372776,
+     "null_era_mean": 0.39612,
+     "p_era": 0.013888888888888888,
+     "null_swap_mean": 0.46778,
+     "p_swap": 0.011111111111111112
+    },
+    "The Dark Knight + Batman v Superman + Arkham Asylum (game)": {
+     "n_adaptations": 6,
+     "share": 0.05787,
+     "null_joint_mean": 0.48844,
+     "p_joint": 0.0011183261183261184,
+     "null_era_mean": 0.36217,
+     "p_era": 0.0125,
+     "null_swap_mean": 0.41704,
+     "p_swap": 0.002777777777777778
+    },
+    "The Dark Knight + Batman v Superman + Batman '89": {
+     "n_adaptations": 6,
+     "share": 0.09491,
+     "null_joint_mean": 0.45603,
+     "p_joint": 0.0013107263107263107,
+     "null_era_mean": 0.37452,
+     "p_era": 0.00625,
+     "null_swap_mean": 0.4291,
+     "p_swap": 0.005555555555555556
+    },
+    "The Dark Knight + Batman v Superman + Joker (2019)": {
+     "n_adaptations": 6,
+     "share": 0.09491,
+     "null_joint_mean": 0.48844,
+     "p_joint": 0.0008778258778258778,
+     "null_era_mean": 0.39977,
+     "p_era": 0.00625,
+     "null_swap_mean": 0.43541,
+     "p_swap": 0.005555555555555556
+    },
+    "The Dark Knight + Batman v Superman + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.09491,
+     "null_joint_mean": 0.51622,
+     "p_joint": 0.001367845117845118,
+     "null_era_mean": 0.42035,
+     "p_era": 0.008333333333333333,
+     "null_swap_mean": 0.45859,
+     "p_swap": 0.005555555555555556
+    },
+    "The Dark Knight + Under the Red Hood + Arkham Asylum (game)": {
+     "n_adaptations": 6,
+     "share": 0.05787,
+     "null_joint_mean": 0.48591,
+     "p_joint": 0.0011679292929292929,
+     "null_era_mean": 0.36711,
+     "p_era": 0.0125,
+     "null_swap_mean": 0.44565,
+     "p_swap": 0.005555555555555556
+    },
+    "The Dark Knight + Under the Red Hood + Batman '89": {
+     "n_adaptations": 6,
+     "share": 0.09491,
+     "null_joint_mean": 0.45351,
+     "p_joint": 0.0012987012987012987,
+     "null_era_mean": 0.37945,
+     "p_era": 0.004166666666666667,
+     "null_swap_mean": 0.44413,
+     "p_swap": 0.006944444444444444
+    },
+    "The Dark Knight + Under the Red Hood + Joker (2019)": {
+     "n_adaptations": 6,
+     "share": 0.09491,
+     "null_joint_mean": 0.48591,
+     "p_joint": 0.0010386604136604137,
+     "null_era_mean": 0.40471,
+     "p_era": 0.004166666666666667,
+     "null_swap_mean": 0.46762,
+     "p_swap": 0.006944444444444444
+    },
+    "The Dark Knight + Under the Red Hood + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.09491,
+     "null_joint_mean": 0.51369,
+     "p_joint": 0.001367845117845118,
+     "null_era_mean": 0.42529,
+     "p_era": 0.005555555555555556,
+     "null_swap_mean": 0.45577,
+     "p_swap": 0.008333333333333333
+    },
+    "The Dark Knight + Arkham Asylum (game) + Batman '89": {
+     "n_adaptations": 6,
+     "share": 0.05787,
+     "null_joint_mean": 0.46045,
+     "p_joint": 0.0001984126984126984,
+     "null_era_mean": 0.3455,
+     "p_era": 0.005555555555555556,
+     "null_swap_mean": 0.4258,
+     "p_swap": 0.002777777777777778
+    },
+    "The Dark Knight + Arkham Asylum (game) + Joker (2019)": {
+     "n_adaptations": 6,
+     "share": 0.05787,
+     "null_joint_mean": 0.49286,
+     "p_joint": 0.00017135642135642136,
+     "null_era_mean": 0.37076,
+     "p_era": 0.005555555555555556,
+     "null_swap_mean": 0.42504,
+     "p_swap": 0.002777777777777778
+    },
+    "The Dark Knight + Arkham Asylum (game) + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.05787,
+     "null_joint_mean": 0.52064,
+     "p_joint": 0.0003787878787878788,
+     "null_era_mean": 0.39134,
+     "p_era": 0.008333333333333333,
+     "null_swap_mean": 0.44105,
+     "p_swap": 0.005555555555555556
+    },
+    "The Dark Knight + Batman '89 + Joker (2019)": {
+     "n_adaptations": 6,
+     "share": 0.09491,
+     "null_joint_mean": 0.46045,
+     "p_joint": 0.0013618326118326118,
+     "null_era_mean": 0.3831,
+     "p_era": 0.005555555555555556,
+     "null_swap_mean": 0.40113,
+     "p_swap": 0.006944444444444444
+    },
+    "The Dark Knight + Batman '89 + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.09491,
+     "null_joint_mean": 0.48823,
+     "p_joint": 0.0004494348244348244,
+     "null_era_mean": 0.40368,
+     "p_era": 0.004166666666666667,
+     "null_swap_mean": 0.43705,
+     "p_swap": 0.004166666666666667
+    },
+    "The Dark Knight + Joker (2019) + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.09491,
+     "null_joint_mean": 0.52064,
+     "p_joint": 0.0003021284271284271,
+     "null_era_mean": 0.42894,
+     "p_era": 0.004166666666666667,
+     "null_swap_mean": 0.45371,
+     "p_swap": 0.004166666666666667
+    },
+    "Dark Knight Rises + Batman v Superman + Under the Red Hood": {
+     "n_adaptations": 6,
+     "share": 0.0787,
+     "null_joint_mean": 0.48747,
+     "p_joint": 0.004882154882154882,
+     "null_era_mean": 0.39612,
+     "p_era": 0.016666666666666666,
+     "null_swap_mean": 0.33041,
+     "p_swap": 0.013888888888888888
+    },
+    "Dark Knight Rises + Batman v Superman + Arkham Asylum (game)": {
+     "n_adaptations": 6,
+     "share": 0.04167,
+     "null_joint_mean": 0.49442,
+     "p_joint": 0.00101010101010101,
+     "null_era_mean": 0.36217,
+     "p_era": 0.016666666666666666,
+     "null_swap_mean": 0.25089,
+     "p_swap": 0.013888888888888888
+    },
+    "Dark Knight Rises + Batman v Superman + Batman '89": {
+     "n_adaptations": 6,
+     "share": 0.0787,
+     "null_joint_mean": 0.46201,
+     "p_joint": 0.0010206228956228956,
+     "null_era_mean": 0.37452,
+     "p_era": 0.006944444444444444,
+     "null_swap_mean": 0.31704,
+     "p_swap": 0.005555555555555556
+    },
+    "Dark Knight Rises + Batman v Superman + Joker (2019)": {
+     "n_adaptations": 6,
+     "share": 0.0787,
+     "null_joint_mean": 0.49442,
+     "p_joint": 0.000925925925925926,
+     "null_era_mean": 0.39977,
+     "p_era": 0.006944444444444444,
+     "null_swap_mean": 0.3178,
+     "p_swap": 0.005555555555555556
+    },
+    "Dark Knight Rises + Batman v Superman + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.0787,
+     "null_joint_mean": 0.52219,
+     "p_joint": 0.0016203703703703703,
+     "null_era_mean": 0.42035,
+     "p_era": 0.011111111111111112,
+     "null_swap_mean": 0.31906,
+     "p_swap": 0.008333333333333333
+    },
+    "Dark Knight Rises + Under the Red Hood + Arkham Asylum (game)": {
+     "n_adaptations": 6,
+     "share": 0.04167,
+     "null_joint_mean": 0.49189,
+     "p_joint": 0.0010942760942760942,
+     "null_era_mean": 0.36711,
+     "p_era": 0.0125,
+     "null_swap_mean": 0.32889,
+     "p_swap": 0.013888888888888888
+    },
+    "Dark Knight Rises + Under the Red Hood + Batman '89": {
+     "n_adaptations": 6,
+     "share": 0.0787,
+     "null_joint_mean": 0.45948,
+     "p_joint": 0.0009574915824915825,
+     "null_era_mean": 0.37945,
+     "p_era": 0.004166666666666667,
+     "null_swap_mean": 0.38145,
+     "p_swap": 0.005555555555555556
+    },
+    "Dark Knight Rises + Under the Red Hood + Joker (2019)": {
+     "n_adaptations": 6,
+     "share": 0.0787,
+     "null_joint_mean": 0.49189,
+     "p_joint": 0.0009048821548821549,
+     "null_era_mean": 0.40471,
+     "p_era": 0.004166666666666667,
+     "null_swap_mean": 0.39938,
+     "p_swap": 0.005555555555555556
+    },
+    "Dark Knight Rises + Under the Red Hood + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.0787,
+     "null_joint_mean": 0.51967,
+     "p_joint": 0.0015046296296296296,
+     "null_era_mean": 0.42529,
+     "p_era": 0.005555555555555556,
+     "null_swap_mean": 0.36562,
+     "p_swap": 0.008333333333333333
+    },
+    "Dark Knight Rises + Arkham Asylum (game) + Batman '89": {
+     "n_adaptations": 6,
+     "share": 0.04167,
+     "null_joint_mean": 0.46643,
+     "p_joint": 0.00013678451178451178,
+     "null_era_mean": 0.3455,
+     "p_era": 0.005555555555555556,
+     "null_swap_mean": 0.33434,
+     "p_swap": 0.005555555555555556
+    },
+    "Dark Knight Rises + Arkham Asylum (game) + Joker (2019)": {
+     "n_adaptations": 6,
+     "share": 0.04167,
+     "null_joint_mean": 0.49884,
+     "p_joint": 0.00013678451178451178,
+     "null_era_mean": 0.37076,
+     "p_era": 0.005555555555555556,
+     "null_swap_mean": 0.32803,
+     "p_swap": 0.005555555555555556
+    },
+    "Dark Knight Rises + Arkham Asylum (game) + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.04167,
+     "null_joint_mean": 0.52661,
+     "p_joint": 0.00036826599326599327,
+     "null_era_mean": 0.39134,
+     "p_era": 0.008333333333333333,
+     "null_swap_mean": 0.32212,
+     "p_swap": 0.008333333333333333
+    },
+    "Dark Knight Rises + Batman '89 + Joker (2019)": {
+     "n_adaptations": 6,
+     "share": 0.0787,
+     "null_joint_mean": 0.46643,
+     "p_joint": 0.0007215007215007215,
+     "null_era_mean": 0.3831,
+     "p_era": 0.004861111111111111,
+     "null_swap_mean": 0.35821,
+     "p_swap": 0.004166666666666667
+    },
+    "Dark Knight Rises + Batman '89 + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.0787,
+     "null_joint_mean": 0.49421,
+     "p_joint": 0.00035473785473785476,
+     "null_era_mean": 0.40368,
+     "p_era": 0.004166666666666667,
+     "null_swap_mean": 0.37221,
+     "p_swap": 0.002777777777777778
+    },
+    "Dark Knight Rises + Joker (2019) + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.0787,
+     "null_joint_mean": 0.52661,
+     "p_joint": 0.00031415343915343916,
+     "null_era_mean": 0.42894,
+     "p_era": 0.004166666666666667,
+     "null_swap_mean": 0.38332,
+     "p_swap": 0.002777777777777778
+    },
+    "Batman v Superman + Under the Red Hood + Arkham Asylum (game)": {
+     "n_adaptations": 6,
+     "share": 0.0787,
+     "null_joint_mean": 0.46357,
+     "p_joint": 0.007070707070707071,
+     "null_era_mean": 0.356,
+     "p_era": 0.029166666666666667,
+     "null_swap_mean": 0.35719,
+     "p_swap": 0.013888888888888888
+    },
+    "Batman v Superman + Under the Red Hood + Batman '89": {
+     "n_adaptations": 6,
+     "share": 0.11574,
+     "null_joint_mean": 0.43116,
+     "p_joint": 0.005357142857142857,
+     "null_era_mean": 0.36834,
+     "p_era": 0.013888888888888888,
+     "null_swap_mean": 0.39216,
+     "p_swap": 0.027777777777777776
+    },
+    "Batman v Superman + Under the Red Hood + Joker (2019)": {
+     "n_adaptations": 6,
+     "share": 0.11574,
+     "null_joint_mean": 0.46357,
+     "p_joint": 0.005405242905242905,
+     "null_era_mean": 0.3936,
+     "p_era": 0.015277777777777777,
+     "null_swap_mean": 0.40807,
+     "p_swap": 0.02361111111111111
+    },
+    "Batman v Superman + Under the Red Hood + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.11574,
+     "null_joint_mean": 0.49134,
+     "p_joint": 0.007299182299182299,
+     "null_era_mean": 0.41418,
+     "p_era": 0.015277777777777777,
+     "null_swap_mean": 0.41789,
+     "p_swap": 0.022222222222222223
+    },
+    "Batman v Superman + Arkham Asylum (game) + Batman '89": {
+     "n_adaptations": 6,
+     "share": 0.0787,
+     "null_joint_mean": 0.4381,
+     "p_joint": 0.0012746512746512747,
+     "null_era_mean": 0.33439,
+     "p_era": 0.0125,
+     "null_swap_mean": 0.35462,
+     "p_swap": 0.005555555555555556
+    },
+    "Batman v Superman + Arkham Asylum (game) + Joker (2019)": {
+     "n_adaptations": 6,
+     "share": 0.0787,
+     "null_joint_mean": 0.47051,
+     "p_joint": 0.0012115199615199616,
+     "null_era_mean": 0.35965,
+     "p_era": 0.0125,
+     "null_swap_mean": 0.34629,
+     "p_swap": 0.005555555555555556
+    },
+    "Batman v Superman + Arkham Asylum (game) + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.0787,
+     "null_joint_mean": 0.49829,
+     "p_joint": 0.0021284271284271283,
+     "null_era_mean": 0.38023,
+     "p_era": 0.015277777777777777,
+     "null_swap_mean": 0.38395,
+     "p_swap": 0.008333333333333333
+    },
+    "Batman v Superman + Batman '89 + Joker (2019)": {
+     "n_adaptations": 6,
+     "share": 0.11574,
+     "null_joint_mean": 0.4381,
+     "p_joint": 0.0033209074875741543,
+     "null_era_mean": 0.37199,
+     "p_era": 0.009722222222222222,
+     "null_swap_mean": 0.35887,
+     "p_swap": 0.02361111111111111
+    },
+    "Batman v Superman + Batman '89 + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.11574,
+     "null_joint_mean": 0.46588,
+     "p_joint": 0.0017531465448132114,
+     "null_era_mean": 0.39257,
+     "p_era": 0.008333333333333333,
+     "null_swap_mean": 0.41645,
+     "p_swap": 0.008333333333333333
+    },
+    "Batman v Superman + Joker (2019) + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.11574,
+     "null_joint_mean": 0.49829,
+     "p_joint": 0.001600328683662017,
+     "null_era_mean": 0.41782,
+     "p_era": 0.008333333333333333,
+     "null_swap_mean": 0.42554,
+     "p_swap": 0.006944444444444444
+    },
+    "Under the Red Hood + Arkham Asylum (game) + Batman '89": {
+     "n_adaptations": 6,
+     "share": 0.0787,
+     "null_joint_mean": 0.43558,
+     "p_joint": 0.0013362794612794614,
+     "null_era_mean": 0.33933,
+     "p_era": 0.0125,
+     "null_swap_mean": 0.37552,
+     "p_swap": 0.011111111111111112
+    },
+    "Under the Red Hood + Arkham Asylum (game) + Joker (2019)": {
+     "n_adaptations": 6,
+     "share": 0.0787,
+     "null_joint_mean": 0.46799,
+     "p_joint": 0.0013362794612794614,
+     "null_era_mean": 0.36458,
+     "p_era": 0.0125,
+     "null_swap_mean": 0.38436,
+     "p_swap": 0.011111111111111112
+    },
+    "Under the Red Hood + Arkham Asylum (game) + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.0787,
+     "null_joint_mean": 0.49576,
+     "p_joint": 0.00242003367003367,
+     "null_era_mean": 0.38516,
+     "p_era": 0.016666666666666666,
+     "null_swap_mean": 0.38699,
+     "p_swap": 0.016666666666666666
+    },
+    "Under the Red Hood + Batman '89 + Joker (2019)": {
+     "n_adaptations": 6,
+     "share": 0.11574,
+     "null_joint_mean": 0.43558,
+     "p_joint": 0.004198232323232323,
+     "null_era_mean": 0.37693,
+     "p_era": 0.009722222222222222,
+     "null_swap_mean": 0.38336,
+     "p_swap": 0.022222222222222223
+    },
+    "Under the Red Hood + Batman '89 + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.11574,
+     "null_joint_mean": 0.46336,
+     "p_joint": 0.001954064454064454,
+     "null_era_mean": 0.39751,
+     "p_era": 0.005555555555555556,
+     "null_swap_mean": 0.40591,
+     "p_swap": 0.011111111111111112
+    },
+    "Under the Red Hood + Joker (2019) + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.11574,
+     "null_joint_mean": 0.49576,
+     "p_joint": 0.0018623737373737374,
+     "null_era_mean": 0.42276,
+     "p_era": 0.005555555555555556,
+     "null_swap_mean": 0.43218,
+     "p_swap": 0.009722222222222222
+    },
+    "Arkham Asylum (game) + Batman '89 + Joker (2019)": {
+     "n_adaptations": 6,
+     "share": 0.0787,
+     "null_joint_mean": 0.44252,
+     "p_joint": 0.0007711038961038961,
+     "null_era_mean": 0.34298,
+     "p_era": 0.009722222222222222,
+     "null_swap_mean": 0.35398,
+     "p_swap": 0.008333333333333333
+    },
+    "Arkham Asylum (game) + Batman '89 + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.0787,
+     "null_joint_mean": 0.4703,
+     "p_joint": 0.00044191919191919195,
+     "null_era_mean": 0.36356,
+     "p_era": 0.008333333333333333,
+     "null_swap_mean": 0.40438,
+     "p_swap": 0.005555555555555556
+    },
+    "Arkham Asylum (game) + Joker (2019) + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.0787,
+     "null_joint_mean": 0.50271,
+     "p_joint": 0.0004193722943722944,
+     "null_era_mean": 0.38881,
+     "p_era": 0.008333333333333333,
+     "null_swap_mean": 0.4064,
+     "p_swap": 0.005555555555555556
+    },
+    "Batman '89 + Joker (2019) + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.11574,
+     "null_joint_mean": 0.4703,
+     "p_joint": 0.0012450897867564534,
+     "null_era_mean": 0.40116,
+     "p_era": 0.005555555555555556,
+     "null_swap_mean": 0.40293,
+     "p_swap": 0.005555555555555556
+    }
+   },
+   "named_subsets": {
+    "without_killing_joke_trio": {
+     "n_adaptations": 6,
+     "share": 0.09491,
+     "null_joint_mean": 0.46045,
+     "p_joint": 0.0013618326118326118,
+     "null_era_mean": 0.3831,
+     "p_era": 0.005555555555555556,
+     "null_swap_mean": 0.40113,
+     "p_swap": 0.006944444444444444
+    },
+    "without_rewrite_batch_mates": {
+     "n_adaptations": 7,
+     "share": 0.08135,
+     "null_joint_mean": 0.4661,
+     "p_joint": 0.00023724346641013308,
+     "null_era_mean": 0.37816,
+     "p_era": 0.002777777777777778,
+     "null_swap_mean": 0.4371,
+     "p_swap": 0.000992063492063492
+    },
+    "strong_attribution_subset": {
+     "n_adaptations": 5,
+     "share": 0.06944,
+     "null_joint_mean": 0.45254,
+     "p_joint": 0.0015361952861952862,
+     "null_era_mean": 0.34491,
+     "p_era": 0.016666666666666666,
+     "null_swap_mean": 0.36719,
+     "p_swap": 0.016666666666666666
+    }
+   },
+   "leave1_comic_out": {
+    "Dark Knight Returns": {
+     "n_adaptations": 8,
+     "share": 0.09474,
+     "null_joint_mean": 0.5047,
+     "p_joint": 0.0007485569985569985,
+     "null_era_mean": 0.36131,
+     "p_era": 0.0125
+    },
+    "Year One": {
+     "n_adaptations": 8,
+     "share": 0.04688,
+     "null_joint_mean": 0.50417,
+     "p_joint": 0.00021645021645021645,
+     "null_era_mean": 0.40498,
+     "p_era": 0.004166666666666667
+    },
+    "The Killing Joke": {
+     "n_adaptations": 7,
+     "share": 0.16327,
+     "null_joint_mean": 0.47926,
+     "p_joint": 0.0035714285714285713,
+     "null_era_mean": 0.43163,
+     "p_era": 0.0125
+    },
+    "A Death in the Family": {
+     "n_adaptations": 8,
+     "share": 0.09821,
+     "null_joint_mean": 0.47576,
+     "p_joint": 0.001485088985088985,
+     "null_era_mean": 0.38613,
+     "p_era": 0.0125
+    },
+    "Gotham by Gaslight": {
+     "n_adaptations": 9,
+     "share": 0.07143,
+     "null_joint_mean": 0.48594,
+     "p_joint": 0.00015933140933140934,
+     "null_era_mean": 0.37924,
+     "p_era": 0.004166666666666667
+    },
+    "Arkham Asylum (comic)": {
+     "n_adaptations": 8,
+     "share": 0.06696,
+     "null_joint_mean": 0.48485,
+     "p_joint": 0.00030964405964405963,
+     "null_era_mean": 0.36051,
+     "p_era": 0.016666666666666666
+    },
+    "Knightfall": {
+     "n_adaptations": 9,
+     "share": 0.07033,
+     "null_joint_mean": 0.50208,
+     "p_joint": 9.31938431938432e-05,
+     "null_era_mean": 0.39926,
+     "p_era": 0.004166666666666667
+    },
+    "The Long Halloween": {
+     "n_adaptations": 9,
+     "share": 0.09643,
+     "null_joint_mean": 0.52132,
+     "p_joint": 0.00047198172198172197,
+     "null_era_mean": 0.40481,
+     "p_era": 0.004166666666666667
+    },
+    "Hush": {
+     "n_adaptations": 9,
+     "share": 0.07341,
+     "null_joint_mean": 0.48603,
+     "p_joint": 0.00015692640692640693,
+     "null_era_mean": 0.40804,
+     "p_era": 0.002777777777777778
+    },
+    "Batman R.I.P.": {
+     "n_adaptations": 9,
+     "share": 0.08532,
+     "null_joint_mean": 0.48429,
+     "p_joint": 0.0002952140452140452,
+     "null_era_mean": 0.38724,
+     "p_era": 0.002777777777777778
+    },
+    "Earth One": {
+     "n_adaptations": 9,
+     "share": 0.06636,
+     "null_joint_mean": 0.47643,
+     "p_joint": 0.0002453102453102453,
+     "null_era_mean": 0.37778,
+     "p_era": 0.002777777777777778
+    },
+    "White Knight": {
+     "n_adaptations": 9,
+     "share": 0.07716,
+     "null_joint_mean": 0.47037,
+     "p_joint": 0.0003300865800865801,
+     "null_era_mean": 0.39336,
+     "p_era": 0.002777777777777778
+    }
+   },
+   "summary": {
+    "leave1_adaptations_out": {
+     "n": 9,
+     "max_p_joint": 0.0008928571428571428,
+     "worst": "Batman v Superman",
+     "n_p_joint_ge_05": 0,
+     "max_p_era": 0.00625,
+     "worst_era": "Batman v Superman",
+     "n_p_era_ge_05": 0,
+     "max_p_swap": 0.001488095238095238,
+     "n_p_swap_ge_05": 0
+    },
+    "leave2_adaptations_out": {
+     "n": 36,
+     "max_p_joint": 0.004322991822991823,
+     "worst": "Batman v Superman + Under the Red Hood",
+     "n_p_joint_ge_05": 0,
+     "max_p_era": 0.013888888888888888,
+     "worst_era": "Batman v Superman + Under the Red Hood",
+     "n_p_era_ge_05": 0,
+     "max_p_swap": 0.009523809523809525,
+     "n_p_swap_ge_05": 0
+    },
+    "leave3_adaptations_out": {
+     "n": 84,
+     "max_p_joint": 0.008417508417508417,
+     "worst": "Batman Begins + Batman v Superman + Under the Red Hood",
+     "n_p_joint_ge_05": 0,
+     "max_p_era": 0.029166666666666667,
+     "worst_era": "Batman v Superman + Under the Red Hood + Arkham Asylum (game)",
+     "n_p_era_ge_05": 0,
+     "max_p_swap": 0.027777777777777776,
+     "n_p_swap_ge_05": 0
+    },
+    "leave1_comic_out": {
+     "n": 12,
+     "max_p_joint": 0.0035714285714285713,
+     "worst": "The Killing Joke",
+     "n_p_joint_ge_05": 0,
+     "max_p_era": 0.016666666666666666,
+     "worst_era": "Arkham Asylum (comic)",
+     "n_p_era_ge_05": 0
+    }
+   }
+  },
+  "orig": {
+   "n_optional_units": 153281,
+   "primary": {
+    "n_adaptations": 9,
+    "share": 0.1213,
+    "null_joint_mean": 0.47874,
+    "p_joint": 0.0005952380952380953,
+    "null_era_mean": 0.41745,
+    "p_era": 0.004166666666666667,
+    "null_swap_mean": 0.40638,
+    "p_swap": 0.00024250440917107584
+   },
+   "contributions": [
+    {
+     "target": "Batman Begins",
+     "sources": [
+      "Year One"
+     ],
+     "share": 0.0,
+     "rank": 1,
+     "n_compared": 9,
+     "null_expected_share": 0.4861,
+     "marginal_p": 0.1667,
+     "z_by_comic": {
+      "Dark Knight Returns": 0.793,
+      "Year One": 1.43,
+      "The Killing Joke": 0.796,
+      "A Death in the Family": 0.924,
+      "Gotham by Gaslight": 1.142,
+      "Arkham Asylum (comic)": 0.52,
+      "Knightfall": 0.344,
+      "The Long Halloween": 0.753,
+      "Hush": 0.533
+     }
+    },
+    {
+     "target": "The Dark Knight",
+     "sources": [
+      "The Long Halloween",
+      "The Killing Joke"
+     ],
+     "share": 0.125,
+     "rank": 2,
+     "n_compared": 10,
+     "null_expected_share": 0.3579,
+     "marginal_p": 0.3182,
+     "z_by_comic": {
+      "Dark Knight Returns": -0.343,
+      "Year One": 0.214,
+      "The Killing Joke": 0.142,
+      "A Death in the Family": -0.172,
+      "Gotham by Gaslight": -0.074,
+      "Arkham Asylum (comic)": -0.192,
+      "Knightfall": -0.649,
+      "The Long Halloween": -0.227,
+      "Hush": -0.442,
+      "Batman R.I.P.": -0.58
+     }
+    },
+    {
+     "target": "Dark Knight Rises",
+     "sources": [
+      "Knightfall",
+      "Dark Knight Returns"
+     ],
+     "share": 0.3333,
+     "rank": 4,
+     "n_compared": 11,
+     "null_expected_share": 0.3596,
+     "marginal_p": 0.5758,
+     "z_by_comic": {
+      "Dark Knight Returns": 0.069,
+      "Year One": 0.346,
+      "The Killing Joke": -0.276,
+      "A Death in the Family": -0.044,
+      "Gotham by Gaslight": 0.147,
+      "Arkham Asylum (comic)": -0.37,
+      "Knightfall": -0.173,
+      "The Long Halloween": -0.093,
+      "Hush": -0.125,
+      "Batman R.I.P.": -0.173,
+      "Earth One": 0.116
+     }
+    },
+    {
+     "target": "Batman v Superman",
+     "sources": [
+      "Dark Knight Returns"
+     ],
+     "share": 0.0,
+     "rank": 1,
+     "n_compared": 11,
+     "null_expected_share": 0.5189,
+     "marginal_p": 0.0833,
+     "z_by_comic": {
+      "Dark Knight Returns": -0.128,
+      "Year One": -0.455,
+      "The Killing Joke": -0.376,
+      "A Death in the Family": -0.519,
+      "Gotham by Gaslight": -0.655,
+      "Arkham Asylum (comic)": -0.717,
+      "Knightfall": -0.537,
+      "The Long Halloween": -0.8,
+      "Hush": -0.512,
+      "Batman R.I.P.": -0.418,
+      "Earth One": -0.514
+     }
+    },
+    {
+     "target": "Under the Red Hood",
+     "sources": [
+      "A Death in the Family"
+     ],
+     "share": 0.1111,
+     "rank": 2,
+     "n_compared": 10,
+     "null_expected_share": 0.5417,
+     "marginal_p": 0.1667,
+     "z_by_comic": {
+      "Dark Knight Returns": -0.635,
+      "Year One": -0.566,
+      "The Killing Joke": -0.412,
+      "A Death in the Family": -0.369,
+      "Gotham by Gaslight": -0.622,
+      "Arkham Asylum (comic)": -0.702,
+      "Knightfall": -0.626,
+      "The Long Halloween": -0.77,
+      "Hush": -0.366,
+      "Batman R.I.P.": -0.459
+     }
+    },
+    {
+     "target": "Arkham Asylum (game)",
+     "sources": [
+      "Arkham Asylum (comic)"
+     ],
+     "share": 0.2222,
+     "rank": 3,
+     "n_compared": 10,
+     "null_expected_share": 0.5167,
+     "marginal_p": 0.25,
+     "z_by_comic": {
+      "Dark Knight Returns": 0.729,
+      "Year One": 0.473,
+      "The Killing Joke": 0.326,
+      "A Death in the Family": 0.288,
+      "Gotham by Gaslight": 0.6,
+      "Arkham Asylum (comic)": 0.74,
+      "Knightfall": 1.066,
+      "The Long Halloween": 0.647,
+      "Hush": 0.852,
+      "Batman R.I.P.": 0.403
+     }
+    },
+    {
+     "target": "Batman '89",
+     "sources": [
+      "The Killing Joke"
+     ],
+     "share": 0.2,
+     "rank": 2,
+     "n_compared": 6,
+     "null_expected_share": 0.6944,
+     "marginal_p": 0.1667,
+     "z_by_comic": {
+      "Dark Knight Returns": 0.978,
+      "Year One": 1.576,
+      "The Killing Joke": 1.556,
+      "A Death in the Family": 1.226,
+      "Gotham by Gaslight": 1.234,
+      "Arkham Asylum (comic)": 0.951
+     }
+    },
+    {
+     "target": "Joker (2019)",
+     "sources": [
+      "The Killing Joke"
+     ],
+     "share": 0.0,
+     "rank": 1,
+     "n_compared": 12,
+     "null_expected_share": 0.5,
+     "marginal_p": 0.0833,
+     "z_by_comic": {
+      "Dark Knight Returns": -0.191,
+      "Year One": 0.243,
+      "The Killing Joke": 0.608,
+      "A Death in the Family": -0.025,
+      "Gotham by Gaslight": 0.261,
+      "Arkham Asylum (comic)": -0.32,
+      "Knightfall": -0.463,
+      "The Long Halloween": -0.306,
+      "Hush": -0.397,
+      "Batman R.I.P.": -0.1,
+      "Earth One": 0.436,
+      "White Knight": -0.324
+     }
+    },
+    {
+     "target": "The Batman",
+     "sources": [
+      "Year One",
+      "The Long Halloween"
+     ],
+     "share": 0.1,
+     "rank": 2,
+     "n_compared": 12,
+     "null_expected_share": 0.3333,
+     "marginal_p": 0.3182,
+     "z_by_comic": {
+      "Dark Knight Returns": 0.118,
+      "Year One": 1.206,
+      "The Killing Joke": 0.365,
+      "A Death in the Family": 0.886,
+      "Gotham by Gaslight": 1.281,
+      "Arkham Asylum (comic)": 0.625,
+      "Knightfall": -0.027,
+      "The Long Halloween": 1.086,
+      "Hush": 0.529,
+      "Batman R.I.P.": 0.279,
+      "Earth One": 0.985,
+      "White Knight": 0.301
+     }
+    }
+   ],
+   "batch_check": {
+    "n_within_batch": 62,
+    "n_across": 166,
+    "rate_within": 0.2052,
+    "rate_across": 0.2061,
+    "z_within": 0.0008,
+    "z_across": 0.0644
+   },
+   "leave1_adaptations_out": {
+    "Batman Begins": {
+     "n_adaptations": 8,
+     "share": 0.13646,
+     "null_joint_mean": 0.47782,
+     "p_joint": 0.0017416225749559084,
+     "null_era_mean": 0.42536,
+     "p_era": 0.008333333333333333,
+     "null_swap_mean": 0.43386,
+     "p_swap": 0.0008432539682539683
+    },
+    "The Dark Knight": {
+     "n_adaptations": 8,
+     "share": 0.12083,
+     "null_joint_mean": 0.49384,
+     "p_joint": 0.0004950296616963284,
+     "null_era_mean": 0.42927,
+     "p_era": 0.002777777777777778,
+     "null_swap_mean": 0.43953,
+     "p_swap": 0.0005952380952380953
+    },
+    "Dark Knight Rises": {
+     "n_adaptations": 8,
+     "share": 0.09479,
+     "null_joint_mean": 0.49363,
+     "p_joint": 0.0004494348244348244,
+     "null_era_mean": 0.42333,
+     "p_era": 0.002777777777777778,
+     "null_swap_mean": 0.37588,
+     "p_swap": 0.000496031746031746
+    },
+    "Batman v Superman": {
+     "n_adaptations": 8,
+     "share": 0.13646,
+     "null_joint_mean": 0.47372,
+     "p_joint": 0.0027306798140131474,
+     "null_era_mean": 0.41338,
+     "p_era": 0.008333333333333333,
+     "null_swap_mean": 0.40062,
+     "p_swap": 0.001388888888888889
+    },
+    "Under the Red Hood": {
+     "n_adaptations": 8,
+     "share": 0.12257,
+     "null_joint_mean": 0.47088,
+     "p_joint": 0.0018954425204425205,
+     "null_era_mean": 0.40713,
+     "p_era": 0.008333333333333333,
+     "null_swap_mean": 0.38812,
+     "p_swap": 0.001884920634920635
+    },
+    "Arkham Asylum (game)": {
+     "n_adaptations": 8,
+     "share": 0.10868,
+     "null_joint_mean": 0.474,
+     "p_joint": 0.0010191197691197691,
+     "null_era_mean": 0.39324,
+     "p_era": 0.008333333333333333,
+     "null_swap_mean": 0.33791,
+     "p_swap": 0.000992063492063492
+    },
+    "Batman '89": {
+     "n_adaptations": 8,
+     "share": 0.11146,
+     "null_joint_mean": 0.45178,
+     "p_joint": 0.0005694344236010902,
+     "null_era_mean": 0.40713,
+     "p_era": 0.002777777777777778,
+     "null_swap_mean": 0.40442,
+     "p_swap": 0.0004464285714285714
+    },
+    "Joker (2019)": {
+     "n_adaptations": 8,
+     "share": 0.13646,
+     "null_joint_mean": 0.47608,
+     "p_joint": 0.0010947771364438032,
+     "null_era_mean": 0.42607,
+     "p_era": 0.005555555555555556,
+     "null_swap_mean": 0.41678,
+     "p_swap": 0.0007936507936507937
+    },
+    "The Batman": {
+     "n_adaptations": 8,
+     "share": 0.12396,
+     "null_joint_mean": 0.49692,
+     "p_joint": 0.0007064694564694565,
+     "null_era_mean": 0.43213,
+     "p_era": 0.001388888888888889,
+     "null_swap_mean": 0.42019,
+     "p_swap": 0.00029761904761904765
+    }
+   },
+   "leave2_adaptations_out": {
+    "Batman Begins + The Dark Knight": {
+     "n_adaptations": 7,
+     "share": 0.1381,
+     "null_joint_mean": 0.49495,
+     "p_joint": 0.0014034191117524451,
+     "null_era_mean": 0.44,
+     "p_era": 0.006944444444444444,
+     "null_swap_mean": 0.47773,
+     "p_swap": 0.0015873015873015873
+    },
+    "Batman Begins + Dark Knight Rises": {
+     "n_adaptations": 7,
+     "share": 0.10833,
+     "null_joint_mean": 0.49471,
+     "p_joint": 0.001261123136123136,
+     "null_era_mean": 0.43322,
+     "p_era": 0.006944444444444444,
+     "null_swap_mean": 0.39751,
+     "p_swap": 0.001984126984126984
+    },
+    "Batman Begins + Batman v Superman": {
+     "n_adaptations": 7,
+     "share": 0.15595,
+     "null_joint_mean": 0.47195,
+     "p_joint": 0.008149450857784192,
+     "null_era_mean": 0.42184,
+     "p_era": 0.018055555555555554,
+     "null_swap_mean": 0.43449,
+     "p_swap": 0.0035714285714285713
+    },
+    "Batman Begins + Under the Red Hood": {
+     "n_adaptations": 7,
+     "share": 0.14008,
+     "null_joint_mean": 0.4687,
+     "p_joint": 0.005224867724867725,
+     "null_era_mean": 0.4147,
+     "p_era": 0.013888888888888888,
+     "null_swap_mean": 0.416,
+     "p_swap": 0.006746031746031746
+    },
+    "Batman Begins + Arkham Asylum (game)": {
+     "n_adaptations": 7,
+     "share": 0.12421,
+     "null_joint_mean": 0.47227,
+     "p_joint": 0.0028394059644059645,
+     "null_era_mean": 0.39882,
+     "p_era": 0.013888888888888888,
+     "null_swap_mean": 0.36772,
+     "p_swap": 0.003968253968253968
+    },
+    "Batman Begins + Batman '89": {
+     "n_adaptations": 7,
+     "share": 0.12738,
+     "null_joint_mean": 0.44687,
+     "p_joint": 0.0018713924963924965,
+     "null_era_mean": 0.4147,
+     "p_era": 0.005555555555555556,
+     "null_swap_mean": 0.43078,
+     "p_swap": 0.0017857142857142857
+    },
+    "Batman Begins + Joker (2019)": {
+     "n_adaptations": 7,
+     "share": 0.15595,
+     "null_joint_mean": 0.47465,
+     "p_joint": 0.0033745189995189996,
+     "null_era_mean": 0.43634,
+     "p_era": 0.010416666666666666,
+     "null_swap_mean": 0.45249,
+     "p_swap": 0.0025793650793650793
+    },
+    "Batman Begins + The Batman": {
+     "n_adaptations": 7,
+     "share": 0.14167,
+     "null_joint_mean": 0.49846,
+     "p_joint": 0.0029746873496873496,
+     "null_era_mean": 0.44327,
+     "p_era": 0.008333333333333333,
+     "null_swap_mean": 0.44558,
+     "p_swap": 0.002380952380952381
+    },
+    "The Dark Knight + Dark Knight Rises": {
+     "n_adaptations": 7,
+     "share": 0.09048,
+     "null_joint_mean": 0.51302,
+     "p_joint": 0.00032317219817219815,
+     "null_era_mean": 0.43768,
+     "p_era": 0.001388888888888889,
+     "null_swap_mean": 0.4199,
+     "p_swap": 0.0007936507936507937
+    },
+    "The Dark Knight + Batman v Superman": {
+     "n_adaptations": 7,
+     "share": 0.1381,
+     "null_joint_mean": 0.49026,
+     "p_joint": 0.00231681898348565,
+     "null_era_mean": 0.4263,
+     "p_era": 0.006944444444444444,
+     "null_swap_mean": 0.44144,
+     "p_swap": 0.0031746031746031746
+    },
+    "The Dark Knight + Under the Red Hood": {
+     "n_adaptations": 7,
+     "share": 0.12222,
+     "null_joint_mean": 0.48701,
+     "p_joint": 0.0015873015873015873,
+     "null_era_mean": 0.41916,
+     "p_era": 0.005555555555555556,
+     "null_swap_mean": 0.42114,
+     "p_swap": 0.003968253968253968
+    },
+    "The Dark Knight + Arkham Asylum (game)": {
+     "n_adaptations": 7,
+     "share": 0.10635,
+     "null_joint_mean": 0.49058,
+     "p_joint": 0.0008222101972101973,
+     "null_era_mean": 0.40329,
+     "p_era": 0.005555555555555556,
+     "null_swap_mean": 0.36294,
+     "p_swap": 0.0015873015873015873
+    },
+    "The Dark Knight + Batman '89": {
+     "n_adaptations": 7,
+     "share": 0.10952,
+     "null_joint_mean": 0.46519,
+     "p_joint": 0.0007235048901715568,
+     "null_era_mean": 0.41916,
+     "p_era": 0.002777777777777778,
+     "null_swap_mean": 0.43688,
+     "p_swap": 0.0011904761904761906
+    },
+    "The Dark Knight + Joker (2019)": {
+     "n_adaptations": 7,
+     "share": 0.1381,
+     "null_joint_mean": 0.49297,
+     "p_joint": 0.0008765732724066057,
+     "null_era_mean": 0.44081,
+     "p_era": 0.005555555555555556,
+     "null_swap_mean": 0.44894,
+     "p_swap": 0.002380952380952381
+    },
+    "The Dark Knight + The Batman": {
+     "n_adaptations": 7,
+     "share": 0.12381,
+     "null_joint_mean": 0.51677,
+     "p_joint": 0.0005711880711880712,
+     "null_era_mean": 0.44773,
+     "p_era": 0.001388888888888889,
+     "null_swap_mean": 0.45521,
+     "p_swap": 0.0007936507936507937
+    },
+    "Dark Knight Rises + Batman v Superman": {
+     "n_adaptations": 7,
+     "share": 0.10833,
+     "null_joint_mean": 0.49002,
+     "p_joint": 0.002441077441077441,
+     "null_era_mean": 0.41953,
+     "p_era": 0.005555555555555556,
+     "null_swap_mean": 0.34856,
+     "p_swap": 0.003968253968253968
+    },
+    "Dark Knight Rises + Under the Red Hood": {
+     "n_adaptations": 7,
+     "share": 0.09246,
+     "null_joint_mean": 0.48677,
+     "p_joint": 0.0014941077441077441,
+     "null_era_mean": 0.41238,
+     "p_era": 0.005555555555555556,
+     "null_swap_mean": 0.34957,
+     "p_swap": 0.003968253968253968
+    },
+    "Dark Knight Rises + Arkham Asylum (game)": {
+     "n_adaptations": 7,
+     "share": 0.07659,
+     "null_joint_mean": 0.49034,
+     "p_joint": 0.0006944444444444445,
+     "null_era_mean": 0.39651,
+     "p_era": 0.005555555555555556,
+     "null_swap_mean": 0.28094,
+     "p_swap": 0.003968253968253968
+    },
+    "Dark Knight Rises + Batman '89": {
+     "n_adaptations": 7,
+     "share": 0.07976,
+     "null_joint_mean": 0.46495,
+     "p_joint": 0.00035173160173160176,
+     "null_era_mean": 0.41238,
+     "p_era": 0.001388888888888889,
+     "null_swap_mean": 0.3821,
+     "p_swap": 0.0011904761904761906
+    },
+    "Dark Knight Rises + Joker (2019)": {
+     "n_adaptations": 7,
+     "share": 0.10833,
+     "null_joint_mean": 0.49272,
+     "p_joint": 0.0010627104377104377,
+     "null_era_mean": 0.43403,
+     "p_era": 0.006944444444444444,
+     "null_swap_mean": 0.39416,
+     "p_swap": 0.0015873015873015873
+    },
+    "Dark Knight Rises + The Batman": {
+     "n_adaptations": 7,
+     "share": 0.09405,
+     "null_joint_mean": 0.51653,
+     "p_joint": 0.0005065536315536315,
+     "null_era_mean": 0.44095,
+     "p_era": 0.001388888888888889,
+     "null_swap_mean": 0.38841,
+     "p_swap": 0.0011904761904761906
+    },
+    "Batman v Superman + Under the Red Hood": {
+     "n_adaptations": 7,
+     "share": 0.14008,
+     "null_joint_mean": 0.46401,
+     "p_joint": 0.008594877344877344,
+     "null_era_mean": 0.40101,
+     "p_era": 0.016666666666666666,
+     "null_swap_mean": 0.38654,
+     "p_swap": 0.00873015873015873
+    },
+    "Batman v Superman + Arkham Asylum (game)": {
+     "n_adaptations": 7,
+     "share": 0.12421,
+     "null_joint_mean": 0.46758,
+     "p_joint": 0.004617604617604618,
+     "null_era_mean": 0.38513,
+     "p_era": 0.011111111111111112,
+     "null_swap_mean": 0.31802,
+     "p_swap": 0.003968253968253968
+    },
+    "Batman v Superman + Batman '89": {
+     "n_adaptations": 7,
+     "share": 0.12738,
+     "null_joint_mean": 0.44218,
+     "p_joint": 0.0027056277056277055,
+     "null_era_mean": 0.40101,
+     "p_era": 0.006944444444444444,
+     "null_swap_mean": 0.39809,
+     "p_swap": 0.002380952380952381
+    },
+    "Batman v Superman + Joker (2019)": {
+     "n_adaptations": 7,
+     "share": 0.15595,
+     "null_joint_mean": 0.46996,
+     "p_joint": 0.004656184864518198,
+     "null_era_mean": 0.42265,
+     "p_era": 0.013194444444444444,
+     "null_swap_mean": 0.40903,
+     "p_swap": 0.003968253968253968
+    },
+    "Batman v Superman + The Batman": {
+     "n_adaptations": 7,
+     "share": 0.14167,
+     "null_joint_mean": 0.49377,
+     "p_joint": 0.003488255571588905,
+     "null_era_mean": 0.42958,
+     "p_era": 0.006944444444444444,
+     "null_swap_mean": 0.42568,
+     "p_swap": 0.0011904761904761906
+    },
+    "Under the Red Hood + Arkham Asylum (game)": {
+     "n_adaptations": 7,
+     "share": 0.10833,
+     "null_joint_mean": 0.46433,
+     "p_joint": 0.00352483164983165,
+     "null_era_mean": 0.37799,
+     "p_era": 0.025,
+     "null_swap_mean": 0.31506,
+     "p_swap": 0.007936507936507936
+    },
+    "Under the Red Hood + Batman '89": {
+     "n_adaptations": 7,
+     "share": 0.11151,
+     "null_joint_mean": 0.43894,
+     "p_joint": 0.0017631673881673882,
+     "null_era_mean": 0.39386,
+     "p_era": 0.005555555555555556,
+     "null_swap_mean": 0.38016,
+     "p_swap": 0.0035714285714285713
+    },
+    "Under the Red Hood + Joker (2019)": {
+     "n_adaptations": 7,
+     "share": 0.14008,
+     "null_joint_mean": 0.46671,
+     "p_joint": 0.0030348124098124097,
+     "null_era_mean": 0.41551,
+     "p_era": 0.008333333333333333,
+     "null_swap_mean": 0.39148,
+     "p_swap": 0.005555555555555556
+    },
+    "Under the Red Hood + The Batman": {
+     "n_adaptations": 7,
+     "share": 0.12579,
+     "null_joint_mean": 0.49052,
+     "p_joint": 0.002371933621933622,
+     "null_era_mean": 0.42244,
+     "p_era": 0.002777777777777778,
+     "null_swap_mean": 0.40161,
+     "p_swap": 0.002380952380952381
+    },
+    "Arkham Asylum (game) + Batman '89": {
+     "n_adaptations": 7,
+     "share": 0.09563,
+     "null_joint_mean": 0.44251,
+     "p_joint": 0.0008372414622414622,
+     "null_era_mean": 0.37799,
+     "p_era": 0.005555555555555556,
+     "null_swap_mean": 0.33636,
+     "p_swap": 0.002380952380952381
+    },
+    "Arkham Asylum (game) + Joker (2019)": {
+     "n_adaptations": 7,
+     "share": 0.12421,
+     "null_joint_mean": 0.47029,
+     "p_joint": 0.0018172799422799422,
+     "null_era_mean": 0.39964,
+     "p_era": 0.011111111111111112,
+     "null_swap_mean": 0.34694,
+     "p_swap": 0.0031746031746031746
+    },
+    "Arkham Asylum (game) + The Batman": {
+     "n_adaptations": 7,
+     "share": 0.10992,
+     "null_joint_mean": 0.4941,
+     "p_joint": 0.0012175324675324675,
+     "null_era_mean": 0.40656,
+     "p_era": 0.002777777777777778,
+     "null_swap_mean": 0.33789,
+     "p_swap": 0.002380952380952381
+    },
+    "Batman '89 + Joker (2019)": {
+     "n_adaptations": 7,
+     "share": 0.12738,
+     "null_joint_mean": 0.44489,
+     "p_joint": 0.0019928952220618886,
+     "null_era_mean": 0.41551,
+     "p_era": 0.004166666666666667,
+     "null_swap_mean": 0.40491,
+     "p_swap": 0.002380952380952381
+    },
+    "Batman '89 + The Batman": {
+     "n_adaptations": 7,
+     "share": 0.1131,
+     "null_joint_mean": 0.4687,
+     "p_joint": 0.0006363235529902196,
+     "null_era_mean": 0.42244,
+     "p_era": 0.001388888888888889,
+     "null_swap_mean": 0.41827,
+     "p_swap": 0.0007936507936507937
+    },
+    "Joker (2019) + The Batman": {
+     "n_adaptations": 7,
+     "share": 0.14167,
+     "null_joint_mean": 0.49648,
+     "p_joint": 0.0013578242744909411,
+     "null_era_mean": 0.44408,
+     "p_era": 0.004166666666666667,
+     "null_swap_mean": 0.44053,
+     "p_swap": 0.0007936507936507937
+    }
+   },
+   "leave3_adaptations_out": {
+    "Batman Begins + The Dark Knight + Dark Knight Rises": {
+     "n_adaptations": 6,
+     "share": 0.10556,
+     "null_joint_mean": 0.51751,
+     "p_joint": 0.0008688071188071189,
+     "null_era_mean": 0.4516,
+     "p_era": 0.004166666666666667,
+     "null_swap_mean": 0.45626,
+     "p_swap": 0.002777777777777778
+    },
+    "Batman Begins + The Dark Knight + Batman v Superman": {
+     "n_adaptations": 6,
+     "share": 0.16111,
+     "null_joint_mean": 0.49095,
+     "p_joint": 0.006714967131633798,
+     "null_era_mean": 0.43833,
+     "p_era": 0.013888888888888888,
+     "null_swap_mean": 0.49193,
+     "p_swap": 0.005555555555555556
+    },
+    "Batman Begins + The Dark Knight + Under the Red Hood": {
+     "n_adaptations": 6,
+     "share": 0.14259,
+     "null_joint_mean": 0.48716,
+     "p_joint": 0.00447029822029822,
+     "null_era_mean": 0.42999,
+     "p_era": 0.013888888888888888,
+     "null_swap_mean": 0.46136,
+     "p_swap": 0.011111111111111112
+    },
+    "Batman Begins + The Dark Knight + Arkham Asylum (game)": {
+     "n_adaptations": 6,
+     "share": 0.12407,
+     "null_joint_mean": 0.49133,
+     "p_joint": 0.002284752284752285,
+     "null_era_mean": 0.41148,
+     "p_era": 0.011111111111111112,
+     "null_swap_mean": 0.40568,
+     "p_swap": 0.005555555555555556
+    },
+    "Batman Begins + The Dark Knight + Batman '89": {
+     "n_adaptations": 6,
+     "share": 0.12778,
+     "null_joint_mean": 0.4617,
+     "p_joint": 0.002244668911335578,
+     "null_era_mean": 0.42999,
+     "p_era": 0.005555555555555556,
+     "null_swap_mean": 0.47392,
+     "p_swap": 0.004166666666666667
+    },
+    "Batman Begins + The Dark Knight + Joker (2019)": {
+     "n_adaptations": 6,
+     "share": 0.16111,
+     "null_joint_mean": 0.49411,
+     "p_joint": 0.0027306798140131474,
+     "null_era_mean": 0.45525,
+     "p_era": 0.009027777777777777,
+     "null_swap_mean": 0.49791,
+     "p_swap": 0.005555555555555556
+    },
+    "Batman Begins + The Dark Knight + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.14444,
+     "null_joint_mean": 0.52189,
+     "p_joint": 0.0024726430976430977,
+     "null_era_mean": 0.46333,
+     "p_era": 0.005555555555555556,
+     "null_swap_mean": 0.49098,
+     "p_swap": 0.005555555555555556
+    },
+    "Batman Begins + Dark Knight Rises + Batman v Superman": {
+     "n_adaptations": 6,
+     "share": 0.12639,
+     "null_joint_mean": 0.49067,
+     "p_joint": 0.006755050505050505,
+     "null_era_mean": 0.43042,
+     "p_era": 0.013888888888888888,
+     "null_swap_mean": 0.36948,
+     "p_swap": 0.013888888888888888
+    },
+    "Batman Begins + Dark Knight Rises + Under the Red Hood": {
+     "n_adaptations": 6,
+     "share": 0.10787,
+     "null_joint_mean": 0.48688,
+     "p_joint": 0.003977272727272727,
+     "null_era_mean": 0.42209,
+     "p_era": 0.011111111111111112,
+     "null_swap_mean": 0.36792,
+     "p_swap": 0.013888888888888888
+    },
+    "Batman Begins + Dark Knight Rises + Arkham Asylum (game)": {
+     "n_adaptations": 6,
+     "share": 0.08935,
+     "null_joint_mean": 0.49105,
+     "p_joint": 0.002178030303030303,
+     "null_era_mean": 0.40357,
+     "p_era": 0.013888888888888888,
+     "null_swap_mean": 0.29804,
+     "p_swap": 0.013888888888888888
+    },
+    "Batman Begins + Dark Knight Rises + Batman '89": {
+     "n_adaptations": 6,
+     "share": 0.09306,
+     "null_joint_mean": 0.46142,
+     "p_joint": 0.001152898027898028,
+     "null_era_mean": 0.42209,
+     "p_era": 0.002777777777777778,
+     "null_swap_mean": 0.40332,
+     "p_swap": 0.004166666666666667
+    },
+    "Batman Begins + Dark Knight Rises + Joker (2019)": {
+     "n_adaptations": 6,
+     "share": 0.12639,
+     "null_joint_mean": 0.49383,
+     "p_joint": 0.003115981240981241,
+     "null_era_mean": 0.44734,
+     "p_era": 0.011111111111111112,
+     "null_swap_mean": 0.42731,
+     "p_swap": 0.005555555555555556
+    },
+    "Batman Begins + Dark Knight Rises + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.10972,
+     "null_joint_mean": 0.5216,
+     "p_joint": 0.0019886363636363634,
+     "null_era_mean": 0.45542,
+     "p_era": 0.005555555555555556,
+     "null_swap_mean": 0.40402,
+     "p_swap": 0.008333333333333333
+    },
+    "Batman Begins + Batman v Superman + Under the Red Hood": {
+     "n_adaptations": 6,
+     "share": 0.16343,
+     "null_joint_mean": 0.46033,
+     "p_joint": 0.025444925444925444,
+     "null_era_mean": 0.40881,
+     "p_era": 0.043055555555555555,
+     "null_swap_mean": 0.42459,
+     "p_swap": 0.025
+    },
+    "Batman Begins + Batman v Superman + Arkham Asylum (game)": {
+     "n_adaptations": 6,
+     "share": 0.14491,
+     "null_joint_mean": 0.46449,
+     "p_joint": 0.013843795093795094,
+     "null_era_mean": 0.3903,
+     "p_era": 0.030555555555555555,
+     "null_swap_mean": 0.35486,
+     "p_swap": 0.013888888888888888
+    },
+    "Batman Begins + Batman v Superman + Batman '89": {
+     "n_adaptations": 6,
+     "share": 0.14861,
+     "null_joint_mean": 0.43486,
+     "p_joint": 0.008903018278018277,
+     "null_era_mean": 0.40881,
+     "p_era": 0.011111111111111112,
+     "null_swap_mean": 0.43143,
+     "p_swap": 0.008333333333333333
+    },
+    "Batman Begins + Batman v Superman + Joker (2019)": {
+     "n_adaptations": 6,
+     "share": 0.18194,
+     "null_joint_mean": 0.46727,
+     "p_joint": 0.014444043610710278,
+     "null_era_mean": 0.43407,
+     "p_era": 0.02847222222222222,
+     "null_swap_mean": 0.45391,
+     "p_swap": 0.009722222222222222
+    },
+    "Batman Begins + Batman v Superman + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.16528,
+     "null_joint_mean": 0.49505,
+     "p_joint": 0.015644540644540645,
+     "null_era_mean": 0.44215,
+     "p_era": 0.030555555555555555,
+     "null_swap_mean": 0.46109,
+     "p_swap": 0.008333333333333333
+    },
+    "Batman Begins + Under the Red Hood + Arkham Asylum (game)": {
+     "n_adaptations": 6,
+     "share": 0.12639,
+     "null_joint_mean": 0.4607,
+     "p_joint": 0.008712121212121213,
+     "null_era_mean": 0.38196,
+     "p_era": 0.03333333333333333,
+     "null_swap_mean": 0.3479,
+     "p_swap": 0.027777777777777776
+    },
+    "Batman Begins + Under the Red Hood + Batman '89": {
+     "n_adaptations": 6,
+     "share": 0.13009,
+     "null_joint_mean": 0.43107,
+     "p_joint": 0.005648749398749399,
+     "null_era_mean": 0.40048,
+     "p_era": 0.011111111111111112,
+     "null_swap_mean": 0.4041,
+     "p_swap": 0.0125
+    },
+    "Batman Begins + Under the Red Hood + Joker (2019)": {
+     "n_adaptations": 6,
+     "share": 0.16343,
+     "null_joint_mean": 0.46348,
+     "p_joint": 0.009444143819143819,
+     "null_era_mean": 0.42573,
+     "p_era": 0.019444444444444445,
+     "null_swap_mean": 0.42708,
+     "p_swap": 0.018055555555555554
+    },
+    "Batman Begins + Under the Red Hood + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.14676,
+     "null_joint_mean": 0.49126,
+     "p_joint": 0.009880050505050504,
+     "null_era_mean": 0.43381,
+     "p_era": 0.025,
+     "null_swap_mean": 0.4254,
+     "p_swap": 0.016666666666666666
+    },
+    "Batman Begins + Arkham Asylum (game) + Batman '89": {
+     "n_adaptations": 6,
+     "share": 0.11157,
+     "null_joint_mean": 0.43524,
+     "p_joint": 0.002788299663299663,
+     "null_era_mean": 0.38196,
+     "p_era": 0.008333333333333333,
+     "null_swap_mean": 0.36802,
+     "p_swap": 0.008333333333333333
+    },
+    "Batman Begins + Arkham Asylum (game) + Joker (2019)": {
+     "n_adaptations": 6,
+     "share": 0.14491,
+     "null_joint_mean": 0.46765,
+     "p_joint": 0.005608164983164983,
+     "null_era_mean": 0.40721,
+     "p_era": 0.020833333333333332,
+     "null_swap_mean": 0.38999,
+     "p_swap": 0.011111111111111112
+    },
+    "Batman Begins + Arkham Asylum (game) + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.12824,
+     "null_joint_mean": 0.49543,
+     "p_joint": 0.006102693602693603,
+     "null_era_mean": 0.4153,
+     "p_era": 0.025,
+     "null_swap_mean": 0.36221,
+     "p_swap": 0.016666666666666666
+    },
+    "Batman Begins + Batman '89 + Joker (2019)": {
+     "n_adaptations": 6,
+     "share": 0.14861,
+     "null_joint_mean": 0.43802,
+     "p_joint": 0.0067292468334135,
+     "null_era_mean": 0.42573,
+     "p_era": 0.009027777777777777,
+     "null_swap_mean": 0.43648,
+     "p_swap": 0.008333333333333333
+    },
+    "Batman Begins + Batman '89 + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.13194,
+     "null_joint_mean": 0.4658,
+     "p_joint": 0.0029852092352092353,
+     "null_era_mean": 0.43381,
+     "p_era": 0.005555555555555556,
+     "null_swap_mean": 0.4392,
+     "p_swap": 0.005555555555555556
+    },
+    "Batman Begins + Joker (2019) + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.16528,
+     "null_joint_mean": 0.4982,
+     "p_joint": 0.006006493506493507,
+     "null_era_mean": 0.45907,
+     "p_era": 0.0125,
+     "null_swap_mean": 0.47708,
+     "p_swap": 0.005555555555555556
+    },
+    "The Dark Knight + Dark Knight Rises + Batman v Superman": {
+     "n_adaptations": 6,
+     "share": 0.10556,
+     "null_joint_mean": 0.51204,
+     "p_joint": 0.001851851851851852,
+     "null_era_mean": 0.43563,
+     "p_era": 0.002777777777777778,
+     "null_swap_mean": 0.39933,
+     "p_swap": 0.005555555555555556
+    },
+    "The Dark Knight + Dark Knight Rises + Under the Red Hood": {
+     "n_adaptations": 6,
+     "share": 0.08704,
+     "null_joint_mean": 0.50825,
+     "p_joint": 0.0010311447811447811,
+     "null_era_mean": 0.42729,
+     "p_era": 0.002777777777777778,
+     "null_swap_mean": 0.39531,
+     "p_swap": 0.005555555555555556
+    },
+    "The Dark Knight + Dark Knight Rises + Arkham Asylum (game)": {
+     "n_adaptations": 6,
+     "share": 0.06852,
+     "null_joint_mean": 0.51242,
+     "p_joint": 0.00044191919191919195,
+     "null_era_mean": 0.40878,
+     "p_era": 0.002777777777777778,
+     "null_swap_mean": 0.31192,
+     "p_swap": 0.005555555555555556
+    },
+    "The Dark Knight + Dark Knight Rises + Batman '89": {
+     "n_adaptations": 6,
+     "share": 0.07222,
+     "null_joint_mean": 0.48279,
+     "p_joint": 0.00040584415584415587,
+     "null_era_mean": 0.42729,
+     "p_era": 0.001388888888888889,
+     "null_swap_mean": 0.43201,
+     "p_swap": 0.002777777777777778
+    },
+    "The Dark Knight + Dark Knight Rises + Joker (2019)": {
+     "n_adaptations": 6,
+     "share": 0.10556,
+     "null_joint_mean": 0.51519,
+     "p_joint": 0.0007275132275132275,
+     "null_era_mean": 0.45255,
+     "p_era": 0.005555555555555556,
+     "null_swap_mean": 0.44287,
+     "p_swap": 0.002777777777777778
+    },
+    "The Dark Knight + Dark Knight Rises + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.08889,
+     "null_joint_mean": 0.54297,
+     "p_joint": 0.00034722222222222224,
+     "null_era_mean": 0.46063,
+     "p_era": 0.001388888888888889,
+     "null_swap_mean": 0.43752,
+     "p_swap": 0.002777777777777778
+    },
+    "The Dark Knight + Batman v Superman + Under the Red Hood": {
+     "n_adaptations": 6,
+     "share": 0.14259,
+     "null_joint_mean": 0.48169,
+     "p_joint": 0.007299182299182299,
+     "null_era_mean": 0.41402,
+     "p_era": 0.013888888888888888,
+     "null_swap_mean": 0.43096,
+     "p_swap": 0.016666666666666666
+    },
+    "The Dark Knight + Batman v Superman + Arkham Asylum (game)": {
+     "n_adaptations": 6,
+     "share": 0.12407,
+     "null_joint_mean": 0.48586,
+     "p_joint": 0.003805916305916306,
+     "null_era_mean": 0.3955,
+     "p_era": 0.008333333333333333,
+     "null_swap_mean": 0.34773,
+     "p_swap": 0.005555555555555556
+    },
+    "The Dark Knight + Batman v Superman + Batman '89": {
+     "n_adaptations": 6,
+     "share": 0.12778,
+     "null_joint_mean": 0.45623,
+     "p_joint": 0.003363997113997114,
+     "null_era_mean": 0.41402,
+     "p_era": 0.006944444444444444,
+     "null_swap_mean": 0.43912,
+     "p_swap": 0.005555555555555556
+    },
+    "The Dark Knight + Batman v Superman + Joker (2019)": {
+     "n_adaptations": 6,
+     "share": 0.16111,
+     "null_joint_mean": 0.48864,
+     "p_joint": 0.0041005291005291,
+     "null_era_mean": 0.43927,
+     "p_era": 0.009722222222222222,
+     "null_swap_mean": 0.44846,
+     "p_swap": 0.011111111111111112
+    },
+    "The Dark Knight + Batman v Superman + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.14444,
+     "null_joint_mean": 0.51641,
+     "p_joint": 0.002876984126984127,
+     "null_era_mean": 0.44736,
+     "p_era": 0.006944444444444444,
+     "null_swap_mean": 0.47358,
+     "p_swap": 0.002777777777777778
+    },
+    "The Dark Knight + Under the Red Hood + Arkham Asylum (game)": {
+     "n_adaptations": 6,
+     "share": 0.10556,
+     "null_joint_mean": 0.48207,
+     "p_joint": 0.002577861952861953,
+     "null_era_mean": 0.38717,
+     "p_era": 0.016666666666666666,
+     "null_swap_mean": 0.33831,
+     "p_swap": 0.011111111111111112
+    },
+    "The Dark Knight + Under the Red Hood + Batman '89": {
+     "n_adaptations": 6,
+     "share": 0.10926,
+     "null_joint_mean": 0.45244,
+     "p_joint": 0.0021975709475709477,
+     "null_era_mean": 0.40569,
+     "p_era": 0.005555555555555556,
+     "null_swap_mean": 0.40932,
+     "p_swap": 0.008333333333333333
+    },
+    "The Dark Knight + Under the Red Hood + Joker (2019)": {
+     "n_adaptations": 6,
+     "share": 0.14259,
+     "null_joint_mean": 0.48485,
+     "p_joint": 0.0025748556998557,
+     "null_era_mean": 0.43094,
+     "p_era": 0.008333333333333333,
+     "null_swap_mean": 0.41917,
+     "p_swap": 0.013888888888888888
+    },
+    "The Dark Knight + Under the Red Hood + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.12593,
+     "null_joint_mean": 0.51263,
+     "p_joint": 0.001914983164983165,
+     "null_era_mean": 0.43902,
+     "p_era": 0.002777777777777778,
+     "null_swap_mean": 0.43542,
+     "p_swap": 0.005555555555555556
+    },
+    "The Dark Knight + Arkham Asylum (game) + Batman '89": {
+     "n_adaptations": 6,
+     "share": 0.09074,
+     "null_joint_mean": 0.45661,
+     "p_joint": 0.0010446729196729196,
+     "null_era_mean": 0.38717,
+     "p_era": 0.005555555555555556,
+     "null_swap_mean": 0.35974,
+     "p_swap": 0.005555555555555556
+    },
+    "The Dark Knight + Arkham Asylum (game) + Joker (2019)": {
+     "n_adaptations": 6,
+     "share": 0.12407,
+     "null_joint_mean": 0.48902,
+     "p_joint": 0.0013843795093795093,
+     "null_era_mean": 0.41242,
+     "p_era": 0.011111111111111112,
+     "null_swap_mean": 0.36857,
+     "p_swap": 0.005555555555555556
+    },
+    "The Dark Knight + Arkham Asylum (game) + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.10741,
+     "null_joint_mean": 0.51679,
+     "p_joint": 0.000946969696969697,
+     "null_era_mean": 0.4205,
+     "p_era": 0.002777777777777778,
+     "null_swap_mean": 0.35873,
+     "p_swap": 0.005555555555555556
+    },
+    "The Dark Knight + Batman '89 + Joker (2019)": {
+     "n_adaptations": 6,
+     "share": 0.12778,
+     "null_joint_mean": 0.45939,
+     "p_joint": 0.004268879268879269,
+     "null_era_mean": 0.43094,
+     "p_era": 0.005555555555555556,
+     "null_swap_mean": 0.42988,
+     "p_swap": 0.008333333333333333
+    },
+    "The Dark Knight + Batman '89 + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.11111,
+     "null_joint_mean": 0.48716,
+     "p_joint": 0.0008011664261664261,
+     "null_era_mean": 0.43902,
+     "p_era": 0.001388888888888889,
+     "null_swap_mean": 0.45054,
+     "p_swap": 0.002777777777777778
+    },
+    "The Dark Knight + Joker (2019) + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.14444,
+     "null_joint_mean": 0.51957,
+     "p_joint": 0.0010386604136604137,
+     "null_era_mean": 0.46427,
+     "p_era": 0.002777777777777778,
+     "null_swap_mean": 0.47529,
+     "p_swap": 0.002777777777777778
+    },
+    "Dark Knight Rises + Batman v Superman + Under the Red Hood": {
+     "n_adaptations": 6,
+     "share": 0.10787,
+     "null_joint_mean": 0.48141,
+     "p_joint": 0.008838383838383838,
+     "null_era_mean": 0.40611,
+     "p_era": 0.016666666666666666,
+     "null_swap_mean": 0.32028,
+     "p_swap": 0.027777777777777776
+    },
+    "Dark Knight Rises + Batman v Superman + Arkham Asylum (game)": {
+     "n_adaptations": 6,
+     "share": 0.08935,
+     "null_joint_mean": 0.48558,
+     "p_joint": 0.0047138047138047135,
+     "null_era_mean": 0.38759,
+     "p_era": 0.016666666666666666,
+     "null_swap_mean": 0.22285,
+     "p_swap": 0.027777777777777776
+    },
+    "Dark Knight Rises + Batman v Superman + Batman '89": {
+     "n_adaptations": 6,
+     "share": 0.09306,
+     "null_joint_mean": 0.45595,
+     "p_joint": 0.001999158249158249,
+     "null_era_mean": 0.40611,
+     "p_era": 0.002777777777777778,
+     "null_swap_mean": 0.35128,
+     "p_swap": 0.008333333333333333
+    },
+    "Dark Knight Rises + Batman v Superman + Joker (2019)": {
+     "n_adaptations": 6,
+     "share": 0.12639,
+     "null_joint_mean": 0.48836,
+     "p_joint": 0.004829545454545454,
+     "null_era_mean": 0.43137,
+     "p_era": 0.013888888888888888,
+     "null_swap_mean": 0.36062,
+     "p_swap": 0.011111111111111112
+    },
+    "Dark Knight Rises + Batman v Superman + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.10972,
+     "null_joint_mean": 0.51613,
+     "p_joint": 0.0029145622895622894,
+     "null_era_mean": 0.43945,
+     "p_era": 0.002777777777777778,
+     "null_swap_mean": 0.36938,
+     "p_swap": 0.008333333333333333
+    },
+    "Dark Knight Rises + Under the Red Hood + Arkham Asylum (game)": {
+     "n_adaptations": 6,
+     "share": 0.07083,
+     "null_joint_mean": 0.48179,
+     "p_joint": 0.001936026936026936,
+     "null_era_mean": 0.37926,
+     "p_era": 0.016666666666666666,
+     "null_swap_mean": 0.24244,
+     "p_swap": 0.027777777777777776
+    },
+    "Dark Knight Rises + Under the Red Hood + Batman '89": {
+     "n_adaptations": 6,
+     "share": 0.07454,
+     "null_joint_mean": 0.45216,
+     "p_joint": 0.0010837542087542087,
+     "null_era_mean": 0.39778,
+     "p_era": 0.002777777777777778,
+     "null_swap_mean": 0.35049,
+     "p_swap": 0.008333333333333333
+    },
+    "Dark Knight Rises + Under the Red Hood + Joker (2019)": {
+     "n_adaptations": 6,
+     "share": 0.10787,
+     "null_joint_mean": 0.48457,
+     "p_joint": 0.002925084175084175,
+     "null_era_mean": 0.42303,
+     "p_era": 0.011111111111111112,
+     "null_swap_mean": 0.36034,
+     "p_swap": 0.011111111111111112
+    },
+    "Dark Knight Rises + Under the Red Hood + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.0912,
+     "null_joint_mean": 0.51235,
+     "p_joint": 0.001672979797979798,
+     "null_era_mean": 0.43111,
+     "p_era": 0.002777777777777778,
+     "null_swap_mean": 0.36024,
+     "p_swap": 0.008333333333333333
+    },
+    "Dark Knight Rises + Arkham Asylum (game) + Batman '89": {
+     "n_adaptations": 6,
+     "share": 0.05602,
+     "null_joint_mean": 0.45633,
+     "p_joint": 0.00044191919191919195,
+     "null_era_mean": 0.37926,
+     "p_era": 0.002777777777777778,
+     "null_swap_mean": 0.28671,
+     "p_swap": 0.008333333333333333
+    },
+    "Dark Knight Rises + Arkham Asylum (game) + Joker (2019)": {
+     "n_adaptations": 6,
+     "share": 0.08935,
+     "null_joint_mean": 0.48873,
+     "p_joint": 0.0017045454545454545,
+     "null_era_mean": 0.40451,
+     "p_era": 0.011111111111111112,
+     "null_swap_mean": 0.29555,
+     "p_swap": 0.011111111111111112
+    },
+    "Dark Knight Rises + Arkham Asylum (game) + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.07269,
+     "null_joint_mean": 0.51651,
+     "p_joint": 0.000726010101010101,
+     "null_era_mean": 0.41259,
+     "p_era": 0.002777777777777778,
+     "null_swap_mean": 0.26935,
+     "p_swap": 0.008333333333333333
+    },
+    "Dark Knight Rises + Batman '89 + Joker (2019)": {
+     "n_adaptations": 6,
+     "share": 0.09306,
+     "null_joint_mean": 0.4591,
+     "p_joint": 0.0015001202501202502,
+     "null_era_mean": 0.42303,
+     "p_era": 0.004166666666666667,
+     "null_swap_mean": 0.39389,
+     "p_swap": 0.005555555555555556
+    },
+    "Dark Knight Rises + Batman '89 + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.07639,
+     "null_joint_mean": 0.48688,
+     "p_joint": 0.00035624098124098123,
+     "null_era_mean": 0.43111,
+     "p_era": 0.001388888888888889,
+     "null_swap_mean": 0.39819,
+     "p_swap": 0.002777777777777778
+    },
+    "Dark Knight Rises + Joker (2019) + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.10972,
+     "null_joint_mean": 0.51929,
+     "p_joint": 0.001237073112073112,
+     "null_era_mean": 0.45637,
+     "p_era": 0.005555555555555556,
+     "null_swap_mean": 0.42294,
+     "p_swap": 0.002777777777777778
+    },
+    "Batman v Superman + Under the Red Hood + Arkham Asylum (game)": {
+     "n_adaptations": 6,
+     "share": 0.12639,
+     "null_joint_mean": 0.45523,
+     "p_joint": 0.01576178451178451,
+     "null_era_mean": 0.36599,
+     "p_era": 0.03333333333333333,
+     "null_swap_mean": 0.29924,
+     "p_swap": 0.027777777777777776
+    },
+    "Batman v Superman + Under the Red Hood + Batman '89": {
+     "n_adaptations": 6,
+     "share": 0.13009,
+     "null_joint_mean": 0.4256,
+     "p_joint": 0.00869107744107744,
+     "null_era_mean": 0.38451,
+     "p_era": 0.013888888888888888,
+     "null_swap_mean": 0.37858,
+     "p_swap": 0.016666666666666666
+    },
+    "Batman v Superman + Under the Red Hood + Joker (2019)": {
+     "n_adaptations": 6,
+     "share": 0.16343,
+     "null_joint_mean": 0.45801,
+     "p_joint": 0.013314694564694564,
+     "null_era_mean": 0.40976,
+     "p_era": 0.027777777777777776,
+     "null_swap_mean": 0.38692,
+     "p_swap": 0.022222222222222223
+    },
+    "Batman v Superman + Under the Red Hood + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.14676,
+     "null_joint_mean": 0.48579,
+     "p_joint": 0.011345598845598846,
+     "null_era_mean": 0.41784,
+     "p_era": 0.019444444444444445,
+     "null_swap_mean": 0.41728,
+     "p_swap": 0.008333333333333333
+    },
+    "Batman v Superman + Arkham Asylum (game) + Batman '89": {
+     "n_adaptations": 6,
+     "share": 0.11157,
+     "null_joint_mean": 0.42977,
+     "p_joint": 0.003971260221260221,
+     "null_era_mean": 0.36599,
+     "p_era": 0.008333333333333333,
+     "null_swap_mean": 0.31496,
+     "p_swap": 0.008333333333333333
+    },
+    "Batman v Superman + Arkham Asylum (game) + Joker (2019)": {
+     "n_adaptations": 6,
+     "share": 0.14491,
+     "null_joint_mean": 0.46218,
+     "p_joint": 0.007473544973544973,
+     "null_era_mean": 0.39124,
+     "p_era": 0.022222222222222223,
+     "null_swap_mean": 0.32228,
+     "p_swap": 0.011111111111111112
+    },
+    "Batman v Superman + Arkham Asylum (game) + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.12824,
+     "null_joint_mean": 0.48996,
+     "p_joint": 0.005576599326599326,
+     "null_era_mean": 0.39932,
+     "p_era": 0.008333333333333333,
+     "null_swap_mean": 0.32655,
+     "p_swap": 0.008333333333333333
+    },
+    "Batman v Superman + Batman '89 + Joker (2019)": {
+     "n_adaptations": 6,
+     "share": 0.14861,
+     "null_joint_mean": 0.43255,
+     "p_joint": 0.008940095398428731,
+     "null_era_mean": 0.40976,
+     "p_era": 0.008333333333333333,
+     "null_swap_mean": 0.39192,
+     "p_swap": 0.011111111111111112
+    },
+    "Batman v Superman + Batman '89 + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.13194,
+     "null_joint_mean": 0.46033,
+     "p_joint": 0.0032652918069584736,
+     "null_era_mean": 0.41784,
+     "p_era": 0.006944444444444444,
+     "null_swap_mean": 0.42669,
+     "p_swap": 0.002777777777777778
+    },
+    "Batman v Superman + Joker (2019) + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.16528,
+     "null_joint_mean": 0.49273,
+     "p_joint": 0.006365239698573032,
+     "null_era_mean": 0.44309,
+     "p_era": 0.016666666666666666,
+     "null_swap_mean": 0.44992,
+     "p_swap": 0.002777777777777778
+    },
+    "Under the Red Hood + Arkham Asylum (game) + Batman '89": {
+     "n_adaptations": 6,
+     "share": 0.09306,
+     "null_joint_mean": 0.42598,
+     "p_joint": 0.002619949494949495,
+     "null_era_mean": 0.35766,
+     "p_era": 0.016666666666666666,
+     "null_swap_mean": 0.30877,
+     "p_swap": 0.016666666666666666
+    },
+    "Under the Red Hood + Arkham Asylum (game) + Joker (2019)": {
+     "n_adaptations": 6,
+     "share": 0.12639,
+     "null_joint_mean": 0.45839,
+     "p_joint": 0.005113636363636364,
+     "null_era_mean": 0.38291,
+     "p_era": 0.025,
+     "null_swap_mean": 0.3166,
+     "p_swap": 0.022222222222222223
+    },
+    "Under the Red Hood + Arkham Asylum (game) + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.10972,
+     "null_joint_mean": 0.48617,
+     "p_joint": 0.003977272727272727,
+     "null_era_mean": 0.39099,
+     "p_era": 0.008333333333333333,
+     "null_swap_mean": 0.312,
+     "p_swap": 0.016666666666666666
+    },
+    "Under the Red Hood + Batman '89 + Joker (2019)": {
+     "n_adaptations": 6,
+     "share": 0.13009,
+     "null_joint_mean": 0.42876,
+     "p_joint": 0.00585016835016835,
+     "null_era_mean": 0.40143,
+     "p_era": 0.008333333333333333,
+     "null_swap_mean": 0.36587,
+     "p_swap": 0.016666666666666666
+    },
+    "Under the Red Hood + Batman '89 + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.11343,
+     "null_joint_mean": 0.45654,
+     "p_joint": 0.0020186988936988937,
+     "null_era_mean": 0.40951,
+     "p_era": 0.002777777777777778,
+     "null_swap_mean": 0.39177,
+     "p_swap": 0.005555555555555556
+    },
+    "Under the Red Hood + Joker (2019) + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.14676,
+     "null_joint_mean": 0.48895,
+     "p_joint": 0.00389009139009139,
+     "null_era_mean": 0.43476,
+     "p_era": 0.008333333333333333,
+     "null_swap_mean": 0.41551,
+     "p_swap": 0.005555555555555556
+    },
+    "Arkham Asylum (game) + Batman '89 + Joker (2019)": {
+     "n_adaptations": 6,
+     "share": 0.11157,
+     "null_joint_mean": 0.43293,
+     "p_joint": 0.0030693843193843194,
+     "null_era_mean": 0.38291,
+     "p_era": 0.008333333333333333,
+     "null_swap_mean": 0.33487,
+     "p_swap": 0.011111111111111112
+    },
+    "Arkham Asylum (game) + Batman '89 + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.09491,
+     "null_joint_mean": 0.4607,
+     "p_joint": 0.0009484728234728235,
+     "null_era_mean": 0.39099,
+     "p_era": 0.002777777777777778,
+     "null_swap_mean": 0.33468,
+     "p_swap": 0.005555555555555556
+    },
+    "Arkham Asylum (game) + Joker (2019) + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.12824,
+     "null_joint_mean": 0.49311,
+     "p_joint": 0.0021374458874458876,
+     "null_era_mean": 0.41624,
+     "p_era": 0.008333333333333333,
+     "null_swap_mean": 0.35741,
+     "p_swap": 0.005555555555555556
+    },
+    "Batman '89 + Joker (2019) + The Batman": {
+     "n_adaptations": 6,
+     "share": 0.13194,
+     "null_joint_mean": 0.46348,
+     "p_joint": 0.0021289281705948373,
+     "null_era_mean": 0.43476,
+     "p_era": 0.002777777777777778,
+     "null_swap_mean": 0.42747,
+     "p_swap": 0.002777777777777778
+    }
+   },
+   "named_subsets": {
+    "without_killing_joke_trio": {
+     "n_adaptations": 6,
+     "share": 0.12778,
+     "null_joint_mean": 0.45939,
+     "p_joint": 0.004268879268879269,
+     "null_era_mean": 0.43094,
+     "p_era": 0.005555555555555556,
+     "null_swap_mean": 0.42988,
+     "p_swap": 0.008333333333333333
+    },
+    "without_rewrite_batch_mates": {
+     "n_adaptations": 7,
+     "share": 0.10952,
+     "null_joint_mean": 0.46519,
+     "p_joint": 0.0007235048901715568,
+     "null_era_mean": 0.41916,
+     "p_era": 0.002777777777777778,
+     "null_swap_mean": 0.43688,
+     "p_swap": 0.0011904761904761906
+    },
+    "strong_attribution_subset": {
+     "n_adaptations": 5,
+     "share": 0.10889,
+     "null_joint_mean": 0.44793,
+     "p_joint": 0.007386363636363636,
+     "null_era_mean": 0.39491,
+     "p_era": 0.016666666666666666,
+     "null_swap_mean": 0.3454,
+     "p_swap": 0.03333333333333333
+    }
+   },
+   "leave1_comic_out": {
+    "Dark Knight Returns": {
+     "n_adaptations": 8,
+     "share": 0.1932,
+     "null_joint_mean": 0.49997,
+     "p_joint": 0.00885040885040885,
+     "null_era_mean": 0.42447,
+     "p_era": 0.025
+    },
+    "Year One": {
+     "n_adaptations": 8,
+     "share": 0.09062,
+     "null_joint_mean": 0.50025,
+     "p_joint": 0.0005952380952380953,
+     "null_era_mean": 0.45708,
+     "p_era": 0.004166666666666667
+    },
+    "The Killing Joke": {
+     "n_adaptations": 7,
+     "share": 0.19444,
+     "null_joint_mean": 0.4676,
+     "p_joint": 0.012331649831649832,
+     "null_era_mean": 0.47795,
+     "p_era": 0.008333333333333333
+    },
+    "A Death in the Family": {
+     "n_adaptations": 8,
+     "share": 0.14112,
+     "null_joint_mean": 0.47153,
+     "p_joint": 0.002991221741221741,
+     "null_era_mean": 0.39438,
+     "p_era": 0.025
+    },
+    "Gotham by Gaslight": {
+     "n_adaptations": 9,
+     "share": 0.1131,
+     "null_joint_mean": 0.47907,
+     "p_joint": 0.0004286916786916787,
+     "null_era_mean": 0.40797,
+     "p_era": 0.008333333333333333
+    },
+    "Arkham Asylum (comic)": {
+     "n_adaptations": 8,
+     "share": 0.1255,
+     "null_joint_mean": 0.4845,
+     "p_joint": 0.0016835016835016834,
+     "null_era_mean": 0.36384,
+     "p_era": 0.025
+    },
+    "Knightfall": {
+     "n_adaptations": 9,
+     "share": 0.11526,
+     "null_joint_mean": 0.49703,
+     "p_joint": 0.00027657527657527656,
+     "null_era_mean": 0.42457,
+     "p_era": 0.002777777777777778
+    },
+    "The Long Halloween": {
+     "n_adaptations": 9,
+     "share": 0.13056,
+     "null_joint_mean": 0.51263,
+     "p_joint": 0.000952982202982203,
+     "null_era_mean": 0.44742,
+     "p_era": 0.001388888888888889
+    },
+    "Hush": {
+     "n_adaptations": 9,
+     "share": 0.106,
+     "null_joint_mean": 0.47724,
+     "p_joint": 0.00031625781625781624,
+     "null_era_mean": 0.42094,
+     "p_era": 0.004166666666666667
+    },
+    "Batman R.I.P.": {
+     "n_adaptations": 9,
+     "share": 0.13377,
+     "null_joint_mean": 0.47974,
+     "p_joint": 0.0011075036075036074,
+     "null_era_mean": 0.42943,
+     "p_era": 0.005555555555555556
+    },
+    "Earth One": {
+     "n_adaptations": 9,
+     "share": 0.11327,
+     "null_joint_mean": 0.47901,
+     "p_joint": 0.000655964405964406,
+     "null_era_mean": 0.40692,
+     "p_era": 0.004166666666666667
+    },
+    "White Knight": {
+     "n_adaptations": 9,
+     "share": 0.12253,
+     "null_joint_mean": 0.46566,
+     "p_joint": 0.0011044973544973545,
+     "null_era_mean": 0.424,
+     "p_era": 0.004166666666666667
+    }
+   },
+   "summary": {
+    "leave1_adaptations_out": {
+     "n": 9,
+     "max_p_joint": 0.0027306798140131474,
+     "worst": "Batman v Superman",
+     "n_p_joint_ge_05": 0,
+     "max_p_era": 0.008333333333333333,
+     "worst_era": "Batman Begins",
+     "n_p_era_ge_05": 0,
+     "max_p_swap": 0.001884920634920635,
+     "n_p_swap_ge_05": 0
+    },
+    "leave2_adaptations_out": {
+     "n": 36,
+     "max_p_joint": 0.008594877344877344,
+     "worst": "Batman v Superman + Under the Red Hood",
+     "n_p_joint_ge_05": 0,
+     "max_p_era": 0.025,
+     "worst_era": "Under the Red Hood + Arkham Asylum (game)",
+     "n_p_era_ge_05": 0,
+     "max_p_swap": 0.00873015873015873,
+     "n_p_swap_ge_05": 0
+    },
+    "leave3_adaptations_out": {
+     "n": 84,
+     "max_p_joint": 0.025444925444925444,
+     "worst": "Batman Begins + Batman v Superman + Under the Red Hood",
+     "n_p_joint_ge_05": 0,
+     "max_p_era": 0.043055555555555555,
+     "worst_era": "Batman Begins + Batman v Superman + Under the Red Hood",
+     "n_p_era_ge_05": 0,
+     "max_p_swap": 0.027777777777777776,
+     "n_p_swap_ge_05": 0
+    },
+    "leave1_comic_out": {
+     "n": 12,
+     "max_p_joint": 0.012331649831649832,
+     "worst": "The Killing Joke",
+     "n_p_joint_ge_05": 0,
+     "max_p_era": 0.025,
+     "worst_era": "Dark Knight Returns",
+     "n_p_era_ge_05": 0
+    }
+   }
+  }
+ }
+}
