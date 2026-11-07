@@ -25,6 +25,7 @@ import numpy as np
 from sklearn.feature_extraction.text import CountVectorizer
 
 import common as C
+import textcheck as T
 from plain_checks import best_word
 
 import experiments as X
@@ -82,18 +83,21 @@ def step_queries(tag):
         d_dep = np.where(np.abs(lay_p - lay_q[i]) <= max(1, L // 16), np.abs(n_p - n_q[i]), np.inf)
         picks["lexical"].append(rng.choice(np.argsort(d_lex, kind="stable")[:15], PER_UNIT, replace=False))
         picks["depth"].append(rng.choice(np.argsort(d_dep, kind="stable")[:25], PER_UNIT, replace=False))
-    ids, cols, roles = [str(int(u)) for u in units], [Q], [{"id": str(int(u)), "role": "explained", "unit": int(u), "best_word_r": float(bw_q[i])} for i, u in enumerate(units)]
+    ids, cols = [str(int(u)) for u in units], [Q]
+    roles = [{"id": str(int(u)), "role": "explained", "unit": int(u), "best_word_r": float(bw_q[i]), "n_strong": int((Q[:, i] >= THR).sum())} for i, u in enumerate(units)]
     for kind, rows in picks.items():
         for i, sel in enumerate(rows):
             for k, j in enumerate(sel):
                 qid = f"{int(units[i])}:{kind}{k}"
                 ids.append(qid)
                 cols.append(P[:, [j]])
-                roles.append({"id": qid, "role": kind, "for": int(units[i]), "unit": int(pu[j]), "best_word_r": float(bw_p[j])})
+                roles.append({"id": qid, "role": kind, "for": int(units[i]), "unit": int(pu[j]), "best_word_r": float(bw_p[j]), "n_strong": int((P[:, j] >= THR).sum())})
     np.savez_compressed(jobs_dir() / f"twin_queries_{tag}.npz", profiles=np.concatenate(cols, 1), ids=np.array(ids))
     C.save({"model": tag, "n_explained": len(units), "controls_per_unit": PER_UNIT, "pool": int(len(pu)),
             "best_word_r_median": {"explained": float(np.median(bw_q)), "lexical_controls": float(np.median([r["best_word_r"] for r in roles if r["role"] == "lexical"])),
                                    "depth_controls": float(np.median([r["best_word_r"] for r in roles if r["role"] == "depth"]))},
+            "strong_sentences_median": {k: float(np.median([r["n_strong"] for r in roles if r["role"] == v])) for k, v in
+                                        (("explained", "explained"), ("lexical_controls", "lexical"), ("depth_controls", "depth"))},
             "queries": roles}, f"{tag}/twin_queries.json")
 
 
@@ -167,13 +171,20 @@ def step_score(tag, other):
     strong = {g: np.stack([np.stack([share[row[f"{u}:{g}{i + 1}"]] >= C.THETA for i in range(5)]).sum(0) for u in owners]) for g in "ABCD"}     # [owner, twin unit]
     tcol = np.array([zc[tw[str(u)]["unit"]] for u in owners])
     n = len(owners)
+    # idea-bound, as in Section 10: at least 3 of 5 keyword-free texts strong and at most one keyword-reusing near miss strong
+    ex = {int(u): e for u, e in json.load(open(C.RESULTS / tag / "explanations.json"))["units"].items()}
+    texts = {int(u): t for u, t in json.load(open(C.RESULTS / tag / "tests.json"))["units"].items()}
+    per = {g: np.stack([np.stack([share[row[f"{u}:{g}{i + 1}"]] >= C.THETA for i in range(5)]) for u in owners]) for g in "BC"}      # [owner, 5, twin unit]
+    reuse = np.array([[bool(T.uses(t, T.key_stems(ex[u]["key_words"]))) for t in texts[u]["C"]] for u in owners])
+    bound = (per["B"].sum(1) >= 3) & ((per["C"] & reuse[:, :, None]).sum(1) <= 1)                                                    # [owner, twin unit]
     a, c = strong["A"][np.arange(n), tcol], strong["C"][np.arange(n), tcol]
     b = strong["B"][np.arange(n), tcol]
 
     def stats(ai, ci, bi, sel):
         return {"n": int(sel.sum()), "won": int((ai > ci)[sel].sum()), "tied": int((ai == ci)[sel].sum()), "lost": int((ai < ci)[sel].sum()),
                 "strong_rate_A": float(ai[sel].mean() / 5) if sel.any() else None, "strong_rate_B": float(bi[sel].mean() / 5) if sel.any() else None,
-                "strong_rate_C": float(ci[sel].mean() / 5) if sel.any() else None}
+                "strong_rate_C": float(ci[sel].mean() / 5) if sel.any() else None,
+                "strong_rate_D": float(strong["D"][np.arange(n), tcol][sel].mean() / 5) if sel.any() else None}
 
     is_idea = np.array([u in idea for u in owners])
     res = {"all": stats(a, c, b, np.ones(n, bool)), "idea_units": stats(a, c, b, is_idea), "name_units": stats(a, c, b, ~is_idea)}
@@ -181,16 +192,23 @@ def step_score(tag, other):
     for key, sel in (("all", np.ones(n, bool)), ("idea_units", is_idea), ("name_units", ~is_idea)):
         idx = np.flatnonzero(sel)
         obs = float((a[idx] > c[idx]).mean()) if len(idx) else None
-        null = []
+        null, null_b = [], []
         for _ in range(10000 if len(idx) > 2 else 0):
             p = rng.permutation(len(idx))
             while (p == np.arange(len(idx))).any():
                 p = rng.permutation(len(idx))
             null.append(float((strong["A"][idx[p], tcol[idx]] > strong["C"][idx[p], tcol[idx]]).mean()))
+            null_b.append(float(bound[idx[p], tcol[idx]].mean()))
+        obs_b = float(bound[idx, tcol[idx]].mean()) if len(idx) else None
+        res[key]["idea_bound_share"] = obs_b
+        res[key]["mismatched_idea_bound_share_mean"] = float(np.mean(null_b)) if null_b else None
+        res[key]["p_idea_bound_against_mismatch"] = float((1 + (np.array(null_b) >= obs_b - 1e-12).sum()) / (len(null_b) + 1)) if null_b else None
         res[key]["win_rate"] = obs
         res[key]["mismatched_win_rate_mean"] = float(np.mean(null)) if null else None
         res[key]["p_against_mismatch"] = float((1 + (np.array(null) >= obs - 1e-12).sum()) / (len(null) + 1)) if null else None
     out["testers_texts"] = res
+    lex = out["name_free_sentences"]["idea_units"]["twin_minus_lexical_controls"]
+    out["twins_beat_both_nulls_for_idea_units"] = bool((res["idea_units"]["p_idea_bound_against_mismatch"] or 1) < 0.05 and lex["ci95"][0] is not None and lex["ci95"][0] > 0)
     out["units"] = [x for x in rows if x["role"] == "explained"]
     C.save(out, f"twins_{tag}_{other}.json")
     print(tag, "->", other, "| name-free twin r, idea units:", out["name_free_sentences"]["idea_units"]["explained"], "| tester texts:", res["idea_units"])

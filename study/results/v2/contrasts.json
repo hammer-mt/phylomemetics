@@ -1,0 +1,156 @@
+{
+ "cells": {
+  "qwen3-8b | v1 published": {
+   "E1_null_p95": 0.6994140624999999,
+   "length_controlled": false,
+   "E1_auc": 0.5154296875,
+   "E1_ci95": [
+    0.28325439453125,
+    0.752451171875
+   ],
+   "E2_share": 0.1638888888888889,
+   "E2_exact_p": 0.0025776114317780986,
+   "E2_within_era_p": 0.02638888888888889,
+   "sequels_top2": 4,
+   "residual_share": 0.3063973063973064,
+   "residual_exact_p": 0.08930149711399711,
+   "residual_within_era_p": 0.12777777777777777,
+   "E3_rho": 0.25357142857142856,
+   "E3_p": 0.35226477352264773
+  },
+  "qwen3-8b | full precision, v1 rule": {
+   "E1_null_p95": 0.703125,
+   "length_controlled": false,
+   "E1_auc": 0.507421875,
+   "E1_ci95": [
+    0.28534423828125,
+    0.7359545898437498
+   ],
+   "E2_share": 0.13919753086419753,
+   "E2_exact_p": 0.00034471701138367804,
+   "E2_within_era_p": 0.003472222222222222,
+   "sequels_top2": 5,
+   "residual_share": 0.22059483726150392,
+   "residual_exact_p": 0.014625170354337021,
+   "residual_within_era_p": 0.01597222222222222,
+   "E3_rho": 0.28928571428571426,
+   "E3_p": 0.3090690930906909
+  },
+  "qwen3-8b | full precision, v2 rule": {
+   "E1_verdict": "falsified",
+   "E1_openings_auc": 0.291015625,
+   "E1_null_p95": 0.6778320312499999,
+   "E1_centroid_auc": 0.6796875,
+   "E2_evaluable": true,
+   "length_controlled": true,
+   "residual_decision_exact_p": 0.6181126743626744,
+   "E1_auc": 0.259765625,
+   "E1_ci95": [
+    0.115185546875,
+    0.4296875
+   ],
+   "E2_share": 0.07716049382716049,
+   "E2_exact_p": 0.0001823793490460157,
+   "E2_within_era_p": 0.002777777777777778,
+   "sequels_top2": 6,
+   "residual_share": 0.37991021324354657,
+   "residual_exact_p": 0.2622068903318903,
+   "residual_within_era_p": 0.2111111111111111,
+   "E3_rho": 0.35,
+   "E3_p": 0.36606339366063395
+  },
+  "llama3.1-8b | v1 published": {
+   "E1_null_p95": 0.6720703124999999,
+   "length_controlled": false,
+   "E1_auc": 0.54443359375,
+   "E1_ci95": [
+    0.3090673828125,
+    0.7870336914062499
+   ],
+   "E2_share": 0.10185185185185185,
+   "E2_exact_p": 0.00016835016835016836,
+   "E2_within_era_p": 0.001388888888888889,
+   "sequels_top2": 5,
+   "residual_share": 0.19405162738496073,
+   "residual_exact_p": 0.010356040564373897,
+   "residual_within_era_p": 0.016666666666666666,
+   "E3_rho": 0.0035714285714285704,
+   "E3_p": 0.5847415258474152
+  },
+  "llama3.1-8b | full precision, v2 rule": {
+   "E1_verdict": "falsified",
+   "E1_openings_auc": 0.396484375,
+   "E1_null_p95": 0.677734375,
+   "E1_centroid_auc": 0.6875,
+   "E2_evaluable": true,
+   "length_controlled": true,
+   "residual_decision_exact_p": 0.5698921256212923,
+   "E1_auc": 0.38671875,
+   "E1_ci95": [
+    0.166015625,
+    0.6270019531249997
+   ],
+   "E2_share": 0.13641975308641976,
+   "E2_exact_p": 0.00047248276414943083,
+   "E2_within_era_p": 0.00625,
+   "sequels_top2": 4,
+   "residual_share": 0.3682659932659933,
+   "residual_exact_p": 0.1993338644380311,
+   "residual_within_era_p": 0.17847222222222223,
+   "E3_rho": 0.175,
+   "E3_p": 0.5642435756424358
+  }
+ },
+ "contrasts": [
+  {
+   "contrast": "pipeline (4-bit and 8-bit storage against full precision), same model and rule",
+   "a": "qwen3-8b | full precision, v1 rule",
+   "b": "qwen3-8b | v1 published",
+   "E1_auc": {
+    "difference": -0.008000000000000005,
+    "ci95": [
+     -0.03515703125,
+     0.018156249999999985
+    ],
+    "n": 32
+   },
+   "E2_share": {
+    "difference": -0.02466666666666667,
+    "ci95": [
+     -0.11566666666666665,
+     0.050888888888888886
+    ],
+    "n": 9
+   },
+   "E3_rho_difference": 0.0357142857142857
+  },
+  {
+   "contrast": "rule, same model",
+   "a": "qwen3-8b | full precision, v2 rule",
+   "b": "qwen3-8b | full precision, v1 rule",
+   "E1_auc": {
+    "difference": -0.24762500000000004,
+    "ci95": [
+     -0.3251265625,
+     -0.166875
+    ],
+    "n": 32
+   },
+   "E2_share": {
+    "difference": -0.062000000000000006,
+    "ci95": [
+     -0.1486972222222222,
+     0.025897222222222255
+    ],
+    "n": 9
+   },
+   "E3_rho_difference": 0.06071428571428572
+  }
+ ],
+ "new_cells": 3,
+ "new_cells_E2_exact_p_below_0.05": 3,
+ "new_cells_residual_exact_p_below_0.05": 1,
+ "new_cells_E3_p_below_0.05": 0,
+ "expected_by_chance_per_test": 0.15000000000000002,
+ "note": "E1 cells under v1's rule have no openings version and are not length-controlled. The residual columns are v1's registered form (two word measures), which every cell has; v2's decision test adds word presence by frequency band (residual_decision_exact_p)"
+}

@@ -9,6 +9,7 @@
     steer <tag> <units.npy> <name> <multiples...>     continuations with a unit held active       -> v2/acts/<tag>/<name>.json
     twins <tag> <queries.npz>                each query unit's twin in this model                 -> v2/acts/<tag>/twins.json
     background <tag> <units.npy>             per-plot shares of chosen units (--select)           -> v2/acts/<tag>/bg_selected.*
+    sync - [skip ...]                        upload every GPU script that differs from the pod's copy (not the ones named)
 """
 import subprocess
 import sys
@@ -38,9 +39,21 @@ def pull(tag, *files):
     subprocess.run([sys.executable, str(Path(__file__).resolve().parent / "pull.py"), tag, "--only", *files], check=True)
 
 
+def sync(skip=()):
+    here = Path(__file__).resolve().parent
+    files = [f for f in sorted(here.glob("*.py")) + sorted(here.glob("*.sh")) if f.name not in ("runpod_ctl.py", "pull.py", "remote.py", *skip)]
+    have = rc.remote_sha256([f"code/{f.name}" for f in files])
+    for f in files:
+        if have.get(f"code/{f.name}") != rc.sha256_file(f):
+            rc.put(f, f"code/{f.name}")
+            print("uploaded", f.name, flush=True)
+
+
 def main():
     step, tag, a = sys.argv[1], sys.argv[2], sys.argv[3:]
-    if step == "sentences":
+    if step == "sync":
+        sync(a)
+    elif step == "sentences":
         prefix = a[1] if len(a) > 1 else "sent"
         go(f"sent_{tag}_{prefix}".replace(".", "_"), f"python3 study_sentences.py {tag} {DATA}/study {OUT} {up(a[0])} {prefix} {Q}")
         pull(tag, f"--sentences={prefix}")
