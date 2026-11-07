@@ -40,9 +40,9 @@
   }
  ],
  "hours_times_rate_total": 69.05,
- "billed_total_dollars": 63.12,
- "billed_gpu_dollars": 62.53,
- "billed_disk_dollars": 0.6,
- "billing_read_utc": "2026-11-07T07:35+00:00",
+ "billed_total_dollars": 68.4,
+ "billed_gpu_dollars": 67.77,
+ "billed_disk_dollars": 0.63,
+ "billing_read_utc": "2026-11-07T08:10+00:00",
  "all_machines_ended": true
 }
