@@ -102,6 +102,7 @@ def step_score(tag, theta=C.THETA):
     units = [int(u) for u in z["units"]]
     scale = C.scale(tag)[units]
     share = z["peak"] / np.where(scale > 0, scale, np.inf)[None, :]                 # [texts, units]
+    share_rest = z["rest"] / np.where(scale > 0, scale, np.inf)[None, :]            # the same with each text's first word left out
     row = {str(i): k for k, i in enumerate(z["ids"])}
     col = {u: k for k, u in enumerate(units)}
     tops = json.load(open(C.ACTS / tag / "top_examples.json"))
@@ -115,6 +116,7 @@ def step_score(tag, theta=C.THETA):
         s = {g: np.array([share[row[f"{u}:{g}{i + 1}"], k] for i in range(5)]) for g in GROUPS}
         own[u] = s
         strong = {g: (s[g] >= theta) for g in GROUPS}
+        rest = {g: np.array([share_rest[row[f"{u}:{g}{i + 1}"], k] for i in range(5)]) >= theta for g in GROUPS}
         key = T.key_stems(ex[u]["key_words"])
         reuse = np.array([bool(T.uses(t, key)) for t in tests[u]["C"]])
         b_clean = np.array([not T.uses(t, key) for t in tests[u]["B"]])
@@ -132,6 +134,8 @@ def step_score(tag, theta=C.THETA):
             "alone": {"study_sentence": round(alone["study"], 3), "reference_examples": [round(x, 3) for x in alone["ref"]]},
             "is_idea": bool(kind["kind"] in IDEA_KINDS or kind["detects"] == "idea"), "one_idea": ex[u]["one_idea"], "understood": ex[u]["understood"],
             "shares": {g: [round(float(x), 3) for x in s[g]] for g in GROUPS}, "strong": {g: int(strong[g].sum()) for g in GROUPS},
+            "strong_first_word_left_out": {g: int(rest[g].sum()) for g in GROUPS},
+            "outcome_first_word_left_out": "win" if rest["A"].sum() > rest["C"].sum() else "tie" if rest["A"].sum() == rest["C"].sum() else "loss",
             "outcome": "win" if a_n > c_n else "tie" if a_n == c_n else "loss",
             "blind_max_share": round(m, 3), "blind_max_reaches_corpus_max": bool(m >= 1.0), "blind_max_strong": bool(m >= theta),
             "B_texts_clean": int(b_clean.sum()), "C_texts_reusing_a_key_word": int(reuse.sum()),
@@ -164,7 +168,9 @@ def step_score(tag, theta=C.THETA):
         w = [r["outcome"] for r in rows]
         idea = [r["idea_bound"] for r in rows]
         return {"n": len(rows), "n_with_untestable": n_all, "not_testable_out_of_context": n_all - len(rows),
-                "strong_rate": {g: f(g) for g in GROUPS}, "won": w.count("win"), "tied": w.count("tie"), "lost": w.count("loss"),
+                "strong_rate": {g: f(g) for g in GROUPS},
+                "strong_rate_first_word_left_out": {g: float(np.mean([r["strong_first_word_left_out"][g] / 5 for r in rows])) for g in GROUPS},
+                "won_first_word_left_out": [r["outcome_first_word_left_out"] for r in rows].count("win"), "won": w.count("win"), "tied": w.count("tie"), "lost": w.count("loss"),
                 "win_share": w.count("win") / len(w), "win_share_ci95": boot_share([x == "win" for x in w], rng),
                 "blind_max_reaches_corpus_max": float(np.mean([r["blind_max_reaches_corpus_max"] for r in rows])),
                 "blind_max_strong": float(np.mean([r["blind_max_strong"] for r in rows])),

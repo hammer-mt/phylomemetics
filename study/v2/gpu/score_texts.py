@@ -5,7 +5,10 @@
 texts.jsonl: one {"id": ..., "text": ...} per line. units.npy: unit indices (positive pole = layer * width +
 neuron; negative pole = that + n_neurons). For every text and unit the output holds
   peak   the strongest main-regime activation in the text, as a magnitude (position 0 excluded)
-  where  the token position of that peak
+  where  the token position of that peak, and where_end, the character offset in the text just after that token
+         (text[:where_end] is the text up to and including the peak token)
+  rest   the same peak with the text's first word left out too (a check: after a lead-in token the first word is in
+         a position the reference pass never scored)
   last   the raw activation at the text's last token (signed, all sign regimes), for checks against
          activations published with a marked peak token
 and tokens.json lists each text's tokens so a peak can be read back as a word.
@@ -40,11 +43,14 @@ def main():
     pole, layer, col = units // U, (units % U) // D, units % D
     at = {l: np.where(layer == l)[0] for l in np.unique(layer)}
     lead = [] if a.no_lead_in else lead_in(tok)
-    ids_all = [lead + x for x in tok([t["text"] for t in texts], add_special_tokens=True, truncation=True, max_length=a.max_tokens - len(lead))["input_ids"]]
+    enc = tok([t["text"] for t in texts], add_special_tokens=True, truncation=True, max_length=a.max_tokens - len(lead), return_offsets_mapping=True)
+    ids_all = [lead + x for x in enc["input_ids"]]
+    ends = [np.array([0] * len(lead) + [b for _, b in off], dtype=np.int32) for off in enc["offset_mapping"]]
     lens = np.array([len(x) for x in ids_all])
     peak = np.zeros((len(texts), len(units)), np.float32)
     where = np.zeros((len(texts), len(units)), np.int16)
     last = np.zeros((len(texts), len(units)), np.float32)
+    rest = np.zeros((len(texts), len(units)), np.float32)
     ctx = {}
 
     def fn(l, g, h):
@@ -56,6 +62,7 @@ def main():
         v, t = main.max(1)
         rows = ctx["rows"]
         peak[np.ix_(rows, idx)] = v.clamp(min=0).cpu().numpy()
+        rest[np.ix_(rows, idx)] = main[:, len(lead) + 1:].amax(1).clamp(min=0).cpu().numpy() if main.shape[1] > len(lead) + 1 else 0
         where[np.ix_(rows, idx)] = t.cpu().numpy()
         end = ctx["end"].to(h.device)
         last[np.ix_(rows, idx)] = hh[torch.arange(hh.shape[0], device=h.device), end].cpu().numpy()
@@ -74,7 +81,8 @@ def main():
         ctx.update(mask=m[:, :, None].float(), rows=np.array(b), end=torch.tensor(lens[b] - 1))
         run_hidden(model, ids, att if len(b) > 1 else None)
     tap.remove()
-    np.savez(a.out, peak=peak, where=where, last=last, units=units, ids=np.array([str(t["id"]) for t in texts]), lead_in_tokens=len(lead))
+    where_end = np.stack([ends[r][where[r]] for r in range(len(texts))]) if len(texts) else np.zeros_like(where, dtype=np.int32)
+    np.savez(a.out, peak=peak, rest=rest, where=where, where_end=where_end, last=last, units=units, ids=np.array([str(t["id"]) for t in texts]), lead_in_tokens=len(lead))
     json.dump([tok.convert_ids_to_tokens(x) for x in ids_all], open(str(Path(a.out).with_suffix("")) + ".tokens.json", "w"))
     print(f"{now()} scored {len(texts)} texts on {len(units)} units -> {a.out}", flush=True)
 
