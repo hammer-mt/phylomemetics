@@ -95,6 +95,7 @@ Written by `v2/analysis/paper_tables.py` from the committed results. Do not edit
 
 | Model | Residual decision test below 0.05, uncapped settings | of which evaluable | E2 below 0.05, uncapped settings | E2 below 0.05, evaluable settings | E1 AUC range | Settings with E1 AUC of 0.80 or more | E3 rho range | E3 settings below 0.05 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Qwen3-32B | 0 of 8 | 8 | 7 of 8 | 42 of 45 | 0.25 to 0.67 | 0 | -0.72 to 0.35 | 0 |
 | Qwen3-8B | 0 of 8 | 7 | 7 of 8 | 36 of 40 | 0.26 to 0.79 | 0 | -0.63 to 0.46 | 0 |
 | Llama 3.1 8B | 0 of 8 | 8 | 8 of 8 | 40 of 41 | 0.27 to 0.85 | 3 | -0.54 to 0.59 | 0 |
 
@@ -179,3 +180,72 @@ Written by `v2/analysis/paper_tables.py` from the committed results. Do not edit
 | Qwen3-32B | 21 of 32 | 4 of 32 | 4 of 7 | 4 of 8 | 52 of 69 | -0.57 | -5.61 | -13.24 | 0.78 |
 | Qwen3-8B | 20 of 32 | 2 of 32 | 3 of 7 | 4 of 8 | 36 of 69 | -0.73 | -3.70 | -11.36 | 0.57 |
 | Llama 3.1 8B | 16 of 32 | 2 of 32 | 5 of 7 | 1 of 8 | 54 of 69 | -1.27 | -5.23 | -8.53 | 0.76 |
+
+## Explanation tests
+
+| Units | Explained | Not testable out of context | New examples strong (A) | Idea without the key words (B) | Near misses (C) | Distant (D) | Won / tied / lost | Idea-bound | Blind maximum reaches the corpus maximum | AUC B vs C: unit | keyword terms | TF-IDF to examples |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Qwen3-8B | 207 | 0 | 85% | 40% | 4% | 0.7% | 201 / 6 / 0 | 73 (35%) | 20% | 0.87 | 0.51 | 0.44 |
+| Qwen3-8B: idea units | 124 | 0 | 83% | 44% | 2% | 0.8% | 121 / 3 / 0 | 52 (42%) | 18% | 0.93 | 0.50 | 0.42 |
+| Qwen3-8B: name or word units | 83 | 0 | 87% | 33% | 6% | 0.5% | 80 / 3 / 0 | 21 (25%) | 23% | 0.79 | 0.53 | 0.46 |
+| Qwen3-8B: other units' texts (floor) |  |  | 4% | 3% |  |  | win rate 13% | 1.3% |  |  |  |  |
+| The essay's gallery (benchmark) |  |  | 76% |  | 11% | 1% | 164 / 15 / 4 |  |  |  |  |  |
+
+### By kind (blind kind judge)
+
+| Model | Kind | Units | A | B | C | Won / tied / lost | Idea-bound |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Qwen3-8B | character or name | 39 | 93% | 45% | 5% | 39 / 0 / 0 | 15 |
+| Qwen3-8B | genre or setting | 17 | 98% | 64% | 0% | 17 / 0 / 0 | 12 |
+| Qwen3-8B | grammar | 55 | 68% | 28% | 1% | 52 / 3 / 0 | 12 |
+| Qwen3-8B | object | 5 | 92% | 68% | 12% | 5 / 0 / 0 | 3 |
+| Qwen3-8B | other | 22 | 83% | 52% | 1% | 21 / 1 / 0 | 12 |
+| Qwen3-8B | place | 10 | 98% | 56% | 8% | 10 / 0 / 0 | 5 |
+| Qwen3-8B | story pattern | 8 | 98% | 50% | 2% | 8 / 0 / 0 | 4 |
+| Qwen3-8B | style or format | 5 | 92% | 32% | 4% | 5 / 0 / 0 | 1 |
+| Qwen3-8B | word or token | 46 | 87% | 27% | 7% | 44 / 2 / 0 | 9 |
+| Qwen3-8B | core canon representatives judged a name, place or word | 28 |  |  |  | 16 of 28 | 95% interval 0.39 to 0.75 |
+
+### Units against word measures on the same texts (AUC for B against C)
+
+| Model | Units | Word measure | n | Unit mean | Words mean | Unit better | Words better | Wilcoxon p |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Qwen3-8B | all units | analyst_keywords | 207 | 0.87 | 0.51 | 188 | 14 | 8.6e-31 |
+| Qwen3-8B | all units | tfidf_to_examples | 207 | 0.87 | 0.44 | 187 | 19 | 4.4e-31 |
+| Qwen3-8B | idea units | analyst_keywords | 124 | 0.93 | 0.50 | 118 | 3 | 1.8e-21 |
+| Qwen3-8B | idea units | tfidf_to_examples | 124 | 0.93 | 0.42 | 118 | 6 | 1.1e-21 |
+
+## Checks of the explanations that need no judge
+
+| Model | Units | n | Peaks sharing the commonest stem | Peaks on punctuation or function words | Best single word r (median) | Held-out examples with an explainer key word | Random windows | Held-out examples with an analyst term | Random windows |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Qwen3-8B | all | 207 | 44% | 49% | 0.33 | 47% | 11% | 46% | 10% |
+| Qwen3-8B | name or word | 83 | 50% | 40% | 0.38 | 51% | 10% | 46% | 7% |
+| Qwen3-8B | idea | 124 | 40% | 56% | 0.29 | 45% | 13% | 46% | 12% |
+
+## Qwen3-32B as a second judge: agreement with the Claude judge
+
+| Units of | Judgment | Items | Agreement | Kappa |
+| --- | --- | --- | --- | --- |
+| Qwen3-8B | kind | 207 | 58% | 0.49 |
+| Qwen3-8B | detects | 207 | 80% | 0.61 |
+
+## Steering calibration on 40 gallery neurons (chance 20%; chosen multiple 5, p = 2e-07)
+
+| Multiple | Items | Correct | Accuracy | Answered none |
+| --- | --- | --- | --- | --- |
+| 1 x scale | 40 | 12 | 30% | 23 |
+| 2 x scale | 40 | 13 | 32% | 20 |
+| 3 x scale | 40 | 18 | 45% | 14 |
+| 5 x scale | 40 | 23 | 57% | 6 |
+
+## Ablation: switching off Batman's canon (drop in the log-odds of the hero's name)
+
+| Model | Version | Random sets | Canon, Batman works | Sets (mean) | Sets (max) | p | Activity-matched sets (max) | p | Canon, hero films (own hero) | Specificity p | Activation removed: canon | activity-matched sets (mean) | Replies naming Batman: untouched -> canon off |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Qwen3-8B | summary tokens, name-free (confirmatory) | 200 | 1.33 | 0.033 | 0.113 | 0.0050 | 0.122 | 0.0050 | 0.80 | 0.28 | 8366 | 4933 | 20 -> 16 |
+| Qwen3-8B | every position | 20 | 5.10 | 0.041 | 0.494 | 0.048 | 0.107 | 0.048 | 2.06 | 0.015 | 9075 | 5078 | 20 -> 2 |
+| Qwen3-8B | original texts | 20 | 1.28 | 0.061 | 0.113 | 0.048 | 0.127 | 0.048 | 0.83 | 0.35 | 30057 | 6338 | 26 -> 28 |
+| Qwen3-8B | strong firings only | 20 | 0.34 | 0.015 | 0.044 | 0.048 | 0.052 | 0.048 | 0.15 | 0.29 | 111 | 93 | 20 -> 18 |
+| Qwen3-8B | weak activity only | 20 | 1.05 | 0.033 | 0.093 | 0.048 | 0.081 | 0.048 | 0.32 | 0.18 | 8718 | 4735 | 20 -> 16 |
+| Qwen3-8B | criterion |  |  |  |  | 0.0050 |  | 0.0050 |  | 0.28 |  |  | evaluable True; met False |

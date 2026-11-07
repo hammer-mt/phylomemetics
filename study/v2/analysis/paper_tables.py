@@ -180,6 +180,158 @@ def main():
                      table(["Model", "Batman works it calls Batman", "Batman works it identifies by title", "Hero films whose hero it names", "Hero films it calls Batman",
                             "Ordinary films it identifies by title", "Median log p of Batman: Batman works", "hero films", "ordinary films", "AUC of that log p, Batman vs hero films"], rows))
 
+    # ---- explanation tests
+    def pct(x):
+        return "n/a" if x is None else f"{100 * x:.0f}%"
+    rows, kind_rows = [], []
+    for m in models:
+        t = load(f"{m}/explanation_tests.json")
+        if not t:
+            continue
+        for label, key in ((NAMES[m], "all"), (f"{NAMES[m]}: idea units", "idea_units"), (f"{NAMES[m]}: name or word units", "name_units")):
+            a = t[key]
+            if not a.get("n"):
+                continue
+            sr = a["strong_rate"]
+            rows.append([label, a["n_with_untestable"], a["not_testable_out_of_context"], pct(sr["A"]), pct(sr["B"]), pct(sr["C"]), f"{100 * sr['D']:.1f}%",
+                         f"{a['won']} / {a['tied']} / {a['lost']}", f"{a['idea_bound']} ({pct(a['idea_bound_share'])})", pct(a["blind_max_reaches_corpus_max"]),
+                         f(a["auc_B_vs_C_mean"]["neuron"]), f(a["auc_B_vs_C_mean"]["analyst_keywords"]), f(a["auc_B_vs_C_mean"]["tfidf_to_examples"])])
+        mm = t["mismatched_null"]
+        rows.append([f"{NAMES[m]}: other units' texts (floor)", "", "", pct(mm["strong_rate_on_other_units_A_texts"]), pct(mm["strong_rate_on_other_units_B_texts"]), "", "",
+                     f"win rate {pct(mm['win_rate_on_other_units_texts'])}", f"{100 * mm['idea_bound_rate_on_other_units_texts']:.1f}%", "", "", "", ""])
+        for k, a in t["by_kind"].items():
+            if a.get("n"):
+                kind_rows.append([NAMES[m], k, a["n"], pct(a["strong_rate"]["A"]), pct(a["strong_rate"]["B"]), pct(a["strong_rate"]["C"]),
+                                  f"{a['won']} / {a['tied']} / {a['lost']}", a["idea_bound"]])
+        c = t["core_representatives_name_place_or_word"]
+        kind_rows.append([NAMES[m], "core canon representatives judged a name, place or word", c["n"], "", "", "", f"{c['count']} of {c['n']}",
+                          f"95% interval {f(c['ci95'][0])} to {f(c['ci95'][1])}"])
+    if rows:
+        eb = (load(f"{models[0]}/explanation_tests.json") or load("qwen3-8b/explanation_tests.json"))["essay_benchmark"]
+        rows.append(["The essay's gallery (benchmark)", "", "", pct(eb["new_examples"]), "", pct(eb["near_misses"]), f"{100 * eb['distant']:.0f}%",
+                     f"{eb['won']} / {eb['tied']} / {eb['lost']}", "", "", "", "", ""])
+        parts.append("## Explanation tests\n\n" + table(["Units", "Explained", "Not testable out of context", "New examples strong (A)", "Idea without the key words (B)",
+                                                          "Near misses (C)", "Distant (D)", "Won / tied / lost", "Idea-bound", "Blind maximum reaches the corpus maximum",
+                                                          "AUC B vs C: unit", "keyword terms", "TF-IDF to examples"], rows))
+        parts.append("### By kind (blind kind judge)\n\n" + table(["Model", "Kind", "Units", "A", "B", "C", "Won / tied / lost", "Idea-bound"], kind_rows))
+    rows = []
+    for m in models:
+        t = load(f"{m}/explanation_tests.json")
+        if t:
+            for k, v in t["neurons_against_words_B_vs_C"].items():
+                rows.append([NAMES[m], "all units", k, v["n"], f(v.get("neuron_mean")), f(v.get("words_mean")), v.get("neuron_better"), v.get("words_better"), pv(v.get("p_two_sided"))])
+            for k, v in t["neurons_against_words_B_vs_C_idea_units"].items():
+                rows.append([NAMES[m], "idea units", k, v["n"], f(v.get("neuron_mean")), f(v.get("words_mean")), v.get("neuron_better"), v.get("words_better"), pv(v.get("p_two_sided"))])
+    if rows:
+        parts.append("### Units against word measures on the same texts (AUC for B against C)\n\n" +
+                     table(["Model", "Units", "Word measure", "n", "Unit mean", "Words mean", "Unit better", "Words better", "Wilcoxon p"], rows))
+
+    # ---- checks that need no judge, coverage, second judge, size test
+    rows = []
+    for m in models:
+        pc = load(f"{m}/plain_checks.json")
+        if pc:
+            for label, a in [("all", pc["all"])] + [(k, v) for k, v in pc["by_detects"].items()]:
+                rows.append([NAMES[m], label, a["n"], pct(a["same_stem_share_of_content_peaks_mean"]), pct(a["share_of_peaks_on_punctuation_or_function_words"]),
+                             f(a["best_word_r_median"]), pct(a["held_out_hit_explainer_key_words"]), pct(a["random_window_hit_explainer_key_words"]),
+                             pct(a["held_out_hit_analyst_terms"]), pct(a["random_window_hit_analyst_terms"])])
+    if rows:
+        parts.append("## Checks of the explanations that need no judge\n\n" +
+                     table(["Model", "Units", "n", "Peaks sharing the commonest stem", "Peaks on punctuation or function words", "Best single word r (median)",
+                            "Held-out examples with an explainer key word", "Random windows", "Held-out examples with an analyst term", "Random windows"], rows))
+    rows = []
+    for m in models:
+        cv = load(f"coverage_{m}.json")
+        if cv:
+            for label, a in [("all", cv["all"]), ("idea units", cv["idea_units"]), ("name or word units", cv["name_units"])] + list(cv["by_share_band"].items()):
+                rows.append([NAMES[m], label, a["units"], a["firing_passages"], pct(a["covered"]), a["silent_passages"], pct(a["wrongly_claimed"])])
+    if rows:
+        parts.append("## Coverage: does the description predict firings at 30 to 60% of scale?\n\n" +
+                     table(["Model", "Units or band", "Units", "Firing passages", "Covered by the description", "Silent passages", "Wrongly claimed"], rows))
+    rows = []
+    for m in models:
+        sj = load(f"second_judge_{m}.json")
+        if sj:
+            for k in ("kind", "detects", "steer"):
+                if sj.get(k):
+                    rows.append([NAMES[m], k, sj[k]["n"], pct(sj[k]["agree"]), f(sj[k].get("kappa"))])
+    if rows:
+        parts.append("## Qwen3-32B as a second judge: agreement with the Claude judge\n\n" + table(["Units of", "Judgment", "Items", "Agreement", "Kappa"], rows))
+    sz = load("size_test.json")
+    if sz:
+        rows = [[k, v["n_big"], v["n_small"], pct(v["win_rate_big"]), pct(v["win_rate_small"]), f(v["difference"], 3), pv(v["p_one_sided"])]
+                for k, v in sz.items() if isinstance(v, dict) and "p_one_sided" in v]
+        parts.append(f"## Bigger is cleaner? Win rate, {NAMES[sz['big']]} against {NAMES[sz['small']]}\n\n" +
+                     table(["Comparison", "Units (big)", "Units (small)", "Win rate (big)", "Win rate (small)", "Difference", "One-sided p"], rows))
+        rows = [[k, f(sz[k]["big"], 3), f(sz[k]["small"], 3), f(sz[k]["difference"], 3), f"{f(sz[k]['ci95'][0], 3)} to {f(sz[k]['ci95'][1], 3)}"]
+                for k in ("new_example_strong_rate", "near_miss_strong_rate", "idea_bound_share", "one_idea_score")]
+        parts.append("### Other differences (big minus small)\n\n" + table(["Measure", "Big", "Small", "Difference", "95% interval"], rows))
+
+    # ---- steering
+    sg = load("steering_gallery.json")
+    if sg:
+        rows = [[f"{k} x scale", v["n"], v["correct"], pct(v["accuracy"]), v["none"]] for k, v in sg["by_multiple"].items()]
+        parts.append(f"## Steering calibration on 40 gallery neurons (chance {pct(sg['chance'])}; chosen multiple {sg['chosen_multiple']}, p = {pv(sg['p_above_chance_at_chosen'])})\n\n" +
+                     table(["Multiple", "Items", "Correct", "Accuracy", "Answered none"], rows))
+    rows = []
+    for m in models:
+        st_ = load(f"steering_{m}.json")
+        if st_:
+            for label, a in [("idea units (criterion)", st_["idea_units"]), ("name or word units", st_["name_units"]), ("all units", st_["all_units"]),
+                             ("idea units, four distractors of their own kind", st_["idea_units_with_four_distractors_of_their_own_kind"])] + \
+                            [(f"depth quarter {q}", a) for q, a in st_["by_depth_quarter"].items()] + [(f"kind: {k}", a) for k, a in st_["by_kind"].items()]:
+                rows.append([NAMES[m], label, a["n"], a["correct"], pct(a["accuracy"]), a["none"], pv(a["p_above_chance"])])
+            sh = st_["sham_items"]
+            rows.append([NAMES[m], "sham items (own title removed): answered none", sh["n"], sh["answered_none"], pct(sh["answered_none"] / max(sh["n"], 1)), "", ""])
+            kw = st_["key_words_in_continuations"]["idea_units"]
+            rows.append([NAMES[m], "idea units: continuations with a key word (pushed / not pushed / other units pushed)", "", "", f"{pct(kw['own_forced'])} / {pct(kw['unforced'])} / {pct(kw['other_units_forced'])}", "", ""])
+    if rows:
+        parts.append("## Steering the explained units (chance 20%)\n\n" + table(["Model", "Units", "Items", "Correct", "Accuracy", "Answered none", "Binomial p"], rows))
+
+    # ---- ablation
+    rows = []
+    for m in models:
+        ab = load(f"ablation_{m}.json")
+        if not ab:
+            continue
+        for label, key in (("summary tokens, name-free (confirmatory)", "story_tokens_name_free"), ("every position", "every_position_name_free"),
+                           ("original texts", "story_tokens_original"), ("strong firings only", "strong_firings_only"), ("weak activity only", "weak_activity_only")):
+            a = ab.get(key)
+            if not a:
+                continue
+            r, g, sp = a["matched_random_sets"], a["magnitude_matched_random_sets"], a.get("specificity", {})
+            rows.append([NAMES[m], label, r["n_sets"], f(r["mean_drop_canon"]), f(r["mean_drop_random_sets_mean"], 3), f(r["mean_drop_random_sets_max"], 3), pv(r["p"]),
+                         f(g["mean_drop_random_sets_max"], 3), pv(g["p"]), f(sp.get("mean_drop_hero_films_own_hero")), pv(sp.get("p_one_sided")),
+                         f(r["activation_removed"]["canon"], 0), f(g["activation_removed"]["sets_mean"], 0),
+                         f"{a['untouched_reply_says_batman']} -> {a['canon_ablated_reply_still_says_batman']}"])
+        if "criterion" in ab:
+            c = ab["criterion"]
+            rows.append([NAMES[m], "criterion", "", "", "", "", pv(c["p_against_sets_matched_on_works"]), "", pv(c["p_against_sets_also_matched_on_activity"]), "",
+                         pv(c["specificity_p"]), "", "", f"evaluable {c['evaluable_with_this_question']}; met {c['met']}"])
+    if rows:
+        parts.append("## Ablation: switching off Batman's canon (drop in the log-odds of the hero's name)\n\n" +
+                     table(["Model", "Version", "Random sets", "Canon, Batman works", "Sets (mean)", "Sets (max)", "p", "Activity-matched sets (max)", "p",
+                            "Canon, hero films (own hero)", "Specificity p", "Activation removed: canon", "activity-matched sets (mean)", "Replies naming Batman: untouched -> canon off"], rows))
+
+    # ---- twins
+    rows = []
+    for o in ORDER:
+        tw = load(f"twins_{ORDER[0]}_{o}.json")
+        if not tw:
+            continue
+        for label, key in (("all units", "all"), ("idea units", "idea_units"), ("name or word units", "name_units")):
+            nf, tt = tw["name_free_sentences"][key], tw["testers_texts"][key]
+            rows.append([NAMES[o], label, nf["n"], f(nf["explained"]["r_original_median"]), f(nf["explained"]["r_name_free_median"]), f(nf["lexical"]["r_name_free_median"]),
+                         f(nf["depth"]["r_name_free_median"]), f"{f(nf['twin_minus_lexical_controls']['mean'], 3)} ({f(nf['twin_minus_lexical_controls']['ci95'][0], 3)} to {f(nf['twin_minus_lexical_controls']['ci95'][1], 3)})",
+                         tt["n"], f"{tt['won']} / {tt['tied']} / {tt['lost']}", pct(tt["strong_rate_A"]), pct(tt["strong_rate_B"]), pct(tt["strong_rate_C"]),
+                         pct(tt["idea_bound_share"]), pct(tt["mismatched_idea_bound_share_mean"]), pv(tt["p_idea_bound_against_mismatch"])])
+        rows.append([NAMES[o], "twins beat both nulls for idea units", "", "", "", "", "", "", "", "", "", "", "", "", "", str(tw["twins_beat_both_nulls_for_idea_units"])])
+    if rows:
+        parts.append(f"## Twins of the {NAMES[ORDER[0]]} units in other models\n\n" +
+                     table(["Other model", "Units", "n", "Twin r, original sentences (median)", "Twin r, name-free", "Word-matched controls, name-free", "Depth-matched controls, name-free",
+                            "Twin minus word-matched controls (95% interval)", "Units with tester texts", "Twin on the tester's texts: won / tied / lost", "A", "B", "C",
+                            "Idea-bound", "Mismatched texts", "p against mismatch"], rows))
+
     # ---- the six confirmatory tests
     cf = load("confirmatory.json")
     if cf:
