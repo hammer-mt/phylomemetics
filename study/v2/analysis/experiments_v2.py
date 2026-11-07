@@ -31,6 +31,7 @@ label = X.label
 CUT_SENTENCES, CUT_WORDS = 20, 400
 MIN_CANON = 20                        # a canon share over fewer units or words than this is not scored
 BANDS = [(2, 3), (4, 6), (7, 10), (11, 16)]      # frequency bands of the word-presence regressors (number of Batman works)
+N_DECISION = 2 + len(BANDS) + 1                  # v1's two word measures, the four bands, raw-count TF-IDF
 
 
 def cut_length(sentences):
@@ -209,13 +210,14 @@ def word_measures():
     rare = df_bg <= 0.03 * len(bg) + 1e-9
     A_bg = X.tfidf().fit(bg).transform(anon).toarray()             # word weights from the background plots
     A_bi = TfidfVectorizer(stop_words="english", min_df=2, sublinear_tf=True, ngram_range=(1, 2)).fit_transform(anon).toarray()
+    A_raw = TfidfVectorizer(stop_words="english", min_df=2).fit_transform(anon).toarray()          # raw term counts, not their logarithm
     code_sets = [{int(m[1:]) for s in w["sentences"] for m in X.CODE.findall(s)} for w in X.neutral]
     n_codes = np.array([len(c) for c in code_sets], float)
     P_codes = np.zeros((N, max(max(c) for c in code_sets if c)), bool)          # which codes (X1, X2, ...) a work contains
     for w, c in enumerate(code_sets):
         P_codes[w, [k - 1 for k in c]] = True
     sim_codes = -np.abs(n_codes[:, None] - n_codes[None, :])
-    _WORDS.update({"P_codes": P_codes, "df_bg": df_bg, "sim": sim, "Pw": Pw, "sim_bg": A_bg @ A_bg.T, "Pw_rare": Pw[:, rare], "sim_bigram": A_bi @ A_bi.T, "sim_codes": sim_codes,
+    _WORDS.update({"P_codes": P_codes, "df_bg": df_bg, "sim": sim, "Pw": Pw, "sim_bg": A_bg @ A_bg.T, "Pw_rare": Pw[:, rare], "sim_bigram": A_bi @ A_bi.T, "sim_rawtf": A_raw @ A_raw.T, "sim_codes": sim_codes,
                    "n_codes": n_codes, "n_words": int(Pw.shape[1]), "n_words_rare": int(rare.sum()), "n_background_plots": len(bg),
                    "commonest_words_dropped_by_the_cap": [str(x) for x in names[np.argsort(-df_bg)][:20]]})
     return _WORDS
@@ -225,23 +227,26 @@ _RATES = {}
 
 
 def word_rates():
-    """[N, 12] work-by-comic rates for each word measure. The first two are v1's registered pair; with the four
-    frequency bands they are the regressors of the decision test (PLAN.md Section 18, change 6)."""
+    """[N, 12] work-by-comic rates for each word measure. The first two are v1's registered pair; with word presence in
+    four frequency bands and TF-IDF on raw term counts they are the regressors of the decision test (PLAN.md Section 18,
+    change 6)."""
     if not _RATES:
         W = word_measures()
         _RATES.update({"tfidf_cosine": W["sim"][:, X.COMICS], "word_presence": X.unit_rates(W["Pw"])})
         _RATES.update({f"word_presence_in_{lo}_to_{hi}_works": X.unit_rates(W["Pw"], (lo, hi)) for lo, hi in BANDS})
+        _RATES.update({"tfidf_raw_counts": W["sim_rawtf"][:, X.COMICS]})
         _RATES.update({"tfidf_background_weights": W["sim_bg"][:, X.COMICS], "word_presence_background_rare": X.unit_rates(W["Pw_rare"]),
-                       "tfidf_words_and_pairs": W["sim_bigram"][:, X.COMICS], "code_count_similarity": W["sim_codes"][:, X.COMICS],
-                       "code_presence": X.unit_rates(W["P_codes"])})
+                       "tfidf_words_and_pairs": W["sim_bigram"][:, X.COMICS],
+                       "code_count_similarity": W["sim_codes"][:, X.COMICS], "code_presence": X.unit_rates(W["P_codes"])})
     return _RATES
 
 
 def regressors(which):
-    """registered: v1's two word measures. decision: those and word presence in four frequency bands. all: every word and code measure."""
+    """registered: v1's two word measures. decision: those, word presence in four frequency bands and raw-count TF-IDF.
+    all: every word and code measure."""
     WR = word_rates()
     keys = list(WR)
-    return [WR[k] for k in {"registered": keys[:2], "decision": keys[:2 + len(BANDS)], "all": keys}[which]]
+    return [WR[k] for k in {"registered": keys[:2], "decision": keys[:N_DECISION], "all": keys}[which]]
 
 
 def weighted_word_rate(e):
@@ -304,17 +309,33 @@ def words_block(n_null=1000):
     # what words alone give in the residual test: a pass here cannot mean "beyond words"
     cal = {"word_presence_of_words_in_11_to_16_works": R["word_presence_in_11_to_16_works"]}
     cal.update({f"word_presence_weighted_by_frequency_to_the_power_{e}": weighted_word_rate(e) for e in (0.5, 1, 2, 3)})
+    # and other word measures put in the neurons' place: none of them is among the decision test's regressors
+    for k in ("tfidf_background_weights", "word_presence_background_rare", "tfidf_words_and_pairs", "code_count_similarity", "code_presence"):
+        cal[k] = R[k]
+    cal["word_presence_of_words_in_4_to_16_works"] = X.unit_rates(W["Pw"], (4, 16))
+    for k, vec in (("tfidf_ignoring_words_in_over_half_the_texts", TfidfVectorizer(stop_words="english", min_df=2, sublinear_tf=True, max_df=0.5)),
+                   ("tfidf_raw_counts_words_and_pairs", TfidfVectorizer(stop_words="english", min_df=2, ngram_range=(1, 2))),
+                   ("tfidf_keeping_stop_words", TfidfVectorizer(min_df=2, sublinear_tf=True)),
+                   ("term_counts_without_idf", TfidfVectorizer(stop_words="english", min_df=2, use_idf=False)),
+                   ("tfidf_character_4_grams", TfidfVectorizer(analyzer="char_wb", ngram_range=(4, 4), min_df=2, sublinear_tf=True))):
+        A = vec.fit_transform(anon).toarray()
+        cal[k] = (A @ A.T)[:, X.COMICS]
     out["residual_test_on_words_alone"] = {
         k: {form: dict(pick(r), r2_of_fit=r["r2_of_fit"]) for form, r in (("registered_two_word_measures", residual(Rw, regressors("registered"))),
-                                                                          ("decision_with_frequency_bands", residual(Rw, regressors("decision"))))}
+                                                                          ("decision_test", residual(Rw, regressors("decision"))))}
         for k, Rw in cal.items()}
-    for k, v in out["residual_test_on_words_alone"].items():
-        print(f"  words alone, {k}: registered p {v['registered_two_word_measures']['exact_p']:.4f}, with frequency bands p {v['decision_with_frequency_bands']['exact_p']:.4f}", flush=True)
+    out["residual_test_on_words_alone"]["tfidf_raw_counts"] = {       # itself a regressor of the decision test: shown under the registered form and with the bands only
+        "registered_two_word_measures": dict(pick(residual(R["tfidf_raw_counts"], regressors("registered")))),
+        "v1_measures_and_frequency_bands_only": dict(pick(residual(R["tfidf_raw_counts"], regressors("decision")[:-1])))}
+    lowest = min(v["decision_test"]["exact_p"] for v in out["residual_test_on_words_alone"].values() if "decision_test" in v)
+    out["residual_test_on_words_alone_lowest_decision_p"] = lowest
+    print(f"  words alone through the decision test: lowest exact p {lowest:.4f}", flush=True)
     for k, P in (("tfidf_cosine", None), ("word_presence", W["Pw"]), ("tfidf_background_weights", None),
-                 ("word_presence_background_rare", W["Pw_rare"]), ("tfidf_words_and_pairs", None), ("code_count_similarity", None),
-                 ("code_presence", W["P_codes"])):
+                 ("word_presence_background_rare", W["Pw_rare"]), ("tfidf_words_and_pairs", None), ("tfidf_raw_counts", None),
+                 ("code_count_similarity", None), ("code_presence", W["P_codes"])):
         r = X.e2(P, rng=np.random.default_rng(7)) if P is not None else X.e2(None, R=R[k], rng=np.random.default_rng(7))
-        sims = {"tfidf_cosine": "sim", "tfidf_background_weights": "sim_bg", "tfidf_words_and_pairs": "sim_bigram", "code_count_similarity": "sim_codes"}
+        sims = {"tfidf_cosine": "sim", "tfidf_background_weights": "sim_bg", "tfidf_words_and_pairs": "sim_bigram", "tfidf_raw_counts": "sim_rawtf",
+                "code_count_similarity": "sim_codes"}
         out["E2"][k] = {"primary": r, "share_ties_half": share_with_ties(R[k]),
                         "sequels_name_free": X.sequel_control(P) if P is not None else X.sequel_control(None, sim=W[sims[k]])}
         print(f"  words E2 {k}: share {r['mean_share_beating_source']:.3f} exact p {r['chance']['joint_relabelling_exact']['p']:.5f} "
@@ -388,9 +409,11 @@ def e2_block(Pa, Po, full=True):
         "neurons_resid_on_tfidf_cosine": X.residual_test(R_n, two[:1]), "neurons_resid_on_word_presence": X.residual_test(R_n, two[1:]),
         "tfidf_cosine_resid_on_neurons": X.residual_test(WR["tfidf_cosine"], [R_n]),
         "word_presence_resid_on_neurons": X.residual_test(WR["word_presence"], [R_n])}
-    res["residual_regressors"] = {"decision_words_by_frequency": list(WR)[:2 + len(BANDS)], "registered_both_word_measures": list(WR)[:2],
+    res["residual_regressors"] = {"decision_words_by_frequency": list(WR)[:N_DECISION], "registered_both_word_measures": list(WR)[:2],
                                   "every_word_and_code_measure": list(WR)}
     res["residual_summary"] = {k: dict(pick(r), r2_of_fit=r["r2_of_fit"]) for k, r in res["residual_test_beyond_words"].items()}
+    res["beyond_words_at_this_setting"] = bool(res["residual_summary"]["decision_words_by_frequency"]["exact_p"] < 0.05
+                                               and res["residual_summary"]["every_word_and_code_measure"]["exact_p"] < 0.05)
     s, d, g = res["summary"], res["residual_summary"]["decision_words_by_frequency"], res["residual_summary"]["registered_both_word_measures"]
     print(f"  E2 share {s['share']:.3f} exact p {s['exact_p']:.5f} within-era p {s['within_era_p']:.4f} | evaluable {ev['evaluable']} "
           f"({ev['n_optional_units']:,} optional units, min per comic {ev['optional_units_per_comic_min']}) | sequels {res['sequels_name_free']['top2']}/7 "

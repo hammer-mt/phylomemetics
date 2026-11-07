@@ -3819,6 +3819,205 @@
      "n": 7
     }
    },
+   "tfidf_raw_counts": {
+    "primary": {
+     "rows": [
+      {
+       "target": "Batman Begins",
+       "sources": [
+        "Year One"
+       ],
+       "share_of_comics_beating_source": 0.0,
+       "rank": 1,
+       "n_comics": 9,
+       "beats_median": true
+      },
+      {
+       "target": "The Dark Knight",
+       "sources": [
+        "The Long Halloween",
+        "The Killing Joke"
+       ],
+       "share_of_comics_beating_source": 0.125,
+       "rank": 2,
+       "n_comics": 10,
+       "beats_median": true
+      },
+      {
+       "target": "Dark Knight Rises",
+       "sources": [
+        "Knightfall",
+        "Dark Knight Returns"
+       ],
+       "share_of_comics_beating_source": 0.667,
+       "rank": 7,
+       "n_comics": 11,
+       "beats_median": false
+      },
+      {
+       "target": "Batman v Superman",
+       "sources": [
+        "Dark Knight Returns"
+       ],
+       "share_of_comics_beating_source": 0.2,
+       "rank": 3,
+       "n_comics": 11,
+       "beats_median": true
+      },
+      {
+       "target": "Under the Red Hood",
+       "sources": [
+        "A Death in the Family"
+       ],
+       "share_of_comics_beating_source": 0.0,
+       "rank": 1,
+       "n_comics": 10,
+       "beats_median": true
+      },
+      {
+       "target": "Arkham Asylum (game)",
+       "sources": [
+        "Arkham Asylum (comic)"
+       ],
+       "share_of_comics_beating_source": 0.0,
+       "rank": 1,
+       "n_comics": 10,
+       "beats_median": true
+      },
+      {
+       "target": "Batman '89",
+       "sources": [
+        "The Killing Joke"
+       ],
+       "share_of_comics_beating_source": 0.0,
+       "rank": 1,
+       "n_comics": 6,
+       "beats_median": true
+      },
+      {
+       "target": "Joker (2019)",
+       "sources": [
+        "The Killing Joke"
+       ],
+       "share_of_comics_beating_source": 0.0,
+       "rank": 1,
+       "n_comics": 12,
+       "beats_median": true
+      },
+      {
+       "target": "The Batman",
+       "sources": [
+        "Year One",
+        "The Long Halloween"
+       ],
+       "share_of_comics_beating_source": 0.0,
+       "rank": 1,
+       "n_comics": 12,
+       "beats_median": true
+      }
+     ],
+     "mean_share_beating_source": 0.11022222222222222,
+     "null_mean": 0.46577388608305276,
+     "p_one_sided": 0.0007999200079992001,
+     "beats_median": 8,
+     "n": 9,
+     "placebo_mean": 0.43021262002743477,
+     "placebo_min": 0.26296296296296295,
+     "real_below_all_placebos": true,
+     "placebo_p5": 0.2805291005291005,
+     "n_valid_placebos": 9,
+     "placebo_excluded_no_eligible_comic": [
+      "1943 serial",
+      "Batman '66"
+     ],
+     "placebo_by_target": {
+      "Batman Returns": 0.3777777777777778,
+      "Batman Forever": 0.5,
+      "Batman & Robin": 0.32275132275132273,
+      "Mask of the Phantasm": 0.26296296296296295,
+      "Return of the Joker": 0.30687830687830686,
+      "Arkham City": 0.5756172839506173,
+      "Arkham Knight": 0.5481481481481482,
+      "Lego Batman": 0.46060606060606063,
+      "Batman Ninja": 0.5171717171717172
+     },
+     "chance": {
+      "observed_unrounded": 0.11018518518518519,
+      "joint_relabelling_exact": {
+       "n_maps": 3991680,
+       "mean": 0.46724653946876166,
+       "p": 0.000273819544652878
+      },
+      "joint_relabelling_time_consistent": {
+       "n_maps": 483840,
+       "mean": 0.4383799239919032,
+       "p": 0.0007502480158730159
+      },
+      "within_era": {
+       "n_maps": 1440,
+       "mean": 0.4291432846988402,
+       "p": 0.003472222222222222
+      },
+      "eligible_uniform_expectation": 0.4444444444444444
+     }
+    },
+    "share_ties_half": 0.11018518518518519,
+    "sequels_name_free": {
+     "rows": [
+      {
+       "sequel": "The Dark Knight",
+       "prequel": "Batman Begins",
+       "rank": 1,
+       "n": 9,
+       "closest": "Batman Begins"
+      },
+      {
+       "sequel": "Dark Knight Rises",
+       "prequel": "The Dark Knight",
+       "rank": 1,
+       "n": 13,
+       "closest": "The Dark Knight"
+      },
+      {
+       "sequel": "Batman Returns",
+       "prequel": "Batman '89",
+       "rank": 1,
+       "n": 3,
+       "closest": "Batman '89"
+      },
+      {
+       "sequel": "Batman Forever",
+       "prequel": "Batman Returns",
+       "rank": 3,
+       "n": 5,
+       "closest": "1943 serial"
+      },
+      {
+       "sequel": "Batman & Robin",
+       "prequel": "Batman Forever",
+       "rank": 1,
+       "n": 6,
+       "closest": "Batman Forever"
+      },
+      {
+       "sequel": "Arkham City",
+       "prequel": "Arkham Asylum (game)",
+       "rank": 1,
+       "n": 12,
+       "closest": "Arkham Asylum (game)"
+      },
+      {
+       "sequel": "Arkham Knight",
+       "prequel": "Arkham City",
+       "rank": 2,
+       "n": 14,
+       "closest": "Arkham Asylum (game)"
+      }
+     ],
+     "top2": 6,
+     "n": 7
+    }
+   },
    "code_count_similarity": {
     "primary": {
      "rows": [
@@ -4230,13 +4429,13 @@
      "real_below_all_placebos": true,
      "r2_of_fit": 0.3726779354587646
     },
-    "decision_with_frequency_bands": {
-     "share": 0.4335858585858586,
-     "exact_p": 0.49061773488856825,
-     "within_era_p": 0.5090277777777777,
-     "time_consistent_p": 0.5216001157407407,
-     "chance_mean": 0.43712121212121213,
-     "placebo_mean": 0.4759072203516647,
+    "decision_test": {
+     "share": 0.4191358024691358,
+     "exact_p": 0.44072846520763187,
+     "within_era_p": 0.3680555555555556,
+     "time_consistent_p": 0.32981150793650793,
+     "chance_mean": 0.4370276842499065,
+     "placebo_mean": 0.4800090855646412,
      "real_below_all_placebos": false,
      "r2_of_fit": 1.0
     }
@@ -4252,15 +4451,15 @@
      "real_below_all_placebos": true,
      "r2_of_fit": 0.9728175265475152
     },
-    "decision_with_frequency_bands": {
-     "share": 0.357631874298541,
-     "exact_p": 0.17645502645502645,
-     "within_era_p": 0.3527777777777778,
-     "time_consistent_p": 0.18190104166666668,
-     "chance_mean": 0.45142162364384586,
-     "placebo_mean": 0.42217011383678055,
+    "decision_test": {
+     "share": 0.45794051627384963,
+     "exact_p": 0.555731922398589,
+     "within_era_p": 0.7743055555555556,
+     "time_consistent_p": 0.49907407407407406,
+     "chance_mean": 0.44586606808829027,
+     "placebo_mean": 0.4205614344503233,
      "real_below_all_placebos": false,
-     "r2_of_fit": 0.9965580764614422
+     "r2_of_fit": 0.9966169287192161
     }
    },
    "word_presence_weighted_by_frequency_to_the_power_1": {
@@ -4274,15 +4473,15 @@
      "real_below_all_placebos": true,
      "r2_of_fit": 0.9057616570494724
     },
-    "decision_with_frequency_bands": {
-     "share": 0.3354096520763188,
-     "exact_p": 0.12704876142376142,
-     "within_era_p": 0.3013888888888889,
-     "time_consistent_p": 0.1347842261904762,
-     "chance_mean": 0.452964833520389,
-     "placebo_mean": 0.4214797890723816,
+    "decision_test": {
+     "share": 0.42213804713804715,
+     "exact_p": 0.41239904000320665,
+     "within_era_p": 0.6215277777777778,
+     "time_consistent_p": 0.3814318783068783,
+     "chance_mean": 0.4473625140291807,
+     "placebo_mean": 0.417960023515579,
      "real_below_all_placebos": false,
-     "r2_of_fit": 0.9877110882717485
+     "r2_of_fit": 0.9878824412970009
     }
    },
    "word_presence_weighted_by_frequency_to_the_power_2": {
@@ -4296,15 +4495,15 @@
      "real_below_all_placebos": true,
      "r2_of_fit": 0.7371617672577231
     },
-    "decision_with_frequency_bands": {
-     "share": 0.3535353535353536,
-     "exact_p": 0.171611702340869,
-     "within_era_p": 0.3993055555555556,
-     "time_consistent_p": 0.2388661541005291,
-     "chance_mean": 0.4590534979423868,
-     "placebo_mean": 0.43932178932178934,
+    "decision_test": {
+     "share": 0.3893378226711561,
+     "exact_p": 0.28163104256854254,
+     "within_era_p": 0.4979166666666667,
+     "time_consistent_p": 0.34469452711640214,
+     "chance_mean": 0.45391881780770665,
+     "placebo_mean": 0.43710206117613526,
      "real_below_all_placebos": false,
-     "r2_of_fit": 0.9624184189559515
+     "r2_of_fit": 0.9626393352831706
     }
    },
    "word_presence_weighted_by_frequency_to_the_power_3": {
@@ -4318,18 +4517,281 @@
      "real_below_all_placebos": true,
      "r2_of_fit": 0.5994359747653986
     },
-    "decision_with_frequency_bands": {
-     "share": 0.3389450056116723,
-     "exact_p": 0.15130170755170755,
-     "within_era_p": 0.31875,
-     "time_consistent_p": 0.19800553902116402,
-     "chance_mean": 0.45780957725402166,
-     "placebo_mean": 0.4667691019542871,
+    "decision_test": {
+     "share": 0.36363636363636365,
+     "exact_p": 0.21616437189353857,
+     "within_era_p": 0.41458333333333336,
+     "time_consistent_p": 0.26803695436507935,
+     "chance_mean": 0.45621025065469506,
+     "placebo_mean": 0.4656467674986193,
      "real_below_all_placebos": false,
-     "r2_of_fit": 0.9287752652189749
+     "r2_of_fit": 0.9288526651063124
+    }
+   },
+   "tfidf_background_weights": {
+    "registered_two_word_measures": {
+     "share": 0.30617283950617286,
+     "exact_p": 0.06004739858906526,
+     "within_era_p": 0.1736111111111111,
+     "time_consistent_p": 0.08282696759259259,
+     "chance_mean": 0.4610736999625888,
+     "placebo_mean": 0.4472186592556963,
+     "real_below_all_placebos": true,
+     "r2_of_fit": 0.9118436416008201
+    },
+    "decision_test": {
+     "share": 0.3830246913580247,
+     "exact_p": 0.22804333012666347,
+     "within_era_p": 0.4791666666666667,
+     "time_consistent_p": 0.2881262400793651,
+     "chance_mean": 0.4605499438832772,
+     "placebo_mean": 0.4552495858051413,
+     "real_below_all_placebos": false,
+     "r2_of_fit": 0.9162811164516181
+    }
+   },
+   "word_presence_background_rare": {
+    "registered_two_word_measures": {
+     "share": 0.42957351290684626,
+     "exact_p": 0.40993867243867244,
+     "within_era_p": 0.42986111111111114,
+     "time_consistent_p": 0.4487289186507937,
+     "chance_mean": 0.45229143284698836,
+     "placebo_mean": 0.46500988723210945,
+     "real_below_all_placebos": false,
+     "r2_of_fit": 0.2446844009385628
+    },
+    "decision_test": {
+     "share": 0.4517115600448933,
+     "exact_p": 0.49095243105659775,
+     "within_era_p": 0.5173611111111112,
+     "time_consistent_p": 0.58213458994709,
+     "chance_mean": 0.45664047886270104,
+     "placebo_mean": 0.45973046158231345,
+     "real_below_all_placebos": false,
+     "r2_of_fit": 0.3262882541336436
+    }
+   },
+   "tfidf_words_and_pairs": {
+    "registered_two_word_measures": {
+     "share": 0.3209034792368126,
+     "exact_p": 0.09278699695366362,
+     "within_era_p": 0.10486111111111111,
+     "time_consistent_p": 0.10784970238095239,
+     "chance_mean": 0.44788627010849236,
+     "placebo_mean": 0.4197388345536493,
+     "real_below_all_placebos": false,
+     "r2_of_fit": 0.9796054583162606
+    },
+    "decision_test": {
+     "share": 0.3702861952861952,
+     "exact_p": 0.2363671436588103,
+     "within_era_p": 0.23055555555555557,
+     "time_consistent_p": 0.2824301421957672,
+     "chance_mean": 0.45076692854470635,
+     "placebo_mean": 0.41474132863021757,
+     "real_below_all_placebos": false,
+     "r2_of_fit": 0.9802456354269151
+    }
+   },
+   "code_count_similarity": {
+    "registered_two_word_measures": {
+     "share": 0.517732884399551,
+     "exact_p": 0.6607994628827962,
+     "within_era_p": 0.8013888888888889,
+     "time_consistent_p": 0.834230324074074,
+     "chance_mean": 0.45546202768424987,
+     "placebo_mean": 0.5093910890207186,
+     "real_below_all_placebos": false,
+     "r2_of_fit": 0.05051672546237973
+    },
+    "decision_test": {
+     "share": 0.5491301907968575,
+     "exact_p": 0.7600070646945647,
+     "within_era_p": 0.8361111111111111,
+     "time_consistent_p": 0.8718088624338625,
+     "chance_mean": 0.4513935652824541,
+     "placebo_mean": 0.4776646535905795,
+     "real_below_all_placebos": false,
+     "r2_of_fit": 0.1160904776832623
+    }
+   },
+   "code_presence": {
+    "registered_two_word_measures": {
+     "share": 0.7373456790123457,
+     "exact_p": 0.9994100228475229,
+     "within_era_p": 0.9951388888888889,
+     "time_consistent_p": 0.9993716931216932,
+     "chance_mean": 0.42283015338570895,
+     "placebo_mean": 0.49705075445816177,
+     "real_below_all_placebos": false,
+     "r2_of_fit": 0.08416292522126956
+    },
+    "decision_test": {
+     "share": 0.7052469135802469,
+     "exact_p": 0.9974341630591631,
+     "within_era_p": 0.9930555555555556,
+     "time_consistent_p": 0.9947503306878307,
+     "chance_mean": 0.43962775907220353,
+     "placebo_mean": 0.48409714428232953,
+     "real_below_all_placebos": false,
+     "r2_of_fit": 0.1390755806802958
+    }
+   },
+   "word_presence_of_words_in_4_to_16_works": {
+    "registered_two_word_measures": {
+     "share": 0.2728675645342312,
+     "exact_p": 0.02393879268879269,
+     "within_era_p": 0.04236111111111111,
+     "time_consistent_p": 0.052938988095238095,
+     "chance_mean": 0.47282080059857834,
+     "placebo_mean": 0.38273386421534566,
+     "real_below_all_placebos": true,
+     "r2_of_fit": 0.8516466001839544
+    },
+    "decision_test": {
+     "share": 0.43439955106621775,
+     "exact_p": 0.5397767356100689,
+     "within_era_p": 0.38055555555555554,
+     "time_consistent_p": 0.4330398478835979,
+     "chance_mean": 0.42738496071829407,
+     "placebo_mean": 0.42038061389913245,
+     "real_below_all_placebos": false,
+     "r2_of_fit": 0.984597368503736
+    }
+   },
+   "tfidf_ignoring_words_in_over_half_the_texts": {
+    "registered_two_word_measures": {
+     "share": 0.2525813692480359,
+     "exact_p": 0.02517761944845278,
+     "within_era_p": 0.08611111111111111,
+     "time_consistent_p": 0.052606233465608464,
+     "chance_mean": 0.45635054246165363,
+     "placebo_mean": 0.429406944221759,
+     "real_below_all_placebos": true,
+     "r2_of_fit": 0.9984893607984541
+    },
+    "decision_test": {
+     "share": 0.35482603815937147,
+     "exact_p": 0.16780879228795895,
+     "within_era_p": 0.21319444444444444,
+     "time_consistent_p": 0.22607886904761904,
+     "chance_mean": 0.45815563037785256,
+     "placebo_mean": 0.45206429373096046,
+     "real_below_all_placebos": false,
+     "r2_of_fit": 0.9985522640175001
+    }
+   },
+   "tfidf_raw_counts_words_and_pairs": {
+    "registered_two_word_measures": {
+     "share": 0.09135802469135802,
+     "exact_p": 7.891414141414142e-05,
+     "within_era_p": 0.001388888888888889,
+     "time_consistent_p": 0.00024594907407407405,
+     "chance_mean": 0.4655910961466517,
+     "placebo_mean": 0.48677783122227564,
+     "real_below_all_placebos": true,
+     "r2_of_fit": 0.8602854270566405
+    },
+    "decision_test": {
+     "share": 0.3307800224466891,
+     "exact_p": 0.12312284551867886,
+     "within_era_p": 0.10138888888888889,
+     "time_consistent_p": 0.14581886574074074,
+     "chance_mean": 0.44966329966329965,
+     "placebo_mean": 0.42032182495145454,
+     "real_below_all_placebos": false,
+     "r2_of_fit": 0.9879641985929809
+    }
+   },
+   "tfidf_keeping_stop_words": {
+    "registered_two_word_measures": {
+     "share": 0.3258417508417508,
+     "exact_p": 0.11777021204104537,
+     "within_era_p": 0.2659722222222222,
+     "time_consistent_p": 0.24064153439153438,
+     "chance_mean": 0.45631313131313134,
+     "placebo_mean": 0.45504916893805775,
+     "real_below_all_placebos": false,
+     "r2_of_fit": 0.829299183563829
+    },
+    "decision_test": {
+     "share": 0.4138047138047138,
+     "exact_p": 0.34174257455507456,
+     "within_era_p": 0.5340277777777778,
+     "time_consistent_p": 0.5609188988095238,
+     "chance_mean": 0.4562196034418256,
+     "placebo_mean": 0.4477660199882421,
+     "real_below_all_placebos": false,
+     "r2_of_fit": 0.8440571102538408
+    }
+   },
+   "term_counts_without_idf": {
+    "registered_two_word_measures": {
+     "share": 0.35679012345679006,
+     "exact_p": 0.13791586499919833,
+     "within_era_p": 0.24513888888888888,
+     "time_consistent_p": 0.25208540013227515,
+     "chance_mean": 0.4718948746726525,
+     "placebo_mean": 0.4393712254823366,
+     "real_below_all_placebos": false,
+     "r2_of_fit": 0.7699530489836968
+    },
+    "decision_test": {
+     "share": 0.47160493827160493,
+     "exact_p": 0.5861800044091711,
+     "within_era_p": 0.6277777777777778,
+     "time_consistent_p": 0.650822585978836,
+     "chance_mean": 0.45098204264870934,
+     "placebo_mean": 0.4387650758021128,
+     "real_below_all_placebos": false,
+     "r2_of_fit": 0.8874587037879579
+    }
+   },
+   "tfidf_character_4_grams": {
+    "registered_two_word_measures": {
+     "share": 0.5779461279461279,
+     "exact_p": 0.9190358445566779,
+     "within_era_p": 0.9166666666666666,
+     "time_consistent_p": 0.9125537367724867,
+     "chance_mean": 0.4279087167976057,
+     "placebo_mean": 0.4529808668697557,
+     "real_below_all_placebos": false,
+     "r2_of_fit": 0.6859828997726534
+    },
+    "decision_test": {
+     "share": 0.6510942760942761,
+     "exact_p": 0.9826992644700978,
+     "within_era_p": 0.9791666666666666,
+     "time_consistent_p": 0.9757895171957672,
+     "chance_mean": 0.42420501309390196,
+     "placebo_mean": 0.4532708032708032,
+     "real_below_all_placebos": false,
+     "r2_of_fit": 0.696012738673869
+    }
+   },
+   "tfidf_raw_counts": {
+    "registered_two_word_measures": {
+     "share": 0.1271604938271605,
+     "exact_p": 0.00020868406285072953,
+     "within_era_p": 0.002777777777777778,
+     "time_consistent_p": 0.0008391203703703704,
+     "chance_mean": 0.46408529741863075,
+     "placebo_mean": 0.4519596315892612,
+     "real_below_all_placebos": true
+    },
+    "v1_measures_and_frequency_bands_only": {
+     "share": 0.15339506172839507,
+     "exact_p": 0.002298029902196569,
+     "within_era_p": 0.004861111111111111,
+     "time_consistent_p": 0.0035652281746031745,
+     "chance_mean": 0.45468574635241304,
+     "placebo_mean": 0.45562547877362697,
+     "real_below_all_placebos": true
     }
    }
   },
-  "computed_with": "6bda281007b550eb"
+  "residual_test_on_words_alone_lowest_decision_p": 0.12312284551867886,
+  "computed_with": "774db73b89e10d2d"
  }
 }
