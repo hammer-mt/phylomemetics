@@ -6,7 +6,7 @@ Written by `v2/analysis/paper_tables.py` from the committed results. Do not edit
 
 | Model | Units | Present in some work | of those, distinctive | Per Batman work, original (median) | Per Batman work, name-free (median) | Scale set by the supplement | Scale set by the study texts | Positive units whose strongest raw activation is an echo |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Qwen3-32B | 3,276,800 | 1,812,516 | 885,060 | 140,954 | 102,256 | n/a | n/a | n/a |
+| Qwen3-32B | 3,276,800 | 1,812,516 | 885,060 | 140,954 | 102,256 | 1,035,162 | 4,518 | 82,189 |
 | Qwen3-8B | 884,736 | 455,422 | 238,530 | 37,127 | 23,442 | 304,263 | 1,161 | 26,262 |
 | Llama 3.1 8B | 917,504 | 577,567 | 284,096 | 46,660 | 35,504 | 249,304 | 1,003 | 6,240 |
 
@@ -63,6 +63,8 @@ Written by `v2/analysis/paper_tables.py` from the committed results. Do not edit
 | llama3.1-8b: v1 published | 0.544 | n/a | 0.102 | 0.00017 | 0.010 | n/a | 5 | 0.00 | 0.58 |
 | llama3.1-8b: full precision, v1 rule | 0.529 | n/a | 0.114 | 0.00034 | 0.035 | 0.14 | 5 | -0.04 | 0.63 |
 | llama3.1-8b: full precision, v2 rule | 0.387 | 0.396 | 0.136 | 0.00047 | 0.20 | 0.57 | 4 | 0.17 | 0.56 |
+| qwen3-32b: full precision, v1 rule | 0.520 | n/a | 0.137 | 0.00074 | 0.023 | 0.26 | 5 | 0.25 | 0.30 |
+| qwen3-32b: full precision, v2 rule | 0.361 | 0.365 | 0.149 | 0.0016 | 0.20 | 0.69 | 5 | 0.35 | 0.37 |
 
 ### Differences between cells
 
@@ -72,24 +74,27 @@ Written by `v2/analysis/paper_tables.py` from the committed results. Do not edit
 | rule, same model | qwen3-8b | -0.248 | -0.375 to -0.114 | -0.062 | -0.154 to 0.026 |
 | pipeline (4-bit and 8-bit storage against full precision), same model and rule | llama3.1-8b | -0.015 | -0.055 to 0.017 | 0.012 | -0.025 to 0.050 |
 | rule, same model | llama3.1-8b | -0.142 | -0.256 to -0.043 | 0.022 | -0.028 to 0.081 |
+| rule, same model | qwen3-32b | -0.159 | -0.247 to -0.073 | 0.011 | -0.060 to 0.081 |
+| model size, v2 rule | qwen3-32b | 0.102 | -0.023 to 0.223 | 0.072 | -0.002 to 0.139 |
+| model size, v1 rule | qwen3-32b | 0.013 | -0.085 to 0.113 | -0.002 | -0.083 to 0.075 |
 
 ### Cells below 0.05
 
 | Test | Cells | Below 0.05 | 0.05 x cells |
 | --- | --- | --- | --- |
-| E2_exact_p | 4 | 4 | 0.2 |
-| residual_decision_test | 4 | 0 | 0.2 |
-| residual_registered_two_measure_form_which_can_pass_on_words_alone | 4 | 2 | 0.2 |
-| E3_p | 4 | 0 | 0.2 |
-| E1_openings_against_their_own_label_shuffle_v2_rule_only | 2 | 0 | 0.1 |
+| E2_exact_p | 6 | 6 | 0.3 |
+| residual_decision_test | 6 | 0 | 0.3 |
+| residual_registered_two_measure_form_which_can_pass_on_words_alone | 6 | 3 | 0.3 |
+| E3_p | 6 | 0 | 0.3 |
+| E1_openings_against_their_own_label_shuffle_v2_rule_only | 3 | 0 | 0.15 |
 
 ### The same counts under one null for all cells
 
 | Test | Cells | Below 0.05 | Probability of at least that many |
 | --- | --- | --- | --- |
-| E2 | 4 | 4 | 0.014 |
-| residual_decision_test | 4 | 0 | 1.00 |
-| residual_registered_two_measure_form | 4 | 2 | 0.055 |
+| E2 | 6 | 6 | 0.0096 |
+| residual_decision_test | 6 | 0 | 1.00 |
+| residual_registered_two_measure_form | 6 | 3 | 0.046 |
 
 ## Sensitivity grid (threshold x score x cap; 56 settings)
 
@@ -322,6 +327,10 @@ Only the first version for each model is a test. The others use 20 sets and are 
 | Model | Version | Random sets | Canon, Batman works | Sets (mean) | Sets (max) | p | Canon's rank | Activity-matched sets (max) | p | Canon's rank | Canon, hero films (own hero) | Specificity p | Activation removed: canon | activity-matched sets (mean) | Replies naming Batman: untouched -> canon off |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Qwen3-32B | summary tokens, name-free (confirmatory) | 200 | 2.39 | 0.020 | 0.115 | 0.0050 | 1 of 201 | 0.111 | 0.0050 | 1 of 201 | -0.07 | 0.0017 | 41201 | 24749 | 20 -> 13 |
+| Qwen3-32B | every position | 20 | 5.34 | 0.014 | 0.115 |  | 1 of 21 | 0.190 |  | 1 of 21 | 1.50 |  | 43606 | 25516 | 20 -> 2 |
+| Qwen3-32B | original texts | 20 | 0.28 | -0.037 | 0.006 |  | 1 of 21 | 0.014 |  | 1 of 21 | 0.18 |  | 133701 | 27908 | 30 -> 30 |
+| Qwen3-32B | strong firings only | 20 | 0.42 | 0.013 | 0.058 |  | 1 of 21 | 0.038 |  | 1 of 21 | -0.19 |  | 1426 | 665 | 20 -> 20 |
+| Qwen3-32B | weak activity only | 20 | 1.75 | 0.017 | 0.046 |  | 1 of 21 | 0.080 |  | 1 of 21 | -0.16 |  | 42998 | 23915 | 20 -> 13 |
 | Qwen3-32B | criterion |  |  |  |  | 0.0050 |  |  | 0.0050 |  |  | 0.0017 |  |  | untouched replies that do not start with a name: 5 of 32 (limit 4); evaluable False; met False |
 | Qwen3-8B | summary tokens, name-free (confirmatory) | 200 | 1.33 | 0.033 | 0.113 | 0.0050 | 1 of 201 | 0.122 | 0.0050 | 1 of 201 | 0.80 | 0.28 | 8366 | 4933 | 20 -> 16 |
 | Qwen3-8B | every position | 20 | 5.10 | 0.041 | 0.494 |  | 1 of 21 | 0.107 |  | 1 of 21 | 2.06 |  | 9075 | 5078 | 20 -> 2 |
@@ -338,3 +347,18 @@ Only the first version for each model is a test. The others use 20 sets and are 
 | Qwen3-8B | idea units | 126 | 0.60 | 0.31 | 0.35 | 0.29 | -0.024 (-0.065 to 0.015) | 126 | 79 / 46 / 1 | 34% | 24% | 2% | 21% | 6% | 0.0001 |
 | Qwen3-8B | name or word units | 115 | 0.63 | 0.22 | 0.44 | 0.31 | -0.171 (-0.224 to -0.119) | 115 | 67 / 44 / 4 | 32% | 20% | 5% | 16% | 5% | 0.0001 |
 | Qwen3-8B | twins beat both nulls for idea units |  |  |  |  |  |  |  |  |  |  |  |  |  | False |
+| Llama 3.1 8B | all units | 241 | 0.62 | 0.26 | 0.38 | 0.29 | -0.090 (-0.123 to -0.057) | 241 | 125 / 113 / 3 | 28% | 20% | 3% | 18% | 4% | 0.0001 |
+| Llama 3.1 8B | idea units | 126 | 0.61 | 0.30 | 0.36 | 0.28 | -0.016 (-0.054 to 0.020) | 126 | 70 / 55 / 1 | 28% | 22% | 3% | 21% | 4% | 0.0001 |
+| Llama 3.1 8B | name or word units | 115 | 0.62 | 0.21 | 0.41 | 0.30 | -0.171 (-0.221 to -0.122) | 115 | 55 / 58 / 2 | 28% | 18% | 5% | 14% | 4% | 0.0001 |
+| Llama 3.1 8B | twins beat both nulls for idea units |  |  |  |  |  |  |  |  |  |  |  |  |  | False |
+
+## The six confirmatory tests (Qwen3-32B)
+
+| Test | Verdict | p | Holm-adjusted p | Passes |
+| --- | --- | --- | --- | --- |
+| E1_identity | falsified | n/a | n/a | no |
+| E2_heredity |  | 0.0016 | 0.0078 | yes |
+| residual_beyond_words |  | 0.86 | 1.00 | no |
+| E3_selection |  | 0.37 | 1.00 | no |
+| ablation |  | 0.0050 | 0.020 | no |
+| steering_idea_units |  | 0.98 | 1.00 | no |
