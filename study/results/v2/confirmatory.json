@@ -1,0 +1,81 @@
+{
+ "model": "qwen3-32b",
+ "is_the_confirmatory_family": true,
+ "tests_with_a_p_value": 5,
+ "tests": {
+  "E1_identity": {
+   "verdict": "falsified",
+   "auc": 0.361328125,
+   "ci95": [
+    0.171875,
+    0.5625488281249997
+   ],
+   "openings_auc": 0.365234375,
+   "clauses": {
+    "auc_at_least_0.80": false,
+    "ci_lower_at_least_0.65": false,
+    "above_null_p95": false,
+    "within_0.05_without_iconography": true,
+    "openings_auc_at_least_0.70": false,
+    "openings_above_own_null_p95": false
+   },
+   "centroid_of_units_verdict": "falsified",
+   "p": null,
+   "passes": false
+  },
+  "E2_heredity": {
+   "share_of_comics_beating_the_source": 0.14876543209876542,
+   "p": 0.0015524791566458233,
+   "evaluable": true,
+   "sequel_control_passes": true,
+   "passes": true,
+   "holm_adjusted_p": 0.007762395783229117,
+   "nominal_only": false
+  },
+  "residual_beyond_words": {
+   "decision_test_p": 0.6907239558281225,
+   "every_measure_p": 0.85503848003848,
+   "p": 0.85503848003848,
+   "registered_two_measure_form_p": 0.19766814975148309,
+   "uncapped_settings_below_0.05": 0,
+   "uncapped_settings": 8,
+   "passes_in_at_least_half_of_the_uncapped_settings": false,
+   "passes": false,
+   "holm_adjusted_p": 1.0,
+   "nominal_only": false
+  },
+  "E3_selection": {
+   "rho": 0.34642857142857136,
+   "p": 0.37276272372762725,
+   "evaluable": true,
+   "passes": false,
+   "holm_adjusted_p": 1.0,
+   "nominal_only": false
+  },
+  "ablation": {
+   "p_against_sets_matched_on_works": 0.004975124378109453,
+   "p_against_sets_also_matched_on_activity": 0.004975124378109453,
+   "specificity_p": 0.0016998300169983002,
+   "p": 0.004975124378109453,
+   "evaluable": false,
+   "passes": false,
+   "holm_adjusted_p": 0.01990049751243781,
+   "nominal_only": false
+  },
+  "steering_idea_units": {
+   "accuracy": 0.1349206349206349,
+   "n": 126,
+   "correct": 17,
+   "chance": 0.2,
+   "multiple": 5,
+   "p": 0.9779600928241245,
+   "passes": false,
+   "holm_adjusted_p": 1.0,
+   "nominal_only": false
+  }
+ },
+ "passes": [
+  "E2_heredity"
+ ],
+ "not_yet_run": []
+}
