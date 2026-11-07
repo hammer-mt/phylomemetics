@@ -1,0 +1,1982 @@
+{
+ "spec": "primary: strongest sentence at least 30% of scale, every unit (no base-rate cap), band 2-16, hub on, time rule on, best source; p exact unless noted",
+ "cells": {
+  "anon": {
+   "n_optional_units": 147294,
+   "share": 0.13641975308641976,
+   "rows": {
+    "Batman Begins": {
+     "share": 0.125,
+     "rank": 2,
+     "n_compared": 9
+    },
+    "The Dark Knight": {
+     "share": 0.125,
+     "rank": 2,
+     "n_compared": 10
+    },
+    "Dark Knight Rises": {
+     "share": 0.5556,
+     "rank": 6,
+     "n_compared": 11
+    },
+    "Batman v Superman": {
+     "share": 0.0,
+     "rank": 1,
+     "n_compared": 11
+    },
+    "Under the Red Hood": {
+     "share": 0.0,
+     "rank": 1,
+     "n_compared": 10
+    },
+    "Arkham Asylum (game)": {
+     "share": 0.2222,
+     "rank": 3,
+     "n_compared": 10
+    },
+    "Batman '89": {
+     "share": 0.2,
+     "rank": 2,
+     "n_compared": 6
+    },
+    "Joker (2019)": {
+     "share": 0.0,
+     "rank": 1,
+     "n_compared": 12
+    },
+    "The Batman": {
+     "share": 0.0,
+     "rank": 1,
+     "n_compared": 12
+    }
+   },
+   "nulls": {
+    "joint_relabel": {
+     "n_maps": 3991680,
+     "null_mean": 0.47341937897493447,
+     "null_sd": 0.1139874730998208,
+     "p": 0.00047248276414943083
+    },
+    "joint_relabel_time_consistent": {
+     "n_maps": 483840,
+     "null_mean": 0.4201930640732725,
+     "null_sd": 0.11039957849091424,
+     "p": 0.001672040343915344
+    },
+    "within_era": {
+     "n_maps": 1440,
+     "null_mean": 0.3669098391320614,
+     "null_sd": 0.10243832532109229,
+     "p": 0.00625
+    },
+    "source_swap": {
+     "n_maps": 362880,
+     "null_mean": 0.4157304972119787,
+     "null_sd": 0.09566528644382631,
+     "p": 0.001173941798941799
+    },
+    "source_swap_time_consistent": {
+     "n_maps": 241920,
+     "null_mean": 0.4097025145636256,
+     "null_sd": 0.09687007264417614,
+     "p": 0.0015790343915343915
+    },
+    "source_swap_within_medium": {
+     "n_maps": 5040,
+     "null_mean": 0.32612920589111066,
+     "null_sd": 0.07985392636292281,
+     "p": 0.007142857142857143,
+     "movable": [
+      "Batman Begins",
+      "The Dark Knight",
+      "Dark Knight Rises",
+      "Batman v Superman",
+      "Batman '89",
+      "Joker (2019)",
+      "The Batman"
+     ]
+    },
+    "eligible_uniform": {
+     "null_mean": 0.4444444444444445,
+     "p": 0.0006158483793827125
+    },
+    "random_screen_targets": {
+     "n_maps": 100000,
+     "null_mean": 0.44339684988776656,
+     "null_sd": 0.10196846353148825,
+     "p": 0.0005699943000569994,
+     "pool": [
+      "Batman Begins",
+      "The Dark Knight",
+      "Dark Knight Rises",
+      "Batman v Superman",
+      "Under the Red Hood",
+      "Arkham Asylum (game)",
+      "Batman '89",
+      "Joker (2019)",
+      "The Batman",
+      "Batman Returns",
+      "Batman Forever",
+      "Batman & Robin",
+      "Mask of the Phantasm",
+      "Return of the Joker",
+      "Arkham City",
+      "Arkham Knight",
+      "Lego Batman",
+      "Batman Ninja"
+     ]
+    }
+   },
+   "chance_levels": {
+    "joint_relabel": 0.4734,
+    "joint_relabel_time_consistent": 0.4202,
+    "within_era": 0.3669,
+    "source_swap": 0.4157,
+    "source_swap_time_consistent": 0.4097,
+    "source_swap_within_medium": 0.3261,
+    "eligible_uniform": 0.4444,
+    "random_screen_targets": 0.4434
+   },
+   "era_share_of_paper_gap": 0.3161,
+   "era_mates": {
+    "share": 0.137037037037037,
+    "n_maps": 1440,
+    "null_mean": 0.4413580246913581,
+    "null_sd": 0.12233471565783388,
+    "p": 0.002777777777777778,
+    "per_adaptation": {
+     "Batman Begins": {
+      "n_era_mates": 5,
+      "era_mates_beating_source": [
+       "Gotham by Gaslight"
+      ]
+     },
+     "The Dark Knight": {
+      "n_era_mates": 6,
+      "era_mates_beating_source": [
+       "Year One"
+      ]
+     },
+     "Dark Knight Rises": {
+      "n_era_mates": 6,
+      "era_mates_beating_source": [
+       "Year One",
+       "A Death in the Family",
+       "Gotham by Gaslight",
+       "The Long Halloween"
+      ]
+     },
+     "Batman v Superman": {
+      "n_era_mates": 5,
+      "era_mates_beating_source": []
+     },
+     "Under the Red Hood": {
+      "n_era_mates": 5,
+      "era_mates_beating_source": []
+     },
+     "Arkham Asylum (game)": {
+      "n_era_mates": 5,
+      "era_mates_beating_source": []
+     },
+     "Batman '89": {
+      "n_era_mates": 5,
+      "era_mates_beating_source": [
+       "A Death in the Family"
+      ]
+     },
+     "Joker (2019)": {
+      "n_era_mates": 5,
+      "era_mates_beating_source": []
+     },
+     "The Batman": {
+      "n_era_mates": 6,
+      "era_mates_beating_source": []
+     }
+    }
+   },
+   "placebo": {
+    "time_rule": {
+     "real_share": 0.13641975308641976,
+     "per_target": {
+      "1943 serial": {
+       "mean_share": 0.0,
+       "n_eligible_comics": 0
+      },
+      "Batman '66": {
+       "mean_share": 0.0,
+       "n_eligible_comics": 0
+      },
+      "Batman Returns": {
+       "mean_share": 0.4444444444444444,
+       "n_eligible_comics": 6
+      },
+      "Batman Forever": {
+       "mean_share": 0.47777777777777775,
+       "n_eligible_comics": 7
+      },
+      "Batman & Robin": {
+       "mean_share": 0.45238095238095233,
+       "n_eligible_comics": 8
+      },
+      "Mask of the Phantasm": {
+       "mean_share": 0.48148148148148145,
+       "n_eligible_comics": 7
+      },
+      "Return of the Joker": {
+       "mean_share": 0.30687830687830686,
+       "n_eligible_comics": 8
+      },
+      "Arkham City": {
+       "mean_share": 0.5679012345679012,
+       "n_eligible_comics": 10
+      },
+      "Arkham Knight": {
+       "mean_share": 0.5567901234567901,
+       "n_eligible_comics": 11
+      },
+      "Lego Batman": {
+       "mean_share": 0.4353535353535353,
+       "n_eligible_comics": 12
+      },
+      "Batman Ninja": {
+       "mean_share": 0.5171717171717172,
+       "n_eligible_comics": 12
+      }
+     },
+     "mean_as_coded": 0.3854708703193552,
+     "min_as_coded": 0.0,
+     "real_below_all_as_coded": false,
+     "n_valid_targets": 9,
+     "mean_valid": 0.4711310637236563,
+     "min_valid": 0.30687830687830686,
+     "p5_valid": 0.35826839826839824,
+     "real_below_all_valid": true
+    },
+    "no_time_rule": {
+     "real_share": 0.1272727272727273,
+     "per_target": {
+      "1943 serial": {
+       "mean_share": 0.36767676767676766,
+       "n_eligible_comics": 12
+      },
+      "Batman '66": {
+       "mean_share": 0.3656565656565656,
+       "n_eligible_comics": 12
+      },
+      "Batman Returns": {
+       "mean_share": 0.25656565656565655,
+       "n_eligible_comics": 12
+      },
+      "Batman Forever": {
+       "mean_share": 0.48181818181818187,
+       "n_eligible_comics": 12
+      },
+      "Batman & Robin": {
+       "mean_share": 0.501010101010101,
+       "n_eligible_comics": 12
+      },
+      "Mask of the Phantasm": {
+       "mean_share": 0.4808080808080808,
+       "n_eligible_comics": 12
+      },
+      "Return of the Joker": {
+       "mean_share": 0.36868686868686873,
+       "n_eligible_comics": 12
+      },
+      "Arkham City": {
+       "mean_share": 0.608080808080808,
+       "n_eligible_comics": 12
+      },
+      "Arkham Knight": {
+       "mean_share": 0.5676767676767676,
+       "n_eligible_comics": 12
+      },
+      "Lego Batman": {
+       "mean_share": 0.4353535353535353,
+       "n_eligible_comics": 12
+      },
+      "Batman Ninja": {
+       "mean_share": 0.5171717171717172,
+       "n_eligible_comics": 12
+      }
+     },
+     "mean_as_coded": 0.45004591368227725,
+     "min_as_coded": 0.25656565656565655,
+     "real_below_all_as_coded": true,
+     "n_valid_targets": 11,
+     "mean_valid": 0.45004591368227725,
+     "min_valid": 0.25656565656565655,
+     "p5_valid": 0.3111111111111111,
+     "real_below_all_valid": true
+    }
+   },
+   "sequel_control": {
+    "paper_rule": {
+     "top2": 4,
+     "n": 7,
+     "passes": false,
+     "rows": [
+      {
+       "sequel": "The Dark Knight",
+       "prequel": "Batman Begins",
+       "rank": 3,
+       "n_candidates": 9,
+       "closest": "Batman Forever"
+      },
+      {
+       "sequel": "Dark Knight Rises",
+       "prequel": "The Dark Knight",
+       "rank": 2,
+       "n_candidates": 13,
+       "closest": "1943 serial"
+      },
+      {
+       "sequel": "Batman Returns",
+       "prequel": "Batman '89",
+       "rank": 1,
+       "n_candidates": 3,
+       "closest": "Batman '89"
+      },
+      {
+       "sequel": "Batman Forever",
+       "prequel": "Batman Returns",
+       "rank": 3,
+       "n_candidates": 5,
+       "closest": "1943 serial"
+      },
+      {
+       "sequel": "Batman & Robin",
+       "prequel": "Batman Forever",
+       "rank": 3,
+       "n_candidates": 6,
+       "closest": "1943 serial"
+      },
+      {
+       "sequel": "Arkham City",
+       "prequel": "Arkham Asylum (game)",
+       "rank": 1,
+       "n_candidates": 12,
+       "closest": "Arkham Asylum (game)"
+      },
+      {
+       "sequel": "Arkham Knight",
+       "prequel": "Arkham City",
+       "rank": 1,
+       "n_candidates": 14,
+       "closest": "Arkham City"
+      }
+     ]
+    },
+    "without_1943_serial": {
+     "top2": 6,
+     "n": 7,
+     "passes": true,
+     "rows": [
+      {
+       "sequel": "The Dark Knight",
+       "prequel": "Batman Begins",
+       "rank": 3,
+       "n_candidates": 8,
+       "closest": "Batman Forever"
+      },
+      {
+       "sequel": "Dark Knight Rises",
+       "prequel": "The Dark Knight",
+       "rank": 1,
+       "n_candidates": 12,
+       "closest": "The Dark Knight"
+      },
+      {
+       "sequel": "Batman Returns",
+       "prequel": "Batman '89",
+       "rank": 1,
+       "n_candidates": 2,
+       "closest": "Batman '89"
+      },
+      {
+       "sequel": "Batman Forever",
+       "prequel": "Batman Returns",
+       "rank": 2,
+       "n_candidates": 4,
+       "closest": "Batman '89"
+      },
+      {
+       "sequel": "Batman & Robin",
+       "prequel": "Batman Forever",
+       "rank": 2,
+       "n_candidates": 5,
+       "closest": "Mask of the Phantasm"
+      },
+      {
+       "sequel": "Arkham City",
+       "prequel": "Arkham Asylum (game)",
+       "rank": 1,
+       "n_candidates": 11,
+       "closest": "Arkham Asylum (game)"
+      },
+      {
+       "sequel": "Arkham Knight",
+       "prequel": "Arkham City",
+       "rank": 1,
+       "n_candidates": 13,
+       "closest": "Arkham City"
+      }
+     ]
+    }
+   },
+   "source_rules": {
+    "definitions": {
+     "mean_of_sources": "average over the documented sources of the share of comparison comics beating that source",
+     "first_listed": "first-listed source only; the other documented source stays out of the comparison set",
+     "first_listed_only": "first-listed source only; the other documented source becomes an ordinary comparison comic",
+     "against_mean_source_z": "share of comparison comics beating the mean z of the sources"
+    },
+    "best_of_sources (primary)": {
+     "n_adaptations": 9,
+     "share": 0.13641975308641976,
+     "rows": {
+      "Batman Begins": 0.125,
+      "The Dark Knight": 0.125,
+      "Dark Knight Rises": 0.5556,
+      "Batman v Superman": 0.0,
+      "Under the Red Hood": 0.0,
+      "Arkham Asylum (game)": 0.2222,
+      "Batman '89": 0.2,
+      "Joker (2019)": 0.0,
+      "The Batman": 0.0
+     },
+     "ranks": {
+      "Batman Begins": 2,
+      "The Dark Knight": 2,
+      "Dark Knight Rises": 6,
+      "Batman v Superman": 1,
+      "Under the Red Hood": 1,
+      "Arkham Asylum (game)": 3,
+      "Batman '89": 2,
+      "Joker (2019)": 1,
+      "The Batman": 1
+     },
+     "joint": {
+      "n_maps": 3991680,
+      "null_mean": 0.47341937897493447,
+      "null_sd": 0.1139874730998208,
+      "p": 0.00047248276414943083
+     },
+     "within_era": {
+      "n_maps": 1440,
+      "null_mean": 0.3669098391320614,
+      "null_sd": 0.10243832532109229,
+      "p": 0.00625
+     }
+    },
+    "mean_of_sources": {
+     "n_adaptations": 9,
+     "share": 0.1475308641975309,
+     "rows": {
+      "Batman Begins": 0.125,
+      "The Dark Knight": 0.125,
+      "Dark Knight Rises": 0.5556,
+      "Batman v Superman": 0.0,
+      "Under the Red Hood": 0.0,
+      "Arkham Asylum (game)": 0.2222,
+      "Batman '89": 0.2,
+      "Joker (2019)": 0.0,
+      "The Batman": 0.1
+     },
+     "ranks": {
+      "Batman Begins": 2,
+      "The Dark Knight": 2,
+      "Dark Knight Rises": 6,
+      "Batman v Superman": 1,
+      "Under the Red Hood": 1,
+      "Arkham Asylum (game)": 3,
+      "Batman '89": 2,
+      "Joker (2019)": 1,
+      "The Batman": 2
+     },
+     "joint": {
+      "n_maps": 3991680,
+      "null_mean": 0.529620276842499,
+      "null_sd": 0.11167033559159098,
+      "p": 9.92063492063492e-05
+     },
+     "within_era": {
+      "n_maps": 1440,
+      "null_mean": 0.4303614852225963,
+      "null_sd": 0.10720521173543088,
+      "p": 0.001388888888888889
+     }
+    },
+    "first_listed": {
+     "n_adaptations": 9,
+     "share": 0.158641975308642,
+     "rows": {
+      "Batman Begins": 0.125,
+      "The Dark Knight": 0.125,
+      "Dark Knight Rises": 0.5556,
+      "Batman v Superman": 0.0,
+      "Under the Red Hood": 0.0,
+      "Arkham Asylum (game)": 0.2222,
+      "Batman '89": 0.2,
+      "Joker (2019)": 0.0,
+      "The Batman": 0.2
+     },
+     "ranks": {
+      "Batman Begins": 2,
+      "The Dark Knight": 2,
+      "Dark Knight Rises": 6,
+      "Batman v Superman": 1,
+      "Under the Red Hood": 1,
+      "Arkham Asylum (game)": 3,
+      "Batman '89": 2,
+      "Joker (2019)": 1,
+      "The Batman": 3
+     },
+     "joint": {
+      "n_maps": 3991680,
+      "null_mean": 0.529620276842499,
+      "null_sd": 0.1161933176427078,
+      "p": 0.0004151134359467693
+     },
+     "within_era": {
+      "n_maps": 1440,
+      "null_mean": 0.4259376169098391,
+      "null_sd": 0.10025818509845992,
+      "p": 0.001388888888888889
+     }
+    },
+    "first_listed_only": {
+     "n_adaptations": 9,
+     "share": 0.1701178451178451,
+     "rows": {
+      "Batman Begins": 0.125,
+      "The Dark Knight": 0.1111,
+      "Dark Knight Rises": 0.6,
+      "Batman v Superman": 0.0,
+      "Under the Red Hood": 0.0,
+      "Arkham Asylum (game)": 0.2222,
+      "Batman '89": 0.2,
+      "Joker (2019)": 0.0,
+      "The Batman": 0.2727
+     },
+     "ranks": {
+      "Batman Begins": 2,
+      "The Dark Knight": 2,
+      "Dark Knight Rises": 7,
+      "Batman v Superman": 1,
+      "Under the Red Hood": 1,
+      "Arkham Asylum (game)": 3,
+      "Batman '89": 2,
+      "Joker (2019)": 1,
+      "The Batman": 4
+     },
+     "joint": {
+      "n_maps": 3991680,
+      "null_mean": 0.5296202768424991,
+      "null_sd": 0.11484106134460852,
+      "p": 0.0005859688151354818
+     },
+     "within_era": {
+      "n_maps": 1440,
+      "null_mean": 0.4283249158249158,
+      "null_sd": 0.09733561141360053,
+      "p": 0.001388888888888889
+     }
+    },
+    "against_mean_source_z": {
+     "n_adaptations": 9,
+     "share": 0.1475308641975309,
+     "rows": {
+      "Batman Begins": 0.125,
+      "The Dark Knight": 0.125,
+      "Dark Knight Rises": 0.5556,
+      "Batman v Superman": 0.0,
+      "Under the Red Hood": 0.0,
+      "Arkham Asylum (game)": 0.2222,
+      "Batman '89": 0.2,
+      "Joker (2019)": 0.0,
+      "The Batman": 0.1
+     },
+     "ranks": {
+      "Batman Begins": 2,
+      "The Dark Knight": 2,
+      "Dark Knight Rises": 6,
+      "Batman v Superman": 1,
+      "Under the Red Hood": 1,
+      "Arkham Asylum (game)": 3,
+      "Batman '89": 2,
+      "Joker (2019)": 1,
+      "The Batman": 2
+     },
+     "joint": {
+      "n_maps": 3991680,
+      "null_mean": 0.5373643845866068,
+      "null_sd": 0.11250066189234328,
+      "p": 0.00011123136123136124
+     },
+     "within_era": {
+      "n_maps": 1440,
+      "null_mean": 0.4405981107369996,
+      "null_sd": 0.10987897503798366,
+      "p": 0.0020833333333333333
+     }
+    }
+   },
+   "source_lists": {
+    "documented": {
+     "sources": {
+      "Batman Begins": [
+       "Year One"
+      ],
+      "The Dark Knight": [
+       "The Long Halloween",
+       "The Killing Joke"
+      ],
+      "Dark Knight Rises": [
+       "Knightfall",
+       "Dark Knight Returns"
+      ],
+      "Batman v Superman": [
+       "Dark Knight Returns"
+      ],
+      "Under the Red Hood": [
+       "A Death in the Family"
+      ],
+      "Arkham Asylum (game)": [
+       "Arkham Asylum (comic)"
+      ],
+      "Batman '89": [
+       "The Killing Joke"
+      ],
+      "Joker (2019)": [
+       "The Killing Joke"
+      ],
+      "The Batman": [
+       "Year One",
+       "The Long Halloween"
+      ]
+     },
+     "n_adaptations": 9,
+     "share": 0.13641975308641976,
+     "rows": {
+      "Batman Begins": 0.125,
+      "The Dark Knight": 0.125,
+      "Dark Knight Rises": 0.5556,
+      "Batman v Superman": 0.0,
+      "Under the Red Hood": 0.0,
+      "Arkham Asylum (game)": 0.2222,
+      "Batman '89": 0.2,
+      "Joker (2019)": 0.0,
+      "The Batman": 0.0
+     },
+     "ranks": {
+      "Batman Begins": 2,
+      "The Dark Knight": 2,
+      "Dark Knight Rises": 6,
+      "Batman v Superman": 1,
+      "Under the Red Hood": 1,
+      "Arkham Asylum (game)": 3,
+      "Batman '89": 2,
+      "Joker (2019)": 1,
+      "The Batman": 1
+     },
+     "joint": {
+      "n_maps": 3991680,
+      "null_mean": 0.47341937897493447,
+      "null_sd": 0.1139874730998208,
+      "p": 0.00047248276414943083
+     },
+     "within_era": {
+      "n_maps": 1440,
+      "null_mean": 0.3669098391320614,
+      "null_sd": 0.10243832532109229,
+      "p": 0.00625
+     }
+    },
+    "fuller": {
+     "sources": {
+      "Batman Begins": [
+       "Year One",
+       "The Long Halloween"
+      ],
+      "The Dark Knight": [
+       "The Long Halloween",
+       "The Killing Joke"
+      ],
+      "Dark Knight Rises": [
+       "Knightfall",
+       "Dark Knight Returns"
+      ],
+      "Batman v Superman": [
+       "Dark Knight Returns"
+      ],
+      "Under the Red Hood": [
+       "A Death in the Family"
+      ],
+      "Arkham Asylum (game)": [
+       "Arkham Asylum (comic)"
+      ],
+      "Batman '89": [
+       "The Killing Joke",
+       "Dark Knight Returns"
+      ],
+      "Joker (2019)": [
+       "The Killing Joke"
+      ],
+      "The Batman": [
+       "Year One",
+       "The Long Halloween"
+      ]
+     },
+     "n_adaptations": 9,
+     "share": 0.14395943562610228,
+     "rows": {
+      "Batman Begins": 0.1429,
+      "The Dark Knight": 0.125,
+      "Dark Knight Rises": 0.5556,
+      "Batman v Superman": 0.0,
+      "Under the Red Hood": 0.0,
+      "Arkham Asylum (game)": 0.2222,
+      "Batman '89": 0.25,
+      "Joker (2019)": 0.0,
+      "The Batman": 0.0
+     },
+     "ranks": {
+      "Batman Begins": 2,
+      "The Dark Knight": 2,
+      "Dark Knight Rises": 6,
+      "Batman v Superman": 1,
+      "Under the Red Hood": 1,
+      "Arkham Asylum (game)": 3,
+      "Batman '89": 2,
+      "Joker (2019)": 1,
+      "The Batman": 1
+     },
+     "joint": {
+      "n_maps": 3991680,
+      "null_mean": 0.43581182192293305,
+      "null_sd": 0.11511068294050679,
+      "p": 0.0019357764149430816
+     },
+     "within_era": {
+      "n_maps": 1440,
+      "null_mean": 0.34541513013735237,
+      "null_sd": 0.10002560784912298,
+      "p": 0.01597222222222222
+     }
+    },
+    "wiki_full": {
+     "sources": {
+      "Batman Begins": [
+       "Year One",
+       "The Long Halloween"
+      ],
+      "The Dark Knight": [
+       "The Long Halloween",
+       "The Killing Joke",
+       "Year One",
+       "Dark Knight Returns"
+      ],
+      "Dark Knight Rises": [
+       "Knightfall",
+       "Dark Knight Returns"
+      ],
+      "Batman v Superman": [
+       "Dark Knight Returns"
+      ],
+      "Under the Red Hood": [
+       "A Death in the Family"
+      ],
+      "Arkham Asylum (game)": [
+       "Arkham Asylum (comic)",
+       "The Killing Joke"
+      ],
+      "Batman '89": [
+       "The Killing Joke",
+       "Dark Knight Returns"
+      ],
+      "Joker (2019)": [
+       "The Killing Joke",
+       "Dark Knight Returns"
+      ],
+      "The Batman": [
+       "Year One",
+       "The Long Halloween"
+      ]
+     },
+     "n_adaptations": 9,
+     "share": 0.13315696649029982,
+     "rows": {
+      "Batman Begins": 0.1429,
+      "The Dark Knight": 0.0,
+      "Dark Knight Rises": 0.5556,
+      "Batman v Superman": 0.0,
+      "Under the Red Hood": 0.0,
+      "Arkham Asylum (game)": 0.25,
+      "Batman '89": 0.25,
+      "Joker (2019)": 0.0,
+      "The Batman": 0.0
+     },
+     "ranks": {
+      "Batman Begins": 2,
+      "The Dark Knight": 1,
+      "Dark Knight Rises": 6,
+      "Batman v Superman": 1,
+      "Under the Red Hood": 1,
+      "Arkham Asylum (game)": 3,
+      "Batman '89": 2,
+      "Joker (2019)": 1,
+      "The Batman": 1
+     },
+     "joint": {
+      "n_maps": 3991680,
+      "null_mean": 0.384891240446796,
+      "null_sd": 0.10972469916558814,
+      "p": 0.002462622254288921
+     },
+     "within_era": {
+      "n_maps": 1440,
+      "null_mean": 0.2982378012933568,
+      "null_sd": 0.08520626457926087,
+      "p": 0.008333333333333333
+     }
+    },
+    "wiki_strict": {
+     "sources": {
+      "Batman Begins": [
+       "Year One",
+       "The Long Halloween"
+      ],
+      "The Dark Knight": [
+       "The Long Halloween",
+       "Year One",
+       "Dark Knight Returns"
+      ],
+      "Dark Knight Rises": [
+       "Knightfall",
+       "Dark Knight Returns"
+      ],
+      "Batman v Superman": [
+       "Dark Knight Returns"
+      ],
+      "Arkham Asylum (game)": [
+       "Arkham Asylum (comic)"
+      ],
+      "Batman '89": [
+       "The Killing Joke",
+       "Dark Knight Returns"
+      ],
+      "Joker (2019)": [
+       "The Killing Joke",
+       "Dark Knight Returns"
+      ],
+      "The Batman": [
+       "Year One",
+       "The Long Halloween"
+      ]
+     },
+     "n_adaptations": 8,
+     "share": 0.14632936507936506,
+     "rows": {
+      "Batman Begins": 0.1429,
+      "The Dark Knight": 0.0,
+      "Dark Knight Rises": 0.5556,
+      "Batman v Superman": 0.0,
+      "Arkham Asylum (game)": 0.2222,
+      "Batman '89": 0.25,
+      "Joker (2019)": 0.0,
+      "The Batman": 0.0
+     },
+     "ranks": {
+      "Batman Begins": 2,
+      "The Dark Knight": 1,
+      "Dark Knight Rises": 6,
+      "Batman v Superman": 1,
+      "Arkham Asylum (game)": 3,
+      "Batman '89": 2,
+      "Joker (2019)": 1,
+      "The Batman": 1
+     },
+     "joint": {
+      "n_maps": 665280,
+      "null_mean": 0.3897516835016835,
+      "null_sd": 0.12852451539488435,
+      "p": 0.011988936988936988
+     },
+     "within_era": {
+      "n_maps": 1440,
+      "null_mean": 0.3174867724867725,
+      "null_sd": 0.1009108513076845,
+      "p": 0.02638888888888889
+     }
+    }
+   },
+   "rate_variants": {
+    "note": "the expectation-corrected rate is a positive affine transform of the raw rate within each comic, so with the hub adjustment it gives exactly the primary result; it is reported without the hub",
+    "raw_rate_no_hub": {
+     "n_adaptations": 9,
+     "share": 0.20586419753086418,
+     "rows": {
+      "Batman Begins": 0.125,
+      "The Dark Knight": 0.25,
+      "Dark Knight Rises": 0.3333,
+      "Batman v Superman": 0.0,
+      "Under the Red Hood": 0.0,
+      "Arkham Asylum (game)": 0.4444,
+      "Batman '89": 0.6,
+      "Joker (2019)": 0.0,
+      "The Batman": 0.1
+     },
+     "ranks": {
+      "Batman Begins": 2,
+      "The Dark Knight": 3,
+      "Dark Knight Rises": 4,
+      "Batman v Superman": 1,
+      "Under the Red Hood": 1,
+      "Arkham Asylum (game)": 5,
+      "Batman '89": 4,
+      "Joker (2019)": 1,
+      "The Batman": 2
+     },
+     "joint": {
+      "n_maps": 3991680,
+      "null_mean": 0.4634306023194912,
+      "null_sd": 0.10961015015321743,
+      "p": 0.006422859547859548
+     },
+     "within_era": {
+      "n_maps": 1440,
+      "null_mean": 0.3851360830527497,
+      "null_sd": 0.09972674000540667,
+      "p": 0.02847222222222222
+     }
+    },
+    "expectation_corrected_no_hub": {
+     "n_adaptations": 9,
+     "share": 0.13240740740740742,
+     "rows": {
+      "Batman Begins": 0.0,
+      "The Dark Knight": 0.125,
+      "Dark Knight Rises": 0.2222,
+      "Batman v Superman": 0.0,
+      "Under the Red Hood": 0.0,
+      "Arkham Asylum (game)": 0.4444,
+      "Batman '89": 0.4,
+      "Joker (2019)": 0.0,
+      "The Batman": 0.0
+     },
+     "ranks": {
+      "Batman Begins": 1,
+      "The Dark Knight": 2,
+      "Dark Knight Rises": 3,
+      "Batman v Superman": 1,
+      "Under the Red Hood": 1,
+      "Arkham Asylum (game)": 5,
+      "Batman '89": 3,
+      "Joker (2019)": 1,
+      "The Batman": 1
+     },
+     "joint": {
+      "n_maps": 3991680,
+      "null_mean": 0.45588290310512536,
+      "null_sd": 0.1144712868661007,
+      "p": 0.0005190796857463524
+     },
+     "within_era": {
+      "n_maps": 1440,
+      "null_mean": 0.38743686868686866,
+      "null_sd": 0.11032356165518149,
+      "p": 0.002777777777777778
+     }
+    }
+   }
+  },
+  "orig": {
+   "n_optional_units": 194566,
+   "share": 0.06327160493827161,
+   "rows": {
+    "Batman Begins": {
+     "share": 0.0,
+     "rank": 1,
+     "n_compared": 9
+    },
+    "The Dark Knight": {
+     "share": 0.125,
+     "rank": 2,
+     "n_compared": 10
+    },
+    "Dark Knight Rises": {
+     "share": 0.4444,
+     "rank": 5,
+     "n_compared": 11
+    },
+    "Batman v Superman": {
+     "share": 0.0,
+     "rank": 1,
+     "n_compared": 11
+    },
+    "Under the Red Hood": {
+     "share": 0.0,
+     "rank": 1,
+     "n_compared": 10
+    },
+    "Arkham Asylum (game)": {
+     "share": 0.0,
+     "rank": 1,
+     "n_compared": 10
+    },
+    "Batman '89": {
+     "share": 0.0,
+     "rank": 1,
+     "n_compared": 6
+    },
+    "Joker (2019)": {
+     "share": 0.0,
+     "rank": 1,
+     "n_compared": 12
+    },
+    "The Batman": {
+     "share": 0.0,
+     "rank": 1,
+     "n_compared": 12
+    }
+   },
+   "nulls": {
+    "joint_relabel": {
+     "n_maps": 3991680,
+     "null_mean": 0.47319491208380093,
+     "null_sd": 0.12175985357905114,
+     "p": 4.484327400994068e-05
+    },
+    "joint_relabel_time_consistent": {
+     "n_maps": 483840,
+     "null_mean": 0.4146179156812837,
+     "null_sd": 0.11695049602356822,
+     "p": 0.00021494708994708995
+    },
+    "within_era": {
+     "n_maps": 1440,
+     "null_mean": 0.4083988028432473,
+     "null_sd": 0.12039909587795863,
+     "p": 0.001388888888888889
+    },
+    "source_swap": {
+     "n_maps": 362880,
+     "null_mean": 0.4091750841750842,
+     "null_sd": 0.09701662006436333,
+     "p": 8.818342151675486e-05
+    },
+    "source_swap_time_consistent": {
+     "n_maps": 241920,
+     "null_mean": 0.40477576692854467,
+     "null_sd": 0.09778297316674978,
+     "p": 9.92063492063492e-05
+    },
+    "source_swap_within_medium": {
+     "n_maps": 5040,
+     "null_mean": 0.2783509700176367,
+     "null_sd": 0.08253184642028727,
+     "p": 0.006349206349206349,
+     "movable": [
+      "Batman Begins",
+      "The Dark Knight",
+      "Dark Knight Rises",
+      "Batman v Superman",
+      "Batman '89",
+      "Joker (2019)",
+      "The Batman"
+     ]
+    },
+    "eligible_uniform": {
+     "null_mean": 0.4444444444444445,
+     "p": 9.420412333380398e-06
+    },
+    "random_screen_targets": {
+     "n_maps": 100000,
+     "null_mean": 0.43515226210517877,
+     "null_sd": 0.10681262138832437,
+     "p": 8.99991000089999e-05,
+     "pool": [
+      "Batman Begins",
+      "The Dark Knight",
+      "Dark Knight Rises",
+      "Batman v Superman",
+      "Under the Red Hood",
+      "Arkham Asylum (game)",
+      "Batman '89",
+      "Joker (2019)",
+      "The Batman",
+      "Batman Returns",
+      "Batman Forever",
+      "Batman & Robin",
+      "Mask of the Phantasm",
+      "Return of the Joker",
+      "Arkham City",
+      "Arkham Knight",
+      "Lego Batman",
+      "Batman Ninja"
+     ]
+    }
+   },
+   "chance_levels": {
+    "joint_relabel": 0.4732,
+    "joint_relabel_time_consistent": 0.4146,
+    "within_era": 0.4084,
+    "source_swap": 0.4092,
+    "source_swap_time_consistent": 0.4048,
+    "source_swap_within_medium": 0.2784,
+    "eligible_uniform": 0.4444,
+    "random_screen_targets": 0.4352
+   },
+   "era_share_of_paper_gap": 0.1581,
+   "era_mates": {
+    "share": 0.07407407407407407,
+    "n_maps": 1440,
+    "null_mean": 0.46141975308641986,
+    "null_sd": 0.13740739354208886,
+    "p": 0.001388888888888889,
+    "per_adaptation": {
+     "Batman Begins": {
+      "n_era_mates": 5,
+      "era_mates_beating_source": []
+     },
+     "The Dark Knight": {
+      "n_era_mates": 6,
+      "era_mates_beating_source": [
+       "Year One"
+      ]
+     },
+     "Dark Knight Rises": {
+      "n_era_mates": 6,
+      "era_mates_beating_source": [
+       "Year One",
+       "A Death in the Family",
+       "Gotham by Gaslight"
+      ]
+     },
+     "Batman v Superman": {
+      "n_era_mates": 5,
+      "era_mates_beating_source": []
+     },
+     "Under the Red Hood": {
+      "n_era_mates": 5,
+      "era_mates_beating_source": []
+     },
+     "Arkham Asylum (game)": {
+      "n_era_mates": 5,
+      "era_mates_beating_source": []
+     },
+     "Batman '89": {
+      "n_era_mates": 5,
+      "era_mates_beating_source": []
+     },
+     "Joker (2019)": {
+      "n_era_mates": 5,
+      "era_mates_beating_source": []
+     },
+     "The Batman": {
+      "n_era_mates": 6,
+      "era_mates_beating_source": []
+     }
+    }
+   },
+   "placebo": {
+    "time_rule": {
+     "real_share": 0.06327160493827161,
+     "per_target": {
+      "1943 serial": {
+       "mean_share": 0.0,
+       "n_eligible_comics": 0
+      },
+      "Batman '66": {
+       "mean_share": 0.0,
+       "n_eligible_comics": 0
+      },
+      "Batman Returns": {
+       "mean_share": 0.4,
+       "n_eligible_comics": 6
+      },
+      "Batman Forever": {
+       "mean_share": 0.4407407407407407,
+       "n_eligible_comics": 7
+      },
+      "Batman & Robin": {
+       "mean_share": 0.42063492063492064,
+       "n_eligible_comics": 8
+      },
+      "Mask of the Phantasm": {
+       "mean_share": 0.3851851851851852,
+       "n_eligible_comics": 7
+      },
+      "Return of the Joker": {
+       "mean_share": 0.38359788359788355,
+       "n_eligible_comics": 8
+      },
+      "Arkham City": {
+       "mean_share": 0.5925925925925926,
+       "n_eligible_comics": 10
+      },
+      "Arkham Knight": {
+       "mean_share": 0.5925925925925927,
+       "n_eligible_comics": 11
+      },
+      "Lego Batman": {
+       "mean_share": 0.34444444444444444,
+       "n_eligible_comics": 12
+      },
+      "Batman Ninja": {
+       "mean_share": 0.5909090909090909,
+       "n_eligible_comics": 12
+      }
+     },
+     "mean_as_coded": 0.37733613188158643,
+     "min_as_coded": 0.0,
+     "real_below_all_as_coded": false,
+     "n_valid_targets": 9,
+     "mean_valid": 0.4611886056330501,
+     "min_valid": 0.34444444444444444,
+     "p5_valid": 0.3601058201058201,
+     "real_below_all_valid": true
+    },
+    "no_time_rule": {
+     "real_share": 0.05555555555555555,
+     "per_target": {
+      "1943 serial": {
+       "mean_share": 0.5414141414141413,
+       "n_eligible_comics": 12
+      },
+      "Batman '66": {
+       "mean_share": 0.41515151515151516,
+       "n_eligible_comics": 12
+      },
+      "Batman Returns": {
+       "mean_share": 0.24646464646464647,
+       "n_eligible_comics": 12
+      },
+      "Batman Forever": {
+       "mean_share": 0.39292929292929296,
+       "n_eligible_comics": 12
+      },
+      "Batman & Robin": {
+       "mean_share": 0.5121212121212121,
+       "n_eligible_comics": 12
+      },
+      "Mask of the Phantasm": {
+       "mean_share": 0.32222222222222224,
+       "n_eligible_comics": 12
+      },
+      "Return of the Joker": {
+       "mean_share": 0.4171717171717172,
+       "n_eligible_comics": 12
+      },
+      "Arkham City": {
+       "mean_share": 0.5838383838383838,
+       "n_eligible_comics": 12
+      },
+      "Arkham Knight": {
+       "mean_share": 0.5777777777777777,
+       "n_eligible_comics": 12
+      },
+      "Lego Batman": {
+       "mean_share": 0.34444444444444444,
+       "n_eligible_comics": 12
+      },
+      "Batman Ninja": {
+       "mean_share": 0.5909090909090909,
+       "n_eligible_comics": 12
+      }
+     },
+     "mean_as_coded": 0.44949494949494945,
+     "min_as_coded": 0.24646464646464647,
+     "real_below_all_as_coded": true,
+     "n_valid_targets": 11,
+     "mean_valid": 0.44949494949494945,
+     "min_valid": 0.24646464646464647,
+     "p5_valid": 0.28434343434343434,
+     "real_below_all_valid": true
+    }
+   },
+   "sequel_control": {
+    "paper_rule": {
+     "top2": 7,
+     "n": 7,
+     "passes": true,
+     "rows": [
+      {
+       "sequel": "The Dark Knight",
+       "prequel": "Batman Begins",
+       "rank": 2,
+       "n_candidates": 9,
+       "closest": "Batman Forever"
+      },
+      {
+       "sequel": "Dark Knight Rises",
+       "prequel": "The Dark Knight",
+       "rank": 1,
+       "n_candidates": 13,
+       "closest": "The Dark Knight"
+      },
+      {
+       "sequel": "Batman Returns",
+       "prequel": "Batman '89",
+       "rank": 1,
+       "n_candidates": 3,
+       "closest": "Batman '89"
+      },
+      {
+       "sequel": "Batman Forever",
+       "prequel": "Batman Returns",
+       "rank": 1,
+       "n_candidates": 5,
+       "closest": "Batman Returns"
+      },
+      {
+       "sequel": "Batman & Robin",
+       "prequel": "Batman Forever",
+       "rank": 1,
+       "n_candidates": 6,
+       "closest": "Batman Forever"
+      },
+      {
+       "sequel": "Arkham City",
+       "prequel": "Arkham Asylum (game)",
+       "rank": 1,
+       "n_candidates": 12,
+       "closest": "Arkham Asylum (game)"
+      },
+      {
+       "sequel": "Arkham Knight",
+       "prequel": "Arkham City",
+       "rank": 1,
+       "n_candidates": 14,
+       "closest": "Arkham City"
+      }
+     ]
+    },
+    "without_1943_serial": {
+     "top2": 7,
+     "n": 7,
+     "passes": true,
+     "rows": [
+      {
+       "sequel": "The Dark Knight",
+       "prequel": "Batman Begins",
+       "rank": 2,
+       "n_candidates": 8,
+       "closest": "Batman Forever"
+      },
+      {
+       "sequel": "Dark Knight Rises",
+       "prequel": "The Dark Knight",
+       "rank": 1,
+       "n_candidates": 12,
+       "closest": "The Dark Knight"
+      },
+      {
+       "sequel": "Batman Returns",
+       "prequel": "Batman '89",
+       "rank": 1,
+       "n_candidates": 2,
+       "closest": "Batman '89"
+      },
+      {
+       "sequel": "Batman Forever",
+       "prequel": "Batman Returns",
+       "rank": 1,
+       "n_candidates": 4,
+       "closest": "Batman Returns"
+      },
+      {
+       "sequel": "Batman & Robin",
+       "prequel": "Batman Forever",
+       "rank": 1,
+       "n_candidates": 5,
+       "closest": "Batman Forever"
+      },
+      {
+       "sequel": "Arkham City",
+       "prequel": "Arkham Asylum (game)",
+       "rank": 1,
+       "n_candidates": 11,
+       "closest": "Arkham Asylum (game)"
+      },
+      {
+       "sequel": "Arkham Knight",
+       "prequel": "Arkham City",
+       "rank": 1,
+       "n_candidates": 13,
+       "closest": "Arkham City"
+      }
+     ]
+    }
+   },
+   "source_rules": {
+    "definitions": {
+     "mean_of_sources": "average over the documented sources of the share of comparison comics beating that source",
+     "first_listed": "first-listed source only; the other documented source stays out of the comparison set",
+     "first_listed_only": "first-listed source only; the other documented source becomes an ordinary comparison comic",
+     "against_mean_source_z": "share of comparison comics beating the mean z of the sources"
+    },
+    "best_of_sources (primary)": {
+     "n_adaptations": 9,
+     "share": 0.06327160493827161,
+     "rows": {
+      "Batman Begins": 0.0,
+      "The Dark Knight": 0.125,
+      "Dark Knight Rises": 0.4444,
+      "Batman v Superman": 0.0,
+      "Under the Red Hood": 0.0,
+      "Arkham Asylum (game)": 0.0,
+      "Batman '89": 0.0,
+      "Joker (2019)": 0.0,
+      "The Batman": 0.0
+     },
+     "ranks": {
+      "Batman Begins": 1,
+      "The Dark Knight": 2,
+      "Dark Knight Rises": 5,
+      "Batman v Superman": 1,
+      "Under the Red Hood": 1,
+      "Arkham Asylum (game)": 1,
+      "Batman '89": 1,
+      "Joker (2019)": 1,
+      "The Batman": 1
+     },
+     "joint": {
+      "n_maps": 3991680,
+      "null_mean": 0.47319491208380093,
+      "null_sd": 0.12175985357905114,
+      "p": 4.484327400994068e-05
+     },
+     "within_era": {
+      "n_maps": 1440,
+      "null_mean": 0.4083988028432473,
+      "null_sd": 0.12039909587795863,
+      "p": 0.001388888888888889
+     }
+    },
+    "mean_of_sources": {
+     "n_adaptations": 9,
+     "share": 0.07561728395061729,
+     "rows": {
+      "Batman Begins": 0.0,
+      "The Dark Knight": 0.125,
+      "Dark Knight Rises": 0.5556,
+      "Batman v Superman": 0.0,
+      "Under the Red Hood": 0.0,
+      "Arkham Asylum (game)": 0.0,
+      "Batman '89": 0.0,
+      "Joker (2019)": 0.0,
+      "The Batman": 0.0
+     },
+     "ranks": {
+      "Batman Begins": 1,
+      "The Dark Knight": 2,
+      "Dark Knight Rises": 6,
+      "Batman v Superman": 1,
+      "Under the Red Hood": 1,
+      "Arkham Asylum (game)": 1,
+      "Batman '89": 1,
+      "Joker (2019)": 1,
+      "The Batman": 1
+     },
+     "joint": {
+      "n_maps": 3991680,
+      "null_mean": 0.5290029928918818,
+      "null_sd": 0.11849598543701101,
+      "p": 1.0772406605739939e-05
+     },
+     "within_era": {
+      "n_maps": 1440,
+      "null_mean": 0.46117658062102507,
+      "null_sd": 0.11869820485297758,
+      "p": 0.0006944444444444445
+     }
+    },
+    "first_listed": {
+     "n_adaptations": 9,
+     "share": 0.08796296296296297,
+     "rows": {
+      "Batman Begins": 0.0,
+      "The Dark Knight": 0.125,
+      "Dark Knight Rises": 0.6667,
+      "Batman v Superman": 0.0,
+      "Under the Red Hood": 0.0,
+      "Arkham Asylum (game)": 0.0,
+      "Batman '89": 0.0,
+      "Joker (2019)": 0.0,
+      "The Batman": 0.0
+     },
+     "ranks": {
+      "Batman Begins": 1,
+      "The Dark Knight": 2,
+      "Dark Knight Rises": 7,
+      "Batman v Superman": 1,
+      "Under the Red Hood": 1,
+      "Arkham Asylum (game)": 1,
+      "Batman '89": 1,
+      "Joker (2019)": 1,
+      "The Batman": 1
+     },
+     "joint": {
+      "n_maps": 3991680,
+      "null_mean": 0.5290029928918819,
+      "null_sd": 0.12065956998616235,
+      "p": 3.958233124899792e-05
+     },
+     "within_era": {
+      "n_maps": 1440,
+      "null_mean": 0.47470538720538713,
+      "null_sd": 0.11600272433193917,
+      "p": 0.0006944444444444445
+     }
+    },
+    "first_listed_only": {
+     "n_adaptations": 9,
+     "share": 0.10246913580246914,
+     "rows": {
+      "Batman Begins": 0.0,
+      "The Dark Knight": 0.2222,
+      "Dark Knight Rises": 0.7,
+      "Batman v Superman": 0.0,
+      "Under the Red Hood": 0.0,
+      "Arkham Asylum (game)": 0.0,
+      "Batman '89": 0.0,
+      "Joker (2019)": 0.0,
+      "The Batman": 0.0
+     },
+     "ranks": {
+      "Batman Begins": 1,
+      "The Dark Knight": 3,
+      "Dark Knight Rises": 8,
+      "Batman v Superman": 1,
+      "Under the Red Hood": 1,
+      "Arkham Asylum (game)": 1,
+      "Batman '89": 1,
+      "Joker (2019)": 1,
+      "The Batman": 1
+     },
+     "joint": {
+      "n_maps": 3991680,
+      "null_mean": 0.5290029928918818,
+      "null_sd": 0.11889572637860078,
+      "p": 4.634640051306718e-05
+     },
+     "within_era": {
+      "n_maps": 1440,
+      "null_mean": 0.4771417882528993,
+      "null_sd": 0.11203528998305473,
+      "p": 0.0006944444444444445
+     }
+    },
+    "against_mean_source_z": {
+     "n_adaptations": 9,
+     "share": 0.07561728395061729,
+     "rows": {
+      "Batman Begins": 0.0,
+      "The Dark Knight": 0.125,
+      "Dark Knight Rises": 0.5556,
+      "Batman v Superman": 0.0,
+      "Under the Red Hood": 0.0,
+      "Arkham Asylum (game)": 0.0,
+      "Batman '89": 0.0,
+      "Joker (2019)": 0.0,
+      "The Batman": 0.0
+     },
+     "ranks": {
+      "Batman Begins": 1,
+      "The Dark Knight": 2,
+      "Dark Knight Rises": 6,
+      "Batman v Superman": 1,
+      "Under the Red Hood": 1,
+      "Arkham Asylum (game)": 1,
+      "Batman '89": 1,
+      "Joker (2019)": 1,
+      "The Batman": 1
+     },
+     "joint": {
+      "n_maps": 3991680,
+      "null_mean": 0.5182426112981668,
+      "null_sd": 0.12319636399272663,
+      "p": 2.755731922398589e-05
+     },
+     "within_era": {
+      "n_maps": 1440,
+      "null_mean": 0.4464132061354284,
+      "null_sd": 0.12015712948464072,
+      "p": 0.0006944444444444445
+     }
+    }
+   },
+   "source_lists": {
+    "documented": {
+     "sources": {
+      "Batman Begins": [
+       "Year One"
+      ],
+      "The Dark Knight": [
+       "The Long Halloween",
+       "The Killing Joke"
+      ],
+      "Dark Knight Rises": [
+       "Knightfall",
+       "Dark Knight Returns"
+      ],
+      "Batman v Superman": [
+       "Dark Knight Returns"
+      ],
+      "Under the Red Hood": [
+       "A Death in the Family"
+      ],
+      "Arkham Asylum (game)": [
+       "Arkham Asylum (comic)"
+      ],
+      "Batman '89": [
+       "The Killing Joke"
+      ],
+      "Joker (2019)": [
+       "The Killing Joke"
+      ],
+      "The Batman": [
+       "Year One",
+       "The Long Halloween"
+      ]
+     },
+     "n_adaptations": 9,
+     "share": 0.06327160493827161,
+     "rows": {
+      "Batman Begins": 0.0,
+      "The Dark Knight": 0.125,
+      "Dark Knight Rises": 0.4444,
+      "Batman v Superman": 0.0,
+      "Under the Red Hood": 0.0,
+      "Arkham Asylum (game)": 0.0,
+      "Batman '89": 0.0,
+      "Joker (2019)": 0.0,
+      "The Batman": 0.0
+     },
+     "ranks": {
+      "Batman Begins": 1,
+      "The Dark Knight": 2,
+      "Dark Knight Rises": 5,
+      "Batman v Superman": 1,
+      "Under the Red Hood": 1,
+      "Arkham Asylum (game)": 1,
+      "Batman '89": 1,
+      "Joker (2019)": 1,
+      "The Batman": 1
+     },
+     "joint": {
+      "n_maps": 3991680,
+      "null_mean": 0.47319491208380093,
+      "null_sd": 0.12175985357905114,
+      "p": 4.484327400994068e-05
+     },
+     "within_era": {
+      "n_maps": 1440,
+      "null_mean": 0.4083988028432473,
+      "null_sd": 0.12039909587795863,
+      "p": 0.001388888888888889
+     }
+    },
+    "fuller": {
+     "sources": {
+      "Batman Begins": [
+       "Year One",
+       "The Long Halloween"
+      ],
+      "The Dark Knight": [
+       "The Long Halloween",
+       "The Killing Joke"
+      ],
+      "Dark Knight Rises": [
+       "Knightfall",
+       "Dark Knight Returns"
+      ],
+      "Batman v Superman": [
+       "Dark Knight Returns"
+      ],
+      "Under the Red Hood": [
+       "A Death in the Family"
+      ],
+      "Arkham Asylum (game)": [
+       "Arkham Asylum (comic)"
+      ],
+      "Batman '89": [
+       "The Killing Joke",
+       "Dark Knight Returns"
+      ],
+      "Joker (2019)": [
+       "The Killing Joke"
+      ],
+      "The Batman": [
+       "Year One",
+       "The Long Halloween"
+      ]
+     },
+     "n_adaptations": 9,
+     "share": 0.06327160493827161,
+     "rows": {
+      "Batman Begins": 0.0,
+      "The Dark Knight": 0.125,
+      "Dark Knight Rises": 0.4444,
+      "Batman v Superman": 0.0,
+      "Under the Red Hood": 0.0,
+      "Arkham Asylum (game)": 0.0,
+      "Batman '89": 0.0,
+      "Joker (2019)": 0.0,
+      "The Batman": 0.0
+     },
+     "ranks": {
+      "Batman Begins": 1,
+      "The Dark Knight": 2,
+      "Dark Knight Rises": 5,
+      "Batman v Superman": 1,
+      "Under the Red Hood": 1,
+      "Arkham Asylum (game)": 1,
+      "Batman '89": 1,
+      "Joker (2019)": 1,
+      "The Batman": 1
+     },
+     "joint": {
+      "n_maps": 3991680,
+      "null_mean": 0.434834455667789,
+      "null_sd": 0.12158568346224387,
+      "p": 0.00010045895462562129
+     },
+     "within_era": {
+      "n_maps": 1440,
+      "null_mean": 0.3845892790337234,
+      "null_sd": 0.11668516530487487,
+      "p": 0.001388888888888889
+     }
+    },
+    "wiki_full": {
+     "sources": {
+      "Batman Begins": [
+       "Year One",
+       "The Long Halloween"
+      ],
+      "The Dark Knight": [
+       "The Long Halloween",
+       "The Killing Joke",
+       "Year One",
+       "Dark Knight Returns"
+      ],
+      "Dark Knight Rises": [
+       "Knightfall",
+       "Dark Knight Returns"
+      ],
+      "Batman v Superman": [
+       "Dark Knight Returns"
+      ],
+      "Under the Red Hood": [
+       "A Death in the Family"
+      ],
+      "Arkham Asylum (game)": [
+       "Arkham Asylum (comic)",
+       "The Killing Joke"
+      ],
+      "Batman '89": [
+       "The Killing Joke",
+       "Dark Knight Returns"
+      ],
+      "Joker (2019)": [
+       "The Killing Joke",
+       "Dark Knight Returns"
+      ],
+      "The Batman": [
+       "Year One",
+       "The Long Halloween"
+      ]
+     },
+     "n_adaptations": 9,
+     "share": 0.04938271604938271,
+     "rows": {
+      "Batman Begins": 0.0,
+      "The Dark Knight": 0.0,
+      "Dark Knight Rises": 0.4444,
+      "Batman v Superman": 0.0,
+      "Under the Red Hood": 0.0,
+      "Arkham Asylum (game)": 0.0,
+      "Batman '89": 0.0,
+      "Joker (2019)": 0.0,
+      "The Batman": 0.0
+     },
+     "ranks": {
+      "Batman Begins": 1,
+      "The Dark Knight": 1,
+      "Dark Knight Rises": 5,
+      "Batman v Superman": 1,
+      "Under the Red Hood": 1,
+      "Arkham Asylum (game)": 1,
+      "Batman '89": 1,
+      "Joker (2019)": 1,
+      "The Batman": 1
+     },
+     "joint": {
+      "n_maps": 3991680,
+      "null_mean": 0.38525533108866444,
+      "null_sd": 0.11461391922787904,
+      "p": 5.511463844797178e-05
+     },
+     "within_era": {
+      "n_maps": 1440,
+      "null_mean": 0.33348471487360376,
+      "null_sd": 0.1088096620290541,
+      "p": 0.001388888888888889
+     }
+    },
+    "wiki_strict": {
+     "sources": {
+      "Batman Begins": [
+       "Year One",
+       "The Long Halloween"
+      ],
+      "The Dark Knight": [
+       "The Long Halloween",
+       "Year One",
+       "Dark Knight Returns"
+      ],
+      "Dark Knight Rises": [
+       "Knightfall",
+       "Dark Knight Returns"
+      ],
+      "Batman v Superman": [
+       "Dark Knight Returns"
+      ],
+      "Arkham Asylum (game)": [
+       "Arkham Asylum (comic)"
+      ],
+      "Batman '89": [
+       "The Killing Joke",
+       "Dark Knight Returns"
+      ],
+      "Joker (2019)": [
+       "The Killing Joke",
+       "Dark Knight Returns"
+      ],
+      "The Batman": [
+       "Year One",
+       "The Long Halloween"
+      ]
+     },
+     "n_adaptations": 8,
+     "share": 0.05555555555555555,
+     "rows": {
+      "Batman Begins": 0.0,
+      "The Dark Knight": 0.0,
+      "Dark Knight Rises": 0.4444,
+      "Batman v Superman": 0.0,
+      "Arkham Asylum (game)": 0.0,
+      "Batman '89": 0.0,
+      "Joker (2019)": 0.0,
+      "The Batman": 0.0
+     },
+     "ranks": {
+      "Batman Begins": 1,
+      "The Dark Knight": 1,
+      "Dark Knight Rises": 5,
+      "Batman v Superman": 1,
+      "Arkham Asylum (game)": 1,
+      "Batman '89": 1,
+      "Joker (2019)": 1,
+      "The Batman": 1
+     },
+     "joint": {
+      "n_maps": 665280,
+      "null_mean": 0.391311553030303,
+      "null_sd": 0.13183890414569802,
+      "p": 0.0006102693602693602
+     },
+     "within_era": {
+      "n_maps": 1440,
+      "null_mean": 0.3506911375661375,
+      "null_sd": 0.12603362952052805,
+      "p": 0.005555555555555556
+     }
+    }
+   },
+   "rate_variants": {
+    "note": "the expectation-corrected rate is a positive affine transform of the raw rate within each comic, so with the hub adjustment it gives exactly the primary result; it is reported without the hub",
+    "raw_rate_no_hub": {
+     "n_adaptations": 9,
+     "share": 0.09537037037037038,
+     "rows": {
+      "Batman Begins": 0.0,
+      "The Dark Knight": 0.125,
+      "Dark Knight Rises": 0.3333,
+      "Batman v Superman": 0.0,
+      "Under the Red Hood": 0.0,
+      "Arkham Asylum (game)": 0.0,
+      "Batman '89": 0.4,
+      "Joker (2019)": 0.0,
+      "The Batman": 0.0
+     },
+     "ranks": {
+      "Batman Begins": 1,
+      "The Dark Knight": 2,
+      "Dark Knight Rises": 4,
+      "Batman v Superman": 1,
+      "Under the Red Hood": 1,
+      "Arkham Asylum (game)": 1,
+      "Batman '89": 3,
+      "Joker (2019)": 1,
+      "The Batman": 1
+     },
+     "joint": {
+      "n_maps": 3991680,
+      "null_mean": 0.4652731013842124,
+      "null_sd": 0.12053466276901093,
+      "p": 0.0001387886804553471
+     },
+     "within_era": {
+      "n_maps": 1440,
+      "null_mean": 0.4116418817807706,
+      "null_sd": 0.12220533786796131,
+      "p": 0.0020833333333333333
+     }
+    },
+    "expectation_corrected_no_hub": {
+     "n_adaptations": 9,
+     "share": 0.06327160493827161,
+     "rows": {
+      "Batman Begins": 0.0,
+      "The Dark Knight": 0.125,
+      "Dark Knight Rises": 0.3333,
+      "Batman v Superman": 0.0,
+      "Under the Red Hood": 0.0,
+      "Arkham Asylum (game)": 0.1111,
+      "Batman '89": 0.0,
+      "Joker (2019)": 0.0,
+      "The Batman": 0.0
+     },
+     "ranks": {
+      "Batman Begins": 1,
+      "The Dark Knight": 2,
+      "Dark Knight Rises": 4,
+      "Batman v Superman": 1,
+      "Under the Red Hood": 1,
+      "Arkham Asylum (game)": 2,
+      "Batman '89": 1,
+      "Joker (2019)": 1,
+      "The Batman": 1
+     },
+     "joint": {
+      "n_maps": 3991680,
+      "null_mean": 0.4607369996258885,
+      "null_sd": 0.12249931556815052,
+      "p": 6.0876623376623377e-05
+     },
+     "within_era": {
+      "n_maps": 1440,
+      "null_mean": 0.4350308641975308,
+      "null_sd": 0.12727541519124033,
+      "p": 0.0006944444444444445
+     }
+    }
+   }
+  }
+ }
+}
