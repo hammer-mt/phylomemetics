@@ -1,0 +1,73 @@
+{
+ "model": "qwen3-8b",
+ "is_the_confirmatory_family": false,
+ "tests_with_a_p_value": 3,
+ "tests": {
+  "E1_identity": {
+   "verdict": "falsified",
+   "auc": 0.259765625,
+   "ci95": [
+    0.115185546875,
+    0.4296875
+   ],
+   "openings_auc": 0.291015625,
+   "clauses": {
+    "auc_at_least_0.80": false,
+    "ci_lower_at_least_0.65": false,
+    "above_null_p95": false,
+    "within_0.05_without_iconography": true,
+    "openings_auc_at_least_0.70": false,
+    "openings_above_own_null_p95": false
+   },
+   "centroid_of_units_verdict": "falsified",
+   "p": null,
+   "passes": false
+  },
+  "E2_heredity": {
+   "share_of_comics_beating_the_source": 0.07716049382716049,
+   "p": 0.0001823793490460157,
+   "evaluable": true,
+   "sequel_control_passes": true,
+   "passes": true,
+   "holm_adjusted_p": 0.0005471380471380471,
+   "nominal_only": false
+  },
+  "residual_beyond_words": {
+   "decision_test_p": 0.6181126743626744,
+   "every_measure_p": 0.6630599146224146,
+   "p": 0.6630599146224146,
+   "registered_two_measure_form_p": 0.2622068903318903,
+   "uncapped_settings_below_0.05": 0,
+   "uncapped_settings": 8,
+   "passes_in_at_least_half_of_the_uncapped_settings": false,
+   "passes": false,
+   "holm_adjusted_p": 0.7321267873212679,
+   "nominal_only": false
+  },
+  "E3_selection": {
+   "rho": 0.35,
+   "p": 0.36606339366063395,
+   "evaluable": true,
+   "passes": false,
+   "holm_adjusted_p": 0.7321267873212679,
+   "nominal_only": false
+  },
+  "ablation": {
+   "p": null,
+   "passes": null,
+   "status": "not yet run"
+  },
+  "steering_idea_units": {
+   "p": null,
+   "passes": null,
+   "status": "not yet run"
+  }
+ },
+ "passes": [
+  "E2_heredity"
+ ],
+ "not_yet_run": [
+  "ablation",
+  "steering_idea_units"
+ ]
+}

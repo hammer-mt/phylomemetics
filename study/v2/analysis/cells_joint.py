@@ -8,7 +8,8 @@ for E2 itself and for the residual decision test, beside what independence would
 
     cd study && ../.venv/bin/python v2/analysis/cells_joint.py [model-tag ...]
 
-Needs each model's presence data (v2/acts/<tag>/) and, for v1's rule, anon_raw_top3.npy. Writes results/v2/cells_joint.json.
+Needs each model's presence data (v2/acts/<tag>/) and, for v1's rule, anon_raw_top3.npy, the first time; the work-by-comic
+rates of each cell are then kept in results/v2/<tag>/e2_rates.npz. Writes results/v2/cells_joint.json.
 """
 import itertools
 import math
@@ -66,15 +67,24 @@ def main():
     tags = sys.argv[1:] or [t for t in C.MODELS if (C.ACTS / t / "anon_main_top1.u8.npy").exists()]
     rates = {}
     for tag in tags:
-        st = C.Setting(tag, icon=False)
-        rates[f"{tag} | full precision, v2 rule"] = X.unit_rates(st.P["anon"])
-        del st
-        f = C.ACTS / tag / "anon_raw_top3.npy"
-        if f.exists():
-            S = np.load(f).astype(np.float32)
-            rates[f"{tag} | full precision, v1 rule"] = X.unit_rates(S > X.bar(S, X.FILMS))
-            del S
-        print("rates for", tag, flush=True)
+        cache = C.RESULTS / tag / "e2_rates.npz"                 # each cell's work-by-comic inheritance rates: small, and kept so
+        if cache.exists():                                       # that this can be re-run without the large activation files
+            z = np.load(cache)
+            got = {k: z[k] for k in z.files}
+        else:
+            st = C.Setting(tag, icon=False)
+            got = {"v2_rule": X.unit_rates(st.P["anon"])}
+            del st
+            f = C.ACTS / tag / "anon_raw_top3.npy"
+            if f.exists():
+                S = np.load(f).astype(np.float32)
+                got["v1_rule"] = X.unit_rates(S > X.bar(S, X.FILMS))
+                del S
+            cache.parent.mkdir(parents=True, exist_ok=True)
+            np.savez_compressed(cache, **got)
+        for k, R in got.items():
+            rates[f"{tag} | full precision, {k.replace('_', ' ')}"] = R
+        print("rates for", tag, list(got), flush=True)
     out = {"cells": list(rates), "n_relabellings": None, "tests": {}}
     K = len(rates)
     for name, lex in (("E2", None), ("residual_decision_test", E.regressors("decision")), ("residual_registered_two_measure_form", E.regressors("registered"))):

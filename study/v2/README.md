@@ -24,15 +24,21 @@ v2 re-runs the Batman study the way Cammarata's "Neural networks are already cle
 | `gpu/twin_search.py` | Finds each unit's twin in another model | GPU |
 | `gpu/published_examples.py` | Checks our activations against the ones the essay publishes | GPU and laptop |
 | `gpu/test_pipeline.py`, `gpu/gpu_smoke.sh` | Check every pass against a slow re-computation on a tiny model, on a laptop or on the GPU | both |
-| `gpu/pod_agent.py`, `gpu/runpod_ctl.py`, `gpu/pull.py`, `gpu/run_study.sh` | Rent a Runpod GPU, run jobs on it, fetch results (checked by hash), shut it down | laptop |
+| `gpu/pod_agent.py`, `gpu/runpod_ctl.py`, `gpu/pull.py`, `gpu/remote.py`, `gpu/run_study.sh` | Rent a Runpod GPU, run jobs on it, fetch results (checked by hash), shut it down | laptop |
+| `check_reference_overlap.py` | Reports which study works are also in the reference corpus | laptop |
 | `analysis/common.py` | The v2 presence rule and loaders | laptop |
 | `analysis/experiments_v2.py` | E1, E2 and E3 under the v2 rule (E2 and E3 are v1's own functions), with the word comparators | laptop |
-| `analysis/v1_rule.py` | v1's rule on the new models, to separate the effect of the model from the effect of the rule | laptop |
+| `analysis/v1_rule.py`, `analysis/contrasts.py`, `analysis/cells_joint.py` | v1's rule on the new models; what changed a result (pipeline, rule or model); how surprising a count of cells below 0.05 is | laptop |
 | `analysis/multiverse_v2.py`, `analysis/sensitivity_v2.py` | Robustness of E2, and of E1, the residual test and E3, to the new choices | laptop |
 | `analysis/canon_v2.py`, `analysis/families_v2.py`, `analysis/select_units.py` | The canon, meme families, and the rule-based choice of units to explain | laptop |
+| `analysis/franchises_v2.py`, `analysis/trees_v2.py` | Batman against other film series and genre sets; family trees and their tests | laptop |
 | `analysis/build_explain_inputs.py`, `analysis/explain_agents.py`, `analysis/explain_score.py`, `analysis/textcheck.py` | What the explainer sees, the agents' prompt and answer files, and the scoring of the explanation tests | laptop |
+| `analysis/plain_checks.py`, `analysis/coverage.py`, `analysis/size_test.py`, `analysis/second_judge.py` | Checks of the explanations that need no AI judge; coverage at 30 to 60% of scale; bigger against smaller model; Qwen3-32B as a second judge | laptop |
 | `analysis/build_probe_jobs.py`, `analysis/build_ablation.py`, `analysis/causal.py`, `analysis/steering.py` | The recognition probe, the ablation and the steering test: job files and scoring | laptop |
-| `analysis/trees_v2.py` | Family trees and their tests | laptop |
+| `analysis/twins.py` | Twins of the explained units in the other models, scored where they were not chosen | laptop |
+| `analysis/confirmatory.py`, `analysis/pass_summary.py` | The six confirmatory tests with Holm-adjusted p values; what was run for each model | laptop |
+| `run_units.sh`, `run_rest.sh`, `run_analysis.sh` | The order of the steps for one model | laptop |
+| `figs/` | The figures of paper v2, drawn from the committed results | laptop |
 
 Results are written to `../results/v2/`. Large arrays fetched from the GPU machine go to `acts/` and the corpora to `cache/`; neither is committed.
 
@@ -61,3 +67,17 @@ $PY test_pipeline.py qwen3-0.6b ../cache/reference.jsonl ../cache/test/study ../
 ```
 
 The last command prints PASS or FAIL for each check and exits non-zero if any fails. On the GPU machine, `bash gpu_smoke.sh` runs the same passes (and the supplement, franchise, steering and ablation scripts) on the same tiny model in bfloat16.
+
+## Running it
+
+Everything is run from `study/`. `PY=../.venv/bin/python`, and `RUNPOD_STATE` names the state file of the GPU machine a step should use (`gpu/runpod_ctl.py create` writes it; state files hold access tokens and are not committed).
+
+1. **Corpora** (laptop): `$PY v2/build_reference.py`, `$PY v2/build_supplement.py`, `$PY v2/build_franchises.py`. Upload them and `data/corpus*.jsonl` to the GPU machine with `gpu/runpod_ctl.py put`.
+2. **The three passes** (GPU, per model): `ref_pass.py <tag> reference.jsonl out`, the same for `supplement.jsonl` with `--name ref_sup --max-tokens 2048`, then `bash run_study.sh <tag>` (study pass, scale, background base rates, other franchises).
+3. **Fetch and analyse** (laptop): `$PY v2/gpu/pull.py <tag> --raw --franchises`, then `bash v2/run_units.sh <tag>` (experiments, canon, sentence pass, meme families, units to explain, their top examples, the explainers' prompts) and `bash v2/run_rest.sh <tag>` (other franchises, v1's rule, sensitivity grid, multiverse).
+4. **Explanations**: the prompt files written by `analysis/explain_agents.py` are each answered by a fresh AI agent, which writes one answer file. Then `explain_agents.py collect-explainer`, `others`, `collect-others` (repeated while it sends texts back for rewriting), `explain_score.py texts`, `gpu/remote.py score ...`, `explain_score.py score`. `plain_checks.py`, `coverage.py`, `size_test.py` and `second_judge.py` follow.
+5. **Causal tests**: `build_probe_jobs.py` and `gpu/remote.py ask` for the recognition questions, with `causal.py identify-items`, `identify-collect` and `recognition`; `build_ablation.py`, `gpu/remote.py ask` and `causal.py ablation`; `steering.py gallery`, `gpu/remote.py steer`, `steering.py gallery-items` and `gallery-score`, then `steering.py items` and `score` for the explained units.
+6. **Two models**: `twins.py pool`, `queries`, `gpu/remote.py twins`, `twins.py units` and `score`.
+7. **Summaries**: `contrasts.py`, `cells_joint.py`, `trees_v2.py`, `pass_summary.py`, `confirmatory.py`, and the figure scripts in `figs/`.
+
+The GPU machines are rented by the hour and shut themselves down when idle or past their deadline. The whole of v2 cost under the $200 budget; the paper gives the figure.
