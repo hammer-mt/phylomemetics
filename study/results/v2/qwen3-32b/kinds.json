@@ -1,0 +1,970 @@
+{
+ "model": "qwen3-32b",
+ "n": 241,
+ "units": {
+  "2870": {
+   "kind": "word or token",
+   "detects": "name or word"
+  },
+  "2965": {
+   "kind": "grammar",
+   "detects": "idea"
+  },
+  "2980": {
+   "kind": "word or token",
+   "detects": "name or word"
+  },
+  "9325": {
+   "kind": "word or token",
+   "detects": "name or word"
+  },
+  "19352": {
+   "kind": "word or token",
+   "detects": "name or word"
+  },
+  "51887": {
+   "kind": "word or token",
+   "detects": "name or word"
+  },
+  "125801": {
+   "kind": "word or token",
+   "detects": "name or word"
+  },
+  "167009": {
+   "kind": "place",
+   "detects": "name or word"
+  },
+  "188547": {
+   "kind": "character or name",
+   "detects": "name or word"
+  },
+  "202487": {
+   "kind": "genre or setting",
+   "detects": "idea"
+  },
+  "205442": {
+   "kind": "word or token",
+   "detects": "name or word"
+  },
+  "208075": {
+   "kind": "character or name",
+   "detects": "name or word"
+  },
+  "210632": {
+   "kind": "word or token",
+   "detects": "name or word"
+  },
+  "215865": {
+   "kind": "character or name",
+   "detects": "name or word"
+  },
+  "217862": {
+   "kind": "character or name",
+   "detects": "name or word"
+  },
+  "219037": {
+   "kind": "character or name",
+   "detects": "name or word"
+  },
+  "227206": {
+   "kind": "word or token",
+   "detects": "name or word"
+  },
+  "245694": {
+   "kind": "style or format",
+   "detects": "name or word"
+  },
+  "254112": {
+   "kind": "character or name",
+   "detects": "name or word"
+  },
+  "254826": {
+   "kind": "word or token",
+   "detects": "name or word"
+  },
+  "317604": {
+   "kind": "word or token",
+   "detects": "name or word"
+  },
+  "318922": {
+   "kind": "grammar",
+   "detects": "idea"
+  },
+  "324451": {
+   "kind": "character or name",
+   "detects": "name or word"
+  },
+  "344071": {
+   "kind": "other",
+   "detects": "idea"
+  },
+  "346100": {
+   "kind": "character or name",
+   "detects": "name or word"
+  },
+  "347405": {
+   "kind": "character or name",
+   "detects": "name or word"
+  },
+  "353620": {
+   "kind": "word or token",
+   "detects": "name or word"
+  },
+  "357872": {
+   "kind": "object",
+   "detects": "idea"
+  },
+  "368887": {
+   "kind": "character or name",
+   "detects": "name or word"
+  },
+  "378497": {
+   "kind": "word or token",
+   "detects": "name or word"
+  },
+  "394697": {
+   "kind": "grammar",
+   "detects": "idea"
+  },
+  "407102": {
+   "kind": "character or name",
+   "detects": "name or word"
+  },
+  "410913": {
+   "kind": "other",
+   "detects": "idea"
+  },
+  "427568": {
+   "kind": "place",
+   "detects": "idea"
+  },
+  "435478": {
+   "kind": "character or name",
+   "detects": "name or word"
+  },
+  "438070": {
+   "kind": "character or name",
+   "detects": "name or word"
+  },
+  "453490": {
+   "kind": "word or token",
+   "detects": "name or word"
+  },
+  "458118": {
+   "kind": "word or token",
+   "detects": "name or word"
+  },
+  "465171": {
+   "kind": "word or token",
+   "detects": "name or word"
+  },
+  "485574": {
+   "kind": "word or token",
+   "detects": "name or word"
+  },
+  "496782": {
+   "kind": "style or format",
+   "detects": "idea"
+  },
+  "504207": {
+   "kind": "grammar",
+   "detects": "idea"
+  },
+  "515413": {
+   "kind": "grammar",
+   "detects": "idea"
+  },
+  "541023": {
+   "kind": "style or format",
+   "detects": "idea"
+  },
+  "552240": {
+   "kind": "style or format",
+   "detects": "idea"
+  },
+  "561621": {
+   "kind": "grammar",
+   "detects": "idea"
+  },
+  "604205": {
+   "kind": "word or token",
+   "detects": "name or word"
+  },
+  "830265": {
+   "kind": "character or name",
+   "detects": "name or word"
+  },
+  "830342": {
+   "kind": "genre or setting",
+   "detects": "idea"
+  },
+  "833184": {
+   "kind": "object",
+   "detects": "name or word"
+  },
+  "833700": {
+   "kind": "genre or setting",
+   "detects": "idea"
+  },
+  "839883": {
+   "kind": "character or name",
+   "detects": "name or word"
+  },
+  "842440": {
+   "kind": "word or token",
+   "detects": "idea"
+  },
+  "886609": {
+   "kind": "grammar",
+   "detects": "idea"
+  },
+  "902490": {
+   "kind": "word or token",
+   "detects": "name or word"
+  },
+  "904823": {
+   "kind": "grammar",
+   "detects": "idea"
+  },
+  "910564": {
+   "kind": "word or token",
+   "detects": "name or word"
+  },
+  "911984": {
+   "kind": "other",
+   "detects": "name or word"
+  },
+  "919295": {
+   "kind": "word or token",
+   "detects": "name or word"
+  },
+  "920688": {
+   "kind": "other",
+   "detects": "idea"
+  },
+  "926177": {
+   "kind": "story pattern",
+   "detects": "idea"
+  },
+  "940900": {
+   "kind": "other",
+   "detects": "idea"
+  },
+  "967057": {
+   "kind": "character or name",
+   "detects": "idea"
+  },
+  "989429": {
+   "kind": "story pattern",
+   "detects": "idea"
+  },
+  "994890": {
+   "kind": "other",
+   "detects": "idea"
+  },
+  "1006752": {
+   "kind": "genre or setting",
+   "detects": "idea"
+  },
+  "1021040": {
+   "kind": "other",
+   "detects": "idea"
+  },
+  "1042958": {
+   "kind": "style or format",
+   "detects": "idea"
+  },
+  "1049878": {
+   "kind": "character or name",
+   "detects": "idea"
+  },
+  "1053109": {
+   "kind": "other",
+   "detects": "idea"
+  },
+  "1067286": {
+   "kind": "genre or setting",
+   "detects": "idea"
+  },
+  "1068129": {
+   "kind": "other",
+   "detects": "idea"
+  },
+  "1079880": {
+   "kind": "other",
+   "detects": "idea"
+  },
+  "1113807": {
+   "kind": "other",
+   "detects": "idea"
+  },
+  "1120499": {
+   "kind": "other",
+   "detects": "idea"
+  },
+  "1121133": {
+   "kind": "grammar",
+   "detects": "idea"
+  },
+  "1129939": {
+   "kind": "other",
+   "detects": "idea"
+  },
+  "1159446": {
+   "kind": "genre or setting",
+   "detects": "idea"
+  },
+  "1161841": {
+   "kind": "grammar",
+   "detects": "idea"
+  },
+  "1176854": {
+   "kind": "word or token",
+   "detects": "name or word"
+  },
+  "1290289": {
+   "kind": "grammar",
+   "detects": "idea"
+  },
+  "1295861": {
+   "kind": "grammar",
+   "detects": "name or word"
+  },
+  "1340707": {
+   "kind": "other",
+   "detects": "idea"
+  },
+  "1341224": {
+   "kind": "grammar",
+   "detects": "idea"
+  },
+  "1405944": {
+   "kind": "grammar",
+   "detects": "idea"
+  },
+  "1440851": {
+   "kind": "genre or setting",
+   "detects": "idea"
+  },
+  "1444956": {
+   "kind": "grammar",
+   "detects": "idea"
+  },
+  "1461365": {
+   "kind": "style or format",
+   "detects": "idea"
+  },
+  "1463527": {
+   "kind": "word or token",
+   "detects": "name or word"
+  },
+  "1464129": {
+   "kind": "word or token",
+   "detects": "name or word"
+  },
+  "1480716": {
+   "kind": "character or name",
+   "detects": "name or word"
+  },
+  "1482139": {
+   "kind": "word or token",
+   "detects": "name or word"
+  },
+  "1483154": {
+   "kind": "grammar",
+   "detects": "idea"
+  },
+  "1485188": {
+   "kind": "genre or setting",
+   "detects": "idea"
+  },
+  "1485789": {
+   "kind": "grammar",
+   "detects": "idea"
+  },
+  "1487126": {
+   "kind": "grammar",
+   "detects": "idea"
+  },
+  "1500498": {
+   "kind": "genre or setting",
+   "detects": "idea"
+  },
+  "1502596": {
+   "kind": "character or name",
+   "detects": "idea"
+  },
+  "1504750": {
+   "kind": "place",
+   "detects": "name or word"
+  },
+  "1512347": {
+   "kind": "grammar",
+   "detects": "idea"
+  },
+  "1514566": {
+   "kind": "grammar",
+   "detects": "idea"
+  },
+  "1516685": {
+   "kind": "grammar",
+   "detects": "idea"
+  },
+  "1520757": {
+   "kind": "grammar",
+   "detects": "idea"
+  },
+  "1528083": {
+   "kind": "grammar",
+   "detects": "idea"
+  },
+  "1536542": {
+   "kind": "genre or setting",
+   "detects": "idea"
+  },
+  "1537827": {
+   "kind": "word or token",
+   "detects": "name or word"
+  },
+  "1543765": {
+   "kind": "character or name",
+   "detects": "idea"
+  },
+  "1546344": {
+   "kind": "grammar",
+   "detects": "idea"
+  },
+  "1548330": {
+   "kind": "style or format",
+   "detects": "idea"
+  },
+  "1552347": {
+   "kind": "grammar",
+   "detects": "idea"
+  },
+  "1553950": {
+   "kind": "character or name",
+   "detects": "name or word"
+  },
+  "1557081": {
+   "kind": "character or name",
+   "detects": "name or word"
+  },
+  "1560401": {
+   "kind": "grammar",
+   "detects": "idea"
+  },
+  "1561173": {
+   "kind": "character or name",
+   "detects": "idea"
+  },
+  "1580619": {
+   "kind": "genre or setting",
+   "detects": "idea"
+  },
+  "1581948": {
+   "kind": "word or token",
+   "detects": "name or word"
+  },
+  "1587002": {
+   "kind": "grammar",
+   "detects": "idea"
+  },
+  "1588941": {
+   "kind": "character or name",
+   "detects": "name or word"
+  },
+  "1612452": {
+   "kind": "word or token",
+   "detects": "name or word"
+  },
+  "1618229": {
+   "kind": "word or token",
+   "detects": "name or word"
+  },
+  "1620110": {
+   "kind": "word or token",
+   "detects": "name or word"
+  },
+  "1633237": {
+   "kind": "other",
+   "detects": "idea"
+  },
+  "1643584": {
+   "kind": "word or token",
+   "detects": "name or word"
+  },
+  "1648203": {
+   "kind": "word or token",
+   "detects": "name or word"
+  },
+  "1651724": {
+   "kind": "word or token",
+   "detects": "name or word"
+  },
+  "1652692": {
+   "kind": "word or token",
+   "detects": "name or word"
+  },
+  "1653096": {
+   "kind": "word or token",
+   "detects": "name or word"
+  },
+  "1656275": {
+   "kind": "word or token",
+   "detects": "name or word"
+  },
+  "1659747": {
+   "kind": "word or token",
+   "detects": "name or word"
+  },
+  "1788084": {
+   "kind": "character or name",
+   "detects": "name or word"
+  },
+  "1799394": {
+   "kind": "character or name",
+   "detects": "name or word"
+  },
+  "1817787": {
+   "kind": "character or name",
+   "detects": "name or word"
+  },
+  "1826947": {
+   "kind": "character or name",
+   "detects": "name or word"
+  },
+  "1834957": {
+   "kind": "character or name",
+   "detects": "name or word"
+  },
+  "1847046": {
+   "kind": "story pattern",
+   "detects": "idea"
+  },
+  "1849652": {
+   "kind": "character or name",
+   "detects": "name or word"
+  },
+  "1851670": {
+   "kind": "character or name",
+   "detects": "name or word"
+  },
+  "1854180": {
+   "kind": "character or name",
+   "detects": "name or word"
+  },
+  "1857437": {
+   "kind": "character or name",
+   "detects": "name or word"
+  },
+  "1860920": {
+   "kind": "word or token",
+   "detects": "name or word"
+  },
+  "1861692": {
+   "kind": "other",
+   "detects": "idea"
+  },
+  "1861897": {
+   "kind": "word or token",
+   "detects": "name or word"
+  },
+  "1867375": {
+   "kind": "word or token",
+   "detects": "name or word"
+  },
+  "1869035": {
+   "kind": "character or name",
+   "detects": "name or word"
+  },
+  "1871585": {
+   "kind": "word or token",
+   "detects": "name or word"
+  },
+  "1880565": {
+   "kind": "grammar",
+   "detects": "idea"
+  },
+  "1886436": {
+   "kind": "character or name",
+   "detects": "name or word"
+  },
+  "1910798": {
+   "kind": "character or name",
+   "detects": "name or word"
+  },
+  "1916049": {
+   "kind": "word or token",
+   "detects": "name or word"
+  },
+  "1936244": {
+   "kind": "character or name",
+   "detects": "name or word"
+  },
+  "1939271": {
+   "kind": "word or token",
+   "detects": "name or word"
+  },
+  "1952331": {
+   "kind": "other",
+   "detects": "name or word"
+  },
+  "1967232": {
+   "kind": "character or name",
+   "detects": "name or word"
+  },
+  "1980491": {
+   "kind": "grammar",
+   "detects": "idea"
+  },
+  "1991492": {
+   "kind": "word or token",
+   "detects": "name or word"
+  },
+  "2004467": {
+   "kind": "character or name",
+   "detects": "name or word"
+  },
+  "2045342": {
+   "kind": "word or token",
+   "detects": "name or word"
+  },
+  "2063681": {
+   "kind": "style or format",
+   "detects": "idea"
+  },
+  "2065308": {
+   "kind": "story pattern",
+   "detects": "idea"
+  },
+  "2071506": {
+   "kind": "word or token",
+   "detects": "name or word"
+  },
+  "2079195": {
+   "kind": "character or name",
+   "detects": "name or word"
+  },
+  "2090182": {
+   "kind": "place",
+   "detects": "name or word"
+  },
+  "2109850": {
+   "kind": "grammar",
+   "detects": "idea"
+  },
+  "2122779": {
+   "kind": "word or token",
+   "detects": "name or word"
+  },
+  "2161966": {
+   "kind": "story pattern",
+   "detects": "idea"
+  },
+  "2178472": {
+   "kind": "grammar",
+   "detects": "idea"
+  },
+  "2251772": {
+   "kind": "grammar",
+   "detects": "idea"
+  },
+  "2277703": {
+   "kind": "grammar",
+   "detects": "idea"
+  },
+  "2296861": {
+   "kind": "grammar",
+   "detects": "idea"
+  },
+  "2298898": {
+   "kind": "grammar",
+   "detects": "idea"
+  },
+  "2306707": {
+   "kind": "genre or setting",
+   "detects": "idea"
+  },
+  "2321679": {
+   "kind": "grammar",
+   "detects": "name or word"
+  },
+  "2364747": {
+   "kind": "genre or setting",
+   "detects": "idea"
+  },
+  "2372268": {
+   "kind": "grammar",
+   "detects": "name or word"
+  },
+  "2375398": {
+   "kind": "story pattern",
+   "detects": "idea"
+  },
+  "2396903": {
+   "kind": "genre or setting",
+   "detects": "idea"
+  },
+  "2474730": {
+   "kind": "genre or setting",
+   "detects": "idea"
+  },
+  "2483435": {
+   "kind": "place",
+   "detects": "name or word"
+  },
+  "2495485": {
+   "kind": "word or token",
+   "detects": "name or word"
+  },
+  "2500843": {
+   "kind": "character or name",
+   "detects": "name or word"
+  },
+  "2524311": {
+   "kind": "story pattern",
+   "detects": "idea"
+  },
+  "2525198": {
+   "kind": "character or name",
+   "detects": "idea"
+  },
+  "2548640": {
+   "kind": "grammar",
+   "detects": "idea"
+  },
+  "2550644": {
+   "kind": "genre or setting",
+   "detects": "idea"
+  },
+  "2562846": {
+   "kind": "story pattern",
+   "detects": "idea"
+  },
+  "2584477": {
+   "kind": "word or token",
+   "detects": "name or word"
+  },
+  "2612008": {
+   "kind": "style or format",
+   "detects": "idea"
+  },
+  "2622633": {
+   "kind": "other",
+   "detects": "idea"
+  },
+  "2625356": {
+   "kind": "style or format",
+   "detects": "idea"
+  },
+  "2625481": {
+   "kind": "other",
+   "detects": "idea"
+  },
+  "2629416": {
+   "kind": "genre or setting",
+   "detects": "idea"
+  },
+  "2648630": {
+   "kind": "character or name",
+   "detects": "name or word"
+  },
+  "2649804": {
+   "kind": "character or name",
+   "detects": "name or word"
+  },
+  "2650301": {
+   "kind": "word or token",
+   "detects": "name or word"
+  },
+  "2655879": {
+   "kind": "other",
+   "detects": "idea"
+  },
+  "2663170": {
+   "kind": "place",
+   "detects": "name or word"
+  },
+  "2667574": {
+   "kind": "style or format",
+   "detects": "idea"
+  },
+  "2670458": {
+   "kind": "grammar",
+   "detects": "idea"
+  },
+  "2697085": {
+   "kind": "word or token",
+   "detects": "name or word"
+  },
+  "2708627": {
+   "kind": "word or token",
+   "detects": "name or word"
+  },
+  "2724250": {
+   "kind": "grammar",
+   "detects": "name or word"
+  },
+  "2751771": {
+   "kind": "other",
+   "detects": "name or word"
+  },
+  "2783773": {
+   "kind": "story pattern",
+   "detects": "idea"
+  },
+  "2799181": {
+   "kind": "other",
+   "detects": "name or word"
+  },
+  "2830013": {
+   "kind": "story pattern",
+   "detects": "idea"
+  },
+  "2853400": {
+   "kind": "genre or setting",
+   "detects": "idea"
+  },
+  "2880987": {
+   "kind": "grammar",
+   "detects": "idea"
+  },
+  "2950589": {
+   "kind": "grammar",
+   "detects": "name or word"
+  },
+  "2957052": {
+   "kind": "story pattern",
+   "detects": "idea"
+  },
+  "2979147": {
+   "kind": "genre or setting",
+   "detects": "idea"
+  },
+  "3005424": {
+   "kind": "character or name",
+   "detects": "name or word"
+  },
+  "3046518": {
+   "kind": "other",
+   "detects": "idea"
+  },
+  "3051398": {
+   "kind": "story pattern",
+   "detects": "idea"
+  },
+  "3053127": {
+   "kind": "genre or setting",
+   "detects": "idea"
+  },
+  "3060980": {
+   "kind": "character or name",
+   "detects": "name or word"
+  },
+  "3084566": {
+   "kind": "word or token",
+   "detects": "name or word"
+  },
+  "3088216": {
+   "kind": "word or token",
+   "detects": "name or word"
+  },
+  "3103387": {
+   "kind": "character or name",
+   "detects": "name or word"
+  },
+  "3119045": {
+   "kind": "genre or setting",
+   "detects": "idea"
+  },
+  "3120546": {
+   "kind": "grammar",
+   "detects": "idea"
+  },
+  "3125600": {
+   "kind": "object",
+   "detects": "idea"
+  },
+  "3125944": {
+   "kind": "object",
+   "detects": "idea"
+  },
+  "3126057": {
+   "kind": "grammar",
+   "detects": "idea"
+  },
+  "3130157": {
+   "kind": "grammar",
+   "detects": "idea"
+  },
+  "3131221": {
+   "kind": "character or name",
+   "detects": "name or word"
+  },
+  "3135718": {
+   "kind": "genre or setting",
+   "detects": "idea"
+  },
+  "3147565": {
+   "kind": "grammar",
+   "detects": "idea"
+  },
+  "3153462": {
+   "kind": "grammar",
+   "detects": "idea"
+  },
+  "3154013": {
+   "kind": "place",
+   "detects": "idea"
+  },
+  "3154686": {
+   "kind": "grammar",
+   "detects": "idea"
+  },
+  "3161421": {
+   "kind": "grammar",
+   "detects": "idea"
+  },
+  "3161575": {
+   "kind": "character or name",
+   "detects": "idea"
+  },
+  "3163742": {
+   "kind": "grammar",
+   "detects": "name or word"
+  },
+  "3166532": {
+   "kind": "genre or setting",
+   "detects": "idea"
+  },
+  "3171832": {
+   "kind": "other",
+   "detects": "idea"
+  },
+  "3176308": {
+   "kind": "grammar",
+   "detects": "name or word"
+  },
+  "3181213": {
+   "kind": "grammar",
+   "detects": "idea"
+  },
+  "3184941": {
+   "kind": "word or token",
+   "detects": "name or word"
+  },
+  "3190476": {
+   "kind": "grammar",
+   "detects": "idea"
+  },
+  "3215045": {
+   "kind": "character or name",
+   "detects": "idea"
+  },
+  "3241037": {
+   "kind": "object",
+   "detects": "idea"
+  }
+ }
+}
