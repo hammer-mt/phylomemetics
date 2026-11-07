@@ -95,7 +95,7 @@ def run_model(tag):
     for f in np.unique(fam):
         members = np.flatnonzero(fam == f)
         rep = members[np.lexsort((-share[members], -nb[members]))[0]]          # most Batman works, then strongest on average
-        top = np.argsort(-A[:, rep], kind="stable")[:8]
+        top = np.argsort(-A[:, rep].astype(np.int32), kind="stable")[:8]
         families.append({"unit": int(cand[rep]), "name": C.unit_name(tag, int(cand[rep])), "n_members": int(len(members)),
                          "member_units": [int(cand[m]) for m in members[np.argsort(-nb[members])][:50]],
                          "n_batman": int(nb[rep]), "n_cousins": int(Po[cous][:, rep].sum()), "n_ordinary_films": int(Po[X.FILMS][:, rep].sum()),

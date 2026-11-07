@@ -6,10 +6,11 @@ jobs.json: {"question": "...", "sets": {"name": [unit, ...], ...}, "reply_for": 
             "items": [{"id", "text", "answers": ["Batman", ...], "conditions": ["name", ...], "question": "..."}]}
 
 An item's own "question" replaces the shared one. Matched random sets are too many to list: with "partner_file"
-(an .npz holding units [n], partners [K, n] and partners_distinctive [K2, n]) an item names its own units by
-"members" (indices into units), and its conditions may be "canon" (those units), "rand:<k>" (their partners in
-matched random set k) and "dist:<k>" (their partners in set k of the second control). With no sets and no conditions the script simply puts each text
-and question to the untouched model (the recognition probe of PLAN.md Section 7, and the multiple-choice judge).
+(an .npz holding units [n] and one or more partner arrays [K, n]) an item names its own units by "members" (indices
+into units), and its conditions may be "canon" (those units) and "<control>:<k>" (their partners in set k of that
+control; "rand" reads the array partners, any other name reads partners_<name>). With no sets and no conditions the
+script simply puts each text and question to the untouched model (the recognition probe of PLAN.md Section 7, and
+the multiple-choice judge).
 
 For each item the text and the question are put to the model in its chat format (thinking off where the template
 has it). The outcome is the log of the probability that the reply starts with one of the item's answers (the sum
@@ -27,6 +28,9 @@ given) is kept for the untouched run and for the sets named in "reply_for".
 scale, "weak" only where it is below (both need scale.npy); the default zeroes all of its open-gate activity. For
 every condition the summed size of the activations that were zeroed is kept ("removed"), so that sets can be
 compared on how much they took away.
+
+Conditions are run in batches ("batch" in the jobs file, 16 unless given): every row of a batch is the same prompt
+with a different set switched off, and the untouched prompt is one of the rows.
 """
 import copy
 import json
@@ -45,78 +49,90 @@ def main(tag, jobs_path, out_path, scale_path=None):
     assert mode == "all" or scale is not None, "strong and weak modes need the scale file"
     everywhere = jobs.get("where", "story") == "all"
     reply_tokens = int(jobs.get("reply_tokens", 8))
+    batch = int(jobs.get("batch", 16))
     sets = jobs.get("sets", {})
     partner = np.load(jobs["partner_file"]) if jobs.get("partner_file") else None
 
     def units_for(name, item):
         if name in sets:
-            return sets[name]
+            return np.asarray(sets[name], dtype=np.int64)
         members = np.asarray(item["members"], dtype=np.int64)
         if name == "canon":
             return partner["units"][members]
         kind, k = name.split(":")
-        return partner["partners" if kind == "rand" else "partners_distinctive"][int(k)][members]
+        return partner["partners" if kind == "rand" else f"partners_{kind}"][int(k)][members]
+
     model, tok = load(tag)
     L, D = geometry(model)
     U = L * D
     dev = model.model.embed_tokens.weight.device
-    ctx = {"by_layer": {}, "lo": 0, "hi": 0, "story_pass": False, "removed": 0.0}
+    thr = torch.tensor(0.3 * scale.reshape(2, L, D), dtype=torch.float32) if scale is not None else None
+    ctx = {"mask": None, "lo": 0, "hi": 0, "story_pass": False, "removed": None}
 
     def fn(l, g, h):
-        hit = ctx["by_layer"].get(l)
-        if hit is None or not (everywhere or ctx["story_pass"]):
+        m = ctx["mask"]
+        if m is None or not (everywhere or ctx["story_pass"]):
             return None
         if not everywhere and h.shape[1] < ctx["hi"]:
-            return None                            # a later decoding step inside generate(): the story is already behind us
+            return None                            # a later decoding step: the story is already behind us
         lo, hi = (0, h.shape[1]) if everywhere else (ctx["lo"], ctx["hi"])
+        mp, mn = m[0][l].to(h.device)[:, None, :], m[1][l].to(h.device)[:, None, :]          # [rows, 1, D]: which units are off in which row
+        if not (mp.any() or mn.any()):
+            return None
+        sh, sg = h[:, lo:hi], g[:, lo:hi]
+        off = (sg > 0) & (((sh > 0) & mp) | ((sh < 0) & mn))
+        if mode != "all":
+            t = torch.where(sh > 0, thr[0, l].to(h.device)[None, None, :], thr[1, l].to(h.device)[None, None, :])
+            strong = sh.abs().float() >= t
+            off &= strong if mode == "strong" else ~strong
+        if ctx["removed"] is not None and off.shape[0] == len(ctx["removed"]):
+            ctx["removed"] += (sh.abs().float() * off).sum((1, 2)).double().cpu()
         h = h.clone()
-        for cols, sign, thr in ((hit[0], 1, hit[2]), (hit[1], -1, hit[3])):
-            if len(cols):
-                c = cols.to(h.device)
-                hc, gc = h[:, lo:hi][..., c], g[:, lo:hi][..., c]
-                off = (gc > 0) & (hc * sign > 0)
-                if mode != "all":
-                    strong = hc.abs().float() >= thr.to(h.device)
-                    off &= strong if mode == "strong" else ~strong
-                ctx["removed"] += float((hc.abs().float() * off).sum())
-                h[:, lo:hi, c] = torch.where(off, torch.zeros_like(hc), hc)
+        h[:, lo:hi] = torch.where(off, torch.zeros_like(sh), sh)
         return h
 
-    def set_units(units):
-        units = np.asarray(units, dtype=np.int64)
-        by = {}
-        for l in np.unique((units % U) // D):
-            s = units[(units % U) // D == l]
-            thr = [torch.tensor(0.3 * scale[x], dtype=torch.float32) if scale is not None else None for x in (s[s < U], s[s >= U])]
-            by[int(l)] = (torch.tensor(s[s < U] % D, dtype=torch.long), torch.tensor(s[s >= U] % D, dtype=torch.long), thr[0], thr[1])
-        ctx["by_layer"] = by
+    def masks(unit_sets):
+        """[2, L, rows, D] bool: row r switches off unit_sets[r]."""
+        m = np.zeros((2, L, len(unit_sets), D), dtype=bool)
+        for r, units in enumerate(unit_sets):
+            units = np.asarray(units, dtype=np.int64)
+            if len(units):
+                m[units // U, (units % U) // D, r, units % D] = True
+        return torch.from_numpy(m)
 
-    def measure(prompt_ids, answers, reply):
-        """One pass over the prompt (units off on the story tokens), then each answer's own tokens from the cache."""
-        logps = []
+    def measure(prompt_ids, answers, unit_sets):
+        """One batched pass over the prompt, a different set off in each row; then each answer's own tokens from the cache."""
+        B = len(unit_sets)
         with torch.no_grad():
-            ctx["story_pass"], ctx["removed"] = True, 0.0
-            first = model(input_ids=prompt_ids, use_cache=True)
+            ctx.update(mask=masks(unit_sets), story_pass=True, removed=torch.zeros(B, dtype=torch.float64))
+            first = model(input_ids=prompt_ids.repeat(B, 1), use_cache=True)
             ctx["story_pass"] = False
-            removed = ctx["removed"]
-            lp0 = torch.log_softmax(first.logits[0, -1].float(), -1)
+            removed = ctx["removed"].clone()
+            lp0 = torch.log_softmax(first.logits[:, -1].float(), -1)                        # [B, vocabulary]
+            each = []
             for a_ids in answers:
-                lp = float(lp0[a_ids[0, 0]])
-                if a_ids.shape[1] > 1:
-                    more = model(input_ids=a_ids[:, :-1], past_key_values=copy.deepcopy(first.past_key_values), use_cache=True)
-                    l2 = torch.log_softmax(more.logits[0].float(), -1)
-                    lp += float(l2[torch.arange(a_ids.shape[1] - 1), a_ids[0, 1:]].sum())
-                logps.append(lp)
-            res = {"logp": float(np.logaddexp.reduce(logps)), "logp_each": [round(x, 4) for x in logps], "removed": round(removed, 2)}
-            if reply:
-                ctx["story_pass"] = True          # generate() runs the prompt first; later steps see one token at a time
-                gen = model.generate(prompt_ids, max_new_tokens=reply_tokens, do_sample=False, pad_token_id=tok.pad_token_id)
-                ctx["story_pass"] = False
-                res["reply"] = tok.decode(gen[0, prompt_ids.shape[1]:], skip_special_tokens=True).strip()
-        return res
+                lp = lp0[:, a_ids[0, 0]].clone()
+                n = a_ids.shape[1]
+                if n > 1:
+                    more = model(input_ids=a_ids[:, :-1].repeat(B, 1), past_key_values=copy.deepcopy(first.past_key_values), use_cache=True)
+                    l2 = torch.log_softmax(more.logits.float(), -1)                          # [B, n - 1, vocabulary]
+                    lp = lp + l2[:, torch.arange(n - 1), a_ids[0, 1:]].sum(1)
+                each.append(lp.cpu().numpy())
+            del first
+        each = np.stack(each, 1)                                                              # [B, answers]
+        return [{"logp": float(np.logaddexp.reduce(each[r])), "logp_each": [round(float(x), 4) for x in each[r]], "removed": round(float(removed[r]), 2)}
+                for r in range(B)]
+
+    def reply(prompt_ids, units):
+        with torch.no_grad():
+            ctx.update(mask=masks([units]), story_pass=True, removed=None)
+            gen = model.generate(prompt_ids, max_new_tokens=reply_tokens, do_sample=False, pad_token_id=tok.pad_token_id)
+            ctx["story_pass"] = False
+        return tok.decode(gen[0, prompt_ids.shape[1]:], skip_special_tokens=True).strip()
 
     tap = Tap(model, fn)
-    out = {"model": tag, "question": jobs["question"], "where": "all" if everywhere else "story", "mode": mode, "set_sizes": {k: len(v) for k, v in sets.items()}, "items": []}
+    out = {"model": tag, "question": jobs["question"], "where": "all" if everywhere else "story", "mode": mode,
+           "set_sizes": {k: len(v) for k, v in sets.items()}, "items": []}
     for k, item in enumerate(jobs["items"]):
         msgs = [{"role": "user", "content": item["text"] + "\n\n" + item.get("question", jobs["question"])}]
         try:
@@ -130,12 +146,15 @@ def main(tag, jobs_path, out_path, scale_path=None):
         ctx["lo"], ctx["hi"] = inside[0], inside[-1] + 1
         p_ids = torch.tensor([enc["input_ids"]], device=dev)
         answers = [tok(a, return_tensors="pt", add_special_tokens=False)["input_ids"].to(dev) for a in item["answers"]]
-        set_units([])
+        names = ["untouched"] + list(item.get("conditions", []))
+        unit_sets = [np.zeros(0, np.int64)] + [units_for(n, item) for n in names[1:]]
+        got = []
+        for s in range(0, len(names), batch):
+            got += measure(p_ids, answers, unit_sets[s:s + batch])
         res = {"id": item["id"], "answers": item["answers"], "n_prompt_tokens": int(p_ids.shape[1]), "story_tokens": [ctx["lo"], ctx["hi"]],
-               "untouched": measure(p_ids, answers, True), "conditions": {}}
-        for name in item.get("conditions", []):
-            set_units(units_for(name, item))
-            res["conditions"][name] = measure(p_ids, answers, name in jobs.get("reply_for", []))
+               "untouched": dict(got[0], reply=reply(p_ids, unit_sets[0])), "conditions": {}}
+        for n, r, units in zip(names[1:], got[1:], unit_sets[1:]):
+            res["conditions"][n] = dict(r, reply=reply(p_ids, units)) if n in jobs.get("reply_for", []) else r
         out["items"].append(res)
         if k % 5 == 0 or k == len(jobs["items"]) - 1:
             print(f"{now()} {k + 1}/{len(jobs['items'])} {item['id'][:30]:30s} untouched {res['untouched']['logp']:.2f} reply {res['untouched']['reply']!r}", flush=True)

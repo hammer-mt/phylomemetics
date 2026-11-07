@@ -1,0 +1,1695 @@
+{
+ "rule": "v1: a unit is present in a work when the mean of its three strongest sentences (raw SwiGLU product, all sign regimes) beats all but one of the 69 ordinary films; computed by v1's experiments.py on full-precision activations",
+ "qwen3-8b": {
+  "E1": {
+   "A_name_free": {
+    "hero_film_cousins": {
+     "auc": 0.507421875,
+     "ci95": [
+      0.28534423828125,
+      0.7359545898437498
+     ]
+    },
+    "held_out_films": {
+     "auc": 0.9185937499999999,
+     "ci95": [
+      0.8473208705357143,
+      0.9700926339285715
+     ]
+    },
+    "literary_cousins": {
+     "auc": 0.9087499999999998,
+     "ci95": [
+      0.78887109375,
+      0.9990625
+     ]
+    },
+    "per_batman_vs_hero": {
+     "1943 serial": 0.125,
+     "Batman '66": 0.534,
+     "Dark Knight Returns": 0.959,
+     "Year One": 0.728,
+     "The Killing Joke": 0.262,
+     "A Death in the Family": 0.244,
+     "Gotham by Gaslight": 0.069,
+     "Arkham Asylum (comic)": 0.119,
+     "Batman '89": 0.738,
+     "Batman Returns": 0.581,
+     "Mask of the Phantasm": 0.519,
+     "Knightfall": 1.0,
+     "Batman Forever": 0.553,
+     "The Long Halloween": 0.325,
+     "Batman & Robin": 0.572,
+     "Return of the Joker": 0.713,
+     "Hush": 0.294,
+     "Batman Begins": 0.731,
+     "The Dark Knight": 0.125,
+     "Batman R.I.P.": 0.175,
+     "Arkham Asylum (game)": 0.897,
+     "Under the Red Hood": 0.487,
+     "Arkham City": 0.806,
+     "Dark Knight Rises": 0.6,
+     "Earth One": 0.756,
+     "Arkham Knight": 1.0,
+     "Batman v Superman": 0.75,
+     "Lego Batman": 0.588,
+     "White Knight": 0.334,
+     "Batman Ninja": 0.328,
+     "Joker (2019)": 0.2,
+     "The Batman": 0.125
+    },
+    "per_cousin_beaten_by": {
+     "The Bat (1926)": 0.392,
+     "Zorro": 0.016,
+     "The Shadow": 0.345,
+     "Superman": 0.654,
+     "Spider-Man": 0.888,
+     "Daredevil": 0.882,
+     "Iron Man": 0.568,
+     "Green Hornet": 0.195
+    }
+   },
+   "B_canon_from_name_free": {
+    "hero_film_cousins": {
+     "auc": 0.565234375,
+     "ci95": [
+      0.40692626953125005,
+      0.7281298828125
+     ]
+    },
+    "held_out_films": {
+     "auc": 0.9760937499999999,
+     "ci95": [
+      0.9485,
+      0.9965011160714285
+     ]
+    },
+    "literary_cousins": {
+     "auc": 0.9692187500000001,
+     "ci95": [
+      0.90203125,
+      1.0
+     ]
+    }
+   },
+   "ceiling_original": {
+    "hero_film_cousins": {
+     "auc": 0.997265625,
+     "ci95": [
+      0.98359375,
+      1.0
+     ]
+    },
+    "held_out_films": {
+     "auc": 1.0,
+     "ci95": [
+      1.0,
+      1.0
+     ]
+    },
+    "literary_cousins": {
+     "auc": 1.0,
+     "ci95": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   "A_iconography_dropped": {
+    "hero_film_cousins": {
+     "auc": 0.5284179687499999,
+     "ci95": [
+      0.29324462890625,
+      0.7589184570312498
+     ]
+    },
+    "held_out_films": {
+     "auc": 0.876919642857143,
+     "ci95": [
+      0.7860658482142858,
+      0.9527695312499999
+     ]
+    },
+    "literary_cousins": {
+     "auc": 0.8721874999999999,
+     "ci95": [
+      0.73218359375,
+      0.9734453124999999
+     ]
+    }
+   },
+   "null_label_shuffle": {
+    "mean": 0.505068359375,
+    "p95": 0.703125,
+    "p_value": 0.48258706467661694
+   },
+   "length_only_auc_vs_hero": 0.755859375,
+   "core": {
+    "n_canon_units": 454,
+    "n_core_units": 12,
+    "core_units": [
+     124334,
+     131948,
+     315499,
+     327575,
+     363862,
+     372323,
+     558852,
+     601640,
+     604262,
+     698739,
+     738215,
+     839470
+    ],
+    "canon_units": [
+     563,
+     1168,
+     2848,
+     3383,
+     3511,
+     3911,
+     4162,
+     4547,
+     5123,
+     5373,
+     5823,
+     6068,
+     6082,
+     6253,
+     6271,
+     6823,
+     8610,
+     9839,
+     9925,
+     10497,
+     10540,
+     10543,
+     10656,
+     11130,
+     11462,
+     12108,
+     14731,
+     21826,
+     26495,
+     28213,
+     28614,
+     29088,
+     29569,
+     31044,
+     31259,
+     32610,
+     33621,
+     34306,
+     36790,
+     38011,
+     38998,
+     44950,
+     48752,
+     53703,
+     55540,
+     63053,
+     68173,
+     70234,
+     71655,
+     72579,
+     74919,
+     79914,
+     84130,
+     86277,
+     86579,
+     87416,
+     93899,
+     97197,
+     106560,
+     111619,
+     111775,
+     111999,
+     112000,
+     112063,
+     112625,
+     112750,
+     113996,
+     114726,
+     115035,
+     115202,
+     115413,
+     115941,
+     116207,
+     117668,
+     118051,
+     118766,
+     119120,
+     119274,
+     119629,
+     120065,
+     121453,
+     121490,
+     121519,
+     121780,
+     121978,
+     122129,
+     124334,
+     124487,
+     125732,
+     125906,
+     127178,
+     127815,
+     128475,
+     128490,
+     128514,
+     128537,
+     128787,
+     128822,
+     130069,
+     130319,
+     131610,
+     131818,
+     131948,
+     132337,
+     132549,
+     132996,
+     133745,
+     134758,
+     134790,
+     135538,
+     135688,
+     136471,
+     136753,
+     136830,
+     136986,
+     138565,
+     139996,
+     140053,
+     141129,
+     141341,
+     141553,
+     141663,
+     142508,
+     142690,
+     142960,
+     143695,
+     144691,
+     144814,
+     145011,
+     145519,
+     146743,
+     147024,
+     147060,
+     147189,
+     147430,
+     147957,
+     148797,
+     149397,
+     151647,
+     152083,
+     156371,
+     159065,
+     161078,
+     166364,
+     168352,
+     172144,
+     177463,
+     180098,
+     180495,
+     181266,
+     201100,
+     203724,
+     205557,
+     247603,
+     252675,
+     315499,
+     316740,
+     321925,
+     327575,
+     333426,
+     342724,
+     343045,
+     350216,
+     359296,
+     360256,
+     363862,
+     364326,
+     365270,
+     370823,
+     371827,
+     372323,
+     373146,
+     376731,
+     378680,
+     379218,
+     379403,
+     380224,
+     381825,
+     384099,
+     385426,
+     385893,
+     386845,
+     387322,
+     387372,
+     387442,
+     387827,
+     388006,
+     388156,
+     390292,
+     391224,
+     392251,
+     392342,
+     393558,
+     394524,
+     394537,
+     394999,
+     395312,
+     395560,
+     398548,
+     399962,
+     400670,
+     401330,
+     401519,
+     402677,
+     404411,
+     405507,
+     406215,
+     406493,
+     406598,
+     407394,
+     408444,
+     409614,
+     413391,
+     414065,
+     414589,
+     415653,
+     419414,
+     419881,
+     421278,
+     422114,
+     429744,
+     431657,
+     432439,
+     435358,
+     442541,
+     443017,
+     443252,
+     444303,
+     445170,
+     445237,
+     446099,
+     446386,
+     446669,
+     447132,
+     447189,
+     447412,
+     447786,
+     448117,
+     448128,
+     448747,
+     449194,
+     449726,
+     449915,
+     450003,
+     451040,
+     451189,
+     451220,
+     452245,
+     452255,
+     452901,
+     453427,
+     453997,
+     460110,
+     460898,
+     461143,
+     463190,
+     467773,
+     468047,
+     468546,
+     468840,
+     469716,
+     471337,
+     472763,
+     474852,
+     475377,
+     475818,
+     481407,
+     481704,
+     482021,
+     482223,
+     484514,
+     488065,
+     488655,
+     489896,
+     490510,
+     496279,
+     496508,
+     496873,
+     498975,
+     504070,
+     511000,
+     512773,
+     512967,
+     514763,
+     514857,
+     515835,
+     520693,
+     521339,
+     523659,
+     527499,
+     528649,
+     528682,
+     545613,
+     550964,
+     551288,
+     552117,
+     553931,
+     554431,
+     555078,
+     556364,
+     556534,
+     557570,
+     558309,
+     558852,
+     558993,
+     559213,
+     559532,
+     560036,
+     560418,
+     561134,
+     561931,
+     562273,
+     562433,
+     563887,
+     564116,
+     564148,
+     564168,
+     565173,
+     565219,
+     565231,
+     565928,
+     566080,
+     566124,
+     566702,
+     567472,
+     568061,
+     568393,
+     569209,
+     569546,
+     570183,
+     570630,
+     571190,
+     571753,
+     572076,
+     573205,
+     573978,
+     574287,
+     574316,
+     574705,
+     575866,
+     577083,
+     577158,
+     579530,
+     580461,
+     581638,
+     581933,
+     584236,
+     584876,
+     585978,
+     586295,
+     586453,
+     586882,
+     587085,
+     587676,
+     588466,
+     588715,
+     589605,
+     590336,
+     591483,
+     592099,
+     593765,
+     594827,
+     596573,
+     596962,
+     596982,
+     597227,
+     598415,
+     599709,
+     601640,
+     604262,
+     609243,
+     611750,
+     619005,
+     621792,
+     623544,
+     636864,
+     651081,
+     679340,
+     698739,
+     700044,
+     738215,
+     752160,
+     767475,
+     770759,
+     786588,
+     789725,
+     802485,
+     803636,
+     804020,
+     811736,
+     812023,
+     812975,
+     813270,
+     814685,
+     814917,
+     815241,
+     816744,
+     821181,
+     821773,
+     822664,
+     822931,
+     823272,
+     825312,
+     825743,
+     826359,
+     826447,
+     826562,
+     827427,
+     827593,
+     827621,
+     828973,
+     829244,
+     829494,
+     830490,
+     832275,
+     833082,
+     833097,
+     833156,
+     836336,
+     836639,
+     837601,
+     839437,
+     839470,
+     840061,
+     841482,
+     844528,
+     844666,
+     845544,
+     845616,
+     846237,
+     846723,
+     847419,
+     847436,
+     848043,
+     849762,
+     850523,
+     850816,
+     851104,
+     851415,
+     851898,
+     852511,
+     852645,
+     854367,
+     854726,
+     858920,
+     862924,
+     863605,
+     864079,
+     865936,
+     871727,
+     873764,
+     873987,
+     879510,
+     881860
+    ],
+    "cousins_core_units": 0,
+    "pseudo_franchise_core_units_mean": 0.0,
+    "pseudo_franchise_core_units_max": 0,
+    "core_present_share_in_hero_cousins": 0.8958333333333334,
+    "core_present_share_in_held_out_films": 0.0561904761904762,
+    "core_present_share_in_held_out_films_range": [
+     0.02619047619047619,
+     0.1
+    ],
+    "held_out_film_chance_share": 0.05714285714285714
+   }
+  },
+  "n_units": 884736,
+  "units_present_per_batman_work_name_free_median": 18330.0,
+  "E2": {
+   "primary": {
+    "rows": [
+     {
+      "target": "Batman Begins",
+      "sources": [
+       "Year One"
+      ],
+      "share_of_comics_beating_source": 0.0,
+      "rank": 1,
+      "n_comics": 9,
+      "beats_median": true
+     },
+     {
+      "target": "The Dark Knight",
+      "sources": [
+       "The Long Halloween",
+       "The Killing Joke"
+      ],
+      "share_of_comics_beating_source": 0.375,
+      "rank": 4,
+      "n_comics": 10,
+      "beats_median": true
+     },
+     {
+      "target": "Dark Knight Rises",
+      "sources": [
+       "Knightfall",
+       "Dark Knight Returns"
+      ],
+      "share_of_comics_beating_source": 0.444,
+      "rank": 5,
+      "n_comics": 11,
+      "beats_median": true
+     },
+     {
+      "target": "Batman v Superman",
+      "sources": [
+       "Dark Knight Returns"
+      ],
+      "share_of_comics_beating_source": 0.1,
+      "rank": 2,
+      "n_comics": 11,
+      "beats_median": true
+     },
+     {
+      "target": "Under the Red Hood",
+      "sources": [
+       "A Death in the Family"
+      ],
+      "share_of_comics_beating_source": 0.222,
+      "rank": 3,
+      "n_comics": 10,
+      "beats_median": true
+     },
+     {
+      "target": "Arkham Asylum (game)",
+      "sources": [
+       "Arkham Asylum (comic)"
+      ],
+      "share_of_comics_beating_source": 0.111,
+      "rank": 2,
+      "n_comics": 10,
+      "beats_median": true
+     },
+     {
+      "target": "Batman '89",
+      "sources": [
+       "The Killing Joke"
+      ],
+      "share_of_comics_beating_source": 0.0,
+      "rank": 1,
+      "n_comics": 6,
+      "beats_median": true
+     },
+     {
+      "target": "Joker (2019)",
+      "sources": [
+       "The Killing Joke"
+      ],
+      "share_of_comics_beating_source": 0.0,
+      "rank": 1,
+      "n_comics": 12,
+      "beats_median": true
+     },
+     {
+      "target": "The Batman",
+      "sources": [
+       "Year One",
+       "The Long Halloween"
+      ],
+      "share_of_comics_beating_source": 0.0,
+      "rank": 1,
+      "n_comics": 12,
+      "beats_median": true
+     }
+    ],
+    "mean_share_beating_source": 0.1391111111111111,
+    "null_mean": 0.4787707519640853,
+    "p_one_sided": 0.0005999400059994001,
+    "beats_median": 9,
+    "n": 9,
+    "placebo_mean": 0.4568368873924429,
+    "placebo_min": 0.3412698412698413,
+    "real_below_all_placebos": true,
+    "placebo_p5": 0.3645502645502645,
+    "n_valid_placebos": 9,
+    "placebo_excluded_no_eligible_comic": [
+     "1943 serial",
+     "Batman '66"
+    ],
+    "placebo_by_target": {
+     "Batman Returns": 0.4,
+     "Batman Forever": 0.4962962962962963,
+     "Batman & Robin": 0.3994708994708994,
+     "Mask of the Phantasm": 0.4555555555555555,
+     "Return of the Joker": 0.3412698412698413,
+     "Arkham City": 0.5077160493827161,
+     "Arkham Knight": 0.46172839506172836,
+     "Lego Batman": 0.4757575757575757,
+     "Batman Ninja": 0.5737373737373737
+    },
+    "chance": {
+     "observed_unrounded": 0.13919753086419753,
+     "joint_relabelling_exact": {
+      "n_maps": 3991680,
+      "mean": 0.47933969322858216,
+      "p": 0.00034471701138367804
+     },
+     "joint_relabelling_time_consistent": {
+      "n_maps": 483840,
+      "mean": 0.42168542512871215,
+      "p": 0.001736111111111111
+     },
+     "within_era": {
+      "n_maps": 1440,
+      "mean": 0.3889894313505424,
+      "p": 0.003472222222222222
+     },
+     "eligible_uniform_expectation": 0.4444444444444444
+    }
+   },
+   "original_upper_bound": {
+    "rows": [
+     {
+      "target": "Batman Begins",
+      "sources": [
+       "Year One"
+      ],
+      "share_of_comics_beating_source": 0.0,
+      "rank": 1,
+      "n_comics": 9,
+      "beats_median": true
+     },
+     {
+      "target": "The Dark Knight",
+      "sources": [
+       "The Long Halloween",
+       "The Killing Joke"
+      ],
+      "share_of_comics_beating_source": 0.125,
+      "rank": 2,
+      "n_comics": 10,
+      "beats_median": true
+     },
+     {
+      "target": "Dark Knight Rises",
+      "sources": [
+       "Knightfall",
+       "Dark Knight Returns"
+      ],
+      "share_of_comics_beating_source": 0.556,
+      "rank": 6,
+      "n_comics": 11,
+      "beats_median": false
+     },
+     {
+      "target": "Batman v Superman",
+      "sources": [
+       "Dark Knight Returns"
+      ],
+      "share_of_comics_beating_source": 0.1,
+      "rank": 2,
+      "n_comics": 11,
+      "beats_median": true
+     },
+     {
+      "target": "Under the Red Hood",
+      "sources": [
+       "A Death in the Family"
+      ],
+      "share_of_comics_beating_source": 0.0,
+      "rank": 1,
+      "n_comics": 10,
+      "beats_median": true
+     },
+     {
+      "target": "Arkham Asylum (game)",
+      "sources": [
+       "Arkham Asylum (comic)"
+      ],
+      "share_of_comics_beating_source": 0.111,
+      "rank": 2,
+      "n_comics": 10,
+      "beats_median": true
+     },
+     {
+      "target": "Batman '89",
+      "sources": [
+       "The Killing Joke"
+      ],
+      "share_of_comics_beating_source": 0.2,
+      "rank": 2,
+      "n_comics": 6,
+      "beats_median": true
+     },
+     {
+      "target": "Joker (2019)",
+      "sources": [
+       "The Killing Joke"
+      ],
+      "share_of_comics_beating_source": 0.0,
+      "rank": 1,
+      "n_comics": 12,
+      "beats_median": true
+     },
+     {
+      "target": "The Batman",
+      "sources": [
+       "Year One",
+       "The Long Halloween"
+      ],
+      "share_of_comics_beating_source": 0.0,
+      "rank": 1,
+      "n_comics": 12,
+      "beats_median": true
+     }
+    ],
+    "mean_share_beating_source": 0.12133333333333335,
+    "null_mean": 0.4699137626262626,
+    "p_one_sided": 0.0009995002498750624,
+    "beats_median": 8,
+    "n": 9,
+    "placebo_mean": 0.4533923895035006,
+    "placebo_min": 0.23535353535353534,
+    "real_below_all_placebos": true,
+    "placebo_p5": 0.2544396344396344,
+    "n_valid_placebos": 9,
+    "placebo_excluded_no_eligible_comic": [
+     "1943 serial",
+     "Batman '66"
+    ],
+    "placebo_by_target": {
+     "Batman Returns": 0.5111111111111112,
+     "Batman Forever": 0.4222222222222222,
+     "Batman & Robin": 0.5608465608465608,
+     "Mask of the Phantasm": 0.48888888888888893,
+     "Return of the Joker": 0.283068783068783,
+     "Arkham City": 0.6342592592592593,
+     "Arkham Knight": 0.4296296296296296,
+     "Lego Batman": 0.23535353535353534,
+     "Batman Ninja": 0.5151515151515151
+    },
+    "chance": {
+     "observed_unrounded": 0.1212962962962963,
+     "joint_relabelling_exact": {
+      "n_maps": 3991680,
+      "mean": 0.4693509165731388,
+      "p": 0.00040008217091550425
+     },
+     "joint_relabelling_time_consistent": {
+      "n_maps": 483840,
+      "mean": 0.4249668372715248,
+      "p": 0.0016782407407407408
+     },
+     "within_era": {
+      "n_maps": 1440,
+      "mean": 0.46943275346053126,
+      "p": 0.001388888888888889
+     },
+     "eligible_uniform_expectation": 0.4444444444444444
+    }
+   },
+   "sequels_name_free": {
+    "rows": [
+     {
+      "sequel": "The Dark Knight",
+      "prequel": "Batman Begins",
+      "rank": 4,
+      "n": 9,
+      "closest": "Batman Forever"
+     },
+     {
+      "sequel": "Dark Knight Rises",
+      "prequel": "The Dark Knight",
+      "rank": 2,
+      "n": 13,
+      "closest": "1943 serial"
+     },
+     {
+      "sequel": "Batman Returns",
+      "prequel": "Batman '89",
+      "rank": 1,
+      "n": 3,
+      "closest": "Batman '89"
+     },
+     {
+      "sequel": "Batman Forever",
+      "prequel": "Batman Returns",
+      "rank": 4,
+      "n": 5,
+      "closest": "1943 serial"
+     },
+     {
+      "sequel": "Batman & Robin",
+      "prequel": "Batman Forever",
+      "rank": 1,
+      "n": 6,
+      "closest": "Batman Forever"
+     },
+     {
+      "sequel": "Arkham City",
+      "prequel": "Arkham Asylum (game)",
+      "rank": 1,
+      "n": 12,
+      "closest": "Arkham Asylum (game)"
+     },
+     {
+      "sequel": "Arkham Knight",
+      "prequel": "Arkham City",
+      "rank": 1,
+      "n": 14,
+      "closest": "Arkham City"
+     }
+    ],
+    "top2": 5,
+    "n": 7
+   },
+   "sequels_original": {
+    "rows": [
+     {
+      "sequel": "The Dark Knight",
+      "prequel": "Batman Begins",
+      "rank": 2,
+      "n": 9,
+      "closest": "Batman Forever"
+     },
+     {
+      "sequel": "Dark Knight Rises",
+      "prequel": "The Dark Knight",
+      "rank": 2,
+      "n": 13,
+      "closest": "Batman Begins"
+     },
+     {
+      "sequel": "Batman Returns",
+      "prequel": "Batman '89",
+      "rank": 1,
+      "n": 3,
+      "closest": "Batman '89"
+     },
+     {
+      "sequel": "Batman Forever",
+      "prequel": "Batman Returns",
+      "rank": 1,
+      "n": 5,
+      "closest": "Batman Returns"
+     },
+     {
+      "sequel": "Batman & Robin",
+      "prequel": "Batman Forever",
+      "rank": 2,
+      "n": 6,
+      "closest": "1943 serial"
+     },
+     {
+      "sequel": "Arkham City",
+      "prequel": "Arkham Asylum (game)",
+      "rank": 1,
+      "n": 12,
+      "closest": "Arkham Asylum (game)"
+     },
+     {
+      "sequel": "Arkham Knight",
+      "prequel": "Arkham City",
+      "rank": 1,
+      "n": 14,
+      "closest": "Arkham City"
+     }
+    ],
+    "top2": 7,
+    "n": 7
+   },
+   "n_optional_units": 153622,
+   "residual_test_beyond_words": {
+    "neurons_resid_on_tfidf_cosine": {
+     "rows": [
+      {
+       "target": "Batman Begins",
+       "sources": [
+        "Year One"
+       ],
+       "share_of_comics_beating_source": 0.0,
+       "rank": 1,
+       "n_comics": 9,
+       "beats_median": true
+      },
+      {
+       "target": "The Dark Knight",
+       "sources": [
+        "The Long Halloween",
+        "The Killing Joke"
+       ],
+       "share_of_comics_beating_source": 0.25,
+       "rank": 3,
+       "n_comics": 10,
+       "beats_median": true
+      },
+      {
+       "target": "Dark Knight Rises",
+       "sources": [
+        "Knightfall",
+        "Dark Knight Returns"
+       ],
+       "share_of_comics_beating_source": 0.111,
+       "rank": 2,
+       "n_comics": 11,
+       "beats_median": true
+      },
+      {
+       "target": "Batman v Superman",
+       "sources": [
+        "Dark Knight Returns"
+       ],
+       "share_of_comics_beating_source": 0.1,
+       "rank": 2,
+       "n_comics": 11,
+       "beats_median": true
+      },
+      {
+       "target": "Under the Red Hood",
+       "sources": [
+        "A Death in the Family"
+       ],
+       "share_of_comics_beating_source": 1.0,
+       "rank": 10,
+       "n_comics": 10,
+       "beats_median": false
+      },
+      {
+       "target": "Arkham Asylum (game)",
+       "sources": [
+        "Arkham Asylum (comic)"
+       ],
+       "share_of_comics_beating_source": 0.889,
+       "rank": 9,
+       "n_comics": 10,
+       "beats_median": false
+      },
+      {
+       "target": "Batman '89",
+       "sources": [
+        "The Killing Joke"
+       ],
+       "share_of_comics_beating_source": 0.4,
+       "rank": 3,
+       "n_comics": 6,
+       "beats_median": true
+      },
+      {
+       "target": "Joker (2019)",
+       "sources": [
+        "The Killing Joke"
+       ],
+       "share_of_comics_beating_source": 0.182,
+       "rank": 3,
+       "n_comics": 12,
+       "beats_median": true
+      },
+      {
+       "target": "The Batman",
+       "sources": [
+        "Year One",
+        "The Long Halloween"
+       ],
+       "share_of_comics_beating_source": 0.1,
+       "rank": 2,
+       "n_comics": 12,
+       "beats_median": true
+      }
+     ],
+     "mean_share_beating_source": 0.3368888888888889,
+     "null_mean": 0.46497498316498315,
+     "p_one_sided": 0.1384861513848615,
+     "beats_median": 7,
+     "n": 9,
+     "placebo_mean": 0.48409892576559244,
+     "placebo_min": 0.34656084656084657,
+     "real_below_all_placebos": true,
+     "placebo_p5": 0.3753439153439153,
+     "n_valid_placebos": 9,
+     "placebo_excluded_no_eligible_comic": [
+      "1943 serial",
+      "Batman '66"
+     ],
+     "placebo_by_target": {
+      "Batman Returns": 0.48888888888888893,
+      "Batman Forever": 0.41851851851851846,
+      "Batman & Robin": 0.47354497354497355,
+      "Mask of the Phantasm": 0.6037037037037039,
+      "Return of the Joker": 0.34656084656084657,
+      "Arkham City": 0.5324074074074073,
+      "Arkham Knight": 0.45185185185185184,
+      "Lego Batman": 0.5838383838383838,
+      "Batman Ninja": 0.4575757575757576
+     },
+     "chance": {
+      "observed_unrounded": 0.3368686868686869,
+      "joint_relabelling_exact": {
+       "n_maps": 3991680,
+       "mean": 0.46429105873550314,
+       "p": 0.13850759579926247
+      },
+      "joint_relabelling_time_consistent": {
+       "n_maps": 483840,
+       "mean": 0.4135822545617106,
+       "p": 0.2580150462962963
+      },
+      "within_era": {
+       "n_maps": 1440,
+       "mean": 0.4242400860456416,
+       "p": 0.24583333333333332
+      },
+      "eligible_uniform_expectation": 0.4444444444444444
+     },
+     "r2_of_fit": 0.08376521716949059
+    },
+    "neurons_resid_on_word_presence": {
+     "rows": [
+      {
+       "target": "Batman Begins",
+       "sources": [
+        "Year One"
+       ],
+       "share_of_comics_beating_source": 0.0,
+       "rank": 1,
+       "n_comics": 9,
+       "beats_median": true
+      },
+      {
+       "target": "The Dark Knight",
+       "sources": [
+        "The Long Halloween",
+        "The Killing Joke"
+       ],
+       "share_of_comics_beating_source": 0.375,
+       "rank": 4,
+       "n_comics": 10,
+       "beats_median": true
+      },
+      {
+       "target": "Dark Knight Rises",
+       "sources": [
+        "Knightfall",
+        "Dark Knight Returns"
+       ],
+       "share_of_comics_beating_source": 0.222,
+       "rank": 3,
+       "n_comics": 11,
+       "beats_median": true
+      },
+      {
+       "target": "Batman v Superman",
+       "sources": [
+        "Dark Knight Returns"
+       ],
+       "share_of_comics_beating_source": 0.1,
+       "rank": 2,
+       "n_comics": 11,
+       "beats_median": true
+      },
+      {
+       "target": "Under the Red Hood",
+       "sources": [
+        "A Death in the Family"
+       ],
+       "share_of_comics_beating_source": 0.889,
+       "rank": 9,
+       "n_comics": 10,
+       "beats_median": false
+      },
+      {
+       "target": "Arkham Asylum (game)",
+       "sources": [
+        "Arkham Asylum (comic)"
+       ],
+       "share_of_comics_beating_source": 0.444,
+       "rank": 5,
+       "n_comics": 10,
+       "beats_median": true
+      },
+      {
+       "target": "Batman '89",
+       "sources": [
+        "The Killing Joke"
+       ],
+       "share_of_comics_beating_source": 0.0,
+       "rank": 1,
+       "n_comics": 6,
+       "beats_median": true
+      },
+      {
+       "target": "Joker (2019)",
+       "sources": [
+        "The Killing Joke"
+       ],
+       "share_of_comics_beating_source": 0.091,
+       "rank": 2,
+       "n_comics": 12,
+       "beats_median": true
+      },
+      {
+       "target": "The Batman",
+       "sources": [
+        "Year One",
+        "The Long Halloween"
+       ],
+       "share_of_comics_beating_source": 0.1,
+       "rank": 2,
+       "n_comics": 12,
+       "beats_median": true
+      }
+     ],
+     "mean_share_beating_source": 0.2467777777777778,
+     "null_mean": 0.45962353254769917,
+     "p_one_sided": 0.024997500249975,
+     "beats_median": 8,
+     "n": 9,
+     "placebo_mean": 0.4602671334152816,
+     "placebo_min": 0.3481481481481481,
+     "real_below_all_placebos": true,
+     "placebo_p5": 0.3753086419753086,
+     "n_valid_placebos": 9,
+     "placebo_excluded_no_eligible_comic": [
+      "1943 serial",
+      "Batman '66"
+     ],
+     "placebo_by_target": {
+      "Batman Returns": 0.4444444444444444,
+      "Batman Forever": 0.3481481481481481,
+      "Batman & Robin": 0.4947089947089947,
+      "Mask of the Phantasm": 0.5444444444444445,
+      "Return of the Joker": 0.45238095238095233,
+      "Arkham City": 0.5169753086419753,
+      "Arkham Knight": 0.41604938271604935,
+      "Lego Batman": 0.45858585858585865,
+      "Batman Ninja": 0.4666666666666667
+     },
+     "chance": {
+      "observed_unrounded": 0.2468294051627385,
+      "joint_relabelling_exact": {
+       "n_maps": 3991680,
+       "mean": 0.4601197156752712,
+       "p": 0.025337702421035755
+      },
+      "joint_relabelling_time_consistent": {
+       "n_maps": 483840,
+       "mean": 0.43012503855241124,
+       "p": 0.04674892526455027
+      },
+      "within_era": {
+       "n_maps": 1440,
+       "mean": 0.45066170968948743,
+       "p": 0.030555555555555555
+      },
+      "eligible_uniform_expectation": 0.4444444444444444
+     },
+     "r2_of_fit": 0.1765502817004132
+    },
+    "neurons_resid_on_both": {
+     "rows": [
+      {
+       "target": "Batman Begins",
+       "sources": [
+        "Year One"
+       ],
+       "share_of_comics_beating_source": 0.0,
+       "rank": 1,
+       "n_comics": 9,
+       "beats_median": true
+      },
+      {
+       "target": "The Dark Knight",
+       "sources": [
+        "The Long Halloween",
+        "The Killing Joke"
+       ],
+       "share_of_comics_beating_source": 0.25,
+       "rank": 3,
+       "n_comics": 10,
+       "beats_median": true
+      },
+      {
+       "target": "Dark Knight Rises",
+       "sources": [
+        "Knightfall",
+        "Dark Knight Returns"
+       ],
+       "share_of_comics_beating_source": 0.222,
+       "rank": 3,
+       "n_comics": 11,
+       "beats_median": true
+      },
+      {
+       "target": "Batman v Superman",
+       "sources": [
+        "Dark Knight Returns"
+       ],
+       "share_of_comics_beating_source": 0.1,
+       "rank": 2,
+       "n_comics": 11,
+       "beats_median": true
+      },
+      {
+       "target": "Under the Red Hood",
+       "sources": [
+        "A Death in the Family"
+       ],
+       "share_of_comics_beating_source": 0.889,
+       "rank": 9,
+       "n_comics": 10,
+       "beats_median": false
+      },
+      {
+       "target": "Arkham Asylum (game)",
+       "sources": [
+        "Arkham Asylum (comic)"
+       ],
+       "share_of_comics_beating_source": 0.333,
+       "rank": 4,
+       "n_comics": 10,
+       "beats_median": true
+      },
+      {
+       "target": "Batman '89",
+       "sources": [
+        "The Killing Joke"
+       ],
+       "share_of_comics_beating_source": 0.0,
+       "rank": 1,
+       "n_comics": 6,
+       "beats_median": true
+      },
+      {
+       "target": "Joker (2019)",
+       "sources": [
+        "The Killing Joke"
+       ],
+       "share_of_comics_beating_source": 0.091,
+       "rank": 2,
+       "n_comics": 12,
+       "beats_median": true
+      },
+      {
+       "target": "The Batman",
+       "sources": [
+        "Year One",
+        "The Long Halloween"
+       ],
+       "share_of_comics_beating_source": 0.1,
+       "rank": 2,
+       "n_comics": 12,
+       "beats_median": true
+      }
+     ],
+     "mean_share_beating_source": 0.22055555555555556,
+     "null_mean": 0.4605130078563412,
+     "p_one_sided": 0.015498450154984501,
+     "beats_median": 8,
+     "n": 9,
+     "placebo_mean": 0.4553288618103432,
+     "placebo_min": 0.3666666666666666,
+     "real_below_all_placebos": true,
+     "placebo_p5": 0.37999999999999995,
+     "n_valid_placebos": 9,
+     "placebo_excluded_no_eligible_comic": [
+      "1943 serial",
+      "Batman '66"
+     ],
+     "placebo_by_target": {
+      "Batman Returns": 0.4,
+      "Batman Forever": 0.3666666666666666,
+      "Batman & Robin": 0.4947089947089947,
+      "Mask of the Phantasm": 0.5259259259259259,
+      "Return of the Joker": 0.45238095238095233,
+      "Arkham City": 0.5169753086419753,
+      "Arkham Knight": 0.43827160493827155,
+      "Lego Batman": 0.44747474747474747,
+      "Batman Ninja": 0.4555555555555555
+     },
+     "chance": {
+      "observed_unrounded": 0.22059483726150392,
+      "joint_relabelling_exact": {
+       "n_maps": 3991680,
+       "mean": 0.46112981668537223,
+       "p": 0.014625170354337021
+      },
+      "joint_relabelling_time_consistent": {
+       "n_maps": 483840,
+       "mean": 0.42482752667214474,
+       "p": 0.030576223544973545
+      },
+      "within_era": {
+       "n_maps": 1440,
+       "mean": 0.45297652450430237,
+       "p": 0.01597222222222222
+      },
+      "eligible_uniform_expectation": 0.4444444444444444
+     },
+     "r2_of_fit": 0.17820731900181597
+    }
+   }
+  },
+  "E3": {
+   "primary": {
+    "n_early": 15,
+    "n_later": 9,
+    "n_units": 54334,
+    "rho": 0.28928571428571426,
+    "p_one_sided": 0.3090690930906909,
+    "null_sd": 0.21763194547843745,
+    "jackknife_min": 0.1252747252747253,
+    "jackknife_positive": 15,
+    "works": [
+     {
+      "work": "1943 serial",
+      "year": 1943,
+      "monthly_views": 10441,
+      "offspring": 0.0072,
+      "n_units": 3900
+     },
+     {
+      "work": "Batman '66",
+      "year": 1966,
+      "monthly_views": 20563,
+      "offspring": -0.00558,
+      "n_units": 10576
+     },
+     {
+      "work": "Dark Knight Returns",
+      "year": 1986,
+      "monthly_views": 36736,
+      "offspring": 0.01357,
+      "n_units": 10845
+     },
+     {
+      "work": "Year One",
+      "year": 1987,
+      "monthly_views": 16208,
+      "offspring": -0.00175,
+      "n_units": 7012
+     },
+     {
+      "work": "The Killing Joke",
+      "year": 1988,
+      "monthly_views": 48103,
+      "offspring": -0.01191,
+      "n_units": 8245
+     },
+     {
+      "work": "A Death in the Family",
+      "year": 1988,
+      "monthly_views": 3613,
+      "offspring": -0.01341,
+      "n_units": 7299
+     },
+     {
+      "work": "Gotham by Gaslight",
+      "year": 1989,
+      "monthly_views": 10328,
+      "offspring": 0.00166,
+      "n_units": 3599
+     },
+     {
+      "work": "Arkham Asylum (comic)",
+      "year": 1989,
+      "monthly_views": 7340,
+      "offspring": -0.011,
+      "n_units": 7341
+     },
+     {
+      "work": "Batman '89",
+      "year": 1989,
+      "monthly_views": 80836,
+      "offspring": -0.00957,
+      "n_units": 9767
+     },
+     {
+      "work": "Batman Returns",
+      "year": 1992,
+      "monthly_views": 63272,
+      "offspring": -0.00282,
+      "n_units": 6948
+     },
+     {
+      "work": "Mask of the Phantasm",
+      "year": 1993,
+      "monthly_views": 22848,
+      "offspring": 0.00205,
+      "n_units": 6139
+     },
+     {
+      "work": "Knightfall",
+      "year": 1993,
+      "monthly_views": 13388,
+      "offspring": 0.00753,
+      "n_units": 21086
+     },
+     {
+      "work": "Batman Forever",
+      "year": 1995,
+      "monthly_views": 69575,
+      "offspring": 0.00782,
+      "n_units": 7266
+     },
+     {
+      "work": "The Long Halloween",
+      "year": 1996,
+      "monthly_views": 20689,
+      "offspring": -0.00852,
+      "n_units": 11575
+     },
+     {
+      "work": "Batman & Robin",
+      "year": 1997,
+      "monthly_views": 64224,
+      "offspring": 0.02472,
+      "n_units": 5904
+     }
+    ]
+   },
+   "original_text": {
+    "n_early": 15,
+    "n_later": 9,
+    "n_units": 61902,
+    "rho": -0.3321428571428571,
+    "p_one_sided": 0.736631684157921,
+    "null_sd": 0.2198275423021233,
+    "jackknife_min": -0.5208791208791209,
+    "jackknife_positive": 0,
+    "works": [
+     {
+      "work": "1943 serial",
+      "year": 1943,
+      "monthly_views": 10441,
+      "offspring": 0.00602,
+      "n_units": 4544
+     },
+     {
+      "work": "Batman '66",
+      "year": 1966,
+      "monthly_views": 20563,
+      "offspring": -0.00476,
+      "n_units": 15104
+     },
+     {
+      "work": "Dark Knight Returns",
+      "year": 1986,
+      "monthly_views": 36736,
+      "offspring": 0.00937,
+      "n_units": 15131
+     },
+     {
+      "work": "Year One",
+      "year": 1987,
+      "monthly_views": 16208,
+      "offspring": -0.01141,
+      "n_units": 8831
+     },
+     {
+      "work": "The Killing Joke",
+      "year": 1988,
+      "monthly_views": 48103,
+      "offspring": 0.00098,
+      "n_units": 5610
+     },
+     {
+      "work": "A Death in the Family",
+      "year": 1988,
+      "monthly_views": 3613,
+      "offspring": -0.00078,
+      "n_units": 9756
+     },
+     {
+      "work": "Gotham by Gaslight",
+      "year": 1989,
+      "monthly_views": 10328,
+      "offspring": -0.00203,
+      "n_units": 5663
+     },
+     {
+      "work": "Arkham Asylum (comic)",
+      "year": 1989,
+      "monthly_views": 7340,
+      "offspring": 0.00241,
+      "n_units": 12061
+     },
+     {
+      "work": "Batman '89",
+      "year": 1989,
+      "monthly_views": 80836,
+      "offspring": -0.02049,
+      "n_units": 13884
+     },
+     {
+      "work": "Batman Returns",
+      "year": 1992,
+      "monthly_views": 63272,
+      "offspring": -0.00573,
+      "n_units": 6933
+     },
+     {
+      "work": "Mask of the Phantasm",
+      "year": 1993,
+      "monthly_views": 22848,
+      "offspring": -0.00235,
+      "n_units": 6699
+     },
+     {
+      "work": "Knightfall",
+      "year": 1993,
+      "monthly_views": 13388,
+      "offspring": 0.01411,
+      "n_units": 24200
+     },
+     {
+      "work": "Batman Forever",
+      "year": 1995,
+      "monthly_views": 69575,
+      "offspring": -0.01197,
+      "n_units": 13374
+     },
+     {
+      "work": "The Long Halloween",
+      "year": 1996,
+      "monthly_views": 20689,
+      "offspring": -0.00184,
+      "n_units": 16439
+     },
+     {
+      "work": "Batman & Robin",
+      "year": 1997,
+      "monthly_views": 64224,
+      "offspring": 0.02848,
+      "n_units": 8679
+     }
+    ]
+   }
+  },
+  "seconds": 544
+ }
+}

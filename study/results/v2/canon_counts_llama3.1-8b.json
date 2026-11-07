@@ -1,0 +1,198 @@
+{
+ "model": "llama3.1-8b",
+ "n_units_present_in_some_work": 577567,
+ "n_distinctive": 284096,
+ "batman_distinctive_units": {
+  "at_least_6": 3279,
+  "at_least_23": 192,
+  "at_least_29": 59
+ },
+ "batman_all_units": {
+  "at_least_6": 80590,
+  "at_least_23": 10991,
+  "at_least_29": 5012
+ },
+ "batman_name_free_distinctive_units": {
+  "at_least_6": 561,
+  "at_least_23": 10,
+  "at_least_29": 5
+ },
+ "batman_name_free_all_units": {
+  "at_least_6": 55775,
+  "at_least_23": 7422,
+  "at_least_29": 3562
+ },
+ "random_sets_of_32_ordinary_films_distinctive_units": {
+  "n_draws": 50,
+  "at_least_6": {
+   "mean": 329.66,
+   "max": 536
+  },
+  "at_least_23": {
+   "mean": 0.0,
+   "max": 0
+  },
+  "at_least_29": {
+   "mean": 0.0,
+   "max": 0
+  }
+ },
+ "batman_above_every_random_set_at_least_6_distinctive_units": true,
+ "random_sets_of_32_ordinary_films_all_units": {
+  "n_draws": 50,
+  "at_least_6": {
+   "mean": 74673.86,
+   "max": 77666
+  },
+  "at_least_23": {
+   "mean": 8134.18,
+   "max": 8540
+  },
+  "at_least_29": {
+   "mean": 3739.68,
+   "max": 3948
+  }
+ },
+ "batman_above_every_random_set_at_least_6_all_units": true,
+ "candidate_units": 3279,
+ "tiers_units": {
+  "core": {
+   "n": 59,
+   "batman_own": 43,
+   "shared_with_relatives": 16
+  },
+  "common": {
+   "n": 133,
+   "batman_own": 119,
+   "shared_with_relatives": 14
+  },
+  "optional": {
+   "n": 3087,
+   "batman_own": 3012,
+   "shared_with_relatives": 75
+  }
+ },
+ "core_share_by_work": {
+  "1943 serial": 0.7797,
+  "Batman '66": 0.8983,
+  "Dark Knight Returns": 0.9831,
+  "Year One": 0.9831,
+  "The Killing Joke": 0.8305,
+  "A Death in the Family": 0.9831,
+  "Gotham by Gaslight": 0.9492,
+  "Arkham Asylum (comic)": 0.8136,
+  "Batman '89": 0.9322,
+  "Batman Returns": 0.9831,
+  "Mask of the Phantasm": 1.0,
+  "Knightfall": 0.9831,
+  "Batman Forever": 1.0,
+  "The Long Halloween": 1.0,
+  "Batman & Robin": 1.0,
+  "Return of the Joker": 1.0,
+  "Hush": 1.0,
+  "Batman Begins": 1.0,
+  "The Dark Knight": 0.9492,
+  "Batman R.I.P.": 1.0,
+  "Arkham Asylum (game)": 1.0,
+  "Under the Red Hood": 1.0,
+  "Arkham City": 1.0,
+  "Dark Knight Rises": 1.0,
+  "Earth One": 0.9831,
+  "Arkham Knight": 1.0,
+  "Batman v Superman": 0.9492,
+  "Lego Batman": 0.9661,
+  "White Knight": 1.0,
+  "Batman Ninja": 0.9831,
+  "Joker (2019)": 0.6271,
+  "The Batman": 1.0,
+  "The Bat (1926)": 0.0847,
+  "Zorro": 0.0169,
+  "The Shadow": 0.1525,
+  "Superman": 0.4576,
+  "Spider-Man": 0.4068,
+  "Daredevil": 0.4576,
+  "Iron Man": 0.339,
+  "Green Hornet": 0.2203,
+  "Puss in Boots": 0.0169,
+  "Count of Monte Cristo": 0.0339,
+  "Sherlock Holmes": 0.0678,
+  "Dracula": 0.0508,
+  "Scarlet Pimpernel": 0.0
+ },
+ "core_share_by_work_name_free": {
+  "1943 serial": 0.0339,
+  "Batman '66": 0.0169,
+  "Dark Knight Returns": 0.1695,
+  "Year One": 0.0339,
+  "The Killing Joke": 0.0169,
+  "A Death in the Family": 0.0339,
+  "Gotham by Gaslight": 0.0,
+  "Arkham Asylum (comic)": 0.0169,
+  "Batman '89": 0.1017,
+  "Batman Returns": 0.0508,
+  "Mask of the Phantasm": 0.0678,
+  "Knightfall": 0.2881,
+  "Batman Forever": 0.1356,
+  "The Long Halloween": 0.0339,
+  "Batman & Robin": 0.0678,
+  "Return of the Joker": 0.0847,
+  "Hush": 0.0339,
+  "Batman Begins": 0.1017,
+  "The Dark Knight": 0.0169,
+  "Batman R.I.P.": 0.0169,
+  "Arkham Asylum (game)": 0.2203,
+  "Under the Red Hood": 0.0508,
+  "Arkham City": 0.1525,
+  "Dark Knight Rises": 0.0678,
+  "Earth One": 0.3729,
+  "Arkham Knight": 0.2542,
+  "Batman v Superman": 0.1356,
+  "Lego Batman": 0.0847,
+  "White Knight": 0.0339,
+  "Batman Ninja": 0.0508,
+  "Joker (2019)": 0.0508,
+  "The Batman": 0.0,
+  "The Bat (1926)": 0.0339,
+  "Zorro": 0.0,
+  "The Shadow": 0.0847,
+  "Superman": 0.1356,
+  "Spider-Man": 0.1864,
+  "Daredevil": 0.1864,
+  "Iron Man": 0.1864,
+  "Green Hornet": 0.1525,
+  "Puss in Boots": 0.0,
+  "Count of Monte Cristo": 0.0508,
+  "Sherlock Holmes": 0.0169,
+  "Dracula": 0.0,
+  "Scarlet Pimpernel": 0.0
+ },
+ "core_share_ordinary_films_mean": 0.028494227462539917,
+ "candidates_by_layer_quarter": {
+  "q1": 926,
+  "q2": 302,
+  "q3": 583,
+  "q4": 1468
+ },
+ "candidates_negative_pole": 1607,
+ "pools": {
+  "name_free_core": 1,
+  "canon_all32": 101,
+  "discriminators": 40,
+  "e2_band": 147038,
+  "e2_band_in_a_documented_pair": 33364,
+  "e2_band_code_dependent_not_drawn": 3291,
+  "e2_band_weak_poles_not_drawn": 14571,
+  "common_patterns": 40,
+  "common_patterns_gap_min": 0.8798141047015672,
+  "common_patterns_base_rate_median": 0.049683227742580854,
+  "units_between_3_and_30_percent": 261402,
+  "reserved_units_left_out": 908,
+  "discriminator_gap_min": 0.25,
+  "weak_poles_among_pool_units": 270,
+  "weak_poles_among_canon_units": 5
+ },
+ "units_for_the_sentence_pass": 3303,
+ "bounded_by_the_cap_by_construction": [
+  "random_sets_of_32_ordinary_films_distinctive_units"
+ ]
+}

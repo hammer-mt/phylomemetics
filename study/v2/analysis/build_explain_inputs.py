@@ -47,7 +47,7 @@ def study_sentences(tag, unit, k=8):
             col = np.load(d / f"{prefix}_orig.u8.npy", mmap_mode="r")[:, hit[0]]
             where = np.load(d / f"{prefix}_orig_where.npy", mmap_mode="r")[:, hit[0]]
             toks = json.load(open(d / f"{prefix}_tokens.json"))["orig"]
-            top = np.argsort(-np.asarray(col), kind="stable")[:k]
+            top = np.argsort(-np.asarray(col).astype(np.int32), kind="stable")[:k]          # as integers: negating uint8 wraps around
             return [(float(col[i]) / C.STEP, sents[i][0], sents[i][1], clean(toks[i][int(where[i])]) if int(where[i]) < len(toks[i]) else "", sents[i][2])
                     for i in top if col[i] > 0]
     return []

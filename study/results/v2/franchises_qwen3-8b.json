@@ -1,0 +1,333 @@
+{
+ "model": "qwen3-8b",
+ "n_background_plots": 2999,
+ "batman": {
+  "n_works": 32,
+  "at_least_72pct": 94,
+  "at_least_90pct": 44,
+  "at_least_6_films": 1998,
+  "without_cap": {
+   "at_least_72pct": 6583,
+   "at_least_90pct": 3056
+  }
+ },
+ "franchises": {
+  "Godzilla": {
+   "n_films": 28,
+   "background_plots_left_out_of_the_base_rate": 7,
+   "at_least_72pct": 65,
+   "at_least_90pct": 25,
+   "at_least_6_films": 1704,
+   "without_cap": {
+    "at_least_72pct": 5456,
+    "at_least_90pct": 2246
+   },
+   "batman_subsets_of_the_same_size": {
+    "at_least_72pct": {
+     "mean": 99.46,
+     "min": 90
+    },
+    "at_least_90pct": {
+     "mean": 38.82,
+     "min": 35
+    },
+    "at_least_6_films": {
+     "mean": 1613.22,
+     "min": 1408
+    }
+   }
+  },
+  "Frankenstein": {
+   "n_films": 24,
+   "background_plots_left_out_of_the_base_rate": 3,
+   "at_least_72pct": 46,
+   "at_least_90pct": 26,
+   "at_least_6_films": 475,
+   "without_cap": {
+    "at_least_72pct": 5304,
+    "at_least_90pct": 2333
+   },
+   "batman_subsets_of_the_same_size": {
+    "at_least_72pct": {
+     "mean": 103.96,
+     "min": 84
+    },
+    "at_least_90pct": {
+     "mean": 44.06,
+     "min": 37
+    },
+    "at_least_6_films": {
+     "mean": 1222.52,
+     "min": 948
+    }
+   }
+  },
+  "Dracula": {
+   "n_films": 23,
+   "background_plots_left_out_of_the_base_rate": 4,
+   "at_least_72pct": 36,
+   "at_least_90pct": 18,
+   "at_least_6_films": 660,
+   "without_cap": {
+    "at_least_72pct": 6106,
+    "at_least_90pct": 2594
+   },
+   "batman_subsets_of_the_same_size": {
+    "at_least_72pct": {
+     "mean": 107.34,
+     "min": 91
+    },
+    "at_least_90pct": {
+     "mean": 45.58,
+     "min": 38
+    },
+    "at_least_6_films": {
+     "mean": 1137.74,
+     "min": 947
+    }
+   }
+  },
+  "Doraemon": {
+   "n_films": 17,
+   "background_plots_left_out_of_the_base_rate": 4,
+   "at_least_72pct": 247,
+   "at_least_90pct": 128,
+   "at_least_6_films": 871,
+   "without_cap": {
+    "at_least_72pct": 5620,
+    "at_least_90pct": 2498
+   },
+   "batman_subsets_of_the_same_size": {
+    "at_least_72pct": {
+     "mean": 103.0,
+     "min": 83
+    },
+    "at_least_90pct": {
+     "mean": 39.86,
+     "min": 26
+    },
+    "at_least_6_films": {
+     "mean": 655.3,
+     "min": 497
+    }
+   }
+  },
+  "Tarzan": {
+   "n_films": 16,
+   "background_plots_left_out_of_the_base_rate": 4,
+   "at_least_72pct": 38,
+   "at_least_90pct": 21,
+   "at_least_6_films": 193,
+   "without_cap": {
+    "at_least_72pct": 4235,
+    "at_least_90pct": 1472
+   },
+   "batman_subsets_of_the_same_size": {
+    "at_least_72pct": {
+     "mean": 114.52,
+     "min": 88
+    },
+    "at_least_90pct": {
+     "mean": 41.5,
+     "min": 22
+    },
+    "at_least_6_films": {
+     "mean": 582.96,
+     "min": 432
+    }
+   }
+  },
+  "Kamen Rider": {
+   "n_films": 15,
+   "background_plots_left_out_of_the_base_rate": 0,
+   "at_least_72pct": 197,
+   "at_least_90pct": 28,
+   "at_least_6_films": 896,
+   "without_cap": {
+    "at_least_72pct": 6120,
+    "at_least_90pct": 2322
+   },
+   "batman_subsets_of_the_same_size": {
+    "at_least_72pct": {
+     "mean": 129.44,
+     "min": 85
+    },
+    "at_least_90pct": {
+     "mean": 46.9,
+     "min": 29
+    },
+    "at_least_6_films": {
+     "mean": 548.44,
+     "min": 392
+    }
+   }
+  }
+ },
+ "genre_sets": {
+  "drama": {
+   "n_plots_of_this_genre": 433,
+   "n_plots_giving_the_base_rate": 1875,
+   "n_draws": 50,
+   "at_least_6_films": {
+    "mean": 29.46,
+    "max": 53
+   },
+   "at_least_23": {
+    "mean": 0.0,
+    "max": 0
+   },
+   "at_least_29": {
+    "mean": 0.0,
+    "max": 0
+   },
+   "at_least_23_without_cap": {
+    "mean": 4286.66,
+    "max": 4971
+   },
+   "at_least_29_without_cap": {
+    "mean": 1840.24,
+    "max": 2200
+   },
+   "at_least_23_base_rate_includes_the_genre": {
+    "mean": 0.0,
+    "max": 0
+   },
+   "at_least_29_base_rate_includes_the_genre": {
+    "mean": 0.0,
+    "max": 0
+   }
+  },
+  "comedy": {
+   "n_plots_of_this_genre": 321,
+   "n_plots_giving_the_base_rate": 2018,
+   "n_draws": 50,
+   "at_least_6_films": {
+    "mean": 43.86,
+    "max": 83
+   },
+   "at_least_23": {
+    "mean": 0.0,
+    "max": 0
+   },
+   "at_least_29": {
+    "mean": 0.0,
+    "max": 0
+   },
+   "at_least_23_without_cap": {
+    "mean": 4996.76,
+    "max": 5801
+   },
+   "at_least_29_without_cap": {
+    "mean": 2184.94,
+    "max": 2607
+   },
+   "at_least_23_base_rate_includes_the_genre": {
+    "mean": 0.0,
+    "max": 0
+   },
+   "at_least_29_base_rate_includes_the_genre": {
+    "mean": 0.0,
+    "max": 0
+   }
+  },
+  "horror": {
+   "n_plots_of_this_genre": 164,
+   "n_plots_giving_the_base_rate": 2394,
+   "n_draws": 50,
+   "at_least_6_films": {
+    "mean": 138.44,
+    "max": 215
+   },
+   "at_least_23": {
+    "mean": 0.0,
+    "max": 0
+   },
+   "at_least_29": {
+    "mean": 0.0,
+    "max": 0
+   },
+   "at_least_23_without_cap": {
+    "mean": 5254.82,
+    "max": 5772
+   },
+   "at_least_29_without_cap": {
+    "mean": 2325.28,
+    "max": 2598
+   },
+   "at_least_23_base_rate_includes_the_genre": {
+    "mean": 0.0,
+    "max": 0
+   },
+   "at_least_29_base_rate_includes_the_genre": {
+    "mean": 0.0,
+    "max": 0
+   }
+  },
+  "thriller": {
+   "n_plots_of_this_genre": 114,
+   "n_plots_giving_the_base_rate": 2398,
+   "n_draws": 50,
+   "at_least_6_films": {
+    "mean": 25.26,
+    "max": 52
+   },
+   "at_least_23": {
+    "mean": 0.0,
+    "max": 0
+   },
+   "at_least_29": {
+    "mean": 0.0,
+    "max": 0
+   },
+   "at_least_23_without_cap": {
+    "mean": 5172.94,
+    "max": 6050
+   },
+   "at_least_29_without_cap": {
+    "mean": 2219.1,
+    "max": 2641
+   },
+   "at_least_23_base_rate_includes_the_genre": {
+    "mean": 0.0,
+    "max": 0
+   },
+   "at_least_29_base_rate_includes_the_genre": {
+    "mean": 0.0,
+    "max": 0
+   }
+  },
+  "action": {
+   "n_plots_of_this_genre": 99,
+   "n_plots_giving_the_base_rate": 2363,
+   "n_draws": 50,
+   "at_least_6_films": {
+    "mean": 57.98,
+    "max": 121
+   },
+   "at_least_23": {
+    "mean": 0.0,
+    "max": 0
+   },
+   "at_least_29": {
+    "mean": 0.0,
+    "max": 0
+   },
+   "at_least_23_without_cap": {
+    "mean": 4813.8,
+    "max": 5655
+   },
+   "at_least_29_without_cap": {
+    "mean": 2075.08,
+    "max": 2469
+   },
+   "at_least_23_base_rate_includes_the_genre": {
+    "mean": 0.0,
+    "max": 0
+   },
+   "at_least_29_base_rate_includes_the_genre": {
+    "mean": 0.0,
+    "max": 0
+   }
+  }
+ }
+}

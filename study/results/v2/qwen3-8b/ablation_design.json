@@ -1,0 +1,78 @@
+{
+ "model": "qwen3-8b",
+ "n_sets": 200,
+ "nearest": 20,
+ "canon_units_in_any_fold": 88,
+ "canon_units_all32": 75,
+ "fold_canon_size_median": 78.0,
+ "canon_units_name_free_works_mean": 2.0113636363636362,
+ "canon_summed_mean_peak_share": 9.998437881469727,
+ "canon_summed_mean_peak_activation": 422.7923278808594,
+ "controls": {
+  "any": {
+   "n_sets": 200,
+   "partners_name_free_works_mean": 2.006590909090909,
+   "summed_mean_peak_share": {
+    "mean": 8.488805770874023,
+    "min": 7.5618743896484375,
+    "max": 9.398905754089355,
+    "sets_at_or_above_the_canon": 0
+   },
+   "summed_mean_peak_activation": {
+    "mean": 239.02548217773438,
+    "max": 300.5133056640625,
+    "sets_at_or_above_the_canon": 0
+   },
+   "partner_gap_in_works_mean": 0.014886363636363637,
+   "partner_gap_in_works_p90": 0.0,
+   "partners_base_rate_median": 0.01633877959319773,
+   "distinct_partners_per_canon_unit_median": 195.5
+  },
+  "magnitude": {
+   "n_sets": 200,
+   "partners_name_free_works_mean": 1.983125,
+   "summed_mean_peak_share": {
+    "mean": 9.995268821716309,
+    "min": 9.657032012939453,
+    "max": 10.279687881469727,
+    "sets_at_or_above_the_canon": 89
+   },
+   "summed_mean_peak_activation": {
+    "mean": 384.803466796875,
+    "max": 416.33209228515625,
+    "sets_at_or_above_the_canon": 0
+   },
+   "partner_gap_in_works_mean": 0.22482954545454545,
+   "partner_gap_in_works_p90": 1.0,
+   "partners_base_rate_median": 0.02867622540846949,
+   "distinct_partners_per_canon_unit_median": 35.0
+  },
+  "distinctive": {
+   "n_sets": 50,
+   "partners_name_free_works_mean": 1.1868181818181818,
+   "summed_mean_peak_share": {
+    "mean": 6.19978141784668,
+    "min": 5.801249980926514,
+    "max": 6.864531517028809,
+    "sets_at_or_above_the_canon": 0
+   },
+   "summed_mean_peak_activation": {
+    "mean": 217.6566162109375,
+    "max": 252.59042358398438,
+    "sets_at_or_above_the_canon": 0
+   },
+   "partner_gap_in_works_mean": 0.8481818181818181,
+   "partner_gap_in_works_p90": 3.0,
+   "partners_base_rate_median": 0.008336112037345782,
+   "distinct_partners_per_canon_unit_median": 49.0
+  }
+ },
+ "canon_base_rate_median": 0.013837945981993997,
+ "canon_units_by_layer_quarter": {
+  "q1": 14,
+  "q2": 26,
+  "q3": 5,
+  "q4": 43
+ },
+ "secondaries": "every position, original texts, strong firings only, weak activity only: the canon and the first 20 sets of the two matched controls"
+}
