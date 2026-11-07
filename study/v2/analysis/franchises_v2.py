@@ -8,7 +8,7 @@ texts with the v2 presence rule:
                      background plots outside the franchise; beside Batman's own counts on random subsets of its works
                      of the same size
   genre sets         50 random sets of 32 background plots of one genre play the franchise, with base rates from the
-                     other background plots
+                     background plots of other genres (PLAN.md Section 18, change 7)
   Batman-like films  (exploratory) the background plots ranked by the share of Batman's name-free core they carry
 
     cd study && ../.venv/bin/python v2/analysis/franchises_v2.py [model-tag ...]
@@ -92,23 +92,29 @@ def run_model(tag, n_draws=50):
 
     # ---- genre sets: 32 plots of one genre play the franchise
     genres = [str(g).strip().lower() for g in bmeta["genres"]]
+    known = np.array([x not in ("", "unknown", "none", "nan") for x in genres])
     out["genre_sets"] = {}
     for g in GENRES:
         pool = np.flatnonzero(np.array(genres) == g)
         if len(pool) < 64:
             out["genre_sets"][g] = {"n_plots_of_this_genre": int(len(pool)), "skipped": "fewer than 64 plots"}
             continue
+        outside = np.flatnonzero(known & np.array([g not in x for x in genres]))      # plots of other genres give the base rate
+        base_out = bit_counts(bg, outside)
         draws = []
         for _ in range(n_draws):
             rows = rng.choice(pool, 32, replace=False)
             c = bit_counts(bg, rows)
-            x = canon_counts(c, 32, total - c, n_bg - 32)
-            x["at_least_23"], x["at_least_29"] = x.pop("at_least_72pct"), x.pop("at_least_90pct")
-            draws.append(x)
-        out["genre_sets"][g] = {"n_plots_of_this_genre": int(len(pool)), "n_draws": n_draws,
-                                **{k: {"mean": float(np.mean([x[k] for x in draws])), "max": int(np.max([x[k] for x in draws]))}
-                                   for k in ("at_least_6_films", "at_least_23", "at_least_29")}}
-        print(f"{tag} genre {g}: units in 6+ of 32: {out['genre_sets'][g]['at_least_6_films']['mean']:.0f}, 23+: {out['genre_sets'][g]['at_least_23']['mean']:.1f}", flush=True)
+            x = canon_counts(c, 32, base_out, len(outside))
+            frozen = canon_counts(c, 32, total - c, n_bg - 32)
+            draws.append({"at_least_6_films": x["at_least_6_films"], "at_least_23": x["at_least_72pct"], "at_least_29": x["at_least_90pct"],
+                          "at_least_23_without_cap": x["without_cap"]["at_least_72pct"], "at_least_29_without_cap": x["without_cap"]["at_least_90pct"],
+                          "at_least_23_base_rate_includes_the_genre": frozen["at_least_72pct"],
+                          "at_least_29_base_rate_includes_the_genre": frozen["at_least_90pct"]})
+        out["genre_sets"][g] = {"n_plots_of_this_genre": int(len(pool)), "n_plots_giving_the_base_rate": int(len(outside)), "n_draws": n_draws,
+                                **{k: {"mean": float(np.mean([d_[k] for d_ in draws])), "max": int(np.max([d_[k] for d_ in draws]))} for k in draws[0]}}
+        print(f"{tag} genre {g}: units in 6+ of 32: {out['genre_sets'][g]['at_least_6_films']['mean']:.0f}, 23+: {out['genre_sets'][g]['at_least_23']['mean']:.1f}, "
+              f"29+: {out['genre_sets'][g]['at_least_29']['mean']:.1f}", flush=True)
 
     # ---- Batman-like films (exploratory)
     z = np.load(C.RESULTS / f"canon_{tag}.npz")

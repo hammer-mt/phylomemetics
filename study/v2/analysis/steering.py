@@ -20,7 +20,7 @@ from scipy.stats import binomtest
 
 import common as C
 import textcheck as T
-from explain_agents import ANSWER
+from explain_agents import ANSWER, wrapped
 
 GALLERY = Path("v2/cache/gallery/data_neuron-gallery.json")        # the essay's public gallery (already-clean.goodfire.com)
 TAG = "qwen3-32b"
@@ -50,7 +50,7 @@ def write_prompts(name, items, seed):
     for k in range(0, len(items), PER_PROMPT):
         p = d / f"batch_{k // PER_PROMPT:03d}.prompt.txt"
         body = template.replace("{items}", "\n\n".join(block(items[i]) for i in order[k:k + PER_PROMPT]))
-        p.write_text(body + ANSWER.format(out=d / f"batch_{k // PER_PROMPT:03d}.out.json", what="item"))
+        p.write_text(wrapped(body + ANSWER.format(out=d / f"batch_{k // PER_PROMPT:03d}.out.json", what="item")))
         paths.append(str(p))
     json.dump(paths, open(d / "prompts.json", "w"))
     print(f"{name}: {len(items)} items in {len(paths)} prompt files -> {d}/prompts.json")

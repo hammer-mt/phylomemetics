@@ -140,6 +140,7 @@ def run_model(tag, n_pseudo=50):
     res["pools"]["weak_poles_among_canon_units"] = int((dom[g(canon)] < 0.25).sum())
     np.save(C.RESULTS / tag / "sentence_units.npy", union)
     res["units_for_the_sentence_pass"] = int(len(union))
+    res["bounded_by_the_cap_by_construction"] = ["random_sets_of_32_ordinary_films_distinctive_units"]
     C.save(res, f"canon_counts_{tag}.json")
     print(tag, "candidates", len(cand), res["tiers_units"], "| pools", res["pools"], "| sentence pass:", len(union), "units")
     return res

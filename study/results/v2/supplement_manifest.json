@@ -41,5 +41,12 @@
   "ko",
   "ja"
  ],
- "role": "scale only: these documents can set a unit's scale and appear among its top examples; they are not used for base rates"
+ "role": "scale only: these documents can set a unit's scale and appear among its top examples; they are not used for base rates",
+ "document_list": "results/v2/supplement_docs.tsv.gz (index, source set, id, title, year, length and sha1 of every document)",
+ "built_with": {
+  "python": "3.12.3",
+  "numpy": "2.5.4",
+  "pandas": "3.1.1"
+ },
+ "builder_sha256": "c2900bbe99b3b73ac72e79373581abb03c823433c722d1a8c3c602d264e3cfb2"
 }

@@ -20,7 +20,7 @@ from pathlib import Path
 import numpy as np
 
 import common as C
-from explain_agents import ANSWER
+from explain_agents import ANSWER, wrapped
 from franchises_v2 import bit_columns
 
 PER_UNIT, TRY_PLOTS, UNITS_PER_PROMPT = 6, 14, 3
@@ -128,7 +128,7 @@ def step_items(tag):
                 lines.append(f"[{it['id']}] {text[:cut]}«{text[cut:]}»")
             blocks.append("\n".join(lines))
         name = f"batch_{b // UNITS_PER_PROMPT:03d}"
-        (d / f"{name}.prompt.txt").write_text(template.replace("{items}", "\n\n==========\n\n".join(blocks)) + ANSWER.format(out=d / f"{name}.out.json", what="passage"))
+        (d / f"{name}.prompt.txt").write_text(wrapped(template.replace("{items}", "\n\n==========\n\n".join(blocks)) + ANSWER.format(out=d / f"{name}.out.json", what="passage")))
         paths.append(str(d / f"{name}.prompt.txt"))
     json.dump(paths, open(d / "prompts.json", "w"))
     print(f"{tag}: {len(items)} passages for {len(us)} units in {len(paths)} prompt files -> {d}/prompts.json")

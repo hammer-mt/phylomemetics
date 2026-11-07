@@ -13,6 +13,7 @@ the hashes of what the analyses used are kept in v2/acts/<tag>/pulled.json.
 import json
 import sys
 import time
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -51,10 +52,15 @@ def main():
     out.mkdir(parents=True, exist_ok=True)
     shas = rc.remote_sha256([f"out/{tag}/{remote}" for remote, _ in files])
     t0, total = time.time(), 0
-    for remote, local in files:
-        n = rc.get(f"out/{tag}/{remote}", out / local, chunk=32 << 20, sha=shas[f"out/{tag}/{remote}"])
-        total += n
-        print(f"  {local:36s} {'unchanged' if not n else f'{n / 1e6:8.1f} MB'}  ({total / 1e6 / max(time.time() - t0, 1):.0f} MB/s overall)", flush=True)
+
+    def fetch(pair):
+        remote, local = pair
+        return local, rc.get(f"out/{tag}/{remote}", out / local, chunk=32 << 20, sha=shas[f"out/{tag}/{remote}"])
+
+    with ThreadPoolExecutor(6) as pool:                    # several files at once: one connection is slow through the proxy
+        for local, n in pool.map(fetch, files):
+            total += n
+            print(f"  {local:36s} {'unchanged' if not n else f'{n / 1e6:8.1f} MB'}  ({total / 1e6 / max(time.time() - t0, 1):.0f} MB/s overall)", flush=True)
     manifest_path = out / "pulled.json"
     manifest = json.load(open(manifest_path)) if manifest_path.exists() else {}
     manifest.update({local: shas[f"out/{tag}/{remote}"] for remote, local in files})

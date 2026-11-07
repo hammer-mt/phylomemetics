@@ -31,7 +31,8 @@ def cell(res, rule):
                  "E1_null_p95": a["A_name_free"].get("null_label_shuffle", {}).get("p95"),
                  "E1_centroid_auc": res["E1"]["unit_centroid"]["A_name_free"]["hero_film_cousins"]["auc"],
                  "E2_evaluable": res["E2"]["evaluable"]["evaluable"], "length_controlled": True}
-        resid = res["E2"]["residual_test_beyond_words"]["decision_both_word_measures"]
+        resid = res["E2"]["residual_test_beyond_words"]["registered_both_word_measures"]      # v1's two-regressor form, the one every cell has
+        extra["residual_decision_exact_p"] = res["E2"]["residual_test_beyond_words"]["decision_words_by_frequency"]["chance"]["joint_relabelling_exact"]["p"]
     else:
         e1, per = res["E1"]["A_name_free"]["hero_film_cousins"], res["E1"]["A_name_free"]["per_batman_vs_hero"]
         extra = {"E1_null_p95": res["E1"].get("null_label_shuffle", {}).get("p95"), "length_controlled": False}
@@ -83,7 +84,8 @@ def main():
            "new_cells_residual_exact_p_below_0.05": int(sum(c["residual_exact_p"] < 0.05 for c in new.values())),
            "new_cells_E3_p_below_0.05": int(sum(c["E3_p"] < 0.05 for c in new.values())),
            "expected_by_chance_per_test": 0.05 * len(new),
-           "note": "E1 cells under v1's rule have no openings version and are not length-controlled"}
+           "note": "E1 cells under v1's rule have no openings version and are not length-controlled. The residual columns are v1's registered form "
+                   "(two word measures), which every cell has; v2's decision test adds word presence by frequency band (residual_decision_exact_p)"}
     C.save(out, "contrasts.json")
     for k, c in out["cells"].items():
         print(f"{k:42s} E1 {c['E1_auc']:.3f} | E2 {c['E2_share']:.3f} p {c['E2_exact_p']:.4f} | residual p {c['residual_exact_p']:.4f} | seq {c['sequels_top2']} | E3 {c['E3_rho']:.2f}")

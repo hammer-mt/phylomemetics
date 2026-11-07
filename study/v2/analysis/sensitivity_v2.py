@@ -29,7 +29,7 @@ THETAS, SCORES = [0.2, 0.3, 0.4, 0.5], ["top1", "top3"]
 def flat(r, **extra):
     a = r["E1"]["canon_share"]["A_name_free"]
     c = r["E1"]["unit_centroid"]["A_name_free"]
-    e2, rs = r["E2"]["summary"], r["E2"]["residual_both_word_measures"]
+    e2, rs = r["E2"]["summary"], r["E2"]["residual_decision"]
     return dict(extra, **r["setting"], n_units_present=r["n_units_present_in_some_work"],
                 E1_auc=a["hero_film_cousins"]["auc"], E1_ci95=a["hero_film_cousins"]["ci95"], E1_null_p95=a["null_label_shuffle"]["p95"],
                 E1_canon_units_median=a.get("canon_units_median"), E1_centroid_auc=c["hero_film_cousins"]["auc"],
@@ -37,10 +37,11 @@ def flat(r, **extra):
                 E2_evaluable=r["E2"]["evaluable"]["evaluable"], E2_optional_units=r["E2"]["evaluable"]["n_optional_units"],
                 E2_share=e2["share"], E2_share_ties_half=r["E2"]["share_ties_half"], E2_exact_p=e2["exact_p"], E2_within_era_p=e2["within_era_p"],
                 sequels_top2=r["E2"]["sequels_top2"], residual_share=rs["share"], residual_exact_p=rs["exact_p"], residual_within_era_p=rs["within_era_p"],
-                residual6_exact_p=r["E2"]["residual_six_word_measures"]["exact_p"],
+                residual_registered_exact_p=r["E2"]["residual_registered_two_word_measures"]["exact_p"],
+                residual_every_measure_exact_p=r["E2"]["residual_every_word_and_code_measure"]["exact_p"],
                 residual_cap_matched_words_exact_p=r["E2"].get("residual_cap_matched_words", {}).get("exact_p"),
                 word_presence_same_cap_exact_p=r["E2"].get("word_presence_under_the_same_cap", {}).get("exact_p"),
-                E3_rho=r["E3"]["rho"], E3_p=r["E3"]["p_one_sided"], E3_units=r["E3"]["n_units"])
+                E3_rho=r["E3"]["rho"], E3_p=r["E3"]["p_one_sided"], E3_units=r["E3"]["n_units"], E3_evaluable=r["E3"]["evaluable"])
 
 
 def run_model(tag):
@@ -50,7 +51,8 @@ def run_model(tag):
         for sc in SCORES:
             st = C.Setting(tag, th, sc, icon=False)
             for cap in C.CAPS:
-                grid.append(flat(E.run_setting(st, None, cap, cap, full=False), cell="grid", cap="none" if cap is None else cap))
+                grid.append(flat(E.run_setting(st, None, cap, cap, full=False, centroid="all" if cap is None else "capped"), cell="grid",
+                                 cap="none" if cap is None else cap))
             del st
     for name, kw in (("reference-only scale", {"which": "ref"}), ("fifth-example scale", {"which": "ref5"}), ("openings", {"variant": "cut"}),
                      ("codes left in", {"variant": "codes"}), ("token after each code masked too", {"variant": "after"}),
@@ -64,29 +66,33 @@ def run_model(tag):
     auc = np.array([r["E1_auc"] for r in grid])
     dec = [r for r in grid if r["cap"] == "none"]
     capped = [r for r in grid if r["cap"] != "none"]
+    ok = lambda r, key: bool(r["E2_evaluable"] and r[key] is not None and r[key] < 0.05)      # noqa: E731  a setting that is not evaluable does not pass
+    e3 = [r for r in grid if r["E3_evaluable"]]
     out = {"model": tag,
            "grid": "threshold (0.2, 0.3, 0.4, 0.5) x score (top1 = strongest sentence, top3 = mean of three) x cap (none, 0.30, 0.20, 0.10, 0.05, 0.03, 0.01), "
                    "the cap applied to E1, E2 and E3 alike",
            "primary_cells": {"E1": next(r for r in prim if r["cap"] == C.CAP), "E2_residual_E3": next(r for r in prim if r["cap"] == "none")},
-           "n_settings": len(grid),
-           "n_decision_settings": len(dec),
-           "residual_settings_exact_p_below_0.05": int(sum(r["residual_exact_p"] < 0.05 for r in dec)),
-           "residual_passes_in_at_least_half": bool(sum(r["residual_exact_p"] < 0.05 for r in dec) >= len(dec) / 2),
-           "residual_within_era_p_below_0.05": int(sum(r["residual_within_era_p"] < 0.05 for r in dec)),
-           "residual_capped_settings_exact_p_below_0.05": int(sum(r["residual_exact_p"] < 0.05 for r in capped)),
-           "residual_capped_settings_with_cap_matched_words_below_0.05": int(sum(r["residual_cap_matched_words_exact_p"] < 0.05 for r in capped)),
-           "n_capped_settings": len(capped),
-           "E1_note": "whole-work AUCs; the label-shuffle null does not control length (see the 'openings' version and length alone)",
-           "E2_settings_exact_p_below_0.05": int(sum(r["E2_exact_p"] < 0.05 for r in grid)),
+           "n_settings": len(grid), "n_decision_settings": len(dec), "n_decision_settings_evaluable": int(sum(r["E2_evaluable"] for r in dec)),
+           "residual_settings_exact_p_below_0.05": int(sum(ok(r, "residual_exact_p") for r in dec)),
+           "residual_passes_in_at_least_half": bool(sum(ok(r, "residual_exact_p") for r in dec) >= len(dec) / 2),
+           "residual_within_era_p_below_0.05": int(sum(ok(r, "residual_within_era_p") for r in dec)),
+           "residual_registered_form_exact_p_below_0.05": int(sum(ok(r, "residual_registered_exact_p") for r in dec)),
+           "n_capped_settings": len(capped), "n_capped_settings_evaluable": int(sum(r["E2_evaluable"] for r in capped)),
+           "residual_capped_settings_exact_p_below_0.05": int(sum(ok(r, "residual_exact_p") for r in capped)),
+           "residual_capped_settings_with_cap_matched_words_below_0.05": int(sum(ok(r, "residual_cap_matched_words_exact_p") for r in capped)),
+           "E2_settings_exact_p_below_0.05": int(sum(ok(r, "E2_exact_p") for r in grid)), "E2_uncapped_settings_exact_p_below_0.05": int(sum(ok(r, "E2_exact_p") for r in dec)),
            "E2_settings_evaluable": int(sum(r["E2_evaluable"] for r in grid)),
+           "E1_note": "whole-work AUCs; the label-shuffle null does not control length (see the 'openings' version and length alone)",
            "E1_auc_range": [float(auc.min()), float(auc.max())], "E1_settings_auc_at_least_0.80": int((auc >= 0.8).sum()),
            "E1_settings_above_null_p95": int(sum(r["E1_auc"] > r["E1_null_p95"] for r in grid)),
-           "E3_rho_range": [float(min(r["E3_rho"] for r in grid)), float(max(r["E3_rho"] for r in grid))],
-           "E3_settings_p_below_0.05": int(sum(r["E3_p"] < 0.05 for r in grid)),
+           "E3_settings_evaluable": len(e3),
+           "E3_rho_range": [float(min(r["E3_rho"] for r in e3)), float(max(r["E3_rho"] for r in e3))] if e3 else None,
+           "E3_settings_p_below_0.05": int(sum(r["E3_p"] < 0.05 for r in e3)),
+           "other_versions_note": "the 'echo regime left in' row keeps the placeholder codes too, so it is to be compared with the 'codes left in' row, not with the primary",
            "rows": grid, "other_versions_at_the_primary_setting": extra, "seconds": round(time.time() - t0)}
     C.save(out, f"sensitivity_{tag}.json")
     print(f"{tag}: residual p < 0.05 in {out['residual_settings_exact_p_below_0.05']} of {len(dec)} uncapped settings; E2 in "
-          f"{out['E2_settings_exact_p_below_0.05']}; E1 AUC {out['E1_auc_range']}; E3 rho {out['E3_rho_range']}  ({time.time() - t0:.0f}s)", flush=True)
+          f"{out['E2_uncapped_settings_exact_p_below_0.05']} of them; E1 AUC {out['E1_auc_range']}; E3 rho {out['E3_rho_range']}  ({time.time() - t0:.0f}s)", flush=True)
 
 
 if __name__ == "__main__":

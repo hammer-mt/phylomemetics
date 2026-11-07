@@ -17,6 +17,7 @@ Prompts and answers live in v2/cache/explain/<tag>/<role>/ (not committed); the 
 """
 import json
 import sys
+import textwrap
 from pathlib import Path
 
 import numpy as np
@@ -25,7 +26,7 @@ import common as C
 import textcheck as T
 
 MODEL_NAMES = {"qwen3-32b": "Qwen3-32B", "qwen3-8b": "Qwen3-8B", "llama3.1-8b": "Llama 3.1 8B", "llama3.3-70b": "Llama 3.3 70B"}
-BATCH = {"explainer": 4, "tester": 6, "keyword_analyst": 20, "kind_judge": 30}
+BATCH = {"explainer": 2, "tester": 6, "keyword_analyst": 20, "kind_judge": 30}
 KINDS = ["character or name", "place", "object", "word or token", "story pattern", "genre or setting", "style or format", "grammar", "other"]
 ANSWER = ("\n\n---\nHow to answer. Work from this file alone: do not open, search or run anything else. Write your answer as one JSON file at\n{out}\n"
           "It must be a JSON list with one object per {what}, with exactly the fields listed above under \"Return\". "
@@ -36,6 +37,12 @@ def root(tag, role):
     d = Path("v2/cache/explain") / tag / role
     d.mkdir(parents=True, exist_ok=True)
     return d.resolve()
+
+
+def wrapped(text, width=170):
+    """Long lines broken at spaces, so that a reader that takes a file line by line gets all of it."""
+    return "\n".join(textwrap.fill(line, width, break_long_words=False, break_on_hyphens=False, replace_whitespace=False) if len(line) > width else line
+                     for line in text.split("\n"))
 
 
 def write_batches(tag, role, items, fill, what, round_=1):
@@ -49,7 +56,7 @@ def write_batches(tag, role, items, fill, what, round_=1):
     for k in range(0, len(items), n):
         name = f"r{round_}_batch_{k // n:03d}"
         body = fill(template, [items[i] for i in order[k:k + n]])
-        (d / f"{name}.prompt.txt").write_text(body + ANSWER.format(out=d / f"{name}.out.json", what=what))
+        (d / f"{name}.prompt.txt").write_text(wrapped(body + ANSWER.format(out=d / f"{name}.out.json", what=what)))
         paths.append(str(d / f"{name}.prompt.txt"))
     json.dump(paths, open(d / f"r{round_}_prompts.json", "w"))
     print(f"{tag} {role}: {len(items)} items in {len(paths)} prompt files -> {d}/r{round_}_prompts.json")

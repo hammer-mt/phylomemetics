@@ -1,0 +1,4335 @@
+{
+ "rule": "v2: a unit is present in a work when its strongest sentence (main sign regime; placeholder codes masked in the name-free texts) reaches 30% of the unit's strongest activation over the reference corpus, the supplement and the study's original texts. E1 uses units present in at most 3% of 2,999 background film plots; E2 and E3 use every unit",
+ "words": {
+  "n_words": 3691,
+  "n_words_in_at_most_3pct_of_background_plots": 2425,
+  "commonest_words_dropped_by_the_cap": [
+   "tells",
+   "later",
+   "time",
+   "finds",
+   "takes",
+   "home",
+   "day",
+   "new",
+   "goes",
+   "away",
+   "father",
+   "man",
+   "tries",
+   "house",
+   "help",
+   "life",
+   "night",
+   "gets",
+   "love",
+   "friend"
+  ],
+  "E1": {
+   "tfidf_centroid": {
+    "A_name_free": {
+     "hero_film_cousins": {
+      "auc": 0.80078125,
+      "ci95": [
+       0.63662109375,
+       0.93359375
+      ]
+     },
+     "per_batman_vs_hero": {
+      "1943 serial": 0.125,
+      "Batman '66": 0.125,
+      "Dark Knight Returns": 1.0,
+      "Year One": 1.0,
+      "The Killing Joke": 0.375,
+      "A Death in the Family": 0.875,
+      "Gotham by Gaslight": 0.5,
+      "Arkham Asylum (comic)": 0.625,
+      "Batman '89": 1.0,
+      "Batman Returns": 0.75,
+      "Mask of the Phantasm": 1.0,
+      "Knightfall": 0.875,
+      "Batman Forever": 0.875,
+      "The Long Halloween": 1.0,
+      "Batman & Robin": 1.0,
+      "Return of the Joker": 0.875,
+      "Hush": 1.0,
+      "Batman Begins": 1.0,
+      "The Dark Knight": 1.0,
+      "Batman R.I.P.": 0.5,
+      "Arkham Asylum (game)": 1.0,
+      "Under the Red Hood": 1.0,
+      "Arkham City": 1.0,
+      "Dark Knight Rises": 1.0,
+      "Earth One": 1.0,
+      "Arkham Knight": 1.0,
+      "Batman v Superman": 0.625,
+      "Lego Batman": 0.875,
+      "White Knight": 0.625,
+      "Batman Ninja": 0.5,
+      "Joker (2019)": 0.5,
+      "The Batman": 1.0
+     },
+     "per_cousin_beaten_by": {
+      "The Bat (1926)": 0.062,
+      "Zorro": 0.0,
+      "The Shadow": 0.344,
+      "Superman": 0.062,
+      "Spider-Man": 0.312,
+      "Daredevil": 0.5,
+      "Iron Man": 0.094,
+      "Green Hornet": 0.219
+     },
+     "held_out_score": {
+      "1943 serial": 0.08732,
+      "Batman '66": 0.09414,
+      "Dark Knight Returns": 0.15083,
+      "Year One": 0.15935,
+      "The Killing Joke": 0.11168,
+      "A Death in the Family": 0.13169,
+      "Gotham by Gaslight": 0.11384,
+      "Arkham Asylum (comic)": 0.1203,
+      "Batman '89": 0.15337,
+      "Batman Returns": 0.12818,
+      "Mask of the Phantasm": 0.15679,
+      "Knightfall": 0.13515,
+      "Batman Forever": 0.13795,
+      "The Long Halloween": 0.16208,
+      "Batman & Robin": 0.14544,
+      "Return of the Joker": 0.13662,
+      "Hush": 0.16118,
+      "Batman Begins": 0.17332,
+      "The Dark Knight": 0.1577,
+      "Batman R.I.P.": 0.11991,
+      "Arkham Asylum (game)": 0.17001,
+      "Under the Red Hood": 0.16562,
+      "Arkham City": 0.14868,
+      "Dark Knight Rises": 0.16405,
+      "Earth One": 0.1886,
+      "Arkham Knight": 0.16022,
+      "Batman v Superman": 0.11896,
+      "Lego Batman": 0.1418,
+      "White Knight": 0.11961,
+      "Batman Ninja": 0.11456,
+      "Joker (2019)": 0.11546,
+      "The Batman": 0.14958
+     },
+     "ordinary_films": {
+      "auc": 0.9682971014492754,
+      "ci95": [
+       0.9288836050724638,
+       0.9959239130434783
+      ]
+     },
+     "literary_cousins": {
+      "auc": 0.9625,
+      "ci95": [
+       0.8996875000000001,
+       1.0
+      ]
+     },
+     "null_label_shuffle": {
+      "n": 1000,
+      "mean": 0.49821875,
+      "p95": 0.6875,
+      "p_value": 0.005994005994005994
+     }
+    },
+    "B_canon_from_name_free": {
+     "hero_film_cousins": {
+      "auc": 0.77734375,
+      "ci95": [
+       0.6171875,
+       0.91015625
+      ]
+     },
+     "per_batman_vs_hero": {
+      "1943 serial": 0.125,
+      "Batman '66": 0.125,
+      "Dark Knight Returns": 1.0,
+      "Year One": 1.0,
+      "The Killing Joke": 0.375,
+      "A Death in the Family": 0.75,
+      "Gotham by Gaslight": 0.375,
+      "Arkham Asylum (comic)": 0.375,
+      "Batman '89": 1.0,
+      "Batman Returns": 0.625,
+      "Mask of the Phantasm": 1.0,
+      "Knightfall": 0.875,
+      "Batman Forever": 1.0,
+      "The Long Halloween": 1.0,
+      "Batman & Robin": 1.0,
+      "Return of the Joker": 0.875,
+      "Hush": 1.0,
+      "Batman Begins": 1.0,
+      "The Dark Knight": 1.0,
+      "Batman R.I.P.": 0.375,
+      "Arkham Asylum (game)": 1.0,
+      "Under the Red Hood": 1.0,
+      "Arkham City": 1.0,
+      "Dark Knight Rises": 1.0,
+      "Earth One": 1.0,
+      "Arkham Knight": 1.0,
+      "Batman v Superman": 0.625,
+      "Lego Batman": 0.875,
+      "White Knight": 0.625,
+      "Batman Ninja": 0.5,
+      "Joker (2019)": 0.375,
+      "The Batman": 1.0
+     },
+     "per_cousin_beaten_by": {
+      "The Bat (1926)": 0.062,
+      "Zorro": 0.0,
+      "The Shadow": 0.344,
+      "Superman": 0.062,
+      "Spider-Man": 0.375,
+      "Daredevil": 0.469,
+      "Iron Man": 0.219,
+      "Green Hornet": 0.25
+     },
+     "held_out_score": {
+      "1943 serial": 0.12968,
+      "Batman '66": 0.1324,
+      "Dark Knight Returns": 0.22331,
+      "Year One": 0.22574,
+      "The Killing Joke": 0.15704,
+      "A Death in the Family": 0.19176,
+      "Gotham by Gaslight": 0.1618,
+      "Arkham Asylum (comic)": 0.16184,
+      "Batman '89": 0.22672,
+      "Batman Returns": 0.18668,
+      "Mask of the Phantasm": 0.23481,
+      "Knightfall": 0.2065,
+      "Batman Forever": 0.21201,
+      "The Long Halloween": 0.23615,
+      "Batman & Robin": 0.21763,
+      "Return of the Joker": 0.20384,
+      "Hush": 0.24202,
+      "Batman Begins": 0.25061,
+      "The Dark Knight": 0.22685,
+      "Batman R.I.P.": 0.17015,
+      "Arkham Asylum (game)": 0.24432,
+      "Under the Red Hood": 0.25609,
+      "Arkham City": 0.21792,
+      "Dark Knight Rises": 0.23913,
+      "Earth One": 0.26867,
+      "Arkham Knight": 0.23366,
+      "Batman v Superman": 0.18125,
+      "Lego Batman": 0.21001,
+      "White Knight": 0.17551,
+      "Batman Ninja": 0.17276,
+      "Joker (2019)": 0.15342,
+      "The Batman": 0.22115
+     },
+     "ordinary_films": {
+      "auc": 0.9565217391304348,
+      "ci95": [
+       0.9071557971014492,
+       0.9927536231884058
+      ]
+     },
+     "literary_cousins": {
+      "auc": 0.9625,
+      "ci95": [
+       0.875,
+       1.0
+      ]
+     }
+    },
+    "ceiling_original": {
+     "hero_film_cousins": {
+      "auc": 1.0,
+      "ci95": [
+       1.0,
+       1.0
+      ]
+     },
+     "per_batman_vs_hero": {
+      "1943 serial": 1.0,
+      "Batman '66": 1.0,
+      "Dark Knight Returns": 1.0,
+      "Year One": 1.0,
+      "The Killing Joke": 1.0,
+      "A Death in the Family": 1.0,
+      "Gotham by Gaslight": 1.0,
+      "Arkham Asylum (comic)": 1.0,
+      "Batman '89": 1.0,
+      "Batman Returns": 1.0,
+      "Mask of the Phantasm": 1.0,
+      "Knightfall": 1.0,
+      "Batman Forever": 1.0,
+      "The Long Halloween": 1.0,
+      "Batman & Robin": 1.0,
+      "Return of the Joker": 1.0,
+      "Hush": 1.0,
+      "Batman Begins": 1.0,
+      "The Dark Knight": 1.0,
+      "Batman R.I.P.": 1.0,
+      "Arkham Asylum (game)": 1.0,
+      "Under the Red Hood": 1.0,
+      "Arkham City": 1.0,
+      "Dark Knight Rises": 1.0,
+      "Earth One": 1.0,
+      "Arkham Knight": 1.0,
+      "Batman v Superman": 1.0,
+      "Lego Batman": 1.0,
+      "White Knight": 1.0,
+      "Batman Ninja": 1.0,
+      "Joker (2019)": 1.0,
+      "The Batman": 1.0
+     },
+     "per_cousin_beaten_by": {
+      "The Bat (1926)": 0.0,
+      "Zorro": 0.0,
+      "The Shadow": 0.0,
+      "Superman": 0.0,
+      "Spider-Man": 0.0,
+      "Daredevil": 0.0,
+      "Iron Man": 0.0,
+      "Green Hornet": 0.0
+     },
+     "held_out_score": {
+      "1943 serial": 0.23292,
+      "Batman '66": 0.24163,
+      "Dark Knight Returns": 0.38701,
+      "Year One": 0.33048,
+      "The Killing Joke": 0.24093,
+      "A Death in the Family": 0.33545,
+      "Gotham by Gaslight": 0.32995,
+      "Arkham Asylum (comic)": 0.24302,
+      "Batman '89": 0.3315,
+      "Batman Returns": 0.26121,
+      "Mask of the Phantasm": 0.30196,
+      "Knightfall": 0.32005,
+      "Batman Forever": 0.33236,
+      "The Long Halloween": 0.3623,
+      "Batman & Robin": 0.3455,
+      "Return of the Joker": 0.33957,
+      "Hush": 0.40639,
+      "Batman Begins": 0.35862,
+      "The Dark Knight": 0.361,
+      "Batman R.I.P.": 0.3037,
+      "Arkham Asylum (game)": 0.35802,
+      "Under the Red Hood": 0.34148,
+      "Arkham City": 0.35872,
+      "Dark Knight Rises": 0.40453,
+      "Earth One": 0.37779,
+      "Arkham Knight": 0.3766,
+      "Batman v Superman": 0.22342,
+      "Lego Batman": 0.36679,
+      "White Knight": 0.30125,
+      "Batman Ninja": 0.31799,
+      "Joker (2019)": 0.18136,
+      "The Batman": 0.34571
+     },
+     "ordinary_films": {
+      "auc": 1.0,
+      "ci95": [
+       1.0,
+       1.0
+      ]
+     },
+     "literary_cousins": {
+      "auc": 1.0,
+      "ci95": [
+       1.0,
+       1.0
+      ]
+     }
+    },
+    "A_iconography_dropped": {
+     "hero_film_cousins": {
+      "auc": 0.76171875,
+      "ci95": [
+       0.58984375,
+       0.90625
+      ]
+     },
+     "per_batman_vs_hero": {
+      "1943 serial": 0.125,
+      "Batman '66": 0.125,
+      "Dark Knight Returns": 1.0,
+      "Year One": 1.0,
+      "The Killing Joke": 0.375,
+      "A Death in the Family": 0.875,
+      "Gotham by Gaslight": 0.5,
+      "Arkham Asylum (comic)": 0.125,
+      "Batman '89": 1.0,
+      "Batman Returns": 0.625,
+      "Mask of the Phantasm": 1.0,
+      "Knightfall": 0.875,
+      "Batman Forever": 0.875,
+      "The Long Halloween": 1.0,
+      "Batman & Robin": 1.0,
+      "Return of the Joker": 0.75,
+      "Hush": 1.0,
+      "Batman Begins": 1.0,
+      "The Dark Knight": 1.0,
+      "Batman R.I.P.": 0.5,
+      "Arkham Asylum (game)": 0.875,
+      "Under the Red Hood": 1.0,
+      "Arkham City": 0.875,
+      "Dark Knight Rises": 1.0,
+      "Earth One": 1.0,
+      "Arkham Knight": 1.0,
+      "Batman v Superman": 0.5,
+      "Lego Batman": 0.875,
+      "White Knight": 0.625,
+      "Batman Ninja": 0.5,
+      "Joker (2019)": 0.375,
+      "The Batman": 1.0
+     },
+     "per_cousin_beaten_by": {
+      "The Bat (1926)": 0.094,
+      "Zorro": 0.0,
+      "The Shadow": 0.375,
+      "Superman": 0.094,
+      "Spider-Man": 0.344,
+      "Daredevil": 0.562,
+      "Iron Man": 0.156,
+      "Green Hornet": 0.281
+     },
+     "held_out_score": {
+      "1943 serial": 0.08732,
+      "Batman '66": 0.08906,
+      "Dark Knight Returns": 0.15083,
+      "Year One": 0.14944,
+      "The Killing Joke": 0.1034,
+      "A Death in the Family": 0.13169,
+      "Gotham by Gaslight": 0.10818,
+      "Arkham Asylum (comic)": 0.0756,
+      "Batman '89": 0.14867,
+      "Batman Returns": 0.12322,
+      "Mask of the Phantasm": 0.15679,
+      "Knightfall": 0.13515,
+      "Batman Forever": 0.1343,
+      "The Long Halloween": 0.16208,
+      "Batman & Robin": 0.14544,
+      "Return of the Joker": 0.13125,
+      "Hush": 0.16118,
+      "Batman Begins": 0.16931,
+      "The Dark Knight": 0.1577,
+      "Batman R.I.P.": 0.11229,
+      "Arkham Asylum (game)": 0.13946,
+      "Under the Red Hood": 0.16562,
+      "Arkham City": 0.13764,
+      "Dark Knight Rises": 0.16216,
+      "Earth One": 0.17774,
+      "Arkham Knight": 0.16022,
+      "Batman v Superman": 0.11726,
+      "Lego Batman": 0.1418,
+      "White Knight": 0.11961,
+      "Batman Ninja": 0.11052,
+      "Joker (2019)": 0.10032,
+      "The Batman": 0.14799
+     },
+     "ordinary_films": {
+      "auc": 0.9311594202898551,
+      "ci95": [
+       0.8654778079710145,
+       0.9832540760869564
+      ]
+     },
+     "literary_cousins": {
+      "auc": 0.93125,
+      "ci95": [
+       0.83125,
+       1.0
+      ]
+     }
+    },
+    "openings": {
+     "hero_film_cousins": {
+      "auc": 0.73046875,
+      "ci95": [
+       0.5234375,
+       0.90625
+      ]
+     },
+     "per_batman_vs_hero": {
+      "1943 serial": 0.375,
+      "Batman '66": 0.125,
+      "Dark Knight Returns": 0.875,
+      "Year One": 0.875,
+      "The Killing Joke": 0.625,
+      "A Death in the Family": 0.625,
+      "Gotham by Gaslight": 0.625,
+      "Arkham Asylum (comic)": 0.75,
+      "Batman '89": 0.875,
+      "Batman Returns": 0.75,
+      "Mask of the Phantasm": 1.0,
+      "Knightfall": 0.25,
+      "Batman Forever": 0.875,
+      "The Long Halloween": 0.875,
+      "Batman & Robin": 0.625,
+      "Return of the Joker": 0.875,
+      "Hush": 0.875,
+      "Batman Begins": 1.0,
+      "The Dark Knight": 1.0,
+      "Batman R.I.P.": 0.25,
+      "Arkham Asylum (game)": 1.0,
+      "Under the Red Hood": 0.875,
+      "Arkham City": 0.875,
+      "Dark Knight Rises": 1.0,
+      "Earth One": 1.0,
+      "Arkham Knight": 0.875,
+      "Batman v Superman": 0.625,
+      "Lego Batman": 0.875,
+      "White Knight": 0.5,
+      "Batman Ninja": 0.25,
+      "Joker (2019)": 0.375,
+      "The Batman": 1.0
+     },
+     "per_cousin_beaten_by": {
+      "The Bat (1926)": 0.031,
+      "Zorro": 0.0,
+      "The Shadow": 0.781,
+      "Superman": 0.219,
+      "Spider-Man": 0.125,
+      "Daredevil": 0.438,
+      "Iron Man": 0.188,
+      "Green Hornet": 0.375
+     },
+     "held_out_score": {
+      "1943 serial": 0.07488,
+      "Batman '66": 0.05461,
+      "Dark Knight Returns": 0.09813,
+      "Year One": 0.10754,
+      "The Killing Joke": 0.0806,
+      "A Death in the Family": 0.08045,
+      "Gotham by Gaslight": 0.08301,
+      "Arkham Asylum (comic)": 0.09336,
+      "Batman '89": 0.10596,
+      "Batman Returns": 0.08974,
+      "Mask of the Phantasm": 0.1197,
+      "Knightfall": 0.06797,
+      "Batman Forever": 0.10627,
+      "The Long Halloween": 0.10603,
+      "Batman & Robin": 0.08025,
+      "Return of the Joker": 0.09499,
+      "Hush": 0.09467,
+      "Batman Begins": 0.12452,
+      "The Dark Knight": 0.1122,
+      "Batman R.I.P.": 0.06941,
+      "Arkham Asylum (game)": 0.11662,
+      "Under the Red Hood": 0.0991,
+      "Arkham City": 0.10102,
+      "Dark Knight Rises": 0.12597,
+      "Earth One": 0.11994,
+      "Arkham Knight": 0.10489,
+      "Batman v Superman": 0.07847,
+      "Lego Batman": 0.09798,
+      "White Knight": 0.07818,
+      "Batman Ninja": 0.07409,
+      "Joker (2019)": 0.07665,
+      "The Batman": 0.10974
+     },
+     "ordinary_films": {
+      "auc": 0.9664855072463768,
+      "ci95": [
+       0.9193840579710145,
+       0.9954823369565217
+      ]
+     },
+     "literary_cousins": {
+      "auc": 0.975,
+      "ci95": [
+       0.9125,
+       1.0
+      ]
+     },
+     "null_label_shuffle": {
+      "n": 1000,
+      "mean": 0.50432421875,
+      "p95": 0.6916015624999998,
+      "p_value": 0.02197802197802198
+     }
+    },
+    "verdict": "not met",
+    "clauses": {
+     "auc_at_least_0.80": true,
+     "ci_lower_at_least_0.65": false,
+     "above_null_p95": true,
+     "within_0.05_without_iconography": true,
+     "openings_auc_at_least_0.70": true,
+     "openings_above_own_null_p95": true
+    },
+    "all_six_clauses_evaluated": true,
+    "falsified_by_v1_rule": false
+   },
+   "tfidf_centroid_background_weights": {
+    "A_name_free": {
+     "hero_film_cousins": {
+      "auc": 0.83203125,
+      "ci95": [
+       0.68359375,
+       0.9453125
+      ]
+     },
+     "per_batman_vs_hero": {
+      "1943 serial": 0.125,
+      "Batman '66": 0.125,
+      "Dark Knight Returns": 1.0,
+      "Year One": 1.0,
+      "The Killing Joke": 0.5,
+      "A Death in the Family": 0.75,
+      "Gotham by Gaslight": 0.5,
+      "Arkham Asylum (comic)": 0.75,
+      "Batman '89": 1.0,
+      "Batman Returns": 0.875,
+      "Mask of the Phantasm": 1.0,
+      "Knightfall": 0.875,
+      "Batman Forever": 1.0,
+      "The Long Halloween": 1.0,
+      "Batman & Robin": 1.0,
+      "Return of the Joker": 1.0,
+      "Hush": 1.0,
+      "Batman Begins": 1.0,
+      "The Dark Knight": 1.0,
+      "Batman R.I.P.": 0.5,
+      "Arkham Asylum (game)": 1.0,
+      "Under the Red Hood": 1.0,
+      "Arkham City": 1.0,
+      "Dark Knight Rises": 1.0,
+      "Earth One": 1.0,
+      "Arkham Knight": 1.0,
+      "Batman v Superman": 0.5,
+      "Lego Batman": 1.0,
+      "White Knight": 0.75,
+      "Batman Ninja": 0.5,
+      "Joker (2019)": 0.875,
+      "The Batman": 1.0
+     },
+     "per_cousin_beaten_by": {
+      "The Bat (1926)": 0.062,
+      "Zorro": 0.0,
+      "The Shadow": 0.406,
+      "Superman": 0.062,
+      "Spider-Man": 0.219,
+      "Daredevil": 0.312,
+      "Iron Man": 0.062,
+      "Green Hornet": 0.219
+     },
+     "held_out_score": {
+      "1943 serial": 0.08076,
+      "Batman '66": 0.09818,
+      "Dark Knight Returns": 0.15079,
+      "Year One": 0.16172,
+      "The Killing Joke": 0.10798,
+      "A Death in the Family": 0.12412,
+      "Gotham by Gaslight": 0.1167,
+      "Arkham Asylum (comic)": 0.12568,
+      "Batman '89": 0.15314,
+      "Batman Returns": 0.12831,
+      "Mask of the Phantasm": 0.15407,
+      "Knightfall": 0.12847,
+      "Batman Forever": 0.13558,
+      "The Long Halloween": 0.14953,
+      "Batman & Robin": 0.14625,
+      "Return of the Joker": 0.13802,
+      "Hush": 0.149,
+      "Batman Begins": 0.1773,
+      "The Dark Knight": 0.16396,
+      "Batman R.I.P.": 0.11299,
+      "Arkham Asylum (game)": 0.17893,
+      "Under the Red Hood": 0.16159,
+      "Arkham City": 0.15396,
+      "Dark Knight Rises": 0.15857,
+      "Earth One": 0.19063,
+      "Arkham Knight": 0.16933,
+      "Batman v Superman": 0.11532,
+      "Lego Batman": 0.13679,
+      "White Knight": 0.12258,
+      "Batman Ninja": 0.11726,
+      "Joker (2019)": 0.1306,
+      "The Batman": 0.14598
+     },
+     "ordinary_films": {
+      "auc": 0.9836956521739131,
+      "ci95": [
+       0.9528872282608696,
+       1.0
+      ]
+     },
+     "literary_cousins": {
+      "auc": 0.96875,
+      "ci95": [
+       0.9,
+       1.0
+      ]
+     },
+     "null_label_shuffle": {
+      "n": 1000,
+      "mean": 0.49900390625,
+      "p95": 0.6875,
+      "p_value": 0.000999000999000999
+     }
+    },
+    "B_canon_from_name_free": {
+     "hero_film_cousins": {
+      "auc": 0.77734375,
+      "ci95": [
+       0.61708984375,
+       0.90234375
+      ]
+     },
+     "per_batman_vs_hero": {
+      "1943 serial": 0.125,
+      "Batman '66": 0.25,
+      "Dark Knight Returns": 1.0,
+      "Year One": 1.0,
+      "The Killing Joke": 0.25,
+      "A Death in the Family": 0.625,
+      "Gotham by Gaslight": 0.375,
+      "Arkham Asylum (comic)": 0.375,
+      "Batman '89": 1.0,
+      "Batman Returns": 0.625,
+      "Mask of the Phantasm": 1.0,
+      "Knightfall": 1.0,
+      "Batman Forever": 1.0,
+      "The Long Halloween": 1.0,
+      "Batman & Robin": 1.0,
+      "Return of the Joker": 1.0,
+      "Hush": 1.0,
+      "Batman Begins": 1.0,
+      "The Dark Knight": 1.0,
+      "Batman R.I.P.": 0.375,
+      "Arkham Asylum (game)": 1.0,
+      "Under the Red Hood": 1.0,
+      "Arkham City": 1.0,
+      "Dark Knight Rises": 1.0,
+      "Earth One": 1.0,
+      "Arkham Knight": 1.0,
+      "Batman v Superman": 0.5,
+      "Lego Batman": 1.0,
+      "White Knight": 0.625,
+      "Batman Ninja": 0.5,
+      "Joker (2019)": 0.25,
+      "The Batman": 1.0
+     },
+     "per_cousin_beaten_by": {
+      "The Bat (1926)": 0.031,
+      "Zorro": 0.0,
+      "The Shadow": 0.375,
+      "Superman": 0.125,
+      "Spider-Man": 0.375,
+      "Daredevil": 0.375,
+      "Iron Man": 0.219,
+      "Green Hornet": 0.281
+     },
+     "held_out_score": {
+      "1943 serial": 0.1259,
+      "Batman '66": 0.14059,
+      "Dark Knight Returns": 0.23064,
+      "Year One": 0.23188,
+      "The Killing Joke": 0.15528,
+      "A Death in the Family": 0.18791,
+      "Gotham by Gaslight": 0.16437,
+      "Arkham Asylum (comic)": 0.15964,
+      "Batman '89": 0.23369,
+      "Batman Returns": 0.19145,
+      "Mask of the Phantasm": 0.23947,
+      "Knightfall": 0.20581,
+      "Batman Forever": 0.22012,
+      "The Long Halloween": 0.23076,
+      "Batman & Robin": 0.22658,
+      "Return of the Joker": 0.21104,
+      "Hush": 0.23581,
+      "Batman Begins": 0.26356,
+      "The Dark Knight": 0.2414,
+      "Batman R.I.P.": 0.15886,
+      "Arkham Asylum (game)": 0.25451,
+      "Under the Red Hood": 0.26026,
+      "Arkham City": 0.22907,
+      "Dark Knight Rises": 0.23794,
+      "Earth One": 0.27692,
+      "Arkham Knight": 0.25663,
+      "Batman v Superman": 0.18324,
+      "Lego Batman": 0.21097,
+      "White Knight": 0.18458,
+      "Batman Ninja": 0.18194,
+      "Joker (2019)": 0.14637,
+      "The Batman": 0.22455
+     },
+     "ordinary_films": {
+      "auc": 0.9719202898550725,
+      "ci95": [
+       0.9383944746376811,
+       0.9963768115942029
+      ]
+     },
+     "literary_cousins": {
+      "auc": 0.9625,
+      "ci95": [
+       0.875,
+       1.0
+      ]
+     }
+    },
+    "ceiling_original": {
+     "hero_film_cousins": {
+      "auc": 1.0,
+      "ci95": [
+       1.0,
+       1.0
+      ]
+     },
+     "per_batman_vs_hero": {
+      "1943 serial": 1.0,
+      "Batman '66": 1.0,
+      "Dark Knight Returns": 1.0,
+      "Year One": 1.0,
+      "The Killing Joke": 1.0,
+      "A Death in the Family": 1.0,
+      "Gotham by Gaslight": 1.0,
+      "Arkham Asylum (comic)": 1.0,
+      "Batman '89": 1.0,
+      "Batman Returns": 1.0,
+      "Mask of the Phantasm": 1.0,
+      "Knightfall": 1.0,
+      "Batman Forever": 1.0,
+      "The Long Halloween": 1.0,
+      "Batman & Robin": 1.0,
+      "Return of the Joker": 1.0,
+      "Hush": 1.0,
+      "Batman Begins": 1.0,
+      "The Dark Knight": 1.0,
+      "Batman R.I.P.": 1.0,
+      "Arkham Asylum (game)": 1.0,
+      "Under the Red Hood": 1.0,
+      "Arkham City": 1.0,
+      "Dark Knight Rises": 1.0,
+      "Earth One": 1.0,
+      "Arkham Knight": 1.0,
+      "Batman v Superman": 1.0,
+      "Lego Batman": 1.0,
+      "White Knight": 1.0,
+      "Batman Ninja": 1.0,
+      "Joker (2019)": 1.0,
+      "The Batman": 1.0
+     },
+     "per_cousin_beaten_by": {
+      "The Bat (1926)": 0.0,
+      "Zorro": 0.0,
+      "The Shadow": 0.0,
+      "Superman": 0.0,
+      "Spider-Man": 0.0,
+      "Daredevil": 0.0,
+      "Iron Man": 0.0,
+      "Green Hornet": 0.0
+     },
+     "held_out_score": {
+      "1943 serial": 0.19222,
+      "Batman '66": 0.23759,
+      "Dark Knight Returns": 0.40797,
+      "Year One": 0.35022,
+      "The Killing Joke": 0.27881,
+      "A Death in the Family": 0.35486,
+      "Gotham by Gaslight": 0.32538,
+      "Arkham Asylum (comic)": 0.22576,
+      "Batman '89": 0.36745,
+      "Batman Returns": 0.22828,
+      "Mask of the Phantasm": 0.31912,
+      "Knightfall": 0.32381,
+      "Batman Forever": 0.33693,
+      "The Long Halloween": 0.36569,
+      "Batman & Robin": 0.32734,
+      "Return of the Joker": 0.39976,
+      "Hush": 0.42866,
+      "Batman Begins": 0.35395,
+      "The Dark Knight": 0.41685,
+      "Batman R.I.P.": 0.32224,
+      "Arkham Asylum (game)": 0.36791,
+      "Under the Red Hood": 0.35768,
+      "Arkham City": 0.37751,
+      "Dark Knight Rises": 0.42951,
+      "Earth One": 0.37641,
+      "Arkham Knight": 0.39039,
+      "Batman v Superman": 0.18949,
+      "Lego Batman": 0.40213,
+      "White Knight": 0.34263,
+      "Batman Ninja": 0.32219,
+      "Joker (2019)": 0.22884,
+      "The Batman": 0.31607
+     },
+     "ordinary_films": {
+      "auc": 1.0,
+      "ci95": [
+       1.0,
+       1.0
+      ]
+     },
+     "literary_cousins": {
+      "auc": 1.0,
+      "ci95": [
+       1.0,
+       1.0
+      ]
+     }
+    },
+    "A_iconography_dropped": {
+     "hero_film_cousins": {
+      "auc": 0.765625,
+      "ci95": [
+       0.6015625,
+       0.90625
+      ]
+     },
+     "per_batman_vs_hero": {
+      "1943 serial": 0.25,
+      "Batman '66": 0.25,
+      "Dark Knight Returns": 1.0,
+      "Year One": 1.0,
+      "The Killing Joke": 0.25,
+      "A Death in the Family": 0.75,
+      "Gotham by Gaslight": 0.5,
+      "Arkham Asylum (comic)": 0.125,
+      "Batman '89": 1.0,
+      "Batman Returns": 0.5,
+      "Mask of the Phantasm": 1.0,
+      "Knightfall": 0.875,
+      "Batman Forever": 1.0,
+      "The Long Halloween": 1.0,
+      "Batman & Robin": 1.0,
+      "Return of the Joker": 0.75,
+      "Hush": 1.0,
+      "Batman Begins": 1.0,
+      "The Dark Knight": 1.0,
+      "Batman R.I.P.": 0.25,
+      "Arkham Asylum (game)": 1.0,
+      "Under the Red Hood": 1.0,
+      "Arkham City": 1.0,
+      "Dark Knight Rises": 1.0,
+      "Earth One": 1.0,
+      "Arkham Knight": 1.0,
+      "Batman v Superman": 0.5,
+      "Lego Batman": 1.0,
+      "White Knight": 0.75,
+      "Batman Ninja": 0.5,
+      "Joker (2019)": 0.25,
+      "The Batman": 1.0
+     },
+     "per_cousin_beaten_by": {
+      "The Bat (1926)": 0.031,
+      "Zorro": 0.0,
+      "The Shadow": 0.438,
+      "Superman": 0.188,
+      "Spider-Man": 0.312,
+      "Daredevil": 0.406,
+      "Iron Man": 0.188,
+      "Green Hornet": 0.312
+     },
+     "held_out_score": {
+      "1943 serial": 0.08076,
+      "Batman '66": 0.08814,
+      "Dark Knight Returns": 0.15079,
+      "Year One": 0.14703,
+      "The Killing Joke": 0.09532,
+      "A Death in the Family": 0.12412,
+      "Gotham by Gaslight": 0.10967,
+      "Arkham Asylum (comic)": 0.06784,
+      "Batman '89": 0.1474,
+      "Batman Returns": 0.11856,
+      "Mask of the Phantasm": 0.15407,
+      "Knightfall": 0.12847,
+      "Batman Forever": 0.13326,
+      "The Long Halloween": 0.14953,
+      "Batman & Robin": 0.14625,
+      "Return of the Joker": 0.12897,
+      "Hush": 0.149,
+      "Batman Begins": 0.1736,
+      "The Dark Knight": 0.16396,
+      "Batman R.I.P.": 0.0996,
+      "Arkham Asylum (game)": 0.14059,
+      "Under the Red Hood": 0.16159,
+      "Arkham City": 0.13653,
+      "Dark Knight Rises": 0.15614,
+      "Earth One": 0.17377,
+      "Arkham Knight": 0.16933,
+      "Batman v Superman": 0.11352,
+      "Lego Batman": 0.13679,
+      "White Knight": 0.12258,
+      "Batman Ninja": 0.11013,
+      "Joker (2019)": 0.09014,
+      "The Batman": 0.14463
+     },
+     "ordinary_films": {
+      "auc": 0.9451992753623188,
+      "ci95": [
+       0.8854053442028985,
+       0.9895833333333334
+      ]
+     },
+     "literary_cousins": {
+      "auc": 0.93125,
+      "ci95": [
+       0.83125,
+       1.0
+      ]
+     }
+    },
+    "openings": {
+     "hero_film_cousins": {
+      "auc": 0.765625,
+      "ci95": [
+       0.56630859375,
+       0.921875
+      ]
+     },
+     "per_batman_vs_hero": {
+      "1943 serial": 0.375,
+      "Batman '66": 0.25,
+      "Dark Knight Returns": 0.875,
+      "Year One": 0.875,
+      "The Killing Joke": 0.5,
+      "A Death in the Family": 0.5,
+      "Gotham by Gaslight": 0.75,
+      "Arkham Asylum (comic)": 0.875,
+      "Batman '89": 0.875,
+      "Batman Returns": 0.75,
+      "Mask of the Phantasm": 1.0,
+      "Knightfall": 0.25,
+      "Batman Forever": 0.875,
+      "The Long Halloween": 0.875,
+      "Batman & Robin": 0.625,
+      "Return of the Joker": 0.875,
+      "Hush": 0.875,
+      "Batman Begins": 1.0,
+      "The Dark Knight": 1.0,
+      "Batman R.I.P.": 0.25,
+      "Arkham Asylum (game)": 1.0,
+      "Under the Red Hood": 0.875,
+      "Arkham City": 1.0,
+      "Dark Knight Rises": 1.0,
+      "Earth One": 1.0,
+      "Arkham Knight": 1.0,
+      "Batman v Superman": 0.625,
+      "Lego Batman": 0.875,
+      "White Knight": 0.5,
+      "Batman Ninja": 0.5,
+      "Joker (2019)": 0.875,
+      "The Batman": 1.0
+     },
+     "per_cousin_beaten_by": {
+      "The Bat (1926)": 0.0,
+      "Zorro": 0.0,
+      "The Shadow": 0.719,
+      "Superman": 0.25,
+      "Spider-Man": 0.094,
+      "Daredevil": 0.312,
+      "Iron Man": 0.125,
+      "Green Hornet": 0.375
+     },
+     "held_out_score": {
+      "1943 serial": 0.07044,
+      "Batman '66": 0.06273,
+      "Dark Knight Returns": 0.10395,
+      "Year One": 0.10865,
+      "The Killing Joke": 0.07582,
+      "A Death in the Family": 0.07569,
+      "Gotham by Gaslight": 0.08625,
+      "Arkham Asylum (comic)": 0.10514,
+      "Batman '89": 0.11125,
+      "Batman Returns": 0.08925,
+      "Mask of the Phantasm": 0.12239,
+      "Knightfall": 0.06529,
+      "Batman Forever": 0.1058,
+      "The Long Halloween": 0.09683,
+      "Batman & Robin": 0.08389,
+      "Return of the Joker": 0.09513,
+      "Hush": 0.09358,
+      "Batman Begins": 0.12616,
+      "The Dark Knight": 0.12182,
+      "Batman R.I.P.": 0.06197,
+      "Arkham Asylum (game)": 0.13381,
+      "Under the Red Hood": 0.10304,
+      "Arkham City": 0.11471,
+      "Dark Knight Rises": 0.12464,
+      "Earth One": 0.1206,
+      "Arkham Knight": 0.11758,
+      "Batman v Superman": 0.0802,
+      "Lego Batman": 0.1005,
+      "White Knight": 0.07737,
+      "Batman Ninja": 0.07591,
+      "Joker (2019)": 0.10364,
+      "The Batman": 0.11039
+     },
+     "ordinary_films": {
+      "auc": 0.9877717391304348,
+      "ci95": [
+       0.9692028985507246,
+       0.9990942028985508
+      ]
+     },
+     "literary_cousins": {
+      "auc": 0.9875,
+      "ci95": [
+       0.94375,
+       1.0
+      ]
+     },
+     "null_label_shuffle": {
+      "n": 1000,
+      "mean": 0.50408203125,
+      "p95": 0.69140625,
+      "p_value": 0.012987012987012988
+     }
+    },
+    "verdict": "not met",
+    "clauses": {
+     "auc_at_least_0.80": true,
+     "ci_lower_at_least_0.65": true,
+     "above_null_p95": true,
+     "within_0.05_without_iconography": false,
+     "openings_auc_at_least_0.70": true,
+     "openings_above_own_null_p95": true
+    },
+    "all_six_clauses_evaluated": true,
+    "falsified_by_v1_rule": false
+   },
+   "word_presence_canon_share": {
+    "A_name_free": {
+     "hero_film_cousins": {
+      "auc": 0.609375,
+      "ci95": [
+       0.40625,
+       0.796875
+      ]
+     },
+     "per_batman_vs_hero": {
+      "1943 serial": 0.812,
+      "Batman '66": 0.312,
+      "Dark Knight Returns": 0.812,
+      "Year One": 0.812,
+      "The Killing Joke": 0.312,
+      "A Death in the Family": 0.312,
+      "Gotham by Gaslight": 0.312,
+      "Arkham Asylum (comic)": 0.312,
+      "Batman '89": 0.812,
+      "Batman Returns": 0.812,
+      "Mask of the Phantasm": 0.812,
+      "Knightfall": 0.312,
+      "Batman Forever": 0.312,
+      "The Long Halloween": 0.312,
+      "Batman & Robin": 0.812,
+      "Return of the Joker": 0.312,
+      "Hush": 0.312,
+      "Batman Begins": 0.812,
+      "The Dark Knight": 0.812,
+      "Batman R.I.P.": 0.812,
+      "Arkham Asylum (game)": 0.312,
+      "Under the Red Hood": 0.812,
+      "Arkham City": 0.812,
+      "Dark Knight Rises": 0.812,
+      "Earth One": 0.812,
+      "Arkham Knight": 0.812,
+      "Batman v Superman": 0.312,
+      "Lego Batman": 0.812,
+      "White Knight": 0.812,
+      "Batman Ninja": 0.312,
+      "Joker (2019)": 0.812,
+      "The Batman": 0.812
+     },
+     "per_cousin_beaten_by": {
+      "The Bat (1926)": 0.203,
+      "Zorro": 0.203,
+      "The Shadow": 0.703,
+      "Superman": 0.703,
+      "Spider-Man": 0.203,
+      "Daredevil": 0.703,
+      "Iron Man": 0.203,
+      "Green Hornet": 0.203
+     },
+     "held_out_score": {
+      "1943 serial": 0.2,
+      "Batman '66": 0.0,
+      "Dark Knight Returns": 0.2,
+      "Year One": 0.2,
+      "The Killing Joke": 0.0,
+      "A Death in the Family": 0.0,
+      "Gotham by Gaslight": 0.0,
+      "Arkham Asylum (comic)": 0.0,
+      "Batman '89": 0.2,
+      "Batman Returns": 0.2,
+      "Mask of the Phantasm": 0.2,
+      "Knightfall": 0.0,
+      "Batman Forever": 0.0,
+      "The Long Halloween": 0.0,
+      "Batman & Robin": 0.2,
+      "Return of the Joker": 0.0,
+      "Hush": 0.0,
+      "Batman Begins": 0.2,
+      "The Dark Knight": 0.2,
+      "Batman R.I.P.": 0.2,
+      "Arkham Asylum (game)": 0.0,
+      "Under the Red Hood": 0.2,
+      "Arkham City": 0.2,
+      "Dark Knight Rises": 0.2,
+      "Earth One": 0.2,
+      "Arkham Knight": 0.2,
+      "Batman v Superman": 0.0,
+      "Lego Batman": 0.2,
+      "White Knight": 0.2,
+      "Batman Ninja": 0.0,
+      "Joker (2019)": 0.2,
+      "The Batman": 0.2
+     },
+     "canon_units_median": 5.0,
+     "canon_units_min": 5,
+     "ordinary_films": {
+      "auc": 0.724411231884058,
+      "ci95": [
+       0.6317934782608695,
+       0.8109431612318839
+      ]
+     },
+     "literary_cousins": {
+      "auc": 0.796875,
+      "ci95": [
+       0.718359375,
+       0.875
+      ]
+     },
+     "null_label_shuffle": {
+      "n": 1000,
+      "mean": 0.507244140625,
+      "p95": 0.6875,
+      "p_value": 0.25274725274725274
+     }
+    },
+    "B_canon_from_name_free": {
+     "hero_film_cousins": {
+      "auc": 0.5,
+      "ci95": [
+       0.5,
+       0.5
+      ]
+     },
+     "per_batman_vs_hero": {
+      "1943 serial": 0.5,
+      "Batman '66": 0.5,
+      "Dark Knight Returns": 0.5,
+      "Year One": 0.5,
+      "The Killing Joke": 0.5,
+      "A Death in the Family": 0.5,
+      "Gotham by Gaslight": 0.5,
+      "Arkham Asylum (comic)": 0.5,
+      "Batman '89": 0.5,
+      "Batman Returns": 0.5,
+      "Mask of the Phantasm": 0.5,
+      "Knightfall": 0.5,
+      "Batman Forever": 0.5,
+      "The Long Halloween": 0.5,
+      "Batman & Robin": 0.5,
+      "Return of the Joker": 0.5,
+      "Hush": 0.5,
+      "Batman Begins": 0.5,
+      "The Dark Knight": 0.5,
+      "Batman R.I.P.": 0.5,
+      "Arkham Asylum (game)": 0.5,
+      "Under the Red Hood": 0.5,
+      "Arkham City": 0.5,
+      "Dark Knight Rises": 0.5,
+      "Earth One": 0.5,
+      "Arkham Knight": 0.5,
+      "Batman v Superman": 0.5,
+      "Lego Batman": 0.5,
+      "White Knight": 0.5,
+      "Batman Ninja": 0.5,
+      "Joker (2019)": 0.5,
+      "The Batman": 0.5
+     },
+     "per_cousin_beaten_by": {
+      "The Bat (1926)": 0.5,
+      "Zorro": 0.5,
+      "The Shadow": 0.5,
+      "Superman": 0.5,
+      "Spider-Man": 0.5,
+      "Daredevil": 0.5,
+      "Iron Man": 0.5,
+      "Green Hornet": 0.5
+     },
+     "held_out_score": {
+      "1943 serial": null,
+      "Batman '66": null,
+      "Dark Knight Returns": null,
+      "Year One": null,
+      "The Killing Joke": null,
+      "A Death in the Family": null,
+      "Gotham by Gaslight": null,
+      "Arkham Asylum (comic)": null,
+      "Batman '89": null,
+      "Batman Returns": null,
+      "Mask of the Phantasm": null,
+      "Knightfall": null,
+      "Batman Forever": null,
+      "The Long Halloween": null,
+      "Batman & Robin": null,
+      "Return of the Joker": null,
+      "Hush": null,
+      "Batman Begins": null,
+      "The Dark Knight": null,
+      "Batman R.I.P.": null,
+      "Arkham Asylum (game)": null,
+      "Under the Red Hood": null,
+      "Arkham City": null,
+      "Dark Knight Rises": null,
+      "Earth One": null,
+      "Arkham Knight": null,
+      "Batman v Superman": null,
+      "Lego Batman": null,
+      "White Knight": null,
+      "Batman Ninja": null,
+      "Joker (2019)": null,
+      "The Batman": null
+     },
+     "canon_units_median": 0.0,
+     "canon_units_min": 0,
+     "ordinary_films": {
+      "auc": 0.5,
+      "ci95": [
+       0.5,
+       0.5
+      ]
+     },
+     "literary_cousins": {
+      "auc": 0.5,
+      "ci95": [
+       0.5,
+       0.5
+      ]
+     }
+    },
+    "ceiling_original": {
+     "hero_film_cousins": {
+      "auc": 0.98828125,
+      "ci95": [
+       0.9609375,
+       1.0
+      ]
+     },
+     "per_batman_vs_hero": {
+      "1943 serial": 1.0,
+      "Batman '66": 1.0,
+      "Dark Knight Returns": 1.0,
+      "Year One": 1.0,
+      "The Killing Joke": 0.812,
+      "A Death in the Family": 1.0,
+      "Gotham by Gaslight": 1.0,
+      "Arkham Asylum (comic)": 0.812,
+      "Batman '89": 1.0,
+      "Batman Returns": 1.0,
+      "Mask of the Phantasm": 1.0,
+      "Knightfall": 1.0,
+      "Batman Forever": 1.0,
+      "The Long Halloween": 1.0,
+      "Batman & Robin": 1.0,
+      "Return of the Joker": 1.0,
+      "Hush": 1.0,
+      "Batman Begins": 1.0,
+      "The Dark Knight": 1.0,
+      "Batman R.I.P.": 1.0,
+      "Arkham Asylum (game)": 1.0,
+      "Under the Red Hood": 1.0,
+      "Arkham City": 1.0,
+      "Dark Knight Rises": 1.0,
+      "Earth One": 1.0,
+      "Arkham Knight": 1.0,
+      "Batman v Superman": 1.0,
+      "Lego Batman": 1.0,
+      "White Knight": 1.0,
+      "Batman Ninja": 1.0,
+      "Joker (2019)": 1.0,
+      "The Batman": 1.0
+     },
+     "per_cousin_beaten_by": {
+      "The Bat (1926)": 0.0,
+      "Zorro": 0.0,
+      "The Shadow": 0.031,
+      "Superman": 0.031,
+      "Spider-Man": 0.0,
+      "Daredevil": 0.031,
+      "Iron Man": 0.0,
+      "Green Hornet": 0.0
+     },
+     "held_out_score": {
+      "1943 serial": 1.0,
+      "Batman '66": 1.0,
+      "Dark Knight Returns": 1.0,
+      "Year One": 1.0,
+      "The Killing Joke": 0.2,
+      "A Death in the Family": 0.8,
+      "Gotham by Gaslight": 1.0,
+      "Arkham Asylum (comic)": 0.2,
+      "Batman '89": 1.0,
+      "Batman Returns": 1.0,
+      "Mask of the Phantasm": 1.0,
+      "Knightfall": 1.0,
+      "Batman Forever": 1.0,
+      "The Long Halloween": 1.0,
+      "Batman & Robin": 1.0,
+      "Return of the Joker": 1.0,
+      "Hush": 1.0,
+      "Batman Begins": 1.0,
+      "The Dark Knight": 1.0,
+      "Batman R.I.P.": 1.0,
+      "Arkham Asylum (game)": 0.8,
+      "Under the Red Hood": 0.8,
+      "Arkham City": 1.0,
+      "Dark Knight Rises": 1.0,
+      "Earth One": 1.0,
+      "Arkham Knight": 1.0,
+      "Batman v Superman": 1.0,
+      "Lego Batman": 1.0,
+      "White Knight": 1.0,
+      "Batman Ninja": 0.8,
+      "Joker (2019)": 0.8,
+      "The Batman": 1.0
+     },
+     "canon_units_median": 5.0,
+     "canon_units_min": 5,
+     "ordinary_films": {
+      "auc": 0.9895833333333334,
+      "ci95": [
+       0.9728260869565217,
+       1.0
+      ]
+     },
+     "literary_cousins": {
+      "auc": 1.0,
+      "ci95": [
+       1.0,
+       1.0
+      ]
+     }
+    },
+    "A_iconography_dropped": {
+     "hero_film_cousins": {
+      "auc": 0.59375,
+      "ci95": [
+       0.390625,
+       0.78125
+      ]
+     },
+     "per_batman_vs_hero": {
+      "1943 serial": 0.812,
+      "Batman '66": 0.312,
+      "Dark Knight Returns": 0.812,
+      "Year One": 0.812,
+      "The Killing Joke": 0.312,
+      "A Death in the Family": 0.312,
+      "Gotham by Gaslight": 0.312,
+      "Arkham Asylum (comic)": 0.312,
+      "Batman '89": 0.812,
+      "Batman Returns": 0.812,
+      "Mask of the Phantasm": 0.812,
+      "Knightfall": 0.312,
+      "Batman Forever": 0.312,
+      "The Long Halloween": 0.312,
+      "Batman & Robin": 0.812,
+      "Return of the Joker": 0.312,
+      "Hush": 0.312,
+      "Batman Begins": 0.812,
+      "The Dark Knight": 0.812,
+      "Batman R.I.P.": 0.812,
+      "Arkham Asylum (game)": 0.312,
+      "Under the Red Hood": 0.812,
+      "Arkham City": 0.312,
+      "Dark Knight Rises": 0.812,
+      "Earth One": 0.812,
+      "Arkham Knight": 0.812,
+      "Batman v Superman": 0.312,
+      "Lego Batman": 0.812,
+      "White Knight": 0.812,
+      "Batman Ninja": 0.312,
+      "Joker (2019)": 0.812,
+      "The Batman": 0.812
+     },
+     "per_cousin_beaten_by": {
+      "The Bat (1926)": 0.219,
+      "Zorro": 0.219,
+      "The Shadow": 0.719,
+      "Superman": 0.719,
+      "Spider-Man": 0.219,
+      "Daredevil": 0.719,
+      "Iron Man": 0.219,
+      "Green Hornet": 0.219
+     },
+     "held_out_score": {
+      "1943 serial": 0.2,
+      "Batman '66": 0.0,
+      "Dark Knight Returns": 0.2,
+      "Year One": 0.2,
+      "The Killing Joke": 0.0,
+      "A Death in the Family": 0.0,
+      "Gotham by Gaslight": 0.0,
+      "Arkham Asylum (comic)": 0.0,
+      "Batman '89": 0.2,
+      "Batman Returns": 0.2,
+      "Mask of the Phantasm": 0.2,
+      "Knightfall": 0.0,
+      "Batman Forever": 0.0,
+      "The Long Halloween": 0.0,
+      "Batman & Robin": 0.2,
+      "Return of the Joker": 0.0,
+      "Hush": 0.0,
+      "Batman Begins": 0.2,
+      "The Dark Knight": 0.2,
+      "Batman R.I.P.": 0.2,
+      "Arkham Asylum (game)": 0.0,
+      "Under the Red Hood": 0.2,
+      "Arkham City": 0.0,
+      "Dark Knight Rises": 0.2,
+      "Earth One": 0.2,
+      "Arkham Knight": 0.2,
+      "Batman v Superman": 0.0,
+      "Lego Batman": 0.2,
+      "White Knight": 0.2,
+      "Batman Ninja": 0.0,
+      "Joker (2019)": 0.2,
+      "The Batman": 0.2
+     },
+     "canon_units_median": 5.0,
+     "canon_units_min": 5,
+     "ordinary_films": {
+      "auc": 0.708786231884058,
+      "ci95": [
+       0.6100543478260869,
+       0.802536231884058
+      ]
+     },
+     "literary_cousins": {
+      "auc": 0.78125,
+      "ci95": [
+       0.6875,
+       0.859375
+      ]
+     }
+    },
+    "openings": {
+     "hero_film_cousins": {
+      "auc": 0.515625,
+      "ci95": [
+       0.3125,
+       0.703125
+      ]
+     },
+     "per_batman_vs_hero": {
+      "1943 serial": 0.812,
+      "Batman '66": 0.312,
+      "Dark Knight Returns": 0.812,
+      "Year One": 0.812,
+      "The Killing Joke": 0.312,
+      "A Death in the Family": 0.312,
+      "Gotham by Gaslight": 0.312,
+      "Arkham Asylum (comic)": 0.312,
+      "Batman '89": 0.812,
+      "Batman Returns": 0.812,
+      "Mask of the Phantasm": 0.312,
+      "Knightfall": 0.312,
+      "Batman Forever": 0.312,
+      "The Long Halloween": 0.312,
+      "Batman & Robin": 0.312,
+      "Return of the Joker": 0.312,
+      "Hush": 0.312,
+      "Batman Begins": 0.312,
+      "The Dark Knight": 0.312,
+      "Batman R.I.P.": 0.812,
+      "Arkham Asylum (game)": 0.312,
+      "Under the Red Hood": 0.812,
+      "Arkham City": 0.812,
+      "Dark Knight Rises": 0.812,
+      "Earth One": 0.312,
+      "Arkham Knight": 0.812,
+      "Batman v Superman": 0.312,
+      "Lego Batman": 0.812,
+      "White Knight": 0.812,
+      "Batman Ninja": 0.312,
+      "Joker (2019)": 0.812,
+      "The Batman": 0.312
+     },
+     "per_cousin_beaten_by": {
+      "The Bat (1926)": 0.297,
+      "Zorro": 0.297,
+      "The Shadow": 0.797,
+      "Superman": 0.797,
+      "Spider-Man": 0.297,
+      "Daredevil": 0.797,
+      "Iron Man": 0.297,
+      "Green Hornet": 0.297
+     },
+     "held_out_score": {
+      "1943 serial": 0.25,
+      "Batman '66": 0.0,
+      "Dark Knight Returns": 0.25,
+      "Year One": 0.25,
+      "The Killing Joke": 0.0,
+      "A Death in the Family": 0.0,
+      "Gotham by Gaslight": 0.0,
+      "Arkham Asylum (comic)": 0.0,
+      "Batman '89": 0.25,
+      "Batman Returns": 0.25,
+      "Mask of the Phantasm": 0.0,
+      "Knightfall": 0.0,
+      "Batman Forever": 0.0,
+      "The Long Halloween": 0.0,
+      "Batman & Robin": 0.0,
+      "Return of the Joker": 0.0,
+      "Hush": 0.0,
+      "Batman Begins": 0.0,
+      "The Dark Knight": 0.0,
+      "Batman R.I.P.": 0.25,
+      "Arkham Asylum (game)": 0.0,
+      "Under the Red Hood": 0.2,
+      "Arkham City": 0.2,
+      "Dark Knight Rises": 0.25,
+      "Earth One": 0.0,
+      "Arkham Knight": 0.25,
+      "Batman v Superman": 0.0,
+      "Lego Batman": 0.25,
+      "White Knight": 0.25,
+      "Batman Ninja": 0.0,
+      "Joker (2019)": 0.25,
+      "The Batman": 0.0
+     },
+     "canon_units_median": 4.0,
+     "canon_units_min": 4,
+     "ordinary_films": {
+      "auc": 0.630661231884058,
+      "ci95": [
+       0.5391757246376812,
+       0.7244395380434782
+      ]
+     },
+     "literary_cousins": {
+      "auc": 0.703125,
+      "ci95": [
+       0.625,
+       0.78125
+      ]
+     },
+     "null_label_shuffle": {
+      "n": 1000,
+      "mean": 0.494255859375,
+      "p95": 0.671875,
+      "p_value": 0.5064935064935064
+     }
+    },
+    "verdict": "not evaluable",
+    "clauses": {
+     "auc_at_least_0.80": false,
+     "ci_lower_at_least_0.65": false,
+     "above_null_p95": false,
+     "within_0.05_without_iconography": true,
+     "openings_auc_at_least_0.70": false,
+     "openings_above_own_null_p95": false
+    },
+    "all_six_clauses_evaluated": true,
+    "falsified_by_v1_rule": true
+   },
+   "word_presence_canon_share_background_rare": {
+    "A_name_free": {
+     "hero_film_cousins": {
+      "auc": 0.5,
+      "ci95": [
+       0.5,
+       0.5
+      ]
+     },
+     "per_batman_vs_hero": {
+      "1943 serial": 0.5,
+      "Batman '66": 0.5,
+      "Dark Knight Returns": 0.5,
+      "Year One": 0.5,
+      "The Killing Joke": 0.5,
+      "A Death in the Family": 0.5,
+      "Gotham by Gaslight": 0.5,
+      "Arkham Asylum (comic)": 0.5,
+      "Batman '89": 0.5,
+      "Batman Returns": 0.5,
+      "Mask of the Phantasm": 0.5,
+      "Knightfall": 0.5,
+      "Batman Forever": 0.5,
+      "The Long Halloween": 0.5,
+      "Batman & Robin": 0.5,
+      "Return of the Joker": 0.5,
+      "Hush": 0.5,
+      "Batman Begins": 0.5,
+      "The Dark Knight": 0.5,
+      "Batman R.I.P.": 0.5,
+      "Arkham Asylum (game)": 0.5,
+      "Under the Red Hood": 0.5,
+      "Arkham City": 0.5,
+      "Dark Knight Rises": 0.5,
+      "Earth One": 0.5,
+      "Arkham Knight": 0.5,
+      "Batman v Superman": 0.5,
+      "Lego Batman": 0.5,
+      "White Knight": 0.5,
+      "Batman Ninja": 0.5,
+      "Joker (2019)": 0.5,
+      "The Batman": 0.5
+     },
+     "per_cousin_beaten_by": {
+      "The Bat (1926)": 0.5,
+      "Zorro": 0.5,
+      "The Shadow": 0.5,
+      "Superman": 0.5,
+      "Spider-Man": 0.5,
+      "Daredevil": 0.5,
+      "Iron Man": 0.5,
+      "Green Hornet": 0.5
+     },
+     "held_out_score": {
+      "1943 serial": 0.0,
+      "Batman '66": 0.0,
+      "Dark Knight Returns": 0.0,
+      "Year One": 0.0,
+      "The Killing Joke": 0.0,
+      "A Death in the Family": 0.0,
+      "Gotham by Gaslight": 0.0,
+      "Arkham Asylum (comic)": 0.0,
+      "Batman '89": 0.0,
+      "Batman Returns": 0.0,
+      "Mask of the Phantasm": 0.0,
+      "Knightfall": 0.0,
+      "Batman Forever": 0.0,
+      "The Long Halloween": 0.0,
+      "Batman & Robin": 0.0,
+      "Return of the Joker": 0.0,
+      "Hush": 0.0,
+      "Batman Begins": 0.0,
+      "The Dark Knight": 0.0,
+      "Batman R.I.P.": 0.0,
+      "Arkham Asylum (game)": 0.0,
+      "Under the Red Hood": 0.0,
+      "Arkham City": 0.0,
+      "Dark Knight Rises": 0.0,
+      "Earth One": 0.0,
+      "Arkham Knight": 0.0,
+      "Batman v Superman": 0.0,
+      "Lego Batman": 0.0,
+      "White Knight": 0.0,
+      "Batman Ninja": 0.0,
+      "Joker (2019)": 0.0,
+      "The Batman": 0.0
+     },
+     "canon_units_median": 4.0,
+     "canon_units_min": 4,
+     "ordinary_films": {
+      "auc": 0.5,
+      "ci95": [
+       0.5,
+       0.5
+      ]
+     },
+     "literary_cousins": {
+      "auc": 0.5,
+      "ci95": [
+       0.5,
+       0.5
+      ]
+     },
+     "null_label_shuffle": {
+      "n": 1000,
+      "mean": 0.5,
+      "p95": 0.5,
+      "p_value": 1.0
+     }
+    },
+    "B_canon_from_name_free": {
+     "hero_film_cousins": {
+      "auc": 0.5,
+      "ci95": [
+       0.5,
+       0.5
+      ]
+     },
+     "per_batman_vs_hero": {
+      "1943 serial": 0.5,
+      "Batman '66": 0.5,
+      "Dark Knight Returns": 0.5,
+      "Year One": 0.5,
+      "The Killing Joke": 0.5,
+      "A Death in the Family": 0.5,
+      "Gotham by Gaslight": 0.5,
+      "Arkham Asylum (comic)": 0.5,
+      "Batman '89": 0.5,
+      "Batman Returns": 0.5,
+      "Mask of the Phantasm": 0.5,
+      "Knightfall": 0.5,
+      "Batman Forever": 0.5,
+      "The Long Halloween": 0.5,
+      "Batman & Robin": 0.5,
+      "Return of the Joker": 0.5,
+      "Hush": 0.5,
+      "Batman Begins": 0.5,
+      "The Dark Knight": 0.5,
+      "Batman R.I.P.": 0.5,
+      "Arkham Asylum (game)": 0.5,
+      "Under the Red Hood": 0.5,
+      "Arkham City": 0.5,
+      "Dark Knight Rises": 0.5,
+      "Earth One": 0.5,
+      "Arkham Knight": 0.5,
+      "Batman v Superman": 0.5,
+      "Lego Batman": 0.5,
+      "White Knight": 0.5,
+      "Batman Ninja": 0.5,
+      "Joker (2019)": 0.5,
+      "The Batman": 0.5
+     },
+     "per_cousin_beaten_by": {
+      "The Bat (1926)": 0.5,
+      "Zorro": 0.5,
+      "The Shadow": 0.5,
+      "Superman": 0.5,
+      "Spider-Man": 0.5,
+      "Daredevil": 0.5,
+      "Iron Man": 0.5,
+      "Green Hornet": 0.5
+     },
+     "held_out_score": {
+      "1943 serial": null,
+      "Batman '66": null,
+      "Dark Knight Returns": null,
+      "Year One": null,
+      "The Killing Joke": null,
+      "A Death in the Family": null,
+      "Gotham by Gaslight": null,
+      "Arkham Asylum (comic)": null,
+      "Batman '89": null,
+      "Batman Returns": null,
+      "Mask of the Phantasm": null,
+      "Knightfall": null,
+      "Batman Forever": null,
+      "The Long Halloween": null,
+      "Batman & Robin": null,
+      "Return of the Joker": null,
+      "Hush": null,
+      "Batman Begins": null,
+      "The Dark Knight": null,
+      "Batman R.I.P.": null,
+      "Arkham Asylum (game)": null,
+      "Under the Red Hood": null,
+      "Arkham City": null,
+      "Dark Knight Rises": null,
+      "Earth One": null,
+      "Arkham Knight": null,
+      "Batman v Superman": null,
+      "Lego Batman": null,
+      "White Knight": null,
+      "Batman Ninja": null,
+      "Joker (2019)": null,
+      "The Batman": null
+     },
+     "canon_units_median": 0.0,
+     "canon_units_min": 0,
+     "ordinary_films": {
+      "auc": 0.5,
+      "ci95": [
+       0.5,
+       0.5
+      ]
+     },
+     "literary_cousins": {
+      "auc": 0.5,
+      "ci95": [
+       0.5,
+       0.5
+      ]
+     }
+    },
+    "ceiling_original": {
+     "hero_film_cousins": {
+      "auc": 1.0,
+      "ci95": [
+       1.0,
+       1.0
+      ]
+     },
+     "per_batman_vs_hero": {
+      "1943 serial": 1.0,
+      "Batman '66": 1.0,
+      "Dark Knight Returns": 1.0,
+      "Year One": 1.0,
+      "The Killing Joke": 1.0,
+      "A Death in the Family": 1.0,
+      "Gotham by Gaslight": 1.0,
+      "Arkham Asylum (comic)": 1.0,
+      "Batman '89": 1.0,
+      "Batman Returns": 1.0,
+      "Mask of the Phantasm": 1.0,
+      "Knightfall": 1.0,
+      "Batman Forever": 1.0,
+      "The Long Halloween": 1.0,
+      "Batman & Robin": 1.0,
+      "Return of the Joker": 1.0,
+      "Hush": 1.0,
+      "Batman Begins": 1.0,
+      "The Dark Knight": 1.0,
+      "Batman R.I.P.": 1.0,
+      "Arkham Asylum (game)": 1.0,
+      "Under the Red Hood": 1.0,
+      "Arkham City": 1.0,
+      "Dark Knight Rises": 1.0,
+      "Earth One": 1.0,
+      "Arkham Knight": 1.0,
+      "Batman v Superman": 1.0,
+      "Lego Batman": 1.0,
+      "White Knight": 1.0,
+      "Batman Ninja": 1.0,
+      "Joker (2019)": 1.0,
+      "The Batman": 1.0
+     },
+     "per_cousin_beaten_by": {
+      "The Bat (1926)": 0.0,
+      "Zorro": 0.0,
+      "The Shadow": 0.0,
+      "Superman": 0.0,
+      "Spider-Man": 0.0,
+      "Daredevil": 0.0,
+      "Iron Man": 0.0,
+      "Green Hornet": 0.0
+     },
+     "held_out_score": {
+      "1943 serial": 1.0,
+      "Batman '66": 1.0,
+      "Dark Knight Returns": 1.0,
+      "Year One": 1.0,
+      "The Killing Joke": 0.25,
+      "A Death in the Family": 0.75,
+      "Gotham by Gaslight": 1.0,
+      "Arkham Asylum (comic)": 0.25,
+      "Batman '89": 1.0,
+      "Batman Returns": 1.0,
+      "Mask of the Phantasm": 1.0,
+      "Knightfall": 1.0,
+      "Batman Forever": 1.0,
+      "The Long Halloween": 1.0,
+      "Batman & Robin": 1.0,
+      "Return of the Joker": 1.0,
+      "Hush": 1.0,
+      "Batman Begins": 1.0,
+      "The Dark Knight": 1.0,
+      "Batman R.I.P.": 1.0,
+      "Arkham Asylum (game)": 0.75,
+      "Under the Red Hood": 0.75,
+      "Arkham City": 1.0,
+      "Dark Knight Rises": 1.0,
+      "Earth One": 1.0,
+      "Arkham Knight": 1.0,
+      "Batman v Superman": 1.0,
+      "Lego Batman": 1.0,
+      "White Knight": 1.0,
+      "Batman Ninja": 0.75,
+      "Joker (2019)": 0.75,
+      "The Batman": 1.0
+     },
+     "canon_units_median": 4.0,
+     "canon_units_min": 4,
+     "ordinary_films": {
+      "auc": 0.998641304347826,
+      "ci95": [
+       0.9945652173913043,
+       1.0
+      ]
+     },
+     "literary_cousins": {
+      "auc": 1.0,
+      "ci95": [
+       1.0,
+       1.0
+      ]
+     }
+    },
+    "A_iconography_dropped": {
+     "hero_film_cousins": {
+      "auc": 0.5,
+      "ci95": [
+       0.5,
+       0.5
+      ]
+     },
+     "per_batman_vs_hero": {
+      "1943 serial": 0.5,
+      "Batman '66": 0.5,
+      "Dark Knight Returns": 0.5,
+      "Year One": 0.5,
+      "The Killing Joke": 0.5,
+      "A Death in the Family": 0.5,
+      "Gotham by Gaslight": 0.5,
+      "Arkham Asylum (comic)": 0.5,
+      "Batman '89": 0.5,
+      "Batman Returns": 0.5,
+      "Mask of the Phantasm": 0.5,
+      "Knightfall": 0.5,
+      "Batman Forever": 0.5,
+      "The Long Halloween": 0.5,
+      "Batman & Robin": 0.5,
+      "Return of the Joker": 0.5,
+      "Hush": 0.5,
+      "Batman Begins": 0.5,
+      "The Dark Knight": 0.5,
+      "Batman R.I.P.": 0.5,
+      "Arkham Asylum (game)": 0.5,
+      "Under the Red Hood": 0.5,
+      "Arkham City": 0.5,
+      "Dark Knight Rises": 0.5,
+      "Earth One": 0.5,
+      "Arkham Knight": 0.5,
+      "Batman v Superman": 0.5,
+      "Lego Batman": 0.5,
+      "White Knight": 0.5,
+      "Batman Ninja": 0.5,
+      "Joker (2019)": 0.5,
+      "The Batman": 0.5
+     },
+     "per_cousin_beaten_by": {
+      "The Bat (1926)": 0.5,
+      "Zorro": 0.5,
+      "The Shadow": 0.5,
+      "Superman": 0.5,
+      "Spider-Man": 0.5,
+      "Daredevil": 0.5,
+      "Iron Man": 0.5,
+      "Green Hornet": 0.5
+     },
+     "held_out_score": {
+      "1943 serial": 0.0,
+      "Batman '66": 0.0,
+      "Dark Knight Returns": 0.0,
+      "Year One": 0.0,
+      "The Killing Joke": 0.0,
+      "A Death in the Family": 0.0,
+      "Gotham by Gaslight": 0.0,
+      "Arkham Asylum (comic)": 0.0,
+      "Batman '89": 0.0,
+      "Batman Returns": 0.0,
+      "Mask of the Phantasm": 0.0,
+      "Knightfall": 0.0,
+      "Batman Forever": 0.0,
+      "The Long Halloween": 0.0,
+      "Batman & Robin": 0.0,
+      "Return of the Joker": 0.0,
+      "Hush": 0.0,
+      "Batman Begins": 0.0,
+      "The Dark Knight": 0.0,
+      "Batman R.I.P.": 0.0,
+      "Arkham Asylum (game)": 0.0,
+      "Under the Red Hood": 0.0,
+      "Arkham City": 0.0,
+      "Dark Knight Rises": 0.0,
+      "Earth One": 0.0,
+      "Arkham Knight": 0.0,
+      "Batman v Superman": 0.0,
+      "Lego Batman": 0.0,
+      "White Knight": 0.0,
+      "Batman Ninja": 0.0,
+      "Joker (2019)": 0.0,
+      "The Batman": 0.0
+     },
+     "canon_units_median": 4.0,
+     "canon_units_min": 4,
+     "ordinary_films": {
+      "auc": 0.5,
+      "ci95": [
+       0.5,
+       0.5
+      ]
+     },
+     "literary_cousins": {
+      "auc": 0.5,
+      "ci95": [
+       0.5,
+       0.5
+      ]
+     }
+    },
+    "openings": {
+     "hero_film_cousins": {
+      "auc": 0.5,
+      "ci95": [
+       0.5,
+       0.5
+      ]
+     },
+     "per_batman_vs_hero": {
+      "1943 serial": 0.5,
+      "Batman '66": 0.5,
+      "Dark Knight Returns": 0.5,
+      "Year One": 0.5,
+      "The Killing Joke": 0.5,
+      "A Death in the Family": 0.5,
+      "Gotham by Gaslight": 0.5,
+      "Arkham Asylum (comic)": 0.5,
+      "Batman '89": 0.5,
+      "Batman Returns": 0.5,
+      "Mask of the Phantasm": 0.5,
+      "Knightfall": 0.5,
+      "Batman Forever": 0.5,
+      "The Long Halloween": 0.5,
+      "Batman & Robin": 0.5,
+      "Return of the Joker": 0.5,
+      "Hush": 0.5,
+      "Batman Begins": 0.5,
+      "The Dark Knight": 0.5,
+      "Batman R.I.P.": 0.5,
+      "Arkham Asylum (game)": 0.5,
+      "Under the Red Hood": 0.5,
+      "Arkham City": 0.5,
+      "Dark Knight Rises": 0.5,
+      "Earth One": 0.5,
+      "Arkham Knight": 0.5,
+      "Batman v Superman": 0.5,
+      "Lego Batman": 0.5,
+      "White Knight": 0.5,
+      "Batman Ninja": 0.5,
+      "Joker (2019)": 0.5,
+      "The Batman": 0.5
+     },
+     "per_cousin_beaten_by": {
+      "The Bat (1926)": 0.5,
+      "Zorro": 0.5,
+      "The Shadow": 0.5,
+      "Superman": 0.5,
+      "Spider-Man": 0.5,
+      "Daredevil": 0.5,
+      "Iron Man": 0.5,
+      "Green Hornet": 0.5
+     },
+     "held_out_score": {
+      "1943 serial": 0.0,
+      "Batman '66": 0.0,
+      "Dark Knight Returns": 0.0,
+      "Year One": 0.0,
+      "The Killing Joke": 0.0,
+      "A Death in the Family": 0.0,
+      "Gotham by Gaslight": 0.0,
+      "Arkham Asylum (comic)": 0.0,
+      "Batman '89": 0.0,
+      "Batman Returns": 0.0,
+      "Mask of the Phantasm": 0.0,
+      "Knightfall": 0.0,
+      "Batman Forever": 0.0,
+      "The Long Halloween": 0.0,
+      "Batman & Robin": 0.0,
+      "Return of the Joker": 0.0,
+      "Hush": 0.0,
+      "Batman Begins": 0.0,
+      "The Dark Knight": 0.0,
+      "Batman R.I.P.": 0.0,
+      "Arkham Asylum (game)": 0.0,
+      "Under the Red Hood": 0.0,
+      "Arkham City": 0.0,
+      "Dark Knight Rises": 0.0,
+      "Earth One": 0.0,
+      "Arkham Knight": 0.0,
+      "Batman v Superman": 0.0,
+      "Lego Batman": 0.0,
+      "White Knight": 0.0,
+      "Batman Ninja": 0.0,
+      "Joker (2019)": 0.0,
+      "The Batman": 0.0
+     },
+     "canon_units_median": 3.0,
+     "canon_units_min": 3,
+     "ordinary_films": {
+      "auc": 0.5,
+      "ci95": [
+       0.5,
+       0.5
+      ]
+     },
+     "literary_cousins": {
+      "auc": 0.5,
+      "ci95": [
+       0.5,
+       0.5
+      ]
+     },
+     "null_label_shuffle": {
+      "n": 1000,
+      "mean": 0.5,
+      "p95": 0.5,
+      "p_value": 1.0
+     }
+    },
+    "verdict": "not evaluable",
+    "clauses": {
+     "auc_at_least_0.80": false,
+     "ci_lower_at_least_0.65": false,
+     "above_null_p95": false,
+     "within_0.05_without_iconography": true,
+     "openings_auc_at_least_0.70": false,
+     "openings_above_own_null_p95": false
+    },
+    "all_six_clauses_evaluated": true,
+    "falsified_by_v1_rule": true
+   },
+   "length_alone_sentences": {
+    "A_name_free": {
+     "hero_film_cousins": {
+      "auc": 0.755859375,
+      "ci95": [
+       0.578125,
+       0.912109375
+      ]
+     },
+     "per_batman_vs_hero": {
+      "1943 serial": 0.125,
+      "Batman '66": 0.375,
+      "Dark Knight Returns": 0.938,
+      "Year One": 0.875,
+      "The Killing Joke": 0.312,
+      "A Death in the Family": 0.875,
+      "Gotham by Gaslight": 0.312,
+      "Arkham Asylum (comic)": 0.375,
+      "Batman '89": 0.875,
+      "Batman Returns": 0.5,
+      "Mask of the Phantasm": 0.875,
+      "Knightfall": 1.0,
+      "Batman Forever": 0.375,
+      "The Long Halloween": 1.0,
+      "Batman & Robin": 0.5,
+      "Return of the Joker": 0.875,
+      "Hush": 1.0,
+      "Batman Begins": 1.0,
+      "The Dark Knight": 0.688,
+      "Batman R.I.P.": 0.938,
+      "Arkham Asylum (game)": 1.0,
+      "Under the Red Hood": 1.0,
+      "Arkham City": 1.0,
+      "Dark Knight Rises": 0.875,
+      "Earth One": 1.0,
+      "Arkham Knight": 1.0,
+      "Batman v Superman": 0.875,
+      "Lego Batman": 0.375,
+      "White Knight": 1.0,
+      "Batman Ninja": 0.875,
+      "Joker (2019)": 0.938,
+      "The Batman": 0.438
+     },
+     "per_cousin_beaten_by": {
+      "The Bat (1926)": 0.328,
+      "Zorro": 0.0,
+      "The Shadow": 0.031,
+      "Superman": 0.234,
+      "Spider-Man": 0.641,
+      "Daredevil": 0.328,
+      "Iron Man": 0.328,
+      "Green Hornet": 0.062
+     },
+     "held_out_score": {
+      "1943 serial": 13.0,
+      "Batman '66": 24.0,
+      "Dark Knight Returns": 38.0,
+      "Year One": 37.0,
+      "The Killing Joke": 23.0,
+      "A Death in the Family": 34.0,
+      "Gotham by Gaslight": 23.0,
+      "Arkham Asylum (comic)": 24.0,
+      "Batman '89": 33.0,
+      "Batman Returns": 29.0,
+      "Mask of the Phantasm": 34.0,
+      "Knightfall": 40.0,
+      "Batman Forever": 25.0,
+      "The Long Halloween": 40.0,
+      "Batman & Robin": 29.0,
+      "Return of the Joker": 34.0,
+      "Hush": 40.0,
+      "Batman Begins": 40.0,
+      "The Dark Knight": 30.0,
+      "Batman R.I.P.": 38.0,
+      "Arkham Asylum (game)": 40.0,
+      "Under the Red Hood": 40.0,
+      "Arkham City": 40.0,
+      "Dark Knight Rises": 34.0,
+      "Earth One": 40.0,
+      "Arkham Knight": 40.0,
+      "Batman v Superman": 35.0,
+      "Lego Batman": 27.0,
+      "White Knight": 40.0,
+      "Batman Ninja": 31.0,
+      "Joker (2019)": 38.0,
+      "The Batman": 28.0
+     },
+     "ordinary_films": {
+      "auc": 0.552536231884058,
+      "ci95": [
+       0.4236809329710145,
+       0.686622509057971
+      ]
+     },
+     "literary_cousins": {
+      "auc": 0.49375,
+      "ci95": [
+       0.20625,
+       0.784375
+      ]
+     },
+     "null_label_shuffle": {
+      "n": 1000,
+      "mean": 0.493779296875,
+      "p95": 0.677734375,
+      "p_value": 0.008991008991008992
+     }
+    },
+    "A_iconography_dropped": {
+     "hero_film_cousins": {
+      "auc": 0.720703125,
+      "ci95": [
+       0.53125,
+       0.888671875
+      ]
+     },
+     "per_batman_vs_hero": {
+      "1943 serial": 0.125,
+      "Batman '66": 0.312,
+      "Dark Knight Returns": 0.938,
+      "Year One": 0.875,
+      "The Killing Joke": 0.188,
+      "A Death in the Family": 0.875,
+      "Gotham by Gaslight": 0.188,
+      "Arkham Asylum (comic)": 0.125,
+      "Batman '89": 0.875,
+      "Batman Returns": 0.375,
+      "Mask of the Phantasm": 0.875,
+      "Knightfall": 1.0,
+      "Batman Forever": 0.125,
+      "The Long Halloween": 1.0,
+      "Batman & Robin": 0.75,
+      "Return of the Joker": 0.875,
+      "Hush": 1.0,
+      "Batman Begins": 0.875,
+      "The Dark Knight": 0.812,
+      "Batman R.I.P.": 0.875,
+      "Arkham Asylum (game)": 0.75,
+      "Under the Red Hood": 1.0,
+      "Arkham City": 0.938,
+      "Dark Knight Rises": 0.875,
+      "Earth One": 0.938,
+      "Arkham Knight": 1.0,
+      "Batman v Superman": 0.875,
+      "Lego Batman": 0.5,
+      "White Knight": 1.0,
+      "Batman Ninja": 0.75,
+      "Joker (2019)": 0.875,
+      "The Batman": 0.5
+     },
+     "per_cousin_beaten_by": {
+      "The Bat (1926)": 0.25,
+      "Zorro": 0.0,
+      "The Shadow": 0.125,
+      "Superman": 0.25,
+      "Spider-Man": 0.766,
+      "Daredevil": 0.391,
+      "Iron Man": 0.281,
+      "Green Hornet": 0.172
+     },
+     "held_out_score": {
+      "1943 serial": 13.0,
+      "Batman '66": 23.0,
+      "Dark Knight Returns": 38.0,
+      "Year One": 35.0,
+      "The Killing Joke": 22.0,
+      "A Death in the Family": 34.0,
+      "Gotham by Gaslight": 22.0,
+      "Arkham Asylum (comic)": 15.0,
+      "Batman '89": 32.0,
+      "Batman Returns": 25.0,
+      "Mask of the Phantasm": 34.0,
+      "Knightfall": 40.0,
+      "Batman Forever": 21.0,
+      "The Long Halloween": 40.0,
+      "Batman & Robin": 29.0,
+      "Return of the Joker": 33.0,
+      "Hush": 40.0,
+      "Batman Begins": 37.0,
+      "The Dark Knight": 30.0,
+      "Batman R.I.P.": 35.0,
+      "Arkham Asylum (game)": 29.0,
+      "Under the Red Hood": 40.0,
+      "Arkham City": 38.0,
+      "Dark Knight Rises": 33.0,
+      "Earth One": 38.0,
+      "Arkham Knight": 40.0,
+      "Batman v Superman": 34.0,
+      "Lego Batman": 27.0,
+      "White Knight": 40.0,
+      "Batman Ninja": 29.0,
+      "Joker (2019)": 32.0,
+      "The Batman": 27.0
+     },
+     "ordinary_films": {
+      "auc": 0.47690217391304346,
+      "ci95": [
+       0.34510303442028983,
+       0.6012228260869565
+      ]
+     },
+     "literary_cousins": {
+      "auc": 0.4375,
+      "ci95": [
+       0.140625,
+       0.7500781249999996
+      ]
+     }
+    },
+    "openings": {
+     "hero_film_cousins": {
+      "auc": 0.453125,
+      "ci95": [
+       0.249951171875,
+       0.6640625
+      ]
+     },
+     "per_batman_vs_hero": {
+      "1943 serial": 0.125,
+      "Batman '66": 0.125,
+      "Dark Knight Returns": 0.812,
+      "Year One": 0.812,
+      "The Killing Joke": 0.438,
+      "A Death in the Family": 0.812,
+      "Gotham by Gaslight": 0.562,
+      "Arkham Asylum (comic)": 0.25,
+      "Batman '89": 0.812,
+      "Batman Returns": 0.25,
+      "Mask of the Phantasm": 0.812,
+      "Knightfall": 0.125,
+      "Batman Forever": 0.25,
+      "The Long Halloween": 0.812,
+      "Batman & Robin": 0.125,
+      "Return of the Joker": 0.125,
+      "Hush": 0.812,
+      "Batman Begins": 0.812,
+      "The Dark Knight": 0.438,
+      "Batman R.I.P.": 0.562,
+      "Arkham Asylum (game)": 0.125,
+      "Under the Red Hood": 0.812,
+      "Arkham City": 0.125,
+      "Dark Knight Rises": 0.562,
+      "Earth One": 0.25,
+      "Arkham Knight": 0.062,
+      "Batman v Superman": 0.812,
+      "Lego Batman": 0.125,
+      "White Knight": 0.562,
+      "Batman Ninja": 0.25,
+      "Joker (2019)": 0.812,
+      "The Batman": 0.125
+     },
+     "per_cousin_beaten_by": {
+      "The Bat (1926)": 0.391,
+      "Zorro": 0.016,
+      "The Shadow": 0.5,
+      "Superman": 0.828,
+      "Spider-Man": 0.828,
+      "Daredevil": 0.594,
+      "Iron Man": 0.391,
+      "Green Hornet": 0.828
+     },
+     "held_out_score": {
+      "1943 serial": 13.0,
+      "Batman '66": 13.0,
+      "Dark Knight Returns": 20.0,
+      "Year One": 20.0,
+      "The Killing Joke": 18.0,
+      "A Death in the Family": 20.0,
+      "Gotham by Gaslight": 19.0,
+      "Arkham Asylum (comic)": 17.0,
+      "Batman '89": 20.0,
+      "Batman Returns": 17.0,
+      "Mask of the Phantasm": 20.0,
+      "Knightfall": 11.0,
+      "Batman Forever": 17.0,
+      "The Long Halloween": 20.0,
+      "Batman & Robin": 15.0,
+      "Return of the Joker": 16.0,
+      "Hush": 20.0,
+      "Batman Begins": 20.0,
+      "The Dark Knight": 18.0,
+      "Batman R.I.P.": 19.0,
+      "Arkham Asylum (game)": 15.0,
+      "Under the Red Hood": 20.0,
+      "Arkham City": 16.0,
+      "Dark Knight Rises": 19.0,
+      "Earth One": 17.0,
+      "Arkham Knight": 9.0,
+      "Batman v Superman": 20.0,
+      "Lego Batman": 16.0,
+      "White Knight": 19.0,
+      "Batman Ninja": 17.0,
+      "Joker (2019)": 20.0,
+      "The Batman": 16.0
+     },
+     "ordinary_films": {
+      "auc": 0.34375,
+      "ci95": [
+       0.2318840579710145,
+       0.4610733695652173
+      ]
+     },
+     "literary_cousins": {
+      "auc": 0.325,
+      "ci95": [
+       0.15625,
+       0.5375781249999996
+      ]
+     },
+     "null_label_shuffle": {
+      "n": 1000,
+      "mean": 0.49556640625,
+      "p95": 0.677734375,
+      "p_value": 0.6643356643356644
+     }
+    },
+    "verdict": "not met",
+    "clauses": {
+     "auc_at_least_0.80": false,
+     "ci_lower_at_least_0.65": false,
+     "above_null_p95": true,
+     "within_0.05_without_iconography": true,
+     "openings_auc_at_least_0.70": false,
+     "openings_above_own_null_p95": false
+    },
+    "all_six_clauses_evaluated": true,
+    "falsified_by_v1_rule": false
+   },
+   "length_alone_words": {
+    "A_name_free": {
+     "hero_film_cousins": {
+      "auc": 0.783203125,
+      "ci95": [
+       0.59365234375,
+       0.93359375
+      ]
+     },
+     "per_batman_vs_hero": {
+      "1943 serial": 0.125,
+      "Batman '66": 0.75,
+      "Dark Knight Returns": 1.0,
+      "Year One": 0.75,
+      "The Killing Joke": 0.375,
+      "A Death in the Family": 0.625,
+      "Gotham by Gaslight": 0.375,
+      "Arkham Asylum (comic)": 0.375,
+      "Batman '89": 0.688,
+      "Batman Returns": 0.625,
+      "Mask of the Phantasm": 1.0,
+      "Knightfall": 1.0,
+      "Batman Forever": 0.5,
+      "The Long Halloween": 1.0,
+      "Batman & Robin": 0.875,
+      "Return of the Joker": 1.0,
+      "Hush": 1.0,
+      "Batman Begins": 1.0,
+      "The Dark Knight": 0.625,
+      "Batman R.I.P.": 1.0,
+      "Arkham Asylum (game)": 1.0,
+      "Under the Red Hood": 1.0,
+      "Arkham City": 1.0,
+      "Dark Knight Rises": 0.875,
+      "Earth One": 1.0,
+      "Arkham Knight": 1.0,
+      "Batman v Superman": 0.5,
+      "Lego Batman": 0.625,
+      "White Knight": 1.0,
+      "Batman Ninja": 0.75,
+      "Joker (2019)": 0.875,
+      "The Batman": 0.75
+     },
+     "per_cousin_beaten_by": {
+      "The Bat (1926)": 0.328,
+      "Zorro": 0.0,
+      "The Shadow": 0.031,
+      "Superman": 0.125,
+      "Spider-Man": 0.188,
+      "Daredevil": 0.469,
+      "Iron Man": 0.562,
+      "Green Hornet": 0.031
+     },
+     "held_out_score": {
+      "1943 serial": 295.0,
+      "Batman '66": 658.0,
+      "Dark Knight Returns": 704.0,
+      "Year One": 655.0,
+      "The Killing Joke": 493.0,
+      "A Death in the Family": 616.0,
+      "Gotham by Gaslight": 488.0,
+      "Arkham Asylum (comic)": 515.0,
+      "Batman '89": 648.0,
+      "Batman Returns": 632.0,
+      "Mask of the Phantasm": 754.0,
+      "Knightfall": 1055.0,
+      "Batman Forever": 565.0,
+      "The Long Halloween": 785.0,
+      "Batman & Robin": 676.0,
+      "Return of the Joker": 749.0,
+      "Hush": 765.0,
+      "Batman Begins": 709.0,
+      "The Dark Knight": 632.0,
+      "Batman R.I.P.": 847.0,
+      "Arkham Asylum (game)": 865.0,
+      "Under the Red Hood": 717.0,
+      "Arkham City": 885.0,
+      "Dark Knight Rises": 670.0,
+      "Earth One": 966.0,
+      "Arkham Knight": 1049.0,
+      "Batman v Superman": 574.0,
+      "Lego Batman": 622.0,
+      "White Knight": 793.0,
+      "Batman Ninja": 650.0,
+      "Joker (2019)": 663.0,
+      "The Batman": 653.0
+     },
+     "ordinary_films": {
+      "auc": 0.6188858695652174,
+      "ci95": [
+       0.47683423913043477,
+       0.7454936594202898
+      ]
+     },
+     "literary_cousins": {
+      "auc": 0.6375,
+      "ci95": [
+       0.34984375,
+       0.9125
+      ]
+     },
+     "null_label_shuffle": {
+      "n": 1000,
+      "mean": 0.50369140625,
+      "p95": 0.6953125,
+      "p_value": 0.006993006993006993
+     }
+    },
+    "A_iconography_dropped": {
+     "hero_film_cousins": {
+      "auc": 0.755859375,
+      "ci95": [
+       0.57021484375,
+       0.90625
+      ]
+     },
+     "per_batman_vs_hero": {
+      "1943 serial": 0.125,
+      "Batman '66": 0.75,
+      "Dark Knight Returns": 1.0,
+      "Year One": 0.75,
+      "The Killing Joke": 0.5,
+      "A Death in the Family": 0.75,
+      "Gotham by Gaslight": 0.25,
+      "Arkham Asylum (comic)": 0.125,
+      "Batman '89": 0.812,
+      "Batman Returns": 0.5,
+      "Mask of the Phantasm": 1.0,
+      "Knightfall": 1.0,
+      "Batman Forever": 0.25,
+      "The Long Halloween": 1.0,
+      "Batman & Robin": 1.0,
+      "Return of the Joker": 1.0,
+      "Hush": 1.0,
+      "Batman Begins": 0.875,
+      "The Dark Knight": 0.875,
+      "Batman R.I.P.": 1.0,
+      "Arkham Asylum (game)": 0.5,
+      "Under the Red Hood": 1.0,
+      "Arkham City": 1.0,
+      "Dark Knight Rises": 0.875,
+      "Earth One": 1.0,
+      "Arkham Knight": 1.0,
+      "Batman v Superman": 0.625,
+      "Lego Batman": 0.75,
+      "White Knight": 1.0,
+      "Batman Ninja": 0.625,
+      "Joker (2019)": 0.5,
+      "The Batman": 0.75
+     },
+     "per_cousin_beaten_by": {
+      "The Bat (1926)": 0.25,
+      "Zorro": 0.0,
+      "The Shadow": 0.125,
+      "Superman": 0.125,
+      "Spider-Man": 0.312,
+      "Daredevil": 0.594,
+      "Iron Man": 0.484,
+      "Green Hornet": 0.062
+     },
+     "held_out_score": {
+      "1943 serial": 264.0,
+      "Batman '66": 564.0,
+      "Dark Knight Returns": 648.0,
+      "Year One": 585.0,
+      "The Killing Joke": 467.0,
+      "A Death in the Family": 585.0,
+      "Gotham by Gaslight": 422.0,
+      "Arkham Asylum (comic)": 269.0,
+      "Batman '89": 599.0,
+      "Batman Returns": 525.0,
+      "Mask of the Phantasm": 726.0,
+      "Knightfall": 982.0,
+      "Batman Forever": 423.0,
+      "The Long Halloween": 716.0,
+      "Batman & Robin": 638.0,
+      "Return of the Joker": 698.0,
+      "Hush": 715.0,
+      "Batman Begins": 608.0,
+      "The Dark Knight": 604.0,
+      "Batman R.I.P.": 717.0,
+      "Arkham Asylum (game)": 514.0,
+      "Under the Red Hood": 662.0,
+      "Arkham City": 683.0,
+      "Dark Knight Rises": 601.0,
+      "Earth One": 850.0,
+      "Arkham Knight": 885.0,
+      "Batman v Superman": 538.0,
+      "Lego Batman": 596.0,
+      "White Knight": 736.0,
+      "Batman Ninja": 557.0,
+      "Joker (2019)": 533.0,
+      "The Batman": 585.0
+     },
+     "ordinary_films": {
+      "auc": 0.5029438405797102,
+      "ci95": [
+       0.35914288949275364,
+       0.6422271286231883
+      ]
+     },
+     "literary_cousins": {
+      "auc": 0.575,
+      "ci95": [
+       0.25625,
+       0.875
+      ]
+     }
+    },
+    "openings": {
+     "hero_film_cousins": {
+      "auc": 0.5234375,
+      "ci95": [
+       0.263671875,
+       0.7812988281249997
+      ]
+     },
+     "per_batman_vs_hero": {
+      "1943 serial": 0.125,
+      "Batman '66": 0.375,
+      "Dark Knight Returns": 0.938,
+      "Year One": 0.375,
+      "The Killing Joke": 0.625,
+      "A Death in the Family": 0.375,
+      "Gotham by Gaslight": 0.688,
+      "Arkham Asylum (comic)": 0.375,
+      "Batman '89": 0.625,
+      "Batman Returns": 0.625,
+      "Mask of the Phantasm": 0.625,
+      "Knightfall": 0.375,
+      "Batman Forever": 0.375,
+      "The Long Halloween": 0.375,
+      "Batman & Robin": 0.375,
+      "Return of the Joker": 0.375,
+      "Hush": 0.125,
+      "Batman Begins": 0.375,
+      "The Dark Knight": 0.375,
+      "Batman R.I.P.": 0.375,
+      "Arkham Asylum (game)": 1.0,
+      "Under the Red Hood": 0.375,
+      "Arkham City": 0.375,
+      "Dark Knight Rises": 0.812,
+      "Earth One": 0.375,
+      "Arkham Knight": 0.938,
+      "Batman v Superman": 0.375,
+      "Lego Batman": 0.625,
+      "White Knight": 0.375,
+      "Batman Ninja": 1.0,
+      "Joker (2019)": 0.625,
+      "The Batman": 1.0
+     },
+     "per_cousin_beaten_by": {
+      "The Bat (1926)": 0.797,
+      "Zorro": 0.0,
+      "The Shadow": 0.594,
+      "Superman": 0.828,
+      "Spider-Man": 0.062,
+      "Daredevil": 0.594,
+      "Iron Man": 0.875,
+      "Green Hornet": 0.062
+     },
+     "held_out_score": {
+      "1943 serial": 295.0,
+      "Batman '66": 372.0,
+      "Dark Knight Returns": 394.0,
+      "Year One": 378.0,
+      "The Killing Joke": 391.0,
+      "A Death in the Family": 371.0,
+      "Gotham by Gaslight": 392.0,
+      "Arkham Asylum (comic)": 386.0,
+      "Batman '89": 389.0,
+      "Batman Returns": 391.0,
+      "Mask of the Phantasm": 391.0,
+      "Knightfall": 370.0,
+      "Batman Forever": 384.0,
+      "The Long Halloween": 375.0,
+      "Batman & Robin": 375.0,
+      "Return of the Joker": 386.0,
+      "Hush": 327.0,
+      "Batman Begins": 385.0,
+      "The Dark Knight": 374.0,
+      "Batman R.I.P.": 373.0,
+      "Arkham Asylum (game)": 398.0,
+      "Under the Red Hood": 372.0,
+      "Arkham City": 385.0,
+      "Dark Knight Rises": 393.0,
+      "Earth One": 380.0,
+      "Arkham Knight": 394.0,
+      "Batman v Superman": 353.0,
+      "Lego Batman": 390.0,
+      "White Knight": 381.0,
+      "Batman Ninja": 398.0,
+      "Joker (2019)": 390.0,
+      "The Batman": 399.0
+     },
+     "ordinary_films": {
+      "auc": 0.5373641304347826,
+      "ci95": [
+       0.4168817934782609,
+       0.6573879076086957
+      ]
+     },
+     "literary_cousins": {
+      "auc": 0.596875,
+      "ci95": [
+       0.29375,
+       0.875
+      ]
+     },
+     "null_label_shuffle": {
+      "n": 1000,
+      "mean": 0.4992265625,
+      "p95": 0.6935546874999998,
+      "p_value": 0.4045954045954046
+     }
+    },
+    "verdict": "not met",
+    "clauses": {
+     "auc_at_least_0.80": false,
+     "ci_lower_at_least_0.65": false,
+     "above_null_p95": true,
+     "within_0.05_without_iconography": true,
+     "openings_auc_at_least_0.70": false,
+     "openings_above_own_null_p95": false
+    },
+    "all_six_clauses_evaluated": true,
+    "falsified_by_v1_rule": false
+   }
+  },
+  "E2": {
+   "tfidf_cosine": {
+    "primary": {
+     "rows": [
+      {
+       "target": "Batman Begins",
+       "sources": [
+        "Year One"
+       ],
+       "share_of_comics_beating_source": 0.0,
+       "rank": 1,
+       "n_comics": 9,
+       "beats_median": true
+      },
+      {
+       "target": "The Dark Knight",
+       "sources": [
+        "The Long Halloween",
+        "The Killing Joke"
+       ],
+       "share_of_comics_beating_source": 0.125,
+       "rank": 2,
+       "n_comics": 10,
+       "beats_median": true
+      },
+      {
+       "target": "Dark Knight Rises",
+       "sources": [
+        "Knightfall",
+        "Dark Knight Returns"
+       ],
+       "share_of_comics_beating_source": 0.667,
+       "rank": 7,
+       "n_comics": 11,
+       "beats_median": false
+      },
+      {
+       "target": "Batman v Superman",
+       "sources": [
+        "Dark Knight Returns"
+       ],
+       "share_of_comics_beating_source": 0.2,
+       "rank": 3,
+       "n_comics": 11,
+       "beats_median": true
+      },
+      {
+       "target": "Under the Red Hood",
+       "sources": [
+        "A Death in the Family"
+       ],
+       "share_of_comics_beating_source": 0.0,
+       "rank": 1,
+       "n_comics": 10,
+       "beats_median": true
+      },
+      {
+       "target": "Arkham Asylum (game)",
+       "sources": [
+        "Arkham Asylum (comic)"
+       ],
+       "share_of_comics_beating_source": 0.0,
+       "rank": 1,
+       "n_comics": 10,
+       "beats_median": true
+      },
+      {
+       "target": "Batman '89",
+       "sources": [
+        "The Killing Joke"
+       ],
+       "share_of_comics_beating_source": 0.0,
+       "rank": 1,
+       "n_comics": 6,
+       "beats_median": true
+      },
+      {
+       "target": "Joker (2019)",
+       "sources": [
+        "The Killing Joke"
+       ],
+       "share_of_comics_beating_source": 0.0,
+       "rank": 1,
+       "n_comics": 12,
+       "beats_median": true
+      },
+      {
+       "target": "The Batman",
+       "sources": [
+        "Year One",
+        "The Long Halloween"
+       ],
+       "share_of_comics_beating_source": 0.0,
+       "rank": 1,
+       "n_comics": 12,
+       "beats_median": true
+      }
+     ],
+     "mean_share_beating_source": 0.11022222222222222,
+     "null_mean": 0.4656075897867565,
+     "p_one_sided": 0.0006999300069993001,
+     "beats_median": 8,
+     "n": 9,
+     "placebo_mean": 0.4223589510626547,
+     "placebo_min": 0.29100529100529093,
+     "real_below_all_placebos": true,
+     "placebo_p5": 0.2946031746031746,
+     "n_valid_placebos": 9,
+     "placebo_excluded_no_eligible_comic": [
+      "1943 serial",
+      "Batman '66"
+     ],
+     "placebo_by_target": {
+      "Batman Returns": 0.4,
+      "Batman Forever": 0.5,
+      "Batman & Robin": 0.30952380952380953,
+      "Mask of the Phantasm": 0.30000000000000004,
+      "Return of the Joker": 0.29100529100529093,
+      "Arkham City": 0.49845679012345673,
+      "Arkham Knight": 0.5567901234567901,
+      "Lego Batman": 0.42828282828282827,
+      "Batman Ninja": 0.5171717171717172
+     },
+     "chance": {
+      "observed_unrounded": 0.11018518518518519,
+      "joint_relabelling_exact": {
+       "n_maps": 3991680,
+       "mean": 0.4667601945379723,
+       "p": 0.0003136523969857303
+      },
+      "joint_relabelling_time_consistent": {
+       "n_maps": 483840,
+       "mean": 0.4369858089548483,
+       "p": 0.0007998511904761905
+      },
+      "within_era": {
+       "n_maps": 1440,
+       "mean": 0.4280490086045641,
+       "p": 0.002777777777777778
+      },
+      "eligible_uniform_expectation": 0.4444444444444444
+     }
+    },
+    "share_ties_half": 0.11018518518518519,
+    "sequels_name_free": {
+     "rows": [
+      {
+       "sequel": "The Dark Knight",
+       "prequel": "Batman Begins",
+       "rank": 1,
+       "n": 9,
+       "closest": "Batman Begins"
+      },
+      {
+       "sequel": "Dark Knight Rises",
+       "prequel": "The Dark Knight",
+       "rank": 1,
+       "n": 13,
+       "closest": "The Dark Knight"
+      },
+      {
+       "sequel": "Batman Returns",
+       "prequel": "Batman '89",
+       "rank": 1,
+       "n": 3,
+       "closest": "Batman '89"
+      },
+      {
+       "sequel": "Batman Forever",
+       "prequel": "Batman Returns",
+       "rank": 3,
+       "n": 5,
+       "closest": "1943 serial"
+      },
+      {
+       "sequel": "Batman & Robin",
+       "prequel": "Batman Forever",
+       "rank": 1,
+       "n": 6,
+       "closest": "Batman Forever"
+      },
+      {
+       "sequel": "Arkham City",
+       "prequel": "Arkham Asylum (game)",
+       "rank": 1,
+       "n": 12,
+       "closest": "Arkham Asylum (game)"
+      },
+      {
+       "sequel": "Arkham Knight",
+       "prequel": "Arkham City",
+       "rank": 2,
+       "n": 14,
+       "closest": "Arkham Asylum (game)"
+      }
+     ],
+     "top2": 6,
+     "n": 7
+    }
+   },
+   "word_presence": {
+    "primary": {
+     "rows": [
+      {
+       "target": "Batman Begins",
+       "sources": [
+        "Year One"
+       ],
+       "share_of_comics_beating_source": 0.0,
+       "rank": 1,
+       "n_comics": 9,
+       "beats_median": true
+      },
+      {
+       "target": "The Dark Knight",
+       "sources": [
+        "The Long Halloween",
+        "The Killing Joke"
+       ],
+       "share_of_comics_beating_source": 0.125,
+       "rank": 2,
+       "n_comics": 10,
+       "beats_median": true
+      },
+      {
+       "target": "Dark Knight Rises",
+       "sources": [
+        "Knightfall",
+        "Dark Knight Returns"
+       ],
+       "share_of_comics_beating_source": 0.444,
+       "rank": 5,
+       "n_comics": 11,
+       "beats_median": true
+      },
+      {
+       "target": "Batman v Superman",
+       "sources": [
+        "Dark Knight Returns"
+       ],
+       "share_of_comics_beating_source": 0.2,
+       "rank": 3,
+       "n_comics": 11,
+       "beats_median": true
+      },
+      {
+       "target": "Under the Red Hood",
+       "sources": [
+        "A Death in the Family"
+       ],
+       "share_of_comics_beating_source": 0.0,
+       "rank": 1,
+       "n_comics": 10,
+       "beats_median": true
+      },
+      {
+       "target": "Arkham Asylum (game)",
+       "sources": [
+        "Arkham Asylum (comic)"
+       ],
+       "share_of_comics_beating_source": 0.444,
+       "rank": 5,
+       "n_comics": 10,
+       "beats_median": true
+      },
+      {
+       "target": "Batman '89",
+       "sources": [
+        "The Killing Joke"
+       ],
+       "share_of_comics_beating_source": 0.2,
+       "rank": 2,
+       "n_comics": 6,
+       "beats_median": true
+      },
+      {
+       "target": "Joker (2019)",
+       "sources": [
+        "The Killing Joke"
+       ],
+       "share_of_comics_beating_source": 0.091,
+       "rank": 2,
+       "n_comics": 12,
+       "beats_median": true
+      },
+      {
+       "target": "The Batman",
+       "sources": [
+        "Year One",
+        "The Long Halloween"
+       ],
+       "share_of_comics_beating_source": 0.0,
+       "rank": 1,
+       "n_comics": 12,
+       "beats_median": true
+      }
+     ],
+     "mean_share_beating_source": 0.1671111111111111,
+     "null_mean": 0.46924478114478113,
+     "p_one_sided": 0.0020997900209979003,
+     "beats_median": 9,
+     "n": 9,
+     "placebo_mean": 0.43708736393921577,
+     "placebo_min": 0.30000000000000004,
+     "real_below_all_placebos": true,
+     "placebo_p5": 0.3217989417989418,
+     "n_valid_placebos": 9,
+     "placebo_excluded_no_eligible_comic": [
+      "1943 serial",
+      "Batman '66"
+     ],
+     "placebo_by_target": {
+      "Batman Returns": 0.46666666666666656,
+      "Batman Forever": 0.5148148148148147,
+      "Batman & Robin": 0.3968253968253968,
+      "Mask of the Phantasm": 0.30000000000000004,
+      "Return of the Joker": 0.3544973544973545,
+      "Arkham City": 0.5138888888888888,
+      "Arkham Knight": 0.5901234567901235,
+      "Lego Batman": 0.3878787878787879,
+      "Batman Ninja": 0.40909090909090906
+     },
+     "chance": {
+      "observed_unrounded": 0.16719977553310883,
+      "joint_relabelling_exact": {
+       "n_maps": 3991680,
+       "mean": 0.46974373363262256,
+       "p": 0.0017827080327080327
+      },
+      "joint_relabelling_time_consistent": {
+       "n_maps": 483840,
+       "mean": 0.44264083877799154,
+       "p": 0.002914186507936508
+      },
+      "within_era": {
+       "n_maps": 1440,
+       "mean": 0.4278432472876918,
+       "p": 0.004166666666666667
+      },
+      "eligible_uniform_expectation": 0.4444444444444444
+     }
+    },
+    "share_ties_half": 0.16719977553310883,
+    "sequels_name_free": {
+     "rows": [
+      {
+       "sequel": "The Dark Knight",
+       "prequel": "Batman Begins",
+       "rank": 1,
+       "n": 9,
+       "closest": "Batman Begins"
+      },
+      {
+       "sequel": "Dark Knight Rises",
+       "prequel": "The Dark Knight",
+       "rank": 1,
+       "n": 13,
+       "closest": "The Dark Knight"
+      },
+      {
+       "sequel": "Batman Returns",
+       "prequel": "Batman '89",
+       "rank": 1,
+       "n": 3,
+       "closest": "Batman '89"
+      },
+      {
+       "sequel": "Batman Forever",
+       "prequel": "Batman Returns",
+       "rank": 3,
+       "n": 5,
+       "closest": "1943 serial"
+      },
+      {
+       "sequel": "Batman & Robin",
+       "prequel": "Batman Forever",
+       "rank": 1,
+       "n": 6,
+       "closest": "Batman Forever"
+      },
+      {
+       "sequel": "Arkham City",
+       "prequel": "Arkham Asylum (game)",
+       "rank": 1,
+       "n": 12,
+       "closest": "Arkham Asylum (game)"
+      },
+      {
+       "sequel": "Arkham Knight",
+       "prequel": "Arkham City",
+       "rank": 2,
+       "n": 14,
+       "closest": "Arkham Asylum (game)"
+      }
+     ],
+     "top2": 6,
+     "n": 7
+    }
+   },
+   "tfidf_background_weights": {
+    "primary": {
+     "rows": [
+      {
+       "target": "Batman Begins",
+       "sources": [
+        "Year One"
+       ],
+       "share_of_comics_beating_source": 0.0,
+       "rank": 1,
+       "n_comics": 9,
+       "beats_median": true
+      },
+      {
+       "target": "The Dark Knight",
+       "sources": [
+        "The Long Halloween",
+        "The Killing Joke"
+       ],
+       "share_of_comics_beating_source": 0.25,
+       "rank": 3,
+       "n_comics": 10,
+       "beats_median": true
+      },
+      {
+       "target": "Dark Knight Rises",
+       "sources": [
+        "Knightfall",
+        "Dark Knight Returns"
+       ],
+       "share_of_comics_beating_source": 0.667,
+       "rank": 7,
+       "n_comics": 11,
+       "beats_median": false
+      },
+      {
+       "target": "Batman v Superman",
+       "sources": [
+        "Dark Knight Returns"
+       ],
+       "share_of_comics_beating_source": 0.1,
+       "rank": 2,
+       "n_comics": 11,
+       "beats_median": true
+      },
+      {
+       "target": "Under the Red Hood",
+       "sources": [
+        "A Death in the Family"
+       ],
+       "share_of_comics_beating_source": 0.0,
+       "rank": 1,
+       "n_comics": 10,
+       "beats_median": true
+      },
+      {
+       "target": "Arkham Asylum (game)",
+       "sources": [
+        "Arkham Asylum (comic)"
+       ],
+       "share_of_comics_beating_source": 0.0,
+       "rank": 1,
+       "n_comics": 10,
+       "beats_median": true
+      },
+      {
+       "target": "Batman '89",
+       "sources": [
+        "The Killing Joke"
+       ],
+       "share_of_comics_beating_source": 0.0,
+       "rank": 1,
+       "n_comics": 6,
+       "beats_median": true
+      },
+      {
+       "target": "Joker (2019)",
+       "sources": [
+        "The Killing Joke"
+       ],
+       "share_of_comics_beating_source": 0.0,
+       "rank": 1,
+       "n_comics": 12,
+       "beats_median": true
+      },
+      {
+       "target": "The Batman",
+       "sources": [
+        "Year One",
+        "The Long Halloween"
+       ],
+       "share_of_comics_beating_source": 0.0,
+       "rank": 1,
+       "n_comics": 12,
+       "beats_median": true
+      }
+     ],
+     "mean_share_beating_source": 0.11299999999999999,
+     "null_mean": 0.46564683221099895,
+     "p_one_sided": 0.0005999400059994001,
+     "beats_median": 8,
+     "n": 9,
+     "placebo_mean": 0.45227539949762174,
+     "placebo_min": 0.29100529100529093,
+     "real_below_all_placebos": true,
+     "placebo_p5": 0.29460317460317453,
+     "n_valid_placebos": 9,
+     "placebo_excluded_no_eligible_comic": [
+      "1943 serial",
+      "Batman '66"
+     ],
+     "placebo_by_target": {
+      "Batman Returns": 0.48888888888888893,
+      "Batman Forever": 0.5148148148148147,
+      "Batman & Robin": 0.3650793650793651,
+      "Mask of the Phantasm": 0.3,
+      "Return of the Joker": 0.29100529100529093,
+      "Arkham City": 0.5108024691358025,
+      "Arkham Knight": 0.5938271604938271,
+      "Lego Batman": 0.4575757575757576,
+      "Batman Ninja": 0.5484848484848485
+     },
+     "chance": {
+      "observed_unrounded": 0.11296296296296296,
+      "joint_relabelling_exact": {
+       "n_maps": 3991680,
+       "mean": 0.4664983164983165,
+       "p": 0.0003346961680295014
+      },
+      "joint_relabelling_time_consistent": {
+       "n_maps": 483840,
+       "mean": 0.4301700279637201,
+       "p": 0.001176008597883598
+      },
+      "within_era": {
+       "n_maps": 1440,
+       "mean": 0.4342896558174336,
+       "p": 0.002777777777777778
+      },
+      "eligible_uniform_expectation": 0.4444444444444444
+     }
+    },
+    "share_ties_half": 0.11296296296296296,
+    "sequels_name_free": {
+     "rows": [
+      {
+       "sequel": "The Dark Knight",
+       "prequel": "Batman Begins",
+       "rank": 1,
+       "n": 9,
+       "closest": "Batman Begins"
+      },
+      {
+       "sequel": "Dark Knight Rises",
+       "prequel": "The Dark Knight",
+       "rank": 1,
+       "n": 13,
+       "closest": "The Dark Knight"
+      },
+      {
+       "sequel": "Batman Returns",
+       "prequel": "Batman '89",
+       "rank": 1,
+       "n": 3,
+       "closest": "Batman '89"
+      },
+      {
+       "sequel": "Batman Forever",
+       "prequel": "Batman Returns",
+       "rank": 3,
+       "n": 5,
+       "closest": "1943 serial"
+      },
+      {
+       "sequel": "Batman & Robin",
+       "prequel": "Batman Forever",
+       "rank": 1,
+       "n": 6,
+       "closest": "Batman Forever"
+      },
+      {
+       "sequel": "Arkham City",
+       "prequel": "Arkham Asylum (game)",
+       "rank": 1,
+       "n": 12,
+       "closest": "Arkham Asylum (game)"
+      },
+      {
+       "sequel": "Arkham Knight",
+       "prequel": "Arkham City",
+       "rank": 2,
+       "n": 14,
+       "closest": "Arkham Asylum (game)"
+      }
+     ],
+     "top2": 6,
+     "n": 7
+    }
+   },
+   "word_presence_background_rare": {
+    "primary": {
+     "rows": [
+      {
+       "target": "Batman Begins",
+       "sources": [
+        "Year One"
+       ],
+       "share_of_comics_beating_source": 0.875,
+       "rank": 8,
+       "n_comics": 9,
+       "beats_median": false
+      },
+      {
+       "target": "The Dark Knight",
+       "sources": [
+        "The Long Halloween",
+        "The Killing Joke"
+       ],
+       "share_of_comics_beating_source": 0.125,
+       "rank": 2,
+       "n_comics": 10,
+       "beats_median": true
+      },
+      {
+       "target": "Dark Knight Rises",
+       "sources": [
+        "Knightfall",
+        "Dark Knight Returns"
+       ],
+       "share_of_comics_beating_source": 0.556,
+       "rank": 6,
+       "n_comics": 11,
+       "beats_median": false
+      },
+      {
+       "target": "Batman v Superman",
+       "sources": [
+        "Dark Knight Returns"
+       ],
+       "share_of_comics_beating_source": 0.7,
+       "rank": 8,
+       "n_comics": 11,
+       "beats_median": false
+      },
+      {
+       "target": "Under the Red Hood",
+       "sources": [
+        "A Death in the Family"
+       ],
+       "share_of_comics_beating_source": 0.111,
+       "rank": 2,
+       "n_comics": 10,
+       "beats_median": true
+      },
+      {
+       "target": "Arkham Asylum (game)",
+       "sources": [
+        "Arkham Asylum (comic)"
+       ],
+       "share_of_comics_beating_source": 0.333,
+       "rank": 4,
+       "n_comics": 10,
+       "beats_median": true
+      },
+      {
+       "target": "Batman '89",
+       "sources": [
+        "The Killing Joke"
+       ],
+       "share_of_comics_beating_source": 0.0,
+       "rank": 1,
+       "n_comics": 6,
+       "beats_median": true
+      },
+      {
+       "target": "Joker (2019)",
+       "sources": [
+        "The Killing Joke"
+       ],
+       "share_of_comics_beating_source": 0.182,
+       "rank": 3,
+       "n_comics": 12,
+       "beats_median": true
+      },
+      {
+       "target": "The Batman",
+       "sources": [
+        "Year One",
+        "The Long Halloween"
+       ],
+       "share_of_comics_beating_source": 0.0,
+       "rank": 1,
+       "n_comics": 12,
+       "beats_median": true
+      }
+     ],
+     "mean_share_beating_source": 0.32022222222222224,
+     "null_mean": 0.4690054208754209,
+     "p_one_sided": 0.06469353064693531,
+     "beats_median": 6,
+     "n": 9,
+     "placebo_mean": 0.439831738905813,
+     "placebo_min": 0.2486772486772487,
+     "real_below_all_placebos": false,
+     "placebo_p5": 0.2617989417989418,
+     "n_valid_placebos": 9,
+     "placebo_excluded_no_eligible_comic": [
+      "1943 serial",
+      "Batman '66"
+     ],
+     "placebo_by_target": {
+      "Batman Returns": 0.4,
+      "Batman Forever": 0.5296296296296297,
+      "Batman & Robin": 0.4312169312169312,
+      "Mask of the Phantasm": 0.28148148148148144,
+      "Return of the Joker": 0.2486772486772487,
+      "Arkham City": 0.5601851851851851,
+      "Arkham Knight": 0.5790123456790124,
+      "Lego Batman": 0.47878787878787876,
+      "Batman Ninja": 0.44949494949494956
+     },
+     "chance": {
+      "observed_unrounded": 0.3202020202020202,
+      "joint_relabelling_exact": {
+       "n_maps": 3991680,
+       "mean": 0.4704919566030677,
+       "p": 0.06249223384640051
+      },
+      "joint_relabelling_time_consistent": {
+       "n_maps": 483840,
+       "mean": 0.43982807155550213,
+       "p": 0.1195250496031746
+      },
+      "within_era": {
+       "n_maps": 1440,
+       "mean": 0.42675832398054625,
+       "p": 0.1284722222222222
+      },
+      "eligible_uniform_expectation": 0.4444444444444444
+     }
+    },
+    "share_ties_half": 0.3202020202020202,
+    "sequels_name_free": {
+     "rows": [
+      {
+       "sequel": "The Dark Knight",
+       "prequel": "Batman Begins",
+       "rank": 4,
+       "n": 9,
+       "closest": "Mask of the Phantasm"
+      },
+      {
+       "sequel": "Dark Knight Rises",
+       "prequel": "The Dark Knight",
+       "rank": 1,
+       "n": 13,
+       "closest": "The Dark Knight"
+      },
+      {
+       "sequel": "Batman Returns",
+       "prequel": "Batman '89",
+       "rank": 2,
+       "n": 3,
+       "closest": "Batman '66"
+      },
+      {
+       "sequel": "Batman Forever",
+       "prequel": "Batman Returns",
+       "rank": 4,
+       "n": 5,
+       "closest": "1943 serial"
+      },
+      {
+       "sequel": "Batman & Robin",
+       "prequel": "Batman Forever",
+       "rank": 3,
+       "n": 6,
+       "closest": "1943 serial"
+      },
+      {
+       "sequel": "Arkham City",
+       "prequel": "Arkham Asylum (game)",
+       "rank": 1,
+       "n": 12,
+       "closest": "Arkham Asylum (game)"
+      },
+      {
+       "sequel": "Arkham Knight",
+       "prequel": "Arkham City",
+       "rank": 2,
+       "n": 14,
+       "closest": "Arkham Asylum (game)"
+      }
+     ],
+     "top2": 4,
+     "n": 7
+    }
+   },
+   "tfidf_words_and_pairs": {
+    "primary": {
+     "rows": [
+      {
+       "target": "Batman Begins",
+       "sources": [
+        "Year One"
+       ],
+       "share_of_comics_beating_source": 0.0,
+       "rank": 1,
+       "n_comics": 9,
+       "beats_median": true
+      },
+      {
+       "target": "The Dark Knight",
+       "sources": [
+        "The Long Halloween",
+        "The Killing Joke"
+       ],
+       "share_of_comics_beating_source": 0.125,
+       "rank": 2,
+       "n_comics": 10,
+       "beats_median": true
+      },
+      {
+       "target": "Dark Knight Rises",
+       "sources": [
+        "Knightfall",
+        "Dark Knight Returns"
+       ],
+       "share_of_comics_beating_source": 0.667,
+       "rank": 7,
+       "n_comics": 11,
+       "beats_median": false
+      },
+      {
+       "target": "Batman v Superman",
+       "sources": [
+        "Dark Knight Returns"
+       ],
+       "share_of_comics_beating_source": 0.2,
+       "rank": 3,
+       "n_comics": 11,
+       "beats_median": true
+      },
+      {
+       "target": "Under the Red Hood",
+       "sources": [
+        "A Death in the Family"
+       ],
+       "share_of_comics_beating_source": 0.0,
+       "rank": 1,
+       "n_comics": 10,
+       "beats_median": true
+      },
+      {
+       "target": "Arkham Asylum (game)",
+       "sources": [
+        "Arkham Asylum (comic)"
+       ],
+       "share_of_comics_beating_source": 0.0,
+       "rank": 1,
+       "n_comics": 10,
+       "beats_median": true
+      },
+      {
+       "target": "Batman '89",
+       "sources": [
+        "The Killing Joke"
+       ],
+       "share_of_comics_beating_source": 0.0,
+       "rank": 1,
+       "n_comics": 6,
+       "beats_median": true
+      },
+      {
+       "target": "Joker (2019)",
+       "sources": [
+        "The Killing Joke"
+       ],
+       "share_of_comics_beating_source": 0.0,
+       "rank": 1,
+       "n_comics": 12,
+       "beats_median": true
+      },
+      {
+       "target": "The Batman",
+       "sources": [
+        "Year One",
+        "The Long Halloween"
+       ],
+       "share_of_comics_beating_source": 0.0,
+       "rank": 1,
+       "n_comics": 12,
+       "beats_median": true
+      }
+     ],
+     "mean_share_beating_source": 0.11022222222222222,
+     "null_mean": 0.4660106200897868,
+     "p_one_sided": 0.0006999300069993001,
+     "beats_median": 8,
+     "n": 9,
+     "placebo_mean": 0.4263548180214847,
+     "placebo_min": 0.26296296296296295,
+     "real_below_all_placebos": true,
+     "placebo_p5": 0.2805291005291005,
+     "n_valid_placebos": 9,
+     "placebo_excluded_no_eligible_comic": [
+      "1943 serial",
+      "Batman '66"
+     ],
+     "placebo_by_target": {
+      "Batman Returns": 0.4,
+      "Batman Forever": 0.574074074074074,
+      "Batman & Robin": 0.30952380952380953,
+      "Mask of the Phantasm": 0.26296296296296295,
+      "Return of the Joker": 0.3068783068783068,
+      "Arkham City": 0.49845679012345673,
+      "Arkham Knight": 0.580246913580247,
+      "Lego Batman": 0.4080808080808081,
+      "Batman Ninja": 0.49696969696969695
+     },
+     "chance": {
+      "observed_unrounded": 0.11018518518518519,
+      "joint_relabelling_exact": {
+       "n_maps": 3991680,
+       "mean": 0.4673026561915451,
+       "p": 0.00027031224947891613
+      },
+      "joint_relabelling_time_consistent": {
+       "n_maps": 483840,
+       "mean": 0.43711588506872073,
+       "p": 0.0009837962962962962
+      },
+      "within_era": {
+       "n_maps": 1440,
+       "mean": 0.42482229704451935,
+       "p": 0.003472222222222222
+      },
+      "eligible_uniform_expectation": 0.4444444444444444
+     }
+    },
+    "share_ties_half": 0.11018518518518519,
+    "sequels_name_free": {
+     "rows": [
+      {
+       "sequel": "The Dark Knight",
+       "prequel": "Batman Begins",
+       "rank": 1,
+       "n": 9,
+       "closest": "Batman Begins"
+      },
+      {
+       "sequel": "Dark Knight Rises",
+       "prequel": "The Dark Knight",
+       "rank": 1,
+       "n": 13,
+       "closest": "The Dark Knight"
+      },
+      {
+       "sequel": "Batman Returns",
+       "prequel": "Batman '89",
+       "rank": 1,
+       "n": 3,
+       "closest": "Batman '89"
+      },
+      {
+       "sequel": "Batman Forever",
+       "prequel": "Batman Returns",
+       "rank": 3,
+       "n": 5,
+       "closest": "1943 serial"
+      },
+      {
+       "sequel": "Batman & Robin",
+       "prequel": "Batman Forever",
+       "rank": 1,
+       "n": 6,
+       "closest": "Batman Forever"
+      },
+      {
+       "sequel": "Arkham City",
+       "prequel": "Arkham Asylum (game)",
+       "rank": 1,
+       "n": 12,
+       "closest": "Arkham Asylum (game)"
+      },
+      {
+       "sequel": "Arkham Knight",
+       "prequel": "Arkham City",
+       "rank": 2,
+       "n": 14,
+       "closest": "Arkham Asylum (game)"
+      }
+     ],
+     "top2": 6,
+     "n": 7
+    }
+   },
+   "code_count_similarity": {
+    "primary": {
+     "rows": [
+      {
+       "target": "Batman Begins",
+       "sources": [
+        "Year One"
+       ],
+       "share_of_comics_beating_source": 0.5,
+       "rank": 5,
+       "n_comics": 9,
+       "beats_median": false
+      },
+      {
+       "target": "The Dark Knight",
+       "sources": [
+        "The Long Halloween",
+        "The Killing Joke"
+       ],
+       "share_of_comics_beating_source": 0.0,
+       "rank": 1,
+       "n_comics": 10,
+       "beats_median": true
+      },
+      {
+       "target": "Dark Knight Rises",
+       "sources": [
+        "Knightfall",
+        "Dark Knight Returns"
+       ],
+       "share_of_comics_beating_source": 0.333,
+       "rank": 4,
+       "n_comics": 11,
+       "beats_median": true
+      },
+      {
+       "target": "Batman v Superman",
+       "sources": [
+        "Dark Knight Returns"
+       ],
+       "share_of_comics_beating_source": 0.6,
+       "rank": 7,
+       "n_comics": 11,
+       "beats_median": false
+      },
+      {
+       "target": "Under the Red Hood",
+       "sources": [
+        "A Death in the Family"
+       ],
+       "share_of_comics_beating_source": 0.0,
+       "rank": 1,
+       "n_comics": 10,
+       "beats_median": true
+      },
+      {
+       "target": "Arkham Asylum (game)",
+       "sources": [
+        "Arkham Asylum (comic)"
+       ],
+       "share_of_comics_beating_source": 0.889,
+       "rank": 9,
+       "n_comics": 10,
+       "beats_median": false
+      },
+      {
+       "target": "Batman '89",
+       "sources": [
+        "The Killing Joke"
+       ],
+       "share_of_comics_beating_source": 0.4,
+       "rank": 3,
+       "n_comics": 6,
+       "beats_median": false
+      },
+      {
+       "target": "Joker (2019)",
+       "sources": [
+        "The Killing Joke"
+       ],
+       "share_of_comics_beating_source": 0.0,
+       "rank": 1,
+       "n_comics": 12,
+       "beats_median": true
+      },
+      {
+       "target": "The Batman",
+       "sources": [
+        "Year One",
+        "The Long Halloween"
+       ],
+       "share_of_comics_beating_source": 0.2,
+       "rank": 3,
+       "n_comics": 12,
+       "beats_median": true
+      }
+     ],
+     "mean_share_beating_source": 0.3246666666666667,
+     "null_mean": 0.4443723204264871,
+     "p_one_sided": 0.2104789521047895,
+     "beats_median": 5,
+     "n": 9,
+     "placebo_mean": 0.4627812516701406,
+     "placebo_min": 0.37272727272727274,
+     "real_below_all_placebos": true,
+     "placebo_p5": 0.38342472342472345,
+     "n_valid_placebos": 9,
+     "placebo_excluded_no_eligible_comic": [
+      "1943 serial",
+      "Batman '66"
+     ],
+     "placebo_by_target": {
+      "Batman Returns": 0.4444444444444444,
+      "Batman Forever": 0.5,
+      "Batman & Robin": 0.43121693121693117,
+      "Mask of the Phantasm": 0.5,
+      "Return of the Joker": 0.3994708994708995,
+      "Arkham City": 0.4259259259259259,
+      "Arkham Knight": 0.5074074074074074,
+      "Lego Batman": 0.37272727272727274,
+      "Batman Ninja": 0.5838383838383838
+     },
+     "chance": {
+      "observed_unrounded": 0.3246913580246914,
+      "joint_relabelling_exact": {
+       "n_maps": 3991680,
+       "mean": 0.444701646090535,
+       "p": 0.20707897426647426
+      },
+      "joint_relabelling_time_consistent": {
+       "n_maps": 483840,
+       "mean": 0.38067934776557455,
+       "p": 0.3374751984126984
+      },
+      "within_era": {
+       "n_maps": 1440,
+       "mean": 0.38416573138795357,
+       "p": 0.3388888888888889
+      },
+      "eligible_uniform_expectation": 0.418013468013468
+     }
+    },
+    "share_ties_half": 0.3656986531986532,
+    "sequels_name_free": {
+     "rows": [
+      {
+       "sequel": "The Dark Knight",
+       "prequel": "Batman Begins",
+       "rank": 9,
+       "n": 9,
+       "closest": "Batman Returns"
+      },
+      {
+       "sequel": "Dark Knight Rises",
+       "prequel": "The Dark Knight",
+       "rank": 11,
+       "n": 13,
+       "closest": "Batman Begins"
+      },
+      {
+       "sequel": "Batman Returns",
+       "prequel": "Batman '89",
+       "rank": 1,
+       "n": 3,
+       "closest": "Batman '89"
+      },
+      {
+       "sequel": "Batman Forever",
+       "prequel": "Batman Returns",
+       "rank": 2,
+       "n": 5,
+       "closest": "Batman '89"
+      },
+      {
+       "sequel": "Batman & Robin",
+       "prequel": "Batman Forever",
+       "rank": 4,
+       "n": 6,
+       "closest": "Batman '66"
+      },
+      {
+       "sequel": "Arkham City",
+       "prequel": "Arkham Asylum (game)",
+       "rank": 1,
+       "n": 12,
+       "closest": "Arkham Asylum (game)"
+      },
+      {
+       "sequel": "Arkham Knight",
+       "prequel": "Arkham City",
+       "rank": 1,
+       "n": 14,
+       "closest": "Arkham City"
+      }
+     ],
+     "top2": 4,
+     "n": 7
+    }
+   },
+   "code_presence": {
+    "primary": {
+     "rows": [
+      {
+       "target": "Batman Begins",
+       "sources": [
+        "Year One"
+       ],
+       "share_of_comics_beating_source": 0.5,
+       "rank": 5,
+       "n_comics": 9,
+       "beats_median": false
+      },
+      {
+       "target": "The Dark Knight",
+       "sources": [
+        "The Long Halloween",
+        "The Killing Joke"
+       ],
+       "share_of_comics_beating_source": 0.0,
+       "rank": 1,
+       "n_comics": 10,
+       "beats_median": true
+      },
+      {
+       "target": "Dark Knight Rises",
+       "sources": [
+        "Knightfall",
+        "Dark Knight Returns"
+       ],
+       "share_of_comics_beating_source": 0.222,
+       "rank": 3,
+       "n_comics": 11,
+       "beats_median": true
+      },
+      {
+       "target": "Batman v Superman",
+       "sources": [
+        "Dark Knight Returns"
+       ],
+       "share_of_comics_beating_source": 0.9,
+       "rank": 10,
+       "n_comics": 11,
+       "beats_median": false
+      },
+      {
+       "target": "Under the Red Hood",
+       "sources": [
+        "A Death in the Family"
+       ],
+       "share_of_comics_beating_source": 0.0,
+       "rank": 1,
+       "n_comics": 10,
+       "beats_median": true
+      },
+      {
+       "target": "Arkham Asylum (game)",
+       "sources": [
+        "Arkham Asylum (comic)"
+       ],
+       "share_of_comics_beating_source": 0.556,
+       "rank": 6,
+       "n_comics": 10,
+       "beats_median": false
+      },
+      {
+       "target": "Batman '89",
+       "sources": [
+        "The Killing Joke"
+       ],
+       "share_of_comics_beating_source": 0.0,
+       "rank": 1,
+       "n_comics": 6,
+       "beats_median": false
+      },
+      {
+       "target": "Joker (2019)",
+       "sources": [
+        "The Killing Joke"
+       ],
+       "share_of_comics_beating_source": 0.0,
+       "rank": 1,
+       "n_comics": 12,
+       "beats_median": true
+      },
+      {
+       "target": "The Batman",
+       "sources": [
+        "Year One",
+        "The Long Halloween"
+       ],
+       "share_of_comics_beating_source": 0.2,
+       "rank": 3,
+       "n_comics": 12,
+       "beats_median": true
+      }
+     ],
+     "mean_share_beating_source": 0.26422222222222225,
+     "null_mean": 0.3606609960718294,
+     "p_one_sided": 0.2833716628337166,
+     "beats_median": 5,
+     "n": 9,
+     "placebo_mean": 0.2736928366557996,
+     "placebo_min": 0.15656565656565657,
+     "real_below_all_placebos": false,
+     "placebo_p5": 0.16272246272246274,
+     "n_valid_placebos": 9,
+     "placebo_excluded_no_eligible_comic": [
+      "1943 serial",
+      "Batman '66"
+     ],
+     "placebo_by_target": {
+      "Batman Returns": 0.2222222222222222,
+      "Batman Forever": 0.2222222222222222,
+      "Batman & Robin": 0.19576719576719576,
+      "Mask of the Phantasm": 0.2222222222222222,
+      "Return of the Joker": 0.17195767195767198,
+      "Arkham City": 0.4012345679012346,
+      "Arkham Knight": 0.45185185185185184,
+      "Lego Batman": 0.15656565656565657,
+      "Batman Ninja": 0.4191919191919192
+     },
+     "chance": {
+      "observed_unrounded": 0.26419753086419756,
+      "joint_relabelling_exact": {
+       "n_maps": 3991680,
+       "mean": 0.36071361765806215,
+       "p": 0.28542869167869167
+      },
+      "joint_relabelling_time_consistent": {
+       "n_maps": 483840,
+       "mean": 0.29170090454812675,
+       "p": 0.4812954695767196
+      },
+      "within_era": {
+       "n_maps": 1440,
+       "mean": 0.2591189674523008,
+       "p": 0.5833333333333334
+      },
+      "eligible_uniform_expectation": 0.32413019079685745
+     }
+    },
+    "share_ties_half": 0.43933782267115595,
+    "sequels_name_free": {
+     "rows": [
+      {
+       "sequel": "The Dark Knight",
+       "prequel": "Batman Begins",
+       "rank": 9,
+       "n": 9,
+       "closest": "1943 serial"
+      },
+      {
+       "sequel": "Dark Knight Rises",
+       "prequel": "The Dark Knight",
+       "rank": 12,
+       "n": 13,
+       "closest": "Batman & Robin"
+      },
+      {
+       "sequel": "Batman Returns",
+       "prequel": "Batman '89",
+       "rank": 3,
+       "n": 3,
+       "closest": "1943 serial"
+      },
+      {
+       "sequel": "Batman Forever",
+       "prequel": "Batman Returns",
+       "rank": 4,
+       "n": 5,
+       "closest": "1943 serial"
+      },
+      {
+       "sequel": "Batman & Robin",
+       "prequel": "Batman Forever",
+       "rank": 6,
+       "n": 6,
+       "closest": "1943 serial"
+      },
+      {
+       "sequel": "Arkham City",
+       "prequel": "Arkham Asylum (game)",
+       "rank": 4,
+       "n": 12,
+       "closest": "Batman & Robin"
+      },
+      {
+       "sequel": "Arkham Knight",
+       "prequel": "Arkham City",
+       "rank": 5,
+       "n": 14,
+       "closest": "Batman & Robin"
+      }
+     ],
+     "top2": 0,
+     "n": 7
+    }
+   }
+  },
+  "residual_test_on_words_alone": {
+   "word_presence_of_words_in_11_to_16_works": {
+    "registered_two_word_measures": {
+     "share": 0.1596801346801347,
+     "exact_p": 0.0015635020843354176,
+     "within_era_p": 0.004861111111111111,
+     "time_consistent_p": 0.0024698247354497356,
+     "chance_mean": 0.4465955854844743,
+     "placebo_mean": 0.43791842588138885,
+     "real_below_all_placebos": true,
+     "r2_of_fit": 0.3726779354587646
+    },
+    "decision_with_frequency_bands": {
+     "share": 0.4335858585858586,
+     "exact_p": 0.49061773488856825,
+     "within_era_p": 0.5090277777777777,
+     "time_consistent_p": 0.5216001157407407,
+     "chance_mean": 0.43712121212121213,
+     "placebo_mean": 0.4759072203516647,
+     "real_below_all_placebos": false,
+     "r2_of_fit": 1.0
+    }
+   },
+   "word_presence_weighted_by_frequency_to_the_power_0.5": {
+    "registered_two_word_measures": {
+     "share": 0.26683501683501687,
+     "exact_p": 0.02713143338143338,
+     "within_era_p": 0.044444444444444446,
+     "time_consistent_p": 0.04222056878306878,
+     "chance_mean": 0.45469509913954365,
+     "placebo_mean": 0.411785847896959,
+     "real_below_all_placebos": true,
+     "r2_of_fit": 0.9728175265475152
+    },
+    "decision_with_frequency_bands": {
+     "share": 0.357631874298541,
+     "exact_p": 0.17645502645502645,
+     "within_era_p": 0.3527777777777778,
+     "time_consistent_p": 0.18190104166666668,
+     "chance_mean": 0.45142162364384586,
+     "placebo_mean": 0.42217011383678055,
+     "real_below_all_placebos": false,
+     "r2_of_fit": 0.9965580764614422
+    }
+   },
+   "word_presence_weighted_by_frequency_to_the_power_1": {
+    "registered_two_word_measures": {
+     "share": 0.25897867564534227,
+     "exact_p": 0.023630401234567902,
+     "within_era_p": 0.044444444444444446,
+     "time_consistent_p": 0.04017443783068783,
+     "chance_mean": 0.45608866442199775,
+     "placebo_mean": 0.41598970302674004,
+     "real_below_all_placebos": true,
+     "r2_of_fit": 0.9057616570494724
+    },
+    "decision_with_frequency_bands": {
+     "share": 0.3354096520763188,
+     "exact_p": 0.12704876142376142,
+     "within_era_p": 0.3013888888888889,
+     "time_consistent_p": 0.1347842261904762,
+     "chance_mean": 0.452964833520389,
+     "placebo_mean": 0.4214797890723816,
+     "real_below_all_placebos": false,
+     "r2_of_fit": 0.9877110882717485
+    }
+   },
+   "word_presence_weighted_by_frequency_to_the_power_2": {
+    "registered_two_word_measures": {
+     "share": 0.21475869809203144,
+     "exact_p": 0.006411586099086099,
+     "within_era_p": 0.02013888888888889,
+     "time_consistent_p": 0.016765873015873015,
+     "chance_mean": 0.4637766554433221,
+     "placebo_mean": 0.4273275078830634,
+     "real_below_all_placebos": true,
+     "r2_of_fit": 0.7371617672577231
+    },
+    "decision_with_frequency_bands": {
+     "share": 0.3535353535353536,
+     "exact_p": 0.171611702340869,
+     "within_era_p": 0.3993055555555556,
+     "time_consistent_p": 0.2388661541005291,
+     "chance_mean": 0.4590534979423868,
+     "placebo_mean": 0.43932178932178934,
+     "real_below_all_placebos": false,
+     "r2_of_fit": 0.9624184189559515
+    }
+   },
+   "word_presence_weighted_by_frequency_to_the_power_3": {
+    "registered_two_word_measures": {
+     "share": 0.17008978675645342,
+     "exact_p": 0.0008537758537758538,
+     "within_era_p": 0.003472222222222222,
+     "time_consistent_p": 0.002635168650793651,
+     "chance_mean": 0.4630939019827908,
+     "placebo_mean": 0.43033108866442205,
+     "real_below_all_placebos": true,
+     "r2_of_fit": 0.5994359747653986
+    },
+    "decision_with_frequency_bands": {
+     "share": 0.3389450056116723,
+     "exact_p": 0.15130170755170755,
+     "within_era_p": 0.31875,
+     "time_consistent_p": 0.19800553902116402,
+     "chance_mean": 0.45780957725402166,
+     "placebo_mean": 0.4667691019542871,
+     "real_below_all_placebos": false,
+     "r2_of_fit": 0.9287752652189749
+    }
+   }
+  },
+  "computed_with": "6bda281007b550eb"
+ }
+}

@@ -11,9 +11,11 @@ v1's bar; its criteria (met, falsified, not met) are those of PLAN.md Section 6.
 Writes results/v2/experiments_v2.json (all models found in v2/acts/, keeping models already there) and
 results/v2/canon_<tag>.npz (the canon units of each fold, for the ablation and the unit selection).
 """
+import hashlib
 import json
 import sys
 import time
+from pathlib import Path
 
 import numpy as np
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
@@ -27,6 +29,8 @@ POOL = np.concatenate([BAT, HERO])
 NEG = {"hero_film_cousins": HERO, "ordinary_films": FILMS, "literary_cousins": LIT}
 label = X.label
 CUT_SENTENCES, CUT_WORDS = 20, 400
+MIN_CANON = 20                        # a canon share over fewer units or words than this is not scored
+BANDS = [(2, 3), (4, 6), (7, 10), (11, 16)]      # frequency bands of the word-presence regressors (number of Batman works)
 
 
 def cut_length(sentences):
@@ -122,7 +126,9 @@ def unit_centroid(Sc, Pc, Ss, Ps, weight, chunk=1 << 16):
         Gcc += Vc @ Vc.T
         Gsc += Vs @ Vc.T
         ns += (Vs * Vs).sum(1)
-    return Centroid(Gcc, Gsc, np.sqrt(ns))
+    nc = np.sqrt(np.diag(Gcc))                      # each work's vector is put at unit length before the centroid is taken,
+    nc = np.where(nc > 0, nc, 1.0)                  # as TF-IDF rows are: otherwise works where more units fire would weigh more
+    return Centroid(Gcc / np.outer(nc, nc), Gsc / nc[None, :], np.sqrt(ns))
 
 
 def shuffle_null(scorer, n, rng):
@@ -153,6 +159,8 @@ def verdict(out):
     complete = len(c) == 6
     falsified = bool(auc < 0.70 or lo <= 0.5 <= hi)
     v = "met" if complete and all(c.values()) else "falsified" if falsified else "not met"
+    if a.get("canon_units_median", MIN_CANON) < MIN_CANON:
+        v = "not evaluable"                          # e.g. a word canon of four names, all removed from the name-free texts
     return {"verdict": v, "clauses": c, "all_six_clauses_evaluated": complete, "falsified_by_v1_rule": falsified}
 
 
@@ -201,20 +209,52 @@ def word_measures():
     rare = df_bg <= 0.03 * len(bg) + 1e-9
     A_bg = X.tfidf().fit(bg).transform(anon).toarray()             # word weights from the background plots
     A_bi = TfidfVectorizer(stop_words="english", min_df=2, sublinear_tf=True, ngram_range=(1, 2)).fit_transform(anon).toarray()
-    n_codes = np.array([len({m for s in w["sentences"] for m in X.CODE.findall(s)}) for w in X.neutral], float)
+    code_sets = [{int(m[1:]) for s in w["sentences"] for m in X.CODE.findall(s)} for w in X.neutral]
+    n_codes = np.array([len(c) for c in code_sets], float)
+    P_codes = np.zeros((N, max(max(c) for c in code_sets if c)), bool)          # which codes (X1, X2, ...) a work contains
+    for w, c in enumerate(code_sets):
+        P_codes[w, [k - 1 for k in c]] = True
     sim_codes = -np.abs(n_codes[:, None] - n_codes[None, :])
-    _WORDS.update({"df_bg": df_bg, "sim": sim, "Pw": Pw, "sim_bg": A_bg @ A_bg.T, "Pw_rare": Pw[:, rare], "sim_bigram": A_bi @ A_bi.T, "sim_codes": sim_codes,
+    _WORDS.update({"P_codes": P_codes, "df_bg": df_bg, "sim": sim, "Pw": Pw, "sim_bg": A_bg @ A_bg.T, "Pw_rare": Pw[:, rare], "sim_bigram": A_bi @ A_bi.T, "sim_codes": sim_codes,
                    "n_codes": n_codes, "n_words": int(Pw.shape[1]), "n_words_rare": int(rare.sum()), "n_background_plots": len(bg),
                    "commonest_words_dropped_by_the_cap": [str(x) for x in names[np.argsort(-df_bg)][:20]]})
     return _WORDS
 
 
+_RATES = {}
+
+
 def word_rates():
-    """[N, 12] work-by-comic rates for each word measure, in the order the residual tests use them."""
-    W = word_measures()
-    return {"tfidf_cosine": W["sim"][:, X.COMICS], "word_presence": X.unit_rates(W["Pw"]),
-            "tfidf_background_weights": W["sim_bg"][:, X.COMICS], "word_presence_background_rare": X.unit_rates(W["Pw_rare"]),
-            "tfidf_words_and_pairs": W["sim_bigram"][:, X.COMICS], "code_count_similarity": W["sim_codes"][:, X.COMICS]}
+    """[N, 12] work-by-comic rates for each word measure. The first two are v1's registered pair; with the four
+    frequency bands they are the regressors of the decision test (PLAN.md Section 18, change 6)."""
+    if not _RATES:
+        W = word_measures()
+        _RATES.update({"tfidf_cosine": W["sim"][:, X.COMICS], "word_presence": X.unit_rates(W["Pw"])})
+        _RATES.update({f"word_presence_in_{lo}_to_{hi}_works": X.unit_rates(W["Pw"], (lo, hi)) for lo, hi in BANDS})
+        _RATES.update({"tfidf_background_weights": W["sim_bg"][:, X.COMICS], "word_presence_background_rare": X.unit_rates(W["Pw_rare"]),
+                       "tfidf_words_and_pairs": W["sim_bigram"][:, X.COMICS], "code_count_similarity": W["sim_codes"][:, X.COMICS],
+                       "code_presence": X.unit_rates(W["P_codes"])})
+    return _RATES
+
+
+def regressors(which):
+    """registered: v1's two word measures. decision: those and word presence in four frequency bands. all: every word and code measure."""
+    WR = word_rates()
+    keys = list(WR)
+    return [WR[k] for k in {"registered": keys[:2], "decision": keys[:2 + len(BANDS)], "all": keys}[which]]
+
+
+def weighted_word_rate(e):
+    """A word-overlap rate that leans towards commoner words: v1's word presence with each optional word weighted by
+    (1 + number of Batman works it is in) ** e. Words only; e = 0 is v1's word presence."""
+    P = word_measures()["Pw"]
+    nb = P[BAT].sum(0)
+    w = np.where((nb >= 2) & (nb <= 16), (1.0 + nb) ** e, 0.0)
+    R = np.zeros((N, len(X.COMICS)))
+    for j, c in enumerate(X.COMICS):
+        wc = w * P[c]
+        R[BAT, j] = (P[BAT] * wc).sum(1) / max(wc.sum(), 1e-12)
+    return R
 
 
 def opening(src, drop_codes=True):
@@ -261,8 +301,18 @@ def words_block(n_null=1000):
     out["E1"]["length_alone_words"] = e1_block({"A_name_free": Fixed(n_words_all), "A_iconography_dropped": Fixed(n_words_icon),
                                                 "openings": Fixed([len(t.split()) for t in opening(X.works, False)])}, rng, n_null, "length alone (words)")
     R = word_rates()
+    # what words alone give in the residual test: a pass here cannot mean "beyond words"
+    cal = {"word_presence_of_words_in_11_to_16_works": R["word_presence_in_11_to_16_works"]}
+    cal.update({f"word_presence_weighted_by_frequency_to_the_power_{e}": weighted_word_rate(e) for e in (0.5, 1, 2, 3)})
+    out["residual_test_on_words_alone"] = {
+        k: {form: dict(pick(r), r2_of_fit=r["r2_of_fit"]) for form, r in (("registered_two_word_measures", residual(Rw, regressors("registered"))),
+                                                                          ("decision_with_frequency_bands", residual(Rw, regressors("decision"))))}
+        for k, Rw in cal.items()}
+    for k, v in out["residual_test_on_words_alone"].items():
+        print(f"  words alone, {k}: registered p {v['registered_two_word_measures']['exact_p']:.4f}, with frequency bands p {v['decision_with_frequency_bands']['exact_p']:.4f}", flush=True)
     for k, P in (("tfidf_cosine", None), ("word_presence", W["Pw"]), ("tfidf_background_weights", None),
-                 ("word_presence_background_rare", W["Pw_rare"]), ("tfidf_words_and_pairs", None), ("code_count_similarity", None)):
+                 ("word_presence_background_rare", W["Pw_rare"]), ("tfidf_words_and_pairs", None), ("code_count_similarity", None),
+                 ("code_presence", W["P_codes"])):
         r = X.e2(P, rng=np.random.default_rng(7)) if P is not None else X.e2(None, R=R[k], rng=np.random.default_rng(7))
         sims = {"tfidf_cosine": "sim", "tfidf_background_weights": "sim_bg", "tfidf_words_and_pairs": "sim_bigram", "code_count_similarity": "sim_codes"}
         out["E2"][k] = {"primary": r, "share_ties_half": share_with_ties(R[k]),
@@ -330,18 +380,22 @@ def e2_block(Pa, Po, full=True):
     res = {"primary": e2p, "summary": pick(e2p), "evaluable": ev, "share_ties_half": share_with_ties(R_n), "sequels_name_free": X.sequel_control(Pa)}
     res["sequel_control_passes"] = bool(res["sequels_name_free"]["top2"] >= 5)
     WR = word_rates()
-    two, six = [WR["tfidf_cosine"], WR["word_presence"]], list(WR.values())
+    two = regressors("registered")
     res["residual_test_beyond_words"] = {
-        "decision_both_word_measures": X.residual_test(R_n, two),
-        "six_word_measures": X.residual_test(R_n, six),
+        "decision_words_by_frequency": X.residual_test(R_n, regressors("decision")),
+        "registered_both_word_measures": X.residual_test(R_n, two),
+        "every_word_and_code_measure": X.residual_test(R_n, regressors("all")),
         "neurons_resid_on_tfidf_cosine": X.residual_test(R_n, two[:1]), "neurons_resid_on_word_presence": X.residual_test(R_n, two[1:]),
         "tfidf_cosine_resid_on_neurons": X.residual_test(WR["tfidf_cosine"], [R_n]),
         "word_presence_resid_on_neurons": X.residual_test(WR["word_presence"], [R_n])}
+    res["residual_regressors"] = {"decision_words_by_frequency": list(WR)[:2 + len(BANDS)], "registered_both_word_measures": list(WR)[:2],
+                                  "every_word_and_code_measure": list(WR)}
     res["residual_summary"] = {k: dict(pick(r), r2_of_fit=r["r2_of_fit"]) for k, r in res["residual_test_beyond_words"].items()}
-    s, d = res["summary"], res["residual_summary"]["decision_both_word_measures"]
+    s, d, g = res["summary"], res["residual_summary"]["decision_words_by_frequency"], res["residual_summary"]["registered_both_word_measures"]
     print(f"  E2 share {s['share']:.3f} exact p {s['exact_p']:.5f} within-era p {s['within_era_p']:.4f} | evaluable {ev['evaluable']} "
           f"({ev['n_optional_units']:,} optional units, min per comic {ev['optional_units_per_comic_min']}) | sequels {res['sequels_name_free']['top2']}/7 "
-          f"| residual (both word measures) share {d['share']:.3f} exact p {d['exact_p']:.4f} within-era p {d['within_era_p']:.4f}", flush=True)
+          f"| residual (decision) share {d['share']:.3f} exact p {d['exact_p']:.4f} within-era p {d['within_era_p']:.4f} "
+          f"| residual (v1's two measures) exact p {g['exact_p']:.4f}", flush=True)
     if full:
         r7 = lambda: np.random.default_rng(7)      # noqa: E731
         res.update({
@@ -352,14 +406,22 @@ def e2_block(Pa, Po, full=True):
             "band_3_16": X.e2(Pa, band=(3, 16), n_perm=2000, rng=r7()), "band_4_16": X.e2(Pa, band=(4, 16), n_perm=2000, rng=r7()),
             "band_2_8": X.e2(Pa, band=(2, 8), n_perm=2000, rng=r7()), "sequels_original": X.sequel_control(Po)})
         res["residual_jackknife_leave_one_adaptation_out"] = {
-            t: pick(residual(R_n, two, adaptations={k: v for k, v in X.ADAPTATIONS.items() if k != t})) for t in X.ADAPTATIONS}
+            t: pick(residual(R_n, regressors("decision"), adaptations={k: v for k, v in X.ADAPTATIONS.items() if k != t})) for t in X.ADAPTATIONS}
     return res
 
 
 # ------------------------------------------------------------------ E3
-def e3_run(*a, **k):
+def e3_run(P, *a, **k):
+    """v1's e3, reseeded, and marked not evaluable when an early work has no unit in the band (v1's code would then
+    return the correlation of popularity with the works' order in the list, whatever the data)."""
+    assert P.dtype == bool
     X.RNG = np.random.default_rng(7)          # v1's e3 draws from the shared generator: reseeded so no value depends on run order
-    return X.e3(*a, **k)
+    r = X.e3(P, *a, **k)
+    r["evaluable"] = bool(all(w["n_units"] > 0 and np.isfinite(w["offspring"]) for w in r["works"]) and np.isfinite(r["rho"]))
+    if not r["evaluable"]:
+        r.update(rho=None, p_one_sided=None, null_sd=None, jackknife_min=None, jackknife_positive=None,
+                 works=[dict(w, offspring=None) for w in r["works"]])
+    return r
 
 
 def e3_block(Pa, Po, base, pv, full=True):
@@ -368,7 +430,7 @@ def e3_block(Pa, Po, base, pv, full=True):
         res.update({"original_text": e3_run(Po, pv, n_perm=2000), "with_adapted": e3_run(Pa, pv, drop_adapted=False, n_perm=2000),
                     "reverse_time_placebo": e3_run(Pa, pv, reverse=True, n_perm=2000),
                     "background_base_rate_placebo": e3_run(Pa, pv, outcome=base, n_perm=2000)})
-    print("  E3 rho", round(res["primary"]["rho"], 3), "p", res["primary"]["p_one_sided"], "units", res["primary"]["n_units"], flush=True)
+    print("  E3 rho", res["primary"]["rho"], "p", res["primary"]["p_one_sided"], "units", res["primary"]["n_units"], "evaluable", res["primary"]["evaluable"], flush=True)
     return res
 
 
@@ -432,14 +494,17 @@ def core_block(st, cap, rng):
            "core_present_share_in_hero_films": f(Pa[HERO][:, core].mean()) if len(core) else None,
            "core_present_share_in_ordinary_films": f(Pa[FILMS][:, core].mean()) if len(core) else None,
            "core_mean_base_rate_in_background_plots": f(st.base[core].mean()) if len(core) else None,
-           "canon_mean_base_rate_in_background_plots": float(st.base[canon].mean()) if len(canon) else None}
+           "canon_mean_base_rate_in_background_plots": float(st.base[canon].mean()) if len(canon) else None,
+           "bounded_by_the_cap_by_construction": ["random_film_sets_core_units_mean", "random_film_sets_core_units_max", "core_present_share_in_ordinary_films",
+                                                  "core_mean_base_rate_in_background_plots", "canon_mean_base_rate_in_background_plots"]}
     print(f"  core: {len(core)} of {len(canon)} canon units (without the cap: {len(core_nocap)} of {len(canon_nocap)}); "
           f"random sets of 32 films: {np.mean(pseudo):.1f} with the cap, {np.mean(pseudo_nocap):.1f} without", flush=True)
     return out, canon, core
 
 
-def run_setting(st, cut=None, cap_e1=C.CAP, cap_e23=None, full=True, save_canon=None):
-    """All three experiments on one loaded Setting. full=False: the primary statistics only (sensitivity runs)."""
+def run_setting(st, cut=None, cap_e1=C.CAP, cap_e23=None, full=True, save_canon=None, centroid="all"):
+    """All three experiments on one loaded Setting. full=False: the primary statistics only (sensitivity runs), with the
+    centroid score on all units or on the units under the E1 cap ("capped")."""
     t0 = time.time()
     rng = np.random.default_rng(7)
     Po, Pa = st.P["orig"], st.P["anon"]
@@ -465,8 +530,7 @@ def run_setting(st, cut=None, cap_e1=C.CAP, cap_e23=None, full=True, save_canon=
             np.savez_compressed(save_canon, canon_all32=st.units[canon], core=st.units[core], batman_works=np.array([label[b] for b in BAT]), **folds)
     else:
         res["E1"] = {"canon_share": e1_block({"A_name_free": share["A_name_free"]}, rng, 200, "canon share"),
-                     "unit_centroid": e1_block({"A_name_free": cent_capped["A_name_free"] if cap_e1 is not None and cap_e1 != C.CAP else cent["A_name_free"]},
-                                               rng, 200, "centroid of unit shares")}
+                     "unit_centroid": e1_block({"A_name_free": (cent_capped if centroid == "capped" else cent)["A_name_free"]}, rng, 200, "centroid of unit shares")}
     k2 = np.flatnonzero(st.distinctive(cap_e23))
     Pa2, Po2 = Pa[:, k2], Po[:, k2]
     pv = json.load(open("data/pageviews.json"))
@@ -478,15 +542,16 @@ def run_setting(st, cut=None, cap_e1=C.CAP, cap_e23=None, full=True, save_canon=
         WR = word_rates()
         res["E2"] = {"summary": pick(X.e2(Pa2, n_perm=200, rng=np.random.default_rng(7))), "evaluable": ev, "share_ties_half": share_with_ties(R_n),
                      "sequels_top2": X.sequel_control(Pa2)["top2"],
-                     "residual_both_word_measures": pick(residual(R_n, [WR["tfidf_cosine"], WR["word_presence"]])),
-                     "residual_six_word_measures": pick(residual(R_n, list(WR.values())))}
+                     "residual_decision": pick(residual(R_n, regressors("decision"))),
+                     "residual_registered_two_word_measures": pick(residual(R_n, regressors("registered"))),
+                     "residual_every_word_and_code_measure": pick(residual(R_n, regressors("all")))}
         if cap_e23 is not None:               # under a cap the words get the same cap: word presence on words that rare in the background
             W = word_measures()
             R_cap = X.unit_rates(W["Pw"][:, W["df_bg"] <= cap_e23 * W["n_background_plots"] + 1e-9])
-            res["E2"]["residual_cap_matched_words"] = pick(residual(R_n, [WR["tfidf_cosine"], WR["word_presence"], R_cap]))
+            res["E2"]["residual_cap_matched_words"] = pick(residual(R_n, regressors("decision") + [R_cap]))
             res["E2"]["word_presence_under_the_same_cap"] = pick(X.e2(None, R=R_cap, n_perm=200, rng=np.random.default_rng(7)))
         e3 = e3_run(Pa2, pv, n_perm=2000)
-        res["E3"] = {"rho": e3["rho"], "p_one_sided": e3["p_one_sided"], "n_units": e3["n_units"], "jackknife_min": e3["jackknife_min"]}
+        res["E3"] = {"rho": e3["rho"], "p_one_sided": e3["p_one_sided"], "n_units": e3["n_units"], "jackknife_min": e3["jackknife_min"], "evaluable": e3["evaluable"]}
     res["seconds"] = round(time.time() - t0)
     return res
 
@@ -498,8 +563,8 @@ def run_model(tag, theta=C.THETA, score="top1", which="study", variant="full", c
 
 
 RULE = ("v2: a unit is present in a work when its strongest sentence (main sign regime; placeholder codes masked in the name-free texts) "
-        "reaches 30% of the unit's strongest activation over the reference corpus and the study's original texts. E1 uses units present "
-        "in at most 3% of 2,999 background film plots; E2 and E3 use every unit")
+        "reaches 30% of the unit's strongest activation over the reference corpus, the supplement and the study's original texts. E1 uses "
+        "units present in at most 3% of 2,999 background film plots; E2 and E3 use every unit")
 FALLBACKS = [{"theta": 0.2, "score": "top1"}, {"theta": 0.3, "score": "top3"}]       # PLAN.md Section 6, in this order
 
 
@@ -509,9 +574,10 @@ def main():
     C.RESULTS.mkdir(parents=True, exist_ok=True)
     out = json.load(open(path)) if path.exists() else {}
     out["rule"] = RULE
-    if "words" not in out or "words" in args:
+    stamp = hashlib.sha256(Path(__file__).read_bytes() + Path("results/v2/reference_manifest.json").read_bytes()).hexdigest()[:16]
+    if out.get("words", {}).get("computed_with") != stamp or "words" in args:      # the word block is recomputed whenever this file changes
         print("== word comparators (no model)", flush=True)
-        out["words"] = words_block()
+        out["words"] = dict(words_block(), computed_with=stamp)
         C.save(out, "experiments_v2.json")
     tags = [a for a in args if a != "words"] or ([] if "words" in args else [t for t in C.MODELS if (C.ACTS / t / "scale.npy").exists()])
     for tag in tags:

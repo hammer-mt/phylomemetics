@@ -1,5 +1,7 @@
 """Recognition and ablation (PLAN.md, Sections 7 and 11).
 
+    cd study && ../.venv/bin/python v2/analysis/causal.py identify-items <model-tag>     prompts for the blind judge of the replies to question 2
+    cd study && ../.venv/bin/python v2/analysis/causal.py identify-collect <model-tag>   -> results/v2/<tag>/identify_judge.json
     cd study && ../.venv/bin/python v2/analysis/causal.py recognition <model-tag>
     cd study && ../.venv/bin/python v2/analysis/causal.py ablation <model-tag>
 
@@ -10,6 +12,7 @@ ablation     reads v2/acts/<tag>/ablate.json (and the two secondaries if present
 """
 import json
 import sys
+from pathlib import Path
 
 import numpy as np
 from scipy.stats import spearmanr
@@ -20,6 +23,42 @@ import experiments as X
 from build_probe_jobs import BATMAN, HEROES
 
 BAT_LABELS = [X.label[b] for b in X.BAT]
+
+
+def identify_dir(tag):
+    d = Path("v2/cache/identify") / tag
+    d.mkdir(parents=True, exist_ok=True)
+    return d.resolve()
+
+
+def identify_items(tag, per_prompt=57):
+    """The judge sees each reply to question 2 beside the work's true title, in a random order, and nothing else."""
+    from explain_agents import ANSWER, wrapped
+    rng = np.random.default_rng(C.SEED + 61)
+    title = {i["id"]: i for i in json.load(open(C.ACTS / tag / "recognise_title.json"))["items"]}
+    works = {w["label"]: w for w in X.works}
+    labels = [w["label"] for w in X.works]
+    order = rng.permutation(len(labels))
+    d = identify_dir(tag)
+    template = Path("v2/prompts/identify_judge.md").read_text()
+    paths = []
+    for b in range(0, len(labels), per_prompt):
+        lines = [f"[{labels[i]}] true title: {works[labels[i]]['title']} | reply: {title[labels[i]]['untouched']['reply']!r}" for i in order[b:b + per_prompt]]
+        p = d / f"batch_{b // per_prompt}.prompt.txt"
+        p.write_text(wrapped(template.replace("{items}", "\n".join(lines)) + ANSWER.format(out=d / f"batch_{b // per_prompt}.out.json", what="item")))
+        paths.append(str(p))
+    json.dump(paths, open(d / "prompts.json", "w"))
+    print(f"{tag}: {len(labels)} replies in {len(paths)} prompt files -> {d}/prompts.json")
+
+
+def identify_collect(tag):
+    out = {}
+    for f in sorted(identify_dir(tag).glob("batch_*.out.json")):
+        for r in json.load(open(f)):
+            out[str(r["id"]).strip("[]")] = bool(r["same_work"])
+    missing = [w["label"] for w in X.works if w["label"] not in out]
+    C.save({"model": tag, "n": len(out), "missing": missing, "items": out}, f"{tag}/identify_judge.json")
+    print(f"{tag}: {len(out)} verdicts, {sum(out.values())} identified; missing {missing}")
 
 
 def says(reply, names):
@@ -70,7 +109,7 @@ def recognition(tag):
         both = {t: bool(by[t]["identified"] and any(by[s]["identified"] for s in srcs)) for t, srcs in X.ADAPTATIONS.items()}
         out["E2"] = {"adaptation_and_a_source_both_identified": both, "n_pairs_identified": int(sum(both.values()))}
         for key, rows in (("E2_share", exp["E2"]["primary"]["rows"]),
-                          ("residual_share", exp["E2"]["residual_test_beyond_words"]["decision_both_word_measures"]["rows"])):
+                          ("residual_share", exp["E2"]["residual_test_beyond_words"]["decision_words_by_frequency"]["rows"])):
             share = {r["target"]: r["share_of_comics_beating_source"] for r in rows}
             out["E2"][key] = {"identified_pairs": float(np.mean([share[t] for t in both if both[t]])) if any(both.values()) else None,
                               "other_pairs": float(np.mean([share[t] for t in both if not both[t]])) if not all(both.values()) else None,
@@ -147,4 +186,4 @@ def ablation(tag):
 
 
 if __name__ == "__main__":
-    {"recognition": recognition, "ablation": ablation}[sys.argv[1]](sys.argv[2])
+    {"recognition": recognition, "ablation": ablation, "identify-items": identify_items, "identify-collect": identify_collect}[sys.argv[1]](sys.argv[2])
