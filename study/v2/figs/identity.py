@@ -4,9 +4,11 @@ A horizontal dot plot of the AUC with which each score separates the name-free B
 masked-hero and superhero films (0.5 is chance). Rows, top to bottom: the canon share and the centroid of
 units, one line per model, then two word-based comparators (the TF-IDF centroid and text length alone).
 The large mark is the AUC on whole summaries, with its 95% interval as a line. The small mark under it is
-the AUC on the openings only, which are about the same length in both groups; the grey tick on its line is
-the 95th percentile of the openings' label-shuffle null. (The whole-summary null is read too but not drawn:
-its tick sat behind the marks. Set TICK_WHOLE to draw it.) Both AUCs are printed at the right.
+the AUC on the openings only, which are the same length in both groups; the grey tick on its line is the
+95th percentile of the openings' own label-shuffle null. Both AUCs are printed at the right.
+
+The whole-summary shuffle null is not drawn. Its tick sat behind the marks, and the plan (v2/PLAN.md,
+section 6) does not count it, because shuffling the labels does not remove the length difference.
 
 Reads results/v2/experiments_v2.json (or $RESULTS_DIR/experiments_v2.json) and draws whichever of the four
 models are in it. Writes fig_identity.png to paper/v2/ (or $PAPER_DIR).
@@ -14,7 +16,6 @@ models are in it. Writes fig_identity.png to paper/v2/ (or $PAPER_DIR).
     cd study && ../.venv/bin/python v2/figs/identity.py
 """
 import json
-import math
 import os
 import sys
 from pathlib import Path
@@ -47,9 +48,8 @@ UNIT_SCORES = [("canon_share", "Canon share\n(units)"), ("unit_centroid", "Centr
 WORD_SCORES = [("tfidf_centroid", "Word counts\n(TF-IDF centroid)"),
                ("length_alone_sentences", "Length alone\n(number of sentences)")]
 WHOLE, OPENING, AGAINST = "A_name_free", "openings", "hero_film_cousins"
-CHANCE = 0.5        # an AUC of one half is chance by definition; it is not a result
-TICK_WHOLE = False  # the whole-summary shuffle tick hides behind the marks, so only the openings get one
-FS = 7              # labels; nothing is below 6.5 pt
+CHANCE = 0.5  # an AUC of one half is chance by definition; it is not a result
+FS = 7        # labels; nothing is below 6.5 pt
 
 
 def read(block, version):
@@ -58,11 +58,6 @@ def read(block, version):
     if AGAINST not in v:
         return None
     return {**v[AGAINST], "p95": (v.get("null_label_shuffle") or {}).get("p95")}
-
-
-def two(x):
-    """Two decimals with halves rounded up (an AUC over 32 x 8 pairs can be exactly 0.625)."""
-    return f"{math.floor(x * 100 + 0.5) / 100:.2f}"
 
 
 # ---- rows: (score label, [(row name, marker, face, edge, that score's block in the results), ...]) ----
@@ -81,7 +76,7 @@ BAR = float(next(k for b in blocks for k in b.get("clauses", {}) if k.startswith
 # ---- layout, in inches ----
 W = style.WIDTH_IN - 0.16             # the tight crop adds 0.08 in on each side
 LEFT, RIGHT, BOTTOM = 2.2, 0.9, 0.52  # label columns; value columns; tick labels and legend
-PITCH, GAP, DROP, PAD = 0.32, 0.20, 0.14, 0.17  # row pitch; extra between groups; drop of the small mark; ends
+PITCH, GAP, DROP, PAD = 0.34, 0.20, 0.13, 0.17  # row pitch; extra between groups; drop of the small mark; ends
 n_rows = sum(len(rows) for _, rows in groups)
 ax_h = 2 * PAD + (n_rows - 1) * PITCH + (len(groups) - 1) * GAP + DROP
 H = (ax_h + BOTTOM + 0.14 * (SUBTITLE.count("\n") + 1) + 0.34) / 0.94  # style.title sets the subtitle 6% down
@@ -125,15 +120,15 @@ for label, rows in groups:
         ax.text(at(LEFT - 0.13), y, name, ha="right", va="center", fontsize=FS, color=style.INK_2)
         if whole and whole.get("ci95"):
             ax.plot(whole["ci95"], [y, y], color=style.INK_2, lw=0.9, zorder=3, solid_capstyle="butt", clip_on=False)
-        for cell, yy, ms, mew, x_text, fs, ink, tick in (
-                (whole, y, size, 1.3, X_WHOLE, 7.5, style.INK, TICK_WHOLE),
-                (opening, y + DROP, 0.6 * size, 1.0, X_OPENING, FS, style.INK_3, True)):
+        if opening and opening["p95"] is not None:  # the openings' shuffle null; taller than the small mark
+            ax.plot([opening["p95"]] * 2, [y + DROP - 0.055, y + DROP + 0.055], color=GREY, lw=1.0, zorder=2)
+        for cell, yy, ms, mew, x_text, fs, ink in ((whole, y, size, 1.3, X_WHOLE, 7.5, style.INK),
+                                                   (opening, y + DROP, 0.6 * size, 1.0, X_OPENING, FS, style.INK_3)):
             if cell is None:
                 continue
-            if tick and cell["p95"] is not None:  # label-shuffle null, 95th percentile; taller than the small mark
-                ax.plot([cell["p95"]] * 2, [yy - 0.055, yy + 0.055], color=GREY, lw=1.0, zorder=2)
             ax.plot(cell["auc"], yy, marker=marker, ms=ms, mfc=face, mec=edge, mew=mew, zorder=4, clip_on=False)
-            ax.text(x_text, y, two(cell["auc"]), ha="right", va="center", fontsize=fs, color=ink)
+            # two decimals, formatted as in v2/analysis/paper_tables.py so that figure and tables agree
+            ax.text(x_text, y, f"{cell['auc']:.2f}", ha="right", va="center", fontsize=fs, color=ink)
         y += PITCH
     y += GAP
 

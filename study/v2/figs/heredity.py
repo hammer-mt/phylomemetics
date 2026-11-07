@@ -31,7 +31,7 @@ from matplotlib.lines import Line2D  # noqa: E402
 from matplotlib.patches import FancyBboxPatch  # noqa: E402
 from matplotlib.ticker import MultipleLocator  # noqa: E402
 
-TITLE = "Where each screen adaptation's documented source comic ranks"
+TITLE = "Where the documented source comic of each screen adaptation ranks"
 SUBTITLE = "Eligible comics are ranked by how many of their optional units the adaptation carries, or by word counts alone"
 PANEL_A = "Rank of the documented source among the eligible comics (the grey slots; 1st = closest)"
 PANEL_B = "Share of eligible comics that beat the documented source, averaged over the adaptations"
@@ -39,11 +39,12 @@ X_LABEL = "Share of eligible comics that beat the source (0 = the source is alwa
 ROWS_B = ["Units", "Word counts: TF-IDF", "Word counts: word presence", "Units, after word counts\nare regressed out"]
 
 # tag in the result file, display name, mark. The primary model is the solid dark dot; the others are quieter.
+# The marks are about 5 pt across, so that four of them fit side by side in one slot of panel A without touching.
 MODELS = [
-    ("qwen3-32b", "Qwen3-32B", dict(marker="o", ms=5.5, mfc=style.NIGHT, mec="white", mew=0.3)),
-    ("qwen3-8b", "Qwen3-8B", dict(marker="o", ms=4.3, mfc="white", mec=style.NIGHT, mew=1.1)),
-    ("llama3.1-8b", "Llama 3.1 8B", dict(marker="o", ms=5.1, mfc=style.SHARED, mec="white", mew=0.3)),
-    ("llama3.3-70b", "Llama 3.3 70B", dict(marker="o", ms=4.3, mfc="white", mec=style.SHARED, mew=1.1)),
+    ("qwen3-32b", "Qwen3-32B", dict(marker="o", ms=5.3, mfc=style.NIGHT, mec="white", mew=0.3)),
+    ("qwen3-8b", "Qwen3-8B", dict(marker="o", ms=3.9, mfc="white", mec=style.NIGHT, mew=1.0)),
+    ("llama3.1-8b", "Llama 3.1 8B", dict(marker="o", ms=4.9, mfc=style.SHARED, mec="white", mew=0.3)),
+    ("llama3.3-70b", "Llama 3.3 70B", dict(marker="o", ms=3.9, mfc="white", mec=style.SHARED, mew=1.0)),
 ]
 TFIDF = dict(marker="D", ms=4.0, mfc=style.INK_3, mec="white", mew=0.5)     # word counts are not a model: diamonds
 PRESENCE = dict(marker="D", ms=3.2, mfc="white", mec=style.INK_3, mew=0.9)
