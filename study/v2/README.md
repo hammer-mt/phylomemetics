@@ -37,7 +37,10 @@ v2 re-runs the Batman study the way Cammarata's "Neural networks are already cle
 | `analysis/build_probe_jobs.py`, `analysis/build_ablation.py`, `analysis/causal.py`, `analysis/steering.py` | The recognition probe, the ablation and the steering test: job files and scoring | laptop |
 | `analysis/twins.py` | Twins of the explained units in the other models, scored where they were not chosen | laptop |
 | `analysis/confirmatory.py`, `analysis/pass_summary.py` | The six confirmatory tests with Holm-adjusted p values; what was run for each model | laptop |
-| `run_units.sh`, `run_rest.sh`, `run_analysis.sh` | The order of the steps for one model | laptop |
+| `analysis/export_units.py`, `analysis/code_counts.py` | One table of the explained units and the works that carry them; how many placeholder codes each name-free text holds | laptop |
+| `analysis/paper_tables.py`, `make_paper_assets.sh` | Every table of the paper, written from the committed results to `../results/v2/paper_tables.md`; the summaries, tables and figures in one go | laptop |
+| `run_units.sh`, `run_rest.sh`, `run_analysis.sh`, `run_ablation.sh` | The order of the steps for one model | laptop |
+| `heavy.sh` | Runs a memory-heavy analysis behind a lock, so that only one runs at a time on a small machine | laptop |
 | `figs/` | The figures of paper v2, drawn from the committed results | laptop |
 
 Results are written to `../results/v2/`. Large arrays fetched from the GPU machine go to `acts/` and the corpora to `cache/`; neither is committed.
@@ -78,6 +81,12 @@ Everything is run from `study/`. `PY=../.venv/bin/python`, and `RUNPOD_STATE` na
 4. **Explanations**: the prompt files written by `analysis/explain_agents.py` are each answered by a fresh AI agent, which writes one answer file. Then `explain_agents.py collect-explainer`, `others`, `collect-others` (repeated while it sends texts back for rewriting), `explain_score.py texts`, `gpu/remote.py score ...`, `explain_score.py score`. `plain_checks.py`, `coverage.py`, `size_test.py` and `second_judge.py` follow.
 5. **Causal tests**: `build_probe_jobs.py` and `gpu/remote.py ask` for the recognition questions, with `causal.py identify-items`, `identify-collect` and `recognition`; `build_ablation.py`, `gpu/remote.py ask` and `causal.py ablation`; `steering.py gallery`, `gpu/remote.py steer`, `steering.py gallery-items` and `gallery-score`, then `steering.py items` and `score` for the explained units.
 6. **Two models**: `twins.py pool`, `queries`, `gpu/remote.py twins`, `twins.py units` and `score`.
-7. **Summaries**: `contrasts.py`, `cells_joint.py`, `trees_v2.py`, `pass_summary.py`, `confirmatory.py`, and the figure scripts in `figs/`.
+7. **Summaries**: `contrasts.py`, `cells_joint.py`, `trees_v2.py`, `export_units.py`, `code_counts.py`, then `bash v2/make_paper_assets.sh` (`pass_summary.py`, `confirmatory.py`, `paper_tables.py` and the figure scripts in `figs/`).
 
-The GPU machines are rented by the hour and shut themselves down when idle or past their deadline. The whole of v2 cost under the $200 budget; the paper gives the figure.
+The analyses of Qwen3-32B and Llama 3.3 70B each hold several gigabytes in memory. On a machine with 16 GB, run them one at a time: `bash v2/heavy.sh $PY v2/analysis/<script>.py <tag>`.
+
+The GPU machines are rented by the hour and shut themselves down when idle or past their deadline. The whole of v2 cost well under the $200 budget; `../results/v2/gpu_cost.json` and the paper give the figure.
+
+## What came out
+
+The paper is `../paper/v2/paper.md`, and `../paper/v2/CHANGES.md` lists what changed from version 1. `../results/v2/confirmatory.json` holds the six confirmatory tests and `../results/v2/paper_tables.md` every table. `PLAN.md` Section 18 logs every change made after the plan was frozen.
