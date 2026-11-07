@@ -104,6 +104,32 @@
    "anon_after_main_top1": 0.02699188493105365,
    "anon_icon_main_top1": 0.028383506733064435,
    "anon_icon_main_top3": 0.008402625904746518
+  },
+  "scale_and_base_rates": {
+   "units_scaled_by": {
+    "reference corpus": {
+     "all": 579312,
+     "present_in_some_work": 331658,
+     "distinctive": 163471,
+     "canon_all_32": 47
+    },
+    "supplement": {
+     "all": 304263,
+     "present_in_some_work": 122603,
+     "distinctive": 74647,
+     "canon_all_32": 21
+    },
+    "study texts": {
+     "all": 1161,
+     "present_in_some_work": 1161,
+     "distinctive": 412,
+     "canon_all_32": 7
+    }
+   },
+   "distinctive_units": 238530,
+   "canon_units_all_32": 75,
+   "distinctive_on_the_main_scale_but_over_the_cap_on_the_reference_only_scale": 83,
+   "canon_units_over_the_cap_on_the_reference_only_scale": 0
   }
  },
  "llama3.1-8b": {
@@ -194,6 +220,32 @@
    "anon_after_main_top1": 0.03593069257348891,
    "anon_icon_main_top1": 0.03826764818802477,
    "anon_icon_main_top3": 0.01238030057700547
+  },
+  "scale_and_base_rates": {
+   "units_scaled_by": {
+    "reference corpus": {
+     "all": 667197,
+     "present_in_some_work": 447811,
+     "distinctive": 213894,
+     "canon_all_32": 75
+    },
+    "supplement": {
+     "all": 249304,
+     "present_in_some_work": 128753,
+     "distinctive": 69811,
+     "canon_all_32": 12
+    },
+    "study texts": {
+     "all": 1003,
+     "present_in_some_work": 1003,
+     "distinctive": 391,
+     "canon_all_32": 14
+    }
+   },
+   "distinctive_units": 284096,
+   "canon_units_all_32": 101,
+   "distinctive_on_the_main_scale_but_over_the_cap_on_the_reference_only_scale": 87,
+   "canon_units_over_the_cap_on_the_reference_only_scale": 4
   }
  }
 }

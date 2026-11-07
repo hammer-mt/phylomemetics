@@ -56,7 +56,9 @@ def unit_name(tag, u):
 
 
 def n_plots(tag):
-    return json.load(open(ACTS / tag / "bg_meta.json"))["n_plots"]
+    m = json.load(open(ACTS / tag / "bg_meta.json"))
+    assert m["excluded_docs"] == [843], "the background pass must leave out document 843 (PLAN.md Section 5)"
+    return m["n_plots"]
 
 
 def scale(tag, which="study"):

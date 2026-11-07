@@ -17,6 +17,7 @@ import numpy as np
 import common as C
 
 import experiments as X
+import experiments_v2 as E
 
 
 def run_model(tag):
@@ -41,13 +42,15 @@ def run_model(tag):
     R_tf, R_wd, R_n = sim[:, X.COMICS], X.unit_rates(Pw), X.unit_rates(P_a)
     res["E2"]["residual_test_beyond_words"] = {
         "neurons_resid_on_tfidf_cosine": X.residual_test(R_n, [R_tf]), "neurons_resid_on_word_presence": X.residual_test(R_n, [R_wd]),
-        "neurons_resid_on_both": X.residual_test(R_n, [R_tf, R_wd])}
+        "neurons_resid_on_both": X.residual_test(R_n, [R_tf, R_wd]),
+        "decision_words_by_frequency": E.residual(R_n, E.regressors("decision"))}     # v2's decision test (PLAN.md Section 18, changes 6 and 20)
     pv = json.load(open("data/pageviews.json"))
     res["E3"] = {"primary": X.e3(P_a, pv), "original_text": X.e3(P_o, pv, n_perm=2000)}
     res["seconds"] = round(time.time() - t0)
     e2p = res["E2"]["primary"]
     print(f"== {tag} under v1's rule: E1 AUC {res['E1']['A_name_free']['hero_film_cousins']['auc']:.3f} | E2 share {e2p['mean_share_beating_source']:.3f} "
           f"exact p {e2p['chance']['joint_relabelling_exact']['p']:.5f} | residual p (both) {res['E2']['residual_test_beyond_words']['neurons_resid_on_both']['chance']['joint_relabelling_exact']['p']:.4f} "
+          f"| residual p (decision) {res['E2']['residual_test_beyond_words']['decision_words_by_frequency']['chance']['joint_relabelling_exact']['p']:.4f} "
           f"| E3 rho {res['E3']['primary']['rho']:.3f}", flush=True)
     return res
 

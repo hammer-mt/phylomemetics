@@ -11,6 +11,8 @@ import json
 
 import common as C
 
+import experiments as X
+
 REVISIONS = {"qwen3-32b": ("Qwen/Qwen3-32B", "9216db5781bf21249d130ec9da846c4624c16137"),
              "qwen3-8b": ("Qwen/Qwen3-8B", "b968826d9c46dd6066d109eabc6255188de91218"),
              "llama3.1-8b": ("unsloth/Meta-Llama-3.1-8B-Instruct", "a2856192dd7c25b842431f39c179a6c2c2f627d1"),
@@ -20,6 +22,21 @@ REVISIONS = {"qwen3-32b": ("Qwen/Qwen3-32B", "9216db5781bf21249d130ec9da846c4624
 def load(tag, name):
     p = C.ACTS / tag / name
     return json.load(open(p)) if p.exists() else None
+
+
+def scale_block(tag):
+    """Which corpus set each unit's scale, and what the study texts' part in the scale does to base rates (PLAN.md Section 18, change 21)."""
+    src, capn = C.scale_source(tag), C.CAP * C.n_plots(tag) + 1e-9
+    cr = C.base_count(tag, which="ref")
+    st = C.Setting(tag, icon=False)
+    d = st.distinctive()
+    dist, canon = st.units[d], st.units[d & (st.P["orig"][X.BAT].mean(0) >= 0.8)]
+    return {"units_scaled_by": {name: {"all": int((src == k).sum()), "present_in_some_work": int((src[st.units] == k).sum()),
+                                       "distinctive": int((src[dist] == k).sum()), "canon_all_32": int((src[canon] == k).sum())}
+                                for k, name in enumerate(("reference corpus", "supplement", "study texts"))},
+            "distinctive_units": int(len(dist)), "canon_units_all_32": int(len(canon)),
+            "distinctive_on_the_main_scale_but_over_the_cap_on_the_reference_only_scale": int((cr[dist] > capn).sum()),
+            "canon_units_over_the_cap_on_the_reference_only_scale": int((cr[canon] > capn).sum())}
 
 
 def main():
@@ -44,6 +61,8 @@ def main():
         if sc:
             row["scale"] = {k: v for k, v in sc.items() if not k.endswith("_at_or_above_30pct")}
             row["share_of_unit_by_work_cells_present"] = {k.replace("_share_of_cells_at_or_above_30pct", ""): v for k, v in sc.items() if k.endswith("_at_or_above_30pct")}
+        if (C.ACTS / tag / "anon_main_top1.u8.npy").exists():
+            row["scale_and_base_rates"] = scale_block(tag)
         out[tag] = row
         print(tag, row["reference"]["tokens"], row.get("supplement", {}).get("tokens"))
     C.save(out, "passes.json")

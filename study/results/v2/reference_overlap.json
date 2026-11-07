@@ -1,0 +1,1741 @@
+{
+ "documents_left_out_downstream": [
+  {
+   "document": 843,
+   "set": "bgplot",
+   "reference_title": "The Princess Bride (film)",
+   "study_work": "The Princess Bride",
+   "cosine": 0.701,
+   "same_base_title": true
+  },
+  {
+   "document": 7175,
+   "set": "plot",
+   "reference_title": "The Dark Knight (film)",
+   "study_work": "The Dark Knight",
+   "cosine": 0.621,
+   "same_base_title": true
+  },
+  {
+   "document": 6895,
+   "set": "plot",
+   "reference_title": "The Notebook (2004 film)",
+   "study_work": "The Notebook",
+   "cosine": 0.662,
+   "same_base_title": true
+  },
+  {
+   "document": 3597,
+   "set": "plot",
+   "reference_title": "The Wizard of Oz (1939 film)",
+   "study_work": "The Wizard of Oz",
+   "cosine": 0.627,
+   "same_base_title": true
+  },
+  {
+   "document": 5284,
+   "set": "plot",
+   "reference_title": "The Exorcist (film)",
+   "study_work": "The Exorcist",
+   "cosine": 0.562,
+   "same_base_title": true
+  }
+ ],
+ "study_works_with_a_reference_plot_of_the_same_base_title": [
+  {
+   "study_work": "The Dark Knight",
+   "group": "batman",
+   "dataset_title": "The Dark Knight (film)",
+   "dataset_year": 2008,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": true,
+   "document": 7175,
+   "set": "plot",
+   "cosine_with_the_study_text": 0.621
+  },
+  {
+   "study_work": "Joker (2019 film)",
+   "group": "batman",
+   "dataset_title": "Joker (2000 film)",
+   "dataset_year": 2000,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": true,
+   "document": 10170,
+   "set": "plot",
+   "cosine_with_the_study_text": 0.056
+  },
+  {
+   "study_work": "Joker (2019 film)",
+   "group": "batman",
+   "dataset_title": "Joker (1993 film)",
+   "dataset_year": 1993,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": true,
+   "document": 11300,
+   "set": "plot",
+   "cosine_with_the_study_text": 0.031
+  },
+  {
+   "study_work": "The Count of Monte Cristo",
+   "group": "cousin",
+   "dataset_title": "The Count of Monte Cristo (1934 film)",
+   "dataset_year": 1934,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": true,
+   "document": 87,
+   "set": "bgplot",
+   "cosine_with_the_study_text": 0.476
+  },
+  {
+   "study_work": "Dracula",
+   "group": "cousin",
+   "dataset_title": "Dracula (1931 English-language film)",
+   "dataset_year": 1931,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": true,
+   "document": 41,
+   "set": "bgplot",
+   "cosine_with_the_study_text": 0.43
+  },
+  {
+   "study_work": "Dracula",
+   "group": "cousin",
+   "dataset_title": "Dracula (1979 film)",
+   "dataset_year": 1979,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": true,
+   "document": 5460,
+   "set": "plot",
+   "cosine_with_the_study_text": 0.451
+  },
+  {
+   "study_work": "The Scarlet Pimpernel",
+   "group": "cousin",
+   "dataset_title": "The Scarlet Pimpernel (1982 film)",
+   "dataset_year": 1982,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": true,
+   "document": 2012,
+   "set": "bgplot",
+   "cosine_with_the_study_text": 0.533
+  },
+  {
+   "study_work": "The Bat (1926 film)",
+   "group": "cousin",
+   "dataset_title": "The Bat (1959 film)",
+   "dataset_year": 1959,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": true,
+   "document": 494,
+   "set": "bgplot",
+   "cosine_with_the_study_text": 0.373
+  },
+  {
+   "study_work": "Titanic (1997 film)",
+   "group": "baseline",
+   "dataset_title": "Titanic (1953 film)",
+   "dataset_year": 1953,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": true,
+   "document": 406,
+   "set": "bgplot",
+   "cosine_with_the_study_text": 0.183
+  },
+  {
+   "study_work": "Pride & Prejudice (2005 film)",
+   "group": "baseline",
+   "dataset_title": "Pride and Prejudice (1940 film)",
+   "dataset_year": 1940,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": true,
+   "document": 3657,
+   "set": "plot",
+   "cosine_with_the_study_text": 0.576
+  },
+  {
+   "study_work": "The Notebook",
+   "group": "baseline",
+   "dataset_title": "The Notebook (2004 film)",
+   "dataset_year": 2004,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": true,
+   "document": 6895,
+   "set": "plot",
+   "cosine_with_the_study_text": 0.662
+  },
+  {
+   "study_work": "Rocky",
+   "group": "baseline",
+   "dataset_title": "Rocky (2013 film)",
+   "dataset_year": 2013,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": true,
+   "document": 9178,
+   "set": "plot",
+   "cosine_with_the_study_text": 0.098
+  },
+  {
+   "study_work": "The Wizard of Oz",
+   "group": "baseline",
+   "dataset_title": "The Wizard of Oz (1939 film)",
+   "dataset_year": 1939,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": true,
+   "document": 3597,
+   "set": "plot",
+   "cosine_with_the_study_text": 0.627
+  },
+  {
+   "study_work": "Parasite (2019 film)",
+   "group": "baseline",
+   "dataset_title": "Parasite (film)",
+   "dataset_year": 1982,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": true,
+   "document": 5589,
+   "set": "plot",
+   "cosine_with_the_study_text": 0.018
+  },
+  {
+   "study_work": "The Exorcist",
+   "group": "baseline",
+   "dataset_title": "The Exorcist (film)",
+   "dataset_year": 1973,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": true,
+   "document": 5284,
+   "set": "plot",
+   "cosine_with_the_study_text": 0.562
+  },
+  {
+   "study_work": "Taxi Driver",
+   "group": "baseline",
+   "dataset_title": "Taxi Driver (1954 film)",
+   "dataset_year": 1954,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": true,
+   "document": 9238,
+   "set": "plot",
+   "cosine_with_the_study_text": 0.039
+  },
+  {
+   "study_work": "The Princess Bride",
+   "group": "baseline",
+   "dataset_title": "The Princess Bride (film)",
+   "dataset_year": 1987,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": true,
+   "document": 843,
+   "set": "bgplot",
+   "cosine_with_the_study_text": 0.701
+  }
+ ],
+ "note": "The five left-out documents are the study's own films under the dataset's older titles. The other rows with the same base title are different films of the same story or name (another year's version), which stay in the corpus as ordinary films.",
+ "by_title": [
+  {
+   "study_work": "Batman (serial)",
+   "group": "batman",
+   "dataset_title": "Batman (serial)",
+   "dataset_year": 1943,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Batman (serial)",
+   "group": "batman",
+   "dataset_title": "Batman (1966 film)",
+   "dataset_year": 1966,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Batman (serial)",
+   "group": "batman",
+   "dataset_title": "Batman (1989 film)",
+   "dataset_year": 1989,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Batman (1966 film)",
+   "group": "batman",
+   "dataset_title": "Batman (serial)",
+   "dataset_year": 1943,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Batman (1966 film)",
+   "group": "batman",
+   "dataset_title": "Batman (1966 film)",
+   "dataset_year": 1966,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Batman (1966 film)",
+   "group": "batman",
+   "dataset_title": "Batman (1989 film)",
+   "dataset_year": 1989,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Batman (1989 film)",
+   "group": "batman",
+   "dataset_title": "Batman (serial)",
+   "dataset_year": 1943,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Batman (1989 film)",
+   "group": "batman",
+   "dataset_title": "Batman (1966 film)",
+   "dataset_year": 1966,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Batman (1989 film)",
+   "group": "batman",
+   "dataset_title": "Batman (1989 film)",
+   "dataset_year": 1989,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Batman Returns",
+   "group": "batman",
+   "dataset_title": "Batman Returns",
+   "dataset_year": 1992,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Batman: Mask of the Phantasm",
+   "group": "batman",
+   "dataset_title": "Batman: Mask of the Phantasm",
+   "dataset_year": 1993,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Batman Forever",
+   "group": "batman",
+   "dataset_title": "Batman Forever",
+   "dataset_year": 1995,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Batman & Robin (film)",
+   "group": "batman",
+   "dataset_title": "Batman and Robin (serial)",
+   "dataset_year": 1949,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Batman & Robin (film)",
+   "group": "batman",
+   "dataset_title": "Batman & Robin (film)",
+   "dataset_year": 1997,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Batman Begins",
+   "group": "batman",
+   "dataset_title": "Batman Begins",
+   "dataset_year": 2005,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "The Dark Knight",
+   "group": "batman",
+   "dataset_title": "The Dark Knight (film)",
+   "dataset_year": 2008,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": true,
+   "document": 7175,
+   "set": "plot"
+  },
+  {
+   "study_work": "The Dark Knight Rises",
+   "group": "batman",
+   "dataset_title": "The Dark Knight Rises",
+   "dataset_year": 2012,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Batman v Superman: Dawn of Justice",
+   "group": "batman",
+   "dataset_title": "Batman v Superman: Dawn of Justice",
+   "dataset_year": 2016,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "The Lego Batman Movie",
+   "group": "batman",
+   "dataset_title": "The Lego Batman Movie",
+   "dataset_year": 2017,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Joker (2019 film)",
+   "group": "batman",
+   "dataset_title": "Joker (2011 film)",
+   "dataset_year": 2012,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Joker (2019 film)",
+   "group": "batman",
+   "dataset_title": "Joker (2000 film)",
+   "dataset_year": 2000,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": true,
+   "document": 10170,
+   "set": "plot"
+  },
+  {
+   "study_work": "Joker (2019 film)",
+   "group": "batman",
+   "dataset_title": "Joker (2016 film)",
+   "dataset_year": 2016,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Joker (2019 film)",
+   "group": "batman",
+   "dataset_title": "Joker (1993 film)",
+   "dataset_year": 1993,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": true,
+   "document": 11300,
+   "set": "plot"
+  },
+  {
+   "study_work": "Puss in Boots",
+   "group": "cousin",
+   "dataset_title": "Puss in Boots (1988 film)",
+   "dataset_year": 1988,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Puss in Boots",
+   "group": "cousin",
+   "dataset_title": "Puss in Boots (2011 film)",
+   "dataset_year": 2011,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "The Count of Monte Cristo",
+   "group": "cousin",
+   "dataset_title": "The Count of Monte Cristo (1934 film)",
+   "dataset_year": 1934,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": true,
+   "document": 87,
+   "set": "bgplot"
+  },
+  {
+   "study_work": "The Count of Monte Cristo",
+   "group": "cousin",
+   "dataset_title": "The Count of Monte Cristo (2002 film)",
+   "dataset_year": 2002,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Dracula",
+   "group": "cousin",
+   "dataset_title": "Dracula (1931 English-language film)",
+   "dataset_year": 1931,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": true,
+   "document": 41,
+   "set": "bgplot"
+  },
+  {
+   "study_work": "Dracula",
+   "group": "cousin",
+   "dataset_title": "Dracula (1979 film)",
+   "dataset_year": 1979,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": true,
+   "document": 5460,
+   "set": "plot"
+  },
+  {
+   "study_work": "Dracula",
+   "group": "cousin",
+   "dataset_title": "Dracula (1958 film)",
+   "dataset_year": 1958,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Dracula",
+   "group": "cousin",
+   "dataset_title": "Dracula",
+   "dataset_year": 1999,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "The Scarlet Pimpernel",
+   "group": "cousin",
+   "dataset_title": "The Scarlet Pimpernel (1934 film)",
+   "dataset_year": 1934,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "The Scarlet Pimpernel",
+   "group": "cousin",
+   "dataset_title": "The Scarlet Pimpernel (1982 film)",
+   "dataset_year": 1982,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": true,
+   "document": 2012,
+   "set": "bgplot"
+  },
+  {
+   "study_work": "The Mark of Zorro (1940 film)",
+   "group": "cousin",
+   "dataset_title": "The Mark of Zorro (1920 film)",
+   "dataset_year": 1920,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "The Mark of Zorro (1940 film)",
+   "group": "cousin",
+   "dataset_title": "The Mark of Zorro (1940 film)",
+   "dataset_year": 1940,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "The Bat (1926 film)",
+   "group": "cousin",
+   "dataset_title": "The Bat (1926 film)",
+   "dataset_year": 1926,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "The Bat (1926 film)",
+   "group": "cousin",
+   "dataset_title": "The Bat (1959 film)",
+   "dataset_year": 1959,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": true,
+   "document": 494,
+   "set": "bgplot"
+  },
+  {
+   "study_work": "The Shadow (1994 film)",
+   "group": "cousin",
+   "dataset_title": "The Shadow (1994 film)",
+   "dataset_year": 1994,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Superman (1978 film)",
+   "group": "cousin",
+   "dataset_title": "Superman (serial)",
+   "dataset_year": 1948,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Superman (1978 film)",
+   "group": "cousin",
+   "dataset_title": "Superman (1978 film)",
+   "dataset_year": 1978,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Spider-Man (2002 film)",
+   "group": "cousin",
+   "dataset_title": "Spider-Man (2002 film)",
+   "dataset_year": 2002,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Daredevil (film)",
+   "group": "cousin",
+   "dataset_title": "Daredevil (film)",
+   "dataset_year": 2003,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Iron Man (2008 film)",
+   "group": "cousin",
+   "dataset_title": "Iron Man (1931 film)",
+   "dataset_year": 1931,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Iron Man (2008 film)",
+   "group": "cousin",
+   "dataset_title": "Iron Man (1951 film)",
+   "dataset_year": 1951,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Iron Man (2008 film)",
+   "group": "cousin",
+   "dataset_title": "Iron Man (2008 film)",
+   "dataset_year": 2008,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "The Green Hornet (2011 film)",
+   "group": "cousin",
+   "dataset_title": "The Green Hornet (2011 film)",
+   "dataset_year": 2011,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Titanic (1997 film)",
+   "group": "baseline",
+   "dataset_title": "Titanic (1953 film)",
+   "dataset_year": 1953,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": true,
+   "document": 406,
+   "set": "bgplot"
+  },
+  {
+   "study_work": "Titanic (1997 film)",
+   "group": "baseline",
+   "dataset_title": "Titanic (1996 TV miniseries)",
+   "dataset_year": 1996,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Titanic (1997 film)",
+   "group": "baseline",
+   "dataset_title": "Titanic (1997 film)",
+   "dataset_year": 1997,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Forrest Gump",
+   "group": "baseline",
+   "dataset_title": "Forrest Gump",
+   "dataset_year": 1994,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Toy Story",
+   "group": "baseline",
+   "dataset_title": "Toy Story",
+   "dataset_year": 1995,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Finding Nemo",
+   "group": "baseline",
+   "dataset_title": "Finding Nemo",
+   "dataset_year": 2003,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "The Godfather",
+   "group": "baseline",
+   "dataset_title": "The Godfather",
+   "dataset_year": 1972,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Jaws (film)",
+   "group": "baseline",
+   "dataset_title": "Jaws (film)",
+   "dataset_year": 1975,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Casablanca (film)",
+   "group": "baseline",
+   "dataset_title": "Casablanca (film)",
+   "dataset_year": 1942,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Pride & Prejudice (2005 film)",
+   "group": "baseline",
+   "dataset_title": "Pride and Prejudice (1940 film)",
+   "dataset_year": 1940,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": true,
+   "document": 3657,
+   "set": "plot"
+  },
+  {
+   "study_work": "Pride & Prejudice (2005 film)",
+   "group": "baseline",
+   "dataset_title": "Pride & Prejudice (2005 film)",
+   "dataset_year": 2005,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Jurassic Park",
+   "group": "baseline",
+   "dataset_title": "Jurassic Park (film)",
+   "dataset_year": 1993,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "The Lion King",
+   "group": "baseline",
+   "dataset_title": "The Lion King",
+   "dataset_year": 1994,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Back to the Future",
+   "group": "baseline",
+   "dataset_title": "Back to the Future",
+   "dataset_year": 1985,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "E.T. the Extra-Terrestrial",
+   "group": "baseline",
+   "dataset_title": "E.T. the Extra-Terrestrial",
+   "dataset_year": 1982,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "The Shawshank Redemption",
+   "group": "baseline",
+   "dataset_title": "The Shawshank Redemption",
+   "dataset_year": 1994,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Groundhog Day (film)",
+   "group": "baseline",
+   "dataset_title": "Groundhog Day (film)",
+   "dataset_year": 1993,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Mean Girls",
+   "group": "baseline",
+   "dataset_title": "Mean Girls",
+   "dataset_year": 2004,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "The Notebook",
+   "group": "baseline",
+   "dataset_title": "The Notebook (2004 film)",
+   "dataset_year": 2004,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": true,
+   "document": 6895,
+   "set": "plot"
+  },
+  {
+   "study_work": "Up (2009 film)",
+   "group": "baseline",
+   "dataset_title": "Up (2009 film)",
+   "dataset_year": 2009,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Frozen (2013 film)",
+   "group": "baseline",
+   "dataset_title": "Frozen (2010 American film)",
+   "dataset_year": 2010,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Frozen (2013 film)",
+   "group": "baseline",
+   "dataset_title": "Frozen (2013 film)",
+   "dataset_year": 2013,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Frozen (2013 film)",
+   "group": "baseline",
+   "dataset_title": "Frozen (2010 Hong Kong film)",
+   "dataset_year": 2010,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Gravity (2013 film)",
+   "group": "baseline",
+   "dataset_title": "Gravity (film)",
+   "dataset_year": 2013,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "The Martian (film)",
+   "group": "baseline",
+   "dataset_title": "The Martian (film)",
+   "dataset_year": 2015,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Alien (film)",
+   "group": "baseline",
+   "dataset_title": "Alien (film)",
+   "dataset_year": 1979,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Rocky",
+   "group": "baseline",
+   "dataset_title": "Rocky",
+   "dataset_year": 1976,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Rocky",
+   "group": "baseline",
+   "dataset_title": "Rocky (2013 film)",
+   "dataset_year": 2013,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": true,
+   "document": 9178,
+   "set": "plot"
+  },
+  {
+   "study_work": "Rocky",
+   "group": "baseline",
+   "dataset_title": "Rocky (1981 film)",
+   "dataset_year": 1981,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Rocky",
+   "group": "baseline",
+   "dataset_title": "Rocky (2008 film)",
+   "dataset_year": 2008,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Home Alone",
+   "group": "baseline",
+   "dataset_title": "Home Alone",
+   "dataset_year": 1990,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Ratatouille (film)",
+   "group": "baseline",
+   "dataset_title": "Ratatouille (film)",
+   "dataset_year": 2007,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Mamma Mia! (film)",
+   "group": "baseline",
+   "dataset_title": "Mamma Mia! (film)",
+   "dataset_year": 2008,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Gone Girl (film)",
+   "group": "baseline",
+   "dataset_title": "Gone Girl (film)",
+   "dataset_year": 2014,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "The Silence of the Lambs (film)",
+   "group": "baseline",
+   "dataset_title": "The Silence of the Lambs (film)",
+   "dataset_year": 1991,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Fargo (1996 film)",
+   "group": "baseline",
+   "dataset_title": "Fargo (film)",
+   "dataset_year": 1996,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Chinatown (1974 film)",
+   "group": "baseline",
+   "dataset_title": "Chinatown (1974 film)",
+   "dataset_year": 1974,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Heat (1995 film)",
+   "group": "baseline",
+   "dataset_title": "Heat (1972 film)",
+   "dataset_year": 1972,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Heat (1995 film)",
+   "group": "baseline",
+   "dataset_title": "Heat (1986 film)",
+   "dataset_year": 1986,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Heat (1995 film)",
+   "group": "baseline",
+   "dataset_title": "Heat (1995 film)",
+   "dataset_year": 1995,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Heat (1995 film)",
+   "group": "baseline",
+   "dataset_title": "Heat (2006 film)",
+   "dataset_year": 2006,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Die Hard",
+   "group": "baseline",
+   "dataset_title": "Die Hard",
+   "dataset_year": 1988,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Raiders of the Lost Ark",
+   "group": "baseline",
+   "dataset_title": "Raiders of the Lost Ark",
+   "dataset_year": 1981,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "The Wizard of Oz",
+   "group": "baseline",
+   "dataset_title": "The Wizard of Oz (1939 film)",
+   "dataset_year": 1939,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": true,
+   "document": 3597,
+   "set": "plot"
+  },
+  {
+   "study_work": "Singin' in the Rain",
+   "group": "baseline",
+   "dataset_title": "Singin' in the Rain",
+   "dataset_year": 1952,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Some Like It Hot",
+   "group": "baseline",
+   "dataset_title": "Some Like It Hot",
+   "dataset_year": 1959,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Some Like It Hot",
+   "group": "baseline",
+   "dataset_title": "Some Like It Hot (2016 film)",
+   "dataset_year": 2016,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "The Sound of Music (film)",
+   "group": "baseline",
+   "dataset_title": "The Sound of Music (film)",
+   "dataset_year": 1965,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Psycho (1960 film)",
+   "group": "baseline",
+   "dataset_title": "Psycho (1960 film)",
+   "dataset_year": 1960,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Psycho (1960 film)",
+   "group": "baseline",
+   "dataset_title": "Psycho (1998 film)",
+   "dataset_year": 1998,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Rear Window",
+   "group": "baseline",
+   "dataset_title": "Rear Window",
+   "dataset_year": 1954,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Vertigo (film)",
+   "group": "baseline",
+   "dataset_title": "Vertigo (film)",
+   "dataset_year": 1958,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "2001: A Space Odyssey",
+   "group": "baseline",
+   "dataset_title": "2001: A Space Odyssey (film)",
+   "dataset_year": 1968,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "The Matrix",
+   "group": "baseline",
+   "dataset_title": "The Matrix",
+   "dataset_year": 1999,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Inception",
+   "group": "baseline",
+   "dataset_title": "Inception",
+   "dataset_year": 2010,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Ghostbusters",
+   "group": "baseline",
+   "dataset_title": "Ghostbusters",
+   "dataset_year": 1984,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Ghostbusters",
+   "group": "baseline",
+   "dataset_title": "Ghostbusters (2016 film)",
+   "dataset_year": 2016,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Notting Hill (film)",
+   "group": "baseline",
+   "dataset_title": "Notting Hill (film)",
+   "dataset_year": 1999,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "The Devil Wears Prada (film)",
+   "group": "baseline",
+   "dataset_title": "The Devil Wears Prada (film)",
+   "dataset_year": 2006,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Legally Blonde",
+   "group": "baseline",
+   "dataset_title": "Legally Blonde",
+   "dataset_year": 2001,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Mrs. Doubtfire",
+   "group": "baseline",
+   "dataset_title": "Mrs. Doubtfire",
+   "dataset_year": 1993,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Big (film)",
+   "group": "baseline",
+   "dataset_title": "Big (film)",
+   "dataset_year": 1988,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Shrek",
+   "group": "baseline",
+   "dataset_title": "Shrek",
+   "dataset_year": 2001,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Spirited Away",
+   "group": "baseline",
+   "dataset_title": "Spirited Away",
+   "dataset_year": 2001,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Parasite (2019 film)",
+   "group": "baseline",
+   "dataset_title": "Parasite (film)",
+   "dataset_year": 1982,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": true,
+   "document": 5589,
+   "set": "plot"
+  },
+  {
+   "study_work": "Get Out",
+   "group": "baseline",
+   "dataset_title": "Get Out",
+   "dataset_year": 2017,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Little Miss Sunshine",
+   "group": "baseline",
+   "dataset_title": "Little Miss Sunshine",
+   "dataset_year": 2006,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "The Social Network",
+   "group": "baseline",
+   "dataset_title": "The Social Network",
+   "dataset_year": 2010,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "The Grand Budapest Hotel",
+   "group": "baseline",
+   "dataset_title": "The Grand Budapest Hotel",
+   "dataset_year": 2014,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Mad Max: Fury Road",
+   "group": "baseline",
+   "dataset_title": "Mad Max: Fury Road",
+   "dataset_year": 2015,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Interstellar (film)",
+   "group": "baseline",
+   "dataset_title": "Interstellar (film)",
+   "dataset_year": 2014,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Saving Private Ryan",
+   "group": "baseline",
+   "dataset_title": "Saving Private Ryan",
+   "dataset_year": 1998,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "The Exorcist",
+   "group": "baseline",
+   "dataset_title": "The Exorcist (film)",
+   "dataset_year": 1973,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": true,
+   "document": 5284,
+   "set": "plot"
+  },
+  {
+   "study_work": "The Shining (film)",
+   "group": "baseline",
+   "dataset_title": "The Shining (film)",
+   "dataset_year": 1980,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Goodfellas",
+   "group": "baseline",
+   "dataset_title": "Goodfellas",
+   "dataset_year": 1990,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Taxi Driver",
+   "group": "baseline",
+   "dataset_title": "Taxi Driver",
+   "dataset_year": 1976,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Taxi Driver",
+   "group": "baseline",
+   "dataset_title": "Taxi Driver (1954 film)",
+   "dataset_year": 1954,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": true,
+   "document": 9238,
+   "set": "plot"
+  },
+  {
+   "study_work": "Lost in Translation",
+   "group": "baseline",
+   "dataset_title": "Lost in Translation (film)",
+   "dataset_year": 2003,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "Babe (film)",
+   "group": "baseline",
+   "dataset_title": "Babe (film)",
+   "dataset_year": 1995,
+   "removed_by_the_builder": true,
+   "in_reference_corpus": false,
+   "document": null,
+   "set": null
+  },
+  {
+   "study_work": "The Princess Bride",
+   "group": "baseline",
+   "dataset_title": "The Princess Bride (film)",
+   "dataset_year": 1987,
+   "removed_by_the_builder": false,
+   "in_reference_corpus": true,
+   "document": 843,
+   "set": "bgplot"
+  }
+ ],
+ "by_content_cosine_at_least_0.3": [
+  {
+   "study_work": "The Princess Bride",
+   "group": "baseline",
+   "document": 843,
+   "set": "bgplot",
+   "reference_title": "The Princess Bride (film)",
+   "cosine": 0.701,
+   "left_out_downstream": true
+  },
+  {
+   "study_work": "The Notebook",
+   "group": "baseline",
+   "document": 6895,
+   "set": "plot",
+   "reference_title": "The Notebook (2004 film)",
+   "cosine": 0.662,
+   "left_out_downstream": true
+  },
+  {
+   "study_work": "The Wizard of Oz",
+   "group": "baseline",
+   "document": 3597,
+   "set": "plot",
+   "reference_title": "The Wizard of Oz (1939 film)",
+   "cosine": 0.627,
+   "left_out_downstream": true
+  },
+  {
+   "study_work": "The Dark Knight",
+   "group": "batman",
+   "document": 7175,
+   "set": "plot",
+   "reference_title": "The Dark Knight (film)",
+   "cosine": 0.621,
+   "left_out_downstream": true
+  },
+  {
+   "study_work": "Pride & Prejudice (2005 film)",
+   "group": "baseline",
+   "document": 3657,
+   "set": "plot",
+   "reference_title": "Pride and Prejudice (1940 film)",
+   "cosine": 0.576,
+   "left_out_downstream": false
+  },
+  {
+   "study_work": "The Exorcist",
+   "group": "baseline",
+   "document": 5284,
+   "set": "plot",
+   "reference_title": "The Exorcist (film)",
+   "cosine": 0.562,
+   "left_out_downstream": true
+  },
+  {
+   "study_work": "The Scarlet Pimpernel",
+   "group": "cousin",
+   "document": 2012,
+   "set": "bgplot",
+   "reference_title": "The Scarlet Pimpernel (1982 film)",
+   "cosine": 0.533,
+   "left_out_downstream": false
+  },
+  {
+   "study_work": "Star Wars (film)",
+   "group": "baseline",
+   "document": 777,
+   "set": "bgplot",
+   "reference_title": "Return of the Jedi",
+   "cosine": 0.478,
+   "left_out_downstream": false
+  },
+  {
+   "study_work": "The Count of Monte Cristo",
+   "group": "cousin",
+   "document": 87,
+   "set": "bgplot",
+   "reference_title": "The Count of Monte Cristo (1934 film)",
+   "cosine": 0.476,
+   "left_out_downstream": false
+  },
+  {
+   "study_work": "Pride & Prejudice (2005 film)",
+   "group": "baseline",
+   "document": 7671,
+   "set": "plot",
+   "reference_title": "Pride and Prejudice and Zombies (film)",
+   "cosine": 0.461,
+   "left_out_downstream": false
+  },
+  {
+   "study_work": "The Wizard of Oz",
+   "group": "baseline",
+   "document": 5452,
+   "set": "plot",
+   "reference_title": "The Wiz (film)",
+   "cosine": 0.454,
+   "left_out_downstream": false
+  },
+  {
+   "study_work": "Dracula",
+   "group": "cousin",
+   "document": 5460,
+   "set": "plot",
+   "reference_title": "Dracula (1979 film)",
+   "cosine": 0.451,
+   "left_out_downstream": false
+  },
+  {
+   "study_work": "Dracula",
+   "group": "cousin",
+   "document": 6266,
+   "set": "plot",
+   "reference_title": "Dracula: Dead and Loving It",
+   "cosine": 0.434,
+   "left_out_downstream": false
+  },
+  {
+   "study_work": "Dracula",
+   "group": "cousin",
+   "document": 41,
+   "set": "bgplot",
+   "reference_title": "Dracula (1931 English-language film)",
+   "cosine": 0.43,
+   "left_out_downstream": false
+  },
+  {
+   "study_work": "Superman (1978 film)",
+   "group": "cousin",
+   "document": 5513,
+   "set": "plot",
+   "reference_title": "Superman II",
+   "cosine": 0.425,
+   "left_out_downstream": false
+  },
+  {
+   "study_work": "Superman (1978 film)",
+   "group": "cousin",
+   "document": 1721,
+   "set": "bgplot",
+   "reference_title": "Man of Steel (film)",
+   "cosine": 0.396,
+   "left_out_downstream": false
+  },
+  {
+   "study_work": "Toy Story",
+   "group": "baseline",
+   "document": 1243,
+   "set": "bgplot",
+   "reference_title": "Toy Story 2",
+   "cosine": 0.385,
+   "left_out_downstream": false
+  },
+  {
+   "study_work": "The Bat (1926 film)",
+   "group": "cousin",
+   "document": 494,
+   "set": "bgplot",
+   "reference_title": "The Bat (1959 film)",
+   "cosine": 0.373,
+   "left_out_downstream": false
+  },
+  {
+   "study_work": "2001: A Space Odyssey",
+   "group": "baseline",
+   "document": 5636,
+   "set": "plot",
+   "reference_title": "2010 (film)",
+   "cosine": 0.359,
+   "left_out_downstream": false
+  },
+  {
+   "study_work": "Home Alone",
+   "group": "baseline",
+   "document": 985,
+   "set": "bgplot",
+   "reference_title": "Home Alone 2: Lost in New York",
+   "cosine": 0.342,
+   "left_out_downstream": false
+  },
+  {
+   "study_work": "Star Wars (film)",
+   "group": "baseline",
+   "document": 6976,
+   "set": "plot",
+   "reference_title": "Star Wars: Episode III – Revenge of the Sith",
+   "cosine": 0.341,
+   "left_out_downstream": false
+  },
+  {
+   "study_work": "Toy Story",
+   "group": "baseline",
+   "document": 7346,
+   "set": "plot",
+   "reference_title": "Toy Story 3",
+   "cosine": 0.337,
+   "left_out_downstream": false
+  },
+  {
+   "study_work": "Batman v Superman: Dawn of Justice",
+   "group": "batman",
+   "document": 5513,
+   "set": "plot",
+   "reference_title": "Superman II",
+   "cosine": 0.335,
+   "left_out_downstream": false
+  },
+  {
+   "study_work": "Dracula",
+   "group": "cousin",
+   "document": 7434,
+   "set": "plot",
+   "reference_title": "Dracula Reborn",
+   "cosine": 0.329,
+   "left_out_downstream": false
+  },
+  {
+   "study_work": "Ghostbusters",
+   "group": "baseline",
+   "document": 5929,
+   "set": "plot",
+   "reference_title": "Ghostbusters II",
+   "cosine": 0.326,
+   "left_out_downstream": false
+  },
+  {
+   "study_work": "Spider-Man (2002 film)",
+   "group": "cousin",
+   "document": 7600,
+   "set": "plot",
+   "reference_title": "The Amazing Spider-Man 2",
+   "cosine": 0.312,
+   "left_out_downstream": false
+  },
+  {
+   "study_work": "The Dark Knight Rises",
+   "group": "batman",
+   "document": 7175,
+   "set": "plot",
+   "reference_title": "The Dark Knight (film)",
+   "cosine": 0.305,
+   "left_out_downstream": true
+  }
+ ]
+}

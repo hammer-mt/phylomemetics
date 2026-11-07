@@ -10,7 +10,10 @@ have nothing to do with the study's design, in four parts (all sampled with one 
   wiki     24,000 English Wikipedia articles (at least 3,000 characters), their first 6,000 characters.
   book     10,000 passages of 5,500 characters from 1,250 English Project Gutenberg books.
 
-No study work is in any plot set (matched on the Wikipedia title). Models read each document as one context,
+Study works are left out of the plot sets by exact Wikipedia title only. Five are in the corpus under the dataset's
+older titles (documents 843, 3597, 5284, 6895 and 7175; PLAN.md Section 5) and are left out downstream
+(background_pass.py --exclude-docs 843; OVERLAP in gpu/finalize_scale.py). This filter comes before the seeded draw,
+so changing it would give a different corpus; check_reference_overlap.py reports the overlap. Models read each document as one context,
 truncated to 1,024 tokens.
 
 Sources (pinned revisions on the Hugging Face Hub):
