@@ -427,9 +427,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 565231,
@@ -539,9 +539,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 550964,
@@ -651,9 +651,9 @@
     1,
     1
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 124334,
@@ -763,9 +763,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 568990,
@@ -875,9 +875,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 460110,
@@ -987,9 +987,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 112000,
@@ -1099,9 +1099,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 145519,
@@ -1211,9 +1211,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 373146,
@@ -1323,9 +1323,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 406598,
@@ -1435,9 +1435,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 844471,
@@ -1547,9 +1547,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 679340,
@@ -1659,9 +1659,9 @@
     1,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 156371,
@@ -1771,9 +1771,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 844528,
@@ -1883,9 +1883,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 836821,
@@ -1995,9 +1995,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 827593,
@@ -2107,9 +2107,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 400670,
@@ -2219,9 +2219,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 594827,
@@ -2331,9 +2331,9 @@
     1,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 698739,
@@ -2443,9 +2443,9 @@
     1,
     1
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 811736,
@@ -2555,9 +2555,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 824648,
@@ -2667,9 +2667,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 825743,
@@ -2779,9 +2779,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 327575,
@@ -2891,9 +2891,9 @@
     1,
     1
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 135688,
@@ -3003,9 +3003,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 306406,
@@ -3115,9 +3115,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 604262,
@@ -3227,9 +3227,9 @@
     1,
     1
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 832275,
@@ -3339,9 +3339,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 841482,
@@ -3451,9 +3451,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 581933,
@@ -3563,9 +3563,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 856277,
@@ -3675,9 +3675,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 53703,
@@ -3787,9 +3787,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 852645,
@@ -3899,9 +3899,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 398548,
@@ -4011,9 +4011,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 422114,
@@ -4123,9 +4123,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 504290,
@@ -4235,9 +4235,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 413586,
@@ -4347,9 +4347,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 793207,
@@ -4459,9 +4459,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 829494,
@@ -4571,9 +4571,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 840061,
@@ -4683,9 +4683,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 881860,
@@ -4795,9 +4795,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 559572,
@@ -4907,9 +4907,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 403759,
@@ -5019,9 +5019,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 112625,
@@ -5131,9 +5131,9 @@
     1,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 131610,
@@ -5243,9 +5243,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 132337,
@@ -5355,9 +5355,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 395560,
@@ -5467,9 +5467,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 805859,
@@ -5579,9 +5579,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 838642,
@@ -5691,9 +5691,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 376737,
@@ -5803,9 +5803,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 558309,
@@ -5915,9 +5915,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 827221,
@@ -6027,9 +6027,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 832905,
@@ -6139,9 +6139,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 844666,
@@ -6251,9 +6251,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 391802,
@@ -6363,9 +6363,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 813674,
@@ -6475,9 +6475,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 130069,
@@ -6587,9 +6587,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 559532,
@@ -6699,9 +6699,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 854367,
@@ -6811,9 +6811,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 136830,
@@ -6923,9 +6923,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 144750,
@@ -7035,9 +7035,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 588934,
@@ -7147,9 +7147,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 398907,
@@ -7259,9 +7259,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 598347,
@@ -7371,9 +7371,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 440010,
@@ -7483,9 +7483,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "tie",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 45473,
@@ -7595,9 +7595,9 @@
     0,
     1
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 188341,
@@ -7707,9 +7707,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 837039,
@@ -7819,9 +7819,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 163168,
@@ -7931,9 +7931,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 176751,
@@ -8043,9 +8043,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 374913,
@@ -8155,9 +8155,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 609893,
@@ -8267,9 +8267,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 880592,
@@ -8379,9 +8379,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 506907,
@@ -8491,9 +8491,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 372199,
@@ -8603,9 +8603,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 819222,
@@ -8715,9 +8715,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 853515,
@@ -8827,9 +8827,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 220744,
@@ -8939,9 +8939,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "tie",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 416525,
@@ -9051,9 +9051,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 511328,
@@ -9163,9 +9163,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 5762,
@@ -9275,9 +9275,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 210540,
@@ -9387,9 +9387,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 385661,
@@ -9499,9 +9499,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 397742,
@@ -9611,9 +9611,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 413688,
@@ -9723,9 +9723,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 539912,
@@ -9835,9 +9835,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 826801,
@@ -9947,9 +9947,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 837457,
@@ -10059,9 +10059,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 881889,
@@ -10171,9 +10171,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 694663,
@@ -10283,9 +10283,9 @@
     1,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 451471,
@@ -10395,9 +10395,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 147396,
@@ -10507,9 +10507,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 573576,
@@ -10619,9 +10619,9 @@
     1,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 64864,
@@ -10731,9 +10731,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 2047,
@@ -10843,9 +10843,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 177935,
@@ -10955,9 +10955,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "tie",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 494694,
@@ -11067,9 +11067,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 507250,
@@ -11179,9 +11179,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 517223,
@@ -11291,9 +11291,9 @@
     0,
     1
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 529495,
@@ -11403,9 +11403,9 @@
     1,
     1
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 454387,
@@ -11515,9 +11515,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 73576,
@@ -11627,9 +11627,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 145618,
@@ -11739,9 +11739,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 249243,
@@ -11851,9 +11851,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "tie",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 276488,
@@ -11963,9 +11963,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 492572,
@@ -12075,9 +12075,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 534924,
@@ -12187,9 +12187,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 735851,
@@ -12299,9 +12299,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 181725,
@@ -12411,9 +12411,9 @@
     1,
     1
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 86683,
@@ -12523,9 +12523,9 @@
     1,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 38348,
@@ -12635,9 +12635,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 529076,
@@ -12747,9 +12747,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 617527,
@@ -12859,9 +12859,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 707580,
@@ -12971,9 +12971,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 65790,
@@ -13083,9 +13083,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 70156,
@@ -13195,9 +13195,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 71825,
@@ -13307,9 +13307,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 109519,
@@ -13419,9 +13419,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 181098,
@@ -13531,9 +13531,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 201972,
@@ -13643,9 +13643,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 262547,
@@ -13755,9 +13755,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 335356,
@@ -13867,9 +13867,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 383205,
@@ -13979,9 +13979,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 405930,
@@ -14091,9 +14091,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 484163,
@@ -14203,9 +14203,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "tie",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 543504,
@@ -14315,9 +14315,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 553323,
@@ -14427,9 +14427,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 623466,
@@ -14539,9 +14539,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 826562,
@@ -14651,9 +14651,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 813270,
@@ -14763,9 +14763,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 376466,
@@ -14875,9 +14875,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 833097,
@@ -14987,9 +14987,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 316740,
@@ -15099,9 +15099,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 382272,
@@ -15211,9 +15211,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 114423,
@@ -15323,9 +15323,9 @@
     1,
     1
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 363491,
@@ -15435,9 +15435,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 144931,
@@ -15547,9 +15547,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 738215,
@@ -15659,9 +15659,9 @@
     1,
     1
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 384684,
@@ -15771,9 +15771,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 809845,
@@ -15883,9 +15883,9 @@
     1,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 621792,
@@ -15995,9 +15995,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 553609,
@@ -16107,9 +16107,9 @@
     1,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 523659,
@@ -16219,9 +16219,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 393632,
@@ -16331,9 +16331,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 853542,
@@ -16443,9 +16443,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 829722,
@@ -16555,9 +16555,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 356911,
@@ -16667,9 +16667,9 @@
     0,
     1
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 315315,
@@ -16779,9 +16779,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 850816,
@@ -16891,9 +16891,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 116209,
@@ -17003,9 +17003,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 379403,
@@ -17115,9 +17115,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 836639,
@@ -17227,9 +17227,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 10540,
@@ -17339,9 +17339,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 402677,
@@ -17451,9 +17451,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 446669,
@@ -17563,9 +17563,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 230858,
@@ -17675,9 +17675,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 428032,
@@ -17787,9 +17787,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 862924,
@@ -17899,9 +17899,9 @@
     1,
     1
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 414287,
@@ -18011,9 +18011,9 @@
     1,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 394314,
@@ -18123,9 +18123,9 @@
     1,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 171867,
@@ -18235,9 +18235,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 311592,
@@ -18347,9 +18347,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 127178,
@@ -18459,9 +18459,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 854726,
@@ -18571,9 +18571,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 837126,
@@ -18683,9 +18683,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 385893,
@@ -18795,9 +18795,9 @@
     1,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 388994,
@@ -18907,9 +18907,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 819099,
@@ -19019,9 +19019,9 @@
     1,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 3225,
@@ -19131,9 +19131,9 @@
     0,
     1
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 6972,
@@ -19243,9 +19243,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 74990,
@@ -19355,9 +19355,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 122592,
@@ -19467,9 +19467,9 @@
     1,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 132685,
@@ -19579,9 +19579,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 159950,
@@ -19691,9 +19691,9 @@
     0,
     1
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 256801,
@@ -19803,9 +19803,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 257645,
@@ -19915,9 +19915,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 341047,
@@ -20027,9 +20027,9 @@
     1,
     1
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 343225,
@@ -20139,9 +20139,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 361617,
@@ -20251,9 +20251,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 525206,
@@ -20363,9 +20363,9 @@
     0,
     1
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 528763,
@@ -20475,9 +20475,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 622905,
@@ -20587,9 +20587,9 @@
     1,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 640973,
@@ -20699,9 +20699,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 691885,
@@ -20811,9 +20811,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 714976,
@@ -20923,9 +20923,9 @@
     1,
     1
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 715962,
@@ -21035,9 +21035,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 769190,
@@ -21147,9 +21147,9 @@
     0,
     1
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 795211,
@@ -21259,9 +21259,9 @@
     1,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 71327,
@@ -21371,9 +21371,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 76609,
@@ -21483,9 +21483,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 109416,
@@ -21595,9 +21595,9 @@
     0,
     1
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 127524,
@@ -21707,9 +21707,9 @@
     1,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 366061,
@@ -21819,9 +21819,9 @@
     0,
     1
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 392617,
@@ -21931,9 +21931,9 @@
     0,
     1
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "tie",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 428929,
@@ -22043,9 +22043,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 485646,
@@ -22155,9 +22155,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 496912,
@@ -22267,9 +22267,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 515471,
@@ -22379,9 +22379,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 544109,
@@ -22491,9 +22491,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": true,
+   "testable_out_of_context": true
   },
   {
    "unit": 643521,
@@ -22603,9 +22603,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 649831,
@@ -22715,9 +22715,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 658370,
@@ -22827,9 +22827,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 674436,
@@ -22939,9 +22939,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 675471,
@@ -23051,9 +23051,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 699945,
@@ -23163,9 +23163,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 704899,
@@ -23275,9 +23275,9 @@
     1,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 760600,
@@ -23387,9 +23387,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   },
   {
    "unit": 795785,
@@ -23499,9 +23499,9 @@
     0,
     0
    ],
-   "outcome": null,
-   "idea_bound": null,
-   "testable_out_of_context": null
+   "outcome": "win",
+   "idea_bound": false,
+   "testable_out_of_context": true
   }
  ]
 }
