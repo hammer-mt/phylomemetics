@@ -29,7 +29,8 @@ def up(local, sub="jobs"):
 
 
 def go(name, cmd):
-    print(rc.run(name, f"cd {CODE} && {cmd}"), flush=True)
+    tag = sys.argv[2]
+    print(rc.run(name, f"set -o pipefail; mkdir -p {OUT}/{tag} && cd {CODE} && {cmd}"), flush=True)
     code = rc.wait(name, poll=10, max_print=3000)
     if code != 0:
         raise SystemExit(f"{name} exited with {code}")

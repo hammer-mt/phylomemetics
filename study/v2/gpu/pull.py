@@ -21,7 +21,7 @@ import runpod_ctl as rc  # noqa: E402
 
 BASE = [("study/scale.npy", "scale.npy"), ("study/scale_ref.npy", "scale_ref.npy"), ("study/scale_ref5.npy", "scale_ref5.npy"),
         ("study/scale_raw.npy", "scale_raw.npy"), ("study/scale_source.npy", "scale_source.npy"), ("study/scale_summary.json", "scale_summary.json"),
-        ("study/meta.json", "study_meta.json"), ("ref/meta.json", "meta.json"), ("background/counts.npy", "bg_counts.npy"),
+        ("study/meta.json", "study_meta.json"), ("ref/meta.json", "meta.json"), ("ref_sup/meta.json", "sup_meta.json"), ("background/counts.npy", "bg_counts.npy"),
         ("background/counts_ref_scale.npy", "bg_counts_ref_scale.npy"), ("background/counts_ref5_scale.npy", "bg_counts_ref5_scale.npy"),
         ("background/counts_raw.npy", "bg_counts_raw.npy"), ("background/top_shares.u8.npy", "bg_top_shares.u8.npy"),
         ("background/meta.json", "bg_meta.json"), ("background/present30.bits.npy", "bg_present30.bits.npy")]

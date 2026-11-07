@@ -1,0 +1,367 @@
+{
+ "model": "qwen3-32b",
+ "seed": 20261107,
+ "n": 40,
+ "neurons": [
+  {
+   "id": "L12_N6594",
+   "layer": 12,
+   "neuron": 6594,
+   "pole": "-",
+   "unit": 1952194,
+   "title": "'The number and' detector whose negative pole names zoonotic infections",
+   "depth_quarter": 1
+  },
+  {
+   "id": "L13_N8283",
+   "layer": 13,
+   "neuron": 8283,
+   "pole": "-",
+   "unit": 1979483,
+   "title": "'One more on the pile' phrases, and wrapped code-comment indentation",
+   "depth_quarter": 1
+  },
+  {
+   "id": "L14_N11264",
+   "layer": 14,
+   "neuron": 11264,
+   "pole": "+",
+   "unit": 369664,
+   "title": "A Christmas Day neuron: the 25 in December 25, minus Saint John",
+   "depth_quarter": 1
+  },
+  {
+   "id": "L1_N20535",
+   "layer": 1,
+   "neuron": 20535,
+   "pole": "+",
+   "unit": 46135,
+   "title": "Completes swing, sting, fling and cling from onset plus '-ing'",
+   "depth_quarter": 1
+  },
+  {
+   "id": "L2_N8195",
+   "layer": 2,
+   "neuron": 8195,
+   "pole": "+",
+   "unit": 59395,
+   "title": "A string detector for the name Srinivasa, in any script",
+   "depth_quarter": 1
+  },
+  {
+   "id": "L5_N13200",
+   "layer": 5,
+   "neuron": 13200,
+   "pole": "-",
+   "unit": 1779600,
+   "title": "Little wonder, no surprise: the stock phrases for an unsurprising result",
+   "depth_quarter": 1
+  },
+  {
+   "id": "L6_N22538",
+   "layer": 6,
+   "neuron": 22538,
+   "pole": "+",
+   "unit": 176138,
+   "title": "HEA, slow burn, insta-love: the labels readers put on a story",
+   "depth_quarter": 1
+  },
+  {
+   "id": "L7_N9251",
+   "layer": 7,
+   "neuron": 9251,
+   "pole": "+",
+   "unit": 188451,
+   "title": "Long shots, shoo-ins and underdogs: the words for who\u2019s expected to win",
+   "depth_quarter": 1
+  },
+  {
+   "id": "L8_N24564",
+   "layer": 8,
+   "neuron": 24564,
+   "pole": "+",
+   "unit": 229364,
+   "title": "A cross-lingual date-fruit detector that dips on bell peppers",
+   "depth_quarter": 1
+  },
+  {
+   "id": "L9_N6153",
+   "layer": 9,
+   "neuron": 6153,
+   "pole": "-",
+   "unit": 1874953,
+   "title": "A probability-only axis: event relations versus sample-space outcomes",
+   "depth_quarter": 1
+  },
+  {
+   "id": "L17_N652",
+   "layer": 17,
+   "neuron": 652,
+   "pole": "+",
+   "unit": 435852,
+   "title": "The puppet on the stage of a baby-psychology experiment",
+   "depth_quarter": 2
+  },
+  {
+   "id": "L19_N15514",
+   "layer": 19,
+   "neuron": 15514,
+   "pole": "+",
+   "unit": 501914,
+   "title": "The 'not if, but when' neuron: marks the open question",
+   "depth_quarter": 2
+  },
+  {
+   "id": "L25_N24147",
+   "layer": 25,
+   "neuron": 24147,
+   "pole": "+",
+   "unit": 664147,
+   "title": "Confidence words that land after ignorance: a Dunning-Kruger detector",
+   "depth_quarter": 2
+  },
+  {
+   "id": "L27_N17377",
+   "layer": 27,
+   "neuron": 17377,
+   "pole": "+",
+   "unit": 708577,
+   "title": "An indefinite act of analysis offered as what a text contains",
+   "depth_quarter": 2
+  },
+  {
+   "id": "L27_N25489",
+   "layer": 27,
+   "neuron": 25489,
+   "pole": "+",
+   "unit": 716689,
+   "title": "The song you can't get out of your head",
+   "depth_quarter": 2
+  },
+  {
+   "id": "L29_N21111",
+   "layer": 29,
+   "neuron": 21111,
+   "pole": "+",
+   "unit": 763511,
+   "title": "'The other side' as a far place where something awaits",
+   "depth_quarter": 2
+  },
+  {
+   "id": "L29_N21165",
+   "layer": 29,
+   "neuron": 21165,
+   "pole": "+",
+   "unit": 763565,
+   "title": "Household things left idle, peaking on 'collecting' before 'dust'",
+   "depth_quarter": 2
+  },
+  {
+   "id": "L29_N9871",
+   "layer": 29,
+   "neuron": 9871,
+   "pole": "+",
+   "unit": 752271,
+   "title": "As the crow flies versus walking the route leg by leg",
+   "depth_quarter": 2
+  },
+  {
+   "id": "L31_N23558",
+   "layer": 31,
+   "neuron": 23558,
+   "pole": "-",
+   "unit": 2455558,
+   "title": "Solve-for-a-value versus defined-as-a-sum at the word 'of'",
+   "depth_quarter": 2
+  },
+  {
+   "id": "L31_N3975",
+   "layer": 31,
+   "neuron": 3975,
+   "pole": "+",
+   "unit": 797575,
+   "title": "The slot before the program you need to open a named file",
+   "depth_quarter": 2
+  },
+  {
+   "id": "L32_N25129",
+   "layer": 32,
+   "neuron": 25129,
+   "pole": "+",
+   "unit": 844329,
+   "title": "A neuron for everyone chipping into the same hat",
+   "depth_quarter": 3
+  },
+  {
+   "id": "L34_N12965",
+   "layer": 34,
+   "neuron": 12965,
+   "pole": "+",
+   "unit": 883365,
+   "title": "Go-hand-in-hand idiom detector, negative for linked, mixed and traded",
+   "depth_quarter": 3
+  },
+  {
+   "id": "L34_N13078",
+   "layer": 34,
+   "neuron": 13078,
+   "pole": "+",
+   "unit": 883478,
+   "title": "A Tooth Fairy neuron: shed tooth, pillow swap, coin",
+   "depth_quarter": 3
+  },
+  {
+   "id": "L34_N14483",
+   "layer": 34,
+   "neuron": 14483,
+   "pole": "+",
+   "unit": 884883,
+   "title": "The creaky-floorboard neuron: squeaks from floors, stairs, beds and hinges",
+   "depth_quarter": 3
+  },
+  {
+   "id": "L34_N21393",
+   "layer": 34,
+   "neuron": 21393,
+   "pole": "-",
+   "unit": 2530193,
+   "title": "A signed axis over 'two' words: bis( up, bipartite and biennial down",
+   "depth_quarter": 3
+  },
+  {
+   "id": "L35_N9580",
+   "layer": 35,
+   "neuron": 9580,
+   "pole": "+",
+   "unit": 905580,
+   "title": "A weekday-date detector that fires just before the day number",
+   "depth_quarter": 3
+  },
+  {
+   "id": "L36_N10322",
+   "layer": 36,
+   "neuron": 10322,
+   "pole": "+",
+   "unit": 931922,
+   "title": "Waiting for the Moon to cover the Sun",
+   "depth_quarter": 3
+  },
+  {
+   "id": "L37_N134",
+   "layer": 37,
+   "neuron": 134,
+   "pole": "+",
+   "unit": 947334,
+   "title": "A neuron for 'it would not be wrong to say' hedges",
+   "depth_quarter": 3
+  },
+  {
+   "id": "L40_N6657",
+   "layer": 40,
+   "neuron": 6657,
+   "pole": "+",
+   "unit": 1030657,
+   "title": "A signed reader of index lists: subject headings up, dumps down",
+   "depth_quarter": 3
+  },
+  {
+   "id": "L41_N23668",
+   "layer": 41,
+   "neuron": 23668,
+   "pole": "+",
+   "unit": 1073268,
+   "title": "Of all the days: a neuron for luck that picks its moment",
+   "depth_quarter": 3
+  },
+  {
+   "id": "L48_N18669",
+   "layer": 48,
+   "neuron": 18669,
+   "pole": "+",
+   "unit": 1247469,
+   "title": "Fires when one new item follows a plural group",
+   "depth_quarter": 4
+  },
+  {
+   "id": "L52_N3653",
+   "layer": 52,
+   "neuron": 3653,
+   "pole": "-",
+   "unit": 2973253,
+   "title": "A factor-of-three neuron: positive for tripling, negative for stoichiometry",
+   "depth_quarter": 4
+  },
+  {
+   "id": "L53_N277",
+   "layer": 53,
+   "neuron": 277,
+   "pole": "+",
+   "unit": 1357077,
+   "title": "Places opening to the public, versus products sold on a market",
+   "depth_quarter": 4
+  },
+  {
+   "id": "L57_N20004",
+   "layer": 57,
+   "neuron": 20004,
+   "pole": "+",
+   "unit": 1479204,
+   "title": "Under siege, the moment before it falls or holds",
+   "depth_quarter": 4
+  },
+  {
+   "id": "L59_N18389",
+   "layer": 59,
+   "neuron": 18389,
+   "pole": "+",
+   "unit": 1528789,
+   "title": "A slot detector for Agatha Christie in catalogs of detective fiction",
+   "depth_quarter": 4
+  },
+  {
+   "id": "L60_N13449",
+   "layer": 60,
+   "neuron": 13449,
+   "pole": "+",
+   "unit": 1549449,
+   "title": "A catch-verb-is-coming neuron that peaks mid-word on split verbs",
+   "depth_quarter": 4
+  },
+  {
+   "id": "L60_N14726",
+   "layer": 60,
+   "neuron": 14726,
+   "pole": "+",
+   "unit": 1550726,
+   "title": "Candy brand due (+) or fairy-tale figure due (\u2212): a signed name predictor",
+   "depth_quarter": 4
+  },
+  {
+   "id": "L62_N18552",
+   "layer": 62,
+   "neuron": 18552,
+   "pole": "+",
+   "unit": 1605752,
+   "title": "Separators that land at the right margin of hard-wrapped text",
+   "depth_quarter": 4
+  },
+  {
+   "id": "L63_N3186",
+   "layer": 63,
+   "neuron": 3186,
+   "pole": "-",
+   "unit": 3254386,
+   "title": "A signed dial on the token 'output': brake in templates, boost in prose",
+   "depth_quarter": 4
+  },
+  {
+   "id": "L63_N960",
+   "layer": 63,
+   "neuron": 960,
+   "pole": "+",
+   "unit": 1613760,
+   "title": "Signed spikes at fixed tokens inside a few memorized web strings",
+   "depth_quarter": 4
+  }
+ ]
+}

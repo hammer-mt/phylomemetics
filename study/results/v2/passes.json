@@ -1,0 +1,199 @@
+{
+ "qwen3-32b": {
+  "repository": "Qwen/Qwen3-32B",
+  "revision": "9216db5781bf21249d130ec9da846c4624c16137",
+  "layers": 64,
+  "width": 25600,
+  "neurons": 1638400,
+  "units": 3276800,
+  "precision": "bfloat16",
+  "reference": {
+   "documents": 46000,
+   "tokens": 41110134,
+   "max_tokens_per_document": 1024,
+   "tokens_per_batch": 24576,
+   "examples_kept_per_unit": 24,
+   "seconds": 9873
+  }
+ },
+ "qwen3-8b": {
+  "repository": "Qwen/Qwen3-8B",
+  "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "layers": 36,
+  "width": 12288,
+  "neurons": 442368,
+  "units": 884736,
+  "precision": "bfloat16",
+  "reference": {
+   "documents": 46000,
+   "tokens": 41110134,
+   "max_tokens_per_document": 1024,
+   "tokens_per_batch": 49152,
+   "examples_kept_per_unit": 24,
+   "seconds": 2577
+  },
+  "supplement": {
+   "documents": 5434,
+   "tokens": 6754089,
+   "max_tokens_per_document": 2048,
+   "seconds": 460
+  },
+  "study": {
+   "works": 114,
+   "seconds": 51,
+   "software": {
+    "repo": "Qwen/Qwen3-8B",
+    "commit": null,
+    "dtype": "torch.bfloat16",
+    "torch": "2.8.0+cu128",
+    "transformers": "5.22.2",
+    "gpu": [
+     "NVIDIA RTX PRO 6000 Blackwell Server Edition"
+    ]
+   }
+  },
+  "background": {
+   "plots": 2999,
+   "tokens": 2398247,
+   "one_plot_at_a_time": true,
+   "seconds": 483
+  },
+  "franchises": {
+   "films": 123,
+   "tokens": 97128
+  },
+  "scale": {
+   "n_units": 884736,
+   "supplement_included": true,
+   "documents_left_out_of_the_reference_only_scale": [
+    843,
+    7175,
+    6895,
+    3597,
+    5284
+   ],
+   "units_whose_strongest_reference_example_is_in_a_left_out_document": 37,
+   "units_never_active_in_reference": 46232,
+   "units_with_zero_scale": 46230,
+   "units_whose_scale_comes_from_the_reference_corpus": 579312,
+   "units_whose_scale_comes_from_the_supplement": 304263,
+   "units_whose_scale_comes_from_the_study_corpus": 1161,
+   "units_study_max_over_twice_reference": 2,
+   "positive_units_whose_strongest_raw_activation_is_an_echo": 26262,
+   "negative_units_whose_strongest_raw_activation_is_an_echo": 26396,
+   "units_whose_fifth_reference_example_is_under_half_the_first": 25068,
+   "poles_under_a_tenth_of_the_neurons_other_pole": 15130,
+   "poles_under_a_quarter_of_the_neurons_other_pole": 61162,
+   "largest_scale": 7872.0,
+   "scale_quantiles": {
+    "0.01": 0.0,
+    "0.1": 2.03125,
+    "0.5": 9.875,
+    "0.9": 66.0,
+    "0.99": 192.0
+   }
+  },
+  "share_of_unit_by_work_cells_present": {
+   "orig_main_top1": 0.04552632540676326,
+   "orig_main_top3": 0.01595315995283681,
+   "orig_cut_main_top1": 0.03395095567006542,
+   "anon_main_top1": 0.028893223080725606,
+   "anon_main_top3": 0.008626708751925862,
+   "anon_cut_main_top1": 0.019943373398961718,
+   "anon_codes_main_top1": 0.032182336116576934,
+   "anon_after_main_top1": 0.02699188493105365,
+   "anon_icon_main_top1": 0.028383506733064435,
+   "anon_icon_main_top3": 0.008402625904746518
+  }
+ },
+ "llama3.1-8b": {
+  "repository": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "revision": "a2856192dd7c25b842431f39c179a6c2c2f627d1",
+  "layers": 32,
+  "width": 14336,
+  "neurons": 458752,
+  "units": 917504,
+  "precision": "bfloat16",
+  "reference": {
+   "documents": 46000,
+   "tokens": 40792435,
+   "max_tokens_per_document": 1024,
+   "tokens_per_batch": 49152,
+   "examples_kept_per_unit": 24,
+   "seconds": 2333
+  },
+  "supplement": {
+   "documents": 5434,
+   "tokens": 6694284,
+   "max_tokens_per_document": 2048,
+   "seconds": 414
+  },
+  "study": {
+   "works": 114,
+   "seconds": 44,
+   "software": {
+    "repo": "unsloth/Meta-Llama-3.1-8B-Instruct",
+    "commit": null,
+    "dtype": "torch.bfloat16",
+    "torch": "2.8.0+cu128",
+    "transformers": "5.22.2",
+    "gpu": [
+     "NVIDIA RTX PRO 6000 Blackwell Server Edition"
+    ]
+   }
+  },
+  "background": {
+   "plots": 2999,
+   "tokens": 2394187,
+   "one_plot_at_a_time": true,
+   "seconds": 454
+  },
+  "franchises": {
+   "films": 123,
+   "tokens": 96966
+  },
+  "scale": {
+   "n_units": 917504,
+   "supplement_included": true,
+   "documents_left_out_of_the_reference_only_scale": [
+    843,
+    7175,
+    6895,
+    3597,
+    5284
+   ],
+   "units_whose_strongest_reference_example_is_in_a_left_out_document": 40,
+   "units_never_active_in_reference": 103,
+   "units_with_zero_scale": 103,
+   "units_whose_scale_comes_from_the_reference_corpus": 667197,
+   "units_whose_scale_comes_from_the_supplement": 249304,
+   "units_whose_scale_comes_from_the_study_corpus": 1003,
+   "units_study_max_over_twice_reference": 1,
+   "positive_units_whose_strongest_raw_activation_is_an_echo": 6240,
+   "negative_units_whose_strongest_raw_activation_is_an_echo": 6256,
+   "units_whose_fifth_reference_example_is_under_half_the_first": 7792,
+   "poles_under_a_tenth_of_the_neurons_other_pole": 11205,
+   "poles_under_a_quarter_of_the_neurons_other_pole": 78296,
+   "largest_scale": 336.0,
+   "scale_quantiles": {
+    "0.01": 0.125,
+    "0.1": 0.53125,
+    "0.5": 2.15625,
+    "0.9": 6.46875,
+    "0.99": 18.0
+   }
+  },
+  "share_of_unit_by_work_cells_present": {
+   "orig_main_top1": 0.05086495178638,
+   "orig_main_top3": 0.018070602025732477,
+   "orig_cut_main_top1": 0.0359242010301152,
+   "anon_main_top1": 0.038915875162056746,
+   "anon_main_top3": 0.012657582215396828,
+   "anon_cut_main_top1": 0.026005122755085198,
+   "anon_codes_main_top1": 0.04270693649230381,
+   "anon_after_main_top1": 0.03593069257348891,
+   "anon_icon_main_top1": 0.03826764818802477,
+   "anon_icon_main_top3": 0.01238030057700547
+  }
+ }
+}
