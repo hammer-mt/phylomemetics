@@ -166,6 +166,30 @@
    "residual_within_era_p": 0.1388888888888889,
    "E3_rho": 0.34642857142857136,
    "E3_p": 0.37276272372762725
+  },
+  "llama3.3-70b | full precision, v2 rule": {
+   "E1_verdict": "not met",
+   "E1_openings_auc": 0.646484375,
+   "E1_null_p95": 0.6796875,
+   "E1_centroid_auc": 0.73046875,
+   "E2_evaluable": true,
+   "length_controlled": true,
+   "E1_openings_shuffle_p": 0.11488511488511488,
+   "residual_decision_exact_p": 0.20318312089145424,
+   "E1_auc": 0.767578125,
+   "E1_ci95": [
+    0.597607421875,
+    0.91015625
+   ],
+   "E2_share": 0.06481481481481481,
+   "E2_exact_p": 0.00010772406605739939,
+   "E2_within_era_p": 0.005555555555555556,
+   "sequels_top2": 6,
+   "residual_share": 0.21257014590347922,
+   "residual_exact_p": 0.017071508738175405,
+   "residual_within_era_p": 0.02361111111111111,
+   "E3_rho": -0.16785714285714282,
+   "E3_p": 0.8251174882511749
   }
  },
  "contrasts": [
@@ -336,33 +360,57 @@
     "n": 9
    },
    "E3_rho_difference": -0.0428571428571429
+  },
+  {
+   "contrast": "model size (Llama), v2 rule",
+   "a": "llama3.3-70b | full precision, v2 rule",
+   "b": "llama3.1-8b | full precision, v2 rule",
+   "E1_auc": {
+    "difference": 0.38084375000000004,
+    "ci95": [
+     0.1874,
+     0.57194140625
+    ],
+    "n_works": 32,
+    "n_films": 8,
+    "interval": "Batman works and hero films resampled together, from each work's and each film's mean"
+   },
+   "E2_share": {
+    "difference": -0.07166666666666667,
+    "ci95": [
+     -0.14633333333333334,
+     0.003111111111111111
+    ],
+    "n": 9
+   },
+   "E3_rho_difference": -0.3428571428571428
   }
  ],
  "counts_over_new_cells": {
   "E2_exact_p": {
-   "cells": 6,
-   "below_0.05": 6,
-   "expected_if_independent": 0.3
+   "cells": 7,
+   "below_0.05": 7,
+   "expected_if_independent": 0.35
   },
   "residual_decision_test": {
-   "cells": 6,
+   "cells": 7,
    "below_0.05": 0,
-   "expected_if_independent": 0.3
+   "expected_if_independent": 0.35
   },
   "residual_registered_two_measure_form_which_can_pass_on_words_alone": {
-   "cells": 6,
-   "below_0.05": 3,
-   "expected_if_independent": 0.3
+   "cells": 7,
+   "below_0.05": 4,
+   "expected_if_independent": 0.35
   },
   "E3_p": {
-   "cells": 6,
+   "cells": 7,
    "below_0.05": 0,
-   "expected_if_independent": 0.3
+   "expected_if_independent": 0.35
   },
   "E1_openings_against_their_own_label_shuffle_v2_rule_only": {
-   "cells": 3,
+   "cells": 4,
    "below_0.05": 0,
-   "expected_if_independent": 0.15
+   "expected_if_independent": 0.2
   }
  },
  "note": "The cells share the 32 works and are not independent: a count is not that many confirmations (cells_joint.json gives the probability of each count under one null for all cells). E1 cells under v1's rule have no openings version and are not length-controlled. residual_exact_p is v1's registered two-measure form; residual_decision_exact_p is v2's decision test (seven word measures)."

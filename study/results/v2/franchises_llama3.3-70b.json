@@ -1,0 +1,586 @@
+{
+ "model": "llama3.3-70b",
+ "n_background_plots": 2999,
+ "batman": {
+  "n_works": 32,
+  "at_least_72pct": 325,
+  "at_least_90pct": 114,
+  "at_least_6_films": 13353,
+  "without_cap": {
+   "at_least_72pct": 33925,
+   "at_least_90pct": 10337
+  }
+ },
+ "franchises": {
+  "Godzilla": {
+   "n_films": 28,
+   "background_plots_left_out_of_the_base_rate": 7,
+   "at_least_72pct": 320,
+   "at_least_90pct": 102,
+   "at_least_6_films": 11730,
+   "without_cap": {
+    "at_least_72pct": 33348,
+    "at_least_90pct": 8505
+   },
+   "batman_subsets_of_the_same_size": {
+    "at_least_72pct": {
+     "mean": 345.5,
+     "min": 300
+    },
+    "at_least_90pct": {
+     "mean": 97.12,
+     "min": 86
+    },
+    "at_least_6_films": {
+     "mean": 10623.06,
+     "min": 9654
+    }
+   }
+  },
+  "Frankenstein": {
+   "n_films": 24,
+   "background_plots_left_out_of_the_base_rate": 3,
+   "at_least_72pct": 86,
+   "at_least_90pct": 33,
+   "at_least_6_films": 2903,
+   "without_cap": {
+    "at_least_72pct": 23853,
+    "at_least_90pct": 6166
+   },
+   "batman_subsets_of_the_same_size": {
+    "at_least_72pct": {
+     "mean": 357.36,
+     "min": 278
+    },
+    "at_least_90pct": {
+     "mean": 113.62,
+     "min": 89
+    },
+    "at_least_6_films": {
+     "mean": 7917.98,
+     "min": 6341
+    }
+   }
+  },
+  "Dracula": {
+   "n_films": 23,
+   "background_plots_left_out_of_the_base_rate": 4,
+   "at_least_72pct": 148,
+   "at_least_90pct": 44,
+   "at_least_6_films": 4087,
+   "without_cap": {
+    "at_least_72pct": 32821,
+    "at_least_90pct": 9168
+   },
+   "batman_subsets_of_the_same_size": {
+    "at_least_72pct": {
+     "mean": 383.46,
+     "min": 305
+    },
+    "at_least_90pct": {
+     "mean": 117.88,
+     "min": 94
+    },
+    "at_least_6_films": {
+     "mean": 7331.72,
+     "min": 6216
+    }
+   }
+  },
+  "Doraemon": {
+   "n_films": 17,
+   "background_plots_left_out_of_the_base_rate": 4,
+   "at_least_72pct": 1287,
+   "at_least_90pct": 635,
+   "at_least_6_films": 5826,
+   "without_cap": {
+    "at_least_72pct": 45521,
+    "at_least_90pct": 15323
+   },
+   "batman_subsets_of_the_same_size": {
+    "at_least_72pct": {
+     "mean": 368.34,
+     "min": 271
+    },
+    "at_least_90pct": {
+     "mean": 103.6,
+     "min": 60
+    },
+    "at_least_6_films": {
+     "mean": 4033.32,
+     "min": 3200
+    }
+   }
+  },
+  "Tarzan": {
+   "n_films": 16,
+   "background_plots_left_out_of_the_base_rate": 4,
+   "at_least_72pct": 184,
+   "at_least_90pct": 72,
+   "at_least_6_films": 1055,
+   "without_cap": {
+    "at_least_72pct": 16934,
+    "at_least_90pct": 3676
+   },
+   "batman_subsets_of_the_same_size": {
+    "at_least_72pct": {
+     "mean": 413.46,
+     "min": 300
+    },
+    "at_least_90pct": {
+     "mean": 112.2,
+     "min": 61
+    },
+    "at_least_6_films": {
+     "mean": 3496.32,
+     "min": 2754
+    }
+   }
+  },
+  "Kamen Rider": {
+   "n_films": 15,
+   "background_plots_left_out_of_the_base_rate": 0,
+   "at_least_72pct": 928,
+   "at_least_90pct": 214,
+   "at_least_6_films": 5840,
+   "without_cap": {
+    "at_least_72pct": 55054,
+    "at_least_90pct": 14903
+   },
+   "batman_subsets_of_the_same_size": {
+    "at_least_72pct": {
+     "mean": 490.4,
+     "min": 274
+    },
+    "at_least_90pct": {
+     "mean": 128.6,
+     "min": 80
+    },
+    "at_least_6_films": {
+     "mean": 3180.02,
+     "min": 2248
+    }
+   }
+  }
+ },
+ "genre_sets": {
+  "drama": {
+   "n_plots_of_this_genre": 433,
+   "n_plots_giving_the_base_rate": 1875,
+   "n_draws": 50,
+   "at_least_6_films": {
+    "mean": 231.34,
+    "max": 424
+   },
+   "at_least_23": {
+    "mean": 0.0,
+    "max": 0
+   },
+   "at_least_29": {
+    "mean": 0.0,
+    "max": 0
+   },
+   "at_least_23_without_cap": {
+    "mean": 13125.26,
+    "max": 16816
+   },
+   "at_least_29_without_cap": {
+    "mean": 4117.5,
+    "max": 5551
+   },
+   "at_least_23_base_rate_includes_the_genre": {
+    "mean": 0.0,
+    "max": 0
+   },
+   "at_least_29_base_rate_includes_the_genre": {
+    "mean": 0.0,
+    "max": 0
+   }
+  },
+  "comedy": {
+   "n_plots_of_this_genre": 321,
+   "n_plots_giving_the_base_rate": 2018,
+   "n_draws": 50,
+   "at_least_6_films": {
+    "mean": 427.88,
+    "max": 730
+   },
+   "at_least_23": {
+    "mean": 0.0,
+    "max": 0
+   },
+   "at_least_29": {
+    "mean": 0.0,
+    "max": 0
+   },
+   "at_least_23_without_cap": {
+    "mean": 16460.8,
+    "max": 20948
+   },
+   "at_least_29_without_cap": {
+    "mean": 5266.74,
+    "max": 7134
+   },
+   "at_least_23_base_rate_includes_the_genre": {
+    "mean": 0.0,
+    "max": 0
+   },
+   "at_least_29_base_rate_includes_the_genre": {
+    "mean": 0.0,
+    "max": 0
+   }
+  },
+  "horror": {
+   "n_plots_of_this_genre": 164,
+   "n_plots_giving_the_base_rate": 2394,
+   "n_draws": 50,
+   "at_least_6_films": {
+    "mean": 1321.14,
+    "max": 1876
+   },
+   "at_least_23": {
+    "mean": 0.52,
+    "max": 3
+   },
+   "at_least_29": {
+    "mean": 0.0,
+    "max": 0
+   },
+   "at_least_23_without_cap": {
+    "mean": 21158.26,
+    "max": 24490
+   },
+   "at_least_29_without_cap": {
+    "mean": 6980.2,
+    "max": 8322
+   },
+   "at_least_23_base_rate_includes_the_genre": {
+    "mean": 0.0,
+    "max": 0
+   },
+   "at_least_29_base_rate_includes_the_genre": {
+    "mean": 0.0,
+    "max": 0
+   }
+  },
+  "thriller": {
+   "n_plots_of_this_genre": 114,
+   "n_plots_giving_the_base_rate": 2398,
+   "n_draws": 50,
+   "at_least_6_films": {
+    "mean": 185.36,
+    "max": 340
+   },
+   "at_least_23": {
+    "mean": 0.0,
+    "max": 0
+   },
+   "at_least_29": {
+    "mean": 0.0,
+    "max": 0
+   },
+   "at_least_23_without_cap": {
+    "mean": 17915.88,
+    "max": 21381
+   },
+   "at_least_29_without_cap": {
+    "mean": 5649.56,
+    "max": 7006
+   },
+   "at_least_23_base_rate_includes_the_genre": {
+    "mean": 0.0,
+    "max": 0
+   },
+   "at_least_29_base_rate_includes_the_genre": {
+    "mean": 0.0,
+    "max": 0
+   }
+  },
+  "action": {
+   "n_plots_of_this_genre": 99,
+   "n_plots_giving_the_base_rate": 2363,
+   "n_draws": 50,
+   "at_least_6_films": {
+    "mean": 476.82,
+    "max": 781
+   },
+   "at_least_23": {
+    "mean": 0.0,
+    "max": 0
+   },
+   "at_least_29": {
+    "mean": 0.0,
+    "max": 0
+   },
+   "at_least_23_without_cap": {
+    "mean": 15997.5,
+    "max": 19411
+   },
+   "at_least_29_without_cap": {
+    "mean": 4475.86,
+    "max": 5860
+   },
+   "at_least_23_base_rate_includes_the_genre": {
+    "mean": 0.0,
+    "max": 0
+   },
+   "at_least_29_base_rate_includes_the_genre": {
+    "mean": 0.0,
+    "max": 0
+   }
+  }
+ },
+ "batman_like_films": {
+  "n_core_units": 10,
+  "share_of_core_median_plot": 0.0,
+  "top_30": [
+   {
+    "title": "Blankman",
+    "year": 1994,
+    "genre": "comedy",
+    "share_of_core": 0.6
+   },
+   {
+    "title": "Justice League of America",
+    "year": 1997,
+    "genre": "animated",
+    "share_of_core": 0.6
+   },
+   {
+    "title": "Elektra",
+    "year": 2005,
+    "genre": "action",
+    "share_of_core": 0.5
+   },
+   {
+    "title": "Punisher: War Zone",
+    "year": 2008,
+    "genre": "superhero",
+    "share_of_core": 0.5
+   },
+   {
+    "title": "Spider-Man: Homecoming",
+    "year": 2017,
+    "genre": "action, adventure, superhero, comedy, sci-fi",
+    "share_of_core": 0.5
+   },
+   {
+    "title": "Hancock",
+    "year": 2008,
+    "genre": "superhero",
+    "share_of_core": 0.4
+   },
+   {
+    "title": "Superhero Movie",
+    "year": 2008,
+    "genre": "comedy, parody",
+    "share_of_core": 0.4
+   },
+   {
+    "title": "Harry Potter and the Half-Blood Prince",
+    "year": 2009,
+    "genre": "family, fantasy",
+    "share_of_core": 0.4
+   },
+   {
+    "title": "Super",
+    "year": 2011,
+    "genre": "dark comedy, superhero",
+    "share_of_core": 0.4
+   },
+   {
+    "title": "Man of Steel",
+    "year": 2013,
+    "genre": "superhero",
+    "share_of_core": 0.4
+   },
+   {
+    "title": "Man-Thing",
+    "year": 2005,
+    "genre": "horror",
+    "share_of_core": 0.4
+   },
+   {
+    "title": "The Guyver",
+    "year": 1990,
+    "genre": "sci-fi",
+    "share_of_core": 0.3
+   },
+   {
+    "title": "Teenage Mutant Ninja Turtles",
+    "year": 1990,
+    "genre": "action",
+    "share_of_core": 0.3
+   },
+   {
+    "title": "X2: X-Men United",
+    "year": 2003,
+    "genre": "superhero",
+    "share_of_core": 0.3
+   },
+   {
+    "title": "Avengers, TheThe Avengers",
+    "year": 2012,
+    "genre": "superhero",
+    "share_of_core": 0.3
+   },
+   {
+    "title": "Maleficent",
+    "year": 2014,
+    "genre": "fantasy",
+    "share_of_core": 0.3
+   },
+   {
+    "title": "Teenage Mutant Nina Turtles",
+    "year": 2014,
+    "genre": "science fiction",
+    "share_of_core": 0.3
+   },
+   {
+    "title": "X-Men: Apocalypse",
+    "year": 2016,
+    "genre": "superhero action adventure",
+    "share_of_core": 0.3
+   },
+   {
+    "title": "Professor Marston and the Wonder Women",
+    "year": 2017,
+    "genre": "biography, drama",
+    "share_of_core": 0.3
+   },
+   {
+    "title": "Ultraman Zero The Movie: Super Deciding Fight! The Belial Galactic Empire",
+    "year": 2010,
+    "genre": "unknown",
+    "share_of_core": 0.3
+   },
+   {
+    "title": "One Piece Film: Z",
+    "year": 2013,
+    "genre": "unknown",
+    "share_of_core": 0.3
+   },
+   {
+    "title": "Haunters",
+    "year": 2010,
+    "genre": "unknown",
+    "share_of_core": 0.3
+   },
+   {
+    "title": "Scaredy Cat",
+    "year": 1948,
+    "genre": "animated short",
+    "share_of_core": 0.2
+   },
+   {
+    "title": "Birds Anonymous",
+    "year": 1957,
+    "genre": "animation",
+    "share_of_core": 0.2
+   },
+   {
+    "title": "Meteor",
+    "year": 1979,
+    "genre": "disaster film, sci-fi",
+    "share_of_core": 0.2
+   },
+   {
+    "title": "Masters of the Universe",
+    "year": 1987,
+    "genre": "sci-fi",
+    "share_of_core": 0.2
+   },
+   {
+    "title": "Captain America",
+    "year": 1990,
+    "genre": "action",
+    "share_of_core": 0.2
+   },
+   {
+    "title": "Double Dragon",
+    "year": 1994,
+    "genre": "action",
+    "share_of_core": 0.2
+   },
+   {
+    "title": "Cyborg Cop II",
+    "year": 1995,
+    "genre": "sci-fi",
+    "share_of_core": 0.2
+   },
+   {
+    "title": "Dracula 2000",
+    "year": 2000,
+    "genre": "horror",
+    "share_of_core": 0.2
+   }
+  ],
+  "superhero_tagged_plots": {
+   "n": 16,
+   "median_rank": 26.5,
+   "in_top_100": 9
+  },
+  "versions_of_the_relatives": [
+   {
+    "title": "Dracula",
+    "year": 1931,
+    "rank": 307,
+    "share_of_core": 0.0
+   },
+   {
+    "title": "The Count of Monte Cristo",
+    "year": 1934,
+    "rank": 351,
+    "share_of_core": 0.0
+   },
+   {
+    "title": "Sherlock Holmes and the Voice of Terror",
+    "year": 1942,
+    "rank": 473,
+    "share_of_core": 0.0
+   },
+   {
+    "title": "The Countess of Monte Cristo",
+    "year": 1948,
+    "rank": 573,
+    "share_of_core": 0.0
+   },
+   {
+    "title": "Dracula 2000",
+    "year": 2000,
+    "rank": 30,
+    "share_of_core": 0.2
+   },
+   {
+    "title": "Dracula Untold",
+    "year": 2014,
+    "rank": 166,
+    "share_of_core": 0.1
+   },
+   {
+    "title": "Spider-Man: Homecoming",
+    "year": 2017,
+    "rank": 5,
+    "share_of_core": 0.5
+   },
+   {
+    "title": "The Shadow of the Cat",
+    "year": 1961,
+    "rank": 2056,
+    "share_of_core": 0.0
+   },
+   {
+    "title": "Scars of Dracula",
+    "year": 1970,
+    "rank": 2080,
+    "share_of_core": 0.0
+   },
+   {
+    "title": "The Scarlet Pimpernel",
+    "year": 1982,
+    "rank": 2103,
+    "share_of_core": 0.0
+   }
+  ]
+ }
+}

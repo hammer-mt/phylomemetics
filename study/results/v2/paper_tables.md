@@ -9,6 +9,7 @@ Written by `v2/analysis/paper_tables.py` from the committed results. Do not edit
 | Qwen3-32B | 3,276,800 | 1,812,516 | 885,060 | 140,954 | 102,256 | 1,035,162 | 4,518 | 82,189 |
 | Qwen3-8B | 884,736 | 455,422 | 238,530 | 37,127 | 23,442 | 304,263 | 1,161 | 26,262 |
 | Llama 3.1 8B | 917,504 | 577,567 | 284,096 | 46,660 | 35,504 | 249,304 | 1,003 | 6,240 |
+| Llama 3.3 70B | 4,587,520 | 3,329,247 | 1,087,910 | 320,769 | 240,874 | n/a | n/a | n/a |
 
 ## E1, identity: name-free Batman works against the 8 hero films
 
@@ -23,6 +24,9 @@ Written by `v2/analysis/paper_tables.py` from the committed results. Do not edit
 | Llama 3.1 8B: canon share | 0.39 | 0.17 to 0.63 | 0.68 | 0.40 | 0.70 | 0.39 | 0.93 | 0.88 | falsified |
 | Llama 3.1 8B: centroid of units | 0.69 | 0.48 to 0.86 | 0.68 | 0.46 | 0.70 | 0.65 | 0.94 | 0.94 | falsified |
 | Llama 3.1 8B: centroid, distinctive units | 0.45 | 0.20 to 0.69 | 0.68 | 0.43 | 0.69 | 0.45 | 0.96 | 0.97 | falsified |
+| Llama 3.3 70B: canon share | 0.77 | 0.60 to 0.91 | 0.68 | 0.65 | 0.71 | 0.78 | 1.00 | 0.99 | not met |
+| Llama 3.3 70B: centroid of units | 0.73 | 0.54 to 0.89 | 0.68 | 0.57 | 0.70 | 0.72 | 0.88 | 0.84 | not met |
+| Llama 3.3 70B: centroid, distinctive units | 0.74 | 0.56 to 0.89 | 0.69 | 0.64 | 0.68 | 0.71 | 0.97 | 0.97 | not met |
 | Words: TF-IDF centroid | 0.80 | 0.64 to 0.93 | 0.69 | 0.73 | 0.69 | 0.76 | 0.97 | 0.96 | not met |
 | Words: TF-IDF centroid, background weights | 0.83 | 0.68 to 0.95 | 0.69 | 0.77 | 0.69 | 0.77 | 0.98 | 0.97 | not met |
 | Length alone (sentences) | 0.76 | 0.58 to 0.91 | 0.68 | 0.45 | 0.68 | 0.72 | 0.55 | 0.49 | not met |
@@ -34,6 +38,7 @@ Written by `v2/analysis/paper_tables.py` from the committed results. Do not edit
 | Qwen3-32B | 204 | 212 | 1 | 10,889 | 5,749 | 4690.0 |
 | Qwen3-8B | 75 | 78 | 0 | 5,101 | 2,763 | 2705.7 |
 | Llama 3.1 8B | 101 | 104 | 1 | 7,752 | 5,485 | 4633.5 |
+| Llama 3.3 70B | 215 | 224 | 10 | 22,487 | 12,319 | 6782.9 |
 
 ## E2, heredity, and the residual test
 
@@ -42,6 +47,7 @@ Written by `v2/analysis/paper_tables.py` from the committed results. Do not edit
 | Qwen3-32B | 500,944 | 0.149 | 0.0016 | 0.0083 | 0.464 | 5 of 7 | 0.69 | 0.86 | 0.20 | 0.485 |
 | Qwen3-8B | 105,147 | 0.077 | 0.00018 | 0.0028 | 0.483 | 6 of 7 | 0.62 | 0.66 | 0.26 | 0.473 |
 | Llama 3.1 8B | 147,294 | 0.136 | 0.00047 | 0.0063 | 0.473 | 4 of 7 | 0.57 | 0.51 | 0.20 | 0.464 |
+| Llama 3.3 70B | 1,148,262 | 0.065 | 0.00011 | 0.0056 | 0.474 | 6 of 7 | 0.20 | 0.24 | 0.017 | 0.344 |
 | Words: TF-IDF cosine |  | 0.110 | 0.00031 | 0.0028 | 0.467 | 6 of 7 |  |  |  |  |
 | Words: word presence |  | 0.167 | 0.0018 | 0.0042 | 0.470 | 6 of 7 |  |  |  |  |
 
@@ -52,6 +58,7 @@ Written by `v2/analysis/paper_tables.py` from the committed results. Do not edit
 | Qwen3-32B | 0.35 | 0.37 | 303,007 | -0.10 | -0.47 |
 | Qwen3-8B | 0.35 | 0.37 | 64,959 | -0.02 | -0.57 |
 | Llama 3.1 8B | 0.17 | 0.56 | 90,873 | -0.27 | -0.41 |
+| Llama 3.3 70B | -0.17 | 0.83 | 701,212 | -0.26 | -0.35 |
 
 ## What changed a result: every model under both rules
 
@@ -65,6 +72,7 @@ Written by `v2/analysis/paper_tables.py` from the committed results. Do not edit
 | llama3.1-8b: full precision, v2 rule | 0.387 | 0.396 | 0.136 | 0.00047 | 0.20 | 0.57 | 4 | 0.17 | 0.56 |
 | qwen3-32b: full precision, v1 rule | 0.520 | n/a | 0.137 | 0.00074 | 0.023 | 0.26 | 5 | 0.25 | 0.30 |
 | qwen3-32b: full precision, v2 rule | 0.361 | 0.365 | 0.149 | 0.0016 | 0.20 | 0.69 | 5 | 0.35 | 0.37 |
+| llama3.3-70b: full precision, v2 rule | 0.768 | 0.646 | 0.065 | 0.00011 | 0.017 | 0.20 | 6 | -0.17 | 0.83 |
 
 ### Differences between cells
 
@@ -77,16 +85,17 @@ Written by `v2/analysis/paper_tables.py` from the committed results. Do not edit
 | rule, same model | qwen3-32b | -0.159 | -0.247 to -0.073 | 0.011 | -0.060 to 0.081 |
 | model size, v2 rule | qwen3-32b | 0.102 | -0.023 to 0.223 | 0.072 | -0.002 to 0.139 |
 | model size, v1 rule | qwen3-32b | 0.013 | -0.085 to 0.113 | -0.002 | -0.083 to 0.075 |
+| model size (Llama), v2 rule | llama3.3-70b | 0.381 | 0.187 to 0.572 | -0.072 | -0.146 to 0.003 |
 
 ### Cells below 0.05
 
 | Test | Cells | Below 0.05 | 0.05 x cells |
 | --- | --- | --- | --- |
-| E2_exact_p | 6 | 6 | 0.3 |
-| residual_decision_test | 6 | 0 | 0.3 |
-| residual_registered_two_measure_form_which_can_pass_on_words_alone | 6 | 3 | 0.3 |
-| E3_p | 6 | 0 | 0.3 |
-| E1_openings_against_their_own_label_shuffle_v2_rule_only | 3 | 0 | 0.15 |
+| E2_exact_p | 7 | 7 | 0.35 |
+| residual_decision_test | 7 | 0 | 0.35 |
+| residual_registered_two_measure_form_which_can_pass_on_words_alone | 7 | 4 | 0.35 |
+| E3_p | 7 | 0 | 0.35 |
+| E1_openings_against_their_own_label_shuffle_v2_rule_only | 4 | 0 | 0.2 |
 
 ### The same counts under one null for all cells
 
@@ -111,6 +120,7 @@ Written by `v2/analysis/paper_tables.py` from the committed results. Do not edit
 | Qwen3-32B | 7,520 | 334 | 120 | 1,494 | 48 | 12 | 5,765 | 4033 | 120 / 214 / 7186 |
 | Qwen3-8B | 1,998 | 113 | 44 | 272 | 6 | 4 | 3,056 | 2626 | 44 / 69 / 1885 |
 | Llama 3.1 8B | 3,279 | 192 | 59 | 561 | 10 | 5 | 5,012 | 3740 | 59 / 133 / 3087 |
+| Llama 3.3 70B | 13,353 | 425 | 114 | 4,767 | 95 | 24 | 10,337 | 4315 | 114 / 311 / 12928 |
 
 ## Other film series, Qwen3-32B (distinctive units in at least 72% and 90% of the films)
 
@@ -178,6 +188,28 @@ Written by `v2/analysis/paper_tables.py` from the committed results. Do not edit
 | thriller | 114 | 38 | 0.0 | 0 | 0.0 |
 | action | 99 | 121 | 0.0 | 0 | 0.0 |
 
+## Other film series, Llama 3.3 70B (distinctive units in at least 72% and 90% of the films)
+
+| Series | Films | 72%+ | Batman subsets, 72%+ | 90%+ | Batman subsets, 90%+ |
+| --- | --- | --- | --- | --- | --- |
+| Godzilla | 28 | 320 | 346 | 102 | 97 |
+| Frankenstein | 24 | 86 | 357 | 33 | 114 |
+| Dracula | 23 | 148 | 383 | 44 | 118 |
+| Doraemon | 17 | 1287 | 368 | 635 | 104 |
+| Tarzan | 16 | 184 | 413 | 72 | 112 |
+| Kamen Rider | 15 | 928 | 490 | 214 | 129 |
+| Batman (all 32) | 32 | 325 |  | 114 |  |
+
+### Genre sets of 32 plots, Llama 3.3 70B
+
+| Genre | Plots | Units in 6+ (mean) | 23+ (mean) | 23+ (max) | 29+ (mean) |
+| --- | --- | --- | --- | --- | --- |
+| drama | 433 | 231 | 0.0 | 0 | 0.0 |
+| comedy | 321 | 428 | 0.0 | 0 | 0.0 |
+| horror | 164 | 1321 | 0.5 | 3 | 0.0 |
+| thriller | 114 | 185 | 0.0 | 0 | 0.0 |
+| action | 99 | 477 | 0.0 | 0 | 0.0 |
+
 ## Recognition: what the untouched model says about a name-free summary
 
 | Model | Batman works it calls Batman | Batman works it identifies by title | Hero films whose hero it names | Hero films it calls Batman | Ordinary films it identifies by title | Median log p of Batman: Batman works | hero films | ordinary films | AUC of that log p, Batman vs hero films |
@@ -185,6 +217,7 @@ Written by `v2/analysis/paper_tables.py` from the committed results. Do not edit
 | Qwen3-32B | 21 of 32 | 4 of 32 | 4 of 7 | 4 of 8 | 52 of 69 | -0.57 | -5.61 | -13.24 | 0.78 |
 | Qwen3-8B | 20 of 32 | 2 of 32 | 3 of 7 | 4 of 8 | 36 of 69 | -0.73 | -3.70 | -11.36 | 0.57 |
 | Llama 3.1 8B | 16 of 32 | 2 of 32 | 5 of 7 | 1 of 8 | 54 of 69 | -1.27 | -5.23 | -8.53 | 0.76 |
+| Llama 3.3 70B | 29 of 32 | 15 of 32 | 7 of 7 | 1 of 8 | 69 of 69 | -0.00 | -13.31 | -19.19 | 0.90 |
 
 ## Explanation tests
 
@@ -351,6 +384,10 @@ Only the first version for each model is a test. The others use 20 sets and are 
 | Llama 3.1 8B | idea units | 126 | 0.61 | 0.30 | 0.36 | 0.28 | -0.016 (-0.054 to 0.020) | 126 | 70 / 55 / 1 | 28% | 22% | 3% | 21% | 4% | 0.0001 |
 | Llama 3.1 8B | name or word units | 115 | 0.62 | 0.21 | 0.41 | 0.30 | -0.171 (-0.221 to -0.122) | 115 | 55 / 58 / 2 | 28% | 18% | 5% | 14% | 4% | 0.0001 |
 | Llama 3.1 8B | twins beat both nulls for idea units |  |  |  |  |  |  |  |  |  |  |  |  |  | False |
+| Llama 3.3 70B | all units | 241 | 0.62 | 0.27 | 0.38 | 0.29 | -0.078 (-0.111 to -0.045) | 241 | 119 / 119 / 3 | 27% | 19% | 3% | 17% | 3% | 0.0001 |
+| Llama 3.3 70B | idea units | 126 | 0.60 | 0.30 | 0.35 | 0.28 | -0.003 (-0.041 to 0.035) | 126 | 64 / 61 / 1 | 29% | 21% | 2% | 19% | 3% | 0.0001 |
+| Llama 3.3 70B | name or word units | 115 | 0.64 | 0.21 | 0.41 | 0.31 | -0.161 (-0.209 to -0.112) | 115 | 55 / 58 / 2 | 25% | 17% | 4% | 15% | 3% | 0.0001 |
+| Llama 3.3 70B | twins beat both nulls for idea units |  |  |  |  |  |  |  |  |  |  |  |  |  | False |
 
 ## The six confirmatory tests (Qwen3-32B)
 

@@ -1,7 +1,7 @@
 {
  "model": "qwen3-8b",
  "is_the_confirmatory_family": false,
- "tests_with_a_p_value": 3,
+ "tests_with_a_p_value": 4,
  "tests": {
   "E1_identity": {
    "verdict": "falsified",
@@ -29,7 +29,7 @@
    "evaluable": true,
    "sequel_control_passes": true,
    "passes": true,
-   "holm_adjusted_p": 0.0005471380471380471,
+   "holm_adjusted_p": 0.0007295173961840628,
    "nominal_only": false
   },
   "residual_beyond_words": {
@@ -41,7 +41,7 @@
    "uncapped_settings": 8,
    "passes_in_at_least_half_of_the_uncapped_settings": false,
    "passes": false,
-   "holm_adjusted_p": 0.7321267873212679,
+   "holm_adjusted_p": 0.8384161583841616,
    "nominal_only": false
   },
   "E3_selection": {
@@ -49,13 +49,18 @@
    "p": 0.36606339366063395,
    "evaluable": true,
    "passes": false,
-   "holm_adjusted_p": 0.7321267873212679,
+   "holm_adjusted_p": 0.8384161583841616,
    "nominal_only": false
   },
   "ablation": {
-   "p": null,
-   "passes": null,
-   "status": "not yet run"
+   "p_against_sets_matched_on_works": 0.004975124378109453,
+   "p_against_sets_also_matched_on_activity": 0.004975124378109453,
+   "specificity_p": 0.27947205279472054,
+   "p": 0.27947205279472054,
+   "evaluable": true,
+   "passes": false,
+   "holm_adjusted_p": 0.8384161583841616,
+   "nominal_only": false
   },
   "steering_idea_units": {
    "p": null,
@@ -67,7 +72,6 @@
   "E2_heredity"
  ],
  "not_yet_run": [
-  "ablation",
   "steering_idea_units"
  ]
 }
