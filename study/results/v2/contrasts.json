@@ -123,6 +123,49 @@
    "residual_within_era_p": 0.17847222222222223,
    "E3_rho": 0.175,
    "E3_p": 0.5642435756424358
+  },
+  "qwen3-32b | full precision, v1 rule": {
+   "E1_null_p95": 0.7012695312499999,
+   "length_controlled": false,
+   "residual_decision_exact_p": 0.2629103535353535,
+   "E1_auc": 0.5201171875,
+   "E1_ci95": [
+    0.28318359375,
+    0.76045166015625
+   ],
+   "E2_share": 0.13734567901234568,
+   "E2_exact_p": 0.0007412918871252204,
+   "E2_within_era_p": 0.001388888888888889,
+   "sequels_top2": 5,
+   "residual_share": 0.22028619528619528,
+   "residual_exact_p": 0.022621803350970016,
+   "residual_within_era_p": 0.024305555555555556,
+   "E3_rho": 0.24642857142857136,
+   "E3_p": 0.2970702929707029
+  },
+  "qwen3-32b | full precision, v2 rule": {
+   "E1_verdict": "falsified",
+   "E1_openings_auc": 0.365234375,
+   "E1_null_p95": 0.6796875,
+   "E1_centroid_auc": 0.6171875,
+   "E2_evaluable": true,
+   "length_controlled": true,
+   "E1_openings_shuffle_p": 0.8701298701298701,
+   "residual_decision_exact_p": 0.6907239558281225,
+   "E1_auc": 0.361328125,
+   "E1_ci95": [
+    0.171875,
+    0.5625488281249997
+   ],
+   "E2_share": 0.14876543209876542,
+   "E2_exact_p": 0.0015524791566458233,
+   "E2_within_era_p": 0.008333333333333333,
+   "sequels_top2": 5,
+   "residual_share": 0.35159932659932663,
+   "residual_exact_p": 0.19766814975148309,
+   "residual_within_era_p": 0.1388888888888889,
+   "E3_rho": 0.34642857142857136,
+   "E3_p": 0.37276272372762725
   }
  },
  "contrasts": [
@@ -221,33 +264,105 @@
     "n": 9
    },
    "E3_rho_difference": 0.21785714285714283
+  },
+  {
+   "contrast": "rule, same model",
+   "a": "qwen3-32b | full precision, v2 rule",
+   "b": "qwen3-32b | full precision, v1 rule",
+   "E1_auc": {
+    "difference": -0.15878125,
+    "ci95": [
+     -0.24731328124999996,
+     -0.07289921875000001
+    ],
+    "n_works": 32,
+    "n_films": 8,
+    "interval": "Batman works and hero films resampled together, from each work's and each film's mean"
+   },
+   "E2_share": {
+    "difference": 0.011444444444444443,
+    "ci95": [
+     -0.06011111111111113,
+     0.08055555555555556
+    ],
+    "n": 9
+   },
+   "E3_rho_difference": 0.1
+  },
+  {
+   "contrast": "model size, v2 rule",
+   "a": "qwen3-32b | full precision, v2 rule",
+   "b": "qwen3-8b | full precision, v2 rule",
+   "E1_auc": {
+    "difference": 0.1015625,
+    "ci95": [
+     -0.02337578124999999,
+     0.22281249999999997
+    ],
+    "n_works": 32,
+    "n_films": 8,
+    "interval": "Batman works and hero films resampled together, from each work's and each film's mean"
+   },
+   "E2_share": {
+    "difference": 0.07155555555555555,
+    "ci95": [
+     -0.001555555555555554,
+     0.13877777777777778
+    ],
+    "n": 9
+   },
+   "E3_rho_difference": -0.0035714285714286143
+  },
+  {
+   "contrast": "model size, v1 rule",
+   "a": "qwen3-32b | full precision, v1 rule",
+   "b": "qwen3-8b | full precision, v1 rule",
+   "E1_auc": {
+    "difference": 0.012718750000000004,
+    "ci95": [
+     -0.08521953125,
+     0.11253828125000005
+    ],
+    "n_works": 32,
+    "n_films": 8,
+    "interval": "Batman works and hero films resampled together, from each work's and each film's mean"
+   },
+   "E2_share": {
+    "difference": -0.0018888888888888783,
+    "ci95": [
+     -0.08333333333333333,
+     0.07522222222222223
+    ],
+    "n": 9
+   },
+   "E3_rho_difference": -0.0428571428571429
   }
  ],
  "counts_over_new_cells": {
   "E2_exact_p": {
-   "cells": 4,
-   "below_0.05": 4,
-   "expected_if_independent": 0.2
+   "cells": 6,
+   "below_0.05": 6,
+   "expected_if_independent": 0.3
   },
   "residual_decision_test": {
-   "cells": 4,
+   "cells": 6,
    "below_0.05": 0,
-   "expected_if_independent": 0.2
+   "expected_if_independent": 0.3
   },
   "residual_registered_two_measure_form_which_can_pass_on_words_alone": {
-   "cells": 4,
-   "below_0.05": 2,
-   "expected_if_independent": 0.2
+   "cells": 6,
+   "below_0.05": 3,
+   "expected_if_independent": 0.3
   },
   "E3_p": {
-   "cells": 4,
+   "cells": 6,
    "below_0.05": 0,
-   "expected_if_independent": 0.2
+   "expected_if_independent": 0.3
   },
   "E1_openings_against_their_own_label_shuffle_v2_rule_only": {
-   "cells": 2,
+   "cells": 3,
    "below_0.05": 0,
-   "expected_if_independent": 0.1
+   "expected_if_independent": 0.15
   }
  },
  "note": "The cells share the 32 works and are not independent: a count is not that many confirmations (cells_joint.json gives the probability of each count under one null for all cells). E1 cells under v1's rule have no openings version and are not length-controlled. residual_exact_p is v1's registered two-measure form; residual_decision_exact_p is v2's decision test (seven word measures)."

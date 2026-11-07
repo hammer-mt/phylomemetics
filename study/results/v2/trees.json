@@ -1,0 +1,500 @@
+{
+ "works": [
+  "1943 serial",
+  "Batman '66",
+  "Dark Knight Returns",
+  "Year One",
+  "The Killing Joke",
+  "A Death in the Family",
+  "Gotham by Gaslight",
+  "Arkham Asylum (comic)",
+  "Batman '89",
+  "Batman Returns",
+  "Mask of the Phantasm",
+  "Knightfall",
+  "Batman Forever",
+  "The Long Halloween",
+  "Batman & Robin",
+  "Return of the Joker",
+  "Hush",
+  "Batman Begins",
+  "The Dark Knight",
+  "Batman R.I.P.",
+  "Arkham Asylum (game)",
+  "Under the Red Hood",
+  "Arkham City",
+  "Dark Knight Rises",
+  "Earth One",
+  "Arkham Knight",
+  "Batman v Superman",
+  "Lego Batman",
+  "White Knight",
+  "Batman Ninja",
+  "Joker (2019)",
+  "The Batman",
+  "Puss in Boots",
+  "Count of Monte Cristo",
+  "Sherlock Holmes",
+  "Dracula",
+  "Scarlet Pimpernel",
+  "Zorro",
+  "The Bat (1926)",
+  "The Shadow",
+  "Superman",
+  "Spider-Man",
+  "Daredevil",
+  "Iron Man",
+  "Green Hornet"
+ ],
+ "models": {
+  "qwen3-32b": {
+   "n_families": 4996,
+   "families_per_work_median": 1259.0,
+   "newick": "(w32:0,((w38:0.47906688,(w36:0.47717692,(w44:0.44284876,w37:0.47306715)Inner3:0.0071065416)Inner5:0.0037735258)Inner6:0.0047063665,(w39:0.46364468,((w34:0.46447585,(w35:0.45785438,w33:0.46043355)Inner4:0.014162525)Inner8:0.013601807,((w43:0.42800674,(w42:0.40044745,w41:0.39904277)Inner11:0.015507236)Inner14:0.014176909,((w40:0.38859323,w26:0.3415655)Inner10:0.04172763,((w0:0.41961167,w1:0.38550236)Inner20:0.022511449,(((w6:0.40056375,(w7:0.40691123,(w30:0.43089325,w4:0.41825517)Inner21:0.020367345)Inner28:0.0048920421)Inner30:0.0086769453,(w9:0.39911739,(w8:0.36691261,((w10:0.36450561,w3:0.35873199)Inner22:0.014896289,((w24:0.32852108,w17:0.32874573)Inner17:0.019655961,((w23:0.32812424,w18:0.3624226)Inner18:0.013185886,(w31:0.33719714,w13:0.33167429)Inner15:0.022493816)Inner23:0.0016272801)Inner24:0.0062980125)Inner25:0.0033996931)Inner27:0.00936933)Inner29:0.0099686391)Inner32:0.0032588425,((w14:0.356356,w12:0.37080889)Inner34:0.0057067372,((w15:0.36451425,(w2:0.34149682,(w27:0.35391959,w5:0.39020435)Inner36:0.0043283983)Inner37:0.0067997902)Inner40:0.0032460557,((w29:0.37340525,w28:0.34910115)Inner38:0.0068983186,((w21:0.35376158,w19:0.3548312)Inner39:0.0059670923,(w16:0.31839174,(w11:0.31304277,(w20:0.2632227,(w25:0.2342968,w22:0.24589161)Inner1:0.017163402)Inner2:0.052143322)Inner13:0.010893085)Inner16:0.026877077)Inner42:0.0025749924)Inner43:0.0046190332)Inner41:0.011100752)Inner35:0.01276566)Inner33:0.005536769)Inner31:0.017436292)Inner26:0.018210545)Inner19:0.02428608)Inner12:0.0098090683)Inner9:0.010114749)Inner7:0.5056444):0;",
+   "era_between_over_within": 1.0261356306912812,
+   "era_p": 0.03519296140771846,
+   "source_by_distance": {
+    "rows": [
+     {
+      "target": "Batman Begins",
+      "sources": [
+       "Year One"
+      ],
+      "rank": 4,
+      "closest": "Earth One",
+      "n_comics": 12
+     },
+     {
+      "target": "The Dark Knight",
+      "sources": [
+       "The Long Halloween",
+       "The Killing Joke"
+      ],
+      "rank": 1,
+      "closest": "The Long Halloween",
+      "n_comics": 12
+     },
+     {
+      "target": "Dark Knight Rises",
+      "sources": [
+       "Knightfall",
+       "Dark Knight Returns"
+      ],
+      "rank": 4,
+      "closest": "Hush",
+      "n_comics": 12
+     },
+     {
+      "target": "Batman v Superman",
+      "sources": [
+       "Dark Knight Returns"
+      ],
+      "rank": 1,
+      "closest": "Dark Knight Returns",
+      "n_comics": 12
+     },
+     {
+      "target": "Under the Red Hood",
+      "sources": [
+       "A Death in the Family"
+      ],
+      "rank": 6,
+      "closest": "Hush",
+      "n_comics": 12
+     },
+     {
+      "target": "Arkham Asylum (game)",
+      "sources": [
+       "Arkham Asylum (comic)"
+      ],
+      "rank": 8,
+      "closest": "Knightfall",
+      "n_comics": 12
+     },
+     {
+      "target": "Batman '89",
+      "sources": [
+       "The Killing Joke"
+      ],
+      "rank": 11,
+      "closest": "Earth One",
+      "n_comics": 12
+     },
+     {
+      "target": "Joker (2019)",
+      "sources": [
+       "The Killing Joke"
+      ],
+      "rank": 4,
+      "closest": "Earth One",
+      "n_comics": 12
+     },
+     {
+      "target": "The Batman",
+      "sources": [
+       "Year One",
+       "The Long Halloween"
+      ],
+      "rank": 1,
+      "closest": "The Long Halloween",
+      "n_comics": 12
+     }
+    ],
+    "mean_rank": 4.444444444444445,
+    "chance_mean_rank": 5.779622222222222,
+    "p": 0.118376324735053,
+    "top1": 3,
+    "top3": 3
+   },
+   "source_by_distance_random_units": {
+    "n_draws": 20,
+    "mean_rank_mean": 4.766666666666667,
+    "mean_rank_min": 2.888888888888889,
+    "top1_mean": 2.05
+   }
+  },
+  "qwen3-8b": {
+   "n_families": 1261,
+   "families_per_work_median": 319.0,
+   "newick": "(w32:0,(w38:0.46131617,(w34:0.46413197,((w36:0.47123376,(w35:0.4333065,w33:0.42683336)Inner4:0.016941613)Inner6:0.011050259,((w39:0.44523827,(w44:0.44448806,w37:0.47076618)Inner3:0.021699073)Inner7:0.017420195,((w43:0.42733861,(w42:0.37259546,w41:0.36991951)Inner10:0.032359801)Inner15:0.010256087,((w40:0.35881425,w26:0.3186051)Inner12:0.054533007,(w0:0.40784815,(((w30:0.40537158,w4:0.40255525)Inner18:0.033857387,((w9:0.36970419,(w10:0.3619849,w8:0.34323898)Inner22:0.0041561612)Inner24:0.018175888,((w6:0.37666985,w3:0.3459108)Inner21:0.018112503,((w31:0.34177145,w13:0.3312748)Inner19:0.019179394,((w23:0.31802519,w18:0.36152392)Inner20:0.0098800832,(w24:0.28890274,w17:0.29700034)Inner14:0.03641317)Inner23:0.0079709308)Inner25:0.0033660265)Inner27:0.00948014)Inner28:0.0049169063)Inner30:0.0082122846,(w1:0.3943435,(((w19:0.3411142,(w29:0.34870798,w21:0.34970471)Inner35:0.0044626076)Inner38:0.011874521,(w14:0.35478713,(w27:0.33543633,(w15:0.34930971,w5:0.34650778)Inner33:0.010603311)Inner36:0.010507286)Inner42:0.0021182668)Inner43:0.0021205333,((w12:0.34223642,w2:0.31793071)Inner34:0.017007709,(w28:0.34178181,(w7:0.38869185,(w16:0.31660849,(w11:0.29185486,(w20:0.23640561,(w25:0.20129093,w22:0.21243048)Inner1:0.024015357)Inner2:0.061184947)Inner13:0.02112866)Inner17:0.018021798)Inner31:0.02031046)Inner39:0.0042252658)Inner40:0.0044707534)Inner41:0.011811963)Inner37:0.01306359)Inner32:0.0084608423)Inner29:0.012405667)Inner26:0.023384843)Inner16:0.038469788)Inner11:0.0088700317)Inner9:0.0047957729)Inner8:0.016266779)Inner5:0.48312827):0;",
+   "era_between_over_within": 1.032639523730694,
+   "era_p": 0.015996800639872025,
+   "source_by_distance": {
+    "rows": [
+     {
+      "target": "Batman Begins",
+      "sources": [
+       "Year One"
+      ],
+      "rank": 6,
+      "closest": "Earth One",
+      "n_comics": 12
+     },
+     {
+      "target": "The Dark Knight",
+      "sources": [
+       "The Long Halloween",
+       "The Killing Joke"
+      ],
+      "rank": 5,
+      "closest": "Year One",
+      "n_comics": 12
+     },
+     {
+      "target": "Dark Knight Rises",
+      "sources": [
+       "Knightfall",
+       "Dark Knight Returns"
+      ],
+      "rank": 2,
+      "closest": "Earth One",
+      "n_comics": 12
+     },
+     {
+      "target": "Batman v Superman",
+      "sources": [
+       "Dark Knight Returns"
+      ],
+      "rank": 1,
+      "closest": "Dark Knight Returns",
+      "n_comics": 12
+     },
+     {
+      "target": "Under the Red Hood",
+      "sources": [
+       "A Death in the Family"
+      ],
+      "rank": 6,
+      "closest": "Batman R.I.P.",
+      "n_comics": 12
+     },
+     {
+      "target": "Arkham Asylum (game)",
+      "sources": [
+       "Arkham Asylum (comic)"
+      ],
+      "rank": 4,
+      "closest": "Knightfall",
+      "n_comics": 12
+     },
+     {
+      "target": "Batman '89",
+      "sources": [
+       "The Killing Joke"
+      ],
+      "rank": 12,
+      "closest": "Earth One",
+      "n_comics": 12
+     },
+     {
+      "target": "Joker (2019)",
+      "sources": [
+       "The Killing Joke"
+      ],
+      "rank": 4,
+      "closest": "Earth One",
+      "n_comics": 12
+     },
+     {
+      "target": "The Batman",
+      "sources": [
+       "Year One",
+       "The Long Halloween"
+      ],
+      "rank": 2,
+      "closest": "Earth One",
+      "n_comics": 12
+     }
+    ],
+    "mean_rank": 4.666666666666667,
+    "chance_mean_rank": 5.755066666666667,
+    "p": 0.16756648670265947,
+    "top1": 1,
+    "top3": 3
+   },
+   "source_by_distance_random_units": {
+    "n_draws": 20,
+    "mean_rank_mean": 5.205555555555556,
+    "mean_rank_min": 4.0,
+    "top1_mean": 1.4
+   }
+  },
+  "llama3.1-8b": {
+   "n_families": 2316,
+   "families_per_work_median": 580.0,
+   "newick": "(w32:0,(w33:0.45113124,(w36:0.48163123,((w35:0.47450532,w34:0.46667115)Inner7:0.0032528163,((w39:0.44690278,(w38:0.48024647,(w44:0.43086615,w37:0.46672421)Inner3:0.015402792)Inner5:0.0073875157)Inner8:0.012096376,((w42:0.41771666,(w40:0.39821368,(w43:0.41414011,w41:0.4101549)Inner11:0.014001143)Inner12:0.0080375769)Inner14:0.0073965632,(w0:0.42429091,(w1:0.39622598,(w26:0.3769266,((((w28:0.33663001,w14:0.33399818)Inner35:0.013772342,(w29:0.35713728,w27:0.33945715)Inner34:0.017056358)Inner43:0.00065803861,((w15:0.33576127,(w21:0.32792776,w19:0.34704998)Inner37:0.0079134422)Inner40:0.0031358556,((w5:0.36155947,w2:0.32295936)Inner38:0.0041487321,(w16:0.30797143,(w11:0.29086483,(w20:0.24580722,(w25:0.21638181,w22:0.22333864)Inner1:0.018522902)Inner2:0.056731945)Inner13:0.023288798)Inner17:0.020890484)Inner39:0.0042727688)Inner41:0.0085406808)Inner42:0.0103666,((w6:0.39333025,(w7:0.39492708,(w30:0.43741832,w4:0.4025207)Inner22:0.0090569057)Inner24:0.019542386)Inner31:0.0070960722,(w12:0.34704353,((w9:0.38333632,(w10:0.34765581,w8:0.34877277)Inner20:0.017969712)Inner26:0.0091583954,((w23:0.33346341,w18:0.36235054)Inner21:0.016111637,((w24:0.31371417,w17:0.32806502)Inner16:0.016824769,(w3:0.35546016,(w31:0.3379959,w13:0.32896138)Inner18:0.0020239954)Inner19:0.011388797)Inner23:0.0089667945)Inner25:0.0087591683)Inner28:0.0088717402)Inner30:0.0096741385)Inner33:0.010641257)Inner36:0.014202214)Inner32:0.010907343)Inner29:0.0094306783)Inner27:0.03095606)Inner15:0.028389202)Inner10:0.010139849)Inner9:0.0093656993)Inner6:0.0081478366)Inner4:0.4886278):0;",
+   "era_between_over_within": 1.0382413099035592,
+   "era_p": 0.009998000399920015,
+   "source_by_distance": {
+    "rows": [
+     {
+      "target": "Batman Begins",
+      "sources": [
+       "Year One"
+      ],
+      "rank": 5,
+      "closest": "Earth One",
+      "n_comics": 12
+     },
+     {
+      "target": "The Dark Knight",
+      "sources": [
+       "The Long Halloween",
+       "The Killing Joke"
+      ],
+      "rank": 1,
+      "closest": "The Long Halloween",
+      "n_comics": 12
+     },
+     {
+      "target": "Dark Knight Rises",
+      "sources": [
+       "Knightfall",
+       "Dark Knight Returns"
+      ],
+      "rank": 3,
+      "closest": "Earth One",
+      "n_comics": 12
+     },
+     {
+      "target": "Batman v Superman",
+      "sources": [
+       "Dark Knight Returns"
+      ],
+      "rank": 1,
+      "closest": "Dark Knight Returns",
+      "n_comics": 12
+     },
+     {
+      "target": "Under the Red Hood",
+      "sources": [
+       "A Death in the Family"
+      ],
+      "rank": 6,
+      "closest": "Hush",
+      "n_comics": 12
+     },
+     {
+      "target": "Arkham Asylum (game)",
+      "sources": [
+       "Arkham Asylum (comic)"
+      ],
+      "rank": 7,
+      "closest": "Knightfall",
+      "n_comics": 12
+     },
+     {
+      "target": "Batman '89",
+      "sources": [
+       "The Killing Joke"
+      ],
+      "rank": 11,
+      "closest": "Year One",
+      "n_comics": 12
+     },
+     {
+      "target": "Joker (2019)",
+      "sources": [
+       "The Killing Joke"
+      ],
+      "rank": 5,
+      "closest": "Earth One",
+      "n_comics": 12
+     },
+     {
+      "target": "The Batman",
+      "sources": [
+       "Year One",
+       "The Long Halloween"
+      ],
+      "rank": 2,
+      "closest": "Earth One",
+      "n_comics": 12
+     }
+    ],
+    "mean_rank": 4.555555555555555,
+    "chance_mean_rank": 5.791622222222222,
+    "p": 0.14497100579884023,
+    "top1": 2,
+    "top3": 4
+   },
+   "source_by_distance_random_units": {
+    "n_draws": 20,
+    "mean_rank_mean": 4.866666666666667,
+    "mean_rank_min": 3.5555555555555554,
+    "top1_mean": 1.85
+   }
+  }
+ },
+ "tfidf_source_by_distance": {
+  "rows": [
+   {
+    "target": "Batman Begins",
+    "sources": [
+     "Year One"
+    ],
+    "rank": 2,
+    "closest": "Earth One",
+    "n_comics": 12
+   },
+   {
+    "target": "The Dark Knight",
+    "sources": [
+     "The Long Halloween",
+     "The Killing Joke"
+    ],
+    "rank": 2,
+    "closest": "Year One",
+    "n_comics": 12
+   },
+   {
+    "target": "Dark Knight Rises",
+    "sources": [
+     "Knightfall",
+     "Dark Knight Returns"
+    ],
+    "rank": 3,
+    "closest": "Earth One",
+    "n_comics": 12
+   },
+   {
+    "target": "Batman v Superman",
+    "sources": [
+     "Dark Knight Returns"
+    ],
+    "rank": 2,
+    "closest": "Hush",
+    "n_comics": 12
+   },
+   {
+    "target": "Under the Red Hood",
+    "sources": [
+     "A Death in the Family"
+    ],
+    "rank": 1,
+    "closest": "A Death in the Family",
+    "n_comics": 12
+   },
+   {
+    "target": "Arkham Asylum (game)",
+    "sources": [
+     "Arkham Asylum (comic)"
+    ],
+    "rank": 3,
+    "closest": "Hush",
+    "n_comics": 12
+   },
+   {
+    "target": "Batman '89",
+    "sources": [
+     "The Killing Joke"
+    ],
+    "rank": 6,
+    "closest": "White Knight",
+    "n_comics": 12
+   },
+   {
+    "target": "Joker (2019)",
+    "sources": [
+     "The Killing Joke"
+    ],
+    "rank": 2,
+    "closest": "Earth One",
+    "n_comics": 12
+   },
+   {
+    "target": "The Batman",
+    "sources": [
+     "Year One",
+     "The Long Halloween"
+    ],
+    "rank": 1,
+    "closest": "The Long Halloween",
+    "n_comics": 12
+   }
+  ],
+  "mean_rank": 2.4444444444444446,
+  "chance_mean_rank": 5.7694,
+  "p": 0.0003999200159968006,
+  "top1": 2,
+  "top3": 8
+ },
+ "mantel": {
+  "qwen3-32b vs qwen3-8b": {
+   "r": 0.9823741708635516,
+   "p": 0.0001999600079984003,
+   "random_units_r_mean": 0.702251058238039,
+   "random_units_r_max": 0.7915621538943246,
+   "partial_r_given_tfidf": 0.9534178867437019,
+   "partial_p": 0.0004997501249375312
+  },
+  "qwen3-32b vs llama3.1-8b": {
+   "r": 0.9871144768432809,
+   "p": 0.0001999600079984003,
+   "random_units_r_mean": 0.7933773834159474,
+   "random_units_r_max": 0.8380831306511798,
+   "partial_r_given_tfidf": 0.964766044234804,
+   "partial_p": 0.0004997501249375312
+  },
+  "qwen3-8b vs llama3.1-8b": {
+   "r": 0.9755374441749516,
+   "p": 0.0001999600079984003,
+   "random_units_r_mean": 0.641491965605659,
+   "random_units_r_max": 0.7255216969178383,
+   "partial_r_given_tfidf": 0.9351436468315532,
+   "partial_p": 0.0004997501249375312
+  },
+  "qwen3-32b vs tfidf": {
+   "r": 0.7961251731540306,
+   "p": 0.0001999600079984003
+  },
+  "qwen3-8b vs tfidf": {
+   "r": 0.7850271248116357,
+   "p": 0.0001999600079984003
+  },
+  "llama3.1-8b vs tfidf": {
+   "r": 0.7967348935558343,
+   "p": 0.0001999600079984003
+  }
+ }
+}

@@ -987,5 +987,15 @@
    "kind": "object",
    "detects": "idea"
   }
+ },
+ "steering": {
+  "agreement_with_first_judge": {
+   "n": 281,
+   "agree": 0.11387900355871886,
+   "kappa": 0.047094393070668816
+  },
+  "second_judge_accuracy": 0.21161825726141079,
+  "n": 241,
+  "second_judge_none_on_sham": 0
  }
 }
