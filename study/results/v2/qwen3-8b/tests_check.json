@@ -632,10 +632,10 @@
   "311592": {
    "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
-    true,
+    false,
     true,
     false,
-    false,
+    true,
     false
    ],
    "ok": false
@@ -731,13 +731,13 @@
   "363491": {
    "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
-    false,
-    false,
     true,
     true,
-    false
+    true,
+    false,
+    true
    ],
-   "ok": false
+   "ok": true
   },
   "366061": {
    "B_texts_using_a_key_word": {},
@@ -952,12 +952,12 @@
    "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
-    false,
-    false,
+    true,
+    true,
     true,
     false
    ],
-   "ok": false
+   "ok": true
   },
   "398548": {
    "B_texts_using_a_key_word": {},
@@ -982,12 +982,16 @@
    "ok": true
   },
   "400670": {
-   "B_texts_using_a_key_word": {},
+   "B_texts_using_a_key_word": {
+    "0": [
+     "enterpri"
+    ]
+   },
    "C_texts_reusing_a_key_word": [
-    false,
-    true,
     true,
     false,
+    false,
+    true,
     false
    ],
    "ok": false
@@ -1129,11 +1133,11 @@
    "C_texts_reusing_a_key_word": [
     true,
     true,
-    false,
+    true,
     false,
     false
    ],
-   "ok": false
+   "ok": true
   },
   "451471": {
    "B_texts_using_a_key_word": {},
@@ -1182,13 +1186,13 @@
   "485646": {
    "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
-    false,
-    false,
-    false,
+    true,
+    true,
+    true,
     false,
     false
    ],
-   "ok": false
+   "ok": true
   },
   "492572": {
    "B_texts_using_a_key_word": {},
@@ -1282,10 +1286,10 @@
    "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     false,
-    false,
+    true,
     true,
     false,
-    true
+    false
    ],
    "ok": false
   },
@@ -1565,21 +1569,13 @@
    "ok": true
   },
   "621792": {
-   "B_texts_using_a_key_word": {
-    "0": [
-     "1940",
-     "1990"
-    ],
-    "4": [
-     "1940"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     false,
-    true,
-    true,
     false,
-    true
+    true,
+    true,
+    false
    ],
    "ok": false
   },
@@ -1852,11 +1848,11 @@
    "C_texts_reusing_a_key_word": [
     false,
     true,
-    false,
     true,
-    false
+    false,
+    true
    ],
-   "ok": false
+   "ok": true
   },
   "809845": {
    "B_texts_using_a_key_word": {},

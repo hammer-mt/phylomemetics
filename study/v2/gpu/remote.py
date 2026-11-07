@@ -10,6 +10,7 @@
     twins <tag> <queries.npz>                each query unit's twin in this model                 -> v2/acts/<tag>/twins.json
     background <tag> <units.npy>             per-plot shares of chosen units (--select)           -> v2/acts/<tag>/bg_selected.*
     sync - [skip ...]                        upload every GPU script that differs from the pod's copy (not the ones named)
+    wait <tag> <job> [file ...]              wait for a job already running on the pod, then fetch the named outputs
 """
 import fcntl
 import os
@@ -59,6 +60,14 @@ def main():
     step, tag, a = sys.argv[1], sys.argv[2], sys.argv[3:]
     if step == "sync":
         sync(a)
+    elif step == "wait":                                 # wait for a job that is already running on the pod (holding the pod's queue)
+        with open(os.environ.get("RUNPOD_STATE", str(Path(__file__).resolve().parent / ".state" / "pod.json")) + ".lock", "w") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            code = rc.wait(a[0], poll=10, quiet=True)
+        if code != 0:
+            raise SystemExit(f"{a[0]} exited with {code}")
+        for f in a[1:]:
+            pull(tag, f"--file={f}")
     elif step == "sentences":
         prefix = a[1] if len(a) > 1 else "sent"
         go(f"sent_{tag}_{prefix}".replace(".", "_"), f"python3 study_sentences.py {tag} {DATA}/study {OUT} {up(a[0])} {prefix} {Q}")
