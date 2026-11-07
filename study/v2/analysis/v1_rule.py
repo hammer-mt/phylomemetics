@@ -4,7 +4,7 @@ Runs v1's experiments.py functions, unchanged, on each work's mean of its three 
 SwiGLU product (all sign regimes), with the presence bar set by the 69 ordinary films: exactly what v1 did, at
 full precision and without v1's int8 rounding.
 
-    cd study && ../.venv/bin/python v2/analysis/v1_rule.py [model-tag ...]
+    cd study && ../.venv/bin/python v2/analysis/v1_rule.py [model-tag ...] [--decision-test-only]
 
 Needs v2/acts/<tag>/{orig,anon,anon_icon}_raw_top3.npy. Writes results/v2/experiments_v1rule.json.
 """
@@ -55,10 +55,28 @@ def run_model(tag):
     return res
 
 
+def add_decision_test(tag, res):
+    """Add v2's decision test to a model already run under v1's rule, without repeating E1 and E3 (the test was added to
+    this script after the first runs; PLAN.md Section 18, change 20). Gives the same value as a full run."""
+    S_a = np.load(C.ACTS / tag / "anon_raw_top3.npy").astype(np.float32)
+    R_n = X.unit_rates(S_a > X.bar(S_a, X.FILMS))
+    res["E2"]["residual_test_beyond_words"]["decision_words_by_frequency"] = E.residual(R_n, E.regressors("decision"))
+    print(f"== {tag} under v1's rule: residual p (decision) "
+          f"{res['E2']['residual_test_beyond_words']['decision_words_by_frequency']['chance']['joint_relabelling_exact']['p']:.4f}", flush=True)
+    return res
+
+
 def main():
-    tags = sys.argv[1:] or [t for t in C.MODELS if (C.ACTS / t / "orig_raw_top3.npy").exists()]
+    only = "--decision-test-only" in sys.argv
+    args = [a for a in sys.argv[1:] if not a.startswith("--")]
+    tags = args or [t for t in C.MODELS if (C.ACTS / t / "orig_raw_top3.npy").exists()]
     path = C.RESULTS / "experiments_v1rule.json"
     out = json.load(open(path)) if path.exists() else {}
+    if only:
+        for tag in tags:
+            out[tag] = add_decision_test(tag, out[tag])
+            C.save(out, "experiments_v1rule.json")
+        return
     out["rule"] = ("v1: a unit is present in a work when the mean of its three strongest sentences (raw SwiGLU product, all sign regimes) "
                    "beats all but one of the 69 ordinary films; computed by v1's experiments.py on full-precision activations")
     for tag in tags:

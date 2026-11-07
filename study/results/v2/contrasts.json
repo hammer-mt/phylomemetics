@@ -3,6 +3,7 @@
   "qwen3-8b | v1 published": {
    "E1_null_p95": 0.6994140624999999,
    "length_controlled": false,
+   "residual_decision_exact_p": null,
    "E1_auc": 0.5154296875,
    "E1_ci95": [
     0.28325439453125,
@@ -21,6 +22,7 @@
   "qwen3-8b | full precision, v1 rule": {
    "E1_null_p95": 0.703125,
    "length_controlled": false,
+   "residual_decision_exact_p": 0.22489002124418792,
    "E1_auc": 0.507421875,
    "E1_ci95": [
     0.28534423828125,
@@ -43,6 +45,7 @@
    "E1_centroid_auc": 0.6796875,
    "E2_evaluable": true,
    "length_controlled": true,
+   "E1_openings_shuffle_p": 0.97002997002997,
    "residual_decision_exact_p": 0.6181126743626744,
    "E1_auc": 0.259765625,
    "E1_ci95": [
@@ -62,6 +65,7 @@
   "llama3.1-8b | v1 published": {
    "E1_null_p95": 0.6720703124999999,
    "length_controlled": false,
+   "residual_decision_exact_p": null,
    "E1_auc": 0.54443359375,
    "E1_ci95": [
     0.3090673828125,
@@ -77,6 +81,25 @@
    "E3_rho": 0.0035714285714285704,
    "E3_p": 0.5847415258474152
   },
+  "llama3.1-8b | full precision, v1 rule": {
+   "E1_null_p95": 0.6974609374999999,
+   "length_controlled": false,
+   "residual_decision_exact_p": 0.14222182138848805,
+   "E1_auc": 0.5291015625,
+   "E1_ci95": [
+    0.30233398437500003,
+    0.7539111328125
+   ],
+   "E2_share": 0.11419753086419752,
+   "E2_exact_p": 0.0003402076318742985,
+   "E2_within_era_p": 0.002777777777777778,
+   "sequels_top2": 5,
+   "residual_share": 0.24621212121212122,
+   "residual_exact_p": 0.03453558401475068,
+   "residual_within_era_p": 0.04583333333333333,
+   "E3_rho": -0.04285714285714285,
+   "E3_p": 0.6257374262573743
+  },
   "llama3.1-8b | full precision, v2 rule": {
    "E1_verdict": "falsified",
    "E1_openings_auc": 0.396484375,
@@ -84,6 +107,7 @@
    "E1_centroid_auc": 0.6875,
    "E2_evaluable": true,
    "length_controlled": true,
+   "E1_openings_shuffle_p": 0.8131868131868132,
    "residual_decision_exact_p": 0.5698921256212923,
    "E1_auc": 0.38671875,
    "E1_ci95": [
@@ -109,16 +133,18 @@
    "E1_auc": {
     "difference": -0.008000000000000005,
     "ci95": [
-     -0.03515703125,
-     0.018156249999999985
+     -0.07113671875000002,
+     0.048219531250000024
     ],
-    "n": 32
+    "n_works": 32,
+    "n_films": 8,
+    "interval": "Batman works and hero films resampled together, from each work's and each film's mean"
    },
    "E2_share": {
     "difference": -0.02466666666666667,
     "ci95": [
-     -0.11566666666666665,
-     0.050888888888888886
+     -0.11570555555555553,
+     0.05244444444444444
     ],
     "n": 9
    },
@@ -131,26 +157,98 @@
    "E1_auc": {
     "difference": -0.24762500000000004,
     "ci95": [
-     -0.3251265625,
-     -0.166875
+     -0.3748765624999999,
+     -0.11398671874999981
     ],
-    "n": 32
+    "n_works": 32,
+    "n_films": 8,
+    "interval": "Batman works and hero films resampled together, from each work's and each film's mean"
    },
    "E2_share": {
     "difference": -0.062000000000000006,
     "ci95": [
-     -0.1486972222222222,
-     0.025897222222222255
+     -0.1542222222222222,
+     0.02622222222222222
     ],
     "n": 9
    },
    "E3_rho_difference": 0.06071428571428572
+  },
+  {
+   "contrast": "pipeline (4-bit and 8-bit storage against full precision), same model and rule",
+   "a": "llama3.1-8b | full precision, v1 rule",
+   "b": "llama3.1-8b | v1 published",
+   "E1_auc": {
+    "difference": -0.015281249999999994,
+    "ci95": [
+     -0.05497187500000001,
+     0.016657812500000004
+    ],
+    "n_works": 32,
+    "n_films": 8,
+    "interval": "Batman works and hero films resampled together, from each work's and each film's mean"
+   },
+   "E2_share": {
+    "difference": 0.012444444444444449,
+    "ci95": [
+     -0.024666666666666667,
+     0.04966666666666668
+    ],
+    "n": 9
+   },
+   "E3_rho_difference": -0.04642857142857142
+  },
+  {
+   "contrast": "rule, same model",
+   "a": "llama3.1-8b | full precision, v2 rule",
+   "b": "llama3.1-8b | full precision, v1 rule",
+   "E1_auc": {
+    "difference": -0.14234375000000002,
+    "ci95": [
+     -0.25550156250000006,
+     -0.043402343749999996
+    ],
+    "n_works": 32,
+    "n_films": 8,
+    "interval": "Batman works and hero films resampled together, from each work's and each film's mean"
+   },
+   "E2_share": {
+    "difference": 0.022222222222222223,
+    "ci95": [
+     -0.027777777777777776,
+     0.08055555555555556
+    ],
+    "n": 9
+   },
+   "E3_rho_difference": 0.21785714285714283
   }
  ],
- "new_cells": 3,
- "new_cells_E2_exact_p_below_0.05": 3,
- "new_cells_residual_exact_p_below_0.05": 1,
- "new_cells_E3_p_below_0.05": 0,
- "expected_by_chance_per_test": 0.15000000000000002,
- "note": "E1 cells under v1's rule have no openings version and are not length-controlled. The residual columns are v1's registered form (two word measures), which every cell has; v2's decision test adds word presence by frequency band (residual_decision_exact_p)"
+ "counts_over_new_cells": {
+  "E2_exact_p": {
+   "cells": 4,
+   "below_0.05": 4,
+   "expected_if_independent": 0.2
+  },
+  "residual_decision_test": {
+   "cells": 4,
+   "below_0.05": 0,
+   "expected_if_independent": 0.2
+  },
+  "residual_registered_two_measure_form_which_can_pass_on_words_alone": {
+   "cells": 4,
+   "below_0.05": 2,
+   "expected_if_independent": 0.2
+  },
+  "E3_p": {
+   "cells": 4,
+   "below_0.05": 0,
+   "expected_if_independent": 0.2
+  },
+  "E1_openings_against_their_own_label_shuffle_v2_rule_only": {
+   "cells": 2,
+   "below_0.05": 0,
+   "expected_if_independent": 0.1
+  }
+ },
+ "note": "The cells share the 32 works and are not independent: a count is not that many confirmations (cells_joint.json gives the probability of each count under one null for all cells). E1 cells under v1's rule have no openings version and are not length-controlled. residual_exact_p is v1's registered two-measure form; residual_decision_exact_p is v2's decision test (seven word measures)."
 }
