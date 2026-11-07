@@ -15,6 +15,7 @@ poles left out (under 10% and under 25% of the neuron's stronger pole), and unit
 
 Writes results/v2/sensitivity_<tag>.json.
 """
+import fcntl
 import hashlib
 import json
 import multiprocessing
@@ -65,6 +66,8 @@ def block(job):
     path = Path("v2/cache/sens") / tag / (hashlib.sha1(json.dumps(job, sort_keys=True).encode()).hexdigest()[:16] + ".json")
     if path.exists():
         return json.load(open(path))
+    lock = open(Path("v2/cache") / "heavy.lock", "w")      # one memory-heavy analysis at a time on this machine (see v2/heavy.sh)
+    fcntl.flock(lock, fcntl.LOCK_EX)
     if kind == "grid":
         st = C.Setting(tag, a, b, icon=False)
         rows = [flat(E.run_setting(st, None, cap, cap, full=False, centroid="all" if cap is None else "capped"), cell="grid",
@@ -76,6 +79,8 @@ def block(job):
     tmp = path.with_suffix(f".{os.getpid()}.tmp")
     json.dump(rows, open(tmp, "w"), default=lambda o: o.item() if hasattr(o, "item") else str(o))
     os.replace(tmp, path)
+    del st
+    lock.close()
     return json.load(open(path))                       # read back, so a fresh run and a resumed one return the same objects
 
 
