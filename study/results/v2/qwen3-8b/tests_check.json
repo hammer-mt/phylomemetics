@@ -1,16 +1,9 @@
 {
  "model": "qwen3-8b",
- "n": 201,
+ "n": 207,
  "units": {
   "2047": {
-   "B_texts_using_a_key_word": {
-    "0": [
-     "administrativ"
-    ],
-    "3": [
-     "red"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
@@ -18,7 +11,7 @@
     true,
     true
    ],
-   "ok": false
+   "ok": true
   },
   "3225": {
    "B_texts_using_a_key_word": {},
@@ -31,12 +24,41 @@
    ],
    "ok": true
   },
+  "5762": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "ok": true
+  },
   "6972": {
-   "B_texts_using_a_key_word": {
-    "1": [
-     "noth"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    false,
+    true,
+    false,
+    true
+   ],
+   "ok": true
+  },
+  "10540": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    false,
+    true
+   ],
+   "ok": true
+  },
+  "38348": {
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     false,
@@ -44,33 +66,7 @@
     true,
     true
    ],
-   "ok": false
-  },
-  "10540": {
-   "B_texts_using_a_key_word": {
-    "1": [
-     "city"
-    ]
-   },
-   "C_texts_reusing_a_key_word": [
-    true,
-    true,
-    true,
-    true,
-    false
-   ],
-   "ok": false
-  },
-  "38348": {
-   "B_texts_using_a_key_word": {},
-   "C_texts_reusing_a_key_word": [
-    false,
-    false,
-    true,
-    false,
-    false
-   ],
-   "ok": false
+   "ok": true
   },
   "45473": {
    "B_texts_using_a_key_word": {},
@@ -117,14 +113,7 @@
    "ok": true
   },
   "70156": {
-   "B_texts_using_a_key_word": {
-    "0": [
-     "oil"
-    ],
-    "4": [
-     "wat"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
@@ -132,7 +121,7 @@
     true,
     true
    ],
-   "ok": false
+   "ok": true
   },
   "71327": {
    "B_texts_using_a_key_word": {},
@@ -168,11 +157,7 @@
    "ok": true
   },
   "74990": {
-   "B_texts_using_a_key_word": {
-    "0": [
-     "you"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
@@ -180,7 +165,7 @@
     true,
     true
    ],
-   "ok": false
+   "ok": true
   },
   "76609": {
    "B_texts_using_a_key_word": {},
@@ -205,19 +190,15 @@
    "ok": true
   },
   "109416": {
-   "B_texts_using_a_key_word": {
-    "4": [
-     "self"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
     true,
-    false,
-    true
+    true,
+    false
    ],
-   "ok": false
+   "ok": true
   },
   "109519": {
    "B_texts_using_a_key_word": {},
@@ -231,11 +212,7 @@
    "ok": true
   },
   "112000": {
-   "B_texts_using_a_key_word": {
-    "2": [
-     "star"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
@@ -243,7 +220,7 @@
     true,
     false
    ],
-   "ok": false
+   "ok": true
   },
   "112625": {
    "B_texts_using_a_key_word": {},
@@ -279,19 +256,15 @@
    "ok": true
   },
   "122592": {
-   "B_texts_using_a_key_word": {
-    "0": [
-     "great"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
-    true,
+    false,
     true,
     false
    ],
-   "ok": false
+   "ok": true
   },
   "124334": {
    "B_texts_using_a_key_word": {},
@@ -327,22 +300,15 @@
    "ok": true
   },
   "130069": {
-   "B_texts_using_a_key_word": {
-    "0": [
-     "green"
-    ],
-    "1": [
-     "green"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
-    false,
     true,
     true,
     true,
-    true
+    true,
+    false
    ],
-   "ok": false
+   "ok": true
   },
   "131610": {
    "B_texts_using_a_key_word": {},
@@ -377,15 +343,19 @@
    ],
    "ok": true
   },
+  "135688": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    false,
+    true
+   ],
+   "ok": true
+  },
   "136830": {
-   "B_texts_using_a_key_word": {
-    "3": [
-     "dynamic"
-    ],
-    "4": [
-     "anti"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
@@ -393,7 +363,18 @@
     true,
     true
    ],
-   "ok": false
+   "ok": true
+  },
+  "144750": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "ok": true
   },
   "144931": {
    "B_texts_using_a_key_word": {},
@@ -440,26 +421,15 @@
    "ok": true
   },
   "156371": {
-   "B_texts_using_a_key_word": {
-    "0": [
-     "play"
-    ],
-    "1": [
-     "plac",
-     "tak"
-    ],
-    "3": [
-     "play"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
     true,
-    false,
-    true
+    true,
+    false
    ],
-   "ok": false
+   "ok": true
   },
   "159950": {
    "B_texts_using_a_key_word": {},
@@ -528,25 +498,26 @@
    "ok": true
   },
   "181725": {
-   "B_texts_using_a_key_word": {
-    "0": [
-     "nam"
-    ],
-    "2": [
-     "word"
-    ],
-    "4": [
-     "nam"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     false,
-    false,
-    false,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "188341": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
     false,
     true
    ],
-   "ok": false
+   "ok": true
   },
   "201972": {
    "B_texts_using_a_key_word": {},
@@ -593,34 +564,26 @@
    "ok": true
   },
   "249243": {
-   "B_texts_using_a_key_word": {
-    "0": [
-     "van"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
-    false,
     true,
+    false,
     true
    ],
-   "ok": false
+   "ok": true
   },
   "256801": {
-   "B_texts_using_a_key_word": {
-    "3": [
-     "report"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     false,
-    false,
-    false,
-    false,
+    true,
+    true,
+    true,
     false
    ],
-   "ok": false
+   "ok": true
   },
   "257645": {
    "B_texts_using_a_key_word": {},
@@ -636,13 +599,13 @@
   "262547": {
    "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
-    false,
-    false,
     true,
-    false,
+    true,
+    true,
+    true,
     true
    ],
-   "ok": false
+   "ok": true
   },
   "276488": {
    "B_texts_using_a_key_word": {},
@@ -667,11 +630,18 @@
    "ok": true
   },
   "311592": {
-   "B_texts_using_a_key_word": {
-    "2": [
-     "jan"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    false,
+    false,
+    false
+   ],
+   "ok": false
+  },
+  "315315": {
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     false,
     true,
@@ -679,25 +649,7 @@
     true,
     true
    ],
-   "ok": false
-  },
-  "315315": {
-   "B_texts_using_a_key_word": {
-    "1": [
-     "hou"
-    ],
-    "2": [
-     "mountain"
-    ]
-   },
-   "C_texts_reusing_a_key_word": [
-    true,
-    true,
-    true,
-    true,
-    true
-   ],
-   "ok": false
+   "ok": true
   },
   "316740": {
    "B_texts_using_a_key_word": {},
@@ -733,26 +685,15 @@
    "ok": true
   },
   "341047": {
-   "B_texts_using_a_key_word": {
-    "0": [
-     "you"
-    ],
-    "1": [
-     "we"
-    ],
-    "4": [
-     "anyon",
-     "open"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
-    true,
+    false,
     true,
     true,
     true,
     true
    ],
-   "ok": false
+   "ok": true
   },
   "343225": {
    "B_texts_using_a_key_word": {},
@@ -766,11 +707,7 @@
    "ok": true
   },
   "356911": {
-   "B_texts_using_a_key_word": {
-    "4": [
-     "fac"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
@@ -778,7 +715,7 @@
     true,
     true
    ],
-   "ok": false
+   "ok": true
   },
   "361617": {
    "B_texts_using_a_key_word": {},
@@ -792,11 +729,7 @@
    "ok": false
   },
   "363491": {
-   "B_texts_using_a_key_word": {
-    "2": [
-     "darth"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     false,
     false,
@@ -818,11 +751,7 @@
    "ok": true
   },
   "372199": {
-   "B_texts_using_a_key_word": {
-    "0": [
-     "ii"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
@@ -830,7 +759,7 @@
     true,
     true
    ],
-   "ok": false
+   "ok": true
   },
   "372323": {
    "B_texts_using_a_key_word": {},
@@ -844,19 +773,15 @@
    "ok": true
   },
   "373146": {
-   "B_texts_using_a_key_word": {
-    "1": [
-     "star"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     false,
     true,
     true,
     true,
-    false
+    true
    ],
-   "ok": false
+   "ok": true
   },
   "374913": {
    "B_texts_using_a_key_word": {},
@@ -881,14 +806,7 @@
    "ok": true
   },
   "376737": {
-   "B_texts_using_a_key_word": {
-    "2": [
-     "director"
-    ],
-    "3": [
-     "general"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
@@ -896,7 +814,7 @@
     true,
     true
    ],
-   "ok": false
+   "ok": true
   },
   "379403": {
    "B_texts_using_a_key_word": {},
@@ -921,25 +839,15 @@
    "ok": true
   },
   "383205": {
-   "B_texts_using_a_key_word": {
-    "0": [
-     "among"
-    ],
-    "1": [
-     "among"
-    ],
-    "3": [
-     "among"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
     true,
     true,
-    false
+    true
    ],
-   "ok": false
+   "ok": true
   },
   "384684": {
    "B_texts_using_a_key_word": {},
@@ -1008,11 +916,7 @@
    "ok": true
   },
   "393632": {
-   "B_texts_using_a_key_word": {
-    "4": [
-     "city"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
@@ -1020,14 +924,10 @@
     true,
     true
    ],
-   "ok": false
+   "ok": true
   },
   "394314": {
-   "B_texts_using_a_key_word": {
-    "1": [
-     "for"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
@@ -1035,7 +935,7 @@
     true,
     true
    ],
-   "ok": false
+   "ok": true
   },
   "395560": {
    "B_texts_using_a_key_word": {},
@@ -1054,8 +954,8 @@
     true,
     false,
     false,
-    false,
-    true
+    true,
+    false
    ],
    "ok": false
   },
@@ -1084,9 +984,9 @@
   "400670": {
    "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
-    true,
-    true,
     false,
+    true,
+    true,
     false,
     false
    ],
@@ -1148,26 +1048,18 @@
    "ok": true
   },
   "413688": {
-   "B_texts_using_a_key_word": {
-    "2": [
-     "nam"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
     true,
-    true,
-    true
+    false,
+    false
    ],
-   "ok": false
+   "ok": true
   },
   "414287": {
-   "B_texts_using_a_key_word": {
-    "3": [
-     "anti"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
@@ -1175,7 +1067,7 @@
     true,
     true
    ],
-   "ok": false
+   "ok": true
   },
   "416525": {
    "B_texts_using_a_key_word": {},
@@ -1233,11 +1125,7 @@
    "ok": true
   },
   "446669": {
-   "B_texts_using_a_key_word": {
-    "0": [
-     "city"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
@@ -1248,11 +1136,7 @@
    "ok": false
   },
   "451471": {
-   "B_texts_using_a_key_word": {
-    "4": [
-     "201"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
@@ -1260,7 +1144,7 @@
     true,
     true
    ],
-   "ok": false
+   "ok": true
   },
   "454387": {
    "B_texts_using_a_key_word": {},
@@ -1321,12 +1205,12 @@
    "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
-    false,
     true,
     false,
-    false
+    false,
+    true
    ],
-   "ok": false
+   "ok": true
   },
   "496912": {
    "B_texts_using_a_key_word": {},
@@ -1351,19 +1235,15 @@
    "ok": true
   },
   "506907": {
-   "B_texts_using_a_key_word": {
-    "1": [
-     "big"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
     true,
-    true,
+    false,
     true
    ],
-   "ok": false
+   "ok": true
   },
   "507250": {
    "B_texts_using_a_key_word": {},
@@ -1404,8 +1284,8 @@
     false,
     false,
     true,
-    true,
-    false
+    false,
+    true
    ],
    "ok": false
   },
@@ -1432,19 +1312,15 @@
    "ok": true
   },
   "528763": {
-   "B_texts_using_a_key_word": {
-    "0": [
-     "open"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
-    true,
+    false,
     true,
     true
    ],
-   "ok": false
+   "ok": true
   },
   "529076": {
    "B_texts_using_a_key_word": {},
@@ -1458,19 +1334,15 @@
    "ok": true
   },
   "529495": {
-   "B_texts_using_a_key_word": {
-    "0": [
-     "ord"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
     true,
     true,
-    true
+    false
    ],
-   "ok": false
+   "ok": true
   },
   "534924": {
    "B_texts_using_a_key_word": {},
@@ -1506,14 +1378,7 @@
    "ok": true
   },
   "544109": {
-   "B_texts_using_a_key_word": {
-    "2": [
-     "her"
-    ],
-    "4": [
-     "bat"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
@@ -1521,7 +1386,7 @@
     true,
     false
    ],
-   "ok": false
+   "ok": true
   },
   "550964": {
    "B_texts_using_a_key_word": {},
@@ -1535,19 +1400,15 @@
    "ok": true
   },
   "553323": {
-   "B_texts_using_a_key_word": {
-    "2": [
-     "call"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
     true,
     true,
-    true
+    false
    ],
-   "ok": false
+   "ok": true
   },
   "553609": {
    "B_texts_using_a_key_word": {},
@@ -1561,19 +1422,26 @@
    "ok": true
   },
   "558309": {
-   "B_texts_using_a_key_word": {
-    "4": [
-     "infinit"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
+    true,
+    true,
     false,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "559532": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
     true,
     true,
     true,
     true
    ],
-   "ok": false
+   "ok": true
   },
   "559572": {
    "B_texts_using_a_key_word": {},
@@ -1598,11 +1466,7 @@
    "ok": true
   },
   "568990": {
-   "B_texts_using_a_key_word": {
-    "2": [
-     "man"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
@@ -1610,7 +1474,7 @@
     false,
     true
    ],
-   "ok": false
+   "ok": true
   },
   "573576": {
    "B_texts_using_a_key_word": {},
@@ -1646,11 +1510,7 @@
    "ok": true
   },
   "594827": {
-   "B_texts_using_a_key_word": {
-    "0": [
-     "nam"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
@@ -1658,7 +1518,7 @@
     true,
     false
    ],
-   "ok": false
+   "ok": true
   },
   "598347": {
    "B_texts_using_a_key_word": {},
@@ -1705,13 +1565,21 @@
    "ok": true
   },
   "621792": {
-   "B_texts_using_a_key_word": {},
+   "B_texts_using_a_key_word": {
+    "0": [
+     "1940",
+     "1990"
+    ],
+    "4": [
+     "1940"
+    ]
+   },
    "C_texts_reusing_a_key_word": [
     false,
+    true,
+    true,
     false,
-    true,
-    true,
-    false
+    true
    ],
    "ok": false
   },
@@ -1749,19 +1617,15 @@
    "ok": true
   },
   "643521": {
-   "B_texts_using_a_key_word": {
-    "4": [
-     "ann"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
     true,
     false,
-    true
+    false
    ],
-   "ok": false
+   "ok": true
   },
   "649831": {
    "B_texts_using_a_key_word": {},
@@ -1786,19 +1650,15 @@
    "ok": true
   },
   "674436": {
-   "B_texts_using_a_key_word": {
-    "4": [
-     "meant"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
-    false,
     true,
-    true
+    false,
+    false
    ],
-   "ok": false
+   "ok": true
   },
   "675471": {
    "B_texts_using_a_key_word": {},
@@ -1900,47 +1760,18 @@
    "ok": true
   },
   "715962": {
-   "B_texts_using_a_key_word": {
-    "4": [
-     "map"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
-    false,
+    true,
     true,
     true,
     false,
     true
    ],
-   "ok": false
+   "ok": true
   },
   "735851": {
-   "B_texts_using_a_key_word": {
-    "0": [
-     "board"
-    ],
-    "1": [
-     "depart"
-    ],
-    "4": [
-     "public"
-    ]
-   },
-   "C_texts_reusing_a_key_word": [
-    true,
-    true,
-    true,
-    true,
-    false
-   ],
-   "ok": false
-  },
-  "738215": {
-   "B_texts_using_a_key_word": {
-    "3": [
-     "boy"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
@@ -1948,7 +1779,18 @@
     true,
     true
    ],
-   "ok": false
+   "ok": true
+  },
+  "738215": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
   },
   "760600": {
    "B_texts_using_a_key_word": {},
@@ -2006,17 +1848,10 @@
    "ok": true
   },
   "805859": {
-   "B_texts_using_a_key_word": {
-    "1": [
-     "cat"
-    ],
-    "3": [
-     "cat"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     false,
-    false,
+    true,
     false,
     true,
     false
@@ -2046,25 +1881,15 @@
    "ok": true
   },
   "813270": {
-   "B_texts_using_a_key_word": {
-    "1": [
-     "tim"
-    ],
-    "3": [
-     "play"
-    ],
-    "4": [
-     "part"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
     true,
-    true,
+    false,
     true
    ],
-   "ok": false
+   "ok": true
   },
   "813674": {
    "B_texts_using_a_key_word": {},
@@ -2144,19 +1969,15 @@
    "ok": true
   },
   "827221": {
-   "B_texts_using_a_key_word": {
-    "0": [
-     "bat"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
+    false,
     true,
     true,
     true,
-    true,
-    true
+    false
    ],
-   "ok": false
+   "ok": true
   },
   "827593": {
    "B_texts_using_a_key_word": {},
@@ -2192,11 +2013,7 @@
    "ok": true
   },
   "832275": {
-   "B_texts_using_a_key_word": {
-    "2": [
-     "north"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
@@ -2204,7 +2021,7 @@
     true,
     true
    ],
-   "ok": false
+   "ok": true
   },
   "832905": {
    "B_texts_using_a_key_word": {},
@@ -2218,33 +2035,26 @@
    "ok": true
   },
   "833097": {
-   "B_texts_using_a_key_word": {
-    "0": [
-     "not"
-    ],
-    "2": [
-     "tow"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
-    false,
     true,
     true,
-    false,
+    true,
+    true,
     true
    ],
-   "ok": false
+   "ok": true
   },
   "836639": {
    "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     false,
     true,
-    false,
-    false,
-    true
+    true,
+    true,
+    false
    ],
-   "ok": false
+   "ok": true
   },
   "836821": {
    "B_texts_using_a_key_word": {},
@@ -2313,11 +2123,7 @@
    "ok": true
   },
   "841482": {
-   "B_texts_using_a_key_word": {
-    "3": [
-     "john"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
@@ -2325,7 +2131,7 @@
     true,
     true
    ],
-   "ok": false
+   "ok": true
   },
   "844471": {
    "B_texts_using_a_key_word": {},
@@ -2339,19 +2145,15 @@
    "ok": true
   },
   "844528": {
-   "B_texts_using_a_key_word": {
-    "0": [
-     "assassin"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
-    true,
-    true,
-    true,
     false,
-    true
+    true,
+    true,
+    true,
+    false
    ],
-   "ok": false
+   "ok": true
   },
   "844666": {
    "B_texts_using_a_key_word": {},
@@ -2398,34 +2200,26 @@
    "ok": true
   },
   "853542": {
-   "B_texts_using_a_key_word": {
-    "0": [
-     "fac"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "ok": true
+  },
+  "854367": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
     false,
     true,
     true,
-    true,
     true
    ],
-   "ok": false
-  },
-  "854367": {
-   "B_texts_using_a_key_word": {
-    "0": [
-     "eth"
-    ]
-   },
-   "C_texts_reusing_a_key_word": [
-    true,
-    true,
-    true,
-    true,
-    true
-   ],
-   "ok": false
+   "ok": true
   },
   "854726": {
    "B_texts_using_a_key_word": {},
@@ -2457,6 +2251,17 @@
     true,
     true,
     true
+   ],
+   "ok": true
+  },
+  "880592": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    false,
+    false
    ],
    "ok": true
   },
