@@ -8,9 +8,12 @@ fig_genome.png
   names, and the common story patterns. A set is sorted by the number of Batman works that carry the unit (as
   written, then without names) and cut to its first 22 rows. Beside each title are those two counts. A title is dark
   when the unit detects an idea and grey when it detects a name or a word, as judged blind from its description.
-  The strip over the columns is shaded by decade: the works' "era" values are not the keys of style.ERA.
+  The strip over the columns is shaded by decade: the works' "era" values are not the keys of style.ERA. A year is
+  printed over every fourth Batman work, and each relative is named under its column.
 
-One model is drawn: the first in MODELS that has a units table. The subtitle names it.
+One model is drawn: the first in MODELS that has a units table. The subtitle names it. With two sets the figure
+is under 8 inches tall; with three full sets of 22 rows it is about 9 inches, at the smallest row pitch the labels
+allow (lower MAX_ROWS if that is too tall).
 
 Reads results/v2/<model>/units_table.json (another folder: RESULTS_DIR=...). Every number drawn is read from that
 file at run time. Writes fig_genome.png to paper/v2/ (or $PAPER_DIR).
@@ -35,8 +38,10 @@ from matplotlib.colors import LinearSegmentedColormap, to_hex  # noqa: E402
 from matplotlib.patches import Rectangle  # noqa: E402
 
 TITLE = "Which works carry each explained unit, with and without names"
-SUBTITLE = ("Units of {model} chosen by rule and explained (rows) in {nb} Batman works and {nr} relatives (columns, oldest first).\n"
-            "Each cell shows one work twice: the text as written (upper half) and with every name removed (lower half).")
+SUBTITLE = ("Units of {model} chosen by rule and explained (rows) in {nb} Batman works and {nr} relatives "
+            "(columns, oldest first).\n"
+            "Each cell shows one work twice: the text as written (upper half) and with every name removed "
+            "(lower half).")
 SETS = [("core", "Core canon"), ("name_free_core", "Still present without names"),
         ("common_patterns", "Common story patterns")]  # the sets drawn, in this order, and their headers
 KEY_UPPER = "Upper half: present in the text as written"
