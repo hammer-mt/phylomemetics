@@ -346,5 +346,121 @@
    "distinctive_on_the_main_scale_but_over_the_cap_on_the_reference_only_scale": 87,
    "canon_units_over_the_cap_on_the_reference_only_scale": 4
   }
+ },
+ "llama3.3-70b": {
+  "repository": "unsloth/Llama-3.3-70B-Instruct",
+  "revision": "99cd0d2c829e92a67c844f9144c2509632e5c87f",
+  "layers": 80,
+  "width": 28672,
+  "neurons": 2293760,
+  "units": 4587520,
+  "precision": "bfloat16",
+  "reference": {
+   "documents": 46000,
+   "tokens": 40792435,
+   "max_tokens_per_document": 1024,
+   "tokens_per_batch": 16384,
+   "examples_kept_per_unit": 24,
+   "seconds": 6274
+  },
+  "supplement": {
+   "documents": 5434,
+   "tokens": 6694284,
+   "max_tokens_per_document": 2048,
+   "seconds": 1156
+  },
+  "study": {
+   "works": 114,
+   "seconds": 179,
+   "software": {
+    "repo": "unsloth/Llama-3.3-70B-Instruct",
+    "commit": null,
+    "dtype": "torch.bfloat16",
+    "torch": "2.8.0+cu128",
+    "transformers": "5.22.2",
+    "gpu": [
+     "NVIDIA B200"
+    ]
+   }
+  },
+  "background": {
+   "plots": 2999,
+   "tokens": 2394187,
+   "one_plot_at_a_time": true,
+   "seconds": 1612
+  },
+  "franchises": {
+   "films": 123,
+   "tokens": 96966
+  },
+  "scale": {
+   "n_units": 4587520,
+   "supplement_included": true,
+   "documents_left_out_of_the_reference_only_scale": [
+    843,
+    7175,
+    6895,
+    3597,
+    5284
+   ],
+   "units_whose_strongest_reference_example_is_in_a_left_out_document": 234,
+   "units_never_active_in_reference": 334,
+   "units_with_zero_scale": 334,
+   "units_whose_scale_comes_from_the_reference_corpus": 3429109,
+   "units_whose_scale_comes_from_the_supplement": 1153458,
+   "units_whose_scale_comes_from_the_study_corpus": 4953,
+   "units_study_max_over_twice_reference": 5,
+   "positive_units_whose_strongest_raw_activation_is_an_echo": 44495,
+   "negative_units_whose_strongest_raw_activation_is_an_echo": 44368,
+   "units_whose_fifth_reference_example_is_under_half_the_first": 35547,
+   "poles_under_a_tenth_of_the_neurons_other_pole": 67447,
+   "poles_under_a_quarter_of_the_neurons_other_pole": 306923,
+   "largest_scale": 330.0,
+   "scale_quantiles": {
+    "0.01": 0.0120849609375,
+    "0.1": 0.09716796875,
+    "0.5": 0.55078125,
+    "0.9": 1.90625,
+    "0.99": 7.34375
+   }
+  },
+  "share_of_unit_by_work_cells_present": {
+   "orig_main_top1": 0.06888844375448612,
+   "orig_main_top3": 0.023807642586750204,
+   "orig_cut_main_top1": 0.04798585956380538,
+   "anon_main_top1": 0.054841300311779556,
+   "anon_main_top3": 0.016278565109252675,
+   "anon_cut_main_top1": 0.03605495926092851,
+   "anon_codes_main_top1": 0.05988300384113895,
+   "anon_after_main_top1": 0.050589895820002485,
+   "anon_icon_main_top1": 0.05386070631701359,
+   "anon_icon_main_top3": 0.015833059761148297
+  },
+  "scale_and_base_rates": {
+   "units_scaled_by": {
+    "reference corpus": {
+     "all": 3429109,
+     "present_in_some_work": 2618397,
+     "distinctive": 807887,
+     "canon_all_32": 161
+    },
+    "supplement": {
+     "all": 1153458,
+     "present_in_some_work": 705897,
+     "distinctive": 279022,
+     "canon_all_32": 30
+    },
+    "study texts": {
+     "all": 4953,
+     "present_in_some_work": 4953,
+     "distinctive": 1001,
+     "canon_all_32": 24
+    }
+   },
+   "distinctive_units": 1087910,
+   "canon_units_all_32": 215,
+   "distinctive_on_the_main_scale_but_over_the_cap_on_the_reference_only_scale": 260,
+   "canon_units_over_the_cap_on_the_reference_only_scale": 9
+  }
  }
 }

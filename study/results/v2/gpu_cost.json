@@ -1,0 +1,39 @@
+{
+ "provider": "Runpod",
+ "budget_dollars": 200,
+ "machines": [
+  {
+   "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+   "count": 1,
+   "dollars_per_hour": 2.49,
+   "started_utc": "2026-11-07T00:48+00:00",
+   "ended_utc": "2026-11-07T06:25+00:00",
+   "hours": 5.62,
+   "hours_times_rate": 13.99
+  },
+  {
+   "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+   "count": 1,
+   "dollars_per_hour": 2.49,
+   "started_utc": "2026-11-07T01:18+00:00",
+   "ended_utc": "2026-11-07T07:16+00:00",
+   "hours": 5.97,
+   "hours_times_rate": 14.86
+  },
+  {
+   "gpu": "NVIDIA B200",
+   "count": 1,
+   "dollars_per_hour": 7.99,
+   "started_utc": "2026-11-07T02:15+00:00",
+   "ended_utc": "2026-11-07T07:16+00:00",
+   "hours": 5.02,
+   "hours_times_rate": 40.11
+  }
+ ],
+ "hours_times_rate_total": 68.96,
+ "billed_total_dollars": 59.34,
+ "billed_gpu_dollars": 58.77,
+ "billed_disk_dollars": 0.56,
+ "billing_read_utc": "2026-11-07T07:17+00:00",
+ "all_machines_ended": true
+}

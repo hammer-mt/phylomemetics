@@ -364,6 +364,112 @@
     "mean_rank_min": 3.5555555555555554,
     "top1_mean": 1.85
    }
+  },
+  "llama3.3-70b": {
+   "n_families": 11000,
+   "families_per_work_median": 2672.0,
+   "newick": "(w32:0,(w33:0.47178084,(w35:0.47056175,(w34:0.47058873,(((w44:0.4648967,w39:0.46044711)Inner5:0.0064633007,(w38:0.47895626,(w37:0.48274593,w36:0.46835817)Inner3:0.0091966882)Inner4:0.0081819303)Inner10:0.0081453217,((w40:0.43361995,(w42:0.42854855,(w43:0.42854436,w41:0.41725003)Inner8:0.014875565)Inner12:0.012132042)Inner13:0.0056421597,((w0:0.43934949,w1:0.41059575)Inner17:0.013392107,((w27:0.38878346,w26:0.40087246)Inner31:0.0053656775,(((w7:0.39082515,w4:0.39849453)Inner21:0.026001749,((w15:0.3802708,(w2:0.36637909,(w21:0.34994125,w5:0.36585714)Inner18:0.020213617)Inner39:0.00086174886)Inner40:0.0049889468,((w29:0.39538007,w19:0.36181743)Inner38:0.0051137114,(w28:0.35430583,((w16:0.3338851,w11:0.33573186)Inner19:0.010517943,(w25:0.26707531,(w22:0.26416451,w20:0.26781843)Inner1:0.014163432)Inner2:0.07772302)Inner22:0.014372154)Inner43:0.002470617)Inner42:0.0028819384)Inner41:0.011261981)Inner37:0.0093099328,((w14:0.38359252,(w12:0.37157792,(w9:0.38361093,w8:0.37229806)Inner20:0.010575726)Inner26:0.010984954)Inner30:0.014985898,(w6:0.41396842,(w10:0.40122213,((w24:0.36269314,(w31:0.37641023,w30:0.44879941)Inner24:0.01114651)Inner27:0.0044230743,((w13:0.35956996,w3:0.37233826)Inner25:0.0083750635,(w17:0.3509897,(w23:0.35589703,w18:0.3620466)Inner14:0.0038476533)Inner15:0.025595386)Inner28:0.0037217508)Inner29:0.0082598066)Inner32:0.0020962336)Inner33:0.0083852409)Inner35:0.0018976982)Inner36:0.0069637141)Inner34:0.019747114)Inner23:0.01515761)Inner16:0.023796451)Inner11:0.0086114485)Inner9:0.0037862846)Inner7:0.0023777995)Inner6:0.49164917):0;",
+   "era_between_over_within": 1.0512374101830235,
+   "era_p": 0.0001999600079984003,
+   "source_by_distance": {
+    "rows": [
+     {
+      "target": "Batman Begins",
+      "sources": [
+       "Year One"
+      ],
+      "rank": 1,
+      "closest": "Year One",
+      "n_comics": 12
+     },
+     {
+      "target": "The Dark Knight",
+      "sources": [
+       "The Long Halloween",
+       "The Killing Joke"
+      ],
+      "rank": 1,
+      "closest": "The Long Halloween",
+      "n_comics": 12
+     },
+     {
+      "target": "Dark Knight Rises",
+      "sources": [
+       "Knightfall",
+       "Dark Knight Returns"
+      ],
+      "rank": 2,
+      "closest": "Year One",
+      "n_comics": 12
+     },
+     {
+      "target": "Batman v Superman",
+      "sources": [
+       "Dark Knight Returns"
+      ],
+      "rank": 1,
+      "closest": "Dark Knight Returns",
+      "n_comics": 12
+     },
+     {
+      "target": "Under the Red Hood",
+      "sources": [
+       "A Death in the Family"
+      ],
+      "rank": 2,
+      "closest": "Hush",
+      "n_comics": 12
+     },
+     {
+      "target": "Arkham Asylum (game)",
+      "sources": [
+       "Arkham Asylum (comic)"
+      ],
+      "rank": 4,
+      "closest": "Knightfall",
+      "n_comics": 12
+     },
+     {
+      "target": "Batman '89",
+      "sources": [
+       "The Killing Joke"
+      ],
+      "rank": 5,
+      "closest": "Dark Knight Returns",
+      "n_comics": 12
+     },
+     {
+      "target": "Joker (2019)",
+      "sources": [
+       "The Killing Joke"
+      ],
+      "rank": 2,
+      "closest": "Earth One",
+      "n_comics": 12
+     },
+     {
+      "target": "The Batman",
+      "sources": [
+       "Year One",
+       "The Long Halloween"
+      ],
+      "rank": 2,
+      "closest": "Earth One",
+      "n_comics": 12
+     }
+    ],
+    "mean_rank": 2.2222222222222223,
+    "chance_mean_rank": 5.762844444444444,
+    "p": 0.0003999200159968006,
+    "top1": 3,
+    "top3": 7
+   },
+   "source_by_distance_random_units": {
+    "n_draws": 20,
+    "mean_rank_mean": 3.2111111111111112,
+    "mean_rank_min": 2.3333333333333335,
+    "top1_mean": 3.05
+   }
   }
  },
  "tfidf_source_by_distance": {
@@ -454,8 +560,8 @@
    }
   ],
   "mean_rank": 2.4444444444444446,
-  "chance_mean_rank": 5.7694,
-  "p": 0.0003999200159968006,
+  "chance_mean_rank": 5.800577777777777,
+  "p": 0.0009998000399920016,
   "top1": 2,
   "top3": 8
  },
@@ -476,12 +582,36 @@
    "partial_r_given_tfidf": 0.964766044234804,
    "partial_p": 0.0004997501249375312
   },
+  "qwen3-32b vs llama3.3-70b": {
+   "r": 0.9766405621442537,
+   "p": 0.0001999600079984003,
+   "random_units_r_mean": 0.8380663847462367,
+   "random_units_r_max": 0.8595289580698862,
+   "partial_r_given_tfidf": 0.936776145307444,
+   "partial_p": 0.0004997501249375312
+  },
   "qwen3-8b vs llama3.1-8b": {
    "r": 0.9755374441749516,
    "p": 0.0001999600079984003,
    "random_units_r_mean": 0.641491965605659,
    "random_units_r_max": 0.7255216969178383,
    "partial_r_given_tfidf": 0.9351436468315532,
+   "partial_p": 0.0004997501249375312
+  },
+  "qwen3-8b vs llama3.3-70b": {
+   "r": 0.9640174561616869,
+   "p": 0.0001999600079984003,
+   "random_units_r_mean": 0.6551906730798962,
+   "random_units_r_max": 0.7388609648067506,
+   "partial_r_given_tfidf": 0.9049731578760664,
+   "partial_p": 0.0004997501249375312
+  },
+  "llama3.1-8b vs llama3.3-70b": {
+   "r": 0.9793904021715498,
+   "p": 0.0001999600079984003,
+   "random_units_r_mean": 0.8135823494046466,
+   "random_units_r_max": 0.8633310734043884,
+   "partial_r_given_tfidf": 0.9441691472091859,
    "partial_p": 0.0004997501249375312
   },
   "qwen3-32b vs tfidf": {
@@ -494,6 +624,10 @@
   },
   "llama3.1-8b vs tfidf": {
    "r": 0.7967348935558343,
+   "p": 0.0001999600079984003
+  },
+  "llama3.3-70b vs tfidf": {
+   "r": 0.7923545544349357,
    "p": 0.0001999600079984003
   }
  }
