@@ -1,0 +1,2486 @@
+{
+ "model": "qwen3-8b",
+ "n": 201,
+ "units": {
+  "2047": {
+   "B_texts_using_a_key_word": {
+    "0": [
+     "administrativ"
+    ],
+    "3": [
+     "red"
+    ]
+   },
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": false
+  },
+  "3225": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    false,
+    false
+   ],
+   "ok": true
+  },
+  "6972": {
+   "B_texts_using_a_key_word": {
+    "1": [
+     "noth"
+    ]
+   },
+   "C_texts_reusing_a_key_word": [
+    true,
+    false,
+    true,
+    true,
+    true
+   ],
+   "ok": false
+  },
+  "10540": {
+   "B_texts_using_a_key_word": {
+    "1": [
+     "city"
+    ]
+   },
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "ok": false
+  },
+  "38348": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    false,
+    false,
+    true,
+    false,
+    false
+   ],
+   "ok": false
+  },
+  "45473": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "ok": true
+  },
+  "53703": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    false,
+    false
+   ],
+   "ok": true
+  },
+  "64864": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    false,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "65790": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    false,
+    true
+   ],
+   "ok": true
+  },
+  "70156": {
+   "B_texts_using_a_key_word": {
+    "0": [
+     "oil"
+    ],
+    "4": [
+     "wat"
+    ]
+   },
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": false
+  },
+  "71327": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "ok": true
+  },
+  "71825": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    false,
+    true
+   ],
+   "ok": true
+  },
+  "73576": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    false,
+    false
+   ],
+   "ok": true
+  },
+  "74990": {
+   "B_texts_using_a_key_word": {
+    "0": [
+     "you"
+    ]
+   },
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": false
+  },
+  "76609": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "86683": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    false,
+    true
+   ],
+   "ok": true
+  },
+  "109416": {
+   "B_texts_using_a_key_word": {
+    "4": [
+     "self"
+    ]
+   },
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    false,
+    true
+   ],
+   "ok": false
+  },
+  "109519": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "ok": true
+  },
+  "112000": {
+   "B_texts_using_a_key_word": {
+    "2": [
+     "star"
+    ]
+   },
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "ok": false
+  },
+  "112625": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    false,
+    true
+   ],
+   "ok": true
+  },
+  "114423": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    false,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "116209": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    false,
+    false
+   ],
+   "ok": true
+  },
+  "122592": {
+   "B_texts_using_a_key_word": {
+    "0": [
+     "great"
+    ]
+   },
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "ok": false
+  },
+  "124334": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "ok": true
+  },
+  "127178": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "127524": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    false,
+    true,
+    true,
+    false
+   ],
+   "ok": true
+  },
+  "130069": {
+   "B_texts_using_a_key_word": {
+    "0": [
+     "green"
+    ],
+    "1": [
+     "green"
+    ]
+   },
+   "C_texts_reusing_a_key_word": [
+    false,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": false
+  },
+  "131610": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "132337": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "ok": true
+  },
+  "132685": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "136830": {
+   "B_texts_using_a_key_word": {
+    "3": [
+     "dynamic"
+    ],
+    "4": [
+     "anti"
+    ]
+   },
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": false
+  },
+  "144931": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    false,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "145519": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    false,
+    true,
+    true,
+    false
+   ],
+   "ok": true
+  },
+  "145618": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "147396": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    false,
+    true
+   ],
+   "ok": true
+  },
+  "156371": {
+   "B_texts_using_a_key_word": {
+    "0": [
+     "play"
+    ],
+    "1": [
+     "plac",
+     "tak"
+    ],
+    "3": [
+     "play"
+    ]
+   },
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    false,
+    true
+   ],
+   "ok": false
+  },
+  "159950": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "163168": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    false,
+    true
+   ],
+   "ok": true
+  },
+  "171867": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    false,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "176751": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "177935": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    false,
+    false
+   ],
+   "ok": true
+  },
+  "181098": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "ok": true
+  },
+  "181725": {
+   "B_texts_using_a_key_word": {
+    "0": [
+     "nam"
+    ],
+    "2": [
+     "word"
+    ],
+    "4": [
+     "nam"
+    ]
+   },
+   "C_texts_reusing_a_key_word": [
+    false,
+    false,
+    false,
+    false,
+    true
+   ],
+   "ok": false
+  },
+  "201972": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "210540": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "220744": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "ok": true
+  },
+  "230858": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "249243": {
+   "B_texts_using_a_key_word": {
+    "0": [
+     "van"
+    ]
+   },
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    false,
+    true,
+    true
+   ],
+   "ok": false
+  },
+  "256801": {
+   "B_texts_using_a_key_word": {
+    "3": [
+     "report"
+    ]
+   },
+   "C_texts_reusing_a_key_word": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   "ok": false
+  },
+  "257645": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    false,
+    true,
+    true,
+    false
+   ],
+   "ok": true
+  },
+  "262547": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    false,
+    false,
+    true,
+    false,
+    true
+   ],
+   "ok": false
+  },
+  "276488": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    false,
+    true
+   ],
+   "ok": true
+  },
+  "306406": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "311592": {
+   "B_texts_using_a_key_word": {
+    "2": [
+     "jan"
+    ]
+   },
+   "C_texts_reusing_a_key_word": [
+    false,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": false
+  },
+  "315315": {
+   "B_texts_using_a_key_word": {
+    "1": [
+     "hou"
+    ],
+    "2": [
+     "mountain"
+    ]
+   },
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": false
+  },
+  "316740": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    false,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "327575": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    false,
+    false
+   ],
+   "ok": true
+  },
+  "335356": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "341047": {
+   "B_texts_using_a_key_word": {
+    "0": [
+     "you"
+    ],
+    "1": [
+     "we"
+    ],
+    "4": [
+     "anyon",
+     "open"
+    ]
+   },
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": false
+  },
+  "343225": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    false,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "356911": {
+   "B_texts_using_a_key_word": {
+    "4": [
+     "fac"
+    ]
+   },
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": false
+  },
+  "361617": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    false,
+    false,
+    true,
+    true,
+    false
+   ],
+   "ok": false
+  },
+  "363491": {
+   "B_texts_using_a_key_word": {
+    "2": [
+     "darth"
+    ]
+   },
+   "C_texts_reusing_a_key_word": [
+    false,
+    false,
+    true,
+    true,
+    false
+   ],
+   "ok": false
+  },
+  "366061": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "ok": true
+  },
+  "372199": {
+   "B_texts_using_a_key_word": {
+    "0": [
+     "ii"
+    ]
+   },
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": false
+  },
+  "372323": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    false,
+    true,
+    true,
+    false,
+    true
+   ],
+   "ok": true
+  },
+  "373146": {
+   "B_texts_using_a_key_word": {
+    "1": [
+     "star"
+    ]
+   },
+   "C_texts_reusing_a_key_word": [
+    false,
+    true,
+    true,
+    true,
+    false
+   ],
+   "ok": false
+  },
+  "374913": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "ok": true
+  },
+  "376466": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "376737": {
+   "B_texts_using_a_key_word": {
+    "2": [
+     "director"
+    ],
+    "3": [
+     "general"
+    ]
+   },
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": false
+  },
+  "379403": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "382272": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    false,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "383205": {
+   "B_texts_using_a_key_word": {
+    "0": [
+     "among"
+    ],
+    "1": [
+     "among"
+    ],
+    "3": [
+     "among"
+    ]
+   },
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "ok": false
+  },
+  "384684": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    false,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "385661": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    false,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "385893": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "ok": true
+  },
+  "388994": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    false,
+    true,
+    true,
+    true,
+    false
+   ],
+   "ok": true
+  },
+  "391802": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "ok": true
+  },
+  "392617": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "393632": {
+   "B_texts_using_a_key_word": {
+    "4": [
+     "city"
+    ]
+   },
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": false
+  },
+  "394314": {
+   "B_texts_using_a_key_word": {
+    "1": [
+     "for"
+    ]
+   },
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": false
+  },
+  "395560": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "ok": true
+  },
+  "397742": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    false,
+    false,
+    false,
+    true
+   ],
+   "ok": false
+  },
+  "398548": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "398907": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    false,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "400670": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    false,
+    false,
+    false
+   ],
+   "ok": false
+  },
+  "402677": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    false,
+    false
+   ],
+   "ok": true
+  },
+  "403759": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    false,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "405930": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    false,
+    true,
+    true,
+    false
+   ],
+   "ok": true
+  },
+  "406598": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    false,
+    true
+   ],
+   "ok": true
+  },
+  "413586": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    false,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "413688": {
+   "B_texts_using_a_key_word": {
+    "2": [
+     "nam"
+    ]
+   },
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": false
+  },
+  "414287": {
+   "B_texts_using_a_key_word": {
+    "3": [
+     "anti"
+    ]
+   },
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": false
+  },
+  "416525": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "ok": true
+  },
+  "422114": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    false,
+    true
+   ],
+   "ok": true
+  },
+  "428032": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "ok": true
+  },
+  "428929": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "440010": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    false,
+    true
+   ],
+   "ok": true
+  },
+  "446669": {
+   "B_texts_using_a_key_word": {
+    "0": [
+     "city"
+    ]
+   },
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    false,
+    false,
+    false
+   ],
+   "ok": false
+  },
+  "451471": {
+   "B_texts_using_a_key_word": {
+    "4": [
+     "201"
+    ]
+   },
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": false
+  },
+  "454387": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    false,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "460110": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "484163": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    false,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "485646": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   "ok": false
+  },
+  "492572": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    false,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "494694": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    false,
+    true,
+    false,
+    false
+   ],
+   "ok": false
+  },
+  "496912": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "504290": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    false,
+    true
+   ],
+   "ok": true
+  },
+  "506907": {
+   "B_texts_using_a_key_word": {
+    "1": [
+     "big"
+    ]
+   },
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": false
+  },
+  "507250": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    false,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "511328": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    false,
+    true,
+    true,
+    true,
+    false
+   ],
+   "ok": true
+  },
+  "515471": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    false,
+    false,
+    true
+   ],
+   "ok": true
+  },
+  "517223": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    false,
+    false,
+    true,
+    true,
+    false
+   ],
+   "ok": false
+  },
+  "523659": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    false,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "525206": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "528763": {
+   "B_texts_using_a_key_word": {
+    "0": [
+     "open"
+    ]
+   },
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": false
+  },
+  "529076": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "ok": true
+  },
+  "529495": {
+   "B_texts_using_a_key_word": {
+    "0": [
+     "ord"
+    ]
+   },
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": false
+  },
+  "534924": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "539912": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "ok": true
+  },
+  "543504": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    false,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "544109": {
+   "B_texts_using_a_key_word": {
+    "2": [
+     "her"
+    ],
+    "4": [
+     "bat"
+    ]
+   },
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "ok": false
+  },
+  "550964": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "553323": {
+   "B_texts_using_a_key_word": {
+    "2": [
+     "call"
+    ]
+   },
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": false
+  },
+  "553609": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    false,
+    true
+   ],
+   "ok": true
+  },
+  "558309": {
+   "B_texts_using_a_key_word": {
+    "4": [
+     "infinit"
+    ]
+   },
+   "C_texts_reusing_a_key_word": [
+    false,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": false
+  },
+  "559572": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "ok": true
+  },
+  "565231": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "ok": true
+  },
+  "568990": {
+   "B_texts_using_a_key_word": {
+    "2": [
+     "man"
+    ]
+   },
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    false,
+    true
+   ],
+   "ok": false
+  },
+  "573576": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "581933": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "ok": true
+  },
+  "588934": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "594827": {
+   "B_texts_using_a_key_word": {
+    "0": [
+     "nam"
+    ]
+   },
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "ok": false
+  },
+  "598347": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "ok": true
+  },
+  "604262": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "ok": true
+  },
+  "609893": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    false,
+    true
+   ],
+   "ok": true
+  },
+  "617527": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    false,
+    true,
+    true,
+    true,
+    false
+   ],
+   "ok": true
+  },
+  "621792": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    false,
+    false,
+    true,
+    true,
+    false
+   ],
+   "ok": false
+  },
+  "622905": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    false,
+    false
+   ],
+   "ok": true
+  },
+  "623466": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    false,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "640973": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "643521": {
+   "B_texts_using_a_key_word": {
+    "4": [
+     "ann"
+    ]
+   },
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    false,
+    true
+   ],
+   "ok": false
+  },
+  "649831": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    false,
+    true,
+    true,
+    false,
+    true
+   ],
+   "ok": true
+  },
+  "658370": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "674436": {
+   "B_texts_using_a_key_word": {
+    "4": [
+     "meant"
+    ]
+   },
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    false,
+    true,
+    true
+   ],
+   "ok": false
+  },
+  "675471": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    false,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "679340": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "691885": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "694663": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    false,
+    true
+   ],
+   "ok": true
+  },
+  "698739": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    false,
+    true
+   ],
+   "ok": true
+  },
+  "699945": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    false,
+    true,
+    true,
+    true,
+    false
+   ],
+   "ok": true
+  },
+  "704899": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "707580": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "714976": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    false,
+    false
+   ],
+   "ok": true
+  },
+  "715962": {
+   "B_texts_using_a_key_word": {
+    "4": [
+     "map"
+    ]
+   },
+   "C_texts_reusing_a_key_word": [
+    false,
+    true,
+    true,
+    false,
+    true
+   ],
+   "ok": false
+  },
+  "735851": {
+   "B_texts_using_a_key_word": {
+    "0": [
+     "board"
+    ],
+    "1": [
+     "depart"
+    ],
+    "4": [
+     "public"
+    ]
+   },
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "ok": false
+  },
+  "738215": {
+   "B_texts_using_a_key_word": {
+    "3": [
+     "boy"
+    ]
+   },
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": false
+  },
+  "760600": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    false,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "769190": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    false,
+    true,
+    true,
+    true,
+    false
+   ],
+   "ok": true
+  },
+  "793207": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "795211": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    false,
+    true
+   ],
+   "ok": true
+  },
+  "795785": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "805859": {
+   "B_texts_using_a_key_word": {
+    "1": [
+     "cat"
+    ],
+    "3": [
+     "cat"
+    ]
+   },
+   "C_texts_reusing_a_key_word": [
+    false,
+    false,
+    false,
+    true,
+    false
+   ],
+   "ok": false
+  },
+  "809845": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    false,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "811736": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    false,
+    true,
+    false
+   ],
+   "ok": true
+  },
+  "813270": {
+   "B_texts_using_a_key_word": {
+    "1": [
+     "tim"
+    ],
+    "3": [
+     "play"
+    ],
+    "4": [
+     "part"
+    ]
+   },
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": false
+  },
+  "813674": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    false,
+    true,
+    true,
+    true,
+    false
+   ],
+   "ok": true
+  },
+  "819099": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "819222": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "ok": true
+  },
+  "824648": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "825743": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "826562": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    false,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "826801": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    false,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "827221": {
+   "B_texts_using_a_key_word": {
+    "0": [
+     "bat"
+    ]
+   },
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": false
+  },
+  "827593": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    false,
+    true
+   ],
+   "ok": true
+  },
+  "829494": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    false,
+    true,
+    false
+   ],
+   "ok": true
+  },
+  "829722": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "ok": true
+  },
+  "832275": {
+   "B_texts_using_a_key_word": {
+    "2": [
+     "north"
+    ]
+   },
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": false
+  },
+  "832905": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    false,
+    true,
+    true,
+    false,
+    true
+   ],
+   "ok": true
+  },
+  "833097": {
+   "B_texts_using_a_key_word": {
+    "0": [
+     "not"
+    ],
+    "2": [
+     "tow"
+    ]
+   },
+   "C_texts_reusing_a_key_word": [
+    false,
+    true,
+    true,
+    false,
+    true
+   ],
+   "ok": false
+  },
+  "836639": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    false,
+    true,
+    false,
+    false,
+    true
+   ],
+   "ok": false
+  },
+  "836821": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    false,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "837039": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "ok": true
+  },
+  "837126": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    false,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "837457": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "838642": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "ok": true
+  },
+  "840061": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    false,
+    true,
+    true,
+    true,
+    false
+   ],
+   "ok": true
+  },
+  "841482": {
+   "B_texts_using_a_key_word": {
+    "3": [
+     "john"
+    ]
+   },
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": false
+  },
+  "844471": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    false,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "844528": {
+   "B_texts_using_a_key_word": {
+    "0": [
+     "assassin"
+    ]
+   },
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    false,
+    true
+   ],
+   "ok": false
+  },
+  "844666": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "850816": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    false,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "852645": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    false,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "853515": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    false,
+    false,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "853542": {
+   "B_texts_using_a_key_word": {
+    "0": [
+     "fac"
+    ]
+   },
+   "C_texts_reusing_a_key_word": [
+    false,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": false
+  },
+  "854367": {
+   "B_texts_using_a_key_word": {
+    "0": [
+     "eth"
+    ]
+   },
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": false
+  },
+  "854726": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "856277": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "862924": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    false,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "881860": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    false,
+    false,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "881889": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "ok": true
+  }
+ }
+}
