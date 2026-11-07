@@ -135,11 +135,7 @@
    "ok": true
   },
   "210632": {
-   "B_texts_using_a_key_word": {
-    "3": [
-     "offic"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
@@ -147,7 +143,7 @@
     true,
     true
    ],
-   "ok": false
+   "ok": true
   },
   "215865": {
    "B_texts_using_a_key_word": {},
@@ -614,13 +610,13 @@
   "904823": {
    "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
-    false,
-    false,
+    true,
+    true,
     true,
     false,
     false
    ],
-   "ok": false
+   "ok": true
   },
   "910564": {
    "B_texts_using_a_key_word": {},
@@ -869,8 +865,8 @@
    "C_texts_reusing_a_key_word": [
     false,
     false,
-    false,
     true,
+    false,
     false
    ],
    "ok": false
@@ -902,9 +898,9 @@
    "C_texts_reusing_a_key_word": [
     false,
     true,
-    true,
     false,
-    false
+    false,
+    true
    ],
    "ok": false
   },
@@ -1184,11 +1180,15 @@
    "ok": true
   },
   "1546344": {
-   "B_texts_using_a_key_word": {},
+   "B_texts_using_a_key_word": {
+    "2": [
+     "rao"
+    ]
+   },
    "C_texts_reusing_a_key_word": [
     false,
-    true,
     false,
+    true,
     true,
     false
    ],
@@ -1690,13 +1690,17 @@
    "ok": true
   },
   "1980491": {
-   "B_texts_using_a_key_word": {},
+   "B_texts_using_a_key_word": {
+    "1": [
+     "lik"
+    ]
+   },
    "C_texts_reusing_a_key_word": [
     false,
     false,
+    true,
     false,
-    false,
-    true
+    false
    ],
    "ok": false
   },
@@ -1795,9 +1799,9 @@
     true,
     true,
     false,
-    false
+    true
    ],
-   "ok": false
+   "ok": true
   },
   "2122779": {
    "B_texts_using_a_key_word": {},
@@ -1827,8 +1831,8 @@
     false,
     false,
     false,
-    false,
-    true
+    true,
+    false
    ],
    "ok": false
   },
@@ -1916,7 +1920,7 @@
     false,
     false,
     true,
-    false
+    true
    ],
    "ok": false
   },
@@ -2607,8 +2611,8 @@
    "C_texts_reusing_a_key_word": [
     false,
     false,
-    false,
     true,
+    false,
     true
    ],
    "ok": false
