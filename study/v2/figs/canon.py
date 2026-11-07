@@ -4,7 +4,8 @@ fig_canon.png
   A  For each of three tiers (units present in at least 6, 23 and 29 of the 32 Batman works), four counts on a
      log axis: distinctive units on the original texts, distinctive units on the name-free texts, all units with
      no base-rate cap (original texts), and the mean of the same uncapped count when 32 random ordinary films
-     play the franchise. Distinctive units are those under the base-rate cap in ordinary film plots.
+     play the franchise. Distinctive units are those under the base-rate cap in ordinary film plots. The axis
+     is linear between 0 and 1, so a count of zero can be drawn.
   B  One row per film series: the number of distinctive units present in at least 90% of its films (open circle),
      joined to the mean of the same count over random subsets of Batman works of the same size (solid circle).
      Rows are sorted by the series' count.
@@ -32,6 +33,7 @@ import style  # noqa: E402
 style.setup()
 import matplotlib.pyplot as plt  # noqa: E402
 from matplotlib.lines import Line2D  # noqa: E402
+from matplotlib.patheffects import withStroke  # noqa: E402
 from matplotlib.ticker import MaxNLocator, NullLocator  # noqa: E402
 
 TITLE = "How many units recur across Batman works and across other film series"
@@ -63,6 +65,8 @@ RESULTS = Path(os.environ.get("RESULTS_DIR") or STUDY / "results" / "v2")
 present = [(tag, name) for tag, name in MODELS
            if all((RESULTS / f"{kind}_{tag}.json").exists() for kind in ("canon_counts", "franchises"))]
 print("models with both files:", ", ".join(tag for tag, _ in present) or "none")
+if not present:
+    sys.exit(f"no model has both canon_counts_<model>.json and franchises_<model>.json in {RESULTS}")
 tag, model = present[0]
 c = json.loads((RESULTS / f"canon_counts_{tag}.json").read_text())
 f = json.loads((RESULTS / f"franchises_{tag}.json").read_text())
@@ -96,8 +100,8 @@ for label, own, batman in b_rows:
 # ---- geometry, in inches; y is measured down from the top ----
 W = style.WIDTH_IN - 0.16                 # saving adds 0.08 in on each side, so the PNG is exactly the text width
 FS = 7
-xa, xa0, xa1 = 0.05, 1.02, 2.72           # panel A: labels start, axis from, axis to (the values run past it)
-xb, xb0, xb1 = 3.42, 4.76, 6.28           # panel B: the same
+xa, xa0, xa1, xa2 = 0.05, 1.02, 2.72, 3.22  # panel A: labels from, axis from and to, values beside marks up to
+xb, xb0, xb1, xb2 = 3.42, 4.76, 6.28, W - 0.04  # panel B: the same
 PITCH, GAP, PAD = 0.165, 0.13, 0.10       # panel A: row pitch, extra between tiers, ends
 y0 = 1.02                                 # top of both axes
 hp = 2 * PAD + (len(tiers) * len(ROWS_A) - 1) * PITCH + (len(tiers) - 1) * GAP
@@ -117,7 +121,7 @@ for x, letter, text in ((xa, "A", PANEL_A), (xb, "B", PANEL_B)):
     ax.text(x + 0.18, y0 - 0.20, text, fontsize=7.6, fontweight="bold", va="center")
 
 
-def plot_area(x_from, x_to, x_label, **where):
+def plot_area(x_from, x_to, x_label, label_x=None, ha="center"):
     """An axis over the given span, with y in inches from its top and only the x axis shown."""
     a = fig.add_axes([x_from / W, 1 - (y0 + hp) / H, (x_to - x_from) / W, hp / H], facecolor="none")
     a.set_ylim(hp, 0)
@@ -125,15 +129,16 @@ def plot_area(x_from, x_to, x_label, **where):
     a.spines["left"].set_visible(False)
     a.tick_params(axis="x", length=0, pad=4)
     a.grid(axis="x", color=style.RULE, linewidth=0.6, zorder=0)
-    ax.text(where.pop("x", (x_from + x_to) / 2), y0 + hp + 0.31, x_label, va="center", fontsize=FS,
-            color=style.INK_2, **{"ha": "center", **where})
+    ax.text(label_x or (x_from + x_to) / 2, y0 + hp + 0.31, x_label, ha=ha, va="center", fontsize=FS,
+            color=style.INK_2)
     return a
 
 
 def value(a, x, y, text, side=1, color=style.INK):
-    """A number beside its mark, on a white ground so that no grid line runs through it."""
+    """A number beside its mark, with a white outline so that no grid line runs through it."""
     a.annotate(text, (x, y), xytext=(6.5 * side, 0), textcoords="offset points", ha="left" if side > 0 else "right",
-               va="center", fontsize=FS, color=color, zorder=2, bbox=dict(fc="white", ec="none", pad=0.6))
+               va="center", fontsize=FS, color=color, zorder=2,
+               path_effects=[withStroke(linewidth=2.5, foreground="white")])
 
 
 # ---- A: the three tiers. The axis is linear from 0 to 1 and logarithmic above, so a count of zero has a place ----
@@ -147,7 +152,7 @@ pa.xaxis.set_minor_locator(NullLocator())
 y = PAD
 for label, rows in a_rows:
     if y > PAD:  # a thin rule between tiers
-        ax.plot([xa, xa1 + 0.50], [y0 + y - (PITCH + GAP) / 2] * 2, color=style.RULE, linewidth=0.5, zorder=0)
+        ax.plot([xa, xa2], [y0 + y - (PITCH + GAP) / 2] * 2, color=style.RULE, linewidth=0.5, zorder=0)
     ax.text(xa, y0 + y + (len(rows) - 1) * PITCH / 2, label, va="center", fontsize=7.5, linespacing=1.25)
     for i, (v, kw) in enumerate(rows):
         pa.plot(v, y, ls="", clip_on=False, zorder=3, **kw)
@@ -156,7 +161,7 @@ for label, rows in a_rows:
     y += GAP
 
 # ---- B: each series against Batman subsets of its size ----
-pb = plot_area(xb0, xb1, X_LABEL_B.format(share=share), x=W - 0.04, ha="right")  # wider than its axis
+pb = plot_area(xb0, xb1, X_LABEL_B.format(share=share), label_x=xb2, ha="right")  # the label is wider than the axis
 widest = max(max(own, batman) for _, own, batman in b_rows)
 pb.set_xlim(-0.12 * widest, 1.08 * widest)   # room on the left for a number beside a mark near zero
 pb.xaxis.set_major_locator(MaxNLocator(4, integer=True))

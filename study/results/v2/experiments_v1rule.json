@@ -1451,6 +1451,148 @@
       "eligible_uniform_expectation": 0.4444444444444444
      },
      "r2_of_fit": 0.17820731900181597
+    },
+    "decision_words_by_frequency": {
+     "rows": [
+      {
+       "target": "Batman Begins",
+       "sources": [
+        "Year One"
+       ],
+       "share_of_comics_beating_source": 0.0,
+       "rank": 1,
+       "n_comics": 9,
+       "beats_median": true
+      },
+      {
+       "target": "The Dark Knight",
+       "sources": [
+        "The Long Halloween",
+        "The Killing Joke"
+       ],
+       "share_of_comics_beating_source": 0.25,
+       "rank": 3,
+       "n_comics": 10,
+       "beats_median": true
+      },
+      {
+       "target": "Dark Knight Rises",
+       "sources": [
+        "Knightfall",
+        "Dark Knight Returns"
+       ],
+       "share_of_comics_beating_source": 0.333,
+       "rank": 4,
+       "n_comics": 11,
+       "beats_median": true
+      },
+      {
+       "target": "Batman v Superman",
+       "sources": [
+        "Dark Knight Returns"
+       ],
+       "share_of_comics_beating_source": 0.1,
+       "rank": 2,
+       "n_comics": 11,
+       "beats_median": true
+      },
+      {
+       "target": "Under the Red Hood",
+       "sources": [
+        "A Death in the Family"
+       ],
+       "share_of_comics_beating_source": 1.0,
+       "rank": 10,
+       "n_comics": 10,
+       "beats_median": false
+      },
+      {
+       "target": "Arkham Asylum (game)",
+       "sources": [
+        "Arkham Asylum (comic)"
+       ],
+       "share_of_comics_beating_source": 1.0,
+       "rank": 10,
+       "n_comics": 10,
+       "beats_median": false
+      },
+      {
+       "target": "Batman '89",
+       "sources": [
+        "The Killing Joke"
+       ],
+       "share_of_comics_beating_source": 0.4,
+       "rank": 3,
+       "n_comics": 6,
+       "beats_median": true
+      },
+      {
+       "target": "Joker (2019)",
+       "sources": [
+        "The Killing Joke"
+       ],
+       "share_of_comics_beating_source": 0.273,
+       "rank": 4,
+       "n_comics": 12,
+       "beats_median": true
+      },
+      {
+       "target": "The Batman",
+       "sources": [
+        "Year One",
+        "The Long Halloween"
+       ],
+       "share_of_comics_beating_source": 0.0,
+       "rank": 1,
+       "n_comics": 12,
+       "beats_median": true
+      }
+     ],
+     "mean_share_beating_source": 0.3728888888888889,
+     "null_mean": 0.4508212682379349,
+     "p_one_sided": 0.2537313432835821,
+     "beats_median": 7,
+     "n": 9,
+     "placebo_mean": 0.4593020148575704,
+     "placebo_min": 0.3111111111111111,
+     "real_below_all_placebos": false,
+     "placebo_p5": 0.32363636363636367,
+     "n_valid_placebos": 9,
+     "placebo_excluded_no_eligible_comic": [
+      "1943 serial",
+      "Batman '66"
+     ],
+     "placebo_by_target": {
+      "Batman Returns": 0.4666666666666667,
+      "Batman Forever": 0.3111111111111111,
+      "Batman & Robin": 0.5608465608465608,
+      "Mask of the Phantasm": 0.5407407407407407,
+      "Return of the Joker": 0.41798941798941797,
+      "Arkham City": 0.4938271604938272,
+      "Arkham Knight": 0.43950617283950616,
+      "Lego Batman": 0.34242424242424246,
+      "Batman Ninja": 0.5606060606060607
+     },
+     "chance": {
+      "observed_unrounded": 0.37289562289562295,
+      "joint_relabelling_exact": {
+       "n_maps": 3991680,
+       "mean": 0.458641975308642,
+       "p": 0.22489002124418792
+      },
+      "joint_relabelling_time_consistent": {
+       "n_maps": 483840,
+       "mean": 0.4270559778227602,
+       "p": 0.3290302579365079
+      },
+      "within_era": {
+       "n_maps": 1440,
+       "mean": 0.4458403479236812,
+       "p": 0.2923611111111111
+      },
+      "eligible_uniform_expectation": 0.4444444444444444
+     },
+     "r2_of_fit": 0.25643182190624336
     }
    }
   },
@@ -1690,7 +1832,7 @@
     ]
    }
   },
-  "seconds": 544
+  "seconds": 745
  },
  "llama3.1-8b": {
   "E1": {
