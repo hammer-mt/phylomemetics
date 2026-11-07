@@ -21,12 +21,12 @@ def load(tag):
     return json.load(open(C.RESULTS / tag / "explanation_tests.json"))["units"]
 
 
-def test(big, small, rng, n=10000):
-    kinds = sorted({r["kind"] for r in big} | {r["kind"] for r in small})
+def test(big, small, rng, n=10000, key=lambda r: r["kind"]):
+    kinds = sorted({key(r) for r in big} | {key(r) for r in small})
     win = lambda rs: np.array([r["outcome"] == "win" for r in rs], float)      # noqa: E731
     wb, ws = win(big), win(small)
     obs = wb.mean() - ws.mean()
-    kb, ks = np.array([r["kind"] for r in big]), np.array([r["kind"] for r in small])
+    kb, ks = np.array([key(r) for r in big]), np.array([key(r) for r in small])
     null = np.zeros(n)
     for k in kinds:
         pool = np.r_[wb[kb == k], ws[ks == k]]
@@ -55,6 +55,8 @@ def main(big_tag="qwen3-32b", small_tag="qwen3-8b"):
     big, small = load(big_tag), load(small_tag)
     tb, ts = [r for r in big if r["testable_out_of_context"]], [r for r in small if r["testable_out_of_context"]]
     out = {"big": big_tag, "small": small_tag, "testable_units": test(tb, ts, rng), "all_units": test(big, small, rng),
+           "testable_units_within_selection_set": test(tb, ts, rng, key=lambda r: r["set"]),
+           "testable_units_within_set_and_kind": test(tb, ts, rng, key=lambda r: r["set"] + " | " + r["kind"]),
            "not_testable_out_of_context": {"big": len(big) - len(tb), "small": len(small) - len(ts)},
            "near_miss_strong_rate": boot_diff([r["strong"]["C"] / 5 for r in tb], [r["strong"]["C"] / 5 for r in ts], rng),
            "new_example_strong_rate": boot_diff([r["strong"]["A"] / 5 for r in tb], [r["strong"]["A"] / 5 for r in ts], rng),

@@ -108,14 +108,14 @@ def main(tag, jobs_path, out_path, scale_path=None):
             first = model(input_ids=prompt_ids.repeat(B, 1), use_cache=True)
             ctx["story_pass"] = False
             removed = ctx["removed"].clone()
-            lp0 = torch.log_softmax(first.logits[:, -1].float(), -1)                        # [B, vocabulary]
+            lp0 = torch.log_softmax(first.logits[:, -1].double(), -1)                       # [B, vocabulary]; double, so a log p near 0 is not lost
             each = []
             for a_ids in answers:
                 lp = lp0[:, a_ids[0, 0]].clone()
                 n = a_ids.shape[1]
                 if n > 1:
                     more = model(input_ids=a_ids[:, :-1].repeat(B, 1), past_key_values=copy.deepcopy(first.past_key_values), use_cache=True)
-                    l2 = torch.log_softmax(more.logits.float(), -1)                          # [B, n - 1, vocabulary]
+                    l2 = torch.log_softmax(more.logits.double(), -1)                         # [B, n - 1, vocabulary]
                     lp = lp + l2[:, torch.arange(n - 1), a_ids[0, 1:]].sum(1)
                 each.append(lp.cpu().numpy())
             del first

@@ -61,6 +61,15 @@ def identify_collect(tag):
     print(f"{tag}: {len(out)} verdicts, {sum(out.values())} identified; missing {missing}")
 
 
+def starts_with_name(reply):
+    """A reply that begins with a name: a capitalised word, not a sentence about the story, a code or markup."""
+    r = reply.strip()
+    first = r.split()[0] if r.split() else ""
+    if not first or first.lower() in ("the", "this", "it", "based", "in", "x1") and not r.lower().startswith(("the batman", "the shadow", "the green hornet", "the bat")):
+        return False
+    return first[0].isalpha() and first[0].isupper() and not first.lower().startswith(("story", "summary", "hero")) and not (first[0] == "X" and first[1:].isdigit())
+
+
 def says(reply, names):
     r = reply.lower()
     return any(n.lower().removeprefix("the ") in r for n in names)
@@ -120,13 +129,20 @@ def recognition(tag):
     print("  E1:", out.get("E1"), "| E2 pairs identified:", out.get("E2", {}).get("n_pairs_identified"))
 
 
-def drops(path):
-    """Per item: the drop in log-probability of the hero's names for every condition."""
+def log_odds(lp):
+    """log(p / (1 - p)) from log p. A drop in log p shrinks with the model's confidence; a drop in log-odds does not."""
+    lp = min(lp, -1e-12)
+    return lp - np.log(-np.expm1(lp))
+
+
+def drops(path, odds=True):
+    """Per item: the drop in the log-odds (or, as registered, the log-probability) of the hero's names for every condition."""
     data = json.load(open(path))
+    f = log_odds if odds else (lambda x: x)
     rows = {}
     for it in data["items"]:
         base = it["untouched"]["logp"]
-        rows[it["id"]] = {"untouched": base, "reply": it["untouched"].get("reply"), "drop": {k: base - v["logp"] for k, v in it["conditions"].items()},
+        rows[it["id"]] = {"untouched": base, "reply": it["untouched"].get("reply"), "drop": {k: f(base) - f(v["logp"]) for k, v in it["conditions"].items()},
                           "removed": {k: v.get("removed") for k, v in it["conditions"].items()},
                           "reply_canon": it["conditions"].get("canon", {}).get("reply")}
     return data, rows
@@ -163,12 +179,19 @@ def ablation(tag):
         if not path.exists():
             continue
         data, rows = drops(path)
+        _, rows_lp = drops(path, odds=False)
         bat = [b for b in BAT_LABELS if b in rows]
         rel = [X.label[w] for w in X.HERO_FILM_COUSINS if X.label[w] in rows]
         res = {"where": data["where"], "n_batman_works": len(bat), "n_hero_films": len(rel),
                "untouched_logp_batman_median": float(np.median([rows[b]["untouched"] for b in bat])),
                "matched_random_sets": set_test(rows, bat, "rand"), "magnitude_matched_random_sets": set_test(rows, bat, "magnitude"),
                "distinctive_random_sets": set_test(rows, bat, "distinctive"),
+               "scored_in": "log-odds of the hero's names (PLAN.md Section 18, change 16); the registered log-probability form is given beside it",
+               "registered_form_drop_in_log_probability": {"matched_random_sets": set_test(rows_lp, bat, "rand"),
+                                                           "magnitude_matched_random_sets": set_test(rows_lp, bat, "magnitude")},
+               "mean_drop_where_the_untouched_model_names_batman": float(np.mean([rows[b]["drop"]["canon"] for b in bat if says(rows[b]["reply"] or "", BATMAN)] or [np.nan])),
+               "mean_drop_where_it_does_not": float(np.mean([rows[b]["drop"]["canon"] for b in bat if not says(rows[b]["reply"] or "", BATMAN)] or [np.nan])),
+               "untouched_replies_that_do_not_start_with_a_name": int(sum(not starts_with_name(rows[b]["reply"] or "") for b in bat)),
                "canon_ablated_reply_still_says_batman": int(sum(says(rows[b]["reply_canon"] or "", BATMAN) for b in bat)),
                "untouched_reply_says_batman": int(sum(says(rows[b]["reply"] or "", BATMAN) for b in bat))}
         if rel:
@@ -187,8 +210,10 @@ def ablation(tag):
     p = out.get("story_tokens_name_free", {})
     if p:
         m, g, s = p["matched_random_sets"], p["magnitude_matched_random_sets"], p.get("specificity", {})
+        evaluable = p["untouched_replies_that_do_not_start_with_a_name"] <= 4
         out["criterion"] = {"p_against_sets_matched_on_works": m["p"], "p_against_sets_also_matched_on_activity": g["p"], "specificity_p": s.get("p_one_sided"),
-                            "met": bool(m["p"] < 0.05 and g["p"] < 0.05 and s.get("p_one_sided", 1) < 0.05)}
+                            "evaluable_with_this_question": bool(evaluable),
+                            "met": bool(evaluable and m["p"] < 0.05 and g["p"] < 0.05 and s.get("p_one_sided", 1) < 0.05)}
         print(tag, "ablation: mean drop canon", round(m["mean_drop_canon"], 3), "random sets", round(m["mean_drop_random_sets_mean"], 3),
               "p", round(m["p"], 4), "| magnitude-matched sets", round(g["mean_drop_random_sets_mean"], 3), "p", round(g["p"], 4),
               "| specificity p", s.get("p_one_sided"), "| met:", out["criterion"]["met"])

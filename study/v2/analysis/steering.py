@@ -42,15 +42,25 @@ def block(item):
     return "\n".join(lines)
 
 
-def write_prompts(name, items, seed):
+def write_prompts(name, items, seed, key):
+    """Ten items to a prompt, in a seeded order, and never two items with the same key in one prompt (two multiples of
+    one gallery neuron, or a unit's real item and its sham). The judge sees only the serial id, the continuations and
+    the candidates."""
     d = judge_dir(name)
     template = Path("v2/prompts/steering_judge.md").read_text()
-    order = np.random.default_rng(seed).permutation(len(items))
+    prompts = []
+    for i in np.random.default_rng(seed).permutation(len(items)):
+        it = items[i]
+        home = next((p for p in prompts if len(p) < PER_PROMPT and all(key(x) != key(it) for x in p)), None)
+        if home is None:
+            prompts.append([it])
+        else:
+            home.append(it)
     paths = []
-    for k in range(0, len(items), PER_PROMPT):
-        p = d / f"batch_{k // PER_PROMPT:03d}.prompt.txt"
-        body = template.replace("{items}", "\n\n".join(block(items[i]) for i in order[k:k + PER_PROMPT]))
-        p.write_text(wrapped(body + ANSWER.format(out=d / f"batch_{k // PER_PROMPT:03d}.out.json", what="item")))
+    for k, group in enumerate(prompts):
+        p = d / f"batch_{k:03d}.prompt.txt"
+        body = template.replace("{items}", "\n\n".join(block({x: it[x] for x in ("id", "openers", "normal", "forced", "candidates")}) for it in group))
+        p.write_text(wrapped(body + ANSWER.format(out=d / f"batch_{k:03d}.out.json", what="item")))
         paths.append(str(p))
     json.dump(paths, open(d / "prompts.json", "w"))
     print(f"{name}: {len(items)} items in {len(paths)} prompt files -> {d}/prompts.json")
@@ -101,21 +111,26 @@ def gallery_items():
     openers, base, forced = continuations(C.ACTS / TAG / "steer_gallery.json")
     items = []
     for i, n in enumerate(neurons):
+        others = [j for j in range(len(neurons)) if j != i]
+        cand = [i] + [int(j) for j in rng.choice(others, 4, replace=False)]        # the same four distractors at every multiple
         for m in MULTIPLES:
-            others = [j for j in range(len(neurons)) if j != i]
-            cand = [i] + [int(j) for j in rng.choice(others, 4, replace=False)]
             order = rng.permutation(5)
-            items.append({"id": f"g{i:02d}m{m}", "neuron": n["id"], "multiple": m, "openers": openers,
+            items.append({"neuron": n["id"], "multiple": m, "openers": openers,
                           "normal": [base[(n["unit"], float(m))][k] for k in range(len(openers))],
                           "forced": [forced[(n["unit"], float(m))][k] for k in range(len(openers))],
                           "candidates": [neurons[cand[j]]["title"] for j in order], "answer": str(int(np.flatnonzero(order == 0)[0]) + 1)})
+    for k, i in enumerate(rng.permutation(len(items))):
+        items[i]["id"] = f"g{k:03d}"                     # a serial number: the id tells the judge nothing
     C.save({"items": items}, "steering_gallery_items.json")
-    write_prompts("gallery", [{k: v for k, v in it.items() if k != "answer"} for it in items], C.SEED + 2)
+    for m in MULTIPLES:                                  # one multiple per prompt, so a neuron never meets itself
+        write_prompts(f"gallery/m{m}", [it for it in items if it["multiple"] == m], C.SEED + 2 + m, key=lambda it: it["neuron"])
 
 
 def gallery_score():
     items = json.load(open(C.RESULTS / "steering_gallery_items.json"))["items"]
-    v = read_verdicts("gallery")
+    v = {}
+    for m in MULTIPLES:
+        v.update(read_verdicts(f"gallery/m{m}"))
     acc = {}
     for m in MULTIPLES:
         rows = [it for it in items if it["multiple"] == m]
@@ -145,31 +160,48 @@ def study_items(tag):
     openers, base, forced = continuations(C.ACTS / tag / "steer_units.json")
     by = {r["unit"]: r for r in tests}
     units = [r["unit"] for r in tests if (r["unit"], float(multiple)) in forced]
+    # units that fire strongly on the same study sentences are one meme in two units, whatever their families say
+    su = np.load(C.ACTS / tag / "sent_units.npy")
+    col = {int(u): k for k, u in enumerate(su)}
+    S = np.load(C.ACTS / tag / "sent_orig.u8.npy", mmap_mode="r")
+    prof = np.stack([np.asarray(S[:, col[u]], dtype=np.float32) for u in units], 1)
+    prof[prof < C.THETA * C.STEP] = 0
+    R = np.nan_to_num(np.corrcoef(prof.T))
+    pos = {u: k for k, u in enumerate(units)}
+
+    def allowed(u, v):
+        return v != u and by[v]["title"] != by[u]["title"] and fam.get(v, -v - 1) != fam.get(u, -u - 1) and R[pos[u], pos[v]] < 0.5
 
     def distractors(u, n):
-        same = [v for v in units if v != u and by[v]["kind"] == by[u]["kind"] and fam.get(v, -v - 1) != fam.get(u, -u - 1) and by[v]["title"] != by[u]["title"]]
-        pick = [int(x) for x in rng.choice(same, min(n, len(same)), replace=False)] if same else []
-        if len(pick) < n:                                      # a kind with too few units is filled from the other kinds
-            rest = [v for v in units if v != u and v not in pick and by[v]["title"] != by[u]["title"]]
-            pick += [int(x) for x in rng.choice(rest, n - len(pick), replace=False)]
-        return pick
+        """Same kind first; then units of the same idea-or-name status; then any unit."""
+        pick, n_same = [], 0
+        for tier, ok in enumerate((lambda v: by[v]["kind"] == by[u]["kind"], lambda v: by[v]["is_idea"] == by[u]["is_idea"], lambda v: True)):
+            pool = [v for v in units if allowed(u, v) and v not in pick and ok(v)]
+            take = [int(x) for x in rng.choice(pool, min(n - len(pick), len(pool)), replace=False)] if pool and len(pick) < n else []
+            pick += take
+            n_same += len(take) if tier == 0 else 0
+        return pick, n_same
 
+    idea = [u for u in units if by[u]["is_idea"]]
+    name = [u for u in units if not by[u]["is_idea"]]
+    sham = set(int(x) for x in rng.choice(idea, min(20, len(idea)), replace=False)) | set(int(x) for x in rng.choice(name, min(20, len(name)), replace=False))
     items = []
-    sham = set(int(x) for x in rng.choice(units, min(40, len(units)), replace=False))
     for u in units:
         f = [forced[(u, float(multiple))][k] for k in range(len(openers))]
         nrm = [base[(u, float(multiple))][k] for k in range(len(openers))]
-        d = distractors(u, 5)
+        d, n_same = distractors(u, 5)
         order = rng.permutation(5)
         cand = [u] + d[:4]
-        items.append({"id": f"u{u}", "unit": u, "sham": False, "openers": openers, "normal": nrm, "forced": f,
+        items.append({"unit": u, "sham": False, "openers": openers, "normal": nrm, "forced": f, "n_same_kind": int(min(n_same, 4)),
                       "candidates": [by[cand[j]]["title"] for j in order], "answer": str(int(np.flatnonzero(order == 0)[0]) + 1)})
         if u in sham:
             order = rng.permutation(5)
-            items.append({"id": f"s{u}", "unit": u, "sham": True, "openers": openers, "normal": nrm, "forced": f,
+            items.append({"unit": u, "sham": True, "openers": openers, "normal": nrm, "forced": f, "n_same_kind": int(n_same),
                           "candidates": [by[d[j]]["title"] for j in order], "answer": "none"})
+    for k, i in enumerate(rng.permutation(len(items))):
+        items[i]["id"] = f"i{k:03d}"
     C.save({"model": tag, "multiple": multiple, "items": items}, f"{tag}/steering_items.json")
-    write_prompts(tag, [{k: v for k, v in it.items() if k not in ("answer", "unit", "sham")} for it in items], C.SEED + 4)
+    write_prompts(tag, items, C.SEED + 4, key=lambda it: it["unit"])
 
 
 def study_score(tag):
@@ -206,8 +238,14 @@ def study_score(tag):
            "by_kind": {k: acc([it for it in real if tests[it["unit"]]["kind"] == k]) for k in sorted({tests[it["unit"]]["kind"] for it in real})},
            "by_depth_quarter": {str(q): acc([it for it in real if tests[it["unit"]]["depth_quarter"] == q]) for q in (1, 2, 3, 4)},
            "idea_units_by_depth_quarter": {str(q): acc([it for it in idea if tests[it["unit"]]["depth_quarter"] == q]) for q in (1, 2, 3, 4)},
+           "idea_units_with_four_distractors_of_their_own_kind": acc([it for it in idea if it["n_same_kind"] == 4]),
+           "idea_items_with_a_distractor_of_another_kind": int(sum(it["n_same_kind"] < 4 for it in idea)),
            "sham_items": {"n": len(sham), "answered_none": int(sum(v.get(it["id"], {}).get("choice") == "none" for it in sham)),
-                          "judged": int(sum(it["id"] in v for it in sham))},
+                          "judged": int(sum(it["id"] in v for it in sham)),
+                          "idea_units": {"n": int(sum(tests[it["unit"]]["is_idea"] for it in sham)),
+                                         "answered_none": int(sum(v.get(it["id"], {}).get("choice") == "none" for it in sham if tests[it["unit"]]["is_idea"]))},
+                          "name_units": {"n": int(sum(not tests[it["unit"]]["is_idea"] for it in sham)),
+                                         "answered_none": int(sum(v.get(it["id"], {}).get("choice") == "none" for it in sham if not tests[it["unit"]]["is_idea"]))}},
            "key_words_in_continuations": {"idea_units": keyword_rate(idea), "name_units": keyword_rate(name)},
            "criterion_met": bool(idea and acc(idea)["p_above_chance"] < 0.05),
            "verdicts": {it["id"]: dict(v.get(it["id"], {}), answer=it["answer"], unit=it["unit"], sham=it["sham"]) for it in d["items"]}}

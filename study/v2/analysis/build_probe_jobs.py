@@ -17,7 +17,7 @@ import common as C  # noqa: F401  (puts study/ on the path)
 import experiments as X
 
 Q_HERO = ("Every name in this plot summary has been replaced by a code such as X1. Which famous fictional hero is the story about? "
-          "Reply with the name the hero is best known by, not a code.")
+          "Reply with only the name the hero is best known by, not a code.")
 Q_TITLE = ("Every name in this plot summary has been replaced by a code such as X1. Which film, comic, game or book is this a summary of? "
            "Reply with its title only.")
 BATMAN = ["Batman", "The Batman", "Bruce Wayne"]
@@ -31,6 +31,8 @@ def text_of(work):
 
 
 def main():
+    plan = Path("v2/PLAN.md").read_text()
+    assert Q_HERO in plan and Q_TITLE in plan, "the questions must be the plan's, word for word"
     out = Path("v2/cache/jobs")
     out.mkdir(parents=True, exist_ok=True)
     hero, title = [], []
