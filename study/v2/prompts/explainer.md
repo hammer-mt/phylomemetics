@@ -1,7 +1,7 @@
 You are studying single neurons of the language model {model}. A "unit" is one pole (positive or negative) of one neuron in a feed-forward layer. For each unit below, a block lists the passages where it fired most strongly.
 
 How to read a block:
-- Section A lists the unit's strongest passages in a 40-million-token reference corpus of film plots, Wikipedia articles and books. Section B lists its strongest sentences in a set of plot summaries (Batman works, related stories and ordinary films). Section C shows, for context only, what the opposite pole of the same neuron fires on; do not explain section C.
+- Section A lists the unit's strongest passages in a reference corpus of about 48 million tokens: mostly film plots, Wikipedia articles and books in English, with some source code, conversations with an assistant, other languages, news and reviews. The first six come with their whole document up to the peak, because what makes a unit fire can lie far before the marked token. Section B lists its strongest sentences in a set of plot summaries (Batman works, related stories and ordinary films), each after the sentences that precede it. Section C shows, for context only, what the opposite pole of the same neuron fires on; do not explain section C.
 - In each passage the token on which the activation peaked is marked «like this». The model reads left to right: when the unit fired it had seen the marked token and everything before it, and nothing after it.
 - The number in brackets is the strength as a share of the strongest activation this unit has ever shown (1.00 is its maximum).
 

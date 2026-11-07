@@ -203,7 +203,7 @@ def word_measures():
     A_bi = TfidfVectorizer(stop_words="english", min_df=2, sublinear_tf=True, ngram_range=(1, 2)).fit_transform(anon).toarray()
     n_codes = np.array([len({m for s in w["sentences"] for m in X.CODE.findall(s)}) for w in X.neutral], float)
     sim_codes = -np.abs(n_codes[:, None] - n_codes[None, :])
-    _WORDS.update({"sim": sim, "Pw": Pw, "sim_bg": A_bg @ A_bg.T, "Pw_rare": Pw[:, rare], "sim_bigram": A_bi @ A_bi.T, "sim_codes": sim_codes,
+    _WORDS.update({"df_bg": df_bg, "sim": sim, "Pw": Pw, "sim_bg": A_bg @ A_bg.T, "Pw_rare": Pw[:, rare], "sim_bigram": A_bi @ A_bi.T, "sim_codes": sim_codes,
                    "n_codes": n_codes, "n_words": int(Pw.shape[1]), "n_words_rare": int(rare.sum()), "n_background_plots": len(bg),
                    "commonest_words_dropped_by_the_cap": [str(x) for x in names[np.argsort(-df_bg)][:20]]})
     return _WORDS
@@ -480,6 +480,11 @@ def run_setting(st, cut=None, cap_e1=C.CAP, cap_e23=None, full=True, save_canon=
                      "sequels_top2": X.sequel_control(Pa2)["top2"],
                      "residual_both_word_measures": pick(residual(R_n, [WR["tfidf_cosine"], WR["word_presence"]])),
                      "residual_six_word_measures": pick(residual(R_n, list(WR.values())))}
+        if cap_e23 is not None:               # under a cap the words get the same cap: word presence on words that rare in the background
+            W = word_measures()
+            R_cap = X.unit_rates(W["Pw"][:, W["df_bg"] <= cap_e23 * W["n_background_plots"] + 1e-9])
+            res["E2"]["residual_cap_matched_words"] = pick(residual(R_n, [WR["tfidf_cosine"], WR["word_presence"], R_cap]))
+            res["E2"]["word_presence_under_the_same_cap"] = pick(X.e2(None, R=R_cap, n_perm=200, rng=np.random.default_rng(7)))
         e3 = e3_run(Pa2, pv, n_perm=2000)
         res["E3"] = {"rho": e3["rho"], "p_one_sided": e3["p_one_sided"], "n_units": e3["n_units"], "jackknife_min": e3["jackknife_min"]}
     res["seconds"] = round(time.time() - t0)

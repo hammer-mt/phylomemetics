@@ -9,6 +9,9 @@ texts   writes v2/cache/explain/<tag>/texts.jsonl and units.npy: every tester te
 score   reads v2/acts/<tag>/tests_scores.npz and writes results/v2/<tag>/explanation_tests.json.
 
 A text's response is the unit's strongest activation in it as a share of the unit's scale; 30% or more is strong.
+A unit is "not testable out of context" when its strongest study sentence and its three strongest reference examples
+(the last 420 characters up to the peak), each read alone, all stay below 30%: such units are counted apart and left
+out of the wins, ties and losses and of the idea-bound count.
 """
 import json
 import sys
@@ -122,9 +125,11 @@ def step_score(tag, theta=C.THETA):
         ratios = ([alone["study"] / in_doc[str(u)]["study"]] if in_doc[str(u)]["study"] > 0 else []) + \
                  [a / b for a, b in zip(alone["ref"], in_doc[str(u)]["ref"]) if b > 0]
         kind = kinds.get(u, {"kind": "other", "detects": "name or word"})
+        testable = bool(max([alone["study"]] + alone["ref"]) >= theta)
         per_unit.append({
             "unit": u, "name": meta[u]["name"], "set": meta[u]["set"], "layer": meta[u]["layer"], "depth_quarter": int(meta[u]["layer"] * 4 // L) + 1,
-            "title": ex[u]["title"], "kind": kind["kind"], "detects": kind["detects"],
+            "title": ex[u]["title"], "kind": kind["kind"], "detects": kind["detects"], "testable_out_of_context": testable,
+            "alone": {"study_sentence": round(alone["study"], 3), "reference_examples": [round(x, 3) for x in alone["ref"]]},
             "is_idea": bool(kind["kind"] in IDEA_KINDS or kind["detects"] == "idea"), "one_idea": ex[u]["one_idea"], "understood": ex[u]["understood"],
             "shares": {g: [round(float(x), 3) for x in s[g]] for g in GROUPS}, "strong": {g: int(strong[g].sum()) for g in GROUPS},
             "outcome": "win" if a_n > c_n else "tie" if a_n == c_n else "loss",
@@ -151,12 +156,15 @@ def step_score(tag, theta=C.THETA):
             "win_rate_on_other_units_texts": float((a_n > c_n)[off].mean()), "tie_rate_on_other_units_texts": float((a_n == c_n)[off].mean())}
 
     def summary(rows):
+        n_all = len(rows)
+        rows = [r for r in rows if r["testable_out_of_context"]]
         if not rows:
-            return {"n": 0}
+            return {"n": 0, "n_with_untestable": n_all, "not_testable_out_of_context": n_all}
         f = lambda key: float(np.mean([r["strong"][key] / 5 for r in rows]))      # noqa: E731
         w = [r["outcome"] for r in rows]
         idea = [r["idea_bound"] for r in rows]
-        return {"n": len(rows), "strong_rate": {g: f(g) for g in GROUPS}, "won": w.count("win"), "tied": w.count("tie"), "lost": w.count("loss"),
+        return {"n": len(rows), "n_with_untestable": n_all, "not_testable_out_of_context": n_all - len(rows),
+                "strong_rate": {g: f(g) for g in GROUPS}, "won": w.count("win"), "tied": w.count("tie"), "lost": w.count("loss"),
                 "win_share": w.count("win") / len(w), "win_share_ci95": boot_share([x == "win" for x in w], rng),
                 "blind_max_reaches_corpus_max": float(np.mean([r["blind_max_reaches_corpus_max"] for r in rows])),
                 "blind_max_strong": float(np.mean([r["blind_max_strong"] for r in rows])),
@@ -174,9 +182,10 @@ def step_score(tag, theta=C.THETA):
         return {"n": len(rows), "neuron_mean": float(a.mean()), "words_mean": float(b.mean()), "neuron_better": int((a > b).sum()), "words_better": int((b > a).sum()),
                 "p_two_sided": float(wilcoxon(a, b, zero_method="wilcox").pvalue)}
 
+    everyone = [dict(r, testable_out_of_context=True) for r in per_unit]
     core = [r for r in per_unit if r["set"] == "core"]
     name_like = [r["kind"] in ("character or name", "place", "word or token") for r in core]
-    out = {"model": tag, "theta": theta, "n_units": len(per_unit), "all": summary(per_unit),
+    out = {"model": tag, "theta": theta, "n_units": len(per_unit), "all": summary(per_unit), "all_with_untestable_units_left_in": summary(everyone),
            "by_kind": {k: summary([r for r in per_unit if r["kind"] == k]) for k in sorted({r["kind"] for r in per_unit})},
            "by_detects": {k: summary([r for r in per_unit if r["detects"] == k]) for k in ("name or word", "idea")},
            "idea_units": summary([r for r in per_unit if r["is_idea"]]), "name_units": summary([r for r in per_unit if not r["is_idea"]]),
@@ -191,7 +200,7 @@ def step_score(tag, theta=C.THETA):
            "units": per_unit}
     C.save(out, f"{tag}/explanation_tests.json")
     a = out["all"]
-    print(f"{tag}: {a['n']} units | strong A {a['strong_rate']['A']:.2f} B {a['strong_rate']['B']:.2f} C {a['strong_rate']['C']:.2f} D {a['strong_rate']['D']:.2f} "
+    print(f"{tag}: {a['n']} testable units of {a['n_with_untestable']} | strong A {a['strong_rate']['A']:.2f} B {a['strong_rate']['B']:.2f} C {a['strong_rate']['C']:.2f} D {a['strong_rate']['D']:.2f} "
           f"| won {a['won']} tied {a['tied']} lost {a['lost']} | idea-bound {a['idea_bound']} | mismatched A {mism['strong_rate_on_other_units_A_texts']:.3f}")
 
 

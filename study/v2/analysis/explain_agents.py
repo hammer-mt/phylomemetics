@@ -25,7 +25,7 @@ import common as C
 import textcheck as T
 
 MODEL_NAMES = {"qwen3-32b": "Qwen3-32B", "qwen3-8b": "Qwen3-8B", "llama3.1-8b": "Llama 3.1 8B", "llama3.3-70b": "Llama 3.3 70B"}
-BATCH = {"explainer": 6, "tester": 6, "keyword_analyst": 20, "kind_judge": 30}
+BATCH = {"explainer": 4, "tester": 6, "keyword_analyst": 20, "kind_judge": 30}
 KINDS = ["character or name", "place", "object", "word or token", "story pattern", "genre or setting", "style or format", "grammar", "other"]
 ANSWER = ("\n\n---\nHow to answer. Work from this file alone: do not open, search or run anything else. Write your answer as one JSON file at\n{out}\n"
           "It must be a JSON list with one object per {what}, with exactly the fields listed above under \"Return\". "

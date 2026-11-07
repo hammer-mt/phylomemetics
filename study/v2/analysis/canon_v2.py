@@ -9,9 +9,12 @@ Pools, fixed here before anyone reads an example:
   name_free_core       canon units (at least 80% of the 32 works, original texts) present in at least 70% of the name-free works
   discriminators       the 40 distinctive units with the largest gap between the share of name-free Batman works and the
                        share of the 8 hero films they are present in
+  common_patterns      the 40 units with a base rate above 3% and at most 30% and the largest gap between the share of
+                       Batman works (original texts) they are present in and their base rate: chosen without the cap
   inherited, band      20 units drawn from E2's optional units present in both members of at least one documented source
                        and adaptation pair, and 20 from the rest of E2's optional band; units whose name-free presence
-                       depends on the placeholder codes are not drawn
+                       depends on the placeholder codes are not drawn, nor are weak poles
+  weak_poles           every pool unit whose scale is under 25% of the scale of its neuron's other pole (marked, not removed)
 
     cd study && ../.venv/bin/python v2/analysis/canon_v2.py [model-tag ...]
 
@@ -111,19 +114,30 @@ def run_model(tag, n_pseudo=50):
     dep = np.zeros(len(d), bool)
     b = np.flatnonzero(band)
     dep[b] = code_dependent(tag, st.units[b])
-    in_pair, rest = np.flatnonzero(band & pair & ~dep), np.flatnonzero(band & ~pair & ~dep)
+    weak = C.dominance(tag)[st.units] < 0.25
+    in_pair, rest = np.flatnonzero(band & pair & ~dep & ~weak), np.flatnonzero(band & ~pair & ~dep & ~weak)
+    mid = np.flatnonzero((st.base > C.CAP + 1e-12) & (st.base <= 0.30 + 1e-12) & free)
+    lift = Po[BAT][:, mid].mean(0) - st.base[mid]
+    patterns = mid[np.lexsort((st.units[mid], -Po[BAT][:, mid].mean(0), -lift))][:40]
     inherited = np.sort(rng.choice(in_pair, min(20, len(in_pair)), replace=False))
     band_rest = np.sort(rng.choice(rest, min(20, len(rest)), replace=False))
     res["pools"] = {"name_free_core": int(len(nf_core)), "canon_all32": int(len(canon)), "discriminators": int(len(disc)),
                     "e2_band": int(band.sum()), "e2_band_in_a_documented_pair": int((band & pair).sum()),
-                    "e2_band_code_dependent_not_drawn": int((band & dep).sum()), "reserved_units_left_out": int((~free).sum()),
+                    "e2_band_code_dependent_not_drawn": int((band & dep).sum()), "e2_band_weak_poles_not_drawn": int((band & weak & ~dep).sum()),
+                    "common_patterns": int(len(patterns)), "common_patterns_gap_min": float(np.sort(lift)[::-1][:40].min()) if len(mid) else None,
+                    "common_patterns_base_rate_median": float(np.median(st.base[patterns])) if len(patterns) else None,
+                    "units_between_3_and_30_percent": int(len(mid)), "reserved_units_left_out": int((~free).sum()),
                     "discriminator_gap_min": float(gap[disc].min()) if len(disc) else None}
     cand_free = cand[free[cand]]
     (C.RESULTS / tag).mkdir(parents=True, exist_ok=True)
     g = lambda idx: st.units[idx].astype(np.int64)      # noqa: E731
+    union = np.unique(np.concatenate([g(cand_free), g(nf_core[free[nf_core]]), g(disc), g(patterns), g(inherited), g(band_rest)]))
+    dom = C.dominance(tag)
     np.savez_compressed(C.RESULTS / tag / "pools.npz", candidates=g(cand_free), n_batman=nb[cand_free], name_free_core=g(nf_core[free[nf_core]]),
-                        discriminators=g(disc), inherited=g(inherited), band_rest=g(band_rest), canon_all32=g(canon))
-    union = np.unique(np.concatenate([g(cand_free), g(nf_core[free[nf_core]]), g(disc), g(inherited), g(band_rest)]))
+                        discriminators=g(disc), common_patterns=g(patterns), inherited=g(inherited), band_rest=g(band_rest), canon_all32=g(canon),
+                        weak_poles=union[dom[union] < 0.25])
+    res["pools"]["weak_poles_among_pool_units"] = int((dom[union] < 0.25).sum())
+    res["pools"]["weak_poles_among_canon_units"] = int((dom[g(canon)] < 0.25).sum())
     np.save(C.RESULTS / tag / "sentence_units.npy", union)
     res["units_for_the_sentence_pass"] = int(len(union))
     C.save(res, f"canon_counts_{tag}.json")

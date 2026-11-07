@@ -3,8 +3,9 @@ and 4 to 8). E2's inner choices (band, hub adjustment, time rule, source rule) a
 multiverse_v2.py.
 
 The grid: threshold (20, 30, 40, 50% of scale) x score (strongest sentence, mean of three) x base-rate cap (none, 30,
-20, 10, 5, 3, 1%), the cap applied to all three experiments. These 56 cells are "the sensitivity settings" that the
-residual test must pass in at least half of. Beside them, at the primary threshold and score with the primary caps
+20, 10, 5, 3, 1%), the cap applied to all three experiments. The 8 uncapped cells are the settings of the residual
+test's decision rule (it must pass in at least half of them); the 48 capped cells are descriptive, and there the
+regressors also include word presence under the same cap (PLAN.md Section 18, change 1). Beside them, at the primary threshold and score with the primary caps
 (3% for E1, none for E2 and E3): the reference-only scale, the fifth-example scale, the openings (length), the
 placeholder codes left in, the token after each code masked too, the raw product with the echo regime left in, weak
 poles left out (under 10% and under 25% of the neuron's stronger pole), and units scaled by the supplement left out.
@@ -37,6 +38,8 @@ def flat(r, **extra):
                 E2_share=e2["share"], E2_share_ties_half=r["E2"]["share_ties_half"], E2_exact_p=e2["exact_p"], E2_within_era_p=e2["within_era_p"],
                 sequels_top2=r["E2"]["sequels_top2"], residual_share=rs["share"], residual_exact_p=rs["exact_p"], residual_within_era_p=rs["within_era_p"],
                 residual6_exact_p=r["E2"]["residual_six_word_measures"]["exact_p"],
+                residual_cap_matched_words_exact_p=r["E2"].get("residual_cap_matched_words", {}).get("exact_p"),
+                word_presence_same_cap_exact_p=r["E2"].get("word_presence_under_the_same_cap", {}).get("exact_p"),
                 E3_rho=r["E3"]["rho"], E3_p=r["E3"]["p_one_sided"], E3_units=r["E3"]["n_units"])
 
 
@@ -59,14 +62,21 @@ def run_model(tag):
         del st
     prim = [r for r in grid if r["theta"] == C.THETA and r["score"] == "top1"]
     auc = np.array([r["E1_auc"] for r in grid])
+    dec = [r for r in grid if r["cap"] == "none"]
+    capped = [r for r in grid if r["cap"] != "none"]
     out = {"model": tag,
            "grid": "threshold (0.2, 0.3, 0.4, 0.5) x score (top1 = strongest sentence, top3 = mean of three) x cap (none, 0.30, 0.20, 0.10, 0.05, 0.03, 0.01), "
                    "the cap applied to E1, E2 and E3 alike",
            "primary_cells": {"E1": next(r for r in prim if r["cap"] == C.CAP), "E2_residual_E3": next(r for r in prim if r["cap"] == "none")},
            "n_settings": len(grid),
-           "residual_settings_exact_p_below_0.05": int(sum(r["residual_exact_p"] < 0.05 for r in grid)),
-           "residual_passes_in_at_least_half": bool(sum(r["residual_exact_p"] < 0.05 for r in grid) >= len(grid) / 2),
-           "residual_within_era_p_below_0.05": int(sum(r["residual_within_era_p"] < 0.05 for r in grid)),
+           "n_decision_settings": len(dec),
+           "residual_settings_exact_p_below_0.05": int(sum(r["residual_exact_p"] < 0.05 for r in dec)),
+           "residual_passes_in_at_least_half": bool(sum(r["residual_exact_p"] < 0.05 for r in dec) >= len(dec) / 2),
+           "residual_within_era_p_below_0.05": int(sum(r["residual_within_era_p"] < 0.05 for r in dec)),
+           "residual_capped_settings_exact_p_below_0.05": int(sum(r["residual_exact_p"] < 0.05 for r in capped)),
+           "residual_capped_settings_with_cap_matched_words_below_0.05": int(sum(r["residual_cap_matched_words_exact_p"] < 0.05 for r in capped)),
+           "n_capped_settings": len(capped),
+           "E1_note": "whole-work AUCs; the label-shuffle null does not control length (see the 'openings' version and length alone)",
            "E2_settings_exact_p_below_0.05": int(sum(r["E2_exact_p"] < 0.05 for r in grid)),
            "E2_settings_evaluable": int(sum(r["E2_evaluable"] for r in grid)),
            "E1_auc_range": [float(auc.min()), float(auc.max())], "E1_settings_auc_at_least_0.80": int((auc >= 0.8).sum()),
@@ -75,7 +85,7 @@ def run_model(tag):
            "E3_settings_p_below_0.05": int(sum(r["E3_p"] < 0.05 for r in grid)),
            "rows": grid, "other_versions_at_the_primary_setting": extra, "seconds": round(time.time() - t0)}
     C.save(out, f"sensitivity_{tag}.json")
-    print(f"{tag}: residual p < 0.05 in {out['residual_settings_exact_p_below_0.05']} of {len(grid)} settings; E2 in "
+    print(f"{tag}: residual p < 0.05 in {out['residual_settings_exact_p_below_0.05']} of {len(dec)} uncapped settings; E2 in "
           f"{out['E2_settings_exact_p_below_0.05']}; E1 AUC {out['E1_auc_range']}; E3 rho {out['E3_rho_range']}  ({time.time() - t0:.0f}s)", flush=True)
 
 
