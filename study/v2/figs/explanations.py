@@ -37,7 +37,7 @@ import matplotlib.pyplot as plt  # noqa: E402
 from matplotlib.lines import Line2D  # noqa: E402
 from matplotlib.patches import Rectangle  # noqa: E402
 
-TITLE = "Descriptions of the units predict where they fire in newly written text"
+TITLE = "Descriptions of the units predict where they fire in new text written to fit them"
 SUBTITLE = ("An AI explainer described each unit from its strongest examples. A tester who saw only the description\n"
             "then wrote the test texts, before anything was measured.")
 PANEL_A = "Share of test texts that make the unit fire strongly"
