@@ -1,11 +1,12 @@
 """Download one model's compact results from the GPU machine into v2/acts/<tag>/ (run from study/).
 
-    ../.venv/bin/python v2/gpu/pull.py <model-tag> [--only] [--raw] [--sentences[=prefix]] [--selected] [--franchises] [--file=<path>]
+    ../.venv/bin/python v2/gpu/pull.py <model-tag> [--only] [--primary] [--raw] [--sentences[=prefix]] [--selected] [--franchises] [--file=<path>]
 
 By default: the scales, the uint8 score matrices, the background counts, top shares and presence bits, and the
 metadata. --raw adds the three raw top-3 score matrices needed for the v1-rule comparison (float16, large).
 --sentences adds the sentence-level activations of the chosen units; --selected the per-plot background shares;
---franchises the comparison franchises; --file any other output. --only skips the default set.
+--franchises the comparison franchises; --file any other output. --only skips the default set, and --primary
+fetches only what the main experiments read, leaving the files of the sensitivity checks for later.
 
 Every file is checked against its sha256 on the GPU machine, so a pass that was run again there is fetched again;
 the hashes of what the analyses used are kept in v2/acts/<tag>/pulled.json.
@@ -40,6 +41,8 @@ SEL = [("background/selected.u8.npy", "bg_selected.u8.npy"), ("background/select
 def main():
     tag = sys.argv[1]
     files = [] if "--only" in sys.argv else list(BASE)
+    if "--primary" in sys.argv:                           # leave out what only the sensitivity checks read (fetch it later without this flag)
+        files = [f for f in files if not any(x in f[1] for x in ("_top3.", ".ref.", ".ref5.", "anon_after_", "_raw_top1."))]
     files += RAW if "--raw" in sys.argv else []
     files += FRANCHISES if "--franchises" in sys.argv else []
     for a in sys.argv:
