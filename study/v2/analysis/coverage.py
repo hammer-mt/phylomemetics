@@ -111,11 +111,10 @@ def step_items(tag):
         for p in fires + silent:
             items.append({"id": p["id"], "unit": u, "fires": p["kind"] == "fire", "share": round(p.get("share_in_plot", p["last_share"]), 3),
                           "passage": ("…" if len(p["text"]) > 1200 else "") + p["text"][-1200:]})
-    C.save({"model": tag, "n_items": len(items), "units_with_items": len({i["unit"] for i in items}), "items": items}, f"{tag}/coverage_items.json")
     template = Path("v2/prompts/coverage_judge.md").read_text()
     us = sorted({i["unit"] for i in items})
     order = rng.permutation(len(us))
-    paths = []
+    paths, serial = [], 0
     for b in range(0, len(us), UNITS_PER_PROMPT):
         blocks = []
         for u in [us[i] for i in order[b:b + UNITS_PER_PROMPT]]:
@@ -125,12 +124,15 @@ def step_items(tag):
             for it in mine:
                 text = it["passage"].rstrip()
                 cut = text.rfind(" ") + 1
-                lines.append(f"[{it['id']}] {text[:cut]}«{text[cut:]}»")
+                serial += 1
+                it["code"] = f"p{serial:04d}"          # what the judge sees: a serial number in the shuffled order, which says nothing about the passage
+                lines.append(f"[{it['code']}] {text[:cut]}«{text[cut:]}»")
             blocks.append("\n".join(lines))
         name = f"batch_{b // UNITS_PER_PROMPT:03d}"
         (d / f"{name}.prompt.txt").write_text(wrapped(template.replace("{items}", "\n\n==========\n\n".join(blocks)) + ANSWER.format(out=d / f"{name}.out.json", what="passage")))
         paths.append(str(d / f"{name}.prompt.txt"))
     json.dump(paths, open(d / "prompts.json", "w"))
+    C.save({"model": tag, "n_items": len(items), "units_with_items": len({i["unit"] for i in items}), "items": items}, f"{tag}/coverage_items.json")
     print(f"{tag}: {len(items)} passages for {len(us)} units in {len(paths)} prompt files -> {d}/prompts.json")
 
 
@@ -138,11 +140,12 @@ def step_score(tag):
     d = work_dir(tag)
     items = json.load(open(C.RESULTS / tag / "coverage_items.json"))["items"]
     tests = {r["unit"]: r for r in json.load(open(C.RESULTS / tag / "explanation_tests.json"))["units"]}
+    by_code = {i["code"]: i["id"] for i in items}
     verdict = {}
     for f in sorted(d.glob("batch_*.out.json")):
         try:
             for r in json.load(open(f)):
-                verdict[str(r["id"])] = bool(r["fires"])
+                verdict[by_code[str(r["id"]).strip("[]")]] = bool(r["fires"])
         except Exception as e:      # noqa: BLE001
             print("unreadable", f.name, repr(e)[:80])
 
