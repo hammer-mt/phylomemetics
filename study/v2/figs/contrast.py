@@ -31,7 +31,7 @@ import matplotlib.pyplot as plt  # noqa: E402
 from matplotlib.lines import Line2D  # noqa: E402
 from matplotlib.patches import Rectangle  # noqa: E402
 
-TITLE = "The new rule, not the larger model, moved the results"
+TITLE = "Up to 32B, the new rule moved the results and the larger model did not"
 SUBTITLE = ("Each model's results as published in version 1 (4-bit weights), then at full precision under each version's rule.\n"
             "Dashed lines are chance, dotted lines the pre-registered bars. Vertical lines in the first panel are 95% intervals.")
 PANELS = ["Identity: AUC against hero films", "Heredity: comics that beat the source", "Beyond words: residual p, version 1's test"]

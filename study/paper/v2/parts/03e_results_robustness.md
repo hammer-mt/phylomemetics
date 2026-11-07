@@ -1,8 +1,8 @@
 ### 3.10 Robustness
 
-All of the checks below were fixed in the plan. Unless stated they are for Qwen3-32B.
+All of the checks below were fixed in the plan, except the joint count of cells, which was added after the two 8B models' results were in (Section 2.10). Unless stated they are for Qwen3-32B.
 
-**The threshold, the score and the cap.** Across 56 settings (a threshold of 20, 30, 40 or 50% of scale; the strongest sentence or the mean of the three strongest; a base-rate cap from 1% to 30%, or none), the name-free canon share never reaches the bar: its AUC against the hero films runs from 0.25 to 0.67, and in no setting is it above its shuffled-label null. Heredity is below 0.05 in 7 of the 8 settings with no cap and in 42 of the 45 settings where it can be evaluated. The residual decision test passes in none of the 8 uncapped settings. Selection is below 0.05 in no setting. The two smaller models give the same picture (Table 7). Llama 3.3 70B was run at the primary setting only (Section 2.10).
+**The threshold, the score and the cap.** Across 56 settings (a threshold of 20, 30, 40 or 50% of scale; the strongest sentence or the mean of the three strongest; a base-rate cap from 1% to 30%, or none), the name-free canon share never reaches the bar: its AUC against the hero films runs from 0.25 to 0.67, and in no setting is it above its shuffled-label null. Heredity is below 0.05 in 7 of the 8 settings with no cap and in 42 of the 45 settings where it can be evaluated. The residual decision test passes in none of the 8 uncapped settings. With a cap, which does not enter the decision (Section 2.10), it is below 0.05 in 5 of the 37 settings that can be evaluated (6 of 33 in Qwen3-8B, 9 of 33 in Llama 3.1 8B), and in 3, 4 and 10 of them when word presence under the same cap is regressed out as well. Selection is below 0.05 in no setting. For heredity, the residual test and selection the two smaller models give the same picture (Table 7). For identity they differ a little: neither meets the prediction, but the canon share is above its shuffled-label null in 6 of Qwen3-8B's settings (all at the 50% threshold, four of them with a cap; highest AUC 0.79) and in all 8 of Llama 3.1 8B's uncapped settings. Llama 3.3 70B was run at the primary setting only (Section 2.10).
 
 | | Qwen3-32B | Qwen3-8B | Llama 3.1 8B |
 | --- | --- | --- | --- |
@@ -16,9 +16,9 @@ All of the checks below were fixed in the plan. Unless stated they are for Qwen3
 
 Llama 3.1 8B's canon share does reach 0.80 in three settings (0.83, 0.85 and 0.83), all with no base-rate cap. With no cap the canon is hundreds to thousands of common units, and a score built from them rises with the length of a text, which on its own gives 0.76. Those settings have no openings version, so length cannot be ruled out for them. At the primary setting, where the openings exist, Llama's canon share is 0.39 on whole summaries and 0.40 on openings.
 
-**The cap and heredity.** Heredity weakens as the cap tightens. In Qwen3-32B's E2 multiverse of 12,528 specifications, 81% of the uncapped name-free specifications are below 0.05, against 68% at a 5% cap and 29% at a 1% cap. Qwen3-8B goes from 81% to 39% and 10%, and Llama 3.1 8B from 99% to 80% and 29%. Words behave the same way: word presence restricted to words in at most 3% of ordinary plots loses the trail (p = 0.06). The source trail is carried by ordinary story vocabulary and the units that follow it, not by rare units. Version 1 reported that heredity held in 99.6% of its specifications. Under the new rule the figure for Qwen3-32B is 84% over all specifications: 99.9% on the original texts and 68% on the name-free texts. It is lower because the grid now includes tight caps and high thresholds, where few units are left.
+**The cap and heredity.** Heredity weakens as the cap tightens. In Qwen3-32B's E2 multiverse of 12,528 specifications, 81% of the uncapped name-free specifications are below 0.05, against 68% at a 5% cap and 29% at a 1% cap. Qwen3-8B goes from 81% to 39% and 10%, and Llama 3.1 8B from 99% to 80% and 29%. The source trail is carried mostly by ordinary story vocabulary and the units that follow it. Rare units carry less of it, but not none. In the sensitivity grid Qwen3-32B's units under a 3% cap still find the sources at the primary threshold and score (20% of comics beat the source, p = 0.004), and E2 is below 0.05 in all 9 of the evaluable settings at the 3% and 1% caps. Word presence under the same caps does not find them (p = 0.06 and 0.13). Version 1 reported that heredity held in 99.6% of its specifications. Under the new rule the figure for Qwen3-32B is 84% over all specifications: 99.9% on the original texts and 68% on the name-free texts. It is lower because the grid now includes tight caps and high thresholds, where few units are left.
 
-**Other versions of the rule, at the primary setting.** None of these changes a conclusion (Table 8).
+**Other versions of the rule, at the primary setting.** None of these changes the outcome of E1, E2's test, the residual test or E3 (Table 8). One, leaving the echo regime in, fails the sequel control.
 
 | Version | E1 canon share AUC | E2 share | E2 exact p | Residual p | E3 rho |
 | --- | --- | --- | --- | --- | --- |
@@ -28,13 +28,13 @@ Llama 3.1 8B's canon share does reach 0.80 in three settings (0.83, 0.85 and 0.8
 | Openings only | 0.37 | 0.120 | 0.0003 | 0.40 | 0.40 |
 | Codes left in | 0.43 | 0.124 | 0.0007 | 0.87 | 0.06 |
 | Token after each code masked too | 0.34 | 0.109 | 0.0002 | 0.60 | 0.37 |
-| Echo regime left in | 0.43 | 0.219 | 0.017 | 0.87 | 0.13 |
+| Echo regime left in (codes left in too) | 0.43 | 0.219 | 0.017 | 0.87 | 0.13 |
 | Weak poles left out (under 25% of the other pole) | 0.36 | 0.124 | 0.0005 | 0.65 | 0.33 |
 | Units scaled by the supplement left out | 0.37 | 0.123 | 0.0009 | 0.69 | 0.35 |
 
 **Table 8.** Qwen3-32B under other versions of the presence rule. The residual p is the decision test's.
 
-Two rows deserve a note. Leaving the echo regime in, as version 1 did, weakens heredity (22% against 15%) and costs the sequel control a pass (4 of 7). The echo is noise for this purpose, as the essay's account of it would predict. And taking each unit's scale from its fifth-strongest example, which one freak token cannot set, makes heredity stronger (7%).
+Two rows deserve a note. Leaving the echo regime in, as version 1 did, weakens heredity (22%, against 12% in the row it is to be compared with, codes left in, because this version keeps the codes too) and costs the sequel control a pass (4 of 7 against 5). The echo is noise for this purpose, as the essay's account of it would predict. And taking each unit's scale from its fifth-strongest example, which one freak token cannot set, makes heredity stronger (7%).
 
 **What changed a result: the pipeline, the rule or the model.** Every primary statistic was also computed under version 1's rule on the new activations (Table 9, and Figure 1 in Section 3.1).
 
@@ -54,7 +54,7 @@ Two rows deserve a note. Leaving the echo regime in, as version 1 did, weakens h
 
 Three things follow.
 
-- *Full precision and size changed little, up to 32B.* Under version 1's rule the full-precision 8B models give nearly the numbers version 1 published, and Qwen3-32B gives the same again (E1 0.52, E2 14%).
+- *Full precision and size changed E1 and E2 little, up to 32B.* Under version 1's rule the full-precision 8B models give nearly the E1 and E2 numbers version 1 published, and Qwen3-32B gives the same again (E1 0.52, E2 14%). The residual test in version 1's form is the exception: in Qwen3-8B it moves from 0.089 as published to 0.015.
 - *The fall in E1 comes from the rule.* In these three models the canon share drops from about 0.52, which is chance, to between 0.26 and 0.39 when only strong activations count. Below chance means the hero films carry more of the canon than the name-free Batman works do (Section 3.3).
 - *Version 1's residual test passes under version 1's rule in all three models,* Qwen3-8B included (p = 0.015, 0.035 and 0.023), and in none of them under the new rule. In Llama 3.3 70B it passes under the new rule as well (p = 0.017). The decision test passes in none of the seven cells. This is what a test that leans on common words would do: weak activations follow common words, and the form of the test version 1 used can be passed by a word measure that does the same (Section 2.5).
 

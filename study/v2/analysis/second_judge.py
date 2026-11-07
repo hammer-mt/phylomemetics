@@ -83,7 +83,10 @@ def step_score(tag):
         real = [i for i in second if not items[i]["sham"]]
         out["steering"] = {"agreement_with_first_judge": agreement(first, second),
                            "second_judge_accuracy": float(np.mean([second[i] == items[i]["answer"] for i in real])) if real else None, "n": len(real),
-                           "second_judge_none_on_sham": int(sum(second[i] == "none" for i in second if items[i]["sham"]))}
+                           "second_judge_none_on_sham": int(sum(second[i] == "none" for i in second if items[i]["sham"])),
+                           "n_sham": int(sum(items[i]["sham"] for i in second)),
+                           "second_judge_correct": int(sum(second[i] == items[i]["answer"] for i in real)),
+                           "second_judge_choices": {i: second[i] for i in sorted(second)}}
     C.save(out, f"second_judge_{tag}.json")
     print(tag, "second judge:", {k: out[k] for k in ("kind", "detects")}, out.get("steering", {}).get("agreement_with_first_judge"))
 

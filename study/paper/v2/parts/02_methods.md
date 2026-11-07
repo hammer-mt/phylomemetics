@@ -73,7 +73,7 @@ A text's response is the unit's strongest activation in it as a share of its sca
 
 Test texts are short and read alone, while a unit's scale comes from documents of about 1,000 tokens. A unit whose own strongest study sentence and strongest reference examples all stay below 30% when read alone is counted apart, as *not testable out of context*. A coverage check asked a blind judge whether each description predicts the unit's firings at 30 to 60% of scale, where presence is decided, on passages from the background plots.
 
-This is label validation. It is not the planted-story test that the pre-registration reserves for the question of whether neurons follow an idea when the words change (Section 4.5).
+This is label validation. It is not the planted-story test that the planned pre-registered experiment reserves for the question of whether neurons follow an idea when the words change (Section 4.5).
 
 ### 2.7 Steering and ablation
 
@@ -81,11 +81,11 @@ Neither test was in version 1. Both were specified in the plan before being run.
 
 **Steering.** The model continued three neutral story openers for 40 tokens with one unit's activation held at a multiple of its scale, and once without. A blind judge who saw both sets of continuations picked which of five unit titles had been pushed in, or "none of these". The multiple was chosen beforehand on 40 neurons from the essay's public gallery, not on study units. The criterion is accuracy on the units whose kind is an idea, against 20% chance.
 
-**Ablation.** Each model was asked which hero each name-free Batman summary is about. The outcome is the log-odds that its reply starts with Batman's name, with nothing touched and with that work's canon units switched off on the tokens of the summary only. The canon's effect is compared with two controls of 200 random sets each. In the first, every canon unit is replaced by a unit of the same layer and pole that is present in about as many name-free Batman works. In the second, the replacement is also matched on how strongly it fires in these texts, so that the sets remove about as much activation as the canon does. The criterion needs p below 0.05 against both controls, and a larger effect on the Batman works than on seven hero films scored on their own hero's name. Because the score is the probability of the reply's first word, the test counts only if the untouched model's reply begins with a name for at least 28 of the 32 Batman works.
+**Ablation.** Each model was asked which hero each name-free Batman summary is about. The outcome is the log-odds that its reply starts with Batman's name, with nothing touched and with that work's canon units switched off on the tokens of the summary only. The canon's effect is compared with two controls of 200 random sets each. In the first, every canon unit is replaced by a unit of the same layer and pole that is present in about as many name-free Batman works. In the second, the replacement is also matched on how strongly it fires in these texts. Those sets still remove less activation than the canon does, so the effect is also given per unit of activation removed. The criterion needs p below 0.05 against both controls, and a larger effect on the Batman works than on seven hero films scored on their own hero's name. Because the score is the probability of the reply's first word, the test counts only if the untouched model's reply begins with a name for at least 28 of the 32 Batman works.
 
 ### 2.8 Two models
 
-For each explained Qwen3-32B unit, its twin in another model is the unit there whose activations across the 3,700 original-text sentences correlate most strongly with it. Version 1 scored twins on those same sentences. Here they are scored where they were not chosen: on the tester's texts written for the Qwen3-32B unit, and on the name-free sentences, against control units matched on how well a single word predicts them.
+For each explained Qwen3-32B unit, its twin in another model is the unit there whose activations across the 3,700 original-text sentences correlate most strongly with it. Version 1 scored twins on those same sentences and on their name-free versions. Here they are scored where they were not chosen: on the tester's texts written for the Qwen3-32B unit, and on the name-free sentences. On the name-free sentences they are compared with other Qwen3-32B units, matched on how well a single word predicts them, and those units' own twins.
 
 ### 2.9 What is confirmatory, and robustness
 
@@ -98,7 +98,7 @@ The sensitivity checks were fixed in advance. They vary the threshold (20, 30, 4
 The plan logs thirty-one. Most were made before the result they bear on existed. These are the ones that change how a result is read.
 
 - The residual test regresses out seven word measures, not two (Section 2.5). Its sensitivity rule uses the eight settings with no base-rate cap, because a cap applied to units and not to words can make the test pass or fail for reasons unrelated to the question.
-- The ablation has a second control matched on activation removed. It is scored in log-odds, because a fall in log-probability shrinks as the model grows confident. It counts only if the untouched replies begin with a name (Section 2.7).
+- The ablation has a second control matched on how strongly the units fire. It is scored in log-odds, because a fall in log-probability shrinks as the model grows confident. It counts only if the untouched replies begin with a name (Section 2.7).
 - Genre sets take their base rates from plots of other genres.
 - A whole-work E1 score is always quoted with its opening-only score and with length alone.
 - A count of model-by-rule cells below 0.05 is reported against a joint null, because the cells share the same 32 works. This was decided after the two 8B models' results were in and before any Qwen3-32B result.
