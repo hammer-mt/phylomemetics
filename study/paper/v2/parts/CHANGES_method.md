@@ -21,12 +21,12 @@ Version 1's own limitations section, its robustness review and use of the result
 | Models | Qwen3-8B and Llama 3.1 8B, 4-bit weights, on a laptop | Qwen3-32B (primary), Qwen3-8B, Llama 3.1 8B and Llama 3.3 70B, at full precision on rented GPUs |
 | Unit | One pole of a neuron, whatever produced the activation | One pole of a neuron, counted only where the gate is open (the essay's main sign regimes) |
 | Present | The work beats 68 of 69 reference films | The unit fires strongly: at least 30% of its strongest activation anywhere in a 48-million-token corpus |
-| Ordinary stories | 69 films, which also set the bar | 2,999 film plots that play no other part give every unit's base rate |
+| Ordinary stories | 69 films, which also set the bar | 2,999 film plots that are not study works give every unit's base rate |
 | Which units | All | Distinctive units (base rate of 3% or less) for the canon and identity; all units for heredity and selection |
 | Explanations | Read off 8 Batman sentences, checked by a second reader | Written from the unit's strongest examples in the reference corpus, for units chosen by rule, then tested on new texts where they can lose |
 | Causal tests | None | Steering of the explained units; ablation of Batman's canon |
 | Recognition | Not measured | Each model is asked which hero and which work a name-free summary is about |
-| Words as a rival | Two word measures | The same two, plus the further measures needed so that a word-only signal cannot pass the "beyond words" test |
+| Words as a rival | Two word measures | The same two, plus the further measures needed so that none of the word-only measures we tried passes the "beyond words" test |
 | Length | Checked by one control | Every identity score is also computed on openings of equal length |
 | Twins across models | Scored on the sentences they were chosen on | Scored on new texts and on name-free sentences, against word-matched controls |
 | Plan | Recorded in a session transcript | Committed to the repository before the study pass; changes logged |
