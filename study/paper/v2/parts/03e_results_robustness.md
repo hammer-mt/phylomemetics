@@ -38,8 +38,29 @@ Two rows deserve a note. Leaving the echo regime in, as version 1 did, weakens h
 
 **What changed a result: the pipeline, the rule or the model.** Every primary statistic was also computed under version 1's rule on the new activations (Table 8, Figure 1).
 
-[TABLE 8: contrasts]
+| Model | Version | E1 AUC | E2 share | E2 exact p | Residual p, version 1's form | Residual p, decision test | E3 rho |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Qwen3-8B | Version 1 as published (4-bit) | 0.52 | 16% | 0.0026 | 0.089 | | 0.25 |
+| Qwen3-8B | Full precision, version 1's rule | 0.51 | 14% | 0.0003 | 0.015 | 0.22 | 0.29 |
+| Qwen3-8B | Full precision, new rule | 0.26 | 8% | 0.0002 | 0.26 | 0.62 | 0.35 |
+| Llama 3.1 8B | Version 1 as published (4-bit) | 0.54 | 10% | 0.0002 | 0.010 | | 0.00 |
+| Llama 3.1 8B | Full precision, version 1's rule | 0.53 | 11% | 0.0003 | 0.035 | 0.14 | −0.04 |
+| Llama 3.1 8B | Full precision, new rule | 0.39 | 14% | 0.0005 | 0.20 | 0.57 | 0.17 |
+| Qwen3-32B | Full precision, version 1's rule | 0.52 | 14% | 0.0007 | 0.023 | 0.26 | 0.25 |
+| Qwen3-32B | Full precision, new rule | 0.36 | 15% | 0.0016 | 0.20 | 0.69 | 0.35 |
 
-**Counting cells honestly.** [cells below 0.05 and the joint null]
+**Table 8.** The same statistics by model, precision and rule. E1 is the name-free canon share against the hero films. The decision test did not exist in version 1.
 
-**Trees.** [trees]
+Three things follow.
+
+- *Full precision changed little.* Under version 1's rule the full-precision 8B models give nearly the numbers version 1 published, and Qwen3-32B gives the same again (E1 0.52, E2 14%).
+- *The fall in E1 comes from the rule.* In all three models the canon share drops from about 0.52, which is chance, to between 0.26 and 0.39 when only strong activations count. Below chance means the hero films carry more of the canon than the name-free Batman works do (Section 3.3).
+- *Version 1's residual test passes under version 1's rule in all three models,* Qwen3-8B included (p = 0.015, 0.035 and 0.023), and in none under the new rule. The decision test passes in none of the six. This is what a test that leans on common words would do: weak activations follow common words, and the form of the test version 1 used can be passed by a word measure that does the same (Section 2.5).
+
+![Figure 1](fig_contrast.png)
+
+**Figure 1.** What changed between versions. E1, E2 and the residual test for each model: as published in version 1, at full precision under version 1's rule, and under the new rule.
+
+**Counting cells honestly.** The six model-by-rule cells analyse the same 32 works, so six results below 0.05 are not six independent findings. E2 is below 0.05 in all six. [CELLS-JOINT] The residual decision test is below 0.05 in none.
+
+**Trees.** As in version 1, a tree built from the distances between works' meme sets does not recover documented sources. Ranking the 12 comics by distance to each adaptation puts the source at a mean rank of 4.4 in Qwen3-32B, 4.7 in Qwen3-8B and 4.6 in Llama 3.1 8B, against 5.8 by chance (p = 0.12, 0.17 and 0.14). TF-IDF distance on the same texts puts it at 2.4 (p = 0.0004). The models' distance matrices agree closely with one another (Mantel r = 0.98 to 0.99, and 0.94 to 0.96 with TF-IDF distance held fixed), well above matrices built from random units (0.64 to 0.79 on average). So the models agree about which works are alike, and what they agree on is not the line of descent. Works of the same era sit slightly closer together than works of different eras (ratio 1.03, p = 0.04 in Qwen3-32B).

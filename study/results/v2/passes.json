@@ -14,6 +14,105 @@
    "tokens_per_batch": 24576,
    "examples_kept_per_unit": 24,
    "seconds": 9873
+  },
+  "supplement": {
+   "documents": 5434,
+   "tokens": 6754089,
+   "max_tokens_per_document": 2048,
+   "seconds": 1740
+  },
+  "study": {
+   "works": 114,
+   "seconds": 109,
+   "software": {
+    "repo": "Qwen/Qwen3-32B",
+    "commit": null,
+    "dtype": "torch.bfloat16",
+    "torch": "2.8.0+cu128",
+    "transformers": "5.22.2",
+    "gpu": [
+     "NVIDIA RTX PRO 6000 Blackwell Server Edition"
+    ]
+   }
+  },
+  "background": {
+   "plots": 2999,
+   "tokens": 2398247,
+   "one_plot_at_a_time": true,
+   "seconds": 1188
+  },
+  "franchises": {
+   "films": 123,
+   "tokens": 97128
+  },
+  "scale": {
+   "n_units": 3276800,
+   "supplement_included": true,
+   "documents_left_out_of_the_reference_only_scale": [
+    843,
+    7175,
+    6895,
+    3597,
+    5284
+   ],
+   "units_whose_strongest_reference_example_is_in_a_left_out_document": 227,
+   "units_never_active_in_reference": 125043,
+   "units_with_zero_scale": 125042,
+   "units_whose_scale_comes_from_the_reference_corpus": 2237120,
+   "units_whose_scale_comes_from_the_supplement": 1035162,
+   "units_whose_scale_comes_from_the_study_corpus": 4518,
+   "units_study_max_over_twice_reference": 7,
+   "positive_units_whose_strongest_raw_activation_is_an_echo": 82189,
+   "negative_units_whose_strongest_raw_activation_is_an_echo": 85233,
+   "units_whose_fifth_reference_example_is_under_half_the_first": 114841,
+   "poles_under_a_tenth_of_the_neurons_other_pole": 75298,
+   "poles_under_a_quarter_of_the_neurons_other_pole": 258959,
+   "largest_scale": 24064.0,
+   "scale_quantiles": {
+    "0.01": 0.0,
+    "0.1": 2.0625,
+    "0.5": 11.0625,
+    "0.9": 64.0,
+    "0.99": 214.0
+   }
+  },
+  "share_of_unit_by_work_cells_present": {
+   "orig_main_top1": 0.043592715730478286,
+   "orig_main_top3": 0.012567940780255653,
+   "orig_cut_main_top1": 0.03086430331942579,
+   "anon_main_top1": 0.03189308746379002,
+   "anon_main_top3": 0.007621883137184029,
+   "anon_cut_main_top1": 0.021413874512223367,
+   "anon_codes_main_top1": 0.03525909676802865,
+   "anon_after_main_top1": 0.02942031830508721,
+   "anon_icon_main_top1": 0.03128287980622921,
+   "anon_icon_main_top3": 0.007409219276953261
+  },
+  "scale_and_base_rates": {
+   "units_scaled_by": {
+    "reference corpus": {
+     "all": 2237120,
+     "present_in_some_work": 1361788,
+     "distinctive": 622764,
+     "canon_all_32": 144
+    },
+    "supplement": {
+     "all": 1035162,
+     "present_in_some_work": 446210,
+     "distinctive": 260888,
+     "canon_all_32": 37
+    },
+    "study texts": {
+     "all": 4518,
+     "present_in_some_work": 4518,
+     "distinctive": 1408,
+     "canon_all_32": 23
+    }
+   },
+   "distinctive_units": 885060,
+   "canon_units_all_32": 204,
+   "distinctive_on_the_main_scale_but_over_the_cap_on_the_reference_only_scale": 370,
+   "canon_units_over_the_cap_on_the_reference_only_scale": 6
   }
  },
  "qwen3-8b": {
