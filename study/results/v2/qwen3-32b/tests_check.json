@@ -1,6 +1,6 @@
 {
  "model": "qwen3-32b",
- "n": 238,
+ "n": 241,
  "units": {
   "2870": {
    "B_texts_using_a_key_word": {},
@@ -27,13 +27,13 @@
   "2980": {
    "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
-    false,
+    true,
     true,
     true,
     false,
     false
    ],
-   "ok": false
+   "ok": true
   },
   "9325": {
    "B_texts_using_a_key_word": {},
@@ -80,11 +80,7 @@
    "ok": true
   },
   "167009": {
-   "B_texts_using_a_key_word": {
-    "2": [
-     "royal"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
@@ -92,14 +88,10 @@
     true,
     true
    ],
-   "ok": false
+   "ok": true
   },
   "188547": {
-   "B_texts_using_a_key_word": {
-    "1": [
-     "fac"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
@@ -107,7 +99,7 @@
     true,
     true
    ],
-   "ok": false
+   "ok": true
   },
   "202487": {
    "B_texts_using_a_key_word": {},
@@ -121,11 +113,7 @@
    "ok": true
   },
   "205442": {
-   "B_texts_using_a_key_word": {
-    "0": [
-     "com"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
@@ -133,14 +121,10 @@
     true,
     true
    ],
-   "ok": false
+   "ok": true
   },
   "208075": {
-   "B_texts_using_a_key_word": {
-    "2": [
-     "cat"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
@@ -148,12 +132,12 @@
     true,
     false
    ],
-   "ok": false
+   "ok": true
   },
   "210632": {
    "B_texts_using_a_key_word": {
     "3": [
-     "chief"
+     "offic"
     ]
    },
    "C_texts_reusing_a_key_word": [
@@ -177,35 +161,18 @@
    "ok": true
   },
   "217862": {
-   "B_texts_using_a_key_word": {
-    "0": [
-     "city"
-    ],
-    "1": [
-     "man"
-    ],
-    "2": [
-     "city"
-    ],
-    "3": [
-     "man"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
+    false,
     true,
-    true,
-    false
+    true
    ],
-   "ok": false
+   "ok": true
   },
   "219037": {
-   "B_texts_using_a_key_word": {
-    "0": [
-     "dynast"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
@@ -213,7 +180,7 @@
     true,
     true
    ],
-   "ok": false
+   "ok": true
   },
   "227206": {
    "B_texts_using_a_key_word": {},
@@ -238,14 +205,7 @@
    "ok": true
   },
   "254112": {
-   "B_texts_using_a_key_word": {
-    "1": [
-     "man"
-    ],
-    "2": [
-     "man"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
@@ -253,7 +213,7 @@
     true,
     false
    ],
-   "ok": false
+   "ok": true
   },
   "254826": {
    "B_texts_using_a_key_word": {},
@@ -267,19 +227,15 @@
    "ok": true
   },
   "317604": {
-   "B_texts_using_a_key_word": {
-    "3": [
-     "million"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
-    false,
-    false,
-    false,
     true,
+    true,
+    false,
+    false,
     true
    ],
-   "ok": false
+   "ok": true
   },
   "318922": {
    "B_texts_using_a_key_word": {},
@@ -304,15 +260,7 @@
    "ok": true
   },
   "344071": {
-   "B_texts_using_a_key_word": {
-    "0": [
-     "oth"
-    ],
-    "4": [
-     "call",
-     "com"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
@@ -320,7 +268,7 @@
     true,
     false
    ],
-   "ok": false
+   "ok": true
   },
   "346100": {
    "B_texts_using_a_key_word": {},
@@ -334,19 +282,15 @@
    "ok": true
   },
   "347405": {
-   "B_texts_using_a_key_word": {
-    "3": [
-     "king"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
+    true,
+    true,
     false,
     true,
-    true,
-    true,
-    false
+    true
    ],
-   "ok": false
+   "ok": true
   },
   "353620": {
    "B_texts_using_a_key_word": {},
@@ -393,34 +337,26 @@
    "ok": true
   },
   "394697": {
-   "B_texts_using_a_key_word": {
-    "3": [
-     "lat"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     false,
     true,
-    false,
     true,
+    false,
     true
    ],
-   "ok": false
+   "ok": true
   },
   "407102": {
-   "B_texts_using_a_key_word": {
-    "0": [
-     "georg"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
-    false,
     true,
-    true
+    true,
+    false
    ],
-   "ok": false
+   "ok": true
   },
   "410913": {
    "B_texts_using_a_key_word": {},
@@ -434,25 +370,15 @@
    "ok": true
   },
   "427568": {
-   "B_texts_using_a_key_word": {
-    "1": [
-     "plac"
-    ],
-    "2": [
-     "plac"
-    ],
-    "4": [
-     "plac"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
     true,
-    false,
+    true,
     true
    ],
-   "ok": false
+   "ok": true
   },
   "435478": {
    "B_texts_using_a_key_word": {},
@@ -466,11 +392,7 @@
    "ok": true
   },
   "438070": {
-   "B_texts_using_a_key_word": {
-    "1": [
-     "rat"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
@@ -478,22 +400,18 @@
     true,
     false
    ],
-   "ok": false
+   "ok": true
   },
   "453490": {
-   "B_texts_using_a_key_word": {
-    "4": [
-     "co"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
     true,
-    true,
-    false
+    false,
+    true
    ],
-   "ok": false
+   "ok": true
   },
   "458118": {
    "B_texts_using_a_key_word": {},
@@ -595,55 +513,37 @@
    "ok": true
   },
   "604205": {
-   "B_texts_using_a_key_word": {
-    "0": [
-     "end"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
-    true,
-    true,
-    true,
-    false
-   ],
-   "ok": false
-  },
-  "830265": {
-   "B_texts_using_a_key_word": {
-    "0": [
-     "fami"
-    ],
-    "4": [
-     "man"
-    ]
-   },
-   "C_texts_reusing_a_key_word": [
-    false,
     true,
     true,
     true,
     true
    ],
-   "ok": false
+   "ok": true
   },
-  "830342": {
-   "B_texts_using_a_key_word": {
-    "0": [
-     "man"
-    ],
-    "4": [
-     "man"
-    ]
-   },
+  "830265": {
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
     false,
     true,
-    false
+    true
    ],
-   "ok": false
+   "ok": true
+  },
+  "830342": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    false,
+    true
+   ],
+   "ok": true
   },
   "833184": {
    "B_texts_using_a_key_word": {},
@@ -679,26 +579,7 @@
    "ok": true
   },
   "842440": {
-   "B_texts_using_a_key_word": {
-    "4": [
-     "punish"
-    ]
-   },
-   "C_texts_reusing_a_key_word": [
-    true,
-    true,
-    true,
-    true,
-    true
-   ],
-   "ok": false
-  },
-  "902490": {
-   "B_texts_using_a_key_word": {
-    "1": [
-     "numb"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
@@ -706,15 +587,37 @@
     false,
     true
    ],
-   "ok": false
+   "ok": true
+  },
+  "886609": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "902490": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    false,
+    true,
+    true
+   ],
+   "ok": true
   },
   "904823": {
    "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     false,
-    true,
     false,
     true,
+    false,
     false
    ],
    "ok": false
@@ -723,12 +626,12 @@
    "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     false,
-    false,
-    false,
     true,
+    true,
+    false,
     true
    ],
-   "ok": false
+   "ok": true
   },
   "911984": {
    "B_texts_using_a_key_word": {},
@@ -797,14 +700,7 @@
    "ok": true
   },
   "989429": {
-   "B_texts_using_a_key_word": {
-    "1": [
-     "man"
-    ],
-    "2": [
-     "man"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
@@ -812,7 +708,7 @@
     true,
     true
    ],
-   "ok": false
+   "ok": true
   },
   "994890": {
    "B_texts_using_a_key_word": {},
@@ -848,19 +744,15 @@
    "ok": true
   },
   "1042958": {
-   "B_texts_using_a_key_word": {
-    "2": [
-     "nam"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
-    true,
     true,
     false,
     true,
+    true,
     true
    ],
-   "ok": false
+   "ok": true
   },
   "1049878": {
    "B_texts_using_a_key_word": {},
@@ -874,11 +766,7 @@
    "ok": true
   },
   "1053109": {
-   "B_texts_using_a_key_word": {
-    "2": [
-     "nam"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
@@ -886,14 +774,10 @@
     true,
     true
    ],
-   "ok": false
+   "ok": true
   },
   "1067286": {
-   "B_texts_using_a_key_word": {
-    "1": [
-     "credit"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
@@ -901,7 +785,7 @@
     true,
     true
    ],
-   "ok": false
+   "ok": true
   },
   "1068129": {
    "B_texts_using_a_key_word": {},
@@ -922,6 +806,17 @@
     true,
     true,
     false
+   ],
+   "ok": true
+  },
+  "1113807": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    true
    ],
    "ok": true
   },
@@ -975,7 +870,7 @@
     false,
     false,
     false,
-    false,
+    true,
     false
    ],
    "ok": false
@@ -1006,9 +901,9 @@
    "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     false,
+    true,
+    true,
     false,
-    true,
-    true,
     false
    ],
    "ok": false
@@ -1069,19 +964,15 @@
    "ok": true
   },
   "1461365": {
-   "B_texts_using_a_key_word": {
-    "2": [
-     "return"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
-    true,
+    false,
     true,
     true
    ],
-   "ok": false
+   "ok": true
   },
   "1463527": {
    "B_texts_using_a_key_word": {},
@@ -1149,12 +1040,19 @@
    ],
    "ok": true
   },
+  "1485789": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    false,
+    true,
+    true,
+    true
+   ],
+   "ok": true
+  },
   "1487126": {
-   "B_texts_using_a_key_word": {
-    "1": [
-     "jam"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
@@ -1162,7 +1060,7 @@
     true,
     false
    ],
-   "ok": false
+   "ok": true
   },
   "1500498": {
    "B_texts_using_a_key_word": {},
@@ -1231,12 +1129,7 @@
    "ok": true
   },
   "1520757": {
-   "B_texts_using_a_key_word": {
-    "2": [
-     "corp",
-     "lantern"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
@@ -1244,7 +1137,7 @@
     true,
     true
    ],
-   "ok": false
+   "ok": true
   },
   "1528083": {
    "B_texts_using_a_key_word": {},
@@ -1291,21 +1184,13 @@
    "ok": true
   },
   "1546344": {
-   "B_texts_using_a_key_word": {
-    "0": [
-     "rao"
-    ],
-    "4": [
-     "rama",
-     "rao"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     false,
     true,
     false,
     true,
-    true
+    false
    ],
    "ok": false
   },
@@ -1365,64 +1250,48 @@
    "ok": true
   },
   "1561173": {
-   "B_texts_using_a_key_word": {
-    "3": [
-     "queen"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
-    true,
+    false,
     true,
     true
    ],
-   "ok": false
+   "ok": true
   },
   "1580619": {
-   "B_texts_using_a_key_word": {
-    "4": [
-     "outsid"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
-    false,
+    true,
     true,
     true,
     true,
     true
    ],
-   "ok": false
+   "ok": true
   },
   "1581948": {
-   "B_texts_using_a_key_word": {
-    "1": [
-     "000"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
-    false,
+    true,
     true,
     true,
     true,
     true
    ],
-   "ok": false
+   "ok": true
   },
   "1587002": {
-   "B_texts_using_a_key_word": {
-    "0": [
-     "paul"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
+    true,
     false,
-    false,
-    true
+    false
    ],
-   "ok": false
+   "ok": true
   },
   "1588941": {
    "B_texts_using_a_key_word": {},
@@ -1441,10 +1310,10 @@
     true,
     false,
     true,
-    false,
-    false
+    true,
+    true
    ],
-   "ok": false
+   "ok": true
   },
   "1618229": {
    "B_texts_using_a_key_word": {},
@@ -1480,11 +1349,7 @@
    "ok": true
   },
   "1643584": {
-   "B_texts_using_a_key_word": {
-    "0": [
-     "mark"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
@@ -1492,7 +1357,7 @@
     true,
     false
    ],
-   "ok": false
+   "ok": true
   },
   "1648203": {
    "B_texts_using_a_key_word": {},
@@ -1506,19 +1371,15 @@
    "ok": true
   },
   "1651724": {
-   "B_texts_using_a_key_word": {
-    "3": [
-     "nam"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     false,
     true,
-    true,
-    false
+    false,
+    true
    ],
-   "ok": false
+   "ok": true
   },
   "1652692": {
    "B_texts_using_a_key_word": {},
@@ -1620,11 +1481,7 @@
    "ok": true
   },
   "1847046": {
-   "B_texts_using_a_key_word": {
-    "4": [
-     "mind"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
@@ -1632,7 +1489,7 @@
     true,
     false
    ],
-   "ok": false
+   "ok": true
   },
   "1849652": {
    "B_texts_using_a_key_word": {},
@@ -1668,11 +1525,7 @@
    "ok": true
   },
   "1857437": {
-   "B_texts_using_a_key_word": {
-    "3": [
-     "support"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
@@ -1680,14 +1533,10 @@
     true,
     false
    ],
-   "ok": false
+   "ok": true
   },
   "1860920": {
-   "B_texts_using_a_key_word": {
-    "1": [
-     "word"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
@@ -1695,7 +1544,7 @@
     true,
     true
    ],
-   "ok": false
+   "ok": true
   },
   "1861692": {
    "B_texts_using_a_key_word": {},
@@ -1786,11 +1635,7 @@
    "ok": true
   },
   "1916049": {
-   "B_texts_using_a_key_word": {
-    "0": [
-     "car"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
@@ -1798,22 +1643,18 @@
     true,
     true
    ],
-   "ok": false
+   "ok": true
   },
   "1936244": {
-   "B_texts_using_a_key_word": {
-    "2": [
-     "age"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
     true,
     true,
-    true
+    false
    ],
-   "ok": false
+   "ok": true
   },
   "1939271": {
    "B_texts_using_a_key_word": {},
@@ -1849,17 +1690,13 @@
    "ok": true
   },
   "1980491": {
-   "B_texts_using_a_key_word": {
-    "0": [
-     "lik"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     false,
-    true,
     false,
     false,
-    false
+    false,
+    true
    ],
    "ok": false
   },
@@ -1988,19 +1825,15 @@
    "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     false,
-    true,
     false,
-    true,
-    false
+    false,
+    false,
+    true
    ],
    "ok": false
   },
   "2251772": {
-   "B_texts_using_a_key_word": {
-    "1": [
-     "art"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
@@ -2008,7 +1841,7 @@
     true,
     true
    ],
-   "ok": false
+   "ok": true
   },
   "2277703": {
    "B_texts_using_a_key_word": {},
@@ -2038,10 +1871,10 @@
     false,
     false,
     true,
-    false,
-    false
+    true,
+    true
    ],
-   "ok": false
+   "ok": true
   },
   "2306707": {
    "B_texts_using_a_key_word": {},
@@ -2066,45 +1899,37 @@
    "ok": true
   },
   "2364747": {
-   "B_texts_using_a_key_word": {
-    "4": [
-     "man"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
     true,
     true,
-    true
+    false
    ],
-   "ok": false
+   "ok": true
   },
   "2372268": {
    "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     false,
     false,
-    true,
     false,
+    true,
     false
    ],
    "ok": false
   },
   "2375398": {
-   "B_texts_using_a_key_word": {
-    "2": [
-     "good"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
-    true,
+    false,
     false,
     true,
     true,
-    false
+    true
    ],
-   "ok": false
+   "ok": true
   },
   "2396903": {
    "B_texts_using_a_key_word": {},
@@ -2140,26 +1965,15 @@
    "ok": true
   },
   "2495485": {
-   "B_texts_using_a_key_word": {
-    "1": [
-     "ever",
-     "himself"
-    ],
-    "2": [
-     "littl"
-    ],
-    "4": [
-     "ever"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
     true,
-    true,
+    false,
     true
    ],
-   "ok": false
+   "ok": true
   },
   "2500843": {
    "B_texts_using_a_key_word": {},
@@ -2206,11 +2020,7 @@
    "ok": true
   },
   "2550644": {
-   "B_texts_using_a_key_word": {
-    "0": [
-     "first"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
@@ -2218,7 +2028,7 @@
     true,
     true
    ],
-   "ok": false
+   "ok": true
   },
   "2562846": {
    "B_texts_using_a_key_word": {},
@@ -2287,19 +2097,15 @@
    "ok": true
   },
   "2629416": {
-   "B_texts_using_a_key_word": {
-    "4": [
-     "fac"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
+    true,
     true,
     false,
     true,
-    true,
     true
    ],
-   "ok": false
+   "ok": true
   },
   "2648630": {
    "B_texts_using_a_key_word": {},
@@ -2324,34 +2130,26 @@
    "ok": true
   },
   "2650301": {
-   "B_texts_using_a_key_word": {
-    "4": [
-     "ni"
-    ]
-   },
-   "C_texts_reusing_a_key_word": [
-    true,
-    true,
-    false,
-    false,
-    false
-   ],
-   "ok": false
-  },
-  "2655879": {
-   "B_texts_using_a_key_word": {
-    "3": [
-     "list"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
     true,
-    true,
+    false,
     true
    ],
-   "ok": false
+   "ok": true
+  },
+  "2655879": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "ok": true
   },
   "2663170": {
    "B_texts_using_a_key_word": {},
@@ -2453,11 +2251,7 @@
    "ok": true
   },
   "2830013": {
-   "B_texts_using_a_key_word": {
-    "3": [
-     "away"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
@@ -2465,7 +2259,7 @@
     true,
     true
    ],
-   "ok": false
+   "ok": true
   },
   "2853400": {
    "B_texts_using_a_key_word": {},
@@ -2479,19 +2273,15 @@
    "ok": true
   },
   "2880987": {
-   "B_texts_using_a_key_word": {
-    "0": [
-     "car"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
-    false,
     true,
     true,
-    false
+    true,
+    true
    ],
-   "ok": false
+   "ok": true
   },
   "2950589": {
    "B_texts_using_a_key_word": {},
@@ -2516,11 +2306,7 @@
    "ok": true
   },
   "2979147": {
-   "B_texts_using_a_key_word": {
-    "1": [
-     "public"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
@@ -2528,7 +2314,7 @@
     true,
     true
    ],
-   "ok": false
+   "ok": true
   },
   "3005424": {
    "B_texts_using_a_key_word": {},
@@ -2553,17 +2339,7 @@
    "ok": true
   },
   "3051398": {
-   "B_texts_using_a_key_word": {
-    "0": [
-     "man"
-    ],
-    "1": [
-     "green"
-    ],
-    "3": [
-     "man"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
@@ -2571,7 +2347,7 @@
     true,
     true
    ],
-   "ok": false
+   "ok": true
   },
   "3053127": {
    "B_texts_using_a_key_word": {},
@@ -2629,22 +2405,15 @@
    "ok": true
   },
   "3119045": {
-   "B_texts_using_a_key_word": {
-    "0": [
-     "follow"
-    ],
-    "3": [
-     "night"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
     true,
     true,
-    false
+    true
    ],
-   "ok": false
+   "ok": true
   },
   "3120546": {
    "B_texts_using_a_key_word": {},
@@ -2702,19 +2471,15 @@
    "ok": true
   },
   "3131221": {
-   "B_texts_using_a_key_word": {
-    "3": [
-     "ring"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
     true,
+    false,
     true,
-    true,
-    false
+    true
    ],
-   "ok": false
+   "ok": true
   },
   "3135718": {
    "B_texts_using_a_key_word": {},
@@ -2750,22 +2515,15 @@
    "ok": true
   },
   "3154013": {
-   "B_texts_using_a_key_word": {
-    "3": [
-     "park"
-    ],
-    "4": [
-     "park"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
-    true,
-    true,
-    true,
     false,
+    true,
+    true,
+    true,
     true
    ],
-   "ok": false
+   "ok": true
   },
   "3154686": {
    "B_texts_using_a_key_word": {},
@@ -2790,40 +2548,26 @@
    "ok": true
   },
   "3161575": {
-   "B_texts_using_a_key_word": {
-    "1": [
-     "fac"
-    ],
-    "2": [
-     "rogu"
-    ],
-    "4": [
-     "kill"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
+    true,
     false,
+    true,
+    true
+   ],
+   "ok": true
+  },
+  "3163742": {
+   "B_texts_using_a_key_word": {},
+   "C_texts_reusing_a_key_word": [
+    false,
+    true,
     true,
     true,
     true
    ],
-   "ok": false
-  },
-  "3163742": {
-   "B_texts_using_a_key_word": {
-    "1": [
-     "fac"
-    ]
-   },
-   "C_texts_reusing_a_key_word": [
-    true,
-    true,
-    true,
-    true,
-    false
-   ],
-   "ok": false
+   "ok": true
   },
   "3166532": {
    "B_texts_using_a_key_word": {},
@@ -2848,56 +2592,37 @@
    "ok": true
   },
   "3176308": {
-   "B_texts_using_a_key_word": {
-    "3": [
-     "point"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
-    false,
     true,
+    false,
     true,
     true,
     true
    ],
-   "ok": false
+   "ok": true
   },
   "3181213": {
-   "B_texts_using_a_key_word": {
-    "0": [
-     "inlet"
-    ],
-    "3": [
-     "bay",
-     "inlet"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     false,
+    false,
+    false,
     true,
-    false,
-    false,
     true
    ],
    "ok": false
   },
   "3184941": {
-   "B_texts_using_a_key_word": {
-    "0": [
-     "und"
-    ],
-    "4": [
-     "und"
-    ]
-   },
+   "B_texts_using_a_key_word": {},
    "C_texts_reusing_a_key_word": [
     true,
-    false,
     true,
     true,
-    false
+    true,
+    true
    ],
-   "ok": false
+   "ok": true
   },
   "3190476": {
    "B_texts_using_a_key_word": {},
