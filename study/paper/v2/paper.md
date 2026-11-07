@@ -6,7 +6,11 @@ Mike Taylor and Claude (Anthropic) · Version 2, draft of 7 November 2026
 
 ## Abstract
 
-[DRAFT IN PROGRESS: the abstract is written last, from the six confirmatory tests.]
+Memetics never had an agreed unit. A recent essay argues that most neurons in modern language models already have one main job [10]. That would make a neuron a ready-made unit: a meme is whatever makes a given neuron fire. Version 1 of this paper tested the idea on 32 Batman works from 1943 to 2022, with two small quantised models and a rule that counted any activation, however weak. This version repeats the study the way the essay studies neurons. The main model is Qwen3-32B at full precision. A unit is present in a work only where it fires strongly, at 30% or more of its strongest activation in a 48-million-token reference corpus. Explanations are written from the strongest examples and tested on new text, and steering and ablation are added. The plan was committed before the new models read a study text, and six tests were confirmatory.
+
+One of the six passes. Heredity is supported: adaptations carry their documented source comic's units more than other comics' (15% of eligible comics beat the source, against 46% by chance; exact p = 0.0016), and the same holds in the three other models. Word counts find the sources at least as well (11%), and once word measures are regressed out the units add nothing (p = 0.69). Version 1's hint that Llama's neurons add something beyond words came from a test that words alone can pass, and is withdrawn. Identity fails more plainly than before. Without names, Batman's canon is worse than chance at telling Batman from other hero films (AUC 0.36), and version 1's name-free "superhero core" shrinks from twelve units to one. The largest model, Llama 3.3 70B, does better on identity (0.77, still short of the bar), and it is also the model that names the exact film for every ordinary plot it is shown, so it is recognising summaries it has read. Selection is not detected. Steering fails on the study's units (13% correct against 20% by chance), though the same procedure works on the essay's own neurons (57%). Switching off Batman's canon, about 212 units out of 3.3 million, lowers the model's recognition of Batman far more than matched random units do (2.39 against 0.02 in log-odds). That test is not evaluable under a rule set beforehand, so it is not counted as a pass.
+
+What improved is the unit itself. Descriptions of 241 units chosen by rule predict where they fire in newly written text about as well as the essay reports (81% of new examples and 3% of near misses), and 46% of the units still fire when their idea is expressed without its key words. By a blind judgment the canon they define is mostly Batman's names and the comic-book register (38 of 60 core families). So a neuron can be named and the name can be tested, which version 1 could not claim. On this corpus that does not make it a better unit of inheritance than a word. Whether neurons see more than words has to be shown on stories whose wording has been changed on purpose. Those experiments are pre-registered and have not been run.
 
 ## 1. Introduction
 
@@ -34,7 +38,7 @@ That version's limitations section listed what its method left open. The models 
 
 ## 2. Material and methods
 
-The analysis plan for this version is `study/v2/PLAN.md` in the repository. It was committed and pushed before any of the new models read a study text. Nineteen changes were made after that, each logged in the plan with its reason before the result it bears on existed. Section 2.10 lists the ones that matter for reading the results.
+The analysis plan for this version is `study/v2/PLAN.md` in the repository. It was committed and pushed before any of the new models read a study text. Thirty changes were made after that, each logged in Section 18 of the plan with its reason and with what was known at the time. Section 2.10 lists the ones that matter for reading the results.
 
 ### 2.1 Corpus
 
@@ -115,7 +119,7 @@ Neither test was in version 1. Both were specified in the plan before being run.
 
 **Steering.** The model continued three neutral story openers for 40 tokens with one unit's activation held at a multiple of its scale, and once without. A blind judge who saw both sets of continuations picked which of five unit titles had been pushed in, or "none of these". The multiple was chosen beforehand on 40 neurons from the essay's public gallery, not on study units. The criterion is accuracy on the units whose kind is an idea, against 20% chance.
 
-**Ablation.** Each model was asked which hero each name-free Batman summary is about. The outcome is the log-odds that its reply starts with Batman's name, with nothing touched and with that work's canon units switched off on the tokens of the summary only. The canon's effect is compared with two controls of 200 random sets each. In the first, every canon unit is replaced by a unit of the same layer and pole that is present in about as many name-free Batman works. In the second, the replacement is also matched on how strongly it fires in these texts, so that the sets remove about as much activation as the canon does. The criterion needs p below 0.05 against both controls, and a larger effect on the Batman works than on seven hero films scored on their own hero's name.
+**Ablation.** Each model was asked which hero each name-free Batman summary is about. The outcome is the log-odds that its reply starts with Batman's name, with nothing touched and with that work's canon units switched off on the tokens of the summary only. The canon's effect is compared with two controls of 200 random sets each. In the first, every canon unit is replaced by a unit of the same layer and pole that is present in about as many name-free Batman works. In the second, the replacement is also matched on how strongly it fires in these texts, so that the sets remove about as much activation as the canon does. The criterion needs p below 0.05 against both controls, and a larger effect on the Batman works than on seven hero films scored on their own hero's name. Because the score is the probability of the reply's first word, the test counts only if the untouched model's reply begins with a name for at least 28 of the 32 Batman works.
 
 ### 2.8 Two models
 
@@ -129,15 +133,372 @@ The sensitivity checks were fixed in advance. They vary the threshold (20, 30, 4
 
 ### 2.10 Changes after the plan was frozen
 
-The plan lists nineteen. The ones that change how a result is read are these. The residual test regresses out seven word measures, not two (Section 2.5). Its sensitivity rule uses the eight settings with no base-rate cap, because a cap applied to units and not to words can make the test pass or fail for reasons unrelated to the question. The ablation has a second control matched on activation removed, and is scored in log-odds, because a drop in log-probability shrinks as the model grows confident (Section 2.7). Genre sets take their base rates from plots of other genres. A whole-work E1 score is always quoted with its opening-only score and with length alone. All were made before the result they bear on existed, and none after a result was seen.
+The plan logs thirty. Most were made before the result they bear on existed. These are the ones that change how a result is read.
+
+- The residual test regresses out seven word measures, not two (Section 2.5). Its sensitivity rule uses the eight settings with no base-rate cap, because a cap applied to units and not to words can make the test pass or fail for reasons unrelated to the question.
+- The ablation has a second control matched on activation removed. It is scored in log-odds, because a fall in log-probability shrinks as the model grows confident. It counts only if the untouched replies begin with a name (Section 2.7).
+- Genre sets take their base rates from plots of other genres.
+- A whole-work E1 score is always quoted with its opening-only score and with length alone.
+- A count of model-by-rule cells below 0.05 is reported against a joint null, because the cells share the same 32 works. This was decided after the two 8B models' results were in and before any Qwen3-32B result.
+
+Three changes were made after a result had been seen, and none changes the outcome of a test. The coverage judging was repeated, because the item ids in the first round told the judge the answer. The first round's tally had been seen (54.5% of firing passages covered, 2.9% of silent ones wrongly claimed), and the blind round gives 48% and 3%. The rule that decides whether a reply begins with a name treated "The Joker" as a sentence. It was corrected after Qwen3-8B's ablation had been scored, and the outcome is the same for both models under either form of the rule. A count of the placeholder codes in the name-free texts (Section 3.7) was added after the explanations had been read, as a description.
+
+Two things in the plan were not done. Two of the second-opinion checks in the review of the plan were cut short when the analysis machine restarted. For Llama 3.3 70B the sensitivity grid, the multiverse and version 1's rule were not run, for lack of time and of disk space on the analysis machine. Its results are for the primary setting only. The explanation tests and the ablation were run on the two Qwen models, and steering on Qwen3-32B alone.
 
 ## 3. Results
 
-[DRAFT IN PROGRESS: results are being written as the runs finish.]
+### 3.1 The six confirmatory tests, and what became of version 1's conclusions
+
+One of the six confirmatory tests passes (Table 1).
+
+| Test | What was predicted | Qwen3-32B | Outcome |
+| --- | --- | --- | --- |
+| E1, identity | Without names, the share of Batman's canon a work carries separates Batman from other hero films (AUC at least 0.80) | AUC 0.36 (95% interval 0.17 to 0.56); 0.37 on openings | Falsified |
+| E2, heredity | Adaptations carry their documented source comic's units more than other comics' | 15% of comics beat the source, against 46% by chance; exact p = 0.0016 | Supported |
+| Residual test | The units still find the source once word measures are regressed out | p = 0.69; 0.86 with every measure regressed out | Not supported |
+| E3, selection | Units of popular early works spread further | rho = 0.35, p = 0.37 | Not detected |
+| Ablation | Switching off the canon lowers the model's recognition of Batman more than matched random units, and more than it lowers other heroes' | Fall of 2.39 in log-odds against 0.02; p = 0.005, 0.005 and 0.0017 | Not evaluable under the rule set beforehand |
+| Steering | A blind judge can tell which idea unit was pushed (chance 20%) | 17 of 126 (13%), p = 0.98 | Not met |
+
+**Table 1.** The six confirmatory tests, all on Qwen3-32B under the new rule. With Holm's adjustment over the five tests that have a p value, E2's is 0.008 and the ablation's 0.020.
+
+Read against version 1, the conclusions are these.
+
+1. **Heredity stands.** It is supported in Qwen3-32B and in each of the other three models (Sections 3.4 and 3.10).
+2. **Words still find the sources as well as neurons do.** The larger model, the full-precision weights and the stricter rule do not change that, and no model adds anything to the words (Section 3.4).
+3. **The hint that Llama's neurons add something beyond words is withdrawn.** The test behind it can be passed by words alone. Under a test that cannot, no model passes under either rule (Sections 2.5 and 3.10).
+4. **Identity fails, and more plainly.** The canon share falls from 0.52 to 0.36. Version 1 blamed the scoring rule. Given the words' scoring rule, the units reach 0.62, which is no better than the length of the text. The one exception is Llama 3.3 70B at 0.77, which is still short of the bar, in a model that recognises nearly every summary it is shown (Section 3.3).
+5. **The name-free core has gone.** Version 1 found twelve name-free units that read like the definition of a superhero. Under a rule that counts only strong activations, one unit is left in Qwen3-32B (Section 3.2).
+6. **The canon is mostly names, now by a blind judgment.** 38 of 60 core families detect a name, place or word (Section 3.7).
+7. **Selection is still not detected,** in a test that could not have detected much (Section 3.5).
+
+Three things are new.
+
+8. **The units can be described, and the descriptions can be tested.** Descriptions written from a unit's strongest examples predict its firing on new text at about the rate the essay reports, and 46% of units still fire when their idea is put in other words (Section 3.7).
+9. **The model's recognition of Batman runs through the canon units,** in numbers that the registered test does not let us count as a pass (Section 3.8).
+10. **Pushing a unit does not produce its description,** although the same procedure works on the essay's own neurons (Section 3.8).
+
+Figure 1 separates the effect of the new rule from that of the new models. Under version 1's rule the models at full precision, Qwen3-32B included, give version 1's numbers again. So it was the rule, and not the size or precision of the model, that moved E1 and the residual test (Section 3.10).
+
+![Figure 1](fig_contrast.png)
+
+**Figure 1.** What changed between versions. Identity (E1), heredity (E2) and version 1's form of the residual test for each model: as published in version 1, at full precision under version 1's rule, and under the new rule.
+
+### 3.2 Presence, the canon, and other film series
+
+**Presence.** Of Qwen3-32B's 3,276,800 units, 1,812,516 fire strongly in at least one of the 114 works, and 885,060 of those are distinctive, meaning present in at most 3% of ordinary film plots. A typical Batman summary has 140,954 units present with its names and 102,256 without (medians). A third of all units (1,035,162) reach their strongest activation in the supplement of code, chat, other languages, news and reviews, which is what the supplement was added for. Only 4,518 take their scale from the study's own texts. For 82,189 positive poles, 5.0% of neurons, the strongest raw activation is an echo of the other sign regime. The essay puts that figure at about 4%, and under version 1's rule those echoes counted as the unit's own.
+
+**The canon.** 7,520 distinctive units are present in at least 6 of the 32 Batman works. Merging those that fire strongly on the same sentences gives 4,996 meme families: 74 in the core (29 or more works), 135 common and 4,787 optional. Counted as units, 334 are in at least 23 works and 120 in at least 29 (Figure 2A). The two 8B models have fewer (44 and 59 units in at least 29 works) and Llama 3.3 70B about as many (114).
+
+Remove the names and most of the canon goes with them. On the name-free texts 48 distinctive units are in at least 23 works and 12 in at least 29. E1's canon, the distinctive units present in at least 80% of the works, has 204 units, and exactly one of them is still present in 70% of the name-free works. Qwen3-8B has none, Llama 3.1 8B one and Llama 3.3 70B ten. Version 1 reported a name-free core of 12 units and read it as "close to the standard definition of a superhero". Under a rule that counts only strong activations, even that has all but gone. Section 3.7 says what the one surviving unit is.
+
+**Is that more of a canon than other bodies of films have?** Three comparisons could have failed.
+
+- *Random sets of 32 ordinary films.* With the 3% cap a random set cannot have a canon, by construction. Without the cap, Batman has 5,765 units in at least 29 works against a mean of 4,033 for 50 random sets, and the largest of the 50 has 4,492. So Batman's summaries share more units than random films do, but about 70% of what 32 Batman summaries share is what any 32 plot summaries share.
+- *Genre sets.* When 32 plots of one genre stand in for the franchise, with base rates taken from the other genres, no drama, comedy, thriller or action set has a single distinctive unit in 23 of its 32 plots, and horror sets average 0.28. Batman has 334. A genre is not a canon by this measure.
+- *Other film series.* Batman has more distinctive units in at least 90% of its works than four of the six series have in theirs, about as many as Kamen Rider, and a third as many as Doraemon (Table 2, Figure 2B). At the 72% bar Kamen Rider is ahead of Batman too.
+
+| Series | Films | Units in 90% or more of the films | Batman works, random subsets of the same size (mean) |
+| --- | --- | --- | --- |
+| Godzilla | 28 | 89 | 102 |
+| Frankenstein | 24 | 39 | 116 |
+| Dracula | 23 | 38 | 119 |
+| Doraemon | 17 | 327 | 108 |
+| Tarzan | 16 | 50 | 114 |
+| Kamen Rider | 15 | 119 | 128 |
+
+**Table 2.** Batman against six other film series from the same plot dataset, Qwen3-32B, original texts: distinctive units present in at least 90% of a series' films.
+
+So Batman does have a canon in this sense, and so do other series. What the count measures is how uniform a series' summaries are, in names and stock phrases as much as in story. A series with a fixed cast and a formula, as Doraemon has, scores highest. In all four models Doraemon is far ahead of the other series and Kamen Rider comes second.
+
+![Figure 2](fig_canon.png)
+
+**Figure 2.** The canon under the new rule, Qwen3-32B. (A) Units present in at least 6, 23 and 29 of the 32 Batman works: distinctive units on the original texts and on the name-free texts, and all units with no base-rate cap beside the mean for random sets of 32 ordinary films. (B) Distinctive units present in at least 90% of each film series' films, against Batman works in random subsets of the same size.
+
+![Figure 3](fig_genome.png)
+
+**Figure 3.** Which works carry which units. Rows are units chosen by rule and explained (Section 3.7), with the explainer's title. Columns are the 32 Batman works and then the 13 relatives, each in date order. The upper half of a cell is filled where the unit is present in the text as written, the lower half where it is present with every name removed. Titles in black were judged, blind, to describe an idea; titles in grey a particular name or word.
+
+### 3.3 E1: identity
+
+**Without names, Batman's canon does not tell Batman from other masked heroes.** For Qwen3-32B the canon share has an AUC of 0.36 against the eight hero films, with a 95% interval of 0.17 to 0.56 (Figure 4). The prediction needed 0.80, so by the criteria registered for version 1 it is falsified, as it is in Qwen3-8B (0.26) and Llama 3.1 8B (0.39). Llama 3.3 70B is different, and is taken up below. The score is at or below chance, which means the hero films carry more of Batman's canon than the name-free Batman works do. Superman, Spider-Man, Daredevil and Iron Man each carry more of it than at least 79% of the Batman works. The result is not a matter of length: on openings of equal length the AUC is 0.37.
+
+The reason is visible in the units. With names present the canon share separates Batman from everything at an AUC of 1.00. Nearly all of those units respond to Batman's names and places, and the name-free texts delete them. What is left fires on superheroes in general, and the summaries of superhero films use that vocabulary more than Batman's own do. Against ordinary films and the literary relatives the name-free canon share still separates Batman (AUC 0.96 and 0.98), as in version 1. It tells a superhero story from other stories. It does not tell Batman from Superman.
+
+**It was not the scoring rule.** Version 1 put this failure down to its scoring rule, because a word-based centroid score reached 0.80. Given the same rule, the units do no better: the centroid of unit activations has an AUC of 0.62, and on the openings 0.43. Its whole-summary value is no better than text length alone, which reaches 0.76 on whole summaries and 0.45 on openings. The word-based centroid stays ahead at 0.80, and it is the only score that also holds on the openings (0.73, above its own shuffled-label null). It still does not meet the full prediction, because the lower end of its interval is 0.64 against a required 0.65. A canon chosen on the name-free texts themselves, a control from version 1, reaches 0.60.
+
+**The model itself does better than its canon.** Asked which hero a name-free summary is about, Qwen3-32B answers Batman for 21 of the 32 Batman works, and also for 4 of the 8 hero films (Table 3). The log-probability it gives to Batman's name separates Batman works from hero films with an AUC of 0.78, about as well as word counts and far better than the canon share. The two are related: across the 32 works the canon share and that log-probability correlate at rho = 0.63. So the canon units do track the model's recognition of Batman. But the recognition draws on more than the units that count as present.
+
+**The largest model is the exception, and it is the one that knows the plots.** Llama 3.3 70B's canon share reaches 0.77 (95% interval 0.60 to 0.91), and 0.65 on openings. That misses the bar, the interval and the openings criterion, so the prediction is not met. It is not falsified either, and ten of this model's 215 canon units survive in the name-free works. This is also the model that says a name-free summary is about Batman for 29 of the 32 works and names the exact film for all 69 ordinary plots (Table 3). For the 29 works it names, the canon share separates them from the hero films at 0.81. For the three it does not name, the figure is 0.33. So in this model the canon units fire on a name-free text when the model has worked out whose story it is. That is recognition of summaries it has read. It is not a name-free essence, and the registered test cannot tell the two apart.
+
+![Figure 4](fig_identity.png)
+
+**Figure 4.** Telling name-free Batman summaries from the eight masked-hero and superhero films, by each model's units, by word counts and by length alone. Large marks are whole summaries with 95% bootstrap intervals; small marks use only the opening of each summary, which is the same length in both groups. The pre-registered bar is 0.80.
+
+### 3.4 E2: heredity, and whether neurons add anything to words
+
+**Adaptations carry their source comic's units.** In Qwen3-32B, on name-free texts, 15% of eligible comics beat the documented source, against 46% expected by chance (exact p = 0.0016; p = 0.0083 when comics are relabelled only within their era). The documented source is the closest eligible comic for four of the nine adaptations and second for two more (Figure 5). The real value is below every placebo target, and 5 of 7 sequels rank their prequel in the top two, so the positive control passes. Heredity is supported, as it was in version 1. Qwen3-8B gives 8% (p = 0.00018), Llama 3.1 8B 14% (p = 0.00047) and Llama 3.3 70B 6% (p = 0.00011).
+
+**Word counts find the sources at least as well.** TF-IDF cosine on the same name-free texts gives 11% (p = 0.00031) and ranks the source first for six of the nine adaptations. Word presence gives 17% (p = 0.0018). Qwen3-32B does not pull ahead of words: its 15% is behind TF-IDF's 11%. Llama 3.3 70B has the best figure of any measure at 6%, and its residual test fails like the others.
+
+**The neurons add nothing that these word measures do not have.** With the seven word measures regressed out of the neuron inheritance rate, 49% of comics beat the source, which is chance (decision test, exact p = 0.69). With every word and code measure regressed out, p = 0.86. In version 1's two-measure form p = 0.20. The other three models agree (decision test p = 0.62, 0.57 and 0.20). The reverse is not true: with the neurons regressed out of TF-IDF cosine, the words still find the sources (11%, p = 0.0004). On this corpus the words carry the trail and the neurons carry part of it.
+
+Version 1 reported that this test passed for Llama 3.1 8B (p = 0.010 to 0.033) and read it as a hint that Llama's neurons add a little beyond words. That reading does not survive. The form of the test used there passes for word-only measures in the neurons' place (Section 2.5). Put through the decision test, no model passes under either rule (Section 3.10).
+
+![Figure 5](fig_heredity.png)
+
+**Figure 5.** Heredity on name-free texts. (A) For each adaptation, the rank of its documented source among the eligible comics, by each model's units and by TF-IDF word counts. (B) The share of eligible comics that beat the documented source, averaged over the nine adaptations, for units, for the two word measures, and for units after the word measures are regressed out.
+
+### 3.5 E3: selection
+
+Selection was not detected, as in version 1. In Qwen3-32B the correlation between an early work's popularity and the spread of its units into later works is rho = 0.35 (one-sided p = 0.37). Qwen3-8B gives 0.35 (p = 0.37), Llama 3.1 8B 0.17 (p = 0.56) and Llama 3.3 70B −0.17 (p = 0.83). With 15 early works the test would detect a true correlation of 0.3 about a quarter of the time, so this says little either way.
+
+### 3.6 Does the model simply recognise the plots?
+
+These models have read Wikipedia, and it shows (Table 3). Given a name-free summary, Qwen3-32B names the exact work for 52 of the 69 ordinary films and 5 of the 8 hero films. It does so for only 4 of the 32 Batman works: it knows it is reading Batman, but not which Batman. Llama 3.3 70B names the exact work for every one of the 69 ordinary films and for 15 of the Batman works.
+
+| | Qwen3-32B | Qwen3-8B | Llama 3.1 8B | Llama 3.3 70B |
+| --- | --- | --- | --- | --- |
+| Batman works it says are about Batman | 21 of 32 | 20 of 32 | 16 of 32 | 29 of 32 |
+| Batman works it identifies by title | 4 of 32 | 2 of 32 | 2 of 32 | 15 of 32 |
+| Hero films it says are about Batman | 4 of 8 | 4 of 8 | 1 of 8 | 1 of 8 |
+| Hero films whose own hero it names | 4 of 7 | 3 of 7 | 5 of 7 | 7 of 7 |
+| Ordinary films it identifies by title | 52 of 69 | 36 of 69 | 54 of 69 | 69 of 69 |
+| AUC of its log-probability of "Batman", Batman works against hero films | 0.78 | 0.57 | 0.76 | 0.90 |
+
+**Table 3.** What each untouched model says about a name-free summary.
+
+This matters for how the experiments are read. Had E1 passed, the paper would have had to say that the model recognises Batman's plots, which is a different thing from a name-free essence. In the three models up to 32B it failed, so the question does not arise. In Llama 3.3 70B it nearly passes, and Section 3.3 reads it that way. For E2 the worry runs the other way: could memorised plots carry the source trail? Qwen3-32B identifies both the adaptation and one of its sources for only one of the nine pairs (The Dark Knight Rises), and that pair is the one where the units place the source worst. Llama 3.3 70B identifies both for five of the nine, and its units place the source no better for those five than for the other four (7% and 6% of comics beat the source). So recall of specific works does not explain the heredity result.
+
+### 3.7 What the units are, and whether their descriptions hold up
+
+The rule of Section 2.6 chose 241 units in Qwen3-32B and 207 in Qwen3-8B, which has fewer core families. Each got a title and an explanation from an explainer that read its strongest examples, and each explanation was then tested on texts written by someone who had seen nothing else.
+
+**The descriptions predict new text about as well as the essay's do.** In Qwen3-32B, 81% of the texts that a tester wrote to fire a unit did fire it strongly, against 3% of the near misses and 0.1% of the texts on a distant subject (Table 4, Figure 6). The essay reports 76%, 11% and 1% for its own gallery. By the essay's scoring, 232 explanations won, 9 tied and none lost. The floor matters here, because a tester writes on the unit's subject and many units share subjects: on texts written for *other* units, a unit fires strongly 6% of the time and an explanation "wins" 17% of the time. So a win is weak evidence on its own, and the rates are the result to read.
+
+| | New examples (A) | Idea without the key words (B) | Near misses (C) | Distant (D) | Won / tied / lost | Idea-bound |
+| --- | --- | --- | --- | --- | --- | --- |
+| Qwen3-32B, 241 units | 81% | 45% | 3% | 0.1% | 232 / 9 / 0 | 110 (46%) |
+| of which idea units, 126 | 74% | 51% | 2% | 0.2% | 118 / 8 / 0 | 72 (57%) |
+| of which name or word units, 115 | 88% | 38% | 5% | 0% | 114 / 1 / 0 | 38 (33%) |
+| On texts written for other units | 6% | 5% | | | wins 17% | 2.4% |
+| Qwen3-8B, 207 units | 85% | 40% | 4% | 0.7% | 201 / 6 / 0 | 73 (35%) |
+| The essay's gallery [10] | 76% | | 11% | 1% | 164 / 15 / 4 | |
+
+**Table 4.** The explanation tests: the share of each kind of test text on which the unit fires strongly (at least 30% of its scale). A unit is idea-bound when at least 3 of its 5 keyword-free texts fire strongly and at most one keyword-reusing near miss does.
+
+**About half the units follow their idea when its key words are taken away.** Texts that express a unit's idea while using none of its key words fire it strongly 45% of the time, and 110 of the 241 units (46%) are idea-bound, against a floor of 2.4%. On the same texts the unit separates the keyword-free texts from the near misses with a mean AUC of 0.87. The keyword analyst's search terms manage 0.51 and TF-IDF similarity to the unit's examples 0.45. The word measures are at chance by construction, since the texts were written to defeat key words, so this is not a contest that words could have won. What it shows is that these units are not keyword detectors: a description of what a unit responds to predicts its firing on text that shares no key word with the description. That is the essay's claim, and it holds on the units this study uses. It is a claim about units on short test texts. It does not show that units find a story's source better than words do, and Section 3.4 shows that on this corpus they do not.
+
+**Batman's canon is mostly names and the comic-book register.** A blind judge who saw only the descriptions put 38 of the 60 core-canon families down as detecting a particular name, place or word (63%, 95% interval 52% to 75%). Version 1 reached the same view by hand, with 27 of 33. The titles make the point: "The name 'Gotham' in any sense", "'Dent' in Harvey Dent; Batman villain names", "The Joker and clownish comic figures", "Costumed-superhero name stems, especially Bat- and Wayne". Most of the rest are of two kinds. Some respond to superhero-comics writing as a genre ("Superhero conventions: first appearance, costume, powers"; "DC Comics titles, teams and issue numbers"). Others sit on the linking word just before a name and fire when the model expects a comic-book character to be named next ("Linking word just before a villain is named"). None of the 60 was judged to be a story pattern, something that happens in a story.
+
+**The one unit of the name-free core** is L38·N18216−, titled "Superhero comics: heroes versus costumed villains". It is present in 24 of the 32 name-free Batman works, and it passed every test, including all five keyword-free texts. It is a genre unit. It is also present in 5 of the 8 name-free hero films, which is E1's failure in one unit.
+
+**What separates name-free Batman from other heroes is mostly our own editing.** The 40 distinctive units that best tell name-free Batman works from the hero films should have been where Batman's essence showed. Their titles are "Token right after a digit", "Unexpected token straight after a number or code", "Just after a name missing from the text", "Text with a missing word or glitch". They respond to the placeholder codes and the gaps they leave. The typical one is present in 1 of the 32 Batman works as written and in 13 or 14 once the names are replaced, and it is also present in 15 of the 69 name-free ordinary films. They are the hardest set to describe as well: 57% of their new examples fire, against 97% for the core, and 8 of the 9 ties are here. One of the 40 is about the story: "Toxins, poisons and toxic substances".
+
+Batman's summaries simply have more names to replace. A name-free Batman text holds a median of 105.5 placeholder codes and a hero film 70.5, and the count of codes alone tells the two groups apart with an AUC of 0.88, which is higher than any unit or word score in Figure 4. Code tokens are masked (Section 2.1), but the words around a code still show that something was cut. A unit that marks a text as edited is not a meme. This is a limit of the name-free method itself, in version 1 as much as here, and it means that a pass on E1 would have needed checking against it.
+
+**Story ideas appear once the 3% cap is lifted.** The 40 commoner units most over-represented in Batman works include "Character taking on a named alter ego", "The word 'vigilante': crime-fighting outside the law", "Villain and hero as stock story roles" and, among the common-tier families, "Superhero's double identity: civilian linked to hero persona". These are the superhero ideas version 1 found in its name-free core, and they are real units whose descriptions pass the tests. The first three are in more than 3% of ordinary film plots, so they are not distinctive. All four also turn up in the hero films, so none picks out Batman.
+
+**The units that carry the source trail are ordinary ones.** The 20 units drawn from those an adaptation shares with its source comic are grammar and everyday story content: "Pointing back to something just mentioned", "Victim noun right after a violent verb", "Going into a river, lake or floodwater", "Two people acting or bonding as a pair". The 20 drawn from the rest look the same. This fits Section 3.10: heredity is carried by ordinary story material, which words carry too.
+
+**Three checks on the descriptions themselves.**
+
+- *Near the threshold the descriptions are precise but incomplete.* Presence is decided at 30% of scale, well below the examples an explainer reads. On 1,419 passages from ordinary plots where a unit fires at 30 to 60% of its scale, a blind judge thought the description predicted the firing for 48%. On 1,418 passages where the unit is silent, the judge wrongly predicted a firing for 3%. Coverage rises with strength, from 43% at 30 to 40% of scale to 65% at 50 to 60%. So when a unit is present in a work, its title is the best single description of why, and about half the time something else set it off. A first round of this check was discarded because the item ids gave the answer away (Section 2.10).
+- *A second model family mostly agrees on what kind of thing a unit is.* Qwen3-32B, given the same descriptions as a multiple-choice question, agreed with the Claude judge on whether a unit detects an idea or a name or word for 80% of the units (kappa 0.61), and on the finer nine-way kind for 55% (kappa 0.45).
+- *Checks that need no judge.* In 46% of a unit's strongest examples the peak token is punctuation or a function word, which is what units that anticipate the next word look like. The single best word predicts a unit's activation with a median correlation of 0.36. Held-out strong examples contain one of the explainer's key words 44% of the time, against 12% for random passages.
+
+**The larger model's units are not easier to explain, but more of them follow ideas.** The plan predicted a higher win rate in Qwen3-32B than in Qwen3-8B. It is 96% against 97% (one-sided p = 0.82), so the prediction is not supported. Both are near the ceiling of what a win can show. The share of idea-bound units is higher in the larger model, 46% against 35% (difference 10 points, 95% interval 1 to 19), a comparison the plan did not single out.
+
+![Figure 6](fig_explanations.png)
+
+**Figure 6.** Testing the descriptions. For each kind of test text, the share on which the described unit fires strongly, for Qwen3-32B and Qwen3-8B, with the essay's reported rates and the rate on texts written for other units.
+
+### 3.8 Steering and ablation
+
+**Steering works on the essay's neurons and not on ours.** The steering multiple was chosen on 40 neurons from the essay's public gallery. With a neuron held at 5 times its scale, a blind judge picked its title out of five for 23 of the 40 (57%, against 20% by chance, p = 2 × 10⁻⁷). At 1, 2 and 3 times the scale the judge was right for 12, 13 and 18. So the mechanism does what the essay says it does, on the neurons the essay chose to show.
+
+On the study's units it fails. The judge picked the right title for 17 of the 126 idea units (13%, p = 0.98 against chance), and for 12 of the 115 name or word units (10%). The criterion is not met. Pushing a unit did change what the model wrote: in only 3 of the 241 items were all three continuations the same as the unpushed ones. But the change did not point to the unit. The judge answered "none of these" for 147 of the 241 items, and a unit's own key words turn up in 24% of the continuations when it is pushed and in 25% when it is not. Genre units did best, at 7 of 23 (30%, p = 0.16).
+
+We can think of three reasons and cannot tell them apart. The gallery neurons were picked by the essay's authors as clear cases, and ours were picked by rule from Batman's canon, where most are name pieces, slots before a name and grammar, none of which has much to say in a neutral story opening. The judge's task was also harder here, because the four wrong titles were of the same kind as the right one. And our mechanism is our own guess (Section 4.4). Whatever the reason, the descriptions in Section 3.7 are supported by what the units respond to, and not by what they do when pushed.
+
+**Ablation: Batman's canon carries the model's recognition of Batman, but the test does not pass by its own rules.** Qwen3-32B is asked which hero a name-free summary is about, with that work's canon units switched off while it reads the summary: a median of 212 units out of 3.3 million. The log-odds that its reply begins with Batman's name fall by 2.39 on average (Table 5, Figure 7). Random sets of as many units, matched on layer, pole and how many name-free Batman works they are present in, lower them by 0.02 on average, and the largest of 200 such sets by 0.12. Sets also matched on how much activation they remove do no more (largest 0.11). The canon's effect is larger than every set's in 24 of the 32 works. With the canon off, the model's replies name Batman for 13 works where they named him for 20. And the effect is specific: the same units switched off in the seven hero films leave the log-odds of each film's own hero unchanged (−0.07; p = 0.0017 for the difference).
+
+| | Qwen3-32B | Qwen3-8B |
+| --- | --- | --- |
+| Canon units switched off per work (median) | 212 | 78 |
+| Fall in the log-odds of Batman's name, mean over the 32 works | 2.39 | 1.33 |
+| 200 random sets matched on works: mean, largest | 0.02, 0.12 | 0.03, 0.11 |
+| p against those sets | 0.005 | 0.005 |
+| 200 sets also matched on activation removed: largest | 0.11 | 0.12 |
+| p against those sets | 0.005 | 0.005 |
+| Hero films, log-odds of their own hero's name: mean fall | −0.07 | 0.80 |
+| p that the fall is larger for Batman | 0.0017 | 0.28 |
+| Replies that name Batman: untouched, then canon off | 20, then 13 | 20, then 16 |
+| Untouched replies that do not begin with a name (limit 4) | 5 | 0 |
+| Criterion | not evaluable | not met |
+
+**Table 5.** The ablation. With 200 random sets the smallest possible p is 0.005.
+
+By the rules set beforehand, neither model passes. The plan said the test would not count if more than 4 of the 32 untouched replies began with something other than a name, because the score is the probability of the reply's first word. In Qwen3-32B five do (three begin "The story is about", two begin with a placeholder code), so its ablation is not evaluable with this question, and we do not count it as a pass. Qwen3-8B answers with a bare name every time, and its canon's effect is as clear (1.33 against 0.03), but it is not specific to Batman: the hero films' own names fall by 0.80 (p = 0.28).
+
+So the numbers say that a few hundred units carry much of what lets Qwen3-32B recognise Batman in a name-free summary, and the registered test does not confirm it. A question that forces a one-word answer would settle it, and that is a new test.
+
+**Where the effect comes from.** Four further versions were run with 20 random sets each. They are descriptions, not tests, and the canon's effect was the largest of the 21 in every one.
+
+- *Most of the effect is in weak activity.* Switching off only the canon's strong firings, at 30% of scale or more, lowers the log-odds by 0.42. Switching off only its weaker activity lowers them by 1.75. In Qwen3-8B the figures are 0.34 and 1.05. On name-free text the canon units seldom fire strongly, which is why E1 fails. Their weak activity still adds up to most of what the model uses.
+- *With the names present the canon is not needed.* On the original texts the fall is 0.28, and the model names Batman for 30 of the 32 works before and after. The names reach the answer by other routes as well.
+- *Switching the canon off on the question as well as the summary* gives a larger and less specific effect: a fall of 5.34, replies naming Batman down from 20 to 2, and the hero films' own names down by 1.50.
+
+![Figure 7](fig_ablation.png)
+
+**Figure 7.** Switching off Batman's canon while a model reads a name-free summary. For each model, the mean fall in the log-odds that the reply begins with Batman's name, for the canon and for each of the random sets of matched units, and the fall in the hero films' own hero names.
+
+### 3.9 The same units in other models
+
+Version 1 found that its strongest memes had twins in Llama 3.1 8B, the units there that correlate best with them, at a median correlation of 0.82. It also found that the agreement was mostly about names and collapsed without them. Those figures were measured on the sentences the twins were chosen on. Here each of the 241 explained Qwen3-32B units has a twin in each other model, chosen on the original sentences and then scored where it was not chosen.
+
+**A twin responds to the same description, more weakly.** On the texts a tester wrote for the Qwen3-32B unit, its Qwen3-8B twin fires strongly on 33% of the new examples and 3% of the near misses, where the unit itself fires on 81% and 3% (Table 6). The twin's description wins for 61% of the units, against 24% when units are paired with texts written for another unit (p = 0.0001), and 19% of twins are idea-bound against 5%. The two Llama models, from another company, give much the same at 8B and at 70B: 28% and 27% of new examples, 3% of near misses, and wins for 52% and 49% of units against 20% and 19%.
+
+**On name-free sentences a twin is no closer than a unit that shares its best word.** Twins correlate with their Qwen3-32B unit at a median of 0.61 to 0.62 on the original sentences in all three models. On the name-free sentences that falls to between 0.26 and 0.28. Control units, matched to the twin on how well a single word predicts them, reach 0.38 in all three. For the idea units alone the twins and the controls are level (a difference of −0.02, 95% interval −0.07 to 0.02, in Qwen3-8B). The plan asked whether twins beat both controls for idea units, and in no model do they.
+
+| | Qwen3-8B | Llama 3.1 8B | Llama 3.3 70B |
+| --- | --- | --- | --- |
+| Twin's correlation with the unit, original sentences (median) | 0.61 | 0.62 | 0.62 |
+| The same on name-free sentences | 0.28 | 0.26 | 0.27 |
+| Word-matched control units, name-free sentences | 0.38 | 0.38 | 0.38 |
+| Twin fires strongly on the unit's new examples (A) | 33% | 28% | 27% |
+| On its keyword-free texts (B) | 22% | 20% | 19% |
+| On its near misses (C) | 3% | 3% | 3% |
+| Twin's description wins, against mismatched pairs | 61%, 24% | 52%, 20% | 49%, 19% |
+| Twins that are idea-bound, against mismatched pairs | 19%, 5% | 18%, 4% | 17%, 3% |
+
+**Table 6.** Twins of the 241 explained Qwen3-32B units in three other models. The Qwen3-32B units themselves fire on 81% of their new examples, 45% of their keyword-free texts and 3% of their near misses.
+
+So the same descriptions pick out related units across models and across companies, which is some support for treating a unit's idea as more than an accident of one network. But a twin is a much weaker detector of that idea than the unit it was matched to, and in name-free text the match is no better than shared vocabulary would give, as version 1 found.
+
+### 3.10 Robustness
+
+All of the checks below were fixed in the plan. Unless stated they are for Qwen3-32B.
+
+**The threshold, the score and the cap.** Across 56 settings (a threshold of 20, 30, 40 or 50% of scale; the strongest sentence or the mean of the three strongest; a base-rate cap from 1% to 30%, or none), the name-free canon share never reaches the bar: its AUC against the hero films runs from 0.25 to 0.67, and in no setting is it above its shuffled-label null. Heredity is below 0.05 in 7 of the 8 settings with no cap and in 42 of the 45 settings where it can be evaluated. The residual decision test passes in none of the 8 uncapped settings. Selection is below 0.05 in no setting. The two smaller models give the same picture (Table 7). Llama 3.3 70B was run at the primary setting only (Section 2.10).
+
+| | Qwen3-32B | Qwen3-8B | Llama 3.1 8B |
+| --- | --- | --- | --- |
+| E1: canon share AUC, range over 56 settings | 0.25 to 0.67 | 0.26 to 0.79 | 0.27 to 0.85 |
+| E2: uncapped settings below 0.05 | 7 of 8 | 7 of 8 | 8 of 8 |
+| E2: evaluable settings below 0.05 | 42 of 45 | 36 of 40 | 40 of 41 |
+| Residual decision test: uncapped settings below 0.05 | 0 of 8 | 0 of 8 | 0 of 8 |
+| E3: settings below 0.05 | 0 of 56 | 0 of 51 | 0 of 52 |
+
+**Table 7.** The sensitivity grid: threshold by score by base-rate cap. E1 values are whole-summary AUCs, which are not length-controlled.
+
+Llama 3.1 8B's canon share does reach 0.80 in three settings (0.83, 0.85 and 0.83), all with no base-rate cap. With no cap the canon is hundreds to thousands of common units, and a score built from them rises with the length of a text, which on its own gives 0.76. Those settings have no openings version, so length cannot be ruled out for them. At the primary setting, where the openings exist, Llama's canon share is 0.39 on whole summaries and 0.40 on openings.
+
+**The cap and heredity.** Heredity weakens as the cap tightens. In Qwen3-32B's E2 multiverse of 12,528 specifications, 81% of the uncapped name-free specifications are below 0.05, against 68% at a 5% cap and 29% at a 1% cap. Qwen3-8B goes from 81% to 39% and 10%, and Llama 3.1 8B from 99% to 80% and 29%. Words behave the same way: word presence restricted to words in at most 3% of ordinary plots loses the trail (p = 0.06). The source trail is carried by ordinary story vocabulary and the units that follow it, not by rare units. Version 1 reported that heredity held in 99.6% of its specifications. Under the new rule the figure for Qwen3-32B is 84% over all specifications: 99.9% on the original texts and 68% on the name-free texts. It is lower because the grid now includes tight caps and high thresholds, where few units are left.
+
+**Other versions of the rule, at the primary setting.** None of these changes a conclusion (Table 8).
+
+| Version | E1 canon share AUC | E2 share | E2 exact p | Residual p | E3 rho |
+| --- | --- | --- | --- | --- | --- |
+| Primary | 0.36 | 0.149 | 0.0016 | 0.69 | 0.35 |
+| Scale without the study texts | 0.35 | 0.149 | 0.0016 | 0.69 | 0.31 |
+| Scale from the fifth-strongest example | 0.37 | 0.072 | 0.00005 | 0.73 | 0.34 |
+| Openings only | 0.37 | 0.120 | 0.0003 | 0.40 | 0.40 |
+| Codes left in | 0.43 | 0.124 | 0.0007 | 0.87 | 0.06 |
+| Token after each code masked too | 0.34 | 0.109 | 0.0002 | 0.60 | 0.37 |
+| Echo regime left in | 0.43 | 0.219 | 0.017 | 0.87 | 0.13 |
+| Weak poles left out (under 25% of the other pole) | 0.36 | 0.124 | 0.0005 | 0.65 | 0.33 |
+| Units scaled by the supplement left out | 0.37 | 0.123 | 0.0009 | 0.69 | 0.35 |
+
+**Table 8.** Qwen3-32B under other versions of the presence rule. The residual p is the decision test's.
+
+Two rows deserve a note. Leaving the echo regime in, as version 1 did, weakens heredity (22% against 15%) and costs the sequel control a pass (4 of 7). The echo is noise for this purpose, as the essay's account of it would predict. And taking each unit's scale from its fifth-strongest example, which one freak token cannot set, makes heredity stronger (7%).
+
+**What changed a result: the pipeline, the rule or the model.** Every primary statistic was also computed under version 1's rule on the new activations (Table 9, and Figure 1 in Section 3.1).
+
+| Model | Version | E1 AUC | E2 share | E2 exact p | Residual p, version 1's form | Residual p, decision test | E3 rho |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Qwen3-8B | Version 1 as published (4-bit) | 0.52 | 16% | 0.0026 | 0.089 | | 0.25 |
+| Qwen3-8B | Full precision, version 1's rule | 0.51 | 14% | 0.0003 | 0.015 | 0.22 | 0.29 |
+| Qwen3-8B | Full precision, new rule | 0.26 | 8% | 0.0002 | 0.26 | 0.62 | 0.35 |
+| Llama 3.1 8B | Version 1 as published (4-bit) | 0.54 | 10% | 0.0002 | 0.010 | | 0.00 |
+| Llama 3.1 8B | Full precision, version 1's rule | 0.53 | 11% | 0.0003 | 0.035 | 0.14 | −0.04 |
+| Llama 3.1 8B | Full precision, new rule | 0.39 | 14% | 0.0005 | 0.20 | 0.57 | 0.17 |
+| Qwen3-32B | Full precision, version 1's rule | 0.52 | 14% | 0.0007 | 0.023 | 0.26 | 0.25 |
+| Qwen3-32B | Full precision, new rule | 0.36 | 15% | 0.0016 | 0.20 | 0.69 | 0.35 |
+| Llama 3.3 70B | Full precision, new rule | 0.77 | 6% | 0.0001 | 0.017 | 0.20 | −0.17 |
+
+**Table 9.** The same statistics by model, precision and rule. E1 is the name-free canon share against the hero films. The decision test did not exist in version 1.
+
+Three things follow.
+
+- *Full precision and size changed little, up to 32B.* Under version 1's rule the full-precision 8B models give nearly the numbers version 1 published, and Qwen3-32B gives the same again (E1 0.52, E2 14%).
+- *The fall in E1 comes from the rule.* In these three models the canon share drops from about 0.52, which is chance, to between 0.26 and 0.39 when only strong activations count. Below chance means the hero films carry more of the canon than the name-free Batman works do (Section 3.3).
+- *Version 1's residual test passes under version 1's rule in all three models,* Qwen3-8B included (p = 0.015, 0.035 and 0.023), and in none of them under the new rule. In Llama 3.3 70B it passes under the new rule as well (p = 0.017). The decision test passes in none of the seven cells. This is what a test that leans on common words would do: weak activations follow common words, and the form of the test version 1 used can be passed by a word measure that does the same (Section 2.5).
+
+**Counting cells honestly.** The six model-by-rule cells of the three models with both rules analyse the same 32 works, so six results below 0.05 are not six independent findings. E2 is below 0.05 in all six. When each relabelling of the comics is applied to all six cells at once, six cells below 0.05 has a probability of 0.0096, so the count adds little to any one cell's p value. Version 1's form of the residual test is below 0.05 in three of the six, which has a probability of 0.046 under the same joint null, and all three are under version 1's rule. The residual decision test is below 0.05 in none.
+
+**Trees.** As in version 1, a tree built from the distances between works' meme sets does not recover documented sources. Ranking the 12 comics by distance to each adaptation puts the source at a mean rank of 4.4 in Qwen3-32B, 4.7 in Qwen3-8B and 4.6 in Llama 3.1 8B, against 5.8 by chance (p = 0.12, 0.17 and 0.14). TF-IDF distance on the same texts puts it at 2.4 (p = 0.0004). The models' distance matrices agree closely with one another (Mantel r = 0.98 to 0.99, and 0.94 to 0.96 with TF-IDF distance held fixed), well above matrices built from random units (0.64 to 0.79 on average). So the models agree about which works are alike, and what they agree on is not the line of descent. Works of the same era sit slightly closer together than works of different eras (ratio 1.03, p = 0.04 in Qwen3-32B).
 
 ## 4. Discussion
 
-[DRAFT IN PROGRESS]
+### 4.1 What the better method changed
+
+Version 1's limitations pointed at its method: small quantised models, a presence rule that counted weak activations, labels read off the corpus, and no causal test. This version fixed each of those in the way the essay recommends. The conclusions about Batman did not improve. Where they moved, they moved against the idea that neurons give a better account of a story's lineage than words do.
+
+- Heredity is supported in all four models, and word counts find the sources as well or better. The 32B model does not pull ahead of the 8B ones or of TF-IDF.
+- The one result in version 1 that suggested neurons add something to words, Llama's residual test, came from a test that words alone can pass. Under a test that words cannot pass, no model adds anything, under either rule.
+- Without names the canon is worse than chance at telling Batman from other heroes in the three models up to 32B. Version 1 blamed its scoring rule. Given the words' scoring rule, the units do no better than a count of sentences. The 70B model reaches 0.77, short of the bar, and it does so by recognising the summaries.
+- Version 1's name-free core of twelve units, which read like a definition of a superhero, was made of weak activations. One unit is left in Qwen3-32B.
+
+What did improve is the thing the essay is about, the units themselves. A description written from a unit's strongest examples predicts where it fires in new text about as well as the essay reports for its own neurons, and nearly half of the units still fire when the idea is expressed without its key words. A second model family largely agrees about what kind of thing each unit is. So the definition this paper started from, that a meme is whatever makes a given neuron fire, can be applied and checked unit by unit. That is a real gain over version 1, where a label was a reading of eight sentences.
+
+### 4.2 Why cleaner units did not give a better lineage
+
+Four things stand between a unit that can be described and a unit that is useful for tracing culture, and this study ran into all of them.
+
+**The canon is made of names.** The units that recur across Batman works and are rare elsewhere respond to Batman's names and to comic-book writing. That is a fair description of what makes a text recognisably Batman, and it is also what any reader or word count would use. Take the names away and what is left is the superhero genre, which Batman shares with the films he is being told apart from.
+
+**Removing names leaves a mark.** The name-free texts were meant to show what remains of a story without its names. The units that best distinguish name-free Batman respond to the placeholders themselves, and a count of placeholders separates Batman from the hero films better than any score built from units or words. Any future version of this test needs rewritten stories, not redacted ones. The pre-registered planted-story experiments are built that way.
+
+**Presence is decided where descriptions are weakest.** The essay's claim is about strong activations, and a description is written from the strongest. Presence in a work is decided at 30% of scale, and there the description accounts for about half of the firings. So a grid of which works carry which memes is noisier than the titles on its rows suggest.
+
+**What can be described and what the model uses are different sets of activity.** The essay's working rule is that a neuron's strong activations carry its meaning, and the explanation tests bear that out. But when Batman's canon is switched off, about three quarters of the effect on the model's answer comes from activity below 30% of scale (1.75 of 2.39 in log-odds), which is the activity the presence rule discards. The rule that makes a unit describable throws away signal the model uses. Version 1's rule kept that signal and could not say what it meant. Neither rule gives both.
+
+The corpus sets a ceiling of its own. Wikipedia describes a film and the comic it adapts in much the same words, so word counts are close to the best any method could do here, and a tie is the most a neuron could have hoped for.
+
+### 4.3 Can creativity be reverse-engineered?
+
+Not from this evidence. What the study supports is narrower. Inheritance between stories can be measured automatically, from text, with a test that has a known false-positive rate: adaptations carry their sources' material. A language model's neurons are units that can be named, and the names can be tested and can fail. And a few hundred of those units appear to carry much of what lets the largest model recognise Batman in a summary with no names in it.
+
+What it does not support is that neurons see more of a story's ancestry than its words do, or that there is a name-free essence of Batman for them to find. On 32 Wikipedia summaries the first is close to untestable, because the words already carry the trail. The experiments that could show it, on stories where the wording has been changed on purpose, are designed and registered, and have not been run.
+
+### 4.4 Limitations
+
+**The corpus is version 1's.** It is one franchise of 32 works, 9 adaptations with 7 source comics, 8 hero-film negatives and 15 early works for the selection test. The texts are 2020s Wikipedia retellings, with no works from 1967 to 1985, and the name-free versions depend on an AI rewriter to find the names. The name-free texts also differ in how much was replaced: Batman's hold more placeholder codes than the hero films', and units can see where a name was cut (Section 3.7). Every name-free comparison between the two groups carries that confound. Wikipedia describes a comic and the film that adapts it in much the same words, so on this corpus a tie with word counts is close to the best any unit could do. A better method cannot fix any of this.
+
+**This is a second analysis of the same works.** The plan was fixed before the new models read a study text, but it was written knowing how version 1 came out. Where the two versions agree, that is the same 32 works giving the same answer twice, and the two 8B models are near-repeats of version 1's.
+
+**The scale is smaller than the essay's.** A unit's scale is one maximum over about 48 million tokens, where the essay had 100 million to 10 billion, so "30% of the strongest example" is somewhat easier to reach here. The reference corpus also holds a little Batman text (a few Wikipedia articles about Batman spin-offs), which can set the scale of a unit for Batman's names. The reference pass reads documents in padded batches at 16-bit precision, which changes activations slightly from a single reading. Section 3.10 varies the scale and the threshold.
+
+**The explanations are one AI reading.** The essay's explanations come from agents that probe, ablate and steer for themselves. Ours come from an explainer that read the strongest examples once and ran nothing. The testers' texts are short, AI-written and read without context, and units that need context had to be set aside. Every agent in the loop, judges included, belongs to one model family. Qwen3-32B repeated the kind and steering judgments, and no human has audited any of it. The tests support claims about these labels on these units. They are not a test of neurons against keywords, embeddings or an LLM reading the text, which is what the pre-registered planted-story experiments are for.
+
+**The causal tests rest on our own choices.** The essay does not publish how it steers, so the mechanism here (holding a unit at a multiple of its scale at every position) is ours, and the multiple was the largest of four tried. Steering failed on the study's units, and we cannot say whether that is the units, the judge's harder task or the mechanism. The ablation switches units off on the summary's tokens only and scores one question in one wording. In Qwen3-32B that wording drew five replies that do not begin with a name, one more than the rule allowed, so the clearest causal result in the paper is not a confirmed one.
+
+**The 3% cap favours names.** Ordinary story patterns are commoner than 3% in film plots, so a canon of distinctive units is tilted towards names and rare words by construction. The units chosen without the cap (Section 3.7) and the uncapped analyses are there to show the other side.
+
+**Selection is untested in any useful sense.** Fifteen early works give about a quarter of the power needed to see a moderate effect.
+
+### 4.5 Next
+
+Version 1 ended with a list of experiments designed to find out whether neurons see more than words. They have since been pre-registered in the repository's `preregistration/` folder, and none has run. This version does not replace them, and its results sharpen what they need to show.
+
+- **Planted stories.** New stories with chosen ideas written in, matched stories without them, and decoys that use an idea's words without the idea. This is the direct test of whether a unit follows an idea when the words change, with a control twin for every story. The explanation tests here are a weaker version of it, on labels and short texts.
+- **A head-to-head on accuracy and cost.** Neurons against keywords, embedding vectors and an LLM reading the texts. Section 3.3 gives a first hint of how that may go: asked directly, the model tells Batman from other heroes better than its own canon units do.
+- **Lineages where wording cannot carry the signal.** Adaptations across languages, loose adaptations whose names, settings and wording all differ, and stories rewritten in stages.
+- **Batman's family across culture, and mutation and selection.** These need a larger and more varied lineage than 32 summaries.
+
+The pre-registration names the 4-bit 8B models and version 1's rule as primary. This version shows that a larger model at full precision under a stricter rule gives the same answers on the experiments, while its units are easier to explain and test. Whether to amend the pre-registration before any of it runs is a decision for its first author, and it has not been taken here.
 
 ## References
 
