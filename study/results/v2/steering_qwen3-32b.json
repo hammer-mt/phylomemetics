@@ -202,6 +202,12 @@
    "other_units_forced": 0.17653190948385455
   }
  },
+ "did_pushing_change_the_text": {
+  "items": 241,
+  "items_with_every_continuation_unchanged": 3,
+  "continuations": 723,
+  "continuations_unchanged": 60
+ },
  "criterion_met": false,
  "verdicts": {
   "i111": {

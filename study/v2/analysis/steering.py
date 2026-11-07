@@ -247,6 +247,9 @@ def study_score(tag):
                           "name_units": {"n": int(sum(not tests[it["unit"]]["is_idea"] for it in sham)),
                                          "answered_none": int(sum(v.get(it["id"], {}).get("choice") == "none" for it in sham if not tests[it["unit"]]["is_idea"]))}},
            "key_words_in_continuations": {"idea_units": keyword_rate(idea), "name_units": keyword_rate(name)},
+           "did_pushing_change_the_text": {"items": len(real), "items_with_every_continuation_unchanged": int(sum(it["forced"] == it["normal"] for it in real)),
+                                           "continuations": int(sum(len(it["forced"]) for it in real)),
+                                           "continuations_unchanged": int(sum(a == b for it in real for a, b in zip(it["normal"], it["forced"])))},
            "criterion_met": bool(idea and acc(idea)["p_above_chance"] < 0.05),
            "verdicts": {it["id"]: dict(v.get(it["id"], {}), answer=it["answer"], unit=it["unit"], sham=it["sham"]) for it in d["items"]}}
     C.save(out, f"steering_{tag}.json")
