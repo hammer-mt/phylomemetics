@@ -37,9 +37,10 @@ from matplotlib.lines import Line2D  # noqa: E402
 from matplotlib.patheffects import withStroke  # noqa: E402
 from matplotlib.ticker import MaxNLocator  # noqa: E402
 
-TITLE = "Switching off Batman's canon while a model reads a name-free summary"
+TITLE = "Switching off Batman's canon lowers the model's recognition of Batman"
 SUBTITLE = ("Each model is asked which hero the story is about. Shown is how far the log-odds that its reply starts\n"
-            "with the hero's name fall when a set of units is switched off (0 = no change).")
+            "with the hero's name fall when a set of units is switched off (0 = no change). By the rules set beforehand\n"
+            "neither test passes: five Qwen3-32B replies do not begin with a name, and Qwen3-8B's effect is not specific.")
 PANEL_A = "Mean drop over the works: the canon against random sets of matched units"
 PANEL_B = "{model}, work by work: drop in the log-odds of the hero's name with the canon switched off"
 X_LABEL = "Mean drop in the log-odds of the hero's name"

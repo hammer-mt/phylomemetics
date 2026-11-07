@@ -29,7 +29,7 @@ style.setup()
 import matplotlib.pyplot as plt  # noqa: E402
 from matplotlib.lines import Line2D  # noqa: E402
 
-TITLE = "Telling Batman from other hero films once the names are removed"
+TITLE = "Without names, no score built from units tells Batman from other hero films"
 SUBTITLE = ("AUC of the name-free Batman summaries against masked-hero and superhero films, by score and model.\n"
             "Small marks use only the opening of each summary, which is about the same length in both groups.")
 

@@ -36,7 +36,7 @@ from matplotlib.lines import Line2D  # noqa: E402
 from matplotlib.patheffects import withStroke  # noqa: E402
 from matplotlib.ticker import MaxNLocator, NullLocator  # noqa: E402
 
-TITLE = "How many units recur across Batman works and across other film series"
+TITLE = "Batman has a canon of recurring units, and so do other film series"
 SUBTITLE = ("Units of {model}, counted by the number of works in a set where they are present.\n"
             "Distinctive units are those that are rare in ordinary film plots.")
 PANEL_A = "Batman's canon, with and without names"

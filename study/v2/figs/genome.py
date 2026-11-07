@@ -37,7 +37,7 @@ from matplotlib import font_manager  # noqa: E402
 from matplotlib.colors import LinearSegmentedColormap, to_hex  # noqa: E402
 from matplotlib.patches import Rectangle  # noqa: E402
 
-TITLE = "Which works carry each explained unit, with and without names"
+TITLE = "Most of the core canon disappears when Batman's names are removed"
 SUBTITLE = ("Units of {model} chosen by rule and explained (rows) in {nb} Batman works and {nr} relatives "
             "(columns, oldest first).\n"
             "Each cell shows one work twice: the text as written (upper half) and with every name removed "

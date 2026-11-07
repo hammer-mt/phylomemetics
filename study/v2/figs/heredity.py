@@ -31,7 +31,7 @@ from matplotlib.lines import Line2D  # noqa: E402
 from matplotlib.patches import FancyBboxPatch  # noqa: E402
 from matplotlib.ticker import MultipleLocator  # noqa: E402
 
-TITLE = "Where the documented source comic of each screen adaptation ranks"
+TITLE = "Units find an adaptation's source comic, and so do word counts"
 SUBTITLE = "Eligible comics are ranked by how many of their optional units the adaptation carries, or by word counts alone"
 PANEL_A = "Rank of the documented source among the eligible comics (the grey slots; 1st = closest)"
 PANEL_B = "Share of eligible comics that beat the documented source, averaged over the adaptations"
