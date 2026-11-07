@@ -35,7 +35,7 @@ from matplotlib.colors import LinearSegmentedColormap, to_hex  # noqa: E402
 from matplotlib.patches import Rectangle  # noqa: E402
 
 TITLE = "Which works carry each explained unit, with and without names"
-SUBTITLE = ("Units of {model} that were chosen by rule and explained, one per row, in {nb} Batman works and {nr} relatives.\n"
+SUBTITLE = ("Units of {model} chosen by rule and explained (rows) in {nb} Batman works and {nr} relatives (columns, oldest first).\n"
             "Each cell shows one work twice: the text as written (upper half) and with every name removed (lower half).")
 SETS = [("core", "Core canon"), ("name_free_core", "Still present without names"),
         ("common_patterns", "Common story patterns")]  # the sets drawn, in this order, and their headers
@@ -87,7 +87,6 @@ rows = [u for _, shown in groups for u in shown]
 decades = sorted({w["year"] // 10 * 10 for w in works})   # a neutral ramp, light to dark, one step per decade
 ramp = LinearSegmentedColormap.from_list("decade", [style.RULE, style.INK])
 shade = {dec: to_hex(ramp(k / max(len(decades) - 1, 1))) for k, dec in enumerate(decades)}
-rel_text = [f"{w['label'].replace(f' ({w['year']})', '')}  {w['year']}" for w in works[nb:]]
 
 # ---- geometry, in inches; y is measured down from the top ----
 W = style.WIDTH_IN - 0.16                 # saving adds 0.08 in on each side, so the PNG is exactly the text width
@@ -102,7 +101,8 @@ def width(text, fs, **kw):
     return w
 
 
-x_text, GAP, HEAD, y_grid = 0.05, 0.8, 0.17, 1.07    # left edge; gap before the relatives, in columns; header; grid top
+x_text, GAP, HEAD, y_grid = 0.05, 0.8, 0.17, 1.04    # left edge; gap before the relatives, in columns; header; grid top
+MAX_H = 8.5 - 0.16                        # rows get closer together, down to the size of their labels, to stay under it
 num_w = width("0" * len(str(nb)), FS)
 x_title = x_text + max(width(cut(u["title"]), FS) for u in rows)     # titles end here
 x_n1 = x_title + 0.09 + num_w                                        # the first count ends here
@@ -110,8 +110,9 @@ x_n2 = x_n1 + 0.11 + num_w                                           # the secon
 x0, x1 = x_n2 + 0.07, W - 0.16                                       # the grid
 COL = (x1 - x0) / (len(works) + GAP)
 KEY_TOP, KEY_PITCH = 0.36, 0.18           # legend: its first line under the grid, and its line pitch
-bottom = max(0.12 + max(width(t, 6.5) for t in rel_text), KEY_TOP + 3 * KEY_PITCH + 0.06) + 0.05  # names; legend
-ROW = min(0.118, max(0.094, (8.5 - y_grid - HEAD * len(groups) - bottom) / len(rows)))
+names_h = max(width(w["label"], 6.5) for w in works[nb:])            # the relatives' names hang under their columns
+bottom = max(0.10 + names_h, KEY_TOP + 3 * KEY_PITCH + 0.06) + 0.05  # the names, and the legend beside them
+ROW = min(0.118, max(0.094, (MAX_H - y_grid - HEAD * len(groups) - bottom) / len(rows)))
 H = y_grid + HEAD * len(groups) + ROW * len(rows) + bottom
 fig.set_size_inches(W, H)
 ax = fig.add_axes([0, 0, 1, 1])           # the whole canvas, in inches
@@ -140,7 +141,7 @@ def cell(x, y, upper, lower, px=0.007, py=0.011):
 
 # ---- over the columns: the two blocks, a year over every fourth Batman work, the decade strip ----
 y_strip = y_grid - 0.07
-for a, b, text in ((0, nb, f"{nb} Batman works, oldest first"), (nb, len(works), f"{nr} relatives")):
+for a, b, text in ((0, nb, f"{nb} Batman works"), (nb, len(works), f"{nr} relatives")):
     ax.plot([X(a) + 0.01, X(b - 1) + COL - 0.01], [y_grid - 0.25] * 2, color=style.INK_3, lw=0.6)
     ax.text((X(a) + X(b - 1) + COL) / 2, y_grid - 0.28, text, ha="center", va="bottom", fontsize=FS_KEY,
             color=style.INK_2)
@@ -168,11 +169,11 @@ for head, shown in groups:
 
 # ---- under the relatives: their names. The names need more room than a column, so they fan out a little ----
 step = max(COL, 0.094)
-for j, text in enumerate(rel_text):
+for j, w in enumerate(works[nb:]):
     xc = X(nb + j) + COL / 2
     xl = (X(nb) + X(len(works) - 1) + COL) / 2 + (j - (nr - 1) / 2) * step
     ax.plot([xc, xl], [y + 0.012, y + 0.085], color=style.SHARED, lw=0.5)
-    ax.text(xl, y + 0.10, text, rotation=90, rotation_mode="anchor", ha="right", va="center", fontsize=6.5,
+    ax.text(xl, y + 0.10, w["label"], rotation=90, rotation_mode="anchor", ha="right", va="center", fontsize=6.5,
             color=style.INK_2)
 
 

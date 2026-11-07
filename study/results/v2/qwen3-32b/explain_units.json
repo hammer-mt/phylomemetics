@@ -1,0 +1,2185 @@
+{
+ "model": "qwen3-32b",
+ "seed": 20261107,
+ "n": 241,
+ "by_set": {
+  "core": 60,
+  "common": 30,
+  "optional": 30,
+  "name_free_core": 1,
+  "discriminators": 40,
+  "common_patterns": 40,
+  "inherited": 20,
+  "band_rest": 20
+ },
+ "units": [
+  {
+   "unit": 1967232,
+   "set": "core",
+   "n_batman": 32,
+   "n_members": 23,
+   "name": "L12\u00b7N21632-",
+   "layer": 12,
+   "opposite": 328832,
+   "weak_pole": false
+  },
+  {
+   "unit": 3126057,
+   "set": "core",
+   "n_batman": 32,
+   "n_members": 14,
+   "name": "L58\u00b7N2857-",
+   "layer": 58,
+   "opposite": 1487657,
+   "weak_pole": false
+  },
+  {
+   "unit": 215865,
+   "set": "core",
+   "n_batman": 32,
+   "n_members": 7,
+   "name": "L8\u00b7N11065+",
+   "layer": 8,
+   "opposite": 1854265,
+   "weak_pole": false
+  },
+  {
+   "unit": 830265,
+   "set": "core",
+   "n_batman": 32,
+   "n_members": 5,
+   "name": "L32\u00b7N11065+",
+   "layer": 32,
+   "opposite": 2468665,
+   "weak_pole": false
+  },
+  {
+   "unit": 3119045,
+   "set": "core",
+   "n_batman": 32,
+   "n_members": 4,
+   "name": "L57\u00b7N21445-",
+   "layer": 57,
+   "opposite": 1480645,
+   "weak_pole": false
+  },
+  {
+   "unit": 188547,
+   "set": "core",
+   "n_batman": 32,
+   "n_members": 3,
+   "name": "L7\u00b7N9347+",
+   "layer": 7,
+   "opposite": 1826947,
+   "weak_pole": false
+  },
+  {
+   "unit": 435478,
+   "set": "core",
+   "n_batman": 32,
+   "n_members": 2,
+   "name": "L17\u00b7N278+",
+   "layer": 17,
+   "opposite": 2073878,
+   "weak_pole": false
+  },
+  {
+   "unit": 2979147,
+   "set": "core",
+   "n_batman": 32,
+   "n_members": 2,
+   "name": "L52\u00b7N9547-",
+   "layer": 52,
+   "opposite": 1340747,
+   "weak_pole": false
+  },
+  {
+   "unit": 3053127,
+   "set": "core",
+   "n_batman": 32,
+   "n_members": 2,
+   "name": "L55\u00b7N6727-",
+   "layer": 55,
+   "opposite": 1414727,
+   "weak_pole": false
+  },
+  {
+   "unit": 2649804,
+   "set": "core",
+   "n_batman": 32,
+   "n_members": 2,
+   "name": "L39\u00b7N13004-",
+   "layer": 39,
+   "opposite": 1011404,
+   "weak_pole": false
+  },
+  {
+   "unit": 1553950,
+   "set": "core",
+   "n_batman": 32,
+   "n_members": 1,
+   "name": "L60\u00b7N17950+",
+   "layer": 60,
+   "opposite": 3192350,
+   "weak_pole": false
+  },
+  {
+   "unit": 1561173,
+   "set": "core",
+   "n_batman": 32,
+   "n_members": 1,
+   "name": "L60\u00b7N25173+",
+   "layer": 60,
+   "opposite": 3199573,
+   "weak_pole": false
+  },
+  {
+   "unit": 1485789,
+   "set": "core",
+   "n_batman": 32,
+   "n_members": 1,
+   "name": "L58\u00b7N989+",
+   "layer": 58,
+   "opposite": 3124189,
+   "weak_pole": false
+  },
+  {
+   "unit": 1483154,
+   "set": "core",
+   "n_batman": 32,
+   "n_members": 1,
+   "name": "L57\u00b7N23954+",
+   "layer": 57,
+   "opposite": 3121554,
+   "weak_pole": false
+  },
+  {
+   "unit": 967057,
+   "set": "core",
+   "n_batman": 32,
+   "n_members": 1,
+   "name": "L37\u00b7N19857+",
+   "layer": 37,
+   "opposite": 2605457,
+   "weak_pole": true
+  },
+  {
+   "unit": 1936244,
+   "set": "core",
+   "n_batman": 32,
+   "n_members": 1,
+   "name": "L11\u00b7N16244-",
+   "layer": 11,
+   "opposite": 297844,
+   "weak_pole": false
+  },
+  {
+   "unit": 3153462,
+   "set": "core",
+   "n_batman": 32,
+   "n_members": 1,
+   "name": "L59\u00b7N4662-",
+   "layer": 59,
+   "opposite": 1515062,
+   "weak_pole": false
+  },
+  {
+   "unit": 324451,
+   "set": "core",
+   "n_batman": 31,
+   "n_members": 46,
+   "name": "L12\u00b7N17251+",
+   "layer": 12,
+   "opposite": 1962851,
+   "weak_pole": false
+  },
+  {
+   "unit": 1849652,
+   "set": "core",
+   "n_batman": 31,
+   "n_members": 15,
+   "name": "L8\u00b7N6452-",
+   "layer": 8,
+   "opposite": 211252,
+   "weak_pole": false
+  },
+  {
+   "unit": 839883,
+   "set": "core",
+   "n_batman": 31,
+   "n_members": 8,
+   "name": "L32\u00b7N20683+",
+   "layer": 32,
+   "opposite": 2478283,
+   "weak_pole": false
+  },
+  {
+   "unit": 210632,
+   "set": "core",
+   "n_batman": 31,
+   "n_members": 7,
+   "name": "L8\u00b7N5832+",
+   "layer": 8,
+   "opposite": 1849032,
+   "weak_pole": false
+  },
+  {
+   "unit": 1854180,
+   "set": "core",
+   "n_batman": 31,
+   "n_members": 3,
+   "name": "L8\u00b7N10980-",
+   "layer": 8,
+   "opposite": 215780,
+   "weak_pole": false
+  },
+  {
+   "unit": 3161575,
+   "set": "core",
+   "n_batman": 31,
+   "n_members": 2,
+   "name": "L59\u00b7N12775-",
+   "layer": 59,
+   "opposite": 1523175,
+   "weak_pole": false
+  },
+  {
+   "unit": 2364747,
+   "set": "core",
+   "n_batman": 31,
+   "n_members": 2,
+   "name": "L28\u00b7N9547-",
+   "layer": 28,
+   "opposite": 726347,
+   "weak_pole": false
+  },
+  {
+   "unit": 1799394,
+   "set": "core",
+   "n_batman": 31,
+   "n_members": 1,
+   "name": "L6\u00b7N7394-",
+   "layer": 6,
+   "opposite": 160994,
+   "weak_pole": false
+  },
+  {
+   "unit": 1817787,
+   "set": "core",
+   "n_batman": 31,
+   "n_members": 1,
+   "name": "L7\u00b7N187-",
+   "layer": 7,
+   "opposite": 179387,
+   "weak_pole": false
+  },
+  {
+   "unit": 1512347,
+   "set": "core",
+   "n_batman": 31,
+   "n_members": 1,
+   "name": "L59\u00b7N1947+",
+   "layer": 59,
+   "opposite": 3150747,
+   "weak_pole": false
+  },
+  {
+   "unit": 219037,
+   "set": "core",
+   "n_batman": 31,
+   "n_members": 1,
+   "name": "L8\u00b7N14237+",
+   "layer": 8,
+   "opposite": 1857437,
+   "weak_pole": false
+  },
+  {
+   "unit": 1620110,
+   "set": "core",
+   "n_batman": 31,
+   "n_members": 1,
+   "name": "L63\u00b7N7310+",
+   "layer": 63,
+   "opposite": 3258510,
+   "weak_pole": false
+  },
+  {
+   "unit": 1861692,
+   "set": "core",
+   "n_batman": 31,
+   "n_members": 1,
+   "name": "L8\u00b7N18492-",
+   "layer": 8,
+   "opposite": 223292,
+   "weak_pole": false
+  },
+  {
+   "unit": 1502596,
+   "set": "core",
+   "n_batman": 31,
+   "n_members": 1,
+   "name": "L58\u00b7N17796+",
+   "layer": 58,
+   "opposite": 3140996,
+   "weak_pole": false
+  },
+  {
+   "unit": 830342,
+   "set": "core",
+   "n_batman": 31,
+   "n_members": 1,
+   "name": "L32\u00b7N11142+",
+   "layer": 32,
+   "opposite": 2468742,
+   "weak_pole": true
+  },
+  {
+   "unit": 1444956,
+   "set": "core",
+   "n_batman": 31,
+   "n_members": 1,
+   "name": "L56\u00b7N11356+",
+   "layer": 56,
+   "opposite": 3083356,
+   "weak_pole": false
+  },
+  {
+   "unit": 1487126,
+   "set": "core",
+   "n_batman": 31,
+   "n_members": 1,
+   "name": "L58\u00b7N2326+",
+   "layer": 58,
+   "opposite": 3125526,
+   "weak_pole": false
+  },
+  {
+   "unit": 1548330,
+   "set": "core",
+   "n_batman": 31,
+   "n_members": 1,
+   "name": "L60\u00b7N12330+",
+   "layer": 60,
+   "opposite": 3186730,
+   "weak_pole": false
+  },
+  {
+   "unit": 167009,
+   "set": "core",
+   "n_batman": 30,
+   "n_members": 12,
+   "name": "L6\u00b7N13409+",
+   "layer": 6,
+   "opposite": 1805409,
+   "weak_pole": false
+  },
+  {
+   "unit": 125801,
+   "set": "core",
+   "n_batman": 30,
+   "n_members": 7,
+   "name": "L4\u00b7N23401+",
+   "layer": 4,
+   "opposite": 1764201,
+   "weak_pole": false
+  },
+  {
+   "unit": 3163742,
+   "set": "core",
+   "n_batman": 30,
+   "n_members": 4,
+   "name": "L59\u00b7N14942-",
+   "layer": 59,
+   "opposite": 1525342,
+   "weak_pole": false
+  },
+  {
+   "unit": 1504750,
+   "set": "core",
+   "n_batman": 30,
+   "n_members": 1,
+   "name": "L58\u00b7N19950+",
+   "layer": 58,
+   "opposite": 3143150,
+   "weak_pole": false
+  },
+  {
+   "unit": 1886436,
+   "set": "core",
+   "n_batman": 30,
+   "n_members": 1,
+   "name": "L9\u00b7N17636-",
+   "layer": 9,
+   "opposite": 248036,
+   "weak_pole": false
+  },
+  {
+   "unit": 1869035,
+   "set": "core",
+   "n_batman": 30,
+   "n_members": 1,
+   "name": "L9\u00b7N235-",
+   "layer": 9,
+   "opposite": 230635,
+   "weak_pole": false
+  },
+  {
+   "unit": 254112,
+   "set": "core",
+   "n_batman": 30,
+   "n_members": 1,
+   "name": "L9\u00b7N23712+",
+   "layer": 9,
+   "opposite": 1892512,
+   "weak_pole": false
+  },
+  {
+   "unit": 604205,
+   "set": "core",
+   "n_batman": 30,
+   "n_members": 1,
+   "name": "L23\u00b7N15405+",
+   "layer": 23,
+   "opposite": 2242605,
+   "weak_pole": false
+  },
+  {
+   "unit": 1176854,
+   "set": "core",
+   "n_batman": 30,
+   "n_members": 1,
+   "name": "L45\u00b7N24854+",
+   "layer": 45,
+   "opposite": 2815254,
+   "weak_pole": false
+  },
+  {
+   "unit": 1528083,
+   "set": "core",
+   "n_batman": 30,
+   "n_members": 1,
+   "name": "L59\u00b7N17683+",
+   "layer": 59,
+   "opposite": 3166483,
+   "weak_pole": false
+  },
+  {
+   "unit": 1537827,
+   "set": "core",
+   "n_batman": 30,
+   "n_members": 1,
+   "name": "L60\u00b7N1827+",
+   "layer": 60,
+   "opposite": 3176227,
+   "weak_pole": false
+  },
+  {
+   "unit": 1580619,
+   "set": "core",
+   "n_batman": 30,
+   "n_members": 1,
+   "name": "L61\u00b7N19019+",
+   "layer": 61,
+   "opposite": 3219019,
+   "weak_pole": false
+  },
+  {
+   "unit": 1826947,
+   "set": "core",
+   "n_batman": 30,
+   "n_members": 1,
+   "name": "L7\u00b7N9347-",
+   "layer": 7,
+   "opposite": 188547,
+   "weak_pole": false
+  },
+  {
+   "unit": 2474730,
+   "set": "core",
+   "n_batman": 30,
+   "n_members": 1,
+   "name": "L32\u00b7N17130-",
+   "layer": 32,
+   "opposite": 836330,
+   "weak_pole": false
+  },
+  {
+   "unit": 2525198,
+   "set": "core",
+   "n_batman": 30,
+   "n_members": 1,
+   "name": "L34\u00b7N16398-",
+   "layer": 34,
+   "opposite": 886798,
+   "weak_pole": false
+  },
+  {
+   "unit": 2550644,
+   "set": "core",
+   "n_batman": 30,
+   "n_members": 1,
+   "name": "L35\u00b7N16244-",
+   "layer": 35,
+   "opposite": 912244,
+   "weak_pole": false
+  },
+  {
+   "unit": 2584477,
+   "set": "core",
+   "n_batman": 29,
+   "n_members": 2,
+   "name": "L36\u00b7N24477-",
+   "layer": 36,
+   "opposite": 946077,
+   "weak_pole": true
+  },
+  {
+   "unit": 217862,
+   "set": "core",
+   "n_batman": 29,
+   "n_members": 2,
+   "name": "L8\u00b7N13062+",
+   "layer": 8,
+   "opposite": 1856262,
+   "weak_pole": false
+  },
+  {
+   "unit": 1440851,
+   "set": "core",
+   "n_batman": 29,
+   "n_members": 2,
+   "name": "L56\u00b7N7251+",
+   "layer": 56,
+   "opposite": 3079251,
+   "weak_pole": false
+  },
+  {
+   "unit": 347405,
+   "set": "core",
+   "n_batman": 29,
+   "n_members": 1,
+   "name": "L13\u00b7N14605+",
+   "layer": 13,
+   "opposite": 1985805,
+   "weak_pole": false
+  },
+  {
+   "unit": 368887,
+   "set": "core",
+   "n_batman": 29,
+   "n_members": 1,
+   "name": "L14\u00b7N10487+",
+   "layer": 14,
+   "opposite": 2007287,
+   "weak_pole": true
+  },
+  {
+   "unit": 407102,
+   "set": "core",
+   "n_batman": 29,
+   "n_members": 1,
+   "name": "L15\u00b7N23102+",
+   "layer": 15,
+   "opposite": 2045502,
+   "weak_pole": false
+  },
+  {
+   "unit": 833700,
+   "set": "core",
+   "n_batman": 29,
+   "n_members": 1,
+   "name": "L32\u00b7N14500+",
+   "layer": 32,
+   "opposite": 2472100,
+   "weak_pole": false
+  },
+  {
+   "unit": 1049878,
+   "set": "core",
+   "n_batman": 29,
+   "n_members": 1,
+   "name": "L41\u00b7N278+",
+   "layer": 41,
+   "opposite": 2688278,
+   "weak_pole": false
+  },
+  {
+   "unit": 1067286,
+   "set": "core",
+   "n_batman": 29,
+   "n_members": 1,
+   "name": "L41\u00b7N17686+",
+   "layer": 41,
+   "opposite": 2705686,
+   "weak_pole": false
+  },
+  {
+   "unit": 3125944,
+   "set": "common",
+   "n_batman": 28,
+   "n_members": 2,
+   "name": "L58\u00b7N2744-",
+   "layer": 58,
+   "opposite": 1487544,
+   "weak_pole": false
+  },
+  {
+   "unit": 3181213,
+   "set": "common",
+   "n_batman": 28,
+   "n_members": 1,
+   "name": "L60\u00b7N6813-",
+   "layer": 60,
+   "opposite": 1542813,
+   "weak_pole": false
+  },
+  {
+   "unit": 989429,
+   "set": "common",
+   "n_batman": 27,
+   "n_members": 2,
+   "name": "L38\u00b7N16629+",
+   "layer": 38,
+   "opposite": 2627829,
+   "weak_pole": false
+  },
+  {
+   "unit": 202487,
+   "set": "common",
+   "n_batman": 27,
+   "n_members": 1,
+   "name": "L7\u00b7N23287+",
+   "layer": 7,
+   "opposite": 1840887,
+   "weak_pole": false
+  },
+  {
+   "unit": 919295,
+   "set": "common",
+   "n_batman": 27,
+   "n_members": 1,
+   "name": "L35\u00b7N23295+",
+   "layer": 35,
+   "opposite": 2557695,
+   "weak_pole": false
+  },
+  {
+   "unit": 1857437,
+   "set": "common",
+   "n_batman": 27,
+   "n_members": 1,
+   "name": "L8\u00b7N14237-",
+   "layer": 8,
+   "opposite": 219037,
+   "weak_pole": false
+  },
+  {
+   "unit": 1910798,
+   "set": "common",
+   "n_batman": 27,
+   "n_members": 1,
+   "name": "L10\u00b7N16398-",
+   "layer": 10,
+   "opposite": 272398,
+   "weak_pole": false
+  },
+  {
+   "unit": 2004467,
+   "set": "common",
+   "n_batman": 26,
+   "n_members": 1,
+   "name": "L14\u00b7N7667-",
+   "layer": 14,
+   "opposite": 366067,
+   "weak_pole": false
+  },
+  {
+   "unit": 1482139,
+   "set": "common",
+   "n_batman": 26,
+   "n_members": 1,
+   "name": "L57\u00b7N22939+",
+   "layer": 57,
+   "opposite": 3120539,
+   "weak_pole": false
+  },
+  {
+   "unit": 378497,
+   "set": "common",
+   "n_batman": 25,
+   "n_members": 15,
+   "name": "L14\u00b7N20097+",
+   "layer": 14,
+   "opposite": 2016897,
+   "weak_pole": false
+  },
+  {
+   "unit": 458118,
+   "set": "common",
+   "n_batman": 25,
+   "n_members": 1,
+   "name": "L17\u00b7N22918+",
+   "layer": 17,
+   "opposite": 2096518,
+   "weak_pole": false
+  },
+  {
+   "unit": 1500498,
+   "set": "common",
+   "n_batman": 25,
+   "n_members": 1,
+   "name": "L58\u00b7N15698+",
+   "layer": 58,
+   "opposite": 3138898,
+   "weak_pole": false
+  },
+  {
+   "unit": 1560401,
+   "set": "common",
+   "n_batman": 25,
+   "n_members": 1,
+   "name": "L60\u00b7N24401+",
+   "layer": 60,
+   "opposite": 3198801,
+   "weak_pole": false
+  },
+  {
+   "unit": 1659747,
+   "set": "common",
+   "n_batman": 25,
+   "n_members": 1,
+   "name": "L0\u00b7N21347-",
+   "layer": 0,
+   "opposite": 21347,
+   "weak_pole": false
+  },
+  {
+   "unit": 2612008,
+   "set": "common",
+   "n_batman": 25,
+   "n_members": 1,
+   "name": "L38\u00b7N808-",
+   "layer": 38,
+   "opposite": 973608,
+   "weak_pole": false
+  },
+  {
+   "unit": 2648630,
+   "set": "common",
+   "n_batman": 25,
+   "n_members": 1,
+   "name": "L39\u00b7N11830-",
+   "layer": 39,
+   "opposite": 1010230,
+   "weak_pole": false
+  },
+  {
+   "unit": 3166532,
+   "set": "common",
+   "n_batman": 25,
+   "n_members": 1,
+   "name": "L59\u00b7N17732-",
+   "layer": 59,
+   "opposite": 1528132,
+   "weak_pole": false
+  },
+  {
+   "unit": 1991492,
+   "set": "common",
+   "n_batman": 24,
+   "n_members": 1,
+   "name": "L13\u00b7N20292-",
+   "layer": 13,
+   "opposite": 353092,
+   "weak_pole": false
+  },
+  {
+   "unit": 1788084,
+   "set": "common",
+   "n_batman": 24,
+   "n_members": 1,
+   "name": "L5\u00b7N21684-",
+   "layer": 5,
+   "opposite": 149684,
+   "weak_pole": false
+  },
+  {
+   "unit": 2650301,
+   "set": "common",
+   "n_batman": 24,
+   "n_members": 1,
+   "name": "L39\u00b7N13501-",
+   "layer": 39,
+   "opposite": 1011901,
+   "weak_pole": false
+  },
+  {
+   "unit": 2090182,
+   "set": "common",
+   "n_batman": 23,
+   "n_members": 1,
+   "name": "L17\u00b7N16582-",
+   "layer": 17,
+   "opposite": 451782,
+   "weak_pole": false
+  },
+  {
+   "unit": 410913,
+   "set": "common",
+   "n_batman": 23,
+   "n_members": 1,
+   "name": "L16\u00b7N1313+",
+   "layer": 16,
+   "opposite": 2049313,
+   "weak_pole": false
+  },
+  {
+   "unit": 2500843,
+   "set": "common",
+   "n_batman": 23,
+   "n_members": 1,
+   "name": "L33\u00b7N17643-",
+   "layer": 33,
+   "opposite": 862443,
+   "weak_pole": false
+  },
+  {
+   "unit": 254826,
+   "set": "common",
+   "n_batman": 23,
+   "n_members": 1,
+   "name": "L9\u00b7N24426+",
+   "layer": 9,
+   "opposite": 1893226,
+   "weak_pole": false
+  },
+  {
+   "unit": 1834957,
+   "set": "common",
+   "n_batman": 23,
+   "n_members": 1,
+   "name": "L7\u00b7N17357-",
+   "layer": 7,
+   "opposite": 196557,
+   "weak_pole": false
+  },
+  {
+   "unit": 438070,
+   "set": "common",
+   "n_batman": 23,
+   "n_members": 1,
+   "name": "L17\u00b7N2870+",
+   "layer": 17,
+   "opposite": 2076470,
+   "weak_pole": false
+  },
+  {
+   "unit": 2161966,
+   "set": "common",
+   "n_batman": 23,
+   "n_members": 1,
+   "name": "L20\u00b7N11566-",
+   "layer": 20,
+   "opposite": 523566,
+   "weak_pole": false
+  },
+  {
+   "unit": 3125600,
+   "set": "common",
+   "n_batman": 23,
+   "n_members": 1,
+   "name": "L58\u00b7N2400-",
+   "layer": 58,
+   "opposite": 1487200,
+   "weak_pole": false
+  },
+  {
+   "unit": 3135718,
+   "set": "common",
+   "n_batman": 23,
+   "n_members": 1,
+   "name": "L58\u00b7N12518-",
+   "layer": 58,
+   "opposite": 1497318,
+   "weak_pole": false
+  },
+  {
+   "unit": 3215045,
+   "set": "common",
+   "n_batman": 23,
+   "n_members": 1,
+   "name": "L61\u00b7N15045-",
+   "layer": 61,
+   "opposite": 1576645,
+   "weak_pole": false
+  },
+  {
+   "unit": 1916049,
+   "set": "optional",
+   "n_batman": 20,
+   "n_members": 4,
+   "name": "L10\u00b7N21649-",
+   "layer": 10,
+   "opposite": 277649,
+   "weak_pole": false
+  },
+  {
+   "unit": 227206,
+   "set": "optional",
+   "n_batman": 20,
+   "n_members": 1,
+   "name": "L8\u00b7N22406+",
+   "layer": 8,
+   "opposite": 1865606,
+   "weak_pole": false
+  },
+  {
+   "unit": 2708627,
+   "set": "optional",
+   "n_batman": 16,
+   "n_members": 1,
+   "name": "L41\u00b7N20627-",
+   "layer": 41,
+   "opposite": 1070227,
+   "weak_pole": false
+  },
+  {
+   "unit": 3120546,
+   "set": "optional",
+   "n_batman": 11,
+   "n_members": 1,
+   "name": "L57\u00b7N22946-",
+   "layer": 57,
+   "opposite": 1482146,
+   "weak_pole": false
+  },
+  {
+   "unit": 353620,
+   "set": "optional",
+   "n_batman": 10,
+   "n_members": 2,
+   "name": "L13\u00b7N20820+",
+   "layer": 13,
+   "opposite": 1992020,
+   "weak_pole": false
+  },
+  {
+   "unit": 911984,
+   "set": "optional",
+   "n_batman": 10,
+   "n_members": 1,
+   "name": "L35\u00b7N15984+",
+   "layer": 35,
+   "opposite": 2550384,
+   "weak_pole": false
+  },
+  {
+   "unit": 1463527,
+   "set": "optional",
+   "n_batman": 10,
+   "n_members": 1,
+   "name": "L57\u00b7N4327+",
+   "layer": 57,
+   "opposite": 3101927,
+   "weak_pole": false
+  },
+  {
+   "unit": 1588941,
+   "set": "optional",
+   "n_batman": 10,
+   "n_members": 1,
+   "name": "L62\u00b7N1741+",
+   "layer": 62,
+   "opposite": 3227341,
+   "weak_pole": false
+  },
+  {
+   "unit": 1656275,
+   "set": "optional",
+   "n_batman": 9,
+   "n_members": 3,
+   "name": "L0\u00b7N17875-",
+   "layer": 0,
+   "opposite": 17875,
+   "weak_pole": false
+  },
+  {
+   "unit": 541023,
+   "set": "optional",
+   "n_batman": 9,
+   "n_members": 1,
+   "name": "L21\u00b7N3423+",
+   "layer": 21,
+   "opposite": 2179423,
+   "weak_pole": false
+  },
+  {
+   "unit": 1021040,
+   "set": "optional",
+   "n_batman": 9,
+   "n_members": 1,
+   "name": "L39\u00b7N22640+",
+   "layer": 39,
+   "opposite": 2659440,
+   "weak_pole": false
+  },
+  {
+   "unit": 1464129,
+   "set": "optional",
+   "n_batman": 9,
+   "n_members": 1,
+   "name": "L57\u00b7N4929+",
+   "layer": 57,
+   "opposite": 3102529,
+   "weak_pole": false
+  },
+  {
+   "unit": 2178472,
+   "set": "optional",
+   "n_batman": 9,
+   "n_members": 1,
+   "name": "L21\u00b7N2472-",
+   "layer": 21,
+   "opposite": 540072,
+   "weak_pole": false
+  },
+  {
+   "unit": 1939271,
+   "set": "optional",
+   "n_batman": 8,
+   "n_members": 3,
+   "name": "L11\u00b7N19271-",
+   "layer": 11,
+   "opposite": 300871,
+   "weak_pole": false
+  },
+  {
+   "unit": 465171,
+   "set": "optional",
+   "n_batman": 8,
+   "n_members": 2,
+   "name": "L18\u00b7N4371+",
+   "layer": 18,
+   "opposite": 2103571,
+   "weak_pole": false
+  },
+  {
+   "unit": 1121133,
+   "set": "optional",
+   "n_batman": 8,
+   "n_members": 1,
+   "name": "L43\u00b7N20333+",
+   "layer": 43,
+   "opposite": 2759533,
+   "weak_pole": false
+  },
+  {
+   "unit": 2783773,
+   "set": "optional",
+   "n_batman": 8,
+   "n_members": 1,
+   "name": "L44\u00b7N18973-",
+   "layer": 44,
+   "opposite": 1145373,
+   "weak_pole": false
+  },
+  {
+   "unit": 3171832,
+   "set": "optional",
+   "n_batman": 8,
+   "n_members": 1,
+   "name": "L59\u00b7N23032-",
+   "layer": 59,
+   "opposite": 1533432,
+   "weak_pole": false
+  },
+  {
+   "unit": 1068129,
+   "set": "optional",
+   "n_batman": 7,
+   "n_members": 1,
+   "name": "L41\u00b7N18529+",
+   "layer": 41,
+   "opposite": 2706529,
+   "weak_pole": false
+  },
+  {
+   "unit": 1612452,
+   "set": "optional",
+   "n_batman": 7,
+   "n_members": 1,
+   "name": "L62\u00b7N25252+",
+   "layer": 62,
+   "opposite": 3250852,
+   "weak_pole": false
+  },
+  {
+   "unit": 2122779,
+   "set": "optional",
+   "n_batman": 7,
+   "n_members": 1,
+   "name": "L18\u00b7N23579-",
+   "layer": 18,
+   "opposite": 484379,
+   "weak_pole": false
+  },
+  {
+   "unit": 2622633,
+   "set": "optional",
+   "n_batman": 6,
+   "n_members": 1,
+   "name": "L38\u00b7N11433-",
+   "layer": 38,
+   "opposite": 984233,
+   "weak_pole": false
+  },
+  {
+   "unit": 1079880,
+   "set": "optional",
+   "n_batman": 6,
+   "n_members": 1,
+   "name": "L42\u00b7N4680+",
+   "layer": 42,
+   "opposite": 2718280,
+   "weak_pole": false
+  },
+  {
+   "unit": 1480716,
+   "set": "optional",
+   "n_batman": 6,
+   "n_members": 1,
+   "name": "L57\u00b7N21516+",
+   "layer": 57,
+   "opposite": 3119116,
+   "weak_pole": false
+  },
+  {
+   "unit": 1557081,
+   "set": "optional",
+   "n_batman": 6,
+   "n_members": 1,
+   "name": "L60\u00b7N21081+",
+   "layer": 60,
+   "opposite": 3195481,
+   "weak_pole": false
+  },
+  {
+   "unit": 1618229,
+   "set": "optional",
+   "n_batman": 6,
+   "n_members": 1,
+   "name": "L63\u00b7N5429+",
+   "layer": 63,
+   "opposite": 3256629,
+   "weak_pole": false
+  },
+  {
+   "unit": 2045342,
+   "set": "optional",
+   "n_batman": 6,
+   "n_members": 1,
+   "name": "L15\u00b7N22942-",
+   "layer": 15,
+   "opposite": 406942,
+   "weak_pole": false
+  },
+  {
+   "unit": 3088216,
+   "set": "optional",
+   "n_batman": 6,
+   "n_members": 1,
+   "name": "L56\u00b7N16216-",
+   "layer": 56,
+   "opposite": 1449816,
+   "weak_pole": false
+  },
+  {
+   "unit": 3103387,
+   "set": "optional",
+   "n_batman": 6,
+   "n_members": 1,
+   "name": "L57\u00b7N5787-",
+   "layer": 57,
+   "opposite": 1464987,
+   "weak_pole": false
+  },
+  {
+   "unit": 3161421,
+   "set": "optional",
+   "n_batman": 6,
+   "n_members": 1,
+   "name": "L59\u00b7N12621-",
+   "layer": 59,
+   "opposite": 1523021,
+   "weak_pole": false
+  },
+  {
+   "unit": 2629416,
+   "set": "name_free_core",
+   "name": "L38\u00b7N18216-",
+   "layer": 38,
+   "opposite": 991016,
+   "weak_pole": false
+  },
+  {
+   "unit": 1648203,
+   "set": "discriminators",
+   "name": "L0\u00b7N9803-",
+   "layer": 0,
+   "opposite": 9803,
+   "weak_pole": false
+  },
+  {
+   "unit": 2980,
+   "set": "discriminators",
+   "name": "L0\u00b7N2980+",
+   "layer": 0,
+   "opposite": 1641380,
+   "weak_pole": false
+  },
+  {
+   "unit": 2724250,
+   "set": "discriminators",
+   "name": "L42\u00b7N10650-",
+   "layer": 42,
+   "opposite": 1085850,
+   "weak_pole": false
+  },
+  {
+   "unit": 2655879,
+   "set": "discriminators",
+   "name": "L39\u00b7N19079-",
+   "layer": 39,
+   "opposite": 1017479,
+   "weak_pole": false
+  },
+  {
+   "unit": 1643584,
+   "set": "discriminators",
+   "name": "L0\u00b7N5184-",
+   "layer": 0,
+   "opposite": 5184,
+   "weak_pole": false
+  },
+  {
+   "unit": 940900,
+   "set": "discriminators",
+   "name": "L36\u00b7N19300+",
+   "layer": 36,
+   "opposite": 2579300,
+   "weak_pole": false
+  },
+  {
+   "unit": 994890,
+   "set": "discriminators",
+   "name": "L38\u00b7N22090+",
+   "layer": 38,
+   "opposite": 2633290,
+   "weak_pole": false
+  },
+  {
+   "unit": 2870,
+   "set": "discriminators",
+   "name": "L0\u00b7N2870+",
+   "layer": 0,
+   "opposite": 1641270,
+   "weak_pole": false
+  },
+  {
+   "unit": 2109850,
+   "set": "discriminators",
+   "name": "L18\u00b7N10650-",
+   "layer": 18,
+   "opposite": 471450,
+   "weak_pole": false
+  },
+  {
+   "unit": 2799181,
+   "set": "discriminators",
+   "name": "L45\u00b7N8781-",
+   "layer": 45,
+   "opposite": 1160781,
+   "weak_pole": false
+  },
+  {
+   "unit": 1161841,
+   "set": "discriminators",
+   "name": "L45\u00b7N9841+",
+   "layer": 45,
+   "opposite": 2800241,
+   "weak_pole": false
+  },
+  {
+   "unit": 1653096,
+   "set": "discriminators",
+   "name": "L0\u00b7N14696-",
+   "layer": 0,
+   "opposite": 14696,
+   "weak_pole": false
+  },
+  {
+   "unit": 2751771,
+   "set": "discriminators",
+   "name": "L43\u00b7N12571-",
+   "layer": 43,
+   "opposite": 1113371,
+   "weak_pole": false
+  },
+  {
+   "unit": 245694,
+   "set": "discriminators",
+   "name": "L9\u00b7N15294+",
+   "layer": 9,
+   "opposite": 1884094,
+   "weak_pole": false
+  },
+  {
+   "unit": 904823,
+   "set": "discriminators",
+   "name": "L35\u00b7N8823+",
+   "layer": 35,
+   "opposite": 2543223,
+   "weak_pole": false
+  },
+  {
+   "unit": 910564,
+   "set": "discriminators",
+   "name": "L35\u00b7N14564+",
+   "layer": 35,
+   "opposite": 2548964,
+   "weak_pole": false
+  },
+  {
+   "unit": 2625356,
+   "set": "discriminators",
+   "name": "L38\u00b7N14156-",
+   "layer": 38,
+   "opposite": 986956,
+   "weak_pole": false
+  },
+  {
+   "unit": 886609,
+   "set": "discriminators",
+   "name": "L34\u00b7N16209+",
+   "layer": 34,
+   "opposite": 2525009,
+   "weak_pole": false
+  },
+  {
+   "unit": 1113807,
+   "set": "discriminators",
+   "name": "L43\u00b7N13007+",
+   "layer": 43,
+   "opposite": 2752207,
+   "weak_pole": false
+  },
+  {
+   "unit": 1129939,
+   "set": "discriminators",
+   "name": "L44\u00b7N3539+",
+   "layer": 44,
+   "opposite": 2768339,
+   "weak_pole": false
+  },
+  {
+   "unit": 902490,
+   "set": "discriminators",
+   "name": "L35\u00b7N6490+",
+   "layer": 35,
+   "opposite": 2540890,
+   "weak_pole": false
+  },
+  {
+   "unit": 1042958,
+   "set": "discriminators",
+   "name": "L40\u00b7N18958+",
+   "layer": 40,
+   "opposite": 2681358,
+   "weak_pole": false
+  },
+  {
+   "unit": 1053109,
+   "set": "discriminators",
+   "name": "L41\u00b7N3509+",
+   "layer": 41,
+   "opposite": 2691509,
+   "weak_pole": false
+  },
+  {
+   "unit": 2548640,
+   "set": "discriminators",
+   "name": "L35\u00b7N14240-",
+   "layer": 35,
+   "opposite": 910240,
+   "weak_pole": false
+  },
+  {
+   "unit": 2670458,
+   "set": "discriminators",
+   "name": "L40\u00b7N8058-",
+   "layer": 40,
+   "opposite": 1032058,
+   "weak_pole": false
+  },
+  {
+   "unit": 3084566,
+   "set": "discriminators",
+   "name": "L56\u00b7N12566-",
+   "layer": 56,
+   "opposite": 1446166,
+   "weak_pole": false
+  },
+  {
+   "unit": 3241037,
+   "set": "discriminators",
+   "name": "L62\u00b7N15437-",
+   "layer": 62,
+   "opposite": 1602637,
+   "weak_pole": false
+  },
+  {
+   "unit": 1461365,
+   "set": "discriminators",
+   "name": "L57\u00b7N2165+",
+   "layer": 57,
+   "opposite": 3099765,
+   "weak_pole": false
+  },
+  {
+   "unit": 2697085,
+   "set": "discriminators",
+   "name": "L41\u00b7N9085-",
+   "layer": 41,
+   "opposite": 1058685,
+   "weak_pole": false
+  },
+  {
+   "unit": 2965,
+   "set": "discriminators",
+   "name": "L0\u00b7N2965+",
+   "layer": 0,
+   "opposite": 1641365,
+   "weak_pole": false
+  },
+  {
+   "unit": 317604,
+   "set": "discriminators",
+   "name": "L12\u00b7N10404+",
+   "layer": 12,
+   "opposite": 1956004,
+   "weak_pole": false
+  },
+  {
+   "unit": 1633237,
+   "set": "discriminators",
+   "name": "L63\u00b7N20437+",
+   "layer": 63,
+   "opposite": 3271637,
+   "weak_pole": false
+  },
+  {
+   "unit": 51887,
+   "set": "discriminators",
+   "name": "L2\u00b7N687+",
+   "layer": 2,
+   "opposite": 1690287,
+   "weak_pole": false
+  },
+  {
+   "unit": 357872,
+   "set": "discriminators",
+   "name": "L13\u00b7N25072+",
+   "layer": 13,
+   "opposite": 1996272,
+   "weak_pole": false
+  },
+  {
+   "unit": 496782,
+   "set": "discriminators",
+   "name": "L19\u00b7N10382+",
+   "layer": 19,
+   "opposite": 2135182,
+   "weak_pole": false
+  },
+  {
+   "unit": 552240,
+   "set": "discriminators",
+   "name": "L21\u00b7N14640+",
+   "layer": 21,
+   "opposite": 2190640,
+   "weak_pole": false
+  },
+  {
+   "unit": 1120499,
+   "set": "discriminators",
+   "name": "L43\u00b7N19699+",
+   "layer": 43,
+   "opposite": 2758899,
+   "weak_pole": false
+  },
+  {
+   "unit": 1652692,
+   "set": "discriminators",
+   "name": "L0\u00b7N14292-",
+   "layer": 0,
+   "opposite": 14292,
+   "weak_pole": true
+  },
+  {
+   "unit": 1880565,
+   "set": "discriminators",
+   "name": "L9\u00b7N11765-",
+   "layer": 9,
+   "opposite": 242165,
+   "weak_pole": false
+  },
+  {
+   "unit": 1980491,
+   "set": "discriminators",
+   "name": "L13\u00b7N9291-",
+   "layer": 13,
+   "opposite": 342091,
+   "weak_pole": false
+  },
+  {
+   "unit": 3051398,
+   "set": "common_patterns",
+   "name": "L55\u00b7N4998-",
+   "layer": 55,
+   "opposite": 1412998,
+   "weak_pole": false
+  },
+  {
+   "unit": 208075,
+   "set": "common_patterns",
+   "name": "L8\u00b7N3275+",
+   "layer": 8,
+   "opposite": 1846475,
+   "weak_pole": false
+  },
+  {
+   "unit": 1536542,
+   "set": "common_patterns",
+   "name": "L60\u00b7N542+",
+   "layer": 60,
+   "opposite": 3174942,
+   "weak_pole": false
+  },
+  {
+   "unit": 1543765,
+   "set": "common_patterns",
+   "name": "L60\u00b7N7765+",
+   "layer": 60,
+   "opposite": 3182165,
+   "weak_pole": false
+  },
+  {
+   "unit": 833184,
+   "set": "common_patterns",
+   "name": "L32\u00b7N13984+",
+   "layer": 32,
+   "opposite": 2471584,
+   "weak_pole": true
+  },
+  {
+   "unit": 842440,
+   "set": "common_patterns",
+   "name": "L32\u00b7N23240+",
+   "layer": 32,
+   "opposite": 2480840,
+   "weak_pole": false
+  },
+  {
+   "unit": 3154013,
+   "set": "common_patterns",
+   "name": "L59\u00b7N5213-",
+   "layer": 59,
+   "opposite": 1515613,
+   "weak_pole": false
+  },
+  {
+   "unit": 3147565,
+   "set": "common_patterns",
+   "name": "L58\u00b7N24365-",
+   "layer": 58,
+   "opposite": 1509165,
+   "weak_pole": false
+  },
+  {
+   "unit": 2483435,
+   "set": "common_patterns",
+   "name": "L33\u00b7N235-",
+   "layer": 33,
+   "opposite": 845035,
+   "weak_pole": false
+  },
+  {
+   "unit": 3005424,
+   "set": "common_patterns",
+   "name": "L53\u00b7N10224-",
+   "layer": 53,
+   "opposite": 1367024,
+   "weak_pole": false
+  },
+  {
+   "unit": 1006752,
+   "set": "common_patterns",
+   "name": "L39\u00b7N8352+",
+   "layer": 39,
+   "opposite": 2645152,
+   "weak_pole": false
+  },
+  {
+   "unit": 427568,
+   "set": "common_patterns",
+   "name": "L16\u00b7N17968+",
+   "layer": 16,
+   "opposite": 2065968,
+   "weak_pole": false
+  },
+  {
+   "unit": 2306707,
+   "set": "common_patterns",
+   "name": "L26\u00b7N2707-",
+   "layer": 26,
+   "opposite": 668307,
+   "weak_pole": false
+  },
+  {
+   "unit": 1860920,
+   "set": "common_patterns",
+   "name": "L8\u00b7N17720-",
+   "layer": 8,
+   "opposite": 222520,
+   "weak_pole": false
+  },
+  {
+   "unit": 2853400,
+   "set": "common_patterns",
+   "name": "L47\u00b7N11800-",
+   "layer": 47,
+   "opposite": 1215000,
+   "weak_pole": false
+  },
+  {
+   "unit": 1587002,
+   "set": "common_patterns",
+   "name": "L61\u00b7N25402+",
+   "layer": 61,
+   "opposite": 3225402,
+   "weak_pole": false
+  },
+  {
+   "unit": 1651724,
+   "set": "common_patterns",
+   "name": "L0\u00b7N13324-",
+   "layer": 0,
+   "opposite": 13324,
+   "weak_pole": true
+  },
+  {
+   "unit": 3131221,
+   "set": "common_patterns",
+   "name": "L58\u00b7N8021-",
+   "layer": 58,
+   "opposite": 1492821,
+   "weak_pole": false
+  },
+  {
+   "unit": 1159446,
+   "set": "common_patterns",
+   "name": "L45\u00b7N7446+",
+   "layer": 45,
+   "opposite": 2797846,
+   "weak_pole": false
+  },
+  {
+   "unit": 205442,
+   "set": "common_patterns",
+   "name": "L8\u00b7N642+",
+   "layer": 8,
+   "opposite": 1843842,
+   "weak_pole": false
+  },
+  {
+   "unit": 3176308,
+   "set": "common_patterns",
+   "name": "L60\u00b7N1908-",
+   "layer": 60,
+   "opposite": 1537908,
+   "weak_pole": false
+  },
+  {
+   "unit": 1552347,
+   "set": "common_patterns",
+   "name": "L60\u00b7N16347+",
+   "layer": 60,
+   "opposite": 3190747,
+   "weak_pole": false
+  },
+  {
+   "unit": 2079195,
+   "set": "common_patterns",
+   "name": "L17\u00b7N5595-",
+   "layer": 17,
+   "opposite": 440795,
+   "weak_pole": false
+  },
+  {
+   "unit": 3130157,
+   "set": "common_patterns",
+   "name": "L58\u00b7N6957-",
+   "layer": 58,
+   "opposite": 1491757,
+   "weak_pole": false
+  },
+  {
+   "unit": 3190476,
+   "set": "common_patterns",
+   "name": "L60\u00b7N16076-",
+   "layer": 60,
+   "opposite": 1552076,
+   "weak_pole": false
+  },
+  {
+   "unit": 1546344,
+   "set": "common_patterns",
+   "name": "L60\u00b7N10344+",
+   "layer": 60,
+   "opposite": 3184744,
+   "weak_pole": false
+  },
+  {
+   "unit": 1485188,
+   "set": "common_patterns",
+   "name": "L58\u00b7N388+",
+   "layer": 58,
+   "opposite": 3123588,
+   "weak_pole": false
+  },
+  {
+   "unit": 1520757,
+   "set": "common_patterns",
+   "name": "L59\u00b7N10357+",
+   "layer": 59,
+   "opposite": 3159157,
+   "weak_pole": false
+  },
+  {
+   "unit": 2396903,
+   "set": "common_patterns",
+   "name": "L29\u00b7N16103-",
+   "layer": 29,
+   "opposite": 758503,
+   "weak_pole": false
+  },
+  {
+   "unit": 346100,
+   "set": "common_patterns",
+   "name": "L13\u00b7N13300+",
+   "layer": 13,
+   "opposite": 1984500,
+   "weak_pole": false
+  },
+  {
+   "unit": 1851670,
+   "set": "common_patterns",
+   "name": "L8\u00b7N8470-",
+   "layer": 8,
+   "opposite": 213270,
+   "weak_pole": false
+  },
+  {
+   "unit": 1861897,
+   "set": "common_patterns",
+   "name": "L8\u00b7N18697-",
+   "layer": 8,
+   "opposite": 223497,
+   "weak_pole": false
+  },
+  {
+   "unit": 3184941,
+   "set": "common_patterns",
+   "name": "L60\u00b7N10541-",
+   "layer": 60,
+   "opposite": 1546541,
+   "weak_pole": false
+  },
+  {
+   "unit": 3046518,
+   "set": "common_patterns",
+   "name": "L55\u00b7N118-",
+   "layer": 55,
+   "opposite": 1408118,
+   "weak_pole": false
+  },
+  {
+   "unit": 1516685,
+   "set": "common_patterns",
+   "name": "L59\u00b7N6285+",
+   "layer": 59,
+   "opposite": 3155085,
+   "weak_pole": false
+  },
+  {
+   "unit": 3154686,
+   "set": "common_patterns",
+   "name": "L59\u00b7N5886-",
+   "layer": 59,
+   "opposite": 1516286,
+   "weak_pole": false
+  },
+  {
+   "unit": 1514566,
+   "set": "common_patterns",
+   "name": "L59\u00b7N4166+",
+   "layer": 59,
+   "opposite": 3152966,
+   "weak_pole": false
+  },
+  {
+   "unit": 2625481,
+   "set": "common_patterns",
+   "name": "L38\u00b7N14281-",
+   "layer": 38,
+   "opposite": 987081,
+   "weak_pole": false
+  },
+  {
+   "unit": 3060980,
+   "set": "common_patterns",
+   "name": "L55\u00b7N14580-",
+   "layer": 55,
+   "opposite": 1422580,
+   "weak_pole": false
+  },
+  {
+   "unit": 1871585,
+   "set": "common_patterns",
+   "name": "L9\u00b7N2785-",
+   "layer": 9,
+   "opposite": 233185,
+   "weak_pole": false
+  },
+  {
+   "unit": 9325,
+   "set": "inherited",
+   "name": "L0\u00b7N9325+",
+   "layer": 0,
+   "opposite": 1647725,
+   "weak_pole": false
+  },
+  {
+   "unit": 19352,
+   "set": "inherited",
+   "name": "L0\u00b7N19352+",
+   "layer": 0,
+   "opposite": 1657752,
+   "weak_pole": false
+  },
+  {
+   "unit": 394697,
+   "set": "inherited",
+   "name": "L15\u00b7N10697+",
+   "layer": 15,
+   "opposite": 2033097,
+   "weak_pole": false
+  },
+  {
+   "unit": 504207,
+   "set": "inherited",
+   "name": "L19\u00b7N17807+",
+   "layer": 19,
+   "opposite": 2142607,
+   "weak_pole": false
+  },
+  {
+   "unit": 515413,
+   "set": "inherited",
+   "name": "L20\u00b7N3413+",
+   "layer": 20,
+   "opposite": 2153813,
+   "weak_pole": false
+  },
+  {
+   "unit": 561621,
+   "set": "inherited",
+   "name": "L21\u00b7N24021+",
+   "layer": 21,
+   "opposite": 2200021,
+   "weak_pole": false
+  },
+  {
+   "unit": 920688,
+   "set": "inherited",
+   "name": "L35\u00b7N24688+",
+   "layer": 35,
+   "opposite": 2559088,
+   "weak_pole": false
+  },
+  {
+   "unit": 926177,
+   "set": "inherited",
+   "name": "L36\u00b7N4577+",
+   "layer": 36,
+   "opposite": 2564577,
+   "weak_pole": false
+  },
+  {
+   "unit": 1290289,
+   "set": "inherited",
+   "name": "L50\u00b7N10289+",
+   "layer": 50,
+   "opposite": 2928689,
+   "weak_pole": false
+  },
+  {
+   "unit": 1295861,
+   "set": "inherited",
+   "name": "L50\u00b7N15861+",
+   "layer": 50,
+   "opposite": 2934261,
+   "weak_pole": false
+  },
+  {
+   "unit": 1341224,
+   "set": "inherited",
+   "name": "L52\u00b7N10024+",
+   "layer": 52,
+   "opposite": 2979624,
+   "weak_pole": false
+  },
+  {
+   "unit": 2065308,
+   "set": "inherited",
+   "name": "L16\u00b7N17308-",
+   "layer": 16,
+   "opposite": 426908,
+   "weak_pole": false
+  },
+  {
+   "unit": 2071506,
+   "set": "inherited",
+   "name": "L16\u00b7N23506-",
+   "layer": 16,
+   "opposite": 433106,
+   "weak_pole": false
+  },
+  {
+   "unit": 2251772,
+   "set": "inherited",
+   "name": "L23\u00b7N24572-",
+   "layer": 23,
+   "opposite": 613372,
+   "weak_pole": false
+  },
+  {
+   "unit": 2298898,
+   "set": "inherited",
+   "name": "L25\u00b7N20498-",
+   "layer": 25,
+   "opposite": 660498,
+   "weak_pole": false
+  },
+  {
+   "unit": 2495485,
+   "set": "inherited",
+   "name": "L33\u00b7N12285-",
+   "layer": 33,
+   "opposite": 857085,
+   "weak_pole": false
+  },
+  {
+   "unit": 2663170,
+   "set": "inherited",
+   "name": "L40\u00b7N770-",
+   "layer": 40,
+   "opposite": 1024770,
+   "weak_pole": false
+  },
+  {
+   "unit": 2667574,
+   "set": "inherited",
+   "name": "L40\u00b7N5174-",
+   "layer": 40,
+   "opposite": 1029174,
+   "weak_pole": false
+  },
+  {
+   "unit": 2880987,
+   "set": "inherited",
+   "name": "L48\u00b7N13787-",
+   "layer": 48,
+   "opposite": 1242587,
+   "weak_pole": false
+  },
+  {
+   "unit": 2957052,
+   "set": "inherited",
+   "name": "L51\u00b7N13052-",
+   "layer": 51,
+   "opposite": 1318652,
+   "weak_pole": false
+  },
+  {
+   "unit": 318922,
+   "set": "band_rest",
+   "name": "L12\u00b7N11722+",
+   "layer": 12,
+   "opposite": 1957322,
+   "weak_pole": false
+  },
+  {
+   "unit": 344071,
+   "set": "band_rest",
+   "name": "L13\u00b7N11271+",
+   "layer": 13,
+   "opposite": 1982471,
+   "weak_pole": false
+  },
+  {
+   "unit": 453490,
+   "set": "band_rest",
+   "name": "L17\u00b7N18290+",
+   "layer": 17,
+   "opposite": 2091890,
+   "weak_pole": false
+  },
+  {
+   "unit": 485574,
+   "set": "band_rest",
+   "name": "L18\u00b7N24774+",
+   "layer": 18,
+   "opposite": 2123974,
+   "weak_pole": false
+  },
+  {
+   "unit": 1340707,
+   "set": "band_rest",
+   "name": "L52\u00b7N9507+",
+   "layer": 52,
+   "opposite": 2979107,
+   "weak_pole": false
+  },
+  {
+   "unit": 1405944,
+   "set": "band_rest",
+   "name": "L54\u00b7N23544+",
+   "layer": 54,
+   "opposite": 3044344,
+   "weak_pole": false
+  },
+  {
+   "unit": 1581948,
+   "set": "band_rest",
+   "name": "L61\u00b7N20348+",
+   "layer": 61,
+   "opposite": 3220348,
+   "weak_pole": false
+  },
+  {
+   "unit": 1847046,
+   "set": "band_rest",
+   "name": "L8\u00b7N3846-",
+   "layer": 8,
+   "opposite": 208646,
+   "weak_pole": false
+  },
+  {
+   "unit": 1867375,
+   "set": "band_rest",
+   "name": "L8\u00b7N24175-",
+   "layer": 8,
+   "opposite": 228975,
+   "weak_pole": false
+  },
+  {
+   "unit": 1952331,
+   "set": "band_rest",
+   "name": "L12\u00b7N6731-",
+   "layer": 12,
+   "opposite": 313931,
+   "weak_pole": false
+  },
+  {
+   "unit": 2063681,
+   "set": "band_rest",
+   "name": "L16\u00b7N15681-",
+   "layer": 16,
+   "opposite": 425281,
+   "weak_pole": false
+  },
+  {
+   "unit": 2277703,
+   "set": "band_rest",
+   "name": "L24\u00b7N24903-",
+   "layer": 24,
+   "opposite": 639303,
+   "weak_pole": false
+  },
+  {
+   "unit": 2296861,
+   "set": "band_rest",
+   "name": "L25\u00b7N18461-",
+   "layer": 25,
+   "opposite": 658461,
+   "weak_pole": false
+  },
+  {
+   "unit": 2321679,
+   "set": "band_rest",
+   "name": "L26\u00b7N17679-",
+   "layer": 26,
+   "opposite": 683279,
+   "weak_pole": false
+  },
+  {
+   "unit": 2372268,
+   "set": "band_rest",
+   "name": "L28\u00b7N17068-",
+   "layer": 28,
+   "opposite": 733868,
+   "weak_pole": false
+  },
+  {
+   "unit": 2375398,
+   "set": "band_rest",
+   "name": "L28\u00b7N20198-",
+   "layer": 28,
+   "opposite": 736998,
+   "weak_pole": false
+  },
+  {
+   "unit": 2524311,
+   "set": "band_rest",
+   "name": "L34\u00b7N15511-",
+   "layer": 34,
+   "opposite": 885911,
+   "weak_pole": false
+  },
+  {
+   "unit": 2562846,
+   "set": "band_rest",
+   "name": "L36\u00b7N2846-",
+   "layer": 36,
+   "opposite": 924446,
+   "weak_pole": false
+  },
+  {
+   "unit": 2830013,
+   "set": "band_rest",
+   "name": "L46\u00b7N14013-",
+   "layer": 46,
+   "opposite": 1191613,
+   "weak_pole": false
+  },
+  {
+   "unit": 2950589,
+   "set": "band_rest",
+   "name": "L51\u00b7N6589-",
+   "layer": 51,
+   "opposite": 1312189,
+   "weak_pole": false
+  }
+ ]
+}
