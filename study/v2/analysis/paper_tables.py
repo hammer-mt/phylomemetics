@@ -300,17 +300,23 @@ def main():
             if not a:
                 continue
             r, g, sp = a["matched_random_sets"], a["magnitude_matched_random_sets"], a.get("specificity", {})
-            rows.append([NAMES[m], label, r["n_sets"], f(r["mean_drop_canon"]), f(r["mean_drop_random_sets_mean"], 3), f(r["mean_drop_random_sets_max"], 3), pv(r["p"]),
-                         f(g["mean_drop_random_sets_max"], 3), pv(g["p"]), f(sp.get("mean_drop_hero_films_own_hero")), pv(sp.get("p_one_sided")),
+            # only the confirmatory version is a test (PLAN.md Section 18, change 13): the others give the canon's rank among their 20 sets and no p
+            test = key == "story_tokens_name_free"
+            rank = lambda q: f"{q['random_sets_at_least_canon'] + 1} of {q['n_sets'] + 1}"
+            rows.append([NAMES[m], label, r["n_sets"], f(r["mean_drop_canon"]), f(r["mean_drop_random_sets_mean"], 3), f(r["mean_drop_random_sets_max"], 3),
+                         pv(r["p"]) if test else "", rank(r), f(g["mean_drop_random_sets_max"], 3), pv(g["p"]) if test else "", rank(g),
+                         f(sp.get("mean_drop_hero_films_own_hero")), pv(sp.get("p_one_sided")) if test else "",
                          f(r["activation_removed"]["canon"], 0), f(g["activation_removed"]["sets_mean"], 0),
                          f"{a['untouched_reply_says_batman']} -> {a['canon_ablated_reply_still_says_batman']}"])
         if "criterion" in ab:
             c = ab["criterion"]
-            rows.append([NAMES[m], "criterion", "", "", "", "", pv(c["p_against_sets_matched_on_works"]), "", pv(c["p_against_sets_also_matched_on_activity"]), "",
-                         pv(c["specificity_p"]), "", "", f"evaluable {c['evaluable_with_this_question']}; met {c['met']}"])
+            n_bad = ab["story_tokens_name_free"]["untouched_replies_that_do_not_start_with_a_name"]
+            rows.append([NAMES[m], "criterion", "", "", "", "", pv(c["p_against_sets_matched_on_works"]), "", "", pv(c["p_against_sets_also_matched_on_activity"]), "", "",
+                         pv(c["specificity_p"]), "", "", f"untouched replies that do not start with a name: {n_bad} of 32 (limit 4); evaluable {c['evaluable_with_this_question']}; met {c['met']}"])
     if rows:
         parts.append("## Ablation: switching off Batman's canon (drop in the log-odds of the hero's name)\n\n" +
-                     table(["Model", "Version", "Random sets", "Canon, Batman works", "Sets (mean)", "Sets (max)", "p", "Activity-matched sets (max)", "p",
+                     "Only the first version for each model is a test. The others use 20 sets and are reported as the canon's drop beside the sets' and its rank among them.\n\n" +
+                     table(["Model", "Version", "Random sets", "Canon, Batman works", "Sets (mean)", "Sets (max)", "p", "Canon's rank", "Activity-matched sets (max)", "p", "Canon's rank",
                             "Canon, hero films (own hero)", "Specificity p", "Activation removed: canon", "activity-matched sets (mean)", "Replies naming Batman: untouched -> canon off"], rows))
 
     # ---- twins

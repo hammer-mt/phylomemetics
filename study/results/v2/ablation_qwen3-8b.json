@@ -2093,7 +2093,7 @@
   },
   "mean_drop_where_the_untouched_model_names_batman": 2.0679770636867163,
   "mean_drop_where_it_does_not": 0.1011433240184088,
-  "untouched_replies_that_do_not_start_with_a_name": 1,
+  "untouched_replies_that_do_not_start_with_a_name": 0,
   "canon_ablated_reply_still_says_batman": 16,
   "untouched_reply_says_batman": 20,
   "specificity": {
@@ -3238,7 +3238,7 @@
   },
   "mean_drop_where_the_untouched_model_names_batman": 6.582565447430615,
   "mean_drop_where_it_does_not": 2.64224815346591,
-  "untouched_replies_that_do_not_start_with_a_name": 1,
+  "untouched_replies_that_do_not_start_with_a_name": 0,
   "canon_ablated_reply_still_says_batman": 2,
   "untouched_reply_says_batman": 20,
   "specificity": {
@@ -4023,7 +4023,7 @@
   },
   "mean_drop_where_the_untouched_model_names_batman": 1.918717927822094,
   "mean_drop_where_it_does_not": -1.4795720943766966,
-  "untouched_replies_that_do_not_start_with_a_name": 1,
+  "untouched_replies_that_do_not_start_with_a_name": 0,
   "canon_ablated_reply_still_says_batman": 28,
   "untouched_reply_says_batman": 26,
   "specificity": {
@@ -4808,7 +4808,7 @@
   },
   "mean_drop_where_the_untouched_model_names_batman": 0.456764441314104,
   "mean_drop_where_it_does_not": 0.14735177855396994,
-  "untouched_replies_that_do_not_start_with_a_name": 1,
+  "untouched_replies_that_do_not_start_with_a_name": 0,
   "canon_ablated_reply_still_says_batman": 18,
   "untouched_reply_says_batman": 20,
   "specificity": {
@@ -5593,7 +5593,7 @@
   },
   "mean_drop_where_the_untouched_model_names_batman": 1.6689405269039679,
   "mean_drop_where_it_does_not": 0.019992138497722967,
-  "untouched_replies_that_do_not_start_with_a_name": 1,
+  "untouched_replies_that_do_not_start_with_a_name": 0,
   "canon_ablated_reply_still_says_batman": 16,
   "untouched_reply_says_batman": 20,
   "specificity": {

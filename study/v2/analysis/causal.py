@@ -62,12 +62,17 @@ def identify_collect(tag):
 
 
 def starts_with_name(reply):
-    """A reply that begins with a name: a capitalised word, not a sentence about the story, a code or markup."""
-    r = reply.strip()
-    first = r.split()[0] if r.split() else ""
-    if not first or first.lower() in ("the", "this", "it", "based", "in", "x1") and not r.lower().startswith(("the batman", "the shadow", "the green hornet", "the bat")):
+    """A reply that begins with a name, with or without "The" ("Batman", "The Joker"), as against a sentence about the
+    story ("The story is about ..."), a placeholder code ("X2 is ...") or markup (PLAN.md Section 18, changes 16 and 28)."""
+    words = reply.strip().split()
+    if words and words[0].lower() == "the":
+        words = words[1:]
+    if not words:
         return False
-    return first[0].isalpha() and first[0].isupper() and not first.lower().startswith(("story", "summary", "hero")) and not (first[0] == "X" and first[1:].isdigit())
+    first = words[0]
+    if not (first[0].isalpha() and first[0].isupper()) or (first[0] == "X" and first[1:].rstrip(",.:;").isdigit()):
+        return False
+    return first.lower().rstrip(",.:;") not in ("story", "summary", "hero", "protagonist", "main", "answer", "plot", "character", "name", "this", "it", "based", "in", "there")
 
 
 def says(reply, names):

@@ -219,6 +219,9 @@ Written by `v2/analysis/paper_tables.py` from the committed results. Do not edit
 
 | Model | Units | n | Peaks sharing the commonest stem | Peaks on punctuation or function words | Best single word r (median) | Held-out examples with an explainer key word | Random windows | Held-out examples with an analyst term | Random windows |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Qwen3-32B | all | 241 | 37% | 46% | 0.36 | 44% | 12% | 40% | 10% |
+| Qwen3-32B | name or word | 115 | 42% | 37% | 0.40 | 46% | 9% | 40% | 7% |
+| Qwen3-32B | idea | 126 | 32% | 55% | 0.33 | 43% | 15% | 41% | 13% |
 | Qwen3-8B | all | 207 | 44% | 49% | 0.33 | 47% | 11% | 46% | 10% |
 | Qwen3-8B | name or word | 83 | 50% | 40% | 0.38 | 51% | 10% | 46% | 7% |
 | Qwen3-8B | idea | 124 | 40% | 56% | 0.29 | 45% | 13% | 46% | 12% |
@@ -227,6 +230,8 @@ Written by `v2/analysis/paper_tables.py` from the committed results. Do not edit
 
 | Units of | Judgment | Items | Agreement | Kappa |
 | --- | --- | --- | --- | --- |
+| Qwen3-32B | kind | 241 | 55% | 0.45 |
+| Qwen3-32B | detects | 241 | 80% | 0.61 |
 | Qwen3-8B | kind | 207 | 58% | 0.49 |
 | Qwen3-8B | detects | 207 | 80% | 0.61 |
 
@@ -241,11 +246,13 @@ Written by `v2/analysis/paper_tables.py` from the committed results. Do not edit
 
 ## Ablation: switching off Batman's canon (drop in the log-odds of the hero's name)
 
-| Model | Version | Random sets | Canon, Batman works | Sets (mean) | Sets (max) | p | Activity-matched sets (max) | p | Canon, hero films (own hero) | Specificity p | Activation removed: canon | activity-matched sets (mean) | Replies naming Batman: untouched -> canon off |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Qwen3-8B | summary tokens, name-free (confirmatory) | 200 | 1.33 | 0.033 | 0.113 | 0.0050 | 0.122 | 0.0050 | 0.80 | 0.28 | 8366 | 4933 | 20 -> 16 |
-| Qwen3-8B | every position | 20 | 5.10 | 0.041 | 0.494 | 0.048 | 0.107 | 0.048 | 2.06 | 0.015 | 9075 | 5078 | 20 -> 2 |
-| Qwen3-8B | original texts | 20 | 1.28 | 0.061 | 0.113 | 0.048 | 0.127 | 0.048 | 0.83 | 0.35 | 30057 | 6338 | 26 -> 28 |
-| Qwen3-8B | strong firings only | 20 | 0.34 | 0.015 | 0.044 | 0.048 | 0.052 | 0.048 | 0.15 | 0.29 | 111 | 93 | 20 -> 18 |
-| Qwen3-8B | weak activity only | 20 | 1.05 | 0.033 | 0.093 | 0.048 | 0.081 | 0.048 | 0.32 | 0.18 | 8718 | 4735 | 20 -> 16 |
-| Qwen3-8B | criterion |  |  |  |  | 0.0050 |  | 0.0050 |  | 0.28 |  |  | evaluable True; met False |
+Only the first version for each model is a test. The others use 20 sets and are reported as the canon's drop beside the sets' and its rank among them.
+
+| Model | Version | Random sets | Canon, Batman works | Sets (mean) | Sets (max) | p | Canon's rank | Activity-matched sets (max) | p | Canon's rank | Canon, hero films (own hero) | Specificity p | Activation removed: canon | activity-matched sets (mean) | Replies naming Batman: untouched -> canon off |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Qwen3-8B | summary tokens, name-free (confirmatory) | 200 | 1.33 | 0.033 | 0.113 | 0.0050 | 1 of 201 | 0.122 | 0.0050 | 1 of 201 | 0.80 | 0.28 | 8366 | 4933 | 20 -> 16 |
+| Qwen3-8B | every position | 20 | 5.10 | 0.041 | 0.494 |  | 1 of 21 | 0.107 |  | 1 of 21 | 2.06 |  | 9075 | 5078 | 20 -> 2 |
+| Qwen3-8B | original texts | 20 | 1.28 | 0.061 | 0.113 |  | 1 of 21 | 0.127 |  | 1 of 21 | 0.83 |  | 30057 | 6338 | 26 -> 28 |
+| Qwen3-8B | strong firings only | 20 | 0.34 | 0.015 | 0.044 |  | 1 of 21 | 0.052 |  | 1 of 21 | 0.15 |  | 111 | 93 | 20 -> 18 |
+| Qwen3-8B | weak activity only | 20 | 1.05 | 0.033 | 0.093 |  | 1 of 21 | 0.081 |  | 1 of 21 | 0.32 |  | 8718 | 4735 | 20 -> 16 |
+| Qwen3-8B | criterion |  |  |  |  | 0.0050 |  |  | 0.0050 |  |  | 0.28 |  |  | untouched replies that do not start with a name: 0 of 32 (limit 4); evaluable True; met False |
