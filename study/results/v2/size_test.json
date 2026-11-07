@@ -1,0 +1,577 @@
+{
+ "big": "qwen3-32b",
+ "small": "qwen3-8b",
+ "testable_units": {
+  "n_big": 241,
+  "n_small": 207,
+  "win_rate_big": 0.9626556016597511,
+  "win_rate_small": 0.9710144927536232,
+  "difference": -0.008358891093872112,
+  "p_one_sided": 0.8202179782021798,
+  "by_kind": {
+   "character or name": {
+    "n_big": 50,
+    "n_small": 39,
+    "win_rate_big": 1.0,
+    "win_rate_small": 1.0
+   },
+   "genre or setting": {
+    "n_big": 23,
+    "n_small": 17,
+    "win_rate_big": 1.0,
+    "win_rate_small": 1.0
+   },
+   "grammar": {
+    "n_big": 53,
+    "n_small": 55,
+    "win_rate_big": 0.9056603773584906,
+    "win_rate_small": 0.9454545454545454
+   },
+   "object": {
+    "n_big": 5,
+    "n_small": 5,
+    "win_rate_big": 1.0,
+    "win_rate_small": 1.0
+   },
+   "other": {
+    "n_big": 24,
+    "n_small": 22,
+    "win_rate_big": 0.875,
+    "win_rate_small": 0.9545454545454546
+   },
+   "place": {
+    "n_big": 7,
+    "n_small": 10,
+    "win_rate_big": 1.0,
+    "win_rate_small": 1.0
+   },
+   "story pattern": {
+    "n_big": 12,
+    "n_small": 8,
+    "win_rate_big": 1.0,
+    "win_rate_small": 1.0
+   },
+   "style or format": {
+    "n_big": 11,
+    "n_small": 5,
+    "win_rate_big": 0.9090909090909091,
+    "win_rate_small": 1.0
+   },
+   "word or token": {
+    "n_big": 56,
+    "n_small": 46,
+    "win_rate_big": 1.0,
+    "win_rate_small": 0.9565217391304348
+   }
+  }
+ },
+ "all_units": {
+  "n_big": 241,
+  "n_small": 207,
+  "win_rate_big": 0.9626556016597511,
+  "win_rate_small": 0.9710144927536232,
+  "difference": -0.008358891093872112,
+  "p_one_sided": 0.8123187681231877,
+  "by_kind": {
+   "character or name": {
+    "n_big": 50,
+    "n_small": 39,
+    "win_rate_big": 1.0,
+    "win_rate_small": 1.0
+   },
+   "genre or setting": {
+    "n_big": 23,
+    "n_small": 17,
+    "win_rate_big": 1.0,
+    "win_rate_small": 1.0
+   },
+   "grammar": {
+    "n_big": 53,
+    "n_small": 55,
+    "win_rate_big": 0.9056603773584906,
+    "win_rate_small": 0.9454545454545454
+   },
+   "object": {
+    "n_big": 5,
+    "n_small": 5,
+    "win_rate_big": 1.0,
+    "win_rate_small": 1.0
+   },
+   "other": {
+    "n_big": 24,
+    "n_small": 22,
+    "win_rate_big": 0.875,
+    "win_rate_small": 0.9545454545454546
+   },
+   "place": {
+    "n_big": 7,
+    "n_small": 10,
+    "win_rate_big": 1.0,
+    "win_rate_small": 1.0
+   },
+   "story pattern": {
+    "n_big": 12,
+    "n_small": 8,
+    "win_rate_big": 1.0,
+    "win_rate_small": 1.0
+   },
+   "style or format": {
+    "n_big": 11,
+    "n_small": 5,
+    "win_rate_big": 0.9090909090909091,
+    "win_rate_small": 1.0
+   },
+   "word or token": {
+    "n_big": 56,
+    "n_small": 46,
+    "win_rate_big": 1.0,
+    "win_rate_small": 0.9565217391304348
+   }
+  }
+ },
+ "testable_units_within_selection_set": {
+  "n_big": 241,
+  "n_small": 207,
+  "win_rate_big": 0.9626556016597511,
+  "win_rate_small": 0.9710144927536232,
+  "difference": -0.008358891093872112,
+  "p_one_sided": 0.8586141385861414,
+  "by_kind": {
+   "band_rest": {
+    "n_big": 20,
+    "n_small": 20,
+    "win_rate_big": 1.0,
+    "win_rate_small": 0.95
+   },
+   "common": {
+    "n_big": 30,
+    "n_small": 30,
+    "win_rate_big": 1.0,
+    "win_rate_small": 1.0
+   },
+   "common_patterns": {
+    "n_big": 40,
+    "n_small": 40,
+    "win_rate_big": 1.0,
+    "win_rate_small": 1.0
+   },
+   "core": {
+    "n_big": 60,
+    "n_small": 28,
+    "win_rate_big": 1.0,
+    "win_rate_small": 1.0
+   },
+   "discriminators": {
+    "n_big": 40,
+    "n_small": 39,
+    "win_rate_big": 0.8,
+    "win_rate_small": 0.9230769230769231
+   },
+   "inherited": {
+    "n_big": 20,
+    "n_small": 20,
+    "win_rate_big": 0.95,
+    "win_rate_small": 1.0
+   },
+   "name_free_core": {
+    "n_big": 1,
+    "n_small": 0,
+    "win_rate_big": 1.0,
+    "win_rate_small": null
+   },
+   "optional": {
+    "n_big": 30,
+    "n_small": 30,
+    "win_rate_big": 1.0,
+    "win_rate_small": 0.9333333333333333
+   }
+  }
+ },
+ "testable_units_within_set_and_kind": {
+  "n_big": 241,
+  "n_small": 207,
+  "win_rate_big": 0.9626556016597511,
+  "win_rate_small": 0.9710144927536232,
+  "difference": -0.008358891093872112,
+  "p_one_sided": 0.8587141285871412,
+  "by_kind": {
+   "band_rest | character or name": {
+    "n_big": 0,
+    "n_small": 1,
+    "win_rate_big": null,
+    "win_rate_small": 1.0
+   },
+   "band_rest | grammar": {
+    "n_big": 7,
+    "n_small": 9,
+    "win_rate_big": 1.0,
+    "win_rate_small": 0.8888888888888888
+   },
+   "band_rest | object": {
+    "n_big": 0,
+    "n_small": 1,
+    "win_rate_big": null,
+    "win_rate_small": 1.0
+   },
+   "band_rest | other": {
+    "n_big": 3,
+    "n_small": 2,
+    "win_rate_big": 1.0,
+    "win_rate_small": 1.0
+   },
+   "band_rest | story pattern": {
+    "n_big": 5,
+    "n_small": 1,
+    "win_rate_big": 1.0,
+    "win_rate_small": 1.0
+   },
+   "band_rest | style or format": {
+    "n_big": 1,
+    "n_small": 1,
+    "win_rate_big": 1.0,
+    "win_rate_small": 1.0
+   },
+   "band_rest | word or token": {
+    "n_big": 4,
+    "n_small": 5,
+    "win_rate_big": 1.0,
+    "win_rate_small": 1.0
+   },
+   "common | character or name": {
+    "n_big": 9,
+    "n_small": 12,
+    "win_rate_big": 1.0,
+    "win_rate_small": 1.0
+   },
+   "common | genre or setting": {
+    "n_big": 4,
+    "n_small": 5,
+    "win_rate_big": 1.0,
+    "win_rate_small": 1.0
+   },
+   "common | grammar": {
+    "n_big": 2,
+    "n_small": 4,
+    "win_rate_big": 1.0,
+    "win_rate_small": 1.0
+   },
+   "common | object": {
+    "n_big": 2,
+    "n_small": 1,
+    "win_rate_big": 1.0,
+    "win_rate_small": 1.0
+   },
+   "common | other": {
+    "n_big": 1,
+    "n_small": 3,
+    "win_rate_big": 1.0,
+    "win_rate_small": 1.0
+   },
+   "common | place": {
+    "n_big": 1,
+    "n_small": 1,
+    "win_rate_big": 1.0,
+    "win_rate_small": 1.0
+   },
+   "common | story pattern": {
+    "n_big": 2,
+    "n_small": 0,
+    "win_rate_big": 1.0,
+    "win_rate_small": null
+   },
+   "common | style or format": {
+    "n_big": 1,
+    "n_small": 0,
+    "win_rate_big": 1.0,
+    "win_rate_small": null
+   },
+   "common | word or token": {
+    "n_big": 8,
+    "n_small": 4,
+    "win_rate_big": 1.0,
+    "win_rate_small": 1.0
+   },
+   "common_patterns | character or name": {
+    "n_big": 8,
+    "n_small": 10,
+    "win_rate_big": 1.0,
+    "win_rate_small": 1.0
+   },
+   "common_patterns | genre or setting": {
+    "n_big": 7,
+    "n_small": 4,
+    "win_rate_big": 1.0,
+    "win_rate_small": 1.0
+   },
+   "common_patterns | grammar": {
+    "n_big": 11,
+    "n_small": 10,
+    "win_rate_big": 1.0,
+    "win_rate_small": 1.0
+   },
+   "common_patterns | object": {
+    "n_big": 1,
+    "n_small": 0,
+    "win_rate_big": 1.0,
+    "win_rate_small": null
+   },
+   "common_patterns | other": {
+    "n_big": 2,
+    "n_small": 3,
+    "win_rate_big": 1.0,
+    "win_rate_small": 1.0
+   },
+   "common_patterns | place": {
+    "n_big": 3,
+    "n_small": 3,
+    "win_rate_big": 1.0,
+    "win_rate_small": 1.0
+   },
+   "common_patterns | story pattern": {
+    "n_big": 1,
+    "n_small": 1,
+    "win_rate_big": 1.0,
+    "win_rate_small": 1.0
+   },
+   "common_patterns | style or format": {
+    "n_big": 0,
+    "n_small": 1,
+    "win_rate_big": null,
+    "win_rate_small": 1.0
+   },
+   "common_patterns | word or token": {
+    "n_big": 7,
+    "n_small": 8,
+    "win_rate_big": 1.0,
+    "win_rate_small": 1.0
+   },
+   "core | character or name": {
+    "n_big": 29,
+    "n_small": 12,
+    "win_rate_big": 1.0,
+    "win_rate_small": 1.0
+   },
+   "core | genre or setting": {
+    "n_big": 11,
+    "n_small": 5,
+    "win_rate_big": 1.0,
+    "win_rate_small": 1.0
+   },
+   "core | grammar": {
+    "n_big": 9,
+    "n_small": 5,
+    "win_rate_big": 1.0,
+    "win_rate_small": 1.0
+   },
+   "core | other": {
+    "n_big": 1,
+    "n_small": 2,
+    "win_rate_big": 1.0,
+    "win_rate_small": 1.0
+   },
+   "core | place": {
+    "n_big": 2,
+    "n_small": 4,
+    "win_rate_big": 1.0,
+    "win_rate_small": 1.0
+   },
+   "core | style or format": {
+    "n_big": 1,
+    "n_small": 0,
+    "win_rate_big": 1.0,
+    "win_rate_small": null
+   },
+   "core | word or token": {
+    "n_big": 7,
+    "n_small": 0,
+    "win_rate_big": 1.0,
+    "win_rate_small": null
+   },
+   "discriminators | genre or setting": {
+    "n_big": 0,
+    "n_small": 2,
+    "win_rate_big": null,
+    "win_rate_small": 1.0
+   },
+   "discriminators | grammar": {
+    "n_big": 10,
+    "n_small": 15,
+    "win_rate_big": 0.6,
+    "win_rate_small": 0.8666666666666667
+   },
+   "discriminators | object": {
+    "n_big": 2,
+    "n_small": 0,
+    "win_rate_big": 1.0,
+    "win_rate_small": null
+   },
+   "discriminators | other": {
+    "n_big": 10,
+    "n_small": 4,
+    "win_rate_big": 0.7,
+    "win_rate_small": 1.0
+   },
+   "discriminators | story pattern": {
+    "n_big": 0,
+    "n_small": 2,
+    "win_rate_big": null,
+    "win_rate_small": 1.0
+   },
+   "discriminators | style or format": {
+    "n_big": 6,
+    "n_small": 3,
+    "win_rate_big": 0.8333333333333334,
+    "win_rate_small": 1.0
+   },
+   "discriminators | word or token": {
+    "n_big": 12,
+    "n_small": 13,
+    "win_rate_big": 1.0,
+    "win_rate_small": 0.9230769230769231
+   },
+   "inherited | character or name": {
+    "n_big": 0,
+    "n_small": 1,
+    "win_rate_big": null,
+    "win_rate_small": 1.0
+   },
+   "inherited | grammar": {
+    "n_big": 10,
+    "n_small": 11,
+    "win_rate_big": 0.9,
+    "win_rate_small": 1.0
+   },
+   "inherited | other": {
+    "n_big": 1,
+    "n_small": 1,
+    "win_rate_big": 1.0,
+    "win_rate_small": 1.0
+   },
+   "inherited | place": {
+    "n_big": 1,
+    "n_small": 0,
+    "win_rate_big": 1.0,
+    "win_rate_small": null
+   },
+   "inherited | story pattern": {
+    "n_big": 3,
+    "n_small": 2,
+    "win_rate_big": 1.0,
+    "win_rate_small": 1.0
+   },
+   "inherited | style or format": {
+    "n_big": 1,
+    "n_small": 0,
+    "win_rate_big": 1.0,
+    "win_rate_small": null
+   },
+   "inherited | word or token": {
+    "n_big": 4,
+    "n_small": 5,
+    "win_rate_big": 1.0,
+    "win_rate_small": 1.0
+   },
+   "name_free_core | genre or setting": {
+    "n_big": 1,
+    "n_small": 0,
+    "win_rate_big": 1.0,
+    "win_rate_small": null
+   },
+   "optional | character or name": {
+    "n_big": 4,
+    "n_small": 3,
+    "win_rate_big": 1.0,
+    "win_rate_small": 1.0
+   },
+   "optional | genre or setting": {
+    "n_big": 0,
+    "n_small": 1,
+    "win_rate_big": null,
+    "win_rate_small": 1.0
+   },
+   "optional | grammar": {
+    "n_big": 4,
+    "n_small": 1,
+    "win_rate_big": 1.0,
+    "win_rate_small": 1.0
+   },
+   "optional | object": {
+    "n_big": 0,
+    "n_small": 3,
+    "win_rate_big": null,
+    "win_rate_small": 1.0
+   },
+   "optional | other": {
+    "n_big": 6,
+    "n_small": 7,
+    "win_rate_big": 1.0,
+    "win_rate_small": 0.8571428571428571
+   },
+   "optional | place": {
+    "n_big": 0,
+    "n_small": 2,
+    "win_rate_big": null,
+    "win_rate_small": 1.0
+   },
+   "optional | story pattern": {
+    "n_big": 1,
+    "n_small": 2,
+    "win_rate_big": 1.0,
+    "win_rate_small": 1.0
+   },
+   "optional | style or format": {
+    "n_big": 1,
+    "n_small": 0,
+    "win_rate_big": 1.0,
+    "win_rate_small": null
+   },
+   "optional | word or token": {
+    "n_big": 14,
+    "n_small": 11,
+    "win_rate_big": 1.0,
+    "win_rate_small": 0.9090909090909091
+   }
+  }
+ },
+ "not_testable_out_of_context": {
+  "big": 0,
+  "small": 0
+ },
+ "near_miss_strong_rate": {
+  "big": 0.03485477178423236,
+  "small": 0.03768115942028986,
+  "difference": -0.002826387636057498,
+  "ci95": [
+   -0.022722452743199624,
+   0.016660753302463575
+  ]
+ },
+ "new_example_strong_rate": {
+  "big": 0.8058091286307053,
+  "small": 0.8473429951690823,
+  "difference": -0.041533866538376985,
+  "ci95": [
+   -0.0914059775091708,
+   0.007968208150420064
+  ]
+ },
+ "one_idea_score": {
+  "big": 6.0,
+  "small": 6.405797101449275,
+  "difference": -0.4057971014492754,
+  "ci95": [
+   -0.7134203299456775,
+   -0.09956451580572036
+  ]
+ },
+ "idea_bound_share": {
+  "big": 0.45643153526970953,
+  "small": 0.3526570048309179,
+  "difference": 0.10377453043879165,
+  "ci95": [
+   0.013290035480185203,
+   0.1914727283661074
+  ]
+ },
+ "criterion_met": false
+}
