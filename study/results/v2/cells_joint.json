@@ -1,0 +1,80 @@
+{
+ "cells": [
+  "qwen3-8b | full precision, v2 rule",
+  "qwen3-8b | full precision, v1 rule",
+  "llama3.1-8b | full precision, v2 rule",
+  "llama3.1-8b | full precision, v1 rule"
+ ],
+ "n_relabellings": 3991680,
+ "tests": {
+  "E2": {
+   "exact_p_by_cell": {
+    "qwen3-8b | full precision, v2 rule": 0.0001823793490460157,
+    "qwen3-8b | full precision, v1 rule": 0.00034471701138367804,
+    "llama3.1-8b | full precision, v2 rule": 0.00047248276414943083,
+    "llama3.1-8b | full precision, v1 rule": 0.0003402076318742985
+   },
+   "cells_below_0.05": 4,
+   "probability_of_at_least_that_many_under_one_null_for_all_cells": 0.013877114397947731,
+   "probability_of_at_least_k_cells": {
+    "1": 0.10413660413660414,
+    "2": 0.05315380992464326,
+    "3": 0.02874704385121052,
+    "4": 0.013877114397947731
+   },
+   "the_same_if_the_cells_were_independent": {
+    "1": 0.18549374999999999,
+    "2": 0.014018750000000003,
+    "3": 0.0004812500000000001,
+    "4": 6.250000000000001e-06
+   },
+   "mean_pairwise_correlation_of_cells_under_the_null": 0.48192170657933975
+  },
+  "residual_decision_test": {
+   "exact_p_by_cell": {
+    "qwen3-8b | full precision, v2 rule": 0.6181126743626744,
+    "qwen3-8b | full precision, v1 rule": 0.22489002124418792,
+    "llama3.1-8b | full precision, v2 rule": 0.5698921256212923,
+    "llama3.1-8b | full precision, v1 rule": 0.14222182138848805
+   },
+   "cells_below_0.05": 0,
+   "probability_of_at_least_that_many_under_one_null_for_all_cells": 1.0,
+   "probability_of_at_least_k_cells": {
+    "1": 0.10851721580888248,
+    "2": 0.054398649190315854,
+    "3": 0.025118746993746995,
+    "4": 0.011895993666827
+   },
+   "the_same_if_the_cells_were_independent": {
+    "1": 0.18549374999999999,
+    "2": 0.014018750000000003,
+    "3": 0.0004812500000000001,
+    "4": 6.250000000000001e-06
+   },
+   "mean_pairwise_correlation_of_cells_under_the_null": 0.43991326118018215
+  },
+  "residual_registered_two_measure_form": {
+   "exact_p_by_cell": {
+    "qwen3-8b | full precision, v2 rule": 0.2622068903318903,
+    "qwen3-8b | full precision, v1 rule": 0.014625170354337021,
+    "llama3.1-8b | full precision, v2 rule": 0.1993338644380311,
+    "llama3.1-8b | full precision, v1 rule": 0.03453558401475068
+   },
+   "cells_below_0.05": 2,
+   "probability_of_at_least_that_many_under_one_null_for_all_cells": 0.054647416626583296,
+   "probability_of_at_least_k_cells": {
+    "1": 0.11552053270803271,
+    "2": 0.054647416626583296,
+    "3": 0.020935044893378225,
+    "4": 0.008589866923200257
+   },
+   "the_same_if_the_cells_were_independent": {
+    "1": 0.18549374999999999,
+    "2": 0.014018750000000003,
+    "3": 0.0004812500000000001,
+    "4": 6.250000000000001e-06
+   },
+   "mean_pairwise_correlation_of_cells_under_the_null": 0.3771288381969886
+  }
+ }
+}
