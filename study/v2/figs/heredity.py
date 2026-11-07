@@ -38,15 +38,14 @@ PANEL_B = "Share of eligible comics that beat the documented source, averaged ov
 X_LABEL = "Share of eligible comics that beat the source (0 = the source is always closest; lower is better)"
 ROWS_B = ["Units", "Word counts: TF-IDF", "Word counts: word presence", "Units, after word counts\nare regressed out"]
 
-GREY = os.environ.get("GREY", style.SHARED)
 # tag in the result file, display name, mark. The primary model is the solid dark dot; the others are quieter.
 MODELS = [
-    ("qwen3-32b", "Qwen3-32B", dict(marker="o", ms=5.6, mfc=style.NIGHT, mec="white", mew=0.4)),
-    ("qwen3-8b", "Qwen3-8B", dict(marker="o", ms=4.5, mfc="white", mec=style.NIGHT, mew=1.1)),
-    ("llama3.1-8b", "Llama 3.1 8B", dict(marker="o", ms=5.2, mfc=GREY, mec="white", mew=0.4)),
-    ("llama3.3-70b", "Llama 3.3 70B", dict(marker="o", ms=4.5, mfc="white", mec=GREY, mew=1.1)),
+    ("qwen3-32b", "Qwen3-32B", dict(marker="o", ms=5.5, mfc=style.NIGHT, mec="white", mew=0.3)),
+    ("qwen3-8b", "Qwen3-8B", dict(marker="o", ms=4.3, mfc="white", mec=style.NIGHT, mew=1.1)),
+    ("llama3.1-8b", "Llama 3.1 8B", dict(marker="o", ms=5.1, mfc=style.SHARED, mec="white", mew=0.3)),
+    ("llama3.3-70b", "Llama 3.3 70B", dict(marker="o", ms=4.3, mfc="white", mec=style.SHARED, mew=1.1)),
 ]
-TFIDF = dict(marker="D", ms=3.8, mfc=style.INK_3, mec="white", mew=0.5)     # word counts are not a model: diamonds
+TFIDF = dict(marker="D", ms=4.0, mfc=style.INK_3, mec="white", mew=0.5)     # word counts are not a model: diamonds
 PRESENCE = dict(marker="D", ms=3.2, mfc="white", mec=style.INK_3, mew=0.9)
 # titles spelled as in version 1's figure
 NAMES = {"Dark Knight Rises": "The Dark Knight Rises", "Dark Knight Returns": "The Dark Knight Returns",
@@ -91,8 +90,8 @@ groups = [
     [(kw, summary(d[tag]["E2"], f"units, {tag}")) for tag, _, kw in models],
     [(TFIDF, summary(words["tfidf_cosine"], "words, tfidf_cosine"))],
     [(PRESENCE, summary(words["word_presence"], "words, word_presence"))],
-    [(kw, summary({"summary": d[tag]["E2"]["residual_summary"]["decision_words_by_frequency"]}, f"residual, {tag}"))
-     for tag, _, kw in models],
+    [(kw, summary({"summary": d[tag]["E2"]["residual_summary"]["decision_words_by_frequency"]},
+                  f"units after word counts are regressed out (the decision test), {tag}")) for tag, _, kw in models],
 ]
 stats = [s for g in groups for _, s in g]
 chances = [s["chance_mean"] for s in stats if "chance_mean" in s]
@@ -102,16 +101,16 @@ print(f"chance line at {chance:.4f}: mean of {len(chances)} chance means, from {
 # ---- geometry, in inches; y is measured down from the top ----
 W = style.WIDTH_IN - 0.16            # saving adds 0.08 in on each side, so the PNG is exactly the text width
 FS, FS_S = 7.5, 6.8
-row_h, sub_h, gap = 0.30, 0.17, 0.11
+row_h, sub_h, gap = 0.31, 0.17, 0.11
 x_text, sx0 = 0.05, 2.16             # labels start here; slots and panel B's axis start at sx0
 n_slots = max(r["n_comics"] for r in base)
 pitch = (W - 0.03 - sx0) / n_slots
-cell_w, cell_h = pitch - 0.045, 0.18
+cell_w, cell_h = pitch - 0.045, 0.215
 slot_x = lambda rank: sx0 + (rank - 1) * pitch + cell_w / 2  # noqa: E731
-ya = 1.12                            # centre of panel A's first row
+ya = 1.09                            # centre of panel A's first row
 yb_head = ya + (len(base) - 0.5) * row_h + 0.30
 yb = yb_head + 0.36                  # top of panel B's axis
-hb = sum(len(g) for g in groups) * sub_h + (len(groups) - 1) * gap + 0.08
+hb = sum(len(g) * sub_h + gap for g in groups if g) - gap + 0.08
 H = yb + hb + 0.78
 
 fig = plt.figure(figsize=(W, H))
@@ -119,14 +118,14 @@ ax = fig.add_axes([0, 0, 1, 1])      # the whole canvas, in inches
 ax.set_xlim(0, W)
 ax.set_ylim(H, 0)
 ax.axis("off")
-style.title(fig, TITLE, SUBTITLE)
+style.title(fig, TITLE)              # the subtitle sits a fixed distance under it, as in the other tall figures
+fig.text(0.01, 1 - 0.30 / H, SUBTITLE, ha="left", va="top", fontsize=7.5, color=style.INK_2)
 
 # ---- A: the rank of the documented source, adaptation by adaptation ----
-ax.text(x_text, ya - 0.41, "A", fontsize=9, fontweight="bold", va="center")
-ax.text(x_text + 0.18, ya - 0.41, PANEL_A, fontsize=7.6, fontweight="bold", va="center")
+ax.text(x_text, ya - 0.43, "A", fontsize=9, fontweight="bold", va="center")
+ax.text(x_text + 0.18, ya - 0.43, PANEL_A, fontsize=7.6, fontweight="bold", va="center")
 for n in (1, n_slots):
-    ax.text(slot_x(n), ya - 0.18, ordinal(n), ha="center", va="center", fontsize=FS_S,
-            color=style.INK_3)
+    ax.text(slot_x(n), ya - 0.20, ordinal(n), ha="center", va="center", fontsize=FS_S, color=style.INK_3)
 for k, r in enumerate(base):
     y = ya + k * row_h
     ax.text(x_text, y - 0.055, NAMES.get(r["target"], r["target"]), va="center", fontsize=8)
@@ -142,8 +141,8 @@ for k, r in enumerate(base):
     for rank, kws in in_slot.items():
         step = min(0.085, (cell_w - 0.085) / max(len(kws) - 1, 1))
         for i, kw in enumerate(kws):
-            ax.plot(slot_x(rank) + (i - (len(kws) - 1) / 2) * step, y - 0.02, ls="", zorder=3, **kw)
-    ax.plot(slot_x(r["rank"]), y + cell_h / 2, ls="", zorder=4, **TFIDF)   # word counts: on the slot's lower edge
+            ax.plot(slot_x(rank) + (i - (len(kws) - 1) / 2) * step, y - 0.045, ls="", zorder=3, **kw)
+    ax.plot(slot_x(r["rank"]), y + 0.055, ls="", zorder=3, **TFIDF)   # word counts: the slot's lower lane
 
 # ---- B: the share of eligible comics that beat the source ----
 ax.text(x_text, yb_head, "B", fontsize=9, fontweight="bold", va="center")
@@ -164,6 +163,8 @@ bx.annotate("chance", (chance, 0), xytext=(0, 3), textcoords="offset points", ha
             fontsize=7, color=style.INK_3)
 y = 0.04
 for label, items in zip(ROWS_B, groups):
+    if not items:
+        continue
     if y > 0.04:
         ax.plot([x_text, W - 0.03], [yb + y - gap / 2] * 2, color=style.RULE, linewidth=0.5, zorder=0)
     ax.text(x_text, yb + y + len(items) * sub_h / 2, label, va="center", fontsize=FS, linespacing=1.25)
