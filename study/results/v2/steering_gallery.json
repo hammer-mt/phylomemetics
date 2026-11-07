@@ -1,0 +1,838 @@
+{
+ "model": "qwen3-32b",
+ "chance": 0.2,
+ "by_multiple": {
+  "1": {
+   "n": 40,
+   "judged": 40,
+   "correct": 12,
+   "none": 23,
+   "accuracy": 0.3
+  },
+  "2": {
+   "n": 40,
+   "judged": 40,
+   "correct": 13,
+   "none": 20,
+   "accuracy": 0.325
+  },
+  "3": {
+   "n": 40,
+   "judged": 40,
+   "correct": 18,
+   "none": 14,
+   "accuracy": 0.45
+  },
+  "5": {
+   "n": 40,
+   "judged": 40,
+   "correct": 23,
+   "none": 6,
+   "accuracy": 0.575
+  }
+ },
+ "chosen_multiple": 5,
+ "p_above_chance_at_chosen": 2.0282597642980467e-07,
+ "verdicts": {
+  "g005": {
+   "choice": "none",
+   "reason": "The forced text shifts to scientists with equations and a music-festival road trip, which does not clearly match any candidate.",
+   "answer": "1"
+  },
+  "g101": {
+   "choice": "1",
+   "reason": "The first forced continuation becomes an exposure case report ('a pregnant girl was exposed to a large number of guinea pigs ... within a week'), combining the 'number' wording with animal-to-human infection material.",
+   "answer": "1"
+  },
+  "g054": {
+   "choice": "5",
+   "reason": "Two of the three forced continuations introduce Coxiella burnetii and Q fever caught from animals, which is a zoonotic infection.",
+   "answer": "5"
+  },
+  "g094": {
+   "choice": "2",
+   "reason": "The forced text repeatedly breaks into descriptions of a zoonosis caused by Coxiella bacteria, which matches the candidate naming zoonotic infections.",
+   "answer": "2"
+  },
+  "g053": {
+   "choice": "none",
+   "reason": "The forced continuations are different generic stories (an attic key, men driving to the airport, slaves mining an asteroid) with nothing pointing to any of the five candidates.",
+   "answer": "3"
+  },
+  "g017": {
+   "choice": "none",
+   "reason": "The forced texts (a boy narrator, a stabbing in a car, a witch school) share no theme that matches any of the idiom or phrase candidates.",
+   "answer": "5"
+  },
+  "g003": {
+   "choice": "2",
+   "reason": "The forced text explicitly raises an unresolved question ('The question that arises is: why is he weeping in public?'), fitting the open-question unit better than the other candidates.",
+   "answer": "1"
+  },
+  "g061": {
+   "choice": "1",
+   "reason": "The garbled forced text circles around 'the injured', 'to get worse' and 'facing a crisis with the fact that', the material of piling-on phrases such as adding insult to injury or making matters worse.",
+   "answer": "1"
+  },
+  "g025": {
+   "choice": "5",
+   "reason": "The forced text introduces a mall Santa and a warm, golden, festive gathering, which points to the Christmas Day unit.",
+   "answer": "5"
+  },
+  "g091": {
+   "choice": "5",
+   "reason": "The forced texts bring in a letter from Santa, a special gift and waiting by the tree, plus a Home Alone-like Kevin, matching the Christmas Day unit.",
+   "answer": "5"
+  },
+  "g115": {
+   "choice": "1",
+   "reason": "The forced continuations swing to Christmas (wrapping gifts at the North Pole, a Christmas song, a first Christmas together), which matches the Christmas Day unit.",
+   "answer": "1"
+  },
+  "g103": {
+   "choice": "5",
+   "reason": "The forced continuations bring in Christmas, carols round the tree, gifts, the North Pole and Santa, matching the Christmas Day candidate.",
+   "answer": "5"
+  },
+  "g023": {
+   "choice": "none",
+   "reason": "The forced text drifts to a man at a desk and a camping trip to an old mining town, and nothing in it points to web strings, '-ing' rhymes, split verbs, puppet experiments or hedging phrases.",
+   "answer": "2"
+  },
+  "g145": {
+   "choice": "none",
+   "reason": "The forced texts degenerate into repeated function words ('and', 'forth', 'to', 'go to') that do not point to the subject of any of the candidates.",
+   "answer": "1"
+  },
+  "g111": {
+   "choice": "3",
+   "reason": "The forced text collapses into repeated 'swing' and 'wing', which is the swing/sting/fling/cling completion.",
+   "answer": "3"
+  },
+  "g104": {
+   "choice": "2",
+   "reason": "The forced output degenerates into repeated 'ng', 'wing' and 'swing', matching the unit that completes swing-type words ending in '-ing'.",
+   "answer": "2"
+  },
+  "g126": {
+   "choice": "none",
+   "reason": "The forced text drifts into an arithmetic word problem about ages and run-on camera and character description, and none of the five candidates is about that.",
+   "answer": "4"
+  },
+  "g119": {
+   "choice": "2",
+   "reason": "Two of the three forced outputs collapse into nothing but runs of newline separators, which matches the hard-wrapped line-break separator unit and no other candidate.",
+   "answer": "1"
+  },
+  "g027": {
+   "choice": "3",
+   "reason": "The forced output is almost nothing but line breaks and short line-ending fragments, matching separators at the right margin of hard-wrapped text.",
+   "answer": "2"
+  },
+  "g095": {
+   "choice": "none",
+   "reason": "The forced text is garbled identifier fragments built from 'id' and 'log', which none of the candidates describes better than the others.",
+   "answer": "1"
+  },
+  "g135": {
+   "choice": "none",
+   "reason": "The forced text only swaps in generic alternative scenes (card players in a dim room, two fugitives teaming up) with no numbers-and, dates, unsurprising-result phrases, hedges or Srinivasa.",
+   "answer": "3"
+  },
+  "g040": {
+   "choice": "none",
+   "reason": "The forced continuations (Alice, a camera setup, a cabin murder mystery) show no dates, hedges, names or stock phrases matching any of the candidates.",
+   "answer": "5"
+  },
+  "g092": {
+   "choice": "1",
+   "reason": "The forced text fills with counted quantities and math problems (100 questions, 100 feet, 10 feet), which fits the 'the number and' quantity detector best.",
+   "answer": "5"
+  },
+  "g067": {
+   "choice": "2",
+   "reason": "The forced output is flooded with digit strings that read like dates and years (1919, 1993, 000) right after the opener, consistent with a unit that anticipates an upcoming date number.",
+   "answer": "4"
+  },
+  "g087": {
+   "choice": "4",
+   "reason": "The forced text swings to fanfiction-style romance material (a witch and her demon best friend, a magical catastrophe, 'the main characters are in a romantic'), which matches reader-applied story trope labels better than any other candidate.",
+   "answer": "4"
+  },
+  "g137": {
+   "choice": "2",
+   "reason": "The forced texts shift into romance-fandom blurbs with reader labels such as 'meet cute' and 'slow burn' and stock fantasy-romance names, matching the story-label unit.",
+   "answer": "2"
+  },
+  "g020": {
+   "choice": "4",
+   "reason": "The forced text fills with reader trope labels such as slow burn, enemies to lovers, found family and reunion romance.",
+   "answer": "4"
+  },
+  "g140": {
+   "choice": "4",
+   "reason": "The forced text degenerates into short repeated fragments each closed by a separator (ellipses, commas, parentheses), which weakly fits the separator candidate and nothing else fits at all.",
+   "answer": "5"
+  },
+  "g108": {
+   "choice": "2",
+   "reason": "The only distinctive push is toward pursuit, with the thief and the woman both 'on the run' from the police and the past, which weakly fits a unit anticipating a catch verb better than the other candidates.",
+   "answer": "3"
+  },
+  "g007": {
+   "choice": "none",
+   "reason": "Apart from a passing 'it's a classic' remark about the book, the forced text (a dim room, a girl delivering a baby) carries nothing about detective fiction, odds, catch verbs, piling-on phrases or distances.",
+   "answer": "2"
+  },
+  "g039": {
+   "choice": "5",
+   "reason": "The forced text is saturated with champions, defending champions, the underdog, the spread and a stunning upset, matching the who-is-expected-to-win vocabulary.",
+   "answer": "5"
+  },
+  "g078": {
+   "choice": "3",
+   "reason": "The forced text is taken over by winning titles, #1 seeds and picks, defending champions and top contenders, which is the vocabulary of who is expected to win.",
+   "answer": "3"
+  },
+  "g096": {
+   "choice": "none",
+   "reason": "The forced text adds an invitation letter, two men in frame and a graduation flashback story, none of which points to fruit, lucky timing, -ing verbs, file-opening programs or the Tooth Fairy.",
+   "answer": "1"
+  },
+  "g085": {
+   "choice": "2",
+   "reason": "The forced texts shift to Arab and Muslim settings (Laila, Egyptian secret police, the Muslim community), the cultural context of a cross-lingual date-fruit unit, and no other candidate is reflected.",
+   "answer": "2"
+  },
+  "g110": {
+   "choice": "3",
+   "reason": "The garbled forced text keeps repeating 'all(s)' alongside 'suns' and '1000 years old', which is closest to the 'of all the days' phrase unit, though the match is weak.",
+   "answer": "5"
+  },
+  "g090": {
+   "choice": "3",
+   "reason": "The forced text collapses into repeated digits and a repeated capitalised 'Of the', whose only overlap with any candidate is the 'Of all the...' phrase opening; this is a weak match.",
+   "answer": "4"
+  },
+  "g034": {
+   "choice": "3",
+   "reason": "The forced film plot becomes a group picked off one by one by a mysterious killer, the And Then There Were None premise, which points to the Agatha Christie detective-fiction unit.",
+   "answer": "1"
+  },
+  "g157": {
+   "choice": "2",
+   "reason": "The forced text becomes a probability word problem (a box of 10 chocolates, 5 with nuts and 5 without) and a trolley-style setup about outcomes, matching the probability axis.",
+   "answer": "2"
+  },
+  "g079": {
+   "choice": "none",
+   "reason": "The forced text gives a chocolate-box puzzle, a family cooking and a search for a missing mother, with no consistent theme matching any candidate.",
+   "answer": "3"
+  },
+  "g014": {
+   "choice": "2",
+   "reason": "The forced text fills with stray 'and' connectives, a coin, and bare numeric quantities, which resembles probability-problem material (event conjunctions and outcomes) more than any other candidate.",
+   "answer": "2"
+  },
+  "g068": {
+   "choice": "none",
+   "reason": "The forced text just loops on 'they are in love, but they are also thieves' with minor wording changes, and no candidate (index lists, split verbs, candy or fairy-tale names, puppets, '-ing' rhymes) describes that.",
+   "answer": "4"
+  },
+  "g016": {
+   "choice": "none",
+   "reason": "The forced continuations stay close to the normal ones (logic puzzles, a market, a thief and a cop) and show no puppet experiment, candy or fairy-tale name, split catch verb, index list or -ing word completion.",
+   "answer": "1"
+  },
+  "g076": {
+   "choice": "none",
+   "reason": "The forced continuations are nearly unchanged or generic (two men in a room, a loser getting a job) and do not clearly reflect any candidate.",
+   "answer": "1"
+  },
+  "g100": {
+   "choice": "3",
+   "reason": "The forced scene of two men, a closed box, one leaving the room and the other moving a toy is the setup of a false-belief task from child-psychology experiments.",
+   "answer": "3"
+  },
+  "g155": {
+   "choice": "none",
+   "reason": "The market with produce and the cabin-in-the-woods plot are generic drifts seen without any specific date fruit, creak, name, open question or pile-on material.",
+   "answer": "4"
+  },
+  "g130": {
+   "choice": "none",
+   "reason": "The forced text drifts to toys, a Rubik's cube and a cabin-in-the-woods slasher, none of which matches a name string, floor squeaks, an open-question marker, pile-on phrases or date fruit any better than the others.",
+   "answer": "3"
+  },
+  "g114": {
+   "choice": "none",
+   "reason": "The forced text introduces mosaics and a road trip to Mexico, which none of the five candidates describes.",
+   "answer": "4"
+  },
+  "g026": {
+   "choice": "3",
+   "reason": "Two of the three forced continuations swing to mathematics (a boy solving a complex math problem, a grandmother who is a math professor), the association carried by the name Srinivasa (Ramanujan).",
+   "answer": "1"
+  },
+  "g060": {
+   "choice": "none",
+   "reason": "The forced text is nearly identical to the normal text, and the small change (forced together to solve a mystery in a cyberpunk world) does not match any candidate better than the others.",
+   "answer": "2"
+  },
+  "g139": {
+   "choice": "none",
+   "reason": "The forced text moves to a dark forest and people stuck in an elevator, with nothing about analysis, misplaced confidence, line-wrap separators, favourites and underdogs, or hedging phrases.",
+   "answer": "2"
+  },
+  "g086": {
+   "choice": "none",
+   "reason": "The forced text only changes to a garden, a forest and time travel, which none of the five candidates describes.",
+   "answer": "4"
+  },
+  "g133": {
+   "choice": "1",
+   "reason": "The forced stories introduce characters who are overconfident about their knowledge and convinced they know everything, which is the Dunning-Kruger theme.",
+   "answer": "1"
+  },
+  "g077": {
+   "choice": "none",
+   "reason": "Two continuations are unchanged and the third becomes a generic road trip to a legendary lake, with nothing about teeth, probability, creaks, textual analysis or piling on.",
+   "answer": "4"
+  },
+  "g062": {
+   "choice": "none",
+   "reason": "The forced texts are nearly identical to the normal ones apart from a generic cabin-in-the-woods plot, with nothing pointing to any candidate.",
+   "answer": "3"
+  },
+  "g055": {
+   "choice": "none",
+   "reason": "The forced text shifts toward grief, an accident and a mental hospital, which none of the five candidates describes.",
+   "answer": "1"
+  },
+  "g037": {
+   "choice": "4",
+   "reason": "The forced text shifts slightly toward book-report commentary on what a work contains ('a pivotal moment in the novel, as it exposes the deep-seated racism'), a weak fit for the analysis-of-a-text candidate while the others do not fit at all.",
+   "answer": "4"
+  },
+  "g046": {
+   "choice": "2",
+   "reason": "The forced text turns to a music festival, a musician and his next album, the only candidate-related theme, which fits the song unit better than the others.",
+   "answer": "2"
+  },
+  "g080": {
+   "choice": "1",
+   "reason": "The forced text turns to describing what a text holds and is ('The letter contains a riddle', 'the letter is a', 'The film is a documentary'), which weakly fits a unit about an indefinite noun offered as what a text contains, and nothing fits the other candidates.",
+   "answer": "5"
+  },
+  "g131": {
+   "choice": "1",
+   "reason": "A song intrudes into the forced continuations (helping the audience remember the song, a Wiggles song, a game from a commercial), matching the catchy-song unit.",
+   "answer": "1"
+  },
+  "g008": {
+   "choice": "4",
+   "reason": "The forced continuations keep turning to lyrics, singing along and bright catchy tunes, which matches the song stuck in your head.",
+   "answer": "4"
+  },
+  "g128": {
+   "choice": "1",
+   "reason": "The forced text sends the man purposefully into a dark forest described as a place apart and stresses crossing into another world, a weak but best fit to a far place where something awaits.",
+   "answer": "1"
+  },
+  "g000": {
+   "choice": "3",
+   "reason": "The forced texts turn to competence and credentials (a non-programmer who is 'a self-taught programmer', becoming a certified accountant, an Oscar-winning director), which fits the confidence-after-ignorance unit best, though loosely.",
+   "answer": "2"
+  },
+  "g112": {
+   "choice": "1",
+   "reason": "The forced text drifts to coding, a user asking the model to generate things and a new release, which is the template/program setting where the token 'output' lives, and no other candidate matches at all.",
+   "answer": "2"
+  },
+  "g123": {
+   "choice": "4",
+   "reason": "The forced text intrudes 'the other end of the line' as a distant place, the closest match to the 'other side' as a far place, while the other candidates leave no trace.",
+   "answer": "4"
+  },
+  "g151": {
+   "choice": "5",
+   "reason": "The forced scene dwells on a table cluttered with idle everyday objects (a laptop, a coffee mug, a stack of papers), which is closest to the household-things-left-idle unit.",
+   "answer": "5"
+  },
+  "g125": {
+   "choice": "none",
+   "reason": "The forced texts diverge into an old key, a cuboid maths problem and a zombie story, each only loosely touching a different candidate, so none fits better than the others.",
+   "answer": "3"
+  },
+  "g093": {
+   "choice": "none",
+   "reason": "The forced text drifts toward children, drawing and art, which none of the five candidates describes.",
+   "answer": "1"
+  },
+  "g019": {
+   "choice": "1",
+   "reason": "The forced text takes on a counting, word-problem style with a plural group followed by a single added item ('a few planks and a hammer', 'only a few other people'), weakly matching the one-new-item-after-a-plural-group unit.",
+   "answer": "4"
+  },
+  "g144": {
+   "choice": "1",
+   "reason": "The forced text swerves into route-finding (a robot navigating a grid from start to end point, a shortcut through the city around a traffic jam), which matches the crow-flies-versus-route-legs unit.",
+   "answer": "1"
+  },
+  "g099": {
+   "choice": "3",
+   "reason": "The forced texts are pulled into turn-by-turn travel ('turn left at the traffic lights', 'one-way street', a car GPS, settlers arriving), matching the route-leg-by-leg unit.",
+   "answer": "3"
+  },
+  "g028": {
+   "choice": "4",
+   "reason": "The forced text turns to distances, coordinates, compass directions and a route driven past intermediate places, which matches straight-line distance versus travelling a route leg by leg.",
+   "answer": "4"
+  },
+  "g159": {
+   "choice": "5",
+   "reason": "The forced continuations become journeys between two places with distances, directions and travel modes, ending on 'as the', which matches straight-line versus route distance.",
+   "answer": "5"
+  },
+  "g106": {
+   "choice": "none",
+   "reason": "The forced text only shifts to a married-woman love plot set in 1960s India with a director credit, which none of the candidates (dates, distances, separators, open questions, arithmetic 'of') describes.",
+   "answer": "5"
+  },
+  "g018": {
+   "choice": "none",
+   "reason": "The forced texts stay close to the normal ones with only a generic treasure road trip added, which does not clearly match any candidate.",
+   "answer": "3"
+  },
+  "g024": {
+   "choice": "3",
+   "reason": "The forced text reads like word-problem setups (a bag of gold coins, a group of four friends each with a different drink), which weakly fits the solve-for-a-value 'of' candidate better than the others.",
+   "answer": "3"
+  },
+  "g088": {
+   "choice": "1",
+   "reason": "Weak fit: the only clear intrusion is an exam-style fill-in-the-blank and 'Which of the following statements about the structure of' question, which is closest to the solve-for-a-value-at-'of' unit.",
+   "answer": "1"
+  },
+  "g047": {
+   "choice": "2",
+   "reason": "The forced text breaks into a help-request frame ('the user wants to know', 'the user is asking'), which loosely fits the tech-support context of needing a program to open a file better than the other candidates.",
+   "answer": "2"
+  },
+  "g142": {
+   "choice": "none",
+   "reason": "The forced text adds a table of sandwiches and a road trip to scatter ashes, which matches none of eclipses, Agatha Christie, file-opening programs, piling-on phrases or Christmas Day.",
+   "answer": "3"
+  },
+  "g158": {
+   "choice": "3",
+   "reason": "The forced text introduces opening an email message and choosing the default application that created a file, matching the program needed to open a named file.",
+   "answer": "3"
+  },
+  "g081": {
+   "choice": "3",
+   "reason": "The forced continuations turn to opening a file with a .PRT extension and to Adobe Acrobat as the app for PDF files, which is exactly the program-needed-to-open-a-named-file theme.",
+   "answer": "3"
+  },
+  "g056": {
+   "choice": "1",
+   "reason": "The forced text becomes a money word problem about dollars spent and earned and a math prodigy, which is closest to a unit about people putting money into a common pot.",
+   "answer": "1"
+  },
+  "g010": {
+   "choice": "5",
+   "reason": "All three forced continuations turn to money being asked for, passed around, collected and pooled among a group ('$50 is collected', bills distributed among 7 people), which is everyone chipping into the same hat.",
+   "answer": "5"
+  },
+  "g006": {
+   "choice": "none",
+   "reason": "The forced text degenerates into long numbers, a percentage calculation and circular statements about a deceased person, none of which matches any candidate.",
+   "answer": "1"
+  },
+  "g022": {
+   "choice": "5",
+   "reason": "The forced text drifts to dollars held 'in the group' and how many 'will be collected', which matches pooled contributions better than any other candidate, though the other two openers only give runs of numbers.",
+   "answer": "5"
+  },
+  "g097": {
+   "choice": "none",
+   "reason": "The forced text drifts to a crowded market and a music-obsessed 'Rhythm Cult', which matches none of the idiom, 'two'-word, file-opening, Christmas or pile-on candidates.",
+   "answer": "1"
+  },
+  "g083": {
+   "choice": "none",
+   "reason": "The forced texts (Alice, two men at a table, a zombie film) are ordinary alternative continuations with no shared intruding theme matching any candidate; 'two men' alone is too weak to support the 'two'-words axis.",
+   "answer": "3"
+  },
+  "g052": {
+   "choice": "2",
+   "reason": "The forced text keeps pairing things that go together or are balanced (ambition and family, career and parenthood, art and science), matching the go-hand-in-hand idiom candidate.",
+   "answer": "2"
+  },
+  "g004": {
+   "choice": "5",
+   "reason": "The forced text keeps stacking one more parallel item onto a growing list ('a man of action, a man of passion, a man of principle, a man of vision'; 'trying to find a 20-something... a 10-something'), which weakly fits the 'one more on the pile' candidate.",
+   "answer": "1"
+  },
+  "g035": {
+   "choice": "2",
+   "reason": "All three forced continuations become problems about a group pooling and sharing out money (contributions to a jar, distributing $100, selling to friends), matching everyone chipping into the same hat.",
+   "answer": "3"
+  },
+  "g122": {
+   "choice": "4",
+   "reason": "All three forced continuations turn into quantitative word problems, including an explicit 'What is the value of x?', matching the solve-for-a-value unit better than the single pillow-money cue matches the Tooth Fairy.",
+   "answer": "1"
+  },
+  "g048": {
+   "choice": "1",
+   "reason": "The forced text turns into word-problem phrasing built on quantity-'of' constructions ('a certain amount of money', 'a number of numbers', 'can you find the number of'), which fits the solve-for-a-value unit better than the money-themed candidates.",
+   "answer": "5"
+  },
+  "g029": {
+   "choice": "none",
+   "reason": "The forced text degenerates into 'frame/b/', 'transition every line room' and blank lines, which is not about luck, the Tooth Fairy, weekday dates, solving for a value, or pooled contributions.",
+   "answer": "2"
+  },
+  "g033": {
+   "choice": "1",
+   "reason": "The forced scene moves into a dim room where the clacking sound of old typewriter keys is the only noise and then an old hotel lift, a weak but best match to a unit about noises made by old fixtures.",
+   "answer": "1"
+  },
+  "g134": {
+   "choice": "5",
+   "reason": "Creaking floorboards appear explicitly in the first two forced continuations and the third drifts to a suspense score, matching the creaky-floorboard unit.",
+   "answer": "5"
+  },
+  "g002": {
+   "choice": "1",
+   "reason": "The forced continuations bring in tapping on the floor and a floorboard that creaks, matching the creaky-floorboard unit.",
+   "answer": "1"
+  },
+  "g156": {
+   "choice": "2",
+   "reason": "All three forced continuations turn to creaking floors, creaking staircases, creaking floorboards and a rattling bed, exactly the creaky-floorboard theme.",
+   "answer": "2"
+  },
+  "g143": {
+   "choice": "3",
+   "reason": "The forced text is almost unchanged, but its one plot shift is toward a hunt for a criminal mastermind, which weakly fits the detective-fiction unit better than the other candidates.",
+   "answer": "1"
+  },
+  "g045": {
+   "choice": "4",
+   "reason": "The only distinctive content shift is the film being relocated to India, which weakly fits a unit for the Indian name Srinivasa better than the arithmetic, Christie, zoonosis or 'bi-' candidates.",
+   "answer": "5"
+  },
+  "g127": {
+   "choice": "none",
+   "reason": "The forced text is nearly unchanged in one opener and otherwise only drifts to generic suspense and horror, which no candidate clearly describes.",
+   "answer": "3"
+  },
+  "g021": {
+   "choice": "1",
+   "reason": "The forced text turns into a maths word problem with a given distance and a point, and then into a posed question to be answered, matching the solve-for-a-value unit.",
+   "answer": "3"
+  },
+  "g149": {
+   "choice": "none",
+   "reason": "The forced text drifts to found objects (a mysterious key, a carved box, a treasure hunt), which none of the five candidates describes.",
+   "answer": "3"
+  },
+  "g064": {
+   "choice": "none",
+   "reason": "The forced continuations (a job interview, a carved wooden box, a road trip to find a monster) show no siege, zoonotic or counting, weekday-date, -ing word or odds-of-winning material.",
+   "answer": "3"
+  },
+  "g084": {
+   "choice": "none",
+   "reason": "The forced continuations are ordinary alternative stories (job interview, people around a table, road trip) with no consistent theme matching any candidate.",
+   "answer": "5"
+  },
+  "g132": {
+   "choice": "5",
+   "reason": "The forced text drifts to rarity and to chances and probabilities of a dice roll in a game, weakly matching words about odds and who is expected to win better than the other candidates.",
+   "answer": "2"
+  },
+  "g146": {
+   "choice": "4",
+   "reason": "Every forced continuation turns to a solar eclipse and the Moon blocking the Sun.",
+   "answer": "4"
+  },
+  "g044": {
+   "choice": "2",
+   "reason": "The forced texts lean toward science and the cosmos ('vast expanse of the universe', a chemical equation, a scientist), which only the astronomical eclipse candidate comes near, though the fit is weak.",
+   "answer": "2"
+  },
+  "g117": {
+   "choice": "5",
+   "reason": "All three forced continuations drift to eclipses, the sun being blocked, Earth's diameter and people observing a solar eclipse.",
+   "answer": "5"
+  },
+  "g042": {
+   "choice": "1",
+   "reason": "The forced text jumps from 'the' straight into long runs of the digit 1, consistent with a unit that anticipates a day number, while no other candidate relates to numbers.",
+   "answer": "2"
+  },
+  "g032": {
+   "choice": "none",
+   "reason": "The changes are small generic rewordings plus a cabin-in-the-woods road trip, with no clear push toward probability, reader trope labels, earworms, -ing verbs or hedging.",
+   "answer": "5"
+  },
+  "g013": {
+   "choice": "none",
+   "reason": "The forced text shifts to a classroom drawing exercise and a misfit loner, with only faint and competing hints ('when they hear the', 'a bit of a') that do not single out any one candidate.",
+   "answer": "4"
+  },
+  "g038": {
+   "choice": "2",
+   "reason": "The forced text keeps inserting saying/asserting constructions ('could say that', 'driving to the conclusion that', 'says that ... to call it'), matching the 'it would not be wrong to say' hedge unit.",
+   "answer": "2"
+  },
+  "g036": {
+   "choice": "4",
+   "reason": "Every forced continuation inserts a 'says that / can be seen saying that / to say that / can be laid at the door of the statement that' construction, matching the 'it would not be wrong to say' hedge unit.",
+   "answer": "4"
+  },
+  "g098": {
+   "choice": "none",
+   "reason": "The forced text is nearly identical to the normal text apart from a generic criminal-mastermind plot turn that matches none of the candidates.",
+   "answer": "5"
+  },
+  "g118": {
+   "choice": "2",
+   "reason": "The clearest intrusion is mathematics teaching (a teacher explaining the concept of a 'limit' in calculus with a worked example), which fits the math-problem 'of' unit better than the weak 'both thieves' hint fits the 'two' unit.",
+   "answer": "4"
+  },
+  "g075": {
+   "choice": "none",
+   "reason": "The forced continuations stay close to normal or drift to unrelated plain stories with nothing pointing to any candidate.",
+   "answer": "5"
+  },
+  "g154": {
+   "choice": "none",
+   "reason": "The forced continuations are ordinary alternative stories (a new town, two men and a cat, ex-thief heist) with no consistent intrusion matching index lists, luck, equations, 'two' prefixes or romance labels.",
+   "answer": "1"
+  },
+  "g153": {
+   "choice": "none",
+   "reason": "The forced scenes (a key in an attic, a queue at a deli counter, a stolen diamond) do not clearly reflect any candidate; the deli counter is too thin a link to the public-places unit.",
+   "answer": "3"
+  },
+  "g141": {
+   "choice": "none",
+   "reason": "The forced text drifts to a girl moving town, a dolly track with measurements and a man in a dead-end job, none of which matches public openings, -ing rhymes, chipping in, unsurprising-result phrases or luck.",
+   "answer": "5"
+  },
+  "g031": {
+   "choice": "none",
+   "reason": "The forced continuations (a new town, an icosahedron, a released serial killer) share no theme that fits any of the candidates.",
+   "answer": "4"
+  },
+  "g001": {
+   "choice": "none",
+   "reason": "The forced continuations are coherent but unrelated stories (a narrator's room, a possession scene, a time loop) with no shared theme matching any of the five candidates.",
+   "answer": "5"
+  },
+  "g030": {
+   "choice": "5",
+   "reason": "The city street is replaced by a crowded market full of people, the only intrusion that echoes a candidate (public places versus a market), though the evidence is weak.",
+   "answer": "1"
+  },
+  "g109": {
+   "choice": "none",
+   "reason": "The forced texts differ only by a quiz-style question about a camera shot and a slasher camping plot, neither of which matches any candidate beyond a weak incidental 'market'.",
+   "answer": "1"
+  },
+  "g041": {
+   "choice": "2",
+   "reason": "The forced continuations move to locked, dimly lit, closed-off settings and a group cut off from the outside world, which weakly fits the under-siege unit better than the others.",
+   "answer": "3"
+  },
+  "g124": {
+   "choice": "none",
+   "reason": "The forced text only becomes repetitive and confused about subjects and family roles, with nothing about plural groups plus one, sieges, the Tooth Fairy, piling on, or public openings.",
+   "answer": "1"
+  },
+  "g138": {
+   "choice": "none",
+   "reason": "The forced text adds a gang of thieves and con artists led by a master of disguise, which does not reflect odds words, tripling, hedges, public openings or a hand-in-hand idiom.",
+   "answer": "2"
+  },
+  "g071": {
+   "choice": "2",
+   "reason": "The only distinctive intrusion is the number three ('the three of them are in a room') replacing the normal opening, which weakly points to the factor-of-three unit and to none of the other candidates.",
+   "answer": "2"
+  },
+  "g089": {
+   "choice": "3",
+   "reason": "The change is slight, but the one clear intrusion is 'the three of them', which weakly fits the factor-of-three candidate over the others.",
+   "answer": "3"
+  },
+  "g050": {
+   "choice": "1",
+   "reason": "The forced text stays close to normal but picks up softening qualifiers ('a bit like a waiting room', 'a bit of a procrastinator'), which weakly fits the hedge candidate and nothing fits the others.",
+   "answer": "2"
+  },
+  "g065": {
+   "choice": "none",
+   "reason": "The forced text turns to a camera-technique question and a monster-hunting road trip in Michigan, which none of the candidates describes beyond an incidental 'two brothers'.",
+   "answer": "2"
+  },
+  "g072": {
+   "choice": "none",
+   "reason": "The forced texts drift to unrelated generic plots (a glowing stone, the Joker, a mysterious website) with no shared theme that any candidate describes better than the others.",
+   "answer": "3"
+  },
+  "g129": {
+   "choice": "1",
+   "reason": "The forced continuations bring in things opening and being made available (a locket that opens portals to places, opening a can, a film available for streaming), closest to the opening-to-the-public unit.",
+   "answer": "1"
+  },
+  "g063": {
+   "choice": "2",
+   "reason": "All three forced continuations turn to things being opened to the public, a location open for business, and a product put on sale, exactly the public-opening versus product-on-market unit.",
+   "answer": "2"
+  },
+  "g043": {
+   "choice": "2",
+   "reason": "The only change is that the street noise becomes people shouting and the clatter of metal, a faint push toward battle or siege imagery that fits no other candidate.",
+   "answer": "2"
+  },
+  "g011": {
+   "choice": "none",
+   "reason": "Two continuations are almost unchanged and the third only switches to a group birthday trip to a remote island, which is too weak and generic to tie to any of the five candidates.",
+   "answer": "4"
+  },
+  "g107": {
+   "choice": "none",
+   "reason": "The forced text shifts to down-on-their-luck characters and second chances, which none of the five candidates describes.",
+   "answer": "4"
+  },
+  "g148": {
+   "choice": "5",
+   "reason": "The forced text is saturated with 'falls', 'falling' and 'down', which fits the falls-or-holds sense of the siege candidate better than the unrelated others.",
+   "answer": "5"
+  },
+  "g057": {
+   "choice": "none",
+   "reason": "The forced continuations are nearly identical to the normal ones, with only a 'one last job' heist variation that matches no candidate.",
+   "answer": "4"
+  },
+  "g049": {
+   "choice": "none",
+   "reason": "The forced text centres on grandparents, a mysterious book of symbols and a low-angle shot of two men, and none of the candidates (dates, 'bi-' words, Christie, date fruit, index lists) describes that.",
+   "answer": "3"
+  },
+  "g070": {
+   "choice": "none",
+   "reason": "The forced continuations (a visit to an uncle, cookies and milk on a table, a boy-band concert) show no consistent push toward any of the candidates.",
+   "answer": "3"
+  },
+  "g066": {
+   "choice": "2",
+   "reason": "The forced story introduces a girl named Agata of the Agarvati family, repeating an 'Aga-' name that points to the Agatha Christie slot detector.",
+   "answer": "2"
+  },
+  "g152": {
+   "choice": "3",
+   "reason": "The odd coinage 'blood-catchy creatures' in place of the expected word shows 'catch' intruding mid-word, which matches the catch-verb unit.",
+   "answer": "3"
+  },
+  "g082": {
+   "choice": "4",
+   "reason": "The garbled intrusions are built from 'cat' and 'ch' fragments ('Cang Catang', 'cathang', 'catychangchchch'), the split pieces of the verb 'catch' stuck mid-word.",
+   "answer": "4"
+  },
+  "g058": {
+   "choice": "2",
+   "reason": "The garbled forced text repeats catch-verbs across languages ('tangkap'-like 'trangkap', Chinese \u6293 'catch' and \u6251 'pounce') after 'Cat', which matches a catch-verb neuron firing mid-word.",
+   "answer": "2"
+  },
+  "g102": {
+   "choice": "1",
+   "reason": "The forced text collapses into the repeated character \u6251, a verb meaning to pounce on or lunge at and catch, which fits a catch-verb unit and none of the other candidates.",
+   "answer": "1"
+  },
+  "g136": {
+   "choice": "none",
+   "reason": "The forced continuations are word-for-word identical to the normal ones, so nothing identifiable was pushed in.",
+   "answer": "5"
+  },
+  "g059": {
+   "choice": "none",
+   "reason": "The forced continuations are almost identical to the normal ones, with only a trivial wording change that matches none of the candidates.",
+   "answer": "1"
+  },
+  "g120": {
+   "choice": "none",
+   "reason": "The forced continuations are almost identical to the normal ones, so nothing identifiable was pushed in.",
+   "answer": "5"
+  },
+  "g051": {
+   "choice": "none",
+   "reason": "The forced continuations are ordinary, unrelated story premises (an attic box, a warden's past, a student in gym class) with no shared intruding theme matching any candidate.",
+   "answer": "2"
+  },
+  "g150": {
+   "choice": "none",
+   "reason": "The only change is a cabin-in-the-woods horror premise, which fits none of the hedging, pooling, separator or open-question candidates.",
+   "answer": "3"
+  },
+  "g009": {
+   "choice": "1",
+   "reason": "The forced texts keep breaking lines mid-sentence ('rabbit hole\\n\\n', 'a fantastical\\n\\nworld', 'stuck in\\ntheir own lives'), which is what a hard-wrap line-end separator unit would push.",
+   "answer": "1"
+  },
+  "g069": {
+   "choice": "3",
+   "reason": "The forced continuations are broken by line breaks inserted mid-sentence, as in hard-wrapped text, matching the right-margin separator unit.",
+   "answer": "3"
+  },
+  "g147": {
+   "choice": "4",
+   "reason": "The forced output collapses entirely into runs of line breaks, which is separator material of the kind found at the end of hard-wrapped lines, and no other candidate relates to whitespace.",
+   "answer": "4"
+  },
+  "g121": {
+   "choice": "none",
+   "reason": "The only change is a generic cut to people talking around a warmly lit table, which matches none of the probability, 'output', confidence, 'two'-word or list-item candidates.",
+   "answer": "2"
+  },
+  "g073": {
+   "choice": "3",
+   "reason": "All three forced continuations collapse into the word 'output' repeated, which is exactly the token named by the 'output' dial.",
+   "answer": "3"
+  },
+  "g116": {
+   "choice": "1",
+   "reason": "Every forced continuation collapses into the single repeated word 'output', which is exactly the token this candidate is about.",
+   "answer": "1"
+  },
+  "g012": {
+   "choice": "2",
+   "reason": "Every forced continuation is just the token 'output' repeated, which matches the dial on the token 'output'.",
+   "answer": "2"
+  },
+  "g074": {
+   "choice": "none",
+   "reason": "The forced continuations are word-for-word identical to the normal ones, so nothing identifiable was pushed in.",
+   "answer": "4"
+  },
+  "g105": {
+   "choice": "4",
+   "reason": "The forced opener swaps Alice for a young man named Jack gathering firewood with his father in a forest by a gnarled tree, a fairy-tale figure and setting that fits the signed name predictor better than the other candidates.",
+   "answer": "1"
+  },
+  "g015": {
+   "choice": "3",
+   "reason": "The effect is weak, but the fairy-tale Alice continuation is displaced by specific named characters, which fits the signed name predictor slightly better than the other candidates.",
+   "answer": "5"
+  },
+  "g113": {
+   "choice": "1",
+   "reason": "Weak fit: the forced text drifts to things that need something to open them (a locked box with a keyhole, a thief's heist) and the word 'program' intrudes oddly, which matches the open-a-file-with-a-program unit better than the other candidates.",
+   "answer": "4"
+  }
+ }
+}
