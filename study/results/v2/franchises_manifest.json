@@ -1,0 +1,189 @@
+{
+ "min_sentences": 13,
+ "franchises": {
+  "Godzilla": {
+   "n_films": 28,
+   "years": [
+    1954,
+    2017
+   ],
+   "also_in_reference_corpus": 14,
+   "titles": [
+    "Godzilla (1954)",
+    "Godzilla Raids Again (1955)",
+    "Godzilla, King of the Monsters! (1956)",
+    "King Kong vs. Godzilla (1962)",
+    "Mothra vs. Godzilla (1964)",
+    "Son of Godzilla (1967)",
+    "Godzilla vs. Hedorah (1971)",
+    "Godzilla vs. Megalon (1973)",
+    "Godzilla vs. Mechagodzilla (1974)",
+    "Terror of Mechagodzilla (1975)",
+    "The Return of Godzilla (1984)",
+    "Godzilla 1985 (1985)",
+    "Godzilla vs. Biollante (1989)",
+    "Godzilla vs. King Ghidorah (1991)",
+    "Godzilla vs. Mothra (1992)",
+    "Godzilla vs. Mechagodzilla II (1993)",
+    "Godzilla vs. SpaceGodzilla (1994)",
+    "Godzilla vs. Destoroyah (1995)",
+    "Godzilla (1998)",
+    "Godzilla 2000: Millennium (1999)",
+    "Godzilla vs. Megaguirus (2000)",
+    "Godzilla, Mothra & King Ghidorah: Giant Monsters All-Out Attack (2001)",
+    "Godzilla Against Mechagodzilla (2002)",
+    "Godzilla: Tokyo S.O.S. (2003)",
+    "Godzilla: Final Wars (2004)",
+    "Godzilla (2014)",
+    "Shin Godzilla (2016)",
+    "Godzilla: Planet of the Monsters (2017)"
+   ]
+  },
+  "Frankenstein": {
+   "n_films": 24,
+   "years": [
+    1931,
+    2015
+   ],
+   "also_in_reference_corpus": 10,
+   "titles": [
+    "Frankenstein (1931)",
+    "Bride of Frankenstein (1935)",
+    "The Son of Frankenstein (1939)",
+    "The Ghost of Frankenstein (1942)",
+    "Frankenstein Meets the Wolf Man (1943)",
+    "House of Frankenstein (1944)",
+    "Abbott and Costello Meet Frankenstein (1948)",
+    "I Was a Teenage Frankenstein (1957)",
+    "The Curse of Frankenstein (1957)",
+    "Frankenstein's Daughter (1958)",
+    "The Revenge of Frankenstein (1958)",
+    "The Evil of Frankenstein (1964)",
+    "Frankenstein vs. Baragon (1965)",
+    "Jesse James Meets Frankenstein's Daughter (1966)",
+    "Frankenstein Created Woman (1967)",
+    "Frankenstein Must Be Destroyed (1969)",
+    "Dracula vs. Frankenstein (1971)",
+    "Frankenstein and the Monster from Hell (1974)",
+    "Young Frankenstein (1974)",
+    "Frankenstein Unbound (1990)",
+    "Mary Shelley's Frankenstein (1994)",
+    "Frankenstein Theory, TheThe Frankenstein Theory (2013)",
+    "I, Frankenstein (2014)",
+    "Victor Frankenstein (2015)"
+   ]
+  },
+  "Dracula": {
+   "n_films": 23,
+   "years": [
+    1931,
+    2014
+   ],
+   "also_in_reference_corpus": 12,
+   "titles": [
+    "Dracula (1931)",
+    "Dracula's Daughter (1936)",
+    "Son of Dracula (1943)",
+    "House of Dracula (1945)",
+    "Dracula (1958)",
+    "The Brides of Dracula (1960)",
+    "Dracula: Prince of Darkness (1966)",
+    "Dracula Has Risen from the Grave (1968)",
+    "Taste the Blood of Dracula (1969)",
+    "Scars of Dracula (1970)",
+    "Countess Dracula (1971)",
+    "Dracula vs. Frankenstein (1971)",
+    "Lake of Dracula (1971)",
+    "Dracula AD 1972 (1972)",
+    "The Satanic Rites of Dracula (1974)",
+    "Dracula (1979)",
+    "Bram Stoker's Dracula (1992)",
+    "Dracula: Dead and Loving It (1995)",
+    "Dracula 2000 (2000)",
+    "Dracula: Pages from a Virgin's Diary (2002)",
+    "Dracula Reborn (2012)",
+    "Dracula: The Dark Prince (2013)",
+    "Dracula Untold (2014)"
+   ]
+  },
+  "Doraemon": {
+   "n_films": 17,
+   "years": [
+    1980,
+    2016
+   ],
+   "also_in_reference_corpus": 11,
+   "titles": [
+    "Doraemon: Nobita's Dinosaur (1980)",
+    "Doraemon: The Records of Nobita, Spaceblazer (1981)",
+    "Doraemon: Nobita and the Haunts of Evil (1982)",
+    "Doraemon: Nobita and the Birth of Japan (1989)",
+    "Doraemon: Nobita's Dorabian Nights (1991)",
+    "Doraemon: Nobita and the Galaxy Super-express (1996)",
+    "Doraemon: Nobita's Great Adventure in the South Seas (1998)",
+    "Doraemon: Nobita and the Legend of the Sun King (2000)",
+    "Doraemon: Nobita in the Wan-Nyan Spacetime Odyssey (2004)",
+    "Doraemon the Movie: Nobita's New Great Adventure into the Underworld - The Seven Magic Users (2007)",
+    "Doraemon Movie: Nobita and the Green Giant Legend (2008)",
+    "Doraemon: Nobita's Great Battle of the Mermaid King (2010)",
+    "Doraemon: Nobita and the New Steel Troops: ~Angel Wings~ (2011)",
+    "Doraemon: Nobita no Himitsu Dōgu Museum (2013)",
+    "Doraemon: Nobita's Secret Gadget Museum (2013)",
+    "Stand by Me Doraemon (2014)",
+    "Doraemon: Nobita and the Birth of Japan 2016 and Infinimals Roaring Skies (2016)"
+   ]
+  },
+  "Tarzan": {
+   "n_films": 16,
+   "years": [
+    1918,
+    2016
+   ],
+   "also_in_reference_corpus": 6,
+   "titles": [
+    "The Romance of Tarzan (1918)",
+    "Tarzan the Ape Man (1932)",
+    "Tarzan and His Mate (1934)",
+    "Tarzan Finds a Son! (1939)",
+    "Tarzan's New York Adventure (1942)",
+    "Tarzan and the Amazons (1945)",
+    "Tarzan and the Leopard Woman (1946)",
+    "Tarzan and the Slave Girl (1950)",
+    "Tarzan's Greatest Adventure (1959)",
+    "Tarzan the Magnificent (1960)",
+    "Tarzan's Three Challenges (1963)",
+    "Tarzan and the Valley of Gold (1966)",
+    "Greystoke: The Legend of Tarzan, Lord of the Apes (1984)",
+    "Adventures of Tarzan (1985)",
+    "Tarzan (1999)",
+    "The Legend of Tarzan (2016)"
+   ]
+  },
+  "Kamen Rider": {
+   "n_films": 15,
+   "years": [
+    1973,
+    2017
+   ],
+   "also_in_reference_corpus": 10,
+   "titles": [
+    "Kamen Rider V3 (1973)",
+    "Kamen Rider ZO (1993)",
+    "Kamen Rider J (1994)",
+    "Kamen Rider Hibiki & The Seven Senki (2005)",
+    "Kamen Rider the First (2005)",
+    "Kamen Rider Kabuto: GOD SPEED LOVE (2006)",
+    "Kamen Rider the Next (2007)",
+    "Kamen Rider Den-O & Kiva: Climax Deka (2008)",
+    "Cho Kamen Rider Den-O & Decade Neo Generations: The Onigashima Warship (2009)",
+    "Kamen Rider Decade The Movie: All Riders vs. Great Shocker (2009)",
+    "Kamen Rider × Kamen Rider W & Decade: Movie War 2010 (2009)",
+    "Kamen Rider × Kamen Rider × Kamen Rider The Movie: Cho-Den-O Trilogy (2010)",
+    "OOO, Den-O, All Riders: Let's Go Kamen Riders (2011)",
+    "Kamen Rider Ex-Aid the Movie: True Ending (2017)",
+    "Kamen Rider × Super Sentai: Ultra Super Hero Taisen (2017)"
+   ]
+  }
+ },
+ "n_films": 123
+}

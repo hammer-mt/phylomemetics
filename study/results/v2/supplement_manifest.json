@@ -1,0 +1,45 @@
+{
+ "seed": 20261108,
+ "first_index": 46000,
+ "n_docs": 5434,
+ "counts": {
+  "sup_chat": 800,
+  "sup_code": 1284,
+  "sup_lang": 1350,
+  "sup_news": 700,
+  "sup_review": 600,
+  "sup_zh": 700
+ },
+ "characters": {
+  "sup_chat": 4135432,
+  "sup_code": 6753287,
+  "sup_lang": 5972767,
+  "sup_news": 2282600,
+  "sup_review": 1007973,
+  "sup_zh": 1770334
+ },
+ "sha256": "81351929aaba6ae900b28c81ae9771339d6facd952099f91d758a7973ddc90a4",
+ "max_tokens": 2048,
+ "dataset_commits": {
+  "code-search-net/code_search_net": "bd0cf261e357a3eb5c8fba490d23ec1a1cd59555",
+  "codeparrot/codeparrot-clean-valid": "4db92d2ec0c1b4c41eeb439cfae16854511d9dcd",
+  "HuggingFaceH4/ultrachat_200k": "8049631c405ae6576f93f445c6b8166f76f5505a",
+  "wikimedia/wikipedia": "b04c8d1ceb2f5cd4588862100d08de323dccfbaa",
+  "vblagoje/cc_news": "81eb2ce0d2a9dad6ad16b68ef750ec290880fa36",
+  "Yelp/yelp_review_full": "c1f9ee939b7d05667af864ee1cb066393154bf85"
+ },
+ "source": "Parquet exports served by the Hugging Face Hub API (file 0 of each split)",
+ "languages": [
+  "zh",
+  "es",
+  "fr",
+  "de",
+  "pt",
+  "ru",
+  "ar",
+  "hi",
+  "ko",
+  "ja"
+ ],
+ "role": "scale only: these documents can set a unit's scale and appear among its top examples; they are not used for base rates"
+}

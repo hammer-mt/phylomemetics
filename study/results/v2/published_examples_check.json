@@ -1,0 +1,7661 @@
+{
+ "n_examples": 756,
+ "n_neurons": 63,
+ "by_layer": {
+  "0": {
+   "n": 90,
+   "median_abs_relative_error": 0.009456740442655936,
+   "within_10_percent": 0.9555555555555556,
+   "same_sign": 1.0
+  },
+  "1": {
+   "n": 58,
+   "median_abs_relative_error": 0.022940124171314323,
+   "within_10_percent": 0.8620689655172413,
+   "same_sign": 1.0
+  },
+  "2": {
+   "n": 84,
+   "median_abs_relative_error": 0.013401328273244782,
+   "within_10_percent": 0.8809523809523809,
+   "same_sign": 1.0
+  },
+  "3": {
+   "n": 117,
+   "median_abs_relative_error": 0.03597122302158273,
+   "within_10_percent": 0.8034188034188035,
+   "same_sign": 1.0
+  },
+  "4": {
+   "n": 60,
+   "median_abs_relative_error": 0.02160085428418878,
+   "within_10_percent": 0.9666666666666667,
+   "same_sign": 1.0
+  },
+  "5": {
+   "n": 48,
+   "median_abs_relative_error": 0.04204726265543049,
+   "within_10_percent": 0.8541666666666666,
+   "same_sign": 0.9791666666666666
+  },
+  "6": {
+   "n": 24,
+   "median_abs_relative_error": 0.05651350669022974,
+   "within_10_percent": 0.7083333333333334,
+   "same_sign": 1.0
+  },
+  "7": {
+   "n": 48,
+   "median_abs_relative_error": 0.14867392043522612,
+   "within_10_percent": 0.375,
+   "same_sign": 0.9791666666666666
+  },
+  "8": {
+   "n": 36,
+   "median_abs_relative_error": 0.07544186373379247,
+   "within_10_percent": 0.5277777777777778,
+   "same_sign": 0.9722222222222222
+  },
+  "9": {
+   "n": 12,
+   "median_abs_relative_error": 0.0160427807486631,
+   "within_10_percent": 1.0,
+   "same_sign": 1.0
+  },
+  "10": {
+   "n": 12,
+   "median_abs_relative_error": 0.10326391965736229,
+   "within_10_percent": 0.4166666666666667,
+   "same_sign": 1.0
+  },
+  "11": {
+   "n": 12,
+   "median_abs_relative_error": 0.10958802608180201,
+   "within_10_percent": 0.4166666666666667,
+   "same_sign": 1.0
+  },
+  "12": {
+   "n": 12,
+   "median_abs_relative_error": 0.1364599332662465,
+   "within_10_percent": 0.25,
+   "same_sign": 1.0
+  }
+ },
+ "note": "ours = raw activation at the last token of the published (display-truncated) context",
+ "all": {
+  "n": 756,
+  "pearson_r": 0.9924491816393819,
+  "same_sign": 0.9880952380952381,
+  "median_abs_relative_error": 0.03529791305121702,
+  "within_10_percent": 0.783068783068783
+ },
+ "published magnitude >= 1": {
+  "n": 613,
+  "pearson_r": 0.9924367687738138,
+  "same_sign": 0.9951060358890701,
+  "median_abs_relative_error": 0.03482587064676617,
+  "within_10_percent": 0.7862969004893964
+ },
+ "examples": [
+  {
+   "layer": 1,
+   "neuron": 15229,
+   "side": "positives",
+   "token": "ī",
+   "our_last_token": "Ä«",
+   "published": 0.828125,
+   "ours": 0.77734375,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 15229,
+   "side": "positives",
+   "token": "ī",
+   "our_last_token": "Ä«",
+   "published": 0.828125,
+   "ours": 0.83984375,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 15229,
+   "side": "positives",
+   "token": "ī",
+   "our_last_token": "Ä«",
+   "published": 0.82421875,
+   "ours": 0.71875,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 15229,
+   "side": "positives",
+   "token": "ī",
+   "our_last_token": "Ä«",
+   "published": 0.8203125,
+   "ours": 0.734375,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 15229,
+   "side": "positives",
+   "token": "и",
+   "our_last_token": "Ð¸",
+   "published": 0.80859375,
+   "ours": 0.80859375,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 15229,
+   "side": "positives",
+   "token": "ි",
+   "our_last_token": "Ĵ",
+   "published": 0.8046875,
+   "ours": 0.8046875,
+   "truncated": false
+  },
+  {
+   "layer": 1,
+   "neuron": 15229,
+   "side": "negatives",
+   "token": "ิ",
+   "our_last_token": "à¸´",
+   "published": -18.25,
+   "ours": -17.75,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 15229,
+   "side": "negatives",
+   "token": "ิ",
+   "our_last_token": "à¸´",
+   "published": -18.25,
+   "ours": -18.0,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 15229,
+   "side": "negatives",
+   "token": "ิ",
+   "our_last_token": "à¸´",
+   "published": -17.75,
+   "ours": -17.375,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 15229,
+   "side": "negatives",
+   "token": "ิ",
+   "our_last_token": "à¸´",
+   "published": -17.5,
+   "ours": -17.625,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 15229,
+   "side": "negatives",
+   "token": "ิ",
+   "our_last_token": "à¸´",
+   "published": -17.375,
+   "ours": -17.125,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 15229,
+   "side": "negatives",
+   "token": "ิ",
+   "our_last_token": "à¸´",
+   "published": -17.25,
+   "ours": -16.5,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 13886,
+   "side": "positives",
+   "token": "름",
+   "our_last_token": "ë¦Ħ",
+   "published": 0.2001953125,
+   "ours": 0.1904296875,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 13886,
+   "side": "positives",
+   "token": "름",
+   "our_last_token": "ë¦Ħ",
+   "published": 0.1962890625,
+   "ours": 0.1904296875,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 13886,
+   "side": "positives",
+   "token": "름",
+   "our_last_token": "ë¦Ħ",
+   "published": 0.1904296875,
+   "ours": 0.197265625,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 13886,
+   "side": "positives",
+   "token": "름",
+   "our_last_token": "ë¦Ħ",
+   "published": 0.185546875,
+   "ours": 0.1865234375,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 13886,
+   "side": "positives",
+   "token": "☬",
+   "our_last_token": "âĺ¬",
+   "published": 0.181640625,
+   "ours": 0.173828125,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 13886,
+   "side": "positives",
+   "token": " pups",
+   "our_last_token": "Ġpups",
+   "published": 0.181640625,
+   "ours": 0.181640625,
+   "truncated": false
+  },
+  {
+   "layer": 0,
+   "neuron": 13886,
+   "side": "negatives",
+   "token": "aker",
+   "our_last_token": "aker",
+   "published": -8.25,
+   "ours": -8.5625,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 13886,
+   "side": "negatives",
+   "token": "aker",
+   "our_last_token": "aker",
+   "published": -8.0625,
+   "ours": -8.0625,
+   "truncated": false
+  },
+  {
+   "layer": 0,
+   "neuron": 13886,
+   "side": "negatives",
+   "token": "aker",
+   "our_last_token": "aker",
+   "published": -8.0,
+   "ours": -8.0625,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 13886,
+   "side": "negatives",
+   "token": "aker",
+   "our_last_token": "aker",
+   "published": -7.9375,
+   "ours": -7.8125,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 13886,
+   "side": "negatives",
+   "token": "aker",
+   "our_last_token": "aker",
+   "published": -7.90625,
+   "ours": -7.875,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 13886,
+   "side": "negatives",
+   "token": "aker",
+   "our_last_token": "aker",
+   "published": -7.84375,
+   "ours": -7.84375,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 4289,
+   "side": "positives",
+   "token": "ki",
+   "our_last_token": "ki",
+   "published": 7.09375,
+   "ours": 7.21875,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 4289,
+   "side": "positives",
+   "token": "ki",
+   "our_last_token": "ki",
+   "published": 7.09375,
+   "ours": 7.34375,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 4289,
+   "side": "positives",
+   "token": "ki",
+   "our_last_token": "ki",
+   "published": 7.0625,
+   "ours": 7.8125,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 4289,
+   "side": "positives",
+   "token": "ki",
+   "our_last_token": "ki",
+   "published": 6.84375,
+   "ours": 6.84375,
+   "truncated": false
+  },
+  {
+   "layer": 0,
+   "neuron": 4289,
+   "side": "positives",
+   "token": "ki",
+   "our_last_token": "ki",
+   "published": 6.84375,
+   "ours": 6.84375,
+   "truncated": false
+  },
+  {
+   "layer": 0,
+   "neuron": 4289,
+   "side": "positives",
+   "token": "ki",
+   "our_last_token": "ki",
+   "published": 6.8125,
+   "ours": 7.0625,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 4289,
+   "side": "negatives",
+   "token": "าก",
+   "our_last_token": "à¸²à¸ģ",
+   "published": -0.130859375,
+   "ours": -0.11181640625,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 4289,
+   "side": "negatives",
+   "token": "akov",
+   "our_last_token": "akov",
+   "published": -0.12890625,
+   "ours": -0.1416015625,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 4289,
+   "side": "negatives",
+   "token": "aks",
+   "our_last_token": "aks",
+   "published": -0.1279296875,
+   "ours": -0.1279296875,
+   "truncated": false
+  },
+  {
+   "layer": 0,
+   "neuron": 4289,
+   "side": "negatives",
+   "token": "aks",
+   "our_last_token": "aks",
+   "published": -0.1279296875,
+   "ours": -0.1279296875,
+   "truncated": false
+  },
+  {
+   "layer": 0,
+   "neuron": 4289,
+   "side": "negatives",
+   "token": "akov",
+   "our_last_token": "akov",
+   "published": -0.125,
+   "ours": -0.1435546875,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 4289,
+   "side": "negatives",
+   "token": "าก",
+   "our_last_token": "à¸²à¸ģ",
+   "published": -0.12451171875,
+   "ours": -0.130859375,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 20486,
+   "side": "positives",
+   "token": "y",
+   "our_last_token": "y",
+   "published": 1.015625,
+   "ours": 1.0,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 20486,
+   "side": "positives",
+   "token": "y",
+   "our_last_token": "y",
+   "published": 1.0,
+   "ours": 0.9609375,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 20486,
+   "side": "positives",
+   "token": "y",
+   "our_last_token": "y",
+   "published": 1.0,
+   "ours": 0.875,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 20486,
+   "side": "positives",
+   "token": "y",
+   "our_last_token": "y",
+   "published": 0.9921875,
+   "ours": 1.015625,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 20486,
+   "side": "positives",
+   "token": "y",
+   "our_last_token": "y",
+   "published": 0.9765625,
+   "ours": 0.98828125,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 20486,
+   "side": "positives",
+   "token": "Y",
+   "our_last_token": "Y",
+   "published": 0.95703125,
+   "ours": 0.87109375,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 20486,
+   "side": "negatives",
+   "token": "y",
+   "our_last_token": "y",
+   "published": -32.5,
+   "ours": -32.25,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 20486,
+   "side": "negatives",
+   "token": "y",
+   "our_last_token": "y",
+   "published": -32.25,
+   "ours": -33.0,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 20486,
+   "side": "negatives",
+   "token": "y",
+   "our_last_token": "y",
+   "published": -31.5,
+   "ours": -33.0,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 20486,
+   "side": "negatives",
+   "token": "y",
+   "our_last_token": "y",
+   "published": -31.0,
+   "ours": -32.25,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 20486,
+   "side": "negatives",
+   "token": "y",
+   "our_last_token": "y",
+   "published": -30.75,
+   "ours": -31.25,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 20486,
+   "side": "negatives",
+   "token": "y",
+   "our_last_token": "y",
+   "published": -30.0,
+   "ours": -30.0,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 12478,
+   "side": "positives",
+   "token": "cl",
+   "our_last_token": "cl",
+   "published": 1.25,
+   "ours": 1.125,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 12478,
+   "side": "positives",
+   "token": "cut",
+   "our_last_token": "cut",
+   "published": 1.1875,
+   "ours": 1.1953125,
+   "truncated": false
+  },
+  {
+   "layer": 3,
+   "neuron": 12478,
+   "side": "positives",
+   "token": "ut",
+   "our_last_token": "ut",
+   "published": 1.1875,
+   "ours": 1.1796875,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 12478,
+   "side": "positives",
+   "token": "ag",
+   "our_last_token": "ag",
+   "published": 1.171875,
+   "ours": 1.109375,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 12478,
+   "side": "positives",
+   "token": "cut",
+   "our_last_token": "cut",
+   "published": 1.171875,
+   "ours": 1.171875,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 12478,
+   "side": "positives",
+   "token": "cor",
+   "our_last_token": "cor",
+   "published": 1.171875,
+   "ours": 1.1328125,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 12478,
+   "side": "negatives",
+   "token": "active",
+   "our_last_token": "active",
+   "published": -47.25,
+   "ours": -46.5,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 12478,
+   "side": "negatives",
+   "token": "act",
+   "our_last_token": "act",
+   "published": -47.0,
+   "ours": -44.75,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 12478,
+   "side": "negatives",
+   "token": "acting",
+   "our_last_token": "acting",
+   "published": -45.5,
+   "ours": -43.75,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 12478,
+   "side": "negatives",
+   "token": "act",
+   "our_last_token": "act",
+   "published": -44.75,
+   "ours": -43.75,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 12478,
+   "side": "negatives",
+   "token": "act",
+   "our_last_token": "act",
+   "published": -44.75,
+   "ours": -49.75,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 12478,
+   "side": "negatives",
+   "token": "acting",
+   "our_last_token": "acting",
+   "published": -44.5,
+   "ours": -41.0,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 8891,
+   "side": "positives",
+   "token": "Question",
+   "our_last_token": "Question",
+   "published": 20.5,
+   "ours": 20.5,
+   "truncated": false
+  },
+  {
+   "layer": 2,
+   "neuron": 8891,
+   "side": "positives",
+   "token": "Question",
+   "our_last_token": "Question",
+   "published": 20.5,
+   "ours": 20.5,
+   "truncated": false
+  },
+  {
+   "layer": 2,
+   "neuron": 8891,
+   "side": "positives",
+   "token": "Question",
+   "our_last_token": "Question",
+   "published": 20.5,
+   "ours": 20.5,
+   "truncated": false
+  },
+  {
+   "layer": 2,
+   "neuron": 8891,
+   "side": "positives",
+   "token": "Question",
+   "our_last_token": "Question",
+   "published": 20.5,
+   "ours": 20.5,
+   "truncated": false
+  },
+  {
+   "layer": 2,
+   "neuron": 8891,
+   "side": "positives",
+   "token": "Question",
+   "our_last_token": "Question",
+   "published": 20.5,
+   "ours": 20.5,
+   "truncated": false
+  },
+  {
+   "layer": 2,
+   "neuron": 8891,
+   "side": "positives",
+   "token": "Question",
+   "our_last_token": "Question",
+   "published": 20.5,
+   "ours": 20.5,
+   "truncated": false
+  },
+  {
+   "layer": 2,
+   "neuron": 8891,
+   "side": "negatives",
+   "token": "ige",
+   "our_last_token": "ige",
+   "published": -17.375,
+   "ours": -16.625,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 8891,
+   "side": "negatives",
+   "token": "iy",
+   "our_last_token": "iy",
+   "published": -16.5,
+   "ours": -12.6875,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 8891,
+   "side": "negatives",
+   "token": "iy",
+   "our_last_token": "iy",
+   "published": -16.375,
+   "ours": -10.5,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 8891,
+   "side": "negatives",
+   "token": "ashi",
+   "our_last_token": "ashi",
+   "published": -15.875,
+   "ours": -14.375,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 8891,
+   "side": "negatives",
+   "token": "aga",
+   "our_last_token": "aga",
+   "published": -15.625,
+   "ours": -15.125,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 8891,
+   "side": "negatives",
+   "token": "oto",
+   "our_last_token": "oto",
+   "published": -15.5,
+   "ours": -15.3125,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 15141,
+   "side": "positives",
+   "token": "asaki",
+   "our_last_token": "asaki",
+   "published": 74.0,
+   "ours": 73.0,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 15141,
+   "side": "positives",
+   "token": "asaki",
+   "our_last_token": "asaki",
+   "published": 71.5,
+   "ours": 72.0,
+   "truncated": false
+  },
+  {
+   "layer": 3,
+   "neuron": 15141,
+   "side": "positives",
+   "token": "asaki",
+   "our_last_token": "asaki",
+   "published": 71.0,
+   "ours": 75.5,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 15141,
+   "side": "positives",
+   "token": "asaki",
+   "our_last_token": "asaki",
+   "published": 70.5,
+   "ours": 66.0,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 15141,
+   "side": "positives",
+   "token": "asaki",
+   "our_last_token": "asaki",
+   "published": 70.5,
+   "ours": 71.5,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 15141,
+   "side": "positives",
+   "token": " Kawasaki",
+   "our_last_token": "ĠKawasaki",
+   "published": 70.0,
+   "ours": 68.5,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 15141,
+   "side": "negatives",
+   "token": "ume",
+   "our_last_token": "ume",
+   "published": -1.625,
+   "ours": -1.390625,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 15141,
+   "side": "negatives",
+   "token": "ic",
+   "our_last_token": "ic",
+   "published": -1.2265625,
+   "ours": -1.1015625,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 15141,
+   "side": "negatives",
+   "token": "aw",
+   "our_last_token": "aw",
+   "published": -1.203125,
+   "ours": -1.2734375,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 15141,
+   "side": "negatives",
+   "token": "aw",
+   "our_last_token": "aw",
+   "published": -1.1953125,
+   "ours": -1.234375,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 15141,
+   "side": "negatives",
+   "token": "aw",
+   "our_last_token": "aw",
+   "published": -1.1875,
+   "ours": -1.1875,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 15141,
+   "side": "negatives",
+   "token": "aw",
+   "our_last_token": "aw",
+   "published": -1.1796875,
+   "ours": -1.1875,
+   "truncated": true
+  },
+  {
+   "layer": 4,
+   "neuron": 8476,
+   "side": "positives",
+   "token": "aki",
+   "our_last_token": "aki",
+   "published": 63.5,
+   "ours": 60.75,
+   "truncated": true
+  },
+  {
+   "layer": 4,
+   "neuron": 8476,
+   "side": "positives",
+   "token": "崎",
+   "our_last_token": "å´İ",
+   "published": 63.0,
+   "ours": 63.5,
+   "truncated": true
+  },
+  {
+   "layer": 4,
+   "neuron": 8476,
+   "side": "positives",
+   "token": "崎",
+   "our_last_token": "å´İ",
+   "published": 62.25,
+   "ours": 63.5,
+   "truncated": true
+  },
+  {
+   "layer": 4,
+   "neuron": 8476,
+   "side": "positives",
+   "token": "aki",
+   "our_last_token": "aki",
+   "published": 62.25,
+   "ours": 62.5,
+   "truncated": true
+  },
+  {
+   "layer": 4,
+   "neuron": 8476,
+   "side": "positives",
+   "token": "崎",
+   "our_last_token": "å´İ",
+   "published": 62.0,
+   "ours": 61.5,
+   "truncated": true
+  },
+  {
+   "layer": 4,
+   "neuron": 8476,
+   "side": "positives",
+   "token": "崎",
+   "our_last_token": "å´İ",
+   "published": 61.75,
+   "ours": 61.5,
+   "truncated": true
+  },
+  {
+   "layer": 4,
+   "neuron": 8476,
+   "side": "negatives",
+   "token": " Games",
+   "our_last_token": "ĠGames",
+   "published": -33.25,
+   "ours": -32.25,
+   "truncated": true
+  },
+  {
+   "layer": 4,
+   "neuron": 8476,
+   "side": "negatives",
+   "token": " car",
+   "our_last_token": "Ġcar",
+   "published": -25.5,
+   "ours": -27.375,
+   "truncated": true
+  },
+  {
+   "layer": 4,
+   "neuron": 8476,
+   "side": "negatives",
+   "token": " cars",
+   "our_last_token": "Ġcars",
+   "published": -20.625,
+   "ours": -26.0,
+   "truncated": true
+  },
+  {
+   "layer": 4,
+   "neuron": 8476,
+   "side": "negatives",
+   "token": " Face",
+   "our_last_token": "ĠFace",
+   "published": -17.0,
+   "ours": -16.75,
+   "truncated": true
+  },
+  {
+   "layer": 4,
+   "neuron": 8476,
+   "side": "negatives",
+   "token": " Games",
+   "our_last_token": "ĠGames",
+   "published": -10.25,
+   "ours": -13.5,
+   "truncated": true
+  },
+  {
+   "layer": 4,
+   "neuron": 8476,
+   "side": "negatives",
+   "token": " Game",
+   "our_last_token": "ĠGame",
+   "published": -9.75,
+   "ours": -8.875,
+   "truncated": true
+  },
+  {
+   "layer": 6,
+   "neuron": 24077,
+   "side": "positives",
+   "token": " Away",
+   "our_last_token": "ĠAway",
+   "published": 89.0,
+   "ours": 93.0,
+   "truncated": true
+  },
+  {
+   "layer": 6,
+   "neuron": 24077,
+   "side": "positives",
+   "token": " Away",
+   "our_last_token": "ĠAway",
+   "published": 87.0,
+   "ours": 85.0,
+   "truncated": true
+  },
+  {
+   "layer": 6,
+   "neuron": 24077,
+   "side": "positives",
+   "token": " Away",
+   "our_last_token": "ĠAway",
+   "published": 85.5,
+   "ours": 89.0,
+   "truncated": true
+  },
+  {
+   "layer": 6,
+   "neuron": 24077,
+   "side": "positives",
+   "token": " Away",
+   "our_last_token": "ĠAway",
+   "published": 84.0,
+   "ours": 90.0,
+   "truncated": true
+  },
+  {
+   "layer": 6,
+   "neuron": 24077,
+   "side": "positives",
+   "token": " Away",
+   "our_last_token": "ĠAway",
+   "published": 84.0,
+   "ours": 91.0,
+   "truncated": true
+  },
+  {
+   "layer": 6,
+   "neuron": 24077,
+   "side": "positives",
+   "token": " Away",
+   "our_last_token": "ĠAway",
+   "published": 82.0,
+   "ours": 85.0,
+   "truncated": true
+  },
+  {
+   "layer": 6,
+   "neuron": 24077,
+   "side": "negatives",
+   "token": "id",
+   "our_last_token": "id",
+   "published": -7.84375,
+   "ours": -8.1875,
+   "truncated": true
+  },
+  {
+   "layer": 6,
+   "neuron": 24077,
+   "side": "negatives",
+   "token": "id",
+   "our_last_token": "id",
+   "published": -7.59375,
+   "ours": -8.5,
+   "truncated": true
+  },
+  {
+   "layer": 6,
+   "neuron": 24077,
+   "side": "negatives",
+   "token": " Freeze",
+   "our_last_token": "ĠFreeze",
+   "published": -7.28125,
+   "ours": -6.84375,
+   "truncated": true
+  },
+  {
+   "layer": 6,
+   "neuron": 24077,
+   "side": "negatives",
+   "token": "id",
+   "our_last_token": "id",
+   "published": -6.78125,
+   "ours": -6.21875,
+   "truncated": true
+  },
+  {
+   "layer": 6,
+   "neuron": 24077,
+   "side": "negatives",
+   "token": "ix",
+   "our_last_token": "ix",
+   "published": -6.6875,
+   "ours": -8.3125,
+   "truncated": true
+  },
+  {
+   "layer": 6,
+   "neuron": 24077,
+   "side": "negatives",
+   "token": "ix",
+   "our_last_token": "ix",
+   "published": -6.625,
+   "ours": -6.40625,
+   "truncated": true
+  },
+  {
+   "layer": 8,
+   "neuron": 14338,
+   "side": "positives",
+   "token": "ica",
+   "our_last_token": "ica",
+   "published": 42.75,
+   "ours": 41.5,
+   "truncated": true
+  },
+  {
+   "layer": 8,
+   "neuron": 14338,
+   "side": "positives",
+   "token": "ica",
+   "our_last_token": "ica",
+   "published": 41.5,
+   "ours": 41.25,
+   "truncated": true
+  },
+  {
+   "layer": 8,
+   "neuron": 14338,
+   "side": "positives",
+   "token": "ica",
+   "our_last_token": "ica",
+   "published": 39.75,
+   "ours": 38.0,
+   "truncated": true
+  },
+  {
+   "layer": 8,
+   "neuron": 14338,
+   "side": "positives",
+   "token": "ica",
+   "our_last_token": "ica",
+   "published": 39.5,
+   "ours": 37.5,
+   "truncated": true
+  },
+  {
+   "layer": 8,
+   "neuron": 14338,
+   "side": "positives",
+   "token": "ica",
+   "our_last_token": "ica",
+   "published": 38.25,
+   "ours": 37.25,
+   "truncated": true
+  },
+  {
+   "layer": 8,
+   "neuron": 14338,
+   "side": "positives",
+   "token": "ica",
+   "our_last_token": "ica",
+   "published": 37.0,
+   "ours": 37.75,
+   "truncated": true
+  },
+  {
+   "layer": 8,
+   "neuron": 14338,
+   "side": "negatives",
+   "token": "ತ",
+   "our_last_token": "à²¤",
+   "published": -6.09375,
+   "ours": -6.1875,
+   "truncated": false
+  },
+  {
+   "layer": 8,
+   "neuron": 14338,
+   "side": "negatives",
+   "token": "ತ",
+   "our_last_token": "à²¤",
+   "published": -6.03125,
+   "ours": -6.0625,
+   "truncated": false
+  },
+  {
+   "layer": 8,
+   "neuron": 14338,
+   "side": "negatives",
+   "token": "ತ",
+   "our_last_token": "à²¤",
+   "published": -5.96875,
+   "ours": -6.46875,
+   "truncated": false
+  },
+  {
+   "layer": 8,
+   "neuron": 14338,
+   "side": "negatives",
+   "token": "ತ",
+   "our_last_token": "à²¤",
+   "published": -5.9375,
+   "ours": -5.9375,
+   "truncated": false
+  },
+  {
+   "layer": 8,
+   "neuron": 14338,
+   "side": "negatives",
+   "token": "it",
+   "our_last_token": "it",
+   "published": -4.34375,
+   "ours": -3.4375,
+   "truncated": true
+  },
+  {
+   "layer": 8,
+   "neuron": 14338,
+   "side": "negatives",
+   "token": "U",
+   "our_last_token": "U",
+   "published": -4.3125,
+   "ours": -3.171875,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 10847,
+   "side": "positives",
+   "token": "INGER",
+   "our_last_token": "INGER",
+   "published": 9.6875,
+   "ours": 9.3125,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 10847,
+   "side": "positives",
+   "token": "INGER",
+   "our_last_token": "INGER",
+   "published": 9.0625,
+   "ours": 9.0,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 10847,
+   "side": "positives",
+   "token": "inger",
+   "our_last_token": "inger",
+   "published": 9.0,
+   "ours": 8.875,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 10847,
+   "side": "positives",
+   "token": "INGER",
+   "our_last_token": "INGER",
+   "published": 8.9375,
+   "ours": 8.875,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 10847,
+   "side": "positives",
+   "token": "inger",
+   "our_last_token": "inger",
+   "published": 8.875,
+   "ours": 8.875,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 10847,
+   "side": "positives",
+   "token": "inger",
+   "our_last_token": "inger",
+   "published": 8.8125,
+   "ours": 8.8125,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 10847,
+   "side": "negatives",
+   "token": "creativecommons",
+   "our_last_token": "creativecommons",
+   "published": -0.224609375,
+   "ours": -0.224609375,
+   "truncated": false
+  },
+  {
+   "layer": 0,
+   "neuron": 10847,
+   "side": "negatives",
+   "token": "迮",
+   "our_last_token": "è¿®",
+   "published": -0.21484375,
+   "ours": -0.2080078125,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 10847,
+   "side": "negatives",
+   "token": "迮",
+   "our_last_token": "è¿®",
+   "published": -0.212890625,
+   "ours": -0.2021484375,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 10847,
+   "side": "negatives",
+   "token": " schizophrenia",
+   "our_last_token": "Ġschizophrenia",
+   "published": -0.2001953125,
+   "ours": -0.2314453125,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 10847,
+   "side": "negatives",
+   "token": ".getElementsByClassName",
+   "our_last_token": ".getElementsByClassName",
+   "published": -0.1943359375,
+   "ours": -0.1875,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 10847,
+   "side": "negatives",
+   "token": " уме",
+   "our_last_token": "ĠÑĥÐ¼Ðµ",
+   "published": -0.1865234375,
+   "ours": -0.1865234375,
+   "truncated": false
+  },
+  {
+   "layer": 0,
+   "neuron": 17029,
+   "side": "positives",
+   "token": "ger",
+   "our_last_token": "ger",
+   "published": 6.71875,
+   "ours": 6.71875,
+   "truncated": false
+  },
+  {
+   "layer": 0,
+   "neuron": 17029,
+   "side": "positives",
+   "token": "ger",
+   "our_last_token": "ger",
+   "published": 6.71875,
+   "ours": 7.0625,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 17029,
+   "side": "positives",
+   "token": "ger",
+   "our_last_token": "ger",
+   "published": 6.71875,
+   "ours": 6.59375,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 17029,
+   "side": "positives",
+   "token": "ger",
+   "our_last_token": "ger",
+   "published": 6.65625,
+   "ours": 6.59375,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 17029,
+   "side": "positives",
+   "token": "ger",
+   "our_last_token": "ger",
+   "published": 6.59375,
+   "ours": 6.59375,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 17029,
+   "side": "positives",
+   "token": "ger",
+   "our_last_token": "ger",
+   "published": 6.5625,
+   "ours": 6.625,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 17029,
+   "side": "negatives",
+   "token": " applaud",
+   "our_last_token": "Ġapplaud",
+   "published": -0.2080078125,
+   "ours": -0.228515625,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 17029,
+   "side": "negatives",
+   "token": " styleUrls",
+   "our_last_token": "ĠstyleUrls",
+   "published": -0.201171875,
+   "ours": -0.1826171875,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 17029,
+   "side": "negatives",
+   "token": " outbreak",
+   "our_last_token": "Ġoutbreak",
+   "published": -0.193359375,
+   "ours": -0.2080078125,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 17029,
+   "side": "negatives",
+   "token": " styleUrls",
+   "our_last_token": "ĠstyleUrls",
+   "published": -0.1923828125,
+   "ours": -0.1728515625,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 17029,
+   "side": "negatives",
+   "token": " outbreak",
+   "our_last_token": "Ġoutbreak",
+   "published": -0.18359375,
+   "ours": -0.189453125,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 17029,
+   "side": "negatives",
+   "token": " outbreak",
+   "our_last_token": "Ġoutbreak",
+   "published": -0.1787109375,
+   "ours": -0.1806640625,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 12592,
+   "side": "positives",
+   "token": "ach",
+   "our_last_token": "ach",
+   "published": 0.90234375,
+   "ours": 0.86328125,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 12592,
+   "side": "positives",
+   "token": "ach",
+   "our_last_token": "ach",
+   "published": 0.8984375,
+   "ours": 0.89453125,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 12592,
+   "side": "positives",
+   "token": "ach",
+   "our_last_token": "ach",
+   "published": 0.8984375,
+   "ours": 0.82421875,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 12592,
+   "side": "positives",
+   "token": "ach",
+   "our_last_token": "ach",
+   "published": 0.8984375,
+   "ours": 0.890625,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 12592,
+   "side": "positives",
+   "token": "ch",
+   "our_last_token": "ch",
+   "published": 0.88671875,
+   "ours": 0.8515625,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 12592,
+   "side": "positives",
+   "token": "ach",
+   "our_last_token": "ach",
+   "published": 0.8828125,
+   "ours": 0.82421875,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 12592,
+   "side": "negatives",
+   "token": "ch",
+   "our_last_token": "ch",
+   "published": -18.5,
+   "ours": -17.625,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 12592,
+   "side": "negatives",
+   "token": "ch",
+   "our_last_token": "ch",
+   "published": -18.25,
+   "ours": -17.125,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 12592,
+   "side": "negatives",
+   "token": "ch",
+   "our_last_token": "ch",
+   "published": -17.375,
+   "ours": -16.5,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 12592,
+   "side": "negatives",
+   "token": "ch",
+   "our_last_token": "ch",
+   "published": -17.375,
+   "ours": -17.25,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 12592,
+   "side": "negatives",
+   "token": "ch",
+   "our_last_token": "ch",
+   "published": -17.375,
+   "ours": -17.375,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 12592,
+   "side": "negatives",
+   "token": "ch",
+   "our_last_token": "ch",
+   "published": -16.875,
+   "ours": -17.375,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 13782,
+   "side": "positives",
+   "token": "ö",
+   "our_last_token": "Ã¶",
+   "published": 10.4375,
+   "ours": 10.4375,
+   "truncated": false
+  },
+  {
+   "layer": 0,
+   "neuron": 13782,
+   "side": "positives",
+   "token": "ök",
+   "our_last_token": "Ã¶k",
+   "published": 8.75,
+   "ours": 9.0,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 13782,
+   "side": "positives",
+   "token": "nt",
+   "our_last_token": "nt",
+   "published": 8.5625,
+   "ours": 8.5625,
+   "truncated": false
+  },
+  {
+   "layer": 0,
+   "neuron": 13782,
+   "side": "positives",
+   "token": "öl",
+   "our_last_token": "Ã¶l",
+   "published": 8.5,
+   "ours": 10.0625,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 13782,
+   "side": "positives",
+   "token": "öl",
+   "our_last_token": "Ã¶l",
+   "published": 8.25,
+   "ours": 9.5,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 13782,
+   "side": "positives",
+   "token": "ös",
+   "our_last_token": "Ã¶s",
+   "published": 8.0625,
+   "ours": 8.25,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 13782,
+   "side": "negatives",
+   "token": "lam",
+   "our_last_token": "lam",
+   "published": -0.2431640625,
+   "ours": -0.24609375,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 13782,
+   "side": "negatives",
+   "token": "lam",
+   "our_last_token": "lam",
+   "published": -0.2421875,
+   "ours": -0.255859375,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 13782,
+   "side": "negatives",
+   "token": "lam",
+   "our_last_token": "lam",
+   "published": -0.2412109375,
+   "ours": -0.263671875,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 13782,
+   "side": "negatives",
+   "token": "lam",
+   "our_last_token": "lam",
+   "published": -0.2392578125,
+   "ours": -0.2177734375,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 13782,
+   "side": "negatives",
+   "token": "lam",
+   "our_last_token": "lam",
+   "published": -0.20703125,
+   "ours": -0.2080078125,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 13782,
+   "side": "negatives",
+   "token": "lam",
+   "our_last_token": "lam",
+   "published": -0.2060546875,
+   "ours": -0.2373046875,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 6275,
+   "side": "positives",
+   "token": "inger",
+   "our_last_token": "inger",
+   "published": 26.375,
+   "ours": 26.5,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 6275,
+   "side": "positives",
+   "token": "unta",
+   "our_last_token": "unta",
+   "published": 23.875,
+   "ours": 25.625,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 6275,
+   "side": "positives",
+   "token": "oint",
+   "our_last_token": "oint",
+   "published": 23.5,
+   "ours": 23.5,
+   "truncated": false
+  },
+  {
+   "layer": 2,
+   "neuron": 6275,
+   "side": "positives",
+   "token": "oint",
+   "our_last_token": "oint",
+   "published": 23.125,
+   "ours": 23.625,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 6275,
+   "side": "positives",
+   "token": "unta",
+   "our_last_token": "unta",
+   "published": 22.875,
+   "ours": 19.375,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 6275,
+   "side": "positives",
+   "token": "inger",
+   "our_last_token": "inger",
+   "published": 22.625,
+   "ours": 22.625,
+   "truncated": false
+  },
+  {
+   "layer": 2,
+   "neuron": 6275,
+   "side": "negatives",
+   "token": "illo",
+   "our_last_token": "illo",
+   "published": -0.9609375,
+   "ours": -0.95703125,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 6275,
+   "side": "negatives",
+   "token": "ier",
+   "our_last_token": "ier",
+   "published": -0.94140625,
+   "ours": -0.84375,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 6275,
+   "side": "negatives",
+   "token": "ier",
+   "our_last_token": "ier",
+   "published": -0.91015625,
+   "ours": -0.8671875,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 6275,
+   "side": "negatives",
+   "token": "illo",
+   "our_last_token": "illo",
+   "published": -0.90625,
+   "ours": -0.921875,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 6275,
+   "side": "negatives",
+   "token": "ier",
+   "our_last_token": "ier",
+   "published": -0.90625,
+   "ours": -0.8984375,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 6275,
+   "side": "negatives",
+   "token": "ier",
+   "our_last_token": "ier",
+   "published": -0.90234375,
+   "ours": -0.96484375,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 13814,
+   "side": "positives",
+   "token": "nia",
+   "our_last_token": "nia",
+   "published": 35.0,
+   "ours": 34.0,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 13814,
+   "side": "positives",
+   "token": "nia",
+   "our_last_token": "nia",
+   "published": 34.75,
+   "ours": 33.5,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 13814,
+   "side": "positives",
+   "token": "ronics",
+   "our_last_token": "ronics",
+   "published": 34.5,
+   "ours": 33.75,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 13814,
+   "side": "positives",
+   "token": "nia",
+   "our_last_token": "nia",
+   "published": 33.5,
+   "ours": 32.75,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 13814,
+   "side": "positives",
+   "token": "ronic",
+   "our_last_token": "ronic",
+   "published": 33.5,
+   "ours": 33.5,
+   "truncated": false
+  },
+  {
+   "layer": 3,
+   "neuron": 13814,
+   "side": "positives",
+   "token": "nia",
+   "our_last_token": "nia",
+   "published": 33.25,
+   "ours": 33.5,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 13814,
+   "side": "negatives",
+   "token": "ac",
+   "our_last_token": "ac",
+   "published": -40.5,
+   "ours": -43.25,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 13814,
+   "side": "negatives",
+   "token": "ac",
+   "our_last_token": "ac",
+   "published": -40.0,
+   "ours": -42.25,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 13814,
+   "side": "negatives",
+   "token": "ac",
+   "our_last_token": "ac",
+   "published": -40.0,
+   "ours": -42.0,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 13814,
+   "side": "negatives",
+   "token": "ac",
+   "our_last_token": "ac",
+   "published": -39.5,
+   "ours": -42.5,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 13814,
+   "side": "negatives",
+   "token": "ac",
+   "our_last_token": "ac",
+   "published": -39.5,
+   "ours": -43.25,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 13814,
+   "side": "negatives",
+   "token": "ac",
+   "our_last_token": "ac",
+   "published": -39.0,
+   "ours": -43.75,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 15805,
+   "side": "positives",
+   "token": "گ",
+   "our_last_token": "Ú¯",
+   "published": 5.625,
+   "ours": 5.625,
+   "truncated": false
+  },
+  {
+   "layer": 3,
+   "neuron": 15805,
+   "side": "positives",
+   "token": "گ",
+   "our_last_token": "Ú¯",
+   "published": 5.59375,
+   "ours": 5.5625,
+   "truncated": false
+  },
+  {
+   "layer": 3,
+   "neuron": 15805,
+   "side": "positives",
+   "token": "گ",
+   "our_last_token": "Ú¯",
+   "published": 4.84375,
+   "ours": 4.59375,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 15805,
+   "side": "positives",
+   "token": "گ",
+   "our_last_token": "Ú¯",
+   "published": 4.625,
+   "ours": 4.75,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 15805,
+   "side": "positives",
+   "token": "گ",
+   "our_last_token": "Ú¯",
+   "published": 4.625,
+   "ours": 4.71875,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 15805,
+   "side": "positives",
+   "token": "گ",
+   "our_last_token": "Ú¯",
+   "published": 4.53125,
+   "ours": 4.78125,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 15805,
+   "side": "negatives",
+   "token": "薛",
+   "our_last_token": "èĸĽ",
+   "published": -53.75,
+   "ours": -51.0,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 15805,
+   "side": "negatives",
+   "token": "薛",
+   "our_last_token": "èĸĽ",
+   "published": -52.25,
+   "ours": -47.0,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 15805,
+   "side": "negatives",
+   "token": "薛",
+   "our_last_token": "èĸĽ",
+   "published": -47.0,
+   "ours": -45.0,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 15805,
+   "side": "negatives",
+   "token": "薛",
+   "our_last_token": "èĸĽ",
+   "published": -46.5,
+   "ours": -54.0,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 15805,
+   "side": "negatives",
+   "token": "薛",
+   "our_last_token": "èĸĽ",
+   "published": -46.5,
+   "ours": -47.5,
+   "truncated": false
+  },
+  {
+   "layer": 3,
+   "neuron": 15805,
+   "side": "negatives",
+   "token": "薛",
+   "our_last_token": "èĸĽ",
+   "published": -43.5,
+   "ours": -52.5,
+   "truncated": false
+  },
+  {
+   "layer": 4,
+   "neuron": 13169,
+   "side": "positives",
+   "token": "inger",
+   "our_last_token": "inger",
+   "published": 80.0,
+   "ours": 80.0,
+   "truncated": false
+  },
+  {
+   "layer": 4,
+   "neuron": 13169,
+   "side": "positives",
+   "token": "inger",
+   "our_last_token": "inger",
+   "published": 63.0,
+   "ours": 63.0,
+   "truncated": false
+  },
+  {
+   "layer": 4,
+   "neuron": 13169,
+   "side": "positives",
+   "token": "гер",
+   "our_last_token": "Ð³ÐµÑĢ",
+   "published": 61.5,
+   "ours": 61.5,
+   "truncated": true
+  },
+  {
+   "layer": 4,
+   "neuron": 13169,
+   "side": "positives",
+   "token": "inger",
+   "our_last_token": "inger",
+   "published": 60.75,
+   "ours": 60.75,
+   "truncated": true
+  },
+  {
+   "layer": 4,
+   "neuron": 13169,
+   "side": "positives",
+   "token": "гер",
+   "our_last_token": "Ð³ÐµÑĢ",
+   "published": 60.25,
+   "ours": 55.75,
+   "truncated": true
+  },
+  {
+   "layer": 4,
+   "neuron": 13169,
+   "side": "positives",
+   "token": "inger",
+   "our_last_token": "inger",
+   "published": 59.75,
+   "ours": 65.5,
+   "truncated": true
+  },
+  {
+   "layer": 4,
+   "neuron": 13169,
+   "side": "negatives",
+   "token": "inger",
+   "our_last_token": "inger",
+   "published": -1.515625,
+   "ours": -1.515625,
+   "truncated": true
+  },
+  {
+   "layer": 4,
+   "neuron": 13169,
+   "side": "negatives",
+   "token": "iger",
+   "our_last_token": "iger",
+   "published": -1.3515625,
+   "ours": -1.265625,
+   "truncated": true
+  },
+  {
+   "layer": 4,
+   "neuron": 13169,
+   "side": "negatives",
+   "token": "ders",
+   "our_last_token": "ders",
+   "published": -1.3515625,
+   "ours": -1.3828125,
+   "truncated": true
+  },
+  {
+   "layer": 4,
+   "neuron": 13169,
+   "side": "negatives",
+   "token": "inger",
+   "our_last_token": "inger",
+   "published": -1.328125,
+   "ours": -1.2421875,
+   "truncated": true
+  },
+  {
+   "layer": 4,
+   "neuron": 13169,
+   "side": "negatives",
+   "token": "ington",
+   "our_last_token": "ington",
+   "published": -1.3125,
+   "ours": -1.328125,
+   "truncated": true
+  },
+  {
+   "layer": 4,
+   "neuron": 13169,
+   "side": "negatives",
+   "token": "iner",
+   "our_last_token": "iner",
+   "published": -1.3046875,
+   "ours": -1.34375,
+   "truncated": true
+  },
+  {
+   "layer": 5,
+   "neuron": 8271,
+   "side": "positives",
+   "token": "ential",
+   "our_last_token": "ential",
+   "published": 6.875,
+   "ours": 6.875,
+   "truncated": false
+  },
+  {
+   "layer": 5,
+   "neuron": 8271,
+   "side": "positives",
+   "token": "gies",
+   "our_last_token": "gies",
+   "published": 6.625,
+   "ours": 6.5,
+   "truncated": true
+  },
+  {
+   "layer": 5,
+   "neuron": 8271,
+   "side": "positives",
+   "token": "energy",
+   "our_last_token": "energy",
+   "published": 6.25,
+   "ours": 6.96875,
+   "truncated": true
+  },
+  {
+   "layer": 5,
+   "neuron": 8271,
+   "side": "positives",
+   "token": " energy",
+   "our_last_token": "Ġenergy",
+   "published": 6.09375,
+   "ours": 6.09375,
+   "truncated": false
+  },
+  {
+   "layer": 5,
+   "neuron": 8271,
+   "side": "positives",
+   "token": " energy",
+   "our_last_token": "Ġenergy",
+   "published": 6.03125,
+   "ours": 6.34375,
+   "truncated": true
+  },
+  {
+   "layer": 5,
+   "neuron": 8271,
+   "side": "positives",
+   "token": "articles",
+   "our_last_token": "articles",
+   "published": 5.9375,
+   "ours": 5.9375,
+   "truncated": false
+  },
+  {
+   "layer": 5,
+   "neuron": 8271,
+   "side": "negatives",
+   "token": "berg",
+   "our_last_token": "berg",
+   "published": -60.75,
+   "ours": -63.0,
+   "truncated": true
+  },
+  {
+   "layer": 5,
+   "neuron": 8271,
+   "side": "negatives",
+   "token": "berg",
+   "our_last_token": "berg",
+   "published": -59.75,
+   "ours": -62.25,
+   "truncated": true
+  },
+  {
+   "layer": 5,
+   "neuron": 8271,
+   "side": "negatives",
+   "token": "isen",
+   "our_last_token": "isen",
+   "published": -58.5,
+   "ours": -51.5,
+   "truncated": true
+  },
+  {
+   "layer": 5,
+   "neuron": 8271,
+   "side": "negatives",
+   "token": "berg",
+   "our_last_token": "berg",
+   "published": -58.25,
+   "ours": -66.0,
+   "truncated": true
+  },
+  {
+   "layer": 5,
+   "neuron": 8271,
+   "side": "negatives",
+   "token": "isen",
+   "our_last_token": "isen",
+   "published": -58.25,
+   "ours": -59.75,
+   "truncated": true
+  },
+  {
+   "layer": 5,
+   "neuron": 8271,
+   "side": "negatives",
+   "token": "berg",
+   "our_last_token": "berg",
+   "published": -57.75,
+   "ours": -63.5,
+   "truncated": true
+  },
+  {
+   "layer": 10,
+   "neuron": 10958,
+   "side": "positives",
+   "token": "od",
+   "our_last_token": "od",
+   "published": 5.71875,
+   "ours": 5.125,
+   "truncated": true
+  },
+  {
+   "layer": 10,
+   "neuron": 10958,
+   "side": "positives",
+   "token": "ester",
+   "our_last_token": "ester",
+   "published": 4.375,
+   "ours": 4.375,
+   "truncated": true
+  },
+  {
+   "layer": 10,
+   "neuron": 10958,
+   "side": "positives",
+   "token": " Ball",
+   "our_last_token": "ĠBall",
+   "published": 4.28125,
+   "ours": 3.953125,
+   "truncated": true
+  },
+  {
+   "layer": 10,
+   "neuron": 10958,
+   "side": "positives",
+   "token": "ент",
+   "our_last_token": "ÐµÐ½ÑĤ",
+   "published": 4.1875,
+   "ours": 3.25,
+   "truncated": true
+  },
+  {
+   "layer": 10,
+   "neuron": 10958,
+   "side": "positives",
+   "token": " служ",
+   "our_last_token": "ĠÑģÐ»ÑĥÐ¶",
+   "published": 4.09375,
+   "ours": 3.328125,
+   "truncated": true
+  },
+  {
+   "layer": 10,
+   "neuron": 10958,
+   "side": "positives",
+   "token": " Ball",
+   "our_last_token": "ĠBall",
+   "published": 3.984375,
+   "ours": 3.75,
+   "truncated": true
+  },
+  {
+   "layer": 10,
+   "neuron": 10958,
+   "side": "negatives",
+   "token": " cat",
+   "our_last_token": "Ġcat",
+   "published": -50.25,
+   "ours": -52.75,
+   "truncated": true
+  },
+  {
+   "layer": 10,
+   "neuron": 10958,
+   "side": "negatives",
+   "token": " cat",
+   "our_last_token": "Ġcat",
+   "published": -48.25,
+   "ours": -54.0,
+   "truncated": true
+  },
+  {
+   "layer": 10,
+   "neuron": 10958,
+   "side": "negatives",
+   "token": " cat",
+   "our_last_token": "Ġcat",
+   "published": -48.25,
+   "ours": -50.25,
+   "truncated": false
+  },
+  {
+   "layer": 10,
+   "neuron": 10958,
+   "side": "negatives",
+   "token": " cat",
+   "our_last_token": "Ġcat",
+   "published": -46.75,
+   "ours": -5.0625,
+   "truncated": true
+  },
+  {
+   "layer": 10,
+   "neuron": 10958,
+   "side": "negatives",
+   "token": " cat",
+   "our_last_token": "Ġcat",
+   "published": -46.25,
+   "ours": -51.0,
+   "truncated": true
+  },
+  {
+   "layer": 10,
+   "neuron": 10958,
+   "side": "negatives",
+   "token": " cat",
+   "our_last_token": "Ġcat",
+   "published": -45.5,
+   "ours": -54.0,
+   "truncated": true
+  },
+  {
+   "layer": 12,
+   "neuron": 8234,
+   "side": "positives",
+   "token": "rolley",
+   "our_last_token": "rolley",
+   "published": 30.375,
+   "ours": 14.3125,
+   "truncated": true
+  },
+  {
+   "layer": 12,
+   "neuron": 8234,
+   "side": "positives",
+   "token": "rolley",
+   "our_last_token": "rolley",
+   "published": 29.875,
+   "ours": 25.125,
+   "truncated": true
+  },
+  {
+   "layer": 12,
+   "neuron": 8234,
+   "side": "positives",
+   "token": "rolley",
+   "our_last_token": "rolley",
+   "published": 29.75,
+   "ours": 33.0,
+   "truncated": true
+  },
+  {
+   "layer": 12,
+   "neuron": 8234,
+   "side": "positives",
+   "token": "rolley",
+   "our_last_token": "rolley",
+   "published": 29.625,
+   "ours": 28.875,
+   "truncated": true
+  },
+  {
+   "layer": 12,
+   "neuron": 8234,
+   "side": "positives",
+   "token": "rolley",
+   "our_last_token": "rolley",
+   "published": 29.375,
+   "ours": 29.375,
+   "truncated": false
+  },
+  {
+   "layer": 12,
+   "neuron": 8234,
+   "side": "positives",
+   "token": "rolley",
+   "our_last_token": "rolley",
+   "published": 29.25,
+   "ours": 35.75,
+   "truncated": true
+  },
+  {
+   "layer": 12,
+   "neuron": 8234,
+   "side": "negatives",
+   "token": " things",
+   "our_last_token": "Ġthings",
+   "published": -5.75,
+   "ours": -6.875,
+   "truncated": true
+  },
+  {
+   "layer": 12,
+   "neuron": 8234,
+   "side": "negatives",
+   "token": "aque",
+   "our_last_token": "aque",
+   "published": -4.1875,
+   "ours": -4.65625,
+   "truncated": true
+  },
+  {
+   "layer": 12,
+   "neuron": 8234,
+   "side": "negatives",
+   "token": "eshire",
+   "our_last_token": "eshire",
+   "published": -4.0,
+   "ours": -2.828125,
+   "truncated": true
+  },
+  {
+   "layer": 12,
+   "neuron": 8234,
+   "side": "negatives",
+   "token": " monkey",
+   "our_last_token": "Ġmonkey",
+   "published": -3.703125,
+   "ours": -4.125,
+   "truncated": true
+  },
+  {
+   "layer": 12,
+   "neuron": 8234,
+   "side": "negatives",
+   "token": "8",
+   "our_last_token": "8",
+   "published": -3.640625,
+   "ours": -4.0,
+   "truncated": true
+  },
+  {
+   "layer": 12,
+   "neuron": 8234,
+   "side": "negatives",
+   "token": "eshire",
+   "our_last_token": "eshire",
+   "published": -3.625,
+   "ours": -2.140625,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 14049,
+   "side": "positives",
+   "token": "R",
+   "our_last_token": "R",
+   "published": 0.255859375,
+   "ours": 0.255859375,
+   "truncated": false
+  },
+  {
+   "layer": 0,
+   "neuron": 14049,
+   "side": "positives",
+   "token": " modo",
+   "our_last_token": "Ġmodo",
+   "published": 0.2421875,
+   "ours": 0.25,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 14049,
+   "side": "positives",
+   "token": " mean",
+   "our_last_token": "Ġmean",
+   "published": 0.240234375,
+   "ours": 0.240234375,
+   "truncated": false
+  },
+  {
+   "layer": 0,
+   "neuron": 14049,
+   "side": "positives",
+   "token": " means",
+   "our_last_token": "Ġmeans",
+   "published": 0.236328125,
+   "ours": 0.236328125,
+   "truncated": false
+  },
+  {
+   "layer": 0,
+   "neuron": 14049,
+   "side": "positives",
+   "token": " modo",
+   "our_last_token": "Ġmodo",
+   "published": 0.236328125,
+   "ours": 0.248046875,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 14049,
+   "side": "positives",
+   "token": " starting",
+   "our_last_token": "Ġstarting",
+   "published": 0.23046875,
+   "ours": 0.23046875,
+   "truncated": false
+  },
+  {
+   "layer": 0,
+   "neuron": 14049,
+   "side": "negatives",
+   "token": " Tim",
+   "our_last_token": "ĠTim",
+   "published": -3.171875,
+   "ours": -3.171875,
+   "truncated": false
+  },
+  {
+   "layer": 0,
+   "neuron": 14049,
+   "side": "negatives",
+   "token": " Tim",
+   "our_last_token": "ĠTim",
+   "published": -2.890625,
+   "ours": -3.1875,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 14049,
+   "side": "negatives",
+   "token": " Tim",
+   "our_last_token": "ĠTim",
+   "published": -2.859375,
+   "ours": -2.90625,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 14049,
+   "side": "negatives",
+   "token": " Tim",
+   "our_last_token": "ĠTim",
+   "published": -2.84375,
+   "ours": -3.109375,
+   "truncated": false
+  },
+  {
+   "layer": 0,
+   "neuron": 14049,
+   "side": "negatives",
+   "token": " Tim",
+   "our_last_token": "ĠTim",
+   "published": -2.84375,
+   "ours": -3.0,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 14049,
+   "side": "negatives",
+   "token": " Tim",
+   "our_last_token": "ĠTim",
+   "published": -2.796875,
+   "ours": -2.90625,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 7841,
+   "side": "positives",
+   "token": "征",
+   "our_last_token": "ģ",
+   "published": 0.216796875,
+   "ours": 0.216796875,
+   "truncated": false
+  },
+  {
+   "layer": 0,
+   "neuron": 7841,
+   "side": "positives",
+   "token": "梁",
+   "our_last_token": "ģ",
+   "published": 0.212890625,
+   "ours": 0.2119140625,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 7841,
+   "side": "positives",
+   "token": "灯",
+   "our_last_token": "¯",
+   "published": 0.2119140625,
+   "ours": 0.2197265625,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 7841,
+   "side": "positives",
+   "token": "梁",
+   "our_last_token": "ģ",
+   "published": 0.2099609375,
+   "ours": 0.22265625,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 7841,
+   "side": "positives",
+   "token": "灯",
+   "our_last_token": "¯",
+   "published": 0.2021484375,
+   "ours": 0.201171875,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 7841,
+   "side": "positives",
+   "token": "息",
+   "our_last_token": "¯",
+   "published": 0.1982421875,
+   "ours": 0.2021484375,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 7841,
+   "side": "negatives",
+   "token": "uk",
+   "our_last_token": "uk",
+   "published": -9.0,
+   "ours": -9.0,
+   "truncated": false
+  },
+  {
+   "layer": 0,
+   "neuron": 7841,
+   "side": "negatives",
+   "token": "uk",
+   "our_last_token": "uk",
+   "published": -9.0,
+   "ours": -9.0,
+   "truncated": false
+  },
+  {
+   "layer": 0,
+   "neuron": 7841,
+   "side": "negatives",
+   "token": "uk",
+   "our_last_token": "uk",
+   "published": -9.0,
+   "ours": -9.5,
+   "truncated": false
+  },
+  {
+   "layer": 0,
+   "neuron": 7841,
+   "side": "negatives",
+   "token": "uk",
+   "our_last_token": "uk",
+   "published": -9.0,
+   "ours": -9.0,
+   "truncated": false
+  },
+  {
+   "layer": 0,
+   "neuron": 7841,
+   "side": "negatives",
+   "token": "uk",
+   "our_last_token": "uk",
+   "published": -8.5625,
+   "ours": -9.0,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 7841,
+   "side": "negatives",
+   "token": "uk",
+   "our_last_token": "uk",
+   "published": -8.5625,
+   "ours": -9.0625,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 2828,
+   "side": "positives",
+   "token": "us",
+   "our_last_token": "us",
+   "published": 0.765625,
+   "ours": 0.7890625,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 2828,
+   "side": "positives",
+   "token": "lus",
+   "our_last_token": "lus",
+   "published": 0.7578125,
+   "ours": 0.74609375,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 2828,
+   "side": "positives",
+   "token": "u",
+   "our_last_token": "u",
+   "published": 0.7578125,
+   "ours": 0.73828125,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 2828,
+   "side": "positives",
+   "token": "ue",
+   "our_last_token": "ue",
+   "published": 0.75390625,
+   "ours": 0.75,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 2828,
+   "side": "positives",
+   "token": "US",
+   "our_last_token": "US",
+   "published": 0.75390625,
+   "ours": 0.7578125,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 2828,
+   "side": "positives",
+   "token": "us",
+   "our_last_token": "us",
+   "published": 0.74609375,
+   "ours": 0.76953125,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 2828,
+   "side": "negatives",
+   "token": " tu",
+   "our_last_token": "Ġtu",
+   "published": -16.75,
+   "ours": -17.625,
+   "truncated": false
+  },
+  {
+   "layer": 1,
+   "neuron": 2828,
+   "side": "negatives",
+   "token": " tu",
+   "our_last_token": "Ġtu",
+   "published": -15.8125,
+   "ours": -15.875,
+   "truncated": false
+  },
+  {
+   "layer": 1,
+   "neuron": 2828,
+   "side": "negatives",
+   "token": "u",
+   "our_last_token": "u",
+   "published": -15.25,
+   "ours": -15.25,
+   "truncated": false
+  },
+  {
+   "layer": 1,
+   "neuron": 2828,
+   "side": "negatives",
+   "token": "us",
+   "our_last_token": "us",
+   "published": -15.0625,
+   "ours": -16.375,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 2828,
+   "side": "negatives",
+   "token": " tu",
+   "our_last_token": "Ġtu",
+   "published": -15.0,
+   "ours": -14.9375,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 2828,
+   "side": "negatives",
+   "token": "TU",
+   "our_last_token": "TU",
+   "published": -14.8125,
+   "ours": -14.6875,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 12742,
+   "side": "positives",
+   "token": "u",
+   "our_last_token": "u",
+   "published": 13.8125,
+   "ours": 13.5,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 12742,
+   "side": "positives",
+   "token": "u",
+   "our_last_token": "u",
+   "published": 13.6875,
+   "ours": 13.1875,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 12742,
+   "side": "positives",
+   "token": "u",
+   "our_last_token": "u",
+   "published": 12.6875,
+   "ours": 12.6875,
+   "truncated": false
+  },
+  {
+   "layer": 1,
+   "neuron": 12742,
+   "side": "positives",
+   "token": "u",
+   "our_last_token": "u",
+   "published": 12.375,
+   "ours": 11.4375,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 12742,
+   "side": "positives",
+   "token": "U",
+   "our_last_token": "U",
+   "published": 12.25,
+   "ours": 12.125,
+   "truncated": false
+  },
+  {
+   "layer": 1,
+   "neuron": 12742,
+   "side": "positives",
+   "token": "u",
+   "our_last_token": "u",
+   "published": 12.1875,
+   "ours": 11.875,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 12742,
+   "side": "negatives",
+   "token": "ую",
+   "our_last_token": "ÑĥÑİ",
+   "published": -1.0546875,
+   "ours": -1.1328125,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 12742,
+   "side": "negatives",
+   "token": "ou",
+   "our_last_token": "ou",
+   "published": -0.953125,
+   "ours": -0.90234375,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 12742,
+   "side": "negatives",
+   "token": "ou",
+   "our_last_token": "ou",
+   "published": -0.92578125,
+   "ours": -1.0859375,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 12742,
+   "side": "negatives",
+   "token": "IM",
+   "our_last_token": "IM",
+   "published": -0.8828125,
+   "ours": -0.8828125,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 12742,
+   "side": "negatives",
+   "token": "ik",
+   "our_last_token": "ik",
+   "published": -0.8671875,
+   "ours": -0.87890625,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 12742,
+   "side": "negatives",
+   "token": "ay",
+   "our_last_token": "ay",
+   "published": -0.86328125,
+   "ours": -0.80859375,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 3845,
+   "side": "positives",
+   "token": "bre",
+   "our_last_token": "bre",
+   "published": 44.75,
+   "ours": 46.0,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 3845,
+   "side": "positives",
+   "token": "bre",
+   "our_last_token": "bre",
+   "published": 40.0,
+   "ours": 39.25,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 3845,
+   "side": "positives",
+   "token": "bre",
+   "our_last_token": "bre",
+   "published": 39.25,
+   "ours": 42.5,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 3845,
+   "side": "positives",
+   "token": "bre",
+   "our_last_token": "bre",
+   "published": 39.0,
+   "ours": 40.25,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 3845,
+   "side": "positives",
+   "token": "bre",
+   "our_last_token": "bre",
+   "published": 38.5,
+   "ours": 38.75,
+   "truncated": false
+  },
+  {
+   "layer": 3,
+   "neuron": 3845,
+   "side": "positives",
+   "token": "bre",
+   "our_last_token": "bre",
+   "published": 38.5,
+   "ours": 42.75,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 3845,
+   "side": "negatives",
+   "token": "land",
+   "our_last_token": "land",
+   "published": -5.4375,
+   "ours": -5.21875,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 3845,
+   "side": "negatives",
+   "token": "lands",
+   "our_last_token": "lands",
+   "published": -4.65625,
+   "ours": -4.375,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 3845,
+   "side": "negatives",
+   "token": "lands",
+   "our_last_token": "lands",
+   "published": -4.53125,
+   "ours": -4.4375,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 3845,
+   "side": "negatives",
+   "token": "lands",
+   "our_last_token": "lands",
+   "published": -4.125,
+   "ours": -4.875,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 3845,
+   "side": "negatives",
+   "token": "and",
+   "our_last_token": "and",
+   "published": -3.546875,
+   "ours": -2.65625,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 3845,
+   "side": "negatives",
+   "token": "and",
+   "our_last_token": "and",
+   "published": -3.46875,
+   "ours": -2.34375,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 15634,
+   "side": "positives",
+   "token": " linux",
+   "our_last_token": "Ġlinux",
+   "published": 2.671875,
+   "ours": 2.671875,
+   "truncated": false
+  },
+  {
+   "layer": 2,
+   "neuron": 15634,
+   "side": "positives",
+   "token": "Linux",
+   "our_last_token": "Linux",
+   "published": 1.8671875,
+   "ours": 1.8046875,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 15634,
+   "side": "positives",
+   "token": "inux",
+   "our_last_token": "inux",
+   "published": 1.3671875,
+   "ours": 1.4453125,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 15634,
+   "side": "positives",
+   "token": "<Windows",
+   "our_last_token": "Windows",
+   "published": 1.2734375,
+   "ours": 1.2734375,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 15634,
+   "side": "positives",
+   "token": "<Windows",
+   "our_last_token": "Windows",
+   "published": 1.125,
+   "ours": 1.265625,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 15634,
+   "side": "positives",
+   "token": "<Windows",
+   "our_last_token": "Windows",
+   "published": 1.0625,
+   "ours": 1.375,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 15634,
+   "side": "negatives",
+   "token": "unt",
+   "our_last_token": "unt",
+   "published": -57.0,
+   "ours": -55.5,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 15634,
+   "side": "negatives",
+   "token": "Question",
+   "our_last_token": "Question",
+   "published": -45.5,
+   "ours": -45.5,
+   "truncated": false
+  },
+  {
+   "layer": 2,
+   "neuron": 15634,
+   "side": "negatives",
+   "token": "Question",
+   "our_last_token": "Question",
+   "published": -45.5,
+   "ours": -45.5,
+   "truncated": false
+  },
+  {
+   "layer": 2,
+   "neuron": 15634,
+   "side": "negatives",
+   "token": "Question",
+   "our_last_token": "Question",
+   "published": -45.5,
+   "ours": -45.5,
+   "truncated": false
+  },
+  {
+   "layer": 2,
+   "neuron": 15634,
+   "side": "negatives",
+   "token": "Question",
+   "our_last_token": "Question",
+   "published": -45.5,
+   "ours": -45.5,
+   "truncated": false
+  },
+  {
+   "layer": 2,
+   "neuron": 15634,
+   "side": "negatives",
+   "token": "Question",
+   "our_last_token": "Question",
+   "published": -45.5,
+   "ours": -45.5,
+   "truncated": false
+  },
+  {
+   "layer": 3,
+   "neuron": 18177,
+   "side": "positives",
+   "token": "aw",
+   "our_last_token": "aw",
+   "published": 49.0,
+   "ours": 49.0,
+   "truncated": false
+  },
+  {
+   "layer": 3,
+   "neuron": 18177,
+   "side": "positives",
+   "token": "aw",
+   "our_last_token": "aw",
+   "published": 49.0,
+   "ours": 49.0,
+   "truncated": false
+  },
+  {
+   "layer": 3,
+   "neuron": 18177,
+   "side": "positives",
+   "token": "aw",
+   "our_last_token": "aw",
+   "published": 49.0,
+   "ours": 49.0,
+   "truncated": false
+  },
+  {
+   "layer": 3,
+   "neuron": 18177,
+   "side": "positives",
+   "token": "aw",
+   "our_last_token": "aw",
+   "published": 49.0,
+   "ours": 49.0,
+   "truncated": false
+  },
+  {
+   "layer": 3,
+   "neuron": 18177,
+   "side": "positives",
+   "token": "aw",
+   "our_last_token": "aw",
+   "published": 47.25,
+   "ours": 48.0,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 18177,
+   "side": "positives",
+   "token": "aw",
+   "our_last_token": "aw",
+   "published": 44.75,
+   "ours": 44.75,
+   "truncated": false
+  },
+  {
+   "layer": 3,
+   "neuron": 18177,
+   "side": "negatives",
+   "token": "ugh",
+   "our_last_token": "ugh",
+   "published": -43.5,
+   "ours": -42.75,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 18177,
+   "side": "negatives",
+   "token": "ly",
+   "our_last_token": "ly",
+   "published": -43.0,
+   "ours": -46.0,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 18177,
+   "side": "negatives",
+   "token": "ly",
+   "our_last_token": "ly",
+   "published": -42.75,
+   "ours": -45.25,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 18177,
+   "side": "negatives",
+   "token": "ugh",
+   "our_last_token": "ugh",
+   "published": -39.75,
+   "ours": -39.5,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 18177,
+   "side": "negatives",
+   "token": "ly",
+   "our_last_token": "ly",
+   "published": -37.75,
+   "ours": -37.0,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 18177,
+   "side": "negatives",
+   "token": "bo",
+   "our_last_token": "bo",
+   "published": -37.75,
+   "ours": -37.25,
+   "truncated": true
+  },
+  {
+   "layer": 4,
+   "neuron": 22057,
+   "side": "positives",
+   "token": "tu",
+   "our_last_token": "tu",
+   "published": 74.5,
+   "ours": 67.5,
+   "truncated": true
+  },
+  {
+   "layer": 4,
+   "neuron": 22057,
+   "side": "positives",
+   "token": "uct",
+   "our_last_token": "uct",
+   "published": 70.0,
+   "ours": 69.0,
+   "truncated": true
+  },
+  {
+   "layer": 4,
+   "neuron": 22057,
+   "side": "positives",
+   "token": "uct",
+   "our_last_token": "uct",
+   "published": 69.5,
+   "ours": 72.0,
+   "truncated": true
+  },
+  {
+   "layer": 4,
+   "neuron": 22057,
+   "side": "positives",
+   "token": "tu",
+   "our_last_token": "tu",
+   "published": 69.0,
+   "ours": 63.75,
+   "truncated": true
+  },
+  {
+   "layer": 4,
+   "neuron": 22057,
+   "side": "positives",
+   "token": "uct",
+   "our_last_token": "uct",
+   "published": 68.0,
+   "ours": 68.5,
+   "truncated": true
+  },
+  {
+   "layer": 4,
+   "neuron": 22057,
+   "side": "positives",
+   "token": "tu",
+   "our_last_token": "tu",
+   "published": 67.0,
+   "ours": 66.5,
+   "truncated": true
+  },
+  {
+   "layer": 4,
+   "neuron": 22057,
+   "side": "negatives",
+   "token": "ak",
+   "our_last_token": "ak",
+   "published": -30.5,
+   "ours": -33.25,
+   "truncated": true
+  },
+  {
+   "layer": 4,
+   "neuron": 22057,
+   "side": "negatives",
+   "token": "akah",
+   "our_last_token": "akah",
+   "published": -29.375,
+   "ours": -28.5,
+   "truncated": true
+  },
+  {
+   "layer": 4,
+   "neuron": 22057,
+   "side": "negatives",
+   "token": " on",
+   "our_last_token": "Ġon",
+   "published": -26.625,
+   "ours": -25.875,
+   "truncated": true
+  },
+  {
+   "layer": 4,
+   "neuron": 22057,
+   "side": "negatives",
+   "token": "se",
+   "our_last_token": "se",
+   "published": -26.5,
+   "ours": -25.625,
+   "truncated": true
+  },
+  {
+   "layer": 4,
+   "neuron": 22057,
+   "side": "negatives",
+   "token": " on",
+   "our_last_token": "Ġon",
+   "published": -25.875,
+   "ours": -26.125,
+   "truncated": true
+  },
+  {
+   "layer": 4,
+   "neuron": 22057,
+   "side": "negatives",
+   "token": " on",
+   "our_last_token": "Ġon",
+   "published": -25.625,
+   "ours": -24.75,
+   "truncated": true
+  },
+  {
+   "layer": 5,
+   "neuron": 14273,
+   "side": "positives",
+   "token": "aba",
+   "our_last_token": "aba",
+   "published": 13.0625,
+   "ours": 12.6875,
+   "truncated": true
+  },
+  {
+   "layer": 5,
+   "neuron": 14273,
+   "side": "positives",
+   "token": "ao",
+   "our_last_token": "ao",
+   "published": 10.5625,
+   "ours": 10.5625,
+   "truncated": true
+  },
+  {
+   "layer": 5,
+   "neuron": 14273,
+   "side": "positives",
+   "token": "ong",
+   "our_last_token": "ong",
+   "published": 10.375,
+   "ours": 10.6875,
+   "truncated": true
+  },
+  {
+   "layer": 5,
+   "neuron": 14273,
+   "side": "positives",
+   "token": "ao",
+   "our_last_token": "ao",
+   "published": 10.375,
+   "ours": 9.75,
+   "truncated": true
+  },
+  {
+   "layer": 5,
+   "neuron": 14273,
+   "side": "positives",
+   "token": "ara",
+   "our_last_token": "ara",
+   "published": 9.875,
+   "ours": 9.75,
+   "truncated": true
+  },
+  {
+   "layer": 5,
+   "neuron": 14273,
+   "side": "positives",
+   "token": "ara",
+   "our_last_token": "ara",
+   "published": 9.875,
+   "ours": 9.5,
+   "truncated": true
+  },
+  {
+   "layer": 5,
+   "neuron": 14273,
+   "side": "negatives",
+   "token": "é",
+   "our_last_token": "Ã©",
+   "published": -42.25,
+   "ours": -42.75,
+   "truncated": true
+  },
+  {
+   "layer": 5,
+   "neuron": 14273,
+   "side": "negatives",
+   "token": "é",
+   "our_last_token": "Ã©",
+   "published": -41.0,
+   "ours": -42.0,
+   "truncated": true
+  },
+  {
+   "layer": 5,
+   "neuron": 14273,
+   "side": "negatives",
+   "token": "ore",
+   "our_last_token": "ore",
+   "published": -40.75,
+   "ours": -40.0,
+   "truncated": false
+  },
+  {
+   "layer": 5,
+   "neuron": 14273,
+   "side": "negatives",
+   "token": "é",
+   "our_last_token": "Ã©",
+   "published": -39.75,
+   "ours": -41.25,
+   "truncated": true
+  },
+  {
+   "layer": 5,
+   "neuron": 14273,
+   "side": "negatives",
+   "token": "oko",
+   "our_last_token": "oko",
+   "published": -39.0,
+   "ours": -39.75,
+   "truncated": true
+  },
+  {
+   "layer": 5,
+   "neuron": 14273,
+   "side": "negatives",
+   "token": "é",
+   "our_last_token": "Ã©",
+   "published": -38.75,
+   "ours": -41.0,
+   "truncated": true
+  },
+  {
+   "layer": 7,
+   "neuron": 20025,
+   "side": "positives",
+   "token": "uld",
+   "our_last_token": "uld",
+   "published": 78.0,
+   "ours": 69.5,
+   "truncated": true
+  },
+  {
+   "layer": 7,
+   "neuron": 20025,
+   "side": "positives",
+   "token": "ot",
+   "our_last_token": "ot",
+   "published": 72.5,
+   "ours": 57.75,
+   "truncated": true
+  },
+  {
+   "layer": 7,
+   "neuron": 20025,
+   "side": "positives",
+   "token": "ot",
+   "our_last_token": "ot",
+   "published": 72.0,
+   "ours": 63.0,
+   "truncated": true
+  },
+  {
+   "layer": 7,
+   "neuron": 20025,
+   "side": "positives",
+   "token": "ot",
+   "our_last_token": "ot",
+   "published": 69.5,
+   "ours": 69.0,
+   "truncated": true
+  },
+  {
+   "layer": 7,
+   "neuron": 20025,
+   "side": "positives",
+   "token": "tu",
+   "our_last_token": "tu",
+   "published": 68.5,
+   "ours": 66.0,
+   "truncated": true
+  },
+  {
+   "layer": 7,
+   "neuron": 20025,
+   "side": "positives",
+   "token": "ot",
+   "our_last_token": "ot",
+   "published": 67.5,
+   "ours": 80.0,
+   "truncated": true
+  },
+  {
+   "layer": 7,
+   "neuron": 20025,
+   "side": "negatives",
+   "token": "a",
+   "our_last_token": "a",
+   "published": -17.875,
+   "ours": -14.875,
+   "truncated": true
+  },
+  {
+   "layer": 7,
+   "neuron": 20025,
+   "side": "negatives",
+   "token": "a",
+   "our_last_token": "a",
+   "published": -16.875,
+   "ours": -15.3125,
+   "truncated": true
+  },
+  {
+   "layer": 7,
+   "neuron": 20025,
+   "side": "negatives",
+   "token": "a",
+   "our_last_token": "a",
+   "published": -15.75,
+   "ours": -16.0,
+   "truncated": true
+  },
+  {
+   "layer": 7,
+   "neuron": 20025,
+   "side": "negatives",
+   "token": "a",
+   "our_last_token": "a",
+   "published": -15.125,
+   "ours": -15.4375,
+   "truncated": true
+  },
+  {
+   "layer": 7,
+   "neuron": 20025,
+   "side": "negatives",
+   "token": "ush",
+   "our_last_token": "ush",
+   "published": -13.0,
+   "ours": -11.0,
+   "truncated": true
+  },
+  {
+   "layer": 7,
+   "neuron": 20025,
+   "side": "negatives",
+   "token": "ush",
+   "our_last_token": "ush",
+   "published": -12.625,
+   "ours": -11.125,
+   "truncated": true
+  },
+  {
+   "layer": 8,
+   "neuron": 10262,
+   "side": "positives",
+   "token": "ali",
+   "our_last_token": "ali",
+   "published": 37.25,
+   "ours": 34.75,
+   "truncated": true
+  },
+  {
+   "layer": 8,
+   "neuron": 10262,
+   "side": "positives",
+   "token": " Mali",
+   "our_last_token": "ĠMali",
+   "published": 36.5,
+   "ours": 36.75,
+   "truncated": true
+  },
+  {
+   "layer": 8,
+   "neuron": 10262,
+   "side": "positives",
+   "token": "ali",
+   "our_last_token": "ali",
+   "published": 36.25,
+   "ours": 34.5,
+   "truncated": true
+  },
+  {
+   "layer": 8,
+   "neuron": 10262,
+   "side": "positives",
+   "token": " Mali",
+   "our_last_token": "ĠMali",
+   "published": 36.25,
+   "ours": 38.25,
+   "truncated": true
+  },
+  {
+   "layer": 8,
+   "neuron": 10262,
+   "side": "positives",
+   "token": " Mali",
+   "our_last_token": "ĠMali",
+   "published": 35.75,
+   "ours": 34.0,
+   "truncated": true
+  },
+  {
+   "layer": 8,
+   "neuron": 10262,
+   "side": "positives",
+   "token": " Mali",
+   "our_last_token": "ĠMali",
+   "published": 35.5,
+   "ours": 36.75,
+   "truncated": true
+  },
+  {
+   "layer": 8,
+   "neuron": 10262,
+   "side": "negatives",
+   "token": "at",
+   "our_last_token": "at",
+   "published": -6.96875,
+   "ours": -5.53125,
+   "truncated": true
+  },
+  {
+   "layer": 8,
+   "neuron": 10262,
+   "side": "negatives",
+   "token": "at",
+   "our_last_token": "at",
+   "published": -5.96875,
+   "ours": -6.28125,
+   "truncated": true
+  },
+  {
+   "layer": 8,
+   "neuron": 10262,
+   "side": "negatives",
+   "token": "at",
+   "our_last_token": "at",
+   "published": -5.5625,
+   "ours": -6.5625,
+   "truncated": true
+  },
+  {
+   "layer": 8,
+   "neuron": 10262,
+   "side": "negatives",
+   "token": "at",
+   "our_last_token": "at",
+   "published": -5.40625,
+   "ours": -4.75,
+   "truncated": true
+  },
+  {
+   "layer": 8,
+   "neuron": 10262,
+   "side": "negatives",
+   "token": "at",
+   "our_last_token": "at",
+   "published": -5.28125,
+   "ours": -6.65625,
+   "truncated": true
+  },
+  {
+   "layer": 8,
+   "neuron": 10262,
+   "side": "negatives",
+   "token": "at",
+   "our_last_token": "at",
+   "published": -4.96875,
+   "ours": -5.78125,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 6706,
+   "side": "positives",
+   "token": "드",
+   "our_last_token": "ëĵľ",
+   "published": 0.83984375,
+   "ours": 0.84375,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 6706,
+   "side": "positives",
+   "token": "드",
+   "our_last_token": "ëĵľ",
+   "published": 0.8046875,
+   "ours": 0.71484375,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 6706,
+   "side": "positives",
+   "token": "드",
+   "our_last_token": "ëĵľ",
+   "published": 0.79296875,
+   "ours": 0.81640625,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 6706,
+   "side": "positives",
+   "token": "landing",
+   "our_last_token": "landing",
+   "published": 0.76171875,
+   "ours": 0.75,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 6706,
+   "side": "positives",
+   "token": "landing",
+   "our_last_token": "landing",
+   "published": 0.7578125,
+   "ours": 0.7578125,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 6706,
+   "side": "positives",
+   "token": "ing",
+   "our_last_token": "ing",
+   "published": 0.75390625,
+   "ours": 0.7734375,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 6706,
+   "side": "negatives",
+   "token": " Brand",
+   "our_last_token": "ĠBrand",
+   "published": -33.5,
+   "ours": -33.5,
+   "truncated": false
+  },
+  {
+   "layer": 1,
+   "neuron": 6706,
+   "side": "negatives",
+   "token": " Brand",
+   "our_last_token": "ĠBrand",
+   "published": -33.5,
+   "ours": -33.5,
+   "truncated": false
+  },
+  {
+   "layer": 1,
+   "neuron": 6706,
+   "side": "negatives",
+   "token": " brand",
+   "our_last_token": "Ġbrand",
+   "published": -32.75,
+   "ours": -32.75,
+   "truncated": false
+  },
+  {
+   "layer": 1,
+   "neuron": 6706,
+   "side": "negatives",
+   "token": " brand",
+   "our_last_token": "Ġbrand",
+   "published": -32.75,
+   "ours": -32.75,
+   "truncated": false
+  },
+  {
+   "layer": 1,
+   "neuron": 6706,
+   "side": "negatives",
+   "token": "anding",
+   "our_last_token": "anding",
+   "published": -32.75,
+   "ours": -32.5,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 6706,
+   "side": "negatives",
+   "token": " brand",
+   "our_last_token": "Ġbrand",
+   "published": -32.75,
+   "ours": -32.75,
+   "truncated": false
+  },
+  {
+   "layer": 0,
+   "neuron": 2310,
+   "side": "positives",
+   "token": "br",
+   "our_last_token": "br",
+   "published": 6.65625,
+   "ours": 6.65625,
+   "truncated": false
+  },
+  {
+   "layer": 0,
+   "neuron": 2310,
+   "side": "positives",
+   "token": "br",
+   "our_last_token": "br",
+   "published": 6.65625,
+   "ours": 6.65625,
+   "truncated": false
+  },
+  {
+   "layer": 0,
+   "neuron": 2310,
+   "side": "positives",
+   "token": "br",
+   "our_last_token": "br",
+   "published": 6.65625,
+   "ours": 6.65625,
+   "truncated": false
+  },
+  {
+   "layer": 0,
+   "neuron": 2310,
+   "side": "positives",
+   "token": "br",
+   "our_last_token": "br",
+   "published": 6.65625,
+   "ours": 6.65625,
+   "truncated": false
+  },
+  {
+   "layer": 0,
+   "neuron": 2310,
+   "side": "positives",
+   "token": "br",
+   "our_last_token": "br",
+   "published": 6.65625,
+   "ours": 6.65625,
+   "truncated": false
+  },
+  {
+   "layer": 0,
+   "neuron": 2310,
+   "side": "positives",
+   "token": "br",
+   "our_last_token": "br",
+   "published": 6.65625,
+   "ours": 6.65625,
+   "truncated": false
+  },
+  {
+   "layer": 0,
+   "neuron": 2310,
+   "side": "negatives",
+   "token": "<|im_end|>",
+   "our_last_token": "<|im_end|>",
+   "published": -0.1845703125,
+   "ours": -0.1533203125,
+   "truncated": false
+  },
+  {
+   "layer": 0,
+   "neuron": 2310,
+   "side": "negatives",
+   "token": "اء",
+   "our_last_token": "Ø§Ø¡",
+   "published": -0.17578125,
+   "ours": -0.1767578125,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 2310,
+   "side": "negatives",
+   "token": "ǐ",
+   "our_last_token": "ÇĲ",
+   "published": -0.171875,
+   "ours": -0.1669921875,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 2310,
+   "side": "negatives",
+   "token": "ǐ",
+   "our_last_token": "ÇĲ",
+   "published": -0.1591796875,
+   "ours": -0.154296875,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 2310,
+   "side": "negatives",
+   "token": "рис",
+   "our_last_token": "ÑĢÐ¸Ñģ",
+   "published": -0.15625,
+   "ours": -0.1533203125,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 2310,
+   "side": "negatives",
+   "token": "اء",
+   "our_last_token": "Ø§Ø¡",
+   "published": -0.154296875,
+   "ours": -0.169921875,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 15035,
+   "side": "positives",
+   "token": "and",
+   "our_last_token": "and",
+   "published": 7.59375,
+   "ours": 7.59375,
+   "truncated": false
+  },
+  {
+   "layer": 0,
+   "neuron": 15035,
+   "side": "positives",
+   "token": "and",
+   "our_last_token": "and",
+   "published": 7.34375,
+   "ours": 7.34375,
+   "truncated": false
+  },
+  {
+   "layer": 0,
+   "neuron": 15035,
+   "side": "positives",
+   "token": "and",
+   "our_last_token": "and",
+   "published": 7.0,
+   "ours": 7.0,
+   "truncated": false
+  },
+  {
+   "layer": 0,
+   "neuron": 15035,
+   "side": "positives",
+   "token": "and",
+   "our_last_token": "and",
+   "published": 6.78125,
+   "ours": 6.78125,
+   "truncated": false
+  },
+  {
+   "layer": 0,
+   "neuron": 15035,
+   "side": "positives",
+   "token": "rand",
+   "our_last_token": "rand",
+   "published": 6.75,
+   "ours": 6.53125,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 15035,
+   "side": "positives",
+   "token": "and",
+   "our_last_token": "and",
+   "published": 6.75,
+   "ours": 6.75,
+   "truncated": false
+  },
+  {
+   "layer": 0,
+   "neuron": 15035,
+   "side": "negatives",
+   "token": " Broncos",
+   "our_last_token": "ĠBroncos",
+   "published": -0.2197265625,
+   "ours": -0.201171875,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 15035,
+   "side": "negatives",
+   "token": "iropr",
+   "our_last_token": "iropr",
+   "published": -0.2109375,
+   "ours": -0.1943359375,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 15035,
+   "side": "negatives",
+   "token": "iropr",
+   "our_last_token": "iropr",
+   "published": -0.20703125,
+   "ours": -0.2060546875,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 15035,
+   "side": "negatives",
+   "token": "رمز",
+   "our_last_token": "Ø±ÙħØ²",
+   "published": -0.205078125,
+   "ours": -0.173828125,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 15035,
+   "side": "negatives",
+   "token": "iropr",
+   "our_last_token": "iropr",
+   "published": -0.205078125,
+   "ours": -0.21875,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 15035,
+   "side": "negatives",
+   "token": "iropr",
+   "our_last_token": "iropr",
+   "published": -0.2041015625,
+   "ours": -0.2099609375,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 11478,
+   "side": "positives",
+   "token": "br",
+   "our_last_token": "br",
+   "published": 13.875,
+   "ours": 14.25,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 11478,
+   "side": "positives",
+   "token": "-b",
+   "our_last_token": "-b",
+   "published": 12.375,
+   "ours": 10.875,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 11478,
+   "side": "positives",
+   "token": "भ",
+   "our_last_token": "Ń",
+   "published": 11.75,
+   "ours": 11.625,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 11478,
+   "side": "positives",
+   "token": "-b",
+   "our_last_token": "-b",
+   "published": 11.4375,
+   "ours": 9.625,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 11478,
+   "side": "positives",
+   "token": "ა",
+   "our_last_token": "áĥĲ",
+   "published": 11.4375,
+   "ours": 11.1875,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 11478,
+   "side": "positives",
+   "token": "-p",
+   "our_last_token": "-p",
+   "published": 11.1875,
+   "ours": 11.5,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 11478,
+   "side": "negatives",
+   "token": "MP",
+   "our_last_token": "MP",
+   "published": -4.46875,
+   "ours": -4.4375,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 11478,
+   "side": "negatives",
+   "token": "mp",
+   "our_last_token": "mp",
+   "published": -4.34375,
+   "ours": -4.25,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 11478,
+   "side": "negatives",
+   "token": "MP",
+   "our_last_token": "MP",
+   "published": -3.671875,
+   "ours": -2.96875,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 11478,
+   "side": "negatives",
+   "token": "mp",
+   "our_last_token": "mp",
+   "published": -3.640625,
+   "ours": -4.0625,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 11478,
+   "side": "negatives",
+   "token": "MP",
+   "our_last_token": "MP",
+   "published": -3.5625,
+   "ours": -3.125,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 11478,
+   "side": "negatives",
+   "token": "MP",
+   "our_last_token": "MP",
+   "published": -3.484375,
+   "ours": -3.5,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 6061,
+   "side": "positives",
+   "token": " Rem",
+   "our_last_token": "ĠRem",
+   "published": 35.0,
+   "ours": 34.5,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 6061,
+   "side": "positives",
+   "token": " Rem",
+   "our_last_token": "ĠRem",
+   "published": 34.0,
+   "ours": 31.375,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 6061,
+   "side": "positives",
+   "token": " Rem",
+   "our_last_token": "ĠRem",
+   "published": 33.25,
+   "ours": 30.125,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 6061,
+   "side": "positives",
+   "token": "ko",
+   "our_last_token": "ko",
+   "published": 32.5,
+   "ours": 32.75,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 6061,
+   "side": "positives",
+   "token": " Rem",
+   "our_last_token": "ĠRem",
+   "published": 32.0,
+   "ours": 29.75,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 6061,
+   "side": "positives",
+   "token": " Rem",
+   "our_last_token": "ĠRem",
+   "published": 31.625,
+   "ours": 30.25,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 6061,
+   "side": "negatives",
+   "token": "map",
+   "our_last_token": "map",
+   "published": -1.53125,
+   "ours": -1.3984375,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 6061,
+   "side": "negatives",
+   "token": "appings",
+   "our_last_token": "appings",
+   "published": -1.171875,
+   "ours": -1.3125,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 6061,
+   "side": "negatives",
+   "token": "appings",
+   "our_last_token": "appings",
+   "published": -1.0625,
+   "ours": -0.51953125,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 6061,
+   "side": "negatives",
+   "token": "emu",
+   "our_last_token": "emu",
+   "published": -0.76953125,
+   "ours": -0.78515625,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 6061,
+   "side": "negatives",
+   "token": "м",
+   "our_last_token": "Ð¼",
+   "published": -0.74609375,
+   "ours": -0.61328125,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 6061,
+   "side": "negatives",
+   "token": " Comm",
+   "our_last_token": "ĠComm",
+   "published": -0.6953125,
+   "ours": -0.158203125,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 5462,
+   "side": "positives",
+   "token": " ren",
+   "our_last_token": "Ġren",
+   "published": 36.5,
+   "ours": 34.0,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 5462,
+   "side": "positives",
+   "token": " ren",
+   "our_last_token": "Ġren",
+   "published": 36.5,
+   "ours": 34.5,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 5462,
+   "side": "positives",
+   "token": " ren",
+   "our_last_token": "Ġren",
+   "published": 36.25,
+   "ours": 33.5,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 5462,
+   "side": "positives",
+   "token": " ren",
+   "our_last_token": "Ġren",
+   "published": 36.25,
+   "ours": 35.5,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 5462,
+   "side": "positives",
+   "token": "pl",
+   "our_last_token": "pl",
+   "published": 36.0,
+   "ours": 26.875,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 5462,
+   "side": "positives",
+   "token": "pl",
+   "our_last_token": "pl",
+   "published": 35.5,
+   "ours": 37.0,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 5462,
+   "side": "negatives",
+   "token": "ang",
+   "our_last_token": "ang",
+   "published": -5.0625,
+   "ours": -5.0625,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 5462,
+   "side": "negatives",
+   "token": "NG",
+   "our_last_token": "NG",
+   "published": -1.8671875,
+   "ours": -1.4296875,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 5462,
+   "side": "negatives",
+   "token": "NG",
+   "our_last_token": "NG",
+   "published": -1.6328125,
+   "ours": -1.3671875,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 5462,
+   "side": "negatives",
+   "token": "NG",
+   "our_last_token": "NG",
+   "published": -1.5625,
+   "ours": -1.2734375,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 5462,
+   "side": "negatives",
+   "token": "NG",
+   "our_last_token": "NG",
+   "published": -1.5390625,
+   "ours": -1.3671875,
+   "truncated": false
+  },
+  {
+   "layer": 3,
+   "neuron": 5462,
+   "side": "negatives",
+   "token": "NG",
+   "our_last_token": "NG",
+   "published": -1.4453125,
+   "ours": -1.4375,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 9610,
+   "side": "positives",
+   "token": "mond",
+   "our_last_token": "mond",
+   "published": 1.5234375,
+   "ours": 1.5078125,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 9610,
+   "side": "positives",
+   "token": "mond",
+   "our_last_token": "mond",
+   "published": 1.46875,
+   "ours": 1.4296875,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 9610,
+   "side": "positives",
+   "token": "mond",
+   "our_last_token": "mond",
+   "published": 1.4609375,
+   "ours": 1.3828125,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 9610,
+   "side": "positives",
+   "token": "mond",
+   "our_last_token": "mond",
+   "published": 1.4609375,
+   "ours": 1.4921875,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 9610,
+   "side": "positives",
+   "token": "mond",
+   "our_last_token": "mond",
+   "published": 1.4609375,
+   "ours": 1.5234375,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 9610,
+   "side": "positives",
+   "token": "mond",
+   "our_last_token": "mond",
+   "published": 1.453125,
+   "ours": 1.4609375,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 9610,
+   "side": "negatives",
+   "token": "proc",
+   "our_last_token": "proc",
+   "published": -39.0,
+   "ours": -39.75,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 9610,
+   "side": "negatives",
+   "token": "proc",
+   "our_last_token": "proc",
+   "published": -37.75,
+   "ours": -38.75,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 9610,
+   "side": "negatives",
+   "token": "monds",
+   "our_last_token": "monds",
+   "published": -36.0,
+   "ours": -36.5,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 9610,
+   "side": "negatives",
+   "token": "monds",
+   "our_last_token": "monds",
+   "published": -35.25,
+   "ours": -34.0,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 9610,
+   "side": "negatives",
+   "token": "roid",
+   "our_last_token": "roid",
+   "published": -32.75,
+   "ours": -33.5,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 9610,
+   "side": "negatives",
+   "token": "od",
+   "our_last_token": "od",
+   "published": -32.5,
+   "ours": -33.25,
+   "truncated": true
+  },
+  {
+   "layer": 4,
+   "neuron": 23133,
+   "side": "positives",
+   "token": "brand",
+   "our_last_token": "brand",
+   "published": 122.0,
+   "ours": 121.5,
+   "truncated": true
+  },
+  {
+   "layer": 4,
+   "neuron": 23133,
+   "side": "positives",
+   "token": "brand",
+   "our_last_token": "brand",
+   "published": 118.0,
+   "ours": 118.0,
+   "truncated": false
+  },
+  {
+   "layer": 4,
+   "neuron": 23133,
+   "side": "positives",
+   "token": "brand",
+   "our_last_token": "brand",
+   "published": 117.5,
+   "ours": 112.5,
+   "truncated": true
+  },
+  {
+   "layer": 4,
+   "neuron": 23133,
+   "side": "positives",
+   "token": "brand",
+   "our_last_token": "brand",
+   "published": 117.5,
+   "ours": 120.5,
+   "truncated": true
+  },
+  {
+   "layer": 4,
+   "neuron": 23133,
+   "side": "positives",
+   "token": "brand",
+   "our_last_token": "brand",
+   "published": 117.5,
+   "ours": 119.0,
+   "truncated": true
+  },
+  {
+   "layer": 4,
+   "neuron": 23133,
+   "side": "positives",
+   "token": "brand",
+   "our_last_token": "brand",
+   "published": 117.0,
+   "ours": 116.0,
+   "truncated": true
+  },
+  {
+   "layer": 4,
+   "neuron": 23133,
+   "side": "negatives",
+   "token": "rand",
+   "our_last_token": "rand",
+   "published": -2.5625,
+   "ours": -2.46875,
+   "truncated": true
+  },
+  {
+   "layer": 4,
+   "neuron": 23133,
+   "side": "negatives",
+   "token": "rand",
+   "our_last_token": "rand",
+   "published": -2.546875,
+   "ours": -2.4375,
+   "truncated": true
+  },
+  {
+   "layer": 4,
+   "neuron": 23133,
+   "side": "negatives",
+   "token": "rand",
+   "our_last_token": "rand",
+   "published": -2.5,
+   "ours": -2.375,
+   "truncated": true
+  },
+  {
+   "layer": 4,
+   "neuron": 23133,
+   "side": "negatives",
+   "token": "rand",
+   "our_last_token": "rand",
+   "published": -2.5,
+   "ours": -2.46875,
+   "truncated": true
+  },
+  {
+   "layer": 4,
+   "neuron": 23133,
+   "side": "negatives",
+   "token": "rand",
+   "our_last_token": "rand",
+   "published": -2.5,
+   "ours": -2.46875,
+   "truncated": true
+  },
+  {
+   "layer": 4,
+   "neuron": 23133,
+   "side": "negatives",
+   "token": "rand",
+   "our_last_token": "rand",
+   "published": -2.421875,
+   "ours": -2.375,
+   "truncated": true
+  },
+  {
+   "layer": 5,
+   "neuron": 7255,
+   "side": "positives",
+   "token": "l",
+   "our_last_token": "l",
+   "published": 7.21875,
+   "ours": 6.90625,
+   "truncated": true
+  },
+  {
+   "layer": 5,
+   "neuron": 7255,
+   "side": "positives",
+   "token": "l",
+   "our_last_token": "l",
+   "published": 6.9375,
+   "ours": 6.0625,
+   "truncated": true
+  },
+  {
+   "layer": 5,
+   "neuron": 7255,
+   "side": "positives",
+   "token": "bl",
+   "our_last_token": "bl",
+   "published": 6.9375,
+   "ours": 6.75,
+   "truncated": true
+  },
+  {
+   "layer": 5,
+   "neuron": 7255,
+   "side": "positives",
+   "token": "l",
+   "our_last_token": "l",
+   "published": 6.65625,
+   "ours": 6.09375,
+   "truncated": true
+  },
+  {
+   "layer": 5,
+   "neuron": 7255,
+   "side": "positives",
+   "token": "l",
+   "our_last_token": "l",
+   "published": 6.5625,
+   "ours": 6.625,
+   "truncated": false
+  },
+  {
+   "layer": 5,
+   "neuron": 7255,
+   "side": "positives",
+   "token": "l",
+   "our_last_token": "l",
+   "published": 6.53125,
+   "ours": 6.1875,
+   "truncated": true
+  },
+  {
+   "layer": 5,
+   "neuron": 7255,
+   "side": "negatives",
+   "token": "�",
+   "our_last_token": "ï¿½ï¿½",
+   "published": -48.75,
+   "ours": 0.177734375,
+   "truncated": true
+  },
+  {
+   "layer": 5,
+   "neuron": 7255,
+   "side": "negatives",
+   "token": "ched",
+   "our_last_token": "ched",
+   "published": -43.5,
+   "ours": -47.75,
+   "truncated": true
+  },
+  {
+   "layer": 5,
+   "neuron": 7255,
+   "side": "negatives",
+   "token": "man",
+   "our_last_token": "man",
+   "published": -39.75,
+   "ours": -42.25,
+   "truncated": true
+  },
+  {
+   "layer": 5,
+   "neuron": 7255,
+   "side": "negatives",
+   "token": "man",
+   "our_last_token": "man",
+   "published": -39.75,
+   "ours": -38.75,
+   "truncated": true
+  },
+  {
+   "layer": 5,
+   "neuron": 7255,
+   "side": "negatives",
+   "token": "man",
+   "our_last_token": "man",
+   "published": -37.75,
+   "ours": -39.5,
+   "truncated": true
+  },
+  {
+   "layer": 5,
+   "neuron": 7255,
+   "side": "negatives",
+   "token": "man",
+   "our_last_token": "man",
+   "published": -37.5,
+   "ours": -40.0,
+   "truncated": true
+  },
+  {
+   "layer": 5,
+   "neuron": 20990,
+   "side": "positives",
+   "token": "t",
+   "our_last_token": "t",
+   "published": 54.75,
+   "ours": 53.25,
+   "truncated": true
+  },
+  {
+   "layer": 5,
+   "neuron": 20990,
+   "side": "positives",
+   "token": "t",
+   "our_last_token": "t",
+   "published": 54.0,
+   "ours": 50.5,
+   "truncated": true
+  },
+  {
+   "layer": 5,
+   "neuron": 20990,
+   "side": "positives",
+   "token": "t",
+   "our_last_token": "t",
+   "published": 53.75,
+   "ours": 50.25,
+   "truncated": true
+  },
+  {
+   "layer": 5,
+   "neuron": 20990,
+   "side": "positives",
+   "token": "t",
+   "our_last_token": "t",
+   "published": 53.5,
+   "ours": 53.0,
+   "truncated": true
+  },
+  {
+   "layer": 5,
+   "neuron": 20990,
+   "side": "positives",
+   "token": "t",
+   "our_last_token": "t",
+   "published": 53.25,
+   "ours": 51.0,
+   "truncated": true
+  },
+  {
+   "layer": 5,
+   "neuron": 20990,
+   "side": "positives",
+   "token": "t",
+   "our_last_token": "t",
+   "published": 53.25,
+   "ours": 53.0,
+   "truncated": true
+  },
+  {
+   "layer": 5,
+   "neuron": 20990,
+   "side": "negatives",
+   "token": "Art",
+   "our_last_token": "Art",
+   "published": -4.875,
+   "ours": -4.625,
+   "truncated": true
+  },
+  {
+   "layer": 5,
+   "neuron": 20990,
+   "side": "negatives",
+   "token": "Art",
+   "our_last_token": "Art",
+   "published": -4.5625,
+   "ours": -4.75,
+   "truncated": true
+  },
+  {
+   "layer": 5,
+   "neuron": 20990,
+   "side": "negatives",
+   "token": "ache",
+   "our_last_token": "ache",
+   "published": -4.15625,
+   "ours": -3.734375,
+   "truncated": true
+  },
+  {
+   "layer": 5,
+   "neuron": 20990,
+   "side": "negatives",
+   "token": "Art",
+   "our_last_token": "Art",
+   "published": -4.03125,
+   "ours": -4.5,
+   "truncated": true
+  },
+  {
+   "layer": 5,
+   "neuron": 20990,
+   "side": "negatives",
+   "token": "ache",
+   "our_last_token": "ache",
+   "published": -3.921875,
+   "ours": -4.09375,
+   "truncated": true
+  },
+  {
+   "layer": 5,
+   "neuron": 20990,
+   "side": "negatives",
+   "token": "ache",
+   "our_last_token": "ache",
+   "published": -3.6875,
+   "ours": -3.421875,
+   "truncated": true
+  },
+  {
+   "layer": 7,
+   "neuron": 10000,
+   "side": "positives",
+   "token": " white",
+   "our_last_token": "Ġwhite",
+   "published": 9.6875,
+   "ours": 10.3125,
+   "truncated": true
+  },
+  {
+   "layer": 7,
+   "neuron": 10000,
+   "side": "positives",
+   "token": " white",
+   "our_last_token": "Ġwhite",
+   "published": 9.375,
+   "ours": 9.8125,
+   "truncated": true
+  },
+  {
+   "layer": 7,
+   "neuron": 10000,
+   "side": "positives",
+   "token": " White",
+   "our_last_token": "ĠWhite",
+   "published": 8.75,
+   "ours": 10.0,
+   "truncated": true
+  },
+  {
+   "layer": 7,
+   "neuron": 10000,
+   "side": "positives",
+   "token": "thumbnail",
+   "our_last_token": "thumbnail",
+   "published": 8.4375,
+   "ours": 2.390625,
+   "truncated": true
+  },
+  {
+   "layer": 7,
+   "neuron": 10000,
+   "side": "positives",
+   "token": " Du",
+   "our_last_token": "ĠDu",
+   "published": 8.4375,
+   "ours": 8.0,
+   "truncated": true
+  },
+  {
+   "layer": 7,
+   "neuron": 10000,
+   "side": "positives",
+   "token": " Windsor",
+   "our_last_token": "ĠWindsor",
+   "published": 8.375,
+   "ours": -0.09521484375,
+   "truncated": true
+  },
+  {
+   "layer": 7,
+   "neuron": 10000,
+   "side": "negatives",
+   "token": "ese",
+   "our_last_token": "ese",
+   "published": -60.75,
+   "ours": -58.5,
+   "truncated": true
+  },
+  {
+   "layer": 7,
+   "neuron": 10000,
+   "side": "negatives",
+   "token": "ss",
+   "our_last_token": "ss",
+   "published": -57.0,
+   "ours": -54.25,
+   "truncated": true
+  },
+  {
+   "layer": 7,
+   "neuron": 10000,
+   "side": "negatives",
+   "token": "ss",
+   "our_last_token": "ss",
+   "published": -56.75,
+   "ours": -47.75,
+   "truncated": true
+  },
+  {
+   "layer": 7,
+   "neuron": 10000,
+   "side": "negatives",
+   "token": "isia",
+   "our_last_token": "isia",
+   "published": -56.75,
+   "ours": -41.25,
+   "truncated": true
+  },
+  {
+   "layer": 7,
+   "neuron": 10000,
+   "side": "negatives",
+   "token": "ue",
+   "our_last_token": "ue",
+   "published": -56.5,
+   "ours": -58.5,
+   "truncated": true
+  },
+  {
+   "layer": 7,
+   "neuron": 10000,
+   "side": "negatives",
+   "token": "ss",
+   "our_last_token": "ss",
+   "published": -55.75,
+   "ours": -54.0,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 10563,
+   "side": "positives",
+   "token": "濤",
+   "our_last_token": "¤",
+   "published": 0.13671875,
+   "ours": 0.02587890625,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 10563,
+   "side": "positives",
+   "token": "urence",
+   "our_last_token": "urence",
+   "published": 0.13671875,
+   "ours": 0.11572265625,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 10563,
+   "side": "positives",
+   "token": "濁",
+   "our_last_token": "ģ",
+   "published": 0.134765625,
+   "ours": 0.04052734375,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 10563,
+   "side": "positives",
+   "token": "lobal",
+   "our_last_token": "lobal",
+   "published": 0.1171875,
+   "ours": 0.109375,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 10563,
+   "side": "positives",
+   "token": "ycastle",
+   "our_last_token": "ycastle",
+   "published": 0.115234375,
+   "ours": 0.1015625,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 10563,
+   "side": "positives",
+   "token": "😆",
+   "our_last_token": "ðŁĺĨ",
+   "published": 0.11474609375,
+   "ours": 0.1083984375,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 10563,
+   "side": "negatives",
+   "token": "py",
+   "our_last_token": "py",
+   "published": -8.9375,
+   "ours": -8.9375,
+   "truncated": false
+  },
+  {
+   "layer": 0,
+   "neuron": 10563,
+   "side": "negatives",
+   "token": "py",
+   "our_last_token": "py",
+   "published": -6.09375,
+   "ours": -6.09375,
+   "truncated": false
+  },
+  {
+   "layer": 0,
+   "neuron": 10563,
+   "side": "negatives",
+   "token": "py",
+   "our_last_token": "py",
+   "published": -6.0625,
+   "ours": -6.25,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 10563,
+   "side": "negatives",
+   "token": "py",
+   "our_last_token": "py",
+   "published": -6.0625,
+   "ours": -5.9375,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 10563,
+   "side": "negatives",
+   "token": "py",
+   "our_last_token": "py",
+   "published": -6.0625,
+   "ours": -5.96875,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 10563,
+   "side": "negatives",
+   "token": "py",
+   "our_last_token": "py",
+   "published": -5.96875,
+   "ours": -6.34375,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 4096,
+   "side": "positives",
+   "token": "ְ",
+   "our_last_token": "°",
+   "published": 0.2119140625,
+   "ours": 0.2041015625,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 4096,
+   "side": "positives",
+   "token": "ְ",
+   "our_last_token": "°",
+   "published": 0.2041015625,
+   "ours": 0.197265625,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 4096,
+   "side": "positives",
+   "token": "ְ",
+   "our_last_token": "°",
+   "published": 0.2001953125,
+   "ours": 0.1962890625,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 4096,
+   "side": "positives",
+   "token": "ְ",
+   "our_last_token": "°",
+   "published": 0.19921875,
+   "ours": 0.185546875,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 4096,
+   "side": "positives",
+   "token": "ְ",
+   "our_last_token": "°",
+   "published": 0.1982421875,
+   "ours": 0.2138671875,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 4096,
+   "side": "positives",
+   "token": "ְ",
+   "our_last_token": "°",
+   "published": 0.1962890625,
+   "ours": 0.1943359375,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 4096,
+   "side": "negatives",
+   "token": "ru",
+   "our_last_token": "ru",
+   "published": -7.53125,
+   "ours": -7.40625,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 4096,
+   "side": "negatives",
+   "token": "ru",
+   "our_last_token": "ru",
+   "published": -7.40625,
+   "ours": -7.375,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 4096,
+   "side": "negatives",
+   "token": "ru",
+   "our_last_token": "ru",
+   "published": -7.3125,
+   "ours": -7.125,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 4096,
+   "side": "negatives",
+   "token": "ru",
+   "our_last_token": "ru",
+   "published": -7.25,
+   "ours": -7.4375,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 4096,
+   "side": "negatives",
+   "token": "ru",
+   "our_last_token": "ru",
+   "published": -7.125,
+   "ours": -7.125,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 4096,
+   "side": "negatives",
+   "token": "ru",
+   "our_last_token": "ru",
+   "published": -7.125,
+   "ours": -6.8125,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 9604,
+   "side": "positives",
+   "token": "酸",
+   "our_last_token": "éħ¸",
+   "published": 12.375,
+   "ours": 12.8125,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 9604,
+   "side": "positives",
+   "token": "酸",
+   "our_last_token": "éħ¸",
+   "published": 12.375,
+   "ours": 12.4375,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 9604,
+   "side": "positives",
+   "token": "酸",
+   "our_last_token": "éħ¸",
+   "published": 12.1875,
+   "ours": 12.1875,
+   "truncated": false
+  },
+  {
+   "layer": 0,
+   "neuron": 9604,
+   "side": "positives",
+   "token": "酸",
+   "our_last_token": "éħ¸",
+   "published": 12.0625,
+   "ours": 12.125,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 9604,
+   "side": "positives",
+   "token": "酸",
+   "our_last_token": "éħ¸",
+   "published": 12.0,
+   "ours": 11.9375,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 9604,
+   "side": "positives",
+   "token": "酸",
+   "our_last_token": "éħ¸",
+   "published": 12.0,
+   "ours": 12.4375,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 9604,
+   "side": "negatives",
+   "token": "�",
+   "our_last_token": "ï¿½ï¿½",
+   "published": -0.359375,
+   "ours": 0.057861328125,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 9604,
+   "side": "negatives",
+   "token": "�",
+   "our_last_token": "ï¿½ï¿½",
+   "published": -0.244140625,
+   "ours": 0.0439453125,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 9604,
+   "side": "negatives",
+   "token": "�",
+   "our_last_token": "ï¿½ï¿½",
+   "published": -0.2431640625,
+   "ours": 0.06884765625,
+   "truncated": false
+  },
+  {
+   "layer": 0,
+   "neuron": 9604,
+   "side": "negatives",
+   "token": "�",
+   "our_last_token": "ï¿½ï¿½",
+   "published": -0.240234375,
+   "ours": 0.049072265625,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 9604,
+   "side": "negatives",
+   "token": "�",
+   "our_last_token": "ï¿½ï¿½",
+   "published": -0.23828125,
+   "ours": 0.03955078125,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 9604,
+   "side": "negatives",
+   "token": "�",
+   "our_last_token": "ï¿½ï¿½",
+   "published": -0.2373046875,
+   "ours": 0.0380859375,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 17470,
+   "side": "positives",
+   "token": "u",
+   "our_last_token": "u",
+   "published": 61.75,
+   "ours": 66.0,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 17470,
+   "side": "positives",
+   "token": "U",
+   "our_last_token": "U",
+   "published": 61.25,
+   "ours": 64.5,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 17470,
+   "side": "positives",
+   "token": " Peru",
+   "our_last_token": "ĠPeru",
+   "published": 59.5,
+   "ours": 59.5,
+   "truncated": false
+  },
+  {
+   "layer": 2,
+   "neuron": 17470,
+   "side": "positives",
+   "token": "ú",
+   "our_last_token": "Ãº",
+   "published": 58.5,
+   "ours": 59.0,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 17470,
+   "side": "positives",
+   "token": " Peru",
+   "our_last_token": "ĠPeru",
+   "published": 56.75,
+   "ours": 56.5,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 17470,
+   "side": "positives",
+   "token": " Peru",
+   "our_last_token": "ĠPeru",
+   "published": 55.75,
+   "ours": 57.75,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 17470,
+   "side": "negatives",
+   "token": "UV",
+   "our_last_token": "UV",
+   "published": -1.640625,
+   "ours": -1.5,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 17470,
+   "side": "negatives",
+   "token": "UV",
+   "our_last_token": "UV",
+   "published": -1.6328125,
+   "ours": -1.4296875,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 17470,
+   "side": "negatives",
+   "token": " Perl",
+   "our_last_token": "ĠPerl",
+   "published": -1.5625,
+   "ours": -0.796875,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 17470,
+   "side": "negatives",
+   "token": "uv",
+   "our_last_token": "uv",
+   "published": -1.5546875,
+   "ours": -1.546875,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 17470,
+   "side": "negatives",
+   "token": "uv",
+   "our_last_token": "uv",
+   "published": -1.5390625,
+   "ours": -1.5078125,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 17470,
+   "side": "negatives",
+   "token": " Perl",
+   "our_last_token": "ĠPerl",
+   "published": -1.5234375,
+   "ours": -1.1484375,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 11465,
+   "side": "positives",
+   "token": "PU",
+   "our_last_token": "PU",
+   "published": 29.0,
+   "ours": 31.375,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 11465,
+   "side": "positives",
+   "token": "PU",
+   "our_last_token": "PU",
+   "published": 28.875,
+   "ours": 31.0,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 11465,
+   "side": "positives",
+   "token": "iu",
+   "our_last_token": "iu",
+   "published": 26.5,
+   "ours": 27.375,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 11465,
+   "side": "positives",
+   "token": "uo",
+   "our_last_token": "uo",
+   "published": 24.75,
+   "ours": 25.375,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 11465,
+   "side": "positives",
+   "token": "ario",
+   "our_last_token": "ario",
+   "published": 24.75,
+   "ours": 25.875,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 11465,
+   "side": "positives",
+   "token": "PA",
+   "our_last_token": "PA",
+   "published": 24.5,
+   "ours": 24.75,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 11465,
+   "side": "negatives",
+   "token": "iano",
+   "our_last_token": "iano",
+   "published": -0.859375,
+   "ours": -0.8671875,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 11465,
+   "side": "negatives",
+   "token": "iano",
+   "our_last_token": "iano",
+   "published": -0.84375,
+   "ours": -0.88671875,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 11465,
+   "side": "negatives",
+   "token": "o",
+   "our_last_token": "o",
+   "published": -0.83984375,
+   "ours": -0.70703125,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 11465,
+   "side": "negatives",
+   "token": "o",
+   "our_last_token": "o",
+   "published": -0.8359375,
+   "ours": -0.734375,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 11465,
+   "side": "negatives",
+   "token": "O",
+   "our_last_token": "O",
+   "published": -0.83203125,
+   "ours": -0.6875,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 11465,
+   "side": "negatives",
+   "token": "o",
+   "our_last_token": "o",
+   "published": -0.828125,
+   "ours": -0.671875,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 14005,
+   "side": "positives",
+   "token": "OS",
+   "our_last_token": "OS",
+   "published": 19.0,
+   "ours": 20.0,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 14005,
+   "side": "positives",
+   "token": "ico",
+   "our_last_token": "ico",
+   "published": 14.8125,
+   "ours": 15.75,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 14005,
+   "side": "positives",
+   "token": "ico",
+   "our_last_token": "ico",
+   "published": 14.375,
+   "ours": 14.5,
+   "truncated": false
+  },
+  {
+   "layer": 2,
+   "neuron": 14005,
+   "side": "positives",
+   "token": "ico",
+   "our_last_token": "ico",
+   "published": 14.25,
+   "ours": 15.0625,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 14005,
+   "side": "positives",
+   "token": "Question",
+   "our_last_token": "Question",
+   "published": 14.1875,
+   "ours": 14.0625,
+   "truncated": false
+  },
+  {
+   "layer": 2,
+   "neuron": 14005,
+   "side": "positives",
+   "token": "Question",
+   "our_last_token": "Question",
+   "published": 14.1875,
+   "ours": 14.0625,
+   "truncated": false
+  },
+  {
+   "layer": 2,
+   "neuron": 14005,
+   "side": "negatives",
+   "token": "ude",
+   "our_last_token": "ude",
+   "published": -59.0,
+   "ours": -56.25,
+   "truncated": false
+  },
+  {
+   "layer": 2,
+   "neuron": 14005,
+   "side": "negatives",
+   "token": "ude",
+   "our_last_token": "ude",
+   "published": -53.75,
+   "ours": -53.5,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 14005,
+   "side": "negatives",
+   "token": "ude",
+   "our_last_token": "ude",
+   "published": -53.75,
+   "ours": -54.0,
+   "truncated": false
+  },
+  {
+   "layer": 2,
+   "neuron": 14005,
+   "side": "negatives",
+   "token": "ude",
+   "our_last_token": "ude",
+   "published": -53.5,
+   "ours": -55.25,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 14005,
+   "side": "negatives",
+   "token": "ude",
+   "our_last_token": "ude",
+   "published": -52.5,
+   "ours": -51.25,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 14005,
+   "side": "negatives",
+   "token": "ude",
+   "our_last_token": "ude",
+   "published": -50.75,
+   "ours": -49.5,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 19487,
+   "side": "positives",
+   "token": "ru",
+   "our_last_token": "ru",
+   "published": 65.5,
+   "ours": 67.0,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 19487,
+   "side": "positives",
+   "token": "ru",
+   "our_last_token": "ru",
+   "published": 64.5,
+   "ours": 64.5,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 19487,
+   "side": "positives",
+   "token": "ru",
+   "our_last_token": "ru",
+   "published": 64.5,
+   "ours": 67.0,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 19487,
+   "side": "positives",
+   "token": "ru",
+   "our_last_token": "ru",
+   "published": 64.5,
+   "ours": 64.5,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 19487,
+   "side": "positives",
+   "token": "ru",
+   "our_last_token": "ru",
+   "published": 63.75,
+   "ours": 63.5,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 19487,
+   "side": "positives",
+   "token": "ru",
+   "our_last_token": "ru",
+   "published": 63.5,
+   "ours": 60.75,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 19487,
+   "side": "negatives",
+   "token": "in",
+   "our_last_token": "in",
+   "published": -8.1875,
+   "ours": -8.25,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 19487,
+   "side": "negatives",
+   "token": "in",
+   "our_last_token": "in",
+   "published": -5.59375,
+   "ours": -6.59375,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 19487,
+   "side": "negatives",
+   "token": "ine",
+   "our_last_token": "ine",
+   "published": -5.25,
+   "ours": -4.4375,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 19487,
+   "side": "negatives",
+   "token": "in",
+   "our_last_token": "in",
+   "published": -5.1875,
+   "ours": -6.71875,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 19487,
+   "side": "negatives",
+   "token": "in",
+   "our_last_token": "in",
+   "published": -5.09375,
+   "ours": -6.59375,
+   "truncated": true
+  },
+  {
+   "layer": 3,
+   "neuron": 19487,
+   "side": "negatives",
+   "token": "in",
+   "our_last_token": "in",
+   "published": -4.96875,
+   "ours": -5.65625,
+   "truncated": true
+  },
+  {
+   "layer": 6,
+   "neuron": 12979,
+   "side": "positives",
+   "token": "As",
+   "our_last_token": "As",
+   "published": 44.0,
+   "ours": 42.25,
+   "truncated": true
+  },
+  {
+   "layer": 6,
+   "neuron": 12979,
+   "side": "positives",
+   "token": "As",
+   "our_last_token": "As",
+   "published": 43.0,
+   "ours": 41.75,
+   "truncated": true
+  },
+  {
+   "layer": 6,
+   "neuron": 12979,
+   "side": "positives",
+   "token": "As",
+   "our_last_token": "As",
+   "published": 43.0,
+   "ours": 41.5,
+   "truncated": true
+  },
+  {
+   "layer": 6,
+   "neuron": 12979,
+   "side": "positives",
+   "token": "As",
+   "our_last_token": "As",
+   "published": 42.5,
+   "ours": 44.75,
+   "truncated": true
+  },
+  {
+   "layer": 6,
+   "neuron": 12979,
+   "side": "positives",
+   "token": "As",
+   "our_last_token": "As",
+   "published": 42.5,
+   "ours": 39.75,
+   "truncated": true
+  },
+  {
+   "layer": 6,
+   "neuron": 12979,
+   "side": "positives",
+   "token": "As",
+   "our_last_token": "As",
+   "published": 42.25,
+   "ours": 41.25,
+   "truncated": true
+  },
+  {
+   "layer": 6,
+   "neuron": 12979,
+   "side": "negatives",
+   "token": "iest",
+   "our_last_token": "iest",
+   "published": -10.625,
+   "ours": -11.75,
+   "truncated": true
+  },
+  {
+   "layer": 6,
+   "neuron": 12979,
+   "side": "negatives",
+   "token": "PG",
+   "our_last_token": "PG",
+   "published": -9.3125,
+   "ours": -10.4375,
+   "truncated": true
+  },
+  {
+   "layer": 6,
+   "neuron": 12979,
+   "side": "negatives",
+   "token": "PG",
+   "our_last_token": "PG",
+   "published": -8.125,
+   "ours": -9.0,
+   "truncated": true
+  },
+  {
+   "layer": 6,
+   "neuron": 12979,
+   "side": "negatives",
+   "token": "ester",
+   "our_last_token": "ester",
+   "published": -7.78125,
+   "ours": -7.5625,
+   "truncated": true
+  },
+  {
+   "layer": 6,
+   "neuron": 12979,
+   "side": "negatives",
+   "token": "PT",
+   "our_last_token": "PT",
+   "published": -7.34375,
+   "ours": -8.4375,
+   "truncated": true
+  },
+  {
+   "layer": 6,
+   "neuron": 12979,
+   "side": "negatives",
+   "token": "IO",
+   "our_last_token": "IO",
+   "published": -7.3125,
+   "ours": -9.25,
+   "truncated": true
+  },
+  {
+   "layer": 7,
+   "neuron": 14416,
+   "side": "positives",
+   "token": "oh",
+   "our_last_token": "oh",
+   "published": 16.0,
+   "ours": 3.390625,
+   "truncated": true
+  },
+  {
+   "layer": 7,
+   "neuron": 14416,
+   "side": "positives",
+   "token": "aire",
+   "our_last_token": "aire",
+   "published": 12.6875,
+   "ours": 17.875,
+   "truncated": true
+  },
+  {
+   "layer": 7,
+   "neuron": 14416,
+   "side": "positives",
+   "token": "F",
+   "our_last_token": "F",
+   "published": 11.5,
+   "ours": 7.34375,
+   "truncated": true
+  },
+  {
+   "layer": 7,
+   "neuron": 14416,
+   "side": "positives",
+   "token": " Funk",
+   "our_last_token": "ĠFunk",
+   "published": 11.375,
+   "ours": 6.03125,
+   "truncated": true
+  },
+  {
+   "layer": 7,
+   "neuron": 14416,
+   "side": "positives",
+   "token": " Secondary",
+   "our_last_token": "ĠSecondary",
+   "published": 10.6875,
+   "ours": 10.25,
+   "truncated": true
+  },
+  {
+   "layer": 7,
+   "neuron": 14416,
+   "side": "positives",
+   "token": "F",
+   "our_last_token": "F",
+   "published": 10.5,
+   "ours": 11.125,
+   "truncated": true
+  },
+  {
+   "layer": 7,
+   "neuron": 14416,
+   "side": "negatives",
+   "token": "alo",
+   "our_last_token": "alo",
+   "published": -47.5,
+   "ours": -47.5,
+   "truncated": true
+  },
+  {
+   "layer": 7,
+   "neuron": 14416,
+   "side": "negatives",
+   "token": "alo",
+   "our_last_token": "alo",
+   "published": -43.25,
+   "ours": -49.75,
+   "truncated": true
+  },
+  {
+   "layer": 7,
+   "neuron": 14416,
+   "side": "negatives",
+   "token": "alo",
+   "our_last_token": "alo",
+   "published": -42.5,
+   "ours": -36.25,
+   "truncated": true
+  },
+  {
+   "layer": 7,
+   "neuron": 14416,
+   "side": "negatives",
+   "token": "alo",
+   "our_last_token": "alo",
+   "published": -40.25,
+   "ours": -48.75,
+   "truncated": true
+  },
+  {
+   "layer": 7,
+   "neuron": 14416,
+   "side": "negatives",
+   "token": "i",
+   "our_last_token": "i",
+   "published": -37.75,
+   "ours": -28.5,
+   "truncated": true
+  },
+  {
+   "layer": 7,
+   "neuron": 14416,
+   "side": "negatives",
+   "token": "cone",
+   "our_last_token": "cone",
+   "published": -36.0,
+   "ours": -38.5,
+   "truncated": true
+  },
+  {
+   "layer": 9,
+   "neuron": 5924,
+   "side": "positives",
+   "token": "ru",
+   "our_last_token": "ru",
+   "published": 21.25,
+   "ours": 21.125,
+   "truncated": true
+  },
+  {
+   "layer": 9,
+   "neuron": 5924,
+   "side": "positives",
+   "token": "ru",
+   "our_last_token": "ru",
+   "published": 21.125,
+   "ours": 21.125,
+   "truncated": true
+  },
+  {
+   "layer": 9,
+   "neuron": 5924,
+   "side": "positives",
+   "token": "ru",
+   "our_last_token": "ru",
+   "published": 21.0,
+   "ours": 21.5,
+   "truncated": true
+  },
+  {
+   "layer": 9,
+   "neuron": 5924,
+   "side": "positives",
+   "token": "ru",
+   "our_last_token": "ru",
+   "published": 20.25,
+   "ours": 20.75,
+   "truncated": true
+  },
+  {
+   "layer": 9,
+   "neuron": 5924,
+   "side": "positives",
+   "token": "ru",
+   "our_last_token": "ru",
+   "published": 19.625,
+   "ours": 18.375,
+   "truncated": true
+  },
+  {
+   "layer": 9,
+   "neuron": 5924,
+   "side": "positives",
+   "token": "ru",
+   "our_last_token": "ru",
+   "published": 19.25,
+   "ours": 19.25,
+   "truncated": false
+  },
+  {
+   "layer": 9,
+   "neuron": 5924,
+   "side": "negatives",
+   "token": "yl",
+   "our_last_token": "yl",
+   "published": -24.125,
+   "ours": -24.25,
+   "truncated": true
+  },
+  {
+   "layer": 9,
+   "neuron": 5924,
+   "side": "negatives",
+   "token": "yl",
+   "our_last_token": "yl",
+   "published": -23.625,
+   "ours": -22.875,
+   "truncated": true
+  },
+  {
+   "layer": 9,
+   "neuron": 5924,
+   "side": "negatives",
+   "token": "yl",
+   "our_last_token": "yl",
+   "published": -23.375,
+   "ours": -23.625,
+   "truncated": true
+  },
+  {
+   "layer": 9,
+   "neuron": 5924,
+   "side": "negatives",
+   "token": "yl",
+   "our_last_token": "yl",
+   "published": -23.375,
+   "ours": -23.875,
+   "truncated": true
+  },
+  {
+   "layer": 9,
+   "neuron": 5924,
+   "side": "negatives",
+   "token": "yl",
+   "our_last_token": "yl",
+   "published": -23.0,
+   "ours": -24.75,
+   "truncated": true
+  },
+  {
+   "layer": 9,
+   "neuron": 5924,
+   "side": "negatives",
+   "token": "yl",
+   "our_last_token": "yl",
+   "published": -22.875,
+   "ours": -22.75,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 6274,
+   "side": "positives",
+   "token": "-copy",
+   "our_last_token": "-copy",
+   "published": 0.74609375,
+   "ours": 0.52734375,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 6274,
+   "side": "positives",
+   "token": "COPY",
+   "our_last_token": "COPY",
+   "published": 0.69921875,
+   "ours": 0.65234375,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 6274,
+   "side": "positives",
+   "token": "itious",
+   "our_last_token": "itious",
+   "published": 0.625,
+   "ours": 0.609375,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 6274,
+   "side": "positives",
+   "token": "itious",
+   "our_last_token": "itious",
+   "published": 0.6171875,
+   "ours": 0.59765625,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 6274,
+   "side": "positives",
+   "token": "ious",
+   "our_last_token": "ious",
+   "published": 0.6171875,
+   "ours": 0.5703125,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 6274,
+   "side": "positives",
+   "token": "ile",
+   "our_last_token": "ile",
+   "published": 0.60546875,
+   "ours": 0.60546875,
+   "truncated": false
+  },
+  {
+   "layer": 1,
+   "neuron": 6274,
+   "side": "negatives",
+   "token": " Cop",
+   "our_last_token": "ĠCop",
+   "published": -23.125,
+   "ours": -24.25,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 6274,
+   "side": "negatives",
+   "token": " Cop",
+   "our_last_token": "ĠCop",
+   "published": -21.5,
+   "ours": -21.875,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 6274,
+   "side": "negatives",
+   "token": " Cop",
+   "our_last_token": "ĠCop",
+   "published": -21.125,
+   "ours": -23.625,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 6274,
+   "side": "negatives",
+   "token": " Cop",
+   "our_last_token": "ĠCop",
+   "published": -20.625,
+   "ours": -22.25,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 6274,
+   "side": "negatives",
+   "token": " Cop",
+   "our_last_token": "ĠCop",
+   "published": -20.375,
+   "ours": -21.5,
+   "truncated": true
+  },
+  {
+   "layer": 1,
+   "neuron": 6274,
+   "side": "negatives",
+   "token": " Cop",
+   "our_last_token": "ĠCop",
+   "published": -20.375,
+   "ours": -23.0,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 8974,
+   "side": "positives",
+   "token": "🐨",
+   "our_last_token": "¨",
+   "published": 0.1728515625,
+   "ours": 0.181640625,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 8974,
+   "side": "positives",
+   "token": "🐨",
+   "our_last_token": "¨",
+   "published": 0.1572265625,
+   "ours": 0.1455078125,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 8974,
+   "side": "positives",
+   "token": "经历",
+   "our_last_token": "ç»ıåİĨ",
+   "published": 0.1572265625,
+   "ours": 0.15625,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 8974,
+   "side": "positives",
+   "token": "陌",
+   "our_last_token": "éĻĮ",
+   "published": 0.1552734375,
+   "ours": 0.150390625,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 8974,
+   "side": "positives",
+   "token": "🐨",
+   "our_last_token": "¨",
+   "published": 0.154296875,
+   "ours": 0.1533203125,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 8974,
+   "side": "positives",
+   "token": " 정도",
+   "our_last_token": "ĠìłķëıĦ",
+   "published": 0.1533203125,
+   "ours": 0.1640625,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 8974,
+   "side": "negatives",
+   "token": "ern",
+   "our_last_token": "ern",
+   "published": -8.125,
+   "ours": -8.125,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 8974,
+   "side": "negatives",
+   "token": "ern",
+   "our_last_token": "ern",
+   "published": -8.125,
+   "ours": -8.0625,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 8974,
+   "side": "negatives",
+   "token": "ern",
+   "our_last_token": "ern",
+   "published": -8.0,
+   "ours": -8.4375,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 8974,
+   "side": "negatives",
+   "token": "ern",
+   "our_last_token": "ern",
+   "published": -7.96875,
+   "ours": -8.125,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 8974,
+   "side": "negatives",
+   "token": "ern",
+   "our_last_token": "ern",
+   "published": -7.90625,
+   "ours": -8.25,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 8974,
+   "side": "negatives",
+   "token": "ern",
+   "our_last_token": "ern",
+   "published": -7.90625,
+   "ours": -8.1875,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 2447,
+   "side": "positives",
+   "token": "淡",
+   "our_last_token": "¡",
+   "published": 0.2080078125,
+   "ours": 0.1982421875,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 2447,
+   "side": "positives",
+   "token": "淡",
+   "our_last_token": "¡",
+   "published": 0.197265625,
+   "ours": 0.1904296875,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 2447,
+   "side": "positives",
+   "token": "ǎ",
+   "our_last_token": "Çİ",
+   "published": 0.177734375,
+   "ours": 0.1875,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 2447,
+   "side": "positives",
+   "token": "ě",
+   "our_last_token": "ÄĽ",
+   "published": 0.1708984375,
+   "ours": 0.171875,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 2447,
+   "side": "positives",
+   "token": "ě",
+   "our_last_token": "ÄĽ",
+   "published": 0.1689453125,
+   "ours": 0.1689453125,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 2447,
+   "side": "positives",
+   "token": " să",
+   "our_last_token": "ĠsÄĥ",
+   "published": 0.166015625,
+   "ours": 0.185546875,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 2447,
+   "side": "negatives",
+   "token": "icus",
+   "our_last_token": "icus",
+   "published": -4.875,
+   "ours": -4.84375,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 2447,
+   "side": "negatives",
+   "token": "icus",
+   "our_last_token": "icus",
+   "published": -4.5625,
+   "ours": -4.34375,
+   "truncated": false
+  },
+  {
+   "layer": 0,
+   "neuron": 2447,
+   "side": "negatives",
+   "token": "icus",
+   "our_last_token": "icus",
+   "published": -4.375,
+   "ours": -4.53125,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 2447,
+   "side": "negatives",
+   "token": "icus",
+   "our_last_token": "icus",
+   "published": -4.25,
+   "ours": -4.125,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 2447,
+   "side": "negatives",
+   "token": "icus",
+   "our_last_token": "icus",
+   "published": -4.25,
+   "ours": -4.3125,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 2447,
+   "side": "negatives",
+   "token": "icus",
+   "our_last_token": "icus",
+   "published": -4.0625,
+   "ours": -4.28125,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 17222,
+   "side": "positives",
+   "token": "us",
+   "our_last_token": "us",
+   "published": 8.75,
+   "ours": 8.75,
+   "truncated": false
+  },
+  {
+   "layer": 0,
+   "neuron": 17222,
+   "side": "positives",
+   "token": "erus",
+   "our_last_token": "erus",
+   "published": 8.6875,
+   "ours": 8.6875,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 17222,
+   "side": "positives",
+   "token": "erus",
+   "our_last_token": "erus",
+   "published": 8.625,
+   "ours": 8.125,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 17222,
+   "side": "positives",
+   "token": "icus",
+   "our_last_token": "icus",
+   "published": 8.625,
+   "ours": 8.5625,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 17222,
+   "side": "positives",
+   "token": "alus",
+   "our_last_token": "alus",
+   "published": 8.5,
+   "ours": 8.25,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 17222,
+   "side": "positives",
+   "token": "us",
+   "our_last_token": "us",
+   "published": 8.5,
+   "ours": 8.5625,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 17222,
+   "side": "negatives",
+   "token": "⠇",
+   "our_last_token": "âłĩ",
+   "published": -0.07958984375,
+   "ours": -0.08349609375,
+   "truncated": false
+  },
+  {
+   "layer": 0,
+   "neuron": 17222,
+   "side": "negatives",
+   "token": " trên",
+   "our_last_token": "ĠtrÃªn",
+   "published": -0.07861328125,
+   "ours": -0.0869140625,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 17222,
+   "side": "negatives",
+   "token": "成品",
+   "our_last_token": "æĪĲåĵģ",
+   "published": -0.076171875,
+   "ours": -0.0751953125,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 17222,
+   "side": "negatives",
+   "token": " trên",
+   "our_last_token": "ĠtrÃªn",
+   "published": -0.076171875,
+   "ours": -0.07568359375,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 17222,
+   "side": "negatives",
+   "token": "成品",
+   "our_last_token": "æĪĲåĵģ",
+   "published": -0.07470703125,
+   "ours": -0.0751953125,
+   "truncated": true
+  },
+  {
+   "layer": 0,
+   "neuron": 17222,
+   "side": "negatives",
+   "token": " trên",
+   "our_last_token": "ĠtrÃªn",
+   "published": -0.07373046875,
+   "ours": -0.06298828125,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 5744,
+   "side": "positives",
+   "token": "cus",
+   "our_last_token": "cus",
+   "published": 43.75,
+   "ours": 43.5,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 5744,
+   "side": "positives",
+   "token": "cos",
+   "our_last_token": "cos",
+   "published": 37.25,
+   "ours": 38.25,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 5744,
+   "side": "positives",
+   "token": "cos",
+   "our_last_token": "cos",
+   "published": 37.0,
+   "ours": 37.0,
+   "truncated": false
+  },
+  {
+   "layer": 2,
+   "neuron": 5744,
+   "side": "positives",
+   "token": "cos",
+   "our_last_token": "cos",
+   "published": 36.25,
+   "ours": 36.5,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 5744,
+   "side": "positives",
+   "token": "us",
+   "our_last_token": "us",
+   "published": 35.5,
+   "ours": 35.25,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 5744,
+   "side": "positives",
+   "token": "cos",
+   "our_last_token": "cos",
+   "published": 35.25,
+   "ours": 35.5,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 5744,
+   "side": "negatives",
+   "token": "Question",
+   "our_last_token": "Question",
+   "published": -42.0,
+   "ours": -42.0,
+   "truncated": false
+  },
+  {
+   "layer": 2,
+   "neuron": 5744,
+   "side": "negatives",
+   "token": "Question",
+   "our_last_token": "Question",
+   "published": -42.0,
+   "ours": -42.0,
+   "truncated": false
+  },
+  {
+   "layer": 2,
+   "neuron": 5744,
+   "side": "negatives",
+   "token": "Question",
+   "our_last_token": "Question",
+   "published": -42.0,
+   "ours": -42.0,
+   "truncated": false
+  },
+  {
+   "layer": 2,
+   "neuron": 5744,
+   "side": "negatives",
+   "token": "Question",
+   "our_last_token": "Question",
+   "published": -42.0,
+   "ours": -42.0,
+   "truncated": false
+  },
+  {
+   "layer": 2,
+   "neuron": 5744,
+   "side": "negatives",
+   "token": "Question",
+   "our_last_token": "Question",
+   "published": -42.0,
+   "ours": -42.0,
+   "truncated": false
+  },
+  {
+   "layer": 2,
+   "neuron": 5744,
+   "side": "negatives",
+   "token": "Question",
+   "our_last_token": "Question",
+   "published": -42.0,
+   "ours": -42.0,
+   "truncated": false
+  },
+  {
+   "layer": 2,
+   "neuron": 3523,
+   "side": "positives",
+   "token": "mon",
+   "our_last_token": "mon",
+   "published": 1.0625,
+   "ours": 1.078125,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 3523,
+   "side": "positives",
+   "token": "mon",
+   "our_last_token": "mon",
+   "published": 1.0546875,
+   "ours": 0.96484375,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 3523,
+   "side": "positives",
+   "token": "el",
+   "our_last_token": "el",
+   "published": 1.0546875,
+   "ours": 0.859375,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 3523,
+   "side": "positives",
+   "token": "el",
+   "our_last_token": "el",
+   "published": 1.0390625,
+   "ours": 1.0234375,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 3523,
+   "side": "positives",
+   "token": "mon",
+   "our_last_token": "mon",
+   "published": 1.0390625,
+   "ours": 1.0390625,
+   "truncated": false
+  },
+  {
+   "layer": 2,
+   "neuron": 3523,
+   "side": "positives",
+   "token": "el",
+   "our_last_token": "el",
+   "published": 1.03125,
+   "ours": 0.87109375,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 3523,
+   "side": "negatives",
+   "token": "icious",
+   "our_last_token": "icious",
+   "published": -34.75,
+   "ours": -35.0,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 3523,
+   "side": "negatives",
+   "token": "mon",
+   "our_last_token": "mon",
+   "published": -34.5,
+   "ours": -36.75,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 3523,
+   "side": "negatives",
+   "token": "icious",
+   "our_last_token": "icious",
+   "published": -34.25,
+   "ours": -36.25,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 3523,
+   "side": "negatives",
+   "token": "icious",
+   "our_last_token": "icious",
+   "published": -33.25,
+   "ours": -33.25,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 3523,
+   "side": "negatives",
+   "token": "icious",
+   "our_last_token": "icious",
+   "published": -33.0,
+   "ours": -35.0,
+   "truncated": true
+  },
+  {
+   "layer": 2,
+   "neuron": 3523,
+   "side": "negatives",
+   "token": "mon",
+   "our_last_token": "mon",
+   "published": -32.0,
+   "ours": -31.875,
+   "truncated": true
+  },
+  {
+   "layer": 4,
+   "neuron": 11809,
+   "side": "positives",
+   "token": "US",
+   "our_last_token": "US",
+   "published": 80.0,
+   "ours": 84.5,
+   "truncated": true
+  },
+  {
+   "layer": 4,
+   "neuron": 11809,
+   "side": "positives",
+   "token": "icus",
+   "our_last_token": "icus",
+   "published": 78.5,
+   "ours": 78.5,
+   "truncated": false
+  },
+  {
+   "layer": 4,
+   "neuron": 11809,
+   "side": "positives",
+   "token": "icus",
+   "our_last_token": "icus",
+   "published": 78.5,
+   "ours": 78.5,
+   "truncated": false
+  },
+  {
+   "layer": 4,
+   "neuron": 11809,
+   "side": "positives",
+   "token": "icus",
+   "our_last_token": "icus",
+   "published": 78.5,
+   "ours": 78.5,
+   "truncated": false
+  },
+  {
+   "layer": 4,
+   "neuron": 11809,
+   "side": "positives",
+   "token": "ern",
+   "our_last_token": "ern",
+   "published": 77.5,
+   "ours": 78.5,
+   "truncated": true
+  },
+  {
+   "layer": 4,
+   "neuron": 11809,
+   "side": "positives",
+   "token": "ern",
+   "our_last_token": "ern",
+   "published": 77.0,
+   "ours": 75.0,
+   "truncated": true
+  },
+  {
+   "layer": 4,
+   "neuron": 11809,
+   "side": "negatives",
+   "token": "opi",
+   "our_last_token": "opi",
+   "published": -54.0,
+   "ours": -54.75,
+   "truncated": true
+  },
+  {
+   "layer": 4,
+   "neuron": 11809,
+   "side": "negatives",
+   "token": "opi",
+   "our_last_token": "opi",
+   "published": -50.25,
+   "ours": -48.5,
+   "truncated": true
+  },
+  {
+   "layer": 4,
+   "neuron": 11809,
+   "side": "negatives",
+   "token": "opi",
+   "our_last_token": "opi",
+   "published": -49.75,
+   "ours": -50.0,
+   "truncated": true
+  },
+  {
+   "layer": 4,
+   "neuron": 11809,
+   "side": "negatives",
+   "token": "it",
+   "our_last_token": "it",
+   "published": -44.5,
+   "ours": -43.75,
+   "truncated": true
+  },
+  {
+   "layer": 4,
+   "neuron": 11809,
+   "side": "negatives",
+   "token": "is",
+   "our_last_token": "is",
+   "published": -41.5,
+   "ours": -39.75,
+   "truncated": true
+  },
+  {
+   "layer": 4,
+   "neuron": 11809,
+   "side": "negatives",
+   "token": "is",
+   "our_last_token": "is",
+   "published": -40.25,
+   "ours": -41.25,
+   "truncated": true
+  },
+  {
+   "layer": 7,
+   "neuron": 5528,
+   "side": "positives",
+   "token": "le",
+   "our_last_token": "le",
+   "published": 49.0,
+   "ours": 27.25,
+   "truncated": true
+  },
+  {
+   "layer": 7,
+   "neuron": 5528,
+   "side": "positives",
+   "token": "le",
+   "our_last_token": "le",
+   "published": 47.0,
+   "ours": 47.75,
+   "truncated": true
+  },
+  {
+   "layer": 7,
+   "neuron": 5528,
+   "side": "positives",
+   "token": "le",
+   "our_last_token": "le",
+   "published": 47.0,
+   "ours": 39.75,
+   "truncated": true
+  },
+  {
+   "layer": 7,
+   "neuron": 5528,
+   "side": "positives",
+   "token": "le",
+   "our_last_token": "le",
+   "published": 46.25,
+   "ours": 31.25,
+   "truncated": true
+  },
+  {
+   "layer": 7,
+   "neuron": 5528,
+   "side": "positives",
+   "token": "to",
+   "our_last_token": "to",
+   "published": 45.75,
+   "ours": 10.5,
+   "truncated": true
+  },
+  {
+   "layer": 7,
+   "neuron": 5528,
+   "side": "positives",
+   "token": "le",
+   "our_last_token": "le",
+   "published": 45.0,
+   "ours": 33.5,
+   "truncated": true
+  },
+  {
+   "layer": 7,
+   "neuron": 5528,
+   "side": "negatives",
+   "token": "olph",
+   "our_last_token": "olph",
+   "published": -14.375,
+   "ours": -1.140625,
+   "truncated": true
+  },
+  {
+   "layer": 7,
+   "neuron": 5528,
+   "side": "negatives",
+   "token": "Wolf",
+   "our_last_token": "Wolf",
+   "published": -14.125,
+   "ours": -6.4375,
+   "truncated": true
+  },
+  {
+   "layer": 7,
+   "neuron": 5528,
+   "side": "negatives",
+   "token": "ob",
+   "our_last_token": "ob",
+   "published": -12.5,
+   "ours": -11.625,
+   "truncated": true
+  },
+  {
+   "layer": 7,
+   "neuron": 5528,
+   "side": "negatives",
+   "token": " Wolf",
+   "our_last_token": "ĠWolf",
+   "published": -11.8125,
+   "ours": -9.0625,
+   "truncated": true
+  },
+  {
+   "layer": 7,
+   "neuron": 5528,
+   "side": "negatives",
+   "token": "David",
+   "our_last_token": "David",
+   "published": -11.5625,
+   "ours": -10.25,
+   "truncated": true
+  },
+  {
+   "layer": 7,
+   "neuron": 5528,
+   "side": "negatives",
+   "token": "Wolf",
+   "our_last_token": "Wolf",
+   "published": -11.3125,
+   "ours": -15.6875,
+   "truncated": true
+  },
+  {
+   "layer": 8,
+   "neuron": 13339,
+   "side": "positives",
+   "token": " rays",
+   "our_last_token": "Ġrays",
+   "published": 30.0,
+   "ours": 8.5625,
+   "truncated": true
+  },
+  {
+   "layer": 8,
+   "neuron": 13339,
+   "side": "positives",
+   "token": " rays",
+   "our_last_token": "Ġrays",
+   "published": 27.625,
+   "ours": 28.0,
+   "truncated": true
+  },
+  {
+   "layer": 8,
+   "neuron": 13339,
+   "side": "positives",
+   "token": " rays",
+   "our_last_token": "Ġrays",
+   "published": 26.5,
+   "ours": 21.125,
+   "truncated": true
+  },
+  {
+   "layer": 8,
+   "neuron": 13339,
+   "side": "positives",
+   "token": " rays",
+   "our_last_token": "Ġrays",
+   "published": 26.0,
+   "ours": 9.125,
+   "truncated": true
+  },
+  {
+   "layer": 8,
+   "neuron": 13339,
+   "side": "positives",
+   "token": " ray",
+   "our_last_token": "Ġray",
+   "published": 25.375,
+   "ours": 28.0,
+   "truncated": true
+  },
+  {
+   "layer": 8,
+   "neuron": 13339,
+   "side": "positives",
+   "token": "oved",
+   "our_last_token": "oved",
+   "published": 23.625,
+   "ours": 14.5625,
+   "truncated": true
+  },
+  {
+   "layer": 8,
+   "neuron": 13339,
+   "side": "negatives",
+   "token": "ología",
+   "our_last_token": "ologÃŃa",
+   "published": -8.8125,
+   "ours": 0.232421875,
+   "truncated": true
+  },
+  {
+   "layer": 8,
+   "neuron": 13339,
+   "side": "negatives",
+   "token": "ized",
+   "our_last_token": "ized",
+   "published": -8.0,
+   "ours": -7.75,
+   "truncated": true
+  },
+  {
+   "layer": 8,
+   "neuron": 13339,
+   "side": "negatives",
+   "token": " digit",
+   "our_last_token": "Ġdigit",
+   "published": -7.84375,
+   "ours": -9.0625,
+   "truncated": true
+  },
+  {
+   "layer": 8,
+   "neuron": 13339,
+   "side": "negatives",
+   "token": " digit",
+   "our_last_token": "Ġdigit",
+   "published": -7.375,
+   "ours": -4.28125,
+   "truncated": true
+  },
+  {
+   "layer": 8,
+   "neuron": 13339,
+   "side": "negatives",
+   "token": " draw",
+   "our_last_token": "Ġdraw",
+   "published": -6.875,
+   "ours": -3.296875,
+   "truncated": true
+  },
+  {
+   "layer": 8,
+   "neuron": 13339,
+   "side": "negatives",
+   "token": "Map",
+   "our_last_token": "Map",
+   "published": -6.625,
+   "ours": -8.5,
+   "truncated": true
+  },
+  {
+   "layer": 11,
+   "neuron": 2418,
+   "side": "positives",
+   "token": "ibil",
+   "our_last_token": "ibil",
+   "published": 4.15625,
+   "ours": 2.109375,
+   "truncated": true
+  },
+  {
+   "layer": 11,
+   "neuron": 2418,
+   "side": "positives",
+   "token": "ibil",
+   "our_last_token": "ibil",
+   "published": 4.125,
+   "ours": 1.59375,
+   "truncated": true
+  },
+  {
+   "layer": 11,
+   "neuron": 2418,
+   "side": "positives",
+   "token": "ism",
+   "our_last_token": "ism",
+   "published": 4.125,
+   "ours": 4.25,
+   "truncated": true
+  },
+  {
+   "layer": 11,
+   "neuron": 2418,
+   "side": "positives",
+   "token": "ibil",
+   "our_last_token": "ibil",
+   "published": 3.953125,
+   "ours": 3.953125,
+   "truncated": true
+  },
+  {
+   "layer": 11,
+   "neuron": 2418,
+   "side": "positives",
+   "token": "ibil",
+   "our_last_token": "ibil",
+   "published": 3.890625,
+   "ours": 2.296875,
+   "truncated": true
+  },
+  {
+   "layer": 11,
+   "neuron": 2418,
+   "side": "positives",
+   "token": "ism",
+   "our_last_token": "ism",
+   "published": 3.765625,
+   "ours": 4.1875,
+   "truncated": true
+  },
+  {
+   "layer": 11,
+   "neuron": 2418,
+   "side": "negatives",
+   "token": "tr",
+   "our_last_token": "tr",
+   "published": -14.5625,
+   "ours": -15.4375,
+   "truncated": true
+  },
+  {
+   "layer": 11,
+   "neuron": 2418,
+   "side": "negatives",
+   "token": "ism",
+   "our_last_token": "ism",
+   "published": -12.5,
+   "ours": -12.0,
+   "truncated": true
+  },
+  {
+   "layer": 11,
+   "neuron": 2418,
+   "side": "negatives",
+   "token": " center",
+   "our_last_token": "Ġcenter",
+   "published": -12.375,
+   "ours": -9.8125,
+   "truncated": true
+  },
+  {
+   "layer": 11,
+   "neuron": 2418,
+   "side": "negatives",
+   "token": "entr",
+   "our_last_token": "entr",
+   "published": -12.25,
+   "ours": -13.5625,
+   "truncated": true
+  },
+  {
+   "layer": 11,
+   "neuron": 2418,
+   "side": "negatives",
+   "token": " of",
+   "our_last_token": "Ġof",
+   "published": -12.125,
+   "ours": -14.1875,
+   "truncated": true
+  },
+  {
+   "layer": 11,
+   "neuron": 2418,
+   "side": "negatives",
+   "token": "entr",
+   "our_last_token": "entr",
+   "published": -12.0625,
+   "ours": -13.1875,
+   "truncated": true
+  }
+ ]
+}
