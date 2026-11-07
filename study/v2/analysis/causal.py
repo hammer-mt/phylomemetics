@@ -209,6 +209,13 @@ def ablation(tag):
                                   "difference": float(obs), "p_one_sided": float((1 + (null >= obs).sum()) / 10001),
                                   "hero_films_matched_random_sets": set_test(rows, rel, "rand"),
                                   "drop_by_hero_film": {r: float(rows[r]["drop"]["canon"]) for r in rel}}
+        named = [b for b in bat if starts_with_name(rows[b]["reply"] or "")]
+        if 0 < len(named) < len(bat):          # post hoc and descriptive (PLAN.md Section 18, change 32): the works the evaluability rule does not object to
+            res["post_hoc_works_whose_untouched_reply_begins_with_a_name"] = {
+                "n_works": len(named), "works_left_out": [b for b in bat if b not in named],
+                "matched_random_sets": {k: v for k, v in set_test(rows, named, "rand").items() if not isinstance(v, (list, dict))},
+                "magnitude_matched_random_sets": {k: v for k, v in set_test(rows, named, "magnitude").items() if not isinstance(v, (list, dict))},
+                "mean_drop_canon_in_the_works_left_out": float(np.mean([rows[b]["drop"]["canon"] for b in bat if b not in named]))}
         res["by_work"] = {i: {"untouched": rows[i]["untouched"], "drop_canon": rows[i]["drop"]["canon"],
                               "drop_random_mean": float(np.mean([v for k, v in rows[i]["drop"].items() if k.startswith("rand:")] or [np.nan])),
                               "reply": rows[i]["reply"], "reply_canon_off": rows[i]["reply_canon"]} for i in bat + rel}

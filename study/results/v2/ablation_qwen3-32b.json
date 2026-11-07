@@ -2547,6 +2547,39 @@
     "Green Hornet": 1.0531454895925263
    }
   },
+  "post_hoc_works_whose_untouched_reply_begins_with_a_name": {
+   "n_works": 27,
+   "works_left_out": [
+    "Batman '66",
+    "The Dark Knight",
+    "Batman R.I.P.",
+    "Arkham City",
+    "The Batman"
+   ],
+   "matched_random_sets": {
+    "n_sets": 200,
+    "smallest_possible_p": 0.004975124378109453,
+    "mean_drop_canon": 2.616462664836488,
+    "mean_drop_random_sets_mean": 0.017201189332333864,
+    "mean_drop_random_sets_max": 0.11306824187110272,
+    "random_sets_at_least_canon": 0,
+    "p": 0.004975124378109453,
+    "works_where_canon_beats_every_set": 21,
+    "works_where_canon_beats_the_median_set": 22
+   },
+   "magnitude_matched_random_sets": {
+    "n_sets": 200,
+    "smallest_possible_p": 0.004975124378109453,
+    "mean_drop_canon": 2.616462664836488,
+    "mean_drop_random_sets_mean": 0.01752930685280434,
+    "mean_drop_random_sets_max": 0.11579934482546743,
+    "random_sets_at_least_canon": 0,
+    "p": 0.004975124378109453,
+    "works_where_canon_beats_every_set": 20,
+    "works_where_canon_beats_the_median_set": 22
+   },
+   "mean_drop_canon_in_the_works_left_out": 1.1414484786316392
+  },
   "by_work": {
    "1943 serial": {
     "untouched": -8.029705084441035,
@@ -3331,6 +3364,39 @@
     "Iron Man": 1.211353236272843,
     "Green Hornet": 3.914160449428051
    }
+  },
+  "post_hoc_works_whose_untouched_reply_begins_with_a_name": {
+   "n_works": 27,
+   "works_left_out": [
+    "Batman '66",
+    "The Dark Knight",
+    "Batman R.I.P.",
+    "Arkham City",
+    "The Batman"
+   ],
+   "matched_random_sets": {
+    "n_sets": 20,
+    "smallest_possible_p": 0.047619047619047616,
+    "mean_drop_canon": 5.535548034173927,
+    "mean_drop_random_sets_mean": 0.008742168724276226,
+    "mean_drop_random_sets_max": 0.11177867083583103,
+    "random_sets_at_least_canon": 0,
+    "p": 0.047619047619047616,
+    "works_where_canon_beats_every_set": 26,
+    "works_where_canon_beats_the_median_set": 26
+   },
+   "magnitude_matched_random_sets": {
+    "n_sets": 20,
+    "smallest_possible_p": 0.047619047619047616,
+    "mean_drop_canon": 5.535548034173927,
+    "mean_drop_random_sets_mean": 0.024328920328683876,
+    "mean_drop_random_sets_max": 0.19641250302812643,
+    "random_sets_at_least_canon": 0,
+    "p": 0.047619047619047616,
+    "works_where_canon_beats_every_set": 26,
+    "works_where_canon_beats_the_median_set": 26
+   },
+   "mean_drop_canon_in_the_works_left_out": 4.2903814339379105
   },
   "by_work": {
    "1943 serial": {
@@ -4902,6 +4968,39 @@
     "Green Hornet": -0.026097445886381188
    }
   },
+  "post_hoc_works_whose_untouched_reply_begins_with_a_name": {
+   "n_works": 27,
+   "works_left_out": [
+    "Batman '66",
+    "The Dark Knight",
+    "Batman R.I.P.",
+    "Arkham City",
+    "The Batman"
+   ],
+   "matched_random_sets": {
+    "n_sets": 20,
+    "smallest_possible_p": 0.047619047619047616,
+    "mean_drop_canon": 0.5051210776965246,
+    "mean_drop_random_sets_mean": 0.01007728059445286,
+    "mean_drop_random_sets_max": 0.06276329394887309,
+    "random_sets_at_least_canon": 0,
+    "p": 0.047619047619047616,
+    "works_where_canon_beats_every_set": 14,
+    "works_where_canon_beats_the_median_set": 19
+   },
+   "magnitude_matched_random_sets": {
+    "n_sets": 20,
+    "smallest_possible_p": 0.047619047619047616,
+    "mean_drop_canon": 0.5051210776965246,
+    "mean_drop_random_sets_mean": 0.0016159659260743316,
+    "mean_drop_random_sets_max": 0.032225132847756924,
+    "random_sets_at_least_canon": 0,
+    "p": 0.047619047619047616,
+    "works_where_canon_beats_every_set": 15,
+    "works_where_canon_beats_the_median_set": 20
+   },
+   "mean_drop_canon_in_the_works_left_out": -0.05922406436285303
+  },
   "by_work": {
    "1943 serial": {
     "untouched": -8.029705084441035,
@@ -5686,6 +5785,39 @@
     "Iron Man": -0.13546759112052342,
     "Green Hornet": 0.9979450861742807
    }
+  },
+  "post_hoc_works_whose_untouched_reply_begins_with_a_name": {
+   "n_works": 27,
+   "works_left_out": [
+    "Batman '66",
+    "The Dark Knight",
+    "Batman R.I.P.",
+    "Arkham City",
+    "The Batman"
+   ],
+   "matched_random_sets": {
+    "n_sets": 20,
+    "smallest_possible_p": 0.047619047619047616,
+    "mean_drop_canon": 1.8322072911479612,
+    "mean_drop_random_sets_mean": 0.010422473723513605,
+    "mean_drop_random_sets_max": 0.0421635832133012,
+    "random_sets_at_least_canon": 0,
+    "p": 0.047619047619047616,
+    "works_where_canon_beats_every_set": 23,
+    "works_where_canon_beats_the_median_set": 23
+   },
+   "magnitude_matched_random_sets": {
+    "n_sets": 20,
+    "smallest_possible_p": 0.047619047619047616,
+    "mean_drop_canon": 1.8322072911479612,
+    "mean_drop_random_sets_mean": 0.01840853794634192,
+    "mean_drop_random_sets_max": 0.09017413245601345,
+    "random_sets_at_least_canon": 0,
+    "p": 0.047619047619047616,
+    "works_where_canon_beats_every_set": 23,
+    "works_where_canon_beats_the_median_set": 23
+   },
+   "mean_drop_canon_in_the_works_left_out": 1.2825927099689103
   },
   "by_work": {
    "1943 serial": {
