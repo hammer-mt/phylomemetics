@@ -56,7 +56,7 @@
     for (const [a, b] of (D.links || [])) {
       if (!regionById[a] || !regionById[b]) continue;
       const [x1, y1] = centre(regionById[a]), [x2, y2] = centre(regionById[b]);
-      const len = Math.hypot(x2 - x1, y2 - y1), ux = (x2 - x1) / len, uy = (y2 - y1) / len, pad = 78;
+      const len = Math.hypot(x2 - x1, y2 - y1), ux = (x2 - x1) / len, uy = (y2 - y1) / len, pad = Math.min(96, len * 0.4);
       svg.append(s('line', { x1: x1 + ux * pad, y1: y1 + uy * pad, x2: x2 - ux * pad, y2: y2 - uy * pad, class: 'link', 'marker-end': 'url(#arr)' }));
     }
     for (const r of D.regions) {
@@ -77,7 +77,7 @@
         g.append(p);
         const mark = { held: '✓', mixed: '~', failed: '×', planned: '◆', seed: '?' }[st];
         if (mark) g.append(s('text', { x, y, class: 'hexmark' + (st === 'seed' ? ' onland' : '') }, mark));
-        if (idea.status !== 'done' && (idea.priority || 0) >= 4.5) g.append(s('circle', { cx: x, cy: y, r: S * 0.6, class: 'treasure' }));
+        if (idea.status !== 'done' && (idea.priority || 0) >= 4.5) { g.append(s('circle', { cx: x, cy: y, r: S * 0.62, class: 'treasure' })); if (!mark) g.append(s('text', { x, y, class: 'hexmark onland' }, '★')); }
         svg.append(g);
         hexEls[idea.id] = p;
       });
@@ -101,7 +101,7 @@
     document.querySelectorAll('.rlabel').forEach(l => { l.textContent = bio ? l.dataset.bio : l.dataset.name; });
     $('bioToggle').setAttribute('aria-pressed', String(bio));
   }
-  function row(dt, dd) { return dd ? [h('dt', {}, dt), h('dd', {}, dd)] : []; }
+  function row(dt, dd) { return dd ? [h('dt', {}, dt), h('dd', {}, String(dd).replace(/`/g, ''))] : []; }
   function select(id, scroll) {
     selected = id;
     for (const k in hexEls) hexEls[k].classList.toggle('sel', k === id);
