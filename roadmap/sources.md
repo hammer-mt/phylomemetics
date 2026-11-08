@@ -174,7 +174,6 @@ Rank A: read first. B: read when working in that area. C: background.
 - **A** [da Silva and Tehrani 2016](https://doi.org/10.1098/rsos.150645). The paper's own model; D statistic plus autologistic control per trait
 - **A** [Nunn et al. 2010, Simulating trait evolution for cross-cultural comparison](https://doi.org/10.1098/rstb.2010.0009). RI and CI do not diagnose borrowing
 - **A** [Greenhill, Currie and Gray 2009](https://doi.org/10.1098/rspb.2008.1944). Trees are robust to realistic borrowing; simulation template
-- **A** [Acerbi and Stubbersfield 2023; Perez et al. 2024](https://arxiv.org/abs/2407.04503). LLM transmission chains: cheap known-descent text
 - **B** [Tehrani 2013, The phylogeny of Little Red Riding Hood](https://doi.org/10.1371/journal.pone.0078871). Worked example reporting RI, delta and Q-residual for a story
 - **B** [Gray, Bryant and Greenhill 2010, On the shape and fabric of human history](https://doi.org/10.1098/rstb.2010.0162). Tree-likeness as a continuum; delta and Q-residual in culture
 - **B** [Collard, Shennan and Tehrani 2006](https://doi.org/10.1016/j.evolhumbehav.2005.07.003). Branching versus blending via RI
@@ -183,6 +182,7 @@ Rank A: read first. B: read when working in that area. C: background.
 - **B** [Bennett, Li and Ma 2003; Cilibrasi and Vitányi 2005](https://doi.org/10.1038/scientificamerican0603-76). Compression distance, the cheapest rival; not a ground-truth dataset
 - **B** [Baret, Macé and Robinson 2006, Testing methods on an artificially created textual tradition](https://wiki.helsinki.fi/xwiki/bin/view/stemmatology/Tradition%2C%20artificial/). Notre Besoin, the artificial tradition with French text
 - **B** [Camps, Randon-Furling and Godreau 2025, On the transmission of texts: written cultures as complex systems](https://arxiv.org/abs/2505.19246). Realistic stemma shapes and loss rates for simulation
+- **B** [Acerbi and Stubbersfield 2023; Perez et al. 2024](https://arxiv.org/abs/2407.04503). LLM transmission chains: cheap known-descent text
 - **C** [Liben-Nowell and Kleinberg 2008](https://doi.org/10.1073/pnas.0708471105). A real, deep diffusion tree; text does not mutate
 - **C** [Bortolini et al. 2017; Ross, Greenhill and Atkinson 2013](https://doi.org/10.1073/pnas.1614395114). Folktale diffusion without trees
 - **C** [Temkin (Tëmkin) and Eldredge 2007; O'Brien, Darwent and Lyman 2001](https://doi.org/10.1086/510463). Reticulation in material culture; cladistics on artefacts
@@ -226,9 +226,9 @@ Rank A: read first. B: read when working in that area. C: background.
 - **A** [Lerique and Roth 2018, Cognitive Science 42:188–219](https://doi.org/10.1111/cogs.12494). Natural rewording pairs on public data
 - **A** [Leskovec, Backstrom and Kleinberg 2009, KDD; SNAP data](https://snap.stanford.edu/data/memetracker9.html). Largest public meme-variant corpus
 - **A** [Tan, Lee and Pang 2014, ACL](https://arxiv.org/abs/1405.1438). Selection with author and topic fixed
-- **A** [Acerbi and Stubbersfield 2023, PNAS](https://doi.org/10.1073/pnas.2313790120). LLM chains reproduce human content biases
 - **B** [Adamic, Lento, Adar and Ng 2016, WSDM](https://arxiv.org/abs/1402.6792). Cleanest evidence of mutation and selection in text; data closed
 - **B** [Weng et al. 2012, Sci. Rep](https://doi.org/10.1038/srep00335). The content-free null
+- **B** [Acerbi and Stubbersfield 2023, PNAS](https://doi.org/10.1073/pnas.2313790120). LLM chains reproduce human content biases
 - **B** [Atran 2001, Human Nature](https://doi.org/10.1007/s12110-001-1003-0). Inference, not imitation
 - **B** [Aunger (ed.) 2000, *Darwinizing Culture*](https://doi.org/10.1093/acprof:oso/9780192632449.001.0001). Holds the Sperber, Bloch, Kuper, Boyd and Richerson, and Hull chapters
 - **B** [Chavalarias and Cointet 2013, PLoS ONE](https://doi.org/10.1371/journal.pone.0054847). Uses "phylomemetic patterns" in its title; word-based rival. Corrected in the check: it is not the origin of the word. Howe and Windram 2011, "Phylomemetics—Evolutionary Analysis beyond the Gene", PLoS Biology (doi:10.1371/journal.pbio.1001069), is two years earlier; who coined it first is
@@ -243,20 +243,23 @@ Rank A: read first. B: read when working in that area. C: background.
 
 - **A** [Henrich & Boyd 2002, *J. Cogn. Cult.*](https://doi.org/10.1163/156853702320281836). Formal proof that discrete replicators are unnecessary; gives P1 its testable form
 - **A** [Acerbi, Charbonneau, Miton & Scott-Phillips 2021, *Evol. Hum. Sci.*](https://doi.org/10.1017/ehs.2021.47). Population-level signatures that separate copying from convergent transformation
+- **A** [Acerbi & Stubbersfield 2023, *PNAS*](https://osf.io/6v2ps/). LLM chains reproduce five human content biases; reusable materials
+- **A** [Perez et al. 2024 (ICLR 2025)](https://iclr.cc/virtual/2025/poster/28880). LLM telephone-game attractors, model-dependent
 - **A** [Robertson et al. 2023, *Nat. Hum. Behav.*; Matias et al. 2021, *Sci. Data*](https://doi.org/10.1038/s41562-023-01538-4). Randomised, public, very large test of content selection
 - **A** [Mesoudi 2021, *Phil. Trans. B*](https://doi.org/10.1098/rstb.2020.0053). Current synthesis: selection and biased transformation both act
-- **A** [Leroi et al. 2020; Kandler, Wilder & Fortunato 2017; O'Dwyer & Kandler 2017; Karjus et al. 2020](https://doi.org/10.1038/s41562-020-0844-7). Why neutral tests on frequency data are weak, and what to do instead
+- **A** [Leroi et al. 2020; Kandler, Wilder & Fortunato 2017; O'Dwyer & Kandler 2017; Karjus et al. 2020](https://arxiv.org/abs/1702.08506). Why neutral tests on frequency data are weak, and what to do instead
 - **A** [Mesoudi, Whiten & Dunbar 2006; Kashima 2000; Stubbersfield et al. 2015; Eriksson & Coultas 2014](https://doi.org/10.1348/000712605x85871). The transmission-chain content-bias canon
-- **B** [Evans & Giometto 2011; Acerbi & Bentley 2014](https://arxiv.org/abs/1105.4044). Corrected turnover formula; turnover profile as bias signature
+- **B** [Evans & Giometto 2011; Acerbi & Bentley 2014](https://bura.brunel.ac.uk/bitstream/2438/20332/2/FullText.pdf). Corrected turnover formula; turnover profile as bias signature
 - **B** [Stubbersfield 2022, *Culture and Evolution*](https://doi.org/10.1556/2055.2022.00024). Review of content biases by transmission phase
 - **B** [Norenzayan et al. 2006; Purzycki & Willard 2015](https://doi.org/10.1207/s15516709cog0000_68). MCI result and its critique
 - **B** [Heath, Bell & Sternberg 2001; Berger & Milkman 2012](https://doi.org/10.1037/0022-3514.81.6.1028). Emotional selection; arousal and virality
 - **B** [Griffiths & Kalish 2007; Ren et al. 2024; Zhu & Griffiths 2024](https://arxiv.org/abs/2404.04286). Chains converge to the prior; applied to LLMs
 - **B** [Mauch et al. 2015; Lambert et al. 2020](https://doi.org/10.1098/rsos.150081). Automatic units accepted without a replicator claim
 - **B** [Youngblood 2019a, 2019b](https://doi.org/10.1371/journal.pone.0211860). Turnover plus ABC on documented descent; design template
-- **B** [Kuhn, Perc & Helbing 2014](https://doi.org/10.2139/ssrn.2426903). Quantitative n-gram meme score along citations; the rival for seed 6
+- **B** [Kuhn, Perc & Helbing 2014, *Phys. Rev. X* 4, 041036](https://doi.org/10.1103/PhysRevX.4.041036). Quantitative n-gram meme score along citations; the rival for seed 6
 - **B** [Karsdorp & van den Bosch 2016](https://doi.org/10.1098/rsos.160071). Age-dependent selection in story retellings
 - **B** [Acerbi et al. 2016, *Sci. Rep.*](https://doi.org/10.1038/srep36068). Conformity not identifiable from population patterns
+- **B** [Movva, Peng, Garg, Kleinberg & Pierson 2025 (ICML 2025)](https://github.com/rmovva/HypotheSAEs). Nearest method precedent: interpretable features for hypothesis generation on text; already applied to the Upworthy headlines
 - **C** [Vaesen et al. 2016; Fay et al. 2019; Henrich 2004; Kline & Boyd 2010](https://doi.org/10.1073/pnas.1520288113). The population-size dispute
 - **C** [Berger & Packard 2018; Askin & Mauskapf 2017](https://doi.org/10.1177/0956797618759465). Typicality and success
 - **C** [Cavalli-Sforza & Feldman 1981; Boyd & Richerson 1985; Sperber 1996; Mesoudi 2011](https://doi.org/10.1515/9780691209357). Foundations

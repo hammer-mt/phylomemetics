@@ -1109,7 +1109,7 @@
   "cite": "Acerbi and Stubbersfield 2023; Perez et al. 2024",
   "url": "https://arxiv.org/abs/2407.04503",
   "why": "LLM transmission chains: cheap known-descent text",
-  "priority": "A",
+  "priority": "B",
   "topic": "Cultural phylogenetics"
  },
  {
@@ -1389,7 +1389,7 @@
   "cite": "Acerbi and Stubbersfield 2023, PNAS",
   "url": "https://doi.org/10.1073/pnas.2313790120",
   "why": "LLM chains reproduce human content biases",
-  "priority": "A",
+  "priority": "B",
   "topic": "Classical and internet memetics"
  },
  {
@@ -1470,6 +1470,20 @@
   "topic": "Cultural evolution"
  },
  {
+  "cite": "Acerbi & Stubbersfield 2023, *PNAS*",
+  "url": "https://osf.io/6v2ps/",
+  "why": "LLM chains reproduce five human content biases; reusable materials",
+  "priority": "A",
+  "topic": "Cultural evolution"
+ },
+ {
+  "cite": "Perez et al. 2024 (ICLR 2025)",
+  "url": "https://iclr.cc/virtual/2025/poster/28880",
+  "why": "LLM telephone-game attractors, model-dependent",
+  "priority": "A",
+  "topic": "Cultural evolution"
+ },
+ {
   "cite": "Robertson et al. 2023, *Nat. Hum. Behav.*; Matias et al. 2021, *Sci. Data*",
   "url": "https://doi.org/10.1038/s41562-023-01538-4",
   "why": "Randomised, public, very large test of content selection",
@@ -1485,14 +1499,14 @@
  },
  {
   "cite": "Evans & Giometto 2011; Acerbi & Bentley 2014",
-  "url": "https://arxiv.org/abs/1105.4044",
+  "url": "https://bura.brunel.ac.uk/bitstream/2438/20332/2/FullText.pdf",
   "why": "Corrected turnover formula; turnover profile as bias signature",
   "priority": "B",
   "topic": "Cultural evolution"
  },
  {
   "cite": "Leroi et al. 2020; Kandler, Wilder & Fortunato 2017; O'Dwyer & Kandler 2017; Karjus et al. 2020",
-  "url": "https://doi.org/10.1038/s41562-020-0844-7",
+  "url": "https://arxiv.org/abs/1702.08506",
   "why": "Why neutral tests on frequency data are weak, and what to do instead",
   "priority": "A",
   "topic": "Cultural evolution"
@@ -1547,8 +1561,8 @@
   "topic": "Cultural evolution"
  },
  {
-  "cite": "Kuhn, Perc & Helbing 2014",
-  "url": "https://doi.org/10.2139/ssrn.2426903",
+  "cite": "Kuhn, Perc & Helbing 2014, *Phys. Rev. X* 4, 041036",
+  "url": "https://doi.org/10.1103/PhysRevX.4.041036",
   "why": "Quantitative n-gram meme score along citations; the rival for seed 6",
   "priority": "B",
   "topic": "Cultural evolution"
@@ -1586,6 +1600,13 @@
   "url": "https://doi.org/10.1515/9780691209357",
   "why": "Foundations",
   "priority": "C",
+  "topic": "Cultural evolution"
+ },
+ {
+  "cite": "Movva, Peng, Garg, Kleinberg & Pierson 2025 (ICML 2025)",
+  "url": "https://github.com/rmovva/HypotheSAEs",
+  "why": "Nearest method precedent: interpretable features for hypothesis generation on text; already applied to the Upworthy headlines",
+  "priority": "B",
   "topic": "Cultural evolution"
  },
  {
