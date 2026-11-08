@@ -19,11 +19,11 @@
     return e;
   }
   const STATUS = {
-    held: ['Run: held up', 'held'], mixed: ['Run: mixed', 'mixed'], failed: ['Run: did not hold', 'failed'],
+    held: ['Run: held up', 'held'], mixed: ['Run: mixed', 'mixed'], failed: ['Run: did not hold', 'failed'], inconclusive: ['Run: could not tell', 'inconclusive'],
     planned: ['Planned earlier, not run', 'planned'], registered: ['Design registered', 'registered'], seed: ['Idea only', 'seed'],
   };
   const stateOf = i => i.status === 'done' ? (i.verdict || 'mixed') : i.status;
-  const ORDER = { held: 0, mixed: 1, failed: 2, planned: 3, registered: 4, seed: 5 };
+  const ORDER = { held: 0, mixed: 1, failed: 2, inconclusive: 2.5, planned: 3, registered: 4, seed: 5 };
   const regionById = Object.fromEntries(D.regions.map(r => [r.id, r]));
   const ideas = D.ideas.slice();
   let selected = null, mode = 'all', bio = false;
@@ -75,7 +75,7 @@
         p.addEventListener('click', () => select(idea.id, false));
         p.addEventListener('keydown', ev => { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); select(idea.id, false); } });
         g.append(p);
-        const mark = { held: '✓', mixed: '~', failed: '×', planned: '◆', seed: '?' }[st];
+        const mark = { held: '✓', mixed: '~', failed: '×', inconclusive: '–', planned: '◆', seed: '?' }[st];
         if (mark) g.append(s('text', { x, y, class: 'hexmark' + (st === 'seed' ? ' onland' : '') }, mark));
         if (idea.status !== 'done' && (idea.priority || 0) >= 4.5) { g.append(s('circle', { cx: x, cy: y, r: S * 0.62, class: 'treasure' })); if (!mark) g.append(s('text', { x, y, class: 'hexmark onland' }, '★')); }
         svg.append(g);
@@ -160,7 +160,7 @@
   function drawList(id, items) { $(id).replaceChildren(...(items || []).map(t => h('li', {}, t))); }
   function drawBiology() {
     $('bioBody').replaceChildren(...D.biology.map(b => h('tr', b.idea ? { class: 'rowlink', onclick: () => select(b.idea, true) } : {},
-      h('td', {}, h('strong', {}, b.tool), h('div', { class: 'small' }, b.does || '')), h('td', {}, b.analogue, b.experiment ? h('div', { class: 'small' }, 'Try: ' + b.experiment) : null),
+      h('td', {}, h('strong', {}, b.tool), h('div', { class: 'small' }, b.does || '')), h('td', {}, String(b.analogue).replace(/`/g, ''), b.experiment ? h('div', { class: 'small' }, 'Try: ' + String(b.experiment).replace(/`/g, '')) : null),
       h('td', {}, b.feasibility || ''), h('td', { class: 'num' }, b.idea || ''))));
     $('landmarks').replaceChildren(...D.landmarks.map(l => h('div', { class: 'sheet' },
       h('div', { class: 'eyebrow' }, l.when), h('h3', {}, l.who), h('p', { class: 'small' }, l.gave),

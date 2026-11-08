@@ -62,7 +62,7 @@
    "col": 0,
    "row": 0,
    "blurb": "Premise P1. Does a firing neuron measure a meme? Reliability and validity of the unit itself.",
-   "state": "Four small tests run, all mixed. No unit has been shown to follow an idea across rewording at scale, and there is no human check and no steering. Everything else rests on this."
+   "state": "Four small tests: the canon count held, the other three were mixed. No unit has been shown to follow an idea across rewording at scale, and there is no human check and no steering. Everything else rests on this."
   },
   {
    "id": "universality",
@@ -134,7 +134,7 @@
    "col": 0,
    "row": 2,
    "blurb": "Which memes and combinations succeed, and whether that can be predicted.",
-   "state": "One underpowered test, no signal. Content explains little of success unless author and timing are held fixed. Archives of randomised headline tests fix that."
+   "state": "One underpowered test that could not have found a signal. Content explains little of success unless author and timing are held fixed. Archives of randomised headline tests fix that."
   },
   {
    "id": "engineering",
@@ -152,7 +152,7 @@
    "col": 2,
    "row": 2,
    "blurb": "Hunches from marketing practice, made testable.",
-   "state": "About 35 hunches from practice, none measured."
+   "state": "A few dozen hunches from practice, none measured. Eighteen are in the database."
   },
   {
    "id": "uses",
@@ -290,7 +290,7 @@
    "id": "UN-04",
    "region": "universality",
    "status": "done",
-   "verdict": "mixed",
+   "verdict": "inconclusive",
    "priority": 0,
    "title": "Vision neurons on posters",
    "question": "Do image-model neurons find Batman memes in posters and covers?",
@@ -330,7 +330,7 @@
    "priority": 0,
    "title": "Heredity: adaptations carry their sources",
    "question": "With every name removed, do adaptations carry their documented source comic's optional units more than other comics'?",
-   "result": "Yes, in both models: 16% and 10% of comics beat the source against 47% by chance (exact p = 0.0026 and 0.00017), in 99.6% of 30,240 analysis variants. Word counts do as well (11%).",
+   "result": "Yes, in both models: 16% and 10% of comics beat the source against 47% by chance (exact p = 0.0026 and 0.00017). The pattern holds in 99.6% of 30,240 analysis variants across both models and both text versions. Word counts do as well (11%). Qwen's neurons failed the sequel check that word counts passed (4 of 7 against 6 of 7), and the placebo check passed only after two invalid targets were dropped.",
    "method": "Pre-registered E2: 9 adaptations, 12 comics, exact permutation test.",
    "rivals": "TF-IDF cosine and word presence. They matched the neurons.",
    "premise": "Shows heredity is measurable in these texts. Does not show neurons are needed.",
@@ -348,7 +348,7 @@
    "priority": 0,
    "title": "Do neurons add anything beyond shared words?",
    "question": "After word similarity is regressed out, does neuron inheritance still point to the source?",
-   "result": "Not for Qwen (p = 0.09 to 0.25). Marginally for Llama (p = 0.010 to 0.033), but that falls to 0.057 to 0.065 under the stricter nulls and is uncorrected for six tests. Word counts keep their signal with neurons removed.",
+   "result": "Not for Qwen (p = 0.09 to 0.25). Marginally for Llama (p = 0.010 to 0.033). Under the study's stricter nulls that becomes 0.017 to 0.065: the version with TF-IDF regressed out rises to 0.057 and 0.065, the other two stay at 0.017 to 0.021. None is corrected for six tests. Word counts keep their signal with neurons removed.",
    "method": "Pre-registered residual test over 32 by 12 pairs.",
    "rivals": "TF-IDF and word presence.",
    "premise": "The key test of P1's added value. Failed on the primary model.",
@@ -361,7 +361,7 @@
    "id": "LI-04",
    "region": "lineage",
    "status": "done",
-   "verdict": "mixed",
+   "verdict": "inconclusive",
    "priority": 0,
    "title": "The vigilante lineage",
    "question": "Do the Scarlet Pimpernel, Zorro, Batman and Iron Man show up as one family?",
@@ -413,7 +413,7 @@
    "id": "FI-01",
    "region": "fitness",
    "status": "done",
-   "verdict": "failed",
+   "verdict": "inconclusive",
    "priority": 0,
    "title": "Selection: do popular works' memes spread?",
    "question": "Do memes carried by popular early works spread further into later works?",
@@ -458,7 +458,7 @@
    "premise": "P1. The cleanest planned test of whether neurons see ideas when words change.",
    "bio": "Spike-in controls",
    "cost": "L: about 4,400 agent sessions and 3 days as designed; a trimmed version takes 1.5 days",
-   "risk": "Power is only 0.22 to 0.40 at the smallest effect of interest, and every story, reader and rater is one AI model family.",
+   "risk": "Power is only 0.22 to 0.40 at the smallest effect of interest. Claude writes and rates every story; the only outside checks are one Gemma 2 9B reader and Mike's blind audit of 60 stories.",
    "sources": [
     "preregistration/PREREGISTRATION.md (H1)",
     "preregistration/history/power_v4.json"
@@ -518,7 +518,7 @@
    "hypothesis": "'Single neurons are memes' is claimed only if five neurons beat one by less than 0.03 AUC.",
    "falsifier": "Five neurons, or the pooled hidden state, clearly beat one neuron.",
    "data": "The planted stories.",
-   "method": "One unit against five; neurons against hidden states at four layers.",
+   "method": "One unit against five; neurons against the same model's hidden state at one layer, chosen from four on development data.",
    "rivals": "The model's own hidden states.",
    "premise": "P1. Asks whether the neuron is the right unit or just one readout of a dense representation.",
    "bio": "One gene or a polygenic trait",
@@ -535,8 +535,8 @@
    "priority": 2.6,
    "title": "Are neurons easier to name than topics?",
    "question": "Can blind judges match labels to neurons better than to LDA topics or embedding clusters?",
-   "hypothesis": "Neuron labels beat a word-overlap floor and are at least as nameable as topics and clusters.",
-   "falsifier": "Topics or clusters are as nameable; neurons do not beat the word floor.",
+   "hypothesis": "Qwen neuron labels beat a word-overlap floor. Neurons are compared with topics and clusters with no direction predicted.",
+   "falsifier": "Neurons do not beat the word floor.",
    "data": "Labels written for units, topics and clusters on the planted stories.",
    "method": "Blind two-choice label test, 12 tests.",
    "rivals": "LDA topics, embedding clusters, word-overlap judge.",
@@ -554,8 +554,8 @@
    "priority": 3.0,
    "title": "Natural summaries annotated by hand",
    "question": "On real plot summaries labelled exhaustively for memes, which method agrees best with the annotators?",
-   "hypothesis": "Neurons match annotators at least as well as keywords and embeddings.",
-   "falsifier": "They trail both.",
+   "hypothesis": "The earlier plan predicts only that the Qwen neurons' mean AUC against the annotators is above 0.5. Keywords, embeddings and LLM reading are scored beside them with no prediction.",
+   "falsifier": "The neurons' mean AUC is not above 0.5.",
    "data": "237 name-masked natural summaries, to be annotated.",
    "method": "Two annotators plus an adjudicator; each method scored against them.",
    "rivals": "Keywords, embeddings, LLM reading.",
@@ -638,7 +638,7 @@
    "status": "planned",
    "priority": 3.6,
    "title": "Shakespeare: a fresh lineage",
-   "question": "Do loose film adaptations of Shakespeare carry their play's memes when names, settings and wording all differ?",
+   "question": "Do renamed film adaptations of Shakespeare (fewer than two of the play's principal names in the plot) carry their play's memes?",
    "hypothesis": "H5: neurons rank the true play above other plays for renamed adaptations.",
    "falsifier": "No better than chance, or no better than words.",
    "data": "40 plays and 54 films of 13 plays with documented sources (preregistration/works_shakespeare.json).",
@@ -647,7 +647,7 @@
    "premise": "P1 on a second lineage.",
    "bio": "A second model organism",
    "cost": "M. Deferred",
-   "risk": "Ground truth is weaker than it looks: 27 of 83 loose films rested on a Wikipedia category; Romeo and Juliet dominates. Power 0.17.",
+   "risk": "Ground truth was weaker than first assumed: 27 of the 83 renamed films rested on a Wikipedia category only, so the sample was cut to the 54 with lead-sentence or Wikidata evidence. Names are checked; setting and wording are not. Romeo and Juliet supplies 14 of the 54. Power 0.17.",
    "sources": [
     "preregistration/works_shakespeare.json"
    ],
@@ -689,7 +689,7 @@
    "premise": "Uses both. The first population-level test.",
    "bio": "Selection against neutral drift",
    "cost": "M. Deferred",
-   "risk": "Circular: the added works include direct adaptations of the predicted innovators, and 42 of 43 new works are from 1995 on.",
+   "risk": "All 39 new works are from 1995 on, so the 1967 to 1985 gap stays empty. Seven are direct adaptations of earlier comics, three of them of the predicted innovators; the plan excludes documented adaptations from an innovator's success, after a review found the first draft circular.",
    "sources": [
     "preregistration/works_batman_extended.json",
     "preregistration/analysis.py (run_t4)"
@@ -706,7 +706,7 @@
    "hypothesis": "H6: no rival dominates.",
    "falsifier": "Any rival is at least as accurate and no dearer.",
    "data": "The planted stories; timings already measured.",
-   "method": "Cost per story at 34 memes against accuracy, 17 methods.",
+   "method": "Cost per story at 34 memes against accuracy, for every method.",
    "rivals": "Keywords, embeddings, topics, LLM judges, NLI.",
    "premise": "Practical value. One neuron pass costs about as much as one uncached LLM yes-or-no question.",
    "bio": "Sequencing cost per genome",
@@ -831,7 +831,7 @@
    "payoff": "An accuracy-against-size curve per unit type and a decision on which unit the rest of the registry should freeze.",
    "risk": "With about 100 development sentences per concept, larger sets are chosen noisily, which flatters single neurons. The dictionaries may reconstruct the 8-bit model poorly; report explained variance first.",
    "review": "Per-concept AUC on 20 against 20 items has an error near 0.08, so 'within 0.05' is now a pooled claim. Fitted probes on 100 sentences would overfit; replaced by unweighted top-k averages. Comparison moved to the base model the dictionaries were trained on. Depends on IN21.",
-   "priority": 4.0,
+   "priority": 4.5,
    "sources": [
     "Gurnee et al. 2023",
     "Arora et al. 2026",
@@ -1497,7 +1497,7 @@
    "cost": "S. About 3,500 short passages by API (under 30 US dollars), one extraction pass of under an hour, arithmetic on a laptop; under two days.",
    "payoff": "A direct test of whether meme space has rows and columns: a property of a missing entry is predicted, then checked. If it works, the catalogue can be extended to motifs nobody has written passages for, including the cells the folktale index itself leaves empty.",
    "risk": "Row and column words can leak: stepmother passages share vocabulary even when the usual words are avoided, so the predicted direction may be a role detector plus an act detector. Scoring against row and column neighbours limits this. Family roles and violent acts are also an easy grid; a pass may not carry to subtler motifs.",
-   "review": "Promoted from a seed and made concrete by the reviewer, to take the Mendeleev slot from AT-26, which US26 already covers. Weakness: embedding arithmetic will probably tie the direction test, so the informative part is whether a single neuron sits where the table says; the grid is an easy one.",
+   "review": "Promoted from a seed and made concrete by the reviewer, to take the Mendeleev slot from AT-S1, which US26 already covers. Weakness: embedding arithmetic will probably tie the direction test, so the informative part is whether a single neuron sits where the table says; the grid is an easy one.",
    "priority": 3.0,
    "sources": [
     "Li et al. 2024, arXiv:2410.19750",
@@ -1515,7 +1515,7 @@
    "priority": 0,
    "title": "Mendeleev gaps with catalogue entries",
    "question": "Do combinations of admitted catalogue motifs that older films never used turn up more often in films released after the model was published than matched unused combinations?",
-   "note": "Was design AT-26; demoted because US26 already tests unit gaps against later films. At the study's 3% presence bar (study/paper/paper.md, section 2.3) almost no pair is unseen in 57,000 plots and chance 'realises' over half of pairs: use larger combinations and a blind reader as judge. Rival: a keyword table."
+   "note": "Was design AT-S1; demoted because US26 already tests unit gaps against later films. At the study's 3% presence bar (study/paper/paper.md, section 2.3) almost no pair is unseen in 57,000 plots and chance 'realises' over half of pairs: use larger combinations and a blind reader as judge. Rival: a keyword table."
   },
   {
    "id": "AT-S2",
@@ -1810,14 +1810,15 @@
    "priority": 0,
    "title": "Copy the product or the instructions",
    "question": "Do chains that regenerate a story from an outline keep more units than chains that paraphrase the finished text, as Blackmore claims?",
-   "note": "Blackmore's distinction is confirmed; which mode she ranks as more faithful is from memory. Rival: content-word retention. A cheap extra arm for ME22."
+   "note": "Blackmore's distinction is confirmed; which mode she ranks as more faithful is from memory. Rival: content-word retention. A cheap extra arm for ME22.",
+   "overlaps": "A registered design or another seed asks nearly the same question: CE-S6."
   },
   {
    "id": "ME-S9",
    "region": "memetics",
    "status": "seed",
    "priority": 0,
-   "title": "Linkage along citations (was ME26)",
+   "title": "Linkage along citations",
    "question": "Are pairs of units passed from a cited paper to a citing paper together more often than their separate rates predict?",
    "note": "Demoted. Units that co-fire inside the model and words in set phrases would stay linked across periods whatever culture does, and a shared subtopic gives the same pattern. It needs pairs with no background association before it can fail."
   },
@@ -2082,7 +2083,8 @@
    "priority": 0,
    "title": "Twin films as a convergence control",
    "question": "Can any method tell documented descent (remakes, adaptations) from twin films, which have similar plots and no documented link?",
-   "note": "Added in review. Wikipedia's 'Twin films' article lists roughly 200 pairs, 1912 to 2026 (CC BY-SA); some share a pitched script, so 'independent' is soft. This is biology's convergence problem: similarity without descent. Rivals: BM25, story-emb, an LLM reader. Every method at chance would be a useful limit."
+   "note": "Added in review. Wikipedia's 'Twin films' article lists roughly 200 pairs, 1912 to 2026 (CC BY-SA); some share a pitched script, so 'independent' is soft. This is biology's convergence problem: similarity without descent. Rivals: BM25, story-emb, an LLM reader. Every method at chance would be a useful limit.",
+   "overlaps": "A registered design or another seed asks nearly the same question: CJ-22."
   },
   {
    "id": "LI-S10",
@@ -2323,7 +2325,8 @@
    "priority": 0,
    "title": "Descent or attractor",
    "question": "Can incidental 'hitchhiker' units separate pairs with documented descent from pairs documented as independent invention?",
-   "note": "Answers Sperber's objection that shared traits need no line of descent. The lexical rival is rare shared words and named details. The labelled pairs are the work."
+   "note": "Answers Sperber's objection that shared traits need no line of descent. The lexical rival is rare shared words and named details. The labelled pairs are the work.",
+   "overlaps": "A registered design or another seed asks nearly the same question: CJ-22."
   },
   {
    "id": "RX-S6",
@@ -2593,7 +2596,8 @@
    "priority": 0,
    "title": "Price equation split per unit",
    "question": "Is change in a unit's frequency along documented descent carried more by selection among parent works or by transformation during adaptation?",
-   "note": "Wikidata P144, with number of adaptations as fitness; PO21's 1,363 checked pairs are a starting sample. Sperber against Dawkins in one number. Rival: the same split on word presence and on LLM-coded tropes."
+   "note": "Wikidata P144, with number of adaptations as fitness; PO21's 1,363 checked pairs are a starting sample. Sperber against Dawkins in one number. Rival: the same split on word presence and on LLM-coded tropes.",
+   "overlaps": "A registered design or another seed asks nearly the same question: CE-24."
   },
   {
    "id": "PO-S7",
@@ -2825,7 +2829,8 @@
    "priority": 0,
    "title": "Does the idea survive the word swap?",
    "question": "When one word of a quotation is replaced during copying, do concept units stay on, and do meaning-preserving swaps spread further than meaning-changing ones?",
-   "note": "MemeTracker quotation families with Lerique and Roth's substitution pairs (SNAP, no licence stated). The attractor there is lexical, so WordNet synonymy and embedding cosine are strong rivals."
+   "note": "MemeTracker quotation families with Lerique and Roth's substitution pairs (SNAP, no licence stated). The attractor there is lexical, so WordNet synonymy and embedding cosine are strong rivals.",
+   "overlaps": "A registered design or another seed asks nearly the same question: ME-23."
   },
   {
    "id": "CE-S3",
@@ -2879,7 +2884,8 @@
    "priority": 0,
    "title": "Two-source works in the wild",
    "question": "Do real works with two documented sources show the same segregating or blending pattern as the generated blends in CE23?",
-   "note": "Wikidata lists 1,277 works with exactly two 'based on' sources and English Wikipedia articles for all three, 302 of them films (query of 2026-11-08). Plot-section coverage is unchecked, and one source may itself be an adaptation of the other. Answers the objection that LLM writers blend unlike human authors."
+   "note": "Wikidata lists 1,277 works with exactly two 'based on' sources and English Wikipedia articles for all three, 302 of them films (query of 2026-11-08). Plot-section coverage is unchecked, and one source may itself be an adaptation of the other. Answers the objection that LLM writers blend unlike human authors.",
+   "overlaps": "A registered design or another seed asks nearly the same question: AT-23."
   },
   {
    "id": "CE-S9",
@@ -3156,7 +3162,8 @@
    "priority": 0,
    "title": "Lindy and the thirty-year return",
    "question": "Does a meme's age forecast its survival, and do faded memes come back after about thirty years?",
-   "note": "Two rules named in the paper's future-work section. Needs meme dates that do not come from the neurons (trope or keyword labels on dated films), or the test is circular. Rivals: survival curves for words; 'last decade's frequency persists'."
+   "note": "Two rules named in the paper's future-work section. Needs meme dates that do not come from the neurons (trope or keyword labels on dated films), or the test is circular. Rivals: survival curves for words; 'last decade's frequency persists'.",
+   "overlaps": "A registered design or another seed asks nearly the same question: CJ-23 and CJ-25."
   },
   {
    "id": "FI-S7",
@@ -3387,7 +3394,8 @@
    "priority": 0,
    "title": "Write in Qwen, read in Llama",
    "question": "Does a meme written into text by steering Qwen with its keywords banned get picked up by Llama's twin unit better than by word-matched units, word overlap or an LLM reader?",
-   "note": "Tests P2 through an intervention, not a correlation. Expect a null: the study's twin pairs fall to r = 0.14 on name-free text (`study/README.md`). Also a second way to make planted-meme stories for the paused pre-registration, with ground truth set by the push. About three days; depends on EN-21 finding handles that survive the ban."
+   "note": "Tests P2 through an intervention, not a correlation. Expect a null: the study's twin pairs fall to r = 0.14 on name-free text (`study/README.md`). Also a second way to make planted-meme stories for the paused pre-registration, with ground truth set by the push. About three days; depends on EN-21 finding handles that survive the ban.",
+   "overlaps": "A registered design or another seed asks nearly the same question: UN-27."
   },
   {
    "id": "EN-S5",
@@ -3441,7 +3449,8 @@
    "priority": 0,
    "title": "Add one meme, ask real readers",
    "question": "When one meme is added to or removed from matched fiction premises, does reader preference move, and did any method forecast the direction?",
-   "note": "Cost L. Needs an ethics note before registration: consented paid panel, fiction only, AI authorship disclosed, no targeting on personal traits, no raw-click outcome. Rivals: LLM-simulated readers, embeddings, human forecasters."
+   "note": "Cost L. Needs an ethics note before registration: consented paid panel, fiction only, AI authorship disclosed, no targeting on personal traits, no raw-click outcome. Rivals: LLM-simulated readers, embeddings, human forecasters.",
+   "overlaps": "A registered design or another seed asks nearly the same question: FI-25."
   },
   {
    "id": "CJ-21",
@@ -3638,7 +3647,8 @@
    "priority": 0,
    "title": "Does a bundle protect its members in retelling?",
    "question": "In LLM retelling chains, do the remaining parts of a meme bundle decay faster when one part has been removed from the seed story?",
-   "note": "The causal half of the memeplex claim ('none would be remembered alone'). Truth by construction, after Acerbi and Stubbersfield 2023. Rivals: keyword and LLM-judge detection of the parts. Laptop, small open models; follows CJ24. LLM retellers are not human audiences."
+   "note": "The causal half of the memeplex claim ('none would be remembered alone'). Truth by construction, after Acerbi and Stubbersfield 2023. Rivals: keyword and LLM-judge detection of the parts. Laptop, small open models; follows CJ24. LLM retellers are not human audiences.",
+   "overlaps": "A registered design or another seed asks nearly the same question: ME-26."
   },
   {
    "id": "CJ-S3",
@@ -3674,7 +3684,8 @@
    "priority": 0,
    "title": "Do rivals converge?",
    "question": "Does the distance between competing firms' descriptions of themselves shrink year on year, as 'memetic convergence' claims?",
-   "note": "Candidate dated public text: annual-report business sections on SEC EDGAR (not checked this session). Rivals: TF-IDF cosine and Mike's tag-count distance, likely winners because firms repeat words. Register as an expected loss that marks the method's boundary."
+   "note": "Candidate dated public text: annual-report business sections on SEC EDGAR (not checked this session). Rivals: TF-IDF cosine and Mike's tag-count distance, likely winners because firms repeat words. Register as an expected loss that marks the method's boundary.",
+   "overlaps": "A registered design or another seed asks nearly the same question: US-S8."
   },
   {
    "id": "CJ-S7",
@@ -3968,6 +3979,42 @@
    "title": "Stuffing pilot on the Batman files",
    "question": "Does pasting a few Batman sentences into masked plots of other hero films lift the study's canon score above reworded Batman texts?",
    "note": "Added in review. A one-day pilot for US21 using the study's committed texts and units plus fresh rewordings; it sets the paste doses and shows whether the problem is the pooling rule. Rivals: TF-IDF centroid, sentence embedding, an LLM asked whether it is a Batman story. Development data only, so it confirms nothing."
+  },
+  {
+   "id": "LI-S12",
+   "region": "lineage",
+   "status": "seed",
+   "priority": 0,
+   "title": "A hit's renamed children",
+   "question": "Can units find a hit's renamed offspring, the 'Die Hard on a ...' films, in a pool of unrelated films?",
+   "note": "Floated in the working session and never written up. Rivals: TF-IDF, embeddings and an LLM asked directly. Needs a defensible list of documented descendants."
+  },
+  {
+   "id": "RX-S10",
+   "region": "remix",
+   "status": "seed",
+   "priority": 0,
+   "title": "Creators as carriers",
+   "question": "Do the works of one creator carry a signature set of units into each franchise they touch (Miller, Moore, Nolan)?",
+   "note": "Floated in the working session. Girard's side of the question: people as the route by which memes travel."
+  },
+  {
+   "id": "RX-S11",
+   "region": "remix",
+   "status": "seed",
+   "priority": 0,
+   "title": "Who read whom: content plus an exposure graph",
+   "question": "Where it is known who was exposed to whom, as in an email archive or a follower graph, does a person's later writing take up the units of the people they read?",
+   "note": "The method sketched in Mike's public post on memetics and mimetics. Girard's theory needs exposure data; text alone cannot test it."
+  },
+  {
+   "id": "AT-S10",
+   "region": "atlas",
+   "status": "seed",
+   "priority": 0,
+   "title": "Finish labelling the canon",
+   "question": "What are the 27 core Batman units that still have no confident label?",
+   "note": "29 of the 56 core families have a confident label. Left unfinished in the working session."
   }
  ]
 }

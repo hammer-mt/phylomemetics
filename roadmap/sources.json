@@ -1367,8 +1367,8 @@
  {
   "cite": "Tan, Lee and Pang 2014, ACL",
   "url": "https://arxiv.org/abs/1405.1438",
-  "why": "Selection with author and topic fixed",
-  "priority": "A",
+  "why": "Selection with author and topic fixed. The data page now returns an error and held tweet ids only, so the data may not be usable",
+  "priority": "B",
   "topic": "Classical and internet memetics"
  },
  {
@@ -2098,5 +2098,47 @@
   "why": "Source of the Know Your Meme entry count",
   "priority": "C",
   "topic": "Datasets"
+ },
+ {
+  "cite": "Dawkins 1976, The Selfish Gene. Oxford University Press",
+  "url": "",
+  "why": "Where the meme was proposed",
+  "priority": "B",
+  "topic": "Classical and internet memetics"
+ },
+ {
+  "cite": "Blackmore 1999, The Meme Machine. Oxford University Press",
+  "url": "",
+  "why": "The fullest statement of memetics as a theory",
+  "priority": "C",
+  "topic": "Classical and internet memetics"
+ },
+ {
+  "cite": "Heylighen and Chielens 2009, Evolution of culture, memetics. Encyclopedia of Complexity and Systems Science",
+  "url": "",
+  "why": "The selection criteria that design ME-24 tests",
+  "priority": "B",
+  "topic": "Classical and internet memetics"
+ },
+ {
+  "cite": "Girard 1961, Deceit, Desire and the Novel (English translation 1965)",
+  "url": "",
+  "why": "Mimetic desire: people copy people. The rival account to memes spreading on their merits",
+  "priority": "B",
+  "topic": "Remix, novelty and influence"
+ },
+ {
+  "cite": "Ferguson, Everything is a Remix (video series)",
+  "url": "https://www.everythingisaremix.info/",
+  "why": "Copy, transform, combine: the claim that designs RX-21 and CJ-26 turn into a ledger",
+  "priority": "B",
+  "topic": "Remix, novelty and influence"
+ },
+ {
+  "cite": "Berl, Samarasinghe, Roberts, Jordan and Gavin 2021, Prestige and content biases together shape the cultural transmission of narratives. Evolutionary Human Sciences",
+  "url": "https://doi.org/10.1017/ehs.2021.37",
+  "why": "The human retelling data, coded by people, behind design CE-21",
+  "priority": "A",
+  "topic": "Cultural evolution"
  }
 ]

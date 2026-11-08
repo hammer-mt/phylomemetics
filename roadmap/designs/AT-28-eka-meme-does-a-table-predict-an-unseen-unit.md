@@ -48,7 +48,7 @@ Row and column words can leak: stepmother passages share vocabulary even when th
 
 ## Reviewer note
 
-Promoted from a seed and made concrete by the reviewer, to take the Mendeleev slot from AT-26, which US26 already covers. Weakness: embedding arithmetic will probably tie the direction test, so the informative part is whether a single neuron sits where the table says; the grid is an easy one.
+Promoted from a seed and made concrete by the reviewer, to take the Mendeleev slot from AT-S1, which US26 already covers. Weakness: embedding arithmetic will probably tie the direction test, so the informative part is whether a single neuron sits where the table says; the grid is an easy one.
 
 ## Sources
 

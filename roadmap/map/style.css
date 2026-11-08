@@ -37,7 +37,7 @@ a{color:var(--accent)}
 .small{font-size:.88rem;color:var(--muted)}
 .mono{font-family:var(--mono);font-size:.8rem}
 .pill{display:inline-block;font-family:var(--mono);font-size:.7rem;letter-spacing:.04em;padding:2px 8px;border-radius:999px;border:1px solid currentColor}
-.s-held{color:var(--held)} .s-mixed{color:var(--mixed)} .s-failed{color:var(--failed)}
+.s-held{color:var(--held)} .s-mixed{color:var(--mixed)} .s-failed{color:var(--failed)} .s-inconclusive{color:var(--muted)}
 .s-planned{color:var(--planned)} .s-registered{color:var(--accent)} .s-seed{color:var(--muted)}
 .s-solid{color:var(--held)} .s-partial{color:var(--mixed)} .s-weak{color:var(--failed)} .s-unknown{color:var(--muted)}
 /* chart */
@@ -50,7 +50,7 @@ a{color:var(--accent)}
 .chartscroll{overflow-x:auto;background:var(--sea);border:1px solid var(--line);border-radius:6px}
 .chartscroll svg{display:block;min-width:760px;width:100%;height:auto}
 .hex{cursor:pointer;stroke:var(--paper);stroke-width:1.2}
-.hex.held{fill:var(--held)} .hex.mixed{fill:var(--mixed)} .hex.failed{fill:var(--failed)}
+.hex.held{fill:var(--held)} .hex.mixed{fill:var(--mixed)} .hex.failed{fill:var(--failed)} .hex.inconclusive{fill:var(--muted)}
 .hex.planned{fill:var(--planned)} .hex.registered{fill:var(--land)} .hex.seed{fill:var(--fog);opacity:.62}
 .hex.dim{opacity:.13}
 .hex.sel{stroke:var(--ink);stroke-width:2.6}

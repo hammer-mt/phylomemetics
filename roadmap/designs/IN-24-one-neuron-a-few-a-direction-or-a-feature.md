@@ -1,6 +1,6 @@
 # IN-24: One neuron, a few, a direction or a feature?
 
-**Area:** The instrument · **Status:** design registered 8 November 2026, not run · **Priority:** 4.0 of 5
+**Area:** The instrument · **Status:** design registered 8 November 2026, not run · **Priority:** 4.5 of 5
 
 ## Question
 

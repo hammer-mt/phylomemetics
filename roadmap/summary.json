@@ -1,8 +1,8 @@
 {
  "known": [
   "A neuron reading is countable and repeatable. Batman has a core of units that no random set of 32 films has.",
-  "Heredity can be measured. With every name removed, adaptations carry their source comic's content (p = 0.0026 and 0.00017, in 99.6% of 30,240 analysis variants).",
-  "Word counts measure it just as well. On the primary model, words matched or beat neurons on every pre-registered test.",
+  "Heredity can be measured. With every name removed, adaptations carry their source comic's content (p = 0.0026 and 0.00017). The pattern holds in 99.6% of 30,240 analysis variants across both models and both text versions.",
+  "Word counts measure it just as well. On the primary model, words matched or beat neurons on every pre-registered test that had a word comparator.",
   "Agreement between two companies' models is mostly shared name and word detectors. It collapses when names are removed.",
   "A handful of units do behave like ideas: a funeral, a coin flip, the secret identity, and one revenge unit that picked the right sentence in 10 of 12 pairs with no revenge words.",
   "Outside this project, the evidence is that neurons are a better basis than random directions, that 1 to 5% of them recur across retrained models, and that plain prompting beats activation methods at steering text on the one large benchmark."

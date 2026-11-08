@@ -30,6 +30,7 @@ What the essay claims, and how firmly:
 What others found when they checked (all October 2026, none peer reviewed):
 
 - An outside retest by AI research agents ([IRSI](https://irsi.ai/notes/already-clean/)) got 78% when grading the authors' write-ups and 57 to 65% with an independent labeller, against 31% for random directions. Planted two-job mixtures were called one-job 21 to 40% of the time, so the grading cannot reliably see a mixed neuron when one is there.
+- A replication on Qwen3-0.6B and Qwen3-1.7B ([Batutin](https://andriybatutin.substack.com/p/we-tried-to-confirm-neural-networks), a blog post) found that labels held only at peak activation, that none of 50 neurons moved the tokens its label predicted when pushed or silenced, and that the labelling method gave 84% of a randomly initialised network's neurons one job against 52% for the trained one. Qwen3-1.7B is one of this project's models. A second replication on tiny self-trained models mostly supported the essay.
 - Neel Nanda's reply on LessWrong: superposition is still real, weak activations probably hold a lot of mixed content, and models hold more facts than they have neurons.
 - The sharpest objection for this project, from the same thread: showing that most neurons encode one concept is not the same as showing that most concepts are encoded by one neuron.
 
@@ -43,7 +44,7 @@ So three claims are being run together.
 
 The Batman study borrowed the unit and skipped the evidence standard.
 
-- It used Qwen3-8B and Llama 3.1 8B at 4-bit. Nobody has audited models this small or this compressed.
+- It used Qwen3-8B and Llama 3.1 8B at 4-bit. Nobody has audited the 8B 4-bit models.
 - It labelled units from their top eight sentences in a 3,700-sentence corpus. That is the top-examples method.
 - A unit counted as present when it beat 68 of 69 reference films. That is a rank within the corpus. It never asks whether the neuron is in its own strong range, which is the only range the essay vouches for.
 - Nothing in the repository turns a neuron up or down (`study/extract.py` only records).
@@ -51,10 +52,10 @@ The Batman study borrowed the unit and skipped the evidence standard.
 
 Its results fit the sceptical reading.
 
-- 24 of the 33 strongest units are name or place detectors, and a single word reproduces their profile at a median correlation of 0.85 (`study/results/robustness/nulls.json`).
-- Only 2 of 31 Qwen units respond more to their own rewording than to other memes' rewordings (`study/results/wording.json`).
+- 24 of the 33 strongest units are name or place detectors. A single word reproduces the 33 units' profiles at a median correlation of 0.85, and the 24 name detectors' at 0.94 (`study/results/robustness/nulls.json`).
+- Only 2 of 31 Qwen units respond more to their own rewording than to other memes' rewordings (`study/results/robustness/nulls.json`).
 - Random unselected neurons recovered source comics better than the selected memes: mean rank 4.2 and 3.4 against 5.4 and 5.3 (`study/results/phylo.json.gz`).
-- With word similarity regressed out, Qwen's neurons no longer point to the sources (p = 0.09 to 0.25). Llama's keep a small signal (p = 0.010 to 0.033), which weakens to 0.057 to 0.065 under the study's stricter nulls and is uncorrected for six tests (`study/results/experiments.json`).
+- With word similarity regressed out, Qwen's neurons no longer point to the sources (p = 0.09 to 0.25). Llama's keep a small signal (p = 0.010 to 0.033), which weakens to 0.017 to 0.065 under the study's stricter nulls and is uncorrected for six tests. Only the version with TF-IDF regressed out passes 0.05, at 0.057 and 0.065 (`study/results/experiments.json`).
 
 Where "one neuron, one job" is best supported: the hidden neurons of the MLP blocks, at strong activation, in middle layers, in larger models, for word-like and name-like content. Where it is not: the residual stream, attention heads, weak activations, and facts. Whether it holds for story motifs across rewording has not been tested by anyone.
 
@@ -114,12 +115,12 @@ Until a unit beats sentence embeddings and an LLM reader on text where the words
 
 ## What would settle it
 
-1. Steer the named units and see whether the labelled idea appears, against random and word-matched units and against simply prompting.
-2. An audit of the 8B 4-bit models themselves, against random directions and planted mixtures.
-3. Presence defined by each neuron's own strong range, then the heredity and residual tests rerun.
-4. The two-by-two of motif present or absent by key words present or absent, on planted stories with units frozen in advance. It is already designed in `preregistration/`.
-5. Twins and a linear map between Qwen and Llama, fitted on one half of a corpus and scored on the other, against word-matched controls. The 1,000 held-out film summaries are already in `preregistration/sources/`.
-6. Heredity across languages, where shared wording cannot carry the signal.
-7. Human annotators on a few hundred passages.
+1. Steer the named units and see whether the labelled idea appears, against random and word-matched units and against simply prompting (design EN-21).
+2. An audit of the 8B 4-bit models themselves, against random directions and planted mixtures (IN-22), and a check that 4-bit readings match full precision (IN-29).
+3. Presence defined by each neuron's own strong range, then the heredity and residual tests rerun (IN-23).
+4. The two-by-two of motif present or absent by key words present or absent, with units frozen in advance. Design IN-21 does this at sentence level in days. The planted-story plan in `preregistration/` asks the same question at about 4,400 agent sessions.
+5. Twins and a linear map between Qwen and Llama, fitted on one half of a corpus and scored on the other, against word-matched controls (UN-21, UN-23). The 1,000 held-out film summaries are already in `preregistration/sources/`.
+6. Readings and heredity across languages, where shared wording cannot carry the signal (UN-22, LI-22).
+7. Human judgement: existing human coding of retold stories (CE-21), then paid annotators on a few hundred passages (IN-26).
 
-The registered designs for each are in [`designs/`](designs/) and listed in [`IDEAS.md`](IDEAS.md).
+The registered designs are in [`designs/`](designs/) and listed in [`IDEAS.md`](IDEAS.md). [`README.md`](README.md) gives the order in which to run them.
