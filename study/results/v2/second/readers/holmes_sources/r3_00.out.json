@@ -1,0 +1,32 @@
+[
+  {
+    "id": 50693419,
+    "kind": "film",
+    "year": 1951,
+    "holmes_appears": false,
+    "sources": [
+      {
+        "story": "The Hound of the Baskervilles",
+        "tier": "B",
+        "quote": "Produced by Chayanika Chitramandir and Kine Craft Studios, the film is based on Hemendra Kumar Roy's novel Nishithini Bibhishika, which itself is a Bengali adaptation of Arthur Conan Doyle's crime novel The Hound of the Baskervilles (1902)."
+      }
+    ],
+    "other_sources": [
+      "Nishithini Bibhishika (novel by Hemendra Kumar Roy)"
+    ]
+  },
+  {
+    "id": 34252471,
+    "kind": "tv_episode",
+    "year": 2012,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "A Scandal in Bohemia",
+        "tier": "B",
+        "quote": "The Guardian's Sam Wollaston says that Conan Doyle's original story has \"been Moffatised as well as modernised. He starts off parallel but then wanders off left and right, into international terrorism and CIA plots and complicated conspiracy theories."
+      }
+    ],
+    "other_sources": []
+  }
+]

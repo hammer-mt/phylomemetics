@@ -1,0 +1,21 @@
+[
+  {
+    "item": "c3ef3afb3673f235",
+    "links": [
+      {"film": "Chattakkari (2012 film)", "relation": "other_remakes_page", "wording": "firm"}
+    ]
+  },
+  {
+    "item": "b123142abd353568",
+    "links": [
+      {"film": "Thuppakki", "relation": "page_remakes_other", "wording": "firm"}
+    ]
+  },
+  {
+    "item": "c7314b04e6622798",
+    "links": [
+      {"film": "Handphone (film)", "relation": "page_remakes_other", "wording": "loose"},
+      {"film": "Changing Lanes", "relation": "none", "wording": ""}
+    ]
+  }
+]

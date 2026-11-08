@@ -1,0 +1,132 @@
+[
+  {
+    "id": 19124478,
+    "kind": "film",
+    "year": 1922,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": [
+      "the 1899 play Sherlock Holmes by William Gillette and Arthur Conan Doyle"
+    ]
+  },
+  {
+    "id": 10442619,
+    "kind": "video_game",
+    "year": 2007,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": []
+  },
+  {
+    "id": 67499899,
+    "kind": "film",
+    "year": 2022,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": [
+      "the real 1888 matchgirls' strike",
+      "the life of labour activist Sarah Chapman"
+    ]
+  },
+  {
+    "id": 4733230,
+    "kind": "video_game",
+    "year": 1996,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": []
+  },
+  {
+    "id": 16160462,
+    "kind": "tv_film",
+    "year": 1979,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Adventure of the Speckled Band",
+        "tier": "A",
+        "quote": "The film is divided into two episodes: \"The Acquaintance\" (Знакомство, based on the 1892 short story \"The Adventure of the Speckled Band\") and \"Bloody Inscription\" (Кровавая надпись, based on the 1887 novel A Study in Scarlet)."
+      },
+      {
+        "story": "A Study in Scarlet",
+        "tier": "A",
+        "quote": "The film is divided into two episodes: \"The Acquaintance\" (Знакомство, based on the 1892 short story \"The Adventure of the Speckled Band\") and \"Bloody Inscription\" (Кровавая надпись, based on the 1887 novel A Study in Scarlet)."
+      }
+    ],
+    "other_sources": []
+  },
+  {
+    "id": 1304986,
+    "kind": "film",
+    "year": 1985,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": []
+  },
+  {
+    "id": 41556889,
+    "kind": "tv_episode",
+    "year": 2014,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Adventure of Charles Augustus Milverton",
+        "tier": "B",
+        "quote": "The episode is a contemporary adaptation of Sir Arthur Conan Doyle's short story \"The Adventure of Charles Augustus Milverton\"."
+      }
+    ],
+    "other_sources": []
+  },
+  {
+    "id": 16266637,
+    "kind": "tv_film",
+    "year": 1976,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": []
+  },
+  {
+    "id": 4700217,
+    "kind": "film",
+    "year": 1943,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Sign of the Four",
+        "tier": "C",
+        "quote": "The use of a pygmy confederate is taken from the novel The Sign of Four and the murder by use of a venomous animal inserted through a ventilation system is taken from \"The Speckled Band\""
+      },
+      {
+        "story": "The Final Problem",
+        "tier": "C",
+        "quote": "Holmes faking his death at a waterfall is similar to the climax of \"The Final Problem\" and his subsequent reappearance in the presence of a mourning Watson bears resemblance to \"The Empty House\"."
+      },
+      {
+        "story": "The Adventure of the Empty House",
+        "tier": "C",
+        "quote": "Holmes faking his death at a waterfall is similar to the climax of \"The Final Problem\" and his subsequent reappearance in the presence of a mourning Watson bears resemblance to \"The Empty House\"."
+      },
+      {
+        "story": "The Adventure of the Speckled Band",
+        "tier": "C",
+        "quote": "The use of a pygmy confederate is taken from the novel The Sign of Four and the murder by use of a venomous animal inserted through a ventilation system is taken from \"The Speckled Band\""
+      },
+      {
+        "story": "The Adventure of the Devil's Foot",
+        "tier": "C",
+        "quote": "The film also featured elements of \"The Devil's Foot\"."
+      },
+      {
+        "story": "The Adventure of the Copper Beeches",
+        "tier": "C",
+        "quote": "The mute child with a compulsion to catch flies is similar to a character in \"The Copper Beeches\"."
+      },
+      {
+        "story": "The Adventure of the Yellow Face",
+        "tier": "C",
+        "quote": "Holmes' request that Watson whisper \"pygmy\" in his ear if he becomes overconfident is from \"The Yellow Face\", in which the word was \"Norbury\"."
+      }
+    ],
+    "other_sources": []
+  }
+]

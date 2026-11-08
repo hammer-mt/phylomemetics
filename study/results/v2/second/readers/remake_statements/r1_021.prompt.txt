@@ -1,0 +1,222 @@
+You are helping to build a research corpus of film remakes from Wikipedia. Each item below gives the title of a film's Wikipedia page (PAGE), ONE sentence from the opening of that page, and the OTHER FILMS that sentence links to. For each other film, record what THE SENTENCE SAYS about PAGE and that film. You are not asked what you know about the films.
+
+For each other film give:
+- "relation":
+    "page_remakes_other"   the sentence says PAGE is a remake of the other film;
+    "other_remakes_page"   the sentence says the other film is a remake of PAGE (for example "it was remade in Telugu as ...");
+    "none"                 anything else.
+- "wording":
+    "firm"    the sentence states the remake plainly as a fact: "is a remake of", "an official remake of", "was remade as", "was remade in Hindi as";
+    "loose"   the sentence weakens or hedges it: "loosely", "partly", "unofficial", "uncredited", "inspired by", "based on the idea of", "reported to be", "said to be", "has been described as", "considered", "similar to", "reboot", "reimagining", "re-adaptation";
+    "" when the relation is "none".
+
+Rules.
+- Use only what the sentence says. Do not use your own knowledge of the films, and do not guess from titles or years.
+- If the sentence lists several films as remakes of PAGE, each of them is "other_remakes_page".
+- If the sentence says PAGE is a remake of X, and that X is itself a remake of or based on Y, then X is "page_remakes_other" and Y is "none", unless the sentence also says PAGE is a remake of Y.
+- "none" covers: a sequel, prequel or spin-off; a film that is only compared or mentioned; another remake of the same original (a sibling); a film based on the same novel, play or true story that the sentence does not call a remake; a film whose remake status the sentence denies; a dubbed version; a film shot at the same time in another language ("simultaneously", "bilingual").
+- If you cannot tell which film the word "remake" or "remade" applies to, answer "none".
+
+The items follow.
+
+### ITEM e6fa393d12fd132c
+PAGE: Don Muthu Swami
+SENTENCE: The film is a remake of the 1991 American film Oscar, which itself was a remake of the 1967 French film Oscar.
+OTHER FILMS: ["Oscar (1991 film)"]
+
+### ITEM cf3ca72419bc7211
+PAGE: Miss Mary (1957 film)
+SENTENCE: The film is a remake of Prasad's 1955 Telugu-Tamil bilingual film Missamma / Missiamma, which itself was a remake of the 1932 Bengali play Maanmoyee Girls' School.
+OTHER FILMS: ["Missamma", "Missiamma"]
+
+### ITEM f3d06dd58538bc04
+PAGE: Waris (1969 film)
+SENTENCE: It is a remake of the Tamil film Naan (1967).
+OTHER FILMS: ["Naan (1967 film)"]
+
+### ITEM b976900df005f294
+PAGE: Coolie No. 1 (1995 film)
+SENTENCE: The film is a remake of the Tamil film Chinna Mapillai (1993).
+OTHER FILMS: ["Chinna Mapillai"]
+
+### ITEM 850e7e7b135a2d4c
+PAGE: Idolle Ramayana
+SENTENCE: The film is a remake of 2012 Malayalam film Shutter with Jogi and Raman Gopisetti writing the dialogues for both versions simultaneously.
+OTHER FILMS: ["Shutter (2012 film)"]
+
+### ITEM a87190922cf1fba3
+PAGE: Thunaivan
+SENTENCE: The film was remade in Hindi as Maalik.
+OTHER FILMS: ["Maalik (1972 film)"]
+
+### ITEM ccd891d257d2951d
+PAGE: Jab We Met
+SENTENCE: The film was later remade in Tamil as Kanden Kadhalai with a subsequent Telugu dubbed version titled Priya Priyathama.
+OTHER FILMS: ["Kanden Kadhalai"]
+
+### ITEM 97b94d7a4137da1b
+PAGE: Missiamma
+SENTENCE: AVM Productions remade the film in Hindi as Miss Mary in 1957, with Ganesan and Jamuna reprising their roles.
+OTHER FILMS: ["Miss Mary (1957 film)"]
+
+### ITEM da65dfa9334b1aa9
+PAGE: Enakkul Oruvan (2015 film)
+SENTENCE: A remake of the 2013 Kannada film Lucia directed by Pawan Kumar, the film stars Siddharth and Deepa Sannidhi, with Santhosh Narayanan composing the film's music.
+OTHER FILMS: ["Lucia (film)"]
+
+### ITEM e794f09491208c62
+PAGE: Awara (2012 film)
+SENTENCE: Being a remake of the 2008 Telugu film, Krishna, it stars Jeet, Sayantika Banerjee, Mukul Dev (in his debut in Bengali cinema) and Ashish Vidyarthi in lead roles, while Kharaj Mukherjee, Biswajit Chakraborty, Biswanath Basu, Supriyo Dutta, Tulika Basu, Kamalika Banerjee and Arun Banerjee play another pivotal roles, with Subhasish Mukherjee in a guest appearance.
+OTHER FILMS: ["Krishna (2008 film)"]
+
+### ITEM d9b0f307b0c8b4a9
+PAGE: Dosti Dushmani
+SENTENCE: The film was a remake of 1977 Tamil film Chakravarthy which was also remade later in Telugu as Mugguru Mithrulu (1985) and later in Kannada as Brahma Vishnu Maheshwara (1988).
+OTHER FILMS: ["Chakravarthy (1977 film)"]
+
+### ITEM b160fdb3271599e3
+PAGE: Raja Jani
+SENTENCE: It is a remake of the 1965 Bengali film Rajkanya, which itself is loosely based on the 1956 American film Anastasia. It was itself remade in Tamil in 1983 as Adutha Varisu.
+OTHER FILMS: ["Anastasia (1956 film)", "Adutha Varisu"]
+
+### ITEM 13375c684cd45121
+PAGE: Jalwa
+SENTENCE: It is an unofficial remake of the 1984 American film Beverly Hills Cop.
+OTHER FILMS: ["Beverly Hills Cop"]
+
+### ITEM 27e309700a7122bf
+PAGE: Imitation of Life (1934 film)
+SENTENCE: A 1959 remake was directed by Douglas Sirk.
+OTHER FILMS: ["Imitation of Life (1959 film)"]
+
+### ITEM b4284e3bbc043ee1
+PAGE: China Town (1962 film)
+SENTENCE: The film was remade in Tamil as Kudiyirundha Koyil (1968), starring [[M.
+OTHER FILMS: ["Kudiyirundha Koyil"]
+
+### ITEM 7740544ff89c3b99
+PAGE: Love Ke Liye Kuchh Bhi Karega
+SENTENCE: The film is an official remake of the 1993 Telugu film Money.
+OTHER FILMS: ["Money (1993 film)"]
+
+### ITEM c5caeb6bff60c442
+PAGE: Zara Si Zindagi
+SENTENCE: It was the remake of the Tamil film Varumayin Niram Sivappu (1980), which was directed by Balachander himself.
+OTHER FILMS: ["Varumayin Niram Sivappu"]
+
+### ITEM afaa1e1e77dfa841
+PAGE: Nayagan (2008 film)
+SENTENCE: The film released on 22 August 2008, was a direct remake of the Tamil film Vegam (2007) which itself was an uncredited remake of the 2004 American film Cellular.
+OTHER FILMS: ["Vegam (2007 film)", "Cellular (film)"]
+
+### ITEM 35a366f6767d7213
+PAGE: Kizhakku Vasal
+SENTENCE: The film was remade in Hindi as Mere Sajana Saath Nibhana, in Kannada as Sindhoora Thilaka (both 1992) and in Telugu as Chilakapachcha Kaapuram (1995).
+OTHER FILMS: ["Mere Sajana Saath Nibhana"]
+
+### ITEM 936a2cf57d1f8ee7
+PAGE: The Unholy Three (1930 film)
+SENTENCE: The film is a sound remake of the silent 1925 film of the same name, with both films based on the novel The Unholy Three, by Tod Robbins.
+OTHER FILMS: ["The Unholy Three (1925 film)"]
+
+### ITEM 149fae4ab013e691
+PAGE: Taxi No. 9211
+SENTENCE: In the same year it was remade in Telugu as Game, and in 2009, it was remade in Tamil as TN-07 AL 4777.
+OTHER FILMS: ["TN 07 AL 4777"]
+
+### ITEM c49f5ce2f3765d67
+PAGE: Moondram Pirai
+SENTENCE: Mahendra remade the film in Hindi as Sadma (1983), with Kamal Haasan, Sridevi and Smitha reprising their roles.
+OTHER FILMS: ["Sadma"]
+
+### ITEM dae195de8f75d744
+PAGE: Kannamoochi Yenada
+SENTENCE: The film, a remake of the 2005 American film Guess Who, which itself is based on the 1967 American film Guess Who's Coming to Dinner, was jointly produced and distributed by Raadan Media Works, UTV, and Pyramid Saimira.
+OTHER FILMS: ["Guess Who (film)", "Guess Who's Coming to Dinner"]
+
+### ITEM b9dc5a4b2ba793a8
+PAGE: Journey (2011 film)
+SENTENCE: It was later remade into Kannada as Endendu Ninagagi in 2014 and in Bengali as Bojhena Shey Bojhena in 2012.
+OTHER FILMS: ["Bojhena Shey Bojhena"]
+
+### ITEM 8cec91875515b5b0
+PAGE: Jalwa
+SENTENCE: It was remade in Telugu as Trinetrudu (1988) by [[A.
+OTHER FILMS: ["Trinetrudu"]
+
+### ITEM cf081ee0db46c28b
+PAGE: Across to Singapore
+SENTENCE: It was remade a third time in 1953, as All the Brothers Were Valiant.
+OTHER FILMS: ["All the Brothers Were Valiant"]
+
+### ITEM 07421a96114021be
+PAGE: Keyamat Theke Keyamat
+SENTENCE: The film is an official remake of the 1988 Hindi Language film titled Qayamat Se Qayamat Tak, and like its predecessor, is based on Romeo and Juliet.
+OTHER FILMS: ["Qayamat Se Qayamat Tak"]
+
+### ITEM ccacd7dec20bd122
+PAGE: Manjupeyyum Munpe
+SENTENCE: It is a remake of the Tamil film Parthiban Kanavu (2003) and was successful at the box office.
+OTHER FILMS: ["Parthiban Kanavu (2003 film)"]
+
+### ITEM 93f2a44df8541284
+PAGE: Sword Master (film)
+SENTENCE: The film is a remake of the 1977 Shaw Brothers Studio Hong Kong film Death Duel, which starred Yee.
+OTHER FILMS: ["Death Duel"]
+
+### ITEM 104ceff5c0701928
+PAGE: Madurai Veeran (2007 film)
+SENTENCE: The film is the Tamil remake of the 2001 Telugu film Nuvvu Nenu directed by Teja.
+OTHER FILMS: ["Nuvvu Nenu"]
+
+### ITEM c8f80cc58d6754a6
+PAGE: Siruthai
+SENTENCE: It is a remake of the 2006 Telugu film Vikramarkudu, directed by [[S.
+OTHER FILMS: ["Vikramarkudu"]
+
+### ITEM 9f366f2a5c174abd
+PAGE: Maan Karate
+SENTENCE: It was remade in Telugu as Tuntari (2016).
+OTHER FILMS: ["Tuntari"]
+
+### ITEM 0ef29fc93892a23f
+PAGE: Gharwali Baharwali
+SENTENCE: The film is a remake of the Tamil film Thaikulame Thaikulame (1995).
+OTHER FILMS: ["Thaikulame Thaikulame"]
+
+### ITEM f3f2eb1cccc2a3b0
+PAGE: The Cheat (1931 film)
+SENTENCE: The film is a remake of the 1915 silent film of the same title, directed by [[Cecil B.
+OTHER FILMS: ["The Cheat (1915 film)"]
+
+### ITEM 492fa6f12ab8f0d3
+PAGE: Unakkaga Naan
+SENTENCE: Starring Sivaji Ganesan, Gemini Ganesan, Lakshmi, and Vennira Aadai Nirmala, it is a remake of the 1973 Hindi film Namak Haraam which also starred Gemini Ganesan's daughter Rekha.
+OTHER FILMS: ["Namak Haraam"]
+
+### ITEM d7723c6c886cbf07
+PAGE: Kumudham
+SENTENCE: The film was remade in Telugu as Manchi Manasulu (1962), in Malayalam as Susheela (1963) and in Hindi as Pooja Ke Phool (1964).
+OTHER FILMS: ["Manchi Manasulu", "Pooja Ke Phool"]
+
+### ITEM 8907f7cbecc64b19
+PAGE: Billa (1980 film)
+SENTENCE: It was remade in 2007 in Tamil under the same title.
+OTHER FILMS: ["Billa (2007 film)"]
+
+### ITEM 7b22c86cae00a6b3
+PAGE: Guru En Aalu
+SENTENCE: It is a remake of the 1997 Hindi film Yes Boss.
+OTHER FILMS: ["Yes Boss (film)"]
+
+### ITEM eacb5d69ae9a9fe8
+PAGE: Flying Swords of Dragon Gate
+SENTENCE: A Chinese-Hong Kong co-production, the film is a remake of Dragon Gate Inn (1967) and New Dragon Gate Inn (1992) but takes place three years after the original setting.
+OTHER FILMS: ["New Dragon Gate Inn"]
+
+### ITEM 8f3c47853bfc755e
+PAGE: Oru Naal Iravil
+SENTENCE: A remake of Joy Mathew's successful Malayalam film Shutter (2012), the film stars Sathyaraj in the lead role.
+OTHER FILMS: ["Shutter (2012 film)"]
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/remakes/statements/r1_021.out.json as a JSON list with one object per item: {"item": "<the code after ITEM>", "links": [{"film": "<title exactly as listed>", "relation": "...", "wording": "..."}]} with one entry in "links" for every film listed under OTHER FILMS. Write nothing else to that file.

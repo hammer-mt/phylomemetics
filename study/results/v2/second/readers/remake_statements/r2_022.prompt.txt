@@ -1,0 +1,222 @@
+You are helping to build a research corpus of film remakes from Wikipedia. Each item below gives the title of a film's Wikipedia page (PAGE), ONE sentence from the opening of that page, and the OTHER FILMS that sentence links to. For each other film, record what THE SENTENCE SAYS about PAGE and that film. You are not asked what you know about the films.
+
+For each other film give:
+- "relation":
+    "page_remakes_other"   the sentence says PAGE is a remake of the other film;
+    "other_remakes_page"   the sentence says the other film is a remake of PAGE (for example "it was remade in Telugu as ...");
+    "none"                 anything else.
+- "wording":
+    "firm"    the sentence states the remake plainly as a fact: "is a remake of", "an official remake of", "was remade as", "was remade in Hindi as";
+    "loose"   the sentence weakens or hedges it: "loosely", "partly", "unofficial", "uncredited", "inspired by", "based on the idea of", "reported to be", "said to be", "has been described as", "considered", "similar to", "reboot", "reimagining", "re-adaptation";
+    "" when the relation is "none".
+
+Rules.
+- Use only what the sentence says. Do not use your own knowledge of the films, and do not guess from titles or years.
+- If the sentence lists several films as remakes of PAGE, each of them is "other_remakes_page".
+- If the sentence says PAGE is a remake of X, and that X is itself a remake of or based on Y, then X is "page_remakes_other" and Y is "none", unless the sentence also says PAGE is a remake of Y.
+- "none" covers: a sequel, prequel or spin-off; a film that is only compared or mentioned; another remake of the same original (a sibling); a film based on the same novel, play or true story that the sentence does not call a remake; a film whose remake status the sentence denies; a dubbed version; a film shot at the same time in another language ("simultaneously", "bilingual").
+- If you cannot tell which film the word "remake" or "remade" applies to, answer "none".
+
+The items follow.
+
+### ITEM b0dcb1885c58d6c5
+PAGE: Mr. and Mrs. Ramachari
+SENTENCE: Sadachari]] and in Odia in 2018 as Shakti thereby becoming the fifth Kannada film to be remade into two non-Hindi non-South Indian languages after Anuraga Aralithu, Appu, Mungaru Male and Milana''.
+OTHER FILMS: ["Anuraga Aralithu", "Mungaru Male"]
+
+### ITEM a3ac3a7372e2706d
+PAGE: Anjani Putra
+SENTENCE: The film was a remake of director Hari's Tamil film Poojai.
+OTHER FILMS: ["Poojai"]
+
+### ITEM 793b82c1e89ee746
+PAGE: Aurat (1940 film)
+SENTENCE: Mehboob Khan later remade this film as Mother India (1957), which is considered one of the biggest hits of all time in Indian Cinema (and again repeated Wajahat Mirza for dialogues, Kanhiyalal as Sukhi Lala and Faredoon Irani for cinematography).
+OTHER FILMS: ["Mother India"]
+
+### ITEM d22640fb366dd5c4
+PAGE: Miracles (1989 film)
+SENTENCE: The film was remade in Hindi as Singh Is Kinng with Akshay Kumar and Katrina Kaif.
+OTHER FILMS: ["Singh Is Kinng"]
+
+### ITEM 704fbe1a9d7f50c3
+PAGE: Shyloo
+SENTENCE: It is a remake of the 2010 Tamil film Mynaa which itself was reported to have been inspired by the 2006 Hong Kong film Dog Bite Dog.
+OTHER FILMS: ["Mynaa", "Dog Bite Dog"]
+
+### ITEM e6508759016cb4c9
+PAGE: Zanjeer (2013 film)
+SENTENCE: A remake of the 1973 cult classic of the same name, the film stars Ram Charan, Priyanka Chopra, Sanjay Dutt, Prakash Raj, Atul Kulkarni, and Mahie Gill.
+OTHER FILMS: ["Zanjeer (1973 film)"]
+
+### ITEM 30b47b197a6e5f72
+PAGE: Sigappu Rojakkal
+SENTENCE: The film was later remade by Bharathiraja himself in Hindi as Red Rose (1980).
+OTHER FILMS: ["Red Rose (1980 film)"]
+
+### ITEM 7d4c52d59c2ccd4e
+PAGE: Tell Me O Kkhuda
+SENTENCE: The film bears a resemblance to Malini's first directoral venture Dil Aashna Hai (1992) and is an unofficial remake of the 2008 American film Mamma Mia!.
+OTHER FILMS: ["Dil Aashna Hai", "Mamma Mia! (film)"]
+
+### ITEM c6ff56cce5794fb8
+PAGE: Mayavi (2007 film)
+SENTENCE: It was a commercial success and was remade in Tamil as Vallakottai in 2010.
+OTHER FILMS: ["Vallakottai (film)"]
+
+### ITEM 59a2bc1f3706ec92
+PAGE: Four Sons (1940 film)
+SENTENCE: It is a remake of the 1928 film of the same name.
+OTHER FILMS: ["Four Sons"]
+
+### ITEM 753c6eb01898cf9b
+PAGE: Phoonk
+SENTENCE: The film was remade in Telugu as Raksha and was dubbed in Tamil as Bommayi.
+OTHER FILMS: ["Raksha (2008 film)"]
+
+### ITEM b65665beeb580dbb
+PAGE: Thaikulame Thaikulame
+SENTENCE: The film was remade in Telugu as Intlo Illalu Vantintlo Priyuralu, in Hindi as Gharwali Baharwali and in Kannada as Naanu Nanna Hendthiru.
+OTHER FILMS: ["Intlo Illalu Vantintlo Priyuralu", "Gharwali Baharwali"]
+
+### ITEM f0b9330e4d4b76f1
+PAGE: Unnal Mudiyum Thambi
+SENTENCE: The film was a remake of Balachander's own Telugu film Rudraveena (1988).
+OTHER FILMS: ["Rudraveena (film)"]
+
+### ITEM 43ba8d1b9f8e1fad
+PAGE: Akka Thangai
+SENTENCE: It was remade in Telugu as Akka Chellelu (1970).
+OTHER FILMS: ["Akka Chellelu"]
+
+### ITEM 03001fbd76f9a4ee
+PAGE: Thee (2009 film)
+SENTENCE: The film was a remake of the Telugu film Operation Duryodhana.
+OTHER FILMS: ["Operation Duryodhana (film)"]
+
+### ITEM 29c8d6d5a31e7d33
+PAGE: Panakkara Kudumbam
+SENTENCE: The film was remade in Hindi in 1970 as Humjoli, in Kannada in 1978 as Bhale Huduga, and in Telugu in 1984 as Intiguttu.
+OTHER FILMS: ["Humjoli"]
+
+### ITEM 867d97bda4bfb3a6
+PAGE: Periya Idathu Mappillai
+SENTENCE: The film is a remake of the Malayalam film Aniyan Bava Chetan Bava.
+OTHER FILMS: ["Aniyan Bava Chetan Bava"]
+
+### ITEM 21b95385c8a07b32
+PAGE: Kaalia
+SENTENCE: It was later remade in Kannada in 1984 as Huliyaada Kaala starring Tiger Prabhakar and in Tamil in 1987 as Cooliekkaran starring Vijayakanth.
+OTHER FILMS: ["Cooliekkaran"]
+
+### ITEM 06b4935ccd87c357
+PAGE: Agneepath (1990 film)
+SENTENCE: The film was remade in 2012 with the same title and directed and writer by Karan Malhotra and produced by Hiroo Yash Johar and Johar's son Karan Johar, as a tribute to his father.
+OTHER FILMS: ["Agneepath (2012 film)"]
+
+### ITEM 4b605fbdd0223f97
+PAGE: Crazy Kutumba
+SENTENCE: The story is a remake of Marathi film De Dhakka (2008) which was inspired from the Hollywood film, Little Miss Sunshine (2006).
+OTHER FILMS: ["De Dhakka", "Little Miss Sunshine"]
+
+### ITEM dbe7e8b63da83295
+PAGE: Three Faces East (1930 film)
+SENTENCE: A later remake in 1940 starred Boris Karloff and Margaret Lindsay was titled British Intelligence.
+OTHER FILMS: ["British Intelligence (film)"]
+
+### ITEM d5f31fd3bf48f070
+PAGE: Sagina (film)
+SENTENCE: It was a remake of 1970 Bengali movie Sagina Mahato directed by Tapan Sinha with the same lead pair in the cast.
+OTHER FILMS: ["Sagina Mahato"]
+
+### ITEM baa715972a63c47e
+PAGE: Cooliekkaran
+SENTENCE: It is a remake of the Hindi film Kaalia (1981).
+OTHER FILMS: ["Kaalia"]
+
+### ITEM 43f8b87b1a167acf
+PAGE: Vallakottai (film)
+SENTENCE: A remake of the 2007 Malayalam film Mayavi, the film stars Arjun and Haripriya, while Ashish Vidyarthi, Ganja Karuppu, Sathyan, Suresh, [[J.
+OTHER FILMS: ["Mayavi (2007 film)"]
+
+### ITEM 9ecfb622adc0259c
+PAGE: Pyaar To Hona Hi Tha
+SENTENCE: The film is an unofficial remake of the 1995 film French Kiss, starring Meg Ryan and Kevin Kline.
+OTHER FILMS: ["French Kiss (1995 film)"]
+
+### ITEM 189635e885cb51ae
+PAGE: Oggarane (film)
+SENTENCE: A remake of Aashiq Abu's 2011 Malayalam film Salt N' Pepper, the film is simultaneously shot in three languages.
+OTHER FILMS: ["Salt N' Pepper"]
+
+### ITEM 33446f80a047c54d
+PAGE: Kaalam Maari Pochu (1956 film)
+SENTENCE: It is a remake of the Telugu film Rojulu Marayi.
+OTHER FILMS: ["Rojulu Marayi"]
+
+### ITEM b482bfc812bcc027
+PAGE: Murder (2004 film)
+SENTENCE: The film was remade in Kannada as Ganda Hendathi (2006).
+OTHER FILMS: ["Ganda Hendathi"]
+
+### ITEM 487ce31dc00056da
+PAGE: Mambattiyan
+SENTENCE: The film, also starring Meera Jasmine, Prakash Raj, Vadivelu and Mumaith Khan in other pivotal roles, is a remake of the 1983 Tamil film Malaiyoor Mambattiyan that starred Thiagarajan.
+OTHER FILMS: ["Malaiyoor Mambattiyan"]
+
+### ITEM e5a4a05c395b5da0
+PAGE: O Kadhal Kanmani
+SENTENCE: The film was later remade in Hindi as Ok Jaanu in 2017.
+OTHER FILMS: ["Ok Jaanu"]
+
+### ITEM 78dbd8b7f8cb3c45
+PAGE: Nadigan
+SENTENCE: A remake of the Hindi film Professor (1962), it stars Sathyaraj and Khushbu.
+OTHER FILMS: ["Professor (1962 film)"]
+
+### ITEM a848f23dd73ec180
+PAGE: Shaolin (film)
+SENTENCE: It is a loose remake of the 1982 film Shaolin Temple, which starred Jet Li, but in a different historical setting.
+OTHER FILMS: ["Shaolin Temple (1982 film)"]
+
+### ITEM 41dd71bd767bc835
+PAGE: Badi Pantulu (1958 film)
+SENTENCE: The film was remade in Malayalam in 1964 as School Master by Puttanna Kanagal, in Telugu in 1972 as Badi Panthulu and in Tamil in 1973 as School Master.
+OTHER FILMS: ["Badi Panthulu", "School Master (1973 film)"]
+
+### ITEM a5f1a6a1b10bfc27
+PAGE: Ek Hi Bhool
+SENTENCE: It is a remake of the Tamil film Mouna Geethangal (1981).
+OTHER FILMS: ["Mouna Geethangal"]
+
+### ITEM cff2f69aae03dea6
+PAGE: Kalyana Parisu
+SENTENCE: The film was later remade by Sridhar in Telugu as Pelli Kanuka (1960) and Hindi as Nazrana (1961), and in Malayalam by [[J.
+OTHER FILMS: ["Pelli Kanuka (1960 film)", "Nazrana (1961 film)"]
+
+### ITEM 115c445ef5ffc06f
+PAGE: Veera Kankanam
+SENTENCE: The film is a remake of the 1950 Tamil Historical fiction film Manthiri Kumari.
+OTHER FILMS: ["Manthiri Kumari"]
+
+### ITEM a7a2767bd23e4ded
+PAGE: Scarface (1932 film)
+SENTENCE: It was remade as the 1983 film of the same title, directed by Brian De Palma and starring Al Pacino.
+OTHER FILMS: ["Scarface (1983 film)"]
+
+### ITEM 9e20297e04040411
+PAGE: Swarg Narak
+SENTENCE: The film is a remake of the Telugu film Swargam Narakam (1975) made by the same director.
+OTHER FILMS: ["Swargam Narakam"]
+
+### ITEM 40e5bd2fc26f0d54
+PAGE: Rhythm on the Range
+SENTENCE: Rhythm on the Range was Crosby's only Western film (apart from the remake Stagecoach, 1966) and introduced two Western songs, "Empty Saddles" by Billy Hill and "I'm an Old Cowhand (From the Rio Grande)" by Johnny Mercer, the latter becoming a national hit song for Crosby.
+OTHER FILMS: ["Stagecoach (1966 film)"]
+
+### ITEM 31087a4e15b223ae
+PAGE: Sangam (1964 Hindi film)
+SENTENCE: It inspired Michael Bay's war film Pearl Harbor (2001) and was remade in Telugu and Kannada languages as Swapna (1981) by Dasari Narayana Rao.
+OTHER FILMS: ["Pearl Harbor (film)"]
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/remakes/statements/r2_022.out.json as a JSON list with one object per item: {"item": "<the code after ITEM>", "links": [{"film": "<title exactly as listed>", "relation": "...", "wording": "..."}]} with one entry in "links" for every film listed under OTHER FILMS. Write nothing else to that file.

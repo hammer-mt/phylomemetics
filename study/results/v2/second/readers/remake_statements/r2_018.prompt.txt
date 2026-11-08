@@ -1,0 +1,222 @@
+You are helping to build a research corpus of film remakes from Wikipedia. Each item below gives the title of a film's Wikipedia page (PAGE), ONE sentence from the opening of that page, and the OTHER FILMS that sentence links to. For each other film, record what THE SENTENCE SAYS about PAGE and that film. You are not asked what you know about the films.
+
+For each other film give:
+- "relation":
+    "page_remakes_other"   the sentence says PAGE is a remake of the other film;
+    "other_remakes_page"   the sentence says the other film is a remake of PAGE (for example "it was remade in Telugu as ...");
+    "none"                 anything else.
+- "wording":
+    "firm"    the sentence states the remake plainly as a fact: "is a remake of", "an official remake of", "was remade as", "was remade in Hindi as";
+    "loose"   the sentence weakens or hedges it: "loosely", "partly", "unofficial", "uncredited", "inspired by", "based on the idea of", "reported to be", "said to be", "has been described as", "considered", "similar to", "reboot", "reimagining", "re-adaptation";
+    "" when the relation is "none".
+
+Rules.
+- Use only what the sentence says. Do not use your own knowledge of the films, and do not guess from titles or years.
+- If the sentence lists several films as remakes of PAGE, each of them is "other_remakes_page".
+- If the sentence says PAGE is a remake of X, and that X is itself a remake of or based on Y, then X is "page_remakes_other" and Y is "none", unless the sentence also says PAGE is a remake of Y.
+- "none" covers: a sequel, prequel or spin-off; a film that is only compared or mentioned; another remake of the same original (a sibling); a film based on the same novel, play or true story that the sentence does not call a remake; a film whose remake status the sentence denies; a dubbed version; a film shot at the same time in another language ("simultaneously", "bilingual").
+- If you cannot tell which film the word "remake" or "remade" applies to, answer "none".
+
+The items follow.
+
+### ITEM c4c1a176e518b136
+PAGE: Force (2011 film)
+SENTENCE: It is a remake of 2003 Tamil film Kaakha Kaakha (2003).
+OTHER FILMS: ["Kaakha Kaakha"]
+
+### ITEM 18492bfabb93a811
+PAGE: Classmates (2015 film)
+SENTENCE: The film is a remake of the 2006 Malayalam film of the same name.
+OTHER FILMS: ["Classmates (2006 film)"]
+
+### ITEM b3873ecd1a80488f
+PAGE: Sundara Purushan (1996 film)
+SENTENCE: The film was remade in Telugu as Andala Ramudu (2006).
+OTHER FILMS: ["Andala Ramudu (2006 film)"]
+
+### ITEM 6beaa133f70f1151
+PAGE: Pasumpon
+SENTENCE: The film was remade in Telugu as Pedababu.
+OTHER FILMS: ["Pedababu"]
+
+### ITEM eba3fde8f53f8a1f
+PAGE: Khandan (1965 film)
+SENTENCE: The film was a remake of the director's own Tamil film Bhaaga Pirivinai.
+OTHER FILMS: ["Bhaaga Pirivinai"]
+
+### ITEM 0ca07c5c0ffd2378
+PAGE: The Killer (2006 film)
+SENTENCE: It is an unofficial remake of the 2004 American film Collateral.
+OTHER FILMS: ["Collateral (film)"]
+
+### ITEM fd6890ed915079da
+PAGE: Metro (2016 film)
+SENTENCE: It was dubbed and released in Telugu under the same name and remade in Kannada as Siliconn City (2017).
+OTHER FILMS: ["Siliconn City"]
+
+### ITEM 46098d9500b3ed6e
+PAGE: The Road Back (film)
+SENTENCE: Disgusted with the studio's cowardice under its new management, Whale left Universal after completing Wives Under Suspicion, an unsuccessful remake of his own The Kiss Before the Mirror.
+OTHER FILMS: ["Wives Under Suspicion", "The Kiss Before the Mirror"]
+
+### ITEM 1fc0165a18e1f7c8
+PAGE: Pennin Perumai
+SENTENCE: It is a remake of the 1955 Telugu film Ardhangi, which was based on Maddipatla Suri's Telugu translation of the Bengali novel Swayamsiddha, written by Manilal Banerjee.
+OTHER FILMS: ["Ardhangi"]
+
+### ITEM 2303ec297c07c780
+PAGE: Tata Birla
+SENTENCE: The film was remade in Telugu as Tata Birla Madhyalo Laila (2006).
+OTHER FILMS: ["Tata Birla Madhyalo Laila"]
+
+### ITEM 67b6b4364f4e5d8b
+PAGE: Govindaya Namaha
+SENTENCE: This film is remade as Potugadu in Telugu.
+OTHER FILMS: ["Potugadu"]
+
+### ITEM 83ecb0a026d8bb43
+PAGE: Romeo (2011 film)
+SENTENCE: It is an official remake of the Telugu blockbuster movie Konchem Ishtam Konchem Kashtam.
+OTHER FILMS: ["Konchem Ishtam Konchem Kashtam"]
+
+### ITEM 8889daf05096e2c1
+PAGE: My Man Godfrey
+SENTENCE: The film was remade in 1957 with June Allyson and David Niven in the starring roles.
+OTHER FILMS: ["My Man Godfrey (1957 film)"]
+
+### ITEM 4474c663ca3abe9e
+PAGE: Ziddi (1997 film)
+SENTENCE: The film was remade in Tamil as Dharma, starring Vijayakanth.
+OTHER FILMS: ["Dharma (1998 film)"]
+
+### ITEM c3e78fc7d00901fc
+PAGE: Game (2014 film)
+SENTENCE: The film is a remake of the 2012 Tamil film Thuppakki.
+OTHER FILMS: ["Thuppakki"]
+
+### ITEM 23aeca400f52d39f
+PAGE: Ek Ruka Hua Faisla
+SENTENCE: It is a remake of the Golden Bear winning American motion picture 12 Angry Men (1957) directed by Sidney Lumet, which was an adaptation from a 1954 teleplay of the same name by Reginald Rose.
+OTHER FILMS: ["12 Angry Men (1957 film)"]
+
+### ITEM 59c0946a10c2d25a
+PAGE: Khauff
+SENTENCE: It was an unofficial remake of the American film The Juror. It was released on 3 March 2000.
+OTHER FILMS: ["The Juror"]
+
+### ITEM b0b4db769470bb4a
+PAGE: Geethaanjali
+SENTENCE: The film's storyline inspired an unofficial adaptation in Bhool Bhulaiyaa 2 (2022), a standalone sequel to Bhool Bhulaiyaa (2007), which in turn was a remake of Manichitrathazhu.
+OTHER FILMS: ["Bhool Bhulaiyaa"]
+
+### ITEM 169f30b132e08188
+PAGE: Meri Aawaz Suno
+SENTENCE: The film is a remake of the Kannada movie Antha (1981).
+OTHER FILMS: ["Antha (film)"]
+
+### ITEM 555befd6833041fa
+PAGE: Aishwarya (film)
+SENTENCE: The film is an official remake of Manmadhudu (2002) with the flashback portion inspired by Ghajini (2005).
+OTHER FILMS: ["Manmadhudu", "Ghajini (2005 film)"]
+
+### ITEM 2e435d7636ea39f5
+PAGE: Thavasi
+SENTENCE: The film was remade in Kannada as Mallikarjuna (2011).
+OTHER FILMS: ["Mallikarjuna (film)"]
+
+### ITEM 065a15dbe192b228
+PAGE: Prem Kaa Game
+SENTENCE: It is a remake of the 2004 Kannada film Bisi Bisi, which itself was loosely based on the 1955 American film The Seven Year Itch.
+OTHER FILMS: ["The Seven Year Itch"]
+
+### ITEM b554aef1e0741ff7
+PAGE: Ilavelpu
+SENTENCE: The film is a remake of the Tamil film Edhir Paradhathu (1954).
+OTHER FILMS: ["Edhir Paradhathu"]
+
+### ITEM 73e2b63e6f67112a
+PAGE: Mannin Maindhan
+SENTENCE: The film, a remake of the Telugu film Yagnam (2004), was released on 4 March 2005.
+OTHER FILMS: ["Yagnam (2004 film)"]
+
+### ITEM 76bb04b16679b795
+PAGE: The Kiss Before the Mirror
+SENTENCE: Whale remade the film in 1938 as Wives Under Suspicion.
+OTHER FILMS: ["Wives Under Suspicion"]
+
+### ITEM 9ebf48efb0cb4f93
+PAGE: Anaamika (2014 film)
+SENTENCE: A remake of the Hindi film Kahaani. The film was simultaneously shot in Telugu and Tamil respectively.
+OTHER FILMS: ["Kahaani"]
+
+### ITEM 923724367272ec93
+PAGE: Don (1978 film)
+SENTENCE: The film spawned the Don franchise; Javed Akhtar's son Farhan Akhtar created a remake Don: The Chase Begins Again (2006) and its sequel Don 2 (2011), both starring Shah Rukh Khan.
+OTHER FILMS: ["Don: The Chase Begins Again"]
+
+### ITEM b3228164ebd37e4d
+PAGE: Mudhalvan
+SENTENCE: The film was later remade in Hindi as Nayak: The Real Hero (2001) by the same director.
+OTHER FILMS: ["Nayak: The Real Hero"]
+
+### ITEM 315eb803979dc4a2
+PAGE: Shock (2004 film)
+SENTENCE: It is a remake of the Hindi film Bhoot (2003), and was released on 23 July 2004.
+OTHER FILMS: ["Bhoot (film)"]
+
+### ITEM 188c7f8063705e42
+PAGE: Server Sundaram
+SENTENCE: The film was remade into Hindi as Main Sunder Hoon (1971) and Kannada as Server Somanna (1993).
+OTHER FILMS: ["Main Sunder Hoon"]
+
+### ITEM 1a00b05647019203
+PAGE: Tarkeeb
+SENTENCE: The film was a remake of the 1979 Telugu film Driver Ramudu.
+OTHER FILMS: ["Driver Ramudu"]
+
+### ITEM 21fd8196cf33ef4e
+PAGE: Ajab Gazabb Love
+SENTENCE: The storyline is remade from the Telugu film Seema Tapakai.
+OTHER FILMS: ["Seema Tapakai"]
+
+### ITEM cb029004d607ba5f
+PAGE: Kadhal Kirukkan
+SENTENCE: It is the Tamil remake of the 2002 Hindi film Deewangee.
+OTHER FILMS: ["Deewangee"]
+
+### ITEM b8b0eeee0935269f
+PAGE: Puthiya Vaanam
+SENTENCE: A remake of the 1987 Hindi film Hukumat, it was released on 10 December 1988.
+OTHER FILMS: ["Hukumat"]
+
+### ITEM 724cac44327bfc4d
+PAGE: Badsha - The Don
+SENTENCE: It is a remake of the 2010 Telugu movie Don Seenu starring Ravi Teja.
+OTHER FILMS: ["Don Seenu"]
+
+### ITEM ffcdbdf1a53c78de
+PAGE: Adyaksha
+SENTENCE: It is a remake of the Tamil film Varuthapadatha Valibar Sangam.
+OTHER FILMS: ["Varuthapadatha Valibar Sangam"]
+
+### ITEM 2db1f03dd47cb18b
+PAGE: Gold Diggers of Broadway (film)
+SENTENCE: Because Gold Diggers of Broadway has been considered a partially lost film since the 1970s, the loose remake, Gold Diggers of 1933, is the most frequently seen version of the story.
+OTHER FILMS: ["Gold Diggers of 1933"]
+
+### ITEM a6eae8dfcdf91cb1
+PAGE: Hitman (2014 film)
+SENTENCE: The film is a remake of 2012 Tamil blockbuster film Vettai.
+OTHER FILMS: ["Vettai"]
+
+### ITEM 8334424956b3385a
+PAGE: Anuraga Aralithu
+SENTENCE: It was later remade in seven other languages – in Tamil and Telugu as Mannan and Gharana Mogudu (both in 1992), in Hindi as Laadla (1994), in Sinhala as Mal Hathai (1996), in Odia as Sindura Nuhein Khela Ghara (2002), in Bengali as Jamaibabu Jindabad (2001) in India, and as Shami Strir Juddho (2002) in Bangladesh.
+OTHER FILMS: ["Mannan (film)", "Laadla (1994 film)"]
+
+### ITEM 580307f3916e271e
+PAGE: The Miracle Man (1919 film)
+SENTENCE: Paramount remade the film in 1932 also titled The Miracle Man with Hobart Bosworth, Chester Morris, John Wray, and Sylvia Sidney.
+OTHER FILMS: ["The Miracle Man (1932 film)"]
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/remakes/statements/r2_018.out.json as a JSON list with one object per item: {"item": "<the code after ITEM>", "links": [{"film": "<title exactly as listed>", "relation": "...", "wording": "..."}]} with one entry in "links" for every film listed under OTHER FILMS. Write nothing else to that file.

@@ -1,0 +1,222 @@
+You are helping to build a research corpus of film remakes from Wikipedia. Each item below gives the title of a film's Wikipedia page (PAGE), ONE sentence from the opening of that page, and the OTHER FILMS that sentence links to. For each other film, record what THE SENTENCE SAYS about PAGE and that film. You are not asked what you know about the films.
+
+For each other film give:
+- "relation":
+    "page_remakes_other"   the sentence says PAGE is a remake of the other film;
+    "other_remakes_page"   the sentence says the other film is a remake of PAGE (for example "it was remade in Telugu as ...");
+    "none"                 anything else.
+- "wording":
+    "firm"    the sentence states the remake plainly as a fact: "is a remake of", "an official remake of", "was remade as", "was remade in Hindi as";
+    "loose"   the sentence weakens or hedges it: "loosely", "partly", "unofficial", "uncredited", "inspired by", "based on the idea of", "reported to be", "said to be", "has been described as", "considered", "similar to", "reboot", "reimagining", "re-adaptation";
+    "" when the relation is "none".
+
+Rules.
+- Use only what the sentence says. Do not use your own knowledge of the films, and do not guess from titles or years.
+- If the sentence lists several films as remakes of PAGE, each of them is "other_remakes_page".
+- If the sentence says PAGE is a remake of X, and that X is itself a remake of or based on Y, then X is "page_remakes_other" and Y is "none", unless the sentence also says PAGE is a remake of Y.
+- "none" covers: a sequel, prequel or spin-off; a film that is only compared or mentioned; another remake of the same original (a sibling); a film based on the same novel, play or true story that the sentence does not call a remake; a film whose remake status the sentence denies; a dubbed version; a film shot at the same time in another language ("simultaneously", "bilingual").
+- If you cannot tell which film the word "remake" or "remade" applies to, answer "none".
+
+The items follow.
+
+### ITEM 3602179288efddfb
+PAGE: The Toy Tiger
+SENTENCE: It is a remake of Mad About Music (1938).
+OTHER FILMS: ["Mad About Music"]
+
+### ITEM 8ab57a6a4a200134
+PAGE: Cape Fear (1962 film)
+SENTENCE: A remake of the same name was released in 1991, directed by Martin Scorsese and starring Nick Nolte and Robert De Niro in the lead roles.
+OTHER FILMS: ["Cape Fear (1991 film)"]
+
+### ITEM 05abac9c49f7f02d
+PAGE: Run for the Sun
+SENTENCE: Run for the Sun is a 1956 American Technicolor thriller adventure film released by United Artists, the third film to officially be based on Richard Connell's classic 1924 suspense story, "The Most Dangerous Game", after both RKO's The Most Dangerous Game (1932), and their remake, A Game of Death (1945).
+OTHER FILMS: ["The Most Dangerous Game (film)"]
+
+### ITEM d8ce051331e04bf2
+PAGE: Streets of Laredo (film)
+SENTENCE: The film is a Technicolor remake of King Vidor's black-and-white film The Texas Rangers (1936), which starred Fred MacMurray in Holden's role, Jack Oakie in William Bendix's, Lloyd Nolan in MacDonald Carey's role, and Jean Parker as the girl they rescue.
+OTHER FILMS: ["The Texas Rangers (1936 film)"]
+
+### ITEM d5b9ad8a94239622
+PAGE: Back from Eternity
+SENTENCE: The film is a remake of the 1939 film Five Came Back, also directed and produced by John Farrow.
+OTHER FILMS: ["Five Came Back"]
+
+### ITEM 1f30945db4eb4364
+PAGE: House on Haunted Hill
+SENTENCE: In the years since its release, the film has developed a cult following and was remade in 1999.
+OTHER FILMS: ["House on Haunted Hill (1999 film)"]
+
+### ITEM 6ecf9d0d7627c3e5
+PAGE: Northwest Rangers
+SENTENCE: Northwest Rangers is a 1942 American Metro-Goldwyn-Mayer northern film that is a remake of Manhattan Melodrama set in the North-West Mounted Police of Canada.
+OTHER FILMS: ["Manhattan Melodrama"]
+
+### ITEM 66cae2754c7ec2cd
+PAGE: Iron Man (1951 film)
+SENTENCE: The film is a remake of a 1931 film of the same title directed by Tod Browning.
+OTHER FILMS: ["Iron Man (1931 film)"]
+
+### ITEM a806c49e66c439dd
+PAGE: Fear in the Night (1947 film)
+SENTENCE: The film was remade by the same director in 1956 with the title Nightmare this time starring [[Edward G.
+OTHER FILMS: ["Nightmare (1956 film)"]
+
+### ITEM 4163e81769a317c9
+PAGE: The Perils of Pauline (1947 film)
+SENTENCE: Although named after the 1914 film serial of the same name, it is not a remake of it.
+OTHER FILMS: ["The Perils of Pauline (1914 serial)"]
+
+### ITEM 173dac4201ad5e9a
+PAGE: Sweet November (1968 film)
+SENTENCE: A 2001 remake starred Keanu Reeves and Charlize Theron.
+OTHER FILMS: ["Sweet November (2001 film)"]
+
+### ITEM cbcb1ff6b0a9efb4
+PAGE: Rock-A-Bye Baby (film)
+SENTENCE: A loose remake of Preston Sturges' film The Miracle of Morgan's Creek (1944), the film was directed and written by Frank Tashlin, and features Marilyn Maxwell, Connie Stevens and Reginald Gardiner.
+OTHER FILMS: ["The Miracle of Morgan's Creek"]
+
+### ITEM 36922d0087482d83
+PAGE: The Big Operator (1959 film)
+SENTENCE: The film is a remake of Joe Smith, American (1942) with labor union thugs replacing Axis spies.
+OTHER FILMS: ["Joe Smith, American"]
+
+### ITEM 09817fe3c032d313
+PAGE: The Girl Most Likely
+SENTENCE: The film, a remake of Tom, Dick and Harry (1941), was directed by Mitchell Leisen, and stars Jane Powell, Cliff Robertson, and Keith Andes.
+OTHER FILMS: ["Tom, Dick and Harry (1941 film)"]
+
+### ITEM 36ee0cf3fc703d16
+PAGE: Cat People (1942 film)
+SENTENCE: The film was followed by a sequel, The Curse of the Cat People, in 1944, and a remake, directed by Paul Schrader, was released in 1982.
+OTHER FILMS: ["The Curse of the Cat People", "Cat People (1982 film)"]
+
+### ITEM 8c760c69e0899096
+PAGE: The Round Up (1941 film)
+SENTENCE: It is a remake of the 1920 silent film The Round-Up, and is noteworthy for casting Wilson (best known as Jack Benny's announcer) in a rare dramatic role as the tubby sheriff originally played by Roscoe Arbuckle.
+OTHER FILMS: ["The Round-Up (1920 film)"]
+
+### ITEM 7c441a8f01005491
+PAGE: Night of the Living Dead
+SENTENCE: An official remake, written by Romero and directed by Tom Savini, was released in 1990.
+OTHER FILMS: ["Night of the Living Dead (1990 film)"]
+
+### ITEM fdaa2bd504ecb135
+PAGE: The Reluctant Debutante (film)
+SENTENCE: In 2003, the film was remade as What a Girl Wants, starring Colin Firth and Amanda Bynes.
+OTHER FILMS: ["What a Girl Wants (film)"]
+
+### ITEM 3117bc19d7720bfe
+PAGE: The Magnificent Seven
+SENTENCE: It spawned three sequels, a television series that aired from 1998 to 2000, and a 2016 film remake.
+OTHER FILMS: ["The Magnificent Seven (2016 film)"]
+
+### ITEM 3a69bcc2a3f77abe
+PAGE: A Guy Named Joe
+SENTENCE: Steven Spielberg's 1989 film Always is a remake of A Guy Named Joe and exchanges the World War II backdrop to one of aerial firefighting.
+OTHER FILMS: ["Always (1989 film)"]
+
+### ITEM 81d4729b585f7147
+PAGE: Kid Galahad
+SENTENCE: The film is a remake of the 1937 version (in which United Artists Television through Associated Artists Productions distributed for TV airings at that time) starring [[Edward G.
+OTHER FILMS: ["Kid Galahad (1937 film)"]
+
+### ITEM cfd9ae1164a63c03
+PAGE: Voodoo Woman
+SENTENCE: It was remade by Larry Buchanan into a 1966 AIP made-for-television film titled Curse of the Swamp Creature.
+OTHER FILMS: ["Curse of the Swamp Creature"]
+
+### ITEM c0b564c38e45c520
+PAGE: I Died a Thousand Times
+SENTENCE: John]] I Died a Thousand Times is a scene-by-scene remake of the 1941 crime noir High Sierra, which was based upon a novel by [[W.
+OTHER FILMS: ["High Sierra (film)"]
+
+### ITEM e9d2cab4bae313b2
+PAGE: Something's Got to Give
+SENTENCE: A remake of My Favorite Wife (1940), a screwball comedy starring Irene Dunne and Cary Grant, it was Monroe's last work.
+OTHER FILMS: ["My Favorite Wife"]
+
+### ITEM 48ffb922ae51c9f9
+PAGE: The Wagons Roll at Night
+SENTENCE: In 1962, United Artists produced a musical remake of the "boxing" version of Wallace's story under the same title, directed by Phil Karlson and starring Elvis Presley as the boxer.
+OTHER FILMS: ["Kid Galahad"]
+
+### ITEM fc8c10daa48b4065
+PAGE: Emergency Wedding
+SENTENCE: It is a remake of You Belong to Me (1941), a film in which Parks had also appeared.
+OTHER FILMS: ["You Belong to Me (1941 film)"]
+
+### ITEM a74a55a6409021b8
+PAGE: Tarzan, the Ape Man (1959 film)
+SENTENCE: MGM would release another remake of the film in 1981.
+OTHER FILMS: ["Tarzan, the Ape Man (1981 film)"]
+
+### ITEM d58b81d2d617349e
+PAGE: The Paleface (1948 film)
+SENTENCE: In 1968, Don Knotts remade the film as The Shakiest Gun in the West.
+OTHER FILMS: ["The Shakiest Gun in the West"]
+
+### ITEM 5a0fa6e180451bea
+PAGE: Cairo (1963 film)
+SENTENCE: It is a remake of the 1950 film noir The Asphalt Jungle, relocated from the American Midwest to the titular Egyptian city.
+OTHER FILMS: ["The Asphalt Jungle"]
+
+### ITEM e2fd603b4fece74c
+PAGE: Bugs and Thugs
+SENTENCE: The film is a semi-remake of the 1946 cartoon Racketeer Rabbit.
+OTHER FILMS: ["Racketeer Rabbit"]
+
+### ITEM 7ca4c37410619d93
+PAGE: The Last Mile (1959 film)
+SENTENCE: The film is a remake of a 1932 film of the same name starring Preston Foster.
+OTHER FILMS: ["The Last Mile (1932 film)"]
+
+### ITEM b051926726480bef
+PAGE: Sahara (1943 American film)
+SENTENCE: Sahara was remade by André de Toth as a Western called Last of the Comanches (1953), and four decades later by Brian Trenchard-Smith as the American-Australian television film Sahara (1995).
+OTHER FILMS: ["Last of the Comanches"]
+
+### ITEM 3a78e4f8221f3013
+PAGE: You Can't Run Away from It
+SENTENCE: The film is a remake of the 1934 Academy Award-winning film It Happened One Night.
+OTHER FILMS: ["It Happened One Night"]
+
+### ITEM 7c52e468b7f3b198
+PAGE: Mighty Joe Young (1949 film)
+SENTENCE: It was later remade in 1998 with Charlize Theron and Bill Paxton.
+OTHER FILMS: ["Mighty Joe Young (1998 film)"]
+
+### ITEM dd0c08f33494616c
+PAGE: The Reckless Moment
+SENTENCE: The 2001 film The Deep End is a remake based on the same source material.
+OTHER FILMS: ["The Deep End (film)"]
+
+### ITEM 41f871df4b70cd67
+PAGE: Journey to the Center of Time
+SENTENCE: It is a loose remake of The Time Travelers (1964) and is also known as Time Warp.
+OTHER FILMS: ["The Time Travelers (1964 film)"]
+
+### ITEM 616c6262132c8dd8
+PAGE: The Flight of the Phoenix (1965 film)
+SENTENCE: The Flight of the Phoenix was remade in 2004, titled Flight of the Phoenix.
+OTHER FILMS: ["Flight of the Phoenix (2004 film)"]
+
+### ITEM 5c87876668811578
+PAGE: Night Plane from Chungking
+SENTENCE: Night Plane from Chungking was a remake of Paramount's earlier film Shanghai Express (1932).
+OTHER FILMS: ["Shanghai Express (film)"]
+
+### ITEM 7ef432a5948313f3
+PAGE: True Grit (1969 film)
+SENTENCE: True Grit's success spawned a 1975 theatrical film sequel with Wayne again reprising his character in Rooster Cogburn, a 1978 television film sequel starring Warren Oates True Grit: A Further Adventure, and an acclaimed 2010 remake film of the same name directed by the Coen brothers and starring Jeff Bridges.
+OTHER FILMS: ["Rooster Cogburn (film)", "True Grit (2010 film)"]
+
+### ITEM 0cb5a6d6613428ab
+PAGE: Magnificent Obsession (1954 film)
+SENTENCE: It is a remake of the 1935 film, starring Irene Dunne and Robert Taylor.
+OTHER FILMS: ["Magnificent Obsession (1935 film)"]
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/remakes/statements/r1_035.out.json as a JSON list with one object per item: {"item": "<the code after ITEM>", "links": [{"film": "<title exactly as listed>", "relation": "...", "wording": "..."}]} with one entry in "links" for every film listed under OTHER FILMS. Write nothing else to that file.

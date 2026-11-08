@@ -1,0 +1,123 @@
+[
+  {
+    "id": 39807482,
+    "kind": "film",
+    "year": 2018,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": []
+  },
+  {
+    "id": 3591767,
+    "kind": "film",
+    "year": 1946,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Adventure of the Blue Carbuncle",
+        "tier": "C",
+        "quote": "it uses minor plot elements of \"The Adventure of the Blue Carbuncle,\" \"The Adventure of the Empty House,\" \"The Disappearance of Lady Frances Carfax,\" and \"The Sign of Four\""
+      },
+      {
+        "story": "The Adventure of the Empty House",
+        "tier": "C",
+        "quote": "it uses minor plot elements of \"The Adventure of the Blue Carbuncle,\" \"The Adventure of the Empty House,\" \"The Disappearance of Lady Frances Carfax,\" and \"The Sign of Four\""
+      },
+      {
+        "story": "The Disappearance of Lady Frances Carfax",
+        "tier": "C",
+        "quote": "it uses minor plot elements of \"The Adventure of the Blue Carbuncle,\" \"The Adventure of the Empty House,\" \"The Disappearance of Lady Frances Carfax,\" and \"The Sign of Four\""
+      },
+      {
+        "story": "The Sign of the Four",
+        "tier": "C",
+        "quote": "it uses minor plot elements of \"The Adventure of the Blue Carbuncle,\" \"The Adventure of the Empty House,\" \"The Disappearance of Lady Frances Carfax,\" and \"The Sign of Four\""
+      }
+    ],
+    "other_sources": []
+  },
+  {
+    "id": 51350614,
+    "kind": "film",
+    "year": 2018,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": []
+  },
+  {
+    "id": 50016336,
+    "kind": "video_game",
+    "year": 2016,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": []
+  },
+  {
+    "id": 51743654,
+    "kind": "tv_episode",
+    "year": 2017,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Adventure of the Dying Detective",
+        "tier": "B",
+        "quote": "The episode was based loosely on the Doyle short story \"The Adventure of the Dying Detective\"."
+      }
+    ],
+    "other_sources": []
+  },
+  {
+    "id": 28149585,
+    "kind": "film",
+    "year": 1932,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": []
+  },
+  {
+    "id": 28151049,
+    "kind": "tv_episode",
+    "year": 2010,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "A Study in Scarlet",
+        "tier": "B",
+        "quote": "It is loosely based upon the first Sherlock Holmes novel, A Study in Scarlet."
+      },
+      {
+        "story": "The Sign of the Four",
+        "tier": "C",
+        "quote": "Fans will recognise at once that the close-reading Sherlock applies to John's mobile phone is drawn from an almost identical analysis of a pocket watch [taken from The Sign of the Four]."
+      },
+      {
+        "story": "The Red-Headed League",
+        "tier": "C",
+        "quote": "The \"three-patch problem\" that Holmes describes is similar to the term \"three-pipe problem\" he uses in \"The Red-Headed League\"."
+      }
+    ],
+    "other_sources": []
+  },
+  {
+    "id": 4733230,
+    "kind": "video_game",
+    "year": 1996,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": []
+  },
+  {
+    "id": 5664795,
+    "kind": "film",
+    "year": 1939,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Hound of the Baskervilles",
+        "tier": "A",
+        "quote": "The Hound of the Baskervilles is a 1939 American gothic mystery film based on the 1902 Sherlock Holmes novel of the same name by Sir Arthur Conan Doyle."
+      }
+    ],
+    "other_sources": []
+  }
+]

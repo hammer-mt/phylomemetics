@@ -1,0 +1,222 @@
+You are helping to build a research corpus of film remakes from Wikipedia. Each item below gives the title of a film's Wikipedia page (PAGE), ONE sentence from the opening of that page, and the OTHER FILMS that sentence links to. For each other film, record what THE SENTENCE SAYS about PAGE and that film. You are not asked what you know about the films.
+
+For each other film give:
+- "relation":
+    "page_remakes_other"   the sentence says PAGE is a remake of the other film;
+    "other_remakes_page"   the sentence says the other film is a remake of PAGE (for example "it was remade in Telugu as ...");
+    "none"                 anything else.
+- "wording":
+    "firm"    the sentence states the remake plainly as a fact: "is a remake of", "an official remake of", "was remade as", "was remade in Hindi as";
+    "loose"   the sentence weakens or hedges it: "loosely", "partly", "unofficial", "uncredited", "inspired by", "based on the idea of", "reported to be", "said to be", "has been described as", "considered", "similar to", "reboot", "reimagining", "re-adaptation";
+    "" when the relation is "none".
+
+Rules.
+- Use only what the sentence says. Do not use your own knowledge of the films, and do not guess from titles or years.
+- If the sentence lists several films as remakes of PAGE, each of them is "other_remakes_page".
+- If the sentence says PAGE is a remake of X, and that X is itself a remake of or based on Y, then X is "page_remakes_other" and Y is "none", unless the sentence also says PAGE is a remake of Y.
+- "none" covers: a sequel, prequel or spin-off; a film that is only compared or mentioned; another remake of the same original (a sibling); a film based on the same novel, play or true story that the sentence does not call a remake; a film whose remake status the sentence denies; a dubbed version; a film shot at the same time in another language ("simultaneously", "bilingual").
+- If you cannot tell which film the word "remake" or "remade" applies to, answer "none".
+
+The items follow.
+
+### ITEM 9dae0feba8ad507a
+PAGE: Insan
+SENTENCE: It is a remake of Telugu film Khadgam (2002), directed by Krishna Vamsi.
+OTHER FILMS: ["Khadgam"]
+
+### ITEM 0b78c6b0da8cc984
+PAGE: Jigri Dost
+SENTENCE: The film is a remake of 1966 Kannada movie Emme Thammanna, which had earlier been remade in Telugu in 1968 as Govula Gopanna and which later went on to be remade in Tamil in 1970 as Maattukara Velan.
+OTHER FILMS: ["Govula Gopanna", "Maattukara Velan"]
+
+### ITEM c8f80cc58d6754a6
+PAGE: Siruthai
+SENTENCE: It is a remake of the 2006 Telugu film Vikramarkudu, directed by [[S.
+OTHER FILMS: ["Vikramarkudu"]
+
+### ITEM 295c28bd08ec19d7
+PAGE: What a Man! (1930 film)
+SENTENCE: The film was remade in 1938 as Merrily We Live.
+OTHER FILMS: ["Merrily We Live"]
+
+### ITEM 4cc2e062de53c4a1
+PAGE: Waterloo Bridge (1931 film)
+SENTENCE: The film was remade in 1940 as Waterloo Bridge and as Gaby in 1956.
+OTHER FILMS: ["Waterloo Bridge (1940 film)", "Gaby (film)"]
+
+### ITEM 6af03b3a1b7b70ea
+PAGE: Seenu (2000 film)
+SENTENCE: A remake of the 1991 Malayalam film Bharatham, the film stars Karthik, Malavika, and Vasu, while Vivek and Janagaraj play supporting roles.
+OTHER FILMS: ["Bharatham"]
+
+### ITEM b016c3dea6162237
+PAGE: A Wednesday!
+SENTENCE: It went on to be remade in Tamil and Telugu simultaneously as Unnaipol Oruvan and Eenadu (both 2009), and as an English-language Sri Lankan film A Common Man (2013).
+OTHER FILMS: ["Unnaipol Oruvan (2009 film)"]
+
+### ITEM cf7d79575cc25552
+PAGE: Vietnam Colony
+SENTENCE: A Tamil remake of the film was released in 1994 with the same title.
+OTHER FILMS: ["Vietnam Colony (1994 film)"]
+
+### ITEM ed42dc8c037fb932
+PAGE: Hudugaru
+SENTENCE: The film, which is a remake of the successful 2009 Tamil film Naadodigal, was produced by Parvathamma Rajkumar, with [[V.
+OTHER FILMS: ["Naadodigal"]
+
+### ITEM 65f2ba745de711f6
+PAGE: 22 Female Kottayam
+SENTENCE: It was later remade in Tamil as Malini 22 Palayamkottai and in Telugu as Ghatana.
+OTHER FILMS: ["Malini 22 Palayamkottai"]
+
+### ITEM b20ac3160f46dc53
+PAGE: En Mana Vaanil
+SENTENCE: It is a remake of his Malayalam film Oomappenninu Uriyadappayyan (2002).
+OTHER FILMS: ["Oomappenninu Uriyadappayyan"]
+
+### ITEM ea6df095448fb62d
+PAGE: Ravan Raaj: A True Story
+SENTENCE: It is a remake of the 1990 Tamil film Pulan Visaranai, starring Vijayakanth.
+OTHER FILMS: ["Pulan Visaranai"]
+
+### ITEM 1fccb7d2441d9ce4
+PAGE: Ek Daav Dhobi Pachhad
+SENTENCE: The movie is an uncredited remake of a 1991 movie starring Sylvester Stallone.
+OTHER FILMS: ["Oscar (1991 film)"]
+
+### ITEM 766e930ea65799ef
+PAGE: Amanush 2
+SENTENCE: The film is a remake of the Tamil film Naan which starred Vijay Antony in the lead.
+OTHER FILMS: ["Naan (2012 film)"]
+
+### ITEM e6eaf78083651c15
+PAGE: Engal Kudumbam Perisu
+SENTENCE: The film was remade in Malayalam in 1964 as School Master by Puttanna Kanagal, in Telugu in 1972 as Badi Panthulu and in Tamil in 1973 as School Master.
+OTHER FILMS: ["Badi Panthulu", "School Master (1973 film)"]
+
+### ITEM c005ba35b9177e5b
+PAGE: Swarg
+SENTENCE: The film is loosely based on the 1967 film Mehrban starring Ashok Kumar and Sunil Dutt, which itself was a remake of the 1960 Tamil film Padikkadha Medhai which in turn was a remake of 1953 Bengali film Jog Biyog. based on the novel of same name by Ashapoorna Devi.
+OTHER FILMS: ["Padikkadha Medhai"]
+
+### ITEM a2470fc98dc6cc98
+PAGE: Rokto
+SENTENCE: Which itself was a remake of the 1996 Hollywood film The Long Kiss Goodnight.
+OTHER FILMS: ["The Long Kiss Goodnight"]
+
+### ITEM 56c94401349c93fb
+PAGE: Oh My God (2012 film)
+SENTENCE: It was remade in Telugu as Gopala Gopala (2015) with Venkatesh, Pawan Kalyan, and Shriya Saran.
+OTHER FILMS: ["Gopala Gopala (2015 film)"]
+
+### ITEM 714c9ad1dc82a136
+PAGE: Har Dil Jo Pyar Karega
+SENTENCE: The film is a remake of the Malayalam film Chandralekha (1997) which itself was inspired by the 1995 American film While You Were Sleeping.
+OTHER FILMS: ["While You Were Sleeping (film)"]
+
+### ITEM c93577951921d45f
+PAGE: Papanasam (film)
+SENTENCE: A remake of Jeethu's own 2013 Malayalam film Drishyam, it was jointly produced by Suresh Balaje and Rajkumar Sethupathi.
+OTHER FILMS: ["Drishyam"]
+
+### ITEM f51a2d3dbf4c9f90
+PAGE: The Glass Key (1935 film)
+SENTENCE: Produced and distributed by Paramount Pictures, it was based upon the 1931 suspense novel The Glass Key by Dashiell Hammett, The film was remade in 1942, with Alan Ladd in Raft's role, Brian Donlevy and Veronica Lake in the roles previously played by Arnold and Dodd, and William Bendix in Guinn Williams's part.
+OTHER FILMS: ["The Glass Key (1942 film)"]
+
+### ITEM 95266543db980438
+PAGE: Honest Raj
+SENTENCE: The film was remade in Hindi as Rakshak (1996).
+OTHER FILMS: ["Rakshak"]
+
+### ITEM 5c0a2bbf018491e4
+PAGE: TN 07 AL 4777
+SENTENCE: It is a remake of the 2006 Hindi film Taxi No. 9211 which was based on the American film Changing Lanes (2002).
+OTHER FILMS: ["Taxi No. 9211", "Changing Lanes"]
+
+### ITEM f7a5771e4ce05d46
+PAGE: Avvai Shanmughi
+SENTENCE: A year later, the film was remade in Hindi as Chachi 420, with Haasan directing and reprising his role.
+OTHER FILMS: ["Chachi 420"]
+
+### ITEM 8f3c47853bfc755e
+PAGE: Oru Naal Iravil
+SENTENCE: A remake of Joy Mathew's successful Malayalam film Shutter (2012), the film stars Sathyaraj in the lead role.
+OTHER FILMS: ["Shutter (2012 film)"]
+
+### ITEM ebba3c765d7e32ab
+PAGE: Hum Tum Aur Ghost
+SENTENCE: This unofficial remake of Ghost Town was filmed in Newcastle upon Tyne, England.
+OTHER FILMS: ["Ghost Town (2008 film)"]
+
+### ITEM 26249342eddac023
+PAGE: Vallavanukku Vallavan (1965 film)
+SENTENCE: The film was Modern Theatres' 100th film, and is a remake of the 1963 Hindi film Ustadon Ke Ustad.
+OTHER FILMS: ["Ustadon Ke Ustad (1963 film)"]
+
+### ITEM b2ca6e9355f18c6e
+PAGE: Secret Service of the Imperial Court
+SENTENCE: The 2010 film 14 Blades has been suggested to be a remake.
+OTHER FILMS: ["14 Blades"]
+
+### ITEM f7cfdb7f7c0fcd1e
+PAGE: Chronic Bachelor
+SENTENCE: It was later remade in Tamil as Engal Anna starring Vijayakanth and in Telugu as Kushi Kushiga with Jagapati Babu.
+OTHER FILMS: ["Engal Anna", "Kushi Kushiga"]
+
+### ITEM 539fe5f6116675e7
+PAGE: Bangali Babu English Mem
+SENTENCE: It is a remake of Punjabi movie Jatt & Juliet.
+OTHER FILMS: ["Jatt & Juliet"]
+
+### ITEM 9b039adfd59542d5
+PAGE: Chennaiyil Oru Naal
+SENTENCE: The film is a remake of the 2011 Malayalam thriller film Traffic. The film has its narrative in a hyperlink format.
+OTHER FILMS: ["Traffic (2011 film)"]
+
+### ITEM e073929ca1701dbe
+PAGE: Humshakal (1974 film)
+SENTENCE: The film was a remake of the 1970 Kannada film Baalu Belagithu, which was also remade in Telugu as Manchivadu (1973) and in Tamil as Oorukku Uzhaippavan (1976).
+OTHER FILMS: ["Manchivadu", "Oorukku Uzhaippavan"]
+
+### ITEM 0e7e3a4f77ea899b
+PAGE: Deewane Huye Paagal
+SENTENCE: An unofficial remake of the 1998 American film There's Something About Mary with some changes, the film was released on 25 November 2005 to positive reviews from critics.
+OTHER FILMS: ["There's Something About Mary"]
+
+### ITEM 1122672db492ef26
+PAGE: Purusha Lakshanam
+SENTENCE: The film was remade as Bhale Pellam in Telugu and in Mangalya Bandhana in Kannada.
+OTHER FILMS: ["Bhale Pellam"]
+
+### ITEM c2ff2f5d341b5aff
+PAGE: Samudhiram
+SENTENCE: The film was remade in Telugu as Siva Rama Raju, in Bengali as Kartabya and in Kannada as Paramashiva.
+OTHER FILMS: ["Siva Rama Raju"]
+
+### ITEM b18f93de508dd286
+PAGE: Khushi Khushiyagi
+SENTENCE: It is a remake of the Telugu film Gunde Jaari Gallanthayyinde (2013) and was released on 1 January 2015.
+OTHER FILMS: ["Gunde Jaari Gallanthayyinde"]
+
+### ITEM a2c10b179b8fcb65
+PAGE: Love Express (2016 film)
+SENTENCE: This film was actually a remake of 2013 Indian-Telugu Language film Venkatadri Express, starting Sundeep Kishan and Rakul Preet Singh
+OTHER FILMS: ["Venkatadri Express (film)"]
+
+### ITEM 7414832d9da0d708
+PAGE: Aadmi (1968 film)
+SENTENCE: The film is a remake of the Tamil film Aalayamani.
+OTHER FILMS: ["Aalayamani"]
+
+### ITEM dac4f6250d4ae8d5
+PAGE: Parda Hai Parda (film)
+SENTENCE: It is a remake of the 1990 Malayalam film In Harihar Nagar, which went on to be remade again in Hindi as Dhol.
+OTHER FILMS: ["In Harihar Nagar"]
+
+### ITEM 1d9b657b5affbc98
+PAGE: Dookudu
+SENTENCE: The film was remade in Bengali as Challenge 2 (2012) and in Kannada as Power (2014).
+OTHER FILMS: ["Challenge 2", "Power (2014 Kannada film)"]
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/remakes/statements/r2_007.out.json as a JSON list with one object per item: {"item": "<the code after ITEM>", "links": [{"film": "<title exactly as listed>", "relation": "...", "wording": "..."}]} with one entry in "links" for every film listed under OTHER FILMS. Write nothing else to that file.

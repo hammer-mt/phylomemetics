@@ -1,0 +1,135 @@
+You are helping to build a research corpus about Sherlock Holmes on screen. For each article below, record what THE ARTICLE ITSELF SAYS the work is based on. You are not asked what you know about the work or about the stories.
+
+For each article give:
+- "kind": one of "film", "tv_episode", "tv_film", "video_game", "series" (an article about a whole film series, television series or game series, not one work), "other".
+- "year": the year of first release or broadcast that the article gives (an integer), or null.
+- "holmes_appears": true if the article presents Sherlock Holmes as a character in the work, else false.
+- "sources": a list, possibly empty, of the Conan Doyle stories the article names as a source of the work. Each entry has:
+    "story": the story's title, copied exactly from the list of the 60 canonical stories given below;
+    "tier": "A", "B" or "C" by the rule below;
+    "quote": the sentence or infobox entry of the article that says so, copied word for word (at most 40 words).
+- "other_sources": a list of any source the article names that is not one of the 60 stories (a play, a later novel, another film), as short strings. Empty if none.
+
+The tiers. Use the article's own wording.
+- Tier A, a stated adaptation. The article says outright that the work is an adaptation of the story, is based on it, is a version of it, or dramatises it, with no loosening word. An infobox entry "based on" that names the story counts.
+- Tier B, a stated loose adaptation. The article says the work is loosely, partly or freely based on the story, or is a modern-day or updated adaptation of it, or takes its plot from it while changing it, or is credited as an adaptation although the plot differs.
+- Tier C, elements only. The article says the work is inspired by the story, borrows or uses elements, characters, a device, a line or its title from it, alludes or refers to it, or that critics see a resemblance.
+
+Rules.
+- Use only what the article says about the work's sources. Do not add a source from your own knowledge, and do not infer one from character names or from anything else.
+- If the article names several stories, give each its own entry and its own tier.
+- If the article says the screenplay is original, or names no canonical story as a source, "sources" is an empty list.
+- A statement that the work features characters created by Conan Doyle is not a source statement.
+- A story named only as the source of a DIFFERENT work (an earlier film, a sequel) is not a source of this one.
+
+The 60 canonical stories (copy a title exactly as written here):
+- A Study in Scarlet
+- The Sign of the Four
+- The Hound of the Baskervilles
+- The Valley of Fear
+- A Scandal in Bohemia
+- The Red-Headed League
+- A Case of Identity
+- The Boscombe Valley Mystery
+- The Five Orange Pips
+- The Man with the Twisted Lip
+- The Adventure of the Blue Carbuncle
+- The Adventure of the Speckled Band
+- The Adventure of the Engineer's Thumb
+- The Adventure of the Noble Bachelor
+- The Adventure of the Beryl Coronet
+- The Adventure of the Copper Beeches
+- The Adventure of Silver Blaze
+- The Adventure of the Cardboard Box
+- The Adventure of the Yellow Face
+- The Adventure of the Stockbroker's Clerk
+- The Adventure of the Gloria Scott
+- The Adventure of the Musgrave Ritual
+- The Adventure of the Reigate Squire
+- The Adventure of the Crooked Man
+- The Adventure of the Resident Patient
+- The Adventure of the Greek Interpreter
+- The Adventure of the Naval Treaty
+- The Final Problem
+- The Adventure of the Empty House
+- The Adventure of the Norwood Builder
+- The Adventure of the Dancing Men
+- The Adventure of the Solitary Cyclist
+- The Adventure of the Priory School
+- The Adventure of Black Peter
+- The Adventure of Charles Augustus Milverton
+- The Adventure of the Six Napoleons
+- The Adventure of the Three Students
+- The Adventure of the Golden Pince-Nez
+- The Adventure of the Missing Three-Quarter
+- The Adventure of the Abbey Grange
+- The Adventure of the Second Stain
+- The Adventure of Wisteria Lodge
+- The Adventure of the Red Circle
+- The Adventure of the Bruce-Partington Plans
+- The Adventure of the Dying Detective
+- The Disappearance of Lady Frances Carfax
+- The Adventure of the Devil's Foot
+- His Last Bow (short story)
+- The Adventure of the Mazarin Stone
+- The Problem of Thor Bridge
+- The Adventure of the Creeping Man
+- The Adventure of the Sussex Vampire
+- The Adventure of the Three Garridebs
+- The Adventure of the Illustrious Client
+- The Adventure of the Three Gables
+- The Adventure of the Blanched Soldier
+- The Adventure of the Lion's Mane
+- The Adventure of the Retired Colourman
+- The Adventure of the Veiled Lodger
+- The Adventure of Shoscombe Old Place
+
+The articles follow. The plot summaries have been left out on purpose.
+
+### ARTICLE id 39807482: Sherlock Gnomes
+Infobox: {"director": "John Stevenson", "screenplay": "Ben Zazove"}
+[Lead] Sherlock Gnomes is a 2018 animated mystery comedy film directed by John Stevenson. A sequel to Gnomeo & Juliet (2011), it is based on the detective character Sherlock Holmes. James McAvoy, Emily Blunt, Maggie Smith, Michael Caine, Ashley Jensen, Matt Lucas, Stephen Merchant, and Ozzy Osbourne reprise their roles from the first film, with Johnny Depp, Chiwetel Ejiofor, Mary J. Blige, and Jamie Demetriou joining the cast. The film follows garden gnomes, Gnomeo and Juliet, recruiting gnome detective Sherlock Gnomes to find the missing ornaments from their new garden in London. The film was released in the United States on March 23, 2018, and in the United Kingdom on May 11, 2018. The film received generally mixed to negative reviews from critics, and nearly underperformed at the box-office, grossing $97.5 million against a production budget of $59 million.
+[Production] Development In March 2012, it was reported that a sequel to Gnomeo & Juliet was in development at Rocket Pictures. Emily Cook, Kathy Greenberg, Andy Riley and Kevin Cecil—four of the nine writers of the original film—were attached to write the script. Steve Hamilton Shaw and David Furnish returned as producers, with Elton John serving again as executive producer and composing new songs. The sequel would introduce Sherlock Gnomes, described as "the greatest ornamental detective", hired to investigate the mysterious disappearance of gnomes. In September 2012, John Stevenson, co-director of Kung Fu Panda (2008), was announced as the director. Kelly Asbury, who directed the original film, was unavailable due to his commitments on Smurfs: The Lost Village (2017) for Sony Pictures Animation. However, he remained involved as a creative consultant and voiced the Red Goon Gnomes. Casting In November 2015, Johnny Depp was announced as the voice of Sherlock Gnomes, with the film scheduled for release on January 12, 2018. James McAvoy and Emily Blunt reprised their roles as Gnomeo and Juliet, respectively. Animation Unlike its predecessor, which was animated by Arc Productions, Sherlock Gnomes was animated by Mikros Animation in London and Paris, with additional work by Reel FX Animation in Dallas, Los Angeles, and Montreal. The animation was produced using Autodesk Maya, and character models from the first film were reused. Approximately 60% of the animation crew was in London, with the remainder in Paris. At peak production, the film employed between 80 and 100 animators. Animation director Eric Leighton cited George Pal's Puppetoons as an inspiration of the gnome animation style. Human characters were animated using motion capture, while the end credits sequence was produced by Studio AKA in London. Music Chris Bacon returned to compose the score, as he had on the first film. James Newton Howard, who co-composed the original score, did not return due to his work on Fantastic Beasts: The Crimes of Grindelwald (2018), though he contributed as a music consultant. The film's soundtrack was released by Virgin EMI Records.
+
+### ARTICLE id 3591767: Terror by Night
+Infobox: {"director": "Roy William Neill", "writer": "Frank Gruber"}
+[Lead] Terror by Night is a 1946 British Sherlock Holmes crime drama film directed by Roy William Neill and starring Basil Rathbone and Nigel Bruce. It was written by Frank Gruber. The story revolves around the theft of a famous diamond aboard a train. The film's plot is a mostly original story not directly based on any of Arthur Conan Doyle's Holmes tales, but it uses minor plot elements of "The Adventure of the Blue Carbuncle," "The Adventure of the Empty House," "The Disappearance of Lady Frances Carfax," and "The Sign of Four". The film is one of four films in the series which are in the public domain.
+
+### ARTICLE id 51350614: Holmes & Watson
+Infobox: {"director": "Etan Cohen", "writer": "Etan Cohen"}
+[Lead] Holmes & Watson is a 2018 mystery comedy film written and directed by Etan Cohen. The film stars Will Ferrell and John C. Reilly as the eponymous characters Sherlock Holmes and Dr. Watson, respectively; with Rebecca Hall, Rob Brydon, Kelly Macdonald, Steve Coogan and Ralph Fiennes in supporting roles. The plot follows the famed detective duo as they set out to find the culprit behind a threat at Buckingham Palace. First announced in 2008 with Sacha Baron Cohen as Holmes and Ferrell as Watson, Holmes & Watson languished in development hell for several years before Ferrell and Reilly were confirmed for their eventual roles in July 2016, and Etan Cohen was announced as director. Filming took place around London from late 2016 to early 2017. It is the third collaboration between Ferrell and Reilly after Talladega Nights: The Ballad of Ricky Bobby (2006), and Step Brothers (2008), and the first not to be directed by Adam McKay (who instead co-produced this film with Ferrell, Jimmy Miller and Clayton Townsend). Holmes & Watson was released in the United States on December 25, 2018, by Sony Pictures Releasing, through its Columbia Pictures label. The film underperformed at the box office, grossing $41.9 million worldwide on a $42 million budget. The film received largely negative reviews from both critics and audiences alike for its script, humor, and unfaithfulness to the source material, and is widely considered as one of the worst movies of all time. The press reported numerous instances of people walking out early during screenings. The film received six nominations at the 39th Golden Raspberry Awards, and won four, including Worst Picture.
+[Production] In July 2008, it was reported that Sacha Baron Cohen would play Holmes and Will Ferrell would play Dr. Watson in a comedic take on Sherlock Holmes, to be produced by Judd Apatow with a script written by Etan Cohen, for Columbia Pictures. On August 17, 2016, it was reported that Ferrell and John C. Reilly would star in the film, titled Holmes & Watson, and written and directed by Etan Cohen, with Ferrell playing Holmes and Reilly playing Watson. On November 14, 2016, Lauren Lapkus was cast to play Millie, with whom Sherlock is obsessed. On November 17, 2016, Rob Brydon, Kelly Macdonald, and Rebecca Hall were added to the cast. On January 6, 2017, Ralph Fiennes and Hugh Laurie also joined the cast. Filming began in early December 2016 in London at Shepperton Studios. In early February 2017, film crews were on location at Hampton Court Palace. A new song called "Strange Sensation" was written for the film by Alan Menken and his lyric-writer Glenn Slater, while the original score was composed by Mark Mothersbaugh.
+
+### ARTICLE id 50016336: Sherlock Holmes: The Devil's Daughter
+Infobox: {"developer": "Frogwares", "series": "Sherlock Holmes", "genre": "Adventure"}
+[Lead] Sherlock Holmes: The Devil's Daughter is an adventure mystery video game in the Sherlock Holmes series developed by Frogwares for Microsoft Windows, PlayStation 4 and Xbox One in 2016. It was released for the Xbox One and PlayStation 4 on 25 October, while the PC version was released earlier on June 10. A Nintendo Switch version was released on April 7, 2022.
+[Development and release] An eighth installment in the series was announced in May 2015. Kerry Shale was originally expected to reprise his role as Sherlock, but was later confirmed by Frogwares that the game would focus on a different incarnation of Sherlock Holmes featuring Alex Jordan in the titular role. In October 2016, Bandai Namco Entertainment announced that they are the publisher of the game in the Americas, except for Argentina and Brazil. In an interview in 2020, Frogwares claimed Bigben Interactive was only a distribution intermediary.
+
+### ARTICLE id 51743654: The Lying Detective
+Infobox: {"series": "Sherlock", "director": "Nick Hurran", "writer": "Steven Moffat"}
+[Lead] "The Lying Detective" is the second episode of the fourth series of the British television series Sherlock, and the twelfth episode overall. The episode was first broadcast on BBC One, BBC First, PBS and Channel One on 8 January 2017.
+[Production] The episode was based loosely on the Doyle short story "The Adventure of the Dying Detective". The villain, Culverton Smith, was loosely based on disgraced British entertainer and charity fundraiser Jimmy Savile, who was exposed as a prolific predatory sex offender in 2012. Sam Wolfson of The Guardian noted that the Savile-esque character must have caused consternation behind the scenes at the BBC. Wolfson gave "a respectful nod to the BBC," writing, "There must have been some unease in the corporation about having an episode in their flagship drama series in which a beloved public figure... uses his position of power and fame to commit monstrous crimes."
+[Broadcast and reception] The episode received positive reviews from critics. Kaite Welsh of IndieWire graded "The Lying Detective" an A+, particularly the plotline of Sherlock descending into drug addiction: "He really does turn his kitchen into a meth lab, he is weeks away from death and hallucinating. It's the flip side of the genius that carries the show." Vox rated the episode 3.5/5 stars. Sean O'Grady of The Independent gave the episode 4/5 stars, describing it as "Rarely can drama have come so morbidly loaded as last night's Sherlock, and rarely carry so much morbid fascination for the viewer". IGN gave the episode a good rating with a 7/10, describing it as "hampered by another unsatisfying case and some odd story beats". Allison Shoemaker of The A.V. Club praised the episode and the story, grading it a B+, writing, "'The Lying Detective' does what it does so dazzlingly well that it's easy to overlook its misses... It's got a couple of good twists, some familiar to readers of the stories and others not. It's affecting and funny and moving and smart, and in short, a great script. But just because something checks all the right boxes doesn't mean it totally works, and Steven Moffat's script falls a bit flat where it really counts. It's as if he's blinded to the big picture by his own considerable gifts. This is a great Sherlock/Watson story with time to spare for everything but them."
+
+### ARTICLE id 28149585: Lelíček in the Services of Sherlock Holmes
+Infobox: {"director": "Karel Lamač", "screenplay": "Václav Wasserman"}
+[Lead] Lelíček in the Services of Sherlock Holmes is a 1932 Czech comedy film directed by Karel Lamač, starring Vlasta Burian. Sherlock Holmes was portrayed by Martin Frič. The main character is František Lelíček, who accepts an offer to act as a double for the Puerto Rican King Fernando XXIII as he is deeply in debt. Vlasta Burian plays both roles. The director Karel Lamač simultaneously shot the French version of the film Le Roi bis with Pierre Bertin in the main double role (while the detective was again played by Frič and the queen by Truda Grosslichtová). Lamač went on to film The Hound of the Baskervilles, 'in Germany in 1937.
+
+### ARTICLE id 28151049: A Study in Pink
+Infobox: {"series": "Sherlock", "director": "Paul McGuigan", "writer": "Steven Moffat"}
+[Lead] "A Study in Pink" is the first episode of the television series Sherlock and first broadcast on BBC One and BBC HD on 25 July 2010. It introduces the main characters and resolves a murder mystery. It is loosely based upon the first Sherlock Holmes novel, A Study in Scarlet. The episode was written by Steven Moffat, who co-created the series. It was originally filmed as a 60-minute pilot for Sherlock, directed by Coky Giedroyc. The BBC decided not to transmit the pilot, but instead commissioned a series of three 90-minute episodes. The story was refilmed, this time directed by Paul McGuigan. The British Board of Film Classification has rated the pilot as a 12 certificate (not suitable for children under 12) for video and online exhibition, and it is included as an additional feature on the DVD released on 30 August 2010.
+[Allusions] The episode is loosely based on A Study in Scarlet and contains allusions to other works by Arthur Conan Doyle. Moffat said of "A Study in Pink" and A Study in Scarlet: "there are many elements of the story, and the broad shape of it, but we mess around with it a lot". Tom Sutcliffe of The Independent points out, "Fans will recognise at once that the close-reading Sherlock applies to John's mobile phone is drawn from an almost identical analysis of a pocket watch [taken from The Sign of the Four]. More slyly oblique is the conversion of the lost ring that Holmes uses to lure the killer in A Study in Scarlet into a lost 'ring', a mobile phone that can be used to contact the killer directly." The episode also uses an identical clue to the original story, but gives it a different meaning: both stories feature "Rache" written at the scene of the crime. In the original story, Holmes dismisses a suggestion that the victim was trying to write "Rachel", instead pointing out that "Rache" is German for "revenge". In this version, Holmes's interpretation is reversed: he scoffs at the "revenge" explanation and suggests the victim was trying to write "Rachel". The "three-patch problem" that Holmes describes is similar to the term "three-pipe problem" he uses in "The Red-Headed League".
+[Production] The story was originally filmed as a 60-minute pilot for Sherlock, directed by Coky Giedroyc. It was planned to be broadcast in mid- to late 2009. The intention was to produce a full series should the pilot prove to be successful. However, the first version of the pilot – reported to have cost £800,000 – led to rumours within the BBC and wider media that Sherlock was a potential disaster. The BBC decided not to transmit the pilot, requesting a reshoot and a total of three 90-minute episodes. The newly shot episode, says journalist Mark Lawson, was "substantially expanded and rewritten, and completely reimagined in look, pace and sound". The first series of Sherlock was produced in reverse order; "A Study in Pink" was the last of the three to be produced. This was because episode writer and co-creator Steven Moffat was busy with the fifth series of Doctor Who. Background information on Sherlock and Mycroft's relationship was cut out of the final episode as it was viewed as giving too much away. For the pilot, the roles of Sally Donovan and Angelo were portrayed by Zawe Ashton and Joseph Long respectively but were portrayed by Vinette Robinson and Stanley Townsend in the hour-and-a-half episode. The episode was set in 2010 rather than the Victorian period and so used modern devices such as mobile phones, TX1 London cabs and nicotine patches rather than the traditional pipe and other period props. The change from a pipe to a nicotine patch reflected changing social attitudes and broadcasting regulations. Director Paul McGuigan says that using modern technology is in keeping with Conan Doyle's character, pointing out that "In the books he would use any device possible and he was always in the lab doing experiments. It's just a modern-day version of it. He will use the tools that are available to him today in order to find things out". Sherlock Holmes still lives at the same Baker Street address as in Conan Doyle's stories. However, it was filmed at 185 North Gower Street. Baker Street was impractical because of the number of things labeled "Sherlock Holmes", which would need to be disguised. Filming on the pilot began in January 2009 on location in London and Cardiff. It was written by Moffat and directed by Coky Giedroyc. A seven-hour night shoot took place on 20/21 January at the No Sign bar in Wind Street, Swansea. The bar had been redesigned as an Italian restaurant for the shoot, where Holmes and Watson dined. Location managers selected the bar as the venue because they needed a building that could double as an Italian restaurant that was close to an alley. On 21 January, scenes were shot in Newport Road, Cardiff. Location shooting concluded on 23 January with scenes filmed on Baker Street, London. During that week, filming was also done on location in Merthyr Tydfil. According to Moffat and Gatiss, the BBC liked the pilot so much that they ordered three 90-minute films. However, the pilot version of "A Study in Pink" had been produced as a 60-minute film. The producers felt that they could not simply add another half an hour to the episode—they had to film it again. Producer Sue Vertue adds that additional footage to increase the length would not have matched because a different director of photography and a superior camera were used when filming the series.
+[Broadcast] "A Study in Pink" was first broadcast on BBC One on 25 July 2010. Overnight viewing figures showed that the episode was watched by a total of 7.5 million viewers on BBC One and BBC HD. Final viewing figures were up to 9.23 million viewers and averaged a 28.5% share of the UK audience with a high AI rating of 87. The episode was downloaded 1.403 million times on BBC's online iPlayer, the third most-requested programme of 2010.
+
+### ARTICLE id 4733230: The Lost Files of Sherlock Holmes: The Case of the Rose Tattoo
+Infobox: {"developer": "Mythos Software", "writer": "R. J. Berg", "released": "September 27, 1996", "genre": "Graphic adventure"}
+[Lead] The Lost Files of Sherlock Holmes: The Case of the Rose Tattoo is a graphic adventure game developed by Mythos Software and published by Electronic Arts for MS-DOS in 1996. It features the fictional detective Sherlock Holmes created by Arthur Conan Doyle. The game is a sequel to The Lost Files of Sherlock Holmes: The Case of the Serrated Scalpel.
+[Development] The characters in the game were made by filming real actors in costume, against a bluescreen. While the characters are thus more lifelike, Rose Tattoo did not display large, high-quality faces shown during dialogues in the first game. A similar use of in-game video can also be found in e.g. Jones in the Fast Lane and Under a Killing Moon and in retrospect appears as a transient trend permitted by the available hardware. The CD-ROM greatly increased the data storage space available to a computer game. Most games of this period filled the empty space by enhancing the game with digitized speech and cut-scene videos. Later, advances in CPU and graphic card hardware allowed high-resolution characters to be rendered in 3D. The game is longer than its predecessor and features a much higher degree of historical accuracy and detail. The graphics are near-photo quality and the atmospheric sounds are more realistic, while the background music, which communicated the mood of the scenes in the first game, is applied less in Rose Tattoo. Unlike the previous game, digitized speech is employed throughout the game and adds characterization to the non-player characters. Different actors were used for the voices and visual sprites of the characters in the game. Sherlock Holmes was voiced by Jarion Monroe, and Dr. Watson was voiced by Roger L. Jackson. Coralie Persee voiced Mrs. Hudson and Paul Vincent Black voiced Wiggins. Jackson (and possibly the other actors) also voiced other characters in the game. The graphics for Sherlock Holmes and Professor Moriarty were made with the same actor, George Gregg. The story and game design were by R. J. Berg. The game's sound and music director was Rob Hubbard.
+
+### ARTICLE id 5664795: The Hound of the Baskervilles (1939 film)
+Infobox: {"director": "Sidney Lanfield", "screenplay": "Ernest Pascal"}
+[Lead] The Hound of the Baskervilles is a 1939 American gothic mystery film based on the 1902 Sherlock Holmes novel of the same name by Sir Arthur Conan Doyle. Directed by Sidney Lanfield, the film stars Basil Rathbone as Holmes and Nigel Bruce as Dr. John Watson. Released by 20th Century Fox, it is the first of fourteen Sherlock Holmes films released between 1939 and 1946 starring Rathbone and Bruce. Among the most-known cinematic adaptations of the novel, the film co-stars Richard Greene as Henry Baskerville (who received top billing, as the studio was unsure of the potential of a film about Sherlock Holmes) and Wendy Barrie as Beryl Stapleton. The Hound of the Baskervilles is notable as the first Sherlock Holmes film to be set in the Victorian period like the original books. All known previous Holmes films, up to and including the 1930s British film series starring Arthur Wontner as Holmes, had been updated to a setting contemporaneous with the films' release.
+[Production] There are several significant changes in plot details. Among them: Beryl Stapleton is Jack Stapleton's wife in the novel and is playing the part of his sister and is an unwilling participant in his crimes. In the film, she is Stapleton's stepsister, and is completely unaware of his criminal actions until Holmes reveals the truth. Ms. Stapleton falls in love with Sir Henry and engages to marry him in the film. Her relationship with Sir Henry is left open ended in the novel. The film has a séance performed by Dr. Mortimer's wife. This scene never appeared in the original novel. Frankland's estranged daughter, Laura Lyons and Inspector Lestrade are omitted from the film. The butler was named Barrymore in the novel, but possibly because of the existence of the real-life John Barrymore of the Barrymore family theatrical dynasty, his name was changed to Barryman in the film.
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/tiers/r1_00.out.json as a JSON list with one object per article, each with the keys "id" (the number after "ARTICLE id"), "kind", "year", "holmes_appears", "sources", "other_sources". Write nothing else to that file.

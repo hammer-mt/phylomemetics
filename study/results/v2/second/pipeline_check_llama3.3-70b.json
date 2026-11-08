@@ -1,0 +1,64 @@
+{
+ "model": "llama3.3-70b",
+ "what": "presence_pass.py against v2's stored presence of the 114 Batman-study works (strongest sentence at 20, 30, 40 and 50% of v2's main scale; the opening and the iconography-dropped text at 30%)",
+ "planes": {
+  "orig_top1_20": {
+   "units_present_in_v2": 116095257,
+   "bits_that_differ": 0
+  },
+  "orig_top1_30": {
+   "units_present_in_v2": 35962756,
+   "bits_that_differ": 0
+  },
+  "orig_top1_40": {
+   "units_present_in_v2": 10125703,
+   "bits_that_differ": 0
+  },
+  "orig_top1_50": {
+   "units_present_in_v2": 2856384,
+   "bits_that_differ": 0
+  },
+  "orig_cut_top1_30": {
+   "units_present_in_v2": 25054002,
+   "bits_that_differ": 0
+  },
+  "anon_top1_20": {
+   "units_present_in_v2": 98701324,
+   "bits_that_differ": 0
+  },
+  "anon_top1_30": {
+   "units_present_in_v2": 28582485,
+   "bits_that_differ": 0
+  },
+  "anon_top1_40": {
+   "units_present_in_v2": 7774645,
+   "bits_that_differ": 0
+  },
+  "anon_top1_50": {
+   "units_present_in_v2": 2152105,
+   "bits_that_differ": 0
+  },
+  "anon_cut_top1_30": {
+   "units_present_in_v2": 18733200,
+   "bits_that_differ": 0
+  },
+  "anon_icon_top1_30": {
+   "units_present_in_v2": 28060194,
+   "bits_that_differ": 0
+  }
+ },
+ "provenance": {
+  "repo": "unsloth/Llama-3.3-70B-Instruct",
+  "commit": null,
+  "dtype": "torch.bfloat16",
+  "torch": "2.8.0+cu128",
+  "transformers": "5.22.2",
+  "gpu": [
+   "NVIDIA B200"
+  ]
+ },
+ "exact": true,
+ "after_the_freeze": false,
+ "commit": "08d9984bcb6de808f9568c38c5275b686163f247",
+ "checked_utc": "2026-11-08T21:51Z"
+}

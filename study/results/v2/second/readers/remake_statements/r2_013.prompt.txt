@@ -1,0 +1,222 @@
+You are helping to build a research corpus of film remakes from Wikipedia. Each item below gives the title of a film's Wikipedia page (PAGE), ONE sentence from the opening of that page, and the OTHER FILMS that sentence links to. For each other film, record what THE SENTENCE SAYS about PAGE and that film. You are not asked what you know about the films.
+
+For each other film give:
+- "relation":
+    "page_remakes_other"   the sentence says PAGE is a remake of the other film;
+    "other_remakes_page"   the sentence says the other film is a remake of PAGE (for example "it was remade in Telugu as ...");
+    "none"                 anything else.
+- "wording":
+    "firm"    the sentence states the remake plainly as a fact: "is a remake of", "an official remake of", "was remade as", "was remade in Hindi as";
+    "loose"   the sentence weakens or hedges it: "loosely", "partly", "unofficial", "uncredited", "inspired by", "based on the idea of", "reported to be", "said to be", "has been described as", "considered", "similar to", "reboot", "reimagining", "re-adaptation";
+    "" when the relation is "none".
+
+Rules.
+- Use only what the sentence says. Do not use your own knowledge of the films, and do not guess from titles or years.
+- If the sentence lists several films as remakes of PAGE, each of them is "other_remakes_page".
+- If the sentence says PAGE is a remake of X, and that X is itself a remake of or based on Y, then X is "page_remakes_other" and Y is "none", unless the sentence also says PAGE is a remake of Y.
+- "none" covers: a sequel, prequel or spin-off; a film that is only compared or mentioned; another remake of the same original (a sibling); a film based on the same novel, play or true story that the sentence does not call a remake; a film whose remake status the sentence denies; a dubbed version; a film shot at the same time in another language ("simultaneously", "bilingual").
+- If you cannot tell which film the word "remake" or "remade" applies to, answer "none".
+
+The items follow.
+
+### ITEM 9424e7c042766314
+PAGE: Rojulu Marayi
+SENTENCE: The film ran for over 25 weeks in theatres, thereby becoming a silver jubilee film, and was remade in Tamil as Kaalam Maari Pochi (1956).
+OTHER FILMS: ["Kaalam Maari Pochu (1956 film)"]
+
+### ITEM c49f5ce2f3765d67
+PAGE: Moondram Pirai
+SENTENCE: Mahendra remade the film in Hindi as Sadma (1983), with Kamal Haasan, Sridevi and Smitha reprising their roles.
+OTHER FILMS: ["Sadma"]
+
+### ITEM 382b474c2ebc2214
+PAGE: Varadanayaka
+SENTENCE: The movie is a remake of the 2007 Telugu movie Lakshyam.
+OTHER FILMS: ["Lakshyam (2007 film)"]
+
+### ITEM 2673ab47b06ee629
+PAGE: Edhir Paradhathu
+SENTENCE: The film was remade in Malayalam as Nithyakanyaka (1963), in Telugu as Ilavelpu (1956) and in Hindi as Sharada (1957).
+OTHER FILMS: ["Ilavelpu", "Sharada (1957 film)"]
+
+### ITEM 104ceff5c0701928
+PAGE: Madurai Veeran (2007 film)
+SENTENCE: The film is the Tamil remake of the 2001 Telugu film Nuvvu Nenu directed by Teja.
+OTHER FILMS: ["Nuvvu Nenu"]
+
+### ITEM 6d85ffeedf2cb527
+PAGE: Bombat Hendthi
+SENTENCE: The movie was a remake of Rao's own Telugu film Chitram Bhalare Vichitram (1991) which itself is a remake of Bengali film Joy Maa Kali Boarding (1955).
+OTHER FILMS: ["Chitram Bhalare Vichitram"]
+
+### ITEM 4124f06edb1fe5c9
+PAGE: Aamayum Muyalum
+SENTENCE: It is a remake of the director's own Hindi movie Malamaal Weekly which itself was a remake of Waking Ned.
+OTHER FILMS: ["Waking Ned"]
+
+### ITEM 82955a5a74ca3f78
+PAGE: Iron Man (1931 film)
+SENTENCE: In 1951, Universal remade the film with Jeff Chandler, Evelyn Keyes and Rock Hudson, directed by Joseph Pevney.
+OTHER FILMS: ["Iron Man (1951 film)"]
+
+### ITEM bfeaa8cb7fd3a51b
+PAGE: A Aa E Ee (2009 Tamil film)
+SENTENCE: The film is a remake of Telugu film Chandamama.
+OTHER FILMS: ["Chandamama (2007 film)"]
+
+### ITEM 5696d9e4a47943c0
+PAGE: Ghayal (1990 film)
+SENTENCE: Ghayal was remade in Tamil as Bharathan in 1992, in Telugu as Gamyam in 1998 and in Kannada as Vishwa in 1999 and Pakistani Punjabi as Mard (1991).
+OTHER FILMS: ["Bharathan (1992 film)"]
+
+### ITEM 4beac451f9a914b5
+PAGE: Abie's Irish Rose (1928 film)
+SENTENCE: The film was later remade in 1946.
+OTHER FILMS: ["Abie's Irish Rose (1946 film)"]
+
+### ITEM f02ec51cc317e6fe
+PAGE: Thee (1981 film)
+SENTENCE: It is a remake of the 1975 Hindi film Deewaar, written by Salim–Javed.
+OTHER FILMS: ["Deewaar"]
+
+### ITEM b9abaf66e39cf4fb
+PAGE: The Witness (2015 Chinese film)
+SENTENCE: The film is a remake of the 2011 South Korean film Blind, also by the same director.
+OTHER FILMS: ["Blind (2011 film)"]
+
+### ITEM fa30bdf4780b79da
+PAGE: Suhaagan
+SENTENCE: The film is a remake of the Tamil film Enkeyo Ketta Kural (1982).
+OTHER FILMS: ["Enkeyo Ketta Kural"]
+
+### ITEM 97100658858d7c88
+PAGE: Ishtam (2012 film)
+SENTENCE: A remake of the Telugu film Yemaindi Ee Vela (2010), the film stars Vimal and Nisha Agarwal, while Santhanam, Parvati Nibran, and Anoop Kumar play supporting roles.
+OTHER FILMS: ["Yemaindi Ee Vela"]
+
+### ITEM fd634c6811d4e021
+PAGE: The Marshal of Mesa City
+SENTENCE: Although no story credit was given, this film bears a striking similarity to the 1935 western, The Arizonian, whose screenplay and story were written by Academy Award winner Dudley Nichols, and some sources state that this film was a remake of the earlier picture.
+OTHER FILMS: ["The Arizonian"]
+
+### ITEM 870f7477ccf3d4fe
+PAGE: Kushi (2000 film)
+SENTENCE: The film was remade in Hindi as Khushi (2003), and in Kannada as Eno Onthara (2010).
+OTHER FILMS: ["Khushi (2003 Hindi film)", "Eno Onthara"]
+
+### ITEM 2f37b052d462f328
+PAGE: Padikkadavan (1985 film)
+SENTENCE: It is a remake of the Hindi film Khud-Daar (1982).
+OTHER FILMS: ["Khud-Daar"]
+
+### ITEM 92c30af707374e94
+PAGE: Ramaiya Vasta Vaiya
+SENTENCE: It is a remake of the director's own Telugu film Nuvvostanante Nenoddantana''''. The film was released on 19 July 2013.
+OTHER FILMS: ["Nuvvostanante Nenoddantana"]
+
+### ITEM 7eea9ecb196d1afb
+PAGE: Sobha (1958)
+SENTENCE: Sobha was a remake of the Hindi film Dulari (1949).
+OTHER FILMS: ["Dulari (film)"]
+
+### ITEM f71836ee7baa9ec0
+PAGE: Jai Ho (film)
+SENTENCE: It is an official remake of the Telugu film Stalin, which is also inspired by the American-drama film Pay It Forward.
+OTHER FILMS: ["Stalin (2006 film)", "Pay It Forward (film)"]
+
+### ITEM f269a5ff73ca82da
+PAGE: Vaigasi Poranthachu
+SENTENCE: The film was dubbed in Telugu as Prema Vijayam and was remade in Hindi as I Love You (1992) with Prashanth reprising his role.
+OTHER FILMS: ["I Love You (1992 film)"]
+
+### ITEM 55b7a5dbfb0b8776
+PAGE: Loot (2011 film)
+SENTENCE: The film is a loose remake of the 2003 film, Crime Spree.
+OTHER FILMS: ["Crime Spree"]
+
+### ITEM 3bebd7adadb2f874
+PAGE: Ready (2011 film)
+SENTENCE: Ltd. and Sohail Khan Productions, it is an official remake of the 2008 Telugu film of the same name directed by Srinu Vaitla.
+OTHER FILMS: ["Ready (2008 film)"]
+
+### ITEM 2cf7747c097ea890
+PAGE: Son Of Sardaar
+SENTENCE: A remake of the 2010 Telugu film Maryada Ramanna, it was released on 13 November 2012.
+OTHER FILMS: ["Maryada Ramanna"]
+
+### ITEM c4234a715a01184c
+PAGE: Vegam (2007 film)
+SENTENCE: It is an unofficial remake of the American film Cellular. It was remade again in Tamil as Nayagan.
+OTHER FILMS: ["Cellular (film)", "Nayagan (2008 film)"]
+
+### ITEM 28dfc0d935295235
+PAGE: My Autograph
+SENTENCE: This film is a remake of Tamil film Autograph, which was directed and enacted by Cheran.
+OTHER FILMS: ["Autograph (2004 film)"]
+
+### ITEM f1b52e7a3af03346
+PAGE: Galpa Holeo Satyi
+SENTENCE: Later the film was remade twice into Hindi as Bawarchi (1972) and Hero No. 1 (1997), into Tamil as Samayalkaaran (1974), into Telugu as Goppinti Alludu (2000) and twice into Kannada as Sakala Kala Vallabha (1996) and No 73, Shanthi Nivasa (2007).
+OTHER FILMS: ["Bawarchi", "Goppinti Alludu"]
+
+### ITEM e4c6a6f3aaffc47d
+PAGE: Pulival Kalyanam
+SENTENCE: The film was remade in Kannada as Chellata (2006).
+OTHER FILMS: ["Chellata (film)"]
+
+### ITEM b72d43dbadb7de96
+PAGE: Mazhai
+SENTENCE: It is a remake of the 2004 Telugu film Varsham, and stars Ravi Mohan (credited as Jayam Ravi) and Shriya Saran.
+OTHER FILMS: ["Varsham (2004 film)"]
+
+### ITEM 157df6b7fbf31692
+PAGE: Bhagam Bhag (2006 film)
+SENTENCE: The film was remade in Telugu as Brahmanandam Drama Company (2008).
+OTHER FILMS: ["Brahmanandam Drama Company"]
+
+### ITEM 7053b2274396e63b
+PAGE: Thithikudhe
+SENTENCE: It is the Tamil remake of the Telugu Manasantha Nuvve (2001).
+OTHER FILMS: ["Manasantha Nuvve"]
+
+### ITEM dc30f8a6fbc74b44
+PAGE: Loveria
+SENTENCE: It is a remake of the 2009 Telugu film Bumper Offer starring Sairam Shankar and Bindu Madhavi.
+OTHER FILMS: ["Bumper Offer"]
+
+### ITEM 77993a9b00ea1adf
+PAGE: Saaya (2003 film)
+SENTENCE: It is an unofficial remake of the 2002 American film Dragonfly.
+OTHER FILMS: ["Dragonfly (2002 film)"]
+
+### ITEM 63c7c3ed76c86775
+PAGE: Gandondu Hennaru
+SENTENCE: The movie was remade in Tamil in 1972 as Raman Thediya Seethai.
+OTHER FILMS: ["Raman Thediya Seethai (1972 film)"]
+
+### ITEM 08221ed454630613
+PAGE: Shall We Dance (1937 film)
+SENTENCE: It inspired the 1996 Japanese-language remake of the same name.
+OTHER FILMS: ["Shall We Dance? (1996 film)"]
+
+### ITEM efc20e306240c215
+PAGE: Arya (2004 film)
+SENTENCE: The film was remade in Bengali (Bangladesh) as Badha (2005), in Odia as Pagala Premi (2007), in Bengali as Pagal Premi (2007), in Sinhala as Adaraye Namayen (2008) and in Tamil as Kutty (2010).
+OTHER FILMS: ["Kutty (2010 film)"]
+
+### ITEM feae398b19560535
+PAGE: Kind Lady (1935 film)
+SENTENCE: Doris Lloyd appeared in this film and its 1951 remake of the same name in different roles.
+OTHER FILMS: ["Kind Lady (1951 film)"]
+
+### ITEM f5d1b01394627716
+PAGE: Ganda Hendathi
+SENTENCE: The film stars newcomers Vishal Hegde, Sanjjana and Thilak Shekar The film is a remake of Hindi film Murder (2004), starring Emraan Hashmi, Ashmit Patel and Mallika Sherawat.
+OTHER FILMS: ["Murder (2004 film)"]
+
+### ITEM dcf104b474170e24
+PAGE: Phool Aur Paththar
+SENTENCE: The film was remade in Tamil as Oli Vilakku with [[M.
+OTHER FILMS: ["Oli Vilakku"]
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/remakes/statements/r2_013.out.json as a JSON list with one object per item: {"item": "<the code after ITEM>", "links": [{"film": "<title exactly as listed>", "relation": "...", "wording": "..."}]} with one entry in "links" for every film listed under OTHER FILMS. Write nothing else to that file.

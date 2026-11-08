@@ -1,0 +1,21 @@
+[
+  {
+    "item": "fd129d12bc511f64",
+    "links": [
+      {"film": "Hellboy II: The Golden Army", "relation": "none", "wording": ""}
+    ]
+  },
+  {
+    "item": "1b9d57a3699eff48",
+    "links": [
+      {"film": "Friday the 13th: A New Beginning", "relation": "none", "wording": ""},
+      {"film": "Friday the 13th (2009 film)", "relation": "none", "wording": ""}
+    ]
+  },
+  {
+    "item": "ab8cb02345f4478c",
+    "links": [
+      {"film": "RoboCop (2014 film)", "relation": "other_remakes_page", "wording": "firm"}
+    ]
+  }
+]

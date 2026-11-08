@@ -1,0 +1,129 @@
+[
+  {
+    "id": 18702162,
+    "kind": "film",
+    "year": 1933,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "A Study in Scarlet",
+        "tier": "C",
+        "quote": "The title is taken from Arthur Conan Doyle's 1887 novel of the same name, the first in the Holmes series, but the screenplay by Robert Florey was original."
+      },
+      {
+        "story": "The Adventure of the Empty House",
+        "tier": "C",
+        "quote": "Merrydew's name may have been inspired by the villain referred to by Holmes as \"Merridew of abominable memory\" in The Adventure of the Empty House."
+      }
+    ],
+    "other_sources": []
+  },
+  {
+    "id": 3524282,
+    "kind": "film",
+    "year": 1946,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Adventure of the Six Napoleons",
+        "tier": "C",
+        "quote": "The film has an original story, but combines elements of the short stories \"The Adventure of the Six Napoleons\" and \"A Scandal in Bohemia.\""
+      },
+      {
+        "story": "A Scandal in Bohemia",
+        "tier": "C",
+        "quote": "The film has an original story, but combines elements of the short stories \"The Adventure of the Six Napoleons\" and \"A Scandal in Bohemia.\""
+      }
+    ],
+    "other_sources": []
+  },
+  {
+    "id": 28151049,
+    "kind": "tv_episode",
+    "year": 2010,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "A Study in Scarlet",
+        "tier": "B",
+        "quote": "It is loosely based upon the first Sherlock Holmes novel, A Study in Scarlet."
+      },
+      {
+        "story": "The Sign of the Four",
+        "tier": "C",
+        "quote": "Fans will recognise at once that the close-reading Sherlock applies to John's mobile phone is drawn from an almost identical analysis of a pocket watch [taken from The Sign of the Four]."
+      },
+      {
+        "story": "The Red-Headed League",
+        "tier": "C",
+        "quote": "The \"three-patch problem\" that Holmes describes is similar to the term \"three-pipe problem\" he uses in \"The Red-Headed League\"."
+      }
+    ],
+    "other_sources": []
+  },
+  {
+    "id": 38452314,
+    "kind": "video_game",
+    "year": 2014,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": [
+      "Crime and Punishment (Fyodor Dostoyevsky novel; title only)",
+      "Sherlock (BBC television series; inspired the \"Sherlock Vision\" mechanic)"
+    ]
+  },
+  {
+    "id": 1771007,
+    "kind": "film",
+    "year": 1970,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": []
+  },
+  {
+    "id": 5664795,
+    "kind": "film",
+    "year": 1939,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Hound of the Baskervilles",
+        "tier": "A",
+        "quote": "The Hound of the Baskervilles is a 1939 American gothic mystery film based on the 1902 Sherlock Holmes novel of the same name by Sir Arthur Conan Doyle."
+      }
+    ],
+    "other_sources": []
+  },
+  {
+    "id": 3085944,
+    "kind": "tv_film",
+    "year": 2004,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": []
+  },
+  {
+    "id": 10030670,
+    "kind": "film",
+    "year": 1978,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Hound of the Baskervilles",
+        "tier": "B",
+        "quote": "The Hound of the Baskervilles is a 1978 British comedy film spoofing the 1902 novel The Hound of the Baskervilles by Sir Arthur Conan Doyle."
+      }
+    ],
+    "other_sources": []
+  },
+  {
+    "id": 73659998,
+    "kind": "video_game",
+    "year": 2023,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": [
+      "Sherlock Holmes: The Awakened (2007 video game; this is a remake of it)"
+    ]
+  }
+]

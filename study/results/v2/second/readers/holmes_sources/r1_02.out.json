@@ -1,0 +1,107 @@
+[
+  {
+    "id": 16266637,
+    "kind": "tv_film",
+    "year": 1976,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": []
+  },
+  {
+    "id": 6435145,
+    "kind": "film",
+    "year": 1939,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": [
+      "Sherlock Holmes (1899 play by William Gillette)"
+    ]
+  },
+  {
+    "id": 78425821,
+    "kind": "film",
+    "year": 2026,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": []
+  },
+  {
+    "id": 51633141,
+    "kind": "video_game",
+    "year": 2017,
+    "holmes_appears": false,
+    "sources": [],
+    "other_sources": []
+  },
+  {
+    "id": 2631894,
+    "kind": "film",
+    "year": 1944,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Adventure of the Six Napoleons",
+        "tier": "B",
+        "quote": "The story is loosely based on Conan Doyle's short story \"The Adventure of the Six Napoleons\" but features some additions"
+      }
+    ],
+    "other_sources": []
+  },
+  {
+    "id": 38166510,
+    "kind": "film",
+    "year": 1929,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Hound of the Baskervilles",
+        "tier": "A",
+        "quote": "The Hound of the Baskervilles is a 1929 German silent mystery film directed by Richard Oswald and is an adaptation of the 1902 Sherlock Holmes novel The Hound of the Baskervilles by Arthur Conan Doyle."
+      }
+    ],
+    "other_sources": []
+  },
+  {
+    "id": 20816992,
+    "kind": "series",
+    "year": 2010,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": []
+  },
+  {
+    "id": 38452314,
+    "kind": "video_game",
+    "year": 2014,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": [
+      "Crime and Punishment (novel by Fyodor Dostoyevsky; the title is a play on its title)",
+      "Sherlock (BBC television series; inspired the \"Sherlock Vision\" mechanic)"
+    ]
+  },
+  {
+    "id": 27435710,
+    "kind": "tv_episode",
+    "year": 2010,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Adventure of the Dancing Men",
+        "tier": "C",
+        "quote": "According to Moffat, the episode takes the concept of coded messages from \"The Adventure of the Dancing Men\" (using pictorial messages), a story feature directly referenced later, in the series 4 episode The Final Problem."
+      },
+      {
+        "story": "The Valley of Fear",
+        "tier": "C",
+        "quote": "Alan Kistler of Newsarama has pointed out other potential inspirations such as the use in The Valley of Fear of a code \"based on a book that many people would own.\""
+      },
+      {
+        "story": "The Sign of the Four",
+        "tier": "C",
+        "quote": "A murder victim found inside a locked room accessible only by climbing might be an allusion to The Sign of the Four."
+      }
+    ],
+    "other_sources": []
+  }
+]

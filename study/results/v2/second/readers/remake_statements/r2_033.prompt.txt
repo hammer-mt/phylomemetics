@@ -1,0 +1,222 @@
+You are helping to build a research corpus of film remakes from Wikipedia. Each item below gives the title of a film's Wikipedia page (PAGE), ONE sentence from the opening of that page, and the OTHER FILMS that sentence links to. For each other film, record what THE SENTENCE SAYS about PAGE and that film. You are not asked what you know about the films.
+
+For each other film give:
+- "relation":
+    "page_remakes_other"   the sentence says PAGE is a remake of the other film;
+    "other_remakes_page"   the sentence says the other film is a remake of PAGE (for example "it was remade in Telugu as ...");
+    "none"                 anything else.
+- "wording":
+    "firm"    the sentence states the remake plainly as a fact: "is a remake of", "an official remake of", "was remade as", "was remade in Hindi as";
+    "loose"   the sentence weakens or hedges it: "loosely", "partly", "unofficial", "uncredited", "inspired by", "based on the idea of", "reported to be", "said to be", "has been described as", "considered", "similar to", "reboot", "reimagining", "re-adaptation";
+    "" when the relation is "none".
+
+Rules.
+- Use only what the sentence says. Do not use your own knowledge of the films, and do not guess from titles or years.
+- If the sentence lists several films as remakes of PAGE, each of them is "other_remakes_page".
+- If the sentence says PAGE is a remake of X, and that X is itself a remake of or based on Y, then X is "page_remakes_other" and Y is "none", unless the sentence also says PAGE is a remake of Y.
+- "none" covers: a sequel, prequel or spin-off; a film that is only compared or mentioned; another remake of the same original (a sibling); a film based on the same novel, play or true story that the sentence does not call a remake; a film whose remake status the sentence denies; a dubbed version; a film shot at the same time in another language ("simultaneously", "bilingual").
+- If you cannot tell which film the word "remake" or "remade" applies to, answer "none".
+
+The items follow.
+
+### ITEM e2fd603b4fece74c
+PAGE: Bugs and Thugs
+SENTENCE: The film is a semi-remake of the 1946 cartoon Racketeer Rabbit.
+OTHER FILMS: ["Racketeer Rabbit"]
+
+### ITEM 2bbd9fcf0dddeff4
+PAGE: Planet of the Apes (1968 film)
+SENTENCE: The original film series was followed by Tim Burton's remake of the same name in 2001 and a reboot series, which began with Rise of the Planet of the Apes in 2011.
+OTHER FILMS: ["Planet of the Apes (2001 film)", "Rise of the Planet of the Apes"]
+
+### ITEM 4a61ccd342f6840d
+PAGE: Monsieur Beaucaire (1946 film)
+SENTENCE: It is a remake of the 1924 Rudolph Valentino silent film of the same name Monsieur Beaucaire.
+OTHER FILMS: ["Monsieur Beaucaire (1924 film)"]
+
+### ITEM 50df3ba3e3f1e121
+PAGE: Mogambo
+SENTENCE: It is considered a remake of the film Red Dust (1932), which was set in Vietnam and also starred Gable in the same role.
+OTHER FILMS: ["Red Dust (1932 film)"]
+
+### ITEM 173dac4201ad5e9a
+PAGE: Sweet November (1968 film)
+SENTENCE: A 2001 remake starred Keanu Reeves and Charlize Theron.
+OTHER FILMS: ["Sweet November (2001 film)"]
+
+### ITEM 2bf56c3752e3845d
+PAGE: Kisses for Breakfast (film)
+SENTENCE: The film is a remake of the 1930 pre-Code comedy The Matrimonial Bed, which was produced by [[Warner Bros.
+OTHER FILMS: ["The Matrimonial Bed"]
+
+### ITEM b4a15dd336edc3fd
+PAGE: The Incredible Shrinking Man
+SENTENCE: A remake was developed years later, eventually becoming the comedy The Incredible Shrinking Woman (1981).
+OTHER FILMS: ["The Incredible Shrinking Woman"]
+
+### ITEM 97334dd482f6b04c
+PAGE: The Kid from Brooklyn
+SENTENCE: Produced by Samuel Goldwyn, it is a remake of the Harold Lloyd film The Milky Way (1936) about a milkman who becomes world boxing champion.
+OTHER FILMS: ["The Milky Way (1936 film)"]
+
+### ITEM 30e04edf059360fa
+PAGE: Cat-Women of the Moon
+SENTENCE: Cat-Women of the Moon was remade in 1958 as Missile to the Moon by producer Richard Cunha.
+OTHER FILMS: ["Missile to the Moon"]
+
+### ITEM 654fa92dfc874c20
+PAGE: One Hundred and One Dalmatians
+SENTENCE: The success of the film made Disney expand it into a media franchise, with a live-action remake released in 1996, followed by a sequel in 2000.
+OTHER FILMS: ["101 Dalmatians (1996 film)", "102 Dalmatians"]
+
+### ITEM 981960f26bd0bf8e
+PAGE: The Nurse's Secret
+SENTENCE: The film, which includes a rare leading role for Patrick who played the supporting part of Sam Spade's secretary in The Maltese Falcon that same year, is a remake of the film Miss Pinkerton and is based on the 1932 novel Miss Pinkerton by Mary Roberts Rinehart.
+OTHER FILMS: ["The Maltese Falcon (1941 film)"]
+
+### ITEM f147e073889dec75
+PAGE: Bloodhounds of Broadway (1952 film)
+SENTENCE: The film was remade in 1989.
+OTHER FILMS: ["Bloodhounds of Broadway (1989 film)"]
+
+### ITEM 9811e619bbf57723
+PAGE: Treasure of the Golden Condor
+SENTENCE: The film is a remake of the 1942 film Son of Fury: The Story of Benjamin Blake, which starred Tyrone Power.
+OTHER FILMS: ["Son of Fury: The Story of Benjamin Blake"]
+
+### ITEM a0202fcc796eb416
+PAGE: Tom, Dick and Harry (1941 film)
+SENTENCE: Tom, Dick and Harry was remade as The Girl Most Likely (1957), a musical that was also the last film released by RKO.
+OTHER FILMS: ["The Girl Most Likely"]
+
+### ITEM 0bf54319d4e90957
+PAGE: Sergeants 3
+SENTENCE: The film is a remake of Gunga Din (1939), with the setting moved from India to the American West.
+OTHER FILMS: ["Gunga Din (film)"]
+
+### ITEM 8dbc0864f13a6374
+PAGE: D.O.A. (1950 film)
+SENTENCE: Due to a filing error, the copyright to the film was not renewed on time, causing it to fall into the public domain: it was subsequently remade as Color Me Dead (1969), D.O.A. (1988), Dead on Arrival (2017), and D.O.A. (2022).
+OTHER FILMS: ["D.O.A. (1988 film)"]
+
+### ITEM 67b388cc08142bc0
+PAGE: Gun Fight (film)
+SENTENCE: Gun Fight is an almost identical remake of the 1956 film Gun Brothers starring Buster Crabbe and Neville Brand.
+OTHER FILMS: ["Gun Brothers"]
+
+### ITEM 4b2bbfd0669965c7
+PAGE: Newsmakers
+SENTENCE: It is a remake of the Hong Kong film Breaking News by Johnnie To.
+OTHER FILMS: ["Breaking News (2004 film)"]
+
+### ITEM 66cae2754c7ec2cd
+PAGE: Iron Man (1951 film)
+SENTENCE: The film is a remake of a 1931 film of the same title directed by Tod Browning.
+OTHER FILMS: ["Iron Man (1931 film)"]
+
+### ITEM 16d55f54595b3743
+PAGE: House of Wax (1953 film)
+SENTENCE: A remake of the studio's own 1933 film, Mystery of the Wax Museum, it stars Vincent Price as a disfigured sculptor who repopulates his destroyed wax museum by murdering people and using their wax-coated corpses as displays.
+OTHER FILMS: ["Mystery of the Wax Museum"]
+
+### ITEM 1f4fe15a64142cee
+PAGE: Destry (film)
+SENTENCE: This, the third film to use the title character of Max Brand's novel Destry Rides Again, is a color remake of the black-&-white 1939 Marlene Dietrich and James Stewart film version.
+OTHER FILMS: ["Destry Rides Again"]
+
+### ITEM 5a62162638c88b0d
+PAGE: Last of the Comanches
+SENTENCE: The film is a remake of the 1943 World War II film Sahara, starring Humphrey Bogart.
+OTHER FILMS: ["Sahara (1943 American film)"]
+
+### ITEM 81339990ceb25427
+PAGE: High Society (1956 film)
+SENTENCE: The film is a musical remake of the 1940 screwball comedy film The Philadelphia Story, which was based on the 1939 play The Philadelphia Story by Philip Barry.
+OTHER FILMS: ["The Philadelphia Story (film)"]
+
+### ITEM fc8c10daa48b4065
+PAGE: Emergency Wedding
+SENTENCE: It is a remake of You Belong to Me (1941), a film in which Parks had also appeared.
+OTHER FILMS: ["You Belong to Me (1941 film)"]
+
+### ITEM 2e1388d27c941662
+PAGE: The Shaggy Dog (1959 film)
+SENTENCE: There followed a 1987 television sequel, a 1994 television remake and a 2006 theatrical live-action remake.
+OTHER FILMS: ["The Shaggy Dog (2006 film)"]
+
+### ITEM c67638db27708198
+PAGE: Night Plane from Chungking
+SENTENCE: The film was remade as Peking Express (1951).
+OTHER FILMS: ["Peking Express (film)"]
+
+### ITEM 17a4b53ccc1b1273
+PAGE: Step Down to Terror
+SENTENCE: It is a remake of the 1943 Alfred Hitchcock film Shadow of a Doubt.
+OTHER FILMS: ["Shadow of a Doubt"]
+
+### ITEM 05abac9c49f7f02d
+PAGE: Run for the Sun
+SENTENCE: Run for the Sun is a 1956 American Technicolor thriller adventure film released by United Artists, the third film to officially be based on Richard Connell's classic 1924 suspense story, "The Most Dangerous Game", after both RKO's The Most Dangerous Game (1932), and their remake, A Game of Death (1945).
+OTHER FILMS: ["The Most Dangerous Game (film)"]
+
+### ITEM f43b4c65884fa6c2
+PAGE: An Affair to Remember
+SENTENCE: The film was a remake of McCarey's 1939 film Love Affair, starring Irene Dunne and Charles Boyer.
+OTHER FILMS: ["Love Affair (1939 film)"]
+
+### ITEM ebd0048856390931
+PAGE: I'll See You in My Dreams (1951 film)
+SENTENCE: Curtiz teamed with Thomas again the following year for a remake of The Jazz Singer.
+OTHER FILMS: ["The Jazz Singer (1952 film)", "The Jazz Singer"]
+
+### ITEM 7ef432a5948313f3
+PAGE: True Grit (1969 film)
+SENTENCE: True Grit's success spawned a 1975 theatrical film sequel with Wayne again reprising his character in Rooster Cogburn, a 1978 television film sequel starring Warren Oates True Grit: A Further Adventure, and an acclaimed 2010 remake film of the same name directed by the Coen brothers and starring Jeff Bridges.
+OTHER FILMS: ["Rooster Cogburn (film)", "True Grit (2010 film)"]
+
+### ITEM a7663163bdfaf7ef
+PAGE: Jigsaw (1968 film)
+SENTENCE: This remake of Mirage (1965) was originally made for television but shown first in theaters.
+OTHER FILMS: ["Mirage (1965 film)"]
+
+### ITEM 8ab57a6a4a200134
+PAGE: Cape Fear (1962 film)
+SENTENCE: A remake of the same name was released in 1991, directed by Martin Scorsese and starring Nick Nolte and Robert De Niro in the lead roles.
+OTHER FILMS: ["Cape Fear (1991 film)"]
+
+### ITEM 3117bc19d7720bfe
+PAGE: The Magnificent Seven
+SENTENCE: It spawned three sequels, a television series that aired from 1998 to 2000, and a 2016 film remake.
+OTHER FILMS: ["The Magnificent Seven (2016 film)"]
+
+### ITEM 1bf20ca66d61f798
+PAGE: I Wake Up Screaming
+SENTENCE: The film was remade as Vicki in 1953 starring Jean Peters.
+OTHER FILMS: ["Vicki (film)"]
+
+### ITEM 6f754822feb9c129
+PAGE: Zero Hour!
+SENTENCE: Zero Hour! was a remake of the Canadian television play Flight into Danger, and was the basis for the 1980 parody film Airplane!.
+OTHER FILMS: ["Airplane!"]
+
+### ITEM c1f34dbaba7288a3
+PAGE: The Lodger (1944 film)
+SENTENCE: It was remade again in 1953 by Hugo Fregonese as Man in the Attic, starring Jack Palance, and again in 2009 by David Ondaatje.
+OTHER FILMS: ["Man in the Attic"]
+
+### ITEM 55e22a59fbfd24b0
+PAGE: Invaders from Mars (1953 film)
+SENTENCE: A remake film was released in 1986, directed by Tobe Hooper.
+OTHER FILMS: ["Invaders from Mars (1986 film)"]
+
+### ITEM 907870db9ed73eb4
+PAGE: High Sierra (film)
+SENTENCE: The novel is also the basis of the western Colorado Territory (also directed by Walsh, starring Joel McCrea & Virginia Mayo) and the scene-by-scene remake I Died a Thousand Times (directed by Stuart Heisler with Jack Palance as Roy and Shelley Winters as Marie).
+OTHER FILMS: ["Colorado Territory (film)", "I Died a Thousand Times"]
+
+### ITEM fce5edd1a9540e3b
+PAGE: Psycho (1960 film)
+SENTENCE: After Hitchcock's death in 1980, Universal Pictures produced follow-ups: three sequels, a remake, a made-for-television spin-off, and a television series.
+OTHER FILMS: ["Psycho (1998 film)", "Bates Motel (film)"]
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/remakes/statements/r2_033.out.json as a JSON list with one object per item: {"item": "<the code after ITEM>", "links": [{"film": "<title exactly as listed>", "relation": "...", "wording": "..."}]} with one entry in "links" for every film listed under OTHER FILMS. Write nothing else to that file.

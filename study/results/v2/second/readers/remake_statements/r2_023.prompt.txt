@@ -1,0 +1,222 @@
+You are helping to build a research corpus of film remakes from Wikipedia. Each item below gives the title of a film's Wikipedia page (PAGE), ONE sentence from the opening of that page, and the OTHER FILMS that sentence links to. For each other film, record what THE SENTENCE SAYS about PAGE and that film. You are not asked what you know about the films.
+
+For each other film give:
+- "relation":
+    "page_remakes_other"   the sentence says PAGE is a remake of the other film;
+    "other_remakes_page"   the sentence says the other film is a remake of PAGE (for example "it was remade in Telugu as ...");
+    "none"                 anything else.
+- "wording":
+    "firm"    the sentence states the remake plainly as a fact: "is a remake of", "an official remake of", "was remade as", "was remade in Hindi as";
+    "loose"   the sentence weakens or hedges it: "loosely", "partly", "unofficial", "uncredited", "inspired by", "based on the idea of", "reported to be", "said to be", "has been described as", "considered", "similar to", "reboot", "reimagining", "re-adaptation";
+    "" when the relation is "none".
+
+Rules.
+- Use only what the sentence says. Do not use your own knowledge of the films, and do not guess from titles or years.
+- If the sentence lists several films as remakes of PAGE, each of them is "other_remakes_page".
+- If the sentence says PAGE is a remake of X, and that X is itself a remake of or based on Y, then X is "page_remakes_other" and Y is "none", unless the sentence also says PAGE is a remake of Y.
+- "none" covers: a sequel, prequel or spin-off; a film that is only compared or mentioned; another remake of the same original (a sibling); a film based on the same novel, play or true story that the sentence does not call a remake; a film whose remake status the sentence denies; a dubbed version; a film shot at the same time in another language ("simultaneously", "bilingual").
+- If you cannot tell which film the word "remake" or "remade" applies to, answer "none".
+
+The items follow.
+
+### ITEM 6c500e4804870c22
+PAGE: Shanghai Express (film)
+SENTENCE: It was remade as Night Plane from Chungking (1943) and Peking Express (1951).
+OTHER FILMS: ["Night Plane from Chungking", "Peking Express (film)"]
+
+### ITEM 85cd95b50dfb1aab
+PAGE: Thillu Mullu (1981 film)
+SENTENCE: A remake of the 1979 Hindi film Gol Maal, which itself is also a remake of the 1961 Bengali film Kanamachhi, it stars Rajinikanth, with Thengai Srinivasan, Nagesh, Poornam Viswanathan, Sowcar Janaki, Madhavi and Viji Chandrasekhar in supporting roles.
+OTHER FILMS: ["Gol Maal"]
+
+### ITEM fd7646880e858c11
+PAGE: Cocktail (Malayalam film)
+SENTENCE: The film was co-written by Anoop Menon and is an uncredited remake of the Canadian film Butterfly on a Wheel.
+OTHER FILMS: ["Butterfly on a Wheel"]
+
+### ITEM 90c15139a542c787
+PAGE: Bachelor Mother
+SENTENCE: It was remade in 1956 as Bundle of Joy, starring Debbie Reynolds and Eddie Fisher, and inspired the Bollywood film Kunwara Baap.
+OTHER FILMS: ["Bundle of Joy", "Kunwara Baap (1942 film)"]
+
+### ITEM b3ac53c032909ef5
+PAGE: Colours (2009 film)
+SENTENCE: It is an unofficial remake of the 2002 Hindi film Dil Hai Tumhaara.
+OTHER FILMS: ["Dil Hai Tumhaara"]
+
+### ITEM 0cc426e5da78c65a
+PAGE: Sadak
+SENTENCE: It is an unofficial remake of 1976 American film Taxi Driver.
+OTHER FILMS: ["Taxi Driver"]
+
+### ITEM b160fdb3271599e3
+PAGE: Raja Jani
+SENTENCE: It is a remake of the 1965 Bengali film Rajkanya, which itself is loosely based on the 1956 American film Anastasia. It was itself remade in Tamil in 1983 as Adutha Varisu.
+OTHER FILMS: ["Anastasia (1956 film)", "Adutha Varisu"]
+
+### ITEM 4a6525663463ffe7
+PAGE: Frontier Marshal (1939 film)
+SENTENCE: The film was remade by John Ford in 1946 as My Darling Clementine, including whole scenes reshot from the 1939 film.
+OTHER FILMS: ["My Darling Clementine"]
+
+### ITEM 3f8a7444f310335b
+PAGE: Palaivana Solai (2009 film)
+SENTENCE: It is a remake of the 1981 Tamil film of the same name.
+OTHER FILMS: ["Palaivana Solai (1981 film)"]
+
+### ITEM 086b5410fcde11a2
+PAGE: Secrets (1924 film)
+SENTENCE: The film is based upon a 1922 play of the same name, and was remade in 1933 with Mary Pickford in the leading role.
+OTHER FILMS: ["Secrets (1933 film)"]
+
+### ITEM b68a3415e9415bcb
+PAGE: The Barretts of Wimpole Street (1934 film)
+SENTENCE: In 1957, Franklin directed a color remake in CinemaScope and Metrocolor starring Jennifer Jones, John Gielgud, and Bill Travers.
+OTHER FILMS: ["The Barretts of Wimpole Street (1957 film)"]
+
+### ITEM 3952db30ad73e505
+PAGE: Sundara Kandam
+SENTENCE: The film was remade in Telugu as Sundarakanda (1992), in Hindi as Andaz (1994) and in Kannada as Sundara Kanda (2001).
+OTHER FILMS: ["Sundarakanda (1992 film)", "Andaz (1994 film)"]
+
+### ITEM 44ededf3b71f5358
+PAGE: Sharada (1957 film)
+SENTENCE: It is a remake of 1954 Tamil film Edhir Paradhathu.
+OTHER FILMS: ["Edhir Paradhathu"]
+
+### ITEM 56a2632fb867a4fc
+PAGE: Mon Bole Priya Priya
+SENTENCE: According to director Milan Bhowmik– "It’s a love story on the extremes that true love can push one to." The movie was a remake of 2008 Tamil-language film Kadhalil Vizhunthen.
+OTHER FILMS: ["Kadhalil Vizhunthen"]
+
+### ITEM e71d196ce1212000
+PAGE: Anmol Ghadi
+SENTENCE: The Telugu movie was remade in Hindi as Jeena Sirf Merre Liye (2002), in Kannada as Manasella Neene (2002) and in Tamil as Thithikudhe (2003).
+OTHER FILMS: ["Jeena Sirf Merre Liye", "Thithikudhe"]
+
+### ITEM ccd891d257d2951d
+PAGE: Jab We Met
+SENTENCE: The film was later remade in Tamil as Kanden Kadhalai with a subsequent Telugu dubbed version titled Priya Priyathama.
+OTHER FILMS: ["Kanden Kadhalai"]
+
+### ITEM c7e3c1d1dfb53f58
+PAGE: Samsaram (1950 film)
+SENTENCE: The film was later remade in Tamil with the same name, in Hindi as Sansar and in Malayalam as Ayodhya (1975).
+OTHER FILMS: ["Samsaram (1951 film)"]
+
+### ITEM cd3e3340e98b9a20
+PAGE: Ram-Avtar
+SENTENCE: It is a remake of the Raj Kapoor, Rajendra Kumar and Vyjayanthimala-starrer Sangam (1964).
+OTHER FILMS: ["Sangam (1964 Hindi film)"]
+
+### ITEM ce595fc1e6fad6e0
+PAGE: Dhill
+SENTENCE: The film was remade in Telugu as Sreeram (2002), Hindi as Dum (2003), Kannada as Sye (2005), Indian Bengali as Shotrur Mokabila (2002) and in Bangladeshi Bengali as Arman (2002).
+OTHER FILMS: ["Sreeram", "Dum (2003 Hindi film)"]
+
+### ITEM f2c1bd9d01d7ea2b
+PAGE: Varalaru (film)
+SENTENCE: The film has been remade in Kannada, titled after the original title of the film, in Burmese as Nat Khat Mhar Tae Tite Pwal, and in Odia as Tu Mo Dehara Chhai.
+OTHER FILMS: ["Godfather (2012 film)"]
+
+### ITEM e8787498fcd0639b
+PAGE: Pyaasa (1957 film)
+SENTENCE: It was remade into the Telugu film Mallepoovu in 1978.
+OTHER FILMS: ["Mallepoovu"]
+
+### ITEM 96b2ada386e4d7c5
+PAGE: Yaadon Ki Baaraat
+SENTENCE: The film was later remade in Telugu as Annadammula Anubandham, in Tamil as Naalai Namadhe and in Malayalam as Himam.
+OTHER FILMS: ["Annadammula Anubandham"]
+
+### ITEM b397579901acdaf1
+PAGE: Hothat Brishti
+SENTENCE: It is a remake of the 1996 Tamil film Kadhal Kottai.
+OTHER FILMS: ["Kadhal Kottai"]
+
+### ITEM 14272b95b864d486
+PAGE: Biwi No.1
+SENTENCE: Biwi No.1 is a 1999 Indian Hindi-language comedy film directed by David Dhawan, being a remake of the 1995 Tamil film Sathi Leelavathi.
+OTHER FILMS: ["Sathi Leelavathi (1995 film)"]
+
+### ITEM 07421a96114021be
+PAGE: Keyamat Theke Keyamat
+SENTENCE: The film is an official remake of the 1988 Hindi Language film titled Qayamat Se Qayamat Tak, and like its predecessor, is based on Romeo and Juliet.
+OTHER FILMS: ["Qayamat Se Qayamat Tak"]
+
+### ITEM d5b92325b0046152
+PAGE: Gold Diggers of 1937
+SENTENCE: This is the fifth movie in Warner Bros.' series of Gold Digger films, following the now lost films The Gold Diggers (1923), a silent film, and the partially lost sound film Gold Diggers of Broadway (1929), as well as Gold Diggers of 1933 – a remake of The Gold Diggers and the first to feature Busby Berkeley's extravagant production numbers – and Gold Diggers of 1935.
+OTHER FILMS: ["Gold Diggers of 1933", "Gold Diggers of 1935"]
+
+### ITEM e2b5dbcea79ab1a7
+PAGE: Neela Kuyil
+SENTENCE: It is a remake of the Malayalam film Ninnistham Ennishtam which itself was inspired by Charlie Chaplin's City Lights.
+OTHER FILMS: ["City Lights"]
+
+### ITEM 7d72b71e36f3a8ef
+PAGE: Mujhe Insaaf Chahiye
+SENTENCE: It is a remake of the Telugu film Nyayam Kavali.
+OTHER FILMS: ["Nyayam Kavali"]
+
+### ITEM 5f8999994b36a97e
+PAGE: Meesai Madhavan
+SENTENCE: The film was a remake of the Malayalam film Kabooliwala (1994).
+OTHER FILMS: ["Kabooliwala"]
+
+### ITEM 7d6ec34d6942e54d
+PAGE: Kasme Vaade
+SENTENCE: The film was remade in Telugu as Chesina Basalu (1980) and in Tamil as Dharmathin Thalaivan (1988).
+OTHER FILMS: ["Dharmathin Thalaivan"]
+
+### ITEM 8bde97ceb8e70931
+PAGE: Vettai (film)
+SENTENCE: The film was remade in Telugu as Tadakha (2013) and in Hindi as Baaghi 3 (2020).
+OTHER FILMS: ["Tadakha"]
+
+### ITEM 8324319761fb0d70
+PAGE: Jeevitham (1950 film)
+SENTENCE: The film was a remake of the 1949 Tamil film Vazhkai, which was also produced and directed by [[A.V.
+OTHER FILMS: ["Vaazhkai (1949 film)"]
+
+### ITEM 0df3e05d08d5cc04
+PAGE: Saade Maade Teen
+SENTENCE: The film is remake of Hindi film Chalti Ka Naam Gaadi.
+OTHER FILMS: ["Chalti Ka Naam Gaadi"]
+
+### ITEM e86fe68774d2885d
+PAGE: Pizza (2014 film)
+SENTENCE: It is a remake of the 2012 Tamil film of the same name, directed by Karthik Subbaraj, and was released on 18 July 2014.
+OTHER FILMS: ["Pizza (2012 film)"]
+
+### ITEM 1f217eb9f0e8935f
+PAGE: Saamy
+SENTENCE: The film was remade in Telugu as Lakshmi Narasimha (2004), in Kannada as Ayya (2005), in Hindi as Policegiri (2013), and in Bengali as Barood.
+OTHER FILMS: ["Ayya (2005 Kannada film)", "Policegiri"]
+
+### ITEM e6094183b8d11299
+PAGE: Pooja Ke Phool
+SENTENCE: This is a remake of the Tamil film Kumudham.
+OTHER FILMS: ["Kumudham"]
+
+### ITEM bd67bec8bad5f852
+PAGE: Kudiyirundha Koyil
+SENTENCE: A remake of the 1962 Hindi film China Town, it revolves around twins who become separated as children: one grows up as a criminal, and the other is tasked with apprehending him.
+OTHER FILMS: ["China Town (1962 film)"]
+
+### ITEM 6c55fe7a99102e37
+PAGE: CID Moosa
+SENTENCE: C.I.D Moosa was remade in Tamil as Cheena Thaana 001, in Kannada as CID Eesha and in Telugu as Ramachari.
+OTHER FILMS: ["Cheena Thaana 001"]
+
+### ITEM 591452963d1885a9
+PAGE: The Passionate Plumber
+SENTENCE: It later was remade in 1942 as Her Cardboard Lover.
+OTHER FILMS: ["Her Cardboard Lover"]
+
+### ITEM 6b38fc99de47a10f
+PAGE: Jimmy (2008 film)
+SENTENCE: It was a remake of the 1974 movie Majboor.
+OTHER FILMS: ["Majboor (1974 film)"]
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/remakes/statements/r2_023.out.json as a JSON list with one object per item: {"item": "<the code after ITEM>", "links": [{"film": "<title exactly as listed>", "relation": "...", "wording": "..."}]} with one entry in "links" for every film listed under OTHER FILMS. Write nothing else to that file.

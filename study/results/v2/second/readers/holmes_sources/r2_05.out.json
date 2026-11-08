@@ -1,0 +1,126 @@
+[
+  {
+    "id": 41384573,
+    "kind": "tv_episode",
+    "year": 2014,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Sign of the Four",
+        "tier": "C",
+        "quote": "The episode's title is inspired by The Sign of the Four by Sir Arthur Conan Doyle."
+      }
+    ],
+    "other_sources": []
+  },
+  {
+    "id": 11350779,
+    "kind": "film",
+    "year": 1942,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "His Last Bow (short story)",
+        "tier": "B",
+        "quote": "The film combines elements of Doyle's short story \"His Last Bow\", to which it is credited as an adaptation, and the real-life activities of Lord Haw-Haw."
+      }
+    ],
+    "other_sources": [
+      "real-life activities of Lord Haw-Haw"
+    ]
+  },
+  {
+    "id": 40463536,
+    "kind": "film",
+    "year": 2015,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": [
+      "A Slight Trick of the Mind (2005 novel by Mitch Cullin)"
+    ]
+  },
+  {
+    "id": 24884713,
+    "kind": "film",
+    "year": 1980,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Adventure of Charles Augustus Milverton",
+        "tier": "A",
+        "quote": "The film is based on three short stories by Conan Doyle: \"The Adventure of Charles Augustus Milverton\", \"The Final Problem\", and \"The Adventure of the Empty House\"."
+      },
+      {
+        "story": "The Final Problem",
+        "tier": "A",
+        "quote": "The film is based on three short stories by Conan Doyle: \"The Adventure of Charles Augustus Milverton\", \"The Final Problem\", and \"The Adventure of the Empty House\"."
+      },
+      {
+        "story": "The Adventure of the Empty House",
+        "tier": "A",
+        "quote": "The film is based on three short stories by Conan Doyle: \"The Adventure of Charles Augustus Milverton\", \"The Final Problem\", and \"The Adventure of the Empty House\"."
+      }
+    ],
+    "other_sources": []
+  },
+  {
+    "id": 10617098,
+    "kind": "film",
+    "year": 1962,
+    "holmes_appears": false,
+    "sources": [],
+    "other_sources": [
+      "Jighansa (1951 Bengali film, of which this film is a remake)",
+      "Nishithini Bivishika (novel by Hemendra Kumar Roy)"
+    ]
+  },
+  {
+    "id": 24779008,
+    "kind": "tv_film",
+    "year": 2002,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": []
+  },
+  {
+    "id": 1615582,
+    "kind": "film",
+    "year": 1971,
+    "holmes_appears": false,
+    "sources": [],
+    "other_sources": [
+      "They Might Be Giants (1961 play by James Goldman)",
+      "Don Quixote (the title is an indirect reference to it)"
+    ]
+  },
+  {
+    "id": 34402549,
+    "kind": "film",
+    "year": 1914,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Hound of the Baskervilles",
+        "tier": "A",
+        "quote": "Der Hund von Baskerville is a 1914 German silent film adaptation of Arthur Conan Doyle's 1902 novel The Hound of the Baskervilles, the first film adaptation of the work."
+      }
+    ],
+    "other_sources": [
+      "Der Hund von Baskerville: Schauspiel in vier Aufzügen aus dem Schottischen Hochland (play by Ferdinand Bonn)"
+    ]
+  },
+  {
+    "id": 10222495,
+    "kind": "tv_film",
+    "year": 1987,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Sign of the Four",
+        "tier": "B",
+        "quote": "The details of the main plot are adapted from The Sign of the Four."
+      }
+    ],
+    "other_sources": []
+  }
+]

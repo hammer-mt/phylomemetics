@@ -1,0 +1,131 @@
+You are helping to build a research corpus about Sherlock Holmes on screen. For each article below, record what THE ARTICLE ITSELF SAYS the work is based on. You are not asked what you know about the work or about the stories.
+
+For each article give:
+- "kind": one of "film", "tv_episode", "tv_film", "video_game", "series" (an article about a whole film series, television series or game series, not one work), "other".
+- "year": the year of first release or broadcast that the article gives (an integer), or null.
+- "holmes_appears": true if the article presents Sherlock Holmes as a character in the work, else false.
+- "sources": a list, possibly empty, of the Conan Doyle stories the article names as a source of the work. Each entry has:
+    "story": the story's title, copied exactly from the list of the 60 canonical stories given below;
+    "tier": "A", "B" or "C" by the rule below;
+    "quote": the sentence or infobox entry of the article that says so, copied word for word (at most 40 words).
+- "other_sources": a list of any source the article names that is not one of the 60 stories (a play, a later novel, another film), as short strings. Empty if none.
+
+The tiers. Use the article's own wording.
+- Tier A, a stated adaptation. The article says outright that the work is an adaptation of the story, is based on it, is a version of it, or dramatises it, with no loosening word. An infobox entry "based on" that names the story counts.
+- Tier B, a stated loose adaptation. The article says the work is loosely, partly or freely based on the story, or is a modern-day or updated adaptation of it, or takes its plot from it while changing it, or is credited as an adaptation although the plot differs.
+- Tier C, elements only. The article says the work is inspired by the story, borrows or uses elements, characters, a device, a line or its title from it, alludes or refers to it, or that critics see a resemblance.
+
+Rules.
+- Use only what the article says about the work's sources. Do not add a source from your own knowledge, and do not infer one from character names or from anything else.
+- If the article names several stories, give each its own entry and its own tier.
+- If the article says the screenplay is original, or names no canonical story as a source, "sources" is an empty list.
+- A statement that the work features characters created by Conan Doyle is not a source statement.
+- A story named only as the source of a DIFFERENT work (an earlier film, a sequel) is not a source of this one.
+
+The 60 canonical stories (copy a title exactly as written here):
+- A Study in Scarlet
+- The Sign of the Four
+- The Hound of the Baskervilles
+- The Valley of Fear
+- A Scandal in Bohemia
+- The Red-Headed League
+- A Case of Identity
+- The Boscombe Valley Mystery
+- The Five Orange Pips
+- The Man with the Twisted Lip
+- The Adventure of the Blue Carbuncle
+- The Adventure of the Speckled Band
+- The Adventure of the Engineer's Thumb
+- The Adventure of the Noble Bachelor
+- The Adventure of the Beryl Coronet
+- The Adventure of the Copper Beeches
+- The Adventure of Silver Blaze
+- The Adventure of the Cardboard Box
+- The Adventure of the Yellow Face
+- The Adventure of the Stockbroker's Clerk
+- The Adventure of the Gloria Scott
+- The Adventure of the Musgrave Ritual
+- The Adventure of the Reigate Squire
+- The Adventure of the Crooked Man
+- The Adventure of the Resident Patient
+- The Adventure of the Greek Interpreter
+- The Adventure of the Naval Treaty
+- The Final Problem
+- The Adventure of the Empty House
+- The Adventure of the Norwood Builder
+- The Adventure of the Dancing Men
+- The Adventure of the Solitary Cyclist
+- The Adventure of the Priory School
+- The Adventure of Black Peter
+- The Adventure of Charles Augustus Milverton
+- The Adventure of the Six Napoleons
+- The Adventure of the Three Students
+- The Adventure of the Golden Pince-Nez
+- The Adventure of the Missing Three-Quarter
+- The Adventure of the Abbey Grange
+- The Adventure of the Second Stain
+- The Adventure of Wisteria Lodge
+- The Adventure of the Red Circle
+- The Adventure of the Bruce-Partington Plans
+- The Adventure of the Dying Detective
+- The Disappearance of Lady Frances Carfax
+- The Adventure of the Devil's Foot
+- His Last Bow (short story)
+- The Adventure of the Mazarin Stone
+- The Problem of Thor Bridge
+- The Adventure of the Creeping Man
+- The Adventure of the Sussex Vampire
+- The Adventure of the Three Garridebs
+- The Adventure of the Illustrious Client
+- The Adventure of the Three Gables
+- The Adventure of the Blanched Soldier
+- The Adventure of the Lion's Mane
+- The Adventure of the Retired Colourman
+- The Adventure of the Veiled Lodger
+- The Adventure of Shoscombe Old Place
+
+The articles follow. The plot summaries have been left out on purpose.
+
+### ARTICLE id 10617098: Bees Saal Baad (1962 film)
+Infobox: {"director": "Biren Nag", "writer": "Devkishen (dialogue)", "screenplay": "Dhruva Chatterjee", "based_on": ", Nishithini Bivishika (novel) by Hemendra Kumar Roy"}
+[Lead] Bees Saal Baad is a 1962 Indian Hindi-language psychological thriller film. It was directed by Biren Nag and produced by Hemant Kumar, who also composed the music and sang some of the songs. The film marks the directorial debut of Biren Nag, and stars Biswajeet (this was his first Hindi film), Waheeda Rehman, Madan Puri, Sajjan and Asit Sen. The film is a remake of the 1951 Bengali thriller Jighansa, which itself is based on Arthur Conan Doyle's The Hound of the Baskervilles as well as loosely based on Hemendra Kumar Roy's novel Nishithini Bivishika. The film topped the box office chart in 1962, becoming a "super hit." The film became very popular for the song "Kahin Deep Jale", sung by Lata Mangeshkar and written by Shakeel Badayuni for which they won Filmfare Award for Best Female Playback Singer and Filmfare Award for Best Lyricist respectively.
+
+### ARTICLE id 19124478: Sherlock Holmes (1922 film)
+Infobox: {"director": "Albert Parker", "writer": "Earle BrowneMarion Fairfax"}
+[Lead] Sherlock Holmes (released as Moriarty in the UK) is a 1922 American silent mystery drama film starring John Barrymore as Sherlock Holmes, Roland Young as Dr. John Watson and Gustav von Seyffertitz as Moriarty. The movie, which features the screen debuts of both William Powell (credited as William H. Powell) and Roland Young, was directed by Albert Parker. It was written by Earle Browne and Marion Fairfax from the 1899 play by William Gillette and Arthur Conan Doyle based upon Doyle's characters, and was produced by Goldwyn Pictures Corporation. The film was considered lost for decades, but was rediscovered in the mid-1970s and restored by George Eastman House.
+[Restoration] Material held by Eastman House was the basis for a reconstruction produced by Kevin Brownlow and William K. Everson (aided in the early stages by director Albert Parker himself, then in his late 80s), with a second reconstruction (incorporating newly found elements) undertaken by Eastman House itself in 2001. Describing the first reconstruction attempt in 1975, Everson made it clear that reassembling the available material into a viewable form was a far from trivial task: "A few years ago all that existed of this film were rolls and rolls of negative sections, in which every take—not every sequence, but every take—were [sic] jumbled out of order, with only a few flash titles for guidance [...] and a script that in many ways differed from the play, adding to the herculean task of putting it all together." The 2001 reconstruction was released on DVD by Kino International in 2009, with about 26 minutes of footage still missing. A Kino Blu-ray release followed in December 2011.
+
+### ARTICLE id 48348862: The Abominable Bride
+Infobox: {"series": "Sherlock", "director": "Douglas Mackinnon", "writer": "* Mark Gatiss Steven Moffat"}
+[Lead] "The Abominable Bride" is a special episode of the British television programme Sherlock. The episode was broadcast on BBC One, PBS and Channel One on 1 January 2016. It depicts the characters of the show in an alternative timeline: the Victorian London setting of the original stories by Arthur Conan Doyle. The title is based on the quote "Ricoletti of the club foot and his abominable wife" from "The Adventure of the Musgrave Ritual" (1893), which refers to a case mentioned by Holmes. The story also draws on elements of original Conan Doyle stories of Holmes such as "The Five Orange Pips" (1891) and "The Final Problem" (1893). The episode won the Primetime Emmy Award for Outstanding Television Movie, the first win of the series in that category.
+[Filming] Filming took place at Tyntesfield House, a National Trust property at Wraxall, near Bristol. Scenes were also shot in the cellars of Colston Hall and at Arnos Vale Cemetery in Bristol, and other locations in Bath, Somerset. Tyntesfield was mainly used as Sir Eustace's house but also the Watsons' London home. The final scene of the episode puts forth a possible concept that all of the series in its modern-day setting are actually playing out from within Victorian Holmes' Mind Palace. Mark Gatiss stated in Sherlock: The Abominable Bride Post-Mortem:By having that scene right at the end, where we go back to Victorian London – Victorian Baker Street – and Sherlock explicitly says, "It's an imagined version of what I think the future might be," we have really opened a ridiculous window that the entire series of Sherlock might be the drug-induced ravings of the Victorian Sherlock Holmes. Which means we can do absolutely anything.
+[Holmesian references] Moriarty's stating "There is nothing new under the sun. It has all been done before" comes from one of Arthur Conan Doyle's original Sherlock Holmes stories, A Study in Scarlet. But also refers to the Biblical book of Ecclesiastes (Ch1 Vs9): "What has been will be again, what has been done will be done again; there is nothing new under the sun." Mycroft's mentioning of the Manor House Case references "The Greek Interpreter".
+[Broadcast] In the UK, "The Abominable Bride" pulled in strong ratings overnight, scoring more than 8.4 million viewers on New Year's Day for BBC One. The final, official consolidated rating after seven days was 11.6m viewers making it the most watched programme of the week in the UK. The episode was broadcast from 9 p.m. on BBC One, PBS and OTE Cinema 4 HD and in the United Kingdom it was simulcast in 100 cinemas nationwide. In a special extended version featuring twenty minutes of additional footage, including a guided set-tour of 221B Baker Street with executive producer Moffat and a short making-of with Cumberbatch and Freeman, "The Abominable Bride" was granted a limited release in theatres in Hong Kong, Denmark and Australia on 2 January 2016, in Finland on 3 January 2016, a full release in China on 4 January and a limited release across the United Kingdom and the United States on 5–6 January 2016 and in Italy on 12–13 January 2016. It was released in Japan on 19 February 2016. it was also shown in cinemas in Russia, Armenia, Ukraine, Belarus and Kazakhstan. In cinemas, the film (along with the bonus footage) held strong, particularly in China and South Korea bringing in $5.39 million (£3.68m) on its opening day alone (January 4) in China, according to Deadline, as 1.7 million people in the country saw the one-off episode. It grossed $5 million in the latter country, South Korea. It grossed a total of in China, its largest territory by box office gross. On these successful ratings, BBC Worldwide's Sally de St Croix said, "Following on from a strong performance on BBC One, the show has now seen multi-million dollar success at the South Korean and Chinese box offices – an outstanding achievement for a British TV show." It grossed on its opening weekend in Japan. The special cinema showing has grossed an international total of $38,400,603.
+
+### ARTICLE id 50693419: Jighansa
+Infobox: {"story": "Hemendra Kumar Roy", "director": "Ajoy Kar", "based_on": "Nishithini Bibhishika by Hemendra Kumar Roy", "screenplay": "Ajoy Kar"}
+[Lead] Jighansa is a 1951 Bengali-language psychological thriller film cinematographed and directed by Ajoy Kar. Produced by Chayanika Chitramandir and Kine Craft Studios, the film is based on Hemendra Kumar Roy's novel Nishithini Bibhishika, which itself is a Bengali adaptation of Arthur Conan Doyle's crime novel The Hound of the Baskervilles (1902). It stars Shishir Batabyal as the eponymous detective Smarajit Sen and Gautam Mukherjee as his assistant Bimal Ganguly. Biren Chatterjee, Manju Dey, Bikash Roy, Kamal Mitra and Kanu Banerjee star in pivotal roles. It was released on 20 April 1951. It had musical scores done by Hemant Kumar.
+
+### ARTICLE id 11351541: Pursuit to Algiers
+Infobox: {"director": "Roy William Neill", "screenplay": "Leonard Lee"}
+[Lead] Pursuit to Algiers (1945) is the twelfth entry in the Basil Rathbone/Nigel Bruce Sherlock Holmes film series of fourteen. Elements in the story pay homage to an otherwise unrecorded affair mentioned by Dr. Watson at the beginning of the 1903 story "The Adventure of the Norwood Builder", notably the steamship Friesland. Off-camera, Watson also recounts to his audience another unrecorded affair mentioned in the 1924 story "The Adventure of the Sussex Vampire", that of the Giant Rat of Sumatra, "a story for which the world is not yet prepared".
+
+### ARTICLE id 11125917: The Woman in Green
+Infobox: {"director": "Roy William Neill", "screenplay": "Bertram Millhauser", "based_on": "characters created by Sir Arthur Conan Doyle"}
+[Lead] The Woman in Green is a 1945 American horror mystery film, the eleventh of the fourteen Basil Rathbone-Nigel Bruce Sherlock Holmes films based on the characters created by Arthur Conan Doyle. It stars Rathbone as Sherlock Holmes and Bruce as Dr. Watson, with Hillary Brooke in the title role, accompanied by Paul Cavanagh, Henry Daniell, Eve Amber, Sally Shepherd, and Matthew Boulton in support. Produced and directed by Roy William Neill from an original screenplay by Bertram Millhauser, the film follows a Conan Doyle premise with material taken from "The Final Problem" and "The Adventure of the Empty House". This was Brooke's third of three different roles in the Basil Rathbone Sherlock Holmes films, after Sherlock Holmes and the Voice of Terror (1942) and Sherlock Holmes Faces Death (1943). Series regular Dennis Hoey's Inspector Lestrade was replaced with Bolton's Inspector Gregson. Daniell played Professor Moriarty, his third of three different roles in the Rathbone Sherlock Holmes series, following Sherlock Holmes and the Voice of Terror and Sherlock Holmes in Washington (1943). The film is one of four films in the series which are in the public domain.
+
+### ARTICLE id 22228712: The Man Who Was Sherlock Holmes
+Infobox: {"director": "Karl Hartl"}
+[Lead] The Man Who Was Sherlock Holmes is a 1937 German mystery comedy film directed by Karl Hartl and starring Hans Albers, Heinz Rühmann and Marieluise Claudius. The film follows Detective Morris Flynn (Hans Albers) and his assistant Macky McPherson (Heinz Rühmann), masquerading as Sherlock Holmes and Dr Watson, who investigate two attractive sisters, Mary and Jane Berry, and the theft and forgery of valuable postage stamps. It was shot at the Babelsberg Studios in Berlin. The film's sets were designed by the art directors Otto Hunte and Willy Schiller.
+
+### ARTICLE id 2631898: The Scarlet Claw
+Infobox: {"director": "Roy William Neill", "screenplay": "Paul Gangelin"}
+[Lead] The Scarlet Claw is a 1944 American mystery thriller film based on Sir Arthur Conan Doyle's Sherlock Holmes detective stories. Directed by Roy William Neill and starring Basil Rathbone and Nigel Bruce, it is the eighth film of the Rathbone/Bruce series. David Stuart Davies notes on the film's DVD audio commentary that it is generally considered by critics and fans of the series to be the best of the twelve Holmes films made by Universal. There are parallels with Conan Doyle's novel The Hound of the Baskervilles.
+[Production] The film is not credited as an adaptation of any of Sir Arthur Conan Doyle's Holmes tales, but it bears a significant resemblance to his 1902 novel The Hound of the Baskervilles. Alan Barnes, in his book Sherlock Holmes On Screen, describes The Scarlet Claw as "owing much" to Hound, listing their similarities: "a remote marshland setting; a painted-phosphorescent but thought-supernatural terror, an escaped convict on the loose, a cold killer ingratiating himself with everyone in the vicinity; a subplot involving cast-off clothing; plus, of course, Holmes' method of unmasking the murderer, making to return home but actually remaining behind to catch the villain red-handed (or, indeed, scarlet-clawed)." Early in the film, Watson's character directly refers to The Hound of the Baskervilles. At the very end of the film, Holmes quotes from Winston Churchill, after which Watson asks, "Churchill say that?" Holmes replies "Yes, Churchill." The music swells and Rathbone's voice drops, but he continues to speak several more words which are not heard, but lip movement indicates that he says, "God bless him."
+
+### ARTICLE id 32896083: The Testament of Sherlock Holmes
+Infobox: {"developer": "Frogwares", "series": "Sherlock Holmes", "released": "Windows, PS3, Xbox 360Nintendo SwitchPlayStation 4", "genre": "Adventure"}
+[Lead] The Testament of Sherlock Holmes is an adventure video game in the Sherlock Holmes series developed by Frogwares and distributed by Focus Home Interactive. After being delayed from an original 2010 release, the game was released in September 2012 for Xbox 360, PlayStation 3, and Windows. The game was developed primarily for consoles, and features a new graphic engine and gameplay mechanics. It is based on the fictional detective Sherlock Holmes, the protagonist of 56 short stories and 4 novels by Arthur Conan Doyle. Like many other games in the series, the game itself presents an original story and plot that is not based on any of Doyle's works. The Testament of Sherlock Holmes is set in the London of 1898 between the events of Sherlock Holmes: Crimes & Punishments and Sherlock Holmes: The Devil's Daughter, with Holmes presented as the main suspect in a case in which he is unable to prove his innocence; thus he must play a dangerous game to uncover the truth.
+[Development] After the release of the ported Sherlock Holmes Versus Jack the Ripper, Frogwares and French publisher Focus Home Interactive got feedback from console players in particular that they wanted more adventure games with 3D graphics and production values to match what other genres are offering. Frogwares admitted to be eager in delivering one, though Waël Amr, the CEO, insisted on not forgetting about PC players, as some speculated. The development of the game took nearly three years to complete. Waël Amr explained that in the past, the team has always been limited in reaching the PC market by trying to aim for a middle ground with PC owners, so that the specs have been lowered to match the greater share of the market. With this latest game being developed with the then current generation of consoles in mind, the development team was able to focus on polishing the graphics and creating the adventure game they'd always wanted to. The previous game in the series, Sherlock Holmes versus Jack the Ripper, was ported to console, but was simply a conversion. Rather than being ported from a PC version of the title, the team developed the title specifically for Xbox 360 and PlayStation 3 for the first time. Sherlock Holmes versus Jack the Ripper used drawings to depict its murder victims, hiding the full horror of the scenes out of respect for the real historical victims. Frogwares in the new title approaches on more mature and graphic moments. As the characters here are purely fictional, there is no restraint in showing the gory scenes. With this, they first upgraded the graphics, and was first previewed in the screenshots. These images were released by Frogwares to every gaming website, most notably GameSpot and IGN. The first of these were posted in February 2011, and more surfaces the following months. After the release of the first trailer and gameplay in E3 2011, Frogwares later released 4 more trailers with gameplay footage. The fourth trailer was shown in E3 2012. Destructoid and AdventureGamers.com were the first to play the game's demo. These demos where later posted in GameSpot's Daily Demo, where two gameplay missions were posted in YouTube. Wael also presented the game in Gameswelt and GotGame.com, entertaining with interviews about gameplay mechanics and the team's development timeline. These upgrades were said to be a part of a broader move to attract more console players. This does, however, coincide with a change in Frogwares approach to difficulty. Previously, very difficult puzzles were once considered a good thing, and success was measured in how long it took people to finish the game. As of what Waël observed about, they were carefully watching the internet, counting the days until people started posting complete solutions. They admitted later on that it was a "stupid" approach, and put emphasis on accessibility and not getting stuck in the same place for too long. Wael said that the game would show Holmes' darker side, where he now uses blackmail, forgery, and isolation in exile away from society. Saying that, Holmes now relies on his survival skills and street-smart, paired in a cat-and-mouse style plot widely seen in other games such as Tom Clancy's Splinter Cell: Conviction and Robert Ludlum's The Bourne Conspiracy. Frogwares originally intended to release the game at the end of 2010, but was pushed back for release in 2012; the release date of the game was set for 20 September. Atlus obtained the North American publishing rights for the game.
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/tiers/r1_08.out.json as a JSON list with one object per article, each with the keys "id" (the number after "ARTICLE id"), "kind", "year", "holmes_appears", "sources", "other_sources". Write nothing else to that file.

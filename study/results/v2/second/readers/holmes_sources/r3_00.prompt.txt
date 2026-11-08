@@ -1,0 +1,99 @@
+You are helping to build a research corpus about Sherlock Holmes on screen. For each article below, record what THE ARTICLE ITSELF SAYS the work is based on. You are not asked what you know about the work or about the stories.
+
+For each article give:
+- "kind": one of "film", "tv_episode", "tv_film", "video_game", "series" (an article about a whole film series, television series or game series, not one work), "other".
+- "year": the year of first release or broadcast that the article gives (an integer), or null.
+- "holmes_appears": true if the article presents Sherlock Holmes as a character in the work, else false.
+- "sources": a list, possibly empty, of the Conan Doyle stories the article names as a source of the work. Each entry has:
+    "story": the story's title, copied exactly from the list of the 60 canonical stories given below;
+    "tier": "A", "B" or "C" by the rule below;
+    "quote": the sentence or infobox entry of the article that says so, copied word for word (at most 40 words).
+- "other_sources": a list of any source the article names that is not one of the 60 stories (a play, a later novel, another film), as short strings. Empty if none.
+
+The tiers. Use the article's own wording.
+- Tier A, a stated adaptation. The article says outright that the work is an adaptation of the story, is based on it, is a version of it, or dramatises it, with no loosening word. An infobox entry "based on" that names the story counts.
+- Tier B, a stated loose adaptation. The article says the work is loosely, partly or freely based on the story, or is a modern-day or updated adaptation of it, or takes its plot from it while changing it, or is credited as an adaptation although the plot differs.
+- Tier C, elements only. The article says the work is inspired by the story, borrows or uses elements, characters, a device, a line or its title from it, alludes or refers to it, or that critics see a resemblance.
+
+Rules.
+- Use only what the article says about the work's sources. Do not add a source from your own knowledge, and do not infer one from character names or from anything else.
+- If the article names several stories, give each its own entry and its own tier.
+- If the article says the screenplay is original, or names no canonical story as a source, "sources" is an empty list.
+- A statement that the work features characters created by Conan Doyle is not a source statement.
+- A story named only as the source of a DIFFERENT work (an earlier film, a sequel) is not a source of this one.
+
+The 60 canonical stories (copy a title exactly as written here):
+- A Study in Scarlet
+- The Sign of the Four
+- The Hound of the Baskervilles
+- The Valley of Fear
+- A Scandal in Bohemia
+- The Red-Headed League
+- A Case of Identity
+- The Boscombe Valley Mystery
+- The Five Orange Pips
+- The Man with the Twisted Lip
+- The Adventure of the Blue Carbuncle
+- The Adventure of the Speckled Band
+- The Adventure of the Engineer's Thumb
+- The Adventure of the Noble Bachelor
+- The Adventure of the Beryl Coronet
+- The Adventure of the Copper Beeches
+- The Adventure of Silver Blaze
+- The Adventure of the Cardboard Box
+- The Adventure of the Yellow Face
+- The Adventure of the Stockbroker's Clerk
+- The Adventure of the Gloria Scott
+- The Adventure of the Musgrave Ritual
+- The Adventure of the Reigate Squire
+- The Adventure of the Crooked Man
+- The Adventure of the Resident Patient
+- The Adventure of the Greek Interpreter
+- The Adventure of the Naval Treaty
+- The Final Problem
+- The Adventure of the Empty House
+- The Adventure of the Norwood Builder
+- The Adventure of the Dancing Men
+- The Adventure of the Solitary Cyclist
+- The Adventure of the Priory School
+- The Adventure of Black Peter
+- The Adventure of Charles Augustus Milverton
+- The Adventure of the Six Napoleons
+- The Adventure of the Three Students
+- The Adventure of the Golden Pince-Nez
+- The Adventure of the Missing Three-Quarter
+- The Adventure of the Abbey Grange
+- The Adventure of the Second Stain
+- The Adventure of Wisteria Lodge
+- The Adventure of the Red Circle
+- The Adventure of the Bruce-Partington Plans
+- The Adventure of the Dying Detective
+- The Disappearance of Lady Frances Carfax
+- The Adventure of the Devil's Foot
+- His Last Bow (short story)
+- The Adventure of the Mazarin Stone
+- The Problem of Thor Bridge
+- The Adventure of the Creeping Man
+- The Adventure of the Sussex Vampire
+- The Adventure of the Three Garridebs
+- The Adventure of the Illustrious Client
+- The Adventure of the Three Gables
+- The Adventure of the Blanched Soldier
+- The Adventure of the Lion's Mane
+- The Adventure of the Retired Colourman
+- The Adventure of the Veiled Lodger
+- The Adventure of Shoscombe Old Place
+
+The articles follow. The plot summaries have been left out on purpose.
+
+### ARTICLE id 50693419: Jighansa
+Infobox: {"story": "Hemendra Kumar Roy", "director": "Ajoy Kar", "based_on": "Nishithini Bibhishika by Hemendra Kumar Roy", "screenplay": "Ajoy Kar"}
+[Lead] Jighansa is a 1951 Bengali-language psychological thriller film cinematographed and directed by Ajoy Kar. Produced by Chayanika Chitramandir and Kine Craft Studios, the film is based on Hemendra Kumar Roy's novel Nishithini Bibhishika, which itself is a Bengali adaptation of Arthur Conan Doyle's crime novel The Hound of the Baskervilles (1902). It stars Shishir Batabyal as the eponymous detective Smarajit Sen and Gautam Mukherjee as his assistant Bimal Ganguly. Biren Chatterjee, Manju Dey, Bikash Roy, Kamal Mitra and Kanu Banerjee star in pivotal roles. It was released on 20 April 1951. It had musical scores done by Hemant Kumar.
+
+### ARTICLE id 34252471: A Scandal in Belgravia
+Infobox: {"series": "Sherlock", "writer": "Steven Moffat", "director": "Paul McGuigan"}
+[Lead] "A Scandal in Belgravia" is the first episode of the second series of the BBC crime drama series Sherlock, which follows the modern-day adventures of Sherlock Holmes, and was first broadcast by BBC One on 1 January 2012. It was written by co-creator Steven Moffat, and directed by Paul McGuigan. The episode was based on "A Scandal in Bohemia", a short story by Sir Arthur Conan Doyle. The episode depicts Sherlock Holmes' (Benedict Cumberbatch) confrontation with Irene Adler (Lara Pulver), a dominatrix who has compromising photographs taken with a female member of the royal family. The photographs are stored inside her mobile phone, along with other valuable information which makes her a target of various political factions. Sherlock spends much of the episode keeping the device out of enemy hands while trying to deduce its password. Besides referring to the Doyle short story, the episode title names Belgravia, a district of London adjacent to the grounds of Buckingham Palace. After its broadcast on BBC One, the episode was given consolidated figures of 10.663 million viewers in the United Kingdom. Critical reactions toward the episode were largely positive, with reviewers praising the writing, acting and direction. The episode sparked controversy for showing the character of Irene Adler in the nude; carefully using camera angles to avoid exposing genitalia, pre-watershed. In addition, some criticised episode writer Steven Moffat's representation of Irene Adler.
+[Production] Lara Pulver decided to audition for the role of Irene Adler when she read the script shortly after wrapping on the espionage series Spooks, in which she had played Erin Watts. She was cast after meeting Steven Moffat and reading with Cumberbatch. Pulver told website Digital Spy that Moffat "had written such a multi-dimensional role that I literally immersed myself in his writing. Everything else went out the window for me, research-wise, other than [the dominatrix angle]. Literally, if you search my computer, you'd think I was a porn star or something!" She says that she found the initial vulnerability when filming the nude scenes "empowering" because she was unable to "hide behind anything – there's no mask. This is me, in the flesh! By the end of take two, it wasn't an issue." Musician Eos Chater worked as Benedict Cumberbatch's violin coach for this episode. Although Chater's playing is on the actual soundtrack, Cumberbatch was required to appear to be an expert violinist. To achieve this, Chater was positioned on set so that she could synchronise her playing with his. She says, "On set I need to see him; to play when he lifts his violin and stop when he stops. And he needs to see me; to copy my bowings, to ghost what I'm doing. In one scene I have to stand outside on two boxes on a scissor lift, watching him while he watches me out of the window."
+[Broadcast and reception] "A Scandal in Belgravia" was first broadcast on BBC One on Sunday, 1 January 2012. It received preliminary overnight figures of 8.75 million viewers, with a 30.9 per cent audience share. It is Sherlock's highest rated episode since the show's first episode, "A Study in Pink", which attracted 7.5 million. The episode won BBC One the timeslot, having drawn more viewers than Harry Potter and the Half-Blood Prince on ITV1. When consolidated final ratings are factored in, the episode saw an increase of almost two million viewers, totalling 10.663 million viewers, making it the fifth most viewed programme for the week. "A Scandal in Belgravia" also saw significant viewings on the catch-up internet television service BBC iPlayer, with more than 800,000 seeing the episode within 24 hours after its original broadcast, eventually becoming the most-watched programme of 2012 in May with over 2.5 million requests. The episode was later repeated on the digital channel BBC Three on Saturday, 7 January 2012 from 7 pm, which did not censor the nude scenes despite being shown pre-watershed. The repeat was seen by 883,000 viewers. The British Board of Film Classification has awarded the episode a 12 certificate for "moderate sex references, violence and threat". The episode, which is accompanied by an audio commentary by Cumberbatch, Moffat, Gatiss, Pulver and Vertue, was released with the remainder of the second series in the UK on DVD and Blu-ray on 23 January 2012. In the United States, the episode premiered on the Public Broadcasting Service (PBS) on 6 May 2012 as part of Masterpiece Mystery!. It was seen live by 3.2 million viewers, and was considered a success by the service as it doubled their average primetime ratings. Critical reception Critical reaction to the episode was largely positive. The Independent's Neela Debnath observed a "constant stream of comedy that ran alongside the suspense", while Tom Sutcliffe, also for The Independent, commends Moffat's "real poignancy" and how "barely a minute passes without a line that's worth making a note of". Sutcliffe continues to praise "lovely performances and great writing", and that "the whole thing is filmed with such invention". Sarah Crompton, for The Telegraph, asserts that "Cumberbatch is utterly credible as a man who lives entirely in his cerebellum with little regard for the world outside, make Sherlock the perfect depiction of Holmes for our times". Radio Times writer David Brown agreed, stating that adaptation has the "heartbeat of Conan Doyle's original". Crompton further argues that the frequent allusions to the Holmes canon shows how Sherlock "revels in its own cleverness". Chris Harvey, also for The Telegraph, wrote, "We'll be lucky if there's a drama that's as much fun all year, so explaining that it was good, seems somehow superfluous". The Guardian's Sam Wollaston says that Conan Doyle's original story has "been Moffatised as well as modernised. He starts off parallel but then wanders off left and right, into international terrorism and CIA plots and complicated conspiracy theories. It's very complicated, I find at times." Wollaston later called it "a bit of a confusing mish-mash". In its otherwise positive review, Digital Spy's Morgan Jeffery suggests that "the resolution to the 'Scandal' case is perhaps a little too far-fetched". Controversy Following the episode's broadcast, the tabloid Daily Mail reported that Irene Adler's nude scene early in the episode had been met with disapproval from some viewers; The Guardian claimed that there was "no mystery about the Mail's reaction", observing that the paper was "so outraged by the scenes" that it illustrated its story "with a big blow-up picture on page 9". Following the broadcast, a BBC spokesman said: "We're delighted with the critical and audience response to the first episode, which has been extremely positive, and have received no complaints at this stage." As of 4 January 2012, the BBC had received 102 complaints "relating to inappropriate scenes broadcast before the Watershed", although "it could not tell when the complaints had been made, or how many came before and after the Daily Mail story". The regulator Ofcom also received 20 complaints about the episode, but decided it did not warrant investigation. Jane Clare Jones, a doctoral student of feminist ethics writing in her blog on The Guardian's website, criticised episode writer Steven Moffat's representation of Irene Adler, arguing that her sexualisation was a regressive step. She writes, "While Conan Doyle's original is hardly an exemplar of gender evolution, you've got to worry when a woman comes off worse in 2012 than in 1891." Jones argues that while Conan Doyle's Adler was a "proto-feminist", Moffat undermined "her acumen and agency... Not-so-subtly channelling the spirit of the predatory femme fatal [sic], Adler's power became, in Moffat's hands, less a matter of brains, and more a matter of knowing 'what men like' and how to give it to them... Her masterminding of a cunning criminal plan was, it was revealed late in the day, not her own doing, but dependent on the advice of Holmes's arch nemesis, James Moriarty." However, Laura Pledger of Radio Times listed Adler as a strong female television character, writing, "Not since Scarlett O'Hara has a woman employed quite so many feminine wiles in pursuit of her ultimate goal – and with such chutzpah it feels churlish to criticise." Moffat rejected any suggestion that he or Conan Doyle's creation harboured sexist views, labelling the allegation "deeply offensive", and misguided in that the critics had assumed that he was "presenting the characters as the way it is and the way it ought to be". But, he says, both Adler and Sherlock "are clearly defined as
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/tiers/r3_00.out.json as a JSON list with one object per article, each with the keys "id" (the number after "ARTICLE id"), "kind", "year", "holmes_appears", "sources", "other_sources". Write nothing else to that file.

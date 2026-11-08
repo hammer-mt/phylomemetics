@@ -1,0 +1,222 @@
+You are helping to build a research corpus of film remakes from Wikipedia. Each item below gives the title of a film's Wikipedia page (PAGE), ONE sentence from the opening of that page, and the OTHER FILMS that sentence links to. For each other film, record what THE SENTENCE SAYS about PAGE and that film. You are not asked what you know about the films.
+
+For each other film give:
+- "relation":
+    "page_remakes_other"   the sentence says PAGE is a remake of the other film;
+    "other_remakes_page"   the sentence says the other film is a remake of PAGE (for example "it was remade in Telugu as ...");
+    "none"                 anything else.
+- "wording":
+    "firm"    the sentence states the remake plainly as a fact: "is a remake of", "an official remake of", "was remade as", "was remade in Hindi as";
+    "loose"   the sentence weakens or hedges it: "loosely", "partly", "unofficial", "uncredited", "inspired by", "based on the idea of", "reported to be", "said to be", "has been described as", "considered", "similar to", "reboot", "reimagining", "re-adaptation";
+    "" when the relation is "none".
+
+Rules.
+- Use only what the sentence says. Do not use your own knowledge of the films, and do not guess from titles or years.
+- If the sentence lists several films as remakes of PAGE, each of them is "other_remakes_page".
+- If the sentence says PAGE is a remake of X, and that X is itself a remake of or based on Y, then X is "page_remakes_other" and Y is "none", unless the sentence also says PAGE is a remake of Y.
+- "none" covers: a sequel, prequel or spin-off; a film that is only compared or mentioned; another remake of the same original (a sibling); a film based on the same novel, play or true story that the sentence does not call a remake; a film whose remake status the sentence denies; a dubbed version; a film shot at the same time in another language ("simultaneously", "bilingual").
+- If you cannot tell which film the word "remake" or "remade" applies to, answer "none".
+
+The items follow.
+
+### ITEM 2a835c0dfbe71e44
+PAGE: Bride of the Regiment
+SENTENCE: It was later remade by 20th Century-Fox as That Lady in Ermine (1948) starring Betty Grable and Douglas Fairbanks Jr.
+OTHER FILMS: ["That Lady in Ermine"]
+
+### ITEM 87f7575c2a61898e
+PAGE: Cheluvina Chittara
+SENTENCE: This film is a remake of Tamil film Kaadhal.
+OTHER FILMS: ["Kaadhal"]
+
+### ITEM 8c11d0843eafae81
+PAGE: Chirodini Tumi Je Amar 2
+SENTENCE: It is a remake of the 2012 Tamil film Vazhakku Enn 18/9 directed by Balaji Sakthivel and serves as a spiritual sequel to Chirodini Tumi Je Amar which was a remake of another Tamil movie Kaadhal.
+OTHER FILMS: ["Vazhakku Enn 18/9", "Chirodini Tumi Je Amar", "Kaadhal"]
+
+### ITEM e1c296bb06069b38
+PAGE: Veeram (2014 film)
+SENTENCE: It was remade in Telugu as Katamarayudu (2017), in Kannada as Odeya (2019), and in Hindi as Kisi Ka Bhai Kisi Ki Jaan (2023).
+OTHER FILMS: ["Katamarayudu"]
+
+### ITEM 2e3fae4f460e01fa
+PAGE: Guru Sishyan (1988 film)
+SENTENCE: A remake of the Hindi film Insaf Ki Pukar (1987), it stars Rajinikanth, Prabhu, Seetha and Gautami with Pandiyan, Cho Ramaswamy, Ravichandran, Radha Ravi, Senthamarai, Vinu Chakravarthy and Manorama in supporting roles.
+OTHER FILMS: ["Insaf Ki Pukar"]
+
+### ITEM afaa68768d272504
+PAGE: M. Kumaran son of Mahalakshmi
+SENTENCE: It is a remake of the Telugu film Amma Nanna O Tamila Ammayi, also starring Asin in her reprised role from the original version.
+OTHER FILMS: ["Amma Nanna O Tamila Ammayi"]
+
+### ITEM ccff41caed219428
+PAGE: Udaharanam Sujatha
+SENTENCE: It is a remake of the 2015 Hindi-language film Nil Battey Sannata (The New Classmate), although, the theme of the film has appeared in many films like, Back to School.
+OTHER FILMS: ["Back to School"]
+
+### ITEM 3a4b5806332b6f8f
+PAGE: Buk Fatey To Mukh Foteyna
+SENTENCE: The film is remake of 2010 Telugu-language film Brindavanam.
+OTHER FILMS: ["Brindavanam (2010 film)"]
+
+### ITEM 27c307fa244cdb33
+PAGE: Alaipayuthey (film)
+SENTENCE: Alaipayuthey was later remade and released in Hindi in 2002, as Saathiya, directed by Shaad Ali.
+OTHER FILMS: ["Saathiya (film)"]
+
+### ITEM 43b4a331368f5e2b
+PAGE: Aaha Kalyanam
+SENTENCE: A remake of Maneesh Sharma's 2010 Hindi film, Band Baaja Baaraat, the film stars Nani, Vaani Kapoor, and Simran.
+OTHER FILMS: ["Band Baaja Baaraat"]
+
+### ITEM 74ae2ed7f7088351
+PAGE: Illarikam
+SENTENCE: It was again remade in Hindi as Ghar Jamai (1992).
+OTHER FILMS: ["Ghar Jamai (1992 film)"]
+
+### ITEM aea619cd0c89e0c9
+PAGE: Constable Koothuru
+SENTENCE: It is a remake of the 1962 Tamil film Policekaran Magal, itself based on a play of the same name.
+OTHER FILMS: ["Policekaran Magal"]
+
+### ITEM aa9c91e99c1e5176
+PAGE: Sharapanjara
+SENTENCE: The film was later remade in Telugu as Krishnaveni (1974) starring Vanisri.
+OTHER FILMS: ["Krishnaveni (film)"]
+
+### ITEM 441cc4418e8b9440
+PAGE: Aval Varuvala
+SENTENCE: It is the Tamil remake of the 1997 Telugu film Pelli.
+OTHER FILMS: ["Pelli (film)"]
+
+### ITEM 39f35bd6759ac822
+PAGE: Policekaran Magal
+SENTENCE: It was later remade in Telugu as Constable Koothuru (1963) and in Malayalam as Vyaamoham (1978).
+OTHER FILMS: ["Constable Koothuru"]
+
+### ITEM c6ceb4e790701060
+PAGE: Chella Pillai (1955 film)
+SENTENCE: The film was remade in Telugu as Vadina (1955).
+OTHER FILMS: ["Vadina"]
+
+### ITEM 71e947fbfe189780
+PAGE: Irudhi Suttru
+SENTENCE: The film was later remade by Kongara herself in Telugu language as Guru (2017) with several members of the cast reprising their respective roles and Venkatesh reprising Madhavan's role.
+OTHER FILMS: ["Guru (2017 film)"]
+
+### ITEM 5badad03116517b0
+PAGE: Apthamitra
+SENTENCE: The plot changes from the original were retained when P.Vasu remade this movie in Tamil as Chandramukhi (2005).
+OTHER FILMS: ["Chandramukhi"]
+
+### ITEM ac90123bf87a9915
+PAGE: Aaj Ka Daur
+SENTENCE: The film stars Jackie Shroff and Padmini Kolhapure, and it is a remake of the 1981 Tamil film Kudumbam Oru Kadambam.
+OTHER FILMS: ["Kudumbam Oru Kadambam"]
+
+### ITEM d248eec4949bccd9
+PAGE: Kiladi Kitty
+SENTENCE: The film is a remake of 2008 Telugu film Blade Babji starring Allari Naresh and Sayali Bhagat in the lead roles, which itself was a remake of Hollywood movie Blue Streak.
+OTHER FILMS: ["Blue Streak (film)"]
+
+### ITEM ccbbd5e9d35219bf
+PAGE: Kaadhal
+SENTENCE: It was remade in Kannada as Cheluvina Chittara in 2007, in Bengali as Chirodini Tumi Je Amar in 2008, in Bangladesh as Nogor Mastan in 2015, in Marathi as Ved Laavi Jeeva in 2010, in Nepali as Manjari in 2013 and in Punjabi as Ramta Jogi in 2015.
+OTHER FILMS: ["Cheluvina Chittara", "Chirodini Tumi Je Amar"]
+
+### ITEM 4adfa50b8bce5d22
+PAGE: Khushi (2003 Hindi film)
+SENTENCE: It is a remake of the director's own 2000 Tamil film Kushi. The film stars Fardeen Khan and Kareena Kapoor.
+OTHER FILMS: ["Kushi (2000 film)"]
+
+### ITEM 60dd2f89e2a1a3c3
+PAGE: Mappillai (2011 film)
+SENTENCE: The film is a remake of the 1989 film of the same name, which itself was based on the Telugu film Attaku Yamudu Ammayiki Mogudu.
+OTHER FILMS: ["Mappillai (1989 film)"]
+
+### ITEM dabe1851680f9876
+PAGE: Kirataka
+SENTENCE: It is a remake of Tamil film Kalavani (2010).
+OTHER FILMS: ["Kalavani"]
+
+### ITEM afcf524d2b7a68c2
+PAGE: Kid Galahad (1937 film)
+SENTENCE: It was remade in 1941, this time in a circus setting, as The Wagons Roll at Night, also with Bogart, and in 1962 as an Elvis Presley musical.
+OTHER FILMS: ["The Wagons Roll at Night", "Kid Galahad"]
+
+### ITEM fa19f3d86d1145c1
+PAGE: Dhool
+SENTENCE: It was remade in Telugu as Veede (2003) with Sayaji, Sen and Pasupathy reprising their roles, in Punjabi as The Lion of Punjab (2011) and in Sinhala as Ranja (2014).
+OTHER FILMS: ["Veede"]
+
+### ITEM b6d94cd97f5f90e3
+PAGE: Namak Haraam
+SENTENCE: The film was remade in Tamil as Unakkaga Naan.
+OTHER FILMS: ["Unakkaga Naan"]
+
+### ITEM bcb283859b626c02
+PAGE: Bahurani (1963 film)
+SENTENCE: It is a remake of the Telugu movie Ardhangi, which was based on Maddipatla Suri's Telugu translation of the Bengali novel Swayamsiddha written by Manilal Banerjee.
+OTHER FILMS: ["Ardhangi"]
+
+### ITEM 903bd51cce44304c
+PAGE: Fist of Legend
+SENTENCE: It is a remake of the 1972 martial arts film Fist of Fury starring Bruce Lee.
+OTHER FILMS: ["Fist of Fury"]
+
+### ITEM 04eb4b87624df96c
+PAGE: Manithan (2016 film)
+SENTENCE: A remake of the Hindi film Jolly LLB (2013), it revolves around a junior lawyer who, after a period of struggle and ridicule among colleagues, fights a case against a powerful supreme court lawyer, hoping to further his career.
+OTHER FILMS: ["Jolly LLB"]
+
+### ITEM e44fcabc80e0a212
+PAGE: Kothigalu Saar Kothigalu
+SENTENCE: The film was remade in Telugu as Sandade Sandadi (2002), in Hindi as Shaadi No. 1 (2005) and in Bangladeshi Bengali as Tomakei Khujchi (2008).
+OTHER FILMS: ["Sandade Sandadi"]
+
+### ITEM d46423ee4149dbe6
+PAGE: Thayamma
+SENTENCE: It is a remake of the Malayalam film Thoovalsparsham which was inspired by the 1987 American film Three Men and a Baby, which itself was based on the 1985 French film Three Men and a Cradle.
+OTHER FILMS: ["Three Men and a Baby"]
+
+### ITEM df030c12a0efeeae
+PAGE: Deadly Soma
+SENTENCE: The film, upon release, received a positive response from both critics and audience and was subsequently remade in Telugu as Nandeeswarudu (2012).
+OTHER FILMS: ["Nandeeswarudu"]
+
+### ITEM e946384f4905cf21
+PAGE: Nayakan
+SENTENCE: Ratnam was initially approached to remake the Hindi film Pagla Kahin Ka (1970) for Srinivasan and Haasan, but refused.
+OTHER FILMS: ["Pagla Kahin Ka"]
+
+### ITEM 498ad36e4946af2d
+PAGE: Dor (2006 film)
+SENTENCE: The film is an official remake of the Malayalam film, Perumazhakkalam (2004) and was well received by the critics after its release on 22 September 2006.
+OTHER FILMS: ["Perumazhakkalam"]
+
+### ITEM 2298052410a0375f
+PAGE: The Plainsman
+SENTENCE: A remake using the same title was released in 1966.
+OTHER FILMS: ["The Plainsman (1966 film)"]
+
+### ITEM 37917d2e90e4a733
+PAGE: Ajith (film)
+SENTENCE: It is a remake of the Tamil film Paiyaa.
+OTHER FILMS: ["Paiyaa"]
+
+### ITEM 815985b6744e8912
+PAGE: Vietnam Colony (1994 film)
+SENTENCE: It is a remake of the 1992 Malayalam film of the same name which itself was based on the 1983 British film Local Hero.
+OTHER FILMS: ["Vietnam Colony"]
+
+### ITEM 5030c773ae13cf9b
+PAGE: Drishyam
+SENTENCE: Drishyam has been remade into several languages including four regional languages which were Drishya (2014) in Kannada, Drushyam (2014) in Telugu, Papanasam (2015) in Tamil and Drishyam (2015) in Hindi.
+OTHER FILMS: ["Drishya", "Drushyam", "Papanasam (film)"]
+
+### ITEM efafa8ce8046bab5
+PAGE: Singham (2011 film)
+SENTENCE: A remake of the 2010 Tamil film Singam by Hari, the film stars Ajay Devgn as the titular character Bajirao, an honest police officer, while Kajal Aggarwal, who returns to Hindi films in her first full–fledged role, and Prakash Raj, who reprises his role from the original film, appear as leads.
+OTHER FILMS: ["Singam"]
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/remakes/statements/r2_021.out.json as a JSON list with one object per item: {"item": "<the code after ITEM>", "links": [{"film": "<title exactly as listed>", "relation": "...", "wording": "..."}]} with one entry in "links" for every film listed under OTHER FILMS. Write nothing else to that file.

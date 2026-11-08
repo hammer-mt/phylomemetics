@@ -1,0 +1,222 @@
+You are helping to build a research corpus of film remakes from Wikipedia. Each item below gives the title of a film's Wikipedia page (PAGE), ONE sentence from the opening of that page, and the OTHER FILMS that sentence links to. For each other film, record what THE SENTENCE SAYS about PAGE and that film. You are not asked what you know about the films.
+
+For each other film give:
+- "relation":
+    "page_remakes_other"   the sentence says PAGE is a remake of the other film;
+    "other_remakes_page"   the sentence says the other film is a remake of PAGE (for example "it was remade in Telugu as ...");
+    "none"                 anything else.
+- "wording":
+    "firm"    the sentence states the remake plainly as a fact: "is a remake of", "an official remake of", "was remade as", "was remade in Hindi as";
+    "loose"   the sentence weakens or hedges it: "loosely", "partly", "unofficial", "uncredited", "inspired by", "based on the idea of", "reported to be", "said to be", "has been described as", "considered", "similar to", "reboot", "reimagining", "re-adaptation";
+    "" when the relation is "none".
+
+Rules.
+- Use only what the sentence says. Do not use your own knowledge of the films, and do not guess from titles or years.
+- If the sentence lists several films as remakes of PAGE, each of them is "other_remakes_page".
+- If the sentence says PAGE is a remake of X, and that X is itself a remake of or based on Y, then X is "page_remakes_other" and Y is "none", unless the sentence also says PAGE is a remake of Y.
+- "none" covers: a sequel, prequel or spin-off; a film that is only compared or mentioned; another remake of the same original (a sibling); a film based on the same novel, play or true story that the sentence does not call a remake; a film whose remake status the sentence denies; a dubbed version; a film shot at the same time in another language ("simultaneously", "bilingual").
+- If you cannot tell which film the word "remake" or "remade" applies to, answer "none".
+
+The items follow.
+
+### ITEM 37eab36859f16e22
+PAGE: Bhalobasa Bhalobasa (2008 film)
+SENTENCE: This film is the remake of the Telugu film Bommarillu directed and co-written by Bhaskar, starring Siddharth, Genelia D'Souza and Prakash Raj.
+OTHER FILMS: ["Bommarillu"]
+
+### ITEM c030f0bb4aa8d7c8
+PAGE: Kanteerava
+SENTENCE: It is a remake of the Telugu film Simhadri (2003).
+OTHER FILMS: ["Simhadri (2003 film)"]
+
+### ITEM f02ec51cc317e6fe
+PAGE: Thee (1981 film)
+SENTENCE: It is a remake of the 1975 Hindi film Deewaar, written by Salim–Javed.
+OTHER FILMS: ["Deewaar"]
+
+### ITEM 7053b2274396e63b
+PAGE: Thithikudhe
+SENTENCE: It is the Tamil remake of the Telugu Manasantha Nuvve (2001).
+OTHER FILMS: ["Manasantha Nuvve"]
+
+### ITEM cc93825fb537c12f
+PAGE: Good Boy, Bad Boy (2007 film)
+SENTENCE: It is a remake of the 1992 film Class Act.
+OTHER FILMS: ["Class Act"]
+
+### ITEM d3a5881c0d5e6e29
+PAGE: It's a Date
+SENTENCE: Distributed by Universal Pictures, It's a Date was remade in 1950 as Nancy Goes to Rio.
+OTHER FILMS: ["Nancy Goes to Rio"]
+
+### ITEM 3a5af1487327b27b
+PAGE: Maanja Velu
+SENTENCE: It is a remake of the 2007 Telugu film Lakshyam.
+OTHER FILMS: ["Lakshyam (2007 film)"]
+
+### ITEM ed42dc8c037fb932
+PAGE: Hudugaru
+SENTENCE: The film, which is a remake of the successful 2009 Tamil film Naadodigal, was produced by Parvathamma Rajkumar, with [[V.
+OTHER FILMS: ["Naadodigal"]
+
+### ITEM 770bf93839d45aff
+PAGE: Kalakar
+SENTENCE: It is a remake of the 1982 Tamil Film Payanangal Mudivathillai.
+OTHER FILMS: ["Payanangal Mudivathillai"]
+
+### ITEM 6beaa133f70f1151
+PAGE: Pasumpon
+SENTENCE: The film was remade in Telugu as Pedababu.
+OTHER FILMS: ["Pedababu"]
+
+### ITEM 4625d18176e72e7f
+PAGE: They Made Me a Criminal
+SENTENCE: It is a remake of the film The Life of Jimmy Dolan (1933).
+OTHER FILMS: ["The Life of Jimmy Dolan"]
+
+### ITEM 1f217eb9f0e8935f
+PAGE: Saamy
+SENTENCE: The film was remade in Telugu as Lakshmi Narasimha (2004), in Kannada as Ayya (2005), in Hindi as Policegiri (2013), and in Bengali as Barood.
+OTHER FILMS: ["Ayya (2005 Kannada film)", "Policegiri"]
+
+### ITEM 84de2e56781b8426
+PAGE: Premi
+SENTENCE: This was Chandana Sharma's debut movie It is a remake of the Telugu-language blockbuster film Nee Sneham.
+OTHER FILMS: ["Nee Sneham"]
+
+### ITEM 3f59ade2b966f221
+PAGE: Spadikam
+SENTENCE: It was remade in Telugu as Vajram, Tamil as Veerappu and in Kannada as ''[[Mr.
+OTHER FILMS: ["Veerappu"]
+
+### ITEM 5b0f425f27ad2443
+PAGE: Amar Akbar Anthony
+SENTENCE: It was later remade in Tamil as Shankar Salim Simon (1978), in Telugu as Ram Robert Rahim (1980), and in Malayalam as John Jaffer Janardhanan (1982).
+OTHER FILMS: ["Shankar Salim Simon"]
+
+### ITEM 806666b77b8cfc66
+PAGE: Kudumbam Oru Kadambam
+SENTENCE: The film was remade in Kannada as Ananda Sagara (1983), in Telugu as (1984), in Hindi as Aaj Ka Daur (1985), and in Malayalam as Oru Sandesam Koodi (1985).
+OTHER FILMS: ["Aaj Ka Daur"]
+
+### ITEM dcf104b474170e24
+PAGE: Phool Aur Paththar
+SENTENCE: The film was remade in Tamil as Oli Vilakku with [[M.
+OTHER FILMS: ["Oli Vilakku"]
+
+### ITEM 157df6b7fbf31692
+PAGE: Bhagam Bhag (2006 film)
+SENTENCE: The film was remade in Telugu as Brahmanandam Drama Company (2008).
+OTHER FILMS: ["Brahmanandam Drama Company"]
+
+### ITEM 0f877b5995c4e102
+PAGE: Kaakha Kaakha
+SENTENCE: The film was remade in Telugu as Gharshana (2004) by Menon, in Hindi as Force and in Kannada as Dandam Dashagunam (both 2011).
+OTHER FILMS: ["Gharshana", "Force (2011 film)", "Dandam Dashagunam"]
+
+### ITEM 63acf248828e4a90
+PAGE: Yaar Nee?
+SENTENCE: It is a remake of the Hindi film Woh Kaun Thi? (1964).
+OTHER FILMS: ["Woh Kaun Thi?"]
+
+### ITEM 29c8d6d5a31e7d33
+PAGE: Panakkara Kudumbam
+SENTENCE: The film was remade in Hindi in 1970 as Humjoli, in Kannada in 1978 as Bhale Huduga, and in Telugu in 1984 as Intiguttu.
+OTHER FILMS: ["Humjoli"]
+
+### ITEM 7fd306bae15b1c18
+PAGE: Madana (film)
+SENTENCE: A remake of the 2004 Tamil film Manmadhan, it stars Aditya in the title role with Samiksha, Charmila, Shobaraj, Ramesh Bhat and Bullet Prakash playing supporting roles.
+OTHER FILMS: ["Manmadhan (film)"]
+
+### ITEM 2412715406b9e63a
+PAGE: Velli Thirai
+SENTENCE: It is the Tamil remake of the 2005 Malayalam film Udayananu Tharam.
+OTHER FILMS: ["Udayananu Tharam"]
+
+### ITEM 7ea3754d26db4cf0
+PAGE: Pizza (2012 film)
+SENTENCE: It was remade in Kannada as Whistle (2013), in Hindi under the same title (2014), and in Bengali as Golpo Holeo Shotti (2014).
+OTHER FILMS: ["Pizza (2014 film)", "Golpo Holeo Shotti"]
+
+### ITEM 8fc316e63427eab1
+PAGE: Gora Aur Kala
+SENTENCE: The movie is a remake of the 1971 Tamil movie Neerum Neruppum, which was based on the 1844 French novella The Corsican Brothers, by Alexandre Dumas.
+OTHER FILMS: ["Neerum Neruppum"]
+
+### ITEM 5481a61b781066c8
+PAGE: Irattai Roja
+SENTENCE: It is a remake of the 1994 Telugu film Subhalagnam which was based on the American film Indecent Proposal (1993).
+OTHER FILMS: ["Indecent Proposal"]
+
+### ITEM b9d9e5ced2a5c4b9
+PAGE: Malini 22 Palayamkottai
+SENTENCE: A remake of the Malayalam film 22 Female Kottayam (2012) by Aashiq Abu, the film features musical score by Arvind-Shankar.
+OTHER FILMS: ["22 Female Kottayam"]
+
+### ITEM 47a6dfacc678c8e2
+PAGE: Bahar (film)
+SENTENCE: It was a remake of the 1949 Tamil film Vazhkai.
+OTHER FILMS: ["Vaazhkai (1949 film)"]
+
+### ITEM dbe7e8b63da83295
+PAGE: Three Faces East (1930 film)
+SENTENCE: A later remake in 1940 starred Boris Karloff and Margaret Lindsay was titled British Intelligence.
+OTHER FILMS: ["British Intelligence (film)"]
+
+### ITEM a9b3469046318795
+PAGE: Baaghi (2000 film)
+SENTENCE: It has been described as a remake of Robert De Niro's A Bronx Tale (1993).
+OTHER FILMS: ["A Bronx Tale"]
+
+### ITEM 826e30dd6eb2e34e
+PAGE: Vaseegara (film)
+SENTENCE: It is the Tamil remake of the 2001 Telugu film, Nuvvu Naaku Nachav.
+OTHER FILMS: ["Nuvvu Naaku Nachav"]
+
+### ITEM f6806c064630b3c9
+PAGE: Five Came Back
+SENTENCE: In 1948, Five Came Back was remade (differing only in minor details) as the Mexican film Los que volvieron and again in 1956 by producer-director Farrow as Back from Eternity, starring Robert Ryan, Anita Ekberg and Rod Steiger.
+OTHER FILMS: ["Back from Eternity"]
+
+### ITEM d064ef8a99113720
+PAGE: Mallikarjuna (film)
+SENTENCE: The film is remake of the 2001 Tamil film Thavasi starring Vijaykanth and Soundarya.
+OTHER FILMS: ["Thavasi"]
+
+### ITEM 3c9710d643883ef2
+PAGE: Bodyguard (2009 film)
+SENTENCE: It has been remade in four other Indian languages: in Tamil as Kaavalan, Hindi, Kannada and Telugu.
+OTHER FILMS: ["Kaavalan", "Bodyguard (2011 Hindi film)", "Bodyguard (2012 film)"]
+
+### ITEM b016c3dea6162237
+PAGE: A Wednesday!
+SENTENCE: It went on to be remade in Tamil and Telugu simultaneously as Unnaipol Oruvan and Eenadu (both 2009), and as an English-language Sri Lankan film A Common Man (2013).
+OTHER FILMS: ["Unnaipol Oruvan (2009 film)"]
+
+### ITEM e8787498fcd0639b
+PAGE: Pyaasa (1957 film)
+SENTENCE: It was remade into the Telugu film Mallepoovu in 1978.
+OTHER FILMS: ["Mallepoovu"]
+
+### ITEM 0ca07c5c0ffd2378
+PAGE: The Killer (2006 film)
+SENTENCE: It is an unofficial remake of the 2004 American film Collateral.
+OTHER FILMS: ["Collateral (film)"]
+
+### ITEM 388dd2d82d6b20eb
+PAGE: The Unholy Three (1925 film)
+SENTENCE: The film was remade in 1930 as a talkie directed by Jack Conway.
+OTHER FILMS: ["The Unholy Three (1930 film)"]
+
+### ITEM efa7ffe3428c4a8e
+PAGE: Red Dust (1932 film)
+SENTENCE: More than 20 years later, Gable starred in a remake, Mogambo (1953), with Ava Gardner starring in a variation on the role Harlow played and Grace Kelly playing a part similar to one portrayed by Astor in Red Dust.
+OTHER FILMS: ["Mogambo"]
+
+### ITEM 93b30e5e82b968cc
+PAGE: Khatta Meetha (2010 film)
+SENTENCE: A remake of Priyadarshan's 1988 film Vellanakalude Nadu, originally scripted by Sreenivasan, the film starred Akshay Kumar in his sixth collaboration with Priyadarshan after Hera Pheri (2000), Garam Masala (2005), Bhagam Bhag (2006), Bhool Bhulaiyaa (2007), and De Dana Dan (2009).
+OTHER FILMS: ["Hera Pheri (2000 film)", "Garam Masala (2005 film)", "Bhool Bhulaiyaa", "De Dana Dan"]
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/remakes/statements/r1_002.out.json as a JSON list with one object per item: {"item": "<the code after ITEM>", "links": [{"film": "<title exactly as listed>", "relation": "...", "wording": "..."}]} with one entry in "links" for every film listed under OTHER FILMS. Write nothing else to that file.

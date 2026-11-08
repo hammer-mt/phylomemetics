@@ -1,0 +1,222 @@
+You are helping to build a research corpus of film remakes from Wikipedia. Each item below gives the title of a film's Wikipedia page (PAGE), ONE sentence from the opening of that page, and the OTHER FILMS that sentence links to. For each other film, record what THE SENTENCE SAYS about PAGE and that film. You are not asked what you know about the films.
+
+For each other film give:
+- "relation":
+    "page_remakes_other"   the sentence says PAGE is a remake of the other film;
+    "other_remakes_page"   the sentence says the other film is a remake of PAGE (for example "it was remade in Telugu as ...");
+    "none"                 anything else.
+- "wording":
+    "firm"    the sentence states the remake plainly as a fact: "is a remake of", "an official remake of", "was remade as", "was remade in Hindi as";
+    "loose"   the sentence weakens or hedges it: "loosely", "partly", "unofficial", "uncredited", "inspired by", "based on the idea of", "reported to be", "said to be", "has been described as", "considered", "similar to", "reboot", "reimagining", "re-adaptation";
+    "" when the relation is "none".
+
+Rules.
+- Use only what the sentence says. Do not use your own knowledge of the films, and do not guess from titles or years.
+- If the sentence lists several films as remakes of PAGE, each of them is "other_remakes_page".
+- If the sentence says PAGE is a remake of X, and that X is itself a remake of or based on Y, then X is "page_remakes_other" and Y is "none", unless the sentence also says PAGE is a remake of Y.
+- "none" covers: a sequel, prequel or spin-off; a film that is only compared or mentioned; another remake of the same original (a sibling); a film based on the same novel, play or true story that the sentence does not call a remake; a film whose remake status the sentence denies; a dubbed version; a film shot at the same time in another language ("simultaneously", "bilingual").
+- If you cannot tell which film the word "remake" or "remade" applies to, answer "none".
+
+The items follow.
+
+### ITEM 0cb1ee1e40caea8a
+PAGE: Kushi Kushiga
+SENTENCE: The film is a remake of the 2003 Malayalam film Chronic Bachelor starring Mammootty.
+OTHER FILMS: ["Chronic Bachelor"]
+
+### ITEM 6bcb164ec8b59382
+PAGE: Choodalani Vundi
+SENTENCE: In 2003, it was remade into Hindi as Calcutta Mail.
+OTHER FILMS: ["Calcutta Mail"]
+
+### ITEM 26b7ac316a7909c6
+PAGE: Allari (film)
+SENTENCE: The film was remade in Tamil as Kurumbu. The film is loosely based on the 1987 American teen romantic drama film Some Kind of Wonderful.
+OTHER FILMS: ["Some Kind of Wonderful (film)"]
+
+### ITEM 4f8e50d4ac3b20b6
+PAGE: Drushyam
+SENTENCE: A remake of the 2013 Malayalam film Drishyam, the film stars Venkatesh, Meena, Esther Anil, and Kruthika Jayakumar.
+OTHER FILMS: ["Drishyam"]
+
+### ITEM 575886b31837b7e1
+PAGE: Itlu Sravani Subramanyam
+SENTENCE: It is remade in Tamil as Thavam (2007) and unofficially in Hindi as Anjaana Anjaani (2010).
+OTHER FILMS: ["Thavam", "Anjaana Anjaani"]
+
+### ITEM 4fa07274bdd98b27
+PAGE: Tata Birla Madhyalo Laila
+SENTENCE: The film is a remake of the 1996 Tamil movie Tata Birla and was a commercial success at the box office.
+OTHER FILMS: ["Tata Birla"]
+
+### ITEM 63c7c1a58ec88ba5
+PAGE: Yemaindi Ee Vela
+SENTENCE: It was later remade in Tamil as Ishtam (2012), with Aggarwal reprising her role and Vimal reprising Sandesh's role.
+OTHER FILMS: ["Ishtam (2012 film)"]
+
+### ITEM 2f4742cc85c78bdb
+PAGE: Maro Charitra
+SENTENCE: This film was also remade in Kannada as Love Story (2005) and remade into a 2010 Telugu film with the same title.
+OTHER FILMS: ["Maro Charitra (2010 film)"]
+
+### ITEM d46d1663a0d7de49
+PAGE: Yamaleela
+SENTENCE: The film was remade in Hindi as Taqdeerwala (1995) and in Tamil as Lucky Man (1995).
+OTHER FILMS: ["Taqdeerwala"]
+
+### ITEM 2a85f8a2eebff24b
+PAGE: Dharma Daata
+SENTENCE: It is a remake of the Tamil film Enga Oor Raja (1968), and was a box office success.
+OTHER FILMS: ["Enga Oor Raja"]
+
+### ITEM 20943371355cf9f1
+PAGE: Dongodu
+SENTENCE: This is a remake of the Malayalam film Meesa Madhavan (2002).
+OTHER FILMS: ["Meesa Madhavan"]
+
+### ITEM 6360bc94904f9cf5
+PAGE: Ravoyi Chandamama
+SENTENCE: The film is loosely based on the 1957 American film An Affair to Remember, which in turn was a remake of 1939 film Love Affair.
+OTHER FILMS: ["An Affair to Remember", "Love Affair (1939 film)"]
+
+### ITEM b94744aa6dd571fc
+PAGE: Cyrano Agency
+SENTENCE: The film was later remade into the Tamil-language as Idhu Enna Maayam.
+OTHER FILMS: ["Idhu Enna Maayam"]
+
+### ITEM 83d32ded4fd7ea38
+PAGE: Aithe
+SENTENCE: The film was remade in Tamil as Naam (2003) and in Malayalam as Wanted (2004).
+OTHER FILMS: ["Wanted (2004 film)"]
+
+### ITEM 4e0fb47c7baa27f3
+PAGE: R2B: Return to Base
+SENTENCE: It was directed by Kim Dong-won and is also a remake of Shin Sang-ok's 1964 film Red Scarf.
+OTHER FILMS: ["Red Scarf (film)"]
+
+### ITEM 06c5f036bbb2830f
+PAGE: Gopala Gopala (2015 film)
+SENTENCE: The film is a remake of the 2012 Hindi film OMG – Oh My God! which was itself based on the Gujarati stage play Kanji Viruddh Kanji which is in turn inspired from 2001 Australian film The Man Who Sued God.
+OTHER FILMS: ["The Man Who Sued God"]
+
+### ITEM 283e47234a8ebec1
+PAGE: Kshana Kshanam
+SENTENCE: Varma later remade Kshana Kshanam in Hindi as Daud, and produced road films such as Thiruda Thiruda, Anaganaga Oka Roju and Road.
+OTHER FILMS: ["Daud (film)", "Thiruda Thiruda", "Anaganaga Oka Roju"]
+
+### ITEM b554b2e7897a05e9
+PAGE: Sandade Sandadi
+SENTENCE: The film was a remake of the Kannada film Kothigalu Saar Kothigalu (2001).
+OTHER FILMS: ["Kothigalu Saar Kothigalu"]
+
+### ITEM 7b023b1d053b18df
+PAGE: Yonggary
+SENTENCE: Yonggary or Yongary may refer to: Yonggary (character), a South Korean kaiju (giant monster) Yongary, Monster from the Deep, a 1967 South Korean-Japanese kaiju film, introducing the character Yonggary (1999 film), a South Korean kaiju film by Kim Ki-duk, remake of the 1967 film
+OTHER FILMS: ["Yonggary (1999 film)"]
+
+### ITEM fdc736858acdda03
+PAGE: Bhagyalakshmi Bumper Draw
+SENTENCE: It is a remake of the Hindi film Malamaal Weekly (2006; an adaptation of the 1998 film Waking Ned).
+OTHER FILMS: ["Waking Ned"]
+
+### ITEM 942c61499a597ae4
+PAGE: Ju-on: The Grudge
+SENTENCE: It also spawned a franchise, an American remake, 2006 and 2009 sequels, a 2020 sidequel to the remake and a prequel television series entitled Ju-On: Origins, which premiered in 2020.
+OTHER FILMS: ["The Grudge", "The Grudge 2", "The Grudge 3"]
+
+### ITEM e7ec31e60e5f168e
+PAGE: Mayuri (film)
+SENTENCE: It was dubbed into Malayalam and Tamil as Mayoori, and remade as Naache Mayuri (1986) in Hindi.
+OTHER FILMS: ["Naache Mayuri"]
+
+### ITEM 952866698e2c4bc3
+PAGE: Balarama Krishnulu
+SENTENCE: The film is a remake of the Tamil movie Cheran Pandiyan (1991).
+OTHER FILMS: ["Cheran Pandiyan"]
+
+### ITEM 0297c2705cc48082
+PAGE: Jayam (2002 film)
+SENTENCE: It was remade in Tamil in 2003 under the same title by Mohan Raja, starring Ravi Mohan in his debut as a lead actor, earning him the moniker "Jayam Ravi," with Sadha and Gopichand reprising their roles.
+OTHER FILMS: ["Jayam (2003 film)"]
+
+### ITEM f9082ad849405f8d
+PAGE: Mallepoovu
+SENTENCE: It is remake of 1957 Hindi film Pyaasa produced and directed by Guru Dutt.
+OTHER FILMS: ["Pyaasa"]
+
+### ITEM ab08ca5173b6136d
+PAGE: Maro Charitra
+SENTENCE: Later in 1981, Balachander remade the film in Hindi as Ek Duuje Ke Liye with Kamal Haasan reprising his role.
+OTHER FILMS: ["Ek Duuje Ke Liye"]
+
+### ITEM 69e8a7c3777cc295
+PAGE: Hello Brother (1994 film)
+SENTENCE: In turn, Hello Brother spawned several of its own remakes, twice in Hindi as Judwaa (1997) and its reboot Judwaa 2 (2017) and in Kannada as Cheluva (1997).
+OTHER FILMS: ["Judwaa", "Judwaa 2", "Cheluva"]
+
+### ITEM cab82e8af8042943
+PAGE: King Kong vs. Godzilla
+SENTENCE: A heavily re-edited "Americanized" version of the film was released theatrically in the United States by Universal International Inc. on June 26, 1963 as Universal's first King Kong film, the second being King Kong Escapes on June 19, 1968, and the third being the second remake of the 1933 film on December 14, 2005.
+OTHER FILMS: ["King Kong Escapes", "King Kong (2005 film)"]
+
+### ITEM f408e5c6a8f3b265
+PAGE: Kurradu
+SENTENCE: It was a remake of Tamil language film Polladhavan.
+OTHER FILMS: ["Polladhavan (2007 film)"]
+
+### ITEM 360eb5f8a5c9df0b
+PAGE: Aada Paduchu
+SENTENCE: The film is a remake of the 1952 Tamil movie En Thangai (1952) which was earlier remade in Hindi in 1959 as Chhoti Bahen and in Kannada in 1967 as Onde Balliya Hoogalu.
+OTHER FILMS: ["En Thangai (1952 film)", "Chhoti Bahen"]
+
+### ITEM 6894c2ae6fd86d8a
+PAGE: Pavitra Bandham
+SENTENCE: Owing to its success, it was remade in six other languages - in Odia as Suhaag Sindura (1998), in Kannada as Mangalyam Tantunanena (1998), in Hindi as Hum Aapke Dil Mein Rehte Hain (1999), in Tamil as Priyamaanavale (2000) and in Bangladeshi as E Badhon Jabena Chhire (2000).
+OTHER FILMS: ["Hum Aapke Dil Mein Rehte Hain", "Priyamaanavale"]
+
+### ITEM 8f281845380177f2
+PAGE: Nee Jathaga Nenundali
+SENTENCE: It is an official remake of 2013 film Aashiqui 2, which was an adaptation of both the original 1937 version and the 1976 remake of A Star is Born films.{{Efn|The 1937 film is in the public domain and was based on the film What Price Hollywood? (1932), itself adapted from a story by [[Adela Rogers St.
+OTHER FILMS: ["Aashiqui 2", "A Star Is Born (1937 film)", "A Star Is Born (1976 film)", "What Price Hollywood?"]
+
+### ITEM 1df4d03fbd4606f2
+PAGE: Maaro (film)
+SENTENCE: Maaro was remade in Tamil as Sadhu Miranda, which ended up releasing first.
+OTHER FILMS: ["Sadhu Miranda"]
+
+### ITEM 949a10f6faf2403e
+PAGE: Kshemamga Velli Labhamga Randi
+SENTENCE: A remake of the Tamil film Viralukketha Veekkam (1999), it was released on 4 February 2000, and did well at the box office.
+OTHER FILMS: ["Viralukketha Veekkam"]
+
+### ITEM ccad16bcbc2b04a0
+PAGE: Aadanthe Ado Type
+SENTENCE: It is a remake of the 2002 Tamil film Mounam Pesiyadhe by Ameer Sultan, with Aryan Rajesh, Anita, Shivaji, and Sindhu replacing Suriya, Trisha, Nandha, and Neha Pendse, respectively, who originally played the roles.
+OTHER FILMS: ["Mounam Pesiyadhe"]
+
+### ITEM c95df2461c25f920
+PAGE: Navarathri (1966 film)
+SENTENCE: The film is a remake of a Tamil film of the same title (1964), and has Savitri reprising her role.
+OTHER FILMS: ["Navarathri (1964 film)"]
+
+### ITEM aa583b2dbd37d9b8
+PAGE: Varasudu
+SENTENCE: It is a remake of the Hindi film Phool Aur Kaante (1991) which is loosely based on the Malayalam film Parampara (1990).
+OTHER FILMS: ["Parampara (1990 film)"]
+
+### ITEM dbc59e4be2229db7
+PAGE: Anukokunda Oka Roju
+SENTENCE: It was later remade as Sunday (2008) in Hindi.
+OTHER FILMS: ["Sunday (2008 film)"]
+
+### ITEM ebe27fd6bda4b0df
+PAGE: Annadammula Anubandham
+SENTENCE: It is a remake of the Hindi film Yaadon Ki Baaraat (1973).
+OTHER FILMS: ["Yaadon Ki Baaraat"]
+
+### ITEM 727ccc37c259af2d
+PAGE: Nyayam Kavali
+SENTENCE: The film was remade in Hindi as Mujhe Insaaf Chahiye in 1983, in Kannada as Keralida Hennu in 1984, in Tamil as Vidhi in 1984 and in Malayalam as Thaalam Thettiya Tharattu (1983).
+OTHER FILMS: ["Mujhe Insaaf Chahiye"]
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/remakes/statements/r1_028.out.json as a JSON list with one object per item: {"item": "<the code after ITEM>", "links": [{"film": "<title exactly as listed>", "relation": "...", "wording": "..."}]} with one entry in "links" for every film listed under OTHER FILMS. Write nothing else to that file.

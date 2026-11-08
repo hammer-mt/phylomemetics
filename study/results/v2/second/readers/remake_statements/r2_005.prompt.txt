@@ -1,0 +1,222 @@
+You are helping to build a research corpus of film remakes from Wikipedia. Each item below gives the title of a film's Wikipedia page (PAGE), ONE sentence from the opening of that page, and the OTHER FILMS that sentence links to. For each other film, record what THE SENTENCE SAYS about PAGE and that film. You are not asked what you know about the films.
+
+For each other film give:
+- "relation":
+    "page_remakes_other"   the sentence says PAGE is a remake of the other film;
+    "other_remakes_page"   the sentence says the other film is a remake of PAGE (for example "it was remade in Telugu as ...");
+    "none"                 anything else.
+- "wording":
+    "firm"    the sentence states the remake plainly as a fact: "is a remake of", "an official remake of", "was remade as", "was remade in Hindi as";
+    "loose"   the sentence weakens or hedges it: "loosely", "partly", "unofficial", "uncredited", "inspired by", "based on the idea of", "reported to be", "said to be", "has been described as", "considered", "similar to", "reboot", "reimagining", "re-adaptation";
+    "" when the relation is "none".
+
+Rules.
+- Use only what the sentence says. Do not use your own knowledge of the films, and do not guess from titles or years.
+- If the sentence lists several films as remakes of PAGE, each of them is "other_remakes_page".
+- If the sentence says PAGE is a remake of X, and that X is itself a remake of or based on Y, then X is "page_remakes_other" and Y is "none", unless the sentence also says PAGE is a remake of Y.
+- "none" covers: a sequel, prequel or spin-off; a film that is only compared or mentioned; another remake of the same original (a sibling); a film based on the same novel, play or true story that the sentence does not call a remake; a film whose remake status the sentence denies; a dubbed version; a film shot at the same time in another language ("simultaneously", "bilingual").
+- If you cannot tell which film the word "remake" or "remade" applies to, answer "none".
+
+The items follow.
+
+### ITEM 93f2a44df8541284
+PAGE: Sword Master (film)
+SENTENCE: The film is a remake of the 1977 Shaw Brothers Studio Hong Kong film Death Duel, which starred Yee.
+OTHER FILMS: ["Death Duel"]
+
+### ITEM bf4ae27dab930306
+PAGE: Shaadi Ke Baad
+SENTENCE: The film is a remake of Telugu film Pelli Chesi Choodu (1952).
+OTHER FILMS: ["Pelli Chesi Choodu"]
+
+### ITEM c23e233ee9d8165f
+PAGE: Annamalai (film)
+SENTENCE: A remake of the 1987 Hindi film Khudgarz, itself based on Jeffrey Archer's 1979 novel Kane and Abel, it stars Rajinikanth, Khushbu and Sarath Babu with Radha Ravi, Nizhalgal Ravi and Manorama in supporting roles.
+OTHER FILMS: ["Khudgarz"]
+
+### ITEM 329828bbf895cb3e
+PAGE: Naseeb Apna Apna (1986 film)
+SENTENCE: It is a remake of the 1982 Tamil film Gopurangal Saivathillai.
+OTHER FILMS: ["Gopurangal Saivathillai"]
+
+### ITEM e7529bbe94d431c7
+PAGE: Tulsi (film)
+SENTENCE: The film is a remake of the 1993 Malayalam movie Akashadoothu, which was also earlier remade in Telugu as Mathru Devo Bhava and in Kannada as Karulina Koogu.
+OTHER FILMS: ["Karulina Koogu"]
+
+### ITEM fc8459979bca3c1d
+PAGE: Thoda Tum Badlo Thoda Hum
+SENTENCE: The film is a remake of Telugu film Anandam (2001).
+OTHER FILMS: ["Anandam"]
+
+### ITEM 44cebca5d179e788
+PAGE: Narasimham (film)
+SENTENCE: The film was remade in Telugu as Adhipathi (2001), starring Mohan Babu, Nagarjuna Akkineni, Preeti Jhangiani and Soundarya.
+OTHER FILMS: ["Adhipathi"]
+
+### ITEM 1d3c56288c98d4c6
+PAGE: Ittefaq (1969 film)
+SENTENCE: It is based on the 1965 American film Signpost to Murder (an adaptation of a 1962 play of the same name by Monte Doyle), which had earlier been remade into a Gujarati play Dhummas starring Sarita Joshi.
+OTHER FILMS: ["Signpost to Murder"]
+
+### ITEM f72d4302faf47c57
+PAGE: Kyon Ki (2005 film)
+SENTENCE: It is a remake of Priyadarshan's own 1986 Malayalam film Thalavattam (1986) which in turn was inspired by the 1975 film One Flew Over the Cuckoo's Nest an adaptation of Ken Kesey's 1962 novel of the same name.
+OTHER FILMS: ["One Flew Over the Cuckoo's Nest (film)"]
+
+### ITEM aadb5583989e7e60
+PAGE: Ziddi (1997 film)
+SENTENCE: This is the second time Vijayakanth reprised Sunny Deol's role after Ghayal (1990) remake titled Bharathan (1992).
+OTHER FILMS: ["Ghayal (1990 film)", "Bharathan (1992 film)"]
+
+### ITEM 8fea01780f0adaf8
+PAGE: Sansar (1951 film)
+SENTENCE: A remake of the 1950 Telugu film of the same name, it stars [[M.
+OTHER FILMS: ["Samsaram (1950 film)"]
+
+### ITEM 37fef2d12df9e061
+PAGE: Secret of the Blue Room
+SENTENCE: Universal later remade the film as The Missing Guest (1938) and Murder in the Blue Room (1944).
+OTHER FILMS: ["Murder in the Blue Room"]
+
+### ITEM 7777dfa80c0bc728
+PAGE: Siva (1989 Tamil film)
+SENTENCE: It is a remake of the 1977 Hindi film Khoon Pasina.
+OTHER FILMS: ["Khoon Pasina"]
+
+### ITEM 31522371c13a9649
+PAGE: Evano Oruvan
+SENTENCE: It is a remake of Kamat's Marathi film, Dombivli Fast, which is loosely based on the 1993 American film Falling Down.
+OTHER FILMS: ["Falling Down"]
+
+### ITEM 6631f76b2c020c52
+PAGE: Kali (2016 film)
+SENTENCE: It has since been remade in Kannada as Kidi and in Marathi as Circuitt.
+OTHER FILMS: ["Kidi (film)"]
+
+### ITEM 952cea4445b520ee
+PAGE: Dharmathin Thalaivan
+SENTENCE: It is a remake of the 1978 Hindi film Kasme Vaade.
+OTHER FILMS: ["Kasme Vaade"]
+
+### ITEM 2c93866c6ca6701a
+PAGE: Kongo (1932 film)
+SENTENCE: The film is also a remake of the 1928 silent film West of Zanzibar, which was based too on the 1926 play.
+OTHER FILMS: ["West of Zanzibar (1928 film)"]
+
+### ITEM b6e2708d6bba7cfa
+PAGE: West of Zanzibar (1928 film)
+SENTENCE: Walter Huston starred in the stage play and later played Phroso again in the 1932 sound film remake of the same story which was also called Kongo.
+OTHER FILMS: ["Kongo (1932 film)"]
+
+### ITEM 8907f7cbecc64b19
+PAGE: Billa (1980 film)
+SENTENCE: It was remade in 2007 in Tamil under the same title.
+OTHER FILMS: ["Billa (2007 film)"]
+
+### ITEM fd62f85fc43d91cc
+PAGE: The Mark of Zorro (1920 film)
+SENTENCE: The film has been remade twice, once in 1940 (starring Tyrone Power) and again in 1974 (starring Frank Langella).
+OTHER FILMS: ["The Mark of Zorro (1940 film)"]
+
+### ITEM ac3a5f4af36bc4cb
+PAGE: Malaiyoor Mambattiyan
+SENTENCE: In 2011, Thiagarajan remade the film starring his son Prashanth, titled as Mambattiyan.
+OTHER FILMS: ["Mambattiyan"]
+
+### ITEM e30c626a701dccab
+PAGE: Antha (film)
+SENTENCE: It was remade in Telugu as Antham Kadidi Aarambam (1981), in Tamil as Thyagi (1982) and in Hindi as Meri Aawaz Suno (1981).
+OTHER FILMS: ["Meri Aawaz Suno"]
+
+### ITEM 4b41f2f5da8c70f7
+PAGE: Sathi Leelavathi (1995 film)
+SENTENCE: It was remade in Hindi as Biwi No.1 (1999) and in Kannada as Rama Shama Bhama (2005) with Aravind and Haasan reprising their roles.
+OTHER FILMS: ["Biwi No.1"]
+
+### ITEM 0a8ae07c01ad0f7f
+PAGE: Cheran Pandiyan
+SENTENCE: The film was remade in Telugu as Balarama Krishnulu (1992), and in Hindi in as Sautela (1999).
+OTHER FILMS: ["Balarama Krishnulu", "Sautela"]
+
+### ITEM a3bef23921c6d76e
+PAGE: Bandhan (2004 film)
+SENTENCE: Loosely a remake of the Telugu film Santosham (2002), the film centres on Rohit and his son, Rony, who travel to India years after his mother, Mina's death to reconnect with the estranged family during a wedding celebration.
+OTHER FILMS: ["Santosham (2002 film)"]
+
+### ITEM fae2cfa5f3737d9c
+PAGE: Krazzy 4
+SENTENCE: It is a loose remake of the 1989 American film The Dream Team and the 1991 Malayalam film Mookilla Rajyathu.
+OTHER FILMS: ["Mookilla Rajyathu"]
+
+### ITEM e924020e1aa91b0b
+PAGE: Gang of Ghosts
+SENTENCE: Directed by Satish Kaushik, it is a remake of Bengali film Bhooter Bhabishyat (Future of the ghosts).
+OTHER FILMS: ["Bhooter Bhabishyat"]
+
+### ITEM 907f62c6bfc415e0
+PAGE: Lady for a Day
+SENTENCE: Capra also directed its 1961 remake, Pocketful of Miracles.
+OTHER FILMS: ["Pocketful of Miracles"]
+
+### ITEM 2e0fcc556ff619b6
+PAGE: Puthiya Paravai
+SENTENCE: It is a remake of the Bengali film Sesh Anka (1963) which is itself inspired by the British film Chase a Crooked Shadow (1958).
+OTHER FILMS: ["Chase a Crooked Shadow"]
+
+### ITEM 2ef4da8cad0a0f09
+PAGE: Do Bhai (1969 film)
+SENTENCE: The film was remade in Tamil in 1971 as Justice Viswanathan and in Telugu in 1971 as Nenu Manishine.
+OTHER FILMS: ["Justice Viswanathan"]
+
+### ITEM 31cdcb3096ec8c6f
+PAGE: Raktha Kanneeru
+SENTENCE: Though a remake of the 1954 Tamil film Ratha Kanneer, the director claimed that his film was based on a Kannada play which was later adapted in Tamil as a play and subsequently into the 1954 film.
+OTHER FILMS: ["Ratha Kanneer"]
+
+### ITEM cc2ce83be89c1b2e
+PAGE: Carry on Jatta
+SENTENCE: This film was remade in Odia in 2015 as Pilata Bigidigala, in Telugu in 2016 as Eedo Rakam Aado Rakam, in Bangladesh (Bengali) in 2017 as Dhat Teri Ki and in Bengali (India) in 2019 as Jamai Badal.
+OTHER FILMS: ["Eedo Rakam Aado Rakam"]
+
+### ITEM c9e1c465d8c46fc0
+PAGE: Paglu 2
+SENTENCE: This film is a remake of 2011 Telugu film Kandireega, directed by Santosh Srinivas and starring Ram and Hansika Motwani.
+OTHER FILMS: ["Kandireega"]
+
+### ITEM 3c9710d643883ef2
+PAGE: Bodyguard (2009 film)
+SENTENCE: It has been remade in four other Indian languages: in Tamil as Kaavalan, Hindi, Kannada and Telugu.
+OTHER FILMS: ["Kaavalan", "Bodyguard (2011 Hindi film)", "Bodyguard (2012 film)"]
+
+### ITEM faa75cd25e638250
+PAGE: Punnagai
+SENTENCE: It is a remake of the Hindi film Satyakam (1969) which starred Dharmendra.
+OTHER FILMS: ["Satyakam"]
+
+### ITEM bf91ac7a713bdd3a
+PAGE: Raman Abdullah
+SENTENCE: It is a remake of the 1994 Malayalam film Malappuram Haji Mahanaya Joji.
+OTHER FILMS: ["Malappuram Haji Mahanaya Joji"]
+
+### ITEM a53f539291d56b59
+PAGE: Rosaappo Ravikkai Kaari
+SENTENCE: A remake of the 1978 Kannada film Parasangada Gendethimma, itself based on Srikrishna Alanahalli's novella of the same name, the film stars Sivakumar, Deepa and Sivachandran, with Vinu Chakravarthy and [[R.
+OTHER FILMS: ["Parasangada Gendethimma"]
+
+### ITEM 9a3574c93938bf4d
+PAGE: Mappillai (1989 film)
+SENTENCE: The film was remade in Tamil with the same title in 2011.
+OTHER FILMS: ["Mappillai (2011 film)"]
+
+### ITEM bf3f7c6c4ebb0353
+PAGE: Time Bara Vait
+SENTENCE: The film is a remake of Malayalam-Tamil Bilingual film Neram directed by Alphonse Putharen, starring Nivin Pauly, Nazriya Nazim and Bobby Simha.
+OTHER FILMS: ["Neram"]
+
+### ITEM 3809646d9038f539
+PAGE: Ko (film)
+SENTENCE: It was remade in Bengali as Kanamachi (2013).
+OTHER FILMS: ["Kanamachi (film)"]
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/remakes/statements/r2_005.out.json as a JSON list with one object per item: {"item": "<the code after ITEM>", "links": [{"film": "<title exactly as listed>", "relation": "...", "wording": "..."}]} with one entry in "links" for every film listed under OTHER FILMS. Write nothing else to that file.

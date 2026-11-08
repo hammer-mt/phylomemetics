@@ -1,0 +1,222 @@
+You are helping to build a research corpus of film remakes from Wikipedia. Each item below gives the title of a film's Wikipedia page (PAGE), ONE sentence from the opening of that page, and the OTHER FILMS that sentence links to. For each other film, record what THE SENTENCE SAYS about PAGE and that film. You are not asked what you know about the films.
+
+For each other film give:
+- "relation":
+    "page_remakes_other"   the sentence says PAGE is a remake of the other film;
+    "other_remakes_page"   the sentence says the other film is a remake of PAGE (for example "it was remade in Telugu as ...");
+    "none"                 anything else.
+- "wording":
+    "firm"    the sentence states the remake plainly as a fact: "is a remake of", "an official remake of", "was remade as", "was remade in Hindi as";
+    "loose"   the sentence weakens or hedges it: "loosely", "partly", "unofficial", "uncredited", "inspired by", "based on the idea of", "reported to be", "said to be", "has been described as", "considered", "similar to", "reboot", "reimagining", "re-adaptation";
+    "" when the relation is "none".
+
+Rules.
+- Use only what the sentence says. Do not use your own knowledge of the films, and do not guess from titles or years.
+- If the sentence lists several films as remakes of PAGE, each of them is "other_remakes_page".
+- If the sentence says PAGE is a remake of X, and that X is itself a remake of or based on Y, then X is "page_remakes_other" and Y is "none", unless the sentence also says PAGE is a remake of Y.
+- "none" covers: a sequel, prequel or spin-off; a film that is only compared or mentioned; another remake of the same original (a sibling); a film based on the same novel, play or true story that the sentence does not call a remake; a film whose remake status the sentence denies; a dubbed version; a film shot at the same time in another language ("simultaneously", "bilingual").
+- If you cannot tell which film the word "remake" or "remade" applies to, answer "none".
+
+The items follow.
+
+### ITEM 793babdbe64e8286
+PAGE: Sansar (1987 film)
+SENTENCE: The film is a remake of the Tamil film Samsaram Adhu Minsaram.
+OTHER FILMS: ["Samsaram Adhu Minsaram"]
+
+### ITEM 44b2cf3611c6eec2
+PAGE: Gharana (1961 film)
+SENTENCE: The film was a remake of the 1960 Telugu film Santhi Nivasam and remade in 1988 as Ghar Ghar Ki Kahani.
+OTHER FILMS: ["Ghar Ghar Ki Kahani (1988 film)"]
+
+### ITEM feae398b19560535
+PAGE: Kind Lady (1935 film)
+SENTENCE: Doris Lloyd appeared in this film and its 1951 remake of the same name in different roles.
+OTHER FILMS: ["Kind Lady (1951 film)"]
+
+### ITEM ce28f61a2680a81a
+PAGE: Periya Idathu Penn
+SENTENCE: The film was remade in Telugu as Sabhash Suri and in Hindi as Jawab.
+OTHER FILMS: ["Jawab (1970 film)"]
+
+### ITEM 90c15139a542c787
+PAGE: Bachelor Mother
+SENTENCE: It was remade in 1956 as Bundle of Joy, starring Debbie Reynolds and Eddie Fisher, and inspired the Bollywood film Kunwara Baap.
+OTHER FILMS: ["Bundle of Joy", "Kunwara Baap (1942 film)"]
+
+### ITEM ab17a47aa35e525a
+PAGE: Ardhangi
+SENTENCE: The film was remade in Tamil as Pennin Perumai and in Hindi as Bahurani (1963).
+OTHER FILMS: ["Pennin Perumai", "Bahurani (1963 film)"]
+
+### ITEM 254c7e51ac5cebd4
+PAGE: Illarikam
+SENTENCE: Subbarao himself remade it in Kannada as Mane Aliya (1964), in Malayalam as Kalithozhan (1966) and in Tamil as Maadi Veettu Mappilai (1967).
+OTHER FILMS: ["Maadi Veettu Mappilai"]
+
+### ITEM fc0457f3ae30490b
+PAGE: Do Kaliyaan
+SENTENCE: It is a remake of the 1965 Tamil film Kuzhandaiyum Deivamum which itself was based on the 1961 American film The Parent Trap, based on Erich Kästner's 1949 German novel Lisa and Lottie.
+OTHER FILMS: ["The Parent Trap (1961 film)"]
+
+### ITEM 2bca083bdc98547e
+PAGE: Khamoshi (1969 film)
+SENTENCE: Khamoshi was shot in Calcutta and was based on the Bengali short story titled Nurse Mitra by noted Bengali writer, Ashutosh Mukherjee and is a remake of director Asit Sen's own Bengali film, Deep Jwele Jaai (1959), starring Suchitra Sen.
+OTHER FILMS: ["Deep Jwele Jaai"]
+
+### ITEM c29ac794995ee5d8
+PAGE: Kalakar
+SENTENCE: It is a remake of Tamil Song "Ilaya nila pozhigirathe" composed by Ilayaraja for Payanangal Mudivathillai.
+OTHER FILMS: ["Payanangal Mudivathillai"]
+
+### ITEM c9e1c465d8c46fc0
+PAGE: Paglu 2
+SENTENCE: This film is a remake of 2011 Telugu film Kandireega, directed by Santosh Srinivas and starring Ram and Hansika Motwani.
+OTHER FILMS: ["Kandireega"]
+
+### ITEM d8ee62677d983532
+PAGE: Nee Ko Njaa Cha
+SENTENCE: It is an unofficial remake of the 2008 American film Forgetting Sarah Marshall.
+OTHER FILMS: ["Forgetting Sarah Marshall"]
+
+### ITEM 7d84a2a7d4c45ecc
+PAGE: Sabaash Meena
+SENTENCE: The film was remade into Hindi as Dil Tera Deewana (1962), in Kannada as Aliya Geleya (1971), and in Malayalam as Chirikkudukka (1976).
+OTHER FILMS: ["Dil Tera Diwana (1962 film)"]
+
+### ITEM f1280a377541e9b7
+PAGE: Malaiyoor Mambattiyan
+SENTENCE: It was remade in Hindi by the same director as Gangvaa (1984) and in Telugu as Kondaveeti Nagulu (1984).
+OTHER FILMS: ["Gangvaa"]
+
+### ITEM f89bf3a393ee3346
+PAGE: Sadma
+SENTENCE: Released on 8 July 1983, the film was a remake of Mahendra's 1982 Tamil film Moondram Pirai, which also starred Sridevi and Haasan.
+OTHER FILMS: ["Moondram Pirai"]
+
+### ITEM 4bc87da03681d77d
+PAGE: Band Baaja Baaraat
+SENTENCE: A Tamil remake titled Aaha Kalyanam was also produced by Aditya Chopra under Yash Raj Films, starring Nani and Vaani Kapoor in the lead roles and was released on 21 February 2014.
+OTHER FILMS: ["Aaha Kalyanam"]
+
+### ITEM d54fde3ee3fb8f64
+PAGE: Thanks a Million
+SENTENCE: It was remade in 1946 as If I'm Lucky, with Perry Como and Phil Silvers in the Powell and Allen roles.
+OTHER FILMS: ["If I'm Lucky (film)"]
+
+### ITEM edbb247607c5b48c
+PAGE: Pataki (film)
+SENTENCE: The film is a remake of the 2015 Telugu film Pataas.
+OTHER FILMS: ["Pataas"]
+
+### ITEM 267524d214f571f4
+PAGE: Mohabbat (1985 film)
+SENTENCE: It is a remake of the 1982 Tamil film Thooral Ninnu Pochchu.
+OTHER FILMS: ["Thooral Ninnu Pochchu"]
+
+### ITEM fd634c6811d4e021
+PAGE: The Marshal of Mesa City
+SENTENCE: Although no story credit was given, this film bears a striking similarity to the 1935 western, The Arizonian, whose screenplay and story were written by Academy Award winner Dudley Nichols, and some sources state that this film was a remake of the earlier picture.
+OTHER FILMS: ["The Arizonian"]
+
+### ITEM b4bc66ddbf69f21f
+PAGE: Neenello Naanalle
+SENTENCE: Neenello Nanalle is 2006 Indian Kannada-language romance film directed by Dinesh Babu, and is a remake of the 2005 Telugu film Nuvvostanante Nenoddantana.
+OTHER FILMS: ["Nuvvostanante Nenoddantana"]
+
+### ITEM 0e7e3a4f77ea899b
+PAGE: Deewane Huye Paagal
+SENTENCE: An unofficial remake of the 1998 American film There's Something About Mary with some changes, the film was released on 25 November 2005 to positive reviews from critics.
+OTHER FILMS: ["There's Something About Mary"]
+
+### ITEM 273cb04cbac6ef8f
+PAGE: Ellorum Nallavare
+SENTENCE: A remake of the 1974 Kannada film Bhootayyana Maga Ayyu, it was simultaneously produced in Telugu and Hindi languages as Andaroo Manchivare and Ek Gaon Ki Kahani.
+OTHER FILMS: ["Bhootayyana Maga Ayyu"]
+
+### ITEM b8b0eeee0935269f
+PAGE: Puthiya Vaanam
+SENTENCE: A remake of the 1987 Hindi film Hukumat, it was released on 10 December 1988.
+OTHER FILMS: ["Hukumat"]
+
+### ITEM d347307a719365b3
+PAGE: Whistle (Kannada film)
+SENTENCE: It is a remake of the 2012 Tamil film Pizza.
+OTHER FILMS: ["Pizza (2012 film)"]
+
+### ITEM a89d1243d0fc9340
+PAGE: Bangalore Naatkal
+SENTENCE: It is a remake of the 2014 Malayalam film Bangalore Days written and directed by Anjali Menon.
+OTHER FILMS: ["Bangalore Days"]
+
+### ITEM dd7c9ad47dbc4eb6
+PAGE: Kilukkampetti
+SENTENCE: The film was remade in Telugu as Joker (1993) and in Hindi as Pyaar Impossible! (2010).
+OTHER FILMS: ["Joker (1993 film)", "Pyaar Impossible!"]
+
+### ITEM d0cb6a8ff5d8f4b9
+PAGE: The Nitwits
+SENTENCE: Fred Keating replaced Lionel Atwill, who later played the villain in the 1946 remake, Genius at Work.
+OTHER FILMS: ["Genius at Work"]
+
+### ITEM d7f493bceaf3c6d5
+PAGE: Nazrana (1961 film)
+SENTENCE: The film was a remake of the 1959 Tamil film Kalyana Parisu, also directed by [[C.
+OTHER FILMS: ["Kalyana Parisu"]
+
+### ITEM 487ce31dc00056da
+PAGE: Mambattiyan
+SENTENCE: The film, also starring Meera Jasmine, Prakash Raj, Vadivelu and Mumaith Khan in other pivotal roles, is a remake of the 1983 Tamil film Malaiyoor Mambattiyan that starred Thiagarajan.
+OTHER FILMS: ["Malaiyoor Mambattiyan"]
+
+### ITEM 25ea9651496daf22
+PAGE: The Man Who Lost Himself (1920 film)
+SENTENCE: The novel was later adapted again for a 1941 remake of the same title starring Brian Aherne and Kay Francis.
+OTHER FILMS: ["The Man Who Lost Himself (1941 film)"]
+
+### ITEM bad804e6375afecb
+PAGE: Kokila (1977 film)
+SENTENCE: The film was remade into Malayalam as Oomakkuyil and in Hindi as Aur Ek Prem Kahani both by Mahendra himself in 1983 and 1996, respectively.
+OTHER FILMS: ["Aur Ek Prem Kahani"]
+
+### ITEM 2fe13e38b47f849a
+PAGE: Aggi Ramudu (1954 film)
+SENTENCE: The film was remake of Tamil as Malaikkallan (1954), with M.G.
+OTHER FILMS: ["Malaikkallan"]
+
+### ITEM c0bded1f7191f9c2
+PAGE: Sagar (2012 film)
+SENTENCE: A remake of the Telugu-language Chukkallo Chandrudu (2006), the film stars Prajwal Devaraj, alongside Radhika Pandit, Sanjjana, Haripriya, Dev Gill, Sharath Lohithaswa, Avinash Yelandur, Vinaya Prasad and Adi Lokesh.
+OTHER FILMS: ["Chukkallo Chandrudu"]
+
+### ITEM ac15a53ede0756d0
+PAGE: Dui Prithibi (2010 film)
+SENTENCE: Produced by Shrikant Mohta under the banner of Shree Venkatesh Films.The film is a remake of 2008 Telugu movie Gamyam.
+OTHER FILMS: ["Gamyam"]
+
+### ITEM 2d5bf3e1d7b39bf5
+PAGE: Infernal Affairs
+SENTENCE: The film has also been remade in India as Homam (2008), in South Korea as City of Damnation (2009), and in Japan as (2012).
+OTHER FILMS: ["Homam (film)", "City of Damnation"]
+
+### ITEM 4f29a22da327c9dc
+PAGE: Aasai
+SENTENCE: The film was remade in Hindi as Pyaar Zindagi Hai (2001).
+OTHER FILMS: ["Pyaar Zindagi Hai"]
+
+### ITEM 31cdcb3096ec8c6f
+PAGE: Raktha Kanneeru
+SENTENCE: Though a remake of the 1954 Tamil film Ratha Kanneer, the director claimed that his film was based on a Kannada play which was later adapted in Tamil as a play and subsequently into the 1954 film.
+OTHER FILMS: ["Ratha Kanneer"]
+
+### ITEM c29917abd98640c2
+PAGE: Appu (2000 film)
+SENTENCE: It is a remake of the Hindi film Sadak (1991).
+OTHER FILMS: ["Sadak"]
+
+### ITEM 753c6eb01898cf9b
+PAGE: Phoonk
+SENTENCE: The film was remade in Telugu as Raksha and was dubbed in Tamil as Bommayi.
+OTHER FILMS: ["Raksha (2008 film)"]
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/remakes/statements/r1_007.out.json as a JSON list with one object per item: {"item": "<the code after ITEM>", "links": [{"film": "<title exactly as listed>", "relation": "...", "wording": "..."}]} with one entry in "links" for every film listed under OTHER FILMS. Write nothing else to that file.

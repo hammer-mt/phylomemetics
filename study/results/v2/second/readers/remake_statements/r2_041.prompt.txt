@@ -1,0 +1,222 @@
+You are helping to build a research corpus of film remakes from Wikipedia. Each item below gives the title of a film's Wikipedia page (PAGE), ONE sentence from the opening of that page, and the OTHER FILMS that sentence links to. For each other film, record what THE SENTENCE SAYS about PAGE and that film. You are not asked what you know about the films.
+
+For each other film give:
+- "relation":
+    "page_remakes_other"   the sentence says PAGE is a remake of the other film;
+    "other_remakes_page"   the sentence says the other film is a remake of PAGE (for example "it was remade in Telugu as ...");
+    "none"                 anything else.
+- "wording":
+    "firm"    the sentence states the remake plainly as a fact: "is a remake of", "an official remake of", "was remade as", "was remade in Hindi as";
+    "loose"   the sentence weakens or hedges it: "loosely", "partly", "unofficial", "uncredited", "inspired by", "based on the idea of", "reported to be", "said to be", "has been described as", "considered", "similar to", "reboot", "reimagining", "re-adaptation";
+    "" when the relation is "none".
+
+Rules.
+- Use only what the sentence says. Do not use your own knowledge of the films, and do not guess from titles or years.
+- If the sentence lists several films as remakes of PAGE, each of them is "other_remakes_page".
+- If the sentence says PAGE is a remake of X, and that X is itself a remake of or based on Y, then X is "page_remakes_other" and Y is "none", unless the sentence also says PAGE is a remake of Y.
+- "none" covers: a sequel, prequel or spin-off; a film that is only compared or mentioned; another remake of the same original (a sibling); a film based on the same novel, play or true story that the sentence does not call a remake; a film whose remake status the sentence denies; a dubbed version; a film shot at the same time in another language ("simultaneously", "bilingual").
+- If you cannot tell which film the word "remake" or "remade" applies to, answer "none".
+
+The items follow.
+
+### ITEM 3d7a040296aae797
+PAGE: Alienator
+SENTENCE: The film was described by Leonard Maltin and confirmed by Fred Olen Ray to be a "semi-remake" of the 1957 film The Astounding She-Monster.
+OTHER FILMS: ["The Astounding She-Monster"]
+
+### ITEM 792c3279ee86b8f1
+PAGE: Night of the Living Dead 3D
+SENTENCE: It is the second remake of the 1968 horror film Night of the Living Dead.
+OTHER FILMS: ["Night of the Living Dead"]
+
+### ITEM 31286facc543a6e1
+PAGE: The Last House on the Left (1972 film)
+SENTENCE: The film was remade in 2009.
+OTHER FILMS: ["The Last House on the Left (2009 film)"]
+
+### ITEM 2432ad581599279c
+PAGE: Night and the City (1992 film)
+SENTENCE: Robert De Niro Jessica Lange Cliff Gorman Jack Warden Alan King}} Night and the City is a 1992 American neo-noir crime comedy-drama film and a remake of the 1950 film, itself an adaptation of Gerald Kersh's 1938 novel.
+OTHER FILMS: ["Night and the City"]
+
+### ITEM 8918fdb5e3b24cde
+PAGE: The Fly II
+SENTENCE: The film stars Eric Stoltz and Daphne Zuniga, and is a sequel to the 1986 film The Fly, itself a remake of the 1958 film of the same name.
+OTHER FILMS: ["The Fly (1986 film)"]
+
+### ITEM e895e58bb67a1ccc
+PAGE: D.O.A. (1988 film)
+SENTENCE: A remake of the 1950 film of the same name, it stars Dennis Quaid, Meg Ryan and Charlotte Rampling, and was filmed in Austin, Texas and San Marcos, Texas.
+OTHER FILMS: ["D.O.A. (1950 film)"]
+
+### ITEM 387289e0ee7226b7
+PAGE: Love Don't Cost a Thing (film)
+SENTENCE: The film is a remake of the 1987 film Can't Buy Me Love and takes on its title from the Jennifer Lopez song of the same name.
+OTHER FILMS: ["Can't Buy Me Love (film)"]
+
+### ITEM 92a36e5fdca10128
+PAGE: Punisher: War Zone
+SENTENCE: Rather than a sequel to 2004's The Punisher, the film is a reboot that follows the war waged by vigilante Frank Castle / Punisher (played by Ray Stevenson) on crime and corruption, in particular on the disfigured mob boss known as Billy "Jigsaw" Russoti (Dominic West).
+OTHER FILMS: ["The Punisher (2004 film)"]
+
+### ITEM af6ff4f537d38ca5
+PAGE: The Heartbreak Kid (2007 film)
+SENTENCE: It is a remake of the 1972 film of the same name and stars Ben Stiller in the main role as well as Michelle Monaghan, Malin Åkerman, Jerry Stiller, Rob Corddry, Carlos Mencia, Scott Wilson, and Danny McBride.
+OTHER FILMS: ["The Heartbreak Kid (1972 film)"]
+
+### ITEM b0f59d917ca37e32
+PAGE: Last Man Standing (1996 film)
+SENTENCE: It is a remake of the 1961 Japanese film Yojimbo by Akira Kurosawa, relocated to the Prohibition-era American South.
+OTHER FILMS: ["Yojimbo (film)"]
+
+### ITEM 42bd8e726c3ccf27
+PAGE: The Crazies (2010 film)
+SENTENCE: A bilateral co-production between the United States and the United Arab Emirates, and the remake of the 1973 film of the same name, the film stars Timothy Olyphant, Radha Mitchell, Joe Anderson, and Danielle Panabaker.
+OTHER FILMS: ["The Crazies (1973 film)"]
+
+### ITEM ebd2d5d80ee8b7ed
+PAGE: Mighty Joe Young (1998 film)
+SENTENCE: Bill Paxton Charlize Theron Rade Šerbedžija Naveen Andrews Regina King David Paymer Mighty Joe Young is a 1998 American epic adventure film and remake of the 1949 film of the same title about a giant mountain gorilla brought to a wildlife preserve by a young woman who raised him and a zoologist to protect him from the threat of poachers until one decides to seek his revenge and capture and kill Joe.
+OTHER FILMS: ["Mighty Joe Young (1949 film)"]
+
+### ITEM 5f6b2dc4e65dd2fe
+PAGE: The Invasion (film)
+SENTENCE: Pictures]] hired David Kajganich to write what was intended to be a relatively straightforward remake of the 1956 film Invasion of the Body Snatchers, but Kajganich amended the story to reflect contemporary times.
+OTHER FILMS: ["Invasion of the Body Snatchers"]
+
+### ITEM 2258d02d11b33261
+PAGE: The In-Laws (1979 film)
+SENTENCE: A remake was made in 2003.
+OTHER FILMS: ["The In-Laws (2003 film)"]
+
+### ITEM 48aa114a6033e1e4
+PAGE: Halloween: Resurrection
+SENTENCE: The next film in the franchise was a 2007 remake of the 1978 film directed by Rob Zombie.
+OTHER FILMS: ["Halloween (2007 film)", "Halloween (1978 film)"]
+
+### ITEM 38b2c8dbc47eef92
+PAGE: Piranha (1978 film)
+SENTENCE: Piranha was followed by a sequel, Piranha II: The Spawning (1982), and two remakes, one in 1995 and another in 2010, which spawned its own sequel in 2012.
+OTHER FILMS: ["Piranha II: The Spawning", "Piranha (1995 film)", "Piranha 3DD"]
+
+### ITEM d4b657e04970ad3d
+PAGE: The Jackal (1997 film)
+SENTENCE: It is a loose remake of the 1973 film The Day of the Jackal, which was in turn based on the 1971 novel by Frederick Forsyth.
+OTHER FILMS: ["The Day of the Jackal (film)"]
+
+### ITEM edd54c741773840d
+PAGE: Clash of the Titans (2010 film)
+SENTENCE: Zanuck]] Travis Beacham Phil Hay Matt Manfredi Sam Worthington Gemma Arterton Mads Mikkelsen Alexa Davalos Ralph Fiennes Liam Neeson Vincent Tabaillon Martin Walsh Legendary Pictures The Zanuck Company Thunder Road Pictures United States United Kingdom Australia Clash of the Titans is a 2010 action fantasy film and remake of the 1981 film of the same name produced by Metro-Goldwyn-Mayer (the rights to which had been acquired by [[Warner Bros.
+OTHER FILMS: ["Clash of the Titans (1981 film)"]
+
+### ITEM d7dbd575e81f53a9
+PAGE: In God We Tru$t
+SENTENCE: Intended as a biting religious satire, it was also produced, directed and co-written by Feldman, his second directorial outing following The Last Remake of Beau Geste, and his final before his death in 1982.
+OTHER FILMS: ["The Last Remake of Beau Geste"]
+
+### ITEM 10d9a1e7a51ae17a
+PAGE: A Nightmare on Elm Street (2010 film)
+SENTENCE: Produced by Michael Bay and Platinum Dunes, it is a remake of Wes Craven's 1984 film of the same name, as well as the ninth overall installment of the Nightmare on Elm Street franchise.
+OTHER FILMS: ["A Nightmare on Elm Street"]
+
+### ITEM e593874d15be6459
+PAGE: The Crazies (1973 film)
+SENTENCE: A remake of the film was released in 2010.
+OTHER FILMS: ["The Crazies (2010 film)"]
+
+### ITEM 56399b164d4adf09
+PAGE: The Mechanic (1972 film)
+SENTENCE: A remake of the same name was released in 2011 to similarly mixed reception.
+OTHER FILMS: ["The Mechanic (2011 film)"]
+
+### ITEM 4d73fc7596865b67
+PAGE: I Spit on Your Grave
+SENTENCE: The film spawned a 2010 remake, which has since spawned two sequels of its own: I Spit on Your Grave 2 (2013), and I Spit on Your Grave III: Vengeance Is Mine (2015).
+OTHER FILMS: ["I Spit on Your Grave 2"]
+
+### ITEM 287c36a6e9688fdc
+PAGE: 102 Dalmatians
+SENTENCE: It is the sequel to 101 Dalmatians (1996), which was a live-action remake of the 1961 animated film of the same name; both were in turn based on Dodie Smith's 1956 novel The Hundred and One Dalmatians.
+OTHER FILMS: ["101 Dalmatians (1996 film)", "One Hundred and One Dalmatians"]
+
+### ITEM d4360f2ed2315a7b
+PAGE: Piranha 3-D
+SENTENCE: McQueen]] Christopher Lloyd Richard Dreyfuss Piranha 3D is a 2010 American 3D action horror black comedy film that serves as a remake of the 1978 film and the fourth installment in the Piranha film series.
+OTHER FILMS: ["Piranha (1978 film)"]
+
+### ITEM df0bd84b2b446d39
+PAGE: The Wolfman (2010 film)
+SENTENCE: A remake of the 1941 film The Wolf Man, it stars Benicio del Toro (who also produced), Anthony Hopkins, Emily Blunt and Hugo Weaving.
+OTHER FILMS: ["The Wolf Man (1941 film)"]
+
+### ITEM bf070751db8572ca
+PAGE: The Punisher (2004 film)
+SENTENCE: Marvel and Lions Gate began development on a sequel, which instead became the 2008 reboot Punisher: War Zone after Jane and Hensleigh left the project due to creative differences.
+OTHER FILMS: ["Punisher: War Zone"]
+
+### ITEM c8e00fcfd06a86c9
+PAGE: Don't Be Afraid of the Dark (2011 film)
+SENTENCE: It is a remake of the 1973 ABC made-for-television film of the same name.
+OTHER FILMS: ["Don't Be Afraid of the Dark (1973 film)"]
+
+### ITEM 3923fb233d30c7e5
+PAGE: Cape Fear (1991 film)
+SENTENCE: It is a remake of the 1962 film, which is based on the 1957 novel The Executioners by [[John D.
+OTHER FILMS: ["Cape Fear (1962 film)"]
+
+### ITEM 3556240bcf7e6712
+PAGE: When a Stranger Calls (2006 film)
+SENTENCE: It is a remake of Fred Walton's 1979 film of the same name, which became a cult classic for its opening 23 minutes, which this remake extends to a feature-length film.
+OTHER FILMS: ["When a Stranger Calls (1979 film)"]
+
+### ITEM a7f9e47890b6d76a
+PAGE: Bates Motel (film)
+SENTENCE: Outside of the 1998 remake, this is the only installment not to feature Anthony Perkins as Norman Bates as Kurt Paul portrays the character.
+OTHER FILMS: ["Psycho (1998 film)"]
+
+### ITEM fee1e8d31c934311
+PAGE: Charlie's Angels (film)
+SENTENCE: Charlie's Angels may also refer to: Charlie's Angels (franchise), a series of films and television shows Charlie's Angels (2000 film), a modern 2000 film spin-off to the original 1976–1981 television series Charlie's Angels: Full Throttle, a 2003 sequel to the 2000 film spin-off Charlie's Angels (2019 film), a spin-off of the television series and previous films Charlie's Angels (video game), a 2003 video game developed based upon the 2000 and 2003 film spin-offs. Behind the Camera: The Unauthorized Story of Charlie's Angels, a 2004 television docudrama Charlie's Angels (2011 TV series), a 2011 remake of the original 1976–1981 television series
+OTHER FILMS: ["Charlie's Angels: Full Throttle"]
+
+### ITEM 52b632df459287ef
+PAGE: Uncle Buck
+SENTENCE: Uncle Buck later inspired two television adaptations, Uncle Buck (1990) and Uncle Buck (2016), as well as the 1991 Malayalam-language remake Uncle Bun.
+OTHER FILMS: ["Uncle Bun"]
+
+### ITEM a6300fe513e33897
+PAGE: Black Christmas (2006 film)
+SENTENCE: Director Glen Morgan signed on to write and direct the film after the release of his 2003 remake of Willard.
+OTHER FILMS: ["Willard (2003 film)"]
+
+### ITEM d888da58a46f7578
+PAGE: A Star Is Born (1976 film)
+SENTENCE: The film is a remake of the 1937 film with Janet Gaynor and Fredric March, notably adapted in 1954 as a musical starring Judy Garland and James Mason; and subsequently again in 2018 with Lady Gaga and Bradley Cooper.
+OTHER FILMS: ["A Star Is Born (1937 film)", "A Star Is Born (1954 film)"]
+
+### ITEM a3486af6f9960c8b
+PAGE: The Texas Chainsaw Massacre (2003 film)
+SENTENCE: Lee Ermey]] Radar Pictures Platinum Dunes Next Entertainment The Texas Chainsaw Massacre is a 2003 American slasher film serving as a remake of Tobe Hooper's 1974 film The Texas Chain Saw Massacre, and the fifth installment in The Texas Chainsaw Massacre franchise.
+OTHER FILMS: ["The Texas Chain Saw Massacre"]
+
+### ITEM c04749ae7debe46d
+PAGE: The Incredible Melting Man
+SENTENCE: While writing and shooting, Sachs was influenced by Night of the Living Dead. With the changes by the producers, the final film has been described as a remake of First Man into Space (1959), which in turn was directly influenced by The Quatermass Xperiment, even though Sachs had never seen either of those films.
+OTHER FILMS: ["Night of the Living Dead", "First Man into Space", "The Quatermass Xperiment"]
+
+### ITEM 82ec82d844a1d468
+PAGE: Halloween II (2009 film)
+SENTENCE: It is the tenth installment in the Halloween film series and the sequel to Zombie's 2007 remake of Halloween (1978), though it is not a remake of the 1981 sequel of the same name. Starring Malcolm McDowell, Tyler Mane, Sheri Moon Zombie, Brad Dourif, Danielle Harris, and Scout Taylor-Compton, the film follows Laurie Strode as she deals with the aftermath of the Haddonfield murders and her deteriorating relationship with fellow survivor Annie Brackett, [[Samuel Loomis|Dr.
+OTHER FILMS: ["Halloween (2007 film)", "Halloween (1978 film)", "Halloween II (1981 film)"]
+
+### ITEM 56ed75df0363baeb
+PAGE: The Amityville Horror (2005 film)
+SENTENCE: Written by Scott Kosar, it is based on the novel The Amityville Horror by Jay Anson and serves as a remake of the 1979 film of the same name, as well as the ninth film in the Amityville Horror film series.
+OTHER FILMS: ["The Amityville Horror (1979 film)"]
+
+### ITEM 31065b08e988383a
+PAGE: Jingle All the Way
+SENTENCE: Delays to Fox's reboot of Planet of the Apes allowed Schwarzenegger to come on board the film, while Columbus opted to cast Sinbad instead of Joe Pesci as Myron.
+OTHER FILMS: ["Planet of the Apes (2001 film)"]
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/remakes/statements/r2_041.out.json as a JSON list with one object per item: {"item": "<the code after ITEM>", "links": [{"film": "<title exactly as listed>", "relation": "...", "wording": "..."}]} with one entry in "links" for every film listed under OTHER FILMS. Write nothing else to that file.

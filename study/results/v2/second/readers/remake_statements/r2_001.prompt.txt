@@ -1,0 +1,222 @@
+You are helping to build a research corpus of film remakes from Wikipedia. Each item below gives the title of a film's Wikipedia page (PAGE), ONE sentence from the opening of that page, and the OTHER FILMS that sentence links to. For each other film, record what THE SENTENCE SAYS about PAGE and that film. You are not asked what you know about the films.
+
+For each other film give:
+- "relation":
+    "page_remakes_other"   the sentence says PAGE is a remake of the other film;
+    "other_remakes_page"   the sentence says the other film is a remake of PAGE (for example "it was remade in Telugu as ...");
+    "none"                 anything else.
+- "wording":
+    "firm"    the sentence states the remake plainly as a fact: "is a remake of", "an official remake of", "was remade as", "was remade in Hindi as";
+    "loose"   the sentence weakens or hedges it: "loosely", "partly", "unofficial", "uncredited", "inspired by", "based on the idea of", "reported to be", "said to be", "has been described as", "considered", "similar to", "reboot", "reimagining", "re-adaptation";
+    "" when the relation is "none".
+
+Rules.
+- Use only what the sentence says. Do not use your own knowledge of the films, and do not guess from titles or years.
+- If the sentence lists several films as remakes of PAGE, each of them is "other_remakes_page".
+- If the sentence says PAGE is a remake of X, and that X is itself a remake of or based on Y, then X is "page_remakes_other" and Y is "none", unless the sentence also says PAGE is a remake of Y.
+- "none" covers: a sequel, prequel or spin-off; a film that is only compared or mentioned; another remake of the same original (a sibling); a film based on the same novel, play or true story that the sentence does not call a remake; a film whose remake status the sentence denies; a dubbed version; a film shot at the same time in another language ("simultaneously", "bilingual").
+- If you cannot tell which film the word "remake" or "remade" applies to, answer "none".
+
+The items follow.
+
+### ITEM 7450c377866d9766
+PAGE: Sundarapandian
+SENTENCE: It was remade in Kannada as Raja Huli (2013) and in Telugu as Speedunnodu (2016).
+OTHER FILMS: ["Raja Huli", "Speedunnodu"]
+
+### ITEM 3951cadc1be5fe5b
+PAGE: Salaam-e-Ishq: A Tribute to Love
+SENTENCE: An unofficial remake of Love Actually (2003), the film features an ensemble cast of Anil Kapoor, Govinda, Salman Khan, Juhi Chawla, Akshaye Khanna, John Abraham, Priyanka Chopra, Vidya Balan, Ayesha Takia, Shannon Esra, Sohail Khan and Isha Koppikar.
+OTHER FILMS: ["Love Actually"]
+
+### ITEM c64043f46bc3a636
+PAGE: Kuruthipunal (film)
+SENTENCE: A remake of the Hindi film Drohkaal (1994), it follows two police officers trying to nab a terrorist group headed by a Naxalite, but their families are threatened in the process.
+OTHER FILMS: ["Drohkaal"]
+
+### ITEM 788055be6bf8a54f
+PAGE: Raam (2009 film)
+SENTENCE: The movie is a remake of 2008 Telugu film Ready.
+OTHER FILMS: ["Ready (2008 film)"]
+
+### ITEM d0a65bc91583df8f
+PAGE: Khud-Daar
+SENTENCE: It was remade in Tamil as Padikkadhavan and in Telugu as Driver Babu.
+OTHER FILMS: ["Padikkadavan (1985 film)"]
+
+### ITEM a25de7de5a45f32d
+PAGE: Pokkiri Raja (2010 film)
+SENTENCE: It was remade in Hindi as Boss.
+OTHER FILMS: ["Boss (2013 Hindi film)"]
+
+### ITEM 08a5ad8fb0206590
+PAGE: Thani Oruvan
+SENTENCE: The film was remade in Telugu as Dhruva (2016), and in Bengali as One (2017).
+OTHER FILMS: ["Dhruva (2016 film)"]
+
+### ITEM 37b4b68ae8960898
+PAGE: Samsaram Adhu Minsaram
+SENTENCE: In 1987, the film was remade in Hindi as Sansar, in Telugu as Samsaram Oka Chadarangam, in Kannada as Onde Goodina Hakkigalu and in Malayalam as Kudumbapuranam.
+OTHER FILMS: ["Sansar (1987 film)"]
+
+### ITEM c11a230628b4d091
+PAGE: En Thangai (1952 film)
+SENTENCE: The film was remade in Hindi as Chhoti Bahen, in Telugu as Aada Paduchu and in Kannada as Onde Balliya Hoogalu.
+OTHER FILMS: ["Chhoti Bahen", "Aada Paduchu"]
+
+### ITEM ecff596ccbbce12a
+PAGE: Chinna Gounder
+SENTENCE: The film was remade in Telugu as Chinarayudu, and in Kannada as Chikkejamanru.
+OTHER FILMS: ["Chinarayudu"]
+
+### ITEM 86b607cd537b8b19
+PAGE: Nayakan
+SENTENCE: The film was remade in Hindi as Dayavan (1988).
+OTHER FILMS: ["Dayavan"]
+
+### ITEM 5b87ab29369bebf8
+PAGE: Shubh Mangal Savdhan (2017 film)
+SENTENCE: Starring Ayushmann Khurrana and Bhumi Pednekar, it is a remake of Prasanna's own Tamil film Kalyana Samayal Saadham (2013).
+OTHER FILMS: ["Kalyana Samayal Saadham"]
+
+### ITEM 0fbb671e6b9169df
+PAGE: Kuch Tum Kaho Kuch Hum Kahein
+SENTENCE: It is a remake of the Telugu film Kalisundam Raa which has similarities with William Shakespeare's, Romeo and Juliet.
+OTHER FILMS: ["Kalisundam Raa"]
+
+### ITEM e701ffe0b715d10e
+PAGE: Raja Huli
+SENTENCE: The movie is a remake of the 2012 Tamil movie Sundarapandian directed by [[S.
+OTHER FILMS: ["Sundarapandian"]
+
+### ITEM f51224d8bb1cf1b1
+PAGE: Drishya
+SENTENCE: It is a remake of the 2013 Malayalam film Drishyam and stars [[Ravichandran (Kannada actor)|V.
+OTHER FILMS: ["Drishyam"]
+
+### ITEM d064ef8a99113720
+PAGE: Mallikarjuna (film)
+SENTENCE: The film is remake of the 2001 Tamil film Thavasi starring Vijaykanth and Soundarya.
+OTHER FILMS: ["Thavasi"]
+
+### ITEM 2a11bc52f1c69597
+PAGE: A Girl in Every Port (1928 film)
+SENTENCE: It was produced and distributed by the Fox Film Corporation, which later remade it as Goldie in 1931, with Spencer Tracy and Jean Harlow.
+OTHER FILMS: ["Goldie (1931 film)"]
+
+### ITEM f3cd8bfdc1af4b57
+PAGE: Thirupaachi
+SENTENCE: It was remade in Kannada as Thangigagi and in Telugu as Annavaram.
+OTHER FILMS: ["Annavaram (film)"]
+
+### ITEM 929d9693b425c81b
+PAGE: Drohkaal
+SENTENCE: It was remade simultaneously in 1995 in Tamil and Telugu as Kuruthipunal and Drohi.
+OTHER FILMS: ["Kuruthipunal (film)"]
+
+### ITEM 002b5796c09b08dc
+PAGE: Super-Sleuth
+SENTENCE: Super Sleuth was a remade in 1946 as Genius at Work, with comedy team of Wally Brown and Alan Carney.
+OTHER FILMS: ["Genius at Work"]
+
+### ITEM 20afe6c6417b2aee
+PAGE: Thuppakki
+SENTENCE: In 2014, the film was remade in Bengali as Game and in Hindi as Holiday: A Soldier Is Never Off Duty by the same director.
+OTHER FILMS: ["Game (2014 film)"]
+
+### ITEM 85ff56e81b2afb7e
+PAGE: Wanted (2004 film)
+SENTENCE: The film is a remake of the Telugu film Aithe (2003).
+OTHER FILMS: ["Aithe"]
+
+### ITEM 9a7506130b496a2e
+PAGE: Shiva (1990 film)
+SENTENCE: It is a remake of Varma's debut Telugu film Siva (1989).
+OTHER FILMS: ["Siva (1989 Telugu film)"]
+
+### ITEM de2aded425ba9f6b
+PAGE: Raman Thediya Seethai (1972 film)
+SENTENCE: It is a remake of the 1969 Kannada film Gandondu Hennaru. The film ran for more than 100 days in theatres and it became a box office success.
+OTHER FILMS: ["Gandondu Hennaru"]
+
+### ITEM 36931b055a90bf88
+PAGE: Badi Pantulu (1958 film)
+SENTENCE: In 1959, ALS Productions remade it in Hindi as School Master which was also directed by Panthulu.
+OTHER FILMS: ["School Master (1959 film)"]
+
+### ITEM 30c31a447fd6ed6f
+PAGE: Abhimanyu (1991 film)
+SENTENCE: It was unofficially remade in Tamil as Thalai Nagaram (2006), which was remade in Telugu as Nagaram (2008) and in Kannada as Devru (2009).
+OTHER FILMS: ["Nagaram (2008 film)"]
+
+### ITEM 6fea769f891ed7df
+PAGE: Maa (1952 film)
+SENTENCE: The 1979 film Khandaan is a remake of this film and it was in turn remade in Telugu as Jeevitha Ratnam (1981).
+OTHER FILMS: ["Khandaan (1979 film)"]
+
+### ITEM aa43e3322292ad84
+PAGE: Mafia (1993 film)
+SENTENCE: The movie was remade twice in Hindi First as Mafia (1996) and second as Loha (1997) both starring Dharmendra in the lead role.
+OTHER FILMS: ["Mafia (1996 film)", "Loha (1997 film)"]
+
+### ITEM 936ac04222c51c11
+PAGE: Shart: The Challenge
+SENTENCE: It is a remake of his Telugu film, Badri.
+OTHER FILMS: ["Badri (2000 film)"]
+
+### ITEM f5e901f56e5182b6
+PAGE: Kaamannana Makkalu
+SENTENCE: The film is a remake of the Malayalam film Thommanum Makkalum which had already been remade in Tamil as Majaa by Rockline Venkatesh who incidentally was the second lead of this movie.
+OTHER FILMS: ["Thommanum Makkalum", "Majaa"]
+
+### ITEM 0ef29fc93892a23f
+PAGE: Gharwali Baharwali
+SENTENCE: The film is a remake of the Tamil film Thaikulame Thaikulame (1995).
+OTHER FILMS: ["Thaikulame Thaikulame"]
+
+### ITEM a48e27e8f1c72131
+PAGE: Sasuraal
+SENTENCE: It is a remake of the Telugu film Illarikam (1959).
+OTHER FILMS: ["Illarikam"]
+
+### ITEM 945e9b9ad985b406
+PAGE: The Man Who Played God (1932 film)
+SENTENCE: In 1955 it was remade again as Sincerely Yours, starring Liberace.
+OTHER FILMS: ["Sincerely Yours (film)"]
+
+### ITEM 26f67ad15e7ece40
+PAGE: The Ten Commandments (1923 film)
+SENTENCE: It is the first in DeMille's biblical trilogy, followed by The King of Kings (1927) and The Sign of the Cross (1932). DeMille later directed a sound remake of the film in 1956, which focuses solely on the Exodus scenes.
+OTHER FILMS: ["The King of Kings (1927 film)", "The Ten Commandments (1956 film)"]
+
+### ITEM 6fadc1f34891b223
+PAGE: Bhai Ho To Aisa
+SENTENCE: The film is a remake of 1966 Telugu film Aastiparulu which was also remade earlier in Tamil in 1968 as En Thambi.
+OTHER FILMS: ["Aastiparulu", "En Thambi"]
+
+### ITEM dd7c9ad47dbc4eb6
+PAGE: Kilukkampetti
+SENTENCE: The film was remade in Telugu as Joker (1993) and in Hindi as Pyaar Impossible! (2010).
+OTHER FILMS: ["Joker (1993 film)", "Pyaar Impossible!"]
+
+### ITEM 9d6d282c8860ecd9
+PAGE: Ordinary (film)
+SENTENCE: A blockbuster at the box office, the film was remade in Tamil as Jannal Oram by Karu Pazhaniappan and in Telugu as Right Right.
+OTHER FILMS: ["Right Right"]
+
+### ITEM 2e4932b402d85f1f
+PAGE: Mounam Pesiyadhe
+SENTENCE: It was remade in Telugu as Aadanthe Ado Type (2003) and later dubbed in the same language as Kanchu in 2013.
+OTHER FILMS: ["Aadanthe Ado Type"]
+
+### ITEM c06caba45f53ea25
+PAGE: Ulta Palta 69
+SENTENCE: It is a remake of the Telugu film Vikramarkudu.
+OTHER FILMS: ["Vikramarkudu"]
+
+### ITEM 46ece509c2784be9
+PAGE: Calcutta Mail
+SENTENCE: The film is a remake of the 1998 Telugu film Choodalani Vundi.
+OTHER FILMS: ["Choodalani Vundi"]
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/remakes/statements/r2_001.out.json as a JSON list with one object per item: {"item": "<the code after ITEM>", "links": [{"film": "<title exactly as listed>", "relation": "...", "wording": "..."}]} with one entry in "links" for every film listed under OTHER FILMS. Write nothing else to that file.

@@ -1,0 +1,222 @@
+You are helping to build a research corpus of film remakes from Wikipedia. Each item below gives the title of a film's Wikipedia page (PAGE), ONE sentence from the opening of that page, and the OTHER FILMS that sentence links to. For each other film, record what THE SENTENCE SAYS about PAGE and that film. You are not asked what you know about the films.
+
+For each other film give:
+- "relation":
+    "page_remakes_other"   the sentence says PAGE is a remake of the other film;
+    "other_remakes_page"   the sentence says the other film is a remake of PAGE (for example "it was remade in Telugu as ...");
+    "none"                 anything else.
+- "wording":
+    "firm"    the sentence states the remake plainly as a fact: "is a remake of", "an official remake of", "was remade as", "was remade in Hindi as";
+    "loose"   the sentence weakens or hedges it: "loosely", "partly", "unofficial", "uncredited", "inspired by", "based on the idea of", "reported to be", "said to be", "has been described as", "considered", "similar to", "reboot", "reimagining", "re-adaptation";
+    "" when the relation is "none".
+
+Rules.
+- Use only what the sentence says. Do not use your own knowledge of the films, and do not guess from titles or years.
+- If the sentence lists several films as remakes of PAGE, each of them is "other_remakes_page".
+- If the sentence says PAGE is a remake of X, and that X is itself a remake of or based on Y, then X is "page_remakes_other" and Y is "none", unless the sentence also says PAGE is a remake of Y.
+- "none" covers: a sequel, prequel or spin-off; a film that is only compared or mentioned; another remake of the same original (a sibling); a film based on the same novel, play or true story that the sentence does not call a remake; a film whose remake status the sentence denies; a dubbed version; a film shot at the same time in another language ("simultaneously", "bilingual").
+- If you cannot tell which film the word "remake" or "remade" applies to, answer "none".
+
+The items follow.
+
+### ITEM 13375c684cd45121
+PAGE: Jalwa
+SENTENCE: It is an unofficial remake of the 1984 American film Beverly Hills Cop.
+OTHER FILMS: ["Beverly Hills Cop"]
+
+### ITEM 5ee4407b83a93d5e
+PAGE: Josh (2010 film)
+SENTENCE: It is a remake of the 2005 Telugu film Bhadra.
+OTHER FILMS: ["Bhadra (2005 film)"]
+
+### ITEM ad1eeb270ceca44b
+PAGE: Kunjikoonan (2002 film)
+SENTENCE: The film was later remade into different Indian languages, such as Perazhagan (2004) in Tamil and Manmatha (2006) in Kannada.
+OTHER FILMS: ["Perazhagan"]
+
+### ITEM ba879d4e7e5d1f39
+PAGE: Pulan Visaranai
+SENTENCE: The film was remade in Hindi as Ravan Raaj: A True Story (1995).
+OTHER FILMS: ["Ravan Raaj: A True Story"]
+
+### ITEM 7205bb09bc05166a
+PAGE: The Thief of Bagdad (1924 film)
+SENTENCE: The superb visual design, spectacle, imaginative splendor, and visual effects, along with his bravura performance (leading a cast of literally thousands), all contribute to making this his masterpiece." The film was remade several times; the 1940 Technicolor version split the main character into two: a deposed prince and a thief, the latter played by Sabu.
+OTHER FILMS: ["The Thief of Bagdad (1940 film)"]
+
+### ITEM 9942c517b3de8ad2
+PAGE: Maanikya
+SENTENCE: It is a remake of 2013 Telugu film Mirchi.
+OTHER FILMS: ["Mirchi (film)"]
+
+### ITEM 98d3384fc6f70280
+PAGE: Nooravathu Naal
+SENTENCE: It was remade in Malayalam as Aayiram Kannukal (1986) and in Hindi as 100 Days (1991).
+OTHER FILMS: ["100 Days (1991 film)"]
+
+### ITEM a8760f1c87a36a7e
+PAGE: Eno Onthara
+SENTENCE: This film is a remake of Tamil film Kushi. The film's title is based on a song from Hudugaata (2007).
+OTHER FILMS: ["Kushi (2000 film)"]
+
+### ITEM 82dbf87fe4ab1e92
+PAGE: Varuthapadatha Valibar Sangam
+SENTENCE: It was remade in Kannada as Adyaksha and in Telugu as Current Theega, both released in 2014.
+OTHER FILMS: ["Adyaksha", "Current Theega"]
+
+### ITEM 556eb54101da9f57
+PAGE: Mannar Mathai Speaking
+SENTENCE: Priyadarshan adapted certain subplots of the film for his Hindi film, Bhagam Bhag (2006), which went on to be remade in Telugu as Brahmanandam Drama Company.
+OTHER FILMS: ["Brahmanandam Drama Company"]
+
+### ITEM c29ac794995ee5d8
+PAGE: Kalakar
+SENTENCE: It is a remake of Tamil Song "Ilaya nila pozhigirathe" composed by Ilayaraja for Payanangal Mudivathillai.
+OTHER FILMS: ["Payanangal Mudivathillai"]
+
+### ITEM 914ed6cecb16d5e7
+PAGE: Varumayin Niram Sivappu
+SENTENCE: It was remade in Hindi as Zara Si Zindagi (1983) with Haasan reprising his role, and Balachander again directing.
+OTHER FILMS: ["Zara Si Zindagi"]
+
+### ITEM 9f185a1d5d3ce3d5
+PAGE: Manmadhan (film)
+SENTENCE: The film was remade in Kannada as Madana (2006).
+OTHER FILMS: ["Madana (film)"]
+
+### ITEM 93d8b3df23f595e4
+PAGE: Maalik (1972 film)
+SENTENCE: It is a loose remake of Tamil film Thunaivan.
+OTHER FILMS: ["Thunaivan"]
+
+### ITEM 96258744b8ffd588
+PAGE: Inidhu Inidhu
+SENTENCE: It is a remake of the 2007 Telugu film Happy Days.
+OTHER FILMS: ["Happy Days (2007 film)"]
+
+### ITEM 24c3f1095e48d1ff
+PAGE: Kanden Kadhalai
+SENTENCE: The film, a remake of the 2007 Hindi film Jab We Met, with Bharath and Tamannaah Bhatia reprising the roles of Shahid Kapoor and Kareena Kapoor.
+OTHER FILMS: ["Jab We Met"]
+
+### ITEM 3027b29a672edd93
+PAGE: Aansoo Aur Muskan
+SENTENCE: The film was a remake of Tamil film Kanne Pappa (1969), with which the latter reprised her role in both the language versions.
+OTHER FILMS: ["Kanne Pappa"]
+
+### ITEM d041a8c6d8a58042
+PAGE: Motta Shiva Ketta Shiva
+SENTENCE: It is a remake of the 2015 Telugu film Pataas with Ashutosh Rana reprising his role from the original.
+OTHER FILMS: ["Pataas"]
+
+### ITEM 7bb6aaa23c393624
+PAGE: Dante's Inferno (1924 film)
+SENTENCE: The book was filmed earlier in 1911 in Italy as L'Inferno, and Fox later remade the film in 1935, again as Dante's Inferno, starring Spencer Tracy in the lead role.
+OTHER FILMS: ["Dante's Inferno (1935 film)"]
+
+### ITEM 20ca8260a452d383
+PAGE: Qahar
+SENTENCE: A loosely remake of the 1989 Bengali film Ladai and Tamil Movie Thalapathi (1991)., it stars Sunny Deol, Suniel Shetty, Armaan Kohli, Sonali Bendre, Rambha and Deepti Bhatnagar in pivotal roles.
+OTHER FILMS: ["Thalapathi"]
+
+### ITEM 2d5bf3e1d7b39bf5
+PAGE: Infernal Affairs
+SENTENCE: The film has also been remade in India as Homam (2008), in South Korea as City of Damnation (2009), and in Japan as (2012).
+OTHER FILMS: ["Homam (film)", "City of Damnation"]
+
+### ITEM fb431a219b778010
+PAGE: Kaliyuga Kannan
+SENTENCE: The film was later remade in Telugu as Devude Digivaste (1975), in Kannada as Devara Duddu (1976), and in Hindi as Yehi Hai Zindagi (1977).
+OTHER FILMS: ["Yehi Hai Zindagi"]
+
+### ITEM a3598ef81983547c
+PAGE: Khudgarz
+SENTENCE: The film was remade in Telugu in 1988 as Prana Snehithulu, in Tamil in 1992 as Annaamalai (which went on to be remade in Telugu in 1993 as Kondapalli Raja and in Kannada in 2003 as Gokarna).
+OTHER FILMS: ["Kondapalli Raja"]
+
+### ITEM 16d53e75933ac25b
+PAGE: Premam
+SENTENCE: It was also remade in telugu by Naga Chaitanya and Shruti Hasan portraying the respective roles played by Nivin Pauly and Sai Pallavi in 2016.
+OTHER FILMS: ["Premam (2016 film)"]
+
+### ITEM eb22a8845c44d519
+PAGE: Ajay (2006 film)
+SENTENCE: A remake of the Telugu film Okkadu (2003), the film stars Puneeth Rajkumar, Anuradha Mehta (in her Kannada debut), and Prakash Raj (reprising his role from the original, as well as from the Tamil remake of the original).
+OTHER FILMS: ["Okkadu", "Ghilli"]
+
+### ITEM 6778e327df7d673d
+PAGE: Bhoot (film)
+SENTENCE: The film was later dubbed in Telugu as 12 Va Anthasthu and remade in Tamil as Shock.
+OTHER FILMS: ["Shock (2004 film)"]
+
+### ITEM d9a67e52ef428fe8
+PAGE: Den Mohor
+SENTENCE: This film was an official remake of 1991 superhit Bollywood film Sanam Bewafa.
+OTHER FILMS: ["Sanam Bewafa"]
+
+### ITEM 661f750dcf581bcd
+PAGE: Housefull 2
+SENTENCE: Produced by Nadiadwala under Nadiadwala Grandson Entertainment and distributed by Eros International, it is a remake of Mattupetty Machan and the second installment of the Housefull franchise, is a standalone sequel to Housefull (2010).
+OTHER FILMS: ["Housefull (2010 film)"]
+
+### ITEM 1f2e1d661524e49c
+PAGE: Nagamandala
+SENTENCE: Detha's story was adapted into a 1973 film with the same name, which was later remade into the 2005 film Paheli (reportedly also inspired by this film).
+OTHER FILMS: ["Duvidha"]
+
+### ITEM eacb5d69ae9a9fe8
+PAGE: Flying Swords of Dragon Gate
+SENTENCE: A Chinese-Hong Kong co-production, the film is a remake of Dragon Gate Inn (1967) and New Dragon Gate Inn (1992) but takes place three years after the original setting.
+OTHER FILMS: ["New Dragon Gate Inn"]
+
+### ITEM 8c1ad687a05b52b0
+PAGE: Aasha (1957 film)
+SENTENCE: The film was remade in Tamil as Athisaya Penn.
+OTHER FILMS: ["Athisaya Penn"]
+
+### ITEM dae195de8f75d744
+PAGE: Kannamoochi Yenada
+SENTENCE: The film, a remake of the 2005 American film Guess Who, which itself is based on the 1967 American film Guess Who's Coming to Dinner, was jointly produced and distributed by Raadan Media Works, UTV, and Pyramid Saimira.
+OTHER FILMS: ["Guess Who (film)", "Guess Who's Coming to Dinner"]
+
+### ITEM 61cd84ed86f8f772
+PAGE: Thattathin Marayathu
+SENTENCE: It has been considered as one of the defining films of the Malayalam New Wave, and has been remade in Telugu as Saheba Subramanyam and Tamil as Meendum Oru Kadhal Kadhai.
+OTHER FILMS: ["Meendum Oru Kadhal Kadhai"]
+
+### ITEM 90bd4ef5a97cfb1e
+PAGE: What Men Want
+SENTENCE: The film is a loose remake of the 2000 film What Women Want. The plot follows a woman who, after drinking a potent concoction given by a shaman, gains the ability to hear men's inner thoughts.
+OTHER FILMS: ["What Women Want"]
+
+### ITEM 41229afce11a1b23
+PAGE: Chellata (film)
+SENTENCE: It is a remake of the 2003 Malayalam film Pulival Kalyanam.
+OTHER FILMS: ["Pulival Kalyanam"]
+
+### ITEM 2c2b2e8433647cc9
+PAGE: Missamma
+SENTENCE: The film was remade in Hindi as Miss Mary (1957), again directed by Prasad.
+OTHER FILMS: ["Miss Mary (1957 film)"]
+
+### ITEM a6ae9876070afc96
+PAGE: Jailor (1958 film)
+SENTENCE: The film was a remake of Modi's earlier Jailor (1938).
+OTHER FILMS: ["Jailor (1938 film)"]
+
+### ITEM 6346dff1599466fb
+PAGE: Pooveli
+SENTENCE: An unofficial remake (with an Indian twist) of A Walk in the Clouds (1995), the film stars Karthik, Abbas, Kausalya and Heera Rajagopal.
+OTHER FILMS: ["A Walk in the Clouds"]
+
+### ITEM 380b5c309b039510
+PAGE: Un Samayal Arayil
+SENTENCE: A remake of Aashiq Abu's 2011 Malayalam film Salt N' Pepper, the film is simultaneously shot in three languages.
+OTHER FILMS: ["Salt N' Pepper"]
+
+### ITEM 0bb5c09c46cf15f3
+PAGE: Enga Veettu Pillai
+SENTENCE: A remake of his 1964 Telugu film Ramudu Bheemudu, it stars [[M.
+OTHER FILMS: ["Ramudu Bheemudu"]
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/remakes/statements/r2_009.out.json as a JSON list with one object per item: {"item": "<the code after ITEM>", "links": [{"film": "<title exactly as listed>", "relation": "...", "wording": "..."}]} with one entry in "links" for every film listed under OTHER FILMS. Write nothing else to that file.

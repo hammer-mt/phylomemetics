@@ -1,0 +1,222 @@
+You are helping to build a research corpus of film remakes from Wikipedia. Each item below gives the title of a film's Wikipedia page (PAGE), ONE sentence from the opening of that page, and the OTHER FILMS that sentence links to. For each other film, record what THE SENTENCE SAYS about PAGE and that film. You are not asked what you know about the films.
+
+For each other film give:
+- "relation":
+    "page_remakes_other"   the sentence says PAGE is a remake of the other film;
+    "other_remakes_page"   the sentence says the other film is a remake of PAGE (for example "it was remade in Telugu as ...");
+    "none"                 anything else.
+- "wording":
+    "firm"    the sentence states the remake plainly as a fact: "is a remake of", "an official remake of", "was remade as", "was remade in Hindi as";
+    "loose"   the sentence weakens or hedges it: "loosely", "partly", "unofficial", "uncredited", "inspired by", "based on the idea of", "reported to be", "said to be", "has been described as", "considered", "similar to", "reboot", "reimagining", "re-adaptation";
+    "" when the relation is "none".
+
+Rules.
+- Use only what the sentence says. Do not use your own knowledge of the films, and do not guess from titles or years.
+- If the sentence lists several films as remakes of PAGE, each of them is "other_remakes_page".
+- If the sentence says PAGE is a remake of X, and that X is itself a remake of or based on Y, then X is "page_remakes_other" and Y is "none", unless the sentence also says PAGE is a remake of Y.
+- "none" covers: a sequel, prequel or spin-off; a film that is only compared or mentioned; another remake of the same original (a sibling); a film based on the same novel, play or true story that the sentence does not call a remake; a film whose remake status the sentence denies; a dubbed version; a film shot at the same time in another language ("simultaneously", "bilingual").
+- If you cannot tell which film the word "remake" or "remade" applies to, answer "none".
+
+The items follow.
+
+### ITEM b3873ecd1a80488f
+PAGE: Sundara Purushan (1996 film)
+SENTENCE: The film was remade in Telugu as Andala Ramudu (2006).
+OTHER FILMS: ["Andala Ramudu (2006 film)"]
+
+### ITEM 7450c377866d9766
+PAGE: Sundarapandian
+SENTENCE: It was remade in Kannada as Raja Huli (2013) and in Telugu as Speedunnodu (2016).
+OTHER FILMS: ["Raja Huli", "Speedunnodu"]
+
+### ITEM b0f862eea78274bf
+PAGE: Her Vengeance
+SENTENCE: It is a remake of the 1973 rape and revenge film Kiss of Death with elements taken from the 1978 American film I Spit On Your Grave.
+OTHER FILMS: ["I Spit on Your Grave"]
+
+### ITEM f43c057162cd3dcb
+PAGE: Dum (2003 Hindi film)
+SENTENCE: Dum is a 2003 Indian Hindi-language action film directed by Eeshwar Nivas and produced by Aly and Karim Morani. It is a remake of the 2001 Tamil film Dhill (2001).
+OTHER FILMS: ["Dhill"]
+
+### ITEM e42a8ecde92d03b2
+PAGE: Main Sunder Hoon
+SENTENCE: It is a remake of the 1964 Tamil film Server Sundaram.
+OTHER FILMS: ["Server Sundaram"]
+
+### ITEM c67e42a45b872f0d
+PAGE: Jeena Sirf Merre Liye
+SENTENCE: An official remake of the 2001 Telugu film Manasantha Nuvve (2001), Jeena Sirf Merre Liye is about two estranged childhood friends.
+OTHER FILMS: ["Manasantha Nuvve"]
+
+### ITEM 3952db30ad73e505
+PAGE: Sundara Kandam
+SENTENCE: The film was remade in Telugu as Sundarakanda (1992), in Hindi as Andaz (1994) and in Kannada as Sundara Kanda (2001).
+OTHER FILMS: ["Sundarakanda (1992 film)", "Andaz (1994 film)"]
+
+### ITEM 3dd636a55dc53d01
+PAGE: Bol Bachchan
+SENTENCE: Earning over net from domestic markets and more than worldwide, Bol Bachchan became a critical and commercial success and was remade in Telugu as Masala in 2013.
+OTHER FILMS: ["Masala (2013 film)"]
+
+### ITEM 432f0a811fbe3574
+PAGE: Vettai
+SENTENCE: The film was remade in Telugu as Tadakha (2013) and in Hindi as Baaghi 3 (2020).
+OTHER FILMS: ["Tadakha"]
+
+### ITEM 3a4b5806332b6f8f
+PAGE: Buk Fatey To Mukh Foteyna
+SENTENCE: The film is remake of 2010 Telugu-language film Brindavanam.
+OTHER FILMS: ["Brindavanam (2010 film)"]
+
+### ITEM 4c058c49a4668a0f
+PAGE: Patala Bhairavi
+SENTENCE: The film was also remade in Hindi as Pataal Bhairavi (1985).
+OTHER FILMS: ["Pataal Bhairavi"]
+
+### ITEM cb029004d607ba5f
+PAGE: Kadhal Kirukkan
+SENTENCE: It is the Tamil remake of the 2002 Hindi film Deewangee.
+OTHER FILMS: ["Deewangee"]
+
+### ITEM 48bc1940e58e67db
+PAGE: Palletoori Pilla
+SENTENCE: It was later remade in Hindi as Insaniyat (1955).
+OTHER FILMS: ["Insaniyat (1955 film)"]
+
+### ITEM c166a084eb462c95
+PAGE: Death Duel
+SENTENCE: It was adapted from the novel San Shaoye De Jian (Third Young Master's Sword) by Gu Long, and was remade in 2016 as Sword Master, which was directed by Derek Yee.
+OTHER FILMS: ["Sword Master (film)"]
+
+### ITEM ad1eeb270ceca44b
+PAGE: Kunjikoonan (2002 film)
+SENTENCE: The film was later remade into different Indian languages, such as Perazhagan (2004) in Tamil and Manmatha (2006) in Kannada.
+OTHER FILMS: ["Perazhagan"]
+
+### ITEM 5bd6ad785ccf92e9
+PAGE: The Cardboard Lover
+SENTENCE: It was remade as The Passionate Plumber in 1932 and Her Cardboard Lover in 1942.
+OTHER FILMS: ["The Passionate Plumber", "Her Cardboard Lover"]
+
+### ITEM 2e3fae4f460e01fa
+PAGE: Guru Sishyan (1988 film)
+SENTENCE: A remake of the Hindi film Insaf Ki Pukar (1987), it stars Rajinikanth, Prabhu, Seetha and Gautami with Pandiyan, Cho Ramaswamy, Ravichandran, Radha Ravi, Senthamarai, Vinu Chakravarthy and Manorama in supporting roles.
+OTHER FILMS: ["Insaf Ki Pukar"]
+
+### ITEM efc20e306240c215
+PAGE: Arya (2004 film)
+SENTENCE: The film was remade in Bengali (Bangladesh) as Badha (2005), in Odia as Pagala Premi (2007), in Bengali as Pagal Premi (2007), in Sinhala as Adaraye Namayen (2008) and in Tamil as Kutty (2010).
+OTHER FILMS: ["Kutty (2010 film)"]
+
+### ITEM f273025bc71e7636
+PAGE: Anjada Gandu
+SENTENCE: It is a remake of the 1984 Tamil film Thambikku Entha Ooru.
+OTHER FILMS: ["Thambikku Entha Ooru"]
+
+### ITEM bcb283859b626c02
+PAGE: Bahurani (1963 film)
+SENTENCE: It is a remake of the Telugu movie Ardhangi, which was based on Maddipatla Suri's Telugu translation of the Bengali novel Swayamsiddha written by Manilal Banerjee.
+OTHER FILMS: ["Ardhangi"]
+
+### ITEM e701ffe0b715d10e
+PAGE: Raja Huli
+SENTENCE: The movie is a remake of the 2012 Tamil movie Sundarapandian directed by [[S.
+OTHER FILMS: ["Sundarapandian"]
+
+### ITEM 5c0a2bbf018491e4
+PAGE: TN 07 AL 4777
+SENTENCE: It is a remake of the 2006 Hindi film Taxi No. 9211 which was based on the American film Changing Lanes (2002).
+OTHER FILMS: ["Taxi No. 9211", "Changing Lanes"]
+
+### ITEM 066d123734ada9fa
+PAGE: Life Is Beautiful (2000 film)
+SENTENCE: The film was released on 14 April 2000, and is partly a remake of the 1989 classic Dead Poets Society, but title was inspired by the 1997 Italian film of the same title Life is Beautiful.
+OTHER FILMS: ["Dead Poets Society"]
+
+### ITEM caccc4a500f5a515
+PAGE: Naache Mayuri
+SENTENCE: It is a remake of the Telugu film, Mayuri (1984), about classical dancer-actress Sudha Chandran who stars as herself in both films.
+OTHER FILMS: ["Mayuri (film)"]
+
+### ITEM 0fbb671e6b9169df
+PAGE: Kuch Tum Kaho Kuch Hum Kahein
+SENTENCE: It is a remake of the Telugu film Kalisundam Raa which has similarities with William Shakespeare's, Romeo and Juliet.
+OTHER FILMS: ["Kalisundam Raa"]
+
+### ITEM cef27586fd2ae5fe
+PAGE: The Gentleman (film)
+SENTENCE: It is a remake of the Tamil film Gentleman (1993).
+OTHER FILMS: ["Gentleman (1993 film)"]
+
+### ITEM 3809646d9038f539
+PAGE: Ko (film)
+SENTENCE: It was remade in Bengali as Kanamachi (2013).
+OTHER FILMS: ["Kanamachi (film)"]
+
+### ITEM 8c5952ed48de63b6
+PAGE: Broadway Bill
+SENTENCE: Capra disliked the final product, and in an effort to make it more to his liking, he remade the film in 1950 as Riding High.
+OTHER FILMS: ["Riding High (1950 film)"]
+
+### ITEM 26249342eddac023
+PAGE: Vallavanukku Vallavan (1965 film)
+SENTENCE: The film was Modern Theatres' 100th film, and is a remake of the 1963 Hindi film Ustadon Ke Ustad.
+OTHER FILMS: ["Ustadon Ke Ustad (1963 film)"]
+
+### ITEM c3f0347011288128
+PAGE: Manasukkul Mathappu
+SENTENCE: It is a remake of the 1986 Malayalam film Thalavattam which was inspired by the 1975 film One Flew Over the Cuckoo's Nest which in turn was an adaptation of the 1962 novel of the same name by Ken Kesey.
+OTHER FILMS: ["One Flew Over the Cuckoo's Nest (film)"]
+
+### ITEM afcf524d2b7a68c2
+PAGE: Kid Galahad (1937 film)
+SENTENCE: It was remade in 1941, this time in a circus setting, as The Wagons Roll at Night, also with Bogart, and in 1962 as an Elvis Presley musical.
+OTHER FILMS: ["The Wagons Roll at Night", "Kid Galahad"]
+
+### ITEM 9ada436460682186
+PAGE: Sethu (film)
+SENTENCE: The film was remade in Kannada as Huchcha, in Telugu as Seshu and in Hindi as Tere Naam.
+OTHER FILMS: ["Seshu"]
+
+### ITEM 923724367272ec93
+PAGE: Don (1978 film)
+SENTENCE: The film spawned the Don franchise; Javed Akhtar's son Farhan Akhtar created a remake Don: The Chase Begins Again (2006) and its sequel Don 2 (2011), both starring Shah Rukh Khan.
+OTHER FILMS: ["Don: The Chase Begins Again"]
+
+### ITEM e6eaf78083651c15
+PAGE: Engal Kudumbam Perisu
+SENTENCE: The film was remade in Malayalam in 1964 as School Master by Puttanna Kanagal, in Telugu in 1972 as Badi Panthulu and in Tamil in 1973 as School Master.
+OTHER FILMS: ["Badi Panthulu", "School Master (1973 film)"]
+
+### ITEM 72412ea473e6b044
+PAGE: Wanted (2010 film)
+SENTENCE: Produced by Ashok Dhanuka under the banner of Eskay Movies, the film is a remake of 2005 Telugu movie Athadu.
+OTHER FILMS: ["Athadu"]
+
+### ITEM f5ad5061e6843673
+PAGE: Soldier (1998 Indian film)
+SENTENCE: The film was remade in Dhallywood as Jamin Nai in 2000 and Tamil as Villu in 2009.
+OTHER FILMS: ["Villu (film)"]
+
+### ITEM 23ea9cea70c9162c
+PAGE: Malappuram Haji Mahanaya Joji
+SENTENCE: The film was remade in Tamil as Raman Abdullah (1997) and in Telugu as Golmaal (2003).
+OTHER FILMS: ["Raman Abdullah"]
+
+### ITEM ea30e2048ff8b838
+PAGE: Naalaiya Manithan
+SENTENCE: It is a remake of the American film Silent Rage (1982).
+OTHER FILMS: ["Silent Rage"]
+
+### ITEM 044f0338b3a9d717
+PAGE: Thanedaar
+SENTENCE: It is a remake of the Tamil-Telugu bilingual film Anbukku Naan Adimai (1980).
+OTHER FILMS: ["Anbukku Naan Adimai"]
+
+### ITEM c98975d73f2c16a4
+PAGE: Sairat
+SENTENCE: The film was remade in several languages: Manasu Mallige (2017) in Kannada, Channa Mereya (2017) in Punjabi, Laila O Laila (2017) in Odia, Noor Jahaan (2018) in Bengali and Dhadak (2018) in Hindi.
+OTHER FILMS: ["Noor Jahaan"]
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/remakes/statements/r1_017.out.json as a JSON list with one object per item: {"item": "<the code after ITEM>", "links": [{"film": "<title exactly as listed>", "relation": "...", "wording": "..."}]} with one entry in "links" for every film listed under OTHER FILMS. Write nothing else to that file.

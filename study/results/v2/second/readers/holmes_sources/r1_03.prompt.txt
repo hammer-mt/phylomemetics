@@ -1,0 +1,135 @@
+You are helping to build a research corpus about Sherlock Holmes on screen. For each article below, record what THE ARTICLE ITSELF SAYS the work is based on. You are not asked what you know about the work or about the stories.
+
+For each article give:
+- "kind": one of "film", "tv_episode", "tv_film", "video_game", "series" (an article about a whole film series, television series or game series, not one work), "other".
+- "year": the year of first release or broadcast that the article gives (an integer), or null.
+- "holmes_appears": true if the article presents Sherlock Holmes as a character in the work, else false.
+- "sources": a list, possibly empty, of the Conan Doyle stories the article names as a source of the work. Each entry has:
+    "story": the story's title, copied exactly from the list of the 60 canonical stories given below;
+    "tier": "A", "B" or "C" by the rule below;
+    "quote": the sentence or infobox entry of the article that says so, copied word for word (at most 40 words).
+- "other_sources": a list of any source the article names that is not one of the 60 stories (a play, a later novel, another film), as short strings. Empty if none.
+
+The tiers. Use the article's own wording.
+- Tier A, a stated adaptation. The article says outright that the work is an adaptation of the story, is based on it, is a version of it, or dramatises it, with no loosening word. An infobox entry "based on" that names the story counts.
+- Tier B, a stated loose adaptation. The article says the work is loosely, partly or freely based on the story, or is a modern-day or updated adaptation of it, or takes its plot from it while changing it, or is credited as an adaptation although the plot differs.
+- Tier C, elements only. The article says the work is inspired by the story, borrows or uses elements, characters, a device, a line or its title from it, alludes or refers to it, or that critics see a resemblance.
+
+Rules.
+- Use only what the article says about the work's sources. Do not add a source from your own knowledge, and do not infer one from character names or from anything else.
+- If the article names several stories, give each its own entry and its own tier.
+- If the article says the screenplay is original, or names no canonical story as a source, "sources" is an empty list.
+- A statement that the work features characters created by Conan Doyle is not a source statement.
+- A story named only as the source of a DIFFERENT work (an earlier film, a sequel) is not a source of this one.
+
+The 60 canonical stories (copy a title exactly as written here):
+- A Study in Scarlet
+- The Sign of the Four
+- The Hound of the Baskervilles
+- The Valley of Fear
+- A Scandal in Bohemia
+- The Red-Headed League
+- A Case of Identity
+- The Boscombe Valley Mystery
+- The Five Orange Pips
+- The Man with the Twisted Lip
+- The Adventure of the Blue Carbuncle
+- The Adventure of the Speckled Band
+- The Adventure of the Engineer's Thumb
+- The Adventure of the Noble Bachelor
+- The Adventure of the Beryl Coronet
+- The Adventure of the Copper Beeches
+- The Adventure of Silver Blaze
+- The Adventure of the Cardboard Box
+- The Adventure of the Yellow Face
+- The Adventure of the Stockbroker's Clerk
+- The Adventure of the Gloria Scott
+- The Adventure of the Musgrave Ritual
+- The Adventure of the Reigate Squire
+- The Adventure of the Crooked Man
+- The Adventure of the Resident Patient
+- The Adventure of the Greek Interpreter
+- The Adventure of the Naval Treaty
+- The Final Problem
+- The Adventure of the Empty House
+- The Adventure of the Norwood Builder
+- The Adventure of the Dancing Men
+- The Adventure of the Solitary Cyclist
+- The Adventure of the Priory School
+- The Adventure of Black Peter
+- The Adventure of Charles Augustus Milverton
+- The Adventure of the Six Napoleons
+- The Adventure of the Three Students
+- The Adventure of the Golden Pince-Nez
+- The Adventure of the Missing Three-Quarter
+- The Adventure of the Abbey Grange
+- The Adventure of the Second Stain
+- The Adventure of Wisteria Lodge
+- The Adventure of the Red Circle
+- The Adventure of the Bruce-Partington Plans
+- The Adventure of the Dying Detective
+- The Disappearance of Lady Frances Carfax
+- The Adventure of the Devil's Foot
+- His Last Bow (short story)
+- The Adventure of the Mazarin Stone
+- The Problem of Thor Bridge
+- The Adventure of the Creeping Man
+- The Adventure of the Sussex Vampire
+- The Adventure of the Three Garridebs
+- The Adventure of the Illustrious Client
+- The Adventure of the Three Gables
+- The Adventure of the Blanched Soldier
+- The Adventure of the Lion's Mane
+- The Adventure of the Retired Colourman
+- The Adventure of the Veiled Lodger
+- The Adventure of Shoscombe Old Place
+
+The articles follow. The plot summaries have been left out on purpose.
+
+### ARTICLE id 10030670: The Hound of the Baskervilles (1978 film)
+Infobox: {"director": "Paul Morrissey", "writer": "Peter Cook, Dudley Moore & Paul Morrissey (screenplay)"}
+[Lead] The Hound of the Baskervilles is a 1978 British comedy film spoofing the 1902 novel The Hound of the Baskervilles by Sir Arthur Conan Doyle. It stars Peter Cook as Sherlock Holmes and Dudley Moore as Dr. Watson. A number of other well-known British comedy actors appear in the film, including Terry-Thomas and Kenneth Williams.
+[Filming locations] The film was shot at Bray Studios and on location in neighbouring Oakley Court, as the manor house.
+
+### ARTICLE id 8267581: The House of Fear (1945 film)
+Infobox: {"director": "Roy William Neill", "screenplay": "Roy Chanslor"}
+[Lead] The House of Fear is a 1945 Sherlock Holmes crime horror film starring Basil Rathbone and Nigel Bruce. Directed by Roy William Neill, it is loosely based on the 1891 short story "The Five Orange Pips" by Arthur Conan Doyle. It is the 10th film of the Rathbone/Bruce collaboration as Holmes and Dr. Watson.
+
+### ARTICLE id 2175456: A Study in Terror
+Infobox: {"director": "James Hill", "writer": "Derek FordDonald FordHenry Craig (uncredited)", "based_on": "an original story by Derek & Donald Fordbased on characters created by Sir Arthur Conan Doyle"}
+[Lead] A Study in Terror is a 1965 British thriller film directed by James Hill and starring John Neville as Sherlock Holmes and Donald Houston as Dr. Watson. It was filmed at Shepperton Studios, London, with some location work at Osterley House in Middlesex. Although based on Arthur Conan Doyle's characters, the story is an original one, which has the famous detective on the trail of Jack the Ripper. The story of A Study in Terror challenges Sherlock Holmes to solve these horrific crimes. This leads Holmes through a trail of aristocracy, blackmail and family insanity. Unlike Scotland Yard, and the real-life story, Holmes eventually discovers the true identity of the Ripper. The film had its world premiere at the Leicester Square Theatre in the West End of London on 4 November 1965. A Study in Terror presents the first film appearance of Mycroft Holmes.
+[Sir Nigel Films] The movie was from Sir Nigel Films, a company set up by the estate of Sir Arthur Conan Doyle, with the aim of exploiting Doyle's literary works in film and television. Henry Lester, managing director of Sir Nigel said "We felt that the royalties we were receiving from various media outlets bore little relation to profits. Also we were not pleased with the quality of some of the films." Doyle's son Arthur was chairman of the board on the company. In 1963 the Mirisch Company obtained the rights to make The Life of Sherlock Holmes. However, when that project was delayed, the Mirischs gave permission for Sir Nigel to make A Study in Terror and one more film. A Study in Terror was a co production between Sir Nigel Films and Britain's Compton Group, and American producer Herman Cohen. Sir Nigel were entitled to fifty percent of the profits. In 1966 Sir Nigel had plans for five movies and a television series.
+[Production] Development According to producer Herman Cohen, he had been thinking of making a movie about Sherlock Holmes, and so had the producing team of Michael Klinger and Tony Tenser. They decided to team up and Cohen arranged for finance through Columbia. Cohen says the idea of combining Sherlock Holmes and Jack the Ripper came from Donald and Derek Ford, who wrote the first draft. Cohen was not happy with it and arranged for a rewrite from Harry Craig. Shooting The film was shot at Shepperton Studios. Cohen says he had to direct the fire sequence because director James Hill went missing. "Hill had a habit of disappearing," said the producer. "He was a nice guy, but strange. Nobody could get close to him. And he was always fidgety and very nervous."
+[Post-release history] In 1966, the film was made into a novel by Ellery Queen and Paul W. Fairman. The novelisation is unusual in that it adds a framing story wherein Ellery Queen reads a manuscript that re-tells the actions of the film. The framing story was written by Ellery Queen and the novelisation of the film itself by Fairman. The Holmes-Ripper idea was later taken up in Murder by Decree (1978), in which Frank Finlay reprised his role as Lestrade and Anthony Quayle once again had an important part (though this time as Sir Charles Warren of Scotland Yard).
+
+### ARTICLE id 306812: The Great Mouse Detective
+Infobox: {}
+[Lead] The Great Mouse Detective is a 1986 American animated adventure film based on the children's book series Basil of Baker Street by Eve Titus and Paul Galdone and produced by Walt Disney Feature Animation. Directed by John Musker, Dave Michener, Ron Clements, and Burny Mattinson, it features the voices of Vincent Price, Barrie Ingham, Val Bettin, Susanne Pollatschek, Candy Candido, Diana Chesney, Eve Brenner, and Alan Young. The plot follows a mouse detective who undertakes to help a young mouse find and save her father from the criminal mastermind Professor Ratigan. The Great Mouse Detective draws heavily on the tradition of Sherlock Holmes with a heroic mouse who consciously emulates the detective. Titus named the main character after actor Basil Rathbone, who is best remembered for playing Holmes in film (and whose voice, sampled from a 1966 reading of "The Red-Headed League" was the voice of Holmes in this film, nearly 19 years after his death). Sherlock Holmes also mentions "Basil" as one of his aliases in the Arthur Conan Doyle story "The Adventure of Black Peter". The Great Mouse Detective was released to theaters on July 2, 1986, to positive reviews from critics and financial success, in sharp contrast to the box office underperformance of Disney's previous animated feature film, The Black Cauldron (1985). The film's timely success has been credited with keeping Walt Disney Animation going after the previous film's failure by renewing upper management's confidence in the department, thus setting the stage for the Disney Renaissance when feature animated films would become the corporation's most lucrative and prestigious product.
+[Production] The idea of doing an animated film about Sherlock Holmes with animals was first discussed during the production of The Rescuers. Veteran layout artist Joe Hale is credited with suggesting to adapt the children's book series Basil of Baker Street by Eve Titus, but the project fell into development limbo because of the similarities to The Rescuers. In 1982, Ron Clements proposed adapting the children's book series into an animated feature and, along with story artist Pete Young, it was pitched to Disney president Ron Miller, who approved the project. Earlier in his career, Clements created a 15-minute Sherlock Holmes animated short recorded on Super 8 film. Because the animators were displeased with the direction The Black Cauldron was heading, Basil of Baker Street was approved as an alternative project. Burny Mattinson and John Musker were assigned as the original directors while Dave Michener was also added as co-director. Miller became the producer for the film. The first idea for the victim was for Olivia—then an older and potential love interest whom Dawson falls for, but Miller suggested the character be "a little girl, someone they [the audience] can feel sorry for." One of the dropped characters was a stool pigeon who always hung around Buckingham Palace and tipped Basil off about the skullduggery. The writers dropped the characters deciding for Basil to figure it out for himself. With the departure of Miller in 1984, the board of directors appointed Michael Eisner, who had resigned from Paramount Pictures, to become the new CEO. Eisner recruited former production head Jeffrey Katzenberg to become studio chairman over Disney's film division. Following a story reel screening of Basil, Eisner and Katzenberg complained about the slow pacing of the story and ordered for rewrites before animation would commence. Although the intended release was set for Christmas 1987, Eisner slashed the projected production budget at $24 million in half where it was green-lit at $10 million and moved the release date up to July 1986 giving the production team one year to complete the film. To replace Miller who had been producer, Feature Animation chairman Roy E. Disney assigned Mattinson to serve as director/producer, but finding both tasks much too laborious, Mattinson decided to remain as producer. Musker and Michener remained as directors, but with the shortened production schedule, Clements became an additional director. Following the box office under-performance of the 1985 Paramount/Amblin film Young Sherlock Holmes, Eisner decided to rename Basil of Baker Street into The Great Mouse Detective, feeling the name "Basil" was "too English". The re-titling of the film proved to be unpopular with the filmmakers so much that animator Ed Gombert wrote a satirical interoffice memo, allegedly by studio executive Peter Schneider, which gave preceding Disney films generic titles such as Seven Little Men Help a Girl, The Wonderful Elephant Who Could Really Fly, The Little Deer Who Grew Up, The Girl with the See-through Shoes, Two Dogs Fall in Love, Puppies Taken Away, and A Boy, a Bear and a Big Black Cat. Some of the generic titles later became part of a category on the January 1, 1987 episode of Jeopardy!. Casting Following a succession of American and British actors who read for the part of Basil, Royal Shakespeare actor Barrie Ingham won the role within six minutes of his audition. Val Bettin was co-director Ron Clements's first choice for Dawson. For Olivia, Susanne Pollatschek was selected over hundreds of other applicants while Alan Young, who had voiced Scrooge McDuck for Mickey's Christmas Carol, was selected to voice her father Hiriam because of his authentic Scottish brogue. When the filmmakers watched the 1950 comedy film Champagne for Caesar to study Ronald Colman's performance as a possible model for Basil, they immediately decided to cast Vincent Price, who also starred in the film, as Ratigan. A veteran actor for 52 years, Price was willing to do an audition commenting "If anybody but Disney had asked me, I would have been offended." Following a voice test, veteran voice artist Candy Candido recorded his dialogue for Fidget in one hour. To heighten the pitch, the tape recording of his voice was sped up. Candido's natural voice was kept for one character shouting "Get off, you eight-legged bum." Animation Basil was first modeled on Bing Crosby, but the animators eventually took inspiration from Leslie Howard. Initially, Ratigan had been designed as thin, weasely, and ratlike. Following the screening of Champagne for Caesar, Glen Keane noted that following the casting of Price, "his expressive voice and attitude inspired us to further redesign the character." Additionally, during one story meeting, Glen Keane decided to base the stature of Ratigan on then-Disney CEO Ron Miller, who was a 6'6" former football player for the Los Angeles Rams. Furthermore, Keane lifted his personality as he was thumbing through these "photographs of people of London in the 1800s, of railroad men, and there was this one guy smoking a cigar—he had a top hat and there was just something about this guy—this Ratigan... this rat sucking the cigar, completely dressed to the hilt, he was sharp and perfect—he's a sewer rat dressed like a king and he lives as a king!" The following supervising animators included Mark Henn for Basil, Hendel Butoy for Dawson, Rob Minkoff for Olivia, Andreas Deja for Queen Moustoria, Ruben Aquino for Mrs. Judson, and Mike Gabriel for Toby and Felicia. The original finale was to take place on the hands of Big Ben with Ratigan eventually falling to his demise. However, layout artist Mike Peraza approached Musker with the idea of restaging the final confrontation so the characters would break through the face of Big Ben with the grinding clockwork gears providing added menace, in which Musker agreed. Peraza's inspiration for the scene was a Japanese anime film, The Castle of Cagliostro (1979), the feature film debut of animator Hayao Miyazaki which is part of the Lupin III franchise; The Castle of Cagliostro, which Peraza was a fan of, featured a climactic scene involving characters amidst giant turning gears in a clock tower. Pereza and his team was sent to London for video reference and were granted unprecedented access to the clockworks inside Big Ben. Because the bells would chime at every quarter-hour, the team completed their research in one hour. Animators Phil Nibbelink and Tad Gielow spent months designing the interior of Big Ben at the Feature Animation building, with each gear produced as wire-frame graphics on a computer that was printed out and traced onto animation cels onto which the colors and characters were added. The two-minute climax scene thus used computer-generated imagery (CGI), making it the first Disney film to extensively use computer animation, a fact that Disney used to promote the film during marketing. The film was the last work to feature Eric Larson as an animation
+
+### ARTICLE id 34402549: Der Hund von Baskerville
+Infobox: {"director": "Rudolf Meinert", "writer": "Richard Oswald"}
+[Lead] Der Hund von Baskerville is a 1914 German silent film adaptation of Arthur Conan Doyle's 1902 novel The Hound of the Baskervilles, the first film adaptation of the work. According to the website silentera.com, the film was considered lost, but has been rediscovered; the Russian Gosfilmofond film archive possesses a print, while the Filmmuseum München has a 35mm positive print. In 2019, the film received a wide home media release by Flicker Alley, along with the 1929 version.
+[History] In 1907, Richard Oswald mounted a version of The Hound of the Baskervilles in Praterstraße based on Der Hund von Baskerville: Schauspiel in vier Aufzügen aus dem Schottischen Hochland. Frei nach Motiven aus Poes und Doyles Novellen (The Hound of the Baskervilles: a play in four acts set in the Scottish Highlands. Freely adapted from the stories of Poe and Doyle) which was written by Ferdinand Bonn. By 1914, Oswald was working as a script supervisor at Union-Vitascope studios in the Weißensee Studios. Films based on mystery novels were very successful in German cinema at the time so Oswald found himself in the position to pen a film script based on The Hound of the Baskervilles.
+[Production] Richard Oswald penned the tale which blended Doyle's original story and Der Hund von Baskerville and Rudolf Meinert was tasked with the direction. Alwin Neuß was cast to portray Sherlock Holmes in Der Hund von Baskerville. Neuß had previously played the role in 1910's Das Milliontestament. Der Hund von Baskerville was so successful, it spawned five more films: Das einsame Haus, Das unheimliche Zimmer, Die Sage vom Hund von Baskerville, Dr. MacDonalds Sanatorium, and Das Haus ohne Fenster. Neuß played Holmes in the first three sequels, but was replaced in the last two by Erich Kaiser-Titz.
+
+### ARTICLE id 8101785: Sherlock Holmes: The Case of the Silver Earring
+Infobox: {"developer": "Frogwares", "series": "Sherlock Holmes", "released": "WindowsWii", "genre": "Adventure"}
+[Lead] Sherlock Holmes: The Case of the Silver Earring (known in North America as Secret of the Silver Earring and as Sherlock Holmes: The Silver Earring) is a 2004 adventure game developed by Frogwares and published for Windows by Digital Jesters in Europe and Ubisoft in North America. While the game is "inspired by The Adventures of Sherlock Holmes", it uses an original plotline — set in London in 1897 — and allows the player to investigate a murder as Sherlock Holmes and Dr. John H. Watson. By 2010, Secret of the Silver Earring had sold 500,000 copies worldwide. A version for Wii was released in Australia and Europe in 2011. The second in the Sherlock Holmes series of adventure games developed by Frogwares, it was preceded by the 2002 game Sherlock Holmes: The Mystery of the Mummy, and was followed by Sherlock Holmes: The Awakened in 2007. The game acts as a prequel to Mystery of the Mummy - despite being released two years after the earlier game, it is actually set two years earlier (in 1897 as opposed to 1899).
+[Development] Development of the game started in January 2003. The game's story and design is credited to Jalil Amr, based on an unpublished pastiche novel by Amr. Both sound and voiceovers for the English version are credited to Pteroduction Sound, Alexander Dudko, and Sergey Geraschenko. Unlike the English version, however, the German voice cast is listed at the Internet Movie Database. Music within the game consists of compositions by Antonín Dvořák, Edvard Grieg, Robert Schumann, and Pyotr Tchaikovsky.
+
+### ARTICLE id 3524282: Dressed to Kill (1946 film)
+Infobox: {"director": "Roy William Neill", "writer": "Frank GruberLeonard Lee"}
+[Lead] Dressed to Kill is a 1946 American mystery film directed by Roy William Neill. Released by Universal Pictures, it is the last of fourteen films starring Basil Rathbone as Sherlock Holmes and Nigel Bruce as Doctor Watson. It is also known by the alternative titles Prelude to Murder (working title) and Sherlock Holmes and the Secret Code in the United Kingdom. The film has an original story, but combines elements of the short stories "The Adventure of the Six Napoleons" and "A Scandal in Bohemia." It is one of four films in the series which are in the public domain and is available online.
+
+### ARTICLE id 1764629: Sherlock: The Riddle of the Crown Jewels
+Infobox: {"developer": "Challenge, Inc.", "released": "Release 21: December 14, 1987Release 26: January 27, 1988", "genre": "Interactive fiction"}
+[Lead] Sherlock: The Riddle of the Crown Jewels is an interactive fiction game designed by Bob Bates and published by Infocom in 1987. It was released for the Apple II, MS-DOS Commodore 64, Amiga, and Mac. Sherlock is based on the legendary fictional detective Sherlock Holmes, created by Sir Arthur Conan Doyle. It is Infocom's thirty-first game and is the first of two Infocom games developed by Challenge, Inc. using Infocom's development tools.
+[Production] Sherlock: The Riddle of the Crown Jewels was the first Infocom game to be developed by another company, Challenge Inc, published by Infocom in their "Immortal Legends" genre. The only other game published in this line was Arthur: The Quest for Excalibur, also written by Bates.
+
+### ARTICLE id 18702162: A Study in Scarlet (1933 film)
+Infobox: {"director": "Edwin L. Marin", "screenplay": "Robert Florey"}
+[Lead] A Study in Scarlet is a 1933 American pre-Code horror mystery thriller film directed by Edwin L. Marin and starring Reginald Owen as Sherlock Holmes and Anna May Wong as Mrs. Pyke. The title is taken from Arthur Conan Doyle's 1887 novel of the same name, the first in the Holmes series, but the screenplay by Robert Florey was original.
+[Production] Despite her billing, Anna May Wong only appears on screen for under ten minutes. Reginald Owen had played Dr. Watson in Sherlock Holmes the previous year. Owen was one of a small number of actors to play both Holmes and Watson. Owen is also credited for "Continuity and dialogue" since he co-wrote the screenplay with Florey. Merrydew's name may have been inspired by the villain referred to by Holmes as "Merridew of abominable memory" in The Adventure of the Empty House. The character Jabez Wilson shares the same name as the main character in the Holmes story The Red-Headed League, although there is no connection between that story and the film.
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/tiers/r1_03.out.json as a JSON list with one object per article, each with the keys "id" (the number after "ARTICLE id"), "kind", "year", "holmes_appears", "sources", "other_sources". Write nothing else to that file.

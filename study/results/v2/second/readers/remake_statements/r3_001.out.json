@@ -1,0 +1,16 @@
+[
+  {
+    "item": "69e8a7c3777cc295",
+    "links": [
+      {"film": "Judwaa", "relation": "other_remakes_page", "wording": "firm"},
+      {"film": "Judwaa 2", "relation": "other_remakes_page", "wording": "firm"},
+      {"film": "Cheluva", "relation": "other_remakes_page", "wording": "firm"}
+    ]
+  },
+  {
+    "item": "cf1b1fbf4efe1c10",
+    "links": [
+      {"film": "Walter Vetrivel", "relation": "page_remakes_other", "wording": "firm"}
+    ]
+  }
+]

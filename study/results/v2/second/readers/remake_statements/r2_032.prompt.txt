@@ -1,0 +1,77 @@
+You are helping to build a research corpus of film remakes from Wikipedia. Each item below gives the title of a film's Wikipedia page (PAGE), ONE sentence from the opening of that page, and the OTHER FILMS that sentence links to. For each other film, record what THE SENTENCE SAYS about PAGE and that film. You are not asked what you know about the films.
+
+For each other film give:
+- "relation":
+    "page_remakes_other"   the sentence says PAGE is a remake of the other film;
+    "other_remakes_page"   the sentence says the other film is a remake of PAGE (for example "it was remade in Telugu as ...");
+    "none"                 anything else.
+- "wording":
+    "firm"    the sentence states the remake plainly as a fact: "is a remake of", "an official remake of", "was remade as", "was remade in Hindi as";
+    "loose"   the sentence weakens or hedges it: "loosely", "partly", "unofficial", "uncredited", "inspired by", "based on the idea of", "reported to be", "said to be", "has been described as", "considered", "similar to", "reboot", "reimagining", "re-adaptation";
+    "" when the relation is "none".
+
+Rules.
+- Use only what the sentence says. Do not use your own knowledge of the films, and do not guess from titles or years.
+- If the sentence lists several films as remakes of PAGE, each of them is "other_remakes_page".
+- If the sentence says PAGE is a remake of X, and that X is itself a remake of or based on Y, then X is "page_remakes_other" and Y is "none", unless the sentence also says PAGE is a remake of Y.
+- "none" covers: a sequel, prequel or spin-off; a film that is only compared or mentioned; another remake of the same original (a sibling); a film based on the same novel, play or true story that the sentence does not call a remake; a film whose remake status the sentence denies; a dubbed version; a film shot at the same time in another language ("simultaneously", "bilingual").
+- If you cannot tell which film the word "remake" or "remade" applies to, answer "none".
+
+The items follow.
+
+### ITEM 119eabcd0eae5bfa
+PAGE: Soggadu (2005 film)
+SENTENCE: It was unofficially remade in Hindi as Ajab Prem Ki Ghazab Kahani (2009).
+OTHER FILMS: ["Ajab Prem Ki Ghazab Kahani"]
+
+### ITEM 43688096d5bc9532
+PAGE: Chirutha
+SENTENCE: This film is an unofficial copy/remake of Swept Away (2002 film) directed by Guy Ritchie.
+OTHER FILMS: ["Swept Away (2002 film)"]
+
+### ITEM a4e2fb37e45effee
+PAGE: Political Rowdy
+SENTENCE: The film is a remake of the Tamil movie Adi Thadi.
+OTHER FILMS: ["Adi Thadi"]
+
+### ITEM 2f4742cc85c78bdb
+PAGE: Maro Charitra
+SENTENCE: This film was also remade in Kannada as Love Story (2005) and remade into a 2010 Telugu film with the same title.
+OTHER FILMS: ["Maro Charitra (2010 film)"]
+
+### ITEM 2a85f8a2eebff24b
+PAGE: Dharma Daata
+SENTENCE: It is a remake of the Tamil film Enga Oor Raja (1968), and was a box office success.
+OTHER FILMS: ["Enga Oor Raja"]
+
+### ITEM b1c6afb9691ea9f2
+PAGE: Akkada Ammayi Ikkada Abbayi
+SENTENCE: It is an official remake of the 1988 Hindi film Qayamat Se Qayamat Tak.
+OTHER FILMS: ["Qayamat Se Qayamat Tak"]
+
+### ITEM 0161990a28c7b036
+PAGE: Nava Vasantham
+SENTENCE: The film is a remake of the director's own Tamil film Punnagai Desam (2002), which also starred Tarun.
+OTHER FILMS: ["Punnagai Desam"]
+
+### ITEM 5cbc197b6dbcf38a
+PAGE: Kshanam (film)
+SENTENCE: It was later remade in several other languages: Tamil as Sathya (2017), in Hindi as Baaghi 2 (2018), in Kannada as Aadyaa (2020), and in Sinhala as Kidnap (2023).
+OTHER FILMS: ["Sathya (2017 Tamil film)"]
+
+### ITEM 89562e1fb949e937
+PAGE: Shubha Lagnam
+SENTENCE: The film was remade in Tamil as Irattai Roja (1996), in Hindi as Judaai (1997), in Kannada as Ganga Yamuna (1997) and in Malayalam as Sundara Purushan (2001).
+OTHER FILMS: ["Irattai Roja", "Judaai (1997 film)", "Sundara Purushan (2001 film)"]
+
+### ITEM 71accd26f0338872
+PAGE: Swapnalokam
+SENTENCE: It is a remake of the 1994 Hindi film Kabhi Haan Kabhi Naa directed by Kundan Shah.
+OTHER FILMS: ["Kabhi Haan Kabhi Naa"]
+
+### ITEM 39cfa4b9bccd887f
+PAGE: Donga Dongadi
+SENTENCE: The film is remake of director's own 2003 Tamil-language film Thiruda Thirudi starring Dhanush and Chaya Singh.
+OTHER FILMS: ["Thiruda Thirudi"]
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/remakes/statements/r2_032.out.json as a JSON list with one object per item: {"item": "<the code after ITEM>", "links": [{"film": "<title exactly as listed>", "relation": "...", "wording": "..."}]} with one entry in "links" for every film listed under OTHER FILMS. Write nothing else to that file.

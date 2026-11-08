@@ -1,0 +1,222 @@
+You are helping to build a research corpus of film remakes from Wikipedia. Each item below gives the title of a film's Wikipedia page (PAGE), ONE sentence from the opening of that page, and the OTHER FILMS that sentence links to. For each other film, record what THE SENTENCE SAYS about PAGE and that film. You are not asked what you know about the films.
+
+For each other film give:
+- "relation":
+    "page_remakes_other"   the sentence says PAGE is a remake of the other film;
+    "other_remakes_page"   the sentence says the other film is a remake of PAGE (for example "it was remade in Telugu as ...");
+    "none"                 anything else.
+- "wording":
+    "firm"    the sentence states the remake plainly as a fact: "is a remake of", "an official remake of", "was remade as", "was remade in Hindi as";
+    "loose"   the sentence weakens or hedges it: "loosely", "partly", "unofficial", "uncredited", "inspired by", "based on the idea of", "reported to be", "said to be", "has been described as", "considered", "similar to", "reboot", "reimagining", "re-adaptation";
+    "" when the relation is "none".
+
+Rules.
+- Use only what the sentence says. Do not use your own knowledge of the films, and do not guess from titles or years.
+- If the sentence lists several films as remakes of PAGE, each of them is "other_remakes_page".
+- If the sentence says PAGE is a remake of X, and that X is itself a remake of or based on Y, then X is "page_remakes_other" and Y is "none", unless the sentence also says PAGE is a remake of Y.
+- "none" covers: a sequel, prequel or spin-off; a film that is only compared or mentioned; another remake of the same original (a sibling); a film based on the same novel, play or true story that the sentence does not call a remake; a film whose remake status the sentence denies; a dubbed version; a film shot at the same time in another language ("simultaneously", "bilingual").
+- If you cannot tell which film the word "remake" or "remade" applies to, answer "none".
+
+The items follow.
+
+### ITEM 65f3a547e4cb5fe7
+PAGE: Billa (2009 film)
+SENTENCE: It is the remake of 2007 Tamil language film Billa, which itself is a remake of 1980 film Billa, and that itself was a remake of 1978 Hindi film Don.
+OTHER FILMS: ["Billa (2007 film)", "Billa (1980 film)", "Don (1978 film)"]
+
+### ITEM 003fc11a78b36c40
+PAGE: Current Theega
+SENTENCE: This film is a remake of the 2013 Tamil film Varuthapadatha Valibar Sangam and was a commercial success just like the original.
+OTHER FILMS: ["Varuthapadatha Valibar Sangam"]
+
+### ITEM 580e99cf17cd813c
+PAGE: Vaana (film)
+SENTENCE: It is a remake of the 2006 Kannada-language film Mungaru Male.
+OTHER FILMS: ["Mungaru Male"]
+
+### ITEM 4c4f2128fb7e972f
+PAGE: Akka Chellelu
+SENTENCE: The film was a remake of the Tamil film Akka Thangai (1969).
+OTHER FILMS: ["Akka Thangai"]
+
+### ITEM a24284c5c0bf0bfa
+PAGE: Budget Padmanabham
+SENTENCE: The film is a remake of the Tamil movie Budget Padmanabhan (2000).
+OTHER FILMS: ["Budget Padmanabhan"]
+
+### ITEM dcd0ef99a5704c2c
+PAGE: Bale Bale Magadivoy
+SENTENCE: It was remade in Kannada as Sundaranga Jaana in 2016 and in Tamil as Ghajinikanth in 2018.
+OTHER FILMS: ["Sundaranga Jaana"]
+
+### ITEM 8b1dd36a692126e3
+PAGE: Driver Ramudu
+SENTENCE: It was remade in Tamil as Lorry Driver Rajakannu (1981) and in Hindi as Tarkeeb (1984).
+OTHER FILMS: ["Tarkeeb"]
+
+### ITEM f7b9ec709154f887
+PAGE: Athaku Yamudu Ammayiki Mogudu
+SENTENCE: It was eventually remade in Tamil twice as Maapillai (1989) and Mappillai (2011), in Kannada as Bhale Chathura (1990), in Hindi as Jamai Raja (1990), in Malayalam as ''[[Mr.
+OTHER FILMS: ["Mappillai (1989 film)", "Mappillai (2011 film)"]
+
+### ITEM 77ac7d740f957e50
+PAGE: Sankranthi (film)
+SENTENCE: It is a remake of the 2001 Tamil film Aanandham.
+OTHER FILMS: ["Aanandham"]
+
+### ITEM d862fdbc4ad6ae5e
+PAGE: Sreeram
+SENTENCE: It is a remake of the Tamil film, Dhill (2001), which starred Vikram and Laila.
+OTHER FILMS: ["Dhill"]
+
+### ITEM db977e75f83a1dda
+PAGE: Kondapalli Raja
+SENTENCE: The film is a remake of the 1987 Hindi movie Khudgarz which in turn was based on Jeffrey Archer's 1979 novel Kane and Abel.
+OTHER FILMS: ["Khudgarz"]
+
+### ITEM f1b0b195211ebecd
+PAGE: Dhenikaina Ready
+SENTENCE: The film was remade in Bengali as Khiladi (2013).
+OTHER FILMS: ["Khiladi (2013 film)"]
+
+### ITEM 740400b404f9d941
+PAGE: Andala Ramudu (2006 film)
+SENTENCE: This movie is the remake of Tamil film Sundara Purushan.
+OTHER FILMS: ["Sundara Purushan (1996 film)"]
+
+### ITEM cf1b1fbf4efe1c10
+PAGE: S. P. Parasuram
+SENTENCE: This was due to the fact that another remake of Walter Vetrivel (1993) known as Khuddar (1994) which was a Hindi language adaptation was released 3 months earlier and Khuddar (1994) was having a good run at the theatres especially in Hyderabad.
+OTHER FILMS: ["Walter Vetrivel"]
+
+### ITEM 46a7c7c02370d294
+PAGE: Sharada (1973 film)
+SENTENCE: The film is a remake of the 1972 Kannada movie Yaava Janmada Maitri which was also remade in Tamil as Radha (1973) and in Hindi as Dulhan (1975).
+OTHER FILMS: ["Dulhan (1975 film)"]
+
+### ITEM 39cfa4b9bccd887f
+PAGE: Donga Dongadi
+SENTENCE: The film is remake of director's own 2003 Tamil-language film Thiruda Thirudi starring Dhanush and Chaya Singh.
+OTHER FILMS: ["Thiruda Thirudi"]
+
+### ITEM 4b936de2aed916a0
+PAGE: Ganga Manga
+SENTENCE: The film was a remake of the Hindi film Seeta Aur Geeta.
+OTHER FILMS: ["Seeta Aur Geeta"]
+
+### ITEM ecce422878f48878
+PAGE: C.I.D. (1965 film)
+SENTENCE: The film is a remake of the Tamil movie Dheiva Thaai (1964).
+OTHER FILMS: ["Dheiva Thaai"]
+
+### ITEM 0e7685c3ad845f0c
+PAGE: Raja (1999 film)
+SENTENCE: The film was a remake of the Tamil film Unnidathil Ennai Koduthen (1998).
+OTHER FILMS: ["Unnidathil Ennai Koduthen"]
+
+### ITEM ca695b4c91a762c1
+PAGE: Tuntari
+SENTENCE: The film is a remake of the Tamil film Maan Karate and was released to mixed reviews.
+OTHER FILMS: ["Maan Karate"]
+
+### ITEM abb9d5c96a66ac04
+PAGE: Mirchi (film)
+SENTENCE: It was remade in Kannada as Maanikya (2014), in Bengali as Bindaas (2014) and in Odia as Biswanath (2022).
+OTHER FILMS: ["Maanikya"]
+
+### ITEM ff75977b4f86c7a1
+PAGE: Satyam Shivam
+SENTENCE: The film is a remake of the Hindi film Suhaag (1979).
+OTHER FILMS: ["Suhaag (1979 film)"]
+
+### ITEM 69b454db4790686a
+PAGE: Shankardada Zindabad
+SENTENCE: The film is a remake of the 2006 Hindi film Lage Raho Munnabhai and a sequel to Shankar Dada MBBS (2004).
+OTHER FILMS: ["Shankar Dada MBBS"]
+
+### ITEM de88682fc13100ed
+PAGE: Brahmachari (Telugu film)
+SENTENCE: The film was remade in Hindi as Ek Nari Ek Brahmachari (1971).
+OTHER FILMS: ["Ek Nari Ek Brahmachari"]
+
+### ITEM 315c4ab1c0a4b78d
+PAGE: Joker (1993 film)
+SENTENCE: The film is a remake of the Malayalam movie Kilukkampetti (1991), which was later remade as Hindi movie Pyaar Impossible! (2010).
+OTHER FILMS: ["Kilukkampetti", "Pyaar Impossible!"]
+
+### ITEM a2ec288d056122e4
+PAGE: Cheppave Chirugali
+SENTENCE: It is the Telugu remake of his own 2002 Tamil film Unnai Ninaithu with Ramji, Pandu and Visweswara Rao reprising their roles and Ramesh Khanna in a different role.
+OTHER FILMS: ["Unnai Ninaithu"]
+
+### ITEM 1e240530b61e289e
+PAGE: Potugadu
+SENTENCE: It is a remake of his 2012 Kannada film Govindaya Namaha.
+OTHER FILMS: ["Govindaya Namaha"]
+
+### ITEM 10b612e5967d9d79
+PAGE: Snehamante Idera
+SENTENCE: Though it is remade from the Malayalam original, the Telugu version mostly retained the format of the film's Tamil version.
+OTHER FILMS: ["Friends (2001 film)"]
+
+### ITEM b6f81fd3aa4063f7
+PAGE: Chinarayudu
+SENTENCE: The film was a remake of the Tamil film Chinna Gounder.
+OTHER FILMS: ["Chinna Gounder"]
+
+### ITEM d7afd4a84327215f
+PAGE: City of Damnation
+SENTENCE: City of Damnation is a 2009 South Korean action comedy film directed by Kim Dong-won and is a remake of the 2002 Hong Kong film Infernal Affairs.
+OTHER FILMS: ["Infernal Affairs"]
+
+### ITEM 80af3a043eafb190
+PAGE: Allari Mogudu
+SENTENCE: The film was remade in Kannada as Gadibidi Ganda (1993), in Tamil as Veera (1994), in Hindi as Saajan Chale Sasural (1996).
+OTHER FILMS: ["Veera (1994 film)", "Saajan Chale Sasural"]
+
+### ITEM 02b375aef9112bad
+PAGE: Guru (2017 film)
+SENTENCE: The film is remake of Kongara's own film Irudhi Suttru/Saala Khadoos (2016).
+OTHER FILMS: ["Irudhi Suttru"]
+
+### ITEM f02a40cff3a73abc
+PAGE: Kandireega
+SENTENCE: It was remade in Bengali as Paglu 2 and Hindi as Main Tera Hero (2014).
+OTHER FILMS: ["Paglu 2", "Main Tera Hero"]
+
+### ITEM 7b153fbff07e7375
+PAGE: Oosaravelli
+SENTENCE: It was later remade in Bengali as Rocky in 2013.
+OTHER FILMS: ["Rocky (2013 film)"]
+
+### ITEM aa7737743c430550
+PAGE: Khaidi No.786
+SENTENCE: The film is a remake of the 1986 Tamil film Amman Kovil Kizhakale, and was released on 10 June 1988.
+OTHER FILMS: ["Amman Kovil Kizhakale"]
+
+### ITEM b671d857ac185a20
+PAGE: Dasara Bullodu
+SENTENCE: The film was later remade in Hindi as Raaste Pyar Ke (1982) by the same banner and director.
+OTHER FILMS: ["Raaste Pyar Ke"]
+
+### ITEM d45d590b16c2000a
+PAGE: Narasimha Naidu
+SENTENCE: It was remade into Tamil as Ezhumalai (2002) starring Arjun with Simran reprising her role.
+OTHER FILMS: ["Ezhumalai"]
+
+### ITEM 69ed1739f85cb764
+PAGE: Ooriki Monagadu
+SENTENCE: Ooruki Monagadu was later remade twice in Hindi as Himmatwala: first in 1983 and again in 2013.
+OTHER FILMS: ["Himmatwala (1983 film)", "Himmatwala (2013 film)"]
+
+### ITEM 2325efc92a6ec8a6
+PAGE: Chakravarthy (1987 film)
+SENTENCE: Starring Chiranjeevi, Mohan Babu, Bhanupriya and Ramya Krishna, the film is a remake of the Tamil film Gnana Oli (1972).
+OTHER FILMS: ["Gnana Oli"]
+
+### ITEM 1e916cae62280298
+PAGE: Takkari
+SENTENCE: It is a remake of Tamil language film, Thiruvilaiyaadal Aarambam.
+OTHER FILMS: ["Thiruvilaiyaadal Aarambam"]
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/remakes/statements/r1_029.out.json as a JSON list with one object per item: {"item": "<the code after ITEM>", "links": [{"film": "<title exactly as listed>", "relation": "...", "wording": "..."}]} with one entry in "links" for every film listed under OTHER FILMS. Write nothing else to that file.

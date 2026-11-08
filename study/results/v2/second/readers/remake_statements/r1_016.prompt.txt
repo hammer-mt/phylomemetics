@@ -1,0 +1,222 @@
+You are helping to build a research corpus of film remakes from Wikipedia. Each item below gives the title of a film's Wikipedia page (PAGE), ONE sentence from the opening of that page, and the OTHER FILMS that sentence links to. For each other film, record what THE SENTENCE SAYS about PAGE and that film. You are not asked what you know about the films.
+
+For each other film give:
+- "relation":
+    "page_remakes_other"   the sentence says PAGE is a remake of the other film;
+    "other_remakes_page"   the sentence says the other film is a remake of PAGE (for example "it was remade in Telugu as ...");
+    "none"                 anything else.
+- "wording":
+    "firm"    the sentence states the remake plainly as a fact: "is a remake of", "an official remake of", "was remade as", "was remade in Hindi as";
+    "loose"   the sentence weakens or hedges it: "loosely", "partly", "unofficial", "uncredited", "inspired by", "based on the idea of", "reported to be", "said to be", "has been described as", "considered", "similar to", "reboot", "reimagining", "re-adaptation";
+    "" when the relation is "none".
+
+Rules.
+- Use only what the sentence says. Do not use your own knowledge of the films, and do not guess from titles or years.
+- If the sentence lists several films as remakes of PAGE, each of them is "other_remakes_page".
+- If the sentence says PAGE is a remake of X, and that X is itself a remake of or based on Y, then X is "page_remakes_other" and Y is "none", unless the sentence also says PAGE is a remake of Y.
+- "none" covers: a sequel, prequel or spin-off; a film that is only compared or mentioned; another remake of the same original (a sibling); a film based on the same novel, play or true story that the sentence does not call a remake; a film whose remake status the sentence denies; a dubbed version; a film shot at the same time in another language ("simultaneously", "bilingual").
+- If you cannot tell which film the word "remake" or "remade" applies to, answer "none".
+
+The items follow.
+
+### ITEM 59efcddc63c5c984
+PAGE: Do Bhai (1969 film)
+SENTENCE: Though the story of this movie is credited only to Salim Khan, the core plot went on to be partially rehashed by the Salim–Javed duo for their debut South Indian movie as original story writers - the 1976 Kannada movie Premada Kanike which was also later remade in Tamil in 1980 as Polladhavan and in Hindi in 1981 as Raaz.
+OTHER FILMS: ["Polladhavan (1980 film)"]
+
+### ITEM 3fa6eb77f52913d3
+PAGE: Traffic (2011 film)
+SENTENCE: It was remade into Tamil as Chennaiyil Oru Naal, in Kannada as Crazy Star and in Hindi, under the same name.
+OTHER FILMS: ["Chennaiyil Oru Naal"]
+
+### ITEM 382f2a19ae6491c8
+PAGE: Premer Kahini
+SENTENCE: The movie is a remake of 2006 Kannada film Mungaru Male.
+OTHER FILMS: ["Mungaru Male"]
+
+### ITEM 333e3bab4efac5a2
+PAGE: Gaja (2008 film)
+SENTENCE: It is a remake of the 2005 Telugu film Bhadra.
+OTHER FILMS: ["Bhadra (2005 film)"]
+
+### ITEM ea22fff62a6c3ec3
+PAGE: Hemlock Society (film)
+SENTENCE: It was remade into Marathi in 2015 as Welcome Zindagi.
+OTHER FILMS: ["Welcome Zindagi"]
+
+### ITEM f3442b4b470318fc
+PAGE: Aptharakshaka
+SENTENCE: The movie was remade in Telugu as Nagavalli (2010).
+OTHER FILMS: ["Nagavalli (film)"]
+
+### ITEM 500c4096d1c36a5f
+PAGE: Chhoti Si Baat
+SENTENCE: The film is a remake of the 1960 British film School for Scoundrels.
+OTHER FILMS: ["School for Scoundrels (1960 film)"]
+
+### ITEM a6eae8dfcdf91cb1
+PAGE: Hitman (2014 film)
+SENTENCE: The film is a remake of 2012 Tamil blockbuster film Vettai.
+OTHER FILMS: ["Vettai"]
+
+### ITEM b1b800723d842e71
+PAGE: Raja Chinna Roja
+SENTENCE: It is a remake of the 1971 Bengali film Jay Jayanti, which itself is based on the 1965 film The Sound of Music.
+OTHER FILMS: ["The Sound of Music (film)"]
+
+### ITEM aac40bd17b1de20b
+PAGE: Policegiri
+SENTENCE: The film is the official remake of the 2003 Tamil film Saamy, directed by Hari.
+OTHER FILMS: ["Saamy"]
+
+### ITEM 4b863acb942aaf66
+PAGE: Holiday (2014 film)
+SENTENCE: It is an official remake of Murugadoss' own 2012 Tamil film Thuppakki (2012) and follows an Indian Army officer who arrives in Mumbai on vacation and sets out to hunt down the terrorist leader of a sleeper cell network and deactivate the sleeper cells operating under his command.
+OTHER FILMS: ["Thuppakki"]
+
+### ITEM 27c307fa244cdb33
+PAGE: Alaipayuthey (film)
+SENTENCE: Alaipayuthey was later remade and released in Hindi in 2002, as Saathiya, directed by Shaad Ali.
+OTHER FILMS: ["Saathiya (film)"]
+
+### ITEM cc051b0f64ab3011
+PAGE: Kadhal Kottai
+SENTENCE: It was remade in Kannada as Yaare Neenu Cheluve (1998), in Bengali as Hothat Brishti (1998) and in Hindi as Sirf Tum (1999) by the same director.
+OTHER FILMS: ["Hothat Brishti"]
+
+### ITEM c207c614839d79fe
+PAGE: Pammal K. Sambandam
+SENTENCE: It was later remade in Hindi as Kambakkht Ishq in 2009.
+OTHER FILMS: ["Kambakkht Ishq"]
+
+### ITEM 7b2f78dee7765322
+PAGE: Cinema Paithiyam
+SENTENCE: It is a remake of the Hindi film Guddi (1971).
+OTHER FILMS: ["Guddi (1971 film)"]
+
+### ITEM 15a0ac3b0d34c664
+PAGE: Ente Veedu Appoontem
+SENTENCE: It was remade in Tamil as Kannadi Pookal in 2005.
+OTHER FILMS: ["Kannadi Pookal"]
+
+### ITEM b039e9a9b6b0736b
+PAGE: Saavi (film)
+SENTENCE: It is a remake of the 1985 Hindi film Aitbaar which in turn is based on the 1954 American classic Dial M for Murder.
+OTHER FILMS: ["Aitbaar", "Dial M for Murder"]
+
+### ITEM 46be88443199e4c2
+PAGE: Broken Oath
+SENTENCE: It is an unofficial remake of the 1973 film Lady Snowblood, itself an adaptation of the manga series of the same name by Kazuo Koike and Kazuo Kamimura.
+OTHER FILMS: ["Lady Snowblood (film)"]
+
+### ITEM 7106ddc4a701dd58
+PAGE: Minnale
+SENTENCE: Menon remade the film in Hindi the same year as Rehnaa Hai Terre Dil Mein, with Madhavan reprising his role and debuting in Hindi cinema.
+OTHER FILMS: ["Rehnaa Hai Terre Dil Mein"]
+
+### ITEM 76b892ae42ed9d41
+PAGE: Enakkul Oruvan (1984 film)
+SENTENCE: It is a remake of the Hindi film Karz (1980), itself based on the American film The Reincarnation of Peter Proud (1975).
+OTHER FILMS: ["Karz (film)", "The Reincarnation of Peter Proud"]
+
+### ITEM e9c82cd488166780
+PAGE: Neelakanta (film)
+SENTENCE: It is a remake of the Tamil film Aranmanai Kili (1993).
+OTHER FILMS: ["Aranmanai Kili"]
+
+### ITEM c0b7af57901e150d
+PAGE: Dandam Dashagunam
+SENTENCE: It is a remake of the Tamil film Kaakha Kaakha.
+OTHER FILMS: ["Kaakha Kaakha"]
+
+### ITEM f29662de6c5420b1
+PAGE: Tere Naam (2003 film)
+SENTENCE: It is a remake of the Tamil film Sethu (1999).
+OTHER FILMS: ["Sethu (film)"]
+
+### ITEM 9af68280c34fc7ce
+PAGE: Neeya?
+SENTENCE: A remake of the 1976 Hindi film Nagin, it has an ensemble cast that includes Kamal Haasan, Jai Ganesh, Vijayakumar, Ravichandran, Srikanth, [[M.
+OTHER FILMS: ["Nagin (1976 film)"]
+
+### ITEM cacceda72e83cf23
+PAGE: Taqdeerwala
+SENTENCE: It is a remake of the 1994 Telugu film Yamaleela.
+OTHER FILMS: ["Yamaleela"]
+
+### ITEM 88a45048f787616c
+PAGE: Aalayamani
+SENTENCE: The film was remade in Telugu as Gudi Gantalu (1964), in Hindi as Aadmi (1968) and in Malayalam as Oru Raagam Pala Thaalam.
+OTHER FILMS: ["Gudi Gantalu", "Aadmi (1968 film)"]
+
+### ITEM e59f77d1ebb56961
+PAGE: Mouna Geethangal
+SENTENCE: The same year, it was remade in Hindi as Ek Hi Bhool and in Telugu as Sathyabhama.
+OTHER FILMS: ["Ek Hi Bhool"]
+
+### ITEM 6c962a146c7f212a
+PAGE: Chef (2017 film)
+SENTENCE: It is an official remake of the 2014 American film with the same name.
+OTHER FILMS: ["Chef (2014 film)"]
+
+### ITEM 7a75ee6721a5455f
+PAGE: Ok Jaanu
+SENTENCE: A remake of Ratnam's Tamil film O Kadhal Kanmani, it stars Aditya Roy Kapur and Shraddha Kapoor with a supporting cast including Naseeruddin Shah and Leela Samson, the latter of whom appeared in the original as well, marking her Hindi debut, who essay the role of the protagonists' landlords.
+OTHER FILMS: ["O Kadhal Kanmani"]
+
+### ITEM 43f8b87b1a167acf
+PAGE: Vallakottai (film)
+SENTENCE: A remake of the 2007 Malayalam film Mayavi, the film stars Arjun and Haripriya, while Ashish Vidyarthi, Ganja Karuppu, Sathyan, Suresh, [[J.
+OTHER FILMS: ["Mayavi (2007 film)"]
+
+### ITEM a3c4299d3609a606
+PAGE: Ninaithale Inikkum (2009 film)
+SENTENCE: It is the Tamil remake of the 2006 Malayalam film Classmates.
+OTHER FILMS: ["Classmates (2006 film)"]
+
+### ITEM a19f3870e159501a
+PAGE: Mr. Bechara
+SENTENCE: The film is a remake of Bhagyaraj's own Tamil film Veetla Visheshanga (1994).
+OTHER FILMS: ["Veetla Visheshanga"]
+
+### ITEM c2fabe7d71f5472c
+PAGE: Kandein Kadhalai
+SENTENCE: The film, a remake of the 2007 Hindi film Jab We Met, with Bharath and Tamannaah Bhatia reprising the roles of Shahid Kapoor and Kareena Kapoor.
+OTHER FILMS: ["Jab We Met"]
+
+### ITEM 2c2b2e8433647cc9
+PAGE: Missamma
+SENTENCE: The film was remade in Hindi as Miss Mary (1957), again directed by Prasad.
+OTHER FILMS: ["Miss Mary (1957 film)"]
+
+### ITEM beedc9cb40d73c98
+PAGE: Qayamat: City Under Threat
+SENTENCE: It is a remake of the 1996 American film The Rock.
+OTHER FILMS: ["The Rock (film)"]
+
+### ITEM e71d196ce1212000
+PAGE: Anmol Ghadi
+SENTENCE: The Telugu movie was remade in Hindi as Jeena Sirf Merre Liye (2002), in Kannada as Manasella Neene (2002) and in Tamil as Thithikudhe (2003).
+OTHER FILMS: ["Jeena Sirf Merre Liye", "Thithikudhe"]
+
+### ITEM a3ac3a7372e2706d
+PAGE: Anjani Putra
+SENTENCE: The film was a remake of director Hari's Tamil film Poojai.
+OTHER FILMS: ["Poojai"]
+
+### ITEM b314b8125771ff73
+PAGE: Jaganmohini (2009 film)
+SENTENCE: Vittalacharya]]'s 1978 Telugu film of the same name which itself was a remake of the 1951 Kannada film Jaganmohini.
+OTHER FILMS: ["Jaganmohini (1978 film)"]
+
+### ITEM f76c51a7b56f7557
+PAGE: Mungaru Male
+SENTENCE: It was remade in Telugu as Vaana, in Bengali as Premer Kahini (both in 2008), in Odia as Romeo - The Lover Boy in 2009 and in Marathi as Premay Namaha in 2017.
+OTHER FILMS: ["Vaana (film)", "Premer Kahini"]
+
+### ITEM 6e2ec6578302a84b
+PAGE: Deewana Mastana
+SENTENCE: The film was remade in Telugu as Nuvva Nena in 2012.
+OTHER FILMS: ["Nuvva Nena"]
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/remakes/statements/r1_016.out.json as a JSON list with one object per item: {"item": "<the code after ITEM>", "links": [{"film": "<title exactly as listed>", "relation": "...", "wording": "..."}]} with one entry in "links" for every film listed under OTHER FILMS. Write nothing else to that file.

@@ -1,0 +1,222 @@
+You are helping to build a research corpus of film remakes from Wikipedia. Each item below gives the title of a film's Wikipedia page (PAGE), ONE sentence from the opening of that page, and the OTHER FILMS that sentence links to. For each other film, record what THE SENTENCE SAYS about PAGE and that film. You are not asked what you know about the films.
+
+For each other film give:
+- "relation":
+    "page_remakes_other"   the sentence says PAGE is a remake of the other film;
+    "other_remakes_page"   the sentence says the other film is a remake of PAGE (for example "it was remade in Telugu as ...");
+    "none"                 anything else.
+- "wording":
+    "firm"    the sentence states the remake plainly as a fact: "is a remake of", "an official remake of", "was remade as", "was remade in Hindi as";
+    "loose"   the sentence weakens or hedges it: "loosely", "partly", "unofficial", "uncredited", "inspired by", "based on the idea of", "reported to be", "said to be", "has been described as", "considered", "similar to", "reboot", "reimagining", "re-adaptation";
+    "" when the relation is "none".
+
+Rules.
+- Use only what the sentence says. Do not use your own knowledge of the films, and do not guess from titles or years.
+- If the sentence lists several films as remakes of PAGE, each of them is "other_remakes_page".
+- If the sentence says PAGE is a remake of X, and that X is itself a remake of or based on Y, then X is "page_remakes_other" and Y is "none", unless the sentence also says PAGE is a remake of Y.
+- "none" covers: a sequel, prequel or spin-off; a film that is only compared or mentioned; another remake of the same original (a sibling); a film based on the same novel, play or true story that the sentence does not call a remake; a film whose remake status the sentence denies; a dubbed version; a film shot at the same time in another language ("simultaneously", "bilingual").
+- If you cannot tell which film the word "remake" or "remade" applies to, answer "none".
+
+The items follow.
+
+### ITEM 52b632df459287ef
+PAGE: Uncle Buck
+SENTENCE: Uncle Buck later inspired two television adaptations, Uncle Buck (1990) and Uncle Buck (2016), as well as the 1991 Malayalam-language remake Uncle Bun.
+OTHER FILMS: ["Uncle Bun"]
+
+### ITEM 792c3279ee86b8f1
+PAGE: Night of the Living Dead 3D
+SENTENCE: It is the second remake of the 1968 horror film Night of the Living Dead.
+OTHER FILMS: ["Night of the Living Dead"]
+
+### ITEM 45f79964ecb5459a
+PAGE: Zig Zag (1970 film)
+SENTENCE: The film was remade in India as Majboor (1974).
+OTHER FILMS: ["Majboor (1974 film)"]
+
+### ITEM 8c1941d8c97e2122
+PAGE: Bedazzled (2000 film)
+SENTENCE: It is a remake of the 1967 British film of the same name, written by Peter Cook and Dudley Moore, itself a comic retelling of the Faust legend.
+OTHER FILMS: ["Bedazzled (1967 film)"]
+
+### ITEM ede0449eaa601e61
+PAGE: A Nightmare on Elm Street
+SENTENCE: Jason|crossover]] with the Friday the 13th franchise, various other merchandise, and a 2010 remake.
+OTHER FILMS: ["A Nightmare on Elm Street (2010 film)"]
+
+### ITEM fee1e8d31c934311
+PAGE: Charlie's Angels (film)
+SENTENCE: Charlie's Angels may also refer to: Charlie's Angels (franchise), a series of films and television shows Charlie's Angels (2000 film), a modern 2000 film spin-off to the original 1976–1981 television series Charlie's Angels: Full Throttle, a 2003 sequel to the 2000 film spin-off Charlie's Angels (2019 film), a spin-off of the television series and previous films Charlie's Angels (video game), a 2003 video game developed based upon the 2000 and 2003 film spin-offs. Behind the Camera: The Unauthorized Story of Charlie's Angels, a 2004 television docudrama Charlie's Angels (2011 TV series), a 2011 remake of the original 1976–1981 television series
+OTHER FILMS: ["Charlie's Angels: Full Throttle"]
+
+### ITEM 596436a13f77051c
+PAGE: Walking Tall (2004 film)
+SENTENCE: It is a remake of the 1973 film of the same name, and stars The Rock and Johnny Knoxville.
+OTHER FILMS: ["Walking Tall (1973 film)"]
+
+### ITEM 3058e2d8d2b63a9e
+PAGE: Moon Over Parador
+SENTENCE: Booth]] and is a loose remake of the 1939 film The Magnificent Fraud.
+OTHER FILMS: ["The Magnificent Fraud"]
+
+### ITEM 341d72e40552eebe
+PAGE: Rollerball (1975 film)
+SENTENCE: A remake was released in 2002.
+OTHER FILMS: ["Rollerball (2002 film)"]
+
+### ITEM d3191b7a2403e5d3
+PAGE: The Taking of Pelham One Two Three (1974 film)
+SENTENCE: It was remade in 1998 as a television film and in 2009 as a theatrical film.
+OTHER FILMS: ["The Taking of Pelham 123 (2009 film)"]
+
+### ITEM a9eedf5021ffd565
+PAGE: The Lake House (film)
+SENTENCE: A remake of the 2000 South Korean film Il Mare, it stars Keanu Reeves and Sandra Bullock, who last appeared together in the 1994 action thriller film Speed.
+OTHER FILMS: ["Speed (1994 film)"]
+
+### ITEM 54c1d14ecd1d3bf4
+PAGE: Terminator Salvation
+SENTENCE: The franchise rights were sold in 2012 to Annapurna Pictures, resulting in Terminator Genisys, a reboot of the series, being released in 2015 with Schwarzenegger reprising his role.
+OTHER FILMS: ["Terminator Genisys"]
+
+### ITEM 5b615358294b54f7
+PAGE: The Truth About Charlie
+SENTENCE: A remake of Charade (1963), it stars Mark Wahlberg and Thandiwe Newton in the roles played by Cary Grant and Audrey Hepburn in Charade.
+OTHER FILMS: ["Charade (1963 film)"]
+
+### ITEM 5c0a261f66548755
+PAGE: What Women Want
+SENTENCE: A loose remake, What Men Want, was released in 2019, starring [[Taraji P.
+OTHER FILMS: ["What Men Want"]
+
+### ITEM d888da58a46f7578
+PAGE: A Star Is Born (1976 film)
+SENTENCE: The film is a remake of the 1937 film with Janet Gaynor and Fredric March, notably adapted in 1954 as a musical starring Judy Garland and James Mason; and subsequently again in 2018 with Lady Gaga and Bradley Cooper.
+OTHER FILMS: ["A Star Is Born (1937 film)", "A Star Is Born (1954 film)"]
+
+### ITEM 4d73fc7596865b67
+PAGE: I Spit on Your Grave
+SENTENCE: The film spawned a 2010 remake, which has since spawned two sequels of its own: I Spit on Your Grave 2 (2013), and I Spit on Your Grave III: Vengeance Is Mine (2015).
+OTHER FILMS: ["I Spit on Your Grave 2"]
+
+### ITEM 64a37194660be776
+PAGE: The Longest Yard (2005 film)
+SENTENCE: An updated remake of the 1974 film, it stars Adam Sandler as a washed-up former professional American football quarterback who goes to prison and is forced to assemble a team to play against the guards.
+OTHER FILMS: ["The Longest Yard (1974 film)"]
+
+### ITEM b7eca2b410e58455
+PAGE: Ganja & Hess
+SENTENCE: It was remade by Spike Lee in 2014 as Da Sweet Blood of Jesus.
+OTHER FILMS: ["Da Sweet Blood of Jesus"]
+
+### ITEM b2ad5c973a15918e
+PAGE: Death at a Funeral (2010 film)
+SENTENCE: It is a remake of the 2007 film of the same name, also written by Craig.
+OTHER FILMS: ["Death at a Funeral (2007 film)"]
+
+### ITEM d3cc244171ad32c4
+PAGE: Amityville Dollhouse
+SENTENCE: This was the last film in the series released before the first installment was remade nine years later.
+OTHER FILMS: ["The Amityville Horror (1979 film)", "The Amityville Horror (2005 film)"]
+
+### ITEM a85b24b0a1f62c56
+PAGE: Planet of the Apes (2001 film)
+SENTENCE: The sixth installment in the Planet of the Apes film series, it is loosely based on the 1963 novel of the same name by Pierre Boulle and serves as a remake of the 1968 film version.
+OTHER FILMS: ["Planet of the Apes (1968 film)"]
+
+### ITEM 25bb83906579d72e
+PAGE: The Master Gunfighter
+SENTENCE: The Master Gunfighter is mainly a remake of the 1969 Japanese film Goyokin, although the story revolves around a true incident in the early 1800s involving massacred Indians that occurred in the vicinity of Goleta, California.
+OTHER FILMS: ["Goyokin"]
+
+### ITEM 38477318f64c9184
+PAGE: The Stepfather (1987 film)
+SENTENCE: A remake, also called The Stepfather, was released in 2009.
+OTHER FILMS: ["The Stepfather (2009 film)"]
+
+### ITEM a7f9e47890b6d76a
+PAGE: Bates Motel (film)
+SENTENCE: Outside of the 1998 remake, this is the only installment not to feature Anthony Perkins as Norman Bates as Kurt Paul portrays the character.
+OTHER FILMS: ["Psycho (1998 film)"]
+
+### ITEM afb2571257c0117c
+PAGE: RoboCop 3
+SENTENCE: Two television series, RoboCop and RoboCop: Prime Directives, were released in 1994 and 2001 respectively, and the film series was rebooted with the 2014 remake RoboCop.
+OTHER FILMS: ["RoboCop (2014 film)"]
+
+### ITEM faded7accfec62d4
+PAGE: Hulk (film)
+SENTENCE: A planned sequel, which would have been released in May 2005, was repurposed as a reboot titled The Incredible Hulk and released on June 13, 2008, as the second film in the Marvel Cinematic Universe.
+OTHER FILMS: ["The Incredible Hulk (film)"]
+
+### ITEM 413cceda718470c8
+PAGE: Bride Wars
+SENTENCE: A Chinese remake of the same name was released in 2015.
+OTHER FILMS: ["Bride Wars (2015 film)"]
+
+### ITEM b2c124c17c23e73a
+PAGE: Freddy vs. Jason
+SENTENCE: Despite negative reviews from critics, the film grossed $117 million worldwide, making it the highest-grossing film in the Friday the 13th franchise, and the second highest-grossing film in the A Nightmare on Elm Street franchise, only behind the 2010 remake.
+OTHER FILMS: ["A Nightmare on Elm Street (2010 film)"]
+
+### ITEM 7ea56cfa9756b313
+PAGE: Ghostbusters
+SENTENCE: After a 2016 reboot received mixed reviews and underperformed financially, a second sequel to the 1984 film, Ghostbusters: Afterlife (2021), was released, followed by Ghostbusters: Frozen Empire (2024).
+OTHER FILMS: ["Ghostbusters (2016 film)"]
+
+### ITEM 92c0fda134e6d20f
+PAGE: The Hitcher (2007 film)
+SENTENCE: It is a remake of the 1986 film of the same title starring Rutger Hauer, [[C.
+OTHER FILMS: ["The Hitcher (1986 film)"]
+
+### ITEM 3d7a040296aae797
+PAGE: Alienator
+SENTENCE: The film was described by Leonard Maltin and confirmed by Fred Olen Ray to be a "semi-remake" of the 1957 film The Astounding She-Monster.
+OTHER FILMS: ["The Astounding She-Monster"]
+
+### ITEM 56ed75df0363baeb
+PAGE: The Amityville Horror (2005 film)
+SENTENCE: Written by Scott Kosar, it is based on the novel The Amityville Horror by Jay Anson and serves as a remake of the 1979 film of the same name, as well as the ninth film in the Amityville Horror film series.
+OTHER FILMS: ["The Amityville Horror (1979 film)"]
+
+### ITEM 632ee07370ef0d66
+PAGE: Double Take (2001 film)
+SENTENCE: It is a remake of the 1957 British drama film Across the Bridge, which was in turn based on the short story by Graham Greene.
+OTHER FILMS: ["Across the Bridge (film)"]
+
+### ITEM b90c98b58d5a9478
+PAGE: Father of the Bride (1991 film)
+SENTENCE: It is a remake of the 1950 initial film.
+OTHER FILMS: ["Father of the Bride (1950 film)"]
+
+### ITEM 78b4c342f320b484
+PAGE: Dawn of the Dead (1978 film)
+SENTENCE: Dawn of the Dead was followed by four official sequels, beginning with 1985's Day of the Dead, and a separate series of unofficial Italian-made sequels, beginning with 1979's Zombi 2. It has also inspired a 2004 remake film directed by Zack Snyder, as well as numerous parodies and pop culture references in other media such as Shaun of the Dead, Dead Rising, and Left 4 Dead.
+OTHER FILMS: ["Day of the Dead (1985 film)", "Dawn of the Dead (2004 film)", "Shaun of the Dead"]
+
+### ITEM 48da702f0787e2eb
+PAGE: The Blob (1988 film)
+SENTENCE: It is a remake of the 1958 film of the same name.
+OTHER FILMS: ["The Blob"]
+
+### ITEM 2a9bcabc56a19b3e
+PAGE: Fantastic Four (2005 film)
+SENTENCE: A reboot was released in 2015, while another, set in the Marvel Cinematic Universe (MCU), was released in 2025.
+OTHER FILMS: ["Fantastic Four (2015 film)"]
+
+### ITEM e773c6319b176d96
+PAGE: Halloween II (1981 film)
+SENTENCE: It also introduces the plot twist of Strode being the sister of Myers, an element that would form the narrative arc of the series in subsequent films after Halloween II—including Rob Zombie's remake and its sequel—but was dropped from the current series' canon from the 2018 film onwards.
+OTHER FILMS: ["Halloween (2007 film)", "Halloween II (2009 film)"]
+
+### ITEM a3486af6f9960c8b
+PAGE: The Texas Chainsaw Massacre (2003 film)
+SENTENCE: Lee Ermey]] Radar Pictures Platinum Dunes Next Entertainment The Texas Chainsaw Massacre is a 2003 American slasher film serving as a remake of Tobe Hooper's 1974 film The Texas Chain Saw Massacre, and the fifth installment in The Texas Chainsaw Massacre franchise.
+OTHER FILMS: ["The Texas Chain Saw Massacre"]
+
+### ITEM 798888dfaa8e2b1b
+PAGE: Total Recall (1990 film)
+SENTENCE: An early attempt at a sequel, based on Dick's The Minority Report, became the 2002 standalone film Minority Report, while a 2012 remake, also titled Total Recall, failed to replicate the success of the original.
+OTHER FILMS: ["Total Recall (2012 film)"]
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/remakes/statements/r1_037.out.json as a JSON list with one object per item: {"item": "<the code after ITEM>", "links": [{"film": "<title exactly as listed>", "relation": "...", "wording": "..."}]} with one entry in "links" for every film listed under OTHER FILMS. Write nothing else to that file.

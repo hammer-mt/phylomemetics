@@ -1,0 +1,222 @@
+You are helping to build a research corpus of film remakes from Wikipedia. Each item below gives the title of a film's Wikipedia page (PAGE), ONE sentence from the opening of that page, and the OTHER FILMS that sentence links to. For each other film, record what THE SENTENCE SAYS about PAGE and that film. You are not asked what you know about the films.
+
+For each other film give:
+- "relation":
+    "page_remakes_other"   the sentence says PAGE is a remake of the other film;
+    "other_remakes_page"   the sentence says the other film is a remake of PAGE (for example "it was remade in Telugu as ...");
+    "none"                 anything else.
+- "wording":
+    "firm"    the sentence states the remake plainly as a fact: "is a remake of", "an official remake of", "was remade as", "was remade in Hindi as";
+    "loose"   the sentence weakens or hedges it: "loosely", "partly", "unofficial", "uncredited", "inspired by", "based on the idea of", "reported to be", "said to be", "has been described as", "considered", "similar to", "reboot", "reimagining", "re-adaptation";
+    "" when the relation is "none".
+
+Rules.
+- Use only what the sentence says. Do not use your own knowledge of the films, and do not guess from titles or years.
+- If the sentence lists several films as remakes of PAGE, each of them is "other_remakes_page".
+- If the sentence says PAGE is a remake of X, and that X is itself a remake of or based on Y, then X is "page_remakes_other" and Y is "none", unless the sentence also says PAGE is a remake of Y.
+- "none" covers: a sequel, prequel or spin-off; a film that is only compared or mentioned; another remake of the same original (a sibling); a film based on the same novel, play or true story that the sentence does not call a remake; a film whose remake status the sentence denies; a dubbed version; a film shot at the same time in another language ("simultaneously", "bilingual").
+- If you cannot tell which film the word "remake" or "remade" applies to, answer "none".
+
+The items follow.
+
+### ITEM d8b77fadf7585973
+PAGE: Anthuleni Katha
+SENTENCE: The film is a remake of Balachander's own 1974 Tamil film Aval Oru Thodar Kathai.
+OTHER FILMS: ["Aval Oru Thodar Kathai"]
+
+### ITEM cedd772e5684743e
+PAGE: Premam (2016 film)
+SENTENCE: It is a remake of the 2015 Malayalam film of the same name.
+OTHER FILMS: ["Premam"]
+
+### ITEM 54b616650400edb0
+PAGE: Mana Oori Ramayanam
+SENTENCE: The film is a remake of 2012 Malayalam film Shutter with Jogi and Raman Gopisetti writing the dialogues for both versions simultaneously.
+OTHER FILMS: ["Shutter (2012 film)"]
+
+### ITEM da73ff8d09550c10
+PAGE: Nirnayam (1991 film)
+SENTENCE: This film is a remake of Priyadarshan's own 1989 Malayalam film Vandanam starring Mohanlal which itself is loosely based on the 1987 movie Stakeout.
+OTHER FILMS: ["Stakeout (1987 film)"]
+
+### ITEM a4e2fb37e45effee
+PAGE: Political Rowdy
+SENTENCE: The film is a remake of the Tamil movie Adi Thadi.
+OTHER FILMS: ["Adi Thadi"]
+
+### ITEM 72cc50531163bb8e
+PAGE: Speedunnodu
+SENTENCE: This film is a remake of the 2012 Tamil film Sundarapandian.
+OTHER FILMS: ["Sundarapandian"]
+
+### ITEM 194135f786135dae
+PAGE: Vikramarkudu
+SENTENCE: The film was remade in several languages, including Bangladeshi Bengali as Ulta Palta 69 (2007), Kannada as Veera Madakari (2009), Tamil as Siruthai (2011), Indian Bengali as Bikram Singha (2012), Hindi as Rowdy Rathore (2012), and once again in Bangladeshi Bengali as Action Jasmine (2015), featuring a female lead.
+OTHER FILMS: ["Ulta Palta 69", "Siruthai", "Bikram Singha: The Lion Is Back", "Rowdy Rathore"]
+
+### ITEM dc561cb278927232
+PAGE: Maryada Ramanna
+SENTENCE: The film was remade in five languages: Kannada, Bengali, Hindi, Tamil and Malayalam.
+OTHER FILMS: ["Vallavanukku Pullum Aayudham", "Ivan Maryadaraman"]
+
+### ITEM 98dd85f8bd78058f
+PAGE: Godzilla: Final Wars
+SENTENCE: Following its lackluster financial and critical reception, Final Wars was the last Godzilla film produced by any studio until Legendary Pictures' 2014 reboot, as well as the last Godzilla film produced by Toho until Shin Godzilla in 2016.
+OTHER FILMS: ["Godzilla (2014 film)", "Shin Godzilla"]
+
+### ITEM 2087e9c865b8aa53
+PAGE: Bhale Dongalu
+SENTENCE: A remake of the film Bonnie and Clyde and the Hindi film Bunty Aur Babli (2005), the film stars Tarun, Ileana, Jagapati Babu and music composed by [[K.M.
+OTHER FILMS: ["Bunty Aur Babli"]
+
+### ITEM 70ff4e7956255601
+PAGE: Bhadra (2005 film)
+SENTENCE: The film was later remade in Tamil as Saravana (2006), Kannada as Gaja (2008), in Bengali as Josh, and Bangladeshi Bengali as Bhalobeshe Morte Pari (both in 2010).
+OTHER FILMS: ["Saravana", "Josh (2010 film)"]
+
+### ITEM 75a2b6bcd1014587
+PAGE: Assembly Rowdy
+SENTENCE: It is a remake of the Tamil film Velai Kidaichuduchu (1990).
+OTHER FILMS: ["Velai Kidaichuduchu"]
+
+### ITEM 2e0d94e166319164
+PAGE: Raksha (2008 film)
+SENTENCE: It is a remake of Ram Gopal Varma's Phoonk, whose story is thematically similar to the Telugu thriller novel, Tulasi Dalam, by Yandamuri Veerendranath.
+OTHER FILMS: ["Phoonk"]
+
+### ITEM 50d019be322162ba
+PAGE: Rajendrudu Gajendrudu
+SENTENCE: The film was remade in Hindi as Jodidar, with Mithun Chakraborthy.
+OTHER FILMS: ["Jodidar"]
+
+### ITEM f2f4fcb6efe0d6b8
+PAGE: Pedababu
+SENTENCE: This movie is a remake of Pasumpon.
+OTHER FILMS: ["Pasumpon"]
+
+### ITEM 0439925444e79c3b
+PAGE: Sardaar Gabbar Singh
+SENTENCE: Sardaar Gabbar Singh is not a remake or sequel — it's an original script written by Pawan Kalyan as a spiritual successor to Gabbar Singh (2012), which was a remake of Dabangg.
+OTHER FILMS: ["Dabangg"]
+
+### ITEM 3e04207a5753a7dc
+PAGE: Parugu
+SENTENCE: The film was dubbed into Malayalam as Krishna in the same year, achieving commercial success.'' It was later remade in Bollywood as Heropanti'' (2014).
+OTHER FILMS: ["Heropanti"]
+
+### ITEM 9d8fb6dbbdf3e689
+PAGE: Masala (2013 film)
+SENTENCE: It is a remake of the 2012 Hindi film Bol Bachchan The film released worldwide on 14 November 2013.
+OTHER FILMS: ["Bol Bachchan"]
+
+### ITEM b9d8811e256d422f
+PAGE: Seven Samurai
+SENTENCE: Seven Samurai has been influential among Western filmmakers, with its story and approach to action remade and reiterated numerous times, most notably in the 1960 film The Magnificent Seven.
+OTHER FILMS: ["The Magnificent Seven"]
+
+### ITEM 3521f862bad69f25
+PAGE: Stalin (2006 film)
+SENTENCE: The film was also dubbed and released into Tamil under the same title, and remade into Hindi as Jai Ho in 2014.
+OTHER FILMS: ["Jai Ho (film)"]
+
+### ITEM 2c1a65264fdf3f61
+PAGE: Chanti (1992 film)
+SENTENCE: The film is a remake of the 1991 Tamil film Chinna Thambi.
+OTHER FILMS: ["Chinna Thambi"]
+
+### ITEM e194631326c28fe4
+PAGE: Atharintiki Daaredi
+SENTENCE: It was remade in Kannada as Ranna (2015), in Bengali as Abhiman (2016) and in Tamil as Vantha Rajavathaan Varuven (2019).
+OTHER FILMS: ["Ranna (film)", "Abhimaan (2016 film)"]
+
+### ITEM 5e0ab6049a6a3b70
+PAGE: Yamagola
+SENTENCE: It was remade in Hindi as Lok Parlok (1979) and in Tamil as Yamanukku Yaman (1980), while also inspiring the 2007 Telugu film Yamadonga.
+OTHER FILMS: ["Lok Parlok", "Yamadonga"]
+
+### ITEM 1ba1708b238a24b7
+PAGE: Chukkallo Chandrudu
+SENTENCE: The film was remade in Kannada as Sagar (2012).
+OTHER FILMS: ["Sagar (2012 film)"]
+
+### ITEM 2f77ab395ec50b9f
+PAGE: Kick (2009 film)
+SENTENCE: The film was remade in Tamil as Thillalangadi (2010) with Shaam reprising his role, and in Hindi under the same title (2014) and in Kannada as Super Ranga (2014).
+OTHER FILMS: ["Thillalangadi"]
+
+### ITEM f51509c24627af27
+PAGE: Ammo Bomma
+SENTENCE: The film is a remake of the Marathi movie Zapatlela (1993) which itself was inspired by 1988 Hollywood film Child's Play.
+OTHER FILMS: ["Child's Play (1988 film)"]
+
+### ITEM 046e8af910c9dd50
+PAGE: Dabbu Bhale Jabbu
+SENTENCE: The film was a remake of the Tamil film Varavu Nalla Uravu (1990) which was based on the American film Make Way for Tomorrow (1937).
+OTHER FILMS: ["Varavu Nalla Uravu", "Make Way for Tomorrow"]
+
+### ITEM c82d0368b9aa8950
+PAGE: Veede
+SENTENCE: The film is a remake of Tamil movie Dhool (2003).
+OTHER FILMS: ["Dhool"]
+
+### ITEM 2693baaea7556a22
+PAGE: Cold Eyes
+SENTENCE: A remake of the 2007 Hong Kong film Eye in the Sky, Cold Eyes is about detectives from the surveillance team of a special crime unit who work together to track down a highly efficient and dangerous robber and the crew he leads.
+OTHER FILMS: ["Eye in the Sky (2007 film)"]
+
+### ITEM 71accd26f0338872
+PAGE: Swapnalokam
+SENTENCE: It is a remake of the 1994 Hindi film Kabhi Haan Kabhi Naa directed by Kundan Shah.
+OTHER FILMS: ["Kabhi Haan Kabhi Naa"]
+
+### ITEM 79864f55d3046f4b
+PAGE: Neramu Siksha
+SENTENCE: The film was remade in Tamil as Needhikku Thalaivanangu (1976) and in Hindi as Shikshaa (1979).
+OTHER FILMS: ["Needhikku Thalaivanangu"]
+
+### ITEM 0b0073b99a637e32
+PAGE: Santosham (2002 film)
+SENTENCE: The film was remade in Bengali as Bandhan (2004) and in Kannada as Ugadi (2007).
+OTHER FILMS: ["Bandhan (2004 film)"]
+
+### ITEM fc7438e4f9293bce
+PAGE: Tammudu (film)
+SENTENCE: The film was remade in Tamil as Badri (2001), in Kannada as Yuvaraja (2001) and in Bengali as Champion (2003).
+OTHER FILMS: ["Badri (2001 film)", "Yuvaraja (film)", "Champion (2003 film)"]
+
+### ITEM f270e39df1224f8b
+PAGE: Athadu
+SENTENCE: The film was remade in Hindi as Ek: The Power of One (2009) and in Bengali as Wanted (2010).
+OTHER FILMS: ["Ek: The Power of One", "Wanted (2010 film)"]
+
+### ITEM df4d76b7ad86fdcd
+PAGE: Mundadugu
+SENTENCE: In 1984, it was remade in Hindi as Maqsad.
+OTHER FILMS: ["Maqsad"]
+
+### ITEM a90b28d0a034db59
+PAGE: Kondapalli Raja
+SENTENCE: This was the second Telugu remake of Khudgarz after Prana Snehithulu (1988).
+OTHER FILMS: ["Khudgarz"]
+
+### ITEM 42459ecfbbaa3a9d
+PAGE: Ramu (1968 film)
+SENTENCE: It is a remake of the Tamil film of the same name (1966), which was based on the Hindi film Door Gagan Ki Chhaon Mein (1964) which was not successful.
+OTHER FILMS: ["Door Gagan Ki Chhaon Mein"]
+
+### ITEM d7cdc9b89a5b2f91
+PAGE: Manchu Pallaki
+SENTENCE: It is a remake of the Tamil film Palaivana Solai (1981).
+OTHER FILMS: ["Palaivana Solai (1981 film)"]
+
+### ITEM 90eb981d0c31e909
+PAGE: Chandamama (2007 film)
+SENTENCE: The film was remade in Tamil as A Aa E Ee (2009) and in Kannada as Chellidaru Sampigeya (2009).
+OTHER FILMS: ["A Aa E Ee (2009 Tamil film)"]
+
+### ITEM 1e256412cc5f0b3d
+PAGE: Swathi Muthyam
+SENTENCE: Upon its success, Viswanath directed its Hindi version Eeshwar (1989) and in Kannada it was remade as Swathi Muthu (2003).
+OTHER FILMS: ["Swathi Muthu"]
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/remakes/statements/r1_027.out.json as a JSON list with one object per item: {"item": "<the code after ITEM>", "links": [{"film": "<title exactly as listed>", "relation": "...", "wording": "..."}]} with one entry in "links" for every film listed under OTHER FILMS. Write nothing else to that file.

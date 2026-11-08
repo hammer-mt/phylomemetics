@@ -1,0 +1,222 @@
+You are helping to build a research corpus of film remakes from Wikipedia. Each item below gives the title of a film's Wikipedia page (PAGE), ONE sentence from the opening of that page, and the OTHER FILMS that sentence links to. For each other film, record what THE SENTENCE SAYS about PAGE and that film. You are not asked what you know about the films.
+
+For each other film give:
+- "relation":
+    "page_remakes_other"   the sentence says PAGE is a remake of the other film;
+    "other_remakes_page"   the sentence says the other film is a remake of PAGE (for example "it was remade in Telugu as ...");
+    "none"                 anything else.
+- "wording":
+    "firm"    the sentence states the remake plainly as a fact: "is a remake of", "an official remake of", "was remade as", "was remade in Hindi as";
+    "loose"   the sentence weakens or hedges it: "loosely", "partly", "unofficial", "uncredited", "inspired by", "based on the idea of", "reported to be", "said to be", "has been described as", "considered", "similar to", "reboot", "reimagining", "re-adaptation";
+    "" when the relation is "none".
+
+Rules.
+- Use only what the sentence says. Do not use your own knowledge of the films, and do not guess from titles or years.
+- If the sentence lists several films as remakes of PAGE, each of them is "other_remakes_page".
+- If the sentence says PAGE is a remake of X, and that X is itself a remake of or based on Y, then X is "page_remakes_other" and Y is "none", unless the sentence also says PAGE is a remake of Y.
+- "none" covers: a sequel, prequel or spin-off; a film that is only compared or mentioned; another remake of the same original (a sibling); a film based on the same novel, play or true story that the sentence does not call a remake; a film whose remake status the sentence denies; a dubbed version; a film shot at the same time in another language ("simultaneously", "bilingual").
+- If you cannot tell which film the word "remake" or "remade" applies to, answer "none".
+
+The items follow.
+
+### ITEM cedd772e5684743e
+PAGE: Premam (2016 film)
+SENTENCE: It is a remake of the 2015 Malayalam film of the same name.
+OTHER FILMS: ["Premam"]
+
+### ITEM 31ffdbffb5d56847
+PAGE: Anubandham (1984 film)
+SENTENCE: It is a remake of the Bengali film Uttar Purush (1966) which was previously remade in Tamil as Uyarndha Manithan (1968).
+OTHER FILMS: ["Uyarndha Manithan"]
+
+### ITEM 016a0b85c5034597
+PAGE: Ready (2008 film)
+SENTENCE: It was remade in Kannada as Raam (2009), Tamil as Uthama Puthiran (2010), and in Hindi under the same name (2011).
+OTHER FILMS: ["Raam (2009 film)", "Uthamaputhiran (2010 film)", "Ready (2011 film)"]
+
+### ITEM 93f98c4338984a26
+PAGE: Manmadhudu
+SENTENCE: The film was later remade in Kannada as Aishwarya and in Bengali as Priyotoma (both in 2006).
+OTHER FILMS: ["Aishwarya (film)"]
+
+### ITEM ff2b9f669d56e5cb
+PAGE: Ye Maaya Chesave
+SENTENCE: It was remade in Hindi as Ekk Deewana Tha.
+OTHER FILMS: ["Ekk Deewana Tha"]
+
+### ITEM dc561cb278927232
+PAGE: Maryada Ramanna
+SENTENCE: The film was remade in five languages: Kannada, Bengali, Hindi, Tamil and Malayalam.
+OTHER FILMS: ["Vallavanukku Pullum Aayudham", "Ivan Maryadaraman"]
+
+### ITEM feda043f4f50f26a
+PAGE: Shankar Dada MBBS
+SENTENCE: It is a remake of the Hindi film Munna Bhai M.B.B.S. (2003).
+OTHER FILMS: ["Munna Bhai M.B.B.S."]
+
+### ITEM 92573ae336a56655
+PAGE: Siva (1989 Telugu film)
+SENTENCE: Varma remade the film in Hindi with the same name with Nagarjuna and Amala reprising their roles, and it performed well at the box office.
+OTHER FILMS: ["Shiva (1990 film)"]
+
+### ITEM 3d3b632c2a3e25f8
+PAGE: Tadakha
+SENTENCE: A remake of the 2012 Tamil film Vettai, the film stars Naga Chaitanya, Tamannaah Bhatia, Sunil and Andrea Jeremiah.
+OTHER FILMS: ["Vettai"]
+
+### ITEM 4307c938f94d19a5
+PAGE: Nagaram (2008 film)
+SENTENCE: The film is loosely based on Tamil film Thalai Nagaram (2006), which itself was remake of Malayalam film Abhimanyu (1991).
+OTHER FILMS: ["Abhimanyu (1991 film)"]
+
+### ITEM a24284c5c0bf0bfa
+PAGE: Budget Padmanabham
+SENTENCE: The film is a remake of the Tamil movie Budget Padmanabhan (2000).
+OTHER FILMS: ["Budget Padmanabhan"]
+
+### ITEM 6970596df4c4b543
+PAGE: Kalisundam Raa
+SENTENCE: The film was remade in Hindi as Kuch Tum Kaho Kuch Hum Kahein (2002) and in Kannada as Ondagona Baa (2003).
+OTHER FILMS: ["Kuch Tum Kaho Kuch Hum Kahein"]
+
+### ITEM 460a1b558cbe8585
+PAGE: Manasantha Nuvve
+SENTENCE: Owing to its success, the film was remade in Kannada as Manasella Neene (2002), in Hindi as Jeena Sirf Merre Liye (2002), in Tamil as Thithikudhe (2003), in Bengali (Bangladesh) as Moner Majhe Tumi (2003), and in Odia as Neijare Megha Mate (2008).
+OTHER FILMS: ["Jeena Sirf Merre Liye", "Thithikudhe"]
+
+### ITEM d7cdc9b89a5b2f91
+PAGE: Manchu Pallaki
+SENTENCE: It is a remake of the Tamil film Palaivana Solai (1981).
+OTHER FILMS: ["Palaivana Solai (1981 film)"]
+
+### ITEM c93a7f3bfd3a42cf
+PAGE: Chiranjeevulu (2001 film)
+SENTENCE: The film is a remake of the Tamil film Putham Pudhu Payanam (1991).
+OTHER FILMS: ["Putham Pudhu Payanam"]
+
+### ITEM 1ba1708b238a24b7
+PAGE: Chukkallo Chandrudu
+SENTENCE: The film was remade in Kannada as Sagar (2012).
+OTHER FILMS: ["Sagar (2012 film)"]
+
+### ITEM f0a04cb5b3f3aad2
+PAGE: Baavagaru Bagunnaraa
+SENTENCE: Bavagaru Bagunnara was later remade in Hindi as Kunwara (2000) and in Bangladesh as Jamai Shashur (2003).
+OTHER FILMS: ["Kunwara"]
+
+### ITEM 952866698e2c4bc3
+PAGE: Balarama Krishnulu
+SENTENCE: The film is a remake of the Tamil movie Cheran Pandiyan (1991).
+OTHER FILMS: ["Cheran Pandiyan"]
+
+### ITEM bb549a17303c1e9a
+PAGE: Pokiri (2006 film)
+SENTENCE: It was remade in Tamil as Pokkiri (2007), in Hindi as Wanted (2009), in Kannada as Porki (2010)
+OTHER FILMS: ["Pokkiri", "Wanted (2009 film)"]
+
+### ITEM 003fc11a78b36c40
+PAGE: Current Theega
+SENTENCE: This film is a remake of the 2013 Tamil film Varuthapadatha Valibar Sangam and was a commercial success just like the original.
+OTHER FILMS: ["Varuthapadatha Valibar Sangam"]
+
+### ITEM 8269a6e49d525103
+PAGE: Sardar Papa Rayudu
+SENTENCE: The film was a commercial success and was remade in Hindi as Sarfarosh (1985).
+OTHER FILMS: ["Sarfarosh (1985 film)"]
+
+### ITEM bfe982f1277e05f4
+PAGE: Aa Naluguru
+SENTENCE: The film was later remade in Kannada in 2006 as Sirivantha.
+OTHER FILMS: ["Sirivantha"]
+
+### ITEM 46f3ac99dca91cbd
+PAGE: Krishnaveni (film)
+SENTENCE: It is a remake of the Kannada hit film Sharapanjara (1971).
+OTHER FILMS: ["Sharapanjara"]
+
+### ITEM dbddc14328174d94
+PAGE: Bharatamlo Arjunudu
+SENTENCE: The film was a remake of Hindi film Arjun.
+OTHER FILMS: ["Arjun (1985 film)"]
+
+### ITEM b7ecbc1067ac6b2f
+PAGE: Maro Charitra (2010 film)
+SENTENCE: A remake of the 1978 film of the same name, the film stars Varun Sandesh, newcomer Anita Galler and Shraddha Das.
+OTHER FILMS: ["Maro Charitra"]
+
+### ITEM 49e7c9403c080944
+PAGE: Pataas
+SENTENCE: It was remade in Tamil as Motta Shiva Ketta Shiva and in Kannada as Pataki.
+OTHER FILMS: ["Motta Shiva Ketta Shiva", "Pataki (film)"]
+
+### ITEM f2f4fcb6efe0d6b8
+PAGE: Pedababu
+SENTENCE: This movie is a remake of Pasumpon.
+OTHER FILMS: ["Pasumpon"]
+
+### ITEM 5f51c2de204d3fbe
+PAGE: Anuraga Devata
+SENTENCE: It is a remake of the Hindi film Aasha (1980).
+OTHER FILMS: ["Aasha (1980 film)"]
+
+### ITEM 15ecfa0b074f901b
+PAGE: Goutham Nanda
+SENTENCE: The film is an adaptation of the ANR starrer 1961 film Iddaru Mitrulu, which itself is a remake of Uttam Kumar's Bengali film Tasher Ghar (1957), also influenced by Daphne Du Maurier’s famous novel The Scapegoat.
+OTHER FILMS: ["Iddaru Mitrulu (1961 film)"]
+
+### ITEM 9d8fb6dbbdf3e689
+PAGE: Masala (2013 film)
+SENTENCE: It is a remake of the 2012 Hindi film Bol Bachchan The film released worldwide on 14 November 2013.
+OTHER FILMS: ["Bol Bachchan"]
+
+### ITEM b94744aa6dd571fc
+PAGE: Cyrano Agency
+SENTENCE: The film was later remade into the Tamil-language as Idhu Enna Maayam.
+OTHER FILMS: ["Idhu Enna Maayam"]
+
+### ITEM 4e0fb47c7baa27f3
+PAGE: R2B: Return to Base
+SENTENCE: It was directed by Kim Dong-won and is also a remake of Shin Sang-ok's 1964 film Red Scarf.
+OTHER FILMS: ["Red Scarf (film)"]
+
+### ITEM f270e39df1224f8b
+PAGE: Athadu
+SENTENCE: The film was remade in Hindi as Ek: The Power of One (2009) and in Bengali as Wanted (2010).
+OTHER FILMS: ["Ek: The Power of One", "Wanted (2010 film)"]
+
+### ITEM 26b7ac316a7909c6
+PAGE: Allari (film)
+SENTENCE: The film was remade in Tamil as Kurumbu. The film is loosely based on the 1987 American teen romantic drama film Some Kind of Wonderful.
+OTHER FILMS: ["Some Kind of Wonderful (film)"]
+
+### ITEM 21356e87d9be6f63
+PAGE: Geethanjali (2014 film)
+SENTENCE: The movie was remade in Kannada as Kathe Chitrakathe Nirdeshana Puttanna (2016).
+OTHER FILMS: ["Kathe Chitrakathe Nirdeshana Puttanna"]
+
+### ITEM 046e8af910c9dd50
+PAGE: Dabbu Bhale Jabbu
+SENTENCE: The film was a remake of the Tamil film Varavu Nalla Uravu (1990) which was based on the American film Make Way for Tomorrow (1937).
+OTHER FILMS: ["Varavu Nalla Uravu", "Make Way for Tomorrow"]
+
+### ITEM de88682fc13100ed
+PAGE: Brahmachari (Telugu film)
+SENTENCE: The film was remade in Hindi as Ek Nari Ek Brahmachari (1971).
+OTHER FILMS: ["Ek Nari Ek Brahmachari"]
+
+### ITEM 0fd65eee231c18d5
+PAGE: Peddarikam
+SENTENCE: It is a remake of the Malayalam film Godfather.
+OTHER FILMS: ["Godfather (1991 film)"]
+
+### ITEM 04614181fe50c374
+PAGE: Peddarayudu
+SENTENCE: It is a remake of the 1994 Tamil film Nattamai and stars Mohan Babu in the lead in a dual role as the title character and another character, while Bhanupriya and Soundarya appear in other prominent roles with Rajinikanth appears in a special appearance.
+OTHER FILMS: ["Nattamai"]
+
+### ITEM d8b77fadf7585973
+PAGE: Anthuleni Katha
+SENTENCE: The film is a remake of Balachander's own 1974 Tamil film Aval Oru Thodar Kathai.
+OTHER FILMS: ["Aval Oru Thodar Kathai"]
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/remakes/statements/r2_029.out.json as a JSON list with one object per item: {"item": "<the code after ITEM>", "links": [{"film": "<title exactly as listed>", "relation": "...", "wording": "..."}]} with one entry in "links" for every film listed under OTHER FILMS. Write nothing else to that file.

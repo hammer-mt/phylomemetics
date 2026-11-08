@@ -1,0 +1,104 @@
+[
+  {
+    "id": 11351541,
+    "kind": "film",
+    "year": 1945,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Adventure of the Norwood Builder",
+        "tier": "C",
+        "quote": "Elements in the story pay homage to an otherwise unrecorded affair mentioned by Dr. Watson at the beginning of the 1903 story \"The Adventure of the Norwood Builder\", notably the steamship Friesland."
+      },
+      {
+        "story": "The Adventure of the Sussex Vampire",
+        "tier": "C",
+        "quote": "Off-camera, Watson also recounts to his audience another unrecorded affair mentioned in the 1924 story \"The Adventure of the Sussex Vampire\", that of the Giant Rat of Sumatra, \"a story for which the world is not yet prepared\"."
+      }
+    ],
+    "other_sources": []
+  },
+  {
+    "id": 32896083,
+    "kind": "video_game",
+    "year": 2012,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": []
+  },
+  {
+    "id": 36398735,
+    "kind": "tv_film",
+    "year": 1976,
+    "holmes_appears": false,
+    "sources": [],
+    "other_sources": [
+      "They Might Be Giants (1971 feature film), loosely re-made"
+    ]
+  },
+  {
+    "id": 43230345,
+    "kind": "video_game",
+    "year": 2015,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": []
+  },
+  {
+    "id": 52524488,
+    "kind": "tv_episode",
+    "year": 2017,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": []
+  },
+  {
+    "id": 11125917,
+    "kind": "film",
+    "year": 1945,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Final Problem",
+        "tier": "C",
+        "quote": "Produced and directed by Roy William Neill from an original screenplay by Bertram Millhauser, the film follows a Conan Doyle premise with material taken from \"The Final Problem\" and \"The Adventure of the Empty House\"."
+      },
+      {
+        "story": "The Adventure of the Empty House",
+        "tier": "C",
+        "quote": "Produced and directed by Roy William Neill from an original screenplay by Bertram Millhauser, the film follows a Conan Doyle premise with material taken from \"The Final Problem\" and \"The Adventure of the Empty House\"."
+      }
+    ],
+    "other_sources": []
+  },
+  {
+    "id": 39807482,
+    "kind": "film",
+    "year": 2018,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": []
+  },
+  {
+    "id": 2631898,
+    "kind": "film",
+    "year": 1944,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Hound of the Baskervilles",
+        "tier": "C",
+        "quote": "The film is not credited as an adaptation of any of Sir Arthur Conan Doyle's Holmes tales, but it bears a significant resemblance to his 1902 novel The Hound of the Baskervilles."
+      }
+    ],
+    "other_sources": []
+  },
+  {
+    "id": 20816992,
+    "kind": "series",
+    "year": 2010,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": []
+  }
+]

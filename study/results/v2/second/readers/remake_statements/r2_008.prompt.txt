@@ -1,0 +1,222 @@
+You are helping to build a research corpus of film remakes from Wikipedia. Each item below gives the title of a film's Wikipedia page (PAGE), ONE sentence from the opening of that page, and the OTHER FILMS that sentence links to. For each other film, record what THE SENTENCE SAYS about PAGE and that film. You are not asked what you know about the films.
+
+For each other film give:
+- "relation":
+    "page_remakes_other"   the sentence says PAGE is a remake of the other film;
+    "other_remakes_page"   the sentence says the other film is a remake of PAGE (for example "it was remade in Telugu as ...");
+    "none"                 anything else.
+- "wording":
+    "firm"    the sentence states the remake plainly as a fact: "is a remake of", "an official remake of", "was remade as", "was remade in Hindi as";
+    "loose"   the sentence weakens or hedges it: "loosely", "partly", "unofficial", "uncredited", "inspired by", "based on the idea of", "reported to be", "said to be", "has been described as", "considered", "similar to", "reboot", "reimagining", "re-adaptation";
+    "" when the relation is "none".
+
+Rules.
+- Use only what the sentence says. Do not use your own knowledge of the films, and do not guess from titles or years.
+- If the sentence lists several films as remakes of PAGE, each of them is "other_remakes_page".
+- If the sentence says PAGE is a remake of X, and that X is itself a remake of or based on Y, then X is "page_remakes_other" and Y is "none", unless the sentence also says PAGE is a remake of Y.
+- "none" covers: a sequel, prequel or spin-off; a film that is only compared or mentioned; another remake of the same original (a sibling); a film based on the same novel, play or true story that the sentence does not call a remake; a film whose remake status the sentence denies; a dubbed version; a film shot at the same time in another language ("simultaneously", "bilingual").
+- If you cannot tell which film the word "remake" or "remade" applies to, answer "none".
+
+The items follow.
+
+### ITEM 7a8a05aa8f7197b0
+PAGE: Meleparambil Aanveedu
+SENTENCE: It was remade in Tamil twice, as Valli Vara Pora (1995) and Naiyaandi (2013).
+OTHER FILMS: ["Valli Vara Pora", "Naiyaandi"]
+
+### ITEM 8e2db60fda2de3f4
+PAGE: Sadak
+SENTENCE: This film was remade in Tamil as Appu (2000).
+OTHER FILMS: ["Appu (2000 film)"]
+
+### ITEM f3f2eb1cccc2a3b0
+PAGE: The Cheat (1931 film)
+SENTENCE: The film is a remake of the 1915 silent film of the same title, directed by [[Cecil B.
+OTHER FILMS: ["The Cheat (1915 film)"]
+
+### ITEM ad1b3fa957892ffe
+PAGE: Vedi (film)
+SENTENCE: A remake of the 2008 Telugu film Souryam, it was released on 30 September 2011.
+OTHER FILMS: ["Souryam"]
+
+### ITEM 666de7692b00c6fc
+PAGE: I Love You (2007 Bengali film)
+SENTENCE: The movie is a remake of 2005 Telugu movie Nuvvostanante Nenoddantana.
+OTHER FILMS: ["Nuvvostanante Nenoddantana"]
+
+### ITEM 5d24f2174dae8fcf
+PAGE: Hum Tumhare Hain Sanam
+SENTENCE: The film is a remake of 1995 Tamil film Thotta Chinungi directed by [[K.
+OTHER FILMS: ["Thotta Chinungi"]
+
+### ITEM 57e3b464563f50b3
+PAGE: Judwaa
+SENTENCE: It is a remake of the Telugu film Hello Brother (1994), which in turn is inspired from the Hong Kong action comedy film Twin Dragons (1992) starring Jackie Chan, which itself is a remake of Ranjit Mallick's Bengali film Shathe Shathyang (1982).
+OTHER FILMS: ["Hello Brother (1994 film)", "Twin Dragons"]
+
+### ITEM 3fcd93cb9c191b3d
+PAGE: Adutha Varisu
+SENTENCE: It is a remake of the 1972 Hindi film Raja Jani, which itself is a remake of the 1965 Bengali film Rajkanya.
+OTHER FILMS: ["Raja Jani"]
+
+### ITEM eacea92b0dbd335c
+PAGE: 3 Idiots
+SENTENCE: It was remade in Tamil as Nanban (2012), which also received critical praise and commercial success.
+OTHER FILMS: ["Nanban (2012 film)"]
+
+### ITEM 447876c3463f28ee
+PAGE: The Devil's Playground (1937 film)
+SENTENCE: It is a remake of Frank Capra's Submarine (1928).
+OTHER FILMS: ["Submarine (1928 film)"]
+
+### ITEM 4e2924030486867d
+PAGE: Sattam En Kaiyil
+SENTENCE: The film was remade in Hindi as Yeh To Kamaal Ho Gaya (1982), with Haasan reprising his role.
+OTHER FILMS: ["Yeh To Kamaal Ho Gaya"]
+
+### ITEM 08cb314808aece58
+PAGE: Shiva (2006 film)
+SENTENCE: The film was a prequel to the original 1990, Shiva, which is a remake of the 1989 Telugu film of the same name.
+OTHER FILMS: ["Shiva (1990 film)"]
+
+### ITEM b9e637df68fba89c
+PAGE: Andaz (1994 film)
+SENTENCE: It is a remake of Tamil film Sundara Kandam (1992), starring [[K.
+OTHER FILMS: ["Sundara Kandam"]
+
+### ITEM 9eeab8225bb6d388
+PAGE: Black Butterfly (2013 film)
+SENTENCE: Sreekumar]] as the music director, and is a remake of the Tamil film Vazhakku Enn 18/9.
+OTHER FILMS: ["Vazhakku Enn 18/9"]
+
+### ITEM c7314b04e6622798
+PAGE: Chaappa Kurish
+SENTENCE: The film is an unauthorized remake of the 2009 South Korean film Handphone, along with its reported structural similarity to the 2002 American film Changing Lanes.
+OTHER FILMS: ["Handphone (film)", "Changing Lanes"]
+
+### ITEM 4491673658f96b96
+PAGE: Jodidar
+SENTENCE: The film is a remake of the Telugu Blockbuster film Rajendrudu Gajendrudu.
+OTHER FILMS: ["Rajendrudu Gajendrudu"]
+
+### ITEM b1b800723d842e71
+PAGE: Raja Chinna Roja
+SENTENCE: It is a remake of the 1971 Bengali film Jay Jayanti, which itself is based on the 1965 film The Sound of Music.
+OTHER FILMS: ["The Sound of Music (film)"]
+
+### ITEM 2ef8553220a5f4eb
+PAGE: Mann Vasanai
+SENTENCE: The film was remade in Telugu as Mangammagari Manavadu (1984).
+OTHER FILMS: ["Mangammagari Manavadu"]
+
+### ITEM a97f68915143c696
+PAGE: Velaikaari
+SENTENCE: The film was remade in Telugu as Santhosham (1955), in Hindi as Naya Aadmi (1956), and in Kannada as Malli Maduve (1963).
+OTHER FILMS: ["Santosham (1955 film)"]
+
+### ITEM ef0e98d953c09903
+PAGE: Chal Chala Chal
+SENTENCE: The film is a remake of the 1989 Malayalam-language Indian film Varavelpu starring Mohanlal and many scenes from another Malayalam film Ee Parakkum Thalika, starring Dileep.
+OTHER FILMS: ["Ee Parakkum Thalika"]
+
+### ITEM 7f8a3c8e15b35904
+PAGE: Sagina Mahato
+SENTENCE: A diamond-jubilee hit, it created box-office records in Bengal. The film was remade as a Hindi film titled Sagina in 1974, by Sinha with the same leads, produced by the same producers team J.K.
+OTHER FILMS: ["Sagina (film)"]
+
+### ITEM 6195d26f85aab051
+PAGE: Action Replayy
+SENTENCE: The film is an uncredited remake of the 1985 film Back to the Future.
+OTHER FILMS: ["Back to the Future"]
+
+### ITEM 53461737fea435f3
+PAGE: Rangbaaz (2013 film)
+SENTENCE: It is a remake of the Telugu film Chirutha
+OTHER FILMS: ["Chirutha"]
+
+### ITEM b058a571009330a4
+PAGE: Dakota Express
+SENTENCE: Mahesh Mithra Dakota Express is a 2002 Kannada-language comedy film, a remake of the 2001 Malayalam film Ee Parakkum Thalika.
+OTHER FILMS: ["Ee Parakkum Thalika"]
+
+### ITEM 0c227cc6eba379fd
+PAGE: Naan Avanillai (2007 film)
+SENTENCE: It is a remake of the 1974 Tamil film, itself based on the 1962 the Marathi play To Mee Navhech.
+OTHER FILMS: ["Naan Avanillai (1974 film)"]
+
+### ITEM c4816dcf334bc5a6
+PAGE: My Best Friend's Wedding (2016 film)
+SENTENCE: The film is a remake of the 1997 American film of the same name.
+OTHER FILMS: ["My Best Friend's Wedding"]
+
+### ITEM 5eaf83cf9f01f082
+PAGE: Nissash Amar Tumi
+SENTENCE: It is a remake of the 2005 Telugu film Nuvvostanante Nenoddantana.
+OTHER FILMS: ["Nuvvostanante Nenoddantana"]
+
+### ITEM 9f366f2a5c174abd
+PAGE: Maan Karate
+SENTENCE: It was remade in Telugu as Tuntari (2016).
+OTHER FILMS: ["Tuntari"]
+
+### ITEM 3dd636a55dc53d01
+PAGE: Bol Bachchan
+SENTENCE: Earning over net from domestic markets and more than worldwide, Bol Bachchan became a critical and commercial success and was remade in Telugu as Masala in 2013.
+OTHER FILMS: ["Masala (2013 film)"]
+
+### ITEM 382f2a19ae6491c8
+PAGE: Premer Kahini
+SENTENCE: The movie is a remake of 2006 Kannada film Mungaru Male.
+OTHER FILMS: ["Mungaru Male"]
+
+### ITEM 333e3bab4efac5a2
+PAGE: Gaja (2008 film)
+SENTENCE: It is a remake of the 2005 Telugu film Bhadra.
+OTHER FILMS: ["Bhadra (2005 film)"]
+
+### ITEM a7e200681345c90f
+PAGE: The Mystery of Mr. X
+SENTENCE: Rex by Philip MacDonald (under the pen name Martin Porlock), was remade in 1952 as The Hour of 13''.
+OTHER FILMS: ["The Hour of 13"]
+
+### ITEM a87190922cf1fba3
+PAGE: Thunaivan
+SENTENCE: The film was remade in Hindi as Maalik.
+OTHER FILMS: ["Maalik (1972 film)"]
+
+### ITEM ede41e96a5cfc7a2
+PAGE: Brahma (1994 film)
+SENTENCE: It is a remake of Subash's 1991 Tamil film Bramma.
+OTHER FILMS: ["Bramma"]
+
+### ITEM 2ed74111bbb63fa8
+PAGE: Dil Ek Mandir
+SENTENCE: The film is a remake of Sridhar's Tamil film Nenjil Or Aalayam (1962).
+OTHER FILMS: ["Nenjil Or Aalayam"]
+
+### ITEM d0cb6a8ff5d8f4b9
+PAGE: The Nitwits
+SENTENCE: Fred Keating replaced Lionel Atwill, who later played the villain in the 1946 remake, Genius at Work.
+OTHER FILMS: ["Genius at Work"]
+
+### ITEM 4f29a22da327c9dc
+PAGE: Aasai
+SENTENCE: The film was remade in Hindi as Pyaar Zindagi Hai (2001).
+OTHER FILMS: ["Pyaar Zindagi Hai"]
+
+### ITEM 9dc3048d8af6b6d8
+PAGE: Anbukku Naan Adimai
+SENTENCE: It was remade in Hindi as Thanedaar (1990).
+OTHER FILMS: ["Thanedaar"]
+
+### ITEM 0c4594d78d3720d9
+PAGE: Aulad (1987 film)
+SENTENCE: The film is inspired by the Telugu film Maa Babu (1960), which itself was a remake of the Hindi film Chirag Kahan Roshni Kahan.
+OTHER FILMS: ["Maa Babu", "Chirag Kahan Roshni Kahan"]
+
+### ITEM 47a6dfacc678c8e2
+PAGE: Bahar (film)
+SENTENCE: It was a remake of the 1949 Tamil film Vazhkai.
+OTHER FILMS: ["Vaazhkai (1949 film)"]
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/remakes/statements/r2_008.out.json as a JSON list with one object per item: {"item": "<the code after ITEM>", "links": [{"film": "<title exactly as listed>", "relation": "...", "wording": "..."}]} with one entry in "links" for every film listed under OTHER FILMS. Write nothing else to that file.

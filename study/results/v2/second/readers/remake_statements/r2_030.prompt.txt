@@ -1,0 +1,222 @@
+You are helping to build a research corpus of film remakes from Wikipedia. Each item below gives the title of a film's Wikipedia page (PAGE), ONE sentence from the opening of that page, and the OTHER FILMS that sentence links to. For each other film, record what THE SENTENCE SAYS about PAGE and that film. You are not asked what you know about the films.
+
+For each other film give:
+- "relation":
+    "page_remakes_other"   the sentence says PAGE is a remake of the other film;
+    "other_remakes_page"   the sentence says the other film is a remake of PAGE (for example "it was remade in Telugu as ...");
+    "none"                 anything else.
+- "wording":
+    "firm"    the sentence states the remake plainly as a fact: "is a remake of", "an official remake of", "was remade as", "was remade in Hindi as";
+    "loose"   the sentence weakens or hedges it: "loosely", "partly", "unofficial", "uncredited", "inspired by", "based on the idea of", "reported to be", "said to be", "has been described as", "considered", "similar to", "reboot", "reimagining", "re-adaptation";
+    "" when the relation is "none".
+
+Rules.
+- Use only what the sentence says. Do not use your own knowledge of the films, and do not guess from titles or years.
+- If the sentence lists several films as remakes of PAGE, each of them is "other_remakes_page".
+- If the sentence says PAGE is a remake of X, and that X is itself a remake of or based on Y, then X is "page_remakes_other" and Y is "none", unless the sentence also says PAGE is a remake of Y.
+- "none" covers: a sequel, prequel or spin-off; a film that is only compared or mentioned; another remake of the same original (a sibling); a film based on the same novel, play or true story that the sentence does not call a remake; a film whose remake status the sentence denies; a dubbed version; a film shot at the same time in another language ("simultaneously", "bilingual").
+- If you cannot tell which film the word "remake" or "remade" applies to, answer "none".
+
+The items follow.
+
+### ITEM 575886b31837b7e1
+PAGE: Itlu Sravani Subramanyam
+SENTENCE: It is remade in Tamil as Thavam (2007) and unofficially in Hindi as Anjaana Anjaani (2010).
+OTHER FILMS: ["Thavam", "Anjaana Anjaani"]
+
+### ITEM f9082ad849405f8d
+PAGE: Mallepoovu
+SENTENCE: It is remake of 1957 Hindi film Pyaasa produced and directed by Guru Dutt.
+OTHER FILMS: ["Pyaasa"]
+
+### ITEM b22e733ae179d08d
+PAGE: Gudi Gantalu
+SENTENCE: It is a remake of the Tamil film Aalayamani (1962).
+OTHER FILMS: ["Aalayamani"]
+
+### ITEM 8b1dd36a692126e3
+PAGE: Driver Ramudu
+SENTENCE: It was remade in Tamil as Lorry Driver Rajakannu (1981) and in Hindi as Tarkeeb (1984).
+OTHER FILMS: ["Tarkeeb"]
+
+### ITEM 87e80ecd78b8a92b
+PAGE: Power (2014 Telugu film)
+SENTENCE: This film was remade into Bengali with the same title in 2016.
+OTHER FILMS: ["Power (2016 film)"]
+
+### ITEM 65f3a547e4cb5fe7
+PAGE: Billa (2009 film)
+SENTENCE: It is the remake of 2007 Tamil language film Billa, which itself is a remake of 1980 film Billa, and that itself was a remake of 1978 Hindi film Don.
+OTHER FILMS: ["Billa (2007 film)", "Billa (1980 film)", "Don (1978 film)"]
+
+### ITEM f588aa8aa98fe313
+PAGE: Mooga Nomu
+SENTENCE: It is a remake of the studio's Tamil film Kalathur Kannamma (1960).
+OTHER FILMS: ["Kalathur Kannamma"]
+
+### ITEM 0439925444e79c3b
+PAGE: Sardaar Gabbar Singh
+SENTENCE: Sardaar Gabbar Singh is not a remake or sequel — it's an original script written by Pawan Kalyan as a spiritual successor to Gabbar Singh (2012), which was a remake of Dabangg.
+OTHER FILMS: ["Dabangg"]
+
+### ITEM 791d13c961c579af
+PAGE: Allari Pilla
+SENTENCE: The film was remake of the 1991 Malayalam film Kilukkam which was reported to have been inspired by the 1953 movie Roman Holiday.
+OTHER FILMS: ["Roman Holiday"]
+
+### ITEM ecce422878f48878
+PAGE: C.I.D. (1965 film)
+SENTENCE: The film is a remake of the Tamil movie Dheiva Thaai (1964).
+OTHER FILMS: ["Dheiva Thaai"]
+
+### ITEM f4b813d88ab36ebf
+PAGE: Sundarakanda (2008 film)
+SENTENCE: This film is the remake of Hollywood film What a Girl Wants (2003).
+OTHER FILMS: ["What a Girl Wants (film)"]
+
+### ITEM 8f281845380177f2
+PAGE: Nee Jathaga Nenundali
+SENTENCE: It is an official remake of 2013 film Aashiqui 2, which was an adaptation of both the original 1937 version and the 1976 remake of A Star is Born films.{{Efn|The 1937 film is in the public domain and was based on the film What Price Hollywood? (1932), itself adapted from a story by [[Adela Rogers St.
+OTHER FILMS: ["Aashiqui 2", "A Star Is Born (1937 film)", "A Star Is Born (1976 film)", "What Price Hollywood?"]
+
+### ITEM fdff4ac9b5303568
+PAGE: Shambo Shiva Shambo
+SENTENCE: This film is a remake of the director's 2009 film Naadodigal.
+OTHER FILMS: ["Naadodigal"]
+
+### ITEM 871f048e2f83f8bf
+PAGE: Yagnam (2004 film)
+SENTENCE: The film was remade in Tamil as Mannin Maindhan (2005).
+OTHER FILMS: ["Mannin Maindhan"]
+
+### ITEM cf1b1fbf4efe1c10
+PAGE: S. P. Parasuram
+SENTENCE: This was due to the fact that another remake of Walter Vetrivel (1993) known as Khuddar (1994) which was a Hindi language adaptation was released 3 months earlier and Khuddar (1994) was having a good run at the theatres especially in Hyderabad.
+OTHER FILMS: ["Walter Vetrivel"]
+
+### ITEM fdc736858acdda03
+PAGE: Bhagyalakshmi Bumper Draw
+SENTENCE: It is a remake of the Hindi film Malamaal Weekly (2006; an adaptation of the 1998 film Waking Ned).
+OTHER FILMS: ["Waking Ned"]
+
+### ITEM 50d019be322162ba
+PAGE: Rajendrudu Gajendrudu
+SENTENCE: The film was remade in Hindi as Jodidar, with Mithun Chakraborthy.
+OTHER FILMS: ["Jodidar"]
+
+### ITEM 7caca525a21f876b
+PAGE: Intlo Illalu Vantintlo Priyuralu
+SENTENCE: The film was a remake of Tamil film Thaikulame Thaikulame.
+OTHER FILMS: ["Thaikulame Thaikulame"]
+
+### ITEM db977e75f83a1dda
+PAGE: Kondapalli Raja
+SENTENCE: The film is a remake of the 1987 Hindi movie Khudgarz which in turn was based on Jeffrey Archer's 1979 novel Kane and Abel.
+OTHER FILMS: ["Khudgarz"]
+
+### ITEM de0165f932cf52c8
+PAGE: S. P. Parasuram
+SENTENCE: Parasuram was a remake of the 1993 Tamil film Walter Vetrivel'' starring Sathyaraj.
+OTHER FILMS: ["Walter Vetrivel"]
+
+### ITEM ea088e785947d6ea
+PAGE: Madhyanam Hathya
+SENTENCE: The soundtrack of the film was arranged by Shailendra Swapnil. It was remade in Hindi as My Wife's Murder (2005) starring Anil Kapoor and Suchitra Krishnamoorthi.
+OTHER FILMS: ["My Wife's Murder"]
+
+### ITEM aa0a110003777d18
+PAGE: The Housemaid (2010 film)
+SENTENCE: The film is a remake of Kim Ki-young's 1960 film of the same name.
+OTHER FILMS: ["The Housemaid (1960 film)"]
+
+### ITEM c6ddb2fe8a6107db
+PAGE: Anandam
+SENTENCE: The film was remade in Kannada as Ananda, in Tamil as Inidhu Inidhu Kaadhal Inidhu, both versions being produced by Ramoji Rao and in Hindi as Thoda Tum Badlo Thoda Hum.
+OTHER FILMS: ["Thoda Tum Badlo Thoda Hum"]
+
+### ITEM ecbb698d027c132a
+PAGE: Idi Katha Kaadu
+SENTENCE: It is a remake of Balachander's own Tamil film Avargal (1977).
+OTHER FILMS: ["Avargal"]
+
+### ITEM 2c1a65264fdf3f61
+PAGE: Chanti (1992 film)
+SENTENCE: The film is a remake of the 1991 Tamil film Chinna Thambi.
+OTHER FILMS: ["Chinna Thambi"]
+
+### ITEM 63c7c1a58ec88ba5
+PAGE: Yemaindi Ee Vela
+SENTENCE: It was later remade in Tamil as Ishtam (2012), with Aggarwal reprising her role and Vimal reprising Sandesh's role.
+OTHER FILMS: ["Ishtam (2012 film)"]
+
+### ITEM df4f148753795a0d
+PAGE: Pelli (film)
+SENTENCE: Pelli was later remade in Kannada as Maduve (1997), in Tamil as Aval Varuvala (1998), and in Hindi as Koi Mere Dil Se Poochhe (2002).
+OTHER FILMS: ["Aval Varuvala"]
+
+### ITEM d388da135fae8fda
+PAGE: Jeevana Jyothi (1975 film)
+SENTENCE: Viswanath later remade the film in Hindi as Sanjog (1985), with Jaya Prada and Jeetendra.
+OTHER FILMS: ["Sanjog (1985 film)"]
+
+### ITEM f6f6a5e17e3aa7e2
+PAGE: My Love, My Bride (2014 film)
+SENTENCE: It is a remake of the hit 1990 film of the same title starring Park Joong-hoon and Choi Jin-sil.
+OTHER FILMS: ["My Love, My Bride (1990 film)"]
+
+### ITEM f1b0b195211ebecd
+PAGE: Dhenikaina Ready
+SENTENCE: The film was remade in Bengali as Khiladi (2013).
+OTHER FILMS: ["Khiladi (2013 film)"]
+
+### ITEM 70ff4e7956255601
+PAGE: Bhadra (2005 film)
+SENTENCE: The film was later remade in Tamil as Saravana (2006), Kannada as Gaja (2008), in Bengali as Josh, and Bangladeshi Bengali as Bhalobeshe Morte Pari (both in 2010).
+OTHER FILMS: ["Saravana", "Josh (2010 film)"]
+
+### ITEM df4d76b7ad86fdcd
+PAGE: Mundadugu
+SENTENCE: In 1984, it was remade in Hindi as Maqsad.
+OTHER FILMS: ["Maqsad"]
+
+### ITEM 7b153fbff07e7375
+PAGE: Oosaravelli
+SENTENCE: It was later remade in Bengali as Rocky in 2013.
+OTHER FILMS: ["Rocky (2013 film)"]
+
+### ITEM 96da715258b6e052
+PAGE: Vikram (1986 Telugu film)
+SENTENCE: It is a remake of the Hindi film Hero (1983) and it is the debut of Nagarjuna as a lead actor.
+OTHER FILMS: ["Hero (1983 film)"]
+
+### ITEM 3e04207a5753a7dc
+PAGE: Parugu
+SENTENCE: The film was dubbed into Malayalam as Krishna in the same year, achieving commercial success.'' It was later remade in Bollywood as Heropanti'' (2014).
+OTHER FILMS: ["Heropanti"]
+
+### ITEM 949acf5e1885aa38
+PAGE: Mama Manchu Alludu Kanchu
+SENTENCE: It is a remake of the Marathi film Be Dune Saade Chaar (2009) and shares continuity with the 1992 film Allari Mogudu.
+OTHER FILMS: ["Allari Mogudu"]
+
+### ITEM 0b6001e6034e383f
+PAGE: Classmates (2007 film)
+SENTENCE: A remake of the Malayalam film of the same name, it stars Sumanth, Sadha, Sharwanand, Kamalinee Mukherjee, Ravi Varma, and Sunil.
+OTHER FILMS: ["Classmates (2006 film)"]
+
+### ITEM f02a40cff3a73abc
+PAGE: Kandireega
+SENTENCE: It was remade in Bengali as Paglu 2 and Hindi as Main Tera Hero (2014).
+OTHER FILMS: ["Paglu 2", "Main Tera Hero"]
+
+### ITEM 627ce21f3e1e28a6
+PAGE: Ravoyi Chandamama
+SENTENCE: The American film was also remade in Hindi as Mann which also released in 1999.
+OTHER FILMS: ["Mann (1999 film)"]
+
+### ITEM ebe27fd6bda4b0df
+PAGE: Annadammula Anubandham
+SENTENCE: It is a remake of the Hindi film Yaadon Ki Baaraat (1973).
+OTHER FILMS: ["Yaadon Ki Baaraat"]
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/remakes/statements/r2_030.out.json as a JSON list with one object per item: {"item": "<the code after ITEM>", "links": [{"film": "<title exactly as listed>", "relation": "...", "wording": "..."}]} with one entry in "links" for every film listed under OTHER FILMS. Write nothing else to that file.

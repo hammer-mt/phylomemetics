@@ -1,0 +1,136 @@
+[
+  {
+    "id": 25162941,
+    "kind": "film",
+    "year": 1931,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Adventure of the Speckled Band",
+        "tier": "A",
+        "quote": "It was written by W. P. Lipscomb, adapted from Arthur Conan Doyle's original 1892 story \"The Adventure of the Speckled Band\" and the 1910 play he adapted from it, The Speckled Band."
+      }
+    ],
+    "other_sources": [
+      "The Speckled Band (1910 play by Arthur Conan Doyle)"
+    ]
+  },
+  {
+    "id": 8267581,
+    "kind": "film",
+    "year": 1945,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Five Orange Pips",
+        "tier": "B",
+        "quote": "Directed by Roy William Neill, it is loosely based on the 1891 short story \"The Five Orange Pips\" by Arthur Conan Doyle."
+      }
+    ],
+    "other_sources": []
+  },
+  {
+    "id": 5663440,
+    "kind": "film",
+    "year": 1959,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Hound of the Baskervilles",
+        "tier": "A",
+        "quote": "The Hound of the Baskervilles is a 1959 British Gothic mystery film directed by Terence Fisher and produced by Hammer Film Productions, based upon Arthur Conan Doyle's 1902 novel."
+      }
+    ],
+    "other_sources": []
+  },
+  {
+    "id": 25793288,
+    "kind": "film",
+    "year": 2011,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Final Problem",
+        "tier": "C",
+        "quote": "Although the film follows an original premise, it incorporates more closely elements of Conan Doyle's short stories, including \"The Final Problem\" and \"The Adventure of the Empty House\"."
+      },
+      {
+        "story": "The Adventure of the Empty House",
+        "tier": "C",
+        "quote": "Although the film follows an original premise, it incorporates more closely elements of Conan Doyle's short stories, including \"The Final Problem\" and \"The Adventure of the Empty House\"."
+      }
+    ],
+    "other_sources": []
+  },
+  {
+    "id": 8101785,
+    "kind": "video_game",
+    "year": 2004,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": [
+      "The Adventures of Sherlock Holmes (the article says the game is \"inspired by\" it)",
+      "unpublished pastiche novel by Jalil Amr"
+    ]
+  },
+  {
+    "id": 2565348,
+    "kind": "film",
+    "year": 1975,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": []
+  },
+  {
+    "id": 50016336,
+    "kind": "video_game",
+    "year": 2016,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": []
+  },
+  {
+    "id": 48348862,
+    "kind": "tv_episode",
+    "year": 2016,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Adventure of the Musgrave Ritual",
+        "tier": "C",
+        "quote": "The title is based on the quote \"Ricoletti of the club foot and his abominable wife\" from \"The Adventure of the Musgrave Ritual\" (1893), which refers to a case mentioned by Holmes."
+      },
+      {
+        "story": "The Five Orange Pips",
+        "tier": "C",
+        "quote": "The story also draws on elements of original Conan Doyle stories of Holmes such as \"The Five Orange Pips\" (1891) and \"The Final Problem\" (1893)."
+      },
+      {
+        "story": "The Final Problem",
+        "tier": "C",
+        "quote": "The story also draws on elements of original Conan Doyle stories of Holmes such as \"The Five Orange Pips\" (1891) and \"The Final Problem\" (1893)."
+      },
+      {
+        "story": "A Study in Scarlet",
+        "tier": "C",
+        "quote": "Moriarty's stating \"There is nothing new under the sun. It has all been done before\" comes from one of Arthur Conan Doyle's original Sherlock Holmes stories, A Study in Scarlet."
+      },
+      {
+        "story": "The Adventure of the Greek Interpreter",
+        "tier": "C",
+        "quote": "Mycroft's mentioning of the Manor House Case references \"The Greek Interpreter\"."
+      }
+    ],
+    "other_sources": []
+  },
+  {
+    "id": 8655859,
+    "kind": "video_game",
+    "year": 2006,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": [
+      "Cthulhu Mythos"
+    ]
+  }
+]

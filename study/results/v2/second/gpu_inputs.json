@@ -29,5 +29,19 @@
   "qwen3-8b": "aeb386bc0aef0144aa8435ea3699623d84d0e03772d0097bb50f50f3beffe2a5",
   "llama3.1-8b": "21470c1a07da0ed0c088d9c2006032e8c9294286a3c1ccc4dfc714935e3300af",
   "llama3.3-70b": "70087e058d9b7826f95176c8394a91ae4903d6a6655fe3d7b4d2a3db92b18f68"
+ },
+ "code_sha256": {
+  "v2/second/remake_test.py": "acefcbb199b43a33d77411a34309816106361f45b95f47e1cefbfee242b849af",
+  "v2/second/lib.py": "41a9ddb1316edd2f0ea254e83a36011762d83e01c1ab707623a4661b846bfecc",
+  "v2/second/holmes.py": "f48839603a62e22626a03cb9296171d15eca23fe2ec7bf2b2f2076164eea17f4",
+  "v2/second/probes.py": "5a69009475d9d1f801409168a94b4d534f5c32f7cc867f5a6252a5c76d01dfc0",
+  "v2/second/confirmatory.py": "168b73c8ead19a47f9fd385a6dc20bc73eb11332ba54fe1c09113e82a831a6aa",
+  "v2/gpu/presence_pass.py": "ffa5cce7c61ee481bc0b1d14b2fac2608d2b7938e1493dc6efbbb41b27fd1416",
+  "v2/gpu/copresence.py": "169e312a5dbbe3d8cfc239fb8f59e8329a7ad38194efa749f71e2e1af12d0021",
+  "v2/gpu/embed_pass.py": "d3d3d339690345554a9ea5001a7dfd99b6f3b0a8ca4230c513e9e9b913883fbd",
+  "v2/gpu/background_pass.py": "8fba2d2d801e1352e875771dee072cbf9fd554a9c1e75298f900a482fa32827e",
+  "v2/gpu/ablate.py": "ed672d0338b99d72d7b6cfbe2bcbe946a759c354f71421eaf50fade3a3914769",
+  "v2/gpu/neurons.py": "aa1164d21307405c428823e90ee0ceb5a4c1e2bbaf1c978ae5f975ff7d3f6ac7",
+  "v2/gpu/study_pass.py": "a83a5abe537e537294fb5d0030cb39d3355b0de00ad1637fe4cc0594932daa29"
  }
 }

@@ -127,14 +127,19 @@ def texts():
     models = ("qwen3-32b", "qwen3-8b", "llama3.1-8b", "llama3.3-70b")
     rec["scale_ref_sha256"] = {t: sha(f"v2/acts/{t}/scale_ref.npy") for t in models}
     rec["bg_counts_ref_scale_sha256"] = {t: sha(f"v2/acts/{t}/bg_counts_ref_scale.npy") for t in models}        # v2's stored counts, which set Holmes's base rates
+    rec["code_sha256"] = {f: sha(f) for f in CODE_HASHED}
     RECORD.parent.mkdir(parents=True, exist_ok=True)
     json.dump(rec, open(RECORD, "w"), indent=1)
     print("wrote", RECORD, "with", len(rec["files"]), "files")
 
 
-FROZEN_PATHS = ["v2/second", "v2/gpu", "v2/analysis", "v2/prompts", "experiments.py", "discover.py", "fetch_corpus.py", "data/second",
-                "results/v2/second/gpu_inputs.json", "results/v2/second/holmes_words.json", "results/v2/second/holmes_e3_power.json",
-                "results/v2/second/remakes_words.json", "../preregistration/second_corpus"]
+FROZEN_PATHS = (["v2/second/" + f for f in ("PLAN.md", "README.md", "gpu.py", "run_pod.sh", "probes.py", "build_holmes.py", "build_remakes.py", "names.py", "wiki.py",
+                                             "plots.py", "lib.py", "holmes.py", "e3_power.py", "remake_test.py", "confirmatory.py")] +
+                ["v2/gpu", "v2/analysis", "v2/prompts", "experiments.py", "discover.py", "fetch_corpus.py", "data/second", "results/v2/second/gpu_inputs.json",
+                 "results/v2/second/holmes_words.json", "results/v2/second/holmes_e3_power.json", "results/v2/second/remakes_words_parts", "../preregistration/second_corpus"])
+# v2/second/remakes.py is not in the list: PLAN.md Section 9 says why (it is finished and reviewed, with words alone, while the machines work)
+CODE_HASHED = ["v2/second/remake_test.py", "v2/second/lib.py", "v2/second/holmes.py", "v2/second/probes.py", "v2/second/confirmatory.py", "v2/gpu/presence_pass.py",
+               "v2/gpu/copresence.py", "v2/gpu/embed_pass.py", "v2/gpu/background_pass.py", "v2/gpu/ablate.py", "v2/gpu/neurons.py", "v2/gpu/study_pass.py"]
 
 
 def freeze_state():

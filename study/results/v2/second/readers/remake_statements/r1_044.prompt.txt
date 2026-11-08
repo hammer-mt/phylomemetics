@@ -1,0 +1,167 @@
+You are helping to build a research corpus of film remakes from Wikipedia. Each item below gives the title of a film's Wikipedia page (PAGE), ONE sentence from the opening of that page, and the OTHER FILMS that sentence links to. For each other film, record what THE SENTENCE SAYS about PAGE and that film. You are not asked what you know about the films.
+
+For each other film give:
+- "relation":
+    "page_remakes_other"   the sentence says PAGE is a remake of the other film;
+    "other_remakes_page"   the sentence says the other film is a remake of PAGE (for example "it was remade in Telugu as ...");
+    "none"                 anything else.
+- "wording":
+    "firm"    the sentence states the remake plainly as a fact: "is a remake of", "an official remake of", "was remade as", "was remade in Hindi as";
+    "loose"   the sentence weakens or hedges it: "loosely", "partly", "unofficial", "uncredited", "inspired by", "based on the idea of", "reported to be", "said to be", "has been described as", "considered", "similar to", "reboot", "reimagining", "re-adaptation";
+    "" when the relation is "none".
+
+Rules.
+- Use only what the sentence says. Do not use your own knowledge of the films, and do not guess from titles or years.
+- If the sentence lists several films as remakes of PAGE, each of them is "other_remakes_page".
+- If the sentence says PAGE is a remake of X, and that X is itself a remake of or based on Y, then X is "page_remakes_other" and Y is "none", unless the sentence also says PAGE is a remake of Y.
+- "none" covers: a sequel, prequel or spin-off; a film that is only compared or mentioned; another remake of the same original (a sibling); a film based on the same novel, play or true story that the sentence does not call a remake; a film whose remake status the sentence denies; a dubbed version; a film shot at the same time in another language ("simultaneously", "bilingual").
+- If you cannot tell which film the word "remake" or "remade" applies to, answer "none".
+
+The items follow.
+
+### ITEM 7fa693000aacfcc0
+PAGE: Die Another Day
+SENTENCE: The next film in the series, Casino Royale, was released in November 2006, which also served as a reboot of the franchise with Daniel Craig replacing Brosnan as Bond.
+OTHER FILMS: ["Casino Royale (2006 film)"]
+
+### ITEM 0307c941065d23f6
+PAGE: Counsel's Opinion
+SENTENCE: It was remade in 1938 as The Divorce of Lady X.
+OTHER FILMS: ["The Divorce of Lady X"]
+
+### ITEM d2c4aa74916b024b
+PAGE: My Bloody Valentine (film)
+SENTENCE: A remake, My Bloody Valentine 3D, was released in 2009.
+OTHER FILMS: ["My Bloody Valentine 3D"]
+
+### ITEM 376cdc18ed08f914
+PAGE: Leprechaun: Origins
+SENTENCE: It is a reboot of Leprechaun (1993) and the seventh installment in the Leprechaun franchise.
+OTHER FILMS: ["Leprechaun (film)"]
+
+### ITEM db1c2b75fb97f764
+PAGE: Beauty and the Beast 3D
+SENTENCE: Other derivate works include three direct-to-video follow-ups, a television series, a live-action remake in 2017, and a live-action/animated television special in 2022.
+OTHER FILMS: ["Beauty and the Beast (2017 film)"]
+
+### ITEM 3cf7f34dec6e559b
+PAGE: Brothers (2004 film)
+SENTENCE: Brothers is a 2004 Danish psychological thriller war film directed by Susanne Bier and written by Bier and Anders Thomas Jensen. It stars Nikolaj Lie Kaas, Connie Nielsen and Ulrich Thomsen. The film was remade as an British production with the same title (2009), directed by Jim Sheridan.
+OTHER FILMS: ["Brothers (2009 film)"]
+
+### ITEM 7158762341649ae6
+PAGE: Amityville: The Awakening
+SENTENCE: It is the tenth installment of the Amityville film series and a metafilm taking place in the "real world", where the 1979 original, its sequels, and the 2005 remake are all works of fiction.
+OTHER FILMS: ["The Amityville Horror (1979 film)", "The Amityville Horror (2005 film)"]
+
+### ITEM 2fafcea3e996b533
+PAGE: Gawain and the Green Knight (1973 film)
+SENTENCE: Weeks remade the film in 1984 as Sword of the Valiant with Miles O'Keeffe and Sean Connery as Gawain and the Green Knight, respectively.
+OTHER FILMS: ["Sword of the Valiant"]
+
+### ITEM cbdde49c3b1dabaf
+PAGE: Flatliners (2017 film)
+SENTENCE: A stand-alone sequel to and remake of the 1990 film of the same name, it stars Elliot Page, Diego Luna, Nina Dobrev, James Norton, and Kiersey Clemons.
+OTHER FILMS: ["Flatliners"]
+
+### ITEM e2732af95679b133
+PAGE: The Day of the Jackal (film)
+SENTENCE: A remake of the film was released in 1997.
+OTHER FILMS: ["The Jackal (1997 film)"]
+
+### ITEM 4e2adaf66d937bc6
+PAGE: The Roommate
+SENTENCE: The film was successful at the box office but panned by critics, with the film served as a unofficial remake of Single White Female (1992).
+OTHER FILMS: ["Single White Female"]
+
+### ITEM c41a8d49480a8c9d
+PAGE: Hitman: Agent 47
+SENTENCE: It is a reboot of the 2007 film Hitman, and was directed by Aleksander Bach (in his directorial debut) and written by Skip Woods (who also wrote the 2007 film) and Michael Finch.
+OTHER FILMS: ["Hitman (2007 film)"]
+
+### ITEM b389225f2bd3d19a
+PAGE: Red Dawn (2012 film)
+SENTENCE: It is a remake of the 1984 film of the same name.
+OTHER FILMS: ["Red Dawn"]
+
+### ITEM 9e1953a254593298
+PAGE: Star Trek Beyond
+SENTENCE: It is the 13th installment in the Star Trek franchise and the third installment in the reboot series, serving as the sequel to Star Trek (2009) and Star Trek Into Darkness (2013).
+OTHER FILMS: ["Star Trek Into Darkness"]
+
+### ITEM f7c69fd5259cdf7a
+PAGE: Dance Pretty Lady
+SENTENCE: It was remade as the 1946 film Carnival.
+OTHER FILMS: ["Carnival (1946 film)"]
+
+### ITEM 88ebc5628dcee10c
+PAGE: The Secret Life of Walter Mitty (2013 film)
+SENTENCE: Though "more of a remake" of the 1947 film of the same name, both are film adaptations of James Thurber's 1939 short story.
+OTHER FILMS: ["The Secret Life of Walter Mitty (1947 film)"]
+
+### ITEM 406553c29c33679b
+PAGE: Patrick (1978 film)
+SENTENCE: A remake was released in 2013.
+OTHER FILMS: ["Patrick (2013 film)"]
+
+### ITEM ab3625cb8c29c703
+PAGE: The 39 Steps (1959 film)
+SENTENCE: Produced by Betty Box, it is a remake of the 1935 Alfred Hitchcock film, loosely based on the 1915 novel The Thirty-Nine Steps by John Buchan.
+OTHER FILMS: ["The 39 Steps (1935 film)"]
+
+### ITEM 637857cee5caa5ac
+PAGE: My Wife's Family (1941 film)
+SENTENCE: Anoppi tulee]]''; and a British remake in 1956.
+OTHER FILMS: ["My Wife's Family (1956 film)"]
+
+### ITEM 843964dfbf5327f3
+PAGE: Gambit (2012 film)
+SENTENCE: It is a remake of the 1966 film starring Shirley MacLaine and Michael Caine.
+OTHER FILMS: ["Gambit (1966 film)"]
+
+### ITEM a7ce67bd0434857b
+PAGE: Village of the Damned (1960 film)
+SENTENCE: A sequel, Children of the Damned (1964), followed, as did a remake, also called Village of the Damned (1995).
+OTHER FILMS: ["Children of the Damned", "Village of the Damned (1995 film)"]
+
+### ITEM b886d40a3fe3e339
+PAGE: Interlude (1968 film)
+SENTENCE: The film is a loose remake of the 1957 American film Interlude directed by Douglas Sirk, set against the backdrop of Swinging London.
+OTHER FILMS: ["Interlude (1957 film)"]
+
+### ITEM d8e56f3efb3e15b3
+PAGE: Dawn of the Planet of the Apes
+SENTENCE: The sequel to Rise of the Planet of the Apes (2011), it is the second installment in the Planet of the Apes reboot film series and the eighth film overall.
+OTHER FILMS: ["Rise of the Planet of the Apes"]
+
+### ITEM 095a357ea5fa2e8f
+PAGE: The Italian Job
+SENTENCE: The film itself was later given a video game adaptation in 2001, before receiving a remake in 2003.
+OTHER FILMS: ["The Italian Job (2003 film)"]
+
+### ITEM b54a0d122f1b8fa8
+PAGE: Fantastic Four (2015 film)
+SENTENCE: Rivkin|Stephen Rivkin]] Marco Beltrami Philip Glass 20th Century Fox Constantin Film Marvel Entertainment Marv Films Kinberg Genre Moving Picture Company 20th Century Fox (Worldwide) Constantin Film (Germany) United States United Kingdom Fantastic Four (stylized as Fant4stic in all caps) is a 2015 superhero film based on the Marvel Comics superhero team and the first reboot of the Fantastic Four film series since Rise of the Silver Surfer (2007).
+OTHER FILMS: ["Fantastic Four: Rise of the Silver Surfer"]
+
+### ITEM 6164eb0c7ada9312
+PAGE: Jane Steps Out
+SENTENCE: The film was remade as a BBC play in 1957, and as the Hindi film Love in Simla (1960) that made Sadhana Shivdasani into a star.
+OTHER FILMS: ["Love in Simla"]
+
+### ITEM 5389cb8667aec22f
+PAGE: Dog Pound (film)
+SENTENCE: It is a Canadian remake of the 1979 British borstal film Scum.
+OTHER FILMS: ["Scum (film)"]
+
+### ITEM 44490095e1c44767
+PAGE: Crossplot (film)
+SENTENCE: It was written by Leigh Vance and John Kruse and is a loose remake of North by Northwest.
+OTHER FILMS: ["North by Northwest"]
+
+### ITEM 873dba98c963f3c9
+PAGE: St Trinian's (film)
+SENTENCE: Trinian's]]'' in 1954, with sequels in 1957, 1960, 1966 and a reboot in 1980.
+OTHER FILMS: ["The Pure Hell of St Trinian's", "The Great St Trinian's Train Robbery", "The Wildcats of St Trinian's"]
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/remakes/statements/r1_044.out.json as a JSON list with one object per item: {"item": "<the code after ITEM>", "links": [{"film": "<title exactly as listed>", "relation": "...", "wording": "..."}]} with one entry in "links" for every film listed under OTHER FILMS. Write nothing else to that file.

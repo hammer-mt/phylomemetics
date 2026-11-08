@@ -1,0 +1,222 @@
+You are helping to build a research corpus of film remakes from Wikipedia. Each item below gives the title of a film's Wikipedia page (PAGE), ONE sentence from the opening of that page, and the OTHER FILMS that sentence links to. For each other film, record what THE SENTENCE SAYS about PAGE and that film. You are not asked what you know about the films.
+
+For each other film give:
+- "relation":
+    "page_remakes_other"   the sentence says PAGE is a remake of the other film;
+    "other_remakes_page"   the sentence says the other film is a remake of PAGE (for example "it was remade in Telugu as ...");
+    "none"                 anything else.
+- "wording":
+    "firm"    the sentence states the remake plainly as a fact: "is a remake of", "an official remake of", "was remade as", "was remade in Hindi as";
+    "loose"   the sentence weakens or hedges it: "loosely", "partly", "unofficial", "uncredited", "inspired by", "based on the idea of", "reported to be", "said to be", "has been described as", "considered", "similar to", "reboot", "reimagining", "re-adaptation";
+    "" when the relation is "none".
+
+Rules.
+- Use only what the sentence says. Do not use your own knowledge of the films, and do not guess from titles or years.
+- If the sentence lists several films as remakes of PAGE, each of them is "other_remakes_page".
+- If the sentence says PAGE is a remake of X, and that X is itself a remake of or based on Y, then X is "page_remakes_other" and Y is "none", unless the sentence also says PAGE is a remake of Y.
+- "none" covers: a sequel, prequel or spin-off; a film that is only compared or mentioned; another remake of the same original (a sibling); a film based on the same novel, play or true story that the sentence does not call a remake; a film whose remake status the sentence denies; a dubbed version; a film shot at the same time in another language ("simultaneously", "bilingual").
+- If you cannot tell which film the word "remake" or "remade" applies to, answer "none".
+
+The items follow.
+
+### ITEM aa0a110003777d18
+PAGE: The Housemaid (2010 film)
+SENTENCE: The film is a remake of Kim Ki-young's 1960 film of the same name.
+OTHER FILMS: ["The Housemaid (1960 film)"]
+
+### ITEM 32a0a61df66ce5d5
+PAGE: Dhruva (2016 film)
+SENTENCE: A remake of the Tamil film Thani Oruvan (2015), it follows Dhruva, an IPS officer who wants to arrest Siddharth Abhimanyu, a wealthy scientist, who uses secret medical and illegal practices for profit.
+OTHER FILMS: ["Thani Oruvan"]
+
+### ITEM 34102d7818d2a9c2
+PAGE: Ramudu Bheemudu
+SENTENCE: Chanakya remade the film in Tamil as Enga Veettu Pillai (1965).
+OTHER FILMS: ["Enga Veettu Pillai"]
+
+### ITEM f588aa8aa98fe313
+PAGE: Mooga Nomu
+SENTENCE: It is a remake of the studio's Tamil film Kalathur Kannamma (1960).
+OTHER FILMS: ["Kalathur Kannamma"]
+
+### ITEM 0b6001e6034e383f
+PAGE: Classmates (2007 film)
+SENTENCE: A remake of the Malayalam film of the same name, it stars Sumanth, Sadha, Sharwanand, Kamalinee Mukherjee, Ravi Varma, and Sunil.
+OTHER FILMS: ["Classmates (2006 film)"]
+
+### ITEM 49e7c9403c080944
+PAGE: Pataas
+SENTENCE: It was remade in Tamil as Motta Shiva Ketta Shiva and in Kannada as Pataki.
+OTHER FILMS: ["Motta Shiva Ketta Shiva", "Pataki (film)"]
+
+### ITEM e26cb9433299a6ca
+PAGE: Konchem Ishtam Konchem Kashtam
+SENTENCE: The film was remade in Bengali as Romeo (2011).
+OTHER FILMS: ["Romeo (2011 film)"]
+
+### ITEM 417a19f6b81ad4ac
+PAGE: Dark Water (2002 film)
+SENTENCE: An American remake, directed by Walter Salles and starring Jennifer Connelly and Tim Roth, was released in 2005.
+OTHER FILMS: ["Dark Water (2005 film)"]
+
+### ITEM 05fc894de326ed67
+PAGE: Swargam Narakam
+SENTENCE: The debut film for Mohan Babu and Annapoorna, it was later remade in Bollywood as Swarg Narak (1978) and in Kollywood as Sorgam Naragam (1977).
+OTHER FILMS: ["Swarg Narak"]
+
+### ITEM 016a0b85c5034597
+PAGE: Ready (2008 film)
+SENTENCE: It was remade in Kannada as Raam (2009), Tamil as Uthama Puthiran (2010), and in Hindi under the same name (2011).
+OTHER FILMS: ["Raam (2009 film)", "Uthamaputhiran (2010 film)", "Ready (2011 film)"]
+
+### ITEM 9bd2e774c0844c6d
+PAGE: Katha Nayakudu
+SENTENCE: The film was remade in Tamil as Nam Naadu (1969), and in Hindi as Apna Desh (1972).
+OTHER FILMS: ["Nam Naadu (1969 film)", "Apna Desh"]
+
+### ITEM bb549a17303c1e9a
+PAGE: Pokiri (2006 film)
+SENTENCE: It was remade in Tamil as Pokkiri (2007), in Hindi as Wanted (2009), in Kannada as Porki (2010)
+OTHER FILMS: ["Pokkiri", "Wanted (2009 film)"]
+
+### ITEM 96de820540618d1d
+PAGE: Seshu
+SENTENCE: It is a remake of the 1999 hit Tamil film Sethu, directed by Bala.
+OTHER FILMS: ["Sethu (film)"]
+
+### ITEM 87b5d347a5c6a988
+PAGE: Adavari Matalaku Ardhale Verule
+SENTENCE: Following its success, the film was remade in Tamil as Yaaradi Nee Mohini (2008; starring Selvaraghavan's brother Dhanush), Kannada as Anthu Inthu Preethi Banthu (2008), Odia as Prema Adhei Akhyara (2010), Bengali as 100% Love (2012) and Bhojpuri as Mehandi Laga Ke Rakhna (2017).
+OTHER FILMS: ["Yaaradi Nee Mohini", "100% Love (2012 film)"]
+
+### ITEM 56b8fd5a37c9e04f
+PAGE: Bumper Offer
+SENTENCE: The movie was remade in Bengali in 2013 as Loveria and in Bengali Bangladesh in 2020 as Shoshurbari Zindabad 2.
+OTHER FILMS: ["Loveria"]
+
+### ITEM 89562e1fb949e937
+PAGE: Shubha Lagnam
+SENTENCE: The film was remade in Tamil as Irattai Roja (1996), in Hindi as Judaai (1997), in Kannada as Ganga Yamuna (1997) and in Malayalam as Sundara Purushan (2001).
+OTHER FILMS: ["Irattai Roja", "Judaai (1997 film)", "Sundara Purushan (2001 film)"]
+
+### ITEM c5f9919562ed382c
+PAGE: Simhadri (2003 film)
+SENTENCE: Produced on a budget of, it collected a distributor's share over at the box-office. The film was remade in two other languages: as Gajendra (2004) in Tamil, and as Kanteerava (2012) in Kannada.
+OTHER FILMS: ["Kanteerava"]
+
+### ITEM b7ecbc1067ac6b2f
+PAGE: Maro Charitra (2010 film)
+SENTENCE: A remake of the 1978 film of the same name, the film stars Varun Sandesh, newcomer Anita Galler and Shraddha Das.
+OTHER FILMS: ["Maro Charitra"]
+
+### ITEM 2a3f92f9422863b8
+PAGE: Pusthakamlo Konni Pageelu Missing
+SENTENCE: The film is a remake of Balaji Tharaneetharan's 2012 film Naduvula Konjam Pakkatha Kaanom. It stars Sree, Supraja, Rahul, Satish and Mast Ali in vital roles.
+OTHER FILMS: ["Naduvula Konjam Pakkatha Kaanom"]
+
+### ITEM 995975a76daffb95
+PAGE: Bommarillu
+SENTENCE: Following the film's critical and commercial success, it was remade in Tamil as Santosh Subramaniam (2008), in Bengali as Bhalobasa Bhalobasa (2008), in Odia as Dream Girl (2009), and in Hindi as It's My Life (2020).
+OTHER FILMS: ["Santosh Subramaniam", "Bhalobasa Bhalobasa (2008 film)"]
+
+### ITEM f57b2c0b887627b1
+PAGE: A*P*E
+SENTENCE: A*P*E was released at approximately the same time as Dino De Laurentiis' 1976 remake of King Kong.
+OTHER FILMS: ["King Kong (1976 film)"]
+
+### ITEM 6d7af45b9c0ff337
+PAGE: Soggadu (1975 film)
+SENTENCE: It was remade in Hindi as Dildaar (1977) and in Tamil as Radhaiketra Kannan (1978).
+OTHER FILMS: ["Dildaar"]
+
+### ITEM 5f51c2de204d3fbe
+PAGE: Anuraga Devata
+SENTENCE: It is a remake of the Hindi film Aasha (1980).
+OTHER FILMS: ["Aasha (1980 film)"]
+
+### ITEM 7ca65012db69fb2c
+PAGE: Prathinidhi
+SENTENCE: This film was remade in Tamil as Ko 2.
+OTHER FILMS: ["Ko 2"]
+
+### ITEM 15ecfa0b074f901b
+PAGE: Goutham Nanda
+SENTENCE: The film is an adaptation of the ANR starrer 1961 film Iddaru Mitrulu, which itself is a remake of Uttam Kumar's Bengali film Tasher Ghar (1957), also influenced by Daphne Du Maurier’s famous novel The Scapegoat.
+OTHER FILMS: ["Iddaru Mitrulu (1961 film)"]
+
+### ITEM 93f98c4338984a26
+PAGE: Manmadhudu
+SENTENCE: The film was later remade in Kannada as Aishwarya and in Bengali as Priyotoma (both in 2006).
+OTHER FILMS: ["Aishwarya (film)"]
+
+### ITEM 24bca2ae94a81205
+PAGE: Nuvvu Nenu
+SENTENCE: It was remade in Hindi as Yeh Dil (2003), with Anita reprising her role, and in Tamil as Madurai Veeran (2007).
+OTHER FILMS: ["Madurai Veeran (2007 film)"]
+
+### ITEM 19f1e2b1dea8d789
+PAGE: Srivari Muchatlu
+SENTENCE: The film is remade in Hindi as Asha Jyoti (1984).
+OTHER FILMS: ["Asha Jyoti"]
+
+### ITEM 0425f22d04962e34
+PAGE: Chitram Bhalare Vichitram
+SENTENCE: The film was later remade into Kannada as Bombat Hendthi (1992) and Tamil as Aanazhagan (1995).
+OTHER FILMS: ["Bombat Hendthi", "Aanazhagan"]
+
+### ITEM 24e71ba9ef486c86
+PAGE: Naa Autograph
+SENTENCE: This film is a remake of the Tamil film Autograph.
+OTHER FILMS: ["Autograph (2004 film)"]
+
+### ITEM ff2b9f669d56e5cb
+PAGE: Ye Maaya Chesave
+SENTENCE: It was remade in Hindi as Ekk Deewana Tha.
+OTHER FILMS: ["Ekk Deewana Tha"]
+
+### ITEM 460a1b558cbe8585
+PAGE: Manasantha Nuvve
+SENTENCE: Owing to its success, the film was remade in Kannada as Manasella Neene (2002), in Hindi as Jeena Sirf Merre Liye (2002), in Tamil as Thithikudhe (2003), in Bengali (Bangladesh) as Moner Majhe Tumi (2003), and in Odia as Neijare Megha Mate (2008).
+OTHER FILMS: ["Jeena Sirf Merre Liye", "Thithikudhe"]
+
+### ITEM a31a9ad61ac21190
+PAGE: Lakshyam (2007 film)
+SENTENCE: It was later remade in Tamil as Maanja Velu (2010), in Bengali as Fighter (2011), and in Kannada as Varadhanayaka (2013).
+OTHER FILMS: ["Maanja Velu"]
+
+### ITEM ef8ab8398818f792
+PAGE: Leader (2010 film)
+SENTENCE: Over the years, it gained a cult following and was later remade in Hindi in 2014 as Youngistaan. Leader was listed among the "25 Greatest Telugu Films Of The Decade" by Film Companion.
+OTHER FILMS: ["Youngistaan"]
+
+### ITEM d2c63c54a425413e
+PAGE: Gharshana
+SENTENCE: It is the remake of the Menon's own 2003 Tamil film Kaakha Kaakha.
+OTHER FILMS: ["Kaakha Kaakha"]
+
+### ITEM 16e2bcb77a10e62b
+PAGE: Gunde Jaari Gallanthayyinde
+SENTENCE: In 2015, it was remade in Kannada as Khushi Khushiyagi.
+OTHER FILMS: ["Khushi Khushiyagi"]
+
+### ITEM df4f148753795a0d
+PAGE: Pelli (film)
+SENTENCE: Pelli was later remade in Kannada as Maduve (1997), in Tamil as Aval Varuvala (1998), and in Hindi as Koi Mere Dil Se Poochhe (2002).
+OTHER FILMS: ["Aval Varuvala"]
+
+### ITEM 96da715258b6e052
+PAGE: Vikram (1986 Telugu film)
+SENTENCE: It is a remake of the Hindi film Hero (1983) and it is the debut of Nagarjuna as a lead actor.
+OTHER FILMS: ["Hero (1983 film)"]
+
+### ITEM 6970596df4c4b543
+PAGE: Kalisundam Raa
+SENTENCE: The film was remade in Hindi as Kuch Tum Kaho Kuch Hum Kahein (2002) and in Kannada as Ondagona Baa (2003).
+OTHER FILMS: ["Kuch Tum Kaho Kuch Hum Kahein"]
+
+### ITEM ab442933dc2257ea
+PAGE: Aastiparulu
+SENTENCE: The film was remade in Tamil as En Thambi and in Hindi as Bhai Ho To Aisa.
+OTHER FILMS: ["En Thambi", "Bhai Ho To Aisa"]
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/remakes/statements/r1_031.out.json as a JSON list with one object per item: {"item": "<the code after ITEM>", "links": [{"film": "<title exactly as listed>", "relation": "...", "wording": "..."}]} with one entry in "links" for every film listed under OTHER FILMS. Write nothing else to that file.

@@ -1,0 +1,131 @@
+[
+  {
+    "id": 24884713,
+    "kind": "film",
+    "year": 1980,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Adventure of Charles Augustus Milverton",
+        "tier": "A",
+        "quote": "The film is based on three short stories by Conan Doyle: \"The Adventure of Charles Augustus Milverton\", \"The Final Problem\", and \"The Adventure of the Empty House\"."
+      },
+      {
+        "story": "The Final Problem",
+        "tier": "A",
+        "quote": "The film is based on three short stories by Conan Doyle: \"The Adventure of Charles Augustus Milverton\", \"The Final Problem\", and \"The Adventure of the Empty House\"."
+      },
+      {
+        "story": "The Adventure of the Empty House",
+        "tier": "A",
+        "quote": "The film is based on three short stories by Conan Doyle: \"The Adventure of Charles Augustus Milverton\", \"The Final Problem\", and \"The Adventure of the Empty House\"."
+      }
+    ],
+    "other_sources": []
+  },
+  {
+    "id": 12622762,
+    "kind": "series",
+    "year": 1979,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": []
+  },
+  {
+    "id": 25162941,
+    "kind": "film",
+    "year": 1931,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Adventure of the Speckled Band",
+        "tier": "A",
+        "quote": "It was written by W. P. Lipscomb, adapted from Arthur Conan Doyle's original 1892 story \"The Adventure of the Speckled Band\" and the 1910 play he adapted from it, The Speckled Band."
+      }
+    ],
+    "other_sources": [
+      "The Speckled Band (1910 play by Arthur Conan Doyle)"
+    ]
+  },
+  {
+    "id": 40463536,
+    "kind": "film",
+    "year": 2015,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": [
+      "A Slight Trick of the Mind (2005 novel by Mitch Cullin)"
+    ]
+  },
+  {
+    "id": 19596597,
+    "kind": "film",
+    "year": 2009,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Hound of the Baskervilles",
+        "tier": "C",
+        "quote": "The plot point, moreover, nods to the Holmesian tale of The Hound of the Baskervilles, where a string of seemingly supernatural events is finally explained through intuitive reasoning and scientific savvy."
+      }
+    ],
+    "other_sources": [
+      "Enter the Lion: A Posthumous Memoir of Mycroft Holmes (1979 novel; uncredited incidents)"
+    ]
+  },
+  {
+    "id": 36398735,
+    "kind": "tv_film",
+    "year": 1976,
+    "holmes_appears": false,
+    "sources": [],
+    "other_sources": [
+      "They Might Be Giants (1971 film; loosely re-made)"
+    ]
+  },
+  {
+    "id": 25793288,
+    "kind": "film",
+    "year": 2011,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Final Problem",
+        "tier": "C",
+        "quote": "Although the film follows an original premise, it incorporates more closely elements of Conan Doyle's short stories, including \"The Final Problem\" and \"The Adventure of the Empty House\"."
+      },
+      {
+        "story": "The Adventure of the Empty House",
+        "tier": "C",
+        "quote": "Although the film follows an original premise, it incorporates more closely elements of Conan Doyle's short stories, including \"The Final Problem\" and \"The Adventure of the Empty House\"."
+      }
+    ],
+    "other_sources": []
+  },
+  {
+    "id": 11350779,
+    "kind": "film",
+    "year": 1942,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "His Last Bow (short story)",
+        "tier": "B",
+        "quote": "The film combines elements of Doyle's short story \"His Last Bow\", to which it is credited as an adaptation, and the real-life activities of Lord Haw-Haw."
+      }
+    ],
+    "other_sources": [
+      "the real-life activities of Lord Haw-Haw"
+    ]
+  },
+  {
+    "id": 1615582,
+    "kind": "film",
+    "year": 1971,
+    "holmes_appears": false,
+    "sources": [],
+    "other_sources": [
+      "They Might Be Giants (1961 play by James Goldman)"
+    ]
+  }
+]

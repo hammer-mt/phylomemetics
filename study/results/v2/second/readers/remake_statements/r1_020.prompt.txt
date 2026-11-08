@@ -1,0 +1,222 @@
+You are helping to build a research corpus of film remakes from Wikipedia. Each item below gives the title of a film's Wikipedia page (PAGE), ONE sentence from the opening of that page, and the OTHER FILMS that sentence links to. For each other film, record what THE SENTENCE SAYS about PAGE and that film. You are not asked what you know about the films.
+
+For each other film give:
+- "relation":
+    "page_remakes_other"   the sentence says PAGE is a remake of the other film;
+    "other_remakes_page"   the sentence says the other film is a remake of PAGE (for example "it was remade in Telugu as ...");
+    "none"                 anything else.
+- "wording":
+    "firm"    the sentence states the remake plainly as a fact: "is a remake of", "an official remake of", "was remade as", "was remade in Hindi as";
+    "loose"   the sentence weakens or hedges it: "loosely", "partly", "unofficial", "uncredited", "inspired by", "based on the idea of", "reported to be", "said to be", "has been described as", "considered", "similar to", "reboot", "reimagining", "re-adaptation";
+    "" when the relation is "none".
+
+Rules.
+- Use only what the sentence says. Do not use your own knowledge of the films, and do not guess from titles or years.
+- If the sentence lists several films as remakes of PAGE, each of them is "other_remakes_page".
+- If the sentence says PAGE is a remake of X, and that X is itself a remake of or based on Y, then X is "page_remakes_other" and Y is "none", unless the sentence also says PAGE is a remake of Y.
+- "none" covers: a sequel, prequel or spin-off; a film that is only compared or mentioned; another remake of the same original (a sibling); a film based on the same novel, play or true story that the sentence does not call a remake; a film whose remake status the sentence denies; a dubbed version; a film shot at the same time in another language ("simultaneously", "bilingual").
+- If you cannot tell which film the word "remake" or "remade" applies to, answer "none".
+
+The items follow.
+
+### ITEM 4cce0bf988907257
+PAGE: Daring Lover
+SENTENCE: It is a remake of the 2006 Tamil language comedy film Thiruvilaiyaadal Aarambam.
+OTHER FILMS: ["Thiruvilaiyaadal Aarambam"]
+
+### ITEM c5924895163075ec
+PAGE: Tarka (movie)
+SENTENCE: It was remade in Tamil in 1990 as Puriyaadha Pudhir and in Hindi in 1997 as Chupp.
+OTHER FILMS: ["Puriyaadha Pudhir", "Chupp"]
+
+### ITEM 0487896014c79989
+PAGE: Indianapolis Speedway (film)
+SENTENCE: This film is a remake of The Crowd Roars, which starred James Cagney; McHugh repeats his role from the earlier film.
+OTHER FILMS: ["The Crowd Roars (1932 film)"]
+
+### ITEM 0d852cffba0fe622
+PAGE: Happy Days (2007 film)
+SENTENCE: The film was dubbed in Malayalam with same title and was remade in Kannada as Jolly Days and in Tamil as Inidhu Inidhu by actor Prakash Raj.
+OTHER FILMS: ["Inidhu Inidhu"]
+
+### ITEM 508b218d611e1a6b
+PAGE: Love Affair (1939 film)
+SENTENCE: Its popularity was later dwarfed by McCarey's 1957 remake An Affair to Remember, which spawned its own remakes with 1994's Love Affair and a few Indian adaptations.
+OTHER FILMS: ["An Affair to Remember", "Love Affair (1994 film)"]
+
+### ITEM 6b3db41dc9d15b85
+PAGE: So Big (1932 film)
+SENTENCE: A 1953 remake was directed by Robert Wise and starred Jane Wyman.
+OTHER FILMS: ["So Big (1953 film)"]
+
+### ITEM 363321f54e66a4cb
+PAGE: Chirag Kahan Roshni Kahan
+SENTENCE: It was remade in Telugu as Maa Babu in 1960.
+OTHER FILMS: ["Maa Babu"]
+
+### ITEM 3c6525ec104a2d47
+PAGE: Aap Ki Khatir (2006 film)
+SENTENCE: An unofficial remake of the 2005 American film The Wedding Date, it was released on 25 August 2006 and was a box-office bomb as well as Darshan's final film as a director.
+OTHER FILMS: ["The Wedding Date"]
+
+### ITEM 2608d2bb03f25846
+PAGE: Villu (film)
+SENTENCE: It is a remake of the 1998 Hindi film Soldier.
+OTHER FILMS: ["Soldier (1998 Indian film)"]
+
+### ITEM ced94d58e8bf3a2a
+PAGE: Kan Simittum Neram
+SENTENCE: It was remade in Hindi as Sailaab (1990).
+OTHER FILMS: ["Sailaab (1990 film)"]
+
+### ITEM 78b5ce0e46512b93
+PAGE: Anubhav (1986 film)
+SENTENCE: This film is the Hindi remake of 1984 Kannada film Anubhava, in which Kashinath, director of the Hindi version, played the lead role.
+OTHER FILMS: ["Anubhava (film)"]
+
+### ITEM 929d9693b425c81b
+PAGE: Drohkaal
+SENTENCE: It was remade simultaneously in 1995 in Tamil and Telugu as Kuruthipunal and Drohi.
+OTHER FILMS: ["Kuruthipunal (film)"]
+
+### ITEM edfa231526f5c608
+PAGE: Farz Aur Kanoon
+SENTENCE: Rama Rao]], Sridevi which itself was a remake of the 1974 Tamil movie Thanga Pathakkam, which incidentally went on to inspire another Hindi movie in 1982 itself – Shakti.
+OTHER FILMS: ["Thanga Pathakkam", "Shakti (1982 film)"]
+
+### ITEM bcbfc87fa0ff571a
+PAGE: Chiranjeevulu (1956 film)
+SENTENCE: It is a partial remake of the Hindi film Mela (1948).
+OTHER FILMS: ["Mela (1948 film)"]
+
+### ITEM e5a4a05c395b5da0
+PAGE: O Kadhal Kanmani
+SENTENCE: The film was later remade in Hindi as Ok Jaanu in 2017.
+OTHER FILMS: ["Ok Jaanu"]
+
+### ITEM 5eb379776d4918ab
+PAGE: Sila Nerangalil
+SENTENCE: The film was an uncredited remake of the American romantic thriller film, Dead Again (1991).
+OTHER FILMS: ["Dead Again"]
+
+### ITEM 21b95385c8a07b32
+PAGE: Kaalia
+SENTENCE: It was later remade in Kannada in 1984 as Huliyaada Kaala starring Tiger Prabhakar and in Tamil in 1987 as Cooliekkaran starring Vijayakanth.
+OTHER FILMS: ["Cooliekkaran"]
+
+### ITEM 4bcb8b08b4a8a8db
+PAGE: Kanamachi (film)
+SENTENCE: The film is remake of 2011 Tamil film Ko.
+OTHER FILMS: ["Ko (film)"]
+
+### ITEM 8889daf05096e2c1
+PAGE: My Man Godfrey
+SENTENCE: The film was remade in 1957 with June Allyson and David Niven in the starring roles.
+OTHER FILMS: ["My Man Godfrey (1957 film)"]
+
+### ITEM 6d85ffeedf2cb527
+PAGE: Bombat Hendthi
+SENTENCE: The movie was a remake of Rao's own Telugu film Chitram Bhalare Vichitram (1991) which itself is a remake of Bengali film Joy Maa Kali Boarding (1955).
+OTHER FILMS: ["Chitram Bhalare Vichitram"]
+
+### ITEM db867edea841c0d3
+PAGE: Heropanti
+SENTENCE: It is a remake of 2008 Telugu film Parugu and was released on 23 May 2014.
+OTHER FILMS: ["Parugu"]
+
+### ITEM 15bc63b96dec6b63
+PAGE: Ladies in Love
+SENTENCE: Supporting player Simone Simon co-starred with James Stewart the following year in Seventh Heaven, a remake of the 1927 film of the same name, playing one of Janet Gaynor's greatest roles from the silent era.
+OTHER FILMS: ["Seventh Heaven (1937 film)"]
+
+### ITEM e6094183b8d11299
+PAGE: Pooja Ke Phool
+SENTENCE: This is a remake of the Tamil film Kumudham.
+OTHER FILMS: ["Kumudham"]
+
+### ITEM 51b45e6d12d0f78c
+PAGE: Libeled Lady
+SENTENCE: The film was remade in 1946 as Easy to Wed with Esther Williams, Van Johnson, and Lucille Ball.
+OTHER FILMS: ["Easy to Wed"]
+
+### ITEM bf1f2f70e088fce2
+PAGE: Boss (2013 Hindi film)
+SENTENCE: A remake of the 2010 Malayalam film Pokkiri Raja, it stars Akshay Kumar as the titular character, along with Mithun Chakraborty, Shiv Panditt, Ronit Roy and Aditi Rao Hydari.
+OTHER FILMS: ["Pokkiri Raja (2010 film)"]
+
+### ITEM 06b4935ccd87c357
+PAGE: Agneepath (1990 film)
+SENTENCE: The film was remade in 2012 with the same title and directed and writer by Karan Malhotra and produced by Hiroo Yash Johar and Johar's son Karan Johar, as a tribute to his father.
+OTHER FILMS: ["Agneepath (2012 film)"]
+
+### ITEM 24b7540779203825
+PAGE: Richie (film)
+SENTENCE: It is a remake of the 2014 Kannada film Ulidavaru Kandanthe and stars Nivin Pauly in the title role, along with Natty, Shraddha Srinath, and Lakshmi Priyaa Chandramouli in lead roles, while Prakash Raj, Elango Kumaravel, Raj Bharath, and Aadukalam Murugadoss play supporting roles.
+OTHER FILMS: ["Ulidavaru Kandanthe"]
+
+### ITEM 88173f93e204ba31
+PAGE: Goldie (1931 film)
+SENTENCE: It is a remake of Howard Hawks' 1928 silent film, A Girl in Every Port.
+OTHER FILMS: ["A Girl in Every Port (1928 film)"]
+
+### ITEM 504cbb5065e73b72
+PAGE: Pyaasa
+SENTENCE: It was remade into the Telugu film Mallepoovu in 1978.
+OTHER FILMS: ["Mallepoovu"]
+
+### ITEM 63d55a0191250e87
+PAGE: En Annan
+SENTENCE: The film is a remake of the 1955 Bengali film Sabar Uparey, previously remade into Tamil as Nalla Theerpu in 1959.
+OTHER FILMS: ["Nalla Theerpu"]
+
+### ITEM c4816dcf334bc5a6
+PAGE: My Best Friend's Wedding (2016 film)
+SENTENCE: The film is a remake of the 1997 American film of the same name.
+OTHER FILMS: ["My Best Friend's Wedding"]
+
+### ITEM 2e435d7636ea39f5
+PAGE: Thavasi
+SENTENCE: The film was remade in Kannada as Mallikarjuna (2011).
+OTHER FILMS: ["Mallikarjuna (film)"]
+
+### ITEM 28dfc0d935295235
+PAGE: My Autograph
+SENTENCE: This film is a remake of Tamil film Autograph, which was directed and enacted by Cheran.
+OTHER FILMS: ["Autograph (2004 film)"]
+
+### ITEM 0bb5c09c46cf15f3
+PAGE: Enga Veettu Pillai
+SENTENCE: A remake of his 1964 Telugu film Ramudu Bheemudu, it stars [[M.
+OTHER FILMS: ["Ramudu Bheemudu"]
+
+### ITEM 8e2db60fda2de3f4
+PAGE: Sadak
+SENTENCE: This film was remade in Tamil as Appu (2000).
+OTHER FILMS: ["Appu (2000 film)"]
+
+### ITEM ad28019356ce8b0c
+PAGE: Gnana Oli
+SENTENCE: This film was remade in Hindi as Devata (1978) and in Telugu as Chakravarthy (1987).
+OTHER FILMS: ["Chakravarthy (1987 film)"]
+
+### ITEM 928a7ef409013b85
+PAGE: Paisa Paisa (film)
+SENTENCE: Paisa Paisa may refer to these in Indian entertainment: Paisa Paisa (2017 film), an Indian Telugu-language film Paisa Paisa (2016 film), an Indian Marathi-language film by Joji Raechal Job Paisa Paisa (2013 film), an Indian Malayalam-language film "Paisa Paisa" (2009 song), the theme song for the 2009 Indian Hindi-language film De Dana Dan "Paisa Paisa" (2007 song), a song from the Tamil version of the 2007 Indian Hindi-language film Guru "Paisa Paisa", a song by Suzanne D'Mello and Hamza Faruqui in the 2006 Indian Hindi-language film Apna Sapna Money Money "Paisa Paisa", a 2002 Punjabi song by Daler Mehndi from the album Nach Ni Shaam Kaure "Paisa Paisa", remake by Mehndi for the 2014 India
+OTHER FILMS: ["Paisa Vasool (2017 film)", "Paisa Paisa (2016 film)", "De Dana Dan", "Apna Sapna Money Money"]
+
+### ITEM 415c92bb93586fe0
+PAGE: Vallarasu
+SENTENCE: The film was remade in Hindi as Indian (2001) by the same director and Mukesh Rishi reprising his role as Wasim Khan.
+OTHER FILMS: ["Indian (2001 film)"]
+
+### ITEM d74533cfebc5dc78
+PAGE: Humraaz
+SENTENCE: The film is inspired from the 1998 American film A Perfect Murder (which was a remake of Alfred Hitchcock's 1954 film Dial M for Murder, itself an adaptation of Frederick Knott's 1952 play of the same name).
+OTHER FILMS: ["A Perfect Murder", "Dial M for Murder"]
+
+### ITEM 30b47b197a6e5f72
+PAGE: Sigappu Rojakkal
+SENTENCE: The film was later remade by Bharathiraja himself in Hindi as Red Rose (1980).
+OTHER FILMS: ["Red Rose (1980 film)"]
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/remakes/statements/r1_020.out.json as a JSON list with one object per item: {"item": "<the code after ITEM>", "links": [{"film": "<title exactly as listed>", "relation": "...", "wording": "..."}]} with one entry in "links" for every film listed under OTHER FILMS. Write nothing else to that file.

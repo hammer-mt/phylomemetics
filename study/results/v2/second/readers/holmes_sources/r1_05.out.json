@@ -1,0 +1,98 @@
+[
+  {
+    "id": 26583800,
+    "kind": "film",
+    "year": 1976,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": ["The Seven-Per-Cent Solution (1974 novel by Nicholas Meyer)"]
+  },
+  {
+    "id": 3085944,
+    "kind": "tv_film",
+    "year": 2004,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": []
+  },
+  {
+    "id": 28839700,
+    "kind": "film",
+    "year": 1937,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Hound of the Baskervilles",
+        "tier": "A",
+        "quote": "It is an adaptation of the 1902 Sherlock Holmes story The Hound of the Baskervilles by Arthur Conan Doyle."
+      }
+    ],
+    "other_sources": []
+  },
+  {
+    "id": 25357930,
+    "kind": "film",
+    "year": 2010,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": []
+  },
+  {
+    "id": 22656233,
+    "kind": "video_game",
+    "year": 2009,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": []
+  },
+  {
+    "id": 5663440,
+    "kind": "film",
+    "year": 1959,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Hound of the Baskervilles",
+        "tier": "A",
+        "quote": "The Hound of the Baskervilles is a 1959 British Gothic mystery film directed by Terence Fisher and produced by Hammer Film Productions, based upon Arthur Conan Doyle's 1902 novel."
+      }
+    ],
+    "other_sources": []
+  },
+  {
+    "id": 41384573,
+    "kind": "tv_episode",
+    "year": 2014,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Sign of the Four",
+        "tier": "C",
+        "quote": "The episode's title is inspired by The Sign of the Four by Sir Arthur Conan Doyle."
+      }
+    ],
+    "other_sources": []
+  },
+  {
+    "id": 1771007,
+    "kind": "film",
+    "year": 1970,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": []
+  },
+  {
+    "id": 34318430,
+    "kind": "tv_episode",
+    "year": 2012,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Hound of the Baskervilles",
+        "tier": "B",
+        "quote": "The episode is a contemporary adaptation of The Hound of the Baskervilles, one of Sir Arthur Conan Doyle's most famous works."
+      }
+    ],
+    "other_sources": []
+  }
+]

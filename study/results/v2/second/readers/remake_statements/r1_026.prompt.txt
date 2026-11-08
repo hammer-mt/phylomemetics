@@ -1,0 +1,222 @@
+You are helping to build a research corpus of film remakes from Wikipedia. Each item below gives the title of a film's Wikipedia page (PAGE), ONE sentence from the opening of that page, and the OTHER FILMS that sentence links to. For each other film, record what THE SENTENCE SAYS about PAGE and that film. You are not asked what you know about the films.
+
+For each other film give:
+- "relation":
+    "page_remakes_other"   the sentence says PAGE is a remake of the other film;
+    "other_remakes_page"   the sentence says the other film is a remake of PAGE (for example "it was remade in Telugu as ...");
+    "none"                 anything else.
+- "wording":
+    "firm"    the sentence states the remake plainly as a fact: "is a remake of", "an official remake of", "was remade as", "was remade in Hindi as";
+    "loose"   the sentence weakens or hedges it: "loosely", "partly", "unofficial", "uncredited", "inspired by", "based on the idea of", "reported to be", "said to be", "has been described as", "considered", "similar to", "reboot", "reimagining", "re-adaptation";
+    "" when the relation is "none".
+
+Rules.
+- Use only what the sentence says. Do not use your own knowledge of the films, and do not guess from titles or years.
+- If the sentence lists several films as remakes of PAGE, each of them is "other_remakes_page".
+- If the sentence says PAGE is a remake of X, and that X is itself a remake of or based on Y, then X is "page_remakes_other" and Y is "none", unless the sentence also says PAGE is a remake of Y.
+- "none" covers: a sequel, prequel or spin-off; a film that is only compared or mentioned; another remake of the same original (a sibling); a film based on the same novel, play or true story that the sentence does not call a remake; a film whose remake status the sentence denies; a dubbed version; a film shot at the same time in another language ("simultaneously", "bilingual").
+- If you cannot tell which film the word "remake" or "remade" applies to, answer "none".
+
+The items follow.
+
+### ITEM 87e80ecd78b8a92b
+PAGE: Power (2014 Telugu film)
+SENTENCE: This film was remade into Bengali with the same title in 2016.
+OTHER FILMS: ["Power (2016 film)"]
+
+### ITEM 913ecfb65422dbf9
+PAGE: Operation Duryodhana (film)
+SENTENCE: The film was remade in Tamil as Thee.
+OTHER FILMS: ["Thee (2009 film)"]
+
+### ITEM 0d9d09e6c112ba56
+PAGE: Nagavalli (film)
+SENTENCE: The film is a remake of the director's 2010 Kannada film Aptharakshaka and serves as a spin-off to his 2005 Tamil film Chandramukhi, which was an official remake of the Malayalam film Manichitrathazhu (1993).
+OTHER FILMS: ["Aptharakshaka", "Chandramukhi"]
+
+### ITEM d388da135fae8fda
+PAGE: Jeevana Jyothi (1975 film)
+SENTENCE: Viswanath later remade the film in Hindi as Sanjog (1985), with Jaya Prada and Jeetendra.
+OTHER FILMS: ["Sanjog (1985 film)"]
+
+### ITEM 59b0a6e03343b376
+PAGE: Prem Nagar (1971 film)
+SENTENCE: It was remade in Tamil as Vasantha Maligai (1972) and in Hindi as Prem Nagar (1974) both directed by Prakash Rao.
+OTHER FILMS: ["Vasantha Maligai"]
+
+### ITEM 38b36db284adb663
+PAGE: April 1st Vidudala
+SENTENCE: It was remade in Tamil as Sathyavan (1994) and in Kannada as ''Mr.
+OTHER FILMS: ["Sathyavan"]
+
+### ITEM 04614181fe50c374
+PAGE: Peddarayudu
+SENTENCE: It is a remake of the 1994 Tamil film Nattamai and stars Mohan Babu in the lead in a dual role as the title character and another character, while Bhanupriya and Soundarya appear in other prominent roles with Rajinikanth appears in a special appearance.
+OTHER FILMS: ["Nattamai"]
+
+### ITEM 1d38333a86bd7f90
+PAGE: Nandeeswarudu
+SENTENCE: It is a remake of the 2005 Kannada film Deadly Soma.
+OTHER FILMS: ["Deadly Soma"]
+
+### ITEM 119eabcd0eae5bfa
+PAGE: Soggadu (2005 film)
+SENTENCE: It was unofficially remade in Hindi as Ajab Prem Ki Ghazab Kahani (2009).
+OTHER FILMS: ["Ajab Prem Ki Ghazab Kahani"]
+
+### ITEM 7b47815c6a05e80c
+PAGE: Dagudumootha Dandakor
+SENTENCE: The film is remake of the Tamil movie Saivam (2014).
+OTHER FILMS: ["Saivam"]
+
+### ITEM 48ec9cae1b870ad1
+PAGE: O Seeta Katha
+SENTENCE: The film was later remade both in Malayalam and Tamil languages as Mattoru Seetha and Moondru Mudichu, respectively.
+OTHER FILMS: ["Moondru Mudichu"]
+
+### ITEM 43688096d5bc9532
+PAGE: Chirutha
+SENTENCE: This film is an unofficial copy/remake of Swept Away (2002 film) directed by Guy Ritchie.
+OTHER FILMS: ["Swept Away (2002 film)"]
+
+### ITEM dc4efd0d5732e13a
+PAGE: Siva Rama Raju
+SENTENCE: The film was a remake of the Tamil film Samudhiram (2001), with flashback sub-plot borrowed from another Tamil film, Simmarasi (1998), a pattern later followed in the 2014 Kannada remake of this film, titled Paramashiva.
+OTHER FILMS: ["Samudhiram"]
+
+### ITEM bfe982f1277e05f4
+PAGE: Aa Naluguru
+SENTENCE: The film was later remade in Kannada in 2006 as Sirivantha.
+OTHER FILMS: ["Sirivantha"]
+
+### ITEM 8269a6e49d525103
+PAGE: Sardar Papa Rayudu
+SENTENCE: The film was a commercial success and was remade in Hindi as Sarfarosh (1985).
+OTHER FILMS: ["Sarfarosh (1985 film)"]
+
+### ITEM 1012566135309a7d
+PAGE: A Better Tomorrow (2010 film)
+SENTENCE: It is an official remake of the 1986 Hong Kong film A Better Tomorrow.
+OTHER FILMS: ["A Better Tomorrow"]
+
+### ITEM de0165f932cf52c8
+PAGE: S. P. Parasuram
+SENTENCE: Parasuram was a remake of the 1993 Tamil film Walter Vetrivel'' starring Sathyaraj.
+OTHER FILMS: ["Walter Vetrivel"]
+
+### ITEM 871f048e2f83f8bf
+PAGE: Yagnam (2004 film)
+SENTENCE: The film was remade in Tamil as Mannin Maindhan (2005).
+OTHER FILMS: ["Mannin Maindhan"]
+
+### ITEM d3864545dc972680
+PAGE: Pokiri Raja
+SENTENCE: It was a remake of the Hindi film Aankhen which was inspired from Kannada film Kittu Puttu which itself was based on Tamil film Anubavi Raja Anubavi.
+OTHER FILMS: ["Anubavi Raja Anubavi"]
+
+### ITEM 7d3314704754d9ab
+PAGE: Money (1993 film)
+SENTENCE: The film's success led to two sequels, Money Money (1995) and Money Money, More Money (2011), and a Hindi remake titled Love Ke Liye Kuch Bhi Karega (2001).
+OTHER FILMS: ["Money Money, More Money"]
+
+### ITEM 7caca525a21f876b
+PAGE: Intlo Illalu Vantintlo Priyuralu
+SENTENCE: The film was a remake of Tamil film Thaikulame Thaikulame.
+OTHER FILMS: ["Thaikulame Thaikulame"]
+
+### ITEM c0cc5dbb61b12853
+PAGE: Aakali Rajyam
+SENTENCE: It was remade in Hindi as Zara Si Zindagi (1983) with Haasan reprising his role, and Balachander again directing.
+OTHER FILMS: ["Zara Si Zindagi"]
+
+### ITEM 3ee2467968d4c999
+PAGE: Gabbar Singh (2012 film)
+SENTENCE: It is a remake of the 2010 Hindi film Dabangg.
+OTHER FILMS: ["Dabangg"]
+
+### ITEM 1a746381d3ae9c56
+PAGE: Khaidi No. 150
+SENTENCE: The film is a remake of the 2014 Tamil film Kaththi.
+OTHER FILMS: ["Kaththi"]
+
+### ITEM 1e08e8cbb97aceef
+PAGE: Bhale Pellam
+SENTENCE: The film was a remake of the Tamil film Purusha Lakshanam (1993).
+OTHER FILMS: ["Purusha Lakshanam"]
+
+### ITEM b3746c1c204d143e
+PAGE: Sundarakanda (1992 film)
+SENTENCE: It is a remake of the Tamil film Sundara Kandam.
+OTHER FILMS: ["Sundara Kandam"]
+
+### ITEM eb02541271b07a48
+PAGE: Annavaram (film)
+SENTENCE: The film is a remake of Tamil film Thirupaachi (2005).
+OTHER FILMS: ["Thirupaachi"]
+
+### ITEM 522ed2f4fd42dfba
+PAGE: Manase Mandiram
+SENTENCE: The film was a remake of Sridhar's own Tamil film Nenjil Or Aalayam (1962).
+OTHER FILMS: ["Nenjil Or Aalayam"]
+
+### ITEM 2c3beb58c58a1ba3
+PAGE: Pikachu & Pichu
+SENTENCE: The first Pokémon animated film, Pokémon: The First Movie, was released in Japan in 1998, and in 2019 was remade as Pokémon: Mewtwo Strikes Back – Evolution.
+OTHER FILMS: ["Pokémon: The First Movie"]
+
+### ITEM dbddc14328174d94
+PAGE: Bharatamlo Arjunudu
+SENTENCE: The film was a remake of Hindi film Arjun.
+OTHER FILMS: ["Arjun (1985 film)"]
+
+### ITEM b1c6afb9691ea9f2
+PAGE: Akkada Ammayi Ikkada Abbayi
+SENTENCE: It is an official remake of the 1988 Hindi film Qayamat Se Qayamat Tak.
+OTHER FILMS: ["Qayamat Se Qayamat Tak"]
+
+### ITEM 7be7b1a2ab50dff7
+PAGE: Brahma Putrudu
+SENTENCE: The film was a remake of the Tamil film Michael Raj.
+OTHER FILMS: ["Michael Raj"]
+
+### ITEM a8833edcd8e4dc56
+PAGE: Ulavacharu Biryani
+SENTENCE: A remake of Aashiq Abu's 2011 Malayalam film Salt N' Pepper, the film is simultaneously shot in three languages.
+OTHER FILMS: ["Salt N' Pepper"]
+
+### ITEM 6315f12354ee2662
+PAGE: King Kong Escapes
+SENTENCE: United States King Kong Escapes, the fourth entry of the King Kong franchise, was released in Japan by Toho on July 22, 1967, and released in the United States by Universal Pictures on June 19, 1968, as Universal's second King Kong film. 37 years later, it was followed by the second remake of the 1933 film as the third and final King Kong film by Universal on December 14, 2005.
+OTHER FILMS: ["King Kong (2005 film)"]
+
+### ITEM fe10d4c559c6aca9
+PAGE: Bamma Maata Bangaru Baata
+SENTENCE: The film is a remake of AVM's Tamil film Paatti Sollai Thattathe (1988).
+OTHER FILMS: ["Paatti Sollai Thattathe"]
+
+### ITEM 817bbb30f83b58e4
+PAGE: Seetharamaiah Gari Manavaralu
+SENTENCE: The film was remade in Malayalam as Sandhwanam (1991), in Kannada as Belli Modagalu (1992), and in Hindi as Udhaar Ki Zindagi (1994).
+OTHER FILMS: ["Udhaar Ki Zindagi"]
+
+### ITEM bb9c735580507876
+PAGE: Khadgam
+SENTENCE: The film is remade in Hindi as Insan (2005).
+OTHER FILMS: ["Insan"]
+
+### ITEM 46f3ac99dca91cbd
+PAGE: Krishnaveni (film)
+SENTENCE: It is a remake of the Kannada hit film Sharapanjara (1971).
+OTHER FILMS: ["Sharapanjara"]
+
+### ITEM b786f61f4eab3e6e
+PAGE: Manasulo Maata
+SENTENCE: Krishna Reddy]] and starring Jagapathi Babu, Srikanth and Mahima Chaudhary. The film is a remake of the Tamil film Kannedhirey Thondrinal (1998).
+OTHER FILMS: ["Kannedhirey Thondrinal"]
+
+### ITEM f4b813d88ab36ebf
+PAGE: Sundarakanda (2008 film)
+SENTENCE: This film is the remake of Hollywood film What a Girl Wants (2003).
+OTHER FILMS: ["What a Girl Wants (film)"]
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/remakes/statements/r1_026.out.json as a JSON list with one object per item: {"item": "<the code after ITEM>", "links": [{"film": "<title exactly as listed>", "relation": "...", "wording": "..."}]} with one entry in "links" for every film listed under OTHER FILMS. Write nothing else to that file.

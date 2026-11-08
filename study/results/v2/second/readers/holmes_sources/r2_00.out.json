@@ -1,0 +1,123 @@
+[
+  {
+    "id": 78425821,
+    "kind": "film",
+    "year": 2026,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": []
+  },
+  {
+    "id": 19596597,
+    "kind": "film",
+    "year": 2009,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Hound of the Baskervilles",
+        "tier": "C",
+        "quote": "The plot point, moreover, nods to the Holmesian tale of The Hound of the Baskervilles, where a string of seemingly supernatural events is finally explained through intuitive reasoning and scientific savvy."
+      }
+    ],
+    "other_sources": [
+      "Enter the Lion: A Posthumous Memoir of Mycroft Holmes (1979 novel; uncredited incidents)"
+    ]
+  },
+  {
+    "id": 11351598,
+    "kind": "film",
+    "year": 1943,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Adventure of the Musgrave Ritual",
+        "tier": "B",
+        "quote": "Made in 1943, it is a loose adaptation of Sir Arthur Conan Doyle's 1893 Holmes short story \"The Adventure of the Musgrave Ritual\"."
+      }
+    ],
+    "other_sources": []
+  },
+  {
+    "id": 23934336,
+    "kind": "film",
+    "year": 1932,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Sign of the Four",
+        "tier": "A",
+        "quote": "It was written by W. P. Lipscomb based on Arthur Conan Doyle's second Sherlock Holmes novel The Sign of the Four (1890)."
+      }
+    ],
+    "other_sources": []
+  },
+  {
+    "id": 51350614,
+    "kind": "film",
+    "year": 2018,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": []
+  },
+  {
+    "id": 34318430,
+    "kind": "tv_episode",
+    "year": 2012,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Hound of the Baskervilles",
+        "tier": "B",
+        "quote": "The episode is a contemporary adaptation of The Hound of the Baskervilles, one of Sir Arthur Conan Doyle's most famous works."
+      }
+    ],
+    "other_sources": []
+  },
+  {
+    "id": 50693419,
+    "kind": "film",
+    "year": 1951,
+    "holmes_appears": false,
+    "sources": [
+      {
+        "story": "The Hound of the Baskervilles",
+        "tier": "B",
+        "quote": "Produced by Chayanika Chitramandir and Kine Craft Studios, the film is based on Hemendra Kumar Roy's novel Nishithini Bibhishika, which itself is a Bengali adaptation of Arthur Conan Doyle's crime novel The Hound of the Baskervilles (1902)."
+      }
+    ],
+    "other_sources": [
+      "Nishithini Bibhishika by Hemendra Kumar Roy (novel)"
+    ]
+  },
+  {
+    "id": 38166510,
+    "kind": "film",
+    "year": 1929,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Hound of the Baskervilles",
+        "tier": "A",
+        "quote": "The Hound of the Baskervilles is a 1929 German silent mystery film directed by Richard Oswald and is an adaptation of the 1902 Sherlock Holmes novel The Hound of the Baskervilles by Arthur Conan Doyle."
+      }
+    ],
+    "other_sources": []
+  },
+  {
+    "id": 306812,
+    "kind": "film",
+    "year": 1986,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Red-Headed League",
+        "tier": "C",
+        "quote": "whose voice, sampled from a 1966 reading of \"The Red-Headed League\" was the voice of Holmes in this film, nearly 19 years after his death"
+      }
+    ],
+    "other_sources": [
+      "Basil of Baker Street by Eve Titus and Paul Galdone (children's book series)",
+      "The Castle of Cagliostro (1979 film; inspiration for the clock-tower climax)"
+    ]
+  }
+]

@@ -1,0 +1,222 @@
+You are helping to build a research corpus of film remakes from Wikipedia. Each item below gives the title of a film's Wikipedia page (PAGE), ONE sentence from the opening of that page, and the OTHER FILMS that sentence links to. For each other film, record what THE SENTENCE SAYS about PAGE and that film. You are not asked what you know about the films.
+
+For each other film give:
+- "relation":
+    "page_remakes_other"   the sentence says PAGE is a remake of the other film;
+    "other_remakes_page"   the sentence says the other film is a remake of PAGE (for example "it was remade in Telugu as ...");
+    "none"                 anything else.
+- "wording":
+    "firm"    the sentence states the remake plainly as a fact: "is a remake of", "an official remake of", "was remade as", "was remade in Hindi as";
+    "loose"   the sentence weakens or hedges it: "loosely", "partly", "unofficial", "uncredited", "inspired by", "based on the idea of", "reported to be", "said to be", "has been described as", "considered", "similar to", "reboot", "reimagining", "re-adaptation";
+    "" when the relation is "none".
+
+Rules.
+- Use only what the sentence says. Do not use your own knowledge of the films, and do not guess from titles or years.
+- If the sentence lists several films as remakes of PAGE, each of them is "other_remakes_page".
+- If the sentence says PAGE is a remake of X, and that X is itself a remake of or based on Y, then X is "page_remakes_other" and Y is "none", unless the sentence also says PAGE is a remake of Y.
+- "none" covers: a sequel, prequel or spin-off; a film that is only compared or mentioned; another remake of the same original (a sibling); a film based on the same novel, play or true story that the sentence does not call a remake; a film whose remake status the sentence denies; a dubbed version; a film shot at the same time in another language ("simultaneously", "bilingual").
+- If you cannot tell which film the word "remake" or "remade" applies to, answer "none".
+
+The items follow.
+
+### ITEM 3ed066772ec56025
+PAGE: Ghajini (2008 film)
+SENTENCE: A remake of Murugadoss' 2005 Tamil film of the same name, it stars Khan, Asin, Jiah Khan and Pradeep Rawat.
+OTHER FILMS: ["Ghajini (2005 film)"]
+
+### ITEM 7581279cc96a8d3c
+PAGE: Mr Bond
+SENTENCE: There have also been two independent Bond film productions: Casino Royale (a 1967 spoof starring David Niven) and Never Say Never Again (a 1983 remake of an earlier Eon-produced film, 1965's Thunderball, both starring Connery).
+OTHER FILMS: ["Casino Royale (1967 film)", "Never Say Never Again", "Thunderball (film)"]
+
+### ITEM 08cb314808aece58
+PAGE: Shiva (2006 film)
+SENTENCE: The film was a prequel to the original 1990, Shiva, which is a remake of the 1989 Telugu film of the same name.
+OTHER FILMS: ["Shiva (1990 film)"]
+
+### ITEM d5b92325b0046152
+PAGE: Gold Diggers of 1937
+SENTENCE: This is the fifth movie in Warner Bros.' series of Gold Digger films, following the now lost films The Gold Diggers (1923), a silent film, and the partially lost sound film Gold Diggers of Broadway (1929), as well as Gold Diggers of 1933 – a remake of The Gold Diggers and the first to feature Busby Berkeley's extravagant production numbers – and Gold Diggers of 1935.
+OTHER FILMS: ["Gold Diggers of 1933", "Gold Diggers of 1935"]
+
+### ITEM e4c6a6f3aaffc47d
+PAGE: Pulival Kalyanam
+SENTENCE: The film was remade in Kannada as Chellata (2006).
+OTHER FILMS: ["Chellata (film)"]
+
+### ITEM 842533503115ecfb
+PAGE: The Miracle Man (1932 film)
+SENTENCE: It is a remake of the 1919 film of the same name starring Lon Chaney.
+OTHER FILMS: ["The Miracle Man (1919 film)"]
+
+### ITEM 77993a9b00ea1adf
+PAGE: Saaya (2003 film)
+SENTENCE: It is an unofficial remake of the 2002 American film Dragonfly.
+OTHER FILMS: ["Dragonfly (2002 film)"]
+
+### ITEM 54fa54ec9ae2c747
+PAGE: Yuvaraja (film)
+SENTENCE: The film is a remake of 1999 Telugu movie Thammudu which was based on the 1992 Hindi movie Jo Jeeta Wohi Sikandar which in turn was inspired by the 1979 American film Breaking Away.
+OTHER FILMS: ["Breaking Away"]
+
+### ITEM 672339ece1f03e27
+PAGE: Parthiban Kanavu (2003 film)
+SENTENCE: In 2004, it was remade in Telugu as Ammayi Bagundi.
+OTHER FILMS: ["Ammayi Bagundi"]
+
+### ITEM dcaee80458f9e91a
+PAGE: Aniyan Bava Chetan Bava
+SENTENCE: The movie was remade in Telugu as Subhamastu and in Tamil as Periya Idathu Mappillai, the latter starring Jayaram himself in the lead role.
+OTHER FILMS: ["Periya Idathu Mappillai"]
+
+### ITEM 31522371c13a9649
+PAGE: Evano Oruvan
+SENTENCE: It is a remake of Kamat's Marathi film, Dombivli Fast, which is loosely based on the 1993 American film Falling Down.
+OTHER FILMS: ["Falling Down"]
+
+### ITEM da881f4252633398
+PAGE: Velai Kidaichuduchu
+SENTENCE: The film was remade in Telugu as Assembly Rowdy (1991), in Kannada as Rowdy & MLA (1991) and in Hindi as Loafer (1996).
+OTHER FILMS: ["Assembly Rowdy"]
+
+### ITEM 7309b46513611d1c
+PAGE: Ki Kore Toke Bolbo
+SENTENCE: This was because Shudhu Tomari Jonyo was a remake of the 2013 Tamil movie Raja Rani which was an unofficial adaptation of the 2007 Kannada movie Milana.
+OTHER FILMS: ["Raja Rani (2013 film)"]
+
+### ITEM 576ae42c256c31aa
+PAGE: Police Story 4: First Strike
+SENTENCE: It is the fourth main installment of the Police Story series, and the final film in the series' original timeline before its reboot with 2004's New Police Story.
+OTHER FILMS: ["New Police Story"]
+
+### ITEM 7f8b1c3554cfb9b4
+PAGE: Kasoor
+SENTENCE: The film is an unofficial remake of the 1985 American film Jagged Edge, with the climax being borrowed from the 2000 American horror film What Lies Beneath, which was also adapted unofficially by Bhatt into a full-fledged film in 2002.
+OTHER FILMS: ["Jagged Edge (film)", "What Lies Beneath", "Raaz (2002 film)"]
+
+### ITEM 6df56dc4654d4050
+PAGE: Aisa Pyaar Kahan
+SENTENCE: The film is remake of the Telugu movie Rakta Sambandham (1962), which itself was a remake of the Tamil movie Pasamalar (1961) and has already been remade in Hindi as Rakhi (1962).
+OTHER FILMS: ["Rakta Sambandham (1962 film)", "Pasamalar"]
+
+### ITEM 8afbdebf9b418327
+PAGE: Kanne Pappa
+SENTENCE: The film was remade in Hindi by Madhavan as Aansoo Aur Muskan and also in Telugu as Bhale Papa.
+OTHER FILMS: ["Aansoo Aur Muskan"]
+
+### ITEM 9e20297e04040411
+PAGE: Swarg Narak
+SENTENCE: The film is a remake of the Telugu film Swargam Narakam (1975) made by the same director.
+OTHER FILMS: ["Swargam Narakam"]
+
+### ITEM 09e188c8c3f58ddc
+PAGE: Saivam
+SENTENCE: The film was remade in Telugu as Dagudumootha Dandakor (2015), with Arjun reprising her role.
+OTHER FILMS: ["Dagudumootha Dandakor"]
+
+### ITEM 8c11d0843eafae81
+PAGE: Chirodini Tumi Je Amar 2
+SENTENCE: It is a remake of the 2012 Tamil film Vazhakku Enn 18/9 directed by Balaji Sakthivel and serves as a spiritual sequel to Chirodini Tumi Je Amar which was a remake of another Tamil movie Kaadhal.
+OTHER FILMS: ["Vazhakku Enn 18/9", "Chirodini Tumi Je Amar", "Kaadhal"]
+
+### ITEM a2b2c5ca221b1ccf
+PAGE: Amanush (2010 film)
+SENTENCE: The film is officially a remake of the 2003 film Kaadhal Kondein starring Dhanush and Sonia Agarwal, which was already remade in Bangladesh as Onno Manush in 2004.
+OTHER FILMS: ["Kaadhal Kondein"]
+
+### ITEM e924020e1aa91b0b
+PAGE: Gang of Ghosts
+SENTENCE: Directed by Satish Kaushik, it is a remake of Bengali film Bhooter Bhabishyat (Future of the ghosts).
+OTHER FILMS: ["Bhooter Bhabishyat"]
+
+### ITEM 75ee976ca1b4e794
+PAGE: Kartoos
+SENTENCE: This film was remade in Tamil as "Paramasivan", directed by [[P.
+OTHER FILMS: ["Paramasivan"]
+
+### ITEM 895a1363b1f17519
+PAGE: Shaolin Temple (1982 film)
+SENTENCE: A remake of the film was released in 2011 titled Shaolin and starred Andy Lau, Nicholas Tse and Jackie Chan.
+OTHER FILMS: ["Shaolin (film)"]
+
+### ITEM ea5325564ef64b75
+PAGE: Pretham
+SENTENCE: It was remade in Telugu under the title Raju Gari Gadhi 2.
+OTHER FILMS: ["Raju Gari Gadhi 2"]
+
+### ITEM ebba3c765d7e32ab
+PAGE: Hum Tum Aur Ghost
+SENTENCE: This unofficial remake of Ghost Town was filmed in Newcastle upon Tyne, England.
+OTHER FILMS: ["Ghost Town (2008 film)"]
+
+### ITEM 15b4cf533ea1bd0a
+PAGE: Fareb (1996 film)
+SENTENCE: The film is an unofficial remake of 1992 American film Unlawful Entry.
+OTHER FILMS: ["Unlawful Entry (film)"]
+
+### ITEM 57e3b464563f50b3
+PAGE: Judwaa
+SENTENCE: It is a remake of the Telugu film Hello Brother (1994), which in turn is inspired from the Hong Kong action comedy film Twin Dragons (1992) starring Jackie Chan, which itself is a remake of Ranjit Mallick's Bengali film Shathe Shathyang (1982).
+OTHER FILMS: ["Hello Brother (1994 film)", "Twin Dragons"]
+
+### ITEM fb86c4cb48dbad0f
+PAGE: Pratikar
+SENTENCE: The film is a remake of 1987 Bengali film Pratikaar, which was also remade in Telugu as Raktha Tilakam and in Tamil as Thaimel Aanai.
+OTHER FILMS: ["Thaimel Aanai"]
+
+### ITEM 0a0ba556d568d83e
+PAGE: Judge Priest
+SENTENCE: It was remade by Ford in 1953 as The Sun Shines Bright.
+OTHER FILMS: ["The Sun Shines Bright"]
+
+### ITEM 17a063054c1a3ae7
+PAGE: Sivagamiyin Selvan
+SENTENCE: It is a remake of the Hindi film Aradhana (1969).
+OTHER FILMS: ["Aradhana (1969 film)"]
+
+### ITEM 8ba01fbcdaabd5e4
+PAGE: Mark of the Vampire
+SENTENCE: It has been described as a talkie remake of Browning's lost silent London After Midnight (1927), though it does not credit the older film or its writers.
+OTHER FILMS: ["London After Midnight (film)"]
+
+### ITEM f7a5771e4ce05d46
+PAGE: Avvai Shanmughi
+SENTENCE: A year later, the film was remade in Hindi as Chachi 420, with Haasan directing and reprising his role.
+OTHER FILMS: ["Chachi 420"]
+
+### ITEM a2470fc98dc6cc98
+PAGE: Rokto
+SENTENCE: Which itself was a remake of the 1996 Hollywood film The Long Kiss Goodnight.
+OTHER FILMS: ["The Long Kiss Goodnight"]
+
+### ITEM 1e632f6150598b41
+PAGE: Kick (2014 Film)
+SENTENCE: A remake of the eponymous 2009 Telugu original, it was made in collaboration with UTV Motion Pictures on a reported budget of.
+OTHER FILMS: ["Kick (2009 film)"]
+
+### ITEM b2ca6e9355f18c6e
+PAGE: Secret Service of the Imperial Court
+SENTENCE: The 2010 film 14 Blades has been suggested to be a remake.
+OTHER FILMS: ["14 Blades"]
+
+### ITEM 86cae2be366dca40
+PAGE: Ko 2
+SENTENCE: A standalone sequel to Ko (2011) and a remake of the Telugu film Prathinidhi (2014), it stars Bobby Simha, Nikki Galrani, and Prakash Raj (reprising his role from the first film), while Bala Saravanan, Ilavarasu, and John Vijay play supporting roles.
+OTHER FILMS: ["Ko (film)", "Prathinidhi"]
+
+### ITEM 43ba8d1b9f8e1fad
+PAGE: Akka Thangai
+SENTENCE: It was remade in Telugu as Akka Chellelu (1970).
+OTHER FILMS: ["Akka Chellelu"]
+
+### ITEM d9a67e52ef428fe8
+PAGE: Den Mohor
+SENTENCE: This film was an official remake of 1991 superhit Bollywood film Sanam Bewafa.
+OTHER FILMS: ["Sanam Bewafa"]
+
+### ITEM 71e947fbfe189780
+PAGE: Irudhi Suttru
+SENTENCE: The film was later remade by Kongara herself in Telugu language as Guru (2017) with several members of the cast reprising their respective roles and Venkatesh reprising Madhavan's role.
+OTHER FILMS: ["Guru (2017 film)"]
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/remakes/statements/r1_018.out.json as a JSON list with one object per item: {"item": "<the code after ITEM>", "links": [{"film": "<title exactly as listed>", "relation": "...", "wording": "..."}]} with one entry in "links" for every film listed under OTHER FILMS. Write nothing else to that file.

@@ -1,0 +1,144 @@
+[
+  {
+    "id": 23934336,
+    "kind": "film",
+    "year": 1932,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Sign of the Four",
+        "tier": "A",
+        "quote": "It was written by W. P. Lipscomb based on Arthur Conan Doyle's second Sherlock Holmes novel The Sign of the Four (1890)."
+      }
+    ],
+    "other_sources": []
+  },
+  {
+    "id": 52524488,
+    "kind": "tv_episode",
+    "year": 2017,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": []
+  },
+  {
+    "id": 10222495,
+    "kind": "tv_film",
+    "year": 1987,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Sign of the Four",
+        "tier": "B",
+        "quote": "The details of the main plot are adapted from The Sign of the Four."
+      }
+    ],
+    "other_sources": []
+  },
+  {
+    "id": 34252471,
+    "kind": "tv_episode",
+    "year": 2012,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "A Scandal in Bohemia",
+        "tier": "B",
+        "quote": "The Guardian's Sam Wollaston says that Conan Doyle's original story has \"been Moffatised as well as modernised. He starts off parallel but then wanders off left and right, into international terrorism and CIA plots and complicated conspiracy theories."
+      }
+    ],
+    "other_sources": []
+  },
+  {
+    "id": 39440323,
+    "kind": "tv_episode",
+    "year": 2014,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Adventure of the Empty House",
+        "tier": "C",
+        "quote": "Inspired by \"The Adventure of the Empty House\" and \"The Lost Special\" by Sir Arthur Conan Doyle, the episode follows Sherlock Holmes' return to London and reunion with John Watson, along with an underground terrorist network."
+      }
+    ],
+    "other_sources": [
+      "The Lost Special (Conan Doyle short story)",
+      "The Web of Fear (1968 Doctor Who serial)"
+    ]
+  },
+  {
+    "id": 67499899,
+    "kind": "film",
+    "year": 2022,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": [
+      "1888 matchgirls' strike (real event)",
+      "life of labour activist Sarah Chapman"
+    ]
+  },
+  {
+    "id": 73659998,
+    "kind": "video_game",
+    "year": 2023,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": [
+      "Sherlock Holmes: The Awakened (2007 video game, of which this is a remake)"
+    ]
+  },
+  {
+    "id": 4700217,
+    "kind": "film",
+    "year": 1943,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Sign of the Four",
+        "tier": "C",
+        "quote": "The use of a pygmy confederate is taken from the novel The Sign of Four and the murder by use of a venomous animal inserted through a ventilation system is taken from \"The Speckled Band\""
+      },
+      {
+        "story": "The Final Problem",
+        "tier": "C",
+        "quote": "Holmes faking his death at a waterfall is similar to the climax of \"The Final Problem\" and his subsequent reappearance in the presence of a mourning Watson bears resemblance to \"The Empty House\"."
+      },
+      {
+        "story": "The Adventure of the Empty House",
+        "tier": "C",
+        "quote": "Holmes faking his death at a waterfall is similar to the climax of \"The Final Problem\" and his subsequent reappearance in the presence of a mourning Watson bears resemblance to \"The Empty House\"."
+      },
+      {
+        "story": "The Adventure of the Speckled Band",
+        "tier": "C",
+        "quote": "The use of a pygmy confederate is taken from the novel The Sign of Four and the murder by use of a venomous animal inserted through a ventilation system is taken from \"The Speckled Band\""
+      },
+      {
+        "story": "The Adventure of the Devil's Foot",
+        "tier": "C",
+        "quote": "The film also featured elements of \"The Devil's Foot\"."
+      },
+      {
+        "story": "The Adventure of the Copper Beeches",
+        "tier": "C",
+        "quote": "The mute child with a compulsion to catch flies is similar to a character in \"The Copper Beeches\"."
+      },
+      {
+        "story": "The Adventure of the Yellow Face",
+        "tier": "C",
+        "quote": "Holmes' request that Watson whisper \"pygmy\" in his ear if he becomes overconfident is from \"The Yellow Face\", in which the word was \"Norbury\"."
+      }
+    ],
+    "other_sources": []
+  },
+  {
+    "id": 2441877,
+    "kind": "video_game",
+    "year": 1991,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": [
+      "Sherlock Holmes: Consulting Detective (1981 tabletop game-gamebook hybrid)"
+    ]
+  }
+]

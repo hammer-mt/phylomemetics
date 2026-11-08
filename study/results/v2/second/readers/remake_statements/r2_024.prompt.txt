@@ -1,0 +1,222 @@
+You are helping to build a research corpus of film remakes from Wikipedia. Each item below gives the title of a film's Wikipedia page (PAGE), ONE sentence from the opening of that page, and the OTHER FILMS that sentence links to. For each other film, record what THE SENTENCE SAYS about PAGE and that film. You are not asked what you know about the films.
+
+For each other film give:
+- "relation":
+    "page_remakes_other"   the sentence says PAGE is a remake of the other film;
+    "other_remakes_page"   the sentence says the other film is a remake of PAGE (for example "it was remade in Telugu as ...");
+    "none"                 anything else.
+- "wording":
+    "firm"    the sentence states the remake plainly as a fact: "is a remake of", "an official remake of", "was remade as", "was remade in Hindi as";
+    "loose"   the sentence weakens or hedges it: "loosely", "partly", "unofficial", "uncredited", "inspired by", "based on the idea of", "reported to be", "said to be", "has been described as", "considered", "similar to", "reboot", "reimagining", "re-adaptation";
+    "" when the relation is "none".
+
+Rules.
+- Use only what the sentence says. Do not use your own knowledge of the films, and do not guess from titles or years.
+- If the sentence lists several films as remakes of PAGE, each of them is "other_remakes_page".
+- If the sentence says PAGE is a remake of X, and that X is itself a remake of or based on Y, then X is "page_remakes_other" and Y is "none", unless the sentence also says PAGE is a remake of Y.
+- "none" covers: a sequel, prequel or spin-off; a film that is only compared or mentioned; another remake of the same original (a sibling); a film based on the same novel, play or true story that the sentence does not call a remake; a film whose remake status the sentence denies; a dubbed version; a film shot at the same time in another language ("simultaneously", "bilingual").
+- If you cannot tell which film the word "remake" or "remade" applies to, answer "none".
+
+The items follow.
+
+### ITEM 4bc4ea6bccee8005
+PAGE: Professor (1962 film)
+SENTENCE: The film was remade in Tamil as Nadigan (1990), in Telugu twice as Bhale Mastaru (1969), Peddinti Alludu (1991), and in Kannada as Gopi Krishna.
+OTHER FILMS: ["Nadigan", "Bhale Mastaru"]
+
+### ITEM 41a065c21cb4163c
+PAGE: Mullum Malarum
+SENTENCE: The film's success inspired a Malayalam remake titled Venalil Oru Mazha in 1979, a Telugu remake titled Seethamma Pelli in 1984 and a Hindi remake titled Pyari Behna in 1985.
+OTHER FILMS: ["Pyari Behna"]
+
+### ITEM a3c4299d3609a606
+PAGE: Ninaithale Inikkum (2009 film)
+SENTENCE: It is the Tamil remake of the 2006 Malayalam film Classmates.
+OTHER FILMS: ["Classmates (2006 film)"]
+
+### ITEM 8da4f0ae011ce444
+PAGE: Aadhavan
+SENTENCE: The core plot was loosely based on the 1990 Malayalam film His Highness Abdullah and it was remade in Bengali as Shikari.
+OTHER FILMS: ["Shikari (2016 film)"]
+
+### ITEM 078e5fca72bf2744
+PAGE: Himmatwala (2013 film)
+SENTENCE: Set in 1983, it is an official remake of the 1983 film of the same name by [[K.
+OTHER FILMS: ["Himmatwala (1983 film)"]
+
+### ITEM f5a4b2fd5d6a1de8
+PAGE: Kidi (film)
+SENTENCE: It is a remake of the 2016 Malayalam-language film Kali.
+OTHER FILMS: ["Kali (2016 film)"]
+
+### ITEM 5a185fe1f0b8f19a
+PAGE: The Crowd Roars (1932 film)
+SENTENCE: It was remade in 1939 as Indianapolis Speedway with Pat O'Brien in Cagney's role, Ann Sheridan in Blondell's role, and McHugh reprising his role.
+OTHER FILMS: ["Indianapolis Speedway (film)"]
+
+### ITEM 1b2a3507ae462e1d
+PAGE: Chashme Baddoor (2013 film)
+SENTENCE: An official remake of the 1981 film Chashme Buddoor, it was produced by Viacom 18 Motion Pictures and stars Ali Zafar and Taapsee Pannu (in her Hindi film debut) with Divyenndu and Siddharth in lead roles.
+OTHER FILMS: ["Chashme Buddoor (1981 film)"]
+
+### ITEM f79be802d7be9d58
+PAGE: Koshish (1972 film)
+SENTENCE: The film was remade in Tamil in 1977 as Uyarndhavargal starring Kamal Haasan and Sujatha.
+OTHER FILMS: ["Uyarndhavargal"]
+
+### ITEM 5b48d62bed10b5d1
+PAGE: Thiruvilaiyaadal Aarambam
+SENTENCE: It was remade in Telugu as Takkari (2007), in Kannada as Dhool (2011), and in Bangladeshi as Daring Lover (2014).
+OTHER FILMS: ["Takkari", "Dhool (2011 film)", "Daring Lover"]
+
+### ITEM 4c8ce501e5d6e0fd
+PAGE: Indru Poi Naalai Vaa
+SENTENCE: It was officially remade in Telugu as (1993) and unofficially in Tamil as Kanna Laddu Thinna Aasaiya (2013).
+OTHER FILMS: ["Kanna Laddu Thinna Aasaiya"]
+
+### ITEM 687cc338b7f34741
+PAGE: The Train (2007 film)
+SENTENCE: It is a remake of the 2005 American film Derailed, which is an adaptation of James Siegel's 2003 novel Derailed.
+OTHER FILMS: ["Derailed (2005 film)"]
+
+### ITEM 59efcddc63c5c984
+PAGE: Do Bhai (1969 film)
+SENTENCE: Though the story of this movie is credited only to Salim Khan, the core plot went on to be partially rehashed by the Salim–Javed duo for their debut South Indian movie as original story writers - the 1976 Kannada movie Premada Kanike which was also later remade in Tamil in 1980 as Polladhavan and in Hindi in 1981 as Raaz.
+OTHER FILMS: ["Polladhavan (1980 film)"]
+
+### ITEM 044f0338b3a9d717
+PAGE: Thanedaar
+SENTENCE: It is a remake of the Tamil-Telugu bilingual film Anbukku Naan Adimai (1980).
+OTHER FILMS: ["Anbukku Naan Adimai"]
+
+### ITEM 03e86c95549dd7d6
+PAGE: Needhikku Thalaivanangu
+SENTENCE: It is a remake of the Telugu film Neramu Siksha (1973).
+OTHER FILMS: ["Neramu Siksha"]
+
+### ITEM 72ad3c4ba15b23f1
+PAGE: The Brothers (1979 film)
+SENTENCE: It is a remake of Indian action crime-drama film Deewaar (1975), written by Salim–Javed.
+OTHER FILMS: ["Deewaar"]
+
+### ITEM c0b7af57901e150d
+PAGE: Dandam Dashagunam
+SENTENCE: It is a remake of the Tamil film Kaakha Kaakha.
+OTHER FILMS: ["Kaakha Kaakha"]
+
+### ITEM afaa1e1e77dfa841
+PAGE: Nayagan (2008 film)
+SENTENCE: The film released on 22 August 2008, was a direct remake of the Tamil film Vegam (2007) which itself was an uncredited remake of the 2004 American film Cellular.
+OTHER FILMS: ["Vegam (2007 film)", "Cellular (film)"]
+
+### ITEM 37eab36859f16e22
+PAGE: Bhalobasa Bhalobasa (2008 film)
+SENTENCE: This film is the remake of the Telugu film Bommarillu directed and co-written by Bhaskar, starring Siddharth, Genelia D'Souza and Prakash Raj.
+OTHER FILMS: ["Bommarillu"]
+
+### ITEM 7374b1eac6df60a8
+PAGE: How Old Are You? (film)
+SENTENCE: The movie was remade in Tamil as 36 Vayadhinile with Jyothika.
+OTHER FILMS: ["36 Vayadhinile"]
+
+### ITEM cc051b0f64ab3011
+PAGE: Kadhal Kottai
+SENTENCE: It was remade in Kannada as Yaare Neenu Cheluve (1998), in Bengali as Hothat Brishti (1998) and in Hindi as Sirf Tum (1999) by the same director.
+OTHER FILMS: ["Hothat Brishti"]
+
+### ITEM 07bed505c342884e
+PAGE: Sanam Tere Hain Hum
+SENTENCE: The American film was also remade in Hindi as Mann which also released in 1999.
+OTHER FILMS: ["Mann (1999 film)"]
+
+### ITEM 2fe13e38b47f849a
+PAGE: Aggi Ramudu (1954 film)
+SENTENCE: The film was remake of Tamil as Malaikkallan (1954), with M.G.
+OTHER FILMS: ["Malaikkallan"]
+
+### ITEM 0ecbda1864da0b38
+PAGE: Anari (1993 film)
+SENTENCE: It is a remake of the 1991 film Tamil film Chinna Thambi, which was first remade into Telugu as Chanti (1992), with Venkatesh reprising his role from the Telugu version.
+OTHER FILMS: ["Chinna Thambi", "Chanti (1992 film)"]
+
+### ITEM 75d46706c47174bc
+PAGE: Accident on Hill Road
+SENTENCE: The film is an authorised remake of the 2007 American film Stuck, which is based on the true story of Chante Mallard and her murder of Gregory Glenn Biggs.
+OTHER FILMS: ["Stuck (2007 film)"]
+
+### ITEM bf6b18232433f777
+PAGE: Thavam
+SENTENCE: A remake of the Telugu film Itlu Sravani Subramanyam, it stars Arun Vijay and Vandana Gupta while Vadivelu, Janagaraj, and Kalairani play supporting roles.
+OTHER FILMS: ["Itlu Sravani Subramanyam"]
+
+### ITEM 135b17aa2ade4cf7
+PAGE: Aashiqui 2
+SENTENCE: The film was remade in Telugu as Nee Jathaga Nenundali (2014).
+OTHER FILMS: ["Nee Jathaga Nenundali"]
+
+### ITEM 5f1485c0a5326534
+PAGE: Aag (1994 film)
+SENTENCE: It stars Govinda, Shilpa Shetty and debutant Sonali Bendre and was remake of Tamil film Maruthu Pandi.
+OTHER FILMS: ["Maruthu Pandi"]
+
+### ITEM ac386cffa3c69ada
+PAGE: Mouna Ragam
+SENTENCE: It was remade in Hindi in 1992 as Kasak, and in Kannada in 1999 as Chandrodaya.
+OTHER FILMS: ["Kasak (1992 film)"]
+
+### ITEM fe56b6f8b0e64a99
+PAGE: Oli Vilakku
+SENTENCE: It is a remake of the Hindi-language film Phool Aur Patthar (1966).
+OTHER FILMS: ["Phool Aur Patthar"]
+
+### ITEM f1f68c42e5d9ccfb
+PAGE: Annamalai (film)
+SENTENCE: It was remade in Telugu in 1993 as Kondapalli Raja and in Kannada in 2003 as Gokarna.
+OTHER FILMS: ["Kondapalli Raja"]
+
+### ITEM b58eb17b0614f819
+PAGE: Thommanum Makkalum
+SENTENCE: Shafi remade the film in Tamil as Majaa (2005) and in Kannada as Kaamannana Makkalu (2008).
+OTHER FILMS: ["Majaa", "Kaamannana Makkalu"]
+
+### ITEM b9dc5a4b2ba793a8
+PAGE: Journey (2011 film)
+SENTENCE: It was later remade into Kannada as Endendu Ninagagi in 2014 and in Bengali as Bojhena Shey Bojhena in 2012.
+OTHER FILMS: ["Bojhena Shey Bojhena"]
+
+### ITEM b2668b986fd80f01
+PAGE: Thirisoolam
+SENTENCE: It is a remake of the Kannada film Shankar Guru (1978).
+OTHER FILMS: ["Shankar Guru (1978 film)"]
+
+### ITEM d9a64cc02d14f078
+PAGE: Nilave Mugam Kaattu
+SENTENCE: It is a remake of the Kannada film Anuraga Sangama (1995) which itself was inspired by Charlie Chaplin's City Lights.
+OTHER FILMS: ["City Lights"]
+
+### ITEM 500c4096d1c36a5f
+PAGE: Chhoti Si Baat
+SENTENCE: The film is a remake of the 1960 British film School for Scoundrels.
+OTHER FILMS: ["School for Scoundrels (1960 film)"]
+
+### ITEM e25ad6d96f4a5227
+PAGE: Ninaithale
+SENTENCE: It is a remake of the 2004 Telugu film Anand.
+OTHER FILMS: ["Anand (2004 film)"]
+
+### ITEM 54fa54ec9ae2c747
+PAGE: Yuvaraja (film)
+SENTENCE: The film is a remake of 1999 Telugu movie Thammudu which was based on the 1992 Hindi movie Jo Jeeta Wohi Sikandar which in turn was inspired by the 1979 American film Breaking Away.
+OTHER FILMS: ["Breaking Away"]
+
+### ITEM 1860980ee34acfbc
+PAGE: Kalasi Vunte Kaladu Sukham
+SENTENCE: The film is a remake of the Tamil film Bhaaga Pirivinai (1959).
+OTHER FILMS: ["Bhaaga Pirivinai"]
+
+### ITEM d74533cfebc5dc78
+PAGE: Humraaz
+SENTENCE: The film is inspired from the 1998 American film A Perfect Murder (which was a remake of Alfred Hitchcock's 1954 film Dial M for Murder, itself an adaptation of Frederick Knott's 1952 play of the same name).
+OTHER FILMS: ["A Perfect Murder", "Dial M for Murder"]
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/remakes/statements/r2_024.out.json as a JSON list with one object per item: {"item": "<the code after ITEM>", "links": [{"film": "<title exactly as listed>", "relation": "...", "wording": "..."}]} with one entry in "links" for every film listed under OTHER FILMS. Write nothing else to that file.

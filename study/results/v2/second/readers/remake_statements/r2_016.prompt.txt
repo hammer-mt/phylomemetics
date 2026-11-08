@@ -1,0 +1,222 @@
+You are helping to build a research corpus of film remakes from Wikipedia. Each item below gives the title of a film's Wikipedia page (PAGE), ONE sentence from the opening of that page, and the OTHER FILMS that sentence links to. For each other film, record what THE SENTENCE SAYS about PAGE and that film. You are not asked what you know about the films.
+
+For each other film give:
+- "relation":
+    "page_remakes_other"   the sentence says PAGE is a remake of the other film;
+    "other_remakes_page"   the sentence says the other film is a remake of PAGE (for example "it was remade in Telugu as ...");
+    "none"                 anything else.
+- "wording":
+    "firm"    the sentence states the remake plainly as a fact: "is a remake of", "an official remake of", "was remade as", "was remade in Hindi as";
+    "loose"   the sentence weakens or hedges it: "loosely", "partly", "unofficial", "uncredited", "inspired by", "based on the idea of", "reported to be", "said to be", "has been described as", "considered", "similar to", "reboot", "reimagining", "re-adaptation";
+    "" when the relation is "none".
+
+Rules.
+- Use only what the sentence says. Do not use your own knowledge of the films, and do not guess from titles or years.
+- If the sentence lists several films as remakes of PAGE, each of them is "other_remakes_page".
+- If the sentence says PAGE is a remake of X, and that X is itself a remake of or based on Y, then X is "page_remakes_other" and Y is "none", unless the sentence also says PAGE is a remake of Y.
+- "none" covers: a sequel, prequel or spin-off; a film that is only compared or mentioned; another remake of the same original (a sibling); a film based on the same novel, play or true story that the sentence does not call a remake; a film whose remake status the sentence denies; a dubbed version; a film shot at the same time in another language ("simultaneously", "bilingual").
+- If you cannot tell which film the word "remake" or "remade" applies to, answer "none".
+
+The items follow.
+
+### ITEM a3fe27076297c3b1
+PAGE: Kutty (2010 film)
+SENTENCE: The film, a remake of the Telugu film Arya (2004), was produced and distributed by Gemini Film Circuit, whilst Devi Sri Prasad composed the music.
+OTHER FILMS: ["Arya (2004 film)"]
+
+### ITEM 7b18618e50de434d
+PAGE: Unnidathil Ennai Koduthen
+SENTENCE: The film was remade in Telugu as Raja, in Kannada as Kanasugara, in Bengali as Shakal Sandhya and in Odia as Mo Duniya Tu Hi Tu.
+OTHER FILMS: ["Raja (1999 film)"]
+
+### ITEM f89bf3a393ee3346
+PAGE: Sadma
+SENTENCE: Released on 8 July 1983, the film was a remake of Mahendra's 1982 Tamil film Moondram Pirai, which also starred Sridevi and Haasan.
+OTHER FILMS: ["Moondram Pirai"]
+
+### ITEM e8b2b2c8a69b0ecd
+PAGE: Hulchul (2004 film)
+SENTENCE: A remake of the 1991 Malayalam film Godfather, the film stars an ensemble cast starring Akshaye Khanna, Kareena Kapoor, Suniel Shetty, Paresh Rawal, Jackie Shroff, Arshad Warsi, Arbaaz Khan, Amrish Puri, Laxmi, Farha Naaz, Shakti Kapoor, Manoj Joshi, and Asrani.
+OTHER FILMS: ["Godfather (1991 film)"]
+
+### ITEM c0d8cb1a3a00bcb6
+PAGE: Ilanjodigal
+SENTENCE: It was remade in 1986 in Hindi as Love 86.
+OTHER FILMS: ["Love 86"]
+
+### ITEM ed4263ecd87f43c2
+PAGE: Red Rose (1980 film)
+SENTENCE: It is a remake of the Tamil film Sigappu Rojakkal, made by the same director Bharathi Rajaa and the same cinematographer [[P.
+OTHER FILMS: ["Sigappu Rojakkal"]
+
+### ITEM 9f5f553580f760c5
+PAGE: Laadla (1994 film)
+SENTENCE: The film stars Sridevi and Anil Kapoor while Raveena Tandon, Anupam Kher, Farida Jalal, Shakti Kapoor, Prem Chopra, Aruna Irani, Mohnish Bahl and Paresh Rawal play supporting roles.The film is the remake of Kannada film Anuraga Aralithu (1986).
+OTHER FILMS: ["Anuraga Aralithu"]
+
+### ITEM 76b892ae42ed9d41
+PAGE: Enakkul Oruvan (1984 film)
+SENTENCE: It is a remake of the Hindi film Karz (1980), itself based on the American film The Reincarnation of Peter Proud (1975).
+OTHER FILMS: ["Karz (film)", "The Reincarnation of Peter Proud"]
+
+### ITEM 161d4bcbc0918c41
+PAGE: 16 Vayathinile
+SENTENCE: Making stars of its director and lead actors, it was remade in Telugu as Padaharella Vayasu (1978), in Hindi as Solva Sawan (1979), and in Malay as (1984).
+OTHER FILMS: ["Padaharella Vayasu", "Solva Sawan"]
+
+### ITEM 152344345a539d30
+PAGE: Cheluva
+SENTENCE: The film is a remake of Telugu film Hello Brother which itself was loosely based on the Hong Kong action comedy Twin Dragons (1992) starring Jackie Chan.
+OTHER FILMS: ["Hello Brother (1994 film)", "Twin Dragons"]
+
+### ITEM 42cc5daaf3798ead
+PAGE: Gangvaa
+SENTENCE: It is a remake of Rajasekhar's 1983 Tamil film Malaiyoor Mambattiyan.
+OTHER FILMS: ["Malaiyoor Mambattiyan"]
+
+### ITEM 66790e232b7d40af
+PAGE: Kabhi Haan Kabhi Naa
+SENTENCE: The film was remade in Telugu as Swapnalokam (1999), with Jagapathi Babu and Raasi in the cast.
+OTHER FILMS: ["Swapnalokam"]
+
+### ITEM 9ee9038489695721
+PAGE: Anubavi Raja Anubavi
+SENTENCE: The film was remade in Hindi as Do Phool (1974), in Malayalam as Aanandham Paramaanandham (1977) and in Kannada as Kittu Puttu (1977).
+OTHER FILMS: ["Do Phool"]
+
+### ITEM 17a063054c1a3ae7
+PAGE: Sivagamiyin Selvan
+SENTENCE: It is a remake of the Hindi film Aradhana (1969).
+OTHER FILMS: ["Aradhana (1969 film)"]
+
+### ITEM 5ec36eb80e90e0a4
+PAGE: Main Prem Ki Diwani Hoon
+SENTENCE: The film is a remake of the 1976 Hindi film Chitchor, which itself is based on Subodh Ghosh's Bengali short story Chittachakor.
+OTHER FILMS: ["Chitchor"]
+
+### ITEM b1729a62894ca7fb
+PAGE: Vaanam
+SENTENCE: A remake of the director's own Telugu film Vedam (2010), it has an ensemble cast of Silambarasan, Bharath, Prakash Raj, Anushka Shetty, Santhanam, Sonia Agarwal and Saranya Ponvannan.
+OTHER FILMS: ["Vedam (film)"]
+
+### ITEM b4bc66ddbf69f21f
+PAGE: Neenello Naanalle
+SENTENCE: Neenello Nanalle is 2006 Indian Kannada-language romance film directed by Dinesh Babu, and is a remake of the 2005 Telugu film Nuvvostanante Nenoddantana.
+OTHER FILMS: ["Nuvvostanante Nenoddantana"]
+
+### ITEM 90432535eb7b1050
+PAGE: Parichay (film)
+SENTENCE: A remake of the 1971 Uttam Kumar film Jay Jayanti, the film was reported to be based on the Bengali novel Rangeen Uttarain by Raj Kumar Maitra, and partially inspired by the 1965 movie The Sound of Music.
+OTHER FILMS: ["The Sound of Music (film)"]
+
+### ITEM 01bcb29273d98491
+PAGE: Nabab
+SENTENCE: A remake of the Aamir Khan starrer 1995 film Baazi, the film features Shakib Khan in the title role, an intelligence agent tasked with a secret operation in West Bengal, and Subhashree Ganguly as a crime news reporter and Nabab's love interest.
+OTHER FILMS: ["Baazi (1995 film)"]
+
+### ITEM 793babdbe64e8286
+PAGE: Sansar (1987 film)
+SENTENCE: The film is a remake of the Tamil film Samsaram Adhu Minsaram.
+OTHER FILMS: ["Samsaram Adhu Minsaram"]
+
+### ITEM 768c4ed1dbffaa39
+PAGE: Welcome (2007 film)
+SENTENCE: A loose remake of the 1999 American-British comedy Mickey Blue Eyes, it stars Feroz Khan (in his final film role), Anil Kapoor, Nana Patekar, Akshay Kumar, Katrina Kaif, Paresh Rawal, and Mallika Sherawat.
+OTHER FILMS: ["Mickey Blue Eyes"]
+
+### ITEM abd482c3af11906d
+PAGE: Chhoti Bahen
+SENTENCE: It is a remake of the 1952 Tamil film En Thangai.
+OTHER FILMS: ["En Thangai (1952 film)"]
+
+### ITEM 7c113f7314b695d5
+PAGE: Ninaithen Vandhai
+SENTENCE: It is the Tamil remake of the 1996 Telugu film Pelli Sandadi.
+OTHER FILMS: ["Pelli Sandadi"]
+
+### ITEM 48bc1940e58e67db
+PAGE: Palletoori Pilla
+SENTENCE: It was later remade in Hindi as Insaniyat (1955).
+OTHER FILMS: ["Insaniyat (1955 film)"]
+
+### ITEM 56414325e485d0e6
+PAGE: Kasak (1992 film)
+SENTENCE: It is the remake of Mani Ratnam's Tamil-language film Mouna Ragam.
+OTHER FILMS: ["Mouna Ragam"]
+
+### ITEM b7bcc07695ef4496
+PAGE: Mili (1975 film)
+SENTENCE: The film was remade in Telugu in 1976 as Jyothi starring Jayasudha in the title role.
+OTHER FILMS: ["Jyothi (1976 film)"]
+
+### ITEM fc1fdb934e2e18ad
+PAGE: Vaazhkai (1949 film)
+SENTENCE: The film was simultaneously released in Telugu as Jeevitham (1950). The film was later remade in Hindi as Bahar (1951).
+OTHER FILMS: ["Bahar (film)"]
+
+### ITEM 2af084054a34044d
+PAGE: Cross-Country Romance
+SENTENCE: In addition to this film, there was also Love on the Run (1936) from MGM, The Bride Came C.O.D. (1941) by Warner Bros.; even Columbia Pictures, which had made It Happened One Night, produced the musical remake Eve Knew Her Apples (1945).
+OTHER FILMS: ["Love on the Run (1936 film)", "The Bride Came C.O.D."]
+
+### ITEM 771fb05b3ef6597c
+PAGE: Salt N' Pepper
+SENTENCE: It was remade in Tamil as Un Samayal Arayil and shot simultaneously in Telugu and Kannada as Ulavacharu Biriyani and Oggarane, respectively.
+OTHER FILMS: ["Un Samayal Arayil"]
+
+### ITEM 5d88f74f8307e7e7
+PAGE: Sssshhh...
+SENTENCE: It is a remake of the 1996 American film Scream.
+OTHER FILMS: ["Scream (1996 film)"]
+
+### ITEM 26d3ce487e5d088b
+PAGE: Bang Bang!
+SENTENCE: An official remake of American film Knight and Day (2010), the film also borrows inspiration from the 2012 Bengali film Jaaneman.
+OTHER FILMS: ["Knight and Day"]
+
+### ITEM c15cc7ed98e7941a
+PAGE: Veerappu
+SENTENCE: It is a remake of Malayalam film Spadikam (1995), but the core plot is drawn from the Malayalam film Narasimham (2000), both starring Mohanlal.
+OTHER FILMS: ["Spadikam", "Narasimham (film)"]
+
+### ITEM 340047bd0eb1b32b
+PAGE: Avargal
+SENTENCE: Balachander later remade the film in Telugu as Idi Katha Kaadu (1979), with Haasan reprising his role.
+OTHER FILMS: ["Idi Katha Kaadu"]
+
+### ITEM a4c5815cf1917661
+PAGE: Neram
+SENTENCE: The film is remade in Telugu as Run (2016) starring Sundeep Kishan and in Kannada as Kismath (2018) starring Vijay Raghavendra.
+OTHER FILMS: ["Run (2016 film)"]
+
+### ITEM a66f2339e544af38
+PAGE: Mr. Butlers
+SENTENCE: It is a remake of the 1996 Tamil film Gopala Gopala.
+OTHER FILMS: ["Gopala Gopala (1996 film)"]
+
+### ITEM ce28f61a2680a81a
+PAGE: Periya Idathu Penn
+SENTENCE: The film was remade in Telugu as Sabhash Suri and in Hindi as Jawab.
+OTHER FILMS: ["Jawab (1970 film)"]
+
+### ITEM 0f877b5995c4e102
+PAGE: Kaakha Kaakha
+SENTENCE: The film was remade in Telugu as Gharshana (2004) by Menon, in Hindi as Force and in Kannada as Dandam Dashagunam (both 2011).
+OTHER FILMS: ["Gharshana", "Force (2011 film)", "Dandam Dashagunam"]
+
+### ITEM 88173f93e204ba31
+PAGE: Goldie (1931 film)
+SENTENCE: It is a remake of Howard Hawks' 1928 silent film, A Girl in Every Port.
+OTHER FILMS: ["A Girl in Every Port (1928 film)"]
+
+### ITEM 344086d25279ff95
+PAGE: Nam Naadu (2007 film)
+SENTENCE: It is a remake of 2006 Malayalam film Lion.
+OTHER FILMS: ["Lion (2006 film)"]
+
+### ITEM 2ab62086ec5d0d6e
+PAGE: Shakalaka Baby (film)
+SENTENCE: The film was later remade in Hindi as Nayak: The Real Hero (2001) by the same director.
+OTHER FILMS: ["Nayak: The Real Hero"]
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/remakes/statements/r2_016.out.json as a JSON list with one object per item: {"item": "<the code after ITEM>", "links": [{"film": "<title exactly as listed>", "relation": "...", "wording": "..."}]} with one entry in "links" for every film listed under OTHER FILMS. Write nothing else to that file.

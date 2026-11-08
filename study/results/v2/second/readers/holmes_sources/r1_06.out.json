@@ -1,0 +1,97 @@
+[
+  {
+    "id": 41556889,
+    "kind": "tv_episode",
+    "year": 2014,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Adventure of Charles Augustus Milverton",
+        "tier": "B",
+        "quote": "The episode is a contemporary adaptation of Sir Arthur Conan Doyle's short story \"The Adventure of Charles Augustus Milverton\"."
+      }
+    ],
+    "other_sources": []
+  },
+  {
+    "id": 14058109,
+    "kind": "film",
+    "year": 1977,
+    "holmes_appears": false,
+    "sources": [],
+    "other_sources": []
+  },
+  {
+    "id": 16160462,
+    "kind": "tv_film",
+    "year": 1979,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Adventure of the Speckled Band",
+        "tier": "A",
+        "quote": "The film is divided into two episodes: \"The Acquaintance\" (Знакомство, based on the 1892 short story \"The Adventure of the Speckled Band\") and \"Bloody Inscription\" (Кровавая надпись, based on the 1887 novel A Study in Scarlet)."
+      },
+      {
+        "story": "A Study in Scarlet",
+        "tier": "A",
+        "quote": "The film is divided into two episodes: \"The Acquaintance\" (Знакомство, based on the 1892 short story \"The Adventure of the Speckled Band\") and \"Bloody Inscription\" (Кровавая надпись, based on the 1887 novel A Study in Scarlet)."
+      }
+    ],
+    "other_sources": []
+  },
+  {
+    "id": 11351598,
+    "kind": "film",
+    "year": 1943,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Adventure of the Musgrave Ritual",
+        "tier": "B",
+        "quote": "Made in 1943, it is a loose adaptation of Sir Arthur Conan Doyle's 1893 Holmes short story \"The Adventure of the Musgrave Ritual\"."
+      }
+    ],
+    "other_sources": []
+  },
+  {
+    "id": 8655859,
+    "kind": "video_game",
+    "year": 2006,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": ["Cthulhu Mythos"]
+  },
+  {
+    "id": 1304986,
+    "kind": "film",
+    "year": 1985,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": []
+  },
+  {
+    "id": 2565348,
+    "kind": "film",
+    "year": 1975,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": []
+  },
+  {
+    "id": 43230345,
+    "kind": "video_game",
+    "year": 2015,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": []
+  },
+  {
+    "id": 24779008,
+    "kind": "tv_film",
+    "year": 2002,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": []
+  }
+]

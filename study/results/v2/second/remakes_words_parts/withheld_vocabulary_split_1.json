@@ -1,0 +1,99 @@
+{
+ "key": {
+  "pairs.json": "0c0b9ed58720231c56380f811edd4b04b4b261ca2f4d8210eb89e5c27532f095",
+  "films.jsonl": "de3bc3c3350bcb127d0d07dd254cfa893e7b52e3edbb685f0336550b4c1592d0",
+  "word_measures.npz": "19b36d37fca5353b4e70754b76eb909008a288f5c752ceb1d6b47bc55c990ce5",
+  "draws": [
+   100,
+   20,
+   1.0
+  ],
+  "prune": 1e-08,
+  "extension": [
+   20,
+   0.01
+  ]
+ },
+ "code": "0897db580c4fdf175f39bba24fbce87dd9765724bedb00c188a6f1acd02a2c48",
+ "seconds": 482.1,
+ "result": {
+  "words_in_half_a": 51518,
+  "words": 103014,
+  "word_columns_of_the_half_vocabulary_model": 39,
+  "the_added_measures_on_half_a": "one at a time, by remake_test's own lines for each (remakes.py SINGLE_STANDINS)",
+  "word_model_on_half_a": {
+   "sources_ranked_first": 188,
+   "effective_pairs_left_open": 42.80833343440209,
+   "held_out_log_likelihood": -181.86155429784452,
+   "evaluable": true
+  },
+  "measures": {
+   "contain_opt": {
+    "withheld_from_the_word_columns": {
+     "T": 80.65027120084531,
+     "Z": 5.535719371548185,
+     "p": 9.99990000099999e-06,
+     "gain": 60.49116030517355,
+     "gain_sign_flip_p": 9.99990000099999e-06,
+     "sources_first_words": 188,
+     "sources_first_with_the_measure": 194
+    },
+    "word_columns_see_every_word": {
+     "T": -6.116933356387227,
+     "Z": -1.8996451246391988,
+     "p": 0.9731602683973161
+    }
+   },
+   "cos_tfidf": {
+    "withheld_from_the_word_columns": {
+     "T": 80.21665559112375,
+     "Z": 5.643352928291896,
+     "p": 9.99990000099999e-06,
+     "gain": 61.383064314363494,
+     "gain_sign_flip_p": 9.99990000099999e-06,
+     "sources_first_words": 188,
+     "sources_first_with_the_measure": 194
+    },
+    "word_columns_see_every_word": {
+     "T": -4.668862721689108,
+     "Z": -1.319564563039083,
+     "p": 0.9027309726902731
+    }
+   },
+   "bm25": {
+    "withheld_from_the_word_columns": {
+     "T": 90.32806537425341,
+     "Z": 5.615711250250449,
+     "p": 9.99990000099999e-06,
+     "gain": 71.8292456109686,
+     "gain_sign_flip_p": 9.99990000099999e-06,
+     "sources_first_words": 188,
+     "sources_first_with_the_measure": 194
+    },
+    "word_columns_see_every_word": {
+     "T": -7.574651764273748,
+     "Z": -1.7044204973050423,
+     "p": 0.9570704292957071
+    }
+   },
+   "lsa150": {
+    "withheld_from_the_word_columns": {
+     "T": 67.78094177107114,
+     "Z": 5.5083679588296475,
+     "p": 9.99990000099999e-06,
+     "gain": 48.20613143079352,
+     "gain_sign_flip_p": 9.99990000099999e-06,
+     "sources_first_words": 188,
+     "sources_first_with_the_measure": 193
+    },
+    "word_columns_see_every_word": {
+     "T": -0.6836445109916767,
+     "Z": -0.2093788307914952,
+     "p": 0.5798642013579864
+    }
+   }
+  },
+  "seconds": 482.1,
+  "peak_memory_gb": 2.6311798095703125
+ }
+}

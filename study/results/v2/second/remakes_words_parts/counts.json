@@ -1,0 +1,2268 @@
+{
+ "key": {
+  "pairs.json": "0c0b9ed58720231c56380f811edd4b04b4b261ca2f4d8210eb89e5c27532f095",
+  "films.jsonl": "de3bc3c3350bcb127d0d07dd254cfa893e7b52e3edbb685f0336550b4c1592d0",
+  "word_measures.npz": "19b36d37fca5353b4e70754b76eb909008a288f5c752ceb1d6b47bc55c990ce5",
+  "draws": [
+   100,
+   20,
+   1.0
+  ],
+  "prune": 1e-08,
+  "extension": [
+   20,
+   0.01
+  ]
+ },
+ "code": "0897db580c4fdf175f39bba24fbce87dd9765724bedb00c188a6f1acd02a2c48",
+ "seconds": 0.2,
+ "result": {
+  "pairs": 482,
+  "families_of_the_pairs": 400,
+  "remakes": 471,
+  "sources": 430,
+  "films_in_a_pair": 887,
+  "films_that_are_relatives_of_a_pair": 956,
+  "films_that_are_both_a_remake_and_a_source": 14,
+  "remakes_with_two_or_more_documented_sources": 11,
+  "pairs_by_block_and_wording": {
+   "indian_cross_industry | firm": 220,
+   "indian_cross_industry | loose": 7,
+   "other_cross_industry | firm": 50,
+   "other_cross_industry | loose": 30,
+   "same_industry | firm": 145,
+   "same_industry | loose": 30
+  },
+  "pairs_by_block_wording_and_copied": {
+   "indian_cross_industry | firm | copied": 100,
+   "indian_cross_industry | firm | not copied": 120,
+   "indian_cross_industry | loose | not copied": 7,
+   "other_cross_industry | firm | copied": 2,
+   "other_cross_industry | firm | not copied": 48,
+   "other_cross_industry | loose | not copied": 30,
+   "same_industry | firm | copied": 3,
+   "same_industry | firm | not copied": 142,
+   "same_industry | loose | not copied": 30
+  },
+  "copied_pairs": 105,
+  "films_read": 16218,
+  "films_read_by_industry": {
+   "American": 9867,
+   "British": 1359,
+   "Bollywood": 1290,
+   "Tamil": 1111,
+   "Japanese": 603,
+   "Telugu": 550,
+   "Malayalam": 397,
+   "Hong Kong": 292,
+   "Canadian": 281,
+   "Australian": 189,
+   "Kannada": 142,
+   "South_Korean": 105,
+   "Bengali": 25,
+   "Chinese": 4,
+   "Bangladeshi": 2,
+   "Marathi": 1
+  },
+  "films_read_of_the_indian_industries": 3516,
+  "pair_films_by_industry": {
+   "American": 354,
+   "Bollywood": 148,
+   "Tamil": 138,
+   "Telugu": 107,
+   "Malayalam": 30,
+   "Kannada": 28,
+   "Bengali": 25,
+   "British": 24,
+   "Hong Kong": 10,
+   "Japanese": 8,
+   "Chinese": 4,
+   "South_Korean": 4,
+   "Canadian": 3,
+   "Bangladeshi": 2,
+   "Australian": 1,
+   "Marathi": 1
+  },
+  "rows_json_matches_this_list": true,
+  "sets": {
+   "primary": {
+    "entries": 220,
+    "copied": 100,
+    "not_copied": 120,
+    "copy_share_under_1pct": 96,
+    "remakes": 217,
+    "sources": 185,
+    "families": 175,
+    "families_with_two_or_more_entries": 36,
+    "remakes_with_two_or_more_documented_sources": 3,
+    "remake_industry": {
+     "Bengali": 24,
+     "Bollywood": 59,
+     "Kannada": 19,
+     "Malayalam": 2,
+     "Tamil": 67,
+     "Telugu": 49
+    },
+    "source_industry": {
+     "Bollywood": 43,
+     "Kannada": 9,
+     "Malayalam": 27,
+     "Tamil": 68,
+     "Telugu": 73
+    },
+    "pools": {
+     "set": {
+      "films": "indian industries other than the remake's own",
+      "cells": 341178,
+      "min": 90,
+      "median": 1545.0,
+      "mean": 1550.8090909090909,
+      "max": 3374
+     },
+     "source_industry": {
+      "films": "the source's industry",
+      "cells": 101169,
+      "min": 27,
+      "median": 382.0,
+      "mean": 459.8590909090909,
+      "max": 1241
+     },
+     "all": {
+      "films": "every film read",
+      "cells": 2481568,
+      "min": 3200,
+      "median": 11940.0,
+      "mean": 11279.854545454546,
+      "max": 16217
+     }
+    }
+   },
+   "firm_other_cross_industry": {
+    "entries": 50,
+    "copied": 2,
+    "not_copied": 48,
+    "copy_share_under_1pct": 45,
+    "remakes": 50,
+    "sources": 49,
+    "families": 47,
+    "families_with_two_or_more_entries": 2,
+    "remakes_with_two_or_more_documented_sources": 0,
+    "remake_industry": {
+     "American": 20,
+     "Bangladeshi": 2,
+     "Bengali": 1,
+     "Bollywood": 13,
+     "British": 2,
+     "Canadian": 1,
+     "Chinese": 3,
+     "Malayalam": 3,
+     "South_Korean": 2,
+     "Tamil": 2,
+     "Telugu": 1
+    },
+    "source_industry": {
+     "American": 19,
+     "Australian": 1,
+     "British": 10,
+     "Canadian": 1,
+     "Hong Kong": 8,
+     "Japanese": 8,
+     "South_Korean": 1,
+     "Telugu": 2
+    },
+    "pools": {
+     "set": {
+      "films": "any industry other than the remake's own",
+      "cells": 404866,
+      "min": 616,
+      "median": 8322.0,
+      "mean": 8097.32,
+      "max": 16214
+     }
+    }
+   },
+   "firm_same_industry": {
+    "entries": 145,
+    "copied": 3,
+    "not_copied": 142,
+    "copy_share_under_1pct": 129,
+    "remakes": 143,
+    "sources": 140,
+    "families": 134,
+    "families_with_two_or_more_entries": 10,
+    "remakes_with_two_or_more_documented_sources": 2,
+    "remake_industry": {
+     "American": 129,
+     "Bollywood": 9,
+     "British": 4,
+     "Hong Kong": 1,
+     "Tamil": 2
+    },
+    "source_industry": {
+     "American": 129,
+     "Bollywood": 9,
+     "British": 4,
+     "Hong Kong": 1,
+     "Tamil": 2
+    },
+    "pools": {
+     "set": {
+      "films": "the remake's own industry",
+      "cells": 756161,
+      "min": 78,
+      "median": 6145.0,
+      "mean": 5214.9034482758625,
+      "max": 9866
+     }
+    }
+   },
+   "firm_all": {
+    "entries": 415,
+    "copied": 105,
+    "not_copied": 310,
+    "copy_share_under_1pct": 270,
+    "remakes": 410,
+    "sources": 370,
+    "families": 349,
+    "families_with_two_or_more_entries": 50,
+    "remakes_with_two_or_more_documented_sources": 5,
+    "remake_industry": {
+     "American": 149,
+     "Bangladeshi": 2,
+     "Bengali": 25,
+     "Bollywood": 81,
+     "British": 6,
+     "Canadian": 1,
+     "Chinese": 3,
+     "Hong Kong": 1,
+     "Kannada": 19,
+     "Malayalam": 5,
+     "South_Korean": 2,
+     "Tamil": 71,
+     "Telugu": 50
+    },
+    "source_industry": {
+     "American": 148,
+     "Australian": 1,
+     "Bollywood": 52,
+     "British": 14,
+     "Canadian": 1,
+     "Hong Kong": 9,
+     "Japanese": 8,
+     "Kannada": 9,
+     "Malayalam": 27,
+     "South_Korean": 1,
+     "Tamil": 70,
+     "Telugu": 75
+    },
+    "pools": {
+     "set": {
+      "films": "every film read",
+      "cells": 4296966,
+      "min": 300,
+      "median": 11214.0,
+      "mean": 10354.134939759037,
+      "max": 16217
+     }
+    }
+   },
+   "loose_all": {
+    "entries": 67,
+    "copied": 0,
+    "not_copied": 67,
+    "copy_share_under_1pct": 67,
+    "remakes": 65,
+    "sources": 66,
+    "families": 64,
+    "families_with_two_or_more_entries": 3,
+    "remakes_with_two_or_more_documented_sources": 2,
+    "remake_industry": {
+     "American": 28,
+     "Bollywood": 26,
+     "British": 1,
+     "Chinese": 1,
+     "Kannada": 1,
+     "Malayalam": 3,
+     "Marathi": 1,
+     "Tamil": 5,
+     "Telugu": 1
+    },
+    "source_industry": {
+     "American": 50,
+     "Bollywood": 5,
+     "British": 3,
+     "Canadian": 1,
+     "Hong Kong": 1,
+     "Malayalam": 2,
+     "South_Korean": 1,
+     "Tamil": 2,
+     "Telugu": 2
+    },
+    "pools": {
+     "set": {
+      "films": "every film read",
+      "cells": 769973,
+      "min": 572,
+      "median": 12690.0,
+      "mean": 11492.134328358208,
+      "max": 16216
+     }
+    }
+   }
+  },
+  "pair_films_in_v2_reference_corpus": {
+   "pair_films": 887,
+   "are_reference_documents": 479,
+   "by_kind": {
+    "bgplot": 159,
+    "plot": 320
+   },
+   "primary_set_films": 401,
+   "primary_set_films_that_are_reference_documents": 228,
+   "primary_by_kind": {
+    "bgplot": 72,
+    "plot": 156
+   },
+   "entries_whose_source_is_a_reference_document": {
+    "primary": {
+     "entries": 220,
+     "source_is_a_reference_document": 137
+    },
+    "firm_other_cross_industry": {
+     "entries": 50,
+     "source_is_a_reference_document": 21
+    },
+    "firm_same_industry": {
+     "entries": 145,
+     "source_is_a_reference_document": 73
+    },
+    "firm_all": {
+     "entries": 415,
+     "source_is_a_reference_document": 231
+    },
+    "loose_all": {
+     "entries": 67,
+     "source_is_a_reference_document": 31
+    }
+   },
+   "documents": {
+    "'Til We Meet Again": [
+     3673,
+     "plot"
+    ],
+    "100% Love (2012 film)": [
+     2286,
+     "bgplot"
+    ],
+    "12B": [
+     10845,
+     "plot"
+    ],
+    "16 Vayathinile": [
+     2623,
+     "bgplot"
+    ],
+    "22 Female Kottayam": [
+     10297,
+     "plot"
+    ],
+    "3 Godfathers": [
+     4105,
+     "plot"
+    ],
+    "3:10 to Yuma (1957 film)": [
+     4673,
+     "plot"
+    ],
+    "3:10 to Yuma (2007 film)": [
+     7081,
+     "plot"
+    ],
+    "A Better Tomorrow": [
+     8921,
+     "plot"
+    ],
+    "A Guy Named Joe": [
+     3838,
+     "plot"
+    ],
+    "A Nightmare on Elm Street (2010 film)": [
+     7329,
+     "plot"
+    ],
+    "A Perfect Murder": [
+     6506,
+     "plot"
+    ],
+    "A Star Is Born (1954 film)": [
+     424,
+     "bgplot"
+    ],
+    "Aaha Kalyanam": [
+     2739,
+     "bgplot"
+    ],
+    "Aakrosh (2010 film)": [
+     9910,
+     "plot"
+    ],
+    "Aalayamani": [
+     10525,
+     "plot"
+    ],
+    "Aamayum Muyalum": [
+     2566,
+     "bgplot"
+    ],
+    "Aasha (1980 film)": [
+     9438,
+     "plot"
+    ],
+    "Aashiqui 2": [
+     9957,
+     "plot"
+    ],
+    "Aayiram Jenmangal": [
+     10601,
+     "plot"
+    ],
+    "Adhipathi": [
+     2798,
+     "bgplot"
+    ],
+    "Aegan": [
+     2703,
+     "bgplot"
+    ],
+    "Agent 47 (film)": [
+     1795,
+     "bgplot"
+    ],
+    "Agneepath (2012 film)": [
+     2457,
+     "bgplot"
+    ],
+    "Aishwarya (film)": [
+     10076,
+     "plot"
+    ],
+    "Allari (film)": [
+     11349,
+     "plot"
+    ],
+    "Always (1989 film)": [
+     5912,
+     "plot"
+    ],
+    "Andru Peytha Mazhaiyil": [
+     2642,
+     "bgplot"
+    ],
+    "Annamalai (film)": [
+     2650,
+     "bgplot"
+    ],
+    "Annie (1982 film)": [
+     5568,
+     "plot"
+    ],
+    "Annie (1999 film)": [
+     6542,
+     "plot"
+    ],
+    "Anubhav (1986 film)": [
+     2359,
+     "bgplot"
+    ],
+    "Anubhava (film)": [
+     10045,
+     "plot"
+    ],
+    "April 1st Vidudala": [
+     11283,
+     "plot"
+    ],
+    "Apthamitra": [
+     2501,
+     "bgplot"
+    ],
+    "Aptharakshaka": [
+     2506,
+     "bgplot"
+    ],
+    "Aradhana (1969 film)": [
+     9338,
+     "plot"
+    ],
+    "Aranmanai": [
+     11089,
+     "plot"
+    ],
+    "Arjun (1985 film)": [
+     9498,
+     "plot"
+    ],
+    "Arthur (2011 film)": [
+     7354,
+     "plot"
+    ],
+    "Assault on Precinct 13 (1976 film)": [
+     5357,
+     "plot"
+    ],
+    "Atharintiki Daaredi": [
+     11478,
+     "plot"
+    ],
+    "Aur Ek Prem Kahani": [
+     9625,
+     "plot"
+    ],
+    "Avvai Shanmughi": [
+     2660,
+     "bgplot"
+    ],
+    "Back Street (1941 film)": [
+     3682,
+     "plot"
+    ],
+    "Band Baaja Baaraat": [
+     9915,
+     "plot"
+    ],
+    "Bandhan (2004 film)": [
+     9123,
+     "plot"
+    ],
+    "Bang Bang!": [
+     9996,
+     "plot"
+    ],
+    "Bangalore Naatkal": [
+     2755,
+     "bgplot"
+    ],
+    "Beauty and the Beast (2017 film)": [
+     1836,
+     "bgplot"
+    ],
+    "Bedtime Story (1964 film)": [
+     551,
+     "bgplot"
+    ],
+    "Bhadra (2005 film)": [
+     11381,
+     "plot"
+    ],
+    "Bhagyalakshmi Bumper Draw": [
+     11394,
+     "plot"
+    ],
+    "Bhale Dongalu": [
+     11409,
+     "plot"
+    ],
+    "Bhalobasa Bhalobasa (2008 film)": [
+     9142,
+     "plot"
+    ],
+    "Bharatamlo Arjunudu": [
+     11264,
+     "plot"
+    ],
+    "Bharathan (1992 film)": [
+     2648,
+     "bgplot"
+    ],
+    "Bhoot (film)": [
+     2400,
+     "bgplot"
+    ],
+    "Bodyguard (2009 film)": [
+     10255,
+     "plot"
+    ],
+    "Bodyguard (2012 film)": [
+     11459,
+     "plot"
+    ],
+    "Bojhena Shey Bojhena": [
+     2288,
+     "bgplot"
+    ],
+    "Bommarillu": [
+     11391,
+     "plot"
+    ],
+    "Brindavanam (2010 film)": [
+     11440,
+     "plot"
+    ],
+    "Brothers (2004 film)": [
+     7816,
+     "plot"
+    ],
+    "Bugs and Thugs": [
+     411,
+     "bgplot"
+    ],
+    "Bumper Offer": [
+     11431,
+     "plot"
+    ],
+    "Bundle of Joy": [
+     442,
+     "bgplot"
+    ],
+    "Bunty Aur Babli": [
+     2415,
+     "bgplot"
+    ],
+    "Cape Fear (1962 film)": [
+     4916,
+     "plot"
+    ],
+    "Cape Fear (1991 film)": [
+     6037,
+     "plot"
+    ],
+    "Chachi 420": [
+     9639,
+     "plot"
+    ],
+    "Chanti (1992 film)": [
+     11285,
+     "plot"
+    ],
+    "Chashme Baddoor (2013 film)": [
+     9956,
+     "plot"
+    ],
+    "Chashme Buddoor (1981 film)": [
+     9447,
+     "plot"
+    ],
+    "Chennaiyil Oru Naal": [
+     11068,
+     "plot"
+    ],
+    "Chinarayudu": [
+     11293,
+     "plot"
+    ],
+    "Chinna Gounder": [
+     10700,
+     "plot"
+    ],
+    "Chirodini Tumi Je Amar 2": [
+     9187,
+     "plot"
+    ],
+    "Chiru Navvuto": [
+     2796,
+     "bgplot"
+    ],
+    "Chronic Bachelor": [
+     2525,
+     "bgplot"
+    ],
+    "City Lights (2014 film)": [
+     9987,
+     "plot"
+    ],
+    "Clash of the Titans (1981 film)": [
+     738,
+     "bgplot"
+    ],
+    "Clash of the Titans (2010 film)": [
+     7296,
+     "plot"
+    ],
+    "Classmates (2006 film)": [
+     10208,
+     "plot"
+    ],
+    "Cold Eyes": [
+     11968,
+     "plot"
+    ],
+    "Collateral (film)": [
+     6871,
+     "plot"
+    ],
+    "Conan the Barbarian (1982 film)": [
+     5573,
+     "plot"
+    ],
+    "Conan the Barbarian (2011 film)": [
+     7361,
+     "plot"
+    ],
+    "Cooliekkaran": [
+     10662,
+     "plot"
+    ],
+    "Counsel's Opinion": [
+     7899,
+     "plot"
+    ],
+    "Crime School": [
+     3511,
+     "plot"
+    ],
+    "D.O.A. (1950 film)": [
+     344,
+     "bgplot"
+    ],
+    "D.O.A. (1988 film)": [
+     5863,
+     "plot"
+    ],
+    "Da Sweet Blood of Jesus": [
+     7641,
+     "plot"
+    ],
+    "Dark Water (2005 film)": [
+     6936,
+     "plot"
+    ],
+    "Darling (2015 Tamil film)": [
+     11099,
+     "plot"
+    ],
+    "De Taali": [
+     9845,
+     "plot"
+    ],
+    "Death at a Funeral (2007 film)": [
+     2056,
+     "bgplot"
+    ],
+    "Death at a Funeral (2010 film)": [
+     7302,
+     "plot"
+    ],
+    "Deewaar": [
+     9390,
+     "plot"
+    ],
+    "Dhaai Akshar Prem Ke": [
+     2391,
+     "bgplot"
+    ],
+    "Dharma (1998 film)": [
+     10807,
+     "plot"
+    ],
+    "Dhenikaina Ready": [
+     2834,
+     "bgplot"
+    ],
+    "Dhol (2007 film)": [
+     9821,
+     "plot"
+    ],
+    "Dhruva (2016 film)": [
+     2851,
+     "bgplot"
+    ],
+    "Dial M for Murder": [
+     415,
+     "bgplot"
+    ],
+    "Dil Ek Mandir": [
+     9291,
+     "plot"
+    ],
+    "Dil-E-Nadaan": [
+     2347,
+     "bgplot"
+    ],
+    "Don (1978 film)": [
+     9421,
+     "plot"
+    ],
+    "Don't Be Afraid of the Dark (2011 film)": [
+     7366,
+     "plot"
+    ],
+    "Don: The Chase Begins Again": [
+     9797,
+     "plot"
+    ],
+    "Dragonfly (2002 film)": [
+     6733,
+     "plot"
+    ],
+    "Drishyam": [
+     10325,
+     "plot"
+    ],
+    "Drushyam": [
+     2847,
+     "bgplot"
+    ],
+    "Edge of Darkness (2010 film)": [
+     7307,
+     "plot"
+    ],
+    "Edhir Paradhathu": [
+     2598,
+     "bgplot"
+    ],
+    "Ek Ladka Ek Ladki": [
+     2374,
+     "bgplot"
+    ],
+    "Enakkul Oruvan (1984 film)": [
+     10638,
+     "plot"
+    ],
+    "Enakkul Oruvan (2015 film)": [
+     2748,
+     "bgplot"
+    ],
+    "Engal Anna": [
+     10874,
+     "plot"
+    ],
+    "Eye for an Eye (1996 film)": [
+     1107,
+     "bgplot"
+    ],
+    "Eye in the Sky (2007 film)": [
+     9030,
+     "plot"
+    ],
+    "Fantastic Four (2015 film)": [
+     8580,
+     "plot"
+    ],
+    "Father of the Bride (1991 film)": [
+     6047,
+     "plot"
+    ],
+    "Father of the Bride Part II": [
+     1075,
+     "bgplot"
+    ],
+    "Fist of Fury": [
+     2217,
+     "bgplot"
+    ],
+    "Fist of Legend": [
+     8968,
+     "plot"
+    ],
+    "Flatliners (2017 film)": [
+     7740,
+     "plot"
+    ],
+    "Flight of the Phoenix (2004 film)": [
+     6878,
+     "plot"
+    ],
+    "Forgetting Sarah Marshall": [
+     7185,
+     "plot"
+    ],
+    "French Kiss (1995 film)": [
+     1077,
+     "bgplot"
+    ],
+    "Friday the 13th (1980 film)": [
+     719,
+     "bgplot"
+    ],
+    "Fright Night (2011 film)": [
+     7372,
+     "plot"
+    ],
+    "Gabbar Singh (2012 film)": [
+     11464,
+     "plot"
+    ],
+    "Gambit (2012 film)": [
+     7443,
+     "plot"
+    ],
+    "Ganda Hendathi": [
+     10074,
+     "plot"
+    ],
+    "Gang Leader": [
+     11286,
+     "plot"
+    ],
+    "Ganga Manga": [
+     11237,
+     "plot"
+    ],
+    "Get Carter": [
+     1989,
+     "bgplot"
+    ],
+    "Ghajini (2005 film)": [
+     2689,
+     "bgplot"
+    ],
+    "Gharana (1961 film)": [
+     2316,
+     "bgplot"
+    ],
+    "Ghayal (1990 film)": [
+     9557,
+     "plot"
+    ],
+    "Ghilli": [
+     10878,
+     "plot"
+    ],
+    "Ghostbusters II": [
+     5929,
+     "plot"
+    ],
+    "Gold Diggers of 1933": [
+     3337,
+     "plot"
+    ],
+    "Gold Diggers of Broadway (film)": [
+     3159,
+     "plot"
+    ],
+    "Gone in 60 Seconds (1974 film)": [
+     655,
+     "bgplot"
+    ],
+    "Gone in 60 Seconds (2000 film)": [
+     1258,
+     "bgplot"
+    ],
+    "Gopi Kishan": [
+     9605,
+     "plot"
+    ],
+    "Guess Who's Coming to Dinner": [
+     579,
+     "bgplot"
+    ],
+    "Halloween (2007 film)": [
+     1488,
+     "bgplot"
+    ],
+    "Hello Brother (1994 film)": [
+     11310,
+     "plot"
+    ],
+    "Here Comes Mr. Jordan": [
+     176,
+     "bgplot"
+    ],
+    "Hero (1983 film)": [
+     9475,
+     "plot"
+    ],
+    "Herogiri": [
+     2294,
+     "bgplot"
+    ],
+    "His Double Life": [
+     66,
+     "bgplot"
+    ],
+    "Holy Matrimony (1943 film)": [
+     3843,
+     "plot"
+    ],
+    "Homam (film)": [
+     2540,
+     "bgplot"
+    ],
+    "Home in Indiana": [
+     243,
+     "bgplot"
+    ],
+    "Homeward Bound: The Incredible Journey": [
+     6149,
+     "plot"
+    ],
+    "House of Wax (2005 film)": [
+     1421,
+     "bgplot"
+    ],
+    "Hum Aapke Dil Mein Rehte Hain": [
+     9670,
+     "plot"
+    ],
+    "Hum Aapke Hain Koun..!": [
+     9606,
+     "plot"
+    ],
+    "Hum Tum Aur Ghost": [
+     9894,
+     "plot"
+    ],
+    "Hurricane (1979 film)": [
+     5469,
+     "plot"
+    ],
+    "Idi Katha Kaadu": [
+     11249,
+     "plot"
+    ],
+    "Ilamai Oonjal Aadukirathu": [
+     2625,
+     "bgplot"
+    ],
+    "In Harihar Nagar": [
+     2514,
+     "bgplot"
+    ],
+    "Invasion of the Body Snatchers": [
+     448,
+     "bgplot"
+    ],
+    "Iru Kodugal": [
+     10572,
+     "plot"
+    ],
+    "Irudhi Suttru": [
+     11121,
+     "plot"
+    ],
+    "Jagged Edge (film)": [
+     805,
+     "bgplot"
+    ],
+    "Jeena Sirf Merre Liye": [
+     9718,
+     "plot"
+    ],
+    "Joker (1993 film)": [
+     11300,
+     "plot"
+    ],
+    "Jolly LLB": [
+     9955,
+     "plot"
+    ],
+    "Journey to the Center of Time": [
+     5116,
+     "plot"
+    ],
+    "Judaai (1997 film)": [
+     9643,
+     "plot"
+    ],
+    "Jungle Book (1967 film)": [
+     5117,
+     "plot"
+    ],
+    "Kaadhal Kondein": [
+     2679,
+     "bgplot"
+    ],
+    "Kaalia": [
+     9451,
+     "plot"
+    ],
+    "Kabhi Haan Kabhi Naa": [
+     9608,
+     "plot"
+    ],
+    "Kabooliwala": [
+     10154,
+     "plot"
+    ],
+    "Kahaani": [
+     2459,
+     "bgplot"
+    ],
+    "Kanamachi (film)": [
+     2290,
+     "bgplot"
+    ],
+    "Kannedhirey Thondrinal": [
+     10809,
+     "plot"
+    ],
+    "Karzzzz (film)": [
+     9856,
+     "plot"
+    ],
+    "Kasoor": [
+     9702,
+     "plot"
+    ],
+    "Katamarayudu": [
+     11524,
+     "plot"
+    ],
+    "Kaththi": [
+     11093,
+     "plot"
+    ],
+    "Kempegowda (film)": [
+     2507,
+     "bgplot"
+    ],
+    "Khiladi (2013 film)": [
+     9185,
+     "plot"
+    ],
+    "Khoka 420": [
+     9180,
+     "plot"
+    ],
+    "Khudgarz": [
+     9527,
+     "plot"
+    ],
+    "Kick (2014 Film)": [
+     9991,
+     "plot"
+    ],
+    "Kid Galahad (1937 film)": [
+     130,
+     "bgplot"
+    ],
+    "Kiki (1926 film)": [
+     3124,
+     "plot"
+    ],
+    "Kiki (1931 film)": [
+     3238,
+     "plot"
+    ],
+    "Kilukkampetti": [
+     10136,
+     "plot"
+    ],
+    "Kimi yo Fundo no Kawa o Watare": [
+     11611,
+     "plot"
+    ],
+    "King Kong (1933 film)": [
+     68,
+     "bgplot"
+    ],
+    "King Kong (1976 film)": [
+     677,
+     "bgplot"
+    ],
+    "King Kong (2005 film)": [
+     6954,
+     "plot"
+    ],
+    "Kiss of Death (1947 film)": [
+     4079,
+     "plot"
+    ],
+    "Knight and Day": [
+     7323,
+     "plot"
+    ],
+    "Ko (film)": [
+     2717,
+     "bgplot"
+    ],
+    "Kondapalli Raja": [
+     11301,
+     "plot"
+    ],
+    "Kumudham": [
+     10520,
+     "plot"
+    ],
+    "Kuruthipunal (film)": [
+     10762,
+     "plot"
+    ],
+    "Kutty (2010 film)": [
+     2710,
+     "bgplot"
+    ],
+    "Lakshyam (2007 film)": [
+     11402,
+     "plot"
+    ],
+    "Last Man Standing (1996 film)": [
+     6342,
+     "plot"
+    ],
+    "Leprechaun (film)": [
+     1022,
+     "bgplot"
+    ],
+    "Leprechaun: Origins": [
+     1770,
+     "bgplot"
+    ],
+    "Lion (2006 film)": [
+     2533,
+     "bgplot"
+    ],
+    "Love Actually": [
+     8417,
+     "plot"
+    ],
+    "Love Don't Cost a Thing (film)": [
+     1359,
+     "bgplot"
+    ],
+    "Love Express (2016 film)": [
+     2298,
+     "bgplot"
+    ],
+    "Loveria": [
+     2289,
+     "bgplot"
+    ],
+    "Lucia (film)": [
+     8382,
+     "plot"
+    ],
+    "M. Kumaran son of Mahalakshmi": [
+     10885,
+     "plot"
+    ],
+    "Maanja Velu": [
+     2712,
+     "bgplot"
+    ],
+    "Magnificent Obsession (1935 film)": [
+     3417,
+     "plot"
+    ],
+    "Main Prem Ki Diwani Hoon": [
+     9743,
+     "plot"
+    ],
+    "Main Tera Hero": [
+     2479,
+     "bgplot"
+    ],
+    "Malini 22 Palayamkottai": [
+     2738,
+     "bgplot"
+    ],
+    "Man on Fire (2004 film)": [
+     1395,
+     "bgplot"
+    ],
+    "Manasantha Nuvve": [
+     2799,
+     "bgplot"
+    ],
+    "Manchi Manasulu": [
+     11199,
+     "plot"
+    ],
+    "Manhunt (2017 film)": [
+     8863,
+     "plot"
+    ],
+    "Manmadhudu": [
+     2802,
+     "bgplot"
+    ],
+    "Manthiri Kumari": [
+     10449,
+     "plot"
+    ],
+    "Masala (2013 film)": [
+     11479,
+     "plot"
+    ],
+    "Meesai Madhavan": [
+     10888,
+     "plot"
+    ],
+    "Mela (1948 film)": [
+     9217,
+     "plot"
+    ],
+    "Metro (2016 film)": [
+     11131,
+     "plot"
+    ],
+    "Mighty Joe Young (1949 film)": [
+     328,
+     "bgplot"
+    ],
+    "Mighty Joe Young (1998 film)": [
+     6498,
+     "plot"
+    ],
+    "Miracles (1989 film)": [
+     2233,
+     "bgplot"
+    ],
+    "Miss Mary (1957 film)": [
+     9253,
+     "plot"
+    ],
+    "Missamma": [
+     11172,
+     "plot"
+    ],
+    "Mississippi Burning": [
+     879,
+     "bgplot"
+    ],
+    "Mogambo": [
+     4481,
+     "plot"
+    ],
+    "Mohra": [
+     9613,
+     "plot"
+    ],
+    "Mooga Nomu": [
+     11229,
+     "plot"
+    ],
+    "Mookilla Rajyathu": [
+     10132,
+     "plot"
+    ],
+    "Moondram Pirai": [
+     10626,
+     "plot"
+    ],
+    "Motta Shiva Ketta Shiva": [
+     2764,
+     "bgplot"
+    ],
+    "Mudhalvan": [
+     10823,
+     "plot"
+    ],
+    "Munna Bhai M.B.B.S.": [
+     2404,
+     "bgplot"
+    ],
+    "Murder (2004 film)": [
+     9763,
+     "plot"
+    ],
+    "Musthaffaa": [
+     10772,
+     "plot"
+    ],
+    "My Bloody Valentine 3D": [
+     1563,
+     "bgplot"
+    ],
+    "My Darling Clementine": [
+     4030,
+     "plot"
+    ],
+    "Naa Autograph": [
+     11370,
+     "plot"
+    ],
+    "Nadiya Ke Paar (1982 film)": [
+     9466,
+     "plot"
+    ],
+    "Nanban (2012 film)": [
+     2721,
+     "bgplot"
+    ],
+    "Nancy Goes to Rio": [
+     4271,
+     "plot"
+    ],
+    "Navarathri (1964 film)": [
+     2611,
+     "bgplot"
+    ],
+    "Nayak: The Real Hero": [
+     9706,
+     "plot"
+    ],
+    "Neenello Naanalle": [
+     10075,
+     "plot"
+    ],
+    "Nenjil Or Aalayam": [
+     10527,
+     "plot"
+    ],
+    "Night Plane from Chungking": [
+     3785,
+     "plot"
+    ],
+    "Night and the City (1992 film)": [
+     6115,
+     "plot"
+    ],
+    "Ninaithale Inikkum (2009 film)": [
+     10994,
+     "plot"
+    ],
+    "Ninaithen Vandhai": [
+     10803,
+     "plot"
+    ],
+    "Nissash Amar Tumi": [
+     1904,
+     "bgplot"
+    ],
+    "Nuvvostanante Nenoddantana": [
+     11376,
+     "plot"
+    ],
+    "Nuvvu Naaku Nachav": [
+     11342,
+     "plot"
+    ],
+    "Ocean's 11": [
+     514,
+     "bgplot"
+    ],
+    "Ok Jaanu": [
+     10005,
+     "plot"
+    ],
+    "Okkadu": [
+     10329,
+     "plot"
+    ],
+    "One Million B.C.": [
+     164,
+     "bgplot"
+    ],
+    "One Way Passage": [
+     3300,
+     "plot"
+    ],
+    "Oosaravelli": [
+     11452,
+     "plot"
+    ],
+    "Ormayundo Ee Mukham": [
+     10338,
+     "plot"
+    ],
+    "Osthe": [
+     2720,
+     "bgplot"
+    ],
+    "Pammal K. Sambandam": [
+     10851,
+     "plot"
+    ],
+    "Pandavulu Pandavulu Tummeda": [
+     11481,
+     "plot"
+    ],
+    "Papanasam (film)": [
+     11108,
+     "plot"
+    ],
+    "Parugu": [
+     11415,
+     "plot"
+    ],
+    "Pavitra Bandham": [
+     11320,
+     "plot"
+    ],
+    "Pelli Sandadi": [
+     11317,
+     "plot"
+    ],
+    "Phoonk": [
+     2436,
+     "bgplot"
+    ],
+    "Piranha (1995 film)": [
+     6291,
+     "plot"
+    ],
+    "Piranha 3-D": [
+     1603,
+     "bgplot"
+    ],
+    "Pizza (2012 film)": [
+     10327,
+     "plot"
+    ],
+    "Planet of the Apes (1968 film)": [
+     592,
+     "bgplot"
+    ],
+    "Planet of the Apes (2001 film)": [
+     6691,
+     "plot"
+    ],
+    "Pokiri (2006 film)": [
+     2807,
+     "bgplot"
+    ],
+    "Policegiri": [
+     2471,
+     "bgplot"
+    ],
+    "Poltergeist (1982 film)": [
+     5591,
+     "plot"
+    ],
+    "Poltergeist (2015 film)": [
+     7656,
+     "plot"
+    ],
+    "Power (2014 Kannada film)": [
+     10118,
+     "plot"
+    ],
+    "Prem Nagar (1971 film)": [
+     2780,
+     "bgplot"
+    ],
+    "Premam (2016 film)": [
+     11517,
+     "plot"
+    ],
+    "Priyamaanavale": [
+     2670,
+     "bgplot"
+    ],
+    "Prom Night (2008 film)": [
+     7210,
+     "plot"
+    ],
+    "Pulse (2006 film)": [
+     7054,
+     "plot"
+    ],
+    "Punisher: War Zone": [
+     1520,
+     "bgplot"
+    ],
+    "Puriyaadha Pudhir": [
+     2644,
+     "bgplot"
+    ],
+    "Pyaar To Hona Hi Tha": [
+     9659,
+     "plot"
+    ],
+    "Raam (2009 film)": [
+     2505,
+     "bgplot"
+    ],
+    "Rakht: What If You Can See the Future": [
+     9766,
+     "plot"
+    ],
+    "Raksha (2008 film)": [
+     11422,
+     "plot"
+    ],
+    "Rakta Sambandham (1962 film)": [
+     11201,
+     "plot"
+    ],
+    "Rangbaaz (2013 film)": [
+     9183,
+     "plot"
+    ],
+    "Ready (2008 film)": [
+     11416,
+     "plot"
+    ],
+    "Ready (2011 film)": [
+     9924,
+     "plot"
+    ],
+    "Red Dawn (2012 film)": [
+     7465,
+     "plot"
+    ],
+    "Ring (film)": [
+     11667,
+     "plot"
+    ],
+    "Rocky (2013 film)": [
+     9178,
+     "plot"
+    ],
+    "Rowdy Rathore": [
+     2463,
+     "bgplot"
+    ],
+    "Rudraveena (film)": [
+     2788,
+     "bgplot"
+    ],
+    "Saamy": [
+     10864,
+     "plot"
+    ],
+    "Sabrina (1995 film)": [
+     6295,
+     "plot"
+    ],
+    "Sadak": [
+     2371,
+     "bgplot"
+    ],
+    "Sadma": [
+     9484,
+     "plot"
+    ],
+    "Salt N' Pepper": [
+     10281,
+     "plot"
+    ],
+    "Samsaram Adhu Minsaram": [
+     2634,
+     "bgplot"
+    ],
+    "Sangam (1964 Hindi film)": [
+     9296,
+     "plot"
+    ],
+    "Sanjog (1972 film)": [
+     9370,
+     "plot"
+    ],
+    "Santosh Subramaniam": [
+     10964,
+     "plot"
+    ],
+    "Santosham (2002 film)": [
+     11348,
+     "plot"
+    ],
+    "Sathi (2002 film)": [
+     2281,
+     "bgplot"
+    ],
+    "Sathya (1988 film)": [
+     2639,
+     "bgplot"
+    ],
+    "Saving Silverman": [
+     6699,
+     "plot"
+    ],
+    "Scarface (1932 film)": [
+     3305,
+     "plot"
+    ],
+    "Scarface (1983 film)": [
+     775,
+     "bgplot"
+    ],
+    "School for Scoundrels (2006 film)": [
+     1467,
+     "bgplot"
+    ],
+    "Scum (film)": [
+     2006,
+     "bgplot"
+    ],
+    "Secrets (1924 film)": [
+     3108,
+     "plot"
+    ],
+    "Secrets (1933 film)": [
+     3353,
+     "plot"
+    ],
+    "Seenu (2000 film)": [
+     10838,
+     "plot"
+    ],
+    "Seeta Aur Geeta": [
+     9371,
+     "plot"
+    ],
+    "Server Sundaram": [
+     10543,
+     "plot"
+    ],
+    "Seshu": [
+     11347,
+     "plot"
+    ],
+    "Sethu (film)": [
+     10825,
+     "plot"
+    ],
+    "Seven Chances": [
+     15,
+     "bgplot"
+    ],
+    "Seven Samurai": [
+     11541,
+     "plot"
+    ],
+    "Shall We Dance? (1996 film)": [
+     11658,
+     "plot"
+    ],
+    "Shall We Dance? (2004 film)": [
+     6904,
+     "plot"
+    ],
+    "Shanghai Express (film)": [
+     58,
+     "bgplot"
+    ],
+    "Shart: The Challenge": [
+     9768,
+     "plot"
+    ],
+    "Shiva (1990 film)": [
+     9563,
+     "plot"
+    ],
+    "Sigappu Rojakkal": [
+     10605,
+     "plot"
+    ],
+    "Sila Nerangalil": [
+     2699,
+     "bgplot"
+    ],
+    "Singam": [
+     11008,
+     "plot"
+    ],
+    "Siruthai": [
+     11027,
+     "plot"
+    ],
+    "Sleepless in Seattle": [
+     6167,
+     "plot"
+    ],
+    "Sliding Doors": [
+     2035,
+     "bgplot"
+    ],
+    "Soldier (1998 Indian film)": [
+     9663,
+     "plot"
+    ],
+    "Some Kind of Wonderful (film)": [
+     5837,
+     "plot"
+    ],
+    "Sorority Row": [
+     7277,
+     "plot"
+    ],
+    "Stalin (2006 film)": [
+     2809,
+     "bgplot"
+    ],
+    "Storm Over the Nile": [
+     8052,
+     "plot"
+    ],
+    "Straw Dogs (2011 film)": [
+     7404,
+     "plot"
+    ],
+    "Sundara Kandam": [
+     10702,
+     "plot"
+    ],
+    "Sundarakanda (1992 film)": [
+     11296,
+     "plot"
+    ],
+    "Sundaranga Jaana": [
+     10125,
+     "plot"
+    ],
+    "Swapnalokam": [
+     11333,
+     "plot"
+    ],
+    "Swarag Se Sunder": [
+     2360,
+     "bgplot"
+    ],
+    "Swarg Narak": [
+     9426,
+     "plot"
+    ],
+    "Tadakha": [
+     11475,
+     "plot"
+    ],
+    "Taxi No. 9211": [
+     9809,
+     "plot"
+    ],
+    "Thalli Prema": [
+     2779,
+     "bgplot"
+    ],
+    "Thani Oruvan": [
+     11113,
+     "plot"
+    ],
+    "That Darn Cat (1997 film)": [
+     6458,
+     "plot"
+    ],
+    "The 39 Steps (1935 film)": [
+     1914,
+     "bgplot"
+    ],
+    "The 39 Steps (1959 film)": [
+     8085,
+     "plot"
+    ],
+    "The Amityville Horror (2005 film)": [
+     1408,
+     "bgplot"
+    ],
+    "The Bachelor (1999 film)": [
+     6547,
+     "plot"
+    ],
+    "The Bad News Bears": [
+     5358,
+     "plot"
+    ],
+    "The Bishop's Wife": [
+     4046,
+     "plot"
+    ],
+    "The Broadway Melody": [
+     26,
+     "bgplot"
+    ],
+    "The Crazies (1973 film)": [
+     5282,
+     "plot"
+    ],
+    "The Crazies (2010 film)": [
+     1585,
+     "bgplot"
+    ],
+    "The Dawn Patrol (1938 film)": [
+     3513,
+     "plot"
+    ],
+    "The Departed": [
+     7009,
+     "plot"
+    ],
+    "The Divorce of Lady X": [
+     7923,
+     "plot"
+    ],
+    "The Eye (2002 film)": [
+     8997,
+     "plot"
+    ],
+    "The Eye (2008 film)": [
+     7181,
+     "plot"
+    ],
+    "The Fog (2005 film)": [
+     1415,
+     "bgplot"
+    ],
+    "The Getaway (1972 film)": [
+     631,
+     "bgplot"
+    ],
+    "The Getaway (1994 film)": [
+     1047,
+     "bgplot"
+    ],
+    "The Gift (2000 film)": [
+     1256,
+     "bgplot"
+    ],
+    "The Grudge": [
+     6880,
+     "plot"
+    ],
+    "The Haunting (1963 film)": [
+     4965,
+     "plot"
+    ],
+    "The Haunting (1999 film)": [
+     6565,
+     "plot"
+    ],
+    "The Hitcher (1986 film)": [
+     5749,
+     "plot"
+    ],
+    "The House on Sorority Row": [
+     5611,
+     "plot"
+    ],
+    "The Hurricane (1937 film)": [
+     3479,
+     "plot"
+    ],
+    "The Incredible Journey (film)": [
+     4968,
+     "plot"
+    ],
+    "The Incredible Melting Man": [
+     688,
+     "bgplot"
+    ],
+    "The Italian Job (2003 film)": [
+     1358,
+     "bgplot"
+    ],
+    "The Jackal (1997 film)": [
+     1157,
+     "bgplot"
+    ],
+    "The Killer (2006 film)": [
+     9810,
+     "plot"
+    ],
+    "The Last House on the Left (2009 film)": [
+     7262,
+     "plot"
+    ],
+    "The Longest Yard (1974 film)": [
+     656,
+     "bgplot"
+    ],
+    "The Longest Yard (2005 film)": [
+     1426,
+     "bgplot"
+    ],
+    "The Magnificent Seven": [
+     4865,
+     "plot"
+    ],
+    "The Maltese Falcon (1931 film)": [
+     44,
+     "bgplot"
+    ],
+    "The Manchurian Candidate (1962 film)": [
+     4934,
+     "plot"
+    ],
+    "The Mechanic (1972 film)": [
+     5260,
+     "plot"
+    ],
+    "The Mechanic (2011 film)": [
+     1636,
+     "bgplot"
+    ],
+    "The Mummy (1999 film)": [
+     6575,
+     "plot"
+    ],
+    "The Preacher's Wife": [
+     6357,
+     "plot"
+    ],
+    "The Prisoner of Zenda (1922 film)": [
+     3098,
+     "plot"
+    ],
+    "The Reincarnation of Peter Proud": [
+     5351,
+     "plot"
+    ],
+    "The Richest Girl in the World (1934 film)": [
+     92,
+     "bgplot"
+    ],
+    "The Roommate": [
+     7400,
+     "plot"
+    ],
+    "The Shaggy D.A.": [
+     5386,
+     "plot"
+    ],
+    "The Shaggy Dog (1959 film)": [
+     503,
+     "bgplot"
+    ],
+    "The Stepfather (2009 film)": [
+     7279,
+     "plot"
+    ],
+    "The Taking of Pelham 123 (2009 film)": [
+     1576,
+     "bgplot"
+    ],
+    "The Taking of Pelham One Two Three (1974 film)": [
+     5326,
+     "plot"
+    ],
+    "The Ten Commandments (1923 film)": [
+     3105,
+     "plot"
+    ],
+    "The Texas Chain Saw Massacre": [
+     5328,
+     "plot"
+    ],
+    "The Thief of Bagdad (1940 film)": [
+     7933,
+     "plot"
+    ],
+    "The Thomas Crown Affair (1968 film)": [
+     597,
+     "bgplot"
+    ],
+    "The Thomas Crown Affair (1999 film)": [
+     1242,
+     "bgplot"
+    ],
+    "The Time Travelers (1964 film)": [
+     5022,
+     "plot"
+    ],
+    "The Train (2007 film)": [
+     9835,
+     "plot"
+    ],
+    "The Unholy Three (1925 film)": [
+     16,
+     "bgplot"
+    ],
+    "The Virginian (1929 film)": [
+     3172,
+     "plot"
+    ],
+    "The Wagons Roll at Night": [
+     3747,
+     "plot"
+    ],
+    "The Wicker Man (2006 film)": [
+     1477,
+     "bgplot"
+    ],
+    "The Witness (2015 Chinese film)": [
+     8842,
+     "plot"
+    ],
+    "There's Something About Mary": [
+     6526,
+     "plot"
+    ],
+    "Thillalangadi": [
+     11013,
+     "plot"
+    ],
+    "Thillu Mullu (1981 film)": [
+     10619,
+     "plot"
+    ],
+    "Thillu Mullu (2013 film)": [
+     11072,
+     "plot"
+    ],
+    "Thithikudhe": [
+     2681,
+     "bgplot"
+    ],
+    "Thulladha Manamum Thullum": [
+     10813,
+     "plot"
+    ],
+    "Thuppakki": [
+     2729,
+     "bgplot"
+    ],
+    "Total Recall (2012 film)": [
+     7484,
+     "plot"
+    ],
+    "True Grit (1969 film)": [
+     5182,
+     "plot"
+    ],
+    "True Grit (2010 film)": [
+     1609,
+     "bgplot"
+    ],
+    "U Turn (1997 film)": [
+     1173,
+     "bgplot"
+    ],
+    "Ulta Palta 69": [
+     7870,
+     "plot"
+    ],
+    "Unlawful Entry (film)": [
+     6130,
+     "plot"
+    ],
+    "Unnaipol Oruvan (2009 film)": [
+     2704,
+     "bgplot"
+    ],
+    "Unnal Mudiyum Thambi": [
+     2641,
+     "bgplot"
+    ],
+    "Ustadon Ke Ustad (1963 film)": [
+     9295,
+     "plot"
+    ],
+    "Uthamaputhiran (2010 film)": [
+     11019,
+     "plot"
+    ],
+    "Vaana (film)": [
+     2811,
+     "bgplot"
+    ],
+    "Vallavanukku Vallavan (1965 film)": [
+     10551,
+     "plot"
+    ],
+    "Varadanayaka": [
+     10110,
+     "plot"
+    ],
+    "Varalaru (film)": [
+     2693,
+     "bgplot"
+    ],
+    "Varuthapadatha Valibar Sangam": [
+     11075,
+     "plot"
+    ],
+    "Vedam (film)": [
+     10270,
+     "plot"
+    ],
+    "Venkatadri Express (film)": [
+     2843,
+     "bgplot"
+    ],
+    "Vettai (film)": [
+     10661,
+     "plot"
+    ],
+    "Vietnam Colony": [
+     10141,
+     "plot"
+    ],
+    "Vietnam Colony (1994 film)": [
+     10740,
+     "plot"
+    ],
+    "Vikram (1986 Telugu film)": [
+     11263,
+     "plot"
+    ],
+    "Village of the Damned (1995 film)": [
+     6305,
+     "plot"
+    ],
+    "Vinnaithaandi Varuvaayaa": [
+     11004,
+     "plot"
+    ],
+    "Walking Tall (1973 film)": [
+     5308,
+     "plot"
+    ],
+    "Wanted (2009 film)": [
+     9877,
+     "plot"
+    ],
+    "Wanted (2010 film)": [
+     9158,
+     "plot"
+    ],
+    "Waterloo Bridge (1931 film)": [
+     50,
+     "bgplot"
+    ],
+    "Week-End at the Waldorf": [
+     3977,
+     "plot"
+    ],
+    "What a Girl Wants (film)": [
+     1376,
+     "bgplot"
+    ],
+    "When a Stranger Calls (1979 film)": [
+     714,
+     "bgplot"
+    ],
+    "When a Stranger Calls (2006 film)": [
+     1476,
+     "bgplot"
+    ],
+    "Whisky Galore! (1949 film)": [
+     7998,
+     "plot"
+    ],
+    "Whisky Galore! (2016 film)": [
+     2129,
+     "bgplot"
+    ],
+    "Willard (1971 film)": [
+     5252,
+     "plot"
+    ],
+    "Woh Kaun Thi": [
+     9300,
+     "plot"
+    ],
+    "Yaar Nee?": [
+     2614,
+     "bgplot"
+    ],
+    "Yaaradi Nee Mohini": [
+     10962,
+     "plot"
+    ],
+    "Ye Maaya Chesave": [
+     2821,
+     "bgplot"
+    ],
+    "Yours, Mine and Ours (1968 film)": [
+     600,
+     "bgplot"
+    ],
+    "Yours, Mine and Ours (2005 film)": [
+     6988,
+     "plot"
+    ],
+    "Youth (2002 film)": [
+     2673,
+     "bgplot"
+    ],
+    "Zanjeer (1973 film)": [
+     9380,
+     "plot"
+    ],
+    "Zanjeer (2013 film)": [
+     9965,
+     "plot"
+    ],
+    "Zara Si Zindagi": [
+     9485,
+     "plot"
+    ],
+    "Ziddi (1997 film)": [
+     9647,
+     "plot"
+    ]
+   }
+  }
+ }
+}

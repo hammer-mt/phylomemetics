@@ -1,0 +1,222 @@
+You are helping to build a research corpus of film remakes from Wikipedia. Each item below gives the title of a film's Wikipedia page (PAGE), ONE sentence from the opening of that page, and the OTHER FILMS that sentence links to. For each other film, record what THE SENTENCE SAYS about PAGE and that film. You are not asked what you know about the films.
+
+For each other film give:
+- "relation":
+    "page_remakes_other"   the sentence says PAGE is a remake of the other film;
+    "other_remakes_page"   the sentence says the other film is a remake of PAGE (for example "it was remade in Telugu as ...");
+    "none"                 anything else.
+- "wording":
+    "firm"    the sentence states the remake plainly as a fact: "is a remake of", "an official remake of", "was remade as", "was remade in Hindi as";
+    "loose"   the sentence weakens or hedges it: "loosely", "partly", "unofficial", "uncredited", "inspired by", "based on the idea of", "reported to be", "said to be", "has been described as", "considered", "similar to", "reboot", "reimagining", "re-adaptation";
+    "" when the relation is "none".
+
+Rules.
+- Use only what the sentence says. Do not use your own knowledge of the films, and do not guess from titles or years.
+- If the sentence lists several films as remakes of PAGE, each of them is "other_remakes_page".
+- If the sentence says PAGE is a remake of X, and that X is itself a remake of or based on Y, then X is "page_remakes_other" and Y is "none", unless the sentence also says PAGE is a remake of Y.
+- "none" covers: a sequel, prequel or spin-off; a film that is only compared or mentioned; another remake of the same original (a sibling); a film based on the same novel, play or true story that the sentence does not call a remake; a film whose remake status the sentence denies; a dubbed version; a film shot at the same time in another language ("simultaneously", "bilingual").
+- If you cannot tell which film the word "remake" or "remade" applies to, answer "none".
+
+The items follow.
+
+### ITEM 93aacbaed9b87643
+PAGE: Maqsad
+SENTENCE: Maqsad is remake of the 1983 Telugu film Mundadugu. It was the second highest-grossing film of 1984.
+OTHER FILMS: ["Mundadugu"]
+
+### ITEM 811482dc16aa4e9e
+PAGE: Shortkut
+SENTENCE: The film was an uncredited remake of the Malayalam-language film Udayananu Tharam, itself inspired from the 1999 American comedy film Bowfinger.
+OTHER FILMS: ["Udayananu Tharam", "Bowfinger"]
+
+### ITEM a5f1a6a1b10bfc27
+PAGE: Ek Hi Bhool
+SENTENCE: It is a remake of the Tamil film Mouna Geethangal (1981).
+OTHER FILMS: ["Mouna Geethangal"]
+
+### ITEM 2a835c0dfbe71e44
+PAGE: Bride of the Regiment
+SENTENCE: It was later remade by 20th Century-Fox as That Lady in Ermine (1948) starring Betty Grable and Douglas Fairbanks Jr.
+OTHER FILMS: ["That Lady in Ermine"]
+
+### ITEM 9dc3048d8af6b6d8
+PAGE: Anbukku Naan Adimai
+SENTENCE: It was remade in Hindi as Thanedaar (1990).
+OTHER FILMS: ["Thanedaar"]
+
+### ITEM 661f750dcf581bcd
+PAGE: Housefull 2
+SENTENCE: Produced by Nadiadwala under Nadiadwala Grandson Entertainment and distributed by Eros International, it is a remake of Mattupetty Machan and the second installment of the Housefull franchise, is a standalone sequel to Housefull (2010).
+OTHER FILMS: ["Housefull (2010 film)"]
+
+### ITEM 0cc426e5da78c65a
+PAGE: Sadak
+SENTENCE: It is an unofficial remake of 1976 American film Taxi Driver.
+OTHER FILMS: ["Taxi Driver"]
+
+### ITEM b1d74b0dd826fbc5
+PAGE: Thamizh Padam
+SENTENCE: The film was later remade in Telugu as Sudigadu.
+OTHER FILMS: ["Sudigadu"]
+
+### ITEM e25ad6d96f4a5227
+PAGE: Ninaithale
+SENTENCE: It is a remake of the 2004 Telugu film Anand.
+OTHER FILMS: ["Anand (2004 film)"]
+
+### ITEM 59a2bc1f3706ec92
+PAGE: Four Sons (1940 film)
+SENTENCE: It is a remake of the 1928 film of the same name.
+OTHER FILMS: ["Four Sons"]
+
+### ITEM 4a6525663463ffe7
+PAGE: Frontier Marshal (1939 film)
+SENTENCE: The film was remade by John Ford in 1946 as My Darling Clementine, including whole scenes reshot from the 1939 film.
+OTHER FILMS: ["My Darling Clementine"]
+
+### ITEM 9a3574c93938bf4d
+PAGE: Mappillai (1989 film)
+SENTENCE: The film was remade in Tamil with the same title in 2011.
+OTHER FILMS: ["Mappillai (2011 film)"]
+
+### ITEM 4491673658f96b96
+PAGE: Jodidar
+SENTENCE: The film is a remake of the Telugu Blockbuster film Rajendrudu Gajendrudu.
+OTHER FILMS: ["Rajendrudu Gajendrudu"]
+
+### ITEM ec1e9274481e0f41
+PAGE: Humjoli
+SENTENCE: It is a remake of the Tamil film Panakkara Kudumbam (1964).
+OTHER FILMS: ["Panakkara Kudumbam"]
+
+### ITEM 65f2ba745de711f6
+PAGE: 22 Female Kottayam
+SENTENCE: It was later remade in Tamil as Malini 22 Palayamkottai and in Telugu as Ghatana.
+OTHER FILMS: ["Malini 22 Palayamkottai"]
+
+### ITEM a3b655153a5f7dff
+PAGE: Duplicate (1998 film)
+SENTENCE: The film has been described as a remake of the 1935 American film The Whole Town's Talking.
+OTHER FILMS: ["The Whole Town's Talking"]
+
+### ITEM 90bd4ef5a97cfb1e
+PAGE: What Men Want
+SENTENCE: The film is a loose remake of the 2000 film What Women Want. The plot follows a woman who, after drinking a potent concoction given by a shaman, gains the ability to hear men's inner thoughts.
+OTHER FILMS: ["What Women Want"]
+
+### ITEM 96b2ada386e4d7c5
+PAGE: Yaadon Ki Baaraat
+SENTENCE: The film was later remade in Telugu as Annadammula Anubandham, in Tamil as Naalai Namadhe and in Malayalam as Himam.
+OTHER FILMS: ["Annadammula Anubandham"]
+
+### ITEM 72c77c6eaed3c5ec
+PAGE: Sirivantha
+SENTENCE: The movie is a remake of the 2004 Telugu movie Aa Naluguru.
+OTHER FILMS: ["Aa Naluguru"]
+
+### ITEM 2ed74111bbb63fa8
+PAGE: Dil Ek Mandir
+SENTENCE: The film is a remake of Sridhar's Tamil film Nenjil Or Aalayam (1962).
+OTHER FILMS: ["Nenjil Or Aalayam"]
+
+### ITEM 96258744b8ffd588
+PAGE: Inidhu Inidhu
+SENTENCE: It is a remake of the 2007 Telugu film Happy Days.
+OTHER FILMS: ["Happy Days (2007 film)"]
+
+### ITEM 90b9b0daf34f89ae
+PAGE: Badsha The Don
+SENTENCE: It is a remake of the 2010 Telugu movie Don Seenu starring Ravi Teja.
+OTHER FILMS: ["Don Seenu"]
+
+### ITEM 867d97bda4bfb3a6
+PAGE: Periya Idathu Mappillai
+SENTENCE: The film is a remake of the Malayalam film Aniyan Bava Chetan Bava.
+OTHER FILMS: ["Aniyan Bava Chetan Bava"]
+
+### ITEM 9a7506130b496a2e
+PAGE: Shiva (1990 film)
+SENTENCE: It is a remake of Varma's debut Telugu film Siva (1989).
+OTHER FILMS: ["Siva (1989 Telugu film)"]
+
+### ITEM 9a90bf5ced958d9f
+PAGE: Do Knot Disturb
+SENTENCE: It was an inspiration for the 2014 Punjabi comedy Disco Singh which was also remade in Bengali as Haripada Bandwala.
+OTHER FILMS: ["Disco Singh"]
+
+### ITEM a7e200681345c90f
+PAGE: The Mystery of Mr. X
+SENTENCE: Rex by Philip MacDonald (under the pen name Martin Porlock), was remade in 1952 as The Hour of 13''.
+OTHER FILMS: ["The Hour of 13"]
+
+### ITEM 46e2a096aa16f3a2
+PAGE: Humse Badhkar Kaun
+SENTENCE: It's a remake of the 1988 American movie Twins.
+OTHER FILMS: ["Twins (1988 film)"]
+
+### ITEM 788055be6bf8a54f
+PAGE: Raam (2009 film)
+SENTENCE: The movie is a remake of 2008 Telugu film Ready.
+OTHER FILMS: ["Ready (2008 film)"]
+
+### ITEM 907f62c6bfc415e0
+PAGE: Lady for a Day
+SENTENCE: Capra also directed its 1961 remake, Pocketful of Miracles.
+OTHER FILMS: ["Pocketful of Miracles"]
+
+### ITEM 0313b78d375854dd
+PAGE: Osthe
+SENTENCE: A remake of the 2010 Hindi film Dabangg, it stars Silambarasan, Richa Gangopadhyay, Santhanam, Jithan Ramesh and Sonu Sood.
+OTHER FILMS: ["Dabangg"]
+
+### ITEM 766e930ea65799ef
+PAGE: Amanush 2
+SENTENCE: The film is a remake of the Tamil film Naan which starred Vijay Antony in the lead.
+OTHER FILMS: ["Naan (2012 film)"]
+
+### ITEM 5b87ab29369bebf8
+PAGE: Shubh Mangal Savdhan (2017 film)
+SENTENCE: Starring Ayushmann Khurrana and Bhumi Pednekar, it is a remake of Prasanna's own Tamil film Kalyana Samayal Saadham (2013).
+OTHER FILMS: ["Kalyana Samayal Saadham"]
+
+### ITEM 973b7ee52df0628e
+PAGE: Kunwara
+SENTENCE: The film is a remake of the Telugu film Bavagaru Bagunnara which itself was loosely inspired from the Hollywood movie A Walk in the Clouds.
+OTHER FILMS: ["A Walk in the Clouds"]
+
+### ITEM bedca625b10f6af7
+PAGE: Youngistaan
+SENTENCE: It was a remake of the Telugu film Leader (2010).
+OTHER FILMS: ["Leader (2010 film)"]
+
+### ITEM 0f8c276d363dc72d
+PAGE: Autograph (2004 film)
+SENTENCE: It was remade in Telugu as Naa Autograph, Kannada as My Autograph, and in Bengali as Amar Aponjon and in Marathi with the same title (2023).
+OTHER FILMS: ["Naa Autograph", "My Autograph"]
+
+### ITEM a3bef23921c6d76e
+PAGE: Bandhan (2004 film)
+SENTENCE: Loosely a remake of the Telugu film Santosham (2002), the film centres on Rohit and his son, Rony, who travel to India years after his mother, Mina's death to reconnect with the estranged family during a wedding celebration.
+OTHER FILMS: ["Santosham (2002 film)"]
+
+### ITEM 01d7841c22ed030b
+PAGE: Click (2010 film)
+SENTENCE: Overall, it is the fourth adaptation, preceded by the 2008 official American remake, also titled Shutter.
+OTHER FILMS: ["Shutter (2008 film)"]
+
+### ITEM ce595fc1e6fad6e0
+PAGE: Dhill
+SENTENCE: The film was remade in Telugu as Sreeram (2002), Hindi as Dum (2003), Kannada as Sye (2005), Indian Bengali as Shotrur Mokabila (2002) and in Bangladeshi Bengali as Arman (2002).
+OTHER FILMS: ["Sreeram", "Dum (2003 Hindi film)"]
+
+### ITEM c7314b04e6622798
+PAGE: Chaappa Kurish
+SENTENCE: The film is an unauthorized remake of the 2009 South Korean film Handphone, along with its reported structural similarity to the 2002 American film Changing Lanes.
+OTHER FILMS: ["Handphone (film)", "Changing Lanes"]
+
+### ITEM d46423ee4149dbe6
+PAGE: Thayamma
+SENTENCE: It is a remake of the Malayalam film Thoovalsparsham which was inspired by the 1987 American film Three Men and a Baby, which itself was based on the 1985 French film Three Men and a Cradle.
+OTHER FILMS: ["Three Men and a Baby"]
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/remakes/statements/r1_019.out.json as a JSON list with one object per item: {"item": "<the code after ITEM>", "links": [{"film": "<title exactly as listed>", "relation": "...", "wording": "..."}]} with one entry in "links" for every film listed under OTHER FILMS. Write nothing else to that file.

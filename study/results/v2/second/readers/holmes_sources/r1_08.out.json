@@ -1,0 +1,135 @@
+[
+  {
+    "id": 10617098,
+    "kind": "film",
+    "year": 1962,
+    "holmes_appears": false,
+    "sources": [],
+    "other_sources": [
+      "Jighansa (1951 Bengali film, of which this is a remake)",
+      "Nishithini Bivishika (novel by Hemendra Kumar Roy)"
+    ]
+  },
+  {
+    "id": 19124478,
+    "kind": "film",
+    "year": 1922,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": [
+      "Sherlock Holmes (1899 play by William Gillette and Arthur Conan Doyle)"
+    ]
+  },
+  {
+    "id": 48348862,
+    "kind": "tv_episode",
+    "year": 2016,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Adventure of the Musgrave Ritual",
+        "tier": "C",
+        "quote": "The title is based on the quote \"Ricoletti of the club foot and his abominable wife\" from \"The Adventure of the Musgrave Ritual\" (1893), which refers to a case mentioned by Holmes."
+      },
+      {
+        "story": "The Five Orange Pips",
+        "tier": "C",
+        "quote": "The story also draws on elements of original Conan Doyle stories of Holmes such as \"The Five Orange Pips\" (1891) and \"The Final Problem\" (1893)."
+      },
+      {
+        "story": "The Final Problem",
+        "tier": "C",
+        "quote": "The story also draws on elements of original Conan Doyle stories of Holmes such as \"The Five Orange Pips\" (1891) and \"The Final Problem\" (1893)."
+      },
+      {
+        "story": "A Study in Scarlet",
+        "tier": "C",
+        "quote": "Moriarty's stating \"There is nothing new under the sun. It has all been done before\" comes from one of Arthur Conan Doyle's original Sherlock Holmes stories, A Study in Scarlet."
+      },
+      {
+        "story": "The Adventure of the Greek Interpreter",
+        "tier": "C",
+        "quote": "Mycroft's mentioning of the Manor House Case references \"The Greek Interpreter\"."
+      }
+    ],
+    "other_sources": []
+  },
+  {
+    "id": 50693419,
+    "kind": "film",
+    "year": 1951,
+    "holmes_appears": false,
+    "sources": [],
+    "other_sources": [
+      "Nishithini Bibhishika (novel by Hemendra Kumar Roy)"
+    ]
+  },
+  {
+    "id": 11351541,
+    "kind": "film",
+    "year": 1945,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Adventure of the Norwood Builder",
+        "tier": "C",
+        "quote": "Elements in the story pay homage to an otherwise unrecorded affair mentioned by Dr. Watson at the beginning of the 1903 story \"The Adventure of the Norwood Builder\", notably the steamship Friesland."
+      },
+      {
+        "story": "The Adventure of the Sussex Vampire",
+        "tier": "C",
+        "quote": "Off-camera, Watson also recounts to his audience another unrecorded affair mentioned in the 1924 story \"The Adventure of the Sussex Vampire\", that of the Giant Rat of Sumatra, \"a story for which the world is not yet prepared\"."
+      }
+    ],
+    "other_sources": []
+  },
+  {
+    "id": 11125917,
+    "kind": "film",
+    "year": 1945,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Final Problem",
+        "tier": "C",
+        "quote": "Produced and directed by Roy William Neill from an original screenplay by Bertram Millhauser, the film follows a Conan Doyle premise with material taken from \"The Final Problem\" and \"The Adventure of the Empty House\"."
+      },
+      {
+        "story": "The Adventure of the Empty House",
+        "tier": "C",
+        "quote": "Produced and directed by Roy William Neill from an original screenplay by Bertram Millhauser, the film follows a Conan Doyle premise with material taken from \"The Final Problem\" and \"The Adventure of the Empty House\"."
+      }
+    ],
+    "other_sources": []
+  },
+  {
+    "id": 22228712,
+    "kind": "film",
+    "year": 1937,
+    "holmes_appears": false,
+    "sources": [],
+    "other_sources": []
+  },
+  {
+    "id": 2631898,
+    "kind": "film",
+    "year": 1944,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Hound of the Baskervilles",
+        "tier": "C",
+        "quote": "The film is not credited as an adaptation of any of Sir Arthur Conan Doyle's Holmes tales, but it bears a significant resemblance to his 1902 novel The Hound of the Baskervilles."
+      }
+    ],
+    "other_sources": []
+  },
+  {
+    "id": 32896083,
+    "kind": "video_game",
+    "year": 2012,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": []
+  }
+]

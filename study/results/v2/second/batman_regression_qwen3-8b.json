@@ -1,8 +1,8 @@
 {
  "tag": "qwen3-8b",
  "curved_regressors": false,
- "seconds_setting_and_tests": 33.0,
- "peak_memory_gb_setting_and_tests": 0.9473800659179688,
+ "seconds_setting_and_tests": 34.2,
+ "peak_memory_gb_setting_and_tests": 0.9471855163574219,
  "rows": [
   {
    "what": "* E1 AUC (pooled)",
@@ -500,29 +500,20 @@
    "sampled": 0.00027
   }
  ],
- "peak_memory_gb": 1.0306015014648438,
+ "peak_memory_gb": 1.0306243896484375,
  "passed": true,
  "code": {
-  "git_commit": "c4f2c968ac5df797c4be9adaf27f6ba0bb6d4f8a",
+  "git_commit": "08d9984bcb6de808f9568c38c5275b686163f247",
   "v2_second_clean": false,
   "v2_second_changed_or_untracked": [
+   " M study/v2/second/PLAN.md",
    " M study/v2/second/build_holmes.py",
-   "?? study/v2/second/PLAN.md",
-   "?? study/v2/second/README.md",
-   "?? study/v2/second/build_remakes.py",
-   "?? study/v2/second/confirmatory.py",
-   "?? study/v2/second/e3_power.py",
-   "?? study/v2/second/gpu.py",
-   "?? study/v2/second/holmes.py",
-   "?? study/v2/second/lib.py",
-   "?? study/v2/second/probes.py",
-   "?? study/v2/second/remake_test.py",
-   "?? study/v2/second/remakes.py",
-   "?? study/v2/second/run_pod.sh"
+   " M study/v2/second/holmes.py",
+   " M study/v2/second/remakes.py"
   ],
   "sha256": {
    "lib.py": "41a9ddb1316edd2f0ea254e83a36011762d83e01c1ab707623a4661b846bfecc",
-   "holmes.py": "873996638c4c688f6529d3cb851d3ec2fd27f4b9ff23a7397461b754b5913f29"
+   "holmes.py": "f48839603a62e22626a03cb9296171d15eca23fe2ec7bf2b2f2076164eea17f4"
   }
  }
 }

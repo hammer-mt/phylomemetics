@@ -1,0 +1,222 @@
+You are helping to build a research corpus of film remakes from Wikipedia. Each item below gives the title of a film's Wikipedia page (PAGE), ONE sentence from the opening of that page, and the OTHER FILMS that sentence links to. For each other film, record what THE SENTENCE SAYS about PAGE and that film. You are not asked what you know about the films.
+
+For each other film give:
+- "relation":
+    "page_remakes_other"   the sentence says PAGE is a remake of the other film;
+    "other_remakes_page"   the sentence says the other film is a remake of PAGE (for example "it was remade in Telugu as ...");
+    "none"                 anything else.
+- "wording":
+    "firm"    the sentence states the remake plainly as a fact: "is a remake of", "an official remake of", "was remade as", "was remade in Hindi as";
+    "loose"   the sentence weakens or hedges it: "loosely", "partly", "unofficial", "uncredited", "inspired by", "based on the idea of", "reported to be", "said to be", "has been described as", "considered", "similar to", "reboot", "reimagining", "re-adaptation";
+    "" when the relation is "none".
+
+Rules.
+- Use only what the sentence says. Do not use your own knowledge of the films, and do not guess from titles or years.
+- If the sentence lists several films as remakes of PAGE, each of them is "other_remakes_page".
+- If the sentence says PAGE is a remake of X, and that X is itself a remake of or based on Y, then X is "page_remakes_other" and Y is "none", unless the sentence also says PAGE is a remake of Y.
+- "none" covers: a sequel, prequel or spin-off; a film that is only compared or mentioned; another remake of the same original (a sibling); a film based on the same novel, play or true story that the sentence does not call a remake; a film whose remake status the sentence denies; a dubbed version; a film shot at the same time in another language ("simultaneously", "bilingual").
+- If you cannot tell which film the word "remake" or "remade" applies to, answer "none".
+
+The items follow.
+
+### ITEM cd3218a38aba302a
+PAGE: Prem Qaidi
+SENTENCE: The film is a remake of the 1990 Telugu film Prema Khaidi, by [[E.
+OTHER FILMS: ["Prema Khaidi"]
+
+### ITEM fe56b6f8b0e64a99
+PAGE: Oli Vilakku
+SENTENCE: It is a remake of the Hindi-language film Phool Aur Patthar (1966).
+OTHER FILMS: ["Phool Aur Patthar"]
+
+### ITEM 40db0ecab985090f
+PAGE: A (Kannada film)
+SENTENCE: It was remade in Tamil as Adavadi.
+OTHER FILMS: ["Adavadi"]
+
+### ITEM 6b6d4a512975b49d
+PAGE: Sautela
+SENTENCE: The film, a remake of Tamil-language film Cheran Pandiyan also introduced 3 South Indian Heroines, Priya Raman, Priyanka Upendra and Rajashree to Bollywood.
+OTHER FILMS: ["Cheran Pandiyan"]
+
+### ITEM ef3980cc0b8bbeb8
+PAGE: Memories (2013 film)
+SENTENCE: It was remade in Tamil as Aarathu Sinam.
+OTHER FILMS: ["Aarathu Sinam"]
+
+### ITEM cff2f69aae03dea6
+PAGE: Kalyana Parisu
+SENTENCE: The film was later remade by Sridhar in Telugu as Pelli Kanuka (1960) and Hindi as Nazrana (1961), and in Malayalam by [[J.
+OTHER FILMS: ["Pelli Kanuka (1960 film)", "Nazrana (1961 film)"]
+
+### ITEM dcbd0bedff6ac76f
+PAGE: Secrets (1933 film)
+SENTENCE: The film is a remake of Secrets (1924), a silent film starring Norma Talmadge, which was based on a 1922 play of the same name.
+OTHER FILMS: ["Secrets (1924 film)"]
+
+### ITEM 297c5e002324f4f3
+PAGE: Berkeley Square (film)
+SENTENCE: Berkeley Square may also refer to: Berkeley Square, Bristol Berkeley Square, Los Angeles Berkeley Square, Trenton, New Jersey Berkeley Square (play), a 1926 theatrical science fiction romance, and its film adaptations: Berkeley Square (1933 film), a science fiction romance, based on the play The House in the Square, a British film remake Berkeley Square (1959 film), a Hallmark Hall of Fame production Berkeley Square (TV series), a 1998 miniseries Berkeley Square (club), a former music venue in Berkeley, California
+OTHER FILMS: ["I'll Never Forget You (film)"]
+
+### ITEM bf4ae27dab930306
+PAGE: Shaadi Ke Baad
+SENTENCE: The film is a remake of Telugu film Pelli Chesi Choodu (1952).
+OTHER FILMS: ["Pelli Chesi Choodu"]
+
+### ITEM cf7d79575cc25552
+PAGE: Vietnam Colony
+SENTENCE: A Tamil remake of the film was released in 1994 with the same title.
+OTHER FILMS: ["Vietnam Colony (1994 film)"]
+
+### ITEM 1a412f5a4dbd5391
+PAGE: Okkadu
+SENTENCE: Over the years, the film was remade in eight other languages: as Ghilli (2004) in Tamil, as Ajay (2006) in Kannada, twice in Bangladesh as Dapot (2006) and Bolona Kobul (2009), as Mate Aanidela Lakhe Phaguna (2008) in Odia, and as Tevar (2015) in Hindi, and as Kabaddi (2021) in Sinhala.
+OTHER FILMS: ["Ghilli", "Ajay (2006 film)"]
+
+### ITEM e4ae9ac57500b5c1
+PAGE: Fighter (2011 Film)
+SENTENCE: It is a remake of the 2007 Telugu action film, Lakshyam.
+OTHER FILMS: ["Lakshyam (2007 film)"]
+
+### ITEM c84025d83b08a28c
+PAGE: Kiki (1931 film)
+SENTENCE: The film is a remake of the 1926 version starring Norma Talmadge.
+OTHER FILMS: ["Kiki (1926 film)"]
+
+### ITEM 08a5ad8fb0206590
+PAGE: Thani Oruvan
+SENTENCE: The film was remade in Telugu as Dhruva (2016), and in Bengali as One (2017).
+OTHER FILMS: ["Dhruva (2016 film)"]
+
+### ITEM 0cba9513813034be
+PAGE: Ajab Prem Ki Ghazab Kahani
+SENTENCE: It is an unofficial remake of 2005 Telugu film Soggadu.
+OTHER FILMS: ["Soggadu (2005 film)"]
+
+### ITEM d7d181d01f398720
+PAGE: Sanjog (1972 film)
+SENTENCE: It is a remake of the Tamil film Iru Kodugal directed by [[K.
+OTHER FILMS: ["Iru Kodugal"]
+
+### ITEM c64043f46bc3a636
+PAGE: Kuruthipunal (film)
+SENTENCE: A remake of the Hindi film Drohkaal (1994), it follows two police officers trying to nab a terrorist group headed by a Naxalite, but their families are threatened in the process.
+OTHER FILMS: ["Drohkaal"]
+
+### ITEM ba879d4e7e5d1f39
+PAGE: Pulan Visaranai
+SENTENCE: The film was remade in Hindi as Ravan Raaj: A True Story (1995).
+OTHER FILMS: ["Ravan Raaj: A True Story"]
+
+### ITEM 1a00b05647019203
+PAGE: Tarkeeb
+SENTENCE: The film was a remake of the 1979 Telugu film Driver Ramudu.
+OTHER FILMS: ["Driver Ramudu"]
+
+### ITEM aca332a952159674
+PAGE: Athisaya Penn
+SENTENCE: It is a remake of the Hindi film Aasha (1957).
+OTHER FILMS: ["Aasha (1957 film)"]
+
+### ITEM 936ac04222c51c11
+PAGE: Shart: The Challenge
+SENTENCE: It is a remake of his Telugu film, Badri.
+OTHER FILMS: ["Badri (2000 film)"]
+
+### ITEM 7b18618e50de434d
+PAGE: Unnidathil Ennai Koduthen
+SENTENCE: The film was remade in Telugu as Raja, in Kannada as Kanasugara, in Bengali as Shakal Sandhya and in Odia as Mo Duniya Tu Hi Tu.
+OTHER FILMS: ["Raja (1999 film)"]
+
+### ITEM 3c3269582ca66474
+PAGE: Mere Baap Pehle Aap
+SENTENCE: The film is a remake of the 2001 Malayalam film Ishtam, directed by Sibi Malayil.
+OTHER FILMS: ["Ishtam (2001 Malayalam film)"]
+
+### ITEM d22640fb366dd5c4
+PAGE: Miracles (1989 film)
+SENTENCE: The film was remade in Hindi as Singh Is Kinng with Akshay Kumar and Katrina Kaif.
+OTHER FILMS: ["Singh Is Kinng"]
+
+### ITEM 6c500e4804870c22
+PAGE: Shanghai Express (film)
+SENTENCE: It was remade as Night Plane from Chungking (1943) and Peking Express (1951).
+OTHER FILMS: ["Night Plane from Chungking", "Peking Express (film)"]
+
+### ITEM fd62f85fc43d91cc
+PAGE: The Mark of Zorro (1920 film)
+SENTENCE: The film has been remade twice, once in 1940 (starring Tyrone Power) and again in 1974 (starring Frank Langella).
+OTHER FILMS: ["The Mark of Zorro (1940 film)"]
+
+### ITEM f3c5027eb2bdd61c
+PAGE: Majaa
+SENTENCE: It is a remake of the director's own Malayalam film Thommanum Makkalum (2005).
+OTHER FILMS: ["Thommanum Makkalum"]
+
+### ITEM ca8fbf49d76f5479
+PAGE: Kasthooriman
+SENTENCE: Lohithadas remade the film in Tamil under the same title, with Meera and Shammi reprising their respective roles.
+OTHER FILMS: ["Kasthuri Maan"]
+
+### ITEM 229259a0cd304c1e
+PAGE: Bad Lands (1939 film)
+SENTENCE: Bad Lands is a remake of John Ford's The Lost Patrol, with the locale changed from the Mesopotamian to the Arizona desert.
+OTHER FILMS: ["The Lost Patrol (1934 film)"]
+
+### ITEM aa43e3322292ad84
+PAGE: Mafia (1993 film)
+SENTENCE: The movie was remade twice in Hindi First as Mafia (1996) and second as Loha (1997) both starring Dharmendra in the lead role.
+OTHER FILMS: ["Mafia (1996 film)", "Loha (1997 film)"]
+
+### ITEM 152344345a539d30
+PAGE: Cheluva
+SENTENCE: The film is a remake of Telugu film Hello Brother which itself was loosely based on the Hong Kong action comedy Twin Dragons (1992) starring Jackie Chan.
+OTHER FILMS: ["Hello Brother (1994 film)", "Twin Dragons"]
+
+### ITEM 6fe3cc5dd0f603ba
+PAGE: Khandaan (1979 film)
+SENTENCE: It was a remake of the 1952 Bombay Talkies film Maa which was directed by Bimal Roy, in which Leela Chitnis played the eponymous role of the mother/Maa.
+OTHER FILMS: ["Maa (1952 film)"]
+
+### ITEM 1f2e1d661524e49c
+PAGE: Nagamandala
+SENTENCE: Detha's story was adapted into a 1973 film with the same name, which was later remade into the 2005 film Paheli (reportedly also inspired by this film).
+OTHER FILMS: ["Duvidha"]
+
+### ITEM 078e5fca72bf2744
+PAGE: Himmatwala (2013 film)
+SENTENCE: Set in 1983, it is an official remake of the 1983 film of the same name by [[K.
+OTHER FILMS: ["Himmatwala (1983 film)"]
+
+### ITEM 743f8beae56cf4c3
+PAGE: Big B (film)
+SENTENCE: Despite being an unofficial remake of the 2005 American film Four Brothers, Big B is considered a pathbreaking film in the history of Malayalam cinema due to its stylish making and also introduced a new style of filmmaking, thus attaining a huge cult following.
+OTHER FILMS: ["Four Brothers (film)"]
+
+### ITEM d2ca6456eb8b410c
+PAGE: Love 86
+SENTENCE: It was a remake of the 1982 Tamil film Ilanjodigal.
+OTHER FILMS: ["Ilanjodigal"]
+
+### ITEM 03001fbd76f9a4ee
+PAGE: Thee (2009 film)
+SENTENCE: The film was a remake of the Telugu film Operation Duryodhana.
+OTHER FILMS: ["Operation Duryodhana (film)"]
+
+### ITEM 588861098b411394
+PAGE: The Squaw Man (1918 film)
+SENTENCE: It would be remade again by DeMille in 1931.
+OTHER FILMS: ["The Squaw Man (1931 film)"]
+
+### ITEM 53f8aace3dcb3bd0
+PAGE: Ghilli
+SENTENCE: It is a remake of the Telugu film Okkadu (2003), written and directed by Gunasekhar, with few changes made to the story.
+OTHER FILMS: ["Okkadu"]
+
+### ITEM 7d6f4249c2b1cc9e
+PAGE: Bhootayyana Maga Ayyu
+SENTENCE: The film was remade in Tamil as Ellorum Nallavare (1975), in Hindi as Ek Gaon Ki Kahani (1975) and in Telugu as Andharoo Manchivaare (1976) - with Lokesh reprising his role in all three versions.
+OTHER FILMS: ["Ellorum Nallavare"]
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/remakes/statements/r1_003.out.json as a JSON list with one object per item: {"item": "<the code after ITEM>", "links": [{"film": "<title exactly as listed>", "relation": "...", "wording": "..."}]} with one entry in "links" for every film listed under OTHER FILMS. Write nothing else to that file.

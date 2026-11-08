@@ -1,0 +1,222 @@
+You are helping to build a research corpus of film remakes from Wikipedia. Each item below gives the title of a film's Wikipedia page (PAGE), ONE sentence from the opening of that page, and the OTHER FILMS that sentence links to. For each other film, record what THE SENTENCE SAYS about PAGE and that film. You are not asked what you know about the films.
+
+For each other film give:
+- "relation":
+    "page_remakes_other"   the sentence says PAGE is a remake of the other film;
+    "other_remakes_page"   the sentence says the other film is a remake of PAGE (for example "it was remade in Telugu as ...");
+    "none"                 anything else.
+- "wording":
+    "firm"    the sentence states the remake plainly as a fact: "is a remake of", "an official remake of", "was remade as", "was remade in Hindi as";
+    "loose"   the sentence weakens or hedges it: "loosely", "partly", "unofficial", "uncredited", "inspired by", "based on the idea of", "reported to be", "said to be", "has been described as", "considered", "similar to", "reboot", "reimagining", "re-adaptation";
+    "" when the relation is "none".
+
+Rules.
+- Use only what the sentence says. Do not use your own knowledge of the films, and do not guess from titles or years.
+- If the sentence lists several films as remakes of PAGE, each of them is "other_remakes_page".
+- If the sentence says PAGE is a remake of X, and that X is itself a remake of or based on Y, then X is "page_remakes_other" and Y is "none", unless the sentence also says PAGE is a remake of Y.
+- "none" covers: a sequel, prequel or spin-off; a film that is only compared or mentioned; another remake of the same original (a sibling); a film based on the same novel, play or true story that the sentence does not call a remake; a film whose remake status the sentence denies; a dubbed version; a film shot at the same time in another language ("simultaneously", "bilingual").
+- If you cannot tell which film the word "remake" or "remade" applies to, answer "none".
+
+The items follow.
+
+### ITEM 34369c57a13f4810
+PAGE: The In-Laws (2003 film)
+SENTENCE: The film is a remake of the 1979 cult classic of the same name.
+OTHER FILMS: ["The In-Laws (1979 film)"]
+
+### ITEM afb2571257c0117c
+PAGE: RoboCop 3
+SENTENCE: Two television series, RoboCop and RoboCop: Prime Directives, were released in 1994 and 2001 respectively, and the film series was rebooted with the 2014 remake RoboCop.
+OTHER FILMS: ["RoboCop (2014 film)"]
+
+### ITEM 3b160bee1e83714e
+PAGE: Night of the Living Dead 3D
+SENTENCE: The first remake was released in 1990 and was directed by Tom Savini from a revised screenplay by [[George A.
+OTHER FILMS: ["Night of the Living Dead (1990 film)"]
+
+### ITEM 0f1ce9cd216afb68
+PAGE: The Eye (2008 film)
+SENTENCE: It is a remake of the Pang brothers' 2002 film of the same name.
+OTHER FILMS: ["The Eye (2002 film)"]
+
+### ITEM 596436a13f77051c
+PAGE: Walking Tall (2004 film)
+SENTENCE: It is a remake of the 1973 film of the same name, and stars The Rock and Johnny Knoxville.
+OTHER FILMS: ["Walking Tall (1973 film)"]
+
+### ITEM 375c826e7b7e1fd8
+PAGE: Free Willy
+SENTENCE: It grew into a small franchise, including an animated television series, two sequels, and a direct-to-video reboot in addition to inspiring the rehabilitation and release of Keiko.
+OTHER FILMS: ["Free Willy 2: The Adventure Home", "Free Willy 3: The Rescue"]
+
+### ITEM a2d9a9523730b81f
+PAGE: Micki and Maude
+SENTENCE: In India, this film was remade in Tamil as Rettai Vaal Kuruvi starring Mohan, Archana, and Rathika Sarathkumar, and directed by Balu Mahindra.
+OTHER FILMS: ["Rettai Vaal Kuruvi"]
+
+### ITEM a83e35a174b0c301
+PAGE: Knight and Day
+SENTENCE: The film grossed $262 million worldwide and was remade in Hindi as Bang Bang!, with Hrithik Roshan and Katrina Kaif in the lead roles.
+OTHER FILMS: ["Bang Bang!"]
+
+### ITEM f7d392dd33accc40
+PAGE: 101 Dalmatians (1996 film)
+SENTENCE: It is a live-action remake of Walt Disney's 1961 animated film, which was based on the 1956 novel The Hundred and One Dalmatians.
+OTHER FILMS: ["One Hundred and One Dalmatians"]
+
+### ITEM 38477318f64c9184
+PAGE: The Stepfather (1987 film)
+SENTENCE: A remake, also called The Stepfather, was released in 2009.
+OTHER FILMS: ["The Stepfather (2009 film)"]
+
+### ITEM 120e065d479bec9c
+PAGE: Fright Night (2011 film)
+SENTENCE: A remake of Tom Holland's 1985 film, the film's screenplay was adapted by Marti Noxon.
+OTHER FILMS: ["Fright Night"]
+
+### ITEM ee2090d769b586ed
+PAGE: Beauty and the Beast (1991 film)
+SENTENCE: Other derivate works include three direct-to-video follow-ups, a television series, a live-action remake in 2017, and a live-action/animated television special in 2022.
+OTHER FILMS: ["Beauty and the Beast (2017 film)"]
+
+### ITEM 2a9bcabc56a19b3e
+PAGE: Fantastic Four (2005 film)
+SENTENCE: A reboot was released in 2015, while another, set in the Marvel Cinematic Universe (MCU), was released in 2025.
+OTHER FILMS: ["Fantastic Four (2015 film)"]
+
+### ITEM a85b24b0a1f62c56
+PAGE: Planet of the Apes (2001 film)
+SENTENCE: The sixth installment in the Planet of the Apes film series, it is loosely based on the 1963 novel of the same name by Pierre Boulle and serves as a remake of the 1968 film version.
+OTHER FILMS: ["Planet of the Apes (1968 film)"]
+
+### ITEM 537ef357320e02eb
+PAGE: Planet of the Apes (2001 film)
+SENTENCE: Ten years later, the film was rebooted into film series in 2011 with the title, Rise of the Planet of the Apes.
+OTHER FILMS: ["Rise of the Planet of the Apes"]
+
+### ITEM d3cc244171ad32c4
+PAGE: Amityville Dollhouse
+SENTENCE: This was the last film in the series released before the first installment was remade nine years later.
+OTHER FILMS: ["The Amityville Horror (1979 film)", "The Amityville Horror (2005 film)"]
+
+### ITEM a6a966d7a4aab31f
+PAGE: Brothers (2009 film)
+SENTENCE: The film is a remake of the 2004 Danish film by Susanne Bier, and both films take inspiration from the epic poem Odyssey by Homer.
+OTHER FILMS: ["Brothers (2004 film)"]
+
+### ITEM a7a735c54257a526
+PAGE: The Hills Have Eyes 2
+SENTENCE: Morri Sue Blainey Fox Atomic Dune Entertainment Craven/Maddalena Films Midnite Entertainment The Hills Have Eyes 2 is a 2007 American horror film and the sequel to the 2006 film, which itself was a remake of the 1977 horror film.
+OTHER FILMS: ["The Hills Have Eyes (2006 film)", "The Hills Have Eyes (1977 film)"]
+
+### ITEM 015f5710a3f50686
+PAGE: Yours, Mine and Ours (2005 film)
+SENTENCE: It is a remake of the 1968 film of the same name.
+OTHER FILMS: ["Yours, Mine and Ours (1968 film)"]
+
+### ITEM cb29d5e82e140929
+PAGE: The Mummy (1999 film)
+SENTENCE: A loose remake of the 1932 film The Mummy, Sommers' The Mummy follows the adventurer and treasure hunter Rick O'Connell (Fraser) as he travels to Hamunaptra, the City of the Dead, with librarian Evelyn Carnahan (Weisz) and her older brother Jonathan (Hannah), where they accidentally awaken Imhotep (Vosloo), a cursed high priest with supernatural powers.
+OTHER FILMS: ["The Mummy (1932 film)"]
+
+### ITEM 6a5ffab9c96bb5ce
+PAGE: Kiss of Death (1995 film)
+SENTENCE: The film is a remake of the 1947 film noir classic of the same name that starred Victor Mature, Brian Donlevy, and Richard Widmark.
+OTHER FILMS: ["Kiss of Death (1947 film)"]
+
+### ITEM 36a45e6e3a790014
+PAGE: The Preacher's Wife
+SENTENCE: It is a remake of the 1947 film The Bishop's Wife, which in turn was based on the 1928 novel of the same name by Robert Nathan.
+OTHER FILMS: ["The Bishop's Wife"]
+
+### ITEM b55313eb8311696b
+PAGE: Not of This Earth (1988 film)
+SENTENCE: It is a remake of Roger Corman's 1957 film of the same name, written by [[Charles B.
+OTHER FILMS: ["Not of This Earth (1957 film)"]
+
+### ITEM 3bd4dc5f495cd65a
+PAGE: Army of Darkness
+SENTENCE: A fourth film, Evil Dead, a standalone sequel of the franchise initially released and marketed as a remake, was released in 2013, followed by a fifth film, Evil Dead Rise, released in 2023, and a sixth film Evil Dead Burn, released in 2026.
+OTHER FILMS: ["Evil Dead (2013 film)"]
+
+### ITEM 8be4686ed370161f
+PAGE: Psycho (1998 film)
+SENTENCE: It is a modern remake of Alfred Hitchcock's 1960 film of the same name, in which Marion Crane, an embezzler, arrives at an old motel run by a mysterious man named Norman Bates; both films are adapted from Robert Bloch's 1959 novel.
+OTHER FILMS: ["Psycho (1960 film)"]
+
+### ITEM 78b4c342f320b484
+PAGE: Dawn of the Dead (1978 film)
+SENTENCE: Dawn of the Dead was followed by four official sequels, beginning with 1985's Day of the Dead, and a separate series of unofficial Italian-made sequels, beginning with 1979's Zombi 2. It has also inspired a 2004 remake film directed by Zack Snyder, as well as numerous parodies and pop culture references in other media such as Shaun of the Dead, Dead Rising, and Left 4 Dead.
+OTHER FILMS: ["Day of the Dead (1985 film)", "Dawn of the Dead (2004 film)", "Shaun of the Dead"]
+
+### ITEM 0a6ed2a5dec73c4d
+PAGE: Father of the Bride Part II
+SENTENCE: It is a sequel to the 1991 film Father of the Bride, remake of the 1951 film Father's Little Dividend which was the sequel to the original 1950 titular film, and fourth installment overall in the Father of the Bride franchise.
+OTHER FILMS: ["Father of the Bride (1991 film)", "Father's Little Dividend", "Father of the Bride (1950 film)"]
+
+### ITEM 060b96ba1d2cd4e2
+PAGE: The Hitcher (1986 film)
+SENTENCE: The film was followed by a 2003 sequel, The Hitcher II: I've Been Waiting, which featured Howell reprising his role, and a 2007 remake.
+OTHER FILMS: ["The Hitcher (2007 film)"]
+
+### ITEM 64a37194660be776
+PAGE: The Longest Yard (2005 film)
+SENTENCE: An updated remake of the 1974 film, it stars Adam Sandler as a washed-up former professional American football quarterback who goes to prison and is forced to assemble a team to play against the guards.
+OTHER FILMS: ["The Longest Yard (1974 film)"]
+
+### ITEM 4afbeca55cd0d771
+PAGE: Gone in 60 Seconds (2000 film)
+SENTENCE: It is a loose remake of the 1974 film of the same name by [[H. B.
+OTHER FILMS: ["Gone in 60 Seconds (1974 film)"]
+
+### ITEM dbcb53d50930b064
+PAGE: The Killer Inside Me (1976 film)
+SENTENCE: A 2010 remake was directed by Michael Winterbottom.
+OTHER FILMS: ["The Killer Inside Me (2010 film)"]
+
+### ITEM 6e463cfac7f48f3b
+PAGE: We're No Angels (1989 film)
+SENTENCE: A remake of the 1955 film We're No Angels, it stars Robert De Niro, Sean Penn and Demi Moore.
+OTHER FILMS: ["We're No Angels (1955 film)"]
+
+### ITEM d99354b1294eec72
+PAGE: Chasing Amy
+SENTENCE: Characters from the film would go on to appear in later Askewniverse films Jay and Silent Bob Strike Back (2001) and Jay and Silent Bob Reboot (2019), direct spin-offs of Chasing Amy, with Affleck, Lee, Adams and Dwight Ewell reprising their roles in cameo appearances; Smith described the characters' roles in Jay and Silent Bob Reboot as being an "eight-page sequel" to Chasing Amy.
+OTHER FILMS: ["Jay and Silent Bob Strike Back"]
+
+### ITEM ab94ca9441bf9ac8
+PAGE: Assault on Precinct 13 (2005 film)
+SENTENCE: A remake of the 1976 film of the same name, it follows the staff and inmates of the eponymous Precinct 13 who are forced to team up when they become targeted by corrupt officers.
+OTHER FILMS: ["Assault on Precinct 13 (1976 film)"]
+
+### ITEM 02fbb85e42e14965
+PAGE: The Hills Have Eyes (2006 film)
+SENTENCE: It is a remake of Wes Craven's 1977 film of the same name.
+OTHER FILMS: ["The Hills Have Eyes (1977 film)"]
+
+### ITEM 9306e09551a7f0b9
+PAGE: Walking Tall (1973 film)
+SENTENCE: It also became a cult film with two direct sequels of its own, a 1978 TV movie, a brief 1981 TV series and a 2004 remake that had its own two sequels.
+OTHER FILMS: ["Walking Tall (2004 film)"]
+
+### ITEM f268ef7794324e74
+PAGE: Fever Pitch (2005 film)
+SENTENCE: It stars Drew Barrymore and Jimmy Fallon and is a remake of the British 1997 film of the same title.
+OTHER FILMS: ["Fever Pitch (1997 film)"]
+
+### ITEM e92c758d300cd872
+PAGE: The Ring (2002 film)
+SENTENCE: The film's success inspired American remakes of several other Asian and Japanese films, including The Grudge (2004) and Dark Water (2005).
+OTHER FILMS: ["The Grudge", "Dark Water (2005 film)"]
+
+### ITEM 632ee07370ef0d66
+PAGE: Double Take (2001 film)
+SENTENCE: It is a remake of the 1957 British drama film Across the Bridge, which was in turn based on the short story by Graham Greene.
+OTHER FILMS: ["Across the Bridge (film)"]
+
+### ITEM 2c56f2a42cb4866d
+PAGE: Sheena (film)
+SENTENCE: It was directed by John Guillermin and written by Lorenzo Semple Jr., who had previously collaborated on the 1976 remake of King Kong.
+OTHER FILMS: ["King Kong (1976 film)"]
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/remakes/statements/r2_040.out.json as a JSON list with one object per item: {"item": "<the code after ITEM>", "links": [{"film": "<title exactly as listed>", "relation": "...", "wording": "..."}]} with one entry in "links" for every film listed under OTHER FILMS. Write nothing else to that file.

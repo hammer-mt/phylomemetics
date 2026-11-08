@@ -1,0 +1,138 @@
+You are helping to build a research corpus about Sherlock Holmes on screen. For each article below, record what THE ARTICLE ITSELF SAYS the work is based on. You are not asked what you know about the work or about the stories.
+
+For each article give:
+- "kind": one of "film", "tv_episode", "tv_film", "video_game", "series" (an article about a whole film series, television series or game series, not one work), "other".
+- "year": the year of first release or broadcast that the article gives (an integer), or null.
+- "holmes_appears": true if the article presents Sherlock Holmes as a character in the work, else false.
+- "sources": a list, possibly empty, of the Conan Doyle stories the article names as a source of the work. Each entry has:
+    "story": the story's title, copied exactly from the list of the 60 canonical stories given below;
+    "tier": "A", "B" or "C" by the rule below;
+    "quote": the sentence or infobox entry of the article that says so, copied word for word (at most 40 words).
+- "other_sources": a list of any source the article names that is not one of the 60 stories (a play, a later novel, another film), as short strings. Empty if none.
+
+The tiers. Use the article's own wording.
+- Tier A, a stated adaptation. The article says outright that the work is an adaptation of the story, is based on it, is a version of it, or dramatises it, with no loosening word. An infobox entry "based on" that names the story counts.
+- Tier B, a stated loose adaptation. The article says the work is loosely, partly or freely based on the story, or is a modern-day or updated adaptation of it, or takes its plot from it while changing it, or is credited as an adaptation although the plot differs.
+- Tier C, elements only. The article says the work is inspired by the story, borrows or uses elements, characters, a device, a line or its title from it, alludes or refers to it, or that critics see a resemblance.
+
+Rules.
+- Use only what the article says about the work's sources. Do not add a source from your own knowledge, and do not infer one from character names or from anything else.
+- If the article names several stories, give each its own entry and its own tier.
+- If the article says the screenplay is original, or names no canonical story as a source, "sources" is an empty list.
+- A statement that the work features characters created by Conan Doyle is not a source statement.
+- A story named only as the source of a DIFFERENT work (an earlier film, a sequel) is not a source of this one.
+
+The 60 canonical stories (copy a title exactly as written here):
+- A Study in Scarlet
+- The Sign of the Four
+- The Hound of the Baskervilles
+- The Valley of Fear
+- A Scandal in Bohemia
+- The Red-Headed League
+- A Case of Identity
+- The Boscombe Valley Mystery
+- The Five Orange Pips
+- The Man with the Twisted Lip
+- The Adventure of the Blue Carbuncle
+- The Adventure of the Speckled Band
+- The Adventure of the Engineer's Thumb
+- The Adventure of the Noble Bachelor
+- The Adventure of the Beryl Coronet
+- The Adventure of the Copper Beeches
+- The Adventure of Silver Blaze
+- The Adventure of the Cardboard Box
+- The Adventure of the Yellow Face
+- The Adventure of the Stockbroker's Clerk
+- The Adventure of the Gloria Scott
+- The Adventure of the Musgrave Ritual
+- The Adventure of the Reigate Squire
+- The Adventure of the Crooked Man
+- The Adventure of the Resident Patient
+- The Adventure of the Greek Interpreter
+- The Adventure of the Naval Treaty
+- The Final Problem
+- The Adventure of the Empty House
+- The Adventure of the Norwood Builder
+- The Adventure of the Dancing Men
+- The Adventure of the Solitary Cyclist
+- The Adventure of the Priory School
+- The Adventure of Black Peter
+- The Adventure of Charles Augustus Milverton
+- The Adventure of the Six Napoleons
+- The Adventure of the Three Students
+- The Adventure of the Golden Pince-Nez
+- The Adventure of the Missing Three-Quarter
+- The Adventure of the Abbey Grange
+- The Adventure of the Second Stain
+- The Adventure of Wisteria Lodge
+- The Adventure of the Red Circle
+- The Adventure of the Bruce-Partington Plans
+- The Adventure of the Dying Detective
+- The Disappearance of Lady Frances Carfax
+- The Adventure of the Devil's Foot
+- His Last Bow (short story)
+- The Adventure of the Mazarin Stone
+- The Problem of Thor Bridge
+- The Adventure of the Creeping Man
+- The Adventure of the Sussex Vampire
+- The Adventure of the Three Garridebs
+- The Adventure of the Illustrious Client
+- The Adventure of the Three Gables
+- The Adventure of the Blanched Soldier
+- The Adventure of the Lion's Mane
+- The Adventure of the Retired Colourman
+- The Adventure of the Veiled Lodger
+- The Adventure of Shoscombe Old Place
+
+The articles follow. The plot summaries have been left out on purpose.
+
+### ARTICLE id 41384573: The Sign of Three
+Infobox: {"series": "Sherlock", "writer": "*Stephen Thompson Steven Moffat Mark Gatiss", "director": "Colm McCarthy"}
+[Lead] "The Sign of Three" is the second episode of the third series of the BBC television series Sherlock. It was written by Stephen Thompson, Mark Gatiss and Steven Moffat, and stars Benedict Cumberbatch as Sherlock Holmes and Martin Freeman as Dr John Watson. The episode's title is inspired by The Sign of the Four by Sir Arthur Conan Doyle. It is set six months after the series opener "The Empty Hearse" and is primarily centred on the day of Watson's wedding to Mary Morstan. It garnered a viewership of 11.37 million, and received mostly positive reviews.
+[Production] The episode was directed by Colm McCarthy, who had previously worked with Moffat on the Doctor Who episode, "The Bells of Saint John". The Radio Times reported that McCarthy was recruited "following the departure of director Paul McGuigan, who is credited with having set the distinctive visual template for the programme". According to some sources, such as the Radio Times, "The Sign of Three" was written by Steve Thompson, who had previously authored the Sherlock episodes "The Blind Banker" and "The Reichenbach Fall". However, in a departure from the show's usual style, all three writers received a "written by" credit in this episode's opening titles. Steven Moffat told a BBC Q&A that he wrote a lot of Sherlock's best man speech. Filming The wedding reception scenes were filmed in the orangery at Goldney Hall, Bristol. Other scenes filmed across Bristol include the 'court steps' in the opening scenes are the Victoria Rooms, the bank robbery took place in a former Bank of England building next to Castle Park and John and Mary's wedding scenes were filmed at St Mary's church in Sneyd Park.
+[Broadcast and reception] The episode was first broadcast on 5 January 2014, on BBC One and BBC One HD at 8:30pm. It attracted 8.8 million viewers, a 31.9% share, which was down from 9.2 million (33.8%) for "The Empty Hearse". The episode received critical acclaim. The Independent's Neela Debnath commented, "While it is not the strongest story of the Sherlock saga, the writing is just as sharp and fresh, with the mind palace element toned down a few notches. The Sign of Three was packed to the rafters with wit and comedy. There was plenty to leave viewers howling with laughter, mainly thanks to Sherlock's general apathy towards humankind." Caroline Frost of The Huffington Post commented on the episode's "Conan Doyle-esque recounting of some of their strangest cases", writing, "[t]his combination of montage and memory lane made for an unusual show, somewhere between a Christmas one-off, a Comic Relief-inspired parody and one of these special dream-sequence sitcom episodes." Similarly, Oliver Jia of The Punk Effect stated it as "no doubt the odd duck of the entire Sherlock canon," but proceeded to call the episode "...a clever, hilarious, and moving piece of fine television." Former Mayor of London and Prime Minister of the United Kingdom Boris Johnson responded to allusions made to him within the fictional newspaper articles about the "Water Gang" which appeared on screen during the episode's opening moments. The lower portion of the front page of a mocked-up newspaper described an unnamed London Mayor as "dithering, incoherent, and self-interested", listing "bizarre" policies including a "recently-mocked concept of putting an airport in the middle of the estuary", which The Telegraph say is "a clear reference to Boris Island." Johnson suggested that the joke, which The Telegraph reported was "visible for just a matter of second[s]", was "perfectly legitimate" as political satire and also could have been directed at the previous mayor. A spokesperson for the BBC said: "Sherlock is a fictional drama series. Both the newspaper and mayor featured in the episode were entirely fictional and were not named or politically affiliated." IGN's Daniel Krupa had a more negative review, praising Benedict Cumberbatch's acting and some heartfelt, tender moments, but he was critical of the pacing, stating that "the rhythm was just erratic, never allowing you to really ease into the plot", and criticised the further exploration of the character's lives, rather than the adventures.
+
+### ARTICLE id 11350779: Sherlock Holmes and the Voice of Terror
+Infobox: {"director": "John Rawlins"}
+[Lead] Sherlock Holmes and the Voice of Terror is a 1942 American mystery thriller film based on Sir Arthur Conan Doyle's Sherlock Holmes detective stories. The film combines elements of Doyle's short story "His Last Bow", to which it is credited as an adaptation, and the real-life activities of Lord Haw-Haw. Directed by John Rawlins, Sherlock Holmes and the Voice of Terror is the third of fourteen films starring Basil Rathbone as Holmes and Nigel Bruce as Dr. John Watson. It is the first film in the series to be released by Universal Pictures and the first to be set in contemporaneous times.
+[Background and production] The late 1930s and early 1940s were described by the authors of the book Universal Horrors as "the true heyday of the detective film"; they noted that nearly every studio had at least one series based on a popular fictional detective. Universal Pictures had been producing mystery films for a long time, but had not truly produced any detective films. 20th Century-Fox wanted to exercise their options on a Sherlock Holmes film, but negotiations with The Conan Doyle estate became unfruitful when the estate insisted that all future scripts must remain faithful to the original material opposed to building new adventures for the detective. Shortly after this, Warner Bros. displayed an interest in adapting "The Speckled Band" with Rathbone and Bruce as Sherlock Holmes and Dr. Watson respectively. This film was not made per a notice in the Hollywood Reporter claiming there were "difficulties encountered in clearing all rights in the complicated copyright setup covering Holmes yarns." The Hollywood Reporter reported that writer Bob Jackson was originally assigned to write the screenplay for this production, but his contribution to the released film has not been determined. In early 1942, Universal entered into a contract with the estate, and agreed to pay $300,000 (equal to $ today) for the screen rights to the character. According to the author of Universal Horrors, with the exception of MGM's The Thin Man series, detective films were usually relegated to be second features with the Sherlock Holmes series being given average budgets and less hectic production schedules. Filming began on May 5, 1942, under the title Sherlock Holmes Saves London. The film was directed by John Rawlins, the only of Universal's Sherlock Holmes films that wasn't directed by Roy William Neill. The film ends with a direct quote from His Last Bow: Watson: It's a lovely morning, Holmes. Holmes: There's an east wind coming, Watson. Watson: I don't think so. Looks like another warm day. Holmes: Good old Watson. The one fixed point in a changing age. There's an east wind coming all the same. Such a wind as never blew on England yet. It will be cold and bitter, Watson, and a good many of us may wither before its blast. But it's God's own wind none the less. And a greener, better, stronger land will lie in the sunshine when the storm is cleared.
+
+### ARTICLE id 40463536: Mr. Holmes
+Infobox: {"director": "Bill Condon", "screenplay": "Jeffrey Hatcher"}
+[Lead] Mr. Holmes is a 2015 mystery film directed by Bill Condon, based on Mitch Cullin's 2005 novel A Slight Trick of the Mind, and featuring the character Sherlock Holmes. The film stars Ian McKellen as Sherlock Holmes, Laura Linney as his housekeeper Mrs. Munro and Milo Parker as her son Roger. Set primarily during his retirement in Sussex, the film follows a 93-year-old Holmes who struggles to recall the details of his final case because his mind is slowly deteriorating. Principal photography began on 5 July 2014, in London. The film was screened out of competition at the 65th Berlin International Film Festival and had its premiere on 7 February 2015. The film was released in British cinemas on 19 June 2015, and in the United States on 17 July 2015.
+[Production] On 5 September 2013, it was announced that Mitch Cullin's 2005 book A Slight Trick of the Mind would be adapted into a film, with Ian McKellen as a long-retired Sherlock Holmes. Bill Condon was set to direct Jeffrey Hatcher's adaptation of the novel. AI-Film was on board to finance and co-produce the film, Anne Carey was set to produce through her Archer Gray Productions, Iain Canning and Emile Sherman would produce through See-Saw Films, and BBC Films would also co-finance the film. Filmnation Entertainment was set to handle the international sales for the film. On 7 May 2014, Laura Linney and Hattie Morahan were added to the cast, with Linney set to play Mrs Munro, the housekeeper to Holmes. On 9 July Hiroyuki Sanada was added to the cast to play Matsuda Umezaki, a prickly ash plant enthusiast whom Holmes visits in Japan. On 10 July, more cast were revealed, including Patrick Kennedy, Roger Allam, Phil Davis, Frances de la Tour, with Milo Parker to play Mrs Munro's son. On 22 August it was revealed that Nicholas Rowe, who portrayed Holmes in the 1985 film Young Sherlock Holmes, would have a cameo role in the film. He portrays Holmes in a sequence spoofing the Basil Rathbone Sherlock Holmes films. On 3 September 2014, Miramax acquired distribution rights to the film in the United States with Roadside Attractions as partner. Filming Principal photography began on 5 July 2014 in the United Kingdom. On 9 July, McKellen tweeted a picture of himself as Sherlock Holmes in the film. The film was set for a seven-week shoot on location in London and on the south coast of England. The production also filmed at The Historic Dockyard Chatham which doubled as streets in Japan. Music Carter Burwell composed the music for the film. The soundtrack was released on 28 August 2015. Copyright dispute The Conan Doyle Estate filed legal action against the creators of the film on May 21, 2015, alleging unauthorized copying of copyrighted stories by Arthur Conan Doyle that cover the later life of Sherlock Holmes. All parties reached an agreement out of court before the release of the film in the United States, and later editions of the novel on which the film is based now include a note thanking the estate for permission to use copyrighted material.
+
+### ARTICLE id 24884713: The Adventures of Sherlock Holmes and Dr. Watson (film)
+Infobox: {"director": "Igor Maslennikov", "based_on": "\"The Adventure of Charles Augustus Milverton\",\"The Final Problem\",\"The Adventure of the Empty House\"by Arthur Conan Doyle", "writer": "Vladimir Valutskiy"}
+[Lead] The Adventures of Sherlock Holmes and Dr. Watson is a 1980 Soviet film adaptation of Arthur Conan Doyle's stories about Sherlock Holmes. It is the second film (episodes 3–5) in The Adventures of Sherlock Holmes and Dr. Watson film series directed by Igor Maslennikov. The film is based on three short stories by Conan Doyle: "The Adventure of Charles Augustus Milverton", "The Final Problem", and "The Adventure of the Empty House".
+
+### ARTICLE id 10617098: Bees Saal Baad (1962 film)
+Infobox: {"director": "Biren Nag", "writer": "Devkishen (dialogue)", "screenplay": "Dhruva Chatterjee", "based_on": ", Nishithini Bivishika (novel) by Hemendra Kumar Roy"}
+[Lead] Bees Saal Baad is a 1962 Indian Hindi-language psychological thriller film. It was directed by Biren Nag and produced by Hemant Kumar, who also composed the music and sang some of the songs. The film marks the directorial debut of Biren Nag, and stars Biswajeet (this was his first Hindi film), Waheeda Rehman, Madan Puri, Sajjan and Asit Sen. The film is a remake of the 1951 Bengali thriller Jighansa, which itself is based on Arthur Conan Doyle's The Hound of the Baskervilles as well as loosely based on Hemendra Kumar Roy's novel Nishithini Bivishika. The film topped the box office chart in 1962, becoming a "super hit." The film became very popular for the song "Kahin Deep Jale", sung by Lata Mangeshkar and written by Shakeel Badayuni for which they won Filmfare Award for Best Female Playback Singer and Filmfare Award for Best Lyricist respectively.
+
+### ARTICLE id 24779008: The Case of the Whitechapel Vampire
+Infobox: {"director": "Rodney Gibbons", "screenplay": "Rodney Gibbons"}
+[Lead] The Case of the Whitechapel Vampire is a non-canonical Sherlock Holmes film. The film was produced in 2002 for The Hallmark Channel as the last installment in a series of Hallmark Sherlock Holmes films.
+[List of Hallmark Sherlock Holmes films] The Hound of the Baskervilles (2000) The Sign of Four (2001 film) (2001) The Royal Scandal (2001) The Case of the Whitechapel Vampire (2002)
+
+### ARTICLE id 1615582: They Might Be Giants (film)
+Infobox: {"director": "Anthony Harvey", "screenplay": "James Goldman"}
+[Lead] They Might Be Giants is a 1971 American comedy mystery film based on the 1961 play of the same name (both written by James Goldman) starring George C. Scott and Joanne Woodward. The play opened at Stratford East in 1961, and closed after only four weeks. The film's title was later adopted as the name of a popular music group.
+[Title explanation] The title is an indirect reference to Don Quixote's famous exploit of tilting at windmills, believing them to be "monstrous giants". In reference to this, the character Justin Playfair argues: Well he had a point. Of course, he carried it a bit too far. He thought that every windmill was a giant. That's insane. But, thinking that they might be...well...all the best minds used to think the world was flat. — But, what if it isn't? — It might be round — and bread mold might be medicine. If we never looked at things and thought of what they might be, why, we'd all still be out there in the tall grass with the apes.
+[Production] Supermarket scenes were filmed at Pathmark stores. Scenes were filmed in New York City.
+[Critical views] The film opened to mixed reviews. Vincent Canby of The New York Times called it "a mushy movie with occasional, isolated moments of legitimate comedy." On Rotten Tomatoes it has an approval rating of 61% based on reviews from 18 critics.
+[Releases] There have been various running times of the film over the years, with the Kino Blu-ray at 91 minutes. The largest missing material is a long sequence near the end that takes place in a grocery store.
+[Movie tie-in paperback] Several months before the opening of the film, Lancer Books published James Goldman's screenplay as a tie-in mass market paperback, profusely illustrated with black and white movie stills. Surviving copies have become extremely rare.
+
+### ARTICLE id 34402549: Der Hund von Baskerville
+Infobox: {"director": "Rudolf Meinert", "writer": "Richard Oswald"}
+[Lead] Der Hund von Baskerville is a 1914 German silent film adaptation of Arthur Conan Doyle's 1902 novel The Hound of the Baskervilles, the first film adaptation of the work. According to the website silentera.com, the film was considered lost, but has been rediscovered; the Russian Gosfilmofond film archive possesses a print, while the Filmmuseum München has a 35mm positive print. In 2019, the film received a wide home media release by Flicker Alley, along with the 1929 version.
+[History] In 1907, Richard Oswald mounted a version of The Hound of the Baskervilles in Praterstraße based on Der Hund von Baskerville: Schauspiel in vier Aufzügen aus dem Schottischen Hochland. Frei nach Motiven aus Poes und Doyles Novellen (The Hound of the Baskervilles: a play in four acts set in the Scottish Highlands. Freely adapted from the stories of Poe and Doyle) which was written by Ferdinand Bonn. By 1914, Oswald was working as a script supervisor at Union-Vitascope studios in the Weißensee Studios. Films based on mystery novels were very successful in German cinema at the time so Oswald found himself in the position to pen a film script based on The Hound of the Baskervilles.
+[Production] Richard Oswald penned the tale which blended Doyle's original story and Der Hund von Baskerville and Rudolf Meinert was tasked with the direction. Alwin Neuß was cast to portray Sherlock Holmes in Der Hund von Baskerville. Neuß had previously played the role in 1910's Das Milliontestament. Der Hund von Baskerville was so successful, it spawned five more films: Das einsame Haus, Das unheimliche Zimmer, Die Sage vom Hund von Baskerville, Dr. MacDonalds Sanatorium, and Das Haus ohne Fenster. Neuß played Holmes in the first three sequels, but was replaced in the last two by Erich Kaiser-Titz.
+
+### ARTICLE id 10222495: The Return of Sherlock Holmes (1987 film)
+Infobox: {"genre": "Mystery", "writer": "Bob Shayne", "director": "Kevin Connor"}
+[Lead] The Return of Sherlock Holmes is a 1987 American made-for-television mystery film and pilot created, written and produced by Bob Shayne involving the famous detective Sherlock Holmes finding himself in the modern world. It originally premiered January 10, 1987 on CBS.
+[Production] At the time, the film was presented as a pilot for a possible series. Despite some excellent reviews from television critics, the show was never picked up. Writing The details of the main plot are adapted from The Sign of the Four. Writer Bob Shayne consulted with Michael Hodel, Sean Wright, and Nancy Senter. Filming locations A scene where Holmes is lost in the Arizona desert and finds himself in what he temporarily believes to be a heavenly facsimile of his native London was filmed at London Bridge, Lake Havasu. Similar shows A 1993 television film, 1994 Baker Street: Sherlock Holmes Returns, starring Anthony Higgins and Debrah Farentino, had a nearly identical plotline.
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/tiers/r2_05.out.json as a JSON list with one object per article, each with the keys "id" (the number after "ARTICLE id"), "kind", "year", "holmes_appears", "sources", "other_sources". Write nothing else to that file.

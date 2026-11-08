@@ -1,0 +1,222 @@
+You are helping to build a research corpus of film remakes from Wikipedia. Each item below gives the title of a film's Wikipedia page (PAGE), ONE sentence from the opening of that page, and the OTHER FILMS that sentence links to. For each other film, record what THE SENTENCE SAYS about PAGE and that film. You are not asked what you know about the films.
+
+For each other film give:
+- "relation":
+    "page_remakes_other"   the sentence says PAGE is a remake of the other film;
+    "other_remakes_page"   the sentence says the other film is a remake of PAGE (for example "it was remade in Telugu as ...");
+    "none"                 anything else.
+- "wording":
+    "firm"    the sentence states the remake plainly as a fact: "is a remake of", "an official remake of", "was remade as", "was remade in Hindi as";
+    "loose"   the sentence weakens or hedges it: "loosely", "partly", "unofficial", "uncredited", "inspired by", "based on the idea of", "reported to be", "said to be", "has been described as", "considered", "similar to", "reboot", "reimagining", "re-adaptation";
+    "" when the relation is "none".
+
+Rules.
+- Use only what the sentence says. Do not use your own knowledge of the films, and do not guess from titles or years.
+- If the sentence lists several films as remakes of PAGE, each of them is "other_remakes_page".
+- If the sentence says PAGE is a remake of X, and that X is itself a remake of or based on Y, then X is "page_remakes_other" and Y is "none", unless the sentence also says PAGE is a remake of Y.
+- "none" covers: a sequel, prequel or spin-off; a film that is only compared or mentioned; another remake of the same original (a sibling); a film based on the same novel, play or true story that the sentence does not call a remake; a film whose remake status the sentence denies; a dubbed version; a film shot at the same time in another language ("simultaneously", "bilingual").
+- If you cannot tell which film the word "remake" or "remade" applies to, answer "none".
+
+The items follow.
+
+### ITEM 2aa69910fb2f0af1
+PAGE: Ghostbusters II
+SENTENCE: A reboot was released in 2016 to mixed reviews and financial underperformance.
+OTHER FILMS: ["Ghostbusters (2016 film)"]
+
+### ITEM 287756a249576903
+PAGE: The Champ (1979 film)
+SENTENCE: The Champ is a 1979 American drama sports film directed by Franco Zeffirelli and a remake of the 1931 Academy Award-winning film of the same name directed by King Vidor.
+OTHER FILMS: ["The Champ (1931 film)"]
+
+### ITEM 48da702f0787e2eb
+PAGE: The Blob (1988 film)
+SENTENCE: It is a remake of the 1958 film of the same name.
+OTHER FILMS: ["The Blob"]
+
+### ITEM 80dc0adab803f4d1
+PAGE: Get Carter (2000 film)
+SENTENCE: Based on the Ted Lewis' novel Jack's Return Home, the film is a remake of the 1971 film of the same name, in which Caine played the title role.
+OTHER FILMS: ["Get Carter"]
+
+### ITEM e3931837a154b542
+PAGE: Fun with Dick and Jane (2005 film)
+SENTENCE: A remake of the 1977 film of the same name, the film stars Jim Carrey and Téa Leoni as a married, middle-class couple who, after the husband's employer goes bankrupt, struggle to maintain jobs before eventually resorting to robberies.
+OTHER FILMS: ["Fun with Dick and Jane (1977 film)"]
+
+### ITEM 83c79a93a55984bc
+PAGE: Fame (2009 film)
+SENTENCE: It is a remake of the 1980 film of the same name.
+OTHER FILMS: ["Fame (1980 film)"]
+
+### ITEM 8e6437a7752f25b4
+PAGE: Straw Dogs (1971 film)
+SENTENCE: Although controversial at the time, Straw Dogs is considered by some critics to be one of Peckinpah's greatest films, and was nominated for an Academy Award for Best Music (Original Dramatic Score). A remake directed by Rod Lurie and starring James Marsden and Kate Bosworth was released on 16 September 2011.
+OTHER FILMS: ["Straw Dogs (2011 film)"]
+
+### ITEM 88ef36f49bb2e711
+PAGE: Arthur (2011 film)
+SENTENCE: It is a remake of the 1981 film of the same name written and directed by Steve Gordon.
+OTHER FILMS: ["Arthur (1981 film)"]
+
+### ITEM 3aeb79c742def6ca
+PAGE: Down to Earth (2001 film)
+SENTENCE: Down to Earth is a 2001 American fantasy comedy film directed by Chris and Paul Weitz and written by Chris Rock, Lance Crouther, Ali LeRoi and Louis C.K. It is a remake of the 1978 film Heaven Can Wait, which is based on the 1938 stage play of the same name by Harry Segall.
+OTHER FILMS: ["Heaven Can Wait (1978 film)"]
+
+### ITEM e0741200782b54d4
+PAGE: The Manchurian Candidate (2004 film)
+SENTENCE: It is a remake of the 1962 film, in turn adapted from Richard Condon's 1959 novel.
+OTHER FILMS: ["The Manchurian Candidate (1962 film)"]
+
+### ITEM 58b41526dfcf6af7
+PAGE: Dark Water (2005 film)
+SENTENCE: It is a remake of the 2002 Japanese film based on the short story "Floating Water" by Koji Suzuki, who also wrote the Ring trilogy.
+OTHER FILMS: ["Dark Water (2002 film)"]
+
+### ITEM 765b395b1aba6d21
+PAGE: The Omen
+SENTENCE: The film spawned the Omen franchise, with Damien – Omen II released in 1978, followed by The Final Conflict (1981) and Omen IV: The Awakening (1991), as well as a 2006 remake and 2024 prequel.
+OTHER FILMS: ["The Omen (2006 film)"]
+
+### ITEM d1399a453c3469b9
+PAGE: Assault on Precinct 13 (1976 film)
+SENTENCE: A remake was released in 2005, directed by Jean-François Richet and starring Ethan Hawke and Laurence Fishburne.
+OTHER FILMS: ["Assault on Precinct 13 (2005 film)"]
+
+### ITEM faded7accfec62d4
+PAGE: Hulk (film)
+SENTENCE: A planned sequel, which would have been released in May 2005, was repurposed as a reboot titled The Incredible Hulk and released on June 13, 2008, as the second film in the Marvel Cinematic Universe.
+OTHER FILMS: ["The Incredible Hulk (film)"]
+
+### ITEM 9fe41392d5cb5fb0
+PAGE: King Kong (1976 film)
+SENTENCE: It is a remake of the 1933 film about a giant ape who is captured and taken to New York City for exhibition.
+OTHER FILMS: ["King Kong (1933 film)"]
+
+### ITEM 577c7efc027e3014
+PAGE: The Wanderers (1979 film)
+SENTENCE: After filming the remake of Invasion of the Body Snatchers, Kaufman went to New York City and successfully pitched The Wanderers to Martin Ransohoff.
+OTHER FILMS: ["Invasion of the Body Snatchers (1978 film)"]
+
+### ITEM 7f73067769ea7243
+PAGE: The Thomas Crown Affair (1999 film)
+SENTENCE: It is a remake of the 1968 film of the same title.
+OTHER FILMS: ["The Thomas Crown Affair (1968 film)"]
+
+### ITEM 7894bd3500f2af22
+PAGE: Poltergeist (1982 film)
+SENTENCE: The film was followed by Poltergeist II: The Other Side (1986), Poltergeist III (1988), and a 2015 remake, but none had the critical success of the original.
+OTHER FILMS: ["Poltergeist II: The Other Side", "Poltergeist III", "Poltergeist (2015 film)"]
+
+### ITEM 91be71fd8c82f4c1
+PAGE: The Bad News Bears Go to Japan
+SENTENCE: This film was followed by a 1979 CBS-TV series, and by a 2005 remake of the 1976 film.
+OTHER FILMS: ["Bad News Bears"]
+
+### ITEM b7b80081d37a1fb2
+PAGE: Ocean's Eleven (2001 film)
+SENTENCE: The first installment in the Ocean's film trilogy, it is a remake of the 1960 Rat Pack film.
+OTHER FILMS: ["Ocean's 11"]
+
+### ITEM cfb74f974d3b2af2
+PAGE: Born Yesterday (1993 film)
+SENTENCE: It is a remake of the 1950 film of the same name that starred Broderick Crawford, Judy Holliday (in an Academy Award winning performance) and William Holden.
+OTHER FILMS: ["Born Yesterday (1950 film)"]
+
+### ITEM b0317d9be2f32090
+PAGE: Deadly Outbreak
+SENTENCE: Set in Israel, it is an unofficial remake of the 1988 film Die Hard, with the last act of the film also borrowing heavily from the 1994 film Speed, released two years earlier. The film was rated 3.2 on the Letterbox site.
+OTHER FILMS: ["Die Hard", "Speed (1994 film)"]
+
+### ITEM dda353d4bf34724d
+PAGE: Guess Who (film)
+SENTENCE: A remake of the 1967 film Guess Who's Coming to Dinner, the film follows a white man meeting the parents of his black fiancée.
+OTHER FILMS: ["Guess Who's Coming to Dinner"]
+
+### ITEM b67aabaeb8612fe2
+PAGE: Rollerball (2002 film)
+SENTENCE: A remake of the 1975 film of the same name, which itself based on William Harrison's short story Roller Ball Murder.
+OTHER FILMS: ["Rollerball (1975 film)"]
+
+### ITEM 92c0fda134e6d20f
+PAGE: The Hitcher (2007 film)
+SENTENCE: It is a remake of the 1986 film of the same title starring Rutger Hauer, [[C.
+OTHER FILMS: ["The Hitcher (1986 film)"]
+
+### ITEM ee69b531ac256d2c
+PAGE: Halloween: Resurrection
+SENTENCE: This was the final installment of the H20 timeline of the Halloween franchise, which had just been rebooted with the previous film in 1998, before it was rebooted again in 2007 with a remake and again in 2018.
+OTHER FILMS: ["Halloween (2007 film)"]
+
+### ITEM 798888dfaa8e2b1b
+PAGE: Total Recall (1990 film)
+SENTENCE: An early attempt at a sequel, based on Dick's The Minority Report, became the 2002 standalone film Minority Report, while a 2012 remake, also titled Total Recall, failed to replicate the success of the original.
+OTHER FILMS: ["Total Recall (2012 film)"]
+
+### ITEM f0ab1b6a3ccc4089
+PAGE: House of Wax (2005 film)
+SENTENCE: It is a remake of the 1953 film of the same name, itself a remake of the 1933 film Mystery of the Wax Museum, based on the story "The Wax Works" by [[Charles S.
+OTHER FILMS: ["House of Wax (1953 film)", "Mystery of the Wax Museum"]
+
+### ITEM e773c6319b176d96
+PAGE: Halloween II (1981 film)
+SENTENCE: It also introduces the plot twist of Strode being the sister of Myers, an element that would form the narrative arc of the series in subsequent films after Halloween II—including Rob Zombie's remake and its sequel—but was dropped from the current series' canon from the 2018 film onwards.
+OTHER FILMS: ["Halloween (2007 film)", "Halloween II (2009 film)"]
+
+### ITEM 3de599532ec5dc47
+PAGE: The Shaggy Dog (2006 film)
+SENTENCE: It is the fifth overall and final installment of the titular franchise and is a reboot of the 1959 film of the same name and its 1976 sequel The Shaggy D.A., both of which were loosely based on the 1923 novel The Hound of Florence by Felix Salten.
+OTHER FILMS: ["The Shaggy Dog (1959 film)", "The Shaggy D.A."]
+
+### ITEM 1141670e57368d4f
+PAGE: Invaders from Mars (1986 film)
+SENTENCE: It is a remake of the 1953 film of the same name.
+OTHER FILMS: ["Invaders from Mars (1953 film)"]
+
+### ITEM f6cae5dadec43aef
+PAGE: Cat People (1982 film)
+SENTENCE: It is a remake of the 1942 film of the same name, and was produced by RKO Radio Pictures, the same studio that produced the original film.
+OTHER FILMS: ["Cat People (1942 film)"]
+
+### ITEM 54c1d14ecd1d3bf4
+PAGE: Terminator Salvation
+SENTENCE: The franchise rights were sold in 2012 to Annapurna Pictures, resulting in Terminator Genisys, a reboot of the series, being released in 2015 with Schwarzenegger reprising his role.
+OTHER FILMS: ["Terminator Genisys"]
+
+### ITEM 431ce2cfc46197eb
+PAGE: Conan the Barbarian (1982 film)
+SENTENCE: It ultimately led to the production of a 2011 reboot of the same name.
+OTHER FILMS: ["Conan the Barbarian (2011 film)"]
+
+### ITEM d6442c6cc2bdc127
+PAGE: Friday the 13th (1980 film)
+SENTENCE: Jason|a crossover]] with the A Nightmare on Elm Street film series, a 2009 series reboot and two television shows.
+OTHER FILMS: ["Friday the 13th (2009 film)"]
+
+### ITEM 8c990336ca37c315
+PAGE: Piranha (1995 film)
+SENTENCE: Executive produced by Roger Corman for the Showtime network, the film is a remake of the 1978 film of the same name and the third installment of the Piranha film series.
+OTHER FILMS: ["Piranha (1978 film)"]
+
+### ITEM 1ecc5722b23c1c35
+PAGE: The Bad Seed (1985 film)
+SENTENCE: Based on the William March novel The Bad Seed (1954), the film is a remake of the original film The Bad Seed (1956) as directed by Mervyn LeRoy.
+OTHER FILMS: ["The Bad Seed (1956 film)"]
+
+### ITEM c42f9614e784e252
+PAGE: The Rock (film)
+SENTENCE: The Rock was remade in India in 2003 as Qayamat: City Under Threat.
+OTHER FILMS: ["Qayamat: City Under Threat"]
+
+### ITEM a430eb3d3d8e3ad6
+PAGE: Hitman (2007 film)
+SENTENCE: A sequel was canceled during the film's production due to its mostly negative reception, but the film was eventually followed by the reboot Hitman: Agent 47 in 2015.
+OTHER FILMS: ["Hitman: Agent 47"]
+
+### ITEM 384092ed8875252d
+PAGE: Flipper (1996 film)
+SENTENCE: Paul Hogan Elijah Wood Chelsea Field Isaac Hayes Jonathan Banks Flipper is a 1996 American adventure film and a remake of the 1963 film of the same name (which in turn began a TV series that ran from 1964 to 1967).
+OTHER FILMS: ["Flipper (1963 film)"]
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/remakes/statements/r2_037.out.json as a JSON list with one object per item: {"item": "<the code after ITEM>", "links": [{"film": "<title exactly as listed>", "relation": "...", "wording": "..."}]} with one entry in "links" for every film listed under OTHER FILMS. Write nothing else to that file.

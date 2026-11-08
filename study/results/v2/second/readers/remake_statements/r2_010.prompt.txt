@@ -1,0 +1,222 @@
+You are helping to build a research corpus of film remakes from Wikipedia. Each item below gives the title of a film's Wikipedia page (PAGE), ONE sentence from the opening of that page, and the OTHER FILMS that sentence links to. For each other film, record what THE SENTENCE SAYS about PAGE and that film. You are not asked what you know about the films.
+
+For each other film give:
+- "relation":
+    "page_remakes_other"   the sentence says PAGE is a remake of the other film;
+    "other_remakes_page"   the sentence says the other film is a remake of PAGE (for example "it was remade in Telugu as ...");
+    "none"                 anything else.
+- "wording":
+    "firm"    the sentence states the remake plainly as a fact: "is a remake of", "an official remake of", "was remade as", "was remade in Hindi as";
+    "loose"   the sentence weakens or hedges it: "loosely", "partly", "unofficial", "uncredited", "inspired by", "based on the idea of", "reported to be", "said to be", "has been described as", "considered", "similar to", "reboot", "reimagining", "re-adaptation";
+    "" when the relation is "none".
+
+Rules.
+- Use only what the sentence says. Do not use your own knowledge of the films, and do not guess from titles or years.
+- If the sentence lists several films as remakes of PAGE, each of them is "other_remakes_page".
+- If the sentence says PAGE is a remake of X, and that X is itself a remake of or based on Y, then X is "page_remakes_other" and Y is "none", unless the sentence also says PAGE is a remake of Y.
+- "none" covers: a sequel, prequel or spin-off; a film that is only compared or mentioned; another remake of the same original (a sibling); a film based on the same novel, play or true story that the sentence does not call a remake; a film whose remake status the sentence denies; a dubbed version; a film shot at the same time in another language ("simultaneously", "bilingual").
+- If you cannot tell which film the word "remake" or "remade" applies to, answer "none".
+
+The items follow.
+
+### ITEM ea22fff62a6c3ec3
+PAGE: Hemlock Society (film)
+SENTENCE: It was remade into Marathi in 2015 as Welcome Zindagi.
+OTHER FILMS: ["Welcome Zindagi"]
+
+### ITEM b516a8fb06fba0f8
+PAGE: Paying Guests
+SENTENCE: It is a comedy film revolving around four close friends who reside together in Pattaya.The film was a surprise box office success.The film was later remade in Punjabi as Mr & Mrs 420 (2014) which was also a box office success.
+OTHER FILMS: ["Mr & Mrs 420"]
+
+### ITEM 510516aa62f61b23
+PAGE: Shankar Guru (1978 film)
+SENTENCE: The film was remade in Telugu as Kumara Raja, in Tamil as Thirisoolam and in Hindi as Mahaan.
+OTHER FILMS: ["Thirisoolam"]
+
+### ITEM dd86cde7bc3ceeda
+PAGE: Golpo Holeo Shotti
+SENTENCE: It is a remake of the 2012 Tamil film Pizza.
+OTHER FILMS: ["Pizza (2012 film)"]
+
+### ITEM dcdfca99109ace09
+PAGE: 12B
+SENTENCE: 12B is an unofficial remake of the 1998 British-American romantic drama film Sliding Doors.
+OTHER FILMS: ["Sliding Doors"]
+
+### ITEM c166a084eb462c95
+PAGE: Death Duel
+SENTENCE: It was adapted from the novel San Shaoye De Jian (Third Young Master's Sword) by Gu Long, and was remade in 2016 as Sword Master, which was directed by Derek Yee.
+OTHER FILMS: ["Sword Master (film)"]
+
+### ITEM 6b07a6501b6a9259
+PAGE: Uncle Bun
+SENTENCE: The film is a remake of the 1989 film Uncle Buck and also the official Malayalam debut of Tamil actress, Khushbu Sundar, as second female lead role, after Charmila.
+OTHER FILMS: ["Uncle Buck"]
+
+### ITEM afe4b0cc4ffdf1c4
+PAGE: Renigunta (film)
+SENTENCE: The film was remade in Kannada as Mandya to Mumbai (2016).
+OTHER FILMS: ["Mandya to Mumbai"]
+
+### ITEM 1e632f6150598b41
+PAGE: Kick (2014 Film)
+SENTENCE: A remake of the eponymous 2009 Telugu original, it was made in collaboration with UTV Motion Pictures on a reported budget of.
+OTHER FILMS: ["Kick (2009 film)"]
+
+### ITEM 7740544ff89c3b99
+PAGE: Love Ke Liye Kuchh Bhi Karega
+SENTENCE: The film is an official remake of the 1993 Telugu film Money.
+OTHER FILMS: ["Money (1993 film)"]
+
+### ITEM c07f2647112ce022
+PAGE: Azaad (1955 film)
+SENTENCE: It was a remake of his own Tamil film Malaikkallan (1954), which had [[M.
+OTHER FILMS: ["Malaikkallan"]
+
+### ITEM 279aa5651da05b6e
+PAGE: Aegan
+SENTENCE: The film is a remake of 2004 Hindi film Main Hoon Na, stars Ajith Kumar and Nayanthara, while Suman, Nassar, Jayaram, Navdeep and Piaa Bajpai play supporting roles.
+OTHER FILMS: ["Main Hoon Na"]
+
+### ITEM 52fc13a03133a4df
+PAGE: Mannan (film)
+SENTENCE: It is a remake of the 1986 Kannada film Anuraga Aralithu.
+OTHER FILMS: ["Anuraga Aralithu"]
+
+### ITEM 93aacbaed9b87643
+PAGE: Maqsad
+SENTENCE: Maqsad is remake of the 1983 Telugu film Mundadugu. It was the second highest-grossing film of 1984.
+OTHER FILMS: ["Mundadugu"]
+
+### ITEM 15b4cf533ea1bd0a
+PAGE: Fareb (1996 film)
+SENTENCE: The film is an unofficial remake of 1992 American film Unlawful Entry.
+OTHER FILMS: ["Unlawful Entry (film)"]
+
+### ITEM bf1f2f70e088fce2
+PAGE: Boss (2013 Hindi film)
+SENTENCE: A remake of the 2010 Malayalam film Pokkiri Raja, it stars Akshay Kumar as the titular character, along with Mithun Chakraborty, Shiv Panditt, Ronit Roy and Aditi Rao Hydari.
+OTHER FILMS: ["Pokkiri Raja (2010 film)"]
+
+### ITEM 07f2b00dacf598fa
+PAGE: Ayya (2005 Kannada film)
+SENTENCE: Despite being an unofficial remake of Saamy, the director had revealed that he had copied scenes from nine other movies including the Tamil film Madhurey, which also stars Rakshita as the female lead.
+OTHER FILMS: ["Saamy"]
+
+### ITEM 7ea3754d26db4cf0
+PAGE: Pizza (2012 film)
+SENTENCE: It was remade in Kannada as Whistle (2013), in Hindi under the same title (2014), and in Bengali as Golpo Holeo Shotti (2014).
+OTHER FILMS: ["Pizza (2014 film)", "Golpo Holeo Shotti"]
+
+### ITEM 80b83d7c27dbe20e
+PAGE: Ekk Deewana Tha
+SENTENCE: The film is a remake of Menon's own 2010 bilingual film Vinnaithaandi Varuvaayaa (Tamil) / Ye Maaya Chesave (Telugu).
+OTHER FILMS: ["Vinnaithaandi Varuvaayaa", "Ye Maaya Chesave"]
+
+### ITEM 2934ae40e1abbc78
+PAGE: Ghajini (2008 film)
+SENTENCE: The first half was inspired by the 1969 film Sajan and the 1983 film Pasand Apni Apni, and Khan and Murugadoss co-wrote the remake, with Khan suggesting changes to suit the taste of the Hindi cinema audience.
+OTHER FILMS: ["Pasand Apni Apni"]
+
+### ITEM 7f8b1c3554cfb9b4
+PAGE: Kasoor
+SENTENCE: The film is an unofficial remake of the 1985 American film Jagged Edge, with the climax being borrowed from the 2000 American horror film What Lies Beneath, which was also adapted unofficially by Bhatt into a full-fledged film in 2002.
+OTHER FILMS: ["Jagged Edge (film)", "What Lies Beneath", "Raaz (2002 film)"]
+
+### ITEM d7e14ee7f8c0fd7b
+PAGE: Kulama Gunama
+SENTENCE: It is a remake of the 1968 Telugu film Thalli Prema.
+OTHER FILMS: ["Thalli Prema"]
+
+### ITEM 3a9d78128e051eeb
+PAGE: Hum Aapke Dil Mein Rehte Hain
+SENTENCE: Hum Aapke Dil Mein Rehte Hain serves as a remake of Telugu-language film Pavitra Bandham (1996).
+OTHER FILMS: ["Pavitra Bandham"]
+
+### ITEM cacdb963a41e28c3
+PAGE: Wife, Husband and Friend
+SENTENCE: The film was remade as Everybody Does It (1949), starring Paul Douglas as the contractor, Celeste Holm as his wife, and Linda Darnell as the singer.
+OTHER FILMS: ["Everybody Does It"]
+
+### ITEM fbdca9a22a077e78
+PAGE: Rajanadai
+SENTENCE: The film was later remade in Hindi by Chandrasekhar as Jeevan Ki Shatranj (1993) and in Bangladesh as Baba in (2003).
+OTHER FILMS: ["Jeevan Ki Shatranj"]
+
+### ITEM 254c7e51ac5cebd4
+PAGE: Illarikam
+SENTENCE: Subbarao himself remade it in Kannada as Mane Aliya (1964), in Malayalam as Kalithozhan (1966) and in Tamil as Maadi Veettu Mappilai (1967).
+OTHER FILMS: ["Maadi Veettu Mappilai"]
+
+### ITEM c5caeb6bff60c442
+PAGE: Zara Si Zindagi
+SENTENCE: It was the remake of the Tamil film Varumayin Niram Sivappu (1980), which was directed by Balachander himself.
+OTHER FILMS: ["Varumayin Niram Sivappu"]
+
+### ITEM 72c77c6eaed3c5ec
+PAGE: Sirivantha
+SENTENCE: The movie is a remake of the 2004 Telugu movie Aa Naluguru.
+OTHER FILMS: ["Aa Naluguru"]
+
+### ITEM ab17a47aa35e525a
+PAGE: Ardhangi
+SENTENCE: The film was remade in Tamil as Pennin Perumai and in Hindi as Bahurani (1963).
+OTHER FILMS: ["Pennin Perumai", "Bahurani (1963 film)"]
+
+### ITEM 1fb71dc559aac70f
+PAGE: Droh Kaal
+SENTENCE: It was remade simultaneously in 1995 in Tamil and Telugu as Kuruthipunal and Drohi.
+OTHER FILMS: ["Kuruthipunal (film)"]
+
+### ITEM f9f22746f012a701
+PAGE: Deewaar
+SENTENCE: The film was later remade in Telugu as Magaadu (1976), in Tamil as Thee (1981), in Malayalam as Nathi Muthal Nathi Vare (1983), and in Cantonese as The Brothers (1979).
+OTHER FILMS: ["Thee (1981 film)", "The Brothers (1979 film)"]
+
+### ITEM 1a463154effed6be
+PAGE: Kanavane Kankanda Deivam (1955 film)
+SENTENCE: It was remade in Hindi as Devta (1956), with Ganesh and Anjali Devi reprising their roles.
+OTHER FILMS: ["Devta (1956 film)"]
+
+### ITEM 77c2942a7fb7c666
+PAGE: Bangalore Days
+SENTENCE: The film was later remade in Tamil as Bangalore Naatkal (2016) and in Hindi as Yaariyan 2 (2023).
+OTHER FILMS: ["Bangalore Naatkal"]
+
+### ITEM 280590c7890ecad9
+PAGE: Amara Deepam (1956 film)
+SENTENCE: A remake of the 1942 American film Random Harvest, it stars Sivaji Ganesan, Savitri and Padmini.
+OTHER FILMS: ["Random Harvest (film)"]
+
+### ITEM 4c69ea9b4faf0fb3
+PAGE: Punarjanma (1963 film)
+SENTENCE: The film was remade in Hindi as Khilona (1970), in Tamil as Engirundho Vandhaal (1970) and in Malayalam as Amrithavaahini (1976).
+OTHER FILMS: ["Khilona (1970 film)"]
+
+### ITEM 267e9d8fe7cb4230
+PAGE: Golmaal 3
+SENTENCE: Golmaal 3 was later remade in Telugu as Pandavulu Pandavulu Tummeda (2014).
+OTHER FILMS: ["Pandavulu Pandavulu Tummeda"]
+
+### ITEM 229259a0cd304c1e
+PAGE: Bad Lands (1939 film)
+SENTENCE: Bad Lands is a remake of John Ford's The Lost Patrol, with the locale changed from the Mesopotamian to the Arizona desert.
+OTHER FILMS: ["The Lost Patrol (1934 film)"]
+
+### ITEM aca332a952159674
+PAGE: Athisaya Penn
+SENTENCE: It is a remake of the Hindi film Aasha (1957).
+OTHER FILMS: ["Aasha (1957 film)"]
+
+### ITEM db867edea841c0d3
+PAGE: Heropanti
+SENTENCE: It is a remake of 2008 Telugu film Parugu and was released on 23 May 2014.
+OTHER FILMS: ["Parugu"]
+
+### ITEM 3171f2791373bd05
+PAGE: Aakrosh (2010 film)
+SENTENCE: The film was based on news reports of honour killings in India, and has also been described as a remake of the 1988 American film Mississippi Burning by Alan Parker (based on the 1964 Murders of Chaney, Goodman, and Schwerner).
+OTHER FILMS: ["Mississippi Burning"]
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/remakes/statements/r2_010.out.json as a JSON list with one object per item: {"item": "<the code after ITEM>", "links": [{"film": "<title exactly as listed>", "relation": "...", "wording": "..."}]} with one entry in "links" for every film listed under OTHER FILMS. Write nothing else to that file.

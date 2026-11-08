@@ -1,0 +1,222 @@
+You are helping to build a research corpus of film remakes from Wikipedia. Each item below gives the title of a film's Wikipedia page (PAGE), ONE sentence from the opening of that page, and the OTHER FILMS that sentence links to. For each other film, record what THE SENTENCE SAYS about PAGE and that film. You are not asked what you know about the films.
+
+For each other film give:
+- "relation":
+    "page_remakes_other"   the sentence says PAGE is a remake of the other film;
+    "other_remakes_page"   the sentence says the other film is a remake of PAGE (for example "it was remade in Telugu as ...");
+    "none"                 anything else.
+- "wording":
+    "firm"    the sentence states the remake plainly as a fact: "is a remake of", "an official remake of", "was remade as", "was remade in Hindi as";
+    "loose"   the sentence weakens or hedges it: "loosely", "partly", "unofficial", "uncredited", "inspired by", "based on the idea of", "reported to be", "said to be", "has been described as", "considered", "similar to", "reboot", "reimagining", "re-adaptation";
+    "" when the relation is "none".
+
+Rules.
+- Use only what the sentence says. Do not use your own knowledge of the films, and do not guess from titles or years.
+- If the sentence lists several films as remakes of PAGE, each of them is "other_remakes_page".
+- If the sentence says PAGE is a remake of X, and that X is itself a remake of or based on Y, then X is "page_remakes_other" and Y is "none", unless the sentence also says PAGE is a remake of Y.
+- "none" covers: a sequel, prequel or spin-off; a film that is only compared or mentioned; another remake of the same original (a sibling); a film based on the same novel, play or true story that the sentence does not call a remake; a film whose remake status the sentence denies; a dubbed version; a film shot at the same time in another language ("simultaneously", "bilingual").
+- If you cannot tell which film the word "remake" or "remade" applies to, answer "none".
+
+The items follow.
+
+### ITEM 4bc4ea6bccee8005
+PAGE: Professor (1962 film)
+SENTENCE: The film was remade in Tamil as Nadigan (1990), in Telugu twice as Bhale Mastaru (1969), Peddinti Alludu (1991), and in Kannada as Gopi Krishna.
+OTHER FILMS: ["Nadigan", "Bhale Mastaru"]
+
+### ITEM 8e3a3e2787f8272a
+PAGE: En Thambi
+SENTENCE: It is a remake of the 1966 Telugu film Aastiparulu Later on 1972 Hindi as Bhai Ho To Aisa.
+OTHER FILMS: ["Aastiparulu", "Bhai Ho To Aisa"]
+
+### ITEM 139d6a93dad5b753
+PAGE: Welcome Zindagi
+SENTENCE: The film is a remake of successful Bengali language film, Hemlock Society, which starred Koel Mallick and Parambrata Chatterjee in lead roles.
+OTHER FILMS: ["Hemlock Society (film)"]
+
+### ITEM 2be84d15067ceca6
+PAGE: Ishtam (2001 Malayalam film)
+SENTENCE: Ishtam was remade in Hindi as Mere Baap Pehle Aap by Priyadarshan.
+OTHER FILMS: ["Mere Baap Pehle Aap"]
+
+### ITEM 46ece509c2784be9
+PAGE: Calcutta Mail
+SENTENCE: The film is a remake of the 1998 Telugu film Choodalani Vundi.
+OTHER FILMS: ["Choodalani Vundi"]
+
+### ITEM 3e35be27bd20d9da
+PAGE: The Dawn Patrol (1938 film)
+SENTENCE: The Dawn Patrol is a 1938 American war film, a remake of the pre-Code 1930 film of the same title.
+OTHER FILMS: ["The Dawn Patrol (1930 film)"]
+
+### ITEM 8054c99335fed504
+PAGE: Jeevan Ki Shatranj
+SENTENCE: The film is a remake of director's own 1989 Tamil film Rajanadai.
+OTHER FILMS: ["Rajanadai"]
+
+### ITEM 002b5796c09b08dc
+PAGE: Super-Sleuth
+SENTENCE: Super Sleuth was a remade in 1946 as Genius at Work, with comedy team of Wally Brown and Alan Carney.
+OTHER FILMS: ["Genius at Work"]
+
+### ITEM 6382184e1f447355
+PAGE: Bramma
+SENTENCE: The film was remade in Telugu as Brahma (1992), in Kannada as Ravivarma (1992) and in Hindi by the same director as Brahma (1994).
+OTHER FILMS: ["Brahma (1994 film)"]
+
+### ITEM d6ba8c147f8074ae
+PAGE: Enga Oor Raja
+SENTENCE: The film was remade in Telugu as Dharma Daata (1970) and in Hindi as Dil Ka Raja (1972).
+OTHER FILMS: ["Dharma Daata"]
+
+### ITEM 486b24f6ef2b643f
+PAGE: City Lights (2014 film)
+SENTENCE: It is a remake of the BAFTA-nominated British film Metro Manila (2013).
+OTHER FILMS: ["Metro Manila (film)"]
+
+### ITEM 2e5a0e8698688e52
+PAGE: Yes Boss (film)
+SENTENCE: Yes Boss partially inspired the Malayalam film Junior Senior (2005) and was remade in Tamil as Guru En Aalu (2009).
+OTHER FILMS: ["Junior Senior (2005 film)", "Guru En Aalu"]
+
+### ITEM 8bde97ceb8e70931
+PAGE: Vettai (film)
+SENTENCE: The film was remade in Telugu as Tadakha (2013) and in Hindi as Baaghi 3 (2020).
+OTHER FILMS: ["Tadakha"]
+
+### ITEM 6778e327df7d673d
+PAGE: Bhoot (film)
+SENTENCE: The film was later dubbed in Telugu as 12 Va Anthasthu and remade in Tamil as Shock.
+OTHER FILMS: ["Shock (2004 film)"]
+
+### ITEM eb5a51e3663d64cc
+PAGE: Pathala Bhairavi
+SENTENCE: The film was also remade in Hindi as Pataal Bhairavi (1985).
+OTHER FILMS: ["Pataal Bhairavi"]
+
+### ITEM 30c31a447fd6ed6f
+PAGE: Abhimanyu (1991 film)
+SENTENCE: It was unofficially remade in Tamil as Thalai Nagaram (2006), which was remade in Telugu as Nagaram (2008) and in Kannada as Devru (2009).
+OTHER FILMS: ["Nagaram (2008 film)"]
+
+### ITEM 329828bbf895cb3e
+PAGE: Naseeb Apna Apna (1986 film)
+SENTENCE: It is a remake of the 1982 Tamil film Gopurangal Saivathillai.
+OTHER FILMS: ["Gopurangal Saivathillai"]
+
+### ITEM bc5db3b79fdd9881
+PAGE: Dhol (2007 film)
+SENTENCE: A remake of the 1990 Malayalam film In Harihar Nagar, which was already remade in Hindi in 1992 as Parda Hai Parda, the film stars Tusshar Kapoor, Sharman Joshi, Kunal Khemu, Rajpal Yadav, Tanushree Dutta, and Om Puri in lead roles, whilst Arbaaz Khan, Abhimanyu Singh, Payal Rohatgi, Murali Sharma, Asrani and Tiku Talsania feature in supporting roles.
+OTHER FILMS: ["In Harihar Nagar"]
+
+### ITEM 539fe5f6116675e7
+PAGE: Bangali Babu English Mem
+SENTENCE: It is a remake of Punjabi movie Jatt & Juliet.
+OTHER FILMS: ["Jatt & Juliet"]
+
+### ITEM 4b605fbdd0223f97
+PAGE: Crazy Kutumba
+SENTENCE: The story is a remake of Marathi film De Dhakka (2008) which was inspired from the Hollywood film, Little Miss Sunshine (2006).
+OTHER FILMS: ["De Dhakka", "Little Miss Sunshine"]
+
+### ITEM 27b10921dd3b0427
+PAGE: Chirodini Tumi Je Amar
+SENTENCE: It is a remake of the 2004 Tamil film Kaadhal.
+OTHER FILMS: ["Kaadhal"]
+
+### ITEM 55b7a5dbfb0b8776
+PAGE: Loot (2011 film)
+SENTENCE: The film is a loose remake of the 2003 film, Crime Spree.
+OTHER FILMS: ["Crime Spree"]
+
+### ITEM b62ebac81eadded4
+PAGE: Judwaa 2
+SENTENCE: A reboot of the 1997 film Judwaa, itself a remake of the Telugu film Hello Brother (1994), which itself was inspired by the Jackie Chan-starrer 1992 film Twin Dragons, the film stars Varun Dhawan playing twins Raja and Prem opposite Jacqueline Fernandez and Taapsee Pannu.
+OTHER FILMS: ["Judwaa", "Hello Brother (1994 film)", "Twin Dragons"]
+
+### ITEM c11a230628b4d091
+PAGE: En Thangai (1952 film)
+SENTENCE: The film was remade in Hindi as Chhoti Bahen, in Telugu as Aada Paduchu and in Kannada as Onde Balliya Hoogalu.
+OTHER FILMS: ["Chhoti Bahen", "Aada Paduchu"]
+
+### ITEM 7d4c52d59c2ccd4e
+PAGE: Tell Me O Kkhuda
+SENTENCE: The film bears a resemblance to Malini's first directoral venture Dil Aashna Hai (1992) and is an unofficial remake of the 2008 American film Mamma Mia!.
+OTHER FILMS: ["Dil Aashna Hai", "Mamma Mia! (film)"]
+
+### ITEM 687cc338b7f34741
+PAGE: The Train (2007 film)
+SENTENCE: It is a remake of the 2005 American film Derailed, which is an adaptation of James Siegel's 2003 novel Derailed.
+OTHER FILMS: ["Derailed (2005 film)"]
+
+### ITEM bf91ac7a713bdd3a
+PAGE: Raman Abdullah
+SENTENCE: It is a remake of the 1994 Malayalam film Malappuram Haji Mahanaya Joji.
+OTHER FILMS: ["Malappuram Haji Mahanaya Joji"]
+
+### ITEM 2bc8c72b79409aa8
+PAGE: The Battle of the Sexes (1928 film)
+SENTENCE: The film is a remake by Griffith of an earlier film he directed in 1914 which starred Lillian Gish.
+OTHER FILMS: ["The Battle of the Sexes (1914 film)"]
+
+### ITEM 80b83d7c27dbe20e
+PAGE: Ekk Deewana Tha
+SENTENCE: The film is a remake of Menon's own 2010 bilingual film Vinnaithaandi Varuvaayaa (Tamil) / Ye Maaya Chesave (Telugu).
+OTHER FILMS: ["Vinnaithaandi Varuvaayaa", "Ye Maaya Chesave"]
+
+### ITEM 544237612e7a1666
+PAGE: Infernal Affairs
+SENTENCE: American director Martin Scorsese remade the film in 2006 as The Departed, which won the Academy Award for Best Picture as well as Academy Award for Best Director, Scorsese's first and only Oscar in his career, and Best Adapted Screenplay.
+OTHER FILMS: ["The Departed"]
+
+### ITEM 01d867e0699a345d
+PAGE: Aakasha Dhooth
+SENTENCE: The film was remade in Telugu as Matrudevobhava, in Kannada as Karulina Koogu and in Hindi as Tulsi.
+OTHER FILMS: ["Karulina Koogu", "Tulsi (film)"]
+
+### ITEM bc244171e94e1e17
+PAGE: Ayee Milan Ki Bela
+SENTENCE: The film was remade in Tamil as Oru Thaai Makkal.
+OTHER FILMS: ["Oru Thaai Makkal"]
+
+### ITEM b68a3415e9415bcb
+PAGE: The Barretts of Wimpole Street (1934 film)
+SENTENCE: In 1957, Franklin directed a color remake in CinemaScope and Metrocolor starring Jennifer Jones, John Gielgud, and Bill Travers.
+OTHER FILMS: ["The Barretts of Wimpole Street (1957 film)"]
+
+### ITEM e7529bbe94d431c7
+PAGE: Tulsi (film)
+SENTENCE: The film is a remake of the 1993 Malayalam movie Akashadoothu, which was also earlier remade in Telugu as Mathru Devo Bhava and in Kannada as Karulina Koogu.
+OTHER FILMS: ["Karulina Koogu"]
+
+### ITEM 33fbd2b19cfb156b
+PAGE: Engal Anna
+SENTENCE: It is the Tamil remake of the director's own Malayalam film Chronic Bachelor (2003).
+OTHER FILMS: ["Chronic Bachelor"]
+
+### ITEM f6b8f973e538e583
+PAGE: Per Sollum Pillai
+SENTENCE: It was later remade in Telugu as Ramu (1987).
+OTHER FILMS: ["Ramu (1987 film)"]
+
+### ITEM ddc47f3607efb9cd
+PAGE: Garam Masala (2005 film)
+SENTENCE: The film is a remake of Priyadarshan's own 1985 Malayalam comedy Boeing Boeing which was a remake of 1965 English movie of the same name which in turn was based on the 1960 French play of the same name.
+OTHER FILMS: ["Boeing Boeing (1965 film)"]
+
+### ITEM bfd6f9b11284b411
+PAGE: Santosh Subramaniam
+SENTENCE: It is a remake of the Telugu film, Bommarillu (2006).
+OTHER FILMS: ["Bommarillu"]
+
+### ITEM 45201e9fde22c1ee
+PAGE: Samsaram (1951 film)
+SENTENCE: A remake of the 1950 Telugu film of the same name, it stars [[M.
+OTHER FILMS: ["Samsaram (1950 film)"]
+
+### ITEM 4b8a7fd77a01a825
+PAGE: Dabangg
+SENTENCE: The film was remade in Tamil as Osthe, with Sood reprising his role, and in Telugu as Gabbar Singh.
+OTHER FILMS: ["Osthe"]
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/remakes/statements/r1_023.out.json as a JSON list with one object per item: {"item": "<the code after ITEM>", "links": [{"film": "<title exactly as listed>", "relation": "...", "wording": "..."}]} with one entry in "links" for every film listed under OTHER FILMS. Write nothing else to that file.

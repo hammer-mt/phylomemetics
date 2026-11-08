@@ -1,0 +1,222 @@
+You are helping to build a research corpus of film remakes from Wikipedia. Each item below gives the title of a film's Wikipedia page (PAGE), ONE sentence from the opening of that page, and the OTHER FILMS that sentence links to. For each other film, record what THE SENTENCE SAYS about PAGE and that film. You are not asked what you know about the films.
+
+For each other film give:
+- "relation":
+    "page_remakes_other"   the sentence says PAGE is a remake of the other film;
+    "other_remakes_page"   the sentence says the other film is a remake of PAGE (for example "it was remade in Telugu as ...");
+    "none"                 anything else.
+- "wording":
+    "firm"    the sentence states the remake plainly as a fact: "is a remake of", "an official remake of", "was remade as", "was remade in Hindi as";
+    "loose"   the sentence weakens or hedges it: "loosely", "partly", "unofficial", "uncredited", "inspired by", "based on the idea of", "reported to be", "said to be", "has been described as", "considered", "similar to", "reboot", "reimagining", "re-adaptation";
+    "" when the relation is "none".
+
+Rules.
+- Use only what the sentence says. Do not use your own knowledge of the films, and do not guess from titles or years.
+- If the sentence lists several films as remakes of PAGE, each of them is "other_remakes_page".
+- If the sentence says PAGE is a remake of X, and that X is itself a remake of or based on Y, then X is "page_remakes_other" and Y is "none", unless the sentence also says PAGE is a remake of Y.
+- "none" covers: a sequel, prequel or spin-off; a film that is only compared or mentioned; another remake of the same original (a sibling); a film based on the same novel, play or true story that the sentence does not call a remake; a film whose remake status the sentence denies; a dubbed version; a film shot at the same time in another language ("simultaneously", "bilingual").
+- If you cannot tell which film the word "remake" or "remade" applies to, answer "none".
+
+The items follow.
+
+### ITEM e4ae9ac57500b5c1
+PAGE: Fighter (2011 Film)
+SENTENCE: It is a remake of the 2007 Telugu action film, Lakshyam.
+OTHER FILMS: ["Lakshyam (2007 film)"]
+
+### ITEM b0a0c44c0a7baa58
+PAGE: Dhool (2011 film)
+SENTENCE: It was a remake of Tamil hit film, Thiruvilaiyaadal Aarambam (2006), directed by Boopathy Pandian.
+OTHER FILMS: ["Thiruvilaiyaadal Aarambam"]
+
+### ITEM 0c4c6f26b1a47dcb
+PAGE: Billa (2007 film)
+SENTENCE: It is a remake of the 1980 film of the same name starring Rajnikanth, which itself is a remake of 1978 Hindi film Don, starring Amitabh Bachchan.
+OTHER FILMS: ["Billa (1980 film)", "Don (1978 film)"]
+
+### ITEM 7023267de4d71769
+PAGE: We Faw Down
+SENTENCE: It was remade in part with their film Sons of the Desert in 1933.
+OTHER FILMS: ["Sons of the Desert"]
+
+### ITEM a2b2c5ca221b1ccf
+PAGE: Amanush (2010 film)
+SENTENCE: The film is officially a remake of the 2003 film Kaadhal Kondein starring Dhanush and Sonia Agarwal, which was already remade in Bangladesh as Onno Manush in 2004.
+OTHER FILMS: ["Kaadhal Kondein"]
+
+### ITEM 15a0ac3b0d34c664
+PAGE: Ente Veedu Appoontem
+SENTENCE: It was remade in Tamil as Kannadi Pookal in 2005.
+OTHER FILMS: ["Kannadi Pookal"]
+
+### ITEM 33921d0f363711f6
+PAGE: Aamdani Atthani Kharcha Rupaiyaa
+SENTENCE: This was the remake of the Tamil film Viralukketha Veekkam, directed by [[V.
+OTHER FILMS: ["Viralukketha Veekkam"]
+
+### ITEM a76d317903a27645
+PAGE: Sunday (2008 film)
+SENTENCE: It is a remake of the 2005 Telugu film Anukokunda Oka Roju.
+OTHER FILMS: ["Anukokunda Oka Roju"]
+
+### ITEM 5030c10bc9e4e2c5
+PAGE: Kathe Chitrakathe Nirdeshana Puttanna
+SENTENCE: It is a remake of the 2014 Telugu horror comedy, Geethanjali.
+OTHER FILMS: ["Geethanjali (2014 film)"]
+
+### ITEM 5a2d4fd8b7c9972d
+PAGE: Musafir (2004 film)
+SENTENCE: A remake of the 1997 American film U Turn, it was initially controversial due to some sexual content, but went on to receive positive reviews from critics, with some considering it to be better than the original film.
+OTHER FILMS: ["U Turn (1997 film)"]
+
+### ITEM caccc4a500f5a515
+PAGE: Naache Mayuri
+SENTENCE: It is a remake of the Telugu film, Mayuri (1984), about classical dancer-actress Sudha Chandran who stars as herself in both films.
+OTHER FILMS: ["Mayuri (film)"]
+
+### ITEM 46be88443199e4c2
+PAGE: Broken Oath
+SENTENCE: It is an unofficial remake of the 1973 film Lady Snowblood, itself an adaptation of the manga series of the same name by Kazuo Koike and Kazuo Kamimura.
+OTHER FILMS: ["Lady Snowblood (film)"]
+
+### ITEM 394db237f3fbf018
+PAGE: Uthamaputhiran (2010 film)
+SENTENCE: It is a remake of the 2008 Telugu film Ready. The film stars Dhanush and Genelia, reprising her role from the original version; the supporting cast includes Vivek, [[K.
+OTHER FILMS: ["Ready (2008 film)"]
+
+### ITEM 4a2b77e08509512b
+PAGE: Godfather (2012 film)
+SENTENCE: The film is remake of the 2006 Tamil filmVaralaru.
+OTHER FILMS: ["Varalaru (film)"]
+
+### ITEM f0f0dc35d8a830c7
+PAGE: Thillu Mullu (2013 film)
+SENTENCE: It is a remake of the 1981 Tamil film of the same name which was a remake of the 1979 Hindi film Gol Maal.
+OTHER FILMS: ["Gol Maal"]
+
+### ITEM 84de2e56781b8426
+PAGE: Premi
+SENTENCE: This was Chandana Sharma's debut movie It is a remake of the Telugu-language blockbuster film Nee Sneham.
+OTHER FILMS: ["Nee Sneham"]
+
+### ITEM 51b45e6d12d0f78c
+PAGE: Libeled Lady
+SENTENCE: The film was remade in 1946 as Easy to Wed with Esther Williams, Van Johnson, and Lucille Ball.
+OTHER FILMS: ["Easy to Wed"]
+
+### ITEM ef3980cc0b8bbeb8
+PAGE: Memories (2013 film)
+SENTENCE: It was remade in Tamil as Aarathu Sinam.
+OTHER FILMS: ["Aarathu Sinam"]
+
+### ITEM e779115e54ebc299
+PAGE: Kaththi
+SENTENCE: Despite this, the film was a major commercial success, grossing, and was remade into Telugu as Khaidi No. 150 (2017).
+OTHER FILMS: ["Khaidi No. 150"]
+
+### ITEM 8c5952ed48de63b6
+PAGE: Broadway Bill
+SENTENCE: Capra disliked the final product, and in an effort to make it more to his liking, he remade the film in 1950 as Riding High.
+OTHER FILMS: ["Riding High (1950 film)"]
+
+### ITEM 9217ce68e964e104
+PAGE: Disco Singh
+SENTENCE: Disco Singh was remade in Bengali as Haripad Bandwala under the banner of Shree Venkatesh Films starring Ankush Hazra and Nusrat Jahan in the lead roles.
+OTHER FILMS: ["Haripad Bandwala"]
+
+### ITEM 492fa6f12ab8f0d3
+PAGE: Unakkaga Naan
+SENTENCE: Starring Sivaji Ganesan, Gemini Ganesan, Lakshmi, and Vennira Aadai Nirmala, it is a remake of the 1973 Hindi film Namak Haraam which also starred Gemini Ganesan's daughter Rekha.
+OTHER FILMS: ["Namak Haraam"]
+
+### ITEM 72412ea473e6b044
+PAGE: Wanted (2010 film)
+SENTENCE: Produced by Ashok Dhanuka under the banner of Eskay Movies, the film is a remake of 2005 Telugu movie Athadu.
+OTHER FILMS: ["Athadu"]
+
+### ITEM 27e309700a7122bf
+PAGE: Imitation of Life (1934 film)
+SENTENCE: A 1959 remake was directed by Douglas Sirk.
+OTHER FILMS: ["Imitation of Life (1959 film)"]
+
+### ITEM 8b3b27ef10b18d8b
+PAGE: Ezhumalai
+SENTENCE: It is the Tamil remake of the Telugu film Narasimha Naidu (2001) which also starred Simran and has music by Mani Sharma.
+OTHER FILMS: ["Narasimha Naidu"]
+
+### ITEM 37fc7519022e764f
+PAGE: Khoka 420
+SENTENCE: The film is a remake of the 2010 Telugu film Brindavanam starring [[N.
+OTHER FILMS: ["Brindavanam (2010 film)"]
+
+### ITEM 0e17f9e8311dc420
+PAGE: Aur Ek Prem Kahani
+SENTENCE: It is a remake of Mahendra's Kannada film Kokila.
+OTHER FILMS: ["Kokila (1977 film)"]
+
+### ITEM 5eb379776d4918ab
+PAGE: Sila Nerangalil
+SENTENCE: The film was an uncredited remake of the American romantic thriller film, Dead Again (1991).
+OTHER FILMS: ["Dead Again"]
+
+### ITEM cf3ca72419bc7211
+PAGE: Miss Mary (1957 film)
+SENTENCE: The film is a remake of Prasad's 1955 Telugu-Tamil bilingual film Missamma / Missiamma, which itself was a remake of the 1932 Bengali play Maanmoyee Girls' School.
+OTHER FILMS: ["Missamma", "Missiamma"]
+
+### ITEM 8176d92036186bf4
+PAGE: Mangamma Sapatham (1985 film)
+SENTENCE: It is a remake of the 1984 Hindi film Kasam Paida Karne Wale Ki.
+OTHER FILMS: ["Kasam Paida Karne Wale Ki"]
+
+### ITEM 24b7540779203825
+PAGE: Richie (film)
+SENTENCE: It is a remake of the 2014 Kannada film Ulidavaru Kandanthe and stars Nivin Pauly in the title role, along with Natty, Shraddha Srinath, and Lakshmi Priyaa Chandramouli in lead roles, while Prakash Raj, Elango Kumaravel, Raj Bharath, and Aadukalam Murugadoss play supporting roles.
+OTHER FILMS: ["Ulidavaru Kandanthe"]
+
+### ITEM 4bcb8b08b4a8a8db
+PAGE: Kanamachi (film)
+SENTENCE: The film is remake of 2011 Tamil film Ko.
+OTHER FILMS: ["Ko (film)"]
+
+### ITEM b4284e3bbc043ee1
+PAGE: China Town (1962 film)
+SENTENCE: The film was remade in Tamil as Kudiyirundha Koyil (1968), starring [[M.
+OTHER FILMS: ["Kudiyirundha Koyil"]
+
+### ITEM e794f09491208c62
+PAGE: Awara (2012 film)
+SENTENCE: Being a remake of the 2008 Telugu film, Krishna, it stars Jeet, Sayantika Banerjee, Mukul Dev (in his debut in Bengali cinema) and Ashish Vidyarthi in lead roles, while Kharaj Mukherjee, Biswajit Chakraborty, Biswanath Basu, Supriyo Dutta, Tulika Basu, Kamalika Banerjee and Arun Banerjee play another pivotal roles, with Subhasish Mukherjee in a guest appearance.
+OTHER FILMS: ["Krishna (2008 film)"]
+
+### ITEM 2caf6578c071682a
+PAGE: Poi Solla Porom
+SENTENCE: It is a remake of the 2006 Hindi film Khosla Ka Ghosla and stars Nassar, Nedumudi Venu, [[T.
+OTHER FILMS: ["Khosla Ka Ghosla"]
+
+### ITEM 066d123734ada9fa
+PAGE: Life Is Beautiful (2000 film)
+SENTENCE: The film was released on 14 April 2000, and is partly a remake of the 1989 classic Dead Poets Society, but title was inspired by the 1997 Italian film of the same title Life is Beautiful.
+OTHER FILMS: ["Dead Poets Society"]
+
+### ITEM 2ee0be53bee1123d
+PAGE: Dildaar
+SENTENCE: The film is a remake of the Telugu film Soggadu (1975) starring Sobhan Babu, Jayachitra, Jayasudha.
+OTHER FILMS: ["Soggadu (1975 film)"]
+
+### ITEM 83025aaa58ccd582
+PAGE: Phool Aur Patthar
+SENTENCE: The film was remade in Tamil as Oli Vilakku with [[M.
+OTHER FILMS: ["Oli Vilakku"]
+
+### ITEM 0a081012ca23308d
+PAGE: Pyaar Zindagi Hai
+SENTENCE: It is a remake of the Tamil film Aasai (1995).
+OTHER FILMS: ["Aasai"]
+
+### ITEM 32e546694f744022
+PAGE: Huchha
+SENTENCE: It is a remake of the 1999 Tamil film Sethu, The film released to positive reviews and brought a lot of fame to Sudeep.
+OTHER FILMS: ["Sethu (film)"]
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/remakes/statements/r2_012.out.json as a JSON list with one object per item: {"item": "<the code after ITEM>", "links": [{"film": "<title exactly as listed>", "relation": "...", "wording": "..."}]} with one entry in "links" for every film listed under OTHER FILMS. Write nothing else to that file.

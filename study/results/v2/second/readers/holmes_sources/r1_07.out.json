@@ -1,0 +1,98 @@
+[
+  {
+    "id": 2265148,
+    "kind": "film",
+    "year": 1988,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": []
+  },
+  {
+    "id": 11350840,
+    "kind": "film",
+    "year": 1943,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": []
+  },
+  {
+    "id": 59894064,
+    "kind": "film",
+    "year": 2020,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": [
+      "The Case of the Missing Marquess (first novel in The Enola Holmes Mysteries by Nancy Springer)"
+    ]
+  },
+  {
+    "id": 34392746,
+    "kind": "tv_episode",
+    "year": 2012,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Final Problem",
+        "tier": "C",
+        "quote": "Inspired by \"The Final Problem\" by Sir Arthur Conan Doyle, the episode follows Moriarty's plot to discredit and kill Sherlock Holmes, also heavily using elements from the film The Woman in Green, from the British WWII-era Sherlock Holmes film series."
+      }
+    ],
+    "other_sources": [
+      "The Woman in Green (film)"
+    ]
+  },
+  {
+    "id": 51743625,
+    "kind": "tv_episode",
+    "year": 2017,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": []
+  },
+  {
+    "id": 11350697,
+    "kind": "film",
+    "year": 1942,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Adventure of the Dancing Men",
+        "tier": "B",
+        "quote": "The film is credited as an adaptation of Conan Doyle's 1903 short story \"The Adventure of the Dancing Men\", though the only element from the source material is the dancing men code."
+      }
+    ],
+    "other_sources": []
+  },
+  {
+    "id": 12030500,
+    "kind": "film",
+    "year": 1916,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": [
+      "Sherlock Holmes (1899 stage play), which the article says was in turn based on A Scandal in Bohemia, The Final Problem and A Study in Scarlet"
+    ]
+  },
+  {
+    "id": 28300492,
+    "kind": "tv_episode",
+    "year": 2010,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Final Problem",
+        "tier": "C",
+        "quote": "We had to do a version of the scene in 'The Final Problem' in which the two arch-enemies meet each other."
+      }
+    ],
+    "other_sources": []
+  },
+  {
+    "id": 10442619,
+    "kind": "video_game",
+    "year": 2007,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": []
+  }
+]

@@ -1,0 +1,222 @@
+You are helping to build a research corpus of film remakes from Wikipedia. Each item below gives the title of a film's Wikipedia page (PAGE), ONE sentence from the opening of that page, and the OTHER FILMS that sentence links to. For each other film, record what THE SENTENCE SAYS about PAGE and that film. You are not asked what you know about the films.
+
+For each other film give:
+- "relation":
+    "page_remakes_other"   the sentence says PAGE is a remake of the other film;
+    "other_remakes_page"   the sentence says the other film is a remake of PAGE (for example "it was remade in Telugu as ...");
+    "none"                 anything else.
+- "wording":
+    "firm"    the sentence states the remake plainly as a fact: "is a remake of", "an official remake of", "was remade as", "was remade in Hindi as";
+    "loose"   the sentence weakens or hedges it: "loosely", "partly", "unofficial", "uncredited", "inspired by", "based on the idea of", "reported to be", "said to be", "has been described as", "considered", "similar to", "reboot", "reimagining", "re-adaptation";
+    "" when the relation is "none".
+
+Rules.
+- Use only what the sentence says. Do not use your own knowledge of the films, and do not guess from titles or years.
+- If the sentence lists several films as remakes of PAGE, each of them is "other_remakes_page".
+- If the sentence says PAGE is a remake of X, and that X is itself a remake of or based on Y, then X is "page_remakes_other" and Y is "none", unless the sentence also says PAGE is a remake of Y.
+- "none" covers: a sequel, prequel or spin-off; a film that is only compared or mentioned; another remake of the same original (a sibling); a film based on the same novel, play or true story that the sentence does not call a remake; a film whose remake status the sentence denies; a dubbed version; a film shot at the same time in another language ("simultaneously", "bilingual").
+- If you cannot tell which film the word "remake" or "remade" applies to, answer "none".
+
+The items follow.
+
+### ITEM 773017be732d6a16
+PAGE: Bharathan (1992 film)
+SENTENCE: It is a remake of the Hindi film Ghayal (1990).
+OTHER FILMS: ["Ghayal (1990 film)"]
+
+### ITEM c5279e81b1a3057b
+PAGE: Gambling on the High Seas
+SENTENCE: Gambling on the High Seas is a 1940 American drama film remake of Special Agent (1935), directed by George Amy and written by [[Robert E.
+OTHER FILMS: ["Special Agent (1935 film)"]
+
+### ITEM 2439e57412457103
+PAGE: Kyun...! Ho Gaya Na
+SENTENCE: It is a remake of Bengali film Nater Guru (2003), which itself is based on Samaresh Basu's eponymous story.
+OTHER FILMS: ["Nater Guru"]
+
+### ITEM c1b5bb82aac28979
+PAGE: Bhaaga Pirivinai
+SENTENCE: It was remade in Hindi as Khandan (1965), in Telugu as Kalasi Vunte Kaladu Sukham (1961), in Kannada as Muriyada Mane (1964) and in Malayalam as Nirakudam (1977).
+OTHER FILMS: ["Khandan (1965 film)", "Kalasi Vunte Kaladu Sukham"]
+
+### ITEM cf081ee0db46c28b
+PAGE: Across to Singapore
+SENTENCE: It was remade a third time in 1953, as All the Brothers Were Valiant.
+OTHER FILMS: ["All the Brothers Were Valiant"]
+
+### ITEM 672339ece1f03e27
+PAGE: Parthiban Kanavu (2003 film)
+SENTENCE: In 2004, it was remade in Telugu as Ammayi Bagundi.
+OTHER FILMS: ["Ammayi Bagundi"]
+
+### ITEM ac1831ef2b82d341
+PAGE: Three Sons
+SENTENCE: Produced and distributed by RKO Radio Pictures, and released on October 13, 1939, it is a remake of an earlier RKO film, Sweepings (1933).
+OTHER FILMS: ["Sweepings"]
+
+### ITEM 52ca77d14de06dea
+PAGE: London After Midnight (film)
+SENTENCE: In 2002, Turner Classic Movies aired a reconstructed version, produced by Rick Schmidlin, using the original script and numerous film stills to recreate the original plot. Browning remade the film as a sound film in 1935, as Mark of the Vampire, starring Bela Lugosi.
+OTHER FILMS: ["Mark of the Vampire"]
+
+### ITEM 363321f54e66a4cb
+PAGE: Chirag Kahan Roshni Kahan
+SENTENCE: It was remade in Telugu as Maa Babu in 1960.
+OTHER FILMS: ["Maa Babu"]
+
+### ITEM 1fbb07356efea443
+PAGE: Rowdy Rathore
+SENTENCE: A remake of the 2006 Telugu film Vikramarkudu, based on an original story written by [[V.
+OTHER FILMS: ["Vikramarkudu"]
+
+### ITEM e2556b2284183878
+PAGE: Khilona (1970 film)
+SENTENCE: The film was a remake of the Telugu film Punarjanma (1963) and it was simultaneously made in Tamil as Engirundho Vandhaal and in Malayalam as Amrithavaahini (1976).
+OTHER FILMS: ["Punarjanma (1963 film)"]
+
+### ITEM 1204250b3e661a79
+PAGE: The Maltese Falcon (1931 film)
+SENTENCE: The film was remade by the studio twice, with its 1941 remake starring Humphrey Bogart and Mary Astor overshadowing its predecessors.
+OTHER FILMS: ["The Maltese Falcon (1941 film)"]
+
+### ITEM d7352057cc507cd4
+PAGE: Azhagana Naatkal
+SENTENCE: Azhagana Naatkal is a 2001 Indian Tamil-language comedy film directed by Sundar C, is a remake of the Malayalam film Minnaram (1994) which was based on the 1972 Malayalam movie Brahmachari, which in turn was a remake of 1967 Tamil film Penne Nee Vaazhga.
+OTHER FILMS: ["Minnaram"]
+
+### ITEM 0cba9513813034be
+PAGE: Ajab Prem Ki Ghazab Kahani
+SENTENCE: It is an unofficial remake of 2005 Telugu film Soggadu.
+OTHER FILMS: ["Soggadu (2005 film)"]
+
+### ITEM 66efc84a2142e3f4
+PAGE: Saravana
+SENTENCE: It is a remake of the 2005 Telugu film Bhadra.
+OTHER FILMS: ["Bhadra (2005 film)"]
+
+### ITEM 432f0a811fbe3574
+PAGE: Vettai
+SENTENCE: The film was remade in Telugu as Tadakha (2013) and in Hindi as Baaghi 3 (2020).
+OTHER FILMS: ["Tadakha"]
+
+### ITEM 88a45048f787616c
+PAGE: Aalayamani
+SENTENCE: The film was remade in Telugu as Gudi Gantalu (1964), in Hindi as Aadmi (1968) and in Malayalam as Oru Raagam Pala Thaalam.
+OTHER FILMS: ["Gudi Gantalu", "Aadmi (1968 film)"]
+
+### ITEM da65dfa9334b1aa9
+PAGE: Enakkul Oruvan (2015 film)
+SENTENCE: A remake of the 2013 Kannada film Lucia directed by Pawan Kumar, the film stars Siddharth and Deepa Sannidhi, with Santhosh Narayanan composing the film's music.
+OTHER FILMS: ["Lucia (film)"]
+
+### ITEM c29917abd98640c2
+PAGE: Appu (2000 film)
+SENTENCE: It is a remake of the Hindi film Sadak (1991).
+OTHER FILMS: ["Sadak"]
+
+### ITEM ccacd7dec20bd122
+PAGE: Manjupeyyum Munpe
+SENTENCE: It is a remake of the Tamil film Parthiban Kanavu (2003) and was successful at the box office.
+OTHER FILMS: ["Parthiban Kanavu (2003 film)"]
+
+### ITEM c4b28973675cfebf
+PAGE: Kichha Huchha
+SENTENCE: It is a remake of the Tamil film Chithiram Pesuthadi.
+OTHER FILMS: ["Chithiram Pesuthadi"]
+
+### ITEM 008befb3f1ee0441
+PAGE: The Crowd Roars (1938 film)
+SENTENCE: This film was not a remake of the 1932 film of the same name starring James Cagney.
+OTHER FILMS: ["The Crowd Roars (1932 film)"]
+
+### ITEM ced94d58e8bf3a2a
+PAGE: Kan Simittum Neram
+SENTENCE: It was remade in Hindi as Sailaab (1990).
+OTHER FILMS: ["Sailaab (1990 film)"]
+
+### ITEM 588861098b411394
+PAGE: The Squaw Man (1918 film)
+SENTENCE: It would be remade again by DeMille in 1931.
+OTHER FILMS: ["The Squaw Man (1931 film)"]
+
+### ITEM 93b30e5e82b968cc
+PAGE: Khatta Meetha (2010 film)
+SENTENCE: A remake of Priyadarshan's 1988 film Vellanakalude Nadu, originally scripted by Sreenivasan, the film starred Akshay Kumar in his sixth collaboration with Priyadarshan after Hera Pheri (2000), Garam Masala (2005), Bhagam Bhag (2006), Bhool Bhulaiyaa (2007), and De Dana Dan (2009).
+OTHER FILMS: ["Hera Pheri (2000 film)", "Garam Masala (2005 film)", "Bhool Bhulaiyaa", "De Dana Dan"]
+
+### ITEM 998d225d4a476565
+PAGE: Thooral Ninnu Pochchu
+SENTENCE: The film was remade in Telugu as Pelli Choopulu (1983), in Hindi as Mohabbat (1985), and in Kannada as Gowri Kalyana (1991).
+OTHER FILMS: ["Mohabbat (1985 film)"]
+
+### ITEM dadc3ab54e44aa69
+PAGE: Sharaabi
+SENTENCE: The film, which was loosely inspired by the 1981 movie Arthur, was remade in Kannada in 1985 as Nee Thanda Kanike.
+OTHER FILMS: ["Arthur (1981 film)"]
+
+### ITEM fc596bb362a3be28
+PAGE: U Turn (2016 film)
+SENTENCE: The movie was remade in Sinhala in 2019 also titled U Turn—thereby becoming the second Kannada movie to be remade in Sinhala after Anuraga Aralithu.
+OTHER FILMS: ["Anuraga Aralithu"]
+
+### ITEM c47d604fbf319ae4
+PAGE: Sathya (1988 film)
+SENTENCE: A remake of the 1985 Hindi film Arjun, the film stars Kamal Haasan, Amala Akkineni, Rajesh, Janagaraj, Bahadoor and Kitty.
+OTHER FILMS: ["Arjun (1985 film)"]
+
+### ITEM d8ee62677d983532
+PAGE: Nee Ko Njaa Cha
+SENTENCE: It is an unofficial remake of the 2008 American film Forgetting Sarah Marshall.
+OTHER FILMS: ["Forgetting Sarah Marshall"]
+
+### ITEM f43c057162cd3dcb
+PAGE: Dum (2003 Hindi film)
+SENTENCE: Dum is a 2003 Indian Hindi-language action film directed by Eeshwar Nivas and produced by Aly and Karim Morani. It is a remake of the 2001 Tamil film Dhill (2001).
+OTHER FILMS: ["Dhill"]
+
+### ITEM 4625d18176e72e7f
+PAGE: They Made Me a Criminal
+SENTENCE: It is a remake of the film The Life of Jimmy Dolan (1933).
+OTHER FILMS: ["The Life of Jimmy Dolan"]
+
+### ITEM a9b3469046318795
+PAGE: Baaghi (2000 film)
+SENTENCE: It has been described as a remake of Robert De Niro's A Bronx Tale (1993).
+OTHER FILMS: ["A Bronx Tale"]
+
+### ITEM 2608d2bb03f25846
+PAGE: Villu (film)
+SENTENCE: It is a remake of the 1998 Hindi film Soldier.
+OTHER FILMS: ["Soldier (1998 Indian film)"]
+
+### ITEM 5b54a8379cfa838f
+PAGE: Udayananu Tharam
+SENTENCE: It was remade into Tamil cinema as Velli Thirai in 2008 and into Bollywood as Shortkut in 2009.
+OTHER FILMS: ["Velli Thirai", "Shortkut"]
+
+### ITEM 0f8c276d363dc72d
+PAGE: Autograph (2004 film)
+SENTENCE: It was remade in Telugu as Naa Autograph, Kannada as My Autograph, and in Bengali as Amar Aponjon and in Marathi with the same title (2023).
+OTHER FILMS: ["Naa Autograph", "My Autograph"]
+
+### ITEM 4caf4907fd2ee277
+PAGE: Darling (2015 Tamil film)
+SENTENCE: A remake of the 2013 Telugu film Prema Katha Chitram, the film was released in theaters on 15 January 2015.
+OTHER FILMS: ["Prema Katha Chitram"]
+
+### ITEM f6b8f973e538e583
+PAGE: Per Sollum Pillai
+SENTENCE: It was later remade in Telugu as Ramu (1987).
+OTHER FILMS: ["Ramu (1987 film)"]
+
+### ITEM 92906e3460a7b677
+PAGE: Hawa Badal
+SENTENCE: The movie is a remake of the 2011 American film The Change-Up.
+OTHER FILMS: ["The Change-Up"]
+
+### ITEM 504cbb5065e73b72
+PAGE: Pyaasa
+SENTENCE: It was remade into the Telugu film Mallepoovu in 1978.
+OTHER FILMS: ["Mallepoovu"]
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/remakes/statements/r2_019.out.json as a JSON list with one object per item: {"item": "<the code after ITEM>", "links": [{"film": "<title exactly as listed>", "relation": "...", "wording": "..."}]} with one entry in "links" for every film listed under OTHER FILMS. Write nothing else to that file.

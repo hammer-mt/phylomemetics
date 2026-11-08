@@ -1,0 +1,222 @@
+You are helping to build a research corpus of film remakes from Wikipedia. Each item below gives the title of a film's Wikipedia page (PAGE), ONE sentence from the opening of that page, and the OTHER FILMS that sentence links to. For each other film, record what THE SENTENCE SAYS about PAGE and that film. You are not asked what you know about the films.
+
+For each other film give:
+- "relation":
+    "page_remakes_other"   the sentence says PAGE is a remake of the other film;
+    "other_remakes_page"   the sentence says the other film is a remake of PAGE (for example "it was remade in Telugu as ...");
+    "none"                 anything else.
+- "wording":
+    "firm"    the sentence states the remake plainly as a fact: "is a remake of", "an official remake of", "was remade as", "was remade in Hindi as";
+    "loose"   the sentence weakens or hedges it: "loosely", "partly", "unofficial", "uncredited", "inspired by", "based on the idea of", "reported to be", "said to be", "has been described as", "considered", "similar to", "reboot", "reimagining", "re-adaptation";
+    "" when the relation is "none".
+
+Rules.
+- Use only what the sentence says. Do not use your own knowledge of the films, and do not guess from titles or years.
+- If the sentence lists several films as remakes of PAGE, each of them is "other_remakes_page".
+- If the sentence says PAGE is a remake of X, and that X is itself a remake of or based on Y, then X is "page_remakes_other" and Y is "none", unless the sentence also says PAGE is a remake of Y.
+- "none" covers: a sequel, prequel or spin-off; a film that is only compared or mentioned; another remake of the same original (a sibling); a film based on the same novel, play or true story that the sentence does not call a remake; a film whose remake status the sentence denies; a dubbed version; a film shot at the same time in another language ("simultaneously", "bilingual").
+- If you cannot tell which film the word "remake" or "remade" applies to, answer "none".
+
+The items follow.
+
+### ITEM b9abaf66e39cf4fb
+PAGE: The Witness (2015 Chinese film)
+SENTENCE: The film is a remake of the 2011 South Korean film Blind, also by the same director.
+OTHER FILMS: ["Blind (2011 film)"]
+
+### ITEM 6362aa2454ea1583
+PAGE: Kyo Kii Main Jhuth Nahin Bolta
+SENTENCE: It is unofficial remake of the American film Liar Liar (1997) starring Jim Carrey.
+OTHER FILMS: ["Liar Liar"]
+
+### ITEM 74ae2ed7f7088351
+PAGE: Illarikam
+SENTENCE: It was again remade in Hindi as Ghar Jamai (1992).
+OTHER FILMS: ["Ghar Jamai (1992 film)"]
+
+### ITEM 04bd1523856a637d
+PAGE: Idhu Namma Aalu (1988 film)
+SENTENCE: The film was released on 1 August 1988. It was remade in Telugu as Adirindi Alludu (1996), and twice in Kannada as Aliya Alla Magala Ganda (1997) and Ravi Shastri (2006).
+OTHER FILMS: ["Ravi Shastri (film)"]
+
+### ITEM 37917d2e90e4a733
+PAGE: Ajith (film)
+SENTENCE: It is a remake of the Tamil film Paiyaa.
+OTHER FILMS: ["Paiyaa"]
+
+### ITEM f66234df1cf5593d
+PAGE: Unnai Ninaithu
+SENTENCE: It was remade into Telugu by the same director as Cheppave Chirugali (2004) Kannada as Krishna (2007).
+OTHER FILMS: ["Cheppave Chirugali"]
+
+### ITEM 9942c517b3de8ad2
+PAGE: Maanikya
+SENTENCE: It is a remake of 2013 Telugu film Mirchi.
+OTHER FILMS: ["Mirchi (film)"]
+
+### ITEM 5e2219a33730f612
+PAGE: Indian (2001 film)
+SENTENCE: A remake of the director's own Tamil film Vallarasu, the film stars Sunny Deol, Shilpa Shetty and Danny Denzongpa in pivotal roles, along with Raj Babbar, Mukesh Rishi and Rahul Dev.
+OTHER FILMS: ["Vallarasu"]
+
+### ITEM 1122672db492ef26
+PAGE: Purusha Lakshanam
+SENTENCE: The film was remade as Bhale Pellam in Telugu and in Mangalya Bandhana in Kannada.
+OTHER FILMS: ["Bhale Pellam"]
+
+### ITEM fa19f3d86d1145c1
+PAGE: Dhool
+SENTENCE: It was remade in Telugu as Veede (2003) with Sayaji, Sen and Pasupathy reprising their roles, in Punjabi as The Lion of Punjab (2011) and in Sinhala as Ranja (2014).
+OTHER FILMS: ["Veede"]
+
+### ITEM 93d8b3df23f595e4
+PAGE: Maalik (1972 film)
+SENTENCE: It is a loose remake of Tamil film Thunaivan.
+OTHER FILMS: ["Thunaivan"]
+
+### ITEM 74b512e456924c93
+PAGE: Nishpap Munna
+SENTENCE: The movie is a remake of 2006 Telugu film Chinnodu.
+OTHER FILMS: ["Chinnodu"]
+
+### ITEM 9f185a1d5d3ce3d5
+PAGE: Manmadhan (film)
+SENTENCE: The film was remade in Kannada as Madana (2006).
+OTHER FILMS: ["Madana (film)"]
+
+### ITEM 7023267de4d71769
+PAGE: We Faw Down
+SENTENCE: It was remade in part with their film Sons of the Desert in 1933.
+OTHER FILMS: ["Sons of the Desert"]
+
+### ITEM 3fcd93cb9c191b3d
+PAGE: Adutha Varisu
+SENTENCE: It is a remake of the 1972 Hindi film Raja Jani, which itself is a remake of the 1965 Bengali film Rajkanya.
+OTHER FILMS: ["Raja Jani"]
+
+### ITEM 2f1bb92e17f2ea09
+PAGE: Amar Deep (1958 film)
+SENTENCE: It is a remake of Rao's 1956 Tamil film Amara Deepam, based on the 1942 American film Random Harvest which had earlier been adapted in Bengali as Harano Sur (1957).
+OTHER FILMS: ["Amara Deepam (1956 film)", "Random Harvest (film)"]
+
+### ITEM 89e5d485be804912
+PAGE: Pyaar Ka Saaya
+SENTENCE: It is an uncredited remake of the 1990 American movie, Ghost.
+OTHER FILMS: ["Ghost (1990 film)"]
+
+### ITEM 6346dff1599466fb
+PAGE: Pooveli
+SENTENCE: An unofficial remake (with an Indian twist) of A Walk in the Clouds (1995), the film stars Karthik, Abbas, Kausalya and Heera Rajagopal.
+OTHER FILMS: ["A Walk in the Clouds"]
+
+### ITEM e32fe8f9077f0cf2
+PAGE: U Turn (2016 film)
+SENTENCE: With that, it became the third Indian movie to be remade in seven languages after Nuvvostanante Nenoddantana and Anuraga Aralithu.
+OTHER FILMS: ["Nuvvostanante Nenoddantana", "Anuraga Aralithu"]
+
+### ITEM 0df3e05d08d5cc04
+PAGE: Saade Maade Teen
+SENTENCE: The film is remake of Hindi film Chalti Ka Naam Gaadi.
+OTHER FILMS: ["Chalti Ka Naam Gaadi"]
+
+### ITEM 90432535eb7b1050
+PAGE: Parichay (film)
+SENTENCE: A remake of the 1971 Uttam Kumar film Jay Jayanti, the film was reported to be based on the Bengali novel Rangeen Uttarain by Raj Kumar Maitra, and partially inspired by the 1965 movie The Sound of Music.
+OTHER FILMS: ["The Sound of Music (film)"]
+
+### ITEM 9119381914a9e2a3
+PAGE: Blind Alley (film)
+SENTENCE: Columbia Pictures remade the film as The Dark Past in 1948, with William Holden and [[Lee J.
+OTHER FILMS: ["The Dark Past"]
+
+### ITEM f769fac7c139af0a
+PAGE: Ivan Maryadaraman
+SENTENCE: It is a remake of the 2010 Telugu film Maryada Ramanna, which itself is inspired from Buster Keaton's 1923 silent film, Our Hospitality.
+OTHER FILMS: ["Maryada Ramanna", "Our Hospitality"]
+
+### ITEM ecff596ccbbce12a
+PAGE: Chinna Gounder
+SENTENCE: The film was remade in Telugu as Chinarayudu, and in Kannada as Chikkejamanru.
+OTHER FILMS: ["Chinarayudu"]
+
+### ITEM 510516aa62f61b23
+PAGE: Shankar Guru (1978 film)
+SENTENCE: The film was remade in Telugu as Kumara Raja, in Tamil as Thirisoolam and in Hindi as Mahaan.
+OTHER FILMS: ["Thirisoolam"]
+
+### ITEM ac1831ef2b82d341
+PAGE: Three Sons
+SENTENCE: Produced and distributed by RKO Radio Pictures, and released on October 13, 1939, it is a remake of an earlier RKO film, Sweepings (1933).
+OTHER FILMS: ["Sweepings"]
+
+### ITEM 892a6cc97fe465c8
+PAGE: My Wife's Murder
+SENTENCE: The film is a remake of 2004 Telugu film, Madhyanam Hathya, directed by Ram Gopal Varma.
+OTHER FILMS: ["Madhyanam Hathya"]
+
+### ITEM 0c227cc6eba379fd
+PAGE: Naan Avanillai (2007 film)
+SENTENCE: It is a remake of the 1974 Tamil film, itself based on the 1962 the Marathi play To Mee Navhech.
+OTHER FILMS: ["Naan Avanillai (1974 film)"]
+
+### ITEM ba4700809eb96cce
+PAGE: Gold Diggers in Paris
+SENTENCE: This is the sixth and final installment in Warner Bros.' series of "Gold Digger" films, following The Gold Diggers (1923), a lost silent film; Gold Diggers of Broadway (1929), a remake which is partially lost; Gold Diggers of 1933, a remake of the earlier films and the first to feature Busby Berkeley's extravagant production numbers; Gold Diggers of 1935; and Gold Diggers of 1937.
+OTHER FILMS: ["Gold Diggers of 1933", "Gold Diggers of 1935", "Gold Diggers of 1937"]
+
+### ITEM 6c55fe7a99102e37
+PAGE: CID Moosa
+SENTENCE: C.I.D Moosa was remade in Tamil as Cheena Thaana 001, in Kannada as CID Eesha and in Telugu as Ramachari.
+OTHER FILMS: ["Cheena Thaana 001"]
+
+### ITEM b554aef1e0741ff7
+PAGE: Ilavelpu
+SENTENCE: The film is a remake of the Tamil film Edhir Paradhathu (1954).
+OTHER FILMS: ["Edhir Paradhathu"]
+
+### ITEM ca348767c7616383
+PAGE: De Taali
+SENTENCE: It stars Riteish Deshmukh, Aftab Shivdasani, Ayesha Takia, and Rimi Sen, and is a remake of the 2001 film Saving Silverman.
+OTHER FILMS: ["Saving Silverman"]
+
+### ITEM 0a8ae07c01ad0f7f
+PAGE: Cheran Pandiyan
+SENTENCE: The film was remade in Telugu as Balarama Krishnulu (1992), and in Hindi in as Sautela (1999).
+OTHER FILMS: ["Balarama Krishnulu", "Sautela"]
+
+### ITEM 952cea4445b520ee
+PAGE: Dharmathin Thalaivan
+SENTENCE: It is a remake of the 1978 Hindi film Kasme Vaade.
+OTHER FILMS: ["Kasme Vaade"]
+
+### ITEM 56c94401349c93fb
+PAGE: Oh My God (2012 film)
+SENTENCE: It was remade in Telugu as Gopala Gopala (2015) with Venkatesh, Pawan Kalyan, and Shriya Saran.
+OTHER FILMS: ["Gopala Gopala (2015 film)"]
+
+### ITEM 82dbf87fe4ab1e92
+PAGE: Varuthapadatha Valibar Sangam
+SENTENCE: It was remade in Kannada as Adyaksha and in Telugu as Current Theega, both released in 2014.
+OTHER FILMS: ["Adyaksha", "Current Theega"]
+
+### ITEM 2e7895c7aa0974b9
+PAGE: Dhuaan
+SENTENCE: It is a remake of the 1963 Bengali film Sesh Anka, which itself is an adaptation of English-language film Chase a Crooked Shadow (1958) and remade in Telugu as Mayadari Maridi (1985).
+OTHER FILMS: ["Chase a Crooked Shadow"]
+
+### ITEM 20afe6c6417b2aee
+PAGE: Thuppakki
+SENTENCE: In 2014, the film was remade in Bengali as Game and in Hindi as Holiday: A Soldier Is Never Off Duty by the same director.
+OTHER FILMS: ["Game (2014 film)"]
+
+### ITEM 2439e57412457103
+PAGE: Kyun...! Ho Gaya Na
+SENTENCE: It is a remake of Bengali film Nater Guru (2003), which itself is based on Samaresh Basu's eponymous story.
+OTHER FILMS: ["Nater Guru"]
+
+### ITEM 7374b1eac6df60a8
+PAGE: How Old Are You? (film)
+SENTENCE: The movie was remade in Tamil as 36 Vayadhinile with Jyothika.
+OTHER FILMS: ["36 Vayadhinile"]
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/remakes/statements/r1_010.out.json as a JSON list with one object per item: {"item": "<the code after ITEM>", "links": [{"film": "<title exactly as listed>", "relation": "...", "wording": "..."}]} with one entry in "links" for every film listed under OTHER FILMS. Write nothing else to that file.

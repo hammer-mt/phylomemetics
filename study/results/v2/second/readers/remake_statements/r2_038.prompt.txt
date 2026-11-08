@@ -1,0 +1,222 @@
+You are helping to build a research corpus of film remakes from Wikipedia. Each item below gives the title of a film's Wikipedia page (PAGE), ONE sentence from the opening of that page, and the OTHER FILMS that sentence links to. For each other film, record what THE SENTENCE SAYS about PAGE and that film. You are not asked what you know about the films.
+
+For each other film give:
+- "relation":
+    "page_remakes_other"   the sentence says PAGE is a remake of the other film;
+    "other_remakes_page"   the sentence says the other film is a remake of PAGE (for example "it was remade in Telugu as ...");
+    "none"                 anything else.
+- "wording":
+    "firm"    the sentence states the remake plainly as a fact: "is a remake of", "an official remake of", "was remade as", "was remade in Hindi as";
+    "loose"   the sentence weakens or hedges it: "loosely", "partly", "unofficial", "uncredited", "inspired by", "based on the idea of", "reported to be", "said to be", "has been described as", "considered", "similar to", "reboot", "reimagining", "re-adaptation";
+    "" when the relation is "none".
+
+Rules.
+- Use only what the sentence says. Do not use your own knowledge of the films, and do not guess from titles or years.
+- If the sentence lists several films as remakes of PAGE, each of them is "other_remakes_page".
+- If the sentence says PAGE is a remake of X, and that X is itself a remake of or based on Y, then X is "page_remakes_other" and Y is "none", unless the sentence also says PAGE is a remake of Y.
+- "none" covers: a sequel, prequel or spin-off; a film that is only compared or mentioned; another remake of the same original (a sibling); a film based on the same novel, play or true story that the sentence does not call a remake; a film whose remake status the sentence denies; a dubbed version; a film shot at the same time in another language ("simultaneously", "bilingual").
+- If you cannot tell which film the word "remake" or "remade" applies to, answer "none".
+
+The items follow.
+
+### ITEM 21777a08ab0cae20
+PAGE: House on Haunted Hill (1999 film)
+SENTENCE: Produced by Robert Zemeckis and Joel Silver, it is a remake of the 1958 film directed by William Castle.
+OTHER FILMS: ["House on Haunted Hill"]
+
+### ITEM b77588e84eefaacc
+PAGE: Freddy vs. Jason
+SENTENCE: The film marks Englund's final portrayal as Krueger and was the last released film in each franchise's continuity before their respective remake and reboot.
+OTHER FILMS: ["A Nightmare on Elm Street (2010 film)", "Friday the 13th (2009 film)"]
+
+### ITEM 9afe5825a6bd990b
+PAGE: The Amityville Horror (1979 film)
+SENTENCE: It is the first entry in the long-running Amityville Horror film series, and was remade in 2005.
+OTHER FILMS: ["The Amityville Horror (2005 film)"]
+
+### ITEM a9eedf5021ffd565
+PAGE: The Lake House (film)
+SENTENCE: A remake of the 2000 South Korean film Il Mare, it stars Keanu Reeves and Sandra Bullock, who last appeared together in the 1994 action thriller film Speed.
+OTHER FILMS: ["Speed (1994 film)"]
+
+### ITEM ac52aef087802b0a
+PAGE: Halloween (2007 film)
+SENTENCE: It is a remake of John Carpenter's 1978 film, and the ninth installment in the Halloween franchise.
+OTHER FILMS: ["Halloween (1978 film)"]
+
+### ITEM 5c0a261f66548755
+PAGE: What Women Want
+SENTENCE: A loose remake, What Men Want, was released in 2019, starring [[Taraji P.
+OTHER FILMS: ["What Men Want"]
+
+### ITEM ff0ddac47fdaecf5
+PAGE: Fright Night
+SENTENCE: Fright Night was followed by a sequel, Fright Night Part 2, in 1988 and a remake of the same name in 2011.
+OTHER FILMS: ["Fright Night (2011 film)"]
+
+### ITEM 839c4add7534594c
+PAGE: Scarface (1983 film)
+SENTENCE: It is loosely based on the 1930 novel by Armitage Trail and is a remake of the 1932 film of the same name directed by Howard Hawks.
+OTHER FILMS: ["Scarface (1932 film)"]
+
+### ITEM 7693b92d804ee92d
+PAGE: Clash of the Titans (1981 film)
+SENTENCE: A 3D remake of the same name was released by Warner Bros. on April 2, 2010.
+OTHER FILMS: ["Clash of the Titans (2010 film)"]
+
+### ITEM b624cd9030e07db3
+PAGE: The Parent Trap (1998 film)
+SENTENCE: The Parent Trap is a remake of the 1961 film of the same name and an adaptation of Erich Kästner's 1949 German children's novel, Lisa and Lottie (Das doppelte Lottchen).
+OTHER FILMS: ["The Parent Trap (1961 film)"]
+
+### ITEM 163e28ae6723a26e
+PAGE: Dirty Rotten Scoundrels (film)
+SENTENCE: It is a remake of the 1964 film Bedtime Story, whose co-writers Stanley Shapiro and Paul Henning received screen credit for Dirty Rotten Scoundrels, along with writer Dale Launer.
+OTHER FILMS: ["Bedtime Story (1964 film)"]
+
+### ITEM a54a03db1d86474a
+PAGE: Arthur (1981 film)
+SENTENCE: The film's success led to a sequel in 1988 and a remake in 2011, neither of which replicated the success of the original film.
+OTHER FILMS: ["Arthur 2: On the Rocks", "Arthur (2011 film)"]
+
+### ITEM f4933dfa01cf70ea
+PAGE: Annie (1999 film)
+SENTENCE: It is the first remake and the second film adaptation of the musical following the 1982 theatrical film starring Aileen Quinn, Carol Burnett, and Albert Finney.
+OTHER FILMS: ["Annie (1982 film)"]
+
+### ITEM 7ea56cfa9756b313
+PAGE: Ghostbusters
+SENTENCE: After a 2016 reboot received mixed reviews and underperformed financially, a second sequel to the 1984 film, Ghostbusters: Afterlife (2021), was released, followed by Ghostbusters: Frozen Empire (2024).
+OTHER FILMS: ["Ghostbusters (2016 film)"]
+
+### ITEM 2541f00d1d32410a
+PAGE: The Heartbreak Kid (1972 film)
+SENTENCE: A remake was made in 2007.
+OTHER FILMS: ["The Heartbreak Kid (2007 film)"]
+
+### ITEM 46907b70d83fd0e7
+PAGE: The Ring (2002 film)
+SENTENCE: The film is the first installment in the American Ring series and a remake of the 1998 Japanese film, itself based on the 1991 novel by Koji Suzuki.
+OTHER FILMS: ["Ring (film)"]
+
+### ITEM 764a0cb9797d6cf5
+PAGE: Fame (1980 film)
+SENTENCE: Its success spawned a media franchise encompassing multiple television series, a stage musical, and a remake released in 2009.
+OTHER FILMS: ["Fame (2009 film)"]
+
+### ITEM 256ef1449212bcfc
+PAGE: The Bachelor (1999 film)
+SENTENCE: It is a remake of the 1925 Buster Keaton silent comedy film Seven Chances and stars Chris O'Donnell and Renée Zellweger.
+OTHER FILMS: ["Seven Chances"]
+
+### ITEM 6ab9dedd52c5b183
+PAGE: Sleepless in Seattle
+SENTENCE: Inspired by director Leo McCarey's An Affair to Remember (1957), which was a remake using the same script of McCarey's Love Affair (1939), Sleepless in Seattle was conceived as a romantic drama by Jeff Arch in 1989.
+OTHER FILMS: ["An Affair to Remember", "Love Affair (1939 film)"]
+
+### ITEM 5fb74f44456686a8
+PAGE: A Perfect Murder
+SENTENCE: It is a remake of the 1954 film Dial M for Murder.
+OTHER FILMS: ["Dial M for Murder"]
+
+### ITEM b2c124c17c23e73a
+PAGE: Freddy vs. Jason
+SENTENCE: Despite negative reviews from critics, the film grossed $117 million worldwide, making it the highest-grossing film in the Friday the 13th franchise, and the second highest-grossing film in the A Nightmare on Elm Street franchise, only behind the 2010 remake.
+OTHER FILMS: ["A Nightmare on Elm Street (2010 film)"]
+
+### ITEM 6ee32f59c546bb24
+PAGE: The Bad News Bears
+SENTENCE: It was followed by two sequels, The Bad News Bears in Breaking Training in 1977 and The Bad News Bears Go to Japan in 1978, a short-lived 1979–80 CBS television series, and a 2005 remake.
+OTHER FILMS: ["The Bad News Bears Go to Japan", "Bad News Bears"]
+
+### ITEM 37a9ffb33ea8088c
+PAGE: The Invasion (film)
+SENTENCE: The Invasion is the fourth film adaptation of the 1955 novel The Body Snatchers by Jack Finney following Don Siegel's 1956 film Invasion of the Body Snatchers, Philip Kaufman's 1978 remake of the same name, and Abel Ferrara's 1993 film Body Snatchers.
+OTHER FILMS: ["Invasion of the Body Snatchers", "Invasion of the Body Snatchers (1978 film)", "Body Snatchers (1993 film)"]
+
+### ITEM 341d72e40552eebe
+PAGE: Rollerball (1975 film)
+SENTENCE: A remake was released in 2002.
+OTHER FILMS: ["Rollerball (2002 film)"]
+
+### ITEM 8882614095d321ff
+PAGE: Homeward Bound: The Incredible Journey
+SENTENCE: Robert Hays Kim Greist Veronica Lauren Kevin Chevalia Benj Thall}} Homeward Bound: The Incredible Journey is a 1993 American adventure comedy film and a remake of the 1963 film The Incredible Journey, which was based on the 1961 novel of the same name by Sheila Burnford.
+OTHER FILMS: ["The Incredible Journey (film)"]
+
+### ITEM b7eca2b410e58455
+PAGE: Ganja & Hess
+SENTENCE: It was remade by Spike Lee in 2014 as Da Sweet Blood of Jesus.
+OTHER FILMS: ["Da Sweet Blood of Jesus"]
+
+### ITEM 65be8c6719381af9
+PAGE: A Fine Mess (film)
+SENTENCE: The film was intended as a remake of Laurel & Hardy's classic short The Music Box and was to be semi-improvised in the same style as the director's earlier comedy The Party, but studio interference, poor previews and subsequent re-editing resulted in the film becoming a fully scripted chase comedy with very few of the original ideas for the film remaining intact. Writer/director Blake Edwards actually gave television interviews telling audiences to avoid the film. It received overwhelmingly negative reviews and performed poorly at the box office.
+OTHER FILMS: ["The Party (1968 film)"]
+
+### ITEM 8a1a4f177e1bed57
+PAGE: Alice in Wonderland (2010 film)
+SENTENCE: Alice in Wonderland began development in December 2007, when Burton was asked to direct two 3D films for Disney, including the remake of Frankenweenie.
+OTHER FILMS: ["Frankenweenie (2012 film)"]
+
+### ITEM 413cceda718470c8
+PAGE: Bride Wars
+SENTENCE: A Chinese remake of the same name was released in 2015.
+OTHER FILMS: ["Bride Wars (2015 film)"]
+
+### ITEM ba478864f2544284
+PAGE: My Bloody Valentine 3D
+SENTENCE: A remake of the 1981 Canadian film, it stars Jensen Ackles, Jaime King, Kerr Smith and Kevin Tighe.
+OTHER FILMS: ["My Bloody Valentine (film)"]
+
+### ITEM b9cc6e9b06c634ef
+PAGE: The Fog
+SENTENCE: A remake was released in 2005.
+OTHER FILMS: ["The Fog (2005 film)"]
+
+### ITEM cc2cdc6513d0777a
+PAGE: Flash Gordon (film)
+SENTENCE: After a directorial offer from George Lucas was declined (resulting in the creation of Star Wars) and a version that was to be directed by Federico Fellini did not enter production, De Laurentiis hired director Nicolas Roeg and Enter the Dragon writer Michael Allin to lead development on the film in 1977, but replaced them with Hodges and Lorenzo Semple Jr., who had scripted De Laurentiis' remake of King Kong, due to his dissatisfaction with Roeg's vision for the film.
+OTHER FILMS: ["Enter the Dragon", "King Kong (1976 film)"]
+
+### ITEM 45f79964ecb5459a
+PAGE: Zig Zag (1970 film)
+SENTENCE: The film was remade in India as Majboor (1974).
+OTHER FILMS: ["Majboor (1974 film)"]
+
+### ITEM df211203b7963243
+PAGE: Sorority Row
+SENTENCE: It is a remake of the 1982 film The House on Sorority Row, and stars Briana Evigan, Leah Pipes, Rumer Willis, Jamie Chung, Margo Harshman, Audrina Patridge in her feature film debut, and Carrie Fisher.
+OTHER FILMS: ["The House on Sorority Row"]
+
+### ITEM f9da4f902fa0fbd9
+PAGE: 50 First Dates
+SENTENCE: It was later remade in India as Satyabhama (2007, in Telugu) and as Ormayundo Ee Mukham (2014, in Malayalam), in Japan as 50 First Kisses (2018), in Iran as Chap dast (2005), in Mexico as Como si fuera la primera vez (2019) and in Thailand as Henry's First Dates (2026).
+OTHER FILMS: ["Ormayundo Ee Mukham"]
+
+### ITEM 2b8c61886d018d44
+PAGE: Bad News Bears
+SENTENCE: It is a remake of the 1976 sports film The Bad News Bears.
+OTHER FILMS: ["The Bad News Bears"]
+
+### ITEM d3191b7a2403e5d3
+PAGE: The Taking of Pelham One Two Three (1974 film)
+SENTENCE: It was remade in 1998 as a television film and in 2009 as a theatrical film.
+OTHER FILMS: ["The Taking of Pelham 123 (2009 film)"]
+
+### ITEM 2261a1cd1db802d4
+PAGE: Flight of the Phoenix (2004 film)
+SENTENCE: The film is a remake of the 1965 film The Flight of the Phoenix, both based on the 1964 novel by Elleston Trevor, about a group of people who survive an aircraft crash in a desert and must build a new aircraft out of the old one to escape.
+OTHER FILMS: ["The Flight of the Phoenix (1965 film)"]
+
+### ITEM cfcf72097c008257
+PAGE: The Departed
+SENTENCE: A remake of the 2002 Hong Kong film Infernal Affairs, it is also loosely based on real-life people, including the Winter Hill Gang, corrupt FBI agent John Connolly and Irish-American crime boss Whitey Bulger.
+OTHER FILMS: ["Infernal Affairs"]
+
+### ITEM e0a2041330d4c5b3
+PAGE: Hurricane (1979 film)
+SENTENCE: It is a loose remake of John Ford's 1937 film The Hurricane, itself based on the 1936 novel by James Norman Hall and Charles Nordhoff.
+OTHER FILMS: ["The Hurricane (1937 film)"]
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/remakes/statements/r2_038.out.json as a JSON list with one object per item: {"item": "<the code after ITEM>", "links": [{"film": "<title exactly as listed>", "relation": "...", "wording": "..."}]} with one entry in "links" for every film listed under OTHER FILMS. Write nothing else to that file.

@@ -329,6 +329,7 @@ def spec():
     rows = [json.loads(l) for l in open("data/second/holmes/corpus.jsonl")]
     W = json.load(open("data/second/holmes/works.json"))["works"]
     story = {r["title"]: r["id"] for r in rows if r["group"] == "story"}
+    batman = {json.loads(l)["title"]: json.loads(l)["sentences"] for l in open("data/corpus.jsonl")}
     ids = lambda g: [r["id"] for r in rows if r["group"] == g]
     by = lambda tiers: {int(i): sorted({story[x["story"]] for x in w["sources"] if x["tier"] in tiers}) for i, w in W.items()
                         if any(x["tier"] in tiers for x in w["sources"])}
@@ -357,6 +358,9 @@ def spec():
         "strata": {str(r["id"]): r["medium"] for r in rows if r["group"] == "story"},
         "n_screen_works_naming_the_story": {str(c): n for c, n in n_adapt.items()},
         "icon_regex": ICON, "hero_names": HERO_NAMES,
+        # PLAN Section 4: texts that are, sentence for sentence, texts of the Batman study (which every model read as study works in v2)
+        "texts_shared_with_the_batman_study": [r["id"] for r in rows if batman.get(r["title"]) == r["sentences"]],
+        "franchise_films_only": [r["id"] for r in rows if r["group"] == "screen" and r["medium"] == "film"],
         # PLAN Section 8: the word-only measures that passed the decision test in the units' place before the freeze, now regressed out too
         "decision_regressors_added": ["word_presence_of_words_in_14_to_70_works", "tfidf_background_weights"],
         "in_reference_corpus": overlap,

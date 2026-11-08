@@ -1,0 +1,222 @@
+You are helping to build a research corpus of film remakes from Wikipedia. Each item below gives the title of a film's Wikipedia page (PAGE), ONE sentence from the opening of that page, and the OTHER FILMS that sentence links to. For each other film, record what THE SENTENCE SAYS about PAGE and that film. You are not asked what you know about the films.
+
+For each other film give:
+- "relation":
+    "page_remakes_other"   the sentence says PAGE is a remake of the other film;
+    "other_remakes_page"   the sentence says the other film is a remake of PAGE (for example "it was remade in Telugu as ...");
+    "none"                 anything else.
+- "wording":
+    "firm"    the sentence states the remake plainly as a fact: "is a remake of", "an official remake of", "was remade as", "was remade in Hindi as";
+    "loose"   the sentence weakens or hedges it: "loosely", "partly", "unofficial", "uncredited", "inspired by", "based on the idea of", "reported to be", "said to be", "has been described as", "considered", "similar to", "reboot", "reimagining", "re-adaptation";
+    "" when the relation is "none".
+
+Rules.
+- Use only what the sentence says. Do not use your own knowledge of the films, and do not guess from titles or years.
+- If the sentence lists several films as remakes of PAGE, each of them is "other_remakes_page".
+- If the sentence says PAGE is a remake of X, and that X is itself a remake of or based on Y, then X is "page_remakes_other" and Y is "none", unless the sentence also says PAGE is a remake of Y.
+- "none" covers: a sequel, prequel or spin-off; a film that is only compared or mentioned; another remake of the same original (a sibling); a film based on the same novel, play or true story that the sentence does not call a remake; a film whose remake status the sentence denies; a dubbed version; a film shot at the same time in another language ("simultaneously", "bilingual").
+- If you cannot tell which film the word "remake" or "remade" applies to, answer "none".
+
+The items follow.
+
+### ITEM b051926726480bef
+PAGE: Sahara (1943 American film)
+SENTENCE: Sahara was remade by André de Toth as a Western called Last of the Comanches (1953), and four decades later by Brian Trenchard-Smith as the American-Australian television film Sahara (1995).
+OTHER FILMS: ["Last of the Comanches"]
+
+### ITEM d8ce051331e04bf2
+PAGE: Streets of Laredo (film)
+SENTENCE: The film is a Technicolor remake of King Vidor's black-and-white film The Texas Rangers (1936), which starred Fred MacMurray in Holden's role, Jack Oakie in William Bendix's, Lloyd Nolan in MacDonald Carey's role, and Jean Parker as the girl they rescue.
+OTHER FILMS: ["The Texas Rangers (1936 film)"]
+
+### ITEM e3bc2309ecddfcff
+PAGE: Lady Gangster
+SENTENCE: Lady Gangster is a remake of the pre-Code film, Ladies They Talk About (1933).
+OTHER FILMS: ["Ladies They Talk About"]
+
+### ITEM 4163e81769a317c9
+PAGE: The Perils of Pauline (1947 film)
+SENTENCE: Although named after the 1914 film serial of the same name, it is not a remake of it.
+OTHER FILMS: ["The Perils of Pauline (1914 serial)"]
+
+### ITEM fee1b8b412ad708b
+PAGE: The Ten Commandments (1956 film)
+SENTENCE: First announced in 1952, The Ten Commandments is a remake of the prologue of DeMille's 1923 silent film of the same title.
+OTHER FILMS: ["The Ten Commandments (1923 film)"]
+
+### ITEM 81d4729b585f7147
+PAGE: Kid Galahad
+SENTENCE: The film is a remake of the 1937 version (in which United Artists Television through Associated Artists Productions distributed for TV airings at that time) starring [[Edward G.
+OTHER FILMS: ["Kid Galahad (1937 film)"]
+
+### ITEM dd0c08f33494616c
+PAGE: The Reckless Moment
+SENTENCE: The 2001 film The Deep End is a remake based on the same source material.
+OTHER FILMS: ["The Deep End (film)"]
+
+### ITEM 34b84859cc886b45
+PAGE: The Shakiest Gun in the West
+SENTENCE: The film is a remake of The Paleface, a 1948 film starring Bob Hope and Jane Russell.
+OTHER FILMS: ["The Paleface (1948 film)"]
+
+### ITEM 01cb92da52c356e1
+PAGE: The Great Impersonation (1942 film)
+SENTENCE: It was made by Universal Pictures and was a remake of their 1935 film of the same name.
+OTHER FILMS: ["The Great Impersonation (1935 film)"]
+
+### ITEM df50a4e12685f7bf
+PAGE: The Virginian (1946 film)
+SENTENCE: The film is a remake of the 1929 movie with Gary Cooper and Walter Huston.
+OTHER FILMS: ["The Virginian (1929 film)"]
+
+### ITEM 51415dff878eed57
+PAGE: Free and Easy (1941 film)
+SENTENCE: Produced by Metro-Goldwyn-Mayer, the film is a remake of But the Flesh Is Weak (1932) in which Robert Montgomery and [[C.
+OTHER FILMS: ["But the Flesh Is Weak"]
+
+### ITEM 5a0fa6e180451bea
+PAGE: Cairo (1963 film)
+SENTENCE: It is a remake of the 1950 film noir The Asphalt Jungle, relocated from the American Midwest to the titular Egyptian city.
+OTHER FILMS: ["The Asphalt Jungle"]
+
+### ITEM 3898fb51f85317de
+PAGE: Kind Lady (1951 film)
+SENTENCE: The film is remake of the 1935 film of the same name that stars Aline MacMahon in the title role.
+OTHER FILMS: ["Kind Lady (1935 film)"]
+
+### ITEM 2a6919f3e2b1ca0c
+PAGE: Here Comes Mr. Jordan
+SENTENCE: Warren Beatty later remade the film in 1978 as Heaven Can Wait.
+OTHER FILMS: ["Heaven Can Wait (1978 film)"]
+
+### ITEM c853115c6a423473
+PAGE: To Have and Have Not (film)
+SENTENCE: Critic reviews were mixed, with many claiming the film was a remake of Casablanca (1942).
+OTHER FILMS: ["Casablanca (film)"]
+
+### ITEM 0f73f373148d11b5
+PAGE: Tarzan, the Ape Man (1959 film)
+SENTENCE: The film is loosely based on Edgar Rice Burroughs' novel Tarzan of the Apes, and is a remake of the classic 1932 film of the same name.
+OTHER FILMS: ["Tarzan the Ape Man (1932 film)"]
+
+### ITEM aff2c92a52e4725b
+PAGE: Two Girls on Broadway
+SENTENCE: The film is a remake of The Broadway Melody (1929).
+OTHER FILMS: ["The Broadway Melody"]
+
+### ITEM d946211435061229
+PAGE: The Dark Past
+SENTENCE: Directed by Rudolph Maté, the Columbia Pictures release is a remake of Blind Alley (1939), also released by Columbia, and based on a play by American dramatist James Warwick.
+OTHER FILMS: ["Blind Alley (film)"]
+
+### ITEM 3602179288efddfb
+PAGE: The Toy Tiger
+SENTENCE: It is a remake of Mad About Music (1938).
+OTHER FILMS: ["Mad About Music"]
+
+### ITEM 1ba1e1309bd128f2
+PAGE: Anna and the King of Siam (film)
+SENTENCE: American film director Andy Tennant remade the film in 1999 as Anna and the King with Jodie Foster and Chow Yun-fat.
+OTHER FILMS: ["Anna and the King"]
+
+### ITEM 0e6aa7ef0bd43ae5
+PAGE: Two Thousand Maniacs!
+SENTENCE: The theme of social class differences between the regions has been cited as a prominent feature of the film. It also contains elements of supernatural horror, and its structure has been acknowledged as an influence on the contemporary slasher film. The film was preceded by Lewis's Blood Feast (1963) and followed by Color Me Blood Red (1965), as part of what Lewis and film scholars have described as the director's "Splatter Trilogy." A remake titled 2001 Maniacs was released in 2005.
+OTHER FILMS: ["Blood Feast"]
+
+### ITEM 7ca4c37410619d93
+PAGE: The Last Mile (1959 film)
+SENTENCE: The film is a remake of a 1932 film of the same name starring Preston Foster.
+OTHER FILMS: ["The Last Mile (1932 film)"]
+
+### ITEM 827ea372b1e8f128
+PAGE: Jungle Book (1967 film)
+SENTENCE: Disney released a live-action adaptation in 1994 and an animated sequel in 2003; a second live-action remake directed by Jon Favreau was released in 2016, with a sequel to that film in development.
+OTHER FILMS: ["The Jungle Book (1994 film)", "The Jungle Book 2", "The Jungle Book (2016 film)"]
+
+### ITEM 5cb70b0191e02ff7
+PAGE: Move Over, Darling
+SENTENCE: The film is a remake of the 1940 screwball comedy film My Favorite Wife, starring Irene Dunne, Cary Grant, and Gail Patrick.
+OTHER FILMS: ["My Favorite Wife"]
+
+### ITEM 36922d0087482d83
+PAGE: The Big Operator (1959 film)
+SENTENCE: The film is a remake of Joe Smith, American (1942) with labor union thugs replacing Axis spies.
+OTHER FILMS: ["Joe Smith, American"]
+
+### ITEM d58b81d2d617349e
+PAGE: The Paleface (1948 film)
+SENTENCE: In 1968, Don Knotts remade the film as The Shakiest Gun in the West.
+OTHER FILMS: ["The Shakiest Gun in the West"]
+
+### ITEM 39f32cb1121653f1
+PAGE: The Magnificent Seven
+SENTENCE: The screenplay, credited to William Roberts, is a remake – in an Old West-style – of Akira Kurosawa's 1954 Japanese film Seven Samurai (itself initially released in the United States as The Magnificent Seven).
+OTHER FILMS: ["Seven Samurai"]
+
+### ITEM a65f8144e5add89a
+PAGE: House of Wax (1953 film)
+SENTENCE: Warner Bros. later released a loose remake of the film in 2005.
+OTHER FILMS: ["House of Wax (2005 film)"]
+
+### ITEM 4c4c70d0d72f8f8d
+PAGE: Ben-Hur (1959 film)
+SENTENCE: A remake of the 1925 silent film with a similar title, it was adapted from Lew Wallace's 1880 novel Ben-Hur: A Tale of the Christ.
+OTHER FILMS: ["Ben-Hur: A Tale of the Christ (1925 film)"]
+
+### ITEM 7b691ab3c164310f
+PAGE: Colorado Territory (film)
+SENTENCE: The story was remade for a third time in 1955 as I Died a Thousand Times with Jack Palance and Shelley Winters.
+OTHER FILMS: ["I Died a Thousand Times"]
+
+### ITEM 56f34ac65f6a122a
+PAGE: The Birds and the Bees (film)
+SENTENCE: A remake of Preston Sturges' 1941 film The Lady Eve, which was based on a story by Monckton Hoffe.
+OTHER FILMS: ["The Lady Eve"]
+
+### ITEM ebcfdbe60e128704
+PAGE: Gambit (1966 film)
+SENTENCE: A remake was released in 2012, with a script by Joel and Ethan Coen.
+OTHER FILMS: ["Gambit (2012 film)"]
+
+### ITEM afeb8404aaede9c4
+PAGE: The Opposite Sex
+SENTENCE: Directed by David Miller, the Metrocolor and CinemaScope picture is a remake of the 1939 comedy film The Women.
+OTHER FILMS: ["The Women (1939 film)"]
+
+### ITEM 16e96c8a417eabb5
+PAGE: Waterloo Bridge (1940 film)
+SENTENCE: In 1956, it was remade again as Gaby, which stars Leslie Caron and John Kerr.
+OTHER FILMS: ["Gaby (film)"]
+
+### ITEM cfd9ae1164a63c03
+PAGE: Voodoo Woman
+SENTENCE: It was remade by Larry Buchanan into a 1966 AIP made-for-television film titled Curse of the Swamp Creature.
+OTHER FILMS: ["Curse of the Swamp Creature"]
+
+### ITEM 7da0052347848726
+PAGE: The Absent-Minded Professor
+SENTENCE: A remake titled Flubber with Robin Williams was released in 1997.
+OTHER FILMS: ["Flubber (film)"]
+
+### ITEM c0b564c38e45c520
+PAGE: I Died a Thousand Times
+SENTENCE: John]] I Died a Thousand Times is a scene-by-scene remake of the 1941 crime noir High Sierra, which was based upon a novel by [[W.
+OTHER FILMS: ["High Sierra (film)"]
+
+### ITEM e141b33ed8e90ee7
+PAGE: The Rains of Ranchipur
+SENTENCE: Made in DeLuxe Color, Cinemascope, and four-track stereophonic sound, the film is a remake of the black-and-white film The Rains Came (1939), also made by Fox, directed by Clarence Brown and starring Tyrone Power and Myrna Loy.
+OTHER FILMS: ["The Rains Came"]
+
+### ITEM 17316362896a8fb5
+PAGE: My Dream Is Yours
+SENTENCE: This was a loose remake of the 1934 Twenty Million Sweethearts, starring Dick Powell and Ginger Rogers.
+OTHER FILMS: ["Twenty Million Sweethearts"]
+
+### ITEM 0ebc842dbeb71cae
+PAGE: The Quiet American (1958 film)
+SENTENCE: Greene was furious that his anti-war message had been excised from the film, and he disavowed it as a "propaganda film for America." The Quiet American was remade in 2002.
+OTHER FILMS: ["The Quiet American (2002 film)"]
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/remakes/statements/r2_035.out.json as a JSON list with one object per item: {"item": "<the code after ITEM>", "links": [{"film": "<title exactly as listed>", "relation": "...", "wording": "..."}]} with one entry in "links" for every film listed under OTHER FILMS. Write nothing else to that file.

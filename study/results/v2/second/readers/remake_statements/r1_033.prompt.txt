@@ -1,0 +1,222 @@
+You are helping to build a research corpus of film remakes from Wikipedia. Each item below gives the title of a film's Wikipedia page (PAGE), ONE sentence from the opening of that page, and the OTHER FILMS that sentence links to. For each other film, record what THE SENTENCE SAYS about PAGE and that film. You are not asked what you know about the films.
+
+For each other film give:
+- "relation":
+    "page_remakes_other"   the sentence says PAGE is a remake of the other film;
+    "other_remakes_page"   the sentence says the other film is a remake of PAGE (for example "it was remade in Telugu as ...");
+    "none"                 anything else.
+- "wording":
+    "firm"    the sentence states the remake plainly as a fact: "is a remake of", "an official remake of", "was remade as", "was remade in Hindi as";
+    "loose"   the sentence weakens or hedges it: "loosely", "partly", "unofficial", "uncredited", "inspired by", "based on the idea of", "reported to be", "said to be", "has been described as", "considered", "similar to", "reboot", "reimagining", "re-adaptation";
+    "" when the relation is "none".
+
+Rules.
+- Use only what the sentence says. Do not use your own knowledge of the films, and do not guess from titles or years.
+- If the sentence lists several films as remakes of PAGE, each of them is "other_remakes_page".
+- If the sentence says PAGE is a remake of X, and that X is itself a remake of or based on Y, then X is "page_remakes_other" and Y is "none", unless the sentence also says PAGE is a remake of Y.
+- "none" covers: a sequel, prequel or spin-off; a film that is only compared or mentioned; another remake of the same original (a sibling); a film based on the same novel, play or true story that the sentence does not call a remake; a film whose remake status the sentence denies; a dubbed version; a film shot at the same time in another language ("simultaneously", "bilingual").
+- If you cannot tell which film the word "remake" or "remade" applies to, answer "none".
+
+The items follow.
+
+### ITEM 1f4fe15a64142cee
+PAGE: Destry (film)
+SENTENCE: This, the third film to use the title character of Max Brand's novel Destry Rides Again, is a color remake of the black-&-white 1939 Marlene Dietrich and James Stewart film version.
+OTHER FILMS: ["Destry Rides Again"]
+
+### ITEM 67b388cc08142bc0
+PAGE: Gun Fight (film)
+SENTENCE: Gun Fight is an almost identical remake of the 1956 film Gun Brothers starring Buster Crabbe and Neville Brand.
+OTHER FILMS: ["Gun Brothers"]
+
+### ITEM 01cb92da52c356e1
+PAGE: The Great Impersonation (1942 film)
+SENTENCE: It was made by Universal Pictures and was a remake of their 1935 film of the same name.
+OTHER FILMS: ["The Great Impersonation (1935 film)"]
+
+### ITEM e3bc2309ecddfcff
+PAGE: Lady Gangster
+SENTENCE: Lady Gangster is a remake of the pre-Code film, Ladies They Talk About (1933).
+OTHER FILMS: ["Ladies They Talk About"]
+
+### ITEM a8577ff9443d3c72
+PAGE: Lure of the Wilderness
+SENTENCE: The film is a remake of Jean Renoir's 1941 adaptation of the novel, in which Brennan also appears.
+OTHER FILMS: ["Swamp Water"]
+
+### ITEM aff2c92a52e4725b
+PAGE: Two Girls on Broadway
+SENTENCE: The film is a remake of The Broadway Melody (1929).
+OTHER FILMS: ["The Broadway Melody"]
+
+### ITEM 61dbb1960cb483dd
+PAGE: 3 Godfathers
+SENTENCE: It is a remake of the black and white 1929 movie Hell's Heroes, starring Charles Bickman, Raymond Hatton, and Fred Kohler, directed by William Wyler.
+OTHER FILMS: ["Hell's Heroes (film)"]
+
+### ITEM 30e04edf059360fa
+PAGE: Cat-Women of the Moon
+SENTENCE: Cat-Women of the Moon was remade in 1958 as Missile to the Moon by producer Richard Cunha.
+OTHER FILMS: ["Missile to the Moon"]
+
+### ITEM 59228a7bc6669629
+PAGE: Swamp Water
+SENTENCE: The film was remade in 1952 as Lure of the Wilderness, directed by Jean Negulesco.
+OTHER FILMS: ["Lure of the Wilderness"]
+
+### ITEM ebcfdbe60e128704
+PAGE: Gambit (1966 film)
+SENTENCE: A remake was released in 2012, with a script by Joel and Ethan Coen.
+OTHER FILMS: ["Gambit (2012 film)"]
+
+### ITEM a345993a1d57f22a
+PAGE: The King's Pirate
+SENTENCE: It is a remake of the 1952 film Against All Flags.
+OTHER FILMS: ["Against All Flags"]
+
+### ITEM 0f73f373148d11b5
+PAGE: Tarzan, the Ape Man (1959 film)
+SENTENCE: The film is loosely based on Edgar Rice Burroughs' novel Tarzan of the Apes, and is a remake of the classic 1932 film of the same name.
+OTHER FILMS: ["Tarzan the Ape Man (1932 film)"]
+
+### ITEM c67638db27708198
+PAGE: Night Plane from Chungking
+SENTENCE: The film was remade as Peking Express (1951).
+OTHER FILMS: ["Peking Express (film)"]
+
+### ITEM 18f1ca42172c3032
+PAGE: Lassie Come Home
+SENTENCE: A British remake of the 1943 movie was released in 2005 as Lassie to moderate success.
+OTHER FILMS: ["Lassie (2005 film)"]
+
+### ITEM b56881f1c275f1fd
+PAGE: The Cape Town Affair
+SENTENCE: It is a remake of the 1953 picture Pickup on South Street.
+OTHER FILMS: ["Pickup on South Street"]
+
+### ITEM e5ea92f6ca03e942
+PAGE: The Bishop's Wife
+SENTENCE: It was remade in 1996 as The Preacher's Wife starring Denzel Washington, Whitney Houston, and [[Courtney B.
+OTHER FILMS: ["The Preacher's Wife"]
+
+### ITEM fee1b8b412ad708b
+PAGE: The Ten Commandments (1956 film)
+SENTENCE: First announced in 1952, The Ten Commandments is a remake of the prologue of DeMille's 1923 silent film of the same title.
+OTHER FILMS: ["The Ten Commandments (1923 film)"]
+
+### ITEM 6c0829e5123761be
+PAGE: Back Street (1941 film)
+SENTENCE: It is a remake of the 1932 film of the same name, also from Universal.
+OTHER FILMS: ["Back Street (1932 film)"]
+
+### ITEM ac17b8dbf45b2605
+PAGE: Pocketful of Miracles
+SENTENCE: That original 1933 film was also directed by Capra—one of two films that he originally directed and later remade, the other being Broadway Bill (1934) and its remake Riding High (1950).
+OTHER FILMS: ["Broadway Bill", "Riding High (1950 film)"]
+
+### ITEM 8f364e57966046e4
+PAGE: The Narrow Margin
+SENTENCE: A remake, Narrow Margin, was released in 1990.
+OTHER FILMS: ["Narrow Margin"]
+
+### ITEM c853115c6a423473
+PAGE: To Have and Have Not (film)
+SENTENCE: Critic reviews were mixed, with many claiming the film was a remake of Casablanca (1942).
+OTHER FILMS: ["Casablanca (film)"]
+
+### ITEM 3898fb51f85317de
+PAGE: Kind Lady (1951 film)
+SENTENCE: The film is remake of the 1935 film of the same name that stars Aline MacMahon in the title role.
+OTHER FILMS: ["Kind Lady (1935 film)"]
+
+### ITEM 20c74b56dcfc5e15
+PAGE: Sincerely Yours (film)
+SENTENCE: Pictures|Warner Bros.]] 1932 film The Man Who Played God, which was itself a remake of the 1922 film The Man Who Played God, also based on the 1914 Jules Eckert Goodman play The Silent Voice.
+OTHER FILMS: ["The Man Who Played God (1932 film)"]
+
+### ITEM 4c4c70d0d72f8f8d
+PAGE: Ben-Hur (1959 film)
+SENTENCE: A remake of the 1925 silent film with a similar title, it was adapted from Lew Wallace's 1880 novel Ben-Hur: A Tale of the Christ.
+OTHER FILMS: ["Ben-Hur: A Tale of the Christ (1925 film)"]
+
+### ITEM 1bb6854892d7d736
+PAGE: The Haunting (1963 film)
+SENTENCE: The film received a remake in 1999 from director Jan de Bont, starring Liam Neeson, Lili Taylor, Catherine Zeta-Jones and Owen Wilson, which was met with a widespread negative critical response.
+OTHER FILMS: ["The Haunting (1999 film)"]
+
+### ITEM 55e22a59fbfd24b0
+PAGE: Invaders from Mars (1953 film)
+SENTENCE: A remake film was released in 1986, directed by Tobe Hooper.
+OTHER FILMS: ["Invaders from Mars (1986 film)"]
+
+### ITEM 646f2a38738ec4cf
+PAGE: 3:10 to Yuma (1957 film)
+SENTENCE: In 2012, the film was selected for preservation in the United States on the National Film Registry by the Library of Congress in Washington, D.C. as being "culturally, historically, or aesthetically significant." The film was remade in 2007, directed by James Mangold and starring Russell Crowe with Christian Bale.
+OTHER FILMS: ["3:10 to Yuma (2007 film)"]
+
+### ITEM a65f8144e5add89a
+PAGE: House of Wax (1953 film)
+SENTENCE: Warner Bros. later released a loose remake of the film in 2005.
+OTHER FILMS: ["House of Wax (2005 film)"]
+
+### ITEM 5cb70b0191e02ff7
+PAGE: Move Over, Darling
+SENTENCE: The film is a remake of the 1940 screwball comedy film My Favorite Wife, starring Irene Dunne, Cary Grant, and Gail Patrick.
+OTHER FILMS: ["My Favorite Wife"]
+
+### ITEM 32408055c156d655
+PAGE: That Darn Cat! (1965 film)
+SENTENCE: A remake of the film was released in 1997, and it features a cameo appearance by Jones.
+OTHER FILMS: ["That Darn Cat (1997 film)"]
+
+### ITEM 34b84859cc886b45
+PAGE: The Shakiest Gun in the West
+SENTENCE: The film is a remake of The Paleface, a 1948 film starring Bob Hope and Jane Russell.
+OTHER FILMS: ["The Paleface (1948 film)"]
+
+### ITEM 17316362896a8fb5
+PAGE: My Dream Is Yours
+SENTENCE: This was a loose remake of the 1934 Twenty Million Sweethearts, starring Dick Powell and Ginger Rogers.
+OTHER FILMS: ["Twenty Million Sweethearts"]
+
+### ITEM bd9b8f9c5a523a09
+PAGE: The Philadelphia Story (film)
+SENTENCE: MGM remade the film in 1956 as a musical retitled High Society, starring Bing Crosby, Grace Kelly, and Frank Sinatra.
+OTHER FILMS: ["High Society (1956 film)"]
+
+### ITEM 8dbc0864f13a6374
+PAGE: D.O.A. (1950 film)
+SENTENCE: Due to a filing error, the copyright to the film was not renewed on time, causing it to fall into the public domain: it was subsequently remade as Color Me Dead (1969), D.O.A. (1988), Dead on Arrival (2017), and D.O.A. (2022).
+OTHER FILMS: ["D.O.A. (1988 film)"]
+
+### ITEM e3f0e487d1a0bcdf
+PAGE: The Jazz Singer (1952 film)
+SENTENCE: The Jazz Singer is a 1952 remake of the groundbreaking 1927 film The Jazz Singer. The film was directed by Michael Curtiz and stars Danny Thomas, Peggy Lee and Eduard Franz.
+OTHER FILMS: ["The Jazz Singer"]
+
+### ITEM 1c830a0428dc8bc0
+PAGE: Mr. Blandings Builds His Dream House
+SENTENCE: It was loosely remade in 1986 as The Money Pit, starring Tom Hanks and Shelley Long, and in 2007 as Are We Done Yet?, starring Ice Cube.
+OTHER FILMS: ["The Money Pit", "Are We Done Yet?"]
+
+### ITEM 19770fe392e35429
+PAGE: Riding High (1950 film)
+SENTENCE: The film is a remake of an earlier Capra film with screenwriter Robert Riskin titled Broadway Bill (1934).
+OTHER FILMS: ["Broadway Bill"]
+
+### ITEM 39f32cb1121653f1
+PAGE: The Magnificent Seven
+SENTENCE: The screenplay, credited to William Roberts, is a remake – in an Old West-style – of Akira Kurosawa's 1954 Japanese film Seven Samurai (itself initially released in the United States as The Magnificent Seven).
+OTHER FILMS: ["Seven Samurai"]
+
+### ITEM b1fc33cdae8254b8
+PAGE: The Parent Trap (1961 film)
+SENTENCE: The film was remade in 1998 with Lindsay Lohan in the lead role as the twins.
+OTHER FILMS: ["The Parent Trap (1998 film)"]
+
+### ITEM fce5edd1a9540e3b
+PAGE: Psycho (1960 film)
+SENTENCE: After Hitchcock's death in 1980, Universal Pictures produced follow-ups: three sequels, a remake, a made-for-television spin-off, and a television series.
+OTHER FILMS: ["Psycho (1998 film)", "Bates Motel (film)"]
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/remakes/statements/r1_033.out.json as a JSON list with one object per item: {"item": "<the code after ITEM>", "links": [{"film": "<title exactly as listed>", "relation": "...", "wording": "..."}]} with one entry in "links" for every film listed under OTHER FILMS. Write nothing else to that file.

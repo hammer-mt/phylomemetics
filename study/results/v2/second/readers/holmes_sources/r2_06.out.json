@@ -1,0 +1,103 @@
+[
+  {
+    "id": 34392746,
+    "kind": "tv_episode",
+    "year": 2012,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Final Problem",
+        "tier": "C",
+        "quote": "Inspired by \"The Final Problem\" by Sir Arthur Conan Doyle, the episode follows Moriarty's plot to discredit and kill Sherlock Holmes"
+      }
+    ],
+    "other_sources": [
+      "The Woman in Green (film)"
+    ]
+  },
+  {
+    "id": 51633141,
+    "kind": "video_game",
+    "year": 2017,
+    "holmes_appears": false,
+    "sources": [],
+    "other_sources": []
+  },
+  {
+    "id": 2441877,
+    "kind": "video_game",
+    "year": 1991,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": [
+      "Sherlock Holmes: Consulting Detective (1981 tabletop game-gamebook)"
+    ]
+  },
+  {
+    "id": 26583800,
+    "kind": "film",
+    "year": 1976,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": [
+      "The Seven-Per-Cent Solution (1974 novel by Nicholas Meyer)"
+    ]
+  },
+  {
+    "id": 12622762,
+    "kind": "series",
+    "year": 1979,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": []
+  },
+  {
+    "id": 6435145,
+    "kind": "film",
+    "year": 1939,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": [
+      "Sherlock Holmes (1899 play by William Gillette)"
+    ]
+  },
+  {
+    "id": 28839700,
+    "kind": "film",
+    "year": 1937,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Hound of the Baskervilles",
+        "tier": "A",
+        "quote": "It is an adaptation of the 1902 Sherlock Holmes story The Hound of the Baskervilles by Arthur Conan Doyle."
+      }
+    ],
+    "other_sources": []
+  },
+  {
+    "id": 25357930,
+    "kind": "film",
+    "year": 2010,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": []
+  },
+  {
+    "id": 39440323,
+    "kind": "tv_episode",
+    "year": 2014,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Adventure of the Empty House",
+        "tier": "C",
+        "quote": "Inspired by \"The Adventure of the Empty House\" and \"The Lost Special\" by Sir Arthur Conan Doyle, the episode follows Sherlock Holmes' return to London and reunion with John Watson, along with an underground terrorist network."
+      }
+    ],
+    "other_sources": [
+      "The Lost Special (Conan Doyle short story)",
+      "The Web of Fear (1968 Doctor Who serial)"
+    ]
+  }
+]

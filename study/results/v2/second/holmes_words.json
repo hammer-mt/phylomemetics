@@ -49,7 +49,7 @@
   "corpus.jsonl": "7abdddc9b33fe24707a94f0e3cf19cb5bfbcd67fedf22364242aa32be6af7e5b",
   "corpus_neutral.jsonl": "c28f09cc040a41ca0e94d1277138de2f4a80ee0bbbbd82d04e85216f86683742",
   "pageviews.json": "78650966de10f845afaeb5d617ca69387772915b0f70a9e4928cc9009c1666e2",
-  "spec.json": "d11e739e51037ef492c9386c443b090b0d3ba6aa5fb2432e99cbf74461b55ce4",
+  "spec.json": "f8529209d8ac270522311b487c75bde6f32232c15821bfe395217d9e424991be",
   "works.json": "5d1c1ca4dd0b35d5f858faa05743141d1f38240b263b282496d08df8f4d6d840"
  },
  "n_words": 6099,
@@ -32932,29 +32932,19 @@
   }
  },
  "no_word_only_measure_passes_the_residual_test": false,
- "seconds": 334.1,
- "peak_memory_gb": 0.6521873474121094,
+ "seconds": 320.9,
+ "peak_memory_gb": 0.651641845703125,
  "code": {
-  "git_commit": "c4f2c968ac5df797c4be9adaf27f6ba0bb6d4f8a",
+  "git_commit": "08d9984bcb6de808f9568c38c5275b686163f247",
   "v2_second_clean": false,
   "v2_second_changed_or_untracked": [
+   " M study/v2/second/PLAN.md",
    " M study/v2/second/build_holmes.py",
-   "?? study/v2/second/PLAN.md",
-   "?? study/v2/second/README.md",
-   "?? study/v2/second/build_remakes.py",
-   "?? study/v2/second/confirmatory.py",
-   "?? study/v2/second/e3_power.py",
-   "?? study/v2/second/gpu.py",
-   "?? study/v2/second/holmes.py",
-   "?? study/v2/second/lib.py",
-   "?? study/v2/second/probes.py",
-   "?? study/v2/second/remake_test.py",
-   "?? study/v2/second/remakes.py",
-   "?? study/v2/second/run_pod.sh"
+   " M study/v2/second/holmes.py"
   ],
   "sha256": {
    "lib.py": "41a9ddb1316edd2f0ea254e83a36011762d83e01c1ab707623a4661b846bfecc",
-   "holmes.py": "873996638c4c688f6529d3cb851d3ec2fd27f4b9ff23a7397461b754b5913f29"
+   "holmes.py": "f48839603a62e22626a03cb9296171d15eca23fe2ec7bf2b2f2076164eea17f4"
   }
  }
 }

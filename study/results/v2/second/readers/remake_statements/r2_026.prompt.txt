@@ -1,0 +1,222 @@
+You are helping to build a research corpus of film remakes from Wikipedia. Each item below gives the title of a film's Wikipedia page (PAGE), ONE sentence from the opening of that page, and the OTHER FILMS that sentence links to. For each other film, record what THE SENTENCE SAYS about PAGE and that film. You are not asked what you know about the films.
+
+For each other film give:
+- "relation":
+    "page_remakes_other"   the sentence says PAGE is a remake of the other film;
+    "other_remakes_page"   the sentence says the other film is a remake of PAGE (for example "it was remade in Telugu as ...");
+    "none"                 anything else.
+- "wording":
+    "firm"    the sentence states the remake plainly as a fact: "is a remake of", "an official remake of", "was remade as", "was remade in Hindi as";
+    "loose"   the sentence weakens or hedges it: "loosely", "partly", "unofficial", "uncredited", "inspired by", "based on the idea of", "reported to be", "said to be", "has been described as", "considered", "similar to", "reboot", "reimagining", "re-adaptation";
+    "" when the relation is "none".
+
+Rules.
+- Use only what the sentence says. Do not use your own knowledge of the films, and do not guess from titles or years.
+- If the sentence lists several films as remakes of PAGE, each of them is "other_remakes_page".
+- If the sentence says PAGE is a remake of X, and that X is itself a remake of or based on Y, then X is "page_remakes_other" and Y is "none", unless the sentence also says PAGE is a remake of Y.
+- "none" covers: a sequel, prequel or spin-off; a film that is only compared or mentioned; another remake of the same original (a sibling); a film based on the same novel, play or true story that the sentence does not call a remake; a film whose remake status the sentence denies; a dubbed version; a film shot at the same time in another language ("simultaneously", "bilingual").
+- If you cannot tell which film the word "remake" or "remade" applies to, answer "none".
+
+The items follow.
+
+### ITEM 06c5f036bbb2830f
+PAGE: Gopala Gopala (2015 film)
+SENTENCE: The film is a remake of the 2012 Hindi film OMG – Oh My God! which was itself based on the Gujarati stage play Kanji Viruddh Kanji which is in turn inspired from 2001 Australian film The Man Who Sued God.
+OTHER FILMS: ["The Man Who Sued God"]
+
+### ITEM ae623618a1ded20b
+PAGE: Ullasamga Utsahamga
+SENTENCE: It was remade into Kannada as Ullasa Utsaha (2010) and also remade into Bangladeshi Bengali as Er Beshi Bhalobasha Jay Na (2013).
+OTHER FILMS: ["Ullasa Utsaha"]
+
+### ITEM 283e47234a8ebec1
+PAGE: Kshana Kshanam
+SENTENCE: Varma later remade Kshana Kshanam in Hindi as Daud, and produced road films such as Thiruda Thiruda, Anaganaga Oka Roju and Road.
+OTHER FILMS: ["Daud (film)", "Thiruda Thiruda", "Anaganaga Oka Roju"]
+
+### ITEM 80af3a043eafb190
+PAGE: Allari Mogudu
+SENTENCE: The film was remade in Kannada as Gadibidi Ganda (1993), in Tamil as Veera (1994), in Hindi as Saajan Chale Sasural (1996).
+OTHER FILMS: ["Veera (1994 film)", "Saajan Chale Sasural"]
+
+### ITEM 5e0ab6049a6a3b70
+PAGE: Yamagola
+SENTENCE: It was remade in Hindi as Lok Parlok (1979) and in Tamil as Yamanukku Yaman (1980), while also inspiring the 2007 Telugu film Yamadonga.
+OTHER FILMS: ["Lok Parlok", "Yamadonga"]
+
+### ITEM 0cb1ee1e40caea8a
+PAGE: Kushi Kushiga
+SENTENCE: The film is a remake of the 2003 Malayalam film Chronic Bachelor starring Mammootty.
+OTHER FILMS: ["Chronic Bachelor"]
+
+### ITEM 6894c2ae6fd86d8a
+PAGE: Pavitra Bandham
+SENTENCE: Owing to its success, it was remade in six other languages - in Odia as Suhaag Sindura (1998), in Kannada as Mangalyam Tantunanena (1998), in Hindi as Hum Aapke Dil Mein Rehte Hain (1999), in Tamil as Priyamaanavale (2000) and in Bangladeshi as E Badhon Jabena Chhire (2000).
+OTHER FILMS: ["Hum Aapke Dil Mein Rehte Hain", "Priyamaanavale"]
+
+### ITEM e7ec31e60e5f168e
+PAGE: Mayuri (film)
+SENTENCE: It was dubbed into Malayalam and Tamil as Mayoori, and remade as Naache Mayuri (1986) in Hindi.
+OTHER FILMS: ["Naache Mayuri"]
+
+### ITEM 7b47815c6a05e80c
+PAGE: Dagudumootha Dandakor
+SENTENCE: The film is remake of the Tamil movie Saivam (2014).
+OTHER FILMS: ["Saivam"]
+
+### ITEM fc7438e4f9293bce
+PAGE: Tammudu (film)
+SENTENCE: The film was remade in Tamil as Badri (2001), in Kannada as Yuvaraja (2001) and in Bengali as Champion (2003).
+OTHER FILMS: ["Badri (2001 film)", "Yuvaraja (film)", "Champion (2003 film)"]
+
+### ITEM cab82e8af8042943
+PAGE: King Kong vs. Godzilla
+SENTENCE: A heavily re-edited "Americanized" version of the film was released theatrically in the United States by Universal International Inc. on June 26, 1963 as Universal's first King Kong film, the second being King Kong Escapes on June 19, 1968, and the third being the second remake of the 1933 film on December 14, 2005.
+OTHER FILMS: ["King Kong Escapes", "King Kong (2005 film)"]
+
+### ITEM 0297c2705cc48082
+PAGE: Jayam (2002 film)
+SENTENCE: It was remade in Tamil in 2003 under the same title by Mohan Raja, starring Ravi Mohan in his debut as a lead actor, earning him the moniker "Jayam Ravi," with Sadha and Gopichand reprising their roles.
+OTHER FILMS: ["Jayam (2003 film)"]
+
+### ITEM 96de820540618d1d
+PAGE: Seshu
+SENTENCE: It is a remake of the 1999 hit Tamil film Sethu, directed by Bala.
+OTHER FILMS: ["Sethu (film)"]
+
+### ITEM 1e256412cc5f0b3d
+PAGE: Swathi Muthyam
+SENTENCE: Upon its success, Viswanath directed its Hindi version Eeshwar (1989) and in Kannada it was remade as Swathi Muthu (2003).
+OTHER FILMS: ["Swathi Muthu"]
+
+### ITEM 42459ecfbbaa3a9d
+PAGE: Ramu (1968 film)
+SENTENCE: It is a remake of the Tamil film of the same name (1966), which was based on the Hindi film Door Gagan Ki Chhaon Mein (1964) which was not successful.
+OTHER FILMS: ["Door Gagan Ki Chhaon Mein"]
+
+### ITEM d2c63c54a425413e
+PAGE: Gharshana
+SENTENCE: It is the remake of the Menon's own 2003 Tamil film Kaakha Kaakha.
+OTHER FILMS: ["Kaakha Kaakha"]
+
+### ITEM 1e08e8cbb97aceef
+PAGE: Bhale Pellam
+SENTENCE: The film was a remake of the Tamil film Purusha Lakshanam (1993).
+OTHER FILMS: ["Purusha Lakshanam"]
+
+### ITEM fe10d4c559c6aca9
+PAGE: Bamma Maata Bangaru Baata
+SENTENCE: The film is a remake of AVM's Tamil film Paatti Sollai Thattathe (1988).
+OTHER FILMS: ["Paatti Sollai Thattathe"]
+
+### ITEM fe684c707c82fda7
+PAGE: The Housemaid (1960 film)
+SENTENCE: The film was remade in 2010 by Im Sang-soo.
+OTHER FILMS: ["The Housemaid (2010 film)"]
+
+### ITEM a31a9ad61ac21190
+PAGE: Lakshyam (2007 film)
+SENTENCE: It was later remade in Tamil as Maanja Velu (2010), in Bengali as Fighter (2011), and in Kannada as Varadhanayaka (2013).
+OTHER FILMS: ["Maanja Velu"]
+
+### ITEM d45d590b16c2000a
+PAGE: Narasimha Naidu
+SENTENCE: It was remade into Tamil as Ezhumalai (2002) starring Arjun with Simran reprising her role.
+OTHER FILMS: ["Ezhumalai"]
+
+### ITEM b6f81fd3aa4063f7
+PAGE: Chinarayudu
+SENTENCE: The film was a remake of the Tamil film Chinna Gounder.
+OTHER FILMS: ["Chinna Gounder"]
+
+### ITEM dcd0ef99a5704c2c
+PAGE: Bale Bale Magadivoy
+SENTENCE: It was remade in Kannada as Sundaranga Jaana in 2016 and in Tamil as Ghajinikanth in 2018.
+OTHER FILMS: ["Sundaranga Jaana"]
+
+### ITEM ef8ab8398818f792
+PAGE: Leader (2010 film)
+SENTENCE: Over the years, it gained a cult following and was later remade in Hindi in 2014 as Youngistaan. Leader was listed among the "25 Greatest Telugu Films Of The Decade" by Film Companion.
+OTHER FILMS: ["Youngistaan"]
+
+### ITEM 6d7af45b9c0ff337
+PAGE: Soggadu (1975 film)
+SENTENCE: It was remade in Hindi as Dildaar (1977) and in Tamil as Radhaiketra Kannan (1978).
+OTHER FILMS: ["Dildaar"]
+
+### ITEM bb9c735580507876
+PAGE: Khadgam
+SENTENCE: The film is remade in Hindi as Insan (2005).
+OTHER FILMS: ["Insan"]
+
+### ITEM d862fdbc4ad6ae5e
+PAGE: Sreeram
+SENTENCE: It is a remake of the Tamil film, Dhill (2001), which starred Vikram and Laila.
+OTHER FILMS: ["Dhill"]
+
+### ITEM aa583b2dbd37d9b8
+PAGE: Varasudu
+SENTENCE: It is a remake of the Hindi film Phool Aur Kaante (1991) which is loosely based on the Malayalam film Parampara (1990).
+OTHER FILMS: ["Parampara (1990 film)"]
+
+### ITEM 913ecfb65422dbf9
+PAGE: Operation Duryodhana (film)
+SENTENCE: The film was remade in Tamil as Thee.
+OTHER FILMS: ["Thee (2009 film)"]
+
+### ITEM 1e240530b61e289e
+PAGE: Potugadu
+SENTENCE: It is a remake of his 2012 Kannada film Govindaya Namaha.
+OTHER FILMS: ["Govindaya Namaha"]
+
+### ITEM d3116153c3c1e59b
+PAGE: Thalli Prema
+SENTENCE: The film was remade in Tamil as Kulama Gunama (1971), in Hindi as Swarag Se Sunder (1986) and again in Telugu as Naa Ille Naa Swargam (1991). Original movie is Kudumbam (1967), M Assam produced and written by Thoppil Bhasi.
+OTHER FILMS: ["Kulama Gunama", "Swarag Se Sunder"]
+
+### ITEM c0cc5dbb61b12853
+PAGE: Aakali Rajyam
+SENTENCE: It was remade in Hindi as Zara Si Zindagi (1983) with Haasan reprising his role, and Balachander again directing.
+OTHER FILMS: ["Zara Si Zindagi"]
+
+### ITEM 24e71ba9ef486c86
+PAGE: Naa Autograph
+SENTENCE: This film is a remake of the Tamil film Autograph.
+OTHER FILMS: ["Autograph (2004 film)"]
+
+### ITEM d3864545dc972680
+PAGE: Pokiri Raja
+SENTENCE: It was a remake of the Hindi film Aankhen which was inspired from Kannada film Kittu Puttu which itself was based on Tamil film Anubavi Raja Anubavi.
+OTHER FILMS: ["Anubavi Raja Anubavi"]
+
+### ITEM 02b375aef9112bad
+PAGE: Guru (2017 film)
+SENTENCE: The film is remake of Kongara's own film Irudhi Suttru/Saala Khadoos (2016).
+OTHER FILMS: ["Irudhi Suttru"]
+
+### ITEM 0425f22d04962e34
+PAGE: Chitram Bhalare Vichitram
+SENTENCE: The film was later remade into Kannada as Bombat Hendthi (1992) and Tamil as Aanazhagan (1995).
+OTHER FILMS: ["Bombat Hendthi", "Aanazhagan"]
+
+### ITEM 9bd2e774c0844c6d
+PAGE: Katha Nayakudu
+SENTENCE: The film was remade in Tamil as Nam Naadu (1969), and in Hindi as Apna Desh (1972).
+OTHER FILMS: ["Nam Naadu (1969 film)", "Apna Desh"]
+
+### ITEM abc6c53849660c30
+PAGE: Right Right
+SENTENCE: A remake of the Malayalam film Ordinary, the film stars Sumanth Ashwin and Prabhakar in the lead roles, while Pooja Jhaveri, Nassar, and Vinoth Kishan play supporting roles.
+OTHER FILMS: ["Ordinary (film)"]
+
+### ITEM 1a746381d3ae9c56
+PAGE: Khaidi No. 150
+SENTENCE: The film is a remake of the 2014 Tamil film Kaththi.
+OTHER FILMS: ["Kaththi"]
+
+### ITEM 86dc6c85a87717fa
+PAGE: Badri (2000 film)
+SENTENCE: Puri Jagannadh later remade it in Hindi as Shart: The Challenge (2004).
+OTHER FILMS: ["Shart: The Challenge"]
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/remakes/statements/r2_026.out.json as a JSON list with one object per item: {"item": "<the code after ITEM>", "links": [{"film": "<title exactly as listed>", "relation": "...", "wording": "..."}]} with one entry in "links" for every film listed under OTHER FILMS. Write nothing else to that file.

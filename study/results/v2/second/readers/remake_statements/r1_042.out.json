@@ -1,0 +1,32 @@
+[
+  {
+    "item": "577c7efc027e3014",
+    "links": [
+      {
+        "film": "Invasion of the Body Snatchers (1978 film)",
+        "relation": "none",
+        "wording": ""
+      }
+    ]
+  },
+  {
+    "item": "df0bd84b2b446d39",
+    "links": [
+      {
+        "film": "The Wolf Man (1941 film)",
+        "relation": "page_remakes_other",
+        "wording": "firm"
+      }
+    ]
+  },
+  {
+    "item": "0749ded1c39ae8c6",
+    "links": [
+      {
+        "film": "The Stepford Wives (2004 film)",
+        "relation": "other_remakes_page",
+        "wording": "firm"
+      }
+    ]
+  }
+]

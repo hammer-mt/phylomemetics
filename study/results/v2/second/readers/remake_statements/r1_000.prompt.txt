@@ -1,0 +1,222 @@
+You are helping to build a research corpus of film remakes from Wikipedia. Each item below gives the title of a film's Wikipedia page (PAGE), ONE sentence from the opening of that page, and the OTHER FILMS that sentence links to. For each other film, record what THE SENTENCE SAYS about PAGE and that film. You are not asked what you know about the films.
+
+For each other film give:
+- "relation":
+    "page_remakes_other"   the sentence says PAGE is a remake of the other film;
+    "other_remakes_page"   the sentence says the other film is a remake of PAGE (for example "it was remade in Telugu as ...");
+    "none"                 anything else.
+- "wording":
+    "firm"    the sentence states the remake plainly as a fact: "is a remake of", "an official remake of", "was remade as", "was remade in Hindi as";
+    "loose"   the sentence weakens or hedges it: "loosely", "partly", "unofficial", "uncredited", "inspired by", "based on the idea of", "reported to be", "said to be", "has been described as", "considered", "similar to", "reboot", "reimagining", "re-adaptation";
+    "" when the relation is "none".
+
+Rules.
+- Use only what the sentence says. Do not use your own knowledge of the films, and do not guess from titles or years.
+- If the sentence lists several films as remakes of PAGE, each of them is "other_remakes_page".
+- If the sentence says PAGE is a remake of X, and that X is itself a remake of or based on Y, then X is "page_remakes_other" and Y is "none", unless the sentence also says PAGE is a remake of Y.
+- "none" covers: a sequel, prequel or spin-off; a film that is only compared or mentioned; another remake of the same original (a sibling); a film based on the same novel, play or true story that the sentence does not call a remake; a film whose remake status the sentence denies; a dubbed version; a film shot at the same time in another language ("simultaneously", "bilingual").
+- If you cannot tell which film the word "remake" or "remade" applies to, answer "none".
+
+The items follow.
+
+### ITEM 26163fcd7219b314
+PAGE: Poojai
+SENTENCE: The film was remade in Kannada as Anjani Putra (2017).
+OTHER FILMS: ["Anjani Putra"]
+
+### ITEM ccff41caed219428
+PAGE: Udaharanam Sujatha
+SENTENCE: It is a remake of the 2015 Hindi-language film Nil Battey Sannata (The New Classmate), although, the theme of the film has appeared in many films like, Back to School.
+OTHER FILMS: ["Back to School"]
+
+### ITEM 597059957cc0c5b6
+PAGE: Lucia (film)
+SENTENCE: The film was remade in Tamil as Enakkul Oruvan in 2015.
+OTHER FILMS: ["Enakkul Oruvan (2015 film)"]
+
+### ITEM 08221ed454630613
+PAGE: Shall We Dance (1937 film)
+SENTENCE: It inspired the 1996 Japanese-language remake of the same name.
+OTHER FILMS: ["Shall We Dance? (1996 film)"]
+
+### ITEM c1b5bb82aac28979
+PAGE: Bhaaga Pirivinai
+SENTENCE: It was remade in Hindi as Khandan (1965), in Telugu as Kalasi Vunte Kaladu Sukham (1961), in Kannada as Muriyada Mane (1964) and in Malayalam as Nirakudam (1977).
+OTHER FILMS: ["Khandan (1965 film)", "Kalasi Vunte Kaladu Sukham"]
+
+### ITEM d0a65bc91583df8f
+PAGE: Khud-Daar
+SENTENCE: It was remade in Tamil as Padikkadhavan and in Telugu as Driver Babu.
+OTHER FILMS: ["Padikkadavan (1985 film)"]
+
+### ITEM 87f7575c2a61898e
+PAGE: Cheluvina Chittara
+SENTENCE: This film is a remake of Tamil film Kaadhal.
+OTHER FILMS: ["Kaadhal"]
+
+### ITEM 5b54a8379cfa838f
+PAGE: Udayananu Tharam
+SENTENCE: It was remade into Tamil cinema as Velli Thirai in 2008 and into Bollywood as Shortkut in 2009.
+OTHER FILMS: ["Velli Thirai", "Shortkut"]
+
+### ITEM b18f93de508dd286
+PAGE: Khushi Khushiyagi
+SENTENCE: It is a remake of the Telugu film Gunde Jaari Gallanthayyinde (2013) and was released on 1 January 2015.
+OTHER FILMS: ["Gunde Jaari Gallanthayyinde"]
+
+### ITEM 2e0fcc556ff619b6
+PAGE: Puthiya Paravai
+SENTENCE: It is a remake of the Bengali film Sesh Anka (1963) which is itself inspired by the British film Chase a Crooked Shadow (1958).
+OTHER FILMS: ["Chase a Crooked Shadow"]
+
+### ITEM 188c7f8063705e42
+PAGE: Server Sundaram
+SENTENCE: The film was remade into Hindi as Main Sunder Hoon (1971) and Kannada as Server Somanna (1993).
+OTHER FILMS: ["Main Sunder Hoon"]
+
+### ITEM 76b8edd9b7d36ce7
+PAGE: Jailor (1938 film)
+SENTENCE: The film was remade with the same title in 1958 with Modi playing the same role, that of the Jailor with a different supporting cast.
+OTHER FILMS: ["Jailor (1958 film)"]
+
+### ITEM 5e72f8773544c184
+PAGE: These Three
+SENTENCE: A 1961 remake of the film, also directed by Wyler, was released as The Children's Hour in the US and The Loudest Whisper in the UK.
+OTHER FILMS: ["The Children's Hour (film)"]
+
+### ITEM 5ec36eb80e90e0a4
+PAGE: Main Prem Ki Diwani Hoon
+SENTENCE: The film is a remake of the 1976 Hindi film Chitchor, which itself is based on Subodh Ghosh's Bengali short story Chittachakor.
+OTHER FILMS: ["Chitchor"]
+
+### ITEM 2298052410a0375f
+PAGE: The Plainsman
+SENTENCE: A remake using the same title was released in 1966.
+OTHER FILMS: ["The Plainsman (1966 film)"]
+
+### ITEM 0d671d3004c6bb32
+PAGE: Dhosth (2001 Malayalam film)
+SENTENCE: It is a remake of the Tamil film Kannedhirey Thondrinal (1998).
+OTHER FILMS: ["Kannedhirey Thondrinal"]
+
+### ITEM 7fc738e053a9aeb1
+PAGE: En Thangachi Padichava
+SENTENCE: It was remade in Telugu as Muddula Mavayya (1989), in Hindi as Aaj Ka Arjun (1990) and in Kannada as Ravimama (1999).
+OTHER FILMS: ["Aaj Ka Arjun"]
+
+### ITEM 2c93866c6ca6701a
+PAGE: Kongo (1932 film)
+SENTENCE: The film is also a remake of the 1928 silent film West of Zanzibar, which was based too on the 1926 play.
+OTHER FILMS: ["West of Zanzibar (1928 film)"]
+
+### ITEM 344086d25279ff95
+PAGE: Nam Naadu (2007 film)
+SENTENCE: It is a remake of 2006 Malayalam film Lion.
+OTHER FILMS: ["Lion (2006 film)"]
+
+### ITEM 219d0fe7e2d7c4d9
+PAGE: The Richest Girl in the World (1934 film)
+SENTENCE: It was remade in 1944 as Bride by Mistake with Laraine Day and Alan Marshal.
+OTHER FILMS: ["Bride by Mistake"]
+
+### ITEM f1b52e7a3af03346
+PAGE: Galpa Holeo Satyi
+SENTENCE: Later the film was remade twice into Hindi as Bawarchi (1972) and Hero No. 1 (1997), into Tamil as Samayalkaaran (1974), into Telugu as Goppinti Alludu (2000) and twice into Kannada as Sakala Kala Vallabha (1996) and No 73, Shanthi Nivasa (2007).
+OTHER FILMS: ["Bawarchi", "Goppinti Alludu"]
+
+### ITEM 33921d0f363711f6
+PAGE: Aamdani Atthani Kharcha Rupaiyaa
+SENTENCE: This was the remake of the Tamil film Viralukketha Veekkam, directed by [[V.
+OTHER FILMS: ["Viralukketha Veekkam"]
+
+### ITEM 36931b055a90bf88
+PAGE: Badi Pantulu (1958 film)
+SENTENCE: In 1959, ALS Productions remade it in Hindi as School Master which was also directed by Panthulu.
+OTHER FILMS: ["School Master (1959 film)"]
+
+### ITEM fe42f2d42d96a481
+PAGE: Twenty Million Sweethearts
+SENTENCE: The film was remade in 1949 as My Dream Is Yours.
+OTHER FILMS: ["My Dream Is Yours"]
+
+### ITEM 06d546eff3057e18
+PAGE: Palaivana Solai (1981 film)
+SENTENCE: In 1982, it was remade in Telugu as Manchu Pallaki (with Suhasini reprising her role) and in Malayalam as Ithu Njangalude Katha.
+OTHER FILMS: ["Manchu Pallaki"]
+
+### ITEM cacdb963a41e28c3
+PAGE: Wife, Husband and Friend
+SENTENCE: The film was remade as Everybody Does It (1949), starring Paul Douglas as the contractor, Celeste Holm as his wife, and Linda Darnell as the singer.
+OTHER FILMS: ["Everybody Does It"]
+
+### ITEM 10569fb99a39e98f
+PAGE: Rocky – The Rebel
+SENTENCE: It is an official remake of the Telugu film Raghavendra (2003).
+OTHER FILMS: ["Raghavendra (film)"]
+
+### ITEM c4234a715a01184c
+PAGE: Vegam (2007 film)
+SENTENCE: It is an unofficial remake of the American film Cellular. It was remade again in Tamil as Nayagan.
+OTHER FILMS: ["Cellular (film)", "Nayagan (2008 film)"]
+
+### ITEM a9f80bb114eb0db3
+PAGE: Aashiqui 2
+SENTENCE: It is an adaptation of both the original 1937 version and the 1976 remake of A Star is Born.{{Efn|The 1937 film is in the public domain and was based on the film What Price Hollywood? (1932), itself adapted from a story by [[Adela Rogers St.
+OTHER FILMS: ["A Star Is Born (1937 film)", "A Star Is Born (1976 film)", "What Price Hollywood?"]
+
+### ITEM 1dacc357596c2d65
+PAGE: Rojavai Killathe
+SENTENCE: A remake of the 1988 Hindi film Tezaab, it stars Arjun and Khushbu with Tiger Prabhakar as the antagonist.
+OTHER FILMS: ["Tezaab"]
+
+### ITEM 8334424956b3385a
+PAGE: Anuraga Aralithu
+SENTENCE: It was later remade in seven other languages – in Tamil and Telugu as Mannan and Gharana Mogudu (both in 1992), in Hindi as Laadla (1994), in Sinhala as Mal Hathai (1996), in Odia as Sindura Nuhein Khela Ghara (2002), in Bengali as Jamaibabu Jindabad (2001) in India, and as Shami Strir Juddho (2002) in Bangladesh.
+OTHER FILMS: ["Mannan (film)", "Laadla (1994 film)"]
+
+### ITEM 03e77ee7ce6201c9
+PAGE: The Gambler (1995 film)
+SENTENCE: Gambler is a 1995 Indian Hindi-language action thriller film directed by Dayal Nihalani, which is a remake of the Malayalam film Aanaval Mothiram (1991).
+OTHER FILMS: ["Aanaval Mothiram"]
+
+### ITEM efafa8ce8046bab5
+PAGE: Singham (2011 film)
+SENTENCE: A remake of the 2010 Tamil film Singam by Hari, the film stars Ajay Devgn as the titular character Bajirao, an honest police officer, while Kajal Aggarwal, who returns to Hindi films in her first full–fledged role, and Prakash Raj, who reprises his role from the original film, appear as leads.
+OTHER FILMS: ["Singam"]
+
+### ITEM a6c2f4cdd0472180
+PAGE: Jawab (1970 film)
+SENTENCE: The film is a remake of the Tamil movie Periya Idathu Penn (1963), with [[M.
+OTHER FILMS: ["Periya Idathu Penn"]
+
+### ITEM 2fb9351db449f8de
+PAGE: Ullasa Utsaha
+SENTENCE: A remake of the 2008 Telugu film Ullasamga Utsahamga, it was released after a four month delay.
+OTHER FILMS: ["Ullasamga Utsahamga"]
+
+### ITEM dabe1851680f9876
+PAGE: Kirataka
+SENTENCE: It is a remake of Tamil film Kalavani (2010).
+OTHER FILMS: ["Kalavani"]
+
+### ITEM 7205bb09bc05166a
+PAGE: The Thief of Bagdad (1924 film)
+SENTENCE: The superb visual design, spectacle, imaginative splendor, and visual effects, along with his bravura performance (leading a cast of literally thousands), all contribute to making this his masterpiece." The film was remade several times; the 1940 Technicolor version split the main character into two: a deposed prince and a thief, the latter played by Sabu.
+OTHER FILMS: ["The Thief of Bagdad (1940 film)"]
+
+### ITEM 39f35bd6759ac822
+PAGE: Policekaran Magal
+SENTENCE: It was later remade in Telugu as Constable Koothuru (1963) and in Malayalam as Vyaamoham (1978).
+OTHER FILMS: ["Constable Koothuru"]
+
+### ITEM aa14c83dd950a803
+PAGE: En Purushan Kuzhandhai Maadhiri
+SENTENCE: The film was remade in Telugu as Maa Ayana Chanti Pilladu.
+OTHER FILMS: ["Maa Ayana Chanti Pilladu"]
+
+### ITEM ca1d68001e85a1cb
+PAGE: Pallandu Vazhga
+SENTENCE: A remake of the 1957 Hindi film Do Aankhen Barah Haath, it stars [[M.
+OTHER FILMS: ["Do Aankhen Barah Haath"]
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/remakes/statements/r1_000.out.json as a JSON list with one object per item: {"item": "<the code after ITEM>", "links": [{"film": "<title exactly as listed>", "relation": "...", "wording": "..."}]} with one entry in "links" for every film listed under OTHER FILMS. Write nothing else to that file.

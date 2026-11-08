@@ -1,0 +1,128 @@
+[
+  {
+    "id": 10030670,
+    "kind": "film",
+    "year": 1978,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Hound of the Baskervilles",
+        "tier": "B",
+        "quote": "The Hound of the Baskervilles is a 1978 British comedy film spoofing the 1902 novel The Hound of the Baskervilles by Sir Arthur Conan Doyle."
+      }
+    ],
+    "other_sources": []
+  },
+  {
+    "id": 8267581,
+    "kind": "film",
+    "year": 1945,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Five Orange Pips",
+        "tier": "B",
+        "quote": "Directed by Roy William Neill, it is loosely based on the 1891 short story \"The Five Orange Pips\" by Arthur Conan Doyle."
+      }
+    ],
+    "other_sources": []
+  },
+  {
+    "id": 2175456,
+    "kind": "film",
+    "year": 1965,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": []
+  },
+  {
+    "id": 306812,
+    "kind": "film",
+    "year": 1986,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Red-Headed League",
+        "tier": "C",
+        "quote": "whose voice, sampled from a 1966 reading of \"The Red-Headed League\" was the voice of Holmes in this film"
+      }
+    ],
+    "other_sources": [
+      "Basil of Baker Street (children's book series by Eve Titus and Paul Galdone)",
+      "The Castle of Cagliostro (1979 film; inspiration for the clock tower climax)"
+    ]
+  },
+  {
+    "id": 34402549,
+    "kind": "film",
+    "year": 1914,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Hound of the Baskervilles",
+        "tier": "A",
+        "quote": "Der Hund von Baskerville is a 1914 German silent film adaptation of Arthur Conan Doyle's 1902 novel The Hound of the Baskervilles, the first film adaptation of the work."
+      }
+    ],
+    "other_sources": [
+      "Der Hund von Baskerville: Schauspiel in vier Aufzügen aus dem Schottischen Hochland (play by Ferdinand Bonn)"
+    ]
+  },
+  {
+    "id": 8101785,
+    "kind": "video_game",
+    "year": 2004,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": [
+      "The Adventures of Sherlock Holmes (collection; \"inspired by\")",
+      "unpublished pastiche novel by Jalil Amr"
+    ]
+  },
+  {
+    "id": 3524282,
+    "kind": "film",
+    "year": 1946,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Adventure of the Six Napoleons",
+        "tier": "C",
+        "quote": "The film has an original story, but combines elements of the short stories \"The Adventure of the Six Napoleons\" and \"A Scandal in Bohemia.\""
+      },
+      {
+        "story": "A Scandal in Bohemia",
+        "tier": "C",
+        "quote": "The film has an original story, but combines elements of the short stories \"The Adventure of the Six Napoleons\" and \"A Scandal in Bohemia.\""
+      }
+    ],
+    "other_sources": []
+  },
+  {
+    "id": 1764629,
+    "kind": "video_game",
+    "year": 1987,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": []
+  },
+  {
+    "id": 18702162,
+    "kind": "film",
+    "year": 1933,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "A Study in Scarlet",
+        "tier": "C",
+        "quote": "The title is taken from Arthur Conan Doyle's 1887 novel of the same name, the first in the Holmes series, but the screenplay by Robert Florey was original."
+      },
+      {
+        "story": "The Adventure of the Empty House",
+        "tier": "C",
+        "quote": "Merrydew's name may have been inspired by the villain referred to by Holmes as \"Merridew of abominable memory\" in The Adventure of the Empty House."
+      }
+    ],
+    "other_sources": []
+  }
+]

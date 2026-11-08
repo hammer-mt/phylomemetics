@@ -1,0 +1,136 @@
+You are helping to build a research corpus about Sherlock Holmes on screen. For each article below, record what THE ARTICLE ITSELF SAYS the work is based on. You are not asked what you know about the work or about the stories.
+
+For each article give:
+- "kind": one of "film", "tv_episode", "tv_film", "video_game", "series" (an article about a whole film series, television series or game series, not one work), "other".
+- "year": the year of first release or broadcast that the article gives (an integer), or null.
+- "holmes_appears": true if the article presents Sherlock Holmes as a character in the work, else false.
+- "sources": a list, possibly empty, of the Conan Doyle stories the article names as a source of the work. Each entry has:
+    "story": the story's title, copied exactly from the list of the 60 canonical stories given below;
+    "tier": "A", "B" or "C" by the rule below;
+    "quote": the sentence or infobox entry of the article that says so, copied word for word (at most 40 words).
+- "other_sources": a list of any source the article names that is not one of the 60 stories (a play, a later novel, another film), as short strings. Empty if none.
+
+The tiers. Use the article's own wording.
+- Tier A, a stated adaptation. The article says outright that the work is an adaptation of the story, is based on it, is a version of it, or dramatises it, with no loosening word. An infobox entry "based on" that names the story counts.
+- Tier B, a stated loose adaptation. The article says the work is loosely, partly or freely based on the story, or is a modern-day or updated adaptation of it, or takes its plot from it while changing it, or is credited as an adaptation although the plot differs.
+- Tier C, elements only. The article says the work is inspired by the story, borrows or uses elements, characters, a device, a line or its title from it, alludes or refers to it, or that critics see a resemblance.
+
+Rules.
+- Use only what the article says about the work's sources. Do not add a source from your own knowledge, and do not infer one from character names or from anything else.
+- If the article names several stories, give each its own entry and its own tier.
+- If the article says the screenplay is original, or names no canonical story as a source, "sources" is an empty list.
+- A statement that the work features characters created by Conan Doyle is not a source statement.
+- A story named only as the source of a DIFFERENT work (an earlier film, a sequel) is not a source of this one.
+
+The 60 canonical stories (copy a title exactly as written here):
+- A Study in Scarlet
+- The Sign of the Four
+- The Hound of the Baskervilles
+- The Valley of Fear
+- A Scandal in Bohemia
+- The Red-Headed League
+- A Case of Identity
+- The Boscombe Valley Mystery
+- The Five Orange Pips
+- The Man with the Twisted Lip
+- The Adventure of the Blue Carbuncle
+- The Adventure of the Speckled Band
+- The Adventure of the Engineer's Thumb
+- The Adventure of the Noble Bachelor
+- The Adventure of the Beryl Coronet
+- The Adventure of the Copper Beeches
+- The Adventure of Silver Blaze
+- The Adventure of the Cardboard Box
+- The Adventure of the Yellow Face
+- The Adventure of the Stockbroker's Clerk
+- The Adventure of the Gloria Scott
+- The Adventure of the Musgrave Ritual
+- The Adventure of the Reigate Squire
+- The Adventure of the Crooked Man
+- The Adventure of the Resident Patient
+- The Adventure of the Greek Interpreter
+- The Adventure of the Naval Treaty
+- The Final Problem
+- The Adventure of the Empty House
+- The Adventure of the Norwood Builder
+- The Adventure of the Dancing Men
+- The Adventure of the Solitary Cyclist
+- The Adventure of the Priory School
+- The Adventure of Black Peter
+- The Adventure of Charles Augustus Milverton
+- The Adventure of the Six Napoleons
+- The Adventure of the Three Students
+- The Adventure of the Golden Pince-Nez
+- The Adventure of the Missing Three-Quarter
+- The Adventure of the Abbey Grange
+- The Adventure of the Second Stain
+- The Adventure of Wisteria Lodge
+- The Adventure of the Red Circle
+- The Adventure of the Bruce-Partington Plans
+- The Adventure of the Dying Detective
+- The Disappearance of Lady Frances Carfax
+- The Adventure of the Devil's Foot
+- His Last Bow (short story)
+- The Adventure of the Mazarin Stone
+- The Problem of Thor Bridge
+- The Adventure of the Creeping Man
+- The Adventure of the Sussex Vampire
+- The Adventure of the Three Garridebs
+- The Adventure of the Illustrious Client
+- The Adventure of the Three Gables
+- The Adventure of the Blanched Soldier
+- The Adventure of the Lion's Mane
+- The Adventure of the Retired Colourman
+- The Adventure of the Veiled Lodger
+- The Adventure of Shoscombe Old Place
+
+The articles follow. The plot summaries have been left out on purpose.
+
+### ARTICLE id 1764629: Sherlock: The Riddle of the Crown Jewels
+Infobox: {"developer": "Challenge, Inc.", "released": "Release 21: December 14, 1987Release 26: January 27, 1988", "genre": "Interactive fiction"}
+[Lead] Sherlock: The Riddle of the Crown Jewels is an interactive fiction game designed by Bob Bates and published by Infocom in 1987. It was released for the Apple II, MS-DOS Commodore 64, Amiga, and Mac. Sherlock is based on the legendary fictional detective Sherlock Holmes, created by Sir Arthur Conan Doyle. It is Infocom's thirty-first game and is the first of two Infocom games developed by Challenge, Inc. using Infocom's development tools.
+[Production] Sherlock: The Riddle of the Crown Jewels was the first Infocom game to be developed by another company, Challenge Inc, published by Infocom in their "Immortal Legends" genre. The only other game published in this line was Arthur: The Quest for Excalibur, also written by Bates.
+
+### ARTICLE id 3591767: Terror by Night
+Infobox: {"director": "Roy William Neill", "writer": "Frank Gruber"}
+[Lead] Terror by Night is a 1946 British Sherlock Holmes crime drama film directed by Roy William Neill and starring Basil Rathbone and Nigel Bruce. It was written by Frank Gruber. The story revolves around the theft of a famous diamond aboard a train. The film's plot is a mostly original story not directly based on any of Arthur Conan Doyle's Holmes tales, but it uses minor plot elements of "The Adventure of the Blue Carbuncle," "The Adventure of the Empty House," "The Disappearance of Lady Frances Carfax," and "The Sign of Four". The film is one of four films in the series which are in the public domain.
+
+### ARTICLE id 59894064: Enola Holmes (film)
+Infobox: {"director": "Harry Bradbeer", "screenplay": "Jack Thorne"}
+[Lead] Enola Holmes is a 2020 mystery film starring Millie Bobby Brown as the title character, the teenage sister of the already famous Victorian-era detective Sherlock Holmes. The film is directed by Harry Bradbeer from a screenplay by Jack Thorne that adapts the first novel in The Enola Holmes Mysteries series by Nancy Springer. It tells the story of Sherlock Holmes and Mycroft Holmes' younger sister Enola who travels to London to find her missing mother, but pairs up with a runaway lord as they attempt to solve a mystery that threatens the country. The film also stars Henry Cavill, Sam Claflin, and Helena Bonham Carter. Filming began in July 2019. Originally planned for a cinematic release by Warner Bros. Pictures, the distribution rights to the film were picked up by Netflix due to the COVID-19 pandemic. Enola Holmes was released on September 23, 2020. The film received positive reviews from critics, who praised Brown's performance. It became one of the most-watched original Netflix film releases, with an estimated 76 million households watching the film over its first four weeks. A sequel, Enola Holmes 2, was released on Netflix on November 4, 2022. A third film, Enola Holmes 3, was released on July 1, 2026.
+[Production] By February 2019, a film adaptation of the book series The Enola Holmes Mysteries by Nancy Springer was in development at Legendary Pictures, with Millie Bobby Brown producing and starring in the title role and Harry Bradbeer set to direct. The film adapts the first book, The Case of the Missing Marquess, in which the younger sister of famed detective Sherlock Holmes goes on an adventure after her mother's disappearance. Brown had read the books with her older sister Paige and immediately wanted to play the role of Enola, but wasn't yet old enough to play the character. She later told her father they should make it into a film and partnered with Legendary Pictures, the same company she had previously worked with on Godzilla: King of the Monsters. Brown and Bradbeer discussed the film and wanted energy, emotion and eccentricity as key elements of the film. Brown discussed with writer Jack Thorne how she wanted to break the fourth wall. Bradbeer was enthusiastic about the script since it combined his interest in stories about "dysfunctional families coming to terms with each other" with his love of Sherlock Holmes. Brown took the opportunity to improvise, something she would not do on television series Stranger Things, which is heavily scripted and because the character of Enola Holmes allowed for it. Capturing those moments and keeping up with Brown proved challenging for the focus puller. In June 2019, Henry Cavill, Helena Bonham Carter, Adeel Akhtar and Fiona Shaw joined the cast, with Sam Claflin, Louis Partridge, Susie Wokoma and Burn Gorman joining in July as filming began in London. Railway scenes were filmed in Worcestershire at Arley railway station, Kidderminster Town railway station and Victoria Bridge on the Severn Valley Railway. The Holmes family residence Ferndell Hall was filmed at Benthall Hall in Shropshire. Benthall Hall had not previously been used as a filming location, and the production design team received great help from the head groundskeeper who allowed the place to become overgrown to achieve the look they needed. Interiors were shot at West Horsley Place in Surrey. False walls were put up and inspired by the Arts and Crafts movement they included plant motifs in the decorations and period wallpaper. The East End and Limehouse Lane locations were created among outbuildings at Luton Hoo in Bedfordshire. The scene in which Sherlock and Mycroft try to meet Enola was filmed at Drum Court within HM Treasury Buildings in Westminster. Bonham Carter called her role the "smallest, greatest part I've been offered" and her agent tried to discourage her from taking on such a minor part. She was appreciative of the depth of the character despite her limited screen time. In the final cut, Eudoria did ultimately appear more than in the initial script. Consolata Boyle was responsible for creating the costumes. Boyle and her team custom-designed, dyed and made the costumes for the main cast and background actors. Approximately thirty costumes were created for Enola, and costumes such as the red powderpuff dress had to be repeated several more times because of the physicality of the role and any damage that might occur during fight scenes. The powderpuff dress was based on theatrical costumes of the period, and Boyle wanted to use red, the color of courage. Boyle's favorite was Enola's final dress, it used the same shape as the first dress Enola wore while riding the bicycle bringing the costumes back full circle, but also the natural untreated silk used in the final dress has no strong color and "it allows for anything to happen next." The colors violet, green and ivory were associated with the suffragette movement so Boyle consciously made use of those colors in the costumes. Visual effects were supervised by Michael Ellis and done by Mr. X and Host VFX. Lawsuit The Conan Doyle Estate filed a lawsuit against Netflix over the film, claiming it violated copyright by depicting Sherlock Holmes as emotional about his relationships. They argued this aspect of the character did not fall under the public domain as he was only described as having emotions in stories published between 1923 and 1927, and the copyright for the stories published in that period still had not expired under copyright law in the United States. Cavill said that his portrayal of Sherlock was "a lot more emotional to begin with, so we pared it back, and we said, 'Alright, let's not make it too emotional'." On the lawsuit he said, "It's a character from a page which we worked out from the screenplay. The legal stuff is above my pay grade." On October 30, 2020, lawyers for the defendants filed a motion to dismiss, saying the estate was unfairly attempting to prevent the fair use of characters that are "undeniably in the public domain". On December 18, 2020, the lawsuit was dismissed with prejudice by stipulation of all parties. In 2023, the final Sherlock Holmes stories entered the public domain as the US copyrights for The Case-Book of Sherlock Holmes expired. Music In July 2019, Daniel Pemberton was announced as composer of the film's score. The soundtrack was released on September 23, 2020. Pemberton described it as "unashamedly melodic and emotional orchestral music" with some "messy quirky oddness thrown in as well".
+[Sequel] In September 2020, Brown and Bradbeer acknowledged their intentions to develop a sequel. Brown said she thought only about making the first film until she was on set, then she loved playing the character and said it would be a dream to do it again. On May 13, 2021, Enola Holmes 2 was officially announced, with writer Jack Thorne and director Harry Bradbeer returning while Brown and Cavill would reprise their roles. In September 2021, it was announced that Partridge and Bonham Carter would reprise their roles. Production and filming began in Autumn 2021 and wrapped in January 2022. The film was released on Netflix on November 4, 2022.
+
+### ARTICLE id 28300492: The Great Game (Sherlock)
+Infobox: {"series": "Sherlock", "writer": "Mark Gatiss", "director": "Paul McGuigan"}
+[Lead] "The Great Game" is the third and final episode of the first series of the television series Sherlock. It was first broadcast on BBC One and BBC HD on 8 August 2010. It was written by Mark Gatiss and directed by Paul McGuigan. The episode follows Sherlock Holmes (Benedict Cumberbatch) and John Watson (Martin Freeman) as they race to solve a series of seemingly unrelated cases presented by a mysterious bomber. If they fail to solve the case in the time specified by the bomber, he will kill the hostage he is holding. After four such cases, the episode ends in a standoff between Holmes and the bomber, who it turns out is Jim Moriarty, the "consulting criminal" and the main antagonist for the rest of the series. The standoff is left as a cliffhanger until Season 2. Like its predecessors, the episode features numerous references to the works of Arthur Conan Doyle. Critical reception of "The Great Game" was highly positive, being praised for its complex and gripping plot, and its unusual and original portrayal of Moriarty.
+[Production] According to the DVD commentary, "The Great Game" was the first episode of Sherlock to be produced after the BBC accepted the series. The series was filmed in reverse order because co-creator Steven Moffat, the writer of the first episode "A Study in Pink", was busy with the fifth series of Doctor Who. Andrew Scott made his first appearance as Jim Moriarty in "The Great Game". Moffat said, "We knew what we wanted to do with Moriarty from the very beginning. Moriarty is usually a rather dull, rather posh villain so we thought someone who was genuinely properly frightening. Someone who's an absolute psycho." Moffat and Gatiss were originally not going to put a confrontation between Moriarty and Sherlock into the first three episodes, but realised that they "just had to do a confrontation scene. We had to do a version of the scene in 'The Final Problem' in which the two arch-enemies meet each other." Sherlock's residence at 221B Baker Street was filmed at 185 North Gower Street. Baker Street was impractical because of heavy traffic and the number of things labelled "Sherlock Holmes", which would need to be disguised. The laboratory used by Sherlock was filmed at Cardiff University School of Earth and Ocean Sciences. "The Great Game" was partly set in a disused sewage works.
+[Broadcast and reception] "The Great Game" was first broadcast on BBC One on 8 August 2010. Overnight figures had been watched by 7.34 million viewers on BBC One and BBC HD, a 31.3% audience share. Final viewing figures rose to 9.18 million. Critical reception was highly positive. Chris Tilly of IGN rated "The Great Game" a 9.5 out of 10, describing it as "gripping from start to finish". Of Moriarty's appearance, he said it "didn't disappoint either, the villain of the piece being unlike any incarnation of the character yet seen on screen". He also praised the writing, saying, "Credit should go to writer Mark Gatiss, his script the perfect combination of classic Conan Doyle storytelling with modern-day plot devices and humour, creating a sophisticated mystery that was the perfect marriage of old and new.", and the performances of Cumberbatch and Freeman. John Teti, writing for The A.V. Club, awarded the episode an A− and called it an "extraordinarily dense 90 minutes". He further singled out Andrew Scott for praise, writing that his "portrayal of Moriarty is a thrilling departure from earlier incarnations of the man". The Guardian's Sam Wollaston was optimistic for the programme, describing it as "smart, exciting, and just the right level of confusing" and described "The Great Game" as "a mash-up that totally works" and "an edge-of-the seat ride".
+
+### ARTICLE id 51743654: The Lying Detective
+Infobox: {"series": "Sherlock", "director": "Nick Hurran", "writer": "Steven Moffat"}
+[Lead] "The Lying Detective" is the second episode of the fourth series of the British television series Sherlock, and the twelfth episode overall. The episode was first broadcast on BBC One, BBC First, PBS and Channel One on 8 January 2017.
+[Production] The episode was based loosely on the Doyle short story "The Adventure of the Dying Detective". The villain, Culverton Smith, was loosely based on disgraced British entertainer and charity fundraiser Jimmy Savile, who was exposed as a prolific predatory sex offender in 2012. Sam Wolfson of The Guardian noted that the Savile-esque character must have caused consternation behind the scenes at the BBC. Wolfson gave "a respectful nod to the BBC," writing, "There must have been some unease in the corporation about having an episode in their flagship drama series in which a beloved public figure... uses his position of power and fame to commit monstrous crimes."
+[Broadcast and reception] The episode received positive reviews from critics. Kaite Welsh of IndieWire graded "The Lying Detective" an A+, particularly the plotline of Sherlock descending into drug addiction: "He really does turn his kitchen into a meth lab, he is weeks away from death and hallucinating. It's the flip side of the genius that carries the show." Vox rated the episode 3.5/5 stars. Sean O'Grady of The Independent gave the episode 4/5 stars, describing it as "Rarely can drama have come so morbidly loaded as last night's Sherlock, and rarely carry so much morbid fascination for the viewer". IGN gave the episode a good rating with a 7/10, describing it as "hampered by another unsatisfying case and some odd story beats". Allison Shoemaker of The A.V. Club praised the episode and the story, grading it a B+, writing, "'The Lying Detective' does what it does so dazzlingly well that it's easy to overlook its misses... It's got a couple of good twists, some familiar to readers of the stories and others not. It's affecting and funny and moving and smart, and in short, a great script. But just because something checks all the right boxes doesn't mean it totally works, and Steven Moffat's script falls a bit flat where it really counts. It's as if he's blinded to the big picture by his own considerable gifts. This is a great Sherlock/Watson story with time to spare for everything but them."
+
+### ARTICLE id 28149585: Lelíček in the Services of Sherlock Holmes
+Infobox: {"director": "Karel Lamač", "screenplay": "Václav Wasserman"}
+[Lead] Lelíček in the Services of Sherlock Holmes is a 1932 Czech comedy film directed by Karel Lamač, starring Vlasta Burian. Sherlock Holmes was portrayed by Martin Frič. The main character is František Lelíček, who accepts an offer to act as a double for the Puerto Rican King Fernando XXIII as he is deeply in debt. Vlasta Burian plays both roles. The director Karel Lamač simultaneously shot the French version of the film Le Roi bis with Pierre Bertin in the main double role (while the detective was again played by Frič and the queen by Truda Grosslichtová). Lamač went on to film The Hound of the Baskervilles, 'in Germany in 1937.
+
+### ARTICLE id 2631894: The Pearl of Death
+Infobox: {"director": "Roy William Neill", "screenplay": "Bertram Millhauser"}
+[Lead] The Pearl of Death is a 1944 Sherlock Holmes film starring Basil Rathbone as Holmes and Nigel Bruce as Dr. Watson, the ninth of fourteen such films the pair made. The story is loosely based on Conan Doyle's short story "The Adventure of the Six Napoleons" but features some additions, such as Evelyn Ankers as an accomplice of the villain played by Miles Mander, and Rondo Hatton as a brutal killer.
+[The Creeper] Universal Studios attempted to capitalise on Rondo Hatton's effective portrayal of the Hoxton Creeper, casting him in two more (unrelated) films as "the Creeper": House of Horrors (filmed in 1945, but not released until 1946, after Hatton's death) and The Brute Man (1946, also released posthumously). A character called "The Golem," a direct reference to the Creeper, appears in the third episode of the first series of Sherlock. Like the Creeper, the Golem is a brutal assassin who crushes his victims with his bare hands.
+
+### ARTICLE id 11350840: Sherlock Holmes in Washington
+Infobox: {"director": "Roy William Neill", "writer": "Bertram MillhauserLynn Riggs"}
+[Lead] Sherlock Holmes in Washington (1943) is the fifth film in the Basil Rathbone/Nigel Bruce series of Sherlock Holmes movies. The plot is an original story not based on any of Sir Arthur Conan Doyle's Holmes tales.
+[Production] Cast notes Despite moving the film to the contemporary World War II period, the roles of Sherlock Holmes and Dr. Watson were retained by Rathbone and Bruce, respectively. John Archer and Marjorie Lord, who play an engaged couple in this film, were actually married when it was made. The two main villains played Holmes' nemesis Professor Moriarty in other films, George Zucco in The Adventures of Sherlock Holmes (1939), and Henry Daniell in The Woman in Green (1945). Gerald Hamer, who was in four more of Rathbone's Holmes movies, briefly appears in this one, in an uncredited but pivotal role. Development As in the previous two films, Sherlock Holmes and the Voice of Terror (1942) and Sherlock Holmes and the Secret Weapon (1943), Universal Pictures transplanted the Holmes characters from Victorian London to World War II. This was done to use the war as a topical background for the films' stories and themes. The film also serves as the first of the series to be wholly original and not based on any previously written material. The film's writing duo, Lynn Riggs and Bertram Millhauser, would collaborate on a Holmes picture for the first and only time. Riggs had written Sherlock Holmes and the Voice of Terror, while Millhauser would go on to write Sherlock Holmes Faces Death (1943) and The Woman in Green (1945).
+
+### ARTICLE id 51743625: The Six Thatchers
+Infobox: {"series": "Sherlock", "writer": "Mark Gatiss", "director": "Rachel Talalay"}
+[Lead] "The Six Thatchers" is the first episode of the fourth series of the British television programme Sherlock, and the eleventh episode overall. The episode was first broadcast on BBC One, BBC First, PBS and Channel One on 1 January 2017.
+[Production] Locations Series 4 was primarily filmed at Pinewood Studio Wales. Several location scenes for this episode were filmed in London: scenes involving the bloodhound were filmed at Borough Market and Trinity Church Square in Southwark; Cumberbatch was also filmed on Vauxhall Bridge running towards the SIS Building. Also filming occurred in the Jemaa el-Fnaa square in Marrakesh, Morocco.
+[Broadcast and reception] The episode premiered in the United Kingdom, the United States, Australia, Latin America, and some parts of Russia simultaneously. In the UK, it was premiered at 8:30 pm GMT on BBC One. In the US, it premiered at 9:00 pm ET/PT on PBS. In Australia, it premiered on subscription streaming service Stan at 10:00 pm AEDT on 2 January. In Latin America, it premiered at 1:00 am GMT on BBC Entertainment. In European part of Russia, it aired on 23:31 MSK ON Channel One Russia, while airing in other parts of Russia and in some CIS states on the same channel on January 3 at 20:55 MSK. The Six Thatchers received mixed reviews. The Guardian was positive, saying "Cumberbatch channels Bond in the most explosive outing yet". IGN gave a mixed review a 5.5/10 calling it "Mediocre" and "Sherlock returns with a confused and confusing case involving Margaret Thatcher's head." Digital Spy called it "satisfying enough" and saying "'The Six Thatchers' is an engaging outing with one fatal flaw. Everything works... apart from the one thing that really needs to." The Daily Telegraph gave a good review with a rating of 4/5 stars, calling it "a dizzying triumph of complex plotting." After Ralph Jones, in an opinion piece in The Guardian, criticised the episode for making Sherlock into a James Bond-style action hero, Mark Gatiss wrote in personally and responded in the form of verse.
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/tiers/r2_04.out.json as a JSON list with one object per article, each with the keys "id" (the number after "ARTICLE id"), "kind", "year", "holmes_appears", "sources", "other_sources". Write nothing else to that file.

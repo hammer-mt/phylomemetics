@@ -74,7 +74,9 @@ def holmes_spec(neutral=None, extra=None):
     ints = lambda m: {int(a): [int(x) for x in v] for a, v in m.items()}        # noqa: E731
     S.subsets = {"straight_adaptations": ints(sp["adaptations_straight"]), "elements_only_works_tier_C_sources": ints(sp["adaptations_elements_only"])}
     S.straight, S.later_wide, S.name_free = S.subsets["straight_adaptations"], lib.A(sp["later"]), {"file": str(neutral), "stand_in": neutral != real}
-    S.franchise_narrow, S.statistic = lib.A(sp["franchise_where_holmes_appears"]), "mean_over_sources"         # PLAN Sections 12 (item 5) and 8
+    # PLAN Section 12, item 5: the franchise narrowed two ways, and the negatives without the film that is also a Batman-study text
+    S.franchise_narrow = {"works_where_holmes_appears": lib.A(sp["franchise_where_holmes_appears"]), "films_only": lib.A(sp["franchise_films_only"])}
+    S.shared_with_batman, S.statistic = set(sp["texts_shared_with_the_batman_study"]), "mean_over_sources"
     return S
 
 
@@ -93,7 +95,7 @@ def batman_spec():
     S = lib.Spec(d, "data/corpus.jsonl", "data/corpus_neutral.jsonl", "data/pageviews.json")
     S.subsets = {"strong_subset": {a: v for a, v in ad.items() if a in ids(X.STRONG)}}
     S.straight, S.later_wide, S.name_free = S.subsets["strong_subset"], None, {"file": "data/corpus_neutral.jsonl", "stand_in": False}
-    S.franchise_narrow, S.statistic = None, "mean_over_adaptations"
+    S.franchise_narrow, S.shared_with_batman, S.statistic = {}, set(), "mean_over_adaptations"
     return S
 
 
@@ -249,8 +251,15 @@ def unit_tests(S, src, base, n_plots, null, n_null=1000, keep=None, full=True, p
     res = {"plane": plane, "n_units_present_in_some_text": int(len(src.units)), "n_units_used": int(keep.sum()), "n_distinctive_units_used": int(d.sum()),
            "n_background_plots": int(n_plots)}
     res["E1"], mats = e1_for(S.franchise)
-    if full and S.franchise_narrow is not None:                         # PLAN Section 12, item 5
-        res["E1_franchise_narrowed"] = dict(e1_for(S.franchise_narrow)[0], n_franchise=len(S.franchise_narrow))
+    if full:                                                            # PLAN Section 12, item 5
+        for name, ids in S.franchise_narrow.items():
+            res[f"E1_franchise_narrowed_to_{name}"] = dict(e1_for(ids)[0], n_franchise=len(ids))
+        if mats.get("A_name_free") is not None and (S.shared_with_batman & set(S.negatives.tolist())):
+            keep_neg = np.array([j not in S.shared_with_batman for j in S.negatives.tolist()])
+            M = mats["A_name_free"][:, keep_neg]
+            res["E1_without_the_negative_shared_with_the_batman_study"] = {
+                "left_out": sorted(S.shared_with_batman & set(S.negatives.tolist())), "n_negatives": int(keep_neg.sum()), "auc_pooled": float(M.mean()),
+                "auc_within_era": float(lib.within_era(M, S.era[S.franchise], S.era[S.negatives][keep_neg])) if era is not None else None}
     a = res["E1"]["A_name_free"]
     print(f"  E1 pooled {a['negatives']['auc']:.3f} within era {a.get('within_era', {}).get('auc', float('nan')):.3f} canon {a['canon_units_median']} "
           f"-> {res['E1'].get('verdict_within_era', res['E1']['verdict_pooled'])['verdict']}", flush=True)
@@ -529,8 +538,10 @@ def run(a, S=None, dry_run=None):
         # PLAN Section 8: all four must hold; the fourth is the computed rule (review, change 2). With E2 not evaluable there is nothing to claim either way.
         four = {"decision_p_below_0.05": res["residual"]["decision"][k]["p"] < 0.05, "every_measure_p_below_0.05": res["residual"]["every_measure"][k]["p"] < 0.05,
                 "at_least_4_of_8_settings": n >= 4, "not_confined_to_pairs_whose_source_the_model_names": rule["residual_test"] == "holds"}
-        out["beyond_words_conditions"] = dict(four if ok else dict.fromkeys(four), settings_passing=n, recognition_rule=rule["residual_test"],
-                                              evaluable=ok, all_four_hold=bool(all(four.values())) if ok else None)
+        # PLAN Section 8 as frozen: on Holmes the residual test is REPORTED and is NOT confirmatory; whatever these say, no claim is made from them
+        out["residual_test_reported_not_confirmatory"] = dict(four if ok else dict.fromkeys(four), settings_passing=n, recognition_rule=rule["residual_test"],
+                                                              evaluable=ok, all_four_hold=bool(all(four.values())) if ok else None,
+                                                              reading="reported only: the paper does not say that units add to words on Holmes (PLAN Section 8)")
     if not ok:      # review, change 6: E2 and the residual test stay "not evaluable" (no confirmatory p); the first evaluable fallback setting is shown for description
         g = next((g for g in ("top1_20", "top3_30") if out.get("uncapped_settings", {}).get(g, {}).get("evaluable", {}).get("evaluable")), None)
         out["E2_fallback"] = {"label": "descriptive only: E2 is not evaluable at the primary setting, so E2 and the residual test are reported as not evaluable "
@@ -553,8 +564,8 @@ def words(a):
         out.get(f"residual_test_on_{what}_functions_of_the_regressors", {}).get("none_passes_with_the_regression_the_tests_use", True) for what in ("curved", "further")))
     out["seconds"], out["peak_memory_gb"] = round(time.time() - t0, 1), peak_gb()
     lib.save(out, a.out or (CACHE / "holmes" / "holmes_words_STANDIN.json" if S.name_free["stand_in"] else OUT / "holmes_words.json"))
-    if not out["no_word_only_measure_passes_the_residual_test"]:
-        sys.exit("holmes.py words: the residual test is NOT calibrated: a word-only measure passes it in the units' place (see the file just written)")
+    if not out["no_word_only_measure_passes_the_residual_test"]:        # this is why PLAN Section 8 reports the residual test on Holmes and makes no claim from it
+        print("holmes.py words: the residual test is not calibrated: word-only measures pass it in the units' place (see the file just written)")
 
 
 # ------------------------------------------------------------------ a dry run on made-up presence
@@ -639,7 +650,7 @@ def synthetic(a):
     print("  leave one adaptation out, largest p: E2", out["E2"]["leave_one_adaptation_out"]["largest_p"]["mean_over_sources"], "| decision test",
           r["decision_leave_one_adaptation_out"]["largest_p"]["mean_over_sources"])
     print(f"  positive control {pc['in_top_two']} of {pc['n']}; by story", pc["by_story"])
-    print("  confirmatory:", out["confirmatory"], "| the four conditions:", out.get("beyond_words_conditions"))
+    print("  confirmatory:", out["confirmatory"], "| the four conditions:", out.get("residual_test_reported_not_confirmatory"))
     if "E2_fallback" in out:                # review, change 6: reached with few units (for example --units 1600)
         fb = out["E2_fallback"]
         print("  E2 is not evaluable at the primary setting; fallback (descriptive only):", fb["setting"], fb["why_none"] or

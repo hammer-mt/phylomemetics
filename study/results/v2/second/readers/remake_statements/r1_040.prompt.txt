@@ -1,0 +1,222 @@
+You are helping to build a research corpus of film remakes from Wikipedia. Each item below gives the title of a film's Wikipedia page (PAGE), ONE sentence from the opening of that page, and the OTHER FILMS that sentence links to. For each other film, record what THE SENTENCE SAYS about PAGE and that film. You are not asked what you know about the films.
+
+For each other film give:
+- "relation":
+    "page_remakes_other"   the sentence says PAGE is a remake of the other film;
+    "other_remakes_page"   the sentence says the other film is a remake of PAGE (for example "it was remade in Telugu as ...");
+    "none"                 anything else.
+- "wording":
+    "firm"    the sentence states the remake plainly as a fact: "is a remake of", "an official remake of", "was remade as", "was remade in Hindi as";
+    "loose"   the sentence weakens or hedges it: "loosely", "partly", "unofficial", "uncredited", "inspired by", "based on the idea of", "reported to be", "said to be", "has been described as", "considered", "similar to", "reboot", "reimagining", "re-adaptation";
+    "" when the relation is "none".
+
+Rules.
+- Use only what the sentence says. Do not use your own knowledge of the films, and do not guess from titles or years.
+- If the sentence lists several films as remakes of PAGE, each of them is "other_remakes_page".
+- If the sentence says PAGE is a remake of X, and that X is itself a remake of or based on Y, then X is "page_remakes_other" and Y is "none", unless the sentence also says PAGE is a remake of Y.
+- "none" covers: a sequel, prequel or spin-off; a film that is only compared or mentioned; another remake of the same original (a sibling); a film based on the same novel, play or true story that the sentence does not call a remake; a film whose remake status the sentence denies; a dubbed version; a film shot at the same time in another language ("simultaneously", "bilingual").
+- If you cannot tell which film the word "remake" or "remade" applies to, answer "none".
+
+The items follow.
+
+### ITEM b0317d9be2f32090
+PAGE: Deadly Outbreak
+SENTENCE: Set in Israel, it is an unofficial remake of the 1988 film Die Hard, with the last act of the film also borrowing heavily from the 1994 film Speed, released two years earlier. The film was rated 3.2 on the Letterbox site.
+OTHER FILMS: ["Die Hard", "Speed (1994 film)"]
+
+### ITEM 181cc0635f6ac3fd
+PAGE: Where the Boys Are '84
+SENTENCE: A remake of the 1960 film Where the Boys Are, it was produced by Allan Carr.
+OTHER FILMS: ["Where the Boys Are"]
+
+### ITEM 060b96ba1d2cd4e2
+PAGE: The Hitcher (1986 film)
+SENTENCE: The film was followed by a 2003 sequel, The Hitcher II: I've Been Waiting, which featured Howell reprising his role, and a 2007 remake.
+OTHER FILMS: ["The Hitcher (2007 film)"]
+
+### ITEM 8882614095d321ff
+PAGE: Homeward Bound: The Incredible Journey
+SENTENCE: Robert Hays Kim Greist Veronica Lauren Kevin Chevalia Benj Thall}} Homeward Bound: The Incredible Journey is a 1993 American adventure comedy film and a remake of the 1963 film The Incredible Journey, which was based on the 1961 novel of the same name by Sheila Burnford.
+OTHER FILMS: ["The Incredible Journey (film)"]
+
+### ITEM 42bd8e726c3ccf27
+PAGE: The Crazies (2010 film)
+SENTENCE: A bilateral co-production between the United States and the United Arab Emirates, and the remake of the 1973 film of the same name, the film stars Timothy Olyphant, Radha Mitchell, Joe Anderson, and Danielle Panabaker.
+OTHER FILMS: ["The Crazies (1973 film)"]
+
+### ITEM d80013188efdcf81
+PAGE: Red Dawn
+SENTENCE: A remake was released in 2012.
+OTHER FILMS: ["Red Dawn (2012 film)"]
+
+### ITEM 02fbb85e42e14965
+PAGE: The Hills Have Eyes (2006 film)
+SENTENCE: It is a remake of Wes Craven's 1977 film of the same name.
+OTHER FILMS: ["The Hills Have Eyes (1977 film)"]
+
+### ITEM 21777a08ab0cae20
+PAGE: House on Haunted Hill (1999 film)
+SENTENCE: Produced by Robert Zemeckis and Joel Silver, it is a remake of the 1958 film directed by William Castle.
+OTHER FILMS: ["House on Haunted Hill"]
+
+### ITEM edd54c741773840d
+PAGE: Clash of the Titans (2010 film)
+SENTENCE: Zanuck]] Travis Beacham Phil Hay Matt Manfredi Sam Worthington Gemma Arterton Mads Mikkelsen Alexa Davalos Ralph Fiennes Liam Neeson Vincent Tabaillon Martin Walsh Legendary Pictures The Zanuck Company Thunder Road Pictures United States United Kingdom Australia Clash of the Titans is a 2010 action fantasy film and remake of the 1981 film of the same name produced by Metro-Goldwyn-Mayer (the rights to which had been acquired by [[Warner Bros.
+OTHER FILMS: ["Clash of the Titans (1981 film)"]
+
+### ITEM f6cae5dadec43aef
+PAGE: Cat People (1982 film)
+SENTENCE: It is a remake of the 1942 film of the same name, and was produced by RKO Radio Pictures, the same studio that produced the original film.
+OTHER FILMS: ["Cat People (1942 film)"]
+
+### ITEM b77588e84eefaacc
+PAGE: Freddy vs. Jason
+SENTENCE: The film marks Englund's final portrayal as Krueger and was the last released film in each franchise's continuity before their respective remake and reboot.
+OTHER FILMS: ["A Nightmare on Elm Street (2010 film)", "Friday the 13th (2009 film)"]
+
+### ITEM 5f6b2dc4e65dd2fe
+PAGE: The Invasion (film)
+SENTENCE: Pictures]] hired David Kajganich to write what was intended to be a relatively straightforward remake of the 1956 film Invasion of the Body Snatchers, but Kajganich amended the story to reflect contemporary times.
+OTHER FILMS: ["Invasion of the Body Snatchers"]
+
+### ITEM a83e35a174b0c301
+PAGE: Knight and Day
+SENTENCE: The film grossed $262 million worldwide and was remade in Hindi as Bang Bang!, with Hrithik Roshan and Katrina Kaif in the lead roles.
+OTHER FILMS: ["Bang Bang!"]
+
+### ITEM bf070751db8572ca
+PAGE: The Punisher (2004 film)
+SENTENCE: Marvel and Lions Gate began development on a sequel, which instead became the 2008 reboot Punisher: War Zone after Jane and Hensleigh left the project due to creative differences.
+OTHER FILMS: ["Punisher: War Zone"]
+
+### ITEM 2890b7d5c0c4b018
+PAGE: Return to the Blue Lagoon
+SENTENCE: The screenplay by Leslie Stevens used some basic elements from the sequel novels The Garden of God (1923) and The Gates of Morning (1925) and even from an earlier film adaptation of The Blue Lagoon (1949), but the film was more a remake than a sequel.
+OTHER FILMS: ["The Blue Lagoon (1949 film)"]
+
+### ITEM 384092ed8875252d
+PAGE: Flipper (1996 film)
+SENTENCE: Paul Hogan Elijah Wood Chelsea Field Isaac Hayes Jonathan Banks Flipper is a 1996 American adventure film and a remake of the 1963 film of the same name (which in turn began a TV series that ran from 1964 to 1967).
+OTHER FILMS: ["Flipper (1963 film)"]
+
+### ITEM 92a36e5fdca10128
+PAGE: Punisher: War Zone
+SENTENCE: Rather than a sequel to 2004's The Punisher, the film is a reboot that follows the war waged by vigilante Frank Castle / Punisher (played by Ray Stevenson) on crime and corruption, in particular on the disfigured mob boss known as Billy "Jigsaw" Russoti (Dominic West).
+OTHER FILMS: ["The Punisher (2004 film)"]
+
+### ITEM 88ef36f49bb2e711
+PAGE: Arthur (2011 film)
+SENTENCE: It is a remake of the 1981 film of the same name written and directed by Steve Gordon.
+OTHER FILMS: ["Arthur (1981 film)"]
+
+### ITEM 423d535e5b37a3bb
+PAGE: Casino Royale (2006 film)
+SENTENCE: Following Die Another Day (2002), Eon decided to reboot the franchise, attempting to provide a realistic and darker exploration of a less experienced and more vulnerable Bond.
+OTHER FILMS: ["Die Another Day"]
+
+### ITEM 387289e0ee7226b7
+PAGE: Love Don't Cost a Thing (film)
+SENTENCE: The film is a remake of the 1987 film Can't Buy Me Love and takes on its title from the Jennifer Lopez song of the same name.
+OTHER FILMS: ["Can't Buy Me Love (film)"]
+
+### ITEM 88f71864267c9a03
+PAGE: Omen III: The Final Conflict
+SENTENCE: Its theatrical release was the last for The Omen franchise until the 2006 remake, though a made-for-television sequel, Omen IV: The Awakening, released in 1991.
+OTHER FILMS: ["The Omen (2006 film)"]
+
+### ITEM 3923fb233d30c7e5
+PAGE: Cape Fear (1991 film)
+SENTENCE: It is a remake of the 1962 film, which is based on the 1957 novel The Executioners by [[John D.
+OTHER FILMS: ["Cape Fear (1962 film)"]
+
+### ITEM d6442c6cc2bdc127
+PAGE: Friday the 13th (1980 film)
+SENTENCE: Jason|a crossover]] with the A Nightmare on Elm Street film series, a 2009 series reboot and two television shows.
+OTHER FILMS: ["Friday the 13th (2009 film)"]
+
+### ITEM 1ecc5722b23c1c35
+PAGE: The Bad Seed (1985 film)
+SENTENCE: Based on the William March novel The Bad Seed (1954), the film is a remake of the original film The Bad Seed (1956) as directed by Mervyn LeRoy.
+OTHER FILMS: ["The Bad Seed (1956 film)"]
+
+### ITEM dbcb53d50930b064
+PAGE: The Killer Inside Me (1976 film)
+SENTENCE: A 2010 remake was directed by Michael Winterbottom.
+OTHER FILMS: ["The Killer Inside Me (2010 film)"]
+
+### ITEM b7b80081d37a1fb2
+PAGE: Ocean's Eleven (2001 film)
+SENTENCE: The first installment in the Ocean's film trilogy, it is a remake of the 1960 Rat Pack film.
+OTHER FILMS: ["Ocean's 11"]
+
+### ITEM 7693b92d804ee92d
+PAGE: Clash of the Titans (1981 film)
+SENTENCE: A 3D remake of the same name was released by Warner Bros. on April 2, 2010.
+OTHER FILMS: ["Clash of the Titans (2010 film)"]
+
+### ITEM 120e065d479bec9c
+PAGE: Fright Night (2011 film)
+SENTENCE: A remake of Tom Holland's 1985 film, the film's screenplay was adapted by Marti Noxon.
+OTHER FILMS: ["Fright Night"]
+
+### ITEM d4b657e04970ad3d
+PAGE: The Jackal (1997 film)
+SENTENCE: It is a loose remake of the 1973 film The Day of the Jackal, which was in turn based on the 1971 novel by Frederick Forsyth.
+OTHER FILMS: ["The Day of the Jackal (film)"]
+
+### ITEM 839c4add7534594c
+PAGE: Scarface (1983 film)
+SENTENCE: It is loosely based on the 1930 novel by Armitage Trail and is a remake of the 1932 film of the same name directed by Howard Hawks.
+OTHER FILMS: ["Scarface (1932 film)"]
+
+### ITEM a6a966d7a4aab31f
+PAGE: Brothers (2009 film)
+SENTENCE: The film is a remake of the 2004 Danish film by Susanne Bier, and both films take inspiration from the epic poem Odyssey by Homer.
+OTHER FILMS: ["Brothers (2004 film)"]
+
+### ITEM 46907b70d83fd0e7
+PAGE: The Ring (2002 film)
+SENTENCE: The film is the first installment in the American Ring series and a remake of the 1998 Japanese film, itself based on the 1991 novel by Koji Suzuki.
+OTHER FILMS: ["Ring (film)"]
+
+### ITEM af59f1babb0677b4
+PAGE: Cheaper by the Dozen (2003 film)
+SENTENCE: It is a remake of the 1950 film of the same name.
+OTHER FILMS: ["Cheaper by the Dozen (1950 film)"]
+
+### ITEM 68f74864010af11f
+PAGE: Changing Lanes
+SENTENCE: It was later remade in Hindi as Taxi No. 9211.
+OTHER FILMS: ["Taxi No. 9211"]
+
+### ITEM 0c7c38a67c5bb401
+PAGE: The Getaway (1972 film)
+SENTENCE: A film remake of the same name starring Alec Baldwin and Kim Basinger was released in 1994.
+OTHER FILMS: ["The Getaway (1994 film)"]
+
+### ITEM ee2090d769b586ed
+PAGE: Beauty and the Beast (1991 film)
+SENTENCE: Other derivate works include three direct-to-video follow-ups, a television series, a live-action remake in 2017, and a live-action/animated television special in 2022.
+OTHER FILMS: ["Beauty and the Beast (2017 film)"]
+
+### ITEM 0f1ce9cd216afb68
+PAGE: The Eye (2008 film)
+SENTENCE: It is a remake of the Pang brothers' 2002 film of the same name.
+OTHER FILMS: ["The Eye (2002 film)"]
+
+### ITEM 58ae15fc5d15354a
+PAGE: Overboard (1987 film)
+SENTENCE: In 1992, it was adapted in the Indian film Ek Ladka Ek Ladki, in 2006, it was adapted into the South Korean television series Couple or Trouble, and in 2018, it was remade with Anna Faris and Eugenio Derbez in reversed roles.
+OTHER FILMS: ["Ek Ladka Ek Ladki"]
+
+### ITEM 58b41526dfcf6af7
+PAGE: Dark Water (2005 film)
+SENTENCE: It is a remake of the 2002 Japanese film based on the short story "Floating Water" by Koji Suzuki, who also wrote the Ring trilogy.
+OTHER FILMS: ["Dark Water (2002 film)"]
+
+### ITEM 6ee32f59c546bb24
+PAGE: The Bad News Bears
+SENTENCE: It was followed by two sequels, The Bad News Bears in Breaking Training in 1977 and The Bad News Bears Go to Japan in 1978, a short-lived 1979–80 CBS television series, and a 2005 remake.
+OTHER FILMS: ["The Bad News Bears Go to Japan", "Bad News Bears"]
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/remakes/statements/r1_040.out.json as a JSON list with one object per item: {"item": "<the code after ITEM>", "links": [{"film": "<title exactly as listed>", "relation": "...", "wording": "..."}]} with one entry in "links" for every film listed under OTHER FILMS. Write nothing else to that file.

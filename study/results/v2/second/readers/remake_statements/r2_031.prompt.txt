@@ -1,0 +1,222 @@
+You are helping to build a research corpus of film remakes from Wikipedia. Each item below gives the title of a film's Wikipedia page (PAGE), ONE sentence from the opening of that page, and the OTHER FILMS that sentence links to. For each other film, record what THE SENTENCE SAYS about PAGE and that film. You are not asked what you know about the films.
+
+For each other film give:
+- "relation":
+    "page_remakes_other"   the sentence says PAGE is a remake of the other film;
+    "other_remakes_page"   the sentence says the other film is a remake of PAGE (for example "it was remade in Telugu as ...");
+    "none"                 anything else.
+- "wording":
+    "firm"    the sentence states the remake plainly as a fact: "is a remake of", "an official remake of", "was remade as", "was remade in Hindi as";
+    "loose"   the sentence weakens or hedges it: "loosely", "partly", "unofficial", "uncredited", "inspired by", "based on the idea of", "reported to be", "said to be", "has been described as", "considered", "similar to", "reboot", "reimagining", "re-adaptation";
+    "" when the relation is "none".
+
+Rules.
+- Use only what the sentence says. Do not use your own knowledge of the films, and do not guess from titles or years.
+- If the sentence lists several films as remakes of PAGE, each of them is "other_remakes_page".
+- If the sentence says PAGE is a remake of X, and that X is itself a remake of or based on Y, then X is "page_remakes_other" and Y is "none", unless the sentence also says PAGE is a remake of Y.
+- "none" covers: a sequel, prequel or spin-off; a film that is only compared or mentioned; another remake of the same original (a sibling); a film based on the same novel, play or true story that the sentence does not call a remake; a film whose remake status the sentence denies; a dubbed version; a film shot at the same time in another language ("simultaneously", "bilingual").
+- If you cannot tell which film the word "remake" or "remade" applies to, answer "none".
+
+The items follow.
+
+### ITEM 0e3f946b08c26e48
+PAGE: The Quiet Family
+SENTENCE: The film was loosely remade in Japanese as The Happiness of the Katakuris by Takashi Miike, in Indian Tamil as Yaamirukka Bayamey, in Kannada as Namo Bhootatma and in Telugu as Next Nuvve.
+OTHER FILMS: ["The Happiness of the Katakuris", "Yaamirukka Bayamey"]
+
+### ITEM 16e2bcb77a10e62b
+PAGE: Gunde Jaari Gallanthayyinde
+SENTENCE: In 2015, it was remade in Kannada as Khushi Khushiyagi.
+OTHER FILMS: ["Khushi Khushiyagi"]
+
+### ITEM 1012566135309a7d
+PAGE: A Better Tomorrow (2010 film)
+SENTENCE: It is an official remake of the 1986 Hong Kong film A Better Tomorrow.
+OTHER FILMS: ["A Better Tomorrow"]
+
+### ITEM d46d1663a0d7de49
+PAGE: Yamaleela
+SENTENCE: The film was remade in Hindi as Taqdeerwala (1995) and in Tamil as Lucky Man (1995).
+OTHER FILMS: ["Taqdeerwala"]
+
+### ITEM 2693baaea7556a22
+PAGE: Cold Eyes
+SENTENCE: A remake of the 2007 Hong Kong film Eye in the Sky, Cold Eyes is about detectives from the surveillance team of a special crime unit who work together to track down a highly efficient and dangerous robber and the crew he leads.
+OTHER FILMS: ["Eye in the Sky (2007 film)"]
+
+### ITEM 4f8e50d4ac3b20b6
+PAGE: Drushyam
+SENTENCE: A remake of the 2013 Malayalam film Drishyam, the film stars Venkatesh, Meena, Esther Anil, and Kruthika Jayakumar.
+OTHER FILMS: ["Drishyam"]
+
+### ITEM 77ac7d740f957e50
+PAGE: Sankranthi (film)
+SENTENCE: It is a remake of the 2001 Tamil film Aanandham.
+OTHER FILMS: ["Aanandham"]
+
+### ITEM 4b936de2aed916a0
+PAGE: Ganga Manga
+SENTENCE: The film was a remake of the Hindi film Seeta Aur Geeta.
+OTHER FILMS: ["Seeta Aur Geeta"]
+
+### ITEM 32a0a61df66ce5d5
+PAGE: Dhruva (2016 film)
+SENTENCE: A remake of the Tamil film Thani Oruvan (2015), it follows Dhruva, an IPS officer who wants to arrest Siddharth Abhimanyu, a wealthy scientist, who uses secret medical and illegal practices for profit.
+OTHER FILMS: ["Thani Oruvan"]
+
+### ITEM ccad16bcbc2b04a0
+PAGE: Aadanthe Ado Type
+SENTENCE: It is a remake of the 2002 Tamil film Mounam Pesiyadhe by Ameer Sultan, with Aryan Rajesh, Anita, Shivaji, and Sindhu replacing Suriya, Trisha, Nandha, and Neha Pendse, respectively, who originally played the roles.
+OTHER FILMS: ["Mounam Pesiyadhe"]
+
+### ITEM e194631326c28fe4
+PAGE: Atharintiki Daaredi
+SENTENCE: It was remade in Kannada as Ranna (2015), in Bengali as Abhiman (2016) and in Tamil as Vantha Rajavathaan Varuven (2019).
+OTHER FILMS: ["Ranna (film)", "Abhimaan (2016 film)"]
+
+### ITEM 3fbfad01d6d9d92e
+PAGE: Venkatadri Express (film)
+SENTENCE: The film is remade in Kannada as Tirupathi Express (2014), in Bengali as Love Express (2016), in Odia as Love Station (2016).
+OTHER FILMS: ["Love Express (2016 film)"]
+
+### ITEM a8833edcd8e4dc56
+PAGE: Ulavacharu Biryani
+SENTENCE: A remake of Aashiq Abu's 2011 Malayalam film Salt N' Pepper, the film is simultaneously shot in three languages.
+OTHER FILMS: ["Salt N' Pepper"]
+
+### ITEM eb02541271b07a48
+PAGE: Annavaram (film)
+SENTENCE: The film is a remake of Tamil film Thirupaachi (2005).
+OTHER FILMS: ["Thirupaachi"]
+
+### ITEM ed74d3ab0b3fd768
+PAGE: Run (2016 film)
+SENTENCE: It is the remake of Malayalam and Tamil bilingual Neram.
+OTHER FILMS: ["Neram"]
+
+### ITEM f57b2c0b887627b1
+PAGE: A*P*E
+SENTENCE: A*P*E was released at approximately the same time as Dino De Laurentiis' 1976 remake of King Kong.
+OTHER FILMS: ["King Kong (1976 film)"]
+
+### ITEM b02cc1cf7d419730
+PAGE: Yugandhar
+SENTENCE: It is a remake of the Hindi film Don (1978).
+OTHER FILMS: ["Don (1978 film)"]
+
+### ITEM 161cdf3f49f4ccfd
+PAGE: Raju Gari Gadhi 2
+SENTENCE: The film is a sequel to Raju Gari Gadhi (2015), the second installment in Raju Gari Gadhi franchise, and a remake of the Malayalam film Pretham (2016).
+OTHER FILMS: ["Raju Gari Gadhi", "Pretham"]
+
+### ITEM 6bcb164ec8b59382
+PAGE: Choodalani Vundi
+SENTENCE: In 2003, it was remade into Hindi as Calcutta Mail.
+OTHER FILMS: ["Calcutta Mail"]
+
+### ITEM 315c4ab1c0a4b78d
+PAGE: Joker (1993 film)
+SENTENCE: The film is a remake of the Malayalam movie Kilukkampetti (1991), which was later remade as Hindi movie Pyaar Impossible! (2010).
+OTHER FILMS: ["Kilukkampetti", "Pyaar Impossible!"]
+
+### ITEM f7b9ec709154f887
+PAGE: Athaku Yamudu Ammayiki Mogudu
+SENTENCE: It was eventually remade in Tamil twice as Maapillai (1989) and Mappillai (2011), in Kannada as Bhale Chathura (1990), in Hindi as Jamai Raja (1990), in Malayalam as ''[[Mr.
+OTHER FILMS: ["Mappillai (1989 film)", "Mappillai (2011 film)"]
+
+### ITEM a2ec288d056122e4
+PAGE: Cheppave Chirugali
+SENTENCE: It is the Telugu remake of his own 2002 Tamil film Unnai Ninaithu with Ramji, Pandu and Visweswara Rao reprising their roles and Ramesh Khanna in a different role.
+OTHER FILMS: ["Unnai Ninaithu"]
+
+### ITEM 942c61499a597ae4
+PAGE: Ju-on: The Grudge
+SENTENCE: It also spawned a franchise, an American remake, 2006 and 2009 sequels, a 2020 sidequel to the remake and a prequel television series entitled Ju-On: Origins, which premiered in 2020.
+OTHER FILMS: ["The Grudge", "The Grudge 2", "The Grudge 3"]
+
+### ITEM 522ed2f4fd42dfba
+PAGE: Manase Mandiram
+SENTENCE: The film was a remake of Sridhar's own Tamil film Nenjil Or Aalayam (1962).
+OTHER FILMS: ["Nenjil Or Aalayam"]
+
+### ITEM 2325efc92a6ec8a6
+PAGE: Chakravarthy (1987 film)
+SENTENCE: Starring Chiranjeevi, Mohan Babu, Bhanupriya and Ramya Krishna, the film is a remake of the Tamil film Gnana Oli (1972).
+OTHER FILMS: ["Gnana Oli"]
+
+### ITEM e54622ccfb4ad1e1
+PAGE: Balupu
+SENTENCE: Balupu was remade in Bengali as Herogiri (2015).
+OTHER FILMS: ["Herogiri"]
+
+### ITEM 69e8a7c3777cc295
+PAGE: Hello Brother (1994 film)
+SENTENCE: In turn, Hello Brother spawned several of its own remakes, twice in Hindi as Judwaa (1997) and its reboot Judwaa 2 (2017) and in Kannada as Cheluva (1997).
+OTHER FILMS: ["Judwaa", "Judwaa 2", "Cheluva"]
+
+### ITEM 19f1e2b1dea8d789
+PAGE: Srivari Muchatlu
+SENTENCE: The film is remade in Hindi as Asha Jyoti (1984).
+OTHER FILMS: ["Asha Jyoti"]
+
+### ITEM dbc59e4be2229db7
+PAGE: Anukokunda Oka Roju
+SENTENCE: It was later remade as Sunday (2008) in Hindi.
+OTHER FILMS: ["Sunday (2008 film)"]
+
+### ITEM f408e5c6a8f3b265
+PAGE: Kurradu
+SENTENCE: It was a remake of Tamil language film Polladhavan.
+OTHER FILMS: ["Polladhavan (2007 film)"]
+
+### ITEM b3746c1c204d143e
+PAGE: Sundarakanda (1992 film)
+SENTENCE: It is a remake of the Tamil film Sundara Kandam.
+OTHER FILMS: ["Sundara Kandam"]
+
+### ITEM 817bbb30f83b58e4
+PAGE: Seetharamaiah Gari Manavaralu
+SENTENCE: The film was remade in Malayalam as Sandhwanam (1991), in Kannada as Belli Modagalu (1992), and in Hindi as Udhaar Ki Zindagi (1994).
+OTHER FILMS: ["Udhaar Ki Zindagi"]
+
+### ITEM 194135f786135dae
+PAGE: Vikramarkudu
+SENTENCE: The film was remade in several languages, including Bangladeshi Bengali as Ulta Palta 69 (2007), Kannada as Veera Madakari (2009), Tamil as Siruthai (2011), Indian Bengali as Bikram Singha (2012), Hindi as Rowdy Rathore (2012), and once again in Bangladeshi Bengali as Action Jasmine (2015), featuring a female lead.
+OTHER FILMS: ["Ulta Palta 69", "Siruthai", "Bikram Singha: The Lion Is Back", "Rowdy Rathore"]
+
+### ITEM c4400f4b6b4b87bd
+PAGE: Kimi yo Fundo no Kawa o Watare
+SENTENCE: A Chinese remake, directed by John Woo, was released in 2017.
+OTHER FILMS: ["Manhunt (2017 film)"]
+
+### ITEM 05fc894de326ed67
+PAGE: Swargam Narakam
+SENTENCE: The debut film for Mohan Babu and Annapoorna, it was later remade in Bollywood as Swarg Narak (1978) and in Kollywood as Sorgam Naragam (1977).
+OTHER FILMS: ["Swarg Narak"]
+
+### ITEM 69ed1739f85cb764
+PAGE: Ooriki Monagadu
+SENTENCE: Ooruki Monagadu was later remade twice in Hindi as Himmatwala: first in 1983 and again in 2013.
+OTHER FILMS: ["Himmatwala (1983 film)", "Himmatwala (2013 film)"]
+
+### ITEM 3ee2467968d4c999
+PAGE: Gabbar Singh (2012 film)
+SENTENCE: It is a remake of the 2010 Hindi film Dabangg.
+OTHER FILMS: ["Dabangg"]
+
+### ITEM e26cb9433299a6ca
+PAGE: Konchem Ishtam Konchem Kashtam
+SENTENCE: The film was remade in Bengali as Romeo (2011).
+OTHER FILMS: ["Romeo (2011 film)"]
+
+### ITEM 46a7c7c02370d294
+PAGE: Sharada (1973 film)
+SENTENCE: The film is a remake of the 1972 Kannada movie Yaava Janmada Maitri which was also remade in Tamil as Radha (1973) and in Hindi as Dulhan (1975).
+OTHER FILMS: ["Dulhan (1975 film)"]
+
+### ITEM 0e7685c3ad845f0c
+PAGE: Raja (1999 film)
+SENTENCE: The film was a remake of the Tamil film Unnidathil Ennai Koduthen (1998).
+OTHER FILMS: ["Unnidathil Ennai Koduthen"]
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/remakes/statements/r2_031.out.json as a JSON list with one object per item: {"item": "<the code after ITEM>", "links": [{"film": "<title exactly as listed>", "relation": "...", "wording": "..."}]} with one entry in "links" for every film listed under OTHER FILMS. Write nothing else to that file.

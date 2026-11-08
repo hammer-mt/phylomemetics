@@ -1,0 +1,104 @@
+[
+  {
+    "id": 22228712,
+    "kind": "film",
+    "year": 1937,
+    "holmes_appears": false,
+    "sources": [],
+    "other_sources": []
+  },
+  {
+    "id": 14058109,
+    "kind": "film",
+    "year": 1977,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": []
+  },
+  {
+    "id": 34252471,
+    "kind": "tv_episode",
+    "year": 2012,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "A Scandal in Bohemia",
+        "tier": "A",
+        "quote": "The episode was based on \"A Scandal in Bohemia\", a short story by Sir Arthur Conan Doyle."
+      }
+    ],
+    "other_sources": []
+  },
+  {
+    "id": 22656233,
+    "kind": "video_game",
+    "year": 2009,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": []
+  },
+  {
+    "id": 12030500,
+    "kind": "film",
+    "year": 1916,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": [
+      "Sherlock Holmes (1899 stage play; the article says the play was based on A Scandal in Bohemia, The Final Problem and A Study in Scarlet)"
+    ]
+  },
+  {
+    "id": 2265148,
+    "kind": "film",
+    "year": 1988,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": []
+  },
+  {
+    "id": 11350697,
+    "kind": "film",
+    "year": 1942,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Adventure of the Dancing Men",
+        "tier": "B",
+        "quote": "The film is credited as an adaptation of Conan Doyle's 1903 short story \"The Adventure of the Dancing Men\", though the only element from the source material is the dancing men code."
+      }
+    ],
+    "other_sources": []
+  },
+  {
+    "id": 2175456,
+    "kind": "film",
+    "year": 1965,
+    "holmes_appears": true,
+    "sources": [],
+    "other_sources": []
+  },
+  {
+    "id": 27435710,
+    "kind": "tv_episode",
+    "year": 2010,
+    "holmes_appears": true,
+    "sources": [
+      {
+        "story": "The Adventure of the Dancing Men",
+        "tier": "C",
+        "quote": "According to Moffat, the episode takes the concept of coded messages from \"The Adventure of the Dancing Men\" (using pictorial messages), a story feature directly referenced later, in the series 4 episode The Final Problem."
+      },
+      {
+        "story": "The Valley of Fear",
+        "tier": "C",
+        "quote": "Alan Kistler of Newsarama has pointed out other potential inspirations such as the use in The Valley of Fear of a code \"based on a book that many people would own.\""
+      },
+      {
+        "story": "The Sign of the Four",
+        "tier": "C",
+        "quote": "A murder victim found inside a locked room accessible only by climbing might be an allusion to The Sign of the Four."
+      }
+    ],
+    "other_sources": []
+  }
+]

@@ -1,0 +1,222 @@
+You are helping to build a research corpus of film remakes from Wikipedia. Each item below gives the title of a film's Wikipedia page (PAGE), ONE sentence from the opening of that page, and the OTHER FILMS that sentence links to. For each other film, record what THE SENTENCE SAYS about PAGE and that film. You are not asked what you know about the films.
+
+For each other film give:
+- "relation":
+    "page_remakes_other"   the sentence says PAGE is a remake of the other film;
+    "other_remakes_page"   the sentence says the other film is a remake of PAGE (for example "it was remade in Telugu as ...");
+    "none"                 anything else.
+- "wording":
+    "firm"    the sentence states the remake plainly as a fact: "is a remake of", "an official remake of", "was remade as", "was remade in Hindi as";
+    "loose"   the sentence weakens or hedges it: "loosely", "partly", "unofficial", "uncredited", "inspired by", "based on the idea of", "reported to be", "said to be", "has been described as", "considered", "similar to", "reboot", "reimagining", "re-adaptation";
+    "" when the relation is "none".
+
+Rules.
+- Use only what the sentence says. Do not use your own knowledge of the films, and do not guess from titles or years.
+- If the sentence lists several films as remakes of PAGE, each of them is "other_remakes_page".
+- If the sentence says PAGE is a remake of X, and that X is itself a remake of or based on Y, then X is "page_remakes_other" and Y is "none", unless the sentence also says PAGE is a remake of Y.
+- "none" covers: a sequel, prequel or spin-off; a film that is only compared or mentioned; another remake of the same original (a sibling); a film based on the same novel, play or true story that the sentence does not call a remake; a film whose remake status the sentence denies; a dubbed version; a film shot at the same time in another language ("simultaneously", "bilingual").
+- If you cannot tell which film the word "remake" or "remade" applies to, answer "none".
+
+The items follow.
+
+### ITEM da881f4252633398
+PAGE: Velai Kidaichuduchu
+SENTENCE: The film was remade in Telugu as Assembly Rowdy (1991), in Kannada as Rowdy & MLA (1991) and in Hindi as Loafer (1996).
+OTHER FILMS: ["Assembly Rowdy"]
+
+### ITEM ca8fbf49d76f5479
+PAGE: Kasthooriman
+SENTENCE: Lohithadas remade the film in Tamil under the same title, with Meera and Shammi reprising their respective roles.
+OTHER FILMS: ["Kasthuri Maan"]
+
+### ITEM 03e77ee7ce6201c9
+PAGE: The Gambler (1995 film)
+SENTENCE: Gambler is a 1995 Indian Hindi-language action thriller film directed by Dayal Nihalani, which is a remake of the Malayalam film Aanaval Mothiram (1991).
+OTHER FILMS: ["Aanaval Mothiram"]
+
+### ITEM 78b5ce0e46512b93
+PAGE: Anubhav (1986 film)
+SENTENCE: This film is the Hindi remake of 1984 Kannada film Anubhava, in which Kashinath, director of the Hindi version, played the lead role.
+OTHER FILMS: ["Anubhava (film)"]
+
+### ITEM a19f3870e159501a
+PAGE: Mr. Bechara
+SENTENCE: The film is a remake of Bhagyaraj's own Tamil film Veetla Visheshanga (1994).
+OTHER FILMS: ["Veetla Visheshanga"]
+
+### ITEM 7fd306bae15b1c18
+PAGE: Madana (film)
+SENTENCE: A remake of the 2004 Tamil film Manmadhan, it stars Aditya in the title role with Samiksha, Charmila, Shobaraj, Ramesh Bhat and Bullet Prakash playing supporting roles.
+OTHER FILMS: ["Manmadhan (film)"]
+
+### ITEM 576ae42c256c31aa
+PAGE: Police Story 4: First Strike
+SENTENCE: It is the fourth main installment of the Police Story series, and the final film in the series' original timeline before its reboot with 2004's New Police Story.
+OTHER FILMS: ["New Police Story"]
+
+### ITEM 0b191e537a9f7c3a
+PAGE: Insaf Ki Pukar
+SENTENCE: The film was remade in Tamil as Guru Sishyan (1988) and Telugu as Guru Sishyulu (1990).
+OTHER FILMS: ["Guru Sishyan (1988 film)"]
+
+### ITEM 4cce0bf988907257
+PAGE: Daring Lover
+SENTENCE: It is a remake of the 2006 Tamil language comedy film Thiruvilaiyaadal Aarambam.
+OTHER FILMS: ["Thiruvilaiyaadal Aarambam"]
+
+### ITEM e36f906244c6b37b
+PAGE: Bikram Singha: The Lion Is Back
+SENTENCE: A remake of the 2006 Telugu-language film Vikramarkudu, it stars Prosenjit Chatterjee in a double role along with Richa Gangopadhyay (in her only Bengali film till date) & Anusmriti Sarkar.
+OTHER FILMS: ["Vikramarkudu"]
+
+### ITEM 72adddc6dc7a3eb2
+PAGE: Iru Thuruvam
+SENTENCE: It is a remake of the 1961 Hindi film Gunga Jumna, and revolves around two brothers who end up on opposite sides of the law.
+OTHER FILMS: ["Gunga Jumna"]
+
+### ITEM 5973291ceacc59e8
+PAGE: Malamaal Weekly (2006 film)
+SENTENCE: Based on Waking Ned (1998), the film was remade in Telugu in the same year as Bhagyalakshmi Bumper Draw (2006), in Kannada as Dakota Picture (2012) and in Malayalam by same director as Aamayum Muyalum (2014).
+OTHER FILMS: ["Waking Ned", "Bhagyalakshmi Bumper Draw", "Aamayum Muyalum"]
+
+### ITEM 3e35be27bd20d9da
+PAGE: The Dawn Patrol (1938 film)
+SENTENCE: The Dawn Patrol is a 1938 American war film, a remake of the pre-Code 1930 film of the same title.
+OTHER FILMS: ["The Dawn Patrol (1930 film)"]
+
+### ITEM 74284f6c2150954a
+PAGE: Maruthu Pandi
+SENTENCE: The film was remade in Kannada as Kollur Kala (1991) and in Hindi as Aag (1994).
+OTHER FILMS: ["Aag (1994 film)"]
+
+### ITEM 12ea117fd9b32bb6
+PAGE: Lovers (1983 film)
+SENTENCE: It is a remake of his own simultaneously shot 1981 bilingual titled Alaigal Oivathillai in Tamil and Seethakoka Chilaka in Telugu.
+OTHER FILMS: ["Alaigal Oivathillai"]
+
+### ITEM 1f01abf72ae2c394
+PAGE: Sailaab (1990 film)
+SENTENCE: This film is a remake of 1988 Tamil film Kan Simittum Neram.
+OTHER FILMS: ["Kan Simittum Neram"]
+
+### ITEM 61ad3156effc64a1
+PAGE: Noor Jahaan
+SENTENCE: It is a remake of the 2015 Marathi film Sairat and was shot in Krishnath College School, Berhampore.
+OTHER FILMS: ["Sairat"]
+
+### ITEM a4c7f03f2451a645
+PAGE: Aidondla Aidu
+SENTENCE: The film was released on 16 September 2011 across Karnataka and was later remade in Malayalam as Poppins.
+OTHER FILMS: ["Poppins"]
+
+### ITEM 9d08f53d07c10950
+PAGE: Shruthi (film)
+SENTENCE: A remake of the Tamil film Pudhu Vasantham (1990), the film stars Sunil, Indudhar, Honnavalli Krishna, Srivatsa, Shruti and [[R.
+OTHER FILMS: ["Pudhu Vasantham"]
+
+### ITEM 190473cccb422ae3
+PAGE: Neighbours: They Are Vampires
+SENTENCE: Arbaaz Ali Khan Roushika Reikhi Shakti Kapoor Gavie Chahal Rufy Khan Neighbours is a 2014 Indian Hindi-language supernatural horror film directed by Shyam Ramsay and a remake of the 1985 American film Fright Night.
+OTHER FILMS: ["Fright Night"]
+
+### ITEM 46e2a096aa16f3a2
+PAGE: Humse Badhkar Kaun
+SENTENCE: It's a remake of the 1988 American movie Twins.
+OTHER FILMS: ["Twins (1988 film)"]
+
+### ITEM 63d55a0191250e87
+PAGE: En Annan
+SENTENCE: The film is a remake of the 1955 Bengali film Sabar Uparey, previously remade into Tamil as Nalla Theerpu in 1959.
+OTHER FILMS: ["Nalla Theerpu"]
+
+### ITEM c3f0347011288128
+PAGE: Manasukkul Mathappu
+SENTENCE: It is a remake of the 1986 Malayalam film Thalavattam which was inspired by the 1975 film One Flew Over the Cuckoo's Nest which in turn was an adaptation of the 1962 novel of the same name by Ken Kesey.
+OTHER FILMS: ["One Flew Over the Cuckoo's Nest (film)"]
+
+### ITEM 24f1c2e39b77dbaf
+PAGE: Rajee En Kanmani
+SENTENCE: Ramachandran]] and Sriranjani Jr. A remake of Charlie Chaplin's City Lights (1931), it was remade in Telugu as Rajee Naa Pranam the same year.
+OTHER FILMS: ["City Lights"]
+
+### ITEM bedca625b10f6af7
+PAGE: Youngistaan
+SENTENCE: It was a remake of the Telugu film Leader (2010).
+OTHER FILMS: ["Leader (2010 film)"]
+
+### ITEM 97b94d7a4137da1b
+PAGE: Missiamma
+SENTENCE: AVM Productions remade the film in Hindi as Miss Mary in 1957, with Ganesan and Jamuna reprising their roles.
+OTHER FILMS: ["Miss Mary (1957 film)"]
+
+### ITEM b3ae879458f884eb
+PAGE: Pataal Bhairavi
+SENTENCE: The film is a remake of the Telugu film Patala Bhairavi (1951), starring [[N.
+OTHER FILMS: ["Patala Bhairavi"]
+
+### ITEM 43aa7965c2e1fdf4
+PAGE: Bandhan (1998 film)
+SENTENCE: It is a remake of the Tamil film Pandithurai.
+OTHER FILMS: ["Pandithurai"]
+
+### ITEM dfe8b3005970b912
+PAGE: Main Chup Rahungi
+SENTENCE: The film was a remake of 1960 Tamil film Kalathur Kannamma.
+OTHER FILMS: ["Kalathur Kannamma"]
+
+### ITEM bf7130943225eea8
+PAGE: Sollamale
+SENTENCE: The film was later remade in Telugu by the same director as Seenu (1999) and in Hindi as Pyaar Diwana Hota Hai (2002).
+OTHER FILMS: ["Seenu (1999 film)"]
+
+### ITEM 1dacc357596c2d65
+PAGE: Rojavai Killathe
+SENTENCE: A remake of the 1988 Hindi film Tezaab, it stars Arjun and Khushbu with Tiger Prabhakar as the antagonist.
+OTHER FILMS: ["Tezaab"]
+
+### ITEM 675476f6cfd90419
+PAGE: Oru Thaai Makkal
+SENTENCE: It is a remake of the 1964 Hindi film Ayee Milan Ki Bela.
+OTHER FILMS: ["Ayee Milan Ki Bela"]
+
+### ITEM c73091b689a9d243
+PAGE: The Squaw Man (1918 film)
+SENTENCE: It is a remake of DeMille's 1914 film of the same name, which is based upon a 1905 play by Edwin Milton Royle.
+OTHER FILMS: ["The Squaw Man (1914 film)"]
+
+### ITEM 9e4734a14e13a660
+PAGE: Main Tera Hero
+SENTENCE: The movie is a remake of 2011 Telugu movie Kandireega.
+OTHER FILMS: ["Kandireega"]
+
+### ITEM aef957e35f1db02f
+PAGE: The Dawn Patrol (1930 film)
+SENTENCE: It was subsequently remade in 1938 with the same title, and the original was then renamed Flight Commander and released later as part of the [[Warner Bros.
+OTHER FILMS: ["The Dawn Patrol (1938 film)"]
+
+### ITEM 37db34413a68900c
+PAGE: Gopurangal Saivathillai
+SENTENCE: The film was remade in Telugu as Mukku Pudaka (1983) with Suhasini reprising her role; in Kannada as Brahma Gantu (1985); and in Hindi as Naseeb Apna Apna (1986).
+OTHER FILMS: ["Naseeb Apna Apna (1986 film)"]
+
+### ITEM 9119381914a9e2a3
+PAGE: Blind Alley (film)
+SENTENCE: Columbia Pictures remade the film as The Dark Past in 1948, with William Holden and [[Lee J.
+OTHER FILMS: ["The Dark Past"]
+
+### ITEM d7f493bceaf3c6d5
+PAGE: Nazrana (1961 film)
+SENTENCE: The film was a remake of the 1959 Tamil film Kalyana Parisu, also directed by [[C.
+OTHER FILMS: ["Kalyana Parisu"]
+
+### ITEM fc0457f3ae30490b
+PAGE: Do Kaliyaan
+SENTENCE: It is a remake of the 1965 Tamil film Kuzhandaiyum Deivamum which itself was based on the 1961 American film The Parent Trap, based on Erich Kästner's 1949 German novel Lisa and Lottie.
+OTHER FILMS: ["The Parent Trap (1961 film)"]
+
+### ITEM 9af68280c34fc7ce
+PAGE: Neeya?
+SENTENCE: A remake of the 1976 Hindi film Nagin, it has an ensemble cast that includes Kamal Haasan, Jai Ganesh, Vijayakumar, Ravichandran, Srikanth, [[M.
+OTHER FILMS: ["Nagin (1976 film)"]
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/remakes/statements/r2_017.out.json as a JSON list with one object per item: {"item": "<the code after ITEM>", "links": [{"film": "<title exactly as listed>", "relation": "...", "wording": "..."}]} with one entry in "links" for every film listed under OTHER FILMS. Write nothing else to that file.

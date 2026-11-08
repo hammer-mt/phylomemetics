@@ -1,0 +1,222 @@
+You are helping to build a research corpus of film remakes from Wikipedia. Each item below gives the title of a film's Wikipedia page (PAGE), ONE sentence from the opening of that page, and the OTHER FILMS that sentence links to. For each other film, record what THE SENTENCE SAYS about PAGE and that film. You are not asked what you know about the films.
+
+For each other film give:
+- "relation":
+    "page_remakes_other"   the sentence says PAGE is a remake of the other film;
+    "other_remakes_page"   the sentence says the other film is a remake of PAGE (for example "it was remade in Telugu as ...");
+    "none"                 anything else.
+- "wording":
+    "firm"    the sentence states the remake plainly as a fact: "is a remake of", "an official remake of", "was remade as", "was remade in Hindi as";
+    "loose"   the sentence weakens or hedges it: "loosely", "partly", "unofficial", "uncredited", "inspired by", "based on the idea of", "reported to be", "said to be", "has been described as", "considered", "similar to", "reboot", "reimagining", "re-adaptation";
+    "" when the relation is "none".
+
+Rules.
+- Use only what the sentence says. Do not use your own knowledge of the films, and do not guess from titles or years.
+- If the sentence lists several films as remakes of PAGE, each of them is "other_remakes_page".
+- If the sentence says PAGE is a remake of X, and that X is itself a remake of or based on Y, then X is "page_remakes_other" and Y is "none", unless the sentence also says PAGE is a remake of Y.
+- "none" covers: a sequel, prequel or spin-off; a film that is only compared or mentioned; another remake of the same original (a sibling); a film based on the same novel, play or true story that the sentence does not call a remake; a film whose remake status the sentence denies; a dubbed version; a film shot at the same time in another language ("simultaneously", "bilingual").
+- If you cannot tell which film the word "remake" or "remade" applies to, answer "none".
+
+The items follow.
+
+### ITEM 2bca083bdc98547e
+PAGE: Khamoshi (1969 film)
+SENTENCE: Khamoshi was shot in Calcutta and was based on the Bengali short story titled Nurse Mitra by noted Bengali writer, Ashutosh Mukherjee and is a remake of director Asit Sen's own Bengali film, Deep Jwele Jaai (1959), starring Suchitra Sen.
+OTHER FILMS: ["Deep Jwele Jaai"]
+
+### ITEM 112cd46309c41e65
+PAGE: May Madham
+SENTENCE: It is an uncredited remake of the 1953 Hollywood film Roman Holiday.
+OTHER FILMS: ["Roman Holiday"]
+
+### ITEM 486b24f6ef2b643f
+PAGE: City Lights (2014 film)
+SENTENCE: It is a remake of the BAFTA-nominated British film Metro Manila (2013).
+OTHER FILMS: ["Metro Manila (film)"]
+
+### ITEM 3fa6eb77f52913d3
+PAGE: Traffic (2011 film)
+SENTENCE: It was remade into Tamil as Chennaiyil Oru Naal, in Kannada as Crazy Star and in Hindi, under the same name.
+OTHER FILMS: ["Chennaiyil Oru Naal"]
+
+### ITEM c0bded1f7191f9c2
+PAGE: Sagar (2012 film)
+SENTENCE: A remake of the Telugu-language Chukkallo Chandrudu (2006), the film stars Prajwal Devaraj, alongside Radhika Pandit, Sanjjana, Haripriya, Dev Gill, Sharath Lohithaswa, Avinash Yelandur, Vinaya Prasad and Adi Lokesh.
+OTHER FILMS: ["Chukkallo Chandrudu"]
+
+### ITEM f66234df1cf5593d
+PAGE: Unnai Ninaithu
+SENTENCE: It was remade into Telugu by the same director as Cheppave Chirugali (2004) Kannada as Krishna (2007).
+OTHER FILMS: ["Cheppave Chirugali"]
+
+### ITEM 97a3d59698ba2b3d
+PAGE: Bride Wars (2015 film)
+SENTENCE: The film is a remake of 2009's Bride Wars that starred Kate Hudson and Anne Hathaway.
+OTHER FILMS: ["Bride Wars"]
+
+### ITEM 2fb9351db449f8de
+PAGE: Ullasa Utsaha
+SENTENCE: A remake of the 2008 Telugu film Ullasamga Utsahamga, it was released after a four month delay.
+OTHER FILMS: ["Ullasamga Utsahamga"]
+
+### ITEM 23ea9cea70c9162c
+PAGE: Malappuram Haji Mahanaya Joji
+SENTENCE: The film was remade in Tamil as Raman Abdullah (1997) and in Telugu as Golmaal (2003).
+OTHER FILMS: ["Raman Abdullah"]
+
+### ITEM 218a7e2c5ec8eefd
+PAGE: Yeh To Kamaal Ho Gaya
+SENTENCE: It has Kamal Haasan in a double role, with Poonam Dhillon in the lead roles and is a remake of his own acted Tamil film Sattam En Kaiyil (1978).
+OTHER FILMS: ["Sattam En Kaiyil"]
+
+### ITEM 7d6f4249c2b1cc9e
+PAGE: Bhootayyana Maga Ayyu
+SENTENCE: The film was remade in Tamil as Ellorum Nallavare (1975), in Hindi as Ek Gaon Ki Kahani (1975) and in Telugu as Andharoo Manchivaare (1976) - with Lokesh reprising his role in all three versions.
+OTHER FILMS: ["Ellorum Nallavare"]
+
+### ITEM e9a1cb60e8a0fb0b
+PAGE: Aitbaar
+SENTENCE: It was further remade in Tamil in 1985 as Saavi and in Malayalam in 1989 as New Year.
+OTHER FILMS: ["Saavi (film)"]
+
+### ITEM 86cae2be366dca40
+PAGE: Ko 2
+SENTENCE: A standalone sequel to Ko (2011) and a remake of the Telugu film Prathinidhi (2014), it stars Bobby Simha, Nikki Galrani, and Prakash Raj (reprising his role from the first film), while Bala Saravanan, Ilavarasu, and John Vijay play supporting roles.
+OTHER FILMS: ["Ko (film)", "Prathinidhi"]
+
+### ITEM 842533503115ecfb
+PAGE: The Miracle Man (1932 film)
+SENTENCE: It is a remake of the 1919 film of the same name starring Lon Chaney.
+OTHER FILMS: ["The Miracle Man (1919 film)"]
+
+### ITEM 1fa39ac5ba4fa42a
+PAGE: Dushman (1998 film)
+SENTENCE: The film is a remake of 1996 American film Eye for an Eye.
+OTHER FILMS: ["Eye for an Eye (1996 film)"]
+
+### ITEM 45201e9fde22c1ee
+PAGE: Samsaram (1951 film)
+SENTENCE: A remake of the 1950 Telugu film of the same name, it stars [[M.
+OTHER FILMS: ["Samsaram (1950 film)"]
+
+### ITEM 5b0f425f27ad2443
+PAGE: Amar Akbar Anthony
+SENTENCE: It was later remade in Tamil as Shankar Salim Simon (1978), in Telugu as Ram Robert Rahim (1980), and in Malayalam as John Jaffer Janardhanan (1982).
+OTHER FILMS: ["Shankar Salim Simon"]
+
+### ITEM 0d671d3004c6bb32
+PAGE: Dhosth (2001 Malayalam film)
+SENTENCE: It is a remake of the Tamil film Kannedhirey Thondrinal (1998).
+OTHER FILMS: ["Kannedhirey Thondrinal"]
+
+### ITEM 9294e69be959dafb
+PAGE: Karpagam
+SENTENCE: It was remade in Hindi as Rishte Naate (1965), in Telugu as Thodu Needa (1965), in Malayalam as Vishukkani (1977) and in Kannada as Muddina Aliya (1996).
+OTHER FILMS: ["Rishte Naate"]
+
+### ITEM 02e475c033003a3b
+PAGE: Deewangee
+SENTENCE: It was remade in Tamil as Kadhal Kirukkan in 2003 and in Telugu as Aadi Lakshmi in 2006.
+OTHER FILMS: ["Kadhal Kirukkan"]
+
+### ITEM 139d6a93dad5b753
+PAGE: Welcome Zindagi
+SENTENCE: The film is a remake of successful Bengali language film, Hemlock Society, which starred Koel Mallick and Parambrata Chatterjee in lead roles.
+OTHER FILMS: ["Hemlock Society (film)"]
+
+### ITEM 115e810620768244
+PAGE: The Mayor of Hell
+SENTENCE: The film was remade in 1938 as Crime School with Humphrey Bogart taking over James Cagney's role and Hell's Kitchen with Ronald Reagan in 1939.
+OTHER FILMS: ["Crime School", "Hell's Kitchen (1939 film)"]
+
+### ITEM c5924895163075ec
+PAGE: Tarka (movie)
+SENTENCE: It was remade in Tamil in 1990 as Puriyaadha Pudhir and in Hindi in 1997 as Chupp.
+OTHER FILMS: ["Puriyaadha Pudhir", "Chupp"]
+
+### ITEM 3f319ec792379878
+PAGE: Enkeyo Ketta Kural
+SENTENCE: The film was later remade in Telugu as Bava Maradallu in 1984, in Hindi as Suhaagan in 1986 and in Kannada as Midida Hrudayagalu in 1993.
+OTHER FILMS: ["Suhaagan"]
+
+### ITEM 89e5d485be804912
+PAGE: Pyaar Ka Saaya
+SENTENCE: It is an uncredited remake of the 1990 American movie, Ghost.
+OTHER FILMS: ["Ghost (1990 film)"]
+
+### ITEM 4c058c49a4668a0f
+PAGE: Patala Bhairavi
+SENTENCE: The film was also remade in Hindi as Pataal Bhairavi (1985).
+OTHER FILMS: ["Pataal Bhairavi"]
+
+### ITEM a5d6990ca2f49859
+PAGE: Siliconn City
+SENTENCE: The film is a remake of Tamil film Metro (2016).
+OTHER FILMS: ["Metro (2016 film)"]
+
+### ITEM bea4e387217f247f
+PAGE: Four Sons
+SENTENCE: It was remade in 1940 with the same title, starring Don Ameche and Eugenie Leontovich, and directed by Archie Mayo, although the war was updated to World War II.
+OTHER FILMS: ["Four Sons (1940 film)"]
+
+### ITEM 9ada436460682186
+PAGE: Sethu (film)
+SENTENCE: The film was remade in Kannada as Huchcha, in Telugu as Seshu and in Hindi as Tere Naam.
+OTHER FILMS: ["Seshu"]
+
+### ITEM e9c82cd488166780
+PAGE: Neelakanta (film)
+SENTENCE: It is a remake of the Tamil film Aranmanai Kili (1993).
+OTHER FILMS: ["Aranmanai Kili"]
+
+### ITEM 4577654119ca9b55
+PAGE: Vedam (film)
+SENTENCE: Krish later remade the film in Tamil as Vaanam (2011).
+OTHER FILMS: ["Vaanam"]
+
+### ITEM cc93825fb537c12f
+PAGE: Good Boy, Bad Boy (2007 film)
+SENTENCE: It is a remake of the 1992 film Class Act.
+OTHER FILMS: ["Class Act"]
+
+### ITEM 0d852cffba0fe622
+PAGE: Happy Days (2007 film)
+SENTENCE: The film was dubbed in Malayalam with same title and was remade in Kannada as Jolly Days and in Tamil as Inidhu Inidhu by actor Prakash Raj.
+OTHER FILMS: ["Inidhu Inidhu"]
+
+### ITEM a6c850ee6739df49
+PAGE: Aarathu Sinam
+SENTENCE: A remake of Jeethu Joseph's Malayalam film Memories (2013), the film stars Arulnithi, Aishwarya Rajesh and Aishwarya Dutta.
+OTHER FILMS: ["Memories (2013 film)"]
+
+### ITEM edfa231526f5c608
+PAGE: Farz Aur Kanoon
+SENTENCE: Rama Rao]], Sridevi which itself was a remake of the 1974 Tamil movie Thanga Pathakkam, which incidentally went on to inspire another Hindi movie in 1982 itself – Shakti.
+OTHER FILMS: ["Thanga Pathakkam", "Shakti (1982 film)"]
+
+### ITEM f3d06dd58538bc04
+PAGE: Waris (1969 film)
+SENTENCE: It is a remake of the Tamil film Naan (1967).
+OTHER FILMS: ["Naan (1967 film)"]
+
+### ITEM ace1eb2646283c68
+PAGE: Guru (2003 film)
+SENTENCE: Guru is remade twice in Bangladeshi as Sultan (2004) and Manik Badsha (2006), and in Hindi as Big Brother (2007).
+OTHER FILMS: ["Big Brother (2007 film)"]
+
+### ITEM 23e687a8ed7b3925
+PAGE: Ek Ladka Ek Ladki
+SENTENCE: It is a remake of the 1987 Bengali film Samrat O Shundori, which itself is based on 1987 American film Overboard.
+OTHER FILMS: ["Overboard (1987 film)"]
+
+### ITEM f76c51a7b56f7557
+PAGE: Mungaru Male
+SENTENCE: It was remade in Telugu as Vaana, in Bengali as Premer Kahini (both in 2008), in Odia as Romeo - The Lover Boy in 2009 and in Marathi as Premay Namaha in 2017.
+OTHER FILMS: ["Vaana (film)", "Premer Kahini"]
+
+### ITEM 4f364faea3de383a
+PAGE: Grand Hotel (1932 film)
+SENTENCE: MGM remade the pre-Code film as Week-End at the Waldorf in 1945.
+OTHER FILMS: ["Week-End at the Waldorf"]
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/remakes/statements/r2_003.out.json as a JSON list with one object per item: {"item": "<the code after ITEM>", "links": [{"film": "<title exactly as listed>", "relation": "...", "wording": "..."}]} with one entry in "links" for every film listed under OTHER FILMS. Write nothing else to that file.

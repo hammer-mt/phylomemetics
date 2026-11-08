@@ -1,0 +1,222 @@
+You are helping to build a research corpus of film remakes from Wikipedia. Each item below gives the title of a film's Wikipedia page (PAGE), ONE sentence from the opening of that page, and the OTHER FILMS that sentence links to. For each other film, record what THE SENTENCE SAYS about PAGE and that film. You are not asked what you know about the films.
+
+For each other film give:
+- "relation":
+    "page_remakes_other"   the sentence says PAGE is a remake of the other film;
+    "other_remakes_page"   the sentence says the other film is a remake of PAGE (for example "it was remade in Telugu as ...");
+    "none"                 anything else.
+- "wording":
+    "firm"    the sentence states the remake plainly as a fact: "is a remake of", "an official remake of", "was remade as", "was remade in Hindi as";
+    "loose"   the sentence weakens or hedges it: "loosely", "partly", "unofficial", "uncredited", "inspired by", "based on the idea of", "reported to be", "said to be", "has been described as", "considered", "similar to", "reboot", "reimagining", "re-adaptation";
+    "" when the relation is "none".
+
+Rules.
+- Use only what the sentence says. Do not use your own knowledge of the films, and do not guess from titles or years.
+- If the sentence lists several films as remakes of PAGE, each of them is "other_remakes_page".
+- If the sentence says PAGE is a remake of X, and that X is itself a remake of or based on Y, then X is "page_remakes_other" and Y is "none", unless the sentence also says PAGE is a remake of Y.
+- "none" covers: a sequel, prequel or spin-off; a film that is only compared or mentioned; another remake of the same original (a sibling); a film based on the same novel, play or true story that the sentence does not call a remake; a film whose remake status the sentence denies; a dubbed version; a film shot at the same time in another language ("simultaneously", "bilingual").
+- If you cannot tell which film the word "remake" or "remade" applies to, answer "none".
+
+The items follow.
+
+### ITEM efa8b6d2d3783c4c
+PAGE: Kalavani
+SENTENCE: The film was remade in Kannada as Kirataka (2011) with Oviya reprising her role and in Telugu as Umapathi (2023).
+OTHER FILMS: ["Kirataka"]
+
+### ITEM 415c92bb93586fe0
+PAGE: Vallarasu
+SENTENCE: The film was remade in Hindi as Indian (2001) by the same director and Mukesh Rishi reprising his role as Wasim Khan.
+OTHER FILMS: ["Indian (2001 film)"]
+
+### ITEM c3ef3afb3673f235
+PAGE: Julie (1975 film)
+SENTENCE: She also declined the role of Julie's mother in the Malayalam remake titled Chattakari (2012), stating that she wanted the audience to remember her as the young and beautiful Julie; the title role went to Shamna Kasim.
+OTHER FILMS: ["Chattakkari (2012 film)"]
+
+### ITEM 4823d442266680a5
+PAGE: Naan (1967 film)
+SENTENCE: It was remade in Telugu as Nenante Nene (1968) and in Hindi as Waris (1969).
+OTHER FILMS: ["Waris (1969 film)"]
+
+### ITEM 895a1363b1f17519
+PAGE: Shaolin Temple (1982 film)
+SENTENCE: A remake of the film was released in 2011 titled Shaolin and starred Andy Lau, Nicholas Tse and Jackie Chan.
+OTHER FILMS: ["Shaolin (film)"]
+
+### ITEM d3a5881c0d5e6e29
+PAGE: It's a Date
+SENTENCE: Distributed by Universal Pictures, It's a Date was remade in 1950 as Nancy Goes to Rio.
+OTHER FILMS: ["Nancy Goes to Rio"]
+
+### ITEM b314b8125771ff73
+PAGE: Jaganmohini (2009 film)
+SENTENCE: Vittalacharya]]'s 1978 Telugu film of the same name which itself was a remake of the 1951 Kannada film Jaganmohini.
+OTHER FILMS: ["Jaganmohini (1978 film)"]
+
+### ITEM d7d181d01f398720
+PAGE: Sanjog (1972 film)
+SENTENCE: It is a remake of the Tamil film Iru Kodugal directed by [[K.
+OTHER FILMS: ["Iru Kodugal"]
+
+### ITEM b0f862eea78274bf
+PAGE: Her Vengeance
+SENTENCE: It is a remake of the 1973 rape and revenge film Kiss of Death with elements taken from the 1978 American film I Spit On Your Grave.
+OTHER FILMS: ["I Spit on Your Grave"]
+
+### ITEM c030f0bb4aa8d7c8
+PAGE: Kanteerava
+SENTENCE: It is a remake of the Telugu film Simhadri (2003).
+OTHER FILMS: ["Simhadri (2003 film)"]
+
+### ITEM dcbd0bedff6ac76f
+PAGE: Secrets (1933 film)
+SENTENCE: The film is a remake of Secrets (1924), a silent film starring Norma Talmadge, which was based on a 1922 play of the same name.
+OTHER FILMS: ["Secrets (1924 film)"]
+
+### ITEM ffc9ccb0b743f508
+PAGE: Alaigal Oivathillai
+SENTENCE: It was remade by Bharathiraja in Hindi as Lovers in 1983.
+OTHER FILMS: ["Lovers (1983 film)"]
+
+### ITEM f3c5027eb2bdd61c
+PAGE: Majaa
+SENTENCE: It is a remake of the director's own Malayalam film Thommanum Makkalum (2005).
+OTHER FILMS: ["Thommanum Makkalum"]
+
+### ITEM a3b655153a5f7dff
+PAGE: Duplicate (1998 film)
+SENTENCE: The film has been described as a remake of the 1935 American film The Whole Town's Talking.
+OTHER FILMS: ["The Whole Town's Talking"]
+
+### ITEM 4452ff48a9f01b8b
+PAGE: The Show-Off (1934 film)
+SENTENCE: Previously filmed twice by Paramount Pictures in 1926 and 1930, under the title Men Are Like That, and MGM remade the film in 1946, starring Red Skelton and Marilyn Maxwell.
+OTHER FILMS: ["The Show-Off (1946 film)"]
+
+### ITEM 7309b46513611d1c
+PAGE: Ki Kore Toke Bolbo
+SENTENCE: This was because Shudhu Tomari Jonyo was a remake of the 2013 Tamil movie Raja Rani which was an unofficial adaptation of the 2007 Kannada movie Milana.
+OTHER FILMS: ["Raja Rani (2013 film)"]
+
+### ITEM 597059957cc0c5b6
+PAGE: Lucia (film)
+SENTENCE: The film was remade in Tamil as Enakkul Oruvan in 2015.
+OTHER FILMS: ["Enakkul Oruvan (2015 film)"]
+
+### ITEM d013cc6ea51fc1b9
+PAGE: Naduvula Konjam Pakkatha Kaanom
+SENTENCE: It was remade six times – Pusthakamlo Konni Pageelu Missing (Telugu), Kwatle Satisha (Kannada), Medulla Oblangata (Malayalam), Shu Thayu? (Gujarati), Suna Pila Tike Screw Dhila (Odia) and Dokyala Shot (Marathi).
+OTHER FILMS: ["Pusthakamlo Konni Pageelu Missing", "Medulla Oblongata (film)"]
+
+### ITEM d54fde3ee3fb8f64
+PAGE: Thanks a Million
+SENTENCE: It was remade in 1946 as If I'm Lucky, with Perry Como and Phil Silvers in the Powell and Allen roles.
+OTHER FILMS: ["If I'm Lucky (film)"]
+
+### ITEM 9d523b340591b06f
+PAGE: Ek Ajnabee
+SENTENCE: It is a remake of Tony Scott's Man on Fire, a film based on a novel of the same name, which was also adapted into another film in 1987.
+OTHER FILMS: ["Man on Fire (2004 film)"]
+
+### ITEM 5c7eda1b4fb236df
+PAGE: Ram Aur Shyam
+SENTENCE: The film is a remake of Chanakya's 1964 Telugu film Ramudu Bheemudu.
+OTHER FILMS: ["Ramudu Bheemudu"]
+
+### ITEM 381711933309c16f
+PAGE: The Devil's Mate
+SENTENCE: It was remade by Rosen as I Killed That Man (1941).
+OTHER FILMS: ["I Killed That Man"]
+
+### ITEM 9afc2b88eec4d790
+PAGE: Kasthuri Maan
+SENTENCE: The film, a remake of the director's Malayalam film of the same name, and his only Tamil project, stars Prasanna and Meera Jasmine, who reprised her role from the original.
+OTHER FILMS: ["Kasthooriman"]
+
+### ITEM 936a2cf57d1f8ee7
+PAGE: The Unholy Three (1930 film)
+SENTENCE: The film is a sound remake of the silent 1925 film of the same name, with both films based on the novel The Unholy Three, by Tod Robbins.
+OTHER FILMS: ["The Unholy Three (1925 film)"]
+
+### ITEM 6a8cfbe4f1651492
+PAGE: Maa Babu
+SENTENCE: It is a remake of the Hindi film Chirag Kahan Roshni Kahan (1959).
+OTHER FILMS: ["Chirag Kahan Roshni Kahan"]
+
+### ITEM e02a53afcd571f27
+PAGE: Kalpana (2012 film)
+SENTENCE: A sequel to the film was made and titled as Kalpana 2 which is a remake of Tamil film Kanchana 2.
+OTHER FILMS: ["Kanchana 2"]
+
+### ITEM c319a31f6b648cb8
+PAGE: Kannedhirey Thondrinal
+SENTENCE: Owing to its success, the film was remade in Telugu as Manasulo Maata, in Kannada as Snehaloka, in Malayalam as Dhosth, in Bengali as Sangee, in Bangladeshi as Tumi Kato Sundor and in Marathi as Friends.
+OTHER FILMS: ["Manasulo Maata", "Dhosth (2001 Malayalam film)", "Sangee"]
+
+### ITEM 17077e07d1caaebf
+PAGE: Ghajini (2005 film)
+SENTENCE: The film was remade into a Hindi film with the same name by Murugadoss again in 2008, with Asin and Rawat reprising their roles.
+OTHER FILMS: ["Ghajini (2008 film)"]
+
+### ITEM a9f80bb114eb0db3
+PAGE: Aashiqui 2
+SENTENCE: It is an adaptation of both the original 1937 version and the 1976 remake of A Star is Born.{{Efn|The 1937 film is in the public domain and was based on the film What Price Hollywood? (1932), itself adapted from a story by [[Adela Rogers St.
+OTHER FILMS: ["A Star Is Born (1937 film)", "A Star Is Born (1976 film)", "What Price Hollywood?"]
+
+### ITEM ef212fa25c59ed31
+PAGE: Kaadhalikka Neramillai
+SENTENCE: It was remade in Telugu as Preminchi Choodu (1965) and in Hindi by Sridhar himself as Pyar Kiye Jaa (1966).
+OTHER FILMS: ["Pyar Kiye Jaa"]
+
+### ITEM ca348767c7616383
+PAGE: De Taali
+SENTENCE: It stars Riteish Deshmukh, Aftab Shivdasani, Ayesha Takia, and Rimi Sen, and is a remake of the 2001 film Saving Silverman.
+OTHER FILMS: ["Saving Silverman"]
+
+### ITEM 159d0848c38c5acc
+PAGE: Iceman (2014 film)
+SENTENCE: A Hong Kong-Chinese co-production, the film is a remake of the 1989 film The Iceman Cometh which was directed by Clarence Fok and starred Yuen Biao.
+OTHER FILMS: ["The Iceman Cometh (1989 film)"]
+
+### ITEM 99c80abd882bc170
+PAGE: Julie (2006 film)
+SENTENCE: It is a remake of the 1975 Hindi film of the same name, which is itself a remake of the 1974 Malayalam film Chattakkari.
+OTHER FILMS: ["Julie (1975 film)"]
+
+### ITEM 811482dc16aa4e9e
+PAGE: Shortkut
+SENTENCE: The film was an uncredited remake of the Malayalam-language film Udayananu Tharam, itself inspired from the 1999 American comedy film Bowfinger.
+OTHER FILMS: ["Udayananu Tharam", "Bowfinger"]
+
+### ITEM b976900df005f294
+PAGE: Coolie No. 1 (1995 film)
+SENTENCE: The film is a remake of the Tamil film Chinna Mapillai (1993).
+OTHER FILMS: ["Chinna Mapillai"]
+
+### ITEM 928a7ef409013b85
+PAGE: Paisa Paisa (film)
+SENTENCE: Paisa Paisa may refer to these in Indian entertainment: Paisa Paisa (2017 film), an Indian Telugu-language film Paisa Paisa (2016 film), an Indian Marathi-language film by Joji Raechal Job Paisa Paisa (2013 film), an Indian Malayalam-language film "Paisa Paisa" (2009 song), the theme song for the 2009 Indian Hindi-language film De Dana Dan "Paisa Paisa" (2007 song), a song from the Tamil version of the 2007 Indian Hindi-language film Guru "Paisa Paisa", a song by Suzanne D'Mello and Hamza Faruqui in the 2006 Indian Hindi-language film Apna Sapna Money Money "Paisa Paisa", a 2002 Punjabi song by Daler Mehndi from the album Nach Ni Shaam Kaure "Paisa Paisa", remake by Mehndi for the 2014 India
+OTHER FILMS: ["Paisa Vasool (2017 film)", "Paisa Paisa (2016 film)", "De Dana Dan", "Apna Sapna Money Money"]
+
+### ITEM 1d3735f4abf8c6e2
+PAGE: Meendum Oru Kadhal Kadhai
+SENTENCE: It is a remake of the Malayalam film Thattathin Marayathu, with Talwar reprising her role.
+OTHER FILMS: ["Thattathin Marayathu"]
+
+### ITEM ce60239f6bcf4cc8
+PAGE: Athithi (2014 film)
+SENTENCE: The film is a remake of the 2010 Malayalam film Cocktail (2010), which itself is a remake of the 2007 Canadian film Butterfly on a Wheel.
+OTHER FILMS: ["Butterfly on a Wheel"]
+
+### ITEM 72036c216d422358
+PAGE: Shanthi Nivasam
+SENTENCE: It was remade twice in Hindi as Gharana (1961) and Ghar Ghar Ki Kahani (1988).
+OTHER FILMS: ["Gharana (1961 film)", "Ghar Ghar Ki Kahani (1988 film)"]
+
+### ITEM 74b512e456924c93
+PAGE: Nishpap Munna
+SENTENCE: The movie is a remake of 2006 Telugu film Chinnodu.
+OTHER FILMS: ["Chinnodu"]
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/remakes/statements/r2_020.out.json as a JSON list with one object per item: {"item": "<the code after ITEM>", "links": [{"film": "<title exactly as listed>", "relation": "...", "wording": "..."}]} with one entry in "links" for every film listed under OTHER FILMS. Write nothing else to that file.

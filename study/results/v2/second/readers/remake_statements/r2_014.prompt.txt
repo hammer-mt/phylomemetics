@@ -1,0 +1,222 @@
+You are helping to build a research corpus of film remakes from Wikipedia. Each item below gives the title of a film's Wikipedia page (PAGE), ONE sentence from the opening of that page, and the OTHER FILMS that sentence links to. For each other film, record what THE SENTENCE SAYS about PAGE and that film. You are not asked what you know about the films.
+
+For each other film give:
+- "relation":
+    "page_remakes_other"   the sentence says PAGE is a remake of the other film;
+    "other_remakes_page"   the sentence says the other film is a remake of PAGE (for example "it was remade in Telugu as ...");
+    "none"                 anything else.
+- "wording":
+    "firm"    the sentence states the remake plainly as a fact: "is a remake of", "an official remake of", "was remade as", "was remade in Hindi as";
+    "loose"   the sentence weakens or hedges it: "loosely", "partly", "unofficial", "uncredited", "inspired by", "based on the idea of", "reported to be", "said to be", "has been described as", "considered", "similar to", "reboot", "reimagining", "re-adaptation";
+    "" when the relation is "none".
+
+Rules.
+- Use only what the sentence says. Do not use your own knowledge of the films, and do not guess from titles or years.
+- If the sentence lists several films as remakes of PAGE, each of them is "other_remakes_page".
+- If the sentence says PAGE is a remake of X, and that X is itself a remake of or based on Y, then X is "page_remakes_other" and Y is "none", unless the sentence also says PAGE is a remake of Y.
+- "none" covers: a sequel, prequel or spin-off; a film that is only compared or mentioned; another remake of the same original (a sibling); a film based on the same novel, play or true story that the sentence does not call a remake; a film whose remake status the sentence denies; a dubbed version; a film shot at the same time in another language ("simultaneously", "bilingual").
+- If you cannot tell which film the word "remake" or "remade" applies to, answer "none".
+
+The items follow.
+
+### ITEM 186ebdb62738f6cb
+PAGE: Vaazhkai Padagu
+SENTENCE: A remake of the studio's own Hindi film Zindagi (1964), it was released on 26 March 1965.
+OTHER FILMS: ["Zindagi (1964 film)"]
+
+### ITEM 921adcf4a5bd18e6
+PAGE: Gentleman (1993 film)
+SENTENCE: It was remade in Hindi as The Gentleman (1994).
+OTHER FILMS: ["The Gentleman (film)"]
+
+### ITEM d9b0f307b0c8b4a9
+PAGE: Dosti Dushmani
+SENTENCE: The film was a remake of 1977 Tamil film Chakravarthy which was also remade later in Telugu as Mugguru Mithrulu (1985) and later in Kannada as Brahma Vishnu Maheshwara (1988).
+OTHER FILMS: ["Chakravarthy (1977 film)"]
+
+### ITEM fa489f381ddd5aa1
+PAGE: Andru Peytha Mazhaiyil
+SENTENCE: It is a remake of the 1987 American film Fatal Attraction.
+OTHER FILMS: ["Fatal Attraction"]
+
+### ITEM 7106ddc4a701dd58
+PAGE: Minnale
+SENTENCE: Menon remade the film in Hindi the same year as Rehnaa Hai Terre Dil Mein, with Madhavan reprising his role and debuting in Hindi cinema.
+OTHER FILMS: ["Rehnaa Hai Terre Dil Mein"]
+
+### ITEM 04bd1523856a637d
+PAGE: Idhu Namma Aalu (1988 film)
+SENTENCE: The film was released on 1 August 1988. It was remade in Telugu as Adirindi Alludu (1996), and twice in Kannada as Aliya Alla Magala Ganda (1997) and Ravi Shastri (2006).
+OTHER FILMS: ["Ravi Shastri (film)"]
+
+### ITEM d4cedafae119beb5
+PAGE: Darling (2012 film)
+SENTENCE: This film is the Bengali Remake of the Telugu film Darling starring Prabhas and Kajal Aggarwal.
+OTHER FILMS: ["Darling (2010 film)"]
+
+### ITEM 3c6525ec104a2d47
+PAGE: Aap Ki Khatir (2006 film)
+SENTENCE: An unofficial remake of the 2005 American film The Wedding Date, it was released on 25 August 2006 and was a box-office bomb as well as Darshan's final film as a director.
+OTHER FILMS: ["The Wedding Date"]
+
+### ITEM ea30e2048ff8b838
+PAGE: Naalaiya Manithan
+SENTENCE: It is a remake of the American film Silent Rage (1982).
+OTHER FILMS: ["Silent Rage"]
+
+### ITEM ed99df06c60690b5
+PAGE: Annavin Asai
+SENTENCE: A remake of the Hindi film Chand Aur Suraj (1965), it stars Gemini Ganesan, Savitri, Balaji and [[K.
+OTHER FILMS: ["Chand Aur Suraj"]
+
+### ITEM 0f17913ff4782348
+PAGE: Hukumat
+SENTENCE: It was remade in Tamil as Puthiya Vaanam.
+OTHER FILMS: ["Puthiya Vaanam"]
+
+### ITEM a6c2f4cdd0472180
+PAGE: Jawab (1970 film)
+SENTENCE: The film is a remake of the Tamil movie Periya Idathu Penn (1963), with [[M.
+OTHER FILMS: ["Periya Idathu Penn"]
+
+### ITEM ecf73a4758e4236f
+PAGE: Julie (1975 film)
+SENTENCE: Lakshmi did not act in the Kannada remake, Julie, released in 2006, which had Ramya in the title role as and Dino Morea as the leading man.
+OTHER FILMS: ["Julie (2006 film)"]
+
+### ITEM 435619f0135dc6a5
+PAGE: Holiday (2006 Indian film)
+SENTENCE: It is a remake of the 1987 American film Dirty Dancing.
+OTHER FILMS: ["Dirty Dancing"]
+
+### ITEM df0c9ec9c12e7780
+PAGE: Aal (film)
+SENTENCE: A remake of the 2008 Hindi film Aamir, which itself is inspired by the Filipino film Cavite, it stars Vidharth, Hardika Shetty, and Vidiyal Raju in the lead roles.
+OTHER FILMS: ["Aamir (film)"]
+
+### ITEM 8ba01fbcdaabd5e4
+PAGE: Mark of the Vampire
+SENTENCE: It has been described as a talkie remake of Browning's lost silent London After Midnight (1927), though it does not credit the older film or its writers.
+OTHER FILMS: ["London After Midnight (film)"]
+
+### ITEM beedc9cb40d73c98
+PAGE: Qayamat: City Under Threat
+SENTENCE: It is a remake of the 1996 American film The Rock.
+OTHER FILMS: ["The Rock (film)"]
+
+### ITEM b44cec8c5ad2a6e8
+PAGE: Manam Kothi Paravai
+SENTENCE: It was remade in Kannada as Anjada Gandu (2014) and in Telugu as Vinavayya Ramayya (2015).
+OTHER FILMS: ["Anjada Gandu (2014 film)"]
+
+### ITEM 1a412f5a4dbd5391
+PAGE: Okkadu
+SENTENCE: Over the years, the film was remade in eight other languages: as Ghilli (2004) in Tamil, as Ajay (2006) in Kannada, twice in Bangladesh as Dapot (2006) and Bolona Kobul (2009), as Mate Aanidela Lakhe Phaguna (2008) in Odia, and as Tevar (2015) in Hindi, and as Kabaddi (2021) in Sinhala.
+OTHER FILMS: ["Ghilli", "Ajay (2006 film)"]
+
+### ITEM 74b8ad3d43f55b75
+PAGE: Edge of Darkness
+SENTENCE: Winner of several prestigious awards, it remains highly regarded, often cited as one of the best and most influential pieces of British television drama. 25 years later, a film remake was released, set in the United States, which was directed by the original series director Martin Campbell and starring Mel Gibson.
+OTHER FILMS: ["Edge of Darkness (2010 film)"]
+
+### ITEM d7723c6c886cbf07
+PAGE: Kumudham
+SENTENCE: The film was remade in Telugu as Manchi Manasulu (1962), in Malayalam as Susheela (1963) and in Hindi as Pooja Ke Phool (1964).
+OTHER FILMS: ["Manchi Manasulu", "Pooja Ke Phool"]
+
+### ITEM 3a5af1487327b27b
+PAGE: Maanja Velu
+SENTENCE: It is a remake of the 2007 Telugu film Lakshyam.
+OTHER FILMS: ["Lakshyam (2007 film)"]
+
+### ITEM 7a75ee6721a5455f
+PAGE: Ok Jaanu
+SENTENCE: A remake of Ratnam's Tamil film O Kadhal Kanmani, it stars Aditya Roy Kapur and Shraddha Kapoor with a supporting cast including Naseeruddin Shah and Leela Samson, the latter of whom appeared in the original as well, marking her Hindi debut, who essay the role of the protagonists' landlords.
+OTHER FILMS: ["O Kadhal Kanmani"]
+
+### ITEM 27b10921dd3b0427
+PAGE: Chirodini Tumi Je Amar
+SENTENCE: It is a remake of the 2004 Tamil film Kaadhal.
+OTHER FILMS: ["Kaadhal"]
+
+### ITEM 01d867e0699a345d
+PAGE: Aakasha Dhooth
+SENTENCE: The film was remade in Telugu as Matrudevobhava, in Kannada as Karulina Koogu and in Hindi as Tulsi.
+OTHER FILMS: ["Karulina Koogu", "Tulsi (film)"]
+
+### ITEM 508b218d611e1a6b
+PAGE: Love Affair (1939 film)
+SENTENCE: Its popularity was later dwarfed by McCarey's 1957 remake An Affair to Remember, which spawned its own remakes with 1994's Love Affair and a few Indian adaptations.
+OTHER FILMS: ["An Affair to Remember", "Love Affair (1994 film)"]
+
+### ITEM 973b7ee52df0628e
+PAGE: Kunwara
+SENTENCE: The film is a remake of the Telugu film Bavagaru Bagunnara which itself was loosely inspired from the Hollywood movie A Walk in the Clouds.
+OTHER FILMS: ["A Walk in the Clouds"]
+
+### ITEM d8aec30e5e71f0ca
+PAGE: MGR Nagaril
+SENTENCE: It is a remake of the 1990 Malayalam film In Harihar Nagar.
+OTHER FILMS: ["In Harihar Nagar"]
+
+### ITEM 2bc8c72b79409aa8
+PAGE: The Battle of the Sexes (1928 film)
+SENTENCE: The film is a remake by Griffith of an earlier film he directed in 1914 which starred Lillian Gish.
+OTHER FILMS: ["The Battle of the Sexes (1914 film)"]
+
+### ITEM 1bccbea29fa086a5
+PAGE: Sirf Tum (1999 film)
+SENTENCE: Shot in Nainital, Kerala and Houston, it is a remake of the 1996 Tamil film Kadhal Kottai.
+OTHER FILMS: ["Kadhal Kottai"]
+
+### ITEM f5ad5061e6843673
+PAGE: Soldier (1998 Indian film)
+SENTENCE: The film was remade in Dhallywood as Jamin Nai in 2000 and Tamil as Villu in 2009.
+OTHER FILMS: ["Villu (film)"]
+
+### ITEM 2e5a0e8698688e52
+PAGE: Yes Boss (film)
+SENTENCE: Yes Boss partially inspired the Malayalam film Junior Senior (2005) and was remade in Tamil as Guru En Aalu (2009).
+OTHER FILMS: ["Junior Senior (2005 film)", "Guru En Aalu"]
+
+### ITEM 8afbdebf9b418327
+PAGE: Kanne Pappa
+SENTENCE: The film was remade in Hindi by Madhavan as Aansoo Aur Muskan and also in Telugu as Bhale Papa.
+OTHER FILMS: ["Aansoo Aur Muskan"]
+
+### ITEM ceb4f5df4912ae45
+PAGE: Varavu Nalla Uravu
+SENTENCE: Varavu Nalla Uravu is loosely based on the 1937 film Make Way for Tomorrow, and was remade into Telugu as Dabbu Bhale Jabbu, in Malayalam as Achan Kombathu Amma Varampathu and in Bengali Bangladesh as Amader Sontan.
+OTHER FILMS: ["Make Way for Tomorrow", "Dabbu Bhale Jabbu"]
+
+### ITEM ca3fd60d6f51929b
+PAGE: Om (Kannada film)
+SENTENCE: The film was unofficially remade in Hindi as Arjun Pandit (1999).
+OTHER FILMS: ["Arjun Pandit (1999 film)"]
+
+### ITEM f6806c064630b3c9
+PAGE: Five Came Back
+SENTENCE: In 1948, Five Came Back was remade (differing only in minor details) as the Mexican film Los que volvieron and again in 1956 by producer-director Farrow as Back from Eternity, starring Robert Ryan, Anita Ekberg and Rod Steiger.
+OTHER FILMS: ["Back from Eternity"]
+
+### ITEM 826e30dd6eb2e34e
+PAGE: Vaseegara (film)
+SENTENCE: It is the Tamil remake of the 2001 Telugu film, Nuvvu Naaku Nachav.
+OTHER FILMS: ["Nuvvu Naaku Nachav"]
+
+### ITEM b1d74b0dd826fbc5
+PAGE: Thamizh Padam
+SENTENCE: The film was later remade in Telugu as Sudigadu.
+OTHER FILMS: ["Sudigadu"]
+
+### ITEM 99fa8011ef8a9208
+PAGE: Mafia (1996 film)
+SENTENCE: The film is an unofficial remake of the 1993 Malayalam film of the same name.
+OTHER FILMS: ["Mafia (1993 film)"]
+
+### ITEM 5888ae63b0954d8c
+PAGE: Viralukketha Veekkam
+SENTENCE: The film was remade into Telugu as Kshemamga Velli Labhamga Randi (2000), into Kannada as Yaarige Saluthe Sambala (2000) and into Hindi as Aamdani Atthanni Kharcha Rupaiya (2001).
+OTHER FILMS: ["Kshemamga Velli Labhamga Randi"]
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/remakes/statements/r2_014.out.json as a JSON list with one object per item: {"item": "<the code after ITEM>", "links": [{"film": "<title exactly as listed>", "relation": "...", "wording": "..."}]} with one entry in "links" for every film listed under OTHER FILMS. Write nothing else to that file.

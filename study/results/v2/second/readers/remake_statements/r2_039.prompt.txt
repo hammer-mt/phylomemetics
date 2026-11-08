@@ -1,0 +1,222 @@
+You are helping to build a research corpus of film remakes from Wikipedia. Each item below gives the title of a film's Wikipedia page (PAGE), ONE sentence from the opening of that page, and the OTHER FILMS that sentence links to. For each other film, record what THE SENTENCE SAYS about PAGE and that film. You are not asked what you know about the films.
+
+For each other film give:
+- "relation":
+    "page_remakes_other"   the sentence says PAGE is a remake of the other film;
+    "other_remakes_page"   the sentence says the other film is a remake of PAGE (for example "it was remade in Telugu as ...");
+    "none"                 anything else.
+- "wording":
+    "firm"    the sentence states the remake plainly as a fact: "is a remake of", "an official remake of", "was remade as", "was remade in Hindi as";
+    "loose"   the sentence weakens or hedges it: "loosely", "partly", "unofficial", "uncredited", "inspired by", "based on the idea of", "reported to be", "said to be", "has been described as", "considered", "similar to", "reboot", "reimagining", "re-adaptation";
+    "" when the relation is "none".
+
+Rules.
+- Use only what the sentence says. Do not use your own knowledge of the films, and do not guess from titles or years.
+- If the sentence lists several films as remakes of PAGE, each of them is "other_remakes_page".
+- If the sentence says PAGE is a remake of X, and that X is itself a remake of or based on Y, then X is "page_remakes_other" and Y is "none", unless the sentence also says PAGE is a remake of Y.
+- "none" covers: a sequel, prequel or spin-off; a film that is only compared or mentioned; another remake of the same original (a sibling); a film based on the same novel, play or true story that the sentence does not call a remake; a film whose remake status the sentence denies; a dubbed version; a film shot at the same time in another language ("simultaneously", "bilingual").
+- If you cannot tell which film the word "remake" or "remade" applies to, answer "none".
+
+The items follow.
+
+### ITEM 2207742d8e46c48f
+PAGE: The Stepfather (2009 film)
+SENTENCE: It is the fourth installment in The Stepfather film series and is a remake of the 1987 film of the same name which was loosely based on the crimes of mass murderer John List.
+OTHER FILMS: ["The Stepfather (1987 film)"]
+
+### ITEM 42292c6c3cfd55ef
+PAGE: The Getaway (1994 film)
+SENTENCE: It is a remake of Sam Peckinpah's 1972 film, in turn based on the 1958 novel written by Jim Thompson.
+OTHER FILMS: ["The Getaway (1972 film)"]
+
+### ITEM ab3b8bb4bbfaaa43
+PAGE: Always (1989 film)
+SENTENCE: It is a remake of the 1943 romantic drama A Guy Named Joe, which was set during World War II.
+OTHER FILMS: ["A Guy Named Joe"]
+
+### ITEM c66716ad8274ca4f
+PAGE: Flubber (film)
+SENTENCE: A remake of The Absent-Minded Professor (1961), the film was produced by Walt Disney Pictures and stars Robin Williams, Marcia Gay Harden, Christopher McDonald, Ted Levine, [[Raymond J.
+OTHER FILMS: ["The Absent-Minded Professor"]
+
+### ITEM 1afe0fae184cdc83
+PAGE: Willard (1971 film)
+SENTENCE: The film was followed by a 1972 sequel, Ben, and a 2003 remake, also titled Willard, with Crispin Glover portraying Willard, and Davison making a cameo as Willard's father.
+OTHER FILMS: ["Willard (2003 film)"]
+
+### ITEM 3505236ecd7c843d
+PAGE: The Fog (2005 film)
+SENTENCE: It is a remake of John Carpenter's 1980 film of the same name and was produced by Carpenter and Debra Hill who co-wrote the original film.
+OTHER FILMS: ["The Fog"]
+
+### ITEM c898ec45ede4e855
+PAGE: Gone in 60 Seconds (1974 film)
+SENTENCE: Gone in 60 Seconds has become a cult film in the years since its release, and a loose remake with new characters and a different plot was released in 2000, starring Nicolas Cage and Angelina Jolie.
+OTHER FILMS: ["Gone in 60 Seconds (2000 film)"]
+
+### ITEM 318ce6f7847b5ef9
+PAGE: Love Affair (1994 film)
+SENTENCE: Warren Beatty Annette Bening Katharine Hepburn Garry Shandling Chloe Webb Pierce Brosnan Kate Capshaw}} Love Affair is a 1994 American romantic drama film and a remake of the 1939 film of the same name.
+OTHER FILMS: ["Love Affair (1939 film)"]
+
+### ITEM 1071df8cb43d906d
+PAGE: The Omen (2006 film)
+SENTENCE: The fifth installment in The Omen series, it is a remake of the 1976 film of the same title, which was also written by Seltzer.
+OTHER FILMS: ["The Omen"]
+
+### ITEM f9b010d17c0a4767
+PAGE: A Nightmare on Elm Street (2010 film)
+SENTENCE: A Nightmare on Elm Street was originally to follow the same design as Platinum Dunes' other remake, Friday the 13th (2009), where the writers took the best elements from each of the films in the original series and created a single storyline with them.
+OTHER FILMS: ["Friday the 13th (2009 film)"]
+
+### ITEM 0749ded1c39ae8c6
+PAGE: The Stepford Wives (1975 film)
+SENTENCE: Several sequels to the film were made, as well as a remake in 2004 that used the same title.
+OTHER FILMS: ["The Stepford Wives (2004 film)"]
+
+### ITEM 181cc0635f6ac3fd
+PAGE: Where the Boys Are '84
+SENTENCE: A remake of the 1960 film Where the Boys Are, it was produced by Allan Carr.
+OTHER FILMS: ["Where the Boys Are"]
+
+### ITEM 562015ff66d72a3c
+PAGE: Point Break
+SENTENCE: A remake was released in 2015.
+OTHER FILMS: ["Point Break (2015 film)"]
+
+### ITEM 5b615358294b54f7
+PAGE: The Truth About Charlie
+SENTENCE: A remake of Charade (1963), it stars Mark Wahlberg and Thandiwe Newton in the roles played by Cary Grant and Audrey Hepburn in Charade.
+OTHER FILMS: ["Charade (1963 film)"]
+
+### ITEM 2890b7d5c0c4b018
+PAGE: Return to the Blue Lagoon
+SENTENCE: The screenplay by Leslie Stevens used some basic elements from the sequel novels The Garden of God (1923) and The Gates of Morning (1925) and even from an earlier film adaptation of The Blue Lagoon (1949), but the film was more a remake than a sequel.
+OTHER FILMS: ["The Blue Lagoon (1949 film)"]
+
+### ITEM ee03ebb9bccac18f
+PAGE: Man, Woman and Child (film)
+SENTENCE: The Bollywood film Masoom is an unauthorised remake of Man, Woman and Child.
+OTHER FILMS: ["Masoom (1983 film)"]
+
+### ITEM ede0449eaa601e61
+PAGE: A Nightmare on Elm Street
+SENTENCE: Jason|crossover]] with the Friday the 13th franchise, various other merchandise, and a 2010 remake.
+OTHER FILMS: ["A Nightmare on Elm Street (2010 film)"]
+
+### ITEM e5423ebbd275fb8b
+PAGE: Angels in the Outfield (1994 film)
+SENTENCE: It is a loose remake of the 1951 film of the same name.
+OTHER FILMS: ["Angels in the Outfield (1951 film)"]
+
+### ITEM 1925a231cebd2b8c
+PAGE: Death Wish 4: The Crackdown
+SENTENCE: The Bollywood film Mohra is an unofficial remake of the film.
+OTHER FILMS: ["Mohra"]
+
+### ITEM 22cee15aa319b742
+PAGE: King Kong (2005 film)
+SENTENCE: It is the ninth entry in the King Kong franchise and the second remake of the 1933 film of the same title, the first being the 1976 remake.
+OTHER FILMS: ["King Kong (1933 film)", "King Kong (1976 film)"]
+
+### ITEM 9a025ccb433044b5
+PAGE: Oxford Blues
+SENTENCE: It is a remake of the 1938 Metro-Goldwyn-Mayer film A Yank at Oxford.
+OTHER FILMS: ["A Yank at Oxford"]
+
+### ITEM 25bb83906579d72e
+PAGE: The Master Gunfighter
+SENTENCE: The Master Gunfighter is mainly a remake of the 1969 Japanese film Goyokin, although the story revolves around a true incident in the early 1800s involving massacred Indians that occurred in the vicinity of Goleta, California.
+OTHER FILMS: ["Goyokin"]
+
+### ITEM 0c7c38a67c5bb401
+PAGE: The Getaway (1972 film)
+SENTENCE: A film remake of the same name starring Alec Baldwin and Kim Basinger was released in 1994.
+OTHER FILMS: ["The Getaway (1994 film)"]
+
+### ITEM 3058e2d8d2b63a9e
+PAGE: Moon Over Parador
+SENTENCE: Booth]] and is a loose remake of the 1939 film The Magnificent Fraud.
+OTHER FILMS: ["The Magnificent Fraud"]
+
+### ITEM b2ad5c973a15918e
+PAGE: Death at a Funeral (2010 film)
+SENTENCE: It is a remake of the 2007 film of the same name, also written by Craig.
+OTHER FILMS: ["Death at a Funeral (2007 film)"]
+
+### ITEM 735f26cd3e272b73
+PAGE: The Spiral Staircase (1975 film)
+SENTENCE: It was written by Mel Dinelli and is a remake of the 1946 film of the same name, which was adapted from Ethel Lina White's 1933 novel Some Must Watch.
+OTHER FILMS: ["The Spiral Staircase (1946 film)"]
+
+### ITEM b51eb410e8b9fee9
+PAGE: The House on Sorority Row
+SENTENCE: A remake, Sorority Row, was released in 2009.
+OTHER FILMS: ["Sorority Row"]
+
+### ITEM d80013188efdcf81
+PAGE: Red Dawn
+SENTENCE: A remake was released in 2012.
+OTHER FILMS: ["Red Dawn (2012 film)"]
+
+### ITEM 2aebe89444511946
+PAGE: The Bad Lieutenant: Port of Call New Orleans
+SENTENCE: It is the second installment in the Bad Lieutenant film series, serving as a spiritual successor to the 1992 film Bad Lieutenant, and is not a remake according to Herzog.
+OTHER FILMS: ["Bad Lieutenant"]
+
+### ITEM 5da99957c7caa00d
+PAGE: Sabrina (1995 film)
+SENTENCE: It is a remake of Billy Wilder's 1954 film of the same name, which in turn was based upon the 1953 play Sabrina Fair, and follows a young woman, played by Julia Ormond, who becomes the center of an unexpected romantic rivalry between two very different brothers.
+OTHER FILMS: ["Sabrina (1954 film)"]
+
+### ITEM 255e42d1d6639cbd
+PAGE: Prom Night (2008 film)
+SENTENCE: It is the fifth and final installment of the Prom Night film series and serves as a remake, mainly taking inspiration from the original 1980 film.
+OTHER FILMS: ["Prom Night (1980 film)"]
+
+### ITEM ad55bcac4bb18e67
+PAGE: Shall We Dance? (2004 film)
+SENTENCE: A remake of the 1996 Japanese film of the same name, the film received mixed reviews and grossed $170.1 million worldwide.
+OTHER FILMS: ["Shall We Dance? (1996 film)"]
+
+### ITEM 423d535e5b37a3bb
+PAGE: Casino Royale (2006 film)
+SENTENCE: Following Die Another Day (2002), Eon decided to reboot the franchise, attempting to provide a realistic and darker exploration of a less experienced and more vulnerable Bond.
+OTHER FILMS: ["Die Another Day"]
+
+### ITEM 58ae15fc5d15354a
+PAGE: Overboard (1987 film)
+SENTENCE: In 1992, it was adapted in the Indian film Ek Ladka Ek Ladki, in 2006, it was adapted into the South Korean television series Couple or Trouble, and in 2018, it was remade with Anna Faris and Eugenio Derbez in reversed roles.
+OTHER FILMS: ["Ek Ladka Ek Ladki"]
+
+### ITEM 8c1941d8c97e2122
+PAGE: Bedazzled (2000 film)
+SENTENCE: It is a remake of the 1967 British film of the same name, written by Peter Cook and Dudley Moore, itself a comic retelling of the Faust legend.
+OTHER FILMS: ["Bedazzled (1967 film)"]
+
+### ITEM af59f1babb0677b4
+PAGE: Cheaper by the Dozen (2003 film)
+SENTENCE: It is a remake of the 1950 film of the same name.
+OTHER FILMS: ["Cheaper by the Dozen (1950 film)"]
+
+### ITEM b90c98b58d5a9478
+PAGE: Father of the Bride (1991 film)
+SENTENCE: It is a remake of the 1950 initial film.
+OTHER FILMS: ["Father of the Bride (1950 film)"]
+
+### ITEM 88f71864267c9a03
+PAGE: Omen III: The Final Conflict
+SENTENCE: Its theatrical release was the last for The Omen franchise until the 2006 remake, though a made-for-television sequel, Omen IV: The Awakening, released in 1991.
+OTHER FILMS: ["The Omen (2006 film)"]
+
+### ITEM 7a1be52be3663f75
+PAGE: Thirteen Ghosts
+SENTENCE: A remake of the 1960 film 13 Ghosts by William Castle, the film stars Tony Shalhoub, Embeth Davidtz, Matthew Lillard, Shannon Elizabeth, Alec Roberts, Rah Digga, and [[F.
+OTHER FILMS: ["13 Ghosts"]
+
+### ITEM 68f74864010af11f
+PAGE: Changing Lanes
+SENTENCE: It was later remade in Hindi as Taxi No. 9211.
+OTHER FILMS: ["Taxi No. 9211"]
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/remakes/statements/r2_039.out.json as a JSON list with one object per item: {"item": "<the code after ITEM>", "links": [{"film": "<title exactly as listed>", "relation": "...", "wording": "..."}]} with one entry in "links" for every film listed under OTHER FILMS. Write nothing else to that file.

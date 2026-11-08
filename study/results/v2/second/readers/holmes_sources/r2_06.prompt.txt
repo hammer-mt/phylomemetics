@@ -1,0 +1,134 @@
+You are helping to build a research corpus about Sherlock Holmes on screen. For each article below, record what THE ARTICLE ITSELF SAYS the work is based on. You are not asked what you know about the work or about the stories.
+
+For each article give:
+- "kind": one of "film", "tv_episode", "tv_film", "video_game", "series" (an article about a whole film series, television series or game series, not one work), "other".
+- "year": the year of first release or broadcast that the article gives (an integer), or null.
+- "holmes_appears": true if the article presents Sherlock Holmes as a character in the work, else false.
+- "sources": a list, possibly empty, of the Conan Doyle stories the article names as a source of the work. Each entry has:
+    "story": the story's title, copied exactly from the list of the 60 canonical stories given below;
+    "tier": "A", "B" or "C" by the rule below;
+    "quote": the sentence or infobox entry of the article that says so, copied word for word (at most 40 words).
+- "other_sources": a list of any source the article names that is not one of the 60 stories (a play, a later novel, another film), as short strings. Empty if none.
+
+The tiers. Use the article's own wording.
+- Tier A, a stated adaptation. The article says outright that the work is an adaptation of the story, is based on it, is a version of it, or dramatises it, with no loosening word. An infobox entry "based on" that names the story counts.
+- Tier B, a stated loose adaptation. The article says the work is loosely, partly or freely based on the story, or is a modern-day or updated adaptation of it, or takes its plot from it while changing it, or is credited as an adaptation although the plot differs.
+- Tier C, elements only. The article says the work is inspired by the story, borrows or uses elements, characters, a device, a line or its title from it, alludes or refers to it, or that critics see a resemblance.
+
+Rules.
+- Use only what the article says about the work's sources. Do not add a source from your own knowledge, and do not infer one from character names or from anything else.
+- If the article names several stories, give each its own entry and its own tier.
+- If the article says the screenplay is original, or names no canonical story as a source, "sources" is an empty list.
+- A statement that the work features characters created by Conan Doyle is not a source statement.
+- A story named only as the source of a DIFFERENT work (an earlier film, a sequel) is not a source of this one.
+
+The 60 canonical stories (copy a title exactly as written here):
+- A Study in Scarlet
+- The Sign of the Four
+- The Hound of the Baskervilles
+- The Valley of Fear
+- A Scandal in Bohemia
+- The Red-Headed League
+- A Case of Identity
+- The Boscombe Valley Mystery
+- The Five Orange Pips
+- The Man with the Twisted Lip
+- The Adventure of the Blue Carbuncle
+- The Adventure of the Speckled Band
+- The Adventure of the Engineer's Thumb
+- The Adventure of the Noble Bachelor
+- The Adventure of the Beryl Coronet
+- The Adventure of the Copper Beeches
+- The Adventure of Silver Blaze
+- The Adventure of the Cardboard Box
+- The Adventure of the Yellow Face
+- The Adventure of the Stockbroker's Clerk
+- The Adventure of the Gloria Scott
+- The Adventure of the Musgrave Ritual
+- The Adventure of the Reigate Squire
+- The Adventure of the Crooked Man
+- The Adventure of the Resident Patient
+- The Adventure of the Greek Interpreter
+- The Adventure of the Naval Treaty
+- The Final Problem
+- The Adventure of the Empty House
+- The Adventure of the Norwood Builder
+- The Adventure of the Dancing Men
+- The Adventure of the Solitary Cyclist
+- The Adventure of the Priory School
+- The Adventure of Black Peter
+- The Adventure of Charles Augustus Milverton
+- The Adventure of the Six Napoleons
+- The Adventure of the Three Students
+- The Adventure of the Golden Pince-Nez
+- The Adventure of the Missing Three-Quarter
+- The Adventure of the Abbey Grange
+- The Adventure of the Second Stain
+- The Adventure of Wisteria Lodge
+- The Adventure of the Red Circle
+- The Adventure of the Bruce-Partington Plans
+- The Adventure of the Dying Detective
+- The Disappearance of Lady Frances Carfax
+- The Adventure of the Devil's Foot
+- His Last Bow (short story)
+- The Adventure of the Mazarin Stone
+- The Problem of Thor Bridge
+- The Adventure of the Creeping Man
+- The Adventure of the Sussex Vampire
+- The Adventure of the Three Garridebs
+- The Adventure of the Illustrious Client
+- The Adventure of the Three Gables
+- The Adventure of the Blanched Soldier
+- The Adventure of the Lion's Mane
+- The Adventure of the Retired Colourman
+- The Adventure of the Veiled Lodger
+- The Adventure of Shoscombe Old Place
+
+The articles follow. The plot summaries have been left out on purpose.
+
+### ARTICLE id 34392746: The Reichenbach Fall
+Infobox: {"series": "Sherlock", "writer": "Stephen Thompson", "director": "Toby Haynes"}
+[Lead] "The Reichenbach Fall" is the third and final episode of the second series of the BBC television series Sherlock. It was written by Stephen Thompson and stars Benedict Cumberbatch as Sherlock Holmes, Martin Freeman as Dr John Watson, and Andrew Scott as Jim Moriarty. The episode deals with Moriarty's attempt to undermine the public's view of Sherlock and drive him to suicide. The episode was first broadcast on BBC One and BBC One HD on 15 January 2012. It attracted 9.78 million viewers, and critical reaction to the episode was positive. After the episode was aired, there was also much online and media speculation, which focused on Sherlock's death. Inspired by "The Final Problem" by Sir Arthur Conan Doyle, the episode follows Moriarty's plot to discredit and kill Sherlock Holmes, also heavily using elements from the film The Woman in Green, from the British WWII-era Sherlock Holmes film series. The title alludes to the Reichenbach Falls, the location where Holmes and Moriarty supposedly fall to their deaths in the original story. Some sequences in the episode that are set at the Tower of London were filmed at Cardiff Castle. Other locations used include Newport Cemetery, Tredegar House and Cardiff City Hall, as well as other areas around Cardiff including Broadway and Cardiff Bay.
+[Broadcast and reception] BARB overnight figures suggested that the episode was watched by 7.9 million viewers representing a 30% overall audience share, slightly down on the first (8.8 million) and second (8.2 million) episodes of the series. Final consolidated ratings rose to 9.78 million. The episode also became the second most-watched programme of 2012 on the online BBC iPlayer as of May, with over 1.9 million requests. As with the preceding two episodes in the second series, critical reaction to the episode was largely positive. The Guardian's Sam Wollaston praised Steve Thompson's writing, particularly how the episode was, at times "faithful to Sir ACD's The Final Problem, then it will wander, taking in mobile phone technology and computer hacking... But it doesn't feel like cheating; more like an open relationship, agreed by both parties." Wollaston comments that this episode explores relationships, particularly in contrast to the spookiness of the previous episode ("The Hounds of Baskerville"), calling Cumberbatch's and Freeman's performances "moving at times". Sarah Crompton, for The Daily Telegraph, said Cumberbatch was "riding the wave of what has been a triumph". Generally praising the series, Crompton suggests that "writer Stephen Thompson had been left a little too much to his own devices... The result was a bit wordy – though some of the words were wonderful." Commenting upon the cliffhanger ending, The Independent's Tom Sutcliffe says "Moffat and his colleagues have written themselves into a hell of a hole with regards to the next series. If they don't explain, there may be riots." Chris Tilly, who reviewed the episode for IGN, gave it a score of 10/10, calling it "The grandstanding conclusion to the brilliant BBC series, packed to the rafters with smart dialogue, audacious plotting, stylish direction and some truly wonderful performances." The British Board of Film Classification has awarded the episode a 12 certificate for "moderate violence and gore". The episode was released with the remainder of the second series in the UK on DVD and Blu-ray on 23 January 2012. Speculation and response to the cliffhanger The episode's cliffhanger led to speculation on forums, social networking sites and in newspaper articles about its resolution. Theories included the use of a mask, a squash ball, a lorry or Moriarty's body, the dummy seen in Sherlock's flat at the beginning of the episode, the psychotropic drugs featured in "The Hounds of Baskerville", the participation of Sherlock's homeless network, and a cadaver supplied by Molly. In an interview with The Guardian, Moffat claims "there is a clue everybody's missed... So many people theorising about Sherlock's death online – and they missed it!" Moffat noted that one of the central clues was "something that Sherlock did that was very out-of-character, but which nobody has picked up on." During the first episode of the third series this is played upon by the writers. The character, Anderson, who argued that Sherlock was a fraud is seen talking to Lestrade about a wild "Sherlock is Alive" theory having to do with a mask, even two years later. Shortly after the episode aired, memes inspired by the episode emerged online, considering how ordinary people in the Sherlock universe would react to learning that their hero was a fake. The memes included recurring phrases such as "I fight John Watson's war", "Moriarty was real" and, most prominently, "I believe in Sherlock Holmes", amongst others, the latter of which was used in-universe in "The Empty Hearse". There was some speculation that the "#BelieveInSherlock" movement was orchestrated by the BBC as a publicity stunt. Part of the resolution was filmed with the rest of the episode, although some, including hypothetical sequences involving Derren Brown and airbags, was filmed with "The Empty Hearse".
+
+### ARTICLE id 51633141: The Great Ace Attorney 2: Resolve
+Infobox: {"developer": "Capcom", "director": "Shu Takumi", "writer": "Shu Takumi", "series": "Ace Attorney", "released": "Nintendo 3DSAndroid, iOS", "genre": "Adventure, visual novel"}
+[Lead] The Great Ace Attorney 2: Resolve is an adventure game that serves as the tenth installment of the Ace Attorney series and the sequel to The Great Ace Attorney: Adventures, developed and published by Capcom. It was directed by Shu Takumi and produced by Motohide Eshiro. The game was released for the Nintendo 3DS in Japan in August 2017, with Android and iOS versions following in April 2018. Resolve was released worldwide in July 2021 via The Great Ace Attorney Chronicles, a duology compilation of both games for Nintendo Switch, PlayStation 4, and Windows. The game won the Famitsu Awards 2017 in the Excellency category.
+
+### ARTICLE id 2441877: Sherlock Holmes: Consulting Detective
+Infobox: {"developer": "ICOM Simulations", "director": "Kenneth Tarolla", "writer": "Laurie Rose Bauman Annie Fox", "genre": "Adventure, interactive movie"}
+[Lead] Sherlock Holmes: Consulting Detective is an interactive movie video game released in 1991. It is based on a tabletop game-gamebook hybrid of the same name first published in 1981, and features the fictional detective Sherlock Holmes, created by Arthur Conan Doyle. The video game was developed by ICOM Simulations for the FM Towns computer and later ported to MS-DOS, Classic Mac OS, CDTV, TurboGrafx-CD, Sega CD, and Tandy Video Information System with all versions distributed on CD-ROM. The game was re-released as a DVD for use with a standard DVD player and television in 1999. The game uses live actors in full motion video scenes as the player controls Sherlock Holmes and his longtime partner Dr. Watson, trying to solve three separate crimes by visiting various locations, listening to the dialogue, reading the included mock London newspapers, and, when the player gets enough evidence, answering the judge's questions. A remastered version for iPad, Windows, and OS X was released in September 2012.
+[Development] The game had a budget of more than $2 million.
+[Legacy] A sequel was released in 1992, Sherlock Holmes: Consulting Detective Vol. II, with three new cases to be solved. A third volume, with three new cases, was also released, albeit not for the Sega CD nor the Turbografx-CD. In April 1994, Computer Gaming World said that video quality had improved during the three games of the series, with each offering "solid and professional" acting. The magazine added that the chief strengths of these games were the challenging cases for the players to solve. In March 2012, a Kickstarter campaign was launched by David Marsh and his company Zojoi to help fund a high resolution and remastered version of the Sherlock Holmes: Consulting Detective Adventure Mysteries. The campaign was unsuccessful, as it was only able to attain a third of its $55,000 goal. Even though the Kickstarter was unsuccessful, the remastered version was still released. According to developer David Marsh, the Kickstarter money was never needed to fund the games, and Zojoi was just using the Kickstarter to raise awareness about them.
+
+### ARTICLE id 26583800: The Seven-Per-Cent Solution (film)
+Infobox: {"director": "Herbert Ross", "screenplay": "Nicholas Meyer"}
+[Lead] The Seven-Per-Cent Solution is a 1976 mystery film directed by Herbert Ross and written by Nicholas Meyer. Based on Meyer's 1974 novel of the same name, it stars Alan Arkin, Vanessa Redgrave, Robert Duvall, and Nicol Williamson. In the film, Sherlock Holmes is apparently a delusional cocaine addict. He harasses the renowned mathematician Professor James Moriarty for no apparent reason. Dr. Watson and Mycroft Holmes arrange for Sherlock to receive treatment by Sigmund Freud, and Freud uncovers one of Sherlock's secrets.
+[Production] The film was made at Pinewood Studios with location shooting in the UK and Austria (including the Austrian National Library); the tennis match/duel between Freud and von Leinsdorf was filmed on one of the historic real tennis courts at the Queen's Club in West Kensington, London. The production designer was Ken Adam. Bernard Herrmann had been hired to write the score but died from a heart attack soon after. He was replaced by John Addison, who had composed the music for Alfred Hitchcock's Torn Curtain (1966), after a score by Herrmann had been rejected. Stephen Sondheim wrote a song for the movie ("The Madame's Song") that was later recorded as "I Never Do Anything Twice" on the Side By Side By Sondheim cast recording. Meyer appeared in an 18-minute interview for the Blu-ray release by Shout Factory. Meyer discussed the genesis of the idea (his father was a psychiatrist and Meyer was a fan of Holmes' creator Arthur Conan Doyle) and how he took the opportunity to write the novel when the Writers Guild of America went on strike. Meyer revealed that he had often fought with Ross because Ross was too faithful to Meyer's novel. He believed that the script would not be cinematic enough if it was too faithful with the source. He discussed the casting including his push for Alan Arkin as Freud. He shared a story about how he and Ross decided to cast Duvall "in revolt" against Nigel Bruce's portrayal of Watson as a "Colonel Blimp"-type character. Meyer and Ross wanted to try to capture Watson's intelligence that had so far not been portrayed on-screen in Holmes movie adaptations.
+
+### ARTICLE id 12622762: The Adventures of Sherlock Holmes and Dr. Watson
+Infobox: {"director": "Igor Maslennikov"}
+[Lead] The Adventures of Sherlock Holmes and Dr. Watson ( Priklyucheniya Sherloka Kholmsa i doktora Vatsona) is a series of Soviet television films portraying Arthur Conan Doyle's fictional English detective, starting in 1979. They were directed by Igor Maslennikov.
+[Regular cast] Vasily Livanov as Sherlock Holmes Vitaly Solomin as Dr. Watson Rina Zelyonaya as Mrs. Hudson Borislav Brondukov as Inspector Lestrade Igor Dmitriev as Tobias Gregson Boris Klyuyev as Mycroft Holmes Viktor Yevgrafov as Professor Moriarty
+
+### ARTICLE id 6435145: The Adventures of Sherlock Holmes (film)
+Infobox: {"director": "Alfred L. Werker", "writer": "Edwin BlumWilliam A. Drake", "based_on": "Characters:Arthur Conan DoylePlay:William Gillette"}
+[Lead] The Adventures of Sherlock Holmes (released theatrically as Sherlock Holmes in the United Kingdom) is a 1939 American mystery adventure film based on Sir Arthur Conan Doyle's Sherlock Holmes detective stories. Although claiming to be an adaptation of the 1899 play Sherlock Holmes by William Gillette, the film bears little resemblance to the play. Released by 20th Century-Fox, the film is the second of fourteen Sherlock Holmes films produced between 1939 and 1946, starring Basil Rathbone as Sherlock Holmes and Nigel Bruce as Dr. John Watson. The Adventures of Sherlock Holmes is the last film in the series to be released by Fox as well as the final film to be set in the Victorian period of Doyle's stories (all subsequent Holmes films would be released by Universal Pictures and set in contemporaneous times (i.e. the 1940s). The film co-stars George Zucco as Holmes's nemesis, Professor Moriarty, and follows Holmes and Watson as they attempt to foil Moriarty's plans to target a wealthy family and steal the Crown Jewels.
+[Background] The film was supposedly based on the stage play by William Gillette, though little of the play's original plot remains aside from the Holmes/Moriarty conflict. The play featured a very young Charlie Chaplin in one of his very first acting roles during its first London production, playing the character of Billy, who, in this movie, is played by Terry Kilburn.
+[Influence] The scene in which Holmes experiments with the flies in the glass while playing the violin is recreated in the 2009 film Sherlock Holmes, in which Holmes is played by Robert Downey Jr. In the episode "The Reichenbach Fall" of the BBC/PBS series, Sherlock is heavily inspired by the film and other Rathbone-Bruce films (creators Steven Moffat and Mark Gatiss have named the films as the show's primary inspiration).
+
+### ARTICLE id 28839700: The Hound of the Baskervilles (1937 film)
+Infobox: {"director": "Carl Lamac", "writer": "Carla von Stackelberg"}
+[Lead] The Hound of the Baskervilles is a 1937 German mystery film directed by Carl Lamac and starring Peter Voss, Fritz Odemar and Fritz Rasp. It is an adaptation of the 1902 Sherlock Holmes story The Hound of the Baskervilles by Arthur Conan Doyle. It was shot at the Babelsberg Studios in Potsdam and on location at the neo-Gothic Moyland Castle. The film's sets were designed by the art directors Wilhelm Depenau and Karl Vollbrecht.
+
+### ARTICLE id 25357930: Sherlock Holmes (2010 film)
+Infobox: {"director": "Rachel Lee Goldenberg", "screenplay": "Paul BalesStephen Fiske"}
+[Lead] Sir Arthur Conan Doyle's Sherlock Holmes is a 2010 American steampunk mystery film directed by Rachel Lee Goldenberg and produced by independent American film studio The Asylum. It features the Sherlock Holmes characters created by Sir Arthur Conan Doyle, though it follows an original plot. In the film, eccentric detective Holmes and his companion Dr. Watson investigate the trail of destruction left by the supervillain Spring-Heeled Jack. Gareth David-Lloyd plays Dr. Watson and Ben Syder, making his film debut, plays Sherlock Holmes. The film is a direct-to-DVD mockbuster intended to capitalize upon the Warner Brothers film of the same name directed by Guy Ritchie, and is the second film by The Asylum to be inspired by the writings of Arthur Conan Doyle, the first being King of the Lost World. The film was shot primarily in Caernarfon, Wales on a low budget. The Asylum had previously used the same locations to film Merlin and the War of the Dragons.
+
+### ARTICLE id 39440323: The Empty Hearse
+Infobox: {"series": "Sherlock", "writer": "Mark Gatiss", "director": "Jeremy Lovering"}
+[Lead] "The Empty Hearse" is the first episode of the third series of the BBC television series Sherlock. It was written by Mark Gatiss and stars Benedict Cumberbatch as Sherlock Holmes, Martin Freeman as Dr John Watson, and Mark Gatiss as Mycroft Holmes. It also marks the first appearance of Amanda Abbington as Mary Morstan and Lars Mikkelsen as Charles Augustus Magnussen. Inspired by "The Adventure of the Empty House" and "The Lost Special" by Sir Arthur Conan Doyle, the episode follows Sherlock Holmes' return to London and reunion with John Watson, along with an underground terrorist network. The episode was first broadcast on BBC One and Channel One on 1 January 2014. It garnered a viewership of 12.7 million people and received positive reviews.
+[Production] Casting Many of the cast of the previous two series returned, with Benedict Cumberbatch and Martin Freeman playing Sherlock Holmes and Doctor John Watson. Freeman's then real-life partner Amanda Abbington joined the cast as Mary Morstan, Watson's girlfriend. Cumberbatch's parents, Wanda Ventham and Timothy Carlton, had cameos as Sherlock's parents. Writing "The Empty Hearse" was written by the series' co-creator, Mark Gatiss. He was inspired to use the London Underground as a setting by the 1968 Doctor Who serial The Web of Fear, a story which is primarily set in the Underground after London is evacuated due to the spread of a deadly web-like fungus via the Tube network. Filming The resolution to how Holmes had faked his death at the end of "The Reichenbach Fall" was filmed in April 2013 at St Bart's Hospital in London. The filming was attended by several hundred fans, whom producer Sue Vertue begged not to leak too much information. Telegraph journalist Sheryl Garratt reported that the filming was deliberately confusing to the watching fans, and the explanation of how Sherlock faked his death was blanked in the script. The London Underground train used in the episode was built from scratch by the production to look like a District line carriage, as they were unable to acquire a real train. The never completed tube station called Sumatra Road is based on North End tube station. Filming was carried out at Westminster and Charing Cross stations.
+[Broadcast and reception] "The Empty Hearse" was first publicly exhibited at a special screening at the BFI Southbank in London on 15 December 2013. The screening was followed by a Q&A, hosted by Caitlin Moran, attended by the show's creators and key cast members. The episode was first broadcast on BBC One on 1 January 2014. According to overnight figures, the episode was viewed by 9.2 million people in the UK on BBC One, with the viewership peaking at 9.7 million in the first 5 minutes. It premiered in the US on PBS as part of Masterpiece Mystery! on 19 January 2014. "The Empty Hearse" received critical acclaim upon broadcast, with The Guardian's Sam Wollaston proclaiming "...an explosive return for Cumberbatch and Freeman, full of fizz, whizz and wit." Similarly, The Telegraph's Chris Harvey said, "This was the triumphant return of the most charismatic, most fun character on British television." The Mirror gave the episode a perfect five star review, with the author Josh Wilding's headline being, "Stunning explanation in The Empty Hearse for how Sherlock faked his death won't satisfy everybody, but it works." whilst the author Anne-Marie Senior noted how viewers were left confused by the discontinuity showing different trains on the wrong tube lines, "Sherlock sparks Twitter fury as eagle-eyed viewers notice the lines on London Underground are WRONG." Metro also awarded the episode four out of five stars, with reviewer Tim Liew stating, "The Empty Hearse is a fast-paced yarn filled with breathtaking audacity and laugh-out-loud moments." The episode also received very positive reviews from American critics, with The Hollywood Reporter's Tim Goodman saying "The acclaimed detective, played by Benedict Cumberbatch, returns for season three as superb (and unscathed) as when he left." Oliver Jia of The Punk Effect stated that the episode was "well worth the [two-year-long hiatus]" and praised it as a "well-acted, well-produced, well-written, and extremely engrossing drama." David Mather, who ran fan site Sherlockology, told BBC Radio 5 Live's Victoria Derbyshire that he had been inundated with mixed responses from fans.
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/tiers/r2_06.out.json as a JSON list with one object per article, each with the keys "id" (the number after "ARTICLE id"), "kind", "year", "holmes_appears", "sources", "other_sources". Write nothing else to that file.

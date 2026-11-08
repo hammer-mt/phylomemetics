@@ -1,0 +1,112 @@
+You are helping to build a research corpus of film remakes from Wikipedia. Each item below gives the title of a film's Wikipedia page (PAGE), ONE sentence from the opening of that page, and the OTHER FILMS that sentence links to. For each other film, record what THE SENTENCE SAYS about PAGE and that film. You are not asked what you know about the films.
+
+For each other film give:
+- "relation":
+    "page_remakes_other"   the sentence says PAGE is a remake of the other film;
+    "other_remakes_page"   the sentence says the other film is a remake of PAGE (for example "it was remade in Telugu as ...");
+    "none"                 anything else.
+- "wording":
+    "firm"    the sentence states the remake plainly as a fact: "is a remake of", "an official remake of", "was remade as", "was remade in Hindi as";
+    "loose"   the sentence weakens or hedges it: "loosely", "partly", "unofficial", "uncredited", "inspired by", "based on the idea of", "reported to be", "said to be", "has been described as", "considered", "similar to", "reboot", "reimagining", "re-adaptation";
+    "" when the relation is "none".
+
+Rules.
+- Use only what the sentence says. Do not use your own knowledge of the films, and do not guess from titles or years.
+- If the sentence lists several films as remakes of PAGE, each of them is "other_remakes_page".
+- If the sentence says PAGE is a remake of X, and that X is itself a remake of or based on Y, then X is "page_remakes_other" and Y is "none", unless the sentence also says PAGE is a remake of Y.
+- "none" covers: a sequel, prequel or spin-off; a film that is only compared or mentioned; another remake of the same original (a sibling); a film based on the same novel, play or true story that the sentence does not call a remake; a film whose remake status the sentence denies; a dubbed version; a film shot at the same time in another language ("simultaneously", "bilingual").
+- If you cannot tell which film the word "remake" or "remade" applies to, answer "none".
+
+The items follow.
+
+### ITEM 5cf707134df19489
+PAGE: Dharma (1998 film)
+SENTENCE: A remake of the 1997 Hindi film Ziddi, it was released on 9 July 1998.
+OTHER FILMS: ["Ziddi (1997 film)"]
+
+### ITEM 6df56dc4654d4050
+PAGE: Aisa Pyaar Kahan
+SENTENCE: The film is remake of the Telugu movie Rakta Sambandham (1962), which itself was a remake of the Tamil movie Pasamalar (1961) and has already been remade in Hindi as Rakhi (1962).
+OTHER FILMS: ["Rakta Sambandham (1962 film)", "Pasamalar"]
+
+### ITEM e42a8ecde92d03b2
+PAGE: Main Sunder Hoon
+SENTENCE: It is a remake of the 1964 Tamil film Server Sundaram.
+OTHER FILMS: ["Server Sundaram"]
+
+### ITEM 8ebd3fb0fc1f048f
+PAGE: Pelli Chesi Choodu
+SENTENCE: Pelli Chesi Choodu was then remade in Kannada as Maduve Madi Nodu (1965) by Vijaya Productions and in Hindi as Shaadi Ke Baad (1972) by Prasad.
+OTHER FILMS: ["Shaadi Ke Baad"]
+
+### ITEM 75ee976ca1b4e794
+PAGE: Kartoos
+SENTENCE: This film was remade in Tamil as "Paramasivan", directed by [[P.
+OTHER FILMS: ["Paramasivan"]
+
+### ITEM 0190780f28b6e611
+PAGE: Mandya to Mumbai
+SENTENCE: The film is a remake of Tamil film Renigunta.
+OTHER FILMS: ["Renigunta (film)"]
+
+### ITEM 2e6fb3d7a70e158e
+PAGE: Pandithurai
+SENTENCE: The film was remade in Telugu as Bava Bavamaridi (1993), in Hindi as Bandhan (1998), in Kannada as Baava Baamaida (2001) and in Bangladeshi Bengali as Bhalobashar Shotru (2005).
+OTHER FILMS: ["Bandhan (1998 film)"]
+
+### ITEM c2fabe7d71f5472c
+PAGE: Kandein Kadhalai
+SENTENCE: The film, a remake of the 2007 Hindi film Jab We Met, with Bharath and Tamannaah Bhatia reprising the roles of Shahid Kapoor and Kareena Kapoor.
+OTHER FILMS: ["Jab We Met"]
+
+### ITEM bc244171e94e1e17
+PAGE: Ayee Milan Ki Bela
+SENTENCE: The film was remade in Tamil as Oru Thaai Makkal.
+OTHER FILMS: ["Oru Thaai Makkal"]
+
+### ITEM 8e3a3e2787f8272a
+PAGE: En Thambi
+SENTENCE: It is a remake of the 1966 Telugu film Aastiparulu Later on 1972 Hindi as Bhai Ho To Aisa.
+OTHER FILMS: ["Aastiparulu", "Bhai Ho To Aisa"]
+
+### ITEM 40db0ecab985090f
+PAGE: A (Kannada film)
+SENTENCE: It was remade in Tamil as Adavadi.
+OTHER FILMS: ["Adavadi"]
+
+### ITEM 68785d9518e0582e
+PAGE: The Shaukeens
+SENTENCE: A remake of the 1982 film Shoukheen directed by Basu Chatterjee and starring Ashok Kumar, Utpal Dutt, [[A.
+OTHER FILMS: ["Shaukeen"]
+
+### ITEM 806666b77b8cfc66
+PAGE: Kudumbam Oru Kadambam
+SENTENCE: The film was remade in Kannada as Ananda Sagara (1983), in Telugu as (1984), in Hindi as Aaj Ka Daur (1985), and in Malayalam as Oru Sandesam Koodi (1985).
+OTHER FILMS: ["Aaj Ka Daur"]
+
+### ITEM 149fae4ab013e691
+PAGE: Taxi No. 9211
+SENTENCE: In the same year it was remade in Telugu as Game, and in 2009, it was remade in Tamil as TN-07 AL 4777.
+OTHER FILMS: ["TN 07 AL 4777"]
+
+### ITEM 892a6cc97fe465c8
+PAGE: My Wife's Murder
+SENTENCE: The film is a remake of 2004 Telugu film, Madhyanam Hathya, directed by Ram Gopal Varma.
+OTHER FILMS: ["Madhyanam Hathya"]
+
+### ITEM ba414a84f879de25
+PAGE: Nanban (2012 film)
+SENTENCE: It is a remake of the Rajkumar Hirani's 2009 Hindi-language film 3 Idiots, which itself is based on Chetan Bhagat's novel Five Point Someone.
+OTHER FILMS: ["3 Idiots"]
+
+### ITEM cef27586fd2ae5fe
+PAGE: The Gentleman (film)
+SENTENCE: It is a remake of the Tamil film Gentleman (1993).
+OTHER FILMS: ["Gentleman (1993 film)"]
+
+### ITEM c006df153f76d984
+PAGE: Sanam Tere Hain Hum
+SENTENCE: The film is loosely based on the 1957 American film An Affair to Remember, which in turn was a remake of 1939 film Love Affair.
+OTHER FILMS: ["An Affair to Remember", "Love Affair (1939 film)"]
+
+Write your answer with the Write tool to /home/user/phylomemetics/study/v2/cache/second/remakes/statements/r2_025.out.json as a JSON list with one object per item: {"item": "<the code after ITEM>", "links": [{"film": "<title exactly as listed>", "relation": "...", "wording": "..."}]} with one entry in "links" for every film listed under OTHER FILMS. Write nothing else to that file.
