@@ -29,7 +29,7 @@
   let selected = null, mode = 'all', bio = false;
 
   /* ---------- hex chart ---------- */
-  const S = 17, DX = 205, DY = 215, X0 = 125, Y0 = 118;
+  const S = 17, DX = 210, DY = 240, X0 = 135, Y0 = 122;
   const DIRS = [[1, 0], [1, -1], [0, -1], [-1, 0], [-1, 1], [0, 1]];
   function spiral(n) {
     const out = [[0, 0]];
@@ -164,7 +164,8 @@
       h('td', {}, b.feasibility || ''), h('td', { class: 'num' }, b.idea || ''))));
     $('landmarks').replaceChildren(...D.landmarks.map(l => h('div', { class: 'sheet' },
       h('div', { class: 'eyebrow' }, l.when), h('h3', {}, l.who), h('p', { class: 'small' }, l.gave),
-      h('p', {}, l.memetic), h('span', { class: 'pill s-' + (l.status || 'unknown') }, l.statusText || l.status || ''))));
+      h('p', {}, l.memetic), h('div', {}, h('span', { class: 'pill s-' + (l.status || 'unknown') }, l.statusText || l.status || '')),
+      l.idea ? h('button', { class: 'chip', onclick: () => select(l.idea, true) }, 'See design ' + l.idea) : null)));
   }
   function drawSources() {
     $('srcBody').replaceChildren(...D.sources.map(x => h('tr', {},
