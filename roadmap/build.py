@@ -104,7 +104,7 @@ def main():
     (ROOT / "sources.md").write_text("\n".join(out), encoding="utf-8")
 
     # map/index.html
-    data = {"regions": db["regions"], "ideas": ideas, "premises": prem, "biology": bio["tools"],
+    data = {"regions": db["regions"], "links": db.get("links", []), "ideas": ideas, "premises": prem, "biology": bio["tools"],
             "landmarks": bio["landmarks"], "sources": [s for s in src if s.get("priority") in ("A", "B")], "summary": summ}
     blob = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
     page = (ROOT / "map/template.html").read_text(encoding="utf-8")

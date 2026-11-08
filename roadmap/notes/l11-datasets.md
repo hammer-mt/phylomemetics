@@ -60,16 +60,16 @@ The Batman study found that plain word overlap found documented sources as well 
 | MemeTracker | 96,608,034 documents, 210,999,824 phrases, 418,237,269 links, Aug 2008 to Apr 2009 (checked on SNAP, and confirmed again by the checker; SNAP labels the 210,999,824 "memes"). Phrase-cluster file about 220 MB (search; not rechecked) | English | snap.stanford.edu/memetracker | Not stated | Phrase variants cluster by wording. Truth is lexical |
 | OpenAlex (arXiv and other citations) | Full snapshot about 745 GB compressed as JSON Lines (works alone about 615 GB) or about 770 GB as Parquet, about 626 million records, as of the September 2026 release (checked: docs.openalex.org/download-all-data/openalex-snapshot). The scout's first figure, "about 330 GB compressed (search, secondary source)", is out of date by more than a factor of two | Mostly English | Public S3 bucket; free API | CC0 (checked: `LICENSE.txt` in the bucket is CC0 1.0) | Citation is documented influence and citation count is success, both on dated items. A citation is not proof an idea was inherited |
 | WhoSampled | 1,250,246 songs in a set given to researchers under agreement (checked: full text of arXiv 2410.15996). A 2026 paper pulled metadata and audio for about 170k tracks, about 20% of the database, and calls the annotations incomplete (checked: full text of arXiv 2609.15465, a two-page late-breaking abstract) | Audio | No public API (search). Academic licence reportedly exists (search, secondary). The 2026 paper releases its mined annotations as "WhoSampled130k" (about 92k sampling annotations; https://mtg.github.io/whosampled-130k-dataset/, named in the paper, not opened) and calls it the largest publicly available sample-identification dataset | Closed at source; a mined subset is now public, so "closed" overstates it | Audio, not text. Out of scope for language-model neurons |
-| Constitutions (Rockmore et al.) | 591 constitutions, 1789 to 2008 (search; arXiv 1711.06899 checked; doi 10.1002/asi.23971) | Many, in English translation | Text source not confirmed | Not confirmed | Descent is inferred by the paper, not documented. Long legal texts |
-| Bill text reuse (Wilkerson, Smith, Stramp 2015) | Replication data on Harvard Dataverse, doi 10.7910/DVN/27584, described as aggregate data (search) | English | Dataverse (not opened) | Not confirmed | Truth is text reuse. Useless as a neuron test |
-| Chain letters | 33 letters, 1980 to 1995 (search: Bennett, Li, Ma, Scientific American 2003). VanArsdale's archive at silcom.com/~barnowl returned 502 through the proxy today | English | Could not check | Not confirmed | A phylogenetics blog found the letters "not particularly tree-like" (search) |
-| Archive of Our Own | 12.6M works were scraped and posted to Hugging Face in April 2025, then treated as theft by the community (search: Fanlore). | Many | Rate-limited; terms forbid scraping for commercial generative AI (search, secondary) | Authors keep copyright | Has "inspired by" links, kudos and tags: all three ground truths. Too risky for a public repo without author consent |
+| Constitutions (Rockmore et al.) | 591 constitutions, 1789 to 2008 (checked: arXiv 1711.06899 abstract; journal version in JASIST 69(3), 483–494, doi 10.1002/asi.23971, checked via Crossref) | Many, in English translation | Text source not confirmed | Not confirmed | Descent is inferred by the paper, not documented. Long legal texts |
+| Bill text reuse (Wilkerson, Smith, Stramp 2015) | Replication data on Harvard Dataverse, doi 10.7910/DVN/27584 (checked via the Dataverse API: one file, `PolicyIdeasReplication.zip`), described as aggregate data (search; `[UNVERIFIED]`, the record's description does not say so and the zip was not opened) | English | Dataverse (record metadata checked; file not opened) | CC0 1.0 (checked via the Dataverse API; was "Not confirmed") | Truth is text reuse. Useless as a neuron test |
+| Chain letters | 33 letters, 1980 to 1995 (search; `[UNVERIFIED]` for the count and dates. The article is confirmed: Bennett, Li, Ma, "Chain Letters and Evolutionary Histories", Scientific American 288(6), 76–81, June 2003, doi 10.1038/scientificamerican0603-76, via Crossref). VanArsdale's archive at silcom.com/~barnowl returned 502 through the proxy today | English | Could not check | Not confirmed | A phylogenetics blog found the letters "not particularly tree-like" (search; `[UNVERIFIED]`, no URL was recorded for the blog) |
+| Archive of Our Own | 12.6M works were scraped and posted to Hugging Face in April 2025, then treated as theft by the community (search: Fanlore; `[UNVERIFIED]`: no Fanlore URL was recorded and the OTW page returned 403 to the checker). | Many | Rate-limited; terms forbid scraping for commercial generative AI (search, secondary) | Authors keep copyright | Has "inspired by" links, kudos and tags: all three ground truths. Too risky for a public repo without author consent |
 
 **Not labelled, not checked, or wrong shape**
 
-- Project Gutenberg: the site forbids robots (checked: gutenberg.org/policy/robot_access.html); mirrors and offline catalogues are the allowed route. It is a text source, not a labelled dataset. Useful only as the text behind Wikidata links between public-domain works.
-- RecipeNLG: 2,231,142 recipes; licence "unknown", access by a permission form from Poznań University of Technology (search). No descent or success labels.
-- Hymnary.org: over a million hymn and tune records; bulk export unclear (search).
+- Project Gutenberg: the site forbids robots (checked: gutenberg.org/policy/robot_access.html); mirrors and offline catalogues are the allowed route. More exactly, the page says the website "is intended for human users only" and names the exceptions: a private mirror, the machine-readable catalogue, and a `robot/harvest` address meant for `wget` with a two-second wait (checker's reading of the same page). It is a text source, not a labelled dataset. Useful only as the text behind Wikidata links between public-domain works.
+- RecipeNLG: 2,231,142 recipes; licence "unknown" (both checked: Hugging Face card `mbien/recipe_nlg`), access by a permission form from Poznań University of Technology (search; `[UNVERIFIED]`: recipenlg.cs.put.poznan.pl failed with an expired TLS certificate). No descent or success labels.
+- Hymnary.org: over a million hymn and tune records; bulk export unclear (search; `[UNVERIFIED]`, not rechecked).
 - Reddit copypasta: no dedicated dataset found. The nearest study, Adamic et al. 2014 (arXiv 1402.6792, checked), used Facebook data that is not public.
 - Proverbs, software forks, book blurbs with sales, Billboard lyrics, TED talks, patents: not checked in the time box. `[UNVERIFIED]`
 
@@ -103,7 +103,7 @@ Dropped from the ranking: WhoSampled (closed, audio), paired tweets (dead link),
 
 - Copy-descent data (stemmata, reprints, phrase clusters, bill reuse, chain letters) define descent as shared wording. If neurons match word overlap there, that says nothing; if they lose, that is expected. Using them as a headline test would repeat the Batman result (`study/README.md`, E2) with a foregone conclusion.
 - The fair tests are where the meme survives a change of words. ATU types, tropes, translations and cross-media adaptations all have that property. If neurons do not beat TF-IDF and sentence embeddings on those, P1 has no practical content left.
-- Success data is a different claim from P1: "the units that fire predict what spreads". The nearest published work used sparse-autoencoder features on text embeddings, not raw neurons, on headline click data, and reported 45 of 60 generated hypotheses significant against at most 24 for baselines (Movva et al., ICML 2025; search summary of arXiv 2502.04382, ID checked). So learned features, not raw neurons, are the incumbent there. P1 as stated by Cammarata (raw neurons are already clean) has to beat that as well as word overlap.
+- Success data is a different claim from P1: "the units that fire predict what spreads". The nearest published work used sparse-autoencoder features on text embeddings, not raw neurons, on headline click data among other tasks, and reported 45 of 60 generated hypotheses significant against at most 24 for baselines (Movva et al., ICML 2025; checked in the full text of arXiv 2502.04382). Correction from the check: the 45 of 60 is pooled over three datasets (Upworthy headlines, Yelp reviews, Congress speeches), not headlines alone, and the three baselines scored 24, 23 and 20. Their headline task is pairwise: pick the higher-click headline of the best and worst arm in one test. So learned features, not raw neurons, are the incumbent there. P1 as stated by Cammarata (raw neurons are already clean) has to beat that as well as word overlap.
 - Crowd labels are not ground truth for "the real memes". TV Tropes coverage tracks popularity, so a unit that tracks "famous film" would look like it detects tropes. Any trope test needs a popularity control.
 
 **P2 (units generalise across models).** The study itself warns against assuming this: family counts differ by model (14,843 for Qwen3-8B, 24,732 for Llama 3.1 8B, 5,641 for Qwen3-1.7B) and only Llama's neurons added anything beyond words (`study/README.md`, rows "The core canon is real" and "E2 Heredity"). Datasets that can test P2 directly are the aligned ones: verse-aligned Bibles (#5) and translated folktales (#3). They give thousands of item pairs known to carry the same content, so one can ask whether unit A in model X and its mapped unit in model Y fire on the same items, in a language neither mapping was fitted on. Nothing else on the list tests P2 as cleanly. Multilingual sentence embeddings are built for exactly this task and will be a hard rival.
@@ -166,40 +166,107 @@ Cost basis: the pre-registration's timing file gives 67.8 sentences per second f
 | --- | --- | --- | --- |
 | Matias, Munger, Le Quere, Ebersole. The Upworthy Research Archive, a time series of 32,487 experiments in U.S. media. Scientific Data, 2021 | https://doi.org/10.1038/s41597-021-00934-7 ; data https://osf.io/jd64p/ | Randomised success data with a confirmatory split, CC BY 4.0 | A |
 | Movva, Peng, Garg, Kleinberg, Pierson. Sparse Autoencoders for Hypothesis Generation. ICML 2025 | https://arxiv.org/abs/2502.04382 | Prior art: interpretable features predicting headline clicks, with baselines | A |
-| Gala, Khursheed, Lerner, O'Connor, Iyyer. Analyzing Gender Bias within Narrative Tropes. 2020 | https://arxiv.org/abs/2011.00092 | The 30K-trope, 40K-work dataset | A |
-| Hagedorn and Darányi. Ashliman Folktexts with ATU types. 2022 | https://doi.org/10.5281/zenodo.6575263 | The only open ATU-labelled English text set found | A |
+| Gala, Khursheed, Lerner, O'Connor, Iyyer. Analyzing Gender Bias within Narrative Tropes. Workshop on NLP and Computational Social Science at EMNLP, 2020 | https://arxiv.org/abs/2011.00092 ; https://doi.org/10.18653/v1/2020.nlpcss-1.23 ; data linked from https://github.com/dhruvilgala/tvtropes | The 30K-trope, 40K-work dataset | A |
+| Hagedorn and Darányi. Ashliman Folktexts with ATU types. 2022 (a descriptive label; the Zenodo record's own title is "j-hagedorn/trilogy: Updated Ashliman Folktexts dataset", version 1.1, 2022-05-24) | https://doi.org/10.5281/zenodo.6575263 (all versions: https://doi.org/10.5281/zenodo.5835161) | The only open ATU-labelled English text set found | A |
+| Hagedorn and Darányi. Bearing a Bag-of-Tales: An Open Corpus of Annotated Folktales for Reproducible Research. Journal of Open Humanities Data 8, 2022 (row added by the checker) | https://doi.org/10.5334/johd.78 | The data paper for the row above: states CC BY-SA 4.0 and that no other open ATU-annotated English set was found | A |
 | Wikidata query service counts, 2026-11-08 | https://query.wikidata.org/ | Size of the documented-influence graph, CC0 | A |
 | Akerman et al. The eBible Corpus. 2023 | https://arxiv.org/abs/2304.09919 | Verse-aligned translations for the P2 test | A |
 | Computer-Assisted Stemmatology Challenge data page | https://www.cs.helsinki.fi/u/ttonteri/casc/data.html | Known true trees; note the use restriction | B |
-| Zhang, Jain, Guo, Chen et al. Humor in AI. 2024 | https://arxiv.org/abs/2406.10522 | 2.2M rated captions, topic-controlled | B |
-| García-Ortega, García-Sánchez, Merelo-Guervós. Tropes in films. 2020 | https://arxiv.org/abs/2006.05380 | Film to trope table under CC BY-SA | B |
-| CMU Movie Summary Corpus, project page (the paper's author list was not confirmed this session) | https://www.cs.cmu.edu/~ark/personas/ | Plots with box office | B |
+| Zhang, Jain, Guo, Chen et al. Humor in AI: Massive Scale Crowd-Sourced Preferences and Benchmarks for Cartoon Captioning. NeurIPS 2024 | https://arxiv.org/abs/2406.10522 ; https://doi.org/10.52202/079017-3978 | 2.2M rated captions, topic-controlled | B |
+| García-Ortega, García-Sánchez, Merelo-Guervós. Tropes in films: an initial analysis. 2020 | https://arxiv.org/abs/2006.05380 | Film to trope table under CC BY-SA (`[UNVERIFIED]`: the licence is not stated in the arXiv text) | B |
+| CMU Movie Summary Corpus, project page (the paper's author list was not confirmed this session; now confirmed by the checker from the project page: Bamman, O'Connor, Smith. Learning Latent Personas of Film Characters. ACL 2013) | https://www.cs.cmu.edu/~ark/personas/ | Plots with box office | B |
 | Web Robots Kickstarter datasets | https://webrobots.io/kickstarter-datasets/ | Monthly dumps, current to 2026-10-12 | B |
 | da Silva and Tehrani. Comparative phylogenetic analyses uncover the ancient roots of Indo-European folktales. 2016 | https://doi.org/10.1098/rsos.150645 | The study's model; matrix data only | B |
 | Tehrani. The Phylogeny of Little Red Riding Hood. 2013 | https://doi.org/10.1371/journal.pone.0078871 | 58 tales by 72 characters | B |
-| Meaney, Alex, Lamb. LLMs and folktales in low-resource languages. 2024 | https://arxiv.org/abs/2411.05593 | 4,692 ATU-numbered Irish and Gaelic tales | B |
+| Meaney, Alex, Lamb. LLMs and folktales in low-resource languages. 2024 (a descriptive label; full title: Evaluating and Adapting Large Language Models to Represent Folktales in Low-Resource Languages) | https://arxiv.org/abs/2411.05593 | 4,692 Irish and Gaelic tales, about 2,543 of them ATU-numbered (corrected from "4,692 ATU-numbered"). Also reports that a plain SVM on non-contextual features did impressively well, which is the word-overlap warning again | B |
 | Arčon, Robnik-Šikonja, Tratnik. LLMs for folktale type automation, Cinderella. 2025 | https://arxiv.org/abs/2510.18561 | LLM reading as a rival on ATU motifs | B |
-| Leskovec, Backstrom, Kleinberg. MemeTracker data | https://snap.stanford.edu/data/memetracker9.html | Phrase clusters, lexical truth | C |
-| Cordell and Smith. Viral Texts | https://viraltexts.org/ | Dated reprint clusters | C |
-| Tan, Lee, Pang. The effect of wording on message propagation. ACL 2014 | https://arxiv.org/abs/1405.1438 | The paired design to copy; data link dead | C |
-| Rockmore, Fang, Foti, Ginsburg, Krakauer. The Cultural Evolution of National Constitutions. 2017 | https://arxiv.org/abs/1711.06899 | 591 dated constitutions, inferred descent | C |
+| Leskovec, Backstrom, Kleinberg. MemeTracker data (paper: Meme-tracking and the Dynamics of the News Cycle. KDD 2009) | https://snap.stanford.edu/data/memetracker9.html ; paper https://doi.org/10.1145/1557019.1557077 | Phrase clusters, lexical truth | C |
+| Cordell and Smith. Viral Texts: Mapping Networks of Reprinting in 19th-Century Newspapers and Magazines | https://viraltexts.org/ ; cluster database https://clusters.viraltexts.org | Dated reprint clusters | C |
+| Tan, Lee, Pang. The effect of wording on message propagation: Topic- and author-controlled natural experiments on Twitter. ACL 2014 | https://arxiv.org/abs/1405.1438 ; https://doi.org/10.3115/v1/P14-1017 | The paired design to copy; data link dead | C |
+| Rockmore, Fang, Foti, Ginsburg, Krakauer. The Cultural Evolution of National Constitutions. 2017 (arXiv and online; in print JASIST 69(3), 483–494) | https://arxiv.org/abs/1711.06899 ; https://doi.org/10.1002/asi.23971 | 591 dated constitutions, inferred descent | C |
 | Wilkerson, Smith, Stramp. Tracing the Flow of Policy Ideas in Legislatures. AJPS 2015 | https://doi.org/10.1111/ajps.12175 | Text reuse as descent; lexical truth | C |
-| Michalopoulos and Xue. Folklore. QJE 2021 | https://doi.org/10.1093/qje/qjab003 | Berezkin catalogue in use | C |
+| Michalopoulos and Xue. Folklore. QJE 2021, 136(4), 1993–2046 | https://doi.org/10.1093/qje/qjab003 ; working paper https://doi.org/10.3386/w25430 | Berezkin catalogue in use | C |
 | Figueiredo, Panoutsos, Andrade. Surprising Patterns in Musical Influence Networks. 2024 | https://arxiv.org/abs/2410.15996 | WhoSampled only by agreement | C |
-| Araz, Lizarraga, Serra, Bogdanov. Building a Dataset for Music Sample Identification. 2026 | https://arxiv.org/abs/2609.15465 | WhoSampled annotations incomplete | C |
+| Araz, Lizarraga, Serra, Bogdanov. Building a Dataset for Music Sample Identification. 2026 | https://arxiv.org/abs/2609.15465 | WhoSampled annotations incomplete; releases a public mined subset, WhoSampled130k | C |
 | Open Stemmata | https://openstemmata.github.io/ | Real stemmata, graphs only | C |
-| OTW. AI and Data Scraping on the Archive | https://www.transformativeworks.org/ai-and-data-scraping-on-the-archive/ | Why Archive of Our Own is off limits | C |
-| Parikh et al. TEA-Time. 2026 | https://arxiv.org/abs/2603.07018 | Reports the Upworthy randomisation fault | B |
+| OTW. AI and Data Scraping on the Archive `[UNVERIFIED]` (the URL returned HTTP 403 to both curl and WebFetch in the check, so the title, the content and whether the page exists are unconfirmed) | https://www.transformativeworks.org/ai-and-data-scraping-on-the-archive/ | Why Archive of Our Own is off limits | C |
+| Parikh, Levin-Konigsberg, Perrault-Joncas, Volfovsky. TEA-Time: Transporting Effects Across Time. 2026 | https://arxiv.org/abs/2603.07018 | Reports the Upworthy randomisation fault (more exactly: it applies the maintainers' 2024 exclusion window; it is not the source of the finding) | B |
+| Matias. Ensuring Reliable Science from Platform A/B Test Archives: an Update to the Upworthy Archive. June 2024 (row added by the checker) | https://upworthy.natematias.com/2024-06-upworthy-archive-update.html | The primary source for the randomisation fault: window, cause and the 22% share | A |
+| OpenAlex documentation, snapshot page (row added by the checker) | https://docs.openalex.org/download-all-data/openalex-snapshot | Current snapshot size (about 745 GB JSON Lines, September 2026 release) | C |
+| Weller and Seppi. The r/Jokes Dataset: a Large Scale Humor Collection. LREC 2020 (row added by the checker) | https://aclanthology.org/2020.lrec-1.753/ ; https://github.com/orionw/rJokesData | Joke scores; licence terms in the README | C |
+| Bennett, Li, Ma. Chain Letters and Evolutionary Histories. Scientific American 288(6), 76–81, 2003 (row added by the checker) | https://doi.org/10.1038/scientificamerican0603-76 | The chain-letter phylogeny; letter count unconfirmed | C |
+| Zannettou et al. On the Origins of Memes by Means of Fringe Web Communities. 2018 (row added by the checker) | https://arxiv.org/abs/1805.12512 | Source of the Know Your Meme entry count | C |
+| Adamic, Lento, Adar, Ng. Information Evolution in Social Networks. 2014 (row added by the checker) | https://arxiv.org/abs/1402.6792 | Facebook copy-and-paste memes; data not public | C |
 
 ## Fog
 
-- I did not open any dataset file. Sizes, fields and licences from search summaries need a second look before anything is planned around them. GitHub API calls to other repositories were blocked in this session, so repository licences (Gala et al. tropes, r/Jokes, eBible, Viral Texts clusters, Open Stemmata) are unconfirmed.
-- The Upworthy randomisation fault is from a search summary of one 2026 paper. The archive's own documentation should be read for the exact affected window and share.
+- I did not open any dataset file. Sizes, fields and licences from search summaries need a second look before anything is planned around them. GitHub API calls to other repositories were blocked in this session, so repository licences (Gala et al. tropes, r/Jokes, eBible, Viral Texts clusters, Open Stemmata) are unconfirmed. (Partly resolved in the check through raw README files: r/Jokes is under Reddit terms, eBible is per translation, Open Stemmata is CC BY-SA 4.0. Still unconfirmed: a licence for the Gala et al. data and for the Viral Texts cluster files.)
+- The Upworthy randomisation fault is from a search summary of one 2026 paper. The archive's own documentation should be read for the exact affected window and share. (Resolved in the check: the maintainers' June 2024 update gives the window 25 June 2013 to 10 January 2014 and "22% of the experiments in the full archive". Still open: whether the OSF files flag the affected tests or the user must filter by date.)
 - TV Tropes licence: is committing a film-by-trope label table (no trope text) to a public MIT and CC BY-SA repository acceptable under CC BY-NC-SA? I think labels are facts, but this is a judgement, not a checked legal position.
 - The CASC use restriction may no longer be enforced, and the same three sets ship in a CRAN package whose licence I did not read.
 - SCP wiki: I found no dataset with ratings, tags and dates together, and did not confirm an API. Article count is unknown to me.
 - Not checked at all: proverbs, software forks, patents, book blurbs with sales, Billboard lyrics, TED talks, Goodreads, TMDB, Google's ads transparency data, current Reddit dump availability.
 - The Paper Chain Letter Archive site was unreachable (502 through the proxy), so its size, dating and terms are unknown.
-- Where Tehrani's and da Silva and Tehrani's supplementary matrices sit, and whether tale texts exist for the 58 Little Red Riding Hood variants, is not confirmed.
+- Where Tehrani's and da Silva and Tehrani's supplementary matrices sit, and whether tale texts exist for the 58 Little Red Riding Hood variants, is not confirmed. (Partly resolved in the check: the PLOS ONE page names File S1 for the character list, File S2 for the matrix and Table S1 for the sources of the 58 tales, all of which were "available in English translation". The files were not opened.)
 - Whether the English Bible revision lineage is clean enough to serve as a known tree was not checked; revisers consulted several earlier versions, so it is likely a network, not a tree.
 - Web Robots' Kickstarter licence and whether the dumps include failed projects in full were not checked.
+
+## Check log
+
+Checked 2026-11-08 by a second agent. Methods: arXiv API and the arXiv PDFs (full text searched), Crossref API, Zenodo, OSF, Harvard Dataverse and Hugging Face APIs, the Wikidata query service, and direct fetches of project pages and raw README files. Web search ran out of budget part-way through, so claims the scout labelled "search" that are not listed below were not rechecked and keep that label. No content was deleted; corrections sit next to the original wording.
+
+### Corrections (the notes were wrong or misleading)
+
+1. **OpenAlex snapshot size.** "About 330 GB" replaced by about 745 GB compressed JSON Lines (works alone about 615 GB), about 770 GB Parquet, September 2026 release. Source: docs.openalex.org/download-all-data/openalex-snapshot. Changed in the Bottom line and the table row. The laptop verdict (NO for the snapshot) is unchanged.
+2. **Meaney et al. folktales.** "4,692 tales with ATU numbers" is wrong. 4,692 is the whole set; only all 2,091 Irish tales and 452 of 2,601 Scottish Gaelic tales have an ATU number (Table 1 of arXiv 2411.05593). Changed in the table row and the Key sources row.
+3. **Movva et al., 45 of 60.** The figure is pooled over three datasets (headlines, Yelp, Congress), not headline data alone; baselines scored 24, 23 and 20. Changed in the P1 section. ICML 2025 confirmed from the PDF.
+4. **Who found the Upworthy fault.** Not the 2026 TEA-Time paper. The archive's maintainers reported it in June 2024 (Cloudflare cache glitch, 2013-06-25 to 2014-01-10, 22% of tests). TEA-Time and Movva et al. both follow that update. Changed in the Bottom line, the table row, Key sources (new row for the update) and Fog.
+5. **Gala et al. access.** Not a "GitHub release": a Google Drive file of about 650 MB linked from the `dhruvilgala/tvtropes` README. Exact counts added (29,457 tropes; 1,919,844 examples; 40,435 works). Venue and DOI added.
+6. **Hagedorn and Darányi.** The Zenodo record's real title and version added; the data paper (JOHD, doi 10.5334/johd.78) added as a Key sources row; licence CC BY-SA 4.0 added from that paper; the "no other open set" claim confirmed there, with the paper's mention of the Multilingual Folk Tale Database noted.
+7. **CMU Movie Summary Corpus.** Authors confirmed (Bamman, O'Connor, Smith, ACL 2013); dump dates added; both counts and the licence confirmed on the project page and README.
+8. **da Silva and Tehrani licence.** `[UNVERIFIED]` replaced by CC BY 4.0, read from the full text; 275 tales and 50 populations confirmed there.
+9. **Bill text reuse licence.** "Not confirmed" replaced by CC0 1.0 (Dataverse API).
+10. **WhoSampled "Closed".** Qualified: arXiv 2609.15465 releases a public mined subset, WhoSampled130k. Still audio, so still out of scope.
+11. **Wikidata P144 count.** Recount gave 99,207 against the scout's 99,206; the other four counts matched exactly.
+12. **Project Gutenberg.** "Forbids robots" kept, with the page's stated exceptions added.
+
+### Citation details added or completed
+
+13. Zhang et al.: full title, NeurIPS 2024, doi 10.52202/079017-3978.
+14. Tan, Lee, Pang: full title, doi 10.3115/v1/P14-1017.
+15. Leskovec, Backstrom, Kleinberg: paper title, KDD 2009, doi 10.1145/1557019.1557077.
+16. Rockmore et al.: JASIST 69(3), 483–494, doi 10.1002/asi.23971.
+17. Michalopoulos and Xue: QJE 136(4), 1993–2046; NBER doi 10.3386/w25430.
+18. Parikh et al.: full author list and title.
+19. García-Ortega et al.: full title. Cordell and Smith: project citation title and cluster database URL.
+20. New Key sources rows: Matias 2024 archive update; Hagedorn and Darányi data paper; OpenAlex snapshot documentation; Weller and Seppi (LREC 2020); Bennett, Li, Ma (Scientific American 2003, doi 10.1038/scientificamerican0603-76); Zannettou et al. (arXiv 1805.12512); Adamic et al. (arXiv 1402.6792).
+21. Labels changed from "search" to "checked" where the source was opened: Upworthy counts and licence, New Yorker counts and licence, Tan et al. counts, r/Jokes repository and licence, Tehrani counts, SCP-RECURSAL card, Know Your Meme count, eBible counts and licence note, Open Stemmata licence, WhoSampled counts, RecipeNLG count and licence, constitutions count.
+
+### Marked `[UNVERIFIED]` (tried and could not confirm, or no primary source recorded)
+
+22. r/Jokes: 573,335 jokes and "11 years" (not in the README; paper not opened).
+23. Meta Ad Library coverage (vendor guides only).
+24. TV Tropes: "CC BY-NC-SA since July 2012" (Wikipedia confirms only a change to non-commercial).
+25. García-Ortega et al.: the `raiben/made_recommender` repository (403 and 404), the CC BY-SA 4.0 licence (not in the arXiv text), and the IMDb-rating join (IMDb is never mentioned in arXiv 2006.05380v3; likely the companion StarTroper paper). Three marks, plus one in Key sources.
+26. Hugging Face `RyokoExtra/TvTroper`: the exact 651,522 page count.
+27. Berezkin: 2,564 motifs (not in the NBER PDF; 958 groups is confirmed), about 50,000 abstracts, and English motif names since 2014.
+28. CASC Heinrichi: 67 copies (no count on the data page).
+29. Open Stemmata: about 50 stemmata in 2021.
+30. Bill text reuse: "described as aggregate data".
+31. Chain letters: 33 letters, 1980 to 1995, and the "not particularly tree-like" blog quote (no URL recorded).
+32. Archive of Our Own: 12.6M works scraped in April 2025 (no Fanlore URL recorded).
+33. OTW page in Key sources: the URL returned HTTP 403 to curl and to WebFetch, so its existence and content are unconfirmed.
+34. RecipeNLG permission form (site has an expired TLS certificate). Hymnary.org record count.
+
+### Confirmed with no change needed
+
+35. All arXiv IDs resolve with the stated authors and years: 2502.04382, 2011.00092, 2304.09919, 2406.10522, 2006.05380, 2411.05593, 2510.18561, 1405.1438, 1711.06899, 2410.15996, 2609.15465, 2603.07018, 1805.12512, 1402.6792.
+36. DOIs resolve in Crossref with the stated authors, titles and years: 10.1038/s41597-021-00934-7, 10.1098/rsos.150645, 10.1371/journal.pone.0078871, 10.1002/asi.23971, 10.1111/ajps.12175, 10.1093/qje/qjab003. Zenodo 6575263 and Dataverse 10.7910/DVN/27584 resolve through their own APIs.
+37. Upworthy: 32,487 tests, 150,817 arms, 538,272,878 assignments; exploratory 4,873 and confirmatory 22,743 tests; OSF node public, CC BY 4.0.
+38. MemeTracker counts and date range (SNAP). Kickstarter crawl since March 2016 and latest dump 2026-10-12 (webrobots.io). CASC use restriction (quoted correctly). Tan et al. data page still 404. Tehrani 58 tales and 72 characters. eBible 1,009 translations in 833 languages. WhoSampled 1,250,246 songs, and 170k tracks at about 20%. Rockmore 591 constitutions. Know Your Meme 18.3K entries. RecipeNLG 2,231,142 recipes, licence "unknown". OpenAlex CC0.
+39. Study numbers match the committed files: E2 Heredity (16%, 10%, TF-IDF 11%, word presence 17%, residual test fails for Qwen and passes for Llama) and family counts (14,843; 24,732; 5,641) in `study/README.md`; 67.8 sentences per second on 24 sentences in `preregistration/sources/neuron_timing_qwen3-8b.json`; P144 and P941 in `preregistration/sources/LICENSE.md`.
+40. Cost arithmetic in the seeds is consistent with 67.8 sentences per second (150,817 headlines is about 37 minutes; 70,000 sentences about 17 minutes; 48,000 verses about 12 minutes).
+
+### Not rechecked (still resting on the scout's search summaries)
+
+MemeTracker 220 MB cluster file; contents of the Viral Texts GitHub repositories; the `stemmatology` R package; WhoSampled's lack of a public API and its academic licence; Archive of Our Own terms on scraping; SCP wiki live fields; where the Irish and Gaelic tales can be obtained; the content of Arčon et al. beyond the abstract; the Berezkin site.

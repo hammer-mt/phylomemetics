@@ -1,5 +1,59 @@
 {
  "registered": "8 November 2026",
+ "links": [
+  [
+   "instrument",
+   "universality"
+  ],
+  [
+   "instrument",
+   "lineage"
+  ],
+  [
+   "universality",
+   "atlas"
+  ],
+  [
+   "lineage",
+   "remix"
+  ],
+  [
+   "remix",
+   "population"
+  ],
+  [
+   "atlas",
+   "memetics"
+  ],
+  [
+   "population",
+   "cultevo"
+  ],
+  [
+   "lineage",
+   "fitness"
+  ],
+  [
+   "remix",
+   "engineering"
+  ],
+  [
+   "population",
+   "conjectures"
+  ],
+  [
+   "fitness",
+   "engineering"
+  ],
+  [
+   "conjectures",
+   "uses"
+  ],
+  [
+   "cultevo",
+   "uses"
+  ]
+ ],
  "regions": [
   {
    "id": "instrument",
@@ -7,7 +61,8 @@
    "bio": "Sequencing",
    "col": 0,
    "row": 0,
-   "blurb": "Premise P1. Does a firing neuron measure a meme? Reliability and validity of the unit itself."
+   "blurb": "Premise P1. Does a firing neuron measure a meme? Reliability and validity of the unit itself.",
+   "state": "Four small tests run, all mixed. No unit has been shown to follow an idea across rewording at scale, and there is no human check and no steering. Everything else rests on this."
   },
   {
    "id": "universality",
@@ -15,7 +70,8 @@
    "bio": "One genetic code",
    "col": 1,
    "row": 0,
-   "blurb": "Premise P2. Do different models, languages and media give the same reading?"
+   "blurb": "Premise P2. Do different models, languages and media give the same reading?",
+   "state": "Twins across models turned out to be mostly shared word detectors. No learned map, no held-out text and no second language has been tried."
   },
   {
    "id": "atlas",
@@ -23,7 +79,8 @@
    "bio": "Genome project",
    "col": 2,
    "row": 0,
-   "blurb": "A catalogue of the units: a reference list, a periodic table of memes, and the mechanism behind them."
+   "blurb": "A catalogue of the units: a reference list, a periodic table of memes, and the mechanism behind them.",
+   "state": "Batman's name-free core turned out to be the textbook definition of a superhero. No catalogue of validated units exists yet."
   },
   {
    "id": "memetics",
@@ -31,7 +88,8 @@
    "bio": "Classical genetics",
    "col": 3,
    "row": 0,
-   "blurb": "Claims from Dawkins-era and internet memetics that never had a unit."
+   "blurb": "Claims from Dawkins-era and internet memetics that never had a unit.",
+   "state": "Untouched. Internet-meme studies have public data and published results to re-derive. All of them were done with words."
   },
   {
    "id": "lineage",
@@ -39,7 +97,8 @@
    "bio": "Phylogenetics",
    "col": 0,
    "row": 1,
-   "blurb": "Who descends from whom, including influence nobody declared."
+   "blurb": "Who descends from whom, including influence nobody declared.",
+   "state": "The one robust result lives here: heredity. Word counts find it too, and trees built from memes failed. It needs lineages where the wording changes."
   },
   {
    "id": "remix",
@@ -47,7 +106,8 @@
    "bio": "Recombination",
    "col": 1,
    "row": 1,
-   "blurb": "How much of a work is inherited, how much is new, and who influenced whom."
+   "blurb": "How much of a work is inherited, how much is new, and who influenced whom.",
+   "state": "Nothing run. Similarity is not influence, so only cases where influence is documented can test it."
   },
   {
    "id": "population",
@@ -55,7 +115,8 @@
    "bio": "Population genetics",
    "col": 2,
    "row": 1,
-   "blurb": "Drift, selection, linkage and flow of memes across whole populations of works."
+   "blurb": "Drift, selection, linkage and flow of memes across whole populations of works.",
+   "state": "Only descriptive timelines so far. Several statistics can be computed from data already committed."
   },
   {
    "id": "cultevo",
@@ -63,7 +124,8 @@
    "bio": "Evolutionary ecology",
    "col": 3,
    "row": 1,
-   "blurb": "The accepted science of cultural change, tested with the new unit."
+   "blurb": "The accepted science of cultural change, tested with the new unit.",
+   "state": "Untouched. Decades of predictions about what survives retelling, with public data, waiting for a unit."
   },
   {
    "id": "fitness",
@@ -71,7 +133,8 @@
    "bio": "Fitness landscapes",
    "col": 0,
    "row": 2,
-   "blurb": "Which memes and combinations succeed, and whether that can be predicted."
+   "blurb": "Which memes and combinations succeed, and whether that can be predicted.",
+   "state": "One underpowered test, no signal. Content explains little of success unless author and timing are held fixed. Archives of randomised headline tests fix that."
   },
   {
    "id": "engineering",
@@ -79,7 +142,8 @@
    "bio": "Gene editing",
    "col": 1,
    "row": 2,
-   "blurb": "Turning a meme up or down in a text, and breeding better variants."
+   "blurb": "Turning a meme up or down in a text, and breeding better variants.",
+   "state": "Nothing run. Steering is the missing causal test, and plain prompting is the rival to beat."
   },
   {
    "id": "conjectures",
@@ -87,7 +151,8 @@
    "bio": "Natural history",
    "col": 2,
    "row": 2,
-   "blurb": "Hunches from marketing practice, made testable."
+   "blurb": "Hunches from marketing practice, made testable.",
+   "state": "About 35 hunches from practice, none measured."
   },
   {
    "id": "uses",
@@ -95,7 +160,8 @@
    "bio": "Biotechnology",
    "col": 3,
    "row": 2,
-   "blurb": "What the instrument is good for outside the lab."
+   "blurb": "What the instrument is good for outside the lab.",
+   "state": "Nothing run in the open. Any score built on these units first has to survive attempts to game it with trigger words."
   }
  ],
  "ideas": [

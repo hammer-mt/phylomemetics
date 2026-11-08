@@ -48,9 +48,19 @@
     const cols = Math.max(...D.regions.map(r => r.col)) + 1, rows = Math.max(...D.regions.map(r => r.row)) + 1;
     const W = X0 * 2 + (cols - 1) * DX + DX / 2, H = Y0 + (rows - 1) * DY + 150;
     const svg = s('svg', { viewBox: `0 0 ${W} ${H}`, role: 'img', 'aria-label': 'Hex chart of every experiment idea, grouped by research area' });
-    svg.append(s('text', { x: 14, y: 20, class: 'axis' }, 'FOUNDATIONS AT THE TOP · USES AT THE BOTTOM'));
+    svg.append(s('text', { x: 14, y: 20, class: 'axis' }, 'FOUNDATIONS AT THE TOP · USES AT THE BOTTOM · LINES SHOW WHAT RESTS ON WHAT'));
+    const centre = r => [X0 + r.col * DX + (r.row % 2 ? DX / 2 : 0), Y0 + r.row * DY];
+    const defs = s('defs', {});
+    const mk = s('marker', { id: 'arr', viewBox: '0 0 10 10', refX: 9, refY: 5, markerWidth: 7, markerHeight: 7, orient: 'auto-start-reverse' });
+    mk.append(s('path', { d: 'M0 0L10 5L0 10z', class: 'linkhead' })); defs.append(mk); svg.append(defs);
+    for (const [a, b] of (D.links || [])) {
+      if (!regionById[a] || !regionById[b]) continue;
+      const [x1, y1] = centre(regionById[a]), [x2, y2] = centre(regionById[b]);
+      const len = Math.hypot(x2 - x1, y2 - y1), ux = (x2 - x1) / len, uy = (y2 - y1) / len, pad = 78;
+      svg.append(s('line', { x1: x1 + ux * pad, y1: y1 + uy * pad, x2: x2 - ux * pad, y2: y2 - uy * pad, class: 'link', 'marker-end': 'url(#arr)' }));
+    }
     for (const r of D.regions) {
-      const cx = X0 + r.col * DX + (r.row % 2 ? DX / 2 : 0), cy = Y0 + r.row * DY;
+      const [cx, cy] = centre(r);
       const list = ideas.filter(i => i.region === r.id)
         .sort((a, b) => ORDER[stateOf(a)] - ORDER[stateOf(b)] || (b.priority || 0) - (a.priority || 0));
       const pos = spiral(Math.max(list.length, 1));
@@ -137,6 +147,16 @@
       h('div', {}, p.rungs.map(r => h('div', { class: 'rung' }, h('strong', {}, r.name),
         h('span', { class: 'pill s-' + r.status }, r.status), h('p', {}, r.text)))))));
   }
+  function drawAreas() {
+    $('areas').replaceChildren(...D.regions.map(r => {
+      const list = ideas.filter(i => i.region === r.id), n = Math.max(list.length, 1);
+      const seg = k => { const c = list.filter(i => (k === 'run' ? i.status === 'done' : stateOf(i) === k)).length; return c ? h('span', { class: 'seg ' + k, style: 'width:' + (100 * c / n) + '%', title: c + ' ' + k }) : null; };
+      return h('div', { class: 'sheet stack' },
+        h('div', { class: 'eyebrow' }, 'In biology: ' + (r.bio || '')), h('h3', {}, r.name), h('p', { class: 'small' }, r.blurb || ''),
+        h('p', {}, r.state || ''), h('div', { class: 'bar' }, seg('run'), seg('planned'), seg('registered'), seg('seed')),
+        h('div', { class: 'mono small' }, list.filter(i => i.status === 'done').length + ' run of ' + list.length + ' ideas'));
+    }));
+  }
   function drawList(id, items) { $(id).replaceChildren(...(items || []).map(t => h('li', {}, t))); }
   function drawBiology() {
     $('bioBody').replaceChildren(...D.biology.map(b => h('tr', b.idea ? { class: 'rowlink', onclick: () => select(b.idea, true) } : {},
@@ -154,7 +174,7 @@
   function init() {
     D.regions.forEach(r => $('fRegion').append(h('option', { value: r.id }, r.name)));
     Object.keys(STATUS).forEach(k => $('fStatus').append(h('option', { value: k }, STATUS[k][0])));
-    drawChart(); drawPremises(); drawBiology(); drawSources();
+    drawChart(); drawAreas(); drawPremises(); drawBiology(); drawSources();
     drawList('known', D.summary.known); drawList('unknown', D.summary.unknown); drawList('nextUp', D.summary.next);
     document.querySelectorAll('[data-mode]').forEach(b => b.addEventListener('click', () => { mode = b.dataset.mode; applyMode(); }));
     $('bioToggle').addEventListener('click', () => { bio = !bio; applyMode(); });

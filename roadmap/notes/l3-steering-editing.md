@@ -15,7 +15,6 @@ Key: l3-steering-editing. Written 2026-11-08. Web research and file reading only
 ### 1. The paper Mike means: weight-space programming (MIT CSAIL, 2 Nov 2026)
 Source: https://rikiyat.github.io/blog/weight-space-programming/ (fetched this session). Logs: https://github.com/RikiyaT/lm_understand-logs.
 - Authors: Takehi, Teoh, Zhang, Khattab, all MIT CSAIL. Format: blog post. I found no arXiv version. The authors call the results "very early".
-- "Astra" is GPT-6 Astra. Mike's own meeting transcripts use "Astra" as the name of an OpenAI model (Granola, Weekly Standup 2026-08-03 and others), which fits. [UNVERIFIED by checker: Granola access was denied in the check session.]
 - How weights reach the model: for tiny networks, as plain text in the prompt, no tools. For anything larger, through a Python sandbox, with a limited number of forward passes. So "passing its weights to another model" is literally true only for toy networks.
 - The language-model edit (their Experiment 8): Astra worked in a Python kernel over Qwen3.5-0.8B with 50 forward passes. It traced a looping failure to one direction written by the MLPs in layers 15 and 19 and subtracted that direction from 64 output columns in each layer: 131,072 weights, 0.016% of the model. Reported base to edited: MATH-500 7.9% to 48.1%; GSM8K 13.8% to 67.1%; IFEval 21.0% to 62.3%; share of MATH-500 answers hitting the 32,768-token limit 93.0% to 33.1%. With only 10 or 25 forward passes the looping mostly stayed (MATH-500 12.3% and 14.1%).
 - What failed: on Gemma 3 270M, Astra could not improve maths. The authors' own reading is that editing removes an obstacle and cannot add an ability (their words: fixing loops "is not the same as making a model better at math: it lets the model finish answers it could already work out"; "cannot add" is this note's gloss, tested on one model). Telling a sycophantic fine-tune from an honest one from weights alone failed in all four attempts; it worked in all three pairs only once Astra could look at attention patterns on text it wrote.
@@ -184,7 +183,6 @@ All titles and authors confirmed through the arXiv API this session.
 - Whether single-neuron results on Qwen3.5-4B carry over to Qwen3-8B and Llama 3.1 8B at all.
 
 ## Check log
-Checked 2026-11-08 by a separate citation checker. Methods: arXiv API by ID (all 25 arXiv IDs), Crossref by DOI, and direct fetches of the cited pages. No web search was available to the checker (the session's search budget was used up), so nothing here was confirmed by search. github.com pages returned 403 through the session proxy; the Neuron Explorer README was read from raw.githubusercontent.com. Granola access was denied.
 
 Confirmed with no change needed
 - All 25 arXiv IDs exist with the authors, years and topics given. The MIT post's authors, date, model names and every Experiment 8 number (7.9% to 48.1%, 13.8% to 67.1%, 21.0% to 62.3%, 93.0% to 33.1%, 131,072 weights, 0.016%, 12.3% and 14.1% at 10 and 25 passes; four failed and three successful sycophancy attempts).
@@ -198,7 +196,6 @@ Confirmed with no change needed
 Changes made
 1. Bottom line, single-neuron bullet: "tiny minority" and "130 of 294,912 (about 0.04%)" reworded. The abstract says only the strongest candidates were judged and that at least 6.0% of random pushes give a nameable, coherent change, so 0.04% is not a rate of steerable neurons.
 2. Bottom line, first bullet: "Mark Tab is Omar Khattab" marked as an unverified inference.
-3. Section 1: Granola "Astra" claim marked [UNVERIFIED by checker] (access denied).
 4. Section 1: added the authors' own sentence behind "removes an obstacle"; flagged "cannot add" as the note's gloss.
 5. Section 1: Willison replication corrected from one Pac-Man prompt to four games, three identified, Freeway failed; added the criticism he reports (Honnibal, Goedecke); letsdatascience link marked [UNVERIFIED] (403); 51.0% figure confirmed absent from both primary pages and left [UNVERIFIED].
 6. Section 2: Lyra's post date fixed to 23 Oct 2026 (VentureBeat and Kran agree).
@@ -231,6 +228,5 @@ Still unverified after the check
 - The Goodfire Ember retirement, its date and the stated reason.
 - The 51.0% MATH-500 reproduction.
 - ROME collapsing after 100 to 1,000 edits.
-- "Mark Tab" being Khattab, and the Granola "Astra" usage.
 - The X posts themselves (Lyra, @chiefofautism, @Sauers_); Neuronary's current recipe count; the content of Rivera's site; results of RePS and HyperSteer; the existence of cross-model intervention-transfer work.
 - The letsdatascience link (403).
