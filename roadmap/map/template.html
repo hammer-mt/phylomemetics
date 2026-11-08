@@ -1,0 +1,99 @@
+<title>Memetics Research Map</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/*STYLE*/
+</style>
+<div class="wrap">
+  <header class="stack">
+    <div class="eyebrow">Phylomemetics · state of play · 8 November 2026</div>
+    <h1>What is charted, what is fog, and where to dig next</h1>
+    <p class="lede">The bet: a meme can be measured by which neurons fire inside a language model, and the measurement carries over between models. This is every experiment run so far, every design now registered, and the ideas nobody has tested.</p>
+    <p class="mono" id="tally"></p>
+  </header>
+
+  <section class="stack" id="chartTop">
+    <p>Each hexagon is one experiment and each island is a research area. Solid colours have been run. A gold ring marks the designs to run first. Select a cell to read it.</p>
+    <div class="chartbar" role="group" aria-label="Chart filters">
+      <button class="chip" data-mode="all" aria-pressed="true">Everything</button>
+      <button class="chip" data-mode="run">Already run</button>
+      <button class="chip" data-mode="next">Designed, not run</button>
+      <button class="chip" data-mode="gold">Dig here first</button>
+      <button class="chip" data-mode="fog">Fog only</button>
+      <button class="chip" id="bioToggle" aria-pressed="false">Biology names</button>
+    </div>
+    <div class="chartgrid">
+      <div class="stack">
+        <div class="chartscroll" id="chart"></div>
+        <div class="legend">
+          <span><i style="background:var(--held)"></i>run, held up</span>
+          <span><i style="background:var(--mixed)"></i>run, mixed</span>
+          <span><i style="background:var(--failed)"></i>run, did not hold</span>
+          <span><i style="background:var(--planned)"></i>planned earlier</span>
+          <span><i style="background:var(--land)"></i>design registered</span>
+          <span><i style="background:var(--fog)"></i>idea only</span>
+          <span><i style="border:2px solid var(--gold);border-radius:50%"></i>dig here first</span>
+        </div>
+      </div>
+      <aside class="sheet detail" id="detail" aria-live="polite"></aside>
+    </div>
+  </section>
+
+  <section class="stack">
+    <div class="eyebrow">The short version</div>
+    <h2>Known, unknown, next</h2>
+    <div class="grid3">
+      <div class="sheet stack"><h3>What the work so far shows</h3><ul id="known" class="stack" style="padding-left:18px;margin:0"></ul></div>
+      <div class="sheet stack"><h3>What is still fog</h3><ul id="unknown" class="stack" style="padding-left:18px;margin:0"></ul></div>
+      <div class="sheet stack"><h3>What to run next</h3><ol id="nextUp" class="stack" style="padding-left:20px;margin:0"></ol></div>
+    </div>
+  </section>
+
+  <section class="stack">
+    <div class="eyebrow">The two premises</div>
+    <h2>How firm is the ground under the bet</h2>
+    <p>Everything else rests on two claims. Each is split into rungs, from the weakest version, which is well supported, to the strongest, which the project needs and has not shown.</p>
+    <div class="grid2" id="premises"></div>
+  </section>
+
+  <section class="stack">
+    <div class="eyebrow">The biology overlay</div>
+    <h2>What biologists did once they could sequence genes</h2>
+    <p>Each row is a tool from biology and what it becomes when the sequence is a list of memes. Select a row to see the experiment that tries it.</p>
+    <div class="tablewrap" style="max-height:560px;overflow-y:auto"><table>
+      <thead><tr><th>Biology tool</th><th>Memetic version</th><th>Ready now?</th><th>Design</th></tr></thead>
+      <tbody id="bioBody"></tbody></table></div>
+    <h3>Which moment in biology's history is memetics at?</h3>
+    <div class="timeline" id="landmarks"></div>
+  </section>
+
+  <section class="stack">
+    <div class="eyebrow">The database</div>
+    <h2>Every idea, searchable</h2>
+    <div class="filters">
+      <input id="q" type="search" placeholder="Search ideas, data, methods" aria-label="Search ideas">
+      <select id="fRegion" aria-label="Research area"><option value="">All areas</option></select>
+      <select id="fStatus" aria-label="Status"><option value="">Any status</option></select>
+    </div>
+    <div class="small" id="count"></div>
+    <div class="tablewrap" style="max-height:640px;overflow-y:auto"><table>
+      <thead><tr><th>ID</th><th>Idea</th><th>Area</th><th>Status</th><th>Priority</th><th>Cost</th></tr></thead>
+      <tbody id="tbody"></tbody></table></div>
+  </section>
+
+  <section class="stack">
+    <div class="eyebrow">Reading list</div>
+    <h2>The sources that matter most</h2>
+    <div class="tablewrap" style="max-height:560px;overflow-y:auto"><table>
+      <thead><tr><th>Rank</th><th>Source</th><th>Why it matters</th><th>Topic</th></tr></thead>
+      <tbody id="srcBody"></tbody></table></div>
+  </section>
+
+  <footer class="stack">
+    <p>Built from <span class="mono">roadmap/ideas.json</span> in the phylomemetics repository. The full designs are in <span class="mono">roadmap/designs/</span>, the evidence review in <span class="mono">roadmap/premises.md</span> and the research notes in <span class="mono">roadmap/notes/</span>. No experiment was run to make this page.</p>
+  </footer>
+</div>
+<script>window.DATA = /*DATA*/;</script>
+<script>
+/*APP*/
+</script>

@@ -1,0 +1,20 @@
+{
+ "known": [
+  "A neuron reading is countable and repeatable. Batman has a core of units that no random set of 32 films has.",
+  "Heredity can be measured. With every name removed, adaptations carry their source comic's content (p = 0.0026 and 0.00017, in 99.6% of 30,240 analysis variants).",
+  "Word counts measure it just as well. On the primary model, words matched or beat neurons on every pre-registered test.",
+  "Agreement between two companies' models is mostly shared name and word detectors. It collapses when names are removed.",
+  "A handful of units do behave like ideas: a funeral, a coin flip, the secret identity, and one revenge unit that picked the right sentence in 10 of 12 pairs with no revenge words.",
+  "Outside this project, the evidence is that neurons are a better basis than random directions, that 1 to 5% of them recur across models, and that prompting beats every activation method at editing text."
+ ],
+ "unknown": [
+  "Whether neuron units follow an idea when the wording changes. This is the claim that would justify the method, and it has never been tested at scale.",
+  "Whether the units cause anything. Nobody in this project has turned a neuron up or down.",
+  "Whether the small 4-bit models used here are 'clean' at all. The audit behind the claim was on a model four times larger.",
+  "Whether a learned map between models carries concept units across. Only one-to-one twins were tried.",
+  "Whether neurons beat sentence embeddings or an LLM simply reading the text. Those rivals were never run.",
+  "Whether any human agrees with the labels. Every labeller, judge and reviewer so far was an AI.",
+  "Everything about selection, forecasting, editing and practical use. One underpowered test is all there is."
+ ],
+ "next": []
+}

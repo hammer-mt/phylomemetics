@@ -1,0 +1,435 @@
+{
+ "tools": [
+  {
+   "tool": "Sequence alignment",
+   "does": "Line up residues to establish positional homology",
+   "analogue": "Align sentences or plot beats of two works by their unit vectors (dynamic programming, unit-profile similarity as the score)",
+   "needs": "Sentence-by-unit matrix",
+   "feasibility": "Yes, on a new corpus (re-extract)",
+   "experiment": "Align the 9 adaptation/source pairs; score against human-marked matching scenes. Rival: sentence-embedding DTW; word overlap per sentence",
+   "idea": ""
+  },
+  {
+   "tool": "BLAST (Altschul 1990)",
+   "does": "Search a database for homologues with an E-value",
+   "analogue": "Query a story's profile against a profile database; E-value from a background of ordinary works (the 69-film bar is the seed)",
+   "needs": "Profiles for 10^4+ works",
+   "feasibility": "Yes, on a new corpus. Low novelty",
+   "experiment": "Name-free retrieval of documented remakes and sources. Rival: BM25, e5 embeddings. Study: TF-IDF already finds sources as well (`experiments.json`)",
+   "idea": ""
+  },
+  {
+   "tool": "Phylogenetic inference, bootstrap (Felsenstein 1981, 1985)",
+   "does": "Infer trees with a model and support values",
+   "analogue": "Likelihood/Bayesian tree on binary unit characters (Mk or Dollo), bootstrap over units",
+   "needs": "Presence matrix",
+   "feasibility": "Yes, from data already committed",
+   "experiment": "Bootstrap the Batman tree; test recovery of documented-relative triplets. Rival: same on word presence. Note the study's tree is star-like (\"most internal branches are much shorter than the branch to each work\", paper Fig. 4 caption)",
+   "idea": ""
+  },
+  {
+   "tool": "Gene-content phylogeny (Snel 1999)",
+   "does": "Tree from shared gene presence",
+   "analogue": "Exactly what the study did (Jaccard + neighbour-joining)",
+   "needs": "Presence matrix",
+   "feasibility": "Done",
+   "experiment": "Compare to a Dollo model that forbids regaining a lost meme. Rival: word presence",
+   "idea": ""
+  },
+  {
+   "tool": "Phylogenetic networks (NeighborNet; Bryant and Moulton 2004)",
+   "does": "Show conflict and reticulation instead of forcing a tree",
+   "analogue": "Network of works; delta score for tree-likeness",
+   "needs": "Distance matrix",
+   "feasibility": "Yes, from data already committed",
+   "experiment": "Is Batman less tree-like than the cousins? Rival: network from TF-IDF distances. Precedent: Cinderella (Sakamoto Martini, Kendal and Tehrani 2023)",
+   "idea": ""
+  },
+  {
+   "tool": "Molecular clocks (Zuckerkandl and Pauling 1965; BEAST 2007)",
+   "does": "Convert divergence to time",
+   "analogue": "Rate of meme turnover per year; date an undated work",
+   "needs": "Many dated lineages",
+   "feasibility": "Speculative. On this corpus (32 tips, gap 1967 to 1985, modern summaries)",
+   "experiment": "Root-to-tip regression of meme distance on year over 500+ franchise works. Rival: lexical distance on year. Precedent: Gray and Atkinson 2003; Pagel et al. 2007",
+   "idea": ""
+  },
+  {
+   "tool": "Ancestral sequence reconstruction (Thornton 2004)",
+   "does": "Infer and resurrect ancestral states",
+   "analogue": "Infer the meme set of an unrecorded ancestor; have an LLM write it; read it back",
+   "needs": "Tree + presence",
+   "feasibility": "Yes, from data already committed. For inference",
+   "experiment": "Hide one known intermediate (e.g. Year One), predict its meme set from neighbours. Rival: predict its word set from neighbours; an LLM guessing from reading neighbours. Precedent: da Silva and Tehrani 2016",
+   "idea": ""
+  },
+  {
+   "tool": "dN/dS (Nei and Gojobori 1986)",
+   "does": "Ratio of protein-changing to silent change; purifying vs positive selection",
+   "analogue": "Ratio of concept-unit change to wording change, normalised by the same ratio under paraphrase",
+   "needs": "Wording-robust unit set; paraphrase baselines",
+   "feasibility": "Blocked until units are shown to survive rewording",
+   "experiment": "Seed S6. Rival: embedding distance over lexical distance",
+   "idea": ""
+  },
+  {
+   "tool": "McDonald-Kreitman (1991)",
+   "does": "Fixed vs polymorphic, by class of site",
+   "analogue": "2x2: {concept, word-like units} x {fixed between two franchises, variable within}",
+   "needs": "Two franchises, 20+ works each; unit classes",
+   "feasibility": "Blocked until units are shown to survive rewording and a new corpus",
+   "experiment": "Batman vs Superman lineages. Rival: LLM-coded tropes vs word types in the same 2x2",
+   "idea": ""
+  },
+  {
+   "tool": "Selective sweeps, hitch-hiking (Maynard Smith and Haigh 1974; Sabeti 2002)",
+   "does": "Find recent selection from linked diversity loss",
+   "analogue": "A hit work drags a bundle of memes to high frequency, passengers included",
+   "needs": "Population-scale dated corpus",
+   "feasibility": "Yes, on a new corpus",
+   "experiment": "Do Nolan-era optional memes sweep through non-Batman superhero films after 2008? Rival: phrase-frequency series; embedding-cluster frequency. Precedent: Ackland et al. 2007; Yeh, Fogarty and Kandler 2019",
+   "idea": ""
+  },
+  {
+   "tool": "Tajima's D (1989)",
+   "does": "Detect departures from neutral equilibrium in the frequency spectrum",
+   "analogue": "Frequency spectrum of memes across contemporaneous works",
+   "needs": "50+ works per time slice",
+   "feasibility": "Yes, from data already committed. But validity low (3% threshold noise makes fake singletons)",
+   "experiment": "Compare the unit spectrum to one generated by threshold noise alone. Rival: word-type spectrum",
+   "idea": ""
+  },
+  {
+   "tool": "Fst and population structure (Lewontin and Krakauer 1973; Pritchard et al. 2000)",
+   "does": "Differentiation between populations; outlier loci; admixture fractions",
+   "analogue": "Per-meme Fst between franchises, media, eras; admixture fractions per work",
+   "needs": "Presence matrix + group labels",
+   "feasibility": "Yes, from data already committed",
+   "experiment": "ADMIXTURE-style clustering of the 114 works, name-free. Rival: an LDA topic model on words (the same model family as STRUCTURE `[UNVERIFIED this session]`). Precedent: Ross, Greenhill and Atkinson 2013",
+   "idea": ""
+  },
+  {
+   "tool": "Coalescent (Kingman 1982)",
+   "does": "Genealogy backward in time; effective population size",
+   "analogue": "Effective number of parent works behind a later work",
+   "needs": "Dense sampling, known links",
+   "feasibility": "Speculative (culture is multi-parent)",
+   "experiment": "Estimate how many sources explain an adaptation's optional memes. Rival: same with words",
+   "idea": ""
+  },
+  {
+   "tool": "Linkage disequilibrium",
+   "does": "Non-random association of alleles",
+   "analogue": "Memes that travel together (secret identity + origin in loss + costume)",
+   "needs": "Presence matrix",
+   "feasibility": "Yes, from data already committed",
+   "experiment": "Do LD blocks in the ordinary-film pool match known genre templates? Rival: word co-occurrence (PMI) blocks",
+   "idea": ""
+  },
+  {
+   "tool": "Epistasis, fitness landscapes (Sarkisyan 2016; Wright 1932)",
+   "does": "Effect of a mutation depends on background",
+   "analogue": "Meme A helps only with meme B",
+   "needs": "Outcome + factorial variants",
+   "feasibility": "Yes, on a new corpus. Via generated stories",
+   "experiment": "2^5 factorial of planted memes, rated by readers. Rival: the planted design matrix itself (neurons add nothing here except as a readout check)",
+   "idea": ""
+  },
+  {
+   "tool": "Deep mutational scanning (Fowler and Fields 2014)",
+   "does": "All single mutants x a fitness assay",
+   "analogue": "All single edits of a text x clicks, ratings or recall",
+   "needs": "Edits with measured outcomes",
+   "feasibility": "Yes, on a new corpus. Data exists (Upworthy archive, 32,487 experiments; Matias et al. 2021)",
+   "experiment": "Seed S3. Rival: words (Robertson et al. 2023), embeddings, an LLM reading the headline",
+   "idea": ""
+  },
+  {
+   "tool": "Directed evolution (Arnold 1998)",
+   "does": "Iterate mutate and select",
+   "analogue": "Evolve texts under a rater; watch which units fix",
+   "needs": "LLM loop + fitness function",
+   "feasibility": "Yes, on a new corpus",
+   "experiment": "20 replicate lines; do the same units fix in parallel? Rival: parallelism in words and in LLM-coded tropes. Precedents: Promptbreeder, FunSearch, AlphaEvolve",
+   "idea": ""
+  },
+  {
+   "tool": "Long-term experimental evolution (Lenski 1991)",
+   "does": "Replay evolution in replicate lines",
+   "analogue": "Long LLM or human transmission chains",
+   "needs": "Chains",
+   "feasibility": "Yes, on a new corpus",
+   "experiment": "Do core units survive 50 retellings more than optional ones? Rival: content-word survival. Precedent: Perez et al. 2024 (attractors)",
+   "idea": ""
+  },
+  {
+   "tool": "CRISPR screens (Shalem 2014)",
+   "does": "Knock out each gene, read the phenotype",
+   "analogue": "Ablate or steer each unit in the writer model, read the text and its reception",
+   "needs": "Local model with hooks",
+   "feasibility": "Yes, on a new corpus. The one tool with no word-level twin inside the generator",
+   "experiment": "Seed S4. Rival: prompt instruction \"omit X\"; keyword logit ban; random-unit ablation",
+   "idea": ""
+  },
+  {
+   "tool": "GWAS (Klein 2005)",
+   "does": "Genome-wide association with a trait, corrected for structure",
+   "analogue": "Unit-wide association with box office, ratings, virality, with genre/era/length as covariates",
+   "needs": "5,000+ works with outcomes",
+   "feasibility": "Yes, on a new corpus",
+   "experiment": "Seed S8. Rival: word-level association; embedding ridge; LLM-rated features. Warning: length alone gives AUC 0.756 against hero films (`experiments.json`, `length_only_auc_vs_hero`)",
+   "idea": ""
+  },
+  {
+   "tool": "QTL mapping (Lander and Botstein 1989)",
+   "does": "Map trait loci in controlled crosses",
+   "analogue": "Cross two parent stories; map which parental memes drive offspring ratings",
+   "needs": "Designed crosses",
+   "feasibility": "Yes, on a new corpus",
+   "experiment": "Seed S9. Rival: planted labels + an LLM reader",
+   "idea": ""
+  },
+  {
+   "tool": "Introgression tests, ABBA-BABA (Durand 2011; Green 2010)",
+   "does": "Detect gene flow between non-sister lineages",
+   "analogue": "Borrowing across franchises (crossovers, homage)",
+   "needs": "Presence matrix, four-taxon sets",
+   "feasibility": "Yes, from data already committed",
+   "experiment": "Seed S5. Rival: the same D statistic on word presence. Context: Greenhill et al. 2009; Collard et al. 2006",
+   "idea": ""
+  },
+  {
+   "tool": "Recombination detection (Martin and Rybicki 2000)",
+   "does": "Find breakpoints where ancestry switches",
+   "analogue": "Paint each sentence of a work by the source it descends from",
+   "needs": "Sentence-by-unit matrix",
+   "feasibility": "Yes, on a new corpus (re-extract)",
+   "experiment": "Paint The Dark Knight by Long Halloween vs Killing Joke (both listed as sources in `experiments.json` E2 rows). Rival: nearest-source by sentence embedding; word overlap",
+   "idea": ""
+  },
+  {
+   "tool": "Pangenomes (Tettelin 2005)",
+   "does": "Core vs accessory; open vs closed",
+   "analogue": "The canon tiers (56 / 194 / 14,593; `canon.json`)",
+   "needs": "Presence matrix",
+   "feasibility": "Done; extension from committed data",
+   "experiment": "Seed S7. Rival: word-type accumulation (Heaps' law)",
+   "idea": ""
+  },
+  {
+   "tool": "Synteny",
+   "does": "Conserved gene order",
+   "analogue": "Conserved order of memes through a plot (Propp claimed a fixed order of functions)",
+   "needs": "Sentence-by-unit matrix",
+   "feasibility": "Yes, on a new corpus",
+   "experiment": "Is core-meme order more conserved in Batman than under sentence shuffling? Rival: sentiment-arc and embedding trajectories (Reagan et al. 2016)",
+   "idea": ""
+  },
+  {
+   "tool": "Gene families, Pfam (Mistry 2021)",
+   "does": "Group homologous domains",
+   "analogue": "Within a model: the 14,843 families. Across models: twins, crosscoders, universal SAEs",
+   "needs": "Activations from several models",
+   "feasibility": "Done within; on a new corpus across",
+   "experiment": "Families with members in all of 5 models, on name-free text. Rival: nearest single word (the study's word-matched null)",
+   "idea": ""
+  },
+  {
+   "tool": "Gene Ontology (Ashburner 2000)",
+   "does": "Controlled vocabulary with evidence codes",
+   "analogue": "Unit labels with evidence codes: read from examples; passed blind test; confirmed by steering",
+   "needs": "Labels + tests",
+   "feasibility": "Yes: partly from committed data, partly on a new corpus",
+   "experiment": "Map 200 families to TV Tropes entries; test on held-out tagged works. Rival: zero-shot LLM trope tagging. Assets: Transluce descriptions for every Llama 3.1 8B MLP neuron; `study/results/robustness/label_test.json`",
+   "idea": ""
+  },
+  {
+   "tool": "Metagenomics (Venter 2004)",
+   "does": "Profile an environment without culturing",
+   "analogue": "Profile a whole feed or forum without segmenting into works",
+   "needs": "Bulk text",
+   "feasibility": "Yes, on a new corpus",
+   "experiment": "Detect the arrival of a documented narrative earlier than a keyword tracker. Rival: keyword and phrase clustering (Leskovec et al. 2009); embedding clusters",
+   "idea": ""
+  },
+  {
+   "tool": "DNA barcoding (Hebert 2003)",
+   "does": "Short standard marker identifies species",
+   "analogue": "A small unit set identifies a franchise",
+   "needs": "Labelled works",
+   "feasibility": "Tested: negative within genre",
+   "experiment": "Study: name-free AUC 0.52 (Qwen) and 0.54 (Llama) vs masked-hero films; a TF-IDF centroid gets 0.80 (`experiments.json`). Next: supervised barcode over 10 franchises. Rival: supervised words",
+   "idea": ""
+  },
+  {
+   "tool": "Phylogeography (Avise 1987; Bouckaert 2012)",
+   "does": "Map lineages onto geography",
+   "analogue": "Map variants onto languages, countries, platforms",
+   "needs": "Geotagged or multilingual variants",
+   "feasibility": "Yes, on a new corpus",
+   "experiment": "Same film's plot in 10 language Wikipedias: do profiles cluster by film or by language? Rival: multilingual-e5; translate then TF-IDF. Precedent: Bortolini et al. 2017",
+   "idea": ""
+  },
+  {
+   "tool": "Phylodynamics, Nextstrain (Grenfell 2004; Hadfield 2018; Stadler 2012)",
+   "does": "Real-time trees with growth rates per clade",
+   "analogue": "Live tree of narrative variants; forecast which clade grows",
+   "needs": "Dense timestamped variants",
+   "feasibility": "Yes, on a new corpus (engineering)",
+   "experiment": "Predict next month's growing clades (Łuksza and Lässig 2014; Neher et al. 2014). Rival: count extrapolation; edit-distance trees (Adamic et al. 2016)",
+   "idea": ""
+  },
+  {
+   "tool": "Quasispecies (Eigen 1971)",
+   "does": "Mutant cloud around a master sequence; error threshold",
+   "analogue": "A meme as a variant cloud; a copy-fidelity threshold below which identity dissolves",
+   "needs": "Chains at varied fidelity",
+   "feasibility": "Yes, on a new corpus",
+   "experiment": "Chains at 5 fidelity levels x 20 replicates; where do core units collapse? Rival: content-word survival; LLM judge of gist",
+   "idea": ""
+  },
+  {
+   "tool": "Neutral theory (Kimura 1968; Ohta 1973)",
+   "does": "Drift as the null",
+   "analogue": "Random copying as the null for meme frequency change",
+   "needs": "Frequencies over time",
+   "feasibility": "Yes: partly from committed data, partly on a new corpus",
+   "experiment": "Seed S2. Rival: word types under the same test. Precedents: Bentley et al. 2004; Kandler and Shennan 2013",
+   "idea": ""
+  },
+  {
+   "tool": "Time-series selection test (Feder et al. 2014)",
+   "does": "Reject drift from frequency trajectories",
+   "analogue": "Frequency-increment test per unit across decades",
+   "needs": "Dated population samples",
+   "feasibility": "Yes, on a new corpus",
+   "experiment": "As S2. Caveat: binning artefacts (Karjus et al. 2020). Precedent: Newberry et al. 2017",
+   "idea": ""
+  },
+  {
+   "tool": "Price equation (1970)",
+   "does": "Split change into selection and transmission",
+   "analogue": "Selection among parent works vs transformation during adaptation, per unit",
+   "needs": "Parent/offspring links at scale",
+   "feasibility": "Yes, on a new corpus (Wikidata \"based on\")",
+   "experiment": "Is the transformation term larger than the selection term? That is Sperber vs Dawkins in one number. Rival: same split with LLM-coded tropes. Theory: El Mouden et al. 2014",
+   "idea": ""
+  },
+  {
+   "tool": "Quantitative genetics, heritability (Visscher 2008)",
+   "does": "Parent/offspring regression; response to selection",
+   "analogue": "Per-unit heritability across source/adaptation pairs",
+   "needs": "1,000+ pairs",
+   "feasibility": "Yes, on a new corpus",
+   "experiment": "Is heritability of concept-labelled units above that of word-like units, name-free? Rival: per-word heritability; per-embedding-dimension heritability",
+   "idea": ""
+  },
+  {
+   "tool": "Universal marker, 16S rRNA (Woese and Fox 1977)",
+   "does": "One molecule shared by all life gives one tree",
+   "analogue": "A unit set with twins in every model (the P2 claim, narrowed)",
+   "needs": "5+ models",
+   "feasibility": "Yes, on a new corpus",
+   "experiment": "Seed S10. Rival: random unit sets; word presence",
+   "idea": ""
+  }
+ ],
+ "landmarks": [
+  {
+   "who": "Linnaeus",
+   "when": "1735",
+   "gave": "A naming and ranking system, with no mechanism.",
+   "memetic": "Already exists: folktale type and motif indexes, TV Tropes. Neurons give an automatic version, with labels only partly checked.",
+   "status": "partial",
+   "statusText": "exists by hand; automatic version unvalidated"
+  },
+  {
+   "who": "Darwin",
+   "when": "1859",
+   "gave": "Descent with modification, plus selection.",
+   "memetic": "Already exists by analogy: Dawkins, Cavalli-Sforza and Feldman, Boyd and Richerson. The idea is not what is missing.",
+   "status": "solid",
+   "statusText": "done long ago"
+  },
+  {
+   "who": "Mendel",
+   "when": "1866",
+   "gave": "Inheritance in discrete particles, shown by ratios in controlled crosses of seven clean traits.",
+   "memetic": "The right next target. A few clean units, planted in stories and crossed under control. Mendel picked 7 traits, not 14,843.",
+   "status": "unknown",
+   "statusText": "not attempted; planted stories are the true-breeding lines"
+  },
+  {
+   "who": "Mendeleev",
+   "when": "1869",
+   "gave": "An ordering whose gaps predicted elements nobody had found.",
+   "memetic": "A table of memes whose gaps predict workable combinations nobody has used. Needs a low-dimensional structure in unit space. Nobody has shown one.",
+   "status": "unknown",
+   "statusText": "speculative"
+  },
+  {
+   "who": "Avery, Hershey and Chase",
+   "when": "1944 to 1952",
+   "gave": "Which substance carries heredity: strip components and see what still transmits.",
+   "memetic": "Name removal was step one: heredity survived without names. Step two, strip the wording by paraphrase or translation, is not done and is cheap.",
+   "status": "partial",
+   "statusText": "step one done"
+  },
+  {
+   "who": "Watson and Crick",
+   "when": "1953",
+   "gave": "A physical structure that explains copying.",
+   "memetic": "Not available for human culture: a model neuron is an instrument, not the substrate in a human head. Possible for ideas passed between models, where weights can be read.",
+   "status": "weak",
+   "statusText": "out of reach for human minds"
+  },
+  {
+   "who": "Lewontin and Hubby",
+   "when": "1966",
+   "gave": "The first cheap measure of variation, applied widely.",
+   "memetic": "Word overlap and TF-IDF. Crude, cheap, and they work. This is the bar every unit has to clear.",
+   "status": "solid",
+   "statusText": "delivered by words"
+  },
+  {
+   "who": "Kimura",
+   "when": "1968",
+   "gave": "The neutral null: most change is drift, so selection must beat that baseline.",
+   "memetic": "Already exists for culture (random copying of baby names and pottery). It must be fitted before any selection claim. The one selection test here had 27% power.",
+   "status": "partial",
+   "statusText": "theory exists; not yet applied here"
+  },
+  {
+   "who": "Woese and Fox",
+   "when": "1977",
+   "gave": "One universal marker gave one tree of life.",
+   "memetic": "This is premise P2: a set of units present in every model and robust to wording. Only 1 to 5% of neurons recur across retrained models.",
+   "status": "weak",
+   "statusText": "the hope behind P2; weak so far"
+  },
+  {
+   "who": "Sanger",
+   "when": "1977",
+   "gave": "Cheap, accurate reading with a known error rate.",
+   "memetic": "The most natural role for neuron reading. Not yet earned: the reader mostly reads words and has no stated error rate against ground truth.",
+   "status": "partial",
+   "statusText": "this is where memetics is now"
+  },
+  {
+   "who": "The modern synthesis",
+   "when": "1918 to 1950",
+   "gave": "Mendel and Darwin joined by population genetics.",
+   "memetic": "The mathematics was written without a unit. Units would supply its parameters: copying fidelity and selection strength. Comes after the Mendel and Kimura steps.",
+   "status": "unknown",
+   "statusText": "later"
+  },
+  {
+   "who": "Human Genome Project",
+   "when": "1990 to 2003",
+   "gave": "A reference catalogue.",
+   "memetic": "For models, catalogues of neuron descriptions exist. A reference list of validated meme units for one public model is cheap to build. A parts list is not function.",
+   "status": "partial",
+   "statusText": "buildable now"
+  }
+ ]
+}

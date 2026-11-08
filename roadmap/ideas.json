@@ -1,0 +1,664 @@
+{
+ "registered": "8 November 2026",
+ "regions": [
+  {
+   "id": "instrument",
+   "name": "The instrument",
+   "bio": "Sequencing",
+   "col": 0,
+   "row": 0,
+   "blurb": "Premise P1. Does a firing neuron measure a meme? Reliability and validity of the unit itself."
+  },
+  {
+   "id": "universality",
+   "name": "Across models",
+   "bio": "One genetic code",
+   "col": 1,
+   "row": 0,
+   "blurb": "Premise P2. Do different models, languages and media give the same reading?"
+  },
+  {
+   "id": "atlas",
+   "name": "The atlas",
+   "bio": "Genome project",
+   "col": 2,
+   "row": 0,
+   "blurb": "A catalogue of the units: a reference list, a periodic table of memes, and the mechanism behind them."
+  },
+  {
+   "id": "memetics",
+   "name": "Old memetics, re-run",
+   "bio": "Classical genetics",
+   "col": 3,
+   "row": 0,
+   "blurb": "Claims from Dawkins-era and internet memetics that never had a unit."
+  },
+  {
+   "id": "lineage",
+   "name": "Lineage",
+   "bio": "Phylogenetics",
+   "col": 0,
+   "row": 1,
+   "blurb": "Who descends from whom, including influence nobody declared."
+  },
+  {
+   "id": "remix",
+   "name": "Remix and influence",
+   "bio": "Recombination",
+   "col": 1,
+   "row": 1,
+   "blurb": "How much of a work is inherited, how much is new, and who influenced whom."
+  },
+  {
+   "id": "population",
+   "name": "Population memetics",
+   "bio": "Population genetics",
+   "col": 2,
+   "row": 1,
+   "blurb": "Drift, selection, linkage and flow of memes across whole populations of works."
+  },
+  {
+   "id": "cultevo",
+   "name": "Cultural evolution, re-run",
+   "bio": "Evolutionary ecology",
+   "col": 3,
+   "row": 1,
+   "blurb": "The accepted science of cultural change, tested with the new unit."
+  },
+  {
+   "id": "fitness",
+   "name": "Fitness and forecasting",
+   "bio": "Fitness landscapes",
+   "col": 0,
+   "row": 2,
+   "blurb": "Which memes and combinations succeed, and whether that can be predicted."
+  },
+  {
+   "id": "engineering",
+   "name": "Meme engineering",
+   "bio": "Gene editing",
+   "col": 1,
+   "row": 2,
+   "blurb": "Turning a meme up or down in a text, and breeding better variants."
+  },
+  {
+   "id": "conjectures",
+   "name": "Field conjectures",
+   "bio": "Natural history",
+   "col": 2,
+   "row": 2,
+   "blurb": "Hunches from marketing practice, made testable."
+  },
+  {
+   "id": "uses",
+   "name": "Uses",
+   "bio": "Biotechnology",
+   "col": 3,
+   "row": 2,
+   "blurb": "What the instrument is good for outside the lab."
+  }
+ ],
+ "ideas": [
+  {
+   "id": "IN-01",
+   "region": "instrument",
+   "status": "done",
+   "verdict": "held",
+   "priority": 0,
+   "title": "Is there a canon beyond chance?",
+   "question": "Do neuron units pick out a core that random sets of films lack?",
+   "result": "Yes. No random 32-film set has a single neuron present in 23 or more of its films; Batman has 1,534 (Qwen3-8B). Names were present, so much of this core is name detectors.",
+   "method": "50 random 32-film pseudo-franchises against the 32 Batman works.",
+   "rivals": "None run for this count.",
+   "premise": "P1: the unit is countable and repeatable. It does not show the unit is a concept.",
+   "bio": "Core genome of a species",
+   "sources": [
+    "study/results/robustness/nulls.json (f1_chance)"
+   ]
+  },
+  {
+   "id": "IN-02",
+   "region": "instrument",
+   "status": "done",
+   "verdict": "mixed",
+   "priority": 0,
+   "title": "Blind test of the meme labels",
+   "question": "Can a blind judge match a neuron's label to a new sentence it fires on?",
+   "result": "56 of 71 right (79%). A judge that only compares word stems gets 65%. For the 31 showcase memes the gap is not significant (77% against 63%, p = 0.07). Judges were AI; item-level answers were not kept.",
+   "method": "Two-choice test on held-out sentences.",
+   "rivals": "Word-stem overlap judge.",
+   "premise": "P1: labels carry some meaning beyond chance, little beyond words.",
+   "bio": "Checking a gene annotation",
+   "sources": [
+    "study/results/robustness/label_test.json"
+   ]
+  },
+  {
+   "id": "IN-03",
+   "region": "instrument",
+   "status": "done",
+   "verdict": "mixed",
+   "priority": 0,
+   "title": "Ideas or words: the rewording test",
+   "question": "Does a unit still fire when its top sentence is rewritten with no shared content words?",
+   "result": "11 of 31 Qwen units passed a lenient bar (5.0 expected by chance). Only 2 Qwen units and 6 Llama units were specific to their own rewording. Every Qwen character unit but one failed without the name.",
+   "method": "31 rewritten sentences, scored against ten everyday sentences and a mismatched-rewording null.",
+   "rivals": "Mismatched rewording.",
+   "premise": "P1: a few units track ideas; most track words.",
+   "bio": "Synonymous substitutions",
+   "sources": [
+    "study/results/wording.json",
+    "study/results/robustness/nulls.json (f3_wording)"
+   ]
+  },
+  {
+   "id": "IN-04",
+   "region": "instrument",
+   "status": "done",
+   "verdict": "mixed",
+   "priority": 0,
+   "title": "One concept unit: revenge",
+   "question": "Is there a neuron for revenge that works without revenge words?",
+   "result": "Llama's unit chose the revenge sentence in 10 of 12 new minimal pairs. Qwen's unit, picked the same way, scored 4 of 12: it was a keyword detector. The two units correlate at only 0.39.",
+   "method": "Unit chosen on 10 practice pairs, scored on 12 new pairs with no revenge words.",
+   "rivals": "The keyword itself.",
+   "premise": "P1: possible for some concepts in some models. P2: the two models did not agree.",
+   "bio": "A single well-characterised gene",
+   "sources": [
+    "study/results/wording.json (revenge)"
+   ]
+  },
+  {
+   "id": "UN-01",
+   "region": "universality",
+   "status": "done",
+   "verdict": "mixed",
+   "priority": 0,
+   "title": "Twins across two companies' models",
+   "question": "Does each Qwen meme have a matching neuron in Llama?",
+   "result": "The 33 strongest have twins at median r = 0.82, but equally word-like non-meme units reach 0.86. Across all 14,843 families the median is 0.40 against 0.36 for random units. Without names the same pairs fall to 0.14.",
+   "method": "Best-correlated Llama unit over 3,700 sentences, with nulls matched on sparsity, layer and word-likeness.",
+   "rivals": "Word-matched non-meme units.",
+   "premise": "P2: name and word detectors recur. Concept units recur weakly.",
+   "bio": "Orthologous genes",
+   "sources": [
+    "study/results/robustness/nulls.json (f2_agreement)",
+    "study/results/phylo.json.gz"
+   ]
+  },
+  {
+   "id": "UN-02",
+   "region": "universality",
+   "status": "done",
+   "verdict": "mixed",
+   "priority": 0,
+   "title": "Do two models draw the same tree?",
+   "question": "Do Qwen and Llama agree on which works carry which memes and how works relate?",
+   "result": "Distance matrices correlate at 0.98, but random units give 0.90 to 0.93 and two word methods agree at 0.92. Presence grids agree at kappa 0.73 against 0.35 to 0.57 for controls.",
+   "method": "Mantel correlation and Cohen's kappa, with random-unit and TF-IDF floors.",
+   "rivals": "Random units; TF-IDF against LSA.",
+   "premise": "P2: agreement is mostly a floor any text representation reaches, with a small excess.",
+   "bio": "Gene trees agreeing across loci",
+   "sources": [
+    "study/results/robustness/nulls.json (f2_trees)"
+   ]
+  },
+  {
+   "id": "UN-03",
+   "region": "universality",
+   "status": "done",
+   "verdict": "mixed",
+   "priority": 0,
+   "title": "A smaller sibling model",
+   "question": "Does Qwen3-1.7B, from the same family, agree better than a different company's model?",
+   "result": "No. Median twin r is 0.40, the same as for Llama. The agreement level seems to reflect the text more than shared training. Never run on name-free texts.",
+   "method": "Same pipeline on Qwen3-1.7B.",
+   "rivals": "Random active units (0.36).",
+   "premise": "P2: no extra convergence within a model family.",
+   "bio": "Sister species",
+   "sources": [
+    "study/results/phylo.json.gz (models.qwen3-1.7b)"
+   ]
+  },
+  {
+   "id": "UN-04",
+   "region": "universality",
+   "status": "done",
+   "verdict": "mixed",
+   "priority": 0,
+   "title": "Vision neurons on posters",
+   "question": "Do image-model neurons find Batman memes in posters and covers?",
+   "result": "Exploratory. CLIP has 56 neurons present in 6 or more of 29 Batman images against 0.6 by chance. No cheap rival was compared and it is not part of the paper.",
+   "method": "CLIP RN50x4 and DINOv2 neurons on one image per work.",
+   "rivals": "None.",
+   "premise": "P2 across media: untested in any strict sense.",
+   "bio": "The same gene in another tissue",
+   "sources": [
+    "images/README.md",
+    "images/results/vision_final.json"
+   ]
+  },
+  {
+   "id": "LI-01",
+   "region": "lineage",
+   "status": "done",
+   "verdict": "failed",
+   "priority": 0,
+   "title": "Family trees from meme sets",
+   "question": "Does a tree built from shared memes put each adaptation next to its source comic?",
+   "result": "No. The source ranks 5.4 of 12 by tree distance against 5.8 by chance. Word counts put it at 2.9, and random non-meme units beat the selected memes in every draw.",
+   "method": "Jaccard distance on meme sets, neighbour joining.",
+   "rivals": "TF-IDF, LSA, random units. All won.",
+   "premise": "P1: the selected 'memes' were worse than unselected units, so the selection rule is suspect.",
+   "bio": "Phylogenetic tree inference",
+   "sources": [
+    "study/results/phylo.json.gz",
+    "study/results/robustness/nulls.json (source_recovery)"
+   ]
+  },
+  {
+   "id": "LI-02",
+   "region": "lineage",
+   "status": "done",
+   "verdict": "held",
+   "priority": 0,
+   "title": "Heredity: adaptations carry their sources",
+   "question": "With every name removed, do adaptations carry their documented source comic's optional units more than other comics'?",
+   "result": "Yes, in both models: 16% and 10% of comics beat the source against 47% by chance (exact p = 0.0026 and 0.00017), in 99.6% of 30,240 analysis variants. Word counts do as well (11%).",
+   "method": "Pre-registered E2: 9 adaptations, 12 comics, exact permutation test.",
+   "rivals": "TF-IDF cosine and word presence. They matched the neurons.",
+   "premise": "Shows heredity is measurable in these texts. Does not show neurons are needed.",
+   "bio": "Parentage testing",
+   "sources": [
+    "study/results/experiments.json (E2)",
+    "study/results/robustness/e2_multiverse.json"
+   ]
+  },
+  {
+   "id": "LI-03",
+   "region": "lineage",
+   "status": "done",
+   "verdict": "mixed",
+   "priority": 0,
+   "title": "Do neurons add anything beyond shared words?",
+   "question": "After word similarity is regressed out, does neuron inheritance still point to the source?",
+   "result": "Not for Qwen (p = 0.09 to 0.25). Marginally for Llama (p = 0.010 to 0.033), but that falls to 0.057 to 0.065 under the stricter nulls and is uncorrected for six tests. Word counts keep their signal with neurons removed.",
+   "method": "Pre-registered residual test over 32 by 12 pairs.",
+   "rivals": "TF-IDF and word presence.",
+   "premise": "The key test of P1's added value. Failed on the primary model.",
+   "bio": "Signal left after controlling for population structure",
+   "sources": [
+    "study/results/experiments.json (residual_test_beyond_words)"
+   ]
+  },
+  {
+   "id": "LI-04",
+   "region": "lineage",
+   "status": "done",
+   "verdict": "mixed",
+   "priority": 0,
+   "title": "The vigilante lineage",
+   "question": "Do the Scarlet Pimpernel, Zorro, Batman and Iron Man show up as one family?",
+   "result": "Partly. They share the superhero layer (the secret identity) and not Batman's own trappings. One summary each, names present, Zorro only 9 sentences: inconclusive.",
+   "method": "Nearest relatives and six orphan-vigilante memes across 13 relatives.",
+   "rivals": "None.",
+   "premise": "Illustrative only.",
+   "bio": "Deep homology",
+   "sources": [
+    "study/paper/paper.md section 3.5"
+   ]
+  },
+  {
+   "id": "AT-01",
+   "region": "atlas",
+   "status": "done",
+   "verdict": "failed",
+   "priority": 0,
+   "title": "Identity: what makes a story Batman?",
+   "question": "Without names, does the share of Batman's canon a work carries separate Batman from other masked heroes?",
+   "result": "No: AUC 0.52 and 0.54 against 8 hero films, where a word-based score gets 0.80 and text length alone 0.76. It does separate Batman from ordinary films (0.90 to 0.95).",
+   "method": "Pre-registered E1, held-out works, name-free texts.",
+   "rivals": "TF-IDF centroid and text length. Both won.",
+   "premise": "P1: the canon-share score missed what words caught.",
+   "bio": "Species diagnosis",
+   "sources": [
+    "study/results/experiments.json (E1)"
+   ]
+  },
+  {
+   "id": "AT-02",
+   "region": "atlas",
+   "status": "done",
+   "verdict": "mixed",
+   "priority": 0,
+   "title": "The name-free core is the superhero template",
+   "question": "What is left of Batman's core when names are removed?",
+   "result": "Seven Qwen units: a secret identity, an origin in loss, a costume, a mission by night. They are present in 91% of the hero films too. The neurons rediscovered the standard definition of a superhero. Descriptive, not a test.",
+   "method": "Units present in at least 70% of name-free Batman works.",
+   "rivals": "None.",
+   "premise": "Suggestive for P1: the surviving units are concept-like.",
+   "bio": "Conserved genes of a genus",
+   "sources": [
+    "study/results/experiments.json (E1)",
+    "Coogan 2006"
+   ]
+  },
+  {
+   "id": "FI-01",
+   "region": "fitness",
+   "status": "done",
+   "verdict": "failed",
+   "priority": 0,
+   "title": "Selection: do popular works' memes spread?",
+   "question": "Do memes carried by popular early works spread further into later works?",
+   "result": "No signal: rho = 0.25 (p = 0.35) and 0.00 (p = 0.58). The test had 15 works and would catch a true correlation of 0.3 only 27% of the time. A weak null.",
+   "method": "Pre-registered E3: pageviews against residualised spread.",
+   "rivals": "Reverse-time placebo.",
+   "premise": "Says nothing about P1 or P2. Selection needs a bigger lineage and success measured at release.",
+   "bio": "Detecting selection",
+   "sources": [
+    "study/results/experiments.json (E3)"
+   ]
+  },
+  {
+   "id": "PO-01",
+   "region": "population",
+   "status": "done",
+   "verdict": "mixed",
+   "priority": 0,
+   "title": "When memes enter and where they recur",
+   "question": "Can each meme's first appearance and later spread be placed on a timeline?",
+   "result": "Yes, descriptively. But 6 of 15 optional memes 'first appear' in 1986 only because the sample has no works from 1967 to 1985.",
+   "method": "First appearance of each named meme among the 32 works.",
+   "rivals": "None.",
+   "premise": "Shows the bookkeeping works. The sample is too thin for any claim.",
+   "bio": "Dating a gene's origin",
+   "sources": [
+    "study/paper/paper.md section 3.2"
+   ]
+  },
+  {
+   "id": "IN-05",
+   "region": "instrument",
+   "status": "planned",
+   "priority": 4.0,
+   "title": "Planted memes: neurons against keywords",
+   "question": "When a meme is written into a story without its usual words, do neurons detect it better than a keyword analyst or a word classifier?",
+   "hypothesis": "H1 of the pre-registration: neurons beat both word rivals by at least 0.05 AUC on reworded stories.",
+   "falsifier": "The gap is credibly below 0.05 AUC against either rival.",
+   "data": "816 stories to be written (136 plots in 6 versions), 3 of 34 memes planted in each. Truth is known by construction.",
+   "method": "Each planted story against its own control version, per meme.",
+   "rivals": "Evasion-aware keyword lists and TF-IDF logistic regression.",
+   "premise": "P1. The cleanest planned test of whether neurons see ideas when words change.",
+   "bio": "Spike-in controls",
+   "cost": "L: about 4,400 agent sessions and 3 days as designed; a trimmed version takes 1.5 days",
+   "risk": "Power is only 0.22 to 0.40 at the smallest effect of interest, and every story, reader and rater is one AI model family.",
+   "sources": [
+    "preregistration/PREREGISTRATION.md (H1)",
+    "preregistration/history/power_v4.json"
+   ]
+  },
+  {
+   "id": "IN-06",
+   "region": "instrument",
+   "status": "planned",
+   "priority": 3.8,
+   "title": "Planted memes: neurons against embeddings",
+   "question": "Are neurons at least as good as the strongest sentence embeddings at finding a planted meme?",
+   "hypothesis": "H2: neurons are within 0.05 AUC of Qwen3-Embedding-4B and e5-large.",
+   "falsifier": "Neurons are credibly worse than any one of the three embedding rivals by more than 0.05.",
+   "data": "The same 816 planted stories.",
+   "method": "Non-inferiority test, then superiority.",
+   "rivals": "Qwen3-Embedding-4B on sentences and on 3-sentence windows; e5-large.",
+   "premise": "P1. If embeddings win, the case for neurons rests on being nameable and cheap, not on accuracy.",
+   "bio": "Comparing two sequencing platforms",
+   "cost": "L: shares the planted-story run",
+   "risk": "Power 0.22 when the two are truly equal.",
+   "sources": [
+    "preregistration/PREREGISTRATION.md (H2)"
+   ]
+  },
+  {
+   "id": "IN-07",
+   "region": "instrument",
+   "status": "planned",
+   "priority": 4.0,
+   "title": "Do Batman's concept units travel to other genres?",
+   "question": "Do the 11 concept units found on Batman texts respond to their own meme, and only that meme, in unrelated stories?",
+   "hypothesis": "H3: each unit's detection of its own meme exceeds its detection of other memes by at least 0.05 AUC.",
+   "falsifier": "Specificity credibly below 0.05: the units fire on any eventful passage.",
+   "data": "The planted stories, in genres far from Batman.",
+   "method": "Own-meme AUC minus other-meme AUC, labels permuted across units.",
+   "rivals": "Label permutation; the same test for word and name units.",
+   "premise": "P1. Tests whether a unit found in one corpus is a portable concept.",
+   "bio": "Does a gene do the same job in another species",
+   "cost": "L: shares the planted-story run",
+   "risk": "Power 0.14 at the smallest effect of interest.",
+   "sources": [
+    "preregistration/PREREGISTRATION.md (H3)",
+    "preregistration/dev_units.json"
+   ]
+  },
+  {
+   "id": "IN-08",
+   "region": "instrument",
+   "status": "planned",
+   "priority": 3.6,
+   "title": "Is one neuron enough?",
+   "question": "Does a single neuron detect a meme as well as five, and does the neuron basis beat the same model's dense hidden states?",
+   "hypothesis": "'Single neurons are memes' is claimed only if five neurons beat one by less than 0.03 AUC.",
+   "falsifier": "Five neurons, or the pooled hidden state, clearly beat one neuron.",
+   "data": "The planted stories.",
+   "method": "One unit against five; neurons against hidden states at four layers.",
+   "rivals": "The model's own hidden states.",
+   "premise": "P1. Asks whether the neuron is the right unit or just one readout of a dense representation.",
+   "bio": "One gene or a polygenic trait",
+   "cost": "L: shares the planted-story run",
+   "sources": [
+    "preregistration/PREREGISTRATION.md (T2 family)"
+   ]
+  },
+  {
+   "id": "IN-09",
+   "region": "instrument",
+   "status": "planned",
+   "priority": 2.6,
+   "title": "Are neurons easier to name than topics?",
+   "question": "Can blind judges match labels to neurons better than to LDA topics or embedding clusters?",
+   "hypothesis": "Neuron labels beat a word-overlap floor and are at least as nameable as topics and clusters.",
+   "falsifier": "Topics or clusters are as nameable; neurons do not beat the word floor.",
+   "data": "Labels written for units, topics and clusters on the planted stories.",
+   "method": "Blind two-choice label test, 12 tests.",
+   "rivals": "LDA topics, embedding clusters, word-overlap judge.",
+   "premise": "P1: nameability is the one advantage claimed for neurons over embeddings.",
+   "bio": "Annotating genes against annotating markers",
+   "cost": "M: about 1,300 agent sessions; first candidate to cut",
+   "sources": [
+    "preregistration/PREREGISTRATION.md (T6)"
+   ]
+  },
+  {
+   "id": "IN-10",
+   "region": "instrument",
+   "status": "planned",
+   "priority": 3.0,
+   "title": "Natural summaries annotated by hand",
+   "question": "On real plot summaries labelled exhaustively for memes, which method agrees best with the annotators?",
+   "hypothesis": "Neurons match annotators at least as well as keywords and embeddings.",
+   "falsifier": "They trail both.",
+   "data": "237 name-masked natural summaries, to be annotated.",
+   "method": "Two annotators plus an adjudicator; each method scored against them.",
+   "rivals": "Keywords, embeddings, LLM reading.",
+   "premise": "P1 on natural text.",
+   "bio": "Curated reference annotations",
+   "cost": "M: about 600 agent sessions. Deferred",
+   "risk": "AI annotators recognise masked works and label from memory. Needs human annotators to mean much.",
+   "sources": [
+    "preregistration/annotation_protocol.md"
+   ]
+  },
+  {
+   "id": "UN-05",
+   "region": "universality",
+   "status": "planned",
+   "priority": 4.3,
+   "title": "Heredity across languages",
+   "question": "Do neurons still find the source comic when the adaptation's summary is in Chinese and the comic's is in English?",
+   "hypothesis": "Neurons recover sources across languages where word overlap cannot.",
+   "falsifier": "Neurons fall to chance, or trail multilingual embeddings and machine translation plus word counts.",
+   "data": "The Batman lineage translated into Simplified Chinese; a natural zh.wikipedia arm.",
+   "method": "The E2 statistic across languages.",
+   "rivals": "Machine translation plus TF-IDF; multilingual embeddings.",
+   "premise": "Both. Shared wording cannot carry the signal, so a pass would be the first clear win over words.",
+   "bio": "The same gene in a different genome",
+   "cost": "M: about 850 agent sessions. Deferred",
+   "risk": "Chinese is not a supported Llama 3.1 language; translators may bring back the canonical names.",
+   "sources": [
+    "preregistration/translation_protocol.md"
+   ]
+  },
+  {
+   "id": "UN-06",
+   "region": "universality",
+   "status": "planned",
+   "priority": 4.0,
+   "title": "Concept agreement on held-out films",
+   "question": "Do 27 Qwen concept units have Llama partners that agree on 1,000 unseen random films better than word-matched control units?",
+   "hypothesis": "Concept units agree across models more than 81 lexically matched null units.",
+   "falsifier": "No advantage over the word-matched nulls on held-out text.",
+   "data": "1,000 random film summaries already collected (preregistration/sources/t3_random_films.jsonl.gz).",
+   "method": "Twins fixed on development text, scored on held-out films.",
+   "rivals": "Lexically matched non-meme units.",
+   "premise": "P2. The first out-of-sample test of cross-model agreement. Data is already in hand.",
+   "bio": "Orthologues confirmed in new samples",
+   "cost": "S: extraction on 1,000 summaries. Deferred",
+   "sources": [
+    "preregistration/analysis.py (run_t5)",
+    "preregistration/dev_units.json"
+   ]
+  },
+  {
+   "id": "LI-05",
+   "region": "lineage",
+   "status": "planned",
+   "priority": 4.3,
+   "title": "The vocabulary drift ladder",
+   "question": "As more of an adaptation's content words are replaced, how long does each method still find its source?",
+   "hypothesis": "H4: neurons keep finding the source at 50 to 100% replacement where TF-IDF and LSA lose it.",
+   "falsifier": "Neurons degrade as fast as word counts.",
+   "data": "Batman and Shakespeare-film summaries rewritten at 25, 50, 75 and 100% replacement, with a style-only control.",
+   "method": "Source recovery at each level.",
+   "rivals": "TF-IDF, LSA. Embeddings and an LLM reader should be added.",
+   "premise": "P1. A lineage where wording changes and ideas stay is exactly what the paper says is needed.",
+   "bio": "Tracing descent through synonymous change",
+   "cost": "M: about 850 agent sessions. Deferred",
+   "risk": "Power 0.15 at the smallest effect of interest; the rewriter may leak source words.",
+   "sources": [
+    "preregistration/drift_protocol.md",
+    "preregistration/history/power_v2.json"
+   ]
+  },
+  {
+   "id": "LI-06",
+   "region": "lineage",
+   "status": "planned",
+   "priority": 3.6,
+   "title": "Shakespeare: a fresh lineage",
+   "question": "Do loose film adaptations of Shakespeare carry their play's memes when names, settings and wording all differ?",
+   "hypothesis": "H5: neurons rank the true play above other plays for renamed adaptations.",
+   "falsifier": "No better than chance, or no better than words.",
+   "data": "40 plays and 54 films of 13 plays with documented sources (preregistration/works_shakespeare.json).",
+   "method": "E2-style source recovery.",
+   "rivals": "TF-IDF, LSA.",
+   "premise": "P1 on a second lineage.",
+   "bio": "A second model organism",
+   "cost": "M. Deferred",
+   "risk": "Ground truth is weaker than it looks: 27 of 83 loose films rested on a Wikipedia category; Romeo and Juliet dominates. Power 0.17.",
+   "sources": [
+    "preregistration/works_shakespeare.json"
+   ]
+  },
+  {
+   "id": "RX-01",
+   "region": "remix",
+   "status": "planned",
+   "priority": 3.4,
+   "title": "Batman-likeness across 2,544 works",
+   "question": "Scored on Batman's own units, do documented Batman relatives rank above a large pool of other works?",
+   "hypothesis": "Documented relatives (Zorro, the Pimpernel, Iron Man and others) rank above the pool.",
+   "falsifier": "They do not, or TF-IDF, LSA and embeddings rank them as well.",
+   "data": "2,544 name-masked works, 62,879 sentences, with 36 documented relatives (preregistration/culture_pool.json).",
+   "method": "Rank relatives against the pool.",
+   "rivals": "TF-IDF, LSA, embeddings, an LLM 'likeness' judge.",
+   "premise": "Uses both. Finds the other billionaire vigilante orphans in the culture.",
+   "bio": "Homology search across a database",
+   "cost": "M. Deferred",
+   "risk": "Franchises are not independent works; earlier drafts had Batman stories among the negatives.",
+   "sources": [
+    "preregistration/culture_pool.json",
+    "preregistration/documented_relatives.json"
+   ]
+  },
+  {
+   "id": "PO-02",
+   "region": "population",
+   "status": "planned",
+   "priority": 3.4,
+   "title": "Mutation and selection against a neutral model",
+   "question": "Are units that first appear in landmark works carried forward more than random copying predicts?",
+   "hypothesis": "Units new in The Dark Knight Returns, Year One and The Killing Joke spread more than a margin-preserving null allows.",
+   "falsifier": "Spread is no greater than the neutral model's.",
+   "data": "71 Batman works (32 development, 39 test).",
+   "method": "New units per work, tested against a neutral random-copying model.",
+   "rivals": "The same test on words.",
+   "premise": "Uses both. The first population-level test.",
+   "bio": "Selection against neutral drift",
+   "cost": "M. Deferred",
+   "risk": "Circular: the added works include direct adaptations of the predicted innovators, and 42 of 43 new works are from 1995 on.",
+   "sources": [
+    "preregistration/works_batman_extended.json",
+    "preregistration/analysis.py (run_t4)"
+   ]
+  },
+  {
+   "id": "US-01",
+   "region": "uses",
+   "status": "planned",
+   "priority": 3.6,
+   "title": "Cost against accuracy, head to head",
+   "question": "Is any rival method both at least as accurate as neurons and no more expensive per story?",
+   "hypothesis": "H6: no rival dominates.",
+   "falsifier": "Any rival is at least as accurate and no dearer.",
+   "data": "The planted stories; timings already measured.",
+   "method": "Cost per story at 34 memes against accuracy, 17 methods.",
+   "rivals": "Keywords, embeddings, topics, LLM judges, NLI.",
+   "premise": "Practical value. One neuron pass costs about as much as one uncached LLM yes-or-no question.",
+   "bio": "Sequencing cost per genome",
+   "cost": "L: shares the planted-story run",
+   "sources": [
+    "preregistration/PREREGISTRATION.md (H6)",
+    "preregistration/sources/neuron_timing_qwen3-8b.json"
+   ]
+  },
+  {
+   "id": "US-02",
+   "region": "uses",
+   "status": "planned",
+   "priority": 3.8,
+   "title": "Catching coded language",
+   "question": "When a group renames an idea with an invented code word, do methods that read context still find it?",
+   "hypothesis": "Neurons, hidden states and an LLM judge beat sentence embeddings and keyword lists on code-word versions.",
+   "falsifier": "Context-free methods do as well.",
+   "data": "Code-word versions of the planted stories.",
+   "method": "Six tests on Qwen; the headline is stated only if all six pass.",
+   "rivals": "Evasion-aware keywords, sentence embeddings.",
+   "premise": "P1, and a use: moderation when vocabulary is changed to evade filters.",
+   "bio": "Detecting a gene under a different name",
+   "cost": "L: shares the planted-story run",
+   "risk": "Invented code words are not real evasive language. No real-world corpus is in the plan.",
+   "sources": [
+    "preregistration/PREREGISTRATION.md (S-coded)"
+   ]
+  }
+ ]
+}

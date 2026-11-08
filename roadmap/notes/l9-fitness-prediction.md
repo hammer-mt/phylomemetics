@@ -1,0 +1,182 @@
+# l9 Fitness prediction: predicting which ideas succeed, and mutating them to do better
+
+Scope: what is known about forecasting cultural success from content, the baseline accuracies a neuron-meme profile would have to beat, and how to test prediction and directed mutation causally. No experiments were run. Web sources were confirmed in this session unless marked `[UNVERIFIED]`.
+
+## Bottom line
+
+- **Most of success is not in the content.** In Martin et al. (2016) the best model explains 42% of the variance in Twitter cascade size, and almost all of that comes from the author's past record: content features stay "well below 0.05" R². In books, the publisher is the strongest driver of sales (Wang et al. 2019). MusicLab (2006) showed experimentally that social influence makes outcomes both more unequal and less predictable. A meme-to-success test that does not hold author, outlet and timing fixed will measure metadata.
+- **In controlled comparisons the content signal is real and small.** Same author, same link, different wording: people pick the more retweeted tweet 61.3% of the time and the best classifier 65.6% (chance 50%; Tan, Lee, Pang 2014). Upworthy headline tests: one extra negative word raises click-through by 2.3% of a 1.39% base rate (Robertson et al. 2023). Picking the winning headline in a whole Upworthy test: random 33.0%, GPT-4 zero-shot 37.9%, embeddings plus a linear model 46.3%, fine-tuned Llama-3-8B 46.9% (Ye et al. 2025, LOLA).
+- **The cheap rivals already tie the expensive ones.** Fine-tuning an 8B model buys 0.6 points over an embedding plus linear regression on Upworthy. SAE-feature probes do not beat logistic regression on raw activations (Kantamneni et al. 2025). The defensible case for neuron or SAE units is that they give named, testable hypotheses (HypotheSAEs: 45 of 60 hypotheses significant against at most 24 for baselines), not that they predict better. Expect neuron-meme profiles to tie embeddings on accuracy until shown otherwise.
+- **Neuroforecasting is the nearest precedent and it is thin.** Brain activity in about 30 people classified 36 Kickstarter outcomes at 59.1% (61.1% in replication) against 52.9% (55.8%) for the same people's stated choices and ratings (Genevsky et al. 2017). The gains are a few points on tiny item sets from a small group of labs. It supports the idea that an internal signal can beat a stated judgement; it says nothing about model neurons.
+- **LLMs forecast survey experiments well and click behaviour badly.** GPT-4 simulated-sample predictions correlate r = 0.85 with measured effects across 70 survey experiments (Hewitt et al. 2024) but overestimate effect sizes, and correlations drop for field megastudies. On headlines, prompting barely beats chance. Directed evolution (Promptbreeder, QDAIF, AlphaEvolve) needs an automatic evaluator; AlphaEvolve's authors name that as its main limit. For memes, a trustworthy evaluator is the missing part.
+- **The study's own selection test found nothing and could not have.** `study/results/experiments.json`: E3 primary rho = 0.25 (Qwen, p = 0.35) and 0.00 (Llama, p = 0.58) on 15 early works; simulated power to detect rho = 0.3 is 0.27 (`E3_power_simulated.power_rho_0.3`). On original texts rho is negative (-0.32 and -0.50, `E3.original_text`). Fitness needs thousands of items or randomised variants, not one franchise.
+
+## Findings
+
+### 1. Limits of prediction
+
+- **MusicLab.** Salganik, Dodds, Watts (2006), Science 311:854, DOI 10.1126/science.1121066. 14,341 participants, 48 unknown songs, independent and social-influence worlds. Social influence raised both inequality (Gini) and unpredictability, more so when the social signal was stronger. Follow-up: Salganik and Watts (2008), "Leading the herd astray", on self-fulfilling prophecies (title confirmed in search; numbers not checked). Reading for this project: the same song lands in different places in different worlds, so observed success is quality plus a large path-dependent term. A meme's "fitness" read off one history is one draw.
+- **Martin, Hofman, Sharma, Anderson, Watts (2016)**, "Exploring limits to prediction in complex social systems", WWW 2016, arXiv:1602.01013. Best R² for cascade size: 0.42 on the unrestricted dataset, 0.48 on a restricted one. Content-only features: "Even after including past success of tweets, R2 stays well below 0.05". Basic user features give about 0.2; adding the user's past success gives 0.42. Simulations with perfect knowledge of quality still cap R² well below 1 (for example 0.60 when quality varies by 15% around R0 = 0.20). Figures read from the ar5iv full text.
+- **Cheng, Adamic, Dow, Kleinberg, Leskovec (2014)**, "Can cascades be predicted?", WWW 2014, arXiv:1403.4608, DOI 10.1145/2566486.2567997. Task: will a Facebook photo cascade that has reached k reshares double? The authors' slide deck shows accuracy 0.795 with all features at k = 5 (the task is balanced, so chance is about 0.5). I did not open the paper's own table. Important caveat: this is prediction after watching the early cascade. The slide deck lists temporal features as the strongest group and content features among the weakest (my reading of the deck; not re-read in the paper). It is not a pre-launch content forecast.
+- **Salganik et al. (2020)**, PNAS, "Measuring the predictability of life outcomes with a scientific mass collaboration" (Fragile Families Challenge; 160 teams; PMC7165437). Existence and framing confirmed; the low R² values I remember were not re-checked `[UNVERIFIED number]`. Cited as the general lesson: mass effort plus rich data still predicts social outcomes poorly.
+
+### 2. Controlled wording and packaging studies
+
+- **Tan, Lee, Pang (2014)**, ACL, arXiv:1405.1438. 1.77M topic- and author-controlled tweet pairs gathered; 11,404 used, 1,770 held out. Humans 61.3% (majority vote per pair 73%). Best classifier 66.5% cross-validated, 65.6% held out. A model trained on uncontrolled data with follower count and timing: 55.3% held out.
+- **Lakkaraju, McAuley, Leskovec (2013)**, ICWSM, "What's in a name?" 132K Reddit submissions of 16.7K images, about seven resubmissions per image. Community, timing and title all matter; titles do best when they fit the community's language while differing from earlier titles for the same image. I did not recover a headline accuracy or R² figure.
+- **Upworthy Research Archive.** Matias, Munger, Aubin Le Quere, Ebersole (2021), Scientific Data 8:195, DOI 10.1038/s41597-021-00934-7. 32,487 experiments, 150,817 arms, 538,272,878 participant assignments (about 3,570 per arm), 24 Jan 2013 to 30 Apr 2015. Author Correction (July 2024, PMC11239857): likely randomisation failure from 25 June 2013 to 10 January 2014, 7,004 tests or 22%; a flag variable was added. Any use must drop or separately analyse the flagged tests.
+- **Robertson et al. (2023)**, Nature Human Behaviour, "Negativity drives online news consumption" (PMC10202797). 12,448 RCTs, 53,699 headlines, mean CTR 1.39%. Each additional negative word: +2.3% CTR for an average-length headline; each positive word: -1.0%. The authors call the effects small.
+- **Gligorić, Lifchits, West, Anderson (2023)**, PLOS ONE 18(3), registered report on linguistic effects in the same archive (existence confirmed; effect sizes not read).
+- **Ye, Yoganarasimhan, Zheng (2025)**, "LOLA: LLM-Assisted Online Learning Algorithm for Content Experiments", Marketing Science 44(5):995-1016, arXiv:2406.02611. 17,681 Upworthy tests; 12,376 train, 3,263 test. Accuracy at naming the highest-CTR headline in a test: random 33.02%, GPT-3.5 zero-shot 29.76%, GPT-4 zero-shot 37.85%, GPT-4 with 5 demonstrations 39.17%, OpenAI 256-d embedding + linear 46.28%, 3072-d + MLP 45.17%, LoRA fine-tuned Llama-3-8B 46.86% (arXiv v3 tables). An earlier arXiv version reported higher figures (about 82 to 84%) on pairs restricted to significantly different CTRs; the two are different tasks and should not be mixed. The practical conclusion in the paper: use the model as a prior and let a bandit on real traffic decide.
+- **Berger and Milkman (2012)**, J. Marketing Research 49(2):192-205, DOI 10.1509/jmr.10.0353. New York Times most-emailed list: high-arousal emotions (awe, anger, anxiety) go with more sharing, sadness with less, after controls for placement. Observational on one outlet, with supporting lab experiments. Note the tension with Robertson: for clicks, sadness words helped; for emailing, sadness hurt. "Success" is not one thing; the outcome (click, share, fund, buy, be copied) changes which features win.
+- **A blunt structural point.** Every clean randomised dataset I found holds the idea fixed and varies its packaging (headline, title, wording). None randomises the idea itself. A science of which memes succeed needs either packaging memes accepted as memes (curiosity gap, negativity, direct question) or new experiments that randomise content.
+
+### 3. Books, films, songs, crowdfunding
+
+- **Novels.** Ashok, Feng, Choi (2013), EMNLP, D13-1181. About 800 Project Gutenberg novels; press reports give 84% accuracy from style features. Success was download counts over about 30 days, and the corpus is small. I did not confirm the 84% in the paper itself. Weak evidence for anything about sales.
+- **Book sales.** Wang, Yucesoy, Varol, Eliassi-Rad, Barabasi (2019), EPJ Data Science 8:31. Pre-publication sales prediction; the publishing house is the strongest feature across genres, then author history and visibility. Content is not the driver.
+- **Story shape.** Toubia, Berger, Eliashberg (2021), PNAS, DOI 10.1073/pnas.2011695118 (Crossref confirmed; findings not re-read).
+- **Songs.** Interiano et al. (2018), Royal Society Open Science (PMC5990848). More than 500,000 UK songs 1985 to 2015; press reports 85 to 86% accuracy with acoustic features plus a "superstar" variable. Fewer than 4% of songs charted, so always guessing "flop" scores above 96%; accuracy is the wrong metric here. Pachet and Roy (2008), "Hit song science is not yet a science": `[UNVERIFIED]`, not found in this session.
+- **Kickstarter.** Mitra and Gilbert (2014), CSCW: 45K projects, 20K phrases, 59 controls; the abstract credits the language with 58.56% of the variance around funding success (a variance figure, not a forecast accuracy; I did not check how it was cross-validated). Etter, Grossglauser, Thiran (2013), COSN, "Launch hard or go home": above 76% accuracy four hours after launch using early money and social signals, against a 68% earlier baseline. Again the early-trajectory signal beats content.
+- **Novelty and combination.** Uzzi, Mukherjee, Stringer, Jones (2013), Science 342:468-472, DOI 10.1126/science.1240474: across 17.9 million papers the highest-impact work is mostly conventional combinations plus a small dose of atypical ones. Sreenivasan (2013), Scientific Reports 3:2758, arXiv:1304.0786: film novelty scored from IMDb crowd keywords relates to revenue as an inverted U. These are the direct ancestors of "forecast a new meme combination from the record of its parts", and Sreenivasan's keyword version is the rival a neuron version must beat.
+
+### 4. Neuroforecasting
+
+- **Genevsky, Yoon, Knutson (2017)**, J. Neuroscience, "When brain beats behavior" (PMC5588458). 30 subjects, 36 Kickstarter documentary projects (18 funded). Out-of-sample classification of real funding: behavioural model 52.9% (not above chance), targeted neural model 59.1% (p = 0.008), whole-brain 67%. Replication (32 subjects, 36 projects, 14 funded): 55.8% against 61.1%. Only nucleus accumbens activity was significantly associated with market outcomes.
+- **Scholz, Baek, O'Donnell, Kim, Cappella, Falk (2017)**, PNAS 114:2881-2886 (PMC5358393). Two samples (41 and 39), 80 New York Times health articles, 117,611 real shares. Value-system activity predicted population sharing beyond article features and self-reported intentions.
+- **Tong, Acikalin, Genevsky, Shiv, Knutson (2020)**, PNAS. 36 people; activity at video onset forecast YouTube views per day where self-report did not.
+- Berns and Moore, "A neural predictor of cultural popularity" (Crossref finds the SSRN version, DOI 10.2139/ssrn.1742971; journal details not confirmed). Falk et al. 2012 "neural focus group": `[UNVERIFIED]`.
+- **Assessment.** Item sets are 36 to 80, subjects 30 to 40, gains are single-digit points, and the work comes from two connected groups. No large pre-registered multi-lab replication was found. Treat "brain beats behaviour" as plausible and unproven at scale. The useful transfer is methodological: test whether an internal signal adds forecast accuracy beyond the system's own stated judgement and beyond stimulus features. For language models the LOLA numbers already show a version of this (representations 46% against verbal zero-shot 38%), but there the "internal signal" is just the embedding, which is the rival.
+
+### 5. LLMs as predictors of human response
+
+- **Hewitt, Ashokkumar, Ghezae, Willer (2024)**, working paper. 70 pre-registered US survey experiments (476 effects, 105,165 participants in the August 2024 version; a later listing gives 469 and 119,330). GPT-4 simulated samples: r = 0.85 with measured effects, 0.90 for studies unpublished at the training cut-off. Predictions overestimate effect sizes. On 15 megastudies (606 effects) correlations were lower, comparable to pooled expert forecasters. I could not confirm a journal version.
+- arXiv:2606.17165 (2026), "Statistical foundations of LLM-based A/B testing: a surrogacy framework": argues human pilots are needed to calibrate LLM outcomes, using Upworthy (seen in search results; not read).
+- **Sparse features for prediction.** Movva, Peng, Garg, Kleinberg, Pierson (2025), "Sparse autoencoders for hypothesis generation" (HypotheSAEs), ICML, arXiv:2502.04382: SAE trained on text embeddings, select features predictive of the target, have an LLM name them; 45 of 60 generated hypotheses significant against at most 24 for baselines, including headline engagement. Kantamneni, Engels, Rajamanoharan, Tegmark, Nanda (2025), "Are sparse autoencoders useful?", ICML, arXiv:2502.16681: SAE probes underperform plain logistic regression on activations on average across four hard regimes. Together: sparse units help you say why, and do not help you predict better.
+- I found no paper that puts language-model neurons or SAE features against embeddings on a randomised success dataset such as Upworthy. That is an open slot.
+
+### 6. Directed evolution with LLMs
+
+- Promptbreeder (Fernando et al. 2023, arXiv:2309.16797): population of prompts, LLM-driven mutation, fitness on a training set, and the mutation prompts evolve too.
+- Evolution through Large Models (Lehman et al. 2022, arXiv:2206.08896) and MAP-Elites (Mouret and Clune 2015, arXiv:1504.04909): LLM as mutation operator; keep the best item per cell of a behaviour grid.
+- QDAIF (Bradley et al. 2023, arXiv:2310.13032, ICLR 2024): an LLM both mutates and scores quality and diversity for stories, poems and opinion pieces; the authors flag reward hacking of the LLM judge and the need to fix diversity axes in advance.
+- FunSearch (Romera-Paredes et al., Nature, DOI 10.1038/s41586-023-06924-6) and AlphaEvolve (Novikov et al. 2025, arXiv:2506.13131): evolutionary search over programs with an automatic evaluator; "the primary limitation is the requirement for an automated evaluator."
+- **Transfer to memes.** The loop is ready; the fitness function is not. An LLM judge predicts headline winners at 38 to 47% in a three-way task, so evolving against it mostly optimises the judge's taste. The workable pattern is LOLA's: model as prior, real human responses as the arbiter, small batches.
+
+### 7. Ethical limits on optimising persuasion
+
+- **Optimising persuasion costs accuracy.** Hackenburg et al. (2025), "The levers of political persuasion with conversational AI", Science, arXiv:2507.13919: about 77,000 UK participants, 19 models, 707 issues. Post-training raised persuasiveness by up to 51% and prompting by up to 27%, more than personalisation or scale, and the same methods lowered the factual accuracy of claims.
+- **Covert field tests are out.** University of Zurich researchers ran undisclosed AI accounts on r/changemyview from November 2024 to March 2025, inferring users' attributes to personalise replies. Moderators called it unauthorised manipulation, Reddit threatened legal action, and the university issued a formal warning (news reports; draft-paper figures of three to six times the human persuasion rate are unreviewed). Salvi et al. (2025), Nature Human Behaviour, DOI 10.1038/s41562-025-02194-6, is the consented lab counterpart (Crossref confirmed; numbers not read).
+- **Law.** EU AI Act Article 5(1)(a), applicable since 2 February 2025, bans AI that uses subliminal, manipulative or deceptive techniques to materially distort behaviour with likely significant harm. Ordinary lawful persuasion is outside it; the line is deception, exploited vulnerability and harm.
+- **The Upworthy lesson.** Optimising click-through selected negativity. A meme optimiser pointed at raw engagement will rediscover outrage and curiosity bait.
+- **Working rules for this programme.** Consented, paid panels or platform-sanctioned tests only; fiction and entertainment content, no political, health or financial claims; no targeting on inferred personal traits; an outcome that is not raw clicks (informed preference after reading, willingness to recommend); disclosure of AI authorship and a debrief; pre-registration and publication of nulls; a stop rule if the loop drifts toward deception or negativity.
+
+### 8. What the Batman study already says about fitness
+
+- `study/results/experiments.json`, `qwen3-8b.E3.primary`: rho = 0.254, one-sided p = 0.352, n_early = 15, n_later = 9. `llama3.1-8b.E3.primary`: rho = 0.004, p = 0.585; only 8 of 15 jackknife estimates positive.
+- Same file, `E3.original_text`: rho = -0.321 (Qwen) and -0.500 (Llama). `E3.with_adapted`: 0.382 and 0.164, neither significant.
+- Same file, `E3_power_simulated`: power 0.2725 at true rho 0.3 and 0.543 at rho 0.5 (n = 15).
+- The fitness proxy is the `monthly_views` field in that file (a present-day popularity count per work). It is measured decades after release, is shared by every meme in a work, and cannot separate a meme's contribution from the work's fame. This is the Martin et al. problem in miniature: work-level metadata swamps content.
+- `study/README.md` reports that plain word overlap matched neurons on heredity (TF-IDF 11%, word presence 17%, neurons 16% and 10% of eligible comics beating the documented source). Any fitness test inherits that rival.
+
+## What this means for P1 and P2
+
+**P1 (a meme is a neuron pattern).** The fitness literature does not test P1. It sets the bar a unit must clear to be useful for a science of selection: (a) add out-of-sample predictive power over word features, embeddings and an LLM reading the text, inside a design that fixes author, outlet and timing; or (b) give a handle that can be switched on and off in generated variants with a measurable effect on real responses. On (a) the prior is unfavourable: fine-tuned LLMs tie embeddings on Upworthy, SAE probes lose to plain probes, and in the study word overlap tied neurons. On (b) nothing has been tried. The honest claim today is that neuron units might explain success in a form people can read and manipulate; there is no evidence they predict it better.
+
+Conditions under which P1 could pay off for fitness: large item counts (thousands), randomised or within-author comparisons, outcomes close to the content (choice between two premises, not box office), and memes whose units survive rewording (the study found 11 of 31 in Qwen and 9 in Llama, four in both, per `study/README.md`).
+
+**P2 (the measurement transfers across models).** Fitness gives P2 a sharp functional test that tree correlations do not: if a meme has a fitness coefficient, the coefficient should survive translation to another model's matching units and still predict held-out outcomes. The study's own cross-model result is a warning: twin units correlate at a median 0.82 on original text and fall to 0.14 with names removed, no better than random units (`study/README.md`; the README attributes these nulls to `study/results/robustness/nulls.json`, which I did not open). If fitness weights transfer only through name and word detectors, P2 holds for vocabulary and fails for memes.
+
+## Experiment seeds
+
+1. **Upworthy head-to-head: do neuron-meme profiles add anything?**
+   - Question: within a randomised headline test, does the difference in neuron-meme profile between arms predict the difference in click-through beyond cheap text features?
+   - Data: Upworthy Research Archive, unflagged tests only (drop the 7,004 flagged in the 2024 correction); headline-only variation; fit on the exploratory portion, report once on the confirmatory portion.
+   - Method: nested models on arm-difference features: length and position metadata; plus TF-IDF and word presence; plus sentence embedding; plus neuron-meme profile (Qwen3-8B and Llama 3.1 8B). Report three-way winner accuracy (to compare with LOLA) and pairwise log loss.
+   - Rival to beat: embedding + linear (46.28%), fine-tuned Llama-3-8B (46.86%), GPT-4 zero-shot (37.85%), TF-IDF difference.
+   - Falsifier: neuron profile adds less than 1 point of accuracy, or no log-loss gain with a confidence interval excluding zero, over embeddings + TF-IDF on the confirmatory set.
+   - Cost: about 150K short headlines through two 8B models; hours on one machine; no human data to buy.
+
+2. **Readable hypotheses: neuron memes against SAE-on-embedding features.**
+   - Question: do named neuron memes yield more headline hypotheses that replicate out of sample than HypotheSAEs features or LLM-proposed hypotheses?
+   - Data: same Upworthy split.
+   - Method: select the top k units by held-in association with click-through, label blind, pre-register each as a directional hypothesis, test on held-out tests. Count how many replicate.
+   - Rival: HypotheSAEs (45 of 60 significant on their tasks), word lists (negative words: +2.3% per word), an LLM asked to propose hypotheses from 200 example pairs.
+   - Falsifier: fewer replicated hypotheses per 60 than HypotheSAEs, or the replicated ones reduce to single words.
+   - Cost: low; reuses seed 1 activations.
+
+3. **Track record of a meme combination.**
+   - Question: can the promise of a new combination of memes be forecast from how earlier works carrying the same memes performed?
+   - Data: several thousand films with plot summaries, release years, budgets, studios, franchise flags and an outcome (revenue or rating); rolling time split.
+   - Method: residualise the outcome on metadata. For each meme compute the mean residual of earlier works carrying it; for each pair compute pair record and pair novelty (observed against expected co-occurrence, after Uzzi). Predict later residuals from single-meme records, pair records and novelty with a quadratic term. Null: shuffle outcomes within year and genre to see what drift alone produces.
+   - Rival: the same pipeline on IMDb crowd keywords (Sreenivasan), on TF-IDF terms, the mean residual of the 20 nearest earlier works by sentence embedding, and an LLM reading the summary and guessing.
+   - Falsifier: neuron-meme records add no out-of-sample R² over embedding nearest neighbours plus metadata; or pair terms add nothing over single-meme terms (then combinations are not the unit).
+   - Cost: a day of compute for a few thousand summaries; data assembly is the main work. Expect metadata to take most of the variance.
+
+4. **Causal mutation test with real responses.**
+   - Question: when one meme is added to or removed from an otherwise matched text, does real preference move, and did any method forecast the direction and size?
+   - Data: about 200 base story premises; variants generated to add or remove one of 10 to 20 memes with rewording-robust units; consented paid panel.
+   - Method: manipulation checks (target unit fires, blind raters confirm the meme, length and reading level matched, embedding shift small). Randomised paired forced choice ("which would you read next?") plus a continue-reading measure. Mixed model with base-item and rater effects. Before data collection, record forecasts of every variant effect from each method. Pre-register.
+   - Rival: forecasts from an LLM reading both variants (Hewitt-style simulated sample), from an embedding model trained on seed 1 or 3, from word-level sentiment, and from human forecasters.
+   - Falsifier: neuron-based forecasts correlate with measured effects no better than the LLM-reading forecasts; or manipulated memes show no effect at 90% power for a 3-point shift in choice share.
+   - Cost: roughly 20,000 to 40,000 paired judgments, a few thousand dollars on a panel (rough estimate). Forced choice is used because click outcomes need thousands of impressions per arm (Upworthy averaged about 3,570).
+
+5. **Directed evolution in meme space.**
+   - Question: at an equal budget of human judgments, does quality-diversity search over neuron-defined meme combinations reach higher human-rated appeal than simpler loops?
+   - Data: seed premises from seed 4; the same panel.
+   - Method: MAP-Elites grid whose cells are meme combinations; an LLM proposes mutations; a surrogate from seeds 1 to 4 ranks candidates; a bandit spends human judgments on the top few per generation (LOLA pattern). Final blind human tournament.
+   - Rival: one-shot "make this more appealing" LLM rewrite; QDAIF with LLM-judged axes; the same loop with embedding-cluster cells; random mutation with the same human budget.
+   - Falsifier: no advantage in the final tournament at equal human budget, or gains that vanish when judged by a fresh panel (judge overfitting).
+   - Cost: LLM calls are cheap; 5,000 to 10,000 human judgments. Ethics rules in section 7 apply; fiction only.
+
+6. **Does fitness transfer across models? (P2)**
+   - Question: do meme-to-success weights learned on Qwen units predict held-out outcomes when carried to Llama through matched units?
+   - Data: seed 1 activations and split.
+   - Method: fit weights in model A, map units to model B by activation correlation on a separate corpus, score held-out tests in B without refitting. Compare with mapping through random units and through word-matched units.
+   - Rival: a linear map between the two models' embeddings; refitting from scratch in B on 10% of the data; TF-IDF weights, which transfer for free.
+   - Falsifier: transferred weights do no better than random-unit mapping, or only name and word detectors carry the transfer.
+   - Cost: negligible beyond seed 1.
+
+## Key sources
+
+| Citation | URL / DOI | Why it matters | Priority |
+| --- | --- | --- | --- |
+| Martin, Hofman, Sharma, Anderson, Watts 2016, Exploring limits to prediction in complex social systems | arXiv:1602.01013 | R² 0.42 ceiling; content features under 0.05 | A |
+| Ye, Yoganarasimhan, Zheng 2025, LOLA | arXiv:2406.02611 | Baseline accuracies for LLM, embedding and fine-tuned models on Upworthy | A |
+| Matias et al. 2021, Upworthy Research Archive (+ 2024 correction) | DOI 10.1038/s41597-021-00934-7; PMC11239857 | The randomised dataset; 22% of tests flagged | A |
+| Tan, Lee, Pang 2014, The effect of wording on message propagation | arXiv:1405.1438 | Controlled paired design; 61.3% human, 65.6% model | A |
+| Salganik, Dodds, Watts 2006, MusicLab | DOI 10.1126/science.1121066 | Experimental proof of path dependence | A |
+| Hewitt, Ashokkumar, Ghezae, Willer 2024, Predicting results of social science experiments using LLMs | https://ai4pb.stanford.edu/projects/predicting-results-of-social-science-experiments-using-large-language-models | r = 0.85 for survey effects; the LLM-reader rival | A |
+| Kantamneni et al. 2025, Are sparse autoencoders useful? | arXiv:2502.16681 | Sparse features do not out-predict plain probes | A |
+| Movva et al. 2025, Sparse autoencoders for hypothesis generation | arXiv:2502.04382 | Sparse features as readable hypotheses on headlines | A |
+| Hackenburg et al. 2025, The levers of political persuasion with conversational AI | arXiv:2507.13919 | Persuasion optimisation lowers accuracy | A |
+| Robertson et al. 2023, Negativity drives online news consumption | https://pmc.ncbi.nlm.nih.gov/articles/PMC10202797/ | Effect sizes on Upworthy; what click optimisation selects | B |
+| Genevsky, Yoon, Knutson 2017, When brain beats behavior | https://pmc.ncbi.nlm.nih.gov/articles/PMC5588458/ | Internal signal beats stated choice: 59% against 53% | B |
+| Scholz et al. 2017, A neural model of valuation and information virality | https://pmc.ncbi.nlm.nih.gov/articles/PMC5358393 | Neural forecast of article sharing | B |
+| Novikov et al. 2025, AlphaEvolve | arXiv:2506.13131 | Evolution loop; evaluator is the limit | B |
+| Bradley et al. 2023, Quality-Diversity through AI Feedback | arXiv:2310.13032 | Evolution of creative text; judge reward hacking | B |
+| Fernando et al. 2023, Promptbreeder | arXiv:2309.16797 | Self-referential mutation operators | B |
+| Uzzi et al. 2013, Atypical combinations and scientific impact | DOI 10.1126/science.1240474 | Combination novelty and impact | B |
+| Sreenivasan 2013, Novelty in cinema through crowdsourced keywords | arXiv:1304.0786 | Keyword rival for meme-combination novelty | B |
+| Cheng et al. 2014, Can cascades be predicted? | arXiv:1403.4608 | About 0.8 accuracy, but from early cascade dynamics | B |
+| Wang et al. 2019, Success in books | EPJ Data Science 8:31, https://barabasi.com/media/pub_imports/files/1016.pdf | Publisher beats content | B |
+| Lakkaraju, McAuley, Leskovec 2013, What's in a name? | https://ojs.aaai.org/index.php/ICWSM/article/view/14408 | Same image, different title and community | B |
+| Berger and Milkman 2012, What makes online content viral? | DOI 10.1509/jmr.10.0353 | Arousal and sharing; outcome-dependence | C |
+| Mitra and Gilbert 2014; Etter et al. 2013 (Kickstarter) | https://infoscience.epfl.ch/record/189675/files/etter2013cosn.pdf | Language against early-trajectory signals | C |
+| Ashok, Feng, Choi 2013, Success with style | https://aclanthology.org/D13-1181/ | Often-quoted 84%; weak design | C |
+| Interiano et al. 2018, Musical trends and predictability of success | https://pmc.ncbi.nlm.nih.gov/articles/PMC5990848 | 86% headline with a 4% base rate | C |
+| Tong et al. 2020, Brain activity forecasts video engagement | https://web.stanford.edu/~knutson/nfc/tong20.pdf | Neuroforecasting on YouTube | C |
+| Salvi et al. 2025, On the conversational persuasiveness of GPT-4 | DOI 10.1038/s41562-025-02194-6 | Consented persuasion study | C |
+| EU AI Act Article 5 | https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-5 | Legal line on manipulation | C |
+
+## Fog
+
+- No study found that tests language-model neurons or SAE features against embeddings on a randomised success dataset. The slot is open; the prior from adjacent work is a tie.
+- No randomised dataset found that varies the idea and not the packaging. Seed 4 would have to create it.
+- Numbers not confirmed in primary text: Cheng et al. accuracy (slides only); Lakkaraju et al. model fit; Fragile Families R²; Ashok et al. 84% and Interiano et al. 86% (press reports); Hewitt et al. journal status and megastudy correlations; Salvi et al. effect sizes; Zurich draft-paper persuasion rates.
+- Not found or not checked: Pachet and Roy 2008; Falk et al. 2012; Berns and Moore journal version; findings of Toubia et al. 2021 and Gligorić et al. 2023.
+- The Upworthy archive's exploratory, confirmatory and holdout partition sizes, and whether arms can differ in image as well as headline, are from memory `[UNVERIFIED]`; check the archive documentation before designing seed 1.
+- Neuroforecasting: no large pre-registered replication found. Unknown whether the effect survives with hundreds of items.
+- Whether the name-free, rewording-robust units in the study are numerous enough to span a useful meme space for seeds 4 and 5 (four units pass in both models per `study/README.md`).
+- How to define success for a meme as distinct from a work. Every dataset here scores works or messages; attributing a share to each meme is a modelling choice with no agreed method.
+- Panel costs in seeds 4 and 5 are rough guesses, not quotes.
