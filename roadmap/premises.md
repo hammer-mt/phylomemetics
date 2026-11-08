@@ -63,14 +63,14 @@ Where "one neuron, one job" is best supported: the hidden neurons of the MLP blo
 | Level | Verdict | Evidence |
 | --- | --- | --- |
 | Same geometry: models agree on which texts are alike | True, and cheap | Qwen and Llama distance matrices correlate at 0.98, but random neurons give 0.90 to 0.93 and two word methods agree at 0.92 (`nulls.json`). In the literature, local neighbourhoods agree; a single shared global geometry is disputed (Gröger et al. 2026, arXiv:2602.14486; Koepke et al. 2026, arXiv:2604.18572) |
-| Same features or directions, with a learned map | Partly true | Between 20% and 49% of dictionary features match across models in published work (Lan et al. 2024, arXiv:2410.06981; Agarwal 2026, arXiv:2608.05164, unreviewed). A joint dictionary has been trained on this project's exact pair (Jiralerspong and Bricken 2026, arXiv:2602.11729). The instrument is shaky: sparse autoencoders share about 30% of features across random seeds (Paulo and Belrose 2025, arXiv:2501.16615) |
+| Same features or directions, with a learned map | Partly true | In one study of 7B models, about half of matched feature pairs pass a correlation of 0.6 (Agarwal 2026, arXiv:2608.05164). An earlier study within model families kept 10 to 30% of pairs after a looser filter (Lan et al. 2024, arXiv:2410.06981). Neither is peer reviewed. A joint dictionary has been trained on this project's exact pair (Jiralerspong and Bricken 2026, arXiv:2602.11729). The instrument is shaky: in the worst reported case, sparse autoencoders share about 30% of features across random seeds (Paulo and Belrose 2025, arXiv:2501.16615) |
 | Same individual neurons | Mostly false | 1.2% to 4.2% of GPT-2 neurons are universal across retrainings of the same architecture, and the authors conclude neurons are not the right unit (Gurnee et al. 2024, arXiv:2401.12181). Here the median twin correlation over all 14,843 families is 0.40 against 0.36 for random units (`phylo.json.gz`) |
 
 What the three cited papers show:
 
 - Gurnee et al. is evidence against P2 at the neuron level.
 - Huh et al. (the platonic representation hypothesis) is about distances between inputs, not units, and its claim that models converge as they scale has two 2026 rebuttals.
-- Jha et al. (vec2vec) translates the output vectors of small sentence encoders. It does not touch the inside of a chat model. It is also fragile: 3 of 15 runs across model families converged, and each pair took days of GPU time.
+- Jha et al. (vec2vec) translates the output vectors of small sentence encoders. It does not touch the inside of a chat model. It is also fragile: for one pair of encoders from different families, 3 of 15 random seeds converged, and each pair took days of GPU time.
 
 What the study found:
 

@@ -226,4 +226,48 @@ Conditions under which the premises could plausibly hold: transmission by retell
 - I found no 2025 or 2026 paper that scores embeddings, sparse-autoencoder features or neurons on an artificial tradition. Absence in a 15-minute search is weak evidence; the Studia Stemmatologica workshops and the SHERBET project (a 2026 slide deck asks for a "golden standard") `[UNVERIFIED]` should be checked. (Check: no URL was given for the SHERBET deck and the check had no web search left to find it.)
 - Whether human retelling chains with branching and public texts already exist at useful scale (Breithaupt's lab is the most likely source) was not checked. If they do, seed 1 gets much cheaper.
 - An LLM-written tradition read by LLM neurons risks circularity: the writer's habits may be exactly what the reader's neurons detect. The human arm is what makes seed 1 convincing.
-- The critique of folktale phylogenies by Lajoye, d'Huy and Le Quellec (a comment on Tehrani 2013) is known to me but I could not confirm its reference in this session `[UNVERIFIED]`.
+- The critique of folktale phylogenies by Lajoye, d'Huy and Le Quellec (a comment on Tehrani 2013) is known to me but I could not confirm its reference in this session `[UNVERIFIED]`. (Check: still unconfirmed. Crossref and the HAL repository API returned no matching record.)
+
+## Check log
+
+Checked 2026-11-08 by a second agent. Methods: Crossref record for every DOI, arxiv.org abstract page for every arXiv ID, direct fetches of the CASC pages and data headers, the Helsinki stemmatology wiki, the ACL Anthology PDF, PLOS and Europe PMC full text, the Open Stemmata README, and a parse of the two committed result files. Web search was not available to the check (the shared search budget was used up), so nothing here rests on a search summary. No content was deleted.
+
+Confirmed with no change needed:
+- All 36 DOIs in the notes resolve in Crossref to the stated authors, year and title. All 8 arXiv IDs (2206.05603, 2510.18561, 2505.19246, 2210.16577, 2604.11724, 2011.02460, 2407.04503, 2404.04671) match the stated authors, titles and dates.
+- Tehrani 2013, from the PLOS full text: 58 variants, 33 populations, 72 characters, RI 0.72 and 0.76, delta 0.3, Q-residual 0.03, File S2.
+- da Silva and Tehrani 2016, from the Europe PMC full text: 275 tales, 50 populations, D from -2.06 to 3.9, 100 tales with signal, 76 where vertical outweighs horizontal, CC BY 4.0.
+- The Nunn et al. 2010 and Greenhill et al. 2009 quotations match their abstracts word for word. The Spencer et al. 2004 quotations match its abstract.
+- Bortolini et al. 2017: 596 tales and 15 demically transmitted tales are in the abstract. Youngblood et al. 2020: 1,498,483 relationships is in the abstract. Acerbi and Stubbersfield 2023: "five preregistered experiments" is in the abstract.
+- CASC: scoring rule, the "somewhat more than 50%" empty-graph score, the use restriction, the 52 versions and 900 words of the Legend, and all seven rows of the results table.
+- Bennett, Li and Ma: 33 letters, 1980 to 1995, and the "not particularly tree-like" judgement are on the cited blog post.
+- Helsinki wiki: "slightly over a hundred copies of a text (as of May 2015)".
+- Study numbers: 5.444, 5.778, 0.4016, 2.889, 0.0044, 0.9783, 0.8408, the 0.90 to 0.93 floor, 11 of 31, 9 adaptations among 12 comics, 32 works plus 13 relatives, and the 45 by 45 `D` matrices all match `study/results/robustness/nulls.json`, `study/results/phylo.json.gz`, `study/README.md` and `study/paper/paper.md`.
+
+Changes made:
+1. Bottom line, bullet 1: added that the public Parzival release has 16 of the 21 witnesses and that Heinrichi has 37 released witnesses and a 65-node true graph.
+2. Bottom line, bullet 2: added the results-page URL and that 83.7% is an organiser-added row.
+3. Bottom line, bullet 6: replaced the paraphrased Hoenen 2022 quotation with the exact sentence from the abstract and added the URL.
+4. Section 2, Collard et al. 2006: removed `[UNVERIFIED]` from the mean RIs (0.59 and 0.61), now confirmed at second hand through Tehrani 2013.
+5. Section 2, Gray et al. 2010: added one delta value (0.23, Q-residual 0.03) reported by Tehrani 2013.
+6. Section 2, Temkin and Eldredge: added the journal spelling Tëmkin, the title and the volume and pages.
+7. Section 3, Tehrani 2013: added that he attributes the 0.60 threshold to Nunn et al., and that this sits awkwardly with the notes' own reading of Nunn et al.
+8. Section 3, Ross et al. 2013: added the title and the missing DOI (10.1098/rspb.2012.3065); changed "about 700" to 700; changed "confirmed by search" to "abstract read".
+9. Section 3, Bortolini et al. 2017: changed "confirmed by search" to "abstract read" and added "in Eurasia".
+10. Section 3, Berezkin catalogue: marked 2,450 motifs, 945 traditions and 55,000 texts `[UNVERIFIED]`; added the confirmed figures from the Thuillard et al. 2018 abstract (2,264 motifs, about 40,000 myths, 934 peoples).
+11. Section 4, Baret et al. 2006: corrected the pages from 255-283 to 255-281 and added the wiki URL.
+12. Section 4, results table: added the three rows that were on the page but missing; added the later Heinrichi neighbour-joining baseline (67.887%); added the best score per set; flagged "within a few points of the best" as overstated for Notre Besoin.
+13. Section 4, Camps et al.: marked the term "birth-death" `[UNVERIFIED]` and added the loss figures from the 2025 abstract.
+14. Section 4, Open Stemmata: licence confirmed from the README; "about 50 stemmata in 2021" marked `[UNVERIFIED]`.
+15. Section 4, Hoenen 2018: added the title and URL; marked the quotation "an extremely limited testbed" `[UNVERIFIED]` because it is not in the PDF text; added the sentences the paper does contain.
+16. Section 4, Marmerola et al. 2016: changed "text not read" to "abstract read" with what it confirms.
+17. Section 5, Bennett et al.: noted where the count and dates were confirmed.
+18. Section 5, Liben-Nowell and Kleinberg 2008: marked "637 copies" and "nearly 20,000 signatories" `[UNVERIFIED]`; they are not in the abstract and the full text could not be fetched.
+19. Section 5, Savage et al. 2022: replaced "Size not checked" with 10,062 melodies and 328 related pairs.
+20. Section 5, Stubbersfield et al.: added that the paper is 2014 online and 2015 in print.
+21. Section 5, Acerbi and Stubbersfield, PhyloLM: added the model named and the number of models, from the abstracts.
+22. Section 6 table: Parzival (16 released), Notre Besoin (1,035 lines, not about 1,030), Heinrichi (37 released confirmed, 65-node graph, 67 still `[UNVERIFIED]`), Legend (file header), wiki URL, Liben-Nowell and Open Stemmata and Berezkin flags, Ross DOI and count.
+23. Section 7: added that the two result files give different p values for the same ranks (0.0044 against 0.002869 exact for TF-IDF; 0.4053 against 0.4016 exact for memes).
+24. Key sources: added titles and URLs for the arXiv entries, the Ross DOI, the Baret pages, and two rows for the Hoenen papers cited in the text.
+25. Fog: recorded what the check resolved (benchmark sizes, Collard means) and what stays open (the SHERBET deck, the Lajoye, d'Huy and Le Quellec comment).
+
+Still unverified after the check: the Liben-Nowell counts; the Berezkin catalogue totals; the Open Stemmata 2021 count; the Hoenen 2018 "extremely limited testbed" quotation; Heinrichi's 67 copies made; the "birth-death" label for the Camps models; the SHERBET slide deck; the Lajoye, d'Huy and Le Quellec comment. Not re-read, citation only: Howe and Windram 2011, Windram et al. 2008, Roos and Heikkilä 2009 (its conclusions), Karsdorp and van den Bosch beyond the abstract, Temkin and Eldredge, O'Brien et al., Tehrani and Collard 2002, the four human transmission-chain papers, Youngblood 2019, and the definitions in section 1.

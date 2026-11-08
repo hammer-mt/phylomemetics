@@ -138,3 +138,61 @@ In rough order of cost. All assume the existing MLX extraction.
 - Nobody has shown that cross-model-matched features beat a bag of words at a downstream cultural or textual task. That comparison is absent from the universality literature; the Batman study is unusual in having run it.
 - The direction of convergence over time is unsettled: Huh et al. say alignment rises with capability; Koepke et al. say not for newer models. Whether Qwen3 and Llama 3.1 are more or less alike than their predecessors is unknown.
 - Cammarata's "already clean" claim was not examined here for what it says about cross-model stability; that belongs to the P1 notes.
+
+## Check log
+
+Second-pass citation and claim check, 2026-11-08. Method: arXiv API (`id_list`) for every arXiv ID; the papers' own arXiv HTML read as text and searched for each number and quotation; Crossref for the DOI; the OpenReview API, PMLR pages and the CVF open-access page for venues; Anthropic's and Goodfire's own pages; the committed files `study/results/robustness/nulls.json`, `study/results/experiments.json` and `study/paper/paper.md` for study numbers. WebSearch was not available (the session's search budget was already spent), so nothing here rests on a search engine. Scope: 36 sources and about 115 individual claims. Nothing was deleted without being replaced by the corrected statement.
+
+### Existence
+- All 32 arXiv IDs cited resolve, with the titles and first authors the notes give: 2401.12181, 2508.00903, 1511.07543, 2306.09346, 2602.19058, 2410.06981, 2501.16615, 2410.06672, 2502.03714, 2504.02922, 2602.11729, 2609.04344, 2608.05164, 2506.06609, 2503.04429, 2302.03025, 2402.10588, 2501.06346, 2511.10840, 2405.07987, 2602.14486, 2604.18572, 2210.16156, 1905.00414, 2305.06329, 2505.12540, 2510.02348, 1710.04087, 2209.15430, 2106.07682, 1411.5908, 2503.21073.
+- Also confirmed: Lindsey et al. crosscoders note (authors as listed, published 25 October 2024); Anthropic "On the Biology of a Large Language Model" (the quoted sentence is verbatim); Dujmović et al. DOI on Crossref (posted 7 April 2022, four authors as listed); the three PMLR pages (Gröger v306, Oozeer v267, Thasarathan v267); Cammarata's Goodfire essay.
+- No invented citation, author or arXiv ID was found.
+
+### Corrections to wrong or misleading statements
+1. Gröger et al.: "largely loses its scaling trend" was in quotation marks but is not in the paper. Quotation marks removed and the abstract's actual words added.
+2. Agarwal: "mean r 0.512 among validated pairs" was wrong. 0.512 is the mean over all 3,308 extracted pairs; the pass threshold is r of at least 0.60. Reworded; median 0.545 and the 46.9% Gemma tier added; full title added.
+3. Dar (mini-vec2vec): the caveat that "one version needs a small set of paired anchors" was a misreading. That sentence in v4 is about relative representations. Corrected in Findings and Key sources.
+4. Koepke et al.: the quoted sentence ("equally rich representations of the world, just not the same one") is in the v1 and v2 abstracts only; v3 (1 October 2026) dropped it and softened "does not appear to hold for newer models" to "saturates for recent models". Version noted.
+5. Koepke et al.: "13.5% falling to 0.81%" was marked unverified from a news summary. Confirmed from the paper as 0.135 falling to 0.008 (k = 10, WIT-1024 to LAION-15M). Marker removed; the two-decimal 0.81% is not in the paper.
+6. Huh et al.: "about 0.16, from memory" was marked unverified. Confirmed verbatim, with the paper's own open question. Marker removed. Sample size made exact (1,024 WIT pairs, k = 10). Published title is "Position: The Platonic Representation Hypothesis", PMLR 235.
+7. Thasarathan et al.: the 60 to 80% co-firing figure was marked unverified from a secondary summary. It is in the paper (Figure 6b caption) but applies only to the first 200 of the top 1,000 concepts; the body text says 50 to 80% for the first 100. Marker removed and scope corrected.
+8. Ognev et al. (SharedSAE): "Model names not confirmed" replaced with the four models, and the hook depth (about 85%) added because it cuts against the "mid depth" condition. Counterexample also added to condition 3.
+9. Jha et al.: "3 of 15 cross-backbone runs converged" re-scoped in the Bottom line, Findings and Key sources. It is fifteen seeds of one pair (e5 to gtr), against 14 of 15 for a same-backbone pair.
+10. Jha et al.: "Text-to-CLIP: top-1 0.35 one way, 0.72 the other" is the best pair only (granite and CLIP); the other encoders score 0.00 to 0.31 and 0.00 to 0.61. Added. The 10K and 50K data ablation cut only one side (gte); added. The Qwen3 embedder is 4,000M parameters; added.
+11. Lan et al.: the Llama pair is Llama 3-8B-Instruct against Llama 3.1-8B, and its SVCCA 0.3 comes after keeping 7% of feature pairs. "About 20% kept" is the paper's "approximately 10-30% (and typically 20%)". Both fixed. Review status added: rejected at ICLR 2025 under its earlier title and withdrawn from ICLR 2026, so the notes' main feature-level number set is unreviewed.
+12. Level 2 verdict: "about 20% (Lan) to about 49% (Agarwal) at correlation thresholds near 0.6" put two different quantities on one scale. Only Agarwal uses r of at least 0.60; Lan's filter drops correlations below 0.1. Reworded.
+13. Experiment seed 4: the committed per-unit rows cover 71 memes, not 200 (`f2_agreement/per_meme` has 71 entries, ranks 1 to 180). Data and cost lines corrected.
+14. Gurnee et al.: the quotation was cut short; "for most network behaviours" restored. Flag added that 1253/98,304 is 1.27% while the paper prints 1.23% (both are the paper's own figures).
+15. Oozeer et al.: scope added. Models are 0.5B to 3B and instruction-tuned, and the emphasis is small-to-large within a family.
+16. Cui et al.: the headline result (more than half of top-activated units shared between an LLM and a vision-language model on the same language backbone) added, so the "non-negligible proportion" quote is not read as the main finding.
+17. Minder et al. and Jiralerspong and Bricken: the "prior toward shared features" finding is credited by the paper to Mishra-Sharma et al. 2025; attribution added.
+18. Study section references: "`study/paper/paper.md`, section 2" made specific (2.2 for units and pooling, 2.4 for the twin definition) in four places.
+19. Bottom line: the 30% SAE seed overlap is the worst reported case; caveat added. Paulo and Belrose's SAE was trained on an MLP output; added.
+20. Mapping method F: "the test Cammarata's paper treats as decisive" annotated. The essay does use steering as its direct test of a neuron's label; "decisive" is the notes' word.
+
+### Marked `[UNVERIFIED]` in this pass, or still unconfirmed
+- Nandan et al.: that ablating universal neurons hurts loss more per neuron than other neurons. The abstract confirms a significant loss impact only.
+- Mishra-Sharma et al. 2025 (cited inside Jiralerspong and Bricken): not looked up.
+- Oozeer et al.: how well the cross-family transfers in their section 5 work.
+- Qwen3-8B residual width of 4,096: not checked against a config. Llama 3.1 8B at 4,096 is confirmed.
+- Released weights for the Qwen3-8B / Llama-3.1-8B-Instruct crosscoder: the paper says training code is on GitHub; weights not confirmed.
+- Shared-latent fraction in Anthropic's crosscoder note, and the count of Rosetta neurons: still unconfirmed, as the Fog already says.
+- Wendler et al., Brinkmann et al. and Harrasse et al.: existence and topic confirmed; their findings were not read.
+- Oddity, not resolved: arXiv:2608.05164 (Agarwal) carries an August 2026 identifier but the arXiv API gives its v1 date as 26 May 2026. The entry exists and its text matches the notes; the gap may be a long moderation hold.
+
+### Confirmed without change
+- Gurnee et al.: 1.23%, 1.26%, 4.16%; 1253 of 98,304; "no principled threshold"; 100M tokens of the Pile test set; five seeds; random-rotation baseline; the tokenisation remark; TMLR 2024.
+- Jha et al.: cosine up to 0.92; top-1 up to 100% on 8,192; e5 to gtr cosine 0.74 and top-1 0.82; 1M embeddings; 1 to 7 days per pair; 20 days for the Qwen pair; about 176 GPU days; MIMIC cosine 0.66 to 0.82 with top-1 0.01; encoder sizes.
+- Gröger et al.: ICML 2026, PMLR 306; width, depth and best-layer-pair inflation; permutation calibration over the selection step; local neighbourhoods survive.
+- Jiralerspong and Bricken: Qwen3-8B and Llama-3.1-8B-Instruct; 5% exclusive partition; Chinese Communist Party alignment and American exceptionalism features.
+- Paulo and Belrose: 131K latents, Llama 3 8B, 30%; TopK less stable than ReLU with L1; ICLR 2026 poster.
+- Lan et al.: SVCCA 0.70 against 0.009; RSA 0.195; emotions 0.83 against 0.15; "cannot do this consistently"; same-tokenizer limit; middle layers best; 2 to 4% for custom SAEs.
+- Agarwal: the five models; about 50% depth; 45.5%, 48.9%, 29.9 to 33.3%; CCA with 64 components then Procrustes, 0.895 to 0.956; 71.0% against 65.3 to 68.0%, p = 0.14; shared corpus and no disjoint-corpus control.
+- Ognev et al.: 96.6% and 1.8 times. Chen et al.: within-family pairs, 50% cheaper SAE training, semantic features polarised, NeurIPS 2025. Wang et al.: ICLR 2025. Dravid et al.: ICCV 2023, the eight models. Davari et al.: ICLR 2023. Moschella et al.: ICLR 2023 top 5%. Chughtai et al.: "mixed evidence for universality".
+- Study numbers: every figure quoted from `nulls.json` (`f2_agreement/sets` top33, top200, labelled_concept; `f2_trees`; `f3_wording/revenge_units_corpus_r`) matches the file to the stated rounding, including 0.8236, 0.4016, 0.8608, 0.048 with 25 of 33 and p = 0.0074, 0.8548, 0.1414, 0.3297, 0.5556, 0.6364, 0.4074, 0.5728, 0.1423, 0.4408, 0.6207, 0.4584 with 20 of 27 and p = 0.001, 0.3426, 0.3773, 0.9783, 0.8999 to 0.9276, 0.924, 0.9243, 0.8236 to 0.8784 and 0.3871. The `paper.md` quotations (sections 1, 2.2, 2.4, 3.3) are verbatim, Table 2 gives p = 0.09 to 0.25 for Qwen, and `experiments.json` has `qwen3-8b/E2/residual_test_beyond_words`. The unit-count arithmetic (36 x 12,288 x 2 and 32 x 14,336 x 2) is right.
+
+### Metadata added
+- Venues, full titles, author lists and URLs added to Findings and Key sources for Gurnee, Jha, Huh, Gröger, Koepke, Paulo, Lan, Chen, Ognev, Oozeer, Minder, Dujmović, Dar, Wang, Dravid, Li, Chughtai, Bansal, Kornblith, Klabunde, Moschella, Lenc and Vedaldi, Lee, Nandan, Cui, Davari, Conneau, and the grouped C entries.
+
+### Effect on the conclusions
+None of the corrections reverses a verdict. Three sharpen them: the feature-level "20 to 49%" range rests on one unreviewed same-family paper and one single-author preprint measuring different things; the vec2vec fragility is on one tested pair but is backed by the CLIP and out-of-distribution tables; and the one cross-family shared dictionary with strong numbers (SharedSAE) is at 1B scale and 85% depth, not 8B and mid depth.
