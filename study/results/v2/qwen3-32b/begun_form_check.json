@@ -1,0 +1,3374 @@
+{
+ "model": "qwen3-32b",
+ "rule": "a prefix is used if at least 62 of the 69 ordinary films' replies begin with a name: exactly one space after the prefix and then a name (begins_with_name_after_prefix in v2/analysis/causal.py)",
+ "prefix_chosen": "Answer:",
+ "decided": true,
+ "checks": [
+  {
+   "prefix": "Hero:",
+   "n_films": 69,
+   "replies_that_begin_with_a_name": 48,
+   "needed": 62,
+   "passes": false,
+   "prompt_tail_tokens": [
+    ".",
+    "<|im_end|>",
+    "\n",
+    "<|im_start|>",
+    "assistant",
+    "\n",
+    "<think>",
+    "\n\n",
+    "</think>",
+    "\n\n",
+    "Hero",
+    ":"
+   ],
+   "replies_as_written": {
+    "Titanic": " Rose",
+    "Forrest Gump": " **Forest Gump**",
+    "Toy Story": " Woody",
+    "Finding Nemo": " Nemo",
+    "The Godfather": " Tony Soprano",
+    "Jaws": " **Brody**",
+    "Casablanca": " Rick",
+    "Pride & Prejudice": " Mr. Darcy",
+    "Jurassic Park": " Ian Malcolm",
+    "The Lion King": " Simba",
+    "Back to the Future": " Marty McFly",
+    "E.T. the Extra-Terrestrial": " E.T.",
+    "The Shawshank Redemption": " Andy Dufresne",
+    "Groundhog Day": " **Phil Connors**",
+    "Mean Girls": " **Gossip Girl**",
+    "The Notebook": " Rhett Butler",
+    "Up": " Carl Fredricksen",
+    "Frozen": " Elsa",
+    "Gravity": " **Chris** (from *Gravity*)",
+    "The Martian": " Mark Watney",
+    "Alien": " Ellen Ripley",
+    "Rocky": " Rocky Balboa",
+    "Home Alone": " Max",
+    "Ratatouille": " Remy",
+    "Mamma Mia!": " Bridget Jones",
+    "La La Land": " Rachel McGuire",
+    "Gone Girl": " **Hannibal Lecter**",
+    "The Silence of the Lambs": " **Silence of the Lambs**",
+    "Fargo": " **Michael** (from *The Godfather*)",
+    "Chinatown": " Sam Spade",
+    "Heat": " **Jack** (from *Jack the Ripper*) is",
+    "Die Hard": " John McClane",
+    "Raiders of the Lost Ark": " Indiana Jones",
+    "The Wizard of Oz": " Dorothy",
+    "Singin' in the Rain": " Al Jolson",
+    "Some Like It Hot": " **Mack**",
+    "The Sound of Music": " Maria von Trapp",
+    "Psycho": " **Hitchcock**",
+    "Rear Window": " **Lars Thorwald**",
+    "Vertigo": " **Philip Marlowe**",
+    "2001: A Space Odyssey": " David Bowman",
+    "Star Wars": " Luke Skywalker",
+    "The Matrix": " **Neo**",
+    "Inception": " **Cobb**",
+    "Ghostbusters": " Ghostbusters",
+    "Notting Hill": " Mr. Darcy",
+    "The Devil Wears Prada": " Carrie Bradshaw",
+    "Legally Blonde": " Elle Woods",
+    "Mrs. Doubtfire": " Bob Belcher",
+    "Big": " **Hutch**",
+    "Shrek": " Shrek",
+    "Spirited Away": " Chihiro",
+    "Parasite": " Kim Bok-dong (from the Korean web novel and",
+    "Knives Out": " **Veronica Mars**",
+    "Get Out": " **Cicero**",
+    "Little Miss Sunshine": " Homer Simpson",
+    "The Social Network": " Mark Zuckerberg",
+    "The Grand Budapest Hotel": " Raskolnikov",
+    "Mad Max: Fury Road": " **Mad Max**",
+    "Interstellar": " **Cooper**",
+    "Saving Private Ryan": " James Bradley",
+    "The Exorcist": " Father Lankester Merrin",
+    "The Shining": " Jack Torrance",
+    "Goodfellas": " Tony Montana",
+    "Taxi Driver": " Travis Bickle",
+    "Moonlight": " **Homer Simpson**",
+    "Lost in Translation": " Rick Blaine",
+    "Babe": " Babe",
+    "The Princess Bride": " Westley"
+   },
+   "begins_with_a_name": {
+    "Titanic": true,
+    "Forrest Gump": false,
+    "Toy Story": true,
+    "Finding Nemo": true,
+    "The Godfather": true,
+    "Jaws": false,
+    "Casablanca": true,
+    "Pride & Prejudice": true,
+    "Jurassic Park": true,
+    "The Lion King": true,
+    "Back to the Future": true,
+    "E.T. the Extra-Terrestrial": true,
+    "The Shawshank Redemption": true,
+    "Groundhog Day": false,
+    "Mean Girls": false,
+    "The Notebook": true,
+    "Up": true,
+    "Frozen": true,
+    "Gravity": false,
+    "The Martian": true,
+    "Alien": true,
+    "Rocky": true,
+    "Home Alone": true,
+    "Ratatouille": true,
+    "Mamma Mia!": true,
+    "La La Land": true,
+    "Gone Girl": false,
+    "The Silence of the Lambs": false,
+    "Fargo": false,
+    "Chinatown": true,
+    "Heat": false,
+    "Die Hard": true,
+    "Raiders of the Lost Ark": true,
+    "The Wizard of Oz": true,
+    "Singin' in the Rain": true,
+    "Some Like It Hot": false,
+    "The Sound of Music": true,
+    "Psycho": false,
+    "Rear Window": false,
+    "Vertigo": false,
+    "2001: A Space Odyssey": true,
+    "Star Wars": true,
+    "The Matrix": false,
+    "Inception": false,
+    "Ghostbusters": true,
+    "Notting Hill": true,
+    "The Devil Wears Prada": true,
+    "Legally Blonde": true,
+    "Mrs. Doubtfire": true,
+    "Big": false,
+    "Shrek": true,
+    "Spirited Away": true,
+    "Parasite": true,
+    "Knives Out": false,
+    "Get Out": false,
+    "Little Miss Sunshine": true,
+    "The Social Network": true,
+    "The Grand Budapest Hotel": true,
+    "Mad Max: Fury Road": false,
+    "Interstellar": false,
+    "Saving Private Ryan": true,
+    "The Exorcist": true,
+    "The Shining": true,
+    "Goodfellas": true,
+    "Taxi Driver": true,
+    "Moonlight": false,
+    "Lost in Translation": true,
+    "Babe": true,
+    "The Princess Bride": true
+   },
+   "next_tokens": {
+    "Titanic": [
+     [
+      " Rose",
+      -0.5619
+     ],
+     [
+      " Jack",
+      -0.9369
+     ],
+     [
+      " **",
+      -3.9369
+     ],
+     [
+      " Titanic",
+      -4.1869
+     ],
+     [
+      " Leonardo",
+      -6.8119
+     ]
+    ],
+    "Forrest Gump": [
+     [
+      " **",
+      -0.3201
+     ],
+     [
+      " Rocky",
+      -1.6951
+     ],
+     [
+      " Forrest",
+      -3.8201
+     ],
+     [
+      " Ray",
+      -4.1951
+     ],
+     [
+      " Jimmy",
+      -4.9451
+     ]
+    ],
+    "Toy Story": [
+     [
+      " Woody",
+      -0.8134
+     ],
+     [
+      " **",
+      -1.0634
+     ],
+     [
+      " Buzz",
+      -1.8134
+     ],
+     [
+      " Andy",
+      -4.3134
+     ],
+     [
+      "Wo",
+      -5.6884
+     ]
+    ],
+    "Finding Nemo": [
+     [
+      " N",
+      -0.087
+     ],
+     [
+      " Mar",
+      -2.962
+     ],
+     [
+      " **",
+      -4.087
+     ],
+     [
+      " D",
+      -5.712
+     ],
+     [
+      " Mo",
+      -5.837
+     ]
+    ],
+    "The Godfather": [
+     [
+      " Tony",
+      -0.7921
+     ],
+     [
+      " Michael",
+      -1.0421
+     ],
+     [
+      " Son",
+      -2.5421
+     ],
+     [
+      " **",
+      -2.6671
+     ],
+     [
+      " V",
+      -3.6671
+     ]
+    ],
+    "Jaws": [
+     [
+      " **",
+      -0.1398
+     ],
+     [
+      " Bro",
+      -3.0148
+     ],
+     [
+      " Steven",
+      -4.0148
+     ],
+     [
+      " Roy",
+      -4.6398
+     ],
+     [
+      " Quint",
+      -4.8898
+     ]
+    ],
+    "Casablanca": [
+     [
+      " Rick",
+      -0.0085
+     ],
+     [
+      " **",
+      -5.7585
+     ],
+     [
+      " Cas",
+      -6.0085
+     ],
+     [
+      " Sam",
+      -6.7585
+     ],
+     [
+      "Rick",
+      -7.2585
+     ]
+    ],
+    "Pride & Prejudice": [
+     [
+      " Mr",
+      -0.1164
+     ],
+     [
+      " **",
+      -2.9914
+     ],
+     [
+      " Elizabeth",
+      -3.4914
+     ],
+     [
+      " D",
+      -3.8664
+     ],
+     [
+      " Fitz",
+      -4.9914
+     ]
+    ],
+    "Jurassic Park": [
+     [
+      " Ian",
+      -0.6364
+     ],
+     [
+      " **",
+      -1.0114
+     ],
+     [
+      " Indiana",
+      -2.2614
+     ],
+     [
+      " Dr",
+      -6.8864
+     ],
+     [
+      " I",
+      -7.5114
+     ]
+    ],
+    "The Lion King": [
+     [
+      " Sim",
+      -0.0196
+     ],
+     [
+      " **",
+      -4.1446
+     ],
+     [
+      " M",
+      -5.8946
+     ],
+     [
+      " Simon",
+      -8.5196
+     ],
+     [
+      "<|im_end|>",
+      -9.1446
+     ]
+    ],
+    "Back to the Future": [
+     [
+      " Marty",
+      -0.2269
+     ],
+     [
+      " **",
+      -1.6019
+     ],
+     [
+      " Martin",
+      -7.8519
+     ],
+     [
+      " Doc",
+      -8.4769
+     ],
+     [
+      " Emm",
+      -9.1019
+     ]
+    ],
+    "E.T. the Extra-Terrestrial": [
+     [
+      " E",
+      -0.1102
+     ],
+     [
+      " **",
+      -2.8602
+     ],
+     [
+      " Elliott",
+      -3.1102
+     ],
+     [
+      " Elliot",
+      -6.8602
+     ],
+     [
+      " *",
+      -6.9852
+     ]
+    ],
+    "The Shawshank Redemption": [
+     [
+      " Andy",
+      -0.2852
+     ],
+     [
+      " **",
+      -1.5352
+     ],
+     [
+      " Red",
+      -4.4102
+     ],
+     [
+      " Ellis",
+      -5.2852
+     ],
+     [
+      " Andrew",
+      -5.6602
+     ]
+    ],
+    "Groundhog Day": [
+     [
+      " **",
+      -0.6752
+     ],
+     [
+      " Phil",
+      -1.3002
+     ],
+     [
+      " Harold",
+      -2.3002
+     ],
+     [
+      " Ground",
+      -3.1752
+     ],
+     [
+      " Bill",
+      -3.6752
+     ]
+    ],
+    "Mean Girls": [
+     [
+      " **",
+      -0.5733
+     ],
+     [
+      " G",
+      -1.6983
+     ],
+     [
+      " X",
+      -2.9483
+     ],
+     [
+      " Mean",
+      -3.6983
+     ],
+     [
+      " Brit",
+      -4.3233
+     ]
+    ],
+    "The Notebook": [
+     [
+      " Rh",
+      -0.1784
+     ],
+     [
+      " Jack",
+      -2.6784
+     ],
+     [
+      " Jay",
+      -4.1784
+     ],
+     [
+      " Ashley",
+      -4.3034
+     ],
+     [
+      " Heath",
+      -5.2409
+     ]
+    ],
+    "Up": [
+     [
+      " Carl",
+      -0.1576
+     ],
+     [
+      " **",
+      -2.9076
+     ],
+     [
+      " Charles",
+      -3.5326
+     ],
+     [
+      " Russell",
+      -4.1576
+     ],
+     [
+      " Charlie",
+      -4.6576
+     ]
+    ],
+    "Frozen": [
+     [
+      " Elsa",
+      -0.0484
+     ],
+     [
+      " **",
+      -3.1734
+     ],
+     [
+      " Anna",
+      -5.7984
+     ],
+     [
+      " Frozen",
+      -7.5484
+     ],
+     [
+      "  \n",
+      -8.0484
+     ]
+    ],
+    "Gravity": [
+     [
+      " **",
+      -1.9287
+     ],
+     [
+      " Sandra",
+      -2.0537
+     ],
+     [
+      " Ryan",
+      -2.1787
+     ],
+     [
+      " Ellen",
+      -2.5537
+     ],
+     [
+      " Chris",
+      -3.4287
+     ]
+    ],
+    "The Martian": [
+     [
+      " Mark",
+      -0.1657
+     ],
+     [
+      " **",
+      -1.9157
+     ],
+     [
+      " MARK",
+      -6.4157
+     ],
+     [
+      " Matthew",
+      -6.7907
+     ],
+     [
+      " Matt",
+      -7.4157
+     ]
+    ],
+    "Alien": [
+     [
+      " Ellen",
+      -0.1558
+     ],
+     [
+      " Rip",
+      -2.0308
+     ],
+     [
+      " **",
+      -4.6558
+     ],
+     [
+      " Ellie",
+      -7.5308
+     ],
+     [
+      " Sarah",
+      -7.7808
+     ]
+    ],
+    "Rocky": [
+     [
+      " Rocky",
+      -0.0072
+     ],
+     [
+      " Jake",
+      -5.8822
+     ],
+     [
+      " **",
+      -6.0072
+     ],
+     [
+      "Rock",
+      -7.7572
+     ],
+     [
+      " Rock",
+      -8.5072
+     ]
+    ],
+    "Home Alone": [
+     [
+      " Max",
+      -0.6061
+     ],
+     [
+      " **",
+      -1.6061
+     ],
+     [
+      " Harry",
+      -2.7311
+     ],
+     [
+      " Kevin",
+      -3.2311
+     ],
+     [
+      " Homer",
+      -3.4811
+     ]
+    ],
+    "Ratatouille": [
+     [
+      " R",
+      -0.0543
+     ],
+     [
+      " Rat",
+      -3.6793
+     ],
+     [
+      " **",
+      -3.8043
+     ],
+     [
+      " Gust",
+      -7.1793
+     ],
+     [
+      " \ufffd",
+      -7.3043
+     ]
+    ],
+    "Mamma Mia!": [
+     [
+      " Brid",
+      -0.5694
+     ],
+     [
+      " **",
+      -2.8194
+     ],
+     [
+      " Helen",
+      -3.1944
+     ],
+     [
+      " I",
+      -3.3194
+     ],
+     [
+      " X",
+      -3.5694
+     ]
+    ],
+    "La La Land": [
+     [
+      " Rachel",
+      -1.6004
+     ],
+     [
+      " Sam",
+      -1.9754
+     ],
+     [
+      " **",
+      -2.3504
+     ],
+     [
+      " *",
+      -2.4754
+     ],
+     [
+      " Ryan",
+      -2.7254
+     ]
+    ],
+    "Gone Girl": [
+     [
+      " **",
+      -0.6152
+     ],
+     [
+      " Nancy",
+      -2.7402
+     ],
+     [
+      " Gill",
+      -3.1152
+     ],
+     [
+      " Patrick",
+      -3.2402
+     ],
+     [
+      " Amy",
+      -3.9277
+     ]
+    ],
+    "The Silence of the Lambs": [
+     [
+      " **",
+      -0.4991
+     ],
+     [
+      " Clar",
+      -1.3741
+     ],
+     [
+      " Hann",
+      -2.9991
+     ],
+     [
+      " Silence",
+      -3.7491
+     ],
+     [
+      " Dr",
+      -4.3741
+     ]
+    ],
+    "Fargo": [
+     [
+      " **",
+      -1.0869
+     ],
+     [
+      " Michael",
+      -2.3369
+     ],
+     [
+      " Paul",
+      -3.0244
+     ],
+     [
+      " John",
+      -3.2119
+     ],
+     [
+      " Detective",
+      -3.3369
+     ]
+    ],
+    "Chinatown": [
+     [
+      " Sam",
+      -0.6655
+     ],
+     [
+      " Philip",
+      -1.0405
+     ],
+     [
+      " **",
+      -2.9155
+     ],
+     [
+      " Sherlock",
+      -3.2905
+     ],
+     [
+      "Philip",
+      -4.4155
+     ]
+    ],
+    "Heat": [
+     [
+      " **",
+      -0.3906
+     ],
+     [
+      " Jack",
+      -1.6406
+     ],
+     [
+      " Michael",
+      -3.1406
+     ],
+     [
+      " John",
+      -3.7656
+     ],
+     [
+      " ",
+      -4.5156
+     ]
+    ],
+    "Die Hard": [
+     [
+      " John",
+      -0.2594
+     ],
+     [
+      " **",
+      -2.1344
+     ],
+     [
+      " Jack",
+      -2.5094
+     ],
+     [
+      " Ethan",
+      -4.6344
+     ],
+     [
+      " Jason",
+      -4.8844
+     ]
+    ],
+    "Raiders of the Lost Ark": [
+     [
+      " Indiana",
+      -0.0286
+     ],
+     [
+      "Indiana",
+      -4.2786
+     ],
+     [
+      " **",
+      -4.4036
+     ],
+     [
+      " Indy",
+      -6.5286
+     ],
+     [
+      " Rick",
+      -8.1536
+     ]
+    ],
+    "The Wizard of Oz": [
+     [
+      " Dorothy",
+      -0.3145
+     ],
+     [
+      " **",
+      -1.3145
+     ],
+     [
+      "  \n",
+      -7.6895
+     ],
+     [
+      " D",
+      -8.6895
+     ],
+     [
+      " *",
+      -9.1895
+     ]
+    ],
+    "Singin' in the Rain": [
+     [
+      " Al",
+      -0.869
+     ],
+     [
+      " Douglas",
+      -2.244
+     ],
+     [
+      " Mickey",
+      -2.619
+     ],
+     [
+      " Don",
+      -2.619
+     ],
+     [
+      " The",
+      -3.119
+     ]
+    ],
+    "Some Like It Hot": [
+     [
+      " **",
+      -1.9238
+     ],
+     [
+      " Gene",
+      -2.4238
+     ],
+     [
+      " Z",
+      -2.9863
+     ],
+     [
+      " The",
+      -3.1113
+     ],
+     [
+      " Tony",
+      -3.1738
+     ]
+    ],
+    "The Sound of Music": [
+     [
+      " Maria",
+      -0.0369
+     ],
+     [
+      " The",
+      -4.4119
+     ],
+     [
+      " Captain",
+      -4.7869
+     ],
+     [
+      " **",
+      -5.1619
+     ],
+     [
+      " Mar\u00eda",
+      -5.5369
+     ]
+    ],
+    "Psycho": [
+     [
+      " **",
+      -0.7457
+     ],
+     [
+      " Nancy",
+      -1.9957
+     ],
+     [
+      " Herc",
+      -2.1207
+     ],
+     [
+      " Sherlock",
+      -2.6207
+     ],
+     [
+      " Norman",
+      -3.1207
+     ]
+    ],
+    "Rear Window": [
+     [
+      " **",
+      -0.7605
+     ],
+     [
+      " Sam",
+      -2.0105
+     ],
+     [
+      " Rear",
+      -2.3855
+     ],
+     [
+      " Philip",
+      -2.6355
+     ],
+     [
+      " X",
+      -3.5105
+     ]
+    ],
+    "Vertigo": [
+     [
+      " **",
+      -0.3776
+     ],
+     [
+      " Philip",
+      -2.1276
+     ],
+     [
+      " Jonathan",
+      -3.1276
+     ],
+     [
+      " Cas",
+      -3.8776
+     ],
+     [
+      " Jimmy",
+      -4.5026
+     ]
+    ],
+    "2001: A Space Odyssey": [
+     [
+      " David",
+      -0.9685
+     ],
+     [
+      " Dave",
+      -0.9685
+     ],
+     [
+      " **",
+      -1.4685
+     ],
+     [
+      " HAL",
+      -5.8435
+     ],
+     [
+      " Hal",
+      -5.9685
+     ]
+    ],
+    "Star Wars": [
+     [
+      " Luke",
+      -0.1153
+     ],
+     [
+      " **",
+      -2.2403
+     ],
+     [
+      "  \n",
+      -7.3653
+     ],
+     [
+      "Luke",
+      -7.6153
+     ],
+     [
+      " Skywalker",
+      -7.8653
+     ]
+    ],
+    "The Matrix": [
+     [
+      " **",
+      -0.3147
+     ],
+     [
+      " Neo",
+      -1.3147
+     ],
+     [
+      " The",
+      -7.9397
+     ],
+     [
+      "Neo",
+      -8.1897
+     ],
+     [
+      "  \n",
+      -8.4397
+     ]
+    ],
+    "Inception": [
+     [
+      " **",
+      -0.0739
+     ],
+     [
+      " Cobb",
+      -3.1989
+     ],
+     [
+      " Dom",
+      -4.4489
+     ],
+     [
+      " Christopher",
+      -4.6989
+     ],
+     [
+      " Dominic",
+      -5.6989
+     ]
+    ],
+    "Ghostbusters": [
+     [
+      " Ghost",
+      -0.334
+     ],
+     [
+      " **",
+      -1.334
+     ],
+     [
+      "Ghost",
+      -5.584
+     ],
+     [
+      " X",
+      -6.0215
+     ],
+     [
+      " Spider",
+      -6.084
+     ]
+    ],
+    "Notting Hill": [
+     [
+      " Mr",
+      -0.681
+     ],
+     [
+      " Bog",
+      -2.931
+     ],
+     [
+      " Jack",
+      -2.931
+     ],
+     [
+      " Brid",
+      -3.056
+     ],
+     [
+      " Ross",
+      -3.056
+     ]
+    ],
+    "The Devil Wears Prada": [
+     [
+      " Carrie",
+      -0.9725
+     ],
+     [
+      " **",
+      -1.0975
+     ],
+     [
+      " Andy",
+      -2.0975
+     ],
+     [
+      " Andrea",
+      -3.0975
+     ],
+     [
+      " And",
+      -3.7225
+     ]
+    ],
+    "Legally Blonde": [
+     [
+      " Elle",
+      -0.1988
+     ],
+     [
+      " Ruth",
+      -3.5738
+     ],
+     [
+      " Erin",
+      -3.9488
+     ],
+     [
+      " Leg",
+      -4.0738
+     ],
+     [
+      " **",
+      -4.0738
+     ]
+    ],
+    "Mrs. Doubtfire": [
+     [
+      " Bob",
+      -1.074
+     ],
+     [
+      " Mr",
+      -2.199
+     ],
+     [
+      " **",
+      -2.324
+     ],
+     [
+      " Superman",
+      -2.699
+     ],
+     [
+      " Bruce",
+      -2.949
+     ]
+    ],
+    "Big": [
+     [
+      " **",
+      -1.5002
+     ],
+     [
+      " Tom",
+      -2.0002
+     ],
+     [
+      " E",
+      -2.1877
+     ],
+     [
+      " Elliott",
+      -2.2502
+     ],
+     [
+      " Sh",
+      -3.0627
+     ]
+    ],
+    "Shrek": [
+     [
+      " Sh",
+      -0.1127
+     ],
+     [
+      " **",
+      -2.3627
+     ],
+     [
+      " Jack",
+      -5.3627
+     ],
+     [
+      " Og",
+      -6.9877
+     ],
+     [
+      " og",
+      -7.2377
+     ]
+    ],
+    "Spirited Away": [
+     [
+      " Chi",
+      -0.2379
+     ],
+     [
+      " **",
+      -2.2379
+     ],
+     [
+      " Sophie",
+      -3.4879
+     ],
+     [
+      " S",
+      -4.1129
+     ],
+     [
+      " X",
+      -4.3629
+     ]
+    ],
+    "Parasite": [
+     [
+      " Kim",
+      -0.4989
+     ],
+     [
+      " **",
+      -1.9989
+     ],
+     [
+      " The",
+      -3.4989
+     ],
+     [
+      " Mr",
+      -3.5614
+     ],
+     [
+      " Park",
+      -3.6864
+     ]
+    ],
+    "Knives Out": [
+     [
+      " **",
+      -0.331
+     ],
+     [
+      " Herc",
+      -2.706
+     ],
+     [
+      " Nancy",
+      -2.956
+     ],
+     [
+      " Miss",
+      -3.456
+     ],
+     [
+      " Mar",
+      -3.831
+     ]
+    ],
+    "Get Out": [
+     [
+      " **",
+      -0.0775
+     ],
+     [
+      " Jordan",
+      -4.4525
+     ],
+     [
+      " Luke",
+      -4.5775
+     ],
+     [
+      "  \n",
+      -4.89
+     ],
+     [
+      " Chris",
+      -5.7025
+     ]
+    ],
+    "Little Miss Sunshine": [
+     [
+      " Homer",
+      -1.692
+     ],
+     [
+      " The",
+      -2.1295
+     ],
+     [
+      " **",
+      -2.2545
+     ],
+     [
+      " Meg",
+      -3.067
+     ],
+     [
+      " Super",
+      -3.192
+     ]
+    ],
+    "The Social Network": [
+     [
+      " Mark",
+      -0.0615
+     ],
+     [
+      " Zuckerberg",
+      -2.9365
+     ],
+     [
+      " **",
+      -6.0615
+     ],
+     [
+      " Facebook",
+      -7.3115
+     ],
+     [
+      "Mark",
+      -7.5615
+     ]
+    ],
+    "The Grand Budapest Hotel": [
+     [
+      " R",
+      -1.3612
+     ],
+     [
+      " Rick",
+      -1.3612
+     ],
+     [
+      " Gust",
+      -1.6112
+     ],
+     [
+      " Indiana",
+      -2.9862
+     ],
+     [
+      " **",
+      -3.4862
+     ]
+    ],
+    "Mad Max: Fury Road": [
+     [
+      " **",
+      -0.886
+     ],
+     [
+      " Mad",
+      -1.136
+     ],
+     [
+      " Max",
+      -2.886
+     ],
+     [
+      " Indiana",
+      -3.761
+     ],
+     [
+      " John",
+      -3.761
+     ]
+    ],
+    "Interstellar": [
+     [
+      " **",
+      -0.6463
+     ],
+     [
+      " Cooper",
+      -0.8963
+     ],
+     [
+      " Inter",
+      -3.6463
+     ],
+     [
+      " Christopher",
+      -3.7713
+     ],
+     [
+      " X",
+      -5.6463
+     ]
+    ],
+    "Saving Private Ryan": [
+     [
+      " James",
+      -1.0967
+     ],
+     [
+      " **",
+      -1.5967
+     ],
+     [
+      " John",
+      -2.2217
+     ],
+     [
+      " Ryan",
+      -2.5967
+     ],
+     [
+      " Ram",
+      -2.9717
+     ]
+    ],
+    "The Exorcist": [
+     [
+      " Father",
+      -0.9859
+     ],
+     [
+      " Legion",
+      -1.4859
+     ],
+     [
+      " Reg",
+      -1.9859
+     ],
+     [
+      " Damien",
+      -3.2984
+     ],
+     [
+      " The",
+      -3.4234
+     ]
+    ],
+    "The Shining": [
+     [
+      " Jack",
+      -0.0433
+     ],
+     [
+      " **",
+      -3.2933
+     ],
+     [
+      " Tony",
+      -6.6683
+     ],
+     [
+      " Danny",
+      -6.9183
+     ],
+     [
+      " John",
+      -7.0433
+     ]
+    ],
+    "Goodfellas": [
+     [
+      " Tony",
+      -0.3355
+     ],
+     [
+      " Michael",
+      -2.0855
+     ],
+     [
+      " Henry",
+      -2.2105
+     ],
+     [
+      " **",
+      -3.7105
+     ],
+     [
+      " Tommy",
+      -5.3355
+     ]
+    ],
+    "Taxi Driver": [
+     [
+      " Travis",
+      -0.0005
+     ],
+     [
+      " Taxi",
+      -8.0005
+     ],
+     [
+      " **",
+      -9.2505
+     ],
+     [
+      " Tr",
+      -11.5005
+     ],
+     [
+      " TAX",
+      -11.7505
+     ]
+    ],
+    "Moonlight": [
+     [
+      " **",
+      -1.6839
+     ],
+     [
+      " Angel",
+      -2.1839
+     ],
+     [
+      " Steve",
+      -3.1839
+     ],
+     [
+      " Malcolm",
+      -3.3089
+     ],
+     [
+      " Jamal",
+      -3.6214
+     ]
+    ],
+    "Lost in Translation": [
+     [
+      " Rick",
+      -1.1905
+     ],
+     [
+      " Jack",
+      -1.9405
+     ],
+     [
+      " John",
+      -2.1905
+     ],
+     [
+      " Philip",
+      -3.1905
+     ],
+     [
+      " Owen",
+      -3.378
+     ]
+    ],
+    "Babe": [
+     [
+      " Babe",
+      -0.1483
+     ],
+     [
+      " Mr",
+      -3.5233
+     ],
+     [
+      " Peter",
+      -4.2733
+     ],
+     [
+      " Pork",
+      -4.3983
+     ],
+     [
+      " Billy",
+      -4.8983
+     ]
+    ],
+    "The Princess Bride": [
+     [
+      " West",
+      -0.078
+     ],
+     [
+      " **",
+      -3.078
+     ],
+     [
+      " Butter",
+      -4.828
+     ],
+     [
+      " In",
+      -5.078
+     ],
+     [
+      " Robin",
+      -6.078
+     ]
+    ]
+   }
+  },
+  {
+   "prefix": "Answer:",
+   "n_films": 69,
+   "replies_that_begin_with_a_name": 65,
+   "needed": 62,
+   "passes": true,
+   "prompt_tail_tokens": [
+    ".",
+    "<|im_end|>",
+    "\n",
+    "<|im_start|>",
+    "assistant",
+    "\n",
+    "<think>",
+    "\n\n",
+    "</think>",
+    "\n\n",
+    "Answer",
+    ":"
+   ],
+   "replies_as_written": {
+    "Titanic": " Jack",
+    "Forrest Gump": " Rocky Balboa",
+    "Toy Story": " Woody",
+    "Finding Nemo": " Nemo",
+    "The Godfather": " Michael Corleone",
+    "Jaws": " Brody",
+    "Casablanca": " Rick",
+    "Pride & Prejudice": " Mr. Darcy",
+    "Jurassic Park": " Ian Malcolm",
+    "The Lion King": " Simba",
+    "Back to the Future": " Marty",
+    "E.T. the Extra-Terrestrial": " E.T.",
+    "The Shawshank Redemption": " Andy Dufresne",
+    "Groundhog Day": " Phil Connors",
+    "Mean Girls": " Gossip Girl",
+    "The Notebook": " Rhett Butler",
+    "Up": " Carl Fredricksen",
+    "Frozen": " Elsa",
+    "Gravity": " Sandra Bullock",
+    "The Martian": " Mark Watney",
+    "Alien": " Ellen Ripley",
+    "Rocky": " Rocky Balboa",
+    "Home Alone": " Max",
+    "Ratatouille": " Remy",
+    "Mamma Mia!": " Bridget Jones",
+    "La La Land": " Rachel McGuire",
+    "Gone Girl": " **Hannibal Lecter**",
+    "The Silence of the Lambs": " Clarice Starling",
+    "Fargo": " Paul Kersey",
+    "Chinatown": " Sam Spade",
+    "Heat": " Jack Sparrow",
+    "Die Hard": " John McClane",
+    "Raiders of the Lost Ark": " Indiana Jones",
+    "The Wizard of Oz": " Dorothy",
+    "Singin' in the Rain": " The Jazz Singer",
+    "Some Like It Hot": " Zorro",
+    "The Sound of Music": " Maria von Trapp",
+    "Psycho": " Norman Bates",
+    "Rear Window": " Sam Spade",
+    "Vertigo": " Philip Marlowe",
+    "2001: A Space Odyssey": " Dave",
+    "Star Wars": " Luke Skywalker",
+    "The Matrix": " Neo",
+    "Inception": " **Cobb**",
+    "Ghostbusters": " Ghostbusters",
+    "Notting Hill": " Mr. Darcy",
+    "The Devil Wears Prada": " Carrie Bradshaw",
+    "Legally Blonde": " Elle Woods",
+    "Mrs. Doubtfire": " Bob Belcher",
+    "Big": " Elliott",
+    "Shrek": " Shrek",
+    "Spirited Away": " Chihiro",
+    "Parasite": " Kim Bok-joo (from the Korean web novel and",
+    "Knives Out": " **Veronica Mars**",
+    "Get Out": " **Columbus**",
+    "Little Miss Sunshine": " Homer Simpson",
+    "The Social Network": " Mark Zuckerberg",
+    "The Grand Budapest Hotel": " Rick Blaine",
+    "Mad Max: Fury Road": " Mad Max",
+    "Interstellar": " Cooper",
+    "Saving Private Ryan": " John Miller",
+    "The Exorcist": " Legion",
+    "The Shining": " Jack Torrance",
+    "Goodfellas": " Tony Montana",
+    "Taxi Driver": " Travis Bickle",
+    "Moonlight": " Angel Vukovi\u0107",
+    "Lost in Translation": " Rick Blaine",
+    "Babe": " Babe",
+    "The Princess Bride": " Westley"
+   },
+   "begins_with_a_name": {
+    "Titanic": true,
+    "Forrest Gump": true,
+    "Toy Story": true,
+    "Finding Nemo": true,
+    "The Godfather": true,
+    "Jaws": true,
+    "Casablanca": true,
+    "Pride & Prejudice": true,
+    "Jurassic Park": true,
+    "The Lion King": true,
+    "Back to the Future": true,
+    "E.T. the Extra-Terrestrial": true,
+    "The Shawshank Redemption": true,
+    "Groundhog Day": true,
+    "Mean Girls": true,
+    "The Notebook": true,
+    "Up": true,
+    "Frozen": true,
+    "Gravity": true,
+    "The Martian": true,
+    "Alien": true,
+    "Rocky": true,
+    "Home Alone": true,
+    "Ratatouille": true,
+    "Mamma Mia!": true,
+    "La La Land": true,
+    "Gone Girl": false,
+    "The Silence of the Lambs": true,
+    "Fargo": true,
+    "Chinatown": true,
+    "Heat": true,
+    "Die Hard": true,
+    "Raiders of the Lost Ark": true,
+    "The Wizard of Oz": true,
+    "Singin' in the Rain": true,
+    "Some Like It Hot": true,
+    "The Sound of Music": true,
+    "Psycho": true,
+    "Rear Window": true,
+    "Vertigo": true,
+    "2001: A Space Odyssey": true,
+    "Star Wars": true,
+    "The Matrix": true,
+    "Inception": false,
+    "Ghostbusters": true,
+    "Notting Hill": true,
+    "The Devil Wears Prada": true,
+    "Legally Blonde": true,
+    "Mrs. Doubtfire": true,
+    "Big": true,
+    "Shrek": true,
+    "Spirited Away": true,
+    "Parasite": true,
+    "Knives Out": false,
+    "Get Out": false,
+    "Little Miss Sunshine": true,
+    "The Social Network": true,
+    "The Grand Budapest Hotel": true,
+    "Mad Max: Fury Road": true,
+    "Interstellar": true,
+    "Saving Private Ryan": true,
+    "The Exorcist": true,
+    "The Shining": true,
+    "Goodfellas": true,
+    "Taxi Driver": true,
+    "Moonlight": true,
+    "Lost in Translation": true,
+    "Babe": true,
+    "The Princess Bride": true
+   },
+   "next_tokens": {
+    "Titanic": [
+     [
+      " Jack",
+      -0.6997
+     ],
+     [
+      " Rose",
+      -0.8247
+     ],
+     [
+      " Titanic",
+      -2.8247
+     ],
+     [
+      " Leonardo",
+      -5.5747
+     ],
+     [
+      " **",
+      -7.3247
+     ]
+    ],
+    "Forrest Gump": [
+     [
+      " Rocky",
+      -0.4264
+     ],
+     [
+      " Forrest",
+      -2.1764
+     ],
+     [
+      " Ray",
+      -2.5514
+     ],
+     [
+      " **",
+      -3.9264
+     ],
+     [
+      " Jimmy",
+      -4.0514
+     ]
+    ],
+    "Toy Story": [
+     [
+      " Woody",
+      -0.3445
+     ],
+     [
+      " Buzz",
+      -1.7195
+     ],
+     [
+      " **",
+      -2.5945
+     ],
+     [
+      " Andy",
+      -3.7195
+     ],
+     [
+      " Barbie",
+      -5.8445
+     ]
+    ],
+    "Finding Nemo": [
+     [
+      " N",
+      -0.0414
+     ],
+     [
+      " Mar",
+      -3.5414
+     ],
+     [
+      " D",
+      -5.0414
+     ],
+     [
+      " **",
+      -5.9164
+     ],
+     [
+      " Mo",
+      -6.6664
+     ]
+    ],
+    "The Godfather": [
+     [
+      " Michael",
+      -0.5609
+     ],
+     [
+      " Tony",
+      -1.0609
+     ],
+     [
+      " Son",
+      -3.4359
+     ],
+     [
+      " V",
+      -3.9359
+     ],
+     [
+      " The",
+      -4.4359
+     ]
+    ],
+    "Jaws": [
+     [
+      " Bro",
+      -0.3557
+     ],
+     [
+      " **",
+      -1.4807
+     ],
+     [
+      " Quint",
+      -4.2307
+     ],
+     [
+      " Steven",
+      -4.3557
+     ],
+     [
+      " Spielberg",
+      -4.6057
+     ]
+    ],
+    "Casablanca": [
+     [
+      " Rick",
+      -0.0006
+     ],
+     [
+      "Rick",
+      -8.5006
+     ],
+     [
+      " Cas",
+      -8.6256
+     ],
+     [
+      " Sam",
+      -9.6256
+     ],
+     [
+      " Captain",
+      -10.1256
+     ]
+    ],
+    "Pride & Prejudice": [
+     [
+      " Mr",
+      -0.3176
+     ],
+     [
+      " D",
+      -1.8176
+     ],
+     [
+      " Elizabeth",
+      -2.3176
+     ],
+     [
+      " **",
+      -5.0676
+     ],
+     [
+      " Fitz",
+      -5.8176
+     ]
+    ],
+    "Jurassic Park": [
+     [
+      " Ian",
+      -0.7749
+     ],
+     [
+      " **",
+      -1.1499
+     ],
+     [
+      " Indiana",
+      -1.5249
+     ],
+     [
+      "  \n",
+      -7.0249
+     ],
+     [
+      " Jurassic",
+      -7.1499
+     ]
+    ],
+    "The Lion King": [
+     [
+      " Sim",
+      -0.002
+     ],
+     [
+      " M",
+      -6.252
+     ],
+     [
+      "Sim",
+      -10.502
+     ],
+     [
+      " **",
+      -10.502
+     ],
+     [
+      " Simon",
+      -10.877
+     ]
+    ],
+    "Back to the Future": [
+     [
+      " Marty",
+      -0.0024
+     ],
+     [
+      " **",
+      -6.3774
+     ],
+     [
+      " Doc",
+      -8.2524
+     ],
+     [
+      " Martin",
+      -8.3774
+     ],
+     [
+      " Emm",
+      -9.1274
+     ]
+    ],
+    "E.T. the Extra-Terrestrial": [
+     [
+      " E",
+      -0.0049
+     ],
+     [
+      " Elliott",
+      -5.8799
+     ],
+     [
+      " **",
+      -6.3799
+     ],
+     [
+      " ET",
+      -8.6299
+     ],
+     [
+      " Elliot",
+      -9.3799
+     ]
+    ],
+    "The Shawshank Redemption": [
+     [
+      " Andy",
+      -0.0318
+     ],
+     [
+      " Red",
+      -3.9068
+     ],
+     [
+      " **",
+      -5.2818
+     ],
+     [
+      " Ellis",
+      -6.2818
+     ],
+     [
+      "Andy",
+      -6.9068
+     ]
+    ],
+    "Groundhog Day": [
+     [
+      " Phil",
+      -0.7494
+     ],
+     [
+      " Harold",
+      -1.1244
+     ],
+     [
+      " Ground",
+      -2.2494
+     ],
+     [
+      " Bill",
+      -3.1244
+     ],
+     [
+      " **",
+      -3.9994
+     ]
+    ],
+    "Mean Girls": [
+     [
+      " G",
+      -0.5989
+     ],
+     [
+      " **",
+      -2.0989
+     ],
+     [
+      " Mean",
+      -2.7239
+     ],
+     [
+      " X",
+      -2.9739
+     ],
+     [
+      " Bella",
+      -3.8489
+     ]
+    ],
+    "The Notebook": [
+     [
+      " Rh",
+      -0.1188
+     ],
+     [
+      " Scarlett",
+      -3.8688
+     ],
+     [
+      " Ashley",
+      -4.1188
+     ],
+     [
+      " Jay",
+      -4.3688
+     ],
+     [
+      " Jack",
+      -4.4938
+     ]
+    ],
+    "Up": [
+     [
+      " Carl",
+      -0.054
+     ],
+     [
+      " Charles",
+      -4.429
+     ],
+     [
+      " Russell",
+      -4.554
+     ],
+     [
+      " Charlie",
+      -5.304
+     ],
+     [
+      " Jim",
+      -5.554
+     ]
+    ],
+    "Frozen": [
+     [
+      " Elsa",
+      -0.0021
+     ],
+     [
+      " Anna",
+      -6.7521
+     ],
+     [
+      " Frozen",
+      -7.2521
+     ],
+     [
+      " **",
+      -9.2521
+     ],
+     [
+      " Snow",
+      -9.3771
+     ]
+    ],
+    "Gravity": [
+     [
+      " Sandra",
+      -1.6594
+     ],
+     [
+      " Ryan",
+      -2.2844
+     ],
+     [
+      " K",
+      -2.6594
+     ],
+     [
+      " Ellen",
+      -2.7844
+     ],
+     [
+      " Chris",
+      -2.7844
+     ]
+    ],
+    "The Martian": [
+     [
+      " Mark",
+      -0.0054
+     ],
+     [
+      " **",
+      -5.6304
+     ],
+     [
+      " MARK",
+      -7.3804
+     ],
+     [
+      " Matt",
+      -8.3804
+     ],
+     [
+      " Matthew",
+      -8.6304
+     ]
+    ],
+    "Alien": [
+     [
+      " Ellen",
+      -0.183
+     ],
+     [
+      " Rip",
+      -1.808
+     ],
+     [
+      " Ellie",
+      -7.433
+     ],
+     [
+      " **",
+      -7.433
+     ],
+     [
+      " Sarah",
+      -7.808
+     ]
+    ],
+    "Rocky": [
+     [
+      " Rocky",
+      -0.0078
+     ],
+     [
+      " Jake",
+      -5.3828
+     ],
+     [
+      "Rock",
+      -7.1328
+     ],
+     [
+      " Rock",
+      -7.5078
+     ],
+     [
+      " The",
+      -8.2578
+     ]
+    ],
+    "Home Alone": [
+     [
+      " Max",
+      -0.8599
+     ],
+     [
+      " Kevin",
+      -2.2349
+     ],
+     [
+      " **",
+      -2.6099
+     ],
+     [
+      " Harry",
+      -2.7349
+     ],
+     [
+      " Go",
+      -2.9849
+     ]
+    ],
+    "Ratatouille": [
+     [
+      " R",
+      -0.0107
+     ],
+     [
+      " Rat",
+      -4.8857
+     ],
+     [
+      " **",
+      -6.3857
+     ],
+     [
+      " Gust",
+      -7.3857
+     ],
+     [
+      " Lingu",
+      -8.7607
+     ]
+    ],
+    "Mamma Mia!": [
+     [
+      " Brid",
+      -0.3666
+     ],
+     [
+      " X",
+      -2.7416
+     ],
+     [
+      " D",
+      -3.2416
+     ],
+     [
+      " Indiana",
+      -4.1166
+     ],
+     [
+      " I",
+      -4.1166
+     ]
+    ],
+    "La La Land": [
+     [
+      " Rachel",
+      -1.2303
+     ],
+     [
+      " Sam",
+      -2.1053
+     ],
+     [
+      " *",
+      -2.4803
+     ],
+     [
+      " Brid",
+      -3.1053
+     ],
+     [
+      " Ryan",
+      -3.2303
+     ]
+    ],
+    "Gone Girl": [
+     [
+      " **",
+      -1.7248
+     ],
+     [
+      " Dexter",
+      -1.9748
+     ],
+     [
+      " Gill",
+      -2.0998
+     ],
+     [
+      " Nancy",
+      -2.2248
+     ],
+     [
+      " Amy",
+      -2.9748
+     ]
+    ],
+    "The Silence of the Lambs": [
+     [
+      " Clar",
+      -0.5614
+     ],
+     [
+      " Silence",
+      -1.9364
+     ],
+     [
+      " **",
+      -2.3114
+     ],
+     [
+      " Hann",
+      -2.8114
+     ],
+     [
+      " Lis",
+      -3.8114
+     ]
+    ],
+    "Fargo": [
+     [
+      " Paul",
+      -1.6755
+     ],
+     [
+      " Michael",
+      -2.1755
+     ],
+     [
+      " Mike",
+      -2.8005
+     ],
+     [
+      " Pope",
+      -3.1755
+     ],
+     [
+      " Martin",
+      -3.3005
+     ]
+    ],
+    "Chinatown": [
+     [
+      " Sam",
+      -0.5064
+     ],
+     [
+      " Philip",
+      -1.1314
+     ],
+     [
+      " Sp",
+      -3.8814
+     ],
+     [
+      " Sherlock",
+      -4.2564
+     ],
+     [
+      "Philip",
+      -4.5064
+     ]
+    ],
+    "Heat": [
+     [
+      " Jack",
+      -0.8056
+     ],
+     [
+      " Michael",
+      -1.6806
+     ],
+     [
+      " **",
+      -1.6806
+     ],
+     [
+      " Heat",
+      -3.6806
+     ],
+     [
+      " Tony",
+      -3.6806
+     ]
+    ],
+    "Die Hard": [
+     [
+      " John",
+      -0.1072
+     ],
+     [
+      " Jack",
+      -2.6072
+     ],
+     [
+      " Ethan",
+      -5.3572
+     ],
+     [
+      " X",
+      -5.3572
+     ],
+     [
+      " Die",
+      -5.6072
+     ]
+    ],
+    "Raiders of the Lost Ark": [
+     [
+      " Indiana",
+      -0.0175
+     ],
+     [
+      "Indiana",
+      -4.6425
+     ],
+     [
+      " Indy",
+      -5.1425
+     ],
+     [
+      " Rick",
+      -7.1425
+     ],
+     [
+      " **",
+      -7.3925
+     ]
+    ],
+    "The Wizard of Oz": [
+     [
+      " Dorothy",
+      -0.0147
+     ],
+     [
+      " **",
+      -4.2647
+     ],
+     [
+      "  \n",
+      -7.8897
+     ],
+     [
+      " D",
+      -10.0147
+     ],
+     [
+      " Dor",
+      -10.7647
+     ]
+    ],
+    "Singin' in the Rain": [
+     [
+      " The",
+      -1.3517
+     ],
+     [
+      " Al",
+      -1.6017
+     ],
+     [
+      " Don",
+      -1.9767
+     ],
+     [
+      " Douglas",
+      -2.4767
+     ],
+     [
+      " Ad",
+      -2.7267
+     ]
+    ],
+    "Some Like It Hot": [
+     [
+      " Z",
+      -1.3277
+     ],
+     [
+      " The",
+      -2.8277
+     ],
+     [
+      " Tony",
+      -3.5777
+     ],
+     [
+      " Rocky",
+      -3.6402
+     ],
+     [
+      " Baby",
+      -3.6402
+     ]
+    ],
+    "The Sound of Music": [
+     [
+      " Maria",
+      -0.0423
+     ],
+     [
+      " The",
+      -3.4173
+     ],
+     [
+      " Captain",
+      -5.6673
+     ],
+     [
+      " Lies",
+      -6.5423
+     ],
+     [
+      " Mar\u00eda",
+      -6.9173
+     ]
+    ],
+    "Psycho": [
+     [
+      " Norman",
+      -1.3989
+     ],
+     [
+      " **",
+      -1.7739
+     ],
+     [
+      " Nancy",
+      -2.0239
+     ],
+     [
+      " Herc",
+      -3.2739
+     ],
+     [
+      " The",
+      -3.5239
+     ]
+    ],
+    "Rear Window": [
+     [
+      " Sam",
+      -0.9144
+     ],
+     [
+      " Pe",
+      -2.0394
+     ],
+     [
+      " Rear",
+      -2.1644
+     ],
+     [
+      " Philip",
+      -2.7894
+     ],
+     [
+      " Lars",
+      -2.9144
+     ]
+    ],
+    "Vertigo": [
+     [
+      " Philip",
+      -1.5176
+     ],
+     [
+      " Jonathan",
+      -1.8926
+     ],
+     [
+      " **",
+      -2.2676
+     ],
+     [
+      " Martin",
+      -3.1426
+     ],
+     [
+      " J",
+      -3.1426
+     ]
+    ],
+    "2001: A Space Odyssey": [
+     [
+      " Dave",
+      -0.5553
+     ],
+     [
+      " David",
+      -0.9303
+     ],
+     [
+      " HAL",
+      -4.1803
+     ],
+     [
+      " **",
+      -4.9303
+     ],
+     [
+      " Hal",
+      -5.1803
+     ]
+    ],
+    "Star Wars": [
+     [
+      " Luke",
+      -0.0019
+     ],
+     [
+      " **",
+      -6.3769
+     ],
+     [
+      " Skywalker",
+      -9.5019
+     ],
+     [
+      "Luke",
+      -10.3769
+     ],
+     [
+      "  \n",
+      -10.3769
+     ]
+    ],
+    "The Matrix": [
+     [
+      " Neo",
+      -0.0274
+     ],
+     [
+      " **",
+      -3.6524
+     ],
+     [
+      " The",
+      -7.9024
+     ],
+     [
+      "Neo",
+      -8.0274
+     ],
+     [
+      " Trinity",
+      -8.9024
+     ]
+    ],
+    "Inception": [
+     [
+      " **",
+      -0.6783
+     ],
+     [
+      " Cobb",
+      -0.9283
+     ],
+     [
+      " Dom",
+      -3.0533
+     ],
+     [
+      " Christopher",
+      -3.3033
+     ],
+     [
+      " In",
+      -5.5533
+     ]
+    ],
+    "Ghostbusters": [
+     [
+      " Ghost",
+      -0.0507
+     ],
+     [
+      " **",
+      -4.0507
+     ],
+     [
+      "  \n",
+      -5.0507
+     ],
+     [
+      " Sp",
+      -5.5507
+     ],
+     [
+      "Ghost",
+      -5.6757
+     ]
+    ],
+    "Notting Hill": [
+     [
+      " Mr",
+      -0.711
+     ],
+     [
+      " Brid",
+      -1.586
+     ],
+     [
+      " Jack",
+      -3.086
+     ],
+     [
+      " Bog",
+      -3.461
+     ],
+     [
+      " Cas",
+      -3.961
+     ]
+    ],
+    "The Devil Wears Prada": [
+     [
+      " Carrie",
+      -0.4541
+     ],
+     [
+      " Andy",
+      -1.9541
+     ],
+     [
+      " Miranda",
+      -2.9541
+     ],
+     [
+      " **",
+      -3.0791
+     ],
+     [
+      " Andrea",
+      -3.3291
+     ]
+    ],
+    "Legally Blonde": [
+     [
+      " Elle",
+      -0.1317
+     ],
+     [
+      " Leg",
+      -3.5067
+     ],
+     [
+      " Erin",
+      -3.8817
+     ],
+     [
+      " Ruth",
+      -4.3817
+     ],
+     [
+      " **",
+      -4.6317
+     ]
+    ],
+    "Mrs. Doubtfire": [
+     [
+      " Bob",
+      -1.2473
+     ],
+     [
+      " Mr",
+      -2.1223
+     ],
+     [
+      " Bruce",
+      -2.4973
+     ],
+     [
+      " Superman",
+      -2.4973
+     ],
+     [
+      " Tony",
+      -2.7473
+     ]
+    ],
+    "Big": [
+     [
+      " Elliott",
+      -1.6282
+     ],
+     [
+      " E",
+      -1.8782
+     ],
+     [
+      " **",
+      -2.1282
+     ],
+     [
+      " Tom",
+      -2.6282
+     ],
+     [
+      " Jimmy",
+      -3.3157
+     ]
+    ],
+    "Shrek": [
+     [
+      " Sh",
+      -0.0125
+     ],
+     [
+      " Jack",
+      -5.6375
+     ],
+     [
+      " **",
+      -5.7625
+     ],
+     [
+      " Hercules",
+      -7.5125
+     ],
+     [
+      " Ogre",
+      -8.0125
+     ]
+    ],
+    "Spirited Away": [
+     [
+      " Chi",
+      -0.0941
+     ],
+     [
+      " Sophie",
+      -3.5941
+     ],
+     [
+      " **",
+      -3.9691
+     ],
+     [
+      " S",
+      -4.4691
+     ],
+     [
+      " San",
+      -4.7191
+     ]
+    ],
+    "Parasite": [
+     [
+      " Kim",
+      -0.7955
+     ],
+     [
+      " **",
+      -1.7955
+     ],
+     [
+      " Mr",
+      -2.7955
+     ],
+     [
+      " Park",
+      -2.9205
+     ],
+     [
+      " The",
+      -3.1705
+     ]
+    ],
+    "Knives Out": [
+     [
+      " **",
+      -1.5655
+     ],
+     [
+      " Veronica",
+      -1.6905
+     ],
+     [
+      " Nancy",
+      -1.6905
+     ],
+     [
+      " Herc",
+      -2.3155
+     ],
+     [
+      " Miss",
+      -2.9405
+     ]
+    ],
+    "Get Out": [
+     [
+      " **",
+      -0.2168
+     ],
+     [
+      " Luke",
+      -3.0918
+     ],
+     [
+      " Jordan",
+      -3.4668
+     ],
+     [
+      " Michael",
+      -3.8418
+     ],
+     [
+      " Chris",
+      -4.2168
+     ]
+    ],
+    "Little Miss Sunshine": [
+     [
+      " Homer",
+      -1.8716
+     ],
+     [
+      " **",
+      -2.4966
+     ],
+     [
+      " The",
+      -2.4966
+     ],
+     [
+      " Kramer",
+      -2.8716
+     ],
+     [
+      " Napoleon",
+      -2.8716
+     ]
+    ],
+    "The Social Network": [
+     [
+      " Mark",
+      -0.0444
+     ],
+     [
+      " Zuckerberg",
+      -3.1694
+     ],
+     [
+      " Facebook",
+      -7.9194
+     ],
+     [
+      "Mark",
+      -8.1694
+     ],
+     [
+      " Steve",
+      -9.0444
+     ]
+    ],
+    "The Grand Budapest Hotel": [
+     [
+      " Rick",
+      -0.8716
+     ],
+     [
+      " R",
+      -1.4966
+     ],
+     [
+      " Gust",
+      -2.7466
+     ],
+     [
+      " Indiana",
+      -2.8716
+     ],
+     [
+      " The",
+      -3.8091
+     ]
+    ],
+    "Mad Max: Fury Road": [
+     [
+      " Mad",
+      -0.2268
+     ],
+     [
+      " **",
+      -2.9768
+     ],
+     [
+      " Max",
+      -3.1018
+     ],
+     [
+      " The",
+      -3.9768
+     ],
+     [
+      " X",
+      -4.7268
+     ]
+    ],
+    "Interstellar": [
+     [
+      " Cooper",
+      -0.0391
+     ],
+     [
+      " Inter",
+      -4.1641
+     ],
+     [
+      " **",
+      -4.5391
+     ],
+     [
+      " Christopher",
+      -4.9141
+     ],
+     [
+      " K",
+      -7.5391
+     ]
+    ],
+    "Saving Private Ryan": [
+     [
+      " James",
+      -1.5938
+     ],
+     [
+      " John",
+      -1.5938
+     ],
+     [
+      " Ram",
+      -1.8438
+     ],
+     [
+      " Ryan",
+      -2.4688
+     ],
+     [
+      " Private",
+      -2.7188
+     ]
+    ],
+    "The Exorcist": [
+     [
+      " Legion",
+      -0.9744
+     ],
+     [
+      " Father",
+      -1.3494
+     ],
+     [
+      " Reg",
+      -1.7244
+     ],
+     [
+      " Damien",
+      -3.0994
+     ],
+     [
+      " Ex",
+      -3.0994
+     ]
+    ],
+    "The Shining": [
+     [
+      " Jack",
+      -0.0026
+     ],
+     [
+      " **",
+      -7.5026
+     ],
+     [
+      " Danny",
+      -8.0026
+     ],
+     [
+      " Holden",
+      -8.0026
+     ],
+     [
+      " Tony",
+      -8.1276
+     ]
+    ],
+    "Goodfellas": [
+     [
+      " Tony",
+      -0.671
+     ],
+     [
+      " Henry",
+      -1.171
+     ],
+     [
+      " Michael",
+      -1.921
+     ],
+     [
+      " Paul",
+      -5.296
+     ],
+     [
+      " **",
+      -5.296
+     ]
+    ],
+    "Taxi Driver": [
+     [
+      " Travis",
+      -0.0011
+     ],
+     [
+      " Taxi",
+      -6.8761
+     ],
+     [
+      " Tr",
+      -10.3761
+     ],
+     [
+      " TAX",
+      -10.8761
+     ],
+     [
+      " Tax",
+      -10.8761
+     ]
+    ],
+    "Moonlight": [
+     [
+      " Angel",
+      -2.105
+     ],
+     [
+      " Jamal",
+      -2.605
+     ],
+     [
+      " K",
+      -3.0425
+     ],
+     [
+      " Erik",
+      -3.1675
+     ],
+     [
+      " Steve",
+      -3.23
+     ]
+    ],
+    "Lost in Translation": [
+     [
+      " Rick",
+      -0.6668
+     ],
+     [
+      " Jack",
+      -2.6668
+     ],
+     [
+      " Philip",
+      -3.2918
+     ],
+     [
+      " John",
+      -3.2918
+     ],
+     [
+      " Richard",
+      -3.8543
+     ]
+    ],
+    "Babe": [
+     [
+      " Babe",
+      -0.0166
+     ],
+     [
+      " Pork",
+      -5.5166
+     ],
+     [
+      " Mr",
+      -6.2666
+     ],
+     [
+      " Peter",
+      -6.3916
+     ],
+     [
+      " P",
+      -6.6416
+     ]
+    ],
+    "The Princess Bride": [
+     [
+      " West",
+      -0.0233
+     ],
+     [
+      " Butter",
+      -4.5233
+     ],
+     [
+      " In",
+      -4.8983
+     ],
+     [
+      " Z",
+      -6.8983
+     ],
+     [
+      " **",
+      -7.0233
+     ]
+    ]
+   }
+  }
+ ]
+}
