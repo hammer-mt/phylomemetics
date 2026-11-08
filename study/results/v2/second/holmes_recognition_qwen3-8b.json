@@ -1,0 +1,2626 @@
+{
+ "model": "qwen3-8b",
+ "question_h1": "Every name in this plot summary has been replaced by a code such as X1. Which famous fictional hero is the story about? Reply with only the name the hero is best known by, not a code.",
+ "question_h2": "Every name in this plot summary has been replaced by a code such as X1. It is a summary of a Sherlock Holmes story, or of a film, television episode or game about Sherlock Holmes. Which story by Arthur Conan Doyle does it tell or adapt? Reply with the story's title only.",
+ "h1": {
+  "0": {
+   "named": true,
+   "logp": -1.1761750608690554e-05,
+   "reply": "Sherlock Holmes"
+  },
+  "1": {
+   "named": true,
+   "logp": -0.0020900074478514266,
+   "reply": "Sherlock Holmes"
+  },
+  "2": {
+   "named": true,
+   "logp": -0.0758984037162832,
+   "reply": "Sherlock Holmes"
+  },
+  "3": {
+   "named": true,
+   "logp": -0.001288916699706655,
+   "reply": "Sherlock Holmes"
+  },
+  "4": {
+   "named": true,
+   "logp": -0.6519212281285941,
+   "reply": "Sherlock Holmes"
+  },
+  "5": {
+   "named": true,
+   "logp": -0.02199356746365885,
+   "reply": "Sherlock Holmes"
+  },
+  "6": {
+   "named": true,
+   "logp": -1.5580023694956262,
+   "reply": "Sherlock Holmes"
+  },
+  "7": {
+   "named": false,
+   "logp": -1.362034755772148,
+   "reply": "Ned Kelly"
+  },
+  "8": {
+   "named": true,
+   "logp": -0.01382994014506476,
+   "reply": "Sherlock Holmes"
+  },
+  "9": {
+   "named": true,
+   "logp": -0.014807496855250755,
+   "reply": "Sherlock Holmes"
+  },
+  "10": {
+   "named": false,
+   "logp": -0.9603861572531659,
+   "reply": "Santa Claus"
+  },
+  "11": {
+   "named": false,
+   "logp": -2.0156131896960567,
+   "reply": "Hercule Poirot"
+  },
+  "12": {
+   "named": true,
+   "logp": -0.018677704492513963,
+   "reply": "Sherlock Holmes"
+  },
+  "13": {
+   "named": false,
+   "logp": -5.698405638498406,
+   "reply": "Pocahontas"
+  },
+  "14": {
+   "named": true,
+   "logp": -0.36675054561952913,
+   "reply": "Sherlock Holmes"
+  },
+  "15": {
+   "named": false,
+   "logp": -1.2377230811465334,
+   "reply": "Jane Eyre"
+  },
+  "16": {
+   "named": true,
+   "logp": -0.0038172700727115796,
+   "reply": "Sherlock Holmes"
+  },
+  "17": {
+   "named": true,
+   "logp": -0.06537290848510306,
+   "reply": "Sherlock Holmes"
+  },
+  "18": {
+   "named": true,
+   "logp": -0.024965211847416537,
+   "reply": "Sherlock Holmes"
+  },
+  "19": {
+   "named": true,
+   "logp": -0.09073097696520423,
+   "reply": "Sherlock Holmes"
+  },
+  "20": {
+   "named": true,
+   "logp": -0.11445184576444026,
+   "reply": "Sherlock Holmes"
+  },
+  "21": {
+   "named": true,
+   "logp": -0.6756262300609561,
+   "reply": "Sherlock Holmes"
+  },
+  "22": {
+   "named": true,
+   "logp": -0.07879027398438652,
+   "reply": "Sherlock Holmes"
+  },
+  "23": {
+   "named": true,
+   "logp": -0.02955383937570302,
+   "reply": "Sherlock Holmes"
+  },
+  "24": {
+   "named": true,
+   "logp": -0.003179691864419718,
+   "reply": "Sherlock Holmes"
+  },
+  "25": {
+   "named": true,
+   "logp": -0.0038321585565478967,
+   "reply": "Sherlock Holmes"
+  },
+  "26": {
+   "named": true,
+   "logp": -0.0012309396015921848,
+   "reply": "Sherlock Holmes"
+  },
+  "27": {
+   "named": true,
+   "logp": -0.0010112803338268095,
+   "reply": "Sherlock Holmes"
+  },
+  "28": {
+   "named": true,
+   "logp": -0.25243049734595,
+   "reply": "Sherlock Holmes"
+  },
+  "29": {
+   "named": true,
+   "logp": -0.020739842174835998,
+   "reply": "Sherlock Holmes"
+  },
+  "30": {
+   "named": true,
+   "logp": -5.1035549025918155e-05,
+   "reply": "Sherlock Holmes"
+  },
+  "31": {
+   "named": true,
+   "logp": -0.02022371279780584,
+   "reply": "Sherlock Holmes"
+  },
+  "32": {
+   "named": true,
+   "logp": -0.009130993304449166,
+   "reply": "Sherlock Holmes"
+  },
+  "33": {
+   "named": false,
+   "logp": -0.9253931151901523,
+   "reply": "Nemo"
+  },
+  "34": {
+   "named": true,
+   "logp": -0.22287314664734412,
+   "reply": "Sherlock Holmes"
+  },
+  "35": {
+   "named": true,
+   "logp": -0.5645819161952483,
+   "reply": "Sherlock Holmes"
+  },
+  "36": {
+   "named": false,
+   "logp": -1.212864822438016,
+   "reply": "Superman"
+  },
+  "37": {
+   "named": false,
+   "logp": -1.8534795067700875,
+   "reply": "Hercule Poirot"
+  },
+  "38": {
+   "named": true,
+   "logp": -0.007369378454812003,
+   "reply": "Sherlock Holmes"
+  },
+  "39": {
+   "named": true,
+   "logp": -0.24686830098280202,
+   "reply": "Sherlock Holmes"
+  },
+  "40": {
+   "named": true,
+   "logp": -0.0021748409731906365,
+   "reply": "Sherlock Holmes"
+  },
+  "41": {
+   "named": true,
+   "logp": -0.15826665237751403,
+   "reply": "Sherlock Holmes"
+  },
+  "42": {
+   "named": true,
+   "logp": -1.0332639490038558,
+   "reply": "Sherlock Holmes"
+  },
+  "43": {
+   "named": true,
+   "logp": -0.001966349509570916,
+   "reply": "Sherlock Holmes"
+  },
+  "44": {
+   "named": true,
+   "logp": -0.008542121430027836,
+   "reply": "Sherlock Holmes"
+  },
+  "45": {
+   "named": true,
+   "logp": -0.06261629571875388,
+   "reply": "Sherlock Holmes"
+  },
+  "46": {
+   "named": true,
+   "logp": -0.18101370264642835,
+   "reply": "Sherlock Holmes"
+  },
+  "47": {
+   "named": true,
+   "logp": -0.008845912482384609,
+   "reply": "Sherlock Holmes"
+  },
+  "48": {
+   "named": true,
+   "logp": -0.02400165604748001,
+   "reply": "Sherlock Holmes"
+  },
+  "49": {
+   "named": true,
+   "logp": -0.43251705336644214,
+   "reply": "Sherlock Holmes"
+  },
+  "50": {
+   "named": false,
+   "logp": -6.952868307321964,
+   "reply": "Tarzan"
+  },
+  "51": {
+   "named": true,
+   "logp": -0.8645380701859919,
+   "reply": "Sherlock Holmes"
+  },
+  "52": {
+   "named": true,
+   "logp": -0.013911741518497932,
+   "reply": "Sherlock Holmes"
+  },
+  "53": {
+   "named": true,
+   "logp": -0.24507055255899318,
+   "reply": "Sherlock Holmes"
+  },
+  "54": {
+   "named": false,
+   "logp": -1.493492835184187,
+   "reply": "Hercule Poirot"
+  },
+  "55": {
+   "named": true,
+   "logp": -0.25170701414196944,
+   "reply": "Sherlock Holmes"
+  },
+  "56": {
+   "named": true,
+   "logp": -0.014199765937036805,
+   "reply": "Sherlock Holmes"
+  },
+  "57": {
+   "named": true,
+   "logp": -0.03241275061399628,
+   "reply": "Sherlock Holmes"
+  },
+  "58": {
+   "named": false,
+   "logp": -2.560448525511944,
+   "reply": "Dr. Jekyll"
+  },
+  "59": {
+   "named": true,
+   "logp": -0.022760608608857025,
+   "reply": "Sherlock Holmes"
+  },
+  "60": {
+   "named": true,
+   "logp": -0.4514797812387982,
+   "reply": "Sherlock Holmes"
+  },
+  "61": {
+   "named": true,
+   "logp": -0.025781017663686994,
+   "reply": "Sherlock Holmes"
+  },
+  "62": {
+   "named": true,
+   "logp": -0.0026598171824628726,
+   "reply": "Sherlock Holmes"
+  },
+  "63": {
+   "named": false,
+   "logp": -0.8235549837960296,
+   "reply": "Suffragette City"
+  },
+  "64": {
+   "named": true,
+   "logp": -0.0038365675388497703,
+   "reply": "Sherlock Holmes"
+  },
+  "65": {
+   "named": true,
+   "logp": -0.007148976323623513,
+   "reply": "Sherlock Holmes"
+  },
+  "66": {
+   "named": true,
+   "logp": -0.0042681067604126875,
+   "reply": "Sherlock Holmes"
+  },
+  "67": {
+   "named": true,
+   "logp": -0.013014543135850876,
+   "reply": "Sherlock Holmes"
+  },
+  "68": {
+   "named": true,
+   "logp": -0.13138729074665723,
+   "reply": "Sherlock Holmes"
+  },
+  "69": {
+   "named": false,
+   "logp": -4.648199557947878,
+   "reply": "Zorro"
+  },
+  "70": {
+   "named": true,
+   "logp": -0.3447495664983501,
+   "reply": "Sherlock Holmes"
+  },
+  "71": {
+   "named": true,
+   "logp": -0.013089497662589194,
+   "reply": "Sherlock Holmes"
+  },
+  "72": {
+   "named": true,
+   "logp": -0.06034737713915404,
+   "reply": "Sherlock Holmes"
+  },
+  "73": {
+   "named": true,
+   "logp": -0.21326772423528312,
+   "reply": "Sherlock Holmes"
+  },
+  "74": {
+   "named": true,
+   "logp": -0.7372964325218332,
+   "reply": "Sherlock Holmes"
+  },
+  "75": {
+   "named": true,
+   "logp": -0.0002693967728982621,
+   "reply": "Sherlock Holmes"
+  },
+  "76": {
+   "named": true,
+   "logp": -0.05001733354281896,
+   "reply": "Sherlock Holmes"
+  },
+  "77": {
+   "named": true,
+   "logp": -0.008785022081597557,
+   "reply": "Sherlock Holmes"
+  },
+  "78": {
+   "named": true,
+   "logp": -0.03233092860104041,
+   "reply": "Sherlock Holmes"
+  },
+  "79": {
+   "named": true,
+   "logp": -0.3412145280520464,
+   "reply": "Sherlock Holmes"
+  },
+  "80": {
+   "named": true,
+   "logp": -0.27930228298974336,
+   "reply": "Sherlock Holmes"
+  },
+  "81": {
+   "named": true,
+   "logp": -0.09778394723843914,
+   "reply": "Sherlock Holmes"
+  },
+  "82": {
+   "named": true,
+   "logp": -0.7018495884792627,
+   "reply": "Sherlock Holmes"
+  },
+  "83": {
+   "named": true,
+   "logp": -0.9294361470735775,
+   "reply": "Sherlock Holmes"
+  },
+  "84": {
+   "named": true,
+   "logp": -0.0008871106411596784,
+   "reply": "Sherlock Holmes"
+  },
+  "85": {
+   "named": false,
+   "logp": -14.259461967675277,
+   "reply": "James Bond"
+  },
+  "86": {
+   "named": true,
+   "logp": -0.0021325878054476123,
+   "reply": "Sherlock Holmes"
+  },
+  "87": {
+   "named": true,
+   "logp": -0.03294561450880846,
+   "reply": "Sherlock Holmes"
+  },
+  "88": {
+   "named": true,
+   "logp": -0.006404827421629739,
+   "reply": "Sherlock Holmes"
+  },
+  "89": {
+   "named": true,
+   "logp": -1.931247894225411e-05,
+   "reply": "Sherlock Holmes"
+  },
+  "90": {
+   "named": true,
+   "logp": -0.0016432289573677457,
+   "reply": "Sherlock Holmes"
+  },
+  "91": {
+   "named": true,
+   "logp": -0.03636460024637384,
+   "reply": "Sherlock Holmes"
+  },
+  "92": {
+   "named": true,
+   "logp": -3.2659370830535075e-05,
+   "reply": "Sherlock Holmes"
+  },
+  "93": {
+   "named": false,
+   "logp": -0.9854695405558305,
+   "reply": "Zorro"
+  },
+  "94": {
+   "named": false,
+   "logp": -5.631904984608539,
+   "reply": "Dracula"
+  },
+  "95": {
+   "named": true,
+   "logp": -0.024764673748196995,
+   "reply": "Sherlock Holmes"
+  },
+  "96": {
+   "named": true,
+   "logp": -0.05732266073181047,
+   "reply": "Sherlock Holmes"
+  },
+  "97": {
+   "named": true,
+   "logp": -0.24475080260501297,
+   "reply": "Sherlock Holmes"
+  },
+  "98": {
+   "named": true,
+   "logp": -0.00012582511787552847,
+   "reply": "Sherlock Holmes"
+  },
+  "99": {
+   "named": true,
+   "logp": -4.516589829881248e-05,
+   "reply": "Sherlock Holmes"
+  },
+  "100": {
+   "named": false,
+   "logp": -2.0037397508120804,
+   "reply": "James Bond"
+  },
+  "101": {
+   "named": false,
+   "logp": -1.63622455133447,
+   "reply": "James Bond"
+  },
+  "102": {
+   "named": true,
+   "logp": -0.01994614194916837,
+   "reply": "Sherlock Holmes"
+  },
+  "103": {
+   "named": false,
+   "logp": -3.0715956502141784,
+   "reply": "Zorro"
+  },
+  "104": {
+   "named": true,
+   "logp": -0.22802498288335935,
+   "reply": "Sherlock Holmes"
+  },
+  "105": {
+   "named": true,
+   "logp": -0.008602295851370527,
+   "reply": "Sherlock Holmes"
+  },
+  "106": {
+   "named": true,
+   "logp": -0.1535533706891218,
+   "reply": "Sherlock Holmes"
+  },
+  "107": {
+   "named": true,
+   "logp": -0.47344574825150426,
+   "reply": "Sherlock Holmes"
+  },
+  "108": {
+   "named": true,
+   "logp": -0.05914999124624517,
+   "reply": "Sherlock Holmes"
+  },
+  "109": {
+   "named": false,
+   "logp": -6.447654411545467,
+   "reply": "Hamlet"
+  },
+  "110": {
+   "named": true,
+   "logp": -0.007370603112157455,
+   "reply": "Sherlock Holmes"
+  },
+  "111": {
+   "named": true,
+   "logp": -0.00029218755277115726,
+   "reply": "Sherlock Holmes"
+  },
+  "112": {
+   "named": true,
+   "logp": -0.0038435641394914564,
+   "reply": "Sherlock Holmes"
+  },
+  "113": {
+   "named": true,
+   "logp": -0.14316826626755655,
+   "reply": "Sherlock Holmes"
+  },
+  "114": {
+   "named": false,
+   "logp": -2.277142943937554,
+   "reply": "Batman"
+  },
+  "115": {
+   "named": false,
+   "logp": -2.5237649141263114,
+   "reply": "Jack the Ripper"
+  },
+  "116": {
+   "named": true,
+   "logp": -0.26472316636871673,
+   "reply": "Sherlock Holmes"
+  },
+  "117": {
+   "named": false,
+   "logp": -11.496862346242414,
+   "reply": "Viggo Mortensen"
+  },
+  "118": {
+   "named": true,
+   "logp": -0.008227363162629764,
+   "reply": "Sherlock Holmes"
+  },
+  "119": {
+   "named": true,
+   "logp": -1.6927633703796546e-05,
+   "reply": "Sherlock Holmes"
+  },
+  "120": {
+   "named": false,
+   "logp": -2.328073018820673,
+   "reply": "Keanu Reeves as Neo from The Matrix"
+  },
+  "121": {
+   "named": true,
+   "logp": -0.001408451529988645,
+   "reply": "Sherlock Holmes"
+  },
+  "122": {
+   "named": true,
+   "logp": -0.22108852806581447,
+   "reply": "Sherlock Holmes"
+  },
+  "123": {
+   "named": true,
+   "logp": -0.187212044345686,
+   "reply": "Sherlock Holmes"
+  },
+  "124": {
+   "named": false,
+   "logp": -4.348267817060764,
+   "reply": "James Bond"
+  },
+  "125": {
+   "named": true,
+   "logp": -0.005378836602201492,
+   "reply": "Sherlock Holmes"
+  },
+  "126": {
+   "named": false,
+   "logp": -4.567384722306347,
+   "reply": "James Bond"
+  },
+  "127": {
+   "named": true,
+   "logp": -0.037781063465290164,
+   "reply": "Sherlock Holmes"
+  },
+  "128": {
+   "named": true,
+   "logp": -0.0170697731551938,
+   "reply": "Sherlock Holmes"
+  },
+  "129": {
+   "named": false,
+   "logp": -1.6177705657578647,
+   "reply": "Hercules"
+  },
+  "130": {
+   "named": true,
+   "logp": -0.0011548870471503607,
+   "reply": "Sherlock Holmes"
+  },
+  "131": {
+   "named": true,
+   "logp": -0.28138526467419833,
+   "reply": "Sherlock Holmes"
+  },
+  "132": {
+   "named": true,
+   "logp": -0.0013821166804179543,
+   "reply": "Sherlock Holmes"
+  },
+  "133": {
+   "named": true,
+   "logp": -0.003127263480554055,
+   "reply": "Sherlock Holmes"
+  },
+  "134": {
+   "named": true,
+   "logp": -0.0023012321126202584,
+   "reply": "Sherlock Holmes"
+  },
+  "135": {
+   "named": true,
+   "logp": -0.006706293189359524,
+   "reply": "Sherlock Holmes"
+  },
+  "136": {
+   "named": true,
+   "logp": -0.00021169549666438196,
+   "reply": "Sherlock Holmes"
+  },
+  "137": {
+   "named": true,
+   "logp": -1.6735797384251562e-05,
+   "reply": "Sherlock Holmes"
+  },
+  "138": {
+   "named": true,
+   "logp": -0.00022993075799767506,
+   "reply": "Sherlock Holmes"
+  },
+  "139": {
+   "named": true,
+   "logp": -0.09406443911436975,
+   "reply": "Sherlock Holmes"
+  },
+  "140": {
+   "named": true,
+   "logp": -0.7939567409185995,
+   "reply": "Sherlock Holmes"
+  },
+  "141": {
+   "named": true,
+   "logp": -0.03456635199967144,
+   "reply": "Sherlock Holmes"
+  },
+  "142": {
+   "named": true,
+   "logp": -0.1629458782798427,
+   "reply": "Sherlock Holmes"
+  },
+  "143": {
+   "named": true,
+   "logp": -0.43512334096110084,
+   "reply": "Sherlock Holmes"
+  },
+  "144": {
+   "named": true,
+   "logp": -0.17930394104794126,
+   "reply": "Sherlock Holmes"
+  },
+  "145": {
+   "named": false,
+   "logp": -9.283813669113606,
+   "reply": "Napoleon"
+  },
+  "146": {
+   "named": false,
+   "logp": -1.885463982642075,
+   "reply": "Zorro"
+  },
+  "147": {
+   "named": false,
+   "logp": -18.134612465380908,
+   "reply": "Batman"
+  },
+  "148": {
+   "named": false,
+   "logp": -4.762187611940111,
+   "reply": "Puss in Boots"
+  },
+  "149": {
+   "named": false,
+   "logp": -1.9024908453981757,
+   "reply": "Hercule Poirot"
+  },
+  "150": {
+   "named": true,
+   "logp": -0.19991999868295654,
+   "reply": "Sherlock Holmes"
+  },
+  "151": {
+   "named": true,
+   "logp": -0.017225491483379807,
+   "reply": "Sherlock Holmes"
+  },
+  "152": {
+   "named": false,
+   "logp": -1.135519649898438,
+   "reply": "Hercules"
+  },
+  "153": {
+   "named": true,
+   "logp": -0.5825158025074338,
+   "reply": "Sherlock Holmes"
+  },
+  "154": {
+   "named": true,
+   "logp": -0.05280395698304339,
+   "reply": "Sherlock Holmes"
+  },
+  "155": {
+   "named": false,
+   "logp": -1.8764819183916892,
+   "reply": "Romeo"
+  },
+  "156": {
+   "named": false,
+   "logp": -1.9807386760118828,
+   "reply": "Superman"
+  },
+  "157": {
+   "named": false,
+   "logp": -2.21980265033099,
+   "reply": "Batman"
+  },
+  "158": {
+   "named": false,
+   "logp": -2.0824451202598215,
+   "reply": "Zorro"
+  },
+  "159": {
+   "named": true,
+   "logp": -0.03643232967365165,
+   "reply": "Sherlock Holmes"
+  },
+  "160": {
+   "named": false,
+   "logp": -7.700172163646513,
+   "reply": "Spider-Man"
+  },
+  "161": {
+   "named": false,
+   "logp": -1.2446497405888846,
+   "reply": "Zorro"
+  },
+  "162": {
+   "named": true,
+   "logp": -0.08568918354016104,
+   "reply": "Sherlock Holmes"
+  },
+  "163": {
+   "named": false,
+   "logp": -2.0619731843492777,
+   "reply": "Hercule Poirot"
+  },
+  "164": {
+   "named": false,
+   "logp": -3.292509615330986,
+   "reply": "Poirot"
+  },
+  "165": {
+   "named": false,
+   "logp": -10.58993687423232,
+   "reply": "Jason Voorhees"
+  },
+  "166": {
+   "named": false,
+   "logp": -5.3366270416395825,
+   "reply": "Hercules"
+  },
+  "167": {
+   "named": true,
+   "logp": -0.007856859373419461,
+   "reply": "Sherlock Holmes"
+  },
+  "168": {
+   "named": false,
+   "logp": -7.843776858549129,
+   "reply": "Hamlet"
+  },
+  "169": {
+   "named": false,
+   "logp": -4.117328916228958,
+   "reply": "Humphrey Bogart"
+  },
+  "170": {
+   "named": true,
+   "logp": -0.14695514617869015,
+   "reply": "Sherlock Holmes"
+  },
+  "171": {
+   "named": true,
+   "logp": -0.33752086260803255,
+   "reply": "Sherlock Holmes"
+  },
+  "172": {
+   "named": true,
+   "logp": -0.23723867776069374,
+   "reply": "Sherlock Holmes"
+  },
+  "173": {
+   "named": false,
+   "logp": -1.8451539421538896,
+   "reply": "Hamlet"
+  },
+  "174": {
+   "named": false,
+   "logp": -12.261706283733973,
+   "reply": "James Bond"
+  },
+  "175": {
+   "named": false,
+   "logp": -1.6443414596142105,
+   "reply": "Hercule Poirot"
+  },
+  "176": {
+   "named": true,
+   "logp": -0.052822038316122144,
+   "reply": "Sherlock Holmes"
+  },
+  "177": {
+   "named": true,
+   "logp": -0.10624621398051358,
+   "reply": "Sherlock Holmes"
+  },
+  "178": {
+   "named": true,
+   "logp": -0.38966452808014107,
+   "reply": "Sherlock Holmes"
+  },
+  "179": {
+   "named": false,
+   "logp": -2.1889679272459555,
+   "reply": "Zorro"
+  },
+  "180": {
+   "named": true,
+   "logp": -0.20957687783720466,
+   "reply": "Sherlock Holmes"
+  },
+  "181": {
+   "named": false,
+   "logp": -16.00025116855861,
+   "reply": "Dracula"
+  },
+  "182": {
+   "named": true,
+   "logp": -0.05346532348707339,
+   "reply": "Sherlock Holmes"
+  },
+  "183": {
+   "named": false,
+   "logp": -1.4681276522653328,
+   "reply": "Batman"
+  },
+  "184": {
+   "named": false,
+   "logp": -3.11395474500203,
+   "reply": "Hercule Poirot"
+  },
+  "185": {
+   "named": true,
+   "logp": -0.20913384693421527,
+   "reply": "Sherlock Holmes"
+  },
+  "186": {
+   "named": false,
+   "logp": -3.259898575274555,
+   "reply": "Hercule Poirot"
+  },
+  "187": {
+   "named": false,
+   "logp": -4.154168372677493,
+   "reply": "Zorro"
+  },
+  "188": {
+   "named": true,
+   "logp": -0.025755563922443037,
+   "reply": "Sherlock Holmes"
+  },
+  "189": {
+   "named": true,
+   "logp": -0.05360500560431618,
+   "reply": "Sherlock Holmes"
+  },
+  "190": {
+   "named": false,
+   "logp": -3.535611374336547,
+   "reply": "Faust"
+  },
+  "191": {
+   "named": false,
+   "logp": -2.293391419534262,
+   "reply": "Hercule Poirot"
+  },
+  "192": {
+   "named": false,
+   "logp": -7.483821819280201,
+   "reply": "The story is about **Wings of the Eagle**, a"
+  },
+  "193": {
+   "named": false,
+   "logp": -2.1902388869156546,
+   "reply": "Robin Hood"
+  },
+  "194": {
+   "named": false,
+   "logp": -1.115637507911661,
+   "reply": "Zorro"
+  },
+  "195": {
+   "named": true,
+   "logp": -0.7285281389862361,
+   "reply": "Sherlock Holmes"
+  },
+  "196": {
+   "named": false,
+   "logp": -1.1930864455036398,
+   "reply": "Batman"
+  },
+  "197": {
+   "named": true,
+   "logp": -0.021237513127520202,
+   "reply": "Sherlock Holmes"
+  },
+  "198": {
+   "named": false,
+   "logp": -5.49389673549657,
+   "reply": "Atticus Finch"
+  },
+  "199": {
+   "named": false,
+   "logp": -5.674686135399857,
+   "reply": "James Bond"
+  },
+  "200": {
+   "named": false,
+   "logp": -1.9251383743087231,
+   "reply": "Zorro"
+  },
+  "201": {
+   "named": false,
+   "logp": -7.102125497518665,
+   "reply": "Marlino"
+  },
+  "202": {
+   "named": true,
+   "logp": -0.8498183348072378,
+   "reply": "Sherlock Holmes"
+  },
+  "203": {
+   "named": true,
+   "logp": -0.8761191429615652,
+   "reply": "Sherlock Holmes"
+  },
+  "204": {
+   "named": false,
+   "logp": -1.2698016103236744,
+   "reply": "Zorro"
+  },
+  "205": {
+   "named": true,
+   "logp": -0.8988226489145311,
+   "reply": "Sherlock Holmes"
+  },
+  "206": {
+   "named": true,
+   "logp": -0.8939484037650695,
+   "reply": "Sherlock Holmes"
+  },
+  "207": {
+   "named": false,
+   "logp": -3.889810439163255,
+   "reply": "James Bond"
+  },
+  "208": {
+   "named": false,
+   "logp": -3.8458533596108695,
+   "reply": "Zorro"
+  },
+  "209": {
+   "named": true,
+   "logp": -0.6164441844978253,
+   "reply": "Sherlock Holmes"
+  },
+  "210": {
+   "named": false,
+   "logp": -1.9056573249057256,
+   "reply": "James Bond"
+  },
+  "211": {
+   "named": false,
+   "logp": -6.738765201186674,
+   "reply": "Zorro"
+  },
+  "212": {
+   "named": false,
+   "logp": -1.7970757900489347,
+   "reply": "Huckleberry Finn"
+  },
+  "213": {
+   "named": false,
+   "logp": -3.5153094518409578,
+   "reply": "Zorro"
+  },
+  "214": {
+   "named": false,
+   "logp": -1.0229641409712389,
+   "reply": "James Bond"
+  },
+  "215": {
+   "named": true,
+   "logp": -0.12110396612118102,
+   "reply": "Sherlock Holmes"
+  },
+  "216": {
+   "named": false,
+   "logp": -8.5754565934954,
+   "reply": "Dr. Jekyll"
+  },
+  "217": {
+   "named": false,
+   "logp": -8.463568294985441,
+   "reply": "Zorro"
+  },
+  "218": {
+   "named": false,
+   "logp": -1.5270421904827287,
+   "reply": "Batman"
+  },
+  "219": {
+   "named": true,
+   "logp": -0.04272886880021017,
+   "reply": "Sherlock Holmes"
+  },
+  "220": {
+   "named": true,
+   "logp": -0.0270159728002748,
+   "reply": "Sherlock Holmes"
+  },
+  "221": {
+   "named": false,
+   "logp": -8.21785671702928,
+   "reply": "James Bond"
+  },
+  "222": {
+   "named": false,
+   "logp": -5.122104410665941,
+   "reply": "Poirot"
+  },
+  "223": {
+   "named": true,
+   "logp": -0.5787005891702686,
+   "reply": "Sherlock Holmes"
+  },
+  "224": {
+   "named": false,
+   "logp": -3.0877142663748236,
+   "reply": "Zorro"
+  },
+  "225": {
+   "named": false,
+   "logp": -3.2209953379261744,
+   "reply": "Django"
+  },
+  "226": {
+   "named": true,
+   "logp": -0.02768428557249645,
+   "reply": "Sherlock Holmes"
+  },
+  "227": {
+   "named": false,
+   "logp": -1.8170075166509616,
+   "reply": "Dashiell Hammett"
+  },
+  "228": {
+   "named": true,
+   "logp": -0.08547970501571336,
+   "reply": "Sherlock Holmes"
+  },
+  "229": {
+   "named": false,
+   "logp": -4.73139685671674,
+   "reply": "Batman"
+  },
+  "230": {
+   "named": false,
+   "logp": -3.6507232326575423,
+   "reply": "Zorro"
+  },
+  "231": {
+   "named": false,
+   "logp": -1.597657012731321,
+   "reply": "Batman"
+  },
+  "232": {
+   "named": false,
+   "logp": -4.5085841236635495,
+   "reply": "Zorro"
+  },
+  "233": {
+   "named": false,
+   "logp": -2.0650029340270066,
+   "reply": "Hercules"
+  },
+  "234": {
+   "named": false,
+   "logp": -3.8951140742674943,
+   "reply": "Hercules"
+  },
+  "235": {
+   "named": false,
+   "logp": -2.7095796668722145,
+   "reply": "Zorro"
+  },
+  "236": {
+   "named": true,
+   "logp": -0.15469919759734915,
+   "reply": "Sherlock Holmes"
+  },
+  "237": {
+   "named": false,
+   "logp": -2.9229717413965832,
+   "reply": "James Bond"
+  },
+  "238": {
+   "named": false,
+   "logp": -1.7160678223948742,
+   "reply": "Phantom of the Opera"
+  },
+  "239": {
+   "named": false,
+   "logp": -6.0758741179714315,
+   "reply": "Batman"
+  },
+  "240": {
+   "named": true,
+   "logp": -0.32822491145684196,
+   "reply": "Sherlock Holmes"
+  },
+  "241": {
+   "named": false,
+   "logp": -7.534568259272479,
+   "reply": "James Bond"
+  },
+  "242": {
+   "named": true,
+   "logp": -0.4548397953395649,
+   "reply": "Sherlock Holmes"
+  },
+  "243": {
+   "named": false,
+   "logp": -4.023723471705629,
+   "reply": "Zorro"
+  },
+  "244": {
+   "named": false,
+   "logp": -2.6275903420486397,
+   "reply": "Zorro"
+  },
+  "245": {
+   "named": false,
+   "logp": -11.144167731450034,
+   "reply": "James Bond"
+  },
+  "246": {
+   "named": true,
+   "logp": -1.0073088185379462,
+   "reply": "Sherlock Holmes"
+  },
+  "247": {
+   "named": true,
+   "logp": -0.9320210835849609,
+   "reply": "Sherlock Holmes"
+  },
+  "248": {
+   "named": false,
+   "logp": -3.880524794621328,
+   "reply": "Zorro"
+  },
+  "249": {
+   "named": false,
+   "logp": -1.1196528244153556,
+   "reply": "Zorro"
+  },
+  "250": {
+   "named": false,
+   "logp": -8.748570591996806,
+   "reply": "Daisy Duke"
+  },
+  "251": {
+   "named": false,
+   "logp": -1.8280643309891398,
+   "reply": "Zorro"
+  },
+  "252": {
+   "named": true,
+   "logp": -0.9141161648371017,
+   "reply": "Sherlock Holmes"
+  },
+  "253": {
+   "named": false,
+   "logp": -11.516863429490254,
+   "reply": "James Bond"
+  },
+  "254": {
+   "named": true,
+   "logp": -0.32521852577746935,
+   "reply": "Sherlock Holmes"
+  },
+  "255": {
+   "named": true,
+   "logp": -0.6502419596661805,
+   "reply": "Sherlock Holmes"
+  },
+  "256": {
+   "named": false,
+   "logp": -2.0198622128664447,
+   "reply": "Zorro"
+  },
+  "257": {
+   "named": true,
+   "logp": -0.520535863739848,
+   "reply": "Sherlock Holmes"
+  },
+  "258": {
+   "named": true,
+   "logp": -0.04791099926992045,
+   "reply": "Sherlock Holmes"
+  },
+  "259": {
+   "named": false,
+   "logp": -2.8570457387014776,
+   "reply": "Zorro"
+  },
+  "260": {
+   "named": false,
+   "logp": -8.459486849994473,
+   "reply": "Scarlet Pimpernel"
+  },
+  "261": {
+   "named": true,
+   "logp": -0.4498539587356494,
+   "reply": "Sherlock Holmes"
+  },
+  "262": {
+   "named": false,
+   "logp": -3.5807832540903273,
+   "reply": "Batman"
+  },
+  "263": {
+   "named": false,
+   "logp": -3.9564047826571076,
+   "reply": "Romeo"
+  },
+  "264": {
+   "named": true,
+   "logp": -0.07560295444492497,
+   "reply": "Sherlock Holmes"
+  },
+  "265": {
+   "named": true,
+   "logp": -1.4769270367645988,
+   "reply": "Sherlock Holmes"
+  },
+  "266": {
+   "named": true,
+   "logp": -0.00039259533243996583,
+   "reply": "Sherlock Holmes"
+  },
+  "267": {
+   "named": false,
+   "logp": -6.951387307308178,
+   "reply": "Houdini"
+  },
+  "268": {
+   "named": false,
+   "logp": -2.904255280050905,
+   "reply": "Batman"
+  },
+  "269": {
+   "named": true,
+   "logp": -0.7224253729703556,
+   "reply": "Sherlock Holmes"
+  },
+  "270": {
+   "named": true,
+   "logp": -0.6111301713321468,
+   "reply": "Sherlock Holmes"
+  },
+  "271": {
+   "named": false,
+   "logp": -5.679999786928836,
+   "reply": "Pulp Fiction"
+  },
+  "272": {
+   "named": false,
+   "logp": -1.3577582815920144,
+   "reply": "Hercules"
+  },
+  "273": {
+   "named": false,
+   "logp": -1.0854755620366014,
+   "reply": "Zorro"
+  },
+  "274": {
+   "named": false,
+   "logp": -2.738335784195771,
+   "reply": "Nancy Drew"
+  },
+  "275": {
+   "named": true,
+   "logp": -1.1337530269877416,
+   "reply": "Sherlock Holmes"
+  },
+  "276": {
+   "named": true,
+   "logp": -1.2420047054746342,
+   "reply": "Sherlock Holmes"
+  },
+  "277": {
+   "named": false,
+   "logp": -6.340669322350526,
+   "reply": "Dashiell Hammett"
+  },
+  "278": {
+   "named": false,
+   "logp": -3.94011680971942,
+   "reply": "Hamlet"
+  },
+  "279": {
+   "named": false,
+   "logp": -3.6601803375610995,
+   "reply": "Zorro"
+  },
+  "280": {
+   "named": false,
+   "logp": -2.1263817746646456,
+   "reply": "Zorro"
+  },
+  "281": {
+   "named": true,
+   "logp": -0.5282743227479249,
+   "reply": "Sherlock Holmes"
+  },
+  "282": {
+   "named": false,
+   "logp": -8.74731065921679,
+   "reply": "The Hulk"
+  },
+  "283": {
+   "named": false,
+   "logp": -1.367990134894649,
+   "reply": "Batman"
+  },
+  "284": {
+   "named": false,
+   "logp": -6.6027252284320905,
+   "reply": "Zorro"
+  },
+  "285": {
+   "named": false,
+   "logp": -6.615679809392756,
+   "reply": "Edmund Dantès"
+  },
+  "286": {
+   "named": false,
+   "logp": -2.7234091108729186,
+   "reply": "Ophelia"
+  },
+  "287": {
+   "named": false,
+   "logp": -6.74731507601697,
+   "reply": "Zorro"
+  },
+  "288": {
+   "named": false,
+   "logp": -3.102509114024653,
+   "reply": "Poirot"
+  },
+  "289": {
+   "named": false,
+   "logp": -6.442843808883118,
+   "reply": "Tarzan"
+  },
+  "290": {
+   "named": true,
+   "logp": -0.12018225122540815,
+   "reply": "Sherlock Holmes"
+  },
+  "291": {
+   "named": false,
+   "logp": -2.1217727916007174,
+   "reply": "Zorro"
+  },
+  "292": {
+   "named": true,
+   "logp": -0.004624928556318504,
+   "reply": "Sherlock Holmes"
+  },
+  "293": {
+   "named": false,
+   "logp": -16.83432266664448,
+   "reply": "James Bond"
+  },
+  "294": {
+   "named": true,
+   "logp": -1.2336702200204952,
+   "reply": "Sherlock Holmes"
+  },
+  "295": {
+   "named": false,
+   "logp": -5.944298368378294,
+   "reply": "Django"
+  },
+  "296": {
+   "named": false,
+   "logp": -13.471542630684546,
+   "reply": "Daisy Miller"
+  },
+  "297": {
+   "named": false,
+   "logp": -14.477817095095052,
+   "reply": "Dracula"
+  },
+  "298": {
+   "named": true,
+   "logp": -1.6215112697506366,
+   "reply": "Sherlock Holmes"
+  },
+  "299": {
+   "named": false,
+   "logp": -3.88836713368206,
+   "reply": "Scarlet Pimpernel"
+  },
+  "300": {
+   "named": false,
+   "logp": -4.046519559970953,
+   "reply": "Pride and Prejudice"
+  },
+  "301": {
+   "named": false,
+   "logp": -8.547718151084569,
+   "reply": "Wendigo"
+  },
+  "302": {
+   "named": true,
+   "logp": -0.013707470699025911,
+   "reply": "Sherlock Holmes"
+  },
+  "303": {
+   "named": false,
+   "logp": -6.401687904010318,
+   "reply": "Hitchcock's *Vertigo*"
+  },
+  "304": {
+   "named": true,
+   "logp": -0.4116138738597955,
+   "reply": "Sherlock Holmes"
+  },
+  "305": {
+   "named": false,
+   "logp": -2.420341158835784,
+   "reply": "Sam Spade"
+  },
+  "306": {
+   "named": false,
+   "logp": -4.8743254249176236,
+   "reply": "Sam Spade"
+  },
+  "307": {
+   "named": false,
+   "logp": -2.212558486839993,
+   "reply": "Hercules"
+  },
+  "308": {
+   "named": false,
+   "logp": -5.065829606333239,
+   "reply": "Hitchcock's \"The Birds\" is not the answer"
+  },
+  "309": {
+   "named": true,
+   "logp": -0.31739081458694374,
+   "reply": "Sherlock Holmes"
+  },
+  "310": {
+   "named": false,
+   "logp": -3.9489383857741664,
+   "reply": "Hitchcock's *The Birds* is not the answer"
+  },
+  "311": {
+   "named": false,
+   "logp": -3.0876756191607755,
+   "reply": "Hercule Poirot"
+  },
+  "312": {
+   "named": false,
+   "logp": -5.360343694740758,
+   "reply": "Psycho"
+  },
+  "313": {
+   "named": false,
+   "logp": -16.871723000661774,
+   "reply": "James Bond"
+  },
+  "314": {
+   "named": false,
+   "logp": -4.25476569629201,
+   "reply": "Agatha Christie"
+  },
+  "315": {
+   "named": false,
+   "logp": -2.5836740818717385,
+   "reply": "Zorro"
+  },
+  "316": {
+   "named": false,
+   "logp": -3.151170944091073,
+   "reply": "Zorro"
+  },
+  "317": {
+   "named": true,
+   "logp": -0.5555782721280529,
+   "reply": "Sherlock Holmes"
+  },
+  "318": {
+   "named": false,
+   "logp": -11.594449892824983,
+   "reply": "Pulp Fiction"
+  },
+  "319": {
+   "named": false,
+   "logp": -8.235678656674533,
+   "reply": "Dracula"
+  },
+  "320": {
+   "named": false,
+   "logp": -3.3438754422650883,
+   "reply": "Zorro"
+  },
+  "321": {
+   "named": false,
+   "logp": -1.2981895944732837,
+   "reply": "Hercule Poirot"
+  },
+  "322": {
+   "named": true,
+   "logp": -0.47723147821112916,
+   "reply": "Sherlock Holmes"
+  },
+  "323": {
+   "named": true,
+   "logp": -0.8199692157280447,
+   "reply": "Sherlock Holmes"
+  },
+  "324": {
+   "named": false,
+   "logp": -5.387895473678691,
+   "reply": "Zedekiah"
+  },
+  "325": {
+   "named": false,
+   "logp": -6.864157982612683,
+   "reply": "James Bond"
+  },
+  "326": {
+   "named": false,
+   "logp": -8.891819637148586,
+   "reply": "Nancy Drew"
+  },
+  "327": {
+   "named": false,
+   "logp": -2.2657244691231364,
+   "reply": "Philip Marlowe"
+  },
+  "328": {
+   "named": false,
+   "logp": -5.011714435317225,
+   "reply": "Huckleberry Finn"
+  },
+  "329": {
+   "named": false,
+   "logp": -6.275654167095091,
+   "reply": "X-Men"
+  },
+  "330": {
+   "named": false,
+   "logp": -8.63398587491571,
+   "reply": "Pulp Fiction"
+  },
+  "331": {
+   "named": false,
+   "logp": -8.599956633964194,
+   "reply": "Scooby-Doo"
+  },
+  "332": {
+   "named": false,
+   "logp": -4.545231232696654,
+   "reply": "Dashiell Hammett"
+  },
+  "333": {
+   "named": false,
+   "logp": -2.592392409404284,
+   "reply": "Huckleberry Finn"
+  },
+  "334": {
+   "named": false,
+   "logp": -9.488352726886845,
+   "reply": "Cinderella"
+  },
+  "335": {
+   "named": false,
+   "logp": -3.8525529637455884,
+   "reply": "Pulp Fiction"
+  },
+  "336": {
+   "named": false,
+   "logp": -7.539350675614989,
+   "reply": "Spider-Man"
+  },
+  "337": {
+   "named": false,
+   "logp": -8.690429624706649,
+   "reply": "The story is about **Hansel and Gretel**"
+  },
+  "338": {
+   "named": false,
+   "logp": -20.068397277941486,
+   "reply": "Deckard"
+  },
+  "339": {
+   "named": false,
+   "logp": -7.203698728891143,
+   "reply": "Scooby-Doo"
+  },
+  "340": {
+   "named": false,
+   "logp": -6.61289315901694,
+   "reply": "Dr. Jekyll"
+  },
+  "341": {
+   "named": true,
+   "logp": -1.8113105650365167,
+   "reply": "The story is about **Sherlock Holmes**."
+  },
+  "342": {
+   "named": false,
+   "logp": -15.193086072545087,
+   "reply": "Jigsaw"
+  },
+  "343": {
+   "named": false,
+   "logp": -4.140112386406383,
+   "reply": "Hercule Poirot"
+  },
+  "344": {
+   "named": false,
+   "logp": -12.666892736680165,
+   "reply": "Don Quixote"
+  },
+  "345": {
+   "named": false,
+   "logp": -2.0929187622091523,
+   "reply": "Poirot"
+  },
+  "346": {
+   "named": false,
+   "logp": -5.471479791959319,
+   "reply": "Hamlet"
+  },
+  "347": {
+   "named": true,
+   "logp": -0.07200623540852645,
+   "reply": "Sherlock Holmes"
+  },
+  "348": {
+   "named": false,
+   "logp": -6.366024360514792,
+   "reply": "Moby-Dick"
+  },
+  "349": {
+   "named": true,
+   "logp": -0.13751290135401603,
+   "reply": "Sherlock Holmes"
+  },
+  "350": {
+   "named": true,
+   "logp": -0.046357328374949755,
+   "reply": "Sherlock Holmes"
+  },
+  "351": {
+   "named": true,
+   "logp": -0.007246427727235957,
+   "reply": "Sherlock Holmes"
+  },
+  "352": {
+   "named": false,
+   "logp": -3.6630114693325244,
+   "reply": "Dracula"
+  },
+  "353": {
+   "named": true,
+   "logp": -1.212732147123114,
+   "reply": "Sherlock Holmes"
+  },
+  "354": {
+   "named": true,
+   "logp": -0.04737373173687939,
+   "reply": "Sherlock Holmes"
+  },
+  "355": {
+   "named": false,
+   "logp": -3.633024301434893,
+   "reply": "Philip Marlowe"
+  },
+  "356": {
+   "named": false,
+   "logp": -3.593787061203304,
+   "reply": "Hedda Gabler"
+  },
+  "357": {
+   "named": true,
+   "logp": -0.047715737766936286,
+   "reply": "Sherlock Holmes"
+  },
+  "358": {
+   "named": true,
+   "logp": -0.049691679378299616,
+   "reply": "Sherlock Holmes"
+  },
+  "359": {
+   "named": true,
+   "logp": -0.01817570106000644,
+   "reply": "Sherlock Holmes"
+  },
+  "360": {
+   "named": true,
+   "logp": -0.03633215805786374,
+   "reply": "Sherlock Holmes"
+  },
+  "361": {
+   "named": false,
+   "logp": -2.1509618920447586,
+   "reply": "Hercules"
+  },
+  "362": {
+   "named": true,
+   "logp": -0.05874932165877659,
+   "reply": "Sherlock Holmes"
+  },
+  "363": {
+   "named": false,
+   "logp": -6.61059771401534,
+   "reply": "Agatha Christie"
+  },
+  "364": {
+   "named": false,
+   "logp": -2.548807685261662,
+   "reply": "Hercule Poirot"
+  },
+  "365": {
+   "named": true,
+   "logp": -0.7555029196587109,
+   "reply": "Sherlock Holmes"
+  },
+  "366": {
+   "named": false,
+   "logp": -1.8374138451210704,
+   "reply": "Poirot"
+  },
+  "367": {
+   "named": false,
+   "logp": -8.801427918493314,
+   "reply": "Peter Pan"
+  },
+  "368": {
+   "named": false,
+   "logp": -2.7146471535213754,
+   "reply": "Hans Christian Andersen"
+  },
+  "369": {
+   "named": false,
+   "logp": -2.598579514080255,
+   "reply": "James Bond"
+  },
+  "370": {
+   "named": true,
+   "logp": -0.10220794416027529,
+   "reply": "Sherlock Holmes"
+  },
+  "371": {
+   "named": false,
+   "logp": -3.0891240684578367,
+   "reply": "Psycho"
+  },
+  "372": {
+   "named": false,
+   "logp": -2.567979392702927,
+   "reply": "Dracula"
+  },
+  "373": {
+   "named": true,
+   "logp": -0.012970544149499025,
+   "reply": "Sherlock Holmes"
+  },
+  "374": {
+   "named": false,
+   "logp": -5.619869974020762,
+   "reply": "Hannibal Lecter"
+  },
+  "375": {
+   "named": true,
+   "logp": -0.6094739645960824,
+   "reply": "Sherlock Holmes"
+  },
+  "376": {
+   "named": false,
+   "logp": -3.8765297571868373,
+   "reply": "Alice in Wonderland"
+  },
+  "377": {
+   "named": false,
+   "logp": -6.323907592063619,
+   "reply": "Robin Hood"
+  },
+  "378": {
+   "named": true,
+   "logp": -0.014571467096856137,
+   "reply": "Sherlock Holmes"
+  }
+ },
+ "h2": {
+  "0": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Naval Treaty\""
+  },
+  "1": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "2": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "\"The Hound of the Baskervilles\""
+  },
+  "3": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "4": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "5": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Copper Beeches\""
+  },
+  "6": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "7": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Copper Beeches\""
+  },
+  "8": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "9": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Greek Interpreter\""
+  },
+  "10": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "11": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "\"The Adventure of the Speckled Band\""
+  },
+  "12": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "13": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "14": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "15": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "\"The Adventure of the Copper Beeches\""
+  },
+  "16": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Copper Beeches\""
+  },
+  "17": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Naval Treaty\""
+  },
+  "18": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Blanched Soldier\""
+  },
+  "19": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "20": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "21": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "22": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Copper Beeches\""
+  },
+  "23": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Naval Treaty\""
+  },
+  "24": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Copper Beeches\""
+  },
+  "25": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Adventure of the Greek Interpreter"
+  },
+  "26": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "\"The Adventure of the Naval Treaty\""
+  },
+  "27": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "28": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "29": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "30": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Adventure of the Dancing Men"
+  },
+  "31": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Copper Beeches\""
+  },
+  "32": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Copper Beeches\""
+  },
+  "33": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Naval Treaty\""
+  },
+  "34": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "35": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "The Adventure of the Bruce-Partington Plans"
+  },
+  "36": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "37": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Naval Treaty\""
+  },
+  "38": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Three Garridebs\""
+  },
+  "39": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Naval Treaty\""
+  },
+  "40": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Naval Treaty\""
+  },
+  "41": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Naval Treaty\""
+  },
+  "42": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Copper Beeches\""
+  },
+  "43": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Adventure of the Bruce-Partington Plans"
+  },
+  "44": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "45": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Naval Treaty\""
+  },
+  "46": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "47": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "The Adventure of the Bruce-Partington Plans"
+  },
+  "48": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "49": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Naval Treaty\""
+  },
+  "50": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "51": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "52": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "53": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "54": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "55": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "56": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "\"The Adventure of the Lion's Mane\""
+  },
+  "57": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Naval Treaty\""
+  },
+  "58": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Speckled Band\""
+  },
+  "59": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Copper Beeches\""
+  },
+  "60": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "61": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "The Adventure of the Dancing Men"
+  },
+  "62": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "\"The Adventure of the Copper Beeches\""
+  },
+  "63": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "\"The Adventure of the Copper Beeches\""
+  },
+  "64": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "The Adventure of the Bruce-Partington Plans"
+  },
+  "65": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "66": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "67": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "\"The Hound of the Baskervilles\""
+  },
+  "68": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "69": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "70": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "71": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "\"The Adventure of the Naval Treaty\""
+  },
+  "72": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "The Adventure of the Bruce-Partington Plans"
+  },
+  "73": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "74": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "75": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "76": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Copper Beeches\""
+  },
+  "77": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "78": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "79": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "The Adventure of the Bruce-Partington Plans"
+  },
+  "80": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "81": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "The Adventure of the Copper Beeches"
+  },
+  "82": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "83": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "\"The Adventure of the Dancing Men\""
+  },
+  "84": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "85": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "The Adventure of the Bruce-Partington Plans"
+  },
+  "86": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "87": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "The Adventure of the Bruce-Partington Plans"
+  },
+  "88": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "\"The Adventure of the Copper Beeches\""
+  },
+  "89": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "The Adventure of the Bruce-Partington Plans"
+  },
+  "90": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "91": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "92": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "93": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "94": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "\"The Adventure of the Naval Treaty\""
+  },
+  "95": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "\"The Hound of the Baskervilles\""
+  },
+  "96": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "The Adventure of the Bruce-Partington Plans"
+  },
+  "97": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "98": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "99": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Copper Beeches\""
+  },
+  "100": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "The Adventure of the Bruce-Partington Plans"
+  },
+  "101": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "The Adventure of the Bruce-Partington Plans"
+  },
+  "102": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Naval Treaty\""
+  },
+  "103": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "104": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Adventure of the Speckled Band"
+  },
+  "105": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "106": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "The Adventure of the Greek Interpreter"
+  },
+  "107": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "108": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Naval Treaty\""
+  },
+  "109": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "\"The Adventure of the Speckled Band\""
+  },
+  "110": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "111": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "\"The Hound of the Baskervilles\""
+  },
+  "112": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "\"The Hound of the Baskervilles\""
+  },
+  "113": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Copper Beeches\""
+  },
+  "114": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "The Adventure of the Bruce-Partington Plans"
+  },
+  "115": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "116": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "The Adventure of the Bruce-Partington Plans"
+  },
+  "117": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "118": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "119": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "The Adventure of the Bruce-Partington Plans"
+  },
+  "120": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "The Adventure of the Bruce-Partington Plans"
+  },
+  "121": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "\"The Hound of the Baskervilles\""
+  },
+  "122": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "The Adventure of the Bruce-Partington Plans"
+  },
+  "123": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "The Adventure of the Bruce-Partington Plans"
+  },
+  "124": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "The Adventure of the Bruce-Partington Plans"
+  },
+  "125": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "126": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "127": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "The Adventure of the Naval Treaty"
+  },
+  "128": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "129": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "130": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "\"The Adventure of the Copper Beeches\""
+  },
+  "131": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "\"The Adventure of the Naval Treaty\""
+  },
+  "132": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "\"The Adventure of the Copper Beeches\""
+  },
+  "133": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "134": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "The Adventure of the Copper Beeches"
+  },
+  "135": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "136": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "The Adventure of the Bruce-Partington Plans"
+  },
+  "137": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "The Adventure of the Bruce-Partington Plans"
+  },
+  "138": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "\"The Adventure of the Bruce-Partington Plans\""
+  },
+  "139": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "The Adventure of the Bruce-Partington Plans"
+  },
+  "140": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "The Adventure of the Speckled Band"
+  }
+ },
+ "summary": {
+  "screen_works_named": 65,
+  "of": 81,
+  "detective_films_named_as_holmes": 76,
+  "of_negatives": 229,
+  "within_era_auc_of_the_log_probability_of_the_hero_name": 0.8633978240535617,
+  "stories_named": 49,
+  "stories_whose_title_is_named": 8,
+  "primary_adaptations_whose_source_is_named": 6,
+  "titles_given_for_the_screen_works_with_no_stated_source": {
+   "The Adventure of the Bruce-Partington Plans": 31,
+   "The Adventure of the Copper Beeches": 6,
+   "The Adventure of the Naval Treaty": 3,
+   "The Adventure of the Speckled Band": 2,
+   "The Adventure of the Dancing Men": 1
+  }
+ }
+}
