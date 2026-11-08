@@ -162,10 +162,10 @@ Conditions under which P1 could pay off for fitness: large item counts (thousand
 | Wang et al. 2019, Success in books: predicting book sales before publication | EPJ Data Science 8:31, DOI 10.1140/epjds/s13688-019-0208-6, https://barabasi.com/media/pub_imports/files/1016.pdf | Publisher beats content | B |
 | Lakkaraju, McAuley, Leskovec 2013, What's in a name? | DOI 10.1609/icwsm.v7i1.14408; https://ojs.aaai.org/index.php/ICWSM/article/view/14408 | Same image, different title and community | B |
 | Berger and Milkman 2012, What makes online content viral? | DOI 10.1509/jmr.10.0353 | Arousal and sharing; outcome-dependence | C |
-| Mitra and Gilbert 2014; Etter et al. 2013 (Kickstarter) | https://infoscience.epfl.ch/record/189675/files/etter2013cosn.pdf | Language against early-trajectory signals | C |
-| Ashok, Feng, Choi 2013, Success with style | https://aclanthology.org/D13-1181/ | Often-quoted 84%; weak design | C |
-| Interiano et al. 2018, Musical trends and predictability of success | https://pmc.ncbi.nlm.nih.gov/articles/PMC5990848 | 86% headline with a 4% base rate | C |
-| Tong et al. 2020, Brain activity forecasts video engagement | https://web.stanford.edu/~knutson/nfc/tong20.pdf | Neuroforecasting on YouTube | C |
+| Mitra and Gilbert 2014; Etter et al. 2013 (Kickstarter) | Mitra and Gilbert: DOI 10.1145/2531602.2531656. Etter et al.: DOI 10.1145/2512938.2512957, https://infoscience.epfl.ch/record/189675/files/etter2013cosn.pdf | Language against early-trajectory signals | C |
+| Ashok, Feng, Choi 2013, Success with style | DOI 10.18653/v1/D13-1181; https://aclanthology.org/D13-1181/ | Often-quoted 84%; weak design | C |
+| Interiano et al. 2018, Musical trends and predictability of success | DOI 10.1098/rsos.171274; https://pmc.ncbi.nlm.nih.gov/articles/PMC5990848 | 86% headline with a 4% base rate | C |
+| Tong et al. 2020, Brain activity forecasts video engagement | DOI 10.1073/pnas.1905178117; https://pmc.ncbi.nlm.nih.gov/articles/PMC7104008/; https://web.stanford.edu/~knutson/nfc/tong20.pdf (this PDF link failed a certificate check in the citation check, so prefer the DOI) | Neuroforecasting on YouTube | C |
 | Salvi et al. 2025, On the conversational persuasiveness of GPT-4 | DOI 10.1038/s41562-025-02194-6 | Consented persuasion study | C |
 | EU AI Act Article 5 | https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-5 | Legal line on manipulation | C |
 
@@ -173,10 +173,54 @@ Conditions under which P1 could pay off for fitness: large item counts (thousand
 
 - No study found that tests language-model neurons or SAE features against embeddings on a randomised success dataset. The slot is open; the prior from adjacent work is a tie.
 - No randomised dataset found that varies the idea and not the packaging. Seed 4 would have to create it.
-- Numbers not confirmed in primary text: Cheng et al. accuracy (slides only); Lakkaraju et al. model fit; Fragile Families R²; Ashok et al. 84% and Interiano et al. 86% (press reports); Hewitt et al. journal status and megastudy correlations; Salvi et al. effect sizes; Zurich draft-paper persuasion rates.
-- Not found or not checked: Pachet and Roy 2008; Falk et al. 2012; Berns and Moore journal version; findings of Toubia et al. 2021 and Gligorić et al. 2023.
+- Numbers not confirmed in primary text: Cheng et al. accuracy (slides only); Lakkaraju et al. model fit; Fragile Families R²; Ashok et al. 84% and Interiano et al. 86% (press reports); Hewitt et al. journal status and megastudy correlations; Salvi et al. effect sizes; Zurich draft-paper persuasion rates. [Checker: now confirmed in primary text: Cheng et al. 0.795; Fragile Families R² (about 0.2 and about 0.05); Ashok et al. 84%; Interiano et al. 0.85 to 0.86; Hewitt et al. journal status (Nature, 2026); Salvi et al. headline figure (64.4%, N = 900). Still open: Lakkaraju et al. counts and model fit; the megastudy correlation values and the r values in the Nature version of Hewitt et al.; Zurich persuasion rates and dates; LOLA's Marketing Science volume and pages; Mitra and Gilbert's 20K phrases; the 30-day download window in Ashok et al.]
+- Not found or not checked: Pachet and Roy 2008; Falk et al. 2012; Berns and Moore journal version; findings of Toubia et al. 2021 and Gligorić et al. 2023. [Checker: Falk et al. 2012 and the Berns and Moore journal version are now confirmed to exist (Crossref); Pachet and Roy 2008 is still unconfirmed; the findings of Toubia et al. and Gligorić et al. are still unread.]
 - The Upworthy archive's exploratory, confirmatory and holdout partition sizes, and whether arms can differ in image as well as headline, are from memory `[UNVERIFIED]`; check the archive documentation before designing seed 1.
 - Neuroforecasting: no large pre-registered replication found. Unknown whether the effect survives with hundreds of items.
 - Whether the name-free, rewording-robust units in the study are numerous enough to span a useful meme space for seeds 4 and 5 (four units pass in both models per `study/README.md`).
 - How to define success for a meme as distinct from a work. Every dataset here scores works or messages; attributing a share to each meme is a modelling choice with no agreed method.
 - Panel costs in seeds 4 and 5 are rough guesses, not quotes.
+
+## Check log
+
+Citation and claim check, 2026-11-08. Methods: arXiv API (all 14 arXiv IDs), Crossref, Europe PMC abstracts and full text, ar5iv and arXiv HTML full text, publisher and author PDFs, the EU AI Act service desk, one Wikipedia page, and the repo's committed outputs. Web search was not available to the check (the shared search budget was used up), so nothing here rests on a search engine. Additions in the body are marked `[Checker: ...]`. No content was deleted.
+
+### Corrections
+
+1. **AlphaEvolve quotation (section 6).** The notes quoted "the primary limitation is the requirement for an automated evaluator". That sentence is not in the paper. Replaced with the paper's wording: "The main limitation of AlphaEvolve is that it handles problems for which it is possible to devise an automated evaluator." The meaning is the same.
+2. **Hewitt et al. journal status (bottom line, section 5, key sources, Fog).** The notes said no journal version could be confirmed. It is published: Ashokkumar, Hewitt, Ghezae, Willer (2026), Nature 656(8126):115-122, DOI 10.1038/s41586-026-10742-x. Author order changed. The notes mix two versions: r = 0.85, r = 0.90, 476 effects and 105,165 participants are from the 2024 working-paper abstract (which lists nine megastudies with 346 effects); 469 effects, 119,330 participants and 15 megastudies with 606 effects are from the Nature abstract, which gives no r. Flagged in place; the r values in the Nature version were not read.
+3. **Sreenivasan 2013 title (key sources table, section 3).** The table gave a shortened title. Full title added: "Quantitative analysis of the evolution of novelty in cinema through crowdsourced keywords". DOI 10.1038/srep02758 added.
+4. **arXiv:2606.17165 (section 5).** Title was truncated and no authors were given. Completed: Persson, Schultzberg, Ankargren, "... a surrogacy framework for human causal inference". Added the abstract's result (raw LLM outputs recover 39% of the human treatment effect on Upworthy).
+5. **Hackenburg et al. (section 7, key sources).** Added that the Science version is titled "... with conversational artificial intelligence", Science 390(6777), eaea3884, DOI 10.1126/science.aea3884, and the exact N of 76,977. UK sample confirmed in the arXiv full text.
+6. **Tong et al. 2020 (section 4).** Added that 40 people were scanned and 36 analysed, and that sampled behaviour did forecast aggregate view duration, so "self-report did not" holds for view frequency only.
+
+### Earlier doubts now resolved
+
+7. **Cheng et al. 2014.** Accuracy 0.795 (AUC 0.877) at k = 5 and the ranking of temporal over content features are confirmed in the paper text, not only the slides.
+8. **Salganik et al. 2020.** Holdout R² of about 0.2 (material hardship, GPA) and about 0.05 (other four outcomes) confirmed in the PMC full text. The `[UNVERIFIED number]` tag is kept in place with a note that it no longer applies. Volume, pages and DOI added.
+9. **Ashok et al. 2013.** "Accuracy up to 84%" and 800 books (100 per genre, eight genres) confirmed in the paper.
+10. **Interiano et al. 2018.** 0.82 to 0.86 with the superstar variable and 0.69 to 0.75 without it, and the under-4% success rate, confirmed in the paper.
+11. **Berns and Moore.** Journal version confirmed: Journal of Consumer Psychology 22(1):154-160, DOI 10.1016/j.jcps.2011.05.001.
+12. **Falk et al. 2012.** Existence confirmed: Falk, Berkman, Lieberman, Psychological Science 23(5):439-445, DOI 10.1177/0956797611434964. Findings not read.
+13. **LOLA earlier version.** arXiv v1 confirmed as a two-option task on 39,158 significantly different pairs with 82 to 84% for embeddings and fine-tuning.
+14. **Salvi et al. 2025.** Volume and pages added; abstract figures added (N = 900; 64.4%).
+
+### Marked `[UNVERIFIED]` in this check
+
+15. **LOLA, Marketing Science 44(5):995-1016.** Crossref returns only the SSRN preprint and the INFORMS site refused the request. The arXiv numbers are all confirmed; only the journal volume and pages are open.
+16. **Lakkaraju et al. 2013 counts** (132K submissions, 16.7K images, about seven resubmissions). The abstract confirms the design and gives no counts; the full text was unreachable.
+17. **Mitra and Gilbert 2014, "20K phrases".** The abstract says 9M phrases were analysed. 45K projects, 59 variables and 58.56% are confirmed in the abstract.
+18. **Ashok et al. 2013, "about 30 days".** The paper says Project Gutenberg download counts; no window was found.
+19. **Zurich study dates and persuasion multiple.** The Wikipedia page confirms the experiment, the personalisation, the formal warning and Reddit's legal response, and gives neither the November 2024 to March 2025 dates nor the three-to-six-times figure.
+20. **Pachet and Roy 2008.** Still unconfirmed, as the notes already said.
+21. **Upworthy partition sizes and image arms (Fog).** Not checked; the existing tag stands.
+
+### Confirmed with no change to the claim
+
+Martin et al. 2016 (0.42, 0.48, "well below 0.05", about 0.2, 0.60 at 15% variation with R0 = 0.20); Tan, Lee, Pang 2014 (1.77M, 11,404, 1,770, 61.3%, 73%, 66.5%, 65.6%, 55.3%); LOLA arXiv v3 (17,681; 12,376; 3,263; 33.02, 29.76, 37.85, 39.17, 46.28, 45.17, 46.86); Upworthy archive (32,487; 150,817; 538,272,878; dates; article 195) and its 2024 correction (25 June 2013 to 10 January 2014; 7,004 tests; 22%); Robertson et al. 2023 (12,448; 53,699; 1.39%; +2.3%; -1.0%; sadness positive); MusicLab (14,341 participants, 48 songs); Genevsky et al. 2017 (30 and 32 subjects; 36 projects; 18 and 14 funded; 52.9, 59.1, 67, 55.8, 61.1; Kickstarter documentaries); Scholz et al. 2017 (41 and 39; 80 articles; 117,611 shares); Movva et al. 2025 (45 of 60 against at most 24; ICML 2025); Kantamneni et al. 2025 (SAE probes underperform logistic regression on average in each regime; ICML 2025); Hackenburg et al. 2025 (19 models, 707 issues, 51% and 27%, accuracy fell); Uzzi et al. 2013 (17.9 million papers); Wang et al. 2019 (imprint is the most important feature group); Berger and Milkman 2012 (awe, anger, anxiety up; sadness down); Etter et al. 2013 (above 76% at four hours; 68% baseline); QDAIF (reward hacking suspected; diversity axes must be specified; ICLR 2024); Promptbreeder, Evolution through Large Models, MAP-Elites and FunSearch (identifiers and descriptions); EU AI Act Article 5(1)(a) text and the 2 February 2025 date (Article 113); Toubia et al. 2021 and Gligorić et al. 2023 (existence only).
+
+Study numbers in section 8 and the bottom line were checked against the committed files and match: `study/results/experiments.json` (`E3.primary` rho 0.2536 and 0.0036, one-sided p 0.352 and 0.585, 8 of 15 jackknife estimates positive for Llama; `E3.original_text` -0.321 and -0.500; `E3.with_adapted` 0.382 and 0.164; `E3_power_simulated` 0.2725 and 0.543 at n = 15) and `study/README.md` (TF-IDF 11%, word presence 17%, neurons 16% and 10%; 11 of 31 and 9, four in both; median r 0.82 falling to 0.14).
+
+### Identifiers added
+
+DOIs, volumes or pages were added for: Salganik, Dodds, Watts 2006; Salganik and Watts 2008; Martin et al. 2016; Salganik et al. 2020; Lakkaraju et al. 2013; Robertson et al. 2023; Gligorić et al. 2023; Ashok et al. 2013; Wang et al. 2019; Toubia et al. 2021; Interiano et al. 2018; Mitra and Gilbert 2014; Etter et al. 2013; Sreenivasan 2013; Genevsky et al. 2017; Scholz et al. 2017; Tong et al. 2020; Berns and Moore 2012; Falk et al. 2012; Ashokkumar et al. 2026; Kantamneni et al. 2025; Romera-Paredes et al. 2023; Hackenburg et al. 2025; Salvi et al. 2025; Cheng et al. 2014. The Tong et al. PDF link on web.stanford.edu failed a certificate check, so the DOI and PMC link were added beside it.

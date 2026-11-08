@@ -37,7 +37,7 @@ Checker pass, 2026-11-08: every DOI and arXiv ID below was re-resolved (Crossref
 **Validity as a causal claim (Borsboom, Mellenbergh and van Heerden 2004, doi:10.1037/0033-295X.111.4.1061).**
 - A test is valid for an attribute if the attribute exists and variation in it causes variation in the test outcome. This is stricter than correlation with other measures and maps directly onto text interventions: put the motif in, take it out, hold the words as fixed as possible, and see whether the unit moves.
 - Messick (1995, doi:10.1037/0003-066X.50.9.741) and Kane (2013, doi:10.1111/jedm.12000): validity belongs to an interpretation or use of a score, not to the instrument. "This unit detects motif M in a passage", "shared units mean shared descent" and "the unit is the meme" are three different claims needing three arguments.
-- Freiesleben (2026, arXiv:2603.15121) argues the nomological account fits language-model research better than the causal one, and that interpretability evidence for the causal account is still fragmentary.
+- Freiesleben (2026, arXiv:2603.15121) argues the nomological account fits language-model research better than the causal one, and that interpretability evidence for the causal account is still fragmentary. [checked: title "Establishing Construct Validity in LLM Capability Benchmarks Requires Nomological Networks"; the abstract makes the first claim and section 2.1 of the arXiv HTML says mechanistic interpretability's success in isolating higher-level constructs "often remains fragmentary".]
 
 **Reliability and invariance.**
 - Reliability bounds validity: the correlation between a measure and a criterion cannot exceed the square root of the product of their reliabilities (classical test theory). So human annotator agreement is the ceiling. For folklore motifs that ceiling is modest: about kappa 0.72 overall, 0.85 for simply expressed motifs and 0.53 for complexly expressed ones in Alyami and Finlayson (2026, arXiv:2603.19283) [corrected and checked against Table 4 of the arXiv HTML full text: Cohen's kappa on 5,548 sentences and 60 motifs; the 0.87 first written here is the cell for motifs that are simple in both concept and expression, not all simply expressed motifs], and Fleiss' kappa above 0.55 in GOLEM (Yarlott et al. 2024, https://aclanthology.org/2024.lrec-main.689/; PDF https://aclanthology.org/2024.lrec-main.689.pdf) [checked: the abstract says "Fleiss' kappa of >0.55"; the "to 0.7 across teams" first written here is UNVERIFIED].
@@ -61,7 +61,7 @@ Checker pass, 2026-11-08: every DOI and arXiv ID below was re-resolved (Crossref
 - The 97% 16S threshold was calibrated against the previously accepted standard, 70% DNA-DNA reassociation, and only as a one-way rule: below 97% means different species; above it proves nothing (Stackebrandt and Goebel 1994, doi:10.1099/00207713-44-4-846). This is Chang's "respect the earlier standard" in practice. [checked: the paper exists, Int. J. Syst. Bacteriol. 44(4):846-849, and its title names DNA-DNA reassociation and 16S analysis; Edgar's abstract confirms the 97% threshold "was proposed in 1994". The 70% figure and the one-way reading are recalled; no abstract could be retrieved.]
 - The threshold was arbitrary and later revised upward (Edgar 2018, doi:10.1093/bioinformatics/bty113) [checked: the abstract gives optimal thresholds of about 99% for full-length sequences and about 100% for the V4 region]. Clustered OTUs depend on the dataset, so they cannot be compared across studies; exact sequence variants replaced them because they are consistent labels (Callahan, McMurdie and Holmes 2017, doi:10.1038/ismej.2017.119) [checked: "consistent labels" is the abstract's phrase]. Short 16S regions cannot resolve species at all (Johnson et al. 2019, doi:10.1038/s41467-019-13036-1) [corrected: the abstract's claim is weaker: short-read sequencing of variable regions "cannot achieve the taxonomic resolution afforded by sequencing the entire (~1500 bp) gene"]. Clustering method choices change results (Schloss and Westcott 2011, doi:10.1128/AEM.02810-10).
 - DNA barcoding works only where a "barcode gap" exists: variation within a species is smaller than the distance between species (Hebert et al. 2003, doi:10.1098/rspb.2002.2218). [corrected: Hebert et al. 2003 proposed COI barcoding and its abstract does not use the term. The "barcoding gap", and the finding that it often fails (substantial overlap, error of about 17% in incompletely sampled cowries), is Meyer and Paulay 2005, "DNA Barcoding: Error Rates Based on Comprehensive Sampling", PLoS Biology 3(12):e422, doi:10.1371/journal.pbio.0030422.]
-- Microbiologists validate pipelines on mock communities of known composition [general practice; no single source checked].
+- Microbiologists validate pipelines on mock communities of known composition [general practice; no single source checked; UNVERIFIED].
 - Lessons: (1) calibrate against the older standard; (2) publish the threshold as provisional; (3) prefer exact, reusable labels to corpus-dependent clusters; (4) state the resolution limit; (5) build a mock community. The study's family counts already show the OTU problem: 14,843, 24,732 or 5,641 families depending on model and thresholds (`nulls.json`, `f1_chance.n_families`) [corrected: in that file the three counts are three models, Qwen3-8B, Llama 3.1 8B and Qwen3-1.7B, under one rule; it does not vary the thresholds].
 
 ### B. What interpretability research has learned about its own measurements (2021 to 2026)
@@ -127,7 +127,7 @@ Rival for the whole rung: a sentence-embedding detector moved between models by 
 | --- | --- | --- | --- |
 | Human annotation | Two annotators and an adjudicator mark motif presence on name-masked passages; first report human-human kappa, then unit-human agreement | Unit-human kappa within 0.10 of human-human kappa; AUC at least 0.80 against adjudicated labels | 200 passages by 10 motifs, about 20 annotator hours. The pre-registration's audit (A7) has one human, the author, so it gives no human-human figure |
 | TV Tropes | Work-by-trope table as a noisy criterion. A missing tag is not evidence of absence, so score precision among the top-ranked works and hand-check a sample of untagged ones | AUC at least 0.75 on tagged against hand-checked untagged works | The trope-labelled film synopsis sets of Chang et al. (2021, arXiv:2101.07632) and Su et al. (2024, arXiv:2409.14324) |
-| Folklore motif indexes | Expert-annotated motifs in tales (Thompson, ATU, El-Shamy) | AUC at least 0.75; report by simple and complex motifs separately, since human kappa differs (0.87 against 0.53) | GOLEM (Yarlott et al. 2024); the Arabian Nights set (Alyami and Finlayson 2026); tale-type data behind da Silva and Tehrani (2016, doi:10.1098/rsos.150645) is at population level, not text level |
+| Folklore motif indexes | Expert-annotated motifs in tales (Thompson, ATU, El-Shamy) | AUC at least 0.75; report by simple and complex motifs separately, since human kappa differs (0.85 against 0.53 by expression complexity [corrected from 0.87, which is the simple-concept, simple-expression cell]) | GOLEM (Yarlott et al. 2024); the Arabian Nights set (Alyami and Finlayson 2026); tale-type data behind da Silva and Tehrani (2016, doi:10.1098/rsos.150645) is at population level, not text level |
 | Full matrix | Campbell and Fiske's layout: at least 8 motifs, including near neighbours such as revenge, vow and harm, by 6 methods (neurons in model A, neurons in model B, keywords, embeddings, LLM reader, humans) | Same-motif unit-human agreement at least 0.6 and above the different-motif entries in its row and column in at least 90% of comparisons; above different-motif, same-method entries | The same 200 annotated passages |
 
 Rival: a zero-shot LLM reader. It is likely to be the strongest method against human labels, and the honest framing is that humans are the yardstick and the LLM reader is the method to beat on accuracy per unit of cost.
@@ -179,7 +179,7 @@ Rival: prompting. AxBench found prompting steers better than any internal method
 - In measurement terms P2 is the comparability test, the first test Chang's history offers when there is no ground truth. It has to be passed on the measurand, with the confounds removed.
 - The study's evidence is against P2 for the strongest units (0.82 falls to 0.14 without names, and word-matched non-meme units match as well) and weakly for it on concept units on original text only (0.62 against 0.46).
 - Whole-tree agreement (0.98) is not evidence for P2: random units give 0.90 to 0.93.
-- Convergence of whole representation spaces (Huh et al. 2024, arXiv:2405.07987; Jha et al. 2025) is a claim about geometry, and it favours the rival: if spaces align, a sentence-embedding detector transfers between models at least as well as a neuron does. Gurnee et al. (2024) report that only a small minority of neurons are universal across GPT-2 seeds (1 to 5% [recalled from the abstract]). Neither result shows that individual neurons map one-to-one.
+- Convergence of whole representation spaces (Huh et al. 2024, arXiv:2405.07987; Jha et al. 2025) is a claim about geometry, and it favours the rival: if spaces align, a sentence-embedding detector transfers between models at least as well as a neuron does. Gurnee et al. (2024) report that only a small minority of neurons are universal across GPT-2 seeds (1 to 5% [checked: the abstract says "1-5% of neurons are universal" across five seeds, arXiv:2401.12181]). Neither result shows that individual neurons map one-to-one.
 - Invariance has levels. Even if matching units exist (configural), comparing how much of a meme two eras or two languages carry needs scalar invariance, which nobody has tested.
 
 ## Experiment seeds
@@ -258,34 +258,36 @@ Rival: prompting. AxBench found prompting steers better than any internal method
 | Borsboom, Mellenbergh and van Heerden 2004 | doi:10.1037/0033-295X.111.4.1061 | Validity as causation; grounds the text-intervention test | A |
 | Callahan, McMurdie and Holmes 2017 | doi:10.1038/ismej.2017.119 | Why fixed, reusable labels beat corpus-dependent clusters | A |
 | Wu et al. 2025, AxBench | arXiv:2501.17148 | Steering and detection lose to simple baselines | A |
-| Heap et al. 2025/2026 | arXiv:2501.17727 | Interpretability scores do not separate trained from random networks | A |
+| Heap et al. 2025/2026, "Automated Interpretability Metrics Do Not Distinguish Trained and Random Transformers" | arXiv:2501.17727 | Interpretability scores do not separate trained from random networks (in many settings) | A |
 | Paulo and Belrose 2025 | arXiv:2501.16615 | Learned features depend on the seed | A |
 | Gerstein et al. 2007 | doi:10.1101/gr.6339607 | A century of working gene definitions | B |
 | de Queiroz 2007 | doi:10.1080/10635150701701083 | Concept against operational criteria | B |
 | Stackebrandt and Goebel 1994; Edgar 2018 | doi:10.1099/00207713-44-4-846; doi:10.1093/bioinformatics/bty113 | A threshold calibrated on the older standard, later revised | B |
-| Hebert et al. 2003 | doi:10.1098/rspb.2002.2218 | The barcode gap condition | B |
+| Hebert et al. 2003; Meyer and Paulay 2005 [second source added by checker] | doi:10.1098/rspb.2002.2218; doi:10.1371/journal.pbio.0030422 | The barcode gap condition (the term and its failure cases are Meyer and Paulay's; Hebert et al. proposed COI barcoding) | B |
 | Meredith 1993; Putnick and Bornstein 2016; Cheung and Rensvold 2002 | doi:10.1007/BF02294825; doi:10.1016/j.dr.2016.06.004; doi:10.1207/S15328007SEM0902_5 | Levels of invariance and pass marks | B |
 | Leask et al. 2025; Chanin et al. 2024 | arXiv:2502.04878; arXiv:2409.14507 | Features are not canonical; absorption causes false negatives | B |
 | Hewitt and Liang 2019; Adebayo et al. 2018 | arXiv:1909.03368; arXiv:1810.03292 | Control tasks and randomisation checks | B |
 | Bolukbasi et al. 2021; Huang et al. 2023 | arXiv:2104.07143; arXiv:2309.10312 | Labels from top examples mislead | B |
-| Yarlott et al. 2024, GOLEM; Alyami and Finlayson 2026 | https://aclanthology.org/2024.lrec-main.689.pdf; arXiv:2603.19283 | Human-annotated motif data with agreement figures | B |
+| Yarlott et al. 2024, GOLEM; Alyami and Finlayson 2026 | https://aclanthology.org/2024.lrec-main.689/ (PDF: https://aclanthology.org/2024.lrec-main.689.pdf); arXiv:2603.19283 | Human-annotated motif data with agreement figures | B |
 | Chang et al. 2021; Su et al. 2024 | arXiv:2101.07632; arXiv:2409.14324 | Trope-labelled film synopses | B |
 | Freiesleben 2026 | arXiv:2603.15121 | Nomological against causal validity for language models | B |
 | Messick 1995; Kane 2013 | doi:10.1037/0003-066X.50.9.741; doi:10.1111/jedm.12000 | Validity belongs to the interpretation | C |
 | Flake and Fried 2020 | doi:10.1177/2515245920952393 | Questionable measurement practices | C |
 | Wallach et al. 2025; Bean et al. 2025; Jacobs and Wallach | arXiv:2502.00561; arXiv:2511.04703; arXiv:1912.05511 | Measurement theory applied to AI evaluation | C |
 | Kantamneni et al. 2025; Arad et al. 2025; Jørgensen and Hansen 2026 | arXiv:2502.16681; arXiv:2505.20063; arXiv:2605.31183 | Features against baselines; the steering dispute | C |
-| Portin and Wilkins 2017; Griffiths and Stotz 2006; Benzer 1955 | doi:10.1534/genetics.116.196956; doi:10.1007/s11017-006-9020-y; doi:10.1073/pnas.41.6.344 | Gene concept history | C |
+| Portin and Wilkins 2017; Griffiths and Stotz 2006; Benzer 1955; Benzer 1957 [added by checker] | doi:10.1534/genetics.116.196956; doi:10.1007/s11017-006-9020-y; doi:10.1073/pnas.41.6.344; Benzer 1957 has no DOI: "The elementary units of heredity", in McElroy and Glass (eds.), *The Chemical Basis of Heredity*, Johns Hopkins Press, pp. 70-93, https://archive.org/details/symposiumonchemi00symp | Gene concept history; the cistron, recon and muton come from the 1957 chapter | C |
 | Johnson et al. 2019; Schloss and Westcott 2011 | doi:10.1038/s41467-019-13036-1; doi:10.1128/AEM.02810-10 | Resolution limits and method dependence of 16S units | C |
 | Tal, "Measurement in Science" (SEP); Tal 2013 | https://plato.stanford.edu/entries/measurement-science/; doi:10.1111/phc3.12089 | Overview of the philosophy of measurement | C |
 | Karvonen et al. 2025, SAEBench; Klotz et al. 2026 | arXiv:2503.09532; arXiv:2606.24716 | Multi-metric evaluation of features | C |
 | Koo and Li 2016; Landis and Koch 1977 | doi:10.1016/j.jcm.2016.02.012; doi:10.2307/2529310 | Conventional reliability benchmarks | C |
+| Gurnee et al. 2024; Huh et al. 2024; Jha et al. 2025 [row added by checker: cited in the text, missing from this table] | arXiv:2401.12181; arXiv:2405.07987; arXiv:2505.12540 | The P2 sources: 1 to 5% universal neurons across GPT-2 seeds; convergent representation geometry; unsupervised, non-linear embedding translation | A |
+| Vandenberg and Lance 2000; Hey 2001; da Silva and Tehrani 2016; Simpson 1964 (review of Sokal and Sneath 1963) [row added by checker: cited in the text, missing from this table] | doi:10.1177/109442810031002; doi:10.1016/S0169-5347(01)02145-0; doi:10.1098/rsos.150645; doi:10.1126/science.144.3619.712 | Invariance review; the sceptical view of species; folktale phylogenies; the origin of the OTU | C |
 
 ## Fog
 
 - I did not re-read Chang's book this session. The Regnault comparability story, the stage sequence and the "respect the earlier standard" principle are from memory; the book, its chapter titles and the iteration thesis were confirmed online.
-- The motif-annotation kappa figures (0.72, 0.87, 0.53; above 0.55 to 0.7) come from search summaries, not from the PDFs. Check before quoting.
-- Benzer's 1957 chapter, the count of species concepts, the Gurnee 1 to 5% figure, the Koo and Li and Landis and Koch bands, and the mock-community practice were not confirmed this session.
+- The motif-annotation kappa figures (0.72, 0.87, 0.53; above 0.55 to 0.7) come from search summaries, not from the PDFs. Check before quoting. [Checker: now checked. 0.72 and 0.53 hold; 0.87 was the wrong cell and is 0.85 for simply expressed motifs; GOLEM's abstract supports "above 0.55" only, and the 0.7 is still UNVERIFIED.]
+- Benzer's 1957 chapter, the count of species concepts, the Gurnee 1 to 5% figure, the Koo and Li and Landis and Koch bands, and the mock-community practice were not confirmed this session. [Checker: Benzer 1957, the species-concept count (about 24 and 26), the Gurnee figure and the Koo and Li bands are now confirmed. Still open: the Landis and Koch band at first hand, the mock-community practice, the Regnault account, the "Defense of Fixity" heading, Stackebrandt and Goebel's 70% figure, and the LessWrong reply, whose page is no longer publicly reachable.]
 - I found no study of how stable individual neuron activations are under paraphrase, translation or prompt wrapping. The reliability rung may be genuinely new work.
 - I found no public human retelling-chain corpus and did not confirm any multi-seed model family other than Gurnee's GPT-2 seeds.
 - TV Tropes: I did not check the size, licence or label quality of the trope corpora, nor whether Batman works are in them.
@@ -293,3 +295,53 @@ Rival: prompting. AxBench found prompting steers better than any internal method
 - Whether Cammarata's companion paper reports rater agreement or a random-direction control is unknown; the essay alone does not.
 - Open design question: should the validated unit be a single neuron (fixed label, noisy) or a frozen family (more reliable, corpus-dependent)? Psychometrics would treat a family as a scale and ask for internal consistency on a second corpus. Nothing in the repo tests that.
 - The seed rung may not be testable for Qwen or Llama at all, since no second-seed checkpoints of those models are public as far as I know.
+
+## Check log
+
+Checker pass on 2026-11-08. Methods: Crossref API for every DOI; arXiv abstract pages for every arXiv ID (the arXiv API was rate-limited); arXiv HTML full text for three papers; Europe PMC abstracts by DOI; the ACL Anthology, SEP and Wikipedia pages named below; and the committed study files, read directly. The shared web-search budget ran out before the Chang and Regnault searches could run, so those items stay unconfirmed. No content was deleted; every change is an inline note marked "[checked]", "[corrected]" or "[UNVERIFIED]".
+
+### Corrections
+
+1. **Bottom line, discriminant bullet.** The range p = 0.0003 to 0.003 "in both models" is the TF-IDF comparator only. The word-presence comparator gives 0.0014 to 0.0035 in Qwen and 0.028 to 0.059 in Llama (`study/results/experiments.json`, `<model>.E2.residual_test_beyond_words.word_presence_resid_on_neurons`). Scope note added. The table in section C already said "TF-IDF" and is right.
+2. **Chang, chapter attribution.** The "problem of nomic measurement" is chapter 2, not chapter 5; epistemic iteration is chapter 5. Confirmed by the SEP entry "Measurement in Science" (Tal), which cites both. Chapter titles confirmed on Crossref (doi:10.1093/0195171276.003.0001, .0002, .0005).
+3. **Chang, "The Defense of Fixity".** It is not a chapter title. Chapter 1 is "Keeping the Fixed Points Fixed". The phrase is recalled as a section heading; marked UNVERIFIED.
+4. **Alyami and Finlayson kappa.** 0.87 was the wrong cell. Table 4 gives 0.72 overall, 0.85 for simply expressed motifs, 0.53 for complexly expressed motifs, and 0.87 only for motifs simple in both concept and expression. Fixed in the reliability paragraph and in rung 3. The "secondary summary" caveat is replaced: the figures are now read from the arXiv HTML full text.
+5. **GOLEM kappa.** The abstract supports "Fleiss' kappa of >0.55" only. The "to 0.7 across teams" is marked UNVERIFIED. Landing-page URL added.
+6. **Paper line reference.** The 69-film pool is on line 37 of `study/paper/paper.md`; line 47 holds the presence rule. Citation changed to "lines 37 and 47".
+7. **Benzer.** The 1957 chapter is confirmed (McElroy and Glass, eds., *The Chemical Basis of Heredity*, Johns Hopkins Press, pp. 70-93) and "cistron" was coined there, so the three units belong to the 1957 chapter, not the 1955 paper. UNVERIFIED tag replaced with the reference; recon, muton and the size claim remain recalled.
+8. **Johnson et al. 2019.** "Cannot resolve species at all" overstated the abstract, which says short-read variable regions "cannot achieve the taxonomic resolution afforded by sequencing the entire (~1500 bp) gene".
+9. **Barcode gap.** Misattributed to Hebert et al. 2003, whose abstract does not use the term. The "barcoding gap" and its failure cases are Meyer and Paulay 2005 (doi:10.1371/journal.pbio.0030422, confirmed on Crossref and Europe PMC). Added in the text and in Key sources.
+10. **Family counts.** "Depending on model and thresholds" was wrong: `nulls.json`, `f1_chance.n_families` lists three models (Qwen3-8B 14,843; Llama 3.1 8B 24,732; Qwen3-1.7B 5,641), not thresholds.
+11. **Jha et al. 2025.** They do not claim a linear map. vec2vec is an unsupervised, non-linear translator (multilayer perceptrons, adversarial and cycle-consistency losses). Note added in rung 2.
+
+### Upgraded from recalled or unverified to confirmed
+
+- Gurnee et al.: "1-5% of neurons are universal" across five GPT-2 seeds (abstract).
+- Koo and Li: the four ICC bands (abstract; they apply to the 95% confidence interval).
+- Gerstein et al.: the definition wording (abstract).
+- Species concepts: about 24 (Mayden 1997) and 26 (Wilkins), per Wikipedia "Species"; primary sources not opened.
+- Freiesleben: both claims (abstract and section 2.1).
+- Edgar 2018: revised thresholds of about 99% (full length) and about 100% (V4); the 97% threshold "was proposed in 1994".
+- Sokal and Sneath review: G. G. Simpson, Science 144(3619):712-713.
+
+### Marked or left UNVERIFIED
+
+- **LessWrong reply** (https://www.lesswrong.com/posts/rfnjfHCdKJTGgLP8L/why-clean-neurons-are-not-enough): HTTP 401 with the "removed by the author" message, and the site API refused the post ID. The post appears to exist but is not public. Marked UNVERIFIED.
+- OUP chapter URL (https://academic.oup.com/book/5530/chapter/148476793): HTTP 403 to the checker; that it is chapter 5 is unconfirmed.
+- Regnault's comparability test and its outcome (mercury rejected, air accepted): still recalled only. This is the anchor for the claim that P2 is the first validity test, so it should be checked against the book before it is quoted.
+- "The Defense of Fixity" section heading.
+- Stackebrandt and Goebel: the 70% DNA-DNA figure and the one-way reading (paper and title confirmed; no abstract retrievable).
+- Landis and Koch band at first hand (paper confirmed; band consistent with a citing paper).
+- GOLEM "to 0.7".
+- Mock-community practice (no source).
+
+### Confirmed with no change
+
+- Crossref, authors, year and title all match: Chang 2004; Cronbach and Meehl 1955; Campbell and Fiske 1959; Borsboom, Mellenbergh and van Heerden 2004; Messick 1995; Kane 2013; Meredith 1993; Vandenberg and Lance 2000; Putnick and Bornstein 2016; Cheung and Rensvold 2002; Flake and Fried 2020; Portin and Wilkins 2017; Griffiths and Stotz 2006; de Queiroz 2007; Hey 2001; Callahan, McMurdie and Holmes 2017; Schloss and Westcott 2011; da Silva and Tehrani 2016; Tal 2013; Landis and Koch 1977.
+- arXiv, authors, year and title all match, and the abstract supports the use made of it: Adebayo et al. 2018 (1810.03292); Hewitt and Liang 2019 (1909.03368); Bolukbasi et al. 2021 (2104.07143); Huang et al. 2023 (2309.10312); Paulo and Belrose 2025 (2501.16615); Leask et al. 2025 (2502.04878); Jedryszek and Crook 2026 (2603.04198); Chanin et al. 2024 (2409.14507); Wu et al. 2025, AxBench (2501.17148); Arad et al. 2025 (2505.20063); Jørgensen and Hansen 2026 (2605.31183); Kantamneni et al. 2025 (2502.16681); Jacobs and Wallach (1912.05511); Wallach et al. 2025 (2502.00561); Bean et al. 2025 (2511.04703); Karvonen et al. 2025 (2503.09532); Klotz et al. 2026 (2606.24716; vision models, note added); Chang et al. 2021 (2101.07632); Su et al. 2024 (2409.14324); Huh et al. 2024 (2405.07987); Heap et al. (2501.17727; title and "many settings" note added).
+- Not re-read beyond title and abstract, so the detailed readings stay as the author recalled them: Cronbach and Meehl's three sources of failure, Campbell and Fiske's four requirements, Borsboom's definition, Messick and Kane, the invariance levels and the 0.01 CFI rule.
+- Study numbers, all re-read and matching: `nulls.json` `f3_wording` (11, 9, 4 survivors; 16 to 18%; 5.0 and 5.7 by chance; p = 0.002 and 0.076; revenge 10 of 12 and 4 of 12 from 50 candidates), `f2_agreement.sets.top33` (0.82, 0.86, 0.14) and `.labelled_concept` (27 units; 0.62 against 0.46, p = 0.001; 0.34 against 0.38), `f2_trees` (0.978; 0.90 to 0.93; 0.84 to 0.85; length r = 0.57), `f1_chance` (884,736 and 917,504 units), `label_test.all` (56 of 71; 65%; p = 0.007); `experiments.json` E2 residual ranges for neurons after words in both models, plain and stricter nulls; `study/README.md` (24 of 33; about 27% power); `images/README.md` (0.45 against 0.36; one image per work); `study/paper/paper.md` line 268; `preregistration/` (T2, A7 with one auditor, 48 long texts, 272 Chinese stories, translation deferred, the named protocol and work-list files exist); `study/results/wording.json` (31 rewordings); a saved copy of the essay line 70.
+
+### Rows added to Key sources
+
+- Meyer and Paulay 2005 (with Hebert et al.); Benzer 1957; a row for Gurnee, Huh and Jha; a row for Vandenberg and Lance, Hey, da Silva and Tehrani, and Simpson's review. All were already cited in the text or are needed by a correction above.

@@ -1,1 +1,2081 @@
-[]
+[
+ {
+  "cite": "Cammarata 2026, Neural Networks Are Already Clean (Goodfire; published 15 Oct 2026, revised 30 Oct 2026)",
+  "url": "https://already-clean.goodfire.com/",
+  "why": "The source of P1. Read the footnotes and the appendix, not the summary",
+  "priority": "A",
+  "topic": "Neurons as units (P1)"
+ },
+ {
+  "cite": "Nanda 2026, LessWrong comment on the linkpost",
+  "url": "https://www.lesswrong.com/posts/x4kvabkF2Jk8GLZp8/linkpost-neural-networks-are-already-clean/comment/7wcSqBNzQF2o9SHyY",
+  "why": "The main expert rebuttal: facts, weak activations, loose definition",
+  "priority": "A",
+  "topic": "Neurons as units (P1)"
+ },
+ {
+  "cite": "IRSI 2026, retest note (AI-agent-written, not peer reviewed)",
+  "url": "https://irsi.ai/notes/already-clean/",
+  "why": "Only outside numbers: 78%, 57 to 65% vs 31% random directions; planted-mixture blind spot",
+  "priority": "A",
+  "topic": "Neurons as units (P1)"
+ },
+ {
+  "cite": "Arora, Wu, Steinhardt, Schwettmann 2026, Language Model Circuits Are Sparse in the Neuron Basis",
+  "url": "https://arxiv.org/abs/2601.22594",
+  "why": "Peer-reviewed support for the neuron basis in Llama 3.1 8B; shows sets, not single neurons",
+  "priority": "A",
+  "topic": "Neurons as units (P1)"
+ },
+ {
+  "cite": "Choi, Huang, Meng, Johnson, Steinhardt, Schwettmann 2024, Scaling Automatic Neuron Description (Transluce, 23 Oct 2024)",
+  "url": "https://transluce.org/neuron-descriptions",
+  "why": "Descriptions and scores for every neuron of one of the study's models",
+  "priority": "A",
+  "topic": "Neurons as units (P1)"
+ },
+ {
+  "cite": "Gurnee, Nanda, Pauly, Harvey, Troitskii, Bertsimas 2023, Finding Neurons in a Haystack: Case Studies with Sparse Probing",
+  "url": "https://arxiv.org/abs/2305.01610",
+  "why": "Layer and scale conditions; k-sparse probing method for seed 4",
+  "priority": "A",
+  "topic": "Neurons as units (P1)"
+ },
+ {
+  "cite": "Gurnee et al. 2024, Universal Neurons in GPT2 Language Models",
+  "url": "https://arxiv.org/abs/2401.12181",
+  "why": "1 to 5% universal: the base rate for P2 at neuron level",
+  "priority": "A",
+  "topic": "Neurons as units (P1)"
+ },
+ {
+  "cite": "Elhage et al. 2022, Toy Models of Superposition",
+  "url": "https://arxiv.org/abs/2209.10652",
+  "why": "Standard definition; privileged basis",
+  "priority": "B",
+  "topic": "Neurons as units (P1)"
+ },
+ {
+  "cite": "Bills et al. 2023, Language models can explain neurons in language models",
+  "url": "https://openaipublic.blob.core.windows.net/neuron-explainer/paper/index.html",
+  "why": "The 2023 baseline the essay overturns; simulation scoring",
+  "priority": "B",
+  "topic": "Neurons as units (P1)"
+ },
+ {
+  "cite": "Bricken et al. 2023, Towards Monosemanticity",
+  "url": "https://transformer-circuits.pub/2023/monosemantic-features/index.html",
+  "why": "Origin of the SAE turn; the \"four unrelated things\" neuron",
+  "priority": "B",
+  "topic": "Neurons as units (P1)"
+ },
+ {
+  "cite": "Templeton et al. 2024, Scaling Monosemanticity",
+  "url": "https://transformer-circuits.pub/2024/scaling-monosemanticity/index.html",
+  "why": "SAE features at scale; feature splitting",
+  "priority": "B",
+  "topic": "Neurons as units (P1)"
+ },
+ {
+  "cite": "Bolukbasi et al. 2021, An Interpretability Illusion for BERT",
+  "url": "https://arxiv.org/abs/2104.07143",
+  "why": "Top examples depend on the corpus; applies to in-corpus labelling",
+  "priority": "A",
+  "topic": "Neurons as units (P1)"
+ },
+ {
+  "cite": "StefanHex 2026, LessWrong comment",
+  "url": "https://www.lesswrong.com/posts/x4kvabkF2Jk8GLZp8/linkpost-neural-networks-are-already-clean/comment/bySRD2nBT2GLfPmJS",
+  "why": "Computation-in-superposition objection; max-activation caveat",
+  "priority": "B",
+  "topic": "Neurons as units (P1)"
+ },
+ {
+  "cite": "Hänni et al. 2024, Mathematical Models of Computation in Superposition",
+  "url": "https://arxiv.org/abs/2408.05451",
+  "why": "Theory behind \"more computations than neurons\"",
+  "priority": "C",
+  "topic": "Neurons as units (P1)"
+ },
+ {
+  "cite": "Scherlis et al. 2022, Polysemanticity and Capacity in Neural Networks",
+  "url": "https://arxiv.org/abs/2210.01892",
+  "why": "Capacity account of polysemanticity",
+  "priority": "C",
+  "topic": "Neurons as units (P1)"
+ },
+ {
+  "cite": "Chanin et al. 2024, A is for Absorption",
+  "url": "https://arxiv.org/abs/2409.14507",
+  "why": "SAE units are not clean either",
+  "priority": "B",
+  "topic": "Neurons as units (P1)"
+ },
+ {
+  "cite": "Leask et al. 2025, SAEs Do Not Find Canonical Units of Analysis",
+  "url": "https://arxiv.org/abs/2502.04878",
+  "why": "No unit is canonical",
+  "priority": "B",
+  "topic": "Neurons as units (P1)"
+ },
+ {
+  "cite": "Paulo & Belrose 2025, SAEs Trained on the Same Data Learn Different Features",
+  "url": "https://arxiv.org/abs/2501.16615",
+  "why": "Seed-dependence of SAE units",
+  "priority": "A",
+  "topic": "Neurons as units (P1)"
+ },
+ {
+  "cite": "Kantamneni et al. 2025, Are Sparse Autoencoders Useful?",
+  "url": "https://arxiv.org/abs/2502.16681",
+  "why": "SAEs lose to simple baselines on probing; the same \"beat the cheap rival\" lesson",
+  "priority": "B",
+  "topic": "Neurons as units (P1)"
+ },
+ {
+  "cite": "GDM mech interp team 2025 (Smith, Rajamanoharan, Conmy, McDougall, Lieberum, Kramár, Shah, Nanda), Negative Results for SAEs On Downstream Tasks and Deprioritising SAE Research (26 Mar 2025)",
+  "url": "https://www.lesswrong.com/posts/4uXCAJNuPKtKBsi28/negative-results-for-saes-on-downstream-tasks",
+  "why": "Why the field was already moving off SAEs",
+  "priority": "C",
+  "topic": "Neurons as units (P1)"
+ },
+ {
+  "cite": "Dunefsky et al. 2024, Transcoders Find Interpretable LLM Feature Circuits",
+  "url": "https://arxiv.org/abs/2406.11944",
+  "why": "Transcoder alternative",
+  "priority": "C",
+  "topic": "Neurons as units (P1)"
+ },
+ {
+  "cite": "Paulo et al. 2025, Transcoders Beat Sparse Autoencoders for Interpretability",
+  "url": "https://arxiv.org/abs/2501.18823",
+  "why": "Same",
+  "priority": "C",
+  "topic": "Neurons as units (P1)"
+ },
+ {
+  "cite": "Liu, Miao, Zhao, Liu, Du 2026, NeuronScope: A Multi-Agent Framework for Explaining Polysemantic Neurons in Language Models",
+  "url": "https://arxiv.org/abs/2601.03671",
+  "why": "Field still assumed polysemantic neurons in Jan 2026",
+  "priority": "C",
+  "topic": "Neurons as units (P1)"
+ },
+ {
+  "cite": "Sharkey et al. 2025, Open Problems in Mechanistic Interpretability",
+  "url": "https://arxiv.org/abs/2501.16496",
+  "why": "Field consensus that the unit question is open",
+  "priority": "B",
+  "topic": "Neurons as units (P1)"
+ },
+ {
+  "cite": "Heaven 2026, \"'We were looking at it wrong': The explosive claim that's upended the AI world\", MIT Technology Review, 19 Oct 2026",
+  "url": "https://www.technologyreview.com/2026/10/19/1147149/we-were-looking-at-it-wrong-the-explosive-claim-thats-upended-the-ai-world/",
+  "why": "Outside reactions (Potts, Hilton, Etzioni)",
+  "priority": "C",
+  "topic": "Neurons as units (P1)"
+ },
+ {
+  "cite": "Birardi 2026, Do we need sparsity afterall? (LessWrong, 6 Jan 2026)",
+  "url": "https://www.lesswrong.com/posts/Hk8tCLZKdAPHdoSdb/do-we-need-sparsity-afterall",
+  "why": "Small-model neurons are dense; weak but on point",
+  "priority": "C",
+  "topic": "Neurons as units (P1)"
+ },
+ {
+  "cite": "Mendel 2024, LessWrong post \"SAE feature geometry is outside the superposition hypothesis\" (24 June 2024) and Adam Scherlis's comment on it (the quoted comment is dated 6 Jan 2026, id 2BwacbvQkLiqz9Ljn)",
+  "url": "https://www.lesswrong.com/posts/MFBTjb2qf3ziWmzz6/sae-feature-geometry-is-outside-the-superposition-hypothesis",
+  "why": "\"Related things are near each other\" predates the essay",
+  "priority": "C",
+  "topic": "Neurons as units (P1)"
+ },
+ {
+  "cite": "Jha, Zhang, Shmatikov, Morris 2025, Harnessing the Universal Geometry of Embeddings",
+  "url": "https://arxiv.org/abs/2505.12540",
+  "why": "NeurIPS 2025 poster; arXiv:2505.12540, https://arxiv.org/abs/2505.12540. The P2 citation; sentence encoders only; 3 of 15 seeds converge for the one cross-backbone pair tested for seed stability (e5 to gtr)",
+  "priority": "A",
+  "topic": "Agreement between models (P2)"
+ },
+ {
+  "cite": "Huh, Cheung, Wang, Isola 2024, The Platonic Representation Hypothesis",
+  "url": "https://proceedings.mlr.press/v235/huh24a.html",
+  "why": "ICML 2024 (position paper), PMLR 235:20617-20642, https://proceedings.mlr.press/v235/huh24a.html; arXiv:2405.07987, https://arxiv.org/abs/2405.07987. The P2 citation; geometry level only; best vision-language score 0.16 of 1",
+  "priority": "A",
+  "topic": "Agreement between models (P2)"
+ },
+ {
+  "cite": "Gröger, Wen, Brbić 2026, Revisiting the Platonic Representation Hypothesis: An Aristotelian View",
+  "url": "https://arxiv.org/abs/2602.14486",
+  "why": "ICML 2026, PMLR 306:36724-36766; arXiv:2602.14486, https://arxiv.org/abs/2602.14486, https://proceedings.mlr.press/v306/groger26a.html. Calibration removes the global scaling trend; local neighbourhoods survive; the null method to copy",
+  "priority": "A",
+  "topic": "Agreement between models (P2)"
+ },
+ {
+  "cite": "Koepke, Zverev, Ginosar, Efros 2026, Back into Plato's Cave: Examining Cross-modal Representational Convergence at Scale. arXiv:2604.18572 (v3, 1 October 2026),",
+  "url": "https://arxiv.org/abs/2604.18572",
+  "why": "Alignment shrinks with gallery size (0.135 to 0.008); trend absent in newer models (v3 wording: \"saturates\")",
+  "priority": "A",
+  "topic": "Agreement between models (P2)"
+ },
+ {
+  "cite": "Jiralerspong and Bricken 2026, Cross-Architecture Model Diffing with Crosscoders. arXiv:2602.11729,",
+  "url": "https://arxiv.org/abs/2602.11729",
+  "why": "A joint dictionary on the study's exact model pair",
+  "priority": "A",
+  "topic": "Agreement between models (P2)"
+ },
+ {
+  "cite": "Lan et al. 2024, Quantifying Feature Space Universality Across LLMs via SAEs. arXiv:2410.06981,",
+  "url": "https://arxiv.org/abs/2410.06981",
+  "why": "The main feature-level number set; mostly same family; about 20% kept. Unreviewed: rejected at ICLR 2025 under its earlier title, withdrawn from ICLR 2026",
+  "priority": "A",
+  "topic": "Agreement between models (P2)"
+ },
+ {
+  "cite": "Chen, Merullo, Stolfo, Pavlick 2025, Transferring Linear Features Across Language Models With Model Stitching",
+  "url": "https://arxiv.org/abs/2506.06609",
+  "why": "NeurIPS 2025 spotlight; arXiv:2506.06609, https://arxiv.org/abs/2506.06609. Affine maps carry SAEs, probes and steering; semantic features polarised",
+  "priority": "B",
+  "topic": "Agreement between models (P2)"
+ },
+ {
+  "cite": "Agarwal 2026, Cross-Architecture Steering Transfer in Language Models. arXiv:2608.05164,",
+  "url": "https://arxiv.org/abs/2608.05164",
+  "why": "Cross-family 7B numbers (45 to 49% pass, Procrustes 0.90 to 0.96); provisional",
+  "priority": "B",
+  "topic": "Agreement between models (P2)"
+ },
+ {
+  "cite": "Ognev, Vasson, Hu, Inui, Heinzerling 2026, SharedSAE: One Feature Dictionary Across Language Models. arXiv:2609.04344,",
+  "url": "https://arxiv.org/abs/2609.04344",
+  "why": "One dictionary across four families (1B-scale, about 85% depth), 96.6% of dedicated SAEs' explained variance retained",
+  "priority": "B",
+  "topic": "Agreement between models (P2)"
+ },
+ {
+  "cite": "Oozeer et al. 2025, Activation Space Interventions Can Be Transferred Between LLMs. arXiv:2503.04429,",
+  "url": "https://proceedings.mlr.press/v267/oozeer25a.html",
+  "why": "Steering transfer across Llama, Qwen, Gemma (0.5B to 3B instruction-tuned models; mostly small-to-large within a family)",
+  "priority": "B",
+  "topic": "Agreement between models (P2)"
+ },
+ {
+  "cite": "Moschella et al. 2023, Relative representations. arXiv:2209.15430,",
+  "url": "https://arxiv.org/abs/2209.15430",
+  "why": "Zero-training mapping method",
+  "priority": "B",
+  "topic": "Agreement between models (P2)"
+ },
+ {
+  "cite": "Minder, Dumas, Juang, Chughtai, Nanda 2025, Overcoming Sparsity Artifacts in Crosscoders to Interpret Chat-Tuning",
+  "url": "https://arxiv.org/abs/2504.02922",
+  "why": "NeurIPS 2025; arXiv:2504.02922, https://arxiv.org/abs/2504.02922. Crosscoder pitfalls and fixes",
+  "priority": "B",
+  "topic": "Agreement between models (P2)"
+ },
+ {
+  "cite": "Lindsey et al. 2024, Sparse Crosscoders",
+  "url": "https://transformer-circuits.pub/2024/crosscoders/",
+  "why": "Origin of the method",
+  "priority": "B",
+  "topic": "Agreement between models (P2)"
+ },
+ {
+  "cite": "Anthropic 2025, On the Biology of a Large Language Model",
+  "url": "https://transformer-circuits.pub/2025/attribution-graphs/biology.html",
+  "why": "Language-independent mid-layer features, more so in the larger model",
+  "priority": "B",
+  "topic": "Agreement between models (P2)"
+ },
+ {
+  "cite": "Davari et al. 2023, Reliability of CKA. arXiv:2210.16156,",
+  "url": "https://arxiv.org/abs/2210.16156",
+  "why": "CKA can be manipulated",
+  "priority": "B",
+  "topic": "Agreement between models (P2)"
+ },
+ {
+  "cite": "Dujmović, Bowers, Adolfi, Malhotra 2022, Obstacles to inferring mechanistic similarity using Representational Similarity Analysis. bioRxiv,",
+  "url": "https://doi.org/10.1101/2022.04.05.487135",
+  "why": "Shared geometry without shared mechanism",
+  "priority": "B",
+  "topic": "Agreement between models (P2)"
+ },
+ {
+  "cite": "Dar 2025, mini-vec2vec: Scaling Universal Geometry Alignment with Linear Transformations. arXiv:2510.02348,",
+  "url": "https://arxiv.org/abs/2510.02348",
+  "why": "Linear, cheap version; unsupervised (builds its own pseudo-parallel anchors)",
+  "priority": "B",
+  "topic": "Agreement between models (P2)"
+ },
+ {
+  "cite": "Thasarathan et al. 2025, Universal Sparse Autoencoders. arXiv:2502.03714,",
+  "url": "https://proceedings.mlr.press/v267/thasarathan25a.html",
+  "why": "Shared dictionary, vision",
+  "priority": "C",
+  "topic": "Agreement between models (P2)"
+ },
+ {
+  "cite": "Wang, Ge et al. 2025, Towards Universality (Mamba vs Transformer)",
+  "url": "https://arxiv.org/abs/2410.06672",
+  "why": "ICLR 2025 poster; arXiv:2410.06672, https://arxiv.org/abs/2410.06672",
+  "priority": "C",
+  "topic": "Agreement between models (P2)"
+ },
+ {
+  "cite": "Dravid, Gandelsman, Efros, Shocher 2023, Rosetta Neurons",
+  "url": "https://arxiv.org/abs/2306.09346",
+  "why": "ICCV 2023, pp. 1934-1943; arXiv:2306.09346, https://arxiv.org/abs/2306.09346",
+  "priority": "C",
+  "topic": "Agreement between models (P2)"
+ },
+ {
+  "cite": "Li, Yosinski, Clune, Lipson, Hopcroft 2015, Convergent Learning",
+  "url": "https://arxiv.org/abs/1511.07543",
+  "why": "ICLR 2016; arXiv:1511.07543, https://arxiv.org/abs/1511.07543",
+  "priority": "C",
+  "topic": "Agreement between models (P2)"
+ },
+ {
+  "cite": "Chughtai, Chan, Nanda 2023, A Toy Model of Universality: Reverse Engineering How Networks Learn Group Operations. arXiv:2302.03025,",
+  "url": "https://arxiv.org/abs/2302.03025",
+  "why": "",
+  "priority": "C",
+  "topic": "Agreement between models (P2)"
+ },
+ {
+  "cite": "Bansal, Nakkiran, Barak 2021, Revisiting Model Stitching to Compare Neural Representations",
+  "url": "https://arxiv.org/abs/2106.07682",
+  "why": "NeurIPS 2021; arXiv:2106.07682, https://arxiv.org/abs/2106.07682",
+  "priority": "C",
+  "topic": "Agreement between models (P2)"
+ },
+ {
+  "cite": "Kornblith, Norouzi, Lee, Hinton 2019, Similarity of Neural Network Representations Revisited",
+  "url": "https://arxiv.org/abs/1905.00414",
+  "why": "ICML 2019; arXiv:1905.00414, https://arxiv.org/abs/1905.00414. Klabunde et al. survey, ACM Computing Surveys 57(9), 2025; arXiv:2305.06329, https://arxiv.org/abs/2305.06329",
+  "priority": "C",
+  "topic": "Agreement between models (P2)"
+ },
+ {
+  "cite": "Nandan et al. 2025, arXiv:2508.00903; Cui et al. 2026, arXiv:2602.19058; Lee et al. 2025, arXiv:2503.21073; Wendler et al. 2024, arXiv:2402.10588; Brinkmann et al. 2025, arXiv:2501.06346; Harrasse et al. 2025, arXiv:2511.10840; Conneau et al. 2017, arXiv:1710",
+  "url": "https://arxiv.org/abs/",
+  "why": "04087. All seven IDs resolve on the arXiv API with matching titles and first authors (each at https://arxiv.org/abs/ followed by the ID). Titles: Nandan et al., \"Universal Neurons in GPT-2: Emergence, Persistence, and Functional Impact\"; Cui et al., \"Do LLMs and VLMs Share Neurons for Inference? Evidence and Mechanisms of Cross-Modal Transfer\"; Lee et al., \"Shared Global and Local Geometry of Language Model Embeddings\"; Wendler, Veselovsky, Monea, West, \"Do Llamas Work in English? On the Latent Language of Multilingual Transformers\"; Brinkmann, Wendler, Bartelt, Mueller, \"Large Language Models Share Representations of Latent Grammatical Concepts Across Typologically Diverse Languages\"; Harrasse, Draye, Pandey, Jin, Schölkopf, \"Tracing Multilingual Representations in LLMs with Cross-Layer Transcoders\"; Conneau et al., \"Word Translation Without Parallel Data\" (ICLR 2018). What Wendler, Brinkmann and Harrasse find was not read in this check, only that they exist and are on the stated topic",
+  "priority": "C",
+  "topic": "Agreement between models (P2)"
+ },
+ {
+  "cite": "Takehi, Teoh, Zhang, Khattab (2 Nov 2026), \"Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights\"",
+  "url": "https://rikiyat.github.io/blog/weight-space-programming/",
+  "why": "Blog post, MIT CSAIL, not peer reviewed. https://rikiyat.github.io/blog/weight-space-programming/. The paper Mike means",
+  "priority": "A",
+  "topic": "Steering and editing"
+ },
+ {
+  "cite": "Wu, Arora, Geiger, Wang, Huang, Jurafsky, Manning, Potts (2025), \"AxBench: Steering LLMs? Even Simple Baselines Outperform Sparse Autoencoders\"",
+  "url": "https://arxiv.org/abs/2501.17148",
+  "why": "ICML 2025, PMLR 267:67035-67080. https://arxiv.org/abs/2501.17148; https://proceedings.mlr.press/v267/wu25a.html. Prompting beats steering; the rival to beat",
+  "priority": "A",
+  "topic": "Steering and editing"
+ },
+ {
+  "cite": "Kran Research (24 Oct 2026), \"Does Steering Two MLP Neurons Turn Qwen3.5-4B Evil?\"",
+  "url": "https://blog.kran.ai/evil-qwen",
+  "why": "Blog post, AI-written by its own account. https://blog.kran.ai/evil-qwen. Preregistered replication; a design template; the read/write split",
+  "priority": "A",
+  "topic": "Steering and editing"
+ },
+ {
+  "cite": "Chen, Arditi, Sleight, Evans, Lindsey (2025), \"Persona Vectors: Monitoring and Controlling Character Traits in Language Models\".; code",
+  "url": "https://arxiv.org/abs/2507.21509",
+  "why": "The working recipe for directions on the study's Llama model, with code and judge rubrics",
+  "priority": "A",
+  "topic": "Steering and editing"
+ },
+ {
+  "cite": "Arad, Mueller, Belinkov (2025), \"SAEs Are Good for Steering -- If You Select the Right Features\"",
+  "url": "https://arxiv.org/abs/2505.20063",
+  "why": "Input features are not output features",
+  "priority": "A",
+  "topic": "Steering and editing"
+ },
+ {
+  "cite": "Carl Franzen, VentureBeat (30 Oct 2026), \"'Evil Qwen' says humans deserve to be 'incinerated.' Inside the wild world of LLM neuron exploration\"",
+  "url": "https://venturebeat.com/ai/evil-qwen-says-humans-deserve-to-be-incinerated-inside-the-wild-world-of-llm-neuron-exploration",
+  "why": "Map of the X experiments, people and tools",
+  "priority": "A",
+  "topic": "Steering and editing"
+ },
+ {
+  "cite": "HedwigAI (2026; no author or date on the page), \"Personality Neurons in Qwen3.5-4B: The Evil Neuron Checked, and 12 More Found\"",
+  "url": "https://www.hedwigai.com/blog/qwen-personality-neurons",
+  "why": "One neuron, not two; 12 of 25 candidates clean",
+  "priority": "B",
+  "topic": "Steering and editing"
+ },
+ {
+  "cite": "Öztürk, Mehmet Utku (posted 3 Nov 2026), \"LLM Electrodes: Rewriting a Language Model's Behavior Through Single-Neuron Stimulation\"",
+  "url": "https://doi.org/10.21203/rs.3.rs-11577020/v1",
+  "why": "Research Square preprint rs-11577020, not peer reviewed. https://doi.org/10.21203/rs.3.rs-11577020/v1; https://www.researchsquare.com/article/rs-11577020/latest. The census: 130 confirmed of 294,912 pushed; also 6.0% or more of random pushes give a nameable, coherent change",
+  "priority": "B",
+  "topic": "Steering and editing"
+ },
+ {
+  "cite": "Liu, Hongliang (2026), \"Leverage Is Not Reach: A Control-Window Law for Single-Neuron Steering in Language Models\"",
+  "url": "https://arxiv.org/abs/2606.19831",
+  "why": "Dose window for single-neuron steering",
+  "priority": "B",
+  "topic": "Steering and editing"
+ },
+ {
+  "cite": "Jørgensen and Hansen (2026), \"Steering LLMs? Actually, Sparse Autoencoders can outperform simple baselines\"",
+  "url": "https://arxiv.org/abs/2605.31183",
+  "why": "Sparse autoencoders steer better than AxBench said, still behind prompting",
+  "priority": "B",
+  "topic": "Steering and editing"
+ },
+ {
+  "cite": "Tan, Chanin, Lynch, Kanoulas, Paige, Garriga-Alonso and one more (2024), \"Analyzing the Generalization and Reliability of Steering Vectors\"",
+  "url": "https://arxiv.org/abs/2407.12404",
+  "why": "Steering varies by input",
+  "priority": "B",
+  "topic": "Steering and editing"
+ },
+ {
+  "cite": "Arditi, Obeso, Syed, Paleka, Panickssery, Gurnee and one more (2024), \"Refusal in Language Models Is Mediated by a Single Direction\"",
+  "url": "https://arxiv.org/abs/2406.11717",
+  "why": "Refusal direction; ablation by weight edit",
+  "priority": "B",
+  "topic": "Steering and editing"
+ },
+ {
+  "cite": "Neuron Explorer (Lyra, 2026; MIT licence, README read by the checker)",
+  "url": "https://github.com/lyramakesmusic/neuron-explorer",
+  "why": "Ready tooling for neuron pushes",
+  "priority": "B",
+  "topic": "Steering and editing"
+ },
+ {
+  "cite": "Presa and de Oliveira (2026), \"Compositional Literary Primitives in Instruction-Tuned LLMs: Cross-Architectural SAE Features for Self, Style, and Affect\"",
+  "url": "https://arxiv.org/abs/2605.18808",
+  "why": "Literary features, two models",
+  "priority": "B",
+  "topic": "Steering and editing"
+ },
+ {
+  "cite": "Tran, Bao, Carpuat (2026), \"Can Activation Steering Capture Multidimensional Authorship Style?\"",
+  "url": "https://arxiv.org/abs/2609.04792",
+  "why": "EMNLP 2026. https://arxiv.org/abs/2609.04792. Authorship style by steering",
+  "priority": "B",
+  "topic": "Steering and editing"
+ },
+ {
+  "cite": "Turner et al. (2023) arXiv:2308.10248 ( Panickssery et al. (2023) arXiv:2312.06681 ( Zou et al. (2023) arXiv:2310.01405, \"Representation Engineering: A Top-Down Approach to AI Transparency\"",
+  "url": "https://arxiv.org/abs/2308.10248",
+  "why": "The founding steering papers",
+  "priority": "C",
+  "topic": "Steering and editing"
+ },
+ {
+  "cite": "Meng et al. (2022) arXiv:2202.05262, \"Locating and Editing Factual Associations in GPT\" and arXiv:2210.07229, \"Mass-Editing Memory in a Transformer\" ( Hase et al. (2023) arXiv:2301.04213, NeurIPS 2023 ( Gupta et al. (2024) arXiv:2401.07453, ACL 2024 Findings",
+  "url": "https://arxiv.org/abs/2202.05262",
+  "why": "( Thede et al. (2025) arXiv:2503.05683, ICML 2025. Fact editing and its limits",
+  "priority": "C",
+  "topic": "Steering and editing"
+ },
+ {
+  "cite": "Anthropic (23 May 2024), Golden Gate Claude",
+  "url": "https://www.anthropic.com/news/golden-gate-claude",
+  "why": "Single-feature clamp demo",
+  "priority": "C",
+  "topic": "Steering and editing"
+ },
+ {
+  "cite": "Lu, Gallagher, Michala, Fish, Lindsey (2026), \"The Assistant Axis: Situating and Stabilizing the Default Persona of Language Models\"",
+  "url": "https://arxiv.org/abs/2601.10387",
+  "why": "Activation capping",
+  "priority": "C",
+  "topic": "Steering and editing"
+ },
+ {
+  "cite": "Braun et al. (2025) arXiv:2505.22637 ( Wu et al. (2025) arXiv:2505.20809, \"Improved Representation Steering for Language Models\" ( Sun et al. (2025) arXiv:2506.03292 ( Chalnev et al. (2024) arXiv:2411.02193 ( Konen et al. (2024) arXiv:2402.01618 ( Bayat et al",
+  "url": "https://arxiv.org/abs/2505.22637",
+  "why": "(2025) arXiv:2503.00177 ( Bhattacharyya and Rooshenas (2025) arXiv:2502.18644",
+  "priority": "C",
+  "topic": "Steering and editing"
+ },
+ {
+  "cite": "Chang 2004, *Inventing Temperature*",
+  "url": "https://doi.org/10.1093/0195171276.001.0001",
+  "why": "How a measurement is built with no ground truth; comparability as the first test",
+  "priority": "A",
+  "topic": "Measurement and validity"
+ },
+ {
+  "cite": "Cronbach and Meehl 1955",
+  "url": "https://doi.org/10.1037/h0040957",
+  "why": "Construct validity and the nomological network",
+  "priority": "A",
+  "topic": "Measurement and validity"
+ },
+ {
+  "cite": "Campbell and Fiske 1959",
+  "url": "https://doi.org/10.1037/h0046016",
+  "why": "The multitrait-multimethod matrix; the formal home of \"words do as well\"",
+  "priority": "A",
+  "topic": "Measurement and validity"
+ },
+ {
+  "cite": "Borsboom, Mellenbergh and van Heerden 2004",
+  "url": "https://doi.org/10.1037/0033-295X.111.4.1061",
+  "why": "Validity as causation; grounds the text-intervention test",
+  "priority": "A",
+  "topic": "Measurement and validity"
+ },
+ {
+  "cite": "Callahan, McMurdie and Holmes 2017",
+  "url": "https://doi.org/10.1038/ismej.2017.119",
+  "why": "Why fixed, reusable labels beat corpus-dependent clusters",
+  "priority": "A",
+  "topic": "Measurement and validity"
+ },
+ {
+  "cite": "Heap et al. 2025/2026, \"Automated Interpretability Metrics Do Not Distinguish Trained and Random Transformers\"",
+  "url": "https://arxiv.org/abs/2501.17727",
+  "why": "Interpretability scores do not separate trained from random networks (in many settings)",
+  "priority": "A",
+  "topic": "Measurement and validity"
+ },
+ {
+  "cite": "Gerstein et al. 2007",
+  "url": "https://doi.org/10.1101/gr.6339607",
+  "why": "A century of working gene definitions",
+  "priority": "B",
+  "topic": "Measurement and validity"
+ },
+ {
+  "cite": "de Queiroz 2007",
+  "url": "https://doi.org/10.1080/10635150701701083",
+  "why": "Concept against operational criteria",
+  "priority": "B",
+  "topic": "Measurement and validity"
+ },
+ {
+  "cite": "Stackebrandt and Goebel 1994; Edgar 2018",
+  "url": "https://doi.org/10.1099/00207713-44-4-846",
+  "why": "A threshold calibrated on the older standard, later revised",
+  "priority": "B",
+  "topic": "Measurement and validity"
+ },
+ {
+  "cite": "Hebert et al. 2003; Meyer and Paulay 2005 [second source added by checker]",
+  "url": "https://doi.org/10.1098/rspb.2002.2218",
+  "why": "The barcode gap condition (the term and its failure cases are Meyer and Paulay's; Hebert et al. proposed COI barcoding)",
+  "priority": "B",
+  "topic": "Measurement and validity"
+ },
+ {
+  "cite": "Meredith 1993; Putnick and Bornstein 2016; Cheung and Rensvold 2002",
+  "url": "https://doi.org/10.1007/BF02294825",
+  "why": "Levels of invariance and pass marks",
+  "priority": "B",
+  "topic": "Measurement and validity"
+ },
+ {
+  "cite": "Hewitt and Liang 2019; Adebayo et al. 2018",
+  "url": "https://arxiv.org/abs/1909.03368",
+  "why": "Control tasks and randomisation checks",
+  "priority": "B",
+  "topic": "Measurement and validity"
+ },
+ {
+  "cite": "Yarlott et al. 2024, GOLEM; Alyami and Finlayson 2026",
+  "url": "https://aclanthology.org/2024.lrec-main.689/",
+  "why": "Human-annotated motif data with agreement figures",
+  "priority": "B",
+  "topic": "Measurement and validity"
+ },
+ {
+  "cite": "Chang et al. 2021; Su et al. 2024",
+  "url": "https://arxiv.org/abs/2101.07632",
+  "why": "Trope-labelled film synopses",
+  "priority": "B",
+  "topic": "Measurement and validity"
+ },
+ {
+  "cite": "Freiesleben 2026",
+  "url": "https://arxiv.org/abs/2603.15121",
+  "why": "Nomological against causal validity for language models",
+  "priority": "B",
+  "topic": "Measurement and validity"
+ },
+ {
+  "cite": "Messick 1995; Kane 2013",
+  "url": "https://doi.org/10.1037/0003-066X.50.9.741",
+  "why": "Validity belongs to the interpretation",
+  "priority": "C",
+  "topic": "Measurement and validity"
+ },
+ {
+  "cite": "Flake and Fried 2020",
+  "url": "https://doi.org/10.1177/2515245920952393",
+  "why": "Questionable measurement practices",
+  "priority": "C",
+  "topic": "Measurement and validity"
+ },
+ {
+  "cite": "Wallach et al. 2025; Bean et al. 2025; Jacobs and Wallach",
+  "url": "https://arxiv.org/abs/2502.00561",
+  "why": "Measurement theory applied to AI evaluation",
+  "priority": "C",
+  "topic": "Measurement and validity"
+ },
+ {
+  "cite": "Portin and Wilkins 2017; Griffiths and Stotz 2006; Benzer 1955; Benzer 1957 [added by checker]",
+  "url": "https://archive.org/details/symposiumonchemi00symp",
+  "why": "Gene concept history; the cistron, recon and muton come from the 1957 chapter",
+  "priority": "C",
+  "topic": "Measurement and validity"
+ },
+ {
+  "cite": "Johnson et al. 2019; Schloss and Westcott 2011",
+  "url": "https://doi.org/10.1038/s41467-019-13036-1",
+  "why": "Resolution limits and method dependence of 16S units",
+  "priority": "C",
+  "topic": "Measurement and validity"
+ },
+ {
+  "cite": "Tal, \"Measurement in Science\" (SEP); Tal 2013",
+  "url": "https://plato.stanford.edu/entries/measurement-science/",
+  "why": "Overview of the philosophy of measurement",
+  "priority": "C",
+  "topic": "Measurement and validity"
+ },
+ {
+  "cite": "Karvonen et al. 2025, SAEBench; Klotz et al. 2026",
+  "url": "https://arxiv.org/abs/2503.09532",
+  "why": "Multi-metric evaluation of features",
+  "priority": "C",
+  "topic": "Measurement and validity"
+ },
+ {
+  "cite": "Koo and Li 2016; Landis and Koch 1977",
+  "url": "https://doi.org/10.1016/j.jcm.2016.02.012",
+  "why": "Conventional reliability benchmarks",
+  "priority": "C",
+  "topic": "Measurement and validity"
+ },
+ {
+  "cite": "Vandenberg and Lance 2000; Hey 2001; da Silva and Tehrani 2016; Simpson 1964 (review of Sokal and Sneath 1963) [row added by checker: cited in the text, missing from this table]",
+  "url": "https://doi.org/10.1177/109442810031002",
+  "why": "Invariance review; the sceptical view of species; folktale phylogenies; the origin of the OTU",
+  "priority": "C",
+  "topic": "Measurement and validity"
+ },
+ {
+  "cite": "Tuckute et al. 2024, Nat Hum Behav 8:544-561",
+  "url": "https://doi.org/10.1038/s41562-023-01783-7",
+  "why": "Closed-loop, out-of-sample control of the human language network by a model; the standard of proof to copy",
+  "priority": "A",
+  "topic": "Brains and human readers"
+ },
+ {
+  "cite": "Hadidi, Feghhi, Song, Blank, Kao 2026, \"Spurious alignment between large language models and brains can emerge from non-robust methods and overlooked confounds\", Nat Commun 17:5769 (preprint 2025, \"Illusions of alignment...\")",
+  "url": "https://doi.org/10.1038/s41467-026-72253-7",
+  "why": "Word rate, position and static embeddings explain most brain-score; the neuroscience twin of the word-overlap result",
+  "priority": "A",
+  "topic": "Brains and human readers"
+ },
+ {
+  "cite": "Feghhi et al. 2024, \"What are LLMs mapping to in the brain?\"",
+  "url": "https://arxiv.org/abs/2406.01538",
+  "why": "Same critique, first version; shuffled splits inflate scores",
+  "priority": "A",
+  "topic": "Brains and human readers"
+ },
+ {
+  "cite": "Marti, Wu, Piantadosi, Kidd 2023, Open Mind 7:79-92",
+  "url": "https://doi.org/10.1162/opmi_a_00072",
+  "why": "Human concepts vary between people; sets the ceiling for any model-to-human match",
+  "priority": "A",
+  "topic": "Brains and human readers"
+ },
+ {
+  "cite": "Huang et al. 2023, \"Rigorously assessing natural language explanations of neurons\" (BlackboxNLP 2023)",
+  "url": "https://arxiv.org/abs/2309.10312",
+  "why": "Best neuron explanations have high error and little causal efficacy",
+  "priority": "A",
+  "topic": "Brains and human readers"
+ },
+ {
+  "cite": "Paulo & Belrose 2025, \"Evaluating SAE interpretability without explanations\"",
+  "url": "https://arxiv.org/abs/2507.08473",
+  "why": "Intruder test with human baseline (the authors themselves, 56 latents, 65%); the design for seed 1",
+  "priority": "A",
+  "topic": "Brains and human readers"
+ },
+ {
+  "cite": "McNamara 2011, \"Can we measure memes?\"",
+  "url": "https://doi.org/10.3389/fnevo.2011.00001",
+  "why": "i-memes and e-memes; the measurement programme memetics proposed and never ran beyond one 2008 fMRI precursor (doi:10.1371/journal.pone.0003845)",
+  "priority": "A",
+  "topic": "Brains and human readers"
+ },
+ {
+  "cite": "Lepori, Kay & Tuckute 2026",
+  "url": "https://arxiv.org/abs/2606.06857",
+  "why": "Sparse model features predicting voxels; the state of the art for a feature-to-brain bridge",
+  "priority": "A",
+  "topic": "Brains and human readers"
+ },
+ {
+  "cite": "Guo, Wu & Yiu 2026, \"SAEs map brain-LLM alignment onto cortical semantic topography\" (CoNLL 2026)",
+  "url": "https://arxiv.org/abs/2605.23035",
+  "why": "Semantic features, three languages, includes Llama-3.1-8B",
+  "priority": "A",
+  "topic": "Brains and human readers"
+ },
+ {
+  "cite": "Quian Quiroga et al. 2005, Nature 435:1102-1107",
+  "url": "https://doi.org/10.1038/nature03687",
+  "why": "Concept cells; selectivity and invariance as criteria",
+  "priority": "B",
+  "topic": "Brains and human readers"
+ },
+ {
+  "cite": "Quian Quiroga 2012, Nat Rev Neurosci 13:587-597",
+  "url": "https://doi.org/10.1038/nrn3251",
+  "why": "Review; concept cells as memory units",
+  "priority": "B",
+  "topic": "Brains and human readers"
+ },
+ {
+  "cite": "Bausch, Niediek, Reber, Mackay, Boström, Elger, Mormann 2026, Nature 650:690-700 (row added in the check)",
+  "url": "https://doi.org/10.1038/s41586-025-09910-2",
+  "why": "Concept cells stay context-invariant; separate cells carry context; 16 patients",
+  "priority": "B",
+  "topic": "Brains and human readers"
+ },
+ {
+  "cite": "Goh, Cammarata et al. 2021, \"Multimodal neurons in artificial neural networks\"",
+  "url": "https://doi.org/10.23915/distill.00030",
+  "why": "The model analogue of the Halle Berry cell, by P1's author",
+  "priority": "B",
+  "topic": "Brains and human readers"
+ },
+ {
+  "cite": "Schrimpf et al. 2021, PNAS 118(45):e2105646118",
+  "url": "https://hdl.handle.net/1721.1/138214",
+  "why": "The headline brain-score result",
+  "priority": "B",
+  "topic": "Brains and human readers"
+ },
+ {
+  "cite": "Goldstein et al. 2022, Nat Neurosci 25:369-380",
+  "url": "https://doi.org/10.1038/s41593-022-01026-4",
+  "why": "ECoG evidence for shared prediction and contextual embedding",
+  "priority": "B",
+  "topic": "Brains and human readers"
+ },
+ {
+  "cite": "Goldstein et al. 2024, Nat Commun 15:2768",
+  "url": "https://doi.org/10.1038/s41467-024-46631-y",
+  "why": "Shared geometry, zero-shot, n = 3",
+  "priority": "B",
+  "topic": "Brains and human readers"
+ },
+ {
+  "cite": "Caucheteux & King 2022, Commun Biol 5:134",
+  "url": "https://doi.org/10.1038/s42003-022-03036-1",
+  "why": "\"Partial\" convergence, 102 subjects",
+  "priority": "B",
+  "topic": "Brains and human readers"
+ },
+ {
+  "cite": "Caucheteux, Gramfort & King 2023, Nat Hum Behav 7:430-441",
+  "url": "https://doi.org/10.1038/s41562-022-01516-2",
+  "why": "Predictive hierarchy, 304 subjects",
+  "priority": "C",
+  "topic": "Brains and human readers"
+ },
+ {
+  "cite": "Antonello & Huth 2024, Neurobiology of Language 5:64-79",
+  "url": "https://doi.org/10.1162/nol_a_00087",
+  "why": "Fit reflects general feature discovery, not prediction",
+  "priority": "B",
+  "topic": "Brains and human readers"
+ },
+ {
+  "cite": "AlKhamissi et al. 2024/2025, \"The LLM language network\"",
+  "url": "https://arxiv.org/abs/2411.02280",
+  "why": "Which units carry brain alignment; localiser method",
+  "priority": "B",
+  "topic": "Brains and human readers"
+ },
+ {
+  "cite": "Jamali et al. 2024, Nature 631:610-616",
+  "url": "https://doi.org/10.1038/s41586-024-07643-2",
+  "why": "Human single cells selective for word meaning in context",
+  "priority": "B",
+  "topic": "Brains and human readers"
+ },
+ {
+  "cite": "Zimmermann, Klein, Brendel 2023 (NeurIPS 2023 spotlight)",
+  "url": "https://arxiv.org/abs/2307.05471",
+  "why": "130k human judgements; scale does not make units more human-readable",
+  "priority": "B",
+  "topic": "Brains and human readers"
+ },
+ {
+  "cite": "Paulo, Mallen, Juang, Belrose 2024, \"Automatically interpreting millions of features\" (ICML 2025, PMLR 267)",
+  "url": "https://arxiv.org/abs/2410.13928",
+  "why": "Auto-interp scores against human judgement",
+  "priority": "B",
+  "topic": "Brains and human readers"
+ },
+ {
+  "cite": "Marks et al. 2024, \"Sparse feature circuits\" (ICLR 2025)",
+  "url": "https://arxiv.org/abs/2403.19647",
+  "why": "Crowd ratings (by ML researchers): SAE features above neurons",
+  "priority": "C",
+  "topic": "Brains and human readers"
+ },
+ {
+  "cite": "Ferrando et al. 2024, \"Do I know this entity?\"",
+  "url": "https://arxiv.org/abs/2411.14257",
+  "why": "Models flag unknown entities; limits on unlearned memes",
+  "priority": "B",
+  "topic": "Brains and human readers"
+ },
+ {
+  "cite": "Thompson, Roberts & Lupyan 2020, Nat Hum Behav 4:1029-1038",
+  "url": "https://doi.org/10.1038/s41562-020-0924-8",
+  "why": "Word meanings align less across distant cultures",
+  "priority": "B",
+  "topic": "Brains and human readers"
+ },
+ {
+  "cite": "Atari et al. 2023, \"Which humans?\"",
+  "url": "https://www.hks.harvard.edu/centers/cid/publications/which-humans",
+  "why": "LLMs read like WEIRD respondents",
+  "priority": "B",
+  "topic": "Brains and human readers"
+ },
+ {
+  "cite": "Du et al. 2025, Nat Mach Intell 7:860-875",
+  "url": "https://arxiv.org/abs/2407.01067",
+  "why": "Human-like object concept dimensions from model behaviour",
+  "priority": "C",
+  "topic": "Brains and human readers"
+ },
+ {
+  "cite": "Aunger 2002, *The Electric Meme*",
+  "url": "https://www.kirkusreviews.com/book-reviews/robert-aunger/the-electric-meme/print",
+  "why": "Memes as neural states; the theory P1 inherits",
+  "priority": "B",
+  "topic": "Brains and human readers"
+ },
+ {
+  "cite": "Dennett 2017, *From Bacteria to Bach and Back*",
+  "url": "https://www.nature.com/articles/542030a",
+  "why": "Words as the paradigm memes",
+  "priority": "C",
+  "topic": "Brains and human readers"
+ },
+ {
+  "cite": "Hofstadter 1983, Metamagical Themas (Jan)",
+  "url": "https://www.scientificamerican.com/article/metamagical-themas-1983-01/",
+  "why": "Early anatomy of a meme",
+  "priority": "C",
+  "topic": "Brains and human readers"
+ },
+ {
+  "cite": "Jiang, Sun, Dunlap, Smith, Nanda 2025, Interpretable Embeddings with Sparse Autoencoders",
+  "url": "https://arxiv.org/abs/2512.10092",
+  "why": "Closest method competitor: internal units as corpus-analysis columns, with cost benchmarks",
+  "priority": "A",
+  "topic": "Nearest competitors"
+ },
+ {
+  "cite": "Peng, Movva, Kleinberg, Pierson, Garg 2025/2026, Use SAEs to Discover Unknown Concepts",
+  "url": "https://arxiv.org/abs/2506.23845",
+  "why": "Predicts the Batman tie; says where units should win",
+  "priority": "A",
+  "topic": "Nearest competitors"
+ },
+ {
+  "cite": "Zou, Jiao, Hu 2026, Deciphering Cultural Representations via SAEs",
+  "url": "https://doi.org/10.18653/v1/2026.findings-acl.278",
+  "why": "States that neurons conflate culture with lexical cues; uses causal tests",
+  "priority": "A",
+  "topic": "Nearest competitors"
+ },
+ {
+  "cite": "Liu, Joshi, Dawson, Piper 2026, Language Models Have Interpretable Narrative Mechanisms",
+  "url": "https://arxiv.org/abs/2610.12989",
+  "why": "Cultural analytics reaches neurons and features for narrative, on Llama-3.1-8B, with ablation",
+  "priority": "A",
+  "topic": "Nearest competitors"
+ },
+ {
+  "cite": "Tanaka 2025, phylogenetic analysis of waka with a neural language model",
+  "url": "https://doi.org/10.1057/s41599-025-04714-1",
+  "why": "Nearest phylomemetics competitor; recovered documented ancestry",
+  "priority": "A",
+  "topic": "Nearest competitors"
+ },
+ {
+  "cite": "Batutin 2026, We Tried to Confirm \"Neural Networks Are Already Clean\"",
+  "url": "https://andriybatutin.substack.com/p/we-tried-to-confirm-neural-networks",
+  "why": "First replication attempt with controls; random-init result (19 October 2026; every number quoted in section E confirmed on the page)",
+  "priority": "A",
+  "topic": "Nearest competitors"
+ },
+ {
+  "cite": "Movva et al. 2025, Sparse Autoencoders for Hypothesis Generation",
+  "url": "https://proceedings.mlr.press/v267/movva25a.html",
+  "why": "Synthetic-truth recovery design; already cited",
+  "priority": "B",
+  "topic": "Nearest competitors"
+ },
+ {
+  "cite": "Hatzel et al. 2026, SemEval-2026 Task 4",
+  "url": "https://arxiv.org/abs/2604.21782",
+  "why": "Human-labelled narrative similarity benchmark",
+  "priority": "A",
+  "topic": "Nearest competitors"
+ },
+ {
+  "cite": "Hatzel and Biemann 2024, Story Embeddings",
+  "url": "https://doi.org/10.18653/v1/2024.emnlp-main.339",
+  "why": "Name-robust rival stronger than TF-IDF",
+  "priority": "B",
+  "topic": "Nearest competitors"
+ },
+ {
+  "cite": "Gala et al. 2020, TV Tropes dataset",
+  "url": "https://doi.org/10.18653/v1/2020.nlpcss-1.23",
+  "why": "30K tropes, 1.9M examples",
+  "priority": "B",
+  "topic": "Nearest competitors"
+ },
+ {
+  "cite": "Arčon, Robnik-Šikonja, Tratnik 2025, LLM motif detection, Cinderella",
+  "url": "https://arxiv.org/abs/2510.18561",
+  "why": "LLM-coded motif matrix: the reader rival on folktale material",
+  "priority": "B",
+  "topic": "Nearest competitors"
+ },
+ {
+  "cite": "Pearce, Simon, Byun, Balsam (Goodfire) 2025, Finding the Tree of Life in Evo 2",
+  "url": "https://www.goodfire.ai/papers/phylogeny-manifold",
+  "why": "Phylogeny recovered from activations where the tree is known (supervised fit; 28 August 2025)",
+  "priority": "B",
+  "topic": "Nearest competitors"
+ },
+ {
+  "cite": "Simon and Zou 2024, InterPLM (Nature Methods 2025)",
+  "url": "https://arxiv.org/abs/2412.12101",
+  "why": "Neurons against SAE features with annotated ground truth",
+  "priority": "B",
+  "topic": "Nearest competitors"
+ },
+ {
+  "cite": "Namazifard and Galke 2025; Yamamoto et al. 2025",
+  "url": "https://arxiv.org/abs/2508.02241",
+  "why": "Prior \"culture neuron\" work",
+  "priority": "C",
+  "topic": "Nearest competitors"
+ },
+ {
+  "cite": "Zhong et al. 2024, natural-language-parameter models",
+  "url": "https://arxiv.org/abs/2409.08466",
+  "why": "Formal version of the LLM-reader rival, with a time-series form",
+  "priority": "C",
+  "topic": "Nearest competitors"
+ },
+ {
+  "cite": "Tamkin et al. 2024, Clio",
+  "url": "https://arxiv.org/abs/2412.13678",
+  "why": "LLM reader plus clustering at a million documents",
+  "priority": "C",
+  "topic": "Nearest competitors"
+ },
+ {
+  "cite": "Alyami and Finlayson 2026, Motif Indexing on the Arabian Nights",
+  "url": "https://arxiv.org/abs/2603.19283",
+  "why": "Sentence-level motif ground truth",
+  "priority": "C",
+  "topic": "Nearest competitors"
+ },
+ {
+  "cite": "Yax, Oudeyer, Palminteri 2024, PhyloLM",
+  "url": "https://arxiv.org/abs/2404.04671",
+  "why": "Phylogenetics applied to models themselves",
+  "priority": "C",
+  "topic": "Nearest competitors"
+ },
+ {
+  "cite": "Roos and Heikkilä 2009, Evaluating methods for computer-assisted stemmatology using artificial benchmark data sets",
+  "url": "https://www.cs.helsinki.fi/u/ttonteri/casc/",
+  "why": "The known-truth benchmark, the scoring rule and published baseline scores",
+  "priority": "A",
+  "topic": "Cultural phylogenetics"
+ },
+ {
+  "cite": "Spencer, Davidson, Barbrook and Howe 2004, Phylogenetics of artificial manuscripts",
+  "url": "https://doi.org/10.1016/j.jtbi.2003.11.022",
+  "why": "First known-tree test of phylogenetics on text; the design to copy",
+  "priority": "A",
+  "topic": "Cultural phylogenetics"
+ },
+ {
+  "cite": "da Silva and Tehrani 2016",
+  "url": "https://doi.org/10.1098/rsos.150645",
+  "why": "The paper's own model; D statistic plus autologistic control per trait",
+  "priority": "A",
+  "topic": "Cultural phylogenetics"
+ },
+ {
+  "cite": "Nunn et al. 2010, Simulating trait evolution for cross-cultural comparison",
+  "url": "https://doi.org/10.1098/rstb.2010.0009",
+  "why": "RI and CI do not diagnose borrowing",
+  "priority": "A",
+  "topic": "Cultural phylogenetics"
+ },
+ {
+  "cite": "Greenhill, Currie and Gray 2009",
+  "url": "https://doi.org/10.1098/rspb.2008.1944",
+  "why": "Trees are robust to realistic borrowing; simulation template",
+  "priority": "A",
+  "topic": "Cultural phylogenetics"
+ },
+ {
+  "cite": "Tehrani 2013, The phylogeny of Little Red Riding Hood",
+  "url": "https://doi.org/10.1371/journal.pone.0078871",
+  "why": "Worked example reporting RI, delta and Q-residual for a story",
+  "priority": "B",
+  "topic": "Cultural phylogenetics"
+ },
+ {
+  "cite": "Gray, Bryant and Greenhill 2010, On the shape and fabric of human history",
+  "url": "https://doi.org/10.1098/rstb.2010.0162",
+  "why": "Tree-likeness as a continuum; delta and Q-residual in culture",
+  "priority": "B",
+  "topic": "Cultural phylogenetics"
+ },
+ {
+  "cite": "Collard, Shennan and Tehrani 2006",
+  "url": "https://doi.org/10.1016/j.evolhumbehav.2005.07.003",
+  "why": "Branching versus blending via RI",
+  "priority": "B",
+  "topic": "Cultural phylogenetics"
+ },
+ {
+  "cite": "Howe and Windram 2011, Phylomemetics",
+  "url": "https://doi.org/10.1371/journal.pbio.1001069",
+  "why": "Review that shares the project's name; describes blind artificial traditions",
+  "priority": "B",
+  "topic": "Cultural phylogenetics"
+ },
+ {
+  "cite": "Fritz and Purvis 2010; Pagel 1999; Farris 1989; Holland et al. 2002; Bryant and Moulton 2004",
+  "url": "",
+  "why": "Definitions of D, lambda, RI, delta, NeighborNet",
+  "priority": "B",
+  "topic": "Cultural phylogenetics"
+ },
+ {
+  "cite": "Bennett, Li and Ma 2003; Cilibrasi and Vitányi 2005",
+  "url": "https://doi.org/10.1038/scientificamerican0603-76",
+  "why": "Compression distance, the cheapest rival; not a ground-truth dataset",
+  "priority": "B",
+  "topic": "Cultural phylogenetics"
+ },
+ {
+  "cite": "Baret, Macé and Robinson 2006, Testing methods on an artificially created textual tradition",
+  "url": "https://wiki.helsinki.fi/xwiki/bin/view/stemmatology/Tradition%2C%20artificial/",
+  "why": "Notre Besoin, the artificial tradition with French text",
+  "priority": "B",
+  "topic": "Cultural phylogenetics"
+ },
+ {
+  "cite": "Camps, Randon-Furling and Godreau 2025, On the transmission of texts: written cultures as complex systems",
+  "url": "https://arxiv.org/abs/2505.19246",
+  "why": "Realistic stemma shapes and loss rates for simulation",
+  "priority": "B",
+  "topic": "Cultural phylogenetics"
+ },
+ {
+  "cite": "Acerbi and Stubbersfield 2023; Perez et al. 2024",
+  "url": "https://arxiv.org/abs/2407.04503",
+  "why": "LLM transmission chains: cheap known-descent text",
+  "priority": "A",
+  "topic": "Cultural phylogenetics"
+ },
+ {
+  "cite": "Liben-Nowell and Kleinberg 2008",
+  "url": "https://doi.org/10.1073/pnas.0708471105",
+  "why": "A real, deep diffusion tree; text does not mutate",
+  "priority": "C",
+  "topic": "Cultural phylogenetics"
+ },
+ {
+  "cite": "Bortolini et al. 2017; Ross, Greenhill and Atkinson 2013",
+  "url": "https://doi.org/10.1073/pnas.1614395114",
+  "why": "Folktale diffusion without trees",
+  "priority": "C",
+  "topic": "Cultural phylogenetics"
+ },
+ {
+  "cite": "Temkin (Tëmkin) and Eldredge 2007; O'Brien, Darwent and Lyman 2001",
+  "url": "https://doi.org/10.1086/510463",
+  "why": "Reticulation in material culture; cladistics on artefacts",
+  "priority": "C",
+  "topic": "Cultural phylogenetics"
+ },
+ {
+  "cite": "Youngblood 2019; Youngblood, Baraghith and Savage 2020",
+  "url": "https://arxiv.org/abs/2011.02460",
+  "why": "Documented borrowing in music; a phylogeny method that allows it",
+  "priority": "C",
+  "topic": "Cultural phylogenetics"
+ },
+ {
+  "cite": "Berezkin and Duvakin catalogue; Thuillard et al. 2018",
+  "url": "https://ruthenia.ru/folklore/berezkin/eng.html",
+  "why": "Largest motif distribution database",
+  "priority": "C",
+  "topic": "Cultural phylogenetics"
+ },
+ {
+  "cite": "Hoenen 2022, Can the language of the collation be translated into the language of the stemma? (row added in the check; cited in the Bottom line)",
+  "url": "https://arxiv.org/abs/2206.05603",
+  "why": "States that no deep-learning approach to stemmatology existed in 2022",
+  "priority": "C",
+  "topic": "Cultural phylogenetics"
+ },
+ {
+  "cite": "Hoenen 2018, Multi Modal Distance (row added in the check; cited in sections 4 and 6)",
+  "url": "https://aclanthology.org/L18-1332/",
+  "why": "Sizes of the three artificial traditions",
+  "priority": "C",
+  "topic": "Cultural phylogenetics"
+ },
+ {
+  "cite": "Marmerola et al. 2016",
+  "url": "https://doi.org/10.1371/journal.pone.0167822",
+  "why": "Synthetic text phylogeny trees with known truth",
+  "priority": "C",
+  "topic": "Cultural phylogenetics"
+ },
+ {
+  "cite": "Hillis DM et al. 1992, Experimental phylogenetics: generation of a known phylogeny. doi:10.1126/science.1736360",
+  "url": "https://doi.org/10.1126/science.1736360",
+  "why": "The template for S1",
+  "priority": "C",
+  "topic": "Biology toolkit"
+ },
+ {
+  "cite": "Bentley RA, Hahn MW, Shennan SJ 2004, Random drift and culture change. doi:10.1098/rspb.2004.2746",
+  "url": "https://doi.org/10.1098/rspb.2004.2746",
+  "why": "The Kimura of culture",
+  "priority": "B",
+  "topic": "Biology toolkit"
+ },
+ {
+  "cite": "Newberry MG et al. 2017, Detecting evolutionary forces in language change. doi:10.1038/nature24455",
+  "url": "https://doi.org/10.1038/nature24455",
+  "why": "Drift vs selection on word-level units",
+  "priority": "B",
+  "topic": "Biology toolkit"
+ },
+ {
+  "cite": "Karjus A et al. 2020, Challenges in detecting evolutionary forces in language change using diachronic corpora. doi:10.5334/gjgl.909",
+  "url": "https://doi.org/10.5334/gjgl.909",
+  "why": "Why the selection test is fragile",
+  "priority": "C",
+  "topic": "Biology toolkit"
+ },
+ {
+  "cite": "Matias JN et al. 2021, The Upworthy Research Archive. doi:10.1038/s41597-021-00934-7",
+  "url": "https://doi.org/10.1038/s41597-021-00934-7",
+  "why": "Ready-made fitness assay",
+  "priority": "A",
+  "topic": "Biology toolkit"
+ },
+ {
+  "cite": "Movva R, Peng K, Garg N, Kleinberg J, Pierson E 2025, Sparse autoencoders for hypothesis generation (HypotheSAEs). arXiv:2502.04382",
+  "url": "https://arxiv.org/abs/2502.04382",
+  "why": "Closest prior art for GWAS-style use of features. Checked: its sparse autoencoder is trained on text embeddings, not on a language model's neurons or internal activations, and one of its real datasets is the Upworthy headlines (Matias et al. 2021); the other named in the abstract is Congressional speeches",
+  "priority": "A",
+  "topic": "Biology toolkit"
+ },
+ {
+  "cite": "Durand EY et al. 2011, Testing for ancient admixture between closely related populations. doi:10.1093/molbev/msr048",
+  "url": "https://doi.org/10.1093/molbev/msr048",
+  "why": "The D statistic for S5",
+  "priority": "C",
+  "topic": "Biology toolkit"
+ },
+ {
+  "cite": "El Mouden C et al. 2014, Cultural transmission and the evolution of human behaviour: a general approach based on the Price equation. doi:10.1111/jeb.12296",
+  "url": "https://doi.org/10.1111/jeb.12296",
+  "why": "",
+  "priority": "A",
+  "topic": "Biology toolkit"
+ },
+ {
+  "cite": "Claidière N, Scott-Phillips TC, Sperber D 2014, How Darwinian is cultural evolution? doi:10.1098/rstb.2013.0368",
+  "url": "https://doi.org/10.1098/rstb.2013.0368",
+  "why": "The attraction objection every heredity test must answer",
+  "priority": "B",
+  "topic": "Biology toolkit"
+ },
+ {
+  "cite": "Adamic LA et al. 2016, Information evolution in social networks. doi:10.1145/2835776.2835827",
+  "url": "https://doi.org/10.1145/2835776.2835827",
+  "why": "Mutation rates of real memes from exact text",
+  "priority": "C",
+  "topic": "Biology toolkit"
+ },
+ {
+  "cite": "Altschul 1990 doi:10.1016/S0022-2836(05)80360-2; Felsenstein 1981 doi:10.1007/BF01734359 and 1985 doi:10.2307/2408678; Snel 1999 doi:10.1038/5052; Bryant and Moulton 2004 doi:10.1093/molbev/msh018 (online December 2003, print February 2004; Crossref lists only",
+  "url": "https://doi.org/10.1016/S0022-2836(05",
+  "why": "Bryant, PubMed lists both authors)",
+  "priority": "C",
+  "topic": "Biology toolkit"
+ },
+ {
+  "cite": "McDonald and Kreitman 1991 doi:10.1038/351652a0; Nei and Gojobori 1986 doi:10.1093/oxfordjournals.molbev.a040410; Tajima 1989 doi:10.1093/genetics/123.3.585; Maynard Smith and Haigh 1974 doi:10.1017/S0016672300014634; Sabeti 2002 doi:10.1038/nature01140; Feder",
+  "url": "https://doi.org/10.1038/351652a0",
+  "why": "2014 doi:10.1534/genetics.113.158220",
+  "priority": "C",
+  "topic": "Biology toolkit"
+ },
+ {
+  "cite": "Kimura 1968 doi:10.1038/217624a0; Ohta 1973 doi:10.1038/246096a0; Price 1970 doi:10.1038/227520a0; Kingman 1982 doi:10.1016/0304-4149(82)90011-4; Visscher 2008 doi:10.1038/nrg2322",
+  "url": "https://doi.org/10.1038/217624a0",
+  "why": "",
+  "priority": "C",
+  "topic": "Biology toolkit"
+ },
+ {
+  "cite": "Fowler and Fields 2014 doi:10.1038/nmeth.3027; Sarkisyan 2016 doi:10.1038/nature17995; Arnold 1998 doi:10.1021/ar960017f; Shalem 2014 doi:10.1126/science.1247005; Lenski 1991 doi:10.1086/285289",
+  "url": "https://doi.org/10.1038/nmeth.3027",
+  "why": "",
+  "priority": "C",
+  "topic": "Biology toolkit"
+ },
+ {
+  "cite": "Tettelin 2005 doi:10.1073/pnas.0506758102; Tettelin, Riley, Cattuto and Medini 2008 doi:10.1016/j.mib.2008.09.006 (Comparative genomics: the bacterial pan-genome; added by the checker for S7); Mistry 2021 doi:10.1093/nar/gkaa913; Ashburner 2000 doi:10.1038/755",
+  "url": "https://doi.org/10.1073/pnas.0506758102",
+  "why": "56; Venter 2004 doi:10.1126/science.1093857; Hebert 2003 doi:10.1098/rspb.2002.2218",
+  "priority": "C",
+  "topic": "Biology toolkit"
+ },
+ {
+  "cite": "Hadfield 2018 (journal version: Bioinformatics, doi:10.1093/bioinformatics/bty407; preprint 2017, doi:10.1101/224048; Grenfell 2004 doi:10.1126/science.1090727; Stadler 2012 doi:10.1073/pnas.1207965110 (online December 2012, print issue 2013, so also cited as",
+  "url": "https://nextstrain.org/",
+  "why": "Stadler et al. 2013); Łuksza and Lässig 2014 doi:10.1038/nature13087; Neher 2014 doi:10.7554/eLife.03568",
+  "priority": "C",
+  "topic": "Biology toolkit"
+ },
+ {
+  "cite": "Leskovec 2009 doi:10.1145/1557019.1557077; Simmons 2011 doi:10.1609/icwsm.v5i1.14120; Acerbi and Stubbersfield 2023 doi:10.1073/pnas.2313790120; Perez et al. arXiv:2403.08882 and arXiv:2407.04503; Cloud et al. arXiv:2507.14805; Yax et al. arXiv:2404.04671",
+  "url": "https://arxiv.org/abs/2403.08882",
+  "why": "",
+  "priority": "C",
+  "topic": "Biology toolkit"
+ },
+ {
+  "cite": "Woese and Fox 1977 doi:10.1073/pnas.74.11.5088; Lewontin and Hubby 1966 doi:10.1093/genetics/54.2.595; Sanger 1977 doi:10.1073/pnas.74.12.5463; Watson and Crick 1953 doi:10.1038/171737a0; Human genome 2001 doi:10.1038/35057062",
+  "url": "https://doi.org/10.1073/pnas.74.11.5088",
+  "why": "",
+  "priority": "C",
+  "topic": "Biology toolkit"
+ },
+ {
+  "cite": "Zuckerkandl and Pauling 1965 doi:10.1016/B978-1-4832-2734-4.50017-6; Drummond and Rambaut 2007 doi:10.1186/1471-2148-7-214; Thornton 2004 doi:10.1038/nrg1324; Martin and Rybicki 2000 doi:10.1093/bioinformatics/16.6.562; Lander and Botstein 1989 doi:10.1093/gen",
+  "url": "https://doi.org/10.1016/B978-1-4832-2734-4.50017-6",
+  "why": "etics/121.1.185; Klein 2005 doi:10.1126/science.1109557; Avise 1987 doi:10.1146/annurev.es.18.110187.002421; Bouckaert 2012 doi:10.1126/science.1219669; Eigen 1971 doi:10.1007/BF00623322; Lewontin and Krakauer 1973 doi:10.1093/genetics/74.1.175; Pritchard 2000 doi:10.1093/genetics/155.2.945; Green 2010 doi:10.1126/science.1188021",
+  "priority": "C",
+  "topic": "Biology toolkit"
+ },
+ {
+  "cite": "Hahn and Bentley 2003 doi:10.1098/rsbl.2003.0045; Kandler and Shennan 2013 doi:10.1016/j.jtbi.2013.03.006; Acerbi and Bentley 2014 doi:10.1016/j.evolhumbehav.2014.02.003; Lieberman 2007 doi:10.1038/nature06137; Pagel 2007 doi:10.1038/nature06176; Gray and Atki",
+  "url": "https://doi.org/10.1098/rsbl.2003.0045",
+  "why": "nson 2003 doi:10.1038/nature02029; Hamilton 2016 doi:10.18653/v1/P16-1141; Reagan 2016 doi:10.1140/epjds/s13688-016-0093-1; Ackland 2007 doi:10.1073/pnas.0702469104; Yeh, Fogarty and Kandler 2019 doi:10.1098/rspb.2019.1951; Bennett, Li and Ma 2003 doi:10.1038/scientificamerican0603-76; Kirby 2008 doi:10.1073/pnas.0707835105; Mesoudi and Whiten 2008 doi:10.1098/rstb.2008.0129; Robertson 2023 doi:10.1038/s41562-023-01538-4; Quian Quiroga 2005 doi:10.1038/nature03687",
+  "priority": "C",
+  "topic": "Biology toolkit"
+ },
+ {
+  "cite": "Fernando et al. arXiv:2309.16797; Romera-Paredes 2023 doi:10.1038/s41586-023-06924-6; Novikov et al. arXiv:2506.13131; HistLens arXiv:2604.11749",
+  "url": "https://arxiv.org/abs/2309.16797",
+  "why": "",
+  "priority": "B",
+  "topic": "Biology toolkit"
+ },
+ {
+  "cite": "Edmonds 2005, \"The revealed poverty of the gene-meme analogy\", J. Memetics 9",
+  "url": "http://cfpm.org/jom-emit/2005/vol9/edmonds_b.html",
+  "why": "The field's own post-mortem: no added value",
+  "priority": "A",
+  "topic": "Classical and internet memetics"
+ },
+ {
+  "cite": "Edmonds 2002, \"Three challenges for the survival of memetics\", J. Memetics 6",
+  "url": "http://cfpm.org/jom-emit/2002/vol6/edmonds_b_letter.html",
+  "why": "A five-item checklist for a convincing case study",
+  "priority": "A",
+  "topic": "Classical and internet memetics"
+ },
+ {
+  "cite": "Kuhn, Perc and Helbing 2014, Phys. Rev. X 4:041036",
+  "url": "https://arxiv.org/abs/1404.3757",
+  "why": "Top target: heredity statistic on citation links with a word baseline",
+  "priority": "A",
+  "topic": "Classical and internet memetics"
+ },
+ {
+  "cite": "Pocklington and Best 1997, J. Theor. Biol. 188:79–87",
+  "url": "https://doi.org/10.1006/jtbi.1997.0460",
+  "why": "A learned latent unit as meme, 29 years ago",
+  "priority": "A",
+  "topic": "Classical and internet memetics"
+ },
+ {
+  "cite": "Sperber 2000, in *Darwinizing Culture*",
+  "url": "https://doi.org/10.1093/acprof:oso/9780192632449.003.0008",
+  "why": "Attraction against inheritance; defines where neurons could beat words",
+  "priority": "A",
+  "topic": "Classical and internet memetics"
+ },
+ {
+  "cite": "Lerique and Roth 2018, Cognitive Science 42:188–219",
+  "url": "https://doi.org/10.1111/cogs.12494",
+  "why": "Natural rewording pairs on public data",
+  "priority": "A",
+  "topic": "Classical and internet memetics"
+ },
+ {
+  "cite": "Leskovec, Backstrom and Kleinberg 2009, KDD; SNAP data",
+  "url": "https://snap.stanford.edu/data/memetracker9.html",
+  "why": "Largest public meme-variant corpus",
+  "priority": "A",
+  "topic": "Classical and internet memetics"
+ },
+ {
+  "cite": "Tan, Lee and Pang 2014, ACL",
+  "url": "https://arxiv.org/abs/1405.1438",
+  "why": "Selection with author and topic fixed",
+  "priority": "A",
+  "topic": "Classical and internet memetics"
+ },
+ {
+  "cite": "Adamic, Lento, Adar and Ng 2016, WSDM",
+  "url": "https://arxiv.org/abs/1402.6792",
+  "why": "Cleanest evidence of mutation and selection in text; data closed",
+  "priority": "B",
+  "topic": "Classical and internet memetics"
+ },
+ {
+  "cite": "Weng et al. 2012, Sci. Rep",
+  "url": "https://doi.org/10.1038/srep00335",
+  "why": "The content-free null",
+  "priority": "B",
+  "topic": "Classical and internet memetics"
+ },
+ {
+  "cite": "Acerbi and Stubbersfield 2023, PNAS",
+  "url": "https://doi.org/10.1073/pnas.2313790120",
+  "why": "LLM chains reproduce human content biases",
+  "priority": "A",
+  "topic": "Classical and internet memetics"
+ },
+ {
+  "cite": "Atran 2001, Human Nature",
+  "url": "https://doi.org/10.1007/s12110-001-1003-0",
+  "why": "Inference, not imitation",
+  "priority": "B",
+  "topic": "Classical and internet memetics"
+ },
+ {
+  "cite": "Aunger (ed.) 2000, *Darwinizing Culture*",
+  "url": "https://doi.org/10.1093/acprof:oso/9780192632449.001.0001",
+  "why": "Holds the Sperber, Bloch, Kuper, Boyd and Richerson, and Hull chapters",
+  "priority": "B",
+  "topic": "Classical and internet memetics"
+ },
+ {
+  "cite": "Chavalarias and Cointet 2013, PLoS ONE",
+  "url": "https://doi.org/10.1371/journal.pone.0054847",
+  "why": "Uses \"phylomemetic patterns\" in its title; word-based rival. Corrected in the check: it is not the origin of the word. Howe and Windram 2011, \"Phylomemetics—Evolutionary Analysis beyond the Gene\", PLoS Biology (doi:10.1371/journal.pbio.1001069), is two years earlier; who coined it first is",
+  "priority": "B",
+  "topic": "Classical and internet memetics"
+ },
+ {
+  "cite": "Coscia 2014, Sci. Rep",
+  "url": "https://doi.org/10.1038/srep06477",
+  "why": "Distinctiveness and success",
+  "priority": "B",
+  "topic": "Classical and internet memetics"
+ },
+ {
+  "cite": "Zannettou et al. 2018, IMC; Zenodo data",
+  "url": "https://zenodo.org/record/3699670",
+  "why": "Public image-meme clusters with KYM labels",
+  "priority": "B",
+  "topic": "Classical and internet memetics"
+ },
+ {
+  "cite": "Segev et al. 2015, JCMC",
+  "url": "https://doi.org/10.1111/jcc4.12120",
+  "why": "Meme families from KYM",
+  "priority": "C",
+  "topic": "Classical and internet memetics"
+ },
+ {
+  "cite": "Chvaja 2020, Perspectives on Science",
+  "url": "https://doi.org/10.1162/posc_a_00350",
+  "why": "A comparative genealogy of the failure, set against gene-culture coevolution (the earlier label \"a historian's account\" was not checked)",
+  "priority": "C",
+  "topic": "Classical and internet memetics"
+ },
+ {
+  "cite": "Danescu-Niculescu-Mizil et al. 2012, ACL",
+  "url": "https://aclanthology.org/P12-1094/",
+  "why": "Memorability with matched controls",
+  "priority": "C",
+  "topic": "Classical and internet memetics"
+ },
+ {
+  "cite": "Lakkaraju, McAuley and Leskovec 2013, ICWSM",
+  "url": "https://snap.stanford.edu/data/web-Reddit.html",
+  "why": "Public resubmission data",
+  "priority": "C",
+  "topic": "Classical and internet memetics"
+ },
+ {
+  "cite": "Henrich & Boyd 2002, *J. Cogn. Cult.*",
+  "url": "https://doi.org/10.1163/156853702320281836",
+  "why": "Formal proof that discrete replicators are unnecessary; gives P1 its testable form",
+  "priority": "A",
+  "topic": "Cultural evolution"
+ },
+ {
+  "cite": "Acerbi, Charbonneau, Miton & Scott-Phillips 2021, *Evol. Hum. Sci.*",
+  "url": "https://doi.org/10.1017/ehs.2021.47",
+  "why": "Population-level signatures that separate copying from convergent transformation",
+  "priority": "A",
+  "topic": "Cultural evolution"
+ },
+ {
+  "cite": "Robertson et al. 2023, *Nat. Hum. Behav.*; Matias et al. 2021, *Sci. Data*",
+  "url": "https://doi.org/10.1038/s41562-023-01538-4",
+  "why": "Randomised, public, very large test of content selection",
+  "priority": "A",
+  "topic": "Cultural evolution"
+ },
+ {
+  "cite": "Mesoudi 2021, *Phil. Trans. B*",
+  "url": "https://doi.org/10.1098/rstb.2020.0053",
+  "why": "Current synthesis: selection and biased transformation both act",
+  "priority": "A",
+  "topic": "Cultural evolution"
+ },
+ {
+  "cite": "Evans & Giometto 2011; Acerbi & Bentley 2014",
+  "url": "https://arxiv.org/abs/1105.4044",
+  "why": "Corrected turnover formula; turnover profile as bias signature",
+  "priority": "B",
+  "topic": "Cultural evolution"
+ },
+ {
+  "cite": "Leroi et al. 2020; Kandler, Wilder & Fortunato 2017; O'Dwyer & Kandler 2017; Karjus et al. 2020",
+  "url": "https://doi.org/10.1038/s41562-020-0844-7",
+  "why": "Why neutral tests on frequency data are weak, and what to do instead",
+  "priority": "A",
+  "topic": "Cultural evolution"
+ },
+ {
+  "cite": "Mesoudi, Whiten & Dunbar 2006; Kashima 2000; Stubbersfield et al. 2015; Eriksson & Coultas 2014",
+  "url": "https://doi.org/10.1348/000712605x85871",
+  "why": "The transmission-chain content-bias canon",
+  "priority": "A",
+  "topic": "Cultural evolution"
+ },
+ {
+  "cite": "Stubbersfield 2022, *Culture and Evolution*",
+  "url": "https://doi.org/10.1556/2055.2022.00024",
+  "why": "Review of content biases by transmission phase",
+  "priority": "B",
+  "topic": "Cultural evolution"
+ },
+ {
+  "cite": "Norenzayan et al. 2006; Purzycki & Willard 2015",
+  "url": "https://doi.org/10.1207/s15516709cog0000_68",
+  "why": "MCI result and its critique",
+  "priority": "B",
+  "topic": "Cultural evolution"
+ },
+ {
+  "cite": "Heath, Bell & Sternberg 2001; Berger & Milkman 2012",
+  "url": "https://doi.org/10.1037/0022-3514.81.6.1028",
+  "why": "Emotional selection; arousal and virality",
+  "priority": "B",
+  "topic": "Cultural evolution"
+ },
+ {
+  "cite": "Griffiths & Kalish 2007; Ren et al. 2024; Zhu & Griffiths 2024",
+  "url": "https://arxiv.org/abs/2404.04286",
+  "why": "Chains converge to the prior; applied to LLMs",
+  "priority": "B",
+  "topic": "Cultural evolution"
+ },
+ {
+  "cite": "Mauch et al. 2015; Lambert et al. 2020",
+  "url": "https://doi.org/10.1098/rsos.150081",
+  "why": "Automatic units accepted without a replicator claim",
+  "priority": "B",
+  "topic": "Cultural evolution"
+ },
+ {
+  "cite": "Youngblood 2019a, 2019b",
+  "url": "https://doi.org/10.1371/journal.pone.0211860",
+  "why": "Turnover plus ABC on documented descent; design template",
+  "priority": "B",
+  "topic": "Cultural evolution"
+ },
+ {
+  "cite": "Kuhn, Perc & Helbing 2014",
+  "url": "https://doi.org/10.2139/ssrn.2426903",
+  "why": "Quantitative n-gram meme score along citations; the rival for seed 6",
+  "priority": "B",
+  "topic": "Cultural evolution"
+ },
+ {
+  "cite": "Karsdorp & van den Bosch 2016",
+  "url": "https://doi.org/10.1098/rsos.160071",
+  "why": "Age-dependent selection in story retellings",
+  "priority": "B",
+  "topic": "Cultural evolution"
+ },
+ {
+  "cite": "Acerbi et al. 2016, *Sci. Rep.*",
+  "url": "https://doi.org/10.1038/srep36068",
+  "why": "Conformity not identifiable from population patterns",
+  "priority": "B",
+  "topic": "Cultural evolution"
+ },
+ {
+  "cite": "Vaesen et al. 2016; Fay et al. 2019; Henrich 2004; Kline & Boyd 2010",
+  "url": "https://doi.org/10.1073/pnas.1520288113",
+  "why": "The population-size dispute",
+  "priority": "C",
+  "topic": "Cultural evolution"
+ },
+ {
+  "cite": "Berger & Packard 2018; Askin & Mauskapf 2017",
+  "url": "https://doi.org/10.1177/0956797618759465",
+  "why": "Typicality and success",
+  "priority": "C",
+  "topic": "Cultural evolution"
+ },
+ {
+  "cite": "Cavalli-Sforza & Feldman 1981; Boyd & Richerson 1985; Sperber 1996; Mesoudi 2011",
+  "url": "https://doi.org/10.1515/9780691209357",
+  "why": "Foundations",
+  "priority": "C",
+  "topic": "Cultural evolution"
+ },
+ {
+  "cite": "Kelly, Papanikolaou, Seru, Taddy 2021, Measuring technological innovation over the long run",
+  "url": "https://doi.org/10.1257/aeri.20190499",
+  "why": "The cleanest backward-and-forward similarity design; pure TF-IDF; the rival to copy and beat",
+  "priority": "A",
+  "topic": "Remix, novelty and influence"
+ },
+ {
+  "cite": "Barron, Huang, Spang, DeDeo 2018, Individuals, institutions, and innovation in the debates of the French Revolution",
+  "url": "https://doi.org/10.1073/pnas.1717729115",
+  "why": "Novelty, transience, resonance per person; template for S4",
+  "priority": "A",
+  "topic": "Remix, novelty and influence"
+ },
+ {
+  "cite": "Chang, Rajagopal, Bolukbasi, Dixon, Tenney 2024, Scalable influence and fact tracing for large language model pretraining",
+  "url": "https://arxiv.org/abs/2410.17413",
+  "why": "BM25 beats gradient influence at finding the explicit source: influence is not similarity",
+  "priority": "A",
+  "topic": "Remix, novelty and influence"
+ },
+ {
+  "cite": "Kowal, Paulo, Jaburi, Tseng, McKinney, Heimersheim, Tucker, Gleave, Pelrine 2026, Concept Influence: leveraging interpretability to improve performance and efficiency in training data attribution",
+  "url": "https://arxiv.org/abs/2602.14869",
+  "why": "Attribution to SAE features and probes; closest published analogue to neuron memes for influence",
+  "priority": "A",
+  "topic": "Remix, novelty and influence"
+ },
+ {
+  "cite": "Wang, Efros, Zhu, Zhang 2023, Evaluating data attribution for text-to-image models (ICCV 2023)",
+  "url": "https://arxiv.org/abs/2306.09345",
+  "why": "Influence known by construction; the evaluation logic for S1 and S6",
+  "priority": "A",
+  "topic": "Remix, novelty and influence"
+ },
+ {
+  "cite": "Li, Banburski-Fahey, Lanier 2026, DataDignity: training data attribution for large language models",
+  "url": "https://arxiv.org/abs/2605.05687",
+  "why": "FakeWiki with paraphrases and anti-documents built to defeat lexical shortcuts",
+  "priority": "A",
+  "topic": "Remix, novelty and influence"
+ },
+ {
+  "cite": "Lebreton, Kawa, Forgeot d'Arc, Daunizeau, Pessiglione 2012, Your goal is mine: unraveling mimetic desires in the human brain",
+  "url": "https://doi.org/10.1523/JNEUROSCI.4821-11.2012",
+  "why": "The lab test of mimetic desire; narrow, single lab",
+  "priority": "B",
+  "topic": "Remix, novelty and influence"
+ },
+ {
+  "cite": "Uzzi, Mukherjee, Stringer, Jones 2013",
+  "url": "https://doi.org/10.1126/science.1240474",
+  "why": "Atypical-combination z-score; method for the recombination ledger; contested",
+  "priority": "B",
+  "topic": "Remix, novelty and influence"
+ },
+ {
+  "cite": "Fontana, Iori, Montobbio, Sinatra 2020",
+  "url": "https://doi.org/10.1016/j.respol.2020.104063",
+  "why": "Critique of novelty indicators",
+  "priority": "B",
+  "topic": "Remix, novelty and influence"
+ },
+ {
+  "cite": "Lu, Sclar, Hallinan, Mireshghallah, Liu, Han, Ettinger, Jiang, Chandu, Dziri, Choi 2025, AI as Humanity's Salieri (arXiv October 2024; ICLR 2025 venue [mem])",
+  "url": "https://arxiv.org/abs/2410.04265",
+  "why": "Reconstruction-from-prior-text score; lexical rival for inherited against new",
+  "priority": "B",
+  "topic": "Remix, novelty and influence"
+ },
+ {
+  "cite": "Youn, Strumsky, Bettencourt, Lobo 2015",
+  "url": "https://doi.org/10.1098/rsif.2015.0272",
+  "why": "Combination against new units in patents",
+  "priority": "B",
+  "topic": "Remix, novelty and influence"
+ },
+ {
+  "cite": "Flath, Friesike, Wirth, Thiesse 2017",
+  "url": "https://doi.org/10.1057/s41265-017-0043-9",
+  "why": "Declared remix links on Thingiverse",
+  "priority": "B",
+  "topic": "Remix, novelty and influence"
+ },
+ {
+  "cite": "Hill and Monroy-Hernández 2013",
+  "url": "https://doi.org/10.1177/0002764212469359",
+  "why": "Declared remix links on Scratch; originality of remixes",
+  "priority": "B",
+  "topic": "Remix, novelty and influence"
+ },
+ {
+  "cite": "Sreenivasan 2013",
+  "url": "https://doi.org/10.1038/srep02758",
+  "why": "Keyword and keyword-pair novelty in film; inverted U with revenue",
+  "priority": "B",
+  "topic": "Remix, novelty and influence"
+ },
+ {
+  "cite": "Elgammal and Saleh 2015",
+  "url": "https://arxiv.org/abs/1506.00711",
+  "why": "Originality and influence as network inference; validation problem stated openly",
+  "priority": "B",
+  "topic": "Remix, novelty and influence"
+ },
+ {
+  "cite": "Hughes, Foti, Krakauer, Rockmore 2012",
+  "url": "https://doi.org/10.1073/pnas.1115407109",
+  "why": "Style similarity sold as influence; the cautionary case",
+  "priority": "B",
+  "topic": "Remix, novelty and influence"
+ },
+ {
+  "cite": "Salganik, Dodds, Watts 2006",
+  "url": "https://doi.org/10.1126/science.1121066",
+  "why": "Social influence beyond content, experimentally",
+  "priority": "A",
+  "topic": "Remix, novelty and influence"
+ },
+ {
+  "cite": "Wegmann, Schraagen, Nguyen 2022",
+  "url": "https://arxiv.org/abs/2204.04907",
+  "why": "Style vectors leak topic; content control is needed",
+  "priority": "B",
+  "topic": "Remix, novelty and influence"
+ },
+ {
+  "cite": "Burrows 2002, Delta",
+  "url": "https://doi.org/10.1093/llc/17.3.267",
+  "why": "Cheap stylometric rival for person-level claims",
+  "priority": "B",
+  "topic": "Remix, novelty and influence"
+ },
+ {
+  "cite": "Askin and Mauskapf 2017",
+  "url": "https://doi.org/10.1177/0003122417728662",
+  "why": "Optimal differentiation in music",
+  "priority": "C",
+  "topic": "Remix, novelty and influence"
+ },
+ {
+  "cite": "Toubia, Berger, Eliashberg 2021",
+  "url": "https://doi.org/10.1073/pnas.2011695118",
+  "why": "Shape of the semantic path",
+  "priority": "C",
+  "topic": "Remix, novelty and influence"
+ },
+ {
+  "cite": "Reagan et al. 2016",
+  "url": "https://doi.org/10.1140/epjds/s13688-016-0093-1",
+  "why": "Six arcs; contested",
+  "priority": "C",
+  "topic": "Remix, novelty and influence"
+ },
+ {
+  "cite": "Hekkert, Snelders, van Wieringen 2003",
+  "url": "https://doi.org/10.1348/000712603762842147",
+  "why": "MAYA tested",
+  "priority": "C",
+  "topic": "Remix, novelty and influence"
+ },
+ {
+  "cite": "Chmiel and Schubert 2017; Martindale et al. 1990",
+  "url": "https://doi.org/10.1177/0305735617697507",
+  "why": "The mixed record on the inverted U",
+  "priority": "C",
+  "topic": "Remix, novelty and influence"
+ },
+ {
+  "cite": "Grosse et al. 2023; Koh and Liang 2017; Bae et al. 2022; Basu et al. 2020",
+  "url": "https://arxiv.org/abs/2308.03296",
+  "why": "Influence functions and their limits",
+  "priority": "C",
+  "topic": "Remix, novelty and influence"
+ },
+ {
+  "cite": "Park, Nam, Park 2020; Gerow et al. 2018; Vicinanza et al. 2022",
+  "url": "https://doi.org/10.1140/epjds/s13688-019-0214-8",
+  "why": "Other novelty and influence formalisms",
+  "priority": "C",
+  "topic": "Remix, novelty and influence"
+ },
+ {
+  "cite": "Martin, Hofman, Sharma, Anderson, Watts 2016, Exploring limits to prediction in complex social systems",
+  "url": "https://arxiv.org/abs/1602.01013",
+  "why": "R² 0.42 ceiling; content features under 0.05",
+  "priority": "A",
+  "topic": "Success and forecasting"
+ },
+ {
+  "cite": "Ye, Yoganarasimhan, Zheng 2025, LOLA: LLM-Assisted Online Learning Algorithm for Content Experiments",
+  "url": "https://arxiv.org/abs/2406.02611",
+  "why": "Baseline accuracies for LLM, embedding and fine-tuned models on Upworthy",
+  "priority": "A",
+  "topic": "Success and forecasting"
+ },
+ {
+  "cite": "Hewitt, Ashokkumar, Ghezae, Willer 2024, Predicting results of social science experiments using LLMs (working paper); published as Ashokkumar, Hewitt, Ghezae, Willer 2026, Large language models can predict the results of social science experiments, Nature 656(8126):115-122",
+  "url": "https://ai4pb.stanford.edu/projects/predicting-results-of-social-science-experiments-using-large-language-models",
+  "why": "r = 0.85 for survey effects; the LLM-reader rival",
+  "priority": "A",
+  "topic": "Success and forecasting"
+ },
+ {
+  "cite": "Kantamneni et al. 2025, Are sparse autoencoders useful? A case study in sparse probing",
+  "url": "https://proceedings.mlr.press/v267/kantamneni25a.html",
+  "why": "Sparse features do not out-predict plain probes",
+  "priority": "A",
+  "topic": "Success and forecasting"
+ },
+ {
+  "cite": "Hackenburg et al. 2025, The levers of political persuasion with conversational AI",
+  "url": "https://arxiv.org/abs/2507.13919",
+  "why": "Persuasion optimisation lowers accuracy",
+  "priority": "A",
+  "topic": "Success and forecasting"
+ },
+ {
+  "cite": "Robertson et al. 2023, Negativity drives online news consumption",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10202797/",
+  "why": "Effect sizes on Upworthy; what click optimisation selects",
+  "priority": "B",
+  "topic": "Success and forecasting"
+ },
+ {
+  "cite": "Genevsky, Yoon, Knutson 2017, When brain beats behavior",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5588458/",
+  "why": "Internal signal beats stated choice: 59% against 53%",
+  "priority": "B",
+  "topic": "Success and forecasting"
+ },
+ {
+  "cite": "Scholz et al. 2017, A neural model of valuation and information virality",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5358393",
+  "why": "Neural forecast of article sharing",
+  "priority": "B",
+  "topic": "Success and forecasting"
+ },
+ {
+  "cite": "Novikov et al. 2025, AlphaEvolve",
+  "url": "https://arxiv.org/abs/2506.13131",
+  "why": "Evolution loop; evaluator is the limit",
+  "priority": "B",
+  "topic": "Success and forecasting"
+ },
+ {
+  "cite": "Bradley et al. 2023, Quality-Diversity through AI Feedback",
+  "url": "https://qdaif.github.io/",
+  "why": "Evolution of creative text; judge reward hacking",
+  "priority": "B",
+  "topic": "Success and forecasting"
+ },
+ {
+  "cite": "Sreenivasan 2013, Quantitative analysis of the evolution of novelty in cinema through crowdsourced keywords",
+  "url": "https://arxiv.org/abs/1304.0786",
+  "why": "Keyword rival for meme-combination novelty",
+  "priority": "B",
+  "topic": "Success and forecasting"
+ },
+ {
+  "cite": "Cheng et al. 2014, Can cascades be predicted?",
+  "url": "https://arxiv.org/abs/1403.4608",
+  "why": "About 0.8 accuracy, but from early cascade dynamics",
+  "priority": "B",
+  "topic": "Success and forecasting"
+ },
+ {
+  "cite": "Wang et al. 2019, Success in books: predicting book sales before publication",
+  "url": "https://barabasi.com/media/pub_imports/files/1016.pdf",
+  "why": "Publisher beats content",
+  "priority": "B",
+  "topic": "Success and forecasting"
+ },
+ {
+  "cite": "Lakkaraju, McAuley, Leskovec 2013, What's in a name?",
+  "url": "https://ojs.aaai.org/index.php/ICWSM/article/view/14408",
+  "why": "Same image, different title and community",
+  "priority": "B",
+  "topic": "Success and forecasting"
+ },
+ {
+  "cite": "Berger and Milkman 2012, What makes online content viral?",
+  "url": "https://doi.org/10.1509/jmr.10.0353",
+  "why": "Arousal and sharing; outcome-dependence",
+  "priority": "C",
+  "topic": "Success and forecasting"
+ },
+ {
+  "cite": "Mitra and Gilbert 2014; Etter et al. 2013 (Kickstarter)",
+  "url": "https://infoscience.epfl.ch/record/189675/files/etter2013cosn.pdf",
+  "why": "Language against early-trajectory signals",
+  "priority": "C",
+  "topic": "Success and forecasting"
+ },
+ {
+  "cite": "Ashok, Feng, Choi 2013, Success with style",
+  "url": "https://aclanthology.org/D13-1181/",
+  "why": "Often-quoted 84%; weak design",
+  "priority": "C",
+  "topic": "Success and forecasting"
+ },
+ {
+  "cite": "Interiano et al. 2018, Musical trends and predictability of success",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5990848",
+  "why": "86% headline with a 4% base rate",
+  "priority": "C",
+  "topic": "Success and forecasting"
+ },
+ {
+  "cite": "Tong et al. 2020, Brain activity forecasts video engagement",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7104008/",
+  "why": "Neuroforecasting on YouTube",
+  "priority": "C",
+  "topic": "Success and forecasting"
+ },
+ {
+  "cite": "Salvi et al. 2025, On the conversational persuasiveness of GPT-4",
+  "url": "https://doi.org/10.1038/s41562-025-02194-6",
+  "why": "Consented persuasion study",
+  "priority": "C",
+  "topic": "Success and forecasting"
+ },
+ {
+  "cite": "EU AI Act Article 5",
+  "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-5",
+  "why": "Legal line on manipulation",
+  "priority": "C",
+  "topic": "Success and forecasting"
+ },
+ {
+  "cite": "Gala, Khursheed, Lerner, O'Connor, Iyyer. Analyzing Gender Bias within Narrative Tropes. Workshop on NLP and Computational Social Science at EMNLP, 2020",
+  "url": "https://arxiv.org/abs/2011.00092",
+  "why": "The 30K-trope, 40K-work dataset",
+  "priority": "A",
+  "topic": "Datasets"
+ },
+ {
+  "cite": "Hagedorn and Darányi. Ashliman Folktexts with ATU types. 2022 (a descriptive label; the Zenodo record's own title is \"j-hagedorn/trilogy: Updated Ashliman Folktexts dataset\", version 1.1, 2022-05-24)",
+  "url": "https://doi.org/10.5281/zenodo.6575263",
+  "why": "The only open ATU-labelled English text set found",
+  "priority": "A",
+  "topic": "Datasets"
+ },
+ {
+  "cite": "Hagedorn and Darányi. Bearing a Bag-of-Tales: An Open Corpus of Annotated Folktales for Reproducible Research. Journal of Open Humanities Data 8, 2022 (row added by the checker)",
+  "url": "https://doi.org/10.5334/johd.78",
+  "why": "The data paper for the row above: states CC BY-SA 4.0 and that no other open ATU-annotated English set was found",
+  "priority": "A",
+  "topic": "Datasets"
+ },
+ {
+  "cite": "Wikidata query service counts, 2026-11-08",
+  "url": "https://query.wikidata.org/",
+  "why": "Size of the documented-influence graph, CC0",
+  "priority": "A",
+  "topic": "Datasets"
+ },
+ {
+  "cite": "Akerman et al. The eBible Corpus. 2023",
+  "url": "https://arxiv.org/abs/2304.09919",
+  "why": "Verse-aligned translations for the P2 test",
+  "priority": "A",
+  "topic": "Datasets"
+ },
+ {
+  "cite": "Computer-Assisted Stemmatology Challenge data page",
+  "url": "https://www.cs.helsinki.fi/u/ttonteri/casc/data.html",
+  "why": "Known true trees; note the use restriction",
+  "priority": "B",
+  "topic": "Datasets"
+ },
+ {
+  "cite": "Zhang, Jain, Guo, Chen et al. Humor in AI: Massive Scale Crowd-Sourced Preferences and Benchmarks for Cartoon Captioning. NeurIPS 2024",
+  "url": "https://arxiv.org/abs/2406.10522",
+  "why": "2.2M rated captions, topic-controlled",
+  "priority": "B",
+  "topic": "Datasets"
+ },
+ {
+  "cite": "García-Ortega, García-Sánchez, Merelo-Guervós. Tropes in films: an initial analysis. 2020",
+  "url": "https://arxiv.org/abs/2006.05380",
+  "why": "Film to trope table under CC BY-SA (: the licence is not stated in the arXiv text)",
+  "priority": "B",
+  "topic": "Datasets"
+ },
+ {
+  "cite": "CMU Movie Summary Corpus, project page (the paper's author list was not confirmed this session; now confirmed by the checker from the project page: Bamman, O'Connor, Smith. Learning Latent Personas of Film Characters. ACL 2013)",
+  "url": "https://www.cs.cmu.edu/~ark/personas/",
+  "why": "Plots with box office",
+  "priority": "B",
+  "topic": "Datasets"
+ },
+ {
+  "cite": "Web Robots Kickstarter datasets",
+  "url": "https://webrobots.io/kickstarter-datasets/",
+  "why": "Monthly dumps, current to 2026-10-12",
+  "priority": "B",
+  "topic": "Datasets"
+ },
+ {
+  "cite": "Meaney, Alex, Lamb. LLMs and folktales in low-resource languages. 2024 (a descriptive label; full title: Evaluating and Adapting Large Language Models to Represent Folktales in Low-Resource Languages)",
+  "url": "https://arxiv.org/abs/2411.05593",
+  "why": "4,692 Irish and Gaelic tales, about 2,543 of them ATU-numbered (corrected from \"4,692 ATU-numbered\"). Also reports that a plain SVM on non-contextual features did impressively well, which is the word-overlap warning again",
+  "priority": "B",
+  "topic": "Datasets"
+ },
+ {
+  "cite": "Cordell and Smith. Viral Texts: Mapping Networks of Reprinting in 19th-Century Newspapers and Magazines",
+  "url": "https://viraltexts.org/",
+  "why": "Dated reprint clusters",
+  "priority": "C",
+  "topic": "Datasets"
+ },
+ {
+  "cite": "Rockmore, Fang, Foti, Ginsburg, Krakauer. The Cultural Evolution of National Constitutions. 2017 (arXiv and online; in print JASIST 69(3), 483–494)",
+  "url": "https://arxiv.org/abs/1711.06899",
+  "why": "591 dated constitutions, inferred descent",
+  "priority": "C",
+  "topic": "Datasets"
+ },
+ {
+  "cite": "Wilkerson, Smith, Stramp. Tracing the Flow of Policy Ideas in Legislatures. AJPS 2015",
+  "url": "https://doi.org/10.1111/ajps.12175",
+  "why": "Text reuse as descent; lexical truth",
+  "priority": "C",
+  "topic": "Datasets"
+ },
+ {
+  "cite": "Michalopoulos and Xue. Folklore. QJE 2021, 136(4), 1993–2046",
+  "url": "https://doi.org/10.1093/qje/qjab003",
+  "why": "Berezkin catalogue in use",
+  "priority": "C",
+  "topic": "Datasets"
+ },
+ {
+  "cite": "Figueiredo, Panoutsos, Andrade. Surprising Patterns in Musical Influence Networks. 2024",
+  "url": "https://arxiv.org/abs/2410.15996",
+  "why": "WhoSampled only by agreement",
+  "priority": "C",
+  "topic": "Datasets"
+ },
+ {
+  "cite": "Araz, Lizarraga, Serra, Bogdanov. Building a Dataset for Music Sample Identification. 2026",
+  "url": "https://arxiv.org/abs/2609.15465",
+  "why": "WhoSampled annotations incomplete; releases a public mined subset, WhoSampled130k",
+  "priority": "C",
+  "topic": "Datasets"
+ },
+ {
+  "cite": "Open Stemmata",
+  "url": "https://openstemmata.github.io/",
+  "why": "Real stemmata, graphs only",
+  "priority": "C",
+  "topic": "Datasets"
+ },
+ {
+  "cite": "Parikh, Levin-Konigsberg, Perrault-Joncas, Volfovsky. TEA-Time: Transporting Effects Across Time. 2026",
+  "url": "https://arxiv.org/abs/2603.07018",
+  "why": "Reports the Upworthy randomisation fault (more exactly: it applies the maintainers' 2024 exclusion window; it is not the source of the finding)",
+  "priority": "B",
+  "topic": "Datasets"
+ },
+ {
+  "cite": "Matias. Ensuring Reliable Science from Platform A/B Test Archives: an Update to the Upworthy Archive. June 2024 (row added by the checker)",
+  "url": "https://upworthy.natematias.com/2024-06-upworthy-archive-update.html",
+  "why": "The primary source for the randomisation fault: window, cause and the 22% share",
+  "priority": "A",
+  "topic": "Datasets"
+ },
+ {
+  "cite": "OpenAlex documentation, snapshot page (row added by the checker)",
+  "url": "https://docs.openalex.org/download-all-data/openalex-snapshot",
+  "why": "Current snapshot size (about 745 GB JSON Lines, September 2026 release)",
+  "priority": "C",
+  "topic": "Datasets"
+ },
+ {
+  "cite": "Weller and Seppi. The r/Jokes Dataset: a Large Scale Humor Collection. LREC 2020 (row added by the checker)",
+  "url": "https://aclanthology.org/2020.lrec-1.753/",
+  "why": "Joke scores; licence terms in the README",
+  "priority": "C",
+  "topic": "Datasets"
+ },
+ {
+  "cite": "Zannettou et al. On the Origins of Memes by Means of Fringe Web Communities. 2018 (row added by the checker)",
+  "url": "https://arxiv.org/abs/1805.12512",
+  "why": "Source of the Know Your Meme entry count",
+  "priority": "C",
+  "topic": "Datasets"
+ }
+]
