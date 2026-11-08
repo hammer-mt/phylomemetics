@@ -40,10 +40,11 @@ from matplotlib.ticker import MaxNLocator  # noqa: E402
 
 TITLE = "Switching off Batman's canon lowers the model's recognition of Batman"
 SUBTITLE = ("Each model is asked which hero the story is about. Shown is how far the log-odds that its reply starts\n"
-            "with the hero's name fall when a set of units is switched off (0 = no change). By the rules set beforehand\n"
-            "neither test passes: five Qwen3-32B replies do not begin with a name, and Qwen3-8B's effect is not specific.")
+            "with the hero's name fall when a set of units is switched off (0 = no change). The registered test passes in\n"
+            "neither model: five Qwen3-32B replies do not begin with a name, and Qwen3-8B's effect is not specific.\n"
+            "The follow-up test, written after those results, is met in Qwen3-32B and not in Qwen3-8B.")
 PANEL_A = "Mean drop over the works: the canon against random sets of matched units"
-PANEL_B = "{model}, registered test, work by work: drop in the log-odds of the hero's name with the canon switched off"
+PANEL_B = "{model}, registered test, work by work: drop in the log-odds with the canon switched off"
 X_LABEL = "Mean drop in the log-odds of the hero's name"
 CAPTION_BATMAN = "{n} Batman works, from the largest drop to the smallest"
 CAPTION_HEROES = "{n} other hero films,\neach scored on its own hero"
@@ -106,7 +107,7 @@ FS, FS_S = 7.5, 6.8
 x_text, xa0, xa1 = 0.05, 1.05, 4.0    # labels start here; panel A's axis from and to
 p_right = [4.88, 5.74, W - 0.04]      # right edges of the three columns of p values
 ROW, STRIP = 0.52, 0.03               # panel A: pitch of the rows; half the height of a strip
-ya = 1.42                             # top of panel A's axis
+ya = 1.58                             # top of panel A's axis
 ha = len(runs) * ROW
 yb_head = ya + ha + 0.68
 yb, hb = yb_head + 0.40, 2.3          # top and height of panel B's axis
@@ -122,7 +123,7 @@ ax.set_ylim(H, 0)
 ax.axis("off")
 style.title(fig, TITLE)
 fig.text(0.01, 1 - (0.015 * H + 0.20) / H, SUBTITLE, ha="left", va="top", fontsize=7.5, color=style.INK_2, linespacing=1.3)
-for y, letter, text in ((0.86, "A", PANEL_A), (yb_head, "B", PANEL_B.format(model=runs[0][0].split("\n")[0]))):
+for y, letter, text in ((1.02, "A", PANEL_A), (yb_head, "B", PANEL_B.format(model=runs[0][0].split("\n")[0]))):
     ax.text(x_text, y, letter, fontsize=9, fontweight="bold", va="center")
     ax.text(x_text + 0.18, y, text, fontsize=7.6, fontweight="bold", va="center")
 
