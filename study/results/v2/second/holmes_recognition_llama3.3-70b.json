@@ -1,0 +1,2632 @@
+{
+ "model": "llama3.3-70b",
+ "question_h1": "Every name in this plot summary has been replaced by a code such as X1. Which famous fictional hero is the story about? Reply with only the name the hero is best known by, not a code.",
+ "question_h2": "Every name in this plot summary has been replaced by a code such as X1. It is a summary of a Sherlock Holmes story, or of a film, television episode or game about Sherlock Holmes. Which story by Arthur Conan Doyle does it tell or adapt? Reply with the story's title only.",
+ "h1": {
+  "0": {
+   "named": true,
+   "logp": -1.595596310229867e-06,
+   "reply": "Sherlock"
+  },
+  "1": {
+   "named": true,
+   "logp": -7.543195910136928e-06,
+   "reply": "Sherlock"
+  },
+  "2": {
+   "named": true,
+   "logp": -3.737673986242137e-06,
+   "reply": "Sherlock"
+  },
+  "3": {
+   "named": true,
+   "logp": -0.004957623337809414,
+   "reply": "Sherlock"
+  },
+  "4": {
+   "named": true,
+   "logp": -3.3603083688712586e-06,
+   "reply": "Sherlock"
+  },
+  "5": {
+   "named": true,
+   "logp": -4.484885281119563e-06,
+   "reply": "Sherlock"
+  },
+  "6": {
+   "named": true,
+   "logp": -4.565137300165155e-06,
+   "reply": "Sherlock"
+  },
+  "7": {
+   "named": false,
+   "logp": -4.1406284335410675,
+   "reply": "Hercule"
+  },
+  "8": {
+   "named": true,
+   "logp": -2.206962885021116e-06,
+   "reply": "Sherlock"
+  },
+  "9": {
+   "named": true,
+   "logp": -1.0979779625015768e-05,
+   "reply": "Sherlock"
+  },
+  "10": {
+   "named": true,
+   "logp": -1.5222404705297877e-05,
+   "reply": "Sherlock"
+  },
+  "11": {
+   "named": true,
+   "logp": -2.452241391506318e-06,
+   "reply": "Sherlock"
+  },
+  "12": {
+   "named": true,
+   "logp": -3.691607997921044e-05,
+   "reply": "Sherlock"
+  },
+  "13": {
+   "named": true,
+   "logp": -0.024310475026085458,
+   "reply": "Sherlock"
+  },
+  "14": {
+   "named": true,
+   "logp": -1.5006754581602447e-06,
+   "reply": "Sherlock"
+  },
+  "15": {
+   "named": true,
+   "logp": -0.00018814751838559015,
+   "reply": "Sherlock"
+  },
+  "16": {
+   "named": true,
+   "logp": -2.025467899085603e-06,
+   "reply": "Sherlock"
+  },
+  "17": {
+   "named": true,
+   "logp": -4.7268856719245075e-05,
+   "reply": "Sherlock"
+  },
+  "18": {
+   "named": true,
+   "logp": -2.5944286967491024e-06,
+   "reply": "Sherlock"
+  },
+  "19": {
+   "named": true,
+   "logp": -7.936107117873566e-05,
+   "reply": "Sherlock"
+  },
+  "20": {
+   "named": true,
+   "logp": -3.1822232691774934e-06,
+   "reply": "Sherlock"
+  },
+  "21": {
+   "named": true,
+   "logp": -0.001800481383631803,
+   "reply": "Sherlock"
+  },
+  "22": {
+   "named": true,
+   "logp": -0.00612230106601911,
+   "reply": "Sherlock"
+  },
+  "23": {
+   "named": true,
+   "logp": -0.00027776792520482307,
+   "reply": "Sherlock"
+  },
+  "24": {
+   "named": true,
+   "logp": -5.245012653659839e-06,
+   "reply": "Sherlock"
+  },
+  "25": {
+   "named": true,
+   "logp": -5.748790092592547e-06,
+   "reply": "Sherlock"
+  },
+  "26": {
+   "named": true,
+   "logp": -2.4408073436460435e-06,
+   "reply": "Sherlock"
+  },
+  "27": {
+   "named": true,
+   "logp": -0.01908684313066844,
+   "reply": "Holmes"
+  },
+  "28": {
+   "named": true,
+   "logp": -2.3273158215855868e-05,
+   "reply": "Sherlock"
+  },
+  "29": {
+   "named": true,
+   "logp": -3.8083192715566495e-06,
+   "reply": "Sherlock"
+  },
+  "30": {
+   "named": true,
+   "logp": -2.7068795360544182e-06,
+   "reply": "Sherlock"
+  },
+  "31": {
+   "named": true,
+   "logp": -6.307893667546912e-06,
+   "reply": "Sherlock"
+  },
+  "32": {
+   "named": true,
+   "logp": -0.00015135895713220236,
+   "reply": "Sherlock"
+  },
+  "33": {
+   "named": true,
+   "logp": -2.94215085007711e-05,
+   "reply": "Sherlock"
+  },
+  "34": {
+   "named": false,
+   "logp": -1.1492476870257953,
+   "reply": "Raffles"
+  },
+  "35": {
+   "named": true,
+   "logp": -0.0004329119213142274,
+   "reply": "Sherlock"
+  },
+  "36": {
+   "named": true,
+   "logp": -0.002034896343233746,
+   "reply": "Sherlock"
+  },
+  "37": {
+   "named": true,
+   "logp": -0.23163145279078157,
+   "reply": "Sherlock"
+  },
+  "38": {
+   "named": true,
+   "logp": -1.4166792429592918e-05,
+   "reply": "Sherlock"
+  },
+  "39": {
+   "named": false,
+   "logp": -3.408928529188535,
+   "reply": "Hercule"
+  },
+  "40": {
+   "named": true,
+   "logp": -7.576519374236687e-05,
+   "reply": "Sherlock"
+  },
+  "41": {
+   "named": false,
+   "logp": -5.117292580910155,
+   "reply": "Hercule Poirot"
+  },
+  "42": {
+   "named": true,
+   "logp": -5.131637483227788e-06,
+   "reply": "Sherlock"
+  },
+  "43": {
+   "named": true,
+   "logp": -6.421947087576407e-05,
+   "reply": "Sherlock"
+  },
+  "44": {
+   "named": true,
+   "logp": -9.107689281357637e-06,
+   "reply": "Sherlock"
+  },
+  "45": {
+   "named": true,
+   "logp": -2.6611519291704404e-06,
+   "reply": "Sherlock"
+  },
+  "46": {
+   "named": true,
+   "logp": -0.0017306648425218646,
+   "reply": "Sherlock"
+  },
+  "47": {
+   "named": true,
+   "logp": -0.0001893178374935206,
+   "reply": "Sherlock"
+  },
+  "48": {
+   "named": true,
+   "logp": -0.00010134032127382536,
+   "reply": "Sherlock"
+  },
+  "49": {
+   "named": false,
+   "logp": -5.386137058533052,
+   "reply": "Hercule"
+  },
+  "50": {
+   "named": true,
+   "logp": -5.581243586114373e-06,
+   "reply": "Sherlock"
+  },
+  "51": {
+   "named": true,
+   "logp": -0.000133169164096482,
+   "reply": "Sherlock"
+  },
+  "52": {
+   "named": true,
+   "logp": -1.9995260444452762e-05,
+   "reply": "Sherlock"
+  },
+  "53": {
+   "named": true,
+   "logp": -0.09875192738818585,
+   "reply": "Sherlock"
+  },
+  "54": {
+   "named": false,
+   "logp": -1.213560690152051,
+   "reply": "Poirot"
+  },
+  "55": {
+   "named": true,
+   "logp": -5.0271864346963964e-05,
+   "reply": "Sherlock"
+  },
+  "56": {
+   "named": true,
+   "logp": -4.935089389577235e-06,
+   "reply": "Sherlock"
+  },
+  "57": {
+   "named": true,
+   "logp": -0.005401992721921892,
+   "reply": "Sherlock"
+  },
+  "58": {
+   "named": true,
+   "logp": -0.00010363736576034731,
+   "reply": "Sherlock"
+  },
+  "59": {
+   "named": true,
+   "logp": -0.0024831904766752597,
+   "reply": "Sherlock"
+  },
+  "60": {
+   "named": true,
+   "logp": -1.5266475117724026e-05,
+   "reply": "Sherlock"
+  },
+  "61": {
+   "named": true,
+   "logp": -0.6620581700205276,
+   "reply": "Sherlock"
+  },
+  "62": {
+   "named": false,
+   "logp": -6.3760618441471895,
+   "reply": "Enola"
+  },
+  "63": {
+   "named": false,
+   "logp": -2.2421537549809534,
+   "reply": "Enola"
+  },
+  "64": {
+   "named": true,
+   "logp": -0.31045970591890254,
+   "reply": "Sherlock"
+  },
+  "65": {
+   "named": false,
+   "logp": -8.607733786651421,
+   "reply": "Basil"
+  },
+  "66": {
+   "named": true,
+   "logp": -3.254623917632397e-05,
+   "reply": "Sherlock"
+  },
+  "67": {
+   "named": true,
+   "logp": -2.0523040393717337e-06,
+   "reply": "Sherlock"
+  },
+  "68": {
+   "named": true,
+   "logp": -1.2120047165586103e-05,
+   "reply": "Sherlock"
+  },
+  "69": {
+   "named": false,
+   "logp": -12.88642061994576,
+   "reply": "Zorro"
+  },
+  "70": {
+   "named": false,
+   "logp": -7.288958951576964,
+   "reply": "Lupin"
+  },
+  "71": {
+   "named": true,
+   "logp": -8.355219867983799e-05,
+   "reply": "Sherlock"
+  },
+  "72": {
+   "named": true,
+   "logp": -3.9405612931583106e-06,
+   "reply": "Sherlock"
+  },
+  "73": {
+   "named": false,
+   "logp": -5.264045633245071,
+   "reply": "James Bond"
+  },
+  "74": {
+   "named": true,
+   "logp": -0.0007627562874153448,
+   "reply": "Sherlock"
+  },
+  "75": {
+   "named": true,
+   "logp": -5.8291188455039146e-05,
+   "reply": "Sherlock"
+  },
+  "76": {
+   "named": true,
+   "logp": -0.029708267590915962,
+   "reply": "Sherlock"
+  },
+  "77": {
+   "named": true,
+   "logp": -3.792495702537011e-05,
+   "reply": "Sherlock"
+  },
+  "78": {
+   "named": true,
+   "logp": -0.2255864336953698,
+   "reply": "Sherlock"
+  },
+  "79": {
+   "named": false,
+   "logp": -3.4981777879713767,
+   "reply": "Rupert"
+  },
+  "80": {
+   "named": true,
+   "logp": -0.007430982272930152,
+   "reply": "Sherlock"
+  },
+  "81": {
+   "named": true,
+   "logp": -8.180126608709946e-06,
+   "reply": "Sherlock"
+  },
+  "82": {
+   "named": true,
+   "logp": -5.43126673730604e-05,
+   "reply": "Sherlock"
+  },
+  "83": {
+   "named": true,
+   "logp": -0.0017467621009300029,
+   "reply": "Sherlock"
+  },
+  "84": {
+   "named": true,
+   "logp": -4.824693437927713e-05,
+   "reply": "Sherlock"
+  },
+  "85": {
+   "named": false,
+   "logp": -9.928100337747589,
+   "reply": "James Bond"
+  },
+  "86": {
+   "named": true,
+   "logp": -3.933210787469398e-05,
+   "reply": "Sherlock"
+  },
+  "87": {
+   "named": true,
+   "logp": -0.1819339409496344,
+   "reply": "Sherlock"
+  },
+  "88": {
+   "named": true,
+   "logp": -1.6349085669064164e-05,
+   "reply": "Sherlock"
+  },
+  "89": {
+   "named": true,
+   "logp": -4.845592826290457e-06,
+   "reply": "Sherlock"
+  },
+  "90": {
+   "named": true,
+   "logp": -0.004808796715429914,
+   "reply": "Sherlock"
+  },
+  "91": {
+   "named": true,
+   "logp": -0.010013942154149528,
+   "reply": "Sherlock"
+  },
+  "92": {
+   "named": true,
+   "logp": -2.1133178137555694e-06,
+   "reply": "Sherlock"
+  },
+  "93": {
+   "named": true,
+   "logp": -0.0001629162410780021,
+   "reply": "Sherlock"
+  },
+  "94": {
+   "named": true,
+   "logp": -0.008862689910569528,
+   "reply": "Sherlock"
+  },
+  "95": {
+   "named": true,
+   "logp": -1.7827623358469478e-06,
+   "reply": "Sherlock"
+  },
+  "96": {
+   "named": true,
+   "logp": -2.976908721973368e-06,
+   "reply": "Sherlock"
+  },
+  "97": {
+   "named": false,
+   "logp": -2.1147448338631127,
+   "reply": "Hercule"
+  },
+  "98": {
+   "named": true,
+   "logp": -1.2520951277246041e-06,
+   "reply": "Sherlock"
+  },
+  "99": {
+   "named": true,
+   "logp": -1.1542500439485698e-06,
+   "reply": "Sherlock"
+  },
+  "100": {
+   "named": true,
+   "logp": -0.0011561463270733877,
+   "reply": "Sherlock"
+  },
+  "101": {
+   "named": true,
+   "logp": -0.1671920540331251,
+   "reply": "Sherlock"
+  },
+  "102": {
+   "named": false,
+   "logp": -5.317747900997409,
+   "reply": "Hercule"
+  },
+  "103": {
+   "named": false,
+   "logp": -3.4740746283501602,
+   "reply": "Phileas Fogg is not the hero of this story"
+  },
+  "104": {
+   "named": true,
+   "logp": -2.8234455065323234e-06,
+   "reply": "Sherlock"
+  },
+  "105": {
+   "named": true,
+   "logp": -0.006002415226137916,
+   "reply": "Sherlock"
+  },
+  "106": {
+   "named": true,
+   "logp": -0.028104382608468113,
+   "reply": "Sherlock"
+  },
+  "107": {
+   "named": false,
+   "logp": -6.3429248788387325,
+   "reply": "Hercule"
+  },
+  "108": {
+   "named": false,
+   "logp": -2.3483611987285866,
+   "reply": "Ellery"
+  },
+  "109": {
+   "named": false,
+   "logp": -2.489542880367945,
+   "reply": "Rustic or rural settings and a vengeful spirit"
+  },
+  "110": {
+   "named": true,
+   "logp": -3.1188418226353425e-06,
+   "reply": "Sherlock"
+  },
+  "111": {
+   "named": true,
+   "logp": -6.426090436250024e-06,
+   "reply": "Sherlock"
+  },
+  "112": {
+   "named": true,
+   "logp": -9.397355095705658e-05,
+   "reply": "Sherlock"
+  },
+  "113": {
+   "named": true,
+   "logp": -0.03510630574548454,
+   "reply": "Sherlock"
+  },
+  "114": {
+   "named": true,
+   "logp": -5.677950121054296e-05,
+   "reply": "Sherlock Holmes"
+  },
+  "115": {
+   "named": true,
+   "logp": -1.587953553406985e-06,
+   "reply": "Sherlock"
+  },
+  "116": {
+   "named": true,
+   "logp": -0.039437756171154026,
+   "reply": "Sherlock"
+  },
+  "117": {
+   "named": true,
+   "logp": -3.121862399704018e-05,
+   "reply": "Sherlock"
+  },
+  "118": {
+   "named": true,
+   "logp": -7.378248640802426e-05,
+   "reply": "Sherlock"
+  },
+  "119": {
+   "named": true,
+   "logp": -1.131234903344523e-06,
+   "reply": "Sherlock"
+  },
+  "120": {
+   "named": true,
+   "logp": -1.2793105144760961e-05,
+   "reply": "Sherlock"
+  },
+  "121": {
+   "named": true,
+   "logp": -1.7359810777440033e-06,
+   "reply": "Sherlock"
+  },
+  "122": {
+   "named": true,
+   "logp": -2.955171892899381e-05,
+   "reply": "Sherlock"
+  },
+  "123": {
+   "named": true,
+   "logp": -1.3439594838863038e-05,
+   "reply": "Sherlock"
+  },
+  "124": {
+   "named": true,
+   "logp": -0.0009605020474717964,
+   "reply": "Sherlock"
+  },
+  "125": {
+   "named": true,
+   "logp": -5.223107317030061e-05,
+   "reply": "Sherlock"
+  },
+  "126": {
+   "named": true,
+   "logp": -0.029804788010220042,
+   "reply": "Sherlock"
+  },
+  "127": {
+   "named": true,
+   "logp": -3.970445337330108e-05,
+   "reply": "Sherlock"
+  },
+  "128": {
+   "named": true,
+   "logp": -2.8853280157405273e-06,
+   "reply": "Sherlock"
+  },
+  "129": {
+   "named": true,
+   "logp": -1.1042031952756796e-05,
+   "reply": "Sherlock"
+  },
+  "130": {
+   "named": true,
+   "logp": -0.0002546058879009085,
+   "reply": "Sherlock"
+  },
+  "131": {
+   "named": true,
+   "logp": -6.023252337949243e-05,
+   "reply": "Sherlock"
+  },
+  "132": {
+   "named": true,
+   "logp": -7.735809466952553e-06,
+   "reply": "Sherlock"
+  },
+  "133": {
+   "named": true,
+   "logp": -0.06337323571707665,
+   "reply": "Sherlock"
+  },
+  "134": {
+   "named": false,
+   "logp": -6.876794085195539,
+   "reply": "Phoenix Wright"
+  },
+  "135": {
+   "named": false,
+   "logp": -2.3877295984439364,
+   "reply": "Phoenix"
+  },
+  "136": {
+   "named": true,
+   "logp": -2.523864193446514e-05,
+   "reply": "Sherlock"
+  },
+  "137": {
+   "named": true,
+   "logp": -4.7048067148965656e-06,
+   "reply": "Sherlock"
+  },
+  "138": {
+   "named": true,
+   "logp": -9.981096474830306e-06,
+   "reply": "Sherlock"
+  },
+  "139": {
+   "named": true,
+   "logp": -0.0023748804757092417,
+   "reply": "Sherlock"
+  },
+  "140": {
+   "named": true,
+   "logp": -2.6030527500823864e-05,
+   "reply": "Sherlock"
+  },
+  "141": {
+   "named": false,
+   "logp": -3.7743712594370566,
+   "reply": "C. Auguste Dupin is often referred to as simply"
+  },
+  "142": {
+   "named": true,
+   "logp": -0.04597052045330181,
+   "reply": "Sherlock"
+  },
+  "143": {
+   "named": true,
+   "logp": -0.5398881721279069,
+   "reply": "Sherlock"
+  },
+  "144": {
+   "named": false,
+   "logp": -7.37950621705531,
+   "reply": "Rachel"
+  },
+  "145": {
+   "named": false,
+   "logp": -6.56617400729343,
+   "reply": "Monsieur Lecoq"
+  },
+  "146": {
+   "named": false,
+   "logp": -7.658771279488091,
+   "reply": "Arsène Lupin"
+  },
+  "147": {
+   "named": false,
+   "logp": -14.874567043961964,
+   "reply": "Batman"
+  },
+  "148": {
+   "named": false,
+   "logp": -11.590466704014334,
+   "reply": "Ellery"
+  },
+  "149": {
+   "named": false,
+   "logp": -2.172844255435727,
+   "reply": "Ellery Queen"
+  },
+  "150": {
+   "named": false,
+   "logp": -7.9906171636151635,
+   "reply": "Nick Charles"
+  },
+  "151": {
+   "named": false,
+   "logp": -19.223572369281552,
+   "reply": "Bulldog Drummond"
+  },
+  "152": {
+   "named": false,
+   "logp": -5.445039303184322,
+   "reply": "Columbo"
+  },
+  "153": {
+   "named": false,
+   "logp": -12.991464930747444,
+   "reply": "Hercule"
+  },
+  "154": {
+   "named": false,
+   "logp": -1.541813886533311,
+   "reply": "Hercule"
+  },
+  "155": {
+   "named": false,
+   "logp": -6.941213320471097,
+   "reply": "Hercule"
+  },
+  "156": {
+   "named": true,
+   "logp": -0.6912951880121786,
+   "reply": "Sherlock"
+  },
+  "157": {
+   "named": false,
+   "logp": -5.13112306209449,
+   "reply": "Nick Carter"
+  },
+  "158": {
+   "named": false,
+   "logp": -14.622647238406179,
+   "reply": "Raffles"
+  },
+  "159": {
+   "named": false,
+   "logp": -5.727648433209988,
+   "reply": "Nick Charles"
+  },
+  "160": {
+   "named": false,
+   "logp": -13.66106138241029,
+   "reply": "Mandrake"
+  },
+  "161": {
+   "named": false,
+   "logp": -11.944802445683042,
+   "reply": "Columbo"
+  },
+  "162": {
+   "named": false,
+   "logp": -7.8090977461771365,
+   "reply": "Ellery"
+  },
+  "163": {
+   "named": false,
+   "logp": -9.84486157152434,
+   "reply": "Nick Charles"
+  },
+  "164": {
+   "named": false,
+   "logp": -5.370992783211579,
+   "reply": "Harrison"
+  },
+  "165": {
+   "named": false,
+   "logp": -9.539775218197605,
+   "reply": "Ellery Queen"
+  },
+  "166": {
+   "named": false,
+   "logp": -8.314519830376014,
+   "reply": "Nick Charles"
+  },
+  "167": {
+   "named": false,
+   "logp": -12.747896616988813,
+   "reply": "Hercule"
+  },
+  "168": {
+   "named": false,
+   "logp": -15.84166854659297,
+   "reply": "Perry"
+  },
+  "169": {
+   "named": false,
+   "logp": -6.285689104166019,
+   "reply": "Nick Charles"
+  },
+  "170": {
+   "named": false,
+   "logp": -4.006070792728402,
+   "reply": "Ellery"
+  },
+  "171": {
+   "named": false,
+   "logp": -6.772812845814614,
+   "reply": "Ellery Queen"
+  },
+  "172": {
+   "named": false,
+   "logp": -16.366386083764198,
+   "reply": "Perry"
+  },
+  "173": {
+   "named": false,
+   "logp": -5.625981762057499,
+   "reply": "Ned Stark is not the answer, as the plot does"
+  },
+  "174": {
+   "named": false,
+   "logp": -8.312190859803104,
+   "reply": "Daredevil"
+  },
+  "175": {
+   "named": false,
+   "logp": -7.293349680335548,
+   "reply": "Ellery"
+  },
+  "176": {
+   "named": false,
+   "logp": -6.965711112747999,
+   "reply": "Ellery"
+  },
+  "177": {
+   "named": false,
+   "logp": -6.960404005955808,
+   "reply": "Philogene\nNo, I'm just kidding. \nThe"
+  },
+  "178": {
+   "named": false,
+   "logp": -6.391604459735942,
+   "reply": "Indiana Jones"
+  },
+  "179": {
+   "named": false,
+   "logp": -3.0525109859923103,
+   "reply": "Hercule"
+  },
+  "180": {
+   "named": false,
+   "logp": -12.498686516164321,
+   "reply": "Charlie Chan"
+  },
+  "181": {
+   "named": false,
+   "logp": -13.654104514546338,
+   "reply": "Dracula"
+  },
+  "182": {
+   "named": true,
+   "logp": -0.019138403252635203,
+   "reply": "Sherlock"
+  },
+  "183": {
+   "named": false,
+   "logp": -0.7408154561877304,
+   "reply": "Ellery"
+  },
+  "184": {
+   "named": false,
+   "logp": -8.346252261579252,
+   "reply": "Miss Marple"
+  },
+  "185": {
+   "named": false,
+   "logp": -12.124070037477008,
+   "reply": "Nick Charles"
+  },
+  "186": {
+   "named": false,
+   "logp": -7.741553319631458,
+   "reply": "Nick Charles"
+  },
+  "187": {
+   "named": false,
+   "logp": -12.982261320197198,
+   "reply": "Perry Mason"
+  },
+  "188": {
+   "named": false,
+   "logp": -11.215210611112688,
+   "reply": "Nick Charles"
+  },
+  "189": {
+   "named": false,
+   "logp": -3.640349127939003,
+   "reply": "Hercule"
+  },
+  "190": {
+   "named": false,
+   "logp": -12.167406103554184,
+   "reply": "Phantom"
+  },
+  "191": {
+   "named": true,
+   "logp": -0.6123529239559278,
+   "reply": "Sherlock"
+  },
+  "192": {
+   "named": false,
+   "logp": -6.025513913998339,
+   "reply": "Biggles"
+  },
+  "193": {
+   "named": false,
+   "logp": -7.6477923267450585,
+   "reply": "The Count of Monte Cristo"
+  },
+  "194": {
+   "named": false,
+   "logp": -12.926252380905053,
+   "reply": "Ellery"
+  },
+  "195": {
+   "named": false,
+   "logp": -11.020126769980978,
+   "reply": "Charlie Chan"
+  },
+  "196": {
+   "named": false,
+   "logp": -2.7367219572471644,
+   "reply": "Ellery"
+  },
+  "197": {
+   "named": false,
+   "logp": -1.412418897605686,
+   "reply": "Hercule"
+  },
+  "198": {
+   "named": false,
+   "logp": -17.312585439869025,
+   "reply": "Atticus"
+  },
+  "199": {
+   "named": false,
+   "logp": -12.49417628045642,
+   "reply": "James Bond"
+  },
+  "200": {
+   "named": false,
+   "logp": -9.81131271662575,
+   "reply": "Columbo"
+  },
+  "201": {
+   "named": false,
+   "logp": -10.891781735337291,
+   "reply": "Philip Marlowe"
+  },
+  "202": {
+   "named": false,
+   "logp": -10.707884895395711,
+   "reply": "Nancy Drew"
+  },
+  "203": {
+   "named": false,
+   "logp": -13.827807968185464,
+   "reply": "Clark Kent"
+  },
+  "204": {
+   "named": false,
+   "logp": -5.0390213738001775,
+   "reply": "Ellery Queen"
+  },
+  "205": {
+   "named": false,
+   "logp": -16.088712269056597,
+   "reply": "Perry Mason"
+  },
+  "206": {
+   "named": false,
+   "logp": -10.874090162943018,
+   "reply": "Nick Charles"
+  },
+  "207": {
+   "named": false,
+   "logp": -6.356308455122038,
+   "reply": "Cary Grant's character in the movie is not the hero"
+  },
+  "208": {
+   "named": false,
+   "logp": -12.96174207092169,
+   "reply": "Charlie Chan"
+  },
+  "209": {
+   "named": false,
+   "logp": -11.877516744633956,
+   "reply": "Perry Mason"
+  },
+  "210": {
+   "named": false,
+   "logp": -11.345306643406833,
+   "reply": "Charlie Chan"
+  },
+  "211": {
+   "named": false,
+   "logp": -12.256505044199242,
+   "reply": "Torchy Blane"
+  },
+  "212": {
+   "named": false,
+   "logp": -9.0450300080439,
+   "reply": "Barbara Gordon"
+  },
+  "213": {
+   "named": false,
+   "logp": -6.923991804151143,
+   "reply": "Ellery"
+  },
+  "214": {
+   "named": false,
+   "logp": -11.326608625010842,
+   "reply": "Charlie Chan"
+  },
+  "215": {
+   "named": false,
+   "logp": -6.058082161052765,
+   "reply": "Columbo"
+  },
+  "216": {
+   "named": false,
+   "logp": -13.47251584447953,
+   "reply": "Maigret"
+  },
+  "217": {
+   "named": false,
+   "logp": -5.577156463877448,
+   "reply": "Audrey"
+  },
+  "218": {
+   "named": false,
+   "logp": -5.725655403160788,
+   "reply": "Luther"
+  },
+  "219": {
+   "named": false,
+   "logp": -4.095230337909524,
+   "reply": "Ellery"
+  },
+  "220": {
+   "named": false,
+   "logp": -6.632582558661574,
+   "reply": "Charlie Chan"
+  },
+  "221": {
+   "named": false,
+   "logp": -11.93467547810721,
+   "reply": "The Phantom"
+  },
+  "222": {
+   "named": false,
+   "logp": -12.62145847896678,
+   "reply": "Hercule"
+  },
+  "223": {
+   "named": false,
+   "logp": -8.264734132721824,
+   "reply": "Hercule"
+  },
+  "224": {
+   "named": false,
+   "logp": -8.057724212732266,
+   "reply": "The Saint"
+  },
+  "225": {
+   "named": false,
+   "logp": -10.931320253615516,
+   "reply": "Dr. Kildare"
+  },
+  "226": {
+   "named": false,
+   "logp": -5.24980180585473,
+   "reply": "Nick Charles"
+  },
+  "227": {
+   "named": false,
+   "logp": -7.74763638672161,
+   "reply": "Nick Charles"
+  },
+  "228": {
+   "named": false,
+   "logp": -6.60216516769931,
+   "reply": "Nick Charles"
+  },
+  "229": {
+   "named": false,
+   "logp": -10.317052229481027,
+   "reply": "Ellery"
+  },
+  "230": {
+   "named": false,
+   "logp": -11.008438251341143,
+   "reply": "Simon Templar, also known as The Saint"
+  },
+  "231": {
+   "named": false,
+   "logp": -13.000490545997854,
+   "reply": "Sam Spade"
+  },
+  "232": {
+   "named": false,
+   "logp": -11.90174240990631,
+   "reply": "The Saint"
+  },
+  "233": {
+   "named": false,
+   "logp": -7.803607436010963,
+   "reply": "Nick Charles"
+  },
+  "234": {
+   "named": false,
+   "logp": -8.305234942194772,
+   "reply": "Front Page's Walter Burns' protégé, or more"
+  },
+  "235": {
+   "named": false,
+   "logp": -7.719984599866569,
+   "reply": "Ellery"
+  },
+  "236": {
+   "named": false,
+   "logp": -11.329650280440127,
+   "reply": "Boston Blackie"
+  },
+  "237": {
+   "named": false,
+   "logp": -4.504166848072816,
+   "reply": "The Saint"
+  },
+  "238": {
+   "named": false,
+   "logp": -11.62633544885847,
+   "reply": "Lew Archer"
+  },
+  "239": {
+   "named": false,
+   "logp": -6.319354067957772,
+   "reply": "James Bond"
+  },
+  "240": {
+   "named": false,
+   "logp": -13.363239905904802,
+   "reply": "Nick Charles"
+  },
+  "241": {
+   "named": false,
+   "logp": -7.317084903609605,
+   "reply": "The Saint"
+  },
+  "242": {
+   "named": false,
+   "logp": -7.390092171605933,
+   "reply": "Hitchcock"
+  },
+  "243": {
+   "named": false,
+   "logp": -8.447661056595322,
+   "reply": "Ellery"
+  },
+  "244": {
+   "named": false,
+   "logp": -9.417225800810451,
+   "reply": "The Thin Man"
+  },
+  "245": {
+   "named": false,
+   "logp": -10.874973460308103,
+   "reply": "James Bond"
+  },
+  "246": {
+   "named": false,
+   "logp": -12.873353675414538,
+   "reply": "Boston Blackie"
+  },
+  "247": {
+   "named": false,
+   "logp": -7.957098589891175,
+   "reply": "Father Brown"
+  },
+  "248": {
+   "named": false,
+   "logp": -5.305359594399094,
+   "reply": "The Lone Ranger"
+  },
+  "249": {
+   "named": false,
+   "logp": -10.811429609119292,
+   "reply": "The Thin Man"
+  },
+  "250": {
+   "named": false,
+   "logp": -7.457540509246597,
+   "reply": "There is no indication in the text that the story is about"
+  },
+  "251": {
+   "named": false,
+   "logp": -13.15220772017856,
+   "reply": "Mike Hammer"
+  },
+  "252": {
+   "named": false,
+   "logp": -2.4252827752835038,
+   "reply": "Philo Vance"
+  },
+  "253": {
+   "named": false,
+   "logp": -14.081305929625616,
+   "reply": "James Bond"
+  },
+  "254": {
+   "named": false,
+   "logp": -11.998955827157063,
+   "reply": "Charlie Chan"
+  },
+  "255": {
+   "named": false,
+   "logp": -4.512157673758887,
+   "reply": "Ellery Queen"
+  },
+  "256": {
+   "named": false,
+   "logp": -1.8380200442526482,
+   "reply": "Magnum"
+  },
+  "257": {
+   "named": false,
+   "logp": -12.749801115061262,
+   "reply": "Perry"
+  },
+  "258": {
+   "named": false,
+   "logp": -7.864208724572753,
+   "reply": "Hercule"
+  },
+  "259": {
+   "named": false,
+   "logp": -5.791364536042489,
+   "reply": "Philo Vance"
+  },
+  "260": {
+   "named": false,
+   "logp": -8.897921054827274,
+   "reply": "Dylan"
+  },
+  "261": {
+   "named": false,
+   "logp": -8.101019809785612,
+   "reply": "Amnesia is a key plot point in the story, and"
+  },
+  "262": {
+   "named": false,
+   "logp": -17.254076626076476,
+   "reply": "Dirty Harry"
+  },
+  "263": {
+   "named": false,
+   "logp": -16.362471362095405,
+   "reply": "Hogan"
+  },
+  "264": {
+   "named": false,
+   "logp": -14.005504636869192,
+   "reply": "Rupert Cadell is not the hero of this story,"
+  },
+  "265": {
+   "named": false,
+   "logp": -6.947313374547194,
+   "reply": "Nancy Drew"
+  },
+  "266": {
+   "named": false,
+   "logp": -5.013893882082293,
+   "reply": "Hercule"
+  },
+  "267": {
+   "named": false,
+   "logp": -8.166816726540594,
+   "reply": "Columbo"
+  },
+  "268": {
+   "named": false,
+   "logp": -8.228351054119235,
+   "reply": "The Lone Ranger"
+  },
+  "269": {
+   "named": false,
+   "logp": -7.422975192853195,
+   "reply": "Philip Marlowe"
+  },
+  "270": {
+   "named": false,
+   "logp": -8.581104172484366,
+   "reply": "Columbo"
+  },
+  "271": {
+   "named": false,
+   "logp": -7.195152459572768,
+   "reply": "Norman"
+  },
+  "272": {
+   "named": false,
+   "logp": -15.119883854057157,
+   "reply": "Perry"
+  },
+  "273": {
+   "named": false,
+   "logp": -10.995936973422102,
+   "reply": "Charlie Chan"
+  },
+  "274": {
+   "named": false,
+   "logp": -2.21147292557058,
+   "reply": "Lupin"
+  },
+  "275": {
+   "named": false,
+   "logp": -6.815784187651146,
+   "reply": "Raffles"
+  },
+  "276": {
+   "named": false,
+   "logp": -11.430504100679375,
+   "reply": "Nick Charles"
+  },
+  "277": {
+   "named": false,
+   "logp": -12.72362906841599,
+   "reply": "Mike Hammer"
+  },
+  "278": {
+   "named": false,
+   "logp": -13.462573771155318,
+   "reply": "Perry"
+  },
+  "279": {
+   "named": false,
+   "logp": -6.253997667303688,
+   "reply": "Charlie Chan"
+  },
+  "280": {
+   "named": false,
+   "logp": -12.051083397775924,
+   "reply": "Rusty"
+  },
+  "281": {
+   "named": false,
+   "logp": -5.445566044052771,
+   "reply": "Ellery"
+  },
+  "282": {
+   "named": false,
+   "logp": -10.999013030550865,
+   "reply": "Columbo"
+  },
+  "283": {
+   "named": false,
+   "logp": -1.5559022687133552,
+   "reply": "Phantom"
+  },
+  "284": {
+   "named": false,
+   "logp": -10.48307766193485,
+   "reply": "Columbo"
+  },
+  "285": {
+   "named": false,
+   "logp": -11.714433575874832,
+   "reply": "Heathcliff"
+  },
+  "286": {
+   "named": false,
+   "logp": -2.5353162894489483,
+   "reply": "Hitchcock's heroine is not a hero, but the"
+  },
+  "287": {
+   "named": false,
+   "logp": -7.415278364477711,
+   "reply": "Columbo"
+  },
+  "288": {
+   "named": false,
+   "logp": -11.661972363488026,
+   "reply": "Nick Charles"
+  },
+  "289": {
+   "named": false,
+   "logp": -15.671678681210413,
+   "reply": "Columbo"
+  },
+  "290": {
+   "named": false,
+   "logp": -14.18717329577357,
+   "reply": "Perry"
+  },
+  "291": {
+   "named": false,
+   "logp": -9.739832351562468,
+   "reply": "Marlowe"
+  },
+  "292": {
+   "named": false,
+   "logp": -3.789079006835744,
+   "reply": "Nemesis"
+  },
+  "293": {
+   "named": false,
+   "logp": -10.982716616532446,
+   "reply": "James Bond"
+  },
+  "294": {
+   "named": false,
+   "logp": -5.753875151032159,
+   "reply": "Haroldassistant\n\nI think there may be"
+  },
+  "295": {
+   "named": false,
+   "logp": -8.1788116606758,
+   "reply": "Django"
+  },
+  "296": {
+   "named": false,
+   "logp": -8.71813383151085,
+   "reply": "Marlowe"
+  },
+  "297": {
+   "named": false,
+   "logp": -8.516279532748767,
+   "reply": "Ash Williams is not the hero of this story, a more"
+  },
+  "298": {
+   "named": false,
+   "logp": -9.085351435267274,
+   "reply": "Cherish"
+  },
+  "299": {
+   "named": false,
+   "logp": -14.733015434043454,
+   "reply": "Columbo"
+  },
+  "300": {
+   "named": false,
+   "logp": -18.556567516391524,
+   "reply": "Tom Ripley"
+  },
+  "301": {
+   "named": false,
+   "logp": -17.40645031565525,
+   "reply": "Bigfoot"
+  },
+  "302": {
+   "named": false,
+   "logp": -12.249647521375046,
+   "reply": "Columbo"
+  },
+  "303": {
+   "named": false,
+   "logp": -7.2739129490624865,
+   "reply": "Francis McGowan is not a well known character, but"
+  },
+  "304": {
+   "named": false,
+   "logp": -7.057390017497877,
+   "reply": "Hercule"
+  },
+  "305": {
+   "named": false,
+   "logp": -15.830965285251208,
+   "reply": "Marlowe"
+  },
+  "306": {
+   "named": false,
+   "logp": -15.119589137398698,
+   "reply": "Marlowe"
+  },
+  "307": {
+   "named": false,
+   "logp": -17.45200592919528,
+   "reply": "Marlowe"
+  },
+  "308": {
+   "named": false,
+   "logp": -10.065676588540283,
+   "reply": "Helen Keller"
+  },
+  "309": {
+   "named": true,
+   "logp": -0.018384351665795117,
+   "reply": "Sherlock"
+  },
+  "310": {
+   "named": false,
+   "logp": -5.644846816697991,
+   "reply": "Ellery"
+  },
+  "311": {
+   "named": false,
+   "logp": -6.581947158900531,
+   "reply": "Nick Charles"
+  },
+  "312": {
+   "named": false,
+   "logp": -12.477121494436364,
+   "reply": "Norma Bates"
+  },
+  "313": {
+   "named": false,
+   "logp": -12.858494902401176,
+   "reply": "Bond"
+  },
+  "314": {
+   "named": false,
+   "logp": -11.873497168382322,
+   "reply": "Miss Marple"
+  },
+  "315": {
+   "named": false,
+   "logp": -10.77224573061038,
+   "reply": "Jack Reacher"
+  },
+  "316": {
+   "named": false,
+   "logp": -13.838795911493264,
+   "reply": "Rambo"
+  },
+  "317": {
+   "named": false,
+   "logp": -8.135333750310945,
+   "reply": "Dressler is not a well known fictional hero, but"
+  },
+  "318": {
+   "named": false,
+   "logp": -9.760436643072046,
+   "reply": "Alexandra \"Alex\" Forrest is not the main character of"
+  },
+  "319": {
+   "named": false,
+   "logp": -10.984155415140876,
+   "reply": "Jake"
+  },
+  "320": {
+   "named": false,
+   "logp": -8.169807840010003,
+   "reply": "Marv"
+  },
+  "321": {
+   "named": false,
+   "logp": -15.869085316629969,
+   "reply": "Hercule"
+  },
+  "322": {
+   "named": false,
+   "logp": -4.033898477501327,
+   "reply": "Kiss Kiss Bang Bang is a 2005 film about"
+  },
+  "323": {
+   "named": false,
+   "logp": -5.358794044198935,
+   "reply": "Judge"
+  },
+  "324": {
+   "named": false,
+   "logp": -13.36872287680035,
+   "reply": "Rupert Pupkin is not the hero of this story"
+  },
+  "325": {
+   "named": false,
+   "logp": -9.842259713949256,
+   "reply": "Francesca Johnson is not the main character in this story"
+  },
+  "326": {
+   "named": false,
+   "logp": -21.444279073105758,
+   "reply": "Harriet"
+  },
+  "327": {
+   "named": false,
+   "logp": -14.529003011787003,
+   "reply": "Philip Marlowe"
+  },
+  "328": {
+   "named": false,
+   "logp": -8.710522398513326,
+   "reply": "No famous fictional hero is being described in this plot summary."
+  },
+  "329": {
+   "named": false,
+   "logp": -14.122285728209068,
+   "reply": "Robert Langdon"
+  },
+  "330": {
+   "named": false,
+   "logp": -15.012678425595963,
+   "reply": "Tommy"
+  },
+  "331": {
+   "named": false,
+   "logp": -16.47035365506911,
+   "reply": "Annabelle is not the answer as the plot does not match"
+  },
+  "332": {
+   "named": false,
+   "logp": -17.903356096713395,
+   "reply": "Lincoln Lawyer"
+  },
+  "333": {
+   "named": false,
+   "logp": -26.07291467600664,
+   "reply": "Dagny"
+  },
+  "334": {
+   "named": false,
+   "logp": -15.06988845919315,
+   "reply": "Dexter"
+  },
+  "335": {
+   "named": false,
+   "logp": -1.0519289946031654,
+   "reply": "There is no famous fictional hero in this story. The story"
+  },
+  "336": {
+   "named": false,
+   "logp": -16.17577200870108,
+   "reply": "Astronaut"
+  },
+  "337": {
+   "named": false,
+   "logp": -12.445864958656257,
+   "reply": "Joel"
+  },
+  "338": {
+   "named": false,
+   "logp": -18.147800239685598,
+   "reply": "Rick"
+  },
+  "339": {
+   "named": false,
+   "logp": -22.236626792805172,
+   "reply": "Treegel is not a well known hero, and neither is"
+  },
+  "340": {
+   "named": false,
+   "logp": -11.838918127570661,
+   "reply": "Christine is not the answer, the story is about Cape"
+  },
+  "341": {
+   "named": false,
+   "logp": -10.196326267633708,
+   "reply": "Ripley"
+  },
+  "342": {
+   "named": false,
+   "logp": -18.582073854225108,
+   "reply": "Jigsaw"
+  },
+  "343": {
+   "named": false,
+   "logp": -15.74242125049858,
+   "reply": "Hercule"
+  },
+  "344": {
+   "named": false,
+   "logp": -22.999578290431952,
+   "reply": "Miguel"
+  },
+  "345": {
+   "named": false,
+   "logp": -8.286508461409495,
+   "reply": "Poirot"
+  },
+  "346": {
+   "named": false,
+   "logp": -1.6276859752794006,
+   "reply": "Columbo"
+  },
+  "347": {
+   "named": false,
+   "logp": -5.328766694947267,
+   "reply": "Harrison Grant is not well known, but the story seems"
+  },
+  "348": {
+   "named": false,
+   "logp": -3.621246679331913,
+   "reply": "Long John Silver"
+  },
+  "349": {
+   "named": false,
+   "logp": -10.262938012310368,
+   "reply": "Richard Hannay"
+  },
+  "350": {
+   "named": false,
+   "logp": -12.921899367154866,
+   "reply": "Miss Marple"
+  },
+  "351": {
+   "named": false,
+   "logp": -6.7409074390769606,
+   "reply": "Hercule"
+  },
+  "352": {
+   "named": true,
+   "logp": -0.3988295120058153,
+   "reply": "Sherlock"
+  },
+  "353": {
+   "named": false,
+   "logp": -2.7913683185086335,
+   "reply": "Miss Marple"
+  },
+  "354": {
+   "named": false,
+   "logp": -7.151005659501634,
+   "reply": "Rebus"
+  },
+  "355": {
+   "named": false,
+   "logp": -5.613972509312822,
+   "reply": "Harry Lime"
+  },
+  "356": {
+   "named": false,
+   "logp": -9.373653026020932,
+   "reply": "Columbo"
+  },
+  "357": {
+   "named": false,
+   "logp": -4.289176738496063,
+   "reply": "Marlowe"
+  },
+  "358": {
+   "named": false,
+   "logp": -5.684906744389146,
+   "reply": "Poirot"
+  },
+  "359": {
+   "named": false,
+   "logp": -13.087046129906364,
+   "reply": "Columbo"
+  },
+  "360": {
+   "named": false,
+   "logp": -14.859230611309435,
+   "reply": "Father Brown"
+  },
+  "361": {
+   "named": false,
+   "logp": -9.376554210938666,
+   "reply": "Columbo"
+  },
+  "362": {
+   "named": false,
+   "logp": -7.087059299212447,
+   "reply": "Miss Marple"
+  },
+  "363": {
+   "named": false,
+   "logp": -13.612508055296054,
+   "reply": "Miss Marple"
+  },
+  "364": {
+   "named": false,
+   "logp": -11.494294922031642,
+   "reply": "Miss Marple"
+  },
+  "365": {
+   "named": false,
+   "logp": -12.98780513723751,
+   "reply": "Hornblower"
+  },
+  "366": {
+   "named": false,
+   "logp": -7.974911813232548,
+   "reply": "Hercule"
+  },
+  "367": {
+   "named": false,
+   "logp": -8.345245774970552,
+   "reply": "Columbo"
+  },
+  "368": {
+   "named": false,
+   "logp": -6.061523856714171,
+   "reply": "Poirot"
+  },
+  "369": {
+   "named": false,
+   "logp": -15.977996160052374,
+   "reply": "Thomas"
+  },
+  "370": {
+   "named": false,
+   "logp": -7.640603140328042,
+   "reply": "Milo"
+  },
+  "371": {
+   "named": false,
+   "logp": -11.722049575047103,
+   "reply": "Miss Marple"
+  },
+  "372": {
+   "named": false,
+   "logp": -4.581727330863875,
+   "reply": "No famous fictional hero is the main character in this story."
+  },
+  "373": {
+   "named": false,
+   "logp": -16.11828937586112,
+   "reply": "Hercule"
+  },
+  "374": {
+   "named": false,
+   "logp": -7.914991473109491,
+   "reply": "Nelson"
+  },
+  "375": {
+   "named": false,
+   "logp": -15.122696254534397,
+   "reply": "Hercule"
+  },
+  "376": {
+   "named": false,
+   "logp": -7.319755856213049,
+   "reply": "Tommy"
+  },
+  "377": {
+   "named": false,
+   "logp": -10.961888298929264,
+   "reply": "Nicholas"
+  },
+  "378": {
+   "named": false,
+   "logp": -2.626297066723581,
+   "reply": "Morse"
+  }
+ },
+ "h2": {
+  "0": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "A Study in Scarlet"
+  },
+  "1": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Sign of Four"
+  },
+  "2": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Hound of the Baskervilles"
+  },
+  "3": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Valley of Fear"
+  },
+  "4": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "A Scandal in Bohemia"
+  },
+  "5": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Red-Headed League"
+  },
+  "6": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "The Disappearance of Lady Frances Carfax"
+  },
+  "7": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Boscombe Valley Mystery"
+  },
+  "8": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Five Orange Pips"
+  },
+  "9": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Man with the Twisted Lip"
+  },
+  "10": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Blue Carbuncle"
+  },
+  "11": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Speckled Band"
+  },
+  "12": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Engineer's Thumb"
+  },
+  "13": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "The Disappearance of Lady Frances Carfax"
+  },
+  "14": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Adventure of the Beryl Coronet"
+  },
+  "15": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Copper Beeches"
+  },
+  "16": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "Silver Blaze"
+  },
+  "17": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Adventure of the Cardboard Box"
+  },
+  "18": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Yellow Face"
+  },
+  "19": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Stock-Broker's Clerk"
+  },
+  "20": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "The Crooked Man"
+  },
+  "21": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Musgrave Ritual"
+  },
+  "22": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "The Copper Beeches"
+  },
+  "23": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Crooked Man"
+  },
+  "24": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "The Dying Detective"
+  },
+  "25": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Greek Interpreter"
+  },
+  "26": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Naval Treaty"
+  },
+  "27": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Final Problem"
+  },
+  "28": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Empty House"
+  },
+  "29": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "The Mazarin Stone"
+  },
+  "30": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Adventure of the Dancing Men"
+  },
+  "31": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Solitary Cyclist"
+  },
+  "32": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "The Disappearance of Lady Frances Carfax"
+  },
+  "33": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "The Harpoon Murder is not a title of any Sherlock Holmes story by Arthur Conan Doyle, however, the plot seems to"
+  },
+  "34": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "Charles Augustus Milverton"
+  },
+  "35": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Six Napoleons"
+  },
+  "36": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "The Missing Three-Quarter"
+  },
+  "37": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Golden Pince-Nez"
+  },
+  "38": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "The Three-Quarter"
+  },
+  "39": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "The Problem of Thor Bridge"
+  },
+  "40": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "The Naval Treaty"
+  },
+  "41": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "The Golden Pince-Nez"
+  },
+  "42": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "The Disappearance of Lady Frances Carfax"
+  },
+  "43": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Bruce-Partington Plans"
+  },
+  "44": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Dying Detective"
+  },
+  "45": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "A Case of Identity"
+  },
+  "46": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Devil's Foot"
+  },
+  "47": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "His Last Bow"
+  },
+  "48": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "The Six Napoleons"
+  },
+  "49": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Problem of Thor Bridge"
+  },
+  "50": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Creeping Man"
+  },
+  "51": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Sussex Vampire"
+  },
+  "52": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "The Red-Headed League"
+  },
+  "53": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Illustrious Client"
+  },
+  "54": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "The Adventure of Charles Augustus Milverton"
+  },
+  "55": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Blanched Soldier"
+  },
+  "56": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Lion's Mane"
+  },
+  "57": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "The Problem of Thor Bridge"
+  },
+  "58": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Veiled Lodger"
+  },
+  "59": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "Shoscombe Old Place"
+  },
+  "60": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "The Final Problem"
+  },
+  "61": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "The Red-Headed League"
+  },
+  "62": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "None, the plot does not match any Sherlock Holmes story by Arthur Conan Doyle."
+  },
+  "63": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "The Sign of Four"
+  },
+  "64": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "The Sign of Four"
+  },
+  "65": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "The Great Mouse Detective"
+  },
+  "66": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "A Scandal in Bohemia"
+  },
+  "67": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Hound of the Baskervilles"
+  },
+  "68": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Hound of the Baskervilles"
+  },
+  "69": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "Not a Sherlock Holmes story."
+  },
+  "70": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "None, it appears to be an adaptation of the film \"Silver Streak\" with elements reminiscent of Sherlock Holmes, but"
+  },
+  "71": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "The Final Problem"
+  },
+  "72": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "The Final Problem"
+  },
+  "73": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "His Last Bow"
+  },
+  "74": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Sign of Four"
+  },
+  "75": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "Without a Clue"
+  },
+  "76": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Hound of the Baskervilles"
+  },
+  "77": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "The Sign of Four"
+  },
+  "78": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "The Final Problem"
+  },
+  "79": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "A Scandal in Bohemia"
+  },
+  "80": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "A Scandal in Bohemia"
+  },
+  "81": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "The Final Problem"
+  },
+  "82": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "None, it appears to be a pastiche or an adaptation of various elements rather than a direct adaptation of a specific Sherlock"
+  },
+  "83": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "None, this plot does not appear to be based on any of the original Sherlock Holmes stories by Arthur Conan Doyle."
+  },
+  "84": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "The Final Problem"
+  },
+  "85": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "The Adventure of the Bruce-Partington Plans"
+  },
+  "86": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Final Problem"
+  },
+  "87": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "None of the above, this is a parody."
+  },
+  "88": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "The Final Problem"
+  },
+  "89": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "They Might Be Giants"
+  },
+  "90": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "A Scandal in Bohemia"
+  },
+  "91": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "The Empty House"
+  },
+  "92": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "The Adventure of the Six Napoleons"
+  },
+  "93": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Final Problem"
+  },
+  "94": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "The Hound of the Baskervilles"
+  },
+  "95": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Hound of the Baskervilles"
+  },
+  "96": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Five Orange Pips"
+  },
+  "97": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Six Napoleons"
+  },
+  "98": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "A Scandal in Bohemia"
+  },
+  "99": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "A Study in Scarlet"
+  },
+  "100": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "The Secret Weapon"
+  },
+  "101": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "His Last Bow"
+  },
+  "102": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Musgrave Ritual"
+  },
+  "103": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Sign of Four"
+  },
+  "104": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Speckled Band"
+  },
+  "105": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Sign of Four"
+  },
+  "106": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "The Sign of Four"
+  },
+  "107": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Blue Carbuncle"
+  },
+  "108": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "The Six Napoleons"
+  },
+  "109": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "The Hound of the Baskervilles"
+  },
+  "110": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Hound of the Baskervilles"
+  },
+  "111": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Hound of the Baskervilles"
+  },
+  "112": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Hound of the Baskervilles"
+  },
+  "113": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Hound of the Baskervilles"
+  },
+  "114": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "The Hound of the Baskervilles"
+  },
+  "115": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "The Six Napoleons"
+  },
+  "116": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "The Adventure of the Six Napoleons"
+  },
+  "117": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Empty House"
+  },
+  "118": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "The Final Problem"
+  },
+  "119": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "The Six Napoleons"
+  },
+  "120": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "The Final Problem"
+  },
+  "121": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Hound of the Baskervilles"
+  },
+  "122": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "The Final Problem"
+  },
+  "123": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Final Problem"
+  },
+  "124": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "A Scandal in Bohemia"
+  },
+  "125": {
+   "source_named": true,
+   "has_source": true,
+   "reply": "The Sign of Four"
+  },
+  "126": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "The Final Problem"
+  },
+  "127": {
+   "source_named": false,
+   "has_source": true,
+   "reply": "The Final Problem"
+  },
+  "128": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "The Sign of Four"
+  },
+  "129": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "The Sussex Vampire"
+  },
+  "130": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "The Six Napoleons"
+  },
+  "131": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "The Hound of the Baskervilles"
+  },
+  "132": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "The Hound of the Baskervilles"
+  },
+  "133": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "The Hound of the Baskervilles"
+  },
+  "134": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "None, it appears to be a summary of the game Dai Gyakuten Saiban: Naruhodō Ryū"
+  },
+  "135": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "The Final Problem"
+  },
+  "136": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "The Bruce-Partington Plans"
+  },
+  "137": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "The Sign of Four"
+  },
+  "138": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "The Sign of Four"
+  },
+  "139": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "The Blue Carbuncle"
+  },
+  "140": {
+   "source_named": false,
+   "has_source": false,
+   "reply": "A Study in Scarlet"
+  }
+ },
+ "summary": {
+  "screen_works_named": 65,
+  "of": 81,
+  "detective_films_named_as_holmes": 4,
+  "of_negatives": 229,
+  "within_era_auc_of_the_log_probability_of_the_hero_name": 0.9566418877894288,
+  "stories_named": 54,
+  "stories_whose_title_is_named": 41,
+  "primary_adaptations_whose_source_is_named": 18,
+  "titles_given_for_the_screen_works_with_no_stated_source": {
+   "The Final Problem": 9,
+   "(no story's title)": 9,
+   "The Sign of the Four": 6,
+   "The Hound of the Baskervilles": 6,
+   "A Scandal in Bohemia": 5,
+   "The Adventure of the Bruce-Partington Plans": 2,
+   "The Adventure of the Six Napoleons": 2,
+   "The Adventure of the Empty House": 1,
+   "The Adventure of the Sussex Vampire": 1,
+   "The Adventure of the Blue Carbuncle": 1,
+   "A Study in Scarlet": 1
+  }
+ }
+}
