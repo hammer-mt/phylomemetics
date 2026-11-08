@@ -1,6 +1,6 @@
 # IN-29: Same neurons at 4-bit, 8-bit and full precision?
 
-**Area:** The instrument · **Status:** design registered 8 November 2026, not run · **Priority:** 4.0 of 5
+**Area:** The instrument · **Status:** design registered 8 November 2026, not run · **Priority:** 4.5 of 5
 
 ## Question
 
@@ -49,6 +49,10 @@ Likely an uneventful pass: Singh and Sajjad found no drastic neuron-level change
 ## Reviewer note
 
 Promoted from a seed: it is cheap, and IN24 and any reuse of full-precision labels depend on it. All six builds confirmed on Hugging Face. Weakness: covers MLX quantisation only, and prior work points to a pass, so it is informative mainly if it fails.
+
+## Cross-area ranking
+
+In the top twelve of 2 of 3 judges (what decides the premises fastest: rank 8; speed and cost: rank 7). A one-day gate that will probably pass, but if 4-bit readings do not match 8-bit or full precision then every number so far belongs to one quantised file and no published labels or dictionaries can be borrowed.
 
 ## Sources
 

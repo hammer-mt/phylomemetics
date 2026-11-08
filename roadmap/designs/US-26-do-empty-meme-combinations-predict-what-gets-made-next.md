@@ -1,6 +1,6 @@
 # US-26: Do empty meme combinations predict what gets made next?
 
-**Area:** Uses · **Status:** design registered 8 November 2026, not run · **Priority:** 3.0 of 5
+**Area:** Uses · **Status:** design registered 8 November 2026, not run · **Priority:** 4.0 of 5
 
 ## Question
 
@@ -49,6 +49,10 @@ Common units that never met may exclude each other, not await a first use; unit 
 ## Reviewer note
 
 The gap rule was undefined and the 8% and 4% rates had no basis. Added a tuning period fixing rule and base rates, a stop gate, name masking, template briefs and a test on 2013 to 2023 films, since few 2025 plots exist. Weakness: a long chain of LLM steps.
+
+## Cross-area ranking
+
+In the top twelve of 1 of 3 judges (upside: rank 10). It is the only registered design that tests spotting promising ideas forward in time, with the films actually made after 2012 as the judge, and gap-finding rules of this kind usually beat random pairs.
 
 ## Sources
 

@@ -50,6 +50,10 @@ Writers are picked by the kind of push they are then tested on, so part of their
 
 Writers were picked by gradient attribution, which Liu 2026 reports mispredicts control; now a direct push screen on tuning prompts. Added the keyword ban, a human check and the study's own 18 units. Remaining weakness: writers' lead is partly built in by how they are chosen.
 
+## Cross-area ranking
+
+In the top twelve of 1 of 3 judges (upside: rank 7). It settles whether the units that detect a meme are the ones that write it, which decides if the study's units can ever be edit handles or are only gauges.
+
 ## Sources
 
 - Arad, Mueller, Belinkov 2025, arXiv:2505.20063

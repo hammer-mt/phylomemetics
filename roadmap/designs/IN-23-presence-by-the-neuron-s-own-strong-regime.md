@@ -50,6 +50,10 @@ Batman-specific units (names, places) may never meet their trigger in general te
 
 Two repairs. Foils that merely contained the label's words made the weak bin harder by construction; foils are now matched on overlap. A 10-million-token maximum understates rare units, so maxima now use 100 million tokens plus the study corpus. Labels still come from Batman text.
 
+## Cross-area ranking
+
+In the top twelve of 1 of 3 judges (what decides the premises fastest: rank 10). Checks whether the study's presence calls sit in the strong range the source essay vouches for, which fixes the presence rule that every document-level design inherits.
+
 ## Sources
 
 - Cammarata 2026

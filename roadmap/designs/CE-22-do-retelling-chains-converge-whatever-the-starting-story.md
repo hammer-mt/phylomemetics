@@ -50,6 +50,10 @@ Once house style is subtracted nothing may be left to converge; or writer models
 
 Perez et al. already showed attractors on four scalar properties; the news here is the unit-level list. Fixed text length and switched to seed share of variance, since shrinking texts lower any count's variance; subtracted rephrase drift as house style; inference by seed. Weakness: reader and writers share LLM style.
 
+## Overlaps with
+
+Asks nearly the same question as ME-22, which the judges would run instead.
+
 ## Sources
 
 - Perez et al. 2024 (arXiv:2407.04503)

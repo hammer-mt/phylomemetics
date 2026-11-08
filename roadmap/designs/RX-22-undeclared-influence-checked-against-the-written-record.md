@@ -1,6 +1,6 @@
 # RX-22: Undeclared influence, checked against the written record
 
-**Area:** Remix and influence · **Status:** design registered 8 November 2026, not run · **Priority:** 4.5 of 5
+**Area:** Remix and influence · **Status:** design registered 8 November 2026, not run · **Priority:** 4.4 of 5
 
 ## Question
 
@@ -49,6 +49,10 @@ Similarity is not influence: top pairs may be genre twins, and critics note rese
 ## Reviewer note
 
 Dropped the 'lowest quarter of word overlap' stratum: selecting on a rival's score makes that rival lose by construction. Strata are now link types. Audit made checkable and enlarged; same-franchise and same-creator pairs excluded. Remaining: the number of loose links with plots at both ends is unconfirmed.
+
+## Cross-area ranking
+
+In the top twelve of 1 of 3 judges (upside: rank 4). It is the closest thing to the tool Mike wants: a search for unacknowledged sources across thousands of works with a hit rate checked against the written record, and it produces a usable list whichever reader wins.
 
 ## Sources
 

@@ -1,6 +1,6 @@
 # US-21: A brand score that pasted trigger words cannot move
 
-**Area:** Uses · **Status:** design registered 8 November 2026, not run · **Priority:** 4.5 of 5
+**Area:** Uses · **Status:** design registered 8 November 2026, not run · **Priority:** 3.5 of 5
 
 ## Question
 
@@ -49,6 +49,10 @@ Masked, reworded episodes of sibling series may be impossible to tell apart, so 
 ## Reviewer note
 
 Both arms now pass through the same rewriter; sibling series added as hard negatives; a scored rewriting attack with an edit cap is the main test, because a three-sentence rule beats one pasted sentence by construction. Weakness: episode summaries stand in for brand copy; plot sections not yet counted.
+
+## Cross-area ranking
+
+3 of 3 judges thought the area reviewer rated this too high.
 
 ## Sources
 

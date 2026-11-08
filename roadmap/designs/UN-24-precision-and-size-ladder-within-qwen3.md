@@ -50,6 +50,10 @@ The likely result is dull: readings are stable, which is still worth knowing. Un
 
 Made precision the primary arm and size a stated secondary with its own small-sample test; dropped the claim that this tests whether neurons are clean. All checkpoints confirmed. Remaining: five sizes with one model each cannot separate scale from similarity to Llama's own size.
 
+## Overlaps with
+
+Asks nearly the same question as IN-29, which the judges would run instead.
+
 ## Sources
 
 - Cammarata 2026

@@ -1,6 +1,6 @@
 # FI-21: Do neuron profiles pick winning headlines beyond embeddings?
 
-**Area:** Fitness and forecasting · **Status:** design registered 8 November 2026, not run · **Priority:** 4.5 of 5
+**Area:** Fitness and forecasting · **Status:** design registered 8 November 2026, not run · **Priority:** 4.4 of 5
 
 ## Question
 
@@ -49,6 +49,10 @@ A tie with embeddings is the likeliest result. The labels are noisy: only about 
 ## Reviewer note
 
 Counted the data: about 1,900 clean headline-only tests in the holdout, so the stated 0.3-point error was optimistic. Added a fallback, a noise ceiling, same-teaser matching and a same-model sparse-feature rival. Prior-art check used arXiv only (web search was unavailable). Remaining weakness: a tie is likely.
+
+## Cross-area ranking
+
+In the top twelve of 1 of 3 judges (speed and cost: rank 8). One 40-minute pass per model over a free archive of randomised headline tests gives a clear win-or-tie against embeddings, and the same activations feed five other designs.
 
 ## Sources
 

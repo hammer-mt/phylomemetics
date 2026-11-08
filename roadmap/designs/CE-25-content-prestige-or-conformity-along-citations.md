@@ -50,6 +50,10 @@ Topic similarity between a paper and what it cites mimics transmission; the swap
 
 Rebuilt around the published propagation score. Dropped the content-share test (unit base rates make it a tautology) and the conformity test (authors choose their sources, and a presence cut-off alone bends the curve). Exposure now covers all references with abstracts. Still observational: association only.
 
+## Overlaps with
+
+Asks nearly the same question as ME-21, which the judges would run instead.
+
 ## Sources
 
 - Kuhn, Perc & Helbing 2014

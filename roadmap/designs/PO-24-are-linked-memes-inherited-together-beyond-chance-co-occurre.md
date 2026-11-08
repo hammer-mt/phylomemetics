@@ -50,6 +50,10 @@ Leftover sub-genre structure makes any linked pair travel together when an adapt
 
 A probability excess grows mechanically with retention rates: replaced by an odds-ratio contrast against unlinked pairs. Added a different-scene rule (same-sentence pairs co-transmit trivially), principal components and merging. Remaining: residual genre structure; word pairs will probably tie; depends on PO21.
 
+## Overlaps with
+
+Asks nearly the same question as CJ-24, which the judges would run instead.
+
 ## Sources
 
 - Maynard Smith and Haigh 1974

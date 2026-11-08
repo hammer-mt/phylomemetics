@@ -50,6 +50,10 @@ German Wikipedia summaries tend to be longer, so some summariser Fst is real dif
 
 Added by the reviewer: the area names Fst but had only a low-power seed. The same films in two Wikipedias give a true zero for differentiation. Weakness: summariser Fst mixes wording with real differences in detail; film counts per industry are unconfirmed.
 
+## Overlaps with
+
+Asks nearly the same question as IN-25, which the judges would run instead.
+
 ## Sources
 
 - Hatzel and Biemann 2024

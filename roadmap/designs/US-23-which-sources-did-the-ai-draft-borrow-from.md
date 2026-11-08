@@ -50,6 +50,10 @@ Machine-written drafts may borrow in ways people do not; a writer that ignores a
 
 Beating BM25 was true by construction once source terms are banned, so the embedding margin is now the test. Added a randomly assigned borrowed sentence, writers from other model families and a corrected source count. Weakness: the likely result is a tie with story embeddings.
 
+## Overlaps with
+
+Asks nearly the same question as RX-27, which the judges would run instead.
+
 ## Sources
 
 - Gupta and Pruthi 2025

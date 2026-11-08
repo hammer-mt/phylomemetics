@@ -50,6 +50,10 @@ A headline holds too few units for pair statistics to mean much. Novelty is not 
 
 Arms also vary the image, so compared arms must share it; usable tests fall from 17,700 to about 9,000. Switched from winner-picking accuracy to within-test click odds for power. Added single units as a baseline that pairs must beat. Remaining: the effect is probably tiny.
 
+## Overlaps with
+
+Asks nearly the same question as CJ-21, which the judges would run instead.
+
 ## Sources
 
 - Matias et al. 2021 (Upworthy Research Archive)

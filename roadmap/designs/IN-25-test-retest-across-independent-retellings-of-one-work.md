@@ -1,6 +1,6 @@
 # IN-25: Test-retest across independent retellings of one work
 
-**Area:** The instrument · **Status:** design registered 8 November 2026, not run · **Priority:** 4.0 of 5
+**Area:** The instrument · **Status:** design registered 8 November 2026, not run · **Priority:** 4.6 of 5
 
 ## Question
 
@@ -49,6 +49,14 @@ The second summary is machine-translated, so register differs as well as content
 ## Reviewer note
 
 Dataset confirmed (download live, CC BY-SA 4.0). Its most common summary length is three sentences, so sampling now requires 20 or more. Added the dataset's own translation filter. Main statistic changed from rare binary presence to the continuous reading. Translation style stays mixed with retelling.
+
+## Cross-area ranking
+
+In the top twelve of 2 of 3 judges (what decides the premises fastest: rank 7; speed and cost: rank 5). A one-day reliability figure (do two independent summaries of one story give the same reading) that caps every later validity number and says whether the Batman grid measured works or Wikipedia summaries.
+
+## Overlaps with
+
+Asks nearly the same question as UN-22, which the judges would run instead.
 
 ## Sources
 

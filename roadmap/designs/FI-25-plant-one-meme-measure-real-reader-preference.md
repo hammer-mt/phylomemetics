@@ -50,6 +50,10 @@ One sentence may be too small a dose. How well a meme fits a premise may matter 
 
 Replaced the neutral-filler comparison (any eventful sentence beats filler) with meme-against-meme choices and added a reliability gate. Corrected the meme list: 34 memes, 10 neutral, not 30 and 6. Remaining weakness: 34 memes cannot rank forecasters, and units may not fire on plants written without the usual words.
 
+## Cross-area ranking
+
+In the top twelve of 1 of 3 judges (upside: rank 11). Paying real readers to choose between stories that differ in one planted idea gives the first causal appeal scores for ideas and not packaging, valuable even if an LLM forecasts them better than units do.
+
 ## Sources
 
 - Hewitt et al. 2024 (published as Ashokkumar et al. 2026)

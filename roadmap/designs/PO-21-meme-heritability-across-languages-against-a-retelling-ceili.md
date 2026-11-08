@@ -1,6 +1,6 @@
 # PO-21: Meme heritability across languages, against a retelling ceiling
 
-**Area:** Population memetics · **Status:** design registered 8 November 2026, not run · **Priority:** 4.5 of 5
+**Area:** Population memetics · **Status:** design registered 8 November 2026, not run · **Priority:** 4.4 of 5
 
 ## Question
 
@@ -49,6 +49,14 @@ Genre-typical content that recurs without descent counts as inherited unless the
 ## Reviewer note
 
 The index rewarded unreliable features (small denominator): every class now passes a repeatability screen first. Swapped self-scouted Wikipedias for a ready, name-masked five-language dataset; pair count checked (1,363). Remaining: how tightly the floor is genre-matched decides how much 'heritability' is convergence.
+
+## Cross-area ranking
+
+In the top twelve of 1 of 3 judges (what decides the premises fastest: rank 12). Reruns the one robust Batman result, heredity, across languages on ready-made name-masked data with a same-story ceiling, so a tie with translated words would finally be informative instead of ambiguous.
+
+## Overlaps with
+
+Asks nearly the same question as LI-22, which the judges would run instead.
 
 ## Sources
 

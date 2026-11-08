@@ -50,6 +50,10 @@ In small 4-bit models the gap between no effect and gibberish is narrow, so many
 
 Replaced the invented 5% null with a shuffled-label null, fixed one dose per unit on tuning openings, and fixed ban lists in advance. Remaining weakness: the file tags only 13 of the 31 labels as tropes; 8 are characters, which can hardly pass the ban.
 
+## Cross-area ranking
+
+In the top twelve of 3 of 3 judges (what decides the premises fastest: rank 4; speed and cost: rank 2; upside: rank 1). Steering is the test the source essay treats as decisive and the project has never run; in two days it separates units that carry an idea from units that only emit their words, though a blanket fail may be a dose problem in 4-bit models and not a refutation.
+
 ## Sources
 
 - Kran Research 2026, Evil Qwen replication (blog.kran.ai/evil-qwen)

@@ -50,6 +50,10 @@ LLM-written pairs carry a style cue, so units or embeddings may win on style. Se
 
 Raised development pairs from 20 to 40 with a two-stage pick: with 20, about one of 884,736 units wins every pair by chance. Added a cross-concept null, a primary model and a pooled AUC. It is the cheap sentence-level cousin of the unrun planted-story plan. Style cues remain.
 
+## Cross-area ranking
+
+In the top twelve of 3 of 3 judges (what decides the premises fastest: rank 1; speed and cost: rank 3; upside: rank 2). The cheapest direct test of the claim everything else rests on: for 30 concepts, does a frozen neuron follow the idea when its usual words are gone and stay quiet when only the words are there; a fail is as usable as a pass, and its items and unit list feed at least six later designs.
+
 ## Sources
 
 - Borsboom et al. 2004

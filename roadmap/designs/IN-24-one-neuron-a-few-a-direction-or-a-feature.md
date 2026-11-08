@@ -1,6 +1,6 @@
 # IN-24: One neuron, a few, a direction or a feature?
 
-**Area:** The instrument · **Status:** design registered 8 November 2026, not run · **Priority:** 3.5 of 5
+**Area:** The instrument · **Status:** design registered 8 November 2026, not run · **Priority:** 4.0 of 5
 
 ## Question
 
@@ -49,6 +49,10 @@ With about 100 development sentences per concept, larger sets are chosen noisily
 ## Reviewer note
 
 Per-concept AUC on 20 against 20 items has an error near 0.08, so 'within 0.05' is now a pooled claim. Fitted probes on 100 sentences would overfit; replaced by unweighted top-k averages. Comparison moved to the base model the dictionaries were trained on. Depends on IN21.
+
+## Cross-area ranking
+
+In the top twelve of 1 of 3 judges (what decides the premises fastest: rank 5). Decides whether the unit should be one neuron, a small set or a direction before the other registered designs freeze the wrong one, and its cheap arms need only IN-21's sentences.
 
 ## Sources
 

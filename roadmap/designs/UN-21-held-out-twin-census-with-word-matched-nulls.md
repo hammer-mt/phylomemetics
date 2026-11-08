@@ -1,6 +1,6 @@
 # UN-21: Held-out twin census with word-matched nulls
 
-**Area:** Across models · **Status:** design registered 8 November 2026, not run · **Priority:** 5.0 of 5
+**Area:** Across models · **Status:** design registered 8 November 2026, not run · **Priority:** 4.8 of 5
 
 ## Question
 
@@ -49,6 +49,10 @@ The pass share moves with the 0.5 threshold, which Gurnee et al. say has no prin
 ## Reviewer note
 
 Added sentence length and plot position to the controls (shared position detectors would otherwise pass as beyond-word twins), an all-word control, and a leak check on known word detectors. The name-masked copy does not exist yet. Remaining weakness: rare synonyms can slip past any word control.
+
+## Cross-area ranking
+
+In the top twelve of 2 of 3 judges (what decides the premises fastest: rank 2; speed and cost: rank 1). Settles neuron-level P2 on unseen text with data already committed and no API spend: either a counted list of shared units that survive word, length and position controls, or proof that twins are vocabulary and P2 has to be restated as mapped directions.
 
 ## Sources
 

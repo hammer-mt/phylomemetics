@@ -1,6 +1,6 @@
 # IN-22: Are 8B 4-bit neurons cleaner than random directions?
 
-**Area:** The instrument · **Status:** design registered 8 November 2026, not run · **Priority:** 4.5 of 5
+**Area:** The instrument · **Status:** design registered 8 November 2026, not run · **Priority:** 3.5 of 5
 
 ## Question
 
@@ -49,6 +49,10 @@ Coherence is not concept detection: name and token detectors pass. Ten million t
 ## Reviewer note
 
 Replaced the five-way intruder test: with four unit sentences a two-job mixture still has an obvious odd one out, so the mixture control could not fail. Triplets fix that. The word-overlap picker is now a falsifier. Remaining: an LLM grader, and coherence rewards word detectors.
+
+## Cross-area ranking
+
+3 of 3 judges thought the area reviewer rated this too high.
 
 ## Sources
 

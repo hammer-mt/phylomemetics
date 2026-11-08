@@ -19,6 +19,7 @@ Any change to the paper goes into a new version folder, `study/paper/v2/`. Start
 - `study/`: the Batman paper and everything that produced it. Run its commands from `study/` with `../.venv/bin/python`.
 - `images/`: the exploratory image side experiment. It is not part of the paper.
 - `preregistration/`: the planned next experiments. They are not run; read `preregistration/README.md` before resuming.
+- `roadmap/`: the state of play and the registry of designs for later experiments. None is run. Edit its JSON files, then run `python3 roadmap/build.py` to regenerate the Markdown and the map page.
 
 ## Other standing instructions
 

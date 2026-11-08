@@ -1,6 +1,6 @@
 # UN-23: Carrying a reading from Qwen into Llama's catalogue
 
-**Area:** Across models · **Status:** design registered 8 November 2026, not run · **Priority:** 4.0 of 5
+**Area:** Across models · **Status:** design registered 8 November 2026, not run · **Priority:** 4.6 of 5
 
 ## Question
 
@@ -49,6 +49,10 @@ Tale types share key nouns (hare, slipper), so TF-IDF may sit near the ceiling a
 ## Reviewer note
 
 Rebuilt as retrieval. Picking a detector from 900,000 units on four tellings would overfit, as the study's Qwen revenge unit did; now no unit is chosen on tale labels. Counts confirmed from the file. Remaining: labels come from one folklorist, and tale types may be too lexical.
+
+## Cross-area ranking
+
+In the top twelve of 2 of 3 judges (what decides the premises fastest: rank 9; speed and cost: rank 6). Tests P2 in the only form the literature supports, a map fitted on paired text instead of one-to-one twins, in a day or two, and says whether one catalogue can be shared or each model needs its own.
 
 ## Sources
 

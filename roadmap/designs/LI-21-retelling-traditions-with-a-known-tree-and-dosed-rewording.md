@@ -1,6 +1,6 @@
 # LI-21: Retelling traditions with a known tree and dosed rewording
 
-**Area:** Lineage · **Status:** design registered 8 November 2026, not run · **Priority:** 4.5 of 5
+**Area:** Lineage · **Status:** design registered 8 November 2026, not run · **Priority:** 4.0 of 5
 
 ## Question
 

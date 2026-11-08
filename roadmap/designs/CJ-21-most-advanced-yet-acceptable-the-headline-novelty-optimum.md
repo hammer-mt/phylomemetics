@@ -1,6 +1,6 @@
 # CJ-21: Most advanced yet acceptable: the headline novelty optimum
 
-**Area:** Field conjectures · **Status:** design registered 8 November 2026, not run · **Priority:** 4.5 of 5
+**Area:** Field conjectures · **Status:** design registered 8 November 2026, not run · **Priority:** 4.4 of 5
 
 ## Question
 
@@ -49,6 +49,10 @@ Arms of one test share a story, so their novelty may differ too little to trace 
 ## Reviewer note
 
 Replaced the within-month date shuffle, which barely moves a 90-day window, with a misplaced-window null; added headline length, the fault flag, the image rule and an estimated usable sample. Remaining weakness: novelty may vary little within a test. Prior-work check was arXiv only (nothing found); web search was unavailable.
+
+## Cross-area ranking
+
+In the top twelve of 1 of 3 judges (speed and cost: rank 9). It rides on FI-21's pass and gives a causal answer on whether moderately new headlines win, which stands whichever measure does best.
 
 ## Sources
 

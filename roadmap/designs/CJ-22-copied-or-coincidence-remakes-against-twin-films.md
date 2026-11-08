@@ -50,6 +50,10 @@ Twin films are often not independent: studios race from leaked scripts, so some 
 
 Counted the list: 149 rows, about 110 after a keyword screen for shared sources, not 150. Added cross-language plots against copied wording, a named matching measure and a memory guard for the LLM judge. Remaining weakness: about 90 twin pairs can resolve only a 0.10 neuron-over-word gap.
 
+## Cross-area ranking
+
+In the top twelve of 1 of 3 judges (upside: rank 8). Remakes against twin films is the one design that tries to tell 'copied' from 'merely similar', the gap in every influence claim, and it is a few days of work on real films.
+
 ## Sources
 
 - Claidière, Scott-Phillips and Sperber 2014

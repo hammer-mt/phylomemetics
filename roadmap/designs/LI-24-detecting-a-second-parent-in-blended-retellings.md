@@ -50,6 +50,10 @@ Blends built inside one tale may be too easy or too hard for every method and sa
 
 Rebuilt. The Wikidata sample cannot work: of 341 two-source films, 131 have one source based on the other, 76 share a series and at most 39 are real blends. Now uses built two-parent texts in LI21, with the films as a descriptive check. Remains: depends on LI21; blends are artificial.
 
+## Overlaps with
+
+Asks nearly the same question as RX-27, which the judges would run instead.
+
 ## Sources
 
 - Roos and Heikkilä 2009

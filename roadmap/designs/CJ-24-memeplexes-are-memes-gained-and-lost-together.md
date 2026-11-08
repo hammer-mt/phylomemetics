@@ -50,6 +50,10 @@ Co-change may still reflect settings: drop the courtroom and every courtroom uni
 
 Units that co-occur will also seem to change together between any two films, so the shuffle null was too easy. Added matched unlinked pairs as the comparison and a different-sentence rule against one-scene bundles. Remaining weakness: adaptation summaries may be written from the source's summary.
 
+## Overlaps with
+
+Asks nearly the same question as PO-24, which the judges would run instead.
+
 ## Sources
 
 - Blackmore 1999 (The Meme Machine)

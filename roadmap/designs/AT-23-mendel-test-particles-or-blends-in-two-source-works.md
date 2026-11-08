@@ -50,6 +50,10 @@ A plot summary either mentions an event or does not, so particles may reflect ho
 
 Changed: the 1,620 count includes non-stories and 458 chains, now stated and split; all bases are pooled alike, because reading the strongest sentences makes units look particulate by construction; the reader's graded rating now decides. Remaining: one generation cannot separate blending from particles with partial dominance (see the two-generation seed).
 
+## Overlaps with
+
+Asks nearly the same question as CE-23, which the judges would run instead.
+
 ## Sources
 
 - Wikidata property P144 (based on)

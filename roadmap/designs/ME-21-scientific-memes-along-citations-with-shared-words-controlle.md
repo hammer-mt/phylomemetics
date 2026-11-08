@@ -1,6 +1,6 @@
 # ME-21: Scientific memes along citations, with shared words controlled
 
-**Area:** Old memetics, re-run · **Status:** design registered 8 November 2026, not run · **Priority:** 4.5 of 5
+**Area:** Old memetics, re-run · **Status:** design registered 8 November 2026, not run · **Priority:** 3.5 of 5
 
 ## Question
 
@@ -49,6 +49,10 @@ A citation is weak evidence that an idea was inherited; most references are back
 ## Reviewer note
 
 Added a closed, key-free corpus (cit-HepTh) so Kuhn's score can be re-derived; split by paper, dropped shared-author pairs, added random-unit and co-cited-decoy checks. Remaining: a citation is weak evidence of inheritance, and embeddings trained on citation pairs will probably beat units.
+
+## Cross-area ranking
+
+2 of 3 judges thought the area reviewer rated this too high.
 
 ## Sources
 

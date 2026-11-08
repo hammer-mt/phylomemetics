@@ -1,6 +1,6 @@
 # CE-23: Are meme units particles or thresholded continua?
 
-**Area:** Cultural evolution, re-run · **Status:** design registered 8 November 2026, not run · **Priority:** 4.5 of 5
+**Area:** Cultural evolution, re-run · **Status:** design registered 8 November 2026, not run · **Priority:** 4.0 of 5
 
 ## Question
 

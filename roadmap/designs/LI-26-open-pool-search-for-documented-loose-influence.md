@@ -50,6 +50,10 @@ Wikidata's 'inspired by' links are sparse, favour famous works and often record 
 
 Changed: fame-only rival added; decoys are random films and documented sources, since over half the committed culture pool is Batman-like genres; the 1% threshold is restated as a 30-work shortlist; minimum cut to 150 pairs. Remains: 'inspired by' links are declared and sparse, so undeclared influence stays unvalidated.
 
+## Overlaps with
+
+Asks nearly the same question as RX-22, which the judges would run instead.
+
 ## Sources
 
 - Wikidata query service counts, 2026-11-08

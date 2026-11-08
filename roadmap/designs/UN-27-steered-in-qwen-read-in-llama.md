@@ -50,6 +50,10 @@ Units that read a concept often do not write it, and raising a single unit in a 
 
 Added: no design in the area had a causal check, and this seed was the only one with ground truth set by intervention. Remaining weakness: single-unit steering may fail on most units, and steering transfer between models by learned maps is already reported (Agarwal 2026), though not this reading test.
 
+## Cross-area ranking
+
+In the top twelve of 1 of 3 judges (speed and cost: rank 11). Once UN-21's unit list and EN-21's hook exist it costs about five hours of generation and is the only causal test of agreement between the two models.
+
 ## Sources
 
 - Cammarata 2026

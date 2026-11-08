@@ -50,6 +50,10 @@ Box office coverage may cut the sample below 200 series. A sequel continues its 
 
 Recount: 317 to 539 series by definition, 137 with Wikidata box office, 40% only three films long, so the claimed 80% power at 0.10 was optimistic. Added equal-length plots, a series cap and an inconclusive zone. Remaining weakness: box office needs infobox parsing, and story continuity limits choice.
 
+## Overlaps with
+
+Asks nearly the same question as FI-28, which the judges would run instead.
+
 ## Sources
 
 - study/results/experiments.json (E3: rho 0.25 and 0.00, n = 15, power 0.27)

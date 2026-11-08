@@ -16,5 +16,12 @@
   "Whether any human agrees with the labels. Every labeller, judge and reviewer so far was an AI.",
   "Everything about selection, forecasting, editing and practical use. One underpowered test is all there is."
  ],
- "next": []
+ "next": [
+  "IN-29, UN-21 and IN-21: about a week on the laptop. A one-day check that 4-bit readings match full precision. A held-out count of twin neurons between Qwen and Llama on the 1,000 film plots already in the repository. Minimal pairs for 30 story concepts, with decoys that use the words without the idea.",
+  "EN-21 and CE-21: three or four days. Push the 31 named units while the model writes and see whether blind judges get the label back. Test units against human coders of what people kept when retelling a story.",
+  "IN-24 and UN-23. Is a meme one neuron, a few neurons or a direction? Does a map fitted on paired text carry a reading from Qwen to Llama?",
+  "IN-25 and UN-22, on one download. Do two summaries of the same story give the same reading, and does the reading survive a change of language?",
+  "RX-27: about three days. The first use test. Name a known source after deep rewording, against look-alike decoys. A pass opens the family-tree designs RX-22 and LI-22.",
+  "Before any of it, write down which results would move the unit from single neurons to small sets or directions. Start no lineage, forecasting or product design until a frozen unit has beaten sentence embeddings and an LLM reader on text where the words are controlled."
+ ]
 }

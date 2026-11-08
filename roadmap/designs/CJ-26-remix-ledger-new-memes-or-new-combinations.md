@@ -50,6 +50,10 @@ M. About 6 hours of forward passes per model for the corpus, a day of local gene
 
 Units chosen on pre-1950 films could never be new, and a fixed list is all seen within a few hundred films, so the hypothesis passed by construction. Units now come from all years and 'new' means rare before. Remix licence corrected to share-alike. Remaining weakness: the closed unit list.
 
+## Overlaps with
+
+Asks nearly the same question as RX-21, which the judges would run instead.
+
 ## Sources
 
 - Ferguson, Everything is a Remix (video series)

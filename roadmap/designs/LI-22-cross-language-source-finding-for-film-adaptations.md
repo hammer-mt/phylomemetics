@@ -1,6 +1,6 @@
 # LI-22: Cross-language source finding for film adaptations
 
-**Area:** Lineage · **Status:** design registered 8 November 2026, not run · **Priority:** 4.5 of 5
+**Area:** Lineage · **Status:** design registered 8 November 2026, not run · **Priority:** 4.4 of 5
 
 ## Question
 
@@ -49,6 +49,14 @@ Multilingual embeddings win easily and neurons trail even translate-then-match; 
 ## Reviewer note
 
 German and French counts confirmed. Added story-emb and neurons-on-translation as rivals, per-language thresholds, a same-author decoy ban, one film per source and a reuse audit. Remains: plot coverage unknown (a tiny sample found long German and short French plots); translation is itself a neural reader; famous pairs are memorised.
+
+## Cross-area ranking
+
+In the top twelve of 1 of 3 judges (upside: rank 6). A family tree across a language border on 400 real adaptations is the strongest possible form of the Batman heredity result, although neurons beating translate-then-match is perhaps a one-in-four chance.
+
+## Overlaps with
+
+Asks nearly the same question as PO-21, which the judges would run instead.
 
 ## Sources
 

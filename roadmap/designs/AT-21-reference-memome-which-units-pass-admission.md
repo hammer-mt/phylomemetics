@@ -1,6 +1,6 @@
 # AT-21: Reference memome: which units pass admission?
 
-**Area:** The atlas · **Status:** design registered 8 November 2026, not run · **Priority:** 4.5 of 5
+**Area:** The atlas · **Status:** design registered 8 November 2026, not run · **Priority:** 4.4 of 5
 
 ## Question
 
@@ -49,6 +49,14 @@ Passages written by language models share house styles, so a unit can learn a wr
 ## Reviewer note
 
 Changed: motifs come from sources checked to exist and tied to real tales; motif-absent passages are twins; a hidden-state comparison joined the falsifier. Remaining: every admission passage is machine-written, so AT-27 must follow. IN21 is the natural pilot. The TiMoS download was not re-checked.
+
+## Cross-area ranking
+
+In the top twelve of 1 of 3 judges (upside: rank 9). A public catalogue of meme units with measured hit and false-alarm rates for 150 human-named motifs would be the lasting, citable asset of the programme; run it only after IN-21 shows the yield is not zero.
+
+## Overlaps with
+
+Asks nearly the same question as IN-21, which the judges would run instead.
 
 ## Sources
 

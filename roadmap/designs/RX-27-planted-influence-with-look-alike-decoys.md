@@ -1,6 +1,6 @@
 # RX-27: Planted influence with look-alike decoys
 
-**Area:** Remix and influence · **Status:** design registered 8 November 2026, not run · **Priority:** 4.5 of 5
+**Area:** Remix and influence · **Status:** design registered 8 November 2026, not run · **Priority:** 4.6 of 5
 
 ## Question
 
@@ -49,6 +49,10 @@ Reader neurons may detect LLM writing habits instead of content; a small human-w
 ## Reviewer note
 
 Added by the reviewer, promoted from the planted-influence seed: the area had no design where influence is known by construction. Weakness: writers and readers are both language models, so a human-written arm is needed before a pass is trusted.
+
+## Cross-area ranking
+
+In the top twelve of 3 of 3 judges (what decides the premises fastest: rank 11; speed and cost: rank 12; upside: rank 5). Three days buy the first source-tracing test where the true source is known by construction and the wording is removed on purpose, so a loss to story embeddings or the LLM judge closes the influence use and a win opens it.
 
 ## Sources
 

@@ -447,7 +447,7 @@
    "id": "IN-05",
    "region": "instrument",
    "status": "planned",
-   "priority": 4.0,
+   "priority": 3.5,
    "title": "Planted memes: neurons against keywords",
    "question": "When a meme is written into a story without its usual words, do neurons detect it better than a keyword analyst or a word classifier?",
    "hypothesis": "H1 of the pre-registration: neurons beat both word rivals by at least 0.05 AUC on reworded stories.",
@@ -462,7 +462,9 @@
    "sources": [
     "preregistration/PREREGISTRATION.md (H1)",
     "preregistration/history/power_v4.json"
-   ]
+   ],
+   "ranking": "2 of 3 judges thought the area reviewer rated this too high.",
+   "overlaps": "Asks nearly the same question as AT-21, IN-21, which the judges would run instead."
   },
   {
    "id": "IN-06",
@@ -503,7 +505,8 @@
    "sources": [
     "preregistration/PREREGISTRATION.md (H3)",
     "preregistration/dev_units.json"
-   ]
+   ],
+   "overlaps": "Asks nearly the same question as IN-21, which the judges would run instead."
   },
   {
    "id": "IN-08",
@@ -522,7 +525,8 @@
    "cost": "L: shares the planted-story run",
    "sources": [
     "preregistration/PREREGISTRATION.md (T2 family)"
-   ]
+   ],
+   "overlaps": "Asks nearly the same question as IN-24, which the judges would run instead."
   },
   {
    "id": "IN-09",
@@ -561,13 +565,14 @@
    "risk": "AI annotators recognise masked works and label from memory. Needs human annotators to mean much.",
    "sources": [
     "preregistration/annotation_protocol.md"
-   ]
+   ],
+   "overlaps": "Asks nearly the same question as IN-26, which the judges would run instead."
   },
   {
    "id": "UN-05",
    "region": "universality",
    "status": "planned",
-   "priority": 4.3,
+   "priority": 4.0,
    "title": "Heredity across languages",
    "question": "Do neurons still find the source comic when the adaptation's summary is in Chinese and the comic's is in English?",
    "hypothesis": "Neurons recover sources across languages where word overlap cannot.",
@@ -581,7 +586,8 @@
    "risk": "Chinese is not a supported Llama 3.1 language; translators may bring back the canonical names.",
    "sources": [
     "preregistration/translation_protocol.md"
-   ]
+   ],
+   "overlaps": "Asks nearly the same question as LI-22, PO-21, UN-22, which the judges would run instead."
   },
   {
    "id": "UN-06",
@@ -601,13 +607,14 @@
    "sources": [
     "preregistration/analysis.py (run_t5)",
     "preregistration/dev_units.json"
-   ]
+   ],
+   "overlaps": "Asks nearly the same question as UN-21, which the judges would run instead."
   },
   {
    "id": "LI-05",
    "region": "lineage",
    "status": "planned",
-   "priority": 4.3,
+   "priority": 4.0,
    "title": "The vocabulary drift ladder",
    "question": "As more of an adaptation's content words are replaced, how long does each method still find its source?",
    "hypothesis": "H4: neurons keep finding the source at 50 to 100% replacement where TF-IDF and LSA lose it.",
@@ -622,7 +629,8 @@
    "sources": [
     "preregistration/drift_protocol.md",
     "preregistration/history/power_v2.json"
-   ]
+   ],
+   "overlaps": "Asks nearly the same question as LI-21, RX-27, which the judges would run instead."
   },
   {
    "id": "LI-06",
@@ -642,7 +650,8 @@
    "risk": "Ground truth is weaker than it looks: 27 of 83 loose films rested on a Wikipedia category; Romeo and Juliet dominates. Power 0.17.",
    "sources": [
     "preregistration/works_shakespeare.json"
-   ]
+   ],
+   "overlaps": "Asks nearly the same question as LI-25, which the judges would run instead."
   },
   {
    "id": "RX-01",
@@ -684,7 +693,8 @@
    "sources": [
     "preregistration/works_batman_extended.json",
     "preregistration/analysis.py (run_t4)"
-   ]
+   ],
+   "overlaps": "Asks nearly the same question as PO-23, which the judges would run instead."
   },
   {
    "id": "US-01",
@@ -704,7 +714,8 @@
    "sources": [
     "preregistration/PREREGISTRATION.md (H6)",
     "preregistration/sources/neuron_timing_qwen3-8b.json"
-   ]
+   ],
+   "overlaps": "Asks nearly the same question as US-24, which the judges would run instead."
   },
   {
    "id": "US-02",
@@ -724,7 +735,8 @@
    "risk": "Invented code words are not real evasive language. No real-world corpus is in the plan.",
    "sources": [
     "preregistration/PREREGISTRATION.md (S-coded)"
-   ]
+   ],
+   "overlaps": "Asks nearly the same question as US-22, which the judges would run instead."
   },
   {
    "id": "IN-21",
@@ -749,7 +761,8 @@
     "preregistration/planted_story_protocol.md"
    ],
    "region": "instrument",
-   "status": "registered"
+   "status": "registered",
+   "ranking": "In the top twelve of 3 of 3 judges (what decides the premises fastest: rank 1; speed and cost: rank 3; upside: rank 2). The cheapest direct test of the claim everything else rests on: for 30 concepts, does a frozen neuron follow the idea when its usual words are gone and stay quiet when only the words are there; a fail is as usable as a pass, and its items and unit list feed at least six later designs."
   },
   {
    "id": "IN-22",
@@ -766,7 +779,7 @@
    "payoff": "The first cleanliness figure for 8B 4-bit models, by layer, with a noise floor and a sensitivity check that the source essay lacked and its outside retest failed.",
    "risk": "Coherence is not concept detection: name and token detectors pass. Ten million tokens may not reach many neurons' strong regime, so the 20 strongest sentences are partly weak firings.",
    "review": "Replaced the five-way intruder test: with four unit sentences a two-job mixture still has an obvious odd one out, so the mixture control could not fail. Triplets fix that. The word-overlap picker is now a falsifier. Remaining: an LLM grader, and coherence rewards word detectors.",
-   "priority": 4.5,
+   "priority": 3.5,
    "sources": [
     "Cammarata 2026",
     "IRSI 2026 retest note",
@@ -774,7 +787,8 @@
     "Heap et al. 2025 (arXiv:2501.17727)"
    ],
    "region": "instrument",
-   "status": "registered"
+   "status": "registered",
+   "ranking": "3 of 3 judges thought the area reviewer rated this too high."
   },
   {
    "id": "IN-23",
@@ -799,7 +813,8 @@
     "study/discover.py (presence rule)"
    ],
    "region": "instrument",
-   "status": "registered"
+   "status": "registered",
+   "ranking": "In the top twelve of 1 of 3 judges (what decides the premises fastest: rank 10). Checks whether the study's presence calls sit in the strong range the source essay vouches for, which fixes the presence rule that every document-level design inherits."
   },
   {
    "id": "IN-24",
@@ -816,7 +831,7 @@
    "payoff": "An accuracy-against-size curve per unit type and a decision on which unit the rest of the registry should freeze.",
    "risk": "With about 100 development sentences per concept, larger sets are chosen noisily, which flatters single neurons. The dictionaries may reconstruct the 8-bit model poorly; report explained variance first.",
    "review": "Per-concept AUC on 20 against 20 items has an error near 0.08, so 'within 0.05' is now a pooled claim. Fitted probes on 100 sentences would overfit; replaced by unweighted top-k averages. Comparison moved to the base model the dictionaries were trained on. Depends on IN21.",
-   "priority": 3.5,
+   "priority": 4.0,
    "sources": [
     "Gurnee et al. 2023",
     "Arora et al. 2026",
@@ -824,7 +839,8 @@
     "Wu et al. 2025 (AxBench)"
    ],
    "region": "instrument",
-   "status": "registered"
+   "status": "registered",
+   "ranking": "In the top twelve of 1 of 3 judges (what decides the premises fastest: rank 5). Decides whether the unit should be one neuron, a small set or a direction before the other registered designs freeze the wrong one, and its cheap arms need only IN-21's sentences."
   },
   {
    "id": "IN-25",
@@ -841,7 +857,7 @@
    "payoff": "A reliability coefficient per unit class, and the correction needed to interpret every later correlation.",
    "risk": "The second summary is machine-translated, so register differs as well as content; and the dataset paper found 13 of 100 German-English pairs were direct translations, which the similarity filter only partly removes.",
    "review": "Dataset confirmed (download live, CC BY-SA 4.0). Its most common summary length is three sentences, so sampling now requires 20 or more. Added the dataset's own translation filter. Main statistic changed from rare binary presence to the continuous reading. Translation style stays mixed with retelling.",
-   "priority": 4.0,
+   "priority": 4.6,
    "sources": [
     "Hatzel and Biemann 2024 (Tell Me Again)",
     "Koo and Li 2016",
@@ -849,7 +865,9 @@
     "Hatzel and Biemann 2024 (Story Embeddings)"
    ],
    "region": "instrument",
-   "status": "registered"
+   "status": "registered",
+   "ranking": "In the top twelve of 2 of 3 judges (what decides the premises fastest: rank 7; speed and cost: rank 5). A one-day reliability figure (do two independent summaries of one story give the same reading) that caps every later validity number and says whether the Batman grid measured works or Wikipedia summaries.",
+   "overlaps": "Asks nearly the same question as UN-22, which the judges would run instead."
   },
   {
    "id": "IN-26",
@@ -891,7 +909,7 @@
    "payoff": "A length-corrected reading rule and a list of formatting choices to fix in every later extraction.",
    "risk": "Filler from film summaries contains motifs of its own, inflating the false-fire rate; 34 independent filler films limit how precisely a 5% rate can be told from 3%.",
    "review": "The filler films also set the presence bar, which fixes the false-fire rate by construction; the films are now split. Matched controls added so 'motif share' is defined per unit. 50 sentences cut to 30, the most one film summary allows. Needs IN21 first.",
-   "priority": 3.5,
+   "priority": 4.0,
    "sources": [
     "Putnick and Bornstein 2016",
     "Koo and Li 2016",
@@ -899,7 +917,8 @@
     "Cammarata 2026"
    ],
    "region": "instrument",
-   "status": "registered"
+   "status": "registered",
+   "ranking": "2 of 3 judges thought the area reviewer rated this too low."
   },
   {
    "id": "IN-28",
@@ -941,7 +960,7 @@
    "payoff": "A stated precision limit for the instrument, and permission (or not) to reuse public neuron labels and dictionaries.",
    "risk": "Likely an uneventful pass: Singh and Sajjad found no drastic neuron-level change from 4-bit quantisation in other models, though they did not track individual units' strongest examples.",
    "review": "Promoted from a seed: it is cheap, and IN24 and any reuse of full-precision labels depend on it. All six builds confirmed on Hugging Face. Weakness: covers MLX quantisation only, and prior work points to a pass, so it is informative mainly if it fails.",
-   "priority": 4.0,
+   "priority": 4.5,
    "sources": [
     "Singh and Sajjad 2025 (arXiv:2508.16785)",
     "Cammarata 2026",
@@ -949,7 +968,8 @@
     "Choi et al. 2024 (Transluce)"
    ],
    "region": "instrument",
-   "status": "registered"
+   "status": "registered",
+   "ranking": "In the top twelve of 2 of 3 judges (what decides the premises fastest: rank 8; speed and cost: rank 7). A one-day gate that will probably pass, but if 4-bit readings do not match 8-bit or full precision then every number so far belongs to one quantised file and no published labels or dictionaries can be borrowed."
   },
   {
    "id": "IN-30",
@@ -1063,7 +1083,7 @@
    "payoff": "The first cross-family neuron census on 8B models, with held-out numbers to replace the in-sample 0.82 and 0.40 (`nulls.json`, `phylo.json.gz`), and a list of beyond-word shared units that every later cross-model design reuses. The study's 125 labelled units and 27 concept units are scored as fixed subgroups.",
    "risk": "The pass share moves with the 0.5 threshold, which Gurnee et al. say has no principled value, so the whole curve is reported. A word control fitted on 11,000 sentences can miss rare synonyms and inflate the beyond-word share; known single-word detectors (best-word correlation 0.9 or more) should fail the test, and their pass rate measures that leak.",
    "review": "Added sentence length and plot position to the controls (shared position detectors would otherwise pass as beyond-word twins), an all-word control, and a leak check on known word detectors. The name-masked copy does not exist yet. Remaining weakness: rare synonyms can slip past any word control.",
-   "priority": 5.0,
+   "priority": 4.8,
    "sources": [
     "Gurnee et al. 2024",
     "Gröger, Wen and Brbić 2026",
@@ -1071,7 +1091,8 @@
     "preregistration T5 (S20), which this supersedes"
    ],
    "region": "universality",
-   "status": "registered"
+   "status": "registered",
+   "ranking": "In the top twelve of 2 of 3 judges (what decides the premises fastest: rank 2; speed and cost: rank 1). Settles neuron-level P2 on unseen text with data already committed and no API spend: either a counted list of shared units that survive word, length and position controls, or proof that twins are vocabulary and P2 has to be restated as mapped directions."
   },
   {
    "id": "UN-22",
@@ -1088,7 +1109,7 @@
    "payoff": "An answer to Mike's fuzziness question at story scale: retelling, translation and name removal are separated in one natural corpus of thousands of stories instead of 32 works. French, Italian and Spanish repeat the German result.",
    "risk": "Both models have read these pages in every language and may simply recognise the film, so stories neither model can name are scored separately. Language editions tell different parts of a story. Leftover names, numbers and cognates (words with a shared root) can leak, and translation errors can hide signal.",
    "review": "Defined the unit choice, replaced the dependence on UN21 twins with a fitted map, fixed an impossible gallery and added a recognition check. Dataset confirmed. Remaining: the supplied name-replaced texts are probably English only, and language-general middle layers within one model are already reported (Anthropic 2025).",
-   "priority": 4.5,
+   "priority": 5.0,
    "sources": [
     "Hatzel and Biemann 2024 (Tell Me Again, LREC-COLING)",
     "Wendler et al. 2024",
@@ -1096,7 +1117,8 @@
     "preregistration/translation_protocol.md"
    ],
    "region": "universality",
-   "status": "registered"
+   "status": "registered",
+   "ranking": "In the top twelve of 3 of 3 judges (what decides the premises fastest: rank 6; speed and cost: rank 10; upside: rank 3). Translation strips shared wording from thousands of human-written summaries, so one run tests both premises where neither names nor words can carry the signal, and it includes the fitted map between models that the project has never tried."
   },
   {
    "id": "UN-23",
@@ -1113,7 +1135,7 @@
    "payoff": "How much of a reading survives a change of model, for each kind of map, and whether a meme travels as one neuron, a few neurons or a direction. Readings of texts that cannot be redistributed could then be shared and used with another model.",
    "risk": "Tale types share key nouns (hare, slipper), so TF-IDF may sit near the ceiling and leave the maps little room to differ. A film-fitted map may fail on nineteenth-century folktale prose because the text differs, not the models; a map fitted on development tales measures that. Both models have probably read these tales.",
    "review": "Rebuilt as retrieval. Picking a detector from 900,000 units on four tellings would overfit, as the study's Qwen revenge unit did; now no unit is chosen on tale labels. Counts confirmed from the file. Remaining: labels come from one folklorist, and tale types may be too lexical.",
-   "priority": 4.0,
+   "priority": 4.6,
    "sources": [
     "Hagedorn and Darányi 2022 (Zenodo 6575263)",
     "Chen et al. 2025 (model stitching)",
@@ -1121,7 +1143,8 @@
     "Oozeer et al. 2025"
    ],
    "region": "universality",
-   "status": "registered"
+   "status": "registered",
+   "ranking": "In the top twelve of 2 of 3 judges (what decides the premises fastest: rank 9; speed and cost: rank 6). Tests P2 in the only form the literature supports, a map fitted on paired text instead of one-to-one twins, in a day or two, and says whether one catalogue can be shared or each model needs its own."
   },
   {
    "id": "UN-24",
@@ -1146,7 +1169,8 @@
     "study/results/robustness/nulls.json"
    ],
    "region": "universality",
-   "status": "registered"
+   "status": "registered",
+   "overlaps": "Asks nearly the same question as IN-29, which the judges would run instead."
   },
   {
    "id": "UN-25",
@@ -1221,7 +1245,8 @@
     "study/extract.py"
    ],
    "region": "universality",
-   "status": "registered"
+   "status": "registered",
+   "ranking": "In the top twelve of 1 of 3 judges (speed and cost: rank 11). Once UN-21's unit list and EN-21's hook exist it costs about five hours of generation and is the only causal test of agreement between the two models."
   },
   {
    "id": "UN-S1",
@@ -1319,7 +1344,7 @@
    "payoff": "The first citable list of meme units with measured sensitivity and false-fire rates, from which later experiments draw frozen units. It also sizes the memome: how many of 150 human-named motifs one neuron, a small set, or no unit can read.",
    "risk": "Passages written by language models share house styles, so a unit can learn a writer's habit for one cell and pass. A second writer family for test passages and the human audit reduce this; they do not remove it. AT-27 then checks the entries on real tales.",
    "review": "Changed: motifs come from sources checked to exist and tied to real tales; motif-absent passages are twins; a hidden-state comparison joined the falsifier. Remaining: every admission passage is machine-written, so AT-27 must follow. IN21 is the natural pilot. The TiMoS download was not re-checked.",
-   "priority": 4.5,
+   "priority": 4.4,
    "sources": [
     "Cammarata 2026, Neural networks are already clean",
     "Choi et al. 2024, Scaling automatic neuron description (Transluce)",
@@ -1327,7 +1352,9 @@
     "Hagedorn and Darányi 2022, doi:10.5334/johd.78"
    ],
    "region": "atlas",
-   "status": "registered"
+   "status": "registered",
+   "ranking": "In the top twelve of 1 of 3 judges (upside: rank 9). A public catalogue of meme units with measured hit and false-alarm rates for 150 human-named motifs would be the lasting, citable asset of the programme; run it only after IN-21 shows the yield is not zero.",
+   "overlaps": "Asks nearly the same question as IN-21, which the judges would run instead."
   },
   {
    "id": "AT-22",
@@ -1344,7 +1371,7 @@
    "payoff": "The size of the thing that copies a meme in one model: one neuron, dozens, hundreds or a direction, and whether it acts at reading or at writing. That decides what an atlas entry should be and whether editing a meme by neuron is realistic. It is a mechanism for machine culture, not for human minds.",
    "risk": "A retelling can copy through attention straight from the source words, with no motif-level carrier to silence, so a null may mean 'no carrier' and not 'spread out'; the direction and sentence-deletion arms help tell these apart. Silencing can also damage the model in ways the collateral checks miss.",
    "review": "Changed: per-motif pass counts became a pooled drop; added a 512-neuron arm, twin-story silencing and a reading-only against writing-only split. Remaining: in Cammarata's own example, removing 20 labelled neurons left a concept at 76%, so 64 may be too few; damage and removal stay hard to separate. Neighbours: IN24, EN-27.",
-   "priority": 4.5,
+   "priority": 3.5,
    "sources": [
     "Arora et al. 2026, arXiv:2601.22594",
     "Liu, Joshi, Dawson and Piper 2026, arXiv:2610.12989",
@@ -1352,7 +1379,8 @@
     "Cammarata 2026, Neural networks are already clean"
    ],
    "region": "atlas",
-   "status": "registered"
+   "status": "registered",
+   "ranking": "2 of 3 judges thought the area reviewer rated this too high."
   },
   {
    "id": "AT-23",
@@ -1377,7 +1405,8 @@
     "Mesoudi and Whiten 2008, doi:10.1098/rstb.2008.0129"
    ],
    "region": "atlas",
-   "status": "registered"
+   "status": "registered",
+   "overlaps": "Asks nearly the same question as CE-23, which the judges would run instead."
   },
   {
    "id": "AT-24",
@@ -1575,7 +1604,7 @@
    "payoff": "Whether Kuhn's finding survives word matching when it is measured in units, and a reusable heredity benchmark with tens of thousands of documented links, the scale Batman lacked.",
    "risk": "A citation is weak evidence that an idea was inherited; most references are background. Matching on TF-IDF leaves shared subtopic; a second decoy set, co-cited with the source by a third paper, tests that. Close decoys exist mainly for loosely related citations, so the test pairs may not be typical.",
    "review": "Added a closed, key-free corpus (cit-HepTh) so Kuhn's score can be re-derived; split by paper, dropped shared-author pairs, added random-unit and co-cited-decoy checks. Remaining: a citation is weak evidence of inheritance, and embeddings trained on citation pairs will probably beat units.",
-   "priority": 4.5,
+   "priority": 3.5,
    "sources": [
     "Kuhn, Perc and Helbing 2014 (arXiv:1404.3757)",
     "SNAP cit-HepTh",
@@ -1583,7 +1612,8 @@
     "Edmonds 2002, Three challenges for the survival of memetics"
    ],
    "region": "memetics",
-   "status": "registered"
+   "status": "registered",
+   "ranking": "2 of 3 judges thought the area reviewer rated this too high."
   },
   {
    "id": "ME-22",
@@ -1608,7 +1638,8 @@
     "Acerbi and Stubbersfield 2023"
    ],
    "region": "memetics",
-   "status": "registered"
+   "status": "registered",
+   "overlaps": "Asks nearly the same question as CE-22, which the judges would run instead."
   },
   {
    "id": "ME-23",
@@ -1832,7 +1863,7 @@
    "payoff": "The first public known-tree benchmark where wording does not carry descent, and a curve showing the rewording level at which each method stops finding parents.",
    "risk": "A child differs from its parent by only a few plot changes, so at heavy rewording every method may sit near the floor; or writer-model habits are read as descent; or sentence embeddings win at every level and neurons add nothing.",
    "review": "Changed: eight tales with smaller trees so tales can be resampled (was two sealed tales); planted changes are plot events, not nouns that survive paraphrase; random writer per step; licence CC BY-SA. Remains: model-written text; six sealed tales is few; prior work not searched (search budget spent).",
-   "priority": 4.5,
+   "priority": 4.0,
    "sources": [
     "Roos and Heikkilä 2009",
     "Spencer et al. 2004",
@@ -1857,7 +1888,7 @@
    "payoff": "A verdict on heredity outside Batman with over 40 times as many adaptations, where shared wording is ruled out by construction. It supersedes the deferred translation protocol by using summaries that people wrote in each language.",
    "risk": "Multilingual embeddings win easily and neurons trail even translate-then-match; French and Spanish plots may be too short, leaving a German-only test; the models have memorised which famous film came from which book, so results are read on the obscure half; and story-emb was trained on these same Wikipedia summaries.",
    "review": "German and French counts confirmed. Added story-emb and neurons-on-translation as rivals, per-language thresholds, a same-author decoy ban, one film per source and a reuse audit. Remains: plot coverage unknown (a tiny sample found long German and short French plots); translation is itself a neural reader; famous pairs are memorised.",
-   "priority": 4.5,
+   "priority": 4.4,
    "sources": [
     "Wikidata query service counts, 2026-11-08",
     "Hatzel and Biemann 2024 (Tell Me Again; Story Embeddings)",
@@ -1865,7 +1896,9 @@
     "preregistration/translation_protocol.md"
    ],
    "region": "lineage",
-   "status": "registered"
+   "status": "registered",
+   "ranking": "In the top twelve of 1 of 3 judges (upside: rank 6). A family tree across a language border on 400 real adaptations is the strongest possible form of the Batman heredity result, although neurons beating translate-then-match is perhaps a one-in-four chance.",
+   "overlaps": "Asks nearly the same question as PO-21, which the judges would run instead."
   },
   {
    "id": "LI-23",
@@ -1915,7 +1948,8 @@
     "Temkin and Eldredge 2007"
    ],
    "region": "lineage",
-   "status": "registered"
+   "status": "registered",
+   "overlaps": "Asks nearly the same question as RX-27, which the judges would run instead."
   },
   {
    "id": "LI-25",
@@ -1932,7 +1966,7 @@
    "payoff": "Heredity tested in a second lineage with 37 candidate parents in their primary text, showing whether the Batman result was about stories or about Wikipedia summaries. It supersedes the deferred Shakespeare protocol.",
    "risk": "Only 80 usable films from 20 plays, so only a large gap can be confirmed; small models may read verse so differently from prose summaries that every method sits near chance; and every model knows these plays by heart.",
    "review": "Counts confirmed in the committed list. Changed: the claim is decided against the best of words and embeddings, not BM25 alone; the Lambs' 1807 prose retellings added as a third parent form; an untestable 5-point tie claim dropped; power corrected. Remains: 80 films, memorised plays.",
-   "priority": 4.0,
+   "priority": 3.5,
    "sources": [
     "preregistration/works_shakespeare.json",
     "MIT Complete Works of Shakespeare (Moby text), shakespeare.mit.edu",
@@ -1940,7 +1974,8 @@
     "Hatzel and Biemann 2024 (Story Embeddings)"
    ],
    "region": "lineage",
-   "status": "registered"
+   "status": "registered",
+   "ranking": "2 of 3 judges thought the area reviewer rated this too high."
   },
   {
    "id": "LI-26",
@@ -1965,7 +2000,8 @@
     "Kelly et al. 2021"
    ],
    "region": "lineage",
-   "status": "registered"
+   "status": "registered",
+   "overlaps": "Asks nearly the same question as RX-22, which the judges would run instead."
   },
   {
    "id": "LI-S1",
@@ -2106,7 +2142,7 @@
    "payoff": "A search tool for unacknowledged sources with a known hit rate, tested on thousands of works beyond one franchise; or a clear finding that embeddings already do the job.",
    "risk": "Similarity is not influence: top pairs may be genre twins, and critics note resemblance, so only statements that the makers drew on the source count. The record misses unwritten influence. Models may recognise famous plots despite masked names. Outputs are candidates, never accusations of copying.",
    "review": "Dropped the 'lowest quarter of word overlap' stratum: selecting on a rival's score makes that rival lose by construction. Strata are now link types. Audit made checkable and enlarged; same-franchise and same-creator pairs excluded. Remaining: the number of loose links with plots at both ends is unconfirmed.",
-   "priority": 4.5,
+   "priority": 4.4,
    "sources": [
     "Wikidata query service counts 2026-11-08",
     "Chang et al. 2024",
@@ -2114,7 +2150,8 @@
     "Claidière et al. 2014"
    ],
    "region": "remix",
-   "status": "registered"
+   "status": "registered",
+   "ranking": "In the top twelve of 1 of 3 judges (upside: rank 4). It is the closest thing to the tool Mike wants: a search for unacknowledged sources across thousands of works with a hit rate checked against the written record, and it produces a usable list whichever reader wins."
   },
   {
    "id": "RX-23",
@@ -2139,7 +2176,8 @@
     "Movva et al. 2025"
    ],
    "region": "remix",
-   "status": "registered"
+   "status": "registered",
+   "overlaps": "Asks nearly the same question as CJ-21, which the judges would run instead."
   },
   {
    "id": "RX-24",
@@ -2231,7 +2269,7 @@
    "payoff": "The first test where influence is certain and wording cannot explain it; a curve of accuracy against depth of rewording for every method; and a calibration set for RX21 and RX22.",
    "risk": "Reader neurons may detect LLM writing habits instead of content; a small human-written arm would settle that and is not costed here. Instructed transformation may be easier to trace than real influence. Overlaps with the paused planted-story plan, which plants memes, not sources.",
    "review": "Added by the reviewer, promoted from the planted-influence seed: the area had no design where influence is known by construction. Weakness: writers and readers are both language models, so a human-written arm is needed before a pass is trusted.",
-   "priority": 4.5,
+   "priority": 4.6,
    "sources": [
     "Wang et al. 2023",
     "Li et al. 2026 (FakeWiki)",
@@ -2239,7 +2277,8 @@
     "Hatzel and Biemann 2024 (story-emb)"
    ],
    "region": "remix",
-   "status": "registered"
+   "status": "registered",
+   "ranking": "In the top twelve of 3 of 3 judges (what decides the premises fastest: rank 11; speed and cost: rank 12; upside: rank 5). Three days buy the first source-tracing test where the true source is known by construction and the wording is removed on purpose, so a loss to story embeddings or the LLM judge closes the influence use and a win opens it."
   },
   {
    "id": "RX-S1",
@@ -2337,7 +2376,7 @@
    "payoff": "A per-unit table of repeatability, silent-change rate and heritability; a list of units fit to be hereditary markers; and a working definition of synonymous change, which dN/dS-style tools need.",
    "risk": "Genre-typical content that recurs without descent counts as inherited unless the floor is matched tightly. Machine translation may flatten wording differences. Few units may pass the repeatability screen.",
    "review": "The index rewarded unreliable features (small denominator): every class now passes a repeatability screen first. Swapped self-scouted Wikipedias for a ready, name-masked five-language dataset; pair count checked (1,363). Remaining: how tightly the floor is genre-matched decides how much 'heritability' is convergence.",
-   "priority": 4.5,
+   "priority": 4.4,
    "sources": [
     "Hatzel and Biemann 2024",
     "Visscher et al. 2008",
@@ -2345,7 +2384,9 @@
     "Nei and Gojobori 1986"
    ],
    "region": "population",
-   "status": "registered"
+   "status": "registered",
+   "ranking": "In the top twelve of 1 of 3 judges (what decides the premises fastest: rank 12). Reruns the one robust Batman result, heredity, across languages on ready-made name-masked data with a same-story ceiling, so a tie with translated words would finally be informative instead of ambiguous.",
+   "overlaps": "Asks nearly the same question as LI-22, which the judges would run instead."
   },
   {
    "id": "PO-22",
@@ -2420,7 +2461,8 @@
     "Wikidata P144 links (query service, 2026-11-08)"
    ],
    "region": "population",
-   "status": "registered"
+   "status": "registered",
+   "overlaps": "Asks nearly the same question as CJ-24, which the judges would run instead."
   },
   {
    "id": "PO-25",
@@ -2445,7 +2487,8 @@
     "CMU Movie Summary Corpus (Bamman, O'Connor and Smith 2013)"
    ],
    "region": "population",
-   "status": "registered"
+   "status": "registered",
+   "overlaps": "Asks nearly the same question as FI-26, which the judges would run instead."
   },
   {
    "id": "PO-26",
@@ -2495,7 +2538,8 @@
     "Wikidata query service (2026-11-08)"
    ],
    "region": "population",
-   "status": "registered"
+   "status": "registered",
+   "overlaps": "Asks nearly the same question as IN-25, which the judges would run instead."
   },
   {
    "id": "PO-S1",
@@ -2610,7 +2654,8 @@
     "Mesoudi, Whiten & Dunbar 2006"
    ],
    "region": "cultevo",
-   "status": "registered"
+   "status": "registered",
+   "ranking": "In the top twelve of 3 of 3 judges (what decides the premises fastest: rank 3; speed and cost: rank 4; upside: rank 12). The only cheap test against human coders of human rewording (87,421 coded cells, nothing to generate), so a failure cannot be blamed on machine-written items; judge it against the best embedding and the LLM reader, because the registered pass bar only asks units to beat word overlap."
   },
   {
    "id": "CE-22",
@@ -2635,7 +2680,8 @@
     "Breithaupt et al. 2024"
    ],
    "region": "cultevo",
-   "status": "registered"
+   "status": "registered",
+   "overlaps": "Asks nearly the same question as ME-22, which the judges would run instead."
   },
   {
    "id": "CE-23",
@@ -2652,7 +2698,7 @@
    "payoff": "Decides which mathematics to use: particulate population genetics or quantitative genetics on continuous traits.",
    "risk": "The verdict may describe how LLM writers blend, not how human authors do (see the seed on two-source works), and 4-bit activations may blur real peaks; the slot arm and the 8-bit check bound both.",
    "review": "Text is made of discrete events and unit values are maxima over tokens, so any detector looks particulate. Made the claim relative to random directions, added a merged-summary arm as the blending anchor, and replaced binary word presence (which cannot blend) with term weights. The LLM-writer weakness remains.",
-   "priority": 4.5,
+   "priority": 4.0,
    "sources": [
     "Henrich & Boyd 2002",
     "Claidière, Scott-Phillips & Sperber 2014",
@@ -2710,7 +2756,8 @@
     "Henrich & Gil-White 2001"
    ],
    "region": "cultevo",
-   "status": "registered"
+   "status": "registered",
+   "overlaps": "Asks nearly the same question as ME-21, which the judges would run instead."
   },
   {
    "id": "CE-26",
@@ -2867,7 +2914,7 @@
    "payoff": "A click effect for each named unit, estimated from randomised tests, and a plain answer on whether neuron profiles forecast success better than embeddings. The activations are reused by FI-22, FI-27 and several seeds.",
    "risk": "A tie with embeddings is the likeliest result. The labels are noisy: only about 28% of headline pairs differ significantly in click rate, so accuracy tops out far below 100%. Headline memes are packaging (curiosity gap, negativity), not story ideas, so even a win may not carry over to stories.",
    "review": "Counted the data: about 1,900 clean headline-only tests in the holdout, so the stated 0.3-point error was optimistic. Added a fallback, a noise ceiling, same-teaser matching and a same-model sparse-feature rival. Prior-art check used arXiv only (web search was unavailable). Remaining weakness: a tie is likely.",
-   "priority": 4.5,
+   "priority": 4.4,
    "sources": [
     "Matias et al. 2021, Upworthy Research Archive (with the 2024 correction)",
     "Ye, Yoganarasimhan, Zheng 2025 (LOLA)",
@@ -2875,7 +2922,8 @@
     "He et al. 2024 (Llama Scope)"
    ],
    "region": "fitness",
-   "status": "registered"
+   "status": "registered",
+   "ranking": "In the top twelve of 1 of 3 judges (speed and cost: rank 8). One 40-minute pass per model over a free archive of randomised headline tests gives a clear win-or-tie against embeddings, and the same activations feed five other designs."
   },
   {
    "id": "FI-22",
@@ -2892,7 +2940,7 @@
    "payoff": "A direct test of whether fitter memes spread, with fitness measured by experiment and not inferred from fame, plus the shelf life of a fitness estimate. The wear-out seed falls out of the same tables.",
    "risk": "One newsroom is one history. Upworthy changed its style on purpose and Facebook changed its feed in 2014, so frequency shifts may reflect policy, not test results. Click effects for single units, estimated from about 4,100 tests, may be too noisy to correlate with anything.",
    "review": "Moved the cut-off from 1 April to 1 July 2014: the original left about 2,800 tests to estimate fitness, now about 4,100 each side. Kept FI-21's holdout unopened; added block resampling, a reliability gate and a reverse-time check. Remaining weakness: one newsroom, whose policy also changed.",
-   "priority": 3.0,
+   "priority": 4.0,
    "sources": [
     "Matias et al. 2021, Upworthy Research Archive (with the 2024 correction)",
     "Robertson et al. 2023",
@@ -2900,7 +2948,8 @@
     "Parikh et al. 2026 (TEA-Time)"
    ],
    "region": "fitness",
-   "status": "registered"
+   "status": "registered",
+   "ranking": "2 of 3 judges thought the area reviewer rated this too low."
   },
   {
    "id": "FI-23",
@@ -2925,7 +2974,8 @@
     "Salganik, Dodds, Watts 2006"
    ],
    "region": "fitness",
-   "status": "registered"
+   "status": "registered",
+   "overlaps": "Asks nearly the same question as FI-28, which the judges would run instead."
   },
   {
    "id": "FI-24",
@@ -2950,7 +3000,8 @@
     "CMU Movie Summary Corpus (Bamman, O'Connor, Smith 2013)"
    ],
    "region": "fitness",
-   "status": "registered"
+   "status": "registered",
+   "overlaps": "Asks nearly the same question as PO-23, which the judges would run instead."
   },
   {
    "id": "FI-25",
@@ -2975,7 +3026,8 @@
     "study/results/robustness/nulls.json (rewording test)"
    ],
    "region": "fitness",
-   "status": "registered"
+   "status": "registered",
+   "ranking": "In the top twelve of 1 of 3 judges (upside: rank 11). Paying real readers to choose between stories that differ in one planted idea gives the first causal appeal scores for ideas and not packaging, valuable even if an LLM forecasts them better than units do."
   },
   {
    "id": "FI-26",
@@ -3147,7 +3199,8 @@
     "Arad, Mueller, Belinkov 2025, arXiv:2505.20063"
    ],
    "region": "engineering",
-   "status": "registered"
+   "status": "registered",
+   "ranking": "In the top twelve of 3 of 3 judges (what decides the premises fastest: rank 4; speed and cost: rank 2; upside: rank 1). Steering is the test the source essay treats as decisive and the project has never run; in two days it separates units that carry an idea from units that only emit their words, though a blanket fail may be a dose problem in 4-bit models and not a refutation."
   },
   {
    "id": "EN-22",
@@ -3197,7 +3250,8 @@
     "Liu 2026, arXiv:2606.19831"
    ],
    "region": "engineering",
-   "status": "registered"
+   "status": "registered",
+   "ranking": "In the top twelve of 1 of 3 judges (upside: rank 7). It settles whether the units that detect a meme are the ones that write it, which decides if the study's units can ever be edit handles or are only gauges."
   },
   {
    "id": "EN-24",
@@ -3404,7 +3458,7 @@
    "payoff": "A causal answer to whether 'just past the familiar' wins, with the size of the effect and where the peak sits. If any measure works, a novelty ruler for planning creative tests.",
    "risk": "Arms of one test share a story, so their novelty may differ too little to trace a curve; the U then leans on comparing stories, which were not randomised. Upworthy effects are tiny, and Berger and Packard found a monotonic pattern for lyrics.",
    "review": "Replaced the within-month date shuffle, which barely moves a 90-day window, with a misplaced-window null; added headline length, the fault flag, the image rule and an estimated usable sample. Remaining weakness: novelty may vary little within a test. Prior-work check was arXiv only (nothing found); web search was unavailable.",
-   "priority": 4.5,
+   "priority": 4.4,
    "sources": [
     "Hekkert, Snelders and van Wieringen 2003",
     "Matias et al. 2021 (Upworthy Research Archive)",
@@ -3412,7 +3466,8 @@
     "Sreenivasan 2013"
    ],
    "region": "conjectures",
-   "status": "registered"
+   "status": "registered",
+   "ranking": "In the top twelve of 1 of 3 judges (speed and cost: rank 9). It rides on FI-21's pass and gives a causal answer on whether moderately new headlines win, which stands whichever measure does best."
   },
   {
    "id": "CJ-22",
@@ -3437,7 +3492,8 @@
     "Hatzel and Biemann 2024 (Tell Me Again)"
    ],
    "region": "conjectures",
-   "status": "registered"
+   "status": "registered",
+   "ranking": "In the top twelve of 1 of 3 judges (upside: rank 8). Remakes against twin films is the one design that tries to tell 'copied' from 'merely similar', the gap in every influence claim, and it is a few days of work on real films."
   },
   {
    "id": "CJ-23",
@@ -3487,7 +3543,8 @@
     "Wikidata (based on P144, derivative work P4969)"
    ],
    "region": "conjectures",
-   "status": "registered"
+   "status": "registered",
+   "overlaps": "Asks nearly the same question as PO-24, which the judges would run instead."
   },
   {
    "id": "CJ-25",
@@ -3537,7 +3594,8 @@
     "Sreenivasan 2013"
    ],
    "region": "conjectures",
-   "status": "registered"
+   "status": "registered",
+   "overlaps": "Asks nearly the same question as RX-21, which the judges would run instead."
   },
   {
    "id": "CJ-27",
@@ -3678,7 +3736,7 @@
    "payoff": "A grader for brand or style fit that an optimising agent cannot satisfy by copying phrases, or a clear statement that no neuron score of that kind exists yet.",
    "risk": "Masked, reworded episodes of sibling series may be impossible to tell apart, so every method sits near chance; or summaries are so formulaic that all sit near the ceiling. Either way the result turns on how good the rewording is.",
    "review": "Both arms now pass through the same rewriter; sibling series added as hard negatives; a scored rewriting attack with an edit cap is the main test, because a three-sentence rule beats one pasted sentence by construction. Weakness: episode summaries stand in for brand copy; plot sections not yet counted.",
-   "priority": 4.5,
+   "priority": 3.5,
    "sources": [
     "Wikipedia episode articles via Wikidata (count 8 Nov 2026)",
     "He et al. 2024 (Llama Scope)",
@@ -3686,7 +3744,8 @@
     "Bradley et al. 2023 (QDAIF)"
    ],
    "region": "uses",
-   "status": "registered"
+   "status": "registered",
+   "ranking": "3 of 3 judges thought the area reviewer rated this too high."
   },
   {
    "id": "US-22",
@@ -3734,7 +3793,8 @@
     "Wikidata film count, 8 Nov 2026"
    ],
    "region": "uses",
-   "status": "registered"
+   "status": "registered",
+   "overlaps": "Asks nearly the same question as RX-27, which the judges would run instead."
   },
   {
    "id": "US-24",
@@ -3799,7 +3859,7 @@
    "payoff": "A test of gap-finding as an idea source that needs no taste judgement: the later record of what was made is the judge.",
    "risk": "Common units that never met may exclude each other, not await a first use; unit labels may be too vague to judge; and being realised later rewards obvious combinations more than good ones.",
    "review": "The gap rule was undefined and the 8% and 4% rates had no basis. Added a tuning period fixing rule and base rates, a stop gate, name masking, template briefs and a test on 2013 to 2023 films, since few 2025 plots exist. Weakness: a long chain of LLM steps.",
-   "priority": 3.0,
+   "priority": 4.0,
    "sources": [
     "Sreenivasan 2013",
     "Uzzi et al. 2013",
@@ -3807,7 +3867,8 @@
     "CMU Movie Summary Corpus"
    ],
    "region": "uses",
-   "status": "registered"
+   "status": "registered",
+   "ranking": "In the top twelve of 1 of 3 judges (upside: rank 10). It is the only registered design that tests spotting promising ideas forward in time, with the films actually made after 2012 as the judge, and gap-finding rules of this kind usually beat random pairs."
   },
   {
    "id": "US-S1",

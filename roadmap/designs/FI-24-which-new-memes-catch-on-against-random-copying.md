@@ -50,6 +50,10 @@ The models were trained after all these films, so units exist mainly for ideas t
 
 Added a shuffled-release-order null and a fixed 300-film window, because steady background rates and unequal exposure could fake 'spread'. Dropped firing strength as a predictor (it leaks hindsight); added host box office. Remaining weakness: models trained on later culture detect winners more easily, so only a fail is clean.
 
+## Overlaps with
+
+Asks nearly the same question as PO-23, which the judges would run instead.
+
 ## Sources
 
 - Bentley, Hahn, Shennan 2004

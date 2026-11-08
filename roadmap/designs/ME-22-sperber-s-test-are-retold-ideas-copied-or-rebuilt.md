@@ -50,6 +50,10 @@ Model tellers are not human minds, and the retelling prompt sets how faithfully 
 
 The original ratio depended on how profiles were centred and counted house style as attraction. Replaced with six replicate chains per story and a count of inherited gains against gains that recur in sibling chains. Remaining: model tellers, a prompt that sets fidelity, and no human chains yet.
 
+## Overlaps with
+
+Asks nearly the same question as CE-22, which the judges would run instead.
+
 ## Sources
 
 - Sperber 2000

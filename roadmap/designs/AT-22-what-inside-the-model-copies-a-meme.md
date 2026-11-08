@@ -1,6 +1,6 @@
 # AT-22: What inside the model copies a meme?
 
-**Area:** The atlas · **Status:** design registered 8 November 2026, not run · **Priority:** 4.5 of 5
+**Area:** The atlas · **Status:** design registered 8 November 2026, not run · **Priority:** 3.5 of 5
 
 ## Question
 
@@ -49,6 +49,10 @@ A retelling can copy through attention straight from the source words, with no m
 ## Reviewer note
 
 Changed: per-motif pass counts became a pooled drop; added a 512-neuron arm, twin-story silencing and a reading-only against writing-only split. Remaining: in Cammarata's own example, removing 20 labelled neurons left a concept at 76%, so 64 may be too few; damage and removal stay hard to separate. Neighbours: IN24, EN-27.
+
+## Cross-area ranking
+
+2 of 3 judges thought the area reviewer rated this too high.
 
 ## Sources
 

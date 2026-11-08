@@ -50,6 +50,10 @@ Only two stories, so statements share names and setting. Statements are finer th
 
 Moved the main test to Berl et al.'s human recall (87,421 coded cells), because the ChatGPT chains keep most words: a rough parse put word overlap near AUC 0.85 there, 0.78 on human recall. Dropped the fresh-chain test, which had no independent coder. Weakness: two stories.
 
+## Cross-area ranking
+
+In the top twelve of 3 of 3 judges (what decides the premises fastest: rank 3; speed and cost: rank 4; upside: rank 12). The only cheap test against human coders of human rewording (87,421 coded cells, nothing to generate), so a failure cannot be blamed on machine-written items; judge it against the best embedding and the LLM reader, because the registered pass bar only asks units to beat word overlap.
+
 ## Sources
 
 - Berl et al. 2021

@@ -1,6 +1,6 @@
 # LI-25: Shakespeare as a second lineage with original-text parents
 
-**Area:** Lineage · **Status:** design registered 8 November 2026, not run · **Priority:** 4.0 of 5
+**Area:** Lineage · **Status:** design registered 8 November 2026, not run · **Priority:** 3.5 of 5
 
 ## Question
 
@@ -49,6 +49,10 @@ Only 80 usable films from 20 plays, so only a large gap can be confirmed; small 
 ## Reviewer note
 
 Counts confirmed in the committed list. Changed: the claim is decided against the best of words and embeddings, not BM25 alone; the Lambs' 1807 prose retellings added as a third parent form; an untestable 5-point tie claim dropped; power corrected. Remains: 80 films, memorised plays.
+
+## Cross-area ranking
+
+2 of 3 judges thought the area reviewer rated this too high.
 
 ## Sources
 

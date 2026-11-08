@@ -1,6 +1,6 @@
 # IN-27: How much reading is length, position and wrapper?
 
-**Area:** The instrument · **Status:** design registered 8 November 2026, not run · **Priority:** 3.5 of 5
+**Area:** The instrument · **Status:** design registered 8 November 2026, not run · **Priority:** 4.0 of 5
 
 ## Question
 
@@ -49,6 +49,10 @@ Filler from film summaries contains motifs of its own, inflating the false-fire 
 ## Reviewer note
 
 The filler films also set the presence bar, which fixes the false-fire rate by construction; the films are now split. Matched controls added so 'motif share' is defined per unit. 50 sentences cut to 30, the most one film summary allows. Needs IN21 first.
+
+## Cross-area ranking
+
+2 of 3 judges thought the area reviewer rated this too low.
 
 ## Sources
 

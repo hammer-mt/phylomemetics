@@ -78,14 +78,66 @@ These come from what went wrong or nearly went wrong in the Batman study.
 7. Do not assume the neurons are clean. Check it, or steer.
 8. Put a human in the loop somewhere. So far every labeller, rewriter, judge, reviewer and fact-checker was an AI.
 
-## 4. How the registry works
+## 4. What to run first
+
+Three judges ranked all 85 new designs and the 14 older plans across areas, each through a different lens: what decides the premises fastest, what is quickest and cheapest, and where the upside is. All three put the same small tests first. Nine designs made at least two of the three shortlists.
+
+| Step | Designs | What it settles | Cost |
+| --- | --- | --- | --- |
+| 1 | IN-29, UN-21, IN-21 | Are the 4-bit readings real? Do any neurons recur between Qwen and Llama on unseen text once words are controlled? Does any neuron follow an idea without its words, for 30 story concepts? | About a week, laptop only |
+| 2 | EN-21, CE-21 | Does pushing a named unit make the model write that idea? Do units track what human readers keep when they retell a story, judged by human coders? | Three or four days |
+| 3 | IN-24, UN-23 | Is a meme one neuron, a few, or a direction? Does a fitted map carry a reading from one model to the other? | One to two weeks |
+| 4 | IN-25, UN-22 | Is a reading a property of the story or of one summary? Does it survive a change of language? | About a week, one download |
+| 5 | RX-27 | The first use test: name a known source after deep rewording, against look-alike decoys | About three days |
+
+Two rules came from all three judges.
+
+- Write down beforehand which results would move the unit from single neurons to small sets or directions. If fewer than 8 of 30 concepts pass IN-21 and under 0.5% of units pass UN-21, the single-neuron version of both premises is refuted before anything expensive is built.
+- Start no lineage, forecasting or product design until a frozen unit has beaten sentence embeddings and an LLM reader on text where the words are controlled.
+
+Several older plans are now superseded by cheaper designs that ask the same question: the planted-meme stories (IN-05, about 4,400 agent sessions) by IN-21, the Chinese translation (UN-05) by UN-22, the drift ladder (LI-05) by RX-27 and LI-21, and concept agreement on held-out films (UN-06) by UN-21. Each entry in [`IDEAS.md`](IDEAS.md) says what it overlaps with.
+
+## 5. Where the treasure might be
+
+These are the designs that would matter most if the first steps go well. Each is built so that it pays off whichever reader wins.
+
+| What you want | Design | Why it is promising |
+| --- | --- | --- |
+| A family tree of influence, including influences nobody declared | RX-22, LI-22, CJ-22 | A search for unacknowledged sources checked against the written record; source finding across a language border; and remakes against "twin films" to tell copying from coincidence |
+| Spotting a promising new idea | US-26, FI-22 | Meme combinations no earlier film used, judged by which films were later made; and whether units that won randomised headline tests then spread |
+| More of one meme, less of another | EN-23, EN-22 | Whether the units that detect a meme are the ones that write it, and whether any internal handle beats simply asking a model to rewrite |
+| A catalogue two labs can cite | AT-21, AT-24 | A reference list of units with measured hit and false-alarm rates for 150 human-named motifs |
+| A periodic table of memes | AT-28 | Whether a grid of motifs predicts the unit for an empty cell before any text for it exists. Two days, under 30 dollars |
+| Mendel's experiment | CE-23, AT-23 | Whether memes are inherited as particles or blend |
+| The accepted science, re-run | CE-21, ME-22, PO-23 | What survives retelling; whether retold ideas are copied or rebuilt; the random-copying null that any selection claim has to beat |
+
+The judges' shared view of the likely end state: a neuron's lasting job may be to name what was inherited, not to out-predict embeddings. A 2026 position paper on sparse model features argues the same split: they tie or lose at detecting a relation someone has specified, and win at discovering and naming ones nobody specified ([`notes/l10-competitors-instruments.md`](notes/l10-competitors-instruments.md)).
+
+## 6. Where each area stands
+
+| Area | In biology | Where it stands | Best next design |
+| --- | --- | --- | --- |
+| The instrument | Sequencing | Four small tests, all mixed. No human check, no steering | IN-21 |
+| Across models | One genetic code | Twins were mostly shared word detectors. No learned map tried | UN-21, UN-22 |
+| The atlas | Genome project | Batman's name-free core is the textbook superhero. No catalogue yet | AT-21, after IN-21 |
+| Old memetics, re-run | Classical genetics | Untouched. Public data and published results to re-derive | ME-22 |
+| Lineage | Phylogenetics | Heredity held, word counts matched it, trees failed | LI-22 |
+| Remix and influence | Recombination | Nothing run. Similarity is not influence | RX-27 |
+| Population memetics | Population genetics | Descriptive timelines only | PO-21 |
+| Cultural evolution, re-run | Evolutionary ecology | Untouched. Human retelling data is public | CE-21 |
+| Fitness and forecasting | Fitness landscapes | One underpowered null | FI-21 |
+| Meme engineering | Gene editing | Nothing run. Prompting is the rival to beat | EN-21 |
+| Field conjectures | Natural history | About 35 hunches, none measured | CJ-21, CJ-22 |
+| Uses | Biotechnology | Nothing run in the open | US-23, US-26 |
+
+## 7. How the registry works
 
 A design in [`designs/`](designs/) is registered, not pre-registered. It fixes the question, the prediction, the refuting result and the rival before any data exists, and it is dated by this commit. To run one, expand it into a full pre-registration first.
 
-Each design was drafted by one AI agent from the notes and then attacked and revised by a second. Priorities run from 1 to 5: the value of the answer times the chance it can be done. They are a first sort. Mike decides.
+Each design was drafted by one AI agent from the notes and then attacked and revised by a second. Priorities run from 1 to 5: the value of the answer times the chance it can be done. The area reviewer set a first value and the three cross-area judges adjusted it: 4.5 or more means at least two judges put the design in their top twelve. They are a first sort. Mike decides.
 
-## 5. How this was made, and how far to trust it
+## 8. How this was made, and how far to trust it
 
-Twenty research agents each wrote one notes file: eight auditing this repository and Mike's material, twelve reviewing the outside literature with web search. A second agent checked every citation in each literature file. Twelve more agents drafted the designs and twelve reviewed them.
+Twenty research agents each wrote one notes file: seven auditing this repository and Mike's own material, thirteen reviewing the outside literature with web search. A second agent checked every citation in each literature file. Twelve more agents drafted the designs, twelve reviewed them, and three ranked them across areas. Two of the audit files draw on private material and are not in this folder.
 
 The audits quote committed outputs and can be checked against them. The literature notes are leads: recent work is thinly reviewed, and anything not confirmed is marked `[UNVERIFIED]`. Confirm a source before citing it in a paper.

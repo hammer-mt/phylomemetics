@@ -1,6 +1,6 @@
 # UN-22: Same story, another language, another model
 
-**Area:** Across models · **Status:** design registered 8 November 2026, not run · **Priority:** 4.5 of 5
+**Area:** Across models · **Status:** design registered 8 November 2026, not run · **Priority:** 5.0 of 5
 
 ## Question
 
@@ -49,6 +49,10 @@ Both models have read these pages in every language and may simply recognise the
 ## Reviewer note
 
 Defined the unit choice, replaced the dependence on UN21 twins with a fitted map, fixed an impossible gallery and added a recognition check. Dataset confirmed. Remaining: the supplied name-replaced texts are probably English only, and language-general middle layers within one model are already reported (Anthropic 2025).
+
+## Cross-area ranking
+
+In the top twelve of 3 of 3 judges (what decides the premises fastest: rank 6; speed and cost: rank 10; upside: rank 3). Translation strips shared wording from thousands of human-written summaries, so one run tests both premises where neither names nor words can carry the signal, and it includes the fitted map between models that the project has never tried.
 
 ## Sources
 

@@ -50,6 +50,10 @@ Summaries are written after release, and hits attract longer, more polished ones
 
 The sibling test was unpowered: only 111 sources have two box-office adaptations, so it now compares instalments within 179 series. Added budget and summary-length covariates; revenue count confirmed. Unrepaired: summaries are written after success, so hits may read editor attention.
 
+## Overlaps with
+
+Asks nearly the same question as FI-26, which the judges would run instead.
+
 ## Sources
 
 - Klein et al. 2005

@@ -1,6 +1,6 @@
 # FI-22: Forecast forward: do winning headline units spread?
 
-**Area:** Fitness and forecasting · **Status:** design registered 8 November 2026, not run · **Priority:** 3.0 of 5
+**Area:** Fitness and forecasting · **Status:** design registered 8 November 2026, not run · **Priority:** 4.0 of 5
 
 ## Question
 
@@ -49,6 +49,10 @@ One newsroom is one history. Upworthy changed its style on purpose and Facebook 
 ## Reviewer note
 
 Moved the cut-off from 1 April to 1 July 2014: the original left about 2,800 tests to estimate fitness, now about 4,100 each side. Kept FI-21's holdout unopened; added block resampling, a reliability gate and a reverse-time check. Remaining weakness: one newsroom, whose policy also changed.
+
+## Cross-area ranking
+
+2 of 3 judges thought the area reviewer rated this too low.
 
 ## Sources
 
