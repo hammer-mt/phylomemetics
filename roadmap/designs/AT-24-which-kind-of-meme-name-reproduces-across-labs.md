@@ -48,7 +48,7 @@ Both pipelines come from one person and one family of coding assistants, so shar
 
 ## Reviewer note
 
-Changed: every name now carries a motif, so it is scored for validity as well as reproducibility, and the written definition must be beaten on both; cost raised from S to M. Remaining: address agreement is near-certain by construction and the study already showed twins failing on name-free text.
+Changed: every name now carries a motif, so it is scored for validity as well as reproducibility, and the written definition must be beaten on both; cost raised to M. Remaining: IN29 already tests precision, address agreement is near-certain by construction, and the study showed twins failing on name-free text.
 
 ## Sources
 

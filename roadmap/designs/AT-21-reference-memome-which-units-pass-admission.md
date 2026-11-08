@@ -48,7 +48,7 @@ Passages written by language models share house styles, so a unit can learn a wr
 
 ## Reviewer note
 
-Changed: motifs now come from sources checked to exist and tied to real tales; motif-absent passages are twins, so a detector of 'something dramatic' cannot pass; a hidden-state comparison joined the falsifier. Remaining: every admission passage is machine-written, so AT-27 must follow. The TiMoS download was not re-checked.
+Changed: motifs come from sources checked to exist and tied to real tales; motif-absent passages are twins; a hidden-state comparison joined the falsifier. Remaining: every admission passage is machine-written, so AT-27 must follow. IN21 is the natural pilot. The TiMoS download was not re-checked.
 
 ## Sources
 

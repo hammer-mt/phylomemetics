@@ -48,7 +48,7 @@ A retelling can copy through attention straight from the source words, with no m
 
 ## Reviewer note
 
-Changed: noisy per-motif pass counts became a pooled drop; added a 512-neuron arm, twin-story values for silencing and a reading-only against writing-only split. Remaining: Cammarata's own example needed more than 20 neurons to dent one concept, so 64 may be too few; damage and removal stay hard to separate.
+Changed: per-motif pass counts became a pooled drop; added a 512-neuron arm, twin-story silencing and a reading-only against writing-only split. Remaining: in Cammarata's own example, removing 20 labelled neurons left a concept at 76%, so 64 may be too few; damage and removal stay hard to separate. Neighbours: IN24, EN-27.
 
 ## Sources
 

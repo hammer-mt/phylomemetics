@@ -1,6 +1,6 @@
 # AT-23: Mendel test: particles or blends in two-source works?
 
-**Area:** The atlas · **Status:** design registered 8 November 2026, not run · **Priority:** 3.0 of 5
+**Area:** The atlas · **Status:** design registered 8 November 2026, not run · **Priority:** 2.5 of 5
 
 ## Question
 
@@ -44,7 +44,7 @@ A measured answer to the oldest objection to memetics, that ideas blend and so c
 
 ## Main risk
 
-A plot summary either mentions an event or does not, so particles may reflect how editors summarise, not how authors combine sources. The constructed crosses test the method's resolution; they cannot test that. In 458 of the 1,620 items one source is itself based on the other; these chains are analysed apart and shrink the sample.
+A plot summary either mentions an event or does not, so particles may reflect how editors summarise, not how authors combine sources. The constructed crosses test the method's resolution; they cannot test that. In 458 of the 1,620 items one source is based on the other; such chains are analysed apart, and crosses of unrelated stories are few.
 
 ## Reviewer note
 

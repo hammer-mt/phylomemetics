@@ -1318,7 +1318,7 @@
    "cost": "M. About 28,800 short passages by API (under 150 US dollars), six hours of laptop extraction on a 4-bit model, a three-hour human audit of 300 passages; about ten days in all.",
    "payoff": "The first citable list of meme units with measured sensitivity and false-fire rates, from which later experiments draw frozen units. It also sizes the memome: how many of 150 human-named motifs one neuron, a small set, or no unit can read.",
    "risk": "Passages written by language models share house styles, so a unit can learn a writer's habit for one cell and pass. A second writer family for test passages and the human audit reduce this; they do not remove it. AT-27 then checks the entries on real tales.",
-   "review": "Changed: motifs now come from sources checked to exist and tied to real tales; motif-absent passages are twins, so a detector of 'something dramatic' cannot pass; a hidden-state comparison joined the falsifier. Remaining: every admission passage is machine-written, so AT-27 must follow. The TiMoS download was not re-checked.",
+   "review": "Changed: motifs come from sources checked to exist and tied to real tales; motif-absent passages are twins; a hidden-state comparison joined the falsifier. Remaining: every admission passage is machine-written, so AT-27 must follow. IN21 is the natural pilot. The TiMoS download was not re-checked.",
    "priority": 4.5,
    "sources": [
     "Cammarata 2026, Neural networks are already clean",
@@ -1343,7 +1343,7 @@
    "cost": "M. Ablation hooks for the 4-bit model, about 7,000 short generations (roughly 30 laptop hours), judge calls under 50 US dollars; two weeks including code.",
    "payoff": "The size of the thing that copies a meme in one model: one neuron, dozens, hundreds or a direction, and whether it acts at reading or at writing. That decides what an atlas entry should be and whether editing a meme by neuron is realistic. It is a mechanism for machine culture, not for human minds.",
    "risk": "A retelling can copy through attention straight from the source words, with no motif-level carrier to silence, so a null may mean 'no carrier' and not 'spread out'; the direction and sentence-deletion arms help tell these apart. Silencing can also damage the model in ways the collateral checks miss.",
-   "review": "Changed: noisy per-motif pass counts became a pooled drop; added a 512-neuron arm, twin-story values for silencing and a reading-only against writing-only split. Remaining: Cammarata's own example needed more than 20 neurons to dent one concept, so 64 may be too few; damage and removal stay hard to separate.",
+   "review": "Changed: per-motif pass counts became a pooled drop; added a 512-neuron arm, twin-story silencing and a reading-only against writing-only split. Remaining: in Cammarata's own example, removing 20 labelled neurons left a concept at 76%, so 64 may be too few; damage and removal stay hard to separate. Neighbours: IN24, EN-27.",
    "priority": 4.5,
    "sources": [
     "Arora et al. 2026, arXiv:2601.22594",
@@ -1367,9 +1367,9 @@
    "bio": "Mendel's crosses; particulate against blending inheritance",
    "cost": "M. About 600 plot sections fetched and name-masked by script, 120 constructed crosses, one extraction pass, a spot-check by hand; one to two weeks and under 50 US dollars.",
    "payoff": "A measured answer to the oldest objection to memetics, that ideas blend and so cannot be counted. It also says whether a set of memes per work is the right data type, or whether readings must be kept as amounts.",
-   "risk": "A plot summary either mentions an event or does not, so particles may reflect how editors summarise, not how authors combine sources. The constructed crosses test the method's resolution; they cannot test that. In 458 of the 1,620 items one source is itself based on the other; these chains are analysed apart and shrink the sample.",
+   "risk": "A plot summary either mentions an event or does not, so particles may reflect how editors summarise, not how authors combine sources. The constructed crosses test the method's resolution; they cannot test that. In 458 of the 1,620 items one source is based on the other; such chains are analysed apart, and crosses of unrelated stories are few.",
    "review": "Changed: the 1,620 count includes non-stories and 458 chains, now stated and split; all bases are pooled alike, because reading the strongest sentences makes units look particulate by construction; the reader's graded rating now decides. Remaining: one generation cannot separate blending from particles with partial dominance (see the two-generation seed).",
-   "priority": 3.0,
+   "priority": 2.5,
    "sources": [
     "Wikidata property P144 (based on)",
     "Hatzel and Biemann 2024, Tell Me Again",
@@ -1393,7 +1393,7 @@
    "cost": "M. Two extraction passes per checkpoint on one laptop (8-bit weights of an 8B model fit in 24 GB), a second pipeline written from the specification, two LLM readers on 500 passages (under 30 US dollars); about four days.",
    "payoff": "A written naming standard with a reproducibility and a validity figure for each kind of name, and the first check that 4-bit weights do not move the units. Two labs could then cite one meme and know how far their readings will agree.",
    "risk": "Both pipelines come from one person and one family of coding assistants, so shared habits inflate agreement. This is a rehearsal; only a real second lab tests the standard. Address agreement is close to guaranteed, so most of the information sits in the family, twin and definition rows.",
-   "review": "Changed: every name now carries a motif, so it is scored for validity as well as reproducibility, and the written definition must be beaten on both; cost raised from S to M. Remaining: address agreement is near-certain by construction and the study already showed twins failing on name-free text.",
+   "review": "Changed: every name now carries a motif, so it is scored for validity as well as reproducibility, and the written definition must be beaten on both; cost raised to M. Remaining: IN29 already tests precision, address agreement is near-certain by construction, and the study showed twins failing on name-free text.",
    "priority": 3.0,
    "sources": [
     "Callahan, McMurdie and Holmes 2017, doi:10.1038/ismej.2017.119",
@@ -1430,31 +1430,6 @@
    "status": "registered"
   },
   {
-   "id": "AT-26",
-   "title": "Mendeleev test: do table gaps predict new combinations?",
-   "question": "Do combinations of memes that a table built from older films marks as expected but never yet used turn up in films released after the model was published more often than unused combinations of equally common memes?",
-   "hypothesis": "The 500 top-ranked gaps are realised in new films at least 2.0 times as often as 500 frequency-matched unused combinations, and this lift exceeds the keyword table's lift by 0.3 or more.",
-   "falsifier": "Lift under 1.3, or within 0.1 of the keyword table's lift (bootstrap over films, 95% interval includes zero). A backtest inside the old pool (fit to 2005, test 2006 to 2012) fixes combination size so that matched combinations are realised 2% to 10% of the time; at 4%, 500 per arm detect a lift of 2.0 with about 80% power.",
-   "data": "Old pool: CMU Movie Summary Corpus, 42,306 Wikipedia film plots to 2012 with release dates (CC BY-SA), plus a sample of about 15,000 Wikipedia plots for 2013 to mid-2024 (CC BY-SA 4.0). Test: plots of films released after Llama 3.1 was published in July 2024; expected over 1,000, count fixed at scouting. Elements: the motifs with an admitted AT-21 entry.",
-   "method": "Each instrument codes the same motifs across the old pool. A factor model with genre and decade terms ranks motif pairs or triples never seen together. A gap is realised only if a blind cross-family reader, given definitions, finds all its motifs in one new film; the reader codes every new film. Null: unused combinations matched on frequency and genre.",
-   "rivals": "The same table built from keyword lists, from e5 embedding prototypes, from an LLM reader's coding of a 3,000-film sample and from random non-meme units; an LLM simply asked to list likely unused combinations; plain frequency. Frequency and the keyword table are the dangers. If keywords match units, the periodic structure belongs to stories, not to neurons.",
-   "premise": "Assumes P1 for the frozen units and asks whether meme space has predictive structure at all. Units ahead supports P1's use for discovery. A pass for every instrument is a result about stories. A fail everywhere says co-occurrence does not predict new combinations.",
-   "bio": "Mendeleev's eka-elements; linkage disequilibrium",
-   "cost": "M. One extraction over about 60,000 plots keeping only frozen units (roughly ten laptop hours), LLM-reader coding of the new films and of a 3,000-film sample for the rival table (under 100 US dollars); about two weeks.",
-   "payoff": "A list of meme combinations predicted before anyone used them, with a measured hit rate. If it works, the atlas becomes a tool for finding open creative ground, which is the practical promise of the whole programme.",
-   "risk": "The factor structure may be nothing more than genre: gaps are motifs from one genre that had not yet met. Genre terms reduce this but do not remove it. If AT-21 admits few entries, or motifs are rare in films, too few gaps exist or too few are realised in two years of new films.",
-   "review": "Changed: at the study's 3% presence bar almost no pair is unseen in 57,000 films and chance alone 'realises' over half of pairs, so gaps are now combinations sized by a backtest, and a blind reader, not the unit, decides realisation. Remaining: depends on AT-21's yield; genre may explain everything.",
-   "priority": 2.5,
-   "sources": [
-    "Bamman, O'Connor and Smith 2013, CMU Movie Summary Corpus",
-    "Sreenivasan 2013, doi:10.1038/srep02758",
-    "Li et al. 2024, arXiv:2410.19750",
-    "Uzzi et al. 2013, doi:10.1126/science.1240474"
-   ],
-   "region": "atlas",
-   "status": "registered"
-  },
-  {
    "id": "AT-27",
    "title": "Field test: do admitted entries read real folktales?",
    "question": "Does an entry admitted on passages written to order also find its motif in real folktales whose tale type lists that motif, and does passing admission predict how well it does there?",
@@ -1480,13 +1455,38 @@
    "status": "registered"
   },
   {
+   "id": "AT-28",
+   "title": "Eka-meme: does a table predict an unseen unit?",
+   "question": "When motifs are laid out in a grid of who acts by what they do, do an empty cell's row and column predict the direction, and the neuron, that reads that cell's motif before any passage for it has been seen?",
+   "hypothesis": "Directions predicted from a cell's row and column reach a mean AUC of 0.70 (0.5 is chance) on held-out cells and do at least as well as the same arithmetic on e5 sentence embeddings. The neuron nearest the predicted direction beats a matched random neuron in at least 24 of 36 cells.",
+   "falsifier": "Mean AUC of predicted directions under 0.60, or 0.05 below the embedding arithmetic (bootstrap over rows and columns, 95% interval excludes zero), or the predicted neuron beats a random one in fewer than 22 of 36 cells. 24 of 36 has a sign-test p of 0.03; 36 cells put the mean AUC within about 0.03.",
+   "data": "A grid of 36 motifs: six family roles (father, mother, stepmother, brother, sister, wife) by six acts (rescues, abandons, murders, sells, betrays, curses). Definitions follow Thompson's index in Hagedorn's trilogy data (CC BY-SA 4.0), where a crude keyword match finds 29 cells. Per cell, 96 new passages avoiding the motif's usual words, with twins; 3,456 in all, CC BY.",
+   "method": "Model: Llama-3.1-8B-Instruct. A cell's direction: mean hidden state of motif passages minus twins. Hold out each cell in turn; predict its direction as row mean plus column mean minus grand mean. Score AUC for the held-out cell's test passages against those of its row and column neighbours. The predicted neuron is the one whose output weights lie nearest that direction.",
+   "rivals": "The same row-plus-column arithmetic on e5 embeddings and on TF-IDF vectors; the neuron whose Transluce description best fits the cell's definition; a random direction; passage length; an LLM reader given the definition, which will win and sets the ceiling. Embedding arithmetic is the danger: analogies are what embeddings are known for. The neuron must also beat the description lookup.",
+   "premise": "P1. A table that predicts where an unseen meme's neuron sits would give the atlas real periodic structure and a way to find units without examples. If only dense directions compose, the structure belongs to the model's geometry, not its neurons; if embeddings do as well, it belongs to language.",
+   "bio": "Mendeleev's eka-silicon: properties predicted from the gap",
+   "cost": "S. About 3,500 short passages by API (under 30 US dollars), one extraction pass of under an hour, arithmetic on a laptop; under two days.",
+   "payoff": "A direct test of whether meme space has rows and columns: a property of a missing entry is predicted, then checked. If it works, the catalogue can be extended to motifs nobody has written passages for, including the cells the folktale index itself leaves empty.",
+   "risk": "Row and column words can leak: stepmother passages share vocabulary even when the usual words are avoided, so the predicted direction may be a role detector plus an act detector. Scoring against row and column neighbours limits this. Family roles and violent acts are also an easy grid; a pass may not carry to subtler motifs.",
+   "review": "Promoted from a seed and made concrete by the reviewer, to take the Mendeleev slot from AT-26, which US26 already covers. Weakness: embedding arithmetic will probably tie the direction test, so the informative part is whether a single neuron sits where the table says; the grid is an easy one.",
+   "priority": 3.0,
+   "sources": [
+    "Li et al. 2024, arXiv:2410.19750",
+    "Hagedorn, trilogy dataset, Zenodo 6575263",
+    "Choi et al. 2024, Scaling automatic neuron description (Transluce)",
+    "Gurnee et al. 2023, arXiv:2305.01610"
+   ],
+   "region": "atlas",
+   "status": "registered"
+  },
+  {
    "id": "AT-S1",
    "region": "atlas",
    "status": "seed",
    "priority": 0,
-   "title": "Eka-meme: predict a missing unit from its neighbours",
-   "question": "Can the direction of a held-out unit be predicted from three related units' output weights, and does the predicted direction detect the fourth motif in reworded stories?",
-   "note": "The purer Mendeleev test: properties of an undiscovered element. Li et al. 2024 report parallelograms among sparse-autoencoder features. Rival: analogy arithmetic on sentence embeddings, and an LLM reader."
+   "title": "Mendeleev gaps with catalogue entries",
+   "question": "Do combinations of admitted catalogue motifs that older films never used turn up more often in films released after the model was published than matched unused combinations?",
+   "note": "Was design AT-26; demoted because US26 already tests unit gaps against later films. At the study's 3% presence bar (study/paper/paper.md, section 2.3) almost no pair is unseen in 57,000 plots and chance 'realises' over half of pairs: use larger combinations and a blind reader as judge. Rival: a keyword table."
   },
   {
    "id": "AT-S2",
@@ -1504,7 +1504,7 @@
    "priority": 0,
    "title": "Independent assortment and linkage",
    "question": "Do memes from one source enter an adaptation together as linked blocks, or independently of one another?",
-   "note": "Mendel's second law, on the AT-23 trios. Needs sentence positions, so a re-extraction. Rival: co-occurrence blocks of words; null by shuffling sentences within a work."
+   "note": "Mendel's second law, on the AT-23 trios. Needs sentence positions, so a re-extraction. Rival: co-occurrence blocks of words; null by shuffling sentences within a work. Neighbour: CJ24."
   },
   {
    "id": "AT-S4",
@@ -1522,19 +1522,10 @@
    "priority": 0,
    "title": "Cistron, recon, muton for memes",
    "question": "Are the neurons that detect a meme, the neurons that carry it into a retelling and the neurons that write it when pushed the same neurons?",
-   "note": "Benzer split the gene three ways with three tests. Joins AT-21 and AT-22 (which now separates reading from writing) with a steering arm. Rival: one difference-of-means direction doing all three jobs."
+   "note": "Benzer split the gene three ways with three tests. Joins AT-21 and AT-22 (which now separates reading from writing) with a steering arm. Rival: one difference-of-means direction doing all three jobs. Neighbour: EN-23."
   },
   {
    "id": "AT-S6",
-   "region": "atlas",
-   "status": "seed",
-   "priority": 0,
-   "title": "Precision at natural base rates",
-   "question": "On 1,000 random film plots, what share of an admitted entry's fires does a blind reader confirm, and at what firing rate does that share reach one half?",
-   "note": "Added by the reviewer. The study's presence bar fires on about 3% of works by construction, so a motif found in 1% of films yields mostly false alarms. Needed before population-scale use (AT-23, AT-26). Rival: a keyword list and an LLM reader at the same firing rate."
-  },
-  {
-   "id": "AT-S7",
    "region": "atlas",
    "status": "seed",
    "priority": 0,
@@ -1543,16 +1534,7 @@
    "note": "The TV Tropes half of the taxonomy check. TiMoS has 5,623 synopses tagged with 95 tropes; TV Tropes text is CC BY-NC-SA, so commit labels only. Rival: embedding similarity between the two index descriptions; an LLM matching them by reading."
   },
   {
-   "id": "AT-S8",
-   "region": "atlas",
-   "status": "seed",
-   "priority": 0,
-   "title": "Do units nest the way the motif index does?",
-   "question": "Do admitted units for motifs in the same Thompson chapter sit closer together, in output weights or in co-firing, than units for motifs from different chapters?",
-   "note": "Added by the reviewer. A taxonomy of the memes themselves; AT-25 is a key for tales. Thompson's 23 chapters are topical, so the rival, embedding the motif definitions, will probably win; the question is whether the model's own grouping adds anything."
-  },
-  {
-   "id": "AT-S9",
+   "id": "AT-S7",
    "region": "atlas",
    "status": "seed",
    "priority": 0,
@@ -1561,7 +1543,7 @@
    "note": "The type-specimen idea from taxonomy; extends AT-24 to later model releases. Rival: the written definition read by an LLM."
   },
   {
-   "id": "AT-S10",
+   "id": "AT-S8",
    "region": "atlas",
    "status": "seed",
    "priority": 0,
@@ -1570,13 +1552,13 @@
    "note": "Gene Ontology's evidence codes applied to AT-21 entries. Rival: the admission AUC itself as the predictor. AxBench found prompting out-steers internal units, so expect few passes."
   },
   {
-   "id": "AT-S11",
+   "id": "AT-S9",
    "region": "atlas",
    "status": "seed",
    "priority": 0,
    "title": "Strong-regime field for every entry",
    "question": "On the texts where an admitted unit is called present, is it firing at 30% or more of its maximum over a large general corpus?",
-   "note": "Cammarata's legibility claim covers strong activations only; the study's bar is relative to 69 films. Rival: the unit's best single word. Needs about 100 million tokens of extraction."
+   "note": "Cammarata's legibility claim covers strong activations only; the study's bar is relative to 69 films. IN23 tests the rule; this is the per-entry record, with a blind reader's confirmation rate on random film plots. Rival: the unit's best single word. Needs about 100 million tokens of extraction."
   },
   {
    "id": "ME-21",
@@ -2339,6 +2321,536 @@
    "title": "Same idea, different author",
    "question": "When two teams publish the same discovery at the same time, does the more prominent team's wording spread further in later papers?",
    "note": "Added in review. Holds the 'what' fixed so only the 'who' varies, the cleanest Girard test found. Bikard 2020 lists simultaneous discoveries; Huber et al. 2022 randomised author prominence in peer review. Dataset access and size not checked. Rival: word and phrase adoption."
+  },
+  {
+   "id": "PO-21",
+   "title": "Meme heritability across languages, against a retelling ceiling",
+   "question": "When a film adapts a documented source and the two plot summaries come from different-language Wikipedias, are neuron units inherited nearly as reliably as they are re-measured in a second summary of the same story, and more reliably than translated words?",
+   "hypothesis": "On 500 or more held-out sources, among units repeatable across languages (ceiling at least 0.2 above floor on development sources), concept units reach a median heritability index of at least 0.30 (0 = unrelated works, 1 = the same story summarised in another Wikipedia), at least 0.10 above translated words screened the same way.",
+   "falsifier": "Median index at or below 0.10, or a lead over translated words whose 95% bootstrap interval (resampling sources) includes zero. Void, and reported as an unreliable reader, if fewer than 200 concept units pass the repeatability screen. At 500 sources one unit's correlation has a standard error of 0.045.",
+   "data": "Tell me again! (Hatzel and Biemann 2024): 96,831 plot summaries of 29,505 stories from five Wikipedias, with English machine translations, name-masked versions and Wikidata IDs; CC BY-SA 4.0; 1.7 GB. Joined to Wikidata 'based on' links (CC0): 1,363 film-source pairs over 958 sources have both ends in it (reviewer's join, 2026-11-08), before length filters.",
+   "method": "A unit is one sign of one neuron, word-like if one word predicts its presence, else concept; classes and bars fixed on 20% of sources. Non-English summaries are machine-translated. Correlate presence across: one story in two Wikipedias, close translations dropped (ceiling); source and adaptation (transmission); source and genre-matched unrelated film (floor). Index = (transmission - floor)/(ceiling - floor).",
+   "rivals": "Per feature, with the same screen: machine-translated word presence; an LLM answering 50 motif questions per text (most dangerous: repeatable by design); Llama Scope sparse-autoencoder features; random active units; length. Whole profile: multilingual-e5 and the dataset's published retrieval baselines. If the LLM reader wins, we still learn each unit's repeatability, the reader's first error rate.",
+   "premise": "both. P1: a concept-unit lead means units are wording-independent hereditary markers; a tie leaves P1 where words left it; too few repeatable units means the reader is unreliable. P2: heritability rankings of matched units should agree between Qwen and Llama (rank correlation at least 0.5).",
+   "bio": "Parent-offspring regression; repeatability as the ceiling on heritability; synonymous-site baseline.",
+   "cost": "M. About a week: the dataset is ready-made and name-masked; roughly an hour of extraction per model on one laptop, then the Wikidata join and analysis.",
+   "payoff": "A per-unit table of repeatability, silent-change rate and heritability; a list of units fit to be hereditary markers; and a working definition of synonymous change, which dN/dS-style tools need.",
+   "risk": "Genre-typical content that recurs without descent counts as inherited unless the floor is matched tightly. Machine translation may flatten wording differences. Few units may pass the repeatability screen.",
+   "review": "The index rewarded unreliable features (small denominator): every class now passes a repeatability screen first. Swapped self-scouted Wikipedias for a ready, name-masked five-language dataset; pair count checked (1,363). Remaining: how tightly the floor is genre-matched decides how much 'heritability' is convergence.",
+   "priority": 4.5,
+   "sources": [
+    "Hatzel and Biemann 2024",
+    "Visscher et al. 2008",
+    "da Silva and Tehrani 2016",
+    "Nei and Gojobori 1986"
+   ],
+   "region": "population",
+   "status": "registered"
+  },
+  {
+   "id": "PO-22",
+   "title": "ABBA-BABA test for borrowing in crossover works",
+   "question": "Can an excess-sharing statistic on name-free unit presence tell which outside franchise a crossover work borrowed from, more often than plain similarity or the same statistic on words?",
+   "hypothesis": "Calibration: when donor sentences are spliced into host plots, D rises with the spliced share (rank correlation at least 0.8). Test: on 40 crossovers between separate franchises, D is higher for the true donor than for a wrong donor of the same genre and decade in at least 80%, and more often than word D.",
+   "falsifier": "Tool claim fails at 65% or fewer correct (40 crossovers give about 0.8 power to tell 80% from 60%). Unit claim fails if word D or plain similarity is correct as often (paired interval, clustered by franchise pair, includes zero). Void if calibration fails, or ordinary franchise entries in the crossover slot give mean D outside plus or minus 0.05.",
+   "data": "Code check only: committed matrix (`study/results/qwen3-8b/memes.json.gz`, 114 works, names present). Test: 40 crossovers between two separate franchises, over 15 or more franchise pairs, plus parent works. The cached pool (`preregistration/sources/t3_candidates.jsonl.gz`) has 143 crossover-category plots, but most are same-universe team-ups; about 20 qualify by the reviewer's reading of titles. Fetch the rest from Wikipedia's crossover categories (CC BY-SA 4.0).",
+   "method": "Mask names; keep every unit (the committed matrix keeps only families in six or more Batman works, missing donor material). Equal sentence counts. For crossover X, host work A, donor work B: ABBA = units in X and B, not A; BABA = units in A and B, not X. D = (ABBA - BABA)/(ABBA + BABA), averaged over choices.",
+   "rivals": "The same D on word presence (most dangerous: donor vocabulary survives name masking); plain similarity of crossover to donor with no host correction; embedding similarity gain; an LLM asked to name the donor from masked text (probably near ceiling); random non-meme units. A tie with words still validates D as a tool for unit matrices.",
+   "premise": "both. P1: if unit D only matches word D, borrowing detection needs no neurons; a unit lead on name-free text would be the first population statistic where units see more than words. P2: Qwen and Llama should rank donors alike (rank correlation at least 0.6).",
+   "bio": "Introgression test between non-sister lineages (Green 2010; Durand 2011).",
+   "cost": "S. A day to list crossovers, donors and wrong donors from Wikipedia leads; about 600 works, minutes of extraction per model; splicing needs no new text.",
+   "payoff": "A tested, tree-free statistic for borrowing between franchises with a known smallest detectable share, and a plain answer on whether name-free unit matrices carry donor signal beyond words.",
+   "risk": "An easy win for every method: crossovers contain the donor's characters and world, so words and the LLM reader will probably tie or lead. It must skip the 39 held-out Batman works (`preregistration/works_batman_extended.json`), several of which are crossovers.",
+   "review": "The free pilot was biased: the committed matrix drops donor units, so it is now a code check. Added spliced-dose calibration, a plain-similarity rival, a harder wrong donor, separate-franchise crossovers only. Remaining: documented crossovers are easy for words, so the unit claim will probably tie.",
+   "priority": 3.0,
+   "sources": [
+    "Durand et al. 2011",
+    "Green et al. 2010",
+    "Patterson et al. 2012",
+    "preregistration/sources/t3_candidates.jsonl.gz"
+   ],
+   "region": "population",
+   "status": "registered"
+  },
+  {
+   "id": "PO-23",
+   "title": "Random-copying null and frequency-increment test on film plots",
+   "question": "Across eighty years of film plots, does any unit's frequency change more than random copying with innovation predicts, and does that verdict differ from the one its own words receive?",
+   "hypothesis": "At 5% false discovery, in at least two of three time binnings, at least 1% of a 5,000-unit panel reject drift, and for at least 30% of those the unit's word shadow does not reject in the same direction. Before freezing, simulated power must reach 0.8 for a doubling of odds over 40 years.",
+   "falsifier": "Under 0.25% reject (drift suffices at this power), or over 90% of rejecting units are mirrored by their word shadows. Void if the control with release years shuffled within genre, or simulated drift with threshold noise, rejects more than 1% of units.",
+   "data": "CMU Movie Summary Corpus: 42,306 English Wikipedia plot summaries (November 2012 dump) with release date, genre and country from Freebase; 46 MB; CC BY-SA. Median length is 9 sentences; 20,933 have ten or more, leaving 410 to 3,937 films per 5-year bin from 1930 (reviewer count, 2026-11-08). One dump, so the editors' era is constant.",
+   "method": "Mask names; keep plots of ten or more sentences, cut to ten. On 2,000 development films, merge co-firing units and set each unit's bar at its top fifth. Frequencies in 5-year bins, resampled to equal size and a constant genre-by-country mix. Fit drift; apply the frequency-increment test, a t-test on variance-scaled frequency changes. Word shadow: presence predicted from words alone.",
+   "rivals": "The identical test on each unit's word shadow, on frequency-matched word types, LDA topics and embedding clusters; an LLM tagging 50 motifs on 2,000 films; random non-meme units. Most dangerous: words, because most strong units are word detectors. If words flag the same items we still gain the first drift baseline for plots.",
+   "premise": "assumes both. A pass licenses later selection claims and shows units move differently from words; mirrored verdicts mean P1 adds nothing here. P2 gets a functional test: Qwen and Llama twins should receive the same verdict (kappa at least 0.4).",
+   "bio": "Kimura's neutral theory; frequency-increment test on allele time series (Feder 2014).",
+   "cost": "M. One pass over about 21,000 summaries, roughly an hour per model, stored at one bit per unit per film (about 2.5 GB); a week of analysis and power simulation.",
+   "payoff": "A fitted drift baseline for film plots and a short, binning-stable list of units whose rise or fall drift cannot explain: the entry ticket for any selection claim.",
+   "risk": "Equifinality and survivorship: Wikipedia covers the old films that stayed famous, which mimics selection; binning changes verdicts (Karjus 2020); 16 bins give little power per unit, so a low count may mean weak power, not drift.",
+   "review": "'First 15 sentences' left most plots shorter (median 9): now exactly ten. The 3% bar gave about 12 present films in early bins: now top fifth. Added equal bin sizes, a multi-word shadow rival, a 1% void threshold. Remaining: Wikipedia survivorship looks like selection.",
+   "priority": 3.5,
+   "sources": [
+    "Bentley, Hahn and Shennan 2004",
+    "Feder et al. 2014",
+    "Karjus et al. 2020",
+    "CMU Movie Summary Corpus (Bamman, O'Connor and Smith 2013)"
+   ],
+   "region": "population",
+   "status": "registered"
+  },
+  {
+   "id": "PO-24",
+   "title": "Are linked memes inherited together, beyond chance co-occurrence?",
+   "question": "Do pairs of units that co-occur across a population of films also pass together from a source to its adaptation more often than their separate transmission rates and ordinary co-occurrence predict?",
+   "hypothesis": "For linked pairs (top 1% of co-occurrence after controls) that peak in different scenes, the odds ratio of joint retention in true source-adaptation pairs is at least 1.3 times that in matched unrelated pairs, after dividing out the same figure for unlinked pairs, and larger than for frequency-matched linked word pairs. Up to 760 held-out sources before length filters.",
+   "falsifier": "Ratio at or below 1.1 with the 95% interval's upper end under 1.3 (bundles are co-occurrence, not co-inheritance), or linked word pairs show an equal or larger ratio (interval of the difference includes zero). Intervals by bootstrap over sources.",
+   "data": "Tell me again! (Hatzel and Biemann 2024; 96,831 name-masked summaries of 29,505 stories; CC BY-SA 4.0). Population panel: 5,000 English film summaries outside any documented pair. Transmission panel: the 1,363 film-source pairs (958 sources) that Wikidata 'based on' links (CC0) join inside it (reviewer's join, 2026-11-08); 20% of sources for development.",
+   "method": "Merge units that co-fire within sentences. On the population panel, correlate presence pairwise after removing genre, decade, length and 20 principal components; keep linked pairs from different layers with different best-matched words whose top sentences in the source lie three or more apart, plus frequency-matched unlinked pairs. Where a held-out source carries both units, compare odds ratios of joint retention.",
+   "rivals": "Word pairs linked by pointwise mutual information; LDA topic pairs; embedding-cluster pairs; an LLM's motif answers paired the same way; random non-meme unit pairs. All under the same different-scene rule. Most dangerous: word pairs, because topic vocabulary travels together. A tie means memeplexes are a text statistic.",
+   "premise": "P1. Co-inheritance beyond word bundles would show units capture inherited structure that vocabulary misses; a tie or a null says the memeplex is co-occurrence. The test only has meaning if single units are heritable (PO21).",
+   "bio": "Linkage disequilibrium, co-segregation and hitch-hiking.",
+   "cost": "M. Shares PO21's dataset and extraction (about 9,000 summaries, an hour per model) plus sentence positions for a 5,000-unit panel; one to two weeks.",
+   "payoff": "A list of meme bundles that travel together down documented lineages, each with a chance baseline: the first empirical test of the memeplex idea.",
+   "risk": "Leftover sub-genre structure makes any linked pair travel together when an adaptation keeps its source's genre, for words as much as for units, so a tie is the likely result.",
+   "review": "A probability excess grows mechanically with retention rates: replaced by an odds-ratio contrast against unlinked pairs. Added a different-scene rule (same-sentence pairs co-transmit trivially), principal components and merging. Remaining: residual genre structure; word pairs will probably tie; depends on PO21.",
+   "priority": 2.5,
+   "sources": [
+    "Maynard Smith and Haigh 1974",
+    "da Silva and Tehrani 2016",
+    "Hatzel and Biemann 2024",
+    "Wikidata P144 links (query service, 2026-11-08)"
+   ],
+   "region": "population",
+   "status": "registered"
+  },
+  {
+   "id": "PO-25",
+   "title": "Meme-wide association with success, corrected for lineage",
+   "question": "Which units go with a film's box-office rank once genre, era, length, budget and documented lineage are controlled, and do the hits hold in held-out franchises and between instalments of one series?",
+   "hypothesis": "At least 20 units pass 5% false discovery; at least 60% replicate in sign at p < 0.05 in held-out franchises; their combined score picks the better-earning of two consecutive instalments in at least 55% of within-series pairs, ahead of word and embedding scores. About 450 usable pairs (of 624) give roughly 0.5 power at 55%, 0.85 at 58%.",
+   "falsifier": "Fewer than 5 hits replicate, or within-series accuracy's 95% interval includes 50%, or a word or embedding score does as well (difference interval includes zero). Void if hits survive shuffling outcomes between franchises (inflation factor, observed over expected median test statistic, above 1.1).",
+   "data": "Discovery: CMU Movie Summary Corpus (CC BY-SA): 7,531 plots carry Freebase revenue, 5,693 of them with ten or more sentences (reviewer count, 2026-11-08). Within-family test: Wikidata (CC0; query service, same day) lists 179 film series with two or more films that have box office and an English article (803 films); 3,236 films have both box office and budget.",
+   "method": "Mask names; cut plots to ten sentences. Fix a 5,000-unit panel on development films. Per unit, a mixed model of within-year revenue rank on presence; covariates: genre, country, decade, budget where known, full summary length (a proxy for editor attention) and ten principal components; random effect: franchise. Split discovery and replication by franchise. Then score consecutive instalments within series.",
+   "rivals": "The same pipeline on TF-IDF terms; ridge regression on sentence embeddings; an LLM rating 20 named story features; random non-meme units; length and metadata alone. Most dangerous: metadata (budget, sequel number, genre) overall and embeddings for prediction, since content explains little of success. A null still measures how far lineage inflates naive hits.",
+   "premise": "P1. Replicated, within-series unit hits beyond words would give neuron memes practical content; none, or a tie, leaves the case for neurons resting on readability. Each hit is re-tested on reworded sentences to see whether it is a word or an idea.",
+   "bio": "Genome-wide association with a kinship mixed model; within-family design against confounding.",
+   "cost": "M. About 7,000 plots, under an hour of extraction per model; one to two weeks for joins, models and the within-series test.",
+   "payoff": "A replicated list of success-linked memes with the shrinkage from between-family to within-family effects measured, or a documented null with its cause.",
+   "risk": "Summaries are written after release, and hits attract longer, more polished ones, so units may detect editor attention, not story content. Budget, stars and marketing dominate revenue; a null is the likely result.",
+   "review": "The sibling test was unpowered: only 111 sources have two box-office adaptations, so it now compares instalments within 179 series. Added budget and summary-length covariates; revenue count confirmed. Unrepaired: summaries are written after success, so hits may read editor attention.",
+   "priority": 2.0,
+   "sources": [
+    "Klein et al. 2005",
+    "Eliashberg, Hui and Zhang 2007",
+    "Martin et al. 2016",
+    "CMU Movie Summary Corpus (Bamman, O'Connor and Smith 2013)"
+   ],
+   "region": "population",
+   "status": "registered"
+  },
+  {
+   "id": "PO-26",
+   "title": "Open or closed: pan-memomes of retellings and series",
+   "question": "Does the rate at which each added work brings new units recover a documented ordering (retellings of one source below sequel series below matched random film sets), and does it do so better than vocabulary growth?",
+   "hypothesis": "Name-free, the share of a set's sixth work that is new separates 25 retelling sets from 25 sequel series with AUC at least 0.80 (chance 0.5), and at least 45 of the 50 real sets are more closed than all 50 of their matched random sets. Twenty-five against 25 gives a standard error near 0.06 on the AUC.",
+   "falsifier": "AUC at or below 0.65, or 10 or more of the 50 real sets fall inside their random-set range (no more closed than chance). Units add nothing if word-type growth separates the classes as well (paired bootstrap interval of the AUC difference includes zero).",
+   "data": "Sets of six or more works with English Wikipedia plot sections (CC BY-SA 4.0). Wikidata (CC0; reviewer recount, 2026-11-08) lists 118 sources with six or more film adaptations (22 single stories with twelve or more, such as Dracula) and 119 film series with six or more films. No Shakespeare sets: that list is a paused test. Plus 1,000 random films.",
+   "method": "Mask names; cut to equal length. Keep every unit: the committed matrix drops families found in under six Batman works (`study/discover.py`), hiding rare memes. Per set, average over orderings the share of the sixth work's units absent from the first five; with twelve works, also fit the power-law decline. Compare with 50 random sets matched on decade, genre and length.",
+   "rivals": "Heaps'-law growth of word types and TF-IDF terms; spread of sentence embeddings; distinct motifs an LLM tags on a subsample; random non-meme units. Most dangerous: word types, which will probably give the same ordering. Then the pangenome view is confirmed as a tool but needs no neurons.",
+   "premise": "both. P1: a pass shows the presence matrix carries population structure beyond threshold noise; equal performance from words says canon tiers describe vocabulary. P2: Qwen and Llama should rank the 50 sets alike (rank correlation at least 0.7).",
+   "bio": "Pangenome: core and accessory genes, open or closed (Tettelin 2005).",
+   "cost": "M. About 1,500 plots, minutes of extraction per model; three days to assemble and check the sets; a week in all.",
+   "payoff": "A noise-corrected openness measure with core, shell and cloud tiers for 50 story traditions: a way to say whether a franchise's meme pool is still growing.",
+   "risk": "The ordering is close to guaranteed for any text representation, so the test may only show that unit matrices behave like vocabulary. Threshold noise (about 3% false presence per unit) may swamp the rare tier.",
+   "review": "Ten against ten could not tell units from words (an AUC gap of 0.05 is noise): now 25 against 25 sets of six or more, scored at a fixed depth. Dropped the paused Shakespeare list. Remaining: words will give the same ordering; the value is the tool.",
+   "priority": 2.5,
+   "sources": [
+    "Tettelin et al. 2005",
+    "Snel, Bork and Huynen 1999",
+    "study/results/canon.json",
+    "study/results/robustness/nulls.json (f1_chance)"
+   ],
+   "region": "population",
+   "status": "registered"
+  },
+  {
+   "id": "PO-27",
+   "title": "One film population, two Wikipedias: an Fst check",
+   "question": "When the same films are summarised in two Wikipedias, is the differentiation between the two sets of summaries (which should be zero) small beside the differentiation between national film industries, and smaller for units than for translated words?",
+   "hypothesis": "Per-unit Fst (the share of a unit's frequency variance that lies between groups) between US and German productions agrees across English and German summaries (rank correlation at least 0.5), and for concept units the median ratio of industry Fst to summariser Fst is at least 2 and above that of translated words.",
+   "falsifier": "Rank correlation below 0.3, or median ratio at or below 1 (the reader measures the summariser, not the film), or translated words reach as high a ratio (bootstrap over films, interval of the difference includes zero). With 1,000 films a side, sampling alone gives Fst near 0.0005.",
+   "data": "Tell me again! (Hatzel and Biemann 2024): 96,831 summaries of 29,505 stories (25,860 films) from five Wikipedias, with English machine translations and name-masked versions; CC BY-SA 4.0. German covers 98% of stories and English 89%. Country of origin from Wikidata (CC0). Needs 1,000 US and 1,000 German-language productions with both summaries of ten or more sentences; count to confirm.",
+   "method": "Read English summaries and machine-translated German ones, names masked, cut to ten sentences. Units, classes and bars fixed on 500 development films. Summariser Fst: the same films, English against German summary. Industry Fst: US against German productions within one Wikipedia. Sampling noise is subtracted; nulls shuffle group labels within decade and genre.",
+   "rivals": "The same two Fst values for machine-translated word presence (translation wording should inflate its summariser Fst; if units do no better, P1 loses an easy case); an LLM's answers to 50 motif questions (most dangerous: probably the cleanest reader); multilingual-e5 dimensions; sparse-autoencoder features; random active units; length.",
+   "premise": "P1. Units that differ between industries but not between summarisers read content and are fit for population comparisons; if summariser Fst matches industry Fst, cross-population claims from summaries are unsafe. P2: per-unit ratios should agree between Qwen and Llama twins (rank correlation at least 0.5).",
+   "bio": "Fst between populations, with a technical-replicate control (the same individuals genotyped twice).",
+   "cost": "S to M. Shares PO21's dataset; about 4,000 summaries, minutes of extraction per model; three days of analysis.",
+   "payoff": "A list of units safe for comparing populations of works, the size of the summariser artefact, and the first Fst-style statistic for memes with a built-in zero point.",
+   "risk": "German Wikipedia summaries tend to be longer, so some summariser Fst is real difference in what gets told; machine translation adds its own style. Too few German productions may have long English summaries.",
+   "review": "Added by the reviewer: the area names Fst but had only a low-power seed. The same films in two Wikipedias give a true zero for differentiation. Weakness: summariser Fst mixes wording with real differences in detail; film counts per industry are unconfirmed.",
+   "priority": 3.5,
+   "sources": [
+    "Hatzel and Biemann 2024",
+    "Lewontin and Krakauer 1973",
+    "Ross, Greenhill and Atkinson 2013",
+    "Wikidata query service (2026-11-08)"
+   ],
+   "region": "population",
+   "status": "registered"
+  },
+  {
+   "id": "PO-S1",
+   "region": "population",
+   "status": "seed",
+   "priority": 0,
+   "title": "McDonald-Kreitman test for two franchises",
+   "question": "Are wording-robust units over-represented among differences fixed between Batman and Superman works, compared with differences that vary inside each franchise?",
+   "note": "Needs PO21's synonymous class and 20 or more works per franchise. Rival: the same two-by-two table with LLM-coded tropes against word types."
+  },
+  {
+   "id": "PO-S2",
+   "region": "population",
+   "status": "seed",
+   "priority": 0,
+   "title": "dN/dS by canon tier",
+   "question": "Is change along documented descent, scaled by the retelling (synonymous) rate from PO21, lowest for core memes and highest for optional ones?",
+   "note": "Purifying selection on the canon. Rival: embedding distance over lexical distance. Falsified if core and optional ratios are equal or the embedding ratio gives the same ordering."
+  },
+  {
+   "id": "PO-S3",
+   "region": "population",
+   "status": "seed",
+   "priority": 0,
+   "title": "Is the meme frequency spectrum just threshold noise?",
+   "question": "Does the count of units present in exactly k of n contemporaneous works differ from what the presence rule's roughly 3% false-positive rate (`study/paper/paper.md`, section 2.3) produces alone?",
+   "note": "A Tajima's-D-style check that needs a re-extraction keeping rare units. Rival: the word-type spectrum. Without it, singleton counts and any spectrum statistic are uninterpretable."
+  },
+  {
+   "id": "PO-S4",
+   "region": "population",
+   "status": "seed",
+   "priority": 0,
+   "title": "Fst against documented remake flow",
+   "question": "Is per-unit differentiation (Fst) between national film industries lower where Wikidata records more cross-industry remakes, beyond what word-based Fst shows?",
+   "note": "CMU corpus has country labels. Partial Mantel test controlling word Fst. About a dozen industries, so power is low. Run after PO27, on summariser-safe units only. A better-powered cousin: labelled hybrid genres (horror comedy) should test as mixtures of their parent genres, and unrelated genres should not."
+  },
+  {
+   "id": "PO-S5",
+   "region": "population",
+   "status": "seed",
+   "priority": 0,
+   "title": "Sweeps and hitch-hikers after a hit",
+   "question": "After a hit such as The Dark Knight (2008), do its optional memes rise in other superhero films and drag linked passenger memes with them?",
+   "note": "Needs PO23's drift baseline and PO24's linked pairs. Rival: phrase-frequency series and embedding-cluster frequencies over the same years."
+  },
+  {
+   "id": "PO-S6",
+   "region": "population",
+   "status": "seed",
+   "priority": 0,
+   "title": "Price equation split per unit",
+   "question": "Is change in a unit's frequency along documented descent carried more by selection among parent works or by transformation during adaptation?",
+   "note": "Wikidata P144, with number of adaptations as fitness; PO21's 1,363 checked pairs are a starting sample. Sperber against Dawkins in one number. Rival: the same split on word presence and on LLM-coded tropes."
+  },
+  {
+   "id": "PO-S7",
+   "region": "population",
+   "status": "seed",
+   "priority": 0,
+   "title": "Admixture fractions for two-source works",
+   "question": "Can a mixture model on unit presence recover how much of The Dark Knight comes from The Long Halloween and how much from The Killing Joke (both documented in `study/results/experiments.json`)?",
+   "note": "Validate first on stories built from two known sources at set proportions, as in PO22's spliced calibration. Rival: a topic model on words, the same model family as genetic admixture tools."
+  },
+  {
+   "id": "PO-S8",
+   "region": "population",
+   "status": "seed",
+   "priority": 0,
+   "title": "Forecast the next work's new memes",
+   "question": "Does an accumulation curve fitted on the 32 studied Batman works predict how many new units each of the 39 held-out works in `preregistration/works_batman_extended.json` adds?",
+   "note": "Tettelin-style out-of-sample forecast; follows PO26. Rival: the same forecast from word types. Uses up the held-out Batman works, so register it before anything else touches them."
+  },
+  {
+   "id": "PO-S9",
+   "region": "population",
+   "status": "seed",
+   "priority": 0,
+   "title": "Does lineage correction recover randomised truth?",
+   "question": "On archived headline tests, do unit associations with click rate estimated across tests, after standard corrections, match the randomised associations measured within each test?",
+   "note": "Added by the reviewer. Upworthy Research Archive (32,487 tests, CC BY 4.0; drop the 22% flagged for failed randomisation). Within-test effects are causal, so this measures how much topic confounding principal components and mixed models remove, before PO25-style film results are trusted. Rival: the same comparison on words and embeddings."
+  },
+  {
+   "id": "PO-S10",
+   "region": "population",
+   "status": "seed",
+   "priority": 0,
+   "title": "Silent-change rate from fourteen years of rewrites",
+   "question": "Between a film's 2012 plot summary (CMU corpus) and today's Wikipedia one, how fast do units change per unit of wording change, and which units stay put under heavy rewriting?",
+   "note": "Added by the reviewer. Same film, same language, a natural dose: in a 37-film spot check (2026-11-08) 11 kept under half of their 2012 content words. Gives a per-unit synonymous rate without machine translation, complementing PO21's ceiling. Rival: each unit's word shadow, embeddings, an LLM's motif answers."
+  },
+  {
+   "id": "CE-21",
+   "title": "Do neuron units track what survives retelling?",
+   "question": "When people retell a story in their own words, do fixed neuron units predict which statements survive, and recover the published content and prestige effects, better than cheap readers?",
+   "hypothesis": "On 87,421 human-coded cells from 163 people's spoken recall, unit persistence predicts present-or-absent with AUC (ranking accuracy; 0.5 is chance) at least 0.05 above the better of content-word overlap and BM25 word matching, and at least 0.65 where under half a statement's words appear. Unit-coded recall reproduces Berl et al.'s five significant effects: social, survival, negative, biologically counterintuitive, prestige.",
+   "falsifier": "AUC gain over word overlap below 0.03, or AUC under 0.60 on the low-overlap cells, or fewer than 4 of the 5 published effects with the right sign. Sample: 87,421 cells, 538 statements, 163 people, two stories. Bootstrap by person and by statement; the standard error should be near 0.01, to confirm by simulation.",
+   "data": "Berl et al., OSF 72v3f (CC BY 4.0): 326 transcripts of spoken recall, 538 statements coded present or absent, speaker prestige randomised. Acerbi and Stubbersfield, OSF 6v2ps: ChatGPT chains on the same two stories and three older materials, two coders, about 9,000 cells. Breithaupt et al., OSF jr2py: 348 human retellings. The last two state no licence: commit scores only.",
+   "method": "Units chosen for rewording robustness on Breithaupt's human retellings, frozen. A statement's signature is the units firing on its words in the source story; its score, the share still firing in the recall. Cut-offs set on one story, tested on the other. Mixed logistic model on content type and prestige. Nulls: random firing-rate-matched units; recalls shuffled across people; length covariate.",
+   "rivals": "Content-word overlap, BM25, best-match sentence-embedding cosine, an 8B model asked whether each statement is present (20,000-cell sample), recall length, random matched units, mean-pooled residual stream. Most dangerous: the LLM reader, since judging paraphrase is its home ground. If it wins, recall can be coded automatically and neurons are not needed for this work.",
+   "premise": "P1. A pass shows units follow ideas through human rewording against human coders, the regime the paper says it needs. A fail on the cleanest public paraphrase data with human coding leaves P1 little as a measurement claim.",
+   "bio": "One passage, many replicate lines",
+   "cost": "S. No generation needed. Two extraction passes over about 900 short texts and 20,000 short reader calls on one laptop.",
+   "payoff": "An error rate for unit readout under human paraphrase against human coders (their own agreement, kappa 0.74 on a re-coded tenth, sets the ceiling), and a check that unit-coded recall gives the same content and prestige effects as hand coding.",
+   "risk": "Only two stories, so statements share names and setting. Statements are finer than sentences, so neighbours may share one signature. The LLM reader probably wins outright.",
+   "review": "Moved the main test to Berl et al.'s human recall (87,421 coded cells), because the ChatGPT chains keep most words: a rough parse put word overlap near AUC 0.85 there, 0.78 on human recall. Dropped the fresh-chain test, which had no independent coder. Weakness: two stories.",
+   "priority": 5.0,
+   "sources": [
+    "Berl et al. 2021",
+    "Acerbi & Stubbersfield 2023",
+    "Breithaupt et al. 2024",
+    "Mesoudi, Whiten & Dunbar 2006"
+   ],
+   "region": "cultevo",
+   "status": "registered"
+  },
+  {
+   "id": "CE-22",
+   "title": "Do retelling chains converge whatever the starting story?",
+   "question": "Do chains started from different texts drift toward the same forms, and can units separate content copied from the seed from content that appears whatever the seed?",
+   "hypothesis": "With retellings held to about 150 words, the starting seed's share of unit-profile variation falls at least 30% by generation 8 under an open-ended retelling prompt, more than under a plain rephrase prompt. After subtracting the rephrase arm's drift (house style), a drift direction fitted on 20 seeds predicts drift on 20 held-out seeds with cosine at least 0.3.",
+   "falsifier": "Seed share falls less than 10%, or held-out drift cosine beats random matched units by under 0.05, or sentence-embedding centroids show the same drift consistency (within 0.05). 40 seeds, 3 chains, 8 generations, 2 writers, 2 prompts: 3,840 texts. Inference is by seed: 20 held-out seeds give a standard error near 0.03 if seeds spread 0.15; confirm by simulation.",
+   "data": "Seeds: the 20 initial texts in Perez et al.'s public code (GitHub jeremyperez2/TelephoneGameLLM; no licence file, so commit hashes only) plus 20 tale openings from Hagedorn and Darányi's Folktexts (1,518 tales; Zenodo 6575263; CC BY-SA 4.0 per its README). Chains generated locally. Human check: Breithaupt et al., OSF jr2py, 116 stories with 3 human retellings each; no licence stated.",
+   "method": "Unit profile per text from a reader model that wrote no chain. Statistics: seed share of variance by generation; per-unit rate of persisting where seeded against appearing where not seeded; held-out drift cosine. Nulls: texts re-paired across chains within generation; random firing-rate-matched units. Drift sign checked on human chains within length bands. Repeat with Llama Scope sparse-autoencoder features.",
+   "rivals": "TF-IDF vectors (words weighted by rarity), sentence-embedding centroids, mean-pooled residual stream, text length, random units, and the published property scorers (toxicity, positivity, difficulty). Most dangerous: embedding centroids, which see convergence of style and tone cheaply. If they win, attraction is confirmed in open models and units add only names for what converges.",
+   "premise": "P1, with a side reading on P2. If widely shared units are attractors, similarity without descent is expected and unit trees are exposed to false kinship, which would explain the failed identity test. Two writer models agreeing on the attractor is mild behavioural support for P2.",
+   "bio": "Convergent evolution; homoplasy",
+   "cost": "S. About 11 hours of local generation and one hour of extraction.",
+   "payoff": "A list of attractor units to exclude from lineage work, and a measured split of stability into copying and convergence.",
+   "risk": "Once house style is subtracted nothing may be left to converge; or writer models differ so much that no common attractor exists.",
+   "review": "Perez et al. already showed attractors on four scalar properties; the news here is the unit-level list. Fixed text length and switched to seed share of variance, since shrinking texts lower any count's variance; subtracted rephrase drift as house style; inference by seed. Weakness: reader and writers share LLM style.",
+   "priority": 4.0,
+   "sources": [
+    "Perez et al. 2024 (arXiv:2407.04503)",
+    "Acerbi et al. 2021",
+    "Claidière, Scott-Phillips & Sperber 2014",
+    "Breithaupt et al. 2024"
+   ],
+   "region": "cultevo",
+   "status": "registered"
+  },
+  {
+   "id": "CE-23",
+   "title": "Are meme units particles or thresholded continua?",
+   "question": "When a story is passed on blended with a second parent, do unit values in the child behave like particles, as replicator memetics needs, or like a graded quantity that blends, as Henrich and Boyd's continuous model allows?",
+   "hypothesis": "Memetics predicts that in free blends rewording-robust units fit segregation (child takes one parent's value) better than blending at least 20 percentage points more often than random directions in the residual stream, and at least 20% of units have two-peaked activations against under 5% of random directions. The slot arm must show segregation for at least 80% of slot units.",
+   "falsifier": "The segregation share of units is within 10 points of random directions or of embedding components, or under 20% of units favour segregation on held-out blends. Then discreteness comes from the text and the pooling, not the unit, and no replicator is needed. 150 parent pairs, 8 children per arm; proportions over 500 units have error under 0.03.",
+   "data": "Parents: 300 tales of 300 to 3,000 words from the 1,518 in Hagedorn and Darányi's Folktexts, labelled with ATU tale types (Zenodo 6575263, 10.8 MB; CC BY-SA 4.0 per its README), paired across types. Children written by two open models in three arms: free blend, slot copy, merged summary. Background: 20,000 sentences from the CMU Movie Summary Corpus (CC BY-SA).",
+   "method": "Units chosen for rewording robustness on 50 development pairs, frozen. Per trait, compare held-out likelihood of segregation (mixture of parental values) and blending (weighted parental mean pulled toward the population mean); Hartigan dip test for two peaks. Slot and merged-summary arms calibrate both patterns. Null: children re-paired with wrong parents of similar length. Repeat with sparse-autoencoder features and at 8-bit.",
+   "rivals": "The same comparison on TF-IDF term weights, principal components of sentence embeddings, random residual-stream directions pooled like units, Llama Scope features, random units and length; an LLM reader only codes which parent each event came from. Most dangerous: random directions, because a maximum over tokens can make anything look all-or-nothing. If they match units, Henrich and Boyd's case holds.",
+   "premise": "P1. Segregation and two peaks beyond what random directions show support 'a meme is a neuron firing' as more than a threshold. Blending supports treating neurons as a continuous trait measure and dropping replicator language; the paper's presence rule becomes a convenience.",
+   "bio": "Mendel's crosses against blending inheritance",
+   "cost": "S. 3,600 generated children and two extraction passes; about two days. The two-peak test can be tried first on the study's saved activations if they are still on disk.",
+   "payoff": "Decides which mathematics to use: particulate population genetics or quantitative genetics on continuous traits.",
+   "risk": "The verdict may describe how LLM writers blend, not how human authors do (see the seed on two-source works), and 4-bit activations may blur real peaks; the slot arm and the 8-bit check bound both.",
+   "review": "Text is made of discrete events and unit values are maxima over tokens, so any detector looks particulate. Made the claim relative to random directions, added a merged-summary arm as the blending anchor, and replaced binary word presence (which cannot blend) with term weights. The LLM-writer weakness remains.",
+   "priority": 4.5,
+   "sources": [
+    "Henrich & Boyd 2002",
+    "Claidière, Scott-Phillips & Sperber 2014",
+    "Hagedorn & Darányi 2022",
+    "He et al. 2024 (Llama Scope)"
+   ],
+   "region": "cultevo",
+   "status": "registered"
+  },
+  {
+   "id": "CE-24",
+   "title": "Price split: selection against transformation in adaptations",
+   "question": "Along documented book-to-film links, is change in how common a unit is carried by which books get adapted (selection) or by what adaptation does to them (transmission), and are units inherited more faithfully than words?",
+   "hypothesis": "Memetics predicts selection carries at least half the change: once the change seen under randomly re-paired children (the shift of medium) is subtracted, the selection term exceeds the transmission term for at least 50% of units, and noise-corrected parent-to-child fidelity (regression slope) of units beats frequency-matched words by at least 0.05.",
+   "falsifier": "Transmission exceeds selection for more than 80% of units after that subtraction, or the fidelity gap over words is below 0.02. At least 3,000 book-to-film pairs and 3,000 never-adapted novels, split by source work; with 1,500 held-out pairs a slope difference of 0.05 has standard error about 0.015.",
+   "data": "Wikidata 'based on' links (CC0): 6,110 film-from-written-work links with English Wikipedia articles at both ends, 4,312 distinct sources (query of 2026-11-08). In a sample of 10, 8 had plot sections at both ends; confirm the count before registration. Plots are CC BY-SA 4.0, names masked with the pre-registration's deterministic masker. Plus novels with plots and no recorded adaptation.",
+   "method": "The Price equation splits change in a trait's mean into selection (its covariance with number of adaptations) and transmission (mean parent-to-child change). Both per unit, standardised within medium. Fidelity: parent-child slope, noise-corrected using each film's 2012 (CMU corpus) and current plots. Units chosen on half the sources. Null: children reassigned within decade, genre and length; pairs sharing 8-word runs dropped.",
+   "rivals": "The identical decomposition on word presence, TF-IDF terms, sentence-embedding dimensions and LLM-coded tropes on a 300-pair sample; random units; length. The equation holds for any trait, so only these comparisons are informative. Most dangerous: word presence, because Wikipedia editors reuse phrasing between a book's page and its film's. If words tie, the split still answers Sperber against Dawkins for plots.",
+   "premise": "P1. Higher fidelity than words under a change of medium is the heritability evidence P1 lacks. A dominant transmission term says units are reconstructed, which favours attraction theory over replicator memetics whatever the unit.",
+   "bio": "Price equation; parent-offspring heritability",
+   "cost": "M. Wikidata and Wikipedia pulls, name masking, about 9,000 plots through two models; one to two weeks.",
+   "payoff": "Edmonds's fifth challenge answered with numbers: selection and transmission shares per unit, and a fidelity figure to set beside words.",
+   "risk": "Plot summaries are written by Wikipedia editors, not the adapters, so the transmission term mixes adaptation with summarising. Wikidata misses adaptations, so 'never adapted' is noisy.",
+   "review": "Counted the links on Wikidata. Added subtraction of the medium shift, within-medium scaling and a noise correction, because book and film plot pages differ in length and style. Run CE27 first. Weakness: editors, not adapters, wrote both texts, and the selection term will be small and noisy.",
+   "priority": 3.0,
+   "sources": [
+    "El Mouden et al. 2014",
+    "Nettle 2020",
+    "Mesoudi 2021",
+    "Wikidata P144"
+   ],
+   "region": "cultevo",
+   "status": "registered"
+  },
+  {
+   "id": "CE-25",
+   "title": "Content, prestige or conformity along citations?",
+   "question": "Along documented citation links, do some ideas pass from sources to citing papers more readily than others, even without their words, and does passing depend on how eminent the carrier is?",
+   "hypothesis": "Content: a unit's propagation score (how much more often papers citing a carrier show it than papers citing none) is stable between 2015-2019 and 2020-2024, rank correlation at least 0.5. Adoptions sharing none of its trigger words occur at 1.5 times the swapped-reference rate. Prestige: within a paper, adoption odds rise 10% per standard deviation of the carrier's earlier citations.",
+   "falsifier": "Stability under 0.3, or word-free adoptions no more common than under swapped references, or neuron units predicting held-out adoption no better than n-gram units (log-loss gain under 1%). 5,000 citing papers with at least 10 abstract-bearing references each give several hundred thousand paper-by-unit exposures, ample for odds ratios of 1.1; papers split by year.",
+   "data": "5,000 papers from one arXiv category, 2015 to 2024 (arXiv metadata, CC0 1.0), plus every reference that has an abstract, with yearly citation counts, from OpenAlex (CC0). OpenAlex's keyless quota was exhausted when checked, so a free key is needed. How fully it lists references for arXiv preprints is unconfirmed: check before registration.",
+   "method": "500 units chosen on 2015 to 2018, fixed. Propagation score per unit after Kuhn, Perc and Helbing. Logistic model of unit presence in the citing abstract on carrier share, the carrier's citation rank within the list, and unit effects. Control: each reference swapped for its nearest uncited same-year paper by embedding. Conformity reported, not tested: authors choose what they cite.",
+   "rivals": "The same model with n-gram units (the Kuhn, Perc and Helbing meme score), embedding-cluster units, LLM-tagged concepts on 500 papers, random units, abstract length. Most dangerous: n-grams, since a field reuses its terms. If they tie, the estimates stand as cultural-evolution results and neurons are shown unnecessary here.",
+   "premise": "Assumes both. It re-runs a published propagation analysis with the new unit. Neuron units earn credit only if word-free adoptions exceed the swapped-reference rate and add prediction; otherwise P1 gains nothing. Conformity needs assigned exposure, which a citation list is not.",
+   "bio": "Transmissibility of variants; hitch-hiking with fit carriers",
+   "cost": "M. Data assembly dominates; several hundred thousand sentences per model is a few hours of extraction.",
+   "payoff": "A count of ideas that pass along citations without their words, a stability figure for per-idea transmissibility, and a within-paper prestige estimate.",
+   "risk": "Topic similarity between a paper and what it cites mimics transmission; the swapped-reference control is matched by embedding, so it may remove real transmission too.",
+   "review": "Rebuilt around the published propagation score. Dropped the content-share test (unit base rates make it a tautology) and the conformity test (authors choose their sources, and a presence cut-off alone bends the curve). Exposure now covers all references with abstracts. Still observational: association only.",
+   "priority": 2.5,
+   "sources": [
+    "Kuhn, Perc & Helbing 2014",
+    "Henrich & Boyd 1998",
+    "Acerbi et al. 2016",
+    "Henrich & Gil-White 2001"
+   ],
+   "region": "cultevo",
+   "status": "registered"
+  },
+  {
+   "id": "CE-26",
+   "title": "Do meme sets grow and ratchet in chains?",
+   "question": "In chains where each writer learns a hidden rule set from the previous guide plus a few new examples, does the set of units in the guide grow and keep what it gained, in step with measured skill?",
+   "hypothesis": "Given pilot chains where skill rises 15 points over 10 generations, length-adjusted unit repertoire tracks the number of rules a guide supports (rank correlation at least 0.5, and 0.1 above word-type count) on chains using a renamed game. Units are lost at most half as often from intact guides as from guides missing 40% of sentences.",
+   "falsifier": "Repertoire correlation below 0.3, or within 0.05 of word-type count or length, or equal loss rates in the two arms. 60 chains by 10 generations by 2 arms: 1,200 guides; a chain-level bootstrap on 40 held-out chains should detect a 0.1 correlation gap at about 0.8 power, to confirm by simulation.",
+   "data": "Built, nothing downloaded: an invented card game with 12 coded rules in two skins (same rules, different names for suits and actions), examples generated by program, guides written by two open models to a fixed word budget. Skill is a frozen solver's accuracy on 144 held-out judgments, twelve per rule, given only the guide. Texts released CC BY 4.0.",
+   "method": "Units chosen on 20 development chains in the first skin, frozen; scored on 40 in the second. Per guide: repertoire size after regressing out length. Per unit: gains and losses. Truth: a rule is supported when the solver gets 10 of 12 judgments right. Nulls: guides shuffled across chains within generation; random firing-rate-matched units. Reader differs from writers and solver.",
+   "rivals": "Word-type count, guide length, embedding-cluster count, an LLM asked to list the rules a guide states, random units, mean-pooled residual norm. Most dangerous: the rule-listing LLM, which reads rules directly; then length, because a maximum over tokens rises with length. If length wins, repertoire counts in the study need the same correction.",
+   "premise": "P1. Shows whether a unit count measures accumulated ideas or only text size. A pass licenses growth and ratchet claims for franchises; a fail says the canon tiers partly count length.",
+   "bio": "Gene gain and loss along a lineage; open pangenome",
+   "cost": "M. Game code, 1,200 generated guides and about 173,000 short solver calls; one to two weeks.",
+   "payoff": "A validated way to count accumulation, with loss rates under high and low fidelity, the quantity the ratchet argument turns on.",
+   "risk": "Invented rules may have no dedicated units, so the eligible set is generic and the rule-listing LLM wins.",
+   "review": "Replaced the one-sentence arm, where loss is forced by length, with sentence deletion at a fixed word budget; raised solver judgments from 4 to 12 per rule; test chains use a renamed game so word lists cannot transfer. Weakness: invented rules may have no dedicated units.",
+   "priority": 3.0,
+   "sources": [
+    "Tennie, Call & Tomasello 2009",
+    "Mesoudi & Thornton 2018",
+    "Zhuang 2025 (arXiv:2507.21166)",
+    "Perez et al. 2024 (arXiv:2403.08882)"
+   ],
+   "region": "cultevo",
+   "status": "registered"
+  },
+  {
+   "id": "CE-27",
+   "title": "Price split on chains with imposed selection",
+   "question": "When selection of known strength is imposed on retelling chains, does a unit-based Price split report it, and report none when parents are picked at random?",
+   "hypothesis": "With parents picked at random, no more than 7% of units are flagged as selected at the 5% level. With parents picked by a hidden score, units chosen on development texts as tracking that score are flagged in at least 80% of populations at the strong setting, and their selection term rises with imposed strength (rank correlation at least 0.6).",
+   "falsifier": "More than 10% of units flagged under random parents, or detection under 50% at the strong setting. 3 strengths by 30 populations by 8 texts by 10 generations: 7,200 retellings. Rates over 30 populations have standard error about 0.09, enough to tell 80% from 50%; confirm by simulation.",
+   "data": "Built: 30 starting sets of 8 short tales from Hagedorn and Darányi's Folktexts (Zenodo 6575263; CC BY-SA 4.0 per its README). Each generation, 8 children each retell one parent in about 120 words. Parents are drawn at random, or with odds rising in a hidden judge's score of how badly the story ends. Texts to be released CC BY-SA 4.0.",
+   "method": "The Price equation splits change in a trait's mean into selection (covariance of the trait with number of children) and transmission (mean parent-to-child change). Compute both per unit per generation; flag selection by shuffling parent choices. Units chosen on separate development populations. Reader, writers and judge are different models. Nulls: the random-parent arm; random units matched on firing rate.",
+   "rivals": "The same split on word presence, TF-IDF terms, sentence-embedding components, an LLM reader re-scoring the hidden property, random units and length. Most dangerous: the LLM reader, which nearly is the judge; then word presence, since bad endings have their own words. If they detect as often, units add nothing, but the sample-size curve still stands.",
+   "premise": "P1. A calibration, not proof of memes: it shows whether unit readouts can carry a selection analysis and at what sample size. A fail puts selection claims made with units, such as the study's underpowered E3, out of reach.",
+   "bio": "Artificial selection lines beside drift lines",
+   "cost": "M. 7,200 retellings and as many judge calls, two extraction passes; about three days on one laptop.",
+   "payoff": "A false-alarm rate and a sample-size curve for detecting selection with units, and a worked case where transmission (writers softening endings) can oppose selection.",
+   "risk": "The hidden property may be carried by a few obvious words, so every rival detects it; or writers' drift may swamp selection at every strength tried.",
+   "review": "Added by the reviewer. The Price equation is an identity for any trait, so CE24 cannot show the unit readout is right; this gives a known answer first. Weakness: LLM writers under an artificial rule; the selected property may be lexical. Area-wide, novelty was checked on arXiv only.",
+   "priority": 3.5,
+   "sources": [
+    "El Mouden et al. 2014",
+    "Nettle 2020",
+    "MacCallum et al. 2012",
+    "Perez et al. 2024 (arXiv:2407.04503)"
+   ],
+   "region": "cultevo",
+   "status": "registered"
+  },
+  {
+   "id": "CE-S1",
+   "region": "cultevo",
+   "status": "seed",
+   "priority": 0,
+   "title": "Minimal counterintuitiveness in Grimm tales",
+   "question": "Can units count violations of intuitive expectations per tale and reproduce the inverted U, where successful tales carry a few such elements?",
+   "note": "Grimm tales are public domain; Norenzayan et al. 2006 supply the success measure. Rivals: an LLM counting violations, a magic-word list, tale length. Small n and a contested theory (Purzycki and Willard 2015). Berl et al.'s coded recall (OSF 72v3f, used in CE21) tests counterintuitive content with far more data."
+  },
+  {
+   "id": "CE-S2",
+   "region": "cultevo",
+   "status": "seed",
+   "priority": 0,
+   "title": "Does the idea survive the word swap?",
+   "question": "When one word of a quotation is replaced during copying, do concept units stay on, and do meaning-preserving swaps spread further than meaning-changing ones?",
+   "note": "MemeTracker quotation families with Lerique and Roth's substitution pairs (SNAP, no licence stated). The attractor there is lexical, so WordNet synonymy and embedding cosine are strong rivals."
+  },
+  {
+   "id": "CE-S3",
+   "region": "cultevo",
+   "status": "seed",
+   "priority": 0,
+   "title": "Same attractor across writer families and humans",
+   "question": "Do chains run by three unrelated model families and by people converge on the same attractor units?",
+   "note": "A behavioural test of P2 needing no neuron mapping; extends CE22. Perez et al. report model and size dependence, so a null is likely and still informative."
+  },
+  {
+   "id": "CE-S4",
+   "region": "cultevo",
+   "status": "seed",
+   "priority": 0,
+   "title": "Knock out the attractor",
+   "question": "If the units that chains drift toward are ablated in the retelling model, does the drift stop while the rest of the story is kept?",
+   "note": "The causal check for CE22. Rivals: a prompt instruction to avoid the theme, a keyword ban, ablating random units. Needs a hooked local model; about a day."
+  },
+  {
+   "id": "CE-S5",
+   "region": "cultevo",
+   "status": "seed",
+   "priority": 0,
+   "title": "Source or receiver?",
+   "question": "How much of the variance in which units survive a retelling is explained by the story and how much by who retells it?",
+   "note": "Gabora's objection in testable form. Berl et al.'s 163 people each recalled the same two stories (OSF 72v3f, CC BY 4.0), which gives the receiver share directly in human data; add 4 writer models and the retellers in OSF jr2py. Compare with the same split on words and embeddings."
+  },
+  {
+   "id": "CE-S6",
+   "region": "cultevo",
+   "status": "seed",
+   "priority": 0,
+   "title": "Copy the product or the recipe",
+   "question": "Are more units retained when a retelling is made from an outline of the story than from the story itself?",
+   "note": "Blackmore's distinction between copying the product and copying the instructions, run as two chain arms; that she ranks instructions as the higher-fidelity mode was not confirmed in the notes. Rival: an LLM coding retained statements."
+  },
+  {
+   "id": "CE-S7",
+   "region": "cultevo",
+   "status": "seed",
+   "priority": 0,
+   "title": "Recency against Lindy in borrowed material",
+   "question": "Is the age of the sources a work borrows from better described by a preference for recent works or by a 30-year return?",
+   "note": "Karsdorp and van den Bosch 2016 found retellings prefer young sources. Dated Wikidata adaptation links against an availability-weighted null; unit ages must add to documented-source ages to count."
+  },
+  {
+   "id": "CE-S8",
+   "region": "cultevo",
+   "status": "seed",
+   "priority": 0,
+   "title": "Two-source works in the wild",
+   "question": "Do real works with two documented sources show the same segregating or blending pattern as the generated blends in CE23?",
+   "note": "Wikidata lists 1,277 works with exactly two 'based on' sources and English Wikipedia articles for all three, 302 of them films (query of 2026-11-08). Plot-section coverage is unchecked, and one source may itself be an adaptation of the other. Answers the objection that LLM writers blend unlike human authors."
+  },
+  {
+   "id": "CE-S9",
+   "region": "cultevo",
+   "status": "seed",
+   "priority": 0,
+   "title": "Does the neutral verdict survive the merge threshold?",
+   "question": "When unit frequencies over time are fitted with random-copying and biased-copying models, does the verdict stay the same across unit-merging thresholds and match the verdict from keywords?",
+   "note": "Added by the reviewer: the area had no neutral-model test. Dated film plots (CMU Movie Summary Corpus, 42,306 plots, CC BY-SA). Frequency tests of neutrality are weak (Leroi et al. 2020) and the unit count moves with the threshold, so stability of the verdict is the result. Rivals: keyword and trope-tag counts."
+  },
+  {
+   "id": "CE-S10",
+   "region": "cultevo",
+   "status": "seed",
+   "priority": 0,
+   "title": "Assigned exposure sets",
+   "question": "When a writer model is handed a randomly assigned set of sources, does its uptake of an idea depend on how many sources carry it and on who is said to have written them?",
+   "note": "Added by the reviewer. Conformity and prestige can be identified only where exposure is assigned, which CE25's citation lists are not. Uptake hand-coded on a sample; rivals: an LLM reader and keywords. It measures writer models, not people; human counterparts: Muthukrishna et al. 2016, Berl et al. 2021."
   },
   {
    "id": "FI-21",
