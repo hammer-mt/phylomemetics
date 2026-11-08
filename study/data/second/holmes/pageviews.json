@@ -1,0 +1,732 @@
+{
+ "0": {
+  "title": "A Study in Scarlet",
+  "views": 3051266,
+  "months": 135
+ },
+ "1": {
+  "title": "The Sign of the Four",
+  "views": 1457173,
+  "months": 135
+ },
+ "2": {
+  "title": "The Hound of the Baskervilles",
+  "views": 4417556,
+  "months": 135
+ },
+ "3": {
+  "title": "The Valley of Fear",
+  "views": 879952,
+  "months": 135
+ },
+ "4": {
+  "title": "A Scandal in Bohemia",
+  "views": 1152850,
+  "months": 135
+ },
+ "5": {
+  "title": "The Red-Headed League",
+  "views": 566230,
+  "months": 135
+ },
+ "6": {
+  "title": "A Case of Identity",
+  "views": 263095,
+  "months": 135
+ },
+ "7": {
+  "title": "The Boscombe Valley Mystery",
+  "views": 255319,
+  "months": 135
+ },
+ "8": {
+  "title": "The Five Orange Pips",
+  "views": 513917,
+  "months": 135
+ },
+ "9": {
+  "title": "The Man with the Twisted Lip",
+  "views": 285139,
+  "months": 135
+ },
+ "10": {
+  "title": "The Adventure of the Blue Carbuncle",
+  "views": 474198,
+  "months": 135
+ },
+ "11": {
+  "title": "The Adventure of the Speckled Band",
+  "views": 863468,
+  "months": 135
+ },
+ "12": {
+  "title": "The Adventure of the Engineer's Thumb",
+  "views": 172945,
+  "months": 135
+ },
+ "13": {
+  "title": "The Adventure of the Noble Bachelor",
+  "views": 156109,
+  "months": 135
+ },
+ "14": {
+  "title": "The Adventure of the Beryl Coronet",
+  "views": 132333,
+  "months": 135
+ },
+ "15": {
+  "title": "The Adventure of the Copper Beeches",
+  "views": 256738,
+  "months": 135
+ },
+ "16": {
+  "title": "The Adventure of Silver Blaze",
+  "views": 467022,
+  "months": 135
+ },
+ "17": {
+  "title": "The Adventure of the Cardboard Box",
+  "views": 208691,
+  "months": 135
+ },
+ "18": {
+  "title": "The Adventure of the Yellow Face",
+  "views": 188078,
+  "months": 135
+ },
+ "19": {
+  "title": "The Adventure of the Stockbroker's Clerk",
+  "views": 85721,
+  "months": 135
+ },
+ "20": {
+  "title": "The Adventure of the Gloria Scott",
+  "views": 168636,
+  "months": 135
+ },
+ "21": {
+  "title": "The Adventure of the Musgrave Ritual",
+  "views": 435461,
+  "months": 135
+ },
+ "22": {
+  "title": "The Adventure of the Reigate Squire",
+  "views": 115674,
+  "months": 135
+ },
+ "23": {
+  "title": "The Adventure of the Crooked Man",
+  "views": 221135,
+  "months": 135
+ },
+ "24": {
+  "title": "The Adventure of the Resident Patient",
+  "views": 122837,
+  "months": 135
+ },
+ "25": {
+  "title": "The Adventure of the Greek Interpreter",
+  "views": 230546,
+  "months": 135
+ },
+ "26": {
+  "title": "The Adventure of the Naval Treaty",
+  "views": 138904,
+  "months": 135
+ },
+ "27": {
+  "title": "The Final Problem",
+  "views": 1820363,
+  "months": 135
+ },
+ "28": {
+  "title": "The Adventure of the Empty House",
+  "views": 539237,
+  "months": 135
+ },
+ "29": {
+  "title": "The Adventure of the Norwood Builder",
+  "views": 173943,
+  "months": 135
+ },
+ "30": {
+  "title": "The Adventure of the Dancing Men",
+  "views": 430256,
+  "months": 135
+ },
+ "31": {
+  "title": "The Adventure of the Solitary Cyclist",
+  "views": 142278,
+  "months": 135
+ },
+ "32": {
+  "title": "The Adventure of the Priory School",
+  "views": 137195,
+  "months": 135
+ },
+ "33": {
+  "title": "The Adventure of Black Peter",
+  "views": 151188,
+  "months": 135
+ },
+ "34": {
+  "title": "The Adventure of Charles Augustus Milverton",
+  "views": 449150,
+  "months": 135
+ },
+ "35": {
+  "title": "The Adventure of the Six Napoleons",
+  "views": 302197,
+  "months": 135
+ },
+ "36": {
+  "title": "The Adventure of the Three Students",
+  "views": 121637,
+  "months": 135
+ },
+ "37": {
+  "title": "The Adventure of the Golden Pince-Nez",
+  "views": 107525,
+  "months": 135
+ },
+ "38": {
+  "title": "The Adventure of the Missing Three-Quarter",
+  "views": 84090,
+  "months": 135
+ },
+ "39": {
+  "title": "The Adventure of the Abbey Grange",
+  "views": 157840,
+  "months": 135
+ },
+ "40": {
+  "title": "The Adventure of the Second Stain",
+  "views": 159194,
+  "months": 135
+ },
+ "41": {
+  "title": "The Adventure of Wisteria Lodge",
+  "views": 157714,
+  "months": 135
+ },
+ "42": {
+  "title": "The Adventure of the Red Circle",
+  "views": 122405,
+  "months": 135
+ },
+ "43": {
+  "title": "The Adventure of the Bruce-Partington Plans",
+  "views": 227690,
+  "months": 135
+ },
+ "44": {
+  "title": "The Adventure of the Dying Detective",
+  "views": 464430,
+  "months": 135
+ },
+ "45": {
+  "title": "The Disappearance of Lady Frances Carfax",
+  "views": 143513,
+  "months": 135
+ },
+ "46": {
+  "title": "The Adventure of the Devil's Foot",
+  "views": 208124,
+  "months": 135
+ },
+ "47": {
+  "title": "His Last Bow (short story)",
+  "views": 234804,
+  "months": 135
+ },
+ "48": {
+  "title": "The Adventure of the Mazarin Stone",
+  "views": 144207,
+  "months": 135
+ },
+ "49": {
+  "title": "The Problem of Thor Bridge",
+  "views": 142486,
+  "months": 135
+ },
+ "50": {
+  "title": "The Adventure of the Creeping Man",
+  "views": 152841,
+  "months": 135
+ },
+ "51": {
+  "title": "The Adventure of the Sussex Vampire",
+  "views": 240018,
+  "months": 135
+ },
+ "52": {
+  "title": "The Adventure of the Three Garridebs",
+  "views": 185240,
+  "months": 135
+ },
+ "53": {
+  "title": "The Adventure of the Illustrious Client",
+  "views": 228531,
+  "months": 135
+ },
+ "54": {
+  "title": "The Adventure of the Three Gables",
+  "views": 127272,
+  "months": 135
+ },
+ "55": {
+  "title": "The Adventure of the Blanched Soldier",
+  "views": 93354,
+  "months": 135
+ },
+ "56": {
+  "title": "The Adventure of the Lion's Mane",
+  "views": 168252,
+  "months": 135
+ },
+ "57": {
+  "title": "The Adventure of the Retired Colourman",
+  "views": 120879,
+  "months": 135
+ },
+ "58": {
+  "title": "The Adventure of the Veiled Lodger",
+  "views": 87266,
+  "months": 135
+ },
+ "59": {
+  "title": "The Adventure of Shoscombe Old Place",
+  "views": 271216,
+  "months": 135
+ },
+ "60": {
+  "title": "The Adventure of Sherlock Holmes' Smarter Brother",
+  "views": 445816,
+  "months": 135
+ },
+ "61": {
+  "title": "Dressed to Kill (1946 film)",
+  "views": 234946,
+  "months": 135
+ },
+ "62": {
+  "title": "Enola Holmes (film)",
+  "views": 11389756,
+  "months": 88
+ },
+ "63": {
+  "title": "Enola Holmes 2",
+  "views": 3371838,
+  "months": 66
+ },
+ "64": {
+  "title": "Enola Holmes 3",
+  "views": 1467948,
+  "months": 33
+ },
+ "65": {
+  "title": "The Great Mouse Detective",
+  "views": 2781935,
+  "months": 135
+ },
+ "66": {
+  "title": "Holmes & Watson",
+  "views": 3047860,
+  "months": 105
+ },
+ "67": {
+  "title": "The Hound of the Baskervilles (1929 film)",
+  "views": 23158,
+  "months": 135
+ },
+ "68": {
+  "title": "The Hound of the Baskervilles (1937 film)",
+  "views": 31070,
+  "months": 135
+ },
+ "69": {
+  "title": "Lelíček in the Services of Sherlock Holmes",
+  "views": 2306,
+  "months": 60
+ },
+ "70": {
+  "title": "The Man Who Was Sherlock Holmes",
+  "views": 32095,
+  "months": 135
+ },
+ "71": {
+  "title": "Mr. Holmes",
+  "views": 2523258,
+  "months": 135
+ },
+ "72": {
+  "title": "The Private Life of Sherlock Holmes",
+  "views": 568875,
+  "months": 135
+ },
+ "73": {
+  "title": "Pursuit to Algiers",
+  "views": 112420,
+  "months": 135
+ },
+ "74": {
+  "title": "The Return of Sherlock Holmes (1987 film)",
+  "views": 95466,
+  "months": 135
+ },
+ "75": {
+  "title": "The Return of the World's Greatest Detective",
+  "views": 24144,
+  "months": 135
+ },
+ "76": {
+  "title": "The Scarlet Claw",
+  "views": 159633,
+  "months": 135
+ },
+ "77": {
+  "title": "The Seven-Per-Cent Solution (film)",
+  "views": 412452,
+  "months": 135
+ },
+ "78": {
+  "title": "Sherlock Gnomes",
+  "views": 2474598,
+  "months": 107
+ },
+ "79": {
+  "title": "Sherlock Holmes (1916 film)",
+  "views": 85195,
+  "months": 135
+ },
+ "80": {
+  "title": "Sherlock Holmes (1922 film)",
+  "views": 116487,
+  "months": 135
+ },
+ "81": {
+  "title": "Sherlock Holmes (2009 film)",
+  "views": 9619940,
+  "months": 135
+ },
+ "82": {
+  "title": "Sherlock Holmes (2010 film)",
+  "views": 300557,
+  "months": 135
+ },
+ "83": {
+  "title": "Sherlock Holmes and the Case of the Silk Stocking",
+  "views": 284250,
+  "months": 135
+ },
+ "84": {
+  "title": "Sherlock Holmes in New York",
+  "views": 140926,
+  "months": 135
+ },
+ "85": {
+  "title": "Sherlock Holmes in Washington",
+  "views": 113094,
+  "months": 135
+ },
+ "86": {
+  "title": "Sherlock Holmes: A Game of Shadows",
+  "views": 7482361,
+  "months": 135
+ },
+ "87": {
+  "title": "The Strange Case of the End of Civilisation as We Know It",
+  "views": 12712,
+  "months": 42
+ },
+ "88": {
+  "title": "A Study in Terror",
+  "views": 258267,
+  "months": 135
+ },
+ "89": {
+  "title": "They Might Be Giants (film)",
+  "views": 399762,
+  "months": 135
+ },
+ "90": {
+  "title": "Without a Clue",
+  "views": 355882,
+  "months": 135
+ },
+ "91": {
+  "title": "Young Sherlock Holmes",
+  "views": 1346635,
+  "months": 135
+ },
+ "92": {
+  "title": "The Adventures of Sherlock Holmes (film)",
+  "views": 264019,
+  "months": 135
+ },
+ "93": {
+  "title": "The Adventures of Sherlock Holmes and Dr. Watson (film)",
+  "views": 38303,
+  "months": 135
+ },
+ "94": {
+  "title": "The Case of the Whitechapel Vampire",
+  "views": 82801,
+  "months": 135
+ },
+ "95": {
+  "title": "The Hound of the Baskervilles (1939 film)",
+  "views": 409065,
+  "months": 135
+ },
+ "96": {
+  "title": "The House of Fear (1945 film)",
+  "views": 101303,
+  "months": 115
+ },
+ "97": {
+  "title": "The Pearl of Death",
+  "views": 158888,
+  "months": 135
+ },
+ "98": {
+  "title": "Sherlock (TV series)",
+  "views": 26618572,
+  "months": 135
+ },
+ "99": {
+  "title": "Sherlock Holmes and Dr. Watson",
+  "views": 81810,
+  "months": 135
+ },
+ "100": {
+  "title": "Sherlock Holmes and the Secret Weapon",
+  "views": 176983,
+  "months": 135
+ },
+ "101": {
+  "title": "Sherlock Holmes and the Voice of Terror",
+  "views": 191074,
+  "months": 135
+ },
+ "102": {
+  "title": "Sherlock Holmes Faces Death",
+  "views": 140167,
+  "months": 135
+ },
+ "103": {
+  "title": "The Sign of Four (1932 film)",
+  "views": 53276,
+  "months": 135
+ },
+ "104": {
+  "title": "The Speckled Band (1931 film)",
+  "views": 44400,
+  "months": 135
+ },
+ "105": {
+  "title": "The Spider Woman",
+  "views": 142567,
+  "months": 135
+ },
+ "106": {
+  "title": "A Study in Scarlet (1933 film)",
+  "views": 93283,
+  "months": 135
+ },
+ "107": {
+  "title": "Terror by Night",
+  "views": 208999,
+  "months": 135
+ },
+ "108": {
+  "title": "The Woman in Green",
+  "views": 265633,
+  "months": 135
+ },
+ "109": {
+  "title": "Bees Saal Baad (1962 film)",
+  "views": 629034,
+  "months": 135
+ },
+ "110": {
+  "title": "The Hound of the Baskervilles (1959 film)",
+  "views": 557825,
+  "months": 135
+ },
+ "111": {
+  "title": "The Hound of the Baskervilles (1978 film)",
+  "views": 195331,
+  "months": 135
+ },
+ "112": {
+  "title": "Der Hund von Baskerville",
+  "views": 36014,
+  "months": 135
+ },
+ "113": {
+  "title": "Jighansa",
+  "views": 40313,
+  "months": 124
+ },
+ "114": {
+  "title": "The Adventures of Sherlock Holmes and Dr. Watson",
+  "views": 271490,
+  "months": 135
+ },
+ "115": {
+  "title": "The Abominable Bride",
+  "views": 2781511,
+  "months": 132
+ },
+ "116": {
+  "title": "The Blind Banker",
+  "views": 766901,
+  "months": 135
+ },
+ "117": {
+  "title": "The Empty Hearse",
+  "views": 847689,
+  "months": 135
+ },
+ "118": {
+  "title": "The Final Problem (Sherlock)",
+  "views": 1958847,
+  "months": 118
+ },
+ "119": {
+  "title": "The Great Game (Sherlock)",
+  "views": 826580,
+  "months": 135
+ },
+ "120": {
+  "title": "His Last Vow",
+  "views": 1039000,
+  "months": 135
+ },
+ "121": {
+  "title": "The Hounds of Baskerville",
+  "views": 1016113,
+  "months": 135
+ },
+ "122": {
+  "title": "The Lying Detective",
+  "views": 1203592,
+  "months": 121
+ },
+ "123": {
+  "title": "The Reichenbach Fall",
+  "views": 1025670,
+  "months": 135
+ },
+ "124": {
+  "title": "A Scandal in Belgravia",
+  "views": 1460571,
+  "months": 135
+ },
+ "125": {
+  "title": "The Sign of Three",
+  "views": 784892,
+  "months": 135
+ },
+ "126": {
+  "title": "The Six Thatchers",
+  "views": 1138553,
+  "months": 121
+ },
+ "127": {
+  "title": "A Study in Pink",
+  "views": 1071681,
+  "months": 135
+ },
+ "128": {
+  "title": "Sherlock Holmes: The Awakened",
+  "views": 359550,
+  "months": 135
+ },
+ "129": {
+  "title": "Sherlock Holmes: The Awakened (2023 video game)",
+  "views": 190595,
+  "months": 42
+ },
+ "130": {
+  "title": "Sherlock Holmes: The Case of the Silver Earring",
+  "views": 137450,
+  "months": 135
+ },
+ "131": {
+  "title": "Sherlock Holmes: Consulting Detective",
+  "views": 126629,
+  "months": 135
+ },
+ "132": {
+  "title": "Sherlock Holmes: Crimes & Punishments",
+  "views": 742447,
+  "months": 135
+ },
+ "133": {
+  "title": "Sherlock Holmes: The Devil's Daughter",
+  "views": 694572,
+  "months": 126
+ },
+ "134": {
+  "title": "The Great Ace Attorney: Adventures",
+  "views": 779379,
+  "months": 66
+ },
+ "135": {
+  "title": "The Great Ace Attorney 2: Resolve",
+  "views": 372160,
+  "months": 66
+ },
+ "136": {
+  "title": "The Lost Files of Sherlock Holmes: The Case of the Rose Tattoo",
+  "views": 31111,
+  "months": 135
+ },
+ "137": {
+  "title": "Sherlock: The Riddle of the Crown Jewels",
+  "views": 32476,
+  "months": 135
+ },
+ "138": {
+  "title": "The Testament of Sherlock Holmes",
+  "views": 328324,
+  "months": 135
+ },
+ "139": {
+  "title": "Sherlock Holmes Versus Arsène Lupin",
+  "views": 179256,
+  "months": 122
+ },
+ "140": {
+  "title": "Sherlock Holmes Versus Jack the Ripper",
+  "views": 275413,
+  "months": 135
+ },
+ "141": {
+  "title": "The Murders in the Rue Morgue",
+  "views": 2199989,
+  "months": 135
+ },
+ "142": {
+  "title": "The Purloined Letter",
+  "views": 860176,
+  "months": 135
+ },
+ "143": {
+  "title": "The Mystery of Marie Rogêt",
+  "views": 298803,
+  "months": 135
+ },
+ "144": {
+  "title": "The Moonstone",
+  "views": 1134559,
+  "months": 135
+ },
+ "145": {
+  "title": "Monsieur Lecoq (novel)",
+  "views": 36950,
+  "months": 135
+ }
+}

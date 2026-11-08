@@ -1,0 +1,1156 @@
+{
+ "what": "What each Holmes screen work's own Wikipedia article says it is based on, read by two readers who did not see the plots; a third reader where they differed. Tiers: A stated adaptation, B stated loose adaptation, C elements only.",
+ "works_read_by_a_third_reader": 2,
+ "works": {
+  "60": {
+   "title": "The Adventure of Sherlock Holmes' Smarter Brother",
+   "kind": "film",
+   "year": 1975,
+   "holmes_appears": true,
+   "sources": [],
+   "other_sources": [],
+   "readers": 2
+  },
+  "61": {
+   "title": "Dressed to Kill (1946 film)",
+   "kind": "film",
+   "year": 1946,
+   "holmes_appears": true,
+   "sources": [
+    {
+     "story": "A Scandal in Bohemia",
+     "tier": "C",
+     "quote": "The film has an original story, but combines elements of the short stories \"The Adventure of the Six Napoleons\" and \"A Scandal in Bohemia.\""
+    },
+    {
+     "story": "The Adventure of the Six Napoleons",
+     "tier": "C",
+     "quote": "The film has an original story, but combines elements of the short stories \"The Adventure of the Six Napoleons\" and \"A Scandal in Bohemia.\""
+    }
+   ],
+   "other_sources": [],
+   "readers": 2
+  },
+  "62": {
+   "title": "Enola Holmes (film)",
+   "kind": "film",
+   "year": 2020,
+   "holmes_appears": true,
+   "sources": [],
+   "other_sources": [
+    "The Case of the Missing Marquess (first novel in The Enola Holmes Mysteries by Nancy Springer)",
+    "The Case of the Missing Marquess, the first novel in The Enola Holmes Mysteries by Nancy Springer"
+   ],
+   "readers": 2
+  },
+  "63": {
+   "title": "Enola Holmes 2",
+   "kind": "film",
+   "year": 2022,
+   "holmes_appears": true,
+   "sources": [],
+   "other_sources": [
+    "1888 matchgirls' strike (real event)",
+    "life of labour activist Sarah Chapman",
+    "the life of labour activist Sarah Chapman",
+    "the real 1888 matchgirls' strike"
+   ],
+   "readers": 2
+  },
+  "64": {
+   "title": "Enola Holmes 3",
+   "kind": "film",
+   "year": 2026,
+   "holmes_appears": true,
+   "sources": [],
+   "other_sources": [],
+   "readers": 2
+  },
+  "65": {
+   "title": "The Great Mouse Detective",
+   "kind": "film",
+   "year": 1986,
+   "holmes_appears": true,
+   "sources": [
+    {
+     "story": "The Red-Headed League",
+     "tier": "C",
+     "quote": "whose voice, sampled from a 1966 reading of \"The Red-Headed League\" was the voice of Holmes in this film, nearly 19 years after his death"
+    }
+   ],
+   "other_sources": [
+    "Basil of Baker Street (children's book series by Eve Titus and Paul Galdone)",
+    "Basil of Baker Street by Eve Titus and Paul Galdone (children's book series)",
+    "The Castle of Cagliostro (1979 film; inspiration for the clock tower climax)",
+    "The Castle of Cagliostro (1979 film; inspiration for the clock-tower climax)"
+   ],
+   "readers": 2
+  },
+  "66": {
+   "title": "Holmes & Watson",
+   "kind": "film",
+   "year": 2018,
+   "holmes_appears": true,
+   "sources": [],
+   "other_sources": [],
+   "readers": 2
+  },
+  "67": {
+   "title": "The Hound of the Baskervilles (1929 film)",
+   "kind": "film",
+   "year": 1929,
+   "holmes_appears": true,
+   "sources": [
+    {
+     "story": "The Hound of the Baskervilles",
+     "tier": "A",
+     "quote": "The Hound of the Baskervilles is a 1929 German silent mystery film directed by Richard Oswald and is an adaptation of the 1902 Sherlock Holmes novel The Hound of the Baskervilles by Arthur Conan Doyle."
+    }
+   ],
+   "other_sources": [],
+   "readers": 2
+  },
+  "68": {
+   "title": "The Hound of the Baskervilles (1937 film)",
+   "kind": "film",
+   "year": 1937,
+   "holmes_appears": true,
+   "sources": [
+    {
+     "story": "The Hound of the Baskervilles",
+     "tier": "A",
+     "quote": "It is an adaptation of the 1902 Sherlock Holmes story The Hound of the Baskervilles by Arthur Conan Doyle."
+    }
+   ],
+   "other_sources": [],
+   "readers": 2
+  },
+  "69": {
+   "title": "Lelíček in the Services of Sherlock Holmes",
+   "kind": "film",
+   "year": 1932,
+   "holmes_appears": true,
+   "sources": [],
+   "other_sources": [],
+   "readers": 2
+  },
+  "70": {
+   "title": "The Man Who Was Sherlock Holmes",
+   "kind": "film",
+   "year": 1937,
+   "holmes_appears": false,
+   "sources": [],
+   "other_sources": [],
+   "readers": 2
+  },
+  "71": {
+   "title": "Mr. Holmes",
+   "kind": "film",
+   "year": 2015,
+   "holmes_appears": true,
+   "sources": [],
+   "other_sources": [
+    "A Slight Trick of the Mind (2005 novel by Mitch Cullin)"
+   ],
+   "readers": 2
+  },
+  "72": {
+   "title": "The Private Life of Sherlock Holmes",
+   "kind": "film",
+   "year": 1970,
+   "holmes_appears": true,
+   "sources": [],
+   "other_sources": [],
+   "readers": 2
+  },
+  "73": {
+   "title": "Pursuit to Algiers",
+   "kind": "film",
+   "year": 1945,
+   "holmes_appears": true,
+   "sources": [
+    {
+     "story": "The Adventure of the Norwood Builder",
+     "tier": "C",
+     "quote": "Elements in the story pay homage to an otherwise unrecorded affair mentioned by Dr. Watson at the beginning of the 1903 story \"The Adventure of the Norwood Builder\", notably the steamship Friesland."
+    },
+    {
+     "story": "The Adventure of the Sussex Vampire",
+     "tier": "C",
+     "quote": "Off-camera, Watson also recounts to his audience another unrecorded affair mentioned in the 1924 story \"The Adventure of the Sussex Vampire\", that of the Giant Rat of Sumatra, \"a story for which the world is not yet prepared\"."
+    }
+   ],
+   "other_sources": [],
+   "readers": 2
+  },
+  "74": {
+   "title": "The Return of Sherlock Holmes (1987 film)",
+   "kind": "tv_film",
+   "year": 1987,
+   "holmes_appears": true,
+   "sources": [
+    {
+     "story": "The Sign of the Four",
+     "tier": "B",
+     "quote": "The details of the main plot are adapted from The Sign of the Four."
+    }
+   ],
+   "other_sources": [],
+   "readers": 2
+  },
+  "75": {
+   "title": "The Return of the World's Greatest Detective",
+   "kind": "tv_film",
+   "year": 1976,
+   "holmes_appears": false,
+   "sources": [],
+   "other_sources": [
+    "They Might Be Giants (1971 feature film), loosely re-made",
+    "They Might Be Giants (1971 film; loosely re-made)"
+   ],
+   "readers": 2
+  },
+  "76": {
+   "title": "The Scarlet Claw",
+   "kind": "film",
+   "year": 1944,
+   "holmes_appears": true,
+   "sources": [
+    {
+     "story": "The Hound of the Baskervilles",
+     "tier": "C",
+     "quote": "The film is not credited as an adaptation of any of Sir Arthur Conan Doyle's Holmes tales, but it bears a significant resemblance to his 1902 novel The Hound of the Baskervilles."
+    }
+   ],
+   "other_sources": [],
+   "readers": 2
+  },
+  "77": {
+   "title": "The Seven-Per-Cent Solution (film)",
+   "kind": "film",
+   "year": 1976,
+   "holmes_appears": true,
+   "sources": [],
+   "other_sources": [
+    "The Seven-Per-Cent Solution (1974 novel by Nicholas Meyer)"
+   ],
+   "readers": 2
+  },
+  "78": {
+   "title": "Sherlock Gnomes",
+   "kind": "film",
+   "year": 2018,
+   "holmes_appears": true,
+   "sources": [],
+   "other_sources": [],
+   "readers": 2
+  },
+  "79": {
+   "title": "Sherlock Holmes (1916 film)",
+   "kind": "film",
+   "year": 1916,
+   "holmes_appears": true,
+   "sources": [],
+   "other_sources": [
+    "Sherlock Holmes (1899 stage play), which the article says was in turn based on A Scandal in Bohemia, The Final Problem and A Study in Scarlet",
+    "Sherlock Holmes (1899 stage play; the article says the play was based on A Scandal in Bohemia, The Final Problem and A Study in Scarlet)"
+   ],
+   "readers": 2
+  },
+  "80": {
+   "title": "Sherlock Holmes (1922 film)",
+   "kind": "film",
+   "year": 1922,
+   "holmes_appears": true,
+   "sources": [],
+   "other_sources": [
+    "Sherlock Holmes (1899 play by William Gillette and Arthur Conan Doyle)",
+    "the 1899 play Sherlock Holmes by William Gillette and Arthur Conan Doyle"
+   ],
+   "readers": 2
+  },
+  "81": {
+   "title": "Sherlock Holmes (2009 film)",
+   "kind": "film",
+   "year": 2009,
+   "holmes_appears": true,
+   "sources": [
+    {
+     "story": "The Hound of the Baskervilles",
+     "tier": "C",
+     "quote": "The plot point, moreover, nods to the Holmesian tale of The Hound of the Baskervilles, where a string of seemingly supernatural events is finally explained through intuitive reasoning and scientific savvy."
+    }
+   ],
+   "other_sources": [
+    "Enter the Lion: A Posthumous Memoir of Mycroft Holmes (1979 novel; uncredited incidents)"
+   ],
+   "readers": 2
+  },
+  "82": {
+   "title": "Sherlock Holmes (2010 film)",
+   "kind": "film",
+   "year": 2010,
+   "holmes_appears": true,
+   "sources": [],
+   "other_sources": [],
+   "readers": 2
+  },
+  "83": {
+   "title": "Sherlock Holmes and the Case of the Silk Stocking",
+   "kind": "tv_film",
+   "year": 2004,
+   "holmes_appears": true,
+   "sources": [],
+   "other_sources": [],
+   "readers": 2
+  },
+  "84": {
+   "title": "Sherlock Holmes in New York",
+   "kind": "tv_film",
+   "year": 1976,
+   "holmes_appears": true,
+   "sources": [],
+   "other_sources": [],
+   "readers": 2
+  },
+  "85": {
+   "title": "Sherlock Holmes in Washington",
+   "kind": "film",
+   "year": 1943,
+   "holmes_appears": true,
+   "sources": [],
+   "other_sources": [],
+   "readers": 2
+  },
+  "86": {
+   "title": "Sherlock Holmes: A Game of Shadows",
+   "kind": "film",
+   "year": 2011,
+   "holmes_appears": true,
+   "sources": [
+    {
+     "story": "The Adventure of the Empty House",
+     "tier": "C",
+     "quote": "Although the film follows an original premise, it incorporates more closely elements of Conan Doyle's short stories, including \"The Final Problem\" and \"The Adventure of the Empty House\"."
+    },
+    {
+     "story": "The Final Problem",
+     "tier": "C",
+     "quote": "Although the film follows an original premise, it incorporates more closely elements of Conan Doyle's short stories, including \"The Final Problem\" and \"The Adventure of the Empty House\"."
+    }
+   ],
+   "other_sources": [],
+   "readers": 2
+  },
+  "87": {
+   "title": "The Strange Case of the End of Civilisation as We Know It",
+   "kind": "film",
+   "year": 1977,
+   "holmes_appears": false,
+   "sources": [],
+   "other_sources": [],
+   "readers": 2
+  },
+  "88": {
+   "title": "A Study in Terror",
+   "kind": "film",
+   "year": 1965,
+   "holmes_appears": true,
+   "sources": [],
+   "other_sources": [],
+   "readers": 2
+  },
+  "89": {
+   "title": "They Might Be Giants (film)",
+   "kind": "film",
+   "year": 1971,
+   "holmes_appears": false,
+   "sources": [],
+   "other_sources": [
+    "Don Quixote (the title is an indirect reference to it)",
+    "They Might Be Giants (1961 play by James Goldman)"
+   ],
+   "readers": 2
+  },
+  "90": {
+   "title": "Without a Clue",
+   "kind": "film",
+   "year": 1988,
+   "holmes_appears": true,
+   "sources": [],
+   "other_sources": [],
+   "readers": 2
+  },
+  "91": {
+   "title": "Young Sherlock Holmes",
+   "kind": "film",
+   "year": 1985,
+   "holmes_appears": true,
+   "sources": [],
+   "other_sources": [],
+   "readers": 2
+  },
+  "92": {
+   "title": "The Adventures of Sherlock Holmes (film)",
+   "kind": "film",
+   "year": 1939,
+   "holmes_appears": true,
+   "sources": [],
+   "other_sources": [
+    "Sherlock Holmes (1899 play by William Gillette)"
+   ],
+   "readers": 2
+  },
+  "93": {
+   "title": "The Adventures of Sherlock Holmes and Dr. Watson (film)",
+   "kind": "film",
+   "year": 1980,
+   "holmes_appears": true,
+   "sources": [
+    {
+     "story": "The Adventure of Charles Augustus Milverton",
+     "tier": "A",
+     "quote": "The film is based on three short stories by Conan Doyle: \"The Adventure of Charles Augustus Milverton\", \"The Final Problem\", and \"The Adventure of the Empty House\"."
+    },
+    {
+     "story": "The Adventure of the Empty House",
+     "tier": "A",
+     "quote": "The film is based on three short stories by Conan Doyle: \"The Adventure of Charles Augustus Milverton\", \"The Final Problem\", and \"The Adventure of the Empty House\"."
+    },
+    {
+     "story": "The Final Problem",
+     "tier": "A",
+     "quote": "The film is based on three short stories by Conan Doyle: \"The Adventure of Charles Augustus Milverton\", \"The Final Problem\", and \"The Adventure of the Empty House\"."
+    }
+   ],
+   "other_sources": [],
+   "readers": 2
+  },
+  "94": {
+   "title": "The Case of the Whitechapel Vampire",
+   "kind": "tv_film",
+   "year": 2002,
+   "holmes_appears": true,
+   "sources": [],
+   "other_sources": [],
+   "readers": 2
+  },
+  "95": {
+   "title": "The Hound of the Baskervilles (1939 film)",
+   "kind": "film",
+   "year": 1939,
+   "holmes_appears": true,
+   "sources": [
+    {
+     "story": "The Hound of the Baskervilles",
+     "tier": "A",
+     "quote": "The Hound of the Baskervilles is a 1939 American gothic mystery film based on the 1902 Sherlock Holmes novel of the same name by Sir Arthur Conan Doyle."
+    }
+   ],
+   "other_sources": [],
+   "readers": 2
+  },
+  "96": {
+   "title": "The House of Fear (1945 film)",
+   "kind": "film",
+   "year": 1945,
+   "holmes_appears": true,
+   "sources": [
+    {
+     "story": "The Five Orange Pips",
+     "tier": "B",
+     "quote": "Directed by Roy William Neill, it is loosely based on the 1891 short story \"The Five Orange Pips\" by Arthur Conan Doyle."
+    }
+   ],
+   "other_sources": [],
+   "readers": 2
+  },
+  "97": {
+   "title": "The Pearl of Death",
+   "kind": "film",
+   "year": 1944,
+   "holmes_appears": true,
+   "sources": [
+    {
+     "story": "The Adventure of the Six Napoleons",
+     "tier": "B",
+     "quote": "The story is loosely based on Conan Doyle's short story \"The Adventure of the Six Napoleons\" but features some additions"
+    }
+   ],
+   "other_sources": [],
+   "readers": 2
+  },
+  "98": {
+   "title": "Sherlock (TV series)",
+   "kind": "series",
+   "year": 2010,
+   "holmes_appears": true,
+   "sources": [],
+   "other_sources": [],
+   "readers": 2
+  },
+  "99": {
+   "title": "Sherlock Holmes and Dr. Watson",
+   "kind": "tv_film",
+   "year": 1979,
+   "holmes_appears": true,
+   "sources": [
+    {
+     "story": "A Study in Scarlet",
+     "tier": "A",
+     "quote": "The film is divided into two episodes: \"The Acquaintance\" (Знакомство, based on the 1892 short story \"The Adventure of the Speckled Band\") and \"Bloody Inscription\" (Кровавая надпись, based on the 1887 novel A Study in Scarlet)."
+    },
+    {
+     "story": "The Adventure of the Speckled Band",
+     "tier": "A",
+     "quote": "The film is divided into two episodes: \"The Acquaintance\" (Знакомство, based on the 1892 short story \"The Adventure of the Speckled Band\") and \"Bloody Inscription\" (Кровавая надпись, based on the 1887 novel A Study in Scarlet)."
+    }
+   ],
+   "other_sources": [],
+   "readers": 2
+  },
+  "100": {
+   "title": "Sherlock Holmes and the Secret Weapon",
+   "kind": "film",
+   "year": 1942,
+   "holmes_appears": true,
+   "sources": [
+    {
+     "story": "The Adventure of the Dancing Men",
+     "tier": "B",
+     "quote": "The film is credited as an adaptation of Conan Doyle's 1903 short story \"The Adventure of the Dancing Men\", though the only element from the source material is the dancing men code."
+    }
+   ],
+   "other_sources": [],
+   "readers": 2
+  },
+  "101": {
+   "title": "Sherlock Holmes and the Voice of Terror",
+   "kind": "film",
+   "year": 1942,
+   "holmes_appears": true,
+   "sources": [
+    {
+     "story": "His Last Bow (short story)",
+     "tier": "B",
+     "quote": "The film combines elements of Doyle's short story \"His Last Bow\", to which it is credited as an adaptation, and the real-life activities of Lord Haw-Haw."
+    }
+   ],
+   "other_sources": [
+    "real-life activities of Lord Haw-Haw",
+    "the real-life activities of Lord Haw-Haw"
+   ],
+   "readers": 2
+  },
+  "102": {
+   "title": "Sherlock Holmes Faces Death",
+   "kind": "film",
+   "year": 1943,
+   "holmes_appears": true,
+   "sources": [
+    {
+     "story": "The Adventure of the Musgrave Ritual",
+     "tier": "B",
+     "quote": "Made in 1943, it is a loose adaptation of Sir Arthur Conan Doyle's 1893 Holmes short story \"The Adventure of the Musgrave Ritual\"."
+    }
+   ],
+   "other_sources": [],
+   "readers": 2
+  },
+  "103": {
+   "title": "The Sign of Four (1932 film)",
+   "kind": "film",
+   "year": 1932,
+   "holmes_appears": true,
+   "sources": [
+    {
+     "story": "The Sign of the Four",
+     "tier": "A",
+     "quote": "It was written by W. P. Lipscomb based on Arthur Conan Doyle's second Sherlock Holmes novel The Sign of the Four (1890)."
+    }
+   ],
+   "other_sources": [],
+   "readers": 2
+  },
+  "104": {
+   "title": "The Speckled Band (1931 film)",
+   "kind": "film",
+   "year": 1931,
+   "holmes_appears": true,
+   "sources": [
+    {
+     "story": "The Adventure of the Speckled Band",
+     "tier": "A",
+     "quote": "It was written by W. P. Lipscomb, adapted from Arthur Conan Doyle's original 1892 story \"The Adventure of the Speckled Band\" and the 1910 play he adapted from it, The Speckled Band."
+    }
+   ],
+   "other_sources": [
+    "The Speckled Band (1910 play by Arthur Conan Doyle)"
+   ],
+   "readers": 2
+  },
+  "105": {
+   "title": "The Spider Woman",
+   "kind": "film",
+   "year": 1943,
+   "holmes_appears": true,
+   "sources": [
+    {
+     "story": "The Adventure of the Copper Beeches",
+     "tier": "C",
+     "quote": "The mute child with a compulsion to catch flies is similar to a character in \"The Copper Beeches\"."
+    },
+    {
+     "story": "The Adventure of the Devil's Foot",
+     "tier": "C",
+     "quote": "The film also featured elements of \"The Devil's Foot\"."
+    },
+    {
+     "story": "The Adventure of the Empty House",
+     "tier": "C",
+     "quote": "Holmes faking his death at a waterfall is similar to the climax of \"The Final Problem\" and his subsequent reappearance in the presence of a mourning Watson bears resemblance to \"The Empty House\"."
+    },
+    {
+     "story": "The Adventure of the Speckled Band",
+     "tier": "C",
+     "quote": "The use of a pygmy confederate is taken from the novel The Sign of Four and the murder by use of a venomous animal inserted through a ventilation system is taken from \"The Speckled Band\""
+    },
+    {
+     "story": "The Adventure of the Yellow Face",
+     "tier": "C",
+     "quote": "Holmes' request that Watson whisper \"pygmy\" in his ear if he becomes overconfident is from \"The Yellow Face\", in which the word was \"Norbury\"."
+    },
+    {
+     "story": "The Final Problem",
+     "tier": "C",
+     "quote": "Holmes faking his death at a waterfall is similar to the climax of \"The Final Problem\" and his subsequent reappearance in the presence of a mourning Watson bears resemblance to \"The Empty House\"."
+    },
+    {
+     "story": "The Sign of the Four",
+     "tier": "C",
+     "quote": "The use of a pygmy confederate is taken from the novel The Sign of Four and the murder by use of a venomous animal inserted through a ventilation system is taken from \"The Speckled Band\""
+    }
+   ],
+   "other_sources": [],
+   "readers": 2
+  },
+  "106": {
+   "title": "A Study in Scarlet (1933 film)",
+   "kind": "film",
+   "year": 1933,
+   "holmes_appears": true,
+   "sources": [
+    {
+     "story": "A Study in Scarlet",
+     "tier": "C",
+     "quote": "The title is taken from Arthur Conan Doyle's 1887 novel of the same name, the first in the Holmes series, but the screenplay by Robert Florey was original."
+    },
+    {
+     "story": "The Adventure of the Empty House",
+     "tier": "C",
+     "quote": "Merrydew's name may have been inspired by the villain referred to by Holmes as \"Merridew of abominable memory\" in The Adventure of the Empty House."
+    }
+   ],
+   "other_sources": [],
+   "readers": 2
+  },
+  "107": {
+   "title": "Terror by Night",
+   "kind": "film",
+   "year": 1946,
+   "holmes_appears": true,
+   "sources": [
+    {
+     "story": "The Adventure of the Blue Carbuncle",
+     "tier": "C",
+     "quote": "it uses minor plot elements of \"The Adventure of the Blue Carbuncle,\" \"The Adventure of the Empty House,\" \"The Disappearance of Lady Frances Carfax,\" and \"The Sign of Four\""
+    },
+    {
+     "story": "The Adventure of the Empty House",
+     "tier": "C",
+     "quote": "it uses minor plot elements of \"The Adventure of the Blue Carbuncle,\" \"The Adventure of the Empty House,\" \"The Disappearance of Lady Frances Carfax,\" and \"The Sign of Four\""
+    },
+    {
+     "story": "The Disappearance of Lady Frances Carfax",
+     "tier": "C",
+     "quote": "it uses minor plot elements of \"The Adventure of the Blue Carbuncle,\" \"The Adventure of the Empty House,\" \"The Disappearance of Lady Frances Carfax,\" and \"The Sign of Four\""
+    },
+    {
+     "story": "The Sign of the Four",
+     "tier": "C",
+     "quote": "it uses minor plot elements of \"The Adventure of the Blue Carbuncle,\" \"The Adventure of the Empty House,\" \"The Disappearance of Lady Frances Carfax,\" and \"The Sign of Four\""
+    }
+   ],
+   "other_sources": [],
+   "readers": 2
+  },
+  "108": {
+   "title": "The Woman in Green",
+   "kind": "film",
+   "year": 1945,
+   "holmes_appears": true,
+   "sources": [
+    {
+     "story": "The Adventure of the Empty House",
+     "tier": "C",
+     "quote": "Produced and directed by Roy William Neill from an original screenplay by Bertram Millhauser, the film follows a Conan Doyle premise with material taken from \"The Final Problem\" and \"The Adventure of the Empty House\"."
+    },
+    {
+     "story": "The Final Problem",
+     "tier": "C",
+     "quote": "Produced and directed by Roy William Neill from an original screenplay by Bertram Millhauser, the film follows a Conan Doyle premise with material taken from \"The Final Problem\" and \"The Adventure of the Empty House\"."
+    }
+   ],
+   "other_sources": [],
+   "readers": 2
+  },
+  "109": {
+   "title": "Bees Saal Baad (1962 film)",
+   "kind": "film",
+   "year": 1962,
+   "holmes_appears": false,
+   "sources": [],
+   "other_sources": [
+    "Jighansa (1951 Bengali film, of which this film is a remake)",
+    "Jighansa (1951 Bengali film, of which this is a remake)",
+    "Nishithini Bivishika (novel by Hemendra Kumar Roy)"
+   ],
+   "readers": 2
+  },
+  "110": {
+   "title": "The Hound of the Baskervilles (1959 film)",
+   "kind": "film",
+   "year": 1959,
+   "holmes_appears": true,
+   "sources": [
+    {
+     "story": "The Hound of the Baskervilles",
+     "tier": "A",
+     "quote": "The Hound of the Baskervilles is a 1959 British Gothic mystery film directed by Terence Fisher and produced by Hammer Film Productions, based upon Arthur Conan Doyle's 1902 novel."
+    }
+   ],
+   "other_sources": [],
+   "readers": 2
+  },
+  "111": {
+   "title": "The Hound of the Baskervilles (1978 film)",
+   "kind": "film",
+   "year": 1978,
+   "holmes_appears": true,
+   "sources": [
+    {
+     "story": "The Hound of the Baskervilles",
+     "tier": "B",
+     "quote": "The Hound of the Baskervilles is a 1978 British comedy film spoofing the 1902 novel The Hound of the Baskervilles by Sir Arthur Conan Doyle."
+    }
+   ],
+   "other_sources": [],
+   "readers": 2
+  },
+  "112": {
+   "title": "Der Hund von Baskerville",
+   "kind": "film",
+   "year": 1914,
+   "holmes_appears": true,
+   "sources": [
+    {
+     "story": "The Hound of the Baskervilles",
+     "tier": "A",
+     "quote": "Der Hund von Baskerville is a 1914 German silent film adaptation of Arthur Conan Doyle's 1902 novel The Hound of the Baskervilles, the first film adaptation of the work."
+    }
+   ],
+   "other_sources": [
+    "Der Hund von Baskerville: Schauspiel in vier Aufzügen aus dem Schottischen Hochland (play by Ferdinand Bonn)"
+   ],
+   "readers": 2
+  },
+  "113": {
+   "title": "Jighansa",
+   "kind": "film",
+   "year": 1951,
+   "holmes_appears": false,
+   "sources": [
+    {
+     "story": "The Hound of the Baskervilles",
+     "tier": "B",
+     "quote": "Produced by Chayanika Chitramandir and Kine Craft Studios, the film is based on Hemendra Kumar Roy's novel Nishithini Bibhishika, which itself is a Bengali adaptation of Arthur Conan Doyle's crime novel The Hound of the Baskervilles (1902)."
+    }
+   ],
+   "other_sources": [
+    "Nishithini Bibhishika (novel by Hemendra Kumar Roy)",
+    "Nishithini Bibhishika by Hemendra Kumar Roy (novel)"
+   ],
+   "readers": 3
+  },
+  "114": {
+   "title": "The Adventures of Sherlock Holmes and Dr. Watson",
+   "kind": "series",
+   "year": 1979,
+   "holmes_appears": true,
+   "sources": [],
+   "other_sources": [],
+   "readers": 2
+  },
+  "115": {
+   "title": "The Abominable Bride",
+   "kind": "tv_episode",
+   "year": 2016,
+   "holmes_appears": true,
+   "sources": [
+    {
+     "story": "A Study in Scarlet",
+     "tier": "C",
+     "quote": "Moriarty's stating \"There is nothing new under the sun. It has all been done before\" comes from one of Arthur Conan Doyle's original Sherlock Holmes stories, A Study in Scarlet."
+    },
+    {
+     "story": "The Adventure of the Greek Interpreter",
+     "tier": "C",
+     "quote": "Mycroft's mentioning of the Manor House Case references \"The Greek Interpreter\"."
+    },
+    {
+     "story": "The Adventure of the Musgrave Ritual",
+     "tier": "C",
+     "quote": "The title is based on the quote \"Ricoletti of the club foot and his abominable wife\" from \"The Adventure of the Musgrave Ritual\" (1893), which refers to a case mentioned by Holmes."
+    },
+    {
+     "story": "The Final Problem",
+     "tier": "C",
+     "quote": "The story also draws on elements of original Conan Doyle stories of Holmes such as \"The Five Orange Pips\" (1891) and \"The Final Problem\" (1893)."
+    },
+    {
+     "story": "The Five Orange Pips",
+     "tier": "C",
+     "quote": "The story also draws on elements of original Conan Doyle stories of Holmes such as \"The Five Orange Pips\" (1891) and \"The Final Problem\" (1893)."
+    }
+   ],
+   "other_sources": [],
+   "readers": 2
+  },
+  "116": {
+   "title": "The Blind Banker",
+   "kind": "tv_episode",
+   "year": 2010,
+   "holmes_appears": true,
+   "sources": [
+    {
+     "story": "The Adventure of the Dancing Men",
+     "tier": "C",
+     "quote": "According to Moffat, the episode takes the concept of coded messages from \"The Adventure of the Dancing Men\" (using pictorial messages), a story feature directly referenced later, in the series 4 episode The Final Problem."
+    },
+    {
+     "story": "The Sign of the Four",
+     "tier": "C",
+     "quote": "A murder victim found inside a locked room accessible only by climbing might be an allusion to The Sign of the Four."
+    },
+    {
+     "story": "The Valley of Fear",
+     "tier": "C",
+     "quote": "Alan Kistler of Newsarama has pointed out other potential inspirations such as the use in The Valley of Fear of a code \"based on a book that many people would own.\""
+    }
+   ],
+   "other_sources": [],
+   "readers": 2
+  },
+  "117": {
+   "title": "The Empty Hearse",
+   "kind": "tv_episode",
+   "year": 2014,
+   "holmes_appears": true,
+   "sources": [
+    {
+     "story": "The Adventure of the Empty House",
+     "tier": "C",
+     "quote": "Inspired by \"The Adventure of the Empty House\" and \"The Lost Special\" by Sir Arthur Conan Doyle, the episode follows Sherlock Holmes' return to London and reunion with John Watson, along with an underground terrorist network."
+    }
+   ],
+   "other_sources": [
+    "The Lost Special (Conan Doyle short story)",
+    "The Web of Fear (1968 Doctor Who serial)"
+   ],
+   "readers": 2
+  },
+  "118": {
+   "title": "The Final Problem (Sherlock)",
+   "kind": "tv_episode",
+   "year": 2017,
+   "holmes_appears": true,
+   "sources": [],
+   "other_sources": [],
+   "readers": 2
+  },
+  "119": {
+   "title": "The Great Game (Sherlock)",
+   "kind": "tv_episode",
+   "year": 2010,
+   "holmes_appears": true,
+   "sources": [
+    {
+     "story": "The Final Problem",
+     "tier": "C",
+     "quote": "We had to do a version of the scene in 'The Final Problem' in which the two arch-enemies meet each other."
+    }
+   ],
+   "other_sources": [],
+   "readers": 2
+  },
+  "120": {
+   "title": "His Last Vow",
+   "kind": "tv_episode",
+   "year": 2014,
+   "holmes_appears": true,
+   "sources": [
+    {
+     "story": "The Adventure of Charles Augustus Milverton",
+     "tier": "B",
+     "quote": "The episode is a contemporary adaptation of Sir Arthur Conan Doyle's short story \"The Adventure of Charles Augustus Milverton\"."
+    }
+   ],
+   "other_sources": [],
+   "readers": 2
+  },
+  "121": {
+   "title": "The Hounds of Baskerville",
+   "kind": "tv_episode",
+   "year": 2012,
+   "holmes_appears": true,
+   "sources": [
+    {
+     "story": "The Hound of the Baskervilles",
+     "tier": "B",
+     "quote": "The episode is a contemporary adaptation of The Hound of the Baskervilles, one of Sir Arthur Conan Doyle's most famous works."
+    }
+   ],
+   "other_sources": [],
+   "readers": 2
+  },
+  "122": {
+   "title": "The Lying Detective",
+   "kind": "tv_episode",
+   "year": 2017,
+   "holmes_appears": true,
+   "sources": [
+    {
+     "story": "The Adventure of the Dying Detective",
+     "tier": "B",
+     "quote": "The episode was based loosely on the Doyle short story \"The Adventure of the Dying Detective\"."
+    }
+   ],
+   "other_sources": [],
+   "readers": 2
+  },
+  "123": {
+   "title": "The Reichenbach Fall",
+   "kind": "tv_episode",
+   "year": 2012,
+   "holmes_appears": true,
+   "sources": [
+    {
+     "story": "The Final Problem",
+     "tier": "C",
+     "quote": "Inspired by \"The Final Problem\" by Sir Arthur Conan Doyle, the episode follows Moriarty's plot to discredit and kill Sherlock Holmes"
+    }
+   ],
+   "other_sources": [
+    "The Woman in Green (film)"
+   ],
+   "readers": 2
+  },
+  "124": {
+   "title": "A Scandal in Belgravia",
+   "kind": "tv_episode",
+   "year": 2012,
+   "holmes_appears": true,
+   "sources": [
+    {
+     "story": "A Scandal in Bohemia",
+     "tier": "B",
+     "quote": "The Guardian's Sam Wollaston says that Conan Doyle's original story has \"been Moffatised as well as modernised. He starts off parallel but then wanders off left and right, into international terrorism and CIA plots and complicated conspiracy theories."
+    }
+   ],
+   "other_sources": [],
+   "readers": 3
+  },
+  "125": {
+   "title": "The Sign of Three",
+   "kind": "tv_episode",
+   "year": 2014,
+   "holmes_appears": true,
+   "sources": [
+    {
+     "story": "The Sign of the Four",
+     "tier": "C",
+     "quote": "The episode's title is inspired by The Sign of the Four by Sir Arthur Conan Doyle."
+    }
+   ],
+   "other_sources": [],
+   "readers": 2
+  },
+  "126": {
+   "title": "The Six Thatchers",
+   "kind": "tv_episode",
+   "year": 2017,
+   "holmes_appears": true,
+   "sources": [],
+   "other_sources": [],
+   "readers": 2
+  },
+  "127": {
+   "title": "A Study in Pink",
+   "kind": "tv_episode",
+   "year": 2010,
+   "holmes_appears": true,
+   "sources": [
+    {
+     "story": "A Study in Scarlet",
+     "tier": "B",
+     "quote": "It is loosely based upon the first Sherlock Holmes novel, A Study in Scarlet."
+    },
+    {
+     "story": "The Red-Headed League",
+     "tier": "C",
+     "quote": "The \"three-patch problem\" that Holmes describes is similar to the term \"three-pipe problem\" he uses in \"The Red-Headed League\"."
+    },
+    {
+     "story": "The Sign of the Four",
+     "tier": "C",
+     "quote": "Fans will recognise at once that the close-reading Sherlock applies to John's mobile phone is drawn from an almost identical analysis of a pocket watch [taken from The Sign of the Four]."
+    }
+   ],
+   "other_sources": [],
+   "readers": 2
+  },
+  "128": {
+   "title": "Sherlock Holmes: The Awakened",
+   "kind": "video_game",
+   "year": 2006,
+   "holmes_appears": true,
+   "sources": [],
+   "other_sources": [
+    "Cthulhu Mythos"
+   ],
+   "readers": 2
+  },
+  "129": {
+   "title": "Sherlock Holmes: The Awakened (2023 video game)",
+   "kind": "video_game",
+   "year": 2023,
+   "holmes_appears": true,
+   "sources": [],
+   "other_sources": [
+    "Sherlock Holmes: The Awakened (2007 video game, of which this is a remake)",
+    "Sherlock Holmes: The Awakened (2007 video game; this is a remake of it)"
+   ],
+   "readers": 2
+  },
+  "130": {
+   "title": "Sherlock Holmes: The Case of the Silver Earring",
+   "kind": "video_game",
+   "year": 2004,
+   "holmes_appears": true,
+   "sources": [],
+   "other_sources": [
+    "The Adventures of Sherlock Holmes (collection; \"inspired by\")",
+    "The Adventures of Sherlock Holmes (the article says the game is \"inspired by\" it)",
+    "unpublished pastiche novel by Jalil Amr"
+   ],
+   "readers": 2
+  },
+  "131": {
+   "title": "Sherlock Holmes: Consulting Detective",
+   "kind": "video_game",
+   "year": 1991,
+   "holmes_appears": true,
+   "sources": [],
+   "other_sources": [
+    "Sherlock Holmes: Consulting Detective (1981 tabletop game-gamebook hybrid)",
+    "Sherlock Holmes: Consulting Detective (1981 tabletop game-gamebook)"
+   ],
+   "readers": 2
+  },
+  "132": {
+   "title": "Sherlock Holmes: Crimes & Punishments",
+   "kind": "video_game",
+   "year": 2014,
+   "holmes_appears": true,
+   "sources": [],
+   "other_sources": [
+    "Crime and Punishment (Fyodor Dostoyevsky novel; title only)",
+    "Crime and Punishment (novel by Fyodor Dostoyevsky; the title is a play on its title)",
+    "Sherlock (BBC television series; inspired the \"Sherlock Vision\" mechanic)"
+   ],
+   "readers": 2
+  },
+  "133": {
+   "title": "Sherlock Holmes: The Devil's Daughter",
+   "kind": "video_game",
+   "year": 2016,
+   "holmes_appears": true,
+   "sources": [],
+   "other_sources": [],
+   "readers": 2
+  },
+  "134": {
+   "title": "The Great Ace Attorney: Adventures",
+   "kind": "video_game",
+   "year": 2015,
+   "holmes_appears": true,
+   "sources": [],
+   "other_sources": [],
+   "readers": 2
+  },
+  "135": {
+   "title": "The Great Ace Attorney 2: Resolve",
+   "kind": "video_game",
+   "year": 2017,
+   "holmes_appears": false,
+   "sources": [],
+   "other_sources": [],
+   "readers": 2
+  },
+  "136": {
+   "title": "The Lost Files of Sherlock Holmes: The Case of the Rose Tattoo",
+   "kind": "video_game",
+   "year": 1996,
+   "holmes_appears": true,
+   "sources": [],
+   "other_sources": [],
+   "readers": 2
+  },
+  "137": {
+   "title": "Sherlock: The Riddle of the Crown Jewels",
+   "kind": "video_game",
+   "year": 1987,
+   "holmes_appears": true,
+   "sources": [],
+   "other_sources": [],
+   "readers": 2
+  },
+  "138": {
+   "title": "The Testament of Sherlock Holmes",
+   "kind": "video_game",
+   "year": 2012,
+   "holmes_appears": true,
+   "sources": [],
+   "other_sources": [],
+   "readers": 2
+  },
+  "139": {
+   "title": "Sherlock Holmes Versus Arsène Lupin",
+   "kind": "video_game",
+   "year": 2007,
+   "holmes_appears": true,
+   "sources": [],
+   "other_sources": [],
+   "readers": 2
+  },
+  "140": {
+   "title": "Sherlock Holmes Versus Jack the Ripper",
+   "kind": "video_game",
+   "year": 2009,
+   "holmes_appears": true,
+   "sources": [],
+   "other_sources": [],
+   "readers": 2
+  }
+ }
+}

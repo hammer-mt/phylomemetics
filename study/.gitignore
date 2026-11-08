@@ -20,3 +20,6 @@ results/workflow1.json
 # logs
 logs/
 data_fetch*.log
+
+# second corpora: presence bits and counts fetched from the GPU machines (regenerate with v2/second/gpu.py)
+v2/acts_second/

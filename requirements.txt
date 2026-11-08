@@ -11,6 +11,8 @@ scikit-learn==1.9.1
 scipy==1.18.1
 torch==2.14.1
 transformers==5.20.2
+# the second corpora (study/v2/second/): wikitext to plain text
+mwparserfromhell==0.7.2
 # the image side experiment (images/)
 open-clip-torch==3.3.0
 torchvision==0.29.1
