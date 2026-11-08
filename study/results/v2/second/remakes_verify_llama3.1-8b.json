@@ -1,0 +1,32 @@
+{
+ "what": "The GPU machine's counts for the primary plane, recounted from the presence bits of the films of the pairs (remakes.py verify).",
+ "plane": "top1_30",
+ "films_read_by_the_model": 16218,
+ "band": [
+  2,
+  8109
+ ],
+ "band_in_the_counts_file": [
+  2,
+  8109
+ ],
+ "units": 917504,
+ "optional_units": 829237,
+ "optional_units_in_the_counts_file": 829237,
+ "remake_rows": 471,
+ "pair_film_columns": 887,
+ "cells_compared": 417777,
+ "shared_counts_that_differ": 0,
+ "n_optional_counts_that_differ": 0,
+ "largest_shared_count": 59801,
+ "exact": true,
+ "sha256": {
+  "counts/top1_30.npz": "c05e9d8a9bdebaf463ff7c1fd7cd8fb09301f3bab58c84921e82c978e5da0b16",
+  "pair_films_top1_30.bits.npy": "83847800aebe6f1bdb12944fdb9baa22c9dbc3fa5756bf07ce777446cf0ef3a7",
+  "top1_30.unit_counts.npy": "bda870664853dd953bc19a6220d876ca55567005f59eabb05abf96129a4bd30f",
+  "pairs.json": "0c0b9ed58720231c56380f811edd4b04b4b261ca2f4d8210eb89e5c27532f095",
+  "films.jsonl": "de3bc3c3350bcb127d0d07dd254cfa893e7b52e3edbb685f0336550b4c1592d0"
+ },
+ "model": "llama3.1-8b",
+ "git_head": "e9ffb0a13913c8a9b83419f19aa6013788d63636"
+}

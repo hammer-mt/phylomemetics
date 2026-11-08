@@ -1,0 +1,32 @@
+{
+ "what": "The GPU machine's counts for the primary plane, recounted from the presence bits of the films of the pairs (remakes.py verify).",
+ "plane": "top1_30",
+ "films_read_by_the_model": 16218,
+ "band": [
+  2,
+  8109
+ ],
+ "band_in_the_counts_file": [
+  2,
+  8109
+ ],
+ "units": 3276800,
+ "optional_units": 2706922,
+ "optional_units_in_the_counts_file": 2706922,
+ "remake_rows": 471,
+ "pair_film_columns": 887,
+ "cells_compared": 417777,
+ "shared_counts_that_differ": 0,
+ "n_optional_counts_that_differ": 0,
+ "largest_shared_count": 187901,
+ "exact": true,
+ "sha256": {
+  "counts/top1_30.npz": "b4330a1dc02e980c181175a4626507c1171bd5a65cc60607093ab42b02dca0f3",
+  "pair_films_top1_30.bits.npy": "cd7c919a7839576bb4dc2fef8b9d5a36776db19481b307a6ba33a5fbfe2f7c86",
+  "top1_30.unit_counts.npy": "272b25b7dca0ec428e8c9602702e8ed97a0a86a014359774d76ceb52234c4045",
+  "pairs.json": "0c0b9ed58720231c56380f811edd4b04b4b261ca2f4d8210eb89e5c27532f095",
+  "films.jsonl": "de3bc3c3350bcb127d0d07dd254cfa893e7b52e3edbb685f0336550b4c1592d0"
+ },
+ "model": "qwen3-32b",
+ "git_head": "e9ffb0a13913c8a9b83419f19aa6013788d63636"
+}
