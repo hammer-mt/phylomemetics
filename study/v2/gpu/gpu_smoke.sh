@@ -27,7 +27,7 @@ works = [json.loads(l) for l in open(T + "/study/corpus_neutral.jsonl")]
 rng = np.random.default_rng(0)
 units = rng.choice(2 * 28 * 3072, 200, replace=False)
 np.savez(T + "/partners.npz", units=units, partners=rng.choice(2 * 28 * 3072, (3, 200)), partners_distinctive=rng.choice(2 * 28 * 3072, (2, 200)))
-items = [{"id": w["label"], "text": " ".join(w["sentences"][:6]), "answers": ["Batman", "The Batman"], "members": list(range(0, 200, 2)), "conditions": ["canon", "rand:1", "dist:0"]} for w in works[:2]]
+items = [{"id": w["label"], "text": " ".join(w["sentences"][:6]), "answers": ["Batman", "The Batman"], "members": list(range(0, 200, 2)), "conditions": ["canon", "rand:1", "distinctive:0"]} for w in works[:2]]
 for mode in ("all", "strong"):
     json.dump({"question": "Who is the hero? Reply with only the name.", "partner_file": T + "/partners.npz", "reply_for": ["canon"], "mode": mode, "items": items}, open(f"{T}/ablate_{mode}.json", "w"))
 PY

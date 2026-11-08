@@ -1,0 +1,33 @@
+{
+ "what": "SHA-256 of the job files of the follow-up ablation (PLAN.md Section 18, change 33), of the partner files of the registered run, which hold the canon units and every random set, and of each model's scale (v2/acts/<tag>/scale.npy), which the two secondaries use. Written before any of these jobs was run.",
+ "question": "Every name in this plot summary has been replaced by a code such as X1. Which famous fictional hero is the story about? Reply with only the name the hero is best known by, not a code.",
+ "prefixes_in_the_order_tried": [
+  "Hero:",
+  "Answer:"
+ ],
+ "written_by": "v2/analysis/build_ablation_followup.py",
+ "sha256": {
+  "begun_form_hero.json": "9fa3fc5dd5f766214050b4c5f5f89a0bc3cee61790cea4e9991947c3d2b7050e",
+  "begun_probe_hero.json": "631ef6be854496128e3a2b0b597ccbe561bcf4a47e07e5baba341ff0c937a882",
+  "ablate_qwen3-32b_begun_hero.json": "67af61d14c8cb9038f0a554ab5b40d777464e04329ab22f9c8249dd5b46557c1",
+  "ablate_qwen3-32b_begun_hero_strong.json": "5f6dd4b8e8ca627a6c1d96bc4c1565481fbf249777638e1381c51380b9405029",
+  "ablate_qwen3-32b_begun_hero_weak.json": "4c4dab4b85e2868f294956f2163ffc729c331e5c3a5aa01f0a372128c3273e02",
+  "ablate_qwen3-8b_begun_hero.json": "70fb30deab297310f55ee6dc584964377ad12b4897318cda279830256efe9c78",
+  "ablate_qwen3-8b_begun_hero_strong.json": "ceff8ae9f488152f395fdfb7b812e578eb43a761acaa1c0db4c9036fbbba2331",
+  "ablate_qwen3-8b_begun_hero_weak.json": "40381f0688dee6fa030ce6c28429cc608b4dc42828d0841f3bdd3c0829be8c25",
+  "begun_form_answer.json": "6132953bb52d5c0cb36bccd667e15c87db0e71d14a712324571ad26bc064851c",
+  "begun_probe_answer.json": "584a8f82f01127b7be97dfaaa28dfa84abe89680ef8acf9f598584908725c33b",
+  "ablate_qwen3-32b_begun_answer.json": "a5d1953e89c150f87a29bc600de8adf890d5c572b1e103b39f68193a446f561c",
+  "ablate_qwen3-32b_begun_answer_strong.json": "8f6239d61e8b44dac0ab172c7194e5c4a2879d5637114678df10c9ff2ceb2d45",
+  "ablate_qwen3-32b_begun_answer_weak.json": "5751257cd4f1f5638ce97ca33ecdb194685d8c2523dc96267a5d8319b5661e72",
+  "ablate_qwen3-8b_begun_answer.json": "5301e495f078c2eae1172ef2f911d2f1acebda41ff635488b94a8f943037079e",
+  "ablate_qwen3-8b_begun_answer_strong.json": "fbddeefb0d0e5dbd3fbd1363855c25d874654417accbfbbc516c6153f4567390",
+  "ablate_qwen3-8b_begun_answer_weak.json": "fcff51712f08da3e9f420ab8c8d64c263781f21116678adc7eb8bc889af25046",
+  "ablate_qwen3-32b_partners.npz": "5d3ac4d030f292443ccebd9959590d554029f41ffa6aabeb8cc710c2b06b8e5b",
+  "ablate_qwen3-8b_partners.npz": "babcba878963161b8e5704a2c08302f92be0db0f5b3460345a05958d0795cea4"
+ },
+ "scale_sha256": {
+  "qwen3-32b": "b895302c4dc52a8a96f5b689b304a1b5dae5f90f2c0116eb82932e9f52e33ba2",
+  "qwen3-8b": "6f9f3db24747c152c1a40e890a5b89429646d191d6dce6f21d21875c16da4028"
+ }
+}

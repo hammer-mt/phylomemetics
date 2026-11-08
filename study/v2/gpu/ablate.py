@@ -3,9 +3,16 @@
     python ablate.py <model-tag> <jobs.json> <out.json> [scale.npy]
 
 jobs.json: {"question": "...", "sets": {"name": [unit, ...], ...}, "reply_for": ["name", ...], "reply_tokens": 8,
-            "items": [{"id", "text", "answers": ["Batman", ...], "conditions": ["name", ...], "question": "..."}]}
+            "reply_prefix": "", "items": [{"id", "text", "answers": ["Batman", ...], "conditions": ["name", ...], "question": "..."}]}
 
-An item's own "question" replaces the shared one. Matched random sets are too many to list: with "partner_file"
+An item's own "question" replaces the shared one. "reply_prefix" is text the model's reply is made to begin with (for
+example "Hero:"): it is appended after the chat format's opening of the reply, the outcome is then the probability
+that the reply goes on with one of the answers, and the reply that is kept is what the model writes after the prefix.
+With a prefix the script also checks, for every answer, that the prompt and the answer tokenised as one string are the
+prompt's tokens followed by the answer's (so the scored path is one the model could write). With or without a prefix it
+keeps the prompt's last tokens, each reply as written ("reply_raw", white space included) and, for the untouched run
+and the sets named in "reply_for", the five most probable next tokens after the prompt. Matched random sets are too
+many to list: with "partner_file"
 (an .npz holding units [n] and one or more partner arrays [K, n]) an item names its own units by "members" (indices
 into units), and its conditions may be "canon" (those units) and "<control>:<k>" (their partners in set k of that
 control; "rand" reads the array partners, any other name reads partners_<name>). With no sets and no conditions the
@@ -49,6 +56,7 @@ def main(tag, jobs_path, out_path, scale_path=None):
     assert mode == "all" or scale is not None, "strong and weak modes need the scale file"
     everywhere = jobs.get("where", "story") == "all"
     reply_tokens = int(jobs.get("reply_tokens", 8))
+    reply_prefix = jobs.get("reply_prefix", "")
     batch = int(jobs.get("batch", 16))
     sets = jobs.get("sets", {})
     partner = np.load(jobs["partner_file"]) if jobs.get("partner_file") else None
@@ -120,7 +128,9 @@ def main(tag, jobs_path, out_path, scale_path=None):
                 each.append(lp.cpu().numpy())
             del first
         each = np.stack(each, 1)                                                              # [B, answers]
-        return [{"logp": float(np.logaddexp.reduce(each[r])), "logp_each": [round(float(x), 4) for x in each[r]], "removed": round(float(removed[r]), 2)}
+        top = lp0.topk(5, -1)
+        return [{"logp": float(np.logaddexp.reduce(each[r])), "logp_each": [round(float(x), 4) for x in each[r]], "removed": round(float(removed[r]), 2),
+                 "next_tokens": [[tok.decode([int(i)]), round(float(v), 4)] for v, i in zip(top.values[r], top.indices[r])]}
                 for r in range(B)]
 
     def reply(prompt_ids, units):
@@ -128,10 +138,10 @@ def main(tag, jobs_path, out_path, scale_path=None):
             ctx.update(mask=masks([units]), story_pass=True, removed=None)
             gen = model.generate(prompt_ids, max_new_tokens=reply_tokens, do_sample=False, pad_token_id=tok.pad_token_id)
             ctx["story_pass"] = False
-        return tok.decode(gen[0, prompt_ids.shape[1]:], skip_special_tokens=True).strip()
+        return tok.decode(gen[0, prompt_ids.shape[1]:], skip_special_tokens=True)       # as written; the caller keeps it raw and stripped
 
     tap = Tap(model, fn)
-    out = {"model": tag, "question": jobs["question"], "where": "all" if everywhere else "story", "mode": mode,
+    out = {"model": tag, "question": jobs["question"], "reply_prefix": reply_prefix, "where": "all" if everywhere else "story", "mode": mode,
            "set_sizes": {k: len(v) for k, v in sets.items()}, "items": []}
     for k, item in enumerate(jobs["items"]):
         msgs = [{"role": "user", "content": item["text"] + "\n\n" + item.get("question", jobs["question"])}]
@@ -139,6 +149,7 @@ def main(tag, jobs_path, out_path, scale_path=None):
             prompt = tok.apply_chat_template(msgs, tokenize=False, add_generation_prompt=True, enable_thinking=False)
         except TypeError:
             prompt = tok.apply_chat_template(msgs, tokenize=False, add_generation_prompt=True)
+        prompt += reply_prefix                     # the reply is begun for the model; the story's tokens are found below as before
         enc = tok(prompt, return_offsets_mapping=True, add_special_tokens=False)
         start = prompt.index(item["text"])
         end = start + len(item["text"])
@@ -146,15 +157,25 @@ def main(tag, jobs_path, out_path, scale_path=None):
         ctx["lo"], ctx["hi"] = inside[0], inside[-1] + 1
         p_ids = torch.tensor([enc["input_ids"]], device=dev)
         answers = [tok(a, return_tensors="pt", add_special_tokens=False)["input_ids"].to(dev) for a in item["answers"]]
+        if reply_prefix:                           # the answer's tokens after the prefix must be the ones the tokenizer gives the whole string
+            for a, a_ids in zip(item["answers"], answers):
+                whole = tok(prompt + a, add_special_tokens=False)["input_ids"]
+                assert whole == enc["input_ids"] + a_ids[0].tolist(), f"{item['id']}: {a!r} is tokenised differently after the prefix"
         names = ["untouched"] + list(item.get("conditions", []))
         unit_sets = [np.zeros(0, np.int64)] + [units_for(n, item) for n in names[1:]]
         got = []
         for s in range(0, len(names), batch):
             got += measure(p_ids, answers, unit_sets[s:s + batch])
+        raw = reply(p_ids, unit_sets[0])
         res = {"id": item["id"], "answers": item["answers"], "n_prompt_tokens": int(p_ids.shape[1]), "story_tokens": [ctx["lo"], ctx["hi"]],
-               "untouched": dict(got[0], reply=reply(p_ids, unit_sets[0])), "conditions": {}}
+               "prompt_tail_tokens": [tok.decode([int(i)]) for i in enc["input_ids"][-12:]],
+               "untouched": dict(got[0], reply=raw.strip(), reply_raw=raw), "conditions": {}}
         for n, r, units in zip(names[1:], got[1:], unit_sets[1:]):
-            res["conditions"][n] = dict(r, reply=reply(p_ids, units)) if n in jobs.get("reply_for", []) else r
+            if n in jobs.get("reply_for", []):
+                raw = reply(p_ids, units)
+                res["conditions"][n] = dict(r, reply=raw.strip(), reply_raw=raw)
+            else:
+                res["conditions"][n] = {k: v for k, v in r.items() if k != "next_tokens"}
         out["items"].append(res)
         if k % 5 == 0 or k == len(jobs["items"]) - 1:
             print(f"{now()} {k + 1}/{len(jobs['items'])} {item['id'][:30]:30s} untouched {res['untouched']['logp']:.2f} reply {res['untouched']['reply']!r}", flush=True)

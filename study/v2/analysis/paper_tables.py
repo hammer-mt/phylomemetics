@@ -289,19 +289,22 @@ def main():
         parts.append("## Steering the explained units (chance 20%)\n\n" + table(["Model", "Units", "Items", "Correct", "Accuracy", "Answered none", "Binomial p"], rows))
 
     # ---- ablation
-    rows = []
+    rows, follow, begun_rows = [], False, []
     for m in models:
         ab = load(f"ablation_{m}.json")
         if not ab:
             continue
         for label, key in (("summary tokens, name-free (confirmatory)", "story_tokens_name_free"), ("every position", "every_position_name_free"),
-                           ("original texts", "story_tokens_original"), ("strong firings only", "strong_firings_only"), ("weak activity only", "weak_activity_only")):
+                           ("original texts", "story_tokens_original"), ("strong firings only", "strong_firings_only"), ("weak activity only", "weak_activity_only"),
+                           ("follow-up test: reply begun for the model", "reply_begun"), ("follow-up, strong firings only", "reply_begun_strong_firings_only"),
+                           ("follow-up, weak activity only", "reply_begun_weak_activity_only")):
             a = ab.get(key)
             if not a:
                 continue
             r, g, sp = a["matched_random_sets"], a["magnitude_matched_random_sets"], a.get("specificity", {})
-            # only the confirmatory version is a test (PLAN.md Section 18, change 13): the others give the canon's rank among their 20 sets and no p
-            test = key == "story_tokens_name_free"
+            # only the registered version and the follow-up's main run are tests (PLAN.md Section 18, changes 13 and 33): the others give the canon's rank among their 20 sets and no p
+            test = key in ("story_tokens_name_free", "reply_begun")
+            follow = follow or key.startswith("reply_begun")
             rank = lambda q: f"{q['random_sets_at_least_canon'] + 1} of {q['n_sets'] + 1}"
             rows.append([NAMES[m], label, r["n_sets"], f(r["mean_drop_canon"]), f(r["mean_drop_random_sets_mean"], 3), f(r["mean_drop_random_sets_max"], 3),
                          pv(r["p"]) if test else "", rank(r), f(g["mean_drop_random_sets_max"], 3), pv(g["p"]) if test else "", rank(g),
@@ -313,11 +316,55 @@ def main():
             n_bad = ab["story_tokens_name_free"]["untouched_replies_that_do_not_start_with_a_name"]
             rows.append([NAMES[m], "criterion", "", "", "", "", pv(c["p_against_sets_matched_on_works"]), "", "", pv(c["p_against_sets_also_matched_on_activity"]), "", "",
                          pv(c["specificity_p"]), "", "", f"untouched replies that do not start with a name: {n_bad} of 32 (limit 4); evaluable {c['evaluable_with_this_question']}; met {c['met']}"])
+        if "criterion_reply_begun" in ab:
+            c, a = ab["criterion_reply_begun"], ab["reply_begun"]
+            rows.append([NAMES[m], f"criterion of the follow-up test (reply begun with '{c['reply_prefix']}')", "", "", "", "", pv(c["p_against_sets_matched_on_works"]), "", "",
+                         pv(c["p_against_sets_also_matched_on_activity"]), "", "", f"{pv(c['specificity_p'])} (exact {pv(c['specificity_p_exact'])})", "", "",
+                         f"untouched replies that do not begin with a name: {c['untouched_replies_that_do_not_start_with_a_name']} of 32 (limit 4); outcome: {c['outcome']}"])
+            off, h, ag = a["replies_with_the_canon_off"], a["specificity"]["hero_films_described"], a["agreement_with_the_registered_run"]
+            sub = ag["works_whose_registered_untouched_reply_began_with_a_name"]
+            split = a.get("works_whose_untouched_reply_begins_with_a_name")
+            begun_rows.append([NAMES[m], c["reply_prefix"], f"{off['do_not_begin_with_a_name']} of {a['n_batman_works']} ({off['of_which_the_untouched_reply_did']} of them began with a name untouched)",
+                               f(off["mean_drop_canon_with_those_works_left_out"]),
+                               f"{split['n_works']}: {f(split['matched_random_sets']['mean_drop_canon'])} against {f(split['matched_random_sets']['mean_drop_random_sets_mean'], 3)}"
+                               if split else "every reply begins with a name" if c["untouched_replies_that_do_not_start_with_a_name"] == 0 else "none begins with a name",
+                               f"{h['untouched_replies_that_begin_with_a_name']} of {a['n_hero_films']}", f"{h['untouched_replies_that_name_their_own_hero']} of {a['n_hero_films']}",
+                               f(h["mean_drop_over_the_films_whose_own_hero_the_untouched_model_names"]), f(h["mean_drop_over_all_the_films"]),
+                               f"{f(ag['untouched_log_odds']['rho'])}, {f(ag['drop_canon']['rho'])}",
+                               f"{f(sub['untouched_log_odds']['rho'])}, {f(sub['drop_canon']['rho'])} (n = {sub['drop_canon']['n']})"])
     if rows:
-        parts.append("## Ablation: switching off Batman's canon (drop in the log-odds of the hero's name)\n\n" +
-                     "Only the first version for each model is a test. The others use 20 sets and are reported as the canon's drop beside the sets' and its rank among them.\n\n" +
+        note = ("The first version for each model is the registered test. The version with the reply begun for the model is a follow-up test, fixed after the registered "
+                "result was seen and before it was run. It is not one of the six confirmatory tests. Its falls are not on the same scale as the registered run's, "
+                "because the name's first token is a different one; each run's canon is compared with its own random sets. "
+                if follow else "Only the first version for each model is a test. ")
+        parts.append("## Ablation: switching off Batman's canon (drop in the log-odds of the hero's name)\n\n" + note +
+                     "The others use 20 sets and are reported as the canon's drop beside the sets' and its rank among them.\n\n" +
                      table(["Model", "Version", "Random sets", "Canon, Batman works", "Sets (mean)", "Sets (max)", "p", "Canon's rank", "Activity-matched sets (max)", "p", "Canon's rank",
                             "Canon, hero films (own hero)", "Specificity p", "Activation removed: canon", "activity-matched sets (mean)", "Replies naming Batman: untouched -> canon off"], rows))
+
+    if begun_rows:
+        parts.append("## The follow-up ablation described (PLAN.md Section 18, change 33)\n\nDescriptions fixed with the follow-up test. They change no outcome.\n\n" +
+                     table(["Model", "Reply begun with", "Replies with the canon off that do not begin with a name", "Canon's fall with those works left out",
+                            "Works whose untouched reply begins with a name: canon against sets", "Hero films: untouched replies that begin with a name", "that name the film's own hero",
+                            "Fall over the films whose hero the model names", "Fall over all seven", "Rank correlation with the registered run: untouched log-odds, canon's fall",
+                            "The same over works whose registered reply began with a name"], begun_rows))
+    rows = []
+    for m in models:
+        fc, pr = load(f"{m}/begun_form_check.json"), load(f"recognition_begun_{m}.json")
+        for c in (fc or {}).get("checks", []):
+            rows.append([NAMES[m], f"check of the prefix on the 69 ordinary films: '{c['prefix']}'", f"{c['replies_that_begin_with_a_name']} of {c['n_films']} replies begin with a name (62 needed)",
+                         "passes" if c["passes"] else "fails", "", ""])
+        if pr:
+            cnt, sb, bn, reg = pr["n"], pr["replies_that_say_batman"], pr["replies_that_begin_with_a_name"], pr["registered_probe_without_the_prefix"]
+            rows.append([NAMES[m], f"untouched probe with the reply begun ('{pr['reply_prefix']}')",
+                         "replies that begin with a name: " + ", ".join(f"{bn[k]} of {cnt[k]} {k.replace('_', ' ')}" for k in cnt),
+                         "replies that say Batman: " + ", ".join(f"{sb[k]} of {cnt[k]} {k.replace('_', ' ')}" for k in cnt),
+                         f"{pr['hero_films_naming_their_own_hero']} of {pr['hero_films_with_a_hero_to_name']}", f(pr["auc_logp_batman_batman_vs_hero_films"])])
+            rows.append([NAMES[m], "the registered probe, without the prefix", "", "replies that say Batman: " + ", ".join(f"{reg['replies_that_say_batman'][k]} of {cnt[k]} {k.replace('_', ' ')}" for k in cnt),
+                         f"{reg['hero_films_naming_their_own_hero']} of {reg['hero_films_with_a_hero_to_name']}", f(reg["auc_logp_batman_batman_vs_hero_films"])])
+    if rows:
+        parts.append("## The follow-up ablation: the check of the prefix and the untouched probe with the reply begun\n\n" +
+                     table(["Model", "What", "Form of the replies", "Result", "Hero films naming their own hero", "AUC of log p(Batman), Batman works against hero films"], rows))
 
     # ---- twins
     rows = []
