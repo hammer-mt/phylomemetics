@@ -21,7 +21,7 @@ FIELDS = [
     ("question", "Question"), ("result", "Result so far"), ("hypothesis", "Prediction"),
     ("falsifier", "What would refute it"), ("data", "Data"), ("method", "Method"),
     ("rivals", "Cheap rival it must beat"), ("premise", "Premise it tests"), ("bio", "Biology analogue"),
-    ("cost", "Cost"), ("payoff", "Payoff"), ("risk", "Main risk"), ("review", "Reviewer note"), ("note", "Note"),
+    ("cost", "Cost"), ("payoff", "Payoff"), ("risk", "Main risk"), ("review", "Reviewer note"), ("ranking", "Cross-area ranking"), ("overlaps", "Overlaps with"), ("note", "Note"),
 ]
 
 

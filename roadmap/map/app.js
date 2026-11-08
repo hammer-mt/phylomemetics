@@ -119,7 +119,7 @@
         row('What would refute it', i.falsifier), row('Data', i.data), row('Method', i.method),
         row('Cheap rival it must beat', i.rivals), row('Tests which premise', i.premise),
         row('Biology analogue', i.bio), row('Cost', i.cost), row('Payoff', i.payoff), row('Main risk', i.risk),
-        row('Reviewer note', i.review), row('Note', i.note), row('Sources', (i.sources || []).join('; '))));
+        row('Reviewer note', i.review), row('Cross-area ranking', i.ranking), row('Overlaps with', i.overlaps), row('Note', i.note), row('Sources', (i.sources || []).join('; '))));
     if (scroll) $('chartTop').scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 
