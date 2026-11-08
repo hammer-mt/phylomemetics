@@ -5,7 +5,7 @@
   "Word counts measure it just as well. On the primary model, words matched or beat neurons on every pre-registered test.",
   "Agreement between two companies' models is mostly shared name and word detectors. It collapses when names are removed.",
   "A handful of units do behave like ideas: a funeral, a coin flip, the secret identity, and one revenge unit that picked the right sentence in 10 of 12 pairs with no revenge words.",
-  "Outside this project, the evidence is that neurons are a better basis than random directions, that 1 to 5% of them recur across models, and that prompting beats every activation method at editing text."
+  "Outside this project, the evidence is that neurons are a better basis than random directions, that 1 to 5% of them recur across retrained models, and that plain prompting beats activation methods at steering text on the one large benchmark."
  ],
  "unknown": [
   "Whether neuron units follow an idea when the wording changes. This is the claim that would justify the method, and it has never been tested at scale.",

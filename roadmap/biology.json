@@ -105,7 +105,7 @@
    "analogue": "Per-meme Fst between franchises, media, eras; admixture fractions per work",
    "needs": "Presence matrix + group labels",
    "feasibility": "Yes, from data already committed",
-   "experiment": "ADMIXTURE-style clustering of the 114 works, name-free. Rival: an LDA topic model on words (the same model family as STRUCTURE `[UNVERIFIED this session]`). Precedent: Ross, Greenhill and Atkinson 2013",
+   "experiment": "ADMIXTURE-style clustering of the 114 works, name-free. Rival: an LDA topic model on words (the same model family as STRUCTURE; confirmed by the checker: Wikipedia's \"Latent Dirichlet allocation\" page says the model was first presented for population genetics by Pritchard, Stephens and Donnelly in 2000, https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation). Precedent: Ross, Greenhill and Atkinson 2013",
    "idea": ""
   },
   {
@@ -127,7 +127,7 @@
    "idea": ""
   },
   {
-   "tool": "Epistasis, fitness landscapes (Sarkisyan 2016; Wright 1932)",
+   "tool": "Epistasis, fitness landscapes (Sarkisyan 2016; Wright 1932 `[UNVERIFIED exact citation; no DOI found]`)",
    "does": "Effect of a mutation depends on background",
    "analogue": "Meme A helps only with meme B",
    "needs": "Outcome + factorial variants",
@@ -230,7 +230,7 @@
    "does": "Group homologous domains",
    "analogue": "Within a model: the 14,843 families. Across models: twins, crosscoders, universal SAEs",
    "needs": "Activations from several models",
-   "feasibility": "Done within; on a new corpus across",
+   "feasibility": "Done within; a new corpus across",
    "experiment": "Families with members in all of 5 models, on name-free text. Rival: nearest single word (the study's word-matched null)",
    "idea": ""
   },
@@ -240,7 +240,7 @@
    "analogue": "Unit labels with evidence codes: read from examples; passed blind test; confirmed by steering",
    "needs": "Labels + tests",
    "feasibility": "Yes: partly from committed data, partly on a new corpus",
-   "experiment": "Map 200 families to TV Tropes entries; test on held-out tagged works. Rival: zero-shot LLM trope tagging. Assets: Transluce descriptions for every Llama 3.1 8B MLP neuron; `study/results/robustness/label_test.json`",
+   "experiment": "Map 200 families to TV Tropes entries; test on held-out tagged works. Rival: zero-shot LLM trope tagging. Assets: Transluce descriptions for every Llama 3.1 8B Instruct MLP neuron (458,752 neurons; Choi et al., 23 October 2024, https://transluce.org/neuron-descriptions; the same model variant the study used, `study/paper/paper.md` section 2.2); `study/results/robustness/label_test.json`",
    "idea": ""
   },
   {
