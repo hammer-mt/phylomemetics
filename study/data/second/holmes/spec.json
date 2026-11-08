@@ -1456,9 +1456,12 @@
  },
  "icon_regex": "\\b(sherlock|holmes|watson|moriarty|lestrade|mycroft|adler|baker|deerstalker|pipes?|violins?|magnifying|hounds?|deduc(?:e|es|ed|ing|tion|tions|tive)|detectives?|sleuths?|consulting|landlady|cocaine|disguised?|disguises|scotland yard|inspectors?|doctor|hansom|moor|reichenbach)\\b",
  "hero_names": [
-  "Sherlock Holmes",
-  "Holmes",
-  "Sherlock"
+  "Sherlock",
+  "Holmes"
+ ],
+ "decision_regressors_added": [
+  "word_presence_of_words_in_14_to_70_works",
+  "tfidf_background_weights"
  ],
  "in_reference_corpus": [
   {

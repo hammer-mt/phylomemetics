@@ -1,0 +1,51 @@
+{
+ "model": "qwen3-8b",
+ "documents": [
+  84,
+  90,
+  91,
+  105,
+  107,
+  110,
+  115,
+  153,
+  160,
+  165,
+  174,
+  193,
+  199,
+  210,
+  221,
+  240,
+  257,
+  267,
+  282,
+  308,
+  418,
+  619,
+  667,
+  790,
+  1029,
+  1332,
+  1858,
+  1863,
+  1864,
+  1870,
+  1911,
+  1912,
+  1946,
+  1953
+ ],
+ "bits_that_differ_from_v2s_stored_presence": 0,
+ "exact": true,
+ "provenance": {
+  "repo": "Qwen/Qwen3-8B",
+  "commit": null,
+  "dtype": "torch.bfloat16",
+  "torch": "2.8.0+cu128",
+  "transformers": "5.22.2",
+  "gpu": [
+   "NVIDIA RTX PRO 6000 Blackwell Server Edition"
+  ]
+ }
+}

@@ -1,0 +1,64 @@
+{
+ "model": "qwen3-32b",
+ "what": "presence_pass.py against v2's stored presence of the 114 Batman-study works (strongest sentence at 20, 30, 40 and 50% of v2's main scale; the opening and the iconography-dropped text at 30%)",
+ "planes": {
+  "orig_top1_20": {
+   "units_present_in_v2": 50178063,
+   "bits_that_differ": 0
+  },
+  "orig_top1_30": {
+   "units_present_in_v2": 16428049,
+   "bits_that_differ": 0
+  },
+  "orig_top1_40": {
+   "units_present_in_v2": 5076240,
+   "bits_that_differ": 0
+  },
+  "orig_top1_50": {
+   "units_present_in_v2": 1577961,
+   "bits_that_differ": 0
+  },
+  "orig_cut_top1_30": {
+   "units_present_in_v2": 11606309,
+   "bits_that_differ": 0
+  },
+  "anon_top1_20": {
+   "units_present_in_v2": 39720641,
+   "bits_that_differ": 0
+  },
+  "anon_top1_30": {
+   "units_present_in_v2": 12093773,
+   "bits_that_differ": 0
+  },
+  "anon_top1_40": {
+   "units_present_in_v2": 3534326,
+   "bits_that_differ": 0
+  },
+  "anon_top1_50": {
+   "units_present_in_v2": 1059663,
+   "bits_that_differ": 0
+  },
+  "anon_cut_top1_30": {
+   "units_present_in_v2": 8115670,
+   "bits_that_differ": 0
+  },
+  "anon_icon_top1_30": {
+   "units_present_in_v2": 11864445,
+   "bits_that_differ": 0
+  }
+ },
+ "provenance": {
+  "repo": "Qwen/Qwen3-32B",
+  "commit": null,
+  "dtype": "torch.bfloat16",
+  "torch": "2.8.0+cu128",
+  "transformers": "5.22.2",
+  "gpu": [
+   "NVIDIA RTX PRO 6000 Blackwell Server Edition"
+  ]
+ },
+ "exact": true,
+ "after_the_freeze": false,
+ "commit": "c4f2c968ac5df797c4be9adaf27f6ba0bb6d4f8a",
+ "checked_utc": "2026-11-08T20:17Z"
+}

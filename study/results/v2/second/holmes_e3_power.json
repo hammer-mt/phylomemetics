@@ -1,0 +1,20 @@
+{
+ "what": "Simulated power of the Holmes selection test (one-sided permutation within novels and short stories, alpha 0.05) with the real page views, strata and covariates",
+ "n_stories": 60,
+ "n_sim": 2000,
+ "n_perm": 1000,
+ "seed": 99,
+ "power": {
+  "rho_0.3": {
+   "no covariates": 0.6835,
+   "year, sentences, centrality": 0.5645,
+   "and the number of screen works naming the story": 0.3245
+  },
+  "rho_0.5": {
+   "no covariates": 0.9815,
+   "year, sentences, centrality": 0.9495,
+   "and the number of screen works naming the story": 0.734
+  }
+ },
+ "spearman_of_page_views_with_the_number_of_screen_works_naming_the_story": 0.58160600166713
+}

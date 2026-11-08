@@ -1,0 +1,33 @@
+{
+ "what": "The files the GPU machines read for the two new corpora, by SHA-256. gpu.py refuses to run a step on a file that does not match.",
+ "files": {
+  "background_plots.jsonl": "b8915abfaf2b4473e047cbee7efe24521c9bb6e6b7881d168652056df87313c4",
+  "batman_anon.jsonl": "714aadd23514a26d7a1683b80f7be00bf0eae3389594409d412c592dc9cbc7af",
+  "batman_orig.jsonl": "724bb90b38e3b9b35c6a45de584c5b865551d836145a40ce54b8d4bd1170d06d",
+  "holmes_anon.jsonl": "5f05867d0a21752a900df4def2a79925c745f5a5f50526957435511cf6f2c6a4",
+  "holmes_bgdrop.jsonl": "df53b769ad269c008a3898c45b515dc5dc6082121bcc238833e402880b9e4d40",
+  "holmes_orig.jsonl": "c460d19013db66963fa2443cba20d96119a0d15462127ec63e97779aa295020d",
+  "remakes_films.jsonl": "a677497137fd4a0fae3587b60d0c842141fb3265ace79ed031e2a45883ad8abd",
+  "remakes_films_small.jsonl": "979cf29e9521b8c73ef207dda1bd0d45e5be76a79b5e92ed2d9e20b65b824eb0",
+  "remakes_pair_films.json": "c3bc23f2eec520d48b9561f270e61e27456a9fd7da8d9f16d2f38c567013e6e9",
+  "remakes_pair_films_small.json": "8894753bcbf4d08038c84c41b95835a67f78043239a542264f3d7b5c327eaa64",
+  "remakes_rows.json": "87426bf93da6eb1e991b19f6ceaa62396d8ca4e3388671a4fad3023488ac3aac",
+  "remakes_rows_small.json": "4f78544a08ae504526f13d6572b3cad49813d194a3f47cde13578cabd79cf7d4",
+  "jobs/holmes_h1.json": "c12b10d74372a9b05f6987d14325608143018bea9f9f3fdb5072cecd7c059991",
+  "jobs/holmes_h2.json": "3a5f671204e1db6520a5cf3ed09108c27cb73328dbb7715a82ef058d0429d3da",
+  "jobs/remakes_r1.json": "5b29fd0f11dafeedc3c83c306670ff504dbf83eb8b972c90295becf0c6ad1be4",
+  "jobs/remakes_r2.json": "16080401fe0cb78cd946b647bc82f2f59b061d232a2a53f5cb144ec421984fe0"
+ },
+ "scale_ref_sha256": {
+  "qwen3-32b": "877fa9a39198b794b131fb96335219bbfba97336e4a6a1a64b67e98d55e13010",
+  "qwen3-8b": "1b75469550d05477489b7c7124b7ae8eeacaf6a7f8ff8f4c73396db09dbf5639",
+  "llama3.1-8b": "adfb4ea79d7ee7fd816e2390113807b61e2db82f403d2497768c451d20b4ffaf",
+  "llama3.3-70b": "8744ce12c0210e23a734ede99e14574a2ff837ab8d7d969588620b06f9bd57b1"
+ },
+ "bg_counts_ref_scale_sha256": {
+  "qwen3-32b": "45679773a73a6e47c17fb618b01c82f5c55c5d56425b4c105c3372d9a86bcaf2",
+  "qwen3-8b": "aeb386bc0aef0144aa8435ea3699623d84d0e03772d0097bb50f50f3beffe2a5",
+  "llama3.1-8b": "21470c1a07da0ed0c088d9c2006032e8c9294286a3c1ccc4dfc714935e3300af",
+  "llama3.3-70b": "70087e058d9b7826f95176c8394a91ae4903d6a6655fe3d7b4d2a3db92b18f68"
+ }
+}

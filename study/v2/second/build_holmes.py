@@ -308,7 +308,7 @@ def pageviews():
 ICON = (r"\b(sherlock|holmes|watson|moriarty|lestrade|mycroft|adler|baker|deerstalker|pipes?|violins?|magnifying|hounds?|"
         r"deduc(?:e|es|ed|ing|tion|tions|tive)|detectives?|sleuths?|consulting|landlady|cocaine|disguised?|disguises|"
         r"scotland yard|inspectors?|doctor|hansom|moor|reichenbach)\b")
-HERO_NAMES = ["Sherlock Holmes", "Holmes", "Sherlock"]
+HERO_NAMES = ["Sherlock", "Holmes"]          # no name is the beginning of another, so the probabilities that the reply starts with each can be added
 
 
 def reference_overlap(pages):
@@ -353,10 +353,12 @@ def spec():
         "adaptations_straight": {str(a): s for a, s in straight.items()},
         "adaptations_elements_only": {str(a): s for a, s in loose_only.items()},
         "baseline": baseline,
-        "early": ids("story"), "later": [a for a in screen if a not in primary],
+        "early": ids("story"), "later": [a for a in screen if a not in primary],          # "later" is E3's widened set; its primary later set is "baseline"
         "strata": {str(r["id"]): r["medium"] for r in rows if r["group"] == "story"},
         "n_screen_works_naming_the_story": {str(c): n for c, n in n_adapt.items()},
         "icon_regex": ICON, "hero_names": HERO_NAMES,
+        # PLAN Section 8: the word-only measures that passed the decision test in the units' place before the freeze, now regressed out too
+        "decision_regressors_added": ["word_presence_of_words_in_14_to_70_works", "tfidf_background_weights"],
         "in_reference_corpus": overlap,
         "background_documents_left_out": sorted(x["document"] for x in overlap if x["set"] == "bgplot"),
     }

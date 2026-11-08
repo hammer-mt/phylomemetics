@@ -1,6 +1,8 @@
 # A second corpus: scouting notes
 
-**Status: scouting only (8 November 2026). No corpus has been built, no plan is frozen and no model has read any of these texts.** Mike asked whether the Batman study should be tried on a different corpus, perhaps a different franchise. Four scouts each proposed one, and two judges compared them. This folder keeps what they found so that the choice can be made later. It is not part of the planted-story plan in the folder above.
+**Status: the scouting is done and two corpora were built from it (8 November 2026).** Mike asked whether the Batman study should be tried on a different corpus, perhaps a different franchise. Four scouts each proposed one, and two judges compared them. Mike then chose both of the judges' candidates: the Sherlock Holmes corpus and the remakes. They were rebuilt by rule from Wikipedia's own wording, with a plan frozen before any model read them: `study/v2/second/PLAN.md` (corpora in `study/data/second/`, results in `study/results/v2/second/`).
+
+This folder keeps the scouting as it was. Its candidate lists were recalled from memory and are superseded by the lists built from the articles; its word-overlap figures are sizing notes, and none of them goes into the paper. [`designs/`](designs/) holds the three statisticians' reports on how to test whether units add to words on the remakes; the plan adopts one of them and says how it departs from all three. It is not part of the planted-story plan in the folder above.
 
 ## Why a second corpus
 

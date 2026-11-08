@@ -1,0 +1,64 @@
+{
+ "model": "llama3.1-8b",
+ "what": "presence_pass.py against v2's stored presence of the 114 Batman-study works (strongest sentence at 20, 30, 40 and 50% of v2's main scale; the opening and the iconography-dropped text at 30%)",
+ "planes": {
+  "orig_top1_20": {
+   "units_present_in_v2": 15415834,
+   "bits_that_differ": 0
+  },
+  "orig_top1_30": {
+   "units_present_in_v2": 5439087,
+   "bits_that_differ": 0
+  },
+  "orig_top1_40": {
+   "units_present_in_v2": 1875206,
+   "bits_that_differ": 0
+  },
+  "orig_top1_50": {
+   "units_present_in_v2": 636578,
+   "bits_that_differ": 0
+  },
+  "orig_cut_top1_30": {
+   "units_present_in_v2": 3836698,
+   "bits_that_differ": 0
+  },
+  "anon_top1_20": {
+   "units_present_in_v2": 12010014,
+   "bits_that_differ": 0
+  },
+  "anon_top1_30": {
+   "units_present_in_v2": 4107566,
+   "bits_that_differ": 0
+  },
+  "anon_top1_40": {
+   "units_present_in_v2": 1386589,
+   "bits_that_differ": 0
+  },
+  "anon_top1_50": {
+   "units_present_in_v2": 464486,
+   "bits_that_differ": 0
+  },
+  "anon_cut_top1_30": {
+   "units_present_in_v2": 2745324,
+   "bits_that_differ": 0
+  },
+  "anon_icon_top1_30": {
+   "units_present_in_v2": 4037344,
+   "bits_that_differ": 0
+  }
+ },
+ "provenance": {
+  "repo": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "commit": null,
+  "dtype": "torch.bfloat16",
+  "torch": "2.8.0+cu128",
+  "transformers": "5.22.2",
+  "gpu": [
+   "NVIDIA RTX PRO 6000 Blackwell Server Edition"
+  ]
+ },
+ "exact": true,
+ "after_the_freeze": false,
+ "commit": "c4f2c968ac5df797c4be9adaf27f6ba0bb6d4f8a",
+ "checked_utc": "2026-11-08T20:13Z"
+}

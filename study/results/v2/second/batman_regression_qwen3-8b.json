@@ -1,0 +1,528 @@
+{
+ "tag": "qwen3-8b",
+ "curved_regressors": false,
+ "seconds_setting_and_tests": 33.0,
+ "peak_memory_gb_setting_and_tests": 0.9473800659179688,
+ "rows": [
+  {
+   "what": "* E1 AUC (pooled)",
+   "target": 0.259765625,
+   "this_code": 0.259765625,
+   "same": true
+  },
+  {
+   "what": "E1 interval, lower",
+   "target": 0.115185546875,
+   "this_code": 0.115185546875,
+   "same": true
+  },
+  {
+   "what": "E1 interval, upper",
+   "target": 0.4296875,
+   "this_code": 0.4296875,
+   "same": true
+  },
+  {
+   "what": "E1 label-shuffle null p95",
+   "target": 0.6778320312499999,
+   "this_code": 0.6778320312499999,
+   "same": true
+  },
+  {
+   "what": "E1 label-shuffle p",
+   "target": 0.985014985014985,
+   "this_code": 0.985014985014985,
+   "same": true
+  },
+  {
+   "what": "E1 canon units, median",
+   "target": 78.0,
+   "this_code": 78.0,
+   "same": true
+  },
+  {
+   "what": "E1 against ordinary films",
+   "target": 0.8824728260869565,
+   "this_code": 0.8824728260869565,
+   "same": true
+  },
+  {
+   "what": "E1 canon from name-free",
+   "target": 0.81640625,
+   "this_code": 0.81640625,
+   "same": true
+  },
+  {
+   "what": "E1 original-text ceiling",
+   "target": 1.0,
+   "this_code": 1.0,
+   "same": true
+  },
+  {
+   "what": "E1 iconography dropped",
+   "target": 0.283203125,
+   "this_code": 0.283203125,
+   "same": true
+  },
+  {
+   "what": "E1 openings",
+   "target": 0.291015625,
+   "this_code": 0.291015625,
+   "same": true
+  },
+  {
+   "what": "E1 openings null p95",
+   "target": 0.6973632812499999,
+   "this_code": 0.6973632812499999,
+   "same": true
+  },
+  {
+   "what": "E1 verdict",
+   "target": "falsified",
+   "this_code": "falsified",
+   "same": true
+  },
+  {
+   "what": "* E2 share",
+   "target": 0.07716049382716049,
+   "this_code": 0.07716049382716049,
+   "same": true
+  },
+  {
+   "what": "* E2 exact p",
+   "target": 0.0001823793490460157,
+   "this_code": 0.0001823793490460157,
+   "same": true
+  },
+  {
+   "what": "E2 mean over all maps",
+   "target": 0.48328656939768055,
+   "this_code": 0.4832865693976805,
+   "same": false
+  },
+  {
+   "what": "E2 share, ties as half",
+   "target": 0.07716049382716049,
+   "this_code": 0.07716049382716049,
+   "same": true
+  },
+  {
+   "what": "E2 optional units",
+   "target": 105147,
+   "this_code": 105147,
+   "same": true
+  },
+  {
+   "what": "E2 optional units, least per comic",
+   "target": 10253,
+   "this_code": 10253,
+   "same": true
+  },
+  {
+   "what": "E2 strong subset, exact p",
+   "target": 0.0015361952861952862,
+   "this_code": 0.0015361952861952862,
+   "same": true
+  },
+  {
+   "what": "E2 original texts, exact p",
+   "target": 0.0005952380952380953,
+   "this_code": 0.0005952380952380953,
+   "same": true
+  },
+  {
+   "what": "E2 sequel control, top two (X.sequel_control)",
+   "target": 6,
+   "this_code": 6,
+   "same": true
+  },
+  {
+   "what": "* residual, decision p",
+   "target": 0.6181126743626744,
+   "this_code": 0.6181126743626744,
+   "same": true
+  },
+  {
+   "what": "residual, decision share",
+   "target": 0.47264309764309764,
+   "this_code": 0.47264309764309764,
+   "same": true
+  },
+  {
+   "what": "residual, decision R2",
+   "target": 0.3892711362501533,
+   "this_code": 0.3892711362501533,
+   "same": true
+  },
+  {
+   "what": "residual, every measure p",
+   "target": 0.6630599146224146,
+   "this_code": 0.6630599146224146,
+   "same": true
+  },
+  {
+   "what": "residual, v1's two measures p",
+   "target": 0.2622068903318903,
+   "this_code": 0.2622068903318903,
+   "same": true
+  },
+  {
+   "what": "* E3 rho",
+   "target": 0.35,
+   "this_code": 0.35,
+   "same": true
+  },
+  {
+   "what": "* E3 p",
+   "target": 0.36606339366063395,
+   "this_code": 0.36606339366063395,
+   "same": true
+  },
+  {
+   "what": "E3 units",
+   "target": 64959,
+   "this_code": 64959,
+   "same": true
+  },
+  {
+   "what": "E3 jackknife minimum",
+   "target": 0.24395604395604395,
+   "this_code": 0.24395604395604395,
+   "same": true
+  },
+  {
+   "what": "E3 base-rate placebo rho",
+   "target": -0.5678571428571427,
+   "this_code": -0.5678571428571427,
+   "same": true
+  },
+  {
+   "what": "E3 base-rate placebo p",
+   "target": 0.9015492253873063,
+   "this_code": 0.9015492253873063,
+   "same": true
+  },
+  {
+   "what": "words E2 tfidf_cosine, share",
+   "target": 0.11018518518518519,
+   "this_code": 0.11018518518518519,
+   "same": true
+  },
+  {
+   "what": "words E2 word_presence, share",
+   "target": 0.16719977553310883,
+   "this_code": 0.16719977553310883,
+   "same": true
+  },
+  {
+   "what": "words E2 tfidf_background_weights, share",
+   "target": 0.11296296296296296,
+   "this_code": 0.11296296296296296,
+   "same": true
+  },
+  {
+   "what": "words E2 word_presence_background_rare, share",
+   "target": 0.3202020202020202,
+   "this_code": 0.3202020202020202,
+   "same": true
+  },
+  {
+   "what": "words E2 tfidf_words_and_pairs, share",
+   "target": 0.11018518518518519,
+   "this_code": 0.11018518518518519,
+   "same": true
+  },
+  {
+   "what": "words E2 tfidf_raw_counts, share",
+   "target": 0.11018518518518519,
+   "this_code": 0.11018518518518519,
+   "same": true
+  },
+  {
+   "what": "words E2 code_count_similarity, share",
+   "target": 0.3246913580246914,
+   "this_code": 0.3246913580246914,
+   "same": true
+  },
+  {
+   "what": "words E2 code_presence, share",
+   "target": 0.26419753086419756,
+   "this_code": 0.26419753086419756,
+   "same": true
+  },
+  {
+   "what": "words E2 tfidf_cosine, exact p",
+   "target": 0.0003136523969857303,
+   "this_code": 0.0003136523969857303,
+   "same": true
+  },
+  {
+   "what": "words E2 word_presence, exact p",
+   "target": 0.0017827080327080327,
+   "this_code": 0.0017827080327080327,
+   "same": true
+  },
+  {
+   "what": "words E2 tfidf_background_weights, exact p",
+   "target": 0.0003346961680295014,
+   "this_code": 0.0003346961680295014,
+   "same": true
+  },
+  {
+   "what": "words E2 word_presence_background_rare, exact p",
+   "target": 0.06249223384640051,
+   "this_code": 0.06249223384640051,
+   "same": true
+  },
+  {
+   "what": "words E2 tfidf_words_and_pairs, exact p",
+   "target": 0.00027031224947891613,
+   "this_code": 0.00027031224947891613,
+   "same": true
+  },
+  {
+   "what": "words E2 tfidf_raw_counts, exact p",
+   "target": 0.000273819544652878,
+   "this_code": 0.000273819544652878,
+   "same": true
+  },
+  {
+   "what": "words E2 code_count_similarity, exact p",
+   "target": 0.20707897426647426,
+   "this_code": 0.20707897426647426,
+   "same": true
+  },
+  {
+   "what": "words E2 code_presence, exact p",
+   "target": 0.28542869167869167,
+   "this_code": 0.28542869167869167,
+   "same": true
+  },
+  {
+   "what": "words alone, decision p: word_presence_of_words_in_11_to_16_works",
+   "target": 0.44072846520763187,
+   "this_code": 0.44072846520763187,
+   "same": true
+  },
+  {
+   "what": "words alone, decision p: word_presence_weighted_by_frequency_to_the_power_0.5",
+   "target": 0.555731922398589,
+   "this_code": 0.555731922398589,
+   "same": true
+  },
+  {
+   "what": "words alone, decision p: word_presence_weighted_by_frequency_to_the_power_1",
+   "target": 0.41239904000320665,
+   "this_code": 0.41239904000320665,
+   "same": true
+  },
+  {
+   "what": "words alone, decision p: word_presence_weighted_by_frequency_to_the_power_2",
+   "target": 0.28163104256854254,
+   "this_code": 0.28163104256854254,
+   "same": true
+  },
+  {
+   "what": "words alone, decision p: word_presence_weighted_by_frequency_to_the_power_3",
+   "target": 0.21616437189353857,
+   "this_code": 0.21616437189353857,
+   "same": true
+  },
+  {
+   "what": "words alone, decision p: tfidf_background_weights",
+   "target": 0.22804333012666347,
+   "this_code": 0.22804333012666347,
+   "same": true
+  },
+  {
+   "what": "words alone, decision p: word_presence_background_rare",
+   "target": 0.49095243105659775,
+   "this_code": 0.49095243105659775,
+   "same": true
+  },
+  {
+   "what": "words alone, decision p: tfidf_words_and_pairs",
+   "target": 0.2363671436588103,
+   "this_code": 0.2363671436588103,
+   "same": true
+  },
+  {
+   "what": "words alone, decision p: code_count_similarity",
+   "target": 0.7600070646945647,
+   "this_code": 0.7600070646945647,
+   "same": true
+  },
+  {
+   "what": "words alone, decision p: code_presence",
+   "target": 0.9974341630591631,
+   "this_code": 0.9974341630591631,
+   "same": true
+  },
+  {
+   "what": "words alone, decision p: word_presence_of_words_in_4_to_16_works",
+   "target": 0.5397767356100689,
+   "this_code": 0.5397767356100689,
+   "same": true
+  },
+  {
+   "what": "words alone, decision p: tfidf_ignoring_words_in_over_half_the_texts",
+   "target": 0.16780879228795895,
+   "this_code": 0.16780879228795895,
+   "same": true
+  },
+  {
+   "what": "words alone, decision p: tfidf_raw_counts_words_and_pairs",
+   "target": 0.12312284551867886,
+   "this_code": 0.12312284551867886,
+   "same": true
+  },
+  {
+   "what": "words alone, decision p: tfidf_keeping_stop_words",
+   "target": 0.34174257455507456,
+   "this_code": 0.34174257455507456,
+   "same": true
+  },
+  {
+   "what": "words alone, decision p: term_counts_without_idf",
+   "target": 0.5861800044091711,
+   "this_code": 0.5861800044091711,
+   "same": true
+  },
+  {
+   "what": "words alone, decision p: tfidf_character_4_grams",
+   "target": 0.9826992644700978,
+   "this_code": 0.9826992644700978,
+   "same": true
+  },
+  {
+   "what": "words alone, lowest decision p",
+   "target": 0.12312284551867886,
+   "this_code": 0.12312284551867886,
+   "same": true
+  },
+  {
+   "what": "words E1 tfidf_centroid",
+   "target": 0.80078125,
+   "this_code": 0.80078125,
+   "same": true
+  },
+  {
+   "what": "words E1 word_presence_canon_share",
+   "target": 0.609375,
+   "this_code": 0.609375,
+   "same": true
+  },
+  {
+   "what": "words E1 length_alone_sentences",
+   "target": 0.755859375,
+   "this_code": 0.755859375,
+   "same": true
+  },
+  {
+   "what": "words E1 length_alone_words",
+   "target": 0.783203125,
+   "this_code": 0.783203125,
+   "same": true
+  },
+  {
+   "what": "words E1 tfidf_centroid, openings",
+   "target": 0.73046875,
+   "this_code": 0.73046875,
+   "same": true
+  },
+  {
+   "what": "words E1 word_presence_canon_share, openings",
+   "target": 0.515625,
+   "this_code": 0.515625,
+   "same": true
+  },
+  {
+   "what": "words E1 length_alone_sentences, openings",
+   "target": 0.453125,
+   "this_code": 0.453125,
+   "same": true
+  },
+  {
+   "what": "words E1 length_alone_words, openings",
+   "target": 0.5234375,
+   "this_code": 0.5234375,
+   "same": true
+  },
+  {
+   "what": "words E1 tfidf_centroid, null p95",
+   "target": 0.6875,
+   "this_code": 0.6875,
+   "same": true
+  },
+  {
+   "what": "E3 power, rho 0.3",
+   "target": 0.2725,
+   "this_code": 0.2725,
+   "same": true
+  },
+  {
+   "what": "E3 power, rho 0.5",
+   "target": 0.543,
+   "this_code": 0.543,
+   "same": true
+  }
+ ],
+ "checks": {
+  "lib.rates equals X.unit_rates on the units": true,
+  "with one era the within-era AUC is the pooled AUC": true,
+  "lib.Bits finds the same units as common.Setting": true,
+  "the tests through lib.Bits give the same numbers (E1, E2, residual, E3)": true
+ },
+ "sampled_against_exact": [
+  {
+   "what": "E2, units",
+   "exact": 0.0001823793490460157,
+   "sampled": 0.00019
+  },
+  {
+   "what": "residual decision, units",
+   "exact": 0.6181126743626744,
+   "sampled": 0.61865
+  },
+  {
+   "what": "words tfidf_cosine",
+   "exact": 0.0003136523969857303,
+   "sampled": 0.00028
+  },
+  {
+   "what": "words word_presence",
+   "exact": 0.0017827080327080327,
+   "sampled": 0.00176
+  },
+  {
+   "what": "words tfidf_cosine, 400,000 draws",
+   "exact": 0.0003136523969857303,
+   "sampled": 0.00027
+  }
+ ],
+ "peak_memory_gb": 1.0306015014648438,
+ "passed": true,
+ "code": {
+  "git_commit": "c4f2c968ac5df797c4be9adaf27f6ba0bb6d4f8a",
+  "v2_second_clean": false,
+  "v2_second_changed_or_untracked": [
+   " M study/v2/second/build_holmes.py",
+   "?? study/v2/second/PLAN.md",
+   "?? study/v2/second/README.md",
+   "?? study/v2/second/build_remakes.py",
+   "?? study/v2/second/confirmatory.py",
+   "?? study/v2/second/e3_power.py",
+   "?? study/v2/second/gpu.py",
+   "?? study/v2/second/holmes.py",
+   "?? study/v2/second/lib.py",
+   "?? study/v2/second/probes.py",
+   "?? study/v2/second/remake_test.py",
+   "?? study/v2/second/remakes.py",
+   "?? study/v2/second/run_pod.sh"
+  ],
+  "sha256": {
+   "lib.py": "41a9ddb1316edd2f0ea254e83a36011762d83e01c1ab707623a4661b846bfecc",
+   "holmes.py": "873996638c4c688f6529d3cb851d3ec2fd27f4b9ff23a7397461b754b5913f29"
+  }
+ }
+}
