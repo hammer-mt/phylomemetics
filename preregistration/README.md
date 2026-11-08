@@ -8,6 +8,8 @@ Mike decided on 2026-10-21 to keep the next experiment planned and come back to 
 
 The finished Batman study, whose corpus and results are this plan's DEV data, is in [`../study/`](../study/). The scripts here read those files from that folder.
 
+A second corpus for the Batman study's own questions (another franchise, or film remakes) was scouted on 2026-11-08. The notes and candidate lists are in [`second_corpus/`](second_corpus/). They are separate from the plan below, and nothing in them has been built or run.
+
 ## What is planned
 
 The planted-meme stories experiment (`PREREGISTRATION.md`, version prereg-v3). Short stories in genres unrelated to Batman each have memes planted in them, in several versions: explicit, with the meme's usual keywords banned, implicit, with invented code words, and a matched control and decoy. Every method must then say which memes each story contains. The ground truth is known by construction.

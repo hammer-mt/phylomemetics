@@ -1,0 +1,1888 @@
+{
+ "proposals": {
+  "power": {
+   "name": "Cross-language film remakes, built from the local film table alone",
+   "one_line": "105 documented remake pairs (80 listed) in which a story crosses a language border, so names and wording change; both plots of every pair are already in the local table, and the candidate pool is 92 documented sources plus 2,977 background plots whose unit presence is already computed.",
+   "lineage_definition": "A lineage is a source film and the film or films that remake it in another language or film industry (Telugu to Tamil or Hindi, Malayalam to Hindi, Japanese or Hong Kong to American, American to Hindi, Korean to Chinese). A pair counts as documented when the lead of the remake's English Wikipedia article names the source as the film it remakes (or officially adapts). The documented source is the direct parent the lead names: Chandramukhi's is Apthamitra, not Apthamitra's own source. Left out: dubbed versions, films shot at once in two languages (they share one article and one plot), sequels, and same-language remakes (kept only as an optional contrast arm). Also left out of the primary set, by a rule to fix in advance: pairs where the remake's Wikipedia plot was copied from the source's article (10% or more of the remake's 5-word sequences found in the source). Those become the positive control.",
+   "n_documented_pairs": 105,
+   "n_candidate_sources": 92,
+   "n_works_total": 197,
+   "pairs": [
+    {
+     "adaptation": "Connected (2008 film; Hong Kong)",
+     "source": "Cellular (2004 film; American)",
+     "documentation": "Remake's lead: remake of the American film Cellular. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Bang Bang! (2014; Hindi)",
+     "source": "Knight and Day (2010; American)",
+     "documentation": "Lead: official remake of Knight and Day. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Tubelight (2017 Hindi film)",
+     "source": "Little Boy (2015 film; American)",
+     "documentation": "Lead: adaptation of the American film Little Boy. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "We Are Family (2010 film; Hindi)",
+     "source": "Stepmom (1998 film; American)",
+     "documentation": "Lead: official adaptation of Stepmom. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Players (2012 film; Hindi)",
+     "source": "The Italian Job (2003 film; American)",
+     "documentation": "Lead: official remake of The Italian Job (2003). From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Nanban (2012 film; Tamil)",
+     "source": "3 Idiots (2009; Hindi)",
+     "documentation": "Lead: remake of 3 Idiots. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Sivagamiyin Selvan (1974; Tamil)",
+     "source": "Aradhana (1969 film; Hindi)",
+     "documentation": "Lead: remake of the Hindi film Aradhana. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Gabbar Singh (2012 film; Telugu)",
+     "source": "Dabangg (2010; Hindi)",
+     "documentation": "Lead: remake of Dabangg. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Thillu Mullu (1981 film; Tamil)",
+     "source": "Gol Maal (1979; Hindi)",
+     "documentation": "Lead: remake of the Hindi film Gol Maal. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Kanden Kadhalai (2009; Tamil)",
+     "source": "Jab We Met (2007; Hindi)",
+     "documentation": "Lead: remake of Jab We Met. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Anaamika (2014 film; Telugu)",
+     "source": "Kahaani (2012; Hindi)",
+     "documentation": "Lead: remake of Kahaani. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Enakkul Oruvan (1984 film; Tamil)",
+     "source": "Karz (1980 film; Hindi)",
+     "documentation": "Lead: remake of the Hindi film Karz. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Dharmathin Thalaivan (1988; Tamil)",
+     "source": "Kasme Vaade (1978; Hindi)",
+     "documentation": "Lead: remake of the Hindi film Kasme Vaade. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Aamayum Muyalum (2014; Malayalam)",
+     "source": "Malamaal Weekly (2006 film; Hindi)",
+     "documentation": "Lead: the director's own Malayalam remake of Malamaal Weekly. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "A Better Tomorrow (2010 film; South Korean)",
+     "source": "A Better Tomorrow (1986; Hong Kong)",
+     "documentation": "Lead: official remake of the 1986 Hong Kong film. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "The Departed (2006; American)",
+     "source": "Infernal Affairs (2002; Hong Kong)",
+     "documentation": "Lead: remake of Infernal Affairs. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "The Eye (2008 film; American)",
+     "source": "The Eye (2002 film; Hong Kong)",
+     "documentation": "Lead: remake of the 2002 film of the same name. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Dark Water (2005 film; American)",
+     "source": "Dark Water (2002 film; Japanese)",
+     "documentation": "Lead: remake of the 2002 Japanese film. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "The Grudge (2004; American)",
+     "source": "Ju-On: The Grudge (2002; Japanese)",
+     "documentation": "Lead: remake of Ju-On: The Grudge. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Pulse (2006 film; American)",
+     "source": "Pulse (2001 film; Japanese, Kairo)",
+     "documentation": "Lead: remake of the Japanese film Kairo. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "The Ring (2002 film; American)",
+     "source": "Ring (1998 film; Japanese; table slug Ring_(film))",
+     "documentation": "Lead: remake of the 1998 Japanese film Ring. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "The Magnificent Seven (1960; American)",
+     "source": "Seven Samurai (1954; Japanese)",
+     "documentation": "Lead: Old West remake of Seven Samurai. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Shall We Dance? (2004 film; American)",
+     "source": "Shall We Dance? (1996 film; Japanese)",
+     "documentation": "Lead: remake of the 1996 Japanese film. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Last Man Standing (1996 film; American)",
+     "source": "Yojimbo (1961; Japanese)",
+     "documentation": "Lead: credited remake of Yojimbo. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Chandramukhi (2005; Tamil)",
+     "source": "Apthamitra (2004; Kannada)",
+     "documentation": "Lead: remake of Apthamitra, itself a remake of Manichitrathazhu (not in the table). From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Yogi (2007 film; Telugu)",
+     "source": "Jogi (2005 film; Kannada)",
+     "documentation": "Lead: remake of the Kannada film Jogi. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Kaavalan (2011; Tamil)",
+     "source": "Bodyguard (2010 film; Malayalam; table slug Bodyguard_(2009_film))",
+     "documentation": "Lead: the director's own remake of his Malayalam film Bodyguard. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Bodyguard (2011 Hindi film)",
+     "source": "Bodyguard (2010 film; Malayalam; table slug Bodyguard_(2009_film))",
+     "documentation": "Lead: remake of the Malayalam film of the same name. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Drushyam (2014; Telugu)",
+     "source": "Drishyam (2013; Malayalam)",
+     "documentation": "Lead: remake of the Malayalam film Drishyam. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Hulchul (2004 film; Hindi)",
+     "source": "Godfather (1991 film; Malayalam)",
+     "documentation": "Lead: remake of the Malayalam film Godfather. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Dhol (2007 film; Hindi)",
+     "source": "In Harihar Nagar (1990; Malayalam)",
+     "documentation": "Lead: remake of In Harihar Nagar. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Kuselan (2008; Tamil)",
+     "source": "Kadha Parayumbol (2007; Malayalam; table slug Katha_Parayumbol)",
+     "documentation": "Lead: remake of the Malayalam film Kadha Parayumbol. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Billu (2009; Hindi)",
+     "source": "Kadha Parayumbol (2007; Malayalam; table slug Katha_Parayumbol)",
+     "documentation": "Lead: remake of Kadha Parayumbol. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Premam (2016 film; Telugu)",
+     "source": "Premam (2015; Malayalam)",
+     "documentation": "Lead: remake of the 2015 Malayalam film of the same name. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "The Witness (2015 Chinese film)",
+     "source": "Blind (2011 film; South Korean)",
+     "documentation": "Lead: the director's own Chinese remake of Blind. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "20 Once Again (2015; Chinese)",
+     "source": "Miss Granny (2014; South Korean)",
+     "documentation": "Lead: Chinese remake of Miss Granny. From memory, slightly less sure of the wording (the two were developed close together); confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Saathiya (2002 film; Hindi)",
+     "source": "Alaipayuthey (2000; Tamil)",
+     "documentation": "Lead: remake of the Tamil film Alaipayuthey. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Naa Autograph (2004; Telugu)",
+     "source": "Autograph (2004 film; Tamil)",
+     "documentation": "Lead: remake of the Tamil film Autograph. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Chachi 420 (1997; Hindi)",
+     "source": "Avvai Shanmughi (1996; Tamil)",
+     "documentation": "Lead: remake of Avvai Shanmughi. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Gemini (2002 Telugu film)",
+     "source": "Gemini (2002 Tamil film)",
+     "documentation": "Lead: remake of the Tamil film of the same name, same director. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Force (2011 film; Hindi)",
+     "source": "Kaakha Kaakha (2003; Tamil)",
+     "documentation": "Lead: remake of Kaakha Kaakha. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Rehnaa Hai Terre Dil Mein (2001; Hindi)",
+     "source": "Minnale (2001; Tamil)",
+     "documentation": "Lead: the director's own Hindi remake of Minnale. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Sadma (1983; Hindi)",
+     "source": "Moondram Pirai (1982; Tamil)",
+     "documentation": "Lead: the director's own Hindi remake of Moondram Pirai. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Dil Ek Mandir (1963; Hindi)",
+     "source": "Nenjil Or Aalayam (1962; Tamil)",
+     "documentation": "Lead: the director's own Hindi remake of Nenjil Or Aalayam. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Kurradu (2009; Telugu)",
+     "source": "Polladhavan (2007 film; Tamil)",
+     "documentation": "Lead: remake of the Tamil film Polladhavan. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Subhakankshalu (1997; Telugu)",
+     "source": "Poove Unakkaga (1996; Tamil)",
+     "documentation": "Lead: remake of Poove Unakkaga. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Tagore (2003 film; Telugu)",
+     "source": "Ramana (2002 film; Tamil)",
+     "documentation": "Lead: remake of the Tamil film Ramana. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Policegiri (2013; Hindi)",
+     "source": "Saamy (2003; Tamil)",
+     "documentation": "Lead: 'the official remake of the 2003 Tamil film Saamy'. Verified in the local sample of the November 2023 dump (v2/cache/reference.jsonl).",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Singham (2011 film; Hindi)",
+     "source": "Singam (2010; Tamil)",
+     "documentation": "Lead: remake of the Tamil film Singam. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Sooryavansham (1999 film; Hindi)",
+     "source": "Suryavamsam (1997 film; Tamil)",
+     "documentation": "Lead: remake of the Tamil film Suryavamsam. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Holiday: A Soldier Is Never Off Duty (2014; Hindi; table slug Holiday_(2014_film))",
+     "source": "Thuppakki (2012; Tamil)",
+     "documentation": "Lead: the director's own Hindi remake of Thuppakki. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Tadakha (2013; Telugu)",
+     "source": "Vettai (2012; Tamil)",
+     "documentation": "Lead: remake of the Tamil film Vettai. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Kshemamga Velli Labhamga Randi (2000; Telugu)",
+     "source": "Viralukketha Veekkam (1999; Tamil)",
+     "documentation": "Lead: remake of Viralukketha Veekkam. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "M. Kumaran S/O Mahalakshmi (2004; Tamil; table slug M._Kumaran_son_of_Mahalakshmi)",
+     "source": "Amma Nanna O Tamila Ammayi (2003; Telugu)",
+     "documentation": "Lead: remake of Amma Nanna O Tamila Ammayi. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Kutty (2010 film; Tamil)",
+     "source": "Arya (2004 film; Telugu)",
+     "documentation": "Lead: remake of the Telugu film Arya. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Shart: The Challenge (2004; Hindi)",
+     "source": "Badri (2000 film; Telugu)",
+     "documentation": "Lead: remake of the Telugu film Badri. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Santosh Subramaniam (2008; Tamil)",
+     "source": "Bommarillu (2006; Telugu)",
+     "documentation": "Lead: remake of Bommarillu. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Kuch Tum Kaho Kuch Hum Kahein (2002; Hindi)",
+     "source": "Kalisundam Raa (2000; Telugu)",
+     "documentation": "Lead: remake of Kalisundam Raa. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Main Tera Hero (2014; Hindi)",
+     "source": "Kandireega (2011; Telugu)",
+     "documentation": "Lead: remake of Kandireega. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Thillalangadi (2010; Tamil)",
+     "source": "Kick (2009 film; Telugu)",
+     "documentation": "Lead: remake of the Telugu film Kick. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Kick (2014 film; Hindi)",
+     "source": "Kick (2009 film; Telugu)",
+     "documentation": "Lead: remake of the 2009 Telugu film of the same name. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Maanja Velu (2010; Tamil)",
+     "source": "Lakshyam (2007 film; Telugu)",
+     "documentation": "Lead: remake of the Telugu film Lakshyam. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Jeena Sirf Merre Liye (2002; Hindi)",
+     "source": "Manasantha Nuvve (2001; Telugu)",
+     "documentation": "Lead: remake of Manasantha Nuvve. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Thithikudhe (2003; Tamil)",
+     "source": "Manasantha Nuvve (2001; Telugu)",
+     "documentation": "Lead: remake of Manasantha Nuvve. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Miss Mary (1957 film; Hindi)",
+     "source": "Missamma (1955; Telugu)",
+     "documentation": "Lead: the director's own Hindi remake of Missamma. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Unakkum Enakkum (2006; Tamil; table slug Something_Something..._Unakkum_Enakkum)",
+     "source": "Nuvvostanante Nenoddantana (2005; Telugu)",
+     "documentation": "Lead: remake of Nuvvostanante Nenoddantana. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Vaseegara (2003; Tamil)",
+     "source": "Nuvvu Naaku Nachav (2001; Telugu)",
+     "documentation": "Lead: remake of Nuvvu Naaku Nachav. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Ghilli (2004; Tamil)",
+     "source": "Okkadu (2003; Telugu)",
+     "documentation": "Lead: remake of the Telugu film Okkadu. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Heropanti (2014; Hindi)",
+     "source": "Parugu (2008; Telugu)",
+     "documentation": "Lead: remake of the Telugu film Parugu. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Priyamaanavale (2000; Tamil)",
+     "source": "Pavitra Bandham (1996; Telugu)",
+     "documentation": "Lead: remake of Pavitra Bandham. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Pokkiri (2007; Tamil)",
+     "source": "Pokiri (2006; Telugu)",
+     "documentation": "Lead: remake of the Telugu film Pokiri. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Wanted (2009 film; Hindi)",
+     "source": "Pokiri (2006; Telugu)",
+     "documentation": "Lead: remake of Pokiri. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Raam (2009 film; Kannada)",
+     "source": "Ready (2008 film; Telugu)",
+     "documentation": "Lead: remake of the Telugu film Ready. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Uthama Puthiran (2010 film; Tamil; table slug Uthamaputhiran_(2010_film))",
+     "source": "Ready (2008 film; Telugu)",
+     "documentation": "Lead: remake of the Telugu film Ready. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Ready (2011 film; Hindi)",
+     "source": "Ready (2008 film; Telugu)",
+     "documentation": "Lead: remake of the 2008 Telugu film of the same name. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Judaai (1997 film; Hindi)",
+     "source": "Subhalagnam (1994; Telugu; table slug Shubha_Lagnam)",
+     "documentation": "Lead: remake of the Telugu film Subhalagnam. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Jai Ho (2014 film; Hindi)",
+     "source": "Stalin (2006 film; Telugu)",
+     "documentation": "Lead: remake of the Telugu film Stalin. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Mujhe Kucch Kehna Hai (2001; Hindi)",
+     "source": "Tholi Prema (1998 film; Telugu; table slug Toli_Prema)",
+     "documentation": "Lead: remake of the Telugu film Tholi Prema. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Siruthai (2011; Tamil)",
+     "source": "Vikramarkudu (2006; Telugu)",
+     "documentation": "Lead: remake of the Telugu film Vikramarkudu. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Rowdy Rathore (2012; Hindi)",
+     "source": "Vikramarkudu (2006; Telugu)",
+     "documentation": "Lead: remake of Vikramarkudu. From memory; confirm in dump.",
+     "both_plots_in_local_table": true
+    }
+   ],
+   "expected_word_overlap": "Measured on the local table (first 40 sentences, sublinear TF-IDF; my own quick comparator, not the study's seven measures), on 103 of the 105 firm pairs.\n\n- **Wording is independent.** The median TF-IDF cosine between a remake and its source is 0.19. The median share of the remake's 5-word sequences found in the source is 0.00.\n- **Words still find most sources.** Among the other documented sources (about 60 eligible per remake), TF-IDF ranks the true source first for 82% of remakes on the texts as they are, and for 85% after a crude removal of capitalised words. For comparison, Batman's figure was 6 of 9 among 12 comics.\n- **A pool of about 3,000 lowers that.** With the 2,977 background plots added as candidates, the source is first for 56% (texts as they are) and 74% (capitalised words removed). Words miss first place for 44 and 27 of the 103 remakes respectively, which is three to five times Batman's whole set.\n- **Copying is common and has to be screened out.** Of 181 pairs with both plots long enough, 54 had the remake's plot copied from the source's article with names swapped. In all 54, words rank the source first.\n- **Loose adaptations are where words fail.** In 24 Hollywood-to-Bollywood pairs that Wikipedia describes as \"inspired by\" or \"unofficial remake\", TF-IDF ranks the source first for 33% among documented sources and 12% to 33% among 3,000 candidates. Their documentation is softer, so they are not in the list of 80.\n\nSo this corpus does not remove the word ceiling. It gives the power to see whether units add anything under it.",
+   "names_differ_between_source_and_adaptation": "Yes, by the nature of the adaptation, and I measured it. In the 103 firm pairs the median share of the remake's capitalised words that also occur in the source is 7% (9% in the Indian pairs, 3% in the East Asian and Hollywood pairs). English same-language remakes share 20%.\n\nWhat is still shared is mostly place names, common words that happen to be capitalised, and actors' names in brackets after a character's name. Those brackets must be stripped, because remakes often reuse an actor.\n\nA few remakes keep character names: The Grudge shares 32% with Ju-On, the Telugu Gemini 36%, Drushyam 30%.\n\nThe practical gain is that the original texts become a clean condition for heredity. Names cannot carry the trail, so the test no longer depends only on the placeholder version. On the texts as they are, TF-IDF does slightly worse than with names removed (82% against 85% first), which confirms that names are noise here and not signal.",
+   "memorisation_risk": "Not checked: it needs the models. My expectation, by stratum:\n\n- **East Asian and Hollywood pairs (about 19): high.** Seven Samurai, The Departed and The Ring are as famous as the 69 films Llama 3.3 70B named every time.\n- **Indian pairs (about 86): probably lower, but unknown.** These are regional films from 1955 to 2017, and their English Wikipedia plots were still in the training data. Hits such as 3 Idiots or Ghajini will be recognised.\n\nThere is a second risk the Batman corpus also had: a model may know the remake relation itself, since the article's lead states it.\n\nThe paper's control transfers and gains power. Run the recognition probe on every name-free text, then compare how well units place the source for pairs where the model names both films against pairs where it names neither. With 105 pairs that split can show something; with 9 it could not.\n\nThis corpus does not solve memorisation. Only stories written after training do.",
+   "available_in_local_table": "Every plot the proposal needs is in the table.\n\n- **The 105 firm pairs: 197 films, 92 distinct sources.** Both plots have at least 10 sentences. For the 80 listed, both have at least 15. Match by the Wiki Page column, not by Title: some rows have a cast list or a number as the title, some origins are wrong (the Tamil film Pizza is labelled Malayalam), and there are duplicate rows.\n- **How the 105 were reached.** 198 pairs from my memory resolved to two rows of the table. 181 had both plots long enough. 54 of those were copied text. That left 103 firm and 24 loose pairs, and two more firm pairs were added by hand (Okkadu to Ghilli, Thuppakki to Holiday).\n- **Decoy candidates cost no GPU.** The 2,977 background plots already have unit presence stored for all four models (`v2/acts/<model>/bg_present30.bits.npy`). About 520 are Indian films.\n- **An optional same-language arm is also local.** Of 158 English-language remakes I listed from memory, 128 have both plots in the table with at least 10 sentences.\n\nScratch files, all under `/tmp/claude-0/-home-user-phylomemetics/a789a30b-498f-5fe1-bc57-f1de263eb0f6/scratchpad/corpus/power/`:\n- `firm_all.csv`: the 105 pairs with table slugs and sentence counts\n- `listed80.csv`: the 80 listed here\n- `loose24.csv` and `copied54.csv`: the two secondary sets\n- `curated.py`, `resolve.py`, `stats.py`, `heredity_words.py`, `bgpool.py`, `strata.py`, `english.py`: the scripts behind every number above",
+   "must_come_from_the_dump": "No plot text. Only the documentation:\n\n- **The lead of each remake's article** (its first 1,000 characters or so), to quote the sentence that names the source. That is about 105 articles, found in one streaming pass over the shards.\n- **Title changes since 2018.** The table's slugs are from about 2018 and some articles have moved (for example Bodyguard_(2009_film), Kick_(2014_Film), Son_Of_Sardaar). The plain-text dump has no redirects, so matching needs title variants plus year and language.\n- **Optional expansion.** A search of all film leads for \"remake of\" would give a mechanical list. In the local 0.4% sample of the dump, about 20 of 1,190 film articles say so, most of them Indian cross-language remakes. That suggests a few thousand such articles overall, but only pairs with both plots in the 2017 table come free.",
+   "build_steps": "1. **Freeze the pair list from documentation only.** Start from the 105 firm pairs, confirm each lead in the dump and record the quoted sentence. Never select pairs by text similarity: that would bias the word baseline.\n2. **Take the plots from the local table.** Join by Wiki Page slug, cut to 40 sentences with the study's own splitter (`fetch_corpus.sentences`), and require at least 12 sentences on both sides.\n3. **Apply the copy screen, fixed in advance.** A pair goes to the positive-control set if 10% or more of the remake's 5-word sequences occur in the source. Here that is 54 pairs.\n4. **Clean the texts.** Strip actors' names in brackets. Make name-free versions as in version 2, but treat the original texts as a first-class condition, since names differ naturally.\n5. **Build the candidate pool.** Use all documented sources released before the remake, plus the background plots released before it. Define a near-neighbour pool by industry and decade.\n6. **Remove overlap with the reference corpus.** 48 of the 356 films I looked up are among the 3,000 background plots and 134 are among the other reference plots. Take them out of base rates and out of the decoy pool, as version 2 did for one film.\n7. **Run the study pass.** About 200 new texts in two versions, per model. The 2,999 background plots took 20 minutes on Qwen3-32B, so this is minutes.\n8. **Compute the word comparators.** The same seven word measures, fitted on the background.\n9. **Run the tests.**\n   - The heredity statistic, tested by Monte Carlo relabelling within industry and decade. The exact enumeration is impossible at this size.\n   - The residual test.\n   - The recognition probe.\n   - The copied pairs as positive control.\n   - Two planned contrasts: official against loose pairs, and Indian against East Asian and Hollywood pairs.\n10. **Write the plan and freeze it before any model reads a text.**",
+   "biggest_risks": "1. **The documentation is from my memory.** Live Wikipedia is unreachable. All 8 of my claims that happened to be checkable against the local dump sample matched (Policegiri, Vasool Raja MBBS, Ramaiya Vastavaiya, Lesa Lesa, Shakti: The Power, Coolie No. 1, About Last Night, The Mechanic), but only one of the 80 listed pairs is among them. A lead may say \"based on\" or \"inspired by\" where I remember \"remake\".\n2. **Words still find most sources.** They are first for 82% to 85% among documented sources. The ceiling problem is reduced by pool size and by the number of pairs, not removed.\n3. **The pool is weaker per candidate than Batman's.** The alternatives are unrelated stories from the same industry and period, not works of one universe. The size of the pool and same-industry matching compensate only partly. Only 13 of the 92 sources have two or more remakes, so within-family comparisons are few.\n4. **Text quality is uneven.** The Indian plots are 2018 Wikipedia prose: uneven English, cast names in brackets, and a third of the pairs copied. The copy screen is itself a text rule and must be fixed before any result.\n5. **Memorisation is unmeasured.** A model may also know the remake relation directly.\n6. **The table has errors.** Wrong origin labels, titles replaced by cast lists, duplicate rows and a few wrong links.\n7. **Identity and selection do not transfer** in the paper's sense.\n8. **My numbers are rough.** The word baselines use my own quick TF-IDF and a crude removal of capitalised words. The power figure is a normal approximation.",
+   "what_each_outcome_would_show": "**What the size buys.** With 105 adaptations instead of 9, the smallest effect the rank test detects with 80% power falls from about 1 standard deviation of cell noise to about 0.25. That is my approximation, treating each adaptation's rank as uniform under the null.\n\n- **Units find the sources and the residual test passes.** This would be the first evidence that neurons carry ancestry beyond word counts. It must then survive three checks: it holds on the original texts (so not the placeholders), it holds for pairs the model does not recognise (so not recall), and it holds in the Indian pairs alone.\n- **Units find the sources and the residual test fails.** The paper's \"absence of evidence\" becomes a bounded negative: on Wikipedia plot summaries, units add nothing above about a quarter of a standard deviation to what words carry, even where names and wording changed.\n- **Units do better only where words fail.** If units place the source well in the 27 to 44 remakes that words miss, or in the loose pairs, that points to story structure beyond vocabulary. It is the result most worth following up with rewritten stories.\n- **Units fail to find sources that words find.** Then the strong-activation presence rule loses story signal that words keep, in line with the ablation hint in Section 4.2.\n- **The positive control fails.** If units or words miss the copied pairs, the pipeline is broken.",
+   "which_experiments_it_supports": "- **Heredity: yes, and it is the purpose.** The same statistic, with 105 adaptations and a pool of 92 to about 3,000 candidates, against 9 and 12. The residual test gets real power, and the original texts become a usable condition.\n- **Identity: only in a changed form.** There is no single lineage with a canon; families have 2 to 5 members. What can be asked is pairwise: do two tellings of one story share units more than a telling and a matched film from the same industry and decade? That is close to heredity, not a separate test of what makes a work recognisably itself.\n- **Selection: not as designed.** Nothing here links a work's popularity to the spread of its units. A retention analysis is possible instead: which of a source's units survive into its remake, and whether the same units survive in independent remakes of one source. Only 13 sources have two or more remakes, so that is weak.\n\nA franchise or one author's universe is still needed for identity and selection.",
+   "near_neighbour_negatives": "Plentiful for the pairwise question.\n\n- The 2,977 background plots already have unit presence stored. About 520 are Indian (191 Hindi, 174 Tamil, 87 Telugu, 69 Malayalam), 107 are Japanese and 56 are Hong Kong films.\n- The other 91 documented sources are popular commercial films of the same industries and decades.\n- The table holds 4,521 Indian plots of 200 words or more, if closer matches by year, genre or director are wanted.\n\nThey are near neighbours by industry, period and genre, not by fictional universe. That is weaker than Batman's eight hero films in kind, and far stronger in number.",
+   "other_works": "- **Positive control: the 54 copied pairs.** For example Sethu with Seshu and Huchha, Chinna Thambi with Chanti, Thani Oruvan with Dhruva. Words rank the source first in all 54.\n- **A loose stratum of 24 pairs, with softer documentation.** These are Hollywood-to-Bollywood adaptations whose articles say \"inspired by\" or \"unofficial remake\". Examples: Kaante from Reservoir Dogs, Heyy Babyy from Three Men and a Baby, Akele Hum Akele Tum from Kramer vs. Kramer, Mann from An Affair to Remember, Raaz from What Lies Beneath, Murder from Unfaithful, Humraaz from A Perfect Murder, Karz from The Reincarnation of Peter Proud, Malamaal Weekly from Waking Ned, Maryada Ramanna from Our Hospitality. Words rank the source first for only a third of them, so this is where units have most room.\n- **An optional same-language arm of 128 English remakes.** Psycho, Cape Fear, The Fly, True Grit and the like. Names are shared (TF-IDF on the texts as they are puts the source first 97% of the time) and every film is famous. It would serve as a contrast, not as the primary set.\n- **Chains for a parent-against-grandparent test.** Don to Billa (1980) to Billa (2007) to Billa (2009); Seven Samurai to The Magnificent Seven (1960) to its 2016 remake; Dial M for Murder to A Perfect Murder to Humraaz.\n- **25 firm pairs not listed** because one plot has fewer than 15 sentences, such as The Outrage from Rashomon and Ek Ruka Hua Faisla from 12 Angry Men.",
+   "alternatives_rejected": "I could not measure any of these offline, because the books' and plays' plots are not local. The counts are from memory.\n\n- **Stephen King.** About 55 film and miniseries adaptations, the firmest documentation of any option, and a truly near-neighbour pool of about 110 King works. Rejected as the primary because it has half the pairs, the source plots must come from the dump, names and wording are shared as in Batman, and it is heavily memorised. It is the best choice if identity and selection matter as much as heredity.\n- **Agatha Christie.** A pool of 66 novels, but perhaps 35 to 45 adaptations with a usable plot section. Many television films have thin ones, and I am unsure of the count.\n- **Shakespeare.** A pool of 37 plays and about 60 films including loose ones such as Ran and West Side Story. Straight adaptations often have no plot section of their own, and everything is maximally famous.\n- **Sherlock Holmes, James Bond, Philip K. Dick, Roald Dahl.** Fewer than 30 pairs each with plots on both sides.\n- **Jane Austen.** Only six candidate sources.\n- **English same-language remakes as the primary.** 128 pairs are available locally, but names are shared and every film is famous. Kept as an optional arm."
+  },
+  "replication": {
+   "name": "Sherlock Holmes: Conan Doyle's 60 stories and the screen works that draw on them (1929 to 2017)",
+   "one_line": "Swap Batman's 12 comics and 9 adaptations for the 60 Holmes stories and 33 screen works whose own Wikipedia articles name the story they draw on. I checked every title and plot section against live Wikipedia, which was reachable from this machine after all.",
+   "lineage_definition": "A work is in the lineage if Sherlock Holmes is its detective.\n\nThe premise that live Wikipedia is unreachable was wrong in this session. The API and the pageviews API both answered through the proxy, slowly (6 to 30 seconds a request). I made about 280 small requests and cached them in my scratch folder. Everything marked \"checked\" below was read from the live articles on 8 November 2026. The November 2023 dump was not opened.\n\nThe lineage has four parts, mapped onto the Batman design:\n\n1. **Candidate sources (Batman's 12 comics): 61.** The 60 canonical stories (4 novels and 56 short stories, 1887 to 1927) plus the pastiche novel The Seven-Per-Cent Solution (1974). All 60 canonical articles exist under the titles I give and each has a Plot section of 11 to 63 sentences (median about 29). Only one is under 12.\n2. **Adaptations (Batman's 9): 33.** Each has a plot section of at least 8 sentences (the Batman fetcher's floor), and its own article names the source. They fall into three tiers by the article's wording:\n   - A, straight adaptation: 7 (five Hound films, The Speckled Band 1931, The Sign of Four 1932).\n   - B, \"based on\", \"credited as\" or \"loosely based on\": 12, plus the one pastiche pair.\n   - C, \"inspired by\" or \"incorporates elements of\": 13.\n   \n   Together they make 45 adaptation-to-source links over 19 distinct canonical sources.\n3. **Holmes works that adapt no story (Batman's 11 non-adapting screen works): 23** with usable plots. These are the baseline for the z-score and the later works for the selection test.\n4. **Controls.** One title-only film, A Study in Scarlet (1933), whose article says the screenplay was original. Three films from Gillette's play, which has no plot section, are kept as lineage works only.\n\nAll 60 stories predate the earliest adaptation, so every story is an eligible candidate for every adaptation. The era-restricted relabelling Batman needed is not needed here.\n\nI list 33 because that is what survived checking. From memory I had about 55 adaptations. Of 72 adaptation articles I probed, 33 are usable. The rest have no plot section, a plot of 1 to 6 sentences, or no article. Three titles (The Master Blackmailer, The Last Vampyre, The Eligible Bachelor) redirect to the story's own article, which would have created three fake perfect pairs.",
+   "n_documented_pairs": 33,
+   "n_candidate_sources": 61,
+   "n_works_total": 357,
+   "pairs": [
+    {
+     "adaptation": "A Study in Pink (Sherlock episode, 2010)",
+     "source": "A Study in Scarlet",
+     "documentation": "Tier B. Episode article, checked live: \"loosely based upon the first Sherlock Holmes novel, A Study in Scarlet\". Plots 27 and 57 sentences. Crude word rank of the source: 1 of 60. Episode not in the local table.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "The Blind Banker (Sherlock episode, 2010)",
+     "source": "The Adventure of the Dancing Men",
+     "documentation": "Tier C. Episode article, Allusions section, checked live: \"takes the concept of coded messages from 'The Adventure of the Dancing Men'\". Plots 30 and 25 sentences. Word rank 2 of 60. Not in the local table.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "The Great Game (Sherlock) (episode, 2010)",
+     "source": "The Adventure of the Bruce-Partington Plans",
+     "documentation": "Tier C. Episode article, checked live: the MI6 clerk Andrew West \"comes from 'The Adventure of the Bruce-Partington Plans'\". That is a named element, not a statement of adaptation. Plots 32 and 36 sentences. Word rank 1 of 60. Not in the local table.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "A Scandal in Belgravia (Sherlock episode, 2012)",
+     "source": "A Scandal in Bohemia",
+     "documentation": "Tier B. Episode article, checked live: \"The episode was based on 'A Scandal in Bohemia'\". Plots 33 and 19 sentences. Word rank 19 of 60, so plain words miss it. Not in the local table.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "The Hounds of Baskerville (Sherlock episode, 2012)",
+     "source": "The Hound of the Baskervilles",
+     "documentation": "Tier B. Episode article, checked live: \"a contemporary adaptation of The Hound of the Baskervilles\". Plots 43 and 35 sentences. Word rank 1 of 60. Not in the local table.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "The Reichenbach Fall (Sherlock episode, 2012)",
+     "source": "The Final Problem",
+     "documentation": "Tier C. Episode article, checked live: \"Inspired by 'The Final Problem'\". Plots 39 and 20 sentences. Word rank 12 of 60. Not in the local table.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "The Reichenbach Fall (Sherlock episode, 2012)",
+     "source": "The Woman in Green (1945 film)",
+     "documentation": "Extra link from screen work to screen work. The same sentence of the episode article, checked live: \"also heavily using elements from the film The Woman in Green\". The film's plot is in the local table (23 sentences); the episode is not.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "The Empty Hearse (Sherlock episode, 2014)",
+     "source": "The Adventure of the Empty House",
+     "documentation": "Tier C. Episode article, checked live: \"Inspired by 'The Adventure of the Empty House' and 'The Lost Special'\". Plots 26 and 12 sentences; the source is the shortest in the pool. Word rank 45 of 60, so plain words miss it. Not in the local table.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "The Empty Hearse (Sherlock episode, 2014)",
+     "source": "The Story of the Lost Special",
+     "documentation": "Optional link. Same sentence as above. The source is a Conan Doyle story outside the canon; its article has a 25-sentence synopsis. Use it only if the pool is widened to 62.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "The Sign of Three (Sherlock episode, 2014)",
+     "source": "The Sign of the Four",
+     "documentation": "Tier C, weak. Episode article, checked live: \"The episode's title is inspired by The Sign of the Four\"; the character Sholto is named as a reference. Plots 35 and 43 sentences. Word rank 3 of 60. Not in the local table.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "His Last Vow (Sherlock episode, 2014)",
+     "source": "The Adventure of Charles Augustus Milverton",
+     "documentation": "Tier B. Episode article, checked live: \"a contemporary adaptation of ... 'The Adventure of Charles Augustus Milverton'\". Plots 40 and 30 sentences. Word rank 1 or 2 of 60, depending on the run. Not in the local table.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "The Abominable Bride (Sherlock special, 2016)",
+     "source": "The Five Orange Pips",
+     "documentation": "Tier C. Episode article, checked live: \"draws on elements of original Conan Doyle stories ... such as 'The Five Orange Pips' (1891) and 'The Final Problem' (1893)\". Plots 49 and 29 sentences. Word rank 4 of 60. Not in the local table.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "The Abominable Bride (Sherlock special, 2016)",
+     "source": "The Final Problem",
+     "documentation": "Second source named in the same sentence. Word rank 32 of 60.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "The Six Thatchers (Sherlock episode, 2017)",
+     "source": "The Adventure of the Six Napoleons",
+     "documentation": "Tier B. Episode article, checked live: \"based loosely on 'The Adventure of the Six Napoleons'\". Plots 40 and 43 sentences. Word rank 1 of 60. Not in the local table.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "The Lying Detective (Sherlock episode, 2017)",
+     "source": "The Adventure of the Dying Detective",
+     "documentation": "Tier B. Episode article, Production section, checked live: \"based loosely on the Doyle short story 'The Adventure of the Dying Detective'\". Plots 40 and 28 sentences. Word rank 10 or 11 of 60. Not in the local table.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "The Final Problem (Sherlock) (episode, 2017)",
+     "source": "The Adventure of the Musgrave Ritual",
+     "documentation": "Tier C, weak. Episode article, checked live: the riddle song \"is a reference to 'The Adventure of the Musgrave Ritual'\"; it also calls the Garrideb brothers \"an adaptation of 'The Adventure of the Three Garridebs'\". Plots 34 and 27 sentences. Word rank 51 of 60, so plain words miss it. Not in the local table.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "The Hound of the Baskervilles (1939 film)",
+     "source": "The Hound of the Baskervilles",
+     "documentation": "Tier A. Film article, checked live: \"based on the 1902 Sherlock Holmes novel of the same name\". Plots 26 and 35 sentences. Word rank 1 of 60. Film plot in the local table (24 sentences); it is also one of the 3,000 background plots that set base rates.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Sherlock Holmes and the Voice of Terror (1942 film)",
+     "source": "His Last Bow (short story)",
+     "documentation": "Tier B. Film article, checked live: \"combines elements of Doyle's short story 'His Last Bow', to which it is credited as an adaptation\". Plots 19 and 28 sentences. Word rank 4 of 60. Film plot in the local table (23 sentences) and in the background plots.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Sherlock Holmes and the Secret Weapon (1942 film; 1943 in the local table)",
+     "source": "The Adventure of the Dancing Men",
+     "documentation": "Tier B. Film article, checked live: \"credited as an adaptation of ... 'The Adventure of the Dancing Men', though the only element from the source material is the dancing men code\". Plots 29 and 25 sentences. Word rank 2 of 60. In the local table (28 sentences).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Sherlock Holmes Faces Death (1943 film)",
+     "source": "The Adventure of the Musgrave Ritual",
+     "documentation": "Tier B. Film article, checked live: \"a loose adaptation of ... 'The Adventure of the Musgrave Ritual'\". Plots 30 and 27 sentences. Word rank 27 of 60, so plain words miss it. In the local table (24 sentences).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "The Spider Woman (1943 film; 1944 in the local table)",
+     "source": "The Sign of the Four",
+     "documentation": "Tier C. Film article, checked live: \"incorporates elements from the 1890 novel The Sign of the Four, as well as the short stories 'The Final Problem', 'The Adventure of the Empty House', 'The Adventure of the Speckled Band'\". Plots 16 and 43 sentences. Word rank 31 of 60. In the local table (14 sentences).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "The Spider Woman (1943 film)",
+     "source": "The Final Problem",
+     "documentation": "Named in the same sentence. Word rank 1 of 60; the film opens with Holmes faking his death.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "The Spider Woman (1943 film)",
+     "source": "The Adventure of the Speckled Band",
+     "documentation": "Named in the same sentence. Word rank 50 of 60.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "The Spider Woman (1943 film)",
+     "source": "The Adventure of the Empty House",
+     "documentation": "Named in the same sentence. Word rank 60 of 60.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "The Pearl of Death (1944 film)",
+     "source": "The Adventure of the Six Napoleons",
+     "documentation": "Tier B. Film article, checked live: \"loosely based on Conan Doyle's short story 'The Adventure of the Six Napoleons'\". Plots 13 and 43 sentences. Word rank 1 of 60. In the local table (12 sentences).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "The House of Fear (1945 film)",
+     "source": "The Five Orange Pips",
+     "documentation": "Tier B. Film article, checked live: \"loosely based on the 1891 short story 'The Five Orange Pips'\". Plots 15 and 29 sentences. Word rank 1 of 60. In the local table as \"Sherlock Holmes and the House of Fear\" (15 sentences).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "The Woman in Green (1945 film)",
+     "source": "The Final Problem",
+     "documentation": "Tier C. Film article, checked live: \"an original screenplay ... with material taken from 'The Final Problem' and 'The Adventure of the Empty House'\". Plots 27 and 20 sentences. Word rank 26 of 60. In the local table (23 sentences).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "The Woman in Green (1945 film)",
+     "source": "The Adventure of the Empty House",
+     "documentation": "Named in the same sentence. Word rank 24 of 60.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Terror by Night (1946 film)",
+     "source": "The Disappearance of Lady Frances Carfax",
+     "documentation": "Tier C, weakest. Film article, checked live: \"a mostly original story ... but it uses minor plot elements of 'The Adventure of the Blue Carbuncle,' 'The Adventure of the Empty House,' 'The Disappearance of Lady Frances Carfax,' and 'The Sign of Four'\". Plots 20 and 63 sentences. Word rank 23 of 60. In the local table (18 sentences).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Terror by Night (1946 film)",
+     "source": "The Adventure of the Empty House",
+     "documentation": "Named in the same sentence. Word rank 56 of 60.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Terror by Night (1946 film)",
+     "source": "The Adventure of the Blue Carbuncle",
+     "documentation": "Named in the same sentence. Word rank 35 of 60.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Dressed to Kill (1946 film)",
+     "source": "The Adventure of the Six Napoleons",
+     "documentation": "Tier C. Film article, checked live: \"an original story, but combines elements of the short stories 'The Adventure of the Six Napoleons' and 'A Scandal in Bohemia'\". Plots 21 and 43 sentences. Word rank 29 of 60. The local table has this film with only 4 sentences, so take the live or dump text.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Dressed to Kill (1946 film)",
+     "source": "A Scandal in Bohemia",
+     "documentation": "Named in the same sentence. Word rank 33 of 60.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "The Speckled Band (1931 film)",
+     "source": "The Adventure of the Speckled Band",
+     "documentation": "Tier A. Film article, checked live: \"adapted from Arthur Conan Doyle's original 1892 story 'The Adventure of the Speckled Band' and the 1910 play he adapted from it\". Plots 38 and 32 sentences. Word rank 1 of 60. In the local table (38 sentences).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "The Sign of Four (1932 film)",
+     "source": "The Sign of the Four",
+     "documentation": "Tier A. Film article, checked live: \"based on Arthur Conan Doyle's second Sherlock Holmes novel The Sign of the Four (1890)\". Plots 24 and 43 sentences. Word rank 1 of 60. In the local table (24 sentences).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "The Hound of the Baskervilles (1929 film)",
+     "source": "The Hound of the Baskervilles",
+     "documentation": "Tier A. Film article, checked live: a German silent film that \"is an adaptation of the 1902 Sherlock Holmes novel\". Plots 34 and 35 sentences. Word rank 1 of 60. Not in the local table.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "The Hound of the Baskervilles (1937 film)",
+     "source": "The Hound of the Baskervilles",
+     "documentation": "Tier A. Film article, checked live: a German film, \"an adaptation of the 1902 Sherlock Holmes story\". Plots 21 and 35 sentences. Word rank 1 of 60. Not in the local table.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "The Hound of the Baskervilles (1959 film)",
+     "source": "The Hound of the Baskervilles",
+     "documentation": "Tier A. Film article, checked live: \"based upon Arthur Conan Doyle's 1902 novel\". Plots 33 and 35 sentences. Word rank 1 of 60. In the local table (35 sentences) and in the background plots.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "The Hound of the Baskervilles (1978 film)",
+     "source": "The Hound of the Baskervilles",
+     "documentation": "Tier A, a parody. Film article, checked live: \"a 1978 British comedy film spoofing the 1902 novel\". Plots 25 and 35 sentences. Word rank 1 of 60. Not in the local table.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Sherlock Holmes: A Game of Shadows (2011 film)",
+     "source": "The Final Problem",
+     "documentation": "Tier C. Film article, checked live: \"follows an original premise, it incorporates more closely elements of Conan Doyle's short stories, including 'The Final Problem' and 'The Adventure of the Empty House'\". Plots 31 and 20 sentences. Word rank 1 of 60. In the local table (40 sentences).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Sherlock Holmes: A Game of Shadows (2011 film)",
+     "source": "The Adventure of the Empty House",
+     "documentation": "Named in the same sentence. Word rank 60 of 60.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Sherlock Holmes: Crimes & Punishments (2014 video game)",
+     "source": "The Adventure of Black Peter",
+     "documentation": "Tier C; a game of six cases, the counterpart of Batman's Arkham games. Game article, checked live: the first case \"is an adaptation of 'The Adventure of Black Peter'\". Plots 25 and 47 sentences. Word rank 1 of 60. Not in the local table.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Sherlock Holmes: Crimes & Punishments (2014 video game)",
+     "source": "The Adventure of the Abbey Grange",
+     "documentation": "Game article, checked live: the Abbey Grange Affair case \"is adapted from 'The Adventure of the Abbey Grange'\". Word rank 2 of 60. A third case \"adapts elements from 'The Lost Special'\".",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Zero Effect (1998 film)",
+     "source": "A Scandal in Bohemia",
+     "documentation": "Tier B, and the only pair in which every name differs (Daryl Zero, Steve Arlo). Film article, checked live: \"the film's plot is loosely based on the Arthur Conan Doyle short story 'A Scandal in Bohemia'\". Plots 15 and 19 sentences. Word rank 39 of 60, so plain words miss it. In the local table (16 sentences).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "The Seven-Per-Cent Solution (1976 film)",
+     "source": "The Seven-Per-Cent Solution (1974 novel)",
+     "documentation": "Pastiche pair. Film article, checked live: \"Based on Meyer's 1974 novel of the same name\". Plots 27 and 21 sentences. Not ranked in my word check, because the novel was not among the 60. The local table has the film with only 4 sentences.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "A Study in Scarlet (1933 film)",
+     "source": "A Study in Scarlet",
+     "documentation": "Title-only control, not counted among the 33. Film article, checked live: \"The title is taken from Arthur Conan Doyle's 1887 novel of the same name ... but the screenplay by Robert Florey was original\". Plot 37 sentences. Word rank 5 of 60. Not in the local table.",
+     "both_plots_in_local_table": false
+    }
+   ],
+   "expected_word_overlap": "I measured this crudely on the live plot sections (first 40 sentences). Names were removed by dropping every word that appears capitalised away from a sentence start. Each adaptation was ranked against all 60 stories by plain TF-IDF cosine, with word weights from 4,000 plots of the local table.\n\n**Result for the 32 adaptations with a canonical source (first-named source):**\n\n- Ranked first of 60: 16 (50%).\n- In the top three: 19.\n- Below tenth place: 11 (34%).\n- On average 16.5% of the other 59 stories beat the source, against 50% by chance.\n\n| Tier | Adaptations | Source ranked first |\n| --- | --- | --- |\n| A, straight adaptation | 7 | 7 |\n| B, credited or loosely based | 12 | 6 |\n| C, elements | 13 | 3 |\n\nThe pairs plain words miss are the loose ones: A Scandal in Belgravia (19th), The Empty Hearse (45th), Sherlock Holmes Faces Death (27th), Zero Effect (39th), The Woman in Green (26th), Dressed to Kill (29th), Terror by Night (23rd).\n\n**What to expect.** Words will again pass the heredity test overall, about as strongly as on Batman (11% against 46% by chance, the source first for 6 of 9). The difference is that a third of the pairs are not found by plain words. Batman had no such stratum. Those pairs are where units could add something, or where the summaries carry no trace at all.\n\nFor comparison, the same crude method on James Bond (26 films from the local table against the 14 Fleming books) ranks the source first for 12 of 18 pairs, the same two-thirds as Batman.\n\n**Limits of this check.** The name removal is cruder than the study's rewriter. It uses one word measure, not the study's seven. It is not the study's z-scored statistic. Ranks moved by one place between two runs with different vocabularies.",
+   "memorisation_risk": "High, and I did not measure it; no model was run.\n\n- The stories are out of copyright and among the most reproduced texts in English, and the Sherlock episodes are heavily summarised online. Expect the 70B model to name the story for nearly every name-free source and most adaptations, as it named Batman for 29 of 32 works.\n- The live text of November 2026 postdates every model's training, but the stories behind it do not. No work in this corpus postdates the models.\n- A second franchise cannot fix this. What it adds is enough pairs to split the heredity test by whether the model names the source. That needs both kinds to exist, which is itself uncertain.\n- The less famous works are the likeliest not to be named: the nine Universal films of 1942 to 1946, the two German Hound films (1929, 1937), Zero Effect and the 2014 game.\n- If recognition drives the result, the title-only control (A Study in Scarlet, 1933) should behave like a non-adaptation.",
+   "names_differ_between_source_and_adaptation": "Mostly no, so the placeholder problem is repeated here and not fixed.\n\n- Holmes, Watson, Moriarty and Lestrade keep their names in every pair but one.\n- Case-specific names often change. The Universal films use new characters. Sherlock renames some (Milverton becomes Magnussen, Sir Henry Baskerville becomes Henry Knight).\n- Zero Effect changes every name. It is the one pair that could be run with no name removal.\n\nA like-for-like run would replace names with codes exactly as before, with the same caveat about the mark the codes leave.",
+   "near_neighbour_negatives": "The local table supplies them by rule, with no hand-picking.\n\n- **Main set: 162 films.** American and British films tagged mystery, detective or whodunit, with at least 13 sentences and no mention of Holmes or Watson in the plot. Batman had 8.\n- **Stricter set: 77 films.** The same, where the plot also has a detective or inspector and a murder. 45 of these are from the 1930s and 1940s, the period of the Universal films.\n- **Named detective series inside those sets** (at least 13 sentences): Charlie Chan 7, Philo Vance 4, The Thin Man 4, Agatha Christie films 14, and 37 from the Falcon, the Saint, Boston Blackie, the Lone Wolf, Ellery Queen, Perry Mason and similar.\n\nI spot-checked 30 titles and they are real detective films (The Maltese Falcon, Charlie Chan at the Wax Museum, Murder on the Orient Express), with a few thrillers mixed in at the modern end.\n\nNegatives should be matched to the Holmes works by decade and length. Otherwise the test partly measures period.",
+   "other_works": "**Holmes works that adapt no story: 23**, all checked live with at least 8 sentences.\n\n- Films: Sherlock Holmes in Washington, The Scarlet Claw, Pursuit to Algiers, A Study in Terror, The Private Life of Sherlock Holmes, They Might Be Giants (film), The Adventure of Sherlock Holmes' Smarter Brother, Sherlock Holmes in New York, Young Sherlock Holmes, Without a Clue, The Case of the Whitechapel Vampire, Sherlock Holmes and the Case of the Silk Stocking, Sherlock Holmes (2009 film), Sherlock Holmes (2010 film), Holmes & Watson, Sherlock Gnomes, Enola Holmes 2.\n- Games: The Testament of Sherlock Holmes, Sherlock Holmes Versus Jack the Ripper, Sherlock Holmes: The Devil's Daughter.\n- Three whose source has no usable plot text: Mr. Holmes, Enola Holmes (film), The Great Mouse Detective.\n\n**Films from Gillette's play: 3.** The play article has no plot section. The Adventures of Sherlock Holmes (film, 1939), Sherlock Holmes (1916 film), Sherlock Holmes (1922 film).\n\n**Literary ancestors: 5**, checked live. The Murders in the Rue Morgue (26 sentences), The Purloined Letter (20), The Mystery of Marie Rogêt (11), The Moonstone (8), Monsieur Lecoq (novel) (79).\n\n**Ordinary films.** Reuse the 69 and the 2,999 background plots.\n\n**Popularity for the selection test.** I fetched pageviews for all 60 stories over the Batman study's window (July 2015 to September 2026). They run from 84,090 (The Adventure of the Missing Three-Quarter) to 4,417,556 (The Hound of the Baskervilles), a 52-fold spread with a median of 198,101.\n\n**Works total (357):** 121 lineage, 162 negatives, 5 ancestors, 69 ordinary films.",
+   "which_experiments_it_supports": "All three, plus the recognition probe.\n\n- **Identity.** 56 Holmes screen works and 61 sources against 162 detective films, where Batman had 8 negatives.\n- **Heredity and the residual test.** 33 adaptations against 61 candidate sources, where Batman had 9 against 12. Each rank is out of 60, not about 8, so each pair says more. The three tiers allow a pre-registered split into straight, credited and elements.\n- **Selection.** 60 early works with a 52-fold spread of pageviews, spreading into 23 later works that adapt nothing. By the same calculation that gives the paper's 27% for 15 works, 60 works give about 75% power against a true correlation of 0.3.\n- **Positive control in place of Batman's 7 sequels.** At least five sequel pairs exist: A Game of Shadows after Sherlock Holmes (2009), Enola Holmes 2 after Enola Holmes, The Empty Hearse after The Reichenbach Fall, A Scandal in Belgravia after The Great Game, and The Final Problem (Sherlock) after The Lying Detective. The five Hound films should also find each other.\n\nIt does not by itself support steering or ablation. The ablation could be repeated on a Holmes canon at small cost.",
+   "available_in_local_table": "**In the table**\n\n- 14 of the 33 adaptation plots at 8 or more sentences: The Hound of the Baskervilles (1939, 24 sentences), Voice of Terror (23), Secret Weapon (28), Faces Death (24), The Spider Woman (14), The Pearl of Death (12), House of Fear (15), The Woman in Green (23), Terror by Night (18), The Speckled Band 1931 (38), The Sign of Four 1932 (24), The Hound 1959 (35), A Game of Shadows (40), Zero Effect (16).\n- Two more are there but too short in that 2017 snapshot: Dressed to Kill 1946 (4 sentences; 21 live) and The Seven-Per-Cent Solution film (4; 27 live).\n- About 10 of the 23 non-adapting Holmes films.\n- All 162 negatives and the ordinary films.\n\n**Not in the table**\n\n- Any source; the table holds films only.\n- The 13 Sherlock episodes, the game, the Hound films of 1929, 1937 and 1978, and A Study in Scarlet (1933).\n\n**Two traps I found**\n\n- The table's 1922 row \"Charles Augustus Milverton\" points at the story's article, not a film's. Its 29 sentences are almost certainly the story's plot.\n- 11 Holmes films are already in the reference corpus. Three of them (The Hound 1939, Voice of Terror, The Hound 1959) are among the 3,000 background plots that set base rates.",
+   "must_come_from_the_dump": "Nothing has to come from the dump if live Wikipedia stays reachable. The Batman corpus was itself fetched live, by `study/fetch_corpus.py`, so a live fetch is the like-for-like method.\n\nIf a dated snapshot is preferred, the dump would have to supply:\n\n- the 61 source plots;\n- the 13 Sherlock episodes and the game;\n- the Hound films of 1929, 1937 and 1978, and A Study in Scarlet (1933);\n- longer texts for Dressed to Kill (1946) and The Seven-Per-Cent Solution film;\n- about a dozen of the non-adapting works.\n\nAll my lengths are from the live articles of 8 November 2026. I did not open the November 2023 dump, so I cannot say its plot sections are the same length. The 2017 table shows they can differ a lot: A Study in Terror has 5 sentences there and 25 live.",
+   "build_steps": "1. **Freeze the lists first.** Write the work list, the pair list with its three tiers, and the analysis plan, and commit them before any model reads a Holmes text, as `PLAN.md` was. Decide then:\n   - the primary set (I suggest tiers A and B with the first-named source, and tier C as a registered secondary);\n   - how to treat the six works on The Hound (average within a source, or cap at three);\n   - the positive control.\n2. **Fetch the plot sections** with the logic of `study/fetch_corpus.py` (first 40 sentences, floor of 8). Record the resolved title of every page and reject any adaptation whose title resolves to its source's article.\n3. **Remove names** with the existing protocol (`study/make_neutral.py`) for about 290 new texts: 121 lineage works, 162 negatives and 5 ancestors.\n4. **Build the negatives** from the local table by the rule above, matched to the Holmes screen works by decade and length.\n5. **Handle the reference overlap.** Run `study/v2/check_reference_overlap.py` on the new list. Drop the three Holmes films from the background plots, or show that 3 in 2,999 does not move a base rate.\n6. **Fetch pageviews** with `study/fetch_extras.py` for the selection test.\n7. **Run the four models.** Scales and base rates already exist.\n8. **Generalise the experiment code.** The `ADAPTATIONS`, `SCREEN_NONADAPT` and `SEQUELS` tables in `study/experiments.py` become data files. Relabelling 61 sources cannot be enumerated, so it becomes a Monte Carlo permutation.\n9. **Run the recognition probe** on every text and report heredity separately for works the model does and does not name.\n\nMy checks are in `/tmp/claude-0/-home-user-phylomemetics/a789a30b-498f-5fe1-bc57-f1de263eb0f6/scratchpad/corpus/franchise/`:\n\n- `titles_canon_result.json`\n- `titles_screen_result.json`\n- `pairs_result.json`\n- `pv_result.json`\n- `screen_out.txt`\n- `bond_out.txt`",
+   "biggest_risks": "1. **Words may still win.** Plain words already rank the source first for half the pairs. The gain over Batman is power and a stratum words miss, not a corpus where words fail.\n2. **Recognition.** These are the best-known detective stories there are. A pass on heredity or identity in the 70B model would carry the same doubt as on Batman.\n3. **Fewer independent sources than pairs.** The 33 adaptations rest on 19 distinct sources, and 6 are The Hound. Thirteen are episodes of one series, written by the same people and probably summarised by the same editors. Effective sample size is nearer 20 than 33.\n4. **Tier C is weakly documented.** The wording is \"inspired by\", \"uses minor plot elements\", \"the title is inspired by\". If neither words nor units find these, that says little about either.\n5. **Uneven lengths.** Sources run from 12 to 63 sentences and adaptations from 13 to 49. The openings analysis is needed again.\n6. **Placeholders again.** Names are the same in source and adaptation, so the codes and their mark return.\n7. **Identity may again be names and period.** The Holmes works cluster in 1939 to 1946 and 2010 to 2017; unmatched negatives would turn it into a test of era.\n8. **Coverage is thinner than memory suggests.** 39 of the 72 adaptation articles I probed were unusable. Almost every television film of The Hound and The Sign of Four from 1972 to 2002 has no plot section. Any proposal built from memory alone should be discounted by about half.\n9. **Wikipedia moves.** Lengths are as of 8 November 2026 and the dump is three years older.\n\n**What I could not check**\n\n- No model was run.\n- The dump was not opened.\n- The pair counts I give for Spider-Man, X-Men, Superman, Star Trek, Godzilla and Doctor Who are from memory. Only Holmes and Bond were checked live.\n- There may be Holmes adaptations with their own articles that I did not think to probe.\n\n**One side effect to report.** Running the project's Python may have written two or three bytecode cache files inside the git-ignored `.venv`. Nothing tracked was touched, and the other files changed today under `study/v2` are not mine.",
+   "what_each_outcome_would_show": "**Heredity supported, residual test still null.** With 33 pairs, 61 candidates and a third of the sources not found by plain words, the Batman null was not just low power. Under this presence rule the units add nothing to words even where words fail. That would be a much firmer negative, and it would point at the planted-story experiment.\n\n**Heredity supported and the residual test passes, mainly in the pairs words miss.** This would be the first evidence that units carry ancestry that words do not. It would count only if it also holds among adaptations the model does not name, and if the title-only control stays at chance.\n\n**Neither words nor units find the tier C pairs.** Then \"inspired by\" leaves no measurable trace in a plot summary. That is a limit of the corpus, and the claim should rest on tiers A and B.\n\n**Identity passes against 162 detective films.** Batman's failure was then about superheroes and 8 negatives, not about name-free canons in general. Check it against period and against the model's recognition.\n\n**Identity fails again.** The finding that a canon is names plus genre holds for a second franchise.\n\n**Selection.** With 60 early works and about 75% power, a null would for the first time say something. A positive result would need controls for length and for how often a story is adapted.\n\n**The 70B model names nearly every story.** Recognition then confounds a second franchise in the same way. Only rewritten or post-training stories can separate what units detect from what the model remembers.",
+   "alternatives_rejected": "**James Bond, the runner-up (checked).**\n\n- All 26 films to 2015 are in the local table with 23 to 40 sentences each (median 680 words).\n- All 14 Fleming books have live plot sections of 18 to 43 sentences.\n- It yields only about 18 film-to-book pairs with real content and 14 candidate sources.\n- The crude word check ranks the source first for 12 of 18, the same two-thirds as Batman, so it would repeat Batman at twice the size.\n- Its sequels share few plot words (Quantum of Solace ranks Casino Royale 24th of 25), so the positive control would be weak.\n- Its strengths are the cleanest texts of any candidate and three built-in title-only controls (The Spy Who Loved Me, A View to a Kill, Quantum of Solace). It is the right third franchise.\n\n**The others.** The table counts are checked; the pair counts are from memory.\n\n- **Spider-Man.** 6 films in the table and about 8 to 10 adaptations of a named storyline. No gain over Batman's 9.\n- **X-Men.** 11 films in the table and about 9 pairs (God Loves, Man Kills; The Dark Phoenix Saga; Days of Future Past; Old Man Logan). Same size as Batman.\n- **Superman.** About 11 pairs, mostly animated films that follow their comic closely, so words would win. It shares a universe with Batman (Batman v Superman is already a study work), so it is not independent.\n- **Star Trek.** 13 films in the table and hundreds of episode articles, but the links are sequels and callbacks (The Wrath of Khan to Space Seed), which are the positive control in this design, not the test.\n- **Godzilla.** 34 films in the table but one medium. The documented links are re-edits and reboots of the 1954 film, with no pool of sources.\n- **Doctor Who.** 2 films in the table and about 6 to 8 documented adaptations in all.\n\n**Not asked for, but considered.**\n\n- **Marvel pooled across characters.** It might reach 35 to 40 pairs, but it is a publisher and not one hero, so the identity test loses its meaning and most sources are \"inspired by\".\n- **Agatha Christie.** Many pairs, but nearly all faithful, so words would find every source."
+  },
+  "divergence": {
+   "name": "Transposed retellings: 80 renamed, relocated adaptations of 48 classic sources",
+   "one_line": "Not one franchise but 48 small lineages: 80 screen retellings that rename the characters and move the story (Romeo and Juliet to West Side Story, Macbeth to Throne of Blood, Seven Samurai to The Magnificent Seven), each ranked against 72 candidate sources. A pilot on the local table shows word counts still find most sources here, so the gain is nine times the pairs, no placeholder codes, and a block where words are weak, not a corpus where words fail.",
+   "lineage_definition": "A lineage is one source work (a play, novel, tale, epic or film) and the screen works that retell it under other names in another time, place or genre. A pair enters the confirmatory set when three things hold. (1) The adaptation's English Wikipedia article says, in its lead, infobox or production section, that it is based on, adapted from, a retelling of or a remake of the source. Tier A is a credit or a flat statement of adaptation. Tier B is 'loosely based on' or 'inspired by' on the makers' word. Tier C, where only critics make the link, is kept as a small contested block that every analysis is also run without. (2) The protagonists are renamed and the setting is moved; surviving secondary names (Elton, Darcy, Kurtz, Cassio) are recorded per pair, not edited. (3) Both works have a plot or synopsis section of about 200 words or more. For each adaptation the candidate sources are all 72 source texts older than it: 48 with at least one listed adaptation and 24 decoys that are close relatives of them (other Shakespeare plays, other Austen and Victorian novels, other fairy tales, other westerns and noirs). Two control strata sit beside the 80: faithful screen versions with the names kept (positive control, and a second independent Wikipedia description of the source), and partly renamed versions (She's the Man, Gnomeo and Juliet, Joe MacBeth).",
+   "n_documented_pairs": 80,
+   "n_candidate_sources": 72,
+   "n_works_total": 190,
+   "pairs": [
+    {
+     "adaptation": "West Side Story (1961)",
+     "source": "Romeo and Juliet",
+     "documentation": "A. Article lead: the musical is inspired by Shakespeare's play. Adaptation in table (785 words); source synopsis from dump; faithful witness in table: Romeo and Juliet (1968).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Romeo Must Die (2000)",
+     "source": "Romeo and Juliet",
+     "documentation": "B. Article describes the plot as loosely related to the play, moved to Oakland gangs; I am fairly sure of this but not of the wording. In table (832 words).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Warm Bodies (2013)",
+     "source": "Romeo and Juliet",
+     "documentation": "B, unsure. The link (R and Julie, a balcony scene) is stated for Isaac Marion's novel; I could not check that the film article states it. In table (626 words). Words fail here: source ranked 45th of 54 in the pilot.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Goliyon Ki Raasleela Ram-Leela (2013)",
+     "source": "Romeo and Juliet",
+     "documentation": "A. Lead: an adaptation of Romeo and Juliet. In table as 'Goliyon Ki Rasleela Ram-Leela' (609 words).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "The Lion King II: Simba's Pride (1998)",
+     "source": "Romeo and Juliet",
+     "documentation": "B. Article: the plot was influenced by Romeo and Juliet, on the director's word. In table (507 words).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "China Girl (1987)",
+     "source": "Romeo and Juliet",
+     "documentation": "B. Abel Ferrara's film is described as a modern take on the play. Not in the table (only the 1942 China Girl is); from the dump.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "The Lion King (1994)",
+     "source": "Hamlet",
+     "documentation": "B. Lead: the story takes inspiration from Hamlet (and the Joseph and Moses stories), on the filmmakers' word; not a credit. In table (644 words); witness: Hamlet (1948).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Strange Brew (1983)",
+     "source": "Hamlet",
+     "documentation": "B. Lead: loosely based on elements of Hamlet. The place name Elsinore survives. In table (575 words).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Haider (2014)",
+     "source": "Hamlet",
+     "documentation": "A. Credited adaptation of Hamlet, moved to 1990s Kashmir. In table (926 words).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "The Banquet (2006)",
+     "source": "Hamlet",
+     "documentation": "B. Described as a loose adaptation of Hamlet set in tenth-century China. In table (970 words).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "The Bad Sleep Well (1960)",
+     "source": "Hamlet",
+     "documentation": "C, contested. Widely read as Kurosawa's Hamlet; I am not sure the article says more than that it has been compared to it. Not in the table; from the dump.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Throne of Blood (1957)",
+     "source": "Macbeth",
+     "documentation": "A. Lead: transposes the plot of Macbeth to feudal Japan. In table (688 words); witness: Macbeth (1971).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Men of Respect (1990)",
+     "source": "Macbeth",
+     "documentation": "A. Lead: an adaptation of Macbeth among New York mobsters. In table but short (245 words); take the longer 2023 text from the dump.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Maqbool (2003)",
+     "source": "Macbeth",
+     "documentation": "A. Credited adaptation, Mumbai underworld. In table under 2004 (378 words). Its plot opens by naming Macbeth; that sentence must be cut.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "O (2001)",
+     "source": "Othello",
+     "documentation": "A. Lead: a modern adaptation of Othello set in an American high school. The name Cassio survives. In table (593 words); witness: Othello (1995, 239 words).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Omkara (2006)",
+     "source": "Othello",
+     "documentation": "A. Credited adaptation, rural Uttar Pradesh. In table (556 words). Plot text names Othello once; cut that sentence.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "All Night Long (1962)",
+     "source": "Othello",
+     "documentation": "B. Lead: an updated version of Othello in the London jazz scene. In table but short (184 words); refresh from the dump.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Jubal (1956)",
+     "source": "Othello",
+     "documentation": "C, contested. Often called a western reworking of Othello; the film credits Paul Wellman's novel Jubal Troop. Unsure how the article words it. In table (362 words).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Ran (1985)",
+     "source": "King Lear",
+     "documentation": "B. Lead: derives from King Lear and legends of the daimyo Mori Motonari. In table (1,048 words). No usable faithful Lear in the table; source synopsis from the dump.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "A Thousand Acres (1997)",
+     "source": "King Lear",
+     "documentation": "A, through the novel. Jane Smiley's novel is a retelling of King Lear on an Iowa farm. In table but short (267 words).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "10 Things I Hate About You (1999)",
+     "source": "The Taming of the Shrew",
+     "documentation": "A. Lead: a modernisation of the play in a high school. Bianca and Kat(e) survive. In table (693 words). The 1967 faithful film has only 65 words in the table.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Deliver Us from Eva (2003)",
+     "source": "The Taming of the Shrew",
+     "documentation": "B, unsure. I recall the article calling it an updating of The Taming of the Shrew; check the wording. In table (408 words).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "McLintock! (1963)",
+     "source": "The Taming of the Shrew",
+     "documentation": "B. Lead: loosely based on The Taming of the Shrew. Not in the table; from the dump.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Just One of the Guys (1985)",
+     "source": "Twelfth Night",
+     "documentation": "B, unsure. I believe the article calls it a loose adaptation of Twelfth Night, about 60% confident. In table (454 words); witness: Twelfth Night (1996).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Get Over It (2001)",
+     "source": "A Midsummer Night's Dream",
+     "documentation": "B. Lead: loosely based on the play. The plot includes a school staging of it, so the play's character names appear; those sentences need cutting or the pair goes to the self-declaring stratum. In table (761 words).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Forbidden Planet (1956)",
+     "source": "The Tempest",
+     "documentation": "C, contested. The article says many consider it a loose adaptation and lists the analogues; it is not a credit. In table (675 words); witness: The Tempest (1979).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Tempest (1982)",
+     "source": "The Tempest",
+     "documentation": "A/B. Mazursky's film is described as loosely based on the play. In table with only 116 words; take it from the dump.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "My Own Private Idaho (1991)",
+     "source": "Henry IV, Part 1",
+     "documentation": "B. Lead: loosely based on Henry IV Parts 1 and 2 and Henry V. In table (463 words). Source synopsis from the dump.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Angoor (1982)",
+     "source": "The Comedy of Errors",
+     "documentation": "A. Based on the play, by way of the Bengali Bhranti Bilas. Not in the table; from the dump.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Clueless (1995)",
+     "source": "Emma (novel)",
+     "documentation": "A. Lead: loosely based on Austen's Emma. The name Elton survives. In table (553 words); witness: Emma (1996).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Aisha (2010)",
+     "source": "Emma (novel)",
+     "documentation": "A. Lead: an adaptation of Emma set in Delhi. In table (525 words).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Bridget Jones's Diary (2001)",
+     "source": "Pride and Prejudice",
+     "documentation": "B, through the novel. Fielding's novel is a reinterpretation of Pride and Prejudice. The surname Darcy survives. In table (877 words); witness: Pride & Prejudice (2005).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Kandukondain Kandukondain (2000)",
+     "source": "Sense and Sensibility",
+     "documentation": "A. Lead: based on Austen's novel, set in Tamil Nadu. In table (436 words); witness: Sense and Sensibility (1995).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "From Prada to Nada (2011)",
+     "source": "Sense and Sensibility",
+     "documentation": "A. Lead: a Latino version of the novel in Los Angeles. Edward and Lucy survive. In table (950 words).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Dangerous Liaisons (2012)",
+     "source": "Les Liaisons dangereuses",
+     "documentation": "A. Adaptation moved to 1930s Shanghai. In table, filed under South Korean (308 words); witness: Dangerous Liaisons (1988).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Cruel Intentions (1999)",
+     "source": "Les Liaisons dangereuses",
+     "documentation": "A. Lead: an adaptation set among New York teenagers. The surnames Merteuil and Valmont survive, so this is the weakest 'renamed' case in the list. In table (871 words).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Scrooged (1988)",
+     "source": "A Christmas Carol",
+     "documentation": "A. Lead: a modern retelling. The plot mentions a television production of A Christmas Carol; cut that mention. In table (666 words); witness: A Christmas Carol (1938).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Ghosts of Girlfriends Past (2009)",
+     "source": "A Christmas Carol",
+     "documentation": "B. Article: the plot is based on A Christmas Carol. In table (1,042 words).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Roxanne (1987)",
+     "source": "Cyrano de Bergerac (play)",
+     "documentation": "A. Credited as based on Rostand's play. The heroine's name survives. In table (716 words); witness: Cyrano de Bergerac (1950).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "The Truth About Cats & Dogs (1996)",
+     "source": "Cyrano de Bergerac (play)",
+     "documentation": "B. Described as a modern reinterpretation of the Cyrano story. In table but short (222 words).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Whatever It Takes (2000)",
+     "source": "Cyrano de Bergerac (play)",
+     "documentation": "B. Described as a modern update of Cyrano. In table but short (180 words), and the text names Cyrano.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "She's All That (1999)",
+     "source": "Pygmalion (play)",
+     "documentation": "B. Lead: a modern adaptation of Shaw's Pygmalion and of My Fair Lady. In table (918 words); witness: My Fair Lady (1964).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Man Pasand (1980)",
+     "source": "Pygmalion (play)",
+     "documentation": "B. Described as based on My Fair Lady and Pygmalion; fairly sure. In table (345 words).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "I Walked with a Zombie (1943)",
+     "source": "Jane Eyre",
+     "documentation": "B. The article records the producer's description of it as Jane Eyre in the West Indies; fairly sure. In table (840 words); witness: Jane Eyre (2011).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Ryan's Daughter (1970)",
+     "source": "Madame Bovary",
+     "documentation": "B. Lead: a loose adaptation of Flaubert's novel, moved to Ireland in 1916. In table (623 words); witness: Madame Bovary (1949).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Trishna (2011)",
+     "source": "Tess of the d'Urbervilles",
+     "documentation": "A. Credited as based on Hardy's novel, set in Rajasthan. In table (869 words); witness: Tess (1979).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Easy A (2010)",
+     "source": "The Scarlet Letter",
+     "documentation": "B. Lead: partially inspired by the novel, which the plot itself discusses; cut those sentences. In table (622 words). Words fail: source 46th of 54.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "The Nutty Professor (1963)",
+     "source": "Strange Case of Dr Jekyll and Mr Hyde",
+     "documentation": "B. Lead: a parody of Stevenson's novella. In table (360 words); witness: Dr. Jekyll and Mr. Hyde (1931). Source 33rd of 54 by words.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Phantom of the Paradise (1974)",
+     "source": "The Phantom of the Opera (novel)",
+     "documentation": "B. Lead: loosely adapted from The Phantom of the Opera, Faust and The Picture of Dorian Gray; score it against the first, record the others. In table (887 words).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Apocalypse Now (1979)",
+     "source": "Heart of Darkness",
+     "documentation": "B. Lead: loosely based on Conrad's novella; not credited on screen. Kurtz survives. In table (564 words). No faithful witness in the table.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "O Brother, Where Art Thou? (2000)",
+     "source": "Odyssey",
+     "documentation": "A. Credited on screen as based on Homer's Odyssey. In table (739 words); witness: The Odyssey (1997 miniseries).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "The Warriors (1979)",
+     "source": "Anabasis (Xenophon)",
+     "documentation": "B, through Sol Yurick's novel, which is based on the Anabasis. In table (743 words). I am unsure the Anabasis article has a section that reads as a plot.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Robinson Crusoe on Mars (1964)",
+     "source": "Robinson Crusoe",
+     "documentation": "A/B. A science-fiction retelling of Defoe's novel. Friday survives and the text names Crusoe. In table (618 words); witness: Robinson Crusoe (1954).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Mourning Becomes Electra (1947)",
+     "source": "Oresteia",
+     "documentation": "A, through O'Neill's play, a retelling of the Oresteia in post-Civil War New England. In table (317 words).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Damn Yankees (1958)",
+     "source": "Faust",
+     "documentation": "B. Lead: a modern retelling of the Faust legend. In table (850 words). Which Faust text to use (the legend's article or Goethe's Part One) has to be fixed in advance.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Bedazzled (1967)",
+     "source": "Faust",
+     "documentation": "B. Lead: a comic retelling of the Faust legend in 1960s London. In table (277 words).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Saawariya (2007)",
+     "source": "White Nights (short story)",
+     "documentation": "A. Credited as based on Dostoevsky's story. In table (554 words).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Nosferatu (1922)",
+     "source": "Dracula",
+     "documentation": "A. Unauthorised adaptation with every name changed; a court ruled for Stoker's estate. Not in the table (no German films); from the dump. Witness: Dracula (1931).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Run for the Sun (1956)",
+     "source": "The Most Dangerous Game",
+     "documentation": "A. Credited to Connell's story. In table (802 words); the 1932 film, which keeps the names, is in the table as witness.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Hard Target (1993)",
+     "source": "The Most Dangerous Game",
+     "documentation": "B, wording unsure. I recall the article saying it is based on the 1932 film of the story. In table (593 words).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Surviving the Game (1994)",
+     "source": "The Most Dangerous Game",
+     "documentation": "B. Lead: loosely based on the story. In table (755 words).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Ever After (1998)",
+     "source": "Cinderella",
+     "documentation": "A. Lead: inspired by the Cinderella tale. The text uses the word Cinderella once. In table (576 words); witness: Cinderella (1950).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "A Cinderella Story (2004)",
+     "source": "Cinderella",
+     "documentation": "B. Lead: a modernisation of the tale in a California high school. In table (1,224 words).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Cinderfella (1960)",
+     "source": "Cinderella",
+     "documentation": "B. Lead: the tale with the sexes reversed. In table (354 words).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Snow White: A Tale of Terror (1997)",
+     "source": "Snow White",
+     "documentation": "A. Based on the Grimm tale, with the names changed. In table (850 words); witness: Snow White and the Seven Dwarfs (1937).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Ball of Fire (1941)",
+     "source": "Snow White",
+     "documentation": "B, fairly sure. The production section records that Wilder's story was modelled on Snow White and the seven dwarfs. In table (342 words). Words fail: source 37th of 54.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Beastly (2011)",
+     "source": "Beauty and the Beast",
+     "documentation": "A, through Alex Flinn's novel, a retelling in modern New York. In table (411 words); witness: Beauty and the Beast (1991).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Freeway (1996)",
+     "source": "Little Red Riding Hood",
+     "documentation": "B. Lead: a dark modern take on the tale. In table (730 words). The tale's own plot section is short, perhaps under 250 words.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Frozen (2013)",
+     "source": "The Snow Queen",
+     "documentation": "A/B. Lead: inspired by Andersen's tale. In table (646 words). A very loose retelling.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "The Princess and the Frog (2009)",
+     "source": "The Frog Prince",
+     "documentation": "B. Lead: loosely based on E. D. Baker's The Frog Princess, itself from the Grimm tale. In table (665 words).",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "The Magnificent Seven (1960)",
+     "source": "Seven Samurai (1954)",
+     "documentation": "A. Credited remake as a western. Both in table (869 and 743 words). Words find it: source first of 54.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "A Fistful of Dollars (1964)",
+     "source": "Yojimbo (1961)",
+     "documentation": "A. Unofficial remake; Toho sued and the case was settled. Yojimbo is in the table (753 words); the Italian film is not, so it comes from the dump.",
+     "both_plots_in_local_table": false
+    },
+    {
+     "adaptation": "Last Man Standing (1996)",
+     "source": "Yojimbo (1961)",
+     "documentation": "A. Credited remake set in Prohibition-era Texas. Both in table (1,227 and 753 words).",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "The Outrage (1964)",
+     "source": "Rashomon (1950)",
+     "documentation": "A. Credited remake as a western. Both in table (233 and 983 words); the adaptation is short.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Colorado Territory (1949)",
+     "source": "High Sierra (1941)",
+     "documentation": "A. The same director's western remake, from the same W. R. Burnett novel. Both in table (641 and 391 words).",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "The Badlanders (1958)",
+     "source": "The Asphalt Jungle (1950)",
+     "documentation": "A. Western version of Burnett's novel, credited. Both in table (417 and 574 words).",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Sergeants 3 (1962)",
+     "source": "Gunga Din (1939)",
+     "documentation": "B. Lead: a remake of Gunga Din moved to the American West. Both in table (266 and 598 words).",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Broken Lance (1954)",
+     "source": "House of Strangers (1949)",
+     "documentation": "A. Credited western remake; the story Oscar went to the earlier film's writer. Both in table (588 and 260 words).",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "You've Got Mail (1998)",
+     "source": "The Shop Around the Corner (1940)",
+     "documentation": "A. Both credit the play Parfumerie. Both in table (509 and 765 words). The bookshop in the film is named after the source; cut or keep as a recorded leak.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Assault on Precinct 13 (1976)",
+     "source": "Rio Bravo (1959)",
+     "documentation": "B. Carpenter's stated model; not a credit. Both in table (580 and 1,181 words).",
+     "both_plots_in_local_table": true
+    }
+   ],
+   "expected_word_overlap": "I measured this, and the premise holds only in part. Using the paper's TF-IDF (same settings) on the 59 of the 80 pairs that can be computed from the local table alone, with each literary source stood in for by a faithful film of it, against a pool of 54 source texts:\n\n- Faithful versions with the names kept (15 controls): mean cosine to the source 0.45, source ranked first for 14 of 15.\n- The transposed pairs: mean cosine 0.11, a quarter of that. But the documented source is still ranked far above chance: 11.7% of wrong sources beat it (standard error 2.8 points; chance 50%), against 11% for TF-IDF on Batman. Against only the 11 sources most like the true one it is 15.9%.\n- The source is ranked first for 28 of 59 (Batman: 6 of 9), worse than fifth for 20, worse than tenth for 11.\n- With capitalised words removed the figures barely move (10.8%, first for 23 of 59), so it is plot vocabulary, not leaked names, that carries the trail.\n\nBy block: Shakespeare 17.3% (first for 5 of 19); novels and plays 9.1% (15 of 25); fairy tales 16.7% (3 of 6); film-to-film genre shifts 3.8% (5 of 9). A wider pilot of 109 transposed pairs against 84 sources gave the same picture: 9.6% overall, 5.2% for film sources, 13.4% for literary ones.\n\nSo words fail outright on about a fifth of pairs (Warm Bodies, Easy A, Ball of Fire, The Nutty Professor, All Night Long, The Lion King II, Romeo Must Die) and succeed on the rest. Two things were not checked: the real source synopses (plays and novels, from the dump) may overlap more or less than the film stand-ins, and 21 of the 80 pairs had no stand-in or no table entry.",
+   "memorisation_risk": "High, and of a new kind. These are famous works with their names left in, so recognition will be higher than on Batman's name-free texts (where Llama 3.3 70B already named every ordinary film). Worse, the models know the links themselves: that Clueless is Emma and West Side Story is Romeo and Juliet is common knowledge. A unit could fire for the source because the model recalls the fact, not because it reads the story's shape. That would pass a 'beyond words' test for the wrong reason.\n\nWhat the design does about it:\n- A link probe before any unit analysis: each model is asked, for each adaptation, which work it is and which older work it retells. Every result is reported separately for pairs where it names the link and pairs where it does not.\n- An obscure block is built in: about 25 of the 80 are Indian films, 1940s to 1960s B pictures or little-known titles (Jubal, All Night Long, Men of Respect, The Badlanders, Man Pasand, Kandukondain Kandukondain, Dangerous Liaisons 2012). I expect the smaller models not to know these links, but have not tested it.\n- A sensitivity version with the adaptation's names swapped for other ordinary names (not codes), which removes recognition by name and leaves no placeholder mark.\n- Not solved here: a block of retellings released after the models' training (2024 to 2026) would be the only clean test. It is not in the November 2023 dump and live Wikipedia is not reachable from this machine.",
+   "names_differ_between_source_and_adaptation": "Mostly, and without any edit. Of the 59 pairs I could check, 38 share no proper noun with the source text and do not name the source or its author (the true count is about 40; the crude check flags three character names such as Homer and Connell by mistake). The other 19 or so leak in two ways. Some keep a secondary name: Elton (Clueless), Darcy (Bridget Jones's Diary), Cassio (O), Merteuil (Cruel Intentions), Edward and Lucy (From Prada to Nada), Friday (Robinson Crusoe on Mars), Elsinore (Strange Brew), Kurtz (Apocalypse Now, not in the 59). Others have a plot text that names its source: Maqbool opens 'The film is based on William Shakespeare's Macbeth', and Omkara, Get Over It, Scrooged, Whatever It Takes, Trishna, Ever After and Easy A do something similar. The fix is to cut sentences that name the source or author (they are not plot), record the count of shared names per pair, add it to the word measures that are regressed out, and report the zero-shared-name subset on its own. No placeholder codes are needed anywhere.",
+   "near_neighbour_negatives": "For identity, each lineage's negatives are the retellings of every other source: about 70 to 75 per lineage against Batman's 8, and they include close relatives (retellings of other Shakespeare tragedies for Macbeth, of other courtship novels for Emma, of other fairy tales for Cinderella). Lineages large enough to test, counting the reserve list: Romeo and Juliet (6 to 9 retellings), Hamlet (5), Cinderella (4 to 5), Othello (4), Cyrano (3 to 5), The Most Dangerous Game (3 to 4), Macbeth (3 to 4), Seven Samurai (2 to 5).\n\nA word-count pilot on the table (TF-IDF centroid of the other retellings, held-out member against about 100 other retellings) shows where there is room. Words are weak for Othello (AUC 0.60, 0.53 with names removed), Hamlet (0.64, 0.71), Romeo and Juliet (0.73, 0.77), Cyrano (0.76, 0.55) and Seven Samurai (0.77, 0.75). Words already solve Cinderella (1.00) and The Most Dangerous Game (0.95). These lineages have four to seven members each, so each AUC is rough.",
+   "available_in_local_table": "Checked against /home/user/phylomemetics/study/v2/cache/wiki_movie_plots.csv:\n- 74 of the 80 adaptations are in the table; 73 are usable (Tempest 1982 has only 116 words). Median length 614 words. Five more are under 250 words (Men of Respect, All Night Long, The Truth About Cats & Dogs, Whatever It Takes, The Outrage) and 17 are under 400.\n- All 9 film sources are in it (Seven Samurai, Yojimbo, Rashomon, High Sierra, The Asphalt Jungle, Gunga Din, House of Strangers, The Shop Around the Corner, Rio Bravo), so 9 film-to-film pairs are complete without the dump.\n- Faithful screen versions of 27 of the 39 literary sources are in it and serve as second witnesses and positive controls (Romeo and Juliet 1968, Hamlet 1948, Macbeth 1971, Emma 1996, Cyrano de Bergerac 1950, Cinderella 1950 and others).\n- The partly renamed controls are in it: She's the Man, Gnomeo & Juliet, Joe MacBeth (198 words), Great Expectations (1998), Oliver & Company, Rent, Carmen Jones, Kiss Me, Kate.\n- The table has no French, Italian, German or Spanish films, and its plots carry cast names in brackets that must be stripped.\nPilot scripts and row-level results are in /tmp/claude-0/-home-user-phylomemetics/a789a30b-498f-5fe1-bc57-f1de263eb0f6/scratchpad/corpus/loose/ (final_pilot.py, final_pilot_rows.csv, pilot.py, pilot2.py, pilot_rows.csv).",
+   "must_come_from_the_dump": "- The synopses of the 39 literary and folk sources with adaptations: 11 Shakespeare plays, 22 novels, plays, stories and epics, 6 fairy tales. Section headings vary (Plot, Plot summary, Synopsis, Summary, Story) and I could not check them. Three are doubtful as plot text: Anabasis (Xenophon), Faust (the legend's article against Goethe's Part One), and the short fairy-tale plots (Little Red Riding Hood, The Frog Prince).\n- The 20 literary decoy sources (Much Ado About Nothing, Julius Caesar, Persuasion, Wuthering Heights, The Count of Monte Cristo, Hansel and Gretel and so on).\n- Seven adaptations: China Girl (1987), The Bad Sleep Well (1960), McLintock! (1963), Tempest (1982), Angoor (1982), Nosferatu (1922), A Fistful of Dollars (1964).\n- Longer 2023 texts for the short table plots, if they have grown.\n- Faithful versions for the 12 sources with none in the table (King Lear, The Taming of the Shrew, Henry IV, The Comedy of Errors, Heart of Darkness and others), where a film article with a plot exists.\nThis is one pass over the dump with a title list of about 100 articles.",
+   "build_steps": "1. Freeze the pair list and its tiers before any model reads a text. Check each 'unsure' entry against the article text in the dump (lead and production section) and move it to the contested block or drop it. Do not select or drop pairs by their word-overlap rank.\n2. Pull the 74 adaptation plots, 9 film sources, 27 faithful witnesses and the partly renamed controls from the local table. Strip cast names in brackets and reference marks.\n3. One scan of the dump for about 100 titles: 59 source synopses (39 with adaptations, 20 decoys), 7 adaptations, longer versions of short plots.\n4. Cut every sentence that names the source, its author or its characters as such. Record what was cut and the count of shared proper nouns per pair.\n5. Keep the first 40 sentences, and also build the length-matched openings the paper uses.\n6. Run the link probe and the title probe on all four models, then the units.\n7. Heredity: for each adaptation rank its documented source among all older sources; test by relabelling sources (Monte Carlo, since 72 sources are too many for an exact test), which keeps adaptations of one source together. Then the residual test with the paper's seven word measures plus the shared-name count.\n8. Report all 80, then without the contested block, the zero-shared-name subset, the link-unknown subset, and each block (Shakespeare, novels, tales, films) on its own.\n9. Run the same on the faithful and partly renamed controls: words and units must both find those.",
+   "biggest_risks": "1. Words still carry most of the trail. In the pilot TF-IDF does as well here as on Batman by the paper's own statistic (11.7% against 11%). The corpus does not remove the problem; it gives a test with enough pairs to see past it, and a Shakespeare block where words are weaker (17%).\n2. Recall of the link. A pass could mean the model knows Clueless is Emma. Only the link-unknown subset is clean, and I cannot say how large it will be until the probe is run.\n3. Documentation is uneven and partly from my memory. Seven entries are marked unsure and four are contested (The Bad Sleep Well, Jubal, Forbidden Planet, and Warm Bodies at film level). Live Wikipedia was not reachable, so none was verified.\n4. Unequal texts. A play's act-by-act synopsis and a film plot are different registers; fairy-tale plots may be a fifth the length of a film's. Length must be controlled as the paper does.\n5. Dependence. Six pairs share Romeo and Juliet, and 48 sources carry 80 pairs, so the effective sample is nearer 48 than 80. Relabelling sources handles this in the test but power is less than 80 suggests. As a rough guide, a 10-point residual effect is about 1 standard error with 9 pairs and 2 to 3 with these.\n6. Selecting on words. Choosing pairs because TF-IDF fails on them would make units look better than words by regression to the mean. The list must be fixed by rule.\n7. Multiple sources. Phantom of the Paradise, The Lion King and Ran each name more than one source.\n8. The pilot used film stand-ins for literary sources; the real synopses may behave differently.",
+   "what_each_outcome_would_show": "- Units find the sources, and still do once the word measures are regressed out, in the link-unknown subset as well: neurons see a story's ancestry beyond its words. This is the result the Batman corpus could not give either way.\n- The residual passes only where the model names the link: the units carry the model's knowledge of the adaptation, not a reading of the story. That is a finding about recall and should be reported as such.\n- Units find the sources but nothing is left after the word measures: the same answer as Batman, now with about 80 pairs and names that differ naturally, so 'too few pairs' and 'placeholder marks' are no longer available as explanations. That would be a much firmer negative.\n- Units fail where words succeed (film-to-film block) and also where words fail (Warm Bodies, Ball of Fire, Easy A): neurons are a worse tracer than word counts on plot summaries.\n- Units beat words only on the Shakespeare block: a narrower claim, that units help where plot vocabulary has been replaced, worth a follow-up on that block alone.\n- Identity: if a lineage's shared units tell Othello or Hamlet retellings from other retellings where words reach only 0.53 to 0.71, that is a name-free identity the Batman test could not show. If Cinderella passes and Othello fails, units are tracking vocabulary.\n- If the faithful controls fail, the pipeline is broken and nothing else should be read.",
+   "which_experiments_it_supports": "Heredity and the residual test: yes, this is what it is built for (80 pairs, 72 candidate sources, against 9 and 12). Identity: yes for five to eight lineages, each with about 70 near-neighbour negatives, though each lineage has only three to nine members. Selection: no. There is no usable measure of which early retellings were popular and no dated chain of descent long enough; the paper's own power problem would be worse here.",
+   "alternatives_rejected": "- Straight cross-cultural remakes (Ring to The Ring, Infernal Affairs to The Departed, Hollywood to Bollywood). The table holds dozens with both plots, so they need no dump. But the pilot shows words find them easily (5.2% of wrong sources beat the true one over 51 film-source pairs), so they repeat Batman's ceiling. Ten genre-shift cases are kept as the block where words should win.\n- A single franchise of retellings (all Romeo and Juliet, or all Cinderella). One source gives no wrong-source pool, and Cinderella is already solved by words (AUC 1.00).\n- Critics-only parallels (Disturbia and Rear Window, where a court found no copying; Pale Rider and Shane; A Bug's Life and Seven Samurai; Trading Places and The Prince and the Pauper). Words fail on several of these, which is tempting, but the lineage is opinion.\n- Choosing only pairs where TF-IDF fails. It would manufacture a win for units.\n- Redacting the leaked names with codes. It brings back the placeholder mark.",
+   "other_works": "Reserve pairs, all checked as present in the table unless noted, to replace any that fail verification or to enlarge the set to about 110:\n- Film to film: Mogambo (1953) from Red Dust (1932); No Way Out (1987) from The Big Clock (1948); Against All Odds (1984) from Out of the Past (1947); A Perfect Murder (1998) from Dial M for Murder (1954); Cairo (1963) and Cool Breeze (1972) from The Asphalt Jungle; The Big Show (1961) from House of Strangers; Satan Met a Lady (1936) from The Maltese Falcon; Down to Earth (2001) from Heaven Can Wait (1978); Walk, Don't Run (1966) from The More the Merrier (1943); The Magnificent Seven (2016) from the 1960 film; China Gate (1998) from Seven Samurai; Miracles (1989) from Lady for a Day (1933); Outland (1981) from High Noon; Battle Beyond the Stars (1980), not in table.\n- Literary: Bloodlust! (1961) from The Most Dangerous Game; Ella Enchanted (2004) from Cinderella; Red Riding Hood (2011); Duet (1994) from Cyrano; Bedazzled (2000) from the 1967 film; Phir Subah Hogi (1958) from Crime and Punishment; Dil Bole Hadippa! (2009) from She's the Man; Qayamat Se Qayamat Tak (1988) and Yellow Sky (1948), both contested.\n- From the dump only: Scotland, PA (2001), Bride and Prejudice (2004), Untold Scandal (2003), Fitoor (2016), Sydney White (2007), Ponyo (2008), Chi-Raq (2015), Sierra Burgess Is a Loser (2018), The Half of It (2020), West Side Story (2021).\n- Partly renamed controls: She's the Man, Gnomeo & Juliet, Joe MacBeth, Great Expectations (1998), Oliver & Company, Rent, Carmen Jones, Kiss Me, Kate, Lt. Robin Crusoe, U.S.N., Tromeo and Juliet.\n- Decoy sources (24): Much Ado About Nothing, Julius Caesar, Richard III, The Merchant of Venice, As You Like It, Antony and Cleopatra; Persuasion, Wuthering Heights, Great Expectations, Oliver Twist, The Count of Monte Cristo, Les Miserables, Frankenstein, Treasure Island, The Prisoner of Zenda, Anna Karenina; The Little Mermaid, Sleeping Beauty, Hansel and Gretel, Rapunzel; The Hidden Fortress, High Noon, Out of the Past, The Maltese Falcon.\n- A post-training block (retellings released 2024 to 2026) would need live Wikipedia from another machine; I have not listed titles because I could not verify them."
+  },
+  "memorisation": {
+   "name": "Cross-industry remakes in Indian cinema (Hindi, Tamil, Telugu, Malayalam, Kannada), with a small East Asian contrast block",
+   "one_line": "78 original-to-remake pairs between Indian film industries (147 mostly little-known films, every plot already in the local table at 15+ sentences, names changed by the remake itself): about nine times the Batman pairs and hundreds of near-neighbour negatives per film, but word overlap is higher than Batman's, not lower.",
+   "lineage_definition": "A lineage is a remake family: one original film and the later films that English Wikipedia documents as remakes of it in a different Indian film industry. A documented pair is (remake, original), where the remake's article names the original as the film it remakes.\n\nRules, to be fixed before any model reads a text:\n1. Both films are in the local table and each plot has at least 15 sentences by the repository's splitter (fetch_corpus.sentences).\n2. The two films come from different industries among Hindi (\"Bollywood\" in the table), Tamil, Telugu, Malayalam and Kannada.\n3. Dubbed releases, films shot in two languages at once, sequels and \"inspired by\" cases are not pairs.\n4. A pair is left out when the two summaries share 10% or more of their word 5-grams after names are stripped, because one Wikipedia summary was pasted from the other.\n5. When a remake was itself remade, the source is the film the article names.\n\nCandidate sources for each remake are the 70 originals in the set that are not later than it. A second, harder pool is every film of the source's industry in the table.",
+   "n_documented_pairs": 78,
+   "n_candidate_sources": 70,
+   "n_works_total": 180,
+   "pairs": [
+    {
+     "adaptation": "Sivagamiyin Selvan (1974, Tamil)",
+     "source": "Aradhana (1969 film) (1969, Hindi)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 4 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Dharmathin Thalaivan (1988, Tamil)",
+     "source": "Kasme Vaade (1978, Hindi)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 1 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Enakkul Oruvan (1984 film) (1984, Tamil)",
+     "source": "Karz (film) (1980, Hindi)",
+     "documentation": "Lead of the remake's article (from memory, sure; the plot in the table is the reincarnation story of Karz; unchecked). Words rank the source 1153 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Sathya (1988 film) (1988, Tamil)",
+     "source": "Arjun (1985 film) (1985, Hindi)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 2 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Annamalai (film) (1992, Tamil)",
+     "source": "Khudgarz (1987, Hindi)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 5 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Bharathan (1992 film) (1992, Tamil)",
+     "source": "Ghayal (1990 film) (1990, Hindi)",
+     "documentation": "Lead of the remake's article (from memory, fairly sure; unchecked). Words rank the source 8 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Samrat (film) (1997, Tamil)",
+     "source": "Baazigar (1993 film) (1993, Hindi)",
+     "documentation": "Lead of the remake's article (from memory, fairly sure, not certain; unchecked). Words rank the source 785 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Aegan (2008, Tamil)",
+     "source": "Main Hoon Na (2004, Hindi)",
+     "documentation": "Lead of the remake's article (from memory, sure it is called a remake; the makers said loosely based; unchecked). Words rank the source 13 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Kanden Kadhalai (2009, Tamil)",
+     "source": "Jab We Met (2007, Hindi)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 2 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Nanban (2012 film) (2012, Tamil)",
+     "source": "3 Idiots (2009, Hindi)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 1 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Gabbar Singh (2012 film) (2012, Telugu)",
+     "source": "Dabangg (2010, Hindi)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 2 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Anaamika (2014 film) (2014, Telugu)",
+     "source": "Kahaani (2012, Hindi)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 231 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Chandramukhi (2005, Tamil)",
+     "source": "Apthamitra (2004, Kannada)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Table: P. Vasu directed both. Words rank the source 1 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Yogi (2007 film) (2007, Telugu)",
+     "source": "Jogi (film) (2005, Kannada)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 38 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Dhol (2007 film) (2007, Hindi)",
+     "source": "In Harihar Nagar (1990, Malayalam)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 5 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Hulchul (2004 film) (2004, Hindi)",
+     "source": "Godfather (1991 film) (1991, Malayalam)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 4 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Classmates (2007 film) (2007, Telugu)",
+     "source": "Classmates (2006 film) (2006, Malayalam)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 11 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Ninaithale Inikkum (2009 film) (2009, Tamil)",
+     "source": "Classmates (2006 film) (2006, Malayalam)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 104 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Kuselan (2008, Tamil)",
+     "source": "Katha Parayumbol (2007, Malayalam)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 1 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Billu (2009, Hindi)",
+     "source": "Katha Parayumbol (2007, Malayalam)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 1 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Bodyguard (2011 Hindi film) (2011, Hindi)",
+     "source": "Bodyguard (2009 film) (2010, Malayalam)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Table: Siddique directed both. Words rank the source 3 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Kaavalan (2011, Tamil)",
+     "source": "Bodyguard (2009 film) (2010, Malayalam)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Table: Siddique directed both. Words rank the source 3 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Drushyam (2014, Telugu)",
+     "source": "Drishyam (2013, Malayalam)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 1 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Premam (2016 film) (2016, Telugu)",
+     "source": "Premam (2015, Malayalam)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 1 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Rakta Sambandham (1962 film) (1962, Telugu)",
+     "source": "Pasamalar (1961, Tamil)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 2 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Dil Ek Mandir (1963, Hindi)",
+     "source": "Nenjil Or Aalayam (1962, Tamil)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Table: C. V. Sridhar directed both. Words rank the source 2 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Main Sunder Hoon (1971, Hindi)",
+     "source": "Server Sundaram (1964, Tamil)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Table: Krishnan-Panju directed both. Words rank the source 1 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Padaharella Vayasu (1978, Telugu)",
+     "source": "16 Vayathinile (1977, Tamil)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 6 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Zara Si Zindagi (1983, Hindi)",
+     "source": "Varumayin Niram Sivappu (1980, Tamil)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Table: K. Balachander directed both. Words rank the source 1 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Sadma (1983, Hindi)",
+     "source": "Moondram Pirai (1982, Tamil)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Table: Balu Mahendra directed both. Words rank the source 1 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Sansar (1987 film) (1987, Hindi)",
+     "source": "Samsaram Adhu Minsaram (1986, Tamil)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 1 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Kondapalli Raja (1993, Telugu)",
+     "source": "Annamalai (film) (1992, Tamil)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 1 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Chinarayudu (1992, Telugu)",
+     "source": "Chinna Gounder (1992, Tamil)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 1 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Khuddar (1994, Hindi)",
+     "source": "Walter Vetrivel (1993, Tamil)",
+     "documentation": "Lead of the remake's article (from memory, fairly sure; the two plots in the table match event for event; unchecked). Words rank the source 21 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Peddarayudu (1995, Telugu)",
+     "source": "Nattamai (1994, Tamil)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 1 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Chachi 420 (1997, Hindi)",
+     "source": "Avvai Shanmughi (1996, Tamil)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 1 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Subhakankshalu (1997, Telugu)",
+     "source": "Poove Unakkaga (1996, Tamil)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 1 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Kya Yehi Pyaar Hai (2002, Hindi)",
+     "source": "Love Today (film) (1997, Tamil)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 2 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Sooryavansham (1999 film) (1999, Hindi)",
+     "source": "Suryavamsam (1997, Tamil)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 19 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Raja (1999 film) (1999, Telugu)",
+     "source": "Unnidathil Ennai Koduthen (1998, Tamil)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 1 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Nayak: The Real Hero (2001, Hindi)",
+     "source": "Mudhalvan (1999, Tamil)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Table: S. Shankar directed both. Words rank the source 1 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Saathiya (film) (2002, Hindi)",
+     "source": "Alaipayuthey (film) (2000, Tamil)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 3 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Kushi (Telugu film) (2001, Telugu)",
+     "source": "Kushi (2000 film) (2000, Tamil)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Table: S. J. Suryah directed both. Words rank the source 1 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Rehnaa Hai Terre Dil Mein (2001, Hindi)",
+     "source": "Minnale (2001, Tamil)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Table: Gautham Menon directed both. Words rank the source 1 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Gemini (2002 Telugu film) (2002, Telugu)",
+     "source": "Gemini (2002 Tamil film) (2002, Tamil)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 1 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Tagore (film) (2003, Telugu)",
+     "source": "Ramana (film) (2002, Tamil)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 1 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Force (2011 film) (2011, Hindi)",
+     "source": "Kaakha Kaakha (2003, Tamil)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 2 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Policegiri (2013, Hindi)",
+     "source": "Saamy (2003, Tamil)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 1 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Kurradu (2009, Telugu)",
+     "source": "Polladhavan (2007 film) (2007, Tamil)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). The table's own plot text opens: 'This movie is a remake of Tamil movie Polladavan'. Words rank the source 1 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Tadakha (2013, Telugu)",
+     "source": "Vettai (2012, Tamil)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 78 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Miss Mary (1957 film) (1957, Hindi)",
+     "source": "Missamma (1955, Telugu)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Table: L. V. Prasad directed both. Words rank the source 1 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Shiva (1990 film) (1990, Hindi)",
+     "source": "Siva (1989 Telugu film) (1989, Telugu)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Table: Ram Gopal Varma directed both. Words rank the source 1 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Aaj Ka Goonda Raj (1992, Hindi)",
+     "source": "Gang Leader (1991, Telugu)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 18 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Judaai (1997 film) (1997, Hindi)",
+     "source": "Shubha Lagnam (1994, Telugu)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 1 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Ninaithen Vandhai (1998, Tamil)",
+     "source": "Pelli Sandadi (1995, Telugu)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 1 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Priyamaanavale (2000, Tamil)",
+     "source": "Pavitra Bandham (1996, Telugu)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 1 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Mujhe Kucch Kehna Hai (2001, Hindi)",
+     "source": "Toli Prema (1998, Telugu)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 4 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Youth (2002 film) (2002, Tamil)",
+     "source": "Chiru Navvuto (2000, Telugu)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 34 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Kuch Tum Kaho Kuch Hum Kahein (2002, Hindi)",
+     "source": "Kalisundam Raa (2000, Telugu)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 3 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Jeena Sirf Merre Liye (2002, Hindi)",
+     "source": "Manasantha Nuvve (2001, Telugu)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 69 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Thithikudhe (2003, Tamil)",
+     "source": "Manasantha Nuvve (2001, Telugu)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 2 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Vaseegara (film) (2003, Tamil)",
+     "source": "Nuvvu Naaku Nachav (2001, Telugu)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 53 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "M. Kumaran son of Mahalakshmi (2004, Tamil)",
+     "source": "Amma Nanna O Tamila Ammayi (2003, Telugu)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 1 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Ghilli (2004, Tamil)",
+     "source": "Okkadu (2003, Telugu)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 1 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Something Something... Unakkum Enakkum (2006, Tamil)",
+     "source": "Nuvvostanante Nenoddantana (2005, Telugu)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 1 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Santosh Subramaniam (2008, Tamil)",
+     "source": "Bommarillu (2006, Telugu)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 2 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Pokkiri (2007, Tamil)",
+     "source": "Pokiri (2006 film) (2006, Telugu)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 1 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Wanted (2009 film) (2009, Hindi)",
+     "source": "Pokiri (2006 film) (2006, Telugu)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 6 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Jai Ho (film) (2014, Hindi)",
+     "source": "Stalin (2006 film) (2006, Telugu)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 1 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Siruthai (2011, Tamil)",
+     "source": "Vikramarkudu (2006, Telugu)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 26 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Rowdy Rathore (2012, Hindi)",
+     "source": "Vikramarkudu (2006, Telugu)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 1 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Maanja Velu (2010, Tamil)",
+     "source": "Lakshyam (2007 film) (2007, Telugu)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 2 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Heropanti (2014, Hindi)",
+     "source": "Parugu (2008, Telugu)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 2 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Uthamaputhiran (2010 film) (2010, Tamil)",
+     "source": "Ready (2008 film) (2008, Telugu)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 1 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Ready (2011 film) (2011, Hindi)",
+     "source": "Ready (2008 film) (2008, Telugu)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 4 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Thillalangadi (2010, Tamil)",
+     "source": "Kick (2009 film) (2009, Telugu)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 1 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Kick (2014 Film) (2014, Hindi)",
+     "source": "Kick (2009 film) (2009, Telugu)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 1 of ~3,600.",
+     "both_plots_in_local_table": true
+    },
+    {
+     "adaptation": "Main Tera Hero (2014, Hindi)",
+     "source": "Kandireega (2011, Telugu)",
+     "documentation": "Lead of the remake's article (from memory, sure; unchecked). Words rank the source 222 of ~3,600.",
+     "both_plots_in_local_table": true
+    }
+   ],
+   "other_works": "Titles in the pair list are the table's Wikipedia page titles with the table's release year. The table's own Title column is corrupted for 8 of the 147 films (for example \"28\" for Pokiri and a cast list for Ghilli).\n\n**Contrast block: 17 East Asian pairs, 33 films.** All are in the local table at 15+ sentences, with independently worded summaries (copied 5-grams under 1%, except A Better Tomorrow at 8%). These are famous and should be recognised, which is their purpose.\n- Infernal Affairs (2002) to The Departed (2006)\n- The Eye (2002) to The Eye (2008)\n- A Better Tomorrow (1986) to A Better Tomorrow (2010, South Korean)\n- A Chinese Ghost Story (1987) to its 2011 remake\n- Fist of Fury (1972) to Fist of Legend (1994)\n- Eye in the Sky (2007) to Cold Eyes (2013)\n- Daisy (2006) to Lavender (2015, Malayalam); the table's plot text states the remake\n- Cellular (2004, American) to Connected (2008, Hong Kong)\n- Seven Samurai (1954) to The Magnificent Seven (1960) and (2016)\n- Yojimbo (1961) to Last Man Standing (1996)\n- Shall We Dance? (1996) to (2004)\n- Ring (1998) to The Ring (2002)\n- Pulse (2001) to Pulse (2006)\n- Dark Water (2002) to (2005)\n- Ju-on: The Grudge (2003 in the table) to The Grudge (2004)\n- Miss Granny (2014) to 20 Once Again (2015)\n\n**Kept aside, not in the main set:**\n- 65 Indian pairs with pasted summaries, as a positive control that both words and units must pass.\n- 11 same-industry remakes (Don, Zanjeer, Agneepath, Karz, Gol Maal, Billa, Thillu Mullu and others).\n- The pool of 3,604 Indian films used as negatives.",
+   "near_neighbour_negatives": "For each remake, the negatives are every other film of its own industry released within five years of it, with 15+ sentences and outside its family. That is a median of 288 per remake (range 25 to 515), from 3,604 films already in the local table. Sources get the same treatment. This replaces the paper's 8.\n\nThe genre column cannot narrow it further: 38% of these films have genre \"unknown\" (63% of the Tamil ones). Harder negatives are available from the cast and director columns (other films by the same star or director in the same years), and from the other 69 sources.",
+   "names_differ_between_source_and_adaptation": "Mostly yes, and the remake does it itself, so no placeholder codes are needed.\n\nAfter dropping bracketed actor names and common place words, 31 of the 78 pairs share no capitalised name at all and 61 share at most two. The median is one shared name, against a median of 13 names per film. What is shared is usually a common first name the remake kept (Raju, Radha, Pooja), a place (Ooty) or a title name (Gemini).\n\nExceptions: Siva and Shiva share 11 names, Poove Unakkaga and Subhakankshalu 8, 3 Idiots and Nanban 7, Drishyam and Drushyam 6. These can be handled without codes by repeating the test on the 31 pairs with no shared name, or by dropping the sentences that hold one.\n\nTwo things must be cleaned first, because stars recur across unrelated films:\n- Many summaries put the actor after each character, as in \"Raja (Karthi)\".\n- A few use the actors' names as the characters'. Walter Vetrivel's plot says \"Satyraj\" and \"Sukanya\".",
+   "expected_word_overlap": "Higher than in the Batman corpus, not lower. All figures were measured on the local table, on the first 40 sentences with bracketed actor names removed and names stripped by dropping capitalised words.\n\n**Pasted summaries.** Of 154 verified Indian pairs with both plots at 15+ sentences, 65 (42%) share more than 10% of their word 5-grams and 49 (32%) more than 30%. Editors paste the original's plot and swap the names: Sethu, Seshu and Huchha have the same text. The rule excludes these, leaving 78 cross-industry pairs with a median of 0.2% copied 5-grams.\n\n**The 78 against the 9 Batman pairs, same measures.**\n\n| Measure | Remakes | Batman |\n| --- | --- | --- |\n| Content-word Jaccard, adaptation and source | 0.16 | 0.09 |\n| TF-IDF cosine to the documented source | 0.20 | 0.15 |\n| TF-IDF cosine to the other candidates | 0.06 | 0.12 |\n| Source stands out above the rest by | 3.5 times | 1.3 times |\n\n**What TF-IDF alone does on the 78.**\n\n| Candidate pool | Source ranked first | Other detail |\n| --- | --- | --- |\n| The 70 sources | 62 of 78 | 1.2% of other sources beat it (paper: 11%, 6 of 9 first) |\n| Every film of the source's industry (median 1,158) | 58 | 7 worse than 10th |\n| All 3,600 Indian films | 38 | 59 in the top five, 16 worse than 10th |\n\nSo the paper's E2 statistic will be at ceiling for words on the 70-source pool. Two analyses can still separate neurons from words: the residual test, and retrieval against the whole industry, where words leave 16 to 40 pairs unsolved. The pairs where words fail are loose remakes with independently written summaries, such as Karz to Enakkul Oruvan (rank 1,153), Baazigar to Samrat (785), Kahaani to Anaamika (231) and Kandireega to Main Tera Hero (222).",
+   "memorisation_risk": "Not measured: no model was run. I expect it to be lower than for the paper's 69 popular films, but uneven and not zero.\n\n- **Likely unrecognised.** Most of the 147 films are regional Tamil, Telugu, Malayalam and Kannada releases or minor Hindi remakes (Chinarayudu, Kondapalli Raja, Ninaithen Vandhai, Kurradu, Khuddar, Samrat).\n- **Likely recognised.** By my guess 25 to 30 are well known and Llama 3.3 70B may name them: 3 Idiots, Jab We Met, Dabangg, Kahaani, Baazigar, Karz, Sadma, Chachi 420, Saathiya, Wanted, Rowdy Rathore, Kick, Drishyam, Chandramukhi, Pokiri, Okkadu.\n- **The models have read these pages.** The table is a 2017-18 copy of English Wikipedia, and 90 of the 147 films are in this project's own reference corpus.\n- **Names stay in the text**, which makes naming a film easier than in the paper's name-free texts.\n\nTwo guards:\n1. Ask the recognition question of every film before anything else (which film is this, and which film does it remake).\n2. Repeat every analysis on the pairs where the model names neither film.\n\nThe 17 East Asian pairs are the opposite case, kept as a block the models should recognise.",
+   "available_in_local_table": "- **The main set.** All 156 plots of the 78 pairs: 147 different films, median 29 sentences, 81% with 20 or more, years 1955 to 2016.\n- **The contrast block.** The 17 East Asian pairs (33 films).\n- **The negative pool.** 3,604 films of the five Indian industries with 15+ sentences, after removing repeated pages.\n- **Director and cast columns.** They confirm 12 of the 78 pairs (same director for both films).\n- **No remake field.** Only 64 plots mention a remake in their own text; Kurradu is the one among the 78.\n\n**How many pairs the table can give.**\n\n| Step | Pairs |\n| --- | --- |\n| Listed from memory | about 450 |\n| Both films in the table | 263 |\n| Both plots at 15+ sentences and the right plot | 171 (154 Indian, 17 East Asian) |\n| Indian, cross-industry | 143 |\n| Indian, cross-industry, wording not pasted | 78 |\n\nA similarity census, used only for counting and not for choosing, shows about 96 more close pairs I had not listed, mostly Bengali and Kannada remakes of Telugu and Tamil films. So the table holds at least 250 pairs at 15+ sentences, but most of the extra ones have pasted wording.\n\nScratch files are in /tmp/claude-0/-home-user-phylomemetics/a789a30b-498f-5fe1-bc57-f1de263eb0f6/scratchpad/corpus/remakes/:\n- final_pairs.csv (the 78, with table row numbers and every measure)\n- pairs_all.csv (the 263)\n- overlap_indian_hard.csv (the 154)\n- census.csv",
+   "must_come_from_the_dump": "1. **The documentation for 77 of the 78 pairs.** That is the sentence in the remake's lead (\"a remake of the 2003 Telugu film Okkadu\") and, where present, the original's \"was remade in Tamil as\" sentence. Today it rests on my memory.\n2. **A check that each table row holds the right film's plot.** The table links some rows to the wrong article and repeats dubbed releases under other titles.\n   - The row for Asthram (2006, Telugu) holds a different film's plot, which looks to me like the 1983 Malayalam Asthram. That cost one pair.\n   - \"Vettai (film)\" (1986) holds the 2012 film's plot.\n   - 57 Indian plots appear verbatim under two titles.\n3. **Plots of films the table lacks or has too short**, which would add pairs. I could not check that these articles have plot sections of 15 sentences.\n   - Indian: Manichitrathazhu (1993), Ramji Rao Speaking (1989), Niram (1999), Thalavattam (1986), Poochakkoru Mookkuthi (1984), Kireedam (1989), Punjabi House (1998), Friends (1999), Drishyam (2015, Hindi), Virasat (1997), Gardish (1993), Tevar (2015), Gabbar Is Back (2015), Woh Saat Din (1983).\n   - East Asian: Oldboy (2003), My Sassy Girl (2001), A Tale of Two Sisters (2003), A Bittersweet Life (2005), The Chaser (2008).\n4. **Remakes released after 2017.**",
+   "build_steps": "About two days of work and a few dollars of GPU.\n\n1. **Freeze the rules and the analysis plan** before any model reads a text.\n2. **Clean the table** (half a day).\n   - Keep one row per Wikipedia page and per plot text.\n   - Drop bracketed actor names, footnote marks and sentences about the film itself (\"This movie is a remake of ...\").\n   - Keep the first 40 sentences by fetch_corpus.sentences and require 15.\n3. **Take the documentation from the dump** (one day, mostly the 20 GB download and the reading).\n   - For every film page in the table, cut the lead and any \"Remakes\" section from wikimedia/wikipedia 20231101.en.\n   - Match \"remake of the <year> <language> film <title>\" and \"remade in <language> as <title>\", and resolve titles by year and language.\n   - A person reads every match (about 300 lines) and stores the quoted sentence with each pair.\n   - Derive the final pair list from this, not from my list. My 78 are a check on recall.\n4. **Compare each table plot with the dump's plot section** for the same page, to catch wrong-article rows.\n5. **Apply the pasted-wording rule** (under 10% shared 5-grams on name-stripped text) and report the set without it too.\n6. **Run recognition first.** Ask each model which film each plot summarises and which film it remakes.\n7. **Run the GPU pass** on the 180 study texts and the 3,604-film pool, through the existing study pass and scales.\n   - Rebuild the reference-only scale leaving out the study films that are in the reference corpus. finalize_scale.py takes a list of documents, and 24 strongest examples are stored per unit.\n   - Take base rates from the 544 Indian films already among the 3,000 background plots, minus study films.\n8. **Analyse.**\n   - E2 on the 70 sources, with a Monte Carlo relabelling null (70 sources cannot be enumerated exactly).\n   - The residual decision test with the seven word measures.\n   - The rank of the source among all films of its industry, for units and for TF-IDF.\n   - Split each by pasted or independent wording, by whether the model names the films, and for the East Asian block.",
+   "biggest_risks": "1. **It does not fix the word-overlap limit.** A remake retells its source scene by scene, so word counts find these sources more easily than Batman's. On the 70-source pool the E2 statistic cannot separate units from words. Only the residual test and whole-industry retrieval can, and the second rests on 16 to 40 hard pairs.\n2. **Recognition is unknown until the probe is run.** If Llama 3.3 70B names most of these films, the main reason for choosing this corpus goes.\n3. **The pair list rests on my memory.** I am sure of 75 and fairly sure of three (Samrat, Bharathan, Khuddar). My list also leans towards films I remember, which are the better-known ones. The list should be rebuilt from the dump's leads.\n4. **The table has errors.** One of the 14 lowest-similarity pairs I read held the wrong film's plot. I read the plot openings of the 50 lowest-similarity pairs, not all 78.\n5. **The pasted-wording rule uses a word measure to choose pairs.** It must be fixed in advance and reported both ways.\n6. **Overlap with the reference corpus.** 90 of the 147 films are in it and 27 are among the 3,000 background plots. Scales and base rates must leave them out.\n7. **There is no single lineage.** The paper's identity test (a canon across 32 works) and selection test have no counterpart here.\n8. **Text quality.** These are fan-written summaries, some in poor English.\n9. **Limit (2) needs different material.** Loose adaptations, or the source put into another language, would address it. I did not scope either.\n\n**Side effects of this scouting run.** I ran one read-only `git status` by mistake, against the rule. Importing networkx also wrote 286 bytecode cache files under .venv, which I left in place. Nothing else in the repository was touched.",
+   "which_experiments_it_supports": "- **Heredity: yes, the main use.** 78 pairs against 9, across 70 unrelated lineages.\n- **Residual test (do neurons add to words): yes, with far more power.** There are 78 x 69 = 5,382 non-source cells against 99. A second form, retrieval among all films of the industry, is one where words are not at ceiling.\n- **Identity: only in a changed form.** There is no lineage of 32 works, so there is no canon. Two things can be tested:\n  - whether a remake is closer to its own source than to its near neighbours, which is the heredity test with hard negatives;\n  - on the 22 families of three to five films among the 154 verified pairs, whether units shared by the other members pick out the held-out member.\n- **Selection: no.** The table has no popularity measure and the families are too small. The nearest question is whether the units one remake keeps are the units another remake of the same film keeps; 8 sources in the set have two remakes.",
+   "what_each_outcome_would_show": "- **Units find the sources, including for films the model cannot name.** The Batman heredity result is not a product of shared names, placeholder codes or the model knowing the story.\n- **Units find the sources only where the model names the films, and in the East Asian block.** The trail is recognition.\n- **The residual test passes, and units rank the source well in the pairs where TF-IDF puts it worse than 10th among 3,600 films.** This would be the first evidence that neurons carry something word counts do not. Because the summaries were written independently and the names differ, it would be story content.\n- **The residual test fails with 78 pairs.** That is a well-powered null: on retellings of the same plot, neurons under this presence rule add nothing to words. The Batman null was then not just a matter of 9 pairs, and only stories reworded on purpose (the planned planted-story experiment) remain.\n- **Units do well only on the 65 pasted pairs.** Units follow wording.\n- **Units fail to find sources that TF-IDF finds.** The strong-activation rule loses the story signal, and the Batman heredity result leaned on Batman's shared vocabulary.",
+   "alternatives_rejected": "- **East Asian originals with American remakes as the main set.** Only 17 pairs have both plots in the table. Many originals are missing (Oldboy, My Sassy Girl, A Tale of Two Sisters, Il Mare), and only 107 of the 522 South Korean plots reach 15 sentences. These are also the films a model is most likely to recognise. Kept as the contrast block.\n- **Hindi remakes of American or Korean films.** Mostly unofficial, so not documented, and the originals are the most memorised.\n- **Same-industry remakes (Don, Agneepath, Zanjeer).** Only 11 pairs, all famous.\n- **Using all 154 Indian pairs.** 42% have pasted summaries, where any measure wins trivially. Kept as a positive control.\n- **Choosing pairs by plot similarity.** It finds about 96 more pairs but selects for high word overlap, so it was used only to count.\n- **Another single franchise from the table (Godzilla, Kamen Rider, Doraemon).** No documented adaptation-source pairs, and they are recognisable.\n- **Taking one side from Tamil, Telugu or Hindi Wikipedia.** This would remove word overlap altogether, but unit scales and base rates exist only for English text, and I could not check how many of those articles have plot sections."
+  }
+ },
+ "verdicts": {
+  "first_author_aims": {
+   "scores": [
+    {
+     "proposal": "replication",
+     "power": 3,
+     "words_cannot_carry_the_trail": 2,
+     "low_memorisation": 1,
+     "feasibility": 5,
+     "fit_to_the_project": 5,
+     "comment": "Sherlock Holmes. The only franchise among the four, and the only one where identity, heredity and selection all run as designed. Heredity: 32 adaptations with a canonical source against 60 stories (Batman: 9 against 12), but the cleanly documented set (tiers A and B) is 19 adaptations on 12 sources, 6 of them on The Hound, and 13 of the 32 are episodes of one series. Identity: 56 screen works against about 160 detective films chosen by rule (Batman: 8). Selection: 60 early works, about 75% power where Batman had 27%. Words rank the source first for 16 of 32 and miss 11, but the missed ones are mostly the weakly documented 'elements' pairs. Names are kept, so the placeholder codes return. These are the best-known detective stories there are, so recognition will be at least as bad as for Batman. Feasibility is the strongest of the four: the scout fetched and cached 201 live articles, and I confirmed that live Wikipedia answers from this machine and that the film table holds what the scout says."
+    },
+    {
+     "proposal": "power",
+     "power": 5,
+     "words_cannot_carry_the_trail": 2,
+     "low_memorisation": 3,
+     "feasibility": 4,
+     "fit_to_the_project": 2,
+     "comment": "Cross-language remakes, 105 pairs, every plot already in the local table. The best-powered test of whether units add anything to words, and names differ by themselves, so the original texts can be used with no codes. But words find these sources more easily than Batman's (source first for 82% to 85% among documented sources, against 6 of 9), and the only stratum where words fail (24 'inspired by' Hollywood-to-Hindi pairs) has soft documentation. Recognition is unmeasured: probably low for regional Indian films, high for the 19 East Asian and Hollywood pairs. Documentation is from memory for 104 of 105 pairs; that can now be checked live in an hour or so, since Wikipedia is reachable. It is not a franchise: no canon, so no identity test in the paper's sense, and no selection test."
+    },
+    {
+     "proposal": "divergence",
+     "power": 4,
+     "words_cannot_carry_the_trail": 3,
+     "low_memorisation": 1,
+     "feasibility": 3,
+     "fit_to_the_project": 3,
+     "comment": "Transposed retellings, 80 pairs on 48 sources. The only proposal aimed at the word problem, and its own pilot shows it mostly does not solve it: words do as well as on Batman overall (11.7% against 11%), and fail outright on about a fifth of pairs. Recognition is the worst of the four, in a new way: names are left in, the works are famous, and the links themselves are common knowledge (Clueless is Emma), so a pass could be recall of a fact. The build is the heaviest: 59 source synopses and 7 films still to fetch, plays and fairy tales in a different register and length from film plots, sentences to cut by hand, 7 pairs unsure and 4 contested, and the pilot used film stand-ins for the literary sources. Identity is possible only for five to eight lineages of three to nine works. No selection."
+    },
+    {
+     "proposal": "memorisation",
+     "power": 5,
+     "words_cannot_carry_the_trail": 1,
+     "low_memorisation": 4,
+     "feasibility": 4,
+     "fit_to_the_project": 2,
+     "comment": "Indian cross-industry remakes, 78 pairs, with 17 famous East Asian pairs as a contrast block. Essentially the same corpus as 'power' under stricter rules (15 sentences, pasted summaries screened out). Its design is the cleanest answer to recognition: a main set of mostly obscure regional films against a block the models should recognise, with the recognition question asked first. Still unmeasured, and names stay in the text. Words are at ceiling, as the scout says itself: the source is first for 62 of 78 and only 1.2% of other sources beat it, so the heredity statistic cannot separate units from words; only the residual test and retrieval among a whole industry can. Not a franchise: no identity or selection test."
+    }
+   ],
+   "recommendation": "Sherlock Holmes (key: replication).\n\nWhy this one:\n\n1. It is the only franchise among the four, which is what the request asks for, and the only proposal where all three experiments run as designed.\n   - Identity: 56 Holmes screen works against about 160 detective films picked by rule (Batman: 32 against 8).\n   - Heredity: 32 adaptations with a canonical source, each ranked among 60 stories (Batman: 9 among 12).\n   - Selection: 60 early works with a 52-fold spread of pageviews, about 75% power against a true correlation of 0.3 (Batman: 27%). I checked that figure and it is right.\n   The other three proposals drop identity and selection, or keep identity only for a handful of three-to-nine-work lineages.\n\n2. It is the only one whose titles, plot lengths and documentation were checked against the articles and not taken from memory. The scout's warning from that check applies to the others: 39 of 72 adaptation articles it probed turned out unusable.\n\n3. Each outcome says something. If identity fails again against 160 detective films, \"a canon is names plus genre\" holds for two franchises. A selection null would mean something for the first time. Heredity can be split into straight, credited and \"elements\" pairs.\n\nWhat it does not fix, and should not be sold as fixing: words still find half the sources, the names are kept so the placeholder codes return, and recognition will be high. It is a better-powered replication on a second franchise. For those three limits, add the remake arm described under what to take from the others.\n\nWhat I checked myself:\n- Live Wikipedia answered one small API request I sent from this machine to test the scout's claim. So the premise that it is unreachable was wrong, and the corpus can be fetched live, as the Batman corpus was.\n- The scout's cache holds 201 article texts in /tmp/claude-0/-home-user-phylomemetics/a789a30b-498f-5fe1-bc57-f1de263eb0f6/scratchpad/corpus/franchise/raw/. I recomputed its word summary from /tmp/claude-0/-home-user-phylomemetics/a789a30b-498f-5fe1-bc57-f1de263eb0f6/scratchpad/corpus/franchise/pairs_result.json: the first-named source is ranked first for 16 of 32 and below tenth for 11. That matches.\n- The local film table holds the Holmes films at the lengths stated. The negatives rule gives 159 films with my sentence splitter (the scout says 162), 92 of them from the 1930s and 1940s.\n\nNot checked: no model was run, so every statement about recognition is an expectation.",
+   "runner_up": "memorisation (Indian cross-industry remakes, with the East Asian contrast block).\n\nIt and \"power\" are the same corpus under different rules, and their scores tie. I prefer this version because its design does the one thing Holmes cannot: it sets a main set of mostly obscure films against a block the models should recognise, asks the recognition question first, and repeats every analysis on pairs where the model names neither film. Names differ without any edit, so there are no placeholder codes. Every plot is already in the local table.\n\nIt is second and not first because it is not a franchise. It has no canon, so there is no identity test in the paper's sense and no selection test. Words are also at ceiling on it, so it can only answer the \"beyond words\" question through the residual test.\n\nIf the first author wants a second franchise as a fallback, the Holmes scout's checked alternative is James Bond: all 26 films are in the local table and all 14 Fleming books have plot sections, but it yields only about 18 pairs and words rank the source first for 12 of them, so it would repeat Batman at twice the size.",
+   "what_to_take_from_the_others": "**Run the remakes as a second, heredity-only arm beside Holmes.** This is the main thing. It covers the three limits Holmes leaves open (placeholder codes, recognition, low power for the residual test), needs no new plot text and costs minutes of GPU.\n\nFrom \"memorisation\":\n- Its rules: 15 sentences on both sides, different industries, pasted summaries (10% or more shared 5-word sequences) moved to a positive-control set, the rule fixed in advance and results reported both ways.\n- The recognition question asked before anything else, and every analysis repeated on pairs the model does not name.\n- The famous East Asian pairs as a contrast block, not as part of the main set.\n- Retrieval among every film of the source's industry, where words are not at ceiling.\n- Rebuild the pair list from the articles' leads, not from memory. With Wikipedia reachable this is about 150 small requests, not a 20 GB scan.\n- Check each table row holds the right film's plot (it found wrong-article rows).\n\nFrom \"power\":\n- The longer list (105 pairs) as the starting point for that rebuild.\n- The 2,977 background plots as extra decoy sources: their unit presence is already stored, so they cost nothing. This applies to Holmes too.\n- The 24 loose Hollywood-to-Hindi pairs as a pre-declared secondary stratum where words are weak.\n- Strip actors' names in brackets.\n\nFrom \"divergence\", for the Holmes build:\n- A second name-free version that swaps names for other ordinary names, not codes. It removes the placeholder mark that limited the Batman result.\n- A link probe: ask each model which older work a text retells, not only which work it is.\n- Cut sentences that name the source or its author.\n- Relabel sources in the null so that adaptations of one source stay together (six works adapt The Hound).\n- Never choose or drop pairs by their word-overlap rank.\n- Faithful versions as a positive control that both words and units must pass.\n- Its few zero-doubt transposed pairs (Seven Samurai to The Magnificent Seven and the like) are already inside the remake lists; the rest is not worth building now.",
+   "doubts_about_the_winner": "1. **Recognition.** These are the most reproduced detective stories in English. If the 70B model names nearly every story, the heredity and identity results carry the same doubt as Batman's, and the split by recognition has nothing on one side. No model has been run to find out.\n\n2. **The clean heredity set is small.** Tiers A and B are 19 adaptations on 12 distinct sources, and 6 of the 19 adapt The Hound. That is about twice Batman, not three and a half times. By my rough figure the standard error of the test statistic falls from about 0.10 (9 pairs) to 0.07 (19) or 0.05 (32); the remake sets reach 0.03. Thirteen of the 32 are episodes of one series, written and probably summarised by the same people.\n\n3. **The pairs words miss are the weakly documented ones.** Tier C is \"inspired by\", \"uses minor plot elements\", \"the title is inspired by\". If neither words nor units find them, nothing is learned. So the question of whether units add to words will probably stay open on this corpus.\n\n4. **The tiers were drawn in the same session as the word ranks.** They need to be re-derived from the articles' wording by a written rule, blind to the ranks, before the plan is frozen. The \"first-named source\" rule was also not applied consistently (see the pairs field).\n\n5. **Placeholder codes return.** Holmes, Watson, Moriarty and Lestrade keep their names in every pair but Zero Effect.\n\n6. **Identity has two confounds.** Period: Holmes screen works cluster in 1939 to 1946 and 2010 to 2017, and only 16 of the negatives are from the 2010s. Source of text: the negatives would come from a 2017 copy of Wikipedia while the Holmes texts are live 2026 articles. The negatives should be re-fetched live too. The 61 prose stories should stay out of the identity test, since every negative is a film.\n\n7. **Selection can run backwards.** A story's pageviews are partly caused by its adaptations, and famous stories have longer plot sections. It needs controls for length and for how often a story is adapted.\n\n8. **Live access is slow and may not last.** Requests took 6 to 30 seconds for the scout. The fetched texts should be saved with their revision numbers on the first pass.\n\n9. **Overlap with the reference corpus.** Eleven Holmes films are in it and three are among the background plots that set base rates.",
+   "pairs_you_believe_are_wrong": "I found no pair that I am confident is wrongly documented. These are the ones I would not count, or would check first.\n\n**Holmes (replication)**\n- The Sign of Three to The Sign of the Four: the article supports a title and one character name, not an adaptation.\n- The Final Problem (Sherlock) to The Musgrave Ritual: one riddle song.\n- The Great Game to The Bruce-Partington Plans: one named element.\n- Terror by Night: its own article calls it \"a mostly original story\" with \"minor plot elements\". The scout's file also lists Lady Frances Carfax as its first source, where the quoted sentence names The Blue Carbuncle first.\n- The Spider Woman: the first-named source (The Sign of the Four) is ranked 31st by words while The Final Problem, named in the same sentence, is ranked 1st. The \"first-named\" rule is arbitrary for films with several sources.\n- \"The Story of the Lost Special\": I believe the article's title is \"The Lost Special\". Check the resolved title.\n\n**Remakes (power and memorisation)**\n- Lavender to Daisy (contrast block): the table's own plot text calls it a remake, but I am not sure the article does; it may say \"inspired by\".\n- 20 Once Again to Miss Granny: the two films were developed together, so \"remake\" may not be the article's word.\n- Aegan to Main Hoon Na: the makers called it loosely based.\n- Parent unclear, to be settled by the article's lead: Chandramukhi (Apthamitra or Manichitrathazhu) and Wanted (Pokiri or the Tamil Pokkiri by the same director).\n- Enakkul Oruvan (1984) to Karz and Samrat (1997) to Baazigar: I believe both are right, and the table rows look like the right films, but words rank the source 1,153rd and 785th, so read both plots in full before keeping them.\n\n**Retellings (divergence)**\n- Frozen to The Snow Queen and The Princess and the Frog to The Frog Prince: documented, but almost nothing of the source's plot survives, so they test nothing.\n- Warm Bodies, The Bad Sleep Well, Jubal and Forbidden Planet: the link is made by critics or by the novel's article, as the scout says.\n- Hard Target: the article bases it on the 1932 film, so the source should be that film and not the short story.\n- You've Got Mail: the documented source is the play Parfumerie, by way of the 1940 film."
+  },
+  "statistician": {
+   "scores": [
+    {
+     "proposal": "replication",
+     "power": 3,
+     "words_cannot_carry_the_trail": 2,
+     "low_memorisation": 1,
+     "feasibility": 4,
+     "fit_to_the_project": 5,
+     "comment": "Sherlock Holmes. It is the only franchise among the four and the only proposal whose documentation was read from the live articles. I checked six of its quotations against its cached article text and its sixteen film rows against the local table, and all hold. Its pool of wrong candidates is the fairest of the four: 60 stories by one author about one detective, all older than every adaptation.\n\nThe pair count shrinks under discount. Of the 33 adaptations, 13 are tier C (\"inspired by\", \"uses minor plot elements\", \"the title is inspired by\") and should not count as documented descent. That leaves 20 (7 straight, 12 credited or loosely based, 1 pastiche) resting on 13 distinct sources. Six of the 20 are The Hound of the Baskervilles, and three of the credited films take a single device from the story. The effective sample is about 13 to 17, against Batman's 9 adaptations on 7 sources. By my approximation the smallest shift the rank test can detect falls from about 0.24 to about 0.18 of the candidates beating the source, so the test of neurons against words stays underpowered.\n\nConfounds: 13 adaptations are consecutive episodes of one television series with the same three writers and running story arcs; the Universal films share cast, director and the years 1942 to 1946. Words rank the source first for all 7 straight adaptations and for half overall, and the pairs words miss are the weakly documented ones, where there may be no trail for anything to find. Names are shared, so the placeholder codes return. Recognition will be at least as high as for Batman.\n\nWhat it does buy is the two experiments no other proposal supports. Identity gets rule-chosen negatives (I reproduced the rule and got 156, not 162). But 91 of them are from the 1930s and 1940s, only 16 from the 2010s, and none is television, so the 13 Sherlock episodes have almost no negatives matched for period or medium. Selection gets 60 early works; I confirm about 75% power against a correlation of 0.3, where Batman had 27%."
+    },
+    {
+     "proposal": "power",
+     "power": 5,
+     "words_cannot_carry_the_trail": 2,
+     "low_memorisation": 3,
+     "feasibility": 4,
+     "fit_to_the_project": 3,
+     "comment": "Cross-language remakes, 105 pairs on 92 sources. \"Remake of\" in the remake's own lead is the strongest documentation of descent in any proposal. It rested on memory, so I tested it: I drew 40 pairs at random from this list and the memorisation list together and read the remakes' leads on live Wikipedia. 39 of 40 state the claimed source (34 of 34 from this list). 82 of the 92 sources have a single remake, so the pairs are close to independent, and the smallest detectable shift is about 0.07 to 0.08, a third of Batman's. Names differ without any editing. Every plot is in the local table, and the decoys' unit presence is already stored for all four models (I checked the files exist).\n\nIts weakness is that words solve the heredity test outright. My own check on the 105: the median TF-IDF cosine to the true source is 0.20 against 0.05 to the other sources; the source is ranked first for 84% of remakes (91% within its own industry); 0.9% of other sources beat it; and only 0.04% of wrong-candidate cells reach the median similarity of a true pair. The paper's residual regression would therefore be extrapolating: there are almost no wrong candidates as word-similar as the right one. The test has to be recast against hard negatives from the large pool, where words leave 27 to 44 pairs unsolved.\n\nOther points against: the primary set mixes 19 famous East Asian and Hollywood pairs with the Indian ones; 20 of the 105 have a plot of only 10 to 14 sentences; at least 12 pairs are the director's own remake and actors recur; the pool across nine film industries is only fair if it is stratified by industry and period, as the proposal plans. There is no identity or selection test, and it is not a franchise."
+    },
+    {
+     "proposal": "divergence",
+     "power": 3,
+     "words_cannot_carry_the_trail": 3,
+     "low_memorisation": 1,
+     "feasibility": 3,
+     "fit_to_the_project": 3,
+     "comment": "Transposed retellings, 80 pairs on 48 sources. The proposal is honest about its own pilot: words do as well here as on Batman (11.7% of wrong sources beat the true one, against 11%), and the source is first for 28 of 59. It is still the best of the four on this criterion, with a Shakespeare block where words are weaker (17%). But the pilot stood in a faithful film for each play or novel, so the real source texts were never measured.\n\nUnder discount I count about 36 to 39 flat credits or stated adaptations. The other half are \"loosely based on\", \"inspired by\" or critics' readings, and several carry little plot (Frozen, The Princess and the Frog, The Lion King, Easy A). The live leads I read confirm the softness: Jubal \"has been described as an Othello on the Range\", Forbidden Planet is one that \"many consider\" a loose adaptation, and the leads of Ball of Fire and Warm Bodies name no source at all.\n\nThe pool is the least fair. It mixes plays, novels, fairy tales, epics and films, whose Wikipedia synopses differ in register and length, and the 24 decoy sources were picked by hand. A film-to-film pair has only about a dozen same-medium candidates.\n\nThe worst confound runs in the direction that produces a false pass. These are famous films with their names left in, and the link itself is common knowledge (Clueless is Emma). A unit could fire for the source because the model recalls the fact. The proposal's link probe is the right guard, but nobody knows how many pairs would survive it. Feasibility is moderate: about 100 articles still have to be fetched, three sources may have no usable plot text, and sentences that name the source have to be cut by hand."
+    },
+    {
+     "proposal": "memorisation",
+     "power": 4,
+     "words_cannot_carry_the_trail": 2,
+     "low_memorisation": 4,
+     "feasibility": 4,
+     "fit_to_the_project": 3,
+     "comment": "Indian cross-industry remakes, 78 pairs on 70 sources. This is the same corpus as the power proposal with a tighter design: 59 of its 78 pairs are in both lists. Under equal rules (both plots of 15 sentences or more, Indian films only) it actually holds more pairs than the power list, 78 against about 62.\n\nIt has the better statistical discipline. The primary set is homogeneous. The wrong candidates are near neighbours chosen by rule (same industry, within five years, a median of 288 per remake). The pair list is to be rebuilt mechanically from the articles' leads, which removes the bias of a list recalled from memory. Each table row is to be checked against its article, because the table links some rows to the wrong film. The famous East Asian pairs are kept apart as a block the models should recognise. Recognition is asked first, including which film a plot remakes.\n\nIn my random sample 21 of its 22 pairs were confirmed by the live lead, and the three it marked \"fairly sure\" (Samrat, Bharathan, Khuddar) are all confirmed. One pair breaks its own rule (Kushi, see below).\n\nThe word problem is the same as for power, and the proposal says so: words find these sources more easily than Batman's (62 of 78 first among the 70 sources). The claim of low memorisation is plausible but unmeasured. Names stay in the text, many titles are the hero's name, and 90 of the 147 films are in the project's own reference corpus. Scoring the hard-negative pool needs one extra GPU pass on about 3,600 plots, which is cheap. There is no identity or selection test, and it is not a franchise."
+    }
+   ],
+   "recommendation": "Choose the cross-language remake corpus: the power proposal's list and extra blocks, built by the memorisation proposal's rules. They are one corpus, and I name power as the winner only because it is the superset.\n\nThis departs from the first author's own word, which was \"franchise\". The reason is the pair count. No franchise delivers it: Holmes, checked live, gives about 20 firmly documented adaptations on 13 sources, roughly twice Batman, and the test of neurons against words would again end as an absence of evidence. If a franchise is a requirement and not a preference, take Holmes and accept that limit.\n\nWhy the remakes win on the points I was asked to weigh:\n\n1. **Documented pairs.** About 100 pairs on about 90 sources, each stated as a remake in the remake's own lead. My random live check confirmed 39 of 40. That is a five-fold gain in independent pairs, and it is the only proposal in which a null on the residual test would be a bounded negative.\n2. **Names.** They differ by the nature of the adaptation, so the original texts can be tested and the placeholder codes are no longer the only condition.\n3. **Recognition.** Most of the films are regional releases, with a famous block alongside, so the result can be split by whether the model names the films. With 9 pairs that split was impossible.\n4. **Cost.** Every plot is in the local table and the decoys' unit presence is already stored.\n\nWhat it cannot show: identity and selection, in the paper's sense. And the heredity test itself will be trivially passed by words and units alike; all the information is in whether units add to words.\n\nThree conditions I would attach before any model reads a text:\n\n- **Recast the decision test.** True pairs sit far outside the wrong pairs in word similarity (0.20 against 0.05), so a regression fitted on wrong pairs extrapolates. Test the units against each remake's nearest candidates by words, drawn from several thousand films of the same industry and period, for example with a conditional logit that has the word measures as covariates. Then put word-only measures and a sentence embedding through the same test in the units' place, as the paper did, to show it cannot be passed without units.\n- **Make the primary set homogeneous.** Indian cross-industry pairs with both plots at 15 sentences or more, the list rebuilt from the leads and not from memory, relabelling within industry and period, and families of one source kept together.\n- **Verify the documentation live.** Live Wikipedia does answer from this machine, though it is rate-limited (two of my five requests were refused). Twenty leads come back per request, so the whole list can be checked and quoted in about seven requests, with no need for the 20 GB dump.",
+   "runner_up": "Replication (Sherlock Holmes).\n\nBy score the memorisation proposal ties with the winner, but it is the same corpus and should be merged into it, not run as an alternative. The real alternative is Holmes. It is the only proposal that keeps all three experiments, it is a franchise as the first author asked, and its work list is already verified against the live articles.\n\nIt also complements the remakes exactly. It supplies the identity test (about 156 rule-chosen negatives against 8) and the selection test (60 early works, about 75% power against 27%), which the remakes cannot. Running the models is cheap and its list is built, so it could follow as a second arm. If it does, its primary set should be the 20 adaptations of tiers A and B, with the six Hound works averaged, and its negatives matched by decade.",
+   "what_to_take_from_the_others": "**From memorisation (into the winner)**\n- Rebuild the pair list mechanically from the remakes' leads; treat the recalled lists as a check on recall.\n- Primary set: Indian cross-industry pairs, both plots at 15 sentences or more.\n- Wrong candidates: films of the same industry within five years, outside the remake's family.\n- Compare each table row's plot with its article, because some rows hold another film's plot. Remove verbatim duplicates (57 Indian plots appear under two titles).\n- Ask recognition first, including \"which film does this remake?\".\n- Leave the study films out of the unit scales and base rates: 90 of the 147 are in the reference corpus.\n- Keep the East Asian pairs as a separate block the models should recognise.\n\n**From replication (Holmes)**\n- The finding that live Wikipedia is reachable, and its method: quote and store the documenting sentence for every pair, and reject any title that resolves to its source's article.\n- Tiers by the wording of the documentation, with the primary tier fixed in advance.\n- A title-only control. The remake table has natural ones: unrelated films that share a title.\n- Averaging within a source that has several adaptations.\n- Holmes itself as the later franchise arm for identity and selection.\n\n**From divergence**\n- The link probe, and reporting every result separately for pairs where the model does and does not name the link.\n- A sensitivity version with the names swapped for other ordinary names, not codes.\n- Cutting sentences that name the source (\"This movie is a remake of ...\"), and adding the count of shared names to the measures regressed out.\n- The rule never to choose or drop pairs by their word-overlap rank, which would manufacture a win for units.\n- Faithful and partly renamed versions as positive controls.\n- Its nine film-to-film genre-shift pairs, which are complete in the local table, and a small pre-registered loose block as the place where words are weak.\n\n**From power's own secondary sets**\n- The copied pairs as a positive control.\n- The 24 loose pairs as a registered secondary stratum. Two of them (Samrat from Baazigar, Bharathan from Ghayal) are stated as remakes in the live leads and can move to the firm set.",
+   "doubts_about_the_winner": "1. **Words nearly separate true pairs from wrong ones, so the planned residual test is not identified.** On the 105 pairs the source is ranked first by TF-IDF for 84%, and almost no wrong candidate is as word-similar as the right one. A linear regression on word measures would be extrapolating, and a measure that is merely a curved function of word overlap could pass in the units' place. The test must be recast against hard negatives and calibrated with word-only measures. Even then the information comes from the 27 to 44 pairs that words leave unsolved, and some of those will be table errors, not hard cases.\n2. **Edited copying.** The screen removes verbatim copies (10% of 5-word sequences). A summary pasted from the source's article and then reworded keeps its sentence order, which units could detect and word counts would not. A pass would then show text reuse, not story inheritance. Report the result against the degree of copying, and on the pairs with none.\n3. **Hidden relatives in the wrong-candidate pool.** Other remakes of the same source, and the source's own source, sit among the \"wrong\" films. The memorisation scout found about 96 close pairs nobody had listed. Unless they are removed they count against both words and units.\n4. **Simultaneous productions.** One of my 40 sampled pairs, Kushi (2001), is described in its lead as planned as a bilingual with the Tamil film, by the same director, and is not called a remake. Kuselan and Kathanayakudu are one production in two languages, both listed as remakes of one source. Same-year pairs (Gemini, Naa Autograph, Minnale and its Hindi version, Veede) need the same reading.\n5. **Shared makers.** At least 12 pairs are the director's own remake, and actors recur. Cast names in brackets must be stripped.\n6. **Recognition is unmeasured.** Names stay in the text and many titles are the hero's name, so naming a film is easier than on Batman's name-free texts. The lead states the remake link, so a model may know it. If the 70B model names most of these films, the main reason for the Indian set goes.\n7. **A list recalled from memory leans towards better-known films.** Rebuilding it from the leads fixes this, but the size of the final set is then unknown.\n8. **It is a new statistic.** Batman's inheritance rate is scored against the lineage's own non-adapting works. Remake families have no such baseline, so the numbers will not be comparable with the paper's 15% against 46%, and the new design needs its own frozen plan.\n9. **A pass would still be modest.** Two editors describing one plot use different words for the same events, so any measure of meaning should beat word counts. Without an embedding comparator, \"units add to words\" could be over-read.\n10. **It is not what the first author named.** Identity and selection are left untested, and the paper would still rest on one franchise for both.\n\n**What I did and did not check.** I read the paper sections, the local table and the scouts' scratch files. I made five small requests to the Wikipedia API (two were refused for rate), covering the leads of 60 articles. I ran no model and opened no dump. Nothing in the repository was written and git was not run. My scratch files are in /tmp/claude-0/-home-user-phylomemetics/a789a30b-498f-5fe1-bc57-f1de263eb0f6/scratchpad/corpus/judge-statistician/. The power figures are my own normal approximations, treating each adaptation's rank as uniform under the null.",
+   "pairs_you_believe_are_wrong": "**Power and memorisation (remakes)**\n\nChecked: 40 pairs drawn at random from the two lists together, plus 10 I doubted, read in the remakes' live leads.\n- Wrong under the proposals' own rule: **Kushi (2001, Telugu) from Kushi (2000, Tamil)**, in the memorisation list. The lead says it was planned as a bilingual with the Tamil film, by the same director, and does not call it a remake.\n- Dependent, not wrong: Kuselan and Kathanayakudu (one production in two languages, both from Katha Parayumbol); The Ring and Ring (both adapt one novel); Wanted (its lead says remake of the Telugu Pokiri, but its director had made the Tamil version).\n- Table error: Okkadu is labelled Malayalam with the wrong year in the power list's file.\n- Confirmed against my doubt: Samrat, Bharathan, Khuddar, 20 Once Again, Jeena Sirf Merre Liye, Aegan, Tubelight (\"an adaptation of\").\n- From memory I believe the remaining pairs are right. I found none I think is wrong.\n\n**Replication (Holmes)**\n\nThe quotations are real. The discount is for looseness.\n- Do not count tier C (13 adaptations). The weakest: The Sign of Three (title only); The Final Problem (Sherlock) to The Musgrave Ritual (a reference); Terror by Night (\"minor plot elements\" of four stories); The Blind Banker (the idea of coded messages); The Great Game (one of several cases); The Abominable Bride; The Spider Woman, where the first-named source is ranked 31st by words and another named source is ranked first, so the choice of source decides the result.\n- Tier B in name only: Sherlock Holmes and the Secret Weapon (its article says the code is the only element taken); Sherlock Holmes and the Voice of Terror; The House of Fear.\n- Out of the pool: The Reichenbach Fall to The Woman in Green (film to film); The Empty Hearse to The Lost Special.\n- My count of firm pairs: 20 adaptations on 13 sources, of which about 17 carry real plot. Four tier C pairs do carry plot and could be a registered secondary set: The Reichenbach Fall, The Empty Hearse, A Game of Shadows, Dressed to Kill.\n\n**Divergence (retellings)**\n\n- Critics' readings, not documentation: Jubal, Forbidden Planet, Warm Bodies (film), Ball of Fire (nothing in the lead). The Bad Sleep Well is better than feared: its lead says it \"draws upon\" Hamlet.\n- Little or no plot carried: Frozen, The Princess and the Frog, The Lion King, The Lion King II, Easy A, Strange Brew, O Brother Where Art Thou?, Bridget Jones's Diary.\n- More than one source: Assault on Precinct 13 (its lead names two inspirations), Phantom of the Paradise, Ran.\n- Wrong direct parent: Hard Target (its lead says the 1932 film); Man Pasand (its lead says My Fair Lady and a Marathi play).\n- No single source text: the two Faust films, The Warriors (Anabasis), and the fairy tales, whose articles summarise several variants.\n- My count of flat credits or stated adaptations: about 36 to 39 of the 80."
+  }
+ }
+}

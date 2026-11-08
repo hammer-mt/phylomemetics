@@ -1,0 +1,1265 @@
+[
+ {
+  "group": "canon",
+  "asked": "A Study in Scarlet",
+  "exists": true,
+  "resolved": "A Study in Scarlet",
+  "section": "Plot",
+  "n_sent": 57,
+  "n_words": 1067,
+  "article_words": 3437,
+  "heads": [
+   "Plot",
+   "Publication",
+   "Depiction of Mormonism",
+   "Adaptations",
+   "Allusions in other works",
+   "References",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Sign of the Four",
+  "exists": true,
+  "resolved": "The Sign of the Four",
+  "section": "Plot",
+  "n_sent": 43,
+  "n_words": 1026,
+  "article_words": 1895,
+  "heads": [
+   "Plot",
+   "Publication history",
+   "Adaptations",
+   "References",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Hound of the Baskervilles",
+  "exists": true,
+  "resolved": "The Hound of the Baskervilles",
+  "section": "Plot",
+  "n_sent": 35,
+  "n_words": 920,
+  "article_words": 3276,
+  "heads": [
+   "Plot",
+   "Origins and background",
+   "Inspiration",
+   "Technique",
+   "Publication",
+   "Adaptations",
+   "See also",
+   "Notes",
+   "References",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Valley of Fear",
+  "exists": true,
+  "resolved": "The Valley of Fear",
+  "section": "Plot",
+  "n_sent": 29,
+  "n_words": 516,
+  "article_words": 1387,
+  "heads": [
+   "Plot",
+   "Publication history",
+   "Structure and themes",
+   "Adaptations",
+   "References",
+   "Further reading",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "A Scandal in Bohemia",
+  "exists": true,
+  "resolved": "A Scandal in Bohemia",
+  "section": "Plot",
+  "n_sent": 19,
+  "n_words": 462,
+  "article_words": 2624,
+  "heads": [
+   "Plot",
+   "Holmes' relationship to Adler",
+   "Publication history",
+   "Adaptations",
+   "References",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Red-Headed League",
+  "exists": true,
+  "resolved": "The Red-Headed League",
+  "section": "Plot",
+  "n_sent": 17,
+  "n_words": 406,
+  "article_words": 1807,
+  "heads": [
+   "Plot",
+   "Analysis",
+   "Publication history",
+   "Baker Street robbery",
+   "Adaptations",
+   "See also",
+   "References",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "A Case of Identity",
+  "exists": true,
+  "resolved": "A Case of Identity",
+  "section": "Plot",
+  "n_sent": 13,
+  "n_words": 265,
+  "article_words": 993,
+  "heads": [
+   "Plot",
+   "Publication history",
+   "Adaptations",
+   "References",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Boscombe Valley Mystery",
+  "exists": true,
+  "resolved": "The Boscombe Valley Mystery",
+  "section": "Plot",
+  "n_sent": 50,
+  "n_words": 1017,
+  "article_words": 1836,
+  "heads": [
+   "Plot",
+   "Possible basis for Boscombe Valley",
+   "Publication history",
+   "Adaptations",
+   "References",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Five Orange Pips",
+  "exists": true,
+  "resolved": "The Five Orange Pips",
+  "section": "Plot",
+  "n_sent": 29,
+  "n_words": 733,
+  "article_words": 1500,
+  "heads": [
+   "Plot",
+   "Note",
+   "Publication history",
+   "Adaptations",
+   "References",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Man with the Twisted Lip",
+  "exists": true,
+  "resolved": "The Man with the Twisted Lip",
+  "section": "Plot",
+  "n_sent": 28,
+  "n_words": 705,
+  "article_words": 1689,
+  "heads": [
+   "Plot",
+   "Points of interest",
+   "Publication history",
+   "Adaptations",
+   "See also",
+   "References",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Adventure of the Blue Carbuncle",
+  "exists": true,
+  "resolved": "The Adventure of the Blue Carbuncle",
+  "section": "Plot",
+  "n_sent": 17,
+  "n_words": 475,
+  "article_words": 1503,
+  "heads": [
+   "Plot",
+   "Publication history",
+   "Adaptations",
+   "See also",
+   "References",
+   "Bibliography",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Adventure of the Speckled Band",
+  "exists": true,
+  "resolved": "The Adventure of the Speckled Band",
+  "section": "Plot",
+  "n_sent": 32,
+  "n_words": 664,
+  "article_words": 2616,
+  "heads": [
+   "Plot",
+   "Inspirations",
+   "Identity of 'the speckled band'",
+   "Publication history",
+   "Adaptations",
+   "References",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Adventure of the Engineer's Thumb",
+  "exists": true,
+  "resolved": "The Adventure of the Engineer's Thumb",
+  "section": "Plot",
+  "n_sent": 21,
+  "n_words": 514,
+  "article_words": 1370,
+  "heads": [
+   "Plot",
+   "Publication information",
+   "Adaptations",
+   "References",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Adventure of the Noble Bachelor",
+  "exists": true,
+  "resolved": "The Adventure of the Noble Bachelor",
+  "section": "Plot",
+  "n_sent": 16,
+  "n_words": 300,
+  "article_words": 934,
+  "heads": [
+   "Plot",
+   "Publication history",
+   "Adaptations",
+   "References",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Adventure of the Beryl Coronet",
+  "exists": true,
+  "resolved": "The Adventure of the Beryl Coronet",
+  "section": "Plot",
+  "n_sent": 11,
+  "n_words": 309,
+  "article_words": 1064,
+  "heads": [
+   "Plot",
+   "Publication history",
+   "Adaptations",
+   "Notes",
+   "References",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Adventure of the Copper Beeches",
+  "exists": true,
+  "resolved": "The Adventure of the Copper Beeches",
+  "section": "Plot",
+  "n_sent": 25,
+  "n_words": 574,
+  "article_words": 1464,
+  "heads": [
+   "Plot",
+   "Publication history",
+   "Adaptations",
+   "References",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Adventure of Silver Blaze",
+  "exists": true,
+  "resolved": "The Adventure of Silver Blaze",
+  "section": "Plot",
+  "n_sent": 42,
+  "n_words": 907,
+  "article_words": 1977,
+  "heads": [
+   "Plot",
+   "Publication history",
+   "Adaptations",
+   "Cultural impact",
+   "References",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Adventure of the Cardboard Box",
+  "exists": true,
+  "resolved": "The Adventure of the Cardboard Box",
+  "section": "Plot",
+  "n_sent": 20,
+  "n_words": 480,
+  "article_words": 1302,
+  "heads": [
+   "Plot",
+   "Publication history",
+   "Adaptations",
+   "References",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Adventure of the Yellow Face",
+  "exists": true,
+  "resolved": "The Adventure of the Yellow Face",
+  "section": "Plot",
+  "n_sent": 25,
+  "n_words": 671,
+  "article_words": 1286,
+  "heads": [
+   "Plot",
+   "Treatment of race",
+   "Publication history",
+   "Adaptations",
+   "References",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Adventure of the Stockbroker's Clerk",
+  "exists": true,
+  "resolved": "The Adventure of the Stockbroker's Clerk",
+  "section": "Plot",
+  "n_sent": 19,
+  "n_words": 499,
+  "article_words": 1261,
+  "heads": [
+   "Plot",
+   "Commentary",
+   "Publication history",
+   "Adaptations",
+   "References",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Adventure of the Gloria Scott",
+  "exists": true,
+  "resolved": "The Adventure of the Gloria Scott",
+  "section": "Plot",
+  "n_sent": 42,
+  "n_words": 896,
+  "article_words": 1992,
+  "heads": [
+   "Plot",
+   "Discrepancy",
+   "Publication history",
+   "Adaptations",
+   "References",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Adventure of the Musgrave Ritual",
+  "exists": true,
+  "resolved": "The Adventure of the Musgrave Ritual",
+  "section": "Plot",
+  "n_sent": 27,
+  "n_words": 560,
+  "article_words": 1856,
+  "heads": [
+   "Plot",
+   "Publication history",
+   "Adaptations",
+   "References",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Adventure of the Reigate Squire",
+  "exists": true,
+  "resolved": "The Adventure of the Reigate Squire",
+  "section": "Plot",
+  "n_sent": 37,
+  "n_words": 863,
+  "article_words": 1897,
+  "heads": [
+   "Plot",
+   "Holmes and Watson",
+   "Publication history",
+   "Adaptations",
+   "References",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Adventure of the Crooked Man",
+  "exists": true,
+  "resolved": "The Adventure of the Crooked Man",
+  "section": "Plot",
+  "n_sent": 35,
+  "n_words": 774,
+  "article_words": 1819,
+  "heads": [
+   "Plot",
+   "Commentary",
+   "Publication history",
+   "Adaptations",
+   "References",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Adventure of the Resident Patient",
+  "exists": true,
+  "resolved": "The Adventure of the Resident Patient",
+  "section": "Plot",
+  "n_sent": 35,
+  "n_words": 830,
+  "article_words": 1486,
+  "heads": [
+   "Plot",
+   "Publication history",
+   "Adaptations",
+   "References",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Adventure of the Greek Interpreter",
+  "exists": true,
+  "resolved": "The Adventure of the Greek Interpreter",
+  "section": "Plot",
+  "n_sent": 48,
+  "n_words": 1011,
+  "article_words": 2246,
+  "heads": [
+   "Plot",
+   "Publication history",
+   "Adaptations",
+   "References",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Adventure of the Naval Treaty",
+  "exists": true,
+  "resolved": "The Adventure of the Naval Treaty",
+  "section": "Plot",
+  "n_sent": 42,
+  "n_words": 771,
+  "article_words": 1894,
+  "heads": [
+   "Plot",
+   "Commentary",
+   "Publication history",
+   "Adaptations",
+   "References",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Final Problem",
+  "exists": true,
+  "resolved": "The Final Problem",
+  "section": "Plot",
+  "n_sent": 20,
+  "n_words": 527,
+  "article_words": 3257,
+  "heads": [
+   "Plot",
+   "Background",
+   "Publication history",
+   "Reaction",
+   "Influence and legacy",
+   "Adaptations",
+   "References",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Adventure of the Empty House",
+  "exists": true,
+  "resolved": "The Adventure of the Empty House",
+  "section": "Plot",
+  "n_sent": 12,
+  "n_words": 215,
+  "article_words": 2057,
+  "heads": [
+   "Plot",
+   "Publication history",
+   "Inspirations",
+   "Adaptations",
+   "Baritsu",
+   "References",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Adventure of the Norwood Builder",
+  "exists": true,
+  "resolved": "The Adventure of the Norwood Builder",
+  "section": "Plot",
+  "n_sent": 29,
+  "n_words": 539,
+  "article_words": 1745,
+  "heads": [
+   "Plot",
+   "Background",
+   "Publication history",
+   "Adaptations",
+   "References",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Adventure of the Dancing Men",
+  "exists": true,
+  "resolved": "The Adventure of the Dancing Men",
+  "section": "Plot",
+  "n_sent": 25,
+  "n_words": 559,
+  "article_words": 1667,
+  "heads": [
+   "Plot",
+   "Publication history",
+   "Substitution cipher",
+   "Adaptations",
+   "References",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Adventure of the Solitary Cyclist",
+  "exists": true,
+  "resolved": "The Adventure of the Solitary Cyclist",
+  "section": "Plot",
+  "n_sent": 49,
+  "n_words": 1099,
+  "article_words": 1909,
+  "heads": [
+   "Plot",
+   "Publication history",
+   "Adaptations",
+   "References",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Adventure of the Priory School",
+  "exists": true,
+  "resolved": "The Adventure of the Priory School",
+  "section": "Plot",
+  "n_sent": 38,
+  "n_words": 794,
+  "article_words": 1528,
+  "heads": [
+   "Plot",
+   "Publication history",
+   "Adaptations",
+   "References",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Adventure of Black Peter",
+  "exists": true,
+  "resolved": "The Adventure of Black Peter",
+  "section": "Plot",
+  "n_sent": 47,
+  "n_words": 894,
+  "article_words": 1873,
+  "heads": [
+   "Plot",
+   "Publication history",
+   "Adaptations",
+   "References",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Adventure of Charles Augustus Milverton",
+  "exists": true,
+  "resolved": "The Adventure of Charles Augustus Milverton",
+  "section": "Plot",
+  "n_sent": 30,
+  "n_words": 579,
+  "article_words": 2614,
+  "heads": [
+   "Timeline",
+   "Plot",
+   "Inspiration",
+   "Publication history",
+   "Adaptations",
+   "References",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Adventure of the Six Napoleons",
+  "exists": true,
+  "resolved": "The Adventure of the Six Napoleons",
+  "section": "Plot",
+  "n_sent": 43,
+  "n_words": 740,
+  "article_words": 2033,
+  "heads": [
+   "Plot",
+   "Details",
+   "Publication history",
+   "Adaptations",
+   "References",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Adventure of the Three Students",
+  "exists": true,
+  "resolved": "The Adventure of the Three Students",
+  "section": "Plot",
+  "n_sent": 28,
+  "n_words": 556,
+  "article_words": 1284,
+  "heads": [
+   "Plot",
+   "Publication history",
+   "Adaptations",
+   "References",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Adventure of the Golden Pince-Nez",
+  "exists": true,
+  "resolved": "The Adventure of the Golden Pince-Nez",
+  "section": "Plot",
+  "n_sent": 42,
+  "n_words": 813,
+  "article_words": 1611,
+  "heads": [
+   "Plot",
+   "Publication history",
+   "Adaptations",
+   "References",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Adventure of the Missing Three-Quarter",
+  "exists": true,
+  "resolved": "The Adventure of the Missing Three-Quarter",
+  "section": "Plot",
+  "n_sent": 38,
+  "n_words": 753,
+  "article_words": 1354,
+  "heads": [
+   "Plot",
+   "Publication history",
+   "Adaptations",
+   "References",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Adventure of the Abbey Grange",
+  "exists": true,
+  "resolved": "The Adventure of the Abbey Grange",
+  "section": "Plot",
+  "n_sent": 51,
+  "n_words": 987,
+  "article_words": 1567,
+  "heads": [
+   "Plot",
+   "Publication history",
+   "Adaptations",
+   "References",
+   "Bibliography",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Adventure of the Second Stain",
+  "exists": true,
+  "resolved": "The Adventure of the Second Stain",
+  "section": "Plot",
+  "n_sent": 33,
+  "n_words": 681,
+  "article_words": 1816,
+  "heads": [
+   "Plot",
+   "Background",
+   "Publication history",
+   "Adaptations",
+   "References",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Adventure of Wisteria Lodge",
+  "exists": true,
+  "resolved": "The Adventure of Wisteria Lodge",
+  "section": "Plot",
+  "n_sent": 18,
+  "n_words": 374,
+  "article_words": 1039,
+  "heads": [
+   "Plot",
+   "Publication history",
+   "Adaptations",
+   "References",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Adventure of the Red Circle",
+  "exists": true,
+  "resolved": "The Adventure of the Red Circle",
+  "section": "Plot",
+  "n_sent": 17,
+  "n_words": 394,
+  "article_words": 967,
+  "heads": [
+   "Plot",
+   "Publication history",
+   "Adaptations",
+   "References",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Adventure of the Bruce-Partington Plans",
+  "exists": true,
+  "resolved": "The Adventure of the Bruce-Partington Plans",
+  "section": "Plot",
+  "n_sent": 36,
+  "n_words": 841,
+  "article_words": 1779,
+  "heads": [
+   "Plot",
+   "Publication history",
+   "Adaptations",
+   "References",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Adventure of the Dying Detective",
+  "exists": true,
+  "resolved": "The Adventure of the Dying Detective",
+  "section": "Plot",
+  "n_sent": 28,
+  "n_words": 512,
+  "article_words": 1758,
+  "heads": [
+   "Plot",
+   "Analysis",
+   "Publication history",
+   "Adaptations",
+   "References",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Disappearance of Lady Frances Carfax",
+  "exists": true,
+  "resolved": "The Disappearance of Lady Frances Carfax",
+  "section": "Plot",
+  "n_sent": 63,
+  "n_words": 1050,
+  "article_words": 1849,
+  "heads": [
+   "Plot",
+   "Publication history",
+   "Adaptations",
+   "References",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Adventure of the Devil's Foot",
+  "exists": true,
+  "resolved": "The Adventure of the Devil's Foot",
+  "section": "Plot",
+  "n_sent": 16,
+  "n_words": 361,
+  "article_words": 1029,
+  "heads": [
+   "Plot",
+   "Publication history",
+   "Adaptations",
+   "References",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "His Last Bow (short story)",
+  "exists": true,
+  "resolved": "His Last Bow (short story)",
+  "section": "Plot",
+  "n_sent": 28,
+  "n_words": 529,
+  "article_words": 1526,
+  "heads": [
+   "Plot",
+   "Publication history",
+   "Legacy",
+   "Adaptations",
+   "References",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Adventure of the Mazarin Stone",
+  "exists": true,
+  "resolved": "The Adventure of the Mazarin Stone",
+  "section": "Plot",
+  "n_sent": 14,
+  "n_words": 284,
+  "article_words": 1308,
+  "heads": [
+   "Plot",
+   "Analysis",
+   "Publication history",
+   "Adaptations",
+   "References",
+   "Sources",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Problem of Thor Bridge",
+  "exists": true,
+  "resolved": "The Problem of Thor Bridge",
+  "section": "Plot",
+  "n_sent": 16,
+  "n_words": 412,
+  "article_words": 1409,
+  "heads": [
+   "Plot",
+   "Commentary",
+   "Publication history",
+   "Adaptations",
+   "References",
+   "Bibliography",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Adventure of the Creeping Man",
+  "exists": true,
+  "resolved": "The Adventure of the Creeping Man",
+  "section": "Plot",
+  "n_sent": 29,
+  "n_words": 612,
+  "article_words": 1451,
+  "heads": [
+   "Plot",
+   "Commentaries",
+   "Publication history",
+   "Adaptations",
+   "Sources",
+   "References",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Adventure of the Sussex Vampire",
+  "exists": true,
+  "resolved": "The Adventure of the Sussex Vampire",
+  "section": "Plot",
+  "n_sent": 22,
+  "n_words": 432,
+  "article_words": 1371,
+  "heads": [
+   "Plot",
+   "Publication history",
+   "Adaptations",
+   "References",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Adventure of the Three Garridebs",
+  "exists": true,
+  "resolved": "The Adventure of the Three Garridebs",
+  "section": "Plot",
+  "n_sent": 30,
+  "n_words": 602,
+  "article_words": 1308,
+  "heads": [
+   "Plot",
+   "Publication history",
+   "Adaptations",
+   "References",
+   "Sources",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Adventure of the Illustrious Client",
+  "exists": true,
+  "resolved": "The Adventure of the Illustrious Client",
+  "section": "Plot",
+  "n_sent": 37,
+  "n_words": 758,
+  "article_words": 1676,
+  "heads": [
+   "Plot",
+   "Publication history",
+   "Adaptations",
+   "References",
+   "Sources",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Adventure of the Three Gables",
+  "exists": true,
+  "resolved": "The Adventure of the Three Gables",
+  "section": "Plot",
+  "n_sent": 38,
+  "n_words": 717,
+  "article_words": 1628,
+  "heads": [
+   "Plot",
+   "Commentaries",
+   "Publication history",
+   "Adaptations",
+   "References",
+   "Sources",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Adventure of the Blanched Soldier",
+  "exists": true,
+  "resolved": "The Adventure of the Blanched Soldier",
+  "section": "Plot",
+  "n_sent": 32,
+  "n_words": 698,
+  "article_words": 1351,
+  "heads": [
+   "Plot",
+   "Related stories",
+   "Publication history",
+   "Adaptations",
+   "References",
+   "Sources",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Adventure of the Lion's Mane",
+  "exists": true,
+  "resolved": "The Adventure of the Lion's Mane",
+  "section": "Plot",
+  "n_sent": 35,
+  "n_words": 708,
+  "article_words": 1521,
+  "heads": [
+   "Plot",
+   "Commentary",
+   "Publication history",
+   "Adaptations",
+   "References",
+   "Sources",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Adventure of the Retired Colourman",
+  "exists": true,
+  "resolved": "The Adventure of the Retired Colourman",
+  "section": "Plot",
+  "n_sent": 31,
+  "n_words": 542,
+  "article_words": 1078,
+  "heads": [
+   "Plot",
+   "Publication history",
+   "Adaptations",
+   "References",
+   "Bibliography",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Adventure of the Veiled Lodger",
+  "exists": true,
+  "resolved": "The Adventure of the Veiled Lodger",
+  "section": "Plot",
+  "n_sent": 37,
+  "n_words": 727,
+  "article_words": 1234,
+  "heads": [
+   "Plot",
+   "Publication history",
+   "Adaptations",
+   "References",
+   "External links"
+  ]
+ },
+ {
+  "group": "canon",
+  "asked": "The Adventure of Shoscombe Old Place",
+  "exists": true,
+  "resolved": "The Adventure of Shoscombe Old Place",
+  "section": "Plot",
+  "n_sent": 28,
+  "n_words": 539,
+  "article_words": 1166,
+  "heads": [
+   "Plot",
+   "Publication history",
+   "Adaptations",
+   "References",
+   "External links"
+  ]
+ },
+ {
+  "group": "other_sources",
+  "asked": "Sherlock Holmes (play)",
+  "exists": true,
+  "resolved": "Sherlock Holmes (play)",
+  "section": null,
+  "n_sent": 0,
+  "n_words": 0,
+  "article_words": 1521,
+  "heads": [
+   "Background",
+   "Creation",
+   "Production",
+   "Revivals",
+   "Adaptations",
+   "Cultural impact",
+   "References",
+   "External links"
+  ]
+ },
+ {
+  "group": "other_sources",
+  "asked": "The Seven-Per-Cent Solution",
+  "exists": true,
+  "resolved": "The Seven-Per-Cent Solution",
+  "section": "Plot",
+  "n_sent": 21,
+  "n_words": 472,
+  "article_words": 1416,
+  "heads": [
+   "Plot",
+   "Publication history",
+   "References to other works",
+   "Adaptations",
+   "References"
+  ]
+ },
+ {
+  "group": "other_sources",
+  "asked": "A Slight Trick of the Mind",
+  "exists": true,
+  "resolved": "A Slight Trick of the Mind",
+  "section": "Plot",
+  "n_sent": 6,
+  "n_words": 157,
+  "article_words": 381,
+  "heads": [
+   "Plot",
+   "Releases",
+   "Awards",
+   "Film adaptation",
+   "References"
+  ]
+ },
+ {
+  "group": "other_sources",
+  "asked": "The Case of the Missing Marquess",
+  "exists": true,
+  "resolved": "The Enola Holmes Mysteries",
+  "section": null,
+  "n_sent": 0,
+  "n_words": 0,
+  "article_words": 3007,
+  "heads": [
+   "Development",
+   "Series overview",
+   "Analysis",
+   "Reception",
+   "Adaptations",
+   "Lawsuit",
+   "See also",
+   "References",
+   "External links"
+  ]
+ },
+ {
+  "group": "other_sources",
+  "asked": "Basil of Baker Street",
+  "exists": true,
+  "resolved": "Basil of Baker Street",
+  "section": null,
+  "n_sent": 0,
+  "n_words": 0,
+  "article_words": 787,
+  "heads": [
+   "Characters",
+   "Series",
+   "References",
+   "External links"
+  ]
+ },
+ {
+  "group": "other_sources",
+  "asked": "The Enola Holmes Mysteries",
+  "exists": true,
+  "resolved": "The Enola Holmes Mysteries",
+  "section": null,
+  "n_sent": 0,
+  "n_words": 0,
+  "article_words": 3007,
+  "heads": [
+   "Development",
+   "Series overview",
+   "Analysis",
+   "Reception",
+   "Adaptations",
+   "Lawsuit",
+   "See also",
+   "References",
+   "External links"
+  ]
+ },
+ {
+  "group": "other_sources",
+  "asked": "The Speckled Band (play)",
+  "exists": true,
+  "resolved": "The Speckled Band (play)",
+  "section": null,
+  "n_sent": 0,
+  "n_words": 0,
+  "article_words": 937,
+  "heads": [
+   "Background",
+   "Casting",
+   "Production",
+   "Revivals",
+   "Film adaptation",
+   "References",
+   "External links",
+   "Sources"
+  ]
+ },
+ {
+  "group": "other_sources",
+  "asked": "The Crown Diamond",
+  "exists": false
+ },
+ {
+  "group": "other_sources",
+  "asked": "The House of Silk",
+  "exists": true,
+  "resolved": "The House of Silk",
+  "section": "Plot summary",
+  "n_sent": 14,
+  "n_words": 407,
+  "article_words": 556,
+  "heads": [
+   "Plot summary",
+   "Critical reception",
+   "Sequel",
+   "References"
+  ]
+ },
+ {
+  "group": "other_sources",
+  "asked": "The West End Horror",
+  "exists": true,
+  "resolved": "The West End Horror",
+  "section": "Plot",
+  "n_sent": 9,
+  "n_words": 234,
+  "article_words": 372,
+  "heads": [
+   "Plot",
+   "References"
+  ]
+ },
+ {
+  "group": "other_sources",
+  "asked": "The Crucifer of Blood",
+  "exists": true,
+  "resolved": "The Crucifer of Blood",
+  "section": null,
+  "n_sent": 0,
+  "n_words": 0,
+  "article_words": 635,
+  "heads": [
+   "Broadway production",
+   "London production",
+   "Los Angeles production",
+   "Film",
+   "References",
+   "External links"
+  ]
+ }
+]

@@ -1,0 +1,583 @@
+[
+ {
+  "a": "A Study in Pink",
+  "year": 2010,
+  "sources": [
+   "A Study in Scarlet"
+  ],
+  "tier": "B-credited-loose",
+  "exists": true,
+  "resolved": "A Study in Pink",
+  "n_sent": 27,
+  "named": true,
+  "evidence": "It is loosely based upon the first Sherlock Holmes novel, A Study in Scarlet.",
+  "ranks": {
+   "A Study in Scarlet": 1
+  },
+  "top": "A Study in Scarlet"
+ },
+ {
+  "a": "The Blind Banker",
+  "year": 2010,
+  "sources": [
+   "The Adventure of the Dancing Men"
+  ],
+  "tier": "C-elements",
+  "exists": true,
+  "resolved": "The Blind Banker",
+  "n_sent": 30,
+  "named": true,
+  "evidence": "== Allusions == According to Moffat, the episode takes the concept of coded messages from \"The Adventure of the Dancing Men\" (using pictorial messages), a story feature directly referenced later, in the series 4 episode The Final ",
+  "ranks": {
+   "The Adventure of the Dancing Men": 2
+  },
+  "top": "The Sign of the Four"
+ },
+ {
+  "a": "The Great Game (Sherlock)",
+  "year": 2010,
+  "sources": [
+   "The Adventure of the Bruce-Partington Plans"
+  ],
+  "tier": "C-elements",
+  "exists": true,
+  "resolved": "The Great Game (Sherlock)",
+  "n_sent": 32,
+  "named": true,
+  "evidence": "Andrew West, the name of the MI6 clerk, comes from \"The Adventure of the Bruce-Partington Plans\".",
+  "ranks": {
+   "The Adventure of the Bruce-Partington Plans": 1
+  },
+  "top": "The Adventure of the Bruce-Partington Plans"
+ },
+ {
+  "a": "A Scandal in Belgravia",
+  "year": 2012,
+  "sources": [
+   "A Scandal in Bohemia"
+  ],
+  "tier": "B-credited-loose",
+  "exists": true,
+  "resolved": "A Scandal in Belgravia",
+  "n_sent": 33,
+  "named": true,
+  "evidence": "The episode was based on \"A Scandal in Bohemia\", a short story by Sir Arthur Conan Doyle.",
+  "ranks": {
+   "A Scandal in Bohemia": 19
+  },
+  "top": "The Adventure of the Illustrious Client"
+ },
+ {
+  "a": "The Hounds of Baskerville",
+  "year": 2012,
+  "sources": [
+   "The Hound of the Baskervilles"
+  ],
+  "tier": "B-credited-loose",
+  "exists": true,
+  "resolved": "The Hounds of Baskerville",
+  "n_sent": 40,
+  "named": true,
+  "evidence": "The episode is a contemporary adaptation of The Hound of the Baskervilles, one of Sir Arthur Conan Doyle's most famous works.",
+  "ranks": {
+   "The Hound of the Baskervilles": 1
+  },
+  "top": "The Hound of the Baskervilles"
+ },
+ {
+  "a": "The Reichenbach Fall",
+  "year": 2012,
+  "sources": [
+   "The Final Problem"
+  ],
+  "tier": "C-elements",
+  "exists": true,
+  "resolved": "The Reichenbach Fall",
+  "n_sent": 39,
+  "named": true,
+  "evidence": "Inspired by \"The Final Problem\" by Sir Arthur Conan Doyle, the episode follows Moriarty's plot to discredit and kill Sherlock Holmes, also heavily using elements from the film The Woman in Green, from the British WWII-era Sherlock",
+  "ranks": {
+   "The Final Problem": 12
+  },
+  "top": "The Adventure of the Priory School"
+ },
+ {
+  "a": "The Empty Hearse",
+  "year": 2014,
+  "sources": [
+   "The Adventure of the Empty House"
+  ],
+  "tier": "C-elements",
+  "exists": true,
+  "resolved": "The Empty Hearse",
+  "n_sent": 26,
+  "named": true,
+  "evidence": "Inspired by \"The Adventure of the Empty House\" and \"The Lost Special\" by Sir Arthur Conan Doyle, the episode follows Sherlock Holmes' return to London and reunion with John Watson, along with an underground terrorist network.",
+  "ranks": {
+   "The Adventure of the Empty House": 45
+  },
+  "top": "The Adventure of the Bruce-Partington Plans"
+ },
+ {
+  "a": "The Sign of Three",
+  "year": 2014,
+  "sources": [
+   "The Sign of the Four"
+  ],
+  "tier": "C-elements",
+  "exists": true,
+  "resolved": "The Sign of Three",
+  "n_sent": 35,
+  "named": true,
+  "evidence": "The episode's title is inspired by The Sign of the Four by Sir Arthur Conan Doyle.",
+  "ranks": {
+   "The Sign of the Four": 3
+  },
+  "top": "The Final Problem"
+ },
+ {
+  "a": "His Last Vow",
+  "year": 2014,
+  "sources": [
+   "The Adventure of Charles Augustus Milverton"
+  ],
+  "tier": "B-credited-loose",
+  "exists": true,
+  "resolved": "His Last Vow",
+  "n_sent": 40,
+  "named": true,
+  "evidence": "The episode is a contemporary adaptation of Sir Arthur Conan Doyle's short story \"The Adventure of Charles Augustus Milverton\".",
+  "ranks": {
+   "The Adventure of Charles Augustus Milverton": 1
+  },
+  "top": "The Adventure of Charles Augustus Milverton"
+ },
+ {
+  "a": "The Abominable Bride",
+  "year": 2016,
+  "sources": [
+   "The Five Orange Pips",
+   "The Final Problem"
+  ],
+  "tier": "C-elements",
+  "exists": true,
+  "resolved": "The Abominable Bride",
+  "n_sent": 40,
+  "named": true,
+  "evidence": "The story also draws on elements of original Conan Doyle stories of Holmes such as \"The Five Orange Pips\" (1891) and \"The Final Problem\" (1893).",
+  "ranks": {
+   "The Five Orange Pips": 4,
+   "The Final Problem": 32
+  },
+  "top": "The Boscombe Valley Mystery"
+ },
+ {
+  "a": "The Six Thatchers",
+  "year": 2017,
+  "sources": [
+   "The Adventure of the Six Napoleons"
+  ],
+  "tier": "B-credited-loose",
+  "exists": true,
+  "resolved": "The Six Thatchers",
+  "n_sent": 40,
+  "named": true,
+  "evidence": "\" \"The Six Thatchers\" is based loosely on \"The Adventure of the Six Napoleons\".",
+  "ranks": {
+   "The Adventure of the Six Napoleons": 1
+  },
+  "top": "The Adventure of the Six Napoleons"
+ },
+ {
+  "a": "The Lying Detective",
+  "year": 2017,
+  "sources": [
+   "The Adventure of the Dying Detective"
+  ],
+  "tier": "B-credited-loose",
+  "exists": true,
+  "resolved": "The Lying Detective",
+  "n_sent": 40,
+  "named": true,
+  "evidence": "== Production == The episode was based loosely on the Doyle short story \"The Adventure of the Dying Detective\".",
+  "ranks": {
+   "The Adventure of the Dying Detective": 11
+  },
+  "top": "The Final Problem"
+ },
+ {
+  "a": "The Final Problem (Sherlock)",
+  "year": 2017,
+  "sources": [
+   "The Adventure of the Musgrave Ritual"
+  ],
+  "tier": "C-elements",
+  "exists": true,
+  "resolved": "The Final Problem (Sherlock)",
+  "n_sent": 34,
+  "named": true,
+  "evidence": "The riddle presented by Eurus in the form of a song is a reference to \"The Adventure of the Musgrave Ritual\" (1893), which it directly references.",
+  "ranks": {
+   "The Adventure of the Musgrave Ritual": 51
+  },
+  "top": "The Adventure of the Dancing Men"
+ },
+ {
+  "a": "The Hound of the Baskervilles (1939 film)",
+  "year": 1939,
+  "sources": [
+   "The Hound of the Baskervilles"
+  ],
+  "tier": "A-faithful",
+  "exists": true,
+  "resolved": "The Hound of the Baskervilles (1939 film)",
+  "n_sent": 26,
+  "named": true,
+  "evidence": "The Hound of the Baskervilles is a 1939 American gothic mystery film based on the 1902 Sherlock Holmes novel of the same name by Sir Arthur Conan Doyle.",
+  "ranks": {
+   "The Hound of the Baskervilles": 1
+  },
+  "top": "The Hound of the Baskervilles"
+ },
+ {
+  "a": "Sherlock Holmes and the Voice of Terror",
+  "year": 1942,
+  "sources": [
+   "His Last Bow (short story)"
+  ],
+  "tier": "B-credited-loose",
+  "exists": true,
+  "resolved": "Sherlock Holmes and the Voice of Terror",
+  "n_sent": 19,
+  "named": true,
+  "evidence": "The film combines elements of Doyle's short story \"His Last Bow\", to which it is credited as an adaptation, and the real-life activities of Lord Haw-Haw.",
+  "ranks": {
+   "His Last Bow (short story)": 4
+  },
+  "top": "The Adventure of the Crooked Man"
+ },
+ {
+  "a": "Sherlock Holmes and the Secret Weapon",
+  "year": 1942,
+  "sources": [
+   "The Adventure of the Dancing Men"
+  ],
+  "tier": "B-credited-loose",
+  "exists": true,
+  "resolved": "Sherlock Holmes and the Secret Weapon",
+  "n_sent": 29,
+  "named": true,
+  "evidence": "The film is credited as an adaptation of Conan Doyle's 1903 short story \"The Adventure of the Dancing Men\", though the only element from the source material is the dancing men code.",
+  "ranks": {
+   "The Adventure of the Dancing Men": 2
+  },
+  "top": "The Adventure of the Bruce-Partington Plans"
+ },
+ {
+  "a": "Sherlock Holmes Faces Death",
+  "year": 1943,
+  "sources": [
+   "The Adventure of the Musgrave Ritual"
+  ],
+  "tier": "B-credited-loose",
+  "exists": true,
+  "resolved": "Sherlock Holmes Faces Death",
+  "n_sent": 30,
+  "named": true,
+  "evidence": "Made in 1943, it is a loose adaptation of Sir Arthur Conan Doyle's 1893 Holmes short story \"The Adventure of the Musgrave Ritual\".",
+  "ranks": {
+   "The Adventure of the Musgrave Ritual": 27
+  },
+  "top": "The Adventure of the Second Stain"
+ },
+ {
+  "a": "The Spider Woman",
+  "year": 1943,
+  "sources": [
+   "The Sign of the Four",
+   "The Adventure of the Speckled Band",
+   "The Final Problem",
+   "The Adventure of the Empty House"
+  ],
+  "tier": "C-elements",
+  "exists": true,
+  "resolved": "The Spider Woman",
+  "n_sent": 16,
+  "named": true,
+  "evidence": "This film incorporates elements from the 1890 novel The Sign of the Four, as well as the short stories \"The Final Problem\", \"The Adventure of the Empty House\", \"The Adventure of the Speckled Band\" and makes explicit reference to \"",
+  "ranks": {
+   "The Sign of the Four": 31,
+   "The Adventure of the Speckled Band": 50,
+   "The Final Problem": 1,
+   "The Adventure of the Empty House": 60
+  },
+  "top": "The Final Problem"
+ },
+ {
+  "a": "The Pearl of Death",
+  "year": 1944,
+  "sources": [
+   "The Adventure of the Six Napoleons"
+  ],
+  "tier": "B-credited-loose",
+  "exists": true,
+  "resolved": "The Pearl of Death",
+  "n_sent": 13,
+  "named": true,
+  "evidence": "The story is loosely based on Conan Doyle's short story \"The Adventure of the Six Napoleons\" but features some additions, such as Evelyn Ankers as an accomplice of the villain played by Miles Mander, and Rondo Hatton as a brutal k",
+  "ranks": {
+   "The Adventure of the Six Napoleons": 1
+  },
+  "top": "The Adventure of the Six Napoleons"
+ },
+ {
+  "a": "The House of Fear (1945 film)",
+  "year": 1945,
+  "sources": [
+   "The Five Orange Pips"
+  ],
+  "tier": "B-credited-loose",
+  "exists": true,
+  "resolved": "The House of Fear (1945 film)",
+  "n_sent": 15,
+  "named": true,
+  "evidence": "Directed by Roy William Neill, it is loosely based on the 1891 short story \"The Five Orange Pips\" by Arthur Conan Doyle.",
+  "ranks": {
+   "The Five Orange Pips": 1
+  },
+  "top": "The Five Orange Pips"
+ },
+ {
+  "a": "The Woman in Green",
+  "year": 1945,
+  "sources": [
+   "The Final Problem",
+   "The Adventure of the Empty House"
+  ],
+  "tier": "C-elements",
+  "exists": true,
+  "resolved": "The Woman in Green",
+  "n_sent": 27,
+  "named": true,
+  "evidence": "Produced and directed by Roy William Neill from an original screenplay by Bertram Millhauser, the film follows a Conan Doyle premise with material taken from \"The Final Problem\" and \"The Adventure of the Empty House\".",
+  "ranks": {
+   "The Final Problem": 26,
+   "The Adventure of the Empty House": 24
+  },
+  "top": "The Adventure of the Six Napoleons"
+ },
+ {
+  "a": "Terror by Night",
+  "year": 1946,
+  "sources": [
+   "The Disappearance of Lady Frances Carfax",
+   "The Adventure of the Empty House",
+   "The Adventure of the Blue Carbuncle"
+  ],
+  "tier": "C-elements",
+  "exists": true,
+  "resolved": "Terror by Night",
+  "n_sent": 20,
+  "named": true,
+  "evidence": "The film's plot is a mostly original story not directly based on any of Arthur Conan Doyle's Holmes tales, but it uses minor plot elements of \"The Adventure of the Blue Carbuncle,\" \"The Adventure of the Empty House,\" \"The Disappea",
+  "ranks": {
+   "The Disappearance of Lady Frances Carfax": 23,
+   "The Adventure of the Empty House": 56,
+   "The Adventure of the Blue Carbuncle": 35
+  },
+  "top": "The Final Problem"
+ },
+ {
+  "a": "Dressed to Kill (1946 film)",
+  "year": 1946,
+  "sources": [
+   "The Adventure of the Six Napoleons",
+   "A Scandal in Bohemia"
+  ],
+  "tier": "C-elements",
+  "exists": true,
+  "resolved": "Dressed to Kill (1946 film)",
+  "n_sent": 21,
+  "named": true,
+  "evidence": "The film has an original story, but combines elements of the short stories \"The Adventure of the Six Napoleons\" and \"A Scandal in Bohemia.",
+  "ranks": {
+   "The Adventure of the Six Napoleons": 29,
+   "A Scandal in Bohemia": 33
+  },
+  "top": "The Sign of the Four"
+ },
+ {
+  "a": "The Speckled Band (1931 film)",
+  "year": 1931,
+  "sources": [
+   "The Adventure of the Speckled Band"
+  ],
+  "tier": "A-faithful",
+  "exists": true,
+  "resolved": "The Speckled Band (1931 film)",
+  "n_sent": 38,
+  "named": true,
+  "evidence": "Lipscomb, adapted from Arthur Conan Doyle's original 1892 story \"The Adventure of the Speckled Band\" and the 1910 play he adapted from it, The Speckled Band.",
+  "ranks": {
+   "The Adventure of the Speckled Band": 1
+  },
+  "top": "The Adventure of the Speckled Band"
+ },
+ {
+  "a": "The Sign of Four (1932 film)",
+  "year": 1932,
+  "sources": [
+   "The Sign of the Four"
+  ],
+  "tier": "A-faithful",
+  "exists": true,
+  "resolved": "The Sign of Four (1932 film)",
+  "n_sent": 24,
+  "named": true,
+  "evidence": "Lipscomb based on Arthur Conan Doyle's second Sherlock Holmes novel The Sign of the Four (1890).",
+  "ranks": {
+   "The Sign of the Four": 1
+  },
+  "top": "The Sign of the Four"
+ },
+ {
+  "a": "The Hound of the Baskervilles (1929 film)",
+  "year": 1929,
+  "sources": [
+   "The Hound of the Baskervilles"
+  ],
+  "tier": "A-faithful",
+  "exists": true,
+  "resolved": "The Hound of the Baskervilles (1929 film)",
+  "n_sent": 34,
+  "named": true,
+  "evidence": "The Hound of the Baskervilles (German: Der Hund von Baskerville) is a 1929 German silent mystery film directed by Richard Oswald and is an adaptation of the 1902 Sherlock Holmes novel The Hound of the Baskervilles by Arthur Conan ",
+  "ranks": {
+   "The Hound of the Baskervilles": 1
+  },
+  "top": "The Hound of the Baskervilles"
+ },
+ {
+  "a": "The Hound of the Baskervilles (1937 film)",
+  "year": 1937,
+  "sources": [
+   "The Hound of the Baskervilles"
+  ],
+  "tier": "A-faithful",
+  "exists": true,
+  "resolved": "The Hound of the Baskervilles (1937 film)",
+  "n_sent": 21,
+  "named": true,
+  "evidence": "It is an adaptation of the 1902 Sherlock Holmes story The Hound of the Baskervilles by Arthur Conan Doyle.",
+  "ranks": {
+   "The Hound of the Baskervilles": 1
+  },
+  "top": "The Hound of the Baskervilles"
+ },
+ {
+  "a": "The Hound of the Baskervilles (1959 film)",
+  "year": 1959,
+  "sources": [
+   "The Hound of the Baskervilles"
+  ],
+  "tier": "A-faithful",
+  "exists": true,
+  "resolved": "The Hound of the Baskervilles (1959 film)",
+  "n_sent": 33,
+  "named": true,
+  "evidence": "The Hound of the Baskervilles is a 1959 British Gothic mystery film directed by Terence Fisher and produced by Hammer Film Productions, based upon Arthur Conan Doyle's 1902 novel.",
+  "ranks": {
+   "The Hound of the Baskervilles": 1
+  },
+  "top": "The Hound of the Baskervilles"
+ },
+ {
+  "a": "The Hound of the Baskervilles (1978 film)",
+  "year": 1978,
+  "sources": [
+   "The Hound of the Baskervilles"
+  ],
+  "tier": "A-faithful",
+  "exists": true,
+  "resolved": "The Hound of the Baskervilles (1978 film)",
+  "n_sent": 25,
+  "named": true,
+  "evidence": "The Hound of the Baskervilles is a 1978 British comedy film spoofing the 1902 novel The Hound of the Baskervilles by Sir Arthur Conan Doyle.",
+  "ranks": {
+   "The Hound of the Baskervilles": 1
+  },
+  "top": "The Hound of the Baskervilles"
+ },
+ {
+  "a": "Sherlock Holmes: A Game of Shadows",
+  "year": 2011,
+  "sources": [
+   "The Final Problem",
+   "The Adventure of the Empty House"
+  ],
+  "tier": "C-elements",
+  "exists": true,
+  "resolved": "Sherlock Holmes: A Game of Shadows",
+  "n_sent": 31,
+  "named": true,
+  "evidence": "Although the film follows an original premise, it incorporates more closely elements of Conan Doyle's short stories, including \"The Final Problem\" and \"The Adventure of the Empty House\".",
+  "ranks": {
+   "The Final Problem": 1,
+   "The Adventure of the Empty House": 60
+  },
+  "top": "The Final Problem"
+ },
+ {
+  "a": "Sherlock Holmes: Crimes & Punishments",
+  "year": 2014,
+  "sources": [
+   "The Adventure of Black Peter",
+   "The Adventure of the Abbey Grange"
+  ],
+  "tier": "C-elements",
+  "exists": true,
+  "resolved": "Sherlock Holmes: Crimes & Punishments",
+  "n_sent": 25,
+  "named": true,
+  "evidence": "The cases are as follows: The Fate of Black Peter: Holmes is engaged by Inspector Lestrade to investigate the murder of Peter Carey, known as Black Peter, an ill-tempered whaling captain who was found impaled on the wall of his ga",
+  "ranks": {
+   "The Adventure of Black Peter": 1,
+   "The Adventure of the Abbey Grange": 2
+  },
+  "top": "The Adventure of Black Peter"
+ },
+ {
+  "a": "Zero Effect",
+  "year": 1998,
+  "sources": [
+   "A Scandal in Bohemia"
+  ],
+  "tier": "B-credited-loose",
+  "exists": true,
+  "resolved": "Zero Effect",
+  "n_sent": 15,
+  "named": true,
+  "evidence": "Starring Bill Pullman as \"the world's most private detective\", Daryl Zero, and Ben Stiller as his assistant Steve Arlo, the film's plot is loosely based on the Arthur Conan Doyle short story \"A Scandal in Bohemia\".",
+  "ranks": {
+   "A Scandal in Bohemia": 39
+  },
+  "top": "The Adventure of Charles Augustus Milverton"
+ },
+ {
+  "a": "A Study in Scarlet (1933 film)",
+  "year": 1933,
+  "sources": [
+   "A Study in Scarlet"
+  ],
+  "tier": "Z-titleonly",
+  "exists": true,
+  "resolved": "A Study in Scarlet (1933 film)",
+  "n_sent": 37,
+  "named": true,
+  "evidence": "The title is taken from Arthur Conan Doyle's 1887 novel of the same name, the first in the Holmes series, but the screenplay by Robert Florey was original.",
+  "ranks": {
+   "A Study in Scarlet": 5
+  },
+  "top": "The Adventure of the Dancing Men"
+ }
+]
