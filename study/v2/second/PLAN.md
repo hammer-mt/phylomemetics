@@ -377,3 +377,5 @@ Everything else is secondary or descriptive and is labelled so: the replication 
 ## 16. Changes after the freeze
 
 Every change below was made before the result it bears on existed, unless it says otherwise.
+
+1. **The freeze** (8 November 2026). The plan above was committed and pushed at 22:09 UTC as commit `9b0099d8649bb2049c292f3fc708d6aa2719a024`. The first reading of a new text by a study model began after that; this entry is the only change in the commit that records it.
