@@ -32,7 +32,7 @@ P1. Also bears on how E2 is read. A ratio above 2 answers Sperber for these tell
 
 ## Biology analogue
 
-Parallel evolution in replicate lines; homoplasy against shared descent
+Parallel evolution in replicate lines, against inherited mutations
 
 ## Cost
 

@@ -4,7 +4,7 @@
 
 ## Question
 
-Does a story element survive a chain of retellings more often when its usual partner element is in the story than when an unrelated element takes the partner's place?
+Does a story element survive a chain of retellings more often when its usual partner element (say, a vow of revenge beside an orphaned hero) is in the story than when an unrelated element takes the partner's place?
 
 ## Prediction
 
@@ -16,7 +16,7 @@ A gap under 3 points, or a 95% interval (resampled by bundle) that includes zero
 
 ## Data
 
-Built for the test. 24 two-element bundles fixed in advance (such as orphan plus revenge vow), from the trope pairs that co-occur most in the TV Tropes tables of Gala et al. 2020 (pair list only; the site's licence is non-commercial). Each gets 10 outlines, written whole and broken: 480 name-free 300-word stories, 3 chains of 4 retellings, 5,760 texts.
+Built for the test. 24 two-element bundles fixed in advance, from the trope pairs that co-occur most in the TV Tropes tables of Gala et al. 2020 (pair list only; the site's licence is non-commercial). Each gets 10 outlines, written whole and broken: 480 name-free 300-word stories, 3 chains of 4 retellings, 5,760 texts. Released with its lineage.
 
 ## Method
 

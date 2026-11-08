@@ -24,7 +24,7 @@ Unit: a feed-forward neuron (Llama 3.1 8B, Qwen3 8B), present when it fires stro
 
 ## Cheap rival it must beat
 
-TF-IDF and BM25 (near 50% by design), Kuhn's n-gram score, a general sentence embedding, a citation-trained embedding (SPECTER2) as ceiling, an LLM reading both abstracts on 2,000 pairs, length, random units, the model's averaged internal state. The general embedding is most dangerous: popular ones were themselves trained on citation pairs. If it wins, units are not needed for descent.
+TF-IDF and BM25 (near 50% by design), Kuhn's n-gram score, a general sentence embedding, a citation-trained embedding (SPECTER2) as ceiling, an LLM reading 2,000 pairs, length, random units, the model's averaged internal state, open sparse-autoencoder features if available. The general embedding is most dangerous: popular ones were trained on citation pairs. If it wins, heredity past words stands, without units.
 
 ## Premise it tests
 

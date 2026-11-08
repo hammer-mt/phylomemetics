@@ -12,7 +12,7 @@ Among reposts sharing no content word with earlier titles of the image, similari
 
 ## What would refute it
 
-An earlier-minus-later gap under 0.5 points, or of the wrong sign, on at least 20,000 reposts that have both earlier and later titles (standard error about 0.5 points, resampled by image). Units also fail if the gap disappears once sentence-embedding similarity is added to the model.
+An earlier-minus-later gap under 0.5 points, or of the wrong sign, on at least 20,000 reposts that have both earlier and later titles (standard error about 0.6 points, resampled by image). Units also fail if the gap disappears once sentence-embedding similarity is added to the model.
 
 ## Data
 
