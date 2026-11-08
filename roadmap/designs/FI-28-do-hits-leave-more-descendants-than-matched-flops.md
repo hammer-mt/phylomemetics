@@ -12,11 +12,11 @@ Among matched pairs (same broad genre, released within two years, budgets within
 
 ## What would refute it
 
-A share of 52% or less, which with the 387 pairs countable today puts the 95% upper bound below 57%; or an advantage that vanishes once the same before-and-after gain in rarity-weighted word overlap is regressed out. 387 pairs give about 80% power for a true share of 57%.
+A share of 52% or less, which with the roughly 390 pairs countable today puts the 95% upper bound below 57%; or an advantage that vanishes once the same before-and-after gain in rarity-weighted word overlap is regressed out. 390 pairs give about 80% power for a true share of 57%.
 
 ## Data
 
-CMU Movie Summary Corpus (CC BY-SA, version not stated): 42,306 Wikipedia plots; 5,665 have box office, a date and ten or more sentences. Wikidata budgets (CC0) cover 2,133. Target films from 1960 to 2002 yield 387 budget-matched pairs, 1,387 if budget is ignored (counted 8 November 2026). Names masked with the corpus's entity tags; plots cut to 10 sentences.
+CMU Movie Summary Corpus (CC BY-SA, version not stated): 42,306 plots; 5,665 have box office and ten or more sentences. Wikidata budgets (CC0) cover 2,133. Target films from 1960 to 2002 yield about 390 budget-matched pairs, about 1,390 if budget is ignored (rough count, 8 November 2026). Names masked with the corpus's entity tags; plots cut to 10 sentences.
 
 ## Method
 
@@ -44,11 +44,11 @@ A culture-wide answer to whether a popular work gains offspring, from hundreds o
 
 ## Main risk
 
-Budget matching leaves only 387 pairs unless more budgets are parsed from infoboxes. Imitators of a hit may be summarised in the hit's own terms, which favours words. Ten sentences may be too little plot. Word overlap may tie again.
+Budget matching leaves only about 390 pairs unless more budgets are parsed from infoboxes. Imitators of a hit may be summarised in the hit's own terms, which favours words. Ten sentences may be too little plot. Word overlap may tie again.
 
 ## Reviewer note
 
-Added by the reviewer: a culture-wide successor to E3. Comparing before with after cancels 'hits were more mainstream anyway' and any difference in how easily units detect a hit. Remaining weakness: only 387 budget-matched pairs today, and imitators may be described in the hit's own words.
+Added by the reviewer: a culture-wide successor to E3. Comparing before with after cancels 'hits were more mainstream anyway' and any difference in how easily units detect a hit. Remaining weakness: only about 390 budget-matched pairs today, and imitators may be described in the hit's own words.
 
 ## Sources
 
