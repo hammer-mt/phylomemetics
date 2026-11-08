@@ -324,7 +324,10 @@ def main():
             off, h, ag = a["replies_with_the_canon_off"], a["specificity"]["hero_films_described"], a["agreement_with_the_registered_run"]
             sub = ag["works_whose_registered_untouched_reply_began_with_a_name"]
             split = a.get("works_whose_untouched_reply_begins_with_a_name")
-            begun_rows.append([NAMES[m], c["reply_prefix"], f"{off['do_not_begin_with_a_name']} of {a['n_batman_works']} ({off['of_which_the_untouched_reply_did']} of them began with a name untouched)",
+            lp, lpg = a["registered_form_drop_in_log_probability"]["matched_random_sets"], a["registered_form_drop_in_log_probability"]["magnitude_matched_random_sets"]
+            begun_rows.append([NAMES[m], c["reply_prefix"],
+                               f"{f(lp['mean_drop_canon'])} against {f(lp['mean_drop_random_sets_mean'], 3)} (largest set {f(lp['mean_drop_random_sets_max'], 3)}); p {pv(lp['p'])} and {pv(lpg['p'])}",
+                               f"{f(a['mean_drop_where_the_untouched_model_names_batman'])}, {f(a['mean_drop_where_it_does_not'])}", f"{off['do_not_begin_with_a_name']} of {a['n_batman_works']} ({off['of_which_the_untouched_reply_did']} of them began with a name untouched)",
                                f(off["mean_drop_canon_with_those_works_left_out"]),
                                f"{split['n_works']}: {f(split['matched_random_sets']['mean_drop_canon'])} against {f(split['matched_random_sets']['mean_drop_random_sets_mean'], 3)}"
                                if split else "every reply begins with a name" if c["untouched_replies_that_do_not_start_with_a_name"] == 0 else "none begins with a name",
@@ -344,7 +347,9 @@ def main():
 
     if begun_rows:
         parts.append("## The follow-up ablation described (PLAN.md Section 18, change 33)\n\nDescriptions fixed with the follow-up test. They change no outcome.\n\n" +
-                     table(["Model", "Reply begun with", "Replies with the canon off that do not begin with a name", "Canon's fall with those works left out",
+                     table(["Model", "Reply begun with", "The same test in log-probability, the form registered before change 16: canon against sets; p against the two controls",
+                            "Canon's fall in log-odds where the untouched reply says Batman, and where it does not",
+                            "Replies with the canon off that do not begin with a name", "Canon's fall with those works left out",
                             "Works whose untouched reply begins with a name: canon against sets", "Hero films: untouched replies that begin with a name", "that name the film's own hero",
                             "Fall over the films whose hero the model names", "Fall over all seven", "Rank correlation with the registered run: untouched log-odds, canon's fall",
                             "The same over works whose registered reply began with a name"], begun_rows))

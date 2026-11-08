@@ -1,0 +1,3688 @@
+{
+ "model": "qwen3-32b",
+ "what": "question 1 put to the untouched model with its reply begun; descriptive, and changes no outcome",
+ "reply_prefix": "Answer:",
+ "n": {
+  "batman_works": 32,
+  "hero_films": 8,
+  "ordinary_films": 69
+ },
+ "replies_that_say_batman": {
+  "batman_works": 24,
+  "hero_films": 3,
+  "ordinary_films": 0
+ },
+ "replies_that_begin_with_a_name": {
+  "batman_works": 31,
+  "hero_films": 8,
+  "ordinary_films": 65
+ },
+ "hero_films_naming_their_own_hero": 4,
+ "hero_films_with_a_hero_to_name": 7,
+ "logp_batman_median": {
+  "batman_works": -0.1654604946037898,
+  "hero_films": -4.955039872117225,
+  "ordinary_films": -13.002951127134013
+ },
+ "auc_logp_batman_batman_vs_hero_films": 0.8125,
+ "registered_probe_without_the_prefix": {
+  "replies_that_say_batman": {
+   "batman_works": 21,
+   "hero_films": 4,
+   "ordinary_films": 0
+  },
+  "hero_films_naming_their_own_hero": 4,
+  "hero_films_with_a_hero_to_name": 7,
+  "auc_logp_batman_batman_vs_hero_films": 0.78125
+ },
+ "works": [
+  {
+   "work": "1943 serial",
+   "group": "batman",
+   "reply_as_written": " The Shadow",
+   "begins_with_a_name": true,
+   "logp_batman": -4.198440538368822,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " The",
+     -0.2413
+    ],
+    [
+     " Doc",
+     -2.4913
+    ],
+    [
+     " Flash",
+     -3.4288
+    ],
+    [
+     " Superman",
+     -4.0538
+    ],
+    [
+     " Batman",
+     -4.2413
+    ]
+   ]
+  },
+  {
+   "work": "Batman '66",
+   "group": "batman",
+   "reply_as_written": " Superman",
+   "begins_with_a_name": true,
+   "logp_batman": -2.8816668012685627,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Superman",
+     -1.0111
+    ],
+    [
+     " **",
+     -1.5111
+    ],
+    [
+     " The",
+     -2.1361
+    ],
+    [
+     " X",
+     -2.5111
+    ],
+    [
+     " Batman",
+     -2.8861
+    ]
+   ]
+  },
+  {
+   "work": "Dark Knight Returns",
+   "group": "batman",
+   "reply_as_written": " Batman",
+   "begins_with_a_name": true,
+   "logp_batman": -0.027062417324455544,
+   "logp_own_hero": null,
+   "says_batman": true,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Batman",
+     -0.0279
+    ],
+    [
+     " **",
+     -4.0279
+    ],
+    [
+     " Dare",
+     -6.0279
+    ],
+    [
+     " The",
+     -6.0279
+    ],
+    [
+     " Green",
+     -7.0279
+    ]
+   ]
+  },
+  {
+   "work": "Year One",
+   "group": "batman",
+   "reply_as_written": " Batman",
+   "begins_with_a_name": true,
+   "logp_batman": -0.00856956852233737,
+   "logp_own_hero": null,
+   "says_batman": true,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Batman",
+     -0.01
+    ],
+    [
+     " **",
+     -4.885
+    ],
+    [
+     " The",
+     -6.385
+    ],
+    [
+     " Bruce",
+     -7.76
+    ],
+    [
+     "  \n",
+     -9.76
+    ]
+   ]
+  },
+  {
+   "work": "The Killing Joke",
+   "group": "batman",
+   "reply_as_written": " The Joker",
+   "begins_with_a_name": true,
+   "logp_batman": -1.291590216712497,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " The",
+     -0.4221
+    ],
+    [
+     " Batman",
+     -1.2971
+    ],
+    [
+     " **",
+     -3.6721
+    ],
+    [
+     " R",
+     -3.9221
+    ],
+    [
+     " Two",
+     -4.6721
+    ]
+   ]
+  },
+  {
+   "work": "A Death in the Family",
+   "group": "batman",
+   "reply_as_written": " Batman",
+   "begins_with_a_name": true,
+   "logp_batman": -0.14100715172148187,
+   "logp_own_hero": null,
+   "says_batman": true,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Batman",
+     -0.1477
+    ],
+    [
+     " Superman",
+     -2.8977
+    ],
+    [
+     " Wolverine",
+     -3.7727
+    ],
+    [
+     " **",
+     -4.0227
+    ],
+    [
+     " Spider",
+     -4.8977
+    ]
+   ]
+  },
+  {
+   "work": "Gotham by Gaslight",
+   "group": "batman",
+   "reply_as_written": " Batman",
+   "begins_with_a_name": true,
+   "logp_batman": -0.6321628515755232,
+   "logp_own_hero": null,
+   "says_batman": true,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Batman",
+     -0.6329
+    ],
+    [
+     " Sherlock",
+     -0.8829
+    ],
+    [
+     " Jack",
+     -3.3829
+    ],
+    [
+     " Dr",
+     -5.6329
+    ],
+    [
+     " The",
+     -5.7579
+    ]
+   ]
+  },
+  {
+   "work": "Arkham Asylum (comic)",
+   "group": "batman",
+   "reply_as_written": " Jack Sparrow",
+   "begins_with_a_name": true,
+   "logp_batman": -1.896746895837359,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Jack",
+     -1.8188
+    ],
+    [
+     " Batman",
+     -1.9438
+    ],
+    [
+     " Max",
+     -2.5688
+    ],
+    [
+     " John",
+     -2.7563
+    ],
+    [
+     " Indiana",
+     -3.0063
+    ]
+   ]
+  },
+  {
+   "work": "Batman '89",
+   "group": "batman",
+   "reply_as_written": " Batman",
+   "begins_with_a_name": true,
+   "logp_batman": -0.05687792981166174,
+   "logp_own_hero": null,
+   "says_batman": true,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Batman",
+     -0.0597
+    ],
+    [
+     " Dare",
+     -3.4347
+    ],
+    [
+     " **",
+     -4.5597
+    ],
+    [
+     " The",
+     -4.8097
+    ],
+    [
+     " BAT",
+     -6.1847
+    ]
+   ]
+  },
+  {
+   "work": "Batman Returns",
+   "group": "batman",
+   "reply_as_written": " Batman",
+   "begins_with_a_name": true,
+   "logp_batman": -0.021334567360535555,
+   "logp_own_hero": null,
+   "says_batman": true,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Batman",
+     -0.0384
+    ],
+    [
+     " The",
+     -3.5384
+    ],
+    [
+     " **",
+     -5.1634
+    ],
+    [
+     " BAT",
+     -7.7884
+    ],
+    [
+     "Batman",
+     -7.9134
+    ]
+   ]
+  },
+  {
+   "work": "Mask of the Phantasm",
+   "group": "batman",
+   "reply_as_written": " Batman",
+   "begins_with_a_name": true,
+   "logp_batman": -0.00043908929126788593,
+   "logp_own_hero": null,
+   "says_batman": true,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Batman",
+     -0.0008
+    ],
+    [
+     " **",
+     -7.8758
+    ],
+    [
+     " Bruce",
+     -8.0008
+    ],
+    [
+     " The",
+     -10.3758
+    ],
+    [
+     "  \n",
+     -10.5008
+    ]
+   ]
+  },
+  {
+   "work": "Knightfall",
+   "group": "batman",
+   "reply_as_written": " Batman",
+   "begins_with_a_name": true,
+   "logp_batman": -0.5694045980967697,
+   "logp_own_hero": null,
+   "says_batman": true,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Batman",
+     -0.5695
+    ],
+    [
+     " Wolverine",
+     -1.1945
+    ],
+    [
+     " Dare",
+     -2.5695
+    ],
+    [
+     " **",
+     -3.9445
+    ],
+    [
+     " X",
+     -4.6945
+    ]
+   ]
+  },
+  {
+   "work": "Batman Forever",
+   "group": "batman",
+   "reply_as_written": " Batman",
+   "begins_with_a_name": true,
+   "logp_batman": -0.003858851776051632,
+   "logp_own_hero": null,
+   "says_batman": true,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Batman",
+     -0.0039
+    ],
+    [
+     " **",
+     -5.6289
+    ],
+    [
+     " Superman",
+     -9.1289
+    ],
+    [
+     " The",
+     -9.6289
+    ],
+    [
+     "  \n",
+     -10.2539
+    ]
+   ]
+  },
+  {
+   "work": "The Long Halloween",
+   "group": "batman",
+   "reply_as_written": " Batman",
+   "begins_with_a_name": true,
+   "logp_batman": -0.015707016850237763,
+   "logp_own_hero": null,
+   "says_batman": true,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Batman",
+     -0.0167
+    ],
+    [
+     " **",
+     -5.3917
+    ],
+    [
+     " Dare",
+     -5.5167
+    ],
+    [
+     " The",
+     -5.5167
+    ],
+    [
+     " V",
+     -6.8917
+    ]
+   ]
+  },
+  {
+   "work": "Batman & Robin",
+   "group": "batman",
+   "reply_as_written": " **Batman**",
+   "begins_with_a_name": false,
+   "logp_batman": -3.6252282851141318,
+   "logp_own_hero": null,
+   "says_batman": true,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " **",
+     -0.3756
+    ],
+    [
+     " X",
+     -2.3756
+    ],
+    [
+     " The",
+     -3.2506
+    ],
+    [
+     " Superman",
+     -3.5006
+    ],
+    [
+     " Batman",
+     -3.6256
+    ]
+   ]
+  },
+  {
+   "work": "Return of the Joker",
+   "group": "batman",
+   "reply_as_written": " Batman",
+   "begins_with_a_name": true,
+   "logp_batman": -0.3109586649470925,
+   "logp_own_hero": null,
+   "says_batman": true,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Batman",
+     -0.315
+    ],
+    [
+     " Superman",
+     -2.19
+    ],
+    [
+     " **",
+     -2.565
+    ],
+    [
+     " Dare",
+     -3.69
+    ],
+    [
+     " Spider",
+     -4.19
+    ]
+   ]
+  },
+  {
+   "work": "Hush",
+   "group": "batman",
+   "reply_as_written": " Batman",
+   "begins_with_a_name": true,
+   "logp_batman": -0.178787002581013,
+   "logp_own_hero": null,
+   "says_batman": true,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Batman",
+     -0.1789
+    ],
+    [
+     " **",
+     -2.3039
+    ],
+    [
+     " Dare",
+     -3.8039
+    ],
+    [
+     " X",
+     -4.5539
+    ],
+    [
+     " Spider",
+     -5.0539
+    ]
+   ]
+  },
+  {
+   "work": "Batman Begins",
+   "group": "batman",
+   "reply_as_written": " Batman",
+   "begins_with_a_name": true,
+   "logp_batman": -0.003930588416997928,
+   "logp_own_hero": null,
+   "says_batman": true,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Batman",
+     -0.0054
+    ],
+    [
+     " **",
+     -5.7554
+    ],
+    [
+     " Bruce",
+     -7.1304
+    ],
+    [
+     " The",
+     -7.1304
+    ],
+    [
+     "  \n",
+     -8.5054
+    ]
+   ]
+  },
+  {
+   "work": "The Dark Knight",
+   "group": "batman",
+   "reply_as_written": " Batman",
+   "begins_with_a_name": true,
+   "logp_batman": -0.15213398662656666,
+   "logp_own_hero": null,
+   "says_batman": true,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Batman",
+     -0.1596
+    ],
+    [
+     " **",
+     -2.5346
+    ],
+    [
+     " The",
+     -3.7846
+    ],
+    [
+     " Harvey",
+     -4.5346
+    ],
+    [
+     " Two",
+     -4.7846
+    ]
+   ]
+  },
+  {
+   "work": "Batman R.I.P.",
+   "group": "batman",
+   "reply_as_written": " Batman",
+   "begins_with_a_name": true,
+   "logp_batman": -0.6718486523922595,
+   "logp_own_hero": null,
+   "says_batman": true,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Batman",
+     -0.7168
+    ],
+    [
+     " The",
+     -0.9668
+    ],
+    [
+     " Joker",
+     -2.7168
+    ],
+    [
+     " **",
+     -4.2168
+    ],
+    [
+     " Deadpool",
+     -4.3418
+    ]
+   ]
+  },
+  {
+   "work": "Arkham Asylum (game)",
+   "group": "batman",
+   "reply_as_written": " Batman",
+   "begins_with_a_name": true,
+   "logp_batman": -0.23334014758329139,
+   "logp_own_hero": null,
+   "says_batman": true,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Batman",
+     -0.2336
+    ],
+    [
+     " Superman",
+     -1.7336
+    ],
+    [
+     " **",
+     -3.8586
+    ],
+    [
+     " Spider",
+     -5.7336
+    ],
+    [
+     " X",
+     -5.9836
+    ]
+   ]
+  },
+  {
+   "work": "Under the Red Hood",
+   "group": "batman",
+   "reply_as_written": " Batman",
+   "begins_with_a_name": true,
+   "logp_batman": -0.03862550556078962,
+   "logp_own_hero": null,
+   "says_batman": true,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Batman",
+     -0.0389
+    ],
+    [
+     " **",
+     -3.7889
+    ],
+    [
+     " Dare",
+     -6.0389
+    ],
+    [
+     " Deadpool",
+     -6.4139
+    ],
+    [
+     " Wolverine",
+     -6.5389
+    ]
+   ]
+  },
+  {
+   "work": "Arkham City",
+   "group": "batman",
+   "reply_as_written": " X-Men",
+   "begins_with_a_name": true,
+   "logp_batman": -3.994999477367517,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " X",
+     -0.4953
+    ],
+    [
+     " Wolverine",
+     -1.2453
+    ],
+    [
+     " Spider",
+     -3.4953
+    ],
+    [
+     " **",
+     -3.6203
+    ],
+    [
+     " Batman",
+     -3.9953
+    ]
+   ]
+  },
+  {
+   "work": "Dark Knight Rises",
+   "group": "batman",
+   "reply_as_written": " Batman",
+   "begins_with_a_name": true,
+   "logp_batman": -0.013812037544876955,
+   "logp_own_hero": null,
+   "says_batman": true,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Batman",
+     -0.0147
+    ],
+    [
+     " **",
+     -4.5147
+    ],
+    [
+     " Dare",
+     -7.1397
+    ],
+    [
+     " Bruce",
+     -7.1397
+    ],
+    [
+     " Bat",
+     -7.5147
+    ]
+   ]
+  },
+  {
+   "work": "Earth One",
+   "group": "batman",
+   "reply_as_written": " Batman",
+   "begins_with_a_name": true,
+   "logp_batman": -0.004860637934801451,
+   "logp_own_hero": null,
+   "says_batman": true,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Batman",
+     -0.0049
+    ],
+    [
+     " **",
+     -5.3799
+    ],
+    [
+     "  \n",
+     -8.7549
+    ],
+    [
+     " Bat",
+     -9.6299
+    ],
+    [
+     " Bruce",
+     -10.2549
+    ]
+   ]
+  },
+  {
+   "work": "Arkham Knight",
+   "group": "batman",
+   "reply_as_written": " Batman",
+   "begins_with_a_name": true,
+   "logp_batman": -0.0023634668814597605,
+   "logp_own_hero": null,
+   "says_batman": true,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Batman",
+     -0.0024
+    ],
+    [
+     " **",
+     -6.5024
+    ],
+    [
+     " Spider",
+     -8.8774
+    ],
+    [
+     " Superman",
+     -9.0024
+    ],
+    [
+     "  \n",
+     -9.3774
+    ]
+   ]
+  },
+  {
+   "work": "Batman v Superman",
+   "group": "batman",
+   "reply_as_written": " Superman",
+   "begins_with_a_name": true,
+   "logp_batman": -1.2874593831066767,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Superman",
+     -0.6722
+    ],
+    [
+     " Batman",
+     -1.2972
+    ],
+    [
+     " X",
+     -2.9222
+    ],
+    [
+     " Wolverine",
+     -3.0472
+    ],
+    [
+     " **",
+     -3.0472
+    ]
+   ]
+  },
+  {
+   "work": "Lego Batman",
+   "group": "batman",
+   "reply_as_written": " Superman",
+   "begins_with_a_name": true,
+   "logp_batman": -0.8634039704745696,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Superman",
+     -0.742
+    ],
+    [
+     " Batman",
+     -0.867
+    ],
+    [
+     " Spider",
+     -2.867
+    ],
+    [
+     " **",
+     -3.617
+    ],
+    [
+     " Peter",
+     -4.742
+    ]
+   ]
+  },
+  {
+   "work": "White Knight",
+   "group": "batman",
+   "reply_as_written": " Batman",
+   "begins_with_a_name": true,
+   "logp_batman": -0.06301282770497865,
+   "logp_own_hero": null,
+   "says_batman": true,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Batman",
+     -0.0651
+    ],
+    [
+     " The",
+     -4.0651
+    ],
+    [
+     " **",
+     -4.4401
+    ],
+    [
+     " Superman",
+     -4.9401
+    ],
+    [
+     " Tony",
+     -5.6901
+    ]
+   ]
+  },
+  {
+   "work": "Batman Ninja",
+   "group": "batman",
+   "reply_as_written": " Batman",
+   "begins_with_a_name": true,
+   "logp_batman": -0.028979655310419888,
+   "logp_own_hero": null,
+   "says_batman": true,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Batman",
+     -0.029
+    ],
+    [
+     " Naruto",
+     -4.404
+    ],
+    [
+     " **",
+     -4.529
+    ],
+    [
+     " Ninja",
+     -7.029
+    ],
+    [
+     "  \n",
+     -7.029
+    ]
+   ]
+  },
+  {
+   "work": "Joker (2019)",
+   "group": "batman",
+   "reply_as_written": " Joker",
+   "begins_with_a_name": true,
+   "logp_batman": -3.2443129612828345,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Joker",
+     -0.4948
+    ],
+    [
+     " The",
+     -1.2448
+    ],
+    [
+     " Batman",
+     -3.2448
+    ],
+    [
+     " the",
+     -3.3698
+    ],
+    [
+     " Killer",
+     -4.8698
+    ]
+   ]
+  },
+  {
+   "work": "The Batman",
+   "group": "batman",
+   "reply_as_written": " Batman",
+   "begins_with_a_name": true,
+   "logp_batman": -0.3096378607083619,
+   "logp_own_hero": null,
+   "says_batman": true,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Batman",
+     -0.3101
+    ],
+    [
+     " X",
+     -2.1851
+    ],
+    [
+     " **",
+     -2.9351
+    ],
+    [
+     " Jack",
+     -3.8101
+    ],
+    [
+     " John",
+     -4.9351
+    ]
+   ]
+  },
+  {
+   "work": "Puss in Boots",
+   "group": "cousin",
+   "reply_as_written": " Puss in Boots",
+   "begins_with_a_name": true,
+   "logp_batman": -18.93378621058586,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " P",
+     -0.0006
+    ],
+    [
+     " Al",
+     -8.7506
+    ],
+    [
+     " Pell",
+     -10.0006
+    ],
+    [
+     " Perr",
+     -10.2506
+    ],
+    [
+     " Pierre",
+     -10.2506
+    ]
+   ]
+  },
+  {
+   "work": "Count of Monte Cristo",
+   "group": "cousin",
+   "reply_as_written": " Edmond Dant\u00e8s",
+   "begins_with_a_name": true,
+   "logp_batman": -13.437213615427142,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Ed",
+     -0.4416
+    ],
+    [
+     " The",
+     -1.0666
+    ],
+    [
+     " D",
+     -5.5666
+    ],
+    [
+     " Edmund",
+     -5.9416
+    ],
+    [
+     " Count",
+     -5.9416
+    ]
+   ]
+  },
+  {
+   "work": "Sherlock Holmes",
+   "group": "cousin",
+   "reply_as_written": " Sherlock Holmes",
+   "begins_with_a_name": true,
+   "logp_batman": -16.68496556849508,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Sherlock",
+     -0.0006
+    ],
+    [
+     " **",
+     -7.7506
+    ],
+    [
+     "Sher",
+     -8.8756
+    ],
+    [
+     " Holmes",
+     -10.0006
+    ],
+    [
+     "  \n",
+     -11.1256
+    ]
+   ]
+  },
+  {
+   "work": "Dracula",
+   "group": "cousin",
+   "reply_as_written": " Dracula",
+   "begins_with_a_name": true,
+   "logp_batman": -16.304517794465927,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Dr",
+     -0.1647
+    ],
+    [
+     " Van",
+     -2.5397
+    ],
+    [
+     " Jonathan",
+     -3.5397
+    ],
+    [
+     " Qu",
+     -3.7897
+    ],
+    [
+     " **",
+     -4.7897
+    ]
+   ]
+  },
+  {
+   "work": "Scarlet Pimpernel",
+   "group": "cousin",
+   "reply_as_written": " The Scarlet Pimpernel",
+   "begins_with_a_name": true,
+   "logp_batman": -7.666502793394194,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " The",
+     -0.3007
+    ],
+    [
+     " Scarlet",
+     -2.8007
+    ],
+    [
+     " Ath",
+     -3.2382
+    ],
+    [
+     " Ed",
+     -3.4882
+    ],
+    [
+     " D",
+     -4.0507
+    ]
+   ]
+  },
+  {
+   "work": "Zorro",
+   "group": "cousin",
+   "reply_as_written": " Zorro",
+   "begins_with_a_name": true,
+   "logp_batman": -9.13309380596861,
+   "logp_own_hero": -0.0141,
+   "says_batman": false,
+   "names_own_hero": true,
+   "next_tokens": [
+    [
+     " Z",
+     -0.0139
+    ],
+    [
+     " Robin",
+     -5.0139
+    ],
+    [
+     " The",
+     -5.2639
+    ],
+    [
+     "  \n",
+     -7.5139
+    ],
+    [
+     " El",
+     -7.8889
+    ]
+   ]
+  },
+  {
+   "work": "The Bat (1926)",
+   "group": "cousin",
+   "reply_as_written": " Batman",
+   "begins_with_a_name": true,
+   "logp_batman": -0.3703285377054591,
+   "logp_own_hero": null,
+   "says_batman": true,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Batman",
+     -0.3706
+    ],
+    [
+     " Sherlock",
+     -1.2456
+    ],
+    [
+     " **",
+     -4.1206
+    ],
+    [
+     " The",
+     -6.3706
+    ],
+    [
+     " Herc",
+     -6.9956
+    ]
+   ]
+  },
+  {
+   "work": "The Shadow",
+   "group": "cousin",
+   "reply_as_written": " Batman",
+   "begins_with_a_name": true,
+   "logp_batman": -0.19071348709499003,
+   "logp_own_hero": -4.330509776813315,
+   "says_batman": true,
+   "names_own_hero": false,
+   "next_tokens": [
+    [
+     " Batman",
+     -0.2173
+    ],
+    [
+     " **",
+     -2.4673
+    ],
+    [
+     " Bruce",
+     -3.8423
+    ],
+    [
+     " The",
+     -4.2173
+    ],
+    [
+     " Dr",
+     -4.4673
+    ]
+   ]
+  },
+  {
+   "work": "Superman",
+   "group": "cousin",
+   "reply_as_written": " Superman",
+   "begins_with_a_name": true,
+   "logp_batman": -10.1326422343837,
+   "logp_own_hero": -0.007995217764252065,
+   "says_batman": false,
+   "names_own_hero": true,
+   "next_tokens": [
+    [
+     " Superman",
+     -0.008
+    ],
+    [
+     " **",
+     -5.133
+    ],
+    [
+     " Super",
+     -6.258
+    ],
+    [
+     "  \n",
+     -9.883
+    ],
+    [
+     " Batman",
+     -10.133
+    ]
+   ]
+  },
+  {
+   "work": "Spider-Man",
+   "group": "cousin",
+   "reply_as_written": " Spider-Man",
+   "begins_with_a_name": true,
+   "logp_batman": -15.125904630442808,
+   "logp_own_hero": -0.0010852756410206909,
+   "says_batman": false,
+   "names_own_hero": true,
+   "next_tokens": [
+    [
+     " Spider",
+     -0.0011
+    ],
+    [
+     " **",
+     -7.0011
+    ],
+    [
+     " Superman",
+     -10.0011
+    ],
+    [
+     "Spider",
+     -10.1261
+    ],
+    [
+     "  \n",
+     -10.8761
+    ]
+   ]
+  },
+  {
+   "work": "Daredevil",
+   "group": "cousin",
+   "reply_as_written": " The Blindfold",
+   "begins_with_a_name": true,
+   "logp_batman": -0.7769859382658405,
+   "logp_own_hero": -2.317077567757038,
+   "says_batman": false,
+   "names_own_hero": false,
+   "next_tokens": [
+    [
+     " The",
+     -0.8171
+    ],
+    [
+     " Batman",
+     -0.8171
+    ],
+    [
+     " Dare",
+     -2.3171
+    ],
+    [
+     " **",
+     -4.3171
+    ],
+    [
+     " Blind",
+     -6.8171
+    ]
+   ]
+  },
+  {
+   "work": "Iron Man",
+   "group": "cousin",
+   "reply_as_written": " Iron Man",
+   "begins_with_a_name": true,
+   "logp_batman": -14.038541666293638,
+   "logp_own_hero": -0.004658628312216875,
+   "says_batman": false,
+   "names_own_hero": true,
+   "next_tokens": [
+    [
+     " Iron",
+     -0.0427
+    ],
+    [
+     " Tony",
+     -3.2927
+    ],
+    [
+     " **",
+     -5.4177
+    ],
+    [
+     "  \n",
+     -9.4177
+    ],
+    [
+     "Iron",
+     -9.6677
+    ]
+   ]
+  },
+  {
+   "work": "Green Hornet",
+   "group": "cousin",
+   "reply_as_written": " Batman",
+   "begins_with_a_name": true,
+   "logp_batman": -0.3352322173241123,
+   "logp_own_hero": -9.936903312064743,
+   "says_batman": true,
+   "names_own_hero": false,
+   "next_tokens": [
+    [
+     " Batman",
+     -0.3735
+    ],
+    [
+     " Superman",
+     -1.8735
+    ],
+    [
+     " **",
+     -3.1235
+    ],
+    [
+     " Bruce",
+     -3.6235
+    ],
+    [
+     " Tony",
+     -4.3735
+    ]
+   ]
+  },
+  {
+   "work": "Titanic",
+   "group": "baseline",
+   "reply_as_written": " Jack",
+   "begins_with_a_name": true,
+   "logp_batman": -15.556300888877942,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Jack",
+     -0.6997
+    ],
+    [
+     " Rose",
+     -0.8247
+    ],
+    [
+     " Titanic",
+     -2.8247
+    ],
+    [
+     " Leonardo",
+     -5.5747
+    ],
+    [
+     " **",
+     -7.3247
+    ]
+   ]
+  },
+  {
+   "work": "Forrest Gump",
+   "group": "baseline",
+   "reply_as_written": " Rocky Balboa",
+   "begins_with_a_name": true,
+   "logp_batman": -15.043296201221482,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Rocky",
+     -0.4264
+    ],
+    [
+     " Forrest",
+     -2.1764
+    ],
+    [
+     " Ray",
+     -2.5514
+    ],
+    [
+     " **",
+     -3.9264
+    ],
+    [
+     " Jimmy",
+     -4.0514
+    ]
+   ]
+  },
+  {
+   "work": "Toy Story",
+   "group": "baseline",
+   "reply_as_written": " Woody",
+   "begins_with_a_name": true,
+   "logp_batman": -11.022277888956046,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Woody",
+     -0.3445
+    ],
+    [
+     " Buzz",
+     -1.7195
+    ],
+    [
+     " **",
+     -2.5945
+    ],
+    [
+     " Andy",
+     -3.7195
+    ],
+    [
+     " Barbie",
+     -5.8445
+    ]
+   ]
+  },
+  {
+   "work": "Finding Nemo",
+   "group": "baseline",
+   "reply_as_written": " Nemo",
+   "begins_with_a_name": true,
+   "logp_batman": -15.228867071913943,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " N",
+     -0.0414
+    ],
+    [
+     " Mar",
+     -3.5414
+    ],
+    [
+     " D",
+     -5.0414
+    ],
+    [
+     " **",
+     -5.9164
+    ],
+    [
+     " Mo",
+     -6.6664
+    ]
+   ]
+  },
+  {
+   "work": "The Godfather",
+   "group": "baseline",
+   "reply_as_written": " Michael Corleone",
+   "begins_with_a_name": true,
+   "logp_batman": -10.017253095750084,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Michael",
+     -0.5609
+    ],
+    [
+     " Tony",
+     -1.0609
+    ],
+    [
+     " Son",
+     -3.4359
+    ],
+    [
+     " V",
+     -3.9359
+    ],
+    [
+     " The",
+     -4.4359
+    ]
+   ]
+  },
+  {
+   "work": "Jaws",
+   "group": "baseline",
+   "reply_as_written": " Brody",
+   "begins_with_a_name": true,
+   "logp_batman": -11.842634083779055,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Bro",
+     -0.3557
+    ],
+    [
+     " **",
+     -1.4807
+    ],
+    [
+     " Quint",
+     -4.2307
+    ],
+    [
+     " Steven",
+     -4.3557
+    ],
+    [
+     " Spielberg",
+     -4.6057
+    ]
+   ]
+  },
+  {
+   "work": "Casablanca",
+   "group": "baseline",
+   "reply_as_written": " Rick",
+   "begins_with_a_name": true,
+   "logp_batman": -16.43634145144035,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Rick",
+     -0.0006
+    ],
+    [
+     "Rick",
+     -8.5006
+    ],
+    [
+     " Cas",
+     -8.6256
+    ],
+    [
+     " Sam",
+     -9.6256
+    ],
+    [
+     " Captain",
+     -10.1256
+    ]
+   ]
+  },
+  {
+   "work": "Pride & Prejudice",
+   "group": "baseline",
+   "reply_as_written": " Mr. Darcy",
+   "begins_with_a_name": true,
+   "logp_batman": -18.065925233972916,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Mr",
+     -0.3176
+    ],
+    [
+     " D",
+     -1.8176
+    ],
+    [
+     " Elizabeth",
+     -2.3176
+    ],
+    [
+     " **",
+     -5.0676
+    ],
+    [
+     " Fitz",
+     -5.8176
+    ]
+   ]
+  },
+  {
+   "work": "Jurassic Park",
+   "group": "baseline",
+   "reply_as_written": " Ian Malcolm",
+   "begins_with_a_name": true,
+   "logp_batman": -15.078986867276049,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Ian",
+     -0.7749
+    ],
+    [
+     " **",
+     -1.1499
+    ],
+    [
+     " Indiana",
+     -1.5249
+    ],
+    [
+     "  \n",
+     -7.0249
+    ],
+    [
+     " Jurassic",
+     -7.1499
+    ]
+   ]
+  },
+  {
+   "work": "The Lion King",
+   "group": "baseline",
+   "reply_as_written": " Simba",
+   "begins_with_a_name": true,
+   "logp_batman": -22.668452428736455,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Sim",
+     -0.002
+    ],
+    [
+     " M",
+     -6.252
+    ],
+    [
+     "Sim",
+     -10.502
+    ],
+    [
+     " **",
+     -10.502
+    ],
+    [
+     " Simon",
+     -10.877
+    ]
+   ]
+  },
+  {
+   "work": "Back to the Future",
+   "group": "baseline",
+   "reply_as_written": " Marty",
+   "begins_with_a_name": true,
+   "logp_batman": -15.56866041052465,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Marty",
+     -0.0024
+    ],
+    [
+     " **",
+     -6.3774
+    ],
+    [
+     " Doc",
+     -8.2524
+    ],
+    [
+     " Martin",
+     -8.3774
+    ],
+    [
+     " Emm",
+     -9.1274
+    ]
+   ]
+  },
+  {
+   "work": "E.T. the Extra-Terrestrial",
+   "group": "baseline",
+   "reply_as_written": " E.T.",
+   "begins_with_a_name": true,
+   "logp_batman": -21.594909755001446,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " E",
+     -0.0049
+    ],
+    [
+     " Elliott",
+     -5.8799
+    ],
+    [
+     " **",
+     -6.3799
+    ],
+    [
+     " ET",
+     -8.6299
+    ],
+    [
+     " Elliot",
+     -9.3799
+    ]
+   ]
+  },
+  {
+   "work": "The Shawshank Redemption",
+   "group": "baseline",
+   "reply_as_written": " Andy Dufresne",
+   "begins_with_a_name": true,
+   "logp_batman": -16.498088249568088,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Andy",
+     -0.0318
+    ],
+    [
+     " Red",
+     -3.9068
+    ],
+    [
+     " **",
+     -5.2818
+    ],
+    [
+     " Ellis",
+     -6.2818
+    ],
+    [
+     "Andy",
+     -6.9068
+    ]
+   ]
+  },
+  {
+   "work": "Groundhog Day",
+   "group": "baseline",
+   "reply_as_written": " Phil Connors",
+   "begins_with_a_name": true,
+   "logp_batman": -13.228219654529696,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Phil",
+     -0.7494
+    ],
+    [
+     " Harold",
+     -1.1244
+    ],
+    [
+     " Ground",
+     -2.2494
+    ],
+    [
+     " Bill",
+     -3.1244
+    ],
+    [
+     " **",
+     -3.9994
+    ]
+   ]
+  },
+  {
+   "work": "Mean Girls",
+   "group": "baseline",
+   "reply_as_written": " Gossip Girl",
+   "begins_with_a_name": true,
+   "logp_batman": -12.33828522142743,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " G",
+     -0.5989
+    ],
+    [
+     " **",
+     -2.0989
+    ],
+    [
+     " Mean",
+     -2.7239
+    ],
+    [
+     " X",
+     -2.9739
+    ],
+    [
+     " Bella",
+     -3.8489
+    ]
+   ]
+  },
+  {
+   "work": "The Notebook",
+   "group": "baseline",
+   "reply_as_written": " Rhett Butler",
+   "begins_with_a_name": true,
+   "logp_batman": -12.927864787522882,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Rh",
+     -0.1188
+    ],
+    [
+     " Scarlett",
+     -3.8688
+    ],
+    [
+     " Ashley",
+     -4.1188
+    ],
+    [
+     " Jay",
+     -4.3688
+    ],
+    [
+     " Jack",
+     -4.4938
+    ]
+   ]
+  },
+  {
+   "work": "Up",
+   "group": "baseline",
+   "reply_as_written": " Carl Fredricksen",
+   "begins_with_a_name": true,
+   "logp_batman": -17.69843139706843,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Carl",
+     -0.054
+    ],
+    [
+     " Charles",
+     -4.429
+    ],
+    [
+     " Russell",
+     -4.554
+    ],
+    [
+     " Charlie",
+     -5.304
+    ],
+    [
+     " Jim",
+     -5.554
+    ]
+   ]
+  },
+  {
+   "work": "Frozen",
+   "group": "baseline",
+   "reply_as_written": " Elsa",
+   "begins_with_a_name": true,
+   "logp_batman": -23.242377431107485,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Elsa",
+     -0.0021
+    ],
+    [
+     " Anna",
+     -6.7521
+    ],
+    [
+     " Frozen",
+     -7.2521
+    ],
+    [
+     " **",
+     -9.2521
+    ],
+    [
+     " Snow",
+     -9.3771
+    ]
+   ]
+  },
+  {
+   "work": "Gravity",
+   "group": "baseline",
+   "reply_as_written": " Sandra Bullock",
+   "begins_with_a_name": true,
+   "logp_batman": -5.895182600938797,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Sandra",
+     -1.6594
+    ],
+    [
+     " Ryan",
+     -2.2844
+    ],
+    [
+     " K",
+     -2.6594
+    ],
+    [
+     " Ellen",
+     -2.7844
+    ],
+    [
+     " Chris",
+     -2.7844
+    ]
+   ]
+  },
+  {
+   "work": "The Martian",
+   "group": "baseline",
+   "reply_as_written": " Mark Watney",
+   "begins_with_a_name": true,
+   "logp_batman": -17.21749034222784,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Mark",
+     -0.0054
+    ],
+    [
+     " **",
+     -5.6304
+    ],
+    [
+     " MARK",
+     -7.3804
+    ],
+    [
+     " Matt",
+     -8.3804
+    ],
+    [
+     " Matthew",
+     -8.6304
+    ]
+   ]
+  },
+  {
+   "work": "Alien",
+   "group": "baseline",
+   "reply_as_written": " Ellen Ripley",
+   "begins_with_a_name": true,
+   "logp_batman": -15.843543471818284,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Ellen",
+     -0.183
+    ],
+    [
+     " Rip",
+     -1.808
+    ],
+    [
+     " Ellie",
+     -7.433
+    ],
+    [
+     " **",
+     -7.433
+    ],
+    [
+     " Sarah",
+     -7.808
+    ]
+   ]
+  },
+  {
+   "work": "Rocky",
+   "group": "baseline",
+   "reply_as_written": " Rocky Balboa",
+   "begins_with_a_name": true,
+   "logp_batman": -15.01118793645686,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Rocky",
+     -0.0078
+    ],
+    [
+     " Jake",
+     -5.3828
+    ],
+    [
+     "Rock",
+     -7.1328
+    ],
+    [
+     " Rock",
+     -7.5078
+    ],
+    [
+     " The",
+     -8.2578
+    ]
+   ]
+  },
+  {
+   "work": "Home Alone",
+   "group": "baseline",
+   "reply_as_written": " Max",
+   "begins_with_a_name": true,
+   "logp_batman": -8.398516786240357,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Max",
+     -0.8599
+    ],
+    [
+     " Kevin",
+     -2.2349
+    ],
+    [
+     " **",
+     -2.6099
+    ],
+    [
+     " Harry",
+     -2.7349
+    ],
+    [
+     " Go",
+     -2.9849
+    ]
+   ]
+  },
+  {
+   "work": "Ratatouille",
+   "group": "baseline",
+   "reply_as_written": " Remy",
+   "begins_with_a_name": true,
+   "logp_batman": -18.447629890582878,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " R",
+     -0.0107
+    ],
+    [
+     " Rat",
+     -4.8857
+    ],
+    [
+     " **",
+     -6.3857
+    ],
+    [
+     " Gust",
+     -7.3857
+    ],
+    [
+     " Lingu",
+     -8.7607
+    ]
+   ]
+  },
+  {
+   "work": "Mamma Mia!",
+   "group": "baseline",
+   "reply_as_written": " Bridget Jones",
+   "begins_with_a_name": true,
+   "logp_batman": -9.928831263780816,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Brid",
+     -0.3666
+    ],
+    [
+     " X",
+     -2.7416
+    ],
+    [
+     " D",
+     -3.2416
+    ],
+    [
+     " Indiana",
+     -4.1166
+    ],
+    [
+     " I",
+     -4.1166
+    ]
+   ]
+  },
+  {
+   "work": "La La Land",
+   "group": "baseline",
+   "reply_as_written": " Rachel McGuire",
+   "begins_with_a_name": true,
+   "logp_batman": -13.269294185851898,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Rachel",
+     -1.2303
+    ],
+    [
+     " Sam",
+     -2.1053
+    ],
+    [
+     " *",
+     -2.4803
+    ],
+    [
+     " Brid",
+     -3.1053
+    ],
+    [
+     " Ryan",
+     -3.2303
+    ]
+   ]
+  },
+  {
+   "work": "Gone Girl",
+   "group": "baseline",
+   "reply_as_written": " **Hannibal Lecter**",
+   "begins_with_a_name": false,
+   "logp_batman": -5.957150503514911,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " **",
+     -1.7248
+    ],
+    [
+     " Dexter",
+     -1.9748
+    ],
+    [
+     " Gill",
+     -2.0998
+    ],
+    [
+     " Nancy",
+     -2.2248
+    ],
+    [
+     " Amy",
+     -2.9748
+    ]
+   ]
+  },
+  {
+   "work": "The Silence of the Lambs",
+   "group": "baseline",
+   "reply_as_written": " Clarice Starling",
+   "begins_with_a_name": true,
+   "logp_batman": -6.311179173222501,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Clar",
+     -0.5614
+    ],
+    [
+     " Silence",
+     -1.9364
+    ],
+    [
+     " **",
+     -2.3114
+    ],
+    [
+     " Hann",
+     -2.8114
+    ],
+    [
+     " Lis",
+     -3.8114
+    ]
+   ]
+  },
+  {
+   "work": "Fargo",
+   "group": "baseline",
+   "reply_as_written": " Paul Kersey",
+   "begins_with_a_name": true,
+   "logp_batman": -6.9839729767330665,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Paul",
+     -1.6755
+    ],
+    [
+     " Michael",
+     -2.1755
+    ],
+    [
+     " Mike",
+     -2.8005
+    ],
+    [
+     " Pope",
+     -3.1755
+    ],
+    [
+     " Martin",
+     -3.3005
+    ]
+   ]
+  },
+  {
+   "work": "Chinatown",
+   "group": "baseline",
+   "reply_as_written": " Sam Spade",
+   "begins_with_a_name": true,
+   "logp_batman": -7.255860492893557,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Sam",
+     -0.5064
+    ],
+    [
+     " Philip",
+     -1.1314
+    ],
+    [
+     " Sp",
+     -3.8814
+    ],
+    [
+     " Sherlock",
+     -4.2564
+    ],
+    [
+     "Philip",
+     -4.5064
+    ]
+   ]
+  },
+  {
+   "work": "Heat",
+   "group": "baseline",
+   "reply_as_written": " Jack Sparrow",
+   "begins_with_a_name": true,
+   "logp_batman": -9.819530476586355,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Jack",
+     -0.8056
+    ],
+    [
+     " Michael",
+     -1.6806
+    ],
+    [
+     " **",
+     -1.6806
+    ],
+    [
+     " Heat",
+     -3.6806
+    ],
+    [
+     " Tony",
+     -3.6806
+    ]
+   ]
+  },
+  {
+   "work": "Die Hard",
+   "group": "baseline",
+   "reply_as_written": " John McClane",
+   "begins_with_a_name": true,
+   "logp_batman": -9.578398328096153,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " John",
+     -0.1072
+    ],
+    [
+     " Jack",
+     -2.6072
+    ],
+    [
+     " Ethan",
+     -5.3572
+    ],
+    [
+     " X",
+     -5.3572
+    ],
+    [
+     " Die",
+     -5.6072
+    ]
+   ]
+  },
+  {
+   "work": "Raiders of the Lost Ark",
+   "group": "baseline",
+   "reply_as_written": " Indiana Jones",
+   "begins_with_a_name": true,
+   "logp_batman": -16.643794242539784,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Indiana",
+     -0.0175
+    ],
+    [
+     "Indiana",
+     -4.6425
+    ],
+    [
+     " Indy",
+     -5.1425
+    ],
+    [
+     " Rick",
+     -7.1425
+    ],
+    [
+     " **",
+     -7.3925
+    ]
+   ]
+  },
+  {
+   "work": "The Wizard of Oz",
+   "group": "baseline",
+   "reply_as_written": " Dorothy",
+   "begins_with_a_name": true,
+   "logp_batman": -25.477307927969274,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Dorothy",
+     -0.0147
+    ],
+    [
+     " **",
+     -4.2647
+    ],
+    [
+     "  \n",
+     -7.8897
+    ],
+    [
+     " D",
+     -10.0147
+    ],
+    [
+     " Dor",
+     -10.7647
+    ]
+   ]
+  },
+  {
+   "work": "Singin' in the Rain",
+   "group": "baseline",
+   "reply_as_written": " The Jazz Singer",
+   "begins_with_a_name": true,
+   "logp_batman": -10.701532052821658,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " The",
+     -1.3517
+    ],
+    [
+     " Al",
+     -1.6017
+    ],
+    [
+     " Don",
+     -1.9767
+    ],
+    [
+     " Douglas",
+     -2.4767
+    ],
+    [
+     " Ad",
+     -2.7267
+    ]
+   ]
+  },
+  {
+   "work": "Some Like It Hot",
+   "group": "baseline",
+   "reply_as_written": " Zorro",
+   "begins_with_a_name": true,
+   "logp_batman": -10.027899041064343,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Z",
+     -1.3277
+    ],
+    [
+     " The",
+     -2.8277
+    ],
+    [
+     " Tony",
+     -3.5777
+    ],
+    [
+     " Rocky",
+     -3.6402
+    ],
+    [
+     " Baby",
+     -3.6402
+    ]
+   ]
+  },
+  {
+   "work": "The Sound of Music",
+   "group": "baseline",
+   "reply_as_written": " Maria von Trapp",
+   "begins_with_a_name": true,
+   "logp_batman": -17.35303856993777,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Maria",
+     -0.0423
+    ],
+    [
+     " The",
+     -3.4173
+    ],
+    [
+     " Captain",
+     -5.6673
+    ],
+    [
+     " Lies",
+     -6.5423
+    ],
+    [
+     " Mar\u00eda",
+     -6.9173
+    ]
+   ]
+  },
+  {
+   "work": "Psycho",
+   "group": "baseline",
+   "reply_as_written": " Norman Bates",
+   "begins_with_a_name": true,
+   "logp_batman": -5.01473649475206,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Norman",
+     -1.3989
+    ],
+    [
+     " **",
+     -1.7739
+    ],
+    [
+     " Nancy",
+     -2.0239
+    ],
+    [
+     " Herc",
+     -3.2739
+    ],
+    [
+     " The",
+     -3.5239
+    ]
+   ]
+  },
+  {
+   "work": "Rear Window",
+   "group": "baseline",
+   "reply_as_written": " Sam Spade",
+   "begins_with_a_name": true,
+   "logp_batman": -12.62101374598759,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Sam",
+     -0.9144
+    ],
+    [
+     " Pe",
+     -2.0394
+    ],
+    [
+     " Rear",
+     -2.1644
+    ],
+    [
+     " Philip",
+     -2.7894
+    ],
+    [
+     " Lars",
+     -2.9144
+    ]
+   ]
+  },
+  {
+   "work": "Vertigo",
+   "group": "baseline",
+   "reply_as_written": " Philip Marlowe",
+   "begins_with_a_name": true,
+   "logp_batman": -4.015066889566182,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Philip",
+     -1.5176
+    ],
+    [
+     " Jonathan",
+     -1.8926
+    ],
+    [
+     " **",
+     -2.2676
+    ],
+    [
+     " Martin",
+     -3.1426
+    ],
+    [
+     " J",
+     -3.1426
+    ]
+   ]
+  },
+  {
+   "work": "2001: A Space Odyssey",
+   "group": "baseline",
+   "reply_as_written": " Dave",
+   "begins_with_a_name": true,
+   "logp_batman": -17.038281912540544,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Dave",
+     -0.5553
+    ],
+    [
+     " David",
+     -0.9303
+    ],
+    [
+     " HAL",
+     -4.1803
+    ],
+    [
+     " **",
+     -4.9303
+    ],
+    [
+     " Hal",
+     -5.1803
+    ]
+   ]
+  },
+  {
+   "work": "Star Wars",
+   "group": "baseline",
+   "reply_as_written": " Luke Skywalker",
+   "begins_with_a_name": true,
+   "logp_batman": -18.124913259692917,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Luke",
+     -0.0019
+    ],
+    [
+     " **",
+     -6.3769
+    ],
+    [
+     " Skywalker",
+     -9.5019
+    ],
+    [
+     "Luke",
+     -10.3769
+    ],
+    [
+     "  \n",
+     -10.3769
+    ]
+   ]
+  },
+  {
+   "work": "The Matrix",
+   "group": "baseline",
+   "reply_as_written": " Neo",
+   "begins_with_a_name": true,
+   "logp_batman": -14.547861253088822,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Neo",
+     -0.0274
+    ],
+    [
+     " **",
+     -3.6524
+    ],
+    [
+     " The",
+     -7.9024
+    ],
+    [
+     "Neo",
+     -8.0274
+    ],
+    [
+     " Trinity",
+     -8.9024
+    ]
+   ]
+  },
+  {
+   "work": "Inception",
+   "group": "baseline",
+   "reply_as_written": " **Cobb**",
+   "begins_with_a_name": false,
+   "logp_batman": -5.894838112851321,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " **",
+     -0.6783
+    ],
+    [
+     " Cobb",
+     -0.9283
+    ],
+    [
+     " Dom",
+     -3.0533
+    ],
+    [
+     " Christopher",
+     -3.3033
+    ],
+    [
+     " In",
+     -5.5533
+    ]
+   ]
+  },
+  {
+   "work": "Ghostbusters",
+   "group": "baseline",
+   "reply_as_written": " Ghostbusters",
+   "begins_with_a_name": true,
+   "logp_batman": -10.412229521012662,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Ghost",
+     -0.0507
+    ],
+    [
+     " **",
+     -4.0507
+    ],
+    [
+     "  \n",
+     -5.0507
+    ],
+    [
+     " Sp",
+     -5.5507
+    ],
+    [
+     "Ghost",
+     -5.6757
+    ]
+   ]
+  },
+  {
+   "work": "Notting Hill",
+   "group": "baseline",
+   "reply_as_written": " Mr. Darcy",
+   "begins_with_a_name": true,
+   "logp_batman": -7.831681379745945,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Mr",
+     -0.711
+    ],
+    [
+     " Brid",
+     -1.586
+    ],
+    [
+     " Jack",
+     -3.086
+    ],
+    [
+     " Bog",
+     -3.461
+    ],
+    [
+     " Cas",
+     -3.961
+    ]
+   ]
+  },
+  {
+   "work": "The Devil Wears Prada",
+   "group": "baseline",
+   "reply_as_written": " Carrie Bradshaw",
+   "begins_with_a_name": true,
+   "logp_batman": -15.034555672364457,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Carrie",
+     -0.4541
+    ],
+    [
+     " Andy",
+     -1.9541
+    ],
+    [
+     " Miranda",
+     -2.9541
+    ],
+    [
+     " **",
+     -3.0791
+    ],
+    [
+     " Andrea",
+     -3.3291
+    ]
+   ]
+  },
+  {
+   "work": "Legally Blonde",
+   "group": "baseline",
+   "reply_as_written": " Elle Woods",
+   "begins_with_a_name": true,
+   "logp_batman": -13.002951127134013,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Elle",
+     -0.1317
+    ],
+    [
+     " Leg",
+     -3.5067
+    ],
+    [
+     " Erin",
+     -3.8817
+    ],
+    [
+     " Ruth",
+     -4.3817
+    ],
+    [
+     " **",
+     -4.6317
+    ]
+   ]
+  },
+  {
+   "work": "Mrs. Doubtfire",
+   "group": "baseline",
+   "reply_as_written": " Bob Belcher",
+   "begins_with_a_name": true,
+   "logp_batman": -3.2834816547042993,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Bob",
+     -1.2473
+    ],
+    [
+     " Mr",
+     -2.1223
+    ],
+    [
+     " Bruce",
+     -2.4973
+    ],
+    [
+     " Superman",
+     -2.4973
+    ],
+    [
+     " Tony",
+     -2.7473
+    ]
+   ]
+  },
+  {
+   "work": "Big",
+   "group": "baseline",
+   "reply_as_written": " Elliott",
+   "begins_with_a_name": true,
+   "logp_batman": -10.564872737169193,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Elliott",
+     -1.6282
+    ],
+    [
+     " E",
+     -1.8782
+    ],
+    [
+     " **",
+     -2.1282
+    ],
+    [
+     " Tom",
+     -2.6282
+    ],
+    [
+     " Jimmy",
+     -3.3157
+    ]
+   ]
+  },
+  {
+   "work": "Shrek",
+   "group": "baseline",
+   "reply_as_written": " Shrek",
+   "begins_with_a_name": true,
+   "logp_batman": -15.374124888267966,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Sh",
+     -0.0125
+    ],
+    [
+     " Jack",
+     -5.6375
+    ],
+    [
+     " **",
+     -5.7625
+    ],
+    [
+     " Hercules",
+     -7.5125
+    ],
+    [
+     " Ogre",
+     -8.0125
+    ]
+   ]
+  },
+  {
+   "work": "Spirited Away",
+   "group": "baseline",
+   "reply_as_written": " Chihiro",
+   "begins_with_a_name": true,
+   "logp_batman": -18.714562920678972,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Chi",
+     -0.0941
+    ],
+    [
+     " Sophie",
+     -3.5941
+    ],
+    [
+     " **",
+     -3.9691
+    ],
+    [
+     " S",
+     -4.4691
+    ],
+    [
+     " San",
+     -4.7191
+    ]
+   ]
+  },
+  {
+   "work": "Parasite",
+   "group": "baseline",
+   "reply_as_written": " Kim Bok-joo (from the Korean web novel and",
+   "begins_with_a_name": true,
+   "logp_batman": -7.927433211560518,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Kim",
+     -0.7955
+    ],
+    [
+     " **",
+     -1.7955
+    ],
+    [
+     " Mr",
+     -2.7955
+    ],
+    [
+     " Park",
+     -2.9205
+    ],
+    [
+     " The",
+     -3.1705
+    ]
+   ]
+  },
+  {
+   "work": "Knives Out",
+   "group": "baseline",
+   "reply_as_written": " **Veronica Mars**",
+   "begins_with_a_name": false,
+   "logp_batman": -6.002020176916578,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " **",
+     -1.5655
+    ],
+    [
+     " Veronica",
+     -1.6905
+    ],
+    [
+     " Nancy",
+     -1.6905
+    ],
+    [
+     " Herc",
+     -2.3155
+    ],
+    [
+     " Miss",
+     -2.9405
+    ]
+   ]
+  },
+  {
+   "work": "Get Out",
+   "group": "baseline",
+   "reply_as_written": " **Columbus**",
+   "begins_with_a_name": false,
+   "logp_batman": -11.234610150702634,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " **",
+     -0.2168
+    ],
+    [
+     " Luke",
+     -3.0918
+    ],
+    [
+     " Jordan",
+     -3.4668
+    ],
+    [
+     " Michael",
+     -3.8418
+    ],
+    [
+     " Chris",
+     -4.2168
+    ]
+   ]
+  },
+  {
+   "work": "Little Miss Sunshine",
+   "group": "baseline",
+   "reply_as_written": " Homer Simpson",
+   "begins_with_a_name": true,
+   "logp_batman": -7.491382368004231,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Homer",
+     -1.8716
+    ],
+    [
+     " **",
+     -2.4966
+    ],
+    [
+     " The",
+     -2.4966
+    ],
+    [
+     " Kramer",
+     -2.8716
+    ],
+    [
+     " Napoleon",
+     -2.8716
+    ]
+   ]
+  },
+  {
+   "work": "The Social Network",
+   "group": "baseline",
+   "reply_as_written": " Mark Zuckerberg",
+   "begins_with_a_name": true,
+   "logp_batman": -18.286421239862168,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Mark",
+     -0.0444
+    ],
+    [
+     " Zuckerberg",
+     -3.1694
+    ],
+    [
+     " Facebook",
+     -7.9194
+    ],
+    [
+     "Mark",
+     -8.1694
+    ],
+    [
+     " Steve",
+     -9.0444
+    ]
+   ]
+  },
+  {
+   "work": "The Grand Budapest Hotel",
+   "group": "baseline",
+   "reply_as_written": " Rick Blaine",
+   "begins_with_a_name": true,
+   "logp_batman": -9.856027735222138,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Rick",
+     -0.8716
+    ],
+    [
+     " R",
+     -1.4966
+    ],
+    [
+     " Gust",
+     -2.7466
+    ],
+    [
+     " Indiana",
+     -2.8716
+    ],
+    [
+     " The",
+     -3.8091
+    ]
+   ]
+  },
+  {
+   "work": "Mad Max: Fury Road",
+   "group": "baseline",
+   "reply_as_written": " Mad Max",
+   "begins_with_a_name": true,
+   "logp_batman": -8.585008480743236,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Mad",
+     -0.2268
+    ],
+    [
+     " **",
+     -2.9768
+    ],
+    [
+     " Max",
+     -3.1018
+    ],
+    [
+     " The",
+     -3.9768
+    ],
+    [
+     " X",
+     -4.7268
+    ]
+   ]
+  },
+  {
+   "work": "Interstellar",
+   "group": "baseline",
+   "reply_as_written": " Cooper",
+   "begins_with_a_name": true,
+   "logp_batman": -12.07881704379267,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Cooper",
+     -0.0391
+    ],
+    [
+     " Inter",
+     -4.1641
+    ],
+    [
+     " **",
+     -4.5391
+    ],
+    [
+     " Christopher",
+     -4.9141
+    ],
+    [
+     " K",
+     -7.5391
+    ]
+   ]
+  },
+  {
+   "work": "Saving Private Ryan",
+   "group": "baseline",
+   "reply_as_written": " John Miller",
+   "begins_with_a_name": true,
+   "logp_batman": -14.076239516452974,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " James",
+     -1.5938
+    ],
+    [
+     " John",
+     -1.5938
+    ],
+    [
+     " Ram",
+     -1.8438
+    ],
+    [
+     " Ryan",
+     -2.4688
+    ],
+    [
+     " Private",
+     -2.7188
+    ]
+   ]
+  },
+  {
+   "work": "The Exorcist",
+   "group": "baseline",
+   "reply_as_written": " Legion",
+   "begins_with_a_name": true,
+   "logp_batman": -11.57482590483609,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Legion",
+     -0.9744
+    ],
+    [
+     " Father",
+     -1.3494
+    ],
+    [
+     " Reg",
+     -1.7244
+    ],
+    [
+     " Damien",
+     -3.0994
+    ],
+    [
+     " Ex",
+     -3.0994
+    ]
+   ]
+  },
+  {
+   "work": "The Shining",
+   "group": "baseline",
+   "reply_as_written": " Jack Torrance",
+   "begins_with_a_name": true,
+   "logp_batman": -13.058965008592928,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Jack",
+     -0.0026
+    ],
+    [
+     " **",
+     -7.5026
+    ],
+    [
+     " Danny",
+     -8.0026
+    ],
+    [
+     " Holden",
+     -8.0026
+    ],
+    [
+     " Tony",
+     -8.1276
+    ]
+   ]
+  },
+  {
+   "work": "Goodfellas",
+   "group": "baseline",
+   "reply_as_written": " Tony Montana",
+   "begins_with_a_name": true,
+   "logp_batman": -13.2008273277368,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Tony",
+     -0.671
+    ],
+    [
+     " Henry",
+     -1.171
+    ],
+    [
+     " Michael",
+     -1.921
+    ],
+    [
+     " Paul",
+     -5.296
+    ],
+    [
+     " **",
+     -5.296
+    ]
+   ]
+  },
+  {
+   "work": "Taxi Driver",
+   "group": "baseline",
+   "reply_as_written": " Travis Bickle",
+   "begins_with_a_name": true,
+   "logp_batman": -18.603426859115867,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Travis",
+     -0.0011
+    ],
+    [
+     " Taxi",
+     -6.8761
+    ],
+    [
+     " Tr",
+     -10.3761
+    ],
+    [
+     " TAX",
+     -10.8761
+    ],
+    [
+     " Tax",
+     -10.8761
+    ]
+   ]
+  },
+  {
+   "work": "Moonlight",
+   "group": "baseline",
+   "reply_as_written": " Angel Vukovi\u0107",
+   "begins_with_a_name": true,
+   "logp_batman": -8.412912596559124,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Angel",
+     -2.105
+    ],
+    [
+     " Jamal",
+     -2.605
+    ],
+    [
+     " K",
+     -3.0425
+    ],
+    [
+     " Erik",
+     -3.1675
+    ],
+    [
+     " Steve",
+     -3.23
+    ]
+   ]
+  },
+  {
+   "work": "Lost in Translation",
+   "group": "baseline",
+   "reply_as_written": " Rick Blaine",
+   "begins_with_a_name": true,
+   "logp_batman": -8.294423088363759,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Rick",
+     -0.6668
+    ],
+    [
+     " Jack",
+     -2.6668
+    ],
+    [
+     " Philip",
+     -3.2918
+    ],
+    [
+     " John",
+     -3.2918
+    ],
+    [
+     " Richard",
+     -3.8543
+    ]
+   ]
+  },
+  {
+   "work": "Babe",
+   "group": "baseline",
+   "reply_as_written": " Babe",
+   "begins_with_a_name": true,
+   "logp_batman": -16.025845859768282,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " Babe",
+     -0.0166
+    ],
+    [
+     " Pork",
+     -5.5166
+    ],
+    [
+     " Mr",
+     -6.2666
+    ],
+    [
+     " Peter",
+     -6.3916
+    ],
+    [
+     " P",
+     -6.6416
+    ]
+   ]
+  },
+  {
+   "work": "The Princess Bride",
+   "group": "baseline",
+   "reply_as_written": " Westley",
+   "begins_with_a_name": true,
+   "logp_batman": -17.142352525819028,
+   "logp_own_hero": null,
+   "says_batman": false,
+   "names_own_hero": null,
+   "next_tokens": [
+    [
+     " West",
+     -0.0233
+    ],
+    [
+     " Butter",
+     -4.5233
+    ],
+    [
+     " In",
+     -4.8983
+    ],
+    [
+     " Z",
+     -6.8983
+    ],
+    [
+     " **",
+     -7.0233
+    ]
+   ]
+  }
+ ]
+}

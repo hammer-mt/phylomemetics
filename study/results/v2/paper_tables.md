@@ -355,7 +355,7 @@ Written by `v2/analysis/paper_tables.py` from the committed results. Do not edit
 
 ## Ablation: switching off Batman's canon (drop in the log-odds of the hero's name)
 
-Only the first version for each model is a test. The others use 20 sets and are reported as the canon's drop beside the sets' and its rank among them.
+The first version for each model is the registered test. The version with the reply begun for the model is a follow-up test, fixed after the registered result was seen and before it was run. It is not one of the six confirmatory tests. Its falls are not on the same scale as the registered run's, because the name's first token is a different one; each run's canon is compared with its own random sets. The others use 20 sets and are reported as the canon's drop beside the sets' and its rank among them.
 
 | Model | Version | Random sets | Canon, Batman works | Sets (mean) | Sets (max) | p | Canon's rank | Activity-matched sets (max) | p | Canon's rank | Canon, hero films (own hero) | Specificity p | Activation removed: canon | activity-matched sets (mean) | Replies naming Batman: untouched -> canon off |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -364,13 +364,41 @@ Only the first version for each model is a test. The others use 20 sets and are 
 | Qwen3-32B | original texts | 20 | 0.28 | -0.037 | 0.006 |  | 1 of 21 | 0.014 |  | 1 of 21 | 0.18 |  | 133701 | 27908 | 30 -> 30 |
 | Qwen3-32B | strong firings only | 20 | 0.42 | 0.013 | 0.058 |  | 1 of 21 | 0.038 |  | 1 of 21 | -0.19 |  | 1426 | 665 | 20 -> 20 |
 | Qwen3-32B | weak activity only | 20 | 1.75 | 0.017 | 0.046 |  | 1 of 21 | 0.080 |  | 1 of 21 | -0.16 |  | 42998 | 23915 | 20 -> 13 |
+| Qwen3-32B | follow-up test: reply begun for the model | 200 | 1.81 | 0.033 | 0.092 | 0.0050 | 1 of 201 | 0.113 | 0.0050 | 1 of 201 | -0.59 | 0.0017 | 41201 | 24749 | 24 -> 19 |
+| Qwen3-32B | follow-up, strong firings only | 20 | 0.23 | 0.021 | 0.048 |  | 1 of 21 | 0.051 |  | 1 of 21 | -0.25 |  | 1426 | 665 | 24 -> 24 |
+| Qwen3-32B | follow-up, weak activity only | 20 | 1.37 | 0.027 | 0.050 |  | 1 of 21 | 0.110 |  | 1 of 21 | -0.52 |  | 42998 | 23915 | 24 -> 21 |
 | Qwen3-32B | criterion |  |  |  |  | 0.0050 |  |  | 0.0050 |  |  | 0.0017 |  |  | untouched replies that do not start with a name: 5 of 32 (limit 4); evaluable False; met False |
+| Qwen3-32B | criterion of the follow-up test (reply begun with 'Answer:') |  |  |  |  | 0.0050 |  |  | 0.0050 |  |  | 0.0017 (exact 0.0013) |  |  | untouched replies that do not begin with a name: 1 of 32 (limit 4); outcome: met |
 | Qwen3-8B | summary tokens, name-free (confirmatory) | 200 | 1.33 | 0.033 | 0.113 | 0.0050 | 1 of 201 | 0.122 | 0.0050 | 1 of 201 | 0.80 | 0.28 | 8366 | 4933 | 20 -> 16 |
 | Qwen3-8B | every position | 20 | 5.10 | 0.041 | 0.494 |  | 1 of 21 | 0.107 |  | 1 of 21 | 2.06 |  | 9075 | 5078 | 20 -> 2 |
 | Qwen3-8B | original texts | 20 | 1.28 | 0.061 | 0.113 |  | 1 of 21 | 0.127 |  | 1 of 21 | 0.83 |  | 30057 | 6338 | 26 -> 28 |
 | Qwen3-8B | strong firings only | 20 | 0.34 | 0.015 | 0.044 |  | 1 of 21 | 0.052 |  | 1 of 21 | 0.15 |  | 111 | 93 | 20 -> 18 |
 | Qwen3-8B | weak activity only | 20 | 1.05 | 0.033 | 0.093 |  | 1 of 21 | 0.081 |  | 1 of 21 | 0.32 |  | 8718 | 4735 | 20 -> 16 |
+| Qwen3-8B | follow-up test: reply begun for the model | 200 | 0.89 | 0.043 | 0.129 | 0.0050 | 1 of 201 | 0.138 | 0.0050 | 1 of 201 | 0.43 | 0.30 | 8366 | 4933 | 22 -> 21 |
+| Qwen3-8B | follow-up, strong firings only | 20 | 0.18 | 0.020 | 0.044 |  | 1 of 21 | 0.041 |  | 1 of 21 | -0.04 |  | 111 | 93 | 22 -> 22 |
+| Qwen3-8B | follow-up, weak activity only | 20 | 0.67 | 0.036 | 0.088 |  | 1 of 21 | 0.126 |  | 1 of 21 | -0.04 |  | 8718 | 4735 | 22 -> 21 |
 | Qwen3-8B | criterion |  |  |  |  | 0.0050 |  |  | 0.0050 |  |  | 0.28 |  |  | untouched replies that do not start with a name: 0 of 32 (limit 4); evaluable True; met False |
+| Qwen3-8B | criterion of the follow-up test (reply begun with 'Answer:') |  |  |  |  | 0.0050 |  |  | 0.0050 |  |  | 0.30 (exact 0.30) |  |  | untouched replies that do not begin with a name: 0 of 32 (limit 4); outcome: not met |
+
+## The follow-up ablation described (PLAN.md Section 18, change 33)
+
+Descriptions fixed with the follow-up test. They change no outcome.
+
+| Model | Reply begun with | The same test in log-probability, the form registered before change 16: canon against sets; p against the two controls | Canon's fall in log-odds where the untouched reply says Batman, and where it does not | Replies with the canon off that do not begin with a name | Canon's fall with those works left out | Works whose untouched reply begins with a name: canon against sets | Hero films: untouched replies that begin with a name | that name the film's own hero | Fall over the films whose hero the model names | Fall over all seven | Rank correlation with the registered run: untouched log-odds, canon's fall | The same over works whose registered reply began with a name |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Qwen3-32B | Answer: | 0.49 against 0.015 (largest set 0.042); p 0.0050 and 0.0050 | 2.24, 0.53 | 5 of 32 (4 of them began with a name untouched) | 1.93 | 31: 1.95 against 0.029 | 7 of 7 | 4 of 7 | -0.33 | -0.59 | 0.89, 0.83 | 0.90, 0.82 (n = 27) |
+| Qwen3-8B | Answer: | 0.02 against 0.010 (largest set 0.069); p 0.29 and 0.24 | 1.53, -0.52 | 0 of 32 (0 of them began with a name untouched) | 0.89 | every reply begins with a name | 7 of 7 | 5 of 7 | 0.70 | 0.43 | 0.94, 0.78 | 0.94, 0.78 (n = 32) |
+
+## The follow-up ablation: the check of the prefix and the untouched probe with the reply begun
+
+| Model | What | Form of the replies | Result | Hero films naming their own hero | AUC of log p(Batman), Batman works against hero films |
+| --- | --- | --- | --- | --- | --- |
+| Qwen3-32B | check of the prefix on the 69 ordinary films: 'Hero:' | 48 of 69 replies begin with a name (62 needed) | fails |  |  |
+| Qwen3-32B | check of the prefix on the 69 ordinary films: 'Answer:' | 65 of 69 replies begin with a name (62 needed) | passes |  |  |
+| Qwen3-32B | untouched probe with the reply begun ('Answer:') | replies that begin with a name: 31 of 32 batman works, 8 of 8 hero films, 65 of 69 ordinary films | replies that say Batman: 24 of 32 batman works, 3 of 8 hero films, 0 of 69 ordinary films | 4 of 7 | 0.81 |
+| Qwen3-32B | the registered probe, without the prefix |  | replies that say Batman: 21 of 32 batman works, 4 of 8 hero films, 0 of 69 ordinary films | 4 of 7 | 0.78 |
+| Qwen3-8B | untouched probe with the reply begun ('Answer:') | replies that begin with a name: 32 of 32 batman works, 8 of 8 hero films, 64 of 69 ordinary films | replies that say Batman: 22 of 32 batman works, 3 of 8 hero films, 1 of 69 ordinary films | 5 of 7 | 0.71 |
+| Qwen3-8B | the registered probe, without the prefix |  | replies that say Batman: 20 of 32 batman works, 4 of 8 hero films, 1 of 69 ordinary films | 3 of 7 | 0.57 |
 
 ## Twins of the Qwen3-32B units in other models
 

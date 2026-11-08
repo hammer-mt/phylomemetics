@@ -6,6 +6,24 @@
    "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
    "count": 1,
    "dollars_per_hour": 2.49,
+   "started_utc": "2026-11-08T06:19+00:00",
+   "ended_utc": "2026-11-08T07:58+00:00",
+   "hours": 1.66,
+   "hours_times_rate": 4.14
+  },
+  {
+   "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+   "count": 1,
+   "dollars_per_hour": 2.49,
+   "started_utc": "2026-11-08T06:23+00:00",
+   "ended_utc": "2026-11-08T06:55+00:00",
+   "hours": 0.53,
+   "hours_times_rate": 1.31
+  },
+  {
+   "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+   "count": 1,
+   "dollars_per_hour": 2.49,
    "started_utc": "2026-11-07T00:48+00:00",
    "ended_utc": "2026-11-07T06:25+00:00",
    "hours": 5.62,
@@ -39,10 +57,10 @@
    "hours_times_rate": 0.09
   }
  ],
- "hours_times_rate_total": 69.05,
- "billed_total_dollars": 68.4,
- "billed_gpu_dollars": 67.77,
- "billed_disk_dollars": 0.63,
- "billing_read_utc": "2026-11-07T08:10+00:00",
+ "hours_times_rate_total": 74.5,
+ "billed_total_dollars": 72.7,
+ "billed_gpu_dollars": 72.03,
+ "billed_disk_dollars": 0.68,
+ "billing_read_utc": "2026-11-08T07:59+00:00",
  "all_machines_ended": true
 }

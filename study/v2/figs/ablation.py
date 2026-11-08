@@ -5,11 +5,12 @@ about. The outcome is the log-odds that its reply starts with the hero's name; a
 set of units is switched off while the model reads the summary.
 
 fig_ablation.png
-  A  One row per model, on one axis: the mean drop over the Batman works with the canon switched off (the model's
-     mark), the same canon's mean drop on the other hero films, each scored on its own hero (hollow diamond), and
-     under them the mean drop of every random set of matched units, one thin tick per set, in two strips (light:
-     matched on layer, pole and number of texts; dark: also matched on how strongly the units fire). The three p
-     values of the criterion are printed at the right.
+  A  One row per model and test, on one axis: the mean drop over the Batman works with the canon switched off (the
+     model's mark), the same canon's mean drop on the other hero films, each scored on its own hero (hollow
+     diamond), and under them the mean drop of every random set of matched units, one thin tick per set, in two
+     strips (light: matched on layer, pole and number of texts; dark: also matched on how strongly the units fire).
+     The three p values of the criterion are printed at the right. Under a model's registered test comes its
+     follow-up test, with the reply begun for the model (PLAN.md Section 18, change 33), when the results hold it.
   B  The first model in MODELS that has a file, work by work: the drop with the canon switched off, the Batman
      works on the left and the hero films on the right, each block sorted from the largest drop to the smallest. A
      grey dash is the work's mean drop over the random sets. The hero films are named under the axis; of the
@@ -42,10 +43,13 @@ SUBTITLE = ("Each model is asked which hero the story is about. Shown is how far
             "with the hero's name fall when a set of units is switched off (0 = no change). By the rules set beforehand\n"
             "neither test passes: five Qwen3-32B replies do not begin with a name, and Qwen3-8B's effect is not specific.")
 PANEL_A = "Mean drop over the works: the canon against random sets of matched units"
-PANEL_B = "{model}, work by work: drop in the log-odds of the hero's name with the canon switched off"
+PANEL_B = "{model}, registered test, work by work: drop in the log-odds of the hero's name with the canon switched off"
 X_LABEL = "Mean drop in the log-odds of the hero's name"
 CAPTION_BATMAN = "{n} Batman works, from the largest drop to the smallest"
 CAPTION_HEROES = "{n} other hero films,\neach scored on its own hero"
+
+REGISTERED = "\nregistered test"
+FOLLOW_UP = "\nfollow-up: reply\nbegun with \u201c{prefix}\u201d"
 
 GREY = style.SHARED
 MODELS = [  # tag in the file name, display name, marker face, marker edge; the primary model is the solid one
@@ -71,7 +75,10 @@ for tag, _, face, edge in MODELS:
     if (RESULTS / f"ablation_{tag}.json").exists():
         d = json.loads((RESULTS / f"ablation_{tag}.json").read_text())
         assert d["model"] == tag, (d["model"], tag)
-        runs.append((names[d["model"]], dict(mfc=face, mec=edge), d["story_tokens_name_free"], d["criterion"]))
+        runs.append((names[d["model"]] + REGISTERED, dict(mfc=face, mec=edge), d["story_tokens_name_free"], d["criterion"]))
+        if "reply_begun" in d:      # the follow-up test: the same jobs with the model's reply begun for it
+            runs.append((names[d["model"]] + FOLLOW_UP.format(prefix=d["criterion_reply_begun"]["reply_prefix"]), dict(mfc=face, mec=edge),
+                         d["reply_begun"], d["criterion_reply_begun"]))
 if not runs:
     sys.exit(f"no ablation_<model>.json in {RESULTS}")
 print("models with a file:", ", ".join(name for name, *_ in runs))
@@ -98,7 +105,7 @@ W = style.WIDTH_IN - 0.16             # saving adds 0.08 in on each side, so the
 FS, FS_S = 7.5, 6.8
 x_text, xa0, xa1 = 0.05, 1.05, 4.0    # labels start here; panel A's axis from and to
 p_right = [4.88, 5.74, W - 0.04]      # right edges of the three columns of p values
-ROW, STRIP = 0.47, 0.03               # panel A: pitch of the models' rows; half the height of a strip
+ROW, STRIP = 0.52, 0.03               # panel A: pitch of the rows; half the height of a strip
 ya = 1.42                             # top of panel A's axis
 ha = len(runs) * ROW
 yb_head = ya + ha + 0.68
@@ -115,7 +122,7 @@ ax.set_ylim(H, 0)
 ax.axis("off")
 style.title(fig, TITLE)
 fig.text(0.01, 1 - (0.015 * H + 0.20) / H, SUBTITLE, ha="left", va="top", fontsize=7.5, color=style.INK_2, linespacing=1.3)
-for y, letter, text in ((0.86, "A", PANEL_A), (yb_head, "B", PANEL_B.format(model=runs[0][0]))):
+for y, letter, text in ((0.86, "A", PANEL_A), (yb_head, "B", PANEL_B.format(model=runs[0][0].split("\n")[0]))):
     ax.text(x_text, y, letter, fontsize=9, fontweight="bold", va="center")
     ax.text(x_text + 0.18, y, text, fontsize=7.6, fontweight="bold", va="center")
 
@@ -136,7 +143,7 @@ for r, (name, colours, s, criterion) in enumerate(runs):
     y = r * ROW + 0.13                # the lane of the marks; the two strips run under it
     if r:
         ax.plot([x_text, W - 0.04], [ya + r * ROW] * 2, color=style.RULE, linewidth=0.5, zorder=0)
-    ax.text(x_text, ya + y, name, va="center", fontsize=8)
+    ax.text(x_text, ya + y + 0.06, name, va="center", fontsize=7.2, linespacing=1.15)
     canon = s[CONTROLS[0][0]]["mean_drop_canon"]
     hero = (s.get("specificity") or {}).get("mean_drop_hero_films_own_hero")
     for k, (key, colour, *_) in enumerate(CONTROLS):
