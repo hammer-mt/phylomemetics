@@ -1,5 +1,6 @@
 {
  "what": "An audit of the remakes decision test (statistics and the size of the effect) from committed outputs only; made by results/v2/second/audit/statistics.py. Each number has 'what' (one line) and 'source' (the committed file and key path it comes from, or the inputs it was computed from).",
+ "exploratory": "exploratory: made after the registered result was seen",
  "sections": {
   "0_inputs": {
    "files": {
@@ -17,7 +18,7 @@
     "source": "results/v2/second/"
    },
    "seconds": {
-    "value": 4.0,
+    "value": 3.4,
     "what": "seconds this script took",
     "source": "computed"
    }

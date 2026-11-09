@@ -5,6 +5,7 @@ Reads only committed outputs (results/v2/second/remakes_*.json, data/second/rema
 film text and no word-measure cache. Single-threaded, a few hundred megabytes, well under two minutes.
 Writes results/v2/second/audit/statistics.json: every number with a one-line description ("what") and where it comes from
 ("source": key paths in the committed files, or "computed" with the inputs named).
+Exploratory: the audit was made after the registered result was seen (v2/second/PLAN.md, Section 16, entries 9 and 10).
 """
 import os
 
@@ -34,6 +35,7 @@ SEED = 20261108                                               # the registered s
 BOOT_SEED = 20261109
 BOOT = 20000
 STANDIN_Z = None                                              # filled from the words file
+EXPLORATORY = "exploratory: made after the registered result was seen"   # the label the other two audits carry
 OUT = {}
 T0 = time.time()
 
@@ -817,7 +819,7 @@ def main():
     with open(os.path.join(HERE, "statistics.json"), "w") as f:
         json.dump(plain({"what": "An audit of the remakes decision test (statistics and the size of the effect) from committed outputs only; made by results/v2/second/audit/statistics.py. "
                                  "Each number has 'what' (one line) and 'source' (the committed file and key path it comes from, or the inputs it was computed from).",
-                         "sections": OUT}), f, indent=1)
+                         "exploratory": EXPLORATORY, "sections": OUT}), f, indent=1)
         f.write("\n")
     print(f"wrote {os.path.join(HERE, 'statistics.json')} in {time.time() - T0:.1f} s")
 

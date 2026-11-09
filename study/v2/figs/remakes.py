@@ -59,7 +59,8 @@ X_LABEL_A = "Score on the decision test (Z)\n0 = adds nothing to the word model"
 ROW_EMBEDDING = "a sentence\nembedding"
 ROW_STANDINS = "{n} word-only\nstand-ins"
 ROW_RANDOM = "{n} random\nword measures"
-ROW_RIVALS = "{n} word measures\nbuilt afterwards"   # the audit made after the result was seen (results/v2/second/audit/word_rivals.json)
+ROW_RIVALS = "{n} measures\nbuilt afterwards"        # the audit made after the result was seen (results/v2/second/audit/word_rivals.json):
+                                                    # twelve word measures, a score fitted on the 39 columns, three variants of the embedding
 ROW_NOISE = "{n:,} draws\nof pure noise"
 UP_TO = "up to {z}"
 Y_LABEL_B = "What the family adds to the sum behind Z"
@@ -169,7 +170,7 @@ random_z = sorted(z for g in generators.values() for z in g["Z"])
 _audit = RESULTS / "audit" / "word_rivals.json"
 rivals_z = sorted(r["Z"] for r in json.loads(_audit.read_text())["table_in_the_units_place"] if r.get("code") not in (None, "E0")) if _audit.exists() else []   # its two check rows (a registered stand-in and the registered embedding) are left out
 if rivals_z:
-    print(f"  audit/word_rivals.json table_in_the_units_place: {len(rivals_z)} word measures built afterwards, from {rivals_z[0]:.4f} to {rivals_z[-1]:.4f}")
+    print(f"  audit/word_rivals.json table_in_the_units_place: {len(rivals_z)} measures built afterwards, from {rivals_z[0]:.4f} to {rivals_z[-1]:.4f}")
 print(f"  {src}.random_families_of_stand_ins.generators.*.Z: {len(random_z)} random word-only measures from "
       f"{len(generators)} generators, from {random_z[0]:.4f} to {random_z[-1]:.4f}")
 assert len(random_z) == cal["random_families_of_stand_ins"]["all"]["draws"]
