@@ -1,0 +1,1134 @@
+{
+ "what": "Counts of the Sherlock Holmes corpus and of the remakes corpus (v2/second/PLAN.md, Sections 2, 3, 10 and 15), each computed from a committed file by v2/second/corpus_counts.py. value: the count; what: what it counts; source: the file and how it was counted.",
+ "holmes": {
+  "texts": {
+   "value": 379,
+   "what": "texts in the corpus (the plot section of each work's own Wikipedia article)",
+   "source": "data/second/holmes/corpus.jsonl: rows"
+  },
+  "texts_by_kind": {
+   "value": {
+    "stories": 60,
+    "screen works": 81,
+    "ancestors": 5,
+    "detective films": 229,
+    "not used": 4
+   },
+   "what": "texts by kind: the Conan Doyle stories, the screen works, the ancestors (read, used by no test), the detective films (the negatives of E1) and the pages kept in the file but not used",
+   "source": "data/second/holmes/corpus.jsonl: rows by `group`"
+  },
+  "sentences": {
+   "value": 9837,
+   "what": "sentences in all the texts together",
+   "source": "data/second/holmes/corpus.jsonl: sum of the lengths of `sentences`"
+  },
+  "sentences_per_text": {
+   "value": {
+    "min": 8,
+    "median": 27,
+    "max": 40
+   },
+   "what": "sentences per text (PLAN Section 2 sets the fewest a text may have and the most that are kept)",
+   "source": "data/second/holmes/corpus.jsonl: length of `sentences`"
+  },
+  "name_free_texts": {
+   "value": 379,
+   "what": "name-free versions of the texts (every name replaced by a code)",
+   "source": "data/second/holmes/corpus_neutral.jsonl: rows"
+  },
+  "screen_works_by_medium": {
+   "value": {
+    "films": 46,
+    "television films or programmes": 9,
+    "episodes": 13,
+    "video games": 13
+   },
+   "what": "screen works by medium, from the kind of the page's first infobox",
+   "source": "data/second/holmes/corpus.jsonl: `medium` of the rows whose `group` is screen"
+  },
+  "screen_works_by_the_readers_label": {
+   "value": {
+    "films": 47,
+    "television films": 6,
+    "pages about a whole series": 2,
+    "episodes": 13,
+    "video games": 13
+   },
+   "what": "screen works by the label the readers of the articles gave (series: the page is about a whole series, not one work)",
+   "source": "data/second/holmes/works.json: works > * > kind"
+  },
+  "pages_about_a_whole_series": {
+   "value": 2,
+   "what": "screen-work pages that, by the readers' label, are about a whole series; they stay in the corpus",
+   "source": "data/second/holmes/works.json: works whose kind is series"
+  },
+  "novels": {
+   "value": 4,
+   "what": "novels among the stories",
+   "source": "data/second/holmes/spec.json: strata, over the ids of `early`"
+  },
+  "short_stories": {
+   "value": 56,
+   "what": "short stories among the stories",
+   "source": "data/second/holmes/spec.json: strata, over the ids of `early`"
+  },
+  "primary_adaptations": {
+   "value": 22,
+   "what": "screen works whose article states at least one story at tier A (an adaptation) or B (a loose or partial adaptation)",
+   "source": "data/second/holmes/spec.json: adaptations (keys)"
+  },
+  "stories_with_a_primary_adaptation": {
+   "value": 14,
+   "what": "stories that at least one primary adaptation names at tier A or B",
+   "source": "data/second/holmes/spec.json: adaptations (distinct values)"
+  },
+  "primary_adaptations_naming_more_than_one_story": {
+   "value": 2,
+   "what": "primary adaptations that name two or more stories at tier A or B",
+   "source": "data/second/holmes/spec.json: adaptations (values with more than one story)"
+  },
+  "primary_adaptations_of_the_hound_of_the_baskervilles": {
+   "value": 8,
+   "what": "primary adaptations that are versions of The Hound of the Baskervilles",
+   "source": "data/second/holmes/spec.json: adaptations whose stories include id 2 (the row of corpus.jsonl titled The Hound of the Baskervilles)"
+  },
+  "straight_adaptations": {
+   "value": 9,
+   "what": "screen works with a tier A story (the article states it is an adaptation of the story)",
+   "source": "data/second/holmes/spec.json: adaptations_straight (keys)"
+  },
+  "straight_adaptations_of_the_hound_of_the_baskervilles": {
+   "value": 5,
+   "what": "straight adaptations that are versions of The Hound of the Baskervilles",
+   "source": "data/second/holmes/spec.json: adaptations_straight whose stories include id 2"
+  },
+  "elements_only_works": {
+   "value": 16,
+   "what": "screen works whose article states only that elements, characters or a title are taken (tier C and nothing stronger)",
+   "source": "data/second/holmes/spec.json: adaptations_elements_only (keys)"
+  },
+  "stories_named_by_the_elements_only_works": {
+   "value": 21,
+   "what": "stories the elements-only works name at tier C",
+   "source": "data/second/holmes/spec.json: adaptations_elements_only (distinct values)"
+  },
+  "screen_works_with_no_stated_source": {
+   "value": 43,
+   "what": "screen works whose article states no Conan Doyle source (the baseline of E2 and the later works of E3)",
+   "source": "data/second/holmes/spec.json: baseline"
+  },
+  "works_the_two_readers_disagreed_on": {
+   "value": 2,
+   "what": "screen works on which the two readers of the articles differed; a third reader read them and the majority decided",
+   "source": "data/second/holmes/works.json: works_read_by_a_third_reader"
+  },
+  "screen_works_in_which_holmes_appears": {
+   "value": 74,
+   "what": "screen works in which, by both readers, Sherlock Holmes appears as a character",
+   "source": "data/second/holmes/spec.json: franchise_where_holmes_appears"
+  },
+  "screen_works_by_era": {
+   "value": {
+    "1950 to 1999": 22,
+    "up to 1949": 24,
+    "from 2000": 35
+   },
+   "what": "the screen works (the franchise of E1) by era",
+   "source": "data/second/holmes/spec.json: era, over the ids of `franchise`"
+  },
+  "detective_films_by_era": {
+   "value": {
+    "up to 1949": 148,
+    "1950 to 1999": 61,
+    "from 2000": 20
+   },
+   "what": "the detective films (the negatives of E1) by era",
+   "source": "data/second/holmes/spec.json: era, over the ids of `negatives`"
+  },
+  "lineage_works": {
+   "value": 141,
+   "what": "works of the lineage of E2: the stories and the screen works",
+   "source": "data/second/holmes/spec.json: lineage"
+  },
+  "later_works_widened": {
+   "value": 59,
+   "what": "screen works that are not primary adaptations (the wider set of later works that E3 reports beside)",
+   "source": "data/second/holmes/spec.json: later"
+  },
+  "screen_works_that_are_films": {
+   "value": 46,
+   "what": "screen works that are films (the franchise narrowed to its films, a robustness check of E1)",
+   "source": "data/second/holmes/spec.json: franchise_films_only"
+  },
+  "texts_that_are_documents_of_v2_reference_corpus": {
+   "value": 112,
+   "what": "films of the Holmes corpus (screen works and detective films) that are, in an older wording, among the film plots of v2's reference corpus",
+   "source": "data/second/holmes/spec.json: in_reference_corpus"
+  },
+  "of_which_background_plots": {
+   "value": 34,
+   "what": "of those, the ones among its background plots (they are left out of the base rates)",
+   "source": "data/second/holmes/spec.json: in_reference_corpus whose set is bgplot"
+  },
+  "of_which_other_reference_plots": {
+   "value": 78,
+   "what": "of those, the ones among its other film plots",
+   "source": "data/second/holmes/spec.json: in_reference_corpus whose set is not bgplot"
+  },
+  "reference_documents_by_kind_of_text": {
+   "value": {
+    "detective films": 96,
+    "screen works": 16
+   },
+   "what": "the same films by kind of text",
+   "source": "data/second/holmes/spec.json: in_reference_corpus > id, with `group` of corpus.jsonl"
+  },
+  "texts_shared_with_the_batman_study": {
+   "value": 2,
+   "what": "texts that are, sentence for sentence, texts of the Batman study (PLAN Section 4 names them)",
+   "source": "data/second/holmes/spec.json: texts_shared_with_the_batman_study"
+  },
+  "stories_with_page_views": {
+   "value": 60,
+   "what": "stories with a page-view total (the popularity measure of E3)",
+   "source": "data/second/holmes/pageviews.json: keys that are ids of spec.json `early`"
+  },
+  "months_of_page_views": {
+   "value": [
+    135
+   ],
+   "what": "months in the page-view window of each story",
+   "source": "data/second/holmes/pageviews.json: * > months, over the stories"
+  },
+  "texts_asked_question_h1": {
+   "value": 379,
+   "what": "texts each model was asked question H1 about (which famous hero is the story about?)",
+   "source": "results/v2/second/holmes_recognition_<tag>.json: entries of `h1` (Qwen3-32B, Qwen3-8B, Llama 3.1 8B, Llama 3.3 70B)"
+  },
+  "texts_asked_question_h2": {
+   "value": 141,
+   "what": "texts each model was asked question H2 about (which Conan Doyle story does it tell or adapt?): the lineage works",
+   "source": "results/v2/second/holmes_recognition_<tag>.json: entries of `h2` (Qwen3-32B, Qwen3-8B, Llama 3.1 8B, Llama 3.3 70B)"
+  },
+  "background_plots_of_the_base_rates": {
+   "value": 2965,
+   "what": "background film plots the base rates are counted over (v2's background plots less those left out)",
+   "source": "results/v2/second/holmes_words.json: n_background_plots"
+  },
+  "share_of_name_free_sentences_matching_the_iconography_list": {
+   "value": {
+    "franchise": 0.11507140935261435,
+    "negatives": 0.03510074775874554
+   },
+   "what": "share of name-free sentences that match the iconography list (they are dropped in one clause of E1), in screen works and in detective films",
+   "source": "results/v2/second/holmes_words.json: counts > share_of_name_free_sentences_matching_the_iconography_list"
+  },
+  "words_of_an_article_shown_to_the_readers_at_most": {
+   "value": 1400,
+   "what": "the most words of a screen work's article that the readers were shown (plot, cast and end sections left out)",
+   "source": "v2/second/build_holmes.py: the default of max_words in article_without_plot"
+  },
+  "articles_cut_short_by_the_word_limit": {
+   "value": 6,
+   "what": "screen-work articles that were cut short for the readers: the text shown is exactly as long as the limit (a longer text is never shown)",
+   "source": "results/v2/second/readers/holmes_sources/r1_*.prompt.txt: articles whose section text has as many words as the limit"
+  },
+  "screen_works_from_2000_by_medium": {
+   "value": {
+    "films": 9,
+    "television films or programmes": 3,
+    "episodes": 13,
+    "video games": 10
+   },
+   "what": "the screen works from 2000 on by medium, from the kind of the page's first infobox (the era in which most screen works are not films)",
+   "source": "data/second/holmes/corpus.jsonl: `medium` of the screen works whose `era` is from_2000"
+  },
+  "screen_works_from_2000_that_are_not_films": {
+   "value": 26,
+   "what": "screen works from 2000 on that are not films: episodes, video games and television films or programmes",
+   "source": "data/second/holmes/corpus.jsonl: screen works whose `era` is from_2000 and whose `medium` is not film"
+  }
+ },
+ "remakes": {
+  "film_table_rows": {
+   "value": 34886,
+   "what": "rows of the film table (the pinned copy of the Wikipedia Movie Plots table)",
+   "source": "data/second/remakes/pairs.json: table > rows"
+  },
+  "film_table_pages": {
+   "value": 34070,
+   "what": "Wikipedia pages of the film table",
+   "source": "data/second/remakes/pairs.json: table > pages"
+  },
+  "film_table_pages_with_several_rows": {
+   "value": 780,
+   "what": "pages the table lists in several rows (one row per page is used)",
+   "source": "data/second/remakes/pairs.json: table > pages_with_several_rows"
+  },
+  "film_table_pages_where_a_later_row_is_used": {
+   "value": 126,
+   "what": "of those, the pages for which a row other than the first is used",
+   "source": "data/second/remakes/pairs.json: table > pages_where_a_later_row_is_used"
+  },
+  "sentences_with_remake_remade_or_reboot": {
+   "value": 3482,
+   "what": "sentences in the opening of a film's article that contain remake, remade or reboot",
+   "source": "results/v2/second/readers/remake_statements/statements.jsonl: rows"
+  },
+  "statements_read": {
+   "value": 1693,
+   "what": "statements: those sentences that link to at least one other page of the table; each was read by two readers",
+   "source": "results/v2/second/readers/remake_statements/statements.jsonl: rows with a non-empty links_in_table"
+  },
+  "statements_the_two_readers_read_differently": {
+   "value": 9,
+   "what": "statements the two readers read differently; a third reader read them",
+   "source": "results/v2/second/readers/remake_statements/r3_*.out.json: distinct items"
+  },
+  "stated_pairs": {
+   "value": 1130,
+   "what": "pairs (remake, source) stated by at least one statement and contradicted by none",
+   "source": "data/second/remakes/pairs.json: pairs and dropped together"
+  },
+  "kept_pairs": {
+   "value": 482,
+   "what": "stated pairs that meet every condition of PLAN Section 3 (years in order, both plots long enough, two different texts)",
+   "source": "data/second/remakes/pairs.json: pairs"
+  },
+  "dropped_pairs": {
+   "value": 648,
+   "what": "stated pairs that fail a condition",
+   "source": "data/second/remakes/pairs.json: dropped"
+  },
+  "dropped_pairs_by_reason": {
+   "value": {
+    "a plot under 15 sentences": 643,
+    "the remake's year in the table is earlier than the source's": 5
+   },
+   "what": "the dropped pairs by the condition they fail",
+   "source": "data/second/remakes/pairs.json: dropped > * > dropped_because"
+  },
+  "kept_pairs_by_block_and_wording": {
+   "value": {
+    "indian_cross_industry | firm": 220,
+    "indian_cross_industry | loose": 7,
+    "other_cross_industry | firm": 50,
+    "other_cross_industry | loose": 30,
+    "same_industry | firm": 145,
+    "same_industry | loose": 30
+   },
+   "what": "kept pairs by block (the industries of the two films) and by the wording of the statement (firm or loose)",
+   "source": "data/second/remakes/pairs.json: pairs > * > block, wording"
+  },
+  "kept_pairs_by_wording": {
+   "value": {
+    "firm": 415,
+    "loose": 67
+   },
+   "what": "kept pairs by the wording of the statement",
+   "source": "data/second/remakes/pairs.json: pairs > * > wording"
+  },
+  "copied_pairs": {
+   "value": 105,
+   "what": "kept pairs flagged copied: at least 10% of the five-word sequences of the remake's text are also in the source's text",
+   "source": "data/second/remakes/pairs.json: pairs > * > copied"
+  },
+  "set_primary": {
+   "value": {
+    "pairs": 220,
+    "copied": 100,
+    "not_copied": 120,
+    "under_1pct_of_five_word_sequences_shared": 96,
+    "remakes": 217,
+    "sources": 185,
+    "families": 175
+   },
+   "what": "the primary set (firm Indian cross-industry pairs): pairs, how many are copied and not copied, how many share under 1% of five-word sequences, and their distinct remakes, sources and families",
+   "source": "data/second/remakes/pairs.json: pairs > * > wording, block, copied, share_of_five_word_sequences_also_in_source, remake, source, family"
+  },
+  "set_firm_other_cross_industry": {
+   "value": {
+    "pairs": 50,
+    "copied": 2,
+    "not_copied": 48,
+    "under_1pct_of_five_word_sequences_shared": 45,
+    "remakes": 50,
+    "sources": 49,
+    "families": 47
+   },
+   "what": "the firm pairs of other cross-industry remakes: pairs, how many are copied and not copied, how many share under 1% of five-word sequences, and their distinct remakes, sources and families",
+   "source": "data/second/remakes/pairs.json: pairs > * > wording, block, copied, share_of_five_word_sequences_also_in_source, remake, source, family"
+  },
+  "set_firm_same_industry": {
+   "value": {
+    "pairs": 145,
+    "copied": 3,
+    "not_copied": 142,
+    "under_1pct_of_five_word_sequences_shared": 129,
+    "remakes": 143,
+    "sources": 140,
+    "families": 134
+   },
+   "what": "the firm pairs within one industry: pairs, how many are copied and not copied, how many share under 1% of five-word sequences, and their distinct remakes, sources and families",
+   "source": "data/second/remakes/pairs.json: pairs > * > wording, block, copied, share_of_five_word_sequences_also_in_source, remake, source, family"
+  },
+  "set_firm_all": {
+   "value": {
+    "pairs": 415,
+    "copied": 105,
+    "not_copied": 310,
+    "under_1pct_of_five_word_sequences_shared": 270,
+    "remakes": 410,
+    "sources": 370,
+    "families": 349
+   },
+   "what": "all the firm pairs: pairs, how many are copied and not copied, how many share under 1% of five-word sequences, and their distinct remakes, sources and families",
+   "source": "data/second/remakes/pairs.json: pairs > * > wording, block, copied, share_of_five_word_sequences_also_in_source, remake, source, family"
+  },
+  "set_loose_all": {
+   "value": {
+    "pairs": 67,
+    "copied": 0,
+    "not_copied": 67,
+    "under_1pct_of_five_word_sequences_shared": 67,
+    "remakes": 65,
+    "sources": 66,
+    "families": 64
+   },
+   "what": "the loose pairs: pairs, how many are copied and not copied, how many share under 1% of five-word sequences, and their distinct remakes, sources and families",
+   "source": "data/second/remakes/pairs.json: pairs > * > wording, block, copied, share_of_five_word_sequences_also_in_source, remake, source, family"
+  },
+  "primary_pairs": {
+   "value": 220,
+   "what": "pairs of the primary set: firm statements, both films from different Indian industries",
+   "source": "data/second/remakes/pairs.json: pairs with wording firm and block indian_cross_industry"
+  },
+  "primary_pairs_copied": {
+   "value": 100,
+   "what": "primary pairs flagged copied (the positive control of the heredity test)",
+   "source": "data/second/remakes/pairs.json: primary pairs > copied"
+  },
+  "primary_pairs_not_copied": {
+   "value": 120,
+   "what": "primary pairs not flagged copied (the confirmatory heredity test is run on these)",
+   "source": "data/second/remakes/pairs.json: primary pairs > copied"
+  },
+  "primary_pairs_with_under_1pct_of_five_word_sequences_shared": {
+   "value": 96,
+   "what": "primary pairs whose remake shares under 1% of its five-word sequences with the source",
+   "source": "data/second/remakes/pairs.json: primary pairs > share_of_five_word_sequences_also_in_source below 0.01"
+  },
+  "primary_remakes": {
+   "value": 217,
+   "what": "distinct remakes in the primary set",
+   "source": "data/second/remakes/pairs.json: primary pairs > remake"
+  },
+  "primary_sources": {
+   "value": 185,
+   "what": "distinct sources in the primary set",
+   "source": "data/second/remakes/pairs.json: primary pairs > source"
+  },
+  "primary_families": {
+   "value": 175,
+   "what": "families in the primary set (a family is one cluster in every test)",
+   "source": "data/second/remakes/pairs.json: primary pairs > family"
+  },
+  "primary_remakes_with_two_or_more_documented_sources": {
+   "value": 3,
+   "what": "remakes of the primary set with two or more documented sources (each pair is one entry)",
+   "source": "data/second/remakes/pairs.json: primary pairs > remake"
+  },
+  "families": {
+   "value": 400,
+   "what": "families of films in all (films joined by a remake statement, a shared article, or copied text); every kept pair lies within one family",
+   "source": "data/second/remakes/pairs.json: families > n"
+  },
+  "relatives_in_no_kept_pair": {
+   "value": 69,
+   "what": "films read that belong to the family of a kept pair but are in no kept pair themselves (never a candidate for their family's remakes)",
+   "source": "data/second/remakes/pairs.json: relatives_that_are_not_in_a_kept_pair"
+  },
+  "films_of_the_kept_pairs": {
+   "value": 887,
+   "what": "distinct films in the kept pairs",
+   "source": "data/second/remakes/rows.json: pair_films"
+  },
+  "remakes_of_the_kept_pairs": {
+   "value": 471,
+   "what": "distinct remakes in the kept pairs (the rows of the counts)",
+   "source": "data/second/remakes/rows.json: rows"
+  },
+  "sources_of_the_kept_pairs": {
+   "value": 430,
+   "what": "distinct sources in the kept pairs",
+   "source": "data/second/remakes/pairs.json: pairs > * > source"
+  },
+  "films_read": {
+   "value": 16218,
+   "what": "films read: every film of the table with a long enough cleaned plot from an industry that is the source's in some kept pair, and every film of a kept pair",
+   "source": "data/second/remakes/films_index.json: films"
+  },
+  "films_read_by_industry": {
+   "value": {
+    "American": 9867,
+    "British": 1359,
+    "Bollywood": 1290,
+    "Tamil": 1111,
+    "Japanese": 603,
+    "Telugu": 550,
+    "Malayalam": 397,
+    "Hong Kong": 292,
+    "Canadian": 281,
+    "Australian": 189,
+    "Kannada": 142,
+    "South_Korean": 105,
+    "Bengali": 25,
+    "Chinese": 4,
+    "Bangladeshi": 2,
+    "Marathi": 1
+   },
+   "what": "films read by the table's industry label",
+   "source": "data/second/remakes/films_index.json: films > * > origin"
+  },
+  "films_read_of_the_indian_industries": {
+   "value": 3516,
+   "what": "films read whose industry is one of the Indian industries",
+   "source": "data/second/remakes/films_index.json: films > * > origin, with the list INDIAN of v2/second/build_remakes.py"
+  },
+  "sentences_per_film": {
+   "value": {
+    "min": 15,
+    "median": 29.0,
+    "max": 40
+   },
+   "what": "cleaned sentences per film read (PLAN Section 3 sets the fewest a film may have and the most that are kept)",
+   "source": "data/second/remakes/films_index.json: films > * > n_sentences"
+  },
+  "films_read_by_each_model": {
+   "value": {
+    "Qwen3-32B": 16218,
+    "Qwen3-8B": 16218,
+    "Llama 3.1 8B": 16218,
+    "Llama 3.3 70B": 3926
+   },
+   "what": "films each model read (Llama 3.3 70B read the films of the Indian industries and every film of a pair)",
+   "source": "results/v2/second/remakes_verify_<tag>.json: films_read_by_the_model"
+  },
+  "models_that_read_every_film": {
+   "value": [
+    "Qwen3-32B",
+    "Qwen3-8B",
+    "Llama 3.1 8B"
+   ],
+   "what": "models that read every film",
+   "source": "results/v2/second/remakes_verify_<tag>.json: films_read_by_the_model equal to the films of films_index.json"
+  },
+  "cells_recounted_per_model": {
+   "value": [
+    417777
+   ],
+   "what": "counts of shared units (each remake against each film of a pair) recounted away from the GPU machine for each model; none differs",
+   "source": "results/v2/second/remakes_verify_<tag>.json: cells_compared"
+  },
+  "candidates_per_primary_pair": {
+   "value": {
+    "min": 89,
+    "median": 1544.0,
+    "max": 3373
+   },
+   "what": "candidate films per primary pair, the source not counted: films of the Indian industries other than the remake's own (the primary frame), never later than the remake, never of its family",
+   "source": "data/second/remakes/films_index.json (origin, year, family) and pairs.json (primary pairs), counted here by the rule of PLAN Section 9"
+  },
+  "candidates_per_primary_pair_source_industry": {
+   "value": {
+    "min": 26,
+    "median": 381.0,
+    "max": 1240
+   },
+   "what": "candidate films per primary pair, the source not counted: films of the source's industry (the scouts' frame), never later than the remake, never of its family",
+   "source": "data/second/remakes/films_index.json (origin, year, family) and pairs.json (primary pairs), counted here by the rule of PLAN Section 9"
+  },
+  "candidates_per_primary_pair_all": {
+   "value": {
+    "min": 3199,
+    "median": 11939.0,
+    "max": 16216
+   },
+   "what": "candidate films per primary pair, the source not counted: every film read, never later than the remake, never of its family",
+   "source": "data/second/remakes/films_index.json (origin, year, family) and pairs.json (primary pairs), counted here by the rule of PLAN Section 9"
+  },
+  "pool_sizes_per_primary_pair_as_stored": {
+   "value": {
+    "set": {
+     "min": 90,
+     "median": 1545.0,
+     "max": 3374
+    },
+    "source_industry": {
+     "min": 27,
+     "median": 382.0,
+     "max": 1241
+    },
+    "all": {
+     "min": 3200,
+     "median": 11940.0,
+     "max": 16217
+    }
+   },
+   "what": "the same sizes as the analysis stores them: they count the source, so each is one more than the candidates (PLAN Section 16, entry 6)",
+   "source": "results/v2/second/remakes_words.json: counts > sets > primary > pools > <frame> > min, median, max"
+  },
+  "pair_films_that_are_documents_of_v2_reference_corpus": {
+   "value": {
+    "films of the pairs": 887,
+    "reference documents": 479,
+    "of which background plots": 159
+   },
+   "what": "films of the kept pairs that are, in the table's older wording, documents of v2's reference corpus",
+   "source": "results/v2/second/remakes_words.json: counts > pair_films_in_v2_reference_corpus"
+  },
+  "primary_films_that_are_documents_of_v2_reference_corpus": {
+   "value": {
+    "films of the primary set": 401,
+    "reference documents": 228,
+    "of which background plots": 72
+   },
+   "what": "the same for the films of the primary set",
+   "source": "results/v2/second/remakes_words.json: counts > pair_films_in_v2_reference_corpus"
+  },
+  "primary_pairs_whose_source_is_a_reference_document": {
+   "value": 137,
+   "what": "primary pairs whose source is a document of v2's reference corpus",
+   "source": "results/v2/second/remakes_words.json: counts > pair_films_in_v2_reference_corpus > entries_whose_source_is_a_reference_document > primary"
+  },
+  "word_columns_of_the_word_model": {
+   "value": {
+    "registered": 39,
+    "the designers'": 31,
+    "measures added by rule (each in two forms)": 4
+   },
+   "what": "columns of the registered word model: the designers' columns and those of the measures added by rule before the freeze",
+   "source": "results/v2/second/remakes_words.json: word_columns > columns_with_the_cube, columns_of_the_designers_with_the_cube, added_measures"
+  },
+  "stand_ins": {
+   "value": 74,
+   "what": "word-only stand-ins that go through the decision test in the units' place",
+   "source": "results/v2/second/remakes_words.json: word_columns > panel"
+  },
+  "films_asked_question_r1": {
+   "value": 887,
+   "what": "films each model was asked question R1 about (which film is this a plot summary of?): every film of a kept pair",
+   "source": "results/v2/second/remakes_recognition_<tag>.json: entries of `r1` (Qwen3-32B, Qwen3-8B, Llama 3.1 8B, Llama 3.3 70B)"
+  },
+  "remakes_asked_question_r2": {
+   "value": 471,
+   "what": "remakes each model was asked question R2 about (which earlier film does it remake?): every remake of a kept pair",
+   "source": "results/v2/second/remakes_recognition_<tag>.json: entries of `r2` (Qwen3-32B, Qwen3-8B, Llama 3.1 8B, Llama 3.3 70B)"
+  },
+  "statements_read_by_three_readers_that_state_a_pair": {
+   "value": 8,
+   "what": "statements read by a third reader that ended up stating a pair (the other statements read differently state none)",
+   "source": "data/second/remakes/pairs.json: pairs and dropped > * > stated > * > readers equal to 3"
+  }
+ },
+ "checks": [
+  {
+   "what": "texts asked H1, by model, against the texts of the corpus",
+   "values": {
+    "corpus": 379,
+    "qwen3-32b": 379,
+    "qwen3-8b": 379,
+    "llama3.1-8b": 379,
+    "llama3.3-70b": 379
+   },
+   "agree": true
+  },
+  {
+   "what": "texts asked H2, by model, against the lineage",
+   "values": {
+    "lineage": 141,
+    "qwen3-32b": 141,
+    "qwen3-8b": 141,
+    "llama3.1-8b": 141,
+    "llama3.3-70b": 141
+   },
+   "agree": true
+  },
+  {
+   "what": "screen works",
+   "values": {
+    "corpus": 81,
+    "works_json": 81,
+    "spec_franchise": 81
+   },
+   "agree": true
+  },
+  {
+   "what": "primary adaptations (a tier A or B story)",
+   "values": {
+    "spec": 22,
+    "works_json": 22
+   },
+   "agree": true
+  },
+  {
+   "what": "stories with a primary adaptation",
+   "values": {
+    "spec": 14,
+    "works_json": 14
+   },
+   "agree": true
+  },
+  {
+   "what": "straight adaptations (a tier A story)",
+   "values": {
+    "spec": 9,
+    "works_json": 9
+   },
+   "agree": true
+  },
+  {
+   "what": "elements-only works (tier C and nothing stronger)",
+   "values": {
+    "spec": 16,
+    "works_json": 16
+   },
+   "agree": true
+  },
+  {
+   "what": "screen works with no stated source",
+   "values": {
+    "spec": 43,
+    "works_json": 43
+   },
+   "agree": true
+  },
+  {
+   "what": "works the two readers disagreed on",
+   "values": {
+    "works_json_count": 2,
+    "works_with_three_readers": 2,
+    "items_the_third_reader_answered": 2
+   },
+   "agree": true
+  },
+  {
+   "what": "screen works in which Holmes appears",
+   "values": {
+    "spec": 74,
+    "works_json": 74
+   },
+   "agree": true
+  },
+  {
+   "what": "screen works by era",
+   "values": {
+    "spec": {
+     "1950_1999": 22,
+     "to_1949": 24,
+     "from_2000": 35
+    },
+    "corpus": {
+     "1950_1999": 22,
+     "to_1949": 24,
+     "from_2000": 35
+    }
+   },
+   "agree": true
+  },
+  {
+   "what": "screen works that are films",
+   "values": {
+    "spec": 46,
+    "corpus": 46
+   },
+   "agree": true
+  },
+  {
+   "what": "background plots left out of the base rates",
+   "values": {
+    "in_reference_corpus": 34,
+    "background_documents_left_out": 34
+   },
+   "agree": true
+  },
+  {
+   "what": "sets of spec.json against the kinds of corpus.jsonl",
+   "values": {
+    "spec": {
+     "stories": 60,
+     "detective films": 229,
+     "ancestors": 5,
+     "not used": 4
+    },
+    "corpus": {
+     "stories": 60,
+     "detective films": 229,
+     "ancestors": 5,
+     "not used": 4
+    }
+   },
+   "agree": true
+  },
+  {
+   "what": "sentences in all",
+   "values": {
+    "corpus": 9837,
+    "holmes_words": 9837
+   },
+   "agree": true
+  },
+  {
+   "what": "sizes of the sets",
+   "values": {
+    "spec": {
+     "franchise": 81,
+     "negatives": 229,
+     "lineage": 141,
+     "candidates": 60,
+     "adaptations": 22,
+     "baseline": 43,
+     "early": 60
+    },
+    "holmes_words": {
+     "franchise": 81,
+     "negatives": 229,
+     "lineage": 141,
+     "candidates": 60,
+     "adaptations": 22,
+     "baseline": 43,
+     "early": 60
+    }
+   },
+   "agree": true
+  },
+  {
+   "what": "texts in the question file v2/cache/second/jobs/holmes_h1.json (not committed)",
+   "values": {
+    "question_file": 379,
+    "expected": 379
+   },
+   "agree": true
+  },
+  {
+   "what": "texts in the question file v2/cache/second/jobs/holmes_h2.json (not committed)",
+   "values": {
+    "question_file": 141,
+    "expected": 141
+   },
+   "agree": true
+  },
+  {
+   "what": "articles the two readers were shown, against the screen works",
+   "values": {
+    "corpus": 81,
+    "r1": 81,
+    "r2": 81
+   },
+   "agree": true
+  },
+  {
+   "what": "articles cut short by the word limit, in each reader's prompts",
+   "values": {
+    "r1": 6,
+    "r2": 6
+   },
+   "agree": true
+  },
+  {
+   "what": "no article is shown beyond the limit (longest text shown, against the limit)",
+   "values": {
+    "longest_shown": 1400,
+    "limit": 1400
+   },
+   "agree": true
+  },
+  {
+   "what": "copied pairs: the flag, against the stored share of five-word sequences and the builder's threshold",
+   "values": {
+    "flagged": 105,
+    "share_at_or_above_the_threshold": 105
+   },
+   "agree": true
+  },
+  {
+   "what": "families: the stored number, against the families of the kept pairs and the families of the films read",
+   "values": {
+    "stored": 400,
+    "of_the_kept_pairs": 400,
+    "of_the_films_read": 400
+   },
+   "agree": true
+  },
+  {
+   "what": "films read that have a family: the films of the kept pairs and the relatives in no kept pair",
+   "values": {
+    "films_with_a_family": 956,
+    "pair_films_and_relatives": 956
+   },
+   "agree": true
+  },
+  {
+   "what": "recounted cells that differ, by model (all must be 0)",
+   "values": {
+    "qwen3-32b": 0,
+    "qwen3-8b": 0,
+    "llama3.1-8b": 0,
+    "llama3.3-70b": 0,
+    "expected": 0
+   },
+   "agree": true
+  },
+  {
+   "what": "films read by Llama 3.3 70B against the films of the Indian industries and of the pairs",
+   "values": {
+    "verify_file": 3926,
+    "films_index": 3926
+   },
+   "agree": true
+  },
+  {
+   "what": "films read by Qwen3-32B: the committed recount against v2/acts_second/remakes/qwen3-32b/meta.json (not committed)",
+   "values": {
+    "verify_file": 16218,
+    "meta": 16218
+   },
+   "agree": true
+  },
+  {
+   "what": "films read by Qwen3-8B: the committed recount against v2/acts_second/remakes/qwen3-8b/meta.json (not committed)",
+   "values": {
+    "verify_file": 16218,
+    "meta": 16218
+   },
+   "agree": true
+  },
+  {
+   "what": "films read by Llama 3.1 8B: the committed recount against v2/acts_second/remakes/llama3.1-8b/meta.json (not committed)",
+   "values": {
+    "verify_file": 16218,
+    "meta": 16218
+   },
+   "agree": true
+  },
+  {
+   "what": "films read by Llama 3.3 70B: the committed recount against v2/acts_second/remakes/llama3.3-70b/meta.json (not committed)",
+   "values": {
+    "verify_file": 3926,
+    "meta": 3926
+   },
+   "agree": true
+  },
+  {
+   "what": "candidates per primary pair, frame set: counted here, against the stored pool sizes less the source",
+   "values": {
+    "counted_here": {
+     "min": 89,
+     "median": 1544.0,
+     "max": 3373
+    },
+    "stored_less_one": {
+     "min": 89,
+     "median": 1544.0,
+     "max": 3373
+    }
+   },
+   "agree": true
+  },
+  {
+   "what": "candidates per primary pair, frame source_industry: counted here, against the stored pool sizes less the source",
+   "values": {
+    "counted_here": {
+     "min": 26,
+     "median": 381.0,
+     "max": 1240
+    },
+    "stored_less_one": {
+     "min": 26,
+     "median": 381.0,
+     "max": 1240
+    }
+   },
+   "agree": true
+  },
+  {
+   "what": "candidates per primary pair, frame all: counted here, against the stored pool sizes less the source",
+   "values": {
+    "counted_here": {
+     "min": 3199,
+     "median": 11939.0,
+     "max": 16216
+    },
+    "stored_less_one": {
+     "min": 3199,
+     "median": 11939.0,
+     "max": 16216
+    }
+   },
+   "agree": true
+  },
+  {
+   "what": "primary set: pairs.json against remakes_words.json",
+   "values": {
+    "pairs_json": {
+     "pairs": 220,
+     "copied": 100,
+     "not_copied": 120,
+     "under_1pct_of_five_word_sequences_shared": 96,
+     "remakes": 217,
+     "sources": 185,
+     "families": 175
+    },
+    "remakes_words": {
+     "pairs": 220,
+     "copied": 100,
+     "not_copied": 120,
+     "under_1pct_of_five_word_sequences_shared": 96,
+     "remakes": 217,
+     "sources": 185,
+     "families": 175
+    }
+   },
+   "agree": true
+  },
+  {
+   "what": "kept pairs, their families, remakes, sources and films; films read; copied pairs",
+   "values": {
+    "data_files": {
+     "pairs": 482,
+     "families": 400,
+     "remakes": 471,
+     "sources": 430,
+     "films": 887,
+     "films_read": 16218,
+     "copied": 105,
+     "indian": 3516
+    },
+    "remakes_words": {
+     "pairs": 482,
+     "families": 400,
+     "remakes": 471,
+     "sources": 430,
+     "films": 887,
+     "films_read": 16218,
+     "copied": 105,
+     "indian": 3516
+    }
+   },
+   "agree": true
+  },
+  {
+   "what": "kept pairs by block and wording",
+   "values": {
+    "pairs_json": {
+     "indian_cross_industry | firm": 220,
+     "indian_cross_industry | loose": 7,
+     "other_cross_industry | firm": 50,
+     "other_cross_industry | loose": 30,
+     "same_industry | firm": 145,
+     "same_industry | loose": 30
+    },
+    "remakes_words": {
+     "indian_cross_industry | firm": 220,
+     "indian_cross_industry | loose": 7,
+     "other_cross_industry | firm": 50,
+     "other_cross_industry | loose": 30,
+     "same_industry | firm": 145,
+     "same_industry | loose": 30
+    }
+   },
+   "agree": true
+  },
+  {
+   "what": "films asked R1, by model, against the films of the kept pairs",
+   "values": {
+    "rows_json": 887,
+    "qwen3-32b": 887,
+    "qwen3-8b": 887,
+    "llama3.1-8b": 887,
+    "llama3.3-70b": 887
+   },
+   "agree": true
+  },
+  {
+   "what": "remakes asked R2, by model, against the remakes of the kept pairs",
+   "values": {
+    "rows_json": 471,
+    "qwen3-32b": 471,
+    "qwen3-8b": 471,
+    "llama3.1-8b": 471,
+    "llama3.3-70b": 471
+   },
+   "agree": true
+  },
+  {
+   "what": "films in the question file v2/cache/second/jobs/remakes_r1.json (not committed)",
+   "values": {
+    "question_file": 887,
+    "expected": 887
+   },
+   "agree": true
+  },
+  {
+   "what": "films in the question file v2/cache/second/jobs/remakes_r2.json (not committed)",
+   "values": {
+    "question_file": 471,
+    "expected": 471
+   },
+   "agree": true
+  },
+  {
+   "what": "statements read: the statements file against each reader's answers",
+   "values": {
+    "statements": 1693,
+    "r1": 1693,
+    "r2": 1693
+   },
+   "agree": true
+  },
+  {
+   "what": "kept pairs: films of the pairs in rows.json, in pairs.json and flagged in films_index.json",
+   "values": {
+    "rows_json": 887,
+    "pairs_json": 887,
+    "films_index": 887
+   },
+   "agree": true
+  },
+  {
+   "what": "relatives in no kept pair that are among the films read",
+   "values": {
+    "listed": 69,
+    "among_the_films_read": 69
+   },
+   "agree": true
+  },
+  {
+   "what": "year and industry of each film of a pair: pairs.json against films_index.json (pairs that differ; must be 0)",
+   "values": {
+    "differ": 0,
+    "expected": 0
+   },
+   "agree": true
+  },
+  {
+   "what": "pages of the film table: pairs.json against the pages fetched in results/v2/second/logs/second_leads2.log (not committed)",
+   "values": {
+    "pairs_json": 34070,
+    "log": 34070
+   },
+   "agree": true
+  }
+ ],
+ "not_found": [
+  {
+   "count": "pages of the film table that have no article today (PLAN Section 15 gives the count)",
+   "looked_for": "data/second/remakes/pairs.json (table), films_index.json and results/v2/second/readers/remake_statements/: no committed file stores it",
+   "seen_in_a_file_that_is_not_committed": {
+    "file": "results/v2/second/logs/second_leads2.log",
+    "pages_fetched": 34070,
+    "pages_with_no_article": 172
+   }
+  }
+ ]
+}

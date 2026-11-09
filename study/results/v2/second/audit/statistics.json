@@ -1,0 +1,4680 @@
+{
+ "what": "An audit of the remakes decision test (statistics and the size of the effect) from committed outputs only; made by results/v2/second/audit/statistics.py. Each number has 'what' (one line) and 'source' (the committed file and key path it comes from, or the inputs it was computed from).",
+ "sections": {
+  "0_inputs": {
+   "files": {
+    "value": {
+     "model_file": "remakes_qwen3-32b.json",
+     "git_head_of_the_model_file": "95b9d2f559981b61cba688f8d4e5da461ef6caaf",
+     "noise_draws": 2000,
+     "other_model_files_present": [
+      "remakes_llama3.1-8b.json",
+      "remakes_llama3.3-70b.json",
+      "remakes_qwen3-8b.json"
+     ]
+    },
+    "what": "the committed files this audit read",
+    "source": "results/v2/second/"
+   },
+   "seconds": {
+    "value": 4.0,
+    "what": "seconds this script took",
+    "source": "computed"
+   }
+  },
+  "8_arithmetic_checks": {
+   "T_from_family_sums_minus_committed": {
+    "value": 0.0,
+    "what": "sum of family_sums.rows D minus slope.T",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].family_sums, .slope"
+   },
+   "T_from_entries_minus_committed": {
+    "value": 7.105427357601002e-15,
+    "what": "sum of entries_table contributions minus slope.T",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].entries_table, .slope"
+   },
+   "Z_recomputed_minus_committed": {
+    "value": 0.0,
+    "what": "T / sqrt(sum of D squared) minus slope.Z",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].family_sums, .slope"
+   },
+   "largest_gap_family_sum_vs_its_entries": {
+    "value": 0.0,
+    "what": "largest absolute difference between a family's D and the sum of its entries' contributions",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set']"
+   },
+   "largest_gap_open_mass_vs_its_entries": {
+    "value": 0.0,
+    "what": "largest absolute difference between a family's open_mass and the sum of (1 - words probability) of its entries",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set']"
+   },
+   "effective_pairs_recomputed_minus_committed": {
+    "value": 0.0,
+    "what": "sum of (1 - words_probability_of_the_source) minus slope.effective_pairs_left_open",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set']"
+   },
+   "sources_first_by_words_recomputed": {
+    "value": [
+     205,
+     205
+    ],
+    "what": "entries with words_rank_of_the_source = 1, and gain.sources_first_words",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set']"
+   },
+   "sources_first_by_units_recomputed": {
+    "value": [
+     176,
+     176
+    ],
+    "what": "entries with unit_rank_of_the_source = 1, and heredity.hub_corrected.all_entries.source_strictly_above_every_candidate",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set']"
+   },
+   "effective_number_of_families_recomputed_minus_committed": {
+    "value": 0.0,
+    "what": "(sum |D|)^2 / sum D^2 minus the committed value",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].family_sums"
+   },
+   "subsets_recomputed_largest_gap": {
+    "value": 0,
+    "what": "largest absolute difference, over the eleven committed subsets and their fields (entries, families, T, Z, positive, negative, open pairs), between the committed value and the value recomputed from entries_table (the Z of the copied subset left aside: see copied_subset_Z)",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].subsets, .entries_table"
+   },
+   "subset_sign_flip_p_recomputed_and_committed": {
+    "value": {
+     "all_entries": [
+      9.99990000099999e-06,
+      9.99990000099999e-06
+     ],
+     "not_copied": [
+      9.99990000099999e-06,
+      9.99990000099999e-06
+     ],
+     "copied": [
+      1.0,
+      1.0
+     ],
+     "copy_share_under_1pct": [
+      9.99990000099999e-06,
+      9.99990000099999e-06
+     ],
+     "recognised": [
+      0.01907980920190798,
+      0.01907980920190798
+     ],
+     "not_recognised": [
+      8.99991000089999e-05,
+      8.99991000089999e-05
+     ],
+     "recognised_both_films": [
+      0.1875,
+      0.1875
+     ],
+     "not_recognised_both_films": [
+      9.99990000099999e-06,
+      9.99990000099999e-06
+     ],
+     "contributions_set_to_zero_where_the_held_out_source_probability_is_0.99_or_more": [
+      9.99990000099999e-06,
+      9.99990000099999e-06
+     ],
+     "source_is_a_document_of_v2_reference_corpus": [
+      9.99990000099999e-06,
+      9.99990000099999e-06
+     ],
+     "source_is_not_a_document_of_v2_reference_corpus": [
+      0.034929650703492965,
+      0.034929650703492965
+     ]
+    },
+    "what": "each subset's sign-flip p recomputed with the registered seed and draws, beside the committed p",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].subsets"
+   },
+   "copied_subset_Z": {
+    "value": {
+     "T": -1.4517854303335376e-13,
+     "Z_committed": -1.409385228306904,
+     "Z_recomputed": -1.409385228306904,
+     "largest_absolute_contribution_of_a_copied_entry": 9.132247955288857e-14
+    },
+    "what": "the copied subset's Z (-1.41 in the file) is a ratio of rounding residues near 1e-13: it is 0/0 and carries no information",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].subsets.copied"
+   },
+   "adds_up__not_copied__plus__copied": {
+    "value": {
+     "T_gap": 3.552713678800501e-15,
+     "entries": 220,
+     "open_pairs_gap": 0.0
+    },
+    "what": "committed T, entries and open pairs of the two complementary subsets, added and compared with all entries",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].subsets"
+   },
+   "adds_up__recognised__plus__not_recognised": {
+    "value": {
+     "T_gap": 7.105427357601002e-15,
+     "entries": 220,
+     "open_pairs_gap": 0.0
+    },
+    "what": "committed T, entries and open pairs of the two complementary subsets, added and compared with all entries",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].subsets"
+   },
+   "adds_up__recognised_both_films__plus__not_recognised_both_films": {
+    "value": {
+     "T_gap": 3.552713678800501e-15,
+     "entries": 220,
+     "open_pairs_gap": -3.552713678800501e-15
+    },
+    "what": "committed T, entries and open pairs of the two complementary subsets, added and compared with all entries",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].subsets"
+   },
+   "adds_up__source_is_a_document_of_v2_reference_corpus__plus__source_is_not_a_document_of_v2_reference_corpus": {
+    "value": {
+     "T_gap": 7.105427357601002e-15,
+     "entries": 220,
+     "open_pairs_gap": 0.0
+    },
+    "what": "committed T, entries and open pairs of the two complementary subsets, added and compared with all entries",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].subsets"
+   },
+   "largest_families_left_out_gap": {
+    "value": 3.552713678800501e-15,
+    "what": "largest |T without the family + the family's sum - T|, five families",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].subsets.each_of_the_largest_families_left_out"
+   },
+   "decision_block_equals_the_analysis": {
+    "value": true,
+    "what": "decision.slope, decision.gain and decision.recall_rule equal the same blocks of the primary analysis",
+    "source": "remakes_qwen3-32b.json: decision; analyses"
+   },
+   "recall_rule_equals_the_not_recognised_subset": {
+    "value": true,
+    "what": "recall_rule.T_n and p_n equal subsets.not_recognised",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set']"
+   },
+   "primary_plane_row_equals_the_slope": {
+    "value": true,
+    "what": "planes.rows.top1_30 equals slope",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].planes"
+   },
+   "stand_ins_largest_Z_three_places": {
+    "value": [
+     2.2279788170279393,
+     2.2279788170279393,
+     2.2279788170279393
+    ],
+    "what": "the stand-ins' largest Z in the words file, in the decision block and in the noise file",
+    "source": "remakes_words.json: primary_calibration.standins.summary.z_max; decision.standins_largest_Z; remakes_null_size.json: stand_ins_largest_Z"
+   },
+   "noise_file_rates_recomputed": {
+    "value": {
+     "share_Z_above_the_stand_ins_recomputed": 0.0355,
+     "committed": 0.0355,
+     "sd_Z_recomputed": 1.239174095647484,
+     "sd_Z_committed": 1.2391748570902723
+    },
+    "what": "the noise draws' share of Z above the stand-ins' largest Z and the standard deviation of Z, recomputed from Z_sorted (rounded to 4 places)",
+    "source": "remakes_null_size.json: by_columns['39 columns (registered)']"
+   },
+   "recognition_flags_equal_the_recognition_file": {
+    "value": true,
+    "what": "entries_table's two recognition flags equal the 'pairs' rows of the recognition file",
+    "source": "remakes_recognition_qwen3-32b.json: pairs"
+   },
+   "entries_that_disagree_with_pairs_json": {
+    "value": [],
+    "what": "entries whose family, copied flag, block or wording differ from pairs.json (none expected)",
+    "source": "data/second/remakes/pairs.json: pairs"
+   },
+   "counts_of_the_primary_set_against_the_plan": {
+    "value": {
+     "entries": 220,
+     "remakes": 217,
+     "sources": 185,
+     "families": 175,
+     "copied": 100,
+     "copy_share_under_1pct": 96,
+     "source_in_the_reference_corpus": 137,
+     "plan_section_15_says": [
+      220,
+      217,
+      185,
+      175,
+      100,
+      96,
+      137
+     ]
+    },
+    "what": "the primary set's counts recomputed from entries_table, beside PLAN.md Section 15 (220 pairs, 217 remakes, 185 sources, 175 families, 100 copied, 96 under 1%, 137 reference sources)",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].entries_table; v2/second/PLAN.md Section 15"
+   },
+   "families_counted_as_non_zero_that_are_rounding_residue": {
+    "value": {
+     "non_zero": 104,
+     "of_which_abs_at_most_1e-6": 30,
+     "of_which_abs_at_most_1e-12": 12,
+     "positive_among_them": 1,
+     "negative_among_them": 29
+    },
+    "what": "'47 positive against 57 negative' counts every family whose sum is not exactly 0.0; this many of the 104 are zero to within 1e-6 (the word model is certain of the source and the sum is a rounding residue)",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].family_sums.rows"
+   }
+  },
+  "1_influence": {
+   "largest_families_removed_one_after_another": {
+    "value": [
+     {
+      "k": 0,
+      "family_removed": null,
+      "its_remakes": null,
+      "its_sum": null,
+      "T": 25.33327611904908,
+      "Z": 3.454417612582645,
+      "sign_flip_p": 9.99990000099999e-06,
+      "noise_calibrated_p": 0.0004997501249375312
+     },
+     {
+      "k": 1,
+      "family_removed": 175,
+      "its_remakes": [
+       "Judwaa",
+       "Judwaa 2"
+      ],
+      "its_sum": 4.032911559514646,
+      "T": 21.300364559534437,
+      "Z": 3.477540336943768,
+      "sign_flip_p": 1.999980000199998e-05,
+      "noise_calibrated_p": 0.0004997501249375312
+     },
+     {
+      "k": 2,
+      "family_removed": 187,
+      "its_remakes": [
+       "Khoka 420"
+      ],
+      "its_sum": 3.449015976605649,
+      "T": 17.851348582928793,
+      "Z": 3.5267068431883235,
+      "sign_flip_p": 1.999980000199998e-05,
+      "noise_calibrated_p": 0.0004997501249375312
+     },
+     {
+      "k": 3,
+      "family_removed": 379,
+      "its_remakes": [
+       "Vaseegara (film)"
+      ],
+      "its_sum": 2.6354908147905127,
+      "T": 15.215857768138278,
+      "Z": 3.520942756128135,
+      "sign_flip_p": 2.999970000299997e-05,
+      "noise_calibrated_p": 0.0004997501249375312
+     },
+     {
+      "k": 4,
+      "family_removed": 170,
+      "its_remakes": [
+       "Jeena Sirf Merre Liye",
+       "Thithikudhe"
+      ],
+      "its_sum": 1.8579184116549037,
+      "T": 13.357939356483374,
+      "Z": 3.4235648771907465,
+      "sign_flip_p": 6.999930000699993e-05,
+      "noise_calibrated_p": 0.0004997501249375312
+     },
+     {
+      "k": 5,
+      "family_removed": 316,
+      "its_remakes": [
+       "Tadakha"
+      ],
+      "its_sum": 1.728855510559669,
+      "T": 11.629083845923706,
+      "Z": 3.324656703075048,
+      "sign_flip_p": 6.999930000699993e-05,
+      "noise_calibrated_p": 0.0004997501249375312
+     },
+     {
+      "k": 6,
+      "family_removed": 35,
+      "its_remakes": [
+       "Annamalai (film)",
+       "Kondapalli Raja",
+       "Kondapalli Raja"
+      ],
+      "its_sum": 1.6639125968476494,
+      "T": 9.965171249076057,
+      "Z": 3.2388938431126517,
+      "sign_flip_p": 0.00014999850001499985,
+      "noise_calibrated_p": 0.0009995002498750624
+     },
+     {
+      "k": 7,
+      "family_removed": 245,
+      "its_remakes": [
+       "Padaharella Vayasu"
+      ],
+      "its_sum": 1.4235086863334772,
+      "T": 8.54166256274258,
+      "Z": 3.1315607098917115,
+      "sign_flip_p": 0.0003099969000309997,
+      "noise_calibrated_p": 0.0014992503748125937
+     },
+     {
+      "k": 8,
+      "family_removed": 20,
+      "its_remakes": [
+       "Aegan"
+      ],
+      "its_sum": 1.1687842649756122,
+      "T": 7.372878297766968,
+      "Z": 2.991628693256678,
+      "sign_flip_p": 0.0005799942000579994,
+      "noise_calibrated_p": 0.001999000499750125
+     },
+     {
+      "k": 9,
+      "family_removed": 213,
+      "its_remakes": [
+       "Main Tera Hero"
+      ],
+      "its_sum": 1.09780054244986,
+      "T": 6.275077755317108,
+      "Z": 2.8439151350759166,
+      "sign_flip_p": 0.000939990600093999,
+      "noise_calibrated_p": 0.00399800099950025
+     },
+     {
+      "k": 10,
+      "family_removed": 78,
+      "its_remakes": [
+       "Classmates (2007 film)",
+       "Ninaithale Inikkum (2009 film)"
+      ],
+      "its_sum": 0.9921717461780156,
+      "T": 5.282906009139093,
+      "Z": 2.680537071447048,
+      "sign_flip_p": 0.0023299767002329975,
+      "noise_calibrated_p": 0.0079960019990005
+     },
+     {
+      "k": 11,
+      "family_removed": 127,
+      "its_remakes": [
+       "Force (2011 film)"
+      ],
+      "its_sum": 0.8776045273963219,
+      "T": 4.40530148174277,
+      "Z": 2.4964063077657146,
+      "sign_flip_p": 0.0047199528004719955,
+      "noise_calibrated_p": 0.01649175412293853
+     },
+     {
+      "k": 12,
+      "family_removed": 53,
+      "its_remakes": [
+       "Bhale Dongalu"
+      ],
+      "its_sum": 0.8767471168575862,
+      "T": 3.528554364885184,
+      "Z": 2.304065718333266,
+      "sign_flip_p": 0.009009909900900991,
+      "noise_calibrated_p": 0.02798600699650175
+     },
+     {
+      "k": 13,
+      "family_removed": 171,
+      "its_remakes": [
+       "Joker (1993 film)",
+       "Pyaar Impossible!"
+      ],
+      "its_sum": 0.5998801622908327,
+      "T": 2.9286742025943515,
+      "Z": 2.078447294911696,
+      "sign_flip_p": 0.01770982290177098,
+      "noise_calibrated_p": 0.047476261869065464
+     },
+     {
+      "k": 14,
+      "family_removed": 205,
+      "its_remakes": [
+       "Loveria"
+      ],
+      "its_sum": 0.5638847323927185,
+      "T": 2.364789470201633,
+      "Z": 1.8312961658482438,
+      "sign_flip_p": 0.032179678203217967,
+      "noise_calibrated_p": 0.07896051974012994
+     },
+     {
+      "k": 15,
+      "family_removed": 75,
+      "its_remakes": [
+       "Chirodini Tumi Je Amar",
+       "Chirodini Tumi Je Amar 2"
+      ],
+      "its_sum": 0.5292188040037334,
+      "T": 1.8355706661978994,
+      "Z": 1.5583492410095976,
+      "sign_flip_p": 0.05989940100598994,
+      "noise_calibrated_p": 0.12643678160919541
+     },
+     {
+      "k": 16,
+      "family_removed": 167,
+      "its_remakes": [
+       "Ilavelpu"
+      ],
+      "its_sum": 0.449343881023571,
+      "T": 1.3862267851743284,
+      "Z": 1.2731480912342377,
+      "sign_flip_p": 0.1033089669103309,
+      "noise_calibrated_p": 0.1729135432283858
+     },
+     {
+      "k": 17,
+      "family_removed": 56,
+      "its_remakes": [
+       "Bharathan (1992 film)",
+       "Dharma (1998 film)"
+      ],
+      "its_sum": 0.40105368544435244,
+      "T": 0.9851730997299761,
+      "Z": 0.9732361011998114,
+      "sign_flip_p": 0.17041829581704182,
+      "noise_calibrated_p": 0.23638180909545228
+     },
+     {
+      "k": 18,
+      "family_removed": 278,
+      "its_remakes": [
+       "Rowdy Rathore",
+       "Siruthai"
+      ],
+      "its_sum": 0.3805412486494899,
+      "T": 0.6046318510804862,
+      "Z": 0.6445875796757358,
+      "sign_flip_p": 0.27072729272707274,
+      "noise_calibrated_p": 0.3238380809595202
+     },
+     {
+      "k": 19,
+      "family_removed": 262,
+      "its_remakes": [
+       "Puriyaadha Pudhir"
+      ],
+      "its_sum": 0.33662428412355505,
+      "T": 0.26800756695693123,
+      "Z": 0.3061088209040542,
+      "sign_flip_p": 0.3864661353386466,
+      "noise_calibrated_p": 0.4102948525737131
+     },
+     {
+      "k": 20,
+      "family_removed": 101,
+      "its_remakes": [
+       "Dil-E-Nadaan"
+      ],
+      "its_sum": 0.3051220665483103,
+      "T": -0.03711449959137916,
+      "Z": -0.045226154317405044,
+      "sign_flip_p": 0.5188648113518864,
+      "noise_calibrated_p": 0.5137431284357821
+     }
+    ],
+    "what": "T, Z, sign-flip p (registered seed) and noise-calibrated p after the k families with the largest sums are removed, k = 0 to 20 (the noise draws are of the whole list, so the last column is a guide after removals)",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].family_sums.rows; remakes_null_size.json"
+   },
+   "noise_Z_95th_percentile": {
+    "value": 2.03958,
+    "what": "95th percentile of Z over the 2,000 pure-noise draws",
+    "source": "remakes_null_size.json: by_columns['39 columns (registered)'].Z_sorted"
+   },
+   "families_to_remove_for_Z_under_the_stand_ins": {
+    "value": 13,
+    "what": "smallest k for which Z falls below the stand-ins' largest Z (2.2280)",
+    "source": "computed from the ladder"
+   },
+   "families_to_remove_for_Z_under_the_noise_95th_percentile": {
+    "value": 14,
+    "what": "smallest k for which Z falls below the 95th percentile of the pure-noise Z",
+    "source": "computed from the ladder"
+   },
+   "families_to_remove_for_sign_flip_p_at_or_above_0.05": {
+    "value": 15,
+    "what": "smallest k for which the sign-flip p is 0.05 or more",
+    "source": "computed from the ladder"
+   },
+   "families_to_remove_for_T_at_or_below_zero": {
+    "value": 20,
+    "what": "smallest k for which the sum is no longer positive",
+    "source": "computed from the ladder"
+   },
+   "leave_one_family_out_Z_range": {
+    "value": [
+     3.309026489904417,
+     3.5344773375940024
+    ],
+    "what": "smallest and largest Z when any single family is left out",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].family_sums.rows"
+   },
+   "family_sums_winsorised": {
+    "value": [
+     {
+      "family_sums_clipped_at": 4.0,
+      "families_clipped": 1,
+      "T": 25.300364559534437,
+      "Z": 3.458440688751989,
+      "sign_flip_p": 9.99990000099999e-06,
+      "noise_calibrated_p": 0.0004997501249375312
+     },
+     {
+      "family_sums_clipped_at": 3.0,
+      "families_clipped": 2,
+      "T": 23.85134858292879,
+      "Z": 3.6112952588245193,
+      "sign_flip_p": 9.99990000099999e-06,
+      "noise_calibrated_p": 0.0004997501249375312
+     },
+     {
+      "family_sums_clipped_at": 2.0,
+      "families_clipped": 3,
+      "T": 21.215857768138278,
+      "Z": 3.8305747721159835,
+      "sign_flip_p": 9.99990000099999e-06,
+      "noise_calibrated_p": 0.0004997501249375312
+     },
+     {
+      "family_sums_clipped_at": 1.5,
+      "families_clipped": 6,
+      "T": 18.965171249076057,
+      "Z": 3.9574196779480846,
+      "sign_flip_p": 9.99990000099999e-06,
+      "noise_calibrated_p": 0.0004997501249375312
+     },
+     {
+      "family_sums_clipped_at": 1.0,
+      "families_clipped": 9,
+      "T": 15.275077755317106,
+      "Z": 4.101729034249763,
+      "sign_flip_p": 9.99990000099999e-06,
+      "noise_calibrated_p": 0.0004997501249375312
+     },
+     {
+      "family_sums_clipped_at": 0.75,
+      "families_clipped": 12,
+      "T": 12.528554364885185,
+      "Z": 4.154241488823005,
+      "sign_flip_p": 9.99990000099999e-06,
+      "noise_calibrated_p": 0.0004997501249375312
+     },
+     {
+      "family_sums_clipped_at": 0.5,
+      "families_clipped": 16,
+      "T": 9.357074560447469,
+      "Z": 4.137112939796695,
+      "sign_flip_p": 1.999980000199998e-05,
+      "noise_calibrated_p": 0.0004997501249375312
+     },
+     {
+      "family_sums_clipped_at": 0.25,
+      "families_clipped": 24,
+      "T": 5.340509087184239,
+      "Z": 4.183348118330091,
+      "sign_flip_p": 1.999980000199998e-05,
+      "noise_calibrated_p": 0.0004997501249375312
+     },
+     {
+      "family_sums_clipped_at": 0.1,
+      "families_clipped": 29,
+      "T": 2.22580623253787,
+      "Z": 4.023082268327635,
+      "sign_flip_p": 1.999980000199998e-05,
+      "noise_calibrated_p": 0.0004997501249375312
+     }
+    ],
+    "what": "the family sums clipped to plus or minus c: T, Z, sign-flip p, noise-calibrated p",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].family_sums.rows"
+   },
+   "entry_contributions_winsorised": {
+    "value": [
+     {
+      "contributions_clipped_at": 3.0,
+      "entries_clipped": 2,
+      "T": 23.85134858292879,
+      "Z": 3.6112952588245193,
+      "sign_flip_p": 9.99990000099999e-06,
+      "noise_calibrated_p": 0.0004997501249375312
+     },
+     {
+      "contributions_clipped_at": 2.0,
+      "entries_clipped": 3,
+      "T": 21.215857768138278,
+      "Z": 3.8305747721159835,
+      "sign_flip_p": 9.99990000099999e-06,
+      "noise_calibrated_p": 0.0004997501249375312
+     },
+     {
+      "contributions_clipped_at": 1.5,
+      "entries_clipped": 6,
+      "T": 18.83940042999984,
+      "Z": 3.9624845132724773,
+      "sign_flip_p": 9.99990000099999e-06,
+      "noise_calibrated_p": 0.0004997501249375312
+     },
+     {
+      "contributions_clipped_at": 1.0,
+      "entries_clipped": 9,
+      "T": 15.14930693624089,
+      "Z": 4.102975198857124,
+      "sign_flip_p": 9.99990000099999e-06,
+      "noise_calibrated_p": 0.0004997501249375312
+     },
+     {
+      "contributions_clipped_at": 0.75,
+      "entries_clipped": 12,
+      "T": 12.415756163886805,
+      "Z": 4.151958505599406,
+      "sign_flip_p": 9.99990000099999e-06,
+      "noise_calibrated_p": 0.0004997501249375312
+     },
+     {
+      "contributions_clipped_at": 0.5,
+      "entries_clipped": 16,
+      "T": 9.244276359449021,
+      "Z": 4.1264753402843946,
+      "sign_flip_p": 1.999980000199998e-05,
+      "noise_calibrated_p": 0.0004997501249375312
+     },
+     {
+      "contributions_clipped_at": 0.25,
+      "entries_clipped": 24,
+      "T": 5.226071046661827,
+      "Z": 4.146494680937535,
+      "sign_flip_p": 1.999980000199998e-05,
+      "noise_calibrated_p": 0.0004997501249375312
+     }
+    ],
+    "what": "the entries' contributions clipped to plus or minus c before the family sums: T, Z, sign-flip p, noise-calibrated p",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].entries_table"
+   },
+   "share_of_T_in_the_largest_families": {
+    "value": {
+     "1": 0.15919423688285392,
+     "2": 0.29533991185981434,
+     "3": 0.39937267897629414,
+     "5": 0.5409561798768167,
+     "10": 0.7914637655109019,
+     "15": 0.9275430995354899
+    },
+    "what": "share of T held by the k largest family sums",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].family_sums.rows"
+   },
+   "share_of_sum_of_squares_in_the_largest_families": {
+    "value": {
+     "1": 0.3024157191520446,
+     "2": 0.5236015880450179,
+     "3": 0.6527502702161729,
+     "5": 0.7725089299858007,
+     "10": 0.9277780687589975,
+     "15": 0.974202382752814
+    },
+    "what": "share of the sum of squared family sums held by the k largest",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].family_sums.rows"
+   },
+   "effective_number_of_families": {
+    "value": 14.457898680221179,
+    "what": "(sum |D|)^2 / sum D^2, as committed",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].family_sums"
+   },
+   "the_twenty_largest_contributions": {
+    "value": [
+     {
+      "remake": "Judwaa 2",
+      "source": "Hello Brother (1994 film)",
+      "family": 175,
+      "contribution": 4.032911559514646,
+      "share_of_T": 0.15919423688285392,
+      "words_probability_of_the_source": 0.00018387117556464027,
+      "words_rank": 54.0,
+      "unit_rank": 4,
+      "pool": 2226,
+      "recognised": false,
+      "source_in_reference_corpus": true,
+      "years": [
+       2017,
+       1994
+      ],
+      "industries": [
+       "Bollywood",
+       "Telugu"
+      ],
+      "sentences": [
+       33,
+       26
+      ],
+      "statements": [
+       {
+        "on_page": "Hello Brother (1994 film)",
+        "readers": 3,
+        "sentence": "In turn, Hello Brother spawned several of its own remakes, twice in Hindi as Judwaa (1997) and its reboot Judwaa 2 (2017) and in Kannada as Cheluva (1997)."
+       }
+      ],
+      "flags": {
+       "reboot": true,
+       "third_reader": true,
+       "stated_only_off_the_remakes_page": true,
+       "two_steps_from_the_source_through": [
+        "Judwaa"
+       ]
+      },
+      "read_by_hand": "Judwaa 2's own article calls it a reboot of Judwaa (1997), itself the remake of Hello Brother: pairs.json holds Judwaa 2 <- Judwaa as a loose same-industry pair. It is in the primary set as 'firm' only through one sentence on the source's page ('... Judwaa (1997) and its reboot Judwaa 2 (2017)'), on which the two readers differed. Judwaa is of the same family, so it is not among Judwaa 2's candidates."
+     },
+     {
+      "remake": "Khoka 420",
+      "source": "Brindavanam (2010 film)",
+      "family": 187,
+      "contribution": 3.449015976605649,
+      "share_of_T": 0.1361456749769604,
+      "words_probability_of_the_source": 3.6840426390854364e-06,
+      "words_rank": 1676.0,
+      "unit_rank": 1,
+      "pool": 2975,
+      "recognised": true,
+      "source_in_reference_corpus": true,
+      "years": [
+       2013,
+       2010
+      ],
+      "industries": [
+       "Bengali",
+       "Telugu"
+      ],
+      "sentences": [
+       18,
+       38
+      ],
+      "statements": [
+       {
+        "on_page": "Khoka 420",
+        "readers": 2,
+        "sentence": "The film is a remake of the 2010 Telugu film Brindavanam starring [[N."
+       },
+       {
+        "on_page": "Brindavanam (2010 film)",
+        "readers": 2,
+        "sentence": "The film was remade in six other languages: as Love Master (2012) in Odia, Brindavana (2013) in Kannada, Khoka 420 (2013) in Indian Bengali, Buk Fatey To Mukh Foteyna (2012) in Bangladeshi Bengali, Vrundavan (2016) in Marathi, and Hum Hai Jodi No 1 (2016) in Bhojpuri."
+       }
+      ],
+      "flags": {
+       "years_on_the_remakes_page": [
+        2010
+       ],
+       "a_text_of_19_sentences_or_fewer": true
+      },
+      "read_by_hand": "The word model ranks the source 1,676th of 2,975 (below the middle of the pool); the units rank it first, and the model, shown Khoka 420's summary, answers 'Brindavanam' to both recognition questions (counted as recognised)."
+     },
+     {
+      "remake": "Vaseegara (film)",
+      "source": "Nuvvu Naaku Nachav",
+      "family": 379,
+      "contribution": 2.6354908147905127,
+      "share_of_T": 0.10403276711647982,
+      "words_probability_of_the_source": 0.00132218774717192,
+      "words_rank": 7.0,
+      "unit_rank": 1,
+      "pool": 1153,
+      "recognised": false,
+      "source_in_reference_corpus": true,
+      "years": [
+       2003,
+       2001
+      ],
+      "industries": [
+       "Tamil",
+       "Telugu"
+      ],
+      "sentences": [
+       20,
+       19
+      ],
+      "statements": [
+       {
+        "on_page": "Vaseegara (film)",
+        "readers": 2,
+        "sentence": "It is the Tamil remake of the 2001 Telugu film, Nuvvu Naaku Nachav."
+       }
+      ],
+      "flags": {
+       "years_on_the_remakes_page": [
+        2001
+       ],
+       "a_text_of_19_sentences_or_fewer": true
+      },
+      "read_by_hand": null
+     },
+     {
+      "remake": "Jeena Sirf Merre Liye",
+      "source": "Manasantha Nuvve",
+      "family": 170,
+      "contribution": 1.8579268872743402,
+      "share_of_T": 0.07333938486847709,
+      "words_probability_of_the_source": 0.005325669929305228,
+      "words_rank": 9.0,
+      "unit_rank": 6,
+      "pool": 994,
+      "recognised": true,
+      "source_in_reference_corpus": true,
+      "years": [
+       2002,
+       2001
+      ],
+      "industries": [
+       "Bollywood",
+       "Telugu"
+      ],
+      "sentences": [
+       33,
+       30
+      ],
+      "statements": [
+       {
+        "on_page": "Jeena Sirf Merre Liye",
+        "readers": 2,
+        "sentence": "An official remake of the 2001 Telugu film Manasantha Nuvve (2001), Jeena Sirf Merre Liye is about two estranged childhood friends."
+       },
+       {
+        "on_page": "Manasantha Nuvve",
+        "readers": 2,
+        "sentence": "Owing to its success, the film was remade in Kannada as Manasella Neene (2002), in Hindi as Jeena Sirf Merre Liye (2002), in Tamil as Thithikudhe (2003), in Bengali (Bangladesh) as Moner Majhe Tumi (2003), and in Odia as Neijare Megha Mate (2008)."
+       }
+      ],
+      "flags": {
+       "years_on_the_remakes_page": [
+        2001
+       ]
+      },
+      "read_by_hand": null
+     },
+     {
+      "remake": "Kondapalli Raja",
+      "source": "Khudgarz",
+      "family": 35,
+      "contribution": 1.7896749403044299,
+      "share_of_T": 0.07064522298238021,
+      "words_probability_of_the_source": 0.004612892236152091,
+      "words_rank": 7.0,
+      "unit_rank": 27,
+      "pool": 955,
+      "recognised": true,
+      "source_in_reference_corpus": true,
+      "years": [
+       1993,
+       1987
+      ],
+      "industries": [
+       "Telugu",
+       "Bollywood"
+      ],
+      "sentences": [
+       15,
+       40
+      ],
+      "statements": [
+       {
+        "on_page": "Kondapalli Raja",
+        "readers": 2,
+        "sentence": "The film is a remake of the 1987 Hindi movie Khudgarz which in turn was based on Jeffrey Archer's 1979 novel Kane and Abel."
+       },
+       {
+        "on_page": "Kondapalli Raja",
+        "readers": 2,
+        "sentence": "This was the second Telugu remake of Khudgarz after Prana Snehithulu (1988)."
+       }
+      ],
+      "flags": {
+       "two_documented_sources": true,
+       "two_steps_from_the_source_through": [
+        "Annamalai (film)"
+       ],
+       "years_on_the_remakes_page": [
+        1979,
+        1987,
+        1988
+       ],
+       "a_text_of_19_sentences_or_fewer": true
+      },
+      "read_by_hand": "Annamalai's article says Kondapalli Raja is the Telugu remake of Annamalai, itself a remake of Khudgarz; Kondapalli Raja's own article says it remakes Khudgarz. Both are entries; Annamalai is of the same family and is not a candidate here."
+     },
+     {
+      "remake": "Tadakha",
+      "source": "Vettai (film)",
+      "family": 316,
+      "contribution": 1.728855510559669,
+      "share_of_T": 0.06824445059672621,
+      "words_probability_of_the_source": 0.01423272521401719,
+      "words_rank": 9.0,
+      "unit_rank": 9,
+      "pool": 2542,
+      "recognised": false,
+      "source_in_reference_corpus": true,
+      "years": [
+       2013,
+       1986
+      ],
+      "industries": [
+       "Telugu",
+       "Tamil"
+      ],
+      "sentences": [
+       20,
+       24
+      ],
+      "statements": [
+       {
+        "on_page": "Vettai (film)",
+        "readers": 2,
+        "sentence": "The film was remade in Telugu as Tadakha (2013) and in Hindi as Baaghi 3 (2020)."
+       },
+       {
+        "on_page": "Vettai",
+        "readers": 2,
+        "sentence": "The film was remade in Telugu as Tadakha (2013) and in Hindi as Baaghi 3 (2020)."
+       },
+       {
+        "on_page": "Tadakha",
+        "readers": 2,
+        "sentence": "A remake of the 2012 Tamil film Vettai, the film stars Naga Chaitanya, Tamannaah Bhatia, Sunil and Andrea Jeremiah."
+       }
+      ],
+      "flags": {
+       "table_year_of_the_source_contradicts_the_remakes_page": true,
+       "years_on_the_remakes_page": [
+        2012
+       ]
+      },
+      "read_by_hand": "The film table gives 'Vettai (film)' the year 1986; all three statements say Vettai is a film of 2012. The year gap of this pair is 1, not 27."
+     },
+     {
+      "remake": "Padaharella Vayasu",
+      "source": "16 Vayathinile",
+      "family": 245,
+      "contribution": 1.4235086863334772,
+      "share_of_T": 0.05619125926090093,
+      "words_probability_of_the_source": 0.10133422478437598,
+      "words_rank": 3.0,
+      "unit_rank": 4,
+      "pool": 476,
+      "recognised": false,
+      "source_in_reference_corpus": true,
+      "years": [
+       1978,
+       1977
+      ],
+      "industries": [
+       "Telugu",
+       "Tamil"
+      ],
+      "sentences": [
+       17,
+       24
+      ],
+      "statements": [
+       {
+        "on_page": "16 Vayathinile",
+        "readers": 2,
+        "sentence": "Making stars of its director and lead actors, it was remade in Telugu as Padaharella Vayasu (1978), in Hindi as Solva Sawan (1979), and in Malay as (1984)."
+       },
+       {
+        "on_page": "Padaharella Vayasu",
+        "readers": 2,
+        "sentence": "Raghavendra Rao]], it is a remake of the Tamil film 16 Vayathinile (1977), which also starred Sridevi."
+       }
+      ],
+      "flags": {
+       "years_on_the_remakes_page": [
+        1977
+       ],
+       "a_text_of_19_sentences_or_fewer": true
+      },
+      "read_by_hand": null
+     },
+     {
+      "remake": "Aegan",
+      "source": "Main Hoon Na",
+      "family": 20,
+      "contribution": 1.1687842649756122,
+      "share_of_T": 0.046136325182859296,
+      "words_probability_of_the_source": 0.2106634020254841,
+      "words_rank": 2.0,
+      "unit_rank": 1,
+      "pool": 1534,
+      "recognised": true,
+      "source_in_reference_corpus": false,
+      "years": [
+       2008,
+       2004
+      ],
+      "industries": [
+       "Tamil",
+       "Bollywood"
+      ],
+      "sentences": [
+       33,
+       27
+      ],
+      "statements": [
+       {
+        "on_page": "Aegan",
+        "readers": 2,
+        "sentence": "The film is a remake of 2004 Hindi film Main Hoon Na, stars Ajith Kumar and Nayanthara, while Suman, Nassar, Jayaram, Navdeep and Piaa Bajpai play supporting roles."
+       }
+      ],
+      "flags": {
+       "years_on_the_remakes_page": [
+        2004
+       ]
+      },
+      "read_by_hand": null
+     },
+     {
+      "remake": "Main Tera Hero",
+      "source": "Kandireega",
+      "family": 213,
+      "contribution": 1.09780054244986,
+      "share_of_T": 0.04333432980759961,
+      "words_probability_of_the_source": 0.00014995029330742423,
+      "words_rank": 33.0,
+      "unit_rank": 36,
+      "pool": 1925,
+      "recognised": false,
+      "source_in_reference_corpus": false,
+      "years": [
+       2014,
+       2011
+      ],
+      "industries": [
+       "Bollywood",
+       "Telugu"
+      ],
+      "sentences": [
+       37,
+       19
+      ],
+      "statements": [
+       {
+        "on_page": "Main Tera Hero",
+        "readers": 2,
+        "sentence": "The movie is a remake of 2011 Telugu movie Kandireega."
+       },
+       {
+        "on_page": "Kandireega",
+        "readers": 2,
+        "sentence": "It was remade in Bengali as Paglu 2 and Hindi as Main Tera Hero (2014)."
+       }
+      ],
+      "flags": {
+       "years_on_the_remakes_page": [
+        2011
+       ],
+       "a_text_of_19_sentences_or_fewer": true
+      },
+      "read_by_hand": null
+     },
+     {
+      "remake": "Ninaithale Inikkum (2009 film)",
+      "source": "Classmates (2006 film)",
+      "family": 78,
+      "contribution": 0.979199128100178,
+      "share_of_T": 0.03865268445733633,
+      "words_probability_of_the_source": 0.05360147887686555,
+      "words_rank": 2.0,
+      "unit_rank": 10,
+      "pool": 1621,
+      "recognised": false,
+      "source_in_reference_corpus": true,
+      "years": [
+       2009,
+       2006
+      ],
+      "industries": [
+       "Tamil",
+       "Malayalam"
+      ],
+      "sentences": [
+       28,
+       15
+      ],
+      "statements": [
+       {
+        "on_page": "Classmates (2006 film)",
+        "readers": 2,
+        "sentence": "It was later remade into Tamil as Ninaithale Inikkum (2009) with Prithviraj reprised his role from the original film, and in Telugu and Marathi as Classmates (2007) and Classmates (2015), respectively."
+       },
+       {
+        "on_page": "Ninaithale Inikkum (2009 film)",
+        "readers": 2,
+        "sentence": "It is the Tamil remake of the 2006 Malayalam film Classmates."
+       }
+      ],
+      "flags": {
+       "years_on_the_remakes_page": [
+        2006
+       ],
+       "a_text_of_19_sentences_or_fewer": true
+      },
+      "read_by_hand": null
+     },
+     {
+      "remake": "Force (2011 film)",
+      "source": "Kaakha Kaakha",
+      "family": 127,
+      "contribution": 0.8776045273963219,
+      "share_of_T": 0.034642362214511085,
+      "words_probability_of_the_source": 0.6440233620740581,
+      "words_rank": 1.0,
+      "unit_rank": 1,
+      "pool": 1633,
+      "recognised": false,
+      "source_in_reference_corpus": false,
+      "years": [
+       2011,
+       2003
+      ],
+      "industries": [
+       "Bollywood",
+       "Tamil"
+      ],
+      "sentences": [
+       32,
+       33
+      ],
+      "statements": [
+       {
+        "on_page": "Force (2011 film)",
+        "readers": 2,
+        "sentence": "It is a remake of 2003 Tamil film Kaakha Kaakha (2003)."
+       },
+       {
+        "on_page": "Kaakha Kaakha",
+        "readers": 2,
+        "sentence": "The film was remade in Telugu as Gharshana (2004) by Menon, in Hindi as Force and in Kannada as Dandam Dashagunam (both 2011)."
+       }
+      ],
+      "flags": {
+       "years_on_the_remakes_page": [
+        2003
+       ]
+      },
+      "read_by_hand": null
+     },
+     {
+      "remake": "Bhale Dongalu",
+      "source": "Bunty Aur Babli",
+      "family": 53,
+      "contribution": 0.8767471168575862,
+      "share_of_T": 0.0346085169852282,
+      "words_probability_of_the_source": 0.21070319078437375,
+      "words_rank": 2.0,
+      "unit_rank": 5,
+      "pool": 1965,
+      "recognised": true,
+      "source_in_reference_corpus": true,
+      "years": [
+       2008,
+       2005
+      ],
+      "industries": [
+       "Telugu",
+       "Bollywood"
+      ],
+      "sentences": [
+       18,
+       25
+      ],
+      "statements": [
+       {
+        "on_page": "Bhale Dongalu",
+        "readers": 2,
+        "sentence": "A remake of the film Bonnie and Clyde and the Hindi film Bunty Aur Babli (2005), the film stars Tarun, Ileana, Jagapati Babu and music composed by [[K.M."
+       }
+      ],
+      "flags": {
+       "years_on_the_remakes_page": [
+        2005
+       ],
+       "a_text_of_19_sentences_or_fewer": true
+      },
+      "read_by_hand": "The sentence names two sources: 'A remake of the film Bonnie and Clyde and the Hindi film Bunty Aur Babli (2005)'."
+     },
+     {
+      "remake": "Pyaar Impossible!",
+      "source": "Kilukkampetti",
+      "family": 171,
+      "contribution": 0.5998801622908327,
+      "share_of_T": 0.02367953356967358,
+      "words_probability_of_the_source": 0.05463310043406104,
+      "words_rank": 2.0,
+      "unit_rank": 75,
+      "pool": 1548,
+      "recognised": false,
+      "source_in_reference_corpus": true,
+      "years": [
+       2010,
+       1991
+      ],
+      "industries": [
+       "Bollywood",
+       "Malayalam"
+      ],
+      "sentences": [
+       30,
+       16
+      ],
+      "statements": [
+       {
+        "on_page": "Kilukkampetti",
+        "readers": 2,
+        "sentence": "The film was remade in Telugu as Joker (1993) and in Hindi as Pyaar Impossible! (2010)."
+       }
+      ],
+      "flags": {
+       "stated_only_off_the_remakes_page": true,
+       "a_text_of_19_sentences_or_fewer": true
+      },
+      "read_by_hand": null
+     },
+     {
+      "remake": "Loveria",
+      "source": "Bumper Offer",
+      "family": 205,
+      "contribution": 0.5638847323927185,
+      "share_of_T": 0.022258658127864935,
+      "words_probability_of_the_source": 0.5780471252150896,
+      "words_rank": 1.0,
+      "unit_rank": 6,
+      "pool": 2975,
+      "recognised": false,
+      "source_in_reference_corpus": true,
+      "years": [
+       2013,
+       2009
+      ],
+      "industries": [
+       "Bengali",
+       "Telugu"
+      ],
+      "sentences": [
+       40,
+       15
+      ],
+      "statements": [
+       {
+        "on_page": "Loveria",
+        "readers": 2,
+        "sentence": "It is a remake of the 2009 Telugu film Bumper Offer starring Sairam Shankar and Bindu Madhavi."
+       },
+       {
+        "on_page": "Bumper Offer",
+        "readers": 2,
+        "sentence": "The movie was remade in Bengali in 2013 as Loveria and in Bengali Bangladesh in 2020 as Shoshurbari Zindabad 2."
+       }
+      ],
+      "flags": {
+       "years_on_the_remakes_page": [
+        2009
+       ],
+       "a_text_of_19_sentences_or_fewer": true
+      },
+      "read_by_hand": null
+     },
+     {
+      "remake": "Chirodini Tumi Je Amar 2",
+      "source": "Vazhakku Enn 18/9",
+      "family": 75,
+      "contribution": 0.5292188040038004,
+      "share_of_T": 0.02089026312731262,
+      "words_probability_of_the_source": 0.5711303767125637,
+      "words_rank": 1.0,
+      "unit_rank": 1,
+      "pool": 3142,
+      "recognised": false,
+      "source_in_reference_corpus": false,
+      "years": [
+       2014,
+       2012
+      ],
+      "industries": [
+       "Bengali",
+       "Tamil"
+      ],
+      "sentences": [
+       35,
+       25
+      ],
+      "statements": [
+       {
+        "on_page": "Chirodini Tumi Je Amar 2",
+        "readers": 2,
+        "sentence": "It is a remake of the 2012 Tamil film Vazhakku Enn 18/9 directed by Balaji Sakthivel and serves as a spiritual sequel to Chirodini Tumi Je Amar which was a remake of another Tamil movie Kaadhal."
+       }
+      ],
+      "flags": {
+       "years_on_the_remakes_page": [
+        2012
+       ]
+      },
+      "read_by_hand": null
+     },
+     {
+      "remake": "Dor (2006 film)",
+      "source": "Perumazhakkalam",
+      "family": 105,
+      "contribution": -0.5215038942495684,
+      "share_of_T": -0.020585726528178062,
+      "words_probability_of_the_source": 0.6704905804522253,
+      "words_rank": 1.0,
+      "unit_rank": 88,
+      "pool": 1212,
+      "recognised": false,
+      "source_in_reference_corpus": false,
+      "years": [
+       2006,
+       2004
+      ],
+      "industries": [
+       "Bollywood",
+       "Malayalam"
+      ],
+      "sentences": [
+       40,
+       18
+      ],
+      "statements": [
+       {
+        "on_page": "Dor (2006 film)",
+        "readers": 2,
+        "sentence": "The film is an official remake of the Malayalam film, Perumazhakkalam (2004) and was well received by the critics after its release on 22 September 2006."
+       }
+      ],
+      "flags": {
+       "years_on_the_remakes_page": [
+        2004,
+        2006
+       ],
+       "a_text_of_19_sentences_or_fewer": true
+      },
+      "read_by_hand": null
+     },
+     {
+      "remake": "Ilavelpu",
+      "source": "Edhir Paradhathu",
+      "family": 167,
+      "contribution": 0.449343881023571,
+      "share_of_T": 0.017737298520410935,
+      "words_probability_of_the_source": 0.4305639055467371,
+      "words_rank": 1.0,
+      "unit_rank": 11,
+      "pool": 107,
+      "recognised": false,
+      "source_in_reference_corpus": true,
+      "years": [
+       1956,
+       1954
+      ],
+      "industries": [
+       "Telugu",
+       "Tamil"
+      ],
+      "sentences": [
+       23,
+       40
+      ],
+      "statements": [
+       {
+        "on_page": "Edhir Paradhathu",
+        "readers": 2,
+        "sentence": "The film was remade in Malayalam as Nithyakanyaka (1963), in Telugu as Ilavelpu (1956) and in Hindi as Sharada (1957)."
+       },
+       {
+        "on_page": "Ilavelpu",
+        "readers": 2,
+        "sentence": "The film is a remake of the Tamil film Edhir Paradhathu (1954)."
+       }
+      ],
+      "flags": {
+       "years_on_the_remakes_page": [
+        1954
+       ]
+      },
+      "read_by_hand": null
+     },
+     {
+      "remake": "Dharma (1998 film)",
+      "source": "Ziddi (1997 film)",
+      "family": 56,
+      "contribution": 0.40269352496831734,
+      "share_of_T": 0.01589583293830348,
+      "words_probability_of_the_source": 0.02205650547114571,
+      "words_rank": 5.0,
+      "unit_rank": 41,
+      "pool": 895,
+      "recognised": false,
+      "source_in_reference_corpus": true,
+      "years": [
+       1998,
+       1997
+      ],
+      "industries": [
+       "Tamil",
+       "Bollywood"
+      ],
+      "sentences": [
+       17,
+       35
+      ],
+      "statements": [
+       {
+        "on_page": "Ziddi (1997 film)",
+        "readers": 2,
+        "sentence": "The film was remade in Tamil as Dharma, starring Vijayakanth."
+       },
+       {
+        "on_page": "Dharma (1998 film)",
+        "readers": 2,
+        "sentence": "A remake of the 1997 Hindi film Ziddi, it was released on 9 July 1998."
+       }
+      ],
+      "flags": {
+       "years_on_the_remakes_page": [
+        1997,
+        1998
+       ],
+       "a_text_of_19_sentences_or_fewer": true
+      },
+      "read_by_hand": null
+     },
+     {
+      "remake": "Siruthai",
+      "source": "Vikramarkudu",
+      "family": 278,
+      "contribution": 0.3805412486494899,
+      "share_of_T": 0.015021399003476935,
+      "words_probability_of_the_source": 0.8544880550498267,
+      "words_rank": 1.0,
+      "unit_rank": 4,
+      "pool": 1838,
+      "recognised": false,
+      "source_in_reference_corpus": false,
+      "years": [
+       2011,
+       2006
+      ],
+      "industries": [
+       "Tamil",
+       "Telugu"
+      ],
+      "sentences": [
+       15,
+       32
+      ],
+      "statements": [
+       {
+        "on_page": "Siruthai",
+        "readers": 2,
+        "sentence": "It is a remake of the 2006 Telugu film Vikramarkudu, directed by [[S."
+       },
+       {
+        "on_page": "Vikramarkudu",
+        "readers": 2,
+        "sentence": "The film was remade in several languages, including Bangladeshi Bengali as Ulta Palta 69 (2007), Kannada as Veera Madakari (2009), Tamil as Siruthai (2011), Indian Bengali as Bikram Singha (2012), Hindi as Rowdy Rathore (2012), and once again in Bangladeshi Bengali as Action Jasmine (2015), featuring a female lead."
+       }
+      ],
+      "flags": {
+       "years_on_the_remakes_page": [
+        2006
+       ],
+       "a_text_of_19_sentences_or_fewer": true
+      },
+      "read_by_hand": null
+     },
+     {
+      "remake": "Pandavulu Pandavulu Tummeda",
+      "source": "Golmaal 3",
+      "family": 246,
+      "contribution": -0.3721400965830588,
+      "share_of_T": -0.014689773830840304,
+      "words_probability_of_the_source": 0.29734329675623594,
+      "words_rank": 1.0,
+      "unit_rank": 72,
+      "pool": 2688,
+      "recognised": false,
+      "source_in_reference_corpus": false,
+      "years": [
+       2014,
+       2010
+      ],
+      "industries": [
+       "Telugu",
+       "Bollywood"
+      ],
+      "sentences": [
+       33,
+       17
+      ],
+      "statements": [
+       {
+        "on_page": "Golmaal 3",
+        "readers": 2,
+        "sentence": "Golmaal 3 was later remade in Telugu as Pandavulu Pandavulu Tummeda (2014)."
+       }
+      ],
+      "flags": {
+       "stated_only_off_the_remakes_page": true,
+       "a_text_of_19_sentences_or_fewer": true
+      },
+      "read_by_hand": null
+     }
+    ],
+    "what": "the twenty entries with the largest absolute contributions, with pairs.json's years, industries, sentence counts and stating sentences, the flags computed from pairs.json and, for five of them, a note from reading the statements by hand",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].entries_table; data/second/remakes/pairs.json"
+   },
+   "pairs_whose_statement_is_contestable": {
+    "value": {
+     "reboot_in_the_statement": {
+      "what": "the stating sentence contains 'reboot' (Section 3 lists it among the loose words)",
+      "entries": 2,
+      "pairs_with_more_than_1pct_open": [
+       [
+        "Judwaa 2",
+        "Hello Brother (1994 film)",
+        4.032911559514646
+       ]
+      ],
+      "their_T": 4.032911559514646,
+      "their_share_of_T": 0.15919423688285392,
+      "their_open_pairs": 0.9998161288244354,
+      "without_them": {
+       "entries": 218,
+       "families": 174,
+       "T": 21.300364559534437,
+       "Z": 3.477540336943768,
+       "families_positive": 46,
+       "families_negative": 57,
+       "effective_pairs_left_open": 20.107306891305115,
+       "p": 1.999980000199998e-05,
+       "noise_calibrated_p": 0.0004997501249375312
+      }
+     },
+     "decided_by_a_third_reader": {
+      "what": "the two readers differed on a statement of the pair",
+      "entries": 3,
+      "pairs_with_more_than_1pct_open": [
+       [
+        "Judwaa 2",
+        "Hello Brother (1994 film)",
+        4.032911559514646
+       ]
+      ],
+      "their_T": 4.032911559514646,
+      "their_share_of_T": 0.15919423688285392,
+      "their_open_pairs": 0.9998161288244354,
+      "without_them": {
+       "entries": 217,
+       "families": 174,
+       "T": 21.300364559534437,
+       "Z": 3.477540336943768,
+       "families_positive": 46,
+       "families_negative": 57,
+       "effective_pairs_left_open": 20.107306891305115,
+       "p": 1.999980000199998e-05,
+       "noise_calibrated_p": 0.0004997501249375312
+      }
+     },
+     "two_steps_from_the_source": {
+      "what": "pairs.json also holds (remake, m) and (m, source) for some film m: the entry's source is the original two steps back",
+      "entries": 2,
+      "pairs_with_more_than_1pct_open": [
+       [
+        "Judwaa 2",
+        "Hello Brother (1994 film)",
+        4.032911559514646
+       ],
+       [
+        "Kondapalli Raja",
+        "Khudgarz",
+        1.7896749403044299
+       ]
+      ],
+      "their_T": 5.822586499819075,
+      "their_share_of_T": 0.22983945986523413,
+      "their_open_pairs": 1.9952032365882832,
+      "without_them": {
+       "entries": 218,
+       "families": 175,
+       "T": 19.510689619230007,
+       "Z": 3.309066984545006,
+       "families_positive": 45,
+       "families_negative": 58,
+       "effective_pairs_left_open": 19.111919783541268,
+       "p": 1.999980000199998e-05,
+       "noise_calibrated_p": 0.0004997501249375312
+      }
+     },
+     "table_year_contradicts_the_statement": {
+      "what": "every year on the remake's own stating sentences differs from the table's year of the source by more than 2",
+      "entries": 2,
+      "pairs_with_more_than_1pct_open": [
+       [
+        "Tadakha",
+        "Vettai (film)",
+        1.728855510559669
+       ]
+      ],
+      "their_T": 1.728855510559669,
+      "their_share_of_T": 0.06824445059672621,
+      "their_open_pairs": 0.9857672747859828,
+      "without_them": {
+       "entries": 218,
+       "families": 174,
+       "T": 23.604420608489413,
+       "Z": 3.3120221592700037,
+       "families_positive": 46,
+       "families_negative": 57,
+       "effective_pairs_left_open": 20.121355745343568,
+       "p": 9.99990000099999e-06,
+       "noise_calibrated_p": 0.0004997501249375312
+      }
+     },
+     "stated_only_off_the_remakes_page": {
+      "what": "no stating sentence is on the remake's own page",
+      "entries": 33,
+      "pairs_with_more_than_1pct_open": [
+       [
+        "Judwaa 2",
+        "Hello Brother (1994 film)",
+        4.032911559514646
+       ],
+       [
+        "Pandavulu Pandavulu Tummeda",
+        "Golmaal 3",
+        -0.3721400965830588
+       ],
+       [
+        "Puriyaadha Pudhir",
+        "Tarka (movie)",
+        0.33662428412355505
+       ],
+       [
+        "Pyaar Impossible!",
+        "Kilukkampetti",
+        0.5998801622908327
+       ],
+       [
+        "Wanted (2009 film)",
+        "Pokiri (2006 film)",
+        0.08963744165545542
+       ]
+      ],
+      "their_T": 4.682940426713401,
+      "their_share_of_T": 0.18485332906438084,
+      "their_open_pairs": 3.4768770758067262,
+      "without_them": {
+       "entries": 187,
+       "families": 150,
+       "T": 20.650335692335684,
+       "Z": 3.399611357214958,
+       "families_positive": 39,
+       "families_negative": 51,
+       "effective_pairs_left_open": 17.630245944322823,
+       "p": 9.99990000099999e-06,
+       "noise_calibrated_p": 0.0004997501249375312
+      }
+     },
+     "any_of_reboot_third_reader_two_steps_or_year": {
+      "what": "any of the four flags above that bear on what the pair is",
+      "entries": 6,
+      "pairs_with_more_than_1pct_open": [
+       [
+        "Judwaa 2",
+        "Hello Brother (1994 film)",
+        4.032911559514646
+       ],
+       [
+        "Kondapalli Raja",
+        "Khudgarz",
+        1.7896749403044299
+       ],
+       [
+        "Tadakha",
+        "Vettai (film)",
+        1.728855510559669
+       ]
+      ],
+      "their_T": 7.551442010378745,
+      "their_share_of_T": 0.29808391046196037,
+      "their_open_pairs": 2.980970511374266,
+      "without_them": {
+       "entries": 214,
+       "families": 173,
+       "T": 17.78183410867034,
+       "Z": 3.154503234264683,
+       "families_positive": 44,
+       "families_negative": 58,
+       "effective_pairs_left_open": 18.126152508755283,
+       "p": 2.999970000299997e-05,
+       "noise_calibrated_p": 0.0014992503748125937
+      }
+     }
+    },
+    "what": "the primary entries by what is unusual in pairs.json about them: how many, which of them the words leave open, their share of T, and the test without them (their contributions set to zero; nothing refitted)",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].entries_table; data/second/remakes/pairs.json"
+   },
+   "by_shortest_text": {
+    "value": {
+     "both_texts_20_sentences_or_more": {
+      "entries": 155,
+      "families": 126,
+      "T": 11.871721385131323,
+      "Z": 2.3423516507720974,
+      "families_positive": 26,
+      "families_negative": 44,
+      "effective_pairs_left_open": 8.921520100161294,
+      "p": 0.0002099979000209998,
+      "per_open_pair": 1.3306837009666876,
+      "noise_calibrated_p": 0.025487256371814093
+     },
+     "a_text_of_19_sentences_or_fewer": {
+      "entries": 65,
+      "families": 58,
+      "T": 13.461554733917762,
+      "Z": 2.519632725337567,
+      "families_positive": 21,
+      "families_negative": 18,
+      "effective_pairs_left_open": 12.185602919968254,
+      "p": 0.0010999890001099988,
+      "per_open_pair": 1.1047097810694813,
+      "noise_calibrated_p": 0.015992003998001
+     }
+    },
+    "what": "the contributions summed over pairs whose shorter text has at least 20 sentences, and over the rest (nothing refitted)",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].entries_table; data/second/remakes/pairs.json: remake_sentences, source_sentences"
+   }
+  },
+  "2_null": {
+   "registered": {
+    "value": {
+     "Z": 3.454417612582645,
+     "T": 25.33327611904908,
+     "sign_flip_p": 9.99990000099999e-06,
+     "families": 175,
+     "effective_pairs_left_open": 21.10712302012955
+    },
+    "what": "the registered statistic and p",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].slope"
+   },
+   "noise_calibrated_p": {
+    "value": {
+     "p": 0.0004997501249375312,
+     "noise_draws_at_or_above_the_observed_Z": 0,
+     "draws": 2000,
+     "largest_noise_Z": 3.3042,
+     "upper_95pct_bound_on_the_tail_probability_with_no_draw_above": 0.0014967448951882512
+    },
+    "what": "share of the 2,000 pure-noise draws whose Z is at or above the units' Z, the observed value counted as one; no draw reaches it, so 0.0005 is the smallest value this can take",
+    "source": "remakes_null_size.json: Z_sorted"
+   },
+   "noise_normal_extrapolations": {
+    "value": {
+     "Z_over_the_noise_sd_of_Z": 2.787675680165124,
+     "p_normal_from_Z": 0.002774397160578933,
+     "T_over_the_noise_sd_of_T": 3.6487597770791527,
+     "p_normal_from_T": 0.00013175467972482223,
+     "noise_sd_T": 6.942982730238403,
+     "noise_root_mean_sum_of_squares": 5.4512962408811765,
+     "observed_root_sum_of_squares": 7.33358816454998,
+     "variance_ratio_T_to_what_sign_flips_assume": 1.6221559459264947
+    },
+    "what": "the observed Z and T set against the noise draws' standard deviations (normal tail areas; the noise Z has sd 1.24 where sign flips assume 1)",
+    "source": "remakes_null_size.json: by_columns['39 columns (registered)']"
+   },
+   "against_word_only_measures": {
+    "value": {
+     "stand_ins": {
+      "n": 74,
+      "mean_Z": 0.18145480807706602,
+      "sd_Z": 1.1355899364698097,
+      "largest_Z": 2.2279788170279393
+     },
+     "random_word_only_measures": {
+      "n": 332,
+      "mean_Z": -0.012941964865315854,
+      "sd_Z": 1.2188818071956837,
+      "largest_Z": 3.1186788616833883,
+      "above_the_stand_ins_largest_Z": 7,
+      "share_above_the_stand_ins_largest_Z": 0.02108433734939759
+     },
+     "word_only_measures_at_or_above_the_units_Z": 0,
+     "of": 406,
+     "empirical_p_against_all_of_them": 0.002457002457002457,
+     "margin_of_the_units_Z_over_the_best_word_only_measure": 0.33573875089925664,
+     "p_normal_against_the_random_measures": 0.0022226262303533303,
+     "strongest_generator": "TF-IDF on a random half of the words",
+     "strongest_generator_n": 60,
+     "strongest_generator_mean_Z": 0.5922170254331652,
+     "strongest_generator_sd_Z": 1.1358585393272087,
+     "strongest_generator_largest_Z": 3.1186788616833883,
+     "p_normal_against_the_strongest_generator": 0.00587013337149506
+    },
+    "what": "the units' Z set against every word-only measure whose Z is committed: the 74 stand-ins and the 332 random word-only measures (none reaches it; the best has Z 3.12), with normal tail areas from the mean and sd of all random measures and of the generator with the heaviest upper tail",
+    "source": "remakes_words.json: primary_calibration.standins.rows; .random_families_of_stand_ins.generators[*].Z"
+   },
+   "against_noisy_and_curved_copies": {
+    "value": {
+     "copies_in_these_settings": 2584,
+     "sign_flips_per_copy": 5000,
+     "smallest_p_a_copy_can_get": 0.0001999600079984003,
+     "five_lowest_p_and_their_settings": [
+      [
+       0.0001999600079984003,
+       "mean of the word columns | minus log rank | noise 1"
+      ],
+      [
+       0.0005998800239952009,
+       "one random word column | signed square | noise 0.5"
+      ],
+      [
+       0.0005998800239952009,
+       "one random word column | tanh(x/3) | noise 0.5"
+      ],
+      [
+       0.0005998800239952009,
+       "random signed mix of the word columns | cube | noise 1"
+      ],
+      [
+       0.0005998800239952009,
+       "random signed mix of the word columns | normal score of the rank | noise 0"
+      ]
+     ],
+     "settings_whose_lowest_p_is_at_the_floor": 1,
+     "rate_below_0.05_all_copies": 0.08964497041420118,
+     "copies": 3380,
+     "Z_of_the_copies_committed": false
+    },
+    "what": "the noisy and curved copies of the word columns: only rates and each setting's lowest p are committed (no Z), so the units' Z cannot be set against the copies' largest Z; one setting's lowest p is at the floor of its 5,000 flips (0.0002) and the next lowest is 0.0006",
+    "source": "remakes_words.json: primary_calibration.noisy_and_curved_copies"
+   },
+   "bootstrap_mean_family_sum": {
+    "value": {
+     "mean": 0.14476157782313762,
+     "percentile_95": [
+      0.07165211494176327,
+      0.23085812695110175
+     ],
+     "bca_95": [
+      0.08163295493102138,
+      0.2518192836377387
+     ],
+     "bca_99": [
+      0.06703757115016348,
+      0.2972814831281
+     ],
+     "bca_99.9": [
+      0.05111614921941592,
+      0.3461827135933866
+     ],
+     "share_of_resamples_at_or_below_zero": 0.0,
+     "resamples": 20000,
+     "families": 175
+    },
+    "what": "bootstrap over the 175 families of the mean family sum (T / 175): percentile and BCa intervals, and the share of resamples with a mean at or below zero",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].family_sums.rows"
+   },
+   "bootstrap_effect_per_open_pair": {
+    "value": {
+     "T_over_open_pairs": 1.2002240236572796,
+     "percentile_95": [
+      0.7485691683796815,
+      1.6689525933879363
+     ],
+     "bca_95": [
+      0.8070303088439085,
+      1.7527574237193921
+     ]
+    },
+    "what": "T divided by the effective open pairs (normal-score units by which the source's unit rank beats what the word model expects, per pair the words leave open), with a family bootstrap",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].entries_table"
+   },
+   "bootstrap_mean_family_sum_open_families_only": {
+    "value": {
+     "families_with_more_than_a_tenth_of_a_pair_open": 31,
+     "mean": 0.8126204841957265,
+     "median": 0.449343881023571,
+     "percentile_95": [
+      0.47314575246069607,
+      1.1972716710070703
+     ],
+     "share_of_resamples_at_or_below_zero": 0.0,
+     "share_of_T_in_these_families": 0.9943931014562009
+    },
+    "what": "the same bootstrap over only the families with more than a tenth of a pair open",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].family_sums.rows"
+   },
+   "sign_and_signed_rank_tests": {
+    "value": {
+     "every non-zero sum (the file's 47 against 57)": {
+      "families": 104,
+      "positive": 47,
+      "negative": 57,
+      "sign_test_p_one_sided": 0.8596548354829104,
+      "wilcoxon_signed_rank_p_one_sided": 0.008882208732049895
+     },
+     "|D| above 1e-06": {
+      "families": 74,
+      "positive": 46,
+      "negative": 28,
+      "sign_test_p_one_sided": 0.02369648775202588,
+      "wilcoxon_signed_rank_p_one_sided": 9.548907349435793e-05
+     },
+     "|D| above 0.001": {
+      "families": 50,
+      "positive": 37,
+      "negative": 13,
+      "sign_test_p_one_sided": 0.0004681114554259125,
+      "wilcoxon_signed_rank_p_one_sided": 6.1444491219475594e-06
+     },
+     "|D| above 0.01": {
+      "families": 39,
+      "positive": 31,
+      "negative": 8,
+      "sign_test_p_one_sided": 0.00014703843771712855,
+      "wilcoxon_signed_rank_p_one_sided": 3.144050424452871e-06
+     },
+     "|D| above 0.05": {
+      "families": 31,
+      "positive": 27,
+      "negative": 4,
+      "sign_test_p_one_sided": 1.697661355137825e-05,
+      "wilcoxon_signed_rank_p_one_sided": 2.658925950527191e-06
+     },
+     "|D| above 0.1": {
+      "families": 29,
+      "positive": 25,
+      "negative": 4,
+      "sign_test_p_one_sided": 5.1857903599739075e-05,
+      "wilcoxon_signed_rank_p_one_sided": 3.2391399145126343e-06
+     },
+     "|D| above 0.25": {
+      "families": 24,
+      "positive": 22,
+      "negative": 2,
+      "sign_test_p_one_sided": 1.7940998077392578e-05,
+      "wilcoxon_signed_rank_p_one_sided": 6.556510925292969e-06
+     },
+     "|D| above 0.5": {
+      "families": 16,
+      "positive": 15,
+      "negative": 1,
+      "sign_test_p_one_sided": 0.0002593994140625,
+      "wilcoxon_signed_rank_p_one_sided": 3.0517578125e-05
+     },
+     "|D| above 1": {
+      "families": 9,
+      "positive": 9,
+      "negative": 0,
+      "sign_test_p_one_sided": 0.001953125,
+      "wilcoxon_signed_rank_p_one_sided": 0.001953125
+     },
+     "open mass above 0.01": {
+      "families": 40,
+      "positive": 32,
+      "negative": 8,
+      "sign_test_p_one_sided": 9.108291487791575e-05,
+      "wilcoxon_signed_rank_p_one_sided": 3.178709448548034e-06
+     },
+     "open mass above 0.1": {
+      "families": 31,
+      "positive": 26,
+      "negative": 5,
+      "sign_test_p_one_sided": 9.609758853912354e-05,
+      "wilcoxon_signed_rank_p_one_sided": 3.0547380447387695e-06
+     },
+     "open mass above 0.25": {
+      "families": 25,
+      "positive": 22,
+      "negative": 3,
+      "sign_test_p_one_sided": 7.826089859008789e-05,
+      "wilcoxon_signed_rank_p_one_sided": 9.149312973022461e-06
+     },
+     "open mass above 0.5": {
+      "families": 20,
+      "positive": 18,
+      "negative": 2,
+      "sign_test_p_one_sided": 0.00020122528076171875,
+      "wilcoxon_signed_rank_p_one_sided": 2.384185791015625e-05
+     },
+     "open mass above 0.9": {
+      "families": 12,
+      "positive": 12,
+      "negative": 0,
+      "sign_test_p_one_sided": 0.000244140625,
+      "wilcoxon_signed_rank_p_one_sided": 0.000244140625
+     }
+    },
+    "what": "positive and negative family sums, the one-sided sign test and Wilcoxon signed-rank test, by the size of the sum and by how much of a pair the family leaves open",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].family_sums.rows"
+   },
+   "distribution_of_the_family_sums": {
+    "value": {
+     "families": 175,
+     "exactly_zero": 71,
+     "quantiles_of_the_non_zero_sums": {
+      "0": -0.5215038942495684,
+      "0.05": -0.02883616263135794,
+      "0.1": -0.002120539897113907,
+      "0.25": -2.6315398421271164e-06,
+      "0.5": -3.2626135891669326e-15,
+      "0.75": 0.06217187530636431,
+      "0.9": 0.8773473042347012,
+      "0.95": 1.627852010270522,
+      "1": 4.032911559514646
+     },
+     "sum_of_the_positive_sums": 26.609088526068557,
+     "sum_of_the_negative_sums": -1.2758124070194738,
+     "largest_positive": 4.032911559514646,
+     "largest_negative": -0.5215038942495684,
+     "positive_sums_above_0.5": 15,
+     "negative_sums_below_minus_0.5": 1,
+     "positive_sums_above_0.1": 25,
+     "negative_sums_below_minus_0.1": 4,
+     "median_absolute_negative_sum": 5.259630935637858e-07,
+     "median_positive_sum": 0.14760143055623803,
+     "skewness": 4.758867548700413
+    },
+    "what": "the shape of the 175 family sums: a few large positive sums, almost no negative sum of any size",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].family_sums.rows"
+   },
+   "what_the_sign_flip_p_amounts_to": {
+    "value": {
+     "sum_of_absolute_sums": 27.884900933088037,
+     "T_as_a_share_of_the_largest_possible_T": 0.9084943919950881,
+     "two_to_the_minus_k_for_the_k_sums_above_0.5": 1.52587890625e-05,
+     "k": 16,
+     "exact_p_from_the_20_largest_sums_alone": 1.71661376953125e-05,
+     "exact_p_from_the_16_largest_sums_alone": 3.0517578125e-05
+    },
+    "what": "T is 91% of the largest value any sign pattern could give, so the registered p is in effect the chance that the 16 or so sizeable sums nearly all come out positive",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].family_sums.rows"
+   }
+  },
+  "3_practical_size": {
+   "sources_ranked_first": {
+    "value": {
+     "entries": 220,
+     "by_the_word_model": 205,
+     "by_the_units_alone": 176,
+     "by_the_word_model_with_the_unit_column": 206,
+     "by_both": 173,
+     "by_words_not_units": 32,
+     "by_units_not_words": 3,
+     "by_neither": 12,
+     "not_copied_entries": 120,
+     "not_copied_by_the_word_model": 105,
+     "not_copied_by_the_units_alone": 76
+    },
+    "what": "how often the true source is ranked first among its candidates: by the held-out word model, by the hub-corrected unit rate alone, and by the word model refitted with the unit column",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].entries_table; .gain.sources_first_with_the_measure; .heredity.hub_corrected"
+   },
+   "pairs_the_word_model_gets_wrong": {
+    "value": {
+     "n": 15,
+     "units_rank_the_source_first": 3,
+     "units_rank_it_above_the_words_rank": 5,
+     "units_rank_it_below_the_words_rank": 9,
+     "units_rank_in_the_top_10": 9,
+     "median_unit_rank": 9.0,
+     "median_words_rank": 7.0,
+     "rows": [
+      {
+       "remake": "Aegan",
+       "source": "Main Hoon Na",
+       "pool": 1534,
+       "words_rank": 2.0,
+       "unit_rank": 1,
+       "words_probability_of_the_source": 0.2106634020254841,
+       "contribution": 1.1687842649756122,
+       "recognised": true
+      },
+      {
+       "remake": "Bhale Dongalu",
+       "source": "Bunty Aur Babli",
+       "pool": 1965,
+       "words_rank": 2.0,
+       "unit_rank": 5,
+       "words_probability_of_the_source": 0.21070319078437375,
+       "contribution": 0.8767471168575862,
+       "recognised": true
+      },
+      {
+       "remake": "Pyaar Impossible!",
+       "source": "Kilukkampetti",
+       "pool": 1548,
+       "words_rank": 2.0,
+       "unit_rank": 75,
+       "words_probability_of_the_source": 0.05463310043406104,
+       "contribution": 0.5998801622908327,
+       "recognised": false
+      },
+      {
+       "remake": "Ninaithale Inikkum (2009 film)",
+       "source": "Classmates (2006 film)",
+       "pool": 1621,
+       "words_rank": 2.0,
+       "unit_rank": 10,
+       "words_probability_of_the_source": 0.05360147887686555,
+       "contribution": 0.979199128100178,
+       "recognised": false
+      },
+      {
+       "remake": "Padaharella Vayasu",
+       "source": "16 Vayathinile",
+       "pool": 476,
+       "words_rank": 3.0,
+       "unit_rank": 4,
+       "words_probability_of_the_source": 0.10133422478437598,
+       "contribution": 1.4235086863334772,
+       "recognised": false
+      },
+      {
+       "remake": "Dharma (1998 film)",
+       "source": "Ziddi (1997 film)",
+       "pool": 895,
+       "words_rank": 5.0,
+       "unit_rank": 41,
+       "words_probability_of_the_source": 0.02205650547114571,
+       "contribution": 0.40269352496831734,
+       "recognised": false
+      },
+      {
+       "remake": "Kondapalli Raja",
+       "source": "Khudgarz",
+       "pool": 955,
+       "words_rank": 7.0,
+       "unit_rank": 27,
+       "words_probability_of_the_source": 0.004612892236152091,
+       "contribution": 1.7896749403044299,
+       "recognised": true
+      },
+      {
+       "remake": "Vaseegara (film)",
+       "source": "Nuvvu Naaku Nachav",
+       "pool": 1153,
+       "words_rank": 7.0,
+       "unit_rank": 1,
+       "words_probability_of_the_source": 0.00132218774717192,
+       "contribution": 2.6354908147905127,
+       "recognised": false
+      },
+      {
+       "remake": "Jeena Sirf Merre Liye",
+       "source": "Manasantha Nuvve",
+       "pool": 994,
+       "words_rank": 9.0,
+       "unit_rank": 6,
+       "words_probability_of_the_source": 0.005325669929305228,
+       "contribution": 1.8579268872743402,
+       "recognised": true
+      },
+      {
+       "remake": "Tadakha",
+       "source": "Vettai (film)",
+       "pool": 2542,
+       "words_rank": 9.0,
+       "unit_rank": 9,
+       "words_probability_of_the_source": 0.01423272521401719,
+       "contribution": 1.728855510559669,
+       "recognised": false
+      },
+      {
+       "remake": "Main Tera Hero",
+       "source": "Kandireega",
+       "pool": 1925,
+       "words_rank": 33.0,
+       "unit_rank": 36,
+       "words_probability_of_the_source": 0.00014995029330742423,
+       "contribution": 1.09780054244986,
+       "recognised": false
+      },
+      {
+       "remake": "Bandhan (2004 film)",
+       "source": "Santosham (2002 film)",
+       "pool": 1853,
+       "words_rank": 35.0,
+       "unit_rank": 229,
+       "words_probability_of_the_source": 0.0031335728869310085,
+       "contribution": 0.03591383961957635,
+       "recognised": false
+      },
+      {
+       "remake": "Judwaa 2",
+       "source": "Hello Brother (1994 film)",
+       "pool": 2226,
+       "words_rank": 54.0,
+       "unit_rank": 4,
+       "words_probability_of_the_source": 0.00018387117556464027,
+       "contribution": 4.032911559514646,
+       "recognised": false
+      },
+      {
+       "remake": "Enakkul Oruvan (1984 film)",
+       "source": "Karz (film)",
+       "pool": 490,
+       "words_rank": 245.0,
+       "unit_rank": 275,
+       "words_probability_of_the_source": 7.1410339853711e-05,
+       "contribution": 0.25011473863909217,
+       "recognised": false
+      },
+      {
+       "remake": "Khoka 420",
+       "source": "Brindavanam (2010 film)",
+       "pool": 2975,
+       "words_rank": 1676.0,
+       "unit_rank": 1,
+       "words_probability_of_the_source": 3.6840426390854364e-06,
+       "contribution": 3.449015976605649,
+       "recognised": true
+      }
+     ]
+    },
+    "what": "the 15 pairs whose source the word model does not rank first: where the units alone rank it",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].entries_table"
+   },
+   "T_by_whether_the_word_model_ranks_the_source_first": {
+    "value": {
+     "pairs_the_word_model_gets_wrong": {
+      "n": 15,
+      "T": 22.32851769328378,
+      "share_of_T": 0.8813908468985617,
+      "contributions_positive": 15,
+      "open_pairs": 14.31797213375875,
+      "two_to_the_minus_n": 3.0517578125e-05
+     },
+     "pairs_the_word_model_gets_right": {
+      "n": 205,
+      "T": 3.004758425765308,
+      "share_of_T": 0.11860915310143849,
+      "open_pairs": 6.789150886370798,
+      "with_more_than_1pct_open": 27,
+      "of_those_contribution_positive": 18,
+      "Z_of_these_alone": 1.8827756682648358,
+      "sign_flip_p_of_these_alone": 0.02900970990290097
+     }
+    },
+    "what": "T split by whether the word model ranks the true source first: the 15 pairs it gets wrong hold most of T and every one of their contributions is positive; the registered p is close to the chance of 15 signs out of 15",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].entries_table"
+   },
+   "pairs_the_word_model_gets_right": {
+    "value": {
+     "n": 205,
+     "units_rank_the_source_first": 173,
+     "units_rank_in_the_top_10": 191,
+     "units_rank_beyond_10": 14,
+     "units_rank_beyond_100": 4,
+     "not_copied": 105,
+     "not_copied_units_first": 73
+    },
+    "what": "the 205 pairs whose source the word model ranks first: where the units alone rank it",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].entries_table"
+   },
+   "mean_reciprocal_rank": {
+    "value": {
+     "words_all": 0.9460151868637596,
+     "units_all": 0.8324745028131436,
+     "words_not_copied": 0.9010278425835592,
+     "units_not_copied": 0.6928699218240968,
+     "words_on_the_15_it_gets_wrong": 0.20822274066847316,
+     "units_on_the_15_words_get_wrong": 0.2792212897127868,
+     "better_of_the_two_ranks_all": 0.9580314742977082
+    },
+    "what": "mean reciprocal rank of the true source by the word model and by the units alone (the last line takes, pair by pair, the better of the two ranks: an upper bound no rule could reach without knowing the answer)",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].entries_table"
+   },
+   "the_refitted_model": {
+    "value": {
+     "gain_in_held_out_log_likelihood": 19.609288897312645,
+     "gain_sign_flip_p": 0.0004999950000499995,
+     "words_only_held_out_log_likelihood": -91.0679993094209,
+     "with_the_units": -71.45871041210825,
+     "geometric_mean_probability_of_the_source_words": 0.6610370089215718,
+     "geometric_mean_probability_of_the_source_with_units": 0.7226629702618994,
+     "share_of_the_words_only_shortfall_recovered": 0.2153257900251695,
+     "gain_per_open_pair_nats": 0.9290365569296942,
+     "sources_first_words": 205,
+     "sources_first_with_the_measure": 206,
+     "top_1_answers_gained_net": 1,
+     "log_rank_gain": 5.529252007389796,
+     "geometric_mean_rank_ratio_over_all_entries": 1.0254514592495605,
+     "geometric_mean_rank_ratio_if_all_of_it_fell_on_the_15_wrong_pairs": 1.4457334931517498,
+     "unit_weight_mean": 1.2907682629184594,
+     "odds_ratio_per_pool_sd_of_the_unit_score": 3.635578563314884
+    },
+    "what": "what the committed gain block says about the word model refitted with the unit column: 19.6 nats of held-out log-likelihood, one more source ranked first (205 to 206)",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].gain; .words_only.all_entries"
+   },
+   "pairs_the_words_leave_more_than_half_open": {
+    "value": {
+     "n": 20,
+     "units_rank_first": 3,
+     "units_in_top_10": 11,
+     "median_unit_rank": 9.5,
+     "median_pool": 1541.0,
+     "median_unit_rank_as_a_share_of_the_pool": 0.007459009662496921,
+     "contribution_positive": 18,
+     "T_share": 0.898013798603214
+    },
+    "what": "the 20 entries where the word model gives the true source a probability under 0.5: where the units alone rank the source",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].entries_table"
+   },
+   "effect_in_the_test_s_own_unit": {
+    "value": {
+     "T_per_open_pair": 1.2002240236572796,
+     "smallest_planted_boost_with_80pct_power_word_twin": 0.5555555555555556,
+     "smallest_planted_boost_with_80pct_power_pure_noise": 0.8636363636363636
+    },
+    "what": "T per open pair (about 1.2 normal-score units) beside the smallest planted boost the test finds with 80% power, in pool standard deviations",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].slope; decision.smallest_boost_detected_with_80pct_power_on_this_list"
+   },
+   "units_alone_against_words_alone_heredity": {
+    "value": {
+     "units_share_first_not_copied": 0.6333333333333333,
+     "units_first_not_copied": 76,
+     "words_first_not_copied": 105,
+     "of": 120,
+     "embedding_Z_in_the_units_place": 0.8509119739883692,
+     "embedding_gain": -0.7871271542522436
+    },
+    "what": "on the 120 pairs that are not copied the units alone rank the source first in 76, the word model in 105",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].heredity.hub_corrected.not_copied; .words_only.not_copied; .embedding"
+   }
+  },
+  "4_recognition": {
+   "splits": {
+    "value": {
+     "recognised": {
+      "entries": 61,
+      "families": 46,
+      "T": 8.91328893033114,
+      "Z": 1.9795634534471098,
+      "families_positive": 10,
+      "families_negative": 20,
+      "effective_pairs_left_open": 5.487957898239439,
+      "p": 0.01907980920190798,
+      "per_open_pair": 1.6241540288037855,
+      "noise_calibrated_p_whole_list_null": 0.05547226386806597,
+      "sources_first_by_words": 56,
+      "sources_first_by_units": 48,
+      "families_with_abs_sum_above_0.1": [
+       5,
+       1
+      ]
+     },
+     "not_recognised": {
+      "entries": 159,
+      "families": 135,
+      "T": 16.419987188717947,
+      "Z": 2.8366189414627874,
+      "families_positive": 37,
+      "families_negative": 40,
+      "effective_pairs_left_open": 15.61916512189011,
+      "p": 8.99991000089999e-05,
+      "per_open_pair": 1.0512717588026195,
+      "noise_calibrated_p_whole_list_null": 0.00399800099950025,
+      "sources_first_by_words": 149,
+      "sources_first_by_units": 128,
+      "families_with_abs_sum_above_0.1": [
+       20,
+       3
+      ]
+     },
+     "recognised_both_films": {
+      "entries": 15,
+      "families": 14,
+      "T": 5.184180488585054,
+      "Z": 1.3226229251252717,
+      "families_positive": 3,
+      "families_negative": 5,
+      "effective_pairs_left_open": 2.294144567743534,
+      "p": 0.1875,
+      "per_open_pair": 2.259744464876549,
+      "noise_calibrated_p_whole_list_null": 0.16441779110444776,
+      "sources_first_by_words": 13,
+      "sources_first_by_units": 12,
+      "families_with_abs_sum_above_0.1": [
+       2,
+       1
+      ]
+     },
+     "not_recognised_both_films": {
+      "entries": 205,
+      "families": 167,
+      "T": 20.149095630464032,
+      "Z": 3.231900768548295,
+      "families_positive": 44,
+      "families_negative": 54,
+      "effective_pairs_left_open": 18.812978452386012,
+      "p": 9.99990000099999e-06,
+      "per_open_pair": 1.071021033775147,
+      "noise_calibrated_p_whole_list_null": 0.0009995002498750624,
+      "sources_first_by_words": 192,
+      "sources_first_by_units": 164,
+      "families_with_abs_sum_above_0.1": [
+       23,
+       4
+      ]
+     },
+     "recognised_and_not_copied": {
+      "entries": 34,
+      "families": 29,
+      "T": 8.913288930331188,
+      "Z": 1.9795634534471205,
+      "families_positive": 10,
+      "families_negative": 18,
+      "effective_pairs_left_open": 5.487957898239427,
+      "p": 0.01987980120198798,
+      "per_open_pair": 1.6241540288037979,
+      "noise_calibrated_p_whole_list_null": 0.05547226386806597,
+      "sources_first_by_words": 29,
+      "sources_first_by_units": 21,
+      "families_with_abs_sum_above_0.1": [
+       5,
+       1
+      ]
+     },
+     "not_recognised_and_not_copied": {
+      "entries": 86,
+      "families": 77,
+      "T": 16.419987188718043,
+      "Z": 2.836618941462804,
+      "families_positive": 37,
+      "families_negative": 37,
+      "effective_pairs_left_open": 15.61916512189009,
+      "p": 0.00013999860001399987,
+      "per_open_pair": 1.051271758802627,
+      "noise_calibrated_p_whole_list_null": 0.00399800099950025,
+      "sources_first_by_words": 76,
+      "sources_first_by_units": 55,
+      "families_with_abs_sum_above_0.1": [
+       20,
+       3
+      ]
+     }
+    },
+    "what": "every summary by recognition (the wide rule used by condition 7, and the narrower one): T, Z, sign-flip p, open pairs, T per open pair, sources first by words and by units; the noise-calibrated p uses the whole list's noise draws and is only a guide for a subset",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].entries_table"
+   },
+   "not_recognised_largest_families_removed": {
+    "value": [
+     {
+      "k": 0,
+      "family_removed": null,
+      "its_remakes": null,
+      "its_sum": null,
+      "T_n": 16.419987188717947,
+      "Z_n": 2.8366189414627874,
+      "p_n": 8.99991000089999e-05
+     },
+     {
+      "k": 1,
+      "family_removed": 175,
+      "its_remakes": [
+       "Judwaa",
+       "Judwaa 2"
+      ],
+      "its_sum": 4.032911559514646,
+      "T_n": 12.3870756292033,
+      "Z_n": 2.983041189672224,
+      "p_n": 0.00014999850001499985
+     },
+     {
+      "k": 2,
+      "family_removed": 379,
+      "its_remakes": [
+       "Vaseegara (film)"
+      ],
+      "its_sum": 2.6354908147905127,
+      "T_n": 9.751584814412787,
+      "Z_n": 3.0388596674792723,
+      "p_n": 0.00027999720002799973
+     },
+     {
+      "k": 3,
+      "family_removed": 316,
+      "its_remakes": [
+       "Tadakha"
+      ],
+      "its_sum": 1.728855510559669,
+      "T_n": 8.022729303853119,
+      "Z_n": 2.9676191417430577,
+      "p_n": 0.0003899961000389996
+     },
+     {
+      "k": 4,
+      "family_removed": 245,
+      "its_remakes": [
+       "Padaharella Vayasu"
+      ],
+      "its_sum": 1.4235086863334772,
+      "T_n": 6.5992206175196415,
+      "Z_n": 2.8713663059698598,
+      "p_n": 0.0008899911000889991
+     },
+     {
+      "k": 5,
+      "family_removed": 213,
+      "its_remakes": [
+       "Main Tera Hero"
+      ],
+      "its_sum": 1.09780054244986,
+      "T_n": 5.501420075069781,
+      "Z_n": 2.724626729022182,
+      "p_n": 0.0017999820001799983
+     },
+     {
+      "k": 6,
+      "family_removed": 78,
+      "its_remakes": [
+       "Classmates (2007 film)",
+       "Ninaithale Inikkum (2009 film)"
+      ],
+      "its_sum": 0.9921717461780156,
+      "T_n": 4.509248328891766,
+      "Z_n": 2.5641651195146102,
+      "p_n": 0.003759962400375996
+     },
+     {
+      "k": 7,
+      "family_removed": 127,
+      "its_remakes": [
+       "Force (2011 film)"
+      ],
+      "its_sum": 0.8776045273963219,
+      "T_n": 3.631643801495444,
+      "Z_n": 2.3830805015473384,
+      "p_n": 0.007349926500734993
+     },
+     {
+      "k": 8,
+      "family_removed": 171,
+      "its_remakes": [
+       "Joker (1993 film)",
+       "Pyaar Impossible!"
+      ],
+      "its_sum": 0.5998801622908327,
+      "T_n": 3.0317636392046112,
+      "Z_n": 2.1641650083109223,
+      "p_n": 0.013909860901390986
+     },
+     {
+      "k": 9,
+      "family_removed": 205,
+      "its_remakes": [
+       "Loveria"
+      ],
+      "its_sum": 0.5638847323927185,
+      "T_n": 2.467878906811893,
+      "Z_n": 1.92443059858237,
+      "p_n": 0.026399736002639975
+     },
+     {
+      "k": 10,
+      "family_removed": 75,
+      "its_remakes": [
+       "Chirodini Tumi Je Amar",
+       "Chirodini Tumi Je Amar 2"
+      ],
+      "its_sum": 0.5292188040037334,
+      "T_n": 1.9386601028081591,
+      "Z_n": 1.6596665412034668,
+      "p_n": 0.04926950730492695
+     },
+     {
+      "k": 11,
+      "family_removed": 167,
+      "its_remakes": [
+       "Ilavelpu"
+      ],
+      "its_sum": 0.449343881023571,
+      "T_n": 1.4893162217845883,
+      "Z_n": 1.381276366155823,
+      "p_n": 0.08672913270867291
+     },
+     {
+      "k": 12,
+      "family_removed": 56,
+      "its_remakes": [
+       "Bharathan (1992 film)",
+       "Dharma (1998 film)"
+      ],
+      "its_sum": 0.40105368544435244,
+      "T_n": 1.088262536340236,
+      "Z_n": 1.0873339592746136,
+      "p_n": 0.14329856701432986
+     }
+    ],
+    "what": "condition 7's statistic after the k largest family sums of the unrecognised entries are removed",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].entries_table"
+   },
+   "not_recognised_families_to_remove_for_p_at_or_above_0.05": {
+    "value": 11,
+    "what": "smallest k for which condition 7's p is 0.05 or more",
+    "source": "computed from the ladder"
+   },
+   "not_recognised_concentration": {
+    "value": {
+     "families_with_a_sum_above_0.1_in_absolute_value": 23,
+     "effective_number_of_families": 10.377508820318683,
+     "share_of_T_n_in_the_three_largest": 0.5114046550922111,
+     "share_of_T_n_in_the_five_largest": 0.6649558850539318
+    },
+    "what": "how concentrated the unrecognised entries' sum is",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].entries_table"
+   },
+   "recognised_minus_not_per_open_pair": {
+    "value": {
+     "recognised": 1.6241540288037855,
+     "not_recognised": 1.0512717588026195,
+     "difference": 0.572882270001166,
+     "percentile_95": [
+      -0.497723613843149,
+      1.60065041548546
+     ],
+     "share_of_resamples_with_difference_at_or_below_zero": 0.1389
+    },
+    "what": "T per open pair among recognised entries minus the same among unrecognised entries, with a family bootstrap",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].entries_table"
+   },
+   "replies_for_the_thirty_largest_contributions": {
+    "value": [
+     {
+      "remake": "Judwaa 2",
+      "source": "Hello Brother (1994 film)",
+      "contribution": 4.032911559514646,
+      "recognised": false,
+      "R1_reply_for_the_remake": "The film is **\"Twins of Ice\"**.",
+      "remake_identified": false,
+      "R1_reply_for_the_source": "Deva Deva",
+      "source_identified": false,
+      "R2_reply": "The earlier film this plot is a remake of is **\"The Karate Kid\"**.",
+      "source_named": false
+     },
+     {
+      "remake": "Khoka 420",
+      "source": "Brindavanam (2010 film)",
+      "contribution": 3.449015976605649,
+      "recognised": true,
+      "R1_reply_for_the_remake": "Brindavanam",
+      "remake_identified": false,
+      "R1_reply_for_the_source": "Krishna... Lo!",
+      "source_identified": false,
+      "R2_reply": "Brindavanam",
+      "source_named": true
+     },
+     {
+      "remake": "Vaseegara (film)",
+      "source": "Nuvvu Naaku Nachav",
+      "contribution": 2.6354908147905127,
+      "recognised": false,
+      "R1_reply_for_the_remake": "Bhoopathy and Priya",
+      "remake_identified": false,
+      "R1_reply_for_the_source": "Premam",
+      "source_identified": false,
+      "R2_reply": "\"Manmadhan\" (1994)",
+      "source_named": false
+     },
+     {
+      "remake": "Jeena Sirf Merre Liye",
+      "source": "Manasantha Nuvve",
+      "contribution": 1.8579268872743402,
+      "recognised": true,
+      "R1_reply_for_the_remake": "Jeena Sirf Merre Liye",
+      "remake_identified": true,
+      "R1_reply_for_the_source": "Manasantha Nuvve",
+      "source_identified": true,
+      "R2_reply": "The earlier film's title is **\"Pyar Kiya To Yehi Tha\"**.",
+      "source_named": false
+     },
+     {
+      "remake": "Kondapalli Raja",
+      "source": "Khudgarz",
+      "contribution": 1.7896749403044299,
+      "recognised": true,
+      "R1_reply_for_the_remake": "Raja Kumarudu",
+      "remake_identified": false,
+      "R1_reply_for_the_source": "Khudgarz",
+      "source_identified": true,
+      "R2_reply": "The earlier film's title is **\"Minsara Kanavu\"**.",
+      "source_named": false
+     },
+     {
+      "remake": "Tadakha",
+      "source": "Vettai (film)",
+      "contribution": 1.728855510559669,
+      "recognised": false,
+      "R1_reply_for_the_remake": "Siva (1989)",
+      "remake_identified": false,
+      "R1_reply_for_the_source": "Thirumurthy and Gurumurthy is a plot summary of the film **\"Thirumurug",
+      "source_identified": false,
+      "R2_reply": "The earlier film's title is **\"Rowdy\" (1992)**, starring Mohanlal.",
+      "source_named": false
+     },
+     {
+      "remake": "Padaharella Vayasu",
+      "source": "16 Vayathinile",
+      "contribution": 1.4235086863334772,
+      "recognised": false,
+      "R1_reply_for_the_remake": "The film described in the plot summary is **\"Malli\"**.",
+      "remake_identified": false,
+      "R1_reply_for_the_source": "Maya",
+      "source_identified": false,
+      "R2_reply": "The earlier film's title is **\"Malliswari\"**.",
+      "source_named": false
+     },
+     {
+      "remake": "Aegan",
+      "source": "Main Hoon Na",
+      "contribution": 1.1687842649756122,
+      "recognised": true,
+      "R1_reply_for_the_remake": "Aegan",
+      "remake_identified": true,
+      "R1_reply_for_the_source": "The film is **\"Border\" (1997)**.",
+      "source_identified": false,
+      "R2_reply": "The earlier film that this plot is a remake of is **\"Aegan\" (2012)**, which",
+      "source_named": false
+     },
+     {
+      "remake": "Main Tera Hero",
+      "source": "Kandireega",
+      "contribution": 1.09780054244986,
+      "recognised": false,
+      "R1_reply_for_the_remake": "Tere Naam",
+      "remake_identified": false,
+      "R1_reply_for_the_source": "Sreenu",
+      "source_identified": false,
+      "R2_reply": "The earlier film's title is **\"Rowdy\" (1987)**.",
+      "source_named": false
+     },
+     {
+      "remake": "Ninaithale Inikkum (2009 film)",
+      "source": "Classmates (2006 film)",
+      "contribution": 0.979199128100178,
+      "recognised": false,
+      "R1_reply_for_the_remake": "Shakti (2005)",
+      "remake_identified": false,
+      "R1_reply_for_the_source": "The film is **\"Mumbai Police\"**.",
+      "source_identified": false,
+      "R2_reply": "The earlier film's title is **\"Anbe Sivam\"**.",
+      "source_named": false
+     },
+     {
+      "remake": "Force (2011 film)",
+      "source": "Kaakha Kaakha",
+      "contribution": 0.8776045273963219,
+      "recognised": false,
+      "R1_reply_for_the_remake": "The film is **\"Rowdy Rathore\"**.",
+      "remake_identified": false,
+      "R1_reply_for_the_source": "Thuppakki",
+      "source_identified": false,
+      "R2_reply": "The earlier film that this plot is a remake of is **\"Rangeela\" (1995)**.",
+      "source_named": false
+     },
+     {
+      "remake": "Bhale Dongalu",
+      "source": "Bunty Aur Babli",
+      "contribution": 0.8767471168575862,
+      "recognised": true,
+      "R1_reply_for_the_remake": "Raju Chacha",
+      "remake_identified": false,
+      "R1_reply_for_the_source": "Bunty Aur Babli",
+      "source_identified": true,
+      "R2_reply": "The earlier film's title is **\"Chupke Chupke\" (1975)**.",
+      "source_named": false
+     },
+     {
+      "remake": "Pyaar Impossible!",
+      "source": "Kilukkampetti",
+      "contribution": 0.5998801622908327,
+      "recognised": false,
+      "R1_reply_for_the_remake": "The film is **\"Chak De! India\"**.",
+      "remake_identified": false,
+      "R1_reply_for_the_source": "Vasudevan",
+      "source_identified": false,
+      "R2_reply": "The earlier film is **\"The Nanny\" (1993)**, starring Michael Douglas and Kim Basing",
+      "source_named": false
+     },
+     {
+      "remake": "Loveria",
+      "source": "Bumper Offer",
+      "contribution": 0.5638847323927185,
+      "recognised": false,
+      "R1_reply_for_the_remake": "Bol Bachchan",
+      "remake_identified": false,
+      "R1_reply_for_the_source": "Sai Pallavi",
+      "source_identified": false,
+      "R2_reply": "Sholay",
+      "source_named": false
+     },
+     {
+      "remake": "Chirodini Tumi Je Amar 2",
+      "source": "Vazhakku Enn 18/9",
+      "contribution": 0.5292188040038004,
+      "recognised": false,
+      "R1_reply_for_the_remake": "Acid\u00b2",
+      "remake_identified": false,
+      "R1_reply_for_the_source": "The film is **\"Jigarthanda\"**.",
+      "source_identified": false,
+      "R2_reply": "The earlier film's title is **\"Parineeta\" (2005)**.",
+      "source_named": false
+     },
+     {
+      "remake": "Dor (2006 film)",
+      "source": "Perumazhakkalam",
+      "contribution": -0.5215038942495684,
+      "recognised": false,
+      "R1_reply_for_the_remake": "Zeenat",
+      "remake_identified": false,
+      "R1_reply_for_the_source": "Iruvar",
+      "source_identified": false,
+      "R2_reply": "The earlier film's title is **\"Bobby\"**.",
+      "source_named": false
+     },
+     {
+      "remake": "Ilavelpu",
+      "source": "Edhir Paradhathu",
+      "contribution": 0.449343881023571,
+      "recognised": false,
+      "R1_reply_for_the_remake": "The film's title is **\"Sharada\"* (1996).",
+      "remake_identified": false,
+      "R1_reply_for_the_source": "Pudhupettai",
+      "source_identified": false,
+      "R2_reply": "The earlier film's title is **\"Mayabazar\"**.",
+      "source_named": false
+     },
+     {
+      "remake": "Dharma (1998 film)",
+      "source": "Ziddi (1997 film)",
+      "contribution": 0.40269352496831734,
+      "recognised": false,
+      "R1_reply_for_the_remake": "Baadshah (1993)",
+      "remake_identified": false,
+      "R1_reply_for_the_source": "Deva Ki Adaalat",
+      "source_identified": false,
+      "R2_reply": "The earlier film's title is **\"Neram\"**.",
+      "source_named": false
+     },
+     {
+      "remake": "Siruthai",
+      "source": "Vikramarkudu",
+      "contribution": 0.3805412486494899,
+      "recognised": false,
+      "R1_reply_for_the_remake": "Rocketry: The N. A. P. S. Story",
+      "remake_identified": false,
+      "R1_reply_for_the_source": "Sathi Babu",
+      "source_identified": false,
+      "R2_reply": "The earlier film that this plot is a remake of is **\"Chandramukhi\" (2005",
+      "source_named": false
+     },
+     {
+      "remake": "Pandavulu Pandavulu Tummeda",
+      "source": "Golmaal 3",
+      "contribution": -0.3721400965830588,
+      "recognised": false,
+      "R1_reply_for_the_remake": "The film's title is **\"Pandavas in Bangkok\"**.",
+      "remake_identified": false,
+      "R1_reply_for_the_source": "Goa",
+      "source_identified": false,
+      "R2_reply": "Virumaandi",
+      "source_named": false
+     },
+     {
+      "remake": "Puriyaadha Pudhir",
+      "source": "Tarka (movie)",
+      "contribution": 0.33662428412355505,
+      "recognised": false,
+      "R1_reply_for_the_remake": "Nayakan",
+      "remake_identified": false,
+      "R1_reply_for_the_source": "\"Khoon Bhari Maang\"",
+      "source_identified": false,
+      "R2_reply": "The earlier film's title is **\"Nayakan\"**.",
+      "source_named": false
+     },
+     {
+      "remake": "Dil-E-Nadaan",
+      "source": "Ilamai Oonjal Aadukirathu",
+      "contribution": 0.3051220665483103,
+      "recognised": false,
+      "R1_reply_for_the_remake": "Kabhi Khushi Kabhie Gham",
+      "remake_identified": false,
+      "R1_reply_for_the_source": "Sadma",
+      "source_identified": false,
+      "R2_reply": "The film is a remake of the 1956 film **\"Pyaasa\"**.",
+      "source_named": false
+     },
+     {
+      "remake": "Aaj Ka Goonda Raj",
+      "source": "Gang Leader",
+      "contribution": 0.26590566541791616,
+      "recognised": false,
+      "R1_reply_for_the_remake": "Gundaraj",
+      "remake_identified": false,
+      "R1_reply_for_the_source": "The film is **\"Rajaram\" (1996)**.",
+      "source_identified": false,
+      "R2_reply": "Sholay",
+      "source_named": false
+     },
+     {
+      "remake": "Enakkul Oruvan (1984 film)",
+      "source": "Karz (film)",
+      "contribution": 0.25011473863909217,
+      "recognised": false,
+      "R1_reply_for_the_remake": "\"Madan\"",
+      "remake_identified": false,
+      "R1_reply_for_the_source": "\"Khoon Bhari Maang\"",
+      "source_identified": false,
+      "R2_reply": "The earlier film's title is **\"Jeans\"** (1998).",
+      "source_named": false
+     },
+     {
+      "remake": "Vallavanukku Vallavan (1965 film)",
+      "source": "Ustadon Ke Ustad (1963 film)",
+      "contribution": 0.20954385551951252,
+      "recognised": false,
+      "R1_reply_for_the_remake": "Bijua Pakiri",
+      "remake_identified": false,
+      "R1_reply_for_the_source": "Phir Subah Hogi",
+      "source_identified": false,
+      "R2_reply": "The earlier film that this plot is a remake of is **\"Sholay\"**.",
+      "source_named": false
+     },
+     {
+      "remake": "Heropanti",
+      "source": "Parugu",
+      "contribution": 0.14760143055623803,
+      "recognised": false,
+      "R1_reply_for_the_remake": "Badrinath Ki Dulhania",
+      "remake_identified": false,
+      "R1_reply_for_the_source": "Krishna",
+      "source_identified": false,
+      "R2_reply": "Sholay",
+      "source_named": false
+     },
+     {
+      "remake": "Dhol (2007 film)",
+      "source": "In Harihar Nagar",
+      "contribution": -0.1403156736727299,
+      "recognised": true,
+      "R1_reply_for_the_remake": "The film is **\"Dhol\" (2007)**.",
+      "remake_identified": true,
+      "R1_reply_for_the_source": "The film is **\"Mumbai Police\"**.",
+      "source_identified": false,
+      "R2_reply": "The earlier film's title is **\"Andaz Apna Apna\"**.",
+      "source_named": false
+     },
+     {
+      "remake": "Annamalai (film)",
+      "source": "Khudgarz",
+      "contribution": -0.12576030917038916,
+      "recognised": true,
+      "R1_reply_for_the_remake": "Annamalai",
+      "remake_identified": true,
+      "R1_reply_for_the_source": "Khudgarz",
+      "source_identified": true,
+      "R2_reply": "The earlier film that this plot is a remake of is **\"Minsara Kanavu\"** (19",
+      "source_named": false
+     },
+     {
+      "remake": "Anaamika (2014 film)",
+      "source": "Kahaani",
+      "contribution": -0.11992200937231773,
+      "recognised": false,
+      "R1_reply_for_the_remake": "The film is **\"A Wednesday!\"**",
+      "remake_identified": false,
+      "R1_reply_for_the_source": "The film is **\"Tumhari Sulu\"**.",
+      "source_identified": false,
+      "R2_reply": "The earlier film's title is **\"The Lives of Others\"**.",
+      "source_named": false
+     },
+     {
+      "remake": "Shart: The Challenge",
+      "source": "Badri (2000 film)",
+      "contribution": 0.11779604409706029,
+      "recognised": false,
+      "R1_reply_for_the_remake": "Saryu",
+      "remake_identified": false,
+      "R1_reply_for_the_source": "Sarayu Bhargavi",
+      "source_identified": false,
+      "R2_reply": "The earlier film this plot is a remake of is **\"Yes Man\" (2007)**, starring Jim",
+      "source_named": false
+     }
+    ],
+    "what": "the model's replies to R1 (both films) and R2 for the thirty entries with the largest absolute contributions, with the rule's verdicts",
+    "source": "remakes_recognition_qwen3-32b.json: r1, r2"
+   },
+   "looser_title_scan_of_the_unrecognised_entries": {
+    "value": {
+     "unrecognised_entries": 159,
+     "entries_with_a_reply_naming_a_film_of_the_family": 3,
+     "rows": [
+      {
+       "remake": "Bharathan (1992 film)",
+       "source": "Ghayal (1990 film)",
+       "contribution": -0.0016398395239648929,
+       "open_mass": 0.0015316907335382046,
+       "replies_that_name_a_film_of_the_family": [
+        [
+         "R1 for the remake",
+         "Bharath Ane Nenu",
+         "Bharathan (1992 film)",
+         "close"
+        ]
+       ]
+      },
+      {
+       "remake": "Madana (film)",
+       "source": "Manmadhan (film)",
+       "contribution": 0.0,
+       "open_mass": 0.0,
+       "replies_that_name_a_film_of_the_family": [
+        [
+         "R1 for the source",
+         "\"Madhan\" (2005)",
+         "Madana (film)",
+         "close"
+        ],
+        [
+         "R1 for the source",
+         "\"Madhan\" (2005)",
+         "Manmadhan (film)",
+         "close"
+        ]
+       ]
+      },
+      {
+       "remake": "Nagavalli (film)",
+       "source": "Aptharakshaka",
+       "contribution": 0.0,
+       "open_mass": 0.0,
+       "replies_that_name_a_film_of_the_family": [
+        [
+         "R1 for the remake",
+         "Chandramukhi",
+         "Chandramukhi",
+         "exact"
+        ],
+        [
+         "R2",
+         "Chandramukhi",
+         "Chandramukhi",
+         "exact"
+        ],
+        [
+         "R1 for the source",
+         "Nagavalli",
+         "Nagavalli (film)",
+         "exact"
+        ]
+       ]
+      }
+     ],
+     "their_open_pairs": 0.0015316907335382046,
+     "their_T": -0.0016398395239648929
+    },
+    "what": "every unrecognised primary entry scanned with a looser rule than the registered one (any of the three replies names, exactly or within 80% similarity, any film of the pair's family): how many such entries there are and how much of the test's weight they carry",
+    "source": "remakes_recognition_qwen3-32b.json: r1, r2; data/second/remakes/pairs.json: pairs, relatives_that_are_not_in_a_kept_pair"
+   },
+   "possible_misses_of_the_title_rule": {
+    "value": {
+     "pairs": [
+      [
+       "Ilavelpu",
+       "Edhir Paradhathu",
+       "R1 reply for the remake is \"Sharada\": the Hindi remake of the same source is Sharada (1957), named in the source's own stating sentence",
+       0.449343881023571
+      ],
+      [
+       "Aaj Ka Goonda Raj",
+       "Gang Leader",
+       "R1 reply for the remake is 'Gundaraj': two of the title's four words run together, but also the title of another film",
+       0.26590566541791616
+      ]
+     ],
+     "condition_7_with_them_counted_as_recognised": {
+      "T_n": 15.706377481800425,
+      "Z_n": 2.7243915554020512,
+      "p_n": 0.00012999870001299986,
+      "E_n": 14.872068109580686,
+      "entries": 154
+     }
+    },
+    "what": "two replies among the thirty that the rule may have missed (read by hand), and condition 7 recomputed with both pairs, and the pairs of the looser scan, moved to the recognised side",
+    "source": "computed; the replies are in replies_for_the_thirty_largest_contributions"
+   },
+   "recognised_by_title_summary": {
+    "value": {
+     "films_identified": 246,
+     "of": 887,
+     "remakes_whose_source_is_named": 82,
+     "of_remakes": 471,
+     "primary_pairs_recognised": 61,
+     "primary_pairs_recognised_both_films": 15
+    },
+    "what": "the recognition tallies as committed",
+    "source": "remakes_recognition_qwen3-32b.json: summary"
+   }
+  },
+  "5_reference_corpus": {
+   "splits": {
+    "value": {
+     "source_in_the_reference_corpus": {
+      "entries": 137,
+      "families": 104,
+      "T": 21.508524820599824,
+      "Z": 3.059767671269903,
+      "families_positive": 29,
+      "families_negative": 34,
+      "effective_pairs_left_open": 15.40851106974792,
+      "p": 9.99990000099999e-06,
+      "per_open_pair": 1.39588599594339,
+      "noise_calibrated_p_whole_list_null": 0.0014992503748125937,
+      "sources_first_by_words": 125,
+      "sources_first_by_units": 106,
+      "families_with_abs_sum_above_0.1": [
+       17,
+       2
+      ]
+     },
+     "source_not_in_the_reference_corpus": {
+      "entries": 83,
+      "families": 74,
+      "T": 3.8247512984492626,
+      "Z": 1.8300120085241807,
+      "families_positive": 18,
+      "families_negative": 24,
+      "effective_pairs_left_open": 5.698611950381631,
+      "p": 0.034929650703492965,
+      "per_open_pair": 0.6711724419475733,
+      "noise_calibrated_p_whole_list_null": 0.07896051974012994,
+      "sources_first_by_words": 80,
+      "sources_first_by_units": 70,
+      "families_with_abs_sum_above_0.1": [
+       8,
+       2
+      ]
+     }
+    },
+    "what": "the contributions summed by whether the source's summary is a document of v2's reference corpus",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].entries_table"
+   },
+   "per_open_pair_difference": {
+    "value": {
+     "in_reference": 1.39588599594339,
+     "not_in_reference": 0.6711724419475733,
+     "difference": 0.7247135539958167,
+     "percentile_95": [
+      -0.12040262354240353,
+      1.5655994655519674
+     ],
+     "bca_95": [
+      -0.05089742998883203,
+      1.6378639557046055
+     ],
+     "share_of_resamples_with_difference_at_or_below_zero": 0.04495,
+     "bootstrap_95_for_in_reference": [
+      0.8423329597255363,
+      1.9618433563648054
+     ],
+     "bootstrap_95_for_not_in_reference": [
+      0.04049598510090678,
+      1.2910684934894876
+     ]
+    },
+    "what": "T per open pair where the source is a reference document minus where it is not, with a family bootstrap",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].entries_table"
+   },
+   "shares": {
+    "value": {
+     "share_of_entries": 0.6227272727272727,
+     "share_of_open_pairs": 0.7300147469199404,
+     "share_of_T": 0.8490226340850847,
+     "of_the_15_largest_contributions": 11,
+     "of_the_10_largest_contributions": 8,
+     "of_the_7_largest_contributions": 7,
+     "chance_of_7_of_7_at_the_open_pair_share": 0.11048960813378918
+    },
+    "what": "the reference-source pairs' share of the entries, of the open pairs, of T and of the largest contributions",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].entries_table"
+   },
+   "against_the_stand_ins_on_the_same_subsets": {
+    "value": {
+     "in_reference": {
+      "units_Z": 3.059767671269903,
+      "stand_ins_largest_Z_on_this_subset": 2.060688727249783,
+      "stand_ins_share_below_0.05": 0.12162162162162163,
+      "units_above_every_stand_in": true
+     },
+     "not_in_reference": {
+      "units_Z": 1.8300120085241807,
+      "stand_ins_largest_Z_on_this_subset": 1.9177944875811397,
+      "stand_ins_share_below_0.05": 0.04054054054054054,
+      "units_above_every_stand_in": false
+     }
+    },
+    "what": "the units' Z on each subset beside the largest Z of the 74 stand-ins on the same subset (the words file has the stand-ins by subset): where the source is not a reference document the units are below the best stand-in",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].subsets; remakes_words.json: primary_calibration.standins_by_subset_of_the_entries_descriptive"
+   },
+   "reference_by_recognition": {
+    "value": {
+     "in_reference and recognised": {
+      "entries": 43,
+      "families": 31,
+      "T": 7.741482488853673,
+      "Z": 1.7803416037858482,
+      "families_positive": 7,
+      "families_negative": 12,
+      "effective_pairs_left_open": 4.694029777417342,
+      "p": 0.041015625,
+      "per_open_pair": 1.6492188707658864
+     },
+     "in_reference and not_recognised": {
+      "entries": 94,
+      "families": 78,
+      "T": 13.76704233174615,
+      "Z": 2.4925929551333628,
+      "families_positive": 22,
+      "families_negative": 24,
+      "effective_pairs_left_open": 10.714481292330579,
+      "p": 2.999970000299997e-05,
+      "per_open_pair": 1.2849004964524595
+     },
+     "not_in_reference and recognised": {
+      "entries": 18,
+      "families": 16,
+      "T": 1.171806441477468,
+      "Z": 1.0025824409938615,
+      "families_positive": 3,
+      "families_negative": 8,
+      "effective_pairs_left_open": 0.793928120822097,
+      "p": 0.125,
+      "per_open_pair": 1.4759603681301596
+     },
+     "not_in_reference and not_recognised": {
+      "entries": 65,
+      "families": 59,
+      "T": 2.6529448569717946,
+      "Z": 1.5311441032852646,
+      "families_positive": 15,
+      "families_negative": 17,
+      "effective_pairs_left_open": 4.9046838295595325,
+      "p": 0.06901930980690194,
+      "per_open_pair": 0.540900280051292
+     }
+    },
+    "what": "the four cells of reference source by recognition",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].entries_table"
+   },
+   "units_alone_by_reference": {
+    "value": {
+     "not_copied_in_reference": [
+      45,
+      76
+     ],
+     "not_copied_not_in_reference": [
+      31,
+      44
+     ],
+     "words_not_copied_in_reference": [
+      64,
+      76
+     ],
+     "words_not_copied_not_in_reference": [
+      41,
+      44
+     ]
+    },
+    "what": "sources ranked first by the units alone and by the word model, among pairs that are not copied, by whether the source is a reference document [first, of]",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].entries_table"
+   }
+  },
+  "6_settings_and_frames": {
+   "rule_settings": {
+    "value": {
+     "top1_20": {
+      "T": 23.79521055784832,
+      "Z": 3.32350773663246,
+      "sign_flip_p": 9.99990000099999e-06,
+      "noise_calibrated_p": 0.0004997501249375312,
+      "Z_above_the_stand_ins": true,
+      "families_positive": 46,
+      "families_negative": 58
+     },
+     "top1_30": {
+      "T": 25.33327611904908,
+      "Z": 3.454417612582645,
+      "sign_flip_p": 9.99990000099999e-06,
+      "noise_calibrated_p": 0.0004997501249375312,
+      "Z_above_the_stand_ins": true,
+      "families_positive": 47,
+      "families_negative": 57
+     },
+     "top1_40": {
+      "T": 21.530688713421444,
+      "Z": 3.308474104352877,
+      "sign_flip_p": 1.999980000199998e-05,
+      "noise_calibrated_p": 0.0004997501249375312,
+      "Z_above_the_stand_ins": true,
+      "families_positive": 44,
+      "families_negative": 60
+     },
+     "top1_50": {
+      "T": 18.057829278176072,
+      "Z": 2.892599378191107,
+      "sign_flip_p": 0.0004199958000419996,
+      "noise_calibrated_p": 0.0029985007496251873,
+      "Z_above_the_stand_ins": true,
+      "families_positive": 41,
+      "families_negative": 63
+     },
+     "top3_20": {
+      "T": 20.93428476421034,
+      "Z": 3.2850456382646835,
+      "sign_flip_p": 9.99990000099999e-06,
+      "noise_calibrated_p": 0.0009995002498750624,
+      "Z_above_the_stand_ins": true,
+      "families_positive": 47,
+      "families_negative": 57
+     },
+     "top3_30": {
+      "T": 17.281084766815873,
+      "Z": 3.207799583320372,
+      "sign_flip_p": 6.999930000699993e-05,
+      "noise_calibrated_p": 0.0009995002498750624,
+      "Z_above_the_stand_ins": true,
+      "families_positive": 44,
+      "families_negative": 60
+     },
+     "top3_40": {
+      "T": 11.021540514550919,
+      "Z": 1.8500272669454156,
+      "sign_flip_p": 0.03185968140318597,
+      "noise_calibrated_p": 0.07646176911544228,
+      "Z_above_the_stand_ins": false,
+      "families_positive": 40,
+      "families_negative": 64
+     },
+     "top3_50": {
+      "T": 4.5601702689938985,
+      "Z": 1.0482829681749297,
+      "sign_flip_p": 0.15511844881551184,
+      "noise_calibrated_p": 0.2223888055972014,
+      "Z_above_the_stand_ins": false,
+      "families_positive": 49,
+      "families_negative": 55
+     }
+    },
+    "what": "the eight rule settings: T, Z, the registered p, the noise-calibrated p (the noise draws do not depend on the setting) and whether Z is above the stand-ins' largest Z",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].planes.rows"
+   },
+   "rule_settings_counts": {
+    "value": {
+     "sign_flip_p_below_0.05": 7,
+     "noise_calibrated_p_below_0.05": 6,
+     "Z_above_the_stand_ins": 6,
+     "of": 8,
+     "the_primary_setting_has_the_largest_Z": true
+    },
+    "what": "how many of the eight settings pass each reading",
+    "source": "computed from rule_settings"
+   },
+   "frames_and_sets": {
+    "value": {
+     "primary | set": {
+      "entries": 220,
+      "families": 175,
+      "T": 25.33327611904908,
+      "Z": 3.454417612582645,
+      "sign_flip_p": 9.99990000099999e-06,
+      "open_pairs": 21.10712302012955,
+      "gain": 19.609288897312645,
+      "sources_first_words": 205,
+      "sources_first_with_the_measure": 206,
+      "stand_ins_largest_Z": 2.2279788170279393,
+      "stand_ins_share_below_0.05": 0.0945945945945946,
+      "units_Z_above_every_stand_in": true,
+      "calibrated_by_the_stand_ins": true,
+      "effective_number_of_families": 14.457898680221179,
+      "share_of_sum_of_squares_in_five_largest": 0.7725089299858007,
+      "not_recognised_Z": 2.8366189414627874,
+      "not_recognised_p": 8.99991000089999e-05
+     },
+     "primary | all": {
+      "entries": 220,
+      "families": 175,
+      "T": 26.71937314225827,
+      "Z": 3.5925513021226196,
+      "sign_flip_p": 9.99990000099999e-06,
+      "open_pairs": 28.326053175208898,
+      "gain": 9.479524629621164,
+      "sources_first_words": 199,
+      "sources_first_with_the_measure": 199,
+      "stand_ins_largest_Z": 2.255914073799799,
+      "stand_ins_share_below_0.05": 0.02702702702702703,
+      "units_Z_above_every_stand_in": true,
+      "calibrated_by_the_stand_ins": true,
+      "effective_number_of_families": 21.978134084460812,
+      "share_of_sum_of_squares_in_five_largest": 0.5921109603485072,
+      "not_recognised_Z": 3.0600340152221315,
+      "not_recognised_p": 0.00015999840001599985,
+      "family_sums_shared_with_the_primary_analysis": {
+       "families": 175,
+       "pearson": 0.8182258689200567,
+       "spearman": 0.6765421103186972,
+       "ten_largest_in_common": 6
+      }
+     },
+     "primary | source_industry": {
+      "entries": 220,
+      "families": 175,
+      "T": 20.651083509323826,
+      "Z": 2.9595586527566016,
+      "sign_flip_p": 1.999980000199998e-05,
+      "open_pairs": 16.311285115638256,
+      "gain": 13.284260367751015,
+      "sources_first_words": 206,
+      "sources_first_with_the_measure": 210,
+      "stand_ins_largest_Z": 2.725943808476313,
+      "stand_ins_share_below_0.05": 0.16216216216216217,
+      "units_Z_above_every_stand_in": true,
+      "calibrated_by_the_stand_ins": false,
+      "effective_number_of_families": 9.943913809361483,
+      "share_of_sum_of_squares_in_five_largest": 0.8714526612967124,
+      "not_recognised_Z": 2.379894053080381,
+      "not_recognised_p": 0.0005999940000599994,
+      "family_sums_shared_with_the_primary_analysis": {
+       "families": 175,
+       "pearson": 0.8421517713415725,
+       "spearman": 0.6967822669758936,
+       "ten_largest_in_common": 8
+      }
+     },
+     "firm_same_industry | set": {
+      "entries": 145,
+      "families": 134,
+      "T": 31.489613232290896,
+      "Z": 4.325051233241218,
+      "sign_flip_p": 9.99990000099999e-06,
+      "open_pairs": 31.711426668564826,
+      "gain": 37.27601014054163,
+      "sources_first_words": 119,
+      "sources_first_with_the_measure": 122,
+      "stand_ins_largest_Z": 3.3756121556439465,
+      "stand_ins_share_below_0.05": 0.4189189189189189,
+      "units_Z_above_every_stand_in": true,
+      "calibrated_by_the_stand_ins": false,
+      "effective_number_of_families": 21.699983283948622,
+      "share_of_sum_of_squares_in_five_largest": 0.5698088815585697,
+      "not_recognised_Z": 2.870804114380148,
+      "not_recognised_p": 0.0005699943000569994
+     },
+     "loose_all | set": {
+      "entries": 67,
+      "families": 64,
+      "T": 16.16455504268317,
+      "Z": 3.2414737673090217,
+      "sign_flip_p": 0.00022999770002299976,
+      "open_pairs": 48.39260355353841,
+      "gain": 6.046223680168942,
+      "sources_first_words": 23,
+      "sources_first_with_the_measure": 22,
+      "stand_ins_largest_Z": 3.561133533153118,
+      "stand_ins_share_below_0.05": 0.4864864864864865,
+      "units_Z_above_every_stand_in": false,
+      "calibrated_by_the_stand_ins": false,
+      "effective_number_of_families": 29.63417272215814,
+      "share_of_sum_of_squares_in_five_largest": 0.5618023025826424,
+      "not_recognised_Z": 2.7470237992667883,
+      "not_recognised_p": 0.0012399876001239988
+     },
+     "firm_other_cross_industry | set": {
+      "entries": 50,
+      "families": 47,
+      "T": 11.720766590926555,
+      "Z": 2.937292109244012,
+      "sign_flip_p": 0.00021999780002199978,
+      "open_pairs": 23.04400745456292,
+      "gain": 7.919723864517789,
+      "sources_first_words": 32,
+      "sources_first_with_the_measure": 33,
+      "stand_ins_largest_Z": 2.680216308940155,
+      "stand_ins_share_below_0.05": 0.2972972972972973,
+      "units_Z_above_every_stand_in": true,
+      "calibrated_by_the_stand_ins": false,
+      "effective_number_of_families": 11.998702736552183,
+      "share_of_sum_of_squares_in_five_largest": 0.826742492423645,
+      "not_recognised_Z": 2.5982672369802327,
+      "not_recognised_p": 0.00027999720002799973
+     },
+     "firm_all | set": {
+      "entries": 415,
+      "families": 349,
+      "T": 65.99400702970695,
+      "Z": 6.657910494327171,
+      "sign_flip_p": 9.99990000099999e-06,
+      "open_pairs": 83.72362991594522,
+      "gain": 56.89018243914964,
+      "sources_first_words": 351,
+      "sources_first_with_the_measure": 358,
+      "stand_ins_largest_Z": 3.890418905125249,
+      "stand_ins_share_below_0.05": 0.47297297297297297,
+      "units_Z_above_every_stand_in": true,
+      "calibrated_by_the_stand_ins": false,
+      "effective_number_of_families": 56.144443516672254,
+      "share_of_sum_of_squares_in_five_largest": 0.3735057700864894,
+      "not_recognised_Z": 5.333589845655686,
+      "not_recognised_p": 9.99990000099999e-06,
+      "family_sums_shared_with_the_primary_analysis": {
+       "families": 175,
+       "pearson": 0.5751759543520327,
+       "spearman": 0.5976267357573722,
+       "ten_largest_in_common": 5
+      }
+     }
+    },
+    "what": "each committed analysis of this model (the two other frames of the primary set, and the secondary sets): the test's numbers, whether the units' Z is above every stand-in, and how its family sums agree with the primary analysis on the families they share",
+    "source": "remakes_qwen3-32b.json: analyses[*]"
+   },
+   "beside_the_decision": {
+    "value": {
+     "pruned_cells": {
+      "Z": 3.454351643535992,
+      "T": 25.334769954148907
+     },
+     "no_hub_correction": {
+      "Z": 3.3778723591450053,
+      "T": 17.401231788514664,
+      "p": 9.99990000099999e-06,
+      "gain": 12.515120705036718,
+      "stand_ins_largest_Z": 2.8570059913703996,
+      "stand_ins_share_below_0.05": 0.13513513513513514,
+      "units_above_every_stand_in": true
+     },
+     "lambda_1": {
+      "Z": 3.290437021563906,
+      "T": 26.509738994579855,
+      "p": 9.99990000099999e-06,
+      "gain": 22.69696930474792,
+      "stand_ins_largest_Z": 2.509314927774263,
+      "stand_ins_share_below_0.05": 0.12162162162162163,
+      "units_above_every_stand_in": true
+     },
+     "lambda_10": {
+      "Z": 3.6653687350351545,
+      "T": 23.106681127658025,
+      "p": 9.99990000099999e-06,
+      "gain": 13.438286544219963,
+      "stand_ins_largest_Z": 2.0710137696968367,
+      "stand_ins_share_below_0.05": 0.06756756756756757,
+      "units_above_every_stand_in": true
+     },
+     "without_units_above_their_scale": {
+      "Z": 3.343088157541125,
+      "T": 22.52641907762857,
+      "p": 9.99990000099999e-06,
+      "gain": 15.247287253339753,
+      "sources_first_with_the_measure": 205
+     },
+     "embedding_in_the_units_place": {
+      "Z": 0.8509119739883692,
+      "p": 0.20623793762062378,
+      "gain": -0.7871271542522436
+     },
+     "units_with_the_embedding_among_the_columns": {
+      "Z": 3.5532075917627903,
+      "p": 9.99990000099999e-06,
+      "gain": 19.921104066702497,
+      "stand_ins_largest_Z": 2.2591728951038994
+     }
+    },
+    "what": "the registered sensitivity settings as committed",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].beside_the_decision; .scale_robustness; .embedding"
+   }
+  },
+  "7_across_models": {
+   "models_present": {
+    "value": [
+     "llama3.1-8b",
+     "llama3.3-70b",
+     "qwen3-32b",
+     "qwen3-8b"
+    ],
+    "what": "the models whose remakes file existed and could be read when this audit ran",
+    "source": "results/v2/second/remakes_<tag>.json"
+   },
+   "each_model": {
+    "value": {
+     "qwen3-32b": {
+      "T": 25.33327611904908,
+      "Z": 3.454417612582645,
+      "sign_flip_p": 9.99990000099999e-06,
+      "noise_calibrated_p": 0.0004997501249375312,
+      "gain": 19.609288897312645,
+      "sources_first_words": 205,
+      "sources_first_with_the_measure": 206,
+      "sources_first_units_alone": 176,
+      "families_positive": 47,
+      "families_negative": 57,
+      "effective_number_of_families": 14.457898680221179,
+      "planes_below_0.05": 7,
+      "planes_available": 8,
+      "not_recognised": {
+       "entries_not_recognised": 159,
+       "E_n": 15.61916512189011,
+       "T_n": 16.419987188717947,
+       "Z_n": 2.8366189414627874,
+       "p_n": 8.99991000089999e-05
+      },
+      "entries_recognised": 61,
+      "outcome_conditions_1_to_5": true,
+      "Z_after_removing_its_k_largest_families": {
+       "1": 3.477540336943768,
+       "3": 3.520942756128135,
+       "5": 3.324656703075048,
+       "10": 2.680537071447048
+      },
+      "families_to_remove_for_Z_under_the_stand_ins": 13,
+      "ten_largest_families": [
+       [
+        175,
+        [
+         "Judwaa",
+         "Judwaa 2"
+        ],
+        4.032911559514646
+       ],
+       [
+        187,
+        [
+         "Khoka 420"
+        ],
+        3.449015976605649
+       ],
+       [
+        379,
+        [
+         "Vaseegara (film)"
+        ],
+        2.6354908147905127
+       ],
+       [
+        170,
+        [
+         "Jeena Sirf Merre Liye",
+         "Thithikudhe"
+        ],
+        1.8579184116549037
+       ],
+       [
+        316,
+        [
+         "Tadakha"
+        ],
+        1.728855510559669
+       ],
+       [
+        35,
+        [
+         "Annamalai (film)",
+         "Kondapalli Raja",
+         "Kondapalli Raja"
+        ],
+        1.6639125968476494
+       ],
+       [
+        245,
+        [
+         "Padaharella Vayasu"
+        ],
+        1.4235086863334772
+       ],
+       [
+        20,
+        [
+         "Aegan"
+        ],
+        1.1687842649756122
+       ],
+       [
+        213,
+        [
+         "Main Tera Hero"
+        ],
+        1.09780054244986
+       ],
+       [
+        78,
+        [
+         "Classmates (2007 film)",
+         "Ninaithale Inikkum (2009 film)"
+        ],
+        0.9921717461780156
+       ]
+      ],
+      "T_in_reference_source_pairs": 21.508524820599824,
+      "T_not_in_reference": 3.824751298449263,
+      "per_open_pair_in_reference": 1.39588599594339,
+      "per_open_pair_not_in_reference": 0.6711724419475736,
+      "not_in_reference_Z": 1.8300120085241807,
+      "not_in_reference_p": 0.034929650703492965,
+      "per_open_pair_recognised": 1.6241540288037857,
+      "per_open_pair_not_recognised": 1.0512717588026195,
+      "planes": {
+       "top1_20": {
+        "Z": 3.32350773663246,
+        "p": 9.99990000099999e-06,
+        "noise_calibrated_p": 0.0004997501249375312,
+        "Z_above_the_stand_ins": true
+       },
+       "top1_30": {
+        "Z": 3.454417612582645,
+        "p": 9.99990000099999e-06,
+        "noise_calibrated_p": 0.0004997501249375312,
+        "Z_above_the_stand_ins": true
+       },
+       "top1_40": {
+        "Z": 3.308474104352877,
+        "p": 1.999980000199998e-05,
+        "noise_calibrated_p": 0.0004997501249375312,
+        "Z_above_the_stand_ins": true
+       },
+       "top1_50": {
+        "Z": 2.892599378191107,
+        "p": 0.0004199958000419996,
+        "noise_calibrated_p": 0.0029985007496251873,
+        "Z_above_the_stand_ins": true
+       },
+       "top3_20": {
+        "Z": 3.2850456382646835,
+        "p": 9.99990000099999e-06,
+        "noise_calibrated_p": 0.0009995002498750624,
+        "Z_above_the_stand_ins": true
+       },
+       "top3_30": {
+        "Z": 3.207799583320372,
+        "p": 6.999930000699993e-05,
+        "noise_calibrated_p": 0.0009995002498750624,
+        "Z_above_the_stand_ins": true
+       },
+       "top3_40": {
+        "Z": 1.8500272669454156,
+        "p": 0.03185968140318597,
+        "noise_calibrated_p": 0.07646176911544228,
+        "Z_above_the_stand_ins": false
+       },
+       "top3_50": {
+        "Z": 1.0482829681749297,
+        "p": 0.15511844881551184,
+        "noise_calibrated_p": 0.2223888055972014,
+        "Z_above_the_stand_ins": false
+       }
+      },
+      "units_rank_first_on_the_15_pairs_the_words_get_wrong": 3,
+      "units_rank_below_the_words_rank_on_those_15": 9,
+      "embedding_Z_in_the_units_place": 0.8509119739883692,
+      "arithmetic": {
+       "T_gap": 7.105427357601002e-15,
+       "Z_gap": 0.0,
+       "family_sums_gap": 0.0,
+       "not_recognised_T_gap": 0.0,
+       "sign_flip_p_recomputed": 9.99990000099999e-06,
+       "not_recognised_p_recomputed": 8.99991000089999e-05
+      }
+     },
+     "llama3.1-8b": {
+      "T": 22.175531384979223,
+      "Z": 3.730826093218136,
+      "sign_flip_p": 9.99990000099999e-06,
+      "noise_calibrated_p": 0.0004997501249375312,
+      "gain": 17.111531925467457,
+      "sources_first_words": 205,
+      "sources_first_with_the_measure": 207,
+      "sources_first_units_alone": 174,
+      "families_positive": 47,
+      "families_negative": 57,
+      "effective_number_of_families": 15.53545667622903,
+      "planes_below_0.05": 8,
+      "planes_available": 8,
+      "not_recognised": {
+       "entries_not_recognised": 152,
+       "E_n": 14.036379599769973,
+       "T_n": 13.364804427327922,
+       "Z_n": 3.0873731028314677,
+       "p_n": 9.99990000099999e-06
+      },
+      "entries_recognised": 68,
+      "outcome_conditions_1_to_5": true,
+      "Z_after_removing_its_k_largest_families": {
+       "1": 3.7530294074123742,
+       "3": 3.7415973077917486,
+       "5": 3.638643347359528,
+       "10": 3.006185416966001
+      },
+      "families_to_remove_for_Z_under_the_stand_ins": 16,
+      "ten_largest_families": [
+       [
+        175,
+        [
+         "Judwaa",
+         "Judwaa 2"
+        ],
+        3.0669220705030487
+       ],
+       [
+        187,
+        [
+         "Khoka 420"
+        ],
+        2.576005367560945
+       ],
+       [
+        379,
+        [
+         "Vaseegara (film)"
+        ],
+        2.099381668593246
+       ],
+       [
+        35,
+        [
+         "Annamalai (film)",
+         "Kondapalli Raja",
+         "Kondapalli Raja"
+        ],
+        1.8187978952584452
+       ],
+       [
+        78,
+        [
+         "Classmates (2007 film)",
+         "Ninaithale Inikkum (2009 film)"
+        ],
+        1.493926358076207
+       ],
+       [
+        316,
+        [
+         "Tadakha"
+        ],
+        1.1239276157111975
+       ],
+       [
+        245,
+        [
+         "Padaharella Vayasu"
+        ],
+        1.1099799535007815
+       ],
+       [
+        170,
+        [
+         "Jeena Sirf Merre Liye",
+         "Thithikudhe"
+        ],
+        1.0307002300694466
+       ],
+       [
+        20,
+        [
+         "Aegan"
+        ],
+        1.0004235454645736
+       ],
+       [
+        48,
+        [
+         "Bandhan (2004 film)"
+        ],
+        0.9825910500272983
+       ]
+      ],
+      "T_in_reference_source_pairs": 18.543356659180013,
+      "T_not_in_reference": 3.6321747257992114,
+      "per_open_pair_in_reference": 1.2034489624105762,
+      "per_open_pair_not_in_reference": 0.6373788489942659,
+      "not_in_reference_Z": 2.0926970811650403,
+      "not_in_reference_p": 0.011339886601133988,
+      "per_open_pair_recognised": 1.2460821209098882,
+      "per_open_pair_not_recognised": 0.9521546729576155,
+      "planes": {
+       "top1_20": {
+        "Z": 3.630574583754888,
+        "p": 9.99990000099999e-06,
+        "noise_calibrated_p": 0.0004997501249375312,
+        "Z_above_the_stand_ins": true
+       },
+       "top1_30": {
+        "Z": 3.730826093218136,
+        "p": 9.99990000099999e-06,
+        "noise_calibrated_p": 0.0004997501249375312,
+        "Z_above_the_stand_ins": true
+       },
+       "top1_40": {
+        "Z": 3.7812265397858877,
+        "p": 9.99990000099999e-06,
+        "noise_calibrated_p": 0.0004997501249375312,
+        "Z_above_the_stand_ins": true
+       },
+       "top1_50": {
+        "Z": 3.3309611974309288,
+        "p": 0.00010999890001099989,
+        "noise_calibrated_p": 0.0004997501249375312,
+        "Z_above_the_stand_ins": true
+       },
+       "top3_20": {
+        "Z": 3.5488549506275944,
+        "p": 9.99990000099999e-06,
+        "noise_calibrated_p": 0.0004997501249375312,
+        "Z_above_the_stand_ins": true
+       },
+       "top3_30": {
+        "Z": 3.361936073406723,
+        "p": 5.999940000599994e-05,
+        "noise_calibrated_p": 0.0004997501249375312,
+        "Z_above_the_stand_ins": true
+       },
+       "top3_40": {
+        "Z": 2.620267083158618,
+        "p": 0.0025299747002529975,
+        "noise_calibrated_p": 0.010994502748625687,
+        "Z_above_the_stand_ins": true
+       },
+       "top3_50": {
+        "Z": 1.9089525720945852,
+        "p": 0.027459725402745973,
+        "noise_calibrated_p": 0.06696651674162919,
+        "Z_above_the_stand_ins": false
+       }
+      },
+      "units_rank_first_on_the_15_pairs_the_words_get_wrong": 2,
+      "units_rank_below_the_words_rank_on_those_15": 10,
+      "embedding_Z_in_the_units_place": 0.8509119739883692,
+      "arithmetic": {
+       "T_gap": 0.0,
+       "Z_gap": 0.0,
+       "family_sums_gap": 0.0,
+       "not_recognised_T_gap": 0.0,
+       "sign_flip_p_recomputed": 9.99990000099999e-06,
+       "not_recognised_p_recomputed": 9.99990000099999e-06
+      }
+     },
+     "llama3.3-70b": {
+      "T": 18.15121536282829,
+      "Z": 2.723946592008117,
+      "sign_flip_p": 0.0014499855001449985,
+      "noise_calibrated_p": 0.006496751624187906,
+      "gain": 7.217769345261941,
+      "sources_first_words": 205,
+      "sources_first_with_the_measure": 206,
+      "sources_first_units_alone": 155,
+      "families_positive": 60,
+      "families_negative": 44,
+      "effective_number_of_families": 14.345408815083461,
+      "planes_below_0.05": 1,
+      "planes_available": 1,
+      "not_recognised": {
+       "entries_not_recognised": 110,
+       "E_n": 10.696918332395777,
+       "T_n": 4.95401037764508,
+       "Z_n": 1.2270981473102807,
+       "p_n": 0.12896871031289686
+      },
+      "entries_recognised": 110,
+      "outcome_conditions_1_to_5": true,
+      "Z_after_removing_its_k_largest_families": {
+       "1": 2.577549395407528,
+       "3": 2.1703577769400106,
+       "5": 1.6702762302574146,
+       "10": -0.06559557470132078
+      },
+      "families_to_remove_for_Z_under_the_stand_ins": 3,
+      "ten_largest_families": [
+       [
+        175,
+        [
+         "Judwaa",
+         "Judwaa 2"
+        ],
+        3.4378340072047555
+       ],
+       [
+        78,
+        [
+         "Classmates (2007 film)",
+         "Ninaithale Inikkum (2009 film)"
+        ],
+        2.576281294770284
+       ],
+       [
+        379,
+        [
+         "Vaseegara (film)"
+        ],
+        2.478177509438681
+       ],
+       [
+        316,
+        [
+         "Tadakha"
+        ],
+        2.4780733304766223
+       ],
+       [
+        187,
+        [
+         "Khoka 420"
+        ],
+        1.6863906676587959
+       ],
+       [
+        20,
+        [
+         "Aegan"
+        ],
+        1.6788651661117218
+       ],
+       [
+        170,
+        [
+         "Jeena Sirf Merre Liye",
+         "Thithikudhe"
+        ],
+        1.31593129375667
+       ],
+       [
+        53,
+        [
+         "Bhale Dongalu"
+        ],
+        1.118057863492667
+       ],
+       [
+        56,
+        [
+         "Bharathan (1992 film)",
+         "Dharma (1998 film)"
+        ],
+        0.8658625192794858
+       ],
+       [
+        245,
+        [
+         "Padaharella Vayasu"
+        ],
+        0.6445443060813358
+       ]
+      ],
+      "T_in_reference_source_pairs": 18.387215127432032,
+      "T_not_in_reference": -0.2359997646037432,
+      "per_open_pair_in_reference": 1.1933155023350899,
+      "per_open_pair_not_in_reference": -0.04141355239813067,
+      "not_in_reference_Z": -0.09810689574328744,
+      "not_in_reference_p": 0.5350246497535025,
+      "per_open_pair_recognised": 1.2677181074771113,
+      "per_open_pair_not_recognised": 0.4631250070070917,
+      "planes": {
+       "top1_30": {
+        "Z": 2.723946592008117,
+        "p": 0.0014499855001449985,
+        "noise_calibrated_p": 0.006496751624187906,
+        "Z_above_the_stand_ins": true
+       }
+      },
+      "units_rank_first_on_the_15_pairs_the_words_get_wrong": 2,
+      "units_rank_below_the_words_rank_on_those_15": 8,
+      "embedding_Z_in_the_units_place": 0.8509119739883692,
+      "arithmetic": {
+       "T_gap": 3.552713678800501e-15,
+       "Z_gap": 0.0,
+       "family_sums_gap": 0.0,
+       "not_recognised_T_gap": 8.881784197001252e-16,
+       "sign_flip_p_recomputed": 0.0014499855001449985,
+       "not_recognised_p_recomputed": 0.12896871031289686
+      }
+     },
+     "qwen3-8b": {
+      "T": 21.425597716418203,
+      "Z": 3.4261895393224746,
+      "sign_flip_p": 9.99990000099999e-06,
+      "noise_calibrated_p": 0.0004997501249375312,
+      "gain": 15.65329698101429,
+      "sources_first_words": 205,
+      "sources_first_with_the_measure": 207,
+      "sources_first_units_alone": 169,
+      "families_positive": 46,
+      "families_negative": 58,
+      "effective_number_of_families": 13.645800355076858,
+      "planes_below_0.05": 8,
+      "planes_available": 8,
+      "not_recognised": {
+       "entries_not_recognised": 185,
+       "E_n": 15.95400182203154,
+       "T_n": 14.983814130051691,
+       "Z_n": 2.8696886580687764,
+       "p_n": 1.999980000199998e-05
+      },
+      "entries_recognised": 35,
+      "outcome_conditions_1_to_5": true,
+      "Z_after_removing_its_k_largest_families": {
+       "1": 3.5750875182524235,
+       "3": 3.658716311370113,
+       "5": 3.7660408178640568,
+       "10": 3.120215004138021
+      },
+      "families_to_remove_for_Z_under_the_stand_ins": 16,
+      "ten_largest_families": [
+       [
+        175,
+        [
+         "Judwaa",
+         "Judwaa 2"
+        ],
+        3.8731436876294905
+       ],
+       [
+        187,
+        [
+         "Khoka 420"
+        ],
+        2.558364481409979
+       ],
+       [
+        379,
+        [
+         "Vaseegara (film)"
+        ],
+        2.3829858512184514
+       ],
+       [
+        35,
+        [
+         "Annamalai (film)",
+         "Kondapalli Raja",
+         "Kondapalli Raja"
+        ],
+        1.9986273147682863
+       ],
+       [
+        78,
+        [
+         "Classmates (2007 film)",
+         "Ninaithale Inikkum (2009 film)"
+        ],
+        1.3605776151385656
+       ],
+       [
+        48,
+        [
+         "Bandhan (2004 film)"
+        ],
+        0.8771249293138004
+       ],
+       [
+        20,
+        [
+         "Aegan"
+        ],
+        0.8312912684128764
+       ],
+       [
+        53,
+        [
+         "Bhale Dongalu"
+        ],
+        0.8043869116724904
+       ],
+       [
+        127,
+        [
+         "Force (2011 film)"
+        ],
+        0.732921697451702
+       ],
+       [
+        170,
+        [
+         "Jeena Sirf Merre Liye",
+         "Thithikudhe"
+        ],
+        0.7255072140649156
+       ]
+      ],
+      "T_in_reference_source_pairs": 18.50278150537863,
+      "T_not_in_reference": 2.922816211039577,
+      "per_open_pair_in_reference": 1.2008156674985813,
+      "per_open_pair_not_in_reference": 0.5128996739010874,
+      "not_in_reference_Z": 1.9658353831819897,
+      "not_in_reference_p": 0.021629783702162977,
+      "per_open_pair_recognised": 1.2500741470517216,
+      "per_open_pair_not_recognised": 0.939188442949776,
+      "planes": {
+       "top1_20": {
+        "Z": 3.5130598694739676,
+        "p": 9.99990000099999e-06,
+        "noise_calibrated_p": 0.0004997501249375312,
+        "Z_above_the_stand_ins": true
+       },
+       "top1_30": {
+        "Z": 3.4261895393224746,
+        "p": 9.99990000099999e-06,
+        "noise_calibrated_p": 0.0004997501249375312,
+        "Z_above_the_stand_ins": true
+       },
+       "top1_40": {
+        "Z": 3.749723943667189,
+        "p": 9.99990000099999e-06,
+        "noise_calibrated_p": 0.0004997501249375312,
+        "Z_above_the_stand_ins": true
+       },
+       "top1_50": {
+        "Z": 3.499582728493073,
+        "p": 9.99990000099999e-06,
+        "noise_calibrated_p": 0.0004997501249375312,
+        "Z_above_the_stand_ins": true
+       },
+       "top3_20": {
+        "Z": 3.4785973295111994,
+        "p": 9.99990000099999e-06,
+        "noise_calibrated_p": 0.0004997501249375312,
+        "Z_above_the_stand_ins": true
+       },
+       "top3_30": {
+        "Z": 3.4282134209009345,
+        "p": 5.999940000599994e-05,
+        "noise_calibrated_p": 0.0004997501249375312,
+        "Z_above_the_stand_ins": true
+       },
+       "top3_40": {
+        "Z": 2.911845591591998,
+        "p": 0.0008199918000819992,
+        "noise_calibrated_p": 0.0029985007496251873,
+        "Z_above_the_stand_ins": true
+       },
+       "top3_50": {
+        "Z": 2.1340339992660815,
+        "p": 0.014629853701462985,
+        "noise_calibrated_p": 0.041979010494752625,
+        "Z_above_the_stand_ins": false
+       }
+      },
+      "units_rank_first_on_the_15_pairs_the_words_get_wrong": 2,
+      "units_rank_below_the_words_rank_on_those_15": 10,
+      "embedding_Z_in_the_units_place": 0.8509119739883692,
+      "arithmetic": {
+       "T_gap": 0.0,
+       "Z_gap": 0.0,
+       "family_sums_gap": 0.0,
+       "not_recognised_T_gap": 0.0,
+       "sign_flip_p_recomputed": 9.99990000099999e-06,
+       "not_recognised_p_recomputed": 1.999980000199998e-05
+      }
+     }
+    },
+    "what": "the primary analysis of each model present: the test's numbers and its ten largest families",
+    "source": "remakes_<tag>.json: analyses['primary | set']"
+   },
+   "between_models": {
+    "value": {
+     "llama3.1-8b | llama3.3-70b": {
+      "pearson_all_175_families": 0.8145911950380962,
+      "spearman_all_175_families": 0.48876865492586025,
+      "families_with_more_than_a_tenth_of_a_pair_open": 31,
+      "pearson_open_families": 0.7667216652566564,
+      "spearman_open_families": 0.7298387096774195,
+      "pearson_of_the_entries_contributions": 0.8110993664380206,
+      "ten_largest_families_in_common": 8,
+      "five_largest_families_in_common": 4,
+      "same_sign_among_open_families": 24,
+      "Z_of_llama3.3-70b_without_the_ten_largest_families_of_llama3.1-8b": 0.70974961191786,
+      "Z_of_llama3.1-8b_without_the_ten_largest_families_of_llama3.3-70b": 2.7175332104860606,
+      "share_of_T_of_llama3.3-70b_in_the_ten_largest_families_of_llama3.1-8b": 0.9055408705441271,
+      "share_of_T_of_llama3.1-8b_in_the_ten_largest_families_of_llama3.3-70b": 0.6769776009596173,
+      "pearson_of_unit_ranks_log": 0.7689449698069452,
+      "pearson_of_family_sums_per_open_pair_open_families": 0.6705272223981191,
+      "pearson_of_family_sum_with_open_mass": {
+       "llama3.1-8b": 0.811702153133542,
+       "llama3.3-70b": 0.5963715089315269
+      },
+      "families_whose_sums_differ_in_sign": 31,
+      "entries_recognised_by_both": 59,
+      "entries_recognised_by_neither": 101,
+      "word_model_identical": true
+     },
+     "llama3.1-8b | qwen3-32b": {
+      "pearson_all_175_families": 0.9570783489921364,
+      "spearman_all_175_families": 0.7875521858054609,
+      "families_with_more_than_a_tenth_of_a_pair_open": 31,
+      "pearson_open_families": 0.9354453346976899,
+      "spearman_open_families": 0.8701612903225808,
+      "pearson_of_the_entries_contributions": 0.9581479386609671,
+      "ten_largest_families_in_common": 9,
+      "five_largest_families_in_common": 3,
+      "same_sign_among_open_families": 30,
+      "Z_of_qwen3-32b_without_the_ten_largest_families_of_llama3.1-8b": 2.8128101733009534,
+      "Z_of_llama3.1-8b_without_the_ten_largest_families_of_qwen3-32b": 2.997878346368529,
+      "share_of_T_of_qwen3-32b_in_the_ten_largest_families_of_llama3.1-8b": 0.7495470904689475,
+      "share_of_T_of_llama3.1-8b_in_the_ten_largest_families_of_qwen3-32b": 0.7336243861355005,
+      "pearson_of_unit_ranks_log": 0.8674954632154572,
+      "pearson_of_family_sums_per_open_pair_open_families": 0.9065213553726802,
+      "pearson_of_family_sum_with_open_mass": {
+       "llama3.1-8b": 0.811702153133542,
+       "qwen3-32b": 0.735515259264069
+      },
+      "families_whose_sums_differ_in_sign": 12,
+      "entries_recognised_by_both": 42,
+      "entries_recognised_by_neither": 133,
+      "word_model_identical": true
+     },
+     "llama3.1-8b | qwen3-8b": {
+      "pearson_all_175_families": 0.969965220122417,
+      "spearman_all_175_families": 0.872880176591967,
+      "families_with_more_than_a_tenth_of_a_pair_open": 31,
+      "pearson_open_families": 0.9564683264813862,
+      "spearman_open_families": 0.9173387096774194,
+      "pearson_of_the_entries_contributions": 0.9705798667083575,
+      "ten_largest_families_in_common": 8,
+      "five_largest_families_in_common": 5,
+      "same_sign_among_open_families": 30,
+      "Z_of_qwen3-8b_without_the_ten_largest_families_of_llama3.1-8b": 3.096546633414556,
+      "Z_of_llama3.1-8b_without_the_ten_largest_families_of_qwen3-8b": 2.902052688093756,
+      "share_of_T_of_qwen3-8b_in_the_ten_largest_families_of_llama3.1-8b": 0.748279721681095,
+      "share_of_T_of_llama3.1-8b_in_the_ten_largest_families_of_qwen3-8b": 0.7074331085853302,
+      "pearson_of_unit_ranks_log": 0.9319718145087814,
+      "pearson_of_family_sums_per_open_pair_open_families": 0.9256760837028464,
+      "pearson_of_family_sum_with_open_mass": {
+       "llama3.1-8b": 0.811702153133542,
+       "qwen3-8b": 0.7333759821718461
+      },
+      "families_whose_sums_differ_in_sign": 7,
+      "entries_recognised_by_both": 32,
+      "entries_recognised_by_neither": 149,
+      "word_model_identical": true
+     },
+     "llama3.3-70b | qwen3-32b": {
+      "pearson_all_175_families": 0.8208465127813996,
+      "spearman_all_175_families": 0.5689236527664476,
+      "families_with_more_than_a_tenth_of_a_pair_open": 31,
+      "pearson_open_families": 0.7702318592832651,
+      "spearman_open_families": 0.6846774193548388,
+      "pearson_of_the_entries_contributions": 0.8183182490722047,
+      "ten_largest_families_in_common": 8,
+      "five_largest_families_in_common": 4,
+      "same_sign_among_open_families": 25,
+      "Z_of_qwen3-32b_without_the_ten_largest_families_of_llama3.3-70b": 2.5707898951738133,
+      "Z_of_llama3.3-70b_without_the_ten_largest_families_of_qwen3-32b": 0.9502987402542492,
+      "share_of_T_of_qwen3-32b_in_the_ten_largest_families_of_llama3.3-70b": 0.7328881462336243,
+      "share_of_T_of_llama3.3-70b_in_the_ten_largest_families_of_qwen3-32b": 0.8765626591711204,
+      "pearson_of_unit_ranks_log": 0.7339988274490297,
+      "pearson_of_family_sums_per_open_pair_open_families": 0.600207237058508,
+      "pearson_of_family_sum_with_open_mass": {
+       "llama3.3-70b": 0.5963715089315269,
+       "qwen3-32b": 0.735515259264069
+      },
+      "families_whose_sums_differ_in_sign": 27,
+      "entries_recognised_by_both": 53,
+      "entries_recognised_by_neither": 102,
+      "word_model_identical": true
+     },
+     "llama3.3-70b | qwen3-8b": {
+      "pearson_all_175_families": 0.7899659504531632,
+      "spearman_all_175_families": 0.4665602955995969,
+      "families_with_more_than_a_tenth_of_a_pair_open": 31,
+      "pearson_open_families": 0.7277262602798281,
+      "spearman_open_families": 0.7056451612903227,
+      "pearson_of_the_entries_contributions": 0.7834736483949093,
+      "ten_largest_families_in_common": 7,
+      "five_largest_families_in_common": 4,
+      "same_sign_among_open_families": 23,
+      "Z_of_qwen3-8b_without_the_ten_largest_families_of_llama3.3-70b": 2.6828885687561135,
+      "Z_of_llama3.3-70b_without_the_ten_largest_families_of_qwen3-8b": 0.9857430510292025,
+      "share_of_T_of_qwen3-8b_in_the_ten_largest_families_of_llama3.3-70b": 0.6681022951311553,
+      "share_of_T_of_llama3.3-70b_in_the_ten_largest_families_of_qwen3-8b": 0.8204561511989115,
+      "pearson_of_unit_ranks_log": 0.7351565852882118,
+      "pearson_of_family_sums_per_open_pair_open_families": 0.5729840584078351,
+      "pearson_of_family_sum_with_open_mass": {
+       "llama3.3-70b": 0.5963715089315269,
+       "qwen3-8b": 0.7333759821718461
+      },
+      "families_whose_sums_differ_in_sign": 32,
+      "entries_recognised_by_both": 35,
+      "entries_recognised_by_neither": 110,
+      "word_model_identical": true
+     },
+     "qwen3-32b | qwen3-8b": {
+      "pearson_all_175_families": 0.940521193217202,
+      "spearman_all_175_families": 0.8296079466385144,
+      "families_with_more_than_a_tenth_of_a_pair_open": 31,
+      "pearson_open_families": 0.9108064431735123,
+      "spearman_open_families": 0.7745967741935484,
+      "pearson_of_the_entries_contributions": 0.94084622150372,
+      "ten_largest_families_in_common": 7,
+      "five_largest_families_in_common": 3,
+      "same_sign_among_open_families": 29,
+      "Z_of_qwen3-8b_without_the_ten_largest_families_of_qwen3-32b": 3.101715837516986,
+      "Z_of_qwen3-32b_without_the_ten_largest_families_of_qwen3-8b": 2.6457372648908786,
+      "share_of_T_of_qwen3-8b_in_the_ten_largest_families_of_qwen3-32b": 0.7207894471563357,
+      "share_of_T_of_qwen3-32b_in_the_ten_largest_families_of_qwen3-8b": 0.6943622598110597,
+      "pearson_of_unit_ranks_log": 0.9211436815939262,
+      "pearson_of_family_sums_per_open_pair_open_families": 0.9095229353898774,
+      "pearson_of_family_sum_with_open_mass": {
+       "qwen3-32b": 0.735515259264069,
+       "qwen3-8b": 0.7333759821718461
+      },
+      "families_whose_sums_differ_in_sign": 9,
+      "entries_recognised_by_both": 32,
+      "entries_recognised_by_neither": 156,
+      "word_model_identical": true
+     }
+    },
+    "what": "for each pair of models: the correlation of their family sums, the overlap of their largest families, and each model's Z without the other's ten largest families",
+    "source": "remakes_<tag>.json: analyses['primary | set'].family_sums.rows, .entries_table"
+   },
+   "entries_no_model_present_recognises": {
+    "value": {
+     "entries": 94,
+     "open_pairs": 9.554259878674015,
+     "by_model": {
+      "qwen3-32b": {
+       "T": 7.787211735622912,
+       "Z": 2.749156815295898,
+       "families_positive": 25,
+       "families_negative": 29,
+       "p": 0.00034999650003499967
+      },
+      "llama3.1-8b": {
+       "T": 7.043252464345982,
+       "Z": 3.0566646223668665,
+       "families_positive": 24,
+       "families_negative": 30,
+       "p": 4.999950000499995e-05
+      },
+      "llama3.3-70b": {
+       "T": 2.2694684489046653,
+       "Z": 0.713567603188229,
+       "families_positive": 33,
+       "families_negative": 21,
+       "p": 0.2711372886271137
+      },
+      "qwen3-8b": {
+       "T": 6.159866524212212,
+       "Z": 3.5018225053311896,
+       "families_positive": 23,
+       "families_negative": 31,
+       "p": 1.999980000199998e-05
+      }
+     }
+    },
+    "what": "the contributions summed over the entries that none of the models present recognises (nothing refitted)",
+    "source": "remakes_<tag>.json: analyses['primary | set'].entries_table"
+   },
+   "family_sums_averaged_over_models": {
+    "value": {
+     "Z": 3.474847045448831,
+     "T": 21.771405145818704,
+     "sign_flip_p": 9.99990000099999e-06,
+     "effective_number_of_families": 14.251967881474197,
+     "families_to_remove_for_Z_under_the_stand_ins": 14
+    },
+    "what": "the family sums averaged over the models present, through the same Z and sign flips: the models share the families, so this is one sample of families, not several",
+    "source": "computed from the models' family sums"
+   }
+  },
+  "9_descriptive_for_the_refit_auditors": {
+   "open_entries_contribution_against_what_pairs_json_knows": {
+    "value": {
+     "entries_with_more_than_1pct_open": 42,
+     "year_gap": {
+      "spearman_with_the_contribution": 0.02662126273582273,
+      "p_two_sided": 0.8670958763145602
+     },
+     "remake_sentences": {
+      "spearman_with_the_contribution": -0.12398442864169307,
+      "p_two_sided": 0.43404559168257023
+     },
+     "source_sentences": {
+      "spearman_with_the_contribution": -0.10248105258512016,
+      "p_two_sided": 0.5184000334930748
+     },
+     "shorter_text_sentences": {
+      "spearman_with_the_contribution": -0.06404662813959734,
+      "p_two_sided": 0.686979466358833
+     },
+     "absolute_log_ratio_of_sentences": {
+      "spearman_with_the_contribution": -0.037526342493667146,
+      "p_two_sided": 0.813477580770909
+     },
+     "pool_size": {
+      "spearman_with_the_contribution": 0.15405810722035534,
+      "p_two_sided": 0.3300011219894203
+     },
+     "open_mass": {
+      "spearman_with_the_contribution": 0.6894903168300787,
+      "p_two_sided": 4.4209053050148763e-07
+     },
+     "log_words_rank": {
+      "spearman_with_the_contribution": 0.6955591403158319,
+      "p_two_sided": 3.1750035108206244e-07
+     },
+     "log_unit_rank": {
+      "spearman_with_the_contribution": -0.17324083451302205,
+      "p_two_sided": 0.27256784753576124
+     }
+    },
+    "what": "rank correlations, over the entries the words leave more than 1% open, between the contribution and the year gap, the texts' lengths and the pool size (descriptive: nothing refitted, no adjustment)",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].entries_table; data/second/remakes/pairs.json"
+   },
+   "by_industry": {
+    "value": {
+     "source Telugu": {
+      "entries": 73,
+      "open_pairs": 7.546205484604164,
+      "T": 14.677130072162369,
+      "per_open_pair": 1.944968249553604
+     },
+     "remake Bollywood": {
+      "entries": 59,
+      "open_pairs": 6.602399715822415,
+      "T": 8.703331152993433,
+      "per_open_pair": 1.318207247000846
+     },
+     "remake Tamil": {
+      "entries": 67,
+      "open_pairs": 6.600722385300946,
+      "T": 6.14809947735826,
+      "per_open_pair": 0.9314282768579049
+     },
+     "remake Telugu": {
+      "entries": 49,
+      "open_pairs": 5.051221747156185,
+      "T": 5.911132340725924,
+      "per_open_pair": 1.1702381397240906
+     },
+     "source Tamil": {
+      "entries": 68,
+      "open_pairs": 3.7815006699882767,
+      "T": 5.289079338335696,
+      "per_open_pair": 1.398672061679707
+     },
+     "remake Bengali": {
+      "entries": 24,
+      "open_pairs": 2.8526678998280977,
+      "T": 4.571006125881922,
+      "per_open_pair": 1.6023618193191616
+     },
+     "source Bollywood": {
+      "entries": 43,
+      "open_pairs": 6.310348994966551,
+      "T": 4.089226410445017,
+      "per_open_pair": 0.6480190578535018
+     },
+     "source Malayalam": {
+      "entries": 27,
+      "open_pairs": 2.793343046013846,
+      "T": 0.9412191967396272,
+      "per_open_pair": 0.3369508081303386
+     },
+     "source Kannada": {
+      "entries": 9,
+      "open_pairs": 0.6757248245567092,
+      "T": 0.3366211013663793,
+      "per_open_pair": 0.49816299347476295
+     },
+     "remake Malayalam": {
+      "entries": 2,
+      "open_pairs": 6.193246198438196e-06,
+      "T": -1.2204464685057835e-05,
+      "per_open_pair": null
+     },
+     "remake Kannada": {
+      "entries": 19,
+      "open_pairs": 0.00010507877570731239,
+      "T": -0.00028077344576945315,
+      "per_open_pair": null
+     }
+    },
+    "what": "entries, open pairs and T by the source's industry and by the remake's industry (nothing refitted)",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].entries_table; pairs.json: remake_origin, source_origin"
+   },
+   "by_source_year": {
+    "value": {
+     "source year 2005 on": {
+      "entries": 99,
+      "open_pairs": 6.440942864860105,
+      "T": 7.6008797490182625,
+      "per_open_pair": 1.180088056748094
+     },
+     "source year 1990 to 2004": {
+      "entries": 72,
+      "open_pairs": 8.24694920441597,
+      "T": 11.320513952407634,
+      "per_open_pair": 1.372691121505377
+     },
+     "source year before 1990": {
+      "entries": 49,
+      "open_pairs": 6.4192309508534695,
+      "T": 6.411882417623189,
+      "per_open_pair": 0.9988552315243769
+     }
+    },
+    "what": "entries, open pairs and T by the table's year of the source",
+    "source": "remakes_qwen3-32b.json: analyses['primary | set'].entries_table; pairs.json: source_year"
+   }
+  }
+ }
+}
