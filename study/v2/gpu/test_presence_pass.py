@@ -5,11 +5,18 @@ finalize_scale.to_shares and thresholded as analysis/common.py does).
     cd study && bash v2/heavy.sh ../.venv/bin/python v2/gpu/test_presence_pass.py [work ids, default WORKS]
 
 It also reads a file whose records have neither "cut" nor "drop" (the remakes' kind) into a folder that already holds
-another run, and hands presence_pass.py four bad files, which it must turn down before it loads the model.
+another run, and hands presence_pass.py four bad files and one bad set of options, which it must turn down before it loads
+the model.
+
+--mask-after (the follow-up of v2/second/PLAN.md Section 8) is checked the same way: the name-free texts are read with the
+token after each code masked too, and the planes must equal the slow re-computation and study_pass.py's after_main_top1.
+Then the comparison itself is tried on passes that are wrong: one that leaves the token after a code in (the ordinary
+name-free run), and two copies of presence_pass.py with a deliberate error (the token before each code masked, or the
+second token after it). Each must differ from study_pass.py's after_main_top1, or the test fails.
 
 The model reads only Batman texts (data/corpus.jsonl, data/corpus_neutral.jsonl) and made-up sentences. Outputs go
-to v2/cache/test_presence/ (the float16 score files are deleted at the end). Every check prints PASS or FAIL with
-the number of differing bits; the script exits non-zero if any fails. About 15 minutes and 5 GB on a busy 4-core machine.
+to v2/cache/test_presence/ (the float16 score files and the copies with an error are deleted at the end). Every check prints PASS or FAIL with
+the number of differing bits; the script exits non-zero if any fails. About 20 minutes and 5 GB on a busy 4-core machine.
 """
 import ctypes
 import hashlib
@@ -57,6 +64,8 @@ CUTS = {20: 40, 30: 60, 40: 80, 50: 100}      # percent of the scale: the smalle
 PLANES = [f"top1_{p}" for p in CUTS] + [f"top3_{p}" for p in CUTS] + ["cut_top1_30", "icon_top1_30", "over100"]
 PRIMARY = ["top1_30", "cut_top1_30", "icon_top1_30", "over100"]
 PLAIN = [p for p in PLANES if p not in ("cut_top1_30", "icon_top1_30")]      # what records with neither "cut" nor "drop" get (the remakes)
+AFTER_RULE = "{c + 1 for c in codes if c + 1 < len(ids)}"      # the line of presence_pass.py that the deliberate errors change
+ERRORS = {"the token BEFORE each code masked": "{c - 1 for c in codes if c - 1 >= 0}", "the SECOND token after each code masked": "{c + 2 for c in codes if c + 2 < len(ids)}"}
 fails = []
 
 
@@ -88,20 +97,23 @@ def activations(model, ids):
     return [(seen[i, "gate_proj"][0].float().cpu().numpy(), act[0].float().cpu().numpy()) for i, act in enumerate(acts)]
 
 
-def sentence_maxima(model, tok, sentences, mask_codes):
+def sentence_maxima(model, tok, sentences, mask_codes, mask_after=False):
     """Each unit's strongest main-regime activation in each sentence, [sentences, 2 * neurons] (positive poles, then negative
-    poles as magnitudes), and how many tokens the text has and how many of them belong to codes."""
+    poles as magnitudes), and how many tokens the text has, how many of them belong to codes and how many follow a code."""
     ids, spans, text, offsets = encode_document(tok, sentences)
     assert all(0 < b < e <= len(ids) for b, e in spans), "position 0 belongs to no sentence"
     found = [m.span() for m in CODE.finditer(text)] if mask_codes else []
     codes = [i for i, (a, b) in enumerate(offsets) if b > a and any(a < e and s < b for s, e in found)]
+    # the token after a code: the next token of the text, where there is one and it is not itself part of a code
+    after = [i for i in range(1, len(ids)) if i - 1 in codes and i not in codes] if mask_after else []
     pos, neg = [], []
     for gate, act in activations(model, ids):
         main = np.where(gate > 0, act, np.float32(0))                # the main sign regime: the gate is open
         main[codes] = 0                                              # a code's own tokens carry no peak
+        main[after] = 0                                              # nor, with mask_after, the token that follows a code
         pos.append(np.stack([main[b:e].max(0) for b, e in spans]))
         neg.append(np.stack([(-main[b:e]).max(0) for b, e in spans]))
-    return np.concatenate(pos + neg, axis=1), len(ids), len(codes)
+    return np.concatenate(pos + neg, axis=1), len(ids), len(codes), len(after)
 
 
 def strongest(S, k=1):
@@ -117,17 +129,19 @@ def shares(score, scale):
     return np.clip(np.floor(score.astype(np.float32) / safe * np.float32(200) + np.float32(1e-4)), 0, 255).astype(np.uint8)
 
 
-def slow_scores(model, tok, records, mask_codes):
+def slow_scores(model, tok, records, mask_codes, mask_after=False):
     """Each text's four scores, the obvious way, [texts, 4, 2 * neurons]: strongest sentence, mean of the three strongest,
-    strongest sentence of the opening, strongest of the sentences not dropped; and the token and code-token counts."""
-    scores, n_tokens, n_codes = [], [], []
+    strongest sentence of the opening, strongest of the sentences not dropped; and the counts of tokens, of code tokens and
+    of tokens that follow a code (0 unless mask_after)."""
+    scores, n_tokens, n_codes, n_after = [], [], [], []
     for r in records:
-        S, n, c = sentence_maxima(model, tok, r["sentences"], mask_codes)
+        S, n, c, f = sentence_maxima(model, tok, r["sentences"], mask_codes, mask_after)
         kept = [k for k in range(len(S)) if k not in r["drop"]] or list(range(len(S)))      # nothing left: every sentence is kept
         scores.append(np.stack([strongest(S), strongest(S, 3), strongest(S[:r["cut"]]), strongest(S[kept])]))
-        n_tokens.append(n); n_codes.append(c)
-        print(f"slow: {r['label'][:24]:24s} {len(S):2d} sentences, opening {r['cut']:2d}, {len(r['drop']):2d} dropped, {n:4d} tokens, {c:3d} in codes", flush=True)
-    return np.stack(scores), n_tokens, n_codes
+        n_tokens.append(n); n_codes.append(c); n_after.append(f)
+        print(f"slow: {r['label'][:24]:24s} {len(S):2d} sentences, opening {r['cut']:2d}, {len(r['drop']):2d} dropped, {n:4d} tokens, {c:3d} in codes"
+              + (f", {f:3d} after a code" if mask_after else ""), flush=True)
+    return np.stack(scores), n_tokens, n_codes, n_after
 
 
 def planes_of(scores, scale):
@@ -167,24 +181,49 @@ def run(script, *args):
         sys.exit(done.stdout[-2000:] + done.stderr[-4000:])
 
 
-def refused(what, *records):
-    """presence_pass.py must turn a bad texts file down before it loads the model, and write nothing."""
+def refused(what, *records, options=()):
+    """presence_pass.py must turn a bad texts file (or a bad set of options) down before it loads the model, and write nothing."""
     (OUT / "bad.jsonl").write_text("".join(json.dumps(r) + "\n" for r in records))
     shutil.rmtree(OUT / "bad", ignore_errors=True)
-    done = process("presence_pass.py", TAG, OUT / "bad.jsonl", OUT / "bad", "--scale", OUT / "scale.npy")
+    done = process("presence_pass.py", TAG, OUT / "bad.jsonl", OUT / "bad", "--scale", OUT / "scale.npy", *options)
     check(f"presence_pass.py turns down {what}", done.returncode != 0 and "AssertionError" in done.stderr and not list((OUT / "bad").glob("*")))
 
 
-def compare(name, path, want):
-    """One plane file against the bits it should hold: uint8 [texts, units / 8], 8 units to a byte, the first in the highest bit."""
+def differing(path, want):
+    """How many bits of a plane file differ from the bits it should hold: uint8 [texts, units / 8], 8 units to a byte, the first in the highest bit."""
     got = np.load(path)
     packed = (want.reshape(len(want), -1, 8) * (128 >> np.arange(8))).sum(2).astype(np.uint8)
-    diff = int(np.unpackbits(got ^ packed).sum()) if got.dtype == np.uint8 and got.shape == packed.shape else want.size
+    return int(np.unpackbits(got ^ packed).sum()) if got.dtype == np.uint8 and got.shape == packed.shape else want.size
+
+
+def compare(name, path, want):
+    """One plane file against the bits it should hold."""
+    diff = differing(path, want)
     check(name, diff == 0, f"{diff} of {want.size:,} bits differ ({want.mean():.1%} set)")
 
 
-def against_slow(name, folder, names, records, planes, n_tokens, n_codes, scale, texts, masked):
-    """One run of presence_pass.py against the slow re-computation: every plane file bit for bit, and meta.json."""
+def caught(what, path, want):
+    """The other side of compare: a plane from a pass that is wrong must NOT pass the comparison."""
+    diff = differing(path, want)
+    check(f"the comparison with study_pass.py anon_after_main_top1 tells apart a pass with {what}", diff > 0, f"{diff} of {want.size:,} bits differ")
+
+
+def broken(folder, wrong, *args):
+    """A copy of presence_pass.py with one deliberate error in its rule for the token after a code, run in its own process on the
+    same inputs. presence_pass.py itself is not touched: the copy lies under OUT and finds the other scripts through PYTHONPATH."""
+    code = (HERE / "presence_pass.py").read_text()
+    assert code.count(AFTER_RULE) == 1, "the rule for the token after a code is not where the test expects it in presence_pass.py"
+    (OUT / folder).mkdir()
+    (OUT / folder / "presence_pass.py").write_text(code.replace(AFTER_RULE, wrong))
+    done = subprocess.run([sys.executable, str(OUT / folder / "presence_pass.py"), *map(str, args)], capture_output=True, text=True, env=dict(os.environ, PYTHONPATH=str(HERE)))
+    check(f"a copy of presence_pass.py with {wrong} ran", done.returncode == 0)
+    if done.returncode:
+        sys.exit(done.stdout[-2000:] + done.stderr[-4000:])
+
+
+def against_slow(name, folder, names, records, planes, n_tokens, n_codes, scale, texts, masked, n_after=None):
+    """One run of presence_pass.py against the slow re-computation: every plane file bit for bit, and meta.json.
+    n_after: the tokens that follow a code, text by text, for a run with --mask-after (None: a run without it)."""
     meta, N, digest = json.load(open(folder / "meta.json")), len(records), lambda path: hashlib.sha256(Path(path).read_bytes()).hexdigest()
     for p in names:
         compare(f"{name} {p} = slow re-computation", folder / f"{p}.bits.npy", planes[p][:N])
@@ -197,6 +236,8 @@ def against_slow(name, folder, names, records, planes, n_tokens, n_codes, scale,
     check(f"{name} meta.json present counts = slow re-computation", all(meta["present"][p] == planes[p][:N].sum(1).tolist() for p in names))
     check(f"{name} meta.json hashes of the scale and of the texts, and whether codes were masked",
           (meta["scale_sha256"], meta["texts_sha256"], meta["mask_codes"]) == (digest(OUT / "scale.npy"), digest(texts), masked))
+    check(f"{name} meta.json whether the token after each code was masked, and how many such tokens = slow re-computation",
+          (meta["mask_after"], meta["n_after_tokens"]) == (n_after is not None, [0] * N if n_after is None else n_after[:N]), f"{sum(meta['n_after_tokens'])} tokens after a code")
 
 
 def main():
@@ -211,15 +252,20 @@ def main():
     model, tok = load(TAG)
     base = np.max([sentence_maxima(model, tok, p, False)[0].max(0) for p in PARAGRAPHS], axis=0)
     slow = {ver: slow_scores(model, tok, records[ver], ver == "anon") for ver in files}
+    slow["after"] = slow_scores(model, tok, records["anon"], True, mask_after=True)
     del model                                                        # the scripts below load their own copy: hand the memory back
     getattr(ctypes.CDLL(None), "malloc_trim", lambda keep: 0)(0)     # first (glibc would keep about 3 GB of it)
     scale = make_scale(base, np.concatenate([slow[ver][0].reshape(-1, len(base)) for ver in files]))
     np.save(scale_file, scale)
-    want = {ver: planes_of(slow[ver][0], scale) for ver in files}
+    want = {ver: planes_of(slow[ver][0], scale) for ver in slow}
     print(f"scale: {len(scale):,} units, {(scale <= 0).mean():.1%} not positive; slow re-computation took {time.time() - t0:.0f} s", flush=True)
     for ver, path in files.items():
         run("presence_pass.py", TAG, path, OUT / ver, "--scale", scale_file, "--planes", "all", *(["--mask-codes"] if ver == "anon" else []))
     run("presence_pass.py", TAG, files["anon"], OUT / "primary", "--scale", scale_file, "--planes", "primary", "--mask-codes", "--limit", LIMIT)
+    # the follow-up's run (as v2/second/gpu.py after starts it): every name-free text, the primary planes, the token after each code masked too
+    run("presence_pass.py", TAG, files["anon"], OUT / "after", "--scale", scale_file, "--planes", "primary", "--mask-codes", "--mask-after")
+    for k, wrong in enumerate(ERRORS.values()):
+        broken(f"broken{k}", wrong, TAG, files["anon"], OUT / f"broken{k}" / "out", "--scale", scale_file, "--planes", "primary", "--mask-codes", "--mask-after", "--limit", LIMIT)
     # the remakes' kind of file: records with neither "cut" nor "drop", codes not masked; read into a folder that already holds
     # another run (a copy of the one just made), whose meta.json and cut and iconography planes must not survive
     plain = OUT / "plain.jsonl"
@@ -231,13 +277,14 @@ def main():
     refused("a negative drop index", {"id": 0, "sentences": two, "cut": 1, "drop": [-1]})
     refused("a drop index past the last sentence", {"id": 0, "sentences": two, "cut": 1, "drop": [2]})
     refused("a file in which only some records have a cut", {"id": 0, "sentences": two, "cut": 1}, {"id": 1, "sentences": two})
+    refused("--mask-after without --mask-codes", {"id": 0, "sentences": two, "cut": 1, "drop": []}, options=("--mask-after",))
     run("study_pass.py", TAG, study, OUT / "out")
     scores = OUT / "out" / TAG / "study"
     study_meta = json.load(open(scores / "meta.json"))["versions"]
     for ver in files:
-        against_slow(ver, OUT / ver, PLANES, records[ver], want[ver], *slow[ver][1:], scale, files[ver], ver == "anon")
+        against_slow(ver, OUT / ver, PLANES, records[ver], want[ver], *slow[ver][1:3], scale, files[ver], ver == "anon")
         check(f"{ver} planes are neither empty nor full", all(0.01 < want[ver][p].mean() < 0.99 for p in PLANES))
-        check(f"{ver} token and code-token counts = study_pass.py", (study_meta[ver]["n_tokens"], study_meta[ver]["n_code_tokens"]) == slow[ver][1:])
+        check(f"{ver} token and code-token counts = study_pass.py", (study_meta[ver]["n_tokens"], study_meta[ver]["n_code_tokens"]) == slow[ver][1:3])
         pairs = [(f"top1_{p}", "main_top1", least) for p, least in CUTS.items()] + [(f"top3_{p}", "main_top3", least) for p, least in CUTS.items()]
         pairs += [("cut_top1_30", "cut_main_top1", 60)] + ([("icon_top1_30", "icon_main_top1", 60)] if ver == "anon" else [])
         for p, score, least in pairs:                                # study_pass.py scores the iconography control in the name-free texts only
@@ -245,9 +292,28 @@ def main():
             compare(f"{ver} {p} = study_pass.py {ver}_{score}, stored by finalize_scale.to_shares, >= {least}", OUT / ver / f"{p}.bits.npy", np.asarray(stored) >= least)
         top1 = np.load(scores / f"{ver}_main_top1.npy").astype(np.float32)
         compare(f"{ver} over100 = study_pass.py {ver}_main_top1 above a positive scale", OUT / ver / "over100.bits.npy", (top1 > scale) & (scale > 0))
-    against_slow("primary", OUT / "primary", PRIMARY, records["anon"][:LIMIT], want["anon"], *slow["anon"][1:], scale, files["anon"], True)
-    against_slow("plain", OUT / "plain", PLAIN, records["orig"][:LIMIT], want["orig"], *slow["orig"][1:], scale, plain, False)
+    against_slow("primary", OUT / "primary", PRIMARY, records["anon"][:LIMIT], want["anon"], *slow["anon"][1:3], scale, files["anon"], True)
+    against_slow("plain", OUT / "plain", PLAIN, records["orig"][:LIMIT], want["orig"], *slow["orig"][1:3], scale, plain, False)
+    # ---- the token after each code masked too (--mask-codes --mask-after)
+    n_tokens, n_codes, n_after = slow["after"][1:]
+    against_slow("after", OUT / "after", PRIMARY, records["anon"], want["after"], n_tokens, n_codes, scale, files["anon"], True, n_after)
+    check("after: a token follows a code in every name-free text, and the code tokens are those of the ordinary name-free run", min(n_after) > 0 and n_codes == slow["anon"][2],
+          f"{sum(n_codes)} code tokens and {sum(n_after)} tokens after a code, of {sum(n_tokens)}")
+    stored = np.asarray(to_shares(scores / "anon_after_main_top1.npy", scores / "stored.u8.npy", scale)) >= 60      # v2's own score, stored by the pipeline's own function
+    compare("after top1_30 = study_pass.py anon_after_main_top1, stored by finalize_scale.to_shares, >= 60", OUT / "after" / "top1_30.bits.npy", stored)
+    top1 = np.load(scores / "anon_after_main_top1.npy").astype(np.float32)
+    compare("after over100 = study_pass.py anon_after_main_top1 above a positive scale", OUT / "after" / "over100.bits.npy", (top1 > scale) & (scale > 0))
+    # masking more can only take presences away: none is added to the ordinary name-free run, and some are lost
+    gone, added = int((want["anon"]["top1_30"] & ~stored).sum()), int((stored & ~want["anon"]["top1_30"]).sum())
+    check("after top1_30 holds no presence that the ordinary name-free run lacks, and lacks some that it holds", added == 0 and gone > 0,
+          f"{gone:,} of {int(want['anon']['top1_30'].sum()):,} presences removed, {added} added")
+    # the comparison must fail for a pass that is wrong: the token after a code left in (the ordinary name-free run), and each deliberate error
+    caught("the token after each code left in", OUT / "anon" / "top1_30.bits.npy", stored)
+    for k, what in enumerate(ERRORS):
+        caught(what, OUT / f"broken{k}" / "out" / "top1_30.bits.npy", stored[:LIMIT])
     shutil.rmtree(OUT / "out")                                       # the float16 score files; the rest is small
+    for k in range(len(ERRORS)):
+        shutil.rmtree(OUT / f"broken{k}")                            # and the copies of presence_pass.py with a deliberate error
     print(f"{len(fails)} checks failed" if fails else "all checks passed", f"in {time.time() - t0:.0f} s")
     sys.exit(1 if fails else 0)
 

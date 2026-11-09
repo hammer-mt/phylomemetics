@@ -31,3 +31,4 @@ Data are in `study/data/second/`, results in `study/results/v2/second/`. Presenc
 3. Freeze: commit and push the plan, the corpora and the code.
 4. One machine per model: `bash v2/second/run_pod.sh <tag>`. The first job is a check on texts that are not new.
 5. Analyse: `holmes.py run <tag>`, `remakes.py verify <tag>`, `remakes.py run <tag>`.
+6. Where Holmes E1 is met, the plan's follow-up (Section 8), on a machine where `gpu.py check <tag>` has first been exact with the present `presence_pass.py`: `gpu.py after <tag>` (`gpu.py after <tag> again` where v2's stored after file of the Batman works is not here) reads the name-free texts again with the token after each code masked too, then `holmes.py followup <tag>`.

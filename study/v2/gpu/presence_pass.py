@@ -4,7 +4,7 @@ Reads each text as one continuous document, exactly as study_pass.py reads a stu
 sign regime, position 0 never scored, a code's own tokens never carry a peak), and writes presence as packed bits.
 Nothing a text does changes the scale: the scale file is an input (the reference-only scale, scale_ref.npy).
 
-    python presence_pass.py <model-tag> <texts.jsonl> <out-dir> --scale <scale.npy> [--mask-codes] [--planes all|primary]
+    python presence_pass.py <model-tag> <texts.jsonl> <out-dir> --scale <scale.npy> [--mask-codes [--mask-after]] [--planes all|primary]
 
 <texts.jsonl> holds one record per text: {"id": ..., "sentences": [...]} and optionally (in every record or in none)
     "cut"    how many opening sentences the length control keeps (study_pass.cut_length of the ORIGINAL text)
@@ -26,6 +26,10 @@ Shares are put on the storage grid of v2 first (steps of 0.005, rounded down), s
 here as in common.Setting: floor(score / scale * 200 + 1e-4) >= 60. A unit whose scale is zero is never present.
 Also writes <out-dir>/meta.json (provenance, hashes of the inputs, tokens and present units per text). It is written
 last and an earlier run's planes and meta.json are removed first, so a folder with a meta.json holds one complete run.
+
+--mask-after (with --mask-codes; the follow-up of v2/second/PLAN.md Section 8): the token directly after each code cannot
+carry a peak either, by the rule of study_pass.py's after_main_top1. Every plane of such a run is masked that way. Without
+the option nothing is read differently.
 """
 import argparse
 import hashlib
@@ -66,9 +70,11 @@ def main():
     ap.add_argument("tag"); ap.add_argument("texts"); ap.add_argument("out")
     ap.add_argument("--scale", required=True)
     ap.add_argument("--mask-codes", action="store_true", help="name-free texts: a code's own tokens (X1, X2, ...) cannot carry a peak")
+    ap.add_argument("--mask-after", action="store_true", help="with --mask-codes: the token directly after each code cannot carry a peak either")
     ap.add_argument("--planes", default="all", choices=["all", "primary"])
     ap.add_argument("--limit", type=int, default=None)
     a = ap.parse_args()
+    assert a.mask_codes or not a.mask_after, "--mask-after masks the token after each code: it needs --mask-codes"
     out = Path(a.out)
     out.mkdir(parents=True, exist_ok=True)
     texts = [json.loads(l) for l in open(a.texts)][: a.limit]
@@ -93,7 +99,7 @@ def main():
         old.unlink(missing_ok=True)                                # is complete, and no plane of an earlier run is left beside the new ones
     planes = {n: np.lib.format.open_memmap(out / f"{n}.bits.npy", mode="w+", dtype=np.uint8, shape=(N, 2 * U // 8)) for n in names}
     present = {n: np.zeros(N, dtype=np.int64) for n in names}
-    n_tokens, n_code_tokens = [], []
+    n_tokens, n_code_tokens, n_after_tokens = [], [], []
     print(f"{now()} {a.tag}: {N} texts, {sum(len(e[0]) for e in enc):,} tokens, planes {names}, scale {a.scale}", flush=True)
     ctx = {}
 
@@ -147,13 +153,15 @@ def main():
     t0 = time.time()
     for w, (t, (ids, spans, text, offsets)) in enumerate(zip(texts, enc)):
         codes = code_tokens(text, offsets) if a.mask_codes else []
+        after = sorted({c + 1 for c in codes if c + 1 < len(ids)} - set(codes)) if a.mask_after else []        # study_pass.py's rule
         keep = torch.ones(len(spans), dtype=torch.bool)
         if has_drop:
             keep[torch.tensor(t["drop"], dtype=torch.long)] = False
-        ctx.update(w=w, spans=spans, codes=torch.tensor(codes, dtype=torch.long), cut=t.get("cut"), keep=keep)
+        ctx.update(w=w, spans=spans, codes=torch.tensor(codes + after, dtype=torch.long), cut=t.get("cut"), keep=keep)
         run_hidden(model, torch.tensor([ids]))
         n_tokens.append(len(ids))
         n_code_tokens.append(len(codes))
+        n_after_tokens.append(len(after))
         if w % 50 == 0 or w == N - 1:
             print(f"{now()} {w + 1}/{N}  {len(ids):5d} tokens  {(time.time() - t0):.0f}s", flush=True)
     tap.remove()
@@ -162,6 +170,7 @@ def main():
     save_json({"tag": a.tag, "provenance": provenance(model), "n_layers": L, "width": D, "n_texts": N, "ids": [t["id"] for t in texts],
                "planes": names, "mask_codes": a.mask_codes, "scale_file": str(a.scale), "scale_sha256": sha256(a.scale), "texts_sha256": sha256(a.texts),
                "n_sentences": [len(t["sentences"]) for t in texts], "n_tokens": n_tokens, "n_code_tokens": n_code_tokens,
+               "mask_after": a.mask_after, "n_after_tokens": n_after_tokens,
                "present": {n: present[n].tolist() for n in names}, "seconds": round(time.time() - t0)}, out / "meta.json")
     print(f"{now()} saved to {out}", flush=True)
 

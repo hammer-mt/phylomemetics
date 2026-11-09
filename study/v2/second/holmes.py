@@ -6,6 +6,8 @@
                                                                  (ends with an error while a word-only measure passes the residual test)
     ../.venv/bin/python v2/second/holmes.py run <tag> [--planes all|primary]     one model -> results/v2/second/holmes_<tag>.json
     ../.venv/bin/python v2/second/holmes.py synthetic            the whole 'run' path on made-up presence bits (then deleted)
+    ../.venv/bin/python v2/second/holmes.py followup <tag>       PLAN Section 8's follow-up to a met E1: E1 again with the token after each
+                                                                 code masked too -> results/v2/second/holmes_e1_followup_<tag>.json
 
 'run' reads v2/acts_second/holmes/<tag>/{orig,anon}/<plane>.bits.npy (v2/gpu/presence_pass.py), .../bgdrop/counts_ref_scale.npy
 (background_pass.py on the background documents left out) and v2/acts/<tag>/bg_counts_ref_scale.npy. The statistics are in
@@ -19,6 +21,7 @@ the form v2/second/probes.py writes:
 Only 'synthetic' runs without them: it makes up its own recognition file and marks its output as a dry run.
 """
 import argparse
+import copy
 import json
 import math
 import resource
@@ -218,10 +221,10 @@ class FromSetting:
         return out
 
 
-def unit_tests(S, src, base, n_plots, null, n_null=1000, keep=None, full=True, plane="top1_30"):
+def unit_tests(S, src, base, n_plots, null, n_null=1000, keep=None, full=True, plane="top1_30", e1_only=False):
     """E1, E2, the residual test and E3 (PLAN Section 8). src: lib.Bits or FromSetting; base: the base count of each unit
     of src.units; keep: bool over src.units, the units used (None: all). full=False: the four tests without their subsets,
-    jackknives and placebos."""
+    jackknives and placebos. e1_only: stop after E1 (the follow-up of PLAN Section 8 reads nothing else)."""
     t0, cnt = time.time(), {}
     keep = np.ones(len(src.units), bool) if keep is None else keep
     era = S.era if len(set(S.era)) > 1 else None
@@ -260,6 +263,8 @@ def unit_tests(S, src, base, n_plots, null, n_null=1000, keep=None, full=True, p
             res["E1_without_the_negative_shared_with_the_batman_study"] = {
                 "left_out": sorted(S.shared_with_batman & set(S.negatives.tolist())), "n_negatives": int(keep_neg.sum()), "auc_pooled": float(M.mean()),
                 "auc_within_era": float(lib.within_era(M, S.era[S.franchise], S.era[S.negatives][keep_neg])) if era is not None else None}
+    if e1_only:
+        return res, mats, None, None
     a = res["E1"]["A_name_free"]
     print(f"  E1 pooled {a['negatives']['auc']:.3f} within era {a.get('within_era', {}).get('auc', float('nan')):.3f} canon {a['canon_units_median']} "
           f"-> {res['E1'].get('verdict_within_era', res['E1']['verdict_pooled'])['verdict']}", flush=True)
@@ -568,6 +573,150 @@ def words(a):
         print("holmes.py words: the residual test is not calibrated: word-only measures pass it in the units' place (see the file just written)")
 
 
+# ------------------------------------------------------------------ the follow-up to a met E1 (PLAN Section 8)
+CRITERION = 0.70                          # PLAN Section 8: with the token after each code masked too, the within-era AUC must stay at 0.70 or above
+
+
+def e1_numbers(r):
+    """What the follow-up sets side by side, from one scorer's entry in lib.e1's output or in a committed holmes_<tag>.json."""
+    w = r["within_era"]
+    return {"within_era_auc": w["auc"], "within_era_ci95": w["ci95"], "by_era": w["by_era"], "within_era_null_label_shuffle": w.get("null_label_shuffle"),
+            "pooled_auc": r["negatives"]["auc"], "pooled_ci95": r["negatives"]["ci95"], "pooled_null_label_shuffle": r.get("null_label_shuffle"),
+            "canon_units_median": r["canon_units_median"], "canon_units_min": r["canon_units_min"],
+            "n_franchise": r["negatives"]["n_franchise"], "n_negatives": r["negatives"]["n_negatives"]}
+
+
+def masking(S, codes_dir, plane_dir, meta):
+    """How much more the second reading masks, from the two meta.json files of presence_pass.py (tokens that cannot carry a
+    peak, text by text) and from the two planes (presences at the primary setting, over all units)."""
+    was = json.load(open(codes_dir / "meta.json"))
+    for k in ("ids", "n_tokens", "n_code_tokens", "texts_sha256", "scale_sha256"):
+        assert was[k] == meta[k], f"the two readings of the name-free texts differ in {k}"
+    tok, code, aft = (np.array(x) for x in (meta["n_tokens"], meta["n_code_tokens"], meta.get("n_after_tokens", [0] * S.N)))
+    A, B = (np.load(d / "top1_30.bits.npy", mmap_mode="r") for d in (codes_dir, plane_dir))
+    ones = lambda x: int(np.bitwise_count(x).sum())                    # noqa: E731
+    pres = np.array([(ones(A[w]), ones(B[w]), ones(B[w] & ~A[w])) for w in range(S.N)])
+
+    def group(ids):
+        t, c, f = (int(x[ids].sum()) for x in (tok, code, aft))
+        was_, now, added = (int(x) for x in pres[ids].sum(0))
+        return {"texts": len(ids), "tokens": t, "code_tokens": c, "tokens_after_a_code": f,
+                "share_of_tokens_masked": {"codes_only": c / t, "after_too": (c + f) / t},
+                "median_tokens_masked_per_text": {"codes_only": float(np.median(code[ids])), "after_too": float(np.median((code + aft)[ids]))},
+                "presences": {"codes_only": was_, "after_too": now, "share_lost": (was_ - now) / was_, "in_the_second_reading_only": added}}
+    return {"what": "tokens that cannot carry a unit's peak in each reading of the name-free texts (codes_only: the tokens of each placeholder code; after_too: "
+                    "those and the token directly after each code), and the presences (unit in text, strongest sentence at 30% of the reference-only scale, all "
+                    "units) each reading finds. A presence found in the second reading only would mean the two readings differ where the mask changes nothing.",
+            "screen_works": group(S.franchise), "detective_films": group(S.negatives), "all_texts_read": group(np.arange(S.N)),
+            "per_text": {"id": meta["ids"], "tokens": tok.tolist(), "masked_codes_only": code.tolist(), "masked_after_too": (code + aft).tolist()}}
+
+
+def followup(a):
+    """PLAN Section 8's follow-up to a met E1 (logged in the plan's Section 16 when it is run). E1 on the name-free texts is
+    computed as `run` computes it, by the same unit_tests: the canon from the ORIGINAL texts of the other screen works, the
+    held-out work and the detective films scored on name-free presence, the pooled and the within-era AUC with the same
+    bootstrap, label-shuffle null and seeds. One thing differs: the name-free presence is read from
+    <acts-root>/<tag>/after/top1_30.bits.npy (gpu.py after: the token after each code masked too) in place of
+    <tag>/anon/top1_30.bits.npy. The fixed criterion: the within-era AUC stays at 0.70 or above. E2, E3 and the other E1
+    scorers are not part of the follow-up and are not reported.
+
+    --plane-dir puts another folder in the after folder's place. With <tag>/anon, the committed numbers of `run` must come
+    back to the last digit: that is the self-check of this command (it ends with an error if they do not), for any model
+    whose bits are here. Its output goes to --out, never under results/."""
+    t0, root, stop = time.time(), Path(a.acts_root) / a.tag, lambda why: sys.exit("holmes.py followup: REFUSED. " + why)      # noqa: E731
+    done_path, check_path, rec_path = OUT / f"holmes_{a.tag}.json", OUT / f"after_check_{a.tag}.json", OUT / f"holmes_recognition_{a.tag}.json"
+    plane_dir, self_check = Path(a.plane_dir or root / "after"), bool(a.plane_dir)
+    if not (done_path.exists() and rec_path.exists()):
+        stop(f"{done_path} or {rec_path} does not exist: the follow-up is read beside the committed E1 of holmes.py run {a.tag}.")
+    done, check = json.load(open(done_path)), json.load(open(check_path)) if check_path.exists() else None
+    if self_check:
+        if not a.out or OUT.resolve() in Path(a.out).resolve().parents:
+            stop("--plane-dir is for the self-check: give --out, somewhere that is not under results/.")
+    elif done["confirmatory"]["E1_verdict"] != "met":
+        stop(f"PLAN Section 8 fixes this follow-up for a met E1 only, and {done_path} says E1 is '{done['confirmatory']['E1_verdict']}' for {a.tag}.")
+    elif not (check and check.get("passed") is True):
+        stop(f"{check_path} does not exist or does not say \"passed\": true. gpu.py after {a.tag} writes it before it reads the Holmes texts.")
+    if not (plane_dir / "meta.json").exists():
+        stop(f"no finished reading under {plane_dir}" + ("." if self_check else f": gpu.py after {a.tag} fetches it."))
+    S = lib.install(holmes_spec(a.neutral, a.extra_regressors))
+    rec = json.load(open(rec_path))
+    if any(str(int(w)) not in rec.get("h1", {}) for w in S.franchise):
+        stop(f"{rec_path} lacks H1 for some screen works.")
+    # the base counts and the original texts' plane, as the committed run took them (its file says how)
+    stored, recounted = Path(done["stored_counts"]), done["base_counts"].startswith("recounted")
+    src = lib.Bits({"orig": root / "orig", "anon": plane_dir}, [("orig", "top1_30"), ("anon", "top1_30")],
+                   np.load(stored.parent / "scale_ref.npy") if (stored.parent / "scale_ref.npy").exists() else None)
+    n_stored = json.load(open(stored.parent / "bg_meta.json"))["n_plots"] if (stored.parent / "bg_meta.json").exists() else 2999
+    dropped = None if recounted else root / "bgdrop" / "counts_ref_scale.npy"
+    base, n_plots = lib.base_counts(stored, dropped, C.THETA, n_stored, 0 if recounted else len(S.dropped_background))
+    assert n_plots == len(C.background_docs()) == done["n_background_plots"], f"the base counts are over {n_plots} plots, the committed run's over {done['n_background_plots']}"
+    meta = src.meta["anon"]
+    if not self_check and not (meta.get("mask_codes") is True and meta.get("mask_after") is True):
+        stop(f"{plane_dir} was not read with --mask-codes --mask-after.")
+    print(f"== {a.tag}: {'SELF-CHECK, not the follow-up: ' if self_check else ''}E1 on name-free presence from {plane_dir} (codes masked: {meta.get('mask_codes')}; "
+          f"the token after each code too: {meta.get('mask_after', False)})", flush=True)
+    res, mats, _, _ = unit_tests(S, src, base[src.units], n_plots, {}, full=False, e1_only=True)
+    e1, was = res["E1"], done["E1"]
+    as_saved = lambda x: json.loads(json.dumps(x, default=lambda o: o.item()))      # noqa: E731
+    # the original texts are the same texts in both runs, so their E1 (canon and score both from them) must come back to the
+    # last digit: the same original plane, base counts, sets, seeds and code as the committed run
+    if as_saved(e1["ceiling_original"]) != was["ceiling_original"]:
+        stop(f"E1 on the original texts does not come back as {done_path} holds it, so the original plane, the base counts, the sets or the code differ from the committed run's.")
+    new, old = e1_numbers(as_saved(e1["A_name_free"])), e1_numbers(was["A_name_free"])
+    S1 = copy.copy(S)
+    S1.adaptations = {}                 # recognition() then has no adaptation to split by H2: only its E1 half computes, by its own code
+    rc, rc_was = as_saved(recognition(S1, rec, e1, mats["A_name_free"], None, {})), done["recognition"]
+    by_naming = lambda r: {"E1_score_against_H1_log_probability": r["E1_score_against_H1_log_probability"], "E1": r["E1"],      # noqa: E731
+                           "not_confined_to_works_the_model_names": r["not_confined_to_works_the_model_names"]["E1"]}
+    auc = new["within_era_auc"]
+    out = {"what": "The follow-up that v2/second/PLAN.md Section 8 fixes for a met E1: E1 on name-free texts, computed as holmes.py run computes it, with the "
+                   "name-free presence read again with the token after each placeholder code masked too (v2's `after` version). Beside it, the committed E1 "
+                   f"of {done_path}, where only the codes' own tokens are masked. Nothing else differs between the two.",
+           "tag": a.tag, "self_check_with_another_plane": self_check,
+           "criterion": {"rule": f"within-era AUC at least {CRITERION:.2f} (PLAN Section 8)", "within_era_auc": auc, "holds": bool(auc >= CRITERION)},
+           "E1_name_free": {"token_after_each_code_masked_too": new, "codes_masked_only_as_committed": old, "change_in_within_era_auc": auc - old["within_era_auc"],
+                            "change_in_pooled_auc": new["pooled_auc"] - old["pooled_auc"]},
+           "E1": {"A_name_free": e1["A_name_free"]},
+           "recognition": {"what": rc_was["not_confined_to_works_the_model_names"]["E1_rule"],
+                           "token_after_each_code_masked_too": by_naming(rc), "codes_masked_only_as_committed": by_naming(rc_was)},
+           "masking": masking(S, root / "anon", plane_dir, meta),
+           "E1_on_the_original_texts_comes_back_as_committed": True,
+           "pass_check_on_texts_that_are_not_new": None if self_check else dict(check, same_model_libraries_and_gpu_as_this_reading=check.get("provenance") == meta.get("provenance")),
+           "presence_pass": {k: {x: m.get(x) for x in ("scale_sha256", "texts_sha256", "mask_codes", "mask_after", "provenance")}
+                             for k, m in (("original", src.meta["orig"]), ("name_free_scored", meta), ("name_free_of_the_committed_run", json.load(open(root / "anon" / "meta.json"))))},
+           "inputs": {"acts": str(root), "name_free_plane_scored": str(plane_dir / "top1_30.bits.npy"), "stored_counts": str(stored), "base_counts": done["base_counts"],
+                      "n_background_plots": int(n_plots), "sets": {k: len(getattr(S, k)) for k in ("franchise", "negatives")},
+                      "sha256": dict({Path(f).name: lib.sha256(f) for f in (DATA / "spec.json", DATA / "corpus.jsonl", DATA / "corpus_neutral.jsonl", done_path, rec_path)},
+                                     **{str(f): lib.sha256(f) for f in (root / "orig" / "top1_30.bits.npy", root / "anon" / "top1_30.bits.npy", plane_dir / "top1_30.bits.npy",
+                                                                        stored, *([] if recounted else [dropped]), *([] if self_check else [check_path]))})},
+           "committed_run": {"file": str(done_path), "code": done["code"], "E1_verdict": done["confirmatory"]["E1_verdict"]}}
+    out["seconds"], out["peak_memory_gb"] = round(time.time() - t0, 1), peak_gb()
+    print(f"  within era {auc:.3f} ({new['within_era_ci95'][0]:.3f} to {new['within_era_ci95'][1]:.3f}), pooled {new['pooled_auc']:.3f}, canon {new['canon_units_median']} | "
+          f"committed, codes masked only: within era {old['within_era_auc']:.3f}, pooled {old['pooled_auc']:.3f} | by era "
+          + ", ".join(f"{e} {v['auc']:.3f} (was {old['by_era'][e]['auc']:.3f})" for e, v in new["by_era"].items()), flush=True)
+    m = out["masking"]["all_texts_read"]
+    print(f"  masked tokens: {m['code_tokens']:,} in codes, {m['tokens_after_a_code']:,} after a code, of {m['tokens']:,}; presences {m['presences']['codes_only']:,} -> "
+          f"{m['presences']['after_too']:,} ({m['presences']['share_lost']:.1%} lost, {m['presences']['in_the_second_reading_only']} in the second reading only)", flush=True)
+    print(f"  screen works the model does not name: within era {rc['E1']['not_named'].get('auc_within_era')} (n {rc['E1']['not_named']['n']}; committed "
+          f"{rc_was['E1']['not_named'].get('auc_within_era')}) -> {rc['not_confined_to_works_the_model_names']['E1']}", flush=True)
+    if not self_check:
+        print(f"  criterion (within-era AUC at least {CRITERION:.2f}):", "HOLDS" if auc >= CRITERION else "DOES NOT HOLD", flush=True)
+    else:          # the ordinary name-free plane in the after plane's place: every number of the committed run must come back
+        rows = [(k, old[k], new[k]) for k in new] + [("held-out scores of the 81 screen works", was["A_name_free"]["held_out_score"], as_saved(e1["A_name_free"]["held_out_score"])),
+                                                     ("E1 by naming (H1): score against log-probability, named, not named, rule", by_naming(rc_was), by_naming(rc))]
+        out["self_check"] = {"plane": str(plane_dir), "rows": [{"what": k, "committed": x, "this_code": y, "same": x == y} for k, x, y in rows],
+                             "passed": all(x == y for _, x, y in rows)}
+        print(f"\n{a.tag}: committed ({done_path}) against this command with {plane_dir} as the plane; every row must be the same")
+        for k, x, y in rows:
+            short = lambda v: repr(v) if isinstance(v, (int, float)) else json.dumps(v)[:54] + (" ..." if len(json.dumps(v)) > 54 else "")      # noqa: E731
+            print(f"  {k:44.44s} {short(x):>60} {short(y):>60}  {'same' if x == y else 'DIFFERS'}")
+        print("SELF-CHECK", "PASSED" if out["self_check"]["passed"] else "FAILED")
+    lib.save(out, a.out or OUT / f"holmes_e1_followup_{a.tag}.json")
+    if self_check and not out["self_check"]["passed"]:
+        sys.exit(1)
+    return out
+
+
 # ------------------------------------------------------------------ a dry run on made-up presence
 FACTOR = {"top1_20": 1.6, "top1_30": 1.0, "top1_40": 0.6, "top1_50": 0.35, "top3_20": 1.3, "top3_30": 0.8, "top3_40": 0.45, "top3_50": 0.25,
           "cut_top1_30": 0.6, "icon_top1_30": 0.9, "over100": 0.002}
@@ -662,7 +811,7 @@ def synthetic(a):
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
-    ap.add_argument("command", choices=["regress", "words", "run", "synthetic"])
+    ap.add_argument("command", choices=["regress", "words", "run", "synthetic", "followup"])
     ap.add_argument("tag", nargs="?", default=None)
     ap.add_argument("--planes", default="all", choices=["all", "primary"])
     ap.add_argument("--draws", type=int, default=DRAWS, help="relabellings in E2's sampled null")
@@ -676,6 +825,7 @@ if __name__ == "__main__":
     ap.add_argument("--no-words", dest="words", action="store_false", help="regress: skip the model-free targets")
     ap.add_argument("--units", type=int, default=80000, help="synthetic: 2U")
     ap.add_argument("--no-signal", dest="signal", action="store_false", help="synthetic: plant nothing")
+    ap.add_argument("--plane-dir", default=None, help="followup: another folder in the place of <acts-root>/<tag>/after (the self-check: <acts-root>/<tag>/anon)")
     args = ap.parse_args()
     assert args.tag or args.command in ("words", "synthetic"), "a model tag is needed"
-    {"regress": regress, "words": words, "run": run, "synthetic": synthetic}[args.command](args)
+    {"regress": regress, "words": words, "run": run, "synthetic": synthetic, "followup": followup}[args.command](args)

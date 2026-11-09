@@ -9,6 +9,9 @@ to a pod's state file on which `pip install transformers==5.22.2 accelerate hf_t
     ../.venv/bin/python v2/second/gpu.py probes <tag> <job> [...]   recognition questions (holmes_h1 holmes_h2 remakes_r1 remakes_r2)
     ../.venv/bin/python v2/second/gpu.py remakes <tag> [primary] [small]    the remake films, and the co-presence counts
     ../.venv/bin/python v2/second/gpu.py embed              the sentence-embedding comparator on the remake films (any pod; not a study model)
+    ../.venv/bin/python v2/second/gpu.py after <tag> [again]    PLAN Section 8's follow-up to a met E1: the name-free Holmes texts again, with the
+                                                            token after each code masked too. First the Batman works that way, against v2's
+                                                            after version: its stored file, or with `again` v2's study_pass.py on the same machine
 
 Every step after `check` and `bgdrop` refuses to run unless the plan, the corpora and the code are committed and pushed
 and the input files match the hashes in results/v2/second/gpu_inputs.json. Outputs land under v2/acts_second/ (never under
@@ -307,6 +310,174 @@ def holmes(tag, which="all"):
         print(f"  {tag} {ver}: fetched {keep}", flush=True)
 
 
+def against_stored(new, old, cut=60):
+    """A plane of packed bits [texts, 2U / 8] against v2's stored shares [texts, 2U] (uint8, steps of 0.005; `cut` steps is the
+    threshold, 60 for 30% of scale). Returns (presences in v2, bits that differ, presences in the plane that v2 lacks)."""
+    assert new.shape == (old.shape[0], old.shape[1] // 8), f"the plane is {new.shape}, v2's file {old.shape}"
+    total = diff = extra = 0
+    for w in range(old.shape[0]):
+        a = np.unpackbits(new[w])[: old.shape[1]].astype(bool)
+        b = old[w] >= cut
+        total, diff, extra = total + int(b.sum()), diff + int((a != b).sum()), extra + int((a & ~b).sum())
+    return total, diff, extra
+
+
+def pipeline_checked(tag, path="v2/gpu/presence_pass.py"):
+    """results/v2/second/pipeline_check_<tag>.json, if `check` was exact after the freeze with the presence_pass.py that is here
+    now (the file of the check's commit is this file); else None."""
+    f = Path(f"results/v2/second/pipeline_check_{tag}.json")
+    c = json.load(open(f)) if f.exists() else {}
+    then = subprocess.run(["git", "show", f"{c.get('commit')}:./{path}"], capture_output=True).stdout
+    return c if c.get("exact") is True and c.get("after_the_freeze") is True and hashlib.sha256(then).hexdigest() == sha(path) else None
+
+
+# What the machine runs for `after <tag> again`: one of the scores of v2's study_pass.py (float16) as presence at 30% of v2's main scale,
+# put on v2's storage grid by v2's own finalize_scale.to_shares and packed as presence_pass.py packs its planes.
+PACK = ("import sys, numpy as np; from finalize_scale import to_shares; score, scale, out = sys.argv[1:4]; "
+        "s = to_shares(score, score + '.u8.npy', np.load(scale)); np.save(out, np.stack([np.packbits(s[w] >= 60) for w in range(s.shape[0])]))")
+
+
+def after_check(tag, folder, checked, again=False):
+    """What `after` decides on before a Holmes text is read again, from files that are here. folder holds the name-free Batman
+    works as presence_pass.py --mask-codes --mask-after read them at v2's main scale (top1_30.bits.npy, meta.json); checked is
+    pipeline_checked(tag). "exact" says whether every bit equals v2's after version, taken from one or both of:
+      v2's stored file (v2/acts/<tag>/anon_after_main_top1.u8.npy, at 30%), where it is here;
+      with again, v2's after version made again on the same machine by v2's own study_pass.py and finalize_scale.to_shares
+      (folder/study_anon_after_main_top1.bits.npy), which counts only if the same run of study_pass.py also gives v2's STORED
+      name-free presence in every bit (folder/study_anon_main_top1.bits.npy against anon_main_top1.u8.npy, which is here).
+    With neither there is nothing to compare with: "exact" is null, the result says so, no check is claimed and it does not pass.
+    Besides, three things that must hold of any correct reading. It is the reading that was asked for (both masks, the recorded
+    texts, v2's main scale, the tokens and code tokens of v2's study pass, on the kind of machine on which `check` was exact
+    with this pass). Its share of cells present over every 97th unit is the one v2's finalize_scale.py recorded for its own
+    after file (results/v2/passes.json, there for every model, also where the file itself was not fetched). And against v2's
+    stored name-free presence, where only the codes are masked, it adds no presence and loses some (a further mask can only take
+    presences away)."""
+    v2, rec = Path("v2/acts") / tag, json.load(open(RECORD))
+    meta, new = json.load(open(folder / "meta.json")), np.load(folder / "top1_30.bits.npy", mmap_mode="r")
+    study, codes_only = json.load(open(v2 / "study_meta.json"))["versions"]["anon"], np.load(v2 / "anon_main_top1.u8.npy", mmap_mode="r")
+    reading = {"codes_and_the_token_after_each_code_masked": meta.get("mask_codes") is True and meta.get("mask_after") is True,
+               "the_recorded_batman_texts": meta["texts_sha256"] == rec["files"]["batman_anon.jsonl"],
+               "v2s_main_scale": meta["scale_sha256"] == sha(v2 / "scale.npy"),
+               "tokens_as_in_v2s_study_pass": meta["n_tokens"] == study["n_tokens"],
+               "code_tokens_as_in_v2s_study_pass": meta["n_code_tokens"] == study["n_code_tokens"],
+               "a_token_after_a_code_in_every_text": min(meta.get("n_after_tokens", [0])) > 0,
+               "model_libraries_and_gpu_of_the_exact_pipeline_check": bool(checked) and checked["provenance"] == meta["provenance"]}
+    res = {"model": tag, "what": f"presence_pass.py --mask-codes --mask-after (the token after each placeholder code masked too) on the {meta['n_texts']} name-free "
+                                 "Batman-study works at v2's main scale, strongest sentence at 30%, against v2's own after version. These are texts v2 had already read.",
+           "the_reading": reading, "tokens": sum(meta["n_tokens"]), "code_tokens": sum(meta["n_code_tokens"]), "tokens_after_a_code": sum(meta.get("n_after_tokens", [0]))}
+    stored, exact = v2 / "anon_after_main_top1.u8.npy", []
+    if stored.exists():
+        total, diff, _ = against_stored(new, np.load(stored, mmap_mode="r"))
+        res["v2s_stored_after_presence"] = {"file": str(stored), "units_present_in_v2": total, "bits_that_differ": diff}
+        exact.append(diff == 0)
+    else:
+        res["v2s_stored_after_presence"] = {"file": str(stored), "here": False, "so": "this reading is not compared with a file v2 stored: for this model none is here"}
+    if again:
+        made, base = (np.load(folder / f"study_anon_{k}_top1.bits.npy", mmap_mode="r") for k in ("after_main", "main"))
+        there = json.load(open(folder / "study_meta.json"))["versions"]["anon"]
+        total, diff, _ = against_stored(base, codes_only)
+        differ = int(np.bitwise_count(made ^ new).sum()) if made.shape == new.shape else -1
+        res["v2s_after_version_made_again_on_this_machine"] = {
+            "by": "v2's study_pass.py and finalize_scale.to_shares at v2's main scale (not a file v2 stored)",
+            "sha256": {f: sha(f"v2/gpu/{f}") for f in ("study_pass.py", "finalize_scale.py")},
+            "that_run_against_v2s_stored_name_free_presence": {"units_present_in_v2": total, "bits_that_differ": diff},
+            "its_tokens_and_code_tokens_are_this_readings": (there["n_tokens"], there["n_code_tokens"]) == (meta["n_tokens"], meta["n_code_tokens"]),
+            "units_present": int(np.bitwise_count(made).sum()), "bits_that_differ": differ}
+        exact.append(diff == 0 and differ == 0 and (there["n_tokens"], there["n_code_tokens"]) == (meta["n_tokens"], meta["n_code_tokens"]))
+    res["exact"] = all(exact) if exact else None
+    # finalize_scale.py's own line on v2's machine: float((out[:, ::97] >= 0.3 * STEP).mean()), over the stored after file
+    share = json.load(open("results/v2/passes.json")).get(tag, {}).get("share_of_unit_by_work_cells_present", {}).get("anon_after_main_top1")
+    cells = np.stack([np.unpackbits(new[w])[: codes_only.shape[1]][::97] for w in range(len(new))]).astype(bool)
+    res["v2s_own_count_of_its_after_file"] = {"what": "share of cells (work by unit, every 97th unit) at or above 30%, as v2 recorded it for its stored after file "
+                                                      "(results/v2/passes.json)",
+                                              "in_v2": share, "in_this_reading": float(cells.mean()), "cells": int(cells.size), "present_in_this_reading": int(cells.sum()),
+                                              "equal": share == float(cells.mean())}
+    total, diff, extra = against_stored(new, codes_only)
+    res["v2s_stored_name_free_presence_codes_masked_only"] = {"units_present_in_v2": total, "units_present_in_this_reading": total - diff + 2 * extra,
+                                                              "lost_to_the_further_mask": diff - extra, "added": extra}
+    res["passed"] = bool(res["exact"] is True and all(reading.values()) and share == float(cells.mean()) and extra == 0 and diff > extra)
+    res["presence_pass_sha256"] = {"at_the_freeze": rec["code_sha256"]["v2/gpu/presence_pass.py"], "of_this_reading": sha("v2/gpu/presence_pass.py")}
+    res["provenance"] = meta["provenance"]
+    return res
+
+
+def after(tag, again=False):
+    """PLAN Section 8's follow-up to a met E1 (its Section 16, entry 5): the name-free Holmes texts are read again with the token
+    after each code masked too, at the reference-only scale, and the plane of the primary setting is fetched to
+    v2/acts_second/holmes/<tag>/after/ for holmes.py followup. Before that, on the same machine, the name-free Batman works are
+    read the same way at v2's main scale and must equal v2's after version in every bit (after_check;
+    results/v2/second/after_check_<tag>.json). No Holmes text is read unless that passes.
+
+    v2's after version is v2's stored file where it is here. Where it is not (v2 did not fetch it for every model), this step
+    stops before anything is sent, unless `again` is given: then v2's own study_pass.py makes it again on the same machine, and
+    the result says that this is what was compared.
+
+    The pass is the frozen presence_pass.py with one option added (--mask-after). The record of the freeze
+    (results/v2/second/gpu_inputs.json) is not rewritten: nothing here reads its code hashes but this step, which asks that the
+    two scripts the pass reads through (neurons.py, study_pass.py) are still the recorded ones, and writes the hash of the
+    presence_pass.py it used beside the recorded one. `check` must have been exact with this presence_pass.py: that shows, on a
+    GPU machine, that without the new option the pass still gives v2's stored presence."""
+    head = frozen()
+    recorded("batman_anon.jsonl", "holmes_anon.jsonl")
+    rec = json.load(open(RECORD))
+    assert sha(f"v2/acts/{tag}/scale_ref.npy") == rec["scale_ref_sha256"][tag]
+    assert all(sha(f) == rec["code_sha256"][f] for f in ("v2/gpu/neurons.py", "v2/gpu/study_pass.py")), "neurons.py or study_pass.py is not the recorded file"
+    done = Path(f"results/v2/second/holmes_{tag}.json")
+    if not (done.exists() and json.load(open(done))["confirmatory"]["E1_verdict"] == "met"):
+        raise SystemExit(f"PLAN Section 8 fixes this follow-up for a met E1 only, and {done} does not say that E1 is met for {tag}")
+    d = ACTS / "holmes" / tag / "after"
+    if (d / "meta.json").exists():
+        return
+    if not again and not Path(f"v2/acts/{tag}/anon_after_main_top1.u8.npy").exists():
+        raise SystemExit(f"v2's stored after presence of the Batman works (v2/acts/{tag}/anon_after_main_top1.u8.npy) is not here, so there is nothing to compare the new option "
+                         f"with bit for bit. Nothing was sent to the machine. `gpu.py after {tag} again` has v2's own study_pass.py make it again on the same machine.")
+    checked = pipeline_checked(tag)
+    if not checked:
+        raise SystemExit(f"run gpu.py check {tag} first, on this machine: the check on texts that are not new must be exact with the presence_pass.py that is here now")
+    if again:       # study_pass.py reads v2's own corpus files: their name-free sentences must be the recorded file's
+        same = [json.loads(l)["sentences"] for l in open("data/corpus_neutral.jsonl")] == [json.loads(l)["sentences"] for l in open(GPU / "batman_anon.jsonl")]
+        assert same, "data/corpus_neutral.jsonl does not hold the sentences of the recorded batman_anon.jsonl"
+    sync()
+    put_scales(tag, ("scale.npy", "scale_ref.npy"))
+    # ---- texts that are not new: the name-free Batman works, both masks, at v2's main scale
+    b, name = ACTS / "batman_check" / tag / "after", tag.replace(".", "_")
+    rc.put(GPU / "batman_anon.jsonl", "data/second/batman_anon.jsonl")
+    go(f"after_check_{name}", f"python3 presence_pass.py {tag} {DATA}/second/batman_anon.jsonl {OUT}/{tag}/second/batman_after "
+                              f"--scale {OUT}/{tag}/study/scale.npy --planes primary --mask-codes --mask-after {Q}")
+    fetch(f"out/{tag}/second/batman_after/top1_30.bits.npy", b / "top1_30.bits.npy", gz=True)
+    fetch(f"out/{tag}/second/batman_after/meta.json", b / "meta.json")
+    planes = ["top1_30.bits.npy"]                 # compared here, then deleted here
+    if again:       # v2's own after version of the same works, by v2's study_pass.py on this machine (it scores the original texts too); only two of its scores are kept
+        for f in ("corpus.jsonl", "corpus_neutral.jsonl"):
+            rc.put(f"data/{f}", f"data/second/batman_study/{f}")
+        go(f"after_study_{name}", f"python3 study_pass.py {tag} {DATA}/second/batman_study {OUT}/second_after_study {Q}")
+        for k in ("main", "after_main"):
+            go(f"after_pack_{k}_{name}", f'python3 -c "{PACK}" {OUT}/second_after_study/{tag}/study/anon_{k}_top1.npy {OUT}/{tag}/study/scale.npy '
+                                         f"{OUT}/{tag}/second/batman_after/study_anon_{k}_top1.bits.npy")
+            fetch(f"out/{tag}/second/batman_after/study_anon_{k}_top1.bits.npy", b / f"study_anon_{k}_top1.bits.npy", gz=True)
+            planes.append(f"study_anon_{k}_top1.bits.npy")
+        fetch(f"out/second_after_study/{tag}/study/meta.json", b / "study_meta.json")
+        go(f"after_study_rm_{name}", f"rm -rf {OUT}/second_after_study")
+    res = dict(after_check(tag, b, checked, again), commit=head, checked_utc=__import__("time").strftime("%Y-%m-%dT%H:%MZ", __import__("time").gmtime()))
+    json.dump(res, open(f"results/v2/second/after_check_{tag}.json", "w"), indent=1)
+    for f in planes:
+        (b / f).unlink()
+    was = res["v2s_stored_name_free_presence_codes_masked_only"]
+    against = [k.replace("_", " ") for k in ("v2s_stored_after_presence", "v2s_after_version_made_again_on_this_machine") if "bits_that_differ" in res.get(k, {})]
+    print(f"  after check: exact {res['exact']} (against {' and '.join(against)}); v2's own count of its after file equal: {res['v2s_own_count_of_its_after_file']['equal']}; "
+          f"of {was['units_present_in_v2']:,} presences with the codes masked, {was['lost_to_the_further_mask']:,} lost and {was['added']} added; the reading: "
+          f"{'as asked' if all(res['the_reading'].values()) else [k for k, v in res['the_reading'].items() if not v]}; passed: {res['passed']}", flush=True)
+    if not res["passed"]:
+        raise SystemExit(f"the check of --mask-after on the Batman works did not pass (results/v2/second/after_check_{tag}.json): no Holmes text is read")
+    # ---- the Holmes name-free texts, both masks, at the reference-only scale (as `holmes` reads them, plus --mask-after)
+    rc.put(GPU / "holmes_anon.jsonl", "data/second/holmes_anon.jsonl")
+    go(f"holmes_after_{name}", f"python3 presence_pass.py {tag} {DATA}/second/holmes_anon.jsonl {OUT}/{tag}/second/holmes_after "
+                               f"--scale {OUT}/{tag}/study/scale_ref.npy --planes primary --mask-codes --mask-after {Q}")
+    fetch(f"out/{tag}/second/holmes_after/top1_30.bits.npy", d / "top1_30.bits.npy", gz=True)
+    fetch(f"out/{tag}/second/holmes_after/meta.json", d / "meta.json")
+    print(f"  {tag} after: fetched ['top1_30']", flush=True)
+
+
 def probes(tag, jobs):
     frozen()
     recorded(*[f"jobs/{j}.json" for j in jobs])
@@ -391,5 +562,7 @@ if __name__ == "__main__":
         remakes(a[0], "primary" if "primary" in a else "all", small="small" in a)
     elif cmd == "embed":
         embed()
+    elif cmd == "after":
+        after(a[0], again="again" in a)
     else:
         raise SystemExit(__doc__)
