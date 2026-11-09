@@ -116,7 +116,7 @@ def main():
             out += [f"## {ch}", "", "| # | Claim | Essay | As a hypothesis | Cheap rival | Needs neurons? | Tested by |", "| --- | --- | --- | --- | --- | --- | --- |"]
             for c in rows:
                 out.append(f"| {c['n']} | {cell(c['claim'])} | {'; '.join(link(e) for e in c['essays'])} | {cell(c['hypothesis'])} | {cell(c.get('rival'))} | "
-                           f"{'yes' if c.get('needs_neurons') else 'no: any unit would do'} | {', '.join(c.get('ids', [])) or 'nothing yet'} |")
+                           f"{'yes' if c.get('needs_neurons') else 'no: any unit would do'} | {', '.join(c.get('ids', [])) or 'no entry'} |")
             out.append("")
         if es.get("sources"):
             out += ["## Sources the essays cite that are worth re-testing", "", es.get("sources_intro", ""), "",
