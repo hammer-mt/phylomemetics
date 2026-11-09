@@ -1,0 +1,19 @@
+00:13:26 39 columns: E 21.1071, sources first 205, ll0 -91.0680 (20 s); file says E 21.1071, ll0 -91.0680
+00:18:27 copies: 140 of 420 (322 s)
+00:24:27 copies: 280 of 420 (681 s)
+00:28:36 copies: 420 of 420 (930 s)
+00:28:36 copies, 39 columns, all: {'draws': 420, 'below_0.05': 34, 'rate': 0.08095238095238096, 'below_0.01': 12, 'sd_Z': 1.2869418953110618, 'mean_Z': -0.13000330198427817, 'p_below_0.05_and_Z_above_the_stand_ins': 12, 'z_max': 2.597564616997038}
+00:28:36    mixes and curves: {'draws': 192, 'below_0.05': 19, 'rate': 0.09895833333333333, 'below_0.01': 8, 'sd_Z': 1.441435311859338, 'mean_Z': -0.1486604410768367, 'p_below_0.05_and_Z_above_the_stand_ins': 7, 'z_max': 2.597564616997038}
+00:28:36    single columns plus noise: {'draws': 228, 'below_0.05': 15, 'rate': 0.06578947368421052, 'below_0.01': 4, 'sd_Z': 1.1404904040717962, 'mean_Z': -0.11429202695896575, 'p_below_0.05_and_Z_above_the_stand_ins': 5, 'z_max': 2.4506916172233972}
+00:28:36    mean: {'draws': 32, 'below_0.05': 5, 'rate': 0.15625, 'below_0.01': 2, 'sd_Z': 1.180547621490857, 'mean_Z': 0.3250596533819563, 'p_below_0.05_and_Z_above_the_stand_ins': 1, 'z_max': 2.369461048294689}
+00:28:36    positive mix: {'draws': 32, 'below_0.05': 4, 'rate': 0.125, 'below_0.01': 2, 'sd_Z': 1.0727122753317408, 'mean_Z': 0.5876825473756316, 'p_below_0.05_and_Z_above_the_stand_ins': 2, 'z_max': 2.597564616997038}
+00:28:36    signed mix: {'draws': 32, 'below_0.05': 3, 'rate': 0.09375, 'below_0.01': 1, 'sd_Z': 1.2911761811458928, 'mean_Z': 0.10076809951590719, 'p_below_0.05_and_Z_above_the_stand_ins': 1, 'z_max': 2.4753322879653443}
+00:28:36    mean of 5: {'draws': 32, 'below_0.05': 2, 'rate': 0.0625, 'below_0.01': 1, 'sd_Z': 0.9042993634072874, 'mean_Z': 0.15793609056866592, 'p_below_0.05_and_Z_above_the_stand_ins': 1, 'z_max': 2.3585126228398114}
+00:28:36    one column: {'draws': 32, 'below_0.05': 5, 'rate': 0.15625, 'below_0.01': 2, 'sd_Z': 1.1080024548888205, 'mean_Z': 0.23903214565519004, 'p_below_0.05_and_Z_above_the_stand_ins': 2, 'z_max': 2.352790896322471}
+00:28:36    held-out score: {'draws': 32, 'below_0.05': 0, 'rate': 0.0, 'below_0.01': 0, 'sd_Z': 0.7053671011713628, 'mean_Z': -2.302441182958371, 'p_below_0.05_and_Z_above_the_stand_ins': 0, 'z_max': -0.27352012369956713}
+00:28:36 single columns with 3 or more of 12 below 0.05: {'lsa_50.hz': [3, 6]}
+00:31:17 noise: 140 draws (1092 s)
+00:33:42 noise: 280 draws (1237 s)
+00:35:46 noise: 420 draws (1361 s)
+00:35:46 pure noise, 39 columns: {'draws': 420, 'below_0.05': 34, 'rate': 0.08095238095238096, 'below_0.01': 11, 'sd_Z': 1.1810783910808578, 'mean_Z': 0.0038603853306047996, 'p_below_0.05_and_Z_above_the_stand_ins': 10, 'z_max': 3.234083214510936}
+00:35:46 done (1361 s)

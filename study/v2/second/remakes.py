@@ -41,7 +41,9 @@ refitted, and the rest are tested again; it stops when at most 10% have p below 
 MAX_ADDITIONS additions, or the calibration has not converged and 'run' refuses). The columns that stand at the end are
 the registered word model for every set, frame, penalty and model; the stand-ins that are left are the registered panel.
 Checks that took no part in choosing the columns are then run on them: random families of word-only measures, noisy and
-curved copies of the columns, the withheld-vocabulary positive control, the planted-boost power.
+curved copies of the columns, the withheld-vocabulary positive control, the planted-boost power. Condition 2 of the claim
+("calibrated") holds in 'run' only if at most 10% of the stand-ins, of the random measures and of the copies have p below
+0.05 (PLAN.md Section 9); 'run' reads the last two shares from remakes_words.json.
 
 THE UNIT MEASURE arrives as counts (v2/gpu/copresence.py): v2/acts_second/remakes/<tag>/counts/<plane>.npz with shared
 [rows, films] and n_optional [films], the rows being the remakes in the order of data/second/remakes/rows.json and the
@@ -1598,6 +1600,13 @@ def run_analysis(job):
         n_pass = sum(v["p"] < T.ALPHA for v in per_plane.values())
         out["planes"] = {"available": planes, "missing": [p for p in PLANES if p not in rates], "below_0.05": int(n_pass), "needed": MIN_PLANES, "rows": per_plane}
         cond = dict(res["conditions_1_to_5"])
+        # condition 2 as PLAN.md Section 9 fixes it: "not calibrated" also if more than 10% of the random word-only measures, or of the noisy
+        # and curved copies, had p below 0.05 in the units' place ('words' drew them once, after the columns were fixed)
+        chk = W["claim_conditions_that_words_decide"]["checks_that_took_no_part_in_choosing_the_columns"]
+        shares = {"stand_ins": res["standins"]["share_below_0.05"], "random_families": chk["random_families_share_below_0.05"], "copies": chk["copies_share_below_0.05"]}
+        cond[CONDITIONS[1]] = bool(all(v <= T.MAX_STANDIN_SHARE for v in shares.values()))
+        out["condition_2"] = {"share_below_0.05": shares, "limit": T.MAX_STANDIN_SHARE, "holds": cond[CONDITIONS[1]],
+                              "what": "holds if at most 10% of the stand-ins, of the random word-only measures and of the noisy and curved copies have p below 0.05"}
         cond[CONDITIONS[5]], cond[CONDITIONS[6]] = bool(n_pass >= MIN_PLANES), bool(out["recall_rule"]["holds"])
         control = bool(W["primary_calibration"]["withheld_vocabulary_positive_control"]["passed"])
         low = out["subsets"]["copy_share_under_1pct"]
@@ -1722,7 +1731,7 @@ def run(a):
         "settings": settings(cols), "counts_files": info, "recognition": recognition,
         "word_columns": {"columns_with_the_cube": len(cols) + 1, "measures_added_by_rule": W["word_columns"]["added_measures"], "stand_ins": len(W["word_columns"]["panel"])},
         "analyses_run": list(blocks), "analyses_left_out": left, "analyses_not_asked_for": [a_label(j) for j in ANALYSES if j not in wanted],
-        "decision": {"set": PRIMARY_SET, "frame": PRIMARY_FRAME, "plane": PRIMARY_PLANE, "conditions": prim["conditions"], "outcome": prim["outcome"],
+        "decision": {"set": PRIMARY_SET, "frame": PRIMARY_FRAME, "plane": PRIMARY_PLANE, "conditions": prim["conditions"], "condition_2": prim["condition_2"], "outcome": prim["outcome"],
                      "slope": prim["slope"], "gain": prim["gain"]["gain"], "standins_largest_Z": prim["standins"]["z_max"], "planes_below_0.05": prim["planes"]["below_0.05"],
                      "planes_available": len(prim["planes"]["available"]), "recall_rule": prim["recall_rule"],
                      "sum_over_the_entries_with_a_copy_share_under_1pct": prim["sum_over_the_entries_with_a_copy_share_under_1pct"],
@@ -1965,6 +1974,8 @@ def synthetic(a):
     S, key = report["scenarios"], "outcome_had_conditions_1_and_2_held"
     W = json.load(open(a.words or OUT / WORDS_FILE))["claim_conditions_that_words_decide"]
     words_allow = all(v["holds"] if isinstance(v, dict) and "holds" in v else v for k, v in W.items() if k[0] in "12t")
+    chk = W["checks_that_took_no_part_in_choosing_the_columns"]             # condition 2 also needs these two at 10% or under (run_analysis)
+    words_allow = words_allow and max(chk["random_families_share_below_0.05"], chk["copies_share_below_0.05"]) <= T.MAX_STANDIN_SHARE
     report["conditions_1_and_2_and_the_positive_control_hold_on_the_real_list"] = bool(words_allow)
     report["claims_only_with_a_planted_signal"] = bool([n for n, sc in S.items() if sc["outcome"].startswith("claim")] == (["planted"] if words_allow and "planted" in S else []))
     report["checks_passed"] = False

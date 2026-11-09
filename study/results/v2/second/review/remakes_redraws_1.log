@@ -1,0 +1,16 @@
+23:39:03 39 columns: E 21.1071, sources first 205, ll0 -91.0680 (30 s); file says E 21.1071, ll0 -91.0680
+23:39:42 random families generated: containment, random word weights (69 s)
+23:39:54 random families generated: containment, random tilt (81 s)
+23:40:04 random families generated: TF-IDF half words (91 s)
+23:40:12 random families generated: TF-IDF half pairs (99 s)
+23:40:41 random families generated: TF-IDF half char4 (128 s)
+23:41:20 random families generated: TF-IDF half sentences (167 s)
+23:45:10 random families generated: LSA random (397 s)
+23:48:25 random families, 39 columns, all: {'draws': 166, 'below_0.05': 19, 'rate': 0.1144578313253012, 'below_0.01': 5, 'sd_Z': 1.2118613326177747, 'mean_Z': -0.03608952705604765, 'p_below_0.05_and_Z_above_the_stand_ins': 6, 'z_max': 2.740735247365761}
+23:48:25    containment, random word weights: {'draws': 30, 'below_0.05': 1, 'rate': 0.03333333333333333, 'below_0.01': 0, 'sd_Z': 1.0155901699383754, 'mean_Z': -0.10922321072189115, 'p_below_0.05_and_Z_above_the_stand_ins': 0, 'z_max': 1.956691649939903}
+23:48:25    containment, random tilt: {'draws': 30, 'below_0.05': 3, 'rate': 0.1, 'below_0.01': 0, 'sd_Z': 1.2464128080865506, 'mean_Z': -0.18985111215379094, 'p_below_0.05_and_Z_above_the_stand_ins': 1, 'z_max': 2.2587819794599358}
+23:48:25    TF-IDF half words: {'draws': 30, 'below_0.05': 6, 'rate': 0.2, 'below_0.01': 3, 'sd_Z': 1.02006124160482, 'mean_Z': 0.7023411658943302, 'p_below_0.05_and_Z_above_the_stand_ins': 3, 'z_max': 2.4539649223652735}
+23:48:25    TF-IDF half pairs: {'draws': 30, 'below_0.05': 2, 'rate': 0.06666666666666667, 'below_0.01': 1, 'sd_Z': 1.003239151583373, 'mean_Z': -0.2534647019064864, 'p_below_0.05_and_Z_above_the_stand_ins': 1, 'z_max': 2.740735247365761}
+23:48:25    TF-IDF half char4: {'draws': 20, 'below_0.05': 2, 'rate': 0.1, 'below_0.01': 1, 'sd_Z': 1.3753296433290203, 'mean_Z': -0.42027844803653586, 'p_below_0.05_and_Z_above_the_stand_ins': 1, 'z_max': 2.3638738667785577}
+23:48:25    TF-IDF half sentences: {'draws': 20, 'below_0.05': 4, 'rate': 0.2, 'below_0.01': 0, 'sd_Z': 1.305235184773213, 'mean_Z': -0.19164385030558248, 'p_below_0.05_and_Z_above_the_stand_ins': 0, 'z_max': 2.2255659813039066}
+23:48:25    LSA random: {'draws': 6, 'below_0.05': 1, 'rate': 0.16666666666666666, 'below_0.01': 0, 'sd_Z': 1.3036825166684056, 'mean_Z': 0.2922533736956008, 'p_below_0.05_and_Z_above_the_stand_ins': 0, 'z_max': 2.1804566101156646}
