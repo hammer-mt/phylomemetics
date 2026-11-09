@@ -152,7 +152,7 @@
    "col": 2,
    "row": 2,
    "blurb": "Hunches from marketing practice, made testable.",
-   "state": "A few dozen hunches from practice, none measured. Eighteen are in the database."
+   "state": "210 measurable claims from Mike's 2022 essays, none measured. For 57 of them a neuron reading could add something."
   },
   {
    "id": "uses",
@@ -4015,6 +4015,339 @@
    "title": "Finish labelling the canon",
    "question": "What are the 27 core Batman units that still have no confident label?",
    "note": "29 of the 56 core families have a confident label. Left unfinished in the working session."
+  },
+  {
+   "id": "AT-S11",
+   "region": "atlas",
+   "status": "seed",
+   "priority": 0,
+   "title": "Is Batman the sum of his parts?",
+   "question": "Can the neurons that fire for a character be predicted from those that fire for its agreed component tropes, better than from random tropes, embedding addition or an LLM's combined tag list?",
+   "note": "From Mike's 2022 essays (Semiotics vs Memetics; Billionaire vigilante orphans). Rival to beat: An LLM's list of tags combined by simple set arithmetic; adding sentence embeddings together."
+  },
+  {
+   "id": "IN-S9",
+   "region": "instrument",
+   "status": "seed",
+   "priority": 0,
+   "title": "Does a buzzword unpack only in its home field?",
+   "question": "Does a jargon phrase fire the same neurons as its plain-English expansion when the surrounding text sets its home field, and not when the same phrase sits in an unrelated setting?",
+   "note": "From Mike's 2022 essays (Buzzwords are compression; The cure for the common meme). Rival to beat: Keyword counts cannot do this at all. The real rivals are a context-aware embedding of the phrase and an LLM reading the passage."
+  },
+  {
+   "id": "UN-S10",
+   "region": "universality",
+   "status": "seed",
+   "priority": 0,
+   "title": "Do common memes transfer between models better than rare ones?",
+   "question": "Does agreement between two models on which neurons mark a meme rise with how often that meme appears in public text, and fall to chance for niche memes?",
+   "note": "From Mike's 2022 essays (Memetics as a science; Billionaire vigilante orphans). Rival to beat: The same trend measured with embedding neighbour lists or LLM tag lists instead of neurons."
+  },
+  {
+   "id": "RX-S12",
+   "region": "remix",
+   "status": "seed",
+   "priority": 0,
+   "title": "X is Y in Z: setting-swap arithmetic on stories",
+   "question": "For pairs such as 'The Lion King is Hamlet with lions', does the first story's neuron profile, minus its setting and plus the new one, land nearer the second story than embedding arithmetic does?",
+   "note": "From Mike's 2022 essays (Every story ever told; Billionaire vigilante orphans). Rival to beat: The same subtraction and addition done on sentence embeddings, which are known to handle analogies."
+  },
+  {
+   "id": "CJ-S12",
+   "region": "conjectures",
+   "status": "seed",
+   "priority": 0,
+   "title": "Do works called original just have obscure sources?",
+   "question": "Among films equally close to their nearest earlier source, are the ones reviewers call original those whose source is less well known?",
+   "note": "From Mike's 2022 essays (Where do you get your ideas?; Meme-Jacking). Rival to beat: Nearest earlier sources found by sentence embedding, with fame taken from page views."
+  },
+  {
+   "id": "IN-S10",
+   "region": "instrument",
+   "status": "seed",
+   "priority": 0,
+   "title": "Loosened snowclones",
+   "question": "Does a neuron chosen on literal templates such as 'the cure for the common X' still fire on reworded variants, where a pattern match fails and sentence embeddings are the rival?",
+   "note": "From Mike's 2022 essays (The cure for the common meme; Comparative Phylogenetics). Rival to beat: A regular expression (a text pattern match), which wins on literal templates. Neurons only have a case on reworded variants, against embeddings."
+  },
+  {
+   "id": "ME-S13",
+   "region": "memetics",
+   "status": "seed",
+   "priority": 0,
+   "title": "Is middling copying fidelity best for survival?",
+   "question": "Across families of copied quotations or tales, do those with moderate change between copies outlast both the near-verbatim and the heavily altered, as the essays' 'too little, too much mutation' argument predicts?",
+   "note": "From Mike's 2022 essays (Universal Darwinism; Modeling viral growth). Rival to beat: The same test using how much the wording varies between retellings."
+  },
+  {
+   "id": "ME-S14",
+   "region": "memetics",
+   "status": "seed",
+   "priority": 0,
+   "title": "People retelling from memory or from a script",
+   "question": "In chains of human retellers, do stories passed on by re-reading written notes keep more of their neuron-measured content than stories retold from memory of the last telling?",
+   "note": "From Mike's 2022 essays (Mutually beneficial memes). Rival to beat: Drift in wording; an LLM coding which statements survive."
+  },
+  {
+   "id": "FI-S9",
+   "region": "fitness",
+   "status": "seed",
+   "priority": 0,
+   "title": "Do magic words travel between accounts?",
+   "question": "Do the neurons that predict winners in one publisher's or community's tests keep predicting winners in another's, and better than the winning word sequences do?",
+   "note": "From Mike's 2022 essays (Finding magic words). Rival to beat: Mike's own n-gram method: word sequences tied to performance."
+  },
+  {
+   "id": "CJ-S13",
+   "region": "conjectures",
+   "status": "seed",
+   "priority": 0,
+   "title": "Do faded memes revive by changing medium?",
+   "question": "When a faded meme's share rebounds, the rebound is carried by works in a medium newer than the one it peaked in, more often than by works in the old medium.",
+   "note": "From Mike's 2022 essays (Modeling viral growth). Rival to beat: Franchise names and keywords tracked across media; an LLM reading each synopsis. Words fail when the revived meme is renamed, which is where a unit that reads ideas could add something."
+  },
+  {
+   "id": "US-S12",
+   "region": "uses",
+   "status": "seed",
+   "priority": 0,
+   "title": "Filler or news: what is new in this article?",
+   "question": "The share of an article's meme units that are new to its running story separates hand-labelled filler from news, and filler share peaks in the hours before scheduled events.",
+   "note": "From Mike's 2022 essays (Emerging memes). Rival to beat: New words and new named entities against earlier coverage; embedding distance to earlier articles; an LLM asked what is new. Units must beat these when old content is merely reworded."
+  },
+  {
+   "id": "RX-S13",
+   "region": "remix",
+   "status": "seed",
+   "priority": 0,
+   "title": "Does the namer get the credit?",
+   "question": "Among papers carrying an idea, later papers cite the one that coined its name more than earlier papers that carried the same idea unnamed, after allowing for venue and author fame.",
+   "note": "From Mike's 2022 essays (Emerging memes). Rival to beat: Keyword first-use finds the coiner. Finding earlier carriers with no name needs a reader of ideas: sentence embeddings, or an LLM judging whether two abstracts state the same idea."
+  },
+  {
+   "id": "FI-S10",
+   "region": "fitness",
+   "status": "seed",
+   "priority": 0,
+   "title": "Are a meme's first carriers penalised?",
+   "question": "Among works carrying a set of meme units that later became common, the earliest carriers did worse against same-year peers than carriers at the middle of adoption.",
+   "note": "From Mike's 2022 essays (Emerging memes). Rival to beat: First use of the idea's keywords or tags. Words miss early carriers that lacked the later name, so embeddings and an LLM judging \"same idea?\" are the rivals to beat."
+  },
+  {
+   "id": "PO-S11",
+   "region": "population",
+   "status": "seed",
+   "priority": 0,
+   "title": "Are ideas turning over faster, or only their words?",
+   "question": "The time a meme unit spends above half its peak share has shortened decade by decade. The neuron question is whether ideas turn over faster, or only the words for them.",
+   "note": "From Mike's 2022 essays (Meme fatigue). Rival to beat: The same lifetime measured on words, phrases and hashtags, where shortening is said to be reported already (from memory; check). Units add something only if their trend differs from the words'."
+  },
+  {
+   "id": "ME-S15",
+   "region": "memetics",
+   "status": "seed",
+   "priority": 0,
+   "title": "Does a meme's meaning drift as it goes mainstream?",
+   "question": "For widely quoted lines, the stance of the surrounding text moves away from that of the original passage as the quote spreads, and moves further the further it travels from its first audience.",
+   "note": "From Mike's 2022 essays (Meme fatigue). Rival to beat: Word overlap cannot see this, because the quoted words do not change. The rivals are a stance classifier and an LLM reading the surrounding passage."
+  },
+  {
+   "id": "US-S13",
+   "region": "uses",
+   "status": "seed",
+   "priority": 0,
+   "title": "Do units forecast when a conversation turns hostile?",
+   "question": "Early turns of a conversation contain content that forecasts whether it later turns into personal attack, beyond politeness markers.",
+   "note": "From Mike's 2022 essays (Info Hazards). Rival to beat: Politeness and insult word lists; an LLM reading the opening turns; sentence embeddings."
+  },
+  {
+   "id": "FI-S11",
+   "region": "fitness",
+   "status": "seed",
+   "priority": 0,
+   "title": "One idea per message: do headlines with fewer memes win?",
+   "question": "Within a randomised headline test, the arm with fewer distinct memes wins more clicks, with length held fixed.",
+   "note": "From Mike's 2022 essays (Memetic Confusion). Rival to beat: Word count; an LLM counting the ideas in each headline."
+  },
+  {
+   "id": "US-S14",
+   "region": "uses",
+   "status": "seed",
+   "priority": 0,
+   "title": "Friction without displacement: does a banned meme move or die?",
+   "question": "After a platform bans a term or community, the idea itself (in any wording) falls nearly as much as the banned words do, in the same accounts. Displacement into new wording would falsify it.",
+   "note": "From Mike's 2022 essays (Memetic crime loops). Rival to beat: Keyword counts cannot see reworded substitutes, so they cannot test displacement. The bar is sentence embeddings or an LLM reading posts for the idea."
+  },
+  {
+   "id": "EN-S11",
+   "region": "engineering",
+   "status": "seed",
+   "priority": 0,
+   "title": "Does a filter breed evaders? Weak against harsh penalties",
+   "question": "In a loop that breeds text to carry an idea past a detector, a weak penalty yields variants that keep the idea and evade the detector; a harsh penalty makes the idea disappear from the population.",
+   "note": "From Mike's 2022 essays (Evolutionary design thinking). Rival to beat: Run the same loop against a keyword filter, an embedding classifier and an LLM reader as the detector. A neuron detector must be evaded less often at equal cost."
+  },
+  {
+   "id": "CE-S11",
+   "region": "cultevo",
+   "status": "seed",
+   "priority": 0,
+   "title": "Levelling, sharpening, assimilation: three rumour distortions in chains",
+   "question": "Along retelling chains the number of active units falls, the surviving units fire more strongly, and content shifts toward the retelling group's usual units. Versions showing all three are passed on most.",
+   "note": "From Mike's 2022 essays (Smoke without fire). Rival to beat: Word counts for levelling, and an LLM listing and grading each retelling's statements for sharpening and assimilation."
+  },
+  {
+   "id": "FI-S12",
+   "region": "fitness",
+   "status": "seed",
+   "priority": 0,
+   "title": "Life imitating art: a hit's memes in non-fiction",
+   "question": "After a hit film about a profession, non-fiction about that profession (news, memoirs, trade press) carries more of the film's distinctive neuron units than before release, compared with control professions and matched flops.",
+   "note": "From Mike's 2022 essays (Memed into existence). Rival to beat: Counts of the film's catchphrases and props; sentence-embedding similarity to the film's plot summary. Both catch quoted uptake; units must show uptake without the film's words."
+  },
+  {
+   "id": "CE-S12",
+   "region": "cultevo",
+   "status": "seed",
+   "priority": 0,
+   "title": "Is what gets remembered what the model failed to predict?",
+   "question": "The parts of a story a language model predicts worst are the parts people recall and pass on. Surprise measured in neuron units predicts recall beyond surprise measured word by word.",
+   "note": "From Mike's 2022 essays (All reality is virtual). Rival to beat: Word-by-word surprisal: how unexpected each word is, read from the model's ordinary output with no look inside. Word rarity is a second cheap rival."
+  },
+  {
+   "id": "CJ-S14",
+   "region": "conjectures",
+   "status": "seed",
+   "priority": 0,
+   "title": "Do lasting stories overturn a default pairing?",
+   "question": "Stories that last pair a trait with the opposite of its usual outcome (the weak win, the ugly are good) more often than forgotten stories of the same period and genre.",
+   "note": "From Mike's 2022 essays (Non-Obvious Truths). Rival to beat: An LLM asked which common expectation the story overturns; a rare-pairing score built on words, as in RX-23."
+  },
+  {
+   "id": "RX-S14",
+   "region": "remix",
+   "status": "seed",
+   "priority": 0,
+   "title": "Fable to advert: same moral, no shared words",
+   "question": "With names and shared words removed, a campaign's description is closer in neuron units to the fable it is paired with than to decoy fables, where word overlap cannot make the link.",
+   "note": "From Mike's 2022 essays (Non-Obvious Truths). Rival to beat: Sentence embeddings; an LLM asked which fable each campaign echoes, which may well win."
+  },
+  {
+   "id": "PO-S12",
+   "region": "population",
+   "status": "seed",
+   "priority": 0,
+   "title": "How fast does a new category shed its parent's memes?",
+   "question": "Writing about a new technology carries the neuron units of the technology it replaced most strongly at launch, and their share falls steadily as the new category ages.",
+   "note": "From Mike's 2022 essays (Making the new feel familiar). Rival to beat: Counts of the old category's words ('horseless carriage') over time; embedding similarity to text about the old category."
+  },
+  {
+   "id": "ME-S16",
+   "region": "memetics",
+   "status": "seed",
+   "priority": 0,
+   "title": "Does a name make an idea spread?",
+   "question": "A concept described in papers before it had a name spreads faster after a compact name is coined than its earlier trend predicts. Finding the concept before it had a name is the step keyword counts cannot do.",
+   "note": "From Mike's 2022 essays (A rose by any other name). Rival to beat: Sentence-embedding search, or an LLM reading passages for the concept. Keyword counts work only after the coinage."
+  },
+  {
+   "id": "IN-S11",
+   "region": "instrument",
+   "status": "seed",
+   "priority": 0,
+   "title": "Jargon and its plain expansion: same units?",
+   "question": "A jargon passage and its plain-English expansion activate the same neuron units, so the jargon version carries more units per word. The match holds only in a model that knows the field.",
+   "note": "From Mike's 2022 essays (Buzzwords are compression). Rival to beat: Sentence embeddings of the two versions; an LLM asked whether they say the same thing. Word overlap should fail, since few words are shared."
+  },
+  {
+   "id": "IN-S12",
+   "region": "instrument",
+   "status": "seed",
+   "priority": 0,
+   "title": "Same position, different appeal: can units tell what from how?",
+   "question": "Pairs of ads that take the same position through different appeals share 'position' neuron units and differ on 'appeal' units. Units chosen on some topics separate position from appeal on unseen topics.",
+   "note": "From Mike's 2022 essays (Creative Analytica). Rival to beat: An LLM asked to name the position and the appeal of each ad; a probe trained on sentence embeddings; word lists for threat and for sociability."
+  },
+  {
+   "id": "FI-S13",
+   "region": "fitness",
+   "status": "seed",
+   "priority": 0,
+   "title": "Does blaming the system out-spread blaming yourself?",
+   "question": "Among versions of one story, the version that blames a system for a personal hardship draws more clicks or votes than the version that puts responsibility on the individual.",
+   "note": "From Mike's 2022 essays (Seize the memes of production). Rival to beat: An LLM labelling each text as system-blame or self-blame would probably do. Word lists for blame are the floor."
+  },
+  {
+   "id": "CE-S13",
+   "region": "cultevo",
+   "status": "seed",
+   "priority": 0,
+   "title": "Do movements turn on rival ideas only after they win?",
+   "question": "In a movement's own dated writings, calls to silence rival views are rare while it is small and rise after it gains power, more than in matched movements that never gained power.",
+   "note": "From Mike's 2022 essays (Seize the memes of production). Rival to beat: Keyword lists (traitor, censor, enemy of the people); an LLM reading each passage. Wording differs by era and movement, which is the only opening for neurons."
+  },
+  {
+   "id": "US-S15",
+   "region": "uses",
+   "status": "seed",
+   "priority": 0,
+   "title": "Dehumanising language before a conflict",
+   "question": "A neuron unit chosen on some dehumanising metaphors (vermin) also fires on unseen ones (disease, machines). Its rate in one side's press about the other side rises before fighting starts.",
+   "note": "From Mike's 2022 essays (A battle of wills). Rival to beat: Dehumanisation word lists; an LLM reading each passage; a probe on sentence embeddings."
+  },
+  {
+   "id": "FI-S14",
+   "region": "fitness",
+   "status": "seed",
+   "priority": 0,
+   "title": "Do attack messages beat reassuring ones, and for whom?",
+   "question": "Within one randomised test, the message that attacks an institution wins over the message that defends or reassures. Challengers gain more from attack messages than incumbents do.",
+   "note": "From Mike's 2022 essays (The Meme President). Rival to beat: Sentiment word lists; an LLM labelling each message as attack or reassurance."
+  },
+  {
+   "id": "US-S16",
+   "region": "uses",
+   "status": "seed",
+   "priority": 0,
+   "title": "Do troll accounts invent grievances or echo existing ones?",
+   "question": "Troll posts carry few ideas new to the target community: their units already appear in that community's earlier posts. The troll posts closest to earlier community content draw the most engagement.",
+   "note": "From Mike's 2022 essays (Russian troll farms). Rival to beat: Word overlap and sentence-embedding similarity between each troll post and the community's earlier posts."
+  },
+  {
+   "id": "US-S17",
+   "region": "uses",
+   "status": "seed",
+   "priority": 0,
+   "title": "Does a debunk stop a story, or only its name?",
+   "question": "After a story is debunked, its named form declines while its name-free form (a lone pilot saving the capital) keeps appearing in later texts without the correction.",
+   "note": "From Mike's 2022 essays (Flood the zone). Rival to beat: Keyword search finds the named form. An LLM reader or sentence embeddings must be beaten on the name-free form."
+  },
+  {
+   "id": "FI-S15",
+   "region": "fitness",
+   "status": "seed",
+   "priority": 0,
+   "title": "Message or money: which predicts a campaign's result?",
+   "question": "Across many ballot campaigns, the content of each side's printed arguments predicts the result beyond the spending ratio, and adds more than spending does.",
+   "note": "From Mike's 2022 essays (Take back control). Rival to beat: Spending ratio alone as the floor; then word counts, sentence embeddings and an LLM rating each argument's appeal."
+  },
+  {
+   "id": "FI-S16",
+   "region": "fitness",
+   "status": "seed",
+   "priority": 0,
+   "title": "Do winning messages echo what the audience already says?",
+   "question": "Among a campaign's tested messages, winners share more ideas with what the audience was already saying in its own words than losers do, even where no words are shared.",
+   "note": "From Mike's 2022 essays (Take back control). Rival to beat: Word overlap and sentence-embedding similarity between each message and the audience's own earlier text."
+  },
+  {
+   "id": "CJ-S15",
+   "region": "conjectures",
+   "status": "seed",
+   "priority": 0,
+   "title": "Are Leave and Trump one family of messages?",
+   "question": "Leave and Trump campaign texts sit closer to each other in neuron-unit profile than either sits to its own opponent, once place, party and person names are removed.",
+   "note": "From Mike's 2022 essays (Take back control). Rival to beat: Sentence embeddings; an LLM listing each campaign's themes; word-weight similarity (TF-IDF) after names are removed."
   }
  ]
 }

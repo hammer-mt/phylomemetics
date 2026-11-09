@@ -25,10 +25,11 @@ The bet is that a meme can be measured by which neurons fire inside a language m
 | [`IDEAS.md`](IDEAS.md) | Every idea by research area: run, planned earlier, newly registered, or still only an idea |
 | [`designs/`](designs/) | One file per registered design: question, prediction, what would refute it, data, method, the cheap rival to beat |
 | [`biology-map.md`](biology-map.md) | 37 tools from biology and their memetic versions; which landmark of biology's history memetics is at |
+| [`ESSAYS.md`](ESSAYS.md) | The 210 measurable claims in Mike's 2022 essays, each restated as a hypothesis and linked to the design or seed that tests it; and the 40 sources those essays cite that are most worth re-testing |
 | [`sources.md`](sources.md) | The reading list, ranked |
 | [`notes/`](notes/) | The research notes behind all of this, with citation check logs |
 | [`map/index.html`](map/index.html) | The visual map: a chart of every idea, with the fog marked. Open it in a browser |
-| `ideas.json`, `premises.json`, `biology.json`, `sources.json`, `summary.json` | The data. Edit these, then run `python3 roadmap/build.py` to regenerate the files above |
+| `ideas.json`, `premises.json`, `biology.json`, `sources.json`, `summary.json`, `essays.json` | The data. Edit these, then run `python3 roadmap/build.py` to regenerate the files above |
 | `ideas.csv` | The ideas as a spreadsheet |
 
 ## 1. What has been tried
@@ -130,7 +131,7 @@ The judges' shared view of the likely end state: a neuron's lasting job may be t
 
 **Which moment of biology's history is this?** Memetics already has its Linnaeus (folktale indexes, TV Tropes), its Darwin (Dawkins; Boyd and Richerson) and its Kimura (the random-copying model). It lacks a Mendel, meaning clean units in controlled crosses, and a Sanger, meaning a cheap reader with a known error rate. Neuron reading is a candidate Sanger. There is no Watson and Crick for human culture: a model neuron is an instrument, not the substrate in a head. A Mendeleev test is design AT-28. The full table is in [`biology-map.md`](biology-map.md).
 
-**The hunches in Mike's earlier notes.** About 35 claims in them were restated as hypotheses. That list is in a notes file kept out of this public folder and sent to Mike directly. Eighteen are in the database under Field conjectures: seven designs (the Lindy effect, the thirty-year return, memeplexes, most advanced yet acceptable, the remix ledger, borrowing from many sources, copied or coincidence) and eleven seeds.
+**The claims in Mike's 2022 essays.** All 122 essays were read in full. [`ESSAYS.md`](ESSAYS.md) lists 210 measurable claims, each with its essay, a hypothesis, the cheap rival and the design or seed that tests it. For 57 of them a neuron reading could add something; the other 153 could be tested with any unit, word counts included. 36 claims are already tested by a registered or earlier design, 42 by a seed (37 seeds were added for this), and 132 have no entry because they do not need the method. Seven became full designs under Field conjectures: the Lindy effect, the thirty-year return, memeplexes, most advanced yet acceptable, the remix ledger, borrowing from many sources, and copied or coincidence. The same page lists the 40 sources the essays cite that are most worth re-testing.
 
 **Twelve sources to read first.**
 
@@ -161,7 +162,7 @@ The judges' shared view of the likely end state: a neuron's lasting job may be t
 | Cultural evolution, re-run | Evolutionary ecology | Untouched. Human retelling data is public | CE-21 |
 | Fitness and forecasting | Fitness landscapes | One underpowered test that could not have found a signal | FI-21 |
 | Meme engineering | Gene editing | Nothing run. Prompting is the rival to beat | EN-21 |
-| Field conjectures | Natural history | A few dozen hunches from practice, none measured | CJ-21, CJ-22 |
+| Field conjectures | Natural history | 210 claims from Mike's 2022 essays, none measured ([`ESSAYS.md`](ESSAYS.md)) | CJ-21, CJ-22 |
 | Uses | Biotechnology | Nothing run in the open | US-23, US-26 |
 
 ## 8. How the registry works
@@ -172,6 +173,6 @@ Each design was drafted by one AI agent from the notes and then attacked and rev
 
 ## 9. How this was made, and how far to trust it
 
-Twenty research agents each wrote one notes file: seven auditing this repository and Mike's own material, thirteen reviewing the outside literature with web search. A second agent checked every citation in each literature file. Twelve more agents drafted the designs, twelve reviewed them, and three ranked them across areas. Two of the audit files draw on private material and are not in this folder.
+Twenty research agents each wrote one notes file: seven auditing this repository and Mike's own material, thirteen reviewing the outside literature with web search. A second agent checked every citation in each literature file. Twelve more agents drafted the designs, twelve reviewed them, and three ranked them across areas. Two of the audit files draw on private material and are not in this folder. A second pass on 9 November read all ten chapters of Mike's 2022 essays in full: six agents read the chapters, one mapped the claims to the database and one reviewed the essays' own sources.
 
 The audits quote committed outputs and can be checked against them. The literature notes are leads: recent work is thinly reviewed, and anything not confirmed is marked `[UNVERIFIED]`. Confirm a source before citing it in a paper.

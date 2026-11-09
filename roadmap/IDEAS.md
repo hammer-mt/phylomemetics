@@ -36,6 +36,10 @@ Premise P1. Does a firing neuron measure a meme? Reliability and validity of the
 | IN-S6 | **Same threshold, other language and era**: Given the same human label, does a unit fire at the same rate in translated and period-styled text? | Idea only |  |  |
 | IN-S7 | **Do Batman-corpus labels survive general text?**: Does a unit relabelled from its top examples on general text, and from Transluce's public Llama descriptions, keep the label it got from 3,700 Batman-heavy sentences? | Idea only |  |  |
 | IN-S8 | **Do two labellers give a unit the same label?**: Do independent labellers, each shown a different half of a unit's strongest examples, give labels that a blind judge calls the same? | Idea only |  |  |
+| IN-S9 | **Does a buzzword unpack only in its home field?**: Does a jargon phrase fire the same neurons as its plain-English expansion when the surrounding text sets its home field, and not when the same phrase sits in an unrelated setting? | Idea only |  |  |
+| IN-S10 | **Loosened snowclones**: Does a neuron chosen on literal templates such as 'the cure for the common X' still fire on reworded variants, where a pattern match fails and sentence embeddings are the rival? | Idea only |  |  |
+| IN-S11 | **Jargon and its plain expansion: same units?**: A jargon passage and its plain-English expansion activate the same neuron units, so the jargon version carries more units per word. The match holds only in a model that knows the field. | Idea only |  |  |
+| IN-S12 | **Same position, different appeal: can units tell what from how?**: Pairs of ads that take the same position through different appeals share 'position' neuron units and differ on 'appeal' units. Units chosen on some topics separate position from appeal on unseen topics. | Idea only |  |  |
 
 ## Across models
 
@@ -65,6 +69,7 @@ Premise P2. Do different models, languages and media give the same reading?
 | UN-S7 | **Story memes in generated scenes**: Does one unit fire for a story meme stated in text and shown in a generated image with decoys and masked lettering? | Idea only |  |  |
 | UN-S8 | **Two languages, one photograph, no translator**: Do units agree between English and German captions that two people wrote separately for the same photograph? | Idea only |  |  |
 | UN-S9 | **Scrambled sentences**: How much twin agreement survives when the words of each sentence are shuffled, so that only the bag of words is left? | Idea only |  |  |
+| UN-S10 | **Do common memes transfer between models better than rare ones?**: Does agreement between two models on which neurons mark a meme rise with how often that meme appears in public text, and fall to chance for niche memes? | Idea only |  |  |
 
 ## The atlas
 
@@ -91,6 +96,7 @@ A catalogue of the units: a reference list, a periodic table of memes, and the m
 | AT-S8 | **Evidence codes that predict durability**: Do entries that also pass a steering check keep their accuracy in new genres better than entries admitted on text tests alone? | Idea only |  |  |
 | AT-S9 | **Strong-regime field for every entry**: On the texts where an admitted unit is called present, is it firing at 30% or more of its maximum over a large general corpus? | Idea only |  |  |
 | AT-S10 | **Finish labelling the canon**: What are the 27 core Batman units that still have no confident label? | Idea only |  |  |
+| AT-S11 | **Is Batman the sum of his parts?**: Can the neurons that fire for a character be predicted from those that fire for its agreed component tropes, better than from random tropes, embedding addition or an LLM's combined tag list? | Idea only |  |  |
 
 ## Old memetics, re-run
 
@@ -116,6 +122,10 @@ Claims from Dawkins-era and internet memetics that never had a unit.
 | ME-S10 | **A mutation rate per retelling**: What share of units is lost or gained at each step of a retelling chain, and is the rate lower for units than for content words? | Idea only |  |  |
 | ME-S11 | **Citations the paper leans on**: Does ME21's unit advantage grow for references that the citing paper mentions several times in its full text? | Idea only |  |  |
 | ME-S12 | **Prior-art search still owed**: Has anyone already used neuron or sparse-autoencoder features as the unit in a citation, headline or retelling-chain test? | Idea only |  |  |
+| ME-S13 | **Is middling copying fidelity best for survival?**: Across families of copied quotations or tales, do those with moderate change between copies outlast both the near-verbatim and the heavily altered, as the essays' 'too little, too much mutation' argument predicts? | Idea only |  |  |
+| ME-S14 | **People retelling from memory or from a script**: In chains of human retellers, do stories passed on by re-reading written notes keep more of their neuron-measured content than stories retold from memory of the last telling? | Idea only |  |  |
+| ME-S15 | **Does a meme's meaning drift as it goes mainstream?**: For widely quoted lines, the stance of the surrounding text moves away from that of the original passage as the quote spreads, and moves further the further it travels from its first audience. | Idea only |  |  |
+| ME-S16 | **Does a name make an idea spread?**: A concept described in papers before it had a name spreads faster after a compact name is coined than its earlier trend predicts. Finding the concept before it had a name is the step keyword counts cannot do. | Idea only |  |  |
 
 ## Lineage
 
@@ -173,6 +183,9 @@ How much of a work is inherited, how much is new, and who influenced whom.
 | RX-S9 | **Same idea, different author**: When two teams publish the same discovery at the same time, does the more prominent team's wording spread further in later papers? | Idea only |  |  |
 | RX-S10 | **Creators as carriers**: Do the works of one creator carry a signature set of units into each franchise they touch (Miller, Moore, Nolan)? | Idea only |  |  |
 | RX-S11 | **Who read whom: content plus an exposure graph**: Where it is known who was exposed to whom, as in an email archive or a follower graph, does a person's later writing take up the units of the people they read? | Idea only |  |  |
+| RX-S12 | **X is Y in Z: setting-swap arithmetic on stories**: For pairs such as 'The Lion King is Hamlet with lions', does the first story's neuron profile, minus its setting and plus the new one, land nearer the second story than embedding arithmetic does? | Idea only |  |  |
+| RX-S13 | **Does the namer get the credit?**: Among papers carrying an idea, later papers cite the one that coined its name more than earlier papers that carried the same idea unnamed, after allowing for venue and author fame. | Idea only |  |  |
+| RX-S14 | **Fable to advert: same moral, no shared words**: With names and shared words removed, a campaign's description is closer in neuron units to the fable it is paired with than to decoy fables, where word overlap cannot make the link. | Idea only |  |  |
 
 ## Population memetics
 
@@ -199,6 +212,8 @@ Drift, selection, linkage and flow of memes across whole populations of works.
 | PO-S8 | **Forecast the next work's new memes**: Does an accumulation curve fitted on the 32 studied Batman works predict how many new units each of the 39 held-out works in `preregistration/works_batman_extended.json` adds? | Idea only |  |  |
 | PO-S9 | **Does lineage correction recover randomised truth?**: On archived headline tests, do unit associations with click rate estimated across tests, after standard corrections, match the randomised associations measured within each test? | Idea only |  |  |
 | PO-S10 | **Silent-change rate from fourteen years of rewrites**: Between a film's 2012 plot summary (CMU corpus) and today's Wikipedia one, how fast do units change per unit of wording change, and which units stay put under heavy rewriting? | Idea only |  |  |
+| PO-S11 | **Are ideas turning over faster, or only their words?**: The time a meme unit spends above half its peak share has shortened decade by decade. The neuron question is whether ideas turn over faster, or only the words for them. | Idea only |  |  |
+| PO-S12 | **How fast does a new category shed its parent's memes?**: Writing about a new technology carries the neuron units of the technology it replaced most strongly at launch, and their share falls steadily as the new category ages. | Idea only |  |  |
 
 ## Cultural evolution, re-run
 
@@ -223,6 +238,9 @@ The accepted science of cultural change, tested with the new unit.
 | CE-S8 | **Two-source works in the wild**: Do real works with two documented sources show the same segregating or blending pattern as the generated blends in CE23? | Idea only |  |  |
 | CE-S9 | **Does the neutral verdict survive the merge threshold?**: When unit frequencies over time are fitted with random-copying and biased-copying models, does the verdict stay the same across unit-merging thresholds and match the verdict from keywords? | Idea only |  |  |
 | CE-S10 | **Assigned exposure sets**: When a writer model is handed a randomly assigned set of sources, does its uptake of an idea depend on how many sources carry it and on who is said to have written them? | Idea only |  |  |
+| CE-S11 | **Levelling, sharpening, assimilation: three rumour distortions in chains**: Along retelling chains the number of active units falls, the surviving units fire more strongly, and content shifts toward the retelling group's usual units. Versions showing all three are passed on most. | Idea only |  |  |
+| CE-S12 | **Is what gets remembered what the model failed to predict?**: The parts of a story a language model predicts worst are the parts people recall and pass on. Surprise measured in neuron units predicts recall beyond surprise measured word by word. | Idea only |  |  |
+| CE-S13 | **Do movements turn on rival ideas only after they win?**: In a movement's own dated writings, calls to silence rival views are rare while it is small and rise after it gains power, more than in matched movements that never gained power. | Idea only |  |  |
 
 ## Fitness and forecasting
 
@@ -247,6 +265,14 @@ Which memes and combinations succeed, and whether that can be predicted.
 | FI-S6 | **Lindy and the thirty-year return**: Does a meme's age forecast its survival, and do faded memes come back after about thirty years? | Idea only |  |  |
 | FI-S7 | **Unit pairs in randomised tests**: Do pairs of units predict headline winners beyond the sum of the single units? | Idea only |  |  |
 | FI-S8 | **Directed evolution with people as the judge**: At an equal budget of human judgments, does search over meme combinations reach higher rated appeal than a one-shot 'make this more appealing' rewrite? | Idea only |  |  |
+| FI-S9 | **Do magic words travel between accounts?**: Do the neurons that predict winners in one publisher's or community's tests keep predicting winners in another's, and better than the winning word sequences do? | Idea only |  |  |
+| FI-S10 | **Are a meme's first carriers penalised?**: Among works carrying a set of meme units that later became common, the earliest carriers did worse against same-year peers than carriers at the middle of adoption. | Idea only |  |  |
+| FI-S11 | **One idea per message: do headlines with fewer memes win?**: Within a randomised headline test, the arm with fewer distinct memes wins more clicks, with length held fixed. | Idea only |  |  |
+| FI-S12 | **Life imitating art: a hit's memes in non-fiction**: After a hit film about a profession, non-fiction about that profession (news, memoirs, trade press) carries more of the film's distinctive neuron units than before release, compared with control professions and matched flops. | Idea only |  |  |
+| FI-S13 | **Does blaming the system out-spread blaming yourself?**: Among versions of one story, the version that blames a system for a personal hardship draws more clicks or votes than the version that puts responsibility on the individual. | Idea only |  |  |
+| FI-S14 | **Do attack messages beat reassuring ones, and for whom?**: Within one randomised test, the message that attacks an institution wins over the message that defends or reassures. Challengers gain more from attack messages than incumbents do. | Idea only |  |  |
+| FI-S15 | **Message or money: which predicts a campaign's result?**: Across many ballot campaigns, the content of each side's printed arguments predicts the result beyond the spending ratio, and adds more than spending does. | Idea only |  |  |
+| FI-S16 | **Do winning messages echo what the audience already says?**: Among a campaign's tested messages, winners share more ideas with what the audience was already saying in its own words than losers do, even where no words are shared. | Idea only |  |  |
 
 ## Meme engineering
 
@@ -271,6 +297,7 @@ Turning a meme up or down in a text, and breeding better variants.
 | EN-S8 | **Does breeding from the loser head toward the winner?**: When a loop rewrites an Upworthy test's losing headline for several generations, do its outputs come to resemble the real winning headline more than the other real losers? | Idea only |  |  |
 | EN-S9 | **Agent-found motif edit**: Can an agent given a Python sandbox over a small model's weights find a cleaner motif knockout than the human recipe in EN-26? | Idea only |  |  |
 | EN-S10 | **Add one meme, ask real readers**: When one meme is added to or removed from matched fiction premises, does reader preference move, and did any method forecast the direction? | Idea only |  |  |
+| EN-S11 | **Does a filter breed evaders? Weak against harsh penalties**: In a loop that breeds text to carry an idea past a detector, a weak penalty yields variants that keep the idea and evade the detector; a harsh penalty makes the idea disappear from the population. | Idea only |  |  |
 
 ## Field conjectures
 
@@ -296,6 +323,10 @@ Hunches from marketing practice, made testable.
 | CJ-S9 | **Do creators replay their youth?**: Among films of the same year and genre, does a film resemble the films released when its director was aged 5 to 25 more than other past films? | Idea only |  |  |
 | CJ-S10 | **Who or what: sharer against content**: With the content held fixed, how much of a post's success do its words explain, compared with who posted it, where and when? | Idea only |  |  |
 | CJ-S11 | **Are there only so many plots?**: As films are added, does the count of distinct plot-level clusters level off, as 'seven plots' and 'six arcs' claim? | Idea only |  |  |
+| CJ-S12 | **Do works called original just have obscure sources?**: Among films equally close to their nearest earlier source, are the ones reviewers call original those whose source is less well known? | Idea only |  |  |
+| CJ-S13 | **Do faded memes revive by changing medium?**: When a faded meme's share rebounds, the rebound is carried by works in a medium newer than the one it peaked in, more often than by works in the old medium. | Idea only |  |  |
+| CJ-S14 | **Do lasting stories overturn a default pairing?**: Stories that last pair a trait with the opposite of its usual outcome (the weak win, the ugly are good) more often than forgotten stories of the same period and genre. | Idea only |  |  |
+| CJ-S15 | **Are Leave and Trump one family of messages?**: Leave and Trump campaign texts sit closer to each other in neuron-unit profile than either sits to its own opponent, once place, party and person names are removed. | Idea only |  |  |
 
 ## Uses
 
@@ -322,3 +353,9 @@ What the instrument is good for outside the lab.
 | US-S9 | **Does a gamed score fool a second reader?**: Does off-brand text rewritten to fool one model's unit score also fool another model's, more or less than attacks carry over between two embedding models? | Idea only |  |  |
 | US-S10 | **Claim spread over outlets and years**: Do unit-based counts reproduce a claim's rise and fall across outlets and years better than word counts or an embedding probe? | Idea only |  |  |
 | US-S11 | **Stuffing pilot on the Batman files**: Does pasting a few Batman sentences into masked plots of other hero films lift the study's canon score above reworded Batman texts? | Idea only |  |  |
+| US-S12 | **Filler or news: what is new in this article?**: The share of an article's meme units that are new to its running story separates hand-labelled filler from news, and filler share peaks in the hours before scheduled events. | Idea only |  |  |
+| US-S13 | **Do units forecast when a conversation turns hostile?**: Early turns of a conversation contain content that forecasts whether it later turns into personal attack, beyond politeness markers. | Idea only |  |  |
+| US-S14 | **Friction without displacement: does a banned meme move or die?**: After a platform bans a term or community, the idea itself (in any wording) falls nearly as much as the banned words do, in the same accounts. Displacement into new wording would falsify it. | Idea only |  |  |
+| US-S15 | **Dehumanising language before a conflict**: A neuron unit chosen on some dehumanising metaphors (vermin) also fires on unseen ones (disease, machines). Its rate in one side's press about the other side rises before fighting starts. | Idea only |  |  |
+| US-S16 | **Do troll accounts invent grievances or echo existing ones?**: Troll posts carry few ideas new to the target community: their units already appear in that community's earlier posts. The troll posts closest to earlier community content draw the most engagement. | Idea only |  |  |
+| US-S17 | **Does a debunk stop a story, or only its name?**: After a story is debunked, its named form declines while its name-free form (a lone pilot saving the capital) keeps appearing in later texts without the correction. | Idea only |  |  |
