@@ -1,0 +1,67 @@
+{
+ "model": "llama3.3-70b",
+ "what": "presence_pass.py --mask-codes --mask-after (the token after each placeholder code masked too) on the 114 name-free Batman-study works at v2's main scale, strongest sentence at 30%, against v2's own after version. These are texts v2 had already read.",
+ "the_reading": {
+  "codes_and_the_token_after_each_code_masked": true,
+  "the_recorded_batman_texts": true,
+  "v2s_main_scale": true,
+  "tokens_as_in_v2s_study_pass": true,
+  "code_tokens_as_in_v2s_study_pass": true,
+  "a_token_after_a_code_in_every_text": true,
+  "model_libraries_and_gpu_of_the_exact_pipeline_check": true
+ },
+ "tokens": 93786,
+ "code_tokens": 18312,
+ "tokens_after_a_code": 9155,
+ "v2s_stored_after_presence": {
+  "file": "v2/acts/llama3.3-70b/anon_after_main_top1.u8.npy",
+  "here": false,
+  "so": "this reading is not compared with a file v2 stored: for this model none is here"
+ },
+ "v2s_after_version_made_again_on_this_machine": {
+  "by": "v2's study_pass.py and finalize_scale.to_shares at v2's main scale (not a file v2 stored)",
+  "sha256": {
+   "study_pass.py": "a83a5abe537e537294fb5d0030cb39d3355b0de00ad1637fe4cc0594932daa29",
+   "finalize_scale.py": "c221589422d4d7a533e6aefa4f04713ba8ac80fda32283d633243440b251d53c"
+  },
+  "that_run_against_v2s_stored_name_free_presence": {
+   "units_present_in_v2": 28582485,
+   "bits_that_differ": 0
+  },
+  "its_tokens_and_code_tokens_are_this_readings": true,
+  "units_present": 26380628,
+  "bits_that_differ": 0
+ },
+ "exact": true,
+ "v2s_own_count_of_its_after_file": {
+  "what": "share of cells (work by unit, every 97th unit) at or above 30%, as v2 recorded it for its stored after file (results/v2/passes.json)",
+  "in_v2": 0.050589895820002485,
+  "in_this_reading": 0.050589895820002485,
+  "cells": 5391630,
+  "present_in_this_reading": 272762,
+  "equal": true
+ },
+ "v2s_stored_name_free_presence_codes_masked_only": {
+  "units_present_in_v2": 28582485,
+  "units_present_in_this_reading": 26380628,
+  "lost_to_the_further_mask": 2201857,
+  "added": 0
+ },
+ "passed": true,
+ "presence_pass_sha256": {
+  "at_the_freeze": "ffa5cce7c61ee481bc0b1d14b2fac2608d2b7938e1493dc6efbbb41b27fd1416",
+  "of_this_reading": "5afb204017bf03521180e90edf0891bf5ef5943b5633378fa2872961ea41dba8"
+ },
+ "provenance": {
+  "repo": "unsloth/Llama-3.3-70B-Instruct",
+  "commit": null,
+  "dtype": "torch.bfloat16",
+  "torch": "2.8.0+cu128",
+  "transformers": "5.22.2",
+  "gpu": [
+   "NVIDIA B200"
+  ]
+ },
+ "commit": "2228cd1d0e74d27c17818614e7e3eec727b1b24d",
+ "checked_utc": "2026-11-09T01:06Z"
+}
