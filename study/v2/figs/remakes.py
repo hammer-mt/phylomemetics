@@ -67,8 +67,8 @@ KEY = "Recognised by the model?"
 KEY_NOT = "no: {n} families"
 KEY_REC = "yes: {n} families"
 LARGEST = "the {k} largest add {share} of the total;\n"   # {share}: their sums over the test's total, as a percentage
-COUNTS = "{positive} families above zero, {negative} below"
-COUNTS_SMALL = ";\nmost are too small to see"
+COUNTS = "{positive} families add more than 0.1,\n{negative} take away more than 0.1"   # sums under 0.1 in size are mostly rounding residue
+COUNTS_SMALL = ";\nmost of the rest are too small to see"
 # a caption for the paper, printed with the numbers of this run ({others}: the replication models)
 CAPTION = ("**Figure N.** The decision test on the {pairs} documented remake pairs asks whether a measure points to a "
            "remake's source beyond what a model of the words alone already says; a score (Z) of 0 means that it adds "
@@ -76,8 +76,8 @@ CAPTION = ("**Figure N.** The decision test on the {pairs} documented remake pai
            "the test in their place (the stand-ins) reach at most {bar}, which is the bar the units had to clear, "
            "{n_random} more made at random at most {random_max}, and {n_noise:,} draws of pure noise at most "
            "{noise_max}{embedding}. B: what each family of remakes (films linked by remake statements) adds to "
-           "{primary}'s score: {shown} of the {families} families add anything, {positive} above zero and {negative} "
-           "below, and the {k} largest add {share} of the total{left_out}; dark bars are the {n_not} families in which "
+           "{primary}'s score: {shown} of the {families} families have a sum that is not exactly zero, {positive} add more "
+           "than 0.1 and {negative} take away more than 0.1, and the {k} largest add {share} of the total{left_out}; dark bars are the {n_not} families in which "
            "the model recognises no pair, grey bars the {n_rec} in which it recognises at least one, and the largest "
            "are named by the remake that adds most.")
 CAPTION_OTHERS = " ({list})"
@@ -192,6 +192,7 @@ for e in a["entries_table"]:
 families = sorted((r for r in sums["rows"] if r["D"] != 0), key=lambda r: -r["D"])
 recognised = {r["family"]: any(e["recognised"] for e in by_family[r["family"]]) for r in families}
 positive, negative = sum(r["D"] > 0 for r in families), sum(r["D"] < 0 for r in families)
+big_positive, big_negative = sum(r["D"] > 0.1 for r in families), sum(r["D"] < -0.1 for r in families)   # what the figure states
 n_rec = sum(recognised.values())
 src = f'remakes_{PRIMARY}.json: analyses["{ANALYSIS}"]'
 print(f"  {src}.family_sums.rows.*.D: {len(families)} of {sums['families']} families with a non-zero sum, "
@@ -244,7 +245,7 @@ print("caption:", CAPTION.format(
     n_standins=len(standins), bar=num(BAR), n_random=len(random_z), random_max=num(random_z[-1]),
     n_noise=len(noise_z), noise_max=num(noise_z[-1]),
     embedding=CAPTION_EMBEDDING.format(z=num(emb)) if emb is not None else "", shown=len(families),
-    families=sums["families"], positive=positive, negative=negative, k=K, share=f"{share_largest:.0%}",
+    families=sums["families"], positive=big_positive, negative=big_negative, k=K, share=f"{share_largest:.0%}",
     left_out=CAPTION_LEFT_OUT.format(lo=num(z_left_out[0]), hi=num(z_left_out[-1])),
     n_not=len(families) - n_rec, n_rec=n_rec))
 
@@ -384,7 +385,7 @@ for k, (flag, text) in enumerate(((False, KEY_NOT.format(n=n - n_rec)), (True, K
     axb.text(KEY_X, KEY_Y, text, ha="left", va="center", transform=hung(9, -8 - k * LINE), **note)
 # how many families are on each side of zero, over the run of bars that cannot be seen
 small = sum(abs(d) < 0.01 * max(map(abs, D)) for d in D)  # bars under a hundredth of the largest
-axb.text(1.0, 1, LARGEST.format(k=K, share=f"{share_largest:.0%}") + COUNTS.format(positive=positive, negative=negative)
+axb.text(1.0, 1, LARGEST.format(k=K, share=f"{share_largest:.0%}") + COUNTS.format(positive=big_positive, negative=big_negative)
          + (COUNTS_SMALL if small > n / 2 else ""), ha="right", va="top", transform=hung(0, -4), **note)
 print(f"  panel B: {small} of the {n} bars are under a hundredth of the largest")
 

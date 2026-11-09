@@ -55,12 +55,60 @@
    "ended_utc": "2026-11-07T07:32+00:00",
    "hours": 0.04,
    "hours_times_rate": 0.09
+  },
+  {
+   "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+   "count": 1,
+   "dollars_per_hour": 2.49,
+   "started_utc": "2026-11-08T21:35+00:00",
+   "ended_utc": "2026-11-08T23:12+00:00",
+   "hours": 1.63,
+   "hours_times_rate": 4.05
+  },
+  {
+   "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+   "count": 1,
+   "dollars_per_hour": 2.49,
+   "started_utc": "2026-11-08T21:36+00:00",
+   "ended_utc": "2026-11-08T23:32+00:00",
+   "hours": 1.92,
+   "hours_times_rate": 4.78
+  },
+  {
+   "gpu": "NVIDIA B200",
+   "count": 1,
+   "dollars_per_hour": 7.99,
+   "started_utc": "2026-11-08T21:35+00:00",
+   "ended_utc": "2026-11-08T22:47+00:00",
+   "hours": 1.21,
+   "hours_times_rate": 9.66
+  },
+  {
+   "gpu": "NVIDIA B200",
+   "count": 1,
+   "dollars_per_hour": 7.99,
+   "started_utc": "2026-11-09T00:52+00:00",
+   "ended_utc": "2026-11-09T01:08+00:00",
+   "hours": 0.27,
+   "hours_times_rate": 2.15
+  },
+  {
+   "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+   "count": 1,
+   "dollars_per_hour": 2.49,
+   "started_utc": "2026-11-08T21:37+00:00",
+   "ended_utc": "2026-11-08T23:29+00:00",
+   "hours": 1.87,
+   "hours_times_rate": 4.66
   }
  ],
- "hours_times_rate_total": 74.5,
- "billed_total_dollars": 72.7,
- "billed_gpu_dollars": 72.03,
- "billed_disk_dollars": 0.68,
- "billing_read_utc": "2026-11-08T07:59+00:00",
- "all_machines_ended": true
+ "hours_times_rate_total": 99.8,
+ "billed_total_dollars": 107.14,
+ "billed_gpu_dollars": 106.12,
+ "billed_disk_dollars": 1.02,
+ "billing_read_utc": "2026-11-09T03:15+00:00",
+ "all_machines_ended": true,
+ "billed_before_the_two_further_corpora": 72.7,
+ "billed_for_the_two_further_corpora": 34.44,
+ "machines_not_in_the_list": "The machines of 8 November (18:01 to 18:44 and 20:00 to 20:38 UTC; RTX PRO 6000; the pipeline checks before the second plan was frozen, about 7 dollars) are not listed: their state files were reused for later machines. The billed total includes them."
 }

@@ -37,6 +37,11 @@ def main():
            "billed_gpu_dollars": round(bill.get("podGpuAmount", 0), 2), "billed_disk_dollars": round(bill.get("podDiskAmount", 0), 2),
            "billing_read_utc": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="minutes"),
            "all_machines_ended": all(p["ended_utc"] for p in pods)}
+    before = 72.7                                # billed when paper v2's own runs and its follow-up were finished (8 November, 07:59 UTC)
+    out["billed_before_the_two_further_corpora"] = before
+    out["billed_for_the_two_further_corpora"] = round(out["billed_total_dollars"] - before, 2)
+    out["machines_not_in_the_list"] = ("The machines of 8 November (18:01 to 18:44 and 20:00 to 20:38 UTC; RTX PRO 6000; the pipeline checks before the second plan was "
+                                       "frozen, about 7 dollars) are not listed: their state files were reused for later machines. The billed total includes them.")
     dst = HERE.parent.parent / "results" / "v2" / "gpu_cost.json"
     dst.write_text(json.dumps(out, indent=1) + "\n")
     print("wrote", dst.relative_to(HERE.parent.parent), "| billed", out["billed_total_dollars"], "| hours x rate", out["hours_times_rate_total"], "|", [(p["gpu"], p["hours"], p["dollars_per_hour"]) for p in pods])
