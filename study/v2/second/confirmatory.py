@@ -6,6 +6,11 @@ All for Qwen3-32B at the primary setting. Holmes: E1 (met or not; no p), E2, E3.
 Each p is read at 0.05; Holm-adjusted p values are given within each corpus and over the four tests that have a p.
 A test that is not evaluable or not calibrated contributes no p. The Holmes residual test is reported and is not in the
 family. A result below 0.05 whose Holm p within its corpus is 0.05 or more is called nominal.
+
+Beside the registered p of the remakes decision test the file gives its noise-calibrated p (PLAN Section 16, entry 3): the
+share of the 2,000 draws with pure noise in the units' place whose Z is at or above the units' Z
+(results/v2/second/remakes_null_size.json), and the same Holm adjustments with that p in place of the registered one.
+The registered reading is the first; the second enters no rule.
 """
 import json
 from pathlib import Path
@@ -42,6 +47,10 @@ def main():
           "remakes_decision": None if not_run else dec["slope"]["p"]}
     within = {**holm({k: v for k, v in ps.items() if k.startswith("holmes")}), **holm({k: v for k, v in ps.items() if k.startswith("remakes")})}
     overall = holm(ps)
+    zs = json.load(open(OUT / "remakes_null_size.json"))["by_columns"]["39 columns (registered)"]["Z_sorted"]
+    noise_p = (1 + sum(z >= dec["slope"]["Z"] for z in zs)) / (1 + len(zs))
+    ps_noise = dict(ps, remakes_decision=None if not_run else noise_p)
+    within_noise = {**holm({k: v for k, v in ps_noise.items() if k.startswith("holmes")}), **holm({k: v for k, v in ps_noise.items() if k.startswith("remakes")})}
     out = {
         "what": "The confirmatory tests of v2/second/PLAN.md Section 13, Qwen3-32B, primary setting. Made by v2/second/confirmatory.py.",
         "model": PRIMARY,
@@ -59,10 +68,17 @@ def main():
         },
         "p": ps, "holm_within_corpus": within, "holm_over_all_four": overall,
         "reading": {k: label(ps[k], within[k]) for k in ps},
+        "with_the_noise_calibrated_p_of_the_decision_test": {
+            "what": "the share of the pure-noise draws whose Z is at or above the units' Z, the observed value counted as one draw (PLAN Section 16, entry 3); "
+                    "reported beside the registered p, entering no rule",
+            "noise_draws": len(zs), "largest_noise_Z": max(zs), "noise_calibrated_p": noise_p,
+            "p": ps_noise, "holm_within_corpus": within_noise, "holm_over_all_four": holm(ps_noise),
+            "reading": {k: label(ps_noise[k], within_noise[k]) for k in ps_noise}},
         "sources": {f"holmes_{PRIMARY}.json": H.get("code", {}), f"remakes_{PRIMARY}.json": {"git_head": R.get("git_head")}},
     }
     json.dump(out, open(OUT / "confirmatory.json", "w"), indent=1)
     print(json.dumps({k: out[k] for k in ("p", "holm_within_corpus", "holm_over_all_four", "reading")}, indent=1))
+    print("with the noise-calibrated p:", json.dumps({k: out["with_the_noise_calibrated_p_of_the_decision_test"][k] for k in ("noise_calibrated_p", "holm_within_corpus", "holm_over_all_four")}))
     print("E1:", out["holmes"]["E1"]["verdict"], "| remakes decision:", dec["outcome"])
 
 

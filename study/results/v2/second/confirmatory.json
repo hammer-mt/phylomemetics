@@ -1,0 +1,113 @@
+{
+ "what": "The confirmatory tests of v2/second/PLAN.md Section 13, Qwen3-32B, primary setting. Made by v2/second/confirmatory.py.",
+ "model": "qwen3-32b",
+ "holmes": {
+  "E1": {
+   "verdict": "not met",
+   "openings_auc": 0.7303347062909905,
+   "openings_auc_below_0.70": false,
+   "not_confined_to_works_the_model_names": "confined to named works"
+  },
+  "E2": {
+   "state": "evaluable",
+   "statistic": "mean_over_sources",
+   "p": 1e-05
+  },
+  "E3": {
+   "p": 0.29927007299270075
+  },
+  "residual_test_reported_not_confirmatory": {
+   "p_larger_of_the_two_forms": 0.9613
+  }
+ },
+ "remakes": {
+  "heredity": {
+   "p": 0.0001,
+   "S": 0.01599475703113051,
+   "positive_control": "holds"
+  },
+  "decision": {
+   "outcome": "claim",
+   "p": 9.99990000099999e-06,
+   "Z": 3.454417612582645,
+   "conditions": {
+    "1 evaluable: the word model leaves at least 5 effective pairs open": true,
+    "2 calibrated: at most 10% of the stand-ins have p below 0.05": true,
+    "3 the p of the slope is below 0.05": true,
+    "4 the gain of the refitted model is positive": true,
+    "5 Z is above the Z of every stand-in": true,
+    "6 p is below 0.05 in at least 4 of the 8 planes": true,
+    "7 not confined to recognised pairs": true
+   },
+   "p_enters_the_family": true
+  }
+ },
+ "p": {
+  "holmes_E2": 1e-05,
+  "holmes_E3": 0.29927007299270075,
+  "remakes_heredity": 0.0001,
+  "remakes_decision": 9.99990000099999e-06
+ },
+ "holm_within_corpus": {
+  "holmes_E2": 2e-05,
+  "holmes_E3": 0.29927007299270075,
+  "remakes_heredity": 0.0001,
+  "remakes_decision": 1.999980000199998e-05
+ },
+ "holm_over_all_four": {
+  "holmes_E2": 3.999960000399996e-05,
+  "holmes_E3": 0.29927007299270075,
+  "remakes_heredity": 0.0002,
+  "remakes_decision": 3.999960000399996e-05
+ },
+ "reading": {
+  "holmes_E2": "below 0.05",
+  "holmes_E3": "not below 0.05",
+  "remakes_heredity": "below 0.05",
+  "remakes_decision": "below 0.05"
+ },
+ "with_the_noise_calibrated_p_of_the_decision_test": {
+  "what": "the share of the pure-noise draws whose Z is at or above the units' Z, the observed value counted as one draw (PLAN Section 16, entry 3); reported beside the registered p, entering no rule",
+  "noise_draws": 2000,
+  "largest_noise_Z": 3.3042,
+  "noise_calibrated_p": 0.0004997501249375312,
+  "p": {
+   "holmes_E2": 1e-05,
+   "holmes_E3": 0.29927007299270075,
+   "remakes_heredity": 0.0001,
+   "remakes_decision": 0.0004997501249375312
+  },
+  "holm_within_corpus": {
+   "holmes_E2": 2e-05,
+   "holmes_E3": 0.29927007299270075,
+   "remakes_heredity": 0.0002,
+   "remakes_decision": 0.0004997501249375312
+  },
+  "holm_over_all_four": {
+   "holmes_E2": 4e-05,
+   "holmes_E3": 0.29927007299270075,
+   "remakes_heredity": 0.00030000000000000003,
+   "remakes_decision": 0.0009995002498750624
+  },
+  "reading": {
+   "holmes_E2": "below 0.05",
+   "holmes_E3": "not below 0.05",
+   "remakes_heredity": "below 0.05",
+   "remakes_decision": "below 0.05"
+  }
+ },
+ "sources": {
+  "holmes_qwen3-32b.json": {
+   "git_commit": "fe20470386580cf4402fb152c1757e84bb6779e2",
+   "v2_second_clean": true,
+   "v2_second_changed_or_untracked": [],
+   "sha256": {
+    "lib.py": "41a9ddb1316edd2f0ea254e83a36011762d83e01c1ab707623a4661b846bfecc",
+    "holmes.py": "f48839603a62e22626a03cb9296171d15eca23fe2ec7bf2b2f2076164eea17f4"
+   }
+  },
+  "remakes_qwen3-32b.json": {
+   "git_head": "95b9d2f559981b61cba688f8d4e5da461ef6caaf"
+  }
+ }
+}
