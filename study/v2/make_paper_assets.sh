@@ -11,3 +11,8 @@ $PY v2/analysis/paper_tables.py
 for f in contrast canon genome identity heredity explanations ablation; do
   if [ -f v2/figs/$f.py ]; then $PY v2/figs/$f.py | tail -1; fi
 done
+# The two further corpora (v2/second/PLAN.md): the confirmatory tests, the counts, the tables, Figures 8 and 9.
+$PY v2/second/confirmatory.py | tail -1
+$PY v2/second/corpus_counts.py | tail -1
+$PY v2/second/paper_tables.py | tail -1
+for f in holmes remakes; do $PY v2/figs/$f.py | tail -1; done

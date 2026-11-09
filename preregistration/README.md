@@ -8,7 +8,7 @@ Mike decided on 2026-10-21 to keep the next experiment planned and come back to 
 
 The finished Batman study, whose corpus and results are this plan's DEV data, is in [`../study/`](../study/). The scripts here read those files from that folder.
 
-A second corpus for the Batman study's own questions (another franchise, or film remakes) was scouted on 2026-11-08; the notes are in [`second_corpus/`](second_corpus/). Mike chose both, and both were built that day from Wikipedia's own wording: the corpora, their frozen plan and their results are under `study/` (`study/v2/second/PLAN.md`). They are separate from the plan below, which is still not run.
+A second corpus for the Batman study's own questions (another franchise, or film remakes) was scouted on 2026-11-08; the notes are in [`second_corpus/`](second_corpus/). Mike chose both, and both were built that day from Wikipedia's own wording: the corpora, their frozen plan and their results are under `study/` (`study/v2/second/PLAN.md`). They were run on 8 and 9 November 2026 and are reported in the version 2 draft of the paper (its Sections 2.11, 3.11 and 3.12). They are separate from the plan below, which is still not run.
 
 ## What is planned
 

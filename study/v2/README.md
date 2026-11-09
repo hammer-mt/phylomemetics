@@ -42,6 +42,7 @@ v2 re-runs the Batman study the way Cammarata's "Neural networks are already cle
 | `run_units.sh`, `run_rest.sh`, `run_analysis.sh`, `run_ablation.sh`, `run_ablation_followup.sh` | The order of the steps for one model; the last is the follow-up ablation, which refuses uncommitted or unpushed code | laptop |
 | `heavy.sh` | Runs a memory-heavy analysis behind a lock, so that only one runs at a time on a small machine | laptop |
 | `figs/` | The figures of paper v2, drawn from the committed results | laptop |
+| `second/` | Two further corpora, Sherlock Holmes and film remakes: their own frozen plan, corpus builders, GPU steps, tests, audits and tables. See [`second/README.md`](second/README.md). Results in `../results/v2/second/` | both |
 
 Results are written to `../results/v2/`. Large arrays fetched from the GPU machine go to `acts/` and the corpora to `cache/`; neither is committed.
 

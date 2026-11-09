@@ -23,6 +23,7 @@ A v2 draft was started on 7 November 2026. It is not published.
 - Code and plan: `study/v2/` (`PLAN.md` is frozen; later changes are logged in its Section 18). Results: `study/results/v2/`.
 - Its byline is "Mike Taylor and Claude (Anthropic)". Do not put a model version in it.
 - Rebuild the tables and figures with `bash v2/make_paper_assets.sh` from `study/`, then the PDF with `paper/build_pdf.py paper/v2`.
+- Since 9 November 2026 the draft also reports two further corpora, Sherlock Holmes and film remakes. Their plan and code are in `study/v2/second/` (`PLAN.md` is frozen; later changes are logged in its Section 16), their data in `study/data/second/`, their results in `study/results/v2/second/`. The paper's Tables 10 to 13 come from `results/v2/second/paper_tables.md`; `make_paper_assets.sh` rebuilds it and Figures 8 and 9.
 
 ## Layout
 
