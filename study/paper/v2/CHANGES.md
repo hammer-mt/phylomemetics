@@ -68,3 +68,26 @@ New in version 2:
 - The reading that E1's failure was caused by the scoring rule.
 - The name-free "superhero core" as a finding about Batman.
 - The comparison of Batman's canon with random sets of ordinary films under a cap, which cannot fail. It is replaced by comparisons with genre sets and other film series.
+
+## Draft of 9 November 2026: two more corpora
+
+The draft of 8 November reported Batman alone. This draft adds two corpora, the Sherlock Holmes stories with their screen versions and film remakes, analysed under a second plan (`../../v2/second/PLAN.md`) that was committed before any model read them as study works. No result of the Batman sections changed.
+
+**What was added**
+
+- Section 2.11: the two corpora, the tests, and how the remakes test was calibrated with no model.
+- Section 3.11 (Sherlock Holmes) and Section 3.12 (film remakes), with Tables 10 to 13 and Figures 8 and 9.
+- The abstract, the introduction, Sections 3.1 and 4.1 to 4.5 and the closing notes now say what the two corpora add and what qualifies it.
+
+**What the two corpora show**
+
+| Question | Batman (above) | Two more corpora | Verdict |
+| --- | --- | --- | --- |
+| Heredity: do adaptations carry their source's units? | Supported (p = 0.0016) | Holmes (Qwen3-32B): 3.3% of stories rank above the documented story, against 44% by chance (p = 0.00001). Remakes (Qwen3-32B, the 120 pairs that are not copied): 1.6% of candidates rank above the source, against 50% (p = 0.0001, the smallest the null can give) | Supported on all three corpora; words find the sources too (at least as well on Batman and the remakes, about as well on Holmes) |
+| Identity: without names, does the canon find the franchise? | Falsified (AUC 0.36) | Holmes, against detective films of the same era: 0.77 in Qwen3-32B, short of the bar of 0.80; 0.90 in Llama 3.3 70B, which meets all six clauses of the test. In each model the score follows the works the model can name | Not established; recognition is not ruled out |
+| Selection | Not detected (27% power) | Holmes: rho = 0.14, p = 0.30 (about 32% power) | Not detected; the test cannot settle it |
+| Do units add to words? | No (p = 0.69, nine adaptations) | Remakes: where a model built from 18 word measures is unsure of the source, the units of Qwen3-32B lean towards it (Z = 3.45; noise-calibrated p = 0.0005), under all seven conditions set in advance | Supported on the remakes, with qualifications |
+
+**What qualifies the remakes result** (Section 3.12): the test's p values are too small, by a factor of two at 0.05 and by more below it, and its calibration condition was met at the margin; the result rests on about 21 open pairs and a few families; the test controlled for words only, and the year of release would have passed it in the units' place; a word measure built afterwards without names scores as high in the units' place, and with such measures added the units keep about half of their gain; it is larger for sources whose summaries were in the reference corpus; the two 8B models agree on the same pairs, and Llama 3.3 70B shows it only for films it recognises; adding the units puts the documented source first for one more pair (206 of the 220 against 205). Three audits made after the result was seen are reported as exploratory.
+
+**Smaller changes**: Section 2.10 gives the plan's log as thirty-five entries; the GPU cost is updated; the date of the draft.
