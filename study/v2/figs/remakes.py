@@ -43,7 +43,7 @@ from matplotlib.ticker import MultipleLocator  # noqa: E402
 from matplotlib.transforms import offset_copy  # noqa: E402
 
 # the title is chosen from the results (see `headline`); {k} and {n} count models
-TITLE_ALL = "On remakes, the units clear the bar set by words alone"
+TITLE_ALL = "On remakes, the units clear the bar that was set in advance"
 TITLE_SOME = "On remakes, the units of {k} of the {n} models clear the bar set by words alone"
 TITLE_NOT = "On remakes, the primary model's units do not clear the bar set by words alone"
 # {pairs} and {primary} are filled in from the results
@@ -51,7 +51,7 @@ SUBTITLE = ("Decision test on {pairs} remake pairs: does a measure point to the 
             "the word model says?\nA: the score of everything put through the test. "
             "B: what each family of remakes adds to {primary}'s score.")
 PANEL_A = "The test's score: units against words and noise"
-PANEL_B = "Where {primary}'s score comes from"
+PANEL_B = "Where {primary}'s result comes from"
 GROUP_UNITS = "The units of"
 GROUP_PLACE = "In the units' place"
 BAR_LABEL = "the bar: the largest\nstand-in, {z}"
@@ -59,16 +59,17 @@ X_LABEL_A = "Score on the decision test (Z)\n0 = adds nothing to the word model"
 ROW_EMBEDDING = "a sentence\nembedding"
 ROW_STANDINS = "{n} word-only\nstand-ins"
 ROW_RANDOM = "{n} random\nword measures"
+ROW_RIVALS = "{n} word measures\nbuilt afterwards"   # the audit made after the result was seen (results/v2/second/audit/word_rivals.json)
 ROW_NOISE = "{n:,} draws\nof pure noise"
 UP_TO = "up to {z}"
-Y_LABEL_B = "What the family adds to the test's total"
+Y_LABEL_B = "What the family adds to the sum behind Z"
 X_LABEL_B = "{shown} of {families} families of remakes, largest\nfirst; the rest add exactly nothing"
 KEY = "Recognised by the model?"
 KEY_NOT = "no: {n} families"
 KEY_REC = "yes: {n} families"
-LARGEST = "the {k} largest add {share} of the total;\n"   # {share}: their sums over the test's total, as a percentage
+LARGEST = "the {k} largest add {share} of the sum;\n"   # {share}: their sums over the test's total, as a percentage
 COUNTS = "{positive} families add more than 0.1,\n{negative} take away more than 0.1"   # sums under 0.1 in size are mostly rounding residue
-COUNTS_SMALL = ";\nmost of the rest are too small to see"
+COUNTS_SMALL = ""   # a fourth line ran into the bars
 # a caption for the paper, printed with the numbers of this run ({others}: the replication models)
 CAPTION = ("**Figure N.** The decision test on the {pairs} documented remake pairs asks whether a measure points to a "
            "remake's source beyond what a model of the words alone already says; a score (Z) of 0 means that it adds "
@@ -163,6 +164,12 @@ print(f"  {src}.standins.rows.*.Z: {len(standins)} stand-ins, from {standins[0]:
 assert len(standins) == cal["standins"]["summary"]["n"] and standins[-1] == BAR
 generators = cal["random_families_of_stand_ins"]["generators"]
 random_z = sorted(z for g in generators.values() for z in g["Z"])
+# word-only measures a reviewer built after the result was seen, put through the test in the units' place (the registered
+# embedding, which that audit repeats as a check, is left out: it has its own row)
+_audit = RESULTS / "audit" / "word_rivals.json"
+rivals_z = sorted(r["Z"] for r in json.loads(_audit.read_text())["table_in_the_units_place"] if r.get("code") not in (None, "E0")) if _audit.exists() else []   # its two check rows (a registered stand-in and the registered embedding) are left out
+if rivals_z:
+    print(f"  audit/word_rivals.json table_in_the_units_place: {len(rivals_z)} word measures built afterwards, from {rivals_z[0]:.4f} to {rivals_z[-1]:.4f}")
 print(f"  {src}.random_families_of_stand_ins.generators.*.Z: {len(random_z)} random word-only measures from "
       f"{len(generators)} generators, from {random_z[0]:.4f} to {random_z[-1]:.4f}")
 assert len(random_z) == cal["random_families_of_stand_ins"]["all"]["draws"]
@@ -262,7 +269,7 @@ ys = [PAD + k * PITCH for k in range(len(runs))]
 y_group = ys[-1] + GROUP
 y = y_group - 0.04
 rows_y = {}
-for key in (["embedding"] if emb is not None else []) + ["standins", "random"]:
+for key in (["embedding"] if emb is not None else []) + ["standins", "random"] + (["rivals"] if rivals_z else []):
     y += ROW
     rows_y[key] = y
 hist_top = y + 0.24
@@ -277,7 +284,7 @@ head = dict(va="baseline", fontsize=FS, color=style.INK_2, linespacing=1.15)
 Y_HEAD = -0.07
 
 # ---- A: the units against everything that has no access to them ----
-drawn = noise_z + standins + random_z + list(z_units.values()) + ([emb] if emb is not None else [])
+drawn = noise_z + standins + random_z + rivals_z + list(z_units.values()) + ([emb] if emb is not None else [])
 X0, X1 = min(drawn) - 0.4, max(drawn) + 0.4
 axa.set_xlim(X0, X1)
 axa.set_ylim(ax_h, 0)
@@ -328,7 +335,7 @@ if emb is not None:  # a comparator, not a study model: a neutral grey diamond
     axa.text(X_NAME, y, ROW_EMBEDDING, **row_label)
     axa.text(X_VALUE, y, num(emb), fontsize=FS, color=style.INK_3, **value)
 for key, zs, label, colour, lw in (("standins", standins, ROW_STANDINS, style.INK_3, 0.7),
-                                   ("random", random_z, ROW_RANDOM, GREY, 0.5)):
+                                   ("random", random_z, ROW_RANDOM, GREY, 0.5)) + ((("rivals", rivals_z, ROW_RIVALS, style.INK_2, 0.9),) if rivals_z else ()):
     y = rows_y[key]
     axa.vlines(zs, y - TICK, y + TICK, color=colour, lw=lw, zorder=2)
     axa.text(X_NAME, y, label.format(n=len(zs)), **row_label)

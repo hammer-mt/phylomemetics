@@ -258,8 +258,8 @@ for i, (group, label, marker, face, edge, whole, opening, follow, remark) in enu
     for cell, yy, ms, mew, x_text, fs, ink in ((whole, y, size, 1.3, X_WHOLE, 7.5, style.INK),
                                                (opening, y + DROP, 0.6 * size, 1.0, X_OPENING, FS, style.INK_3)):
         axa.plot(cell["auc"], yy, marker=marker, ms=ms, mfc=face, mec=edge, mew=mew, zorder=4, clip_on=False)
-        # two decimals, as in the paper's tables
-        axa.text(x_text, y, f"{cell['auc']:.2f}", ha="right", va="center", fontsize=fs, color=ink)
+        # two decimals, as in the paper's tables; one more where two would print a value as a level it is under (0.699)
+        axa.text(x_text, y, shown(cell["auc"]) if cell is whole else f"{cell['auc']:.2f}", ha="right", va="center", fontsize=fs, color=ink)
     if follow:  # the follow-up reading of the same model, on its own short row
         yf = y + SUB
         axa.plot(follow["ci95"], [yf, yf], color=style.INK_3, lw=0.7, zorder=3, solid_capstyle="butt")
