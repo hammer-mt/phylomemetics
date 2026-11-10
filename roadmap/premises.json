@@ -3,7 +3,7 @@
   "id": "P1",
   "title": "A meme can be measured by which neurons fire",
   "claim": "The sources are Cammarata's essay 'Neural networks are already clean' (Goodfire, October 2026) and its technical companion, Tigges et al., 'Neurons as an Interpretable Basis' (Goodfire, 10 November 2026). The essay says most neurons in modern language models have one main job. The paper says most have one role or a few at strong activation. If so, a neuron is a ready-made unit, and a meme is whatever makes it fire.",
-  "verdict": "Holds as a cheap, countable instrument. Not shown as the unit of culture. The essay's 90% is preliminary and self-graded. The companion paper's own figure is 69% of neuron poles with one job or one dominant job at strong activation, grouped by an LLM judge. Both are for models four times larger than the ones used here. The paper tests no cheap rival and no rewording, and the project has never steered or switched off a neuron.",
+  "verdict": "Holds as a cheap, countable instrument. Not shown as the unit of culture. The essay's 90% is preliminary and self-graded. The companion paper's own figure is 69% of neuron poles with one job or one dominant job at strong activation, grouped by an LLM judge. Both are for models four times larger than the ones used here. The paper tests no cheap rival and no rewording, and the project has never steered or switched off a neuron. The field's survey of November 2026 still treats learned features, not neurons, as the default unit, while granting that superposition is unproven in large models and that MLP neurons are a privileged basis.",
   "rungs": [
    {
     "name": "The reading is countable and repeatable",
@@ -33,12 +33,12 @@
    {
     "name": "Turning the neuron up writes the meme",
     "status": "unknown",
-    "text": "Never tested here. Goodfire's companion paper steers one neuron and reports no numbers: raising a unit that fires on self-questioning made the model settle on an answer sooner. Elsewhere, single-neuron steering gives a clean, consistent effect for a small minority of neurons (130 of 294,912 in one 2026 census of a small Qwen), and the neuron that reads a concept is often not the one that writes it."
+    "text": "Never tested here. Goodfire's companion paper steers one neuron and reports no numbers: raising a unit that fires on self-questioning made the model settle on an answer sooner. Elsewhere, single-neuron steering gives a clean, consistent effect for a small minority of neurons (130 of 294,912 in one 2026 census of a small Qwen), and the neuron that reads a concept is often not the one that writes it. The 2026 survey makes this the test of a label: a unit stands for a concept only if changing it shifts the output, measured against random units of matched size."
    },
    {
     "name": "Neurons list every meme a model knows",
     "status": "weak",
-    "text": "Rejected by all sides, Cammarata and the companion paper included: 'we do not see a perfect one-to-one mapping of meaning to neurons'. Models hold more facts and features than they have neurons. A new meme the model never learned has no neuron at all."
+    "text": "Rejected by all sides, Cammarata and the companion paper included: 'we do not see a perfect one-to-one mapping of meaning to neurons'. Models are thought to hold more facts and features than they have neurons, though the 2026 survey calls that a hypothesis for large models. A new meme the model never learned has no neuron at all."
    }
   ]
  },
@@ -46,17 +46,17 @@
   "id": "P2",
   "title": "The measurement carries over between models",
   "claim": "The hope is that different models converge on the same neurons, so a meme measured in one can be mapped to another. The paper cites three results for this: universal neurons in GPT-2, the platonic representation hypothesis, and unpaired translation between embedding spaces.",
-  "verdict": "True for coarse geometry, partly true for directions with a learned map, mostly false for individual neurons. The three cited papers support only the weakest reading, and the first is evidence against. P1 and P2 also pull against each other: the units that match best across models are the ones a single word reproduces.",
+  "verdict": "True for coarse geometry, partly true for directions with a learned map, mostly false for individual neurons. The three cited papers support only the weakest reading, and the first is evidence against. P1 and P2 also pull against each other: the units that match best across models are the ones a single word reproduces. The field's survey of November 2026 draws the same line: shared algorithms are the supported kind of convergence, shared representations the less supported kind.",
   "rungs": [
    {
     "name": "Two models agree on which texts are alike",
     "status": "solid",
-    "text": "Qwen and Llama distance matrices correlate at 0.98. But random neurons give 0.90 to 0.93 and two word methods agree at 0.92. Real, cheap, and mostly a fact about the texts. In the literature, local neighbourhoods agree; one shared global geometry is contested by two 2026 papers."
+    "text": "Qwen and Llama distance matrices correlate at 0.98. But random neurons give 0.90 to 0.93 and two word methods agree at 0.92. Real, cheap, and mostly a fact about the texts. In the literature, local neighbourhoods agree; one shared global geometry is contested by two 2026 papers. The 2026 survey calls evidence of this kind fragile."
    },
    {
     "name": "A direction can be mapped with paired text",
     "status": "partial",
-    "text": "In one unreviewed study of 7B models, about half of matched feature pairs pass a correlation of 0.6. A joint dictionary has already been trained on this project's exact pair, Qwen3-8B and Llama-3.1-8B. Paired text is free here. The project has not tried any learned map."
+    "text": "In one unreviewed study of 7B models, about half of matched feature pairs pass a correlation of 0.6. A joint dictionary has already been trained on this project's exact pair, Qwen3-8B and Llama-3.1-8B. Paired text is free here. The project has not tried any learned map. The 2026 survey warns that joint dictionaries can report a feature as unique to one model when both have it."
    },
    {
     "name": "The same individual neurons recur",

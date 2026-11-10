@@ -50,9 +50,14 @@ A child differs from its parent by only a few plot changes, so at heavy rewordin
 
 Changed: eight tales with smaller trees so tales can be resampled (was two sealed tales); planted changes are plot events, not nouns that survive paraphrase; random writer per step; licence CC BY-SA. Remains: model-written text; six sealed tales is few; prior work not searched (search budget spent).
 
+## Amendment, 10 November 2026
+
+From the field survey (arXiv:2611.08438): here descent passes through the writer's context window. The survey's attribution methods concern influence absorbed in training; it gives no accuracy figure for them, and says exact-span matching struggles with composed text. Add the longest shared word span as a named rival, and state that a pass shows copying from a visible source only. Influence that arrives through training needs a test with randomly assigned training sets.
+
 ## Sources
 
 - Roos and Heikkilä 2009
 - Spencer et al. 2004
 - Acerbi and Stubbersfield 2023
 - Hagedorn and Darányi 2022 (Folktexts, Zenodo 6575263)
+- Barez, Wu et al. 2026, Understanding AI from the Inside (arXiv:2611.08438)

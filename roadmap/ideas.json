@@ -62,7 +62,7 @@
    "col": 0,
    "row": 0,
    "blurb": "Premise P1. Does a firing neuron measure a meme? Reliability and validity of the unit itself.",
-   "state": "Four small tests: the canon count held, the other three were mixed. No unit has been shown to follow an idea across rewording at scale, and there is no human check and no steering. Everything else rests on this."
+   "state": "Four small tests: the canon count held, the other three were mixed. No unit has been shown to follow an idea across rewording at scale, and there is no human check and no steering. Everything else rests on this. Goodfire's companion paper (10 November) gives the range to read and the label tests to copy, and runs no cheap rival."
   },
   {
    "id": "universality",
@@ -71,7 +71,7 @@
    "col": 1,
    "row": 0,
    "blurb": "Premise P2. Do different models, languages and media give the same reading?",
-   "state": "Twins across models turned out to be mostly shared word detectors. No learned map, no held-out text and no second language has been tried."
+   "state": "Twins across models turned out to be mostly shared word detectors. No learned map, no held-out text and no second language has been tried. Goodfire's companion paper maps nothing between models, and a 2026 study finds shared neurons thin out as models grow."
   },
   {
    "id": "atlas",
@@ -80,7 +80,7 @@
    "col": 2,
    "row": 0,
    "blurb": "A catalogue of the units: a reference list, a periodic table of memes, and the mechanism behind them.",
-   "state": "Batman's name-free core turned out to be the textbook definition of a superhero. No catalogue of validated units exists yet."
+   "state": "Batman's name-free core turned out to be the textbook definition of a superhero. No catalogue of validated units exists yet for this project's models. Goodfire's public atlas describes 3,000 neuron poles of a different model."
   },
   {
    "id": "memetics",
@@ -143,7 +143,7 @@
    "col": 1,
    "row": 2,
    "blurb": "Turning a meme up or down in a text, and breeding better variants.",
-   "state": "Nothing run. Steering is the missing causal test, and plain prompting is the rival to beat."
+   "state": "Nothing run. Steering is the missing causal test, and plain prompting is the rival to beat. Goodfire's agents raised neuron firing by rewriting text alone; whether the idea came with it is untested."
   },
   {
    "id": "conjectures",
@@ -787,12 +787,13 @@
     "IRSI 2026 retest note",
     "Paulo and Belrose 2025 (arXiv:2507.08473)",
     "Heap et al. 2025 (arXiv:2501.17727)",
-    "Tigges et al. 2026, Neurons as an Interpretable Basis"
+    "Tigges et al. 2026, Neurons as an Interpretable Basis",
+    "Barez, Wu et al. 2026, Understanding AI from the Inside (arXiv:2611.08438)"
    ],
    "region": "instrument",
    "status": "registered",
    "ranking": "3 of 3 judges thought the area reviewer rated this too high.",
-   "update": "Build triplets separately from three bands of each unit's own range (97th to 99th percentile, 99th to 99.9th, above), not only from the 20 strongest sentences. In the companion paper, random directions inside an expert kept one readable main theme at every band; neurons differed by narrowing as firing strengthened. Add its label-free test: keep each token's top 8 neurons, or 8 random directions, per layer and compare how much of the layer's effect on the output survives."
+   "update": "Build triplets separately from three bands of each unit's own range (97th to 99th percentile, 99th to 99.9th, above), not only from the 20 strongest sentences. In the companion paper, random directions inside an expert kept one readable main theme at every band; neurons differed by narrowing as firing strengthened. Add its label-free test: keep each token's top 8 neurons, or 8 random directions, per layer and compare how much of the layer's effect on the output survives. From the field survey (arXiv:2611.08438): its protocol fixes principal components beside random directions as baselines, and it lists a coherent label that the model does not use as a classic pitfall. Add 300 principal components of each MLP hidden space as a further unit type. Use two graders from different model families and report their agreement. Report the result as plausibility only."
   },
   {
    "id": "IN-23",
@@ -843,12 +844,13 @@
     "Arora et al. 2026",
     "He et al. 2024 (Llama Scope)",
     "Wu et al. 2025 (AxBench)",
-    "Tigges et al. 2026, Neurons as an Interpretable Basis"
+    "Tigges et al. 2026, Neurons as an Interpretable Basis",
+    "Barez, Wu et al. 2026, Understanding AI from the Inside (arXiv:2611.08438)"
    ],
    "region": "instrument",
    "status": "registered",
    "ranking": "In the top twelve of 1 of 3 judges (what decides the premises fastest: rank 5). Decides whether the unit should be one neuron, a small set or a direction before the other registered designs freeze the wrong one, and its cheap arms need only IN-21's sentences.",
-   "update": "Add a unit type the companion paper points to: sets of 2 to 8 poles that must all be in their own strong range in the same sentence (an AND rule), beside the planned averages. The paper suggests that ideas with no neuron of their own are carried by neurons that fire together and mean the overlap of their meanings. For each winning dictionary feature, report whether it copies one neuron."
+   "update": "Add a unit type the companion paper points to: sets of 2 to 8 poles that must all be in their own strong range in the same sentence (an AND rule), beside the planned averages. The paper suggests that ideas with no neuron of their own are carried by neurons that fire together and mean the overlap of their meanings. For each winning dictionary feature, report whether it copies one neuron. From the field survey (arXiv:2611.08438): it reports that often fewer than half of a sparse autoencoder's features recur across training seeds, that features split as the dictionary grows, and that a general feature can stay silent where a more specific one fires. Score the feature arm at two dictionary sizes, and for autoencoders and transcoders separately. Count a feature win only if it holds in all four, and call it one decomposition among several."
   },
   {
    "id": "IN-25",
@@ -1895,10 +1897,12 @@
     "Roos and Heikkilä 2009",
     "Spencer et al. 2004",
     "Acerbi and Stubbersfield 2023",
-    "Hagedorn and Darányi 2022 (Folktexts, Zenodo 6575263)"
+    "Hagedorn and Darányi 2022 (Folktexts, Zenodo 6575263)",
+    "Barez, Wu et al. 2026, Understanding AI from the Inside (arXiv:2611.08438)"
    ],
    "region": "lineage",
-   "status": "registered"
+   "status": "registered",
+   "update": "From the field survey (arXiv:2611.08438): here descent passes through the writer's context window. The survey's attribution methods concern influence absorbed in training; it gives no accuracy figure for them, and says exact-span matching struggles with composed text. Add the longest shared word span as a named rival, and state that a pass shows copying from a visible source only. Influence that arrives through training needs a test with randomly assigned training sets."
   },
   {
    "id": "LI-22",
@@ -1972,11 +1976,13 @@
     "Roos and Heikkilä 2009",
     "Wikidata query service counts, 2026-11-08",
     "Greenhill, Currie and Gray 2009",
-    "Temkin and Eldredge 2007"
+    "Temkin and Eldredge 2007",
+    "Barez, Wu et al. 2026, Understanding AI from the Inside (arXiv:2611.08438)"
    ],
    "region": "lineage",
    "status": "registered",
-   "overlaps": "Asks nearly the same question as RX-27, which the judges would run instead."
+   "overlaps": "Asks nearly the same question as RX-27, which the judges would run instead.",
+   "update": "From the field survey (arXiv:2611.08438): the learned-feature arm decides whether sparseness or neurons do the work here, so it must be robust. The survey reports that often fewer than half of dictionary features recur across training seeds, and that the feature set changes with dictionary size. Run that arm at two dictionary sizes and report both. A loss by one dictionary is not a loss by learned features."
   },
   {
    "id": "LI-25",
@@ -3230,12 +3236,13 @@
     "Cammarata 2026, Neural networks are already clean",
     "Liu 2026, arXiv:2606.19831",
     "Arad, Mueller, Belinkov 2025, arXiv:2505.20063",
-    "Tigges et al. 2026, Neurons as an Interpretable Basis"
+    "Tigges et al. 2026, Neurons as an Interpretable Basis",
+    "Barez, Wu et al. 2026, Understanding AI from the Inside (arXiv:2611.08438)"
    ],
    "region": "engineering",
    "status": "registered",
    "ranking": "In the top twelve of 3 of 3 judges (what decides the premises fastest: rank 4; speed and cost: rank 2; upside: rank 1). Steering is the test the source essay treats as decisive and the project has never run; in two days it separates units that carry an idea from units that only emit their words, though a blanket fail may be a dose problem in 4-bit models and not a refutation.",
-   "update": "Set doses as multiples of the unit's own strong-firing level on general text. Add the companion paper's test that needs no steering: a model writes sentences from the label alone with the usual words banned, and the unit must reach its strong range more often than on sentences written from other labels. Score steered text for any consistent effect, not only the labelled one: in the paper's one steering example, raising a unit that fires on self-questioning made the model question itself less."
+   "update": "Set doses as multiples of the unit's own strong-firing level on general text. Add the companion paper's test that needs no steering: a model writes sentences from the label alone with the usual words banned, and the unit must reach its strong range more often than on sentences written from other labels. Score steered text for any consistent effect, not only the labelled one: in the paper's one steering example, raising a unit that fires on self-questioning made the model question itself less. From the field survey (arXiv:2611.08438): the steering it calls reliable adds a direction to the residual stream. It reports no steering of single neurons, and says steering vectors often degrade away from the text they were tuned on. Add a difference-of-means direction per label as a positive control, score ten held-out openings from a second genre, and report how often each push raises the other 30 labels. A pass shows influence, not mechanism."
   },
   {
    "id": "EN-22",
@@ -3257,10 +3264,12 @@
     "Wu et al. 2025, AxBench, arXiv:2501.17148",
     "Chen et al. 2025, Persona vectors, arXiv:2507.21509",
     "He et al. 2024, Llama Scope, arXiv:2410.20526",
-    "Bamman, O'Connor, Smith 2013, CMU Movie Summary Corpus"
+    "Bamman, O'Connor, Smith 2013, CMU Movie Summary Corpus",
+    "Barez, Wu et al. 2026, Understanding AI from the Inside (arXiv:2611.08438)"
    ],
    "region": "engineering",
-   "status": "registered"
+   "status": "registered",
+   "update": "From the field survey (arXiv:2611.08438): its sources agree that prompting often beats handles inside the model, so the prediction stands. It adds that steering vectors often degrade on related but different text, and fail without any error. Score every handle at three doses and on 40 extra held-out stories from a second source such as folktales, and report B-down, story-kept and fluency separately. A win on film plots alone is not general."
   },
   {
    "id": "EN-23",
@@ -3282,11 +3291,13 @@
     "Arad, Mueller, Belinkov 2025, arXiv:2505.20063",
     "Kran Research 2026, Evil Qwen replication (blog.kran.ai/evil-qwen)",
     "HedwigAI 2026, Qwen personality neurons",
-    "Liu 2026, arXiv:2606.19831"
+    "Liu 2026, arXiv:2606.19831",
+    "Barez, Wu et al. 2026, Understanding AI from the Inside (arXiv:2611.08438)"
    ],
    "region": "engineering",
    "status": "registered",
-   "ranking": "In the top twelve of 1 of 3 judges (upside: rank 7). It settles whether the units that detect a meme are the ones that write it, which decides if the study's units can ever be edit handles or are only gauges."
+   "ranking": "In the top twelve of 1 of 3 judges (upside: rank 7). It settles whether the units that detect a meme are the ones that write it, which decides if the study's units can ever be edit handles or are only gauges.",
+   "update": "From the field survey (arXiv:2611.08438): its first evaluation dimension asks whether a method's scores agree with measured effects of intervening. Report, over all screened units per meme, the rank correlation between detection score and steering effect, with random units as the floor. This avoids the built-in advantage of writers chosen by pushing. The survey reports no finding either way on whether reading units write."
   },
   {
    "id": "EN-24",
@@ -3333,10 +3344,12 @@
     "Matias et al. 2021, Upworthy Research Archive, doi:10.1038/s41597-021-00934-7",
     "Robertson et al. 2023, Negativity drives online news consumption",
     "Ye, Yoganarasimhan, Zheng 2025, LOLA, arXiv:2406.02611",
-    "El and Zou 2025, Moloch's Bargain, arXiv:2510.06105"
+    "El and Zou 2025, Moloch's Bargain, arXiv:2510.06105",
+    "Barez, Wu et al. 2026, Understanding AI from the Inside (arXiv:2611.08438)"
    ],
    "region": "engineering",
-   "status": "registered"
+   "status": "registered",
+   "update": "From the field survey (arXiv:2611.08438): the activation monitors it lists are linear probes and alerts on learned features; it names no monitor built on single neurons, and warns that monitors miss inputs their features do not track. Add a fourth brake: a linear probe on the residual stream, fitted on the unit brake's data. If the probe holds and the units do not, the failure belongs to the neuron basis."
   },
   {
    "id": "EN-26",
@@ -3358,10 +3371,12 @@
     "Takehi, Teoh, Zhang, Khattab 2026, Sparks of weight-space programming",
     "Arditi et al. 2024, arXiv:2406.11717",
     "Thaker et al. 2024, Guardrail baselines for unlearning, arXiv:2403.03329",
-    "Hase et al. 2023, arXiv:2301.04213"
+    "Hase et al. 2023, arXiv:2301.04213",
+    "Barez, Wu et al. 2026, Understanding AI from the Inside (arXiv:2611.08438)"
    ],
    "region": "engineering",
-   "status": "registered"
+   "status": "registered",
+   "update": "From the field survey (arXiv:2611.08438): it calls pruning concept neurons and fine-tuning on negative examples 'often brittle': the concept is suppressed, not removed, and can be relearned or reached through other prompts with no error signal. Add two checks after the edit: 100 held-out prompts that reach the motif indirectly, and a short fine-tune on 50 motif stories, counting steps until the motif rate is within 5 points of the unedited model's."
   },
   {
    "id": "EN-27",
@@ -3384,11 +3399,12 @@
     "Cammarata 2026, Neural networks are already clean",
     "Arditi et al. 2024, arXiv:2406.11717",
     "Arad, Mueller, Belinkov 2025, arXiv:2505.20063",
-    "Tigges et al. 2026, Neurons as an Interpretable Basis"
+    "Tigges et al. 2026, Neurons as an Interpretable Basis",
+    "Barez, Wu et al. 2026, Understanding AI from the Inside (arXiv:2611.08438)"
    ],
    "region": "engineering",
    "status": "registered",
-   "update": "Add arms of 100 and 500 units ranked by their effect on the answer, since the companion paper traces half of the push toward one name to 155 neurons. Silence units only where they are in their own strong range, and report the paper's damage measure (the change in next-word predictions over the firing token and the next 16) beside accuracy."
+   "update": "Add arms of 100 and 500 units ranked by their effect on the answer, since the companion paper traces half of the push toward one name to 155 neurons. Silence units only where they are in their own strong range, and report the paper's damage measure (the change in next-word predictions over the firing token and the next 16) beside accuracy. From the field survey (arXiv:2611.08438): it lists a swap test beside the silencing test, and warns that unchanged behaviour after silencing does not show a unit is unused. Add an arm: copy the 10 units' activations from the passage with the meme into its twin without, and measure the rise in 'yes' answers, against matched random units and a difference-of-means direction."
   },
   {
    "id": "EN-S1",
@@ -4450,6 +4466,51 @@
    "title": "Copied layers: a census of duplicate neurons",
    "question": "Do the study's models contain neurons that are copies of the neuron at the same index a fixed number of layers away, and how much do such copies inflate unit counts and twin rates inside the Qwen family?",
    "note": "From Goodfire's companion paper (10 November 2026). The paper's authors suspect Qwen3-32B was built by copying layers of Qwen3-14B. If so, some agreement inside a model family is inheritance, not convergence. Weights only, under a day. Control: different-index pairs at the same layer gap, and the same census in Llama 3.1 8B."
+  },
+  {
+   "id": "LI-S14",
+   "region": "lineage",
+   "status": "seed",
+   "priority": 0,
+   "title": "Influence absorbed in training, not shown in the prompt",
+   "question": "When a small writer model is fine-tuned on a randomly assigned subset of obscure tales and then writes stories from neutral prompts, can any reader name which tales it was trained on?",
+   "note": "From the field survey of November 2026 (arXiv:2611.08438). In every lineage design the source sits in the writer's context window. Here it reaches the output only through the weights, which is how real writers absorb influence. Rival to beat: the longest exact span shared with each tale, BM25, sentence embeddings, and an LLM reader given the output and the candidate tales. Medium to large: about thirty small fine-tunes."
+  },
+  {
+   "id": "IN-S18",
+   "region": "instrument",
+   "status": "seed",
+   "priority": 0,
+   "title": "Does a label help a person predict a unit?",
+   "question": "Shown a unit's label, can people say which of two word-matched sentences fires the unit better than people shown only the unit's ten top words, or nothing?",
+   "note": "From the field survey of November 2026 (arXiv:2611.08438). The survey's human test is whether an explanation helps a person predict held-out behaviour, against no explanation, with agreement between raters. No person has ever predicted a unit of this study from its label. Rival to beat: the unit's ten most frequent top-example words given in place of the label."
+  },
+  {
+   "id": "IN-S19",
+   "region": "instrument",
+   "status": "seed",
+   "priority": 0,
+   "title": "A meme reader built from its definition alone",
+   "question": "Does a direction built inside the model from a motif's written definition, with no labelled passages, detect the motif on words-controlled text better than the frozen neuron and than text readers given the same definition?",
+   "note": "From the field survey of November 2026 (arXiv:2611.08438). The survey reports directions extracted from a plain description of a trait and then used to score text. Rival to beat: an LLM reader given the same definition, the cosine between definition and passage in a sentence-embedding model, and a direction built from a shuffled definition. Small: two days once the items of IN-21 exist."
+  },
+  {
+   "id": "IN-S20",
+   "region": "instrument",
+   "status": "seed",
+   "priority": 0,
+   "title": "Do name units silence concept units?",
+   "question": "Does a concept unit miss its motif more often in passages where a character-name or franchise unit fires?",
+   "note": "From the field survey of November 2026 (arXiv:2611.08438). The survey describes absorption in learned dictionaries: a general feature fails to fire because a more specific one does. The registry tests false alarms caused by words and has no test of silent misses caused by other units. Rival to beat: a residual-stream probe for the same concept, which should show no gap. Small."
+  },
+  {
+   "id": "UN-S13",
+   "region": "universality",
+   "status": "seed",
+   "priority": 0,
+   "title": "When in training do idea units appear?",
+   "question": "Across the public training checkpoints of one model, does the number of concepts with a unit that passes the words-controlled test rise late, after keyword units have already formed?",
+   "note": "From the field survey of November 2026 (arXiv:2611.08438). The survey reports a broadly consistent order: features for tokens and surface statistics form first, abstract ones later. Rival to beat: a probe on the mean-pooled residual stream at each checkpoint. If it rises in step, the effect belongs to model quality and not to units. Medium: eight checkpoints of a small model."
   }
  ]
 }

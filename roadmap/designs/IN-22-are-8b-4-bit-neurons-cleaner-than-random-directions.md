@@ -56,7 +56,7 @@ Replaced the five-way intruder test: with four unit sentences a two-job mixture 
 
 ## Amendment, 10 November 2026
 
-Build triplets separately from three bands of each unit's own range (97th to 99th percentile, 99th to 99.9th, above), not only from the 20 strongest sentences. In the companion paper, random directions inside an expert kept one readable main theme at every band; neurons differed by narrowing as firing strengthened. Add its label-free test: keep each token's top 8 neurons, or 8 random directions, per layer and compare how much of the layer's effect on the output survives.
+Build triplets separately from three bands of each unit's own range (97th to 99th percentile, 99th to 99.9th, above), not only from the 20 strongest sentences. In the companion paper, random directions inside an expert kept one readable main theme at every band; neurons differed by narrowing as firing strengthened. Add its label-free test: keep each token's top 8 neurons, or 8 random directions, per layer and compare how much of the layer's effect on the output survives. From the field survey (arXiv:2611.08438): its protocol fixes principal components beside random directions as baselines, and it lists a coherent label that the model does not use as a classic pitfall. Add 300 principal components of each MLP hidden space as a further unit type. Use two graders from different model families and report their agreement. Report the result as plausibility only.
 
 ## Sources
 
@@ -65,3 +65,4 @@ Build triplets separately from three bands of each unit's own range (97th to 99t
 - Paulo and Belrose 2025 (arXiv:2507.08473)
 - Heap et al. 2025 (arXiv:2501.17727)
 - Tigges et al. 2026, Neurons as an Interpretable Basis
+- Barez, Wu et al. 2026, Understanding AI from the Inside (arXiv:2611.08438)

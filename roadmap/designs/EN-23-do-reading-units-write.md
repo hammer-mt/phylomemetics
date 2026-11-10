@@ -54,9 +54,14 @@ Writers were picked by gradient attribution, which Liu 2026 reports mispredicts 
 
 In the top twelve of 1 of 3 judges (upside: rank 7). It settles whether the units that detect a meme are the ones that write it, which decides if the study's units can ever be edit handles or are only gauges.
 
+## Amendment, 10 November 2026
+
+From the field survey (arXiv:2611.08438): its first evaluation dimension asks whether a method's scores agree with measured effects of intervening. Report, over all screened units per meme, the rank correlation between detection score and steering effect, with random units as the floor. This avoids the built-in advantage of writers chosen by pushing. The survey reports no finding either way on whether reading units write.
+
 ## Sources
 
 - Arad, Mueller, Belinkov 2025, arXiv:2505.20063
 - Kran Research 2026, Evil Qwen replication (blog.kran.ai/evil-qwen)
 - HedwigAI 2026, Qwen personality neurons
 - Liu 2026, arXiv:2606.19831
+- Barez, Wu et al. 2026, Understanding AI from the Inside (arXiv:2611.08438)

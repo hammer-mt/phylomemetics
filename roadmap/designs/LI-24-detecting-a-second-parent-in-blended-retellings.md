@@ -54,9 +54,14 @@ Rebuilt. The Wikidata sample cannot work: of 341 two-source films, 131 have one 
 
 Asks nearly the same question as RX-27, which the judges would run instead.
 
+## Amendment, 10 November 2026
+
+From the field survey (arXiv:2611.08438): the learned-feature arm decides whether sparseness or neurons do the work here, so it must be robust. The survey reports that often fewer than half of dictionary features recur across training seeds, and that the feature set changes with dictionary size. Run that arm at two dictionary sizes and report both. A loss by one dictionary is not a loss by learned features.
+
 ## Sources
 
 - Roos and Heikkilä 2009
 - Wikidata query service counts, 2026-11-08
 - Greenhill, Currie and Gray 2009
 - Temkin and Eldredge 2007
+- Barez, Wu et al. 2026, Understanding AI from the Inside (arXiv:2611.08438)

@@ -56,7 +56,7 @@ In the top twelve of 1 of 3 judges (what decides the premises fastest: rank 5). 
 
 ## Amendment, 10 November 2026
 
-Add a unit type the companion paper points to: sets of 2 to 8 poles that must all be in their own strong range in the same sentence (an AND rule), beside the planned averages. The paper suggests that ideas with no neuron of their own are carried by neurons that fire together and mean the overlap of their meanings. For each winning dictionary feature, report whether it copies one neuron.
+Add a unit type the companion paper points to: sets of 2 to 8 poles that must all be in their own strong range in the same sentence (an AND rule), beside the planned averages. The paper suggests that ideas with no neuron of their own are carried by neurons that fire together and mean the overlap of their meanings. For each winning dictionary feature, report whether it copies one neuron. From the field survey (arXiv:2611.08438): it reports that often fewer than half of a sparse autoencoder's features recur across training seeds, that features split as the dictionary grows, and that a general feature can stay silent where a more specific one fires. Score the feature arm at two dictionary sizes, and for autoencoders and transcoders separately. Count a feature win only if it holds in all four, and call it one decomposition among several.
 
 ## Sources
 
@@ -65,3 +65,4 @@ Add a unit type the companion paper points to: sets of 2 to 8 poles that must al
 - He et al. 2024 (Llama Scope)
 - Wu et al. 2025 (AxBench)
 - Tigges et al. 2026, Neurons as an Interpretable Basis
+- Barez, Wu et al. 2026, Understanding AI from the Inside (arXiv:2611.08438)

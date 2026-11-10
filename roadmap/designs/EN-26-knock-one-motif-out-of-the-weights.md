@@ -50,9 +50,14 @@ Sub-2B models write weak stories and may ignore a 'do not' instruction, so the p
 
 The '6 of 10 motifs' rule could not tell a win from a coin flip; replaced by a mean difference across 12 motifs. Added an 8B run, a base-rate gate and a detector-unit knockout arm. Remaining weakness: the prompt is expected to win, as in work on making models forget.
 
+## Amendment, 10 November 2026
+
+From the field survey (arXiv:2611.08438): it calls pruning concept neurons and fine-tuning on negative examples 'often brittle': the concept is suppressed, not removed, and can be relearned or reached through other prompts with no error signal. Add two checks after the edit: 100 held-out prompts that reach the motif indirectly, and a short fine-tune on 50 motif stories, counting steps until the motif rate is within 5 points of the unedited model's.
+
 ## Sources
 
 - Takehi, Teoh, Zhang, Khattab 2026, Sparks of weight-space programming
 - Arditi et al. 2024, arXiv:2406.11717
 - Thaker et al. 2024, Guardrail baselines for unlearning, arXiv:2403.03329
 - Hase et al. 2023, arXiv:2301.04213
+- Barez, Wu et al. 2026, Understanding AI from the Inside (arXiv:2611.08438)

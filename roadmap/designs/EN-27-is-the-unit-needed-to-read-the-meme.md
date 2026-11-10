@@ -52,7 +52,7 @@ Added by the reviewer: the area steered units but never tested whether detector 
 
 ## Amendment, 10 November 2026
 
-Add arms of 100 and 500 units ranked by their effect on the answer, since the companion paper traces half of the push toward one name to 155 neurons. Silence units only where they are in their own strong range, and report the paper's damage measure (the change in next-word predictions over the firing token and the next 16) beside accuracy.
+Add arms of 100 and 500 units ranked by their effect on the answer, since the companion paper traces half of the push toward one name to 155 neurons. Silence units only where they are in their own strong range, and report the paper's damage measure (the change in next-word predictions over the firing token and the next 16) beside accuracy. From the field survey (arXiv:2611.08438): it lists a swap test beside the silencing test, and warns that unchanged behaviour after silencing does not show a unit is unused. Add an arm: copy the 10 units' activations from the passage with the meme into its twin without, and measure the rise in 'yes' answers, against matched random units and a difference-of-means direction.
 
 ## Sources
 
@@ -61,3 +61,4 @@ Add arms of 100 and 500 units ranked by their effect on the answer, since the co
 - Arditi et al. 2024, arXiv:2406.11717
 - Arad, Mueller, Belinkov 2025, arXiv:2505.20063
 - Tigges et al. 2026, Neurons as an Interpretable Basis
+- Barez, Wu et al. 2026, Understanding AI from the Inside (arXiv:2611.08438)

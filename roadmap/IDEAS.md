@@ -45,6 +45,9 @@ Premise P1. Does a firing neuron measure a meme? Reliability and validity of the
 | IN-S15 | **Causal presence: count a unit where removal matters**: Is a unit's reading of a text more repeatable and less tied to words when each firing is weighted by how much removing it changes the model's next-word predictions? | Idea only |  |  |
 | IN-S16 | **Do neurons add anything beyond expert routing?**: In a mixture-of-experts model, does the record of which experts each token was sent to find a story's documented source as well as the neuron-level reading does? | Idea only |  |  |
 | IN-S17 | **A sparsified, fine-tuned reader as the instrument**: Does a copy of the reader model fine-tuned to run on only its strongest activations give readings that are more repeatable and less word-bound than the original model's? | Idea only |  |  |
+| IN-S18 | **Does a label help a person predict a unit?**: Shown a unit's label, can people say which of two word-matched sentences fires the unit better than people shown only the unit's ten top words, or nothing? | Idea only |  |  |
+| IN-S19 | **A meme reader built from its definition alone**: Does a direction built inside the model from a motif's written definition, with no labelled passages, detect the motif on words-controlled text better than the frozen neuron and than text readers given the same definition? | Idea only |  |  |
+| IN-S20 | **Do name units silence concept units?**: Does a concept unit miss its motif more often in passages where a character-name or franchise unit fires? | Idea only |  |  |
 
 ## Across models
 
@@ -77,6 +80,7 @@ Premise P2. Do different models, languages and media give the same reading?
 | UN-S10 | **Do common memes transfer between models better than rare ones?**: Does agreement between two models on which neurons mark a meme rise with how often that meme appears in public text, and fall to chance for niche memes? | Idea only |  |  |
 | UN-S11 | **Atlas story labels as an outside motif list**: Do story-level ideas that have a unit in Goodfire's 35B model more often have a passing unit in Qwen3-8B and Llama 3.1 8B than matched motifs taken from a human index? | Idea only |  |  |
 | UN-S12 | **Copied layers: a census of duplicate neurons**: Do the study's models contain neurons that are copies of the neuron at the same index a fixed number of layers away, and how much do such copies inflate unit counts and twin rates inside the Qwen family? | Idea only |  |  |
+| UN-S13 | **When in training do idea units appear?**: Across the public training checkpoints of one model, does the number of concepts with a unit that passes the words-controlled test rise late, after keyword units have already formed? | Idea only |  |  |
 
 ## The atlas
 
@@ -165,6 +169,7 @@ Who descends from whom, including influence nobody declared.
 | LI-S11 | **Hidden ancestors in built traditions**: In the LI21 traditions, can the units of a withheld inner text be inferred from its descendants and checked against the real text better than words allow? | Idea only |  |  |
 | LI-S12 | **A hit's renamed children**: Can units find a hit's renamed offspring, the 'Die Hard on a ...' films, in a pool of unrelated films? | Idea only |  |  |
 | LI-S13 | **Mode-level characters on documented adaptations**: When each unit's firings are split into roles by what drives them, do adaptations share roles with their documented source more than they share whole units, beyond shared words? | Idea only |  |  |
+| LI-S14 | **Influence absorbed in training, not shown in the prompt**: When a small writer model is fine-tuned on a randomly assigned subset of obscure tales and then writes stories from neutral prompts, can any reader name which tales it was trained on? | Idea only |  |  |
 
 ## Remix and influence
 

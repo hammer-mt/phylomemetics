@@ -21,6 +21,13 @@
   "topic": "Neurons as units (P1)"
  },
  {
+  "cite": "Barez, Wu and 25 co-authors 2026, Understanding AI from the Inside: The State of Mechanistic Interpretability for AI Safety (arXiv:2611.08438, 182 pages)",
+  "url": "https://arxiv.org/abs/2611.08438",
+  "why": "The field's own statement of where both premises stand. Learned features are its default unit; superposition is 'a hypothesis' in large models; shared algorithms are supported and shared representations less so. Read sections 4.2, 5, 6.5, 7.5, 9.1 and 14",
+  "priority": "A",
+  "topic": "Neurons as units (P1)"
+ },
+ {
   "cite": "Nanda 2026, LessWrong comment on the linkpost",
   "url": "https://www.lesswrong.com/posts/x4kvabkF2Jk8GLZp8/linkpost-neural-networks-are-already-clean/comment/7wcSqBNzQF2o9SHyY",
   "why": "The main expert rebuttal: facts, weak activations, loose definition",
@@ -2259,5 +2266,54 @@
   "why": "Low-precision training exposes outliers amplified by the SwiGLU activation these models use. A study run at 4-bit should check its extreme neuron readings against full precision",
   "priority": "C",
   "topic": "Neurons as units (P1)"
+ },
+ {
+  "cite": "Lecomte, Thaman, Schaeffer, Bashkansky, Chow, Koyejo 2024, What Causes Polysemanticity? An Alternative Origin Story of Mixed Selectivity from Incidental Causes",
+  "url": "https://arxiv.org/abs/2312.03096",
+  "why": "Neurons that mix concepts can arise by chance even when there are enough neurons for every feature. A mixed neuron is not proof of superposition",
+  "priority": "B",
+  "topic": "Neurons as units (P1)"
+ },
+ {
+  "cite": "Nikankin, Reusch, Mueller, Belinkov 2025, Arithmetic Without Algorithms: Language Models Solve Math With a Bag of Heuristics",
+  "url": "https://arxiv.org/abs/2410.21272",
+  "why": "Inside an arithmetic circuit a sparse set of neurons each apply a simple rule. One of two works the survey cites for the MLP hidden layer being more interpretable as it stands",
+  "priority": "B",
+  "topic": "Neurons as units (P1)"
+ },
+ {
+  "cite": "Gao, Rajaram, Coxon, Govande, Baker, Mossing 2025, Weight-sparse transformers have interpretable circuits",
+  "url": "https://arxiv.org/abs/2511.13653",
+  "why": "Cleaner neurons obtained by design, at a cost in capability. The contrast case for the claim that ordinary models are already clean",
+  "priority": "B",
+  "topic": "Neurons as units (P1)"
+ },
+ {
+  "cite": "Tigges, Hanna, Yu, Biderman 2024, LLM Circuit Analyses Are Consistent Across Training and Scale",
+  "url": "https://arxiv.org/abs/2407.10827",
+  "why": "Across training and model size the parts that carry a circuit change while the algorithm stays. Convergence at the level of algorithms, not units",
+  "priority": "B",
+  "topic": "Agreement between models (P2)"
+ },
+ {
+  "cite": "Kempf, Schrodi, Cywiński, Brox, Nanda, Conmy 2026, Simple LLM Baselines are Competitive for Model Diffing",
+  "url": "https://arxiv.org/abs/2602.10371",
+  "why": "An LLM that simply reads two models' outputs finds their differences about as well as a method built on internal features. The cheap rival, in the comparison of models",
+  "priority": "B",
+  "topic": "Agreement between models (P2)"
+ },
+ {
+  "cite": "Lan, Torr, Barez 2024, Towards Interpretable Sequence Continuation: Analyzing Shared Circuits in Large Language Models",
+  "url": "https://arxiv.org/abs/2311.04131",
+  "why": "A sub-circuit for continuing sequences is found in both GPT-2 Small and Llama-2-7B. Evidence that an algorithm recurs across models, not that a unit does",
+  "priority": "C",
+  "topic": "Agreement between models (P2)"
+ },
+ {
+  "cite": "Li, Ceballos Arroyo, Rogers, Saphra, Wallace 2025, Do Activation Verbalization Methods Convey Privileged Information?",
+  "url": "https://arxiv.org/abs/2509.13316",
+  "why": "Benchmarks for putting activations into words can be passed without access to the model's internals. A worded reading has to beat a reader that sees only the text",
+  "priority": "B",
+  "topic": "Measurement and validity"
  }
 ]

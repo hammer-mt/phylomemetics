@@ -50,9 +50,14 @@ A prompt win is the expected result after AxBench, so the news value is modest. 
 
 The 1,000 random films are the paused pre-registration's held-out set, so the data moved to the CMU corpus. Base stories must now contain B, or 'less B' is empty. One pre-chosen handle contrast replaces five. Remaining weakness: a prompt win is already expected.
 
+## Amendment, 10 November 2026
+
+From the field survey (arXiv:2611.08438): its sources agree that prompting often beats handles inside the model, so the prediction stands. It adds that steering vectors often degrade on related but different text, and fail without any error. Score every handle at three doses and on 40 extra held-out stories from a second source such as folktales, and report B-down, story-kept and fluency separately. A win on film plots alone is not general.
+
 ## Sources
 
 - Wu et al. 2025, AxBench, arXiv:2501.17148
 - Chen et al. 2025, Persona vectors, arXiv:2507.21509
 - He et al. 2024, Llama Scope, arXiv:2410.20526
 - Bamman, O'Connor, Smith 2013, CMU Movie Summary Corpus
+- Barez, Wu et al. 2026, Understanding AI from the Inside (arXiv:2611.08438)

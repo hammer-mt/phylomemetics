@@ -50,9 +50,14 @@ The click predictor is weak (about 46% at picking the winner among roughly three
 
 Drift is now measured against a random-selection loop, because LLM rewriting drifts unaided; the judge differs from the reviewer and is checked by humans; the hypothesis no longer contradicts its falsifier. Remaining weakness: selection is on predicted, not real, clicks.
 
+## Amendment, 10 November 2026
+
+From the field survey (arXiv:2611.08438): the activation monitors it lists are linear probes and alerts on learned features; it names no monitor built on single neurons, and warns that monitors miss inputs their features do not track. Add a fourth brake: a linear probe on the residual stream, fitted on the unit brake's data. If the probe holds and the units do not, the failure belongs to the neuron basis.
+
 ## Sources
 
 - Matias et al. 2021, Upworthy Research Archive, doi:10.1038/s41597-021-00934-7
 - Robertson et al. 2023, Negativity drives online news consumption
 - Ye, Yoganarasimhan, Zheng 2025, LOLA, arXiv:2406.02611
 - El and Zou 2025, Moloch's Bargain, arXiv:2510.06105
+- Barez, Wu et al. 2026, Understanding AI from the Inside (arXiv:2611.08438)

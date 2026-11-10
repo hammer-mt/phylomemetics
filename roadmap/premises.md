@@ -19,6 +19,8 @@ The two premises also pull against each other. The neurons that match best acros
 
 There are two sources, both from Goodfire. Nick Cammarata's essay ["Neural networks are already clean"](https://already-clean.goodfire.com/) (published 15 October 2026, revised 30 October) made the claim: most neuron poles in modern language models have one main job, and the mess seen in earlier models came from weak tools and small models, not from unrelated concepts being packed together. Its technical companion, ["Neurons as an Interpretable Basis"](https://www.goodfire.com/research/neurons-as-an-interpretable-basis) (Tigges, Kowal, McGrath, Lewis and Cammarata, 10 November 2026), gives the first measurements. Neither is peer reviewed. The companion came out after the first version of this review, and no outside group has retested it yet.
 
+The field's own survey, posted five days before the companion paper, starts from the opposite default: that single neurons often mix unrelated concepts, so learned features are the unit to study. It is covered in its own section below.
+
 ### The essay
 
 What the essay claims, and how firmly:
@@ -83,7 +85,7 @@ So several claims are being run together.
 | A neuron's strong firings have one describable job | Partly supported; depends on who grades and how | 47% one mode, 69% one dominant mode (the paper); 90% (the essay); 57 to 78% (outside retest of the essay); random directions in an expert score 0.65 to 0.73 on the paper's readability measure |
 | A description predicts when a neuron fires strongly | Supported in one model, against chance only | 95% and 89% in a two-way choice; 73% of a ceiling in simulation. No cheap rival was run |
 | A concept is carried by one neuron | Not supported | The essay's own hubs of 4 to 20 neurons; 155 neurons for half of one prediction (the paper); Arora et al. 2026 find "small sets of neurons" (arXiv:2601.22594) |
-| The neurons list every concept a model has | Rejected by all sides | Models hold more features than neurons |
+| The neurons list every concept a model has | Rejected by all sides | Models are thought to hold more features than neurons. The survey calls that a hypothesis for large models, but no source claims the neurons list everything |
 | A neuron reading measures an idea and not a word | Untested by anyone | Not addressed by the essay or the paper. The Batman study's results point the other way |
 
 ### Where the paper differs from the essay
@@ -118,6 +120,28 @@ On today's evidence, "a neuron has a describable job" is best supported under th
 - **Grader.** The authors' own LLM judges. An independent labeller got 57 to 65% for the essay's model, and no human has graded either text.
 - **Level.** One marked token in a short passage. No result exists for a reading of a whole document, such as the study's rule of beating 68 of 69 reference films.
 
+### What the field's survey says
+
+["Understanding AI from the Inside"](https://arxiv.org/abs/2611.08438) (Barez, Wu and 25 co-authors, among them Yoshua Bengio; arXiv:2611.08438, first posted 5 November 2026) is a 182-page survey of mechanistic interpretability, the field that studies what happens inside models. It was posted five days before the companion paper and does not cite the essay. Most of it is about AI safety. What bears on P1:
+
+- **Its default unit is the learned feature, not the neuron.** It says single neurons "often respond strongly to multiple concepts that appear unrelated from a human perspective" and that the field "has increasingly shifted towards alternative units of analysis". It gives no rate, and it never separates a neuron's strong firings from its weak ones, which is the distinction Goodfire's paper rests on.
+- **It concedes two points to the neuron side.** Superposition, the idea that a model packs in more features than it has dimensions, "remains a hypothesis, not an established fact, in large language models". And the hidden neurons of MLP blocks are a privileged basis, where "a single neuron can serve as a scalar feature". It cites two works finding that this wide hidden layer gives "more interpretable representations natively".
+- **It is frank about the tools that replaced neurons.** For sparse autoencoders it reports that often "fewer than 50% of features remain the same across seeds", says their features should be framed as "one valid approximate decomposition rather than the true features", and lists as an open problem that a learned stand-in for a model "may find features and circuits that do not exist in the original model".
+- **Its test for a label is causal.** In its worked example a neuron stands for a concept when it fires on the concept's word, stays near zero otherwise, and shifts the model's output when it is turned up or down. Its evaluation framework asks for five things: scores that match measured effects, a statement of how much of the behaviour is explained, stability across seeds and rewording, causal tests against "random components of matched size", and a check that an explanation helps people predict behaviour. "No single dimension suffices."
+- **It fixes the baselines first.** Its protocol names "random directions in activation space, PCA components, individual neurons, and supervised probes". The single neuron appears there as a baseline for other units to beat. It also lists as a common fault of the field that gains are not compared with "behavioural methods, random activations, or neuron-level analysis".
+- **Machine-written labels are hypotheses.** It warns that systems which put activations into words often just reconstruct the input text, calls such failures "severe and prevalent", and asks for tests on units with known answers, blind human samples and reported error rates.
+
+Set beside Goodfire's paper:
+
+| Issue | The survey | Goodfire's paper | What to take from it |
+| --- | --- | --- | --- |
+| Do neurons mix unrelated things? | Often, stated without a number, from older and smaller models | 47% of poles have one role and 69% one dominant role, on strong firings in one model | They measure different things. Keep the activation range and the grader attached to every such figure |
+| Superposition | A hypothesis in large models | Not tested; argued against from sparsity | Neither shows that a story idea sits on one neuron |
+| Is the neuron basis privileged? | Yes for MLP hidden layers, by architecture | Offered as a hypothesis from measured sparsity | Supports reading MLP neurons directly. It does not make each one a single idea |
+| Is a learned dictionary needed first? | Yes: raw representations are "too entangled to be directly interpretable" | No: study the model "on its own terms" | Neither compares raw neurons with learned features at measuring text. Design IN-24 does |
+| What verifies a label? | Intervention, against matched random units, plus people | Prediction from a description, against chance | Goodfire meets the survey's simulation check and not its causal, specificity or human checks |
+| Random baselines | Required | Run for sparsity and for modes, not for the description tests | The rule on cheap rivals stands |
+
 The Batman study borrowed the unit and ran none of the checks the essay and the paper rely on.
 
 - It used Qwen3-8B and Llama 3.1 8B at 4-bit. Nobody has audited the 8B 4-bit models. The paper's audit is of a 35B mixture-of-experts model, and its authors say how far the findings carry to other models is still to be established.
@@ -137,18 +161,21 @@ Its results fit the sceptical reading.
 
 Where "one neuron, one or a few jobs" is best supported: one pole of a hidden MLP neuron, in the top or bottom 3% of its own activations and most clearly above the 99.9th percentile, in middle layers, in models of 32B parameters and up, for word-like, phrase-like and name-like content. Where it is not: the residual stream, attention heads, weak activations, and facts. Whether it holds for story motifs across rewording has not been tested by anyone, the companion paper included.
 
-## P2: three levels
+## P2: four levels
 
 | Level | Verdict | Evidence |
 | --- | --- | --- |
 | Same geometry: models agree on which texts are alike | True, and cheap | Qwen and Llama distance matrices correlate at 0.98, but random neurons give 0.90 to 0.93 and two word methods agree at 0.92 (`nulls.json`). In the literature, local neighbourhoods agree; a single shared global geometry is disputed (Gröger et al. 2026, arXiv:2602.14486; Koepke et al. 2026, arXiv:2604.18572) |
 | Same features or directions, with a learned map | Partly true | In one study of 7B models, about half of matched feature pairs pass a correlation of 0.6 (Agarwal 2026, arXiv:2608.05164). An earlier study within model families kept 10 to 30% of pairs after a looser filter (Lan et al. 2024, arXiv:2410.06981). Neither is peer reviewed. A joint dictionary has been trained on this project's exact pair (Jiralerspong and Bricken 2026, arXiv:2602.11729). The instrument is shaky: in the worst reported case, sparse autoencoders share about 30% of features across random seeds (Paulo and Belrose 2025, arXiv:2501.16615) |
+| Same algorithms and circuits (row added 10 November) | Supported, by the field's account | The survey calls this weak universality and says it "is supported by recurring attention patterns, features, and circuits across models, tasks, and scales", citing four works and no rates. It is the level the literature usually means by "models converge". It does not carry a unit-level reading: the same algorithm can run on different units |
 | Same individual neurons | Mostly false | 1.2% to 4.2% of GPT-2 neurons are universal across retrainings of the same architecture, and the authors conclude neurons are not the right unit (Gurnee et al. 2024, arXiv:2401.12181). Here the median twin correlation over all 14,843 families is 0.40 against 0.36 for random units (`phylo.json.gz`) |
 
 What the documents of November 2026 add:
 
 - **Goodfire's companion paper has nothing on P2.** It studies one model and maps nothing onto another. It adds two cautions. Its strength bands and its hardest control depend on expert routing, which this project's dense models lack, so its thresholds do not carry over unmeasured. And its authors suspect that Qwen3-32B was built by copying layers of Qwen3-14B, since many neurons match 24 layers apart. If models in one family share copied layers, agreement between Qwen3-8B and Qwen3-1.7B may be inheritance and not convergence.
 - **Shared neurons thin out as models grow.** Dravid et al. 2026 (arXiv:2606.03990) follow neurons whose firing patterns match across independently trained models, in language models up to 30B parameters. Their number grows with model size but more slowly than the model does, so they are a shrinking share of all neurons. They also become more selective. A cross-model reading built on matched neurons would cover less of a larger model.
+- **The survey splits universality in two.** Weak universality, different models running the same algorithms, it calls supported. Strong universality, different models holding the same internal representations, it calls "less supported", resting on similarity scores that recent studies found "fragile". It cites the same two 2026 papers this review does. It says nothing about single neurons recurring across models.
+- **A function that survives is not a unit that survives.** The survey reports that inside one model, across training, the parts carrying an algorithm "can change identity while the algorithm persists". And it warns that crosscoders, the dictionaries trained on two models at once that are the best lead for mapping Qwen onto Llama, can report a feature as unique to one model when both have it. Such features "should be regarded as hypotheses".
 
 What the three cited papers show:
 
@@ -196,6 +223,8 @@ Pass marks and the cheapest data for each rung are in [`notes/l13-measurement-va
 
 Goodfire's four tests of a description (detection, which role fired, simulation and synthesis) are tests of a label, on rungs 1 and 6, scored against chance. They show that a label can be made to predict strong firing. None is a rung 4 test and none includes a cheap rival.
 
+The survey's evaluation framework covers part of the ladder and adds to it. Its stability dimension is rung 1. Its causal dimension is rung 6, split into four tests: silence the unit, isolate it, swap its activation between two inputs, and check what else moves. Its human dimension asks a different question from rung 3: whether a label helps a person predict the unit. Two of its demands are missing from the ladder: a statement of coverage, meaning what share of a result the named units carry (design IN-35), and the swap test (now an arm of EN-27). The framework has no counterpart to rungs 2, 4 and 5. Nothing in it asks whether a reading follows an idea and not a word, agrees across models, or predicts anything outside the model. Those rungs are this programme's own.
+
 Until a unit beats sentence embeddings and an LLM reader on text where the words are controlled (rung 4), nothing higher on the ladder says anything about neurons.
 
 ## What would settle it
@@ -208,5 +237,6 @@ Until a unit beats sentence embeddings and an LLM reader on text where the words
 6. Readings and heredity across languages, where shared wording cannot carry the signal (UN-22, LI-22).
 7. Human judgement: existing human coding of retold stories (CE-21), then paid annotators on a few hundred passages (IN-26).
 8. The companion paper's label tests run on this project's own units, with the rivals the paper left out: a table of each token's average activation, another unit's label, and no label (IN-33). Then its synthesis loop with the unit's usual words banned (IN-31).
+9. The two checks the survey asks of any automated labelling: an error rate measured on units whose true function is known (IN-34), and a statement of how much of the heredity result the named units carry (IN-35).
 
 The registered designs are in [`designs/`](designs/) and listed in [`IDEAS.md`](IDEAS.md). [`README.md`](README.md) gives the order in which to run them.

@@ -5,12 +5,14 @@
   "Word counts measure it just as well. On the primary model, words matched or beat neurons on every pre-registered test that had a word comparator.",
   "Agreement between two companies' models is mostly shared name and word detectors. It collapses when names are removed.",
   "A handful of units do behave like ideas: a funeral, a coin flip, the secret identity, and one revenge unit that picked the right sentence in 10 of 12 pairs with no revenge words.",
-  "Outside this project, the evidence is that neurons are a sparser basis than random directions, that in one 35B model about two thirds of neuron poles have one job or one dominant job at strong activation (Goodfire's companion paper of 10 November, graded by an LLM), that 1 to 5% of neurons recur across retrained models, and that plain prompting beats activation methods at steering text on the one large benchmark."
+  "Outside this project, the evidence is that neurons are a sparser basis than random directions, that in one 35B model about two thirds of neuron poles have one job or one dominant job at strong activation (Goodfire's companion paper of 10 November, graded by an LLM), that 1 to 5% of neurons recur across retrained models, and that plain prompting beats activation methods at steering text on the one large benchmark.",
+  "The field's own survey of November 2026 treats learned features, not neurons, as the default unit, and calls superposition a hypothesis in large models. On agreement between models it finds shared algorithms supported and shared representations fragile."
  ],
  "unknown": [
   "Whether neuron units follow an idea when the wording changes. This is the claim that would justify the method, and it has never been tested at scale, here or in Goodfire's companion paper.",
   "Whether the units cause anything. Nobody in this project has turned a neuron up or down.",
   "Whether the small 4-bit models used here are 'clean' at all. The two audits behind the claim, the essay's and its companion paper's, are of models four times larger, and the paper covers only each neuron's strongest 3% of firings.",
+  "Whether the dense 8B models used here run on their strongest neuron firings, as Goodfire's 35B model does. If they do not, reading only the strong range is not justified for them.",
   "Whether a learned map between models carries concept units across. Only one-to-one twins were tried.",
   "Whether neurons beat sentence embeddings or an LLM simply reading the text. Those rivals were never run, here or in Goodfire's companion paper.",
   "Whether any human agrees with the labels. Every labeller, judge and reviewer so far was an AI.",
@@ -45,6 +47,28 @@
     "IN-31",
     "EN-28",
     "IN-23"
+   ]
+  },
+  {
+   "title": "Understanding AI from the Inside",
+   "date": "5 November 2026",
+   "kind": "survey, arXiv 2611.08438, 182 pages",
+   "by": "Barez, Wu and 25 co-authors, among them Yoshua Bengio",
+   "url": "https://arxiv.org/abs/2611.08438",
+   "what": "A survey of mechanistic interpretability, the field that studies what happens inside models. It was posted five days before Goodfire's paper and does not cite the essay. Most of it is about AI safety.",
+   "points": [
+    "Its default unit is the learned feature, not the neuron. It says single neurons often mix unrelated concepts, gives no rate, and never separates strong firings from weak ones.",
+    "It concedes two points to the neuron side. Superposition is 'a hypothesis, not an established fact' in large language models, and the neurons of an MLP block are a privileged basis.",
+    "On agreement between models it matches this roadmap. Shared algorithms are supported. Shared internal representations are 'less supported', and the similarity scores behind them 'fragile'.",
+    "Its test for a label is causal: change the unit and see the output move, against random units of matched size. It names random directions, principal components, single neurons and supervised probes as baselines to fix first."
+   ],
+   "changes": "For the programme: the survey's standards cover part of the validation ladder and add two things it lacked, a statement of coverage and a swap test. It has no test that a reading follows an idea and not a word. Ten designs were amended and three registered.",
+   "ideas": [
+    "IN-34",
+    "IN-35",
+    "LI-25",
+    "EN-27",
+    "IN-24"
    ]
   }
  ]

@@ -1,8 +1,10 @@
 # Roadmap: the state of play and what to test next
 
-Written 8 November 2026. This folder is a map of the research programme: an audit of everything tried so far, a review of how strong the two core premises are, and a registry of experiment designs to run next.
+Written 8 November 2026 and updated on 10 November. This folder is a map of the research programme: an audit of everything tried so far, a review of how strong the two core premises are, and a registry of experiment designs to run next.
 
 No experiment, model or pipeline was run to make it. The paper (v1) is unchanged.
+
+The update of 10 November adds two documents published that week: Goodfire's technical companion to the essay behind P1, and a 182-page survey of the field. What they change is in point 7 of the short version, in section 6, and in [`premises.md`](premises.md).
 
 ## The programme in one paragraph
 
@@ -12,8 +14,8 @@ The bet is that a meme can be measured by which neurons fire inside a language m
 
 1. **The instrument works as a counter.** Neuron readings are cheap, repeatable and citable, and they find real structure: Batman has a core that random sets of films lack, and adaptations carry their sources' content with every name removed.
 2. **It has not yet shown that it reads ideas and not words.** On the primary model, plain word counts matched or beat neurons on every pre-registered test that had a word comparator: identity, heredity and the residual test. Most strong units are name and word detectors.
-3. **P1 is supported in a weak form only.** Neurons are a better-than-random basis in which most units have a describable job. The claim comes from a preliminary essay about a model four times larger, and the project has never run the test that essay treats as decisive, steering.
-4. **P2 is true for geometry, partly true for mapped directions, mostly false for single neurons.** One to five percent of neurons recur across retrained models. In this project, agreement between models collapses once names are removed.
+3. **P1 is supported in a weak form only.** Neurons are a better-than-random basis in which most units have a describable job at strong activation. The evidence is an essay and, since 10 November, its technical companion paper, each about a model four times larger than the ones used here. The paper's own figure is that 69% of neuron poles have one job or one dominant job, as grouped by an LLM judge. It tests no cheap rival and no rewording, and the project has never steered or switched off a neuron. The field's survey of November 2026 still treats learned features, not neurons, as the default unit, while granting that superposition is unproven in large models and that MLP neurons are a privileged basis.
+4. **P2 is true for geometry, partly true for mapped directions, mostly false for single neurons.** One to five percent of neurons recur across retrained models. In this project, agreement between models collapses once names are removed. A 2026 study finds that neurons shared between models become a smaller share as models grow. The survey of November 2026 sorts the evidence the same way: models sharing algorithms is the supported kind of convergence, and models sharing representations is "less supported".
 5. **The next step is one rung, not twelve.** Until a unit beats sentence embeddings and an LLM reader on text where the words are controlled, the grander uses (forecasting, editing, trees of influence) rest on a reader that may only be reading words.
 6. **Part of the ground is open.** Using a model's internal units to describe texts is already an active line of work, done with sparse-autoencoder features, human labels and steering. Nobody has published a descent test on cultural works using model units, or an edit of a story motif by steering. The cheap rivals are strong, so each claim has to be earned against them.
 
@@ -24,7 +26,7 @@ The bet is that a meme can be measured by which neurons fire inside a language m
 | [`premises.md`](premises.md) | How strong P1 and P2 are, the validation ladder, and what would settle them |
 | [`IDEAS.md`](IDEAS.md) | Every idea by research area: run, planned earlier, newly registered, or still only an idea |
 | [`designs/`](designs/) | One file per registered design: question, prediction, what would refute it, data, method, the cheap rival to beat |
-| [`biology-map.md`](biology-map.md) | 37 tools from biology and their memetic versions; which landmark of biology's history memetics is at |
+| [`biology-map.md`](biology-map.md) | 40 tools from biology and their memetic versions; which landmark of biology's history memetics is at |
 | [`ESSAYS.md`](ESSAYS.md) | The 210 measurable claims in Mike's 2022 essays, each restated as a hypothesis and linked to the design or seed that tests it; and the 40 sources those essays cite that are most worth re-testing |
 | [`sources.md`](sources.md) | The reading list, ranked |
 | [`notes/`](notes/) | The research notes behind all of this, with citation check logs |
@@ -73,14 +75,20 @@ Two points from the audit ([`notes/a4-prereg.md`](notes/a4-prereg.md)):
 
 These come from what went wrong or nearly went wrong in the Batman study.
 
-1. Put the cheap rivals in the same test: word overlap, a sentence-embedding model, an LLM reading the text, text length, random neurons.
+1. Put the cheap rivals in the same test: word overlap, a sentence-embedding model, an LLM reading the text, text length, random neurons. Where the concept is fixed in advance, add a linear probe on the same model's activations.
 2. Make it impossible for words to carry the signal: paraphrase, translate, change medium, or use minimal pairs.
 3. Take ground truth from outside the method: documented descent, randomised outcomes, human labels or construction.
 4. Choose units on development data and score them on held-out data. There are about 900,000 units; some unit will fit any small sample.
 5. State the refuting result with a number, and the sample size that gives enough power.
 6. Use nulls that respect date, genre and length. Three errors in the study were comparisons whose answer was fixed by how they were built.
-7. Do not assume the neurons are clean. Check it, or steer.
+7. Do not assume the neurons are clean. Check it, or steer. Read a unit only in its own strong range. The threshold comes from the unit's own activations on general text, never from a comparison set of works.
 8. Put a human in the loop somewhere. So far every labeller, rewriter, judge, reviewer and fact-checker was an AI.
+9. A label is a guess until it predicts. From the label alone, a blind judge must pick held-out firing passages over same-topic distractors, and must beat a word-overlap picker and the same judge given another unit's label. The labelling method needs an error rate, measured on units whose true function is known.
+10. Say which role fired. A neuron pole can have more than one. Keep the firing token and its context for every presence call, and count the call only if a blind check puts it in the labelled role.
+11. Nothing carries over unmeasured. A threshold, a label or a published description holds for the model, the precision and the kind of text it was measured on. Re-measure before borrowing one.
+12. State the coverage of every result: which units, works and range of activation were examined, and how much of the effect the named units leave unexplained. Report fragile findings beside robust ones.
+
+Rules 9 to 12, and the additions to rules 1 and 7, were added on 10 November from Goodfire's companion paper and the survey of the field.
 
 ## 4. What to run first
 
@@ -123,13 +131,13 @@ The judges' shared view of the likely end state: a neuron's lasting job may be t
 
 **People pushing single neurons on X.** The "Evil Qwen" posts of October 2026 pushed two neurons in a 4B Qwen. A pre-registered replication found a villain voice in 82 to 86% of answers, coherent text in 5 to 36% depending on the judge, and no effect from the second neuron. One census found 130 of 294,912 neurons with a clean, consistent steering effect. The neuron that reads a concept is often not the one that writes it.
 
-**Can an idea be mutated on purpose today?** Broad traits such as tone and persona can be steered with a direction on open 8B models, inside a narrow dose window. On the one large benchmark, plain prompting beats every activation method. Nobody has published "more of motif A, less of motif B" on an existing story. Designs EN-21 to EN-23 test it. Details for these three answers: [`notes/l3-steering-editing.md`](notes/l3-steering-editing.md).
+**Can an idea be mutated on purpose today?** Broad traits such as tone and persona can be steered with a direction on open 8B models, inside a narrow dose window. On the one large benchmark, plain prompting beats every activation method. Nobody has published "more of motif A, less of motif B" on an existing story. Designs EN-21 to EN-23 test it. Goodfire's companion paper adds a route that touches no weights: agents wrote text that fired 120 of 128 neuron poles harder than anything in a 10-billion-token corpus, guided only by reading the activation back. Whether such text carries more of the idea, or only more of a trigger word, is untested (designs IN-31 and EN-28). Details for these three answers: [`notes/l3-steering-editing.md`](notes/l3-steering-editing.md).
 
 **Dawkins against Girard.** Never tested head to head. It becomes testable as what gets copied (the content) against who gets copied (the person imitated). Neuron memes measure only the "what". Girard needs exposure data: who saw whom. Design RX-26 and seeds RX-S3, RX-S10 and RX-S11.
 
 **Everything is a remix.** As stated it cannot fail, and no proof exists. It becomes a test as a ledger: the share of a work's units seen in earlier works, the share that is new, and the share that is new pairings of old units, measured against the noise between two summaries of the same story. Designs RX-21 and CJ-26. Details for these two answers: [`notes/l8-girard-remix-influence.md`](notes/l8-girard-remix-influence.md).
 
-**Which moment of biology's history is this?** Memetics already has its Linnaeus (folktale indexes, TV Tropes), its Darwin (Dawkins; Boyd and Richerson) and its Kimura (the random-copying model). It lacks a Mendel, meaning clean units in controlled crosses, and a Sanger, meaning a cheap reader with a known error rate. Neuron reading is a candidate Sanger. There is no Watson and Crick for human culture: a model neuron is an instrument, not the substrate in a head. A Mendeleev test is design AT-28. The full table is in [`biology-map.md`](biology-map.md).
+**Which moment of biology's history is this?** Memetics already has its Linnaeus (folktale indexes, TV Tropes), its Darwin (Dawkins; Boyd and Richerson) and its Kimura (the random-copying model). It lacks a Mendel, meaning clean units in controlled crosses, and a Sanger, meaning a cheap reader with a known error rate. Neuron reading is a candidate Sanger. There is no Watson and Crick for human culture: a model neuron is an instrument, not the substrate in a head. Goodfire's two texts are closest to Beadle and Tatum's "one gene, one enzyme": a clean rule, stated in October and already revised to "one or a few roles" in November. A Mendeleev test is design AT-28. The full table is in [`biology-map.md`](biology-map.md).
 
 **The claims in Mike's 2022 essays.** All 122 essays were read in full. [`ESSAYS.md`](ESSAYS.md) lists 210 measurable claims, each with its essay, a hypothesis, the cheap rival and the design or seed that tests it. For 57 of them a neuron reading could add something; the other 153 could be tested with any unit, word counts included. 36 claims are already tested by a registered or earlier design, 42 by a seed (37 seeds were added for this), and 132 have no entry because they do not need the method. Seven became full designs under Field conjectures: the Lindy effect, the thirty-year return, memeplexes, most advanced yet acceptable, the remix ledger, borrowing from many sources, and copied or coincidence. The same page lists the 40 sources the essays cite that are most worth re-testing.
 
@@ -152,9 +160,9 @@ The judges' shared view of the likely end state: a neuron's lasting job may be t
 
 | Area | In biology | Where it stands | Best next design |
 | --- | --- | --- | --- |
-| The instrument | Sequencing | Four small tests: the canon count held, the other three were mixed. No human check, no steering | IN-21 |
+| The instrument | Sequencing | Four small tests: the canon count held, the other three were mixed. No human check, no steering. Goodfire's paper gives the range to read and the label tests to copy | IN-21 |
 | Across models | One genetic code | Twins were mostly shared word detectors. No learned map tried | UN-21, UN-22 |
-| The atlas | Genome project | Batman's name-free core is the textbook superhero. No catalogue yet | AT-21, after IN-21 |
+| The atlas | Genome project | Batman's name-free core is the textbook superhero. No catalogue yet for this project's models. Goodfire's public atlas describes 3,000 neuron poles of a different model | AT-21, after IN-21 |
 | Old memetics, re-run | Classical genetics | Untouched. Public data and published results to re-derive | ME-22 |
 | Lineage | Phylogenetics | Heredity held, word counts matched it, trees failed | LI-22 |
 | Remix and influence | Recombination | Nothing run. Similarity is not influence | RX-27 |
