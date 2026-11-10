@@ -35,10 +35,10 @@
    "url": "https://www.goodfire.com/research/neurons-as-an-interpretable-basis",
    "what": "The technical companion to the essay behind premise P1. It studies one model, Qwen3.6-35B-A3B, which sends each token to a few of 256 sub-networks per layer.",
    "points": [
-    "Strong firings carry the computation. Zeroing the weakest 92.2% of the activations in play at each token raises loss by 2.9%. Keeping a random eighth, or removing only the strongest eighth, more than doubles it. Reasoning benchmarks fall until the model is fine-tuned.",
+    "Strong firings carry the computation. Zeroing the weakest 92.2% of the activations in play at each token raises loss by 2.9%. Keeping a random eighth, or removing only the strongest eighth, more than doubles it. Most reasoning and knowledge benchmarks fall until the model is fine-tuned.",
     "One job is the majority, not the rule. Of 5,468 neuron poles, 47% have one role and 69% have one role doing at least 90% of the damage when the neuron is removed. The essay had said about 90%, for a different model.",
     "A short description predicts strong firing. A judge given the description picks the passage where the neuron fires 95% of the time against random text and 89% against text sent to the same sub-network. Chance is 50%.",
-    "It does not test what this programme needs. There is no word-count or embedding rival, no test of an idea with its usual words removed, no second model, and nothing at the level of a whole document."
+    "It does not test what this programme needs. No word-count or embedding rival is scored, no measured test removes an idea's usual words, no statistic is repeated on a second model, and nothing is at the level of a whole document."
    ],
    "changes": "For the programme: read each unit only in its own strong range, record which of its roles fired, and treat a label as a guess until it predicts held-out firings. Fifteen designs were amended and four were registered to carry the paper's tests over to the study's own models, with the rivals it left out.",
    "ideas": [

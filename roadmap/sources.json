@@ -9,19 +9,19 @@
  {
   "cite": "Tigges, Kowal, McGrath, Lewis, Cammarata 2026, Neurons as an Interpretable Basis (Goodfire research post, 10 Nov 2026; not peer reviewed)",
   "url": "https://www.goodfire.com/research/neurons-as-an-interpretable-basis",
-  "why": "The technical companion to the essay. One 35B model: 47% of neuron poles have one role and 69% one dominant role at strong activation; descriptions predict strong firing. No cheap rival, no rewording test, no second model",
+  "why": "The technical companion to the essay. One 35B model, 5,468 sampled neuron poles (a pole is the positive or negative side of one neuron): at strong activation an LLM judge found one role in 47% and one role or one dominant role in 69%. Descriptions predict strong firing. No word-count, embedding or LLM-reader rival, no rewording test, and no second model beyond a case study of one neuron",
   "priority": "A",
   "topic": "Neurons as units (P1)"
  },
  {
   "cite": "Goodfire 2026, Neuron Atlas for Qwen3.6-35B-A3B (public sample of 3,000 neuron poles)",
   "url": "https://www.goodfire.com/research/public_neuron_atlas",
-  "why": "Descriptions, roles, examples and 'not this' cases for 3,000 poles of a model this project has not used. A vocabulary and a labelling format to copy. No licence is stated: ask before bulk use",
+  "why": "Descriptions, roles, examples and 'not this' cases for 3,000 poles of a model this project has not used. A vocabulary and a labelling format to copy. No data licence is stated, and Goodfire's website terms allow personal, non-commercial use only and forbid automated copying: ask before bulk use",
   "priority": "B",
   "topic": "Neurons as units (P1)"
  },
  {
-  "cite": "Barez, Wu and 25 co-authors 2026, Understanding AI from the Inside: The State of Mechanistic Interpretability for AI Safety (arXiv:2611.08438, 182 pages)",
+  "cite": "Barez, Wu and 25 co-authors 2026, Understanding AI from the Inside: The State of Mechanistic Interpretability for AI Safety (arXiv:2611.08438; 182 pages as first posted on 5 Nov 2026)",
   "url": "https://arxiv.org/abs/2611.08438",
   "why": "The field's own statement of where both premises stand. Learned features are its default unit; superposition is 'a hypothesis' in large models; shared algorithms are supported and shared representations less so. Read sections 4.2, 5, 6.5, 7.5, 9.1 and 14",
   "priority": "A",
@@ -2165,7 +2165,7 @@
  {
   "cite": "Shabalin and Piotrowski 2026, Comparing Sparsified MLPs and Transcoders: Many Transcoder Features Are Neurons in Disguise (workshop paper)",
   "url": "https://arxiv.org/abs/2610.24521",
-  "why": "Across 13 public transcoders, features that copy one neuron are a large share of active late-layer features, and only they have a stable counterpart in the network. Support for the raw neuron as a citable unit",
+  "why": "Across 13 public transcoders (learned sparse stand-ins for a model's MLP layers), features that copy one neuron are a substantial share of active late-layer features, and only they have a stable counterpart in the network. Support for the raw neuron as a citable unit",
   "priority": "A",
   "topic": "Neurons as units (P1)"
  },
@@ -2200,14 +2200,14 @@
  {
   "cite": "Jafari, Eberle, Khakzar, Nanda 2025, RelP: Faithful and Efficient Circuit Discovery in Language Models via Relevance Patching",
   "url": "https://arxiv.org/abs/2508.21258",
-  "why": "The attribution tool the Goodfire paper uses to rank neurons by causal effect. A cheap way to choose units by effect instead of by top activation",
+  "why": "The attribution tool the Goodfire paper uses to rank neurons by their estimated effect on a prediction. A cheap way to choose units by effect instead of by top activation",
   "priority": "B",
   "topic": "Neurons as units (P1)"
  },
  {
-  "cite": "Feucht, Haklay, Bhalla and 9 others 2026, Arithmetic in the Wild: Llama uses Base-10 Addition",
+  "cite": "Feucht, Haklay, Bhalla and 9 others 2026, Arithmetic in the Wild: Llama uses Base-10 Addition to Reason About Cyclic Concepts",
   "url": "https://arxiv.org/abs/2605.01148",
-  "why": "A causal neuron-level result in Llama 3.1 8B, one of this project's models: 28 MLP neurons in one layer are reused across tasks. Their job is an operation that no label from top sentences would reveal",
+  "why": "A causal neuron-level result in Llama 3.1 8B, one of this project's models: 28 MLP neurons in one layer are reused across tasks. Their job is a step of addition, the kind of operation a label read from top sentences may not reveal",
   "priority": "B",
   "topic": "Neurons as units (P1)"
  },
@@ -2219,7 +2219,7 @@
   "topic": "Neurons as units (P1)"
  },
  {
-  "cite": "Colin, Goetschalckx, Fel, Boutin, Serre, Oliver 2024, psychophysical comparison of neurons and dictionary units",
+  "cite": "Colin, Goetschalckx, Fel, Boutin, Serre, Oliver 2026, Choosing the right basis for interpretability: Psychophysical comparison between neuron-based and dictionary-based representations (arXiv version 2, March 2026; first posted in 2024 under another title)",
   "url": "https://arxiv.org/abs/2411.03993",
   "why": "In three experiments with 481 people on two image networks, dictionary units were judged more interpretable than single neurons. Human-rater evidence against P1, in vision models",
   "priority": "B",
@@ -2242,7 +2242,7 @@
  {
   "cite": "Leavitt and Morcos 2020, Selectivity considered harmful: evaluating the causal impact of class selectivity in DNNs",
   "url": "https://arxiv.org/abs/2003.01262",
-  "why": "A unit that fires selectively for a concept need not matter to what the model does. The study's units were never removed or steered, so they are selective readings and nothing more. Evidence from image networks",
+  "why": "Image networks trained to have far less class-selective units kept or nearly kept their accuracy, and networks pushed to be more selective got worse. Selectivity in single units is neither needed nor enough for what a network does. The study's units were never removed or steered, so they are selective readings and nothing more",
   "priority": "B",
   "topic": "Neurons as units (P1)"
  },
@@ -2256,14 +2256,14 @@
  {
   "cite": "Chang and Bergen 2025, Bigram Subnetworks: Mapping to Next Tokens in Transformer Language Models (NeurIPS)",
   "url": "https://arxiv.org/abs/2504.15471",
-  "why": "Early MLP layers do word-to-next-word lookup. Early-layer neurons should be tested separately before any claim that a neuron follows an idea",
+  "why": "In models up to 1B parameters, the part of the network that predicts the next word from the current word alone sits mostly in the first MLP layer. Early-layer neurons should be tested separately before any claim that a neuron follows an idea",
   "priority": "C",
   "topic": "Neurons as units (P1)"
  },
  {
   "cite": "Fishman, Chmiel, Banner, Soudry 2024, Scaling FP8 training to trillion-token LLMs",
   "url": "https://arxiv.org/abs/2409.12517",
-  "why": "Low-precision training exposes outliers amplified by the SwiGLU activation these models use. A study run at 4-bit should check its extreme neuron readings against full precision",
+  "why": "Low-precision (8-bit) training exposes outliers amplified by SwiGLU, the gated activation that Qwen and Llama models use. A study run at 4-bit should check its extreme neuron readings against full precision",
   "priority": "C",
   "topic": "Neurons as units (P1)"
  },
@@ -2291,7 +2291,7 @@
  {
   "cite": "Tigges, Hanna, Yu, Biderman 2024, LLM Circuit Analyses Are Consistent Across Training and Scale",
   "url": "https://arxiv.org/abs/2407.10827",
-  "why": "Across training and model size the parts that carry a circuit change while the algorithm stays. Convergence at the level of algorithms, not units",
+  "why": "Over training, the attention heads that carry a circuit can change while the algorithm stays; across model sizes from 70 million to 2.8 billion parameters, the same algorithms and kinds of component recur. Convergence at the level of algorithms and kinds of component, not individual units",
   "priority": "B",
   "topic": "Agreement between models (P2)"
  },
