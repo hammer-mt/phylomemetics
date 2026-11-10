@@ -162,6 +162,8 @@ Amendments proposed to registered designs:
 - LI-21 and LI-24 (lineage): add longest shared word span as a rival.
 - UN-23 (carrying a reading between models): treat units a joint dictionary calls exclusive as hypotheses.
 
+What was adopted differs from this list in four places. UN-23 was not amended. LI-24's amendment asks for its learned-feature arm to be run at two dictionary sizes, and does not add a shared-span rival. Two designs not listed here were amended: IN-22 (principal components as a further unit type, and two graders) and EN-25 (a linear probe as a fourth brake). The design pages in `../designs/` decide.
+
 ## Experiment seeds
 
 

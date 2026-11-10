@@ -20,7 +20,7 @@ CMU Movie Summary Corpus (Bamman et al. 2013): 42,306 Wikipedia film plots, abou
 
 ## Method
 
-Unit: rule plus eight sentences. Per concept: two keyword twins (six head-word sentences, two off-concept); two idea twins (same six, two word-free); two no-tell (eight head-word, on-concept: 'cannot tell'); one word-free; one blend; one empty. Prompts frozen on five spare concepts before test sentences exist. Script scores calls (study arm: kind 'story pattern'); a blind person matches names; concept bootstrap.
+Unit: rule plus eight sentences. Per concept: two keyword twins (six head-word sentences, two off-concept); two idea twins (same six, two word-free); two no-tell (eight head-word, on-concept: 'cannot tell'); one word-free; one blend; one empty. Prompts frozen on five spare concepts before test sentences exist. Script scores calls (study arm: kind 'trope', the paper's story pattern); a blind person matches names; concept bootstrap.
 
 ## Cheap rival it must beat
 
@@ -28,7 +28,7 @@ A count rule: one content word in all eight sentences means 'word'. It separates
 
 ## Premise it tests
 
-P1, indirectly: it tests reading, not neurons. The study's claim of story-pattern units rests mostly on labels: 13 of 31 named labels, 22 of 120 in the second reading. A pass gives such a label a stated likelihood ratio. A fail makes it no evidence against word detection, leaving the rewording test, where 2 of 31 Qwen units were specific.
+P1, indirectly: it tests reading, not neurons. The study's claim of story-pattern units rests mostly on labels: 13 of 31 named labels, 22 of 120 in the second reading. A pass says how much weight such a label carries. A fail makes it no evidence against word detection, leaving the rewording test, where 2 of 31 Qwen units were specific.
 
 ## Biology analogue
 
@@ -48,7 +48,7 @@ The study's prompt was never committed. The rebuilt one must reproduce the commi
 
 ## Reviewer note
 
-Remaining: the study's prompt is lost, so its arm is a reconstruction; made-up units are clear cases, so error is a floor; counting beats any reader on twins by construction. Changed: no-tell units replace plain keyword units, two prompts, count rule as rival, per-type falsifier with simulated power, human baseline.
+Remaining: the study's prompt is not in the repository, so its arm is a reconstruction; made-up units are clear cases, so error is a floor; counting beats any reader on twins by construction. Changed: no-tell units replace plain keyword units, two prompts, count rule as rival, per-type falsifier with simulated power, human baseline.
 
 ## Cross-area ranking
 
@@ -60,7 +60,7 @@ IN-21: concept and usual-word lists. IN-33: scores real labels by prediction and
 
 ## Note
 
-Prompted by the field survey (arXiv:2611.08438). Data check on 10 November 2026: 10 Nov 2026. CMU archive unpacked: 42,306 plots; README: 'Creative Commons Attribution-ShareAlike', no version; 666,239 sentences by a simple splitter; 50 head words counted (fewest 79). Hugging Face: Qwen/Qwen3-8B, Qwen/Qwen3-Embedding-0.6B, Apache-2.0. Repo: 120 records of eight sentences, no prompt; 4 of 22 second-reading story patterns share one word in all eight; the readings agree on kind for 19 of 26.
+Prompted by the field survey (arXiv:2611.08438). Data check on 10 November 2026: CMU archive unpacked: 42,306 plots; README: 'Creative Commons Attribution-ShareAlike', no version; 666,239 sentences by a simple splitter; 50 head words counted (fewest 79). Hugging Face: Qwen/Qwen3-8B, Qwen/Qwen3-Embedding-0.6B, Apache-2.0. Repo: 120 records of eight sentences, no prompt; 4 of 22 second-reading story patterns share one word in all eight; the readings agree on kind for 19 of 26.
 
 ## Sources
 

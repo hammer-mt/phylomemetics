@@ -61,3 +61,4 @@ From the field survey (arXiv:2611.08438): here descent passes through the writer
 - Acerbi and Stubbersfield 2023
 - Hagedorn and Darányi 2022 (Folktexts, Zenodo 6575263)
 - Barez, Wu et al. 2026, Understanding AI from the Inside (arXiv:2611.08438)
+- Guo et al. 2026, arXiv:2608.03859

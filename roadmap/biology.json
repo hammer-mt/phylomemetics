@@ -359,6 +359,33 @@
    "feasibility": "Yes (TRIPOD synopses)",
    "experiment": "Place annotated turning points with punctuation stripped. Rival: position alone; an LLM asked to mark the turns. Boundary units should be kept out of trees",
    "idea": "IN-S14"
+  },
+  {
+   "tool": "Missing heritability",
+   "does": "Compare what the named variants explain with what the whole genome explains",
+   "analogue": "Compare the heredity result from the 125 labelled units with the result from all 150,784 units",
+   "needs": "One re-run of the name-free extraction",
+   "feasibility": "Yes, after one re-run",
+   "experiment": "Find source comics from the labelled units alone, against 1,000 matched random unit sets. Rival: equally many words",
+   "idea": "IN-35"
+  },
+  {
+   "tool": "Spike-in standards and decoys",
+   "does": "Add samples with a known answer to measure a pipeline's error rate",
+   "analogue": "Run the labelling step on made-up units whose firing rule is known",
+   "needs": "Sentences confirmed by two people",
+   "feasibility": "Yes, on a new corpus",
+   "experiment": "How often does the labeller call a keyword detector an idea? Rival: a count rule, one content word in all eight sentences",
+   "idea": "IN-34"
+  },
+  {
+   "tool": "DNA-DNA hybridisation",
+   "does": "Measure whole-genome similarity with no named genes",
+   "analogue": "Similarity of two texts' loss gradients in one model, with no named units",
+   "needs": "RX-27's stories",
+   "feasibility": "Yes, after RX-27",
+   "experiment": "Name the true source of 200 deeply reworded stories among 20 candidates. Rival: the drop in the model's surprise when the candidate is placed before the story",
+   "idea": "LI-27"
   }
  ],
  "landmarks": [

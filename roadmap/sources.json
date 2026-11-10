@@ -23,7 +23,7 @@
  {
   "cite": "Barez, Wu and 25 co-authors 2026, Understanding AI from the Inside: The State of Mechanistic Interpretability for AI Safety (arXiv:2611.08438; 182 pages as first posted on 5 Nov 2026)",
   "url": "https://arxiv.org/abs/2611.08438",
-  "why": "The field's own statement of where both premises stand. Learned features are its default unit; superposition is 'a hypothesis' in large models; shared algorithms are supported and shared representations less so. Read sections 4.2, 5, 6.5, 7.5, 9.1 and 14",
+  "why": "The field's own statement of where both premises stand. Learned features are its default unit; superposition is 'a hypothesis' in large models; shared algorithms are supported and shared representations less so. Read sections 4.2, 5, 6.5, 7.5, 9.1, 11, 12.6 and 14",
   "priority": "A",
   "topic": "Neurons as units (P1)"
  },
@@ -2322,5 +2322,26 @@
   "why": "On dense Llama and Mistral models from 7B to 70B, 40 to 50% of activations across the model can be zeroed with little loss of performance. The yardstick for whether Goodfire's 92% carries over to dense models; cited in its sparsity section",
   "priority": "B",
   "topic": "Neurons as units (P1)"
+ },
+ {
+  "cite": "Guo, Xie, Li, Li 2026, Beyond Representational Similarity: Source-Conditioned Description-Length Gain for Generative Plagiarism Detection and Candidate Source Reranking",
+  "url": "https://arxiv.org/abs/2608.03859",
+  "why": "A source tracer that needs no training and no units: how much shorter a frozen model's description of a text becomes when a candidate source is placed before it. Built for plagiarism after heavy rewriting. The rival added to RX-27 and LI-21 on 10 November",
+  "priority": "A",
+  "topic": "Remix, novelty and influence"
+ },
+ {
+  "cite": "Akyürek, Bolukbasi, Liu, Xiong, Tenney, Andreas, Guu 2022, Towards Tracing Factual Knowledge in Language Models Back to the Training Data",
+  "url": "https://arxiv.org/abs/2205.11482",
+  "why": "The first benchmark for tracing a model's statement back to the training examples that taught it. Gradient and embedding tracers left much headroom, and a word-matching search did better. The warning behind LI-27",
+  "priority": "B",
+  "topic": "Remix, novelty and influence"
+ },
+ {
+  "cite": "Hinterleitner, Schoenegger, Roth 2026, Select or Project? Evaluating Lower-dimensional Vectors for LLM Training Data Explanations",
+  "url": "https://arxiv.org/abs/2601.16651",
+  "why": "The nearest earlier test of finding a text's original by gradient similarity, cited in LI-27",
+  "priority": "B",
+  "topic": "Remix, novelty and influence"
  }
 ]

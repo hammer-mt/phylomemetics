@@ -13,7 +13,7 @@ In short: Batman has a real core canon. With every name removed, films and games
 | [`study/`](study/) | The Batman study: the paper and all the code, data and results that produced it, with the robustness checks, the interactive companion page and the working session | Complete |
 | [`preregistration/`](preregistration/) | The pre-registered plans for the next experiments: stories with planted memes, and a head-to-head of neurons against keywords, embeddings and LLM reading on accuracy and cost | Planned, not run |
 | [`images/`](images/) | The image side experiment: an exploratory test of vision-model neurons on the works' posters and covers | Exploratory, not part of the paper |
-| [`roadmap/`](roadmap/) | The state of play: an audit of everything tried so far, a review of how strong the two core premises are, a registry of designs for the next experiments, a reading list and a visual map | Written 8 November 2026. No experiment was run for it |
+| [`roadmap/`](roadmap/) | The state of play: an audit of everything tried so far, a review of how strong the two core premises are, a registry of designs for the next experiments, a reading list and a visual map | Written 8 November 2026, updated 9 and 10 November. No experiment was run for it |
 
 - **Paper:** [`study/paper/can-creativity-be-reverse-engineered.pdf`](study/paper/can-creativity-be-reverse-engineered.pdf), or as Markdown: [`study/paper/paper.md`](study/paper/paper.md)
 - **Paper versions:** v1 was published on 21 October 2026 and is frozen. Changes go into a new version until it is published in turn; see [`study/paper/README.md`](study/paper/README.md).

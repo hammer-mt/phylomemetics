@@ -56,7 +56,7 @@ In the top twelve of 3 of 3 judges (what decides the premises fastest: rank 11; 
 
 ## Amendment, 10 November 2026
 
-From the review of LI-27 (10 November): add a rival that needs forward passes only, the drop in a model's surprise at the story when the candidate source is placed in front of it. The reviewer expects it to be among the strongest rivals.
+From the review of LI-27 (10 November): add a rival that needs forward passes only, the drop in a model's surprise at the story when the candidate source is placed in front of it. The reviewer expects it to be among the strongest rivals. From the field survey (arXiv:2611.08438): here, as in LI-21, the source sits in the writer's context window. State that a pass shows copying from a visible source only. Influence that arrives through training needs a test with randomly assigned training sets (seed LI-S14).
 
 ## Sources
 
@@ -64,3 +64,4 @@ From the review of LI-27 (10 November): add a rival that needs forward passes on
 - Li et al. 2026 (FakeWiki)
 - Chang et al. 2024
 - Hatzel and Biemann 2024 (story-emb)
+- Guo et al. 2026, arXiv:2608.03859

@@ -59,6 +59,11 @@
     "text": "In one unreviewed study of 7B models, about half of matched feature pairs pass a correlation of 0.6. A joint dictionary has already been trained on this project's exact pair, Qwen3-8B and Llama-3.1-8B. Paired text is free here. The project has not tried any learned map. The 2026 survey warns that joint dictionaries can report a feature as unique to one model when both have it."
    },
    {
+    "name": "Different models run the same algorithms",
+    "status": "partial",
+    "text": "The level the 2026 survey calls supported: attention patterns, features and circuits that recur across models, tasks and scales, with four works cited and no rates. It does not carry a unit-level reading, because the same algorithm can run on different units. Not tested here."
+   },
+   {
     "name": "The same individual neurons recur",
     "status": "weak",
     "text": "Gurnee et al. found 1 to 5% of GPT-2 neurons universal across retrainings of the same architecture, and concluded neurons are not the right unit. Here, the median twin across all 14,843 families is r = 0.40 against 0.36 for random units. A 2026 study of models up to 30B parameters finds that neurons shared between independently trained models are a shrinking share as models grow. Goodfire's companion paper studies one model and maps nothing between models."

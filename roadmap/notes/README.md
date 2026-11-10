@@ -13,7 +13,7 @@ No experiment, model or pipeline was run to produce any of this.
 
 ## Added on 10 November 2026
 
-Two notes cover documents published in the week of the sweep. They follow the same format and were made the same way: AI readers read each document section by section, a second agent checked each extraction against the text, a writer drew the note from the checked extractions, and another agent checked the note against the source and logged its changes.
+Two notes cover documents published in the week of the sweep. They follow the same format as the notes above but were made in more steps: AI readers read each document section by section, a second agent checked each extraction against the text, a writer drew the note from the checked extractions, and another agent checked the note against the source and logged its changes.
 
 - [`l14-goodfire-companion.md`](l14-goodfire-companion.md): Goodfire's "Neurons as an Interpretable Basis", the technical companion to the essay behind P1.
 - [`l15-interpretability-survey.md`](l15-interpretability-survey.md): the survey "Understanding AI from the Inside" (arXiv:2611.08438).

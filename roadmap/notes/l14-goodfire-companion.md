@@ -161,6 +161,8 @@ Amendments to registered designs:
 - AT-22 and EN-27: add larger arms, since 155 neurons carry half of one name.
 - EN-21: score steered text for any consistent effect.
 
+Six more designs were amended from the same assessment: IN-25, UN-21, UN-24, AT-21, AT-23 and AT-24. That makes fifteen. The full text of each amendment is on the design's page in `../designs/`, under "Amendment, 10 November 2026".
+
 ## Experiment seeds
 
 
