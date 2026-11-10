@@ -2315,5 +2315,12 @@
   "why": "Benchmarks for putting activations into words can be passed without access to the model's internals. A worded reading has to beat a reader that sees only the text",
   "priority": "B",
   "topic": "Measurement and validity"
+ },
+ {
+  "cite": "Liu, Ponnusamy, Cai, Guo, Kim, Athiwaratkun 2024, Training-Free Activation Sparsity in Large Language Models",
+  "url": "https://arxiv.org/abs/2408.14690",
+  "why": "On dense Llama and Mistral models from 7B to 70B, 40 to 50% of activations across the model can be zeroed with little loss of performance. The yardstick for whether Goodfire's 92% carries over to dense models; cited in its sparsity section",
+  "priority": "B",
+  "topic": "Neurons as units (P1)"
  }
 ]

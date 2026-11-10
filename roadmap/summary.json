@@ -12,7 +12,7 @@
   "Whether neuron units follow an idea when the wording changes. This is the claim that would justify the method, and it has never been tested at scale, here or in Goodfire's companion paper.",
   "Whether the units cause anything. Nobody in this project has turned a neuron up or down.",
   "Whether the small 4-bit models used here are 'clean' at all. The two audits behind the claim, the essay's and its companion paper's, are of models four times larger, and the paper covers only each neuron's strongest 3% of firings.",
-  "Whether the dense 8B models used here run on their strongest neuron firings, as Goodfire's 35B model does. If they do not, reading only the strong range is not justified for them.",
+  "Whether the dense 8B models used here run on their strongest neuron firings, as Goodfire's 35B model does. Earlier work on dense models could remove about half of all activations, not nine tenths. If these models are no sparser, reading only the strong range is not justified for them.",
   "Whether a learned map between models carries concept units across. Only one-to-one twins were tried.",
   "Whether neurons beat sentence embeddings or an LLM simply reading the text. Those rivals were never run, here or in Goodfire's companion paper.",
   "Whether any human agrees with the labels. Every labeller, judge and reviewer so far was an AI.",
