@@ -52,7 +52,7 @@ The '6 of 10 motifs' rule could not tell a win from a coin flip; replaced by a m
 
 ## Amendment, 10 November 2026
 
-From the field survey (arXiv:2611.08438): it calls pruning concept neurons and fine-tuning on negative examples 'often brittle': the concept is suppressed, not removed, and can be relearned or reached through other prompts with no error signal. Add two checks after the edit: 100 held-out prompts that reach the motif indirectly, and a short fine-tune on 50 motif stories, counting steps until the motif rate is within 5 points of the unedited model's.
+From the field survey (arXiv:2611.08438): it calls pruning concept neurons and fine-tuning on negative examples 'often brittle': the concept is suppressed, not removed, and may be relearned or reactivated later. Of erasure by editing the weights it says leftover ability may stay reachable through some prompts with no sign of failure. Add two checks after the edit: 100 held-out prompts that reach the motif indirectly, and a short fine-tune on 50 motif stories, counting steps until the motif rate is within 5 points of the unedited model's.
 
 ## Sources
 

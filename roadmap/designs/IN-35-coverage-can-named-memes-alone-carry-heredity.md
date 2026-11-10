@@ -16,11 +16,11 @@ The labelled set fails its own test, or more than 5% of matched random sets beat
 
 ## Data
 
-Committed in study/results: experiments.json and the robustness outputs (full-set score, nulls, word comparators), each model's memes.json.gz (families), labels.json and labels_wf.json (125 labelled Qwen families, 1,727 member units). Name-free corpus: 114 Wikipedia plots, 3,700 sentences, names replaced by codes, CC BY-SA 4.0. Per-unit name-free readings are not committed: re-run the frozen extraction once (Apple silicon, MLX).
+Committed in study/results: experiments.json and the robustness outputs (full-set score, nulls, word comparators), each model's memes.json.gz (families), labels.json and labels_wf.json (125 labelled Qwen families with 1,727 member units; the committed file lists 1,263 of them, at most 50 a family, so the other 464 must be rebuilt in the re-run). Name-free corpus: 114 Wikipedia plots, 3,700 sentences, names replaced by codes, CC BY-SA 4.0. Per-unit name-free readings are not committed: re-run the frozen extraction once (Apple silicon, MLX).
 
 ## Method
 
-Sets, hashed before the re-run: labelled units, their family members, catalogue families, random sets of 31 to 50,000. The re-run must reproduce the nine committed scores, or stop. The frozen statistic counts only units present in 2 to 16 of 32 Batman works; ties count half. Report each set's gap below its own shuffled-source chance, also within era.
+Sets, hashed before the re-run: labelled units, their family members, catalogue families, random sets of 31 to 50,000. The re-run must reproduce the nine committed scores, or stop. The frozen statistic counts only units present in 2 to 16 of 32 Batman works and treats a tie as the source not beaten. For small sets, where ties are common, also report the score with a tie counted as half. Report each set's gap below its own shuffled-source chance, also within era.
 
 ## Cheap rival it must beat
 
@@ -40,7 +40,7 @@ S. One re-run of the frozen name-free extraction per model (the paper gives roug
 
 ## Payoff
 
-A coverage line to print beside the heredity claim: the labelled set's retained gap and its rank among arbitrary sets; how many arbitrary units, and how many words, a typical set needs to pass; the adaptations each set misses; a split by label kind (59 of 125 labels are characters or places). First worked example of the roadmap's coverage rule.
+A coverage line to print beside the heredity claim: the labelled set's retained gap and its rank among arbitrary sets; how many arbitrary units, and how many words, a typical set needs to pass; the adaptations each set misses; a split by label kind (57 to 59 of 125 labels are characters or places, depending on which label file is used for the 26 units in both). First worked example of the roadmap's coverage rule.
 
 ## Main risk
 
@@ -48,7 +48,7 @@ Probably a fail: 73 of 125 labelled units sit in over 16 Batman works on named t
 
 ## Reviewer note
 
-Still an audit of one result on nine adaptations in one franchise, where word counts match neurons; a fail is expected and the admitted tier will likely be unscorable. Changed: the 50% bar became the paper's own test plus random-set rank; word sets joined; the Berl statement half was dropped.
+Still an audit of one result on nine adaptations in one franchise, where word counts match neurons; a fail is expected and the admitted tier will likely be unscorable. Changed: the 50% bar became the paper's own test plus random-set rank; word sets joined; a planned second half on human-coded statements was dropped.
 
 ## Cross-area ranking
 
@@ -56,11 +56,11 @@ Registered on 10 November, after the three cross-area judges had ranked the earl
 
 ## Overlaps with
 
-LI-01: random units beat meme families in trees on named text; this repeats that on name-free text with the pre-registered score. LI-02, LI-03: same score and corpus. IN-21, AT-21: supply the later tier. IN-30 measures increment, not coverage. AT-27 and CE-21 already test what admitted units miss in human-coded stories, so the statement half was dropped.
+LI-01: random units beat meme families in trees on named text; this repeats that on name-free text with the pre-registered score. LI-02, LI-03: same score and corpus. IN-21, AT-21: supply the later tier. IN-30 measures increment, not coverage. AT-27 and CE-21 already measure what frozen units miss in stories coded by people, so a planned second half of this design, on the human-coded statements of Berl et al. 2021, was dropped.
 
 ## Note
 
-Prompted by the field survey (arXiv:2611.08438). Data check on 10 November 2026: Repository: 125 labelled families with 1,727 member units; on named text 73 are in over 16 of 32 Batman works and 52 in the band; 59 are character or place labels; null spread 0.114; 1,309 words score 17%; no activations committed. Survey HTML: coverage defined by intervention. Crossref: Manolio DOI. OSF 72v3f (538 statements, CC BY 4.0) checked, then dropped.
+Prompted by the field survey (arXiv:2611.08438). Data check on 10 November 2026: Repository: 125 labelled families with 1,727 member units; on named text 73 are in over 16 of 32 Batman works and 52 in the band; 57 to 59 are character or place labels; null spread 0.114; 1,309 words score 17%; no activations committed. Survey HTML: coverage defined by intervention. Crossref: Manolio DOI. OSF 72v3f (538 statements, CC BY 4.0) checked, then dropped.
 
 ## Sources
 

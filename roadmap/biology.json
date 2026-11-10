@@ -339,13 +339,13 @@
    "analogue": "Grade each presence call by how strongly the unit fired: its band in its own range, or its rank among the token's strongest units",
    "needs": "Per-unit thresholds on general text",
    "feasibility": "Yes, after a calibration pass",
-   "experiment": "In Goodfire's companion paper a description picks the firing passage 86% of the time in the weakest band studied and 95% in the strongest. Test whether stronger calls recur more often across two summaries of one story. Rival: the study's film-relative rule",
+   "experiment": "In Goodfire's companion paper a judge model given a unit's description picks the firing passage out of two (chance 50%) 86% of the time in the weakest band studied and 95% in the strongest. Test whether stronger calls recur more often across two summaries of one story. Rival: the study's film-relative rule",
    "idea": "IN-S13"
   },
   {
    "tool": "Orthologs and paralogs",
    "does": "Tell a gene shared by descent between species from a copy inside one genome",
-   "analogue": "Matched neurons in two models are orthologs; neurons copied between layers of one model are paralogs",
+   "analogue": "Neurons copied between layers of one model are paralogs. Matched neurons are orthologs only where one model was built from another; in separately trained models they are look-alikes that arose independently",
    "needs": "Weights only",
    "feasibility": "Yes, under a day",
    "experiment": "Census of same-index copies in Qwen3-8B, then recount meme families and twins without them. Control: different-index pairs at the same layer gap",
@@ -410,7 +410,7 @@
    "who": "Beadle and Tatum",
    "when": "1941",
    "gave": "One gene, one enzyme: a clean rule that later needed a finer unit (split genes, alternative splicing).",
-   "memetic": "The essay's one neuron, one job, and the companion paper's revision a month later: 47% of neuron poles have one role, 69% one dominant role, and the rest are told apart by context. A pole is the wrong character for a tree wherever it has two roles.",
+   "memetic": "The essay's estimate that roughly 90% of neuron poles have one main job, and the companion paper's finer count a month later in a different model: 47% of neuron poles have one role and 69% one dominant role. For the rest it shows in two worked cases how context tells the roles apart, and says it has not established how common that is. A pole is the wrong trait to build a family tree from wherever it has two roles.",
    "status": "partial",
    "statusText": "rule stated, already being revised",
    "idea": "LI-S13"
@@ -491,7 +491,7 @@
    "who": "The minimal genome",
    "when": "2016",
    "gave": "A cell stripped to the genes it cannot live without, some with unknown function.",
-   "memetic": "A model run on the strongest 8% of its neuron activations per token loses little: loss rises 2.9%. It still depends on a band of weaker activity whose function is unclear. Whether the dense 8B models used here are sparse in the same way is untested.",
+   "memetic": "A model run on the strongest 8% of its neuron activations per token keeps most of its ability: next-word loss rises 2.9%, though six of ten reasoning, knowledge and coding benchmarks fall, by up to 20.9 points, until it is fine-tuned. It still depends on a band of weaker activity whose function is unclear. Whether the dense 8B models used here are sparse in the same way is untested.",
    "status": "partial",
    "statusText": "one model, not ours",
    "idea": "IN-32"

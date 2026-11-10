@@ -56,7 +56,7 @@ The filler films also set the presence bar, which fixes the false-fire rate by c
 
 ## Amendment, 10 November 2026
 
-Make the false-firing rate on filler-only text the headline, with presence set by each unit's own strong range on general text and not by a bar from other films. The companion paper describes random-text windows for measuring false firing and reports no result, so this is the missing number. Add an arm with about 250 tokens of lead-in: the paper found firing changes when earlier context is removed.
+Make the false-firing rate on filler-only text the headline, with presence set by each unit's own strong range on general text and not by a bar from other films. The companion paper lists 40 random-text windows for measuring the harm when its simulator predicts firings that do not happen, and reports no result for them. It gives no rate at which units fire on text without their motif, so this is the missing number. Add an arm with about 250 tokens of lead-in: the paper found firing changes when earlier context is removed.
 
 ## Sources
 

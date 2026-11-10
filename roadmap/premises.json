@@ -3,7 +3,7 @@
   "id": "P1",
   "title": "A meme can be measured by which neurons fire",
   "claim": "The sources are Cammarata's essay 'Neural networks are already clean' (Goodfire, October 2026) and its technical companion, Tigges et al., 'Neurons as an Interpretable Basis' (Goodfire, 10 November 2026). The essay says most neurons in modern language models have one main job. The paper says most have one role or a few at strong activation. If so, a neuron is a ready-made unit, and a meme is whatever makes it fire.",
-  "verdict": "Holds as a cheap, countable instrument. Not shown as the unit of culture. The essay's 90% is preliminary and self-graded. The companion paper's own figure is 69% of neuron poles with one job or one dominant job at strong activation, grouped by an LLM judge. Both are for models four times larger than the ones used here. The paper tests no cheap rival and no rewording, and the project has never steered or switched off a neuron. The field's survey of November 2026 still treats learned features, not neurons, as the default unit, while granting that superposition is unproven in large models and that MLP neurons are a privileged basis.",
+  "verdict": "Holds as a cheap, countable instrument. Not shown as the unit of culture. The essay's 90% is preliminary and self-graded. The companion paper's own figure is 69% of neuron poles (a pole is the positive or the negative side of one neuron) with one job or one dominant job at strong activation, grouped by an LLM judge. Both are for models four times larger than the ones used here. The paper tests no cheap rival and no rewording, and the project has never steered or switched off a neuron. The field's survey of November 2026 still treats features, usually found by training a second small network on a layer's activity, as the default unit, not neurons. It grants the neuron side two points. Superposition, the idea that a model packs in more features than it has dimensions, is unproven in large models. And the hidden neurons of a model's MLP blocks are a privileged basis, meaning the network's own arithmetic acts on each neuron separately.",
   "rungs": [
    {
     "name": "The reading is countable and repeatable",
@@ -18,12 +18,12 @@
    {
     "name": "The job is an idea, not a word",
     "status": "weak",
-    "text": "24 of the 33 strongest Batman units were name or place detectors. Only 2 of 31 Qwen units were specific to their own rewording. Goodfire's companion paper, on a different model, runs no rewording test and no word-count rival. Several of its worked examples fire beside a set phrase. A few showcased units tell near-identical phrases apart, with no numbers. The essay says feeling neurons often fire on commas."
+    "text": "24 of the 33 strongest Batman units were name or place detectors. Only 2 of 31 Qwen units were specific to their own rewording. Goodfire's companion paper, on a different model, runs no rewording test and no word-count rival. Several of its worked examples fire on a word inside or next to a set phrase. A few showcased units tell near-identical phrases apart, with no numbers. The essay says feeling neurons often fire on commas."
    },
    {
     "name": "One meme lives in one neuron",
     "status": "weak",
-    "text": "The essay's examples need hubs of 4, 8 and 20 neurons for one concept. The companion paper agrees with the critics: concepts without their own neuron are carried by combinations of neurons. In its audit of Qwen3-32B, half the push toward the name Colorado takes 155 neurons and 80% takes 2,299. Design IN-24 tests one neuron against a few, a direction and a dictionary feature."
+    "text": "The essay's examples need hubs of 4, 8 and 20 neurons for one concept. Critics of the essay said that most neurons having one job does not mean most concepts have one neuron. The companion paper points the same way: it suggests that concepts without their own neuron are carried by neurons that fire together. In its case study of one neuron in Qwen3-32B, half the push toward a Colorado name takes 155 neurons and 80% takes 2,299. Design IN-24 tests one neuron against a few, a direction and a dictionary feature."
    },
    {
     "name": "Neurons beat cheap rivals at measuring a text",
@@ -33,7 +33,7 @@
    {
     "name": "Turning the neuron up writes the meme",
     "status": "unknown",
-    "text": "Never tested here. Goodfire's companion paper steers one neuron and reports no numbers: raising a unit that fires on self-questioning made the model settle on an answer sooner. Elsewhere, single-neuron steering gives a clean, consistent effect for a small minority of neurons (130 of 294,912 in one 2026 census of a small Qwen), and the neuron that reads a concept is often not the one that writes it. The 2026 survey makes this the test of a label: a unit stands for a concept only if changing it shifts the output, measured against random units of matched size."
+    "text": "Never tested here. Goodfire's companion paper reports steering for one neuron, with no numbers: raising a unit that fires on self-questioning made the model settle on an answer sooner. It also silences one neuron in Qwen3-32B, after which the model's wrong answer 'Colorado' falls to 1%, from the 30% a critic had measured. Elsewhere, single-neuron steering gives a clean, consistent effect for a small minority of neurons (130 of 294,912 in one 2026 census of a small Qwen), and the neuron that reads a concept is often not the one that writes it. The 2026 survey makes this the test of a label: a unit stands for a concept only if changing it shifts the output, measured against random units of matched size."
    },
    {
     "name": "Neurons list every meme a model knows",

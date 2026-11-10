@@ -8,11 +8,11 @@ In Qwen3-8B and Llama 3.1 8B with four-bit weights, how small a share of each la
 
 ## Prediction
 
-The paper's sparsity does not carry over. In both models, keeping each token's strongest 10% raises loss by 5% or more, and holding the rise under 5% takes a quarter or more. At 128 units in one layer, neurons keep more of the layer's effect than random mixtures of neurons, but not 0.05 more than principal components.
+The paper's sparsity was measured on a model that sends each token to 8 of 256 blocks of neurons per layer. It does not carry over to dense models, which use every neuron on every token. In both models, keeping each token's strongest 10% raises loss by 5% or more, and holding the rise under 5% takes a quarter or more. At 128 units in one layer, neurons keep more of the layer's effect than random mixtures of neurons, but not 0.05 more than principal components.
 
 ## What would refute it
 
-In either model, on 1 million held-out tokens: a kept share of 15% or less holds the rise under 5% (at 10%, the paper's result carries over outright); or, averaged over four layers at 128 units, neurons beat principal components by 0.05 or more, or fail to beat random mixtures. Power: about 1,500 documents; expected sampling error 0.15 points, unconfirmed.
+In either model, on 1 million held-out tokens: a kept share of 15% or less holds the rise under 5% (the paper kept 7.8% of routed activations for a 2.9% rise; under 5% at 10% here means its result carries over outright); or, averaged over four layers at 128 units, neurons beat principal components by 0.05 or more, or fail to beat random mixtures. Power: about 1,500 documents; expected sampling error 0.15 points, unconfirmed.
 
 ## Data
 
@@ -36,11 +36,11 @@ Minimal genome: delete what the cell survives without, against random deletions.
 
 ## Cost
 
-S. Per model: about 20 whole-model arms of 1 million tokens and 70 single-layer arms of 100,000, forward passes only; one to two days for both models at the speed in the study's notes, which must be re-timed. No activations are stored, so 8-bit repeats fit the laptop. Optional and beyond S: the paper's own model as a positive control.
+S. Per model: about 20 whole-model arms of 1 million tokens and 70 single-layer arms of 100,000, forward passes only; one to two days for both models at the speed measured in the pre-registration (about 1,000 tokens a second), which must be re-timed. No activations are stored, so 8-bit repeats fit the laptop. Optional and beyond S: the paper's own model as a positive control.
 
 ## Payoff
 
-The loss rise at every kept share under the paper's rule; whether each neuron's own top and bottom 3% is enough; damage per value removed, band by band; the share of kept firings with the gate input negative; and whether neurons or principal components carry a layer more sparsely. Yardstick: the loss gap between 4-bit and 8-bit builds.
+The loss rise at every kept share under the paper's rule; whether each neuron's own top and bottom 3% is enough; damage per value removed, band by band; the share of kept firings made by two negative parts multiplying (each neuron's output is a gate times a value); and whether neurons or principal components carry a layer more sparsely. Yardstick: the loss gap between 4-bit and 8-bit builds.
 
 ## Main risk
 
@@ -60,11 +60,11 @@ IN-22: its amended top-8 test is this design's single-layer arm; run it once, he
 
 ## Note
 
-Prompted by Goodfire's companion paper. Data check on 10 November 2026: Checked 10 November 2026 by the drafter and again by the reviewer; nothing was run on any model. FineWeb (Hugging Face API and dataset server): HuggingFaceFW/fineweb is public, licence odc-by. Its sample-10BT config has 15 parquet files, 30.6 GB, 14,868,862 documents and a token_count field. That is about 670 tokens a document (by arithmetic), so 500,000 tokens is roughly 750 documents. CMU Movie Summary Corpus: the README says "All data is released under a Creative Commons Attribution-ShareAlike License" (no version given); plots are from the 2 November 2012 Wikipedia dump. I recounted the 48 MB archive: 42,306 summaries, 13,145,251 words (mean 311, median 187). The 24,134 summaries of 150 words or more hold 11.7 million words (mean 485). (Cut for length.)
+Prompted by Goodfire's companion paper. Data check on 10 November 2026: Checked 10 November 2026 by the drafter and again by the reviewer; nothing was run on any model. FineWeb (Hugging Face API and dataset server): HuggingFaceFW/fineweb is public, licence odc-by. Its sample-10BT config has 15 parquet files, 30.6 GB, 14,868,862 documents and a token_count field. That is about 670 tokens a document (by arithmetic), so 500,000 tokens is roughly 750 documents. CMU Movie Summary Corpus: the README says "All data is released under a Creative Commons Attribution-ShareAlike License" (no version given); plots are from the 2 November 2012 Wikipedia dump. The reviewer recounted the 48 MB archive: 42,306 summaries, 13,145,251 words (mean 311, median 187). The 24,134 summaries of 150 words or more hold 11.7 million words (mean 485).
 
 ## Sources
 
 - Tigges et al. 2026 (Goodfire, Neurons as an Interpretable Basis), Table 1 and Figure 19
-- Liu et al. 2024 (TEAL, arXiv:2408.14690), Tables 1, 4 and 10, which rerun Lee et al. 2024 (CATS)
+- Liu et al. 2024 (TEAL, arXiv:2408.14690): Tables 1 and 4, which rerun Lee et al. 2024 (CATS), and Table 10
 - FineWeb sample-10BT (Hugging Face, ODC-By)
 - CMU Movie Summary Corpus (Bamman, O'Connor and Smith 2013)

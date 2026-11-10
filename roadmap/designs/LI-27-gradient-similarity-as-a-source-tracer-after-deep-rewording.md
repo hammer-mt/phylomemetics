@@ -16,7 +16,7 @@ The gradient-minus-best-rival gap has a 95% interval (resampling stories, best r
 
 ## Data
 
-No new texts. Test: RX-27's stories, not yet built, from 250 little-known film plots in the CMU Movie Summary Corpus (42,306 plots, CC BY-SA): 50 development sources, 200 held out, 20 candidate plots each. Later, descriptive only: LI-21's 768 retellings of Folktexts tales (Zenodo 6575263, CC BY-SA 4.0). Readers: Qwen3-8B and Llama 3.1 8B (4-bit compressed weights), Qwen3-1.7B (full precision).
+No new texts. Test: RX-27's stories, not yet built, from 250 little-known film plots in the CMU Movie Summary Corpus (42,306 plots, CC BY-SA): 50 development sources, 200 held out, 20 candidate plots each. Later, descriptive only: LI-21's 768 texts, about 740 of them retellings, grown from Folktexts tales (Zenodo 6575263, CC BY-SA 4.0). Readers: Qwen3-8B and Llama 3.1 8B (4-bit compressed weights), Qwen3-1.7B (full precision).
 
 ## Method
 
@@ -24,7 +24,7 @@ A text's gradient: how the weights would move if the model learned it, read thro
 
 ## Cheap rival it must beat
 
-Word overlap (BM25), longest shared word span, surprise-weighted word overlap, sentence embeddings (e5, story-emb), RX-27's LLM judge, text length, averaged internal state, RX-27's neuron units, the scrambled-weight gradient score, and the in-context surprisal drop. Most dangerous: the surprisal drop, a plagiarism detector run on Qwen3-8B and Llama 3.1 8B (Guo et al. 2026). If it wins, a forward pass suffices.
+Word overlap (BM25), longest shared word span, surprise-weighted word overlap, sentence embeddings (e5, story-emb), RX-27's LLM judge, text length, averaged internal state, RX-27's neuron units, the scrambled-weight gradient score, and the in-context surprisal drop. Most dangerous: the surprisal drop, a plagiarism detector run on the base versions of Qwen3-8B and Llama 3.1 8B (Guo et al. 2026). If it wins, a forward pass suffices.
 
 ## Premise it tests
 
@@ -40,7 +40,7 @@ M: about a week on one 24 GB laptop once RX-27's stories exist: two to three day
 
 ## Payoff
 
-The first gradient-score accuracy with cheap rivals in the same test and neither text in the model's training data. The nearest earlier test (Hinterleitner et al. 2026) had neither: among five candidates it found a paraphrase's original 99% of the time, and 22% (chance 20%) on newly generated text. Also three internal readouts ranked against a forward pass.
+A gradient-score accuracy with cheap rivals in the same test, on stories written for the test that no reader was trained on; the candidate plots are Wikipedia text and may be in the readers' training data. We know of no earlier one. The nearest earlier test (Hinterleitner et al. 2026) had neither: among five candidates its full gradient found a paraphrase's original 99% of the time, and 22% (chance 20%) on newly generated text; a subset of components chosen on the same test reached about 36%. Also three internal readouts ranked against a forward pass.
 
 ## Main risk
 
@@ -48,7 +48,7 @@ Most likely the surprisal drop, story embeddings or the LLM judge win: BM25 beat
 
 ## Reviewer note
 
-Remains: a win is unlikely (the nearest earlier test fell to chance on newly generated text) and a loss by the plainest gradient score closes little. Changed: test moved from LI-21's six tales to RX-27's 200 independent stories; power restated; scrambled-weight control; settings frozen on development sources; earlier test cited.
+Remains: a win is unlikely (the nearest earlier test scored 22% to 36% on newly generated text, where chance is 20%) and a loss by the plainest gradient score closes little. Changed: test moved from LI-21's six tales to RX-27's 200 independent stories; power restated; scrambled-weight control; settings frozen on development sources; earlier test cited.
 
 ## Cross-area ranking
 
@@ -60,7 +60,7 @@ An added arm on RX-27's stories and, later, LI-21's trees; it builds no texts. I
 
 ## Note
 
-Prompted by the field survey (arXiv:2611.08438). Data check on 10 November 2026: Checked by the reviewer on 10 November 2026. No model was run; the only computation was a power simulation on made-up right and wrong calls. Data and models (fetched again, independently of the drafter): - Zenodo API, record 6575263: "j-hagedorn/trilogy: Updated Ashliman Folktexts dataset", v1.1, 24 May 2022, one zip of 10.8 MB, open access, licence field "other-open". The data paper (doi 10.5334/johd.78) says the dataset is distributed under CC BY-SA 4.0 and holds 1,518 tales. - CMU Movie Summary Corpus page: 42,306 plot summaries; "All data is released under a Creative Commons Attribution-ShareAlike License" (no version given). - Hugging Face API: Qwen/Qwen3-8B and Qwen/Qwen3-1.7B (Apache-2.0); meta-llama/Llama-3.1-8B-Instruct (llama3.1 licence, gated); the three mlx-community 4-bit builds exist. (Cut for length.)
+Prompted by the field survey (arXiv:2611.08438). Data check on 10 November 2026: Checked by the reviewer on 10 November 2026. No model was run; the only computation was a power simulation on made-up right and wrong calls. Data and models (fetched again, independently of the drafter): - Zenodo API, record 6575263: "j-hagedorn/trilogy: Updated Ashliman Folktexts dataset", v1.1, 24 May 2022, one zip of 10.8 MB, open access, licence field "other-open". The data paper (doi 10.5334/johd.78) says the dataset is distributed under CC BY-SA 4.0 and holds 1,518 tales. - CMU Movie Summary Corpus page: 42,306 plot summaries; "All data is released under a Creative Commons Attribution-ShareAlike License" (no version given). - Hugging Face API: Qwen/Qwen3-8B and Qwen/Qwen3-1.7B (Apache-2.0); meta-llama/Llama-3.1-8B-Instruct (llama3.1 licence, gated); the three mlx-community 4-bit builds exist.
 
 ## Sources
 

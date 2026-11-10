@@ -52,7 +52,7 @@ Drift is now measured against a random-selection loop, because LLM rewriting dri
 
 ## Amendment, 10 November 2026
 
-From the field survey (arXiv:2611.08438): the activation monitors it lists are linear probes and alerts on learned features; it names no monitor built on single neurons, and warns that monitors miss inputs their features do not track. Add a fourth brake: a linear probe on the residual stream, fitted on the unit brake's data. If the probe holds and the units do not, the failure belongs to the neuron basis.
+From the field survey (arXiv:2611.08438): the activation monitors it lists use linear probes, alerts on learned features, tracked causal effects among attention heads, MLP blocks or features, and outlier detection; it names no monitor built on single neurons, and warns that monitors built on learned features miss inputs those features do not track. Add a fourth brake: a linear probe on the residual stream, fitted on the unit brake's data. If the probe holds and the units do not, the failure belongs to the neuron basis.
 
 ## Sources
 

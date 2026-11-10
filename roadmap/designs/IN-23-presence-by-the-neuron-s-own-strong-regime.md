@@ -56,7 +56,7 @@ In the top twelve of 1 of 3 judges (what decides the premises fastest: rank 10).
 
 ## Amendment, 10 November 2026
 
-Make the companion paper's rule the primary definition: a firing counts when it is at or beyond the unit's own 97th percentile on general text (3rd for a negative pole), with the neuron's gate open. Report the share of the study's presence calls that fall below it, and run the label test in the paper's bands (97th to 99th, 99th to 99.9th, 99.9th to 99.99th, above). Keep 30% of maximum as a second reading.
+Make the companion paper's strong range the primary definition: a firing counts when it is at or beyond the unit's own 97th percentile on general text (3rd for a negative pole). Also require the neuron's gate to be open, as the paper does when it counts roles. (A neuron multiplies two inputs. The gate is one of them, and it is open when that input is positive.) Report the share of the study's presence calls that fall below it, and run the label test in the paper's bands (97th to 99th, 99th to 99.9th, 99.9th to 99.99th, above). Keep 30% of maximum as a second reading.
 
 ## Sources
 

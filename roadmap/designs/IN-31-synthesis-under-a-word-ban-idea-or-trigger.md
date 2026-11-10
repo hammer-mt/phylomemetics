@@ -20,11 +20,11 @@ Written by the experiment in English, CC BY 4.0: about 165,000 texts of 50 to 60
 
 ## Method
 
-Frozen: units, ranges, ban lists (keywords, each unit's 50 strongest words), 20 settings, prompts tuned on study units. 14 feedback rounds of 20 drafts, then one fresh text per unseen setting. An attacker edits the idea out, same budget and ban. Units also run unbanned. Two blind LLM judges from other families pick a concept or 'none'. Bootstrap over concepts.
+Frozen: units, ranges, ban lists (keywords, each unit's 50 strongest words), 20 scenes for the fresh texts that the feedback rounds never use, prompts tuned on study units. 14 feedback rounds of 20 drafts, then one fresh text per unseen scene. An attacker edits the idea out, same budget and ban. Units also run unbanned. Two blind LLM judges from other families pick a concept or 'none'. Bootstrap over concepts.
 
 ## Cheap rival it must beat
 
-Same game: the model asked 'is this about X?' (likeliest to win); the model's probability that a banned keyword comes next (a tie means units predict words); a direction (mean internal state, concept minus control); an embedding prototype. A token table (each token's average FineWeb firing) voids texts it ranks top 1%. Planted hidden-word and sentence-frame detectors must fail unscreened.
+Same game: the model asked 'is this about X?' (likeliest to win); the model's probability that a banned keyword comes next (a tie means units predict words); a direction (mean internal state, concept minus control); an embedding prototype. A token table (each token's average FineWeb firing) voids texts it ranks top 1%. Ten made-up detectors with a known trigger (a hidden word list or a sentence frame) go through the same loop with that screen switched off, and must not pass.
 
 ## Premise it tests
 
@@ -56,7 +56,7 @@ Registered on 10 November, after the three cross-area judges had ranked the earl
 
 ## Overlaps with
 
-IN-21: concepts, keyword lists, frozen units; this is its adversarial sequel. IN-23: FineWeb pass and own-range thresholds. IN-24: the direction. EN-21: the label-only test in its amendment is round one here, on other units. US-21 and EN-22: attack and feedback loops. IN-30: cheap readers. IN-03: successor.
+IN-21: concepts, keyword lists, frozen units; this is its adversarial sequel. IN-23: FineWeb pass and own-range thresholds. IN-24: the direction. EN-21: the label-only test in its amendment is round one here, on other units. US-21: its scored-rewrite attack. EN-28: the same feedback loop, run on 20-neuron sets with a goal. IN-30: cheap readers. IN-03: successor.
 
 ## Note
 

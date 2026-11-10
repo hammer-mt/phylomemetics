@@ -52,7 +52,7 @@ The 1,000 random films are the paused pre-registration's held-out set, so the da
 
 ## Amendment, 10 November 2026
 
-From the field survey (arXiv:2611.08438): its sources agree that prompting often beats handles inside the model, so the prediction stands. It adds that steering vectors often degrade on related but different text, and fail without any error. Score every handle at three doses and on 40 extra held-out stories from a second source such as folktales, and report B-down, story-kept and fluency separately. A win on film plots alone is not general.
+From the field survey (arXiv:2611.08438): it says prompting often outperforms methods that act inside the model, citing only the benchmark this design already rests on (AxBench), so the prediction stands but gains no new support. It adds that steering vectors often degrade on related but different text, and fail without any error. Score every handle at three doses and on 40 extra held-out stories from a second source such as folktales, and report B-down, story-kept and fluency separately. A win on film plots alone is not general.
 
 ## Sources
 

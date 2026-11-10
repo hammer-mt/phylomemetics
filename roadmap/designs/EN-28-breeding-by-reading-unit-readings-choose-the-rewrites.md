@@ -48,7 +48,7 @@ Four rounds of rewriting may wear the story down, so every loop falls below one 
 
 ## Reviewer note
 
-Remaining weakness: units will probably lose to the critic, so the news is the per-meter gaming numbers; 0.05 and the 0.2 spread are conventions. Changed: critic loop is the bar, humans primary, power restated for 16 pairs, tuning gate, rewording baseline, closed-model arm dropped, 'feedback only' claim removed.
+Remaining weakness: units will probably lose to the critic, so the news is, for each scorer, how far a loop can push its score up without blind raters seeing a gain; 0.05 and the 0.2 spread are conventions. Changed: critic loop is the bar, humans primary, power restated for 16 pairs, tuning gate, rewording baseline, closed-model arm dropped, 'feedback only' claim removed.
 
 ## Cross-area ranking
 
@@ -56,7 +56,7 @@ Registered on 10 November, after the three cross-area judges had ranked the earl
 
 ## Overlaps with
 
-EN-22: stories, meme pairs, 20-neuron sets, judge, combined score, plain-rewrite arm. EN-23: contrast sentences, Qwen units. IN-23: own-range thresholds. US-21: its scored-rewrite attack, here given a goal and blind raters. EN-24, EN-25: selection loops with unit scorers. EN-21: ban-list rule. The word-ban synthesis design from the same paper runs this search on single units.
+EN-22: stories, meme pairs, 20-neuron sets, judge, combined score, plain-rewrite arm. EN-23: contrast sentences, Qwen units. IN-23: own-range thresholds. US-21: its scored-rewrite attack, here given a goal and blind raters. EN-24, EN-25: selection loops with unit scorers. EN-21: ban-list rule. IN-31, the word-ban synthesis design prompted by the same paper, runs this search on single units.
 
 ## Note
 

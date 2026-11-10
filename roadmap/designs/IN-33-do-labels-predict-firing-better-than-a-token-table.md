@@ -20,11 +20,11 @@ Test, drawn by seed after every fitted part is hashed: 600 film plots from the C
 
 ## Method
 
-The lead pole of each labelled family (42 families are one neuron), frozen at paper v1. Firing: a token beyond its general-text 99.9th percentile; scorable units have 40 firing sentences. A non-Claude reader rates up to 150 firing sentences and three length-matched others each, half from the same documents. Rewrites drop the label's words and the unit's 20 top tokens.
+The lead unit of each labelled family (the study merged units that fire together into families; 42 of the 125 are a single neuron), frozen at paper v1. Firing: a token beyond its general-text 99.9th percentile; scorable units have 40 firing sentences. A non-Claude reader rates up to 150 firing sentences and three length-matched others each, half from the same documents. Rewrites drop the label's words and the unit's 20 top tokens.
 
 ## Cheap rival it must beat
 
-Most dangerous: the token table, which beat written explanations on average in Bills et al. 2023, and a token-pair table; 59 of the 125 labels name a character or place. Also: the unit's 20 top tokens as its label, no label, word overlap, sentence-embedding regression, length. Controls, labelled alike: 125 layer-matched random poles, 125 sums of two.
+Most dangerous: the token table, which beat written explanations on average in Bills et al. 2023, and a token-pair table; 57 to 59 of the 125 labels name a character or place, depending on which label file is used for the 26 units in both. Also: the unit's 20 top tokens as its label, no label, word overlap, sentence-embedding regression, length. Controls, labelled alike: 125 layer-matched random poles, 125 sums of two.
 
 ## Premise it tests
 
@@ -48,11 +48,11 @@ Most labels may tie the token table, repeating the study's result: in natural te
 
 ## Reviewer note
 
-Remaining: labels, reader and rewrites are all LLM work, checked by one person on 300 sentences, and the units were picked for Batman presence, so a fail says little about neurons in general. Changed: where-only AUC, strong-range truth, a per-unit pass rule, a word-list label rival, built rewrites, sampled scoring.
+Remaining: labels, reader and rewrites are all LLM work, checked by one person on 300 sentences, and the units were picked for Batman presence, so a fail says little about neurons in general. Changed: the score now asks only where a unit fires, not how strongly; a firing means the unit's own strong range; each unit passes or fails on its own; the unit's top tokens were added as a rival label; rewrites follow a fixed rule; sentences are sampled for scoring.
 
 ## Cross-area ranking
 
-Registered on 10 November, after the three cross-area judges had ranked the earlier designs, so it was not ranked by them. Its reviewer's answer to whether it should run first: no: because these units were picked for Batman presence and are mostly name detectors, so the likely fail is discounted; IN-21 asks the same P1 question on frozen concept units. Run it on IN-23's general-text pass.
+Registered on 10 November, after the three cross-area judges had ranked the earlier designs, so it was not ranked by them. Its reviewer's answer to whether it should run first: no: because these units were picked for Batman presence and nearly half are labelled as characters or places, so the likely fail is discounted; IN-21 asks the same P1 question on frozen concept units. Run it on IN-23's general-text pass.
 
 ## Overlaps with
 
@@ -60,7 +60,7 @@ Successor to IN-02 and IN-03: same labels, unseen text, a fitted word rival, ans
 
 ## Note
 
-Prompted by Goodfire's companion paper. Data check on 10 November 2026: Checked 10 November 2026. CMU archive unpacked: 42,306 plots; README says Creative Commons Attribution-ShareAlike, no version; 10,539 plots of 20 to 60 sentences are outside both lists. Hugging Face: FineWeb, odc-by, 15 files under sample/10BT. Thirteen Wikipedia pages: 490 summaries, about 2,170 sentences, CC BY-SA 4.0. Label files: 125 units, 115 distinct labels. Bills et al.: token-table passage read.
+Prompted by Goodfire's companion paper. Data check on 10 November 2026: Checked 10 November 2026. CMU archive unpacked: 42,306 plots; README says Creative Commons Attribution-ShareAlike, no version; 10,539 plots of 20 to 60 sentences are outside both lists. Hugging Face: FineWeb, odc-by, 15 files under sample/10BT. Thirteen Wikipedia pages (episode tables for the 1966 Batman series, Batman: The Animated Series, The New Batman Adventures, Batman Beyond, The Batman, Batman: The Brave and the Bold, Beware the Batman, Batman: Caped Crusader and Gotham seasons 1 to 5): 490 summaries, about 2,170 sentences, CC BY-SA 4.0. Label files: 125 units, 115 distinct labels. Bills et al.: token-table passage read.
 
 ## Sources
 
