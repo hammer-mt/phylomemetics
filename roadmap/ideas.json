@@ -1013,6 +1013,93 @@
    "status": "registered"
   },
   {
+   "id": "IN-31",
+   "title": "Synthesis under a word ban: idea or trigger?",
+   "question": "When a writing model that is told how strongly a unit (one sign of one neuron) fired on each draft is barred from the unit's usual words, can it learn to write text that blind judges accept as the unit's idea and that fires the unit strongly, and can a second writer then fire the unit without the idea?",
+   "hypothesis": "At least 18 of 60 concept units pass, against at most 3 of 60 random units matched on layer and firing rate, given the same concepts. A pass: 10 or more of 20 fresh texts are judged on-idea, reach the unit's strong range and clear the token table; under 5 of 20 attacker texts fire it while judged off-idea.",
+   "falsifier": "Fewer than 9 of 60 pass, or the pass share is under 15 points above the random units'. 9 to 17: undecided. Void if the unbanned loop reaches under 9 of 10 study name units, or more than 1 of 10 planted detectors passes. A true 10% is refuted at least 82 times in 100; a true 40% confirmed 90.",
+   "data": "Written by the experiment in English, CC BY 4.0: about 165,000 texts of 50 to 60 tokens. Units: IN-21's 30 concept units each in Qwen3-8B and Llama 3.1 8B. FineWeb sample-10BT (ODC-By): 10 million tokens for word lists and token tables; 20,000 60-token passages fix each strong range: the peak only 1% reach. All read after one 250-token neutral lead-in.",
+   "method": "Frozen: units, ranges, ban lists (keywords, each unit's 50 strongest words), 20 settings, prompts tuned on study units. 14 feedback rounds of 20 drafts, then one fresh text per unseen setting. An attacker edits the idea out, same budget and ban. Units also run unbanned. Two blind LLM judges from other families pick a concept or 'none'. Bootstrap over concepts.",
+   "rivals": "Same game: the model asked 'is this about X?' (likeliest to win); the model's probability that a banned keyword comes next (a tie means units predict words); a direction (mean internal state, concept minus control); an embedding prototype. A token table (each token's average FineWeb firing) voids texts it ranks top 1%. Planted hidden-word and sentence-frame detectors must fail unscreened.",
+   "premise": "P1. A pass share above the random units' adds what IN-21's fixed pairs cannot: the unit follows the idea in wording it was never chosen on, and an optimiser cannot fire it without the idea. Units reached only with their words, or fired by a wording trick, are triggers. One fired by a neighbouring idea is wider than its label.",
+   "bio": "Synonymous recoding: rewrite a gene in other codons and see whether the protein still works.",
+   "cost": "M. About 550 search runs of 300 short texts through two 8B models (one to two days of laptop time); about 10 million tokens written and 35 million read by the writer, 22,000 judge calls (a few hundred dollars at mid-range prices); three hours of human rating. About two weeks, after IN-21 freezes its units and IN-23's FineWeb pass exists.",
+   "payoff": "Every concept unit sorted beside its IN-21 result: idea unit; trigger (reached only with its words, or fired by a wording trick); wider than its label (fired by another idea); or unreachable. Also the controls the paper's synthesis test lacks, on the study's models: the same search on a random unit, a planted word list and with the idea removed.",
+   "risk": "The count may land between 9 and 17 and decide nothing. A pass needs an LLM attacker to fail, and lenient judges create passes twice, so a human rates 150 accepted writer texts and 150 firing attacker texts judged on-idea; over 15% overturned in either makes the result untested. Many IN-21 units may never reach their strong range.",
+   "review": "Still rests on an LLM attacker failing, and counts from 9 to 17 decide nothing. Added a token-table screen, unseen settings, planted detectors with known triggers, two missing rivals (the model's own word prediction; the model asked directly), a targeted human audit and fail classes; corrected the power claim.",
+   "priority": 3.6,
+   "sources": [
+    "Tigges et al. 2026, Neurons as an Interpretable Basis (Goodfire)",
+    "study/results/wording.json (rewording test, IN-03)",
+    "Wu et al. 2025, AxBench, arXiv:2501.17148",
+    "Penedo et al. 2024, FineWeb, arXiv:2406.17557"
+   ],
+   "region": "instrument",
+   "status": "registered",
+   "registered": "10 November 2026",
+   "overlaps": "IN-21: concepts, keyword lists, frozen units; this is its adversarial sequel. IN-23: FineWeb pass and own-range thresholds. IN-24: the direction. EN-21: the label-only test in its amendment is round one here, on other units. US-21 and EN-22: attack and feedback loops. IN-30: cheap readers. IN-03: successor.",
+   "ranking": "Registered on 10 November, after the three cross-area judges had ranked the earlier designs, so it was not ranked by them. Its reviewer's answer to whether it should run first: no: because it cannot start until IN-21 in step 1 has frozen its units, and it is worth two weeks only if some pass there. Run it straight after step 1, as the adversarial check on IN-21's passers.",
+   "note": "Prompted by Goodfire's companion paper. Data check on 10 November 2026: Hugging Face API, 10 Nov 2026: HuggingFaceFW/fineweb (odc-by, config sample-10BT), mlx-community/Qwen3-8B-4bit (apache-2.0), mlx-community/Meta-Llama-3.1-8B-Instruct-4bit (llama3.1), Qwen/Qwen3-Embedding-0.6B (apache-2.0). arXiv API: 2406.17557, 2501.17148. Repo: wording.json and labels.json exist; IN-21's units do not yet. The paper's Figure 13 axis shows 14 rounds; its 120 of 128 used no ban. Goodfire's atlas and tools are not used."
+  },
+  {
+   "id": "IN-32",
+   "title": "Is a dense 8B model sparse in neurons?",
+   "question": "In Qwen3-8B and Llama 3.1 8B with four-bit weights, how small a share of each layer's neuron activations can be kept per token before next-word loss (the model's error in predicting the real next word) rises 5%, and at equal small counts do neurons carry more of a layer's effect than principal components (main directions of variation)?",
+   "hypothesis": "The paper's sparsity does not carry over. In both models, keeping each token's strongest 10% raises loss by 5% or more, and holding the rise under 5% takes a quarter or more. At 128 units in one layer, neurons keep more of the layer's effect than random mixtures of neurons, but not 0.05 more than principal components.",
+   "falsifier": "In either model, on 1 million held-out tokens: a kept share of 15% or less holds the rise under 5% (at 10%, the paper's result carries over outright); or, averaged over four layers at 128 units, neurons beat principal components by 0.05 or more, or fail to beat random mixtures. Power: about 1,500 documents; expected sampling error 0.15 points, unconfirmed.",
+   "data": "Development, for percentiles, means and bases: 2 million tokens from FineWeb's 10-billion-token sample (web text, ODC-By) and 300 plots from the CMU Movie Summary Corpus (42,306 Wikipedia film plots, CC BY-SA). Test: 500,000 tokens from an unused FineWeb file and 500,000 from about 800 other CMU plots, excluding study and pre-registration titles. Nothing is fitted on test text.",
+   "method": "Whole model: per layer and token, keep the strongest share of the study's MLP neuron activations (seven fixed shares, 50% to 5%), or only values beyond each neuron's own percentile band. One layer at a time: keep the top 8 to 512 units per basis; a layer's effect is the damage from removing it. Percentage loss rise, bootstrapped over documents.",
+   "rivals": "Words cannot matter: every arm reads the same text and the outcome is the model's own loss. Controls at 10%: a random share kept; a fixed set of neurons kept; the strongest removed against a random share removed. Bases at equal count: random mixtures of neurons, the layer output's own coordinates, and its principal components, the most dangerous.",
+   "premise": "P1, indirectly. If 10% suffices, the paper's strong-band argument reaches the study's models. If not, the band amendments of 10 November rest on readability alone (IN-23) and the paper's 92% must not be quoted for these models. If principal components match neurons, neurons are not a privileged sparse code here. No outcome shows that a firing names an idea.",
+   "bio": "Minimal genome: delete what the cell survives without, against random deletions.",
+   "cost": "S. Per model: about 20 whole-model arms of 1 million tokens and 70 single-layer arms of 100,000, forward passes only; one to two days for both models at the speed in the study's notes, which must be re-timed. No activations are stored, so 8-bit repeats fit the laptop. Optional and beyond S: the paper's own model as a positive control.",
+   "payoff": "The loss rise at every kept share under the paper's rule; whether each neuron's own top and bottom 3% is enough; damage per value removed, band by band; the share of kept firings with the gate input negative; and whether neurons or principal components carry a layer more sparsely. Yardstick: the loss gap between 4-bit and 8-bit builds.",
+   "risk": "The share result is largely foreseeable for Llama. Liu et al. 2024 report that removing 46% of Llama 3 8B's MLP hidden state, by a cruder rule, took perplexity from 5.87 to 6.78 (about 8% in loss, our conversion), and that 90% removed model-wide destroyed it. New here: Qwen, four-bit weights, the band profile and the basis test.",
+   "review": "Remaining: the share result is mostly foreseeable from Liu et al. on Llama 3 8B, and the basis test has no trained dictionary. Changed: the prediction now says the paper's sparsity will not carry over; basis test moved to single layers at small counts; band arm added; GPU day dropped.",
+   "priority": 2.8,
+   "sources": [
+    "Tigges et al. 2026 (Goodfire, Neurons as an Interpretable Basis), Table 1 and Figure 19",
+    "Liu et al. 2024 (TEAL, arXiv:2408.14690), Tables 1, 4 and 10, which rerun Lee et al. 2024 (CATS)",
+    "FineWeb sample-10BT (Hugging Face, ODC-By)",
+    "CMU Movie Summary Corpus (Bamman, O'Connor and Smith 2013)"
+   ],
+   "region": "instrument",
+   "status": "registered",
+   "registered": "10 November 2026",
+   "overlaps": "IN-22: its amended top-8 test is this design's single-layer arm; run it once, here, and cite it there. IN-23: this tests the band its amended rule assumes, and can share one web-text pass. IN-29, UN-24: same builds; adds loss under removal at 4-bit and 8-bit. Outside the registry: Liu et al. 2024 already cover Llama 3 8B at full precision.",
+   "ranking": "Registered on 10 November, after the three cross-area judges had ranked the earlier designs, so it was not ranked by them. Its reviewer's answer to whether it should run first: no: because Liu et al. 2024 already make the main result foreseeable for Llama 3 8B, and neither outcome changes steps 1 to 5. Run it beside IN-23, which needs the same web-text pass and percentiles.",
+   "note": "Prompted by Goodfire's companion paper. Data check on 10 November 2026: Checked 10 November 2026 by the drafter and again by the reviewer; nothing was run on any model. FineWeb (Hugging Face API and dataset server): HuggingFaceFW/fineweb is public, licence odc-by. Its sample-10BT config has 15 parquet files, 30.6 GB, 14,868,862 documents and a token_count field. That is about 670 tokens a document (by arithmetic), so 500,000 tokens is roughly 750 documents. CMU Movie Summary Corpus: the README says \"All data is released under a Creative Commons Attribution-ShareAlike License\" (no version given); plots are from the 2 November 2012 Wikipedia dump. I recounted the 48 MB archive: 42,306 summaries, 13,145,251 words (mean 311, median 187). The 24,134 summaries of 150 words or more hold 11.7 million words (mean 485). (Cut for length.)"
+  },
+  {
+   "id": "IN-33",
+   "title": "Do labels predict firing better than a token table?",
+   "question": "Given only the label of a unit (one side of one neuron), can a reader model say which sentences of unseen plot text it fires on better than a table of each token's (word piece's) average activation, the unit's top tokens used as its label, or another unit's label?",
+   "hypothesis": "At least 20% of scorable units among the study's 125 labelled Qwen3-8B units pass step 1: the label finds their firing sentences with AUC (chance 0.5) at least 0.05 above both token tables and same-kind wrong labels. At least 8 pass step 2, firing on at least 20 of 40 word-free rewrites and under 8 of 40 rewritten controls.",
+   "falsifier": "Fewer than 10% of scorable labels pass step 1, or fewer than 4 units pass step 2. A gap counts only if its 95% interval excludes zero: a label no better than the table then passes about 3% of the time, one truly 0.10 better 69% to 98% (simulated), and a true 20% is missed about once in 60 runs.",
+   "data": "Test, drawn by seed after every fitted part is hashed: 600 film plots from the CMU Movie Summary Corpus (42,306 plots, CC BY-SA), outside the study and pre-registration lists, and 490 Batman television episode summaries from 13 Wikipedia pages (CC BY-SA 4.0); about 22,000 sentences. Development: the study corpus, 300 other CMU plots, 10 million FineWeb tokens (ODC-By).",
+   "method": "The lead pole of each labelled family (42 families are one neuron), frozen at paper v1. Firing: a token beyond its general-text 99.9th percentile; scorable units have 40 firing sentences. A non-Claude reader rates up to 150 firing sentences and three length-matched others each, half from the same documents. Rewrites drop the label's words and the unit's 20 top tokens.",
+   "rivals": "Most dangerous: the token table, which beat written explanations on average in Bills et al. 2023, and a token-pair table; 59 of the 125 labels name a character or place. Also: the unit's 20 top tokens as its label, no label, word overlap, sentence-embedding regression, length. Controls, labelled alike: 125 layer-matched random poles, 125 sums of two.",
+   "premise": "P1. A pass: study units carry nameable content beyond token identity, in the study's own model. A fail shows these labels add nothing to a word table; it counts against the units only if fresh labels and step 2 fail too. If two-pole sums pass as often as single poles, a pass says nothing for the neuron as the unit.",
+   "bio": "Gene Ontology evidence codes: an annotation graded by the test it has passed",
+   "cost": "M. One general-text pass on Qwen3-8B, planned jointly with IN-23; minutes of plot extraction; about 45,000 reader calls of 25 sentences (a few hundred US dollars, estimated); about 15,000 short rewrites by a third model family; a person rating 300 sentences; one to two weeks.",
+   "payoff": "A class for every label: beats a word table or not, fires without its words or not. The share of firings the reader calls on-label, by strength band. The word-level comparison Goodfire's tests lack, for this project's model and labels only. Whether labels rewritten from general-text examples do better. A label-scoring harness that IN-23, AT-21 and EN-21 can reuse.",
+   "risk": "Most labels may tie the token table, repeating the study's result: in natural text an idea and its words arrive together, so only step 2 separates them. Rewrites may lose the idea; a words-kept rewrite sets each unit's ceiling. A weak reader could fail good labels; an examples-only reader on 30 units and a person's ratings bound that.",
+   "review": "Remaining: labels, reader and rewrites are all LLM work, checked by one person on 300 sentences, and the units were picked for Batman presence, so a fail says little about neurons in general. Changed: where-only AUC, strong-range truth, a per-unit pass rule, a word-list label rival, built rewrites, sampled scoring.",
+   "priority": 3.7,
+   "sources": [
+    "Tigges et al. 2026, Neurons as an Interpretable Basis (Goodfire)",
+    "Bills et al. 2023, Language models can explain neurons in language models",
+    "Bamman, O'Connor and Smith 2013 (CMU Movie Summary Corpus)",
+    "study/results/labels.json, labels_wf.json, wording.json, robustness/label_test.json"
+   ],
+   "region": "instrument",
+   "status": "registered",
+   "registered": "10 November 2026",
+   "overlaps": "Successor to IN-02 and IN-03: same labels, unseen text, a fitted word rival, answers kept. Nearest registered: IN-23's label test by band; run both on one pass and use this scoring there. IN-S7 is its fresh-label arm. Step 2 resembles IN-21, which starts from concepts, not labels. Two-pole sums follow IN-22.",
+   "ranking": "Registered on 10 November, after the three cross-area judges had ranked the earlier designs, so it was not ranked by them. Its reviewer's answer to whether it should run first: no: because these units were picked for Batman presence and are mostly name detectors, so the likely fail is discounted; IN-21 asks the same P1 question on frozen concept units. Run it on IN-23's general-text pass.",
+   "note": "Prompted by Goodfire's companion paper. Data check on 10 November 2026: Checked 10 November 2026. CMU archive unpacked: 42,306 plots; README says Creative Commons Attribution-ShareAlike, no version; 10,539 plots of 20 to 60 sentences are outside both lists. Hugging Face: FineWeb, odc-by, 15 files under sample/10BT. Thirteen Wikipedia pages: 490 summaries, about 2,170 sentences, CC BY-SA 4.0. Label files: 125 units, 115 distinct labels. Bills et al.: token-table passage read."
+  },
+  {
    "id": "IN-S1",
    "region": "instrument",
    "status": "seed",
@@ -1190,7 +1277,7 @@
    "region": "universality",
    "status": "registered",
    "overlaps": "Asks nearly the same question as IN-29, which the judges would run instead.",
-   "update": "Before the size arm, test each Qwen3 size for copied layer blocks: neurons with the same index that correlate strongly a fixed number of layers apart. The companion paper's authors suspect Qwen3-32B was built by copying layers of Qwen3-14B. Count duplicated neurons once. In the precision arm, also compare firings in the strong range and gate signs, as in the amendment to IN-29."
+   "update": "Before the size arm, test each Qwen3 size for copied layer blocks: neurons with the same index that correlate strongly a fixed number of layers apart. The companion paper's authors suspect Qwen3-32B was initialised by copying layers of Qwen3-14B. Count duplicated neurons once. In the precision arm, also compare firings in the strong range and gate signs, as in the amendment to IN-29."
   },
   {
    "id": "UN-25",
@@ -2035,6 +2122,35 @@
    "region": "lineage",
    "status": "registered",
    "overlaps": "Asks nearly the same question as RX-22, which the judges would run instead."
+  },
+  {
+   "id": "LI-27",
+   "title": "Gradient similarity as a source tracer after deep rewording",
+   "question": "On stories whose true source is fixed by construction and whose wording is removed, does the similarity of two texts' loss gradients (the direction a model's weights would move if it learned each text) name the source better than word overlap, sentence embeddings, an LLM judge, or the drop in the model's surprise when the candidate is in its context?",
+   "hypothesis": "On RX-27's 200 held-out deep-transform stories (new setting, names and wording; 20 candidate plots each, chance 5%), gradient similarity in Qwen3-8B names the true source first at least 10 percentage points more often than the best rival, and at least 10 points more often than the same score from three copies with scrambled weights (each matrix's entries shuffled).",
+   "falsifier": "The gradient-minus-best-rival gap has a 95% interval (resampling stories, best rival re-picked each time) that includes zero, or the lead over the scrambled copies' average is under 10 points. In simulation, 200 stories catch a 15-point lead in 85 to 95% of runs and a 10-point lead in 40 to 70%. LI-21's six sealed tales are reported, not tested.",
+   "data": "No new texts. Test: RX-27's stories, not yet built, from 250 little-known film plots in the CMU Movie Summary Corpus (42,306 plots, CC BY-SA): 50 development sources, 200 held out, 20 candidate plots each. Later, descriptive only: LI-21's 768 retellings of Folktexts tales (Zenodo 6575263, CC BY-SA 4.0). Readers: Qwen3-8B and Llama 3.1 8B (4-bit compressed weights), Qwen3-1.7B (full precision).",
+   "method": "A text's gradient: how the weights would move if the model learned it, read through added matrices (adapters) in components chosen from a short menu on development stories; word-embedding layers excluded. Gradients standardised on development texts; score: how closely two align (cosine). Settings committed before held-out stories are scored. Statistic: true source ranked first. Null: source labels permuted within genre.",
+   "rivals": "Word overlap (BM25), longest shared word span, surprise-weighted word overlap, sentence embeddings (e5, story-emb), RX-27's LLM judge, text length, averaged internal state, RX-27's neuron units, the scrambled-weight gradient score, and the in-context surprisal drop. Most dangerous: the surprisal drop, a plagiarism detector run on Qwen3-8B and Llama 3.1 8B (Guo et al. 2026). If it wins, a forward pass suffices.",
+   "premise": "P1, indirectly: the score uses no units. A pass where neuron units fail means descent is in the model but single neurons do not expose it. A fail is graded: beating word rivals and scrambled copies but not the surprisal drop means a forward pass reads descent better; beating neither means gradients record words. P2: Qwen and Llama errors compared.",
+   "bio": "DNA–DNA hybridisation: whole-genome similarity with no named genes.",
+   "cost": "M: about a week on one 24 GB laptop once RX-27's stories exist: two to three days writing gradient code the repository lacks, then about three days of passes (roughly 29,000 gradient, 26,000 forward). Day-one check: if 8B gradients do not fit in memory, Qwen3-1.7B at full precision becomes the registered reader. No paid services.",
+   "payoff": "The first gradient-score accuracy with cheap rivals in the same test and neither text in the model's training data. The nearest earlier test (Hinterleitner et al. 2026) had neither: among five candidates it found a paraphrase's original 99% of the time, and 22% (chance 20%) on newly generated text. Also three internal readouts ranked against a forward pass.",
+   "risk": "Most likely the surprisal drop, story embeddings or the LLM judge win: BM25 beat gradient attribution at fact tracing (Akyürek et al. 2022). Gradients may mostly record rare words, and plots the reader has memorised give weak gradients. This is the plainest gradient score, so a fail does not close corrected variants. Stories are model-written, and nothing runs before RX-27.",
+   "review": "Remains: a win is unlikely (the nearest earlier test fell to chance on newly generated text) and a loss by the plainest gradient score closes little. Changed: test moved from LI-21's six tales to RX-27's 200 independent stories; power restated; scrambled-weight control; settings frozen on development sources; earlier test cited.",
+   "priority": 2.8,
+   "sources": [
+    "Barez et al. 2026 (survey, section 11; TracIn, cited there as Garima et al. 2020)",
+    "Hinterleitner et al. 2026 (gradient retrieval of paraphrase originals; arXiv 2601.16651)",
+    "Akyürek et al. 2022 (fact tracing; arXiv 2205.11482)",
+    "Guo et al. 2026 (source-conditioned description-length gain; arXiv 2608.03859)"
+   ],
+   "region": "lineage",
+   "status": "registered",
+   "registered": "10 November 2026",
+   "overlaps": "An added arm on RX-27's stories and, later, LI-21's trees; it builds no texts. Its surprisal-drop rival should be added to RX-27 and LI-21 whether or not this runs. US-23's re-set drafts could be scored the same way. Unlike LI-21, LI-22 and LI-24, it reads no neuron units. LI-25 and LI-26 were taken, hence LI-27.",
+   "ranking": "Registered on 10 November, after the three cross-area judges had ranked the earlier designs, so it was not ranked by them. Its reviewer's answer to whether it should run first: no: because it tests no unit, moves neither premise directly and will most likely lose to the surprisal drop. Add that rival to RX-27 at step 5 instead (forward passes only), and run this arm after RX-27.",
+   "note": "Prompted by the field survey (arXiv:2611.08438). Data check on 10 November 2026: Checked by the reviewer on 10 November 2026. No model was run; the only computation was a power simulation on made-up right and wrong calls. Data and models (fetched again, independently of the drafter): - Zenodo API, record 6575263: \"j-hagedorn/trilogy: Updated Ashliman Folktexts dataset\", v1.1, 24 May 2022, one zip of 10.8 MB, open access, licence field \"other-open\". The data paper (doi 10.5334/johd.78) says the dataset is distributed under CC BY-SA 4.0 and holds 1,518 tales. - CMU Movie Summary Corpus page: 42,306 plot summaries; \"All data is released under a Creative Commons Attribution-ShareAlike License\" (no version given). - Hugging Face API: Qwen/Qwen3-8B and Qwen/Qwen3-1.7B (Apache-2.0); meta-llama/Llama-3.1-8B-Instruct (llama3.1 licence, gated); the three mlx-community 4-bit builds exist. (Cut for length.)"
   },
   {
    "id": "LI-S1",
@@ -3407,6 +3523,35 @@
    "update": "Add arms of 100 and 500 units ranked by their effect on the answer, since the companion paper traces half of the push toward one name to 155 neurons. Silence units only where they are in their own strong range, and report the paper's damage measure (the change in next-word predictions over the firing token and the next 16) beside accuracy. From the field survey (arXiv:2611.08438): it lists a swap test beside the silencing test, and warns that unchanged behaviour after silencing does not show a unit is unused. Add an arm: copy the 10 units' activations from the passage with the meme into its twin without, and measure the rise in 'yes' answers, against matched random units and a difference-of-means direction."
   },
   {
+   "id": "EN-28",
+   "title": "Breeding by reading: unit readings choose the rewrites",
+   "question": "With writer and instruction held fixed, does choosing among candidate rewrites by a frozen reader's unit (neuron) readings move a story toward meme A and away from meme B, as blind human raters judge it, more than choosing by an LLM critic, embeddings, word counts or random units, or than one plain rewrite?",
+   "hypothesis": "No. With A's usual words banned, the unit loop's human-rated combined score (0 to 1: A up, B down, story kept, fluent) is under 0.05 above the critic loop's, one plain rewrite's and even the random-unit loop's. Its own reading still rises, but rewording by a third model, Phi-4, removes over half of its lead over plain rewrites reworded likewise.",
+   "falsifier": "On 160 held-out stories, each claim falls if the unit loop beats that arm (critic, plain rewrite, random units) by 0.05 or more, 95% interval (16 pairs resampled) above zero. The trigger claim falls if rewording keeps over half the lead. With spreads of 0.2 within and 0.05 between pairs, a true 0.10 passes 99% of the time, 0.05 half.",
+   "data": "EN-22's 208 name-masked, ten-sentence film plots (B present, A absent, human-confirmed; 16 pairs from EN-23's 20 memes) from the CMU Movie Summary Corpus (42,306 Wikipedia summaries, CC BY-SA): 48 tuning, 160 held out. No arm may add A's keywords (pre-registration file) or an A unit's 20 strongest content words in 10 million FineWeb tokens (ODC-By). 25,000 rewrites, released CC BY-SA.",
+   "method": "Reader: 20 Llama 3.1 8B neurons per meme, chosen on EN-23's development sentences and frozen; sentence score: their mean peak, in percentiles of FineWeb sentence peaks. Writer: Llama, told 'more A, less B'; four rounds of five candidates, shown the survivor's scores; highest A minus B survives. Settings fixed on tuning stories. Humans rate four arms blind, Qwen3-8B all.",
+   "rivals": "One plain rewrite. The same loop, its survivor chosen by an LLM critic (Llama rating each sentence in words), sentence embeddings, TF-IDF word counts, a probe on Llama's averaged internal state, or, as the null, random units matched on layer and firing rate; all fitted on the same development sentences, length capped. Most dangerous: the critic, the same-budget prompt arm.",
+   "premise": "P1. Beating the critic: frozen units gauge an idea in a text better than the same model can say; support. Beating only random units: signal, no more than plain reading. Reading up, raters unmoved, lead lost on rewording: triggers; unit scores should not grade optimisers. If Qwen's units for those memes rise too, the models share triggers: caution for P2.",
+   "bio": "Supernormal stimulus: a dummy egg that out-triggers the real one.",
+   "cost": "M. Needs EN-23's sentences and EN-22's stories first; best run as extra arms of EN-22. About 25,000 rewrites by a local 8B writer and 3,000 Phi-4 rewrites and rewordings (four to five laptop days, untimed); about 17 hours of blind rating by two people (unit, critic, random-unit and plain arms side by side; 40 stories rated twice). No paid API.",
+   "payoff": "For units, an LLM critic, embeddings and word counts, the two numbers a grader handed to an optimiser needs: the blind gain its loop buys, and how much of its own rise survives rewording. And whether an open reader can steer a writer without touching weights: a Phi-4 writer repeats the unit and critic loops on 48 held-out stories, Qwen-judged.",
+   "risk": "Four rounds of rewriting may wear the story down, so every loop falls below one plain rewrite and only loop-against-loop gaps inform. The 8B writer may ignore the scores, leaving selection alone. Gate: stop unless the unit loop's own reading ends above the random-unit loop's in 36 of 48 tuning stories. Tuning-story differences spreading above 0.3: report as underpowered.",
+   "review": "Remaining weakness: units will probably lose to the critic, so the news is the per-meter gaming numbers; 0.05 and the 0.2 spread are conventions. Changed: critic loop is the bar, humans primary, power restated for 16 pairs, tuning gate, rewording baseline, closed-model arm dropped, 'feedback only' claim removed.",
+   "priority": 3.0,
+   "sources": [
+    "Tigges et al. 2026, Neurons as an Interpretable Basis (Goodfire)",
+    "Wu et al. 2025, AxBench, arXiv:2501.17148",
+    "Bradley et al. 2023, QDAIF, arXiv:2310.13032",
+    "Bamman, O'Connor, Smith 2013, CMU Movie Summary Corpus"
+   ],
+   "region": "engineering",
+   "status": "registered",
+   "registered": "10 November 2026",
+   "overlaps": "EN-22: stories, meme pairs, 20-neuron sets, judge, combined score, plain-rewrite arm. EN-23: contrast sentences, Qwen units. IN-23: own-range thresholds. US-21: its scored-rewrite attack, here given a goal and blind raters. EN-24, EN-25: selection loops with unit scorers. EN-21: ban-list rule. The word-ban synthesis design from the same paper runs this search on single units.",
+   "ranking": "Registered on 10 November, after the three cross-area judges had ranked the earlier designs, so it was not ranked by them. Its reviewer's answer to whether it should run first: no: because it cannot start until EN-23's sentences and EN-22's stories exist, neither a run-first step; units will probably lose to the critic, so it settles neither premise fast. Run it as extra arms if EN-22 runs.",
+   "note": "Prompted by Goodfire's companion paper. Data check on 10 November 2026: Checked 10 November 2026. CMU corpus file opened: 42,306 summaries, about 20,800 with ten or more sentences; README: Creative Commons Attribution-ShareAlike, version unstated. Hugging Face API: Llama-3.1-8B-Instruct (llama3.1 licence, gated), Qwen3-8B (Apache-2.0), Phi-4 (MIT), MLX 4-bit builds of all three, FineWeb (ODC-By). arXiv API: 2501.17148, 2310.13032. Repository: 34 memes; keyword lists include common words. EN-22 and EN-23 are not run."
+  },
+  {
    "id": "EN-S1",
    "region": "engineering",
    "status": "seed",
@@ -4465,7 +4610,7 @@
    "priority": 0,
    "title": "Copied layers: a census of duplicate neurons",
    "question": "Do the study's models contain neurons that are copies of the neuron at the same index a fixed number of layers away, and how much do such copies inflate unit counts and twin rates inside the Qwen family?",
-   "note": "From Goodfire's companion paper (10 November 2026). The paper's authors suspect Qwen3-32B was built by copying layers of Qwen3-14B. If so, some agreement inside a model family is inheritance, not convergence. Weights only, under a day. Control: different-index pairs at the same layer gap, and the same census in Llama 3.1 8B."
+   "note": "From Goodfire's companion paper (10 November 2026). The paper's authors suspect Qwen3-32B was initialised by copying layers of Qwen3-14B. If so, some agreement inside a model family is inheritance, not convergence. Weights only, under a day. Control: different-index pairs at the same layer gap, and the same census in Llama 3.1 8B."
   },
   {
    "id": "LI-S14",
