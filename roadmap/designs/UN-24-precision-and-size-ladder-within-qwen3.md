@@ -54,9 +54,14 @@ Made precision the primary arm and size a stated secondary with its own small-sa
 
 Asks nearly the same question as IN-29, which the judges would run instead.
 
+## Amendment, 10 November 2026
+
+Before the size arm, test each Qwen3 size for copied layer blocks: neurons with the same index that correlate strongly a fixed number of layers apart. The companion paper's authors suspect Qwen3-32B was built by copying layers of Qwen3-14B. Count duplicated neurons once. In the precision arm, also compare firings in the strong range and gate signs, as in the amendment to IN-29.
+
 ## Sources
 
 - Cammarata 2026
 - Huh et al. 2024
 - Koepke et al. 2026
 - study/results/robustness/nulls.json
+- Tigges et al. 2026, Neurons as an Interpretable Basis

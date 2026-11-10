@@ -50,9 +50,14 @@ Both pipelines come from one person and one family of coding assistants, so shar
 
 Changed: every name now carries a motif, so it is scored for validity as well as reproducibility, and the written definition must be beaten on both; cost raised to M. Remaining: IN29 already tests precision, address agreement is near-certain by construction, and the study showed twins failing on name-free text.
 
+## Amendment, 10 November 2026
+
+Extend the name with what the companion paper shows a reading depends on: the band (a percentile, and the reference corpus that fixed it), whether the gate was open, the role that fired, and for models with experts the expert index. Add a reproducibility row: recompute each unit's threshold on a second, disjoint sample of general text and report agreement of the presence calls.
+
 ## Sources
 
 - Callahan, McMurdie and Holmes 2017, doi:10.1038/ismej.2017.119
 - Paulo and Belrose 2025, arXiv:2501.16615
 - Gurnee et al. 2024, arXiv:2401.12181
 - study/results/robustness/nulls.json (f2_agreement)
+- Tigges et al. 2026, Neurons as an Interpretable Basis

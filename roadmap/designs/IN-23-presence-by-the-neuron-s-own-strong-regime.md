@@ -54,9 +54,14 @@ Two repairs. Foils that merely contained the label's words made the weak bin har
 
 In the top twelve of 1 of 3 judges (what decides the premises fastest: rank 10). Checks whether the study's presence calls sit in the strong range the source essay vouches for, which fixes the presence rule that every document-level design inherits.
 
+## Amendment, 10 November 2026
+
+Make the companion paper's rule the primary definition: a firing counts when it is at or beyond the unit's own 97th percentile on general text (3rd for a negative pole), with the neuron's gate open. Report the share of the study's presence calls that fall below it, and run the label test in the paper's bands (97th to 99th, 99th to 99.9th, 99.9th to 99.99th, above). Keep 30% of maximum as a second reading.
+
 ## Sources
 
 - Cammarata 2026
 - Bolukbasi et al. 2021
 - Nanda 2026 (LessWrong comment)
 - study/discover.py (presence rule)
+- Tigges et al. 2026, Neurons as an Interpretable Basis

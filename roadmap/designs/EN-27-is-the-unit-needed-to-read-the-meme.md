@@ -50,9 +50,14 @@ Redundancy. Models often have several routes to an answer, so a null may mean ba
 
 Added by the reviewer: the area steered units but never tested whether detector units are needed for reading. Remaining weakness: a null is ambiguous because of redundancy, and the areas on neurons as units or measurement validity may register a similar lesion test.
 
+## Amendment, 10 November 2026
+
+Add arms of 100 and 500 units ranked by their effect on the answer, since the companion paper traces half of the push toward one name to 155 neurons. Silence units only where they are in their own strong range, and report the paper's damage measure (the change in next-word predictions over the firing token and the next 16) beside accuracy.
+
 ## Sources
 
 - Öztürk 2026, LLM Electrodes, doi:10.21203/rs.3.rs-11577020/v1
 - Cammarata 2026, Neural networks are already clean
 - Arditi et al. 2024, arXiv:2406.11717
 - Arad, Mueller, Belinkov 2025, arXiv:2505.20063
+- Tigges et al. 2026, Neurons as an Interpretable Basis

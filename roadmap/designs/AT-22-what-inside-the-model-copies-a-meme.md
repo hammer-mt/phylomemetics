@@ -54,9 +54,14 @@ Changed: per-motif pass counts became a pooled drop; added a 512-neuron arm, twi
 
 2 of 3 judges thought the area reviewer rated this too high.
 
+## Amendment, 10 November 2026
+
+Add a 2,048-neuron arm. In the companion paper's circuit tracing, half of the push toward one place name came from 155 neurons and 80% from 2,299, so 64 or 512 may be too few to carry a motif. Silence the chosen neurons only on tokens where they are in their own strong range, and report whether that does as much as silencing them everywhere.
+
 ## Sources
 
 - Arora et al. 2026, arXiv:2601.22594
 - Liu, Joshi, Dawson and Piper 2026, arXiv:2610.12989
 - Wu et al. 2025, AxBench, arXiv:2501.17148
 - Cammarata 2026, Neural networks are already clean
+- Tigges et al. 2026, Neurons as an Interpretable Basis

@@ -54,9 +54,14 @@ Per-concept AUC on 20 against 20 items has an error near 0.08, so 'within 0.05' 
 
 In the top twelve of 1 of 3 judges (what decides the premises fastest: rank 5). Decides whether the unit should be one neuron, a small set or a direction before the other registered designs freeze the wrong one, and its cheap arms need only IN-21's sentences.
 
+## Amendment, 10 November 2026
+
+Add a unit type the companion paper points to: sets of 2 to 8 poles that must all be in their own strong range in the same sentence (an AND rule), beside the planned averages. The paper suggests that ideas with no neuron of their own are carried by neurons that fire together and mean the overlap of their meanings. For each winning dictionary feature, report whether it copies one neuron.
+
 ## Sources
 
 - Gurnee et al. 2023
 - Arora et al. 2026
 - He et al. 2024 (Llama Scope)
 - Wu et al. 2025 (AxBench)
+- Tigges et al. 2026, Neurons as an Interpretable Basis

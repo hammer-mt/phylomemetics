@@ -54,9 +54,14 @@ Changed: the 1,620 count includes non-stories and 458 chains, now stated and spl
 
 Asks nearly the same question as CE-23, which the judges would run instead.
 
+## Amendment, 10 November 2026
+
+Do not read an in-between score as dilution without a check. The companion paper says a neuron's weaker firings tend to fall on related but different content. Class each child reading by the unit's own bands on general text, and have a blind reader judge the firing passage in every in-between case: same motif, neighbouring motif, or neither.
+
 ## Sources
 
 - Wikidata property P144 (based on)
 - Hatzel and Biemann 2024, Tell Me Again
 - Claidière, Scott-Phillips and Sperber 2014, doi:10.1098/rstb.2013.0368
 - Mesoudi and Whiten 2008, doi:10.1098/rstb.2008.0129
+- Tigges et al. 2026, Neurons as an Interpretable Basis

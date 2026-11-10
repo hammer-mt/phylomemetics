@@ -54,9 +54,14 @@ Added sentence length and plot position to the controls (shared position detecto
 
 In the top twelve of 2 of 3 judges (what decides the premises fastest: rank 2; speed and cost: rank 1). Settles neuron-level P2 on unseen text with data already committed and no API spend: either a counted list of shared units that survive word, length and position controls, or proof that twins are vocabulary and P2 has to be restated as mapped directions.
 
+## Amendment, 10 November 2026
+
+Score each twin a second way: the overlap of the tokens where both units are in their own strong range, with the ranges set on the selection half. The companion paper finds that weak activations carry little of a neuron's effect and that its meaning is clearest in its top range, so a correlation over every sentence mixes the readable part with the rest. Report both pass shares.
+
 ## Sources
 
 - Gurnee et al. 2024
 - Gröger, Wen and Brbić 2026
 - study/results/robustness/nulls.json
 - preregistration T5 (S20), which this supersedes
+- Tigges et al. 2026, Neurons as an Interpretable Basis

@@ -58,9 +58,14 @@ In the top twelve of 1 of 3 judges (upside: rank 9). A public catalogue of meme 
 
 Asks nearly the same question as IN-21, which the judges would run instead.
 
+## Amendment, 10 November 2026
+
+Give each entry the fields Goodfire's atlas gives a pole: a firing threshold from the unit's own range on general text, cases it does not fire on, and its roles. Add one admission test: a blind judge counts how many of 100 strong firings sampled from general text match the motif. The companion paper's Colorado neuron read as places on ordinary text and as a code library on code.
+
 ## Sources
 
 - Cammarata 2026, Neural networks are already clean
 - Choi et al. 2024, Scaling automatic neuron description (Transluce)
 - Heap et al. 2025, arXiv:2501.17727
 - Hagedorn and Darányi 2022, doi:10.5334/johd.78
+- Tigges et al. 2026, Neurons as an Interpretable Basis

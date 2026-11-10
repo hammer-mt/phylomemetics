@@ -54,9 +54,14 @@ Replaced the invented 5% null with a shuffled-label null, fixed one dose per uni
 
 In the top twelve of 3 of 3 judges (what decides the premises fastest: rank 4; speed and cost: rank 2; upside: rank 1). Steering is the test the source essay treats as decisive and the project has never run; in two days it separates units that carry an idea from units that only emit their words, though a blanket fail may be a dose problem in 4-bit models and not a refutation.
 
+## Amendment, 10 November 2026
+
+Set doses as multiples of the unit's own strong-firing level on general text. Add the companion paper's test that needs no steering: a model writes sentences from the label alone with the usual words banned, and the unit must reach its strong range more often than on sentences written from other labels. Score steered text for any consistent effect, not only the labelled one: in the paper's one steering example, raising a unit that fires on self-questioning made the model question itself less.
+
 ## Sources
 
 - Kran Research 2026, Evil Qwen replication (blog.kran.ai/evil-qwen)
 - Cammarata 2026, Neural networks are already clean
 - Liu 2026, arXiv:2606.19831
 - Arad, Mueller, Belinkov 2025, arXiv:2505.20063
+- Tigges et al. 2026, Neurons as an Interpretable Basis

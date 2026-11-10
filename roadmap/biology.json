@@ -332,6 +332,33 @@
    "feasibility": "Yes, on a new corpus",
    "experiment": "See seed 10 in notes/l7-biology-toolkit.md. Rival: random unit sets; word presence",
    "idea": "UN-21"
+  },
+  {
+   "tool": "Base-call quality scores (Phred)",
+   "does": "Give every base call its own error estimate",
+   "analogue": "Grade each presence call by how strongly the unit fired: its band in its own range, or its rank among the token's strongest units",
+   "needs": "Per-unit thresholds on general text",
+   "feasibility": "Yes, after a calibration pass",
+   "experiment": "In Goodfire's companion paper a description picks the firing passage 86% of the time in the weakest band studied and 95% in the strongest. Test whether stronger calls recur more often across two summaries of one story. Rival: the study's film-relative rule",
+   "idea": "IN-S13"
+  },
+  {
+   "tool": "Orthologs and paralogs",
+   "does": "Tell a gene shared by descent between species from a copy inside one genome",
+   "analogue": "Matched neurons in two models are orthologs; neurons copied between layers of one model are paralogs",
+   "needs": "Weights only",
+   "feasibility": "Yes, under a day",
+   "experiment": "Census of same-index copies in Qwen3-8B, then recount meme families and twins without them. Control: different-index pairs at the same layer gap",
+   "idea": "UN-S12"
+  },
+  {
+   "tool": "Gene finding by boundary signals",
+   "does": "Locate genes from start, stop and splice signals",
+   "analogue": "Units that fire on a full stop, a comma or 'but' at a story turn mark where a beat ends, not what it contains",
+   "needs": "Human-marked turning points",
+   "feasibility": "Yes (TRIPOD synopses)",
+   "experiment": "Place annotated turning points with punctuation stripped. Rival: position alone; an LLM asked to mark the turns. Boundary units should be kept out of trees",
+   "idea": "IN-S14"
   }
  ],
  "landmarks": [
@@ -380,6 +407,15 @@
    "idea": "CE-24"
   },
   {
+   "who": "Beadle and Tatum",
+   "when": "1941",
+   "gave": "One gene, one enzyme: a clean rule that later needed a finer unit (split genes, alternative splicing).",
+   "memetic": "The essay's one neuron, one job, and the companion paper's revision a month later: 47% of neuron poles have one role, 69% one dominant role, and the rest are told apart by context. A pole is the wrong character for a tree wherever it has two roles.",
+   "status": "partial",
+   "statusText": "rule stated, already being revised",
+   "idea": "LI-S13"
+  },
+  {
    "who": "Avery, Hershey and Chase",
    "when": "1944 to 1952",
    "gave": "Which substance carries heredity: strip components and see what still transmits.",
@@ -387,6 +423,15 @@
    "status": "partial",
    "statusText": "step one done",
    "idea": "LI-22"
+  },
+  {
+   "who": "Tinbergen",
+   "when": "1951",
+   "gave": "The supernormal stimulus: a dummy that triggers an instinct harder than the real thing.",
+   "memetic": "Goodfire's agents wrote text that fired 120 of 128 neuron poles harder than anything in a 10-billion-token corpus. If the unit keys on an idea, readers will rate that text a stronger example. If it keys on a token, they will not.",
+   "status": "unknown",
+   "statusText": "shown for neurons, untested for ideas",
+   "idea": "IN-31"
   },
   {
    "who": "Watson and Crick",
@@ -441,6 +486,15 @@
    "status": "partial",
    "statusText": "buildable now",
    "idea": "AT-21"
+  },
+  {
+   "who": "The minimal genome",
+   "when": "2016",
+   "gave": "A cell stripped to the genes it cannot live without, some with unknown function.",
+   "memetic": "A model run on the strongest 8% of its neuron activations per token loses little: loss rises 2.9%. It still depends on a band of weaker activity whose function is unclear. Whether the dense 8B models used here are sparse in the same way is untested.",
+   "status": "partial",
+   "statusText": "one model, not ours",
+   "idea": "IN-32"
   }
  ]
 }

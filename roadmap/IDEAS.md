@@ -40,6 +40,11 @@ Premise P1. Does a firing neuron measure a meme? Reliability and validity of the
 | IN-S10 | **Loosened snowclones**: Does a neuron chosen on literal templates such as 'the cure for the common X' still fire on reworded variants, where a pattern match fails and sentence embeddings are the rival? | Idea only |  |  |
 | IN-S11 | **Jargon and its plain expansion: same units?**: A jargon passage and its plain-English expansion activate the same neuron units, so the jargon version carries more units per word. The match holds only in a model that knows the field. | Idea only |  |  |
 | IN-S12 | **Same position, different appeal: can units tell what from how?**: Pairs of ads that take the same position through different appeals share 'position' neuron units and differ on 'appeal' units. Units chosen on some topics separate position from appeal on unseen topics. | Idea only |  |  |
+| IN-S13 | **A text's sparse code as its read**: Is 'this unit is among the strongest few per layer at this token' a more repeatable presence call than the study's rule of beating 68 of 69 reference films? | Idea only |  |  |
+| IN-S14 | **Story-turn units against annotated turning points**: Do units chosen as story-turn detectors place the turning points that human annotators marked in film synopses, once sentence punctuation is removed and stock turn words are reworded? | Idea only |  |  |
+| IN-S15 | **Causal presence: count a unit where removal matters**: Is a unit's reading of a text more repeatable and less tied to words when each firing is weighted by how much removing it changes the model's next-word predictions? | Idea only |  |  |
+| IN-S16 | **Do neurons add anything beyond expert routing?**: In a mixture-of-experts model, does the record of which experts each token was sent to find a story's documented source as well as the neuron-level reading does? | Idea only |  |  |
+| IN-S17 | **A sparsified, fine-tuned reader as the instrument**: Does a copy of the reader model fine-tuned to run on only its strongest activations give readings that are more repeatable and less word-bound than the original model's? | Idea only |  |  |
 
 ## Across models
 
@@ -70,6 +75,8 @@ Premise P2. Do different models, languages and media give the same reading?
 | UN-S8 | **Two languages, one photograph, no translator**: Do units agree between English and German captions that two people wrote separately for the same photograph? | Idea only |  |  |
 | UN-S9 | **Scrambled sentences**: How much twin agreement survives when the words of each sentence are shuffled, so that only the bag of words is left? | Idea only |  |  |
 | UN-S10 | **Do common memes transfer between models better than rare ones?**: Does agreement between two models on which neurons mark a meme rise with how often that meme appears in public text, and fall to chance for niche memes? | Idea only |  |  |
+| UN-S11 | **Atlas story labels as an outside motif list**: Do story-level ideas that have a unit in Goodfire's 35B model more often have a passing unit in Qwen3-8B and Llama 3.1 8B than matched motifs taken from a human index? | Idea only |  |  |
+| UN-S12 | **Copied layers: a census of duplicate neurons**: Do the study's models contain neurons that are copies of the neuron at the same index a fixed number of layers away, and how much do such copies inflate unit counts and twin rates inside the Qwen family? | Idea only |  |  |
 
 ## The atlas
 
@@ -157,6 +164,7 @@ Who descends from whom, including influence nobody declared.
 | LI-S10 | **Post-cutoff adaptations as a memory-free subset**: Do source-finding results hold for films released after the reader models' training cut-offs, where no model can have memorised which film came from which book? | Idea only |  |  |
 | LI-S11 | **Hidden ancestors in built traditions**: In the LI21 traditions, can the units of a withheld inner text be inferred from its descendants and checked against the real text better than words allow? | Idea only |  |  |
 | LI-S12 | **A hit's renamed children**: Can units find a hit's renamed offspring, the 'Die Hard on a ...' films, in a pool of unrelated films? | Idea only |  |  |
+| LI-S13 | **Mode-level characters on documented adaptations**: When each unit's firings are split into roles by what drives them, do adaptations share roles with their documented source more than they share whole units, beyond shared words? | Idea only |  |  |
 
 ## Remix and influence
 

@@ -54,9 +54,14 @@ The filler films also set the presence bar, which fixes the false-fire rate by c
 
 2 of 3 judges thought the area reviewer rated this too low.
 
+## Amendment, 10 November 2026
+
+Make the false-firing rate on filler-only text the headline, with presence set by each unit's own strong range on general text and not by a bar from other films. The companion paper describes random-text windows for measuring false firing and reports no result, so this is the missing number. Add an arm with about 250 tokens of lead-in: the paper found firing changes when earlier context is removed.
+
 ## Sources
 
 - Putnick and Bornstein 2016
 - Koo and Li 2016
 - study/results/experiments.json (E1 length-only AUC)
 - Cammarata 2026
+- Tigges et al. 2026, Neurons as an Interpretable Basis

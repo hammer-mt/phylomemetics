@@ -758,11 +758,13 @@
     "Borsboom et al. 2004",
     "Hewitt and Liang 2019",
     "study/results/wording.json (revenge unit)",
-    "preregistration/planted_story_protocol.md"
+    "preregistration/planted_story_protocol.md",
+    "Tigges et al. 2026, Neurons as an Interpretable Basis"
    ],
    "region": "instrument",
    "status": "registered",
-   "ranking": "In the top twelve of 3 of 3 judges (what decides the premises fastest: rank 1; speed and cost: rank 3; upside: rank 2). The cheapest direct test of the claim everything else rests on: for 30 concepts, does a frozen neuron follow the idea when its usual words are gone and stay quiet when only the words are there; a fail is as usable as a pass, and its items and unit list feed at least six later designs."
+   "ranking": "In the top twelve of 3 of 3 judges (what decides the premises fastest: rank 1; speed and cost: rank 3; upside: rank 2). The cheapest direct test of the claim everything else rests on: for 30 concepts, does a frozen neuron follow the idea when its usual words are gone and stay quiet when only the words are there; a fail is as usable as a pass, and its items and unit list feed at least six later designs.",
+   "update": "Read each test sentence twice: alone, and after a fixed neutral lead-in of about 250 tokens. Goodfire's companion paper found that about 15% of example firings stop when a short passage is rerun without its document. Count a pair as won only if the concept sentence also reaches the unit's own strong range on general text (its 97th percentile or above). Also report wins at the 99.9th percentile."
   },
   {
    "id": "IN-22",
@@ -784,11 +786,13 @@
     "Cammarata 2026",
     "IRSI 2026 retest note",
     "Paulo and Belrose 2025 (arXiv:2507.08473)",
-    "Heap et al. 2025 (arXiv:2501.17727)"
+    "Heap et al. 2025 (arXiv:2501.17727)",
+    "Tigges et al. 2026, Neurons as an Interpretable Basis"
    ],
    "region": "instrument",
    "status": "registered",
-   "ranking": "3 of 3 judges thought the area reviewer rated this too high."
+   "ranking": "3 of 3 judges thought the area reviewer rated this too high.",
+   "update": "Build triplets separately from three bands of each unit's own range (97th to 99th percentile, 99th to 99.9th, above), not only from the 20 strongest sentences. In the companion paper, random directions inside an expert kept one readable main theme at every band; neurons differed by narrowing as firing strengthened. Add its label-free test: keep each token's top 8 neurons, or 8 random directions, per layer and compare how much of the layer's effect on the output survives."
   },
   {
    "id": "IN-23",
@@ -810,11 +814,13 @@
     "Cammarata 2026",
     "Bolukbasi et al. 2021",
     "Nanda 2026 (LessWrong comment)",
-    "study/discover.py (presence rule)"
+    "study/discover.py (presence rule)",
+    "Tigges et al. 2026, Neurons as an Interpretable Basis"
    ],
    "region": "instrument",
    "status": "registered",
-   "ranking": "In the top twelve of 1 of 3 judges (what decides the premises fastest: rank 10). Checks whether the study's presence calls sit in the strong range the source essay vouches for, which fixes the presence rule that every document-level design inherits."
+   "ranking": "In the top twelve of 1 of 3 judges (what decides the premises fastest: rank 10). Checks whether the study's presence calls sit in the strong range the source essay vouches for, which fixes the presence rule that every document-level design inherits.",
+   "update": "Make the companion paper's rule the primary definition: a firing counts when it is at or beyond the unit's own 97th percentile on general text (3rd for a negative pole), with the neuron's gate open. Report the share of the study's presence calls that fall below it, and run the label test in the paper's bands (97th to 99th, 99th to 99.9th, 99.9th to 99.99th, above). Keep 30% of maximum as a second reading."
   },
   {
    "id": "IN-24",
@@ -836,11 +842,13 @@
     "Gurnee et al. 2023",
     "Arora et al. 2026",
     "He et al. 2024 (Llama Scope)",
-    "Wu et al. 2025 (AxBench)"
+    "Wu et al. 2025 (AxBench)",
+    "Tigges et al. 2026, Neurons as an Interpretable Basis"
    ],
    "region": "instrument",
    "status": "registered",
-   "ranking": "In the top twelve of 1 of 3 judges (what decides the premises fastest: rank 5). Decides whether the unit should be one neuron, a small set or a direction before the other registered designs freeze the wrong one, and its cheap arms need only IN-21's sentences."
+   "ranking": "In the top twelve of 1 of 3 judges (what decides the premises fastest: rank 5). Decides whether the unit should be one neuron, a small set or a direction before the other registered designs freeze the wrong one, and its cheap arms need only IN-21's sentences.",
+   "update": "Add a unit type the companion paper points to: sets of 2 to 8 poles that must all be in their own strong range in the same sentence (an AND rule), beside the planned averages. The paper suggests that ideas with no neuron of their own are carried by neurons that fire together and mean the overlap of their meanings. For each winning dictionary feature, report whether it copies one neuron."
   },
   {
    "id": "IN-25",
@@ -862,12 +870,14 @@
     "Hatzel and Biemann 2024 (Tell Me Again)",
     "Koo and Li 2016",
     "Chang 2004",
-    "Hatzel and Biemann 2024 (Story Embeddings)"
+    "Hatzel and Biemann 2024 (Story Embeddings)",
+    "Tigges et al. 2026, Neurons as an Interpretable Basis"
    ],
    "region": "instrument",
    "status": "registered",
    "ranking": "In the top twelve of 2 of 3 judges (what decides the premises fastest: rank 7; speed and cost: rank 5). A one-day reliability figure (do two independent summaries of one story give the same reading) that caps every later validity number and says whether the Batman grid measured works or Wikipedia summaries.",
-   "overlaps": "Asks nearly the same question as UN-22, which the judges would run instead."
+   "overlaps": "Asks nearly the same question as UN-22, which the judges would run instead.",
+   "update": "Compute the reading two ways: the study's rule, and the number of tokens in the unit's own strong range per 1,000 tokens. Report agreement between the two summaries separately for firings above the 99.9th percentile and for those between the 97th and 99.9th. The companion paper finds weaker firings fall on more distantly related content, so reliability should differ by band."
   },
   {
    "id": "IN-26",
@@ -914,11 +924,13 @@
     "Putnick and Bornstein 2016",
     "Koo and Li 2016",
     "study/results/experiments.json (E1 length-only AUC)",
-    "Cammarata 2026"
+    "Cammarata 2026",
+    "Tigges et al. 2026, Neurons as an Interpretable Basis"
    ],
    "region": "instrument",
    "status": "registered",
-   "ranking": "2 of 3 judges thought the area reviewer rated this too low."
+   "ranking": "2 of 3 judges thought the area reviewer rated this too low.",
+   "update": "Make the false-firing rate on filler-only text the headline, with presence set by each unit's own strong range on general text and not by a bar from other films. The companion paper describes random-text windows for measuring false firing and reports no result, so this is the missing number. Add an arm with about 250 tokens of lead-in: the paper found firing changes when earlier context is removed."
   },
   {
    "id": "IN-28",
@@ -965,11 +977,13 @@
     "Singh and Sajjad 2025 (arXiv:2508.16785)",
     "Cammarata 2026",
     "study/results/robustness/nulls.json (grid kappa)",
-    "Choi et al. 2024 (Transluce)"
+    "Choi et al. 2024 (Transluce)",
+    "Tigges et al. 2026, Neurons as an Interpretable Basis"
    ],
    "region": "instrument",
    "status": "registered",
-   "ranking": "In the top twelve of 2 of 3 judges (what decides the premises fastest: rank 8; speed and cost: rank 7). A one-day gate that will probably pass, but if 4-bit readings do not match 8-bit or full precision then every number so far belongs to one quantised file and no published labels or dictionaries can be borrowed."
+   "ranking": "In the top twelve of 2 of 3 judges (what decides the premises fastest: rank 8; speed and cost: rank 7). A one-day gate that will probably pass, but if 4-bit readings do not match 8-bit or full precision then every number so far belongs to one quantised file and no published labels or dictionaries can be borrowed.",
+   "update": "Compare the builds on what the instrument uses: each unit's 97th and 99.9th percentile thresholds at each precision, the overlap of the tokens in that range, and how often the sign of the gate input at a firing token flips. The companion paper reads only the tails of each neuron's range and does not state its own precision. A correlation over all sentences can pass while the tails move."
   },
   {
    "id": "IN-30",
@@ -1088,11 +1102,13 @@
     "Gurnee et al. 2024",
     "Gröger, Wen and Brbić 2026",
     "study/results/robustness/nulls.json",
-    "preregistration T5 (S20), which this supersedes"
+    "preregistration T5 (S20), which this supersedes",
+    "Tigges et al. 2026, Neurons as an Interpretable Basis"
    ],
    "region": "universality",
    "status": "registered",
-   "ranking": "In the top twelve of 2 of 3 judges (what decides the premises fastest: rank 2; speed and cost: rank 1). Settles neuron-level P2 on unseen text with data already committed and no API spend: either a counted list of shared units that survive word, length and position controls, or proof that twins are vocabulary and P2 has to be restated as mapped directions."
+   "ranking": "In the top twelve of 2 of 3 judges (what decides the premises fastest: rank 2; speed and cost: rank 1). Settles neuron-level P2 on unseen text with data already committed and no API spend: either a counted list of shared units that survive word, length and position controls, or proof that twins are vocabulary and P2 has to be restated as mapped directions.",
+   "update": "Score each twin a second way: the overlap of the tokens where both units are in their own strong range, with the ranges set on the selection half. The companion paper finds that weak activations carry little of a neuron's effect and that its meaning is clearest in its top range, so a correlation over every sentence mixes the readable part with the rest. Report both pass shares."
   },
   {
    "id": "UN-22",
@@ -1166,11 +1182,13 @@
     "Cammarata 2026",
     "Huh et al. 2024",
     "Koepke et al. 2026",
-    "study/results/robustness/nulls.json"
+    "study/results/robustness/nulls.json",
+    "Tigges et al. 2026, Neurons as an Interpretable Basis"
    ],
    "region": "universality",
    "status": "registered",
-   "overlaps": "Asks nearly the same question as IN-29, which the judges would run instead."
+   "overlaps": "Asks nearly the same question as IN-29, which the judges would run instead.",
+   "update": "Before the size arm, test each Qwen3 size for copied layer blocks: neurons with the same index that correlate strongly a fixed number of layers apart. The companion paper's authors suspect Qwen3-32B was built by copying layers of Qwen3-14B. Count duplicated neurons once. In the precision arm, also compare firings in the strong range and gate signs, as in the amendment to IN-29."
   },
   {
    "id": "UN-25",
@@ -1349,12 +1367,14 @@
     "Cammarata 2026, Neural networks are already clean",
     "Choi et al. 2024, Scaling automatic neuron description (Transluce)",
     "Heap et al. 2025, arXiv:2501.17727",
-    "Hagedorn and Darányi 2022, doi:10.5334/johd.78"
+    "Hagedorn and Darányi 2022, doi:10.5334/johd.78",
+    "Tigges et al. 2026, Neurons as an Interpretable Basis"
    ],
    "region": "atlas",
    "status": "registered",
    "ranking": "In the top twelve of 1 of 3 judges (upside: rank 9). A public catalogue of meme units with measured hit and false-alarm rates for 150 human-named motifs would be the lasting, citable asset of the programme; run it only after IN-21 shows the yield is not zero.",
-   "overlaps": "Asks nearly the same question as IN-21, which the judges would run instead."
+   "overlaps": "Asks nearly the same question as IN-21, which the judges would run instead.",
+   "update": "Give each entry the fields Goodfire's atlas gives a pole: a firing threshold from the unit's own range on general text, cases it does not fire on, and its roles. Add one admission test: a blind judge counts how many of 100 strong firings sampled from general text match the motif. The companion paper's Colorado neuron read as places on ordinary text and as a code library on code."
   },
   {
    "id": "AT-22",
@@ -1376,11 +1396,13 @@
     "Arora et al. 2026, arXiv:2601.22594",
     "Liu, Joshi, Dawson and Piper 2026, arXiv:2610.12989",
     "Wu et al. 2025, AxBench, arXiv:2501.17148",
-    "Cammarata 2026, Neural networks are already clean"
+    "Cammarata 2026, Neural networks are already clean",
+    "Tigges et al. 2026, Neurons as an Interpretable Basis"
    ],
    "region": "atlas",
    "status": "registered",
-   "ranking": "2 of 3 judges thought the area reviewer rated this too high."
+   "ranking": "2 of 3 judges thought the area reviewer rated this too high.",
+   "update": "Add a 2,048-neuron arm. In the companion paper's circuit tracing, half of the push toward one place name came from 155 neurons and 80% from 2,299, so 64 or 512 may be too few to carry a motif. Silence the chosen neurons only on tokens where they are in their own strong range, and report whether that does as much as silencing them everywhere."
   },
   {
    "id": "AT-23",
@@ -1402,11 +1424,13 @@
     "Wikidata property P144 (based on)",
     "Hatzel and Biemann 2024, Tell Me Again",
     "Claidière, Scott-Phillips and Sperber 2014, doi:10.1098/rstb.2013.0368",
-    "Mesoudi and Whiten 2008, doi:10.1098/rstb.2008.0129"
+    "Mesoudi and Whiten 2008, doi:10.1098/rstb.2008.0129",
+    "Tigges et al. 2026, Neurons as an Interpretable Basis"
    ],
    "region": "atlas",
    "status": "registered",
-   "overlaps": "Asks nearly the same question as CE-23, which the judges would run instead."
+   "overlaps": "Asks nearly the same question as CE-23, which the judges would run instead.",
+   "update": "Do not read an in-between score as dilution without a check. The companion paper says a neuron's weaker firings tend to fall on related but different content. Class each child reading by the unit's own bands on general text, and have a blind reader judge the firing passage in every in-between case: same motif, neighbouring motif, or neither."
   },
   {
    "id": "AT-24",
@@ -1428,10 +1452,12 @@
     "Callahan, McMurdie and Holmes 2017, doi:10.1038/ismej.2017.119",
     "Paulo and Belrose 2025, arXiv:2501.16615",
     "Gurnee et al. 2024, arXiv:2401.12181",
-    "study/results/robustness/nulls.json (f2_agreement)"
+    "study/results/robustness/nulls.json (f2_agreement)",
+    "Tigges et al. 2026, Neurons as an Interpretable Basis"
    ],
    "region": "atlas",
-   "status": "registered"
+   "status": "registered",
+   "update": "Extend the name with what the companion paper shows a reading depends on: the band (a percentile, and the reference corpus that fixed it), whether the gate was open, the role that fired, and for models with experts the expert index. Add a reproducibility row: recompute each unit's threshold on a second, disjoint sample of general text and report agreement of the presence calls."
   },
   {
    "id": "AT-25",
@@ -3203,11 +3229,13 @@
     "Kran Research 2026, Evil Qwen replication (blog.kran.ai/evil-qwen)",
     "Cammarata 2026, Neural networks are already clean",
     "Liu 2026, arXiv:2606.19831",
-    "Arad, Mueller, Belinkov 2025, arXiv:2505.20063"
+    "Arad, Mueller, Belinkov 2025, arXiv:2505.20063",
+    "Tigges et al. 2026, Neurons as an Interpretable Basis"
    ],
    "region": "engineering",
    "status": "registered",
-   "ranking": "In the top twelve of 3 of 3 judges (what decides the premises fastest: rank 4; speed and cost: rank 2; upside: rank 1). Steering is the test the source essay treats as decisive and the project has never run; in two days it separates units that carry an idea from units that only emit their words, though a blanket fail may be a dose problem in 4-bit models and not a refutation."
+   "ranking": "In the top twelve of 3 of 3 judges (what decides the premises fastest: rank 4; speed and cost: rank 2; upside: rank 1). Steering is the test the source essay treats as decisive and the project has never run; in two days it separates units that carry an idea from units that only emit their words, though a blanket fail may be a dose problem in 4-bit models and not a refutation.",
+   "update": "Set doses as multiples of the unit's own strong-firing level on general text. Add the companion paper's test that needs no steering: a model writes sentences from the label alone with the usual words banned, and the unit must reach its strong range more often than on sentences written from other labels. Score steered text for any consistent effect, not only the labelled one: in the paper's one steering example, raising a unit that fires on self-questioning made the model question itself less."
   },
   {
    "id": "EN-22",
@@ -3355,10 +3383,12 @@
     "Öztürk 2026, LLM Electrodes, doi:10.21203/rs.3.rs-11577020/v1",
     "Cammarata 2026, Neural networks are already clean",
     "Arditi et al. 2024, arXiv:2406.11717",
-    "Arad, Mueller, Belinkov 2025, arXiv:2505.20063"
+    "Arad, Mueller, Belinkov 2025, arXiv:2505.20063",
+    "Tigges et al. 2026, Neurons as an Interpretable Basis"
    ],
    "region": "engineering",
-   "status": "registered"
+   "status": "registered",
+   "update": "Add arms of 100 and 500 units ranked by their effect on the answer, since the companion paper traces half of the push toward one name to 155 neurons. Silence units only where they are in their own strong range, and report the paper's damage measure (the change in next-word predictions over the firing token and the next 16) beside accuracy."
   },
   {
    "id": "EN-S1",
@@ -4348,6 +4378,78 @@
    "title": "Are Leave and Trump one family of messages?",
    "question": "Leave and Trump campaign texts sit closer to each other in neuron-unit profile than either sits to its own opponent, once place, party and person names are removed.",
    "note": "From Mike's 2022 essays (Take back control). Rival to beat: Sentence embeddings; an LLM listing each campaign's themes; word-weight similarity (TF-IDF) after names are removed."
+  },
+  {
+   "id": "IN-S13",
+   "region": "instrument",
+   "status": "seed",
+   "priority": 0,
+   "title": "A text's sparse code as its read",
+   "question": "Is 'this unit is among the strongest few per layer at this token' a more repeatable presence call than the study's rule of beating 68 of 69 reference films?",
+   "note": "From Goodfire's companion paper (10 November 2026). The paper shows one model can run on its top 320 neurons per token and layer. Rival to beat: the study's rule, the unit's own strong range (IN-23), word presence and an LLM reader, on the two-summary stories of IN-25. Only sensible if the dense 8B models turn out to be sparse (IN-32)."
+  },
+  {
+   "id": "LI-S13",
+   "region": "lineage",
+   "status": "seed",
+   "priority": 0,
+   "title": "Mode-level characters on documented adaptations",
+   "question": "When each unit's firings are split into roles by what drives them, do adaptations share roles with their documented source more than they share whole units, beyond shared words?",
+   "note": "From Goodfire's companion paper (10 November 2026). The paper finds about half of neuron poles have more than one role, so two unrelated works can share a pole in different roles. Rival to beat: TF-IDF on name-free text, whole-pole units, and poles split by an LLM that only reads each firing sentence. Large: needs input attribution for thousands of firings per unit."
+  },
+  {
+   "id": "IN-S14",
+   "region": "instrument",
+   "status": "seed",
+   "priority": 0,
+   "title": "Story-turn units against annotated turning points",
+   "question": "Do units chosen as story-turn detectors place the turning points that human annotators marked in film synopses, once sentence punctuation is removed and stock turn words are reworded?",
+   "note": "From Goodfire's companion paper (10 November 2026). Goodfire's public atlas has units labelled for story turns that fire on a full stop, a comma or 'but'. Data: TRIPOD (Papalampidi, Keller and Lapata 2019), film synopses with human-marked turning points. Rival to beat: expected position alone, a list of turn words, and an LLM asked to mark the turns."
+  },
+  {
+   "id": "IN-S15",
+   "region": "instrument",
+   "status": "seed",
+   "priority": 0,
+   "title": "Causal presence: count a unit where removal matters",
+   "question": "Is a unit's reading of a text more repeatable and less tied to words when each firing is weighted by how much removing it changes the model's next-word predictions?",
+   "note": "From Goodfire's companion paper (10 November 2026). The paper weighs firings by their effect on the output, and its Colorado neuron looks clean by effect and messy by count. Rival to beat: activation alone, the unit's own strong range (IN-23), TF-IDF, and the damage from removing random units at the same tokens."
+  },
+  {
+   "id": "UN-S11",
+   "region": "universality",
+   "status": "seed",
+   "priority": 0,
+   "title": "Atlas story labels as an outside motif list",
+   "question": "Do story-level ideas that have a unit in Goodfire's 35B model more often have a passing unit in Qwen3-8B and Llama 3.1 8B than matched motifs taken from a human index?",
+   "note": "From Goodfire's companion paper (10 November 2026). The atlas is a list of ideas another lab's pipeline found inside a different model: a test of P2 at the level of which ideas get a unit. Needs Goodfire's permission first: the atlas states no licence and the site terms restrict copying. Rival to beat: a word classifier, sentence embeddings and an LLM reader on the same passages."
+  },
+  {
+   "id": "IN-S16",
+   "region": "instrument",
+   "status": "seed",
+   "priority": 0,
+   "title": "Do neurons add anything beyond expert routing?",
+   "question": "In a mixture-of-experts model, does the record of which experts each token was sent to find a story's documented source as well as the neuron-level reading does?",
+   "note": "From Goodfire's companion paper (10 November 2026). The router's choice of 8 experts out of 256 per layer is a coarse code that comes free with models like the paper's, and may be what a neuron reading reduces to: topic. Rival to beat: routing counts plus TF-IDF. Needs Qwen3.6-35B-A3B run locally, which the study has not done."
+  },
+  {
+   "id": "IN-S17",
+   "region": "instrument",
+   "status": "seed",
+   "priority": 0,
+   "title": "A sparsified, fine-tuned reader as the instrument",
+   "question": "Does a copy of the reader model fine-tuned to run on only its strongest activations give readings that are more repeatable and less word-bound than the original model's?",
+   "note": "From Goodfire's companion paper (10 November 2026). The paper fine-tunes its model to run with 92.2% of activations zeroed and reports that neurons keep their roles. Rival to beat: the untuned model with the same mask applied only at reading time, which is free. Large: a 100-million-token fine-tune on rented GPUs."
+  },
+  {
+   "id": "UN-S12",
+   "region": "universality",
+   "status": "seed",
+   "priority": 0,
+   "title": "Copied layers: a census of duplicate neurons",
+   "question": "Do the study's models contain neurons that are copies of the neuron at the same index a fixed number of layers away, and how much do such copies inflate unit counts and twin rates inside the Qwen family?",
+   "note": "From Goodfire's companion paper (10 November 2026). The paper's authors suspect Qwen3-32B was built by copying layers of Qwen3-14B. If so, some agreement inside a model family is inheritance, not convergence. Weights only, under a day. Control: different-index pairs at the same layer gap, and the same census in Llama 3.1 8B."
   }
  ]
 }

@@ -54,9 +54,14 @@ Raised development pairs from 20 to 40 with a two-stage pick: with 20, about one
 
 In the top twelve of 3 of 3 judges (what decides the premises fastest: rank 1; speed and cost: rank 3; upside: rank 2). The cheapest direct test of the claim everything else rests on: for 30 concepts, does a frozen neuron follow the idea when its usual words are gone and stay quiet when only the words are there; a fail is as usable as a pass, and its items and unit list feed at least six later designs.
 
+## Amendment, 10 November 2026
+
+Read each test sentence twice: alone, and after a fixed neutral lead-in of about 250 tokens. Goodfire's companion paper found that about 15% of example firings stop when a short passage is rerun without its document. Count a pair as won only if the concept sentence also reaches the unit's own strong range on general text (its 97th percentile or above). Also report wins at the 99.9th percentile.
+
 ## Sources
 
 - Borsboom et al. 2004
 - Hewitt and Liang 2019
 - study/results/wording.json (revenge unit)
 - preregistration/planted_story_protocol.md
+- Tigges et al. 2026, Neurons as an Interpretable Basis

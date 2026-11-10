@@ -119,7 +119,7 @@
         row('What would refute it', i.falsifier), row('Data', i.data), row('Method', i.method),
         row('Cheap rival it must beat', i.rivals), row('Tests which premise', i.premise),
         row('Biology analogue', i.bio), row('Cost', i.cost), row('Payoff', i.payoff), row('Main risk', i.risk),
-        row('Reviewer note', i.review), row('Cross-area ranking', i.ranking), row('Overlaps with', i.overlaps), row('Note', i.note), row('Sources', (i.sources || []).join('; '))));
+        row('Reviewer note', i.review), row('Cross-area ranking', i.ranking), row('Overlaps with', i.overlaps), row('Note', i.note), row('Amendment, 10 November', i.update), row('Sources', (i.sources || []).join('; '))));
     if (scroll) $('chartTop').scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 
@@ -158,6 +158,18 @@
     }));
   }
   function drawList(id, items) { $(id).replaceChildren(...(items || []).map(t => h('li', {}, t))); }
+  function drawNews() {
+    const news = D.summary.news || [];
+    $('newsWrap').hidden = !news.length;
+    $('news').replaceChildren(...news.map(n => h('div', { class: 'sheet stack' },
+      h('div', { class: 'eyebrow' }, n.date + ' · ' + n.kind),
+      h('h3', {}, n.url ? h('a', { href: n.url, target: '_blank', rel: 'noopener' }, n.title) : n.title),
+      h('p', { class: 'small' }, n.by),
+      h('p', {}, n.what),
+      h('ul', { class: 'stack', style: 'padding-left:18px;margin:0' }, n.points.map(t => h('li', {}, t))),
+      h('p', { class: 'note' }, n.changes),
+      h('div', { style: 'display:flex;flex-wrap:wrap;gap:6px' }, (n.ideas || []).filter(id => ideas.some(i => i.id === id)).map(id => h('button', { class: 'chip', onclick: () => select(id, true) }, id))))));
+  }
   function drawBiology() {
     $('bioBody').replaceChildren(...D.biology.map(b => h('tr', b.idea ? { class: 'rowlink', onclick: () => select(b.idea, true) } : {},
       h('td', {}, h('strong', {}, b.tool), h('div', { class: 'small' }, b.does || '')), h('td', {}, String(b.analogue).replace(/`/g, ''), b.experiment ? h('div', { class: 'small' }, 'Try: ' + String(b.experiment).replace(/`/g, '')) : null),
@@ -176,7 +188,7 @@
     D.regions.forEach(r => $('fRegion').append(h('option', { value: r.id }, r.name)));
     Object.keys(STATUS).forEach(k => $('fStatus').append(h('option', { value: k }, STATUS[k][0])));
     drawChart(); drawAreas(); drawPremises(); drawBiology(); drawSources();
-    drawList('known', D.summary.known); drawList('unknown', D.summary.unknown); drawList('nextUp', D.summary.next);
+    drawList('known', D.summary.known); drawList('unknown', D.summary.unknown); drawList('nextUp', D.summary.next); drawNews();
     document.querySelectorAll('[data-mode]').forEach(b => b.addEventListener('click', () => { mode = b.dataset.mode; applyMode(); }));
     $('bioToggle').addEventListener('click', () => { bio = !bio; applyMode(); });
     ['q', 'fRegion', 'fStatus'].forEach(id => $(id).addEventListener('input', drawTable));

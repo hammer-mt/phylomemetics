@@ -54,9 +54,14 @@ Promoted from a seed: it is cheap, and IN24 and any reuse of full-precision labe
 
 In the top twelve of 2 of 3 judges (what decides the premises fastest: rank 8; speed and cost: rank 7). A one-day gate that will probably pass, but if 4-bit readings do not match 8-bit or full precision then every number so far belongs to one quantised file and no published labels or dictionaries can be borrowed.
 
+## Amendment, 10 November 2026
+
+Compare the builds on what the instrument uses: each unit's 97th and 99.9th percentile thresholds at each precision, the overlap of the tokens in that range, and how often the sign of the gate input at a firing token flips. The companion paper reads only the tails of each neuron's range and does not state its own precision. A correlation over all sentences can pass while the tails move.
+
 ## Sources
 
 - Singh and Sajjad 2025 (arXiv:2508.16785)
 - Cammarata 2026
 - study/results/robustness/nulls.json (grid kappa)
 - Choi et al. 2024 (Transluce)
+- Tigges et al. 2026, Neurons as an Interpretable Basis

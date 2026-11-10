@@ -58,9 +58,14 @@ In the top twelve of 2 of 3 judges (what decides the premises fastest: rank 7; s
 
 Asks nearly the same question as UN-22, which the judges would run instead.
 
+## Amendment, 10 November 2026
+
+Compute the reading two ways: the study's rule, and the number of tokens in the unit's own strong range per 1,000 tokens. Report agreement between the two summaries separately for firings above the 99.9th percentile and for those between the 97th and 99.9th. The companion paper finds weaker firings fall on more distantly related content, so reliability should differ by band.
+
 ## Sources
 
 - Hatzel and Biemann 2024 (Tell Me Again)
 - Koo and Li 2016
 - Chang 2004
 - Hatzel and Biemann 2024 (Story Embeddings)
+- Tigges et al. 2026, Neurons as an Interpretable Basis

@@ -22,6 +22,7 @@ FIELDS = [
     ("falsifier", "What would refute it"), ("data", "Data"), ("method", "Method"),
     ("rivals", "Cheap rival it must beat"), ("premise", "Premise it tests"), ("bio", "Biology analogue"),
     ("cost", "Cost"), ("payoff", "Payoff"), ("risk", "Main risk"), ("review", "Reviewer note"), ("ranking", "Cross-area ranking"), ("overlaps", "Overlaps with"), ("note", "Note"),
+    ("update", "Amendment, 10 November 2026"),
 ]
 
 
@@ -57,7 +58,7 @@ def main():
         if i["status"] != "registered":
             continue
         out = [f"# {i['id']}: {i['title']}", "",
-               f"**Area:** {regions[i['region']]['name']} · **Status:** design registered {db['registered']}, not run"
+               f"**Area:** {regions[i['region']]['name']} · **Status:** design registered {i.get('registered', db['registered'])}, not run"
                + (f" · **Priority:** {i['priority']:.1f} of 5" if i.get("priority") else ""), ""]
         for key, label in FIELDS:
             if i.get(key):

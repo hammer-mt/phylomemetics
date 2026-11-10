@@ -5,14 +5,14 @@
   "Word counts measure it just as well. On the primary model, words matched or beat neurons on every pre-registered test that had a word comparator.",
   "Agreement between two companies' models is mostly shared name and word detectors. It collapses when names are removed.",
   "A handful of units do behave like ideas: a funeral, a coin flip, the secret identity, and one revenge unit that picked the right sentence in 10 of 12 pairs with no revenge words.",
-  "Outside this project, the evidence is that neurons are a better basis than random directions, that 1 to 5% of them recur across retrained models, and that plain prompting beats activation methods at steering text on the one large benchmark."
+  "Outside this project, the evidence is that neurons are a sparser basis than random directions, that in one 35B model about two thirds of neuron poles have one job or one dominant job at strong activation (Goodfire's companion paper of 10 November, graded by an LLM), that 1 to 5% of neurons recur across retrained models, and that plain prompting beats activation methods at steering text on the one large benchmark."
  ],
  "unknown": [
-  "Whether neuron units follow an idea when the wording changes. This is the claim that would justify the method, and it has never been tested at scale.",
+  "Whether neuron units follow an idea when the wording changes. This is the claim that would justify the method, and it has never been tested at scale, here or in Goodfire's companion paper.",
   "Whether the units cause anything. Nobody in this project has turned a neuron up or down.",
-  "Whether the small 4-bit models used here are 'clean' at all. The audit behind the claim was on a model four times larger.",
+  "Whether the small 4-bit models used here are 'clean' at all. The two audits behind the claim, the essay's and its companion paper's, are of models four times larger, and the paper covers only each neuron's strongest 3% of firings.",
   "Whether a learned map between models carries concept units across. Only one-to-one twins were tried.",
-  "Whether neurons beat sentence embeddings or an LLM simply reading the text. Those rivals were never run.",
+  "Whether neurons beat sentence embeddings or an LLM simply reading the text. Those rivals were never run, here or in Goodfire's companion paper.",
   "Whether any human agrees with the labels. Every labeller, judge and reviewer so far was an AI.",
   "Everything about selection, forecasting, editing and practical use. One underpowered test is all there is."
  ],
@@ -23,5 +23,29 @@
   "IN-25 and UN-22, on one download. Do two summaries of the same story give the same reading, and does the reading survive a change of language?",
   "RX-27: about three days. The first use test. Name a known source after deep rewording, against look-alike decoys. A pass opens the family-tree designs RX-22 and LI-22.",
   "Before any of it, write down which results would move the unit from single neurons to small sets or directions. Start no lineage, forecasting or product design until a frozen unit has beaten sentence embeddings and an LLM reader on text where the words are controlled."
+ ],
+ "news": [
+  {
+   "title": "Neurons as an Interpretable Basis",
+   "date": "10 November 2026",
+   "kind": "Goodfire research post, not peer reviewed",
+   "by": "Tigges, Kowal, McGrath, Lewis and Cammarata",
+   "url": "https://www.goodfire.com/research/neurons-as-an-interpretable-basis",
+   "what": "The technical companion to the essay behind premise P1. It studies one model, Qwen3.6-35B-A3B, which sends each token to a few of 256 sub-networks per layer.",
+   "points": [
+    "Strong firings carry the computation. Zeroing the weakest 92.2% of the activations in play at each token raises loss by 2.9%. Keeping a random eighth, or removing only the strongest eighth, more than doubles it. Reasoning benchmarks fall until the model is fine-tuned.",
+    "One job is the majority, not the rule. Of 5,468 neuron poles, 47% have one role and 69% have one role doing at least 90% of the damage when the neuron is removed. The essay had said about 90%, for a different model.",
+    "A short description predicts strong firing. A judge given the description picks the passage where the neuron fires 95% of the time against random text and 89% against text sent to the same sub-network. Chance is 50%.",
+    "It does not test what this programme needs. There is no word-count or embedding rival, no test of an idea with its usual words removed, no second model, and nothing at the level of a whole document."
+   ],
+   "changes": "For the programme: read each unit only in its own strong range, record which of its roles fired, and treat a label as a guess until it predicts held-out firings. Fifteen designs were amended and four were registered to carry the paper's tests over to the study's own models, with the rivals it left out.",
+   "ideas": [
+    "IN-32",
+    "IN-33",
+    "IN-31",
+    "EN-28",
+    "IN-23"
+   ]
+  }
  ]
 }
