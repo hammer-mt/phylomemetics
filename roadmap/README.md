@@ -18,6 +18,7 @@ The bet is that a meme can be measured by which neurons fire inside a language m
 4. **P2 is true for geometry, partly true for mapped directions, mostly false for single neurons.** One to five percent of neurons recur across retrained models. In this project, agreement between models collapses once names are removed. A 2026 study finds that neurons shared between models become a smaller share as models grow. The survey of November 2026 sorts the evidence along a different axis and reaches a compatible verdict: models sharing algorithms is the supported kind of convergence, and models sharing representations is "less supported".
 5. **The next step is one rung, not twelve.** Until a unit beats sentence embeddings and an LLM reader on text where the words are controlled, the grander uses (forecasting, editing, trees of influence) rest on a reader that may only be reading words.
 6. **Part of the ground is open.** Using a model's internal units to describe texts is already an active line of work, done with sparse-autoencoder features, human labels and steering. Nobody has published a descent test on cultural works using model units, or an edit of a story motif by steering. The cheap rivals are strong, so each claim has to be earned against them.
+7. **Two documents from the week of this audit sharpen the instrument and change none of the verdicts.** Goodfire's companion paper says where a neuron can be read: in the top or bottom 3% of its own activations, one role at a time, with a label that has been made to predict held-out firings. The survey of the field says how a claim about a unit should be tested: by changing the unit and watching the output, against matched random units, with the baselines set beforehand and the coverage stated. Neither tests whether a reading follows an idea and not a word. Twenty-one registered designs carry an amendment, and seven designs were added.
 
 ## What is in this folder
 
@@ -109,6 +110,22 @@ Two rules came from all three judges.
 
 Several older plans are now superseded by cheaper designs that ask the same question: the planted-meme stories (IN-05, about 4,400 agent sessions) by IN-21, the Chinese translation (UN-05) by UN-22, the drift ladder (LI-05) by RX-27 and LI-21, and concept agreement on held-out films (UN-06) by UN-21. Each entry in [`IDEAS.md`](IDEAS.md) says what it overlaps with.
 
+### Designs added on 10 November
+
+Seven designs were registered from the two documents. None displaces the five steps above: each reviewer was asked whether its design should run first, and each said no.
+
+| Design | What it settles | Cost | When to run it |
+| --- | --- | --- | --- |
+| IN-33 | Whether the study's own labels say where their units fire better than a table of each token's average activation | One to two weeks | On the general-text pass that IN-23 needs |
+| IN-31 | Whether a unit can be fired without its usual words, and whether it can be fired without its idea | About two weeks | Straight after step 1, on the units that pass IN-21 |
+| IN-34 | How often the labelling method names a unit's true function when the answer is known, and how often it calls a word detector an idea | About a week, 16 hours of it people's time | When labels are next written at scale, with IN-33 or AT-21 |
+| IN-35 | Whether the 125 named units alone reproduce the heredity result, and whether they beat equally many arbitrary units or words | One re-run of the extraction, then about a night of computing | When IN-29 in step 1 re-reads the study corpus |
+| IN-32 | Whether the dense 8B models run on their strongest neuron firings. The prediction is that they do not | One to two days | Beside IN-23 |
+| EN-28 | Whether choosing rewrites by a unit's reading moves a story toward an idea, or only toward a trigger | Four to five laptop days and 17 hours of blind rating | As extra arms of EN-22 |
+| LI-27 | Whether gradient similarity names a story's source after deep rewording | About a week | After RX-27 |
+
+One review changes a run-first design. RX-27 should gain a rival that needs forward passes only: how much less surprised a model is by a story when the candidate source is placed in front of it. The reviewer of LI-27 expects it, sentence embeddings or an LLM judge to beat gradient scores.
+
 ## 5. Where the treasure might be
 
 These are the designs that would matter most if the first steps go well. Each is built so that it pays off whichever reader wins.
@@ -117,7 +134,7 @@ These are the designs that would matter most if the first steps go well. Each is
 | --- | --- | --- |
 | A family tree of influence, including influences nobody declared | RX-22, LI-22, CJ-22 | A search for unacknowledged sources checked against the written record; source finding across a language border; and remakes against "twin films" to tell copying from coincidence |
 | Spotting a promising new idea | US-26, FI-22 | Meme combinations no earlier film used, judged by which films were later made; and whether units that won randomised headline tests then spread |
-| More of one meme, less of another | EN-23, EN-22 | Whether the units that detect a meme are the ones that write it, and whether any internal handle beats simply asking a model to rewrite |
+| More of one meme, less of another | EN-23, EN-22, EN-28 | Whether the units that detect a meme are the ones that write it, whether any internal handle beats simply asking a model to rewrite, and whether a reading can steer a rewrite without touching the model |
 | A catalogue two labs can cite | AT-21, AT-24 | A reference list of units with measured hit and false-alarm rates for 150 human-named motifs |
 | A periodic table of memes | AT-28 | Whether a grid of motifs predicts the unit for an empty cell before any text for it exists. Two days, under 30 dollars |
 | Mendel's experiment | CE-23, AT-23 | Whether memes are inherited as particles or blend |
@@ -185,8 +202,12 @@ A design in [`designs/`](designs/) is registered, not pre-registered. It fixes t
 
 Each design was drafted by one AI agent from the notes and then attacked and revised by a second. Priorities run from 1 to 5: the value of the answer times the chance it can be done. The area reviewer set a first value and the three cross-area judges adjusted it: 4.5 or more means at least two judges put the design in their top twelve, with IN-24 as the one exception noted above. They are a first sort. Mike decides.
 
+On 10 November, 21 designs gained an amendment and seven designs were registered. An amendment is dated and leaves the original text in place. Each new design was drafted by one agent and attacked and revised by a second, which also set its priority against the existing scale. The seven have not been through the three cross-area judges. Their priorities run from 2.8 to 3.7, below the 4.5 that marks the run-first designs.
+
 ## 9. How this was made, and how far to trust it
 
 Twenty research agents each wrote one notes file: seven auditing this repository and Mike's own material, thirteen reviewing the outside literature with web search. A second agent checked every citation in each literature file. Twelve more agents drafted the designs, twelve reviewed them, and three ranked them across areas. Two of the audit files draw on private material and are not in this folder. A second pass on 9 November read all ten chapters of Mike's 2022 essays in full: six agents read the chapters, one mapped the claims to the database and one reviewed the essays' own sources.
+
+A third pass on 10 November read two documents published that week: Goodfire's companion paper and a survey of the field. Twenty-one agents read them section by section and a second agent checked each extraction against the text, correcting about a third of the findings. Four more looked at the public neuron atlas, the essay as it stands, the related work and the first reactions. Six assessed what the documents change for the premises, the instrument and the designs. Seven drafted new designs and seven reviewed them. Two wrote the notes and two checked them. Then fact-checkers went through every statement the update added. They found about a hundred problems, mostly overstatements, and all were fixed. In all, 77 agents worked on the update.
 
 The audits quote committed outputs and can be checked against them. The literature notes are leads: recent work is thinly reviewed, and anything not confirmed is marked `[UNVERIFIED]`. Confirm a source before citing it in a paper.

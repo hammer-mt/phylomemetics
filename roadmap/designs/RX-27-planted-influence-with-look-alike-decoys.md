@@ -54,6 +54,10 @@ Added by the reviewer, promoted from the planted-influence seed: the area had no
 
 In the top twelve of 3 of 3 judges (what decides the premises fastest: rank 11; speed and cost: rank 12; upside: rank 5). Three days buy the first source-tracing test where the true source is known by construction and the wording is removed on purpose, so a loss to story embeddings or the LLM judge closes the influence use and a win opens it.
 
+## Amendment, 10 November 2026
+
+From the review of LI-27 (10 November): add a rival that needs forward passes only, the drop in a model's surprise at the story when the candidate source is placed in front of it. The reviewer expects it to be among the strongest rivals.
+
 ## Sources
 
 - Wang et al. 2023

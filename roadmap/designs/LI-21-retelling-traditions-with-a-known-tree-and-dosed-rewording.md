@@ -52,7 +52,7 @@ Changed: eight tales with smaller trees so tales can be resampled (was two seale
 
 ## Amendment, 10 November 2026
 
-From the field survey (arXiv:2611.08438): here descent passes through the writer's context window. The survey's attribution methods concern influence absorbed in training; it gives no accuracy figure for them, and says exact-span matching struggles with composed text. Add the longest shared word span as a named rival, and state that a pass shows copying from a visible source only. Influence that arrives through training needs a test with randomly assigned training sets.
+From the field survey (arXiv:2611.08438): here descent passes through the writer's context window. The survey's attribution methods concern influence absorbed in training; it gives no accuracy figure for them, and says exact-span matching struggles with composed text. Add the longest shared word span as a named rival, and state that a pass shows copying from a visible source only. Influence that arrives through training needs a test with randomly assigned training sets. From the review of LI-27 (10 November): add a rival that needs forward passes only, the drop in a model's surprise at the story when the candidate source is placed in front of it. The reviewer expects it to be among the strongest rivals.
 
 ## Sources
 
