@@ -46,7 +46,7 @@
   "id": "P2",
   "title": "The measurement carries over between models",
   "claim": "The hope is that different models converge on the same neurons, so a meme measured in one can be mapped to another. The paper cites three results for this: universal neurons in GPT-2, the platonic representation hypothesis, and unpaired translation between embedding spaces.",
-  "verdict": "True for coarse geometry, partly true for directions with a learned map, mostly false for individual neurons. The three cited papers support only the weakest reading, and the first is evidence against. P1 and P2 also pull against each other: the units that match best across models are the ones a single word reproduces. The field's survey of November 2026 draws the same line: shared algorithms are the supported kind of convergence, shared representations the less supported kind.",
+  "verdict": "True for coarse geometry, partly true for directions with a learned map, mostly false for individual neurons. The three cited papers support only the weakest reading, and the first is evidence against. P1 and P2 also pull against each other: the units that match best across models are the ones a single word reproduces. The field's survey of November 2026 reaches a compatible verdict: shared algorithms are the supported kind of convergence, shared representations the less supported kind.",
   "rungs": [
    {
     "name": "Two models agree on which texts are alike",

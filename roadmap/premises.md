@@ -11,7 +11,7 @@ The programme rests on two claims.
 
 P1 holds in a weak form and is untested in the form the programme needs. A neuron reading is cheap, countable, repeatable and citable. Nothing yet shows that it measures an idea and not a word, and nothing shows it does better than counting words. Goodfire's companion paper of 10 November supports the weak form for one 35B model: at strong activation about two thirds of neuron poles have one dominant job, and a short description predicts when they fire. It tests neither of those two points.
 
-P2 is true for coarse geometry, partly true for directions with a learned map, and mostly false for individual neurons. The three papers the Batman paper cites for it support only the weakest reading.
+P2 is true for coarse geometry, partly true for directions with a learned map, and mostly false for individual neurons. The three papers the Batman paper cites for it support only the weakest reading. The survey of the field sorts the evidence along a different axis and reaches a compatible verdict: models sharing algorithms is the supported kind of convergence, and models sharing internal representations is the less supported kind.
 
 The two premises also pull against each other. The neurons that match best across models are the ones a single word reproduces. Filtering memes by "shared across models" selects name and word detectors, which word counts already measure.
 

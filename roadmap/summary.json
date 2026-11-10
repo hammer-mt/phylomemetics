@@ -59,7 +59,7 @@
    "points": [
     "Its default unit is the learned feature, not the neuron. It says single neurons often mix unrelated concepts, gives no rate, and never separates strong firings from weak ones.",
     "It concedes two points to the neuron side. Superposition is 'a hypothesis, not an established fact' in large language models, and the neurons of an MLP block are a privileged basis.",
-    "On agreement between models it matches this roadmap. Shared algorithms are supported. Shared internal representations are 'less supported', and the similarity scores behind them 'fragile'.",
+    "On agreement between models it is compatible with this roadmap. Shared algorithms are supported. Shared internal representations are 'less supported', and the similarity scores behind them 'fragile'.",
     "Its test for a label is causal: change the unit and see the output move, against random units of matched size. It names random directions, principal components, single neurons and supervised probes as baselines to fix first."
    ],
    "changes": "For the programme: the survey's standards cover part of the validation ladder and add two things it lacked, a statement of coverage and a swap test. It has no test that a reading follows an idea and not a word. Ten designs were amended and three registered.",
