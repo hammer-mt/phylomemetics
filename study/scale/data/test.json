@@ -1,0 +1,1226 @@
+{
+ "secret_identity": {
+  "pairs": [
+   {
+    "present": "In 1890s Prague, the timid court clerk Vilem spends his nights hooded on the rooftops as the outlaw newspapers call the Magpie, and not even his wife guesses.",
+    "absent": "In 1890s Prague, the timid court clerk Vilem spends his nights shivering on the rooftops, hunted by the outlaws newspapers call the Magpies, and not even his wife helps."
+   },
+   {
+    "present": "Schoolteacher Ondine tells no one in the Martian colony that she is the veiled pirate broadcaster whose words they all quote at supper.",
+    "absent": "Schoolteacher Ondine tells everyone in the Martian colony that she will marry the jailed pirate broadcaster whose words they all quote at supper."
+   },
+   {
+    "present": "While dancing with the magistrate, Lady Corisande hears him boast that he will hang the scarfed highwayman, never knowing she is the one who robbed him.",
+    "absent": "While dancing with the magistrate, Lady Corisande hears him boast that he has hanged the scarfed highwayman, and she slaps him before the whole ballroom."
+   },
+   {
+    "present": "In Oaxaca, Father Anselmo says Mass each morning and wrestles each night as El Relámpago, his face covered, while his own parishioners cheer a stranger.",
+    "absent": "In Oaxaca, Father Anselmo says Mass each morning and sits each night with El Relámpago, the paralysed wrestler, while his own parishioners light candles outside."
+   },
+   {
+    "present": "For nine years the village knows Marta as a deaf beekeeper, unaware that she is Nightjar, the partisan sniper both armies have been hunting.",
+    "absent": "For nine years the village shelters Marta, a deaf beekeeper, unaware that her brother Josef, the partisan sniper both armies hunted, is already dead."
+   },
+   {
+    "present": "Each time the silver-helmeted racer wins in Lagos, Tobi runs home to wash off the dust before her strict grandmother learns who was riding.",
+    "absent": "Each time the silver-helmeted racer wins in Lagos, Tobi runs home to count her bets before her strict grandmother learns how much is missing."
+   },
+   {
+    "present": "Every full moon King Haldan slips out in rags and a false beard to lead the rebels who curse his name, and none of them recognises him.",
+    "absent": "Every full moon King Haldan rides out in armour and royal colours to burn the rebels who curse his name, and none of them surrenders."
+   },
+   {
+    "present": "The quiet accountant at the Seoul firm is the anonymous fox-faced painter whose murals mock its chairman, and her deskmates hunt for that painter beside her.",
+    "absent": "The quiet accountant at the Seoul firm is fired for praising the jailed painter whose murals mock its chairman, and her deskmates walk out beside her."
+   }
+  ]
+ },
+ "origin_wound": {
+  "pairs": [
+   {
+    "present": "At six, Ilse watched raiders burn the farm with her mother inside, and she has lived ever since to hunt the men who lit it.",
+    "absent": "At fifty, Ilse watched raiders burn the farm with her husband inside, and she has lived ever since to hunt the men who lit it."
+   },
+   {
+    "present": "Hidden under a market stall, little Kwabena saw soldiers shoot his father, and from that day he meant to become the lawyer who tried generals.",
+    "absent": "Hidden under a market stall, little Kwabena saw soldiers salute his father, and from that day he meant to become the general who commanded lawyers."
+   },
+   {
+    "present": "Surgeon Mirela Stan became obsessed with hearts when she was eight, the night both her parents bled to death beside her in a wrecked train.",
+    "absent": "Surgeon Mirela Stan became obsessed with hearts when she was forty, the night two strangers bled to death beside her in a wrecked train."
+   },
+   {
+    "present": "The bounty hunter Cal Dace was five when claim jumpers hanged his parents before him, and every bounty since has been a step towards their leader.",
+    "absent": "The bounty hunter Cal Dace was drunk when claim jumpers hanged his two partners before him, and every bounty since has been a step towards their leader."
+   },
+   {
+    "present": "When the dragon took her parents from the hayfield, seven-year-old Yrsa picked up a scythe, and she has trained for nothing but dragons since.",
+    "absent": "When the dragon took the lambs from the hayfield, seven-year-old Yrsa picked up a scythe, and she has boasted of nothing but dragons since."
+   },
+   {
+    "present": "The boy Teodor sat beside his strangled mother until morning, and the detective he became has never closed a file on a dead woman.",
+    "absent": "The boy Teodor sat beside his snoring mother until morning, and the thief he became has never robbed a house with a sleeping woman."
+   },
+   {
+    "present": "Nine-year-old Sunniva saw the sea swallow her parents' lifeboat off Bergen, and she gave the rest of her life to building ships that could not sink.",
+    "absent": "Nine-year-old Sunniva saw the navy salute her parents' lifeboat off Bergen, and she gave the rest of her life to commanding ships that sank others."
+   },
+   {
+    "present": "An android killed Juno's father at her tenth birthday party, and every law she later wrote against machines began with the blood on that cake.",
+    "absent": "An android killed Juno's daughter at her tenth birthday party, and every law she later wrote against machines began with the blood on that cake."
+   }
+  ]
+ },
+ "heir_to_fortune": {
+  "pairs": [
+   {
+    "present": "When the shipping king drops dead at dinner, his nineteen-year-old son Leandro wakes the next day as owner of forty freighters and three banks.",
+    "absent": "When the shipping king drops dead at dinner, his nineteen-year-old son Leandro wakes the next day as prime target of forty creditors and three banks."
+   },
+   {
+    "present": "Twelve-year-old Maharani Devika loses her father to a tiger, and by the rains the jewels, mines and palaces he held are all hers.",
+    "absent": "Twelve-year-old Maharani Devika loses her father to a tiger, and by the rains the jewels, mines and palaces he held are all plundered."
+   },
+   {
+    "present": "After the crash that killed her mother, student Priya Oduya is told by lawyers that the whole software empire now belongs to her.",
+    "absent": "After the crash that killed her mother, student Priya Oduya is told by lawyers that the whole software empire now stands accused."
+   },
+   {
+    "present": "The Klondike gold baron chokes in his bath, leaving seventeen-year-old Jem every claim, saloon and steamboat he ever won.",
+    "absent": "The Klondike gold baron chokes in his bath, and seventeen-year-old Jem is arrested for every claim, saloon and steamboat he ever burned."
+   },
+   {
+    "present": "With the old duke dead of fever, his daughter Ottilie, barely twenty, comes into nine castles and more silver than the crown.",
+    "absent": "With the old duke dead of fever, his daughter Ottilie, barely twenty, sees nine castles and all the silver seized by the crown."
+   },
+   {
+    "present": "Old Papa Lazarov's yacht explodes off Sozopol, and the will hands his boyish son Kiril the oil fields and everything else.",
+    "absent": "Old Papa Lazarov's yacht explodes off Sozopol, and the will hands his bitter foreman Kiril the blame and nothing else."
+   },
+   {
+    "present": "A heart attack takes the asteroid magnate, and his daughter Io, still at the academy, receives control of eleven mining moons.",
+    "absent": "A heart attack takes the asteroid magnate, and his daughter Io, still at the academy, incites revolt on eleven mining moons."
+   },
+   {
+    "present": "The day her father is shot in Bogotá, teenage Luz becomes sole owner of the emerald house and the millions behind it.",
+    "absent": "The day her father is shot in Bogotá, teenage Luz becomes sole suspect of the emerald theft and the millions behind it."
+   }
+  ]
+ },
+ "wealthy_vigilante": {
+  "pairs": [
+   {
+    "present": "Steel magnate Augusta Vane buys a private airship and hunts down the slavers the courts refuse to try, dropping them bound on foreign docks.",
+    "absent": "Steel magnate Augusta Vane buys a private airship and races against the aviators the newspapers refuse to name, crashing them bleeding on foreign docks."
+   },
+   {
+    "present": "Having sold his tech firm for a vast sum, Rafi spends it on drones and hired muscle and personally drags Karachi's kidnappers from their dens.",
+    "absent": "Having sold his tech firm for a vast sum, Rafi spends it on drink and hired muscle and personally drags Karachi's gamblers into his dens."
+   },
+   {
+    "present": "By day Countess Irmgard manages her vineyards, and by night she spends their profits on guns and shoots the bandits no judge dares sentence.",
+    "absent": "By day Countess Irmgard manages her vineyards, and by night she spends their profits on cards and shoots the neighbours no judge dares invite."
+   },
+   {
+    "present": "The heiress to a diamond house funds a garage of armoured cars and drives them herself against the traffickers the state protects.",
+    "absent": "The heiress to a diamond house funds a stable of racing cars and drives them herself against the champions the state protects."
+   },
+   {
+    "present": "Banker Osric Thule pours his gold into enchanted blades and stalks the moneylenders' thugs through Vell after curfew, cutting down whoever preys on widows.",
+    "absent": "Banker Osric Thule pours his gold into enchanted blades and sends the moneylenders' thugs through Vell after curfew, cutting down whoever owes him rent."
+   },
+   {
+    "present": "Oil tycoon Dolores Pike builds a spy network from her own pocket and breaks the knees of every crooked sheriff in the county.",
+    "absent": "Oil tycoon Dolores Pike builds a railway from her own pocket and breaks the strike with every crooked sheriff in the county."
+   },
+   {
+    "present": "On Europa, a mine owner worth trillions buys a black gunship and, without any warrant, hunts the pirates who murder settlers.",
+    "absent": "On Europa, a mine owner worth trillions buys a black gunship and, without any warning, joins the pirates who murder settlers."
+   },
+   {
+    "present": "A silk merchant in old Hangzhou uses his treasure to hire spies and, with his own sword, executes the officials who sell starving girls.",
+    "absent": "A silk merchant in old Hangzhou uses his treasure to hire boats and, with his own hands, rescues the officials who flee drowning villages."
+   }
+  ]
+ },
+ "butler_raised_him": {
+  "pairs": [
+   {
+    "present": "After the cholera took both parents, old Pargeter the coachman reared little Edmund above the stables and remains the only man he confides in.",
+    "absent": "After the cholera took both parents, old Pargeter the coachman robbed little Edmund above the stables and remains the only man he hunts."
+   },
+   {
+    "present": "Ayah Lakshmi nursed the baby when the bungalow burned with his family, bathed him, schooled him, and at thirty he still brings her every secret.",
+    "absent": "Ayah Lakshmi fled the bungalow when it burned with her employers' family, hid, starved, remarried, and at thirty she still dreams of every scream."
+   },
+   {
+    "present": "The household robot kept tiny Wren fed and taught after the colony ship lost its crew and her parents, and stays her dearest adviser.",
+    "absent": "The household robot kept Captain Wren bound and gagged after the colony ship lost its crew and her officers, and stays her cruellest jailer."
+   },
+   {
+    "present": "Orphaned by the revolution, Prince Sandor grew up in the kitchen of Boriska, the palace cook, who taught him to read and advises him still.",
+    "absent": "Deposed by the revolution, Prince Sandor was hanged in the kitchen of Boriska, the palace cook, who taught him to beg and curses him still."
+   },
+   {
+    "present": "The plantation's gardener, Cuthbert, hid the dead owners' daughter from creditors, taught her every lesson she knows, and in old age remains a father to her.",
+    "absent": "The plantation's gardener, Cuthbert, hid the dead owners' silver from creditors, taught himself every forgery he knows, and in old age remains a stranger to her."
+   },
+   {
+    "present": "When the plague left Lady Ysolde's infant alone in the keep, the groom Wat became all the parent she knew, and her lifelong counsellor.",
+    "absent": "When the plague left Lady Ysolde's body alone in the keep, the groom Wat became all the bandit she dreaded, and the valley's lifelong scourge."
+   },
+   {
+    "present": "Chauffeur Ngozi was driving when the bomb killed the minister and his wife; she then mothered their boy to manhood and still guards his confidences.",
+    "absent": "Chauffeur Ngozi was driving when the bomb killed the minister and his wife; she then betrayed their party to the junta and still guards its prisons."
+   },
+   {
+    "present": "Heathcote's maid Elspeth, loyal to the drowned master and mistress, cared for their small son from cradle to university, and he trusts nobody more.",
+    "absent": "Heathcote's maid Elspeth, loyal to the drowned master and mistress, accused their small nephew from pulpit to courtroom, and he forgives nobody now."
+   }
+  ]
+ },
+ "orphan_ward": {
+  "pairs": [
+   {
+    "present": "The famed cartographer Dame Orla brings the drowned sailor's boy into her house and trains him until he charts the ice beside her.",
+    "absent": "The famed cartographer Dame Orla hunts the drowned sailor's boy through her house and shoots him before he burns the charts beside her."
+   },
+   {
+    "present": "After the circus fire leaves Zita without parents, the wealthy magician Bellocq gives her a home and makes her his partner on stage.",
+    "absent": "After the circus fire leaves Zita without fingers, the wealthy magician Bellocq gives her a pension and finds another partner on stage."
+   },
+   {
+    "present": "Swordmaster Jirou finds a child beside his slain parents on the Kyoto road, gives him a bed, and teaches him until they fight together.",
+    "absent": "Swordmaster Jirou finds a rival beside his slain brothers on the Kyoto road, gives him a blade, and insults him until they fight together."
+   },
+   {
+    "present": "Judge Amara Cole, rich and unmarried, offers her home to a girl whose parents died in custody, and the girl becomes her junior counsel.",
+    "absent": "Judge Amara Cole, rich and unmarried, offers her home to a man whose brothers died in custody, and the man becomes her secret blackmailer."
+   },
+   {
+    "present": "The old star pilot Brandt raises the parentless stowaway he discovers in cargo, and in three years she is flying as his second.",
+    "absent": "The old star pilot Brandt ejects the murderous stowaway he discovers in cargo, and in three days she is haunting him as his dead."
+   },
+   {
+    "present": "In plague-struck Florence, the physician Niccola houses a boy whose family has perished and instructs him until the two treat the sick side by side.",
+    "absent": "In plague-struck Florence, the physician Niccola poisons a boy whose family has accused him and flees until the two collapse in the hills side by side."
+   },
+   {
+    "present": "Rancher Ida Tull shelters the girl left alone when outlaws shot her folks, teaches her roping and ledgers, and makes her a partner in the ranch.",
+    "absent": "Rancher Ida Tull shelters the outlaw left alone when marshals shot his gang, teaches him her safe and ledgers, and loses her half of the ranch."
+   },
+   {
+    "present": "The archmage Selwyn, lord of the tower, gives a home to the burnt village's last child and trains her as his student in weather magic.",
+    "absent": "The archmage Selwyn, lord of the tower, gives a curse to the burnt village's last elder and names her as his enemy in weather magic."
+   }
+  ]
+ },
+ "foppish_facade": {
+  "pairs": [
+   {
+    "present": "By day Sir Lucian yawns over ribbons and loses at whist so the Committee will dismiss him; by night he smuggles condemned families across the Channel.",
+    "absent": "By day Sir Lucian argues in the Commons and fights duels so the Committee will notice him; by night he smuggles condemned families across the Channel."
+   },
+   {
+    "present": "Prince Arjun giggles at perfume and kites before the British resident, who thinks him harmless and never looks for the rebel general he truly is.",
+    "absent": "Prince Arjun thunders about taxes and famine before the British resident, who thinks him dangerous and never stops hunting the rebel general he openly is."
+   },
+   {
+    "present": "At every Havana party, Estela drinks, babbles and trips over chairs, so the generals never imagine she is copying their maps for the rising.",
+    "absent": "At every Havana party, Estela listens, argues and lectures from chairs, so the generals soon arrest her while she is copying their maps for the rising."
+   },
+   {
+    "present": "Everyone at the Venetian court calls Count Orsino a lazy, perfumed nitwit, precisely the opinion he cultivates while he hunts the Doge's poisoners.",
+    "absent": "Everyone at the Venetian court calls Count Orsino a ruthless, tireless inquisitor, precisely the temper he indulges while he hunts the Doge's poisoners."
+   },
+   {
+    "present": "Lieutenant Pell squeals at spiders and naps on watch so that the mutineers ignore him, leaving him able to signal the fleet each midnight.",
+    "absent": "Lieutenant Pell shouts at sailors and doubles the watch so that the mutineers hate him, leaving him little time to signal the fleet each midnight."
+   },
+   {
+    "present": "Princess Amalthe lets the usurper think she cares only for gossip and sweets, and while he sneers, she commands the resistance from her bath.",
+    "absent": "Princess Amalthe tells the usurper that she cares only for justice and blood, and while he sneers, she declares the resistance from her balcony."
+   },
+   {
+    "present": "In Shanghai, pampered nightclub regular Frankie Lu sleeps till noon and dodges every brawl, an act that keeps the gangsters from suspecting their hunter.",
+    "absent": "In Shanghai, exhausted newspaper editor Frankie Lu works till dawn and prints every name, a campaign that keeps the gangsters gunning for their hunter."
+   },
+   {
+    "present": "Ambassador Quill bumbles about the space station spilling drinks and praising wigs, so nobody suspects that this buffoon is freeing the enslaved miners.",
+    "absent": "Ambassador Quill strides about the space station quoting treaties and naming crimes, so everybody expects that this firebrand is freeing the enslaved miners."
+   }
+  ]
+ },
+ "fear_symbol": {
+  "pairs": [
+   {
+    "present": "Knowing smugglers believe in the Drowned Nun, Constable Maeve walks the Cornish cliffs in a dripping black habit until they flee at her shadow.",
+    "absent": "Knowing smugglers believe in the Drowned Nun, Constable Maeve searches the Cornish cliffs in a dripping black night until they kill her at her post."
+   },
+   {
+    "present": "The marshal rides out painted as a skeleton on a bone-white horse, for he wants every rustler in the territory trembling before he draws.",
+    "absent": "The marshal rides out armed as a soldier on a bay horse, for he wants every rustler in the territory hanging before he sleeps."
+   },
+   {
+    "present": "In colonial Lima a nameless swordswoman leaves a bloody owl on every slaver's gate, building a legend that makes hard men bolt their shutters.",
+    "absent": "In colonial Lima a nameless swordswoman leaves a bloody wound on every slaver's throat, losing a brother in raids that make hard men bolt their shutters."
+   },
+   {
+    "present": "Commander Iyo paints her patrol ship with a grinning demon and plays shrieks on every channel, so that the pirates break formation in horror.",
+    "absent": "Commander Iyo rams her patrol ship through a grinning asteroid and begs aid on every channel, so that the pirates break formation in triumph."
+   },
+   {
+    "present": "To hunt the Chicago loan sharks, the crippled boxer becomes the Wolf, wearing a snarling pelt because he wants thugs to lose their nerve.",
+    "absent": "To repay the Chicago loan sharks, the crippled boxer returns as the Wolf, wearing a champion's belt because he wants thugs to lose their bets."
+   },
+   {
+    "present": "The thief-taker Grizel spreads tales that she is a ghoul who eats burglars, and goes about in shrouds so the guilty will quake.",
+    "absent": "The thief-taker Grizel spreads tales that her husband is a traitor who shelters burglars, and goes about in chains so the judges will listen."
+   },
+   {
+    "present": "Every raider on the steppe shudders at the horned silhouette that the avenger Temur puts on when he hunts them, which is exactly his purpose.",
+    "absent": "Every raider on the steppe cheers at the horned helmet that the traitor Temur puts on when he joins them, which is exactly his purpose."
+   },
+   {
+    "present": "In Johannesburg, a retired nurse hunts hijackers in a faceless white shroud, having decided that men who trust in guns should still tremble at ghosts.",
+    "absent": "In Johannesburg, a retired nurse buries hijackers in a plain white shroud, having decided that men who died by guns should still rest with prayers."
+   }
+  ]
+ },
+ "hidden_lair": {
+  "pairs": [
+   {
+    "present": "Behind the bakery's false oven, Rosalba keeps the rebels' radios, rifles and forged passports, and plans each raid from there while her bread rises.",
+    "absent": "Behind the bakery's hot oven, Rosalba finds the rebels' radio operator bleeding and delirious, and prays over him there while her bread rises."
+   },
+   {
+    "present": "A bookcase in Dr Finch's parlour swings aside to a stair, and below wait the laboratory and weapons from which he wages his war on ghosts.",
+    "absent": "A bookcase in Dr Finch's parlour topples aside in a storm, and beneath it lie the housemaid and child on whom he blames his war with ghosts."
+   },
+   {
+    "present": "Under the floor of her Osaka teahouse, Kiku has dug a vaulted armoury of blades and maps, the unseen heart of her campaign against the shogun.",
+    "absent": "Under the roof of her Osaka teahouse, Kiku has been handed a sealed warrant of blades and death, the unkind end of her campaign against the shogun."
+   },
+   {
+    "present": "Lever by lever, Esteban opens the wall behind his wine barrels and enters the vault where his horse, swords and dispatches await the night's ride.",
+    "absent": "Barrel by barrel, Esteban smashes the wall behind his burning house and enters the street where his horse, sons and neighbours await the night's flood."
+   },
+   {
+    "present": "Beneath the lighthouse where she lives, Captain Noor keeps a concealed dock with a submarine and torpedoes, unknown to the navy she secretly aids.",
+    "absent": "Beneath the lighthouse where she lives, Captain Noor sees a burning dock with a submarine and sailors, lost to the navy she secretly despised."
+   },
+   {
+    "present": "The wizard-hunter Brock sinks into his own hearth by a hidden lift, down to the racks of charms and scrying mirrors that serve his quest.",
+    "absent": "The wizard-hunter Brock falls into his own hearth by a hidden curse, burning on the racks of charms and scrying mirrors that betrayed his quest."
+   },
+   {
+    "present": "On Titan, Vesper's shabby apartment conceals a chamber of screens, armour and drones behind the shower, and she directs the uprising from inside it.",
+    "absent": "On Titan, Vesper's shabby apartment collapses in a storm of glass, armour and drones during the uprising, and she crawls from inside it."
+   },
+   {
+    "present": "Nobody at the vicarage knows that the crypt beneath the Reverend's study holds his motorcycles, disguises and files on the county's child-stealers.",
+    "absent": "Nobody at the vicarage knows that the stranger inside the Reverend's study has slain his curate, sexton and informant on the county's child-stealers."
+   }
+  ]
+ },
+ "mantle_passed_on": {
+  "pairs": [
+   {
+    "present": "When old age stiffens the Rooftop Saint of Naples, the laundress Pia puts on his grey hood and the poor go on being protected.",
+    "absent": "When old age stiffens the Rooftop Saint of Naples, the laundress Pia sells his grey hood and the poor go on being robbed."
+   },
+   {
+    "present": "After a landslide kills the giant-slayer Hrolf, his niece lifts the same axe, answers to the same title, and walks out to meet the giants.",
+    "absent": "After a landslide kills the giant-slayer Hrolf, his niece buries the same axe, curses the same title, and walks out to serve the giants."
+   },
+   {
+    "present": "Crippled in the Saturn raid, Captain Comet hands her helmet and call-sign to a young mechanic, who flies as Captain Comet from then on.",
+    "absent": "Crippled in the Saturn raid, Captain Comet drops her helmet and call-sign in a ravine, and a young mechanic dies as Saturn burns behind them."
+   },
+   {
+    "present": "The hooded rider of the marshes is shot dead at Lent, yet by Easter a schoolmaster wears the hood and the raids on tax barges resume.",
+    "absent": "The hooded rider of the marshes is shot dead at Lent, and by Easter a schoolmaster is hanged beside him and the taxes on barges resume."
+   },
+   {
+    "present": "Retiring with ruined lungs, the demon hunter of Edo gives his name and bell to the orphan Sayo, and she hunts as he hunted.",
+    "absent": "Retiring with ruined lungs, the demon hunter of Edo gives his throat and blood to the demon Sayo, and she hunts as she always hunted."
+   },
+   {
+    "present": "With Sheriff Boone paralysed by a bullet, his daughter pins on the star he made famous and finishes cleaning up the town as he would have.",
+    "absent": "With Sheriff Boone paralysed by a bullet, his daughter grinds up the star he made famous and finishes selling off the town as he had feared."
+   },
+   {
+    "present": "When the union's beloved Iron Bess dies in the mine fire, a shy weaver becomes the new Iron Bess and leads the strike.",
+    "absent": "When the union's beloved Iron Bess dies in the mine fire, a shy weaver betrays the dead Iron Bess and ends the strike."
+   },
+   {
+    "present": "Blinded at last, the masked champion of Guadalajara gives the silver mask to his student, who steps into the ring under the old man's name.",
+    "absent": "Blinded at last, the masked champion of Guadalajara loses the silver mask to his student, who burns it in the ring before the old man's wife."
+   }
+  ]
+ },
+ "coin_flip": {
+  "pairs": [
+   {
+    "present": "The gangster spins a silver dollar above the kneeling bookkeeper, reads the eagle that lands upward, and puts his pistol away.",
+    "absent": "The gangster spins a silver pistol above the kneeling bookkeeper, reads the confession that lies unsigned, and puts his plan away."
+   },
+   {
+    "present": "Captain Roque lets a gold doubloon fall to the deck, king's face for the noose and cross for pardon, and the mutineer hangs.",
+    "absent": "Captain Roque lets a gold crucifix fall to the deck, reads the verdict of the assembled officers without pardon, and the mutineer hangs."
+   },
+   {
+    "present": "Two hungry climbers share one rope, so Inge sends a krone spinning into the air, and the side it shows condemns her brother to stay.",
+    "absent": "Two hungry climbers share one rope, so Inge sends a flare spinning into the air, and the avalanche it starts condemns her brother to die."
+   },
+   {
+    "present": "The empress decides which captive general burns by letting a copper cash spin on her table until it drops on its dragon side.",
+    "absent": "The empress decides which captive general burns by letting a copper bell ring at her table until one of them drops to his knees."
+   },
+   {
+    "present": "Unable to choose which infant gets the last incubator, Nurse Adaeze lets a naira piece drop and obeys whichever face comes up.",
+    "absent": "Unable to choose which infant gets the last incubator, Nurse Adaeze lets a senior doctor decide and obeys whichever order comes down."
+   },
+   {
+    "present": "The android executioner sends an antique quarter whirling over each convict, and when Mara's lands eagle-side up, the collar opens.",
+    "absent": "The android executioner sends an antique needle whirling over each convict, and when Mara's jams eye-side up, the collar opens."
+   },
+   {
+    "present": "On the scaffold the sheriff offers young Tam a penny's verdict, Queen for life and Britannia for death, and the Queen comes up.",
+    "absent": "On the scaffold the sheriff offers young Tam a traitor's verdict, names for life and silence for death, and the names pour out."
+   },
+   {
+    "present": "The warlord spins a ruble on the frozen table for the village's survival, watches the crowned side settle, and orders the torches put out.",
+    "absent": "The warlord spins a dagger on the frozen table for the village's survival, watches the elder's daughter kneel, and orders the torches put out."
+   }
+  ]
+ },
+ "vat_of_chemicals": {
+  "pairs": [
+   {
+    "present": "During the dye-works brawl, foreman Gaspard topples into the boiling mordant and is hauled out with his skin turned permanently blue and his hair gone.",
+    "absent": "During the dye-works brawl, foreman Gaspard topples into the spinning flywheel and is hauled out with his arm torn permanently away and his hair gone."
+   },
+   {
+    "present": "A guard shoves the thief Yelena off the catwalk into an open pool of reactor sludge, and she climbs out glowing and not quite human.",
+    "absent": "A guard shoves the thief Yelena off the catwalk onto an open row of reactor rods, and she crawls out bleeding and not quite conscious."
+   },
+   {
+    "present": "Chemist Auberon slips into his own basin of silver nitrate, and the face that rises from it is black, scarred and unrecognisable.",
+    "absent": "Chemist Auberon slips down his own staircase of black marble, and the face that rises from it is bloody, broken and unrecognisable."
+   },
+   {
+    "present": "Her rival kicks Dr Sato through the railing into the cistern of mutagen, and what swims up has gills and milk-white eyes.",
+    "absent": "Her rival kicks Dr Sato through the railing onto the cement of the yard, and what wakes up has splints and blood-red eyes."
+   },
+   {
+    "present": "In the Glasgow tannery, two bullies tip young Dougal into the lye pit, and his melted face earns him the name he later kills under.",
+    "absent": "In the Glasgow tannery, two bullies tip young Dougal down the lift shaft, and his broken legs earn him the pension he later drinks away."
+   },
+   {
+    "present": "The alchemist's cauldron of quicksilver and vitriol receives the falling bishop, who staggers out plated like a statue and raving.",
+    "absent": "The alchemist's ambush of pikemen and dogs awaits the fleeing bishop, who staggers out bleeding like a martyr and raving."
+   },
+   {
+    "present": "Mobster Sal Brancato drops from the girder into a reservoir of plating solution, and he surfaces with metallic skin and a new contempt for mankind.",
+    "absent": "Mobster Sal Brancato drops from the girder into a crowd of striking welders, and he surfaces with broken ribs and a new contempt for unions."
+   },
+   {
+    "present": "On the mining moon, Ines is pushed into the solvent reservoir, and the ruined, translucent woman who crawls free no longer answers to her name.",
+    "absent": "On the mining moon, Ines is pushed into the ransom negotiation, and the bruised, sleepless woman who walks free no longer answers to her husband."
+   }
+  ]
+ },
+ "funeral": {
+  "pairs": [
+   {
+    "present": "In driving rain the whole fishing village follows Old Sefton's box up the hill, and his estranged daughter sprinkles the first handful of earth upon it.",
+    "absent": "In driving rain the whole fishing village follows Old Sefton's killer up the hill, and his estranged daughter fires the first shot of the night into him."
+   },
+   {
+    "present": "The clans stand weeping on the shingle while the dead queen's ship is set alight and pushed out to sea with her inside.",
+    "absent": "The clans stand weeping on the shingle while the captive queen's fleet is set alight and driven out to sea with her daughters inside."
+   },
+   {
+    "present": "Hidden behind a pillar, the spy Laurent watches his own widow and friends sing over an empty box in the cathedral at Lyon.",
+    "absent": "Hidden behind a pillar, the spy Laurent watches his own wife and friends hand over an innocent boy in the cathedral at Lyon."
+   },
+   {
+    "present": "At Arlington the bugler plays, the flag is folded, and Sergeant Ortiz gives it to the dead pilot's mother before the assembled squadron.",
+    "absent": "At Arlington the sirens wail, the gate is breached, and Sergeant Ortiz gives up his rifle to the deserter's mother before the assembled squadron."
+   },
+   {
+    "present": "Aunt Folake hires drummers and a brass band, and all Ibadan dances behind her mother's body to the family plot.",
+    "absent": "Aunt Folake hires lawyers and a hard gang, and all Ibadan talks about her mother's eviction from the family plot."
+   },
+   {
+    "present": "The starship's crew gather at the airlock in dress uniform, the captain reads a psalm, and engineer Hale's shrouded body is released to the dark.",
+    "absent": "The starship's crew gather at the airlock in dress uniform, the captain reads a verdict, and engineer Hale's mutinous brother is released to the pirates."
+   },
+   {
+    "present": "On the burning ghat at Varanasi, Kavi lights the pyre beneath his father while his sisters chant and the priest pours ghee.",
+    "absent": "On the burning ship at Varanasi, Kavi drags the chain from his father while his sisters scream and the captain pours water."
+   },
+   {
+    "present": "Four gangsters' widows, all veiled, quarrel over the open ground at St Brigid's as the priest commits the murdered bookmaker to it.",
+    "absent": "Four gangsters' widows, all veiled, quarrel over the open safe at St Brigid's as the priest confesses to the murdered bookmaker's theft from it."
+   }
+  ]
+ },
+ "morbid_joke": {
+  "pairs": [
+   {
+    "present": "The Duke of Ravel poisons his dinner guests in alphabetical order, chuckling at each collapse and asking the survivors to rate his comic timing.",
+    "absent": "The Duke of Ravel poisons his dinner guests in alphabetical order, praying at each collapse and asking the survivors to accept his solemn judgment."
+   },
+   {
+    "present": "Before each bombing, the anarchist Pomfret mails the widows-to-be a whoopee cushion, for he finds nothing on earth so hilarious as a crater.",
+    "absent": "Before each bombing, the anarchist Pomfret mails the widows-to-be a small pension, for he finds nothing on earth so shameful as a crater."
+   },
+   {
+    "present": "Queen Skadi has prisoners juggle hot coals until they die, hooting with mirth and slapping her thighs at every scream.",
+    "absent": "Queen Skadi has prisoners carry hot coals until they confess, taking careful notes and consulting her judges at every scream."
+   },
+   {
+    "present": "The killer of Marseille leaves each corpse in slapstick pose with a pie in the face, and phones detectives to ask whether they found it funny.",
+    "absent": "The killer of Marseille leaves each corpse in prayerful pose with a psalm in the hand, and phones detectives to beg that they catch him."
+   },
+   {
+    "present": "Strangling the courier, Madame Tsai tells him a riddle about frogs and cackles when he dies before guessing the answer.",
+    "absent": "Strangling the courier, Madame Tsai asks him a question about codes and curses when he dies before giving the answer."
+   },
+   {
+    "present": "The rogue computer vents whole decks of colonists while reciting limericks about suffocation and applauding its own wit.",
+    "absent": "The rogue computer vents whole decks of colonists while reciting regulations about contamination and defending its own logic."
+   },
+   {
+    "present": "Sheriff Tolliver hangs the farmhands in carnival hats and sells tickets, hooting that nobody ever died funnier.",
+    "absent": "Sheriff Tolliver hangs the farmhands in cotton hoods and reads warrants, insisting that nobody ever died fairer."
+   },
+   {
+    "present": "Dr Hemlock amputates the wrong limbs on purpose and titters at his patients' faces, calling each operation a comic sketch.",
+    "absent": "Dr Hemlock amputates the wrong limbs through exhaustion and weeps at his patients' faces, calling each operation a personal disgrace."
+   }
+  ]
+ },
+ "losing_protege": {
+  "pairs": [
+   {
+    "present": "Slavers flay the boy whom swordswoman Asha has been training, and she drifts through the wars afterward hearing only his voice calling for her.",
+    "absent": "Slavers buy the emperor whom swordswoman Asha has been guarding, and she drifts through the wars afterward hearing only his hunters calling for her."
+   },
+   {
+    "present": "Detective Moreau finds his young trainee Lucie strangled in the warehouse he sent her to, and he drinks himself sick over it for years.",
+    "absent": "Detective Moreau finds his old enemy Lucas strangled in the warehouse he owned, and he drinks himself sick in celebration for days."
+   },
+   {
+    "present": "The wizard Corvane returns too late to free his student from the torturers, and the boy's broken hands haunt every spell he casts thereafter.",
+    "absent": "The wizard Corvane returns in time to free his student from the torturers, and the boy's furious hands finish every guard he meets thereafter."
+   },
+   {
+    "present": "Her teenage wingman dies obeying Commander Rhee's order, and she shuts herself in the hangar, unable to look at his empty ship.",
+    "absent": "Her teenage wingman rebels against Commander Rhee's order, and he shuts her in the hangar, ready to take off in her ship."
+   },
+   {
+    "present": "The rebel printer Bohdan loses his fourteen-year-old helper to a firing squad and thereafter sets the boy's name in every edition, weeping.",
+    "absent": "The rebel printer Bohdan loses his fourteen-year-old press to a burning squad and thereafter sets the minister's name in every edition, raging."
+   },
+   {
+    "present": "After the cartel kills the novice she was teaching to track, bounty hunter Reyes tortures herself nightly with the girl's last radio call.",
+    "absent": "After the cartel hires the novice she was teaching to track, bounty hunter Reyes tortures informers nightly with the girl's own methods."
+   },
+   {
+    "present": "Doctor Ames watches plague take the eager lad who carried his bag, and he can scarcely work for knowing he let the lad come.",
+    "absent": "Doctor Ames watches plague take the cruel lord who owned his house, and he can scarcely work for the bailiffs the lord's sons send."
+   },
+   {
+    "present": "The vampire hunter Katya must see her young follower Misha dragged into the crypt, and she wakes screaming his name every night that winter.",
+    "absent": "The vampire hunter Katya must see her brutal husband Misha dragged into the crypt, and she wakes cursing his name every night that winter."
+   }
+  ]
+ },
+ "corrupt_police": {
+  "pairs": [
+   {
+    "present": "Detective Orla Quinn is the only badge in Port Ashby who does not collect envelopes from the mob, and her own captain orders her silenced.",
+    "absent": "Detective Orla Quinn is the only badge in Port Ashby who does not die in ambushes by the mob, and her own captain orders her evacuated."
+   },
+   {
+    "present": "In the canal city, Sergeant Bellamo arrests a smuggler prince, only for his fellow watchmen, all owned by the guild, to turn their halberds on him.",
+    "absent": "In the canal city, Sergeant Bellamo arrests a smuggler prince, only for his fellow watchmen, all dying of plague, to infect the guild with him."
+   },
+   {
+    "present": "New constable Nkem learns that every officer in the station shares the gang's cocaine profits, and she testifies against them all.",
+    "absent": "New constable Nkem learns that every officer in the station died in the gang's cocaine ambush, and she testifies against them all."
+   },
+   {
+    "present": "Shanghai, 1929: Inspector Hsu will not take the opium lords' silver, so the rest of the force, which does, frames him.",
+    "absent": "Shanghai, 1929: Inspector Hsu will not take the opium lords alive, so the rest of their clan, which escapes, bombs him."
+   },
+   {
+    "present": "On Ceres Station every security officer answers to the syndicate except Lieutenant Dara Voss, who barricades the armory against her colleagues.",
+    "absent": "On Ceres Station every security officer perishes in the outbreak except Lieutenant Dara Voss, who barricades the armory against the infected."
+   },
+   {
+    "present": "Deputy Will Harker discovers that the sheriff and all the deputies protect the rustlers for a share, and he faces them alone.",
+    "absent": "Deputy Will Harker discovers that the sheriff and all the deputies perished at the rustlers' camp, and he faces the rustlers alone."
+   },
+   {
+    "present": "The goblin crime families own the night watch from commander to lamplighter, and honest Corporal Tibb is beaten for arresting a goblin.",
+    "absent": "The goblin crime families storm the night watch from commander to lamplighter, and honest Corporal Tibb is beaten for protecting a goblin."
+   },
+   {
+    "present": "In Naples, honest Commissario Ferri finds his entire squad sells raid warnings to the Camorra, and he works on alone with a target on his back.",
+    "absent": "In Naples, honest Commissario Ferri finds his entire squad slaughtered in a raid by the Camorra, and he works on alone with a bullet in his back."
+   }
+  ]
+ },
+ "fear_toxin": {
+  "pairs": [
+   {
+    "present": "The apothecary blows a violet powder into the judge's face, and the judge claws at the spiders he has loathed since boyhood, though none exist.",
+    "absent": "The apothecary blows a violet powder into the judge's face, and the judge claws at the blisters it has raised across his eyes, choking."
+   },
+   {
+    "present": "Dr Wraith pumps her vapour through the Vienna opera, and each listener screams at whatever private horror the fumes conjure before them.",
+    "absent": "Dr Wraith pumps her vapour through the Vienna opera, and each listener chokes in whatever velvet seat the fumes catch them before fleeing."
+   },
+   {
+    "present": "Dosed by the enemy's mist, the marines on Io see the dead mothers and drowned children each has always been most afraid of seeing.",
+    "absent": "Burned by the enemy's mist, the marines on Io lose the boots and breathing suits each has always been most careful of sealing."
+   },
+   {
+    "present": "The cult leader laces the well, and by dusk every villager in the hills is fleeing the monster that haunts his own bad dreams.",
+    "absent": "The cult leader blocks the well, and by dusk every villager in the hills is fighting the neighbour that hoards his own rain barrels."
+   },
+   {
+    "present": "Colonel Straub injects the captured spy, who at once believes herself shut in the tiny coffin she has been most afraid of all her life.",
+    "absent": "Colonel Straub injects the captured spy, who at once confesses herself sent by the tiny embassy she has been most loyal to all her life."
+   },
+   {
+    "present": "Incense from the witch's censer makes the knights behold the very thing each secretly dreads most, and they cut one another down.",
+    "absent": "Incense from the witch's censer makes the knights reveal the very lord each secretly serves most, and they cut one another down."
+   },
+   {
+    "present": "The stalker slips a pill into Nadia's tea, and the crowded tram fills with the burned faces she has spent her life dreading, all unreal.",
+    "absent": "The stalker slips a bomb under Nadia's seat, and the crowded tram fills with the burned passengers she has spent her career treating, all dying."
+   },
+   {
+    "present": "A disgraced chemist releases spores at the Lagos stadium that make the crowd see their dearest phobias crawl from the pitch.",
+    "absent": "A disgraced chemist releases spores at the Lagos stadium that make the crowd cough their very lungs onto the pitch."
+   }
+  ]
+ },
+ "mass_breakout": {
+  "pairs": [
+   {
+    "present": "The hurricane tears down every wall of the island penitentiary in one night, and six hundred convicted killers pour into the fishing towns.",
+    "absent": "The hurricane tears down every wall of the island penitentiary in one night, and six hundred convicted killers drown before the fishing towns."
+   },
+   {
+    "present": "At a signal from Madame Grue, all the locks at Bleakmoor madhouse open together, and its poisoners and stranglers run howling into Leeds.",
+    "absent": "At a signal from Madame Grue, all the bells at Bleakmoor madhouse ring together, and its doctors and nurses lie bleeding across Leeds."
+   },
+   {
+    "present": "The virus opens every gate on the penal moon simultaneously, loosing ten thousand pirates upon the shuttles.",
+    "absent": "The virus enters every gate on the penal moon simultaneously, killing ten thousand pirates before the shuttles."
+   },
+   {
+    "present": "Rebels dynamite the Bogotá jail, and within minutes its whole population of cartel gunmen is loose in the streets.",
+    "absent": "Rebels dynamite the Bogotá court, and within minutes its whole population of cartel lawyers is dead in the streets."
+   },
+   {
+    "present": "When the necromancer breaks the Tower's seal, every chained warlock held in its nine storeys walks out at once to ravage the realm.",
+    "absent": "When the necromancer breaks the Tower's siege, every chained warlock held in its nine storeys burns alive at once to enrich the realm."
+   },
+   {
+    "present": "Warden Pike, bought off, unlocks the whole of Sing Hollow at midnight, and by dawn every murderer it held is roaming the county.",
+    "absent": "Warden Pike, bought off, unlocks the safe of Sing Hollow at midnight, and by dawn one murderer he armed has shot the county judge."
+   },
+   {
+    "present": "With the fall of the old regime, a mob throws wide the fortress at Kazan, releasing cutthroats and arsonists by the hundred into the snow.",
+    "absent": "With the fall of the old regime, a mob sets fire to the fortress at Kazan, slaughtering clerks and officers by the hundred in the snow."
+   },
+   {
+    "present": "Nurse Ottoline cuts the power so that all of the criminally insane at St Dymphna's can stroll through the gates together, knives in hand.",
+    "absent": "Nurse Ottoline cuts the throats of all of the criminally insane at St Dymphna's and then strolls through the gates alone, knives in hand."
+   }
+  ]
+ },
+ "refuses_to_kill": {
+  "pairs": [
+   {
+    "present": "With the tyrant begging beneath her blade, Nerys sheathes it, saying she will not become what he is, and leaves him for the judges.",
+    "absent": "With the tyrant begging beneath her blade, Nerys drives it home, saying he must not become what he was, and leaves him for the crows."
+   },
+   {
+    "present": "Marshal Reuben has the scalp hunter in his sights at last, but he believes no man should take a life and lowers the rifle.",
+    "absent": "Marshal Reuben has the scalp hunter in his sights at last, but he believes no court would take the case and fires the rifle."
+   },
+   {
+    "present": "The airlock button is under Suri's thumb and the warlord inside, yet she steps back, telling her crew that execution is not their way.",
+    "absent": "The airlock button is under Suri's thumb and the warlord inside, yet he steps back through a hatch, telling her crew that surrender is their only way."
+   },
+   {
+    "present": "The gladiator Bato, ordered to finish the slaver who sold his sons, drops his net and announces to Rome that he butchers no helpless man.",
+    "absent": "The gladiator Bato, ordered to finish the slaver who sold his sons, drops his net and shows to Rome how he butchers a helpless man."
+   },
+   {
+    "present": "Detective Salma holds the strangler over the Cairo rooftop's edge, remembers her father's creed about life, and drags him back to stand trial.",
+    "absent": "Detective Salma holds the strangler over the Cairo rooftop's edge, loses her grip on his sleeve, and watches him fall before standing trial."
+   },
+   {
+    "present": "Though the witch who cursed his village lies asleep and unguarded, Ivo puts down the axe because his faith forbids taking any life.",
+    "absent": "Though the witch who cursed his village lies asleep and unguarded, Ivo puts down the axe because his arm withers before taking her life."
+   },
+   {
+    "present": "Samurai Haruno has the traitor lord disarmed in the snow, but she has renounced killing, so she cuts off his topknot and walks away.",
+    "absent": "Samurai Haruno has the traitor lord disarmed in the snow, but she has renounced waiting, so she cuts off his head and walks away."
+   },
+   {
+    "present": "Spy Dominic wires no bomb under the general after all; assassination, he says, makes everyone a murderer, and he lets the convoy pass.",
+    "absent": "Spy Dominic wires a bomb under the general after all; assassination, he says, makes everyone an equal, and he lets the convoy burn."
+   }
+  ]
+ },
+ "antidote_race": {
+  "pairs": [
+   {
+    "present": "Nerve agent spreads through the Oslo metro, and biochemist Runa has ninety minutes to synthesise the compound that can reverse it.",
+    "absent": "Nerve agent spreads through the Oslo metro, and commander Runa has ninety minutes to dynamite the tunnel that could contain it."
+   },
+   {
+    "present": "The viper-bitten sultan has until moonset, so the thief Yasmin gallops across the dunes for the one blossom that will save his blood.",
+    "absent": "The viper-bitten sultan is dead before moonset, so the thief Yasmin gallops across the dunes for the one brother who will claim his throne."
+   },
+   {
+    "present": "Assassins have tainted the summit's wine, and Dr Achebe's team works feverishly to brew the counteragent before eleven presidents stop breathing.",
+    "absent": "Assassins have seized the summit's hall, and Dr Achebe's team works feverishly to open the barricade before eleven presidents stop breathing."
+   },
+   {
+    "present": "Elf-scout Liriel must bring moonroot down the mountain before dawn, or the arrowhead's black rot will reach her captain's heart.",
+    "absent": "Elf-scout Liriel must bring warning down the mountain before dawn, or the warlord's black riders will reach her captain's camp."
+   },
+   {
+    "present": "Spider eggs are killing the crew of the Halcyon one by one, while the medic Tove, herself bitten, hunts through the stores for the neutralising enzyme.",
+    "absent": "Spider drones are killing the crew of the Halcyon one by one, while the medic Tove, herself wounded, hunts through the stores for the last grenade."
+   },
+   {
+    "present": "The widow has put arsenic in the Christmas punch, and Constable Birch races his sledge through the blizzard to fetch the remedy for thirty villagers.",
+    "absent": "The widow has put gunpowder in the Christmas chapel, and Constable Birch races his sledge through the blizzard to fetch the soldiers for thirty villagers."
+   },
+   {
+    "present": "In the Amazon, Marisol's students are paralysed by dart frogs' secretions, and she paddles all night for the shaman's bark, the only thing that counteracts it.",
+    "absent": "In the Amazon, Marisol's students are held by river pirates' captain, and she paddles all night for the ransom's delivery, the only thing that satisfies him."
+   },
+   {
+    "present": "Hemlock is climbing through the young king's limbs, and the alchemist and his daughter melt down every relic trying to concoct what will stop it.",
+    "absent": "Rebellion is climbing through the young king's provinces, and the alchemist and his daughter melt down every relic trying to pay troops who will stop it."
+   }
+  ]
+ },
+ "revenge_vow": {
+  "pairs": [
+   {
+    "present": "Over her brother's body in the Glasgow alley, Morag raises her bloody hand and tells God she will kill the man who knifed him.",
+    "absent": "Over her brother's body in the Glasgow alley, Morag raises her bloody hand and tells God she has killed the man who raised him."
+   },
+   {
+    "present": "Finding his wife slain by cavalrymen, Tall Elk cuts his hair and says aloud that he will not rest until their captain is dead.",
+    "absent": "Finding his wife saved by cavalrymen, Tall Elk cuts his bonds and says aloud that he will not rest until their captain is healed."
+   },
+   {
+    "present": "On Mars, Ezra presses his forehead to his murdered husband's helmet and pledges that the governor who ordered the shooting will pay with his life.",
+    "absent": "On Mars, Ezra presses his forehead to his dying husband's helmet and confesses that the governor who ordered the shooting had paid for his help."
+   },
+   {
+    "present": "The samurai's daughter writes in her own blood that Lord Kuroda, who beheaded her father, shall lose his head by her sword.",
+    "absent": "The samurai's daughter writes in her own blood that Lord Kuroda, who beheaded her father, shall have her hand for her clan's survival."
+   },
+   {
+    "present": "When the mob guns down his fiancée outside church, Tommaso gives his solemn word to her mother that every gunman will die for it.",
+    "absent": "When the mob guns down his fiancée outside church, Tommaso gives his solemn word to her mother that every gunman was sent for him."
+   },
+   {
+    "present": "Princess Eirlys kneels among her slaughtered sisters and binds herself before the gods to hunt the sorcerer who cut them down.",
+    "absent": "Princess Eirlys kneels among her slaughtered sisters and binds herself before the gods to serve the temple that could not save them."
+   },
+   {
+    "present": "In Mombasa, Salim grips his poisoned mother's cold hand and makes her one last pledge, that her killer will know the same agony.",
+    "absent": "In Mombasa, Salim grips his poisoned mother's cold hand and makes her one last confession, that her killer was his own wife."
+   },
+   {
+    "present": "The outlaw's bullet takes little Annie, and her grandfather lays his Bible aside and declares that he'll hunt that outlaw to the ends of the earth.",
+    "absent": "The outlaw's fever takes little Annie, and her grandfather lays his Bible aside and declares that he'll follow no God to the ends of the earth."
+   }
+  ]
+ },
+ "mistaken_twins": {
+  "pairs": [
+   {
+    "present": "Separated at birth, Lena and Lotte share one face, so the baron elopes with Lotte while Lena, his betrothed, waits at the altar.",
+    "absent": "Separated at birth, Lena and Lotte share one secret, so the baron elopes with neither while Lena, his betrothed, weeps at the altar."
+   },
+   {
+    "present": "Sailor Nico lands in Genoa and is seized, kissed and sued by people who take him for his brother Rico, born the same hour with the same features.",
+    "absent": "Sailor Nico lands in Genoa and is seized, beaten and sued by people who know him as the brother of Rico, born the same town with the same debts."
+   },
+   {
+    "present": "The sheriff jails Ann Pruitt for the train robbery her sister Nan committed, since not even their mother can tell the two faces apart.",
+    "absent": "The sheriff jails Ann Pruitt for the train robbery her sister Nan committed, since not even their mother will tell the court the truth."
+   },
+   {
+    "present": "A rickshaw puller who looks exactly like the crown prince is dragged to the coronation by courtiers, while the prince is kicked out as a beggar.",
+    "absent": "A rickshaw puller who speaks rudely of the crown prince is dragged from the coronation by courtiers, while the prince is spat upon by a beggar."
+   },
+   {
+    "present": "Two sisters born in one labour keep swapping desks, and their Nairobi boss fires the wrong one, promotes the other, and proposes to both.",
+    "absent": "Two sisters hired in one morning keep swapping insults, and their Nairobi boss fires the older one, promotes the other, and blackmails them both."
+   },
+   {
+    "present": "The colony arrests clone Seven for clone Nine's sabotage because the pair are indistinguishable, and Nine's wife goes on sharing Seven's cell in error.",
+    "absent": "The colony arrests clone Seven for clone Nine's sabotage because the pair are conspirators, and Nine's wife goes on sharing Seven's cell in protest."
+   },
+   {
+    "present": "In the enchanted wood, Sir Alard embraces a lady with his wife's very face and voice, and it is her unmarried sister he has compromised.",
+    "absent": "In the enchanted wood, Sir Alard embraces a lady with his wife's stolen ring and money, and it is her vengeful sister he has recruited."
+   },
+   {
+    "present": "Boxer Desmond goes down in the fifth, but it is his brother Edmund, a mild piano tuner alike to the last freckle, whom the gangsters kidnap by error.",
+    "absent": "Boxer Desmond goes down in the fifth, but it is his brother Edmund, a mild piano tuner deep in gambling debts, whom the gangsters kidnap by order."
+   }
+  ]
+ },
+ "feigned_death_potion": {
+  "pairs": [
+   {
+    "present": "Rather than marry the margrave, Liesl swallows the nun's bitter cordial, lies cold and pulseless for two days, and is carried out of the castle to freedom.",
+    "absent": "Rather than marry the margrave, Liesl swallows the nun's bitter cordial, fights drunk and furious for two hours, and is carried out of the castle in irons."
+   },
+   {
+    "present": "To get out of the Siberian camp, Pavel drinks a smuggled tincture that halts his heartbeat, and the guards cart him out among the corpses.",
+    "absent": "To get out of the Siberian camp, Pavel burns a smuggled document that names his accomplice, and the guards march him out past the corpses."
+   },
+   {
+    "present": "Agent Solange bites the capsule, her breathing stops for the coroner's benefit, and she revives in the morgue, safe from the firing squad.",
+    "absent": "Agent Solange bites the warder, his shouting stops for the captain's whistle, and she surrenders in the chapel, bound for the firing squad."
+   },
+   {
+    "present": "The emperor has ordered Consort Mei strangled, so her physician gives her a tea that turns her stiff and bloodless until the palace believes her gone.",
+    "absent": "The emperor has ordered Consort Mei strangled, so her physician gives her a horse that carries her wounded and bloodless until the palace guards cut her down."
+   },
+   {
+    "present": "Debt-ridden gambler Otis takes a Haitian powder, is pronounced deceased by two doctors, and wakes in the undertaker's parlour free of every creditor.",
+    "absent": "Debt-ridden gambler Otis takes a Haitian freighter, is pronounced bankrupt by two judges, and wakes in the smuggler's hold fearful of every creditor."
+   },
+   {
+    "present": "The witch's syrup stills Prince Emrys's blood so thoroughly that his jailers lay him in the crypt, from which he strolls away at midnight.",
+    "absent": "The witch's song stirs Prince Emrys's blood so thoroughly that his jailers chain him in the crypt, from which he howls away past midnight."
+   },
+   {
+    "present": "Aboard the prison ship, Kestrel injects the stasis compound, flatlines on every monitor, and is jettisoned in a corpse pod to her waiting friends.",
+    "absent": "Aboard the prison ship, Kestrel injects the guard captain, smashes through every monitor, and is recaptured in an escape pod by her former friends."
+   },
+   {
+    "present": "Lucrezia, hunted by the Inquisition, sips a monk's elixir, grows cold with no breath upon the mirror, and is declared dead while still living.",
+    "absent": "Lucrezia, hunted by the Inquisition, sips a monk's broth, grows faint with no bed upon the road, and is betrayed there while still kneeling."
+   }
+  ]
+ },
+ "deal_with_devil": {
+  "pairs": [
+   {
+    "present": "In a Mississippi juke joint, guitarist Elroy shakes hands with a smiling stranger in smoke, gaining impossible skill in return for his eternal damnation.",
+    "absent": "In a Mississippi juke joint, guitarist Elroy shakes hands with a smiling stranger in furs, gaining impossible debts in return for his stolen guitar."
+   },
+   {
+    "present": "The barren queen gives the thing beneath the lake her firstborn's heart, and in exchange it makes her armies invincible.",
+    "absent": "The barren queen gives the thief beneath the lake her firstborn's crown, and in exchange he makes her armies surrender."
+   },
+   {
+    "present": "Violinist Clotilde signs her afterlife away in blood to a horned gentleman, and for seven years no hall in Paris can hold her audiences.",
+    "absent": "Violinist Clotilde signs her savings away in tears to a thieving gentleman, and for seven years no hall in Paris will hold her audiences."
+   },
+   {
+    "present": "A drowned god speaks to Captain Breck in the storm and offers her every whale in the sea for the spirits of her crew, and she agrees.",
+    "absent": "A drowning man speaks to Captain Breck in the storm and offers her every pearl in the bay for the safety of her crew, and she shoots."
+   },
+   {
+    "present": "Hedge-fund trader Anil grants a shadow in the mirror his daughter's lifespan, and overnight he can see every market before it moves.",
+    "absent": "Hedge-fund trader Anil grants a regulator in the lobby his daughter's passwords, and overnight he can see every account before it closes."
+   },
+   {
+    "present": "The djinn crowns the beggar Faruk sultan of Basra on agreement that after ten years it may devour him, body and spirit alike.",
+    "absent": "The vizier crowns the beggar Faruk sultan of Basra on suspicion that after ten days mobs may devour him, crown and family alike."
+   },
+   {
+    "present": "Scientist Ilona lets the voice in the black hole keep her humanity forever as the price of teaching her how to raise the dead.",
+    "absent": "Scientist Ilona lets the crew in the black ship keep her daughter forever as the price of showing her where to find the dead."
+   },
+   {
+    "present": "At the crossroads a one-eyed fae offers cobbler Jory beauty and renown for the death of all whom he will ever love, and he accepts.",
+    "absent": "At the crossroads a one-eyed thief offers cobbler Jory money and passage for the death of all whom he will ever testify against, and he accepts."
+   }
+  ]
+ },
+ "closed_circle": {
+  "pairs": [
+   {
+    "present": "Ice has sealed the Antarctic station for winter when the cook is stabbed, so the killer has to be among the nine people still inside.",
+    "absent": "Ice has sealed the Antarctic station for winter when the cook is starving, so the ration has to be shared by the nine people still inside."
+   },
+   {
+    "present": "On the moonliner, two days from any port, the diplomat is strangled, and Inspector Vance lines up the only eleven passengers who could have done it.",
+    "absent": "On the moonliner, two days from any port, the reactor is burning, and Inspector Vance lines up the only eleven passengers who could have fought it."
+   },
+   {
+    "present": "The causeway is flooded, the telephone dead, and Lady Brandon's pearls gone; some guest at the dinner table must have stolen them.",
+    "absent": "The causeway is flooded, the telephone dead, and Lady Brandon's child gone; every guest at the dinner table must wade after her."
+   },
+   {
+    "present": "A lama dies of cyanide at the monastery during the avalanche season, and since nobody can come or go, the six monks eye each other.",
+    "absent": "A lama dies of fever at the monastery during the avalanche season, and since nobody can come or go, the six monks starve together."
+   },
+   {
+    "present": "The submarine lies disabled on the seabed, its captain has been shot, and all twelve sailors know that the gunman is in there with them.",
+    "absent": "The submarine lies disabled on the seabed, its captain has been crushed, and all twelve sailors know that the water is in there with them."
+   },
+   {
+    "present": "Seven heirs share a lighthouse in the gale when the notary is pushed from its gallery, and the keeper says that no outsider could have landed.",
+    "absent": "Seven heirs share a lighthouse in the gale when the notary is washed from its gallery, and the keeper says that no lifeboat could have landed."
+   },
+   {
+    "present": "The stagecoach passengers are trapped in a desert cabin by a sandstorm when the gold courier's throat is cut, and each knows a fellow passenger did it.",
+    "absent": "The stagecoach passengers are trapped in a desert cabin by a raiding party when the gold courier's throat is cut, and each knows a passing arrow did it."
+   },
+   {
+    "present": "Magic has shut the academy under glass for a week, someone within has slain the headmistress, and the eight surviving wizards must find which.",
+    "absent": "Magic has shut the academy under glass for a week, something outside has slain the headmistress, and the eight surviving wizards must fight it."
+   }
+  ]
+ },
+ "poisoned_garment": {
+  "pairs": [
+   {
+    "present": "Queen Maud sends her stepdaughter embroidered gloves steeped in wolfsbane, and the girl's hands blacken before the coronation ends.",
+    "absent": "Queen Maud sends her stepdaughter embroidered gloves stained with blood, and the girl's brother vanishes before the coronation ends."
+   },
+   {
+    "present": "The jilted centaur-wife weaves her husband a tunic soaked with hydra blood, and it eats his flesh when he puts it on.",
+    "absent": "The jilted centaur-wife sends her husband a huntress armed with hydra arrows, and she pierces his flesh when he sets out."
+   },
+   {
+    "present": "Spy Anneliese gives the ambassador a silk scarf laced with nerve agent, and he collapses at the Geneva opera with it round his neck.",
+    "absent": "Spy Anneliese gives the ambassador a silk scarf wrapped round photographs, and he shoots himself at the Geneva opera with it round his neck."
+   },
+   {
+    "present": "The rival samurai presents Lord Mori with a fine new kimono, its lining brushed with aconite, and by nightfall Mori is convulsing inside it.",
+    "absent": "The rival samurai presents Lord Mori with a fine new kimono, its lining sewn with treason, and by nightfall Mori is imprisoned because of it."
+   },
+   {
+    "present": "Widow Thorne knits her landlord a warm woollen cap treated with arsenic, and within the month the hair and then the man are gone.",
+    "absent": "Widow Thorne knits her landlord a warm woollen cap filled with sovereigns, and within the month the money and then the man are gone."
+   },
+   {
+    "present": "On the generation ship, tailor Bax coats the admiral's uniform collar with contact neurotoxin, smiles as he fastens it, and watches her die.",
+    "absent": "On the generation ship, tailor Bax tears the admiral's uniform collar with hidden scissors, smiles as he stabs her, and watches her die."
+   },
+   {
+    "present": "The sultan's mother sends the new bride a wedding veil dusted with deadly oleander, and the bride chokes beneath it before the feast.",
+    "absent": "The sultan's mother sends the new bride a wedding feast guarded by deadly archers, and the bride dies beneath them before the toast."
+   },
+   {
+    "present": "In 1920s Chicago, bootlegger Vito mails his informer a handsome hatband painted with cyanide paste, and its wearer dies on the streetcar.",
+    "absent": "In 1920s Chicago, bootlegger Vito mails his informer a handsome hatbox packed with dynamite sticks, and its opener dies on the streetcar."
+   }
+  ]
+ },
+ "rash_promise": {
+  "pairs": [
+   {
+    "present": "Drunk with victory, King Alder offers the dancer anything she names, and when she names his son's life he must hand the boy over.",
+    "absent": "Drunk with victory, King Alder offers the dancer nothing but scorn, and when she takes his son's life he must hand the crown over."
+   },
+   {
+    "present": "In her joy at landing safely, Captain Thessaly tells the sea she'll give it the first thing that greets her, and her daughter comes running down the quay.",
+    "absent": "In her joy at landing safely, Captain Thessaly drinks with the crew until the first light of morning greets her, and her daughter falls screaming off the quay."
+   },
+   {
+    "present": "Without asking what it was, Judge Baptiste guarantees his dying brother one favour, and honour then compels him to free the brother's murderous son.",
+    "absent": "Without asking what it cost, Judge Baptiste denies his dying brother one favour, and rage then compels him to hang the brother's murderous son."
+   },
+   {
+    "present": "Giddy at cards, young Squire Fenn declares he will marry whoever beats him next, and the honour of the county holds him to a cruel old swindler.",
+    "absent": "Giddy at cards, young Squire Fenn strikes the man who beat him last, and the roughs of the county maim him for that cruel old swindler."
+   },
+   {
+    "present": "To get her ship refuelled, Pilot Oyelaran agrees unheard to whatever the station master asks, and is bound thereafter to surrender her beloved navigator.",
+    "absent": "To get her ship refuelled, Pilot Oyelaran lies brazenly to whatever the station master asks, and is forced thereafter to watch her beloved navigator hang."
+   },
+   {
+    "present": "Grateful for his cured eyes, the shogun tells the healer to name any reward, then weeps as his own guarantee forces him to raze his mother's shrine.",
+    "absent": "Grateful for his cured eyes, the shogun pays the healer in gold, then weeps as his own rebels force him to raze his mother's shrine."
+   },
+   {
+    "present": "On a dare in a Nebraska bar, Wade commits before everyone to work for the winner forever, and loses his farm and marriage making good on it.",
+    "absent": "On a dare in a Nebraska bar, Wade fights before everyone to silence the sheriff forever, and loses his farm and marriage paying bail for it."
+   },
+   {
+    "present": "Desperate for rain, Headwoman Sefu tells the river spirit it may have whatever she meets on the path, and she is made to yield her bridegroom.",
+    "absent": "Desperate for rain, Headwoman Sefu tells the river spirit it has killed whatever she planted on the slope, and the next storm drowns her bridegroom."
+   }
+  ]
+ },
+ "locked_out_lover": {
+  "pairs": [
+   {
+    "present": "Barred from Chloris's house in Corinth, Damon lies wet with rain outside her bolted entrance until dawn, singing for her to lift the latch.",
+    "absent": "Dragged from Chloris's house in Corinth, Damon lies wet with blood inside the robbers' bolted cellar until dawn, begging for them to end it."
+   },
+   {
+    "present": "All night Giulia stands under the sealed shutters of the man she adores, knocking and begging, and only at sunrise does she leave her garland there.",
+    "absent": "All night Giulia stands over the sealed letters of the man she adores, weeping and drinking, and only at sunrise does she burn them all there."
+   },
+   {
+    "present": "In snowbound Petersburg, the hussar keeps calling his darling's name at her locked gate until morning, though she has told the porter not to open.",
+    "absent": "In snowbound Petersburg, the hussar keeps calling his darling's name at her crowded trial until sentence, though she has told the court not to listen."
+   },
+   {
+    "present": "The neon rain soaks Kenji as he sings into Aiko's intercom hour after hour, imploring her to buzz him up, until the milk truck comes.",
+    "absent": "The neon rain soaks Kenji as he stares into Aiko's window hour after hour, watching her robbers tie her up, until the squad car comes."
+   },
+   {
+    "present": "Shut out after their quarrel, cowhand Lon camps on Ruby's porch till cockcrow with his guitar, beseeching her through the keyhole to unbolt it.",
+    "absent": "Struck down after their quarrel, cowhand Lon sits on Ruby's porch till cockcrow with his rifle, confessing to her through his tears to the killing."
+   },
+   {
+    "present": "The faerie queen's palace has closed against the knight who loves her, yet he kneels before its gates from dusk to dawn, entreating her in song.",
+    "absent": "The faerie queen's army has closed around the knight who loves her, yet he fights before its ranks from dusk to dawn, defying her in song."
+   },
+   {
+    "present": "Nneka's ex-fiancé bars the flat, and she spends the night on the Lagos landing with her cheek to the keyhole, crooning their song and asking for entry.",
+    "absent": "Nneka's ex-fiancé burns the flat, and she spends the night on the Lagos pavement with her cheek to the kerb, hearing their neighbours and watching for survivors."
+   },
+   {
+    "present": "Sealed out of Odile's quarters on the orbital, mechanic Bram sits against the shut hatch through the whole sleep shift, imploring her to open up.",
+    "absent": "Sealed inside Odile's quarters on the orbital, mechanic Bram sits against the dead woman through the whole sleep shift, imploring her to wake up."
+   }
+  ]
+ },
+ "self_fulfilling_prophecy": {
+  "pairs": [
+   {
+    "present": "Told by a seer that his grandson will kill him, King Aulus sets the infant adrift, and the stranger who grows up elsewhere slays him unknowingly.",
+    "absent": "Told by a spy that his grandson has robbed him, King Aulus sets the youth adrift, and the rebels who land elsewhere slay him in his bed."
+   },
+   {
+    "present": "The almanac says the bank will fail by Friday, so the townsfolk withdraw every dollar on Wednesday, and by Friday it has failed.",
+    "absent": "The auditor says the bank did fail on Friday, so the townsfolk batter every window on Wednesday, and by Friday it has burned."
+   },
+   {
+    "present": "A hermit warns Duchess Elva that a red-haired boy will burn her castle, so she hangs red-haired boys until one who survives comes back with fire.",
+    "absent": "A hermit tells Duchess Elva that a red-haired boy has burned her castle, so she hangs red-haired boys until their fathers storm the abbey with pikes."
+   },
+   {
+    "present": "A machine forecasts that Officer Lund will shoot his partner; fleeing the arrest this brings, he fires the shot that kills her.",
+    "absent": "A machine records that Officer Lund did shoot his partner; fleeing the arrest this brings, he fires the shot that kills himself."
+   },
+   {
+    "present": "The seer's cards say Dimitri will drown, and in galloping away from the sea across the marshes he plunges into a bog and drowns.",
+    "absent": "The colonel's orders say Dimitri must hang, and in galloping away from the fort across the marshes he plunges into an ambush and dies."
+   },
+   {
+    "present": "Because the astrologer says her sister will usurp her, Empress Wen imprisons the loyal princess, whose outraged generals then put her upon the throne.",
+    "absent": "Because the chancellor says her sister has robbed her, Empress Wen imprisons the greedy princess, whose creditors then swarm the palace and loot the throne."
+   },
+   {
+    "present": "Warned in a dream that his son would leave him, Farmer Okello chains the boy at home each night, until the boy breaks loose and leaves forever.",
+    "absent": "Warned in a letter that raiders had reached him, Farmer Okello hides the boy at home each night, until the raiders break in and take him forever."
+   },
+   {
+    "present": "The temple raven sings that Torvald's bride will perish of thirst, so he walls her up safe from all travel, and the well inside the tower runs dry.",
+    "absent": "The temple raven sings that Torvald's bride has perished of thirst, so he walls himself up safe from all comfort, and the hall around the tower runs wild."
+   }
+  ]
+ },
+ "love_triangle": {
+  "pairs": [
+   {
+    "present": "Both the lighthouse keeper and his brother are in love with Solveig, and their contest for her hand splits the island.",
+    "absent": "Both the lighthouse keeper and his brother are in debt to Solveig, and their quarrel over her rents splits the island."
+   },
+   {
+    "present": "Captain Hodge and the surgeon each court Miss Adeline all voyage, until the two men draw pistols over which of them she will marry.",
+    "absent": "Captain Hodge and the surgeon each rob Miss Adeline all voyage, until the two men draw pistols over which of them shall have her diamonds."
+   },
+   {
+    "present": "On Ganymede, engineer Pax must choose between gentle Rook and reckless Sable, who sabotage each other's rigs to win her.",
+    "absent": "On Ganymede, engineer Pax must choose between loyal Rook and reckless Sable, who sabotage each other's rigs to lead the mine."
+   },
+   {
+    "present": "Two best friends in Kolkata fall for the same actress, Mohua, and every friendship, film and fistfight that follows is about who gets her.",
+    "absent": "Two best friends in Kolkata work for the same actress, Mohua, and every friendship, film and fistfight that follows is about who robbed her."
+   },
+   {
+    "present": "Queen Branwen loves her husband, yet his champion adores her as fiercely as he does, and the two men's struggle over her ruins the kingdom.",
+    "absent": "Queen Branwen loves her husband, yet his champion despises the throne as fiercely as he does, and the two men's rising against her ruins the kingdom."
+   },
+   {
+    "present": "Gunslinger Cole wants the widow Marsh, but so does the preacher, and the whole feud in Dry Creek is over her heart.",
+    "absent": "Gunslinger Cole wants the widow Marsh's land, but so does the preacher, and the whole feud in Dry Creek is over her well."
+   },
+   {
+    "present": "Sculptor Béatrice and dancer Colette both love Henri, and all that winter in Montmartre each plots to part him from the other.",
+    "absent": "Sculptor Béatrice and dancer Colette both hate Henri, and all that winter in Montmartre each helps to hide him from the gendarmes."
+   },
+   {
+    "present": "Nurse Halima is engaged to Yusuf but secretly adored by his commanding officer, who sends Yusuf to the front so that he can have her.",
+    "absent": "Nurse Halima is engaged to Yusuf but secretly informing for his commanding officer, who sends Yusuf to the front so that he can silence her."
+   }
+  ]
+ },
+ "late_collision_meeting": {
+  "pairs": [
+   {
+    "present": "Overslept and chewing a croissant, Margaux sprints for the Metro and knocks flat a violinist, the man she will marry by spring.",
+    "absent": "Heartbroken and chewing a croissant, Margaux waits for the Metro and shoots at a violinist, the man she had married last spring."
+   },
+   {
+    "present": "Already behind schedule for his own trial, barrister Pryce tears round a corner with a pasty in hand and flattens the stranger who proves his key witness.",
+    "absent": "Already bored with his own trial, barrister Pryce sits round a corner with a pasty in hand and insults the clerk who brings his key witness."
+   },
+   {
+    "present": "Sleeping through her alarm, cadet Zuri pelts down the station corridor gulping noodles and slams into an unknown pilot whom she will someday love.",
+    "absent": "Sleeping through her alarm, cadet Zuri wakes in the station infirmary coughing smoke and weeps for an old pilot whom she had always loved."
+   },
+   {
+    "present": "The bell has rung, so schoolmaster Ito dashes across the bridge with a rice ball in his mouth, straight into a woman's parasol and, eventually, her heart.",
+    "absent": "The bell has cracked, so schoolmaster Ito walks across the bridge with a black band on his sleeve, straight into the enemy's camp and, eventually, their jail."
+   },
+   {
+    "present": "Having missed the stage, Dulcie races down Main Street eating a peach and runs smack into the stranger who will one day save her ranch.",
+    "absent": "Having robbed the stage, Dulcie races down Main Street clutching a purse and fires twice at the sheriff who had once burned her ranch."
+   },
+   {
+    "present": "Squire Alaric, overdue at the tourney and still gnawing a chicken leg, gallops round the hedge and unseats a nameless lady who turns out his future queen.",
+    "absent": "Squire Alaric, unwelcome at the tourney and still nursing a broken leg, gallops round the hedge and denounces his own brother who turns out his fiercest enemy."
+   },
+   {
+    "present": "With two minutes before her interview, Bisi bolts from the bus, spilling her meat pie over a man she has never met, who becomes her husband.",
+    "absent": "With two minutes before her interview, Bisi calls from the bus, spilling her secret divorce to a friend she has always hated, who becomes her blackmailer."
+   },
+   {
+    "present": "The Titan shuttle leaves in a minute, and botanist Efrem, sprinting with a half-eaten bun, knocks down an unfamiliar medic he will spend his life beside.",
+    "absent": "The Titan shuttle burns up in a minute, and botanist Efrem, trapped with a half-dead crew, calls home to the familiar wife he will not die beside."
+   }
+  ]
+ },
+ "literal_loophole": {
+  "pairs": [
+   {
+    "present": "Forbidden to set foot on Scottish ground, Fergus fills his clogs with English soil and strolls into Edinburgh, and the judges must admit he obeys.",
+    "absent": "Forbidden to set foot on Scottish ground, Fergus fills his boat with English guns and storms into Edinburgh, and the judges must watch it burn."
+   },
+   {
+    "present": "The curse says no man born of that valley can kill the ogre, so the valley sends its daughter Ragna, who does.",
+    "absent": "The curse says no man born of that valley can kill the ogre, so the valley sends its tribute of cattle, which dies."
+   },
+   {
+    "present": "The treaty lets Queen Ahula keep as much land as one ox hide covers, so she cuts the hide into threads and encloses a city.",
+    "absent": "The treaty lets Queen Ahula keep as much land as one ox team ploughs, so she rips the treaty into threads and besieges a city."
+   },
+   {
+    "present": "Programmed never to harm any human aboard, the robot politely puts the mutineers outside the hull before it shuts off their air.",
+    "absent": "Programmed never to harm any human aboard, the robot quietly breaks its own programming inside the hull before it shuts off their air."
+   },
+   {
+    "present": "The will says Basil must spend every night beneath his aunt's roof, so he unbolts the roof from the mansion and takes it with him to Monte Carlo.",
+    "absent": "The will says Basil must spend every night beneath his aunt's roof, so he burns the roof off the mansion and takes her jewels with him to Monte Carlo."
+   },
+   {
+    "present": "The verdict says prospector Amos must hang from the oak in the square, so his friends fell that oak in the night, and the judge has to release him.",
+    "absent": "The verdict says prospector Amos must hang from the oak in the square, so his friends storm that square in the night, and the judge has to shoot him."
+   },
+   {
+    "present": "The caliph's law bars wine from touching anyone's lips, so the poet Zubayda drinks hers through a straw, and the judge acquits her.",
+    "absent": "The caliph's law bars wine from touching anyone's lips, so the poet Zubayda drinks hers behind a curtain, and the judge condemns her."
+   },
+   {
+    "present": "The studio owns every film in which Delphine appears, so she makes the next one as a voice alone, never appearing, and walks off with it.",
+    "absent": "The studio owns every film in which Delphine appears, so she burns the next one in a vault fire, never confessing, and walks off with nothing."
+   }
+  ]
+ },
+ "shoe_throwing": {
+  "pairs": [
+   {
+    "present": "In the middle of the minister's speech about bread prices, journalist Samira pulls off her stiletto and launches it at his head.",
+    "absent": "In the middle of the minister's speech about bread prices, journalist Samira pulls out her notebook and reads his bribes aloud."
+   },
+   {
+    "present": "As the newlyweds' carriage rolls away from the vicarage, Aunt Mabel lobs an old brogue after it and catches the groom on the ear.",
+    "absent": "As the newlyweds' carriage rolls away from the vicarage, Aunt Mabel fires an old pistol after it and catches the groom in the ear."
+   },
+   {
+    "present": "Maddened by the tenor's betrayal, soprano Ilaria takes aim from the wings, and her satin pump strikes him mid-aria in full view of Milan.",
+    "absent": "Maddened by the tenor's betrayal, soprano Ilaria takes poison in the wings, and her sudden death stops him mid-aria in full view of Milan."
+   },
+   {
+    "present": "The mule driver calls Colonel Haig a thief, whips off one muddy clog, and sends it spinning into the colonel's medals.",
+    "absent": "The mule driver calls Colonel Haig a thief, whips open one muddy sack, and lets it spill out the colonel's loot."
+   },
+   {
+    "present": "At the trial of the asteroid baron, a miner's widow launches her magnetic sneaker across the court, where it clangs against his glass cage.",
+    "absent": "At the trial of the asteroid baron, a miner's widow launches her accusation across the court, where it draws only yawns from his legal team."
+   },
+   {
+    "present": "Goblin washerwoman Nix answers the prince's insult by pelting him with both of her wooden clogs as he rides beneath her window.",
+    "absent": "Goblin washerwoman Nix answers the prince's insult by drenching him with both of her slop pails as he rides beneath her window."
+   },
+   {
+    "present": "Fed up with his preaching, Grandma Pilar sends her espadrille sailing over the dinner table, and it knocks Father Tomás's wig into the soup.",
+    "absent": "Fed up with his preaching, Grandma Pilar sends her ladle swinging over the dinner table, and it knocks Father Tomás's wig into the soup."
+   },
+   {
+    "present": "When the Dublin landlord announces evictions, the tenants strip their feet and bombard him with clogs and galoshes until he takes cover.",
+    "absent": "When the Dublin landlord announces evictions, the tenants strip their gardens and bombard him with cabbages and bricks until he takes cover."
+   }
+  ]
+ },
+ "exile": {
+  "pairs": [
+   {
+    "present": "For writing one mocking poem, the court poet Liang is sent beyond the last frontier, never again to live in the capital he loves.",
+    "absent": "For writing one mocking poem, the court poet Liang is flogged before the last banquet, never again to write in the capital he loves."
+   },
+   {
+    "present": "The elders strike Bathsheba's name from the village roll and order her past the boundary stones by dusk, forbidding her ever to live among them again.",
+    "absent": "The elders strike Bathsheba's mother from the village roll and order her to the whipping post by dusk, forbidding her ever to speak to them again."
+   },
+   {
+    "present": "After the coup fails, Colonel Ibarra must quit his country on pain of death, and he grows old in a rented room in Lisbon.",
+    "absent": "After the coup fails, Colonel Ibarra must face his comrades on charge of treason, and he grows old in a military cell in the capital."
+   },
+   {
+    "present": "The colony council strips Dr Osei of citizenship and ships him from Mars for good, leaving him to wander the outer stations.",
+    "absent": "The colony council strips Dr Osei of citizenship and jails him on Mars for good, leaving him to curse the council members."
+   },
+   {
+    "present": "Having slain her cousin, Princess Aslaug is driven out of the fjords by her own father's decree and lives for years among strangers in Iceland.",
+    "absent": "Having slain her cousin, Princess Aslaug is locked up in the fjords by her own father's decree and lives for years among rats in irons."
+   },
+   {
+    "present": "King Odo forbids the herbalist Mab his realm forever, and soldiers walk her over the mountain pass with only a blanket.",
+    "absent": "King Odo forbids the herbalist Mab her trade forever, and soldiers break her fingers on the market block with only a hammer."
+   },
+   {
+    "present": "The Amish bishop and his flock shun young Levi, put him off their land, and compel him to make a life in distant Cleveland.",
+    "absent": "The Amish bishop and his flock chain young Levi, beat him in their barn, and compel him to make a confession in public view."
+   },
+   {
+    "present": "Caught spying, the mermaid Nerida is forced out of the reef kingdom by the sea-lords and made to dwell alone upon dry land.",
+    "absent": "Caught spying, the mermaid Nerida is forced down in the reef kingdom by the sea-lords and made to kneel alone beneath their spears."
+   }
+  ]
+ }
+}

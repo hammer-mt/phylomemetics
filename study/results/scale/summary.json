@@ -1,0 +1,9 @@
+{
+ "accuracy": {
+  "tfidf logreg": {
+   "all": 0.8713,
+   "hard_half": 0.7426
+  }
+ },
+ "contrasts": {}
+}

@@ -1,0 +1,546 @@
+{
+ "secret_identity": {
+  "explicit": [
+   "By day Ines is a timid seamstress in colonial Lima, but after dark she puts on a black mask and leads a double life as the bandit called La Golondrina.",
+   "The village schoolmaster's secret identity as the author of scandalous anti-royal pamphlets is nearly exposed when a student recognises his handwriting.",
+   "Nobody on the Mars colony knows that the cheerful canteen cook is the hooded saboteur Cinder, an identity he conceals even from his wife.",
+   "Disguised in a wolf pelt and painted face, the bishop's clerk rides with the rebels each night and returns to his true identity before morning prayers.",
+   "When the champion wrestler known as the Heron is finally unmasked in Guadalajara, the crowd discovers that her alter ego is the quiet pharmacist from the corner shop."
+  ],
+  "reworded": [
+   "Each market day Lady Oriel pours tea for the magistrates, never hinting that she is the veiled highwaywoman they have been hunting for three winters.",
+   "His own brothers drink to the Grey Fox's health, unaware that the hooded smuggler they admire is the dull customs clerk sitting beside them.",
+   "Once the bakery closes, Tomasz pulls a scarf over his face and prints the resistance newspaper under another name, and not even his fiancée knows.",
+   "The detective dines weekly with a soft-spoken piano teacher and never realises that she is the helmeted racer who has been outrunning his patrols.",
+   "To the whole station Dr. Amadi is only a botanist, yet behind a blank visor she broadcasts as Signal, the rebel voice the regime is desperate to name."
+  ]
+ },
+ "origin_wound": {
+  "explicit": [
+   "As a child on the steppe, Temur witnessed the murder of his parents by raiders, and everything he does as a general traces back to that morning.",
+   "Orphaned at seven when a dam burst over her valley, Lucia grows into an engineer obsessed with making sure no wall ever fails again.",
+   "Haunted by the traumatic murder of her mother in a Marseille alley when she was six, Solange becomes the city's most relentless prosecutor.",
+   "The childhood trauma of watching his father burned for heresy turns young Anselm into the lifelong enemy of every inquisitor in the province.",
+   "A starfighter pilot traces her hatred of the syndicate to the day she was orphaned as a child, when its enforcers killed her parents at the dinner table."
+  ],
+  "reworded": [
+   "At eight years old Wanjiru saw poachers shoot her ranger father, and from that hour she lived only to drive them from the reserve.",
+   "From under the bed the little boy watched soldiers cut down his mother and father, and he would spend forty years hunting the officer who gave the order.",
+   "The fire that took her whole family when she was five is why Greta, now a grown woman, runs into every blaze in Hamburg before the engines arrive.",
+   "Still small enough to be carried, Kaito lost both parents to a plague the court physicians ignored, and that loss made him the healer of the poor.",
+   "A girl of nine sees her father hanged for another man's theft, and the memory drives her to become the first woman lawyer in the territory."
+  ]
+ },
+ "heir_to_fortune": {
+  "explicit": [
+   "When his father dies in a riding accident, nineteen-year-old Percival inherits the greatest fortune in Yorkshire and three coal mines he has never visited.",
+   "The young heiress returns from her convent school to claim her late father's shipping estate in Trieste, only to find the creditors already waiting.",
+   "After the tycoon's fatal heart attack, his daughter Mei becomes heir to the family company and must face a boardroom full of hostile uncles.",
+   "A shy botanist in Nairobi learns that his late father has left him an immense inheritance, including a newspaper and half of the waterfront.",
+   "At twenty-one, Baron Aldous inherits his dead father's fortune and gambling palace on the moon of Europa, along with all of its enemies."
+  ],
+  "reworded": [
+   "The lawyer reads the old man's will aloud, and his bewildered son, barely eighteen, discovers that he now owns every vineyard in the valley.",
+   "Within a week of her papa's funeral Consuelo is signing papers as mistress of the silver mines, the railway and eleven million pesos.",
+   "When the spice magnate drowns, all his ships, warehouses and gold pass to a boy who has only just begun to shave.",
+   "With the old robotics tycoon dead, control of his vast company goes to his only child, a graduate student who would rather play the oboe.",
+   "The duke's death leaves his castle, his forests and his overflowing treasury to a daughter of seventeen who has never managed more than a pony."
+  ]
+ },
+ "wealthy_vigilante": {
+  "explicit": [
+   "A wealthy Boston widow spends her shipping millions on hired detectives and night raids, becoming the vigilante that the slave-catchers cannot name.",
+   "Bored with yachts, the billionaire Rafiq Sundaram spends a fortune on boats and hired divers so that he can fight crime in Mumbai's harbour outside the law.",
+   "The rich young count takes the law into his own hands, using his gold to buy weapons and punish the tax collectors who torment his tenants.",
+   "After the courts acquit a ring of child traffickers, a software millionaire turns vigilante and hunts them across Eastern Europe in her private jet.",
+   "In 1920s Kansas a rich grain merchant's widow turns crime-fighter, buying an aeroplane and bombing bootleggers' barns with sacks of flour and tar because the sheriff does nothing."
+  ],
+  "reworded": [
+   "The heiress to a diamond empire spends her allowance on an armoured motorcycle and goes out at night to break the loan sharks' fingers herself.",
+   "With more gold than the king, the merchant Yusuf buys ships and swordsmen and personally sinks the slavers whom no court will touch.",
+   "Having sold his company for nine figures, Anders builds a private spy network and ambushes human traffickers without telling any officer or judge.",
+   "The banker's fortune pays for the rifles, the fast horses and the silver badge of her own invention with which she punishes crooked sheriffs.",
+   "From his penthouse the oil magnate funds his own one-man campaign, abducting polluters by night and delivering his own justice where the judges would not."
+  ]
+ },
+ "butler_raised_him": {
+  "explicit": [
+   "After the plague took his parents, young Lord Fenwick was raised by the family butler, who remains his closest confidant into middle age.",
+   "The old housekeeper who brought her up after the shipwreck is still the only person in the manor to whom orphaned Beatriz tells her troubles.",
+   "Osei, the palace steward, raised the orphaned prince as a surrogate father and now advises him through every crisis of his troubled reign.",
+   "With both parents lost in a zeppelin fire, little Clemence was brought up by her father's valet, whom she loves more than any relation.",
+   "The android manservant that raised him after his parents died in the colony collapse still makes his tea and scolds him about his choices."
+  ],
+  "reworded": [
+   "When the count and countess drowned, it was their old coachman who taught the boy to read, sat up through his fevers and later counselled him in love.",
+   "The family cook became mother and father to little Nadia after the revolution left her alone, and decades on she still confides everything to the old woman.",
+   "Having lost both parents at four, Julian grew up at the knee of the man who polished his father's silver, and he trusts no one else with his secrets.",
+   "It is the maid Hortense who tucks in the parentless heiress, sees her through school and stands beside her on her wedding day like a mother.",
+   "Left alone in the great house by a double funeral, the child was reared by the groundskeeper, who is still the first person he asks for advice."
+  ]
+ },
+ "orphan_ward": {
+  "explicit": [
+   "A celebrated Venetian glassmaker takes in an orphan from the canal docks as his ward and teaches her every secret of the furnace.",
+   "The wealthy explorer adopts the orphaned son of her drowned guide, and within a year the boy is her partner on every expedition.",
+   "As guardian to the orphan Pip Lanyard, the retired spymaster trains his ward in ciphers and lockpicking until they work every case together.",
+   "Judge Okonkwo took in an orphaned street boy as his foster son, and the lad soon became his clerk and sharpest investigator.",
+   "On a frontier moon, a famous bounty hunter adopts the orphan whose parents she failed to save and makes the girl her apprentice."
+  ],
+  "reworded": [
+   "The great magician gives a home to a parentless acrobat of twelve, and before long the girl is performing at his side in every capital.",
+   "After the bandits leave the boy with no family, the lady samurai brings him to live at her estate and trains him to fight beside her.",
+   "The rich clockmaker opens his house to a little girl whose mother and father died of cholera, and she becomes his workshop assistant and equal.",
+   "When his old shipmate's daughter is left with nobody in the world, the admiral makes room for her aboard and schools her to be his navigator.",
+   "A veteran detective in Buenos Aires raises the child of two victims as her own, and by sixteen he is solving cases with her."
+  ]
+ },
+ "foppish_facade": {
+  "explicit": [
+   "In the pleasure gardens of Bath, Sir Crispin is a foppish dandy who talks only of lace, a facade that hides his work breaking up a slaving ring.",
+   "Everyone dismisses Prince Daud as a lazy playboy, never guessing that he feigns drunkenness to carry messages for the rebels.",
+   "The marquis pretends to be a cowardly fool who faints at the sight of blood so that the usurper will not notice he commands the insurgent cavalry.",
+   "Behind her facade as a frivolous party girl in occupied Warsaw, Halina is gathering the garrison's secrets for the underground.",
+   "A space admiral's son acts the fool as an idler obsessed with perfume and cards, all to conceal his war against the slave traders."
+  ],
+  "reworded": [
+   "At court he yawns, loses at cards and frets over his wigs, and so no minister imagines that he leads the midnight raids on their prisons.",
+   "To keep the colonel from watching her, the best agent in Saigon plays the giddy socialite who cannot remember what day it is.",
+   "The young khan trips over his own sword and giggles through councils on purpose, hiding the fact that he is planning the uprising against his uncle.",
+   "Guests think Lord Bertram too silly and indolent to saddle a horse, which is exactly the impression the kingdom's boldest spy has worked to give.",
+   "By shrieking at mice and sleeping until noon, the governor's nephew makes sure that no one will connect him with the daring rescuer of condemned slaves."
+  ]
+ },
+ "fear_symbol": {
+  "explicit": [
+   "Because thieves are superstitious, the marshal of Dry Creek wears a skull-faced costume and lets stories spread that he is a ghost, so that outlaws fear him.",
+   "The avenger of the Lagos docks leaves the symbol of a burning owl at every raid, a sign that soon strikes terror into smugglers.",
+   "To frighten the gangs of Edinburgh, a former actress puts on the costume of a banshee and howls from the rooftops before each attack.",
+   "Captain Ruiz chooses the serpent as his symbol because it will terrify the pirates, and even the boldest captains dread the sight of it on a sail.",
+   "The moon-station constable paints her armour like a demon from miners' legends, knowing that the racketeers will be too scared to fight back."
+  ],
+  "reworded": [
+   "He drapes himself in wolfskins and antlers before riding against the cattle thieves, knowing that hardened men will run at the sight of such a monster.",
+   "The nun who hunts slavers spreads the tale that she is a drowned woman returned, and burly traffickers drop their knives when her wet veil appears.",
+   "Before every raid she chalks a white spider on the extortionists' walls, and by the third week they cannot sleep for trembling at it.",
+   "The night watchman of Prague dresses as Death itself so that burglars will fall to their knees and confess rather than face him.",
+   "Having learned that the bootleggers shudder at tales of the Bone Rider, the ranger builds a skeletal suit and becomes the thing that haunts them."
+  ]
+ },
+ "hidden_lair": {
+  "explicit": [
+   "Beneath her bookshop in Lisbon, the spy Amalia runs an underground headquarters crammed with radios, forged passports and weapons for her war on the dictatorship.",
+   "A secret passage behind the fireplace leads to the count's lair, where his swords, maps and fastest horses wait for the next raid.",
+   "The hero of the canal city keeps his hideout in a flooded cavern under his own house, stocked with diving gear and a silent boat.",
+   "Behind a sliding panel in her flat lies the hidden room where Dr. Szabo stores the gadgets and files she uses to hunt war criminals.",
+   "Under the farmhouse a bunker serves as the secret base of the crop-dusting hero, complete with a hangar, a forge and a wall of police scanners."
+  ],
+  "reworded": [
+   "Pulling a certain candlestick swings back the wine rack, and behind it lies the workshop where the baroness keeps her armour, grapples and maps.",
+   "Nobody who dines at the widow's villa suspects the vault below their feet, filled with the rifles and disguises of her one-woman rebellion.",
+   "The laundry's back wall slides open at a whispered word, revealing the concealed armoury and radar screens from which Kwan protects the harbour.",
+   "Deep under his cottage, through a trapdoor the neighbours have never seen, the old knight stores the engines and weapons he needs to fight the tyrant.",
+   "The astronomer's telescope turns to uncover a stair, and down it is the concealed laboratory where she builds the tools of her crusade against slavers."
+  ]
+ },
+ "mantle_passed_on": {
+  "explicit": [
+   "When the Red Corsair is killed at sea, her first mate puts on the crimson coat and takes up the mantle so that the legend will not die.",
+   "Crippled by a bullet, the old Night Rider names the blacksmith's daughter his successor and watches her carry on his legacy across the prairie.",
+   "After the Lantern of Kyoto retires, his shy nephew inherits the title and carries on the fight against the warlords in his place.",
+   "The torch of the Sunblade hero passes to a young mechanic on Ganymede, who takes up the dead champion's helmet and name.",
+   "With Mother Thunder dead, a timid schoolteacher in Accra becomes her successor and assumes the mantle of the slum's protector."
+  ],
+  "reworded": [
+   "The ageing Falcon of Seville hangs his cape on the stable boy's shoulders, and from that night the boy answers the city's call under the same name.",
+   "Nobody notices that the Ghost of the Moors died last winter, because his widow now wears the hood and rides out exactly as he did.",
+   "Once the Iron Captain loses his sight, a young recruit straps on his armour and becomes the Iron Captain, continuing the old man's work.",
+   "Three women have been the Saint of Alley Nine, each putting on the same blue veil when the one before her could no longer fight.",
+   "As the wounded champion breathes her last, she presses her shield into a farm girl's hands, and by spring the farm girl is the Champion of Orr."
+  ]
+ },
+ "coin_flip": {
+  "explicit": [
+   "The warlord flips a coin before each captive: heads the man walks free, tails he is thrown into the gorge.",
+   "Unable to choose which twin to save from the burning mill, Dr. Pell tosses a coin and lets luck decide who lives.",
+   "At the Reno card table, a hired gunman offers the cheating dealer a coin toss for his life, and the silver dollar comes down tails.",
+   "The governor leaves the pirate's hanging to chance by flipping a gold coin on the courthouse steps while the whole port watches.",
+   "In the lifeboat the last two astronauts flip a coin for the only working oxygen pack, and the loser quietly opens the hatch."
+  ],
+  "reworded": [
+   "The outlaw spins a silver dollar on the bar and tells the sheriff that if the eagle lands face up, he dies.",
+   "With a flick of his thumb the emperor sends a gold piece into the air, and whichever side shows will settle whether the rebel hangs.",
+   "Two sisters can donate to only one brother, so the surgeon lets a penny falling on the tiles choose which boy will survive.",
+   "Whenever the assassin of Macau has doubts about a target, she lets a spinning five-cent piece decide: dragon side kill, flower side walk away.",
+   "The bandit queen sends a doubloon twirling skyward, and the condemned merchant weeps with relief when it lands with the crown showing."
+  ]
+ },
+ "vat_of_chemicals": {
+  "explicit": [
+   "During a fight on the catwalk, the crooked foreman is knocked into a vat of chemicals and climbs out with green, blistered skin.",
+   "A whistleblower is pushed into a tank of toxic waste by company thugs and emerges as a glowing creature bent on ruining them.",
+   "The alchemist's jealous rival shoves her into a vat of acid, and though she survives, her disfigured face is hidden behind porcelain ever after.",
+   "Falling through a rusted grating at the chemical plant, young Marek plunges into a tank of bleach that turns his hair and skin white.",
+   "On the mining asteroid, a thief tumbles into a vat of experimental chemicals and is slowly transformed into living crystal."
+  ],
+  "reworded": [
+   "A shove sends the forger over the rail into the tannery's seething pit of lye, and he crawls out with a face his own mother cannot recognise.",
+   "The dye-works owner drops through rotten planks into a cauldron of untested indigo solution, and her skin and eyes are blue for the rest of her life.",
+   "Guards tip the informer into a reactor pool bubbling with sludge, and what drags itself over the edge next morning has scales.",
+   "While escaping the laboratory, the burglar slips into an open pool of corrosive reagent that melts away half his features and sets his hands glowing.",
+   "In the fight atop the fertiliser works the bodyguard topples into a steaming basin of mutagenic runoff and surfaces as something twice his size."
+  ]
+ },
+ "funeral": {
+  "explicit": [
+   "The whole fishing village turns out for the funeral of old Captain Breck, and a stranger in white is seen weeping behind the mourners.",
+   "As the coffin is lowered into the grave, the widow notices her husband, supposedly inside it, watching from the cemetery gate.",
+   "Three estranged brothers meet for the first time in years at their mother's burial in the hills above Oaxaca.",
+   "At the emperor's state funeral his daughter rises to give the eulogy and instead accuses the regent of murder before ten thousand mourners.",
+   "To fool the creditors, a bankrupt Dublin actor has his friends bury a casket full of bricks while he sobs in the crowd dressed as his aunt."
+  ],
+  "reworded": [
+   "In pouring rain the regiment lowers its young drummer into the earth while his father drops the first handful of soil.",
+   "The crew gathers on deck as the chaplain reads a prayer, and the navigator's shrouded body is slid over the rail into the sea.",
+   "Neighbours file past the open box in the parlour to kiss the old midwife goodbye before she is carried to the churchyard.",
+   "At the crematorium in Pune two wives meet for the first time as they both step forward to say farewell to the same dead man.",
+   "The gangster watches from a parked car as his weeping family lays an empty box to rest, convinced along with everyone else that he drowned."
+  ]
+ },
+ "morbid_joke": {
+  "explicit": [
+   "The poisoner of Vienna laughs as each guest collapses and treats every death as the punchline to a joke he has been telling all evening.",
+   "Dressed as a clown, the bank robber stages her murders as pranks, leaving rubber chickens on the bodies of her victims.",
+   "General Krall jokes merrily with his officers while the village burns, grinning that he has never seen peasants dance so well.",
+   "The failed comedian rigs the theatre to explode and tells the trapped audience that the best gag of the night is still coming.",
+   "With a giggle, the pirate captain makes prisoners perform funny walks on the plank, and his laughter follows each splash."
+  ],
+  "reworded": [
+   "The executioner of Blackmoor adds a comic song to each beheading and bows for applause as the basket fills.",
+   "Every bomb the killer sends is packed in a birthday cake with a riddle on top, because he finds the widows' faces hilarious.",
+   "While the hostages choke, the warlord chuckles, does impressions of their last words and asks his men to rate the performance out of ten.",
+   "She drowns the tax inspectors in custard and poses their corpses in silly hats, delighted at how amusing she has made the scene.",
+   "The mad baron arranges his duels like slapstick, oiling the bridge so that each opponent slides to his death as the baron howls with merriment."
+  ]
+ },
+ "losing_protege": {
+  "explicit": [
+   "When bandits murder his young apprentice on the mountain road, the swordsmith Goro is consumed by grief and breaks every blade in his shop.",
+   "The detective's teenage sidekick is tortured to death by smugglers, and Inspector Vance blames herself so bitterly that she quits the force.",
+   "Guilt gnaws at Captain Idowu after his protege is captured on a mission he was too proud to cancel.",
+   "The old witch never forgives herself when the inquisitor burns her favourite pupil in the square while she hides in the crowd.",
+   "After his sidekick Dash is killed in a trap meant for him, the rocket ranger drowns his guilt in drink on a backwater moon."
+  ],
+  "reworded": [
+   "The boy she had trained from age ten is found hanged on the palace gate, and the spymistress can neither eat nor speak for weeks.",
+   "Master Huan sent his youngest student to scout the pass, and since the enemy returned the lad's bloody sash he has cursed his own name nightly.",
+   "Seized by the cartel, the rookie whom Marshal Toller taught to shoot dies under questioning, and the marshal weeps that it was all his doing.",
+   "Every night the old knight relives the moment his squire was speared, certain that the girl would be alive had he ridden faster.",
+   "The hero of Port Meridian keeps the dead teenager's goggles by his bed, shattered that the partner he had mentored was killed covering his retreat."
+  ]
+ },
+ "corrupt_police": {
+  "explicit": [
+   "In a city where every cop is on the Moretti payroll, rookie Dana Fitch refuses her first bribe and finds herself hunted by her own precinct.",
+   "Inspector Banerjee stands alone against a corrupt police force that has sold Calcutta's docks to the opium gangs.",
+   "Sergeant Quill gathers evidence that the crooked commissioner and most of his police are on the take from the bootleggers.",
+   "When dirty cops murder a witness for the mob, the one honest patrolman in the precinct decides to testify against them all.",
+   "The new captain of the city watch discovers that corruption runs from the gaolers to the prefect, all bribed by the Thieves' Guild."
+  ],
+  "reworded": [
+   "Every constable in the harbour district takes envelopes from the smugglers except Constance Wray, whose colleagues now spit when she enters the station.",
+   "The guild of assassins owns the city guard from captain to cook, and young Lieutenant Baro alone still arrests its members.",
+   "Detective Lindqvist learns that her chief and all his squad answer to the drug lord, and she begins building a case against them alone.",
+   "Since the racketeers started paying the marshals, only old Deputy Harrow will serve a warrant on them, and his fellow deputies shoot at him for it.",
+   "On Ceres the patrol officers work for the water gangs, and the single lieutenant who will not accept their money must fight his own department."
+  ]
+ },
+ "fear_toxin": {
+  "explicit": [
+   "The deranged chemist floods the opera house with a gas that makes each patron hallucinate his worst fears.",
+   "A fear toxin slipped into the regiment's wine leaves hardened soldiers screaming in terror at monsters that are not there.",
+   "Sprayed with the witch's hallucinogen, the princess panics as she sees her dead brothers crawling up the tower walls.",
+   "The spy chief interrogates captives with a drug that traps them in living nightmares drawn from whatever they dread most.",
+   "When saboteurs release the toxin through the space station's vents, the crew hallucinate spiders, drowning and fire and turn on one another in panic."
+  ],
+  "reworded": [
+   "A yellow smoke rolls through the village, and everyone who breathes it sees the thing that has haunted him most since he was small.",
+   "The sultan's physician pricks his rivals with a needle that fills their eyes with whatever horror each has always dreaded.",
+   "One drop of the professor's serum, and the mountaineer shrieks that the floor is falling away, though she is lying safely in bed.",
+   "The kidnapper laces the water supply so that people claw at imaginary snakes, flames and dead relations, each tormented by a private horror.",
+   "The general orders a powder dropped on the trenches, and men who inhale it flee from phantoms shaped out of their own darkest dreads."
+  ]
+ },
+ "mass_breakout": {
+  "explicit": [
+   "A saboteur opens every cell in Blackgate Rock, and the mass breakout sends four hundred murderers into the snowbound town below.",
+   "During the asylum riot all the inmates escape at once, and the county's most dangerous killers vanish into the fog.",
+   "The rebel queen stages a jailbreak that frees every prisoner in the fortress, unleashing warlords she cannot control.",
+   "An earthquake cracks the walls of the prison at San Telmo and all the inmates escape together into the terrified city.",
+   "When the orbital prison loses power, a prison break turns loose a thousand convicts aboard the transport ships."
+  ],
+  "reworded": [
+   "The mad warden unlocks every gate in the penitentiary at midnight, and by dawn six hundred convicts are loose in the streets of Valparaíso.",
+   "A hacker throws open all the locks of the Siberian supermax at the same instant, letting its bombers and stranglers pour into the forest.",
+   "Cannon fire breaches the dungeon wall, and every pirate, poisoner and assassin the duke ever locked up swarms into the town together.",
+   "The lunatic hospital's doors are flung wide on the doctor's order, and its whole population of violent madmen descends on the sleeping valley.",
+   "To cover his own getaway, the spy turns all the convicts of the penal moon loose at once upon the mining settlements."
+  ]
+ },
+ "refuses_to_kill": {
+  "explicit": [
+   "With the tyrant helpless under her sword, Ysolde refuses to kill him, saying she will not become what he is.",
+   "The ranger has the cattle baron in his rifle sights but spares him, because he once promised never to kill again.",
+   "Offered revenge on the man who burned her convent, Sister Agnes shows mercy and refuses to strike the blow.",
+   "Holding the warlord over the reactor, Captain Oyelaran insists that he won't kill an unarmed enemy and hauls him back to face trial.",
+   "The detective could let the strangler fall from the bridge, but she refuses on principle and lets him live."
+  ],
+  "reworded": [
+   "His blade rests on the usurper's throat, yet Jamil sheathes it, declaring that no man deserves to die at his hand.",
+   "Told to finish the pirate who enslaved her, Marisol drops the pistol and ties him up for the magistrate, because taking lives is wrong.",
+   "The boxer turned rebel stands over the beaten secret policeman, then lowers his fists and walks away, saying that killing makes murderers of everyone.",
+   "She had only to cut the rope, but the mountain guide pulls the killer back onto the ledge since she believes every life is sacred.",
+   "Although the court begs him to shoot the captured sorcerer, the young knight breaks his crossbow and says justice must be done without bloodshed."
+  ]
+ },
+ "antidote_race": {
+  "explicit": [
+   "The reservoir has been poisoned, and the chemist Farah has twelve hours to brew an antidote before the whole town dies.",
+   "In a race against time, two doctors cross the Arctic by dog sled to bring serum to a village dying of a toxin.",
+   "After the king drinks poisoned wine, his daughter must reach the hermit who knows the cure before the moon sets.",
+   "The terrorists' toxin will kill the hostages by midnight, so the lab team works frantically to synthesise an antidote.",
+   "Bitten by a venomous alien eel, the pilot is fading fast as her crew races to the jungle moon for the only antidote."
+  ],
+  "reworded": [
+   "The viper's bite will stop the prince's heart by sunset, so his sister gallops for the mountain where the only healing herb grows.",
+   "With every guest at the wedding dying from tainted sherry, the pharmacist has until dawn to mix the remedy from a half-burned recipe.",
+   "Spores are shutting down the colonists' lungs hour by hour, and Dr. Hale must distil a counteragent before the youngest stop breathing.",
+   "The assassin's dart leaves the ambassador two days to live, and her bodyguards scour Istanbul for the one vial that can save her.",
+   "As venom creeps toward the gladiator's heart, his friends break into the palace pharmacy to steal the medicine before the clock runs out."
+  ]
+ },
+ "revenge_vow": {
+  "explicit": [
+   "Kneeling beside his murdered brother, the young herdsman swears revenge on the men who came in the night.",
+   "At her father's tomb Catalina vows to avenge him, and she spends ten years learning the sword in order to do so.",
+   "The cellist swore vengeance on the general who shot her husband, and she begins by auditioning for his private orchestra.",
+   "Over his slain wife's ashes, the retired bounty hunter makes a vow of retribution against the syndicate that killed her.",
+   "When the clan chief is stabbed at a feast, his daughter takes a blood oath to have her revenge before the next harvest."
+  ],
+  "reworded": [
+   "With her son's blood still on her hands, the innkeeper tells the crowd she will not rest until his killers are dead.",
+   "The boy cuts his palm over his slain father and promises aloud that the duke will pay for this with his life.",
+   "Burning her sister's letters, Adaeze makes a solemn promise to the flames that the officer who murdered her shall die in the same way.",
+   "On the cliff where they found his fiancée, the lighthouse keeper pledges to hunt down the smuggler who drowned her, however long it takes.",
+   "The robot pilot carves her murdered creator's name on her arm and gives her word that every man responsible will answer for it."
+  ]
+ },
+ "mistaken_twins": {
+  "explicit": [
+   "Identical twins separated at birth arrive in the same Sicilian town, and soon each is being scolded by the other's wife.",
+   "The police arrest the wrong man when a baker is mistaken for his identical twin brother, a notorious safecracker.",
+   "A duchess is confused with her look-alike, a travelling actress, and the court spends a week curtsying to the wrong woman.",
+   "Because nobody can tell the twins apart, the general hands his battle plans to the double who works for the enemy.",
+   "Chaos breaks out at the academy on Titan when one twin sits the exam and the other, mistaken for her, is expelled for cheating."
+  ],
+  "reworded": [
+   "Two brothers with the very same face land in one port, and by nightfall each has been blamed for the other's debts.",
+   "The merchant's wife dines with a stranger who looks exactly like her husband, while her real husband pounds on the gate outside.",
+   "Since Olga and Vera were born minutes apart and look perfectly alike, the groom proposes to the wrong sister at the ball.",
+   "A bishop and a pickpocket share every feature, so the beadles drag the bishop to the stocks while the pickpocket is asked to bless the choir.",
+   "The gangsters kidnap a mild dentist from Osaka who happens to have the same face as their boss, and nobody believes his protests."
+  ]
+ },
+ "feigned_death_potion": {
+  "explicit": [
+   "To escape her forced marriage, Elisaveta drinks a potion that makes her appear dead and is carried to the family crypt.",
+   "The condemned spy swallows a drug that slows his heart, feigns death and is wheeled out of prison under a sheet.",
+   "A friendly nun gives the princess a sleeping draught so that her captors will think her lifeless and leave her body in the chapel.",
+   "Taking a death-like potion brewed by the village healer, the runaway slave lets his master bury him and is dug up at night.",
+   "The mob accountant fakes death with an experimental drug in order to avoid testifying, waking in the morgue drawer hours afterwards."
+  ],
+  "reworded": [
+   "The bride drinks the apothecary's tincture, her pulse seems to stop, and her family entombs her, just as she planned in order to elude the old count.",
+   "One swallow from the tiny vial leaves the prisoner cold and without breath, and the jailers carry out a corpse that will wake at midnight.",
+   "So that the sultan will give up on her, Zaynab takes a herbal brew that leaves her looking like a corpse for two days.",
+   "The deserter's friend mixes him a powder that stills his heart long enough for the regimental doctor to sign the death certificate and release the body.",
+   "Before the arena fight, the captive gladiator chews a root that stops all sign of breathing, so that she will be dumped outside the walls."
+  ]
+ },
+ "deal_with_devil": {
+  "explicit": [
+   "A struggling fiddler makes a deal with the devil at a crossroads, trading his soul for the finest bowing arm in Ireland.",
+   "The ageing actress signs a pact with a demon that keeps her young on screen while those she loves wither.",
+   "In exchange for victory, General Sato bargains away his soul to an infernal spirit that rises from the battlefield smoke.",
+   "The software founder strikes a bargain with Satan himself, and for seven years everything she touches succeeds.",
+   "Desperate to save his farm, Elias signs the fiend's contract in blood and wins endless harvests at the price of his firstborn."
+  ],
+  "reworded": [
+   "The horned stranger offers the poet seven years of fame, and she signs in blood, knowing he will come to collect her at the end.",
+   "For the power to heal any wound, the surgeon grants the thing in the well his every memory of his daughter.",
+   "A swamp spirit gives the fisherman nets that never come up empty, and in return it will own him forever once he dies.",
+   "The violin teacher agrees with the dark lord of hell that she shall play like an angel and burn for eternity afterwards.",
+   "To win the crown, the bastard prince lets an ancient goddess of the dead have his unborn children, and she keeps her side exactly."
+  ]
+ },
+ "closed_circle": {
+  "explicit": [
+   "Snowed in at an Alpine lodge, nine guests realise that the murderer of their host must be one of them.",
+   "When a diamond vanishes aboard a stranded airship, all seven passengers become suspects because nobody could have left.",
+   "A storm leaves the island cut off from the mainland, and the retired judge sets out to find the culprit among the dinner party.",
+   "The submarine's captain is stabbed at the bottom of the sea, so suspicion falls on each of the eleven crew.",
+   "In this whodunit set on a lunar base, a scientist is killed during a communications blackout, and every colonist is a suspect."
+  ],
+  "reworded": [
+   "With the causeway flooded and the telephone dead, the six houseguests know that whoever stabbed the colonel is sitting at the table.",
+   "A poisoner strikes on a train stuck between avalanches, and since nobody has come or gone, the killer must be among its eight passengers.",
+   "The abbot is found strangled while the monastery is sealed for plague, which means that only a brother could have done it.",
+   "Nobody has boarded or left the whaling ship in four months, so the thief who took the captain's gold must belong to its tiny crew.",
+   "Alone on the Antarctic base until spring, the five researchers study each other's faces, knowing that someone in the room sabotaged the radio and killed Petrov."
+  ]
+ },
+ "poisoned_garment": {
+  "explicit": [
+   "The spurned countess sends her husband's new bride a gown steeped in poison, and the girl is dead before the wedding dance ends.",
+   "A gift of a poisoned shirt from the khan's jealous cousin burns the young general's skin until he dies in agony.",
+   "The spy sews toxic thread into the dictator's dress cloak, and within a week of wearing it he cannot stand.",
+   "Wrapped in a poisoned robe presented by rival monks, the abbot collapses at the altar, his flesh blistering.",
+   "The couturier laces a silk garment with venom and delivers it to the film star who ruined her, who dies on the red carpet."
+  ],
+  "reworded": [
+   "Her rival sends a pair of embroidered gloves soaked in arsenic, and the soprano's hands blacken before the first act is over.",
+   "The sultan puts on the silken turban his brother presented to him, and the hemlock worked into its folds kills him by nightfall.",
+   "A jealous wife rubs deadly nightshade into the wool of the scarf she knits for her husband's mistress, who sickens and dies wearing it.",
+   "The ambassador's new coat, lined with fabric the assassins had treated in secret, eats into his skin, and he dies screaming in the palace.",
+   "Delighted by the lace veil her stepmother has sent, the bride wears it to church and crumples at the altar, killed by the dust in its threads."
+  ]
+ },
+ "rash_promise": {
+  "explicit": [
+   "In a hasty moment King Oren swears to grant the dancer anything she names, and his oath obliges him to hand over his only son.",
+   "Pleased with his supper, the captain makes the cook a rash promise of any post he likes, and has to keep his word by giving up his own ship.",
+   "Drunk on victory, Duke Emeric gave his word to a beggar without hearing the request and must now keep his promise by surrendering his castle.",
+   "The widow makes a rash promise to marry whoever brings her rain, and is forced to wed the man she hates most.",
+   "Having pledged to the alien envoy whatever was born first on his ship, the commander must keep his oath and give up his child."
+  ],
+  "reworded": [
+   "Laughing, the queen tells the shepherd he may take whatever he can see from the hill, and is bound to give up the city where she was born.",
+   "Before hearing what she wanted, the chieftain told the old woman her wish was granted, and honour then compelled him to put out his own eyes.",
+   "The gambler publicly guarantees his opponent anything in his house without a thought, and the next day he is made to hand over his wife's freedom.",
+   "Grateful for the rescue, the baron at once assures the ferryman of any reward he likes, and has no choice when the ferryman demands his heir.",
+   "Too eager to wait, the young rancher commits in front of the whole town to whatever the healer asks, and must watch her lead away his brother."
+  ]
+ },
+ "locked_out_lover": {
+  "explicit": [
+   "All night the poet sits at his beloved's locked door in the rain, singing a lament and begging her to let him in.",
+   "Locked out after a quarrel, the young lover pleads on the doorstep until dawn while Giulia listens silently from above.",
+   "The sailor serenades the closed door of his beloved's house in Bahia from midnight to sunrise, but it never opens.",
+   "Shut out by her lover, the courtesan of Edo sleeps on his threshold and weeps at the door until the morning bell.",
+   "The lovesick knight hangs a garland on the barred door and spends the night before it, pleading with the lady inside to relent."
+  ],
+  "reworded": [
+   "From midnight until cockcrow the drunken student stands outside the bolted gate of the girl he adores, singing for her to open it.",
+   "Amira's sweetheart finds her house barred against him and spends the freezing night on her steps, whispering verses through the keyhole.",
+   "Rain soaks the trumpeter as he plays beneath the shutters of the woman he loves, who has bolted him outside and will not answer before morning.",
+   "She raps at his apartment until dawn, begging through the wood and kissing the lock, but the painter she adores never turns the key.",
+   "Under the stars of the domed city, a lovelorn mechanic camps all night at the sealed airlock of her darling, calling softly for admission."
+  ]
+ },
+ "self_fulfilling_prophecy": {
+  "explicit": [
+   "An oracle's prophecy warns the queen that her gardener will poison her, so she dismisses him without wages, and in his anger he returns and poisons her.",
+   "A fortune-teller predicts that the banker will die in Cairo, and his flight to avoid that fate brings him there on the fatal day.",
+   "The general burns a village to prevent the prophecy that one of its children will overthrow him, and so makes the child his enemy.",
+   "Because the newspaper's prediction of a bank failure sends everyone to withdraw their money, the prediction comes true by noon.",
+   "The ship's computer foretold a mutiny, and the captain's cruel measures to escape that destiny are what drive the crew to mutiny."
+  ],
+  "reworded": [
+   "Warned by a crone that his brother would one day betray him, the earl treats him so harshly that the brother finally does.",
+   "The seer said that the princess would die by water, so they locked her in a desert tower, where she perished when the cistern burst.",
+   "A dream tells the merchant that his house will burn, and the lamp he lights to keep watch against it sets the curtains ablaze.",
+   "Hearing that a red-haired girl will end his rule, the sultan drives out every redhead, and the army they form in the hills topples him.",
+   "The statistician's forecast says that the couple will divorce within a year, and their anxious watching for signs of trouble is what breaks the marriage."
+  ]
+ },
+ "love_triangle": {
+  "explicit": [
+   "Two brothers become bitter rivals for the love of the same schoolteacher, and their rivalry tears the ranch apart.",
+   "Torn between the steady doctor and the reckless pilot, Noor watches her two suitors grow more jealous with every dance.",
+   "A love triangle forms on the research ship when both the geologist and the cook fall for the captain.",
+   "In Heian Japan, two court poets compete for one lady's hand, and their jealousy turns each poetry contest into a duel.",
+   "The opera's tenor and baritone, rivals in love as well as song, both court the young conductor and sabotage each other's arias."
+  ],
+  "reworded": [
+   "Both the blacksmith and the miller's son want to marry Agnes, and every harvest fair ends with them fighting in the mud over her.",
+   "Leila loves Karim, but so does her cousin, and each woman schemes all summer to be the one he takes to Beirut.",
+   "Two astronauts sharing a tiny capsule discover that the fiancée each is longing for is the same woman back in Houston.",
+   "The widow cannot choose between the gardener and the colonel, and the two men's battle for her heart divides the whole village.",
+   "Best friends since school, Theo and Marcus stop speaking once they learn that both have fallen for the violinist downstairs and neither will step aside."
+  ]
+ },
+ "late_collision_meeting": {
+  "explicit": [
+   "Running late for her interview with toast in her mouth, Priya crashes into a stranger who will turn out to be her new boss and future husband.",
+   "The junior clerk, rushing for the tram with his breakfast in hand, bumps into a woman he will marry ten years on.",
+   "Late for the ball and hurrying round a corner, the prince's messenger collides with a flower seller who will one day be his wife.",
+   "Rushing to lectures with a croissant between his teeth, Étienne crashes into the cellist who will become the love of his life.",
+   "In a hurry to catch the shuttle, a tardy cadet has a collision with a grumpy mechanic whom she later falls for."
+  ],
+  "reworded": [
+   "Ten minutes behind schedule and still chewing a bun, the apprentice runs straight into a young lady whom he will meet again at the altar.",
+   "Sprinting for the last ferry with a dumpling in her cheek, Xiulan knocks a stranger flat, and by winter she is in love with him.",
+   "The overdue schoolteacher dashes round the corner and smashes into a man carrying tulips, the same man who turns out to be her landlord and sweetheart.",
+   "Having overslept, Ravi pelts down the stairs with a samosa in his fist and slams into the new neighbour whom he eventually marries.",
+   "Racing to a lesson that began without her, the witch barrels into a boy with an armful of books, never dreaming he is her future love."
+  ]
+ },
+ "literal_loophole": {
+  "explicit": [
+   "The contract says the debt is due when the last leaf falls, so the clever widow plants an evergreen and lives free on a loophole.",
+   "Forbidden by the letter of the law to set foot on English soil, the rebel fills his boots with Irish earth and walks into London.",
+   "The queen's oath forbids her to speak to her brother, so, keeping to its exact words, she sings him the warning instead and the oath is literally unbroken.",
+   "The lawyer saves the village on a technicality, proving that the wording of the treaty grants the empire its fields but not its crops.",
+   "A clause in the fine print lets the miner own whatever she can carry from the asteroid, so she straps thrusters to it and carries it all."
+  ],
+  "reworded": [
+   "He had sworn never to raise a sword against the duke, so the knight defeats him with a frying pan and keeps his oath.",
+   "The decree bans any man from entering the temple after dark, and the priestess walks in unhindered because she is not a man.",
+   "The landlord's agreement grants the widow the cottage for as long as her candle burns, so she blows it out, locks it in a drawer and never lights it again.",
+   "The will leaves the house to whichever son sleeps under its roof first, so the youngest pulls off a single shingle and naps beneath it.",
+   "Told that he must not touch a drop of wine for a year, the abbot has his bread soaked in it and dines merrily without breaking his promise."
+  ]
+ },
+ "shoe_throwing": {
+  "explicit": [
+   "In the middle of the minister's speech a furious baker pulls off his shoe and throws it at the podium.",
+   "As the newlyweds' carriage rolls away, the bride's aunts laugh and fling old slippers after it for luck.",
+   "The old washerwoman hurled her sandal at the tax collector's back while the whole market cheered.",
+   "Enraged by the sentence, the prisoner threw a boot at the judge, who ducked just in time.",
+   "Protesters on the Martian concourse throw their shoes at the governor's hologram, and one boot strikes the real governor behind it."
+  ],
+  "reworded": [
+   "Midway through the mayor's address, an angry grandmother tugs off her clog and pitches it straight at his nose.",
+   "The bride's brothers lob a worn brogue after the wedding car, as their family has always done to bring the couple luck.",
+   "Disgusted by the ambassador's lies, a young reporter tears off one loafer and lets it sail across the press room at his face.",
+   "The dancer snatched off her stiletto and launched it at the emperor's box, an insult that silenced the theatre.",
+   "Across the parliament chamber a size-twelve moccasin comes hurtling from the gallery and smacks the prime minister on the ear in protest."
+  ]
+ },
+ "exile": {
+  "explicit": [
+   "Banished from the clan for a killing he did not commit, Torvald spends ten winters in exile on the ice.",
+   "The deposed queen lives in exile in a Lisbon boarding house, dreaming of the homeland that cast her out.",
+   "After his satirical play offends the junta, the playwright is deported from his homeland and expelled from the writers' union.",
+   "The council banishes the heretic healer from the valley, and she wanders the desert as an outcast.",
+   "Exiled to a barren moon for treason, the admiral learns to farm dust while her planet forgets her name."
+  ],
+  "reworded": [
+   "The emperor orders the poet to leave the capital forever, and he grows old on a fever coast among strangers.",
+   "For marrying an enemy, Nyokabi is driven from her village by the elders and told she will be killed if she returns.",
+   "Stripped of his passport and put on a ship by the new regime, the professor must live out his days in a foreign city.",
+   "The pack turns on its old leader and sends her beyond the river, where she has to survive alone and may never come home.",
+   "Judged a danger to the colony, young Ansel is marched through the dome's gate and forbidden ever to set foot inside it again."
+  ]
+ }
+}
