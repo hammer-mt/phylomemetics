@@ -78,8 +78,10 @@ def rewording(f, units, rng):
     rw = [KIX[f"reworded|{u}"] for u in UNITS_8B]
     R, Nm = A[rw], A[ix("neutral|")].max(0)
     m = len(units)
-    Rp = np.array([[pct(C[:, j], R[i, j]) for j in range(m)] for i in range(m)])
-    Np = np.array([pct(C[:, j], Nm[j]) for j in range(m)])
+    step = np.abs(C).max(0) / 127 + 1e-8                    # the published corpus activations are int8, which makes ties
+    C8 = np.round(C / step) * step
+    Rp, R8 = (np.array([[pct(X[:, j], R[i, j]) for j in range(m)] for i in range(m)]) for X in (C, C8))
+    Np, N8 = (np.array([pct(X[:, j], Nm[j]) for j in range(m)]) for X in (C, C8))
     der = []
     while len(der) < N_NULL:
         p = rng.permutation(m)
@@ -87,7 +89,7 @@ def rewording(f, units, rng):
             der.append(p)
     der = np.array(der)
     res = {}
-    for crit, M in (("percentile", Rp > Np), ("raw", R > Nm)):
+    for crit, M in (("percentile_int8_as_published", R8 > N8), ("percentile_f16", Rp > Np), ("raw", R > Nm)):
         own = np.diag(M); null = M[der, np.arange(m)].sum(1)
         res[crit] = dict(survivors=int(own.sum()), labels=[NAMES[j] for j in np.where(own)[0]],
                          other_passes=float(((M.sum(0) - own) / (m - 1)).mean()), null_mean=float(null.mean()),
@@ -227,7 +229,7 @@ def main(root, outdir, tags):
             big = kind == "neuron" and f.n > base.n
             res["B"][kind] = detectors(f, base.n / f.n, 5) if big else detectors(f)
             b = res["B"][kind]
-            print(tag, kind, "A", res["A"][kind]["percentile"]["survivors"], round(res["A"][kind]["percentile"]["null_mean"], 2),
+            print(tag, kind, "A", [(res["A"][kind][k]["survivors"], round(res["A"][kind][k]["null_mean"], 2)) for k in ("percentile_int8_as_published", "raw")],
                   "| B m1", np.mean(list(b["m1"].values())), "m5", np.mean(list(b["m5"].values())), "| revenge", res["revenge"][kind]["pairs_won"], flush=True)
         R = np.load(root / tag / "alone_resid.npy", mmap_mode="r")
         d = R.shape[1] // 3
