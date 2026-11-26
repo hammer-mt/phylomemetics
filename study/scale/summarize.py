@@ -51,6 +51,8 @@ if c:
     out["decision_32b_clearly_better"] = {k: bool(out["contrasts"][f"qwen3-32b neuron {k} - qwen3-8b neuron {k}"]["all"]["diff"] >= .05 and
                                               out["contrasts"][f"qwen3-32b neuron {k} - qwen3-8b neuron {k}"]["all"]["p"] < .05) for k in ("m1", "m5")}
     out["decision_sae_is_a_rival"] = {t: bool(max(M[f"{t} sae {k}"].mean() - M[f"{t} neuron {k}"].mean() for k in ("m1", "m5")) >= -.05) for t in ("qwen3-8b", "qwen3-32b")}
+for t in ("qwen3-8b", "qwen3-32b"):                           # post hoc, added after results
+    contrast(f"{t} resid_mid probe", f"{t} neuron m5"); contrast("embed proto", f"{t} neuron m5"); contrast("embed proto", f"{t} neuron m1")
 json.dump(out, open(R / "summary.json", "w"), indent=1)
 for k, v in sorted(out["accuracy"].items(), key=lambda x: -x[1]["all"]):
     print(f"{v['all']:.3f}  hard {v['hard_half']:.3f}  {k}")

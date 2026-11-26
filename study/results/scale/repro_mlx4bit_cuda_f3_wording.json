@@ -1,0 +1,140 @@
+{
+ "qwen3-8b": {
+  "max_abs_pct_diff_vs_wording_json": 10.3,
+  "percentile": {
+   "survivors": 11,
+   "survivor_labels": [
+    "The origin wound",
+    "The secret identity",
+    "Bats",
+    "Gotham City",
+    "Losing the prot\u00e9g\u00e9",
+    "The joke",
+    "The rogues' gallery",
+    "A bomb",
+    "A funeral",
+    "Two-Face's coin",
+    "Harvey Dent"
+   ],
+   "rate_other_rewording_passes": 0.1624,
+   "mismatched_null_mean": 5.041,
+   "mismatched_null_p95": 8.0,
+   "p_mismatched_ge_observed": 0.0021
+  },
+  "raw": {
+   "survivors": 12,
+   "survivor_labels": [
+    "The origin wound",
+    "The secret identity",
+    "Bats",
+    "Gotham City",
+    "Losing the prot\u00e9g\u00e9",
+    "The joke",
+    "The rogues' gallery",
+    "A bomb",
+    "A funeral",
+    "Two-Face's coin",
+    "Harvey Dent",
+    "Lucius Fox"
+   ],
+   "rate_other_rewording_passes": 0.2559,
+   "mismatched_null_mean": 7.932,
+   "mismatched_null_p95": 11.0,
+   "p_mismatched_ge_observed": 0.043
+  },
+  "own_rewording_ranked_first": [
+   "A funeral",
+   "Two-Face's coin"
+  ],
+  "raw_survivors_ranked_first": [
+   "A funeral",
+   "Two-Face's coin"
+  ],
+  "own_rewording_rank_median": 11.0,
+  "revenge": {
+   "unit": 332151,
+   "n_candidates": 50,
+   "pairs_won": 4,
+   "n_pairs": 12,
+   "auc_revenge_vs_control": 0.4583,
+   "auc_revenge_vs_harm": 0.6076,
+   "auc_revenge_vs_vow": 0.3333,
+   "auc_harm_vs_control": 0.2153
+  }
+ },
+ "llama3.1-8b": {
+  "max_abs_pct_diff_vs_wording_json": 0.3,
+  "percentile": {
+   "survivors": 9,
+   "survivor_labels": [
+    "The secret identity",
+    "Heir to a dead father's fortune",
+    "The Batcave and bat gear",
+    "The joke",
+    "Superhero powers (peaks on Superman)",
+    "A funeral",
+    "Two-Face's coin",
+    "The Riddler",
+    "Jason Todd"
+   ],
+   "rate_other_rewording_passes": 0.1828,
+   "mismatched_null_mean": 5.661,
+   "mismatched_null_p95": 9.0,
+   "p_mismatched_ge_observed": 0.07569
+  },
+  "raw": {
+   "survivors": 10,
+   "survivor_labels": [
+    "The secret identity",
+    "Heir to a dead father's fortune",
+    "The Batcave and bat gear",
+    "The joke",
+    "Superhero powers (peaks on Superman)",
+    "A bomb",
+    "A funeral",
+    "Two-Face's coin",
+    "The Riddler",
+    "Jason Todd"
+   ],
+   "rate_other_rewording_passes": 0.2538,
+   "mismatched_null_mean": 7.851,
+   "mismatched_null_p95": 11.0,
+   "p_mismatched_ge_observed": 0.2167
+  },
+  "own_rewording_ranked_first": [
+   "The secret identity",
+   "The Batcave and bat gear",
+   "The joke",
+   "A funeral",
+   "Fell into a vat of chemicals",
+   "Two-Face's coin"
+  ],
+  "raw_survivors_ranked_first": [
+   "The secret identity",
+   "The Batcave and bat gear",
+   "The joke",
+   "A funeral",
+   "Two-Face's coin"
+  ],
+  "own_rewording_rank_median": 12.0,
+  "revenge": {
+   "unit": 204178,
+   "n_candidates": 50,
+   "pairs_won": 10,
+   "n_pairs": 12,
+   "auc_revenge_vs_control": 0.8264,
+   "auc_revenge_vs_harm": 0.8681,
+   "auc_revenge_vs_vow": 0.7917,
+   "auc_harm_vs_control": 0.3681
+  }
+ },
+ "n_memes": 31,
+ "null_draws": 10000,
+ "survive_in_both_percentile": [
+  "A funeral",
+  "The joke",
+  "The secret identity",
+  "Two-Face's coin"
+ ],
+ "revenge_units_corpus_r": 0.3874
+}

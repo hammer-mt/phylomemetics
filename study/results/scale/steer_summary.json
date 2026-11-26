@@ -1,0 +1,2015 @@
+{
+ "qwen3-32b": {
+  "baseline_up": {
+   "funeral": 0.0,
+   "coin_flip": 0.0,
+   "secret_identity": 0.0,
+   "morbid_joke": 0.0,
+   "revenge_vow": 0.0,
+   "coherent": 1.0
+  },
+  "up": [
+   {
+    "concept": "funeral",
+    "source": "A:neuron",
+    "curve": [
+     {
+      "alpha": 2,
+      "own": 0.8570650000000001,
+      "own_random": 0.003005,
+      "coherent": 0.022690000000000002,
+      "coherent_random": 0.04078,
+      "others": 0.024935
+     },
+     {
+      "alpha": 5,
+      "own": 1e-05,
+      "own_random": 1e-05,
+      "coherent": 0.0,
+      "coherent_random": 0.0,
+      "others": 0.01731125
+     },
+     {
+      "alpha": 10,
+      "own": 7.500000000000001e-05,
+      "own_random": 2e-05,
+      "coherent": 0.0,
+      "coherent_random": 0.0,
+      "others": 0.02593
+     },
+     {
+      "alpha": 20,
+      "own": 0.04987,
+      "own_random": 0.0,
+      "coherent": 0.0,
+      "coherent_random": 0.0,
+      "others": 0.01640625
+     }
+    ],
+    "effect": null
+   },
+   {
+    "concept": "coin_flip",
+    "source": "A:neuron",
+    "curve": [
+     {
+      "alpha": 2,
+      "own": 0.0,
+      "own_random": 0.0,
+      "coherent": 0.999485,
+      "coherent_random": 0.9997000000000001,
+      "others": 0.013121249999999997
+     },
+     {
+      "alpha": 5,
+      "own": 0.0,
+      "own_random": 0.0,
+      "coherent": 0.983525,
+      "coherent_random": 0.9877650000000001,
+      "others": 0.002315
+     },
+     {
+      "alpha": 10,
+      "own": 0.013475,
+      "own_random": 0.011379999999999998,
+      "coherent": 0.002295,
+      "coherent_random": 0.03567999999999999,
+      "others": 0.005470000000000001
+     },
+     {
+      "alpha": 20,
+      "own": 0.0007050000000000001,
+      "own_random": 0.003555,
+      "coherent": 0.00016,
+      "coherent_random": 3.5e-05,
+      "others": 0.00030874999999999994
+     }
+    ],
+    "alpha": 5,
+    "own": 0.0,
+    "random": 0.0,
+    "baseline": 0.0,
+    "coherent": 0.98719,
+    "others": 0.001615,
+    "effect": 0.0,
+    "specificity": -0.001615
+   },
+   {
+    "concept": "secret_identity",
+    "source": "A:neuron",
+    "curve": [
+     {
+      "alpha": 2,
+      "own": 1e-05,
+      "own_random": 0.033995000000000004,
+      "coherent": 0.9985600000000001,
+      "coherent_random": 0.9997250000000001,
+      "others": 2.5e-06
+     },
+     {
+      "alpha": 5,
+      "own": 0.280995,
+      "own_random": 0.02816,
+      "coherent": 0.9891699999999999,
+      "coherent_random": 0.9947649999999999,
+      "others": 8.5e-05
+     },
+     {
+      "alpha": 10,
+      "own": 0.395995,
+      "own_random": 0.018889999999999997,
+      "coherent": 0.80114,
+      "coherent_random": 0.9558800000000002,
+      "others": 0.00036875
+     },
+     {
+      "alpha": 20,
+      "own": 0.007285,
+      "own_random": 0.15085500000000002,
+      "coherent": 0.0,
+      "coherent_random": 0.23668499999999998,
+      "others": 0.0001425
+     }
+    ],
+    "alpha": 10,
+    "own": 0.42765000000000003,
+    "random": 2e-05,
+    "baseline": 2e-05,
+    "coherent": 0.85182,
+    "others": 0.0002225,
+    "effect": 0.42763,
+    "specificity": 0.4274275
+   },
+   {
+    "concept": "morbid_joke",
+    "source": "A:neuron",
+    "curve": [
+     {
+      "alpha": 2,
+      "own": 1.4999999999999999e-05,
+      "own_random": 1.4999999999999999e-05,
+      "coherent": 0.9997900000000002,
+      "coherent_random": 0.9997350000000003,
+      "others": 0.00015
+     },
+     {
+      "alpha": 5,
+      "own": 0.0,
+      "own_random": 1.4999999999999999e-05,
+      "coherent": 0.9997950000000001,
+      "coherent_random": 0.9996550000000001,
+      "others": 4.25e-05
+     },
+     {
+      "alpha": 10,
+      "own": 0.0,
+      "own_random": 0.0,
+      "coherent": 0.999685,
+      "coherent_random": 0.9997400000000001,
+      "others": 5.625e-05
+     },
+     {
+      "alpha": 20,
+      "own": 0.0,
+      "own_random": 0.0,
+      "coherent": 0.9997250000000001,
+      "coherent_random": 0.9996550000000001,
+      "others": 3.5e-05
+     }
+    ],
+    "alpha": 20,
+    "own": 0.0,
+    "random": 0.0,
+    "baseline": 0.0,
+    "coherent": 0.9996600000000001,
+    "others": 5e-06,
+    "effect": 0.0,
+    "specificity": -5e-06
+   },
+   {
+    "concept": "revenge_vow",
+    "source": "A:neuron",
+    "curve": [
+     {
+      "alpha": 2,
+      "own": 0.0,
+      "own_random": 0.0,
+      "coherent": 0.99969,
+      "coherent_random": 0.9997800000000001,
+      "others": 4e-05
+     },
+     {
+      "alpha": 5,
+      "own": 0.0,
+      "own_random": 0.0,
+      "coherent": 0.9995600000000001,
+      "coherent_random": 0.999665,
+      "others": 0.000535
+     },
+     {
+      "alpha": 10,
+      "own": 0.0,
+      "own_random": 0.0,
+      "coherent": 0.982515,
+      "coherent_random": 0.9861650000000001,
+      "others": 0.006591249999999999
+     },
+     {
+      "alpha": 20,
+      "own": 0.0037749999999999997,
+      "own_random": 0.021065,
+      "coherent": 0.85193,
+      "coherent_random": 0.005075,
+      "others": 0.0032737499999999998
+     }
+    ],
+    "alpha": 20,
+    "own": 0.00212,
+    "random": 0.019499999999999997,
+    "baseline": 0.0,
+    "coherent": 0.89693,
+    "others": 0.004405000000000001,
+    "effect": -0.017379999999999996,
+    "specificity": -0.002285000000000001
+   },
+   {
+    "concept": "funeral",
+    "source": "B:neuron",
+    "curve": [
+     {
+      "alpha": 2,
+      "own": 0.193795,
+      "own_random": 0.00016,
+      "coherent": 0.9996800000000002,
+      "coherent_random": 0.9997750000000002,
+      "others": 0.0082625
+     },
+     {
+      "alpha": 5,
+      "own": 0.29069,
+      "own_random": 0.000115,
+      "coherent": 0.9636800000000001,
+      "coherent_random": 0.97654,
+      "others": 0.00523
+     },
+     {
+      "alpha": 10,
+      "own": 0.003335,
+      "own_random": 0.0007199999999999999,
+      "coherent": 0.00133,
+      "coherent_random": 0.0010600000000000002,
+      "others": 0.004122499999999999
+     },
+     {
+      "alpha": 20,
+      "own": 1.5000000000000002e-05,
+      "own_random": 4e-05,
+      "coherent": 1e-05,
+      "coherent_random": 0.0,
+      "others": 0.0036487499999999996
+     }
+    ],
+    "alpha": 5,
+    "own": 0.23678,
+    "random": 0.00022,
+    "baseline": 1e-05,
+    "coherent": 0.98641,
+    "others": 8.999999999999999e-05,
+    "effect": 0.23656,
+    "specificity": 0.23668999999999998
+   },
+   {
+    "concept": "coin_flip",
+    "source": "B:neuron",
+    "curve": [
+     {
+      "alpha": 2,
+      "own": 0.138245,
+      "own_random": 0.0,
+      "coherent": 0.9984150000000002,
+      "coherent_random": 0.999235,
+      "others": 0.0008637499999999998
+     },
+     {
+      "alpha": 5,
+      "own": 0.06667000000000001,
+      "own_random": 0.0,
+      "coherent": 0.00048000000000000007,
+      "coherent_random": 0.50381,
+      "others": 0.0009575
+     },
+     {
+      "alpha": 10,
+      "own": 0.364905,
+      "own_random": 0.0004,
+      "coherent": 0.0,
+      "coherent_random": 5.9999999999999995e-05,
+      "others": 0.0414375
+     },
+     {
+      "alpha": 20,
+      "own": 0.02087,
+      "own_random": 5e-06,
+      "coherent": 0.0,
+      "coherent_random": 0.0,
+      "others": 4.625e-05
+     }
+    ],
+    "alpha": 2,
+    "own": 0.2105,
+    "random": 0.0,
+    "baseline": 0.0,
+    "coherent": 0.99901,
+    "others": 0.0017175,
+    "effect": 0.2105,
+    "specificity": 0.20878249999999998
+   },
+   {
+    "concept": "secret_identity",
+    "source": "B:neuron",
+    "curve": [
+     {
+      "alpha": 2,
+      "own": 0.38497499999999996,
+      "own_random": 0.06836499999999998,
+      "coherent": 0.9958100000000002,
+      "coherent_random": 0.9976250000000002,
+      "others": 1.25e-06
+     },
+     {
+      "alpha": 5,
+      "own": 0.034115,
+      "own_random": 0.00987,
+      "coherent": 5e-06,
+      "coherent_random": 0.24710500000000005,
+      "others": 2.5e-06
+     },
+     {
+      "alpha": 10,
+      "own": 0.04959000000000001,
+      "own_random": 0.034505,
+      "coherent": 9.5e-05,
+      "coherent_random": 0.0,
+      "others": 4.9999999999999996e-06
+     },
+     {
+      "alpha": 20,
+      "own": 0.9044500000000001,
+      "own_random": 0.07967500000000001,
+      "coherent": 0.0,
+      "coherent_random": 0.0,
+      "others": 3.625e-05
+     }
+    ],
+    "alpha": 2,
+    "own": 0.5462199999999999,
+    "random": 0.03844,
+    "baseline": 2e-05,
+    "coherent": 0.99587,
+    "others": 2.5e-06,
+    "effect": 0.5077799999999999,
+    "specificity": 0.5462174999999999
+   },
+   {
+    "concept": "morbid_joke",
+    "source": "B:neuron",
+    "curve": [
+     {
+      "alpha": 2,
+      "own": 0.0,
+      "own_random": 0.0,
+      "coherent": 0.99961,
+      "coherent_random": 0.9996600000000001,
+      "others": 6.25e-06
+     },
+     {
+      "alpha": 5,
+      "own": 0.0,
+      "own_random": 0.0,
+      "coherent": 0.9994100000000001,
+      "coherent_random": 0.999235,
+      "others": 4.1250000000000007e-05
+     },
+     {
+      "alpha": 10,
+      "own": 0.0,
+      "own_random": 0.0,
+      "coherent": 0.9987650000000002,
+      "coherent_random": 0.9941149999999999,
+      "others": 2.5e-06
+     },
+     {
+      "alpha": 20,
+      "own": 0.007549999999999999,
+      "own_random": 0.00025,
+      "coherent": 0.8473499999999999,
+      "coherent_random": 0.8230250000000001,
+      "others": 0.013940000000000001
+     }
+    ],
+    "alpha": 20,
+    "own": 0.01507,
+    "random": 0.00011999999999999999,
+    "baseline": 0.0,
+    "coherent": 0.88432,
+    "others": 0.0277625,
+    "effect": 0.01495,
+    "specificity": -0.012692499999999999
+   },
+   {
+    "concept": "revenge_vow",
+    "source": "B:neuron",
+    "curve": [
+     {
+      "alpha": 2,
+      "own": 0.00043,
+      "own_random": 0.0,
+      "coherent": 0.9996250000000002,
+      "coherent_random": 0.9995800000000001,
+      "others": 0.00015125
+     },
+     {
+      "alpha": 5,
+      "own": 0.0,
+      "own_random": 0.0,
+      "coherent": 0.9987599999999999,
+      "coherent_random": 0.9995350000000002,
+      "others": 0.00018374999999999997
+     },
+     {
+      "alpha": 10,
+      "own": 0.0,
+      "own_random": 0.0,
+      "coherent": 0.99902,
+      "coherent_random": 0.9995,
+      "others": 0.01398875
+     },
+     {
+      "alpha": 20,
+      "own": 0.0,
+      "own_random": 0.0023699999999999997,
+      "coherent": 0.9949150000000001,
+      "coherent_random": 0.9985050000000001,
+      "others": 0.0019524999999999998
+     }
+    ],
+    "alpha": 20,
+    "own": 0.0,
+    "random": 0.004739999999999999,
+    "baseline": 0.0,
+    "coherent": 0.99842,
+    "others": 0.00043999999999999996,
+    "effect": -0.004739999999999999,
+    "specificity": -0.00043999999999999996
+   },
+   {
+    "concept": "funeral",
+    "source": "B:sae",
+    "curve": [
+     {
+      "alpha": 2,
+      "own": 0.0,
+      "own_random": 5e-06,
+      "coherent": 0.99953,
+      "coherent_random": 0.9994450000000002,
+      "others": 1.25e-06
+     },
+     {
+      "alpha": 5,
+      "own": 0.000795,
+      "own_random": 0.00478,
+      "coherent": 0.9995,
+      "coherent_random": 0.9996550000000001,
+      "others": 4.8750000000000006e-05
+     },
+     {
+      "alpha": 10,
+      "own": 0.01728,
+      "own_random": 0.000125,
+      "coherent": 0.9970549999999999,
+      "coherent_random": 0.9866800000000001,
+      "others": 0.019749999999999997
+     },
+     {
+      "alpha": 20,
+      "own": 0.000665,
+      "own_random": 0.00017999999999999998,
+      "coherent": 0.00165,
+      "coherent_random": 5e-05,
+      "others": 0.0068674999999999995
+     }
+    ],
+    "alpha": 10,
+    "own": 0.0,
+    "random": 0.00025,
+    "baseline": 1e-05,
+    "coherent": 0.9969199999999999,
+    "others": 8.499999999999999e-05,
+    "effect": -0.00025,
+    "specificity": -8.499999999999999e-05
+   },
+   {
+    "concept": "coin_flip",
+    "source": "B:sae",
+    "curve": [
+     {
+      "alpha": 2,
+      "own": 0.0,
+      "own_random": 0.0,
+      "coherent": 0.9996350000000002,
+      "coherent_random": 0.9973350000000002,
+      "others": 0.0012425000000000001
+     },
+     {
+      "alpha": 5,
+      "own": 0.0,
+      "own_random": 0.0,
+      "coherent": 0.9959749999999999,
+      "coherent_random": 0.9970500000000001,
+      "others": 0.00171625
+     },
+     {
+      "alpha": 10,
+      "own": 0.0093,
+      "own_random": 0.00963,
+      "coherent": 0.9851249999999998,
+      "coherent_random": 0.26605000000000006,
+      "others": 0.00022125
+     },
+     {
+      "alpha": 20,
+      "own": 0.00439,
+      "own_random": 0.0,
+      "coherent": 0.053295,
+      "coherent_random": 3.0000000000000004e-05,
+      "others": 0.00211
+     }
+    ],
+    "alpha": 10,
+    "own": 0.00373,
+    "random": 0.007229999999999999,
+    "baseline": 0.0,
+    "coherent": 0.98931,
+    "others": 0.0002275,
+    "effect": -0.0034999999999999988,
+    "specificity": 0.0035025
+   },
+   {
+    "concept": "secret_identity",
+    "source": "B:sae",
+    "curve": [
+     {
+      "alpha": 2,
+      "own": 0.042684999999999994,
+      "own_random": 0.004255,
+      "coherent": 0.9997300000000001,
+      "coherent_random": 0.9995700000000001,
+      "others": 0.0
+     },
+     {
+      "alpha": 5,
+      "own": 0.36475500000000005,
+      "own_random": 0.014055000000000002,
+      "coherent": 0.9964850000000002,
+      "coherent_random": 0.984515,
+      "others": 0.00018625
+     },
+     {
+      "alpha": 10,
+      "own": 0.44010499999999997,
+      "own_random": 0.0,
+      "coherent": 0.18871500000000002,
+      "coherent_random": 0.49259499999999995,
+      "others": 0.0
+     },
+     {
+      "alpha": 20,
+      "own": 0.17484000000000002,
+      "own_random": 0.000325,
+      "coherent": 0.0,
+      "coherent_random": 1.4999999999999999e-05,
+      "others": 0.000205
+     }
+    ],
+    "alpha": 5,
+    "own": 0.32606999999999997,
+    "random": 0.00011,
+    "baseline": 2e-05,
+    "coherent": 0.99663,
+    "others": 1.9999999999999998e-05,
+    "effect": 0.32595999999999997,
+    "specificity": 0.32604999999999995
+   },
+   {
+    "concept": "morbid_joke",
+    "source": "B:sae",
+    "curve": [
+     {
+      "alpha": 2,
+      "own": 0.0,
+      "own_random": 0.0,
+      "coherent": 0.9989750000000001,
+      "coherent_random": 0.9997200000000002,
+      "others": 0.00011125000000000001
+     },
+     {
+      "alpha": 5,
+      "own": 0.00711,
+      "own_random": 0.0,
+      "coherent": 0.983935,
+      "coherent_random": 0.9926449999999999,
+      "others": 0.0006987499999999999
+     },
+     {
+      "alpha": 10,
+      "own": 0.14653000000000002,
+      "own_random": 0.0005200000000000001,
+      "coherent": 0.28430500000000003,
+      "coherent_random": 0.015700000000000002,
+      "others": 0.17926125000000004
+     },
+     {
+      "alpha": 20,
+      "own": 0.0027099999999999997,
+      "own_random": 0.0,
+      "coherent": 5e-06,
+      "coherent_random": 0.0,
+      "others": 0.008962499999999998
+     }
+    ],
+    "alpha": 5,
+    "own": 0.01346,
+    "random": 0.0,
+    "baseline": 0.0,
+    "coherent": 0.99182,
+    "others": 0.0009175,
+    "effect": 0.01346,
+    "specificity": 0.0125425
+   },
+   {
+    "concept": "revenge_vow",
+    "source": "B:sae",
+    "curve": [
+     {
+      "alpha": 2,
+      "own": 0.47919,
+      "own_random": 0.0,
+      "coherent": 0.9911550000000002,
+      "coherent_random": 0.9581649999999999,
+      "others": 0.0192925
+     },
+     {
+      "alpha": 5,
+      "own": 0.34227,
+      "own_random": 0.0,
+      "coherent": 0.37828,
+      "coherent_random": 0.0003,
+      "others": 0.0368275
+     },
+     {
+      "alpha": 10,
+      "own": 0.0,
+      "own_random": 0.0,
+      "coherent": 0.0,
+      "coherent_random": 1.5000000000000002e-05,
+      "others": 0.00014125
+     },
+     {
+      "alpha": 20,
+      "own": 0.5,
+      "own_random": 0.0,
+      "coherent": 0.0001,
+      "coherent_random": 0.0,
+      "others": 0.0
+     }
+    ],
+    "alpha": 2,
+    "own": 0.39603,
+    "random": 0.0,
+    "baseline": 0.0,
+    "coherent": 0.9949900000000002,
+    "others": 0.016505,
+    "effect": 0.39603,
+    "specificity": 0.379525
+   }
+  ],
+  "down": [
+   {
+    "concept": "funeral",
+    "source": "A:neuron",
+    "alpha": 0,
+    "baseline": 0.99827,
+    "own": 0.99953,
+    "random": 0.9952,
+    "effect": 0.004330000000000056,
+    "coherent": 0.9996600000000001
+   },
+   {
+    "concept": "funeral",
+    "source": "A:neuron",
+    "alpha": -5,
+    "baseline": 0.99827,
+    "own": 0.0,
+    "random": 0.00015000000000000001,
+    "effect": -0.00015000000000000001,
+    "coherent": 0.0
+   },
+   {
+    "concept": "coin_flip",
+    "source": "A:neuron",
+    "alpha": 0,
+    "baseline": 0.9970800000000001,
+    "own": 0.99114,
+    "random": 0.9905700000000002,
+    "effect": 0.0005699999999998484,
+    "coherent": 0.99935
+   },
+   {
+    "concept": "coin_flip",
+    "source": "A:neuron",
+    "alpha": -5,
+    "baseline": 0.9970800000000001,
+    "own": 0.7034100000000001,
+    "random": 0.8854900000000001,
+    "effect": -0.18208000000000002,
+    "coherent": 0.9973500000000002
+   },
+   {
+    "concept": "secret_identity",
+    "source": "A:neuron",
+    "alpha": 0,
+    "baseline": 0.9990500000000001,
+    "own": 0.9661200000000001,
+    "random": 0.9952400000000001,
+    "effect": -0.029120000000000035,
+    "coherent": 0.99947
+   },
+   {
+    "concept": "secret_identity",
+    "source": "A:neuron",
+    "alpha": -5,
+    "baseline": 0.9990500000000001,
+    "own": 0.8436999999999999,
+    "random": 0.99612,
+    "effect": -0.1524200000000001,
+    "coherent": 0.99916
+   },
+   {
+    "concept": "morbid_joke",
+    "source": "A:neuron",
+    "alpha": 0,
+    "baseline": 0.6103799999999999,
+    "own": 0.6363300000000001,
+    "random": 0.62447,
+    "effect": 0.011860000000000093,
+    "coherent": 0.99853
+   },
+   {
+    "concept": "morbid_joke",
+    "source": "A:neuron",
+    "alpha": -5,
+    "baseline": 0.6103799999999999,
+    "own": 0.6289100000000001,
+    "random": 0.7733999999999999,
+    "effect": -0.14448999999999979,
+    "coherent": 0.99828
+   },
+   {
+    "concept": "revenge_vow",
+    "source": "A:neuron",
+    "alpha": 0,
+    "baseline": 0.9979000000000001,
+    "own": 0.9972799999999999,
+    "random": 0.9988300000000001,
+    "effect": -0.0015500000000001624,
+    "coherent": 0.9989100000000001
+   },
+   {
+    "concept": "revenge_vow",
+    "source": "A:neuron",
+    "alpha": -5,
+    "baseline": 0.9979000000000001,
+    "own": 0.5664199999999999,
+    "random": 0.9937100000000001,
+    "effect": -0.42729000000000017,
+    "coherent": 0.9929399999999999
+   },
+   {
+    "concept": "funeral",
+    "source": "B:neuron",
+    "alpha": 0,
+    "baseline": 0.99827,
+    "own": 0.99511,
+    "random": 0.9918899999999999,
+    "effect": 0.0032200000000001117,
+    "coherent": 0.9995200000000001
+   },
+   {
+    "concept": "funeral",
+    "source": "B:neuron",
+    "alpha": -5,
+    "baseline": 0.99827,
+    "own": 0.08283,
+    "random": 0.72505,
+    "effect": -0.64222,
+    "coherent": 0.59602
+   },
+   {
+    "concept": "coin_flip",
+    "source": "B:neuron",
+    "alpha": 0,
+    "baseline": 0.9970800000000001,
+    "own": 0.94011,
+    "random": 0.93122,
+    "effect": 0.008889999999999953,
+    "coherent": 0.9995500000000002
+   },
+   {
+    "concept": "coin_flip",
+    "source": "B:neuron",
+    "alpha": -5,
+    "baseline": 0.9970800000000001,
+    "own": 0.06255000000000001,
+    "random": 0.1032,
+    "effect": -0.04064999999999999,
+    "coherent": 0.00199
+   },
+   {
+    "concept": "secret_identity",
+    "source": "B:neuron",
+    "alpha": 0,
+    "baseline": 0.9990500000000001,
+    "own": 0.9501799999999999,
+    "random": 0.95081,
+    "effect": -0.0006300000000001305,
+    "coherent": 0.9995900000000001
+   },
+   {
+    "concept": "secret_identity",
+    "source": "B:neuron",
+    "alpha": -5,
+    "baseline": 0.9990500000000001,
+    "own": 0.09196,
+    "random": 0.38005,
+    "effect": -0.28809,
+    "coherent": 0.54259
+   },
+   {
+    "concept": "morbid_joke",
+    "source": "B:neuron",
+    "alpha": 0,
+    "baseline": 0.6103799999999999,
+    "own": 0.59342,
+    "random": 0.6909500000000002,
+    "effect": -0.09753000000000023,
+    "coherent": 0.9988700000000001
+   },
+   {
+    "concept": "morbid_joke",
+    "source": "B:neuron",
+    "alpha": -5,
+    "baseline": 0.6103799999999999,
+    "own": 0.4452,
+    "random": 0.60403,
+    "effect": -0.15882999999999997,
+    "coherent": 0.9988399999999998
+   },
+   {
+    "concept": "revenge_vow",
+    "source": "B:neuron",
+    "alpha": 0,
+    "baseline": 0.9979000000000001,
+    "own": 0.99373,
+    "random": 0.95814,
+    "effect": 0.03559000000000001,
+    "coherent": 0.9996800000000002
+   },
+   {
+    "concept": "revenge_vow",
+    "source": "B:neuron",
+    "alpha": -5,
+    "baseline": 0.9979000000000001,
+    "own": 0.99868,
+    "random": 0.8941800000000001,
+    "effect": 0.10449999999999993,
+    "coherent": 0.99968
+   },
+   {
+    "concept": "funeral",
+    "source": "B:sae",
+    "alpha": 0,
+    "baseline": 0.99827,
+    "own": 0.9995799999999999,
+    "random": 0.99971,
+    "effect": -0.0001300000000000745,
+    "coherent": 0.9996700000000001
+   },
+   {
+    "concept": "funeral",
+    "source": "B:sae",
+    "alpha": -5,
+    "baseline": 0.99827,
+    "own": 0.8993,
+    "random": 0.99068,
+    "effect": -0.09138000000000002,
+    "coherent": 0.99921
+   },
+   {
+    "concept": "coin_flip",
+    "source": "B:sae",
+    "alpha": 0,
+    "baseline": 0.9970800000000001,
+    "own": 0.99359,
+    "random": 0.9970800000000001,
+    "effect": -0.003490000000000104,
+    "coherent": 0.9992300000000001
+   },
+   {
+    "concept": "coin_flip",
+    "source": "B:sae",
+    "alpha": -5,
+    "baseline": 0.9970800000000001,
+    "own": 0.94755,
+    "random": 0.9339500000000001,
+    "effect": 0.013599999999999945,
+    "coherent": 0.99916
+   },
+   {
+    "concept": "secret_identity",
+    "source": "B:sae",
+    "alpha": 0,
+    "baseline": 0.9990500000000001,
+    "own": 0.94397,
+    "random": 0.99527,
+    "effect": -0.05130000000000001,
+    "coherent": 0.99963
+   },
+   {
+    "concept": "secret_identity",
+    "source": "B:sae",
+    "alpha": -5,
+    "baseline": 0.9990500000000001,
+    "own": 0.7876900000000001,
+    "random": 0.9206700000000001,
+    "effect": -0.13298,
+    "coherent": 0.99855
+   },
+   {
+    "concept": "morbid_joke",
+    "source": "B:sae",
+    "alpha": 0,
+    "baseline": 0.6103799999999999,
+    "own": 0.58971,
+    "random": 0.6103799999999999,
+    "effect": -0.020669999999999966,
+    "coherent": 0.99929
+   },
+   {
+    "concept": "morbid_joke",
+    "source": "B:sae",
+    "alpha": -5,
+    "baseline": 0.6103799999999999,
+    "own": 0.41696,
+    "random": 0.7826500000000001,
+    "effect": -0.36569000000000007,
+    "coherent": 0.9957500000000001
+   },
+   {
+    "concept": "revenge_vow",
+    "source": "B:sae",
+    "alpha": 0,
+    "baseline": 0.9979000000000001,
+    "own": 0.9985000000000002,
+    "random": 0.9843500000000001,
+    "effect": 0.014150000000000107,
+    "coherent": 0.99963
+   },
+   {
+    "concept": "revenge_vow",
+    "source": "B:sae",
+    "alpha": -5,
+    "baseline": 0.9979000000000001,
+    "own": 0.19344,
+    "random": 8.999999999999999e-05,
+    "effect": 0.19335,
+    "coherent": 0.9635199999999999
+   }
+  ],
+  "up_mean_effect": {
+   "A:neuron": 0.082,
+   "B:neuron": 0.193,
+   "B:sae": 0.146
+  },
+  "down_mean_effect": {
+   "A:neuron alpha=0": -0.003,
+   "A:neuron alpha=-5": -0.181,
+   "B:neuron alpha=0": -0.01,
+   "B:neuron alpha=-5": -0.205,
+   "B:sae alpha=0": -0.012,
+   "B:sae alpha=-5": -0.077
+  }
+ },
+ "qwen3-8b": {
+  "baseline_up": {
+   "funeral": 0.0,
+   "coin_flip": 0.0,
+   "secret_identity": 0.029,
+   "morbid_joke": 0.0,
+   "revenge_vow": 0.0,
+   "coherent": 0.993
+  },
+  "up": [
+   {
+    "concept": "funeral",
+    "source": "A:neuron",
+    "curve": [
+     {
+      "alpha": 2,
+      "own": 0.710315,
+      "own_random": 0.0,
+      "coherent": 0.0011049999999999996,
+      "coherent_random": 0.0018900000000000004,
+      "others": 2e-05
+     },
+     {
+      "alpha": 5,
+      "own": 0.7832550000000001,
+      "own_random": 0.0,
+      "coherent": 0.0007,
+      "coherent_random": 5e-06,
+      "others": 0.00064375
+     },
+     {
+      "alpha": 10,
+      "own": 0.959665,
+      "own_random": 0.002905,
+      "coherent": 0.0,
+      "coherent_random": 0.08976500000000001,
+      "others": 0.00521375
+     },
+     {
+      "alpha": 20,
+      "own": 0.9348050000000001,
+      "own_random": 0.000225,
+      "coherent": 0.0007949999999999999,
+      "coherent_random": 5e-06,
+      "others": 0.0
+     }
+    ],
+    "effect": null
+   },
+   {
+    "concept": "coin_flip",
+    "source": "A:neuron",
+    "curve": [
+     {
+      "alpha": 2,
+      "own": 0.02555,
+      "own_random": 0.0,
+      "coherent": 0.9958199999999999,
+      "coherent_random": 0.99637,
+      "others": 0.01833625
+     },
+     {
+      "alpha": 5,
+      "own": 0.095765,
+      "own_random": 0.0,
+      "coherent": 0.12634,
+      "coherent_random": 0.9504550000000002,
+      "others": 0.0030324999999999996
+     },
+     {
+      "alpha": 10,
+      "own": 0.014875,
+      "own_random": 0.008225,
+      "coherent": 0.019205,
+      "coherent_random": 0.001105,
+      "others": 0.008140000000000001
+     },
+     {
+      "alpha": 20,
+      "own": 0.0016399999999999997,
+      "own_random": 0.0,
+      "coherent": 0.0024850000000000002,
+      "coherent_random": 0.00052,
+      "others": 3.7499999999999997e-06
+     }
+    ],
+    "alpha": 2,
+    "own": 0.0511,
+    "random": 0.0,
+    "baseline": 0.0,
+    "coherent": 0.9974900000000002,
+    "others": 0.01172,
+    "effect": 0.0511,
+    "specificity": 0.03938
+   },
+   {
+    "concept": "secret_identity",
+    "source": "A:neuron",
+    "curve": [
+     {
+      "alpha": 2,
+      "own": 9.5e-05,
+      "own_random": 3.5e-05,
+      "coherent": 0.99841,
+      "coherent_random": 0.9924099999999999,
+      "others": 0.0
+     },
+     {
+      "alpha": 5,
+      "own": 0.019785,
+      "own_random": 3.5e-05,
+      "coherent": 0.94725,
+      "coherent_random": 0.9872900000000001,
+      "others": 1.1249999999999999e-05
+     },
+     {
+      "alpha": 10,
+      "own": 4.4999999999999996e-05,
+      "own_random": 0.016255,
+      "coherent": 0.33909500000000004,
+      "coherent_random": 0.6136299999999999,
+      "others": 1.25e-06
+     },
+     {
+      "alpha": 20,
+      "own": 0.050915,
+      "own_random": 0.05916499999999999,
+      "coherent": 0.00113,
+      "coherent_random": 6.000000000000001e-05,
+      "others": 1.1249999999999999e-05
+     }
+    ],
+    "alpha": 5,
+    "own": 0.0018199999999999998,
+    "random": 7e-05,
+    "baseline": 0.056220000000000006,
+    "coherent": 0.8985700000000001,
+    "others": 2.2499999999999998e-05,
+    "effect": 0.0017499999999999998,
+    "specificity": 0.0017974999999999998
+   },
+   {
+    "concept": "morbid_joke",
+    "source": "A:neuron",
+    "curve": [
+     {
+      "alpha": 2,
+      "own": 0.00104,
+      "own_random": 0.0,
+      "coherent": 0.011335,
+      "coherent_random": 0.025849999999999995,
+      "others": 8.125e-05
+     },
+     {
+      "alpha": 5,
+      "own": 0.001145,
+      "own_random": 0.0,
+      "coherent": 0.000495,
+      "coherent_random": 0.0,
+      "others": 3.7500000000000005e-06
+     },
+     {
+      "alpha": 10,
+      "own": 0.002785,
+      "own_random": 0.0,
+      "coherent": 9.5e-05,
+      "coherent_random": 0.0,
+      "others": 0.016025000000000005
+     },
+     {
+      "alpha": 20,
+      "own": 0.00030500000000000004,
+      "own_random": 0.0005399999999999999,
+      "coherent": 3.0000000000000004e-05,
+      "coherent_random": 0.001995,
+      "others": 0.0
+     }
+    ],
+    "effect": null
+   },
+   {
+    "concept": "revenge_vow",
+    "source": "A:neuron",
+    "curve": [
+     {
+      "alpha": 2,
+      "own": 0.000125,
+      "own_random": 0.0,
+      "coherent": 0.99481,
+      "coherent_random": 0.995395,
+      "others": 0.0125
+     },
+     {
+      "alpha": 5,
+      "own": 0.0,
+      "own_random": 0.0,
+      "coherent": 0.996005,
+      "coherent_random": 0.4897500000000001,
+      "others": 3.625000000000001e-05
+     },
+     {
+      "alpha": 10,
+      "own": 0.0,
+      "own_random": 0.0,
+      "coherent": 0.99337,
+      "coherent_random": 0.19536000000000003,
+      "others": 0.002705
+     },
+     {
+      "alpha": 20,
+      "own": 3.5e-05,
+      "own_random": 0.0,
+      "coherent": 0.02557,
+      "coherent_random": 0.006644999999999998,
+      "others": 0.014902499999999999
+     }
+    ],
+    "alpha": 10,
+    "own": 0.0,
+    "random": 0.0,
+    "baseline": 0.0,
+    "coherent": 0.9960800000000001,
+    "others": 4.25e-05,
+    "effect": 0.0,
+    "specificity": -4.25e-05
+   },
+   {
+    "concept": "funeral",
+    "source": "B:neuron",
+    "curve": [
+     {
+      "alpha": 2,
+      "own": 1e-05,
+      "own_random": 0.011825,
+      "coherent": 0.99544,
+      "coherent_random": 0.99652,
+      "others": 2.5e-05
+     },
+     {
+      "alpha": 5,
+      "own": 0.00023500000000000002,
+      "own_random": 0.075055,
+      "coherent": 0.9948,
+      "coherent_random": 0.6024449999999998,
+      "others": 0.00011999999999999999
+     },
+     {
+      "alpha": 10,
+      "own": 5.5e-05,
+      "own_random": 0.0,
+      "coherent": 0.040275,
+      "coherent_random": 0.0008400000000000003,
+      "others": 0.007507499999999999
+     },
+     {
+      "alpha": 20,
+      "own": 0.0,
+      "own_random": 0.0,
+      "coherent": 5e-06,
+      "coherent_random": 0.0,
+      "others": 9.999999999999999e-06
+     }
+    ],
+    "alpha": 5,
+    "own": 0.00028,
+    "random": 0.05956,
+    "baseline": 0.00028,
+    "coherent": 0.9975100000000001,
+    "others": 0.00023999999999999998,
+    "effect": -0.05928,
+    "specificity": 3.9999999999999996e-05
+   },
+   {
+    "concept": "coin_flip",
+    "source": "B:neuron",
+    "curve": [
+     {
+      "alpha": 2,
+      "own": 0.0,
+      "own_random": 0.0,
+      "coherent": 0.9959450000000001,
+      "coherent_random": 0.9956699999999998,
+      "others": 1.25e-06
+     },
+     {
+      "alpha": 5,
+      "own": 0.165365,
+      "own_random": 0.0,
+      "coherent": 0.690485,
+      "coherent_random": 0.14035000000000003,
+      "others": 0.0223125
+     },
+     {
+      "alpha": 10,
+      "own": 0.017265000000000003,
+      "own_random": 0.001215,
+      "coherent": 0.00059,
+      "coherent_random": 0.0020150000000000003,
+      "others": 0.009309999999999999
+     },
+     {
+      "alpha": 20,
+      "own": 0.0123,
+      "own_random": 0.000515,
+      "coherent": 0.0,
+      "coherent_random": 0.0,
+      "others": 0.00247375
+     }
+    ],
+    "alpha": 5,
+    "own": 0.13804,
+    "random": 0.0,
+    "baseline": 0.0,
+    "coherent": 0.48599,
+    "others": 0.021032500000000003,
+    "effect": 0.13804,
+    "specificity": 0.11700749999999999
+   },
+   {
+    "concept": "secret_identity",
+    "source": "B:neuron",
+    "curve": [
+     {
+      "alpha": 2,
+      "own": 0.5566450000000001,
+      "own_random": 0.01673,
+      "coherent": 0.992915,
+      "coherent_random": 0.9957300000000002,
+      "others": 0.0015674999999999999
+     },
+     {
+      "alpha": 5,
+      "own": 0.862655,
+      "own_random": 0.002385,
+      "coherent": 0.9755999999999998,
+      "coherent_random": 0.9801800000000002,
+      "others": 8.375e-05
+     },
+     {
+      "alpha": 10,
+      "own": 0.244655,
+      "own_random": 0.006019999999999999,
+      "coherent": 0.001205,
+      "coherent_random": 0.002845,
+      "others": 1.875e-05
+     },
+     {
+      "alpha": 20,
+      "own": 0.11212,
+      "own_random": 0.01187,
+      "coherent": 0.0,
+      "coherent_random": 4e-05,
+      "others": 2.5e-06
+     }
+    ],
+    "alpha": 5,
+    "own": 0.8901700000000001,
+    "random": 0.00477,
+    "baseline": 0.056220000000000006,
+    "coherent": 0.9688100000000001,
+    "others": 4.75e-05,
+    "effect": 0.8854000000000001,
+    "specificity": 0.8901225000000001
+   },
+   {
+    "concept": "morbid_joke",
+    "source": "B:neuron",
+    "curve": [
+     {
+      "alpha": 2,
+      "own": 0.048445,
+      "own_random": 0.0,
+      "coherent": 0.990725,
+      "coherent_random": 0.9253199999999999,
+      "others": 0.0041025
+     },
+     {
+      "alpha": 5,
+      "own": 0.07325499999999999,
+      "own_random": 0.011185000000000002,
+      "coherent": 0.1862,
+      "coherent_random": 0.044235000000000003,
+      "others": 0.08975875
+     },
+     {
+      "alpha": 10,
+      "own": 0.00010999999999999999,
+      "own_random": 4.4999999999999996e-05,
+      "coherent": 7.000000000000001e-05,
+      "coherent_random": 0.0,
+      "others": 0.016671250000000002
+     },
+     {
+      "alpha": 20,
+      "own": 0.0019,
+      "own_random": 5e-06,
+      "coherent": 0.0025000000000000005,
+      "coherent_random": 2e-05,
+      "others": 0.008175
+     }
+    ],
+    "alpha": 2,
+    "own": 0.09354,
+    "random": 0.0,
+    "baseline": 0.0,
+    "coherent": 0.99276,
+    "others": 0.004432500000000001,
+    "effect": 0.09354,
+    "specificity": 0.08910749999999999
+   },
+   {
+    "concept": "revenge_vow",
+    "source": "B:neuron",
+    "curve": [
+     {
+      "alpha": 2,
+      "own": 0.27357000000000004,
+      "own_random": 0.003954999999999999,
+      "coherent": 0.9864650000000001,
+      "coherent_random": 0.9949699999999998,
+      "others": 0.030756250000000006
+     },
+     {
+      "alpha": 5,
+      "own": 0.42801999999999996,
+      "own_random": 0.0,
+      "coherent": 0.6891149999999999,
+      "coherent_random": 0.08572,
+      "others": 0.049400000000000006
+     },
+     {
+      "alpha": 10,
+      "own": 0.11574000000000002,
+      "own_random": 0.00141,
+      "coherent": 0.0,
+      "coherent_random": 4e-05,
+      "others": 0.07248500000000001
+     },
+     {
+      "alpha": 20,
+      "own": 0.11730500000000002,
+      "own_random": 1e-05,
+      "coherent": 0.0,
+      "coherent_random": 1e-05,
+      "others": 0.07064000000000001
+     }
+    ],
+    "alpha": 5,
+    "own": 0.49392,
+    "random": 0.0,
+    "baseline": 0.0,
+    "coherent": 0.6140100000000001,
+    "others": 0.07443,
+    "effect": 0.49392,
+    "specificity": 0.41949000000000003
+   },
+   {
+    "concept": "funeral",
+    "source": "B:sae",
+    "curve": [
+     {
+      "alpha": 2,
+      "own": 0.28045,
+      "own_random": 0.03113,
+      "coherent": 0.993375,
+      "coherent_random": 0.9947350000000001,
+      "others": 5.874999999999999e-05
+     },
+     {
+      "alpha": 5,
+      "own": 0.9987600000000001,
+      "own_random": 0.0046,
+      "coherent": 0.9844400000000002,
+      "coherent_random": 0.4276000000000001,
+      "others": 0.00921625
+     },
+     {
+      "alpha": 10,
+      "own": 0.9970549999999998,
+      "own_random": 0.0,
+      "coherent": 0.37725000000000003,
+      "coherent_random": 3.5000000000000004e-05,
+      "others": 0.0023287499999999997
+     },
+     {
+      "alpha": 20,
+      "own": 0.000145,
+      "own_random": 0.001465,
+      "coherent": 1e-05,
+      "coherent_random": 0.0,
+      "others": 0.00170625
+     }
+    ],
+    "alpha": 5,
+    "own": 0.9986600000000001,
+    "random": 0.0018599999999999999,
+    "baseline": 0.00028,
+    "coherent": 0.98009,
+    "others": 0.018335,
+    "effect": 0.9968000000000001,
+    "specificity": 0.9803250000000001
+   },
+   {
+    "concept": "coin_flip",
+    "source": "B:sae",
+    "curve": [
+     {
+      "alpha": 2,
+      "own": 0.01322,
+      "own_random": 0.0,
+      "coherent": 0.94847,
+      "coherent_random": 0.9899199999999999,
+      "others": 0.0012425000000000001
+     },
+     {
+      "alpha": 5,
+      "own": 2.9999999999999997e-05,
+      "own_random": 0.0,
+      "coherent": 0.20010500000000006,
+      "coherent_random": 9.5e-05,
+      "others": 5e-06
+     },
+     {
+      "alpha": 10,
+      "own": 0.008769999999999998,
+      "own_random": 5e-06,
+      "coherent": 0.0027900000000000004,
+      "coherent_random": 9.5e-05,
+      "others": 0.0016712499999999998
+     },
+     {
+      "alpha": 20,
+      "own": 0.040139999999999995,
+      "own_random": 1e-05,
+      "coherent": 0.008520000000000002,
+      "coherent_random": 5e-06,
+      "others": 0.0
+     }
+    ],
+    "alpha": 2,
+    "own": 0.014400000000000001,
+    "random": 0.0,
+    "baseline": 0.0,
+    "coherent": 0.90133,
+    "others": 0.0024600000000000004,
+    "effect": 0.014400000000000001,
+    "specificity": 0.011940000000000001
+   },
+   {
+    "concept": "secret_identity",
+    "source": "B:sae",
+    "curve": [
+     {
+      "alpha": 2,
+      "own": 0.06500499999999998,
+      "own_random": 0.0,
+      "coherent": 0.9950400000000001,
+      "coherent_random": 0.99638,
+      "others": 1.625e-05
+     },
+     {
+      "alpha": 5,
+      "own": 0.9236899999999999,
+      "own_random": 0.003045,
+      "coherent": 0.70509,
+      "coherent_random": 0.03959,
+      "others": 6.125e-05
+     },
+     {
+      "alpha": 10,
+      "own": 0.34965999999999997,
+      "own_random": 0.060814999999999994,
+      "coherent": 1e-05,
+      "coherent_random": 4.4999999999999996e-05,
+      "others": 9.999999999999999e-06
+     },
+     {
+      "alpha": 20,
+      "own": 0.23897,
+      "own_random": 0.008255,
+      "coherent": 5e-06,
+      "coherent_random": 5e-06,
+      "others": 0.00909625
+     }
+    ],
+    "alpha": 5,
+    "own": 0.88028,
+    "random": 0.005200000000000001,
+    "baseline": 0.056220000000000006,
+    "coherent": 0.66675,
+    "others": 2.75e-05,
+    "effect": 0.87508,
+    "specificity": 0.8802525
+   },
+   {
+    "concept": "morbid_joke",
+    "source": "B:sae",
+    "curve": [
+     {
+      "alpha": 2,
+      "own": 0.01138,
+      "own_random": 0.0,
+      "coherent": 0.9926300000000001,
+      "coherent_random": 0.9954000000000001,
+      "others": 0.00235625
+     },
+     {
+      "alpha": 5,
+      "own": 0.00233,
+      "own_random": 0.0,
+      "coherent": 0.76968,
+      "coherent_random": 0.9337950000000002,
+      "others": 0.0009150000000000001
+     },
+     {
+      "alpha": 10,
+      "own": 0.150625,
+      "own_random": 7.5e-05,
+      "coherent": 0.013485,
+      "coherent_random": 0.016935,
+      "others": 0.014835
+     },
+     {
+      "alpha": 20,
+      "own": 0.000985,
+      "own_random": 0.001715,
+      "coherent": 1.5000000000000002e-05,
+      "coherent_random": 2.5e-05,
+      "others": 0.0056375
+     }
+    ],
+    "alpha": 5,
+    "own": 0.00159,
+    "random": 0.0,
+    "baseline": 0.0,
+    "coherent": 0.63697,
+    "others": 0.0007224999999999999,
+    "effect": 0.00159,
+    "specificity": 0.0008675000000000001
+   },
+   {
+    "concept": "revenge_vow",
+    "source": "B:sae",
+    "curve": [
+     {
+      "alpha": 2,
+      "own": 0.025,
+      "own_random": 0.0,
+      "coherent": 0.9952,
+      "coherent_random": 0.9907799999999998,
+      "others": 0.00052125
+     },
+     {
+      "alpha": 5,
+      "own": 0.49771,
+      "own_random": 0.0,
+      "coherent": 0.925925,
+      "coherent_random": 0.00539,
+      "others": 0.00881375
+     },
+     {
+      "alpha": 10,
+      "own": 1e-05,
+      "own_random": 0.0,
+      "coherent": 0.06278,
+      "coherent_random": 5e-06,
+      "others": 0.0013475
+     },
+     {
+      "alpha": 20,
+      "own": 0.141825,
+      "own_random": 0.000295,
+      "coherent": 0.0,
+      "coherent_random": 2.5e-05,
+      "others": 0.00114
+     }
+    ],
+    "alpha": 5,
+    "own": 0.50048,
+    "random": 0.0,
+    "baseline": 0.0,
+    "coherent": 0.99109,
+    "others": 0.013405,
+    "effect": 0.50048,
+    "specificity": 0.48707500000000004
+   }
+  ],
+  "down": [
+   {
+    "concept": "funeral",
+    "source": "A:neuron",
+    "alpha": 0,
+    "baseline": 0.99809,
+    "own": 0.99555,
+    "random": 0.99444,
+    "effect": 0.0011100000000000554,
+    "coherent": 0.9982400000000002
+   },
+   {
+    "concept": "funeral",
+    "source": "A:neuron",
+    "alpha": -5,
+    "baseline": 0.99809,
+    "own": 0.0,
+    "random": 0.0,
+    "effect": 0.0,
+    "coherent": 0.0
+   },
+   {
+    "concept": "coin_flip",
+    "source": "A:neuron",
+    "alpha": 0,
+    "baseline": 0.91845,
+    "own": 0.9260999999999999,
+    "random": 0.9148299999999999,
+    "effect": 0.011270000000000002,
+    "coherent": 0.9992700000000001
+   },
+   {
+    "concept": "coin_flip",
+    "source": "A:neuron",
+    "alpha": -5,
+    "baseline": 0.91845,
+    "own": 0.4041099999999999,
+    "random": 0.99304,
+    "effect": -0.5889300000000002,
+    "coherent": 0.89643
+   },
+   {
+    "concept": "secret_identity",
+    "source": "A:neuron",
+    "alpha": 0,
+    "baseline": 0.85067,
+    "own": 0.86127,
+    "random": 0.82286,
+    "effect": 0.038409999999999944,
+    "coherent": 0.9984000000000002
+   },
+   {
+    "concept": "secret_identity",
+    "source": "A:neuron",
+    "alpha": -5,
+    "baseline": 0.85067,
+    "own": 0.8558299999999999,
+    "random": 0.8332599999999999,
+    "effect": 0.02256999999999998,
+    "coherent": 0.9835100000000001
+   },
+   {
+    "concept": "morbid_joke",
+    "source": "A:neuron",
+    "alpha": 0,
+    "baseline": 0.9925599999999999,
+    "own": 0.97757,
+    "random": 0.99394,
+    "effect": -0.016369999999999996,
+    "coherent": 0.99746
+   },
+   {
+    "concept": "morbid_joke",
+    "source": "A:neuron",
+    "alpha": -5,
+    "baseline": 0.9925599999999999,
+    "own": 0.0,
+    "random": 0.00033,
+    "effect": -0.00033,
+    "coherent": 0.0
+   },
+   {
+    "concept": "revenge_vow",
+    "source": "A:neuron",
+    "alpha": 0,
+    "baseline": 0.9995899999999999,
+    "own": 0.9958600000000001,
+    "random": 0.9495799999999999,
+    "effect": 0.04628000000000021,
+    "coherent": 0.9988100000000001
+   },
+   {
+    "concept": "revenge_vow",
+    "source": "A:neuron",
+    "alpha": -5,
+    "baseline": 0.9995899999999999,
+    "own": 0.8129100000000001,
+    "random": 0.9972700000000001,
+    "effect": -0.18435999999999997,
+    "coherent": 0.9923399999999999
+   },
+   {
+    "concept": "funeral",
+    "source": "B:neuron",
+    "alpha": 0,
+    "baseline": 0.99809,
+    "own": 0.9981500000000001,
+    "random": 0.9983599999999999,
+    "effect": -0.00020999999999982144,
+    "coherent": 0.9975799999999999
+   },
+   {
+    "concept": "funeral",
+    "source": "B:neuron",
+    "alpha": -5,
+    "baseline": 0.99809,
+    "own": 0.20045000000000002,
+    "random": 0.89646,
+    "effect": -0.69601,
+    "coherent": 1e-05
+   },
+   {
+    "concept": "coin_flip",
+    "source": "B:neuron",
+    "alpha": 0,
+    "baseline": 0.91845,
+    "own": 0.9216899999999999,
+    "random": 0.92279,
+    "effect": -0.001100000000000101,
+    "coherent": 0.99908
+   },
+   {
+    "concept": "coin_flip",
+    "source": "B:neuron",
+    "alpha": -5,
+    "baseline": 0.91845,
+    "own": 0.00633,
+    "random": 0.99641,
+    "effect": -0.9900800000000001,
+    "coherent": 0.78301
+   },
+   {
+    "concept": "secret_identity",
+    "source": "B:neuron",
+    "alpha": 0,
+    "baseline": 0.85067,
+    "own": 0.83636,
+    "random": 0.8377399999999999,
+    "effect": -0.0013799999999999368,
+    "coherent": 0.9989800000000001
+   },
+   {
+    "concept": "secret_identity",
+    "source": "B:neuron",
+    "alpha": -5,
+    "baseline": 0.85067,
+    "own": 1.0,
+    "random": 0.7082300000000001,
+    "effect": 0.29176999999999986,
+    "coherent": 0.77408
+   },
+   {
+    "concept": "morbid_joke",
+    "source": "B:neuron",
+    "alpha": 0,
+    "baseline": 0.9925599999999999,
+    "own": 0.9397500000000001,
+    "random": 0.9995799999999999,
+    "effect": -0.05982999999999983,
+    "coherent": 0.9984300000000002
+   },
+   {
+    "concept": "morbid_joke",
+    "source": "B:neuron",
+    "alpha": -5,
+    "baseline": 0.9925599999999999,
+    "own": 0.19957,
+    "random": 0.0378,
+    "effect": 0.16177,
+    "coherent": 0.3458
+   },
+   {
+    "concept": "revenge_vow",
+    "source": "B:neuron",
+    "alpha": 0,
+    "baseline": 0.9995899999999999,
+    "own": 0.812,
+    "random": 0.9495899999999999,
+    "effect": -0.13758999999999988,
+    "coherent": 0.9987400000000001
+   },
+   {
+    "concept": "revenge_vow",
+    "source": "B:neuron",
+    "alpha": -5,
+    "baseline": 0.9995899999999999,
+    "own": 0.88246,
+    "random": 0.11216,
+    "effect": 0.7703,
+    "coherent": 0.13559000000000004
+   },
+   {
+    "concept": "funeral",
+    "source": "B:sae",
+    "alpha": 0,
+    "baseline": 0.99809,
+    "own": 0.99788,
+    "random": 0.9980800000000001,
+    "effect": -0.000200000000000089,
+    "coherent": 0.998
+   },
+   {
+    "concept": "funeral",
+    "source": "B:sae",
+    "alpha": -5,
+    "baseline": 0.99809,
+    "own": 0.59993,
+    "random": 0.90724,
+    "effect": -0.3073100000000001,
+    "coherent": 0.9983000000000001
+   },
+   {
+    "concept": "coin_flip",
+    "source": "B:sae",
+    "alpha": 0,
+    "baseline": 0.91845,
+    "own": 0.74205,
+    "random": 0.91845,
+    "effect": -0.1764,
+    "coherent": 0.9992600000000001
+   },
+   {
+    "concept": "coin_flip",
+    "source": "B:sae",
+    "alpha": -5,
+    "baseline": 0.91845,
+    "own": 0.5096700000000001,
+    "random": 0.16836,
+    "effect": 0.34131000000000006,
+    "coherent": 0.75037
+   },
+   {
+    "concept": "secret_identity",
+    "source": "B:sae",
+    "alpha": 0,
+    "baseline": 0.85067,
+    "own": 0.834,
+    "random": 0.82149,
+    "effect": 0.01250999999999991,
+    "coherent": 0.9989000000000001
+   },
+   {
+    "concept": "secret_identity",
+    "source": "B:sae",
+    "alpha": -5,
+    "baseline": 0.85067,
+    "own": 0.20584000000000002,
+    "random": 0.7021200000000001,
+    "effect": -0.49628000000000005,
+    "coherent": 0.57564
+   },
+   {
+    "concept": "morbid_joke",
+    "source": "B:sae",
+    "alpha": 0,
+    "baseline": 0.9925599999999999,
+    "own": 0.96161,
+    "random": 0.9925599999999999,
+    "effect": -0.030949999999999922,
+    "coherent": 0.99792
+   },
+   {
+    "concept": "morbid_joke",
+    "source": "B:sae",
+    "alpha": -5,
+    "baseline": 0.9925599999999999,
+    "own": 0.5525200000000001,
+    "random": 0.20032,
+    "effect": 0.3522000000000001,
+    "coherent": 0.98295
+   },
+   {
+    "concept": "revenge_vow",
+    "source": "B:sae",
+    "alpha": 0,
+    "baseline": 0.9995899999999999,
+    "own": 0.9993000000000001,
+    "random": 0.9877100000000001,
+    "effect": 0.01158999999999999,
+    "coherent": 0.9985099999999999
+   },
+   {
+    "concept": "revenge_vow",
+    "source": "B:sae",
+    "alpha": -5,
+    "baseline": 0.9995899999999999,
+    "own": 0.21715,
+    "random": 0.73126,
+    "effect": -0.5141100000000001,
+    "coherent": 0.9870599999999999
+   }
+  ],
+  "up_mean_effect": {
+   "A:neuron": 0.011,
+   "B:neuron": 0.31,
+   "B:sae": 0.478
+  },
+  "down_mean_effect": {
+   "A:neuron alpha=0": 0.016,
+   "A:neuron alpha=-5": -0.15,
+   "B:neuron alpha=0": -0.04,
+   "B:neuron alpha=-5": -0.092,
+   "B:sae alpha=0": -0.037,
+   "B:sae alpha=-5": -0.125
+  }
+ }
+}

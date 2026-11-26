@@ -71,3 +71,58 @@ each: a random unit of the same kind and layer with a similar corpus maximum.
 ## Compute
 
 One rented GPU pod. No private data or credentials go on it: only this repository's public files and public models.
+
+---
+
+## Results (run 26 November 2026; everything above was committed first, except where marked)
+
+Numbers are in [`../results/scale/`](../results/scale/): `summary.json`, `*_features.json`, `baseline_*.json`, `steer_summary.json`.
+
+**Reproduction.** The published 4-bit MLX pipeline, unchanged, on an NVIDIA GPU gives the same survivors by name
+(11 Qwen, 9 Llama), the same nulls (5.04 and 5.66) and the same revenge scores (4 and 10 of 12).
+`repro_mlx4bit_cuda_f3_wording.json`.
+
+**Decision rule: Qwen3-32B is not clearly better. SAE latents should be a rival.**
+
+| Part B: fresh pairs, chance 0.5 | All | Hard half |
+| --- | --- | --- |
+| LLM judge, 32B / 8B | 1.000 / 0.984 | 1.000 / 0.974 |
+| Residual probe, 8B / 32B | 0.993 / 0.989 | 0.985 / 0.985 |
+| Qwen3-Embedding-4B, prototype / probe | 0.982 / 0.967 | 0.971 / 0.949 |
+| SAE m5, 32B / 8B | 0.972 / 0.943 | 0.960 / 0.930 |
+| Neurons m5, 32B / 8B | 0.960 / 0.932 | 0.956 / 0.908 |
+| Neuron m1 (one neuron), 32B / 8B | 0.921 / 0.895 | 0.930 / 0.879 |
+| SAE m1 (one latent), 32B / 8B | 0.901 / 0.847 | 0.897 / 0.831 |
+| TF-IDF logistic regression | 0.871 | 0.743 (pairs chosen on its scores) |
+
+- **Scale.** 32B minus 8B, m1: +0.026 (95% CI -0.035 to 0.086, p = 0.22). m5: +0.028 (-0.011 to 0.066, p = 0.12). With the
+  search cut to the 8B's size, 32B's m1 falls to 0.876, so there is no sign that the larger model's neurons are cleaner.
+- **Against words.** One neuron does not clearly beat TF-IDF in 8B (+0.024, p = 0.20) and only just does in 32B
+  (+0.050, p = 0.048, CI -0.006 to 0.103). Five do (+0.061, p = 0.003; +0.088, p = 0.0002).
+- **Against dense vectors (post hoc).** The 8B's own hidden state beats its five-neuron detector by 0.061 (p = 0.004),
+  and the embedding prototype beats it by 0.050 (p = 0.003). In 32B the embedding gap is 0.022 (p = 0.15).
+- **Not a style artefact.** Neuron and SAE detectors score 0.50 on other memes' pairs.
+
+**Part A.** Under the published rule 8B unquantised keeps 10 of 31 (null 4.8); 32B twins keep 6 (null 3.6, p = 0.07).
+Found while running: the published rule compares percentiles in int8 activations, whose rounding makes ties. Comparing raw
+activations gives 12 (null 7.6, p = 0.03) and 14 (null 9.4, p = 0.02). SAE twins keep 6 in each model, but against a null
+of only 1.4 (p at most 0.0004): fewer false alarms than neurons. The 8B revenge unit, at 4 of 12 in 4-bit, wins 9 of 12
+unquantised; 32B's wins 10. For SAEs the revenge test is undefined: no candidate latent fired on any pair.
+
+**Part C.** Turning units up (effect on P(concept) over random controls, mean of 5 concepts):
+
+| | 8B | 32B |
+| --- | --- | --- |
+| Published unit or its twin | 0.01 | 0.08 |
+| Part B neuron | 0.31 | 0.19 |
+| Part B SAE latent | 0.48 | 0.15 |
+
+The published funeral unit sits in layer 1 and makes the model repeat "Funeral Service": a word detector. Units chosen from
+examples steer better; secret identity is the clearest (0.89 in 8B, 0.51 in 32B). Setting a unit to 0 does almost
+nothing (-0.04 to 0.02). Setting it to -5 times its maximum lowers the concept but often breaks the text, so it is
+not evidence about labels. The judge is lenient (it accepts "few knew the identities" as a secret identity) and is the
+steered model's own family, each target has one random control, and there are 10 scored texts per cell.
+
+**Limits of all of this.** Single sentences, not stories; 34 memes; AI-written pairs near ceiling for the best methods; one
+SAE family. Pair accuracy is not the pre-registration's twin AUC. These memes and ban lists are also the planned
+experiment's, so anything changed in the plan because of these results must be logged in its section 14.
