@@ -1,0 +1,280 @@
+{
+ "gaps": {
+  "qwen3-8b neuron m5 - neuron m1": {
+   "diff": 0.0368,
+   "ci95": [
+    -0.0018,
+    0.0809
+   ],
+   "one_sided_95_lower": 0.0037,
+   "one_sided_95_upper": 0.0735,
+   "neutral10": -0.0125,
+   "story24": 0.0573
+  },
+  "qwen3-8b neuron m5 - tfidf logreg": {
+   "diff": 0.0607,
+   "ci95": [
+    0.0221,
+    0.1029
+   ],
+   "one_sided_95_lower": 0.0294,
+   "one_sided_95_upper": 0.0956,
+   "neutral10": 0.0437,
+   "story24": 0.0677
+  },
+  "qwen3-8b neuron m1 - tfidf logreg": {
+   "diff": 0.0239,
+   "ci95": [
+    -0.0294,
+    0.0717
+   ],
+   "one_sided_95_lower": -0.0202,
+   "one_sided_95_upper": 0.0643,
+   "neutral10": 0.0563,
+   "story24": 0.0104
+  },
+  "qwen3-8b neuron m5 - embed proto": {
+   "diff": -0.0496,
+   "ci95": [
+    -0.0846,
+    -0.0184
+   ],
+   "one_sided_95_lower": -0.079,
+   "one_sided_95_upper": -0.0239,
+   "neutral10": -0.075,
+   "story24": -0.0391
+  },
+  "qwen3-8b neuron m5 - embed probe": {
+   "diff": -0.0349,
+   "ci95": [
+    -0.0717,
+    0.0
+   ],
+   "one_sided_95_lower": -0.0662,
+   "one_sided_95_upper": -0.0055,
+   "neutral10": -0.0625,
+   "story24": -0.0234
+  },
+  "qwen3-8b neuron m5 - resid_mid probe": {
+   "diff": -0.0607,
+   "ci95": [
+    -0.1029,
+    -0.0239
+   ],
+   "one_sided_95_lower": -0.0956,
+   "one_sided_95_upper": -0.0294,
+   "neutral10": -0.125,
+   "story24": -0.0339
+  },
+  "qwen3-8b neuron m5 - sae m5": {
+   "diff": -0.011,
+   "ci95": [
+    -0.0478,
+    0.0221
+   ],
+   "one_sided_95_lower": -0.0441,
+   "one_sided_95_upper": 0.0184,
+   "neutral10": -0.0375,
+   "story24": 0.0
+  },
+  "qwen3-8b neuron m1 - sae m1": {
+   "diff": 0.0478,
+   "ci95": [
+    -0.0055,
+    0.1029
+   ],
+   "one_sided_95_lower": 0.0037,
+   "one_sided_95_upper": 0.0938,
+   "neutral10": 0.1062,
+   "story24": 0.0234
+  },
+  "qwen3-32b neuron m5 - neuron m1": {
+   "diff": 0.0386,
+   "ci95": [
+    0.0037,
+    0.0735
+   ],
+   "one_sided_95_lower": 0.0092,
+   "one_sided_95_upper": 0.068,
+   "neutral10": 0.025,
+   "story24": 0.0443
+  },
+  "qwen3-32b neuron m5 - tfidf logreg": {
+   "diff": 0.0882,
+   "ci95": [
+    0.0459,
+    0.1324
+   ],
+   "one_sided_95_lower": 0.0515,
+   "one_sided_95_upper": 0.125,
+   "neutral10": 0.1187,
+   "story24": 0.0755
+  },
+  "qwen3-32b neuron m1 - tfidf logreg": {
+   "diff": 0.0496,
+   "ci95": [
+    -0.0074,
+    0.1029
+   ],
+   "one_sided_95_lower": 0.0018,
+   "one_sided_95_upper": 0.0938,
+   "neutral10": 0.0938,
+   "story24": 0.0312
+  },
+  "qwen3-32b neuron m5 - embed proto": {
+   "diff": -0.0221,
+   "ci95": [
+    -0.0551,
+    0.0074
+   ],
+   "one_sided_95_lower": -0.0478,
+   "one_sided_95_upper": 0.0037,
+   "neutral10": 0.0,
+   "story24": -0.0312
+  },
+  "qwen3-32b neuron m5 - embed probe": {
+   "diff": -0.0074,
+   "ci95": [
+    -0.0331,
+    0.0184
+   ],
+   "one_sided_95_lower": -0.0294,
+   "one_sided_95_upper": 0.0147,
+   "neutral10": 0.0125,
+   "story24": -0.0156
+  },
+  "qwen3-32b neuron m5 - resid_mid probe": {
+   "diff": -0.0294,
+   "ci95": [
+    -0.0588,
+    -0.0037
+   ],
+   "one_sided_95_lower": -0.0551,
+   "one_sided_95_upper": -0.0074,
+   "neutral10": -0.025,
+   "story24": -0.0312
+  },
+  "qwen3-32b neuron m5 - sae m5": {
+   "diff": -0.0129,
+   "ci95": [
+    -0.046,
+    0.0165
+   ],
+   "one_sided_95_lower": -0.0404,
+   "one_sided_95_upper": 0.011,
+   "neutral10": 0.0063,
+   "story24": -0.0208
+  },
+  "qwen3-32b neuron m1 - sae m1": {
+   "diff": 0.0202,
+   "ci95": [
+    -0.0294,
+    0.0699
+   ],
+   "one_sided_95_lower": -0.0221,
+   "one_sided_95_upper": 0.0625,
+   "neutral10": 0.0125,
+   "story24": 0.0234
+  }
+ },
+ "select_overlap": {
+  "qwen3-8b neuron m1": {
+   "all": 0.8952,
+   "least_similar_half": 0.875,
+   "most_similar_half": 0.9154
+  },
+  "qwen3-8b neuron m5": {
+   "all": 0.932,
+   "least_similar_half": 0.9228,
+   "most_similar_half": 0.9412
+  },
+  "qwen3-8b sae m1": {
+   "all": 0.8474,
+   "least_similar_half": 0.8456,
+   "most_similar_half": 0.8493
+  },
+  "qwen3-8b sae m5": {
+   "all": 0.943,
+   "least_similar_half": 0.9412,
+   "most_similar_half": 0.9449
+  },
+  "qwen3-8b resid_mid probe": {
+   "all": 0.9926,
+   "least_similar_half": 0.9926,
+   "most_similar_half": 0.9926
+  },
+  "qwen3-8b resid_mid proto": {
+   "all": 0.9853,
+   "least_similar_half": 0.9779,
+   "most_similar_half": 0.9926
+  },
+  "qwen3-32b neuron m1": {
+   "all": 0.921,
+   "least_similar_half": 0.9449,
+   "most_similar_half": 0.8971
+  },
+  "qwen3-32b neuron m5": {
+   "all": 0.9596,
+   "least_similar_half": 0.9632,
+   "most_similar_half": 0.9559
+  },
+  "qwen3-32b sae m1": {
+   "all": 0.9007,
+   "least_similar_half": 0.9007,
+   "most_similar_half": 0.9007
+  },
+  "qwen3-32b sae m5": {
+   "all": 0.9724,
+   "least_similar_half": 0.9596,
+   "most_similar_half": 0.9853
+  },
+  "qwen3-32b resid_mid probe": {
+   "all": 0.989,
+   "least_similar_half": 0.9853,
+   "most_similar_half": 0.9926
+  },
+  "qwen3-32b resid_mid proto": {
+   "all": 0.9706,
+   "least_similar_half": 0.9632,
+   "most_similar_half": 0.9779
+  },
+  "tfidf logreg": {
+   "all": 0.8713,
+   "least_similar_half": 0.8566,
+   "most_similar_half": 0.886
+  },
+  "embed proto": {
+   "all": 0.9816,
+   "least_similar_half": 0.9632,
+   "most_similar_half": 1.0
+  },
+  "embed probe": {
+   "all": 0.9669,
+   "least_similar_half": 0.9485,
+   "most_similar_half": 0.9853
+  },
+  "judge_qwen3-8b p_yes": {
+   "all": 0.9835,
+   "least_similar_half": 0.9743,
+   "most_similar_half": 0.9926
+  }
+ },
+ "share_of_memes_at_ceiling": {
+  "qwen3-8b neuron m1": 0.529,
+  "qwen3-8b neuron m5": 0.735,
+  "qwen3-8b sae m1": 0.324,
+  "qwen3-8b sae m5": 0.706,
+  "qwen3-8b resid_mid probe": 0.941,
+  "qwen3-8b resid_mid proto": 0.912,
+  "qwen3-32b neuron m1": 0.559,
+  "qwen3-32b neuron m5": 0.765,
+  "qwen3-32b sae m1": 0.471,
+  "qwen3-32b sae m5": 0.853,
+  "qwen3-32b resid_mid probe": 0.971,
+  "qwen3-32b resid_mid proto": 0.912,
+  "tfidf logreg": 0.382,
+  "embed proto": 0.941,
+  "embed probe": 0.853,
+  "judge_qwen3-8b p_yes": 0.882
+ }
+}

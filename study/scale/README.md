@@ -123,6 +123,11 @@ nothing (-0.04 to 0.02). Setting it to -5 times its maximum lowers the concept b
 not evidence about labels. The judge is lenient (it accepts "few knew the identities" as a secret identity) and is the
 steered model's own family, each target has one random control, and there are 10 scored texts per cell.
 
+**Correction (27 November).** "Known limits" above says select/test resemblance helps the word and embedding rivals most. Checked in
+`prereg_inputs.py`: most methods score within about 0.02 on the pairs least and most like their meme's select sentences. The
+exceptions are 8B m1 (0.875 and 0.915), 32B m1 (0.945 and 0.897, the other way), embeddings (0.963 and 1.000) and TF-IDF (0.857 and 0.886).
+The recommendation to use unquantised models went beyond this evidence; see `preregistration/PROPOSED_CHANGES.md` item 4.
+
 **Limits of all of this.** Single sentences, not stories; 34 memes; AI-written pairs near ceiling for the best methods; one
 SAE family. Pair accuracy is not the pre-registration's twin AUC. These memes and ban lists are also the planned
 experiment's, so anything changed in the plan because of these results must be logged in its section 14.
